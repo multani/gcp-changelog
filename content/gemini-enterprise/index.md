@@ -46,16 +46,16 @@ This feature is in Public Preview. For more information, see:
 
 ### Feature
 
-**Gemini Enterprise: Register ADK agents hosted on Vertex AI Agent Engine**
+**Gemini Enterprise: Register ADK agents hosted on Agent Platform Agent Engine**
 
-You can register ADK agents hosted on Vertex AI Agent Engine with
+You can register ADK agents hosted on Agent Platform Agent Engine with
 Gemini Enterprise. This includes agents running within
-Vertex AI Agent Engine in a different Google Cloud project. This
+Agent Platform Agent Engine in a different Google Cloud project. This
 feature is generally available (GA).
 
 For more information, see:
 
-* [Register and manage ADK agents hosted on Vertex AI Agent Engine](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-adk-agent)
+* [Register and manage ADK agents hosted on Agent Platform Agent Engine](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-adk-agent)
 * [Configure cross-project ADK agents](https://docs.cloud.google.com/gemini/enterprise/docs/configure-cross-project-adk-agents)
 
 ---
@@ -90,14 +90,14 @@ This feature is in Public Preview and is applicable for federated search only. F
 
 ### Feature
 
-**Gemini Enterprise: Support for new actions (Preview)**
+**Gemini Enterprise: Support for new actions**
 
 New actions are available for the following data stores:
 
 * [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-outlook)
-* [Salesforce](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/salesforce)
+* [Salesforce](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/salesforce) (Public Preview)
 
-This feature is in Public Preview. For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
+For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 
 ---
 ## 2026-04-07
@@ -167,15 +167,14 @@ This feature is generally available (GA). For more information, see
 
 ### Feature
 
-**Gemini Enterprise: Support for new actions (Preview)**
-
+**Gemini Enterprise: Support for new actions**
 New actions are available for the following data stores:
 
 * [Gmail](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gmail)
 * [Google Drive](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gdrive)
-* [GitHub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github)
-* [HubSpot](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hubspot)
-* [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday)
+* [GitHub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github) (Public Preview)
+* [HubSpot](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hubspot) (Public Preview)
+* [Monday](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday) (Public Preview)
 
 For a list of actions for these data stores, see [Supported actions](https://docs.cloud.google.com/gemini/enterprise/docs/connect-third-party-data-source#supported_actions).
 

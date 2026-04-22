@@ -1,5 +1,21 @@
 # VPC Service Controls
 
+## 2026-04-22
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support
+for the following integration:
+
+* [App Topology](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_app_topology)
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Agent Registry](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_agent_registry)
+
+---
 ## 2026-04-01
 
 ### Feature

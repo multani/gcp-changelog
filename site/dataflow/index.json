@@ -1,13 +1,23 @@
 {
   "name": "Dataflow",
   "entries": {
+    "2026-04-22": [
+      {
+        "kind": "Feature",
+        "content": "Dataflow job builder now supports external Iceberg REST Catalogs as a\nsource. You can now ingest data from external Apache Iceberg REST catalogs (IRC)\ndirectly into Google Cloud Lakehouse tables using Dataflow's job\nbuilder UI without writing code. For more information, see [Import data from\nexternal Iceberg catalogs to Lakehouse using\nDataflow](https://docs.cloud.google.com/dataflow/docs/guides/iceberg-df-lakehouse-integration).",
+        "summary": {
+          "title": "Dataflow supports external Iceberg catalogs",
+          "summary": "Ingest data from external Apache Iceberg REST catalogs directly into Google Cloud Lakehouse tables using Dataflow's job builder UI. This feature allows for code-free data ingestion, simplifying the process of integrating external data sources."
+        }
+      }
+    ],
     "2026-04-07": [
       {
         "kind": "Feature",
-        "content": "When you use `min_ram` or `cpu_count` resource hints for pipeline steps that don't require accelerators, Auto VM Selection (Instance Flexibility) is enabled automatically. With Auto VM Selection, workers are provisioned from a curated list of machine types that meet your RAM and CPU requirements. For more information, see [Auto VM Selection for worker machine types](https://docs.cloud.google.com/dataflow/docs/guides/right-fitting#auto_vm_selection).",
+        "content": "When you use `min_ram` or `cpu_count` resource hints for pipeline steps that\ndon't require accelerators, Auto VM Selection (Instance Flexibility) is enabled\nautomatically. With Auto VM Selection, workers are provisioned from a curated\nlist of machine types that meet your RAM and CPU requirements. For more\ninformation, see [Auto VM Selection for worker machine\ntypes](https://docs.cloud.google.com/dataflow/docs/guides/right-fitting#auto_vm_selection).",
         "summary": {
           "title": "Auto VM Selection for Pipeline Steps",
-          "summary": "Auto VM Selection is now automatically enabled for pipeline steps using `min_ram` or `cpu_count` resource hints, provided no accelerators are required. This feature provisions workers from a curated list of suitable machine types, optimizing resource allocation."
+          "summary": "Auto VM Selection is now automatically enabled for pipeline steps using `min_ram` or `cpu_count` resource hints without accelerators. This feature provisions workers from a curated list of machine types matching your resource needs, optimizing your compute usage."
         }
       }
     ],

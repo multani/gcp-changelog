@@ -1,5 +1,23 @@
 # Cloud Monitoring
 
+## 2026-04-22
+
+### Feature
+
+Application Monitoring in Google Cloud provides both agent observability and
+application observability. Your Application Monitoring dashboards display
+performance metrics, including the error rates and token usage of your
+AI resources. Those metrics can help you understand the health and performance
+of your AI resources.
+
+To learn more, see the following:
+
+* [Agent observability](https://docs.cloud.google.com/stackdriver/docs/observability/agent-observability)
+* [Application Monitoring overview](https://docs.cloud.google.com/monitoring/docs/about-application-monitoring)
+* [Investigate applications, services, and workloads](https://docs.cloud.google.com/stackdriver/docs/observability/application-monitoring)
+* [View AI resources](https://docs.cloud.google.com/stackdriver/docs/observability/application-monitoring-ai-resources)
+
+---
 ## 2026-04-13
 
 ### Feature
@@ -46,7 +64,7 @@ To learn more, see the following:
 
 Application Monitoring has added support for the following resources:
 
-* Vertex AI Workbench
+* Agent Platform Workbench
 * GKE Gateway
 * GKE Ingress
 * Layer 7 cross-regional Application Load Balancers

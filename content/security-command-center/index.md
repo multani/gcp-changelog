@@ -1,5 +1,20 @@
 # Security Command Center
 
+## 2026-04-22
+
+### Feature
+
+Security Command Center findings that are related to AI security risks are available in the
+**Security** tab of the
+[Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern).
+The feature helps provide comprehensive visibility into findings, active
+threats, and attack path simulations. This feature requires Security Command Center Premium
+or Enterprise.
+
+For more information, see [View security
+findings](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/view-security-findings).
+
+---
 ## 2026-04-17
 
 ### Feature
@@ -32,7 +47,7 @@ For more information, see
 
 [AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) supports
 agentic workloads in [Preview](https://cloud.google.com/products#product-launch-stages),
-including [Vertex AI Agent Engine](https://docs.cloud.google.com/agent-builder/agent-engine/overview)
+including [Agent Platform Agent Engine](https://docs.cloud.google.com/agent-builder/agent-engine/overview)
 and Model Context Protocol (MCP) servers. This update includes the following:
 
 * **Agent vulnerability scanner**: Identifies software vulnerabilities (CVEs)

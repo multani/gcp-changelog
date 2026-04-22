@@ -1,5 +1,24 @@
 # Identity and Access Management
 
+## 2026-04-22
+
+### Feature
+
+**Agent Identity auth manager** is available in [preview](https://cloud.google.com/products#product-launch-stages).
+You can use Agent Identity auth manager to help securely authenticate your agents
+to third-party services using 3-legged OAuth, 2-legged OAuth, or API keys.
+
+For more information, see [Agent Identity auth manager](https://docs.cloud.google.com/iam/docs/agent-identity-overview#agent-auth-manager).
+
+### Feature
+
+**Agent Identity** is generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Agent Identity provides a strongly
+attested, cryptographic identity for each agent that is tied to the lifecycle of
+the resource hosting the agent.
+
+For more information, see [Agent Identity overview](https://docs.cloud.google.com/iam/docs/agent-identity-overview).
+
+---
 ## 2026-04-13
 
 ### Feature

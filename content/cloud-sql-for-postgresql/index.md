@@ -1,5 +1,20 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-04-22
+
+### Feature
+
+[Database Migration Service quick-start migrations](https://docs.cloud.google.com/sql/docs/postgres/quick-start-migrations-guide)
+are now integrated into Cloud SQL for PostgreSQL to provide a lightweight, continuous migration
+flow. This feature automates setup for sources with private IPs in a VPC network,
+including Cloud SQL for PostgreSQL instances and self-managed databases on Compute Engine.
+
+For more information, see
+[Quick-start migrations overview](https://docs.cloud.google.com/database-migration/docs/about-quick-start-migrations)
+in the Database Migration Service documentation.
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-20
 
 ### Feature

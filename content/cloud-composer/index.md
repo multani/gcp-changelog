@@ -46,6 +46,8 @@ are available in Cloud Composer 3:
 * [composer-3-airflow-2.10.5-build.34](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-34) (default)
 * [composer-3-airflow-2.9.3-build.54](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-9-3-build-54)
 
+These builds are versions with an extended upgrade timeline.
+
 ### Change
 
 New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
@@ -54,6 +56,8 @@ are available in Cloud Composer 2:
 * [composer-2.16.11-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-11-airflow-2-11-1)
 * [composer-2.16.11-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-11-airflow-2-10-5) (default)
 * [composer-2.16.11-airflow-2.9.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-16-11-airflow-2-9-3)
+
+These images are versions with an extended upgrade timeline.
 
 ---
 ## 2026-04-01

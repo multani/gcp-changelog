@@ -1,5 +1,21 @@
 # Cloud Database Migration Service
 
+## 2026-04-22
+
+### Feature
+
+You can now use
+[quick-start migrations for homogeneous PostgreSQL migrations](https://docs.cloud.google.com/database-migration/docs/about-quick-start-migrations) to
+Cloud SQL for PostgreSQL and AlloyDB for PostgreSQL.
+
+Quick-start migrations are a lightweight continuous migration flow where Database Migration Service
+can automatically set up everything you need to migrate sources that have a
+private IP assigned in a VPC network, such as self-managed databases
+on Compute Engine or Cloud SQL for PostgreSQL instances.
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-07
 
 ### Feature

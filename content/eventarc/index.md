@@ -1,5 +1,15 @@
 # Eventarc
 
+## 2026-04-22
+
+### Feature
+
+Eventarc support for
+[creating triggers](https://docs.cloud.google.com/eventarc/standard/docs/event-providers-targets#triggers)
+for [direct events from Gemini Cloud Assist](https://docs.cloud.google.com/eventarc/docs/reference/supported-events#gemini-cloud-assist-preview)
+is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-02-02
 
 ### Change

@@ -1,10 +1,27 @@
 # Dataflow
 
+## 2026-04-22
+
+### Feature
+
+Dataflow job builder now supports external Iceberg REST Catalogs as a
+source. You can now ingest data from external Apache Iceberg REST catalogs (IRC)
+directly into Google Cloud Lakehouse tables using Dataflow's job
+builder UI without writing code. For more information, see [Import data from
+external Iceberg catalogs to Lakehouse using
+Dataflow](https://docs.cloud.google.com/dataflow/docs/guides/iceberg-df-lakehouse-integration).
+
+---
 ## 2026-04-07
 
 ### Feature
 
-When you use `min_ram` or `cpu_count` resource hints for pipeline steps that don't require accelerators, Auto VM Selection (Instance Flexibility) is enabled automatically. With Auto VM Selection, workers are provisioned from a curated list of machine types that meet your RAM and CPU requirements. For more information, see [Auto VM Selection for worker machine types](https://docs.cloud.google.com/dataflow/docs/guides/right-fitting#auto_vm_selection).
+When you use `min_ram` or `cpu_count` resource hints for pipeline steps that
+don't require accelerators, Auto VM Selection (Instance Flexibility) is enabled
+automatically. With Auto VM Selection, workers are provisioned from a curated
+list of machine types that meet your RAM and CPU requirements. For more
+information, see [Auto VM Selection for worker machine
+types](https://docs.cloud.google.com/dataflow/docs/guides/right-fitting#auto_vm_selection).
 
 ---
 ## 2026-02-27

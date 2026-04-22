@@ -1,5 +1,20 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-22
+
+### Feature
+
+[Database Migration Service quick-start migrations](https://docs.cloud.google.com/alloydb/docs/quick-start-migrations-guide)
+(in [Preview](https://cloud.google.com/products#product-launch-stages))
+are now integrated into AlloyDB to provide a lightweight, continuous migration
+flow. This feature automates setup for sources with private IPs in a VPC network,
+including Cloud SQL for PostgreSQL and self-managed databases on Compute Engine.
+
+For more information, see
+[Quick-start migrations overview](https://docs.cloud.google.com/database-migration/docs/about-quick-start-migrations)
+in the Database Migration Service documentation.
+
+---
 ## 2026-04-21
 
 ### Feature
@@ -67,7 +82,7 @@ With this update, you can use the `external_search_fdw` extension to connect to 
 
 ### Announcement
 
-The following AlloyDB AI functions are available in [Preview](https://cloud.google.com/products#product-launch-stages):
+The following AlloyDB AI function capabilities are available in [Preview](https://cloud.google.com/products#product-launch-stages):
 
 * You can now use AI function acceleration and the new `AI Function Apply` node to run faster queries with AI functions. This feature optimizes the execution of SQL queries that use the `ai.if` and `ai.rank` functions in PostgreSQL 17. For more information, see [Accelerate performance for queries with AI functions](https://docs.cloud.google.com/alloydb/docs/ai/accelerate-ai-queries).
 * You can now use optimized AI functions to accelerate your AI queries while reducing operational costs. By training a smaller, faster proxy model on a sample

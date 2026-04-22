@@ -1,5 +1,16 @@
 # Unified Maintenance
 
+## 2026-03-31
+
+### Feature
+
+Unified Maintenance supports
+[viewing maintenance activities](https://docs.cloud.google.com/unified-maintenance/docs/view-maintenance-api)
+for App Hub applications that you have created in
+[App Hub](https://docs.cloud.google.com/app-hub/docs/overview) or
+[Application Design Center](https://docs.cloud.google.com/application-design-center/docs/overview).
+
+---
 ## 2026-02-27
 
 ### Announcement

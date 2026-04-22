@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataflow</title>
   <subtitle>Changelog for Google Cloud product: Dataflow</subtitle>
-  <updated>2026-04-07T00:00:00+00:00</updated>
+  <updated>2026-04-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataflow:2026-04-22:feature:0</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataflow job builder now supports external Iceberg REST Catalogs as a
+source. You can now ingest data from external Apache Iceberg REST catalogs (IRC)
+directly into Google Cloud Lakehouse tables using Dataflow's job
+builder UI without writing code. For more information, see <a href="https://docs.cloud.google.com/dataflow/docs/guides/iceberg-df-lakehouse-integration">Import data from
+external Iceberg catalogs to Lakehouse using
+Dataflow</a>.</p>]]></content>
+    <summary>Ingest data from external Apache Iceberg REST catalogs directly into Google Cloud Lakehouse tables using Dataflow's job builder UI. This feature allows for code-free data ingestion, simplifying the process of integrating external data sources.</summary>
+    <title>Feature: Dataflow supports external Iceberg catalogs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,8 +28,13 @@
     <id>urn:github:multani:gcp-changelog:dataflow:2026-04-07:feature:0</id>
     <published>2026-04-07T00:00:00+00:00</published>
     <updated>2026-04-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>When you use <code>min_ram</code> or <code>cpu_count</code> resource hints for pipeline steps that don't require accelerators, Auto VM Selection (Instance Flexibility) is enabled automatically. With Auto VM Selection, workers are provisioned from a curated list of machine types that meet your RAM and CPU requirements. For more information, see <a href="https://docs.cloud.google.com/dataflow/docs/guides/right-fitting#auto_vm_selection">Auto VM Selection for worker machine types</a>.</p>]]></content>
-    <summary>Auto VM Selection is now automatically enabled for pipeline steps using `min_ram` or `cpu_count` resource hints, provided no accelerators are required. This feature provisions workers from a curated list of suitable machine types, optimizing resource allocation.</summary>
+    <content type="html"><![CDATA[<p>When you use <code>min_ram</code> or <code>cpu_count</code> resource hints for pipeline steps that
+don't require accelerators, Auto VM Selection (Instance Flexibility) is enabled
+automatically. With Auto VM Selection, workers are provisioned from a curated
+list of machine types that meet your RAM and CPU requirements. For more
+information, see <a href="https://docs.cloud.google.com/dataflow/docs/guides/right-fitting#auto_vm_selection">Auto VM Selection for worker machine
+types</a>.</p>]]></content>
+    <summary>Auto VM Selection is now automatically enabled for pipeline steps using `min_ram` or `cpu_count` resource hints without accelerators. This feature provisions workers from a curated list of machine types matching your resource needs, optimizing your compute usage.</summary>
     <title>Feature: Auto VM Selection for Pipeline Steps</title>
   </entry>
   <entry>

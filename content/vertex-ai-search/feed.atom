@@ -2,9 +2,112 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Vertex AI Search</title>
   <subtitle>Changelog for Google Cloud product: Vertex AI Search</subtitle>
-  <updated>2026-03-26T00:00:00+00:00</updated>
+  <updated>2026-04-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:vertex-ai-search</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/vertex-ai-search/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2026-04-22:feature:0</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Search: MCP server (GA)</strong></p>
+<p>Agent Search has a Model Context Protocol (MCP) server hosted at the
+following endpoint: <code>https://discoveryengine.googleapis.com/mcp</code></p>
+<p>This feature is generally available (GA). For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/reference/mcp">MCP Reference:
+discoveryengine.googleapis.com</a>.</p>]]></content>
+    <summary>The Agent Search Model Context Protocol (MCP) server is now generally available. This feature provides a dedicated endpoint for enhanced agent search capabilities. You can access the MCP server at https://discoveryengine.googleapis.com/mcp.</summary>
+    <title>Feature: Agent Search MCP Server Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2026-04-22:feature:1</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Search: Dense reciprocal rank for custom ranking</strong></p>
+<p>You can use the dense reciprocal rank transformation function, <code>drr</code>, to
+customize search result ranking. It's an improvement on the reciprocal rank
+function, <code>rr</code>. Using the dense reciprocal rank function leads to higher
+quality ranking when there are duplicate signal values.</p>
+<p>Duplicate signal values are more common when the ranking formula contains
+the following types of signal:</p>
+<ul>
+<li>The <code>boosting_factor</code> signal</li>
+<li>The <code>geo_distance()</code> function signal</li>
+<li>Categorical and integer custom signals</li>
+</ul>
+<p>This feature is generally available (GA).
+For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/custom-ranking">Customize search results
+ranking</a>.</p>]]></content>
+    <summary>Enhance your search result quality with the new dense reciprocal rank (drr) function. This feature improves upon the standard reciprocal rank, particularly when dealing with duplicate signal values, leading to more accurate and relevant rankings. Dense reciprocal rank is now generally available.</summary>
+    <title>Feature: Customize Search Ranking with Dense Reciprocal Rank</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2026-04-22:feature:2</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Search: Geodistance function for custom ranking (GA)</strong></p>
+<p>The <code>geo_distance</code> function can be used in custom ranking formulas to calculate
+the distance between a source location and a destination location. The function
+supports query locations extracted from natural language, explicitly provided
+coordinates, and addresses.</p>
+<p>This feature is generally available (GA).
+For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/custom-ranking#geodistance">Custom ranking: Geodistance—a derived
+signal</a>.</p>]]></content>
+    <summary>Agent Search now supports a geodistance function for custom ranking. This allows you to calculate distances between locations to refine search results, supporting various location input methods. This feature is now generally available.</summary>
+    <title>Feature: Agent Search Adds Geodistance Ranking</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2026-04-22:feature:3</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Search: Filter searches by document-level relevance (GA)</strong></p>
+<p>When searching in your Agent Search app, you can specify
+document-level relevance filters so that only the documents that meet the
+filter threshold are returned as results.</p>
+<p>You can specify either the relevance threshold or semantic-relevance threshold
+to filter documents by relevance based on keyword and semantic search
+similarity.</p>
+<p>This feature is Generally Available (GA). For more information, see
+<a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-by-relevance">Filter searches by document-level relevance</a>.</p>]]></content>
+    <summary>Agent Search now supports filtering results by document-level relevance. You can set thresholds for keyword or semantic search similarity to narrow down your searches, ensuring only the most relevant documents are returned. This feature is now Generally Available.</summary>
+    <title>Feature: Agent Search: Filter by Document Relevance</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2026-04-22:change:4</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Search: Renamed from Vertex AI Search</strong></p>
+<p>The Vertex AI Search product has been renamed as Agent Search in the following
+contexts:</p>
+<ul>
+<li>The documentation set. See <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/introduction">What is Agent
+  Search?</a></li>
+</ul>
+<p>What has not changed:</p>
+<ul>
+<li>The user interface in the Google Cloud console is still referred to as Vertex
+  AI Search and AI Applications. See <a href="https://console.cloud.google.com/gen-app-builder">Vertex AI
+  Search</a>.</li>
+<li>The APIs still use the Discovery Engine API endpoints. See <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/apis">APIs and
+  reference</a>.</li>
+</ul>
+<p>Despite the rebrand, the product functionality remains the same.</p>]]></content>
+    <summary>Vertex AI Search has been renamed to Agent Search in documentation. The product functionality remains unchanged, and the Google Cloud console and APIs will continue to use the Vertex AI Search name for now.</summary>
+    <title>Change: Agent Search is here</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,40 @@
 # BigQuery
 
+## 2026-04-22
+
+### Feature
+
+[BigQuery graphs](https://docs.cloud.google.com/bigquery/docs/graph-overview) now support the following
+features:
+
+* You can [query graphs](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#graphs) using
+  natural language in Conversational Analytics.
+* You can add
+  [descriptions and synonyms](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/graph-schema-statements#element_table_property_definition) to the labels and properties in your graphs.
+* For some types of graphs you can
+  [define measures](https://docs.cloud.google.com/bigquery/docs/graph-measures), which lock an aggregation
+  to a key to help you perform complex aggregations without overcounting. To
+  query measures, you transform your graph into a flattened table by using the
+  [`GRAPH_EXPAND` TVF](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/graph-sql-queries#graph_expand),
+  and then query measures in that table with the
+  [`AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/aggregate_functions#agg).
+
+These features are in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now [use the Data Engineering Agent](https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines)
+to build, modify, and troubleshoot data pipelines in BigQuery. This feature is
+[generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+You can now use the [visual graph modeler](https://docs.cloud.google.com/bigquery/docs/graph-modeler) in
+BigQuery Studio to define BigQuery graph nodes and edges from your
+BigQuery tables and edit graph schema. This
+feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-21
 
 ### Feature

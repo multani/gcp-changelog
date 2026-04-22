@@ -1,5 +1,86 @@
 # Vertex AI Search
 
+## 2026-04-22
+
+### Feature
+
+**Agent Search: MCP server (GA)**
+
+Agent Search has a Model Context Protocol (MCP) server hosted at the
+following endpoint: `https://discoveryengine.googleapis.com/mcp`
+
+This feature is generally available (GA). For more information, see [MCP Reference:
+discoveryengine.googleapis.com](https://docs.cloud.google.com/generative-ai-app-builder/docs/reference/mcp).
+
+### Feature
+
+**Agent Search: Dense reciprocal rank for custom ranking**
+
+You can use the dense reciprocal rank transformation function, `drr`, to
+customize search result ranking. It's an improvement on the reciprocal rank
+function, `rr`. Using the dense reciprocal rank function leads to higher
+quality ranking when there are duplicate signal values.
+
+Duplicate signal values are more common when the ranking formula contains
+the following types of signal:
+
+* The `boosting_factor` signal
+* The `geo_distance()` function signal
+* Categorical and integer custom signals
+
+This feature is generally available (GA).
+For more information, see [Customize search results
+ranking](https://docs.cloud.google.com/generative-ai-app-builder/docs/custom-ranking).
+
+### Feature
+
+**Agent Search: Geodistance function for custom ranking (GA)**
+
+The `geo_distance` function can be used in custom ranking formulas to calculate
+the distance between a source location and a destination location. The function
+supports query locations extracted from natural language, explicitly provided
+coordinates, and addresses.
+
+This feature is generally available (GA).
+For more information, see [Custom ranking: Geodistance—a derived
+signal](https://docs.cloud.google.com/generative-ai-app-builder/docs/custom-ranking#geodistance).
+
+### Feature
+
+**Agent Search: Filter searches by document-level relevance (GA)**
+
+When searching in your Agent Search app, you can specify
+document-level relevance filters so that only the documents that meet the
+filter threshold are returned as results.
+
+You can specify either the relevance threshold or semantic-relevance threshold
+to filter documents by relevance based on keyword and semantic search
+similarity.
+
+This feature is Generally Available (GA). For more information, see
+[Filter searches by document-level relevance](https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-by-relevance).
+
+### Change
+
+**Agent Search: Renamed from Vertex AI Search**
+
+The Vertex AI Search product has been renamed as Agent Search in the following
+contexts:
+
+* The documentation set. See [What is Agent
+  Search?](https://docs.cloud.google.com/generative-ai-app-builder/docs/introduction)
+
+What has not changed:
+
+* The user interface in the Google Cloud console is still referred to as Vertex
+  AI Search and AI Applications. See [Vertex AI
+  Search](https://console.cloud.google.com/gen-app-builder).
+* The APIs still use the Discovery Engine API endpoints. See [APIs and
+  reference](https://docs.cloud.google.com/generative-ai-app-builder/docs/apis).
+
+Despite the rebrand, the product functionality remains the same.
+
+---
 ## 2026-03-26
 
 ### Feature

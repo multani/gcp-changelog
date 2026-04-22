@@ -1,6 +1,48 @@
 {
   "name": "Vertex AI Search",
   "entries": {
+    "2026-04-22": [
+      {
+        "kind": "Feature",
+        "content": "**Agent Search: MCP server (GA)**\n\nAgent Search has a Model Context Protocol (MCP) server hosted at the\nfollowing endpoint: `https://discoveryengine.googleapis.com/mcp`\n\nThis feature is generally available (GA). For more information, see [MCP Reference:\ndiscoveryengine.googleapis.com](https://docs.cloud.google.com/generative-ai-app-builder/docs/reference/mcp).",
+        "summary": {
+          "title": "Agent Search MCP Server Now Generally Available",
+          "summary": "The Agent Search Model Context Protocol (MCP) server is now generally available. This feature provides a dedicated endpoint for enhanced agent search capabilities. You can access the MCP server at https://discoveryengine.googleapis.com/mcp."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent Search: Dense reciprocal rank for custom ranking**\n\nYou can use the dense reciprocal rank transformation function, `drr`, to\ncustomize search result ranking. It's an improvement on the reciprocal rank\nfunction, `rr`. Using the dense reciprocal rank function leads to higher\nquality ranking when there are duplicate signal values.\n\nDuplicate signal values are more common when the ranking formula contains\nthe following types of signal:\n\n* The `boosting_factor` signal\n* The `geo_distance()` function signal\n* Categorical and integer custom signals\n\nThis feature is generally available (GA).\nFor more information, see [Customize search results\nranking](https://docs.cloud.google.com/generative-ai-app-builder/docs/custom-ranking).",
+        "summary": {
+          "title": "Customize Search Ranking with Dense Reciprocal Rank",
+          "summary": "Enhance your search result quality with the new dense reciprocal rank (drr) function. This feature improves upon the standard reciprocal rank, particularly when dealing with duplicate signal values, leading to more accurate and relevant rankings. Dense reciprocal rank is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent Search: Geodistance function for custom ranking (GA)**\n\nThe `geo_distance` function can be used in custom ranking formulas to calculate\nthe distance between a source location and a destination location. The function\nsupports query locations extracted from natural language, explicitly provided\ncoordinates, and addresses.\n\nThis feature is generally available (GA).\nFor more information, see [Custom ranking: Geodistance—a derived\nsignal](https://docs.cloud.google.com/generative-ai-app-builder/docs/custom-ranking#geodistance).",
+        "summary": {
+          "title": "Agent Search Adds Geodistance Ranking",
+          "summary": "Agent Search now supports a geodistance function for custom ranking. This allows you to calculate distances between locations to refine search results, supporting various location input methods. This feature is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent Search: Filter searches by document-level relevance (GA)**\n\nWhen searching in your Agent Search app, you can specify\ndocument-level relevance filters so that only the documents that meet the\nfilter threshold are returned as results.\n\nYou can specify either the relevance threshold or semantic-relevance threshold\nto filter documents by relevance based on keyword and semantic search\nsimilarity.\n\nThis feature is Generally Available (GA). For more information, see\n[Filter searches by document-level relevance](https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-by-relevance).",
+        "summary": {
+          "title": "Agent Search: Filter by Document Relevance",
+          "summary": "Agent Search now supports filtering results by document-level relevance. You can set thresholds for keyword or semantic search similarity to narrow down your searches, ensuring only the most relevant documents are returned. This feature is now Generally Available."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Agent Search: Renamed from Vertex AI Search**\n\nThe Vertex AI Search product has been renamed as Agent Search in the following\ncontexts:\n\n* The documentation set. See [What is Agent\n  Search?](https://docs.cloud.google.com/generative-ai-app-builder/docs/introduction)\n\nWhat has not changed:\n\n* The user interface in the Google Cloud console is still referred to as Vertex\n  AI Search and AI Applications. See [Vertex AI\n  Search](https://console.cloud.google.com/gen-app-builder).\n* The APIs still use the Discovery Engine API endpoints. See [APIs and\n  reference](https://docs.cloud.google.com/generative-ai-app-builder/docs/apis).\n\nDespite the rebrand, the product functionality remains the same.",
+        "summary": {
+          "title": "Agent Search is here",
+          "summary": "Vertex AI Search has been renamed to Agent Search in documentation. The product functionality remains unchanged, and the Google Cloud console and APIs will continue to use the Vertex AI Search name for now."
+        }
+      }
+    ],
     "2026-03-26": [
       {
         "kind": "Feature",

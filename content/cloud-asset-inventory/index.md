@@ -1,5 +1,14 @@
 # Cloud Asset Inventory
 
+## 2026-04-21
+
+### Feature
+
+Cloud Asset Inventory now supports
+[listing assets](https://docs.cloud.google.com/asset-inventory/docs/reference/mcp/tools_list/list_assets)
+over Model Context Protocol (MCP) ([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-04-15
 
 ### Feature

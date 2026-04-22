@@ -4,6 +4,18 @@
 
 ### Feature
 
+**Gemini Enterprise: View agent identity (Preview)**
+
+As a Gemini Enterprise administrator, you can view an agent's identity on the
+Agent details page. This is typically the agent's SPIFFE ID.
+
+This feature is in Public Preview. If the SPIFFE ID is not published by the
+publisher, the Agent Registry resource ID is displayed as a fallback. For more
+information, see
+[Agent identity](https://docs.cloud.google.com/gemini/enterprise/docs/agents-overview#agent-identity).
+
+### Feature
+
 **Gemini Enterprise: Register agents using A2UI and A2A with Gemini Enterprise (Preview)**
 
 Gemini Enterprise administrators can register and manage agents using [Agent to

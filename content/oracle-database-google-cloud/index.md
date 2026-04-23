@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-04-20
+
+### Feature
+
+Oracle Database@Google Cloud integrates with Database Center to provide fleet-wide insights, proactive alerts, and actionable recommendations for your Oracle Database@Google Cloud resources, including Oracle Exadata and Autonomous databases. For more information, see [Monitor the health of your Oracle Database@Google Cloud resources in Database Center](https://docs.cloud.google.com/oracle/database/docs/monitor-resource-health).
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-17
 
 ### Feature

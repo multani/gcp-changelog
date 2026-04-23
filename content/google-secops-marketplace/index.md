@@ -1,5 +1,49 @@
 # Google SecOps Marketplace
 
+## 2026-04-22
+
+### Feature
+
+**Netskope**: Version 17.0
+
+* The following new actions have been added:
+
+  + **Add Entities to URL List**
+  + **Deploy URL List Changes**
+
+### Change
+
+**Netskope**: Version 17.0
+
+* Added a new `Use V2 API` parameter to the following actions:
+
+  + **List Clients**
+  + **List Quarantined Files**
+* **Integration**: Added support for V2 API endpoints and OAuth 2.0
+  authentication.
+
+### Change
+
+**Qualys VM**: Version 26.0
+
+* **Integration**: Migrated to the latest Qualys API endpoints.
+
+### Change
+
+**SCC Enterprise**: Version 21.0
+
+* Updated ticket synchronization logic in the following job:
+
+  + **Sync SCC Jira Tickets**
+
+### Change
+
+**McAfee Mvision EDR**: Version 12.0
+
+* **Integration**: Added support for configuring the `Login API Root` as a
+  customizable parameter.
+
+---
 ## 2026-04-15
 
 ### Feature

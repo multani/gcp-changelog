@@ -149,6 +149,10 @@ changes:
   multi-step research tasks. It uses Gemini 3.1 Pro to bridge the gap between
   public web data and private enterprise context by simultaneously grounding
   research across three distinct, high-fidelity data streams.
+* Release [**Agent Platform remote MCP
+  server**](https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/use-agent-platform-mcp)
+  for General Availability. Support for Model Context Protocol (MCP) use is
+  available for Agent Platform.
 * Change
   **Google Cloud console navigation**: The navigation menus under Agent
   Platform (formerly Vertex AI) and Data Analytics have been updated to

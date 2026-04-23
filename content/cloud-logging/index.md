@@ -1,5 +1,15 @@
 # Cloud Logging
 
+## 2026-04-22
+
+### Feature
+
+The [Cloud Logging API MCP server](https://docs.cloud.google.com/logging/docs/reference/v2_mcp/mcp) is
+generally available (GA). To learn about using the Logging MCP server
+to let agents and AI applications interact with your log entries, see
+[Use the Cloud Logging remote MCP server](https://docs.cloud.google.com/logging/docs/use-logging-mcp).
+
+---
 ## 2026-04-20
 
 ### Libraries

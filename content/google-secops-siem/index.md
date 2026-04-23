@@ -1,5 +1,24 @@
 # Google SecOps SIEM
 
+## 2026-04-22
+
+### Deprecated
+
+Support for the legacy Google Security Operations SIEM infrastructure will end on April 30, 2027. After this date, you will no longer have access to your Google SecOps SIEM instance on the legacy infrastructure. You need to self-migrate Google Security Operations SIEM in legacy Infrastructure to Google Cloud to align with industry standards and improve your reliability, privacy, security, compliance, and granular access controls. Follow the [Migration guide](https://docs.cloud.google.com/chronicle/docs/administration/migrate-legacy-siem-infra) and [Community post](https://security.googlecloudcommunity.com/community-blog-42/elevate-your-defense-modernizing-google-secops-for-the-agentic-soc-7087) to begin your transition.
+
+This migration applies to you **only** if your SIEM instance meets **one of the conditions** below:
+
+* Not deployed in your Google Cloud Project
+* Not using Google Cloud Authentication (Workforce Identity Federation / Cloud Identity)
+* Not using Google Cloud IAM for Feature Role based access controls.
+
+This migration **does not apply** to you if your SIEM instance meets **all the conditions** below:
+
+* Is deployed in your Google Cloud project
+* Uses Workforce Identity Federation or Cloud Identity for authentication
+* Uses Google Cloud IAM to manage granular access permissions
+
+---
 ## 2026-04-19
 
 ### Announcement

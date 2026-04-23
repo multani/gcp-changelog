@@ -1,5 +1,14 @@
 # Cloud Workstations
 
+## 2026-04-13
+
+### Feature
+
+The [preconfigured base images](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images)
+include a `/google/scripts/keep_alive.sh` script to prevent idle
+timeouts when running long-running background tasks.
+
+---
 ## 2026-04-06
 
 ### Feature

@@ -4,6 +4,15 @@
 
 ### Feature
 
+Privileged Access Manager supports [agent identities](https://docs.cloud.google.com/iam/docs/principal-identifiers#v1)
+as grant requesters and approvers.
+
+This feature is available in [preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Privileged Access Manager overview](https://docs.cloud.google.com/iam/docs/pam-overview#supported-identities).
+
+### Feature
+
 **Agent Identity auth manager** is available in [preview](https://cloud.google.com/products#product-launch-stages).
 You can use Agent Identity auth manager to help securely authenticate your agents
 to third-party services using 3-legged OAuth, 2-legged OAuth, or API keys.

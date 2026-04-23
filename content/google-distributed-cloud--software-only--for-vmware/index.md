@@ -1,5 +1,63 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-04-22
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.700-gke.71 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.33.700-gke.71 runs on Kubernetes v1.33.5-gke.2200.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.33.700-gke.71:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/version-history).
+* Resolved an issue that caused VMware cluster upgrades from non-advanced
+  clusters to advanced clusters to get stuck. The system attempted to update
+  immutable fields in the Hub membership. With this fix, the cluster operator
+  preserves the original membership fields during the upgrade process instead of
+  attempting to overwrite them so that the migration to an advanced cluster
+  completes successfully.
+* Fixed an issue in advanced user clusters where the `cloud.google.com/gke-nodepool` label for workload node pools unexpectedly included an `-np`
+  suffix. This caused pods using `nodeSelector` targeting the original pool
+  name (such as Apigee workloads) to fail to schedule. For clusters on older
+  versions experiencing this issue, you can manually set
+  the expected label in the node pool configuration.
+* Fixed an issue where setting the deprecated `stackdriver.enableVPC` field to
+  `true` in a cluster configuration file would block upgrades to an Advanced
+  Cluster. The `stackdriver.enableVPC` field has been deprecated and its
+  setting is now ignored during the upgrade validation process. For clusters on
+  older versions experiencing this issue, remove
+  the field or set it to `false` in your configuration file before
+  you upgrade.
+* Fixed an issue where the `node-problem-detector` was incorrectly deployed onto
+  non-Advanced VMware clusters. This caused the `containerd` runtime to
+  continuously restart on affected nodes due to incompatible health check
+  configurations, leading to ETCD/CRI failures (such as errors connecting to
+  `/run/containerd/containerd.sock`) and unsuccessful cluster upgrades.
+
+### Feature
+
+The following feature was added in 1.33.700-gke.71:
+
+* Improved the resilience of migration from regular clusters to advanced
+  clusters. If a migration attempt fails or is interrupted, you can now safely
+  retry the process without manual cleanup. The system automatically reuses
+  existing resources and the temporary bootstrap cluster when you retry.
+  **Important:** If a migration fails, do not delete the bootstrap cluster,
+  because deleting the bootstrap cluster can cause data loss and prevent
+  recovery.
+
+---
 ## 2026-04-15
 
 ### Announcement

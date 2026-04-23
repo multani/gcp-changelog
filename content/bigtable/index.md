@@ -1,5 +1,59 @@
 # Bigtable
 
+## 2026-04-22
+
+### Feature
+
+The Bigtable editions feature is [generally available
+(GA)](https://cloud.google.com/products#product-launch-stages). Bigtable
+editions introduces advanced features in performance, analytic query capability,
+and resource management. You can choose between the Enterprise and Enterprise
+Plus edition to select the right capabilities for your workloads. For more
+information, see [Editions overview](https://docs.cloud.google.com/bigtable/docs/editions-overview).
+
+### Feature
+
+Bigtable provides an in-memory tier as part of its hybrid storage
+architecture. This tier provides sub-millisecond read latency and high
+throughput for time-sensitive data with independent vertical scaling to handle
+traffic surges. The in-memory tier is available only in the Enterprise Plus
+[edition](https://docs.cloud.google.com/bigtable/docs/editions-overview) in
+[Preview](https://cloud.google.com/products#product-launch-stages). For more
+information, see [In-memory tier overview](https://docs.cloud.google.com/bigtable/docs/in-memory-overview).
+
+### Feature
+
+Bigtable [tiered storage](https://docs.cloud.google.com/bigtable/docs/tiered-storage) limit increases from
+32 TB to 64 TB per node. This expansion provides higher storage
+density to support retention of larger volumes of infrequently accessed data and
+is available only in the Enterprise Plus [edition](https://docs.cloud.google.com/bigtable/docs/editions-overview).
+Tiered storage is available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+As part of Bigtable [editions](https://docs.cloud.google.com/bigtable/docs/editions-overview), you can use
+[Data Boost](https://docs.cloud.google.com/bigtable/docs/data-boost-overview) to read data from tiered
+storage and HDD clusters. This feature is available only in the Enterprise Plus
+edition and is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+As part of Bigtable [editions](https://docs.cloud.google.com/bigtable/docs/editions-overview), you can use
+[Data Boost](https://docs.cloud.google.com/bigtable/docs/data-boost-overview) to run GoogleSQL queries. This
+feature is available only in the Enterprise Plus edition and is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [High-throughput SQL analysis with Data Boost](https://docs.cloud.google.com/bigtable/docs/googlesql-examples#data-boost-analysis).
+
+### Feature
+
+As part of Bigtable [editions](https://docs.cloud.google.com/bigtable/docs/editions-overview), you can
+configure which cluster in a replicated instance is used for automated backups.
+This feature provides greater cost control and backup resource management. This
+feature is available only in the Enterprise Plus edition and is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Bigtable backups overview](https://docs.cloud.google.com/bigtable/docs/backups).
+
+---
 ## 2026-04-20
 
 ### Feature

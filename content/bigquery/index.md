@@ -4,6 +4,45 @@
 
 ### Feature
 
+You can now use the [visual graph modeler](https://docs.cloud.google.com/bigquery/docs/graph-modeler) in
+BigQuery Studio to define BigQuery graph nodes and edges from your
+BigQuery tables and edit graph schema. This
+feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+### Announcement
+
+Dataproc is now called [Managed Service for Apache Spark](https://docs.cloud.google.com/dataproc/docs/concepts/overview). The names for associated API, client
+library, CLI, and Identity and Access Management (IAM) resources remain unchanged.
+
+### Announcement
+
+BigLake is now called [Google Cloud Lakehouse](https://docs.cloud.google.com/biglake/docs/introduction).
+BigLake metastore is now called the [Lakehouse runtime
+catalog](https://docs.cloud.google.com/biglake/docs/about-blms). The names for associated APIs, client
+libraries, CLI commands, and Identity and Access Management (IAM) remain
+unchanged and still reference BigLake.
+
+### Announcement
+
+Dataplex Universal Catalog is now called [Knowledge
+Catalog](https://docs.cloud.google.com/dataplex/docs/introduction). The API, client library, CLI, and
+Identity and Access Management (IAM) names remain unchanged. For more
+information, see [Knowledge Catalog overview](https://docs.cloud.google.com/dataplex/docs/introduction).
+
+### Announcement
+
+Looker Studio is now called [Data Studio](https://docs.cloud.google.com/data-studio).
+The website and endpoint change from `lookerstudio.google.com` to
+`datastudio.google.com`. You do not need to update your reports for this change,
+as Data Studio automatically redirects to the new domain. However,
+if your company uses proxies to restrict access to external sites, your IT
+administrator needs to add the new domain to your access control list (ACL).
+The names for associated API, client library, CLI, and Identity and Access
+Management (IAM) resources remain unchanged. For more information, see [Data Studio returns as new home for Data Cloud
+assets](https://cloud.google.com/blog/products/data-analytics/looker-studio-is-data-studio).
+
+### Feature
+
 [BigQuery graphs](https://docs.cloud.google.com/bigquery/docs/graph-overview) now support the following
 features:
 
@@ -26,13 +65,6 @@ These features are in [Preview](https://cloud.google.com/products#product-launch
 You can now [use the Data Engineering Agent](https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines)
 to build, modify, and troubleshoot data pipelines in BigQuery. This feature is
 [generally available](https://cloud.google.com/products/#product-launch-stages) (GA).
-
-### Feature
-
-You can now use the [visual graph modeler](https://docs.cloud.google.com/bigquery/docs/graph-modeler) in
-BigQuery Studio to define BigQuery graph nodes and edges from your
-BigQuery tables and edit graph schema. This
-feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2026-04-21

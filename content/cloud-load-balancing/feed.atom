@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-04-10T00:00:00+00:00</updated>
+  <updated>2026-04-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-04-22:feature:0</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Policy profiles in authorization policies let you define the type of
+authorization being performed at the load balancer. This feature is
+available in <strong>Preview</strong>.</p>
+<p>You can choose from the following profile types:</p>
+<ul>
+<li>Request authorization profile (<code>REQUEST_AUTHZ</code>): Evaluates access based on
+  HTTP request headers. Authorization decisions can be made directly or
+  delegated to custom services. This is the default profile.</li>
+<li>Content authorization profile (<code>CONTENT_AUTHZ</code>): Enables deep inspection of
+  application payloads (headers, body, and trailers). This is used for
+  content-based security, such as blocking prompt injection attacks and
+  preventing sensitive data leaks. Authorization decisions are always delegated.</li>
+</ul>
+<p>Policy profiles are supported for the following Google Cloud services:</p>
+<ul>
+<li>Regional external Application Load Balancers</li>
+<li>Regional internal Application Load Balancers</li>
+<li>Agent Gateway (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>)</li>
+<li>Secure Web Proxy</li>
+</ul>
+<p>To learn more about policy profiles, see <a href="https://docs.cloud.google.com/load-balancing/docs/auth-policy/auth-policy-overview">Authorization policy overview</a>.</p>]]></content>
+    <summary>Enhance your load balancer's security with new policy profiles. These profiles allow for granular control over authorization, including request-based and content-based checks, with support for various Google Cloud services. This feature is currently in Preview.</summary>
+    <title>Feature: New Policy Profiles for Authorization</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

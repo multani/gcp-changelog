@@ -1,6 +1,32 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2026-04-22": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for bare metal 1.33.700-71 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.33.700-71 runs on Kubernetes v1.33.5-gke.2200.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release of Google Distributed Cloud for bare metal.",
+        "summary": {
+          "title": "New software version available",
+          "summary": "A new version of Google Distributed Cloud for bare metal is now available for download. This release runs on Kubernetes v1.33.5-gke.2200. Please check storage partner compatibility if you use third-party storage solutions."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "The following features were added in 1.33.700-gke.71:\n\nA health check was added to detect when secrets or config maps mounted in pods become \"stale,\" or out-of-sync with the Kubernetes API server. This feature addresses scenarios where the Kubelet's local cache fails to update with the latest versions of configuration data. The check performs the following actions:\n\n* Iterates through all running pods on the node to verify their mounts.\n* Compares the local data in the Kubelet's atomic update symlink structure\n  against the live objects and update timestamps in the API server.\n* Uses a 5-minute threshold to prevent false positives caused by normal\n  propagation delays. A mismatch is only reported as an error if the staleness\n  persists for more than 5 minutes.",
+        "summary": {
+          "title": "Kubelet Secret and Config Map Staleness Detection",
+          "summary": "Version 1.33.700-gke.71 introduces a new health check to identify stale secrets and config maps within pods. This check ensures Kubelet caches are up-to-date by comparing local data with the Kubernetes API server, with a 5-minute threshold to avoid false positives."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.33.700-gke.71:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).\n* Fixed an issue where concurrent tasks on the same node failed when `containerd`\n  restarts. After the fix, tasks are locked and run sequentially to ensure each\n  task completes successfully before the next begins. Each lock is held for up\n  to 20 minutes or until the task reaches success or failure.\n  To bypass this safety mechanismrun and run tasks concurrently, add the\n  following annotation to your cluster: `baremetal.cluster.gke.io/concurrent-machine-update: \"true\"`.\n* Fixed an issue where, during the machine initialization phase, the\n  `etcd-events` pod read the stale data directory when it started and attempted\n  to reuse the old member ID to rejoin the cluster instead of the new one.\n  Trying to use the old member ID to rejoin the cluster resulted in an\n  infinite retry loop and caused the cluster to reject the connection. The fix\n  ensures that the system clears the `/var/lib/etcd-events` directory upon\n  failure, and adds retry logic to `kubeadm-reset` to improve\n  resiliency against transient API errors.\n* Fixed an issue where node upgrades could hang indefinitely and bypass the\n  20-minute maintenance timeout. This issue occurred when a node contained\n  completed pods within a namespace that was in a `Terminating` state. Because\n  the Kubernetes Eviction API rejects operations in terminating namespaces, the\n  cluster controller entered an infinite retry loop. The fix updates the drain\n  process to skip eviction for pods in terminal phases, allowing the upgrade to\n  proceed normally.\n* Fixed an issue where Metrics API operations—including `kubectl top`,\n  Horizontal Pod Autoscaling, and Vertical Pod Autoscaling could\n  fail with TLS verification errors during certificate authority rotation. This\n  occurred because the leaf certificate was not immediately renewed when the\n  certificate authority was rotated, causing a temporary mismatch between the\n  trusted certificate authority bundle and the certificate presented by the\n  metrics server.",
+        "summary": {
+          "title": "Maintenance release 1.33.700-gke.71",
+          "summary": "This release addresses several critical issues, including vulnerabilities, task failures during containerd restarts, etcd-events pod initialization problems, and node upgrade hangs. It also resolves Metrics API failures during certificate authority rotation."
+        }
+      }
+    ],
     "2026-04-15": [
       {
         "kind": "Announcement",

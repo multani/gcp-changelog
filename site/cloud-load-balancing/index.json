@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-04-22": [
+      {
+        "kind": "Feature",
+        "content": "Policy profiles in authorization policies let you define the type of\nauthorization being performed at the load balancer. This feature is\navailable in **Preview**.\n\nYou can choose from the following profile types:\n\n* Request authorization profile (`REQUEST_AUTHZ`): Evaluates access based on\n  HTTP request headers. Authorization decisions can be made directly or\n  delegated to custom services. This is the default profile.\n* Content authorization profile (`CONTENT_AUTHZ`): Enables deep inspection of\n  application payloads (headers, body, and trailers). This is used for\n  content-based security, such as blocking prompt injection attacks and\n  preventing sensitive data leaks. Authorization decisions are always delegated.\n\nPolicy profiles are supported for the following Google Cloud services:\n\n* Regional external Application Load Balancers\n* Regional internal Application Load Balancers\n* Agent Gateway ([Preview](https://cloud.google.com/products#product-launch-stages))\n* Secure Web Proxy\n\nTo learn more about policy profiles, see [Authorization policy overview](https://docs.cloud.google.com/load-balancing/docs/auth-policy/auth-policy-overview).",
+        "summary": {
+          "title": "New Policy Profiles for Authorization",
+          "summary": "Enhance your load balancer's security with new policy profiles. These profiles allow for granular control over authorization, including request-based and content-based checks, with support for various Google Cloud services. This feature is currently in Preview."
+        }
+      }
+    ],
     "2026-04-10": [
       {
         "kind": "Feature",

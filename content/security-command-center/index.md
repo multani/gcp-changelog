@@ -4,6 +4,23 @@
 
 ### Feature
 
+When Security Command Center is activated at the project level only, you can
+[enable Vulnerability Assessment for Google Cloud](https://docs.cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud)
+on the single project.
+
+### Feature
+
+Security Command Center has new predefined rules and controls:
+
+* Additional [predefined security graph rules](https://docs.cloud.google.com/security-command-center/docs/predefined-security-graph-rules)
+  to support Agent Runtime
+* Additional support in [existing correlated threats rules](https://docs.cloud.google.com/security-command-center/docs/correlated-threats-overview)
+  for Agent Runtime
+* Additional [runtime detectors in Agent Platform Threat Detection](https://docs.cloud.google.com/security-command-center/docs/agent-platform-threat-detection-overview#runtime-detectors)
+* Additional [Event Threat Detection rules](https://docs.cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview#rules) to support AI agents
+
+### Feature
+
 Security Command Center findings that are related to AI security risks are available in the
 **Security** tab of the
 [Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern).
@@ -47,11 +64,13 @@ For more information, see
 
 [AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) supports
 agentic workloads in [Preview](https://cloud.google.com/products#product-launch-stages),
-including [Agent Platform Agent Engine](https://docs.cloud.google.com/agent-builder/agent-engine/overview)
+including [Gemini Enterprise Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview)
 and Model Context Protocol (MCP) servers. This update includes the following:
 
-* **Agent vulnerability scanner**: Identifies software vulnerabilities (CVEs)
-  in workloads deployed with Agent Engine.
+* **Agent Platform Vulnerability Assessment**: Identifies software vulnerabilities (CVEs) in agentic
+  workloads that are deployed with Gemini Enterprise Agent Platform.
+  Findings are surfaced for vulnerabilities of HIGH or CRITICAL severity that are
+  detected in your custom dependencies.
 * **Expanded detection and controls**: Includes new threat detection findings
   and recommended security controls for AI agents and MCP servers.
 * **Enhanced inventory and filtering**: Provides an updated [AI security

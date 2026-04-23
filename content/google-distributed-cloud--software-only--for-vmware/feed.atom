@@ -2,9 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-04-15T00:00:00+00:00</updated>
+  <updated>2026-04-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-04-22:announcement:0</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.33.700-gke.71 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.33.700-gke.71 runs on Kubernetes v1.33.5-gke.2200.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>Google Distributed Cloud for VMware 1.33.700-gke.71 is now available for download. Please review the upgrade guide and check storage vendor compatibility before proceeding. Note that new releases may take 7-14 days to be fully accessible through Google Cloud tools.</summary>
+    <title>Announcement: New version of Distributed Cloud for VMware available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-04-22:fixed:1</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.33.700-gke.71:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/version-history">Vulnerability fixes</a>.</li>
+<li>Resolved an issue that caused VMware cluster upgrades from non-advanced
+  clusters to advanced clusters to get stuck. The system attempted to update
+  immutable fields in the Hub membership. With this fix, the cluster operator
+  preserves the original membership fields during the upgrade process instead of
+  attempting to overwrite them so that the migration to an advanced cluster
+  completes successfully.</li>
+<li>Fixed an issue in advanced user clusters where the <code>cloud.google.com/gke-nodepool</code> label for workload node pools unexpectedly included an <code>-np</code>
+  suffix. This caused pods using <code>nodeSelector</code> targeting the original pool
+  name (such as Apigee workloads) to fail to schedule. For clusters on older
+  versions experiencing this issue, you can manually set
+  the expected label in the node pool configuration.</li>
+<li>Fixed an issue where setting the deprecated <code>stackdriver.enableVPC</code> field to
+  <code>true</code> in a cluster configuration file would block upgrades to an Advanced
+  Cluster. The <code>stackdriver.enableVPC</code> field has been deprecated and its
+  setting is now ignored during the upgrade validation process. For clusters on
+  older versions experiencing this issue, remove
+  the field or set it to <code>false</code> in your configuration file before
+  you upgrade.</li>
+<li>Fixed an issue where the <code>node-problem-detector</code> was incorrectly deployed onto
+  non-Advanced VMware clusters. This caused the <code>containerd</code> runtime to
+  continuously restart on affected nodes due to incompatible health check
+  configurations, leading to ETCD/CRI failures (such as errors connecting to
+  <code>/run/containerd/containerd.sock</code>) and unsuccessful cluster upgrades.</li>
+</ul>]]></content>
+    <summary>This release addresses critical security vulnerabilities and resolves several issues affecting VMware cluster upgrades, node pool labeling, and runtime stability. It ensures smoother migrations to advanced clusters and corrects problems with node problem detector deployment.</summary>
+    <title>Fixed: Patch Release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-04-22:feature:2</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following feature was added in 1.33.700-gke.71:</p>
+<ul>
+<li>Improved the resilience of migration from regular clusters to advanced
+  clusters. If a migration attempt fails or is interrupted, you can now safely
+  retry the process without manual cleanup. The system automatically reuses
+  existing resources and the temporary bootstrap cluster when you retry.
+  <strong>Important:</strong> If a migration fails, do not delete the bootstrap cluster,
+  because deleting the bootstrap cluster can cause data loss and prevent
+  recovery.</li>
+</ul>]]></content>
+    <summary>Migration from regular to advanced clusters is now more resilient. If a migration fails or is interrupted, you can safely retry the process without manual cleanup. The system will automatically reuse existing resources and the temporary bootstrap cluster.</summary>
+    <title>Feature: Easier cluster migration retries</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

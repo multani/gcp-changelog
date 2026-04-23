@@ -1,5 +1,16 @@
 # Cloud Composer
 
+## 2026-04-22
+
+### Feature
+
+Managed Service for Apache Airflow supports Gemini Cloud Assist Investigations
+capabilities. The new troubleshooting agent can now troubleshoot failed Airflow
+task instances and DAG runs. The feature is available through
+Gemini Cloud Assist Investigations, which is currently accessible in
+Private Preview.
+
+---
 ## 2026-04-15
 
 ### Announcement

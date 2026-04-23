@@ -1,6 +1,32 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-04-22": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.33.700-gke.71 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.33.700-gke.71 runs on Kubernetes v1.33.5-gke.2200.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New version of Distributed Cloud for VMware available",
+          "summary": "Google Distributed Cloud for VMware 1.33.700-gke.71 is now available for download. Please review the upgrade guide and check storage vendor compatibility before proceeding. Note that new releases may take 7-14 days to be fully accessible through Google Cloud tools."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.33.700-gke.71:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/version-history).\n* Resolved an issue that caused VMware cluster upgrades from non-advanced\n  clusters to advanced clusters to get stuck. The system attempted to update\n  immutable fields in the Hub membership. With this fix, the cluster operator\n  preserves the original membership fields during the upgrade process instead of\n  attempting to overwrite them so that the migration to an advanced cluster\n  completes successfully.\n* Fixed an issue in advanced user clusters where the `cloud.google.com/gke-nodepool` label for workload node pools unexpectedly included an `-np`\n  suffix. This caused pods using `nodeSelector` targeting the original pool\n  name (such as Apigee workloads) to fail to schedule. For clusters on older\n  versions experiencing this issue, you can manually set\n  the expected label in the node pool configuration.\n* Fixed an issue where setting the deprecated `stackdriver.enableVPC` field to\n  `true` in a cluster configuration file would block upgrades to an Advanced\n  Cluster. The `stackdriver.enableVPC` field has been deprecated and its\n  setting is now ignored during the upgrade validation process. For clusters on\n  older versions experiencing this issue, remove\n  the field or set it to `false` in your configuration file before\n  you upgrade.\n* Fixed an issue where the `node-problem-detector` was incorrectly deployed onto\n  non-Advanced VMware clusters. This caused the `containerd` runtime to\n  continuously restart on affected nodes due to incompatible health check\n  configurations, leading to ETCD/CRI failures (such as errors connecting to\n  `/run/containerd/containerd.sock`) and unsuccessful cluster upgrades.",
+        "summary": {
+          "title": "Patch Release Notes",
+          "summary": "This release addresses critical security vulnerabilities and resolves several issues affecting VMware cluster upgrades, node pool labeling, and runtime stability. It ensures smoother migrations to advanced clusters and corrects problems with node problem detector deployment."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following feature was added in 1.33.700-gke.71:\n\n* Improved the resilience of migration from regular clusters to advanced\n  clusters. If a migration attempt fails or is interrupted, you can now safely\n  retry the process without manual cleanup. The system automatically reuses\n  existing resources and the temporary bootstrap cluster when you retry.\n  **Important:** If a migration fails, do not delete the bootstrap cluster,\n  because deleting the bootstrap cluster can cause data loss and prevent\n  recovery.",
+        "summary": {
+          "title": "Easier cluster migration retries",
+          "summary": "Migration from regular to advanced clusters is now more resilient. If a migration fails or is interrupted, you can safely retry the process without manual cleanup. The system will automatically reuse existing resources and the temporary bootstrap cluster."
+        }
+      }
+    ],
     "2026-04-15": [
       {
         "kind": "Announcement",

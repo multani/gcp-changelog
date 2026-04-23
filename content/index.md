@@ -78,6 +78,7 @@
 - [Cloud Monitoring](cloud-monitoring/index.md)
 - [Cloud NAT](cloud-nat/index.md)
 - [Cloud NGFW](cloud-ngfw/index.md)
+- [Cloud Number Registry](cloud-number-registry/index.md)
 - [Cloud Product Registry API](cloud-product-registry-api/index.md)
 - [Cloud Quotas](cloud-quotas/index.md)
 - [Cloud Router](cloud-router/index.md)

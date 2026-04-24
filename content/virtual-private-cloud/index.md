@@ -25,6 +25,9 @@ to your VPC network can communicate with those remaining in the on-premises
 network by using internal IP addresses. After all workloads have migrated,
 you can disable hybrid subnet routing to restore normal routing behavior.
 
+For information about pricing for Hybrid Subnets, see
+[Virtual Private Cloud pricing](https://docs.cloud.google.com/vpc/pricing?e=0#hybrid-subnets).
+
 ---
 ## 2026-03-30
 

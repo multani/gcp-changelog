@@ -2,9 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-04-22T00:00:00+00:00</updated>
+  <updated>2026-04-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-04-23:announcement:0</id>
+    <published>2026-04-23T00:00:00+00:00</published>
+    <updated>2026-04-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.32.1100-gke.84 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.32.1100-gke.84 runs on Kubernetes v1.32.13-gke.100.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>A new version of Google Distributed Cloud for VMware is now available for download. This release runs on Kubernetes v1.32.13-gke.100. Ensure your third-party storage vendor is qualified for this release before upgrading.</summary>
+    <title>Announcement: New software version available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-04-23:fixed:1</id>
+    <published>2026-04-23T00:00:00+00:00</published>
+    <updated>2026-04-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.32.1100-gke.84:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Resolved an issue that caused VMware cluster upgrades from non-advanced
+  clusters to advanced clusters to get stuck. The system attempted to update
+  immutable fields in the Hub membership. With this fix, the cluster operator
+  preserves the original membership fields during the upgrade process instead of
+  attempting to overwrite them so that the migration to an advanced cluster
+  completes successfully.</li>
+</ul>]]></content>
+    <summary>This release fixes security vulnerabilities and resolves an issue where VMware cluster upgrades to advanced clusters could get stuck. The fix ensures that cluster upgrades complete successfully by preserving original membership fields.</summary>
+    <title>Fixed: Resolved upgrade and vulnerability issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

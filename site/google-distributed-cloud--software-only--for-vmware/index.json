@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-04-23": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.32.1100-gke.84 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.32.1100-gke.84 runs on Kubernetes v1.32.13-gke.100.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software version available",
+          "summary": "A new version of Google Distributed Cloud for VMware is now available for download. This release runs on Kubernetes v1.32.13-gke.100. Ensure your third-party storage vendor is qualified for this release before upgrading."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.32.1100-gke.84:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Resolved an issue that caused VMware cluster upgrades from non-advanced\n  clusters to advanced clusters to get stuck. The system attempted to update\n  immutable fields in the Hub membership. With this fix, the cluster operator\n  preserves the original membership fields during the upgrade process instead of\n  attempting to overwrite them so that the migration to an advanced cluster\n  completes successfully.",
+        "summary": {
+          "title": "Resolved upgrade and vulnerability issues",
+          "summary": "This release fixes security vulnerabilities and resolves an issue where VMware cluster upgrades to advanced clusters could get stuck. The fix ensures that cluster upgrades complete successfully by preserving original membership fields."
+        }
+      }
+    ],
     "2026-04-22": [
       {
         "kind": "Announcement",

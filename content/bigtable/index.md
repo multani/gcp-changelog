@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-04-23
+
+### Feature
+
+You can use window functions with GoogleSQL in Bigtable to perform advanced
+analytic operations over multiple table rows.
+This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Window functions](https://docs.cloud.google.com/bigtable/docs/reference/sql/window-functions).
+
+---
 ## 2026-04-22
 
 ### Feature

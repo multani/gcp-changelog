@@ -1,5 +1,67 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-04-23
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.32.1100-gke.84 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.32.1100-gke.84 runs on Kubernetes v1.32.13-gke.100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Announcement
+
+The following features were added in 1.32.1100-gke.84:
+
+* Added a periodic health check to detect stale mounts of Secrets and
+  ConfigMaps on pods. This helps identify rare scenarios where nodes serve
+  outdated secret data after a rotation, which can lead to authentication
+  failures. Currently enabled for GKE Identity Service pods, the check
+  runs on each node and compares the locally cached volume content with the
+  live data from the API server, reporting a mismatch only after a 5-minute
+  grace period to allow for normal update delays.
+
+### Fixed
+
+The following issues were fixed in 1.32.1100-gke.84:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed an issue where node upgrades could hang indefinitely and bypass the
+  20-minute maintenance timeout. This issue occurred when a node contained
+  completed pods within a namespace that was in a `Terminating` state. Because
+  the Kubernetes Eviction API rejects operations in terminating namespaces, the
+  cluster controller entered an infinite retry loop. The fix updates the drain
+  process to skip eviction for pods in terminal phases, allowing the upgrade to
+  proceed normally.
+* Fixed an issue where, during the machine initialization phase, the
+  `etcd-events` pod read the stale data directory when it started and attempted
+  to reuse the old member ID to rejoin the cluster instead of the new one.
+  Trying to use the old member ID to rejoin the cluster resulted in an
+  infinite retry loop and caused the cluster to reject the connection. The fix
+  ensures the `/var/lib/etcd-events` directory is
+  cleared upon failure, and adds retry logic to `kubeadm-reset` to improve
+  resiliency against transient API errors.
+* Fixed an issue where concurrent tasks on the same node failed when `containerd`
+  restarts. After the fix, tasks are locked and run sequentially to ensure each
+  task completes successfully before the next begins. Each lock is held for up
+  to 20 minutes or until the task reaches success or failure.
+  To bypass this safety mechanismrun and run tasks concurrently, add the
+  following annotation to your cluster: `baremetal.cluster.gke.io/
+  concurrent-machine-update: "true"`.
+* Fixed an issue on clusters running Kubernetes 1.31 and later where running
+  `kubeadm-reset` during an upgrade or reset could crash and enter an infinite
+  retry loop, blocking the operation. This occurred because the tool failed to
+  read cluster configuration on newer Kubernetes versions.
+
+---
 ## 2026-04-22
 
 ### Announcement

@@ -1,5 +1,14 @@
 # Cloud Deploy
 
+## 2026-04-14
+
+### Change
+
+Support for [deploying Cloud Run worker pools](https://docs.cloud.google.com/deploy/docs/run-targets) is now
+generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-03-23
 
 ### Feature

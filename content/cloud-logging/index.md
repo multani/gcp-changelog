@@ -16,7 +16,6 @@ to let agents and AI applications interact with your log entries, see
 
 ### Go
 
-{: track-name='go'}
 #### [v1.16.0](https://github.com/googleapis/google-cloud-go/compare/logging/v1.15.0...logging/v1.16.0) (2026-04-13)
 
 ---
@@ -26,7 +25,6 @@ to let agents and AI applications interact with your log entries, see
 
 ### Go
 
-{: track-name='go'}
 #### [v1.15.0](https://github.com/googleapis/google-cloud-go/compare/logging/v1.14.0...logging/v1.15.0) (2026-04-09)
 
 ---
@@ -47,7 +45,6 @@ The Telemetry API for log ingestion is in [Preview](https://docs.cloud.google.co
 
 ### Go
 
-{: track-name='go'}
 #### [v1.14.0](https://github.com/googleapis/google-cloud-go/compare/logging/v1.13.2...logging/v1.14.0) (2026-04-02)
 
 ---

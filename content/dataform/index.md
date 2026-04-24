@@ -1,5 +1,22 @@
 # Dataform
 
+## 2026-04-24
+
+### Announcement
+
+Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
+library, CLI, and Identity and Access Management (IAM) resources remain unchanged.
+For more information, see
+[Knowledge Catalog overview](https://docs.cloud.google.com/dataplex/docs/introduction).
+
+### Announcement
+
+Vertex AI is now called Gemini Enterprise Agent Platform. The names for
+associated APIs, client libraries, CLI commands, and Identity and Access
+Management (IAM) resources remain unchanged. For more information, see
+[Agent Platform overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/overview).
+
+---
 ## 2026-04-16
 
 ### Feature

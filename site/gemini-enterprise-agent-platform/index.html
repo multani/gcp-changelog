@@ -2450,6 +2450,89 @@
 <h1 id="gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</h1>
 <h2 id="2026-04-22">2026-04-22</h2>
 <h3 id="change">Change</h3>
+<h3 id="initial-release-of-gemini-enterprise-agent-platform">Initial release of Gemini Enterprise Agent Platform</h3>
+<p>This initial release includes (but is not limited to) the following releases or
+changes:</p>
+<ul>
+<li>Change <strong>Vertex
+  AI</strong> is now part of Gemini Enterprise Agent Platform. Information on model
+  support for Vertex AI is now under <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/overview">Gemini Enterprise Agent Platform &gt;
+  Models</a>.</li>
+<li>Change <strong>Agent
+  Builder</strong> is now part of Gemini Enterprise Agent Platform. Features have
+  been renamed as follows:</li>
+<li><strong>Agent Engine</strong> is now <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime"><strong>Agent Runtime</strong></a>.</li>
+<li><strong>Agent Builder Sessions</strong> is <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sessions"><strong>Agent Platform Sessions</strong></a>.</li>
+<li><strong>Memory Bank</strong> is now <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank"><strong>Agent Platform Memory Bank</strong></a>.</li>
+<li>Change <strong>Agent
+  Runtime</strong> now supports long-running operations (up to 7 days).</li>
+<li>Change <strong>Agent
+  Runtime</strong> now supports sub-second cold starts.</li>
+<li>Change
+  Provisioning for <strong>Agent Runtime</strong> has been reduced to less than 1 minute.</li>
+<li>Release You can now use your own
+  <a href="gemini-enterprise-agent-platform/build/runtime/setup#byoc">custom-built
+  containers</a> when
+  you deploy agents with <strong>Agent Runtime</strong>.</li>
+<li>Change When
+  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sessions/manage-with-api">creating a
+  Session</a>,
+  you can specify your own session ID.</li>
+<li>Release Memory Bank now enables
+  continuous event streaming with automated memory generation triggered by
+  configurable criteria like event count or idle time. For more information,
+  see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/ingest-events">Ingest
+  events</a>.</li>
+<li>Release Memory Bank now automatically
+  maintains an immutable version history of memories through revision
+  resources. For more information, see <a href="gemini-enterprise-agent-platform/scale/memory-bank/revisions">Memory
+  revisions</a>.</li>
+<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/agent-identity-overview"><strong>Agent
+  Identity</strong></a>
+  for General Availability. Agent Identity helps let your agent securely
+  authenticate to MCP servers, cloud resources, endpoints, and other agents,
+  either acting as itself or acting on behalf of the end user.</li>
+<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview"><strong>Agent Gateway</strong></a>
+  for Private Preview. Agent Gateway is the networking component of the Gemini
+  Enterprise Agent Platform ecosystem. It secures and governs connectivity for
+  all agentic interactions, whether they occur between users and agents,
+  agents and tools, or among agents themselves.</li>
+<li>Release <a href="https://docs.cloud.google.com/agent-registry/overview"><strong>Agent
+  Registry</strong></a> for Public Preview. Agent Registry is
+  a centralized, unified catalog that lets you store, discover, and govern
+  Model Context Protocol (MCP) servers, tools, and AI agents within Google
+  Cloud.</li>
+<li>Release New <a href="gemini-enterprise-agent-platform/govern/policies/overview"><strong>IAM governance
+  policies</strong></a> are
+  available in Private Preview.</li>
+<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/overview"><strong>Agent
+  Observability</strong></a>
+  for Preview. Agent Observability in Gemini Enterprise Agent Platform
+  provides comprehensive visibility into the performance, behavior, and health
+  of your deployed agents and Model Context Protocol (MCP) servers. By
+  monitoring key metrics, tracing execution paths, and observing your
+  multi-agent system as a whole, you can diagnose issues, optimize resource
+  consumption, and improve the reliability of your agents.</li>
+<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/embedding-2"><strong>Gemini Embedding
+  2</strong></a>
+  (<code>gemini-embedding-2</code>) for General Availability.</li>
+<li>Release The <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/deep-research"><strong>Gemini Deep Research
+  Agent</strong></a>, a
+  pre-built agent designed to help you plan, execute, and synthesize
+  multi-step research tasks. It uses Gemini 3.1 Pro to bridge the gap between
+  public web data and private enterprise context by simultaneously grounding
+  research across three distinct, high-fidelity data streams.</li>
+<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/use-agent-platform-mcp"><strong>Agent Platform remote MCP
+  server</strong></a>
+  for General Availability. Support for Model Context Protocol (MCP) use is
+  available for Agent Platform.</li>
+<li>Change
+  <strong>Google Cloud console navigation</strong>: The navigation menus under Agent
+  Platform (formerly Vertex AI) and Data Analytics have been updated to
+  centralize agentic products and features. Bookmarked links will continue to
+  work via automatic redirects.</li>
+</ul>
+<h3 id="change_1">Change</h3>
 <h3 id="vertex-ai-to-gemini-enterprise-agent-platform-naming-changes">Vertex AI to Gemini Enterprise Agent Platform naming changes</h3>
 <p>The table below lists all of the features that have been transitioned from Vertex AI and what their new names are in Agent Platform.</p>
 <h4 id="click-to-expand-naming-changes-list">Click to expand naming changes list</h4>
@@ -2670,10 +2753,6 @@
 <td>Experiments on Agent Platform</td>
 </tr>
 <tr>
-<td>Vertex AI in Firebase</td>
-<td>Agent Platform in Firebase</td>
-</tr>
-<tr>
 <td>Vertex AI Model Monitoring</td>
 <td>Model Monitoring on Agent Platform</td>
 </tr>
@@ -2691,89 +2770,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="change_1">Change</h3>
-<h3 id="initial-release-of-gemini-enterprise-agent-platform">Initial release of Gemini Enterprise Agent Platform</h3>
-<p>This initial release includes (but is not limited to) the following releases or
-changes:</p>
-<ul>
-<li>Change <strong>Vertex
-  AI</strong> is now part of Gemini Enterprise Agent Platform. Information on model
-  support for Vertex AI is now under <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/overview">Gemini Enterprise Agent Platform &gt;
-  Models</a>.</li>
-<li>Change <strong>Agent
-  Builder</strong> is now part of Gemini Enterprise Agent Platform. Features have
-  been renamed as follows:</li>
-<li><strong>Agent Engine</strong> is now <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/runtime"><strong>Agent Runtime</strong></a>.</li>
-<li><strong>Agent Builder Sessions</strong> is <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sessions"><strong>Agent Platform Sessions</strong></a>.</li>
-<li><strong>Memory Bank</strong> is now <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank"><strong>Agent Platform Memory Bank</strong></a>.</li>
-<li>Change <strong>Agent
-  Runtime</strong> now supports long-running operations (up to 7 days).</li>
-<li>Change <strong>Agent
-  Runtime</strong> now supports sub-second cold starts.</li>
-<li>Change
-  Provisioning for <strong>Agent Runtime</strong> has been reduced to less than 1 minute.</li>
-<li>Release You can now use your own
-  <a href="gemini-enterprise-agent-platform/build/runtime/setup#byoc">custom-built
-  containers</a> when
-  you deploy agents with <strong>Agent Runtime</strong>.</li>
-<li>Change When
-  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sessions/manage-with-api">creating a
-  Session</a>,
-  you can specify your own session ID.</li>
-<li>Release Memory Bank now enables
-  continuous event streaming with automated memory generation triggered by
-  configurable criteria like event count or idle time. For more information,
-  see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/ingest-events">Ingest
-  events</a>.</li>
-<li>Release Memory Bank now automatically
-  maintains an immutable version history of memories through revision
-  resources. For more information, see <a href="gemini-enterprise-agent-platform/scale/memory-bank/revisions">Memory
-  revisions</a>.</li>
-<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/agent-identity-overview"><strong>Agent
-  Identity</strong></a>
-  for General Availability. Agent Identity helps let your agent securely
-  authenticate to MCP servers, cloud resources, endpoints, and other agents,
-  either acting as itself or acting on behalf of the end user.</li>
-<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview"><strong>Agent Gateway</strong></a>
-  for Private Preview. Agent Gateway is the networking component of the Gemini
-  Enterprise Agent Platform ecosystem. It secures and governs connectivity for
-  all agentic interactions, whether they occur between users and agents,
-  agents and tools, or among agents themselves.</li>
-<li>Release <a href="https://docs.cloud.google.com/agent-registry/overview"><strong>Agent
-  Registry</strong></a> for Public Preview. Agent Registry is
-  a centralized, unified catalog that lets you store, discover, and govern
-  Model Context Protocol (MCP) servers, tools, and AI agents within Google
-  Cloud.</li>
-<li>Release New <a href="gemini-enterprise-agent-platform/govern/policies/overview"><strong>IAM governance
-  policies</strong></a> are
-  available in Private Preview.</li>
-<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/overview"><strong>Agent
-  Observability</strong></a>
-  for Preview. Agent Observability in Gemini Enterprise Agent Platform
-  provides comprehensive visibility into the performance, behavior, and health
-  of your deployed agents and Model Context Protocol (MCP) servers. By
-  monitoring key metrics, tracing execution paths, and observing your
-  multi-agent system as a whole, you can diagnose issues, optimize resource
-  consumption, and improve the reliability of your agents.</li>
-<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/embedding-2"><strong>Gemini Embedding
-  2</strong></a>
-  (<code>gemini-embedding-2</code>) for General Availability.</li>
-<li>Release The <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/deep-research"><strong>Gemini Deep Research
-  Agent</strong></a>, a
-  pre-built agent designed to help you plan, execute, and synthesize
-  multi-step research tasks. It uses Gemini 3.1 Pro to bridge the gap between
-  public web data and private enterprise context by simultaneously grounding
-  research across three distinct, high-fidelity data streams.</li>
-<li>Release <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/use-agent-platform-mcp"><strong>Agent Platform remote MCP
-  server</strong></a>
-  for General Availability. Support for Model Context Protocol (MCP) use is
-  available for Agent Platform.</li>
-<li>Change
-  <strong>Google Cloud console navigation</strong>: The navigation menus under Agent
-  Platform (formerly Vertex AI) and Data Analytics have been updated to
-  centralize agentic products and features. Bookmarked links will continue to
-  work via automatic redirects.</li>
-</ul>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
   <div class="navbar-header">

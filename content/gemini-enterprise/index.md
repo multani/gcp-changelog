@@ -46,16 +46,16 @@ This feature is in Public Preview. For more information, see:
 
 ### Feature
 
-**Gemini Enterprise: Register ADK agents hosted on Agent Platform Agent Engine**
+**Gemini Enterprise: Register ADK agents hosted on Vertex AI Agent Engine**
 
-You can register ADK agents hosted on Agent Platform Agent Engine with
+You can register ADK agents hosted on Vertex AI Agent Engine with
 Gemini Enterprise. This includes agents running within
-Agent Platform Agent Engine in a different Google Cloud project. This
+Vertex AI Agent Engine in a different Google Cloud project. This
 feature is generally available (GA).
 
 For more information, see:
 
-* [Register and manage ADK agents hosted on Agent Platform Agent Engine](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-adk-agent)
+* [Register and manage ADK agents hosted on Vertex AI Agent Engine](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-an-adk-agent)
 * [Configure cross-project ADK agents](https://docs.cloud.google.com/gemini/enterprise/docs/configure-cross-project-adk-agents)
 
 ---

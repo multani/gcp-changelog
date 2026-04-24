@@ -33,10 +33,6 @@ of the investigation continue to be available to you in the Google Cloud console
 ---
 ## 2026-04-09
 
-### Feature
-
-
-
 ### Model Context Protocol support
 
 MCP support is available in Private Preview. To request access, contact your
@@ -44,10 +40,6 @@ Google Cloud account team. You can interact with Gemini Cloud Assist agents from
 various surfaces, including third-party client agents and IDEs, using the Model
 Context Protocol (MCP). For more information, see
 [Integrating with MCP](https://docs.cloud.google.com/cloud-assist/docs/mcp-integration).
-
-### Feature
-
-
 
 ### Proactive agents for issue investigation
 
@@ -60,10 +52,6 @@ Eventarc. You can view these results in the Google Cloud console. This feature r
 administrator enablement and configuration of an agent identity. For more
 information, see [Configure proactive agents](https://docs.cloud.google.com/cloud-assist/docs/proactive-agents-setup).
 
-### Feature
-
-
-
 ### Page context awareness
 
 Page context awareness is available in Public Preview. Gemini Cloud Assist
@@ -71,10 +59,6 @@ automatically uses the context of the content currently visible on your
 Google Cloud console page to provide more relevant and accurate responses to your
 prompts. For more information, see
 [Manage page context sharing](https://docs.cloud.google.com/cloud-assist/chat-panel#page-context-sharing)
-
-### Feature
-
-
 
 ### Enhanced agent administration controls
 

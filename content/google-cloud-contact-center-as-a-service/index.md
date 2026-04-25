@@ -601,9 +601,9 @@ The following issues were addressed in this release:
 
 ### Announcement
 
-**Mobile SDK version 2.15.2 patch**
+**Mobile SDK for Android version 2.15.2 patch**
 
-This patch updates the following for the Android SDK:
+This patch updates the following for the mobile SDK for Android:
 
 * Updates `minSdkVersion` to `25`.
 * Upgrades the following dependencies:

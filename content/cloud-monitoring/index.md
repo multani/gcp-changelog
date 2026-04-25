@@ -64,7 +64,7 @@ To learn more, see the following:
 
 Application Monitoring has added support for the following resources:
 
-* Agent Platform Workbench
+* Vertex AI Workbench
 * GKE Gateway
 * GKE Ingress
 * Layer 7 cross-regional Application Load Balancers

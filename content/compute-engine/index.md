@@ -1,5 +1,20 @@
 # Compute Engine
 
+## 2026-04-22
+
+### Feature
+
+**Generally available**: The G4 accelerator-optimized machine series now
+supports the creation of virtual machine (VM) instances with less than one GPU
+attached (fractional GPUs). When you create VM instances with fractional GPUs,
+you can select 1/2, 1/4, or 1/8 of a G4 GPU. Fractional GPUs let you optimize
+costs for workloads that don't require the resources of a full GPU.
+
+For more information, see the
+[G4 machine series](https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines#g4-series)
+overview.
+
+---
 ## 2026-04-20
 
 ### Feature

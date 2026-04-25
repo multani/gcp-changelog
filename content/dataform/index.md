@@ -4,6 +4,13 @@
 
 ### Announcement
 
+Cloud Composer is now called Managed Service for Apache Airflow. The names for
+associated APIs, client libraries, CLI commands, and Identity and Access
+Management (IAM) resources remain unchanged. For more information, see
+[Managed Airflow overview](https://docs.cloud.google.com/composer/docs/composer-2/composer-overview).
+
+### Announcement
+
 Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
 library, CLI, and Identity and Access Management (IAM) resources remain unchanged.
 For more information, see

@@ -1,5 +1,17 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-04-24
+
+### Announcement
+
+**Mobile SDK for iOS version 2.15.2 patch**
+
+This patch updates the following for the mobile SDK for iOS:
+
+* Fixed an issue with the mobile SDK on iOS 26 where the chat text field was
+  partially obscured because it appeared too low on the screen.
+
+---
 ## 2026-04-20
 
 ### Announcement

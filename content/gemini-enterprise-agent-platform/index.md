@@ -158,4 +158,10 @@ The table below lists all of the features that have been transitioned from Verte
 | Vertex AI | Agent Platform |
 | Vertex AI Generative AI | Agent Platform Generative AI |
 
+### Issue
+
+The following known issues affect Gemini Enterprise Agent Platform:
+
+* **Audio track extraction (Gemini Embedding 2 only):** The `audio_track_extraction` feature does not work. For more information, see [Issue #504505771](https://issuetracker.google.com/504505771).
+
 ---

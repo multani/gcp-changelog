@@ -27,7 +27,7 @@ is available in Model Garden.
 
 **Metadata search for RAG Engine**
 
-Use schema-based metadata search in Agent Platform RAG Engine.
+Use schema-based metadata search in Vertex AI RAG Engine.
 You can define a metadata schema for a corpus, attach metadata to files within
 that corpus, and use this metadata to filter contexts during retrieval.
 For more information, see
@@ -44,9 +44,9 @@ Gemma 4 26B A4B IT is available as a managed API in Model Garden. To learn more,
 
 ### Feature
 
-**Agent Platform RAG Engine Serverless mode**
+**Vertex AI RAG Engine Serverless mode**
 
-Agent Platform RAG Engine Serverless mode is now available in [public
+Vertex AI RAG Engine Serverless mode is now available in [public
 preview](https://cloud.google.com/products#product-launch-stages). Serverless
 mode provides a fully managed database for storing RAG resources that abstracts
 away database provisioning and scaling. You can seamlessly switch between
@@ -55,7 +55,7 @@ instances.
 
 For more information, see the following:
 
-* [Deployment modes in Agent Platform RAG Engine](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/deployment-modes)
+* [Deployment modes in Vertex AI RAG Engine](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/deployment-modes)
 * [Serverless mode](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/serverless-mode)
 * [Managing Spanner mode](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/spanner-mode)
 * [Switching between modes](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/rag-engine/switching-modes)
@@ -69,7 +69,7 @@ For more information, see the following:
 
 Veo 3.1 Lite is available in [public
 preview](https://cloud.google.com/products#product-launch-stages). This release
-is our most cost-efficient Veo on Agent Platform model.
+is our most cost-efficient Veo on Vertex AI model.
 
 For more information, see [3.1 Lite
 Generate](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate#3.1-lite-generate-001)

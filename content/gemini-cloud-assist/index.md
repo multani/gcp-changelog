@@ -1,5 +1,65 @@
 # Gemini Cloud Assist
 
+## 2026-04-22
+
+### Feature
+
+
+
+### Model Context Protocol support
+
+MCP support is available in Private Preview. To request access, contact your
+Google Cloud account team. You can interact with Gemini Cloud Assist agents from
+various surfaces, including third-party client agents and IDEs, using the Model
+Context Protocol (MCP). For more information, see
+[Integrating with MCP](https://docs.cloud.google.com/cloud-assist/configure-mcp).
+
+### Feature
+
+
+
+### Proactive agents for issue investigation
+
+Proactive agents are available in Private Preview to Premium Support customers.
+Enable Gemini Cloud Assist to autonomously investigate issues triggered by Cloud
+Alerting policies or cost anomalies in the background. These investigations
+don't modify or make any changes to your environment. Results and insights, such
+as root cause analysis for alerts or cost spike drivers, are delivered via
+Eventarc. You can view these results in the Google Cloud console. This feature requires
+administrator enablement and configuration of an agent identity. For more
+information, see [Configure proactive agents](https://docs.cloud.google.com/cloud-assist/proactive-agents-setup).
+
+### Feature
+
+
+
+### Page context awareness
+
+Page context awareness is available in Public Preview. Gemini Cloud Assist
+automatically uses the context of the content currently visible on your
+Google Cloud console page to provide more relevant and accurate responses to your
+prompts. For more information, see
+[Manage page context sharing](https://docs.cloud.google.com/cloud-assist/chat-panel#page-context-sharing).
+
+### Feature
+
+
+
+### Enhanced agent administration controls
+
+[Enhanced agent administration controls](https://docs.cloud.google.com/cloud-assist/admin-settings) are available in Public Preview.
+Administrators have the following options in the Cloud Assist settings panel:
+
+* **Web grounding settings:** Choose how Gemini Cloud Assist uses Google Search to
+  ground its responses, with options for either the most comprehensive results
+  or stricter data residency compliance. For more information, see
+  [Configure web grounding](https://docs.cloud.google.com/cloud-assist/configure-grounding).
+* **Custom instructions:** Define persistent system instructions to customize the
+  agent's persona, response formatting, and awareness of organizational
+  standards or business context for all users within the project. For more
+  information, see [Set custom instructions](https://docs.cloud.google.com/cloud-assist/custom-instructions).
+
+---
 ## 2026-04-16
 
 ### geminicloudassist API automatically enabled for Gemini Cloud Assist chat users

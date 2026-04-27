@@ -1,5 +1,13 @@
 # Cloud Trace
 
+## 2026-04-27
+
+### Feature
+
+Cloud Trace is a service covered by the
+[Cloud Observability (Monitoring, Logging, Trace) Service Level Agreement (SLA)](https://cloud.google.com/operations/sla).
+
+---
 ## 2026-04-15
 
 ### Feature

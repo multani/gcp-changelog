@@ -1,5 +1,14 @@
 # Dataplex
 
+## 2026-04-20
+
+### Feature
+
+Knowledge Catalog discovers links between data assets, helping you understand how they connect and the nature of their relationships.
+This feature is available in [preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see [View data relationships in Knowledge Catalog](https://cloud.google.com/dataplex/docs/data-relationships).
+
+---
 ## 2026-04-17
 
 ### Feature

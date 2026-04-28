@@ -1,5 +1,13 @@
 # Google Cloud VMware Engine
 
+## 2026-04-09
+
+### Feature
+
+You can now use Privileged Access Manager (PAM) to [delete clusters](https://docs.cloud.google.com/vmware-engine/docs/private-clouds/howto-manage-private-cloud#delete-cluster)
+in the private clouds.
+
+---
 ## 2026-03-10
 
 ### Feature

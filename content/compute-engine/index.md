@@ -1,5 +1,13 @@
 # Compute Engine
 
+## 2026-04-27
+
+### Feature
+
+**Generally available**: Compute Engine now offers support for AI zones. To
+learn more, see [AI zones](https://docs.cloud.google.com/compute/docs/regions-zones/ai-zones).
+
+---
 ## 2026-04-22
 
 ### Feature

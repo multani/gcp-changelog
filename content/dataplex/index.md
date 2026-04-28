@@ -1,5 +1,16 @@
 # Dataplex
 
+## 2026-04-24
+
+### Announcement
+
+BigLake is now called [Google Cloud Lakehouse](https://docs.cloud.google.com/biglake/docs/introduction).
+BigLake metastore is now called the [Lakehouse runtime
+catalog](https://docs.cloud.google.com/biglake/docs/about-blms). The names for associated APIs, client
+libraries, CLI commands, and Identity and Access Management (IAM) remain
+unchanged and still reference BigLake.
+
+---
 ## 2026-04-20
 
 ### Feature

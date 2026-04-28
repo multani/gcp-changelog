@@ -1,5 +1,14 @@
 # Cloud Workstations
 
+## 2026-04-27
+
+### Feature
+
+The [preconfigured base images](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images)
+include a notification when the `running_timeout` for the workstation is
+close to being reached.
+
+---
 ## 2026-04-13
 
 ### Feature

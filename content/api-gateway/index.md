@@ -1,5 +1,16 @@
 # API Gateway
 
+## 2026-04-27
+
+### Change
+
+**New validations on paths in API configurations**
+
+API Gateway now enforces stricter syntax validations on templated paths when you create new API configurations and gateways.
+
+See [path templating syntax rules](https://docs.cloud.google.com/api-gateway/docs/path-templating#syntax_rules) and [limits](https://docs.cloud.google.com/api-gateway/docs/path-templating#limits) for more information.
+
+---
 ## 2026-02-02
 
 ### Change

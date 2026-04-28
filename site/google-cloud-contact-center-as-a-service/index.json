@@ -11,56 +11,6 @@
         }
       }
     ],
-    "2026-04-20": [
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
-        "summary": {
-          "title": "New CCaaS Version Coming Soon",
-          "summary": "Get ready for the next version of our Contact Center as a Service offering. These pre-release notes provide a glimpse into the upcoming capabilities that will enhance your customer experience."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Custom field mapping for HubSpot**\n\nYou can map your web or mobile SDK custom data fields to your HubSpot\ninstallation's custom fields. At runtime, when the SDK sends a custom data\nvalue, the system writes the value to the mapped HubSpot custom field.\n\nAdministrators: On the **Settings > Operation Management** page,\nthere's a new **Custom Field Mapping** pane.",
-        "summary": {
-          "title": "Map SDK data to HubSpot fields",
-          "summary": "You can now map your web or mobile SDK custom data fields directly to your HubSpot installation's custom fields. This allows the system to automatically write custom data values to the corresponding HubSpot fields when sent by the SDK. Administrators can configure these mappings on the Settings > Operation Management page."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Web SDK v3: advanced call scheduling**\n\nAdvanced call scheduling has the following capabilities:\n\n* **Day-based time slot selection**. End-users can browse available time\n  slots organized by day, with configurable intervals.\n* **Rescheduling**. If an end-user reopens the web SDK and has an existing\n  scheduled call, they're prompted to manage that appointment (reschedule or\n  cancel) before starting a new flow.\n* **Cancellation**. End-users can cancel a previously scheduled call using the\n  web SDK.",
-        "summary": {
-          "title": "Schedule calls with Web SDK v3",
-          "summary": "Web SDK v3 now supports advanced call scheduling, allowing users to select day-based time slots, reschedule existing appointments, and cancel calls directly through the SDK."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Headless web SDK updates**\n\nWe've made the following updates to the headless web SDK:\n\n* New methods:\n\n  + **getFeatureFlags**. Get the current state of feature flags.\n  + **fetchTimeSlotAvailability**. Check if time slots are available for a\n    given menu.\n  + **restoreCobrowseSession**. Restores a cobrowse session after the\n    browser window is reopened.\n  + **getLogs**. Gets the internal debug logs collected by the SDK.\n* Updated signatures:\n\n  + **getTimeSlots**. Now includes a `GetTimeSlotsRequest` options object.\n  + **updatePostSession**. Now includes an `optInSelection` parameter.",
-        "summary": {
-          "title": "Headless SDK Improvements",
-          "summary": "The headless web SDK has been updated with new methods for feature flags, time slot availability, cobrowse session restoration, and log retrieval. Additionally, existing methods like getTimeSlots and updatePostSession have received signature updates to provide more functionality."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Accessibility and design improvements**\n\nWe've made the following accessibility and design improvements to the web SDK v3\nand the headless web SDK:\n\n* **WCAG Compliance**. Updated to comply with Web Content Accessibility\n  Guidelines (WCAG).\n* **Right-to-left support**. Now supports right-to-left languages: Arabic,\n  Hebrew, Farsi, and Urdu.\n* **Improved screen reader compatibility**. Improved support for screen\n  readers.\n* **Improved spacing**. Uses 4px-based spacing to improve the look and feel of\n  page displays.",
-        "summary": {
-          "title": "SDK Accessibility and Design Enhancements",
-          "summary": "The web SDK v3 and headless web SDK have received significant accessibility and design improvements, including WCAG compliance, right-to-left language support, enhanced screen reader compatibility, and refined spacing for a better user experience."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where chats escalated by a virtual agent disconnected seconds\n  after assignment to a human agent, preventing the human agent and the end\n  user from interacting.\n* Fixed an issue where spurious chat interactions appeared in the **All\n  Interactions** dashboard, causing discrepancies in handled chat reporting\n  and incorrect failed session filtering.\n* Fixed a web SDK v3 issue where the out-of-office (OOO) deflection message\n  displayed in the end-user's chat window didn't match the message in the chat\n  transcript.\n* Fixed an issue where agents received incorrect **Missed target response\n  time** notifications in agent desktop SMS chats, even when responding\n  promptly.\n* Fixed an issue where agents attempting to access their contact center using\n  private ingress couldn't connect.\n* Fixed an issue where the **Allow transfers to queues outside of hours of\n  operation** checkbox was unexpectedly unavailable.\n* Fixed an issue where verified outbound phone numbers couldn't be added to a\n  queue because the selection field was empty, preventing administrators from\n  assigning new phone numbers.\n* Fixed an issue where attempts to rename IVR queues using redirection data in\n  legacy YAML files resulted in errors.",
-        "summary": {
-          "title": "Resolved chat and reporting issues",
-          "summary": "Several issues have been resolved, including chat disconnections after agent assignment, inaccurate reporting on the All Interactions dashboard, and discrepancies in out-of-office messages. Additionally, fixes have been implemented for agent notifications, connectivity problems with private ingress, queue transfer settings, verified outbound number assignments, and IVR queue renaming."
-        }
-      }
-    ],
     "2026-04-15": [
       {
         "kind": "Announcement",
@@ -234,6 +184,56 @@
         "summary": {
           "title": "Android SDK Update Available",
           "summary": "The mobile SDK for Android has been updated to version 2.15.2. This patch includes an updated minSdkVersion to 25 and upgrades Twilio Conversations and Twilio Voice dependencies to their latest versions."
+        }
+      }
+    ],
+    "2026-04-20": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "New CCaaS Version Coming Soon",
+          "summary": "Get ready for the next version of our Contact Center as a Service offering. These pre-release notes provide a glimpse into the upcoming capabilities that will enhance your customer experience."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Custom field mapping for HubSpot**\n\nYou can map your web or mobile SDK custom data fields to your HubSpot\ninstallation's custom fields. At runtime, when the SDK sends a custom data\nvalue, the system writes the value to the mapped HubSpot custom field.\n\nAdministrators: On the **Settings > Operation Management** page,\nthere's a new **Custom Field Mapping** pane.",
+        "summary": {
+          "title": "Map SDK data to HubSpot fields",
+          "summary": "You can now map your web or mobile SDK custom data fields directly to your HubSpot installation's custom fields. This allows the system to automatically write custom data values to the corresponding HubSpot fields when sent by the SDK. Administrators can configure these mappings on the Settings > Operation Management page."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Web SDK v3: advanced call scheduling**\n\nAdvanced call scheduling has the following capabilities:\n\n* **Day-based time slot selection**. End-users can browse available time\n  slots organized by day, with configurable intervals.\n* **Rescheduling**. If an end-user reopens the web SDK and has an existing\n  scheduled call, they're prompted to manage that appointment (reschedule or\n  cancel) before starting a new flow.\n* **Cancellation**. End-users can cancel a previously scheduled call using the\n  web SDK.",
+        "summary": {
+          "title": "Schedule calls with Web SDK v3",
+          "summary": "Web SDK v3 now supports advanced call scheduling, allowing users to select day-based time slots, reschedule existing appointments, and cancel calls directly through the SDK."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Headless web SDK updates**\n\nWe've made the following updates to the headless web SDK:\n\n* New methods:\n\n  + **getFeatureFlags**. Get the current state of feature flags.\n  + **fetchTimeSlotAvailability**. Check if time slots are available for a\n    given menu.\n  + **restoreCobrowseSession**. Restores a cobrowse session after the\n    browser window is reopened.\n  + **getLogs**. Gets the internal debug logs collected by the SDK.\n* Updated signatures:\n\n  + **getTimeSlots**. Now includes a `GetTimeSlotsRequest` options object.\n  + **updatePostSession**. Now includes an `optInSelection` parameter.",
+        "summary": {
+          "title": "Headless SDK Improvements",
+          "summary": "The headless web SDK has been updated with new methods for feature flags, time slot availability, cobrowse session restoration, and log retrieval. Additionally, existing methods like getTimeSlots and updatePostSession have received signature updates to provide more functionality."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Accessibility and design improvements**\n\nWe've made the following accessibility and design improvements to the web SDK v3\nand the headless web SDK:\n\n* **WCAG Compliance**. Updated to comply with Web Content Accessibility\n  Guidelines (WCAG).\n* **Right-to-left support**. Now supports right-to-left languages: Arabic,\n  Hebrew, Farsi, and Urdu.\n* **Improved screen reader compatibility**. Improved support for screen\n  readers.\n* **Improved spacing**. Uses 4px-based spacing to improve the look and feel of\n  page displays.",
+        "summary": {
+          "title": "SDK Accessibility and Design Enhancements",
+          "summary": "The web SDK v3 and headless web SDK have received significant accessibility and design improvements, including WCAG compliance, right-to-left language support, enhanced screen reader compatibility, and refined spacing for a better user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where chats escalated by a virtual agent disconnected seconds\n  after assignment to a human agent, preventing the human agent and the end\n  user from interacting.\n* Fixed an issue where spurious chat interactions appeared in the **All\n  Interactions** dashboard, causing discrepancies in handled chat reporting\n  and incorrect failed session filtering.\n* Fixed a web SDK v3 issue where the out-of-office (OOO) deflection message\n  displayed in the end-user's chat window didn't match the message in the chat\n  transcript.\n* Fixed an issue where agents received incorrect **Missed target response\n  time** notifications in agent desktop SMS chats, even when responding\n  promptly.\n* Fixed an issue where agents attempting to access their contact center using\n  private ingress couldn't connect.\n* Fixed an issue where the **Allow transfers to queues outside of hours of\n  operation** checkbox was unexpectedly unavailable.\n* Fixed an issue where verified outbound phone numbers couldn't be added to a\n  queue because the selection field was empty, preventing administrators from\n  assigning new phone numbers.\n* Fixed an issue where attempts to rename IVR queues using redirection data in\n  legacy YAML files resulted in errors.",
+        "summary": {
+          "title": "Resolved chat and reporting issues",
+          "summary": "Several issues have been resolved, including chat disconnections after agent assignment, inaccurate reporting on the All Interactions dashboard, and discrepancies in out-of-office messages. Additionally, fixes have been implemented for agent notifications, connectivity problems with private ingress, queue transfer settings, verified outbound number assignments, and IVR queue renaming."
         }
       }
     ],

@@ -1,5 +1,19 @@
 # Cloud Service Mesh
 
+## 2026-04-27
+
+### Announcement
+
+Managed Cloud Service Mesh using the `TRAFFIC_DIRECTOR` implementation in the
+regular channel now supports a limited implementation of the `EnvoyFilter` API.
+To learn about the supported fields, extensions, and how to use `EnvoyFilter`
+for features like local rate limiting see
+[Data plane extensibility with `EnvoyFilter`](https://docs.cloud.google.com/service-mesh/docs/data-plane-extensibility).
+
+To troubleshoot any issue while configuring, see
+[Resolving data plane extensibility issues](https://docs.cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-data-plane-extensibility).
+
+---
 ## 2026-04-13
 
 ### Announcement

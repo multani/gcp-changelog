@@ -1,5 +1,34 @@
 # Cloud Asset Inventory
 
+## 2026-04-28
+
+### Feature
+
+The following resource types are publicly available through the
+[ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets),
+[ListAssets](https://docs.cloud.google.com/asset-inventory/docs/listing-assets),
+[BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory),
+[QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets),
+[Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds),
+[SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources),
+and
+[SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)
+APIs.
+
+* App Lifecycle Manager
+  + `saasservicemgmt.googleapis.com/Saas`
+  + `saasservicemgmt.googleapis.com/Tenant`
+  + `saasservicemgmt.googleapis.com/UnitKind`
+  + `saasservicemgmt.googleapis.com/Unit`
+  + `saasservicemgmt.googleapis.com/Release`
+* Backup and DR
+  + `backupdr.googleapis.com/BackupPlanRevision`
+* Parallelstore
+  + `parallelstore.googleapis.com/Instance`
+* Vertex AI
+  + `aiplatform.googleapis.com/DeploymentResourcePool`
+
+---
 ## 2026-04-21
 
 ### Feature

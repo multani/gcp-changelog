@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2026-04-22
+
+### Feature
+
+reCAPTCHA is part of Google Cloud Fraud Defense, a suite of security products designed to protect your websites and applications from fraud and abuse.
+This change does not affect existing reCAPTCHA functionality. For more information, see [Google Cloud Fraud Defense](https://cloud.google.com/security/products/fraud-defense).
+
+---
 ## 2026-03-27
 
 ### Change

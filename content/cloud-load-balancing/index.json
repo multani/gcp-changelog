@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-04-27": [
+      {
+        "kind": "Feature",
+        "content": "A new quota system governing the configuration size of Application Load Balancer\nis now available in **Preview**. This update increases the individual URL map\nsize limit from 64 KB and 128 KB to 1 MB. For more information,\nsee [URL map size and quota units](https://docs.cloud.google.com/load-balancing/docs/url-map-size-quota).\n\nKey aspects of this feature include:\n\n* Complexity-based quota: *Quota units* reflect URL map complexity (number of\n  rules, hostnames, and path matchers).\n* Scoped measurement: Quota is measured and enforced on a per-project,\n  per-region, or per-VPC depending on Application Load Balancer type.\n* Active consumption: Only URL maps currently referenced by forwarding rules\n  contribute to quota usage.\n* New URL map size limit: Projects enabled for the new quota have a new URL map\n  size limit increased to 1 MB for global and regional external and internal\n  Application Load Balancers. Classic Application Load Balancer remain\n  restricted to 64 KB.\n\nFor more information on increasing your limit or to participate in the preview,\nplease contact [Google Cloud Support](https://cloud.google.com/support).",
+        "summary": {
+          "title": "New Quota System for Application Load Balancer Configuration Size Now in Preview",
+          "summary": "A new preview feature introduces a quota system for Application Load Balancer configuration size, significantly increasing the URL map size limit to 1 MB. This system uses complexity-based quotas and scoped measurements, with active consumption only for referenced URL maps. Contact support to learn more or join the preview."
+        }
+      }
+    ],
     "2026-04-22": [
       {
         "kind": "Feature",

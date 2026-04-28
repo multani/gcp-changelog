@@ -1,5 +1,24 @@
 # Gemini Enterprise
 
+## 2026-04-28
+
+### Feature
+
+**Gemini Enterprise: Custom MCP server data stores (Preview)**
+
+You can connect your custom Model Context Protocol (MCP) server with
+Gemini Enterprise to securely access your company's private data, custom
+internal tools, and MCP-compliant third-party systems.
+
+This feature is turned off by default. To enable it, an Organization Policy
+Administrator must remove the organization constraint.
+
+This feature is in Public Preview. For more information, see:
+
+* [Set up your custom MCP server](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server)
+* [Override the organization policy for Custom MCP data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/override-constraint-for-custom-mcp-data-stores)
+
+---
 ## 2026-04-21
 
 ### Feature

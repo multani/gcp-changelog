@@ -1,5 +1,13 @@
 # Cloud Storage
 
+## 2026-04-27
+
+### Feature
+
+Cloud Storage now offers support for AI zones. To learn more, see
+[AI zones](https://docs.cloud.google.com/storage/docs/ai-zones).
+
+---
 ## 2026-04-20
 
 ### Feature

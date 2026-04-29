@@ -1,5 +1,46 @@
 # Config Connector
 
+## 2026-04-22
+
+### Announcement
+
+Config Connector version 1.148.0 is now available.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* [`ParameterManagerParameterVersion`](https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion)
+  + Configure [Parameter Manager parameter versions](https://cloud.google.com/secret-manager/docs/parameter-manager) which lets you manage regional parameters.
+
+### Feature
+
+New features:
+
+* [#6919](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6919): `MultiClusterLeaseSpec` now supports integration with a syncer for KRM objects. This helps Config Connector take ownership of resources with service generated IDs.
+* [#7202](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7202): `kompanion`: Added a Model Context Protocol (MCP) server to the `kompanion` tool to enable AI IDEs and assistants to interact with Config Connector resources.
+* [#7075](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7075): `Config Connector controllers`: Added a `--skip-name-validation` flag to bypass duplicate controller name checks during registration, facilitating integration tests and multi-manager scenarios.
+
+### Fixed
+
+Bug Fixes:
+
+* [#7145](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7145): `SQLInstance`: Fixed an issue where `settings.dataCacheConfig` was incorrectly detected as different when `dataCacheEnabled` was `false`.
+* [#7200](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7200): `SQLInstance`: Updated matching functions to treat nil values in KRM as equivalent to empty or default objects in Google Cloud, preventing unnecessary re-reconciliation loops.
+* [#6943](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6943): `TagKey/TagValue`: Handle `ALREADY_EXISTS` error in TagKey and TagValue controllers by acquiring the existing resource.
+* [#6774](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6774): `BigQueryAnalyticsHubDataExchange`: Added structured reporting diff to improve visibility into resource changes and fixed reconciliation logic errors.
+* [#7115](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7115): `CloudBuildTrigger`: Restored missing descriptions in the CRD.
+* [#6693](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6693): `RunService`: Fixed a typo in environment variable values in samples and test fixtures.
+
+### Feature
+
+Documentation:
+
+* Added [a guide for controller configuration](https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/features/controller-configuration.md), detailing Direct, Terraform, and DCL controllers, including precedence rules and overrides.
+* Added [a guide for enabling VerticalPodAutoscaler (VPA) for Config Connector Pods](https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/features/containerresource.md) using `ControllerResource` and `NamespacedControllerResource`.
+* Added [a guide for the `config-connector` CLI and specifically for the `preview` command.](https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/cli/README.md).
+
+---
 ## 2026-03-25
 
 ### Announcement

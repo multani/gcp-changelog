@@ -2,9 +2,86 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-03-25T00:00:00+00:00</updated>
+  <updated>2026-04-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-04-22:announcement:0</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.148.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.148.0 has been released. This update brings new features and improvements to the tool. Users are encouraged to upgrade to the latest version.</summary>
+    <title>Announcement: Config Connector 1.148.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-04-22:feature:1</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion"><code>ParameterManagerParameterVersion</code></a></li>
+<li>Configure <a href="https://cloud.google.com/secret-manager/docs/parameter-manager">Parameter Manager parameter versions</a> which lets you manage regional parameters.</li>
+</ul>]]></content>
+    <summary>Introducing new Alpha Resources for Parameter Manager, enabling you to configure regional parameter versions. This feature enhances your ability to manage parameters across different regions effectively.</summary>
+    <title>Feature: Manage Regional Parameters with Alpha Resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-04-22:feature:2</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New features:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6919">#6919</a>: <code>MultiClusterLeaseSpec</code> now supports integration with a syncer for KRM objects. This helps Config Connector take ownership of resources with service generated IDs.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7202">#7202</a>: <code>kompanion</code>: Added a Model Context Protocol (MCP) server to the <code>kompanion</code> tool to enable AI IDEs and assistants to interact with Config Connector resources.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7075">#7075</a>: <code>Config Connector controllers</code>: Added a <code>--skip-name-validation</code> flag to bypass duplicate controller name checks during registration, facilitating integration tests and multi-manager scenarios.</li>
+</ul>]]></content>
+    <summary>This release introduces new features for Config Connector, including enhanced integration with syncer for KRM objects, AI IDE support via the kompanion tool, and a new flag to skip name validation for controllers.</summary>
+    <title>Feature: Config Connector Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-04-22:fixed:3</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7145">#7145</a>: <code>SQLInstance</code>: Fixed an issue where <code>settings.dataCacheConfig</code> was incorrectly detected as different when <code>dataCacheEnabled</code> was <code>false</code>.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7200">#7200</a>: <code>SQLInstance</code>: Updated matching functions to treat nil values in KRM as equivalent to empty or default objects in Google Cloud, preventing unnecessary re-reconciliation loops.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6943">#6943</a>: <code>TagKey/TagValue</code>: Handle <code>ALREADY_EXISTS</code> error in TagKey and TagValue controllers by acquiring the existing resource.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6774">#6774</a>: <code>BigQueryAnalyticsHubDataExchange</code>: Added structured reporting diff to improve visibility into resource changes and fixed reconciliation logic errors.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7115">#7115</a>: <code>CloudBuildTrigger</code>: Restored missing descriptions in the CRD.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6693">#6693</a>: <code>RunService</code>: Fixed a typo in environment variable values in samples and test fixtures.</li>
+</ul>]]></content>
+    <summary>Several bugs have been fixed across different services, including SQLInstance, TagKey/TagValue, BigQuery Analytics Hub, Cloud Build, and Run. These fixes improve reconciliation logic, error handling, and CRD descriptions.</summary>
+    <title>Fixed: Resolved issues in various services</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-04-22:feature:4</id>
+    <published>2026-04-22T00:00:00+00:00</published>
+    <updated>2026-04-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Documentation:</p>
+<ul>
+<li>Added <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/features/controller-configuration.md">a guide for controller configuration</a>, detailing Direct, Terraform, and DCL controllers, including precedence rules and overrides.</li>
+<li>Added <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/features/containerresource.md">a guide for enabling VerticalPodAutoscaler (VPA) for Config Connector Pods</a> using <code>ControllerResource</code> and <code>NamespacedControllerResource</code>.</li>
+<li>Added <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/cli/README.md">a guide for the <code>config-connector</code> CLI and specifically for the <code>preview</code> command.</a>.</li>
+</ul>]]></content>
+    <summary>Explore updated documentation for Config Connector, including guides on controller configuration, enabling Vertical Pod Autoscaler for pods, and using the `config-connector` CLI with its `preview` command.</summary>
+    <title>Feature: New Config Connector Guides Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

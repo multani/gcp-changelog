@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-04-22T00:00:00+00:00</updated>
+  <updated>2026-04-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-04-23:feature:0</id>
+    <published>2026-04-23T00:00:00+00:00</published>
+    <updated>2026-04-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>cloudsql_session_read_only</code> session parameter provides a robust,
+non-circumventable mechanism in Cloud SQL for PostgreSQL for preventing data
+modification during a session. You can use this flag to either make a session
+temporarily read-only, or make a session permanently, irreversibly
+read-only.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/postgres/read-only-sessions">Create a read-only session in Cloud SQL for PostgreSQL</a>.</p>]]></content>
+    <summary>Cloud SQL for PostgreSQL now supports a `cloudsql_session_read_only` parameter, offering a secure way to enforce read-only sessions. This feature allows for temporary or permanent read-only configurations, ensuring data integrity.</summary>
+    <title>Feature: Cloud SQL for PostgreSQL: Read-Only Sessions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-04-23:fixed:1</id>
+    <published>2026-04-23T00:00:00+00:00</published>
+    <updated>2026-04-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Removed a <a href="https://docs.cloud.google.com/sql/docs/postgres/using-query-insights">query insights</a> limitation
+for Cloud SQL Enterprise Plus edition and Cloud SQL Enterprise edition instances
+that use PostgreSQL 18.</p>
+<p>Instances using PostgreSQL maintenance version <code>20260319.00_RC02</code> or any
+later version now store application tags when using query insights even if
+a query has comment tags before the start of a SQL statement.</p>]]></content>
+    <summary>A limitation with query insights for Cloud SQL Enterprise Plus and Enterprise edition PostgreSQL instances has been removed. This change ensures application tags are stored even when queries have comment tags preceding the SQL statement, for specific PostgreSQL maintenance versions and later.</summary>
+    <title>Fixed: Query insights limitation removed for PostgreSQL</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

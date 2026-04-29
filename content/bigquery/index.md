@@ -1,5 +1,13 @@
 # BigQuery
 
+## 2026-04-29
+
+### Breaking
+
+[Strict act-as mode](https://docs.cloud.google.com/dataform/docs/strict-act-as-mode)
+is enforced globally for all Dataform repositories, requiring the use of a custom service account or user credentials for running Dataform workflows, BigQuery pipelines, notebooks, and data preparations.
+
+---
 ## 2026-04-28
 
 ### Feature

@@ -1,5 +1,46 @@
 # Google Kubernetes Engine
 
+## 2026-04-29
+
+### Fixed
+
+In GKE versions earlier than 1.34.6-gke.1154000 and
+1.35.2-gke.1691000, mounting Cloud Storage buckets by using the
+[Cloud Storage FUSE CSI driver](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/cloud-storage-fuse-csi-driver)
+can experience significant delays. This issue typically manifests as a
+`CreateContainer error` that states the following message:
+`failed to reserve container name`. This error is self-healing and resolves
+automatically after the underlying mount operation completes and the container
+runtime releases the reservation.
+
+The delay is caused by an inefficient bucket access check performed by the
+CSI driver sidecar by using the `ListObjects` API method, which can take
+several hours to complete on buckets that contain millions of empty folders.
+
+The error occurs because the `kubelet` enforces a strict two-minute timeout
+for the container creation request. If the FUSE mount process exceeds this
+time limit while the sidecar is performing the initial bucket access check,
+then the `kubelet` cancels the operation and retries. However, the container
+runtime remains blocked on the first attempt and retains the reservation for
+the container name.
+
+The new GKE releases fix this issue by replacing the
+`ListObjects` check with the `GetStorageLayout` API method, which performs
+the same validation but returns almost instantly in most cases.
+
+To resolve this issue, upgrade your cluster to one of the following versions:
+
+* 1.34.6-gke.1154000 or later
+* 1.35.2-gke.1691000 or later
+
+For GKE version 1.33 clusters running version 1.33.5-gke.2435000
+or later, you can mitigate this issue by setting the
+`skipCSIBucketAccessCheck: "true"` volume attribute to bypass the check.
+
+There is no supported fix for this issue in cluster versions
+1.33.5-gke.2435000 and earlier.
+
+---
 ## 2026-04-27
 
 ### Feature

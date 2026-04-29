@@ -1,5 +1,23 @@
 # Dataform
 
+## 2026-04-29
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more
+granular control over specific fields for the `Folder` and `TeamFolder`
+resources. For more information, see
+[Create custom organization policy constraints](https://docs.cloud.google.com/dataform/docs/create-custom-constraints).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Breaking
+
+[Strict act-as mode](https://docs.cloud.google.com/dataform/docs/strict-act-as-mode)
+is enforced globally for all Dataform repositories, requiring the use of a custom service account or user credentials for running Dataform workflows, BigQuery pipelines, notebooks, and data preparations.
+
+---
 ## 2026-04-24
 
 ### Announcement

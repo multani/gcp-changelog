@@ -1,5 +1,91 @@
 # Google SecOps Marketplace
 
+## 2026-04-29
+
+### Change
+
+**UrlScan.io**: Version 30.0
+
+* Added `is_risky` handling to the following action:
+
+  + **Url Check**
+
+### Change
+
+**Siemplify**: Version 107.0
+
+* **Integration**: Updated TIPCommon dependency.
+
+### Change
+
+**Microsoft Graph Mail**: Version 41.0
+
+* Updated MSG attachments processing logic in the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Zerofox**: Version 4.0
+
+* **Integration**: Updated documentation link.
+
+### Change
+
+**MISP**: Version 39.0
+
+* Updated tag retrieval logic in the following actions:
+
+  + **Add Tag to an Attribute**
+  + **Add Tag to an Event**
+  + **Remove Tag from an Attribute**
+  + **Remove Tag from an Event**
+
+### Change
+
+**Anomali ThreatStream**: Version 16.0
+
+* Added `is_risky` handling to the following action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 18.0
+
+* Updated MSG attachments processing logic in the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 28.0
+
+* Added the ability to ignore specific artifact types to the following
+  connector:
+
+  + **Palo Alto Cortex XDR Connector**
+
+### Change
+
+Source code is now publicly available on [GitHub](https://github.com/chronicle/content-hub)
+for the following integrations:
+
+* **Cisco Orbital**: Version 9.0
+* **F5 Big IQ**: Version 8.0
+* **FireEye EX**: Version 14.0
+* **HCL BigFix Inventory**: Version 6.0
+* **Illusive Networks**: Version 8.0
+* **Lastline**: Version 10.0
+* **McAfee ATD**: Version 18.0
+* **McAfee Active Response**: Version 10.0
+* **ObserveIT**: Version 6.0
+* **Outpost24**: Version 9.0
+* **Site24x7**: Version 7.0
+* **Splash**: Version 8.0
+* **Websense**: Version 15.0
+
+---
 ## 2026-04-22
 
 ### Feature

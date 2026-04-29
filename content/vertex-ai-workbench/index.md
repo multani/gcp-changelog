@@ -14,13 +14,12 @@ The M140 release of Vertex AI Workbench instances includes the following:
 
 **Workbench Image Release 26.03**
 
-Released the new 26.03 image version under the following image family `workbench-instances-2603. This major update introduces:
+Released the new 26.03 image version under the following image family `workbench-instances-2603`. This major update introduces:
 
 * **OS Upgrade**: Migration to Debian 12 (Bookworm) for improved security and performance.
-* **Python Upgrade**: Python 3.12 as the default version for base frameworks.
-* **Framework Updates**: Removed support for JupyterLab 3, Tensorflow, and Pytorch frameworks.
-* **New Versioning Scheme**: Transitioned to a date-based versioning format (e.g., `v26.03`) to provide better historical context for image updates. For more information on new versioning schema see the [latest documentation](https://cloud.google.com/vertex-ai/docs/workbench/instances/manage-image-versions)
-* **Micromamba CLI**: Conda CLI is replaced and aliased to Micromamba CLI.
+* **Python Upgrade**: Python 3.12 as the default version.
+* **New Versioning Scheme**: Transitioned to a date-based versioning format (e.g., v26.03) to provide better historical context for image updates. For more information on new versioning schema see the [latest documentation](https://cloud.google.com/vertex-ai/docs/workbench/instances/manage-image-versions)
+* **Micromamba CLI**: Installed by default
 
 ---
 ## 2026-02-20

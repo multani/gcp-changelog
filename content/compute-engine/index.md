@@ -1,5 +1,15 @@
 # Compute Engine
 
+## 2026-04-29
+
+### Feature
+
+**Preview**: In an autoscaled managed instance group (MIG), you can monitor
+individual autoscaling events and view details to understand the reasons behind
+each autoscaling decision. For more information, see
+[Monitor autoscaling events](https://docs.cloud.google.com/compute/docs/autoscaler/understanding-autoscaler-decisions#monitor_autoscaling_events).
+
+---
 ## 2026-04-27
 
 ### Feature

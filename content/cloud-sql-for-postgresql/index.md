@@ -1,5 +1,29 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-04-23
+
+### Feature
+
+The `cloudsql_session_read_only` session parameter provides a robust,
+non-circumventable mechanism in Cloud SQL for PostgreSQL for preventing data
+modification during a session. You can use this flag to either make a session
+temporarily read-only, or make a session permanently, irreversibly
+read-only.
+
+For more information, see
+[Create a read-only session in Cloud SQL for PostgreSQL](https://docs.cloud.google.com/sql/docs/postgres/read-only-sessions).
+
+### Fixed
+
+Removed a [query insights](https://docs.cloud.google.com/sql/docs/postgres/using-query-insights) limitation
+for Cloud SQL Enterprise Plus edition and Cloud SQL Enterprise edition instances
+that use PostgreSQL 18.
+
+Instances using PostgreSQL maintenance version `20260319.00_RC02` or any
+later version now store application tags when using query insights even if
+a query has comment tags before the start of a SQL statement.
+
+---
 ## 2026-04-22
 
 ### Feature

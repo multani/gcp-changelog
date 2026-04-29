@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-04-28
+
+### Feature
+
+You can now
+[create materialized views over active change data capture (CDC) enabled tables](https://docs.cloud.google.com/bigquery/docs/materialized-views-intro#cdc).
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-04-23
 
 ### Change

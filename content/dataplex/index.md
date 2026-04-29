@@ -1,14 +1,25 @@
 # Dataplex
 
+## 2026-04-28
+
+### Announcement
+
+**Dataproc** and **Google Cloud Serverless for Apache Spark** are now unified
+under the [**Managed Service for Apache Spark**](https://docs.cloud.google.com/dataproc/docs)
+brand. This change consolidates our managed Spark deployment options into a
+single umbrella brand that includes the full breadth of our Spark capabilities.
+No existing functionality is being removed as part of this change, and there
+is no impact to the Dataproc API, metastore, client library, CLI, or IAM names.
+
+---
 ## 2026-04-24
 
 ### Announcement
 
-BigLake is now called [Google Cloud Lakehouse](https://docs.cloud.google.com/biglake/docs/introduction).
-BigLake metastore is now called the [Lakehouse runtime
-catalog](https://docs.cloud.google.com/biglake/docs/about-blms). The names for associated APIs, client
-libraries, CLI commands, and Identity and Access Management (IAM) remain
-unchanged and still reference BigLake.
+BigLake is now called [Google Cloud Lakehouse](https://docs.cloud.google.com/biglake/docs/introduction). BigLake metastore is now called the
+[Lakehouse runtime catalog](https://docs.cloud.google.com/biglake/docs/about-blms).
+The names for associated APIs, client libraries, CLI commands, and Identity and
+Access Management (IAM) remain unchanged and still reference BigLake.
 
 ---
 ## 2026-04-20

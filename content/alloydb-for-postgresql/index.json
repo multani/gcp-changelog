@@ -1,6 +1,16 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-04-28": [
+      {
+        "kind": "Change",
+        "content": "When the initial user or password is unspecified during cluster creation, a locked [`postgres` role](https://docs.cloud.google.com/alloydb/docs/database-users/overview#postgres-user) with `null` password is created.",
+        "summary": {
+          "title": "New default user behavior",
+          "summary": "When no initial user or password is set during cluster creation, a locked 'postgres' role with a null password is now automatically created. This change enhances security by ensuring a default user always exists, though it requires explicit configuration for access."
+        }
+      }
+    ],
     "2026-04-22": [
       {
         "kind": "Feature",

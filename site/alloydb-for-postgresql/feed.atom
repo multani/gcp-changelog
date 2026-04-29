@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2026-04-22T00:00:00+00:00</updated>
+  <updated>2026-04-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-04-28:change:0</id>
+    <published>2026-04-28T00:00:00+00:00</published>
+    <updated>2026-04-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When the initial user or password is unspecified during cluster creation, a locked <a href="https://docs.cloud.google.com/alloydb/docs/database-users/overview#postgres-user"><code>postgres</code> role</a> with <code>null</code> password is created.</p>]]></content>
+    <summary>When no initial user or password is set during cluster creation, a locked 'postgres' role with a null password is now automatically created. This change enhances security by ensuring a default user always exists, though it requires explicit configuration for access.</summary>
+    <title>Change: New default user behavior</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

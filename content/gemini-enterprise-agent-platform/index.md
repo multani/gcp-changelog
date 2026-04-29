@@ -1,5 +1,30 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-04-28
+
+### Feature
+
+**Improved transcription quality for Gemini Live API**
+
+You can now improve transcription quality for multilingual automatic speech
+recognition (ASR) by using the
+`[input/output]_audio_transcription.language_codes` field.
+
+For more information, see [Enable audio transcription for the session](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/live-api/start-manage-session#enable-audio-transcription).
+
+### Feature
+
+**Asynchronous function calling with Live API**
+
+Asynchronous function calling is now available in [public
+preview](https://cloud.google.com/products#product-launch-stages) in
+Gemini Live API. You can run functions in parallel with conversation,
+manage background processing, and handle function responses with policies
+including `SILENT`, `WHEN_IDLE`, and `INTERRUPT`. For more information, see
+[Asynchronous function calling with
+Gemini Live API](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/live-api/asynchronous-function-calling).
+
+---
 ## 2026-04-22
 
 ### Change

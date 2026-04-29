@@ -1,5 +1,12 @@
 # AlloyDB for PostgreSQL
 
+## 2026-04-28
+
+### Change
+
+When the initial user or password is unspecified during cluster creation, a locked [`postgres` role](https://docs.cloud.google.com/alloydb/docs/database-users/overview#postgres-user) with `null` password is created.
+
+---
 ## 2026-04-22
 
 ### Feature

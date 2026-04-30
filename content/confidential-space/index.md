@@ -1,5 +1,14 @@
 # Confidential Space
 
+## 2026-04-29
+
+### Announcement
+
+A Confidential Space image (260400) is available. Support for Confidential
+Space on H100 GPU (a3-highgpu-1g machine family) is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-03
 
 ### Announcement

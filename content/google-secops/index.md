@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-04-30
+
+### Feature
+
+**VPC Service Controls for Google SecOps general availability**
+
+VPC Service Controls is now GA. This feature helps to create perimeters and protect resources and services data from accidental or targeted action by external or insider entities. This in turn can minimize unwarranted data exfiltration risks from Google Cloud services. For more information, see [Configure VPC Service Controls for Google SecOps](https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops) and [Overview of VPC Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/overview).
+
+---
 ## 2026-04-27
 
 ### Announcement

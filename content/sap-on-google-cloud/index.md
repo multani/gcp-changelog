@@ -1,5 +1,18 @@
 # SAP on Google Cloud
 
+## 2026-04-30
+
+### Announcement
+
+**BigQuery Connector for SAP version 2.13**
+
+Version 2.13 of the BigQuery Connector for SAP is generally available (GA).
+This version resolves an issue where data replication for partitioned
+tables failed when the table schema caching feature was enabled.
+
+For more information, see [What's new with BigQuery Connector for SAP](https://docs.cloud.google.com/sap/docs/bq-connector/whats-new#version-2-13).
+
+---
 ## 2026-04-20
 
 ### Announcement

@@ -1,5 +1,19 @@
 # Resource Manager
 
+## 2026-04-30
+
+### Feature
+
+**Generally Available**: The Resource Manager remote MCP server is now
+[generally available]((https://cloud.google.com/products#product-launch-stages)).
+The remote MCP server lets AI agents dynamically search for and identify all
+Google Cloud projects that you have the necessary permissions to access. This
+ensures that agents have the correct identifiers (such as project ID, project
+number, and lifecycle state) before attempting more specific resource configurations.
+
+For more information, see [Use the Resource Manager remote MCP server](https://docs.cloud.google.com/resource-manager/docs/use-resourcemanager-mcp).
+
+---
 ## 2026-04-07
 
 ### Feature

@@ -13,9 +13,44 @@
     <published>2026-04-29T00:00:00+00:00</published>
     <updated>2026-04-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/dataform/docs/strict-act-as-mode">Strict act-as mode</a>
-is enforced globally for all Dataform repositories, requiring the use of a custom service account or user credentials for running Dataform workflows, BigQuery pipelines, notebooks, and data preparations.</p>]]></content>
-    <summary>Dataform now globally enforces strict act-as mode. This requires custom service accounts or user credentials for running Dataform workflows, BigQuery pipelines, notebooks, and data preparations.</summary>
-    <title>Breaking: Dataform enforces strict act-as mode</title>
+is enforced globally for all Dataform repositories, requiring the use of a
+custom service account or user credentials for running Dataform workflows,
+BigQuery pipelines, notebooks, and data preparations.</p>]]></content>
+    <summary>Dataform now enforces strict act-as mode globally. This requires custom service accounts or user credentials for running Dataform workflows and BigQuery pipelines. This change impacts all Dataform repositories.</summary>
+    <title>Breaking: Dataform strict act-as mode enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-29:feature:1</id>
+    <published>2026-04-29T00:00:00+00:00</published>
+    <updated>2026-04-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/vectorindex_functions#vector_indexstatistics"><code>VECTOR_INDEX.STATISTICS</code> function</a> to calculate how much an indexed table's data has drifted between when a
+vector index was created and the present. If table data has changed enough
+to require a <a href="https://docs.cloud.google.com/bigquery/docs/vector-index#rebuild_a_vector_index">vector index rebuild</a>, you can use the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_vector_index_rebuild_statement"><code>ALTER VECTOR INDEX REBUILD</code> statement</a>
+to rebuild the vector index without downtime. These features are
+<a href="https://cloud.google.com/products/#product-launch-stages">generally available</a>
+(GA).</p>]]></content>
+    <summary>Monitor your vector index's data drift and rebuild it without downtime. These new features, now generally available, help maintain optimal performance for your indexed data.</summary>
+    <title>Feature: New Vector Index Monitoring and Rebuild Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-04-29:feature:2</id>
+    <published>2026-04-29T00:00:00+00:00</published>
+    <updated>2026-04-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the <code>PARTITION BY</code> clause of the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_vector_index_statement"><code>CREATE VECTOR INDEX</code> statement</a>
+to <a href="https://docs.cloud.google.com/bigquery/docs/vector-index#partitions">partition TreeAH vector indexes</a>.
+Partitioning enables partition pruning and can decrease I/O costs. This feature
+is <a href="https://cloud.google.com/products/#product-launch-stages">Generally Available</a>.</p>]]></content>
+    <summary>You can now partition TreeAH vector indexes using the `PARTITION BY` clause in the `CREATE VECTOR INDEX` statement. This feature, now Generally Available, enables partition pruning and can reduce I/O costs.</summary>
+    <title>Feature: Vector Index Partitioning Now Available</title>
   </entry>
   <entry>
     <author>

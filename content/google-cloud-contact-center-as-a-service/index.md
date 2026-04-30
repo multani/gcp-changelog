@@ -92,7 +92,6 @@ We've made the following updates to the headless web SDK:
 
 * New methods:
 
-  + **getFeatureFlags**. Get the current state of feature flags.
   + **fetchTimeSlotAvailability**. Check if time slots are available for a
     given menu.
   + **restoreCobrowseSession**. Restores a cobrowse session after the

@@ -1,5 +1,23 @@
 # Apigee X
 
+## 2026-04-29
+
+### Announcement
+
+On April 29th, 2026, we began maintenance updates of Apigee instances [configured for maintenance windows](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance-windows).
+
+If you set a preferred window for maintenance for your instance, and your instance version is
+below **1-17-0-apigee-4**, your instance will be updated to **1-17-0-apigee-4** within the
+next seven to 21 days. A notification containing the expected date of upgrade will be sent within the next two business days.
+
+Note: Instances that meet either of the following two criteria will **not** be updated:
+
+* Your instance has a DNS misconfiguration, as described in [Known Issue 445936920](https://docs.cloud.google.com/apigee/docs/release/known-issues).
+* Your instance uses an Apigee Java Library that has been removed, as described in [Apigee release notes dated October 16, 2025](https://docs.cloud.google.com/apigee/docs/release/release-notes#October_16_2025).
+
+For more information on participating in scheduled maintenance windows, see [Maintenance overview](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance) and [Manage Apigee instance maintenance windows](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance-windows).
+
+---
 ## 2026-04-09
 
 ### Change

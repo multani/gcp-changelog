@@ -5,7 +5,28 @@
 ### Breaking
 
 [Strict act-as mode](https://docs.cloud.google.com/dataform/docs/strict-act-as-mode)
-is enforced globally for all Dataform repositories, requiring the use of a custom service account or user credentials for running Dataform workflows, BigQuery pipelines, notebooks, and data preparations.
+is enforced globally for all Dataform repositories, requiring the use of a
+custom service account or user credentials for running Dataform workflows,
+BigQuery pipelines, notebooks, and data preparations.
+
+### Feature
+
+You can now use the
+[`VECTOR_INDEX.STATISTICS` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/vectorindex_functions#vector_indexstatistics) to calculate how much an indexed table's data has drifted between when a
+vector index was created and the present. If table data has changed enough
+to require a [vector index rebuild](https://docs.cloud.google.com/bigquery/docs/vector-index#rebuild_a_vector_index), you can use the
+[`ALTER VECTOR INDEX REBUILD` statement](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#alter_vector_index_rebuild_statement)
+to rebuild the vector index without downtime. These features are
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+### Feature
+
+You can now use the `PARTITION BY` clause of the
+[`CREATE VECTOR INDEX` statement](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_vector_index_statement)
+to [partition TreeAH vector indexes](https://docs.cloud.google.com/bigquery/docs/vector-index#partitions).
+Partitioning enables partition pruning and can decrease I/O costs. This feature
+is [Generally Available](https://cloud.google.com/products/#product-launch-stages).
 
 ---
 ## 2026-04-28

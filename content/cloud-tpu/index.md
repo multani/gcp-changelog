@@ -1,5 +1,14 @@
 # Cloud TPU
 
+## 2026-04-27
+
+### Feature
+
+**Generally available**: Cloud TPU now offers TPU availability in AI
+zones. To learn more, see
+[About AI zones](https://docs.cloud.google.com/compute/docs/regions-zones/ai-zones).
+
+---
 ## 2026-03-31
 
 ### Feature

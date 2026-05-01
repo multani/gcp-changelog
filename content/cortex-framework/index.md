@@ -2,10 +2,6 @@
 
 ## 2026-04-30
 
-### Announcement
-
-
-
 ### Release 7
 
 

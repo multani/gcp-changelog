@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-04-30
+
+### Breaking
+
+Starting May 7, 2026, new transfer configurations that transfer data from Google Ads using the
+BigQuery Data Transfer Service will require [Multi-factor authentication (MFA)
+for individual user
+authentication](https://ads-developers.googleblog.com/2026/04/multi-factor-authentication-requirement.html).
+For more information, see [May 7,
+2026](https://docs.cloud.google.com/bigquery/docs/transfer-changes#May7-google-ads).
+
+---
 ## 2026-04-29
 
 ### Breaking

@@ -1,5 +1,19 @@
 # Cloud SQL for MySQL
 
+## 2026-04-30
+
+### Fixed
+
+Cloud SQL has made the following enhancements to expand the list of eligible
+Cloud SQL Enterprise Plus edition instances that support planned operations with
+[near-zero downtime](https://docs.cloud.google.com/sql/docs/mysql/availability#near-zero-downtime).
+
+* Instances with [connector enforcement enabled](https://docs.cloud.google.com/sql/docs/mysql/connect-connectors#enforce)
+  are eligible for planned operations with near-zero downtime.
+* Instances that use [private services access](https://docs.cloud.google.com/sql/docs/mysql/configure-private-services-access)
+  with a non-RFC 1918 IP address are eligible for planned operations with near-zero downtime.
+
+---
 ## 2026-04-20
 
 ### Feature

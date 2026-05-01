@@ -1,5 +1,16 @@
 # Cloud SQL for SQL Server
 
+## 2026-04-30
+
+### Feature
+
+If a specific active query is blocked or running much longer than expected, it
+can block other dependent queries. Cloud SQL for SQL Server offers an optional
+feature that lets you view and terminate blocking queries.
+
+For more information, see [Blocked active queries](https://docs.cloud.google.com/sql/docs/sqlserver/monitor-active-queries#blocked-active-queries) ([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+---
 ## 2026-04-20
 
 ### Feature

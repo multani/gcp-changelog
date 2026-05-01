@@ -2448,6 +2448,18 @@
 
 
 <h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
+<h2 id="2026-04-30">2026-04-30</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Cloud SQL has made the following enhancements to expand the list of eligible
+Cloud SQL Enterprise Plus edition instances that support planned operations with
+<a href="https://docs.cloud.google.com/sql/docs/postgres/availability#near-zero-downtime">near-zero downtime</a>.</p>
+<ul>
+<li>Instances with <a href="https://docs.cloud.google.com/sql/docs/postgres/connect-connectors#enforce">connector enforcement enabled</a>
+  are eligible for planned operations with near-zero downtime.</li>
+<li>Instances that use <a href="https://docs.cloud.google.com/sql/docs/postgres/configure-private-services-access">private services access</a>
+  with a non-RFC 1918 IP address are eligible for planned operations with near-zero downtime.</li>
+</ul>
+<hr />
 <h2 id="2026-04-23">2026-04-23</h2>
 <h3 id="feature">Feature</h3>
 <p>The <code>cloudsql_session_read_only</code> session parameter provides a robust,
@@ -2457,7 +2469,7 @@ temporarily read-only, or make a session permanently, irreversibly
 read-only.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/sql/docs/postgres/read-only-sessions">Create a read-only session in Cloud SQL for PostgreSQL</a>.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Removed a <a href="https://docs.cloud.google.com/sql/docs/postgres/using-query-insights">query insights</a> limitation
 for Cloud SQL Enterprise Plus edition and Cloud SQL Enterprise edition instances
 that use PostgreSQL 18.</p>
@@ -3002,6 +3014,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-04-30" class="nav-link">2026-04-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-23" class="nav-link">2026-04-23</a>
           </li>

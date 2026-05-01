@@ -1,5 +1,17 @@
 # Cloud CDN
 
+## 2026-04-30
+
+### Feature
+
+Google Kubernetes Engine (GKE) Gateway supports Cloud CDN to help you cache
+content closer to your users, improve application latency, and reduce origin
+load. Using GKE Gateway APIs, you can configure, manage, and fine-tune caching
+configurations for different segments of your traffic. This feature is **Generally Available**.
+
+For more information, see [Configure Cloud CDN for Gateway](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-cdn-for-gateway).
+
+---
 ## 2026-04-13
 
 ### Feature

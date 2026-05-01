@@ -67,7 +67,7 @@ Available in preview, you can [publish the Conversational Analytics data agents]
 
 ### Feature
 
-Available in preview, you can chat with [Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) in user-defined dashboards and in LookML dashboards.
+Available in preview, you can chat with [Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) in user-defined dashboards and in LookML dashboards. (Note: This feature is not yet available. This release note was updated on April 29, 2026.)
 
 ### Feature
 

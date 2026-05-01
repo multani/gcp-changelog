@@ -1,5 +1,22 @@
 # VPC Service Controls
 
+## 2026-04-30
+
+### Feature
+
+**VPC Service Controls feature:** Support for using IAM roles in
+ingress and egress rules to allow access to resources protected by a service
+perimeter is [generally available](https://cloud.google.com/products#product-launch-stages).
+This feature includes the following updates:
+
+* You can use the [`gcloud access-context-manager supported-permissions describe`](https://docs.cloud.google.com/vpc-service-controls/docs/configure-iam-roles#check-role)
+  command to check the support status of an IAM role.
+* You can use the [`gcloud access-context-manager supported-permissions list`](https://docs.cloud.google.com/vpc-service-controls/docs/configure-iam-roles#list-permissions)
+  command to retrieve the complete list of all supported permissions.
+
+For more information, see [Configure IAM roles in ingress and egress rules](https://docs.cloud.google.com/vpc-service-controls/docs/configure-iam-roles).
+
+---
 ## 2026-04-22
 
 ### Feature

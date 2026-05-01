@@ -1,5 +1,47 @@
 # Cortex Framework
 
+## 2026-04-30
+
+### Announcement
+
+
+
+### Release 7
+
+
+
+### Feature
+
+Cortex Framework **version 7** introduces a highly modular deployment architecture, simplified data orchestration via [Dataform](https://docs.cloud.google.com/dataform/docs), and enhanced support for the next generation of AI-ready data products with [BigQuery](https://docs.cloud.google.com/bigquery/docs) - enabling enterprises to build, extend, and deploy robust data models and pipelines for advanced analytics and AI/agentic use cases. To request access to the GitHub repository, see [Request access](https://docs.cloud.google.com/cortex/docs/request-access).
+
+* **Key architecture features**
+
+  + **Modular deployment and smart dependency resolution**: Deploy exactly what you need. Simply select the desired data products, and the framework will automatically identify, retrieve, and transform the necessary tables to the data foundation layer, ensuring no unnecessary data is processed. Easily add custom fields or logic without breaking standard models.
+  + **Native dependency graph generation**: Automatically handle the order of operations for complex data models, ensuring prerequisite tables are ready before deploying data foundations and data products.
+  + **Bring your own CDC (External data foundation)**: A flexible architecture allows you to bypass built-in Change Data Capture processing and connect your own existing CDC pipelines directly to the foundation layer.
+  + **Serverless BigQuery-native execution**: Orchestration relies entirely on Google Cloud Dataform, enabling easy data transformation and processing using version-controlled SQL. No standing compute clusters or Airflow VMs are required, minimizing infrastructure overhead.
+  + **Incremental loading**: Native, incremental loading configurations ensure highly efficient processing of large enterprise datasets. Significantly reduce BigQuery processing time and costs by processing only new or changed data since the last execution.
+  + **High data fidelity & semantics**: Features dynamic discovery and ingestion of custom fields, robust semantic mapping (e.g. translating cryptic table names to business-friendly terms), AI-ready metadata, and advanced logic handling (e.g. integrating the SAP TCURX table for exact currency decimal shifts).
+  + **Multi-system SAP support**: Built-in dynamic dependency resolution and logic differentiation allows seamless compilation and parallel deployment for both SAP ECC and SAP S/4HANA source systems. Seamlessly bring in data from multiple SAP ERP systems.
+  + **Extensibility framework**: Maintain a clean separation between your custom data products and Cortex Data Products using namespaces. This ensures you can benefit from the latest Cortex updates without impacting your custom work.
+* **Data product accelerators**
+
+  BigQuery based [data product accelerators for SAP ERP](https://docs.cloud.google.com/cortex/docs/data-product#data_source_specific_data_products_for_sap_erp)
+  (SAP ECC and S/4HANA), purpose-built for
+  AI-readiness with agent-friendly metadata included for all data model and
+  field-level descriptions.
+* **Solution samples for SAP ERP or SAP BDC**
+
+  Solution reference architectures and code snippets for demonstrating
+  how to build use cases on top of Cortex Framework data
+  products to address particular business needs.
+
+  + **[Sales Performance Insights](https://docs.cloud.google.com/cortex/docs/sales-performance-insights)**: How to accelerate
+    insights into sales performance health using SAP ERP or SAP BDC sourced data.
+  + **[Supplier Spend Analysis](https://docs.cloud.google.com/cortex/docs/supplier-spend-analysis)**: How to accelerate insights
+    into supplier spend position using SAP ERP or SAP BDC sourced data.
+
+---
 ## 2026-02-27
 
 ### Release 6.3.4

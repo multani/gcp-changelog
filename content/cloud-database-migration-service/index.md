@@ -1,5 +1,15 @@
 # Cloud Database Migration Service
 
+## 2026-04-30
+
+### Feature
+
+Database Migration Service for heterogeneous migrations to Cloud SQL for PostgreSQL
+and AlloyDB for PostgreSQL now supports PostgreSQL version 18.
+For more information, see
+[Supported source and destination databases](https://docs.cloud.google.com/database-migration/docs/supported-databases).
+
+---
 ## 2026-04-22
 
 ### Feature

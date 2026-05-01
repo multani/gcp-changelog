@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-04-30
+
+### Feature
+
+You can use Bigtable [agent
+skills](https://github.com/GoogleCloudPlatform/cloud-bigtable-ecosystem#ai-agent-skills)
+to let AI agents assist with Bigtable-related tasks, such as schema design,
+generating SQL queries, and infrastructure management.
+
+---
 ## 2026-04-23
 
 ### Feature

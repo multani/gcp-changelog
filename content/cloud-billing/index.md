@@ -1,5 +1,23 @@
 # Cloud Billing
 
+## 2026-04-27
+
+### Feature
+
+**The AI Cost Summary Agent is now available in Preview**
+
+You can now use the AI Cost Summary Agent to analyze your AI costs and gain
+critical insights into your AI-related spend. The agent analyzes
+spending related to Gemini usage, including Gemini API and
+Vertex AI.
+
+This feature is available as a widget on the **Billing Overview** page for your
+Cloud Billing account.
+
+For more information, see [Analyze your AI spend with the AI Cost Summary
+Agent](https://docs.cloud.google.com/billing/docs/how-to/gemini/ai-cost-summary).
+
+---
 ## 2026-04-20
 
 ### Feature

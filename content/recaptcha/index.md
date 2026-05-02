@@ -1,5 +1,20 @@
 # reCAPTCHA
 
+## 2026-05-01
+
+### Change
+
+reCAPTCHA Mobile SDK v18.9.0 is available for iOS. This version includes
+the following:
+
+* Reliability improvements and bug fixes.
+* Score distribution calibration and improvements for better bot detection.
+  We recommend that you review your score threshold and adjust it if you
+  experience a high number of false positives.
+* Beta support for visionOS.
+* Beta support for arm64e and Enhanced Security Features.
+
+---
 ## 2026-04-22
 
 ### Feature

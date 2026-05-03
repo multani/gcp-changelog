@@ -1,5 +1,14 @@
 # Cloud Interconnect
 
+## 2026-04-30
+
+### Feature
+
+Managed traffic classification for Cloud Interconnect is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+This feature automates the assignment of differentiated services field codepoint (DSCP) bits in your outgoing packets. For more information, see [Configure managed traffic classification](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/cci/managed-traffic-classification).
+
+---
 ## 2026-04-14
 
 ### Feature

@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-05-03
+
+### Feature
+
+**Enhanced "Time to respond" options for multi-choice questions**
+
+Google SecOps now provides more granular control over playbook execution when the "time to respond" for a **MultiChoiceQuestion** step is exceeded. When configuring a multi-choice question, you can now choose to proceed with one of the predefined answer branches or to create a dedicated branch to handle this scenario.
+
+For more information, see [Add a multi-choice question flow](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-flows-in-playbooks#multi-choice).
+
+---
 ## 2026-04-30
 
 ### Feature

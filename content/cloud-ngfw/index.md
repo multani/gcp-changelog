@@ -1,5 +1,23 @@
 # Cloud NGFW
 
+## 2026-05-04
+
+### Feature
+
+You can now create and configure the following organization-level Cloud NGFW
+resources within a Google Cloud project:
+
+* Security profiles
+* Security profile groups
+* Firewall endpoints
+* Firewall endpoint associations
+
+For more information, see [Security profile
+overview](https://docs.cloud.google.com/firewall/docs/about-security-profiles), [Security profile group
+overview](https://docs.cloud.google.com/firewall/docs/about-security-profile-groups), and [Firewall endpoint
+overview](https://docs.cloud.google.com/firewall/docs/about-firewall-endpoints). This feature is available in **Public preview**.
+
+---
 ## 2026-03-24
 
 ### Feature

@@ -1,5 +1,310 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-05-04
+
+### Announcement
+
+**Google Cloud CCaaS 4.26**
+
+We've released version 4.26 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Fewest Agents Routing**
+
+Fewest Agents Routing has been added to chat Deltacast configuration. Fewest
+Agents Routing keeps busy agents engaged while preserving idle agents for future
+workload spikes.
+
+Administrators:
+
+* The following new settings are available at **Settings >
+  Operation Management > Routing > Chat Routing
+  > Deltacast Routing Logic**:
+
+  + **Longest Idle Routing to distribute workload equally between agents**.
+    This is the same as the previous default routing behavior.
+  + **Fewest Agents Routing to maximize utilization and call availability**.
+    This is the new routing behavior that concentrates new chats on busy
+    agents.
+
+Documentation coming soon.
+
+### Feature
+
+**Skip account or record creation for HubSpot**
+
+You can configure your instance to prevent the automatic creation of accounts
+and records in HubSpot while ensuring that data such as media files and
+transcripts is preserved. You can configure how the system handles closed
+records when a record ID is passed using the SDK.
+
+Administrators:
+
+* The following new settings are available at **Settings >
+  Operation Management > CRM Record Creation Details**:
+
+  + **Skip CRM account creation**
+  + **Skip CRM account lookup**
+  + **Skip CRM record creation**
+  + **Closed record options when record ID is passed in via SDK**
+
+    - **Create new record**
+    - **Reopen record**
+
+Documentation coming soon.
+
+### Feature
+
+**Improved Agent Assist visibility during transfers**
+
+When a chat is transferred, the originating agent and the receiving agent see
+Agent Assist as it's configured for their respective teams or queues.
+This behavior now also applies to transfers of direct inbound calls.
+
+For more information, see [Configure Agent Assist at the team
+level](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-assist#configure-team-for-agent-assist).
+
+### Feature
+
+**Breakthrough for wrap-up improvements**
+
+If breakthrough is configured for `Wrap-up` and `Wrap-up Exceeded` statuses,
+agents can now answer breakthrough calls even if they haven't completed the
+following:
+
+* Submitted disposition codes and notes.
+* Manually switched to `Available` status.
+
+Additionally, agents in `Wrap-up` status who accept breakthrough calls before
+submitting disposition codes and notes can now switch between the call and the
+wrap-up screen.
+
+User experience changes include the following:
+
+* The call adapter contains a switcher button that lets agents switch between
+  an ongoing call and the wrap-up screen for a previous call.
+* The mini-adapter on the agent desktop expands to let you switch between an
+  ongoing call and the wrap-up screen for a previous call.
+
+For more information, see [Breakthrough for
+wrap-up](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-status#breakthrough_for_wrap-up).
+
+### Feature
+
+**Custom field mapping for HubSpot**
+
+You can map your web or mobile SDK custom data fields to your HubSpot
+installation's custom fields. At runtime, when the SDK sends a custom data
+value, the system writes the value to the mapped HubSpot custom field.
+
+Administrators: On the **Settings > Operation Management** page,
+there's a new **Custom Field Mapping** pane.
+
+For more information, see [HubSpot custom field
+mapping](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-custom-field-mapping).
+
+### Feature
+
+**Call scheduling improvements**
+
+We've made the following improvements to call scheduling for web SDK v3 and the
+headless web SDK:
+
+* **Configurable time slots**. You can configure the length of call-scheduling
+  time slots.
+* **Day-based time slot selection**. End-users can browse available time slots
+  organized by day.
+* **Rescheduling**. If an end-user reopens the web SDK and has an existing
+  scheduled call, they're prompted to manage that appointment (reschedule or
+  cancel) before starting a new flow.
+* **Cancellation**. End-users can cancel a previously scheduled call.
+* **Queue-level configuration**. You can configure call scheduling at the
+  queue level.
+
+**Note:** Headless web SDK users must specify `useAdvancedCallScheduling: true` with
+calls to the `getTimeSlots` method to access these call scheduling
+improvements.
+
+Administrators:
+
+* There's a new **Scheduled Calls** pane on the **Settings >
+  Calls** page.
+* There's a new **Scheduled Calls** section in the **Settings >
+  Queue > Web > `SELECT_QUEUE`**
+  pane.
+* We moved **Scheduled Call Countdown** and **Scheduled Call Expiration** from
+  **Settings > Calls > Call Details** to **Settings
+  > Calls > Scheduled Calls**.
+* We've added the following settings to the **Settings > Calls
+  > Scheduled Calls** pane:
+
+  + **Consumers can schedule calls up to
+    `SELECT_INTEGER` day(s) in the future**
+  + **Static > Maximum calls per time slot**
+
+User experience changes:
+
+* For **Scheduled Calls**, if you select **Consumers can schedule calls up to
+  `SELECT_INTEGER` day(s) in the future**, a new
+  **Select a day** screen appears to end-users who reschedule a call.
+
+For more information, see [Scheduled
+calls](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#scheduled-calls).
+
+### Feature
+
+**Headless web SDK updates**
+
+We've made the following updates to the headless web SDK:
+
+* New methods:
+
+  + **fetchTimeSlotAvailability**. Check if time slots are available for a
+    given menu.
+  + **restoreCobrowseSession**. Restores a cobrowse session after the
+    browser window is reopened.
+  + **getLogs**. Gets the internal debug logs collected by the SDK.
+* Updated signatures:
+
+  + **getTimeSlots**. Includes the `GetTimeSlotsRequest` interface.
+  + **updatePostSession**. Includes an `optInSelection` parameter.
+
+For more information, see
+[getTimeSlots](https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-web-api#get-time-slots).
+
+### Feature
+
+**Accessibility and design improvements**
+
+We've made the following accessibility and design improvements to the web SDK v3
+and the headless web SDK:
+
+* **WCAG Compliance**. Updated to comply with Web Content Accessibility
+  Guidelines (WCAG).
+* **Right-to-left support**. Now supports right-to-left languages: Arabic,
+  Hebrew, Farsi, and Urdu.
+* **Improved screen reader compatibility**. Improved support for screen
+  readers.
+* **Improved spacing**. Uses 4px-based spacing to improve the look and feel of
+  page displays.
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where the Telnyx integration attempted to reconnect
+  websockets after a failure, even when this behavior was not desired.
+* Fixed an issue where Agent Assist disappeared for the third agent
+  during consecutive queue transfers.
+* Fixed an issue where empty responses from Dialogflow were
+  passed through to CCAI Platform, resulting in undefined call
+  behavior.
+* Fixed an issue where active outbound campaigns stopped dialing when a
+  concurrent campaign encountered timezone restrictions, requiring manual
+  intervention to resume calls.
+* Fixed an issue where campaigns didn't resume after being paused,
+  resulting in call session failures and missing participant
+  information.
+* Fixed an issue where chat transfers involving multiple agents failed,
+  causing agents to become stuck in an "in chat" status even when no active
+  chats were present.
+* Fixed an issue where incoming chats were routed to newly signed-in agents
+  instead of agents who had been available the longest.
+* Fixed an issue where chat messages sent by end-users immediately after
+  starting a chat, but before an agent joined, weren't delivered to
+  the agent.
+* Fixed an issue where the `recording_url` field in session data wasn't
+  populated after calls ended.
+* Fixed an issue where call transfers were incorrectly tagged as **Warm**
+  instead of **Cold** when the transferring agent disconnected before the
+  receiving agent answered.
+* Fixed an issue where call recordings for sessions ending with a virtual
+  agent post-call survey were truncated. This resulted in the main human agent
+  conversation not being saved.
+* Fixed an issue where outbound call restrictions incorrectly blocked calls to
+  Japanese numbers, even when settings allowed them.
+* Fixed an issue where agents could become stuck in **Wrap-up** status after a
+  call was transferred to another agent's voicemail and the end user
+  disconnected during the voicemail greeting.
+* Fixed an issue where, in third-party transfer calls with **Call recording
+  for third-party transfers** set to off, redaction didn't begin immediately
+  after the agent disconnected.
+* Fixed an issue where calls didn't connect and re-queued, resulting in long
+  queue times for agents.
+* Fixed an issue where disposition lists in the call adapter didn't appear in
+  alphabetical order, as configured in the portal.
+* Fixed an issue where chats in the agent desktop didn't transition to the
+  **End Wrap-Up** state after the agent clicked **Submit**.
+* Fixed an issue where the `apps/api/v1/users` API returned only 100 records
+  per page, even when a higher limit was specified.
+* Fixed an issue where filtering by queue name on the **Queued Chats** and
+  **Queued Calls** pages didn't return accurate results.
+* Fixed an issue where updating an agent's skills from the **Agents** page
+  mistakenly removed their extension number.
+* Fixed an issue where users of the **Dialer Admin** role couldn't add teams
+  to a queue.
+* Fixed an issue where call wrap-up interactions recorded inaccurate data,
+  such as excessive wrap-up times, redundant instances, and incorrect
+  chronological sequencing.
+* Fixed an issue that occurred when an agent with Agent Assist
+  transferred a call to a second agent with Agent Assist. After the
+  transfer, the second agent no longer had access to Agent Assist.
+* Fixed an issue with Salesforce integrations in the agent desktop where
+  notification flags overlapped the Salesforce Utility Bar navigation, which
+  prevented agents from accessing navigation controls.
+* Fixed an issue where agents were incorrectly reported as `Available` for an
+  extended period after signing out.
+* Fixed an issue where calls waiting in a queue with no available agents
+  weren't connected when an agent became available.
+* Fixed an issue where the previous CCAI Insights name appeared in the portal
+  instead of Customer Experience Insights.
+* Fixed an issue for Alvaria users where the Agent Performance Report was
+  mistakenly generated and sent at 7:00 PM instead of midnight, which
+  resulted in incomplete 24-hour performance data.
+* Fixed an issue where agents who left a predictive campaign pool were
+  incorrectly left in `Available` status.
+* Fixed an issue where chat sessions returned an error during post-session
+  transfer if no virtual agent participant was active.
+* Fixed an issue where, after a call failure, the agent adapter displayed a
+  generic error message instead of an error message that included the failure
+  reason.
+* Fixed an issue for Telnyx users where the instance stopped responding.
+* Fixed an issue that occurred when users tried to delete a queue. A message
+  was returned saying that the queue was assigned as a deflection or
+  redirection option even though these settings weren't activated for the
+  queue.
+* Fixed an issue where adding multiple voice queues resulted in long loading
+  times, request timeouts, and incorrect concurrency errors.
+* Fixed an issue where overcapacity deflection options messages mistakenly
+  played twice instead of once.
+* Fixed an issue where chats escalated by a virtual agent disconnected seconds
+  after assignment to a human agent, which prevented the human agent and the
+  end-user from interacting.
+* Fixed an issue where spurious chat interactions appeared in the **All
+  Interactions** dashboard, which caused discrepancies in handled chat
+  reporting and incorrect failed session filtering.
+* Fixed a web SDK v3 issue where the out-of-office deflection message that
+  appeared in the end-user's chat window didn't match the message in the chat
+  transcript.
+* Fixed an issue where agents received incorrect **Missed target response
+  time** notifications in agent desktop SMS chats, even when responding
+  promptly.
+* Fixed an issue where agents attempting to access their contact center using
+  private ingress couldn't connect.
+* Fixed an issue where the **Allow transfers to queues outside of hours of
+  operation** checkbox was unexpectedly unavailable.
+* Fixed an issue where verified outbound phone numbers couldn't be added to a
+  queue because the selection field was empty, which prevented administrators
+  from assigning new phone numbers.
+* Fixed an issue where attempts to rename IVR queues using redirection data in
+  legacy YAML files resulted in errors.
+
+---
 ## 2026-04-27
 
 ### Announcement

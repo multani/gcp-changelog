@@ -2448,18 +2448,70 @@
 
 
 <h1 id="google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</h1>
-<h2 id="2026-04-27">2026-04-27</h2>
+<h2 id="2026-05-04">2026-05-04</h2>
 <h3 id="announcement">Announcement</h3>
-<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
-<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
-we release this version, we expect the new capabilities to be as shown here.</p>
+<p><strong>Google Cloud CCaaS 4.26</strong></p>
+<p>We've released version 4.26 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>
 <h3 id="feature">Feature</h3>
-<p><strong>Custom field mapping for HubSpot</strong></p>
-<p>You can map your web or mobile SDK custom data fields to your HubSpot
-installation's custom fields. At runtime, when the SDK sends a custom data
-value, the system writes the value to the mapped HubSpot custom field.</p>
-<p>Administrators: On the <strong>Settings &gt; Operation Management</strong> page, there's a new <strong>Custom Field Mapping</strong> pane.</p>
+<p><strong>Fewest Agents Routing</strong></p>
+<p>Fewest Agents Routing has been added to chat Deltacast configuration. Fewest
+Agents Routing keeps busy agents engaged while preserving idle agents for future
+workload spikes.</p>
+<p>Administrators:</p>
+<ul>
+<li>
+<p>The following new settings are available at **Settings &gt;
+  Operation Management &gt; Routing &gt; Chat Routing</p>
+<blockquote>
+<p>Deltacast Routing Logic**:</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Longest Idle Routing to distribute workload equally between agents</strong>.
+    This is the same as the previous default routing behavior.</p>
+</li>
+<li><strong>Fewest Agents Routing to maximize utilization and call availability</strong>.
+    This is the new routing behavior that concentrates new chats on busy
+    agents.</li>
+</ul>
+<p>Documentation coming soon.</p>
 <h3 id="feature_1">Feature</h3>
+<p><strong>Skip account or record creation for HubSpot</strong></p>
+<p>You can configure your instance to prevent the automatic creation of accounts
+and records in HubSpot while ensuring that data such as media files and
+transcripts is preserved. You can configure how the system handles closed
+records when a record ID is passed using the SDK.</p>
+<p>Administrators:</p>
+<ul>
+<li>
+<p>The following new settings are available at <strong>Settings &gt;
+  Operation Management &gt; CRM Record Creation Details</strong>:</p>
+</li>
+<li>
+<p><strong>Skip CRM account creation</strong></p>
+</li>
+<li><strong>Skip CRM account lookup</strong></li>
+<li><strong>Skip CRM record creation</strong></li>
+<li>
+<p><strong>Closed record options when record ID is passed in via SDK</strong></p>
+<ul>
+<li><strong>Create new record</strong></li>
+<li><strong>Reopen record</strong></li>
+</ul>
+</li>
+</ul>
+<p>Documentation coming soon.</p>
+<h3 id="feature_2">Feature</h3>
+<p><strong>Improved Agent Assist visibility during transfers</strong></p>
+<p>When a chat is transferred, the originating agent and the receiving agent see
+Agent Assist as it's configured for their respective teams or queues.
+This behavior now also applies to transfers of direct inbound calls.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-assist#configure-team-for-agent-assist">Configure Agent Assist at the team
+level</a>.</p>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Breakthrough for wrap-up improvements</strong></p>
 <p>If breakthrough is configured for <code>Wrap-up</code> and <code>Wrap-up Exceeded</code> statuses,
 agents can now answer breakthrough calls even if they haven't completed the
@@ -2468,7 +2520,9 @@ following:</p>
 <li>Submitted disposition codes and notes.</li>
 <li>Manually switched to <code>Available</code> status.</li>
 </ul>
-<p>Additionally, agents in <code>Wrap-up</code> status who accept breakthrough calls before submitting disposition codes and notes can now switch between the call and the wrap-up screen.</p>
+<p>Additionally, agents in <code>Wrap-up</code> status who accept breakthrough calls before
+submitting disposition codes and notes can now switch between the call and the
+wrap-up screen.</p>
 <p>User experience changes include the following:</p>
 <ul>
 <li>The call adapter contains a switcher button that lets agents switch between
@@ -2476,7 +2530,18 @@ following:</p>
 <li>The mini-adapter on the agent desktop expands to let you switch between an
   ongoing call and the wrap-up screen for a previous call.</li>
 </ul>
-<h3 id="feature_2">Feature</h3>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-status#breakthrough_for_wrap-up">Breakthrough for
+wrap-up</a>.</p>
+<h3 id="feature_4">Feature</h3>
+<p><strong>Custom field mapping for HubSpot</strong></p>
+<p>You can map your web or mobile SDK custom data fields to your HubSpot
+installation's custom fields. At runtime, when the SDK sends a custom data
+value, the system writes the value to the mapped HubSpot custom field.</p>
+<p>Administrators: On the <strong>Settings &gt; Operation Management</strong> page,
+there's a new <strong>Custom Field Mapping</strong> pane.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-custom-field-mapping">HubSpot custom field
+mapping</a>.</p>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Call scheduling improvements</strong></p>
 <p>We've made the following improvements to call scheduling for web SDK v3 and the
 headless web SDK:</p>
@@ -2525,7 +2590,9 @@ improvements.</p>
   <code>SELECT_INTEGER</code> day(s) in the future</strong>, a new
   <strong>Select a day</strong> screen appears to end-users who reschedule a call.</li>
 </ul>
-<h3 id="feature_3">Feature</h3>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#scheduled-calls">Scheduled
+calls</a>.</p>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Headless web SDK updates</strong></p>
 <p>We've made the following updates to the headless web SDK:</p>
 <ul>
@@ -2547,7 +2614,9 @@ improvements.</p>
 </li>
 <li><strong>updatePostSession</strong>. Includes an <code>optInSelection</code> parameter.</li>
 </ul>
-<h3 id="feature_4">Feature</h3>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-web-api#get-time-slots">getTimeSlots</a>.</p>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Accessibility and design improvements</strong></p>
 <p>We've made the following accessibility and design improvements to the web SDK v3
 and the headless web SDK:</p>
@@ -2562,6 +2631,230 @@ and the headless web SDK:</p>
   page displays.</li>
 </ul>
 <h3 id="fixed">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where the Telnyx integration attempted to reconnect
+  websockets after a failure, even when this behavior was not desired.</li>
+<li>Fixed an issue where Agent Assist disappeared for the third agent
+  during consecutive queue transfers.</li>
+<li>Fixed an issue where empty responses from Dialogflow were
+  passed through to CCAI Platform, resulting in undefined call
+  behavior.</li>
+<li>Fixed an issue where active outbound campaigns stopped dialing when a
+  concurrent campaign encountered timezone restrictions, requiring manual
+  intervention to resume calls.</li>
+<li>Fixed an issue where campaigns didn't resume after being paused,
+  resulting in call session failures and missing participant
+  information.</li>
+<li>Fixed an issue where chat transfers involving multiple agents failed,
+  causing agents to become stuck in an "in chat" status even when no active
+  chats were present.</li>
+<li>Fixed an issue where incoming chats were routed to newly signed-in agents
+  instead of agents who had been available the longest.</li>
+<li>Fixed an issue where chat messages sent by end-users immediately after
+  starting a chat, but before an agent joined, weren't delivered to
+  the agent.</li>
+<li>Fixed an issue where the <code>recording_url</code> field in session data wasn't
+  populated after calls ended.</li>
+<li>Fixed an issue where call transfers were incorrectly tagged as <strong>Warm</strong>
+  instead of <strong>Cold</strong> when the transferring agent disconnected before the
+  receiving agent answered.</li>
+<li>Fixed an issue where call recordings for sessions ending with a virtual
+  agent post-call survey were truncated. This resulted in the main human agent
+  conversation not being saved.</li>
+<li>Fixed an issue where outbound call restrictions incorrectly blocked calls to
+  Japanese numbers, even when settings allowed them.</li>
+<li>Fixed an issue where agents could become stuck in <strong>Wrap-up</strong> status after a
+  call was transferred to another agent's voicemail and the end user
+  disconnected during the voicemail greeting.</li>
+<li>Fixed an issue where, in third-party transfer calls with <strong>Call recording
+  for third-party transfers</strong> set to off, redaction didn't begin immediately
+  after the agent disconnected.</li>
+<li>Fixed an issue where calls didn't connect and re-queued, resulting in long
+  queue times for agents.</li>
+<li>Fixed an issue where disposition lists in the call adapter didn't appear in
+  alphabetical order, as configured in the portal.</li>
+<li>Fixed an issue where chats in the agent desktop didn't transition to the
+  <strong>End Wrap-Up</strong> state after the agent clicked <strong>Submit</strong>.</li>
+<li>Fixed an issue where the <code>apps/api/v1/users</code> API returned only 100 records
+  per page, even when a higher limit was specified.</li>
+<li>Fixed an issue where filtering by queue name on the <strong>Queued Chats</strong> and
+  <strong>Queued Calls</strong> pages didn't return accurate results.</li>
+<li>Fixed an issue where updating an agent's skills from the <strong>Agents</strong> page
+  mistakenly removed their extension number.</li>
+<li>Fixed an issue where users of the <strong>Dialer Admin</strong> role couldn't add teams
+  to a queue.</li>
+<li>Fixed an issue where call wrap-up interactions recorded inaccurate data,
+  such as excessive wrap-up times, redundant instances, and incorrect
+  chronological sequencing.</li>
+<li>Fixed an issue that occurred when an agent with Agent Assist
+  transferred a call to a second agent with Agent Assist. After the
+  transfer, the second agent no longer had access to Agent Assist.</li>
+<li>Fixed an issue with Salesforce integrations in the agent desktop where
+  notification flags overlapped the Salesforce Utility Bar navigation, which
+  prevented agents from accessing navigation controls.</li>
+<li>Fixed an issue where agents were incorrectly reported as <code>Available</code> for an
+  extended period after signing out.</li>
+<li>Fixed an issue where calls waiting in a queue with no available agents
+  weren't connected when an agent became available.</li>
+<li>Fixed an issue where the previous CCAI Insights name appeared in the portal
+  instead of Customer Experience Insights.</li>
+<li>Fixed an issue for Alvaria users where the Agent Performance Report was
+  mistakenly generated and sent at 7:00 PM instead of midnight, which
+  resulted in incomplete 24-hour performance data.</li>
+<li>Fixed an issue where agents who left a predictive campaign pool were
+  incorrectly left in <code>Available</code> status.</li>
+<li>Fixed an issue where chat sessions returned an error during post-session
+  transfer if no virtual agent participant was active.</li>
+<li>Fixed an issue where, after a call failure, the agent adapter displayed a
+  generic error message instead of an error message that included the failure
+  reason.</li>
+<li>Fixed an issue for Telnyx users where the instance stopped responding.</li>
+<li>Fixed an issue that occurred when users tried to delete a queue. A message
+  was returned saying that the queue was assigned as a deflection or
+  redirection option even though these settings weren't activated for the
+  queue.</li>
+<li>Fixed an issue where adding multiple voice queues resulted in long loading
+  times, request timeouts, and incorrect concurrency errors.</li>
+<li>Fixed an issue where overcapacity deflection options messages mistakenly
+  played twice instead of once.</li>
+<li>Fixed an issue where chats escalated by a virtual agent disconnected seconds
+  after assignment to a human agent, which prevented the human agent and the
+  end-user from interacting.</li>
+<li>Fixed an issue where spurious chat interactions appeared in the <strong>All
+  Interactions</strong> dashboard, which caused discrepancies in handled chat
+  reporting and incorrect failed session filtering.</li>
+<li>Fixed a web SDK v3 issue where the out-of-office deflection message that
+  appeared in the end-user's chat window didn't match the message in the chat
+  transcript.</li>
+<li>Fixed an issue where agents received incorrect <strong>Missed target response
+  time</strong> notifications in agent desktop SMS chats, even when responding
+  promptly.</li>
+<li>Fixed an issue where agents attempting to access their contact center using
+  private ingress couldn't connect.</li>
+<li>Fixed an issue where the <strong>Allow transfers to queues outside of hours of
+  operation</strong> checkbox was unexpectedly unavailable.</li>
+<li>Fixed an issue where verified outbound phone numbers couldn't be added to a
+  queue because the selection field was empty, which prevented administrators
+  from assigning new phone numbers.</li>
+<li>Fixed an issue where attempts to rename IVR queues using redirection data in
+  legacy YAML files resulted in errors.</li>
+</ul>
+<hr />
+<h2 id="2026-04-27">2026-04-27</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.</p>
+<h3 id="feature_8">Feature</h3>
+<p><strong>Custom field mapping for HubSpot</strong></p>
+<p>You can map your web or mobile SDK custom data fields to your HubSpot
+installation's custom fields. At runtime, when the SDK sends a custom data
+value, the system writes the value to the mapped HubSpot custom field.</p>
+<p>Administrators: On the <strong>Settings &gt; Operation Management</strong> page, there's a new <strong>Custom Field Mapping</strong> pane.</p>
+<h3 id="feature_9">Feature</h3>
+<p><strong>Breakthrough for wrap-up improvements</strong></p>
+<p>If breakthrough is configured for <code>Wrap-up</code> and <code>Wrap-up Exceeded</code> statuses,
+agents can now answer breakthrough calls even if they haven't completed the
+following:</p>
+<ul>
+<li>Submitted disposition codes and notes.</li>
+<li>Manually switched to <code>Available</code> status.</li>
+</ul>
+<p>Additionally, agents in <code>Wrap-up</code> status who accept breakthrough calls before submitting disposition codes and notes can now switch between the call and the wrap-up screen.</p>
+<p>User experience changes include the following:</p>
+<ul>
+<li>The call adapter contains a switcher button that lets agents switch between
+  an ongoing call and the wrap-up screen for a previous call.</li>
+<li>The mini-adapter on the agent desktop expands to let you switch between an
+  ongoing call and the wrap-up screen for a previous call.</li>
+</ul>
+<h3 id="feature_10">Feature</h3>
+<p><strong>Call scheduling improvements</strong></p>
+<p>We've made the following improvements to call scheduling for web SDK v3 and the
+headless web SDK:</p>
+<ul>
+<li><strong>Configurable time slots</strong>. You can configure the length of call-scheduling
+  time slots.</li>
+<li><strong>Day-based time slot selection</strong>. End-users can browse available time slots
+  organized by day.</li>
+<li><strong>Rescheduling</strong>. If an end-user reopens the web SDK and has an existing
+  scheduled call, they're prompted to manage that appointment (reschedule or
+  cancel) before starting a new flow.</li>
+<li><strong>Cancellation</strong>. End-users can cancel a previously scheduled call.</li>
+<li><strong>Queue-level configuration</strong>. You can configure call scheduling at the
+  queue level.</li>
+</ul>
+<p><strong>Note:</strong> Headless web SDK users must specify <code>useAdvancedCallScheduling: true</code> with
+calls to the <code>getTimeSlots</code> method to access these call scheduling
+improvements.</p>
+<p>Administrators:</p>
+<ul>
+<li>There's a new <strong>Scheduled Calls</strong> pane on the <strong>Settings &gt;
+  Calls</strong> page.</li>
+<li>There's a new <strong>Scheduled Calls</strong> section in the <strong>Settings &gt;
+  Queue &gt; Web &gt; <code>SELECT_QUEUE</code></strong>
+  pane.</li>
+<li>We moved <strong>Scheduled Call Countdown</strong> and <strong>Scheduled Call Expiration</strong> from
+  <strong>Settings &gt; Calls &gt; Call Details</strong> to **Settings<blockquote>
+<p>Calls &gt; Scheduled Calls**.</p>
+</blockquote>
+</li>
+<li>
+<p>We've added the following settings to the **Settings &gt; Calls</p>
+<blockquote>
+<p>Scheduled Calls** pane:</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Consumers can schedule calls up to
+    <code>SELECT_INTEGER</code> day(s) in the future</strong></p>
+</li>
+<li><strong>Static &gt; Maximum calls per time slot</strong></li>
+</ul>
+<p>User experience changes:</p>
+<ul>
+<li>For <strong>Scheduled Calls</strong>, if you select <strong>Consumers can schedule calls up to
+  <code>SELECT_INTEGER</code> day(s) in the future</strong>, a new
+  <strong>Select a day</strong> screen appears to end-users who reschedule a call.</li>
+</ul>
+<h3 id="feature_11">Feature</h3>
+<p><strong>Headless web SDK updates</strong></p>
+<p>We've made the following updates to the headless web SDK:</p>
+<ul>
+<li>
+<p>New methods:</p>
+</li>
+<li>
+<p><strong>fetchTimeSlotAvailability</strong>. Check if time slots are available for a
+    given menu.</p>
+</li>
+<li><strong>restoreCobrowseSession</strong>. Restores a cobrowse session after the
+    browser window is reopened.</li>
+<li><strong>getLogs</strong>. Gets the internal debug logs collected by the SDK.</li>
+<li>
+<p>Updated signatures:</p>
+</li>
+<li>
+<p><strong>getTimeSlots</strong>. Includes the <code>GetTimeSlotsRequest</code> interface.</p>
+</li>
+<li><strong>updatePostSession</strong>. Includes an <code>optInSelection</code> parameter.</li>
+</ul>
+<h3 id="feature_12">Feature</h3>
+<p><strong>Accessibility and design improvements</strong></p>
+<p>We've made the following accessibility and design improvements to the web SDK v3
+and the headless web SDK:</p>
+<ul>
+<li><strong>WCAG Compliance</strong>. Updated to comply with Web Content Accessibility
+  Guidelines (WCAG).</li>
+<li><strong>Right-to-left support</strong>. Now supports right-to-left languages: Arabic,
+  Hebrew, Farsi, and Urdu.</li>
+<li><strong>Improved screen reader compatibility</strong>. Improved support for screen
+  readers.</li>
+<li><strong>Improved spacing</strong>. Uses 4px-based spacing to improve the look and feel of
+  page displays.</li>
+</ul>
+<h3 id="fixed_1">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue that occurred when an agent with Agent Assist
@@ -2619,7 +2912,7 @@ and the headless web SDK:</p>
 </ul>
 <hr />
 <h2 id="2026-04-24">2026-04-24</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><strong>Mobile SDK for iOS version 2.15.2 patch</strong></p>
 <p>This patch updates the following for the mobile SDK for iOS:</p>
 <ul>
@@ -2628,18 +2921,18 @@ and the headless web SDK:</p>
 </ul>
 <hr />
 <h2 id="2026-04-20">2026-04-20</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Custom field mapping for HubSpot</strong></p>
 <p>You can map your web or mobile SDK custom data fields to your HubSpot
 installation's custom fields. At runtime, when the SDK sends a custom data
 value, the system writes the value to the mapped HubSpot custom field.</p>
 <p>Administrators: On the <strong>Settings &gt; Operation Management</strong> page,
 there's a new <strong>Custom Field Mapping</strong> pane.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Web SDK v3: advanced call scheduling</strong></p>
 <p>Advanced call scheduling has the following capabilities:</p>
 <ul>
@@ -2651,7 +2944,7 @@ there's a new <strong>Custom Field Mapping</strong> pane.</p>
 <li><strong>Cancellation</strong>. End-users can cancel a previously scheduled call using the
   web SDK.</li>
 </ul>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>Headless web SDK updates</strong></p>
 <p>We've made the following updates to the headless web SDK:</p>
 <ul>
@@ -2674,7 +2967,7 @@ there's a new <strong>Custom Field Mapping</strong> pane.</p>
 </li>
 <li><strong>updatePostSession</strong>. Now includes an <code>optInSelection</code> parameter.</li>
 </ul>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><strong>Accessibility and design improvements</strong></p>
 <p>We've made the following accessibility and design improvements to the web SDK v3
 and the headless web SDK:</p>
@@ -2688,7 +2981,7 @@ and the headless web SDK:</p>
 <li><strong>Improved spacing</strong>. Uses 4px-based spacing to improve the look and feel of
   page displays.</li>
 </ul>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where chats escalated by a virtual agent disconnected seconds
@@ -2715,13 +3008,13 @@ and the headless web SDK:</p>
 </ul>
 <hr />
 <h2 id="2026-04-15">2026-04-15</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.21</strong></p>
 <p>We've released version 4.21 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p><strong>Language selection support for direct calls</strong></p>
 <p>End-users making direct calls to agent phone numbers and agent extension numbers
 can select their language at the start of a call.</p>
@@ -2732,7 +3025,7 @@ direct number</strong> checkbox is selected). When you select the <strong>Set la
 checkbox, the <strong>Select languages</strong> list appears.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#create-direct-phone-number">Create a direct phone
 number</a>.</p>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>"Improved controls for predictive campaigns" is available without assistance
 from the Google account team</strong></p>
 <p>This feature was announced on <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#March_24_2026">March 24,
@@ -2741,7 +3034,7 @@ previously required the Google account team to enable it. You no longer need
 assistance from the Google account team to use this capability. For more
 information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive">Predictive
 campaigns</a>.</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p><strong>Virtual agents can transfer calls to a specific human agent</strong></p>
 <p>Virtual support agents can transfer calls directly to a specific human agent
 using the agent ID or agent extension number. Include the <code>agent_extension</code> or
@@ -2751,7 +3044,7 @@ of transferring to a queue before transferring to the agent. This can improve
 wait times and customer satisfaction. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/virtual-agent-to-human-agent-transfers">Virtual agent
 to human agent
 transfers</a>.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where backslash characters in chat shortcuts and chat
@@ -2801,12 +3094,12 @@ transfers</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-04-14">2026-04-14</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p><strong>Advance reporting dashboards prerelease notes</strong></p>
 <p>Here are the pre-release notes for updates to the advanced reporting dashboards.
 When we release these updates, we expect the new capabilities to be as shown
 here.</p>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p><strong>Added a Location filter to dashboards</strong></p>
 <p>The following dashboards now include a <strong>Location</strong> filter:</p>
 <ul>
@@ -2814,7 +3107,7 @@ here.</p>
 <li><strong>Transfers</strong></li>
 <li><strong>Queue Interval</strong></li>
 </ul>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p><strong>Queue Performance dashboard improvements</strong></p>
 <p>We've made the following improvements to the <strong>Queue Performance - Calls</strong> and
 <strong>Queue Performance - Chats</strong> dashboards:</p>
@@ -2829,7 +3122,7 @@ here.</p>
   <strong>Total Queue Entries</strong>, <strong>Total Queue Answered</strong>, <strong>Total Failed</strong>, and
   <strong>Total Transfers</strong>.</li>
 </ul>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p><strong>General dashboard updates</strong></p>
 <ul>
 <li>
@@ -2851,7 +3144,7 @@ here.</p>
 <li>In the <strong>Queue Group Performance - All</strong> dashboard, we renamed the <strong>Lang</strong>
   filter to <strong>Language</strong>.</li>
 </ul>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where the CSAT scores in the <strong>Performance Overview</strong> and
@@ -2877,11 +3170,11 @@ here.</p>
 </ul>
 <hr />
 <h2 id="2026-04-10">2026-04-10</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the prerelease notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p><strong>Language selection support for direct calls</strong></p>
 <p>End-users making direct calls to agent phone numbers and agent extension numbers
 can select their language at the start of a call.</p>
@@ -2890,7 +3183,7 @@ can select their language at the start of a call.</p>
 Number Management</strong>, have a new <strong>Set a default language</strong> checkbox (when the
 <strong>Set as a direct number</strong> checkbox is selected). A list of languages appears
 when you select the <strong>Set a default language</strong> checkbox.</p>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p><strong>"Improved controls for predictive campaigns" is available without assistance
 from the Google account team</strong></p>
 <p>This feature was announced on <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#March_24_2026">March 24,
@@ -2899,12 +3192,12 @@ previously required the Google account team to enable it. You no longer need
 assistance from the Google account team to use this capability. For more
 information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive">Predictive
 campaigns</a>.</p>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p><strong>Virtual agents can transfer calls to a specific human agent</strong></p>
 <p>Virtual agents can transfer calls directly to a specific human agent using the
 agent ID or agent extension number. Include the <code>agent_extension</code> or <code>agent_id</code>
 field in the transfer payload to direct the call to the correct agent.</p>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where backslash characters in chat shortcuts and chat
@@ -2954,10 +3247,10 @@ field in the transfer payload to direct the call to the correct agent.</p>
 </ul>
 <hr />
 <h2 id="2026-04-07">2026-04-07</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>Advance reporting dashboards 4.12</strong></p>
 <p>We've released version 4.12 of the advanced reporting dashboards.</p>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p><strong>Repeat contacts data added to advanced reporting dashboards</strong></p>
 <p>Repeat contacts data is now available in the following advanced reporting
 dashboards:</p>
@@ -2973,14 +3266,14 @@ dashboards:</p>
   Connected</strong>: new <strong>Repeat Contact</strong> column in the <strong>Connected Calls</strong> and
   <strong>Connected Chats</strong> tables.</li>
 </ul>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p><strong>New Total Queued Answered metric in the Chat Queue Metrics Explore</strong></p>
 <p>The <strong>Chat Queue Metrics</strong> Explore now includes the <strong>Total Queued Answered</strong>
 metric. This metric provides a precise count of chats answered from the queue,
 providing accurate Service Level Agreement (SLA) and answer rate calculations
 where the standard "handled" metric might not apply—for example, if a
 chat is answered and then immediately disconnected.</p>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -3015,14 +3308,14 @@ chat is answered and then immediately disconnected.</p>
 </ul>
 <hr />
 <h2 id="2026-04-03">2026-04-03</h2>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p><strong>New Total Queued Answered metric in the Chat Queue Metrics Explore</strong></p>
 <p>The <strong>Chat Queue Metrics</strong> Explore now includes the <strong>Total Queued Answered</strong>
 metric. This metric provides a precise count of chats answered from the queue,
 providing accurate Service Level Agreement (SLA) and answer rate calculations
 where the standard "handled" metric might not apply—for example, if a
 chat is answered and then immediately disconnected.</p>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p><strong>Repeat contacts data added to advanced reporting dashboards</strong></p>
 <p>Repeat contacts data is now available in the following advanced reporting
 dashboards:</p>
@@ -3036,7 +3329,7 @@ dashboards:</p>
   Connected</strong>: new <strong>Repeat Contact</strong> column in the <strong>Connected Calls</strong> and
   <strong>Connected Chats</strong> tables.</li>
 </ul>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -3069,20 +3362,20 @@ dashboards:</p>
   highlighting wasn't applied to populated fields in the <strong>Queue Group
   Performance Calls</strong> and <strong>Queue Group Performance Chats</strong> tables.</li>
 </ul>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>Advance reporting dashboards prerelease notes</strong></p>
 <p>Here are the pre-release notes for updates to the advanced reporting dashboards.
 When we release these updates, we expect the new capabilities to be as shown
 here.</p>
 <hr />
 <h2 id="2026-04-02">2026-04-02</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.16</strong></p>
 <p>We've released version 4.16 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_30">Feature</h3>
 <p><strong>Agent Assist is available for calls and chats that are unassociated
 with a queue</strong></p>
 <p>You can now turn on Agent Assist for calls and chats at the team level.
@@ -3094,7 +3387,7 @@ Users &amp; Teams &gt;</strong> edit <strong>TEAM_NAME</strong> pane,
 there's a new <strong>Agent Assist</strong> section.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-assist#configure-team-for-agent-assist">Configure Agent Assist at the team
 level</a>.</p>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_31">Feature</h3>
 <p><strong>New HubSpot CRM ticket view: Help desk view</strong></p>
 <p>You can now configure which CRM ticket view your HubSpot integration uses:
 <strong>Standard view</strong>, or the new real-time <strong>Help desk view</strong>.</p>
@@ -3102,7 +3395,7 @@ level</a>.</p>
 select <strong>HubSpot</strong> pane, there's a new <strong>CRM Ticket View</strong> section.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot#configure-hubspot">Configure
 HubSpot</a>.</p>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_32">Feature</h3>
 <p><strong>Play pre-recorded audio for virtual agents</strong></p>
 <p>Dialogflow lets virtual agents respond with pre-recorded audio. This
 lets you use high-quality audio files instead of standard text-to-speech. This
@@ -3110,7 +3403,7 @@ capability is available for all voice channels, including inbound and outbound
 calls. It's available for support virtual agents, task virtual agents, and
 post-session virtual agents. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/play-prerecorded-audio">Play pre-recorded
 audio</a>.</p>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_33">Feature</h3>
 <p><strong>Configure the ringing timeout for virtual agent transfers to SIP endpoints</strong></p>
 <p>Twilio users can configure the ringing timeout for outbound calls that virtual
 agents transfer to SIP endpoints. Add the <code>sip_ring_timeout</code> field to the
@@ -3119,7 +3412,7 @@ This allows calls to internal extensions or Unified Communications (UC)
 destinations sufficient time to be answered before disconnection. For more
 information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint">Transfer a call to a SIP
 endpoint</a>.</p>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue with React Native integrations where the email adapter
@@ -3151,7 +3444,7 @@ endpoint</a>.</p>
   response fields. This caused data type mismatches in the reports that the
   API returned.</li>
 </ul>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p><strong>Mobile SDK for Android version 2.15.2 patch</strong></p>
 <p>This patch updates the following for the mobile SDK for Android:</p>
 <ul>
@@ -3166,18 +3459,18 @@ endpoint</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-04-01">2026-04-01</h2>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_34">Feature</h3>
 <p><strong>Play pre-recorded audio for virtual agent</strong></p>
 <p>Dialogflow lets virtual agents respond with pre-recorded audio. This
 lets you use high-quality audio files instead of standard text-to-speech. This
 capability is available for all voice channels, including inbound and outbound
 calls. It's available for support virtual agents, task virtual agents, and
 post-session virtual agents.</p>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_35">Feature</h3>
 <p><strong>Agent Assist is available for calls and chats that are unassociated
 with a queue</strong></p>
 <p>You can now turn on Agent Assist for calls and chats at the team level.
@@ -3187,20 +3480,20 @@ queue selected.</p>
 <p>Administrators: In the <strong>Settings &gt; Users &amp; Teams &gt; Manage
 Users &amp; Teams &gt;</strong> edit <strong>TEAM_NAME</strong> pane,
 there's a new <strong>Agent Assist</strong> section.</p>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_36">Feature</h3>
 <p><strong>Configure the ringing timeout for virtual agent transfers to SIP endpoints</strong></p>
 <p>Twilio users can configure the ringing timeout for outbound calls that virtual
 agents transfer to SIP endpoints. Add the <code>sip_ring_timeout</code> field to the
 virtual agent's custom payload to set the ringing period for up to 600 seconds.
 This allows calls to internal extensions or Unified Communications (UC)
 destinations sufficient time to be answered before disconnection.</p>
-<h3 id="feature_29">Feature</h3>
+<h3 id="feature_37">Feature</h3>
 <p><strong>New HubSpot CRM ticket view: Help desk view</strong></p>
 <p>You can now configure which CRM ticket view your HubSpot integration uses:
 <strong>Standard view</strong>, or the new real-time <strong>Help desk view</strong>.</p>
 <p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;</strong>
 select <strong>HubSpot</strong> pane, there's a new <strong>CRM Ticket View</strong> section.</p>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue with React Native integrations where the email adapter
@@ -3234,25 +3527,25 @@ select <strong>HubSpot</strong> pane, there's a new <strong>CRM Ticket View</str
 </ul>
 <hr />
 <h2 id="2026-03-30">2026-03-30</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_30">Feature</h3>
+<h3 id="feature_38">Feature</h3>
 <p><strong>Play pre-recorded audio for virtual agent</strong></p>
 <p>Dialogflow lets virtual agents respond with pre-recorded audio. This
 lets you use high-quality audio files instead of standard text-to-speech. This
 capability is available for all voice channels, including inbound and outbound
 calls. It's available for support virtual agents, task virtual agents, and
 post-session virtual agents.</p>
-<h3 id="feature_31">Feature</h3>
+<h3 id="feature_39">Feature</h3>
 <p><strong>Configure the ringing timeout for virtual agent transfers to SIP endpoints</strong></p>
 <p>Twilio users can configure the ringing timeout for outbound calls that virtual
 agents transfer to SIP endpoints. Add the <code>sip_ring_timeout</code> field to the
 virtual agent's custom payload to set the ringing period for up to 600 seconds.
 This allows calls to internal extensions or Unified Communications (UC)
 destinations sufficient time to be answered before disconnection.</p>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls continued to be recorded after being transferred
@@ -3281,7 +3574,7 @@ destinations sufficient time to be answered before disconnection.</p>
 </ul>
 <hr />
 <h2 id="2026-03-25">2026-03-25</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version
 3</a>. Starting on
@@ -3291,13 +3584,13 @@ web SDK v3 before that date to avoid breaking your integration with the web SDK.
 We are no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2026-03-24">2026-03-24</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.12</strong></p>
 <p>We've released version 4.12 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="feature_32">Feature</h3>
+<h3 id="feature_40">Feature</h3>
 <p><strong>Support for creating chat virtual agents using CX Agent Studio</strong></p>
 <p>Contact Center AI Platform supports creating chat virtual agents using
 <a href="https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps">Customer Experience Agent Studio</a>
@@ -3305,7 +3598,7 @@ schedules</a>.</p>
 agents with CX Agent Studio.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-cx-agent-studio-agent">Create and integrate Customer Experience Agent Studio
 agents</a>.</p>
-<h3 id="feature_33">Feature</h3>
+<h3 id="feature_41">Feature</h3>
 <p><strong>Callback fulfillment hours</strong></p>
 <p>You can configure callback fulfillment hours, which are the hours when your
 contact center fulfills callbacks. If you enable callback rollovers to the next
@@ -3315,7 +3608,7 @@ outside of these hours are canceled. Callback fulfillment hours aren't available
 by default. To use this capability, ask your Google contact to turn it on for
 your instance. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#callback-fulfillment-hours">Callback fulfillment
 hours</a>.</p>
-<h3 id="feature_34">Feature</h3>
+<h3 id="feature_42">Feature</h3>
 <p><strong>Improved support for multiple agent matches for agent extension searches</strong></p>
 <p>When an end-user inputs an agent extension number at the beginning of a call and
 there are multiple agent matches, the system now reads agent matches in groups
@@ -3329,7 +3622,7 @@ correct agent:</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#extension-directory-messages">Extension directory
 messages</a>.</p>
-<h3 id="feature_35">Feature</h3>
+<h3 id="feature_43">Feature</h3>
 <p><strong>HubSpot lookup against company profiles</strong></p>
 <p>HubSpot integrations now support lookups against Company profiles.
 Administrators can configure primary and secondary lookup objects, allowing the
@@ -3337,7 +3630,7 @@ system to search for end-users across both Contacts and Companies to ensure
 accurate identification during active sessions.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-lookups">HubSpot lookup against company
 profiles</a>.</p>
-<h3 id="feature_36">Feature</h3>
+<h3 id="feature_44">Feature</h3>
 <p><strong>HubSpot: Mobile Phone Number Lookup</strong></p>
 <p>Admins can now enable mobile phone number lookups for HubSpot integrations to
 ensure callers are accurately matched with existing contacts. To activate this,
@@ -3347,7 +3640,7 @@ the system will automatically search both the "Phone number" and "Mobile phone
 number" fields in HubSpot during incoming voice or chat sessions. For more
 information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-mobile-phone-lookup">HubSpot mobile phone number
 lookup</a>.</p>
-<h3 id="feature_37">Feature</h3>
+<h3 id="feature_45">Feature</h3>
 <p><strong>Improved controls for predictive campaigns</strong></p>
 <p>We've added the following controls to predictive campaigns to reduce the risk of
 call abandonment due to overdialing. These controls let you ramp up dialing
@@ -3365,14 +3658,14 @@ don't require maintaining a maximum abandonment percentage.</p>
 </blockquote>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-predictive">Predictive
 campaigns</a>.</p>
-<h3 id="feature_38">Feature</h3>
+<h3 id="feature_46">Feature</h3>
 <p><strong>Resume chat endpoint</strong></p>
 <p>You can use the new <code>chats/CHAT_ID/resume</code> endpoint to resume chat sessions that
 are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat sessions display the
 chat history to both the end-user and the agent.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/resume-a-chat">Resume a chat</a>.</p>
-<h3 id="fixed_10">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue for Zendesk users where using click-to-dial from a private
@@ -3598,7 +3891,7 @@ chat history to both the end-user and the agent.</p>
 </ul>
 <hr />
 <h2 id="2026-03-16">2026-03-16</h2>
-<h3 id="feature_39">Feature</h3>
+<h3 id="feature_47">Feature</h3>
 <p><strong>Improved controls for predictive campaigns</strong></p>
 <p>We've added the following controls to predictive campaigns to reduce the risk of
 call abandonment due to overdialing. These controls let you ramp up dialing
@@ -3614,7 +3907,7 @@ don't require maintaining a maximum abandonment percentage.</p>
 <p>Mode &gt; Predictive<strong>, the new controls appear in the
 </strong>Add Campaign** dialog.</p>
 </blockquote>
-<h3 id="feature_40">Feature</h3>
+<h3 id="feature_48">Feature</h3>
 <p><strong>HubSpot: Mobile Phone Number Lookup</strong></p>
 <p>Admins can now enable mobile phone number lookups for HubSpot integrations to
 ensure callers are accurately matched with existing contacts. To activate this,
@@ -3622,29 +3915,29 @@ navigate to <strong>Settings &gt; Developer Settings &gt; CRM</strong> and check
 number lookup</strong> box in the new <strong>Phone Number Lookup</strong> section. Once enabled,
 the system will automatically search both the "Phone number" and "Mobile phone
 number" fields in HubSpot during incoming voice or chat sessions.</p>
-<h3 id="feature_41">Feature</h3>
+<h3 id="feature_49">Feature</h3>
 <p><strong>Resume chat endpoint</strong></p>
 <p>You can use the new <code>chats/CHAT_ID/resume</code> endpoint to resume chat sessions that
 are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat sessions display the
 chat history to both the end-user and the agent.</p>
-<h3 id="feature_42">Feature</h3>
+<h3 id="feature_50">Feature</h3>
 <p><strong>HubSpot lookup against company profiles</strong></p>
 <p>HubSpot integrations now support lookups against Company profiles.
 Administrators can configure primary and secondary lookup objects, allowing the
 system to search for end-users across both Contacts and Companies to ensure
 accurate identification during active sessions.</p>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the prerelease notes for the next version of CCAI Platform.
 When we release the next version, we expect the new capabilities to be as shown
 here.</p>
-<h3 id="feature_43">Feature</h3>
+<h3 id="feature_51">Feature</h3>
 <p><strong>Support for creating chat virtual agents using CX Agent Studio</strong></p>
 <p>Contact Center AI Platform supports creating chat virtual agents using
 <a href="https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps">Customer Experience Agent Studio</a>
 (CX Agent Studio). This expands on its existing support for creating voice virtual
 agents with CX Agent Studio.</p>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue for Zendesk users where using click-to-dial from a private
@@ -3868,7 +4161,7 @@ agents with CX Agent Studio.</p>
 <li>Fixed a web SDK issue for iOS users where the <strong>Yes</strong> and <strong>No</strong> buttons in
   the survey request at the end of a chat were hidden.</li>
 </ul>
-<h3 id="feature_44">Feature</h3>
+<h3 id="feature_52">Feature</h3>
 <p><strong>Improved support for multiple agent matches for agent extension searches</strong></p>
 <p>When an end-user inputs an agent extension number at the beginning of a call and
 there are multiple agent matches, the system now reads agent matches in groups
@@ -3880,7 +4173,7 @@ correct agent:</p>
 <li>Search results next page</li>
 <li>End of search results</li>
 </ul>
-<h3 id="feature_45">Feature</h3>
+<h3 id="feature_53">Feature</h3>
 <p><strong>Callback fulfillment hours</strong></p>
 <p>You can configure callback fulfillment hours, which are the hours when your
 contact center fulfills callbacks. If you enable callback rollovers to the next
@@ -3891,10 +4184,10 @@ by default. To use this capability, ask your Google contact to turn it on for
 your instance.</p>
 <hr />
 <h2 id="2026-03-14">2026-03-14</h2>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p><strong>Advanced reporting dashboards 4.0</strong></p>
 <p>We've released version 4.0 of the advanced reporting dashboards.</p>
-<h3 id="feature_46">Feature</h3>
+<h3 id="feature_54">Feature</h3>
 <p><strong>Voicemails dashboard</strong></p>
 <p>With the <strong>Voicemails</strong> dashboard, get insights into the volume of voicemails
 received by your contact center and the performance of your agents in responding
@@ -3902,14 +4195,14 @@ to them. This includes the number of voicemails received, the number of
 voicemails accessed by agents, and the average agent response time. For more
 information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-voicemails">Voicemails
 dashboard</a>.</p>
-<h3 id="feature_47">Feature</h3>
+<h3 id="feature_55">Feature</h3>
 <p><strong>Queue Performance dashboard</strong></p>
 <p>With the <strong>Queue Performance - Calls</strong> and <strong>Queue Performance - Chats</strong>
 dashboards, get performance metrics by queue for your call and chat sessions.
 This includes queue interaction volume, abandons, handle time, callbacks,
 sentiment, and CSAT. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance">Queue Performance
 dashboards</a>.</p>
-<h3 id="feature_48">Feature</h3>
+<h3 id="feature_56">Feature</h3>
 <p><strong>Update to the Virtual agent dashboard for wait-time virtual agent metrics</strong></p>
 <p>The <strong>Virtual agent</strong> dashboard includes the following new tiles to measure the
 activity of wait-time virtual agents while end-users wait in queue:</p>
@@ -3923,13 +4216,13 @@ activity of wait-time virtual agents while end-users wait in queue:</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-virtual-agent">Virtual agent
 dashboards</a>.</p>
-<h3 id="feature_49">Feature</h3>
+<h3 id="feature_57">Feature</h3>
 <p><strong>Advanced reporting is available in French Canadian</strong></p>
 <p>Advanced reporting dashboards are now available in French Canadian. For more
 information about configuring your instance for location and language, see
 <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-location#configure-location-and-language">Configure location and
 language</a>.</p>
-<h3 id="feature_50">Feature</h3>
+<h3 id="feature_58">Feature</h3>
 <p><strong>Improved analytics for Queue Interval and Channel Interval dashboards</strong></p>
 <p>We've improved the detailed information available for the <strong>Queue Interval</strong> and
 <strong>Channel Interval</strong> dashboards:</p>
@@ -3941,7 +4234,7 @@ language</a>.</p>
   Trend</strong>, or <strong>Transfer Trend</strong> tile to get historical call or chat queue
   metrics for that interval.</li>
 </ul>
-<h3 id="fixed_12">Fixed</h3>
+<h3 id="fixed_13">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where the <strong>Start Time</strong> and <strong>End Time</strong> filters weren't
@@ -3995,14 +4288,14 @@ language</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-03-10">2026-03-10</h2>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p><strong>Mobile SDK patch</strong></p>
 <p>This patch fixes an iOS SDK issue where end-users were directed to an
 unresponsive support page after closing a chat session and completing the
 post-chat survey.</p>
 <hr />
 <h2 id="2026-03-09">2026-03-09</h2>
-<h3 id="feature_51">Feature</h3>
+<h3 id="feature_59">Feature</h3>
 <p><strong>Improved controls for predictive campaigns</strong></p>
 <p>We've added the following controls to predictive campaigns to reduce the risk of
 call abandonment due to overdialing. These controls let you ramp up dialing
@@ -4018,7 +4311,7 @@ don't require maintaining a maximum abandonment percentage.</p>
 <p>Mode &gt; Predictive<strong>, the new controls appear in the
 </strong>Add Campaign** dialog.</p>
 </blockquote>
-<h3 id="feature_52">Feature</h3>
+<h3 id="feature_60">Feature</h3>
 <p><strong>Callback fulfillment hours</strong></p>
 <p>You can configure callback fulfillment hours, which are the hours when your
 contact center fulfills callbacks. If you enable callback rollovers to the next
@@ -4027,12 +4320,12 @@ next day. If you don't enable callback rollovers, callbacks that are scheduled
 outside of these hours are canceled. Callback fulfillment hours aren't available
 by default. To use this capability, ask your Google contact to turn it on for
 your instance.</p>
-<h3 id="feature_53">Feature</h3>
+<h3 id="feature_61">Feature</h3>
 <p><strong>Resume chat endpoint</strong></p>
 <p>You can use the new <code>chats/CHAT_ID/resume</code> endpoint to resume chat sessions that
 are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat sessions display the
 chat history to both the end-user and the agent.</p>
-<h3 id="fixed_13">Fixed</h3>
+<h3 id="fixed_14">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where outbound calls were incorrectly prompting for customer
@@ -4230,7 +4523,7 @@ chat history to both the end-user and the agent.</p>
 <li>Fixed a web SDK issue for iOS users where the <strong>Yes</strong> and <strong>No</strong> buttons in
   the survey request at the end of a chat were hidden.</li>
 </ul>
-<h3 id="feature_54">Feature</h3>
+<h3 id="feature_62">Feature</h3>
 <p><strong>HubSpot: Mobile Phone Number Lookup</strong></p>
 <p>Admins can now enable mobile phone number lookups for HubSpot integrations to
 ensure callers are accurately matched with existing contacts. To activate this,
@@ -4238,7 +4531,7 @@ navigate to <strong>Settings &gt; Developer Settings &gt; CRM</strong> and check
 number lookup</strong> box in the new <strong>Phone Number Lookup</strong> section. Once enabled,
 the system will automatically search both the "Phone number" and "Mobile phone
 number" fields in HubSpot during incoming voice or chat sessions.</p>
-<h3 id="feature_55">Feature</h3>
+<h3 id="feature_63">Feature</h3>
 <p><strong>Improved support for multiple agent matches for agent extension searches</strong></p>
 <p>When an end-user inputs an agent extension number at the beginning of a call and
 there are multiple agent matches, the system now reads agent matches in groups
@@ -4250,11 +4543,11 @@ correct agent:</p>
 <li>Search results next page</li>
 <li>End of search results</li>
 </ul>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release the next version, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_56">Feature</h3>
+<h3 id="feature_64">Feature</h3>
 <p><strong>HubSpot lookup against company profiles</strong></p>
 <p>HubSpot integrations now support lookups against Company profiles.
 Administrators can configure primary and secondary lookup objects, allowing the
@@ -4262,7 +4555,7 @@ system to search for end-users across both Contacts and Companies to ensure
 accurate identification during active sessions.</p>
 <hr />
 <h2 id="2026-02-25">2026-02-25</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.0 patch</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -4274,7 +4567,7 @@ accurate identification during active sessions.</p>
 </ul>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="fixed_14">Fixed</h3>
+<h3 id="fixed_15">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -4322,7 +4615,7 @@ accurate identification during active sessions.</p>
 <li>Fixed an issue where Salesforce integrations created duplicate cases for a
   single outbound call.</li>
 </ul>
-<h3 id="feature_57">Feature</h3>
+<h3 id="feature_65">Feature</h3>
 <p><strong>Salesforce Service Cloud: new secondary lookup object</strong></p>
 <p>The Salesforce Service Cloud integration can now use a secondary lookup object
 to identify customer records when the primary lookup object returns no results.
@@ -4335,7 +4628,7 @@ in the </strong>Account Lookup** section.</p>
 </blockquote>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/salesforce-integration-guide#configure-account-lookup">Configure account lookup and field
 mapping</a>.</p>
-<h3 id="feature_58">Feature</h3>
+<h3 id="feature_66">Feature</h3>
 <p><strong>Raw data export: new call_participants data type</strong></p>
 <p>We've added the <code>call_participants</code> data type to raw data export. This data type
 helps you track the following escalation details for wait-time virtual agents:</p>
@@ -4346,7 +4639,7 @@ helps you track the following escalation details for wait-time virtual agents:</
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary">Raw data export
 dictionary</a>.</p>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.0</strong></p>
 <p>We've released version 4.0 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -4354,7 +4647,7 @@ that you have chosen. For more information, see <a href="https://cloud.google.co
 schedules</a>.</p>
 <hr />
 <h2 id="2026-02-03">2026-02-03</h2>
-<h3 id="fixed_15">Fixed</h3>
+<h3 id="fixed_16">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue on the Agent Performance dashboard where the <strong>Disconnect
@@ -4399,7 +4692,7 @@ schedules</a>.</p>
 <li>CSAT - Calls</li>
 </ul>
 <p>We also renamed the <strong>Customer ANI</strong> field to <strong>Consumer Phone Number</strong>.</p>
-<h3 id="feature_59">Feature</h3>
+<h3 id="feature_67">Feature</h3>
 <p><strong>Email dashboard</strong></p>
 <p>The Email dashboard now includes the following table:</p>
 <ul>
@@ -4408,10 +4701,10 @@ schedules</a>.</p>
 </ul>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-email-performance">Email</a>.</p>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p><strong>Advanced reporting dashboards 3.43</strong></p>
 <p>We've released version 3.43 of the advanced reporting dashboards.</p>
-<h3 id="feature_60">Feature</h3>
+<h3 id="feature_68">Feature</h3>
 <p><strong>Performance overview dashboard</strong></p>
 <p>The performance overview dashboard now includes the following tiles:</p>
 <ul>
@@ -4426,7 +4719,7 @@ schedules</a>.</p>
 dashboard</a>.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="fixed_16">Fixed</h3>
+<h3 id="fixed_17">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls were incorrectly deflected to voicemail during
@@ -4508,7 +4801,7 @@ dashboard</a>.</p>
 <li>Fixed a web SDK issue where the <code>Content-Encoding</code> response header was
   missing for the widget.</li>
 </ul>
-<h3 id="feature_61">Feature</h3>
+<h3 id="feature_69">Feature</h3>
 <p><strong>Edit email subject lines</strong></p>
 <p>Agents can now modify email subject lines when replying to or forwarding
 email messages. This lets agents add context to the subject line, such as ticket
@@ -4521,7 +4814,7 @@ Editing** checkbox.</p>
 </blockquote>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#let-agents-edit-subject-lines">Let agents edit the subject lines in
 emails</a>.</p>
-<h3 id="feature_62">Feature</h3>
+<h3 id="feature_70">Feature</h3>
 <p><strong>Improvements to end-user to agent calling</strong></p>
 <p>The following improvements are available for end-user to agent calling:</p>
 <ul>
@@ -4542,13 +4835,13 @@ emails</a>.</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#end-user-to-agent-calling">End-user to agent
 calling</a>.</p>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.44</strong></p>
 <p>We've released version 3.44 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="feature_63">Feature</h3>
+<h3 id="feature_71">Feature</h3>
 <p><strong>Assigned agent tags</strong></p>
 <p>Assigned agent tags let you see at a glance which agent is assigned to each
 email in an email list and which emails are unassigned. An agent assignment tag
@@ -4561,7 +4854,7 @@ Initials on Email List View** checkbox.</p>
 </blockquote>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-assigned-agent-tags">Assigned agent
 tags</a>.</p>
-<h3 id="feature_64">Feature</h3>
+<h3 id="feature_72">Feature</h3>
 <p><strong>Apps API: new endpoint for adding a third party to a call</strong></p>
 <p>The apps API now includes an endpoint
 (<code>/calls/add/CALL_ID/dial</code>) to add a third party to
@@ -4570,12 +4863,12 @@ automatically dials the third-party's phone number, and the agent's call adapter
 displays the <strong>Calling</strong> screen.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/apps-api-add-third-party-to-call">Add a third party to a
 call</a>.</p>
-<h3 id="feature_65">Feature</h3>
+<h3 id="feature_73">Feature</h3>
 <p><strong>Support for French Canadian in the Google Cloud CCaaS portal</strong></p>
 <p>You can now view the Google Cloud CCaaS portal in French Canadian.</p>
 <p><strong>Note:</strong> System messages and error messages aren't translated and appear in
 English.</p>
-<h3 id="feature_66">Feature</h3>
+<h3 id="feature_74">Feature</h3>
 <p><strong>Agent desktop: dynamically control the custom panel language</strong></p>
 <p>You can now use the <code>{AGENT_LOCATION_LANGUAGE}</code> or the <code>{AGENT_LANGUAGE}</code>
 variable in a query parameter in your custom URL to dynamically control the
@@ -4590,7 +4883,7 @@ language for a custom panel:</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-configure-widgets#dynamically-control-custom-panel-language">Dynamically control the custom-panel
 language</a>.</p>
-<h3 id="feature_67">Feature</h3>
+<h3 id="feature_75">Feature</h3>
 <p><strong>Improvements to deflection message management</strong></p>
 <p>Agents can now upload message files from the call adapter to use for message and
 voicemail greetings. These files support after-hours deflection, overcapacity
@@ -4615,7 +4908,7 @@ agent's <strong>Edit User</strong> page. To access the agent's <strong>Edit User
 level</a>
 and <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-extensions-guide#set-deflections-for-internal-calls">Set deflections for extension
 calls</a>.</p>
-<h3 id="feature_68">Feature</h3>
+<h3 id="feature_76">Feature</h3>
 <p><strong>Send DTMF tones in the agent adapter using the keyboard</strong></p>
 <p>An agent can now use their keyboard to type or paste alphanumeric strings
 directly into the call adapter to play DTMF tones, with the appropriate pauses.
@@ -4626,7 +4919,7 @@ accessibility.</p>
 <strong>Keypad</strong>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-in-call">In-call
 interface</a>.</p>
-<h3 id="feature_69">Feature</h3>
+<h3 id="feature_77">Feature</h3>
 <p><strong>Custom data-collection forms for chats are available in the web SDK</strong></p>
 <p>Your human agents and virtual agents can now send custom data-collection forms
 to end-users using the web SDK.</p>
@@ -4634,7 +4927,7 @@ to end-users using the web SDK.</p>
 Forms &gt; Add template &gt; Custom form</strong>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/data-collection-forms#add-custom-form">Add a custom
 form</a>.</p>
-<h3 id="feature_70">Feature</h3>
+<h3 id="feature_78">Feature</h3>
 <p><strong>Disable multicast for call routing</strong></p>
 <p>You can now disable multicast to ensure that the system offers calls to only one
 agent at a time through deltacast. When you disable multicast, the system uses
@@ -4668,14 +4961,14 @@ Configure &gt; Chat Routing**</p>
 globally</a>
 and <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/multicast_deltacast#turn-on-deltacast-for-calls-at-the-queue-level">Turn on deltacast for calls at the queue
 level</a>.</p>
-<h3 id="feature_71">Feature</h3>
+<h3 id="feature_79">Feature</h3>
 <p><strong>Apps API: new end_user.phone parameter</strong></p>
 <p>The apps API accepts an optional <code>end_user.phone</code> parameter during chat
 creation. This parameter enables CRM lookup using the end-user's phone number,
 which lets the chat adapter display the end-user's name.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/chat-platform-api-endpoints#create-chat">Create
 chat</a>.</p>
-<h3 id="feature_72">Feature</h3>
+<h3 id="feature_80">Feature</h3>
 <p><strong>New @{END_USER_NUMBER} variable</strong></p>
 <p>You can use the new <code>@{END_USER_NUMBER}</code> variable to read out the end-user's
 phone number in a message to leave a voicemail or request a callback. Reading
@@ -4688,7 +4981,7 @@ global or queue level.</p>
 message</a>.</p>
 <hr />
 <h2 id="2026-01-30">2026-01-30</h2>
-<h3 id="fixed_17">Fixed</h3>
+<h3 id="fixed_18">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue with NICE WFM export where queue abandoned calls were
@@ -4718,7 +5011,7 @@ message</a>.</p>
 <li>Fixed an issue where agents appeared as <code>Available</code> in the <strong>Agent Activity
   Timeline</strong> report after signing out.</li>
 </ul>
-<h3 id="feature_73">Feature</h3>
+<h3 id="feature_81">Feature</h3>
 <p><strong>Salesforce Service Cloud: new secondary lookup object</strong></p>
 <p>The Salesforce Service Cloud integration can now use a secondary lookup object
 to identify customer records when the primary lookup object returns no results.
@@ -4729,11 +5022,11 @@ This helps prevent the creation of duplicate records.</p>
 Service Cloud<strong>, a new </strong>Secondary Lookup Object<strong> checkbox appears
 in the </strong>Account Lookup** section.</p>
 </blockquote>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.0 prerelease notes</strong></p>
 <p>These are the prerelease notes for Google Cloud CCaaS version 4.0. When version
 4.0 is released, we expect the new capabilities to be as described here.</p>
-<h3 id="feature_74">Feature</h3>
+<h3 id="feature_82">Feature</h3>
 <p>~~<strong>Improved controls for predictive campaigns</strong>~~</p>
 <p>We've added the following controls to predictive campaigns to reduce the risk of
 call abandonment due to over dialing. These controls let you ramp up dialing
@@ -4749,7 +5042,7 @@ don't require maintaining a maximum abandonment percentage.</p>
 <p>Mode &gt; Predictive<strong>, the new controls appear in the
 </strong>Add Campaign** dialog.</p>
 </blockquote>
-<h3 id="feature_75">Feature</h3>
+<h3 id="feature_83">Feature</h3>
 <p><strong>Raw data export: new call_participants data type</strong></p>
 <p>We've added the <code>call_participants</code> data type to raw data export. This data type
 helps you track the following escalation details for wait-time virtual agents:</p>
@@ -4760,7 +5053,7 @@ helps you track the following escalation details for wait-time virtual agents:</
 </ul>
 <hr />
 <h2 id="2026-01-26">2026-01-26</h2>
-<h3 id="feature_76">Feature</h3>
+<h3 id="feature_84">Feature</h3>
 <p><strong>Disable multicast for call routing</strong></p>
 <p>You can now disable multicast to ensure that the system offers calls to only one
 agent at a time through deltacast. When you disable multicast, the system uses
@@ -4790,7 +5083,7 @@ Configure &gt; Chat Routing**</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="feature_77">Feature</h3>
+<h3 id="feature_85">Feature</h3>
 <p><strong>Assigned agent tags</strong></p>
 <p>Assigned agent tags let you see at a glance which agent is assigned to each
 email in an email list and which emails are unassigned. An agent assignment tag
@@ -4801,7 +5094,7 @@ to an email.</p>
 <p>Email Management<strong> section, there's a new </strong>Enable Assigned Agent
 Initials on Email List View** checkbox.</p>
 </blockquote>
-<h3 id="fixed_18">Fixed</h3>
+<h3 id="fixed_19">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls were incorrectly deflected to voicemail during
@@ -4883,7 +5176,7 @@ Initials on Email List View** checkbox.</p>
 <li>Fixed a web SDK issue where the <code>Content-Encoding</code> response header was
   missing for the widget.</li>
 </ul>
-<h3 id="feature_78">Feature</h3>
+<h3 id="feature_86">Feature</h3>
 <p><strong>Improvements to deflection message management</strong></p>
 <p>Agents can now upload message files from the call adapter to use for message and
 voicemail greetings. These files support after-hours deflection, overcapacity
@@ -4904,17 +5197,17 @@ the settings that the agent selected in the call adapter. The <strong>Revert to 
 settings</strong> button appears in the <strong>Agent Call Deflections</strong> section on the
 agent's <strong>Edit User</strong> page. To access the agent's <strong>Edit User</strong> page, go to the
 <strong>Settings &gt; Users &amp; Teams</strong> page.</p>
-<h3 id="feature_79">Feature</h3>
+<h3 id="feature_87">Feature</h3>
 <p><strong>Custom data-collection forms for chats are available in the web SDK</strong></p>
 <p>Your human agents and virtual agents can now send custom data-collection forms
 to end-users using the web SDK.</p>
 <p>Administrators: The <strong>Web chat</strong> checkbox appears at <strong>Settings &gt;
 Forms &gt; Add template &gt; Custom form</strong>.</p>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.44 prerelease notes</strong></p>
 <p>These are the prerelease notes for Google Cloud CCaaS version 3.44. When version
 3.44 is released, the new capabilities are expected to be as described here.</p>
-<h3 id="feature_80">Feature</h3>
+<h3 id="feature_88">Feature</h3>
 <p><strong>Edit email subject lines</strong></p>
 <p>Agents can now modify email subject lines when replying to or forwarding
 email messages. This lets agents add context to the subject line, such as ticket
@@ -4925,19 +5218,19 @@ conversation thread intact.</p>
 <p>Email Management<strong> section, there's a new </strong>Enable Subject Line
 Editing** checkbox.</p>
 </blockquote>
-<h3 id="feature_81">Feature</h3>
+<h3 id="feature_89">Feature</h3>
 <p><strong>Support for French Canadian in the Google Cloud CCaaS portal</strong></p>
 <p>You can now view the Google Cloud CCaaS portal in French Canadian.</p>
 <p><strong>Note:</strong> System messages and error messages aren't translated and appear in
 English.</p>
-<h3 id="feature_82">Feature</h3>
+<h3 id="feature_90">Feature</h3>
 <p><strong>Apps API: new endpoint for adding a third party to a call</strong></p>
 <p>The apps API now includes an endpoint
 (<code>/calls/add/CALL_ID/dial</code>) to add a third party to
 an ongoing call. When you make a request to this endpoint, the system
 automatically dials the third-party's phone number, and the agent's call adapter
 displays the <strong>Calling</strong> screen.</p>
-<h3 id="feature_83">Feature</h3>
+<h3 id="feature_91">Feature</h3>
 <p><strong>Agent desktop: dynamically control the custom panel language</strong></p>
 <p>You can now use the <code>{AGENT_LOCATION_LANGUAGE}</code> or the <code>{AGENT_LANGUAGE}</code>
 variable in a query parameter in your custom URL to dynamically control the
@@ -4950,7 +5243,7 @@ language for a custom panel:</p>
   display the custom panel in the language selected by the agent in the agent
   desktop language selector.</li>
 </ul>
-<h3 id="feature_84">Feature</h3>
+<h3 id="feature_92">Feature</h3>
 <p><strong>New @{END_USER_NUMBER} variable</strong></p>
 <p>You can use the new <code>@{END_USER_NUMBER}</code> variable to read out the end-user's
 phone number in a message to leave a voicemail or request a callback. Reading
@@ -4959,12 +5252,12 @@ or a different number. To use this capability, add the <code>@{END_USER_NUMBER}<
 variable to the <strong>Callback - Request Phone Number</strong> and <strong>Voicemail - Request
 Phone Number</strong> text-to-speech message fields. You can configure this at the
 global or queue level.</p>
-<h3 id="feature_85">Feature</h3>
+<h3 id="feature_93">Feature</h3>
 <p><strong>Apps API: new end_user.phone parameter</strong></p>
 <p>The apps API accepts an optional <code>end_user.phone</code> parameter during chat
 creation. This parameter enables CRM lookup using the end-user's phone number,
 which lets the chat adapter display the end-user's name.</p>
-<h3 id="feature_86">Feature</h3>
+<h3 id="feature_94">Feature</h3>
 <p><strong>Improvements to end-user to agent calling</strong></p>
 <p>The following improvements are available for end-user to agent calling:</p>
 <ul>
@@ -4983,7 +5276,7 @@ which lets the chat adapter display the end-user's name.</p>
   Messages &gt; Audible Messages &gt; Extension Directory
   Messages</strong> section.</li>
 </ul>
-<h3 id="feature_87">Feature</h3>
+<h3 id="feature_95">Feature</h3>
 <p><strong>Send DTMF tones in the agent adapter using the keyboard</strong></p>
 <p>An agent can now use their keyboard to type or paste alphanumeric strings
 directly into the call adapter to play DTMF tones, with the appropriate pauses.
@@ -4994,14 +5287,14 @@ accessibility.</p>
 <strong>Keypad</strong>.</p>
 <hr />
 <h2 id="2025-12-26">2025-12-26</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42.121 and 3.43.153 patches</strong></p>
 <p>These patches fix a security vulnerability that could expose customers'
 Personally Identifiable Information (PII). There is no change to the agent
 experience.</p>
 <hr />
 <h2 id="2025-12-23">2025-12-23</h2>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version
 3</a>. Starting on
@@ -5011,7 +5304,7 @@ web SDK v3 before that date to avoid breaking your integration with the web SDK.
 We are no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2025-12-16">2025-12-16</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.43.144 patch</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -5027,7 +5320,7 @@ We are no longer adding new features to the web SDK v2.</p>
 </ul>
 <hr />
 <h2 id="2025-12-09">2025-12-09</h2>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p><strong>Mobile SDK version 2.15.1 patch</strong></p>
 <p>This patch adds the following updates to the Android SDK:</p>
 <ul>
@@ -5040,7 +5333,7 @@ We are no longer adding new features to the web SDK v2.</p>
 </ul>
 <hr />
 <h2 id="2025-12-06">2025-12-06</h2>
-<h3 id="feature_88">Feature</h3>
+<h3 id="feature_96">Feature</h3>
 <p><strong>Cloud Logging for Google Cloud CCaaS is Generally Available</strong></p>
 <p>You can use Cloud Logging to capture logging data and events for your Google
 Cloud project. The Logs Explorer displays log entries for your project. You can
@@ -5048,13 +5341,13 @@ use the <code>contactcenteraiplatform.googleapis.com/ContactCenter</code> resour
 filter your results to view only the log entries for Google Cloud CCaaS. For
 more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/view-log-entries">View log
 entries</a>.</p>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.43</strong></p>
 <p>We've released version 3.43 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="fixed_19">Fixed</h3>
+<h3 id="fixed_20">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue that occurred when a call was connected directly to an agent
@@ -5110,13 +5403,13 @@ schedules</a>.</p>
 <li>Fixed an agent desktop issue where, when auto answer was enabled, incoming
   chats mistakenly took focus from active chats that agents were engaged with.</li>
 </ul>
-<h3 id="feature_89">Feature</h3>
+<h3 id="feature_97">Feature</h3>
 <p><strong>New web SDK event: exited</strong></p>
 <p>We've added the <code>exited</code> event to the web SDK. This event triggers when an
 end-user exits a chat session after an agent ends the session. For more
 information, see
 <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-api-reference#exited">exited</a>.</p>
-<h3 id="feature_90">Feature</h3>
+<h3 id="feature_98">Feature</h3>
 <p><strong>Wait-time virtual agent for calls</strong></p>
 <p>You can now configure a virtual agent to handle incoming calls requiring
 escalation to a human agent. The wait-time virtual agent can place an incoming
@@ -5128,7 +5421,7 @@ see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/wai
 calls</a>.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p><strong>Google Cloud CCaaS patch 3.42.113</strong></p>
 <p>We've released patch 3.42.113 for Google Cloud CCaaS. This patch does the
 following:</p>
@@ -5139,7 +5432,7 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-12-02">2025-12-02</h2>
-<h3 id="fixed_20">Fixed</h3>
+<h3 id="fixed_21">Fixed</h3>
 <p>We addressed the following iOS SDK issues in this release:</p>
 <ul>
 <li>Fixed an issue where the <strong>RATE YOUR EXPERIENCE</strong> dialog contained text that
@@ -5152,7 +5445,7 @@ following:</p>
   incorrectly announced that the "We are connecting you, please hold" message
   was a button.</li>
 </ul>
-<h3 id="feature_91">Feature</h3>
+<h3 id="feature_99">Feature</h3>
 <p><strong>Turn off push notifications at the global level</strong></p>
 <p>You can configure your Android SDK or iOS SDK to turn off push notifications at
 the global level. This bypasses all push notification dependencies and prevents
@@ -5164,12 +5457,12 @@ following:</p>
 <li><strong>iOS SDK</strong>: <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#turn-off-push-notifications-at-global-level">Turn off push notifications at the global
   level</a></li>
 </ul>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p><strong>Mobile SDKs version 2.15.0</strong></p>
 <p>We've released version 2.15.0 of the mobile SDKs.</p>
 <hr />
 <h2 id="2025-11-19">2025-11-19</h2>
-<h3 id="feature_92">Feature</h3>
+<h3 id="feature_100">Feature</h3>
 <p><strong>Dial pad improvements</strong></p>
 <p>The dial pad in the agent adapter now includes the following:</p>
 <ul>
@@ -5181,7 +5474,7 @@ number</strong> and <strong>Language</strong> selectors appear in the <strong>Ou
 screen.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-calls#make-outbound-call">Make an outbound
 call</a>.</p>
-<h3 id="feature_93">Feature</h3>
+<h3 id="feature_101">Feature</h3>
 <p><strong>Sensitive data redaction</strong></p>
 <p>You can now automatically identify and redact sensitive data from chat
 conversations, both in real time and in transcripts. This helps to prevent
@@ -5209,7 +5502,7 @@ the following locations:</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_Settings_and_Features#sensitive-data-redaction">Sensitive data
 redaction</a>.</p>
-<h3 id="feature_94">Feature</h3>
+<h3 id="feature_102">Feature</h3>
 <p><strong>New standalone queue settings page</strong></p>
 <p>Google Cloud CCaaS now includes a standalone <strong>Queue Menu Settings</strong> page for
 each queue in your instance. These pages are separate from (but identical to)
@@ -5232,7 +5525,7 @@ can quickly access them in the following ways:</p>
 <p>Links to standalone <strong>Queue Menu Settings</strong> pages are active only for users with
 permissions to view queue settings. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/access-queue-menu-settings">Access queue menu
 settings</a>.</p>
-<h3 id="feature_95">Feature</h3>
+<h3 id="feature_103">Feature</h3>
 <p><strong>Chat check-in</strong></p>
 <p>Users of the web SDK can use chat check-in to help ensure that end-users are
 present and ready to engage before connecting them to a human agent. This helps
@@ -5245,14 +5538,14 @@ queue, you can configure whether they rejoin at the front or the back of the
 queue.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/Chat_Settings_and_Features#chat-check-in">Chat
 check-in</a>.</p>
-<h3 id="feature_96">Feature</h3>
+<h3 id="feature_104">Feature</h3>
 <p><strong>Click-to-call: show the dial pad screen</strong></p>
 <p>If you have a CRM configured for click-to-call, you can configure your instance
 to display the dial pad screen after an agent clicks a phone number in the CRM
 but before a call starts. This lets the agent make changes on the dial pad
 screen. For more information, see
 <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#click-to-call">Click-to-call</a>.</p>
-<h3 id="feature_97">Feature</h3>
+<h3 id="feature_105">Feature</h3>
 <p><strong>Restrict the transfer of email sessions to a queue</strong></p>
 <p>You can now configure queues to prevent them from receiving email session
 transfers.</p>
@@ -5260,7 +5553,7 @@ transfers.</p>
 settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
 Edit / View &gt; YOUR_QUEUE</strong>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue">Transfer email sessions to a queue</a>.</p>
-<h3 id="feature_98">Feature</h3>
+<h3 id="feature_106">Feature</h3>
 <p><strong>Alvaria Advanced List Management integration with outbound dialer</strong></p>
 <p>You can now integrate Alvaria Advanced List Management (ALM) with the outbound
 dialer. This lets you combine Alvaria's list and campaign management
@@ -5275,7 +5568,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/alvaria-alm">Alvaria Advanced List Management
 integration</a>.</p>
-<h3 id="feature_99">Feature</h3>
+<h3 id="feature_107">Feature</h3>
 <p><strong>Email signatures</strong></p>
 <p>You can now define standardized signatures for all outgoing emails sent from a
 specific queue.</p>
@@ -5285,7 +5578,7 @@ at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
 <p>YOUR_QUEUE**.</p>
 </blockquote>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures">Email signatures</a>.</p>
-<h3 id="fixed_21">Fixed</h3>
+<h3 id="fixed_22">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where Agent Assist generated incomplete or
@@ -5332,7 +5625,7 @@ at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
 <li>Fixed a web SDK issue where external deflection links weren't working
   correctly.</li>
 </ul>
-<h3 id="feature_100">Feature</h3>
+<h3 id="feature_108">Feature</h3>
 <p><strong>Virtual task assistant support in the chat platform API</strong></p>
 <p>The chat platform API now provides improved support for virtual task assistants.
 When an agent transfers a chat to a virtual task assistant, your application can
@@ -5341,7 +5634,7 @@ provide the virtual task assistant's message content instantly, streamlining
 private, automated workflows like collecting sensitive information.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/task-va-chat-api">Use virtual task assistants with the chat API
 platform</a>.</p>
-<h3 id="feature_101">Feature</h3>
+<h3 id="feature_109">Feature</h3>
 <p><strong>Virtual agent aliases</strong></p>
 <p>You can assign a public-facing alias to each of your virtual agents. When all of
 your virtual agents have the same alias, they each appear to have the same name
@@ -5366,7 +5659,7 @@ dialogs:</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/use-va-aliases">Virtual agent
 aliases</a>.</p>
-<h3 id="feature_102">Feature</h3>
+<h3 id="feature_110">Feature</h3>
 <p><strong>New chat platform API endpoint for getting media files</strong></p>
 <p>You can use the new chat platform API endpoint to get the media file that an
 agent sends to an end-user during a chat session. Your custom chat application
@@ -5374,16 +5667,16 @@ can then make the media file available to the end-user during the session.</p>
 <p>New endpoint: <code>/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID</code></p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api">Agent file attachments with the chat platform
 API</a>.</p>
-<h3 id="announcement_31">Announcement</h3>
+<h3 id="announcement_32">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42</strong></p>
 <p>We've released version 3.42 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
 <hr />
 <h2 id="2025-11-17">2025-11-17</h2>
-<h3 id="announcement_32">Announcement</h3>
+<h3 id="announcement_33">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.41</strong></p>
 <p>We've released version 3.41 of the advanced reporting dashboards.</p>
-<h3 id="fixed_22">Fixed</h3>
+<h3 id="fixed_23">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where the <strong>Chat Agent Metrics (Historical)</strong> explore and the <strong>Agent Metrics (Historical)</strong> explore returned different data for chats handled. This resulted in inconsistent chat handling metrics in dashboards.</li>
@@ -5402,10 +5695,10 @@ API</a>.</p>
 <li>Fixed an issue on the <strong>Dispositions - Calls</strong> dashboard where agents didn't appear in the <strong>Dispositions by Agent</strong> table when filtering by Agent ID.</li>
 <li>Fixed an issue where dismissed chat time was being included with current chat time metrics on the <strong>Agent Monitoring</strong> dashboard.</li>
 </ul>
-<h3 id="feature_103">Feature</h3>
+<h3 id="feature_111">Feature</h3>
 <p><strong>Campaigns dashboard</strong></p>
 <p>We've added a new <strong>Campaigns</strong> dashboard that displays real-time and historical performance metrics for call campaigns, including call outcomes, campaign volumes, and agent metrics. Managers can use this information to monitor call campaigns and make data-driven decisions to improve campaign performance. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-campaigns">Campaigns dashboard</a>.</p>
-<h3 id="feature_104">Feature</h3>
+<h3 id="feature_112">Feature</h3>
 <p><strong>All Interactions dashboards: updates to tables</strong></p>
 <p>On the <strong>All Interactions - Calls</strong> dashboard, we did the following:</p>
 <ul>
@@ -5414,12 +5707,12 @@ API</a>.</p>
 </ul>
 <p>On the <strong>All Interactions - Chats</strong> dashboard, we renamed the <strong>All Chat Interactions (Historical)</strong> table to <strong>Chat Metric Detail</strong>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-all-interactions">All interactions dashboards</a>.</p>
-<h3 id="feature_105">Feature</h3>
+<h3 id="feature_113">Feature</h3>
 <p><strong>Real-time dashboard optimization</strong></p>
 <p>We've optimized real-time dashboards to provide faster loading and refresh times.</p>
 <hr />
 <h2 id="2025-11-14">2025-11-14</h2>
-<h3 id="fixed_23">Fixed</h3>
+<h3 id="fixed_24">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where Agent Assist generated incomplete or
@@ -5466,7 +5759,7 @@ API</a>.</p>
 <li>Fixed a web SDK issue where external deflection links weren't working
   correctly.</li>
 </ul>
-<h3 id="feature_106">Feature</h3>
+<h3 id="feature_114">Feature</h3>
 <p><strong>Web SDK: chat check-in</strong></p>
 <p>Users of the web SDK can use chat check-in to help ensure that end-users are
 present and ready to engage before connecting them to a human agent. This helps
@@ -5477,20 +5770,20 @@ still available. If there's no response after the amount of time you configure,
 the system removes the end-user from the queue. If the end-user rejoins the
 queue, you can configure whether they rejoin at the front or the back of the
 queue.</p>
-<h3 id="feature_107">Feature</h3>
+<h3 id="feature_115">Feature</h3>
 <p><strong>New chat platform API endpoint for getting media files</strong></p>
 <p>You can use the new chat platform API endpoint to get the media file that an
 agent sends to an end-user during a chat session. Your custom chat application
 can then make the media file available to the end-user during the session.</p>
 <p>New endpoint: <code>/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID</code></p>
-<h3 id="feature_108">Feature</h3>
+<h3 id="feature_116">Feature</h3>
 <p><strong>Virtual task assistant support in the chat platform API</strong></p>
 <p>The chat platform API now provides improved support for virtual task assistants.
 When an agent transfers a chat to a virtual task assistant, your application can
 send and receive messages from the virtual task assistant. Enhanced webhooks
 provide the virtual task assistant's message content instantly, streamlining
 private, automated workflows like collecting sensitive information.</p>
-<h3 id="feature_109">Feature</h3>
+<h3 id="feature_117">Feature</h3>
 <p><strong>New standalone queue settings page</strong></p>
 <p>Google Cloud CCaaS now includes a standalone <strong>Queue Menu Settings</strong> page for
 each queue in your instance. These pages are separate from (but identical to)
@@ -5512,7 +5805,7 @@ can quickly access them in the following ways:</p>
 </ul>
 <p>Links to standalone <strong>Queue Menu Settings</strong> pages are active only for users with
 permissions to view queue settings.</p>
-<h3 id="feature_110">Feature</h3>
+<h3 id="feature_118">Feature</h3>
 <p><strong>Automatic redaction</strong></p>
 <p>You can now automatically identify and redact sensitive data from chat
 conversations, both in real time and in transcripts. This helps to prevent
@@ -5538,7 +5831,7 @@ the following locations:</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="feature_111">Feature</h3>
+<h3 id="feature_119">Feature</h3>
 <p><strong>Virtual agent alias</strong></p>
 <p>You can assign a public-facing alias to each of your virtual agents. When all of
 your virtual agents have the same alias, they each appear to have the same name
@@ -5561,18 +5854,18 @@ dialogs:</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="feature_112">Feature</h3>
+<h3 id="feature_120">Feature</h3>
 <p><strong>Restrict the transfer of email sessions to a queue</strong></p>
 <p>You can now configure queues to prevent them from receiving email session
 transfers.</p>
 <p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
 settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
 Edit / View &gt; YOUR_QUEUE</strong>.</p>
-<h3 id="announcement_33">Announcement</h3>
+<h3 id="announcement_34">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42 pre-release notes</strong></p>
 <p>Here are the pre-release notes for Google Cloud CCaaS version 3.42. When we
 release version 3.42, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_113">Feature</h3>
+<h3 id="feature_121">Feature</h3>
 <p><strong>Email signatures</strong></p>
 <p>You can now define standardized signatures for all outgoing emails sent from a
 specific queue.</p>
@@ -5581,7 +5874,7 @@ at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
 <blockquote>
 <p>YOUR_QUEUE**.</p>
 </blockquote>
-<h3 id="feature_114">Feature</h3>
+<h3 id="feature_122">Feature</h3>
 <p><strong>Outbound calling improvements</strong></p>
 <p>We've implemented the following improvements to outbound calling:</p>
 <ul>
@@ -5604,7 +5897,7 @@ at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
 <p>If you use a CRM with flexible outbound dialing turned on, the <strong>Outbound
   number</strong> and <strong>Language</strong> selectors appear in the <strong>Outbound call
   details</strong> screen.</p>
-<h3 id="feature_115">Feature</h3>
+<h3 id="feature_123">Feature</h3>
 <p><strong>Alvaria Advanced List Management integration with outbound dialer</strong></p>
 <p>You can now integrate Alvaria Advanced List Management (ALM) with the outbound
 dialer. This lets you combine Alvaria's list and campaign management
@@ -5619,21 +5912,21 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-11-03">2025-11-03</h2>
-<h3 id="feature_116">Feature</h3>
+<h3 id="feature_124">Feature</h3>
 <p><strong>Google Cloud CCaaS 3.41</strong></p>
 <p>We've released version 3.41 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature_117">Feature</h3>
+<h3 id="feature_125">Feature</h3>
 <p><strong>Nested disposition lists</strong></p>
 <p>You can now organize your disposition lists by grouping them into nested folders, making it easier for agents to find the disposition codes they need. This is available in the agent adapter and the agent desktop.</p>
 <p>Administrators: The <strong>Disposition Codes</strong> dialog at <strong>Settings &gt; Operation Management &gt; Wrap-up &gt; Manage Disposition Codes</strong> has a new <strong>Tree</strong> tab.</p>
 <p>User experience change: If you've configured nested disposition lists, the <strong>Disposition</strong> screen in the agent adapter displays links to the nested disposition lists.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/disposition-lists-configure">Configure nested disposition lists</a>.</p>
-<h3 id="feature_118">Feature</h3>
+<h3 id="feature_126">Feature</h3>
 <p><strong>Virtual agent to virtual agent direct chat transfers</strong></p>
 <p>You can configure Dialogflow payloads to transfer chat sessions from one virtual agent directly to another virtual agent, using the destination virtual agent's agent ID.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#va-to-va-direct-transfer">Virtual agent to virtual agent direct transfer</a>.</p>
-<h3 id="feature_119">Feature</h3>
+<h3 id="feature_127">Feature</h3>
 <p><strong>Extensions for support numbers</strong></p>
 <p>You can assign a phone number extension to an agent that an end-user can use to directly call the agent. You can also set up an extension directory that end-users can use to find the extension for an agent that they want to call.</p>
 <p>Administrators:</p>
@@ -5642,7 +5935,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>The <strong>Add new menu</strong> dialog at <strong>Settings &gt; Queue &gt; IVR (Interactive Voice Response) &gt; Menu Structure</strong> contains a new <strong>Extension Directory</strong> toggle.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#turn-on-and-configure-agent-extensions">Turn on and configure agent extensions</a>.</p>
-<h3 id="feature_120">Feature</h3>
+<h3 id="feature_128">Feature</h3>
 <p><strong>Skip language selection and IVR menu readout</strong></p>
 <p>You can configure your call flow to skip language selection and the IVR menu readout. Instead, callers get the default language and are routed to the default queue. This creates a faster call connection experience for end-users.</p>
 <p>Administrators:</p>
@@ -5651,13 +5944,13 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice Response) &gt; IVR Queue Menu Readout</strong> section, there's a new <strong>Skip IVR Menu readout</strong> option.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/customizing_languages_recordings_messages#configure-ivr-messages">Configure IVR messages</a>.</p>
-<h3 id="feature_121">Feature</h3>
+<h3 id="feature_129">Feature</h3>
 <p><strong>Transfer an email session to a queue</strong></p>
 <p>Agents can now transfer an email session to a queue. This resolves the problem of multiple email sessions being created when an agent forwards an email directly to an agent to transfer it.</p>
 <p>Administrators: The <strong>General</strong> pane on the <strong>Email</strong> page at <strong>Settings &gt; Email</strong> contains a new <strong>Enable Email Transfer Between Queues</strong> checkbox.</p>
 <p>User experience change: In the email adapter, a new <strong>Transfer</strong> button appears when an agent views an assigned email.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue">Let agents transfer email sessions to a queue</a>.</p>
-<h3 id="fixed_24">Fixed</h3>
+<h3 id="fixed_25">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where hyperlinks in the after-hours message of the web SDK were broken.</li>
@@ -5686,25 +5979,25 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-31">2025-10-31</h2>
-<h3 id="announcement_34">Announcement</h3>
+<h3 id="announcement_35">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.40</strong></p>
 <p>We've released version 3.40 of Google Cloud CCaaS, including the web SDK.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature_122">Feature</h3>
+<h3 id="feature_130">Feature</h3>
 <p><strong>Web SDK: Support for hiding the Start a new conversation button</strong></p>
 <p>You can now configure the web SDK to hide the <strong>Start a new conversation</strong> button on the end-user's chat screen after the session ends. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-start-new-conversation-button">Hide the button to download a transcript at the end of a session</a>.</p>
-<h3 id="feature_123">Feature</h3>
+<h3 id="feature_131">Feature</h3>
 <p><strong>Search in email channel by email address and name</strong></p>
 <p>Agents can now search for email sessions by email address and name in the email adapter.</p>
 <p>User experience change: The search pane in the email adapter includes two new fields: <strong>Email Address</strong> and <strong>Name</strong>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails">Search for emails</a>.</p>
-<h3 id="feature_124">Feature</h3>
+<h3 id="feature_132">Feature</h3>
 <p><strong>The europe-west4 and europe-west6 regions are available for Agent Assist conversation profiles</strong></p>
 <p>The <code>europe-west4</code> and <code>europe-west6</code> regions are now available when you create an Agent Assist conversation profile for a Dialogflow CX virtual agent. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/create-a-dialogflow-agent#create-cp">Create conversation profile for Dialogflow CX virtual agents</a>.</p>
-<h3 id="feature_125">Feature</h3>
+<h3 id="feature_133">Feature</h3>
 <p><strong>Customize the color of the Start Screen Share button</strong></p>
 <p>You can now control the color of the <strong>Start Screen Share</strong> button to match the color palette of your brand. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button">Customize the Start Screen Share button</a>.</p>
-<h3 id="feature_126">Feature</h3>
+<h3 id="feature_134">Feature</h3>
 <p><strong>New variables for custom lookup URLs</strong></p>
 <p>We've added the following five variables for custom lookup URLs:</p>
 <ul>
@@ -5715,17 +6008,17 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>CUSTOM_AGENT_ID</strong>: an optional agent ID</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/custom-crm#custom_lookup_url_configuration">Custom lookup URL configuration</a>.</p>
-<h3 id="feature_127">Feature</h3>
+<h3 id="feature_135">Feature</h3>
 <p><strong>Web SDK: Support for hiding the download transcript option</strong></p>
 <p>You can now configure the web SDK to do the following on the end-user's chat screen:</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-command-to-download-transcript-during-session">Hide the command to download a transcript during a session</a>.</li>
 <li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-getting-started#hide-button-to-download-transcript-at-end-of-session">Hide the button to download a transcript at the end of a session</a>.</li>
 </ul>
-<h3 id="feature_128">Feature</h3>
+<h3 id="feature_136">Feature</h3>
 <p><strong>Agent desktop maintains state after refresh</strong></p>
 <p>While you're using the agent desktop, if you refresh your browser, the agent desktop now maintains its state. This means that active conversations, finished tabs, and recently closed sessions remain as they were before the refresh.</p>
-<h3 id="fixed_25">Fixed</h3>
+<h3 id="fixed_26">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue that prevented administrators from configuring virtual agents on the top level for IVR queues.</li>
@@ -5758,16 +6051,16 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.</p>
 <hr />
 <h2 id="2025-10-30">2025-10-30</h2>
-<h3 id="announcement_35">Announcement</h3>
+<h3 id="announcement_36">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.40</strong></p>
 <p>We've released version 3.40 of the advanced reporting dashboards.</p>
-<h3 id="feature_129">Feature</h3>
+<h3 id="feature_137">Feature</h3>
 <p><strong>New Audit Log dashboard</strong></p>
 <p>We've added a new <strong>Audit log</strong> dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the <strong>Developer Settings</strong> page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the <strong>Audit Log</strong> dashboard from the <strong>Settings</strong> menu. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log">Audit log dashboard</a>.</p>
-<h3 id="feature_130">Feature</h3>
+<h3 id="feature_138">Feature</h3>
 <p><strong>New Agent Preference table in the Agent Availability dashboard</strong></p>
 <p>We've added a new <strong>Agent Preference</strong> table to the <strong>Agent Availability</strong> dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability">Agent availability dashboard</a>.</p>
-<h3 id="fixed_26">Fixed</h3>
+<h3 id="fixed_27">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where the queue groups dashboard failed to display data for users with a custom role assigned to a queue or queue group.</li>
@@ -5781,16 +6074,16 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="announcement_36">Announcement</h3>
+<h3 id="announcement_37">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.40</strong></p>
 <p>We've released version 3.40 of the advanced reporting dashboards.</p>
-<h3 id="feature_131">Feature</h3>
+<h3 id="feature_139">Feature</h3>
 <p><strong>New Agent Preference table in the Agent Availability dashboard</strong></p>
 <p>We've added a new <strong>Agent Preference</strong> table to the <strong>Agent Availability</strong> dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability">Agent availability dashboard</a>.</p>
-<h3 id="feature_132">Feature</h3>
+<h3 id="feature_140">Feature</h3>
 <p><strong>New Audit Log dashboard</strong></p>
 <p>We've added a new <strong>Audit log</strong> dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the <strong>Developer Settings</strong> page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the <strong>Audit Log</strong> dashboard from the <strong>Settings</strong> menu. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log">Audit log dashboard</a>.</p>
-<h3 id="fixed_27">Fixed</h3>
+<h3 id="fixed_28">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue that caused the <strong>Agent Activity Timeline</strong> dashboard to display inaccurate or incomplete data.</li>
@@ -5803,7 +6096,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="announcement_37">Announcement</h3>
+<h3 id="announcement_38">Announcement</h3>
 <p><strong>Mobile SDK patch 2.14.1 is released</strong></p>
 <p>This patch adds the <code>didHandleUjetError</code> function to the iOS SDK. The <code>didHandleUjetError</code> function can listen for and handle the following errors:</p>
 <ul>
@@ -5817,10 +6110,10 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#fallback">Fallback</a>.</p>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="announcement_38">Announcement</h3>
+<h3 id="announcement_39">Announcement</h3>
 <p><strong>Portal version 3.40 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.40. When we release version 3.40, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_133">Feature</h3>
+<h3 id="feature_141">Feature</h3>
 <p><strong>New variables for custom lookup URLs</strong></p>
 <p>We've added the following five variables for custom lookup URLs:</p>
 <ul>
@@ -5831,31 +6124,31 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>CUSTOM_AGENT_ID</strong>: an optional agent ID</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/custom-crm#custom_lookup_url_configuration">Custom lookup URL configuration</a>.</p>
-<h3 id="feature_134">Feature</h3>
+<h3 id="feature_142">Feature</h3>
 <p><strong>Agent desktop maintains state after refresh</strong></p>
 <p>While you're using the agent desktop, if you refresh your browser, the agent desktop now maintains its state. This means that active conversations, finished tabs, and recently closed sessions remain as they were before the refresh.</p>
-<h3 id="feature_135">Feature</h3>
+<h3 id="feature_143">Feature</h3>
 <p><strong>Search in email channel by email address and name</strong></p>
 <p>Agents can now search for email sessions by email address and name in the email adapter.</p>
 <p>User experience change: The search pane in the email adapter includes two new fields: <strong>Email Address</strong> and <strong>Name</strong>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails">Search for emails</a>.</p>
-<h3 id="feature_136">Feature</h3>
+<h3 id="feature_144">Feature</h3>
 <p><strong>Customize the color of the Start Screen Share button</strong></p>
 <p>You can now control the color of the <strong>Start Screen Share</strong> button to match the color palette of your brand. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/cobrowse#customize-start-screen-share-button">Customize the Start Screen Share button</a>.</p>
-<h3 id="feature_137">Feature</h3>
+<h3 id="feature_145">Feature</h3>
 <p><strong>The europe-west4 and europe-west6 regions are available for Agent Assist conversation profiles</strong></p>
 <p>The <code>europe-west4</code> and <code>europe-west6</code> regions are now available when you create an Agent Assist conversation profile for a Dialogflow CX virtual agent. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/create-a-dialogflow-agent#create-cp">Create conversation profile for Dialogflow CX virtual agents</a>.</p>
-<h3 id="feature_138">Feature</h3>
+<h3 id="feature_146">Feature</h3>
 <p><strong>Web SDK: Support for hiding the download transcript option</strong></p>
 <p>You can now configure the web SDK to do the following on the end-user's chat screen:</p>
 <ul>
 <li>Hide the <strong>Download transcript</strong> menu option during a chat session</li>
 <li>Hide the <strong>Download transcript</strong> button after a chat session ends</li>
 </ul>
-<h3 id="feature_139">Feature</h3>
+<h3 id="feature_147">Feature</h3>
 <p><strong>Web SDK: Support for hiding the Start a new conversation button</strong></p>
 <p>You can now configure the web SDK to hide the <strong>Start a new conversation</strong> button on the end-user's chat screen after the session ends.</p>
-<h3 id="fixed_28">Fixed</h3>
+<h3 id="fixed_29">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue that prevented administrators from configuring virtual agents on the top level for IVR queues.</li>
@@ -5888,11 +6181,11 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
-<h3 id="announcement_39">Announcement</h3>
+<h3 id="announcement_40">Announcement</h3>
 <p><strong>Version 3.39 is released</strong></p>
 <p>All release notes published on this date are part of version 3.39.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature_140">Feature</h3>
+<h3 id="feature_148">Feature</h3>
 <p><strong>Destination queue name and session history is available in the agent adapter</strong></p>
 <p>The agent adapter now displays the destination queue during transfers and deflections for IVR calls. The agent adapter also displays transfer history in the <strong>Call details</strong> and <strong>Chat details</strong> tabs.</p>
 <p>User experience changes:</p>
@@ -5902,33 +6195,33 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <p>Administrators: There's a new checkbox at <strong>Settings &gt; Operation Management &gt; Transfer history</strong> for turning on transfer history in the agent adapter.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/queue-info-transfer-history-agent-adapter">Transfer history and queue information in the agent adapter</a>.</p>
-<h3 id="feature_141">Feature</h3>
+<h3 id="feature_149">Feature</h3>
 <p><strong>Improved controls over the ordering of key-value pairs in the agent adapter and CRM records</strong></p>
 <p>Google Cloud CCaaS has improved controls over the ordering of the key-value pairs that appear in the agent adapter and in CRM records. Here's how the ordering controls work:</p>
 <ul>
 <li><strong>Virtual agents</strong>: When you configure session variables, you can use the new <code>display_order_in_adapter</code> property to specify the order that the session variables appear in the agent adapter and in CRM records. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#capture_from_intent_response">Capture from intent response</a>.</li>
 <li><strong>Web SDK</strong>: Web SDK custom data is displayed in the agent adapter and CRM records in the order that the key-value pairs appear in the JSON custom data file. For more information about JSON custom data files, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk#chat-unsigned-custom-data">Chat unsigned custom data</a>.</li>
 </ul>
-<h3 id="feature_142">Feature</h3>
+<h3 id="feature_150">Feature</h3>
 <p><strong>Virtual agents for the SMS channel</strong></p>
 <p>Virtual agents are now available for the SMS channel. This lets you create virtual agents and assign them to SMS queues, offering virtual agent support to end-users in SMS chat sessions. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/virtual-agents-for-sms">Virtual agents for SMS</a>.</p>
-<h3 id="feature_143">Feature</h3>
+<h3 id="feature_151">Feature</h3>
 <p><strong>Search in the email channel</strong></p>
 <p>Agents can now search for emails in the agent adapter by keyword, session ID, or subject. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#search-for-emails">Search for emails</a>.</p>
-<h3 id="feature_144">Feature</h3>
+<h3 id="feature_152">Feature</h3>
 <p><strong>Cancel scheduled calls with the callback calls API</strong></p>
 <p>You can now use the callback calls API to cancel a single scheduled callback call or a list of calls. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/callback-call-api">Callback call API</a>.</p>
-<h3 id="feature_145">Feature</h3>
+<h3 id="feature_153">Feature</h3>
 <p><strong>Mid-session authentication is supported by all CRM types</strong></p>
 <p>Mid-session authentication is supported by all CRM types, not just custom CRMs. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/mid-session-authentication-apps-api">Mid-Session authentication by API</a>.</p>
-<h3 id="feature_146">Feature</h3>
+<h3 id="feature_154">Feature</h3>
 <p><strong>New advanced reporting dashboards</strong></p>
 <p>The following new advanced reporting dashboard is available:</p>
 <ul>
 <li><strong>Deflections</strong>. Get deflection information by queue and for your entire contact center. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections">Deflections dashboards</a>.</li>
 <li><strong>Agent activity timeline</strong>. See the historical activity for an agent. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-activity-timeline">Agent activity timeline dashboard</a>.</li>
 </ul>
-<h3 id="feature_147">Feature</h3>
+<h3 id="feature_155">Feature</h3>
 <p><strong>Advanced reporting dashboard updates</strong></p>
 <p>We've made the following updates to the advanced reporting dashboards:</p>
 <ul>
@@ -5981,7 +6274,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>Chats Queued</strong></li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities">Advanced capabilities</a>.</p>
-<h3 id="fixed_29">Fixed</h3>
+<h3 id="fixed_30">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where incoming chats took precedence over the in-progress chat.</li>
@@ -6049,12 +6342,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: <strong>Queue Groups Dashboard Calls</strong> and <strong>Queued Calls Status Dashboard</strong>.</p>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
-<h3 id="announcement_40">Announcement</h3>
+<h3 id="announcement_41">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version 3</a>. Starting on <strong>June 26, 2026</strong>, the web SDK v2 will no longer function. Be sure to <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">update your website</a> to use the web SDK v3 before that date to avoid breaking your integration with the web SDK. We are no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2025-09-04">2025-09-04</h2>
-<h3 id="announcement_41">Announcement</h3>
+<h3 id="announcement_42">Announcement</h3>
 <p><strong>Agent desktop is GA</strong></p>
 <p>Agent desktop is now <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available (GA)</a>. Agent desktop is a customizable interface that provides agents quick access to the information and tools they need to handle customer sessions. The desktop layout includes the agent adapter as well as configurable panels that display information or tools. You can configure a distinct desktop layout for each session type: inbound calls, outbound calls, or chats. You can then configure which desktop layout that an agent sees when they answer an inbound call, place an outbound call, or handle a chat. You can also configure announcements to communicate updates, alerts, and other important information directly to agents. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-overview">Agent desktop</a>.</p>
 <p>The agent desktop provides the following capabilities:</p>
@@ -6067,7 +6360,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="announcement_42">Announcement</h3>
+<h3 id="announcement_43">Announcement</h3>
 <p><strong>Mobile SDK 2.14 is released</strong></p>
 <p>Mobile SDK 2.14 includes the following updates:</p>
 <ul>
@@ -6092,14 +6385,14 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#hide-transfer-messages-in-chat-sessions">Hide transfer messages in chat sessions</a>.</p>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
-<h3 id="fixed_30">Fixed</h3>
+<h3 id="fixed_31">Fixed</h3>
 <p>Fixed an issue where the Android SDK wouldn't minimize when an end-user clicked a deep link.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="announcement_43">Announcement</h3>
+<h3 id="announcement_44">Announcement</h3>
 <p><strong>Portal version 3.39 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.39. When we release version 3.39, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_148">Feature</h3>
+<h3 id="feature_156">Feature</h3>
 <p><strong>Destination queue name and session history is available in the agent adapter</strong></p>
 <p>The agent adapter now displays the destination queue during transfers and deflections for IVR calls. The agent adapter also displays transfer history in the <strong>Call details</strong> and <strong>Chat details</strong> tabs.</p>
 <p>User experience changes:</p>
@@ -6108,33 +6401,33 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>The chat pane in the chat adapter has a new <strong>Transfers</strong> button that opens the <strong>Transfer History</strong> pane.</li>
 </ul>
 <p>Administrators: There's a new checkbox at <strong>Settings &gt; Operation Management &gt; Transfer history</strong> for turning on transfer history in the agent adapter.</p>
-<h3 id="feature_149">Feature</h3>
+<h3 id="feature_157">Feature</h3>
 <p><strong>Improved controls over the ordering of key-value pairs in the agent adapter and CRM records</strong></p>
 <p>Google Cloud CCaaS has improved controls over the ordering of the key-value pairs that appear in the agent adapter and in CRM records. Here's how the ordering controls work:</p>
 <ul>
 <li><strong>Virtual agents</strong>: When you configure session variables, you can use the new <code>display_order_in_adapter</code> property to specify the order that the session variables appear in the agent adapter and in CRM records.</li>
 <li><strong>Web SDK</strong>: Web SDK custom data is displayed in the agent adapter and CRM records in the order that the key-value pairs appear in the JSON custom data file.</li>
 </ul>
-<h3 id="feature_150">Feature</h3>
+<h3 id="feature_158">Feature</h3>
 <p><strong>Virtual agents for the SMS channel</strong></p>
 <p>Virtual agents are now available for the SMS channel. This lets you create virtual agents and assign them to SMS queues, offering virtual agent support to end-users in SMS chat sessions.</p>
-<h3 id="feature_151">Feature</h3>
+<h3 id="feature_159">Feature</h3>
 <p><strong>Search in the email channel</strong></p>
 <p>Agents can now search for emails in the agent adapter by keyword, session ID, or subject.</p>
-<h3 id="feature_152">Feature</h3>
+<h3 id="feature_160">Feature</h3>
 <p><strong>Cancel scheduled calls with the callback calls API</strong></p>
 <p>You can now use the callback calls API to cancel a single scheduled callback call or a list of calls.</p>
-<h3 id="feature_153">Feature</h3>
+<h3 id="feature_161">Feature</h3>
 <p><strong>Mid-session authentication is supported by all CRM types</strong></p>
 <p>Mid-session authentication is supported by all CRM types, not just custom CRMs. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/mid-session-authentication-apps-api">Mid-Session authentication by API</a>.</p>
-<h3 id="feature_154">Feature</h3>
+<h3 id="feature_162">Feature</h3>
 <p><strong>New advanced reporting dashboards</strong></p>
 <p>The following new advanced reporting dashboard is available:</p>
 <ul>
 <li><strong>Deflections</strong>. Get deflection information by queue and for your entire contact center. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-deflections">Deflections dashboards</a>.</li>
 <li><strong>Agent activity timeline</strong>. See the historical activity for an agent.</li>
 </ul>
-<h3 id="feature_155">Feature</h3>
+<h3 id="feature_163">Feature</h3>
 <p><strong>Advanced reporting dashboard updates</strong></p>
 <p>We've made the following updates to the advanced reporting dashboards:</p>
 <ul>
@@ -6176,7 +6469,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>Chats Queued</strong></li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities">Advanced capabilities</a>.</p>
-<h3 id="fixed_31">Fixed</h3>
+<h3 id="fixed_32">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where incoming chats took precedence over the in-progress chat.</li>
@@ -6243,35 +6536,35 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: <strong>Queue Groups Dashboard Calls</strong> and <strong>Queued Calls Status Dashboard</strong>.</p>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
-<h3 id="announcement_44">Announcement</h3>
+<h3 id="announcement_45">Announcement</h3>
 <p><strong>Version 3.37 is released</strong></p>
 <p>All release notes published on this date are part of version 3.37.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature_156">Feature</h3>
+<h3 id="feature_164">Feature</h3>
 <p><strong>Restrict email transfers</strong></p>
 <p>You can now configure your instance to prevent users with the agent role from transferring email sessions to other agents. Agents can still assign unassigned emails to themselves, and users with the manager role can still transfer email sessions from agent to agent.</p>
 <p>Administrators: There's a new <strong>Transfer Restrictions</strong> pane at <strong>Settings &gt; Queue &gt; Email &gt; Edit / View &gt; [queue] &gt; Transfer Restrictions &gt; Configure</strong>.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/prevent-email-reassignment">Prevent email reassignment</a>.</p>
-<h3 id="feature_157">Feature</h3>
+<h3 id="feature_165">Feature</h3>
 <p><strong>Skip the connecting message playback</strong></p>
 <p>You can now configure your instance to skip playback of the connecting message when calls are connected to agents.</p>
 <p>Administrators: The <strong>Settings &gt; Call &gt; Call Details</strong> pane contains a new <strong>Skip the Connecting Message playback</strong> checkbox.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/call-settings#configure-global-call-settings">Configure global call settings</a>.</p>
-<h3 id="feature_158">Feature</h3>
+<h3 id="feature_166">Feature</h3>
 <p><strong>Workforce Management terminology update</strong></p>
 <p>We've updated the terminology in the Workforce Management interface to align with Google Cloud CCaaS terminology. For example, we've changed "supervisor" to "manager", "employee" to "agent", and "Supervisor Portal" to "Manager Portal".</p>
-<h3 id="feature_159">Feature</h3>
+<h3 id="feature_167">Feature</h3>
 <p><strong>Generative knowledge assist is available in Agent Desktop</strong></p>
 <p>Generative knowledge assist is now available in Agent Desktop as a widget that you can drag into a desktop panel.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts">Create desktop layouts</a>.</p>
-<h3 id="feature_160">Feature</h3>
+<h3 id="feature_168">Feature</h3>
 <p><strong>Generative knowledge assist is available in the agent adapter</strong></p>
 <p>Generative knowledge assist is now available in the agent adapter.</p>
-<h3 id="feature_161">Feature</h3>
+<h3 id="feature_169">Feature</h3>
 <p><strong>Web SDK version 3.37</strong></p>
 <p>Starting with version 3.37, web SDK releases align with portal releases and share the same version number.</p>
 <p>Web SDK version 3.37 includes the following update: we've improved the accessibily of the web SDK to be in compliance with the European Accessibility Act.</p>
-<h3 id="feature_162">Feature</h3>
+<h3 id="feature_170">Feature</h3>
 <p><strong>New advanced reporting dashboards</strong></p>
 <p>The following new advanced reporting dashboards are available:</p>
 <ul>
@@ -6281,7 +6574,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>CSAT</strong>. Get insights into the customer satisfaction (CSAT) ratings that end-users give to their sessions with agents. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-csat">CSAT dashboards</a>.</li>
 <li><strong>Dispositions</strong>. Get disposition information to gain insights into common end-user issues and concerns. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-dispositions">Dispositions dashboards</a>.</li>
 </ul>
-<h3 id="fixed_32">Fixed</h3>
+<h3 id="fixed_33">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.</li>
@@ -6311,12 +6604,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_45">Announcement</h3>
+<h3 id="announcement_46">Announcement</h3>
 <p><strong>Check the version number of your instance</strong></p>
 <p>You can now check the version number of your instance and compare it with the version numbers of the updates and patches that Google announces in these release notes. In this way you can know which capabilities are available in your instance. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/get-started#check_the_version_number_of_your_instance">Check the version number of your instance</a>.</p>
 <hr />
 <h2 id="2025-08-11">2025-08-11</h2>
-<h3 id="announcement_46">Announcement</h3>
+<h3 id="announcement_47">Announcement</h3>
 <p><strong>Availability in three additional regions</strong></p>
 <p>Google Cloud CCaaS is now available in the following three additional regions:</p>
 <ul>
@@ -6327,37 +6620,37 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>In each of these regions, Workforce Management is available and advanced reporting isn't available. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/localities#regions">Google Cloud regions</a>.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_47">Announcement</h3>
+<h3 id="announcement_48">Announcement</h3>
 <p><strong>Mobile SDK patch 2.13.1 is released</strong></p>
 <p>This patch fixes an issue where the Android SDK didn't support deep linking in the customizable link format.</p>
 <hr />
 <h2 id="2025-07-10">2025-07-10</h2>
-<h3 id="announcement_48">Announcement</h3>
+<h3 id="announcement_49">Announcement</h3>
 <p><strong>Portal version 3.37 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.37. When we release version 3.37, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_163">Feature</h3>
+<h3 id="feature_171">Feature</h3>
 <p><strong>Restrict email transfers</strong></p>
 <p>You can now configure your instance to prevent users with the agent role from transferring email sessions to other agents. Agents can still assign unassigned emails to themselves, and users with the manager role can still transfer email sessions from agent to agent.</p>
 <p>Administrators: There's a new <strong>Transfer Restrictions</strong> pane at <strong>Settings &gt; Queue &gt; Email &gt; Edit / View &gt; [queue] &gt; Transfer Restrictions &gt; Configure</strong>.</p>
-<h3 id="feature_164">Feature</h3>
+<h3 id="feature_172">Feature</h3>
 <p><strong>Skip the connecting message playback</strong></p>
 <p>You can now configure your instance to skip playback of the connecting message when calls are connected to agents.</p>
 <p>Administrators: The <strong>Settings &gt; Call &gt; Call Details</strong> pane contains a new <strong>Skip the Connecting Message playback</strong> checkbox.</p>
-<h3 id="feature_165">Feature</h3>
+<h3 id="feature_173">Feature</h3>
 <p><strong>Workforce Management terminology update</strong></p>
 <p>We've updated the terminology in the Workforce Management interface to align with Google Cloud CCaaS terminology. For example, we've changed "supervisor" to "manager", "employee" to "agent", and "Supervisor Portal" to "Manager Portal".</p>
-<h3 id="feature_166">Feature</h3>
+<h3 id="feature_174">Feature</h3>
 <p><strong>Generative knowledge assist is available in Agent Desktop</strong></p>
 <p>Generative knowledge assist is now available in Agent Desktop as a widget that you can drag into a desktop panel.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts">Create desktop panels</a>.</p>
-<h3 id="feature_167">Feature</h3>
+<h3 id="feature_175">Feature</h3>
 <p><strong>Generative knowledge assist is available in the agent adapter</strong></p>
 <p>Generative knowledge assist is now available in the agent adapter.</p>
-<h3 id="feature_168">Feature</h3>
+<h3 id="feature_176">Feature</h3>
 <p><strong>Web SDK version 3.37</strong></p>
 <p>Starting with version 3.37, web SDK releases align with portal releases and share the same version number.</p>
 <p>Web SDK version 3.37 includes the following update: we've improved the accessibily of the web SDK to be in compliance with the European Accessibility Act.</p>
-<h3 id="fixed_33">Fixed</h3>
+<h3 id="fixed_34">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.</li>
@@ -6386,7 +6679,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="announcement_49">Announcement</h3>
+<h3 id="announcement_50">Announcement</h3>
 <p><strong>Mobile SDK 2.13 is released</strong></p>
 <p>Mobile SDK 2.13 includes the following updates:</p>
 <ul>
@@ -6401,7 +6694,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>End-users can navigate the user interface using keyboard shortcuts in conformance with the W3C Web Content Accessibility Guidelines.</li>
 <li>You can configure your instance to let end-users skip customer satisfaction surveys.</li>
 </ul>
-<h3 id="fixed_34">Fixed</h3>
+<h3 id="fixed_35">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -6420,26 +6713,26 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="announcement_50">Announcement</h3>
+<h3 id="announcement_51">Announcement</h3>
 <p><strong>Session metadata in Conversational Insights conversations is GA</strong></p>
 <p>The Google Cloud CCaaS capability of including session metadata when creating conversations in Conversational Insights is now <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available (GA)</a>. Metadata values are available for each conversation. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/conversational-insights">Conversational Insights and Quality AI</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
-<h3 id="announcement_51">Announcement</h3>
+<h3 id="announcement_52">Announcement</h3>
 <p><strong>Version 3.36 is released</strong></p>
 <p>All release notes published on this date are part of version 3.36.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature_169">Feature</h3>
+<h3 id="feature_177">Feature</h3>
 <p><strong>Configure storage of Screen Share recordings</strong></p>
 <p>You can now configure how long to store Screen Share recordings in your external storage settings. You can also now store Screen Share recordings that originated from the Screen Share adapter.</p>
 <p>Administrators: The <strong>CRM Comments Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new <strong>Post Cobrowse recording link to CRM record</strong> settings. You need to contact Google support to enable Screen Share recordings.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/crm-external-storage">Set up external storage for CRMs</a>.</p>
-<h3 id="feature_170">Feature</h3>
+<h3 id="feature_178">Feature</h3>
 <p><strong>Restrict auto-assignment for email queues</strong></p>
 <p>You can now configure email queues so that incoming emails are auto-assigned only during queue operating hours or to agents who are signed in.</p>
 <p>Administrators: The <strong>Auto assignment</strong> dialog at <strong>Settings &gt; Queue &gt; Email Edit/View &gt; [queue name] &gt; Automatic assignment &gt; Configure</strong> has two new checkboxes.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-auto-assignment">Email auto assignment</a>.</p>
-<h3 id="feature_171">Feature</h3>
+<h3 id="feature_179">Feature</h3>
 <p><strong>Salesforce: New closed record options for scheduled calls</strong></p>
 <p>If you've integrated Google Cloud CCaaS with the Salesforce CRM, you can configure how your instance handles scheduled calls for closed records. Here are the configuration options that are available with Salesforce integrations:</p>
 <ul>
@@ -6449,7 +6742,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <p>Administrators: The <strong>CRM Record Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new settings at <strong>Closed record options when initiating an API-scheduled call</strong>.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/schedule-calls-salesforce">Schedule calls with Salesforce</a>.</p>
-<h3 id="fixed_35">Fixed</h3>
+<h3 id="fixed_36">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls weren't being assigned to the correct agent in Google Cloud CCaaS reporting.</li>
@@ -6478,7 +6771,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="announcement_52">Announcement</h3>
+<h3 id="announcement_53">Announcement</h3>
 <p><strong>Web SDK version 3</strong></p>
 <p>We're pleased to announce that the web SDK v3 is now <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. The web SDK v3 is built on the <a href="https://cloud.google.com/contact-center/ccai-platform/docs/headless-web-guide">headless web SDK</a>, so all of the methods that are available on a headless SDK client are also available with the web SDK v3 widget.</p>
 <p><strong>Deprecation notice</strong></p>
@@ -6505,18 +6798,18 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For help upgrading to web SDK v3, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">Upgrade from web SDK version 2 to web SDK version 3</a>. If you've been using the Private Preview version of web SDK v3, be sure to update your implementations to access <code>widget.js</code> from your Google Cloud CCaaS instance.</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_53">Announcement</h3>
+<h3 id="announcement_54">Announcement</h3>
 <p><strong>Version 3.36 pre-release notes</strong></p>
 <p>Here are the pre-release notes for version 3.36. When we release version 3.36, we expect the new capabilities to be as shown here.</p>
-<h3 id="feature_172">Feature</h3>
+<h3 id="feature_180">Feature</h3>
 <p><strong>Configure storage of Screen Share recordings</strong></p>
 <p>You can now configure how long to store Screen Share recordings in your external storage settings. You can also now store Screen Share recordings that originated from the Screen Share adapter.</p>
 <p>Administrators: The <strong>CRM Comments Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new <strong>Post Cobrowse recording link to CRM record</strong> settings. You need to contact Google support to enable Screen Share recordings.</p>
-<h3 id="feature_173">Feature</h3>
+<h3 id="feature_181">Feature</h3>
 <p><strong>Restrict auto-assignment for email queues</strong></p>
 <p>You can now configure email queues so that incoming emails are auto-assigned only during queue operating hours or to agents who are signed in.</p>
 <p>Administrators: The <strong>Auto assignment</strong> dialog at <strong>Settings &gt; Queue &gt; Email Edit/View &gt; [queue name] &gt; Automatic assignment &gt; Configure</strong> has two new checkboxes.</p>
-<h3 id="feature_174">Feature</h3>
+<h3 id="feature_182">Feature</h3>
 <p><strong>Salesforce: New closed record options for scheduled calls</strong></p>
 <p>If you've integrated Google Cloud CCaaS with the Salesforce CRM, you can configure how your instance handles scheduled calls for closed records. Here are the configuration options that are available with Salesforce integrations:</p>
 <ul>
@@ -6525,7 +6818,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>Look up record status and cancel scheduled calls for closed records</strong>. Your instance looks up record status before making a scheduled call and cancels scheduled calls for records that are closed.</li>
 </ul>
 <p>Administrators: The <strong>CRM Record Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new settings at <strong>Closed record options when initiating an API-scheduled call</strong>.</p>
-<h3 id="fixed_36">Fixed</h3>
+<h3 id="fixed_37">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls weren't being assigned to the correct agent in Google Cloud CCaaS reporting.</li>
@@ -6552,7 +6845,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_54">Announcement</h3>
+<h3 id="announcement_55">Announcement</h3>
 <p><strong>Salesforce ICU Update</strong></p>
 <p>This is for Google Contact Center as a Service (CCaaS) customers that use Salesforce integration with CCaaS.</p>
 <p>On <strong>June 15th, 2025</strong>, Salesforce is rolling out an automatic upgrade to its International Components for Unicode (ICU) locale data. This affects how date, time, number, and currency formatting are handled across Apex, Visualforce, and Lightning components.</p>
@@ -6616,7 +6909,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p><strong>Important</strong>: This will only be effective if completed before <strong>June 15th 2025</strong>.</p>
 <hr />
 <h2 id="2025-06-05">2025-06-05</h2>
-<h3 id="announcement_55">Announcement</h3>
+<h3 id="announcement_56">Announcement</h3>
 <p><strong>Patch 3.35.15 is released</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -6626,7 +6919,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="announcement_56">Announcement</h3>
+<h3 id="announcement_57">Announcement</h3>
 <p><strong>Headless web SDK 3.6.5 is released</strong></p>
 <p>This release does the following:</p>
 <ul>
@@ -6636,11 +6929,11 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="announcement_57">Announcement</h3>
+<h3 id="announcement_58">Announcement</h3>
 <p><strong>Version 3.35 is released</strong></p>
 <p>All release notes published on this date are part of version 3.35.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
-<h3 id="feature_175">Feature</h3>
+<h3 id="feature_183">Feature</h3>
 <p><strong>QM integration now includes chat session events</strong></p>
 <p>You can now export chat session events to an external quality management (QM) system. After you configure the endpoint of your QM system in Google Cloud CCaaS, your chat session events can be streamed to the endpoint in real time.</p>
 <p>User experience change:</p>
@@ -6648,11 +6941,11 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>The <strong>QM Integration</strong> dialog at <strong>Settings &gt; Developer Settings &gt; Session Data Export &gt; QM Integration</strong> has a new <strong>QM Chat Events - send chat sessions events</strong> checkbox.</li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/qm-siprec-integration">QM, SIPREC, and WFM integration</a>.</p>
-<h3 id="feature_176">Feature</h3>
+<h3 id="feature_184">Feature</h3>
 <p><strong>Remove email subject lines from interaction data</strong></p>
 <p>We now support removing email subject lines when you delete interaction data from your instance for specified end-users. The email subjects are removed when you delete data for an end-user in the <strong>Consumer Privacy</strong> dialog at <strong>Settings &gt; Consumer Management &gt; Consumer Privacy</strong>. To completely remove an end-user's data, you must also delete their emails from your mail server. You must also delete chat transcripts, call recordings, and other session-related files from your CRM or external storage, depending on your configuration.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/remove-end-user-data#remove-subject-lines-from-email-interactions">Remove subject lines from end-user email interactions</a>.</p>
-<h3 id="feature_177">Feature</h3>
+<h3 id="feature_185">Feature</h3>
 <p><strong>New sender email with auto-response emails</strong></p>
 <p>You can now configure an outbound-only email address and use it as the sender address for auto-response emails. The outbound-only address is a "no-reply" email address that prevents the receiver from responding.</p>
 <p>User experience changes:</p>
@@ -6661,7 +6954,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>The <strong>Add an email</strong> dialog at <strong>Settings &gt; Developer Settings &gt; Email Account Management &gt; Email account list &gt; Add email account</strong> has a new <strong>This is an outbound only email account</strong> checkbox.</li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#configure-outbound-only-email-account">Configure an outbound-only email account</a> and <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#configure-auto-response-email">Configure an auto-response email</a>.</p>
-<h3 id="feature_178">Feature</h3>
+<h3 id="feature_186">Feature</h3>
 <p><strong>Include images in outbound emails</strong></p>
 <p>You can now include images in outbound emails. This includes emails from an agent in an email session and outbound auto-response emails.</p>
 <p>User experience change:</p>
@@ -6670,7 +6963,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>The email adapter has a new <strong>Insert Image</strong> button.</li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-adapter">Agent email adapter</a> and <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#configure-auto-response-email">Configure an auto-response email</a>.</p>
-<h3 id="fixed_37">Fixed</h3>
+<h3 id="fixed_38">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls were were being logged as <strong>Call with unknown contact</strong> in HubSpot instead of under the correct contact name.</li>
@@ -6708,6 +7001,9 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-04" class="nav-link">2026-05-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-27" class="nav-link">2026-04-27</a>
           </li>

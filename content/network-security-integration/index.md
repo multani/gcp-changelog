@@ -1,5 +1,15 @@
 # Network Security Integration
 
+## 2026-05-04
+
+### Feature
+
+You can now enable zonal affinity for your Network Security Integration in-band
+integration deployments and configure zonal interception with regional backends.
+For more information, see [Zonal
+affinity](https://docs.cloud.google.com/network-security-integration/docs/in-band/in-band-integration-overview#zonal-affinity).
+
+---
 ## 2026-01-14
 
 ### Feature

@@ -1,5 +1,15 @@
 # Application Design Center
 
+## 2026-04-29
+
+### Feature
+
+Use the following Google-provided application templates in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* [Simple Agent Platform](https://docs.cloud.google.com/application-design-center/docs/simple-agent-platform)
+* [Agent Platform with governance](https://docs.cloud.google.com/application-design-center/docs/agent-platform-with-governance)
+
+---
 ## 2026-04-22
 
 ### Feature

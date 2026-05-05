@@ -13,6 +13,20 @@ tables failed when the table schema caching feature was enabled.
 For more information, see [What's new with BigQuery Connector for SAP](https://docs.cloud.google.com/sap/docs/bq-connector/whats-new#version-2-13).
 
 ---
+## 2026-04-29
+
+### Announcement
+
+**Google Cloud's Agent for SAP version 3.13**
+
+Version 3.13 of Google Cloud's Agent for SAP is generally available (GA). This
+version introduces minor bug fixes, enhancements for disk snapshot based
+recovery for SAP HANA, and security enhancements.
+
+For more information, see
+[What's new with Google Cloud's Agent for SAP](https://docs.cloud.google.com/sap/docs/agent-for-sap/whats-new).
+
+---
 ## 2026-04-20
 
 ### Announcement

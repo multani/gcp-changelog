@@ -1,5 +1,18 @@
 # Cluster Toolkit
 
+## 2026-04-30
+
+### Feature
+
+Cluster Toolkit v1.89.0 is available. This release lets you
+configure virtual machines (VMs) dynamically for Slurm and manage secondary
+NICs by using the Networking Dynamic Resource Allocation (DRA) driver. This
+release also updates the GKE A3 Mega blueprint to align with
+integration tests and ensure stability. This version also adds
+support to use Fractional G4 GPU instances in Slurm. For details, see the [Release
+announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5576).
+
+---
 ## 2026-04-16
 
 ### Feature

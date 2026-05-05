@@ -1,5 +1,12 @@
 # Anti Money Laundering AI
 
+## 2026-04-23
+
+### Fixed
+
+Fixed a validation error for engine versions `aml-commercial.default.v004.009.202603-000` and `aml-commercial.default.v004.010.202603-000` where the 500,000 party account limit was not correctly enforced.
+
+---
 ## 2026-02-03
 
 ### Announcement

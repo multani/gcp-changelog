@@ -1,5 +1,21 @@
 # Confidential Space
 
+## 2026-05-04
+
+### Issue
+
+When running a Confidential Space workload with an NVIDIA H100 GPU attached, you
+might see the following error message:
+
+```
+failed to get launchspec, make sure you're running inside
+a GCE VM: GPU Driver installation is not supported.
+```
+
+This is a known issue with the Confidential Space image. To work around the
+issue, restart the Confidential VM.
+
+---
 ## 2026-04-29
 
 ### Announcement

@@ -1,5 +1,19 @@
 # Cloud SQL for SQL Server
 
+## 2026-05-04
+
+### Feature
+
+Cloud SQL for SQL Server now supports PolyBase ([GA](https://cloud.google.com/products/#product-launch-stages)).
+
+With PolyBase, your Cloud SQL for SQL Server instance uses Transact-SQL (T-SQL)
+commands to directly query data stored in external data sources as if the data
+is stored in local tables. You don't need to install separate client connection
+software.
+
+For more information, see [About PolyBase](https://docs.cloud.google.com/sql/docs/sqlserver/about-polybase).
+
+---
 ## 2026-04-30
 
 ### Feature

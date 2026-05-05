@@ -4,6 +4,11 @@
 
 ### Announcement
 
+Cloud Composer is now called [Managed Service for Apache Airflow](https://docs.cloud.google.com//composer/docs). The names for associated APIs, client libraries, CLI commands, and Identity and Access Management (IAM) remain unchanged and still
+reference Composer.
+
+### Announcement
+
 **Dataproc** and **Google Cloud Serverless for Apache Spark** are now unified
 under the [**Managed Service for Apache Spark**](https://docs.cloud.google.com/dataproc/docs)
 brand. This change consolidates our managed Spark deployment options into a

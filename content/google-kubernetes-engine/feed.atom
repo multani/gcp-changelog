@@ -2,9 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-04-29T00:00:00+00:00</updated>
+  <updated>2026-05-01T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-05-01:announcement:0</id>
+    <published>2026-05-01T00:00:00+00:00</published>
+    <updated>2026-05-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Kubernetes 1.36 is now available in the Rapid channel</h4>
+<p>Kubernetes 1.36 is now available in the Rapid channel. For more
+information about the content of Kubernetes 1.36, see
+<a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#changelog-since-v1350">Kubernetes 1.36 release notes</a>,
+and <a href="https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/">Kubernetes 1.36 Release Blog</a>.</p>]]></content>
+    <summary>The latest version of Kubernetes, 1.36, is now accessible through the Rapid channel. You can find detailed information about the new features and changes in the official release notes and blog post.</summary>
+    <title>Announcement: Kubernetes 1.36 is here</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-05-01:feature:1</id>
+    <published>2026-05-01T00:00:00+00:00</published>
+    <updated>2026-05-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>New features in 1.36</h4>
+<ul>
+<li><a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/internal-load-balancing">L4 Internal Load Balancer services</a>
+  now use GKE subsetting by default. This change transitions the default
+  implementation from Instance Groups to Network Endpoint Groups (NEGs).
+  This NEG-based approach provides improved scalability and enhanced
+  performance through faster synchronization. This change applies only to
+  newly created Internal Load Balancer services, while existing services
+  remain unaffected and continue using Instance Groups.</li>
+<li><a href="https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/">Mutating Admission Policies</a>
+  are now Generally Available. Mutating admission policies allow for
+  resource mutations using Common Expression Language (CEL) expressions
+  as a more efficient alternative to mutating admission webhooks. For more
+  information, see the
+  <a href="https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/">kubernetes documentation</a>.</li>
+<li>The kube-dns image switches from an implementation based on
+  <a href="https://github.com/kubernetes/dns">kubernetes/dns</a> to one based on
+  <a href="https://coredns.io/">CoreDNS</a>.
+  This implementation is more efficient, and it supports bigger headless
+  services, more upstream DNS services, and more concurrent connections.</li>
+</ul>]]></content>
+    <summary>Version 1.36 introduces significant improvements, including enhanced Internal Load Balancer services using NEGs by default, the general availability of Mutating Admission Policies for efficient resource mutation, and an upgrade to CoreDNS for kube-dns for better performance and scalability.</summary>
+    <title>Feature: New features in 1.36</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

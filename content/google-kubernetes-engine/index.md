@@ -1,5 +1,40 @@
 # Google Kubernetes Engine
 
+## 2026-05-01
+
+### Announcement
+
+#### Kubernetes 1.36 is now available in the Rapid channel
+
+Kubernetes 1.36 is now available in the Rapid channel. For more
+information about the content of Kubernetes 1.36, see
+[Kubernetes 1.36 release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#changelog-since-v1350),
+and [Kubernetes 1.36 Release Blog](https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/).
+
+### Feature
+
+#### New features in 1.36
+
+* [L4 Internal Load Balancer services](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/internal-load-balancing)
+  now use GKE subsetting by default. This change transitions the default
+  implementation from Instance Groups to Network Endpoint Groups (NEGs).
+  This NEG-based approach provides improved scalability and enhanced
+  performance through faster synchronization. This change applies only to
+  newly created Internal Load Balancer services, while existing services
+  remain unaffected and continue using Instance Groups.
+* [Mutating Admission Policies](https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/)
+  are now Generally Available. Mutating admission policies allow for
+  resource mutations using Common Expression Language (CEL) expressions
+  as a more efficient alternative to mutating admission webhooks. For more
+  information, see the
+  [kubernetes documentation](https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/).
+* The kube-dns image switches from an implementation based on
+  [kubernetes/dns](https://github.com/kubernetes/dns) to one based on
+  [CoreDNS](https://coredns.io/).
+  This implementation is more efficient, and it supports bigger headless
+  services, more upstream DNS services, and more concurrent connections.
+
+---
 ## 2026-04-29
 
 ### Change

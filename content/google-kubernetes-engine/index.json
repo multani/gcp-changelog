@@ -1,6 +1,24 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-05-01": [
+      {
+        "kind": "Announcement",
+        "content": "#### Kubernetes 1.36 is now available in the Rapid channel\n\nKubernetes 1.36 is now available in the Rapid channel. For more\ninformation about the content of Kubernetes 1.36, see\n[Kubernetes 1.36 release notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#changelog-since-v1350),\nand [Kubernetes 1.36 Release Blog](https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/).",
+        "summary": {
+          "title": "Kubernetes 1.36 is here",
+          "summary": "The latest version of Kubernetes, 1.36, is now accessible through the Rapid channel. You can find detailed information about the new features and changes in the official release notes and blog post."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "#### New features in 1.36\n\n* [L4 Internal Load Balancer services](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/internal-load-balancing)\n  now use GKE subsetting by default. This change transitions the default\n  implementation from Instance Groups to Network Endpoint Groups (NEGs).\n  This NEG-based approach provides improved scalability and enhanced\n  performance through faster synchronization. This change applies only to\n  newly created Internal Load Balancer services, while existing services\n  remain unaffected and continue using Instance Groups.\n* [Mutating Admission Policies](https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/)\n  are now Generally Available. Mutating admission policies allow for\n  resource mutations using Common Expression Language (CEL) expressions\n  as a more efficient alternative to mutating admission webhooks. For more\n  information, see the\n  [kubernetes documentation](https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/).\n* The kube-dns image switches from an implementation based on\n  [kubernetes/dns](https://github.com/kubernetes/dns) to one based on\n  [CoreDNS](https://coredns.io/).\n  This implementation is more efficient, and it supports bigger headless\n  services, more upstream DNS services, and more concurrent connections.",
+        "summary": {
+          "title": "New features in 1.36",
+          "summary": "Version 1.36 introduces significant improvements, including enhanced Internal Load Balancer services using NEGs by default, the general availability of Mutating Admission Policies for efficient resource mutation, and an upgrade to CoreDNS for kube-dns for better performance and scalability."
+        }
+      }
+    ],
     "2026-04-29": [
       {
         "kind": "Change",

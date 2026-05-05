@@ -2448,6 +2448,16 @@
 
 
 <h1 id="confidential-space">Confidential Space</h1>
+<h2 id="2026-05-04">2026-05-04</h2>
+<h3 id="issue">Issue</h3>
+<p>When running a Confidential Space workload with an NVIDIA H100 GPU attached, you
+might see the following error message:</p>
+<pre><code>failed to get launchspec, make sure you're running inside
+a GCE VM: GPU Driver installation is not supported.
+</code></pre>
+<p>This is a known issue with the Confidential Space image. To work around the
+issue, restart the Confidential VM.</p>
+<hr />
 <h2 id="2026-04-29">2026-04-29</h2>
 <h3 id="announcement">Announcement</h3>
 <p>A Confidential Space image (260400) is available. Support for Confidential
@@ -2490,6 +2500,9 @@ Space on H100 GPU (a3-highgpu-1g machine family) is
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#confidential-space">Confidential Space</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-04" class="nav-link">2026-05-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-29" class="nav-link">2026-04-29</a>
           </li>

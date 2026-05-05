@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Confidential Space</title>
   <subtitle>Changelog for Google Cloud product: Confidential Space</subtitle>
-  <updated>2026-04-29T00:00:00+00:00</updated>
+  <updated>2026-05-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:confidential-space</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/confidential-space/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:confidential-space:2026-05-04:issue:0</id>
+    <published>2026-05-04T00:00:00+00:00</published>
+    <updated>2026-05-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When running a Confidential Space workload with an NVIDIA H100 GPU attached, you
+might see the following error message:</p>
+<p><code>failed to get launchspec, make sure you're running inside
+a GCE VM: GPU Driver installation is not supported.</code></p>
+<p>This is a known issue with the Confidential Space image. To work around the
+issue, restart the Confidential VM.</p>]]></content>
+    <summary>Users running Confidential Space workloads with NVIDIA H100 GPUs may encounter a 'GPU Driver installation is not supported' error. This is a known issue with the Confidential VM image. Restarting the Confidential VM can serve as a workaround.</summary>
+    <title>Issue: GPU Driver Issue in Confidential Space</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

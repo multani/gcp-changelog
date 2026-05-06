@@ -1,5 +1,13 @@
 # Cloud Storage
 
+## 2026-04-29
+
+### Feature
+
+You can manage object contexts in the Google Cloud Console.
+To learn more, see [Use object contexts](https://docs.cloud.google.com/storage/docs/use-object-contexts).
+
+---
 ## 2026-04-27
 
 ### Feature

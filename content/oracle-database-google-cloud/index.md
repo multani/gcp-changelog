@@ -1,5 +1,17 @@
 # Oracle Database@Google Cloud
 
+## 2026-05-06
+
+### Feature
+
+For Exadata Database Service on Exascale infrastructure and Base Database Service, Oracle Database@Google Cloud supports the following regions and zones:
+
+* `asia-south1-b-r1` (Mumbai, India)
+* `asia-south2-b-r1` (Delhi, India)
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-04-20
 
 ### Feature

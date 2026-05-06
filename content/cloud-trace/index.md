@@ -1,5 +1,19 @@
 # Cloud Trace
 
+## 2026-05-06
+
+### Feature
+
+The following remote MCP servers automatically generate a trace span for
+`tools/call` operations. These spans can help you understand the behavior of
+your agentic applications. For more information, see
+[Investigate MCP calls using Trace](https://docs.cloud.google.com/stackdriver/docs/instrumentation/trace-remote-mcp-server-calls).
+
+* Agent Search
+* AlloyDB for PostgreSQL
+* Google Security Operations
+
+---
 ## 2026-05-01
 
 ### Feature

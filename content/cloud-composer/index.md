@@ -1,5 +1,15 @@
 # Cloud Composer
 
+## 2026-05-06
+
+### Announcement
+
+Cloud Composer 2 environments can no longer be created in
+Johannesburg (africa-south1). We're switching this region to
+supporting only Cloud Composer 3 environments. Existing Cloud Composer 2
+environments in this region aren't affected by this change.
+
+---
 ## 2026-04-22
 
 ### Feature

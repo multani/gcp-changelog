@@ -32,7 +32,7 @@ Administrators:
     This is the new routing behavior that concentrates new chats on busy
     agents.
 
-Documentation coming soon.
+For more information, see [Deltacast routing logic for chat](https://docs.cloud.google.com/contact-center/ccai-platform/docs/multicast_deltacast#deltacast-routing-logic-for-chat).
 
 ### Feature
 
@@ -56,7 +56,7 @@ Administrators:
     - **Create new record**
     - **Reopen record**
 
-Documentation coming soon.
+For more information, see [Configure HubSpot record creation](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-configure-record-creation).
 
 ### Feature
 

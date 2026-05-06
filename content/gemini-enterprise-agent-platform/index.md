@@ -1,5 +1,12 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-06
+
+### Fixed
+
+Fixed an issue with **Audio track extraction (Gemini Embedding 2 only)** where the `audio_track_extraction` feature did not work. For more information, see [Issue #504505771](https://issuetracker.google.com/504505771).
+
+---
 ## 2026-04-28
 
 ### Feature

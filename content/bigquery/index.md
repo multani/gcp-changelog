@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-05-06
+
+### Feature
+
+You can configure BigQuery sharing listings for multiple regions, which
+allows you to share datasets and linked replicas across global geographies
+simultaneously. For more information, see
+[Create a listing](https://docs.cloud.google.com/bigquery/docs/analytics-hub-manage-listings#create_a_listing).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-04-30
 
 ### Breaking

@@ -1,5 +1,12 @@
 # Secure Source Manager
 
+## 2026-05-06
+
+### Feature
+
+You can now use [CODEOWNERS files](https://docs.cloud.google.com/secure-source-manager/docs/codeowners) to define required reviewers for pull requests.
+
+---
 ## 2026-02-06
 
 ### Feature

@@ -4,10 +4,76 @@
     "2026-05-06": [
       {
         "kind": "Announcement",
-        "content": "Cloud Composer 2 environments can no longer be created in\nJohannesburg (africa-south1). We're switching this region to\nsupporting only Cloud Composer 3 environments. Existing Cloud Composer 2\nenvironments in this region aren't affected by this change.",
+        "content": "Managed Airflow (Gen 2) environments can no longer be created in\nJohannesburg (africa-south1). We're switching this region to\nsupporting only Managed Airflow (Gen 3) environments. Existing\nManaged Airflow (Gen 2) environments in this region aren't affected by this\nchange.",
         "summary": {
-          "title": "Composer 2 region update",
-          "summary": "Cloud Composer 2 environments can no longer be created in Johannesburg. This region will now exclusively support Cloud Composer 3 environments. Existing Composer 2 environments in this region will continue to function as usual."
+          "title": "Managed Airflow regional update",
+          "summary": "Managed Airflow (Gen 2) environments can no longer be created in Johannesburg (africa-south1). This region will now only support Managed Airflow (Gen 3) environments. Existing Gen 2 environments remain unaffected."
+        }
+      }
+    ],
+    "2026-04-28": [
+      {
+        "kind": "Feature",
+        "content": "Managed Airflow (Gen 3) environments with Airflow 3 support\n[access with external identities](https://docs.cloud.google.com/composer/docs/composer-3/access-environments-with-workforce-identity-federation)\nthrough workforce identity federation starting from version\ncomposer-3-airflow-3.1.7-build.7.",
+        "summary": {
+          "title": "Managed Airflow 3 Now Supports External Identities",
+          "summary": "Managed Airflow environments (Gen 3) now support Airflow 3. This feature allows you to access your environments using external identities through workforce identity federation, enhancing security and flexibility. This capability is available starting with composer-3-airflow-3.1.7-build.7."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The default version of Airflow is changed to 2.11.1.",
+        "summary": {
+          "title": "Airflow default version updated",
+          "summary": "The default version of Airflow has been updated to 2.11.1. This change ensures that users are utilizing the latest stable release for their workflows."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where DAGs were imported from snapshots even when the\n\"Skip copying Cloud Storage data\" option was selected.",
+        "summary": {
+          "title": "DAG import issue resolved",
+          "summary": "The issue where DAGs were imported from snapshots despite the \"Skip copying Cloud Storage data\" option being selected has been fixed. This ensures that data is not copied when explicitly excluded."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The `GOOGLE_CLOUD_PROJECT` environment variable is now set on schedulers and\ntriggerers. It's no longer required to set the project ID explicitly when\nconfiguring the Secret Manager backend.",
+        "summary": {
+          "title": "Secret Manager backend configuration updated",
+          "summary": "The GOOGLE_CLOUD_PROJECT environment variable is now set on schedulers and triggerers. This eliminates the need to explicitly set the project ID when configuring the Secret Manager backend."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.1.7-build.7](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-7)\n* [composer-3-airflow-2.11.1-build.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-3) (default)\n* [composer-3-airflow-2.10.5-build.36](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-36)",
+        "summary": {
+          "title": "New Airflow versions available",
+          "summary": "New Airflow builds are now available for Managed Airflow (Gen 3). These updates include specific versions of Airflow, such as 3.1.7, 2.11.1 (default), and 2.10.5. Please refer to the documentation for detailed build information and upgrade instructions."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.0-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-0-airflow-2-11-1) (default)\n* [composer-2.17.0-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-0-airflow-2-10-5)",
+        "summary": {
+          "title": "New Managed Airflow Images",
+          "summary": "New images are now available for Managed Airflow (Gen 2), featuring composer-2.17.0 with Airflow versions 2.11.1 and 2.10.5. The composer-2.17.0-airflow-2.11.1 image is set as the default."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "Airflow 2.9.3 is no longer included in Managed Airflow images and builds.",
+        "summary": {
+          "title": "Airflow 2.9.3 No Longer Supported",
+          "summary": "Airflow version 2.9.3 has been removed from managed images and builds. Users should migrate to a supported version to ensure continued access to updates and security patches."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\n\n* composer-3-airflow-2.9.3-build.20\n* composer-3-airflow-2.10.2 builds from build.0 to build.13\n* composer-2.12.1-airflow-\\*",
+        "summary": {
+          "title": "Managed Airflow versions deprecated",
+          "summary": "Certain versions of Managed Airflow are no longer supported. This includes specific builds of composer-3 and composer-2. Please migrate to a supported version to ensure continued service."
         }
       }
     ],

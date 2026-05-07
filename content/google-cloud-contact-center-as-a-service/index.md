@@ -1,5 +1,17 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-05-06
+
+### Announcement
+
+**Mobile SDK for iOS version 2.15.3 patch**
+
+This patch updates the following for the mobile SDK for iOS:
+
+* Fixes an issue where the iOS SDK app crashed when a user clicked **End
+  chat**.
+
+---
 ## 2026-05-04
 
 ### Announcement

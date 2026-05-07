@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2026-05-07
+
+### Feature
+
+**Unified MCP Proxy Configuration in API hub (Preview)**
+
+API hub allows you to create and deploy Model Context Protocol (MCP) discovery proxies. Select specific API operations from your registered catalog, bundle them into an MCP server, and automatically deploy them as discovery proxies in your Apigee project. This feature eliminates the need to manually author MCP specifications in Apigee.
+
+This feature is in [Public Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Manage MCP proxies](https://docs.cloud.google.com/apigee/docs/apihub/manage-mcp-proxies).
+
+---
 ## 2026-04-06
 
 ### Feature

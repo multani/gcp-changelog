@@ -1,5 +1,15 @@
 # Virtual Private Cloud
 
+## 2026-05-06
+
+### Feature
+
+Organization Policy Service custom constraints are available in
+**General Availability** for private services access connections. For more
+information, see
+[Restrict private connections with organization policies](https://docs.cloud.google.com/vpc/docs/private-services-access#org-policies).
+
+---
 ## 2026-04-10
 
 ### Feature

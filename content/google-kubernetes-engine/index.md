@@ -1,5 +1,38 @@
 # Google Kubernetes Engine
 
+## 2026-05-06
+
+### Feature
+
+GKE Pod Snapshots is generally available on clusters that run version
+1.35.3-gke.1234000 or later. For more information, see [About GKE Pod
+snapshots](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/pod-snapshots).
+
+### Feature
+
+In GKE Standard clusters, [live
+migration](https://docs.cloud.google.com/compute/docs/instances/live-migration-process)
+is now supported on Confidential GKE Nodes that use [C3D machine
+series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3d_machines)
+with [AMD
+SEV](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview#amd_sev)
+enabled.
+
+### Fixed
+
+A fix is available for an issue that caused incomplete file reads and premature
+end-of-file (EOF) errors when you used the Cloud Storage FUSE CSI driver on
+ARM64 nodes that use 64 KiB page sizes, such as A4X and A4X Max instances. This
+issue occurred because the kernel read-ahead mechanism triggered read requests
+that exceeded the capacity of the Cloud Storage FUSE layer.
+
+To resolve this issue, upgrade your cluster to one of the following versions:
+
+* 1.33.11-gke.1019000 or later
+* 1.34.6-gke.1154000 or later
+* 1.35.2-gke.1485000 or later
+
+---
 ## 2026-05-01
 
 ### Announcement

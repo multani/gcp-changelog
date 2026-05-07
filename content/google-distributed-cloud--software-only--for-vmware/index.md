@@ -1,5 +1,109 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-05-06
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.35.0-gke.525 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.35.0-gke.525 runs on Kubernetes v1.35.2-gke.300.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Announcement
+
+The following features were added in 1.35.0-gke.525:
+
+* Platform update to Kubernetes 1.35: This release updates the underlying Kubernetes version to 1.35.
+
+  This release requires the use of `cgroupsv2`. Using `cgroupsv1` is no longer supported and cluster creation or upgrades will fail. A preflight check will actively block the operation if `cgroupsv1` is detected.
+  + As part of the sunset of `cgroupsv1`, the legacy `ubuntu`, `ubuntu_containerd`, and `cos` `OSImageType` options are no longer supported in this release.
+  + For more information on migrating to `cgroupsv2`, see the Kubernetes documentation on [migrating to cgroupv2](https://kubernetes.io/docs/concepts/architecture/cgroups/#migrating-cgroupv2).
+  + This release also upgrades the container runtime, containerd, from version 2.0 to 2.1.
+* The Ubuntu image has been upgraded to 24.04 on all node types for 1.35.0-gke.525.
+  When you upgrade your control plane and node pools, the nodes are
+  automatically recreated with the new operating system image.
+* `gkectl` prints the Operation ID and Operation Type to the console after
+  cluster operations.
+* For advanced clusters, the default node pool update policy is changed to parallel
+  instead of sequential. This applies to all advanced clusters (both new and
+  existing upon upgrade). To customize or revert this behavior, use the
+  `nodePoolUpdatePolicy` and `maximumConcurrentNodePoolUpdate` fields in the
+  cluster configuration file.
+* The default Docker bridge IP for advanced clusters has been changed to `169.
+  254.123.1/24` instead of `172.17.0/16`. This change reduces the likelihood of
+  conflicts with user-configured networks. If you use the `172.17.0/16` range
+  for other purposes, cluster creation might fail due to this conflict.
+* `vsphere-csi-controller` in advanced clusters is deployed on the user
+  cluster control plane nodes instead of worker nodes. This architectural
+  change happens automatically during upgrade and does not impact resource
+  sizing recommendations.
+
+### Fixed
+
+The following issues were fixed in 1.35.0-gke.525:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Resolved an issue that caused VMware cluster upgrades from non-advanced
+  clusters to advanced clusters to get stuck. The system attempted to update
+  immutable fields in the Hub membership. With this fix, the cluster operator
+  preserves the original membership fields during the upgrade process instead of
+  attempting to overwrite them so that the migration to an advanced cluster
+  completes successfully.
+* Fixed an issue in Advanced user clusters where the `cloud.google.com/
+  gke-nodepool` label for workload node pools unexpectedly included an `-np`
+  suffix. This caused pods using `nodeSelector` targeting the original pool
+  name (such as Apigee workloads) to fail to schedule. For clusters on older
+  versions experiencing this issue, you can work around it by manually setting
+  the expected label in the node pool configuration.
+* Fixed an issue where setting the deprecated `stackdriver.enableVPC` field to
+  `true` in a cluster configuration file would block upgrades to an Advanced
+  Cluster. The `stackdriver.enableVPC` field has been deprecated and its
+  setting will be ignored during the upgrade validation process. For clusters on
+  older versions experiencing this issue, you can work around it by removing
+  the field or setting it to `false` in your configuration file before
+  upgrading.
+* Fixed an issue where the node-problem-detector was incorrectly deployed onto
+  non-Advanced VMware clusters. This caused the containerd runtime to
+  continuously restart on affected nodes due to incompatible health check
+  configurations, leading to ETCD/CRI failures (such as errors connecting to
+  `/run/containerd/containerd.sock`) and unsuccessful cluster upgrades.
+* Fixed an issue where leading or trailing whitespaces in the proxy.url field,
+  or spaces after commas in the proxy.noProxy list in the cluster configuration
+  file, caused advanced cluster creation or upgrades to fail. This release adds
+  validation to reject such malformed configurations before operations begin.
+  For upgrades, logic has been added to automatically handle and clean up these
+  spaces in the operator cluster state to prevent upgrade failures. If you are
+  using an older version and encounter this issue, ensure that all proxy
+  configuration fields are free of extraneous spaces.
+* Fixed an issue where retrying the gkectl upgrade admin command after a
+  previous failure would fail with a "failed to create credential namespace in
+  bootstrap cluster" error. This occurred because the setup process failed to
+  handle resources that already existed from the previous attempt. This fix
+  resolves the issue described in [`gkectl upgrade admin` fails on retry with "AlreadyExists" errors in the bootstrap cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#gkectl-upgrade-admin-fails-on-retry-with-alreadyexists-errors-in-the-bootstrap-cluster), eliminating the need to manually delete conflicting
+  resources from the bootstrap cluster before retrying.
+* Fixed an issue where the system's root certificates were ignored when a
+  custom CA certificate was configured for a registry mirror or private
+  registry. This caused cluster creation or upgrades to fail with an x509:
+  certificate signed by unknown authority error when attempting to pull images.
+  The system honors both the custom CA and the system's root certificates.
+* Fixed an issue where vSphere VM creation could hang indefinitely, with the
+  operation remaining stuck in the Creating phase and logs repeatedly reporting
+  "VM creation in progress." This fix introduces a one-hour timeout for VM
+  creation and ensures the machine status is updated in Kubernetes during each
+  reconciliation, eliminating the need to manually delete the stuck VM resource
+  from the temporary bootstrap cluster to recover.
+* Fixed an issue where upgrading non-advanced clusters with OIDC configuration
+  to advanced clusters caused users to fail to log in via Anthos Identity
+  Service (AIS) immediately after the upgrade.
+
+---
 ## 2026-04-23
 
 ### Announcement

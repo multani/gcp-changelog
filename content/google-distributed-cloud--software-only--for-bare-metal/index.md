@@ -1,5 +1,108 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-05-06
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.35.0-gke.525 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.35.0-gke.525 runs on Kubernetes v1.35.2-gke.300.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Announcement
+
+The following features were added in 1.35.0-gke.525:
+
+* Platform update to Kubernetes 1.35: This release updates the underlying Kubernetes version to 1.35.
+
+  This release requires the use of `cgroupsv2`. Using `cgroupsv1` is no longer supported and cluster creation or upgrades will fail. A preflight check will actively block the operation if `cgroupsv1` is detected.
+  + For customers using Red Hat Enterprise Linux (RHEL) 7 or 8, which default to `cgroupsv1`, you must manually configure your operating system to enable `cgroupsv2` before upgrading. For instructions, see the Red Hat knowledge base article on [enabling cgroup v2](https://access.redhat.com/articles/3735611).
+  + For more information on migrating to `cgroupsv2`, see the Kubernetes documentation on [migrating to cgroupv2](https://kubernetes.io/docs/concepts/architecture/cgroups/#migrating-cgroupv2).
+  + This release upgrades the container runtime, containerd, from version 2.0 to 2.1.
+* Added a periodic health check to detect stale secret and ConfigMap mounts on
+  Google Kubernetes Engine pods. To account for normal propagation delays, a
+  content mismatch is only reported as an error if the data remains stale for
+  more than 5 minutes.
+* Upgraded the Ansible version to 2.18. This version requires
+  Python 3.9 on target nodes. For customers using Red Hat Enterprise Linux,
+  version 8.10 or later is required because the default Python version in
+  earlier Red Hat 8 releases (Python 3.6) is not supported by Ansible 2.18.
+* You can use the header section of the cluster configuration file to
+  specify registry mirrors for your clusters. This simplifies the management of
+  registry mirrors and provides a more consistent configuration experience. For
+  instructions on how to update or remove these settings, see the [Registry
+  Mirror documentation](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/installing/registry-mirror#header_section).
+* **Preview** Added support for EgressDSCP tagging. With this feature, you can
+  mark IP headers with specific Differentiated Services Code Point (DSCP)
+  values on packets leaving the cluster to prioritize network traffic. To use
+  this feature, you must set `preview.baremetal.cluster.gke.io/traffic-selector:`
+  to `enable` in your cluster configuration and manage traffic selection using
+  the `EgressDSCP` and `TrafficSelector` custom resources. For more information,
+  see [Configure EgressDSCP tagging](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/egress-dscp-tagging.md).
+* `bmctl` prints the Operation ID and OperationType to the console after
+  cluster installation and upgrade operations.
+
+### Fixed
+
+The following issues were fixed in 1.35.0-gke.525:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed an issue where node upgrades could hang indefinitely and bypass the
+  20-minute maintenance timeout. This issue occurred when a node contained
+  completed pods within a namespace that was in a `Terminating` state. Because
+  the Kubernetes Eviction API rejects operations in terminating namespaces, the
+  cluster controller entered an infinite retry loop. The fix updates the drain
+  process to skip eviction for pods in terminal phases, allowing the upgrade to
+  proceed normally.
+* Fixed an issue where concurrent tasks on the same node failed when containerd
+  restarts. After the fix, tasks are locked and run sequentially to ensure each
+  task completes successfully before the next begins. Each lock is held for up
+  to 20 minutes or until the task reaches success or failure.
+  To bypass this safety mechanismrun and run tasks concurrently, add the
+  following annotation to your cluster:
+  `baremetal.cluster.gke.io/concurrent-machine-update: "true"`.
+* Fixed an issue where Metrics API operations—including `kubectl top`,
+  Horizontal Pod Autoscaling, and Vertical Pod Autoscaling could
+  fail with TLS verification errors during certificate authority rotation. This
+  occurred because the leaf certificate was not immediately renewed when the
+  certificate authority was rotated, causing a temporary mismatch between the
+  trusted certificate authority bundle and the certificate presented by the
+  metrics server.
+* Fixed an issue where Cluster CA rotation could hang indefinitely on
+  self-managed clusters, with the bmctl command hanging at the "Trust CA Bundle
+  completed in 0/X machines" stage. This occurred due to a state deadlock
+  during the resource pivot operation (moving resources between management and
+  bootstrap clusters). This fix resolves the deadlock, eliminating the need to
+  manually update cluster fields or remove lock ConfigMaps to recover.
+* Fixed an issue where temporary API server connectivity failures (such as
+  network timeouts) caused the system to unnecessarily re-register and redeploy
+  the GKE Connect agent. This fix prevents these temporary errors from
+  resetting manual or system-applied customizations to the agent deployment,
+  improving cluster stability.
+* Fixed an issue where bmctl could fail to capture the full log for
+  long-running operations, resulting in empty or incomplete job logs in the
+  workspace. This occurred because a strict internal timeout stopped log
+  streaming prematurely. The fix ensures that log streaming continues for the
+  full duration of the operation's pod lifecycle.
+* Fixed an issue in the monitoring component of the cluster operator where
+  delete operations could cause the operator to crash if the resource had no
+  annotations. The fix ensures the system properly handles resources with empty
+  annotation maps, preventing the crash.
+* Fixed an issue where the anet-operator could be scheduled to an unreachable
+  node and become stuck in a Pending state, eventually causing networking to
+  fail. This occurred due to overly permissive scheduling rules. The fix
+  restricts scheduling to prevent the operator from running on unreachable nodes
+  and explicitly places it on control plane nodes to ensure reliability.
+
+---
 ## 2026-04-23
 
 ### Announcement

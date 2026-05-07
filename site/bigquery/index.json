@@ -9,6 +9,14 @@
           "title": "BigQuery multi-region sharing now available",
           "summary": "You can now configure BigQuery sharing listings for multiple regions, allowing you to share datasets and linked replicas across global geographies simultaneously. This feature is now generally available."
         }
+      },
+      {
+        "kind": "Breaking",
+        "content": "Starting June 1, 2026, due to changes in Google Ads data retention policies,\nthe BigQuery Data Transfer Service connectors for [Google\nAds](https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-google-ads), [Search Ads\n360](https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-search-ads), and [Google Analytics\n4](https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-ga4) will stop populating\ndata for backfill runs with dates earlier than 37 months from the current date.\n\nFor more information about the changes to the Google Ads data retention\npolicies, see [New Data Retention Policy for Google Ads starting June 1,\n2026](https://ads-developers.googleblog.com/2026/05/new-data-retention-policy-for-google.html).",
+        "summary": {
+          "title": "BigQuery data backfills changing June 1, 2026",
+          "summary": "Starting June 1, 2026, BigQuery Data Transfer Service connectors for Google Ads, Search Ads 360, and Google Analytics 4 will limit data backfills to the past 37 months due to updated Google Ads data retention policies. This change affects historical data retrieval for these services."
+        }
       }
     ],
     "2026-04-30": [

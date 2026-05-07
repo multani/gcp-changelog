@@ -1,6 +1,32 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-05-06": [
+      {
+        "kind": "Feature",
+        "content": "GKE Pod Snapshots is generally available on clusters that run version\n1.35.3-gke.1234000 or later. For more information, see [About GKE Pod\nsnapshots](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/pod-snapshots).",
+        "summary": {
+          "title": "Pod Snapshots Generally Available",
+          "summary": "GKE Pod Snapshots are now generally available for clusters running version 1.35.3-gke.1234000 or later. This feature allows you to capture the state of your pods for backup and recovery purposes. For more details, please refer to the official documentation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In GKE Standard clusters, [live\nmigration](https://docs.cloud.google.com/compute/docs/instances/live-migration-process)\nis now supported on Confidential GKE Nodes that use [C3D machine\nseries](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3d_machines)\nwith [AMD\nSEV](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview#amd_sev)\nenabled.",
+        "summary": {
+          "title": "Live Migration for Confidential GKE Nodes",
+          "summary": "Live migration is now available for Confidential GKE nodes using C3D machine series with AMD SEV enabled. This enhancement improves the availability and resilience of your confidential workloads running on GKE Standard clusters."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "A fix is available for an issue that caused incomplete file reads and premature\nend-of-file (EOF) errors when you used the Cloud Storage FUSE CSI driver on\nARM64 nodes that use 64 KiB page sizes, such as A4X and A4X Max instances. This\nissue occurred because the kernel read-ahead mechanism triggered read requests\nthat exceeded the capacity of the Cloud Storage FUSE layer.\n\nTo resolve this issue, upgrade your cluster to one of the following versions:\n\n* 1.33.11-gke.1019000 or later\n* 1.34.6-gke.1154000 or later\n* 1.35.2-gke.1485000 or later",
+        "summary": {
+          "title": "Fix for Cloud Storage FUSE driver errors on ARM64",
+          "summary": "A fix is available for an issue causing incomplete file reads and EOF errors with the Cloud Storage FUSE CSI driver on ARM64 nodes with 64 KiB page sizes. This issue was due to the kernel's read-ahead mechanism. Upgrading your cluster to a supported version resolves this problem."
+        }
+      }
+    ],
     "2026-05-01": [
       {
         "kind": "Announcement",

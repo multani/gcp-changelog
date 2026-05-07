@@ -2,9 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-05-01T00:00:00+00:00</updated>
+  <updated>2026-05-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-05-06:feature:0</id>
+    <published>2026-05-06T00:00:00+00:00</published>
+    <updated>2026-05-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE Pod Snapshots is generally available on clusters that run version
+1.35.3-gke.1234000 or later. For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/pod-snapshots">About GKE Pod
+snapshots</a>.</p>]]></content>
+    <summary>GKE Pod Snapshots are now generally available for clusters running version 1.35.3-gke.1234000 or later. This feature allows you to capture the state of your pods for backup and recovery purposes. For more details, please refer to the official documentation.</summary>
+    <title>Feature: Pod Snapshots Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-05-06:feature:1</id>
+    <published>2026-05-06T00:00:00+00:00</published>
+    <updated>2026-05-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE Standard clusters, <a href="https://docs.cloud.google.com/compute/docs/instances/live-migration-process">live
+migration</a>
+is now supported on Confidential GKE Nodes that use <a href="https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3d_machines">C3D machine
+series</a>
+with <a href="https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview#amd_sev">AMD
+SEV</a>
+enabled.</p>]]></content>
+    <summary>Live migration is now available for Confidential GKE nodes using C3D machine series with AMD SEV enabled. This enhancement improves the availability and resilience of your confidential workloads running on GKE Standard clusters.</summary>
+    <title>Feature: Live Migration for Confidential GKE Nodes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-05-06:fixed:2</id>
+    <published>2026-05-06T00:00:00+00:00</published>
+    <updated>2026-05-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A fix is available for an issue that caused incomplete file reads and premature
+end-of-file (EOF) errors when you used the Cloud Storage FUSE CSI driver on
+ARM64 nodes that use 64 KiB page sizes, such as A4X and A4X Max instances. This
+issue occurred because the kernel read-ahead mechanism triggered read requests
+that exceeded the capacity of the Cloud Storage FUSE layer.</p>
+<p>To resolve this issue, upgrade your cluster to one of the following versions:</p>
+<ul>
+<li>1.33.11-gke.1019000 or later</li>
+<li>1.34.6-gke.1154000 or later</li>
+<li>1.35.2-gke.1485000 or later</li>
+</ul>]]></content>
+    <summary>A fix is available for an issue causing incomplete file reads and EOF errors with the Cloud Storage FUSE CSI driver on ARM64 nodes with 64 KiB page sizes. This issue was due to the kernel's read-ahead mechanism. Upgrading your cluster to a supported version resolves this problem.</summary>
+    <title>Fixed: Fix for Cloud Storage FUSE driver errors on ARM64</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

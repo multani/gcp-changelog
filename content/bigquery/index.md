@@ -12,6 +12,19 @@ This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
+### Breaking
+
+Starting June 1, 2026, due to changes in Google Ads data retention policies,
+the BigQuery Data Transfer Service connectors for [Google
+Ads](https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-google-ads), [Search Ads
+360](https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-search-ads), and [Google Analytics
+4](https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-ga4) will stop populating
+data for backfill runs with dates earlier than 37 months from the current date.
+
+For more information about the changes to the Google Ads data retention
+policies, see [New Data Retention Policy for Google Ads starting June 1,
+2026](https://ads-developers.googleblog.com/2026/05/new-data-retention-policy-for-google.html).
+
 ---
 ## 2026-04-30
 

@@ -50,7 +50,7 @@ that have many reads contending with fewer writes. For more information, see
 Spanner supports Gemini Cloud Assist investigation
 capabilities. You can create, run, and edit
 [Gemini Cloud Assist investigations](https://docs.cloud.google.com/cloud-assist/investigations)
-only if you have a [Premium support contract](https://docs.cloud.google.com/support/premium).
+only if you have a [Premium support contract](https://cloud.google.com/support/premium).
 
 For more information, see
 [monitor and troubleshoot your Spanner instance with AI assistance](https://docs.cloud.google.com/spanner/docs/monitor-troubleshoot-with-ai).

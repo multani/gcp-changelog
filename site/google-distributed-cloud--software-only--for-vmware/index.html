@@ -2448,8 +2448,104 @@
 
 
 <h1 id="google-distributed-cloud-software-only-for-vmware">Google Distributed Cloud (software only) for VMware</h1>
-<h2 id="2026-04-23">2026-04-23</h2>
+<h2 id="2026-05-06">2026-05-06</h2>
 <h3 id="announcement">Announcement</h3>
+<p>Google Distributed Cloud (software only) for VMware 1.35.0-gke.525 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.35.0-gke.525 runs on Kubernetes v1.35.2-gke.300.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>
+<h3 id="announcement_1">Announcement</h3>
+<p>The following features were added in 1.35.0-gke.525:</p>
+<ul>
+<li>Platform update to Kubernetes 1.35: This release updates the underlying Kubernetes version to 1.35.</li>
+</ul>
+<p>This release requires the use of <code>cgroupsv2</code>. Using <code>cgroupsv1</code> is no longer supported and cluster creation or upgrades will fail. A preflight check will actively block the operation if <code>cgroupsv1</code> is detected.
+  + As part of the sunset of <code>cgroupsv1</code>, the legacy <code>ubuntu</code>, <code>ubuntu_containerd</code>, and <code>cos</code> <code>OSImageType</code> options are no longer supported in this release.
+  + For more information on migrating to <code>cgroupsv2</code>, see the Kubernetes documentation on <a href="https://kubernetes.io/docs/concepts/architecture/cgroups/#migrating-cgroupv2">migrating to cgroupv2</a>.
+  + This release also upgrades the container runtime, containerd, from version 2.0 to 2.1.
+* The Ubuntu image has been upgraded to 24.04 on all node types for 1.35.0-gke.525.
+  When you upgrade your control plane and node pools, the nodes are
+  automatically recreated with the new operating system image.
+* <code>gkectl</code> prints the Operation ID and Operation Type to the console after
+  cluster operations.
+* For advanced clusters, the default node pool update policy is changed to parallel
+  instead of sequential. This applies to all advanced clusters (both new and
+  existing upon upgrade). To customize or revert this behavior, use the
+  <code>nodePoolUpdatePolicy</code> and <code>maximumConcurrentNodePoolUpdate</code> fields in the
+  cluster configuration file.
+* The default Docker bridge IP for advanced clusters has been changed to <code>169.
+  254.123.1/24</code> instead of <code>172.17.0/16</code>. This change reduces the likelihood of
+  conflicts with user-configured networks. If you use the <code>172.17.0/16</code> range
+  for other purposes, cluster creation might fail due to this conflict.
+* <code>vsphere-csi-controller</code> in advanced clusters is deployed on the user
+  cluster control plane nodes instead of worker nodes. This architectural
+  change happens automatically during upgrade and does not impact resource
+  sizing recommendations.</p>
+<h3 id="fixed">Fixed</h3>
+<p>The following issues were fixed in 1.35.0-gke.525:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Resolved an issue that caused VMware cluster upgrades from non-advanced
+  clusters to advanced clusters to get stuck. The system attempted to update
+  immutable fields in the Hub membership. With this fix, the cluster operator
+  preserves the original membership fields during the upgrade process instead of
+  attempting to overwrite them so that the migration to an advanced cluster
+  completes successfully.</li>
+<li>Fixed an issue in Advanced user clusters where the <code>cloud.google.com/
+  gke-nodepool</code> label for workload node pools unexpectedly included an <code>-np</code>
+  suffix. This caused pods using <code>nodeSelector</code> targeting the original pool
+  name (such as Apigee workloads) to fail to schedule. For clusters on older
+  versions experiencing this issue, you can work around it by manually setting
+  the expected label in the node pool configuration.</li>
+<li>Fixed an issue where setting the deprecated <code>stackdriver.enableVPC</code> field to
+  <code>true</code> in a cluster configuration file would block upgrades to an Advanced
+  Cluster. The <code>stackdriver.enableVPC</code> field has been deprecated and its
+  setting will be ignored during the upgrade validation process. For clusters on
+  older versions experiencing this issue, you can work around it by removing
+  the field or setting it to <code>false</code> in your configuration file before
+  upgrading.</li>
+<li>Fixed an issue where the node-problem-detector was incorrectly deployed onto
+  non-Advanced VMware clusters. This caused the containerd runtime to
+  continuously restart on affected nodes due to incompatible health check
+  configurations, leading to ETCD/CRI failures (such as errors connecting to
+  <code>/run/containerd/containerd.sock</code>) and unsuccessful cluster upgrades.</li>
+<li>Fixed an issue where leading or trailing whitespaces in the proxy.url field,
+  or spaces after commas in the proxy.noProxy list in the cluster configuration
+  file, caused advanced cluster creation or upgrades to fail. This release adds
+  validation to reject such malformed configurations before operations begin.
+  For upgrades, logic has been added to automatically handle and clean up these
+  spaces in the operator cluster state to prevent upgrade failures. If you are
+  using an older version and encounter this issue, ensure that all proxy
+  configuration fields are free of extraneous spaces.</li>
+<li>Fixed an issue where retrying the gkectl upgrade admin command after a
+  previous failure would fail with a "failed to create credential namespace in
+  bootstrap cluster" error. This occurred because the setup process failed to
+  handle resources that already existed from the previous attempt. This fix
+  resolves the issue described in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#gkectl-upgrade-admin-fails-on-retry-with-alreadyexists-errors-in-the-bootstrap-cluster"><code>gkectl upgrade admin</code> fails on retry with "AlreadyExists" errors in the bootstrap cluster</a>, eliminating the need to manually delete conflicting
+  resources from the bootstrap cluster before retrying.</li>
+<li>Fixed an issue where the system's root certificates were ignored when a
+  custom CA certificate was configured for a registry mirror or private
+  registry. This caused cluster creation or upgrades to fail with an x509:
+  certificate signed by unknown authority error when attempting to pull images.
+  The system honors both the custom CA and the system's root certificates.</li>
+<li>Fixed an issue where vSphere VM creation could hang indefinitely, with the
+  operation remaining stuck in the Creating phase and logs repeatedly reporting
+  "VM creation in progress." This fix introduces a one-hour timeout for VM
+  creation and ensures the machine status is updated in Kubernetes during each
+  reconciliation, eliminating the need to manually delete the stuck VM resource
+  from the temporary bootstrap cluster to recover.</li>
+<li>Fixed an issue where upgrading non-advanced clusters with OIDC configuration
+  to advanced clusters caused users to fail to log in via Anthos Identity
+  Service (AIS) immediately after the upgrade.</li>
+</ul>
+<hr />
+<h2 id="2026-04-23">2026-04-23</h2>
+<h3 id="announcement_2">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.1100-gke.84 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.32.1100-gke.84 runs on Kubernetes v1.32.13-gke.100.</p>
@@ -2459,7 +2555,7 @@ qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>The following issues were fixed in 1.32.1100-gke.84:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
@@ -2472,7 +2568,7 @@ gcloud CLI, and Terraform.</p>
 </ul>
 <hr />
 <h2 id="2026-04-22">2026-04-22</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.700-gke.71 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.33.700-gke.71 runs on Kubernetes v1.33.5-gke.2200.</p>
@@ -2482,7 +2578,7 @@ qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>The following issues were fixed in 1.33.700-gke.71:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/version-history">Vulnerability fixes</a>.</li>
@@ -2523,7 +2619,7 @@ gcloud CLI, and Terraform.</p>
 </ul>
 <hr />
 <h2 id="2026-04-15">2026-04-15</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.34.300-gke.59 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.34.300-gke.59 runs on Kubernetes v1.34.3-gke.400.</p>
@@ -2533,7 +2629,7 @@ qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>The following issues were fixed in 1.34.300-gke.59:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
@@ -2567,12 +2663,12 @@ gcloud CLI, and Terraform.</p>
 </ul>
 <hr />
 <h2 id="2026-03-27">2026-03-27</h2>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>The following issues were fixed in 1.33.600-gke.40:</p>
 <ul>
 <li>Fixed an issue where if updates or upgrades to advanced admin clusters failed and the external bootstrap cluster was deleted, you could lose critical data.</li>
 </ul>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>The following issues were fixed in 1.32.1000-gke.57:</p>
 <ul>
 <li>Fixed an issue where the node-problem-detector was incorrectly deployed onto
@@ -2597,7 +2693,7 @@ gcloud CLI, and Terraform.</p>
 <li>Fixed an issue where if updates or upgrades to advanced admin clusters failed
   and the external bootstrap cluster was deleted, you could lose critical data.</li>
 </ul>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.1000-gke.57 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.32.1000-gke.57 runs on Kubernetes v1.32.13-gke.1000.</p>
@@ -2607,7 +2703,7 @@ qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.600-gke.40 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.33.600-gke.40 runs on Kubernetes 1.33.5-gke.2200.</p>
@@ -2619,7 +2715,7 @@ available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2026-03-23">2026-03-23</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.600-gke.39 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.33.600-gke.39 runs on Kubernetes v1.33.5-gke.2200.</p>
@@ -2629,7 +2725,7 @@ qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
 available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>The following issues were fixed in 1.33.600-gke.39:</p>
 <ul>
 <li>Fixed an issue where the node-problem-detector was incorrectly deployed onto
@@ -2659,7 +2755,7 @@ gcloud CLI, and Terraform.</p>
 <p>If an update or upgrade to advanced admin clusters fails in versions 1.32 and newer, don't delete the external bootstrap cluster from the workstation. The bootstrap cluster contains required information about states that you need to resume the update or upgrade. If an update or upgrade to admin clusters fails, and you re-run <code>gkectl upgrade admin</code>, you must add the flag <code>--reuse-bootstrap-cluster</code> or you can lose critical data.</p>
 <hr />
 <h2 id="2026-03-18">2026-03-18</h2>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>The following issues were fixed in 1.34.200-gke.68:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
@@ -2671,7 +2767,7 @@ gcloud CLI, and Terraform.</p>
   and users would see the <code>VSphereMachine</code> remaining in the <code>Creating</code> phase
   without actionable error messages.</li>
 </ul>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.34.200-gke.68 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.</p>
 <p><strong>Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for <a href="#March_20_2026">March 20, 2026</a>.</strong></p>
@@ -2684,12 +2780,12 @@ available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2026-03-05">2026-03-05</h2>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p>The following issues were fixed in 1.32.900-gke.60:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.900-gke.60 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.</p>
 <p><strong>Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for <a href="#March_20_2026">March 20, 2026</a>.</strong></p>
@@ -2711,12 +2807,12 @@ connectivity failures during cluster creation or operation can occur.</p>
 advanced clusters is now explicitly set to 169.254.123.1/24.</p>
 <hr />
 <h2 id="2026-03-03">2026-03-03</h2>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>The following issues were fixed in 1.33.500-gke.63:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware V2 (Advanced Clusters) versions 1.31
 and earlier were missing a configuration step in the node startup script that
 defined the Docker default bridge IP range. As a result, Docker defaulted to
@@ -2725,7 +2821,7 @@ using the 172.17.0.0/16 (and in some cases 172.16.0.0/16) address range.</p>
 connectivity failures during cluster creation or operation can occur.</p>
 <p>This issue has been resolved. The Docker default bridge IP for cluster nodes in
 advanced clusters is now explicitly set to 169.254.123.1/24.</p>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.500-gke.63 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.</p>
 <p><strong>Important: There is a mandatory flag for admin cluster upgrades; see the updated entry for <a href="#March_20_2026">March 20, 2026</a>.</strong></p>
@@ -2743,7 +2839,7 @@ gcloud CLI, and Terraform.</p>
 information, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/update-or-upgrade-to-adv-cluster#upgrade-cert-manager">Upgrade to <code>cert-manager</code> bundled with advanced clusters</a>.</p>
 <hr />
 <h2 id="2026-02-13">2026-02-13</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.34.100-gke.93 is now available
 for download. To upgrade, see Upgrade a cluster. Google Distributed Cloud
 1.34.100-gke.93 runs on Kubernetes v1.34.1-gke.4700.</p>
@@ -2759,7 +2855,7 @@ gcloud CLI, and Terraform.</p>
 cluster control plane nodes.</p>
 <hr />
 <h2 id="2026-02-05">2026-02-05</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.800-gke.126 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.32.800-gke.126 runs on Kubernetes v1.32.11-gke.200.</p>
@@ -2771,7 +2867,7 @@ available for use with GKE On-Prem API clients: the Google Cloud console, the
 gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2026-02-04">2026-02-04</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.400-gke.113 is now available
 for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
 Google Distributed Cloud 1.33.400-gke.113 runs on Kubernetes v1.33.5-gke.1900.</p>
@@ -2791,7 +2887,7 @@ via network-based vectors.</p>
 <p>For more details, see the <a href="https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-006-gdcvmware">GCP-2026-006 security bulletin</a>.</p>
 <hr />
 <h2 id="2026-01-08">2026-01-08</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.31.1200-gke.60 is now
 available for
 <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>.
@@ -2808,7 +2904,7 @@ available for use with
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2025-12-11">2025-12-11</h2>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>The following issues were fixed in 1.34.0-gke.566:</p>
 <ul>
 <li>Fixed vulnerabilities listed in
@@ -2821,7 +2917,7 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
   hosts.toml <code>containerd</code> config file.</li>
 <li>Upgrade preflight checks now validate <code>PodDisruptionBudgets</code>.</li>
 </ul>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.34.0-gke.566 is now
 available for
 <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>.
@@ -2845,12 +2941,12 @@ information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/update-or-upgrade-to-adv-cluster#key_differences_after_moving_to_advanced_clusters">Key differences after moving to advanced clusters</a>.</p>
 <hr />
 <h2 id="2025-12-05">2025-12-05</h2>
-<h3 id="fixed_10">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <p>The following issues were fixed in 1.33.300-gke.60:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.300-gke.60 is
 available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To
@@ -2868,7 +2964,7 @@ clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2025-12-02">2025-12-02</h2>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.700-gke.64 is
 available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To
@@ -2884,14 +2980,14 @@ release.</p>
 available for use with <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API
 clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>The following issues were fixed in 1.32.700-gke.64:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-11-12">2025-11-12</h2>
-<h3 id="fixed_12">Fixed</h3>
+<h3 id="fixed_13">Fixed</h3>
 <p>The following issues were fixed in 1.33.200-gke.70:</p>
 <ul>
 <li>Fixed <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#nonha-to-ha-adv-update-fail">an
@@ -2901,7 +2997,7 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability
   fixes</a>.</li>
 </ul>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.31.1100-gke.40 is
 available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To
@@ -2917,12 +3013,12 @@ release.</p>
 available for use with <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API
 clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_13">Fixed</h3>
+<h3 id="fixed_14">Fixed</h3>
 <p>The following issues were fixed in 1.31.1100-gke.40:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.200-gke.70 is
 available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To
@@ -2940,7 +3036,7 @@ clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2025-10-29">2025-10-29</h2>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.600-gke.53 is
 available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To
@@ -2956,14 +3052,14 @@ release.</p>
 available for use with <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API
 clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_14">Fixed</h3>
+<h3 id="fixed_15">Fixed</h3>
 <p>The following issues were fixed in 1.32.600-gke.53:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.31.1000-gke.44 is
 available for
 <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To
@@ -2979,47 +3075,47 @@ release.</p>
 available for use with <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API
 clients</a>:
 the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_15">Fixed</h3>
+<h3 id="fixed_16">Fixed</h3>
 <p>The following issues were fixed in 1.31.1000-gke.44:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-10-02">2025-10-02</h2>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.100-gke.89 is now available for <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Distributed Cloud 1.33.100-gke.89 runs on Kubernetes v1.33.4-gke.900.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_16">Fixed</h3>
+<h3 id="fixed_17">Fixed</h3>
 <p>The following issues were fixed in 1.33.100-gke.89:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.500-gke.48 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Distributed Cloud 1.32.500-gke.48 runs on Kubernetes v1.32.8-gke.500.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_17">Fixed</h3>
+<h3 id="fixed_18">Fixed</h3>
 <p>The following issues were fixed in 1.32.500-gke.48:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.31.900-gke.38 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Distributed Cloud 1.31.900-gke.38 runs on Kubernetes v1.31.12-gke.200.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_18">Fixed</h3>
+<h3 id="fixed_19">Fixed</h3>
 <p>The following issues were fixed in 1.31.900-gke.38:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.33.0-gke.799 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Distributed Cloud 1.33.0-gke.799 runs on Kubernetes v1.33.2-gke.700.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
@@ -3040,119 +3136,119 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
   that use Controlplane V2. This change enhances the security, reliability, and
   performance of the authentication service.</li>
 </ul>
-<h3 id="fixed_19">Fixed</h3>
+<h3 id="fixed_20">Fixed</h3>
 <p>The following issues were fixed in 1.33.0-gke.799:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-08-28">2025-08-28</h2>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.400-gke.68 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.400-gke.68 runs on Kubernetes v1.32.7-gke.200.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_20">Fixed</h3>
+<h3 id="fixed_21">Fixed</h3>
 <p>The following issues were fixed in 1.32.400-gke.68:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.31.800-gke.32 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.31.800-gke.32 runs on Kubernetes v1.31.10-gke.300.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.30.1200-gke.63 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.30.1200-gke.63 runs on Kubernetes v1.30.12-gke.1200. This is the final patch for the 1.30 minor release.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_21">Fixed</h3>
+<h3 id="fixed_22">Fixed</h3>
 <p>The following issues were fixed in 1.30.1200-gke.63:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-08-08">2025-08-08</h2>
-<h3 id="fixed_22">Fixed</h3>
+<h3 id="fixed_23">Fixed</h3>
 <p>The following issues were fixed in 1.32.300-gke.85:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.300-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.300-gke.85 runs on Kubernetes v1.32.6-gke.200.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.300-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.300-gke.85 runs on Kubernetes v1.32.6-gke.200.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_23">Fixed</h3>
+<h3 id="fixed_24">Fixed</h3>
 <p>The following issues were fixed in 1.32.300-gke.85:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-07-22">2025-07-22</h2>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_32">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.31.700-gke.72 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.31.700-gke.72 runs on Kubernetes v1.31.10-gke.200.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_24">Fixed</h3>
+<h3 id="fixed_25">Fixed</h3>
 <p>The following issues were fixed in 1.31.700-gke.72:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="announcement_31">Announcement</h3>
+<h3 id="announcement_33">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.30.1100-gke.67 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.30.1100-gke.67 runs on Kubernetes v1.30.12-gke.800.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_25">Fixed</h3>
+<h3 id="fixed_26">Fixed</h3>
 <p>The following issues were fixed in 1.30.1100-gke.67:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-07-17">2025-07-17</h2>
-<h3 id="announcement_32">Announcement</h3>
+<h3 id="announcement_34">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.200-gke.104 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.200-gke.104 runs on Kubernetes v1.32.4-gke.1000.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_26">Fixed</h3>
+<h3 id="fixed_27">Fixed</h3>
 <p>The following issues were fixed in 1.32.200-gke.104:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_33">Announcement</h3>
+<h3 id="announcement_35">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.31.600-gke.85 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.31.600-gke.85 runs on Kubernetes v1.31.8-gke.100.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_27">Fixed</h3>
+<h3 id="fixed_28">Fixed</h3>
 <p>The following issues were fixed in 1.31.600-gke.85:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_34">Announcement</h3>
+<h3 id="announcement_36">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.30.1000-gke.83 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.30.1000-gke.83 runs on Kubernetes v1.30.12-gke.100.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_28">Fixed</h3>
+<h3 id="fixed_29">Fixed</h3>
 <p>The following issues were fixed in 1.30.1000-gke.83:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="announcement_35">Announcement</h3>
+<h3 id="announcement_37">Announcement</h3>
 <p>Google Distributed Cloud (software only) for VMware 1.32.100-gke.106 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.100-gke.106 runs on Kubernetes v1.32.4-gke.200.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
@@ -3169,6 +3265,9 @@ the Google Cloud console, the gcloud CLI, and Terraform.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-distributed-cloud-software-only-for-vmware">Google Distributed Cloud (software only) for VMware</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-06" class="nav-link">2026-05-06</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-23" class="nav-link">2026-04-23</a>
           </li>

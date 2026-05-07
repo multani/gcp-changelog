@@ -2457,9 +2457,19 @@ simultaneously. For more information, see
 This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
 (GA).</p>
+<h3 id="breaking">Breaking</h3>
+<p>Starting June 1, 2026, due to changes in Google Ads data retention policies,
+the BigQuery Data Transfer Service connectors for <a href="https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-google-ads">Google
+Ads</a>, <a href="https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-search-ads">Search Ads
+360</a>, and <a href="https://docs.cloud.google.com/bigquery/docs/transfer-changes#June01-ga4">Google Analytics
+4</a> will stop populating
+data for backfill runs with dates earlier than 37 months from the current date.</p>
+<p>For more information about the changes to the Google Ads data retention
+policies, see <a href="https://ads-developers.googleblog.com/2026/05/new-data-retention-policy-for-google.html">New Data Retention Policy for Google Ads starting June 1,
+2026</a>.</p>
 <hr />
 <h2 id="2026-04-30">2026-04-30</h2>
-<h3 id="breaking">Breaking</h3>
+<h3 id="breaking_1">Breaking</h3>
 <p>Starting May 7, 2026, new transfer configurations that transfer data from Google Ads using the
 BigQuery Data Transfer Service will require <a href="https://ads-developers.googleblog.com/2026/04/multi-factor-authentication-requirement.html">Multi-factor authentication (MFA)
 for individual user
@@ -2468,7 +2478,7 @@ For more information, see <a href="https://docs.cloud.google.com/bigquery/docs/t
 2026</a>.</p>
 <hr />
 <h2 id="2026-04-29">2026-04-29</h2>
-<h3 id="breaking_1">Breaking</h3>
+<h3 id="breaking_2">Breaking</h3>
 <p><a href="https://docs.cloud.google.com/dataform/docs/strict-act-as-mode">Strict act-as mode</a>
 is enforced globally for all Dataform repositories, requiring the use of a
 custom service account or user credentials for running Dataform workflows,
@@ -3257,7 +3267,7 @@ resource-intensive in the past day. This feature is in
 <p>BigQuery is now available in the <a href="https://docs.cloud.google.com/bigquery/docs/locations#regions">Bangkok (<code>asia-southeast3</code>) region</a>.</p>
 <hr />
 <h2 id="2026-01-19">2026-01-19</h2>
-<h3 id="breaking_2">Breaking</h3>
+<h3 id="breaking_3">Breaking</h3>
 <p><a href="https://docs.cloud.google.com/dataform/docs/sql-workflows">Dataform workflows</a>,
 <a href="https://docs.cloud.google.com/bigquery/docs/orchestrate-notebooks">BigQuery notebooks</a>,
 <a href="https://docs.cloud.google.com/bigquery/docs/schedule-pipelines">pipelines</a>,
@@ -3848,7 +3858,7 @@ customer data is protected and processed by Gemini in BigQuery.</p>
 <p>An updated version of the <a href="https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#odbc_release_3151022">ODBC driver for BigQuery</a> is now available.</p>
 <hr />
 <h2 id="2025-10-08">2025-10-08</h2>
-<h3 id="breaking_3">Breaking</h3>
+<h3 id="breaking_4">Breaking</h3>
 <p>The <a href="https://docs.cloud.google.com/bigquery/quotas#query_jobs">default limit of <code>QueryUsagePerDay</code></a> for
 on-demand pricing has changed. The default limit of all new projects is now 200
 TiB. For existing projects, the default limit has been set based on your

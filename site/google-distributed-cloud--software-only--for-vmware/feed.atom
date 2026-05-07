@@ -2,9 +2,130 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-04-23T00:00:00+00:00</updated>
+  <updated>2026-05-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-06:announcement:0</id>
+    <published>2026-05-06T00:00:00+00:00</published>
+    <updated>2026-05-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.35.0-gke.525 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.35.0-gke.525 runs on Kubernetes v1.35.2-gke.300.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>Google Distributed Cloud for VMware 1.35.0-gke.525 is now available. This release runs on Kubernetes v1.35.2-gke.300 and includes important updates. Please check storage partner compatibility and note the typical 7-14 day rollout period for API clients.</summary>
+    <title>Announcement: New version of GDC for VMware available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-06:announcement:1</id>
+    <published>2026-05-06T00:00:00+00:00</published>
+    <updated>2026-05-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following features were added in 1.35.0-gke.525:</p>
+<ul>
+<li>Platform update to Kubernetes 1.35: This release updates the underlying Kubernetes version to 1.35.</li>
+</ul>
+<p>This release requires the use of <code>cgroupsv2</code>. Using <code>cgroupsv1</code> is no longer supported and cluster creation or upgrades will fail. A preflight check will actively block the operation if <code>cgroupsv1</code> is detected.
+  + As part of the sunset of <code>cgroupsv1</code>, the legacy <code>ubuntu</code>, <code>ubuntu_containerd</code>, and <code>cos</code> <code>OSImageType</code> options are no longer supported in this release.
+  + For more information on migrating to <code>cgroupsv2</code>, see the Kubernetes documentation on <a href="https://kubernetes.io/docs/concepts/architecture/cgroups/#migrating-cgroupv2">migrating to cgroupv2</a>.
+  + This release also upgrades the container runtime, containerd, from version 2.0 to 2.1.
+* The Ubuntu image has been upgraded to 24.04 on all node types for 1.35.0-gke.525.
+  When you upgrade your control plane and node pools, the nodes are
+  automatically recreated with the new operating system image.
+* <code>gkectl</code> prints the Operation ID and Operation Type to the console after
+  cluster operations.
+* For advanced clusters, the default node pool update policy is changed to parallel
+  instead of sequential. This applies to all advanced clusters (both new and
+  existing upon upgrade). To customize or revert this behavior, use the
+  <code>nodePoolUpdatePolicy</code> and <code>maximumConcurrentNodePoolUpdate</code> fields in the
+  cluster configuration file.
+* The default Docker bridge IP for advanced clusters has been changed to <code>169.
+  254.123.1/24</code> instead of <code>172.17.0/16</code>. This change reduces the likelihood of
+  conflicts with user-configured networks. If you use the <code>172.17.0/16</code> range
+  for other purposes, cluster creation might fail due to this conflict.
+* <code>vsphere-csi-controller</code> in advanced clusters is deployed on the user
+  cluster control plane nodes instead of worker nodes. This architectural
+  change happens automatically during upgrade and does not impact resource
+  sizing recommendations.</p>]]></content>
+    <summary>The latest update introduces Kubernetes 1.35, requiring cgroupsv2 and upgrading the Ubuntu image to 24.04. Key changes include updated container runtimes, improved gkectl output, and modifications to node pool update policies and Docker bridge IPs for advanced clusters.</summary>
+    <title>Announcement: Kubernetes 1.35 Update and New Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-06:fixed:2</id>
+    <published>2026-05-06T00:00:00+00:00</published>
+    <updated>2026-05-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.0-gke.525:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Resolved an issue that caused VMware cluster upgrades from non-advanced
+  clusters to advanced clusters to get stuck. The system attempted to update
+  immutable fields in the Hub membership. With this fix, the cluster operator
+  preserves the original membership fields during the upgrade process instead of
+  attempting to overwrite them so that the migration to an advanced cluster
+  completes successfully.</li>
+<li>Fixed an issue in Advanced user clusters where the <code>cloud.google.com/
+  gke-nodepool</code> label for workload node pools unexpectedly included an <code>-np</code>
+  suffix. This caused pods using <code>nodeSelector</code> targeting the original pool
+  name (such as Apigee workloads) to fail to schedule. For clusters on older
+  versions experiencing this issue, you can work around it by manually setting
+  the expected label in the node pool configuration.</li>
+<li>Fixed an issue where setting the deprecated <code>stackdriver.enableVPC</code> field to
+  <code>true</code> in a cluster configuration file would block upgrades to an Advanced
+  Cluster. The <code>stackdriver.enableVPC</code> field has been deprecated and its
+  setting will be ignored during the upgrade validation process. For clusters on
+  older versions experiencing this issue, you can work around it by removing
+  the field or setting it to <code>false</code> in your configuration file before
+  upgrading.</li>
+<li>Fixed an issue where the node-problem-detector was incorrectly deployed onto
+  non-Advanced VMware clusters. This caused the containerd runtime to
+  continuously restart on affected nodes due to incompatible health check
+  configurations, leading to ETCD/CRI failures (such as errors connecting to
+  <code>/run/containerd/containerd.sock</code>) and unsuccessful cluster upgrades.</li>
+<li>Fixed an issue where leading or trailing whitespaces in the proxy.url field,
+  or spaces after commas in the proxy.noProxy list in the cluster configuration
+  file, caused advanced cluster creation or upgrades to fail. This release adds
+  validation to reject such malformed configurations before operations begin.
+  For upgrades, logic has been added to automatically handle and clean up these
+  spaces in the operator cluster state to prevent upgrade failures. If you are
+  using an older version and encounter this issue, ensure that all proxy
+  configuration fields are free of extraneous spaces.</li>
+<li>Fixed an issue where retrying the gkectl upgrade admin command after a
+  previous failure would fail with a "failed to create credential namespace in
+  bootstrap cluster" error. This occurred because the setup process failed to
+  handle resources that already existed from the previous attempt. This fix
+  resolves the issue described in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#gkectl-upgrade-admin-fails-on-retry-with-alreadyexists-errors-in-the-bootstrap-cluster"><code>gkectl upgrade admin</code> fails on retry with "AlreadyExists" errors in the bootstrap cluster</a>, eliminating the need to manually delete conflicting
+  resources from the bootstrap cluster before retrying.</li>
+<li>Fixed an issue where the system's root certificates were ignored when a
+  custom CA certificate was configured for a registry mirror or private
+  registry. This caused cluster creation or upgrades to fail with an x509:
+  certificate signed by unknown authority error when attempting to pull images.
+  The system honors both the custom CA and the system's root certificates.</li>
+<li>Fixed an issue where vSphere VM creation could hang indefinitely, with the
+  operation remaining stuck in the Creating phase and logs repeatedly reporting
+  "VM creation in progress." This fix introduces a one-hour timeout for VM
+  creation and ensures the machine status is updated in Kubernetes during each
+  reconciliation, eliminating the need to manually delete the stuck VM resource
+  from the temporary bootstrap cluster to recover.</li>
+<li>Fixed an issue where upgrading non-advanced clusters with OIDC configuration
+  to advanced clusters caused users to fail to log in via Anthos Identity
+  Service (AIS) immediately after the upgrade.</li>
+</ul>]]></content>
+    <summary>Version 1.35.0-gke.525 addresses several critical issues including stuck cluster upgrades, incorrect node pool labels, and problems with custom CA certificates. This release also resolves vulnerabilities and improves the reliability of VM creation and cluster operations.</summary>
+    <title>Fixed: Fixed multiple issues in 1.35.0-gke.525</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

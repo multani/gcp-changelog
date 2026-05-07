@@ -9,8 +9,6 @@ Cloud Workstations UI supports additional machine series and types, including
 You can also select **Confidential C3 standard** machine types. For more
 information, see [Available machine types](https://docs.cloud.google.com/workstations/docs/available-machine-types).
 
-### Feature
-
 The [preconfigured base images](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images)
 include a notification when the `running_timeout` for the workstation is
 close to being reached.

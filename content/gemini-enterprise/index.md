@@ -1,10 +1,39 @@
 # Gemini Enterprise
 
+## 2026-05-07
+
+### Feature
+
+**Gemini Enterprise: Data store for Google Sites (Preview)**
+
+You can connect Google Sites data stores to Gemini Enterprise.
+
+Support for Google Sites data stores is in Public Preview. For more
+information, see [Sync from Google Sites](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-sites).
+
+---
+## 2026-05-06
+
+### Feature
+
+**Gemini Enterprise: New data stores (Public Preview)**
+
+The following data stores are available in Gemini Enterprise:
+
+* [Mermaid Chart](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/mermaid_chart)
+* [Blockscout](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/blockscout)
+* [Open Targets](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/open_targets)
+* [Apollo GraphOS MCP Tools](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/apollo-graphos)
+
+These data stores are in Public Preview. For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+---
 ## 2026-05-05
 
 ### Feature
 
-**Gemini Enterprise: New data store connectors (Public Preview)**
+**Gemini Enterprise: New data stores (Public Preview)**
 
 The following data store are available in Gemini Enterprise:
 

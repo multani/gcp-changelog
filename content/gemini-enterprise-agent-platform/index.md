@@ -1,10 +1,37 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-07
+
+### Change
+
+**Gemini 3.1 Flash-Lite is now generally available**
+
+Our most cost-efficient Gemini model, **3.1 Flash-Lite**, is out of preview and
+is now generally available. For technical information on this model, see the
+[model information card](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite).
+
+---
 ## 2026-05-06
 
 ### Fixed
 
 Fixed an issue with **Audio track extraction (Gemini Embedding 2 only)** where the `audio_track_extraction` feature did not work. For more information, see [Issue #504505771](https://issuetracker.google.com/504505771).
+
+### Change
+
+**Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image**
+
+Gemini Enterprise Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3.1
+Pro Preview are introducing the following changes:
+
+* Upgrades to improve 4K outputs and efficiency in both models
+* Gemini 3.1 Flash Image Preview and Gemini 3 Pro Image Preview will now
+  return a maximum of 1 thought image.
+* The image\_size parameter for Gemini 3.1 Flash Image Preview now accepts
+  "512", "512p", "512P", "512PX", "512px" to generate 0.5MP resolution output
+  images.
+* The default thinking level for Gemini 3.1 Flash Image Preview changed to
+  Minimal.
 
 ---
 ## 2026-04-28

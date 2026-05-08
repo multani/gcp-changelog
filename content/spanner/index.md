@@ -1,5 +1,16 @@
 # Spanner
 
+## 2026-05-04
+
+### Feature
+
+Spanner [vector index](https://docs.cloud.google.com/spanner/docs/vector-indexes) and
+[approximate nearest neighbor (ANN)](https://docs.cloud.google.com/spanner/docs/find-approximate-nearest-neighbors)
+distance functions are
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA) for PostgreSQL databases.
+
+---
 ## 2026-04-21
 
 ### Feature

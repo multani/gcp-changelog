@@ -152,6 +152,7 @@
 - [Identity-Aware Proxy](identity-aware-proxy/index.md)
 - [Infrastructure Manager](infrastructure-manager/index.md)
 - [Kf](kf/index.md)
+- [Knowledge Catalog](knowledge-catalog/index.md)
 - [Live Stream API](live-stream-api/index.md)
 - [Looker](looker/index.md)
 - [Looker Studio](looker-studio/index.md)

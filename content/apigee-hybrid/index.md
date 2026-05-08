@@ -2,10 +2,6 @@
 
 ## 2026-05-04
 
-### Announcement
-
-
-
 ### v1.15.3
 
 On May 4, 2026 we released an updated version of the Apigee hybrid software, v1.15.3.

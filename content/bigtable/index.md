@@ -1,5 +1,12 @@
 # Bigtable
 
+## 2026-05-07
+
+### Feature
+
+You can use [Aerospike migration tools](https://github.com/GoogleCloudPlatform/cloud-bigtable-ecosystem/tree/main/aerospike-bigtable-migration-tools) to migrate data from Aerospike to Bigtable with minimal or zero downtime. This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Migrate Aerospike to Bigtable](https://docs.cloud.google.com/bigtable/docs/migrate-aerospike-to-bigtable).
+
+---
 ## 2026-04-30
 
 ### Feature

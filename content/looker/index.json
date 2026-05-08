@@ -1,6 +1,216 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-05-07": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.8** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Sunday, May 10, 2026**\n* Expected Looker (original) final deployment and download available: **Monday, May 25, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Monday, May 11, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Monday, May 25, 2026**",
+        "summary": {
+          "title": "Looker 26.8 Release Notes",
+          "summary": "The Looker 26.8 release includes updates to both Looker (original) and Looker (Google Cloud core), with deployments commencing in May 2026. Users can expect final deployments and download availability by May 25, 2026."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The ability for dashboard editors to [set default row and column limits](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit) for dashboard tile downloads and for dashboard viewers to choose to edit these values when downloading the tile is now generally available.",
+        "summary": {
+          "title": "Download limits for dashboard tiles now available",
+          "summary": "Users can now set default row and column limits for dashboard tile downloads. Viewers can also edit these limits when downloading tiles, with this feature now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Available in preview, you can create and use Conversational Analytics [data agents on user-defined dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards). Conversational Analytics uses the [Production Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode) of content when querying Looker dashboards.",
+        "summary": {
+          "title": "Conversational Analytics Data Agents Now in Preview",
+          "summary": "You can now create and use Conversational Analytics data agents on user-defined dashboards. This feature queries Looker dashboards using production mode for content."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Available in preview, you can [publish the Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise. All users who have the `save_agents` permission will be granted the `publish_agent_externally` permission.",
+        "summary": {
+          "title": "Conversational Analytics data agents now in preview",
+          "summary": "You can now publish your Conversational Analytics data agents created in Looker to Gemini Enterprise. This feature is available in preview, and users with the `save_agents` permission will automatically receive the `publish_agent_externally` permission."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [`approximate`](https://docs.cloud.google.com/looker/docs/reference/param-field-approximate) parameter is now supported on Snowflake connections.",
+        "summary": {
+          "title": "Approximate parameter now supported on Snowflake",
+          "summary": "You can now use the approximate parameter with Snowflake connections. This parameter offers a way to get approximate results for certain types of queries, which can be faster and more efficient for large datasets."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Conversational Analytics now supports [querying Looker Explores](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) in [Development Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode).",
+        "summary": {
+          "title": "Query Looker Explores in Conversational Analytics",
+          "summary": "You can now query Looker Explores directly within Conversational Analytics, even when in Development Mode. This allows for more flexible data exploration and analysis."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker could use an aggregate table of incorrect granularity if the SQL of a dimension was defined by using Liquid and if aggregate awareness was enabled. This feature now performs as expected.",
+        "summary": {
+          "title": "Aggregate table granularity issue resolved",
+          "summary": "An issue where Looker might use an aggregate table of incorrect granularity has been fixed. This occurred when the SQL of a dimension was defined using Liquid and aggregate awareness was enabled. The feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where users who don't have the `see_user_dashboards` permission could get a 404 error when viewing the Looker home page. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker home page access resolved",
+          "summary": "An issue where users without the `see_user_dashboards` permission received a 404 error on the Looker home page has been fixed. The Looker home page now functions correctly for all users, regardless of their dashboard viewing permissions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where only admins could use the **Unlock Branch** feature. This feature is now available to LookML developers.",
+        "summary": {
+          "title": "Unlock Branch feature now available to LookML developers",
+          "summary": "An issue that prevented LookML developers from using the Unlock Branch feature has been resolved. This feature is now accessible to all LookML developers, not just administrators."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the `sync_lookml_dashboard` API endpoint was not compatible with tabbed dashboards. This feature now performs as expected.",
+        "summary": {
+          "title": "Fix for tabbed dashboard sync issue",
+          "summary": "The `sync_lookml_dashboard` API endpoint has been fixed and is now compatible with tabbed dashboards. This resolves an issue that prevented tabbed dashboards from syncing correctly. The feature now functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The generic error message that Looker produces when BigQuery OAuth connections are being tested has been updated to encourage checking the correct root cause, such as context-aware access restrictions. This feature now performs as expected.",
+        "summary": {
+          "title": "Improved BigQuery OAuth error message",
+          "summary": "The generic error message for BigQuery OAuth connection tests in Looker has been improved to guide users toward checking the actual root cause, such as context-aware access restrictions. This fix ensures the feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where enabling Admin Assistant could have no effect. This feature now performs as expected.",
+        "summary": {
+          "title": "Admin Assistant now works as expected",
+          "summary": "An issue where enabling Admin Assistant had no effect has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Conversational Analytics could not be used when an IP allowlist was enabled.",
+        "summary": {
+          "title": "Conversational Analytics IP Allowlist Issue Resolved",
+          "summary": "An issue preventing Conversational Analytics from working with IP allowlists enabled has been fixed. This resolution ensures that users can now utilize Conversational Analytics regardless of their IP allowlist configuration."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where appending the string `/edit` to an Explore URL could incorrectly change the Explore UI to the legacy Explore UI. This feature now performs as expected.",
+        "summary": {
+          "title": "Explore UI behavior corrected",
+          "summary": "An issue where appending \"/edit\" to an Explore URL incorrectly redirected users to the legacy UI has been resolved. The Explore UI now functions as intended, ensuring a consistent user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The **Page breaks between tabs** option no longer appears on dashboards that don't have any tabs. This feature now performs as expected.",
+        "summary": {
+          "title": "Tab page break option fixed",
+          "summary": "The 'Page breaks between tabs' option has been removed from dashboards without tabs, as it was not applicable. This resolves an issue where the option was incorrectly displayed, and the feature now functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where enabling totals on a query with a period-over-period measure could cause Looker to return a 500 error. This feature now performs as expected.",
+        "summary": {
+          "title": "Period-over-period totals now work correctly",
+          "summary": "We have resolved an issue where enabling totals on queries with period-over-period measures would result in a 500 error. This functionality has been restored and now operates as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker could incorrectly display string filter options for a `time` timeframe instead of datetime filter options. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed issue with time filter display",
+          "summary": "An issue causing Looker to incorrectly display string filter options for timeframes has been resolved. The feature now correctly shows datetime filter options as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the **Select All** button on dashboards filters could appear even if the filter was not populated. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter button behavior corrected",
+          "summary": "The **Select All** button on dashboard filters will now only appear when the filter is populated, resolving a previous display issue. This ensures the feature functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where LookML projects that contained the string \"self-service\" were incorrectly hidden in the **Manage LookML Projects** UI. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML projects no longer hidden",
+          "summary": "An issue that caused LookML projects containing 'self-service' to be hidden in the Manage LookML Projects UI has been resolved. The feature now functions correctly, ensuring all projects are visible as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where navigating dialogs with the Tab key could cause the user to unexpectedly exit the dialog. This feature now performs as expected.",
+        "summary": {
+          "title": "Dialog navigation improved",
+          "summary": "An issue where navigating dialogs with the Tab key could cause users to exit unexpectedly has been resolved. The feature now functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where updating dashboard filters could fail to update linked child filters. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard filter update issue resolved",
+          "summary": "An issue preventing linked child filters from updating when dashboard filters were modified has been fixed. The feature now functions correctly, ensuring filters update as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Looker could fail to save Markdown files that were edited in the Looker IDE. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker IDE Markdown save issue resolved",
+          "summary": "The issue preventing Looker from saving edited Markdown files in the IDE has been fixed. This functionality now works correctly, ensuring a smoother editing experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where clearing numeric input fields on the **Content Guardrails** admin page caused Looker to input a zero that would be appended to subsequent user input. This feature now performs as expected.",
+        "summary": {
+          "title": "Numeric input fields fixed",
+          "summary": "An issue where clearing numeric input fields on the Content Guardrails admin page caused Looker to input a zero has been resolved. The feature now performs as expected, preventing unintended zeros from being appended to user input."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where clicking links inside an iframe could result in a 401 or 403 error when cookieless embed was enabled. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed iframe link issue",
+          "summary": "An issue where clicking links inside an iframe caused 401 or 403 errors with cookieless embed enabled has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where LookML dashboards could fail to appear on the home page. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML dashboard display fixed",
+          "summary": "An issue that prevented LookML dashboards from appearing on the home page has been resolved. The feature now functions correctly, ensuring dashboards are visible as expected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Conversational Analytics Advanced Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-code-interpreter) feature, formerly known as the Code Interpreter, is now generally available.",
+        "summary": {
+          "title": "Conversational Analytics Advanced Analytics Now Generally Available",
+          "summary": "The Conversational Analytics Advanced Analytics feature, previously known as Code Interpreter, has reached general availability. This enhancement allows for more sophisticated data analysis through natural language interaction."
+        }
+      }
+    ],
     "2026-04-20": [
       {
         "kind": "Feature",

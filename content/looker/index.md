@@ -1,5 +1,117 @@
 # Looker
 
+## 2026-05-07
+
+### Announcement
+
+**Looker 26.8** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Sunday, May 10, 2026**
+* Expected Looker (original) final deployment and download available: **Monday, May 25, 2026**
+* Expected Looker (Google Cloud core) deployment start: **Monday, May 11, 2026**
+* Expected Looker (Google Cloud core) final deployment: **Monday, May 25, 2026**
+
+### Feature
+
+The ability for dashboard editors to [set default row and column limits](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#download-limit) for dashboard tile downloads and for dashboard viewers to choose to edit these values when downloading the tile is now generally available.
+
+### Feature
+
+Available in preview, you can create and use Conversational Analytics [data agents on user-defined dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards). Conversational Analytics uses the [Production Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode) of content when querying Looker dashboards.
+
+### Feature
+
+Available in preview, you can [publish the Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise. All users who have the `save_agents` permission will be granted the `publish_agent_externally` permission.
+
+### Feature
+
+The [`approximate`](https://docs.cloud.google.com/looker/docs/reference/param-field-approximate) parameter is now supported on Snowflake connections.
+
+### Change
+
+Conversational Analytics now supports [querying Looker Explores](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) in [Development Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode).
+
+### Fixed
+
+An issue has been fixed where Looker could use an aggregate table of incorrect granularity if the SQL of a dimension was defined by using Liquid and if aggregate awareness was enabled. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where users who don't have the `see_user_dashboards` permission could get a 404 error when viewing the Looker home page. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where only admins could use the **Unlock Branch** feature. This feature is now available to LookML developers.
+
+### Fixed
+
+An issue has been fixed where the `sync_lookml_dashboard` API endpoint was not compatible with tabbed dashboards. This feature now performs as expected.
+
+### Fixed
+
+The generic error message that Looker produces when BigQuery OAuth connections are being tested has been updated to encourage checking the correct root cause, such as context-aware access restrictions. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where enabling Admin Assistant could have no effect. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Conversational Analytics could not be used when an IP allowlist was enabled.
+
+### Fixed
+
+An issue has been fixed where appending the string `/edit` to an Explore URL could incorrectly change the Explore UI to the legacy Explore UI. This feature now performs as expected.
+
+### Fixed
+
+The **Page breaks between tabs** option no longer appears on dashboards that don't have any tabs. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where enabling totals on a query with a period-over-period measure could cause Looker to return a 500 error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker could incorrectly display string filter options for a `time` timeframe instead of datetime filter options. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **Select All** button on dashboards filters could appear even if the filter was not populated. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where LookML projects that contained the string "self-service" were incorrectly hidden in the **Manage LookML Projects** UI. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where navigating dialogs with the Tab key could cause the user to unexpectedly exit the dialog. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where updating dashboard filters could fail to update linked child filters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker could fail to save Markdown files that were edited in the Looker IDE. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where clearing numeric input fields on the **Content Guardrails** admin page caused Looker to input a zero that would be appended to subsequent user input. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where clicking links inside an iframe could result in a 401 or 403 error when cookieless embed was enabled. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where LookML dashboards could fail to appear on the home page. This feature now performs as expected.
+
+### Feature
+
+The [Conversational Analytics Advanced Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-code-interpreter) feature, formerly known as the Code Interpreter, is now generally available.
+
+---
 ## 2026-04-20
 
 ### Feature

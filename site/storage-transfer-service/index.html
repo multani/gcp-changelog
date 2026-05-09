@@ -2460,6 +2460,15 @@
 
 
 <h1 id="storage-transfer-service">Storage Transfer Service</h1>
+<h2 id="2026-05-08">2026-05-08</h2>
+<h3 id="feature">Feature</h3>
+<p>Storage Transfer Service now supports AWS GovCloud (US) regions, including
+<code>us-gov-east-1</code> and <code>us-gov-west-1</code>. You can now transfer data from Amazon S3
+buckets located in GovCloud regions using both batch and event-driven
+transfers.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/storage-transfer/docs/source-amazon-s3">Configure access to a source: Amazon S3</a>
+and <a href="https://docs.cloud.google.com/storage-transfer/docs/event-driven-aws">Event-driven transfers from AWS S3</a>.</p>
+<hr />
 <h2 id="2026-03-09">2026-03-09</h2>
 <h3 id="change">Change</h3>
 <p>The size limit for manifest files used in agent-based transfers has been removed.</p>
@@ -2467,7 +2476,7 @@
 <a href="https://docs.cloud.google.com/storage-transfer/docs/manifest">Transfer specific files or objects using a manifest</a>.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>Organization Policy Service custom constraints are now available for
 Storage Transfer Service. You can use custom constraints to control how
 Storage Transfer Service is used in your organization. For example, you can restrict
@@ -2478,7 +2487,7 @@ restrict transfers to a specific list of approved source buckets.</p>
 for details.</p>
 <hr />
 <h2 id="2026-01-14">2026-01-14</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Storage Transfer Service event-driven transfers are now available for Azure Blob
 Storage and Data Lake Storage Gen2 sources. Event-driven transfers listen
 to Azure Event Grid notifications via Azure Storage Queues to automatically
@@ -2488,7 +2497,7 @@ Cloud Storage.</p>
 <a href="https://docs.cloud.google.com/storage-transfer/docs/event-driven-azure">Event-driven transfers from Azure Blob Storage or Data Lake Storage Gen2</a>.</p>
 <hr />
 <h2 id="2025-12-02">2025-12-02</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can now transfer data from AWS S3 or Azure Blob Storage to Cloud Storage
 over a private network connection, using Cross-Cloud Interconnect or
 Partner Interconnect. Transferring data over a private connection can
@@ -2508,6 +2517,9 @@ for details.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#storage-transfer-service">Storage Transfer Service</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-08" class="nav-link">2026-05-08</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-09" class="nav-link">2026-03-09</a>
           </li>

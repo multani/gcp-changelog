@@ -1,6 +1,16 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2026-04-27": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20260423.01` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available for all supported operating systems. This version includes\nthe following fixes:\n\n* Updates the guest agent Go dependencies to address security vulnerabilities.\n* Ensures that the internal initialization is complete before signaling\n  readiness to systemd. This fix resolves an issue in version `20260329.00`\n  where dependent services like SSH failed to start due to missing host keys.",
+        "summary": {
+          "title": "Guest agent updated",
+          "summary": "The guest agent has been updated to version 20260423.01, addressing security vulnerabilities in Go dependencies and resolving an issue that prevented dependent services like SSH from starting."
+        }
+      }
+    ],
     "2026-03-30": [
       {
         "kind": "Feature",

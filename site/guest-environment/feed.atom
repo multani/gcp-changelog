@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2026-03-30T00:00:00+00:00</updated>
+  <updated>2026-04-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-04-27:fixed:0</id>
+    <published>2026-04-27T00:00:00+00:00</published>
+    <updated>2026-04-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260423.01</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This version includes
+the following fixes:</p>
+<ul>
+<li>Updates the guest agent Go dependencies to address security vulnerabilities.</li>
+<li>Ensures that the internal initialization is complete before signaling
+  readiness to systemd. This fix resolves an issue in version <code>20260329.00</code>
+  where dependent services like SSH failed to start due to missing host keys.</li>
+</ul>]]></content>
+    <summary>The guest agent has been updated to version 20260423.01, addressing security vulnerabilities in Go dependencies and resolving an issue that prevented dependent services like SSH from starting.</summary>
+    <title>Fixed: Guest agent updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

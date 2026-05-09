@@ -1,5 +1,18 @@
 # Gemini Enterprise
 
+## 2026-05-08
+
+### Feature
+
+**Gemini Enterprise: Box data store using data federation**
+
+Connecting a Box data source with Gemini Enterprise using data federation is
+generally available (GA).
+
+For more information, see
+[Set up a Box data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/box/set-up-data-store).
+
+---
 ## 2026-05-07
 
 ### Feature

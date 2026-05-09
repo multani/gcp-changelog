@@ -2460,8 +2460,14 @@
 
 
 <h1 id="looker">Looker</h1>
-<h2 id="2026-05-07">2026-05-07</h2>
+<h2 id="2026-05-08">2026-05-08</h2>
 <h3 id="announcement">Announcement</h3>
+<p>Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
+library, CLI, and Identity and Access Management (IAM) names remain unchanged.
+For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/introduction">Knowledge Catalog overview</a>.</p>
+<hr />
+<h2 id="2026-05-07">2026-05-07</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p><strong>Looker 26.8</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Sunday, May 10, 2026</strong></li>
@@ -2530,7 +2536,7 @@
 <p>Microsoft is <a href="https://mc.merill.net/message/MC1181996">retiring</a> the legacy Office 365 Connectors in favor of Power Automate Workflows. Connectors will stop working by the end of April 2026. To ensure that your Looker alerts continue to deliver to Teams, you must replace your current webhook URL with a new "Workflow" URL. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/best-practices/migrate-teams-webhook-to-workflows">Migrate your Teams webhook to "Workflows"</a> Best Practices notice.</p>
 <hr />
 <h2 id="2026-04-09">2026-04-09</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>Starting with the Looker 26.8 release, which will release in May 2026, the following changes will occur:</p>
 <ul>
 <li>Looker (original) admins will no longer be able to access or manage the API credentials of their standard users.</li>
@@ -2554,7 +2560,7 @@
 </ul>
 <hr />
 <h2 id="2026-03-30">2026-03-30</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>Starting March 30, 2026, the following features will begin rolling out.</p>
 <h3 id="feature_7">Feature</h3>
 <p>Available in preview for Looker (Google Cloud core), you can now track <a href="https://docs.cloud.google.com/looker/docs/looker-core-lineage">end-to-end data lineage</a> from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.</p>
@@ -2599,7 +2605,7 @@
 <p>As part of Looker 26.6, <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview">Conversational Analytics</a> will now ask you questions to clarify any ambiguities in your original query.</p>
 <hr />
 <h2 id="2026-03-25">2026-03-25</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>Looker 26.6</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Sunday, March 22, 2026</strong></li>
@@ -2635,7 +2641,7 @@
 <p>Tabbed dashboards with unsupported layouts will now display a warning message prompting users to <a href="https://docs.cloud.google.com/looker/docs/best-practices/troubleshooting-unsupported-dashboard-layout">update to a new layout</a>.</p>
 <hr />
 <h2 id="2026-03-23">2026-03-23</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>To enhance security, the <a href="https://docs.cloud.google.com/looker/docs/api-sdk">Looker language SDKs</a> and the Looker API <a href="https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ApiAuth/login"><code>/login</code> endpoint</a> are being modified. They will exclusively accept passing credentials in the HTTP request body and will no longer support using URL query parameters.</p>
 <p><strong>Release date</strong>: This update is expected to take effect with the Looker 26.18 release in October 2026.</p>
 <p><strong>Potential impact</strong>: Any scripts or applications currently passing credentials in the URL query parameters in the Looker SDK libraries, or directly calling the <code>/login</code> API endpoint, will fail after this update.</p>
@@ -2659,7 +2665,7 @@
 </ul>
 <hr />
 <h2 id="2026-03-17">2026-03-17</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>As part of Looker 26.4, the following features will begin rolling out on March 17, 2026.</p>
 <h3 id="feature_20">Feature</h3>
 <p>Looker <strong>Connections Settings</strong> page has a new option, <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection"><strong>Disable Connection</strong></a>, that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.</p>
@@ -2722,7 +2728,7 @@
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit"><strong>Increased Row Limit</strong> preview feature</a> feature is now available, and is disabled by default.</p>
 <p>When enabled, the <strong>Increased Row Limit</strong> preview feature lets admins set row limits up to 50,000 rows or datapoints for <a href="https://docs.cloud.google.com/looker/docs/google-map-options">map charts</a>, <a href="https://docs.cloud.google.com/looker/docs/scatter-options">scatterplot charts</a>, and <a href="https://docs.cloud.google.com/looker/docs/table-options">table charts</a>. Admins can set the limits for each visualization type in the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits"><strong>Visualization limits</strong></a> setting on the <strong>Content guardrails</strong> admin page.</p>
 <p>Table charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See <a href="https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards">Downloading or delivering dashboards in rendered formats</a> for more information about scheduling and downloading dashboard PDFs with increased row limits.</p>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>The following features will roll out over a four-day period starting March 17, 2026.</p>
 <hr />
 <h2 id="2026-03-12">2026-03-12</h2>
@@ -2809,7 +2815,7 @@
 <p>An issue has been fixed where Looker could fail to recognize non-numeric values in conditional formatting rules for single value visualizations. This feature now performs as expected.</p>
 <h3 id="fixed_43">Fixed</h3>
 <p>An issue has been fixed where entering Japanese characters into advanced filters could add extra characters. This feature now performs as expected.</p>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>Looker 26.4</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Sunday, March 8, 2026</strong></li>
@@ -2862,7 +2868,7 @@
 <p>Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing"><strong>Granular Dashboard Sizing</strong> Labs feature</a>.</p>
 <h3 id="feature_50">Feature</h3>
 <p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics"><strong>Embed Conversational Analytics</strong> Labs feature</a> is now available. When enabled, the Embed Conversational Analytics Labs feature lets you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding">embed Conversational Analytics conversations and agents in an iframe</a> like other Looker content types.</p>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>The following features will roll out over a four-day period starting February 17, 2026.</p>
 <h3 id="feature_51">Feature</h3>
 <p>Now available in preview, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the <strong>Unlock Branch</strong> option in the <a href="https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel"><strong>Git Actions</strong> panel</a> of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the <strong>Commit</strong> dialog, along with an option to delete the Git lock. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch">Using version control and deploying</a> documentation page for details.</p>
@@ -2934,7 +2940,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>An issue has been fixed where dashboard tiles with titles that included the % symbol could not be downloaded in the Safari 26.0 browser. This feature now performs as expected.</p>
 <h3 id="breaking_3">Breaking</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, all System Activity fields of the <code>longtext</code> type that have a size greater than 2 MB will be truncated. If a table has only one column with a <code>longtext</code> type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the <code>longtext</code> type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has <code>x</code> <code>longtext</code> columns, each column will have a maximum length of 2 MB divided by <code>x</code>.</p>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p><strong>Looker 26.2</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, February 9, 2026</strong></li>
@@ -2967,7 +2973,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>Gemini in Looker can now <a href="https://docs.cloud.google.com/looker/docs/explore-summary-gemini">generate a summary and an analysis of an Explore</a>.</p>
 <h3 id="feature_69">Feature</h3>
 <p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/git-options#configuration"><strong>Configuration</strong> tab of the <strong>Projects Settings</strong> page</a> in the Looker IDE contains a <strong>Delete Developer Copy</strong> button that lets LookML developers delete their local developer copy of the project's Git repository. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy">Using version control and deploying</a> documentation page for details.</p>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p><strong>Looker 26.0</strong> includes the following feature updates, which will start rolling out on January 26, 2026:</p>
 <h3 id="feature_70">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> admin page</a> now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.</p>
@@ -3034,7 +3040,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>A retry limit has been added for scheduled jobs. If a scheduled job fails five times in a row, then it's skipped until the next time the schedule is triggered.</p>
 <h3 id="breaking_4">Breaking</h3>
 <p>HTML characters are now displayed in plaintext in table visualizations to match other visualization types. For example, <code>&amp;quot;</code> is no longer rendered as <code>"</code>.</p>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p><strong>Looker 26.0</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, January 12, 2026</strong></li>
@@ -3292,7 +3298,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>(This release note was updated on October 9, 2025 to correct the Looker version for this release.)</p>
 <hr />
 <h2 id="2025-10-06">2025-10-06</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p><strong>Looker 25.18</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Tuesday, October 7, 2025</strong></li>
@@ -3396,7 +3402,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>You can now <a href="https://cloud.google.com/looker/docs/connect-ide-to-looker-using-mcp-toolbox">connect to your Looker instance with the Gemini CLI</a> using a dedicated <a href="https://github.com/gemini-cli-extensions/looker">Gemini extension</a>. The Gemini extension can run queries, create Looks and dashboards, and retrieve elements of your LookML models.</p>
 <hr />
 <h2 id="2025-09-10">2025-09-10</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p><strong>Looker 25.16</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, September 15, 2025</strong></li>
@@ -3484,7 +3490,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>The Full Screen Visualizations feature is now generally available. You can turn it on and off on the Admin - General page.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p><strong>Looker 25.14</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, August 18, 2025</strong></li>
@@ -3590,7 +3596,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p><strong>Note:</strong> This item was removed on August 27, 2025.</p>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter in Conversational Analytics</a> is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> for Looker (original) and Looker (Google Cloud core) instances. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default.</p>
 <ul>
 <li>Looker (original) instances must be on Looker 25.8 or later. Looker admins can manage enablement for the Code Interpreter on the <a href="https://cloud.google.com/looker/docs/admin-panel-platform-gil#enable-and-disable-gil-original"><strong>Gemini in Looker</strong> admin page</a> of the Looker (original) instance.</li>
@@ -3598,7 +3604,7 @@ LookML dashboards. This feature now performs as expected.</p>
 </ul>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p><strong>Looker 25.12</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, July 28, 2025</strong></li>
@@ -3693,7 +3699,7 @@ LookML dashboards. This feature now performs as expected.</p>
 </ul>
 <hr />
 <h2 id="2025-06-11">2025-06-11</h2>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p><strong>Looker 25.10</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Tuesday, June 17, 2025</strong></li>
@@ -3778,7 +3784,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter in Conversational Analytics</a> is now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default. Admins of Looker (Google Cloud core) instances can manage enablement for the Code Interpreter on the <a href="https://cloud.google.com/looker/docs/looker-core-admin-gemini#enable-ci-core">Gemini in Looker admin page</a>. <strong>Note:</strong> This item was added on June 23, 2025.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p>Gemini in Looker will be enabled by default for Looker (original) instances that meet at least one of the following criteria:</p>
 <ul>
 <li>The Automated Gemini in Looker enablement and user management setting on the Settings page in the Looker Admin panel was previously enabled.</li>
@@ -3800,6 +3806,9 @@ is created automatically for instances that use an <a href="https://cloud.google
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#looker">Looker</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-08" class="nav-link">2026-05-08</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-05-07" class="nav-link">2026-05-07</a>
           </li>

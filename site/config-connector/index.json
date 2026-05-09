@@ -1,6 +1,48 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-05-05": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.149.1 is now available.",
+        "summary": {
+          "title": "Config Connector 1.149.1 Released",
+          "summary": "Config Connector version 1.149.1 has been released. This update brings new features and improvements to the tool. Users are encouraged to upgrade to the latest version."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* [`NetworkServicesLBRouteExtension`](https://cloud.google.com/config-connector/docs/reference/resource-docs/networkservices/networkserviceslbrouteextension) [#6957](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6957)\n  + Manage [load balancing route extensions](https://cloud.google.com/service-extensions/docs/optimize-proxies-lb-route-extensions) which let you inject custom logic into the load balancing path.\n* [`ParameterManagerParameterVersion`](https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion) [#7140](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7140)\n  + Manage [Parameter Manager parameter versions](https://cloud.google.com/secret-manager/docs/parameter-manager) which lets you to manage regional parameters.",
+        "summary": {
+          "title": "New Alpha Resources Available",
+          "summary": "We are introducing two new alpha resources: NetworkServicesLBRouteExtension for managing load balancing route extensions and ParameterManagerParameterVersion for handling regional parameters. These additions aim to provide more flexibility and control over your network services and parameter management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Features:\n\n* [Controlled CR reconciliation](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6243) Added support for unmanaging specific resources through `resourceSettings` in `ConfigConnector` (global) and `ConfigConnectorContext` (per-namespace). This lets you to selectively disable reconciliation for specific Group/Kinds to save memory or manage resources differently.",
+        "summary": {
+          "title": "Selective Resource Management",
+          "summary": "You can now selectively disable reconciliation for specific resources using `resourceSettings`. This feature helps save memory and allows for different resource management strategies by unmanaging resources through `ConfigConnector` or `ConfigConnectorContext`."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\nAdded support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the `cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object.\n\n* [`BigQueryDatasetAccess`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydatasetaccess) [#7000](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7000)",
+        "summary": {
+          "title": "Direct Reconciliation Support Added",
+          "summary": "Config Connector now supports direct reconciliation for more resources. You can enable this feature by adding the `cnrm.cloud.google.com/reconciler: direct` annotation to your objects. The API remains the same."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [Preview Tool](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7642) Fixed a connection error in the Config Connector preview tool and enforced read-only access to the cluster for improved security.",
+        "summary": {
+          "title": "Preview tool connection error fixed",
+          "summary": "A connection error in the preview tool has been resolved. Additionally, read-only access to the cluster has been enforced for enhanced security."
+        }
+      }
+    ],
     "2026-04-22": [
       {
         "kind": "Announcement",

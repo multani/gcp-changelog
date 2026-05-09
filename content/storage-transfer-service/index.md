@@ -1,5 +1,18 @@
 # Storage Transfer Service
 
+## 2026-05-08
+
+### Feature
+
+Storage Transfer Service now supports AWS GovCloud (US) regions, including
+`us-gov-east-1` and `us-gov-west-1`. You can now transfer data from Amazon S3
+buckets located in GovCloud regions using both batch and event-driven
+transfers.
+
+For more information, see [Configure access to a source: Amazon S3](https://docs.cloud.google.com/storage-transfer/docs/source-amazon-s3)
+and [Event-driven transfers from AWS S3](https://docs.cloud.google.com/storage-transfer/docs/event-driven-aws).
+
+---
 ## 2026-03-09
 
 ### Change

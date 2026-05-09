@@ -2,9 +2,80 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-04-22T00:00:00+00:00</updated>
+  <updated>2026-05-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:announcement:0</id>
+    <published>2026-05-05T00:00:00+00:00</published>
+    <updated>2026-05-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.149.1 is now available.</p>]]></content>
+    <summary>Config Connector version 1.149.1 has been released. This update brings new features and improvements to the tool. Users are encouraged to upgrade to the latest version.</summary>
+    <title>Announcement: Config Connector 1.149.1 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:feature:1</id>
+    <published>2026-05-05T00:00:00+00:00</published>
+    <updated>2026-05-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/networkservices/networkserviceslbrouteextension"><code>NetworkServicesLBRouteExtension</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6957">#6957</a></li>
+<li>Manage <a href="https://cloud.google.com/service-extensions/docs/optimize-proxies-lb-route-extensions">load balancing route extensions</a> which let you inject custom logic into the load balancing path.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion"><code>ParameterManagerParameterVersion</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7140">#7140</a></li>
+<li>Manage <a href="https://cloud.google.com/secret-manager/docs/parameter-manager">Parameter Manager parameter versions</a> which lets you to manage regional parameters.</li>
+</ul>]]></content>
+    <summary>We are introducing two new alpha resources: NetworkServicesLBRouteExtension for managing load balancing route extensions and ParameterManagerParameterVersion for handling regional parameters. These additions aim to provide more flexibility and control over your network services and parameter management.</summary>
+    <title>Feature: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:feature:2</id>
+    <published>2026-05-05T00:00:00+00:00</published>
+    <updated>2026-05-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Features:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6243">Controlled CR reconciliation</a> Added support for unmanaging specific resources through <code>resourceSettings</code> in <code>ConfigConnector</code> (global) and <code>ConfigConnectorContext</code> (per-namespace). This lets you to selectively disable reconciliation for specific Group/Kinds to save memory or manage resources differently.</li>
+</ul>]]></content>
+    <summary>You can now selectively disable reconciliation for specific resources using `resourceSettings`. This feature helps save memory and allows for different resource management strategies by unmanaging resources through `ConfigConnector` or `ConfigConnectorContext`.</summary>
+    <title>Feature: Selective Resource Management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:change:3</id>
+    <published>2026-05-05T00:00:00+00:00</published>
+    <updated>2026-05-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<p>Added support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the <code>cnrm.cloud.google.com/reconciler: direct</code> annotation to the corresponding Config Connector object.</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydatasetaccess"><code>BigQueryDatasetAccess</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7000">#7000</a></li>
+</ul>]]></content>
+    <summary>Config Connector now supports direct reconciliation for more resources. You can enable this feature by adding the `cnrm.cloud.google.com/reconciler: direct` annotation to your objects. The API remains the same.</summary>
+    <title>Change: Direct Reconciliation Support Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:fixed:4</id>
+    <published>2026-05-05T00:00:00+00:00</published>
+    <updated>2026-05-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7642">Preview Tool</a> Fixed a connection error in the Config Connector preview tool and enforced read-only access to the cluster for improved security.</li>
+</ul>]]></content>
+    <summary>A connection error in the preview tool has been resolved. Additionally, read-only access to the cluster has been enforced for enhanced security.</summary>
+    <title>Fixed: Preview tool connection error fixed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

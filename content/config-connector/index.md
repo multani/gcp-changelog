@@ -1,5 +1,41 @@
 # Config Connector
 
+## 2026-05-05
+
+### Announcement
+
+Config Connector version 1.149.1 is now available.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* [`NetworkServicesLBRouteExtension`](https://cloud.google.com/config-connector/docs/reference/resource-docs/networkservices/networkserviceslbrouteextension) [#6957](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6957)
+  + Manage [load balancing route extensions](https://cloud.google.com/service-extensions/docs/optimize-proxies-lb-route-extensions) which let you inject custom logic into the load balancing path.
+* [`ParameterManagerParameterVersion`](https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion) [#7140](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7140)
+  + Manage [Parameter Manager parameter versions](https://cloud.google.com/secret-manager/docs/parameter-manager) which lets you to manage regional parameters.
+
+### Feature
+
+New Features:
+
+* [Controlled CR reconciliation](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6243) Added support for unmanaging specific resources through `resourceSettings` in `ConfigConnector` (global) and `ConfigConnectorContext` (per-namespace). This lets you to selectively disable reconciliation for specific Group/Kinds to save memory or manage resources differently.
+
+### Change
+
+Reconciliation Improvements:
+
+Added support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the `cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object.
+
+* [`BigQueryDatasetAccess`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydatasetaccess) [#7000](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7000)
+
+### Fixed
+
+Bug Fixes:
+
+* [Preview Tool](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7642) Fixed a connection error in the Config Connector preview tool and enforced read-only access to the cluster for improved security.
+
+---
 ## 2026-04-22
 
 ### Announcement

@@ -1,5 +1,14 @@
 # Looker
 
+## 2026-05-08
+
+### Announcement
+
+Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
+library, CLI, and Identity and Access Management (IAM) names remain unchanged.
+For more information, see [Knowledge Catalog overview](https://docs.cloud.google.com/dataplex/docs/introduction).
+
+---
 ## 2026-05-07
 
 ### Announcement

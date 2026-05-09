@@ -1,5 +1,18 @@
 # Identity and Access Management
 
+## 2026-05-08
+
+### Feature
+
+You can use the IAM recommender to remediate excessive
+permissions for Google groups by transitioning from permanent role
+bindings to temporary, on-demand entitlements in Privileged Access Manager (PAM). This
+feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+To learn how to remediate excessive permissions, see [Remediate excessive
+permissions with Privileged Access Manager](https://docs.cloud.google.com/iam/docs/pam-remediate-iam-recommendations).
+
+---
 ## 2026-04-22
 
 ### Feature

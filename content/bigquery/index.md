@@ -1,5 +1,21 @@
 # BigQuery
 
+## 2026-05-08
+
+### Announcement
+
+Starting August 11, 2026, the billing label for the BigQuery Data Transfer
+Service SKU will be updated from `goog-bq-feature-type: DATA_TRANSFER_SERVICE`
+(uppercase) to `goog-bq-feature-type: data_transfer_service` (lowercase) to
+provide a more unified and complete view of your costs. This update expands the
+scope of the label to cover all costs associated with the BigQuery Data Transfer
+Service, including data transfer orchestration, data load operations, and data
+merge operations.
+
+To ensure uninterrupted cost visibility, update your billing exports,
+dashboards, and reporting queries to include both these labels.
+
+---
 ## 2026-05-06
 
 ### Feature

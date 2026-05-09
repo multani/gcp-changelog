@@ -1,5 +1,20 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-08
+
+### Change
+
+**Improvements to the Provisioned Throughput orders page** have now
+made it possible to:
+
+* View all scheduled orders by using the Start Date column.
+* Enable filtering and sorting of orders by using column names.
+* Download all order data to a CSV file (including across all regions).
+
+See [View standard Provisioned Throughput
+orders](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput#view-orders).
+
+---
 ## 2026-05-07
 
 ### Change
@@ -9,6 +24,12 @@
 Our most cost-efficient Gemini model, **3.1 Flash-Lite**, is out of preview and
 is now generally available. For technical information on this model, see the
 [model information card](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite).
+
+### Change
+
+You can purchase **Provisioned Throughput for Gemini 3.1 Flash-Lite**. To learn
+more, see the [Provisioned Throughput
+overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/overview).
 
 ---
 ## 2026-05-06

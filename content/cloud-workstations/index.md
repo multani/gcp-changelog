@@ -1,5 +1,17 @@
 # Cloud Workstations
 
+## 2026-05-08
+
+### Feature
+
+You can configure a workstation authorization URL for workstation clusters.
+
+When you specify an authorization URL, unauthorized HTTP or HTTPS requests received
+by workstation VMs in the cluster are redirected to this endpoint. The endpoint
+is then responsible for retrieving an access token and redirecting back to the
+original hostname with the token.
+
+---
 ## 2026-04-27
 
 ### Feature

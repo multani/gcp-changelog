@@ -1,5 +1,21 @@
 # Security Command Center
 
+## 2026-05-11
+
+### Change
+
+Compliance Manager can be enabled for a single project. For more
+information, see
+[Enable Compliance Manager](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-enable).
+
+### Change
+
+New Standard tier activations at the organization level support the enhanced
+Standard tier features. New Standard tier activations at the project level continue
+to support Standard-legacy tier features. For more information, see
+[Standard tier enhanced and automatically activated for some customers](https://docs.cloud.google.com/security-command-center/docs/migrate-standard-legacy).
+
+---
 ## 2026-04-22
 
 ### Feature

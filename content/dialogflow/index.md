@@ -1,5 +1,13 @@
 # Dialogflow
 
+## 2026-05-07
+
+### Fixed
+
+A Missing Authorization vulnerability in the playbook import functionality in Dialogflow CX on Google Cloud Platform allows an authenticated user with specific roles to escalate privileges and potentially take over a project using a maliciously crafted playbook import.
+This vulnerability was patched on 15 March 2026, and no customer action is needed.
+
+---
 ## 2025-12-11
 
 ### Feature

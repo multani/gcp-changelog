@@ -1,5 +1,22 @@
 # Cloud Trace
 
+## 2026-05-11
+
+### Feature
+
+Google Cloud Observability has expanded the supported locations for observability buckets,
+which store your trace data, to include the following:
+
+* asia-northeast1
+* asia-southeast1
+* me-west2
+* southamerica-east1
+* us-west4
+
+For a list of supported locations, see
+[Locations for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/observability-bucket-locations).
+
+---
 ## 2026-05-06
 
 ### Feature

@@ -12,6 +12,19 @@ is then responsible for retrieving an access token and redirecting back to the
 original hostname with the token.
 
 ---
+## 2026-05-04
+
+### Feature
+
+The [JetBrains Rider preconfigured base image](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images#list_of_preconfigured_base_images)
+includes .NET 10.0 and drops .NET 6.0.
+
+### Feature
+
+The [JetBrains RubyMine preconfigured base image](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images#list_of_preconfigured_base_images)
+installs Ruby using `ruby-build` instead of RVM (Ruby Version Manager).
+
+---
 ## 2026-04-27
 
 ### Feature

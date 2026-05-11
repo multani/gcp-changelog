@@ -1,5 +1,12 @@
 # AlloyDB for PostgreSQL
 
+## 2026-05-11
+
+### Announcement
+
+AlloyDB now offers extended support for clusters running major PostgreSQL versions that have reached their end-of-life (EOL) as defined by the PostgreSQL community. Extended support provides an additional three years of support after the end of regular support, giving you more time to plan and perform major version upgrades. For more information, see [Extended support for AlloyDB for PostgreSQL](https://docs.cloud.google.com/alloydb/docs/extended-support).
+
+---
 ## 2026-04-28
 
 ### Change

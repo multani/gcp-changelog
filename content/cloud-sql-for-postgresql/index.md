@@ -1,5 +1,20 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-05-11
+
+### Feature
+
+Cloud SQL for PostgreSQL now supports regional endpoints for the Cloud SQL Admin API.
+This feature lets you direct your API calls to a region-specific endpoint, which
+ensures that your requests are handled within the specified region's frontend
+infrastructure with some limitations, such as backend dependencies that may
+still have global components. This enhances data locality and helps meet strict
+compliance expectations. For more information, see
+[Cloud SQL regional endpoints](https://docs.cloud.google.com/sql/docs/mysql/admin-api/rep).
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-04-30
 
 ### Fixed

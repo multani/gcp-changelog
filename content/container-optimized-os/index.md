@@ -1,5 +1,118 @@
 # Container Optimized OS
 
+## 2026-05-07
+
+### Change
+
+
+
+### cos-113-18244-582-103
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/55acfaa0d8192e080417075465aaffd1f75df1a9 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.103/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+Aggregate release notes.
+Please check whether the types are correct.
+Available types are:
+breaking\_change|non\_breaking\_change|deprecation|feature|fix|security\_bulletin|service\_announcement|issue].
+Please add another service\_announcement block if this is an LTS Refresh release.
+
+### Security
+
+Fixed CVE-2026-23411 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31738 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31752 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43013 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43024 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43028 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43030 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43037 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43038 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43043 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43054 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43057 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-381-121
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/81a1a5c044b4f62bb492acb3dc787f12de339232 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.121/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+Aggregate release notes.
+Please check whether the types are correct.
+Available types are:
+breaking\_change|non\_breaking\_change|deprecation|feature|fix|security\_bulletin|service\_announcement|issue].
+Please add another service\_announcement block if this is an LTS Refresh release.
+
+### Security
+
+Fixed CVE-2026-35385 in net-misc/openssh.
+
+### Security
+
+Upgraded cos-gpu-installer to v2.6.8.
+
+---
 ## 2026-05-04
 
 ### Change

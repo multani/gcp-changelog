@@ -2,9 +2,84 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-05-06T00:00:00+00:00</updated>
+  <updated>2026-05-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-05-11:announcement:0</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.34.400-gke.88 is now available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.34.400-gke.88 runs on Kubernetes v1.34.6-gke.200.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for bare metal (1.34.400-gke.88) is now ready for download. Please refer to the upgrade guide for instructions. Note that this version runs on Kubernetes v1.34.6-gke.200, and may take up to two weeks to be available via GKE On-Prem API clients. If you use third-party storage, verify compatibility with this release.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-05-11:announcement:1</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following features were added in 1.34.400-gke.88:</p>
+<ul>
+<li>Added a periodic health check to detect stale mounts of Secrets and
+  ConfigMaps on pods. This helps identify rare scenarios where nodes serve
+  outdated secret data after a rotation, which can lead to authentication
+  failures. Currently enabled for GKE Identity Service pods, the check
+  runs on each node and compares the locally cached volume content with the
+  live data from the API server, reporting a mismatch only after a 5-minute
+  grace period to allow for normal update delays.</li>
+</ul>]]></content>
+    <summary>This update introduces a periodic health check to ensure pods have up-to-date Secrets and ConfigMaps. The check helps prevent authentication issues caused by stale data, currently focused on GKE Identity Service pods. It verifies local cache against live API data after a brief grace period.</summary>
+    <title>Announcement: Improved Secret and ConfigMap Mount Health</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-05-11:fixed:2</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.34.400-gke.88:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue where, during the machine initialization phase, the
+  <code>etcd-events</code> pod read the stale data directory when it started
+  and attempted to reuse the old member ID to rejoin the cluster instead of the
+  new one. Trying to use the old member ID to rejoin the cluster resulted in an
+  infinite retry loop and caused the cluster to reject the connection. The fix
+  ensures the <code>/var/lib/etcd-events</code> directory is
+  cleared upon failure, and adds retry logic to <code>kubeadm-reset</code> to improve resiliency against transient API errors.</li>
+<li>Fixed an issue where concurrent tasks on the same node failed when
+  <code>containerd</code> restarts. After the fix, tasks are locked and run
+  sequentially to ensure each task completes successfully before the next
+  begins. Each lock is held for up to 20 minutes or until the task reaches
+  success or failure. To bypass this safety mechanism, you can run tasks
+  concurrently by adding <code>baremetal.cluster.gke.io/concurrent-machine-update: "true"</code>
+  to your cluster.</li>
+<li>Fixed an issue where node upgrades could hang indefinitely and bypass the
+  20-minute maintenance timeout. This issue occurred when a node contained
+  completed pods within a namespace that was in a <code>Terminating</code>
+  state. Because the Kubernetes Eviction API rejects operations in terminating
+  namespaces, the cluster controller entered an infinite retry loop. The fix
+  updates the drain process to skip eviction for pods in terminal phases,
+  allowing the upgrade to proceed normally.</li>
+</ul>]]></content>
+    <summary>This release addresses security vulnerabilities and resolves critical issues related to etcd, containerd restarts, and node upgrade hangs. It improves cluster stability and ensures smoother maintenance operations.</summary>
+    <title>Fixed: Maintenance release 1.34.400-gke.88</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -212,18 +287,18 @@ qualification for this release of Google Distributed Cloud for bare metal.</p>]]
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-04-22:announcement:0</id>
     <published>2026-04-22T00:00:00+00:00</published>
     <updated>2026-04-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.33.700-71 is now available for
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.33.700-gke.71 is now available for
 download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
 Google Distributed Cloud for bare metal
-1.33.700-71 runs on Kubernetes v1.33.5-gke.2200.</p>
+1.33.700-gke.71 runs on Kubernetes v1.33.5-gke.2200.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become
 available for installations or upgrades with the GKE On-Prem API clients: the
 Google Cloud console, the gcloud CLI, and Terraform.</p>
 <p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready
 storage partners document to make sure the storage vendor has already passed the
 qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
-    <summary>A new version of Google Distributed Cloud for bare metal is now available for download. This release runs on Kubernetes v1.33.5-gke.2200. Please check storage partner compatibility if you use third-party storage solutions.</summary>
-    <title>Announcement: New software version available</title>
+    <summary>The latest version of our distributed cloud software for bare metal is now available. This release runs on Kubernetes v1.33.5-gke.2200. Please check storage partner qualifications if you use third-party storage.</summary>
+    <title>Announcement: New release of distributed cloud software</title>
   </entry>
   <entry>
     <author>

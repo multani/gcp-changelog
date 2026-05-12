@@ -1,5 +1,14 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-11
+
+### Change
+
+You can purchase **Provisioned Throughput for Gemma 4**. To learn
+more, see the list of [supported
+open models](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models#open-models).
+
+---
 ## 2026-05-08
 
 ### Change

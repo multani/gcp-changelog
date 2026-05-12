@@ -1,5 +1,16 @@
 # Apigee API hub
 
+## 2026-05-12
+
+### Feature
+
+**MCP tools support for Agentic AI workflows (Preview)**
+
+API hub now exposes read-only APIs as Model Context Protocol (MCP) tools. Agentic AI applications can now use the standard MCP `tools/list` and `tools/call` methods to list and inspect API hub resources, including APIs, specs, versions, and deployments.
+
+This feature is in [Public Preview](https://cloud.google.com/products#product-launch-stages). For more information, see [API hub MCP reference](https://docs.cloud.google.com/apigee/docs/reference/apis/apihub/mcp).
+
+---
 ## 2026-05-07
 
 ### Feature

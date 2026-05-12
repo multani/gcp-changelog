@@ -6,7 +6,7 @@
 
 Dataflow job builder now supports external Iceberg REST Catalogs as a
 source. You can now ingest data from external Apache Iceberg REST catalogs (IRC)
-directly into Google Cloud Lakehouse tables using Dataflow's job
+directly into Lakehouse for Apache Iceberg tables using Dataflow's job
 builder UI without writing code. For more information, see [Import data from
 external Iceberg catalogs to Lakehouse using
 Dataflow](https://docs.cloud.google.com/dataflow/docs/guides/iceberg-df-lakehouse-integration).

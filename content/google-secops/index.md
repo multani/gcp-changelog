@@ -229,11 +229,13 @@ This migration **does not apply** to you if your SIEM instance meets **all the c
 ---
 ## 2026-04-15
 
-### Announcement
+### Feature
 
-**Unified and upgraded Chronicle API**
+**[Spotlight Feature] Unified and upgraded Chronicle API**
 
-[Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/rest?rep_location=africa-south1) has been unified with API resources from [legacy SOAR API](https://docs.cloud.google.com/chronicle/docs/soar/reference/working-with-chronicle-soar-apis). In addition, we've upgraded the following Chronicle API resources from alpha to beta. This upgrade signals API stability and functional completeness, enabling customer and partner adoption for production usage. We recommend customers use Chronicle API for a more robust, secure, and extensible experience. Learn more about [API Stability](https://google.aip.dev/181).
+[Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/rest?rep_location=africa-south1) has been unified with API resources from [legacy SOAR API](https://docs.cloud.google.com/chronicle/docs/soar/reference/working-with-chronicle-soar-apis). In addition, we've upgraded the following Chronicle API resources from alpha to beta. This upgrade signals [API Stability](https://google.aip.dev/181) and functional completeness, enabling customer and partner adoption for production usage. We recommend customers use Chronicle API for a more robust, secure, and extensible experience.
+
+For more information, see [Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/rest?rep_location=africa-south1).
 
 |  |  |
 | --- | --- |

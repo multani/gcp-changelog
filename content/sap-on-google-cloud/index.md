@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2026-05-12
+
+### Announcement
+
+**BigQuery Connector for SAP version 2.14**
+
+Version 2.14 of the BigQuery Connector for SAP is generally available (GA).
+To protect configuration data, this version assigns the BigQuery Connector for SAP
+configuration tables to the custom authorization group `ZSGC`.
+You must ensure your user roles include authorization for this group to maintain access.
+
+For more information, see [What's new with BigQuery Connector for SAP](https://docs.cloud.google.com/sap/docs/bq-connector/whats-new#version-2-14).
+
+---
 ## 2026-04-30
 
 ### Announcement

@@ -1,5 +1,37 @@
 # Apigee X
 
+## 2026-05-12
+
+### Announcement
+
+On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **511325186, 505460952, 502250074, 491231600, 497357701, 509560467, 496969438, 495897297, 495033618, 511332617, 505183435, 500735547, 500890221** | **Security fix for Apigee infrastructure.** This addresses the following vulnerabilities:   * [CVE-2026-42587](https://nvd.nist.gov/vuln/detail/CVE-2026-42587) * [CVE-2026-5588](https://nvd.nist.gov/vuln/detail/CVE-2026-5588) * [CVE-2026-34480](https://nvd.nist.gov/vuln/detail/CVE-2026-34480) * [GHSA-72hv-8253-57qq](https://github.com/advisories/GHSA-72hv-8253-57qq) * [CVE-2026-33870](https://nvd.nist.gov/vuln/detail/CVE-2026-33870) * [CVE-2026-33871](https://nvd.nist.gov/vuln/detail/CVE-2026-33871) * [CVE-2026-35611](https://nvd.nist.gov/vuln/detail/CVE-2026-35611) * [CVE-2026-33170](https://nvd.nist.gov/vuln/detail/CVE-2026-33170) * [CVE-2026-33169](https://nvd.nist.gov/vuln/detail/CVE-2026-33169) * [CVE-2026-33176](https://nvd.nist.gov/vuln/detail/CVE-2026-33176) * [CVE-2026-33210](https://nvd.nist.gov/vuln/detail/CVE-2026-33210) * [CVE-2026-33186](https://nvd.nist.gov/vuln/detail/CVE-2026-33186) * [CVE-2026-42499](https://nvd.nist.gov/vuln/detail/CVE-2026-42499) * [CVE-2026-35469](https://nvd.nist.gov/vuln/detail/CVE-2026-35469) * [CVE-2026-32281](https://nvd.nist.gov/vuln/detail/CVE-2026-32281) * [CVE-2026-27144](https://nvd.nist.gov/vuln/detail/CVE-2026-27144) |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **480260846** | Improved XML processing security to prevent external entity injection. |
+| **505723451** | Fixed an issue where metadata could be shared across unrelated client sessions. |
+| **505645076** | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
+| **503723862** | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
+| **503047744, 410026138, 496021751** | Improved security isolation for PythonScript policy execution. |
+| **469694040** | Fixed an issue where custom security policies could intermittently fail to apply, and improved security policy resolution to ensure correct policy selection. |
+| **502971220** | Fixed a concurrency issue in streaming response handling to improve stability under high load. |
+| **509692565** | Fixed content-length header handling in external processing to prevent incorrect values. |
+| **282207038** | Fixed inconsistent timeouts when querying apps by parallelizing credential lookup. |
+| **501102321** | Fixed recurring fee calculation in monetization to correctly apply rate plan overrides. |
+| **494469747** | Fixed content-length header to reflect actual response body size. |
+| **N/A** | Updates to infrastructure and libraries. |
+
+---
 ## 2026-04-29
 
 ### Announcement

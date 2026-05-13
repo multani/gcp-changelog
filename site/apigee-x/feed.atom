@@ -2,9 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-04-29T00:00:00+00:00</updated>
+  <updated>2026-05-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-12:announcement:0</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>An updated version of Apigee, 1-17-0-apigee-7, was released on May 12th, 2026. Rollouts have begun and may take several business days to complete across all zones. Features and fixes will be available once the rollout is finished.</summary>
+    <title>Announcement: Apigee version 1-17-0-apigee-7 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-12:security:1</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>511325186, 505460952, 502250074, 491231600, 497357701, 509560467, 496969438, 495897297, 495033618, 511332617, 505183435, 500735547, 500890221</strong> | <strong>Security fix for Apigee infrastructure.</strong> This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42587">CVE-2026-42587</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-5588">CVE-2026-5588</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34480">CVE-2026-34480</a> * <a href="https://github.com/advisories/GHSA-72hv-8253-57qq">GHSA-72hv-8253-57qq</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33870">CVE-2026-33870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33871">CVE-2026-33871</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35611">CVE-2026-35611</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33170">CVE-2026-33170</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33169">CVE-2026-33169</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33176">CVE-2026-33176</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33210">CVE-2026-33210</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33186">CVE-2026-33186</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42499">CVE-2026-42499</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35469">CVE-2026-35469</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-32281">CVE-2026-32281</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27144">CVE-2026-27144</a> |</p>]]></content>
+    <summary>A critical security fix has been implemented for the Apigee infrastructure, addressing multiple vulnerabilities. This update is essential for maintaining the integrity and security of your services.</summary>
+    <title>Security: Security Fix for Apigee Infrastructure</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-12:fixed:2</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>480260846</strong> | Improved XML processing security to prevent external entity injection. |
+| <strong>505723451</strong> | Fixed an issue where metadata could be shared across unrelated client sessions. |
+| <strong>505645076</strong> | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
+| <strong>503723862</strong> | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
+| <strong>503047744, 410026138, 496021751</strong> | Improved security isolation for PythonScript policy execution. |
+| <strong>469694040</strong> | Fixed an issue where custom security policies could intermittently fail to apply, and improved security policy resolution to ensure correct policy selection. |
+| <strong>502971220</strong> | Fixed a concurrency issue in streaming response handling to improve stability under high load. |
+| <strong>509692565</strong> | Fixed content-length header handling in external processing to prevent incorrect values. |
+| <strong>282207038</strong> | Fixed inconsistent timeouts when querying apps by parallelizing credential lookup. |
+| <strong>501102321</strong> | Fixed recurring fee calculation in monetization to correctly apply rate plan overrides. |
+| <strong>494469747</strong> | Fixed content-length header to reflect actual response body size. |
+| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
+    <summary>This release includes several security enhancements, including fixes for external entity injection, unauthorized token injection in OAuthV2 policies, and improved security isolation for PythonScript execution. Stability has also been improved with fixes for concurrency issues in streaming responses and more reliable custom security policy application.</summary>
+    <title>Fixed: Security and stability improvements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

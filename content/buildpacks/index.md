@@ -1,5 +1,13 @@
 # Buildpacks
 
+## 2026-05-12
+
+### Feature
+
+The `latest` tag of [generic builder](https://docs.cloud.google.com/docs/buildpacks/builders#generic_builder)
+uses the `google-24` stack.
+
+---
 ## 2026-04-03
 
 ### Feature

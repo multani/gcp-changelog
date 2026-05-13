@@ -1,5 +1,15 @@
 # Cloud SQL for SQL Server
 
+## 2026-05-12
+
+### Change
+
+The command for upgrading Cloud SQL instances to the new network architecture
+has been re-enabled.
+
+For more information, see [Upgrade an instance to the new network architecture](https://docs.cloud.google.com/sql/docs/sqlserver/upgrade-cloud-sql-instance-new-network-architecture).
+
+---
 ## 2026-05-11
 
 ### Feature

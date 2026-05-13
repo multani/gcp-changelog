@@ -171,6 +171,30 @@ For more information, see [IAM roles and
 permissions](https://docs.cloud.google.com/gemini/enterprise/docs/access-control).
 
 ---
+## 2026-04-14
+
+### Feature
+
+**Gemini Enterprise: New data stores (Public Preview)**
+
+The following data store are available in Gemini Enterprise:
+
+* [Clinical Trials](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/clinicaltrials)
+* [Crypto](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/crypto)
+* [Excalidraw](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/excalidraw)
+* [GoDaddy](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/godaddy)
+* [Granted](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/granted)
+* [Hugging Face](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/huggingface)
+* [Invideo](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/invideo)
+* [Kiwi](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/kiwi)
+* [LastMinute](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/lastminute)
+* [Microsoft Learn](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/microsoft-learn)
+* [Trivago](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/trivago)
+
+These data stores are in Public Preview. For more information, see [Connect a
+third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+---
 ## 2026-04-13
 
 ### Feature

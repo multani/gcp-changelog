@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-05-12
+
+### Feature
+
+You can now use the
+[`AI.COUNT_TOKENS` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-count-tokens)
+to estimate the token count of text input that you provide. For some generative
+AI functions, you can [view](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#token_usage)
+the total number of input, output, thought, and cache tokens for each modality
+processed by the query. These features are in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-08
 
 ### Announcement

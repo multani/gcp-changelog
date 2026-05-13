@@ -2,9 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Backup and DR</title>
   <subtitle>Changelog for Google Cloud product: Backup and DR</subtitle>
-  <updated>2026-01-26T00:00:00+00:00</updated>
+  <updated>2026-04-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:backup-and-dr</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/backup-and-dr/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-04-10:feature:0</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Expanded OS Support: Qualified Linux Change Block Tracking (CBT) support for
+multiple new RHEL 8 and 9 kernels, including versions 8.8, 8.10, 9.2, 9.4,
+and 9.7.</p>
+<p>Verbose Process Logging: Added enhanced verbose logging for fingerprint
+computation and verification to assist in troubleshooting verification failures.</p>]]></content>
+    <summary>We've expanded our qualified Linux Change Block Tracking (CBT) support to include additional RHEL 8 and 9 kernel versions. Additionally, we've introduced enhanced verbose logging for fingerprint computation and verification to improve troubleshooting of verification failures.</summary>
+    <title>Feature: Enhanced CBT and Logging for Linux Backups</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-04-10:fixed:1</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>HANA Backup and Restore Stability: Resolved HANA backup failures by improving
+  the matching logic for alternate IP addresses and addressed restore job failures
+  (error 5728) caused by missing configuration files during the database freeze
+  phase.</li>
+<li>SAP IQ Log Management: Fixed an issue where SAP IQ log backups would fail
+  due to invisible characters in temporary log file paths.</li>
+<li>Cleanup and Expiration Improvements: Resolved recurring cleanup job failures
+  (error 1271) by ensuring failed backup images are assigned valid cloud
+  credential IDs.</li>
+<li>Log Reliability and Diagnostics: Prevented root filesystem exhaustion by
+  rate-limiting excessive UDSAgent logging during custom app activities.
+  Additionally, the UDPINFO logging limit was increased to 10KB to prevent the
+  truncation of large XML messages, facilitating better debugging.</li>
+</ul>]]></content>
+    <summary>Several issues have been resolved, including HANA backup and restore failures, SAP IQ log backup problems, and recurring cleanup job failures. Additionally, improvements have been made to log reliability and diagnostics to prevent filesystem exhaustion and ensure better debugging.</summary>
+    <title>Fixed: HANA, SAP IQ, and Cleanup Fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-04-10:security:2</id>
+    <published>2026-04-10T00:00:00+00:00</published>
+    <updated>2026-04-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Vulnerability Remediation: Addressed over 38 security vulnerabilities
+identified in internal and customer scans, including remediations for
+Kernel, OpenSSL, rsync, glibc, and OpenJDK packages.</p>]]></content>
+    <summary>We have successfully remediated over 38 security vulnerabilities found in internal and customer scans. This includes critical packages such as Kernel, OpenSSL, and glibc, significantly enhancing our system's security posture.</summary>
+    <title>Security: Security Vulnerabilities Addressed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

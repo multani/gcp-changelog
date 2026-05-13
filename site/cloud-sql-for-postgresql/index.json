@@ -1,13 +1,23 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-05-12": [
+      {
+        "kind": "Change",
+        "content": "The command for upgrading Cloud SQL instances to the new network architecture\nhas been re-enabled.\n\nFor more information, see [Upgrade an instance to the new network architecture](https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture).",
+        "summary": {
+          "title": "Cloud SQL upgrade command re-enabled",
+          "summary": "The command to upgrade Cloud SQL instances to the new network architecture is now available again. This allows you to transition your instances to the improved network infrastructure. For more details, please refer to the documentation on upgrading your instance."
+        }
+      }
+    ],
     "2026-05-11": [
       {
         "kind": "Feature",
-        "content": "Cloud SQL for PostgreSQL now supports regional endpoints for the Cloud SQL Admin API.\nThis feature lets you direct your API calls to a region-specific endpoint, which\nensures that your requests are handled within the specified region's frontend\ninfrastructure with some limitations, such as backend dependencies that may\nstill have global components. This enhances data locality and helps meet strict\ncompliance expectations. For more information, see\n[Cloud SQL regional endpoints](https://docs.cloud.google.com/sql/docs/mysql/admin-api/rep).\n\nThis feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "content": "Cloud SQL for PostgreSQL now supports regional endpoints for the Cloud SQL Admin API.\nThis feature lets you direct your API calls to a region-specific endpoint, which\nensures that your requests are handled within the specified region's frontend\ninfrastructure with some limitations, such as backend dependencies that may\nstill have global components. This enhances data locality and helps meet strict\ncompliance expectations. For more information, see\n[Cloud SQL regional endpoints](https://docs.cloud.google.com/sql/docs/postgres/admin-api/rep).\n\nThis feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
         "summary": {
-          "title": "Cloud SQL for PostgreSQL regional endpoints",
-          "summary": "Cloud SQL for PostgreSQL now supports regional endpoints for the Admin API. This allows API calls to be directed to a region-specific endpoint, enhancing data locality and compliance. This feature is currently in Preview."
+          "title": "Cloud SQL for PostgreSQL: Regional Endpoints Now Available",
+          "summary": "Cloud SQL for PostgreSQL now supports regional endpoints for the Admin API, allowing API calls to be directed to a specific region. This feature enhances data locality and helps meet compliance requirements. It is currently in Preview."
         }
       }
     ],

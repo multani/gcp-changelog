@@ -1,5 +1,20 @@
 # Compute Engine
 
+## 2026-05-12
+
+### Security
+
+A vulnerability in AMD firmware (CVE-2025-61971, CVE-2025-61972, CVE-2024-36315) that could compromise SEV-SNP guests has been addressed.
+For more information, see the [GCP-2026-031 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-031).
+
+### Security
+
+A vulnerability (CVE-2025-54518) about potential corruption within the micro-operation (OP) cache in Zen 2 microarchitecture processors
+was discovered and has been addressed.
+For more information, see the
+[GCP-2026-032 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-032).
+
+---
 ## 2026-04-29
 
 ### Feature

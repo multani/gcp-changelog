@@ -1,5 +1,39 @@
 # Backup and DR
 
+## 2026-04-10
+
+### Feature
+
+Expanded OS Support: Qualified Linux Change Block Tracking (CBT) support for
+multiple new RHEL 8 and 9 kernels, including versions 8.8, 8.10, 9.2, 9.4,
+and 9.7.
+
+Verbose Process Logging: Added enhanced verbose logging for fingerprint
+computation and verification to assist in troubleshooting verification failures.
+
+### Fixed
+
+* HANA Backup and Restore Stability: Resolved HANA backup failures by improving
+  the matching logic for alternate IP addresses and addressed restore job failures
+  (error 5728) caused by missing configuration files during the database freeze
+  phase.
+* SAP IQ Log Management: Fixed an issue where SAP IQ log backups would fail
+  due to invisible characters in temporary log file paths.
+* Cleanup and Expiration Improvements: Resolved recurring cleanup job failures
+  (error 1271) by ensuring failed backup images are assigned valid cloud
+  credential IDs.
+* Log Reliability and Diagnostics: Prevented root filesystem exhaustion by
+  rate-limiting excessive UDSAgent logging during custom app activities.
+  Additionally, the UDPINFO logging limit was increased to 10KB to prevent the
+  truncation of large XML messages, facilitating better debugging.
+
+### Security
+
+Vulnerability Remediation: Addressed over 38 security vulnerabilities
+identified in internal and customer scans, including remediations for
+Kernel, OpenSSL, rsync, glibc, and OpenJDK packages.
+
+---
 ## 2026-01-26
 
 ### Fixed

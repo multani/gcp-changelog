@@ -1,5 +1,15 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-05-12
+
+### Change
+
+The command for upgrading Cloud SQL instances to the new network architecture
+has been re-enabled.
+
+For more information, see [Upgrade an instance to the new network architecture](https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture).
+
+---
 ## 2026-05-11
 
 ### Feature
@@ -10,7 +20,7 @@ ensures that your requests are handled within the specified region's frontend
 infrastructure with some limitations, such as backend dependencies that may
 still have global components. This enhances data locality and helps meet strict
 compliance expectations. For more information, see
-[Cloud SQL regional endpoints](https://docs.cloud.google.com/sql/docs/mysql/admin-api/rep).
+[Cloud SQL regional endpoints](https://docs.cloud.google.com/sql/docs/postgres/admin-api/rep).
 
 This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 

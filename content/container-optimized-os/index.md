@@ -1,5 +1,483 @@
 # Container Optimized OS
 
+## 2026-05-09
+
+### Change
+
+
+
+### cos-beta-129-19506-120-64
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/261ec2a82c20483a919d7d25c05c7138ed1859c8 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.120.64/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-43284 (dirtyfrag) in the Linux kernel.
+
+### Change
+
+Apply hardening sysctls on cchost boards.
+
+### Change
+
+Enabled mm hardening kernel cmdlines on cchost.
+
+### Security
+
+Fixed CVE-2026-23255 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23302 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23458 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31614 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31694 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31700 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31708 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31716 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31733 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31738 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31752 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31774 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31781 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-35385 and CVE-2026-35386 in net-misc/openssh.
+
+### Security
+
+Fixed CVE-2026-43012 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43013 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43016 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43024 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43028 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43030 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43037 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43038 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43043 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43046 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43054 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43057 in the Linux kernel.
+
+### Security
+
+Upgraded cos-gpu-installer to v2.6.8.
+
+### Security
+
+Upgraded dev-libs/libgcrypt to v1.10.4 to fix CVE-2026-41989.
+
+---
+## 2026-05-08
+
+### Change
+
+
+
+### cos-125-19216-395-4
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/8615dfb7470816ab28b148bb67bba5f12bb4ea0b ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.4/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Security
+
+Fixed CVE-2026-43284 (dirtyfrag) in the Linux kernel.
+
+### Change
+
+Apply hardening sysctls on cchost boards.
+
+### Change
+
+Enabled mm hardening kernel cmdlines on cchost.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.51.2.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.7.4.
+
+### Fixed
+
+Upgraded net-libs/libnetfilter\_conntrack to v1.1.1.
+
+### Fixed
+
+Upgraded sys-libs/libseccomp to v2.6.0-r3.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.6.
+
+### Security
+
+Fixed CVE-2026-31693 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31694 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31700 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31708 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31716 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31738 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31752 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31774 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31781 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-35385 and CVE-2026-35386 in net-misc/openssh.
+
+### Security
+
+Fixed CVE-2026-43012 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43013 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43016 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43024 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43028 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43030 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43037 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43038 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43043 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43057 in the Linux kernel.
+
+### Security
+
+Upgraded cos-gpu-installer to v2.6.8.
+
+### Security
+
+Upgraded dev-libs/libgcrypt to v1.10.4 to fix CVE-2026-41989.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Change
+
+
+
+### cos-121-18867-381-125
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/cb29612e10c383e119032dbb62243c2284a7a18d ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.125/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-43284 (dirtyfrag) in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31693 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31694 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31700 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31708 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31738 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31752 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31781 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43013 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43016 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43024 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43026 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43027 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43028 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43030 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43035 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43037 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43038 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43043 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43054 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43057 in the Linux kernel.
+
+### Security
+
+Upgraded dev-libs/libgcrypt to v1.10.4 to fix CVE-2026-41989.
+
+### Change
+
+
+
+### cos-117-18613-613-5
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/e416822ebf1c6b3a9c3304ba8d9903b55190df6d ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.613.5/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Security
+
+Fixed CVE-2026-43284 (dirtyfrag) in the Linux kernel.
+
+### Fixed
+
+Upgraded net-fs/cifs-utils to v7.5.
+
+### Fixed
+
+Upgraded sys-libs/talloc to v2.4.4.
+
+### Fixed
+
+Upgraded net-libs/libnetfilter\_conntrack to v1.1.1.
+
+### Fixed
+
+Upgraded net-libs/libtirpc to v1.3.7-r2.
+
+### Fixed
+
+Upgraded sys-apps/acl to v2.3.2-r3.
+
+### Fixed
+
+Upgraded sys-libs/libseccomp to v2.6.0-r3.
+
+### Fixed
+
+Upgraded sys-process/procps to v4.0.6.
+
+### Security
+
+Fixed CVE-2026-35385 in net-misc/openssh.
+
+### Security
+
+Upgraded dev-libs/libgcrypt to v1.10.4 to fix CVE-2026-41989.
+
+### Change
+
+Runtime sysctl changes:
+
+* Added: net.ipv4.tcp\_pingpong\_thresh: 1
+
+---
 ## 2026-05-07
 
 ### Change
@@ -95,14 +573,6 @@ Fixed CVE-2026-43057 in the Linux kernel.
 | --- | --- | --- | --- |
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.6.122](https://cos.googlesource.com/third_party/kernel/+/81a1a5c044b4f62bb492acb3dc787f12de339232 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.121/lakitu/gpu_driver_versions.textproto) |
-
-### Announcement
-
-Aggregate release notes.
-Please check whether the types are correct.
-Available types are:
-breaking\_change|non\_breaking\_change|deprecation|feature|fix|security\_bulletin|service\_announcement|issue].
-Please add another service\_announcement block if this is an LTS Refresh release.
 
 ### Security
 
@@ -1003,7 +1473,7 @@ Fixed CVE-2026-31428 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-31431 in the Linux kernel.
+Fixed CVE-2026-31431 (copy.fail) in the Linux kernel.
 
 ### Security
 
@@ -1154,7 +1624,7 @@ concurrent TLB invalidations.
 
 ### Security
 
-Fixed CVE-2026-31431 in the Linux kernel.
+Fixed CVE-2026-31431 (copy.fail) in the Linux kernel.
 
 ### Security
 
@@ -1182,7 +1652,7 @@ concurrent TLB invalidations.
 
 ### Security
 
-Fixed CVE-2026-31431 in the Linux kernel.
+Fixed CVE-2026-31431 (copy.fail) in the Linux kernel.
 
 ### Security
 
@@ -1218,7 +1688,7 @@ concurrent TLB invalidations.
 
 ### Security
 
-Fixed CVE-2026-31431 in the Linux kernel.
+Fixed CVE-2026-31431 (copy.fail) in the Linux kernel.
 
 ---
 ## 2026-04-28

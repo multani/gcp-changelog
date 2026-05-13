@@ -42,6 +42,11 @@ Conversational Analytics now supports [querying Looker Explores](https://docs.cl
 
 ### Fixed
 
+An issue has been fixed where queries that used [custom calendars](https://docs.cloud.google.com/looker/docs/custom-calendars) with [subtotals](https://docs.cloud.google.com/looker/docs/table-options#subtotals) may have produced incorrect results.
+**Note:** This item was updated on May 12, 2026.
+
+### Fixed
+
 An issue has been fixed where Looker could use an aggregate table of incorrect granularity if the SQL of a dimension was defined by using Liquid and if aggregate awareness was enabled. This feature now performs as expected.
 
 ### Fixed

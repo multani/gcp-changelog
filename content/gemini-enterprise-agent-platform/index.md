@@ -13,6 +13,14 @@ open models](https://docs.cloud.google.com/gemini-enterprise-agent-platform/mode
 
 ### Change
 
+**Gemini Distillation Service Early Access**
+
+We're introduction Gemini Distillation Service in Early Access. For information
+about requesting access, see [Gemini Distillation
+Service](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/distillation).
+
+### Change
+
 **Improvements to the Provisioned Throughput orders page** have now
 made it possible to:
 
@@ -51,8 +59,8 @@ Fixed an issue with **Audio track extraction (Gemini Embedding 2 only)** where t
 
 **Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image**
 
-Gemini Enterprise Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3.1
-Pro Preview are introducing the following changes:
+Gemini Enterprise Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro
+Image Preview are introducing the following changes:
 
 * Upgrades to improve 4K outputs and efficiency in both models
 * Gemini 3.1 Flash Image Preview and Gemini 3 Pro Image Preview will now

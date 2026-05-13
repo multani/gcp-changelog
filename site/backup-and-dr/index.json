@@ -1,6 +1,32 @@
 {
   "name": "Backup and DR",
   "entries": {
+    "2026-04-10": [
+      {
+        "kind": "Feature",
+        "content": "Expanded OS Support: Qualified Linux Change Block Tracking (CBT) support for\nmultiple new RHEL 8 and 9 kernels, including versions 8.8, 8.10, 9.2, 9.4,\nand 9.7.\n\nVerbose Process Logging: Added enhanced verbose logging for fingerprint\ncomputation and verification to assist in troubleshooting verification failures.",
+        "summary": {
+          "title": "Enhanced CBT and Logging for Linux Backups",
+          "summary": "We've expanded our qualified Linux Change Block Tracking (CBT) support to include additional RHEL 8 and 9 kernel versions. Additionally, we've introduced enhanced verbose logging for fingerprint computation and verification to improve troubleshooting of verification failures."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* HANA Backup and Restore Stability: Resolved HANA backup failures by improving\n  the matching logic for alternate IP addresses and addressed restore job failures\n  (error 5728) caused by missing configuration files during the database freeze\n  phase.\n* SAP IQ Log Management: Fixed an issue where SAP IQ log backups would fail\n  due to invisible characters in temporary log file paths.\n* Cleanup and Expiration Improvements: Resolved recurring cleanup job failures\n  (error 1271) by ensuring failed backup images are assigned valid cloud\n  credential IDs.\n* Log Reliability and Diagnostics: Prevented root filesystem exhaustion by\n  rate-limiting excessive UDSAgent logging during custom app activities.\n  Additionally, the UDPINFO logging limit was increased to 10KB to prevent the\n  truncation of large XML messages, facilitating better debugging.",
+        "summary": {
+          "title": "HANA, SAP IQ, and Cleanup Fixes",
+          "summary": "Several issues have been resolved, including HANA backup and restore failures, SAP IQ log backup problems, and recurring cleanup job failures. Additionally, improvements have been made to log reliability and diagnostics to prevent filesystem exhaustion and ensure better debugging."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Vulnerability Remediation: Addressed over 38 security vulnerabilities\nidentified in internal and customer scans, including remediations for\nKernel, OpenSSL, rsync, glibc, and OpenJDK packages.",
+        "summary": {
+          "title": "Security Vulnerabilities Addressed",
+          "summary": "We have successfully remediated over 38 security vulnerabilities found in internal and customer scans. This includes critical packages such as Kernel, OpenSSL, and glibc, significantly enhancing our system's security posture."
+        }
+      }
+    ],
     "2026-01-26": [
       {
         "kind": "Fixed",

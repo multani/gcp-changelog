@@ -1,5 +1,16 @@
 # Gemini Enterprise
 
+## 2026-05-12
+
+### Feature
+
+**Gemini Enterprise: Data store for GitLab (Preview)**
+
+You can now connect GitLab data stores to Gemini Enterprise.
+
+Support for GitLab data stores is in Public Preview. For more information, see [Connect GitLab](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gitlab).
+
+---
 ## 2026-05-08
 
 ### Feature
@@ -48,7 +59,7 @@ These data stores are in Public Preview. For more information, see
 
 **Gemini Enterprise: New data stores (Public Preview)**
 
-The following data store are available in Gemini Enterprise:
+The following data stores are available in Gemini Enterprise:
 
 * [Clinical Trials](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/clinicaltrials)
 * [Crypto](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/crypto)

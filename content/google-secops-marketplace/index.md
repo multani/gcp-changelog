@@ -1,5 +1,41 @@
 # Google SecOps Marketplace
 
+## 2026-05-06
+
+### Change
+
+**Tenable.io**: Version 18.0
+
+* Improved the handling of concurrent requests and API rate limits in the
+  following action:
+
+  + **Enrich Entities**
+
+### Change
+
+**SiemplifyUtilities**: Version 30.0
+
+* Added support for backticks to the following action:
+
+  + **Query Joiner**
+
+### Change
+
+**Azure Active Directory**: Version 27.0
+
+* Updated enrichment logic to ensure `id` is fetched when
+  `Include Last Sign In Details` is enabled in the following action:
+
+  + **Enrich User**
+
+### Change
+
+**Palo Alto Next Gen Firewall**: Version 29.0
+
+* **Integration**: Updated Manager to reuse the API token instead of generating
+  a new one.
+
+---
 ## 2026-04-29
 
 ### Change

@@ -1,5 +1,100 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-05-12
+
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the prerelease notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Agent status inheritance for HubSpot users**
+
+You can configure CCAI Platform to synchronize agent statuses with
+HubSpot agent statuses in real time. You can also map HubSpot agent statuses to
+Contact Center AI Platform statuses (and vice versa) to account for different agent status
+naming conventions.
+
+Administrators: A new **Settings > Developer Settings >
+Agent Status Inheritance** pane is available when you set **Settings
+> Developer Settings > Agent Platform** to **HubSpot**.
+
+### Feature
+
+**For call transfers in HubSpot, the ticket owner is automatically updated**
+
+When a call is transferred from one agent to another with a HubSpot integration,
+HubSpot tickets now automatically update to reflect the new ticket owner. This
+provides an accurate record of ownership throughout the interaction lifecycle.
+No configuration is required.
+
+### Feature
+
+**Agent synchronization for HubSpot**
+
+You can now configure your instance to use the default administrator user to
+synchronize CCAI Platform and HubSpot agents. CCAI Platform
+can use the default administrator user to create and update HubSpot accounts and
+records, even when a matching HubSpot profile can't be found for an agent.
+
+Administrators: A new **Default User** section is available in the **Settings
+> Developer Settings > CRM** pane.
+
+User experience change: When agent synchronization is configured, a new
+**Authorize** button appears on the agent adapter.
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where launching a task virtual assistant during a chat caused
+  the agent's screen to freeze.
+* Fixed an issue where call transcripts from CX Agent Studio agent
+  conversations were added to CRM records as garbled and unreadable text, with
+  repeated words and incorrect turn order.
+* Fixed an issue where the **Wait Time** custom field on Zendesk tickets
+  displayed an incorrect value when using custom fields for **Account** and
+  **Record**.
+* Fixed an issue where agents assigned a direct SMS-capable line didn't
+  receive visual notifications for incoming SMS chats in the agent adapter
+  while their status was set to `Unavailable`.
+* Fixed an issue where some chat transcripts couldn't be downloaded from the
+  **Completed Chats** page.
+* Fixed an issue where customer calls were unexpectedly abandoned during
+  payment transactions when DTMF inputs were provided.
+* Fixed an issue where agents heard repeated call notification sounds during
+  active calls, even when no new call was assigned.
+* Fixed an issue where only English IVR queues appeared when configuring
+  agent-specific deflection settings, even when other language queues were
+  available.
+
+- Fixed an issue where sentiment analysis didn't display to agents when calls
+were escalated from a virtual agent, even though the data was generated.
+
+* Fixed an issue where email messages in queues displayed a blank white panel
+  when opened.
+* Fixed an issue where chat transcript and metadata files were generated as
+  empty files, causing API timeouts and blocking reporting pipelines.
+* Fixed an issue where chat sessions that ended due to end-user inactivity
+  were marked as **Disconnected by end user** instead of **Timeout: end user
+  stopped responding**.
+* Fixed an issue where agents couldn't receive more than 12 concurrent chats
+  despite being configured for up to 30.
+* Fixed an issue where virtual agent calls were routed back to the original
+  queue instead of being handled as expected.
+* Fixed an issue that occurred when a third party was added to a call. After
+  all participants left the call, the call still appeared to be connected.
+* Fixed an issue where cascade conditions for agent queues didn't correctly
+  enforce the minimum number of available UK agents before allowing calls to
+  cascade from the US queue, resulting in calls being routed incorrectly.
+* Fixed an issue where bulk user import incorrectly limited the chat
+  concurrency value to the global default, preventing valid per-agent settings
+  from being uploaded.
+
+---
 ## 2026-05-06
 
 ### Announcement
@@ -238,8 +333,8 @@ This release addresses the following issues:
 * Fixed an issue where call recordings for sessions ending with a virtual
   agent post-call survey were truncated. This resulted in the main human agent
   conversation not being saved.
-* Fixed an issue where outbound call restrictions incorrectly blocked calls to
-  Japanese numbers, even when settings allowed them.
+* ~~Fixed an issue where outbound call restrictions incorrectly blocked calls
+  to Japanese numbers, even when settings allowed them.~~
 * Fixed an issue where agents could become stuck in **Wrap-up** status after a
   call was transferred to another agent's voicemail and the end user
   disconnected during the voicemail greeting.

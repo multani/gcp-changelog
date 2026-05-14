@@ -1,5 +1,24 @@
 # Gemini
 
+## 2026-05-13
+
+### Other
+
+
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
+### Other
+
+
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-05-08
 
 ### Other
@@ -18,6 +37,25 @@ Various bug fixes and minor product enhancements.
 
 
 ### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
+## 2026-04-17
+
+### Other
+
+
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
+### Other
+
+
+
+### Bug fixes in IntelliJ
 
 Various bug fixes and minor product enhancements.
 

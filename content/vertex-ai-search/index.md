@@ -1,5 +1,19 @@
 # Vertex AI Search
 
+## 2026-05-13
+
+### Feature
+
+**Vertex AI Search: Weight searchable fields (Preview)**
+
+You can specify a weight for searchable fields in your schema to indicate their
+relative importance in search results.
+
+This feature is in Public Preview.
+For more information, see [Weight searchable
+fields](https://docs.cloud.google.com/generative-ai-app-builder/docs/configure-field-settings#weight-search).
+
+---
 ## 2026-04-22
 
 ### Feature

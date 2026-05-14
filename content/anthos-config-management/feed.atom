@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Anthos Config Management</title>
   <subtitle>Changelog for Google Cloud product: Anthos Config Management</subtitle>
-  <updated>2026-03-26T00:00:00+00:00</updated>
+  <updated>2026-05-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:anthos-config-management</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/anthos-config-management/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:anthos-config-management:2026-05-11:fixed:0</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Removed the readinessProbe and deprecated health checks for the otel-agent sidecar to align its configuration with other containers.</p>]]></content>
+    <summary>The readinessProbe and deprecated health checks for the otel-agent sidecar have been removed. This change aligns the otel-agent's configuration with that of other containers.</summary>
+    <title>Fixed: Deprecated health checks removed for otel-agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:anthos-config-management:2026-05-11:feature:1</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Changed <code>logLevel</code> configuration to support values as low as -10 to reduce log verbosity in Config Sync containers.</p>]]></content>
+    <summary>Config Sync now supports log levels as low as -10. This allows for reduced log verbosity within Config Sync containers, making it easier to manage and analyze logs.</summary>
+    <title>Feature: New log level option for Config Sync</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:anthos-config-management:2026-05-11:feature:2</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Added support for token-based authentication when using OCI images from third-party registries.</p>]]></content>
+    <summary>You can now use token-based authentication to pull OCI images from third-party registries. This provides a more secure and flexible way to manage access to your container images.</summary>
+    <title>Feature: Token-based authentication for OCI images</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

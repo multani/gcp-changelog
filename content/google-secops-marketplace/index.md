@@ -1,5 +1,57 @@
 # Google SecOps Marketplace
 
+## 2026-05-13
+
+### Change
+
+**Azure Active Directory**: Version 28.0
+
+* **Integration**: Updated TIPCommon to 2.3.8.
+
+### Change
+
+**ConnectWise**: Version 22.0
+
+* Refactored the code for the following action:
+  + **Create Alerts Ticket**
+
+### Change
+
+**EmailV2**: Version 41.0
+
+* **Integration**: Updated TIPCommon to 2.3.8 and migrated `EnvironmentCommon` imports to `TIPCommon.envcommon`.
+
+### Change
+
+**Google Chronicle**: Version 82.0
+
+* **Integration**: Improved memory efficiency to prevent OOM crashes when querying large timeframes for **Lookup Similar Alerts**.
+* Updated the code for the following action:
+  + **Get Detection Details**
+* Improved Dynamic List filter validation, logging, and added the `Validate Dynamic List Entries` parameter for the following connector:
+  + **Google Chronicle - Chronicle Alerts Connector**
+
+### Change
+
+**Jira**: Version 57.0
+
+* Refactored the code for the following action:
+  + **Create Alert Issue**
+
+### Change
+
+**MITRE ATT&CK**: Version 19.0
+
+* **Integration**: Updated TIPCommon to 2.3.8.
+
+### Change
+
+**ServiceNow**: Version 65.0
+
+* Refactored the code for the following action:
+  + **Create Alert Incident**
+
+---
 ## 2026-05-06
 
 ### Change

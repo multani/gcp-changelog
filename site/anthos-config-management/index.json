@@ -1,6 +1,32 @@
 {
   "name": "Anthos Config Management",
   "entries": {
+    "2026-05-11": [
+      {
+        "kind": "Fixed",
+        "content": "Removed the readinessProbe and deprecated health checks for the otel-agent sidecar to align its configuration with other containers.",
+        "summary": {
+          "title": "Deprecated health checks removed for otel-agent",
+          "summary": "The readinessProbe and deprecated health checks for the otel-agent sidecar have been removed. This change aligns the otel-agent's configuration with that of other containers."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Changed `logLevel` configuration to support values as low as -10 to reduce log verbosity in Config Sync containers.",
+        "summary": {
+          "title": "New log level option for Config Sync",
+          "summary": "Config Sync now supports log levels as low as -10. This allows for reduced log verbosity within Config Sync containers, making it easier to manage and analyze logs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for token-based authentication when using OCI images from third-party registries.",
+        "summary": {
+          "title": "Token-based authentication for OCI images",
+          "summary": "You can now use token-based authentication to pull OCI images from third-party registries. This provides a more secure and flexible way to manage access to your container images."
+        }
+      }
+    ],
     "2026-03-26": [
       {
         "kind": "Breaking",

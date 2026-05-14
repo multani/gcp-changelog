@@ -1,5 +1,13 @@
 # Cloud Service Mesh
 
+## 2026-05-13
+
+### Security
+
+Proxy version csm\_mesh\_proxy.20260423\_RC03 is rolling out to all Managed Cloud
+Service Mesh release channels over the next week.
+
+---
 ## 2026-04-27
 
 ### Announcement

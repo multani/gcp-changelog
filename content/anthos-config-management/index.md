@@ -1,5 +1,20 @@
 # Anthos Config Management
 
+## 2026-05-11
+
+### Fixed
+
+Removed the readinessProbe and deprecated health checks for the otel-agent sidecar to align its configuration with other containers.
+
+### Feature
+
+Changed `logLevel` configuration to support values as low as -10 to reduce log verbosity in Config Sync containers.
+
+### Feature
+
+Added support for token-based authentication when using OCI images from third-party registries.
+
+---
 ## 2026-03-26
 
 ### Breaking

@@ -1,5 +1,29 @@
 # Migrate to Virtual Machines
 
+## 2026-04-22
+
+### Feature
+
+Migrate to Virtual Machines now lets you use regional disks for the target
+virtual machine (VM) instance.
+
+---
+## 2026-04-20
+
+### Feature
+
+Migrate to Virtual Machines now supports the following operating systems for
+VMware, AWS, Azure, and image import sources:
+
+* Red Hat Enterprise Linux 10
+* CentOS 10
+* AlmaLinux 10
+* Oracle Linux 10
+* Rocky Linux 10
+
+CentOS is not supported on ARM architecture.
+
+---
 ## 2025-11-17
 
 ### Feature

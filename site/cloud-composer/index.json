@@ -1,6 +1,16 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2026-05-14": [
+      {
+        "kind": "Issue",
+        "content": "The `google-api-core` preinstalled package versions from 2.28.0 to 2.30.2 might\ncause degraded environment performance, which can result in longer times to\nexecute a task and longer times to move a task from the queued to the executing\nstate.\n\nAffected Managed Airflow (Gen 3) builds:\n\n* composer-3-airflow-3.1.7-build.0 to composer-3-airflow-3.1.7-build.5\n* composer-3-airflow-3.1.0-build.5 to composer-3-airflow-3.1.0-build.10\n* composer-3-airflow-2.11.1-build.0\n* composer-3-airflow-2.10.5-build.22 to composer-3-airflow-2.10.5-build.33\n* composer-3-airflow-2.9.3-build.42 to composer-3-airflow-2.9.3-build.53\n\nAffected Managed Airflow (Gen 2) builds:\n\n* composer-2.16.10-airflow-2.11.1\n* composer-2.16.0-airflow-2.10.5 to composer-2.16.10-airflow-2.10.5\n* composer-2.16.0-airflow-2.9.3 to composer-2.16.10-airflow-2.9.3\n\nWe recommend to upgrade your environment to the following versions, which\ncontain a version of the package where the problem is fixed or isn't present:\n\n* composer-3-airflow-3.1.7-build.7 and later\n* composer-3-airflow-2.11.1-build.3 and later\n* composer-3-airflow-2.10.5-build.36 and later\n* composer-3-airflow-2.9.3-build.54 (contains 2.27.0)\n* composer-2.17.0-airflow-2.11.1 and later\n* composer-2.17.0-airflow-2.10.5 and later\n* composer-2.16.11-airflow-2.11.1 (contains 2.27.0)\n* composer-2.16.11-airflow-2.10.5 (contains 2.27.0)\n* composer-2.16.11-airflow-2.9.3 (contains 2.27.0)\n\nAs a workaround, you can manually install a later version of the\n`google-api-core` package to an affected environment by specifying `>=2.30.3`\nas the required version.",
+        "summary": {
+          "title": "Performance degradation in Airflow environments",
+          "summary": "Certain versions of the `google-api-core` package (2.28.0-2.30.2) may cause performance issues in Managed Airflow environments, leading to slower task execution and state transitions. Upgrading to recommended Airflow versions or manually installing `google-api-core >= 2.30.3` is advised to resolve this problem."
+        }
+      }
+    ],
     "2026-05-06": [
       {
         "kind": "Announcement",

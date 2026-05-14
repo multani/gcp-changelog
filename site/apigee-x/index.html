@@ -2550,7 +2550,7 @@
 </tr>
 <tr>
 <td><strong>500861814</strong></td>
-<td>Fixed an issue where connection failures under port exhaustion could cause excessive CPU usage and unnecessary scaling.</td>
+<td>Gracefully handle connection failures involving the forward proxy, resolving an issue where port exhaustion could trigger aggressive retry storms, excessive CPU usage, and unnecessary scaling.</td>
 </tr>
 <tr>
 <td><strong>500313309</strong></td>

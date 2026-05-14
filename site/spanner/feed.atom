@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-05-04T00:00:00+00:00</updated>
+  <updated>2026-05-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-05-14:announcement:0</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Spanner change streams default <a href="https://docs.cloud.google.com/spanner/docs/change-streams#data-retention">retention period</a> has been increased from 1 day to 7 days.
+This change affects both new and existing change streams that don't have a retention period explicitly set.
+You can always specify the retention period through <a href="https://docs.cloud.google.com/spanner/docs/change-streams/manage#create">create change stream</a> or <a href="https://docs.cloud.google.com/spanner/docs/change-streams/manage#modify">alter change stream</a> DDL statements to override the default.</p>]]></content>
+    <summary>The default retention period for Spanner change streams has been increased from 1 day to 7 days. This applies to new and existing streams without an explicit retention setting. You can still customize this period using DDL statements.</summary>
+    <title>Announcement: Change stream retention increased</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

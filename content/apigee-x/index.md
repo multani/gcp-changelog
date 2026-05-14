@@ -33,7 +33,7 @@ On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).
 | **502692267** | MCP to handle /.well-known/oauth-protected-resource/mcp resource paths. |
 | **430170696** | Changed the error response from 500 to 401 for expired consumer keys. |
 | **480770263** | Fixed SpikeArrest policy to handle edge cases that previously caused 500 errors. |
-| **500861814** | Fixed an issue where connection failures under port exhaustion could cause excessive CPU usage and unnecessary scaling. |
+| **500861814** | Gracefully handle connection failures involving the forward proxy, resolving an issue where port exhaustion could trigger aggressive retry storms, excessive CPU usage, and unnecessary scaling. |
 | **500313309** | Fixed SSE streaming detection logic. |
 | **494304819** | Hardened message processor management ports by blocking external access to internal management endpoints. |
 | **469642464** | Improved input validation in AI protection policies to prevent Server-Side Request Forgery. |

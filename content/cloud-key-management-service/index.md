@@ -1,5 +1,23 @@
 # Cloud Key Management Service
 
+## 2026-05-14
+
+### Feature
+
+The Cloud KMS **Encryption metrics** dashboard and project-level key tracking
+are generally available. You can use the **Encryption metrics** dashboard to
+review summaries and details of your keys used in customer-managed encryption
+key (CMEK) integrations and the resources that they protect. The **Encryption
+metrics** dashboard and the key **Usage tracking** tab support both centralized
+key management using a dedicated key project and delegated key management using
+keys stored in the same projects as the resources that they protect.
+
+For more information about the **Encryption metrics** dashboard, see [View
+encryption metrics](https://docs.cloud.google.com/kms/docs/view-encryption-metrics). For more information
+about project-level key tracking, see [View key
+usage](https://docs.cloud.google.com/kms/docs/view-key-usage).
+
+---
 ## 2026-03-02
 
 ### Feature

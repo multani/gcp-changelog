@@ -1,5 +1,46 @@
 # Cloud Composer
 
+## 2026-05-14
+
+### Issue
+
+The `google-api-core` preinstalled package versions from 2.28.0 to 2.30.2 might
+cause degraded environment performance, which can result in longer times to
+execute a task and longer times to move a task from the queued to the executing
+state.
+
+Affected Managed Airflow (Gen 3) builds:
+
+* composer-3-airflow-3.1.7-build.0 to composer-3-airflow-3.1.7-build.5
+* composer-3-airflow-3.1.0-build.5 to composer-3-airflow-3.1.0-build.10
+* composer-3-airflow-2.11.1-build.0
+* composer-3-airflow-2.10.5-build.22 to composer-3-airflow-2.10.5-build.33
+* composer-3-airflow-2.9.3-build.42 to composer-3-airflow-2.9.3-build.53
+
+Affected Managed Airflow (Gen 2) builds:
+
+* composer-2.16.10-airflow-2.11.1
+* composer-2.16.0-airflow-2.10.5 to composer-2.16.10-airflow-2.10.5
+* composer-2.16.0-airflow-2.9.3 to composer-2.16.10-airflow-2.9.3
+
+We recommend to upgrade your environment to the following versions, which
+contain a version of the package where the problem is fixed or isn't present:
+
+* composer-3-airflow-3.1.7-build.7 and later
+* composer-3-airflow-2.11.1-build.3 and later
+* composer-3-airflow-2.10.5-build.36 and later
+* composer-3-airflow-2.9.3-build.54 (contains 2.27.0)
+* composer-2.17.0-airflow-2.11.1 and later
+* composer-2.17.0-airflow-2.10.5 and later
+* composer-2.16.11-airflow-2.11.1 (contains 2.27.0)
+* composer-2.16.11-airflow-2.10.5 (contains 2.27.0)
+* composer-2.16.11-airflow-2.9.3 (contains 2.27.0)
+
+As a workaround, you can manually install a later version of the
+`google-api-core` package to an affected environment by specifying `>=2.30.3`
+as the required version.
+
+---
 ## 2026-05-06
 
 ### Announcement

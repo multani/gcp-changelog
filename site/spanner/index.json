@@ -1,6 +1,16 @@
 {
   "name": "Spanner",
   "entries": {
+    "2026-05-14": [
+      {
+        "kind": "Announcement",
+        "content": "The Spanner change streams default [retention period](https://docs.cloud.google.com/spanner/docs/change-streams#data-retention) has been increased from 1 day to 7 days.\nThis change affects both new and existing change streams that don't have a retention period explicitly set.\nYou can always specify the retention period through [create change stream](https://docs.cloud.google.com/spanner/docs/change-streams/manage#create) or [alter change stream](https://docs.cloud.google.com/spanner/docs/change-streams/manage#modify) DDL statements to override the default.",
+        "summary": {
+          "title": "Change stream retention increased",
+          "summary": "The default retention period for Spanner change streams has been increased from 1 day to 7 days. This applies to new and existing streams without an explicit retention setting. You can still customize this period using DDL statements."
+        }
+      }
+    ],
     "2026-05-04": [
       {
         "kind": "Feature",

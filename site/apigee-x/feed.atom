@@ -54,7 +54,7 @@
 | <strong>502692267</strong> | MCP to handle /.well-known/oauth-protected-resource/mcp resource paths. |
 | <strong>430170696</strong> | Changed the error response from 500 to 401 for expired consumer keys. |
 | <strong>480770263</strong> | Fixed SpikeArrest policy to handle edge cases that previously caused 500 errors. |
-| <strong>500861814</strong> | Fixed an issue where connection failures under port exhaustion could cause excessive CPU usage and unnecessary scaling. |
+| <strong>500861814</strong> | Gracefully handle connection failures involving the forward proxy, resolving an issue where port exhaustion could trigger aggressive retry storms, excessive CPU usage, and unnecessary scaling. |
 | <strong>500313309</strong> | Fixed SSE streaming detection logic. |
 | <strong>494304819</strong> | Hardened message processor management ports by blocking external access to internal management endpoints. |
 | <strong>469642464</strong> | Improved input validation in AI protection policies to prevent Server-Side Request Forgery. |
@@ -62,7 +62,7 @@
 | <strong>494590020</strong> | Added enforcement for product association in OAuthV2 flow. Apps without valid products are now denied. |
 | <strong>479288727</strong> | Improved performance and reduced redundant work in ingress status watcher. |
 | <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
-    <summary>This release includes several security enhancements across various policies, including OAuthV2, XML processing, and AI protection, to prevent common vulnerabilities. It also addresses stability issues, improves performance, and fixes bugs in areas like fee calculation and response handling.</summary>
+    <summary>Several security vulnerabilities have been addressed, including improvements to XML processing, OAuthV2 policy, and PythonScript execution. Stability has been enhanced with fixes for concurrency issues, content-length header handling, and streaming response management. Performance optimizations have also been implemented across various features.</summary>
     <title>Fixed: Security and Stability Improvements</title>
   </entry>
   <entry>

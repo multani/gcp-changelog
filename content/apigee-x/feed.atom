@@ -40,19 +40,30 @@
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
 | <strong>480260846</strong> | Improved XML processing security to prevent external entity injection. |
-| <strong>505723451</strong> | Fixed an issue where metadata could be shared across unrelated client sessions. |
+| <strong>510061670, 505723451, 503723862, 503817773</strong> | Improved security in OAuthV2 policy. |
 | <strong>505645076</strong> | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
-| <strong>503723862</strong> | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
 | <strong>503047744, 410026138, 496021751</strong> | Improved security isolation for PythonScript policy execution. |
 | <strong>469694040</strong> | Fixed an issue where custom security policies could intermittently fail to apply, and improved security policy resolution to ensure correct policy selection. |
-| <strong>502971220</strong> | Fixed a concurrency issue in streaming response handling to improve stability under high load. |
+| <strong>502971220</strong> | Fixed a concurrency issue to improve stability under high load. |
 | <strong>509692565</strong> | Fixed content-length header handling in external processing to prevent incorrect values. |
-| <strong>282207038</strong> | Fixed inconsistent timeouts when querying apps by parallelizing credential lookup. |
+| <strong>282207038</strong> | Improved performance while listing apps on scale. |
 | <strong>501102321</strong> | Fixed recurring fee calculation in monetization to correctly apply rate plan overrides. |
-| <strong>494469747</strong> | Fixed content-length header to reflect actual response body size. |
+| <strong>449729840, 502604752</strong> | Fixed streaming response handling to prevent race conditions in bidirectional flows. |
+| <strong>507167063</strong> | Fixed preservation of client request IDs during proxy chaining. |
+| <strong>507580304</strong> | Improved IPv4 address normalization for consistent access control evaluation. |
+| <strong>502692267</strong> | MCP to handle /.well-known/oauth-protected-resource/mcp resource paths. |
+| <strong>430170696</strong> | Changed the error response from 500 to 401 for expired consumer keys. |
+| <strong>480770263</strong> | Fixed SpikeArrest policy to handle edge cases that previously caused 500 errors. |
+| <strong>500861814</strong> | Fixed an issue where connection failures under port exhaustion could cause excessive CPU usage and unnecessary scaling. |
+| <strong>500313309</strong> | Fixed SSE streaming detection logic. |
+| <strong>494304819</strong> | Hardened message processor management ports by blocking external access to internal management endpoints. |
+| <strong>469642464</strong> | Improved input validation in AI protection policies to prevent Server-Side Request Forgery. |
+| <strong>472526232</strong> | Improved SAML assertion validation. |
+| <strong>494590020</strong> | Added enforcement for product association in OAuthV2 flow. Apps without valid products are now denied. |
+| <strong>479288727</strong> | Improved performance and reduced redundant work in ingress status watcher. |
 | <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
-    <summary>This release includes several security enhancements, including fixes for external entity injection, unauthorized token injection in OAuthV2 policies, and improved security isolation for PythonScript execution. Stability has also been improved with fixes for concurrency issues in streaming responses and more reliable custom security policy application.</summary>
-    <title>Fixed: Security and stability improvements</title>
+    <summary>This release includes several security enhancements across various policies, including OAuthV2, XML processing, and AI protection, to prevent common vulnerabilities. It also addresses stability issues, improves performance, and fixes bugs in areas like fee calculation and response handling.</summary>
+    <title>Fixed: Security and Stability Improvements</title>
   </entry>
   <entry>
     <author>

@@ -19,16 +19,27 @@ On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).
 | Bug ID | Description |
 | --- | --- |
 | **480260846** | Improved XML processing security to prevent external entity injection. |
-| **505723451** | Fixed an issue where metadata could be shared across unrelated client sessions. |
+| **510061670, 505723451, 503723862, 503817773** | Improved security in OAuthV2 policy. |
 | **505645076** | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
-| **503723862** | Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection. |
 | **503047744, 410026138, 496021751** | Improved security isolation for PythonScript policy execution. |
 | **469694040** | Fixed an issue where custom security policies could intermittently fail to apply, and improved security policy resolution to ensure correct policy selection. |
-| **502971220** | Fixed a concurrency issue in streaming response handling to improve stability under high load. |
+| **502971220** | Fixed a concurrency issue to improve stability under high load. |
 | **509692565** | Fixed content-length header handling in external processing to prevent incorrect values. |
-| **282207038** | Fixed inconsistent timeouts when querying apps by parallelizing credential lookup. |
+| **282207038** | Improved performance while listing apps on scale. |
 | **501102321** | Fixed recurring fee calculation in monetization to correctly apply rate plan overrides. |
-| **494469747** | Fixed content-length header to reflect actual response body size. |
+| **449729840, 502604752** | Fixed streaming response handling to prevent race conditions in bidirectional flows. |
+| **507167063** | Fixed preservation of client request IDs during proxy chaining. |
+| **507580304** | Improved IPv4 address normalization for consistent access control evaluation. |
+| **502692267** | MCP to handle /.well-known/oauth-protected-resource/mcp resource paths. |
+| **430170696** | Changed the error response from 500 to 401 for expired consumer keys. |
+| **480770263** | Fixed SpikeArrest policy to handle edge cases that previously caused 500 errors. |
+| **500861814** | Fixed an issue where connection failures under port exhaustion could cause excessive CPU usage and unnecessary scaling. |
+| **500313309** | Fixed SSE streaming detection logic. |
+| **494304819** | Hardened message processor management ports by blocking external access to internal management endpoints. |
+| **469642464** | Improved input validation in AI protection policies to prevent Server-Side Request Forgery. |
+| **472526232** | Improved SAML assertion validation. |
+| **494590020** | Added enforcement for product association in OAuthV2 flow. Apps without valid products are now denied. |
+| **479288727** | Improved performance and reduced redundant work in ingress status watcher. |
 | **N/A** | Updates to infrastructure and libraries. |
 
 ---

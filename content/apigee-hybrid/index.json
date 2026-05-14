@@ -1,6 +1,40 @@
 {
   "name": "Apigee hybrid",
   "entries": {
+    "2026-05-13": [
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Features Announced",
+          "summary": "We are excited to announce several new features designed to enhance your experience. These updates aim to improve performance and introduce new capabilities. More details will be shared soon."
+        }
+      },
+      {
+        "kind": "v1.16.2",
+        "content": "On May 13, 2026 we released an updated version of the Apigee hybrid software, v1.16.2.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.2](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
+        "summary": {
+          "title": "Apigee hybrid v1.16.2 released",
+          "summary": "The Apigee hybrid software version v1.16.2 was released on May 13, 2026. This patch release includes updated container images integrated with Helm charts for streamlined upgrades. Refer to the documentation for detailed upgrade and installation instructions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "#### Fixed in this release\n\n| Bug ID | Description |\n| --- | --- |\n| **485738013** | **Fixed an issue where API products with `LLMTokenQuota` operations were not enforcing model-based access restrictions, allowing requests to models not listed in the product to bypass the operations check.** |\n| **479288727** | **Fixed an issue where the Apigee UI and API reported a 10+ minute delay in deployment status after performing a proxy deployment.** |\n| **499223890** | **Fixed an issue where the runtime could not handle HTTP proxy passwords containing special characters in Apigee hybrid 1.16.0-hotfix-1 configurations.** |\n| **500861814** | **Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.** |\n| **510438578** | **Fixed an ingestion-blocking issue with `apigee-stackdriver-prometheus-sidecar` in Apigee hybrid 1.16.1.** |",
+        "summary": {
+          "title": "Resolved API Access and Deployment Issues",
+          "summary": "This release addresses several critical issues, including improper access restrictions for API products, delayed deployment status reporting in the UI and API, and problems handling special characters in HTTP proxy passwords. Additionally, it resolves excessive Message Processor scaling behavior and an ingestion-blocking issue with the Prometheus sidecar in hybrid environments."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Various security and CVE fixes are included in this release.",
+        "summary": {
+          "title": "Security Updates Released",
+          "summary": "This release includes important security and CVE fixes to enhance system protection. Keep your systems up-to-date to benefit from these improvements."
+        }
+      }
+    ],
     "2026-05-04": [
       {
         "kind": "v1.15.3",

@@ -2493,15 +2493,11 @@
 <td>Improved XML processing security to prevent external entity injection.</td>
 </tr>
 <tr>
-<td><strong>505723451</strong></td>
-<td>Fixed an issue where metadata could be shared across unrelated client sessions.</td>
+<td><strong>510061670, 505723451, 503723862, 503817773</strong></td>
+<td>Improved security in OAuthV2 policy.</td>
 </tr>
 <tr>
 <td><strong>505645076</strong></td>
-<td>Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection.</td>
-</tr>
-<tr>
-<td><strong>503723862</strong></td>
 <td>Fixed a security issue in OAuthV2 policy to prevent unauthorized token injection.</td>
 </tr>
 <tr>
@@ -2514,7 +2510,7 @@
 </tr>
 <tr>
 <td><strong>502971220</strong></td>
-<td>Fixed a concurrency issue in streaming response handling to improve stability under high load.</td>
+<td>Fixed a concurrency issue to improve stability under high load.</td>
 </tr>
 <tr>
 <td><strong>509692565</strong></td>
@@ -2522,15 +2518,63 @@
 </tr>
 <tr>
 <td><strong>282207038</strong></td>
-<td>Fixed inconsistent timeouts when querying apps by parallelizing credential lookup.</td>
+<td>Improved performance while listing apps on scale.</td>
 </tr>
 <tr>
 <td><strong>501102321</strong></td>
 <td>Fixed recurring fee calculation in monetization to correctly apply rate plan overrides.</td>
 </tr>
 <tr>
-<td><strong>494469747</strong></td>
-<td>Fixed content-length header to reflect actual response body size.</td>
+<td><strong>449729840, 502604752</strong></td>
+<td>Fixed streaming response handling to prevent race conditions in bidirectional flows.</td>
+</tr>
+<tr>
+<td><strong>507167063</strong></td>
+<td>Fixed preservation of client request IDs during proxy chaining.</td>
+</tr>
+<tr>
+<td><strong>507580304</strong></td>
+<td>Improved IPv4 address normalization for consistent access control evaluation.</td>
+</tr>
+<tr>
+<td><strong>502692267</strong></td>
+<td>MCP to handle /.well-known/oauth-protected-resource/mcp resource paths.</td>
+</tr>
+<tr>
+<td><strong>430170696</strong></td>
+<td>Changed the error response from 500 to 401 for expired consumer keys.</td>
+</tr>
+<tr>
+<td><strong>480770263</strong></td>
+<td>Fixed SpikeArrest policy to handle edge cases that previously caused 500 errors.</td>
+</tr>
+<tr>
+<td><strong>500861814</strong></td>
+<td>Fixed an issue where connection failures under port exhaustion could cause excessive CPU usage and unnecessary scaling.</td>
+</tr>
+<tr>
+<td><strong>500313309</strong></td>
+<td>Fixed SSE streaming detection logic.</td>
+</tr>
+<tr>
+<td><strong>494304819</strong></td>
+<td>Hardened message processor management ports by blocking external access to internal management endpoints.</td>
+</tr>
+<tr>
+<td><strong>469642464</strong></td>
+<td>Improved input validation in AI protection policies to prevent Server-Side Request Forgery.</td>
+</tr>
+<tr>
+<td><strong>472526232</strong></td>
+<td>Improved SAML assertion validation.</td>
+</tr>
+<tr>
+<td><strong>494590020</strong></td>
+<td>Added enforcement for product association in OAuthV2 flow. Apps without valid products are now denied.</td>
+</tr>
+<tr>
+<td><strong>479288727</strong></td>
+<td>Improved performance and reduced redundant work in ingress status watcher.</td>
 </tr>
 <tr>
 <td><strong>N/A</strong></td>

@@ -10,10 +10,6 @@
 
 Various bug fixes and minor product enhancements.
 
-### Other
-
-
-
 ### Bug fixes in IntelliJ
 
 Various bug fixes and minor product enhancements.

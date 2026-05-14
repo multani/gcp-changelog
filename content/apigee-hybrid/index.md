@@ -1,5 +1,37 @@
 # Apigee hybrid
 
+## 2026-05-13
+
+### Announcement
+
+
+
+### v1.16.2
+
+On May 13, 2026 we released an updated version of the Apigee hybrid software, v1.16.2.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.2](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **485738013** | **Fixed an issue where API products with `LLMTokenQuota` operations were not enforcing model-based access restrictions, allowing requests to models not listed in the product to bypass the operations check.** |
+| **479288727** | **Fixed an issue where the Apigee UI and API reported a 10+ minute delay in deployment status after performing a proxy deployment.** |
+| **499223890** | **Fixed an issue where the runtime could not handle HTTP proxy passwords containing special characters in Apigee hybrid 1.16.0-hotfix-1 configurations.** |
+| **500861814** | **Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.** |
+| **510438578** | **Fixed an ingestion-blocking issue with `apigee-stackdriver-prometheus-sidecar` in Apigee hybrid 1.16.1.** |
+
+### Security
+
+Various security and CVE fixes are included in this release.
+
+---
 ## 2026-05-04
 
 ### v1.15.3

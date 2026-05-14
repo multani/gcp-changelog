@@ -13,6 +13,25 @@ This feature is in Public Preview.
 For more information, see [Weight searchable
 fields](https://docs.cloud.google.com/generative-ai-app-builder/docs/configure-field-settings#weight-search).
 
+### Feature
+
+**Agent Search: Stream answers using agentic retrieval (GA with allowlist)**
+
+You can use agentic retrieval with the streaming answer method.
+
+Agentic retrieval can return better results as compared to the standard
+streaming answer method. This is
+because agentic retrieval can do multi-pass searches across multiple data stores.
+The agent plans and executes searches sequentially, choosing the best tools,
+such as Google Search and Google Maps, for each step.
+Agentic retrieval also enables multi-turn search queries (follow-up questions)
+on blended search apps.
+
+For more information, see [Stream answers using agentic
+retrieval](https://docs.cloud.google.com/generative-ai-app-builder/docs/agentic-retrieval-stream-answer).
+
+This feature is GA with an allowlist, available for select customers.
+
 ---
 ## 2026-04-22
 

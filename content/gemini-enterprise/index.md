@@ -1,5 +1,17 @@
 # Gemini Enterprise
 
+## 2026-05-13
+
+### Announcement
+
+Correction: **Gemini Enterprise: EU region for Gemini 3 models is coming soon**
+
+The availability of Gemini 3.1 Pro and 3 Flash in the EU region has
+been updated to "coming soon". Previously, it was listed as currently available.
+
+For more information, see: [Using Gemini 3.1 Pro and 3 Flash in Limited Availability](https://docs.cloud.google.com/gemini/enterprise/docs/known-limitations#using-gemini-3-preview).
+
+---
 ## 2026-05-12
 
 ### Feature
@@ -84,6 +96,8 @@ third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/co
 **Gemini Enterprise: Access to Gemini 3.1 Pro and 3 Flash in Limited Availability**
 
 Gemini Enterprise users now have access to 3.1 Pro and 3 Flash in Limited Availability. This means that Gemini Enterprise app users will get the generally available Service Level Objectives (SLOs) for these models as part of the Gemini Enterprise Service while the models are in Preview. We are currently monitoring the model's performance and determining the appropriate, long-term (SLOs) and plan to offer these SLOs soon. Additionally, we currently support standard Data Location (Data Residency or "DRZ") commitments in US/EU/global multi-regions.
+
+**Note:** There is a correction to this release note. See [May 13, 2026](#May_13_2026).
 
 For more information, see: [Using Gemini 3.1 Pro and 3 Flash in Limited Availability](https://docs.cloud.google.com/gemini/enterprise/docs/known-limitations#using-gemini-3-preview).
 

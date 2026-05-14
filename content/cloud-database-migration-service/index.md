@@ -1,5 +1,17 @@
 # Cloud Database Migration Service
 
+## 2026-05-12
+
+### Feature
+
+Gemini-powered conversion quality assessments for heterogeneous migrations
+in Database Migration Service are now generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+For more information, see
+[Convert SQL with Gemini in Database Migration Service](https://docs.cloud.google.com/database-migration/docs/convert-sql-with-dms#quality-assessments).
+
+---
 ## 2026-04-30
 
 ### Feature

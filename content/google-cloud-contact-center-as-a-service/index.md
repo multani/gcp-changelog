@@ -1,5 +1,17 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-05-13
+
+### Announcement
+
+**Mobile SDK for iOS version 2.15.4 patch**
+
+This patch includes the following updates for the mobile SDK for iOS:
+
+* Fixed an issue where the iOS app crashed during disconnections.
+* Updated the Twilio Voice and Chat SDKs.
+
+---
 ## 2026-05-12
 
 ### Announcement

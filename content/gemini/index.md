@@ -1,6 +1,21 @@
 # Gemini
 
+## 2026-05-14
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-05-13
+
+### Agent mode bug fix in Cloud Workstations
+
+Fixed a bug that prevented agent mode from working on Cloud Workstations.
 
 ### Other
 
@@ -9,6 +24,14 @@
 ### Bug fixes in IntelliJ
 
 Various bug fixes and minor product enhancements.
+
+### Agent mode bug fix in Cloud Workstations
+
+Fixed a bug that prevented agent mode from working on Cloud Workstations.
+
+### Other
+
+
 
 ### Bug fixes in IntelliJ
 

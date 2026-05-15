@@ -47,6 +47,12 @@ You can connect Google Sites data stores to Gemini Enterprise.
 Support for Google Sites data stores is in Public Preview. For more
 information, see [Sync from Google Sites](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-sites).
 
+### Security
+
+**Gemini Enterprise: Multiple API endpoints for the Integration Platform were inadvertently exposed.**
+
+This issue has been resolved, and access has been restricted. No action is required from external customers.
+
 ---
 ## 2026-05-06
 

@@ -1,5 +1,21 @@
 # Google Kubernetes Engine
 
+## 2026-05-14
+
+### Change
+
+Container-Optimized OS (COS) milestone 129 and higher no longer include the
+`kubectl` binary in the `/usr/bin/` directory.
+
+### Feature
+
+Managed OpenTelemetry on GKE now supports the collection of multimodal prompts
+and responses (Preview) for LangGraph and Agent Development Kit (ADK) agents.
+You can view and analyze the data in the Trace Explorer and BigQuery platforms.
+For more details, see [Collect multimodal prompts and responses
+data](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/managed-otel-gke#multimodal-prompts-responses).
+
+---
 ## 2026-05-13
 
 ### Change

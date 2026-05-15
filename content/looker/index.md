@@ -26,11 +26,11 @@ The ability for dashboard editors to [set default row and column limits](https:/
 
 ### Feature
 
-Available in preview, you can [publish the Conversational Analytics Explore data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise. All users who have the `save_agents` permission will be granted the `publish_agent_externally` permission.
+Available in preview, you can [publish the Conversational Analytics Explore data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise. All users who have the `save_agents` permission will be granted the `publish_agent_externally` permission. **Note**: This feature is not yet available. This release note was updated on May 14, 2026.
 
 ### Feature
 
-Available in preview, you can create and use Conversational Analytics [data agents on dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards). Dashboard agents uses the [Production Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode) of content when querying Looker dashboards.
+Available in preview, you can create and use Conversational Analytics [data agents on dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards). Dashboard agents uses the [Production Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode) of content when querying Looker dashboards. **Note**: This feature is not yet available. This release note was updated on May 14, 2026.
 
 ### Feature
 

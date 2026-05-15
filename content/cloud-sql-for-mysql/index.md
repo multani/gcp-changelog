@@ -15,10 +15,8 @@ For more information, see [Upgrade an instance to the new network architecture](
 ### Feature
 
 Cloud SQL for MySQL now supports regional endpoints for the Cloud SQL Admin API.
-This feature lets you direct your API calls to a region-specific endpoint, which
-ensures that your requests are handled within the specified region's frontend
-infrastructure with some limitations, such as backend dependencies that may
-still have global components. This enhances data locality and helps meet strict
+This feature lets you direct your API calls to a region-specific endpoint.
+Using a regional endpoint enhances data locality and helps meet strict
 compliance expectations. For more information, see
 [Cloud SQL regional endpoints](https://docs.cloud.google.com/sql/docs/mysql/admin-api/rep).
 

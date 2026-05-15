@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-05-14
+
+### Issue
+
+Support for the `AI.KEY_DRIVERS` function
+[preview](https://cloud.google.com/products/#product-launch-stages)
+has been temporarily disabled. We are working to restore this feature as soon as
+possible.
+
+---
 ## 2026-05-12
 
 ### Feature

@@ -1,5 +1,16 @@
 # Backup and DR
 
+## 2026-05-15
+
+### Feature
+
+Backup and DR Service now supports customer-managed encryption keys (CMEK)
+for Cloud SQL enhanced backups. This allows you to protect your
+Cloud SQL backups using the same KMS key as the source instance, with
+decoupled IAM permissions anchored to the Backup and DR Service service
+agent.
+
+---
 ## 2026-04-10
 
 ### Feature

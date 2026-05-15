@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-04-30T00:00:00+00:00</updated>
+  <updated>2026-05-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-05-14:feature:0</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use three new variables in custom request and response headers for
+Application Load Balancers:</p>
+<ul>
+<li><code>asn</code>: The Autonomous System Number (ASN) associated with the client's IP
+  address.</li>
+<li><code>cloud_trace_id</code>: The trace ID extracted (or generated) from the HTTP request
+  header.</li>
+<li><code>hostname</code>: The original hostname specified by the client in the <code>Host</code> HTTP
+  request header. This allows preservation of the original host header
+  (equivalent to <code>X-Forwarded-Host</code>).</li>
+</ul>
+<p>These variables are available for both global external Application Load Balancers
+and classic Application Load Balancers.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/load-balancing/docs/https/custom-headers-global">Create custom headers in backend services</a>.</p>]]></content>
+    <summary>Three new variables, including ASN, trace ID, and hostname, are now available for custom request and response headers in Application Load Balancers. This feature enhances header customization for both global external and classic Application Load Balancers.</summary>
+    <title>Feature: New variables for custom headers</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,7 +36,8 @@
     <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-04-30:feature:0</id>
     <published>2026-04-30T00:00:00+00:00</published>
     <updated>2026-04-30T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Backend Cloud Storage buckets are available for regional external Application Load Balancer and regional internal Application Load Balancer.</p>
+    <content type="html"><![CDATA[<p>Backend Cloud Storage buckets are available for regional external Application Load Balancers and
+regional internal Application Load Balancers.</p>
 <p>For more information, see:</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/load-balancing/docs/https/setup-reg-ext-app-lb-backend-buckets">Set up a regional external Application Load Balancer with Cloud Storage buckets</a></li>
@@ -21,8 +46,8 @@
 <li><a href="https://docs.cloud.google.com/load-balancing/docs/l7-internal/setup-regional-internal-shared-vpc-buckets">Set up a regional internal Application Load Balancer with Cloud Storage buckets in a Shared VPC environment</a></li>
 </ul>
 <p>This feature is in <strong>General availability</strong>.</p>]]></content>
-    <summary>You can now use Cloud Storage buckets as backends for regional external and internal Application Load Balancers. This enhances flexibility for serving static content through your load balancers.</summary>
-    <title>Feature: Cloud Storage Buckets Now Supported by Load Balancers</title>
+    <summary>Backend Cloud Storage buckets are now available for regional external and internal Application Load Balancers. This feature enhances flexibility by allowing direct integration of storage buckets with your load balancing setups. It is now in General Availability.</summary>
+    <title>Feature: Backend buckets for regional load balancers</title>
   </entry>
   <entry>
     <author>

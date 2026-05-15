@@ -1,10 +1,32 @@
 # Cloud Load Balancing
 
+## 2026-05-14
+
+### Feature
+
+You can use three new variables in custom request and response headers for
+Application Load Balancers:
+
+* `asn`: The Autonomous System Number (ASN) associated with the client's IP
+  address.
+* `cloud_trace_id`: The trace ID extracted (or generated) from the HTTP request
+  header.
+* `hostname`: The original hostname specified by the client in the `Host` HTTP
+  request header. This allows preservation of the original host header
+  (equivalent to `X-Forwarded-Host`).
+
+These variables are available for both global external Application Load Balancers
+and classic Application Load Balancers.
+
+For more information, see [Create custom headers in backend services](https://docs.cloud.google.com/load-balancing/docs/https/custom-headers-global).
+
+---
 ## 2026-04-30
 
 ### Feature
 
-Backend Cloud Storage buckets are available for regional external Application Load Balancer and regional internal Application Load Balancer.
+Backend Cloud Storage buckets are available for regional external Application Load Balancers and
+regional internal Application Load Balancers.
 
 For more information, see:
 

@@ -3,11 +3,11 @@
   "entries": {
     "2026-05-14": [
       {
-        "kind": "Change",
-        "content": "Container-Optimized OS (COS) milestone 129 and higher no longer include the\n`kubectl` binary in the `/usr/bin/` directory.",
+        "kind": "Feature",
+        "content": "GKE now supports concurrent node pool upgrades for clusters (Preview). By\ndefault, GKE automatically upgrades one node pool at a time. To decrease the\ntotal time required to upgrade your cluster, you can now configure the maximum\nnumber of node pools that GKE auto-upgrades simultaneously. This feature is\nsupported for both Standard and Autopilot clusters. For more information, see\n[Configure concurrent node pool\nupgrades](https://cloud.google.com/kubernetes-engine/docs/how-to/upgrading-a-cluster#concurrent-upgrades).",
         "summary": {
-          "title": "Kubectl removed from COS",
-          "summary": "Container-Optimized OS versions 129 and above no longer ship with the kubectl binary. Users will need to install kubectl separately if required."
+          "title": "Concurrent Node Pool Upgrades for GKE",
+          "summary": "GKE now supports concurrent node pool upgrades, allowing you to reduce cluster upgrade times by configuring multiple node pools to upgrade simultaneously. This feature is available for both Standard and Autopilot clusters."
         }
       },
       {
@@ -16,6 +16,14 @@
         "summary": {
           "title": "Managed OpenTelemetry on GKE Adds Multimodal Support",
           "summary": "Managed OpenTelemetry on GKE now supports collecting multimodal prompts and responses for LangGraph and ADK agents. This new preview feature allows you to view and analyze this data in Trace Explorer and BigQuery."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Container-Optimized OS (COS) milestone 129 and higher no longer include the\n`kubectl` binary in the `/usr/bin/` directory.",
+        "summary": {
+          "title": "Kubectl removed from COS",
+          "summary": "Container-Optimized OS versions 129 and above no longer ship with the kubectl binary. Users will need to install kubectl separately if required."
         }
       }
     ],

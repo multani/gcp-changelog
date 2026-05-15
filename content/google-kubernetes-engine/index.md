@@ -2,10 +2,15 @@
 
 ## 2026-05-14
 
-### Change
+### Feature
 
-Container-Optimized OS (COS) milestone 129 and higher no longer include the
-`kubectl` binary in the `/usr/bin/` directory.
+GKE now supports concurrent node pool upgrades for clusters (Preview). By
+default, GKE automatically upgrades one node pool at a time. To decrease the
+total time required to upgrade your cluster, you can now configure the maximum
+number of node pools that GKE auto-upgrades simultaneously. This feature is
+supported for both Standard and Autopilot clusters. For more information, see
+[Configure concurrent node pool
+upgrades](https://cloud.google.com/kubernetes-engine/docs/how-to/upgrading-a-cluster#concurrent-upgrades).
 
 ### Feature
 
@@ -14,6 +19,11 @@ and responses (Preview) for LangGraph and Agent Development Kit (ADK) agents.
 You can view and analyze the data in the Trace Explorer and BigQuery platforms.
 For more details, see [Collect multimodal prompts and responses
 data](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/managed-otel-gke#multimodal-prompts-responses).
+
+### Change
+
+Container-Optimized OS (COS) milestone 129 and higher no longer include the
+`kubectl` binary in the `/usr/bin/` directory.
 
 ---
 ## 2026-05-13

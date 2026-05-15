@@ -8,6 +8,14 @@ The Spanner change streams default [retention period](https://docs.cloud.google.
 This change affects both new and existing change streams that don't have a retention period explicitly set.
 You can always specify the retention period through [create change stream](https://docs.cloud.google.com/spanner/docs/change-streams/manage#create) or [alter change stream](https://docs.cloud.google.com/spanner/docs/change-streams/manage#modify) DDL statements to override the default.
 
+### Feature
+
+You can populate new PostgreSQL dialect databases in an existing
+Spanner instance from sample datasets that help you explore
+Spanner capabilities.
+
+For more information, see [Create and manage databases](https://docs.cloud.google.com/spanner/docs/create-manage-databases#use-datasets).
+
 ---
 ## 2026-05-04
 

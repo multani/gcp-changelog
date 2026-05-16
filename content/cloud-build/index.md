@@ -1,5 +1,16 @@
 # Cloud Build
 
+## 2026-05-15
+
+### Feature
+
+You can now configure the `results` field in build config files. This
+field allows a build step to store data and then attach that data in an
+attestation within the build results after the build has completed.
+For more information, see
+[results](https://docs.cloud.google.com/build/docs/build-config-file-schema#results).
+
+---
 ## 2026-03-30
 
 ### Feature

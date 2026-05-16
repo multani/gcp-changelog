@@ -2460,9 +2460,27 @@
 
 
 <h1 id="knowledge-catalog">Knowledge Catalog</h1>
+<h2 id="2026-05-15">2026-05-15</h2>
+<h3 id="feature">Feature</h3>
+<p>Column-level lineage for Dataproc is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).
+This feature enables you to track the flow of data between individual columns
+in BigQuery, BigLake external tables, Cloud Storage buckets, and other
+resources as reported by Dataproc clusters and Serverless for Apache Spark.
+For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/about-data-lineage">About data lineage</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p>The Data Lineage API is now updated with the following changes:</p>
+<ul>
+<li>The <code>SearchLinks</code> method accepts multiple source and target entity references as search criteria.</li>
+<li>Added support for column-level lineage information to be passed and returned from the service.</li>
+<li>Process resources now report Dataflow as their origin if it is used to generate lineage.</li>
+</ul>
+<p>For more information, see the Data Lineage API reference for
+<a href="https://docs.cloud.google.com/dataplex/docs/reference/data-lineage/rest">REST</a>
+and <a href="https://docs.cloud.google.com/dataplex/docs/reference/data-lineage/rpc">RPC</a>.</p>
+<hr />
 <h2 id="2026-04-28">2026-04-28</h2>
 <h3 id="announcement">Announcement</h3>
-<p>Cloud Composer is now called <a href="https://docs.cloud.google.com//composer/docs">Managed Service for Apache Airflow</a>. The names for associated APIs, client libraries, CLI commands, and Identity and Access Management (IAM) remain unchanged and still
+<p>Cloud Composer is now called <a href="https://docs.cloud.google.com/composer/docs">Managed Service for Apache Airflow</a>. The names for associated APIs, client libraries, CLI commands, and Identity and Access Management (IAM) remain unchanged and still
 reference Composer.</p>
 <h3 id="announcement_1">Announcement</h3>
 <p><strong>Dataproc</strong> and <strong>Google Cloud Serverless for Apache Spark</strong> are now unified
@@ -2480,23 +2498,23 @@ The names for associated APIs, client libraries, CLI commands, and Identity and
 Access Management (IAM) remain unchanged and still reference BigLake.</p>
 <hr />
 <h2 id="2026-04-20">2026-04-20</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Knowledge Catalog discovers links between data assets, helping you understand how they connect and the nature of their relationships.
 This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.
 For more information, see <a href="https://cloud.google.com/dataplex/docs/data-relationships">View data relationships in Knowledge Catalog</a>.</p>
 <hr />
 <h2 id="2026-04-17">2026-04-17</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>Data quality now supports rule reusability. You can now define data quality
 rules as templates and reuse them across multiple catalog entries to standardize
 your data quality processes. You can also use a shared library of
 <a href="https://docs.cloud.google.com/dataplex/docs/reuse-data-quality-rules#system-templates">system rule templates</a>
 for common data validation scenarios. For more information, see
 <a href="https://docs.cloud.google.com/dataplex/docs/reuse-data-quality-rules">Reuse data quality rules</a>.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>You can now build and run a Knowledge Catalog discovery agent to get more relevant search results for complex natural language queries.</p>
 <p>For more information, see <a href="https://cloud.google.com/dataplex/docs/use-discovery-agent">Build an agent to discover your data</a>.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>To further refine lineage graphs, Knowledge Catalog lineage views include new
 highlight and filter modes. This feature is available in
 <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.
@@ -2504,14 +2522,14 @@ For more information, see
 <a href="https://cloud.google.com/dataplex/docs/lineage-views#lineage-filtered-view">Apply filters and highlighting for a focused view</a>.</p>
 <hr />
 <h2 id="2026-04-16">2026-04-16</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Data insights for unstructured data transforms dark data or
 unstructured files in the form of PDFs in Cloud Storage into structured,
 queryable assets. This feature is now available in
 <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/data-insights-unstructured-data">About data insights for unstructured
 data</a>.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Automated cataloging of Iceberg REST Catalog (IRC) for Google Cloud
 Lakehouse runtime catalog is now generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). This includes support for
@@ -2526,7 +2544,7 @@ Snowflake Horizon IRC is available in
 <h3 id="announcement_3">Announcement</h3>
 <p>Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
 library, CLI, and Identity and Access Management (IAM) names remain unchanged.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>The lightweight profiling mode for data profile scans is available in
 <a href="https://cloud.google.com/products#product-launch-stages">preview</a>.</p>
 <p>The lightweight mode provides low-latency profile scans that return results in
@@ -2534,7 +2552,7 @@ seconds, making it ideal for grounding AI agent responses and interactive data
 exploration. For more information, see <a href="https://cloud.google.com/dataplex/docs/data-profiling-overview#profiling_modes">Profiling modes</a>.</p>
 <hr />
 <h2 id="2026-04-09">2026-04-09</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>You can now specify a custom execution identity for data quality and
 data profile scans. By default, scans are executed using the Service
 Agent. You can now use a custom service account (Bring Your Own Service Account)
@@ -2553,6 +2571,9 @@ controls, and unify scan processing costs directly under BigQuery.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#knowledge-catalog">Knowledge Catalog</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-15" class="nav-link">2026-05-15</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-28" class="nav-link">2026-04-28</a>
           </li>

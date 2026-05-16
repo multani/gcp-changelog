@@ -1,5 +1,14 @@
 # Security Command Center
 
+## 2026-05-15
+
+### Change
+
+[Vulnerability Assessment for Google Cloud](https://docs.cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud)
+supports scanning GKE clusters that have
+[Image streaming](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/image-streaming) enabled.
+
+---
 ## 2026-05-11
 
 ### Change

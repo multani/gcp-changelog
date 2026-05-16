@@ -1,5 +1,23 @@
 # Vertex AI Search
 
+## 2026-05-15
+
+### Deprecated
+
+**Agent Search: Agent Search for healthcare is deprecated**
+
+Agent Search for healthcare is deprecated.
+
+For a comprehensive, managed
+solution, consider building [custom search
+apps](https://docs.cloud.google.com/generative-ai-app-builder/docs/about-generic-search)
+on Agent Search.
+Or, if you require fine-grained control over the underlying
+retrieval mechanisms and are prepared for a more customer-managed integration,
+use Agent Retrieval (formerly known as [Vector Search
+2.0](https://docs.cloud.google.com/vertex-ai/docs/vector-search-2/overview)).
+
+---
 ## 2026-05-13
 
 ### Feature

@@ -1,5 +1,18 @@
 # Cluster Toolkit
 
+## 2026-05-06
+
+### Feature
+
+Cluster Toolkit v1.90.0 is available. This release adds an experimental
+capability to submit jobs that you can use with the `gcluster job` command. This
+version also adds support for regional AI zones in Slurm by using the
+`locationPolicy.zones` resource. Additionally, this release updates examples for
+GKE TPU, exposes outputs for accelerator topology and slice controllers, and
+fixes several Slurm issues. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/pull/5603).
+
+---
 ## 2026-04-30
 
 ### Feature

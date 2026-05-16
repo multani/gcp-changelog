@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-05-15
+
+### Feature
+
+The
+[`AI.DETECT_ANOMALIES` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)
+supports calling the function with a single input table that holds both the
+historical and target data. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-05-14
 
 ### Issue

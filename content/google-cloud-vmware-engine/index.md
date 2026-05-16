@@ -1,5 +1,13 @@
 # Google Cloud VMware Engine
 
+## 2026-05-15
+
+### Announcement
+
+**ve1 hardware End-of-Life (EoL) migration guide:** You can now refer to the public
+documentation to [migrate workloads from retiring ve1 hardware](https://docs.cloud.google.com/vmware-engine/docs/howto-migrate-ve1-hardware). First-generation `ve1` bare metal nodes are reaching the end of their useful life on a rolling basis. When your hardware is scheduled for retirement, you receive an EoL notification containing timelines and instructions to migrate your clusters.
+
+---
 ## 2026-05-11
 
 ### Feature

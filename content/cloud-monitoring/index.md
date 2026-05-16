@@ -1,5 +1,28 @@
 # Cloud Monitoring
 
+## 2026-05-15
+
+### Feature
+
+Starting with version 2.66.0, the Ops Agent can export your metrics and logs
+by using the OpenTelemetry-based
+[Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview) rather than
+by using the Cloud Monitoring API and Cloud Logging API. During the preview
+[Preview](https://docs.cloud.google.com/products#product-launch-stages) period, you can opt-in to using
+the Telemetry API. For more information, see
+[Use the Telemetry API](https://docs.cloud.google.com/monitoring/agent/ops-agent/use-telemetry-api).
+
+---
+## 2026-04-23
+
+### Feature
+
+The [Cloud Monitoring API MCP server](https://docs.cloud.google.com/monitoring/api/ref_v3_mcp/mcp) is
+generally available (GA). To learn about using the Monitoring MCP server
+to let agents and AI applications interact with your metrics data, see
+[Use the Cloud Monitoring remote MCP server](https://docs.cloud.google.com/monitoring/docs/use-monitoring-mcp).
+
+---
 ## 2026-04-22
 
 ### Feature

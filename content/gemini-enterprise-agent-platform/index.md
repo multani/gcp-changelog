@@ -1,5 +1,32 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-15
+
+### Feature
+
+**Manage agent revisions and traffic splitting**
+
+Agent revisions and traffic splitting are now available in public preview. You
+can create immutable revisions of deployed agents, and split traffic between the
+different active revisions. This enables canary deployments and safe testing of
+new agent versions. For more information, see
+[Manage revisions and traffic](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/manage-revisions-and-traffic).
+
+---
+## 2026-05-14
+
+### Feature
+
+**Priority PayGo is generally available (GA)**
+
+Priority PayGo is a consumption option that provides more consistent performance
+than standard PayGo without the upfront commitment of Provisioned Throughput. It
+is ideal for business-critical workloads with fluctuating or unpredictable
+traffic patterns.
+
+For more information, see [Priority PayGo](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/priority-paygo).
+
+---
 ## 2026-05-11
 
 ### Change

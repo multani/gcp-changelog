@@ -1,5 +1,18 @@
 # reCAPTCHA
 
+## 2026-05-13
+
+### Change
+
+reCAPTCHA Mobile SDK v18.9.0 is available for Android. This version
+includes the following updates:
+
+* Improvements to SDK latency and reliability.
+* Score distribution calibration improvements.
+* Removes the need for desugaring and raises the minimum supported Android API
+  level to 24 (Android 7.0).
+
+---
 ## 2026-05-01
 
 ### Change

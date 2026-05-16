@@ -1,10 +1,33 @@
 # Knowledge Catalog
 
+## 2026-05-15
+
+### Feature
+
+Column-level lineage for Dataproc is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+This feature enables you to track the flow of data between individual columns
+in BigQuery, BigLake external tables, Cloud Storage buckets, and other
+resources as reported by Dataproc clusters and Serverless for Apache Spark.
+For more information, see [About data lineage](https://docs.cloud.google.com/dataplex/docs/about-data-lineage).
+
+### Feature
+
+The Data Lineage API is now updated with the following changes:
+
+* The `SearchLinks` method accepts multiple source and target entity references as search criteria.
+* Added support for column-level lineage information to be passed and returned from the service.
+* Process resources now report Dataflow as their origin if it is used to generate lineage.
+
+For more information, see the Data Lineage API reference for
+[REST](https://docs.cloud.google.com/dataplex/docs/reference/data-lineage/rest)
+and [RPC](https://docs.cloud.google.com/dataplex/docs/reference/data-lineage/rpc).
+
+---
 ## 2026-04-28
 
 ### Announcement
 
-Cloud Composer is now called [Managed Service for Apache Airflow](https://docs.cloud.google.com//composer/docs). The names for associated APIs, client libraries, CLI commands, and Identity and Access Management (IAM) remain unchanged and still
+Cloud Composer is now called [Managed Service for Apache Airflow](https://docs.cloud.google.com/composer/docs). The names for associated APIs, client libraries, CLI commands, and Identity and Access Management (IAM) remain unchanged and still
 reference Composer.
 
 ### Announcement

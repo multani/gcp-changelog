@@ -2,9 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Knowledge Catalog</title>
   <subtitle>Changelog for Google Cloud product: Knowledge Catalog</subtitle>
-  <updated>2026-04-28T00:00:00+00:00</updated>
+  <updated>2026-05-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:knowledge-catalog</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/knowledge-catalog/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:knowledge-catalog:2026-05-15:feature:0</id>
+    <published>2026-05-15T00:00:00+00:00</published>
+    <updated>2026-05-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Column-level lineage for Dataproc is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).
+This feature enables you to track the flow of data between individual columns
+in BigQuery, BigLake external tables, Cloud Storage buckets, and other
+resources as reported by Dataproc clusters and Serverless for Apache Spark.
+For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/about-data-lineage">About data lineage</a>.</p>]]></content>
+    <summary>Track data flow between columns in BigQuery, BigLake, Cloud Storage, and more, as reported by Dataproc. This new feature provides granular visibility into your data's journey across various resources. Understand how data transforms and moves at the column level for better data governance and analysis.</summary>
+    <title>Feature: Column-level lineage for Dataproc now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:knowledge-catalog:2026-05-15:feature:1</id>
+    <published>2026-05-15T00:00:00+00:00</published>
+    <updated>2026-05-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Data Lineage API is now updated with the following changes:</p>
+<ul>
+<li>The <code>SearchLinks</code> method accepts multiple source and target entity references as search criteria.</li>
+<li>Added support for column-level lineage information to be passed and returned from the service.</li>
+<li>Process resources now report Dataflow as their origin if it is used to generate lineage.</li>
+</ul>
+<p>For more information, see the Data Lineage API reference for
+<a href="https://docs.cloud.google.com/dataplex/docs/reference/data-lineage/rest">REST</a>
+and <a href="https://docs.cloud.google.com/dataplex/docs/reference/data-lineage/rpc">RPC</a>.</p>]]></content>
+    <summary>The Data Lineage API has been updated to support multiple entity references in searches and to include column-level lineage information. Additionally, Process resources now correctly identify Dataflow as their origin when it's used for lineage generation.</summary>
+    <title>Feature: Data Lineage API Enhancements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,10 +46,10 @@
     <id>urn:github:multani:gcp-changelog:knowledge-catalog:2026-04-28:announcement:0</id>
     <published>2026-04-28T00:00:00+00:00</published>
     <updated>2026-04-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Cloud Composer is now called <a href="https://docs.cloud.google.com//composer/docs">Managed Service for Apache Airflow</a>. The names for associated APIs, client libraries, CLI commands, and Identity and Access Management (IAM) remain unchanged and still
+    <content type="html"><![CDATA[<p>Cloud Composer is now called <a href="https://docs.cloud.google.com/composer/docs">Managed Service for Apache Airflow</a>. The names for associated APIs, client libraries, CLI commands, and Identity and Access Management (IAM) remain unchanged and still
 reference Composer.</p>]]></content>
-    <summary>Cloud Composer is now Managed Service for Apache Airflow. API, client libraries, CLI, and IAM names are still referencing Composer.</summary>
-    <title>Announcement: Cloud Composer renamed</title>
+    <summary>Cloud Composer has been renamed to Managed Service for Apache Airflow. While the service name has changed, all associated APIs, client libraries, CLI commands, and IAM references will continue to use the name 'Composer'.</summary>
+    <title>Announcement: Managed Service for Apache Airflow is here</title>
   </entry>
   <entry>
     <author>

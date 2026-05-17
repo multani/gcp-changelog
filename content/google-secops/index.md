@@ -1,5 +1,64 @@
 # Google SecOps
 
+## 2026-05-17
+
+### Announcement
+
+**New parser documentation now available**
+
+New parser documentation is available to help you ingest and normalize logs from the following sources:
+
+* [Collect Arista VeloCloud SD-WAN logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/velo-firewall)
+* [Collect Microsoft Defender for Endpoint logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/windows-defender-atp)
+* [Collect PTC Windchill logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/windchill)
+* [Collect Riverbed SteelHead logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/steelhead)
+* [Collect Sangfor Proxy logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sangfor-proxy)
+* [Collect SAP BTP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sap-btp)
+* [Collect SAP NetWeaver logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sap-netweaver)
+* [Collect SAP SM20 logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sap-sm20)
+* [Collect SAP SuccessFactors logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sap-successfactors)
+* [Collect SAP Sybase ASE logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sap-ase)
+* [Collect Saviynt Enterprise Identity Cloud logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/saviynt-eip)
+* [Collect SecureLink logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/securelink)
+* [Collect Semperis DSP logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/semperis-dsp)
+* [Collect Sonrai Security logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/sonrai)
+* [Collect SOTI MobiControl logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/soti-mobicontrol)
+* [Collect Splunk Attack Analyzer logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/splunk-attack-analyzer)
+* [Collect SpyCloud logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/spycloud)
+* [Collect Stealthbits Audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/stealthbits-audit)
+* [Collect Stealthbits StealthDEFEND logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/stealthbits-defend)
+* [Collect STIX Threat Intelligence logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/stix)
+* [Collect Swift Alliance Messaging Hub logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/swift-amh)
+* [Collect Symantec Messaging Gateway logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/symantec-mail)
+* [Collect Symantec Security Analytics logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/symantec-sa)
+* [Collect Tableau logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/tableau)
+* [Collect Talon logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/talon)
+* [Collect TCPWave DDI logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/tcpwave-ddi)
+* [Collect Teleport Access Plane logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/teleport-access-plane)
+* [Collect Tenable Audit logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/tenable-audit)
+* [Collect Tenable CSPM logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/tenable-cspm)
+* [Collect Teradata Database logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/teradata-db)
+* [Collect Terraform Enterprise logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/terraform-enterprise)
+* [Collect Tetragon eBPF audit logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tetragon-ebpf-audit-logs)
+* [Collect ThreatLocker Platform logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/threatlocker)
+* [Collect ThreatX WAF logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/threatx-waf)
+* [Collect Tintri logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/tintri)
+* [Collect Trend Micro Apex Central logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/trendmicro-apex-central)
+* [Collect uberAgent logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/uberagent)
+* [Collect Ubika WAF logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ubika-waf)
+* [Collect UKG logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/ukg)
+* [Collect UPX AntiDDoS logs](https://docs.cloud.google.com/chronicle/docs/ingestion/default-parsers/upx-antiddos)
+* [Collect Verba Recording System logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/verba-rec)
+* [Collect Vercel WAF logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/vercel-waf)
+* [Collect Virtru Email Encryption logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/virtru-email-encryption)
+* [Collect WatchGuard EDR logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/watchguard-edr)
+* [Collect Windows AppLocker logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/windows-applocker)
+* [Collect Windows Defender Antivirus logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/windows-defender-av)
+* [Collect Windows Firewall logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/windows-firewall)
+* [Collect Windows Hyper-V logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/windows-hyperv)
+* [Collect Windows Network Policy Server logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/windows-net-policy-server)
+
+---
 ## 2026-05-05
 
 ### Change

@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-05-14
+
+### Feature
+
+For Exadata Database Service on Exascale infrastructure and Base Database Service, Oracle Database@Google Cloud adds zone `europe-west3-a-r2` in region `europe-west3` (Frankfurt, Germany).
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-05-06
 
 ### Feature

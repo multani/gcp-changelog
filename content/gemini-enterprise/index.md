@@ -1,5 +1,26 @@
 # Gemini Enterprise
 
+## 2026-05-15
+
+### Feature
+
+**Gemini Enterprise: New data stores (Public Preview)**
+
+The following data stores are available in Gemini Enterprise:
+
+* [Dice](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/dice)
+* [Midpage](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/midpage)
+* [PandaDoc](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/pandadoc)
+* [Smartsheet](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/smartsheet)
+* [Wrike](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/wrike)
+* [Zoho Books](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohobooks)
+* [Zoho Desk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohodesk)
+* [Zoho Projects](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohoprojects)
+
+These data stores are in Public Preview. For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+---
 ## 2026-05-13
 
 ### Announcement

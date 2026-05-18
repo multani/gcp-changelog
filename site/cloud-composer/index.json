@@ -3,11 +3,77 @@
   "entries": {
     "2026-05-14": [
       {
+        "kind": "Announcement",
+        "content": "A new Managed Service for Apache Airflow release has started on **May 14, 2026**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
+        "summary": {
+          "title": "New Apache Airflow release rolling out",
+          "summary": "A new Managed Service for Apache Airflow release began on May 14, 2026. This release introduces upcoming changes and features that are being rolled out to all regions. Some features may not be available in all regions yet as the rollout is currently in progress."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The `[scheduler]print_stats_interval` Airflow configuration option can now be\noverridden in environments with Airflow 2.10.5 and later. This option\npreviously was blocked.",
+        "summary": {
+          "title": "Scheduler stats interval override enabled",
+          "summary": "The `print_stats_interval` configuration option for the scheduler can now be overridden in Airflow environments version 2.10.5 and later. This change removes a previous restriction, allowing for more flexibility in configuring scheduler statistics output."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.1.7-build.9](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-9)\n* [composer-3-airflow-2.11.1-build.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-5) (default)\n* [composer-3-airflow-2.10.5-build.38](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-38)",
+        "summary": {
+          "title": "New Airflow builds available",
+          "summary": "Managed Airflow (Gen 3) now offers new Airflow builds. These updates include versions for Airflow 3.1.7, 2.11.1 (default), and 2.10.5. Check the documentation for specific build details."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.2-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-2-airflow-2-11-1) (default)\n* [composer-2.17.2-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-2-airflow-2-10-5)",
+        "summary": {
+          "title": "New Composer Images Available",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including composer-2.17.2-airflow-2.11.1 as the default. These updates bring the latest Airflow versions for your managed environments."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.23, composer-3-airflow-2.10.5-build.3, and composer-2.13.1-airflow-\\*.",
+        "summary": {
+          "title": "Managed Airflow versions deprecated",
+          "summary": "Several Managed Airflow versions and builds are no longer supported. Please update to a supported version to ensure continued service."
+        }
+      },
+      {
         "kind": "Issue",
         "content": "The `google-api-core` preinstalled package versions from 2.28.0 to 2.30.2 might\ncause degraded environment performance, which can result in longer times to\nexecute a task and longer times to move a task from the queued to the executing\nstate.\n\nAffected Managed Airflow (Gen 3) builds:\n\n* composer-3-airflow-3.1.7-build.0 to composer-3-airflow-3.1.7-build.5\n* composer-3-airflow-3.1.0-build.5 to composer-3-airflow-3.1.0-build.10\n* composer-3-airflow-2.11.1-build.0\n* composer-3-airflow-2.10.5-build.22 to composer-3-airflow-2.10.5-build.33\n* composer-3-airflow-2.9.3-build.42 to composer-3-airflow-2.9.3-build.53\n\nAffected Managed Airflow (Gen 2) builds:\n\n* composer-2.16.10-airflow-2.11.1\n* composer-2.16.0-airflow-2.10.5 to composer-2.16.10-airflow-2.10.5\n* composer-2.16.0-airflow-2.9.3 to composer-2.16.10-airflow-2.9.3\n\nWe recommend to upgrade your environment to the following versions, which\ncontain a version of the package where the problem is fixed or isn't present:\n\n* composer-3-airflow-3.1.7-build.7 and later\n* composer-3-airflow-2.11.1-build.3 and later\n* composer-3-airflow-2.10.5-build.36 and later\n* composer-3-airflow-2.9.3-build.54 (contains 2.27.0)\n* composer-2.17.0-airflow-2.11.1 and later\n* composer-2.17.0-airflow-2.10.5 and later\n* composer-2.16.11-airflow-2.11.1 (contains 2.27.0)\n* composer-2.16.11-airflow-2.10.5 (contains 2.27.0)\n* composer-2.16.11-airflow-2.9.3 (contains 2.27.0)\n\nAs a workaround, you can manually install a later version of the\n`google-api-core` package to an affected environment by specifying `>=2.30.3`\nas the required version.",
         "summary": {
           "title": "Performance degradation in Airflow environments",
           "summary": "Certain versions of the `google-api-core` package (2.28.0-2.30.2) may cause performance issues in Managed Airflow environments, leading to slower task execution and state transitions. Upgrading to recommended Airflow versions or manually installing `google-api-core >= 2.30.3` is advised to resolve this problem."
+        }
+      }
+    ],
+    "2026-05-11": [
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.1.7-build.8](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-8)\n* [composer-3-airflow-2.11.1-build.4](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-4) (default)\n* [composer-3-airflow-2.10.5-build.37](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-37)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "New Airflow builds are now available for Managed Airflow (Gen 3), including updated versions for Airflow 3.1.7, 2.11.1, and 2.10.5. The default build is now composer-3-airflow-2.11.1-build.4."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.1-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-1-airflow-2-11-1) (default)\n* [composer-2.17.1-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-1-airflow-2-10-5)",
+        "summary": {
+          "title": "New Composer Images Available",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including the default composer-2.17.1-airflow-2.11.1. These updates provide access to the latest versions of Airflow and Composer."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-\\*.",
+        "summary": {
+          "title": "Managed Airflow versions deprecated",
+          "summary": "Certain versions of Managed Airflow are no longer supported. This includes composer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-*. Please refer to the documentation for details on version deprecation and support."
         }
       }
     ],

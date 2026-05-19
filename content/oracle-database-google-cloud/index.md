@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-05-19
+
+### Feature
+
+Oracle Database@Google Cloud lets you [enable Autonomous Data Guard for local peer databases](https://docs.cloud.google.com/oracle/database/docs/manage-dr-type).
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-14
 
 ### Feature

@@ -4,6 +4,17 @@
 
 ### Feature
 
+You can
+[group reservations](https://docs.cloud.google.com/bigquery/docs/reservations-tasks#prioritize_idle_slots_with_reservation_groups)
+together to prioritize idle slot sharing within the group. Reservations within a
+reservation group share idle slots with each other before making them available
+to other reservations in the project, giving you more control over slot
+allocation for high-priority workloads. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
 You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/custom-constraints)
 to allow or deny specific operations on workload management resources including
 reservations, assignments, capacity commitments, and BI reservations. This

@@ -103,11 +103,11 @@ An issue has been fixed where navigating dialogs with the Tab key could cause th
 
 ### Fixed
 
-An issue has been fixed where updating dashboard filters could fail to update linked child filters. This feature now performs as expected.
+An issue has been fixed where Looker could fail to save Markdown files that were edited in the Looker IDE. This feature now performs as expected.
 
 ### Fixed
 
-An issue has been fixed where Looker could fail to save Markdown files that were edited in the Looker IDE. This feature now performs as expected.
+An issue has been fixed where updating dashboard filters could fail to update linked child filters. This feature now performs as expected. **Note:** This release note was updated on May 18, 2026. This feature is not yet available.
 
 ### Fixed
 

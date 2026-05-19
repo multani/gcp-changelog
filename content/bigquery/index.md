@@ -4,6 +4,13 @@
 
 ### Feature
 
+You can now use a [custom organization policy](https://docs.cloud.google.com/bigquery/docs/custom-constraints)
+to allow or deny specific operations on workload management resources including
+reservations, assignments, capacity commitments, and BI reservations. This
+feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
 You can manage and version control SQL scripts and notebooks with
 [BigQuery Studio Git repositories](https://docs.cloud.google.com/bigquery/docs/git-repositories),
 which provide a streamlined, folder-based integration with remote Git

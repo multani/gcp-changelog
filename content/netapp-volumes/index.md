@@ -1,5 +1,47 @@
 # NetApp Volumes
 
+## 2026-05-18
+
+### Feature
+
+Google Cloud NetApp Volumes Flex Unified service level is available with
+limited performance in the following regions:
+
+* asia-northeast1 (Tokyo)
+* europe-west2 (London)
+* europe-west9 (Paris)
+* us-west2 (Los Angeles)
+* us-west3 (Salt Lake City)
+
+For more information about limited performance regions, see [Key features](https://docs.cloud.google.com/netapp/volumes/docs/discover/overview#key_features)
+and [Supported regions for Flex Unified limited performance](https://docs.cloud.google.com/netapp/volumes/docs/discover/service-levels#supported_regions_for_flex_unified_limited_performance).
+
+### Feature
+
+Google Cloud NetApp Volumes Flex Unified service level is available in the
+following region:
+
+* us-south1 (Dallas)
+
+For more information about available regions, see [Supported regions](https://docs.cloud.google.com/netapp/volumes/docs/discover/service-levels#supported_regions).
+
+### Feature
+
+The replication features, such as [external](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/replicate-ontap/overview#about_external_replication),
+in-region, cross-region, and cross-project replication, are generally available
+(GA) for Flex Unified volumes across all supported protocols. For more
+information, see [About volume replication](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-volume-replication).
+
+### Feature
+
+ONTAP-mode supports S3 endpoints on NFS and SMB volumes, thick clone splitting,
+and advanced or diagnostic privilege levels as generally available (GA)
+features. The [backup](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-backups)
+capabilities are also available in Preview. For more information, see
+[ONTAP-mode S3 multiprotocol support](https://docs.cloud.google.com/netapp/volumes/docs/discover/features#ontap-mode_s3_multiprotocol_support)
+and [Allowed ONTAP actions](https://docs.cloud.google.com/netapp/volumes/docs/ontap/manage-ontap#allowed_ontap_actions).
+
+---
 ## 2026-04-17
 
 ### Feature

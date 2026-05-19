@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-05-18": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.33.800-gke.75 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.33.800-gke.75 runs on Kubernetes v1.33.11-gke.100.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software release available",
+          "summary": "The latest version of Google Distributed Cloud for VMware, 1.33.800-gke.75, is now ready for download. This release is compatible with Kubernetes v1.33.11-gke.100. Please consult the documentation for upgrade instructions and verify third-party storage compatibility."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.33.800-gke.75:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Fixed an issue that prevented administrators from running cluster health\n  checks and gathering diagnostics on non-advanced user clusters managed by an\n  advanced admin cluster. After the fix, you can use `gkectl diagnose`\n  on user clusters that are awaiting migration to advanced mode.\n* Fixed an issue where the `gkectl check-config` command failed\n  during preflight checks when bundled ingress was disabled and the\n  `loadBalancer.vips.ingressVIP` field was left blank. This failure\n  occurred because the validation process incorrectly attempted to generate a\n  network configuration for test VMs using the empty VIP, resulting in an\n  invalid command (such as `ip addr add /32`) and causing test VM\n  initialization to fail.",
+        "summary": {
+          "title": "Resolved security and operational issues",
+          "summary": "Version 1.33.800-gke.75 addresses critical vulnerabilities and resolves issues affecting cluster health checks and configuration validation. Administrators can now perform diagnostics on user clusters and the `gkectl check-config` command functions correctly even with bundled ingress disabled."
+        }
+      }
+    ],
     "2026-05-11": [
       {
         "kind": "Announcement",

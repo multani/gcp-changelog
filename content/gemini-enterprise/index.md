@@ -1,5 +1,31 @@
 # Gemini Enterprise
 
+## 2026-05-17
+
+### Feature
+
+**Gemini Enterprise: Agent Designer defaults to Gemini 3.1 Pro for US
+and Global regions**
+
+New agents created in Agent Designer use Gemini 3.1 Pro by default
+in the US and Global regions. Gemini Enterprise app users can select
+Gemini 2.5 Pro or Gemini 2.5 Flash in the agent settings
+after creation. Default configurations in other regions where
+Gemini 3.1 Pro is not available remain unchanged.
+
+Existing Agent Designer agents in US and Global regions that previously used
+Gemini 2.5 Pro or Gemini 2.5 Flash have been migrated to
+Gemini 3.1 Pro to provide improved performance. This version of
+Gemini 3.1 Pro is in Limited Availability and includes General
+Availability (GA) Service Level Objectives (SLOs).
+Gemini Enterprise app users can manually revert their agents to
+Gemini 2.5 Pro or Gemini 2.5 Flash in the agent settings
+if preferred.
+
+For more information on creating agents in Agent Designer, see
+[Create an agent](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/create-agent).
+
+---
 ## 2026-05-15
 
 ### Feature

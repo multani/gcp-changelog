@@ -2,9 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-05-11T00:00:00+00:00</updated>
+  <updated>2026-05-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-18:announcement:0</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.33.800-gke.75 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.33.800-gke.75 runs on Kubernetes v1.33.11-gke.100.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for VMware, 1.33.800-gke.75, is now ready for download. This release is compatible with Kubernetes v1.33.11-gke.100. Please consult the documentation for upgrade instructions and verify third-party storage compatibility.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-18:fixed:1</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.33.800-gke.75:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue that prevented administrators from running cluster health
+  checks and gathering diagnostics on non-advanced user clusters managed by an
+  advanced admin cluster. After the fix, you can use <code>gkectl diagnose</code>
+  on user clusters that are awaiting migration to advanced mode.</li>
+<li>Fixed an issue where the <code>gkectl check-config</code> command failed
+  during preflight checks when bundled ingress was disabled and the
+  <code>loadBalancer.vips.ingressVIP</code> field was left blank. This failure
+  occurred because the validation process incorrectly attempted to generate a
+  network configuration for test VMs using the empty VIP, resulting in an
+  invalid command (such as <code>ip addr add /32</code>) and causing test VM
+  initialization to fail.</li>
+</ul>]]></content>
+    <summary>Version 1.33.800-gke.75 addresses critical vulnerabilities and resolves issues affecting cluster health checks and configuration validation. Administrators can now perform diagnostics on user clusters and the `gkectl check-config` command functions correctly even with bundled ingress disabled.</summary>
+    <title>Fixed: Resolved security and operational issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

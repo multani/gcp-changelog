@@ -1,5 +1,29 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-05-18
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.33.800-gke.75 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.33.800-gke.75 runs on Kubernetes v1.33.11-gke.100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.33.800-gke.75:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+
+---
 ## 2026-05-11
 
 ### Announcement

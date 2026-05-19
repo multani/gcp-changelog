@@ -1,5 +1,14 @@
 # Bigtable
 
+## 2026-05-18
+
+### Feature
+
+You can enable [row-affinity routing](https://docs.cloud.google.com/bigtable/docs/routing#row-affinity) for a
+standard app profile in the Google Cloud console. For more information, see
+[Create a standard app profile](https://docs.cloud.google.com/bigtable/docs/configuring-app-profiles#create-standard-app-profile).
+
+---
 ## 2026-05-07
 
 ### Feature

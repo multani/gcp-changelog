@@ -2,9 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2026-05-17T00:00:00+00:00</updated>
+  <updated>2026-05-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-05-18:feature:0</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Enhanced Data Export API general availability and improvements</strong></p>
+<p>The Data Export API is now GA and introduces significant security and capability improvements. This feature facilitates the bulk export of your security data from Google SecOps to a Google Cloud Storage bucket that you control, and it provides a more secure and scalable data archival experience than the legacy Data Export API feature.</p>
+<p>Here's what's new:</p>
+<ul>
+<li><strong>Advanced data filtering</strong>: the API now lets you additionally scope export jobs using namespaces and ingestion labels.</li>
+<li><strong>Zero-trust security (customer-managed encryption keys)</strong>: full integration with Google Cloud Key Management Service (KMS) ensures that all exported data is encrypted with customer-managed keys.</li>
+<li><strong>Identity-aware extraction (RBAC)</strong>: export jobs now inherit the data RBAC scope of users creating an export job, preventing unauthorized data extraction.</li>
+</ul>
+<p><strong>Note:</strong> It might take one to six days before you see the changes reflected in your region. 
+<strong>Important:</strong> You need to update your API settings to call the new <code>v1</code> endpoint instead of the <code>v1alpha</code> endpoint. For example, to create a new data export job, you need to update the existing endpoint <code>POST https://chronicle.{region}.rep.googleapis.com/v1alpha/{parent}/dataExports</code> to the new endpoint <code>POST https://chronicle.{region}.rep.googleapis.com/v1/{parent}/dataExports</code>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">Data Export API (enhanced)</a>.</p>]]></content>
+    <summary>The enhanced Data Export API is now generally available, offering improved security and capabilities for exporting security data. It supports advanced filtering, customer-managed encryption keys, and identity-aware extraction, providing a more secure and scalable data archival solution. Remember to update your API settings to use the new v1 endpoint.</summary>
+    <title>Feature: Data Export API Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-05-18:deprecated:1</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The legacy Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">enhanced Data Export API</a>, which provides a more secure and scalable data archival experience. After June 18, 2026, legacy Data Export API won't work.</p>]]></content>
+    <summary>The legacy Data Export API is deprecated and will be shut down on June 18, 2026. Please migrate to the enhanced Data Export API for continued access to data archival capabilities.</summary>
+    <title>Deprecated: Data Export API Deprecation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-05-18:deprecated:2</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.dataExports/fetchavailablelogtypes"><code>fetchavailablelogtypes</code></a> API endpoint is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1beta/projects.locations.instances.logTypes/list"><code>list</code> endpoint</a>. After June 18, 2026, the <code>fetchavailablelogtypes</code> API endpoint won't work.</p>]]></content>
+    <summary>The fetchavailablelogtypes API endpoint is deprecated and will be replaced by the list endpoint on June 18, 2026. After this date, fetchavailablelogtypes will no longer function.</summary>
+    <title>Deprecated: fetchavailablelogtypes API deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-05-18:deprecated:3</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>updateDataExport</code> endpoint in the enhanced Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a>. The reduction in job queue times using the <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">enhanced Data Export API</a> has eliminated the need for the update functionality of the <code>updateDataExport</code> API endpoint. The <code>updateDataExport</code> endpoint was present in v1alpha only; it wasn't present in in v1beta or v1. After June 18, 2026, the <code>updateDataExport</code> API endpoint won't work. You can still cancel queued export jobs.</p>]]></content>
+    <summary>The updateDataExport endpoint in the enhanced Data Export API is deprecated and will stop working after June 18, 2026. This change is due to improvements in job queue times that have made the update functionality unnecessary. You can still cancel queued export jobs.</summary>
+    <title>Deprecated: Data Export API endpoint deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-05-18:deprecated:4</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.dataExports#DataExport:%7E:text=05%3A30%22.-,logType,to%20export.%20Format%3A%20projects/%7Bproject%7D/locations/%7Blocation%7D/instances/%7Binstance%7D/logTypes/%7BlogType%7D,-gcsBucket"><code>logType</code></a> field in the enhanced Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the new (optional)<code>includeLogTypes</code> field, which supports an array of log types for data filtering. If left blank, the export job includes all log types by default. The <code>logType</code> field was present in v1alpha only; it wasn't present in in v1beta or v1. After June 18, 2026, the <code>logType</code> field is discontinued.</p>]]></content>
+    <summary>The logType field in the enhanced Data Export API (v1alpha) is deprecated. Use the new includeLogTypes field for filtering log types. The logType field will be discontinued after June 18, 2026.</summary>
+    <title>Deprecated: Data Export API logType field deprecated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

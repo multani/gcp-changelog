@@ -1,5 +1,41 @@
 # Google SecOps SIEM
 
+## 2026-05-18
+
+### Feature
+
+**Enhanced Data Export API general availability and improvements**
+
+The Data Export API is now GA and introduces significant security and capability improvements. This feature facilitates the bulk export of your security data from Google SecOps to a Google Cloud Storage bucket that you control, and it provides a more secure and scalable data archival experience than the legacy Data Export API feature.
+
+Here's what's new:
+
+* **Advanced data filtering**: the API now lets you additionally scope export jobs using namespaces and ingestion labels.
+* **Zero-trust security (customer-managed encryption keys)**: full integration with Google Cloud Key Management Service (KMS) ensures that all exported data is encrypted with customer-managed keys.
+* **Identity-aware extraction (RBAC)**: export jobs now inherit the data RBAC scope of users creating an export job, preventing unauthorized data extraction.
+
+**Note:** It might take one to six days before you see the changes reflected in your region. 
+**Important:** You need to update your API settings to call the new `v1` endpoint instead of the `v1alpha` endpoint. For example, to create a new data export job, you need to update the existing endpoint `POST https://chronicle.{region}.rep.googleapis.com/v1alpha/{parent}/dataExports` to the new endpoint `POST https://chronicle.{region}.rep.googleapis.com/v1/{parent}/dataExports`.
+
+For more information, see [Data Export API (enhanced)](https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced).
+
+### Deprecated
+
+The legacy Data Export API is [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the [enhanced Data Export API](https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced), which provides a more secure and scalable data archival experience. After June 18, 2026, legacy Data Export API won't work.
+
+### Deprecated
+
+The [`fetchavailablelogtypes`](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.dataExports/fetchavailablelogtypes) API endpoint is [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the [`list` endpoint](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1beta/projects.locations.instances.logTypes/list). After June 18, 2026, the `fetchavailablelogtypes` API endpoint won't work.
+
+### Deprecated
+
+The `updateDataExport` endpoint in the enhanced Data Export API is [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations). The reduction in job queue times using the [enhanced Data Export API](https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced) has eliminated the need for the update functionality of the `updateDataExport` API endpoint. The `updateDataExport` endpoint was present in v1alpha only; it wasn't present in in v1beta or v1. After June 18, 2026, the `updateDataExport` API endpoint won't work. You can still cancel queued export jobs.
+
+### Deprecated
+
+The [`logType`](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.dataExports#DataExport:%7E:text=05%3A30%22.-,logType,to%20export.%20Format%3A%20projects/%7Bproject%7D/locations/%7Blocation%7D/instances/%7Binstance%7D/logTypes/%7BlogType%7D,-gcsBucket) field in the enhanced Data Export API is [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the new (optional)`includeLogTypes` field, which supports an array of log types for data filtering. If left blank, the export job includes all log types by default. The `logType` field was present in v1alpha only; it wasn't present in in v1beta or v1. After June 18, 2026, the `logType` field is discontinued.
+
+---
 ## 2026-05-17
 
 ### Announcement

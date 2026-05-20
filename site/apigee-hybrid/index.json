@@ -1,6 +1,40 @@
 {
   "name": "Apigee hybrid",
   "entries": {
+    "2026-05-19": [
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Features for Developers",
+          "summary": "We are excited to announce several new features designed to enhance the developer experience. These updates include improved tooling, expanded API capabilities, and streamlined deployment options, all aimed at boosting productivity and innovation."
+        }
+      },
+      {
+        "kind": "v1.16.3",
+        "content": "On May 19, 2026 we released an updated version of the Apigee hybrid software, v1.16.3.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.3](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
+        "summary": {
+          "title": "Apigee hybrid v1.16.3 released",
+          "summary": "A new patch release, v1.16.3, for Apigee hybrid software is now available as of May 19, 2026. This release integrates container images with the Apigee hybrid Helm charts for easier upgrades. Refer to the documentation for details on upgrading or new installations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "#### Fixed in this release\n\n| Bug ID | Description |\n| --- | --- |\n| **512866352** | **Fixed an issue where the `apigee-redis` pod entered a `CrashLoopBackOff` state when deployed with Vault-based secret injection due to a GLIBC version mismatch in the bundled `/bin/sh` and `/bin/cat` binaries.** |",
+        "summary": {
+          "title": "Resolved apigee-redis crash loop issue",
+          "summary": "An issue causing the apigee-redis pod to enter a CrashLoopBackOff state has been resolved. This fix addresses a GLIBC version mismatch that occurred during Vault-based secret injection."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Custom environment variables for Guardrail pods (`guardrails.envVars`)**\n\nStarting in version v1.16.3, you can inject custom environment variables into Apigee hybrid Guardrail pods using the new `guardrails.envVars` property in `overrides.yaml`. This is most commonly used to set `NO_PROXY` (or `no_proxy`) so that Guardrail pods bypass a configured forward HTTP proxy when calling internal in-cluster endpoints such as the Kubernetes API server, which previously failed in restricted-network environments with a global `httpProxy` configured. The property is supported on Guardrail pods for the following components: `apigee-datastore`, `apigee-env`, `apigee-ingress-manager`, `apigee-operator`, `apigee-org`, `apigee-redis`, `apigee-telemetry`, and `apigee-virtualhost`.\n\nExample:\n\n```\nguardrails:\n  envVars:\n    NO_PROXY: 'kubernetes.default.svc,172.20.0.1'\n```",
+        "summary": {
+          "title": "Custom environment variables for Guardrail pods",
+          "summary": "New feature allows injecting custom environment variables into Guardrail pods via overrides.yaml. This is particularly useful for setting NO_PROXY to bypass proxies for internal cluster endpoints, resolving issues in restricted network environments. The feature is supported across various Guardrail components."
+        }
+      }
+    ],
     "2026-05-13": [
       {
         "kind": "v1.16.2",

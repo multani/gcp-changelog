@@ -53,12 +53,6 @@ For more information, see:
 
 **AI Content Detection API available**
 
-The AI Content Detection API provides businesses with a powerful method to identify AI-generated content to support responsible media governance.
-
-### Feature
-
-**AI Content Detection API available**
-
 AI Content Detection API is available in [Preview](https://cloud.google.com/products#product-launch-stages). For details see [AI Content Detection](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/ai-content-detection).
 
 ### Change

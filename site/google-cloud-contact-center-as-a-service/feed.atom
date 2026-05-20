@@ -2,9 +2,167 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-05-13T00:00:00+00:00</updated>
+  <updated>2026-05-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-05-19:announcement:0</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.30</strong></p>
+<p>We've released version 4.30 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>]]></content>
+    <summary>Version 4.30 of Google Cloud CCaaS has been released. The specific update timing for your instance is determined by your chosen deployment schedule.</summary>
+    <title>Announcement: CCaaS 4.30 Update Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-05-19:feature:1</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Skip the IVR greeting message</strong></p>
+<p>You can now configure your instance to skip the IVR greeting message.</p>
+<p>Administrators: A new <strong>Skip IVR Greeting</strong> option is available in the
+<strong>Settings &gt; Languages &amp; Messages &gt; IVR-specific
+Messages</strong> section.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/customizing_languages_recordings_messages#configure-ivr-specific-messages">Customize IVR-specific
+messages</a>.</p>]]></content>
+    <summary>You can now configure your instance to skip the IVR greeting message. This new option is available for administrators in the Settings menu.</summary>
+    <title>Feature: Skip IVR Greeting</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-05-19:feature:2</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Headless web SDK: advanced call scheduling is turned on by default</strong></p>
+<p>The <code>useAdvancedCallScheduling</code> parameter in the headless SDK is now set to
+<code>true</code> by default.</p>]]></content>
+    <summary>The headless SDK now enables advanced call scheduling by default. This update simplifies the integration process for developers, allowing them to leverage more sophisticated scheduling features without explicit configuration. The `useAdvancedCallScheduling` parameter is set to `true` automatically.</summary>
+    <title>Feature: Advanced Call Scheduling Now Enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-05-19:feature:3</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Queue status endpoint</strong></p>
+<p>The new queue status endpoint provides real-time data for leaf queues, including
+estimated wait times, agent availability, callback slot capacity, hours of
+operation, and holidays. This capability lets voice AI systems dynamically
+decide whether to escalate a call to a live agent or offer scheduled callback
+windows to the caller. You can access the queue status endpoint in the apps API:
+<code>GET /apps/api/v1/queues/status</code>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/apps-api-queue-status-endpoint">The queue status
+endpoint</a>.</p>]]></content>
+    <summary>A new endpoint provides real-time data on leaf queues, including wait times and agent availability. This allows voice AI systems to make dynamic decisions about call escalation or offering callbacks. Access it via the apps API: GET /apps/api/v1/queues/status.</summary>
+    <title>Feature: New Queue Status Endpoint</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-05-19:feature:4</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>For call transfers in HubSpot, the ticket owner is automatically updated</strong></p>
+<p>When a call is transferred from one agent to another with a HubSpot integration,
+HubSpot tickets now automatically update to reflect the new ticket owner. This
+provides an accurate record of ownership throughout the interaction lifecycle.
+No configuration is required.</p>]]></content>
+    <summary>When calls are transferred between agents using the HubSpot integration, the ticket owner is now automatically updated. This ensures an accurate record of ownership throughout the interaction lifecycle without any required configuration.</summary>
+    <title>Feature: Ticket owner automatically updated on call transfer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-05-19:fixed:5</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where email messages in some queues displayed a blank white
+  panel when opened.</li>
+<li>Fixed an issue that occurred when a closed ticket ID was passed to HubSpot
+  using the SDK. The ticket wasn't reopened, resulting in new tickets being
+  created.</li>
+<li>Fixed an issue where agents could paste images into the chat adapter even
+  when the <strong>Allow agents to attach files</strong> setting was turned off.</li>
+<li>Fixed an issue where the agent adapter displayed generic error messages
+  instead of call failure reasons such as <code>Busy</code> or <code>No answer</code>.</li>
+<li>Fixed an issue where chat history wasn't deleted after a session ended,
+  causing the agent desktop to become unstable for high-volume agents.</li>
+<li>Fixed an issue where the NICE WFM ASCWS heartbeat timed out, causing agents
+  to appear inactive and disrupting adherence reporting.</li>
+<li>Fixed an issue where virtual agents unexpectedly disconnected during inbound
+  IVR calls, causing the calls to escalate to a human agent.</li>
+<li>Fixed an issue where customer utterances were missing from the Live
+  Transcript when conversations were transferred from a Dialogflow CX agent to
+  a human agent.</li>
+<li>Fixed an issue where, when an agent searched for a queue during a chat
+  transfer, the queue appeared with <code>No logged in agents</code> when agents were
+  available.</li>
+<li>Fixed an issue where launching a task virtual assistant during a chat caused
+  the agent's screen to freeze.</li>
+<li>Fixed an issue where call transcripts from CX Agent Studio agent
+  conversations were added to CRM records as garbled and unreadable text, with
+  repeated words and incorrect turn order.</li>
+<li>Fixed an issue where the <strong>Wait Time</strong> custom field on Zendesk tickets
+  displayed an incorrect value when using custom fields for <strong>Account</strong> and
+  <strong>Record</strong>.</li>
+<li>Fixed an issue where agents assigned a direct SMS-capable line didn't
+  receive visual notifications for incoming SMS chats in the agent adapter
+  while their status was set to <code>Unavailable</code>.</li>
+<li>Fixed an issue where some chat transcripts couldn't be downloaded from the
+  <strong>Completed Chats</strong> page.</li>
+<li>Fixed an issue where customer calls were unexpectedly abandoned during
+  payment transactions when DTMF inputs were provided.</li>
+<li>Fixed an issue where agents heard repeated call notification sounds during
+  active calls, even when no new call was assigned.</li>
+<li>
+<p>Fixed an issue where only English IVR queues appeared when configuring
+  agent-specific deflection settings, even when other language queues were
+  available.</p>
+</li>
+<li>
+<p>Fixed an issue where sentiment analysis didn't display to agents when calls
+were escalated from a virtual agent, even though the data was generated.</p>
+</li>
+<li>
+<p>Fixed an issue where email messages in queues displayed a blank white panel
+  when opened.</p>
+</li>
+<li>Fixed an issue where chat transcript and metadata files were generated as
+  empty files, causing API timeouts and blocking reporting pipelines.</li>
+<li>Fixed an issue where chat sessions that ended due to end-user inactivity
+  were marked as <strong>Disconnected by end user</strong> instead of <strong>Timeout: end user
+  stopped responding</strong>.</li>
+<li>Fixed an issue where agents couldn't receive more than 12 concurrent chats
+  despite being configured for up to 30.</li>
+<li>Fixed an issue where virtual agent calls were routed back to the original
+  queue instead of being handled as expected.</li>
+<li>Fixed an issue that occurred when a third party was added to a call. After
+  all participants left the call, the call still appeared to be connected.</li>
+<li>Fixed an issue where cascade conditions for agent queues didn't correctly
+  enforce the minimum number of available UK agents before allowing calls to
+  cascade from the US queue, resulting in calls being routed incorrectly.</li>
+<li>Fixed an issue where bulk user import incorrectly limited the chat
+  concurrency value to the global default, preventing valid per-agent settings
+  from being uploaded.</li>
+</ul>]]></content>
+    <summary>This release resolves multiple issues, including problems with email message display, ticket handling, agent file attachments, call notifications, and chat history. It also addresses issues with virtual agent disconnections, call transcript readability, and queue routing.</summary>
+    <title>Fixed: Resolved various issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

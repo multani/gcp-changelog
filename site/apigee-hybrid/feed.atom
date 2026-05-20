@@ -2,9 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee hybrid</title>
   <subtitle>Changelog for Google Cloud product: Apigee hybrid</subtitle>
-  <updated>2026-05-13T00:00:00+00:00</updated>
+  <updated>2026-05-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-19:announcement:0</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are excited to announce several new features designed to enhance the developer experience. These updates include improved tooling, expanded API capabilities, and streamlined deployment options, all aimed at boosting productivity and innovation.</summary>
+    <title>Announcement: New Features for Developers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-19:v1.16.3:1</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On May 19, 2026 we released an updated version of the Apigee hybrid software, v1.16.3.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade">Upgrading Apigee hybrid to version v1.16.3</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
+    <summary>A new patch release, v1.16.3, for Apigee hybrid software is now available as of May 19, 2026. This release integrates container images with the Apigee hybrid Helm charts for easier upgrades. Refer to the documentation for details on upgrading or new installations.</summary>
+    <title>v1.16.3: Apigee hybrid v1.16.3 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-19:fixed:2</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>512866352</strong> | <strong>Fixed an issue where the <code>apigee-redis</code> pod entered a <code>CrashLoopBackOff</code> state when deployed with Vault-based secret injection due to a GLIBC version mismatch in the bundled <code>/bin/sh</code> and <code>/bin/cat</code> binaries.</strong> |</p>]]></content>
+    <summary>An issue causing the apigee-redis pod to enter a CrashLoopBackOff state has been resolved. This fix addresses a GLIBC version mismatch that occurred during Vault-based secret injection.</summary>
+    <title>Fixed: Resolved apigee-redis crash loop issue</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-19:feature:3</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Custom environment variables for Guardrail pods (<code>guardrails.envVars</code>)</strong></p>
+<p>Starting in version v1.16.3, you can inject custom environment variables into Apigee hybrid Guardrail pods using the new <code>guardrails.envVars</code> property in <code>overrides.yaml</code>. This is most commonly used to set <code>NO_PROXY</code> (or <code>no_proxy</code>) so that Guardrail pods bypass a configured forward HTTP proxy when calling internal in-cluster endpoints such as the Kubernetes API server, which previously failed in restricted-network environments with a global <code>httpProxy</code> configured. The property is supported on Guardrail pods for the following components: <code>apigee-datastore</code>, <code>apigee-env</code>, <code>apigee-ingress-manager</code>, <code>apigee-operator</code>, <code>apigee-org</code>, <code>apigee-redis</code>, <code>apigee-telemetry</code>, and <code>apigee-virtualhost</code>.</p>
+<p>Example:</p>
+<p><code>guardrails:
+  envVars:
+    NO_PROXY: 'kubernetes.default.svc,172.20.0.1'</code></p>]]></content>
+    <summary>New feature allows injecting custom environment variables into Guardrail pods via overrides.yaml. This is particularly useful for setting NO_PROXY to bypass proxies for internal cluster endpoints, resolving issues in restricted network environments. The feature is supported across various Guardrail components.</summary>
+    <title>Feature: Custom environment variables for Guardrail pods</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

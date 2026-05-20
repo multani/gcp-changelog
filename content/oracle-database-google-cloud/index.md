@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-05-20
+
+### Feature
+
+Oracle Database@Google Cloud supports Oracle Cloud Infrastructure Goldengate. You can [create Goldengate deployments and connections](https://docs.cloud.google.com/oracle/database/docs/deploy-and-connect) to replicate and transform data between systems.
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-19
 
 ### Feature

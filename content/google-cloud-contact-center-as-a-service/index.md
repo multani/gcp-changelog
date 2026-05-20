@@ -1,5 +1,128 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-05-19
+
+### Announcement
+
+**Google Cloud CCaaS 4.30**
+
+We've released version 4.30 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see [Deployment schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Skip the IVR greeting message**
+
+You can now configure your instance to skip the IVR greeting message.
+
+Administrators: A new **Skip IVR Greeting** option is available in the
+**Settings > Languages & Messages > IVR-specific
+Messages** section.
+
+For more information, see [Customize IVR-specific
+messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/customizing_languages_recordings_messages#configure-ivr-specific-messages).
+
+### Feature
+
+**Headless web SDK: advanced call scheduling is turned on by default**
+
+The `useAdvancedCallScheduling` parameter in the headless SDK is now set to
+`true` by default.
+
+### Feature
+
+**Queue status endpoint**
+
+The new queue status endpoint provides real-time data for leaf queues, including
+estimated wait times, agent availability, callback slot capacity, hours of
+operation, and holidays. This capability lets voice AI systems dynamically
+decide whether to escalate a call to a live agent or offer scheduled callback
+windows to the caller. You can access the queue status endpoint in the apps API:
+`GET /apps/api/v1/queues/status`.
+
+For more information, see [The queue status
+endpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/apps-api-queue-status-endpoint).
+
+### Feature
+
+**For call transfers in HubSpot, the ticket owner is automatically updated**
+
+When a call is transferred from one agent to another with a HubSpot integration,
+HubSpot tickets now automatically update to reflect the new ticket owner. This
+provides an accurate record of ownership throughout the interaction lifecycle.
+No configuration is required.
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where email messages in some queues displayed a blank white
+  panel when opened.
+* Fixed an issue that occurred when a closed ticket ID was passed to HubSpot
+  using the SDK. The ticket wasn't reopened, resulting in new tickets being
+  created.
+* Fixed an issue where agents could paste images into the chat adapter even
+  when the **Allow agents to attach files** setting was turned off.
+* Fixed an issue where the agent adapter displayed generic error messages
+  instead of call failure reasons such as `Busy` or `No answer`.
+* Fixed an issue where chat history wasn't deleted after a session ended,
+  causing the agent desktop to become unstable for high-volume agents.
+* Fixed an issue where the NICE WFM ASCWS heartbeat timed out, causing agents
+  to appear inactive and disrupting adherence reporting.
+* Fixed an issue where virtual agents unexpectedly disconnected during inbound
+  IVR calls, causing the calls to escalate to a human agent.
+* Fixed an issue where customer utterances were missing from the Live
+  Transcript when conversations were transferred from a Dialogflow CX agent to
+  a human agent.
+* Fixed an issue where, when an agent searched for a queue during a chat
+  transfer, the queue appeared with `No logged in agents` when agents were
+  available.
+* Fixed an issue where launching a task virtual assistant during a chat caused
+  the agent's screen to freeze.
+* Fixed an issue where call transcripts from CX Agent Studio agent
+  conversations were added to CRM records as garbled and unreadable text, with
+  repeated words and incorrect turn order.
+* Fixed an issue where the **Wait Time** custom field on Zendesk tickets
+  displayed an incorrect value when using custom fields for **Account** and
+  **Record**.
+* Fixed an issue where agents assigned a direct SMS-capable line didn't
+  receive visual notifications for incoming SMS chats in the agent adapter
+  while their status was set to `Unavailable`.
+* Fixed an issue where some chat transcripts couldn't be downloaded from the
+  **Completed Chats** page.
+* Fixed an issue where customer calls were unexpectedly abandoned during
+  payment transactions when DTMF inputs were provided.
+* Fixed an issue where agents heard repeated call notification sounds during
+  active calls, even when no new call was assigned.
+* Fixed an issue where only English IVR queues appeared when configuring
+  agent-specific deflection settings, even when other language queues were
+  available.
+
+- Fixed an issue where sentiment analysis didn't display to agents when calls
+were escalated from a virtual agent, even though the data was generated.
+
+* Fixed an issue where email messages in queues displayed a blank white panel
+  when opened.
+* Fixed an issue where chat transcript and metadata files were generated as
+  empty files, causing API timeouts and blocking reporting pipelines.
+* Fixed an issue where chat sessions that ended due to end-user inactivity
+  were marked as **Disconnected by end user** instead of **Timeout: end user
+  stopped responding**.
+* Fixed an issue where agents couldn't receive more than 12 concurrent chats
+  despite being configured for up to 30.
+* Fixed an issue where virtual agent calls were routed back to the original
+  queue instead of being handled as expected.
+* Fixed an issue that occurred when a third party was added to a call. After
+  all participants left the call, the call still appeared to be connected.
+* Fixed an issue where cascade conditions for agent queues didn't correctly
+  enforce the minimum number of available UK agents before allowing calls to
+  cascade from the US queue, resulting in calls being routed incorrectly.
+* Fixed an issue where bulk user import incorrectly limited the chat
+  concurrency value to the global default, preventing valid per-agent settings
+  from being uploaded.
+
+---
 ## 2026-05-13
 
 ### Announcement

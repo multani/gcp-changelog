@@ -1,5 +1,43 @@
 # Apigee hybrid
 
+## 2026-05-19
+
+### Announcement
+
+
+
+### v1.16.3
+
+On May 19, 2026 we released an updated version of the Apigee hybrid software, v1.16.3.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.3](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **512866352** | **Fixed an issue where the `apigee-redis` pod entered a `CrashLoopBackOff` state when deployed with Vault-based secret injection due to a GLIBC version mismatch in the bundled `/bin/sh` and `/bin/cat` binaries.** |
+
+### Feature
+
+**Custom environment variables for Guardrail pods (`guardrails.envVars`)**
+
+Starting in version v1.16.3, you can inject custom environment variables into Apigee hybrid Guardrail pods using the new `guardrails.envVars` property in `overrides.yaml`. This is most commonly used to set `NO_PROXY` (or `no_proxy`) so that Guardrail pods bypass a configured forward HTTP proxy when calling internal in-cluster endpoints such as the Kubernetes API server, which previously failed in restricted-network environments with a global `httpProxy` configured. The property is supported on Guardrail pods for the following components: `apigee-datastore`, `apigee-env`, `apigee-ingress-manager`, `apigee-operator`, `apigee-org`, `apigee-redis`, `apigee-telemetry`, and `apigee-virtualhost`.
+
+Example:
+
+```
+guardrails:
+  envVars:
+    NO_PROXY: 'kubernetes.default.svc,172.20.0.1'
+```
+
+---
 ## 2026-05-13
 
 ### v1.16.2

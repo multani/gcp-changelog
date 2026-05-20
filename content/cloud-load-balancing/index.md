@@ -1,5 +1,18 @@
 # Cloud Load Balancing
 
+## 2026-05-19
+
+### Feature
+
+Google tag gateway for advertisers lets website owners host and deploy Google
+tags through Google Cloud. You can use a
+global external Application Load Balancer to route measurement traffic on your website through your
+domain for improved measurement data accuracy. This provides more reliable data
+for advertising campaign optimization.
+
+For more information, see [Google tag gateway for advertisers](https://docs.cloud.google.com/load-balancing/docs/https#tag-gateway).
+
+---
 ## 2026-05-14
 
 ### Feature

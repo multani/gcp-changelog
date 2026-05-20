@@ -23,6 +23,12 @@ On May 13, 2026 we released an updated version of the Apigee hybrid software, v1
 | **500861814** | **Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.** |
 | **510438578** | **Fixed an ingestion-blocking issue with `apigee-stackdriver-prometheus-sidecar` in Apigee hybrid 1.16.1.** |
 
+### Feature
+
+**Sidecar authentication for Workload Identity Federation on AKS and EKS**
+
+Starting in version v1.16.2, you can now use a sidecar along with Workload Identity Federation on AKS and EKS to mount security tokens from your preferred identity provider (IDP) for service account authentication. This method is an alternative to using Kubernetes Projected Service Account Tokens, and is useful when you need to integrate with a custom Identity Provider. See [Use sidecar authentication for Workload Identity Federation on AKS and EKS](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/use-sidecar-for-wif).
+
 ### Security
 
 Various security and CVE fixes are included in this release.

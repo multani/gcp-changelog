@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2026-04-27T00:00:00+00:00</updated>
+  <updated>2026-05-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-05-20:fixed:0</id>
+    <published>2026-05-20T00:00:00+00:00</published>
+    <updated>2026-05-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260511.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This is a rebuild of
+version <code>20260423.01</code> announced in the
+<a href="https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#April_27_2026">April 27, 2026 release notes</a>.
+It includes no additional changes and is released specifically to trigger a guest agent restart.</p>
+<p>Between May 4, 2026, and May 11, 2026, the control plane accidentally sent an
+erroneous request to remove the core plugin. This caused the agent to stop
+functioning, which disrupted features that rely on it, such as SSH and Windows
+password resets. This package update automatically restarts the agent on
+instances where auto-update is enabled to resolve the issue.</p>]]></content>
+    <summary>A recent guest agent update, version 20260511.00, resolves an issue where the core plugin was erroneously removed. This update automatically restarts the agent on instances with auto-update enabled, restoring functionality for features like SSH and password resets.</summary>
+    <title>Fixed: Guest agent update addresses plugin issue</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

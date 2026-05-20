@@ -1,8 +1,26 @@
 # Apigee X
 
+## 2026-05-20
+
+### Security
+
+**On May 20, 2026, we published a security bulletin for Apigee.**
+
+A vulnerability was found in Apigee
+([CVE-2026-2264](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2264))
+where the `IntegrationRegion`
+parameter in the `SetIntegrationRequest` policy lacks validation,
+allowing for Server-Side Request Forgery (SSRF) and service account token
+exfiltration. The issue arises when an attacker can control a flow variable used
+for `IntegrationRegion`, leading to requests being sent to an
+attacker-controlled host with the service account token.
+
+**Security bulletin published: [GCP-2026-034](https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-034)**
+
+---
 ## 2026-05-12
 
-### Announcement
+### Security
 
 On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).
 

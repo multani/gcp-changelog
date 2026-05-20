@@ -2,20 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-05-12T00:00:00+00:00</updated>
+  <updated>2026-05-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-12:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-20:security:0</id>
+    <published>2026-05-20T00:00:00+00:00</published>
+    <updated>2026-05-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>On May 20, 2026, we published a security bulletin for Apigee.</strong></p>
+<p>A vulnerability was found in Apigee
+(<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2264">CVE-2026-2264</a>)
+where the <code>IntegrationRegion</code>
+parameter in the <code>SetIntegrationRequest</code> policy lacks validation,
+allowing for Server-Side Request Forgery (SSRF) and service account token
+exfiltration. The issue arises when an attacker can control a flow variable used
+for <code>IntegrationRegion</code>, leading to requests being sent to an
+attacker-controlled host with the service account token.</p>
+<p><strong>Security bulletin published: <a href="https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-034">GCP-2026-034</a></strong></p>]]></content>
+    <summary>A critical vulnerability (CVE-2026-2264) has been identified in Apigee, allowing for Server-Side Request Forgery and service account token exfiltration. This bulletin details the vulnerability and provides mitigation information.</summary>
+    <title>Security: Apigee Security Bulletin Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-12:security:0</id>
     <published>2026-05-12T00:00:00+00:00</published>
     <updated>2026-05-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
-    <summary>An updated version of Apigee, 1-17-0-apigee-7, was released on May 12th, 2026. Rollouts have begun and may take several business days to complete across all zones. Features and fixes will be available once the rollout is finished.</summary>
-    <title>Announcement: Apigee version 1-17-0-apigee-7 released</title>
+    <summary>An updated version of Apigee (1-17-0-apigee-7) has been released on May 12th, 2026. Rollout across all zones may take up to four business days to complete. This update includes important security enhancements.</summary>
+    <title>Security: Security update for Apigee released</title>
   </entry>
   <entry>
     <author>

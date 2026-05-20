@@ -1,6 +1,16 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2026-05-20": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20260511.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available for all supported operating systems. This is a rebuild of\nversion `20260423.01` announced in the\n[April 27, 2026 release notes](https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#April_27_2026).\nIt includes no additional changes and is released specifically to trigger a guest agent restart.\n\nBetween May 4, 2026, and May 11, 2026, the control plane accidentally sent an\nerroneous request to remove the core plugin. This caused the agent to stop\nfunctioning, which disrupted features that rely on it, such as SSH and Windows\npassword resets. This package update automatically restarts the agent on\ninstances where auto-update is enabled to resolve the issue.",
+        "summary": {
+          "title": "Guest agent update addresses plugin issue",
+          "summary": "A recent guest agent update, version 20260511.00, resolves an issue where the core plugin was erroneously removed. This update automatically restarts the agent on instances with auto-update enabled, restoring functionality for features like SSH and password resets."
+        }
+      }
+    ],
     "2026-04-27": [
       {
         "kind": "Fixed",

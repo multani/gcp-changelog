@@ -2,9 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-05-12T00:00:00+00:00</updated>
+  <updated>2026-05-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-19:announcement:0</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.151.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.151.0 has been released. This update brings the latest improvements and features to the tool for managing cloud resources.</summary>
+    <title>Announcement: Config Connector 1.151.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-19:change:1</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li>CloudDeployAutomation</li>
+<li>ComputeFutureReservation</li>
+<li>GKEHubMembershipBinding</li>
+<li>GKEHubNamespace</li>
+<li>GKEHubScopeRBACRoleBinding</li>
+<li>NetworkServicesWasmPlugin</li>
+<li>VertexAIDataLabelingJob</li>
+</ul>]]></content>
+    <summary>We are excited to announce the release of several new Alpha resources. These include CloudDeployAutomation, ComputeFutureReservation, GKEHubMembershipBinding, GKEHubNamespace, GKEHubScopeRBACRoleBinding, NetworkServicesWasmPlugin, and VertexAIDataLabelingJob. These additions aim to enhance your capabilities in managing and deploying resources.</summary>
+    <title>Change: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-19:feature:2</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/memorystore/memorystoreinstance"><code>MemorystoreInstance</code></a></li>
+<li>Added <code>spec.automatedBackupConfig</code> field.</li>
+<li>Added <code>spec.crossInstanceReplicationConfig</code> field.</li>
+<li>Added <code>spec.maintenanceVersion</code> field.</li>
+<li>Added <code>status.observedState.availableMaintenanceVersions</code> field.</li>
+<li>Added <code>status.observedState.crossInstanceReplicationConfig</code> field.</li>
+<li>Added <code>status.observedState.effectiveMaintenanceVersion</code> field.</li>
+<li>Added <code>status.observedState.pscAttachmentDetails</code> field.</li>
+</ul>]]></content>
+    <summary>Several new fields have been added to the Memorystore Instance resource, including configurations for automated backups, cross-instance replication, and maintenance versions. These updates provide enhanced control and visibility over your Memorystore instances.</summary>
+    <title>Feature: Memorystore Instance Fields Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-19:fixed:3</id>
+    <published>2026-05-19T00:00:00+00:00</published>
+    <updated>2026-05-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/bigquerydatatransfer/bigquerydatatransferconfig"><code>BigQueryDataTransferConfig</code></a></li>
+<li>Fix resource duplication loop.</li>
+<li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
+<li>Enable projectID to projectNumber transform in fields in Container LROs.</li>
+</ul>]]></content>
+    <summary>Fixed a resource duplication loop in BigQuery Data Transfer configurations and enabled project ID to project number transformation for Container Cluster LROs.</summary>
+    <title>Fixed: Fixes for BigQuery and GKE</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

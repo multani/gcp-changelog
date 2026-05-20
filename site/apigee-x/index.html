@@ -2472,11 +2472,24 @@
 
 
 <h1 id="apigee-x">Apigee X</h1>
+<h2 id="2026-05-20">2026-05-20</h2>
+<h3 id="security">Security</h3>
+<p><strong>On May 20, 2026, we published a security bulletin for Apigee.</strong></p>
+<p>A vulnerability was found in Apigee
+(<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2264">CVE-2026-2264</a>)
+where the <code>IntegrationRegion</code>
+parameter in the <code>SetIntegrationRequest</code> policy lacks validation,
+allowing for Server-Side Request Forgery (SSRF) and service account token
+exfiltration. The issue arises when an attacker can control a flow variable used
+for <code>IntegrationRegion</code>, leading to requests being sent to an
+attacker-controlled host with the service account token.</p>
+<p><strong>Security bulletin published: <a href="https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-034">GCP-2026-034</a></strong></p>
+<hr />
 <h2 id="2026-05-12">2026-05-12</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="security_1">Security</h3>
 <p>On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security">Security</h3>
+<h3 id="security_2">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2596,7 +2609,7 @@
 </table>
 <hr />
 <h2 id="2026-04-29">2026-04-29</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement">Announcement</h3>
 <p>On April 29th, 2026, we began maintenance updates of Apigee instances <a href="https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance-windows">configured for maintenance windows</a>.</p>
 <p>If you set a preferred window for maintenance for your instance, and your instance version is
 below <strong>1-17-0-apigee-4</strong>, your instance will be updated to <strong>1-17-0-apigee-4</strong> within the
@@ -2641,7 +2654,7 @@ Any configuration changes or management tasks must be performed directly on the 
 <p>We are actively working to release the updated Infrastructure Manager-based solution.</p>
 <hr />
 <h2 id="2026-03-31">2026-03-31</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>On March 31st, 2026, we released an updated version of Apigee.</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature">Feature</h3>
@@ -2667,10 +2680,10 @@ duplication. For example, change <code>https://example.com/api/v1</code> to <cod
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues">Apigee known issues</a>.</p>
 <hr />
 <h2 id="2026-03-26">2026-03-26</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On March 26th, 2026, we released an updated version of Apigee (1-17-0-apigee-6).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_1">Security</h3>
+<h3 id="security_3">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2702,7 +2715,7 @@ duplication. For example, change <code>https://example.com/api/v1</code> to <cod
 </table>
 <hr />
 <h2 id="2026-03-19">2026-03-19</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On March 19th, 2026, we began maintenance updates of Apigee instances <a href="https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance-windows">configured for maintenance windows</a>.</p>
 <p>If you set a preferred window for maintenance for your instance, and your instance version is
 below <strong>1-16-0-apigee-6</strong>, your instance will be updated to <strong>1-16-0-apigee-6</strong> within the
@@ -2715,7 +2728,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 <p>For more information on participating in scheduled maintenance windows, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance">Maintenance overview</a> and <a href="https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance-windows">Manage Apigee instance maintenance windows</a>.</p>
 <hr />
 <h2 id="2026-03-17">2026-03-17</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>On March 17th, 2026, we released an updated version of Apigee (1-17-0-apigee-5).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="fixed_3">Fixed</h3>
@@ -2735,7 +2748,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 </table>
 <hr />
 <h2 id="2026-03-10">2026-03-10</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>On March 10th, 2026, we released an updated version of Apigee (1-17-0-apigee-4).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="fixed_4">Fixed</h3>
@@ -2753,7 +2766,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 </tr>
 </tbody>
 </table>
-<h3 id="security_2">Security</h3>
+<h3 id="security_4">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2770,7 +2783,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 </table>
 <hr />
 <h2 id="2026-02-24">2026-02-24</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>On February 24th, 2026, we released an updated version of Apigee (1-17-0-apigee-3).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="fixed_5">Fixed</h3>
@@ -2796,7 +2809,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 </tr>
 </tbody>
 </table>
-<h3 id="security_3">Security</h3>
+<h3 id="security_5">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2813,18 +2826,18 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 </table>
 <hr />
 <h2 id="2026-02-13">2026-02-13</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>On February 13, 2026, we published a security bulletin for Apigee.</p>
-<h3 id="security_4">Security</h3>
+<h3 id="security_6">Security</h3>
 <p>A vulnerability was identified in the Apigee platform (<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-13292">CVE-2025-13292</a>) that could have allowed a malicious actor with administrative or developer-level permissions in their own Apigee environment to elevate privileges and access cross-tenant data.</p>
 <p><strong>Security bulletin published: <a href="https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-010">GCP-2026-010</a></strong></p>
 <hr />
 <h2 id="2026-02-10">2026-02-10</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>Note:</strong> This release was rolled back to address an issue. See the entry for <a href="https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026">February 24th, 2026</a> for the updated version number and payload.</p>
 <p>On February 10, 2026, we released an updated version of Apigee (1-17-0-apigee-2).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_5">Security</h3>
+<h3 id="security_7">Security</h3>
 <p><strong>Note:</strong> This note is incorrect - these security fixes, including the removal of support for the <code>TLS_RSA</code> cipher suites, were rolled back. See the entry for <a href="https://docs.cloud.google.com/apigee/docs/release-notes#February_24_2026">February 24th, 2026</a> for the updated version number and payload.</p>
 <table>
 <thead>
@@ -2854,10 +2867,10 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 </table>
 <hr />
 <h2 id="2026-02-06">2026-02-06</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>On February 6th, 2026, we released an updated version of Apigee.</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_6">Security</h3>
+<h3 id="security_8">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2878,7 +2891,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 <p><strong>Known Issue:</strong> <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#480997525">480997525 - Proxy calls fail with <code>The URI contains illegal characters</code> error after Netty upgrade</a></p>
 <hr />
 <h2 id="2026-01-21">2026-01-21</h2>
-<h3 id="security_7">Security</h3>
+<h3 id="security_9">Security</h3>
 <table>
 <thead>
 <tr>
@@ -2916,12 +2929,12 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 </tr>
 </tbody>
 </table>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>On January 21st, 2026, we released an updated version of Apigee (1-17-0-apigee-1).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <hr />
 <h2 id="2025-12-29">2025-12-29</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>On December 29th, 2025, we released an updated version of Apigee.</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature_2">Feature</h3>
@@ -2930,7 +2943,7 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
 For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-quickstart#create-traffic-ext">Get started with the Apigee Extension Processor</a></p>
 <hr />
 <h2 id="2025-12-23">2025-12-23</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>On December 23, 2025, we released an updated version of Apigee.</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature_3">Feature</h3>
@@ -2959,7 +2972,7 @@ For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api
 </ul>
 <hr />
 <h2 id="2025-12-10">2025-12-10</h2>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p>On December 10th, 2025, we released an updated version of Apigee (1-16-0-apigee-6).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="fixed_7">Fixed</h3>
@@ -2983,10 +2996,10 @@ For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api
 </table>
 <hr />
 <h2 id="2025-12-05">2025-12-05</h2>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p>On December 5th, 2025, we released an updated version of Apigee.</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_8">Security</h3>
+<h3 id="security_10">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3009,13 +3022,13 @@ For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api
 For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/cache/key-value-maps#aboutmasking">About KVM masking</a>.</p>
 <hr />
 <h2 id="2025-11-17">2025-11-17</h2>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p>On November 17, 2025, we released an updated version of Apigee (1-16-0-apigee-5).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature_5">Feature</h3>
 <p><strong>Secure and validate documents using WS-Security with X.509 certificates</strong>  </p>
 <p>You can now secure and validate SOAP documents using WS-Security with X.509 certificates using crypto object methods. See <a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/javascript-object-model#cryptoobjectreference-cryptowsSecRsaSign">Secure SOAP documents using WS-Security with X.509 certificates</a> and <a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/javascript-object-model#cryptoobjectreference-cryptowsSecRsaValidate">Validate SOAP documents using WS-Security with X.509 certificates</a>.</p>
-<h3 id="security_9">Security</h3>
+<h3 id="security_11">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3050,10 +3063,10 @@ For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api
 </table>
 <hr />
 <h2 id="2025-10-31">2025-10-31</h2>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p>On October 31, 2025, we released an updated version of Apigee (1-16-0-apigee-4).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_10">Security</h3>
+<h3 id="security_12">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3102,7 +3115,7 @@ See
 for information and instructions.</p>
 <p>NOTE: API product-scoped quotas are not supported in Apigee hybrid
 at this time.</p>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p>On October 29, 2025, we released an updated version of Apigee.</p>
 <hr />
 <h2 id="2025-10-27">2025-10-27</h2>
@@ -3114,11 +3127,11 @@ cases when the URL is dynamically constructed based on user input.</p>
 <p>For more information, see the
 <a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/variables-reference#target">target flow variables</a>
 documentation.</p>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p>On October 27, 2025, we released an updated version of Apigee.</p>
 <hr />
 <h2 id="2025-10-16">2025-10-16</h2>
-<h3 id="security_11">Security</h3>
+<h3 id="security_13">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3133,7 +3146,7 @@ documentation.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p>On October 16, 2025, we released an updated version of Apigee (1-16-0-apigee-3).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="fixed_10">Fixed</h3>
@@ -3187,10 +3200,10 @@ documentation.</p>
 <p>See <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#445936920">Known Issue 445936920</a>.</p>
 <hr />
 <h2 id="2025-09-12">2025-09-12</h2>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p>On September 12, 2025, we released an updated version of Apigee (1-16-0-apigee-2).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_12">Security</h3>
+<h3 id="security_14">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3212,7 +3225,7 @@ documentation.</p>
 <p>The <strong>API hub</strong> section is now moved to the top level of the Apigee left navigation menu. This change improves discoverability and access to the API hub features.</p>
 <hr />
 <h2 id="2025-09-09">2025-09-09</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p>On September 9, 2025, we released an updated version of Apigee (1-16-0-apigee-1).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="changed_2">Changed</h3>
@@ -3232,7 +3245,7 @@ documentation.</p>
 </table>
 <hr />
 <h2 id="2025-09-04">2025-09-04</h2>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p>On September 4, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature_9">Feature</h3>
 <p><strong>Apigee policies for LLM/GenAI workloads are Generally Available (GA)</strong></p>
@@ -3252,7 +3265,7 @@ documentation.</p>
 </ul>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p>On September 3, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature_10">Feature</h3>
 <p><strong>Apigee Server-Sent Events (SSE) and EventFlows are supported for use with the Apigee Extension Processor.</strong></p>
@@ -3260,10 +3273,10 @@ documentation.</p>
 <p>The Apigee Extension Processor is a <a href="https://cloud.google.com/service-extensions/docs/overview#integration-lb">traffic extension</a> that lets you use Cloud Load Balancing to send callouts from the data processing path of the application load balancer to the Apigee Extension Processor. To learn more, see the <a href="https://cloud.google.com/apigee/docs/api-platform/service-extensions/extension-processor-overview">Apigee Extension Processor overview</a>.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p>On August 27, 2025, we released an updated version of Apigee (1-15-0-apigee-9).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
-<h3 id="security_13">Security</h3>
+<h3 id="security_15">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3315,7 +3328,7 @@ documentation.</p>
 </table>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p>On August 4, 2025, we released an updated version of Apigee (1-15-0-apigee-8).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature_11">Feature</h3>
@@ -3375,7 +3388,7 @@ documentation.</p>
 </table>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p>On July 30, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Develop &gt; API Proxies</li>
@@ -3387,7 +3400,7 @@ documentation.</p>
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p>On July 28, 2025, we released an updated version of Apigee (1-15-0-apigee-7).</p>
 <p><strong>Note:</strong> This release has been rolled back to address am issue. See entry for <a href="https://cloud.google.com/apigee/docs/release-notes#August_04_2025">August 4, 2025</a> for the updated version number and payload.</p>
 <h3 id="feature_12">Feature</h3>
@@ -3443,7 +3456,7 @@ documentation.</p>
 </table>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p>On July 24, 2025 we began redirecting the following Apigee Classic UI navigation items to Apigee UI in the Google Cloud console:</p>
 <ul>
 <li>Publish &gt; Portals</li>
@@ -3453,7 +3466,7 @@ documentation.</p>
 <p>If you require more time to transition to the Google Cloud console, submit the <a href="https://docs.google.com/forms/d/e/1FAIpQLSedFe2Pj2f9B8YxD7cgWOyf8-IjRA8IhRZpZ2jXMZ9DU1uz1g/viewform">exception request form</a> by Aug 15, 2025.</p>
 <hr />
 <h2 id="2025-06-03">2025-06-03</h2>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p>On June 3, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature_13">Feature</h3>
 <p><strong>Apigee API hub is enabled for new Apigee organizations in supported regions.</strong></p>
@@ -3467,7 +3480,7 @@ documentation.</p>
 <p>Contact <a href="https://cloud.google.com/apigee/docs/support/getting-started-with-support">Google Cloud Support</a> for questions or assistance.</p>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="announcement_31">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p>On June 2, 2025, we released an updated version of Apigee (1-15-0-apigee-5).</p>
 <p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>
 <h3 id="feature_14">Feature</h3>
@@ -3708,15 +3721,15 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Upgraded sys-apps/less to v678.</p>
 <h3 id="fixed_29">Fixed</h3>
 <p>Upgraded dev-db/sqlite to v3.49.2.</p>
-<h3 id="security_14">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
-<h3 id="security_15">Security</h3>
-<p>Upgraded net-misc/curl to version 8.12.1. This fixes CVE-2025-0167.</p>
 <h3 id="security_16">Security</h3>
-<p>Fixed CVE-2025-46836 in sys-apps/net-tools</p>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_17">Security</h3>
-<p>Fixed CVE-20250-3198 in sys-libs/bintuils-libs.</p>
+<p>Upgraded net-misc/curl to version 8.12.1. This fixes CVE-2025-0167.</p>
 <h3 id="security_18">Security</h3>
+<p>Fixed CVE-2025-46836 in sys-apps/net-tools</p>
+<h3 id="security_19">Security</h3>
+<p>Fixed CVE-20250-3198 in sys-libs/bintuils-libs.</p>
+<h3 id="security_20">Security</h3>
 <p>Fixed KCTF-3f98113 in the Linux kernel.</p>
 <h3 id="changed_12">Changed</h3>
 <p>Runtime sysctl changes:</p>
@@ -3754,13 +3767,13 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_31">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_19">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
-<h3 id="security_20">Security</h3>
-<p>Fixed CVE-2024-43840 in the Linux kernel.</p>
 <h3 id="security_21">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_22">Security</h3>
+<p>Fixed CVE-2024-43840 in the Linux kernel.</p>
+<h3 id="security_23">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_24">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h3 id="changed_14">Changed</h3>
 <h3 id="cos-113-18244-382-29">cos-113-18244-382-29</h3>
@@ -3792,13 +3805,13 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_33">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_23">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
-<h3 id="security_24">Security</h3>
-<p>Fixed CVE-2024-36927 in the Linux kernel.</p>
 <h3 id="security_25">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
 <h3 id="security_26">Security</h3>
+<p>Fixed CVE-2024-36927 in the Linux kernel.</p>
+<h3 id="security_27">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_28">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h3 id="changed_15">Changed</h3>
 <h3 id="cos-121-18867-90-38">cos-121-18867-90-38</h3>
@@ -3830,11 +3843,11 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_35">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_27">Security</h3>
-<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
-<h3 id="security_28">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
 <h3 id="security_29">Security</h3>
+<p>Fixed CVE-2024-23337 in app-misc/jq.</p>
+<h3 id="security_30">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_31">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h3 id="changed_16">Changed</h3>
 <h3 id="cos-109-17800-519-18">cos-109-17800-519-18</h3>
@@ -3866,11 +3879,11 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>Updated cos-gpu-installer to v2.5.2: Added support for OTHER/NO_GPU cases to enable GPU driver preloading on the ARM64 architecture and added support for IMEX Driver configuration installation for NVIDIA_GB200 machine.</p>
 <h3 id="fixed_37">Fixed</h3>
 <p>Upgraded sys-apps/less to v678.</p>
-<h3 id="security_30">Security</h3>
-<p>Fixed CVE-2024-26783 in the Linux kernel.</p>
-<h3 id="security_31">Security</h3>
-<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
 <h3 id="security_32">Security</h3>
+<p>Fixed CVE-2024-26783 in the Linux kernel.</p>
+<h3 id="security_33">Security</h3>
+<p>Fixed KCTF-3f98113 in the Linux kernel.</p>
+<h3 id="security_34">Security</h3>
 <p>Fixed KCTF-8478a72 in the Linux kernel.</p>
 <h2 id="google-cloud-architecture-center">Google Cloud Architecture Center</h2>
 <h3 id="feature_24">Feature</h3>
@@ -4037,7 +4050,7 @@ new services like <code>google-guest-compat-manager.service</code> and
 </ul>
 <hr />
 <h2 id="2025-05-30">2025-05-30</h2>
-<h3 id="announcement_32">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p>On May 30, 2025 we released an updated version of Apigee.</p>
 <h3 id="feature_27">Feature</h3>
 <p><strong>Announcing the general availability of Gemini Code Assist API development features in Apigee</strong></p>
@@ -4052,9 +4065,9 @@ new services like <code>google-guest-compat-manager.service</code> and
 <p>For more information and usage instructions, see <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/vscode/develop-design-edit-apis">Designing and editing APIs</a>, <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/vscode/tutorial-gemini">Tutorial: Use Gemini Code Assist to design, develop, and test APIs in Apigee</a>, and <a href="https://cloud.google.com/apigee/docs/api-platform/local-development/setup">Setting up Apigee API Management in Cloud Code for VS Code</a>.</p>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="announcement_33">Announcement</h3>
+<h3 id="announcement_32">Announcement</h3>
 <p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
-<h3 id="announcement_34">Announcement</h3>
+<h3 id="announcement_33">Announcement</h3>
 <p>On May 29, 2025, we released an updated version of Apigee.</p>
 <h3 id="feature_28">Feature</h3>
 <p><strong>Public Preview: Apigee Extension Processor support for request and response body processing</strong></p>
@@ -4076,6 +4089,9 @@ new services like <code>google-guest-compat-manager.service</code> and
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-x">Apigee X</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-20" class="nav-link">2026-05-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-05-12" class="nav-link">2026-05-12</a>
           </li>

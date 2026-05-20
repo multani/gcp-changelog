@@ -1,13 +1,23 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-05-20": [
+      {
+        "kind": "Security",
+        "content": "**On May 20, 2026, we published a security bulletin for Apigee.**\n\nA vulnerability was found in Apigee\n([CVE-2026-2264](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-2264))\nwhere the `IntegrationRegion`\nparameter in the `SetIntegrationRequest` policy lacks validation,\nallowing for Server-Side Request Forgery (SSRF) and service account token\nexfiltration. The issue arises when an attacker can control a flow variable used\nfor `IntegrationRegion`, leading to requests being sent to an\nattacker-controlled host with the service account token.\n\n**Security bulletin published: [GCP-2026-034](https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-034)**",
+        "summary": {
+          "title": "Apigee Security Bulletin Released",
+          "summary": "A critical vulnerability (CVE-2026-2264) has been identified in Apigee, allowing for Server-Side Request Forgery and service account token exfiltration. This bulletin details the vulnerability and provides mitigation information."
+        }
+      }
+    ],
     "2026-05-12": [
       {
-        "kind": "Announcement",
+        "kind": "Security",
         "content": "On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
         "summary": {
-          "title": "Apigee version 1-17-0-apigee-7 released",
-          "summary": "An updated version of Apigee, 1-17-0-apigee-7, was released on May 12th, 2026. Rollouts have begun and may take several business days to complete across all zones. Features and fixes will be available once the rollout is finished."
+          "title": "Security update for Apigee released",
+          "summary": "An updated version of Apigee (1-17-0-apigee-7) has been released on May 12th, 2026. Rollout across all zones may take up to four business days to complete. This update includes important security enhancements."
         }
       },
       {

@@ -1,5 +1,15 @@
 # Cloud Service Mesh
 
+## 2026-05-20
+
+### Announcement
+
+Cloud Service Mesh can now report a status code to indicate whether an Istio API
+is accepted or rejected. You can view the status code on the resource and mesh
+state. For more information see
+[MembershipState Error Codes](https://docs.cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-configuration#membershipstate_error_codes).
+
+---
 ## 2026-05-13
 
 ### Security

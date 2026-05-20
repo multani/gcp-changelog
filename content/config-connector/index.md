@@ -1,5 +1,44 @@
 # Config Connector
 
+## 2026-05-19
+
+### Announcement
+
+Config Connector version 1.151.0 is now available.
+
+### Change
+
+New Alpha Resources (Direct Reconciler):
+
+* CloudDeployAutomation
+* ComputeFutureReservation
+* GKEHubMembershipBinding
+* GKEHubNamespace
+* GKEHubScopeRBACRoleBinding
+* NetworkServicesWasmPlugin
+* VertexAIDataLabelingJob
+
+### Feature
+
+New Fields:
+
+* [`MemorystoreInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/memorystore/memorystoreinstance)
+  + Added `spec.automatedBackupConfig` field.
+  + Added `spec.crossInstanceReplicationConfig` field.
+  + Added `spec.maintenanceVersion` field.
+  + Added `status.observedState.availableMaintenanceVersions` field.
+  + Added `status.observedState.crossInstanceReplicationConfig` field.
+  + Added `status.observedState.effectiveMaintenanceVersion` field.
+  + Added `status.observedState.pscAttachmentDetails` field.
+
+### Fixed
+
+* [`BigQueryDataTransferConfig`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/bigquerydatatransfer/bigquerydatatransferconfig)
+  + Fix resource duplication loop.
+* [`ContainerCluster`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)
+  + Enable projectID to projectNumber transform in fields in Container LROs.
+
+---
 ## 2026-05-12
 
 ### Announcement

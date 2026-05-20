@@ -1,6 +1,40 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-05-19": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.151.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.151.0 Released",
+          "summary": "Config Connector version 1.151.0 has been released. This update brings the latest improvements and features to the tool for managing cloud resources."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* CloudDeployAutomation\n* ComputeFutureReservation\n* GKEHubMembershipBinding\n* GKEHubNamespace\n* GKEHubScopeRBACRoleBinding\n* NetworkServicesWasmPlugin\n* VertexAIDataLabelingJob",
+        "summary": {
+          "title": "New Alpha Resources Available",
+          "summary": "We are excited to announce the release of several new Alpha resources. These include CloudDeployAutomation, ComputeFutureReservation, GKEHubMembershipBinding, GKEHubNamespace, GKEHubScopeRBACRoleBinding, NetworkServicesWasmPlugin, and VertexAIDataLabelingJob. These additions aim to enhance your capabilities in managing and deploying resources."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`MemorystoreInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/memorystore/memorystoreinstance)\n  + Added `spec.automatedBackupConfig` field.\n  + Added `spec.crossInstanceReplicationConfig` field.\n  + Added `spec.maintenanceVersion` field.\n  + Added `status.observedState.availableMaintenanceVersions` field.\n  + Added `status.observedState.crossInstanceReplicationConfig` field.\n  + Added `status.observedState.effectiveMaintenanceVersion` field.\n  + Added `status.observedState.pscAttachmentDetails` field.",
+        "summary": {
+          "title": "Memorystore Instance Fields Updated",
+          "summary": "Several new fields have been added to the Memorystore Instance resource, including configurations for automated backups, cross-instance replication, and maintenance versions. These updates provide enhanced control and visibility over your Memorystore instances."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* [`BigQueryDataTransferConfig`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/bigquerydatatransfer/bigquerydatatransferconfig)\n  + Fix resource duplication loop.\n* [`ContainerCluster`](https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n  + Enable projectID to projectNumber transform in fields in Container LROs.",
+        "summary": {
+          "title": "Fixes for BigQuery and GKE",
+          "summary": "Fixed a resource duplication loop in BigQuery Data Transfer configurations and enabled project ID to project number transformation for Container Cluster LROs."
+        }
+      }
+    ],
     "2026-05-12": [
       {
         "kind": "Announcement",

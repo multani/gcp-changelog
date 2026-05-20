@@ -1,5 +1,56 @@
 # Google SecOps Marketplace
 
+## 2026-05-20
+
+### Change
+
+**AlienVault USM Appliance**: Version 27.0
+
+* Refactored the code for the following action:
+  + **Get PCAP Files For Events**
+
+### Change
+
+**Protectwise**: Version 6.0
+
+* Refactored the code for the following action:
+  + **Get Pcap**
+
+### Change
+
+**Service Desk Plus**: Version 9.0
+
+* Refactored the code for the following action:
+  + **Create Alert Request**
+
+### Change
+
+**Service Desk Plus V3**: Version 9.0
+
+* Refactored the code for the following action:
+  + **Create Alert Request**
+
+### Change
+
+**ServiceNow**: Version 66.0
+
+* Updated the code for the following action:
+  + **Update Incident**: Added support for updating reference fields.
+
+### Change
+
+**Google Chronicle**: Version 83.0
+
+* Added support for filtering alerts by rule type to the following connector:
+  + **Google Chronicle - Chronicle Alerts Connector**
+
+### Change
+
+**Tanium**: Version 20.0
+
+* **Integration**: Added a partner header to all API requests.
+
+---
 ## 2026-05-13
 
 ### Change

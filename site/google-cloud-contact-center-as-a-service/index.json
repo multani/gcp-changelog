@@ -11,48 +11,6 @@
         }
       }
     ],
-    "2026-05-12": [
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the prerelease notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
-        "summary": {
-          "title": "CCaaS prerelease notes",
-          "summary": "These are the prerelease notes for the upcoming version of Google Cloud CCaaS, detailing the expected new capabilities upon release."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Agent status inheritance for HubSpot users**\n\nYou can configure CCAI Platform to synchronize agent statuses with\nHubSpot agent statuses in real time. You can also map HubSpot agent statuses to\nContact Center AI Platform statuses (and vice versa) to account for different agent status\nnaming conventions.\n\nAdministrators: A new **Settings > Developer Settings >\nAgent Status Inheritance** pane is available when you set **Settings\n> Developer Settings > Agent Platform** to **HubSpot**.",
-        "summary": {
-          "title": "Agent Status Sync for HubSpot",
-          "summary": "Synchronize agent statuses between CCAI Platform and HubSpot in real time. Map different status names to ensure seamless integration for your agents."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**For call transfers in HubSpot, the ticket owner is automatically updated**\n\nWhen a call is transferred from one agent to another with a HubSpot integration,\nHubSpot tickets now automatically update to reflect the new ticket owner. This\nprovides an accurate record of ownership throughout the interaction lifecycle.\nNo configuration is required.",
-        "summary": {
-          "title": "Ticket owner automatically updated for call transfers",
-          "summary": "HubSpot tickets now automatically update to reflect the new ticket owner when a call is transferred between agents. This ensures an accurate record of ownership throughout the interaction lifecycle, with no configuration needed."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Agent synchronization for HubSpot**\n\nYou can now configure your instance to use the default administrator user to\nsynchronize CCAI Platform and HubSpot agents. CCAI Platform\ncan use the default administrator user to create and update HubSpot accounts and\nrecords, even when a matching HubSpot profile can't be found for an agent.\n\nAdministrators: A new **Default User** section is available in the **Settings\n> Developer Settings > CRM** pane.\n\nUser experience change: When agent synchronization is configured, a new\n**Authorize** button appears on the agent adapter.",
-        "summary": {
-          "title": "Agent Synchronization for HubSpot",
-          "summary": "CCAI Platform now supports agent synchronization with HubSpot, allowing the default administrator user to create and update HubSpot accounts and records. This feature enhances agent management by ensuring all agents are reflected in HubSpot, even if a direct profile match isn't initially found. Administrators can configure this in the Developer Settings, and users will see a new 'Authorize' button on the agent adapter."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "This release addresses the following issues:\n\n* Fixed an issue where launching a task virtual assistant during a chat caused\n  the agent's screen to freeze.\n* Fixed an issue where call transcripts from CX Agent Studio agent\n  conversations were added to CRM records as garbled and unreadable text, with\n  repeated words and incorrect turn order.\n* Fixed an issue where the **Wait Time** custom field on Zendesk tickets\n  displayed an incorrect value when using custom fields for **Account** and\n  **Record**.\n* Fixed an issue where agents assigned a direct SMS-capable line didn't\n  receive visual notifications for incoming SMS chats in the agent adapter\n  while their status was set to `Unavailable`.\n* Fixed an issue where some chat transcripts couldn't be downloaded from the\n  **Completed Chats** page.\n* Fixed an issue where customer calls were unexpectedly abandoned during\n  payment transactions when DTMF inputs were provided.\n* Fixed an issue where agents heard repeated call notification sounds during\n  active calls, even when no new call was assigned.\n* Fixed an issue where only English IVR queues appeared when configuring\n  agent-specific deflection settings, even when other language queues were\n  available.\n\n- Fixed an issue where sentiment analysis didn't display to agents when calls\nwere escalated from a virtual agent, even though the data was generated.\n\n* Fixed an issue where email messages in queues displayed a blank white panel\n  when opened.\n* Fixed an issue where chat transcript and metadata files were generated as\n  empty files, causing API timeouts and blocking reporting pipelines.\n* Fixed an issue where chat sessions that ended due to end-user inactivity\n  were marked as **Disconnected by end user** instead of **Timeout: end user\n  stopped responding**.\n* Fixed an issue where agents couldn't receive more than 12 concurrent chats\n  despite being configured for up to 30.\n* Fixed an issue where virtual agent calls were routed back to the original\n  queue instead of being handled as expected.\n* Fixed an issue that occurred when a third party was added to a call. After\n  all participants left the call, the call still appeared to be connected.\n* Fixed an issue where cascade conditions for agent queues didn't correctly\n  enforce the minimum number of available UK agents before allowing calls to\n  cascade from the US queue, resulting in calls being routed incorrectly.\n* Fixed an issue where bulk user import incorrectly limited the chat\n  concurrency value to the global default, preventing valid per-agent settings\n  from being uploaded.",
-        "summary": {
-          "title": "Resolved Several Issues in Agent Experience",
-          "summary": "This release addresses multiple issues impacting agent performance and customer interactions. Key fixes include resolving screen freezes, garbled call transcripts, and incorrect wait time calculations. Additionally, improvements have been made to notification systems, transcript downloads, and call routing logic."
-        }
-      }
-    ],
     "2026-05-06": [
       {
         "kind": "Announcement",
@@ -152,6 +110,48 @@
         "summary": {
           "title": "iOS SDK Update 2.15.2",
           "summary": "A patch for the iOS mobile SDK (version 2.15.2) has been released. This update resolves an issue where the chat text field was partially obscured on iOS 26 devices."
+        }
+      }
+    ],
+    "2026-05-12": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the prerelease notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "CCaaS prerelease notes",
+          "summary": "These are the prerelease notes for the upcoming version of Google Cloud CCaaS, detailing the expected new capabilities upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent status inheritance for HubSpot users**\n\nYou can configure CCAI Platform to synchronize agent statuses with\nHubSpot agent statuses in real time. You can also map HubSpot agent statuses to\nContact Center AI Platform statuses (and vice versa) to account for different agent status\nnaming conventions.\n\nAdministrators: A new **Settings > Developer Settings >\nAgent Status Inheritance** pane is available when you set **Settings\n> Developer Settings > Agent Platform** to **HubSpot**.",
+        "summary": {
+          "title": "Agent Status Sync for HubSpot",
+          "summary": "Synchronize agent statuses between CCAI Platform and HubSpot in real time. Map different status names to ensure seamless integration for your agents."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**For call transfers in HubSpot, the ticket owner is automatically updated**\n\nWhen a call is transferred from one agent to another with a HubSpot integration,\nHubSpot tickets now automatically update to reflect the new ticket owner. This\nprovides an accurate record of ownership throughout the interaction lifecycle.\nNo configuration is required.",
+        "summary": {
+          "title": "Ticket owner automatically updated for call transfers",
+          "summary": "HubSpot tickets now automatically update to reflect the new ticket owner when a call is transferred between agents. This ensures an accurate record of ownership throughout the interaction lifecycle, with no configuration needed."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent synchronization for HubSpot**\n\nYou can now configure your instance to use the default administrator user to\nsynchronize CCAI Platform and HubSpot agents. CCAI Platform\ncan use the default administrator user to create and update HubSpot accounts and\nrecords, even when a matching HubSpot profile can't be found for an agent.\n\nAdministrators: A new **Default User** section is available in the **Settings\n> Developer Settings > CRM** pane.\n\nUser experience change: When agent synchronization is configured, a new\n**Authorize** button appears on the agent adapter.",
+        "summary": {
+          "title": "Agent Synchronization for HubSpot",
+          "summary": "CCAI Platform now supports agent synchronization with HubSpot, allowing the default administrator user to create and update HubSpot accounts and records. This feature enhances agent management by ensuring all agents are reflected in HubSpot, even if a direct profile match isn't initially found. Administrators can configure this in the Developer Settings, and users will see a new 'Authorize' button on the agent adapter."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where launching a task virtual assistant during a chat caused\n  the agent's screen to freeze.\n* Fixed an issue where call transcripts from CX Agent Studio agent\n  conversations were added to CRM records as garbled and unreadable text, with\n  repeated words and incorrect turn order.\n* Fixed an issue where the **Wait Time** custom field on Zendesk tickets\n  displayed an incorrect value when using custom fields for **Account** and\n  **Record**.\n* Fixed an issue where agents assigned a direct SMS-capable line didn't\n  receive visual notifications for incoming SMS chats in the agent adapter\n  while their status was set to `Unavailable`.\n* Fixed an issue where some chat transcripts couldn't be downloaded from the\n  **Completed Chats** page.\n* Fixed an issue where customer calls were unexpectedly abandoned during\n  payment transactions when DTMF inputs were provided.\n* Fixed an issue where agents heard repeated call notification sounds during\n  active calls, even when no new call was assigned.\n* Fixed an issue where only English IVR queues appeared when configuring\n  agent-specific deflection settings, even when other language queues were\n  available.\n\n- Fixed an issue where sentiment analysis didn't display to agents when calls\nwere escalated from a virtual agent, even though the data was generated.\n\n* Fixed an issue where email messages in queues displayed a blank white panel\n  when opened.\n* Fixed an issue where chat transcript and metadata files were generated as\n  empty files, causing API timeouts and blocking reporting pipelines.\n* Fixed an issue where chat sessions that ended due to end-user inactivity\n  were marked as **Disconnected by end user** instead of **Timeout: end user\n  stopped responding**.\n* Fixed an issue where agents couldn't receive more than 12 concurrent chats\n  despite being configured for up to 30.\n* Fixed an issue where virtual agent calls were routed back to the original\n  queue instead of being handled as expected.\n* Fixed an issue that occurred when a third party was added to a call. After\n  all participants left the call, the call still appeared to be connected.\n* Fixed an issue where cascade conditions for agent queues didn't correctly\n  enforce the minimum number of available UK agents before allowing calls to\n  cascade from the US queue, resulting in calls being routed incorrectly.\n* Fixed an issue where bulk user import incorrectly limited the chat\n  concurrency value to the global default, preventing valid per-agent settings\n  from being uploaded.",
+        "summary": {
+          "title": "Resolved Several Issues in Agent Experience",
+          "summary": "This release addresses multiple issues impacting agent performance and customer interactions. Key fixes include resolving screen freezes, garbled call transcripts, and incorrect wait time calculations. Additionally, improvements have been made to notification systems, transcript downloads, and call routing logic."
         }
       }
     ],

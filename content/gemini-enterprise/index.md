@@ -1,5 +1,39 @@
 # Gemini Enterprise
 
+## 2026-05-19
+
+### Feature
+
+**Gemini Enterprise: Data store for Crossbeam (Preview)**
+
+You can now connect Crossbeam data stores to Gemini Enterprise.
+
+Support for Crossbeam data stores is in Public Preview. For more information, see [Connect Crossbeam](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/crossbeam).
+
+### Feature
+
+**Gemini Enterprise: Use Gemini 3.5 Flash (GA)**
+
+Gemini 3.5 Flash is generally available (GA) in the Global, US, and
+EU regions with Gemini Enterprise. Users can select it in the model selector
+dropdown within the Gemini Enterprise app assistant and in Agent Designer.
+
+As Gemini 3.5 Flash is the current GA Flash model, Gemini 2.5
+Flash is removed from the model selector. Administrators can't toggle
+Gemini 3.5 Flash off.
+
+For more information about feature controls, see
+[Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+### Feature
+
+**NotebookLM Enterprise: Create slide decks and infographics**
+
+You can create slide decks and infographics using
+NotebookLM Enterprise. This feature is generally available (GA).
+For more information on the usage limits, see [Usage limits](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview#usage-limits).
+
+---
 ## 2026-05-17
 
 ### Feature

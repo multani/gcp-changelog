@@ -1,5 +1,58 @@
 # Config Connector
 
+## 2026-05-12
+
+### Announcement
+
+Config Connector version 1.150.0 is now available.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `GKEHubScope`
+  + Manage [Google Kubernetes Engine Hub Scopes](https://cloud.google.com/anthos/fleet-management/docs/concepts#fleet-level-features) which let you group fleet resources for fine-grained management.
+* `CloudDeployTarget`
+  + Manage [Cloud Deploy targets](https://cloud.google.com/deploy/docs/targets) which define where your application is deployed.
+
+### Feature
+
+New Fields:
+
+* [`CertificateManagerCertificate`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagercertificate)
+  + Added `status.observedState` field, which includes `managed.state`, `managed.authorizationAttemptInfo`, and `managed.provisioningIssue`. This enables tracking the current state of the certificate even when `state-into-spec: absent` is used.
+* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)
+  + Added `spec.ipAllocationPolicy.additionalIpRangesConfigs` field.
+* [`ContainerNodePool`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool)
+  + Added `spec.networkConfig.subnetworkRef` field.
+
+### Feature
+
+Improved resource creation logging for both Direct and DCL-based controllers by including structured diffs.
+
+### Change
+
+Reconciliation Improvements:
+
+Added support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the `cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:
+
+* [`BigqueryTable`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerytable)
+  + Fixed a permanent difference in the `policyTag` field when using the direct controller, ensuring safer upgrades.
+* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)
+  + Added detailed diff reporting for the `userLabels` field.
+* [`DataplexLake`](https://cloud.google.com/config-connector/docs/reference/resource-docs/dataplex/dataplexlake)
+  + Added structured diff reporting to improve visibility into resource changes.
+
+### Fixed
+
+Bug Fixes:
+
+* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)
+  + Fixed a permanent difference in the `databaseEncryption.state` field and added support for the `ALL_OBJECTS_ENCRYPTION_ENABLED` value.
+* [`MemorystoreInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/memorystore/memorystoreinstance)
+  + Updated the controller to use change cookies, improving reconciliation stability and correctness.
+
+---
 ## 2026-05-05
 
 ### Announcement
@@ -14,6 +67,15 @@ New Alpha Resources (Direct Reconciler):
   + Manage [load balancing route extensions](https://cloud.google.com/service-extensions/docs/optimize-proxies-lb-route-extensions) which let you inject custom logic into the load balancing path.
 * [`ParameterManagerParameterVersion`](https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion) [#7140](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7140)
   + Manage [Parameter Manager parameter versions](https://cloud.google.com/secret-manager/docs/parameter-manager) which lets you to manage regional parameters.
+
+### Feature
+
+New Fields:
+
+* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster) [#7336](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336)
+  + Added `spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount` field to support GKE Data Cache.
+* [`ContainerNodePool`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool) [#7336](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336)
+  + Added `spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount` field to support GKE Data Cache.
 
 ### Feature
 

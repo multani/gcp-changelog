@@ -1,5 +1,13 @@
 # Security Command Center
 
+## 2026-05-19
+
+### Change
+
+[Vulnerability Assessment for Google Cloud](https://docs.cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud)
+supports scanning XFS and NTFS disk partition types.
+
+---
 ## 2026-05-15
 
 ### Change

@@ -1,5 +1,73 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-19
+
+### Feature
+
+**Gemini 3.5 Flash is generally available (GA)**
+
+For details, see the [model specifications page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash).
+
+### Feature
+
+**Managed Agents API on Agent Platform**
+
+Managed Agents API on Agent Platform is in Preview.
+This feature allows you to build and scale autonomous agents, including those
+built from configuration using the Antigravity harness. These agents run in a
+fully managed and isolated sandbox environment, equipped with tools and skills,
+and can be interacted with via a dedicated API.
+
+For more information, see the following:
+
+* [Managed Agents API on Agent Platform overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents)
+* [Create and manage agents](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents/create-manage)
+* [Interact with agents](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents/interact-with-agents)
+* [Managed Agents API on Agent Platform sandbox environment](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents/sandbox-environment)
+
+### Feature
+
+**Manage agent revisions and traffic splitting**
+
+Agent revisions and traffic splitting are now available in public preview. You
+can create immutable revisions of deployed agents, and split traffic between the
+different active revisions. This enables canary deployments and safe testing of
+new agent versions. For more information, see
+[Manage revisions and traffic](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/manage-revisions-and-traffic).
+
+### Feature
+
+**Manage and discover agent skills with Skill Registry.**
+
+Manage and discover agent skills with the Skill Registry, in public preview.
+This secure, private, and low-latency repository stores skills as
+self-contained packages, including instructions, code, and documentation, to
+enhance agent abilities.
+
+For more information, see:
+
+* [Skill Registry overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry)
+* [Create and manage skills](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry/create-manage)
+
+### Feature
+
+**AI Content Detection API available**
+
+The AI Content Detection API provides businesses with a powerful method to identify AI-generated content to support responsible media governance.
+
+### Feature
+
+**AI Content Detection API available**
+
+AI Content Detection API is available in [Preview](https://cloud.google.com/products#product-launch-stages). For details see [AI Content Detection](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/ai-content-detection).
+
+### Change
+
+Memory Bank and Sessions support for multi-regional and global endpoints is in
+[Preview](https://cloud.google.com/products#product-launch-stages). For more,
+see [Supported locations for agents in Agent Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/agent-locations#multi-regional_and_global_endpoints).
+
+---
 ## 2026-05-15
 
 ### Feature

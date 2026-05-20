@@ -2,9 +2,104 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-05-05T00:00:00+00:00</updated>
+  <updated>2026-05-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-12:announcement:0</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.150.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.150.0 has been released. This update brings new features and improvements to the tool.</summary>
+    <title>Announcement: Config Connector 1.150.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-12:feature:1</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>GKEHubScope</code></li>
+<li>Manage <a href="https://cloud.google.com/anthos/fleet-management/docs/concepts#fleet-level-features">Google Kubernetes Engine Hub Scopes</a> which let you group fleet resources for fine-grained management.</li>
+<li><code>CloudDeployTarget</code></li>
+<li>Manage <a href="https://cloud.google.com/deploy/docs/targets">Cloud Deploy targets</a> which define where your application is deployed.</li>
+</ul>]]></content>
+    <summary>Manage GKE Hub Scopes for fine-grained fleet resource grouping and Cloud Deploy Targets for application deployment locations. These new alpha resources offer enhanced control over your cloud infrastructure.</summary>
+    <title>Feature: New Alpha Resources for Fleet Management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-12:feature:2</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagercertificate"><code>CertificateManagerCertificate</code></a></li>
+<li>Added <code>status.observedState</code> field, which includes <code>managed.state</code>, <code>managed.authorizationAttemptInfo</code>, and <code>managed.provisioningIssue</code>. This enables tracking the current state of the certificate even when <code>state-into-spec: absent</code> is used.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
+<li>Added <code>spec.ipAllocationPolicy.additionalIpRangesConfigs</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool"><code>ContainerNodePool</code></a></li>
+<li>Added <code>spec.networkConfig.subnetworkRef</code> field.</li>
+</ul>]]></content>
+    <summary>We've added new fields to Certificate Manager Certificates, Container Clusters, and Container Node Pools. These updates provide enhanced visibility into certificate status, IP allocation policies, and network configurations.</summary>
+    <title>Feature: New fields for Certificates, Clusters, and Node Pools</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-12:feature:3</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Improved resource creation logging for both Direct and DCL-based controllers by including structured diffs.</p>]]></content>
+    <summary>We've improved resource creation logging for Direct and DCL-based controllers. This update includes structured diffs, providing more detailed information about changes during resource creation.</summary>
+    <title>Feature: Enhanced resource creation logging</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-12:change:4</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<p>Added support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the <code>cnrm.cloud.google.com/reconciler: direct</code> annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerytable"><code>BigqueryTable</code></a></li>
+<li>Fixed a permanent difference in the <code>policyTag</code> field when using the direct controller, ensuring safer upgrades.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
+<li>Added detailed diff reporting for the <code>userLabels</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataplex/dataplexlake"><code>DataplexLake</code></a></li>
+<li>Added structured diff reporting to improve visibility into resource changes.</li>
+</ul>]]></content>
+    <summary>Config Connector now supports direct reconciliation for more resources, including BigQuery tables, SQL instances, and Dataplex lakes. This enhancement improves visibility into resource changes and ensures safer upgrades by fixing permanent differences and adding detailed diff reporting.</summary>
+    <title>Change: Reconciliation improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-12:fixed:5</id>
+    <published>2026-05-12T00:00:00+00:00</published>
+    <updated>2026-05-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
+<li>Fixed a permanent difference in the <code>databaseEncryption.state</code> field and added support for the <code>ALL_OBJECTS_ENCRYPTION_ENABLED</code> value.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/memorystore/memorystoreinstance"><code>MemorystoreInstance</code></a></li>
+<li>Updated the controller to use change cookies, improving reconciliation stability and correctness.</li>
+</ul>]]></content>
+    <summary>Resolved an issue with database encryption states for Container Clusters and enhanced reconciliation stability and correctness for Memorystore Instances.</summary>
+    <title>Fixed: Fixed database encryption and reconciliation stability</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -40,6 +135,23 @@
     <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:feature:2</id>
     <published>2026-05-05T00:00:00+00:00</published>
     <updated>2026-05-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336">#7336</a></li>
+<li>Added <code>spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount</code> field to support GKE Data Cache.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool"><code>ContainerNodePool</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336">#7336</a></li>
+<li>Added <code>spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount</code> field to support GKE Data Cache.</li>
+</ul>]]></content>
+    <summary>The latest update introduces support for GKE Data Cache by adding the `spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount` field to both ContainerCluster and ContainerNodePool resources. This enhancement allows for improved performance and efficiency in managing ephemeral storage for your Kubernetes nodes.</summary>
+    <title>Feature: Support for GKE Data Cache added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:feature:3</id>
+    <published>2026-05-05T00:00:00+00:00</published>
+    <updated>2026-05-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New Features:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6243">Controlled CR reconciliation</a> Added support for unmanaging specific resources through <code>resourceSettings</code> in <code>ConfigConnector</code> (global) and <code>ConfigConnectorContext</code> (per-namespace). This lets you to selectively disable reconciliation for specific Group/Kinds to save memory or manage resources differently.</li>
@@ -51,7 +163,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:change:3</id>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:change:4</id>
     <published>2026-05-05T00:00:00+00:00</published>
     <updated>2026-05-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
@@ -66,7 +178,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:fixed:4</id>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-05-05:fixed:5</id>
     <published>2026-05-05T00:00:00+00:00</published>
     <updated>2026-05-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Bug Fixes:</p>

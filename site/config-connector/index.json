@@ -1,6 +1,56 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-05-12": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.150.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.150.0 Released",
+          "summary": "Config Connector version 1.150.0 has been released. This update brings new features and improvements to the tool."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `GKEHubScope`\n  + Manage [Google Kubernetes Engine Hub Scopes](https://cloud.google.com/anthos/fleet-management/docs/concepts#fleet-level-features) which let you group fleet resources for fine-grained management.\n* `CloudDeployTarget`\n  + Manage [Cloud Deploy targets](https://cloud.google.com/deploy/docs/targets) which define where your application is deployed.",
+        "summary": {
+          "title": "New Alpha Resources for Fleet Management",
+          "summary": "Manage GKE Hub Scopes for fine-grained fleet resource grouping and Cloud Deploy Targets for application deployment locations. These new alpha resources offer enhanced control over your cloud infrastructure."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`CertificateManagerCertificate`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagercertificate)\n  + Added `status.observedState` field, which includes `managed.state`, `managed.authorizationAttemptInfo`, and `managed.provisioningIssue`. This enables tracking the current state of the certificate even when `state-into-spec: absent` is used.\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n  + Added `spec.ipAllocationPolicy.additionalIpRangesConfigs` field.\n* [`ContainerNodePool`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool)\n  + Added `spec.networkConfig.subnetworkRef` field.",
+        "summary": {
+          "title": "New fields for Certificates, Clusters, and Node Pools",
+          "summary": "We've added new fields to Certificate Manager Certificates, Container Clusters, and Container Node Pools. These updates provide enhanced visibility into certificate status, IP allocation policies, and network configurations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Improved resource creation logging for both Direct and DCL-based controllers by including structured diffs.",
+        "summary": {
+          "title": "Enhanced resource creation logging",
+          "summary": "We've improved resource creation logging for Direct and DCL-based controllers. This update includes structured diffs, providing more detailed information about changes during resource creation."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\nAdded support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the `cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:\n\n* [`BigqueryTable`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerytable)\n  + Fixed a permanent difference in the `policyTag` field when using the direct controller, ensuring safer upgrades.\n* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)\n  + Added detailed diff reporting for the `userLabels` field.\n* [`DataplexLake`](https://cloud.google.com/config-connector/docs/reference/resource-docs/dataplex/dataplexlake)\n  + Added structured diff reporting to improve visibility into resource changes.",
+        "summary": {
+          "title": "Reconciliation improvements",
+          "summary": "Config Connector now supports direct reconciliation for more resources, including BigQuery tables, SQL instances, and Dataplex lakes. This enhancement improves visibility into resource changes and ensures safer upgrades by fixing permanent differences and adding detailed diff reporting."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n  + Fixed a permanent difference in the `databaseEncryption.state` field and added support for the `ALL_OBJECTS_ENCRYPTION_ENABLED` value.\n* [`MemorystoreInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/memorystore/memorystoreinstance)\n  + Updated the controller to use change cookies, improving reconciliation stability and correctness.",
+        "summary": {
+          "title": "Fixed database encryption and reconciliation stability",
+          "summary": "Resolved an issue with database encryption states for Container Clusters and enhanced reconciliation stability and correctness for Memorystore Instances."
+        }
+      }
+    ],
     "2026-05-05": [
       {
         "kind": "Announcement",
@@ -16,6 +66,14 @@
         "summary": {
           "title": "New Alpha Resources Available",
           "summary": "We are introducing two new alpha resources: NetworkServicesLBRouteExtension for managing load balancing route extensions and ParameterManagerParameterVersion for handling regional parameters. These additions aim to provide more flexibility and control over your network services and parameter management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster) [#7336](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336)\n  + Added `spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount` field to support GKE Data Cache.\n* [`ContainerNodePool`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool) [#7336](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336)\n  + Added `spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount` field to support GKE Data Cache.",
+        "summary": {
+          "title": "Support for GKE Data Cache added",
+          "summary": "The latest update introduces support for GKE Data Cache by adding the `spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount` field to both ContainerCluster and ContainerNodePool resources. This enhancement allows for improved performance and efficiency in managing ephemeral storage for your Kubernetes nodes."
         }
       },
       {

@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-05-19
+
+### Feature
+
+You can use the
+[`AI.PARSE_DOCUMENT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-parse-document)
+to parse documents such as PDFs. This function uses the Document AI
+[layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) to extract structured
+information, including text chunks and page boundaries. This
+feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-05-18
 
 ### Feature

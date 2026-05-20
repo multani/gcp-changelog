@@ -1,5 +1,28 @@
 # Virtual Private Cloud
 
+## 2026-05-19
+
+### Feature
+
+The [December 2023 release notes](https://docs.cloud.google.com/vpc/docs/release-notes#December_19_2023)
+include a release note for the **General Availability** of
+Organization Policy Service custom constraints that provide more granular
+control over specific fields for some VPC resources.
+
+This feature has been available in **General Availability** since December
+19, 2023, but the release note was previously omitted.
+
+For more information, see
+[Manage VPC resources by using custom organization policies](https://docs.cloud.google.com/vpc/docs/custom-constraints).
+
+### Feature
+
+You can cancel pending deletion requests for VPC Network Peering connections
+that are in consensus mode. This feature is available in **Preview**.
+For more information, see
+[Cancel a deletion request](https://docs.cloud.google.com/vpc/docs/using-vpc-peering#cancel-delete).
+
+---
 ## 2026-05-06
 
 ### Feature

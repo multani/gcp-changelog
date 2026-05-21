@@ -1,5 +1,13 @@
 # Backup and DR
 
+## 2026-05-18
+
+### Feature
+
+You can now use Protection Summary to identify and fix data protection gaps at
+both Folder and Org levels.
+
+---
 ## 2026-05-15
 
 ### Feature
@@ -9,6 +17,54 @@ for Cloud SQL enhanced backups. This allows you to protect your
 Cloud SQL backups using the same KMS key as the source instance, with
 decoupled IAM permissions anchored to the Backup and DR Service service
 agent.
+
+---
+## 2026-05-14
+
+### Feature
+
+These features are now available:
+
+* Replication Optimization: Introduced a deletion replication optimization for
+  AGM-BA to reduce operational blockages and improve platform performance.
+* Expanded Linux Support: Qualified Linux CBT support has been added for
+  specific kernel versions of RHEL 8
+  (ranging from 4.18.0-477.128.1 to 4.18.0-553.117.1) and
+  RHEL 9 (ranging from 5.14.0-284.156.1 to 5.14.0-611.47.1),
+  including dedicated support for the SAP OS family, notably
+  RHEL 9.6 for SAP kernels from 5.14.0-570.64.1 to 5.14.0-570.106.1.
+
+SAP HANA Restore Enhancements: Enhanced restore functionality to support
+alternate host restores and optimized subsequent backups to prevent full
+backups after an alternate host restore.
+
+### Security
+
+Tomcat Vulnerability Mitigation: Upgraded Apache Tomcat to version 9.0.117 to
+address several high-severity vulnerabilities, including CVE-2026-24734,
+CVE-2026-34487, and CVE-2026-29146.
+
+### Fixed
+
+These issues have been resolved:
+
+* vCenter Connectivity: Resolved a critical regression where similarities in IP
+  prefixes caused the Backup Appliance (BA) to incorrectly identify ESX host
+  alternate IPs as potential hostnames for vCenter, leading to server-side
+  certificate validation failures.
+* SAP HANA Backups: Fixed a hang in the dd command during SAP HANA Backint
+  backups by implementing a utility to detect and clean non-printable or binary
+  characters from catalog files.
+* Resource Cleanup: Improved the reliability of the appliance by ensuring
+  loopback devices are properly removed following failed Onvault NFS restore jobs.
+* Restore Stability: Addressed intermittent "Image not found" errors (Error 1263)
+  during restore operations and implemented an early exit in omdtool to prevent
+  gRPC cleanup crashes.
+* Backup Management: Corrected an issue where empty vdiskname entries in the
+  appvdisk table blocked automated cleanup for PDSnap backups and converted the
+  vmtaskcompletiontimeout into a dynamic parameter for better flexibility.
+* Reporting and UI: Enhanced reporting by adding pool names to ZFS listings and
+  removed legacy agent download links from the index-post.html file.
 
 ---
 ## 2026-04-10

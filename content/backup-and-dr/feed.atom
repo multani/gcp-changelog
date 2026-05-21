@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Backup and DR</title>
   <subtitle>Changelog for Google Cloud product: Backup and DR</subtitle>
-  <updated>2026-05-15T00:00:00+00:00</updated>
+  <updated>2026-05-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:backup-and-dr</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/backup-and-dr/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-05-18:feature:0</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use Protection Summary to identify and fix data protection gaps at
+both Folder and Org levels.</p>]]></content>
+    <summary>You can now use Protection Summary to identify and fix data protection gaps at both Folder and Org levels. This enhancement provides greater visibility and control over your data security posture.</summary>
+    <title>Feature: Identify Data Protection Gaps</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -19,6 +31,73 @@ decoupled IAM permissions anchored to the Backup and DR Service service
 agent.</p>]]></content>
     <summary>Backup and DR Service now supports customer-managed encryption keys (CMEK) for Cloud SQL enhanced backups. Protect your Cloud SQL backups with the same KMS key as your source instance, with decoupled IAM permissions for enhanced security and control.</summary>
     <title>Feature: Customer-Managed Encryption Keys for Cloud SQL Backups</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-05-14:feature:0</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>These features are now available:</p>
+<ul>
+<li>Replication Optimization: Introduced a deletion replication optimization for
+  AGM-BA to reduce operational blockages and improve platform performance.</li>
+<li>Expanded Linux Support: Qualified Linux CBT support has been added for
+  specific kernel versions of RHEL 8
+  (ranging from 4.18.0-477.128.1 to 4.18.0-553.117.1) and
+  RHEL 9 (ranging from 5.14.0-284.156.1 to 5.14.0-611.47.1),
+  including dedicated support for the SAP OS family, notably
+  RHEL 9.6 for SAP kernels from 5.14.0-570.64.1 to 5.14.0-570.106.1.</li>
+</ul>
+<p>SAP HANA Restore Enhancements: Enhanced restore functionality to support
+alternate host restores and optimized subsequent backups to prevent full
+backups after an alternate host restore.</p>]]></content>
+    <summary>New features include replication optimization for improved performance and expanded Linux support for RHEL 8 and 9. Additionally, SAP HANA restore functionality has been enhanced for greater flexibility and efficiency.</summary>
+    <title>Feature: Platform Enhancements Now Live</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-05-14:security:1</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Tomcat Vulnerability Mitigation: Upgraded Apache Tomcat to version 9.0.117 to
+address several high-severity vulnerabilities, including CVE-2026-24734,
+CVE-2026-34487, and CVE-2026-29146.</p>]]></content>
+    <summary>We have upgraded Apache Tomcat to version 9.0.117 to resolve critical security vulnerabilities. This update addresses several high-severity issues, enhancing the overall security of our systems.</summary>
+    <title>Security: Security Update: Tomcat Vulnerabilities Addressed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-05-14:fixed:2</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>These issues have been resolved:</p>
+<ul>
+<li>vCenter Connectivity: Resolved a critical regression where similarities in IP
+  prefixes caused the Backup Appliance (BA) to incorrectly identify ESX host
+  alternate IPs as potential hostnames for vCenter, leading to server-side
+  certificate validation failures.</li>
+<li>SAP HANA Backups: Fixed a hang in the dd command during SAP HANA Backint
+  backups by implementing a utility to detect and clean non-printable or binary
+  characters from catalog files.</li>
+<li>Resource Cleanup: Improved the reliability of the appliance by ensuring
+  loopback devices are properly removed following failed Onvault NFS restore jobs.</li>
+<li>Restore Stability: Addressed intermittent "Image not found" errors (Error 1263)
+  during restore operations and implemented an early exit in omdtool to prevent
+  gRPC cleanup crashes.</li>
+<li>Backup Management: Corrected an issue where empty vdiskname entries in the
+  appvdisk table blocked automated cleanup for PDSnap backups and converted the
+  vmtaskcompletiontimeout into a dynamic parameter for better flexibility.</li>
+<li>Reporting and UI: Enhanced reporting by adding pool names to ZFS listings and
+  removed legacy agent download links from the index-post.html file.</li>
+</ul>]]></content>
+    <summary>Several critical issues affecting vCenter connectivity, SAP HANA backups, resource cleanup, restore stability, backup management, and reporting have been resolved. These updates ensure a more reliable and efficient backup and restore experience.</summary>
+    <title>Fixed: Resolved Backup and Restore Issues</title>
   </entry>
   <entry>
     <author>

@@ -1,6 +1,16 @@
 {
   "name": "Backup and DR",
   "entries": {
+    "2026-05-18": [
+      {
+        "kind": "Feature",
+        "content": "You can now use Protection Summary to identify and fix data protection gaps at\nboth Folder and Org levels.",
+        "summary": {
+          "title": "Identify Data Protection Gaps",
+          "summary": "You can now use Protection Summary to identify and fix data protection gaps at both Folder and Org levels. This enhancement provides greater visibility and control over your data security posture."
+        }
+      }
+    ],
     "2026-05-15": [
       {
         "kind": "Feature",
@@ -8,6 +18,32 @@
         "summary": {
           "title": "Customer-Managed Encryption Keys for Cloud SQL Backups",
           "summary": "Backup and DR Service now supports customer-managed encryption keys (CMEK) for Cloud SQL enhanced backups. Protect your Cloud SQL backups with the same KMS key as your source instance, with decoupled IAM permissions for enhanced security and control."
+        }
+      }
+    ],
+    "2026-05-14": [
+      {
+        "kind": "Feature",
+        "content": "These features are now available:\n\n* Replication Optimization: Introduced a deletion replication optimization for\n  AGM-BA to reduce operational blockages and improve platform performance.\n* Expanded Linux Support: Qualified Linux CBT support has been added for\n  specific kernel versions of RHEL 8\n  (ranging from 4.18.0-477.128.1 to 4.18.0-553.117.1) and\n  RHEL 9 (ranging from 5.14.0-284.156.1 to 5.14.0-611.47.1),\n  including dedicated support for the SAP OS family, notably\n  RHEL 9.6 for SAP kernels from 5.14.0-570.64.1 to 5.14.0-570.106.1.\n\nSAP HANA Restore Enhancements: Enhanced restore functionality to support\nalternate host restores and optimized subsequent backups to prevent full\nbackups after an alternate host restore.",
+        "summary": {
+          "title": "Platform Enhancements Now Live",
+          "summary": "New features include replication optimization for improved performance and expanded Linux support for RHEL 8 and 9. Additionally, SAP HANA restore functionality has been enhanced for greater flexibility and efficiency."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Tomcat Vulnerability Mitigation: Upgraded Apache Tomcat to version 9.0.117 to\naddress several high-severity vulnerabilities, including CVE-2026-24734,\nCVE-2026-34487, and CVE-2026-29146.",
+        "summary": {
+          "title": "Security Update: Tomcat Vulnerabilities Addressed",
+          "summary": "We have upgraded Apache Tomcat to version 9.0.117 to resolve critical security vulnerabilities. This update addresses several high-severity issues, enhancing the overall security of our systems."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "These issues have been resolved:\n\n* vCenter Connectivity: Resolved a critical regression where similarities in IP\n  prefixes caused the Backup Appliance (BA) to incorrectly identify ESX host\n  alternate IPs as potential hostnames for vCenter, leading to server-side\n  certificate validation failures.\n* SAP HANA Backups: Fixed a hang in the dd command during SAP HANA Backint\n  backups by implementing a utility to detect and clean non-printable or binary\n  characters from catalog files.\n* Resource Cleanup: Improved the reliability of the appliance by ensuring\n  loopback devices are properly removed following failed Onvault NFS restore jobs.\n* Restore Stability: Addressed intermittent \"Image not found\" errors (Error 1263)\n  during restore operations and implemented an early exit in omdtool to prevent\n  gRPC cleanup crashes.\n* Backup Management: Corrected an issue where empty vdiskname entries in the\n  appvdisk table blocked automated cleanup for PDSnap backups and converted the\n  vmtaskcompletiontimeout into a dynamic parameter for better flexibility.\n* Reporting and UI: Enhanced reporting by adding pool names to ZFS listings and\n  removed legacy agent download links from the index-post.html file.",
+        "summary": {
+          "title": "Resolved Backup and Restore Issues",
+          "summary": "Several critical issues affecting vCenter connectivity, SAP HANA backups, resource cleanup, restore stability, backup management, and reporting have been resolved. These updates ensure a more reliable and efficient backup and restore experience."
         }
       }
     ],

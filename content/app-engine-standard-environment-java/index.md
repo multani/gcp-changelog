@@ -1,5 +1,12 @@
 # App Engine standard environment Java
 
+## 2026-05-21
+
+### Feature
+
+The App Engine Migration hub lets you migrate services in the App Engine standard environment to Cloud Run, and also provides cost-saving recommendations. For more information, see [Deploy an App Engine app in the standard environment to Cloud Run](https://docs.cloud.google.com/appengine/migration-center/run/migrate-app-engine-standard-to-run) ([Preview](https://cloud.google.com/products?e=48754805#product-launch-stages)).
+
+---
 ## 2026-03-02
 
 ### Feature

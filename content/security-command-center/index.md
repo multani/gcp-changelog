@@ -1,5 +1,13 @@
 # Security Command Center
 
+## 2026-05-21
+
+### Change
+
+[Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) detects
+toxic combinations that are related to Cloud Build resources.
+
+---
 ## 2026-05-19
 
 ### Change

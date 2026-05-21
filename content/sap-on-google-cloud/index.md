@@ -1,5 +1,20 @@
 # SAP on Google Cloud
 
+## 2026-05-21
+
+### Announcement
+
+**Google Cloud's Agent for SAP version 3.14**
+
+Version 3.14 of Google Cloud's Agent for SAP is generally available (GA). This
+version introduces support for using a customer-managed encryption key (CMEK) to
+encrypt disks during disk snapshot based SAP HANA recovery, some logging and
+stability enhancements, and minor bug fixes.
+
+For more information, see
+[What's new with Google Cloud's Agent for SAP](https://docs.cloud.google.com/sap/docs/agent-for-sap/whats-new).
+
+---
 ## 2026-05-12
 
 ### Announcement

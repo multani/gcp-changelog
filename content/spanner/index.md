@@ -1,5 +1,15 @@
 # Spanner
 
+## 2026-05-15
+
+### Feature
+
+Spanner Studio supports query parameters, which let you bind
+literal values to a templated SQL statement at query time in the
+Google Cloud console.
+For more information, see [query parameters](https://docs.cloud.google.com/spanner/docs/sql-best-practices#query-parameters).
+
+---
 ## 2026-05-14
 
 ### Announcement

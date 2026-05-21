@@ -95,6 +95,27 @@ New parser documentation is available to help you ingest and normalize logs from
 * [Collect Windows Network Policy Server logs](https://clouddocs.devsite.corp.google.com/chronicle/docs/ingestion/default-parsers/windows-net-policy-server)
 
 ---
+## 2026-05-12
+
+### Change
+
+**Time range selection for searches**
+
+Google SecOps has now added relative and absolute time range options to define
+the required time period for retrieving search results.
+
+* **Relative time range**: Set a search window looking backward from the current time
+  using custom intervals.
+* **Absolute time range**: Define fixed start and end times using calendar presets,
+  exact date and time selections, or event-based timeframes.
+
+For more information, see [Set the date and time range](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#setDateTime).
+
+**Note:** This change follows a phased rollout from from **May 12, 2026**, to **May 18, 2026**.
+Reach out to support if you do not see the new limits applied to your environment
+after **May 18, 2026**.
+
+---
 ## 2026-05-05
 
 ### Change

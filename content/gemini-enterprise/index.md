@@ -1,5 +1,17 @@
 # Gemini Enterprise
 
+## 2026-05-20
+
+### Deprecated
+
+**NotebookLM Enterprise: The Podcast API is deprecated**
+
+The [Podcast API](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/podcast-api) is
+deprecated. Google isn't allowlisting new customers.
+
+This feature was available as GA with allowlist.
+
+---
 ## 2026-05-19
 
 ### Feature

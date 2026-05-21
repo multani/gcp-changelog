@@ -1,5 +1,13 @@
 # Cloud Workstations
 
+## 2026-05-10
+
+### Announcement
+
+The base VM was upgraded to use [Container-Optimized OS](https://docs.cloud.google.com/container-optimized-os/docs/concepts/features-and-benefits)
+[125 LTS](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m125).
+
+---
 ## 2026-05-08
 
 ### Feature

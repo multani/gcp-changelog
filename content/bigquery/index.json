@@ -4,10 +4,26 @@
     "2026-05-20": [
       {
         "kind": "Announcement",
-        "content": "BigQuery can re-execute instructions (queries) to try to proactively detect performance, correctness, or functional regressions.\nThese re-executions will have no side effects and will happen with no additional cost or resource consumption.\nData access logs may show 'bigquery-adminbot@system.gserviceaccount.com' when BigQuery re-executes an instruction.",
+        "content": "BigQuery can re-execute instructions (queries) to try to proactively detect performance, correctness, or functional regressions.\nThese re-executions will have no side effects and will happen with no additional cost or resource consumption.\nData access logs may show `bigquery-adminbot@system.gserviceaccount.com` when BigQuery re-executes an instruction.",
         "summary": {
-          "title": "BigQuery proactively detects regressions",
-          "summary": "BigQuery now re-executes queries to automatically find performance, correctness, or functional regressions. These checks are cost-free, have no side effects, and aim to ensure data integrity and optimal performance. You might see 'bigquery-adminbot@system.gserviceaccount.com' in data access logs during these automated checks."
+          "title": "BigQuery proactive query re-execution",
+          "summary": "BigQuery now proactively re-executes queries to detect regressions in performance, correctness, or functionality. This process has no side effects, additional cost, or resource consumption. You may see `bigquery-adminbot@system.gserviceaccount.com` in data access logs during these re-executions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Python UDFs](https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python) are now\n[Generally Available](https://cloud.google.com/products/#product-launch-stages)\n(GA).\n\nYou can use Python UDFs to implement a scalar function in Python and use it in a\nSQL query. Python UDFs let you install third-party libraries from the\n[Python Package Index (PyPI)](https://pypi.org/) and let you access external\nservices using a [Cloud resource connection](https://docs.cloud.google.com/bigquery/docs/create-cloud-resource-connection).",
+        "summary": {
+          "title": "Python UDFs Now Generally Available",
+          "summary": "BigQuery's Python UDFs have reached General Availability, allowing you to integrate custom Python logic directly into your SQL queries. This feature supports third-party libraries from PyPI and enables connections to external services, enhancing your data processing capabilities."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the\n[`AI.AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-agg)\nto semantically aggregate unstructured input data based on natural language\ninstructions. This feature is in\n[Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Semantic data aggregation with AI.AGG",
+          "summary": "Introducing the AI.AGG function for semantically aggregating unstructured data using natural language. This new feature, currently in Preview, allows for more intuitive data analysis based on your instructions."
         }
       }
     ],

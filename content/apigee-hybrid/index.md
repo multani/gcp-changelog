@@ -45,6 +45,18 @@ On May 13, 2026 we released an updated version of the Apigee hybrid software, v1
 
 **Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
 
+### Feature
+
+**Basic Auth credential support for forward proxies**
+
+Starting in version v1.16.2, Apigee hybrid runtime components can accept credentials for an upstream forward proxy that enforces HTTP Basic Auth. You can now configure a Basic Auth username and password for the forward proxy in your overrides.yaml. This resolves known issue tracked in b/499322601. See [Configure Apigee hybrid to use a forward proxy](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/forward-proxy).
+
+### Feature
+
+**Sidecar authentication for Workload Identity Federation on AKS and EKS**
+
+Starting in version v1.16.2, you can now use a sidecar along with Workload Identity Federation on AKS and EKS to mount security tokens from your preferred identity provider (IDP) for service account authentication. This method is an alternative to using Kubernetes Projected Service Account Tokens, and is useful when you need to integrate with a custom Identity Provider. See [Use sidecar authentication for Workload Identity Federation on AKS and EKS](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/use-sidecar-for-wif).
+
 ### Fixed
 
 #### Fixed in this release
@@ -56,12 +68,6 @@ On May 13, 2026 we released an updated version of the Apigee hybrid software, v1
 | **499223890** | **Fixed an issue where the runtime could not handle HTTP proxy passwords containing special characters in Apigee hybrid 1.16.0-hotfix-1 configurations.** |
 | **500861814** | **Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.** |
 | **510438578** | **Fixed an ingestion-blocking issue with `apigee-stackdriver-prometheus-sidecar` in Apigee hybrid 1.16.1.** |
-
-### Feature
-
-**Sidecar authentication for Workload Identity Federation on AKS and EKS**
-
-Starting in version v1.16.2, you can now use a sidecar along with Workload Identity Federation on AKS and EKS to mount security tokens from your preferred identity provider (IDP) for service account authentication. This method is an alternative to using Kubernetes Projected Service Account Tokens, and is useful when you need to integrate with a custom Identity Provider. See [Use sidecar authentication for Workload Identity Federation on AKS and EKS](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/use-sidecar-for-wif).
 
 ### Security
 

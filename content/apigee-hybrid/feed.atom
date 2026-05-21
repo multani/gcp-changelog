@@ -71,19 +71,13 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-13:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-13:feature:1</id>
     <published>2026-05-13T00:00:00+00:00</published>
     <updated>2026-05-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
-<p>| Bug ID | Description |
-| --- | --- |
-| <strong>485738013</strong> | <strong>Fixed an issue where API products with <code>LLMTokenQuota</code> operations were not enforcing model-based access restrictions, allowing requests to models not listed in the product to bypass the operations check.</strong> |
-| <strong>479288727</strong> | <strong>Fixed an issue where the Apigee UI and API reported a 10+ minute delay in deployment status after performing a proxy deployment.</strong> |
-| <strong>499223890</strong> | <strong>Fixed an issue where the runtime could not handle HTTP proxy passwords containing special characters in Apigee hybrid 1.16.0-hotfix-1 configurations.</strong> |
-| <strong>500861814</strong> | <strong>Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.</strong> |
-| <strong>510438578</strong> | <strong>Fixed an ingestion-blocking issue with <code>apigee-stackdriver-prometheus-sidecar</code> in Apigee hybrid 1.16.1.</strong> |</p>]]></content>
-    <summary>This release addresses several critical issues, including improper access restrictions for API products, delayed deployment status reporting in the UI and API, and problems handling special characters in HTTP proxy passwords. Additionally, it resolves excessive Message Processor scaling behavior and an ingestion-blocking issue with the Prometheus sidecar in hybrid environments.</summary>
-    <title>Fixed: Resolved API Access and Deployment Issues</title>
+    <content type="html"><![CDATA[<p><strong>Basic Auth credential support for forward proxies</strong></p>
+<p>Starting in version v1.16.2, Apigee hybrid runtime components can accept credentials for an upstream forward proxy that enforces HTTP Basic Auth. You can now configure a Basic Auth username and password for the forward proxy in your overrides.yaml. This resolves known issue tracked in b/499322601. See <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/forward-proxy">Configure Apigee hybrid to use a forward proxy</a>.</p>]]></content>
+    <summary>Apigee hybrid runtime now supports Basic Authentication credentials for upstream forward proxies, enhancing security and connectivity. This feature allows configuration of username and password in overrides.yaml for proxies requiring HTTP Basic Auth.</summary>
+    <title>Feature: Forward Proxy Basic Auth Support</title>
   </entry>
   <entry>
     <author>
@@ -101,7 +95,25 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-13:security:3</id>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-13:fixed:3</id>
+    <published>2026-05-13T00:00:00+00:00</published>
+    <updated>2026-05-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>485738013</strong> | <strong>Fixed an issue where API products with <code>LLMTokenQuota</code> operations were not enforcing model-based access restrictions, allowing requests to models not listed in the product to bypass the operations check.</strong> |
+| <strong>479288727</strong> | <strong>Fixed an issue where the Apigee UI and API reported a 10+ minute delay in deployment status after performing a proxy deployment.</strong> |
+| <strong>499223890</strong> | <strong>Fixed an issue where the runtime could not handle HTTP proxy passwords containing special characters in Apigee hybrid 1.16.0-hotfix-1 configurations.</strong> |
+| <strong>500861814</strong> | <strong>Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.</strong> |
+| <strong>510438578</strong> | <strong>Fixed an ingestion-blocking issue with <code>apigee-stackdriver-prometheus-sidecar</code> in Apigee hybrid 1.16.1.</strong> |</p>]]></content>
+    <summary>This release addresses several critical issues, including improper access restrictions for API products, delayed deployment status reporting in the UI and API, and problems handling special characters in HTTP proxy passwords. Additionally, it resolves excessive Message Processor scaling behavior and an ingestion-blocking issue with the Prometheus sidecar in hybrid environments.</summary>
+    <title>Fixed: Resolved API Access and Deployment Issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-05-13:security:4</id>
     <published>2026-05-13T00:00:00+00:00</published>
     <updated>2026-05-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Various security and CVE fixes are included in this release.</p>]]></content>

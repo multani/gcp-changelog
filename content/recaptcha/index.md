@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2026-05-20
+
+### Change
+
+reCAPTCHA Mobile SDK v18.9.1 is available for iOS. This version
+fixes symbol collisions with libraries using Objective-C protos.
+
+---
 ## 2026-05-13
 
 ### Change

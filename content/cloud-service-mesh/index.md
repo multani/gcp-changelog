@@ -4,6 +4,17 @@
 
 ### Announcement
 
+Managed Cloud Service Mesh using the `TRAFFIC_DIRECTOR` implementation in the
+stable channel now supports a limited implementation of the `EnvoyFilter` API.
+To learn about the supported fields, extensions, and how to use `EnvoyFilter`
+for features like local rate limiting see
+[Data plane extensibility with `EnvoyFilter`](https://docs.cloud.google.com/service-mesh/docs/data-plane-extensibility).
+
+To troubleshoot any issue while configuring, see
+[Resolving data plane extensibility issues](https://docs.cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-data-plane-extensibility).
+
+### Announcement
+
 Cloud Service Mesh can now report a status code to indicate whether an Istio API
 is accepted or rejected. You can view the status code on the resource and mesh
 state. For more information see

@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-05-20
+
+### Announcement
+
+BigQuery can re-execute instructions (queries) to try to proactively detect performance, correctness, or functional regressions.
+These re-executions will have no side effects and will happen with no additional cost or resource consumption.
+Data access logs may show 'bigquery-adminbot@system.gserviceaccount.com' when BigQuery re-executes an instruction.
+
+---
 ## 2026-05-19
 
 ### Feature

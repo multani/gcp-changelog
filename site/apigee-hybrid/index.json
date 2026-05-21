@@ -37,11 +37,11 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "#### Fixed in this release\n\n| Bug ID | Description |\n| --- | --- |\n| **485738013** | **Fixed an issue where API products with `LLMTokenQuota` operations were not enforcing model-based access restrictions, allowing requests to models not listed in the product to bypass the operations check.** |\n| **479288727** | **Fixed an issue where the Apigee UI and API reported a 10+ minute delay in deployment status after performing a proxy deployment.** |\n| **499223890** | **Fixed an issue where the runtime could not handle HTTP proxy passwords containing special characters in Apigee hybrid 1.16.0-hotfix-1 configurations.** |\n| **500861814** | **Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.** |\n| **510438578** | **Fixed an ingestion-blocking issue with `apigee-stackdriver-prometheus-sidecar` in Apigee hybrid 1.16.1.** |",
+        "kind": "Feature",
+        "content": "**Basic Auth credential support for forward proxies**\n\nStarting in version v1.16.2, Apigee hybrid runtime components can accept credentials for an upstream forward proxy that enforces HTTP Basic Auth. You can now configure a Basic Auth username and password for the forward proxy in your overrides.yaml. This resolves known issue tracked in b/499322601. See [Configure Apigee hybrid to use a forward proxy](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/forward-proxy).",
         "summary": {
-          "title": "Resolved API Access and Deployment Issues",
-          "summary": "This release addresses several critical issues, including improper access restrictions for API products, delayed deployment status reporting in the UI and API, and problems handling special characters in HTTP proxy passwords. Additionally, it resolves excessive Message Processor scaling behavior and an ingestion-blocking issue with the Prometheus sidecar in hybrid environments."
+          "title": "Forward Proxy Basic Auth Support",
+          "summary": "Apigee hybrid runtime now supports Basic Authentication credentials for upstream forward proxies, enhancing security and connectivity. This feature allows configuration of username and password in overrides.yaml for proxies requiring HTTP Basic Auth."
         }
       },
       {
@@ -50,6 +50,14 @@
         "summary": {
           "title": "Sidecar Authentication for Workload Identity Federation",
           "summary": "A new sidecar feature enables Workload Identity Federation on AKS and EKS, allowing service accounts to authenticate with security tokens from custom identity providers. This provides an alternative to Kubernetes Projected Service Account Tokens for enhanced integration flexibility."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "#### Fixed in this release\n\n| Bug ID | Description |\n| --- | --- |\n| **485738013** | **Fixed an issue where API products with `LLMTokenQuota` operations were not enforcing model-based access restrictions, allowing requests to models not listed in the product to bypass the operations check.** |\n| **479288727** | **Fixed an issue where the Apigee UI and API reported a 10+ minute delay in deployment status after performing a proxy deployment.** |\n| **499223890** | **Fixed an issue where the runtime could not handle HTTP proxy passwords containing special characters in Apigee hybrid 1.16.0-hotfix-1 configurations.** |\n| **500861814** | **Fixed an issue that caused excessive Message Processor (MP) upscaling and failure to downscale.** |\n| **510438578** | **Fixed an ingestion-blocking issue with `apigee-stackdriver-prometheus-sidecar` in Apigee hybrid 1.16.1.** |",
+        "summary": {
+          "title": "Resolved API Access and Deployment Issues",
+          "summary": "This release addresses several critical issues, including improper access restrictions for API products, delayed deployment status reporting in the UI and API, and problems handling special characters in HTTP proxy passwords. Additionally, it resolves excessive Message Processor scaling behavior and an ingestion-blocking issue with the Prometheus sidecar in hybrid environments."
         }
       },
       {

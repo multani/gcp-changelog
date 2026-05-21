@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2026-05-20
+
+### Announcement
+
+All 1-year [committed use discounts (CUDs)](https://docs.cloud.google.com/docs/cuds) for Google Cloud VMware Engine `ve1` SKUs are now End-of-Sale across the europe-west2 (London, UK) region. You can continue to use `ve1` nodes with on-demand pricing. This change doesn't affect existing CUDs. You can also use `ve2` nodes, including `ve2` CUDs.
+
+---
 ## 2026-05-15
 
 ### Announcement

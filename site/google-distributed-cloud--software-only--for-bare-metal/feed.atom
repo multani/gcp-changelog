@@ -2,9 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-05-18T00:00:00+00:00</updated>
+  <updated>2026-05-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-05-21:announcement:0</id>
+    <published>2026-05-21T00:00:00+00:00</published>
+    <updated>2026-05-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.35.100-gke.72 is now available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.35.100-gke.72 runs on Kubernetes v1.35.3-gke.400.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for bare metal (1.35.100-gke.72) is now ready for download. This release runs on Kubernetes v1.35.3-gke.400. Please note that it may take 7-14 days for this version to be available through GKE On-Prem API clients for new installations or upgrades. Ensure your third-party storage vendor is qualified for this release by checking the Google Distributed Cloud-ready storage partners document.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-05-21:fixed:1</id>
+    <published>2026-05-21T00:00:00+00:00</published>
+    <updated>2026-05-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.100-gke.72:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+</ul>]]></content>
+    <summary>Version 1.35.100-gke.72 includes fixes for reported vulnerabilities. This update addresses security concerns to improve the stability and safety of your system.</summary>
+    <title>Fixed: Security updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -168,11 +202,11 @@ qualification for this release of Google Distributed Cloud for bare metal.</p>]]
   this feature, you must set <code>preview.baremetal.cluster.gke.io/traffic-selector:</code>
   to <code>enable</code> in your cluster configuration and manage traffic selection using
   the <code>EgressDSCP</code> and <code>TrafficSelector</code> custom resources. For more information,
-  see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/egress-dscp-tagging.md">Configure EgressDSCP tagging</a>.
+  see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/configure-egress-dscp-tagging">Configure EgressDSCP tagging</a>.
 * <code>bmctl</code> prints the Operation ID and OperationType to the console after
   cluster installation and upgrade operations.</p>]]></content>
-    <summary>This release introduces an update to Kubernetes 1.35, mandating cgroupsv2 and upgrading the container runtime. It also adds a periodic health check for secret and ConfigMap mounts, upgrades Ansible to version 2.18, and introduces support for registry mirrors and EgressDSCP tagging in preview. Note that Python 3.9 is now required for Ansible 2.18.</summary>
-    <title>Announcement: Platform Update and New Features in Release 1.35.0-gke.525</title>
+    <summary>The latest release, 1.35.0-gke.525, upgrades the platform to Kubernetes 1.35 and introduces several new features and improvements. Key updates include mandatory cgroupsv2 support, enhanced secret and ConfigMap mount health checks, and new capabilities for EgressDSCP tagging and registry mirror configuration. This release also updates the container runtime and Ansible version, requiring Python 3.9 on target nodes.</summary>
+    <title>Announcement: Kubernetes 1.35.0-gke.525 Release Notes</title>
   </entry>
   <entry>
     <author>

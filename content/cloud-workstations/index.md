@@ -1,5 +1,13 @@
 # Cloud Workstations
 
+## 2026-05-18
+
+### Feature
+
+Cloud Workstations supports resizing workstations' persistent directories.
+For more information, see [Resize workstation persistent directories](https://docs.cloud.google.com/workstations/docs/resize-workstation-persistent-directories).
+
+---
 ## 2026-05-10
 
 ### Announcement

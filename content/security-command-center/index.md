@@ -2,6 +2,14 @@
 
 ## 2026-05-21
 
+### Feature
+
+[Artifact guard](https://docs.cloud.google.com/security-command-center/docs/artifact-guard-overview) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages)
+to the Security Command Center Enterprise and Premium tiers. Artifact guard is a
+service that helps you prevent the deployment of vulnerable packages throughout the
+software development lifecycle.
+
 ### Change
 
 [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) detects

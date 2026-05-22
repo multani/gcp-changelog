@@ -1,5 +1,28 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-05-21
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.35.100-gke.72 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.35.100-gke.72 runs on Kubernetes v1.35.3-gke.400.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.35.100-gke.72:
+
+* Fixed an issue that prevented administrators from running cluster health checks and gathering diagnostics on non-advanced user clusters managed by an advanced admin cluster. You can successfully use `gkectl diagnose` on user clusters that are awaiting migration to advanced mode.
+
+---
 ## 2026-05-18
 
 ### Announcement

@@ -1,5 +1,15 @@
 # Config Controller
 
+## 2026-05-21
+
+### Change
+
+Config Controller now uses the following versions of its included products:
+
+* Config Connector v1.148.0-cc.3, [release notes](https://docs.cloud.google.com/config-connector/docs/release-notes#April_22_2026)
+* Config Sync v1.23.3, [release notes](https://docs.cloud.google.com/kubernetes-engine/config-sync/docs/release-notes#March_26_2026)
+
+---
 ## 2026-03-06
 
 ### Change

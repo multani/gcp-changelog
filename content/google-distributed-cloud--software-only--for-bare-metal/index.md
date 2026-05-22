@@ -1,5 +1,29 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-05-21
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.35.100-gke.72 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.35.100-gke.72 runs on Kubernetes v1.35.3-gke.400.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.35.100-gke.72:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+
+---
 ## 2026-05-18
 
 ### Announcement
@@ -127,7 +151,7 @@ The following features were added in 1.35.0-gke.525:
   this feature, you must set `preview.baremetal.cluster.gke.io/traffic-selector:`
   to `enable` in your cluster configuration and manage traffic selection using
   the `EgressDSCP` and `TrafficSelector` custom resources. For more information,
-  see [Configure EgressDSCP tagging](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/egress-dscp-tagging.md).
+  see [Configure EgressDSCP tagging](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/configure-egress-dscp-tagging).
 * `bmctl` prints the Operation ID and OperationType to the console after
   cluster installation and upgrade operations.
 

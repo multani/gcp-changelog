@@ -2,9 +2,72 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-05-19T00:00:00+00:00</updated>
+  <updated>2026-05-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-05-21:fixed:0</id>
+    <published>2026-05-21T00:00:00+00:00</published>
+    <updated>2026-05-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where URLs copied from Microsoft Word into SMS chat sessions
+  were incorrectly formatted, causing links to merge with adjacent text.</li>
+<li>Fixed an issue with Alvaria campaigns where the dialer didn't correctly use
+  the country code from the <strong>@COUNTRYCODE</strong> field when selecting the contact
+  number to dial.</li>
+<li>Fixed an issue where live transcription didn't resume after an agent enabled
+  and then disabled redaction during IVR payment card collection.</li>
+<li>Fixed an issue where agents couldn't upload PDF files in chat sessions.</li>
+<li>Fixed an issue where end-users encountered errors or empty details when
+  accessing call history immediately after a call ended.</li>
+<li>Fixed an issue where agents became stuck in the <code>In-call</code> status and
+  couldn't end calls or change their status, preventing them from handling new
+  interactions.</li>
+<li>Fixed an issue where the deletion of the default greeting message for a
+  language didn't persist.</li>
+<li>Fixed a web SDK issue where scheduling a call in one queue incorrectly
+  showed the <strong>Reschedule Call</strong> screen from a different queue.</li>
+<li>Fixed an issue that occurred when a human agent invoked the payment virtual
+  task assistant to collect card details. When the call was transferred back
+  to the human agent, live transcription and sentiment analysis didn't resume.</li>
+<li>Fixed an issue where HubSpot ticket creation failed when <strong>Skip CRM Account
+  Creation</strong> and <strong>Skip Account Lookup</strong> were enabled. This resulted in
+  tickets being created without an associated phone number.</li>
+<li>Fixed an issue where, after transferring a call from one queue to another,
+  the receiving agent's desktop temporarily showed the source queue's agent
+  desktop layout instead of the destination queue's layout.</li>
+<li>Fixed an issue where outbound Telnyx calls got stuck on the agent adapter
+  <strong>Connecting</strong> screen when <strong>Agent Voice Detection</strong> was enabled globally.</li>
+<li>Fixed an issue where Alvaria Advanced Outreach outbound campaign batch files
+  weren't ingested by Contact Center AI Platform, preventing campaigns from loading
+  contacts.</li>
+<li>Fixed an issue where a single inbound call in Salesforce created two cases.</li>
+<li>Fixed an issue where the <strong>Agents</strong> dashboard showed an invalid <code>-10</code> agent
+  status during wrap-up and after calls.</li>
+<li>Fixed an issue where Alvaria WFM Agent Performance reports displayed no
+  agent activity.</li>
+<li>Fixed an issue where the NICE WFM exporter reported higher abandoned call
+  counts than Contact Center AI Platform reporting.</li>
+<li>Fixed an issue where chats escalated from a virtual agent to a human agent
+  were dismissed shortly after assignment.</li>
+<li>Fixed an issue where the <strong>Ticket URL</strong> column in the <strong>Individual Call
+  History CSV report</strong> was blank for newly recorded calls, preventing
+  customers from accessing and downloading call recordings from the report.</li>
+<li>Fixed an issue where newly created teams couldn't be reordered in the
+  CCAI Platform portal.</li>
+<li>Fixed an issue where the agent desktop <strong>Previous Interactions</strong> panel
+  didn't show Agent Assist summaries from past calls.</li>
+<li>Fixed an issue where conversation history didn't display correctly in the
+  agent adapter when a chat was escalated from a virtual agent to a human
+  agent and then a large number of messages were sent by the end-user.</li>
+</ul>]]></content>
+    <summary>This release includes fixes for various issues, improving URL formatting in SMS, campaign dialing accuracy, transcription resumption after redaction, file uploads, call history display, agent status management, greeting message persistence, call scheduling, payment collection, HubSpot ticket creation, agent desktop layouts, outbound call connectivity, campaign batch file ingestion, Salesforce case creation, agent status reporting, WFM reports, abandoned call counts, chat escalations, call recording access, team reordering, Agent Assist summaries, and conversation history display.</summary>
+    <title>Fixed: Resolved Issues in Recent Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -14,9 +77,11 @@
     <updated>2026-05-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.30</strong></p>
 <p>We've released version 4.30 of Google Cloud CCaaS.</p>
-<p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>]]></content>
-    <summary>Version 4.30 of Google Cloud CCaaS has been released. The specific update timing for your instance is determined by your chosen deployment schedule.</summary>
-    <title>Announcement: CCaaS 4.30 Update Released</title>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>A new version, 4.30, of CCaaS has been released. The update timing will vary based on your chosen deployment schedule.</summary>
+    <title>Announcement: New CCaaS Version Released</title>
   </entry>
   <entry>
     <author>

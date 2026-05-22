@@ -1,5 +1,20 @@
 # Apigee X
 
+## 2026-05-21
+
+### Announcement
+
+On May 21st, 2026, we released an updated version of Apigee (1-17-0-apigee-8).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **514973778** | Fixed Model Armor response parsing to gracefully handle unknown fields, so future Model Armor field additions no longer cause policy failures. |
+
+---
 ## 2026-05-20
 
 ### Security

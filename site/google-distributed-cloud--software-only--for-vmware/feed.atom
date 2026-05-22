@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-05-18T00:00:00+00:00</updated>
+  <updated>2026-05-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-21:announcement:0</id>
+    <published>2026-05-21T00:00:00+00:00</published>
+    <updated>2026-05-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.35.100-gke.72 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.35.100-gke.72 runs on Kubernetes v1.35.3-gke.400.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for VMware, 1.35.100-gke.72, is now ready for download. This release runs on Kubernetes v1.35.3-gke.400. Ensure compatibility with third-party storage vendors before upgrading. The new version will be fully accessible via Google Cloud console, gcloud CLI, and Terraform within 7 to 14 days.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-21:fixed:1</id>
+    <published>2026-05-21T00:00:00+00:00</published>
+    <updated>2026-05-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.100-gke.72:</p>
+<ul>
+<li>Fixed an issue that prevented administrators from running cluster health checks and gathering diagnostics on non-advanced user clusters managed by an advanced admin cluster. You can successfully use <code>gkectl diagnose</code> on user clusters that are awaiting migration to advanced mode.</li>
+</ul>]]></content>
+    <summary>An issue preventing cluster health checks and diagnostics on non-advanced user clusters has been resolved. Administrators can now successfully use `gkectl diagnose` on user clusters awaiting migration to advanced mode.</summary>
+    <title>Fixed: Cluster health checks restored</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

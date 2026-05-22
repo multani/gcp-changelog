@@ -157,6 +157,7 @@
 - [Live Stream API](live-stream-api/index.md)
 - [Looker](looker/index.md)
 - [Looker Studio](looker-studio/index.md)
+- [Managed Service for Apache Spark](managed-service-for-apache-spark/index.md)
 - [Manufacturing Data Engine](manufacturing-data-engine/index.md)
 - [Media CDN](media-cdn/index.md)
 - [Memorystore for Memcached](memorystore-for-memcached/index.md)

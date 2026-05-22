@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-05-21": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.35.100-gke.72 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.35.100-gke.72 runs on Kubernetes v1.35.3-gke.400.\n\nIf you are using a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software release available",
+          "summary": "The latest version of Google Distributed Cloud for VMware, 1.35.100-gke.72, is now ready for download. This release runs on Kubernetes v1.35.3-gke.400. Ensure compatibility with third-party storage vendors before upgrading. The new version will be fully accessible via Google Cloud console, gcloud CLI, and Terraform within 7 to 14 days."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.35.100-gke.72:\n\n* Fixed an issue that prevented administrators from running cluster health checks and gathering diagnostics on non-advanced user clusters managed by an advanced admin cluster. You can successfully use `gkectl diagnose` on user clusters that are awaiting migration to advanced mode.",
+        "summary": {
+          "title": "Cluster health checks restored",
+          "summary": "An issue preventing cluster health checks and diagnostics on non-advanced user clusters has been resolved. Administrators can now successfully use `gkectl diagnose` on user clusters awaiting migration to advanced mode."
+        }
+      }
+    ],
     "2026-05-18": [
       {
         "kind": "Announcement",

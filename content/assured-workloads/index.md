@@ -1,5 +1,207 @@
 # Assured Workloads
 
+## 2026-05-15
+
+### Feature
+
+The [Indonesia Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/indonesia-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [India Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/india-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Chile Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/chile-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secret Manager
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Singapore Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/singapore-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [South Africa Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/south-africa-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Hong Kong Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/hong-kong-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secret Manager
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [South Korea Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/south-korea-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secret Manager
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Data Boundary for Canada Protected B](https://docs.cloud.google.com/assured-workloads/docs/control-packages/canada-protected-b)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [US Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/us-data-boundary)
+and [US Data Boundary and Support](https://docs.cloud.google.com/assured-workloads/docs/control-packages/us-data-boundary-support)
+support the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Israel Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/israel-data-boundary)
+and [Israel Data Boundary and Support](https://docs.cloud.google.com/assured-workloads/docs/control-packages/israel-data-boundary-support)
+support the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Taiwan Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/taiwan-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secret Manager
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [EU Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/eu-data-boundary)
+and [EU Data Boundary and Support](https://docs.cloud.google.com/assured-workloads/docs/control-packages/eu-data-boundary-support)
+support the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Canada Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/canada-data-boundary)
+and [Canada Data Boundary and Support](https://docs.cloud.google.com/assured-workloads/docs/control-packages/canada-data-boundary-support)
+support the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [UK Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/uk-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Australia Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/australia-data-boundary)
+and [Australia Data Boundary and Support](https://docs.cloud.google.com/assured-workloads/docs/control-packages/australia-data-boundary-support)
+support the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Qatar Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/qatar-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Japan Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/japan-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Switzerland Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/switzerland-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+### Feature
+
+The [Brazil Data Boundary](https://docs.cloud.google.com/assured-workloads/docs/control-packages/brazil-data-boundary)
+supports the following products:
+
+* Cloud Scheduler
+* Secure Web Proxy
+* Workflows
+* Workload Identity Federation
+
+---
 ## 2026-04-03
 
 ### Feature

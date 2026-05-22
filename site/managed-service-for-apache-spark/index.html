@@ -2484,8 +2484,37 @@
 
 
 <h1 id="managed-service-for-apache-spark">Managed Service for Apache Spark</h1>
-<h2 id="2026-05-03">2026-05-03</h2>
+<h2 id="2026-05-19">2026-05-19</h2>
 <h3 id="announcement">Announcement</h3>
+<p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
+<ul>
+<li>2.1.114-debian11, 2.1.114-rocky8, 2.1.114-ubuntu20, 2.1.114-ubuntu20-arm</li>
+<li>2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm</li>
+<li>2.3.30-debian12, 2.3.30-ml-ubuntu22, 2.3.30-rocky9, 2.3.30-ubuntu22, 2.3.30-ubuntu22-arm</li>
+</ul>
+<h3 id="breaking">Breaking</h3>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):
+The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitions</code>) has changed from an integer to a string type.</p>
+<p>This change impacts image versions <code>2.3.30</code> and later in version <code>2.3</code>, and <code>2.2.82</code> and later in version <code>2.2</code>.</p>
+<ul>
+<li><strong>Impact:</strong> This change only affects users who are programmatically setting the configuration in code using <code>spark.conf.set()</code> with an integer literal.</li>
+<li><strong>Impacted example:</strong> <code>spark.conf.set("spark.sql.shuffle.partitions", 100)</code></li>
+<li><strong>User action:</strong> Update your code to pass a string literal instead of an integer.</li>
+<li><strong>Example fix:</strong> <code>spark.conf.set("spark.sql.shuffle.partitions", "100")</code></li>
+<li><strong>Not impacted:</strong> Setting the configuration via command-line arguments (e.g., <code>spark-submit --conf spark.sql.shuffle.partitions=100</code>), properties files, or Spark SQL commands (<code>spark.sql("SET spark.sql.shuffle.partitions=100")</code>) remains unaffected, as these methods naturally parse the input as strings.</li>
+</ul>
+<hr />
+<h2 id="2026-05-11">2026-05-11</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions"><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions</a>:</p>
+<ul>
+<li>1.2.80</li>
+<li>2.2.80</li>
+<li>2.3.33</li>
+</ul>
+<hr />
+<h2 id="2026-05-03">2026-05-03</h2>
+<h3 id="announcement_2">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a> for 3.0 (Preview):</p>
 <ul>
 <li>3.0.0-RC2-debian13, 3.0.0-RC2-ml-ubuntu24, 3.0.0-RC2-rocky9, 3.0.0-RC2-ubuntu24</li>
@@ -2510,9 +2539,22 @@
 <li>JupyterLab upgraded to <strong>4.5.7</strong>.</li>
 <li><strong><a href="https://pixi.prefix.dev">Pixi</a></strong> is used as python package manager instead of conda.</li>
 </ul>
+<h3 id="announcement_3">Announcement</h3>
+<p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions"><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions</a>:</p>
+<ul>
+<li>1.2.79</li>
+<li>2.2.79</li>
+<li>2.3.32</li>
+</ul>
+<p><strong>Key updates in this release</strong>:</p>
+<ul>
+<li>Upgraded Metastore Proxy version to <code>v0.0.79</code>.</li>
+<li>Upgraded Spark RAPIDS to version <code>26.04.0</code> version in the Managed Service
+  for Apache Spark version <code>3.0</code> serverless runtime.</li>
+</ul>
 <hr />
 <h2 id="2026-04-27">2026-04-27</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
 <ul>
 <li>2.1.113-debian11, 2.1.113-rocky8, 2.1.113-ubuntu20, 2.1.113-ubuntu20-arm</li>
@@ -2530,6 +2572,12 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#managed-service-for-apache-spark">Managed Service for Apache Spark</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-19" class="nav-link">2026-05-19</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-05-11" class="nav-link">2026-05-11</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-05-03" class="nav-link">2026-05-03</a>
           </li>

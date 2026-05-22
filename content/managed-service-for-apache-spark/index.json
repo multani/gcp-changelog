@@ -1,6 +1,34 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-05-19": [
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):\n\n* 2.1.114-debian11, 2.1.114-rocky8, 2.1.114-ubuntu20, 2.1.114-ubuntu20-arm\n* 2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm\n* 2.3.30-debian12, 2.3.30-ml-ubuntu22, 2.3.30-rocky9, 2.3.30-ubuntu22, 2.3.30-ubuntu22-arm",
+        "summary": {
+          "title": "New Apache Spark image versions available",
+          "summary": "New subminor image versions are now available for the managed service for Apache Spark. These updates include support for various operating systems and architectures, ensuring broader compatibility and performance enhancements for your Apache Spark workloads."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):\nThe configuration for Spark shuffle partitions (`spark.sql.shuffle.partitions`) has changed from an integer to a string type.\n\nThis change impacts image versions `2.3.30` and later in version `2.3`, and `2.2.82` and later in version `2.2`.\n\n* **Impact:** This change only affects users who are programmatically setting the configuration in code using `spark.conf.set()` with an integer literal.\n  + **Impacted example:** `spark.conf.set(\"spark.sql.shuffle.partitions\", 100)`\n* **User action:** Update your code to pass a string literal instead of an integer.\n  + **Example fix:** `spark.conf.set(\"spark.sql.shuffle.partitions\", \"100\")`\n* **Not impacted:** Setting the configuration via command-line arguments (e.g., `spark-submit --conf spark.sql.shuffle.partitions=100`), properties files, or Spark SQL commands (`spark.sql(\"SET spark.sql.shuffle.partitions=100\")`) remains unaffected, as these methods naturally parse the input as strings.",
+        "summary": {
+          "title": "Spark configuration type change",
+          "summary": "A recent update to the managed Apache Spark service has changed the data type for the spark.sql.shuffle.partitions configuration from integer to string. This affects users programmatically setting the value in code. Please update your code to use string literals for this configuration."
+        }
+      }
+    ],
+    "2026-05-11": [
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions):\n\n* 1.2.80\n* 2.2.80\n* 2.3.33",
+        "summary": {
+          "title": "New Apache Spark Runtime Versions Available",
+          "summary": "Managed Service for Apache Spark now supports new subminor runtime versions: 1.2.80, 2.2.80, and 2.3.33. These updates provide enhanced features and performance for your Spark workloads."
+        }
+      }
+    ],
     "2026-05-03": [
       {
         "kind": "Announcement",
@@ -8,6 +36,14 @@
         "summary": {
           "title": "New Spark Service Image Versions",
           "summary": "New image versions are available for the managed Apache Spark service, including updates to Debian, Java, and various Apache components. This release also introduces Pixi as the default Python package manager."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions):\n\n* 1.2.79\n* 2.2.79\n* 2.3.32\n\n**Key updates in this release**:\n\n* Upgraded Metastore Proxy version to `v0.0.79`.\n* Upgraded Spark RAPIDS to version `26.04.0` version in the Managed Service\n  for Apache Spark version `3.0` serverless runtime.",
+        "summary": {
+          "title": "Managed Spark runtime updates",
+          "summary": "New subminor runtime versions are available for the Managed Service for Apache Spark. This release includes updates to the Metastore Proxy and Spark RAPIDS versions."
         }
       }
     ],

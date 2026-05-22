@@ -1,5 +1,30 @@
 # Cloud Asset Inventory
 
+## 2026-05-21
+
+### Feature
+
+The following resource types are publicly available through the
+[ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets),
+[ListAssets](https://docs.cloud.google.com/asset-inventory/docs/listing-assets),
+[BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory),
+[QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets),
+[Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds),
+[SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources),
+and
+[SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)
+APIs.
+
+* Apigee
+  + `apigee.googleapis.com/SecurityAction`
+  + `apigee.googleapis.com/SecurityMonitoringCondition`
+  + `apigee.googleapis.com/SecurityProfileV2`
+* Cloud Key Management Service
+  + `cloudkms.googleapis.com/RetiredResource`
+* Hypercompute Cluster
+  + `hypercomputecluster.googleapis.com/Cluster`
+
+---
 ## 2026-04-28
 
 ### Feature

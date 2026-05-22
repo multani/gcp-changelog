@@ -1,5 +1,40 @@
 # Managed Service for Apache Spark
 
+## 2026-05-19
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 2.1.114-debian11, 2.1.114-rocky8, 2.1.114-ubuntu20, 2.1.114-ubuntu20-arm
+* 2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm
+* 2.3.30-debian12, 2.3.30-ml-ubuntu22, 2.3.30-rocky9, 2.3.30-ubuntu22, 2.3.30-ubuntu22-arm
+
+### Breaking
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+The configuration for Spark shuffle partitions (`spark.sql.shuffle.partitions`) has changed from an integer to a string type.
+
+This change impacts image versions `2.3.30` and later in version `2.3`, and `2.2.82` and later in version `2.2`.
+
+* **Impact:** This change only affects users who are programmatically setting the configuration in code using `spark.conf.set()` with an integer literal.
+  + **Impacted example:** `spark.conf.set("spark.sql.shuffle.partitions", 100)`
+* **User action:** Update your code to pass a string literal instead of an integer.
+  + **Example fix:** `spark.conf.set("spark.sql.shuffle.partitions", "100")`
+* **Not impacted:** Setting the configuration via command-line arguments (e.g., `spark-submit --conf spark.sql.shuffle.partitions=100`), properties files, or Spark SQL commands (`spark.sql("SET spark.sql.shuffle.partitions=100")`) remains unaffected, as these methods naturally parse the input as strings.
+
+---
+## 2026-05-11
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions):
+
+* 1.2.80
+* 2.2.80
+* 2.3.33
+
+---
 ## 2026-05-03
 
 ### Announcement
@@ -27,6 +62,20 @@ New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) 
 * Zeppelin Notebook upgraded to **0.12.0**.
 * JupyterLab upgraded to **4.5.7**.
 * **[Pixi](https://pixi.prefix.dev)** is used as python package manager instead of conda.
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions):
+
+* 1.2.79
+* 2.2.79
+* 2.3.32
+
+**Key updates in this release**:
+
+* Upgraded Metastore Proxy version to `v0.0.79`.
+* Upgraded Spark RAPIDS to version `26.04.0` version in the Managed Service
+  for Apache Spark version `3.0` serverless runtime.
 
 ---
 ## 2026-04-27

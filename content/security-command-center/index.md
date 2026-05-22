@@ -2,6 +2,20 @@
 
 ## 2026-05-21
 
+### Change
+
+The following [Compliance Manager frameworks](https://docs.cloud.google.com/security-command-center/docs/compliance-manager-frameworks) were updated:
+
+* CIS Critical Security Controls v8 (version 8.0)
+* CIS GCP Foundations Benchmark v3.0 (version 7.0)
+* CSA Cloud Controls Matrix v4.0.11 (version 7.0)
+* ISO 27001:2022 (version 9.0)
+* NIST 800-53 Revision 5 (version 9.0)
+* NIST Cybersecurity Framework 1.1 (version 8.0)
+* PCI DSS v4.0.1 (version 6.0)
+* Qatar National Information Assurance Standard v2.1 (version 6.0)
+* SOC 2017 (version 7.0)
+
 ### Feature
 
 [Artifact guard](https://docs.cloud.google.com/security-command-center/docs/artifact-guard-overview) is available in

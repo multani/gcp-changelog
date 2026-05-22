@@ -1,5 +1,39 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-20
+
+### Change
+
+
+
+### Supervised fine-tuning available for Gemini 3.1 Flash Lite (Preview)
+
+Supervised fine-tuning is now available for limited support for the
+`gemini-3.1-flash-lite` model. During this period, model tuning for Gemini
+3.1 Flash Lite is restricted to `us-central1` and `europe-west4` and tuned model
+serving is restricted to the `us` and `eu` multi-region endpoints.
+
+See [About supervised
+fine-tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini-supervised-tuning)
+for more information.
+
+### Change
+
+
+
+### Set media resolution at a Part-level for data when using supervised fine-tuning
+
+Supervised fine-tuning now supports `Part`-level `mediaResolution` declarations
+for images, videos, and PDFs. `Part`-level media resolution declarations also
+support the `MEDIA_RESOLUTION_ULTRA_HIGH` level.
+
+See the following media type–specific pages for more information:
+
+* [Document tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tune_gemini/doc_tune)
+* [Image tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tune_gemini/image_tune)
+* [Video tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tune_gemini/video_tune)
+
+---
 ## 2026-05-19
 
 ### Feature

@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-05-21
+
+### Feature
+
+**Gemini Enterprise: Create and edit documents and slides in Canvas (Preview)**
+
+Canvas is a dedicated, interactive tool within the Gemini Enterprise
+web app. It allows you to create and edit AI-generated documents and
+presentations directly from your chats. You can then export these to Google
+Workspace, Microsoft Office formats, and PDF.
+
+This feature is in Public Preview. For more information, see
+[Create and edit documents and slides in Canvas](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-canvas).
+
+---
 ## 2026-05-20
 
 ### Deprecated

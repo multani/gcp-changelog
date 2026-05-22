@@ -1,5 +1,15 @@
 # Cloud Load Balancing
 
+## 2026-05-21
+
+### Feature
+
+Zonal affinity, which was previously available in Preview,
+is generally available (GA).
+
+For more information, see [Zonal affinity for internal passthrough Network Load Balancers](https://docs.cloud.google.com/load-balancing/docs/internal/zonal-affinity).
+
+---
 ## 2026-05-19
 
 ### Feature

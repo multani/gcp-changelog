@@ -1,5 +1,29 @@
 # Apigee hybrid
 
+## 2026-05-21
+
+### Announcement
+
+
+
+### v1.16.4
+
+On May 21, 2026 we released an updated version of the Apigee hybrid software, v1.16.4.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.4](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **515424331** | **Fixed an issue with missing container images in the `gcr.io/apigee-release/hybrid/` repository.** |
+
+---
 ## 2026-05-19
 
 ### v1.16.3

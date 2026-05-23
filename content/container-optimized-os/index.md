@@ -1,5 +1,58 @@
 # Container Optimized OS
 
+## 2026-05-12
+
+### Change
+
+
+
+### cos-113-18244-582-104
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/55acfaa0d8192e080417075465aaffd1f75df1a9 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.104/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded sys-apps/makedumpfile to v1.7.9.
+
+---
+## 2026-05-11
+
+### Change
+
+
+
+### cos-125-19216-395-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/8615dfb7470816ab28b148bb67bba5f12bb4ea0b ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.7/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Change
+
+
+
+### cos-117-18613-613-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/e416822ebf1c6b3a9c3304ba8d9903b55190df6d ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.613.7/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+Addressed internal infrastructure issues. No substantial change.
+
+---
 ## 2026-05-09
 
 ### Change

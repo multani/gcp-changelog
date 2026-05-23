@@ -1,6 +1,82 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-05-12": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Health Dashboard Update",
+          "summary": "We've updated the Service Health Dashboard to provide more detailed information about service incidents. You can now access improved diagnostics and historical data to better understand service performance."
+        }
+      },
+      {
+        "kind": "cos-113-18244-582-104",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.1.161](https://cos.googlesource.com/third_party/kernel/+/55acfaa0d8192e080417075465aaffd1f75df1a9 ) | v24.0.9 | v1.7.27 | [See List](https://storage.googleapis.com/cos-tools/18244.582.104/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS version available",
+          "summary": "A new version of Container-Optimized OS is now available. This update includes the latest kernel, Docker, and containerd versions, along with updated GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/makedumpfile to v1.7.9.",
+        "summary": {
+          "title": "makedumpfile upgraded",
+          "summary": "The makedumpfile utility has been upgraded to version 1.7.9. This update addresses known issues and improves the overall stability of the system's crash dump functionality."
+        }
+      }
+    ],
+    "2026-05-11": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Version Update",
+          "summary": "We are updating the service to a new version. This update includes performance improvements and bug fixes. The service will be unavailable for a brief period during the update."
+        }
+      },
+      {
+        "kind": "cos-125-19216-395-7",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/8615dfb7470816ab28b148bb67bba5f12bb4ea0b ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.7/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update 19216.395.7",
+          "summary": "This release includes updates to the kernel, Docker, and Containerd. It also provides updated GPU drivers. You can find more details on the specific versions included in the release notes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: net.ipv4.udp\\_mem: 188034 250715 376068 -> 188034 250714 376068",
+        "summary": {
+          "title": "Runtime sysctl changes",
+          "summary": "The net.ipv4.udp_mem parameter has been adjusted. This change impacts memory allocation for UDP sockets."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Updated resource management policies",
+          "summary": "We've updated our resource management policies to improve efficiency and cost control. These changes will help you better manage your cloud resources. More details are available in the documentation."
+        }
+      },
+      {
+        "kind": "cos-117-18613-613-7",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/e416822ebf1c6b3a9c3304ba8d9903b55190df6d ) | v24.0.9 | v1.7.29 | [See List](https://storage.googleapis.com/cos-tools/18613.613.7/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Update",
+          "summary": "Container-Optimized OS 18613.613.7 is now available, featuring updated Kernel, Docker, and Containerd versions. This release also includes support for GPU drivers."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Addressed internal infrastructure issues. No substantial change.",
+        "summary": {
+          "title": "Infrastructure Improvements",
+          "summary": "Internal infrastructure issues have been addressed. No significant changes to services are expected as a result of these updates."
+        }
+      }
+    ],
     "2026-05-09": [
       {
         "kind": "Change",

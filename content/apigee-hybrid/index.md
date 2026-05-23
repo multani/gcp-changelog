@@ -2,10 +2,6 @@
 
 ## 2026-05-22
 
-### Announcement
-
-
-
 ### v1.14.5
 
 On May 22, 2026 we released an updated version of the Apigee hybrid software, v1.14.5.
@@ -18,10 +14,6 @@ On May 22, 2026 we released an updated version of the Apigee hybrid software, v1
 ### Security
 
 Various security and CVE fixes are included in this release.
-
-### Announcement
-
-
 
 ### Apigee Emulator is now released independently
 

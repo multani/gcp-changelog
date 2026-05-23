@@ -1,5 +1,42 @@
 # Apigee hybrid
 
+## 2026-05-22
+
+### Announcement
+
+
+
+### v1.14.5
+
+On May 22, 2026 we released an updated version of the Apigee hybrid software, v1.14.5.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.14.5](https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Security
+
+Various security and CVE fixes are included in this release.
+
+### Announcement
+
+
+
+### Apigee Emulator is now released independently
+
+Starting May 22, 2026, the Apigee Emulator is versioned and released
+independently from Apigee hybrid. Emulator updates, including security patches,
+are no longer tied to hybrid release cycles.
+
+The emulator image continues to be available at
+`gcr.io/apigee-release/hybrid/apigee-emulator`. The first independent release
+is **v2.0.0**.
+
+For emulator release notes going forward, see
+[Apigee release notes](https://docs.cloud.google.com/apigee/docs/release/release-notes).
+
+---
 ## 2026-05-21
 
 ### v1.16.4

@@ -152,6 +152,7 @@
 - [Identity and Access Management](identity-and-access-management/index.md)
 - [Identity-Aware Proxy](identity-aware-proxy/index.md)
 - [Infrastructure Manager](infrastructure-manager/index.md)
+- [Key Access Justifications](key-access-justifications/index.md)
 - [Kf](kf/index.md)
 - [Knowledge Catalog](knowledge-catalog/index.md)
 - [Live Stream API](live-stream-api/index.md)

@@ -1853,6 +1853,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Key access justifications <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../key-access-justifications/" class="dropdown-item">Key Access Justifications</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Kf <b class="caret"></b>
                         </a>
 
@@ -2484,6 +2496,11 @@
 
 
 <h1 id="sensitive-data-protection">Sensitive Data Protection</h1>
+<h2 id="2026-05-11">2026-05-11</h2>
+<h3 id="change">Change</h3>
+<p>If you set <code>InfoType.version</code> to <code>latest</code> when including the <code>MEDICAL_ID</code> infoType in your <code>InspectConfig</code>, Sensitive Data Protection will now include <code>MEDICAL_RECORD_NUMBER</code> findings as type <code>MEDICAL_ID</code> in the scan results.</p>
+<p>You can still use the old functionality by setting <code>InfoType.version</code> to <code>stable</code>. In 30 days, the new functionality will be promoted to <code>stable</code>.</p>
+<hr />
 <h2 id="2026-03-28">2026-03-28</h2>
 <h3 id="feature">Feature</h3>
 <p>You can configure Sensitive Data Protection to detect specific
@@ -2709,6 +2726,9 @@ date, new jobs and job triggers that are created by those workflows will fail.</
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#sensitive-data-protection">Sensitive Data Protection</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-11" class="nav-link">2026-05-11</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-03-28" class="nav-link">2026-03-28</a>
           </li>

@@ -1,5 +1,13 @@
 # AlloyDB for PostgreSQL
 
+## 2026-05-21
+
+### Fixed
+
+ChatGPT users are now able to list and use the AlloyDB toolset provided by the
+AlloyDB remote MCP server.
+
+---
 ## 2026-05-11
 
 ### Announcement

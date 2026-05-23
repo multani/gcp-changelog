@@ -2,9 +2,85 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-05-21T00:00:00+00:00</updated>
+  <updated>2026-05-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-22:announcement:0</id>
+    <published>2026-05-22T00:00:00+00:00</published>
+    <updated>2026-05-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>]]></content>
+    <summary>The Apigee Emulator is now available, offering a local development environment for API proxies. This tool simplifies testing and debugging by allowing developers to run and test API proxies without deploying them to a live Apigee environment.</summary>
+    <title>Announcement: Apigee Emulator Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-22:apigee emulator v2.0.0:1</id>
+    <published>2026-05-22T00:00:00+00:00</published>
+    <updated>2026-05-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On May 22, 2026, we released Apigee Emulator version 2.0.0.</p>
+<p>Starting with this release, the Apigee Emulator is versioned and released
+independently from Apigee hybrid. This enables faster delivery of security
+patches and updates without waiting for hybrid release cycles. The emulator
+image continues to be available at
+<a href="https://console.cloud.google.com/artifacts/docker/apigee-release/us/gcr.io/hybrid%2Fapigee-emulator">Google Artifact Registry</a>.</p>
+<p>To use the new version, update the emulator version in your VS Code Cloud Code
+settings to <code>2.0.0</code>. See
+<a href="https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/manage-apigee-emulator#choose_the_emulator_version">Manage the Apigee Emulator</a>
+for details.</p>]]></content>
+    <summary>Apigee Emulator v2.0.0 is now available, offering independent versioning for faster security updates. Update your Cloud Code settings to version 2.0.0 to leverage these improvements.</summary>
+    <title>Apigee Emulator v2.0.0: Apigee Emulator v2.0.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-22:feature:2</id>
+    <published>2026-05-22T00:00:00+00:00</published>
+    <updated>2026-05-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>
+<h4>Changed in this release</h4>
+<ul>
+<li>The Apigee Emulator now follows independent semantic versioning
+  (MAJOR.MINOR.PATCH), decoupled from Apigee hybrid versioning.</li>
+<li>Updated base Cassandra image to version 4.0.19.</li>
+<li>Updated Java runtime to Eclipse Temurin JRE 11.0.31.</li>
+</ul>]]></content>
+    <summary>The Apigee Emulator has adopted independent semantic versioning (MAJOR.MINOR.PATCH), separate from Apigee hybrid versions. This update also includes upgrades to the base Cassandra image and the Java runtime.</summary>
+    <title>Feature: Apigee Emulator Versioning Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-05-22:security:3</id>
+    <published>2026-05-22T00:00:00+00:00</published>
+    <updated>2026-05-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>
+<h4>Security</h4>
+<p>This release addresses 78 security vulnerabilities across Cassandra base image,
+Go standard library, Java dependencies, and Python packages. Key fixes include:</p>
+<p>| CVE | Component |
+| --- | --- |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-42003">CVE-2022-42003</a> | Jackson Databind |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-42004">CVE-2022-42004</a> | Jackson Databind |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-38749">CVE-2022-38749</a> | SnakeYAML |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-38750">CVE-2022-38750</a> | SnakeYAML |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2023-2976">CVE-2023-2976</a> | Google Guava |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2020-8908">CVE-2020-8908</a> | Google Guava |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-12798">CVE-2024-12798</a> | Logback |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22866">CVE-2025-22866</a> | Go stdlib |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-22870">CVE-2025-22870</a> | Go stdlib |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2022-40897">CVE-2022-40897</a> | Python setuptools |</p>
+<p>And 68 additional CVEs fixed through updated upstream dependencies.</p>]]></content>
+    <summary>This release addresses 78 security vulnerabilities across various components including Cassandra, Go, Java, and Python. Key fixes target critical CVEs in libraries like Jackson Databind, SnakeYAML, and Google Guava, enhancing the overall security posture.</summary>
+    <title>Security: Security update for Apigee Emulator</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

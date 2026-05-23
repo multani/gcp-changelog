@@ -1,5 +1,21 @@
 # Cloud Database Migration Service
 
+## 2026-05-22
+
+### Feature
+
+Database Migration Service for homogeneous SQL Server migrations now provides
+dedicated support for Cloud SQL for SQL Server sources. This feature is generally
+available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+For Cloud SQL for SQL Server sources, Database Migration Service automatically exports all
+required backup files and uploads them to a dedicated Cloud Storage bucket.
+For more information, see the
+[Migration guide for Cloud SQL for SQL Server sources](https://docs.cloud.google.com/database-migration/docs/sqlserver/csql-sql-server-src-guide) in the Database Migration Service
+homogeneous SQL Server documentation.
+
+---
 ## 2026-05-12
 
 ### Feature

@@ -1,6 +1,16 @@
 {
   "name": "Spanner",
   "entries": {
+    "2026-05-18": [
+      {
+        "kind": "Feature",
+        "content": "You can optimize Spanner Graph query performance by using factorized\nexecution. If a graph pattern traversal generates duplicate intermediate\nresults, add the `@{factorize_mode}` hint to the pattern traversal or at the\nquery level to optimize the query.\n\nFor more information, see\n[Use factorized execution to optimize queries](https://docs.cloud.google.com/spanner/docs/graph/best-practices-tuning-queries#use-factorized-execution).",
+        "summary": {
+          "title": "Optimize Spanner Graph Queries",
+          "summary": "Improve Spanner graph query performance with factorized execution. Apply the `@{factorize_mode}` hint to traversals or the query to eliminate duplicate intermediate results and boost efficiency."
+        }
+      }
+    ],
     "2026-05-15": [
       {
         "kind": "Feature",
@@ -12,6 +22,14 @@
       }
     ],
     "2026-05-14": [
+      {
+        "kind": "Feature",
+        "content": "Spanner supports the `FACTORIZED_MODE` join hint. You can control\nwhich sides of a join to factorize (deduplicate) before executing the join by\nusing the `FACTORIZE_LEFT`, `FACTORIZE_RIGHT`, or `FACTORIZE_BOTH` hint values.\nFor more information, see\n[Factorized mode](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/query-syntax#factorized_mode).",
+        "summary": {
+          "title": "New join hint available for Spanner",
+          "summary": "Spanner now supports the FACTORIZED_MODE join hint, allowing you to optimize joins by controlling which sides are factorized. You can use FACTORIZE_LEFT, FACTORIZE_RIGHT, or FACTORIZE_BOTH to specify the factorization behavior. This feature helps improve query performance by reducing data duplication before joining."
+        }
+      },
       {
         "kind": "Announcement",
         "content": "The Spanner change streams default [retention period](https://docs.cloud.google.com/spanner/docs/change-streams#data-retention) has been increased from 1 day to 7 days.\nThis change affects both new and existing change streams that don't have a retention period explicitly set.\nYou can always specify the retention period through [create change stream](https://docs.cloud.google.com/spanner/docs/change-streams/manage#create) or [alter change stream](https://docs.cloud.google.com/spanner/docs/change-streams/manage#modify) DDL statements to override the default.",

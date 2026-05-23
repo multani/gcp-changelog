@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-05-15T00:00:00+00:00</updated>
+  <updated>2026-05-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-05-18:feature:0</id>
+    <published>2026-05-18T00:00:00+00:00</published>
+    <updated>2026-05-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can optimize Spanner Graph query performance by using factorized
+execution. If a graph pattern traversal generates duplicate intermediate
+results, add the <code>@{factorize_mode}</code> hint to the pattern traversal or at the
+query level to optimize the query.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/graph/best-practices-tuning-queries#use-factorized-execution">Use factorized execution to optimize queries</a>.</p>]]></content>
+    <summary>Improve Spanner graph query performance with factorized execution. Apply the `@{factorize_mode}` hint to traversals or the query to eliminate duplicate intermediate results and boost efficiency.</summary>
+    <title>Feature: Optimize Spanner Graph Queries</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -23,7 +39,22 @@ For more information, see <a href="https://docs.cloud.google.com/spanner/docs/sq
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:spanner:2026-05-14:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-05-14:feature:0</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports the <code>FACTORIZED_MODE</code> join hint. You can control
+which sides of a join to factorize (deduplicate) before executing the join by
+using the <code>FACTORIZE_LEFT</code>, <code>FACTORIZE_RIGHT</code>, or <code>FACTORIZE_BOTH</code> hint values.
+For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/query-syntax#factorized_mode">Factorized mode</a>.</p>]]></content>
+    <summary>Spanner now supports the FACTORIZED_MODE join hint, allowing you to optimize joins by controlling which sides are factorized. You can use FACTORIZE_LEFT, FACTORIZE_RIGHT, or FACTORIZE_BOTH to specify the factorization behavior. This feature helps improve query performance by reducing data duplication before joining.</summary>
+    <title>Feature: New join hint available for Spanner</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-05-14:announcement:1</id>
     <published>2026-05-14T00:00:00+00:00</published>
     <updated>2026-05-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The Spanner change streams default <a href="https://docs.cloud.google.com/spanner/docs/change-streams#data-retention">retention period</a> has been increased from 1 day to 7 days.
@@ -36,7 +67,7 @@ You can always specify the retention period through <a href="https://docs.cloud.
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:spanner:2026-05-14:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-05-14:feature:2</id>
     <published>2026-05-14T00:00:00+00:00</published>
     <updated>2026-05-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can populate new PostgreSQL dialect databases in an existing

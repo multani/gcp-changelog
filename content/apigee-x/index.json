@@ -1,6 +1,40 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-05-22": [
+      {
+        "kind": "Announcement",
+        "content": "**Apigee Emulator**",
+        "summary": {
+          "title": "Apigee Emulator Available",
+          "summary": "The Apigee Emulator is now available, offering a local development environment for API proxies. This tool simplifies testing and debugging by allowing developers to run and test API proxies without deploying them to a live Apigee environment."
+        }
+      },
+      {
+        "kind": "Apigee Emulator v2.0.0",
+        "content": "On May 22, 2026, we released Apigee Emulator version 2.0.0.\n\nStarting with this release, the Apigee Emulator is versioned and released\nindependently from Apigee hybrid. This enables faster delivery of security\npatches and updates without waiting for hybrid release cycles. The emulator\nimage continues to be available at\n[Google Artifact Registry](https://console.cloud.google.com/artifacts/docker/apigee-release/us/gcr.io/hybrid%2Fapigee-emulator).\n\nTo use the new version, update the emulator version in your VS Code Cloud Code\nsettings to `2.0.0`. See\n[Manage the Apigee Emulator](https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/manage-apigee-emulator#choose_the_emulator_version)\nfor details.",
+        "summary": {
+          "title": "Apigee Emulator v2.0.0 Released",
+          "summary": "Apigee Emulator v2.0.0 is now available, offering independent versioning for faster security updates. Update your Cloud Code settings to version 2.0.0 to leverage these improvements."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Apigee Emulator**\n\n#### Changed in this release\n\n* The Apigee Emulator now follows independent semantic versioning\n  (MAJOR.MINOR.PATCH), decoupled from Apigee hybrid versioning.\n* Updated base Cassandra image to version 4.0.19.\n* Updated Java runtime to Eclipse Temurin JRE 11.0.31.",
+        "summary": {
+          "title": "Apigee Emulator Versioning Update",
+          "summary": "The Apigee Emulator has adopted independent semantic versioning (MAJOR.MINOR.PATCH), separate from Apigee hybrid versions. This update also includes upgrades to the base Cassandra image and the Java runtime."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "**Apigee Emulator**\n\n#### Security\n\nThis release addresses 78 security vulnerabilities across Cassandra base image,\nGo standard library, Java dependencies, and Python packages. Key fixes include:\n\n| CVE | Component |\n| --- | --- |\n| [CVE-2022-42003](https://nvd.nist.gov/vuln/detail/CVE-2022-42003) | Jackson Databind |\n| [CVE-2022-42004](https://nvd.nist.gov/vuln/detail/CVE-2022-42004) | Jackson Databind |\n| [CVE-2022-38749](https://nvd.nist.gov/vuln/detail/CVE-2022-38749) | SnakeYAML |\n| [CVE-2022-38750](https://nvd.nist.gov/vuln/detail/CVE-2022-38750) | SnakeYAML |\n| [CVE-2023-2976](https://nvd.nist.gov/vuln/detail/CVE-2023-2976) | Google Guava |\n| [CVE-2020-8908](https://nvd.nist.gov/vuln/detail/CVE-2020-8908) | Google Guava |\n| [CVE-2024-12798](https://nvd.nist.gov/vuln/detail/CVE-2024-12798) | Logback |\n| [CVE-2025-22866](https://nvd.nist.gov/vuln/detail/CVE-2025-22866) | Go stdlib |\n| [CVE-2025-22870](https://nvd.nist.gov/vuln/detail/CVE-2025-22870) | Go stdlib |\n| [CVE-2022-40897](https://nvd.nist.gov/vuln/detail/CVE-2022-40897) | Python setuptools |\n\nAnd 68 additional CVEs fixed through updated upstream dependencies.",
+        "summary": {
+          "title": "Security update for Apigee Emulator",
+          "summary": "This release addresses 78 security vulnerabilities across various components including Cassandra, Go, Java, and Python. Key fixes target critical CVEs in libraries like Jackson Databind, SnakeYAML, and Google Guava, enhancing the overall security posture."
+        }
+      }
+    ],
     "2026-05-21": [
       {
         "kind": "Announcement",

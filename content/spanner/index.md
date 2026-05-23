@@ -1,5 +1,18 @@
 # Spanner
 
+## 2026-05-18
+
+### Feature
+
+You can optimize Spanner Graph query performance by using factorized
+execution. If a graph pattern traversal generates duplicate intermediate
+results, add the `@{factorize_mode}` hint to the pattern traversal or at the
+query level to optimize the query.
+
+For more information, see
+[Use factorized execution to optimize queries](https://docs.cloud.google.com/spanner/docs/graph/best-practices-tuning-queries#use-factorized-execution).
+
+---
 ## 2026-05-15
 
 ### Feature
@@ -11,6 +24,14 @@ For more information, see [query parameters](https://docs.cloud.google.com/spann
 
 ---
 ## 2026-05-14
+
+### Feature
+
+Spanner supports the `FACTORIZED_MODE` join hint. You can control
+which sides of a join to factorize (deduplicate) before executing the join by
+using the `FACTORIZE_LEFT`, `FACTORIZE_RIGHT`, or `FACTORIZE_BOTH` hint values.
+For more information, see
+[Factorized mode](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/query-syntax#factorized_mode).
 
 ### Announcement
 

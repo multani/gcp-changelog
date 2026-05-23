@@ -1,5 +1,62 @@
 # Apigee X
 
+## 2026-05-22
+
+### Announcement
+
+**Apigee Emulator**
+
+### Apigee Emulator v2.0.0
+
+On May 22, 2026, we released Apigee Emulator version 2.0.0.
+
+Starting with this release, the Apigee Emulator is versioned and released
+independently from Apigee hybrid. This enables faster delivery of security
+patches and updates without waiting for hybrid release cycles. The emulator
+image continues to be available at
+[Google Artifact Registry](https://console.cloud.google.com/artifacts/docker/apigee-release/us/gcr.io/hybrid%2Fapigee-emulator).
+
+To use the new version, update the emulator version in your VS Code Cloud Code
+settings to `2.0.0`. See
+[Manage the Apigee Emulator](https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/manage-apigee-emulator#choose_the_emulator_version)
+for details.
+
+### Feature
+
+**Apigee Emulator**
+
+#### Changed in this release
+
+* The Apigee Emulator now follows independent semantic versioning
+  (MAJOR.MINOR.PATCH), decoupled from Apigee hybrid versioning.
+* Updated base Cassandra image to version 4.0.19.
+* Updated Java runtime to Eclipse Temurin JRE 11.0.31.
+
+### Security
+
+**Apigee Emulator**
+
+#### Security
+
+This release addresses 78 security vulnerabilities across Cassandra base image,
+Go standard library, Java dependencies, and Python packages. Key fixes include:
+
+| CVE | Component |
+| --- | --- |
+| [CVE-2022-42003](https://nvd.nist.gov/vuln/detail/CVE-2022-42003) | Jackson Databind |
+| [CVE-2022-42004](https://nvd.nist.gov/vuln/detail/CVE-2022-42004) | Jackson Databind |
+| [CVE-2022-38749](https://nvd.nist.gov/vuln/detail/CVE-2022-38749) | SnakeYAML |
+| [CVE-2022-38750](https://nvd.nist.gov/vuln/detail/CVE-2022-38750) | SnakeYAML |
+| [CVE-2023-2976](https://nvd.nist.gov/vuln/detail/CVE-2023-2976) | Google Guava |
+| [CVE-2020-8908](https://nvd.nist.gov/vuln/detail/CVE-2020-8908) | Google Guava |
+| [CVE-2024-12798](https://nvd.nist.gov/vuln/detail/CVE-2024-12798) | Logback |
+| [CVE-2025-22866](https://nvd.nist.gov/vuln/detail/CVE-2025-22866) | Go stdlib |
+| [CVE-2025-22870](https://nvd.nist.gov/vuln/detail/CVE-2025-22870) | Go stdlib |
+| [CVE-2022-40897](https://nvd.nist.gov/vuln/detail/CVE-2022-40897) | Python setuptools |
+
+And 68 additional CVEs fixed through updated upstream dependencies.
+
+---
 ## 2026-05-21
 
 ### Announcement

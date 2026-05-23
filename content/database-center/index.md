@@ -1,5 +1,18 @@
 # Database Center
 
+## 2026-05-22
+
+### Feature
+
+Database Center generative views are available in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+Generative views use Gemini and natural language prompts to
+let you generate and save customized dashboard views of your database fleet
+inventory and metrics.
+
+For more information, see [Generate dashboard views using Gemini](https://docs.cloud.google.com/database-center/docs/generative-views).
+
+---
 ## 2026-04-24
 
 ### Feature

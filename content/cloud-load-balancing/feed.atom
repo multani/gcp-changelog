@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-05-21T00:00:00+00:00</updated>
+  <updated>2026-05-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-05-22:feature:0</id>
+    <published>2026-05-22T00:00:00+00:00</published>
+    <updated>2026-05-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Application Load Balancers now support the configuration of a
+<a href="https://docs.cloud.google.com/load-balancing/docs/backend-service#applb-csm-traffic-duration">traffic duration</a>
+setting when you add backends to backend services. You can configure this
+setting as <code>SHORT</code> or <code>LONG</code> based on the response time needed by backends to
+complete HTTP requests.</p>
+<p>Application Load Balancers also support the use of the
+<a href="https://docs.cloud.google.com/load-balancing/docs/backend-service#bmtc-inflight"><em>in-flight</em> balancing mode</a>
+that lets you configure the load balancer's traffic distribution to supported
+backends when requests take more than a second to complete.</p>
+<p>This feature is in <strong>General availability</strong>.</p>]]></content>
+    <summary>You can now configure traffic duration settings for Application Load Balancers, choosing between SHORT or LONG to match backend response times. This feature, now in general availability, also supports in-flight balancing mode for requests exceeding one second.</summary>
+    <title>Feature: New traffic duration settings for load balancers</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

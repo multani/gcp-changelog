@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-05-21T00:00:00+00:00</updated>
+  <updated>2026-05-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-05-25:feature:0</id>
+    <published>2026-05-25T00:00:00+00:00</published>
+    <updated>2026-05-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To monitor the efficiency of the GKE training JobSet, the following two GKE
+system metrics are available in Preview:</p>
+<ul>
+<li><code>kubernetes.io/jobset/scheduling_goodput</code>: the fraction of time that all the
+  resources required to run the training JobSet are available.</li>
+<li><code>kubernetes.io/jobset/proxy_runtime_goodput</code>: the fraction of time that all
+  required accelerators are productive. This metric provides an estimate of the
+  real runtime goodput.</li>
+</ul>
+<p>For details about GKE metrics, see <a href="https://docs.cloud.google.com/monitoring/api/metrics_kubernetes#kubernetes-kubernetes">Kubernetes
+metrics</a>.
+For details about goodput metrics that are used to measure efficiency, see
+<a href="https://docs.cloud.google.com/tpu/docs/goodput#jobset-dashboard">Monitor goodput with the ML Goodput Measurement
+library</a>.</p>
+<p>You can also view these new GKE metrics in the <a href="https://docs.cloud.google.com/kubernetes-engine/docs/tutorials/tpu-multislice-kueue#monitor_the_workloads">JobSet monitoring dashboard</a>.</p>]]></content>
+    <summary>Two new GKE system metrics are now available in Preview to help you monitor the efficiency of your training JobSets. These metrics track resource availability and accelerator productivity, providing insights into your job's performance.</summary>
+    <title>Feature: New metrics for GKE training jobs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

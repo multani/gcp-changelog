@@ -1,5 +1,27 @@
 # Google Kubernetes Engine
 
+## 2026-05-25
+
+### Feature
+
+To monitor the efficiency of the GKE training JobSet, the following two GKE
+system metrics are available in Preview:
+
+* `kubernetes.io/jobset/scheduling_goodput`: the fraction of time that all the
+  resources required to run the training JobSet are available.
+* `kubernetes.io/jobset/proxy_runtime_goodput`: the fraction of time that all
+  required accelerators are productive. This metric provides an estimate of the
+  real runtime goodput.
+
+For details about GKE metrics, see [Kubernetes
+metrics](https://docs.cloud.google.com/monitoring/api/metrics_kubernetes#kubernetes-kubernetes).
+For details about goodput metrics that are used to measure efficiency, see
+[Monitor goodput with the ML Goodput Measurement
+library](https://docs.cloud.google.com/tpu/docs/goodput#jobset-dashboard).
+
+You can also view these new GKE metrics in the [JobSet monitoring dashboard](https://docs.cloud.google.com/kubernetes-engine/docs/tutorials/tpu-multislice-kueue#monitor_the_workloads).
+
+---
 ## 2026-05-21
 
 ### Change

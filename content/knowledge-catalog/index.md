@@ -1,5 +1,40 @@
 # Knowledge Catalog
 
+## 2026-05-25
+
+### Feature
+
+Data products in Knowledge Catalog is
+Generally Available ([GA](https://cloud.google.com/products#product-launch-stages)).
+A data product serves as a logical, curated package of data assets and context
+designed to solve a specific business problem.
+
+This release includes the following new features:
+
+* **Approval workflows for data product consumption:** Data product consumers
+  can browse published data products, submit access requests, and track their
+  status. Data product owners can track, approve, or reject access requests
+  using the Google Cloud Console or the API. For more information, see
+  [Use data products](https://cloud.google.com/dataplex/docs/use-data-products)
+  and
+  [Manage data products](https://cloud.google.com/dataplex/docs/manage-data-products).
+* **Automated documentation and insights:** Data product owners can leverage
+  Knowledge Catalog data insights and Gemini to automatically generate sample
+  queries, business insights, and documentation templates for data products.
+  For more information, see
+  [Create data products](https://cloud.google.com/dataplex/docs/create-data-products).
+* **Service account support:** Data product owners can configure service
+  accounts in access groups, and data product consumers can request access for
+  their service accounts. For more information, see
+  [Create data products](https://cloud.google.com/dataplex/docs/create-data-products).
+* **Remote Model Context Protocol (MCP) server support (Preview)** Data
+  applications and AI agents can programmatically interact with data products.
+  By deploying the Knowledge Catalog remote MCP server, developers can create
+  data products, discover data products, and inspect data product metadata from
+  external IDEs and LLM clients. For more information, see
+  [Access data products using Model Context Protocol](https://cloud.google.com/dataplex/docs/use-data-products#mcp-server).
+
+---
 ## 2026-05-15
 
 ### Feature

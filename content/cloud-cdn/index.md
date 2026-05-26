@@ -1,5 +1,18 @@
 # Cloud CDN
 
+## 2026-05-26
+
+### Feature
+
+For [global external Application Load Balancers](https://docs.cloud.google.com/load-balancing/docs/https/setting-up-global-traffic-mgmt#cdn-cache-policy), you can configure Cloud CDN
+cache policies at various levels of a URL map, providing more granular control
+over caching. You can now apply specific caching logic based on hostnames,
+URL paths, HTTP headers, and query parameters. This feature is
+**Generally Available**.
+
+For more information, see [Cache policies in URL maps](https://docs.cloud.google.com/cdn/docs/caching#cache-policies-url-maps).
+
+---
 ## 2026-04-30
 
 ### Feature

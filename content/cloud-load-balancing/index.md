@@ -1,5 +1,30 @@
 # Cloud Load Balancing
 
+## 2026-05-26
+
+### Feature
+
+Frontend configuration for load balancing incoming IPv6 traffic is now supported
+for the following load balancers:
+
+* Regional external Application Load Balancer
+* Regional external proxy Network Load Balancer
+* Regional internal Application Load Balancer
+* Regional internal proxy Network Load Balancer
+* Cross-region internal Application Load Balancer
+* Cross-region internal proxy Network Load Balancer
+
+This feature is in **Preview**.
+
+For more information, see the following documentation:
+
+* [Forwarding rules overview](https://docs.cloud.google.com/load-balancing/docs/forwarding-rule-concepts)
+* [IPv6 for Application Load Balancers and proxy Network Load Balancers](https://docs.cloud.google.com/load-balancing/docs/ipv6)
+* [Convert Application Load Balancer to IPv6](https://docs.cloud.google.com/load-balancing/docs/https/convert-applb-dualstack)
+* [Convert Proxy Network Load Balancer to IPv6](https://docs.cloud.google.com/load-balancing/docs/tcp/convert-proxynetlb-dualstack)
+* [Proxy-only subnets for Envoy-based load balancers](https://docs.cloud.google.com/load-balancing/docs/proxy-only-subnets#proxy_only_subnet_create)
+
+---
 ## 2026-05-22
 
 ### Feature

@@ -1,5 +1,18 @@
 # Cloud Trace
 
+## 2026-05-26
+
+### Feature
+
+The following remote MCP servers automatically generate a trace span for
+`tools/call` operations. These spans can help you understand the behavior of
+your agentic applications. For more information, see
+[Investigate MCP calls using Trace](https://docs.cloud.google.com/stackdriver/docs/instrumentation/trace-remote-mcp-server-calls).
+
+* BigQuery
+* Cloud SQL
+
+---
 ## 2026-05-11
 
 ### Feature

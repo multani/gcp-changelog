@@ -1,6 +1,24 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2026-05-24": [
+      {
+        "kind": "Feature",
+        "content": "**[Spotlight Feature] Create and manage calculated fields**\n\nThe Calculated Fields feature is now available in Preview. With Calculated Fields, you can dynamically derive new data points within Google Security Operations cases and alerts. By defining logical formulas, you can compute values based on existing system or custom fields. The calculated value is automatically evaluated and stored in a user-selected, pre-existing custom field (labeled **Target Field**) in real time.\n\nFor more information, see [Create and manage calculated fields](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/calculated-fields).",
+        "summary": {
+          "title": "New Calculated Fields Feature",
+          "summary": "You can now create and manage calculated fields in Google Security Operations. This feature allows you to dynamically derive new data points within cases and alerts by defining logical formulas based on existing fields. The calculated values are automatically evaluated and stored in real time."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Time range selection for searches**\n\nGoogle SecOps has now added relative and absolute time range options to define\nthe required time period for retrieving search results.\n\n* **Relative time range**: Set a search window looking backward from the current time\n  using custom intervals.\n* **Absolute time range**: Define fixed start and end times using calendar presets,\n  exact date and time selections, or event-based timeframes.\n\nFor more information, see [Set the date and time range](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#setDateTime).\n\n**Note:** This change follows a phased rollout from from **May 12, 2026**, to **May 18, 2026**.\nReach out to support if you do not see the new limits applied to your environment\nafter **May 18, 2026**.",
+        "summary": {
+          "title": "New Search Time Range Options",
+          "summary": "You can now specify precise time ranges for your searches, using either relative intervals looking back from the current time or absolute fixed start and end dates. This enhancement allows for more targeted data retrieval."
+        }
+      }
+    ],
     "2026-05-18": [
       {
         "kind": "Feature",
@@ -53,16 +71,6 @@
         }
       }
     ],
-    "2026-05-12": [
-      {
-        "kind": "Change",
-        "content": "**Time range selection for searches**\n\nGoogle SecOps has now added relative and absolute time range options to define\nthe required time period for retrieving search results.\n\n* **Relative time range**: Set a search window looking backward from the current time\n  using custom intervals.\n* **Absolute time range**: Define fixed start and end times using calendar presets,\n  exact date and time selections, or event-based timeframes.\n\nFor more information, see [Set the date and time range](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#setDateTime).\n\n**Note:** This change follows a phased rollout from from **May 12, 2026**, to **May 18, 2026**.\nReach out to support if you do not see the new limits applied to your environment\nafter **May 18, 2026**.",
-        "summary": {
-          "title": "New Time Range Options for Searches",
-          "summary": "You can now specify relative or absolute time ranges when retrieving search results. This allows for more precise control over the data you analyze. The feature was rolled out from May 12 to May 18, 2026."
-        }
-      }
-    ],
     "2026-05-05": [
       {
         "kind": "Change",
@@ -100,6 +108,16 @@
         "summary": {
           "title": "New Parser Documentation Available",
           "summary": "New documentation is now available to help you ingest and normalize logs from a variety of sources, including security, cloud, and application platforms. These updates provide expanded capabilities for log management and analysis."
+        }
+      }
+    ],
+    "2026-05-12": [
+      {
+        "kind": "Change",
+        "content": "**Time range selection for searches**\n\nGoogle SecOps has now added relative and absolute time range options to define\nthe required time period for retrieving search results.\n\n* **Relative time range**: Set a search window looking backward from the current time\n  using custom intervals.\n* **Absolute time range**: Define fixed start and end times using calendar presets,\n  exact date and time selections, or event-based timeframes.\n\nFor more information, see [Set the date and time range](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#setDateTime).\n\n**Note:** This change follows a phased rollout from from **May 12, 2026**, to **May 18, 2026**.\nReach out to support if you do not see the new limits applied to your environment\nafter **May 18, 2026**.",
+        "summary": {
+          "title": "New Time Range Options for Searches",
+          "summary": "You can now specify relative or absolute time ranges when retrieving search results. This allows for more precise control over the data you analyze. The feature was rolled out from May 12 to May 18, 2026."
         }
       }
     ],

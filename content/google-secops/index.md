@@ -1,5 +1,34 @@
 # Google SecOps
 
+## 2026-05-24
+
+### Feature
+
+**[Spotlight Feature] Create and manage calculated fields**
+
+The Calculated Fields feature is now available in Preview. With Calculated Fields, you can dynamically derive new data points within Google Security Operations cases and alerts. By defining logical formulas, you can compute values based on existing system or custom fields. The calculated value is automatically evaluated and stored in a user-selected, pre-existing custom field (labeled **Target Field**) in real time.
+
+For more information, see [Create and manage calculated fields](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/calculated-fields).
+
+### Change
+
+**Time range selection for searches**
+
+Google SecOps has now added relative and absolute time range options to define
+the required time period for retrieving search results.
+
+* **Relative time range**: Set a search window looking backward from the current time
+  using custom intervals.
+* **Absolute time range**: Define fixed start and end times using calendar presets,
+  exact date and time selections, or event-based timeframes.
+
+For more information, see [Set the date and time range](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#setDateTime).
+
+**Note:** This change follows a phased rollout from from **May 12, 2026**, to **May 18, 2026**.
+Reach out to support if you do not see the new limits applied to your environment
+after **May 18, 2026**.
+
+---
 ## 2026-05-18
 
 ### Feature

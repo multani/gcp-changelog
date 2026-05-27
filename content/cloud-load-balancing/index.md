@@ -4,6 +4,15 @@
 
 ### Feature
 
+For global external Application Load Balancers, you can configure Cloud CDN cache policies at
+various levels of a URL map. This provides granular control over caching
+policies based on criteria like hostname, URL path, HTTP headers, and query
+parameters. This feature is in **General availability**.
+
+For more information, see [Configure a Cloud CDN cache policy](https://docs.cloud.google.com/load-balancing/docs/https/setting-up-global-traffic-mgmt#cdn-cache-policy).
+
+### Feature
+
 Frontend configuration for load balancing incoming IPv6 traffic is now supported
 for the following load balancers:
 

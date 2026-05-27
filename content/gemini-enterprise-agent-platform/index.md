@@ -2,10 +2,6 @@
 
 ## 2026-05-26
 
-### Feature
-
-
-
 ### The Gemini Deep Research Agent (Preview)
 
 The Gemini Deep Research Agent is in Preview. The Gemini Deep Research Agent

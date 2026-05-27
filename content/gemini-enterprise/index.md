@@ -1,5 +1,32 @@
 # Gemini Enterprise
 
+## 2026-05-26
+
+### Deprecated
+
+**Gemini Enterprise: Gemini Enterprise assist is deprecated**
+
+The Gemini Enterprise assist feature is deprecated and shut down.
+Users can now find comprehensive and relevant answers directly in the
+Gemini Enterprise documentation.
+
+### Announcement
+
+**Gemini Enterprise: Administrator control for Gemini 3.5 Flash**
+
+Gemini Enterprise administrators can use the feature management toggle to turn on
+or turn off Gemini 3.5 Flash, controlling its visibility in the
+Gemini Enterprise app chat box.
+
+The feature management toggle for Gemini 3.5 Flash will not be
+available after June 8, 2026. Starting June 8, 2026, Gemini 3.5 Flash
+is enabled by default and cannot be turned off for users in the Gemini Enterprise
+app.
+
+For more information about feature controls, see
+[Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-05-21
 
 ### Feature

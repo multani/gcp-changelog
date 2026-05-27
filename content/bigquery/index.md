@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-05-27
+
+### Change
+
+An updated version of the
+[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
+is now available.
+
+---
 ## 2026-05-26
 
 ### Feature

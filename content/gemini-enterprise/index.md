@@ -10,6 +10,15 @@ The Gemini Enterprise assist feature is deprecated and shut down.
 Users can now find comprehensive and relevant answers directly in the
 Gemini Enterprise documentation.
 
+### Feature
+
+**Gemini Enterprise: Data store for PagerDuty (Preview)**
+
+You can connect PagerDuty data stores to Gemini Enterprise.
+
+Support for PagerDuty data stores is in Public Preview. For more information,
+see [Connect PagerDuty](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/pagerduty).
+
 ### Announcement
 
 **Gemini Enterprise: Administrator control for Gemini 3.5 Flash**

@@ -1,5 +1,18 @@
 # Oracle Database@Google Cloud
 
+## 2026-05-27
+
+### Feature
+
+For Exadata Database Service on Exascale infrastructure, Base Database Service, and Goldengate, Oracle Database@Google Cloud adds
+the following regions and zones:
+
+* `australia-southeast2-a-r2` (Melbourne, Australia)
+* `europe-west8-b-r1` and `europe-west8-a-r1` (Milan, Italy)
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-05-20
 
 ### Feature

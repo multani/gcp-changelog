@@ -1,5 +1,12 @@
 # App Engine standard environment Python
 
+## 2026-05-27
+
+### Feature
+
+Enable only needed legacy bundled services using the [`app_engine_bundled_services`](https://docs.cloud.google.com/appengine/docs/standard/reference/app-yaml?tab=python#app_engine_bundled_services) field for improved security and maintainability of your applications ([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+---
 ## 2026-05-21
 
 ### Feature

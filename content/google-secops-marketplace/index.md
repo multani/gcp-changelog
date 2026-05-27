@@ -1,5 +1,12 @@
 # Google SecOps Marketplace
 
+## 2026-05-27
+
+### Feature
+
+New **Cloud Identity** integration
+
+---
 ## 2026-05-20
 
 ### Change

@@ -1,5 +1,63 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-05-26
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where URLs copied from Microsoft Word into SMS chat sessions
+  were incorrectly formatted, causing links to merge with adjacent text.
+* Fixed an issue with Alvaria campaigns where the dialer didn't correctly use
+  the country code from the **@COUNTRYCODE** field when selecting the contact
+  number to dial.
+* Fixed an issue where live transcription didn't resume after an agent enabled
+  and then disabled redaction during IVR payment card collection.
+* Fixed an issue where agents couldn't upload PDF files in chat sessions.
+* Fixed an issue where end-users encountered errors or empty details when
+  accessing call history immediately after a call ended.
+* Fixed an issue where agents became stuck in the `In-call` status and
+  couldn't end calls or change their status, preventing them from handling new
+  interactions.
+* Fixed an issue where the deletion of the default greeting message for a
+  language didn't persist.
+* Fixed a web SDK issue where scheduling a call in one queue incorrectly
+  showed the **Reschedule Call** screen from a different queue.
+* Fixed an issue that occurred when a human agent invoked the payment virtual
+  task assistant to collect card details. When the call was transferred back
+  to the human agent, live transcription and sentiment analysis didn't resume.
+* Fixed an issue where HubSpot ticket creation failed when **Skip CRM Account
+  Creation** and **Skip Account Lookup** were enabled. This resulted in
+  tickets being created without an associated phone number.
+* Fixed an issue where, after transferring a call from one queue to another,
+  the receiving agent's desktop temporarily showed the source queue's agent
+  desktop layout instead of the destination queue's layout.
+* Fixed an issue where outbound Telnyx calls got stuck on the agent adapter
+  **Connecting** screen when **Agent Voice Detection** was enabled globally.
+* Fixed an issue where Alvaria Advanced Outreach outbound campaign batch files
+  weren't ingested by Contact Center AI Platform, preventing campaigns from loading
+  contacts.
+* Fixed an issue where a single inbound call in Salesforce created two cases.
+* Fixed an issue where the **Agents** dashboard showed an invalid `-10` agent
+  status during wrap-up and after calls.
+* Fixed an issue where Alvaria WFM Agent Performance reports displayed no
+  agent activity.
+* Fixed an issue where the NICE WFM exporter reported higher abandoned call
+  counts than Contact Center AI Platform reporting.
+* Fixed an issue where chats escalated from a virtual agent to a human agent
+  were dismissed shortly after assignment.
+* Fixed an issue where the **Ticket URL** column in the **Individual Call
+  History CSV report** was blank for newly recorded calls, preventing
+  customers from accessing and downloading call recordings from the report.
+* Fixed an issue where newly created teams couldn't be reordered in the
+  CCAI Platform portal.
+* Fixed an issue where the agent desktop **Previous Interactions** panel
+  didn't show Agent Assist summaries from past calls.
+* Fixed an issue where conversation history didn't display correctly in the
+  agent adapter when a chat was escalated from a virtual agent to a human
+  agent and then a large number of messages were sent by the end-user.
+
+---
 ## 2026-05-21
 
 ### Announcement

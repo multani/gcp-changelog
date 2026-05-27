@@ -1,5 +1,17 @@
 # Generative AI on Vertex AI
 
+## 2026-05-26
+
+### Deprecated
+
+**Vertex AI Extensions deprecation**
+
+Vertex AI Extensions is deprecated and will be shut down after November 26, 2026.
+We recommend
+[migrating to Agent Platform](https://docs.cloud.google.com/vertex-ai/generative-ai/docs/extensions/migrate)
+to avoid service disruption.
+
+---
 ## 2026-04-17
 
 ### Feature

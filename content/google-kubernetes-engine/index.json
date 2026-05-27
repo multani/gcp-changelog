@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-05-26": [
+      {
+        "kind": "Feature",
+        "content": "Cloud Storage FUSE CSI driver is now supported for Google Cloud Dedicated\nclusters and node pools running GKE version 1.36.0-gke.1266000 and higher. To\nuse the driver, you must specify the `custom-endpoint` mount option by using\neither the [gcsfuse CLI](https://docs.cloud.google.com/storage/docs/cloud-storage-fuse/cli-options#options)\nor the [configuration\nfile](https://docs.cloud.google.com/storage/docs/cloud-storage-fuse/config-file#format-and-fields) format.\nFor more information, see [About Cloud Storage FUSE CSI driver for\nGKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/cloud-storage-fuse-csi-driver).",
+        "summary": {
+          "title": "Cloud Storage FUSE CSI driver support expanded",
+          "summary": "The Cloud Storage FUSE CSI driver is now supported for Google Cloud Dedicated clusters and node pools on GKE version 1.36.0-gke.1266000 and higher. To enable this feature, you need to specify the `custom-endpoint` mount option using either the gcsfuse CLI or the configuration file. This enhancement improves integration for GKE workloads accessing Cloud Storage."
+        }
+      }
+    ],
     "2026-05-25": [
       {
         "kind": "Feature",

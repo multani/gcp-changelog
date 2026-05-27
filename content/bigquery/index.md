@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-05-26
+
+### Feature
+
+The [Data Science Agent](https://docs.cloud.google.com/bigquery/docs/colab-data-science-agent) (DSA) for
+Colab Enterprise and BigQuery is now [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2026-05-20
 
 ### Announcement

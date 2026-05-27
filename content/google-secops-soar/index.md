@@ -2,6 +2,14 @@
 
 ## 2026-05-24
 
+### Feature
+
+**Create and manage calculated fields**
+
+The Calculated Fields feature is now available in Preview. With Calculated Fields, you can dynamically derive new data points within Google Security Operations cases and alerts. By defining logical formulas, you can compute values based on existing system or custom fields. The calculated value is automatically evaluated and stored in a user-selected, pre-existing custom field (labeled **Target Field**) in real time.
+
+For more information, see [Create and manage calculated fields](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/calculated-fields).
+
 ### Announcement
 
 Release 6.3.86 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).

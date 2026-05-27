@@ -1,5 +1,22 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-26
+
+### Feature
+
+
+
+### The Gemini Deep Research Agent (Preview)
+
+The Gemini Deep Research Agent is in Preview. The Gemini Deep Research Agent
+is a managed AI agent that plans, executes, and synthesizes complex,
+multi-step research workflows across the public web and private enterprise data
+to generate comprehensive, cited reports.
+
+For more information, see [Use the Gemini Deep Research
+Agent](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research).
+
+---
 ## 2026-05-20
 
 ### Change

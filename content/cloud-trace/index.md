@@ -2,6 +2,47 @@
 
 ## 2026-05-26
 
+### Announcement
+
+Cloud Trace in Observability Analytics is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+Observability Analytics lets you query and analyze your trace data by using SQL.
+You can chart your query results, save your queries, and join your trace and
+log data.
+
+For more information, see the following documents:
+
+* [Query and analyze telemetry with Observability Analytics](https://docs.cloud.google.com/stackdriver/docs/observability/analytics).
+* [Chart SQL query results](https://docs.cloud.google.com/stackdriver/docs/observability/analytics-chart)
+* [Sample SQL queries](https://docs.cloud.google.com/stackdriver/docs/observability/analytics-samples)
+* [Analyze trace data with BigQuery](https://docs.cloud.google.com/trace/docs/analytics-query-linked-dataset).
+
+### Announcement
+
+The Observability API is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+This API lets you configure the following:
+
+* The default storage location and the default encryption key for your
+  trace data.
+* The observability scope.
+* A linked BigQuery dataset, which lets your use BigQuery
+  services to analyze your trace data.
+
+For more information, see the following documents:
+
+* [Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets)
+* [Configure observability scopes for multi-project queries](https://docs.cloud.google.com/stackdriver/docs/observability/scopes)
+* [Manage observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/storage-manage)
+* [API overview](https://docs.cloud.google.com/stackdriver/docs/reference/api-overview)
+
+### Announcement
+
+Trace scopes are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+For more information, see
+[Create and manage trace scopes](https://docs.cloud.google.com/trace/docs/trace-scope/create-and-manage).
+
 ### Feature
 
 The following remote MCP servers automatically generate a trace span for

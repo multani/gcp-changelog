@@ -1,0 +1,159 @@
+{
+  "name": "570.0.0 (2026-05-27)",
+  "entries": {
+    "2026-05-27": [
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Rebuilt Windows bundled Python for the `gcloud` CLI with cryptography 46.0.7 and pyOpenSSL 26.0.0.\n* Updated Linux bundled Python for the `gcloud` CLI to 3.14.5.\n* Updated the `gcloud` CLI authentication caching logic to natively store and refresh Regional Access Boundary (RAB) data.\n* Reverted Windows PuTTY executables to version 0.81 due to a breakage.",
+        "summary": {
+          "title": "gcloud CLI Updates",
+          "summary": "The gcloud CLI has been updated with improvements to bundled Python on Windows and Linux, enhanced authentication caching for Regional Access Boundary data, and a reversion of Windows PuTTY executables to version 0.81."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Added flag `--labels` to `gcloud beta alloydb instances create|create-secondary` commands assign labels to an instance.\n* Added flags `--update-labels`, `--remove-labels`, and `--clear-labels` to `gcloud beta alloydb instances update` commands to update, remove, or clear labels for an instance.",
+        "summary": {
+          "title": "Manage instance labels",
+          "summary": "You can now assign, update, remove, or clear labels for AlloyDB instances using new gcloud command flags. This allows for better organization and management of your database resources."
+        }
+      },
+      {
+        "kind": "Beyondcorp",
+        "content": "* Enabled IAM conditions support for `add-iam-policy-binding` and\n  `remove-iam-policy-binding` commands under\n  `gcloud beyondcorp security-gateways` and\n  `gcloud beyondcorp security-gateways applications`.\n  Added sample values for conditions in command help text.",
+        "summary": {
+          "title": "IAM conditions for security gateways",
+          "summary": "You can now use IAM conditions with the `add-iam-policy-binding` and `remove-iam-policy-binding` commands for BeyondCorp security gateways and applications. Sample values for conditions are now available in the command help text to assist you."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Promoted `gcloud biglake hive catalogs` to beta.\n* Promoted `gcloud biglake hive databases` to beta.\n* Promoted federated unity catalog flags of `gcloud biglake iceberg catalogs` to beta.\n* Promoted `--primary-location` flag of `gcloud biglake iceberg catalogs` to GA.",
+        "summary": {
+          "title": "BigLake Hive and Iceberg features reach beta",
+          "summary": "Key BigLake features for managing Hive and Iceberg data, including hive catalogs, hive databases, and federated unity catalog flags for iceberg catalogs, have been promoted to beta. Additionally, the `--primary-location` flag for iceberg catalogs has reached General Availability."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Remove `--alpha=reservation_groups` in `bq mk`, `show`, `ls` and `rm --reservation_group` operations.\n* Added support for table identifiers in the form of\n  `project.catalog.namespace.table`.\n* Added support for dataset identifiers in the form of `catalog.namespace`.\n* Added support for showing and removing row access policies using the `bq show` and `bq rm` commands.\n* Fixed 'NoneType' error handling and short assignment ID parsing in `bq mk --reservation_assignment` when `reservation_id` is not specified.\n* Added support for specifying a reservation assignment name in `bq mk --reservation_assignment`.\n* Added support for `principal` field for the `bq mk`, `bq ls`, and `bq show` commands with the flag `--reservation_assignment`.\n* Removed the frozen dependency on an old version of `absl`.",
+        "summary": {
+          "title": "BigQuery CLI updates",
+          "summary": "The BigQuery command-line tool has been updated with several new features and improvements. These include support for new table and dataset identifier formats, enhanced row access policy management, and improved reservation assignment capabilities. Additionally, several bugs have been fixed, and unnecessary flags have been removed."
+        }
+      },
+      {
+        "kind": "Cloud Alerting",
+        "content": "* Fixing List Alerts `gcloud` CLI example commands.",
+        "summary": {
+          "title": "Fixing CLI example commands for list alerts",
+          "summary": "We have corrected the `gcloud` CLI example commands used for listing alerts. This update ensures that users can accurately retrieve alert information using the command-line interface."
+        }
+      },
+      {
+        "kind": "Cloud Backup DR",
+        "content": "* Added `--use-project-service-account` flag for `gcloud backup-dr backups restore compute` and `gcloud backup-dr backups restore disk`.",
+        "summary": {
+          "title": "New flag for backup restore",
+          "summary": "The gcloud backup-dr command now supports a `--use-project-service-account` flag for restoring compute instances and disks. This enhancement simplifies the restore process by allowing the use of the project's service account."
+        }
+      },
+      {
+        "kind": "Cloud Dataplex",
+        "content": "* Added `--all-schema-fields` flag to `gcloud dataplex context lookup` to include all schema fields in the context.",
+        "summary": {
+          "title": "Dataplex context lookup enhancement",
+          "summary": "The `gcloud dataplex context lookup` command now supports an `--all-schema-fields` flag. This flag allows users to include all schema fields when retrieving context, providing more comprehensive data insights."
+        }
+      },
+      {
+        "kind": "Cloud Key Management Service",
+        "content": "* Added `--project` flag to `gcloud kms autokey-config describe` to support project-level Autokey configurations.\n* Updated `gcloud kms autokey-config update` to support project-level Autokey configurations.\n* Updated `gcloud kms autokey-config update` to support the `key-project-resolution-mode` field.",
+        "summary": {
+          "title": "Autokey configuration updates",
+          "summary": "The Cloud Key Management Service now supports project-level Autokey configurations. Updates include adding a --project flag to describe commands and enhancing update commands to support project-level configurations and the key-project-resolution-mode field."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added interactive prompt instead of erroring out when project is not specified in `gcloud beta run deploy`.\n* Added support for suggesting project and region from Artifact Registry URL in `gcloud beta run deploy`.\n* Added `--[no]--ssh` flag to `gcloud beta run deploy` and `gcloud beta run services update` to enable or disable SSH access to the Cloud Run service's container instances.\n* Added `--domain` flag to `gcloud beta run deploy` to create domain mappings on the fly during service deployment.",
+        "summary": {
+          "title": "Cloud Run: Enhanced gcloud CLI experience",
+          "summary": "The gcloud CLI for Cloud Run now offers an interactive prompt for missing project information and suggests project/region from Artifact Registry URLs. It also introduces SSH access control and the ability to create domain mappings directly during deployment."
+        }
+      },
+      {
+        "kind": "Cloud Spanner",
+        "content": "* Add `--labels` flag to `gcloud spanner instances create` command to support\n  specifying labels during instance creation.\n* Add `--update-labels`, `--clear-labels` and `--remove-labels` flags to\n  `gcloud spanner instances update` command to support updating labels.",
+        "summary": {
+          "title": "Manage Spanner instance labels",
+          "summary": "You can now add and update labels for Cloud Spanner instances using the gcloud spanner command-line tool. The `gcloud spanner instances create` command supports a `--labels` flag for initial creation, while the `gcloud spanner instances update` command provides flags like `--update-labels`, `--clear-labels`, and `--remove-labels` for modifying existing labels."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* Added `--enable-ingest-on-write` flag to\n  `gcloud storage buckets anywhere-caches update` to support enabling cache\n  ingest on write, and enabled rendering of the parsed property in the\n  `anywhere-caches describe` command output.\n* Added `--enable-ingest-on-write` flag to\n  `gcloud storage buckets anywhere-caches create` to support enabling cache ingest\n  on write.",
+        "summary": {
+          "title": "Cloud Storage cache ingest on write",
+          "summary": "New flags for Cloud Storage anywhere-caches allow enabling ingest on write during creation and update operations. This enhancement also provides visibility into the parsed property in the describe command output."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Added `--disk-archive-timeout` flag to `gcloud workstations configs create` and `gcloud workstations configs update` commands.\n* Added `--workstation-authorization-url` and `--workstation-launch-url` flags to `gcloud workstations clusters create` command.\n* Added `--workstation-authorization-url` and `--workstation-launch-url` flags to `gcloud workstations clusters update` command.",
+        "summary": {
+          "title": "New Cloud Workstations Features",
+          "summary": "New flags have been added to Cloud Workstations commands, including options for disk archive timeouts and workstation URLs. These updates enhance the flexibility and control over workstation configurations and launches."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Added support for updating Slurm prolog, epilog, task prolog, and task epilog scripts.",
+        "summary": {
+          "title": "Update Slurm scripts support",
+          "summary": "Cluster Director now supports updating Slurm prolog, epilog, task prolog, and task epilog scripts. This enhancement allows for more flexible configuration of job execution environments."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `centos/rhel/rocky 10`, `debian 13`, `ubuntu 24.04/25.10` to allowed list of values for `osShortName` and `osVersion` of `gcloud compute instances ops-agents policies [create|update]`.\n* Promoted the `--location` flag of `gcloud compute interconnects update` to beta.\n* Promoted `--post-quantum-key-exchange` flag on `gcloud compute ssl-policies create` and `gcloud compute ssl-policies update` to GA.\n* Promoted `gcloud compute advice capacity` to `beta`.\n* Promoted `gcloud compute advice capacity-history` to `beta`.\n* Promoted `--resource-manager-tags` flag for `gcloud compute commitments create` to beta and GA.\n* Added `--stabilization-period` flag to\n  `gcloud compute instance-groups managed <set-autoscaling|update-autoscaling>`\n  to configure autoscaler load stabilization period before scale-in decisions.\n* Added `--minimal-action` flag to `gcloud compute instances update`.\n* Promoted `cachePolicy` support for `gcloud compute url-maps` to beta.\n* Promoted `--resolve-subnet-mask` flag for `gcloud compute networks subnets create` to GA.\n* Added `--resource-manager-tags` flag to `gcloud compute instant-snapshots create` in beta and GA.\n* Added `--remove-obsolete-endpoint-accept-reject-entries` flag to\n  `gcloud beta compute service-attachments update` to remove entries for\n  Private Service Connect endpoints that are no longer connected.\n* Promoted `--resource-manager-tags` flag for `gcloud compute external-vpn-gateways create` to beta.\n* Promoted `--resource-manager-tags` flag for `gcloud compute target-vpn-gateways create` to beta.\n* Promoted `--resource-manager-tags` flag for `gcloud compute vpn-gateways create` to beta.\n* Promoted `--resource-manager-tags` flag for `gcloud compute vpn-tunnels create` to beta.\n* Added `--instance-flexibility-policy` flag for `gcloud compute instance-groups managed create` and `gcloud compute instance-groups managed update` commands in beta.\n* Added `CHIP_ERROR` as a valid value for `--fault-reasons` in `gcloud compute instances report-host-as-faulty` in alpha, beta, and GA.\n* Promoted `--target-service` flag for `gcloud compute service-attachments update` to GA.\n* Added `--resource-manager-tags` flag to `gcloud compute images create` in beta and GA.\n* Promoted `--network-ddos-adaptive-protection`,\n  `--network-ddos-impacted-baseline-threshold`, and\n  `--clear-network-ddos-impacted-baseline-threshold` flags for\n  `gcloud compute security-policies update` to beta.\n* Added `--resource-manager-tags` flag to `gcloud compute disks create` in beta and GA.\n* Added `--resource-manager-tags` flag to `gcloud compute snapshots create` in beta and GA.\n* Promoted `--view` flag of `gcloud compute forwarding-rules describe` to GA.\n* Promoted `gcloud compute org-rollouts cancel` to beta.\n* Promoted `gcloud compute org-rollouts delete` to beta.\n* Promoted `gcloud compute org-rollouts describe` to beta.\n* Promoted `gcloud compute org-rollouts list` to beta.\n* Promoted `gcloud compute org-rollout-plans create` to beta.\n* Promoted `gcloud compute org-rollout-plans delete` to beta.\n* Promoted `gcloud compute org-rollout-plans describe` to beta.\n* Promoted `gcloud compute org-rollout-plans list` to beta.\n* Removed validation on empty folder share list on `gcloud compute reservations create`.\n* Promoted `--secondary-ipv6-range` flag on\n  `gcloud compute networks subnets create`, and `--add-secondary-ipv6-range` and\n  `--remove-secondary-ipv6-range` flags on\n  `gcloud compute networks subnets update` to beta.\n* Promoted `--ipv6-aliases` flag to `gcloud compute instances create`, `gcloud compute instances network-interfaces [add|update]`, and `gcloud compute instance-templates create` in beta.\n* Added `--network-tier` flag to `gcloud compute public-advertised-prefixes create` in alpha.",
+        "summary": {
+          "title": "Compute Engine Updates",
+          "summary": "New OS images supported for Ops Agents, and several gcloud compute commands promoted to beta and GA. Enhancements include instance flexibility, autoscaler stabilization, and resource manager tag support across various resources. New flags added for network configurations and security policies."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Promoted `--enable-agent-sandbox` flag to GA for `gcloud container clusters create`, `gcloud container clusters create-auto`, and `gcloud container clusters update`.",
+        "summary": {
+          "title": "Agent sandbox now generally available",
+          "summary": "The agent sandbox feature, which enhances security for your Kubernetes clusters, is now generally available. You can enable it during cluster creation or update using the `--enable-agent-sandbox` flag."
+        }
+      },
+      {
+        "kind": "Network Connectivity",
+        "content": "* Promoted `gcloud network-connectivity spokes gateways` command group to GA, including `create` and `update` commands.\n* Added support for `HYBRID_INSPECTION` preset topology to `gcloud network-connectivity hubs create` in GA.",
+        "summary": {
+          "title": "Network Connectivity GA Commands Updated",
+          "summary": "The `gcloud network-connectivity spokes gateways` command group is now generally available, along with `create` and `update` commands. Additionally, support for `HYBRID_INSPECTION` preset topology has been added to `gcloud network-connectivity hubs create`."
+        }
+      },
+      {
+        "kind": "Network Management",
+        "content": "* Added `gcloud network-management network-monitoring-providers` command\n  group which manages the enablement state of the Network Insights service.\n* Added `gcloud network-management network-monitoring-providers\n  monitoring-points` command group which manages agents within a network or\n  application infrastructure that send probes.\n* Added `gcloud network-management network-monitoring-providers\n  network-paths` command group which manages the hop-by-hop route and active\n  network delivery quality between a monitoring point and a target\n  destination.\n* Added `gcloud network-management network-monitoring-providers\n  web-paths` command group which manages monitored web applications or URLs.",
+        "summary": {
+          "title": "Network Management CLI Enhancements",
+          "summary": "New gcloud commands are available for managing network monitoring providers, including enablement state, agents, network paths, and web paths. These additions enhance the capabilities for network observability and management through the command-line interface."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Promoted `gcloud network-security secure-access-connect` command group\n  to GA, including `attachments` and `realms` commands.\n* Restricted Symantec integration and localization arguments (such as\n  `--symantec-site` and `--country`) to `ALPHA` and `BETA` tracks only.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Secure Access Connect GA",
+          "summary": "The gcloud network-security secure-access-connect command group is now generally available, including attachments and realms commands. Some Symantec integration and localization arguments are now restricted to ALPHA and BETA tracks."
+        }
+      }
+    ]
+  }
+}

@@ -1,5 +1,17 @@
 # Document AI
 
+## 2026-05-27
+
+### Feature
+
+[Layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) image and
+table annotations is in [General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+
+Layout parser can identify if there are images or tables in parsed documents.
+When found, images and tables are annotated as a descriptive block of text with
+the information depicted in the image and table.
+
+---
 ## 2026-03-31
 
 ### Feature

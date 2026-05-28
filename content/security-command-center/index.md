@@ -16,6 +16,12 @@ The following [Compliance Manager frameworks](https://docs.cloud.google.com/secu
 * Qatar National Information Assurance Standard v2.1 (version 6.0)
 * SOC 2017 (version 7.0)
 
+### Deprecated
+
+The Security Command Center Enterprise service tier is deprecated. It will be shut down
+on May 21, 2027. By default, your organization will automatically move to the
+Premium service tier on that date.
+
 ### Feature
 
 [Artifact guard](https://docs.cloud.google.com/security-command-center/docs/artifact-guard-overview) is available in

@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-05-26T00:00:00+00:00</updated>
+  <updated>2026-05-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-05-27:feature:0</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>User ID logging now included with agent logs when you opt in to "Enable logging of prompt inputs and response outputs"</strong></p>
+<p>Prompt input and response output logging now includes the
+<code>user.id</code> field. This addition allows better tracking of
+anomalous tool interactions.</p>
+<p><strong>Important:</strong> Logging of <code>user.id</code> is included when opting in to "Enable logging of
+prompt inputs and response outputs" effective May 22, 2026 and later and with
+Agent Development Kit version 2.1 and later. If you opted in prior to this change, your
+logs do not include <code>user.id</code>. You will need to redeploy your agents and opt-in
+again for this setting to take effect.</p>
+<p>For details on configuration, see
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/tracing#write-traces">Write traces for an agent</a>.</p>]]></content>
+    <summary>Agent logs now include the user ID when prompt logging is enabled, enhancing the tracking of tool interactions. This feature is available for agents opted into prompt logging from May 22, 2026, or later, with Agent Development Kit version 2.1 or later.</summary>
+    <title>Feature: User ID added to agent logs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -20,6 +41,33 @@ to generate comprehensive, cited reports.</p>
 Agent</a>.</p>]]></content>
     <summary>Announcing the Gemini Deep Research Agent, a managed AI agent that automates complex research. It plans, executes, and synthesizes multi-step workflows across web and enterprise data to produce detailed, cited reports.</summary>
     <title>The Gemini Deep Research Agent (Preview): Gemini Deep Research Agent (Preview)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-05-26:agent platform sandboxes:1</id>
+    <published>2026-05-26T00:00:00+00:00</published>
+    <updated>2026-05-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Additional Agent Platform <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox">sandbox</a>
+features are now available:</p>
+<ul>
+<li><strong><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/computer-use">Computer use</a> (Preview)</strong>:
+  Enables agents to automate browser-based tasks within an isolated web
+  browser environment. You can control the browser using the API or connect
+  directly using the Chrome DevTools Protocol (CDP).</li>
+<li><strong><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/custom-containers">Custom container sandboxes</a> (Preview)</strong>:
+  Bring your own container (BYOC) to run custom workloads with specialized
+  dependencies hosted in Artifact Registry.</li>
+<li><strong><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/manage">Sandbox templates</a>(Preview)</strong>:
+  Define sandbox specifications as reusable templates relying on pre-warmed
+  pools to facilitate rapid, reliable startups.</li>
+<li><strong><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/snapshots">Sandbox snapshots</a> (Preview)</strong>:
+  Save the exact state of your sandbox environment (including dependencies and
+  file systems) and restore it to a new sandbox.</li>
+</ul>]]></content>
+    <summary>Explore enhanced Agent Platform sandboxes with new capabilities like computer use for browser automation, custom container support for specialized workloads, reusable sandbox templates for faster startups, and sandbox snapshots for state persistence. These preview features offer greater flexibility and efficiency in agent development and deployment.</summary>
+    <title>Agent Platform Sandboxes: New Agent Platform Sandbox Features</title>
   </entry>
   <entry>
     <author>

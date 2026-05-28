@@ -1,5 +1,6 @@
 # Google Cloud Platform Release Notes (by services)
 
+- [570.0.0 (2026-05-27)](570-0-0--2026-05-27-/index.md)
 - [AI Applications](ai-applications/index.md)
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)
@@ -85,6 +86,7 @@
 - [Cloud Router](cloud-router/index.md)
 - [Cloud Run](cloud-run/index.md)
 - [Cloud Run functions](cloud-run-functions/index.md)
+- [Cloud SDK](cloud-sdk/index.md)
 - [Cloud SQL for MySQL](cloud-sql-for-mysql/index.md)
 - [Cloud SQL for PostgreSQL](cloud-sql-for-postgresql/index.md)
 - [Cloud SQL for SQL Server](cloud-sql-for-sql-server/index.md)

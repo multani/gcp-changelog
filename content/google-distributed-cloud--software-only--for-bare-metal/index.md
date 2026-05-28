@@ -1,5 +1,33 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-05-27
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.34.500-gke.108 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.34.500-gke.108 runs on Kubernetes v1.34.7-gke.200.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.34.500-gke.108:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed an issue where, if a new control plane node failed to join a cluster during bootstrapping or scaling (associated with installer Ansible runner job failures), orphaned etcd memberships were not cleaned up, causing the existing control plane's API server to restart repeatedly (flap) and blocking subsequent retry attempts.
+* Fixed an issue where, during control plane certificate rotation or etcd encryption updates, the installer stalled for three minutes per control plane node while waiting for the local API server to restart, causing nodes to temporarily report an Unknown status and triggering transient routing disruptions (such as 503 Service Unavailable or ImagePullBackOff errors) for workloads scheduled on those nodes.
+* Fixed an issue where, when enabling or updating etcd encryption, the API server was terminated abruptly, causing transient connection timeouts or failures for in-cluster workloads for up to five minutes.
+* Fixed an issue where, when recreating a user cluster with a previously used name (which commonly occurs during Terraform deployments or manual reinstalls), cluster provisioning stalled indefinitely in the provisioning state due to a missing k8s-health-check service account. The installer ensures that the service account is created, eliminating the need to manually create the service account as a workaround.
+
+---
 ## 2026-05-21
 
 ### Announcement

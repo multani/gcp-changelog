@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-05-27": [
+      {
+        "kind": "Feature",
+        "content": "**User ID logging now included with agent logs when you opt in to \"Enable logging of prompt inputs and response outputs\"**\n\nPrompt input and response output logging now includes the\n`user.id` field. This addition allows better tracking of\nanomalous tool interactions.\n\n**Important:** Logging of `user.id` is included when opting in to \"Enable logging of\nprompt inputs and response outputs\" effective May 22, 2026 and later and with\nAgent Development Kit version 2.1 and later. If you opted in prior to this change, your\nlogs do not include `user.id`. You will need to redeploy your agents and opt-in\nagain for this setting to take effect.\n\nFor details on configuration, see\n[Write traces for an agent](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/tracing#write-traces).",
+        "summary": {
+          "title": "User ID added to agent logs",
+          "summary": "Agent logs now include the user ID when prompt logging is enabled, enhancing the tracking of tool interactions. This feature is available for agents opted into prompt logging from May 22, 2026, or later, with Agent Development Kit version 2.1 or later."
+        }
+      }
+    ],
     "2026-05-26": [
       {
         "kind": "The Gemini Deep Research Agent (Preview)",
@@ -8,6 +18,14 @@
         "summary": {
           "title": "Gemini Deep Research Agent (Preview)",
           "summary": "Announcing the Gemini Deep Research Agent, a managed AI agent that automates complex research. It plans, executes, and synthesizes multi-step workflows across web and enterprise data to produce detailed, cited reports."
+        }
+      },
+      {
+        "kind": "Agent Platform Sandboxes",
+        "content": "Additional Agent Platform [sandbox](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox)\nfeatures are now available:\n\n* **[Computer use](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/computer-use) (Preview)**:\n  Enables agents to automate browser-based tasks within an isolated web\n  browser environment. You can control the browser using the API or connect\n  directly using the Chrome DevTools Protocol (CDP).\n* **[Custom container sandboxes](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/custom-containers) (Preview)**:\n  Bring your own container (BYOC) to run custom workloads with specialized\n  dependencies hosted in Artifact Registry.\n* **[Sandbox templates](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/manage)(Preview)**:\n  Define sandbox specifications as reusable templates relying on pre-warmed\n  pools to facilitate rapid, reliable startups.\n* **[Sandbox snapshots](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/snapshots) (Preview)**:\n  Save the exact state of your sandbox environment (including dependencies and\n  file systems) and restore it to a new sandbox.",
+        "summary": {
+          "title": "New Agent Platform Sandbox Features",
+          "summary": "Explore enhanced Agent Platform sandboxes with new capabilities like computer use for browser automation, custom container support for specialized workloads, reusable sandbox templates for faster startups, and sandbox snapshots for state persistence. These preview features offer greater flexibility and efficiency in agent development and deployment."
         }
       }
     ],

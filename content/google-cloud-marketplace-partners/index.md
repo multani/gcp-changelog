@@ -1,5 +1,19 @@
 # Google Cloud Marketplace Partners
 
+## 2026-05-27
+
+### Change
+
+We've reduced the processing and delivery delay for Google Cloud Marketplace
+partner reports from 2 days (D+2) to 1 day (D+1), accelerating by one day the
+delivery of the
+[Customer Insights reports](https://docs.cloud.google.com/marketplace/docs/partners/reports/report-customer-insight)
+to Cloud Marketplace partners.
+
+For information about processing times, see
+[Customer Insights report frequency](https://docs.cloud.google.com/marketplace/docs/partners/reports/report-customer-insight#report_frequency)
+
+---
 ## 2025-12-04
 
 ### Feature

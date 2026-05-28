@@ -1,5 +1,72 @@
 # Looker
 
+## 2026-05-27
+
+### Announcement
+
+The following features will begin rolling out as part of Looker 26.8.
+
+### Feature
+
+The Looker [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) feature is now generally available.
+
+### Feature
+
+Conversational Analytics now supports the ability to run queries when users are in [Development Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode).
+
+### Feature
+
+Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing**](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing) setting on the **Preview** page in the **Admin** panel.
+
+### Feature
+
+Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To use this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Preview** admin page.
+
+### Feature
+
+Now available in preview, you can use natural language to instruct a Conversational Analytics data agent to create a [workflow](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-agentic-workflows) that notifies you when your data has met certain conditions. To use this feature, a Looker admin must turn on the **Agentic Workflows** setting on the **Gemini in Looker** admin page.
+
+### Feature
+
+Now available in preview, the [Looker-managed Model Context Protocol (MCP) server](https://docs.cloud.google.com/looker/docs/mcp) allows AI agents to securely connect to your Looker instance without requiring separate middleware. Looker admins can enable this feature and [manage which AI tools](https://docs.cloud.google.com/looker/docs/admin-panel-platform-mcp#model_context_protocol_mcp_settings) are available to developers from the new **Model Context Protocol (MCP)** page in the **Admin** panel. Usage of the managed MCP server is also tracked within [System Activity Explores](https://docs.cloud.google.com/looker/docs/mcp#system_activity) and [Cloud Audit Logs](https://docs.cloud.google.com/looker/docs/looker-core-audit-logging#sample_queries).
+
+### Feature
+
+Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes` statement to the `localization_settings` parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.
+
+### Feature
+
+Now available in preview, you can [publish the Conversational Analytics data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise. All users who have the `save_agents` permission will be granted the `publish_agent_externally` permission. To use this feature, a Looker admin must turn on the **Publish to Gemini Enterprise** setting on the **Gemini in Looker** admin page.
+
+### Feature
+
+Now available in preview, you can create and use Conversational Analytics [data agents on Looker user-defined dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards). Conversational Analytics uses the [Production Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode) of content when it queries Looker dashboards. To use this feature, a Looker admin must turn on the **Enable Dashboard Agents** setting on the **Gemini in Looker** admin page.
+
+### Feature
+
+Looker has introduced the following new feature updates for tabbed dashboards:
+
+* The ability to [add buttons with navigation to tabs](https://docs.cloud.google.com/looker/docs/tabbed-dashboards#add-buttons-with-navigation-to-tabs)
+* The ability to [duplicate tabs](https://docs.cloud.google.com/looker/docs/tabbed-dashboards#duplicate-tabs)
+* The ability to [select all or deselect all tiles on a dashboard tab for filters](https://docs.cloud.google.com/looker/docs/tabbed-dashboards#apply-filters)
+* The ability to [monitor dashboard tab usage with the **Dashboard** System Activity Explore](https://docs.cloud.google.com/looker/docs/tabbed-dashboards#monitor-dashboard-tab-usage-with-system-activity)
+* The ability to [schedule or send a single dashboard tab or a specific set of tabs](https://docs.cloud.google.com/looker/docs/tabbed-dashboards#schedule-pdf)
+* The ability to [download a single dashboard tab or a specific set of tabs](https://docs.cloud.google.com/looker/docs/tabbed-dashboards#download-pdf)
+* The ability to [add a dashboard tab view to a board](https://docs.cloud.google.com/looker/docs/tabbed-dashboards#add-to-board)
+
+### Feature
+
+The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature is now supported on Snowflake connections. Your Looker admin can select a Snowflake connection in the [**Default Connection** field](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable) of the **Self-service Explores** admin page. On Snowflake connections, you can [upload comma-separated files (CSV) and Excel files (XLS and XLSX)](https://docs.cloud.google.com/looker/docs/exploring-self-service#files-from-computer) to create a self-service Explore.
+
+### Feature
+
+The [Admin > Roles panel](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles) user interface has been updated.
+
+### Feature
+
+Looker admins can no longer create or manage API credentials for individual standard users in Looker (original) instances. Users must now [manage their own keys](https://docs.cloud.google.com/looker/docs/user-account#api-keys) from their **Account** page. Admins can [enable or disable self-service API key management](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#api_keys) for users and continue to manage credentials for API-only service accounts. To improve security, API keys are no longer visible to admins while they are [sudoing](https://docs.cloud.google.com/looker/docs/admin-panel-users-users#impersonating_users) as another user.
+
+---
 ## 2026-05-08
 
 ### Announcement
@@ -26,11 +93,11 @@ The ability for dashboard editors to [set default row and column limits](https:/
 
 ### Feature
 
-Available in preview, you can [publish the Conversational Analytics Explore data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise. All users who have the `save_agents` permission will be granted the `publish_agent_externally` permission. **Note**: This feature is not yet available. This release note was updated on May 14, 2026.
+Now available in preview, you can create and use Conversational Analytics [data agents on dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards). Dashboard agents use the [Production Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode) of content when querying Looker dashboards. **Note**: This feature is not yet available. This release note was updated on May 14, 2026.
 
 ### Feature
 
-Available in preview, you can create and use Conversational Analytics [data agents on dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards). Dashboard agents uses the [Production Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode) of content when querying Looker dashboards. **Note**: This feature is not yet available. This release note was updated on May 14, 2026.
+Now available in preview, you can [publish the Conversational Analytics Explore data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents) that you create in Looker to Gemini Enterprise. All users who have the `save_agents` permission will be granted the `publish_agent_externally` permission. **Note**: This feature is not yet available. This release note was updated on May 14, 2026.
 
 ### Feature
 

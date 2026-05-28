@@ -1,5 +1,15 @@
 # Knowledge Catalog
 
+## 2026-05-27
+
+### Feature
+
+You can use the data lineage remote MCP server to interact with Knowledge Catalog (formerly Dataplex Universal Catalog) to query data lineage graphs, discover upstream data provenance, and analyze downstream impact.
+
+This feature is available in [preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Use the data lineage remote MCP server](https://docs.cloud.google.com/dataplex/docs/use-lineage-mcp).
+
+---
 ## 2026-05-25
 
 ### Feature

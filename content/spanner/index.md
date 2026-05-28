@@ -1,5 +1,17 @@
 # Spanner
 
+## 2026-05-27
+
+### Feature
+
+Spanner Graph supports a suite of
+[graph algorithms](https://docs.cloud.google.com/spanner/docs/graph/graph-algorithms-overview) covering
+use cases such as fraud detection, entity resolution, and recommendations.
+You can invoke graph algorithms as built-in function calls in Spanner Graph
+queries. You can save your output to Cloud Storage or Spanner.
+This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-18
 
 ### Feature

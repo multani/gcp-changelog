@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 570.0.0 (2026-05-27)</title>
+  <subtitle>Changelog for Google Cloud product: 570.0.0 (2026-05-27)</subtitle>
+  <updated>2026-05-27T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/570-0-0--2026-05-27-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:google cloud cli:0</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Rebuilt Windows bundled Python for the <code>gcloud</code> CLI with cryptography 46.0.7 and pyOpenSSL 26.0.0.</li>
+<li>Updated Linux bundled Python for the <code>gcloud</code> CLI to 3.14.5.</li>
+<li>Updated the <code>gcloud</code> CLI authentication caching logic to natively store and refresh Regional Access Boundary (RAB) data.</li>
+<li>Reverted Windows PuTTY executables to version 0.81 due to a breakage.</li>
+</ul>]]></content>
+    <summary>The gcloud CLI has been updated with improvements to bundled Python on Windows and Linux, enhanced authentication caching for Regional Access Boundary data, and a reversion of Windows PuTTY executables to version 0.81.</summary>
+    <title>Google Cloud CLI: gcloud CLI Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:alloydb:1</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added flag <code>--labels</code> to <code>gcloud beta alloydb instances create|create-secondary</code> commands assign labels to an instance.</li>
+<li>Added flags <code>--update-labels</code>, <code>--remove-labels</code>, and <code>--clear-labels</code> to <code>gcloud beta alloydb instances update</code> commands to update, remove, or clear labels for an instance.</li>
+</ul>]]></content>
+    <summary>You can now assign, update, remove, or clear labels for AlloyDB instances using new gcloud command flags. This allows for better organization and management of your database resources.</summary>
+    <title>AlloyDB: Manage instance labels</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:beyondcorp:2</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Enabled IAM conditions support for <code>add-iam-policy-binding</code> and
+  <code>remove-iam-policy-binding</code> commands under
+  <code>gcloud beyondcorp security-gateways</code> and
+  <code>gcloud beyondcorp security-gateways applications</code>.
+  Added sample values for conditions in command help text.</li>
+</ul>]]></content>
+    <summary>You can now use IAM conditions with the `add-iam-policy-binding` and `remove-iam-policy-binding` commands for BeyondCorp security gateways and applications. Sample values for conditions are now available in the command help text to assist you.</summary>
+    <title>Beyondcorp: IAM conditions for security gateways</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:biglake:3</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud biglake hive catalogs</code> to beta.</li>
+<li>Promoted <code>gcloud biglake hive databases</code> to beta.</li>
+<li>Promoted federated unity catalog flags of <code>gcloud biglake iceberg catalogs</code> to beta.</li>
+<li>Promoted <code>--primary-location</code> flag of <code>gcloud biglake iceberg catalogs</code> to GA.</li>
+</ul>]]></content>
+    <summary>Key BigLake features for managing Hive and Iceberg data, including hive catalogs, hive databases, and federated unity catalog flags for iceberg catalogs, have been promoted to beta. Additionally, the `--primary-location` flag for iceberg catalogs has reached General Availability.</summary>
+    <title>BigLake: BigLake Hive and Iceberg features reach beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:bigquery:4</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Remove <code>--alpha=reservation_groups</code> in <code>bq mk</code>, <code>show</code>, <code>ls</code> and <code>rm --reservation_group</code> operations.</li>
+<li>Added support for table identifiers in the form of
+  <code>project.catalog.namespace.table</code>.</li>
+<li>Added support for dataset identifiers in the form of <code>catalog.namespace</code>.</li>
+<li>Added support for showing and removing row access policies using the <code>bq show</code> and <code>bq rm</code> commands.</li>
+<li>Fixed 'NoneType' error handling and short assignment ID parsing in <code>bq mk --reservation_assignment</code> when <code>reservation_id</code> is not specified.</li>
+<li>Added support for specifying a reservation assignment name in <code>bq mk --reservation_assignment</code>.</li>
+<li>Added support for <code>principal</code> field for the <code>bq mk</code>, <code>bq ls</code>, and <code>bq show</code> commands with the flag <code>--reservation_assignment</code>.</li>
+<li>Removed the frozen dependency on an old version of <code>absl</code>.</li>
+</ul>]]></content>
+    <summary>The BigQuery command-line tool has been updated with several new features and improvements. These include support for new table and dataset identifier formats, enhanced row access policy management, and improved reservation assignment capabilities. Additionally, several bugs have been fixed, and unnecessary flags have been removed.</summary>
+    <title>BigQuery: BigQuery CLI updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud alerting:5</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixing List Alerts <code>gcloud</code> CLI example commands.</li>
+</ul>]]></content>
+    <summary>We have corrected the `gcloud` CLI example commands used for listing alerts. This update ensures that users can accurately retrieve alert information using the command-line interface.</summary>
+    <title>Cloud Alerting: Fixing CLI example commands for list alerts</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud backup dr:6</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--use-project-service-account</code> flag for <code>gcloud backup-dr backups restore compute</code> and <code>gcloud backup-dr backups restore disk</code>.</li>
+</ul>]]></content>
+    <summary>The gcloud backup-dr command now supports a `--use-project-service-account` flag for restoring compute instances and disks. This enhancement simplifies the restore process by allowing the use of the project's service account.</summary>
+    <title>Cloud Backup DR: New flag for backup restore</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud dataplex:7</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--all-schema-fields</code> flag to <code>gcloud dataplex context lookup</code> to include all schema fields in the context.</li>
+</ul>]]></content>
+    <summary>The `gcloud dataplex context lookup` command now supports an `--all-schema-fields` flag. This flag allows users to include all schema fields when retrieving context, providing more comprehensive data insights.</summary>
+    <title>Cloud Dataplex: Dataplex context lookup enhancement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud key management service:8</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--project</code> flag to <code>gcloud kms autokey-config describe</code> to support project-level Autokey configurations.</li>
+<li>Updated <code>gcloud kms autokey-config update</code> to support project-level Autokey configurations.</li>
+<li>Updated <code>gcloud kms autokey-config update</code> to support the <code>key-project-resolution-mode</code> field.</li>
+</ul>]]></content>
+    <summary>The Cloud Key Management Service now supports project-level Autokey configurations. Updates include adding a --project flag to describe commands and enhancing update commands to support project-level configurations and the key-project-resolution-mode field.</summary>
+    <title>Cloud Key Management Service: Autokey configuration updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud run:9</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added interactive prompt instead of erroring out when project is not specified in <code>gcloud beta run deploy</code>.</li>
+<li>Added support for suggesting project and region from Artifact Registry URL in <code>gcloud beta run deploy</code>.</li>
+<li>Added <code>--[no]--ssh</code> flag to <code>gcloud beta run deploy</code> and <code>gcloud beta run services update</code> to enable or disable SSH access to the Cloud Run service's container instances.</li>
+<li>Added <code>--domain</code> flag to <code>gcloud beta run deploy</code> to create domain mappings on the fly during service deployment.</li>
+</ul>]]></content>
+    <summary>The gcloud CLI for Cloud Run now offers an interactive prompt for missing project information and suggests project/region from Artifact Registry URLs. It also introduces SSH access control and the ability to create domain mappings directly during deployment.</summary>
+    <title>Cloud Run: Cloud Run: Enhanced gcloud CLI experience</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud spanner:10</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Add <code>--labels</code> flag to <code>gcloud spanner instances create</code> command to support
+  specifying labels during instance creation.</li>
+<li>Add <code>--update-labels</code>, <code>--clear-labels</code> and <code>--remove-labels</code> flags to
+  <code>gcloud spanner instances update</code> command to support updating labels.</li>
+</ul>]]></content>
+    <summary>You can now add and update labels for Cloud Spanner instances using the gcloud spanner command-line tool. The `gcloud spanner instances create` command supports a `--labels` flag for initial creation, while the `gcloud spanner instances update` command provides flags like `--update-labels`, `--clear-labels`, and `--remove-labels` for modifying existing labels.</summary>
+    <title>Cloud Spanner: Manage Spanner instance labels</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud storage:11</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--enable-ingest-on-write</code> flag to
+  <code>gcloud storage buckets anywhere-caches update</code> to support enabling cache
+  ingest on write, and enabled rendering of the parsed property in the
+  <code>anywhere-caches describe</code> command output.</li>
+<li>Added <code>--enable-ingest-on-write</code> flag to
+  <code>gcloud storage buckets anywhere-caches create</code> to support enabling cache ingest
+  on write.</li>
+</ul>]]></content>
+    <summary>New flags for Cloud Storage anywhere-caches allow enabling ingest on write during creation and update operations. This enhancement also provides visibility into the parsed property in the describe command output.</summary>
+    <title>Cloud Storage: Cloud Storage cache ingest on write</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cloud workstations:12</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--disk-archive-timeout</code> flag to <code>gcloud workstations configs create</code> and <code>gcloud workstations configs update</code> commands.</li>
+<li>Added <code>--workstation-authorization-url</code> and <code>--workstation-launch-url</code> flags to <code>gcloud workstations clusters create</code> command.</li>
+<li>Added <code>--workstation-authorization-url</code> and <code>--workstation-launch-url</code> flags to <code>gcloud workstations clusters update</code> command.</li>
+</ul>]]></content>
+    <summary>New flags have been added to Cloud Workstations commands, including options for disk archive timeouts and workstation URLs. These updates enhance the flexibility and control over workstation configurations and launches.</summary>
+    <title>Cloud Workstations: New Cloud Workstations Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:cluster director:13</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for updating Slurm prolog, epilog, task prolog, and task epilog scripts.</li>
+</ul>]]></content>
+    <summary>Cluster Director now supports updating Slurm prolog, epilog, task prolog, and task epilog scripts. This enhancement allows for more flexible configuration of job execution environments.</summary>
+    <title>Cluster Director: Update Slurm scripts support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:compute engine:14</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>centos/rhel/rocky 10</code>, <code>debian 13</code>, <code>ubuntu 24.04/25.10</code> to allowed list of values for <code>osShortName</code> and <code>osVersion</code> of <code>gcloud compute instances ops-agents policies [create|update]</code>.</li>
+<li>Promoted the <code>--location</code> flag of <code>gcloud compute interconnects update</code> to beta.</li>
+<li>Promoted <code>--post-quantum-key-exchange</code> flag on <code>gcloud compute ssl-policies create</code> and <code>gcloud compute ssl-policies update</code> to GA.</li>
+<li>Promoted <code>gcloud compute advice capacity</code> to <code>beta</code>.</li>
+<li>Promoted <code>gcloud compute advice capacity-history</code> to <code>beta</code>.</li>
+<li>Promoted <code>--resource-manager-tags</code> flag for <code>gcloud compute commitments create</code> to beta and GA.</li>
+<li>Added <code>--stabilization-period</code> flag to
+  <code>gcloud compute instance-groups managed &lt;set-autoscaling|update-autoscaling&gt;</code>
+  to configure autoscaler load stabilization period before scale-in decisions.</li>
+<li>Added <code>--minimal-action</code> flag to <code>gcloud compute instances update</code>.</li>
+<li>Promoted <code>cachePolicy</code> support for <code>gcloud compute url-maps</code> to beta.</li>
+<li>Promoted <code>--resolve-subnet-mask</code> flag for <code>gcloud compute networks subnets create</code> to GA.</li>
+<li>Added <code>--resource-manager-tags</code> flag to <code>gcloud compute instant-snapshots create</code> in beta and GA.</li>
+<li>Added <code>--remove-obsolete-endpoint-accept-reject-entries</code> flag to
+  <code>gcloud beta compute service-attachments update</code> to remove entries for
+  Private Service Connect endpoints that are no longer connected.</li>
+<li>Promoted <code>--resource-manager-tags</code> flag for <code>gcloud compute external-vpn-gateways create</code> to beta.</li>
+<li>Promoted <code>--resource-manager-tags</code> flag for <code>gcloud compute target-vpn-gateways create</code> to beta.</li>
+<li>Promoted <code>--resource-manager-tags</code> flag for <code>gcloud compute vpn-gateways create</code> to beta.</li>
+<li>Promoted <code>--resource-manager-tags</code> flag for <code>gcloud compute vpn-tunnels create</code> to beta.</li>
+<li>Added <code>--instance-flexibility-policy</code> flag for <code>gcloud compute instance-groups managed create</code> and <code>gcloud compute instance-groups managed update</code> commands in beta.</li>
+<li>Added <code>CHIP_ERROR</code> as a valid value for <code>--fault-reasons</code> in <code>gcloud compute instances report-host-as-faulty</code> in alpha, beta, and GA.</li>
+<li>Promoted <code>--target-service</code> flag for <code>gcloud compute service-attachments update</code> to GA.</li>
+<li>Added <code>--resource-manager-tags</code> flag to <code>gcloud compute images create</code> in beta and GA.</li>
+<li>Promoted <code>--network-ddos-adaptive-protection</code>,
+  <code>--network-ddos-impacted-baseline-threshold</code>, and
+  <code>--clear-network-ddos-impacted-baseline-threshold</code> flags for
+  <code>gcloud compute security-policies update</code> to beta.</li>
+<li>Added <code>--resource-manager-tags</code> flag to <code>gcloud compute disks create</code> in beta and GA.</li>
+<li>Added <code>--resource-manager-tags</code> flag to <code>gcloud compute snapshots create</code> in beta and GA.</li>
+<li>Promoted <code>--view</code> flag of <code>gcloud compute forwarding-rules describe</code> to GA.</li>
+<li>Promoted <code>gcloud compute org-rollouts cancel</code> to beta.</li>
+<li>Promoted <code>gcloud compute org-rollouts delete</code> to beta.</li>
+<li>Promoted <code>gcloud compute org-rollouts describe</code> to beta.</li>
+<li>Promoted <code>gcloud compute org-rollouts list</code> to beta.</li>
+<li>Promoted <code>gcloud compute org-rollout-plans create</code> to beta.</li>
+<li>Promoted <code>gcloud compute org-rollout-plans delete</code> to beta.</li>
+<li>Promoted <code>gcloud compute org-rollout-plans describe</code> to beta.</li>
+<li>Promoted <code>gcloud compute org-rollout-plans list</code> to beta.</li>
+<li>Removed validation on empty folder share list on <code>gcloud compute reservations create</code>.</li>
+<li>Promoted <code>--secondary-ipv6-range</code> flag on
+  <code>gcloud compute networks subnets create</code>, and <code>--add-secondary-ipv6-range</code> and
+  <code>--remove-secondary-ipv6-range</code> flags on
+  <code>gcloud compute networks subnets update</code> to beta.</li>
+<li>Promoted <code>--ipv6-aliases</code> flag to <code>gcloud compute instances create</code>, <code>gcloud compute instances network-interfaces [add|update]</code>, and <code>gcloud compute instance-templates create</code> in beta.</li>
+<li>Added <code>--network-tier</code> flag to <code>gcloud compute public-advertised-prefixes create</code> in alpha.</li>
+</ul>]]></content>
+    <summary>New OS images supported for Ops Agents, and several gcloud compute commands promoted to beta and GA. Enhancements include instance flexibility, autoscaler stabilization, and resource manager tag support across various resources. New flags added for network configurations and security policies.</summary>
+    <title>Compute Engine: Compute Engine Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:kubernetes engine:15</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--enable-agent-sandbox</code> flag to GA for <code>gcloud container clusters create</code>, <code>gcloud container clusters create-auto</code>, and <code>gcloud container clusters update</code>.</li>
+</ul>]]></content>
+    <summary>The agent sandbox feature, which enhances security for your Kubernetes clusters, is now generally available. You can enable it during cluster creation or update using the `--enable-agent-sandbox` flag.</summary>
+    <title>Kubernetes Engine: Agent sandbox now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:network connectivity:16</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud network-connectivity spokes gateways</code> command group to GA, including <code>create</code> and <code>update</code> commands.</li>
+<li>Added support for <code>HYBRID_INSPECTION</code> preset topology to <code>gcloud network-connectivity hubs create</code> in GA.</li>
+</ul>]]></content>
+    <summary>The `gcloud network-connectivity spokes gateways` command group is now generally available, along with `create` and `update` commands. Additionally, support for `HYBRID_INSPECTION` preset topology has been added to `gcloud network-connectivity hubs create`.</summary>
+    <title>Network Connectivity: Network Connectivity GA Commands Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:network management:17</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud network-management network-monitoring-providers</code> command
+  group which manages the enablement state of the Network Insights service.</li>
+<li>Added <code>gcloud network-management network-monitoring-providers
+  monitoring-points</code> command group which manages agents within a network or
+  application infrastructure that send probes.</li>
+<li>Added <code>gcloud network-management network-monitoring-providers
+  network-paths</code> command group which manages the hop-by-hop route and active
+  network delivery quality between a monitoring point and a target
+  destination.</li>
+<li>Added <code>gcloud network-management network-monitoring-providers
+  web-paths</code> command group which manages monitored web applications or URLs.</li>
+</ul>]]></content>
+    <summary>New gcloud commands are available for managing network monitoring providers, including enablement state, agents, network paths, and web paths. These additions enhance the capabilities for network observability and management through the command-line interface.</summary>
+    <title>Network Management: Network Management CLI Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:570-0-0--2026-05-27-:2026-05-27:network security:18</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud network-security secure-access-connect</code> command group
+  to GA, including <code>attachments</code> and <code>realms</code> commands.</li>
+<li>Restricted Symantec integration and localization arguments (such as
+  <code>--symantec-site</code> and <code>--country</code>) to <code>ALPHA</code> and <code>BETA</code> tracks only.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>The gcloud network-security secure-access-connect command group is now generally available, including attachments and realms commands. Some Symantec integration and localization arguments are now restricted to ALPHA and BETA tracks.</summary>
+    <title>Network Security: Secure Access Connect GA</title>
+  </entry>
+</feed>

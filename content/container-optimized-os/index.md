@@ -1,5 +1,336 @@
 # Container Optimized OS
 
+## 2026-05-26
+
+### Change
+
+
+
+### cos-129-19506-120-115
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.77](https://cos.googlesource.com/third_party/kernel/+/4b67db877bccca1607f98ab4fd34f80e6245828f ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.120.115/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This update contains several package upgrades to the latest patch version to ensure security, along with package patches for known CVEs.
+
+### Change
+
+Added support for the `swiotlb=any` kernel command line parameter.
+
+### Change
+
+Update sys-process/audit to v3.0.9.
+
+### Change
+
+Updated glib to v2.86.5.
+
+### Change
+
+Updated sys-libs/pam to v1.5.3.
+
+### Change
+
+Upgraded net-misc/openssh to v10.0\_p2.
+
+### Fixed
+
+Fixed a crash that occurs when using the `configfile` or
+`source` GRUB2 commands when Secure Boot is enabled.
+
+### Fixed
+
+Fixed a race condition triggered by ext4 online resize that
+rarely causes machines to fail to boot.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.2.
+
+### Security
+
+Fixed CVE-2026-23171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31419 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31430 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31709 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43074 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43088 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-44431 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2026-6732 in dev-libs/libxml2.
+
+### Security
+
+Fixed EFI variable OOB read in grub config parsing.
+
+### Security
+
+Fixed KCTF-9e6bf14 in the Linux kernel.
+
+### Security
+
+Updated dev-lang/go to 1.25.10. This fixes CVE-2026-32289,CVE-2026-32282,CVE-2026-32288,CVE-2026-27142,CVE-2025-61728,CVE-2026-27139,CVE-2026-39817,CVE-2026-39819,CVE-2025-68119,CVE-2025-61732,CVE-2026-32280,CVE-2026-25679,CVE-2026-27144,CVE-2026-32283,CVE-2026-27140,CVE-2025-61731,CVE-2026-32281,CVE-2025-61726,CVE-2025-68121,CVE-2026-27143,CVE-2026-39826,CVE-2026-39823,CVE-2026-39825,CVE-2026-33814,CVE-2026-39820,CVE-2026-42499,CVE-2026-39836.
+
+### Security
+
+Updated net-misc/curl to v8.20. This fixes CVE-2026-5545,CVE-2026-4873,CVE-2026-6429,CVE-2026-7168,CVE-2026-6253,CVE-2026-6276,CVE-2026-7009,CVE-2026-5773.
+
+### Change
+
+
+
+### cos-125-19216-395-47
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/b82d4fb79da9ccb0fb216da3a51f977397f3193d ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.47/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This update contains several package upgrades to the latest patch version to ensure security, along with package patches for known CVEs.
+
+### Change
+
+Added support for the `swiotlb=any` kernel command line parameter.
+
+### Change
+
+Update sys-process/audit to v3.0.9.
+
+### Change
+
+Updated glib to v2.86.5.
+
+### Change
+
+Upgrade app-admin/fluent-bit to v3.2.10
+
+### Change
+
+Updated sys-libs/pam to v1.5.3.
+
+### Change
+
+Upgraded net-misc/openssh to v10.0\_p2.
+
+### Fixed
+
+Fixed a crash that occurs when using the `configfile` or
+`source` GRUB2 commands when Secure Boot is enabled.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.2.
+
+### Security
+
+Fixed CVE-2026-23171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31419 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31709 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43088 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-44431 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2026-6732 in dev-libs/libxml2.
+
+### Security
+
+Fixed KCTF-9e6bf14 in the Linux kernel.
+
+### Security
+
+Updated dev-lang/go to 1.25.10. This fixes CVE-2026-42499,CVE-2026-39820,CVE-2026-39826,CVE-2026-33814,CVE-2026-39836,CVE-2026-39823,CVE-2026-39825,CVE-2026-39817,CVE-2026-39819.
+
+### Security
+
+Updated net-misc/curl to v8.20. This fixes CVE-2026-5545,CVE-2026-4873,CVE-2026-6429,CVE-2026-7168,CVE-2026-6253,CVE-2026-6276,CVE-2026-7009,CVE-2026-5773.
+
+### Change
+
+
+
+### cos-121-18867-381-144
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/49ca470354b8180a68a948c2512fb9b5f4ef8b5f ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.144/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This update contains several package upgrades to the latest patch version to ensure security, along with package patches for known CVEs.
+
+### Change
+
+Update sys-process/audit to v3.0.9.
+
+### Change
+
+Upgrade app-admin/fluent-bit to v3.2.10
+
+### Change
+
+Updated glib to v2.86.5.
+
+### Change
+
+Updated sys-libs/pam to v1.5.3.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.2.
+
+### Security
+
+Fixed CVE-2026-23171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23473 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31449 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31709 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43109 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-44431 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2026-6732 in dev-libs/libxml2.
+
+### Security
+
+Fixed KCTF-9e6bf14 in the Linux kernel.
+
+### Security
+
+Updated dev-lang/go to 1.25.10. This fixes CVE-2026-33814,CVE-2026-39823,CVE-2026-39826,CVE-2026-39817,CVE-2026-39819,CVE-2026-39820,CVE-2026-39836,CVE-2026-42499,CVE-2026-39825.
+
+### Security
+
+Updated net-misc/curl to v8.20. This fixes CVE-2026-5545,CVE-2026-4873,CVE-2026-6429,CVE-2026-7168,CVE-2026-6253,CVE-2026-6276,CVE-2026-7009,CVE-2026-5773.
+
+### Change
+
+
+
+### cos-117-18613-613-25
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/6cd389d7730d16d15e008a822b46e2f5d450d562 ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.613.25/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This update contains several package upgrades to the latest patch version to ensure security, along with package patches for known CVEs.
+
+### Change
+
+Update sys-process/audit to v3.0.9.
+
+### Change
+
+Updated glib to v2.86.5.
+
+### Change
+
+Updated sys-libs/pam to v1.5.3.
+
+### Change
+
+Upgraded app-containers/containerd from v1.7.29 to
+v1.7.31.
+
+### Security
+
+Fixed CVE-2026-23171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23473 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31449 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31709 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43109 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-44431 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2026-6732 in dev-libs/libxml2.
+
+### Security
+
+Fixed KCTF-9e6bf14 in the Linux kernel.
+
+### Security
+
+Updated dev-lang/go to 1.25.10. This fixes CVE-2026-39817,CVE-2026-39825,CVE-2026-33814,CVE-2026-39819,CVE-2026-39826,CVE-2026-39823,CVE-2026-39820,CVE-2026-42499,CVE-2026-39836.
+
+### Security
+
+Updated net-misc/curl to v8.20. This fixes CVE-2026-5545,CVE-2026-4873,CVE-2026-6429,CVE-2026-7168,CVE-2026-6253,CVE-2026-6276,CVE-2026-7009,CVE-2026-5773.
+
+---
 ## 2026-05-21
 
 ### Change

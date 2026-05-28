@@ -1,5 +1,21 @@
 # Vertex AI Search
 
+## 2026-05-27
+
+### Feature
+
+**Agent Search: Table and image annotation in layout parser**
+
+The table annotation and image annotation features of the layout parser are
+generally available (GA).
+
+You can ask the layout parser to annotate images or tables with
+a descriptive block of text describing the information in the image or table.
+The annotation can then be used as a source in a generated answer.
+For more information, see [Layout
+parser](https://docs.cloud.google.com/generative-ai-app-builder/docs/parse-chunk-documents#layout-parsing).
+
+---
 ## 2026-05-15
 
 ### Deprecated
@@ -22,7 +38,7 @@ use Agent Retrieval (formerly known as [Vector Search
 
 ### Feature
 
-**Vertex AI Search: Weight searchable fields (Preview)**
+**Agent Search: Weight searchable fields (Preview)**
 
 You can specify a weight for searchable fields in your schema to indicate their
 relative importance in search results.

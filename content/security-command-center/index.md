@@ -1,5 +1,19 @@
 # Security Command Center
 
+## 2026-05-28
+
+### Feature
+
+[Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) detects
+toxic combinations that are related to Managed Service for Apache Spark (formerly known as Dataproc), including Lightning Engine.
+
+### Feature
+
+Risk reports are updated to include more content in the **Risk Engine introduction**
+and the **System attack exposure** pages. For more information about what's
+included in risk reports, see [Risk reports overview](https://docs.cloud.google.com/security-command-center/docs/risk-reports-overview).
+
+---
 ## 2026-05-21
 
 ### Change
@@ -30,7 +44,7 @@ to the Security Command Center Enterprise and Premium tiers. Artifact guard is a
 service that helps you prevent the deployment of vulnerable packages throughout the
 software development lifecycle.
 
-### Change
+### Feature
 
 [Risk Engine](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features) detects
 toxic combinations that are related to Cloud Build resources.

@@ -1,5 +1,16 @@
 # Google SecOps SIEM
 
+## 2026-05-27
+
+### Feature
+
+**Standard parser support policy**
+
+Google SecOps introduced a focused support policy for Standard parsers to scale platform stability, predictable performance, and high-quality data normalization. The new policy structures service level objectives (SLOs) and request triaging by customer support tiers (Standard versus Expert/Expert+), and prioritizes core security data through [Important UDM Fields](https://docs.cloud.google.com/chronicle/docs/reference/important-udm-fields). Additionally, the policy outlines a community-driven model where low-usage, longtail prebuilt parsers migrate to a dedicated GitHub repository maintained by partners and the Google SecOps community.
+
+For more information, see [Standard parser support policy](https://docs.cloud.google.com/chronicle/docs/ingestion/standard-parser-support-policy).
+
+---
 ## 2026-05-18
 
 ### Feature

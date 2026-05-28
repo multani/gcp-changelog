@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2026-05-27
+
+### Feature
+
+**Gemini Enterprise: Slack data store**
+
+The Slack data store is generally available (GA) in Gemini Enterprise.
+
+You can connect a Slack Workspace to search and read conversations,
+files, and messages using natural language. You can also perform actions,
+such as sending and scheduling messages, directly from the
+Gemini Enterprise app chat box.
+
+For more information, see [Connect Slack](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/slack).
+
+---
 ## 2026-05-26
 
 ### Deprecated

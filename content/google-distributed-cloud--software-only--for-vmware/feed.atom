@@ -2,9 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-05-21T00:00:00+00:00</updated>
+  <updated>2026-05-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-27:announcement:0</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.34.500-gke.108 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.34.500-gke.108 runs on Kubernetes v1.34.7-gke.200.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>A new version of Google Distributed Cloud for VMware (1.34.500-gke.108) is now available. This update runs on Kubernetes v1.34.7-gke.200. Please check storage partner compatibility and note that the new version may take 7-14 days to be available via Google Cloud console and gcloud CLI.</summary>
+    <title>Announcement: New software version released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-05-27:fixed:1</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.34.500-gke.108:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue where, when setting <code>stackdriver.disableVsphereResourceMetrics</code> to true in the cluster configuration file, user cluster installations or upgrades stalled indefinitely because the installer erroneously deleted the vsphere-ca-certificate ConfigMap, causing vsphere-csi-controller pods to fail with mount errors. You no longer need to manually recreate the ConfigMap or scale down the vsphere-metrics-exporter deployment as a workaround.</li>
+<li>Fixed an issue where, when recreating a user cluster with a previously used name (which commonly occurs during Terraform deployments or manual reinstalls), cluster provisioning stalled indefinitely in the provisioning state due to a missing k8s-health-check service account. The installer ensures that the service account is created, eliminating the need to manually create the service account as a workaround.</li>
+<li>Fixed an issue where the <code>gkectl diagnose</code> command failed to run on standard user clusters managed by an advanced admin cluster.</li>
+</ul>]]></content>
+    <summary>This release addresses several critical issues, including security vulnerabilities and problems with cluster installations, upgrades, and provisioning. It also resolves an issue with the `gkectl diagnose` command on user clusters.</summary>
+    <title>Fixed: Maintenance release 1.34.500-gke.108</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,31 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-05-27
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.34.500-gke.108 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.34.500-gke.108 runs on Kubernetes v1.34.7-gke.200.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.34.500-gke.108:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where, when setting `stackdriver.disableVsphereResourceMetrics` to true in the cluster configuration file, user cluster installations or upgrades stalled indefinitely because the installer erroneously deleted the vsphere-ca-certificate ConfigMap, causing vsphere-csi-controller pods to fail with mount errors. You no longer need to manually recreate the ConfigMap or scale down the vsphere-metrics-exporter deployment as a workaround.
+* Fixed an issue where, when recreating a user cluster with a previously used name (which commonly occurs during Terraform deployments or manual reinstalls), cluster provisioning stalled indefinitely in the provisioning state due to a missing k8s-health-check service account. The installer ensures that the service account is created, eliminating the need to manually create the service account as a workaround.
+* Fixed an issue where the `gkectl diagnose` command failed to run on standard user clusters managed by an advanced admin cluster.
+
+---
 ## 2026-05-21
 
 ### Announcement

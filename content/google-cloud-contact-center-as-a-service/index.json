@@ -1,6 +1,48 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-05-27": [
+      {
+        "kind": "Announcement",
+        "content": "**Advanced reporting dashboards 4.22**\n\nWe've released version 4.22 of the advanced reporting dashboards.",
+        "summary": {
+          "title": "New Reporting Dashboards Released",
+          "summary": "Version 4.22 of the advanced reporting dashboards is now available. This update brings enhanced features for your data analysis needs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Added a Location filter to dashboards**\n\nThe following dashboards now include a **Location** filter:\n\n* [Real-time Channel\n  Performance](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-channel-perf)\n* [Transfers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-transfers)\n* [Queue\n  Interval](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-interval)",
+        "summary": {
+          "title": "New Location Filter for Dashboards",
+          "summary": "You can now filter dashboard data by location. The Location filter has been added to the Real-time Channel Performance, Transfers, and Queue Interval dashboards, providing more granular insights into your data."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Queue Performance dashboard improvements**\n\nWe've made the following improvements to the **Queue Performance - Calls** and\n**Queue Performance - Chats** dashboards:\n\n* Added the dashboards to the Advanced Reporting Landing Page.\n* Added a **Support Phone Number** filter.\n* Renamed the **Total Inbound Handled** tile (calls only) to **Total Queue\n  Answered**.\n* Added a **Total Failed** tile.\n* In the **Queue Summary** table, removed the **Total Inbound Calls Handled**\n  column and added the following columns: **Total Queue Interactions**,\n  **Total Queue Entries**, **Total Queue Answered**, **Total Failed**, and\n  **Total Transfers**.\n\nFor more information, see [Queue Performance\ndashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).",
+        "summary": {
+          "title": "Queue Performance Dashboard Enhancements",
+          "summary": "New features and filters have been added to the Queue Performance dashboards for calls and chats, enhancing your ability to analyze queue performance. Key updates include a new 'Total Failed' tile, a 'Support Phone Number' filter, and revised columns in the Queue Summary table for more detailed insights."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**General dashboard updates**\n\n* In the [Performance\n  Overview](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-perf-overview)\n  dashboard, we renamed the following tiles:\n\n  + **Queued Now** to **Current Queued Now**\n  + **Max Queue Time** to **Current Max Queue Time**\n* The [Real-time Connected -\n  Calls](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-calls-connected) and\n  [Real-time Connected -\n  Chats](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-chats-connected)\n  dashboards now include the following tiles:\n\n  + **Total Connected Calls** (calls only)\n  + **Total Connected Chats** (chats only)\n  + **Avg Current Sentiment Score**\n* In the [Queue Group Performance -\n  All](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-group-perf)\n  dashboard, we renamed the **Lang** filter to **Language**.",
+        "summary": {
+          "title": "Dashboard updates for performance and real-time insights",
+          "summary": "We've updated several dashboards with new tiles and renamed existing ones for clarity. The Performance Overview dashboard now has 'Current' prefixes for Queued Now and Max Queue Time. Real-time dashboards for calls and chats now include Total Connected and Avg Current Sentiment Score tiles. Additionally, the Queue Group Performance dashboard has renamed its 'Lang' filter to 'Language'."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where the CSAT scores in the **Performance Overview** and\n  **CSAT** dashboards didn't match.\n* Fixed an issue where the **Queue Performance** dashboard incorrectly totaled\n  queue interactions, resulting in lower counts than expected.\n* Fixed an issue in the **All Interactions - Chat** dashboard where the\n  **Virtual Agents Chats** table displayed the wrong chat.\n* Fixed an issue in the **All Interactions - Chat** dashboard where the\n  **Failed Interaction** column of the **Chat Metric Detail** table displayed\n  `False` for a failed interaction.\n* Fixed an issue in the **All Interactions - Chat** dashboard where the\n  **Failed Interaction** column of the **Chat Metric Detail** table displayed\n  `False` for a failed interaction.\n* Fixed an issue where the **Chat ID** filter on the **Queue Performance -\n  Chats** dashboard incorrectly displayed placeholder values.\n* Fixed an issue where scheduled exports of large queries were limited to 500\n  rows, causing reporting delays.\n* Fixed an issue in the **Historical Data** table of the **Agent Activity**\n  dashboard where the **Start Time** and **End Time** columns indicated\n  incorrect durations for agents belonging to multiple teams.\n* Fixed an issue where short abandoned calls and chats were incorrectly\n  included in the **Abandons** dashboard, causing inaccurate reporting of\n  queue abandon times.\n* Fixed an issue where dashboard windows didn't fully display their contents.",
+        "summary": {
+          "title": "Dashboard and reporting fixes",
+          "summary": "Several issues affecting dashboard accuracy and reporting have been resolved. This includes corrections to CSAT scores, queue performance totals, chat metrics, and the display of abandoned calls and chats. Additionally, issues with scheduled exports and dashboard window rendering have been fixed."
+        }
+      }
+    ],
     "2026-05-26": [
       {
         "kind": "Announcement",

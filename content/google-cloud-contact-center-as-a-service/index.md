@@ -1,5 +1,97 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-05-27
+
+### Announcement
+
+**Advanced reporting dashboards 4.22**
+
+We've released version 4.22 of the advanced reporting dashboards.
+
+### Feature
+
+**Added a Location filter to dashboards**
+
+The following dashboards now include a **Location** filter:
+
+* [Real-time Channel
+  Performance](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-channel-perf)
+* [Transfers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-transfers)
+* [Queue
+  Interval](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-interval)
+
+### Feature
+
+**Queue Performance dashboard improvements**
+
+We've made the following improvements to the **Queue Performance - Calls** and
+**Queue Performance - Chats** dashboards:
+
+* Added the dashboards to the Advanced Reporting Landing Page.
+* Added a **Support Phone Number** filter.
+* Renamed the **Total Inbound Handled** tile (calls only) to **Total Queue
+  Answered**.
+* Added a **Total Failed** tile.
+* In the **Queue Summary** table, removed the **Total Inbound Calls Handled**
+  column and added the following columns: **Total Queue Interactions**,
+  **Total Queue Entries**, **Total Queue Answered**, **Total Failed**, and
+  **Total Transfers**.
+
+For more information, see [Queue Performance
+dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).
+
+### Feature
+
+**General dashboard updates**
+
+* In the [Performance
+  Overview](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-perf-overview)
+  dashboard, we renamed the following tiles:
+
+  + **Queued Now** to **Current Queued Now**
+  + **Max Queue Time** to **Current Max Queue Time**
+* The [Real-time Connected -
+  Calls](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-calls-connected) and
+  [Real-time Connected -
+  Chats](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-chats-connected)
+  dashboards now include the following tiles:
+
+  + **Total Connected Calls** (calls only)
+  + **Total Connected Chats** (chats only)
+  + **Avg Current Sentiment Score**
+* In the [Queue Group Performance -
+  All](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-group-perf)
+  dashboard, we renamed the **Lang** filter to **Language**.
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where the CSAT scores in the **Performance Overview** and
+  **CSAT** dashboards didn't match.
+* Fixed an issue where the **Queue Performance** dashboard incorrectly totaled
+  queue interactions, resulting in lower counts than expected.
+* Fixed an issue in the **All Interactions - Chat** dashboard where the
+  **Virtual Agents Chats** table displayed the wrong chat.
+* Fixed an issue in the **All Interactions - Chat** dashboard where the
+  **Failed Interaction** column of the **Chat Metric Detail** table displayed
+  `False` for a failed interaction.
+* Fixed an issue in the **All Interactions - Chat** dashboard where the
+  **Failed Interaction** column of the **Chat Metric Detail** table displayed
+  `False` for a failed interaction.
+* Fixed an issue where the **Chat ID** filter on the **Queue Performance -
+  Chats** dashboard incorrectly displayed placeholder values.
+* Fixed an issue where scheduled exports of large queries were limited to 500
+  rows, causing reporting delays.
+* Fixed an issue in the **Historical Data** table of the **Agent Activity**
+  dashboard where the **Start Time** and **End Time** columns indicated
+  incorrect durations for agents belonging to multiple teams.
+* Fixed an issue where short abandoned calls and chats were incorrectly
+  included in the **Abandons** dashboard, causing inaccurate reporting of
+  queue abandon times.
+* Fixed an issue where dashboard windows didn't fully display their contents.
+
+---
 ## 2026-05-26
 
 ### Announcement

@@ -2,28 +2,118 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2026-05-14T00:00:00+00:00</updated>
+  <updated>2026-05-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:announcement:0</id>
-    <published>2026-05-14T00:00:00+00:00</published>
-    <updated>2026-05-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>A new Managed Service for Apache Airflow release has started on <strong>May 14, 2026</strong>. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.</p>]]></content>
-    <summary>A new Managed Service for Apache Airflow release began on May 14, 2026. This release introduces upcoming changes and features that are being rolled out to all regions. Some features may not be available in all regions yet as the rollout is currently in progress.</summary>
-    <title>Announcement: New Apache Airflow release rolling out</title>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-27:announcement:0</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Managed Service for Apache Airflow release has started on
+<strong>May 27, 2026</strong>. Get ready for upcoming changes and features as we roll out
+the new release to all regions. This release is in progress at the moment.
+Listed changes and features might not be available in some regions yet.</p>]]></content>
+    <summary>A new Managed Service for Apache Airflow release is now underway. This release brings upcoming changes and new features that will be rolled out to all regions. Please note that availability may vary by region during the rollout period.</summary>
+    <title>Announcement: New Managed Airflow Service Release</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:change:1</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-27:feature:1</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Managed Service for Apache Airflow now
+<a href="https://docs.cloud.google.com/composer/docs/composer-3/create-and-manage-tags">supports Google Cloud tags</a>
+for environments.</p>
+<p><a href="https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview">Tags</a>
+provide a way to create annotations for resources, and conditionally allow or
+deny policies based on whether a resource has a specific tag.</p>]]></content>
+    <summary>Managed Service for Apache Airflow environments now support Google Cloud tags. Tags allow you to create annotations for resources, enabling conditional policy enforcement based on tag presence.</summary>
+    <title>Feature: Managed Airflow Environments Now Support Tags</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-27:feature:2</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In Managed Airflow (Gen 3), it is now possible to
+create Kubernetes Secrets with the <code>kubernetes.io/dockerconfigjson</code>
+<a href="https://kubernetes.io/docs/concepts/configuration/secret/#secret-types">secret type</a>
+through the beta Cloud Composer API, in addition to the default
+<code>Opaque</code> secret type. For more information, see <a href="https://docs.cloud.google.com/composer/docs/composer-3/use-kubernetes-pod-operator#api">Manage Kubernetes Secrets</a>.</p>]]></content>
+    <summary>Cloud Composer now supports creating Kubernetes secrets of type `kubernetes.io/dockerconfigjson` via the beta Cloud Composer API. This complements the existing support for `Opaque` secret types, enhancing flexibility in managing Kubernetes secrets within your Airflow environments.</summary>
+    <title>Feature: Kubernetes secrets support in Composer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-27:fixed:3</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>(Airflow 3) The INFO log level filter in Airflow UI now correctly displays log
+messages with this logging level.</p>]]></content>
+    <summary>The INFO log level filter in the Airflow UI has been fixed and now correctly displays log messages at this level. This ensures better visibility of important information within the Airflow UI logs.</summary>
+    <title>Fixed: Airflow UI log filter fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-27:change:4</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-10">composer-3-airflow-3.1.7-build.10</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-6">composer-3-airflow-2.11.1-build.6</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-39">composer-3-airflow-2.10.5-build.39</a></li>
+</ul>]]></content>
+    <summary>New builds for Airflow are now available in Managed Airflow (Gen 3). These updates include specific versions for Airflow 3.1.7, 2.11.1 (default), and 2.10.5. Please refer to the documentation for detailed version information and links.</summary>
+    <title>Change: New Airflow Builds Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-27:change:5</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-11-1">composer-2.17.3-airflow-2.11.1</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-10-5">composer-2.17.3-airflow-2.10.5</a></li>
+</ul>]]></content>
+    <summary>New images for Managed Airflow (Gen 2) are now available, including composer-2.17.3-airflow-2.11.1 as the default. These updates provide the latest versions for your Airflow environments.</summary>
+    <title>Change: New Managed Airflow Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-27:deprecated:6</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Managed Airflow versions and builds have reached their
+<a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.24, composer-2.13.2-airflow-2.9.3,
+composer-2.13.2-airflow-2.10.5.</p>]]></content>
+    <summary>Several Managed Airflow versions are no longer supported. Please upgrade to a supported version to continue receiving updates and security patches.</summary>
+    <title>Deprecated: Managed Airflow versions deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:change:0</id>
     <published>2026-05-14T00:00:00+00:00</published>
     <updated>2026-05-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <code>[scheduler]print_stats_interval</code> Airflow configuration option can now be
@@ -36,7 +126,7 @@ previously was blocked.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:change:2</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:change:1</id>
     <published>2026-05-14T00:00:00+00:00</published>
     <updated>2026-05-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
@@ -53,7 +143,7 @@ are available in Managed Airflow (Gen 3):</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:change:3</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:change:2</id>
     <published>2026-05-14T00:00:00+00:00</published>
     <updated>2026-05-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
@@ -69,7 +159,7 @@ are available in Managed Airflow (Gen 2):</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:deprecated:4</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:deprecated:3</id>
     <published>2026-05-14T00:00:00+00:00</published>
     <updated>2026-05-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following Managed Airflow versions and builds have reached their
@@ -82,7 +172,7 @@ composer-3-airflow-2.9.3-build.23, composer-3-airflow-2.10.5-build.3, and compos
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:issue:5</id>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-05-14:issue:4</id>
     <published>2026-05-14T00:00:00+00:00</published>
     <updated>2026-05-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <code>google-api-core</code> preinstalled package versions from 2.28.0 to 2.30.2 might

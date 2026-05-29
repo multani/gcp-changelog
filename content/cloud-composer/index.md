@@ -1,13 +1,63 @@
 # Cloud Composer
 
-## 2026-05-14
+## 2026-05-27
 
 ### Announcement
 
-A new Managed Service for Apache Airflow release has started on **May 14, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
+A new Managed Service for Apache Airflow release has started on
+**May 27, 2026**. Get ready for upcoming changes and features as we roll out
+the new release to all regions. This release is in progress at the moment.
+Listed changes and features might not be available in some regions yet.
+
+### Feature
+
+Managed Service for Apache Airflow now
+[supports Google Cloud tags](https://docs.cloud.google.com/composer/docs/composer-3/create-and-manage-tags)
+for environments.
+
+[Tags](https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview)
+provide a way to create annotations for resources, and conditionally allow or
+deny policies based on whether a resource has a specific tag.
+
+### Feature
+
+In Managed Airflow (Gen 3), it is now possible to
+create Kubernetes Secrets with the `kubernetes.io/dockerconfigjson`
+[secret type](https://kubernetes.io/docs/concepts/configuration/secret/#secret-types)
+through the beta Cloud Composer API, in addition to the default
+`Opaque` secret type. For more information, see [Manage Kubernetes Secrets](https://docs.cloud.google.com/composer/docs/composer-3/use-kubernetes-pod-operator#api).
+
+### Fixed
+
+(Airflow 3) The INFO log level filter in Airflow UI now correctly displays log
+messages with this logging level.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.1.7-build.10](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-10)
+* [composer-3-airflow-2.11.1-build.6](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-6) (default)
+* [composer-3-airflow-2.10.5-build.39](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-39)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.3-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-11-1) (default)
+* [composer-2.17.3-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-10-5)
+
+### Deprecated
+
+The following Managed Airflow versions and builds have reached their
+[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.24, composer-2.13.2-airflow-2.9.3,
+composer-2.13.2-airflow-2.10.5.
+
+---
+## 2026-05-14
 
 ### Change
 

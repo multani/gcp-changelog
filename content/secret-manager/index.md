@@ -1,5 +1,20 @@
 # Secret Manager
 
+## 2026-05-20
+
+### Feature
+
+Secret Manager and Parameter Manager integrate with the Agent
+Development Kit (ADK) to retrieve secrets and parameters securely at runtime.
+This integration prevents the exposure of sensitive credentials to the LLM
+context window or conversation history.
+
+For more information, see the following resources:
+
+* [Manage secrets for external services in Agent Development Kit](https://docs.cloud.google.com/secret-manager/docs/integrate-secret-manager-with-adk)
+* [Parameter Manager integration with Agent Development Kit](https://docs.cloud.google.com/secret-manager/parameter-manager/docs/parameter-manager-adk-integration)
+
+---
 ## 2026-04-16
 
 ### Feature

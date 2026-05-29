@@ -1,5 +1,12 @@
 # Access Transparency
 
+## 2026-05-22
+
+### Feature
+
+DNS Armor is generally available [(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-06
 
 ### Feature

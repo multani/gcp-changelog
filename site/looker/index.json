@@ -28,6 +28,14 @@
       },
       {
         "kind": "Feature",
+        "content": "Now available in preview for BigQuery and Snowflake connections, Looker integrates with in-database analytic models ([BigQuery Graph](https://docs.cloud.google.com/bigquery/docs/graph-overview) and [Snowflake semantic views](https://docs.snowflake.com/en/user-guide/views-semantic/overview)), so that you can keep your semantic definitions consistent across Looker and other BI tools, applications, or workloads that interface with your data warehouse.\n\nSee the [In-database analytic models](https://docs.cloud.google.com/looker/docs/analytic-models) documentation page for more information.\n\n**Note:** This item was added on May 28, 2026.",
+        "summary": {
+          "title": "In-Database Analytic Models Now Available",
+          "summary": "Looker now integrates with in-database analytic models for BigQuery and Snowflake connections. This feature ensures consistent semantic definitions across Looker and other tools interacting with your data warehouse. Keep your data definitions synchronized and streamline your analytics workflows."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing**](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing) setting on the **Preview** page in the **Admin** panel.",
         "summary": {
           "title": "Dashboard tiles now resizable",
@@ -60,10 +68,10 @@
       },
       {
         "kind": "Feature",
-        "content": "Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes` statement to the `localization_settings` parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.",
+        "content": "Model localization for imported projects will be supported in a future release.\n\n**Note:** This item was updated on May 28, 2026.",
         "summary": {
-          "title": "Model Localization Preview for Imported Projects",
-          "summary": "Model localization is now available in preview for imported projects. You can choose to use only the importing project's locale definitions or merge them with definitions from the imported project by modifying your manifest file. This feature enhances the ability to localize LookML models across different projects."
+          "title": "Model Localization for Imported Projects Coming Soon",
+          "summary": "Model localization for imported projects is planned for a future release. This enhancement will provide greater flexibility for international users working with imported models. This feature is expected to be available in an upcoming update."
         }
       },
       {
@@ -216,6 +224,14 @@
       },
       {
         "kind": "Fixed",
+        "content": "An issue has been fixed where the **Select All** button on dashboards filters could appear even if the filter was not populated. The **Select All** button will only appear when there is non-empty filter input.",
+        "summary": {
+          "title": "Filter select all button behavior corrected",
+          "summary": "The 'Select All' button on dashboard filters has been fixed. It will now only appear when there is non-empty filter input, resolving an issue where it was sometimes displayed incorrectly."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "The generic error message that Looker produces when BigQuery OAuth connections are being tested has been updated to encourage checking the correct root cause, such as context-aware access restrictions. This feature now performs as expected.",
         "summary": {
           "title": "Improved BigQuery OAuth error message",
@@ -268,14 +284,6 @@
         "summary": {
           "title": "Fixed issue with time filter display",
           "summary": "An issue causing Looker to incorrectly display string filter options for timeframes has been resolved. The feature now correctly shows datetime filter options as expected."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "An issue has been fixed where the **Select All** button on dashboards filters could appear even if the filter was not populated. This feature now performs as expected.",
-        "summary": {
-          "title": "Filter button behavior corrected",
-          "summary": "The **Select All** button on dashboard filters will now only appear when the filter is populated, resolving a previous display issue. This ensures the feature functions as intended."
         }
       },
       {

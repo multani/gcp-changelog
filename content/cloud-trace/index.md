@@ -1,5 +1,15 @@
 # Cloud Trace
 
+## 2026-05-28
+
+### Announcement
+
+You can view the available regional endpoints for the
+Observability API and for the Telemetry API on their REST reference pages.
+For more information, see
+[API overview](https://docs.cloud.google.com/stackdriver/docs/reference/api-overview).
+
+---
 ## 2026-05-26
 
 ### Announcement

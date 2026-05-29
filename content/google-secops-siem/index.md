@@ -1,5 +1,28 @@
 # Google SecOps SIEM
 
+## 2026-05-28
+
+### Feature
+
+**Upgraded Chronicle API**
+
+We've upgraded the following [Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/rest) resources from v1 beta to v1. This upgrade signals API stability and functional completeness, enabling customer and partner adoption for production usage. We recommend that customers and partners use Chronicle API for all new integrations, for a more robust, secure, and extensible experience. Learn more about [API Stability](https://google.aip.dev/181).
+
+The following features and resources are included in this update:
+
+* **Alerts and ATIs, UEBA:** [Threat Collection](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.threatCollections), [IoC](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.iocs), [CoverageDetail](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.coverageDetails), [EntityRisk](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances/getRiskConfig)
+* **Dashboards:** [NativeDashboard](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.nativeDashboards), [DashboardChart](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dashboardCharts), [DashboardQuery](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dashboardQueries), [FeaturedContentNativeDashboard](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.contentHub.featuredContentNativeDashboards)
+* **Data Tables:** [DataTable](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dataTables), [DataTableRow](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dataTables.dataTableRows), [DataTableOperationError](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dataTableOperationErrors)
+* **Ingestion:** [Logs](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.logTypes.logs), [Feed](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feeds), [LogTypeSchema](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feedSourceTypeSchemas.logTypeSchemas), [FeedSourceSchema](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feedSourceTypeSchemas), [FeedPack](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feedPacks), [Forwarder](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.forwarders)
+* **Normalization:** [Logtype](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.logTypes), [Parser](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.logTypes.parsers), [IngestionLogLabel](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.ingestionLogLabels)
+* **Detections:** [FindingsRefinement](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.findingsRefinements), [VerifyRuleText](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances/verifyRuleText), [FeaturedContentRule](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.contentHub.featuredContentRules), [RuleExecutionError](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.ruleExecutionErrors)
+* **Search & Investigation:** [Event](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.events), [Entity](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.entities), [SearchQuery](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.users.searchQueries), [SavedColumnSet](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.savedColumnSets)
+* **Exports:** [BigQueryExportService](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.bigQueryExport)
+* **Enrichment Controls:** [EnrichmentControl](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.enrichmentControls), [EnrichmentCombination](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances/getEnrichmentCombination)
+
+For a full list of updated resources and links to the documentation, please see the [Chronicle API documentation](https://docs.cloud.google.com/chronicle/docs/reference/rest).
+
+---
 ## 2026-05-27
 
 ### Feature

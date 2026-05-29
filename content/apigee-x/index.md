@@ -92,7 +92,7 @@ attacker-controlled host with the service account token.
 ---
 ## 2026-05-12
 
-### Security
+### Announcement
 
 On May 12th, 2026, we released an updated version of Apigee (1-17-0-apigee-7).
 

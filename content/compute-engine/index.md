@@ -1,5 +1,26 @@
 # Compute Engine
 
+## 2026-05-27
+
+### Feature
+
+**Generally available**: Two C4A bare metal machine types are generally
+available:
+
+* `c4a-standard-96-metal` with 96 vCPUs and 384 GB of DDR5
+  memory
+* `c4a-highmem-96-metal` with 96 vCPUs and 768 GB DDR5
+  memory
+
+These two machine types support Hyperdisk Balanced, Hyperdisk Extreme, Hyperdisk Throughput, and Hyperdisk ML
+volume storage and up to 100 Gbps of network bandwidth.
+
+To learn more about the C4A machine family, read
+[General-purpose machines](https://docs.cloud.google.com/compute/docs/general-purpose-machines#n4a_series).
+To see where you can create C4A bare metal instances, read
+[Bare metal instances](https://docs.cloud.google.com/compute/docs/instances/bare-metal-instances).
+
+---
 ## 2026-05-12
 
 ### Security

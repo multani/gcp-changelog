@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-05-28
+
+### Feature
+
+As part of Bigtable Enterprise Plus [edition](https://docs.cloud.google.com/bigtable/docs/editions-overview),
+you can configure a retention period of up to 365 days for backups. This feature
+is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Bigtable backups overview](https://docs.cloud.google.com/bigtable/docs/backups).
+
+---
 ## 2026-05-18
 
 ### Feature

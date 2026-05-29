@@ -45,6 +45,19 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:3</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview for BigQuery and Snowflake connections, Looker integrates with in-database analytic models (<a href="https://docs.cloud.google.com/bigquery/docs/graph-overview">BigQuery Graph</a> and <a href="https://docs.snowflake.com/en/user-guide/views-semantic/overview">Snowflake semantic views</a>), so that you can keep your semantic definitions consistent across Looker and other BI tools, applications, or workloads that interface with your data warehouse.</p>
+<p>See the <a href="https://docs.cloud.google.com/looker/docs/analytic-models">In-database analytic models</a> documentation page for more information.</p>
+<p><strong>Note:</strong> This item was added on May 28, 2026.</p>]]></content>
+    <summary>Looker now integrates with in-database analytic models for BigQuery and Snowflake connections. This feature ensures consistent semantic definitions across Looker and other tools interacting with your data warehouse. Keep your data definitions synchronized and streamline your analytics workflows.</summary>
+    <title>Feature: In-Database Analytic Models Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:4</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing"><strong>Granular Dashboard Sizing</strong></a> setting on the <strong>Preview</strong> page in the <strong>Admin</strong> panel.</p>]]></content>
     <summary>Dashboard editors can now adjust the size and layout of tiles with greater precision. This new granular sizing feature is available in preview and requires a Looker admin to enable it in the Admin panel under General Labs settings.</summary>
     <title>Feature: Dashboard tiles now resizable</title>
@@ -53,7 +66,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:5</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To use this feature, a Looker admin must turn on the <strong>Conversational Analytics Observability</strong> setting on the <strong>Preview</strong> admin page.</p>]]></content>
@@ -64,7 +77,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:6</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, you can use natural language to instruct a Conversational Analytics data agent to create a <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-agentic-workflows">workflow</a> that notifies you when your data has met certain conditions. To use this feature, a Looker admin must turn on the <strong>Agentic Workflows</strong> setting on the <strong>Gemini in Looker</strong> admin page.</p>]]></content>
@@ -75,7 +88,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:7</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/mcp">Looker-managed Model Context Protocol (MCP) server</a> allows AI agents to securely connect to your Looker instance without requiring separate middleware. Looker admins can enable this feature and <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-mcp#model_context_protocol_mcp_settings">manage which AI tools</a> are available to developers from the new <strong>Model Context Protocol (MCP)</strong> page in the <strong>Admin</strong> panel. Usage of the managed MCP server is also tracked within <a href="https://docs.cloud.google.com/looker/docs/mcp#system_activity">System Activity Explores</a> and <a href="https://docs.cloud.google.com/looker/docs/looker-core-audit-logging#sample_queries">Cloud Audit Logs</a>.</p>]]></content>
@@ -86,18 +99,19 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:8</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the <code>import_locale_defs: yes</code> statement to the <code>localization_settings</code> parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>]]></content>
-    <summary>Model localization is now available in preview for imported projects. You can choose to use only the importing project's locale definitions or merge them with definitions from the imported project by modifying your manifest file. This feature enhances the ability to localize LookML models across different projects.</summary>
-    <title>Feature: Model Localization Preview for Imported Projects</title>
+    <content type="html"><![CDATA[<p>Model localization for imported projects will be supported in a future release.</p>
+<p><strong>Note:</strong> This item was updated on May 28, 2026.</p>]]></content>
+    <summary>Model localization for imported projects is planned for a future release. This enhancement will provide greater flexibility for international users working with imported models. This feature is expected to be available in an upcoming update.</summary>
+    <title>Feature: Model Localization for Imported Projects Coming Soon</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:8</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:9</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, you can <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents">publish the Conversational Analytics data agents</a> that you create in Looker to Gemini Enterprise. All users who have the <code>save_agents</code> permission will be granted the <code>publish_agent_externally</code> permission. To use this feature, a Looker admin must turn on the <strong>Publish to Gemini Enterprise</strong> setting on the <strong>Gemini in Looker</strong> admin page.</p>]]></content>
@@ -108,7 +122,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:9</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:10</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, you can create and use Conversational Analytics <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards">data agents on Looker user-defined dashboards</a>. Conversational Analytics uses the <a href="https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#production_mode">Production Mode</a> of content when it queries Looker dashboards. To use this feature, a Looker admin must turn on the <strong>Enable Dashboard Agents</strong> setting on the <strong>Gemini in Looker</strong> admin page.</p>]]></content>
@@ -119,7 +133,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:11</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker has introduced the following new feature updates for tabbed dashboards:</p>
@@ -139,7 +153,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:12</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explores</strong></a> feature is now supported on Snowflake connections. Your Looker admin can select a Snowflake connection in the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable"><strong>Default Connection</strong> field</a> of the <strong>Self-service Explores</strong> admin page. On Snowflake connections, you can <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service#files-from-computer">upload comma-separated files (CSV) and Excel files (XLS and XLSX)</a> to create a self-service Explore.</p>]]></content>
@@ -150,7 +164,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:13</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles">Admin &gt; Roles panel</a> user interface has been updated.</p>]]></content>
@@ -161,7 +175,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:14</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker admins can no longer create or manage API credentials for individual standard users in Looker (original) instances. Users must now <a href="https://docs.cloud.google.com/looker/docs/user-account#api-keys">manage their own keys</a> from their <strong>Account</strong> page. Admins can <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#api_keys">enable or disable self-service API key management</a> for users and continue to manage credentials for API-only service accounts. To improve security, API keys are no longer visible to admins while they are <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#impersonating_users">sudoing</a> as another user.</p>]]></content>
@@ -316,6 +330,17 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
     <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:11</id>
     <published>2026-05-07T00:00:00+00:00</published>
     <updated>2026-05-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An issue has been fixed where the <strong>Select All</strong> button on dashboards filters could appear even if the filter was not populated. The <strong>Select All</strong> button will only appear when there is non-empty filter input.</p>]]></content>
+    <summary>The 'Select All' button on dashboard filters has been fixed. It will now only appear when there is non-empty filter input, resolving an issue where it was sometimes displayed incorrectly.</summary>
+    <title>Fixed: Filter select all button behavior corrected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:12</id>
+    <published>2026-05-07T00:00:00+00:00</published>
+    <updated>2026-05-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The generic error message that Looker produces when BigQuery OAuth connections are being tested has been updated to encourage checking the correct root cause, such as context-aware access restrictions. This feature now performs as expected.</p>]]></content>
     <summary>The generic error message for BigQuery OAuth connection tests in Looker has been improved to guide users toward checking the actual root cause, such as context-aware access restrictions. This fix ensures the feature now functions as expected.</summary>
     <title>Fixed: Improved BigQuery OAuth error message</title>
@@ -324,7 +349,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:13</id>
     <published>2026-05-07T00:00:00+00:00</published>
     <updated>2026-05-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where enabling Admin Assistant could have no effect. This feature now performs as expected.</p>]]></content>
@@ -335,7 +360,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:14</id>
     <published>2026-05-07T00:00:00+00:00</published>
     <updated>2026-05-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where Conversational Analytics could not be used when an IP allowlist was enabled.</p>]]></content>
@@ -346,7 +371,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:14</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:15</id>
     <published>2026-05-07T00:00:00+00:00</published>
     <updated>2026-05-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where appending the string <code>/edit</code> to an Explore URL could incorrectly change the Explore UI to the legacy Explore UI. This feature now performs as expected.</p>]]></content>
@@ -357,7 +382,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:15</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:16</id>
     <published>2026-05-07T00:00:00+00:00</published>
     <updated>2026-05-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <strong>Page breaks between tabs</strong> option no longer appears on dashboards that don't have any tabs. This feature now performs as expected.</p>]]></content>
@@ -368,7 +393,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:16</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:17</id>
     <published>2026-05-07T00:00:00+00:00</published>
     <updated>2026-05-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where enabling totals on a query with a period-over-period measure could cause Looker to return a 500 error. This feature now performs as expected.</p>]]></content>
@@ -379,23 +404,12 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:17</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:18</id>
     <published>2026-05-07T00:00:00+00:00</published>
     <updated>2026-05-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where Looker could incorrectly display string filter options for a <code>time</code> timeframe instead of datetime filter options. This feature now performs as expected.</p>]]></content>
     <summary>An issue causing Looker to incorrectly display string filter options for timeframes has been resolved. The feature now correctly shows datetime filter options as expected.</summary>
     <title>Fixed: Fixed issue with time filter display</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-07:fixed:18</id>
-    <published>2026-05-07T00:00:00+00:00</published>
-    <updated>2026-05-07T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>An issue has been fixed where the <strong>Select All</strong> button on dashboards filters could appear even if the filter was not populated. This feature now performs as expected.</p>]]></content>
-    <summary>The **Select All** button on dashboard filters will now only appear when the filter is populated, resolving a previous display issue. This ensures the feature functions as intended.</summary>
-    <title>Fixed: Filter button behavior corrected</title>
   </entry>
   <entry>
     <author>

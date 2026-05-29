@@ -16,6 +16,14 @@ Conversational Analytics now supports the ability to run queries when users are 
 
 ### Feature
 
+Now available in preview for BigQuery and Snowflake connections, Looker integrates with in-database analytic models ([BigQuery Graph](https://docs.cloud.google.com/bigquery/docs/graph-overview) and [Snowflake semantic views](https://docs.snowflake.com/en/user-guide/views-semantic/overview)), so that you can keep your semantic definitions consistent across Looker and other BI tools, applications, or workloads that interface with your data warehouse.
+
+See the [In-database analytic models](https://docs.cloud.google.com/looker/docs/analytic-models) documentation page for more information.
+
+**Note:** This item was added on May 28, 2026.
+
+### Feature
+
 Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the [**Granular Dashboard Sizing**](https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing) setting on the **Preview** page in the **Admin** panel.
 
 ### Feature
@@ -32,7 +40,9 @@ Now available in preview, the [Looker-managed Model Context Protocol (MCP) serve
 
 ### Feature
 
-Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes` statement to the `localization_settings` parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.
+Model localization for imported projects will be supported in a future release.
+
+**Note:** This item was updated on May 28, 2026.
 
 ### Feature
 
@@ -130,6 +140,10 @@ An issue has been fixed where the `sync_lookml_dashboard` API endpoint was not c
 
 ### Fixed
 
+An issue has been fixed where the **Select All** button on dashboards filters could appear even if the filter was not populated. The **Select All** button will only appear when there is non-empty filter input.
+
+### Fixed
+
 The generic error message that Looker produces when BigQuery OAuth connections are being tested has been updated to encourage checking the correct root cause, such as context-aware access restrictions. This feature now performs as expected.
 
 ### Fixed
@@ -155,10 +169,6 @@ An issue has been fixed where enabling totals on a query with a period-over-peri
 ### Fixed
 
 An issue has been fixed where Looker could incorrectly display string filter options for a `time` timeframe instead of datetime filter options. This feature now performs as expected.
-
-### Fixed
-
-An issue has been fixed where the **Select All** button on dashboards filters could appear even if the filter was not populated. This feature now performs as expected.
 
 ### Fixed
 

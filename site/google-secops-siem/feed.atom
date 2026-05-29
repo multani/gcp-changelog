@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2026-05-27T00:00:00+00:00</updated>
+  <updated>2026-05-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-05-28:feature:0</id>
+    <published>2026-05-28T00:00:00+00:00</published>
+    <updated>2026-05-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Upgraded Chronicle API</strong></p>
+<p>We've upgraded the following <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest">Chronicle API</a> resources from v1 beta to v1. This upgrade signals API stability and functional completeness, enabling customer and partner adoption for production usage. We recommend that customers and partners use Chronicle API for all new integrations, for a more robust, secure, and extensible experience. Learn more about <a href="https://google.aip.dev/181">API Stability</a>.</p>
+<p>The following features and resources are included in this update:</p>
+<ul>
+<li><strong>Alerts and ATIs, UEBA:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.threatCollections">Threat Collection</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.iocs">IoC</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.coverageDetails">CoverageDetail</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances/getRiskConfig">EntityRisk</a></li>
+<li><strong>Dashboards:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.nativeDashboards">NativeDashboard</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dashboardCharts">DashboardChart</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dashboardQueries">DashboardQuery</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.contentHub.featuredContentNativeDashboards">FeaturedContentNativeDashboard</a></li>
+<li><strong>Data Tables:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dataTables">DataTable</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dataTables.dataTableRows">DataTableRow</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.dataTableOperationErrors">DataTableOperationError</a></li>
+<li><strong>Ingestion:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.logTypes.logs">Logs</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feeds">Feed</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feedSourceTypeSchemas.logTypeSchemas">LogTypeSchema</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feedSourceTypeSchemas">FeedSourceSchema</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.feedPacks">FeedPack</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.forwarders">Forwarder</a></li>
+<li><strong>Normalization:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.logTypes">Logtype</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.logTypes.parsers">Parser</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.ingestionLogLabels">IngestionLogLabel</a></li>
+<li><strong>Detections:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.findingsRefinements">FindingsRefinement</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances/verifyRuleText">VerifyRuleText</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.contentHub.featuredContentRules">FeaturedContentRule</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.ruleExecutionErrors">RuleExecutionError</a></li>
+<li><strong>Search &amp; Investigation:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.events">Event</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.entities">Entity</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.users.searchQueries">SearchQuery</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.savedColumnSets">SavedColumnSet</a></li>
+<li><strong>Exports:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.bigQueryExport">BigQueryExportService</a></li>
+<li><strong>Enrichment Controls:</strong> <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances.enrichmentControls">EnrichmentControl</a>, <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1/projects.locations.instances/getEnrichmentCombination">EnrichmentCombination</a></li>
+</ul>
+<p>For a full list of updated resources and links to the documentation, please see the <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest">Chronicle API documentation</a>.</p>]]></content>
+    <summary>The Chronicle API has been upgraded from beta to v1, signifying stability and readiness for production use. This update includes enhancements across various modules like Alerts, Dashboards, Ingestion, Normalization, Detections, Search, and Exports, offering a more robust and extensible experience for integrations.</summary>
+    <title>Feature: Chronicle API upgraded to v1</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

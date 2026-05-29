@@ -1,5 +1,33 @@
 # Google Kubernetes Engine
 
+## 2026-05-28
+
+### Feature
+
+[Confidential GKE
+Nodes](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/confidential-gke-nodes#confidential-gke-nodes)
+now support cluster level enablement of [AMD
+SEV-SNP](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview#amd_sev-snp)
+and [Intel
+TDX](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview#intel_tdx)
+on GKE Autopilot.
+
+### Feature
+
+In GKE versions 1.36.0-gke.2459000 and later, you can directly configure Cloud
+Logging for L4 load balancer backend services by using the L4LBConfig
+CustomResourceDefinition (CRD).
+
+This feature is available for the following load balancer types:
+
+* [Internal L4 load
+  balancers](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/internal-load-balancing#enable-logging)
+  with subsetting enabled.
+* [External L4 load
+  balancers](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/backend-service-based-external-load-balancer#enable-logging)
+  with regional backend services (RBS) enabled.
+
+---
 ## 2026-05-27
 
 ### Change

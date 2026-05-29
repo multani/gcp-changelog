@@ -1,5 +1,14 @@
 # Cloud Logging
 
+## 2026-05-28
+
+### Announcement
+
+You can view the available regional endpoints for the
+Cloud Logging API on the REST reference pages. For an example, see
+[Method: projects.locations.buckets.list](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/projects.locations.buckets/list?rep_location=global).
+
+---
 ## 2026-05-15
 
 ### Feature

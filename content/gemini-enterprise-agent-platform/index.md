@@ -1,5 +1,50 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-05-28
+
+### Deprecated
+
+
+
+### Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro Image Preview deprecation
+
+Gemini Enterprise Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro
+Image Preview are deprecated. We recommend that you update your model endpoints
+before July 19, 2026, to avoid service disruption.
+
+The following are the discontinued endpoints and recommended endpoint migration:
+
+| Discontinued endpoints | Recommended endpoint migration |
+| --- | --- |
+| `gemini-3.1-flash-image-preview` | `gemini-3.1-flash-image` |
+| `gemini-3-pro-image-preview` | `gemini-3-pro-image` |
+
+### Feature
+
+
+
+### Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image
+
+Gemini Enterprise Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image
+are [Generally
+Available](https://cloud.google.com/products#product-launch-stages).
+
+With this release, Gemini 3.1 Flash Image and Gemini 3 Pro Image support 4K
+image outputs in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+Also supported in this release, Gemini 3.1 Flash Image supports video inputs in
+[Preview](https://cloud.google.com/products#product-launch-stages). You can use
+video inputs to generate thumbnails or representative images of videos.
+
+For more information, see the following:
+
+* [Gemini 3.1 Flash Image (Nano Banana
+  2)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image)
+* [Gemini 3 Pro Image (Nano Banana
+  Pro)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image)
+
+---
 ## 2026-05-27
 
 ### Feature

@@ -15,6 +15,14 @@ On May 22, 2026 we released an updated version of the Apigee hybrid software, v1
 
 Various security and CVE fixes are included in this release.
 
+### Announcement
+
+On May 22, 2026 we released an updated version of the Apigee UI.
+
+The **Management > Instances** page now displays Apigee hybrid instances. The display includes the instance name, location, and runtime version.
+
+See [Managing instances](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/instances).
+
 ### Apigee Emulator is now released independently
 
 Starting May 22, 2026, the Apigee Emulator is versioned and released

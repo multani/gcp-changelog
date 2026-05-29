@@ -2,10 +2,6 @@
 
 ## 2026-05-28
 
-### Deprecated
-
-
-
 ### Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro Image Preview deprecation
 
 Gemini Enterprise Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro
@@ -18,10 +14,6 @@ The following are the discontinued endpoints and recommended endpoint migration:
 | --- | --- |
 | `gemini-3.1-flash-image-preview` | `gemini-3.1-flash-image` |
 | `gemini-3-pro-image-preview` | `gemini-3-pro-image` |
-
-### Feature
-
-
 
 ### Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image
 

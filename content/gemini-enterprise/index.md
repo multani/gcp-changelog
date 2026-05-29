@@ -1,5 +1,29 @@
 # Gemini Enterprise
 
+## 2026-05-28
+
+### Feature
+
+**Gemini Enterprise: Release of Core Assistant (General Availability) and new Trace and Metrics information for Core Assistant (Preview)**
+
+This release includes Core Assistant, a Google-provided ("Made by Google") root
+agent that handles interactions when users talk to the Gemini Enterprise app
+without specifying any other agent.
+
+Core Assistant is
+[Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+Core Assistant includes new observability and monitoring functionality:
+
+* **Traces**: A chronological summary and visualization of trace spans showing execution flow, duration, inputs, outputs, and precise details if OpenTelemetry trace and logging instrumentation is enabled.
+* **Metrics**: A default-on dashboard displaying session counts, latency, agent invocations, tool call counts, and error rates without any extra billing costs.
+
+The Trace and Metrics tabs are in
+[Public Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Observe and trace agent behavior with Core Assistant](https://docs.cloud.google.com/gemini/enterprise/docs/core-assistant).
+
+---
 ## 2026-05-27
 
 ### Feature

@@ -4,6 +4,14 @@
 
 ### Feature
 
+C4A bare metal instances are generally available with GKE clusters. For more
+information, see the [Arm workloads on
+GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/arm-on-gke)
+document, including the "Requirements and limitations" section for specific
+version requirements.
+
+### Feature
+
 [Confidential GKE
 Nodes](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/confidential-gke-nodes#confidential-gke-nodes)
 now support cluster level enablement of [AMD

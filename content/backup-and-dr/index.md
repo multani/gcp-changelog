@@ -1,5 +1,14 @@
 # Backup and DR
 
+## 2026-05-28
+
+### Feature
+
+You can now view the Google Cloud Backup and DR Service protection summary at
+the organization and folder levels. To learn more about protection summary, see
+[Find unprotected resources using protection summary](https://docs.cloud.google.com/backup-disaster-recovery/docs/backup-admin/protection-summary).
+
+---
 ## 2026-05-18
 
 ### Feature

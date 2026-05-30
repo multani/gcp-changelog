@@ -2520,16 +2520,34 @@
 
 
 <h1 id="secure-source-manager">Secure Source Manager</h1>
-<h2 id="2026-05-06">2026-05-06</h2>
+<h2 id="2026-05-28">2026-05-28</h2>
+<h3 id="breaking">Breaking</h3>
+<p>To enhance security and address potential vulnerabilities (such as GHSA-3m6q-h5gj-7mrw), the Secure Source Manager Git-over-SSH server configuration has removed support for several legacy and insecure SSH algorithms.</p>
+<p>SSH clients must support one or more of the following modern algorithms to connect:</p>
+<ul>
+<li><strong>Key Exchange Algorithms:</strong> <code>curve25519-sha256</code>, <code>diffie-hellman-group14-sha256</code></li>
+<li><strong>Ciphers:</strong> <code>chacha20-poly1305@openssh.com</code>, <code>aes128-ctr</code>, <code>aes192-ctr,aes256-ctr</code>, <code>aes128-gcm@openssh.com</code>, <code>aes256-gcm@openssh.com</code></li>
+<li><strong>MACs:</strong> <code>hmac-sha2-256-etm@openssh.com</code>, <code>hmac-sha2-256</code></li>
+</ul>
+<p>Users with old or non-standard SSH clients lacking support for these algorithms will be unable to connect using SSH for Git operations. Ensure your SSH client is up-to-date.</p>
+<hr />
+<h2 id="2026-05-27">2026-05-27</h2>
 <h3 id="feature">Feature</h3>
+<p>Secure Source Manager enforces a daily rate quota on the size of code
+scanned for credentials per instance. The default quota limit is 1 GB per day
+per instance. For more information, see <a href="https://docs.cloud.google.com/secure-source-manager/docs/quotas">Quotas and
+limits</a>.</p>
+<hr />
+<h2 id="2026-05-06">2026-05-06</h2>
+<h3 id="feature_1">Feature</h3>
 <p>You can now use <a href="https://docs.cloud.google.com/secure-source-manager/docs/codeowners">CODEOWNERS files</a> to define required reviewers for pull requests.</p>
 <hr />
 <h2 id="2026-02-06">2026-02-06</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can now <a href="https://docs.cloud.google.com/developer-connect/docs/connect-secure-source-manager">connect to Secure Source Manager</a> using Developer Connect.</p>
 <hr />
 <h2 id="2026-02-03">2026-02-03</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can now assign custom domains for your private Secure Source Manager
 instance's HTML, API, Git HTTP, and Git SSH endpoints. To use custom domains, you
 must provide your own Certificate Authority (CA) certificate and CA pool during
@@ -2539,7 +2557,7 @@ Connect Secure Source Manager
 instance</a>.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Secure Source Manager is now available in the following <a href="https://docs.cloud.google.com/secure-source-manager/docs/locations#regions">regions</a>:</p>
 <ul>
 <li>us-east1 (South Carolina)</li>
@@ -2550,7 +2568,7 @@ instance</a>.</p>
 <p>Secure Source Manager is <a href="https://cloud.google.com/security/compliance/hipaa">compliant with the Health Insurance Portability and Accountability Act</a> (HIPAA), and is also <a href="https://cloud.google.com/security/compliance/fedramp">FedRAMP High compliant</a>.</p>
 <hr />
 <h2 id="2025-08-21">2025-08-21</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>You can now use a Google-managed certificate when you create a <a href="https://cloud.google.com/secure-source-manager/docs/create-private-service-connect-instance#create-private-service-connect-instance">create a Private Service Connect Secure Source Manager instance</a>.</p>
 <hr />
 <h2 id="2025-08-14">2025-08-14</h2>
@@ -2579,6 +2597,12 @@ instance</a>.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#secure-source-manager">Secure Source Manager</a></li>
+          <li class="nav-item">
+            <a href="#2026-05-28" class="nav-link">2026-05-28</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-05-27" class="nav-link">2026-05-27</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-05-06" class="nav-link">2026-05-06</a>
           </li>

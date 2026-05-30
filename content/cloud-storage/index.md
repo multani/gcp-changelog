@@ -1,5 +1,15 @@
 # Cloud Storage
 
+## 2026-05-28
+
+### Breaking
+
+As of August 26, 2026, in buckets with hierarchical namespace enabled,
+the [Object Lifecycle Management](https://docs.cloud.google.com/storage/docs/lifecycle) `Delete` action will
+delete empty folders when the empty folder meets all of the conditions in the
+lifecycle rule.
+
+---
 ## 2026-04-29
 
 ### Feature

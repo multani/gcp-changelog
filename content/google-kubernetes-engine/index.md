@@ -1,5 +1,18 @@
 # Google Kubernetes Engine
 
+## 2026-05-29
+
+### Issue
+
+In GKE version 1.35 and later, workloads that use Workload Identity to
+[authenticate to Google Cloud
+APIs](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/workload-identity) might experience
+transient connectivity timeouts or refused connections to the GKE metadata
+server immediately following node startup. For recommendations and workarounds,
+see [Timeout errors at Pod
+startup](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/authentication#troubleshoot-timeout).
+
+---
 ## 2026-05-28
 
 ### Feature

@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Secure Source Manager</title>
   <subtitle>Changelog for Google Cloud product: Secure Source Manager</subtitle>
-  <updated>2026-05-06T00:00:00+00:00</updated>
+  <updated>2026-05-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:secure-source-manager</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/secure-source-manager/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:secure-source-manager:2026-05-28:breaking:0</id>
+    <published>2026-05-28T00:00:00+00:00</published>
+    <updated>2026-05-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To enhance security and address potential vulnerabilities (such as GHSA-3m6q-h5gj-7mrw), the Secure Source Manager Git-over-SSH server configuration has removed support for several legacy and insecure SSH algorithms.</p>
+<p>SSH clients must support one or more of the following modern algorithms to connect:</p>
+<ul>
+<li><strong>Key Exchange Algorithms:</strong> <code>curve25519-sha256</code>, <code>diffie-hellman-group14-sha256</code></li>
+<li><strong>Ciphers:</strong> <code>chacha20-poly1305@openssh.com</code>, <code>aes128-ctr</code>, <code>aes192-ctr,aes256-ctr</code>, <code>aes128-gcm@openssh.com</code>, <code>aes256-gcm@openssh.com</code></li>
+<li><strong>MACs:</strong> <code>hmac-sha2-256-etm@openssh.com</code>, <code>hmac-sha2-256</code></li>
+</ul>
+<p>Users with old or non-standard SSH clients lacking support for these algorithms will be unable to connect using SSH for Git operations. Ensure your SSH client is up-to-date.</p>]]></content>
+    <summary>Secure Source Manager is updating its SSH server configuration to remove support for legacy and insecure algorithms, enhancing security. Users must ensure their SSH clients support modern algorithms like curve25519-sha256 and aes256-ctr to avoid connection issues.</summary>
+    <title>Breaking: SSH algorithm update for Secure Source Manager</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:secure-source-manager:2026-05-27:feature:0</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Secure Source Manager enforces a daily rate quota on the size of code
+scanned for credentials per instance. The default quota limit is 1 GB per day
+per instance. For more information, see <a href="https://docs.cloud.google.com/secure-source-manager/docs/quotas">Quotas and
+limits</a>.</p>]]></content>
+    <summary>Secure Source Manager now enforces a daily quota for code scanned for credentials. The default limit is 1 GB per day per instance, helping to manage resource usage and costs.</summary>
+    <title>Feature: New scanning quota for Secure Source Manager</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,21 @@
 # Apigee X
 
+## 2026-05-29
+
+### Announcement
+
+On May 29, 2026, we released an updated version of the Apigee UI.
+
+### Feature
+
+**Manage Spaces in the Apigee UI**
+
+You can now create, view, update, and delete spaces, and manage their Identity and Access Management (IAM) policies directly in the Apigee UI.
+Previously, these actions could only be performed using the Apigee API.
+For more information, see
+[Apigee Spaces overview](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/spaces/apigee-spaces-overview).
+
+---
 ## 2026-05-22
 
 ### Announcement

@@ -1,5 +1,30 @@
 # Secure Source Manager
 
+## 2026-05-28
+
+### Breaking
+
+To enhance security and address potential vulnerabilities (such as GHSA-3m6q-h5gj-7mrw), the Secure Source Manager Git-over-SSH server configuration has removed support for several legacy and insecure SSH algorithms.
+
+SSH clients must support one or more of the following modern algorithms to connect:
+
+* **Key Exchange Algorithms:** `curve25519-sha256`, `diffie-hellman-group14-sha256`
+* **Ciphers:** `chacha20-poly1305@openssh.com`, `aes128-ctr`, `aes192-ctr,aes256-ctr`, `aes128-gcm@openssh.com`, `aes256-gcm@openssh.com`
+* **MACs:** `hmac-sha2-256-etm@openssh.com`, `hmac-sha2-256`
+
+Users with old or non-standard SSH clients lacking support for these algorithms will be unable to connect using SSH for Git operations. Ensure your SSH client is up-to-date.
+
+---
+## 2026-05-27
+
+### Feature
+
+Secure Source Manager enforces a daily rate quota on the size of code
+scanned for credentials per instance. The default quota limit is 1 GB per day
+per instance. For more information, see [Quotas and
+limits](https://docs.cloud.google.com/secure-source-manager/docs/quotas).
+
+---
 ## 2026-05-06
 
 ### Feature

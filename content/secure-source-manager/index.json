@@ -1,6 +1,26 @@
 {
   "name": "Secure Source Manager",
   "entries": {
+    "2026-05-28": [
+      {
+        "kind": "Breaking",
+        "content": "To enhance security and address potential vulnerabilities (such as GHSA-3m6q-h5gj-7mrw), the Secure Source Manager Git-over-SSH server configuration has removed support for several legacy and insecure SSH algorithms.\n\nSSH clients must support one or more of the following modern algorithms to connect:\n\n* **Key Exchange Algorithms:** `curve25519-sha256`, `diffie-hellman-group14-sha256`\n* **Ciphers:** `chacha20-poly1305@openssh.com`, `aes128-ctr`, `aes192-ctr,aes256-ctr`, `aes128-gcm@openssh.com`, `aes256-gcm@openssh.com`\n* **MACs:** `hmac-sha2-256-etm@openssh.com`, `hmac-sha2-256`\n\nUsers with old or non-standard SSH clients lacking support for these algorithms will be unable to connect using SSH for Git operations. Ensure your SSH client is up-to-date.",
+        "summary": {
+          "title": "SSH algorithm update for Secure Source Manager",
+          "summary": "Secure Source Manager is updating its SSH server configuration to remove support for legacy and insecure algorithms, enhancing security. Users must ensure their SSH clients support modern algorithms like curve25519-sha256 and aes256-ctr to avoid connection issues."
+        }
+      }
+    ],
+    "2026-05-27": [
+      {
+        "kind": "Feature",
+        "content": "Secure Source Manager enforces a daily rate quota on the size of code\nscanned for credentials per instance. The default quota limit is 1 GB per day\nper instance. For more information, see [Quotas and\nlimits](https://docs.cloud.google.com/secure-source-manager/docs/quotas).",
+        "summary": {
+          "title": "New scanning quota for Secure Source Manager",
+          "summary": "Secure Source Manager now enforces a daily quota for code scanned for credentials. The default limit is 1 GB per day per instance, helping to manage resource usage and costs."
+        }
+      }
+    ],
     "2026-05-06": [
       {
         "kind": "Feature",

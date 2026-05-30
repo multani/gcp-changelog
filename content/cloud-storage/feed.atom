@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2026-04-29T00:00:00+00:00</updated>
+  <updated>2026-05-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-05-28:breaking:0</id>
+    <published>2026-05-28T00:00:00+00:00</published>
+    <updated>2026-05-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>As of August 26, 2026, in buckets with hierarchical namespace enabled,
+the <a href="https://docs.cloud.google.com/storage/docs/lifecycle">Object Lifecycle Management</a> <code>Delete</code> action will
+delete empty folders when the empty folder meets all of the conditions in the
+lifecycle rule.</p>]]></content>
+    <summary>Starting August 26, 2026, Object Lifecycle Management's 'Delete' action will remove empty folders in buckets with hierarchical namespace enabled, provided they meet lifecycle rule conditions. This change impacts how empty folder cleanup is handled within Cloud Storage.</summary>
+    <title>Breaking: Object Lifecycle Management Behavior Change</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,16 @@
 # Cluster Toolkit
 
+## 2026-05-14
+
+### Feature
+
+Cluster Toolkit v1.91.0 is available. This release introduces support
+for parallel containers on TPU 7x machines. This version also adds [Telemetry
+data collection options](https://docs.cloud.google.com/cluster-toolkit/docs/overview#privacy), which let
+Google collect usage statistics. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5665).
+
+---
 ## 2026-05-06
 
 ### Feature

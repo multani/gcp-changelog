@@ -42,6 +42,16 @@ For more information, see [Connect Slack](https://docs.cloud.google.com/gemini/e
 ---
 ## 2026-05-26
 
+### Feature
+
+**Gemini Enterprise: Filter support for Google Sites data stores (Preview)**
+
+You can add Site URL prefix filters to Google Sites data stores in
+Gemini Enterprise to include or exclude specific sites from search results.
+
+This feature is in Public Preview. For more information, see
+[Add filters to a Google Sites data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gsites/add-filters-to-gsites-data-store).
+
 ### Deprecated
 
 **Gemini Enterprise: Gemini Enterprise assist is deprecated**

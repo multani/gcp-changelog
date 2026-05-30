@@ -9,6 +9,14 @@
           "title": "GKE Workload Identity Connection Issues",
           "summary": "Workloads using Workload Identity in GKE 1.35+ may encounter transient connectivity issues to the metadata server after node startup. Please refer to the troubleshooting guide for recommended workarounds."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "GKE Gateway now supports backend authenticated TLS for Gateway-originated\nconnections to Pods or InferencePools for the following GatewayClasses:\n\n* `gke-l7-global-external-managed`\n* `gke-l7-regional-external-managed`\n* `gke-l7-rilb`\n* `gke-l7-global-regional-managed-mc`\n* `gke-l7-global-external-managed-mc`",
+        "summary": {
+          "title": "Gateway Backend TLS Authentication",
+          "summary": "GKE Gateway now supports backend authenticated TLS for connections to Pods or InferencePools with several GatewayClasses. This enhances security for traffic originating from the Gateway."
+        }
       }
     ],
     "2026-05-28": [

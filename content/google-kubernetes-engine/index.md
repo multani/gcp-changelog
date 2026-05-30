@@ -12,6 +12,17 @@ server immediately following node startup. For recommendations and workarounds,
 see [Timeout errors at Pod
 startup](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/authentication#troubleshoot-timeout).
 
+### Feature
+
+GKE Gateway now supports backend authenticated TLS for Gateway-originated
+connections to Pods or InferencePools for the following GatewayClasses:
+
+* `gke-l7-global-external-managed`
+* `gke-l7-regional-external-managed`
+* `gke-l7-rilb`
+* `gke-l7-global-regional-managed-mc`
+* `gke-l7-global-external-managed-mc`
+
 ---
 ## 2026-05-28
 

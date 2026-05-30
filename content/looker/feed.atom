@@ -156,6 +156,20 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:12</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker has introduced a security sandboxing enhancement for Git command-line interface (CLI) operations. For Looker projects that are configured with SSH connections, this enhancement restricts which directories and executables can be accessed on the instance when Git worktree commands are executed. Looker projects that use HTTPS connections are not affected.</p>
+<p>This sandboxing feature is enabled automatically for Cloud-hosted Looker (original) and Looker (Google Cloud core) instances starting in Looker 26.8.</p>
+<p>For <a href="https://docs.cloud.google.com/looker/docs/glossary#customer-hosted">customer-hosted</a> Looker instances, this security enhancement is available starting in Looker 26.10. To opt in to security sandboxing, you must install the <a href="https://proot-me.github.io/"><code>proot</code> package</a> on your Looker host machine. If <code>proot</code> isn't installed, SSH-connected Git operations will still be executed successfully but won't have the sandboxing protection.</p>
+<p><strong>Note:</strong> This item was updated on May 29, 2026.</p>]]></content>
+    <summary>Looker has implemented security sandboxing for Git CLI operations on SSH-connected projects. This feature restricts directory and executable access during Git worktree commands, enhancing instance security. The enhancement is automatically enabled for cloud-hosted instances starting in Looker 26.8 and available for customer-hosted instances in Looker 26.10 with the optional `proot` package installation.</summary>
+    <title>Feature: Enhanced Git Security for Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:13</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explores</strong></a> feature is now supported on Snowflake connections. Your Looker admin can select a Snowflake connection in the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable"><strong>Default Connection</strong> field</a> of the <strong>Self-service Explores</strong> admin page. On Snowflake connections, you can <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service#files-from-computer">upload comma-separated files (CSV) and Excel files (XLS and XLSX)</a> to create a self-service Explore.</p>]]></content>
     <summary>The Self-service Explores feature now supports Snowflake connections. This allows users to upload CSV, XLS, and XLSX files to create their own Explores directly from Snowflake. Admins can enable this feature by selecting a Snowflake connection in the Default Connection field.</summary>
     <title>Feature: Self-service Explores Now Available for Snowflake</title>
@@ -164,7 +178,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:14</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles">Admin &gt; Roles panel</a> user interface has been updated.</p>]]></content>
@@ -175,7 +189,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:14</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-05-27:feature:15</id>
     <published>2026-05-27T00:00:00+00:00</published>
     <updated>2026-05-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker admins can no longer create or manage API credentials for individual standard users in Looker (original) instances. Users must now <a href="https://docs.cloud.google.com/looker/docs/user-account#api-keys">manage their own keys</a> from their <strong>Account</strong> page. Admins can <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#api_keys">enable or disable self-service API key management</a> for users and continue to manage credentials for API-only service accounts. To improve security, API keys are no longer visible to admins while they are <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#impersonating_users">sudoing</a> as another user.</p>]]></content>

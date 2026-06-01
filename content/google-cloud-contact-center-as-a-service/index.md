@@ -1,5 +1,32 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-01
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where Canadian French translations for notifications and
+  error messages were appearing in English.
+* Fixed an issue where the **Agent Preferences** table on the **Agent
+  Availability** dashboard didn't update when an agent modified their
+  availability preferences.
+* Fixed an agent desktop issue where clicking the **Transfer** button in an
+  SMS chat displayed an error instead of starting a transfer.
+* Fixed an issue where a delay in Salesforce task creation caused a lag in
+  updating the ticket ID on calls.
+* Fixed an issue where agents were unable to transfer SMS chats.
+* Fixed an issue where incoming chats were routed to newly signed-in agents
+  instead of to those who had been available the longest.
+* Fixed an issue where messages in the chat adapter's chat history weren't
+  labeled or aligned to distinguish agent messages from end-user messages.
+* Fixed an issue in the IVR **Queue Menu Settings** pane where the text input
+  field didn't appear when users selected **Text-to-speech**.
+* Fixed an issue in the SMS **Queue Menu Settings** pane where phone numbers
+  weren't appearing in the incoming and outbound **Assigned Numbers** fields.
+* Fixed an issue where the web SDK didn't load.
+
+---
 ## 2026-05-27
 
 ### Announcement

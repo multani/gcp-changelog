@@ -1,5 +1,21 @@
 # Cloud Trace
 
+## 2026-06-01
+
+### Feature
+
+The details page for a span can display the call hierarchy of a trace using a
+directed acyclic graph (DAG). One way to view a span's details is to open the
+**Trace Explorer** page and select the span. The DAG view is also available for
+some integrations. For example, if you view an Application Monitoring dashboard
+and explore the trace data it displays, the flyout supports the DAG option.
+
+For more information, see the following:
+
+* [Trace Explorer: Explore a trace](https://docs.cloud.google.com/trace/docs/finding-traces#explore)
+* [Application Monitoring: Explore a trace](https://docs.cloud.google.com/monitoring/docs/application-monitoring#explore-trace)
+
+---
 ## 2026-05-28
 
 ### Announcement

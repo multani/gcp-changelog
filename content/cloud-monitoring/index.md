@@ -1,5 +1,21 @@
 # Cloud Monitoring
 
+## 2026-06-01
+
+### Feature
+
+The details page for a span can display the call hierarchy of a trace by using a
+directed acyclic graph (DAG). If you view an Application Monitoring dashboard
+and explore the trace data that it displays, the flyout supports the DAG option.
+If you open the **Trace Explorer** page and explore a span, the DAG option is
+also available.
+
+For more information, see the following:
+
+* [Application Monitoring: Explore a trace](https://docs.cloud.google.com/monitoring/docs/application-monitoring#explore-trace)
+* [Trace Explorer: Explore a trace](https://docs.cloud.google.com/trace/docs/finding-traces#explore)
+
+---
 ## 2026-05-15
 
 ### Feature

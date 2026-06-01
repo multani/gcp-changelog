@@ -1,5 +1,23 @@
 # BigQuery
 
+## 2026-06-01
+
+### Change
+
+The Facebook Ads connector for the BigQuery Data Transfer Service now supports
+data transfers from the following Facebook Ads reports:
+
+* `AdInsightsMMM`
+* `Ads`
+* `AdCreatives`
+* `AdSets`
+* `Campaigns`
+* `AdImages`
+* `AdLabels`
+* `Businesses`
+* `CustomAudiences`
+
+---
 ## 2026-05-27
 
 ### Change

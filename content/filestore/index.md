@@ -1,5 +1,13 @@
 # Filestore
 
+## 2026-06-01
+
+### Feature
+
+The [Filestore remote Model Context Protocol (MCP) server](https://docs.cloud.google.com/filestore/docs/use-filestore-mcp) is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+The Filestore remote MCP server lets you create and manage Filestore instances from LLMs, AI applications, and AI-enabled development platforms.
+
+---
 ## 2026-04-13
 
 ### Feature

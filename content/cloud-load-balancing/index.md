@@ -1,5 +1,31 @@
 # Cloud Load Balancing
 
+## 2026-06-01
+
+### Feature
+
+A modernized, component-centric interface for Cloud Load Balancing is available
+in **Preview**. This inaugural release provides an expanded perspective of load
+balancing infrastructure, offering enhanced transparency into individual
+component configurations.
+
+[Go to Cloud Console](https://console.cloud.google.com/net-services/loadbalancing/advanced)
+
+The key features of this release include the following:
+
+* **Comprehensive resource inventory**: A centralized, searchable, and sortable
+  management layer for granular resources—including forwarding rules,
+  target proxies, and TLSRoutes—facilitating detailed monitoring of
+  resource status and interdependencies.
+* **Interactive resource topology**: A contextual visualization tool that maps
+  traffic flow from forwarding rules through proxies to backends, enabling
+  technical teams to efficiently analyze dependencies and accelerate issue
+  resolution.
+* **Integrated audit logging**: Embedded audit logs within the console that
+  offer a unified module for monitoring and tracking
+  historical configuration changes.
+
+---
 ## 2026-05-26
 
 ### Feature

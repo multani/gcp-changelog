@@ -1,5 +1,15 @@
 # Knowledge Catalog
 
+## 2026-05-29
+
+### Feature
+
+The Data Lineage API includes the [`searchLineageStreaming`](dataplex/docs/reference/data-lineage/rest/v1/projects.locations/searchLineageStreaming?rep_location=global) method that performs a breadth-first search (upstream or downstream) to retrieve lineage links for an asset identified by its Fully Qualified Name (FQN).
+
+For more information, see the Data Lineage API reference for
+[REST](https://docs.cloud.google.com/dataplex/docs/reference/data-lineage/rest).
+
+---
 ## 2026-05-27
 
 ### Feature

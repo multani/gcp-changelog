@@ -8,6 +8,8 @@ This release addresses the following issues:
 
 * Fixed an issue where Canadian French translations for notifications and
   error messages were appearing in English.
+* Fixed an issue where the Alvaria WFM **Agent Performance** report was
+  exporting every minute instead of once daily.
 * Fixed an issue where the **Agent Preferences** table on the **Agent
   Availability** dashboard didn't update when an agent modified their
   availability preferences.

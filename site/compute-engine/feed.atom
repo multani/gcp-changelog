@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-05-27T00:00:00+00:00</updated>
+  <updated>2026-06-01T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-06-01:feature:0</id>
+    <published>2026-06-01T00:00:00+00:00</published>
+    <updated>2026-06-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: Compute Engine supports the Google's
+custom-developed accelerator Tensor Processing Unit (TPU), providing a converged
+experience across AI accelerators on Google Cloud. You can use the
+Compute Engine instance API and managed instance group (MIG) API to
+create and manage TPU VMs. You can perform standard VM configurations such as
+using a custom OS or configure boot disk size. Compute Engine APIs
+support the creation and management of TPU slices across all consumption
+options, enabling small-scale experimentation and large-scale training and
+inference workloads.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/tpus/tpu-resources-in-compute-engine">TPU resources in Compute Engine</a>.</p>]]></content>
+    <summary>Compute Engine now supports Tensor Processing Units (TPUs), offering a unified experience for AI accelerators. You can now create and manage TPU VMs using Compute Engine APIs, supporting various configurations and workload scales from experimentation to large-scale training and inference.</summary>
+    <title>Feature: TPUs now available in Compute Engine</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-06-01:feature:1</id>
+    <published>2026-06-01T00:00:00+00:00</published>
+    <updated>2026-06-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: In a managed instance group (MIG), obtain the requested
+number of virtual machine (VM) instances all at once by using bulk mode of the
+target size policy. Using bulk mode helps you avoid partial VM provisioning in a
+MIG. Bulk mode is particularly beneficial for batch workloads, such as high
+performance computing (HPC) or distributed training, that require full capacity
+before they can start. For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/instance-groups/about-bulk-mode">About bulk mode</a>.</p>]]></content>
+    <summary>Managed instance groups now support bulk mode for target size policies, ensuring all requested VM instances are provisioned at once. This feature prevents partial provisioning and is ideal for batch workloads like HPC and distributed training that require full capacity before execution.</summary>
+    <title>Feature: MIG Bulk Mode for VM Provisioning</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

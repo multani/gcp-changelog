@@ -1,5 +1,33 @@
 # Compute Engine
 
+## 2026-06-01
+
+### Feature
+
+**Generally available**: Compute Engine supports the Google's
+custom-developed accelerator Tensor Processing Unit (TPU), providing a converged
+experience across AI accelerators on Google Cloud. You can use the
+Compute Engine instance API and managed instance group (MIG) API to
+create and manage TPU VMs. You can perform standard VM configurations such as
+using a custom OS or configure boot disk size. Compute Engine APIs
+support the creation and management of TPU slices across all consumption
+options, enabling small-scale experimentation and large-scale training and
+inference workloads.
+
+For more information, see
+[TPU resources in Compute Engine](https://docs.cloud.google.com/compute/docs/tpus/tpu-resources-in-compute-engine).
+
+### Feature
+
+**Generally available**: In a managed instance group (MIG), obtain the requested
+number of virtual machine (VM) instances all at once by using bulk mode of the
+target size policy. Using bulk mode helps you avoid partial VM provisioning in a
+MIG. Bulk mode is particularly beneficial for batch workloads, such as high
+performance computing (HPC) or distributed training, that require full capacity
+before they can start. For more information, see
+[About bulk mode](https://docs.cloud.google.com/compute/docs/instance-groups/about-bulk-mode).
+
+---
 ## 2026-05-27
 
 ### Feature

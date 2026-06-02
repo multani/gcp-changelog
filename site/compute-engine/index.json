@@ -1,6 +1,24 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2026-06-01": [
+      {
+        "kind": "Feature",
+        "content": "**Generally available**: Compute Engine supports the Google's\ncustom-developed accelerator Tensor Processing Unit (TPU), providing a converged\nexperience across AI accelerators on Google Cloud. You can use the\nCompute Engine instance API and managed instance group (MIG) API to\ncreate and manage TPU VMs. You can perform standard VM configurations such as\nusing a custom OS or configure boot disk size. Compute Engine APIs\nsupport the creation and management of TPU slices across all consumption\noptions, enabling small-scale experimentation and large-scale training and\ninference workloads.\n\nFor more information, see\n[TPU resources in Compute Engine](https://docs.cloud.google.com/compute/docs/tpus/tpu-resources-in-compute-engine).",
+        "summary": {
+          "title": "TPUs now available in Compute Engine",
+          "summary": "Compute Engine now supports Tensor Processing Units (TPUs), offering a unified experience for AI accelerators. You can now create and manage TPU VMs using Compute Engine APIs, supporting various configurations and workload scales from experimentation to large-scale training and inference."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Generally available**: In a managed instance group (MIG), obtain the requested\nnumber of virtual machine (VM) instances all at once by using bulk mode of the\ntarget size policy. Using bulk mode helps you avoid partial VM provisioning in a\nMIG. Bulk mode is particularly beneficial for batch workloads, such as high\nperformance computing (HPC) or distributed training, that require full capacity\nbefore they can start. For more information, see\n[About bulk mode](https://docs.cloud.google.com/compute/docs/instance-groups/about-bulk-mode).",
+        "summary": {
+          "title": "MIG Bulk Mode for VM Provisioning",
+          "summary": "Managed instance groups now support bulk mode for target size policies, ensuring all requested VM instances are provisioned at once. This feature prevents partial provisioning and is ideal for batch workloads like HPC and distributed training that require full capacity before execution."
+        }
+      }
+    ],
     "2026-05-27": [
       {
         "kind": "Feature",

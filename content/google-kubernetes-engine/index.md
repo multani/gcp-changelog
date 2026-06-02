@@ -20,8 +20,6 @@ connections to Pods or InferencePools for the following GatewayClasses:
 * `gke-l7-global-external-managed`
 * `gke-l7-regional-external-managed`
 * `gke-l7-rilb`
-* `gke-l7-global-regional-managed-mc`
-* `gke-l7-global-external-managed-mc`
 
 ---
 ## 2026-05-28

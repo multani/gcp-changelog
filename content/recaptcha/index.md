@@ -1,5 +1,14 @@
 # reCAPTCHA
 
+## 2026-06-01
+
+### Change
+
+reCAPTCHA Mobile SDK v18.9.1 is available for Android. This version
+fixes an issue that caused package name collisions when
+building projects using Android Gradle Plugin version 9.0 or higher.
+
+---
 ## 2026-05-20
 
 ### Change

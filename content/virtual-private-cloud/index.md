@@ -1,5 +1,16 @@
 # Virtual Private Cloud
 
+## 2026-06-01
+
+### Feature
+
+**General Availability**: [Composite Health for Private Service
+Connect](https://docs.cloud.google.com/vpc/docs/about-composite-health), formerly known as Private Service
+Connect health, lets service producers define health criteria for published
+services, enabling automatic cross-region failover for consumers that access the
+service by using Private Service Connect backends.
+
+---
 ## 2026-05-19
 
 ### Feature

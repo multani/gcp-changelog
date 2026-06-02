@@ -1,5 +1,12 @@
 # Anti Money Laundering AI
 
+## 2026-05-19
+
+### Announcement
+
+Improvements to backtest API and recall metrics are now available with engine version **v004.011**. This includes support for Performance Targeting by number of parties required above threshold and a simplified recall metric calculation.
+
+---
 ## 2026-04-23
 
 ### Fixed

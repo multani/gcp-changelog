@@ -1,5 +1,35 @@
 # Cloud Load Balancing
 
+## 2026-06-02
+
+### Feature
+
+TLS post-quantum key exchange support is now available for
+Application Load Balancers and external proxy Network Load Balancers.
+Post-quantum key exchange is
+essential for protecting today's traffic from future quantum computing
+decryption risks (*harvest now, decrypt later* attacks).
+With post-quantum key exchange enabled, the
+load balancer uses post-quantum key exchange with clients that support TLS
+1.3 and `X25519MLKEM768` key exchange.
+
+This feature is rolling out in three phases:
+
+* Phase 1 (Until October 2026): Post-quantum key exchange is not enabled by
+  default. Customers can elect to opt in and enable it using their SSL policy.
+* Phase 2 (October 2026 through October 2027): The feature is enabled by
+  default. Customers can elect to defer (opt out) if required.
+* Phase 3 (After October 2027): The feature is enabled by default,
+  and options to defer are no longer effective.
+
+We strongly encourage you to enable post-quantum key exchange now, even before
+it is turned on by default. The opportunity to test this today will help you
+verify that clients and any intermediate network devices can properly negotiate
+post-quantum key exchange.
+
+For more information, see [Post-quantum key exchange](https://docs.cloud.google.com/load-balancing/docs/post-quantum-tls#post-quantum-key-exchange).
+
+---
 ## 2026-06-01
 
 ### Feature

@@ -1,5 +1,14 @@
 # Filestore
 
+## 2026-06-02
+
+### Feature
+
+You can configure your Filestore instances to use Private Service Connect with NFSv3 or NFSv4.1 file system protocols and IPv4 or IPv6 address families to allow consumers access managed services privately from inside their VPC network. This feature is [generally available](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Create a Filestore instance with Private Service Connect](https://docs.cloud.google.com/filestore/docs/configure-psc).
+
+---
 ## 2026-06-01
 
 ### Feature

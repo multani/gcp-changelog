@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-06-01T00:00:00+00:00</updated>
+  <updated>2026-06-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-06-02:feature:0</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>TLS post-quantum key exchange support is now available for
+Application Load Balancers and external proxy Network Load Balancers.
+Post-quantum key exchange is
+essential for protecting today's traffic from future quantum computing
+decryption risks (<em>harvest now, decrypt later</em> attacks).
+With post-quantum key exchange enabled, the
+load balancer uses post-quantum key exchange with clients that support TLS
+1.3 and <code>X25519MLKEM768</code> key exchange.</p>
+<p>This feature is rolling out in three phases:</p>
+<ul>
+<li>Phase 1 (Until October 2026): Post-quantum key exchange is not enabled by
+  default. Customers can elect to opt in and enable it using their SSL policy.</li>
+<li>Phase 2 (October 2026 through October 2027): The feature is enabled by
+  default. Customers can elect to defer (opt out) if required.</li>
+<li>Phase 3 (After October 2027): The feature is enabled by default,
+  and options to defer are no longer effective.</li>
+</ul>
+<p>We strongly encourage you to enable post-quantum key exchange now, even before
+it is turned on by default. The opportunity to test this today will help you
+verify that clients and any intermediate network devices can properly negotiate
+post-quantum key exchange.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/load-balancing/docs/post-quantum-tls#post-quantum-key-exchange">Post-quantum key exchange</a>.</p>]]></content>
+    <summary>Secure your network traffic against future threats with post-quantum key exchange now available for Application Load Balancers and external proxy Network Load Balancers. This feature protects against 'harvest now, decrypt later' attacks by enabling quantum-resistant encryption with clients supporting TLS 1.3 and X25519MLKEM768. We encourage enabling it now to prepare for its phased rollout and ensure compatibility.</summary>
+    <title>Feature: Post-quantum key exchange for load balancing</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

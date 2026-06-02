@@ -1,5 +1,12 @@
 # Google SecOps
 
+## 2026-06-01
+
+### Announcement
+
+The [Manage access to preview features feature](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#May_28_2026) has been rolled back.
+
+---
 ## 2026-05-31
 
 ### Change

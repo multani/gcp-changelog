@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-06-02": [
+      {
+        "kind": "Feature",
+        "content": "TLS post-quantum key exchange support is now available for\nApplication Load Balancers and external proxy Network Load Balancers.\nPost-quantum key exchange is\nessential for protecting today's traffic from future quantum computing\ndecryption risks (*harvest now, decrypt later* attacks).\nWith post-quantum key exchange enabled, the\nload balancer uses post-quantum key exchange with clients that support TLS\n1.3 and `X25519MLKEM768` key exchange.\n\nThis feature is rolling out in three phases:\n\n* Phase 1 (Until October 2026): Post-quantum key exchange is not enabled by\n  default. Customers can elect to opt in and enable it using their SSL policy.\n* Phase 2 (October 2026 through October 2027): The feature is enabled by\n  default. Customers can elect to defer (opt out) if required.\n* Phase 3 (After October 2027): The feature is enabled by default,\n  and options to defer are no longer effective.\n\nWe strongly encourage you to enable post-quantum key exchange now, even before\nit is turned on by default. The opportunity to test this today will help you\nverify that clients and any intermediate network devices can properly negotiate\npost-quantum key exchange.\n\nFor more information, see [Post-quantum key exchange](https://docs.cloud.google.com/load-balancing/docs/post-quantum-tls#post-quantum-key-exchange).",
+        "summary": {
+          "title": "Post-quantum key exchange for load balancing",
+          "summary": "Secure your network traffic against future threats with post-quantum key exchange now available for Application Load Balancers and external proxy Network Load Balancers. This feature protects against 'harvest now, decrypt later' attacks by enabling quantum-resistant encryption with clients supporting TLS 1.3 and X25519MLKEM768. We encourage enabling it now to prepare for its phased rollout and ensure compatibility."
+        }
+      }
+    ],
     "2026-06-01": [
       {
         "kind": "Feature",

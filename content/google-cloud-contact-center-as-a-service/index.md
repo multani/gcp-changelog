@@ -2,6 +2,26 @@
 
 ## 2026-06-01
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Sort and filter emails**
+
+Agents can now sort and filter emails by date in the email adapter.
+
+User experience changes: The email adapter has the following new UI elements:
+
+* A button to toggle between **Oldest to newest** and **Newest to oldest** in
+  the email list.
+* A **Filter by Date** list to filter by preset filters or by a configurable
+  date range.
+
 ### Fixed
 
 This release addresses the following issues:

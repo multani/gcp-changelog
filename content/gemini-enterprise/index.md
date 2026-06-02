@@ -1,5 +1,38 @@
 # Gemini Enterprise
 
+## 2026-06-01
+
+### Announcement
+
+**Gemini Enterprise: Agent Designer migration to Gemini 3.5 Flash**
+
+Agent Designer agents in the US and Global regions that previously migrated
+from Gemini 2.5 Flash and Gemini 2.5 Pro to
+Gemini 3.1 Pro have been migrated to Gemini 3.5 Flash. This
+migration is automatic and requires no action.
+
+To use a different model, edit your agent's settings using either
+[conversational chat](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/edit-agent#edit-using-chat)
+or the [flow builder](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/edit-agent#edit-using-flow).
+
+### Feature
+
+**Gemini Enterprise: Create and edit documents and slides in Canvas (Preview)**
+
+Canvas is a dedicated, interactive tool within the Gemini Enterprise
+web app. It allows you to create and edit AI-generated documents and
+presentations directly from your chats. You can then export these to Google
+Workspace, Microsoft Office formats, and PDF.
+
+A Gemini Enterprise administrator must turn on the feature so that users can
+use it in the Gemini Enterprise app. For more information about feature
+controls, see [Manage features on the web
+app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+This feature is in Public Preview. For more information, see
+[Create and edit documents and slides in Canvas](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-canvas).
+
+---
 ## 2026-05-28
 
 ### Feature

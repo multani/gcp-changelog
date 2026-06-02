@@ -1,5 +1,22 @@
 # Cloud TPU
 
+## 2026-06-01
+
+### Feature
+
+**Generally available**: Compute Engine supports Google's custom-developed
+accelerator Tensor Processing Unit (TPU), providing a converged experience
+across AI accelerators on Google Cloud. You can use the Compute Engine
+instance API and managed instance group (MIG) API to create and manage TPU VMs.
+You can perform standard VM configurations such as using a custom OS or
+configure boot disk size. Compute Engine APIs support the creation and
+management of TPU slices across all consumption options, enabling small-scale
+experimentation and large-scale training and inference workloads.
+
+For more information, see [TPU resources in Compute
+Engine](https://docs.cloud.google.com/tpu/docs/tpus-in-compute-engine).
+
+---
 ## 2026-04-27
 
 ### Feature

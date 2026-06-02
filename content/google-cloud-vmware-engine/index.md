@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2026-06-01
+
+### Announcement
+
+All 3-year (36-month) `ve2` [committed use discounts (CUDs)](https://docs.cloud.google.com/docs/cuds) for Google Cloud VMware Engine purchased after May 31, 2026, will terminate on October 15, 2028. 3-year CUD pricing will apply, regardless of the actual term of the CUD.
+
+---
 ## 2026-05-20
 
 ### Announcement

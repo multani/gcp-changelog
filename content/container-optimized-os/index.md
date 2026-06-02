@@ -346,134 +346,63 @@ Updated net-misc/curl to v8.20. This fixes CVE-2026-5545,CVE-2026-4873,CVE-2026-
 
 ### Change
 
-
-
-### cos-dev-133-19804-0-0
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.18.32](https://cos.googlesource.com/third_party/kernel/+/39aff0f4a2a2fe29718f45dcab025a25fc7c46d6 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19804.0.0/lakitu/gpu_driver_versions.textproto) |
-
-### Change
-
 Switch cchost-\* boards to legacy iptables.
-
-### Change
-
-Added support for the R595 Nvidia driver production branch.
 
 ### Fixed
 
 Added support for NVIDIA driver v535.309.01.
 
-### Change
-
-Apply hardening sysctls on cchost boards.
-
 ### Fixed
 
 Added support for NVIDIA driver v580.159.03.
-
-### Change
-
-Dropped support for the NVIDIA 535 drivers.
 
 ### Fixed
 
 Added support for NVIDIA driver v595.71.05.
 
-### Change
-
-Enabled mm hardening kernel cmdlines on cchost.
-
 ### Fixed
 
 Upgraded app-shells/dash to v0.5.13.4.
-
-### Change
-
-Increased the size of the EFI partition from 32 MiB to 64 MiB and increased the sizes of both kernel partitions from 16 MiB to 32 MiB on x86.
 
 ### Fixed
 
 Upgraded cos-gpu-installer to v2.7.1.
 
-### Change
-
-Made it so that /etc/machine-id is mounted with noexec, nosuid, and nodev.
-
 ### Fixed
 
 Upgraded net-misc/rsync to v3.4.2.
-
-### Change
-
-Switch cchost-\* boards to legacy iptables.
 
 ### Security
 
 Fixed CVE-2025-38584 in the Linux kernel.
 
-### Change
-
-Updated the Linux kernel to v6.18.32.
-
 ### Security
 
 Fixed CVE-2026-23473 in the Linux kernel.
-
-### Change
-
-Updated uhaul to v6.18-0.
 
 ### Security
 
 Fixed CVE-2026-43060 in the Linux kernel.
 
-### Change
-
-Upgrade the Linux kernel to version 6.18.
-
 ### Security
 
 Fixed CVE-2026-43063 in the Linux kernel.
-
-### Change
-
-Upgraded sys-apps/xemu to v0.0.9.
 
 ### Security
 
 Fixed CVE-2026-43065 in the Linux kernel.
 
-### Change
-
-Upgraded sys-fs/cryptsetup to v2.8.6.
-
 ### Security
 
 Fixed CVE-2026-43066 in the Linux kernel.
-
-### Change
-
-Upgraded sysram to v6.18-0.
 
 ### Security
 
 Fixed CVE-2026-43067 in the Linux kernel.
 
-### Feature
-
-Added the cos\_kernel\_args tool that allows manipulating kernel command line arguments of a COS image.
-
 ### Security
 
 Fixed CVE-2026-43068 in the Linux kernel.
-
-### Feature
-
-Added nvidia-fs support to the COS GPU installer.
 
 ### Security
 
@@ -487,217 +416,109 @@ Fixed CVE-2026-43073 in the Linux kernel.
 
 Fixed CVE-2026-43079 in the Linux kernel.
 
-### Fixed
-
-Added support for NVIDIA driver v580.159.03.
-
 ### Security
 
 Fixed CVE-2026-43085 in the Linux kernel.
-
-### Fixed
-
-Added support for NVIDIA driver v595.71.05.
 
 ### Security
 
 Fixed CVE-2026-43086 in the Linux kernel.
 
-### Fixed
-
-Added support for NVIDIA drivers v580.126.16 and v580.126.20.
-
 ### Security
 
 Fixed CVE-2026-43089 in the Linux kernel.
-
-### Fixed
-
-Dropped support for NVIDIA MFT Tools v4.32.0.
 
 ### Security
 
 Fixed CVE-2026-43090 in the Linux kernel.
 
-### Fixed
-
-Upgraded CASFS to v0.1.3.
-
 ### Security
 
 Fixed CVE-2026-43091 in the Linux kernel.
-
-### Fixed
-
-Upgraded app-admin/oslogin to v20260227.00.
 
 ### Security
 
 Fixed CVE-2026-43093 in the Linux kernel.
 
-### Fixed
-
-Upgraded app-admin/oslogin to v20260430.00.
-
 ### Security
 
 Fixed CVE-2026-43094 in the Linux kernel.
-
-### Fixed
-
-Upgraded app-admin/sosreport to v4.11.1.
 
 ### Security
 
 Fixed CVE-2026-43099 in the Linux kernel.
 
-### Fixed
-
-Upgraded app-containers/docker-credential-helpers to v0.9.6.
-
 ### Security
 
 Fixed CVE-2026-43107 in the Linux kernel.
-
-### Fixed
-
-Upgraded app-shells/dash to v0.5.13.3.
 
 ### Security
 
 Fixed CVE-2026-43112 in the Linux kernel.
 
-### Fixed
-
-Upgraded app-shells/dash to v0.5.13.4.
-
 ### Security
 
 Fixed CVE-2026-43114 in the Linux kernel.
-
-### Fixed
-
-Upgraded chromeos-base/chromeos-common-script to v0.0.1-r672.
 
 ### Security
 
 Fixed CVE-2026-43117 in the Linux kernel.
 
-### Fixed
-
-Upgraded chromeos-base/debugd-client to v0.0.1-r2738.
-
 ### Security
 
 Fixed CVE-2026-43329 in the Linux kernel.
-
-### Fixed
-
-Upgraded chromeos-base/google-breakpad to v2026.04.24.230834-r272.
 
 ### Security
 
 Fixed CVE-2026-43332 in the Linux kernel.
 
-### Fixed
-
-Upgraded chromeos-base/google-breakpad to v2026.05.06.161957-r274.
-
 ### Security
 
 Fixed CVE-2026-43333 in the Linux kernel.
-
-### Fixed
-
-Upgraded chromeos-base/power\_manager-client to v0.0.1-r2973.
 
 ### Security
 
 Fixed CVE-2026-43336 in the Linux kernel.
 
-### Fixed
-
-Upgraded chromeos-base/session\_manager-client to v0.0.1-r2834.
-
 ### Security
 
 Fixed CVE-2026-43338 in the Linux kernel.
-
-### Fixed
-
-Upgraded cos-gpu-installer to v2.7.1.
 
 ### Security
 
 Fixed CVE-2026-43339 in the Linux kernel.
 
-### Fixed
-
-Upgraded dev-db/sqlite to v3.53.1.
-
 ### Security
 
 Fixed CVE-2026-43341 in the Linux kernel.
-
-### Fixed
-
-Upgraded dev-libs/expat to v2.8.0.
 
 ### Security
 
 Fixed CVE-2026-43350 in the Linux kernel.
 
-### Fixed
-
-Upgraded dev-libs/expat to v2.8.1.
-
 ### Security
 
 Fixed CVE-2026-43359 in the Linux kernel.
-
-### Fixed
-
-Upgraded net-libs/libnetfilter\_queue to v1.0.5-r1.
 
 ### Security
 
 Fixed CVE-2026-43360 in the Linux kernel.
 
-### Fixed
-
-Upgraded net-misc/rsync to v3.4.2.
-
 ### Security
 
 Fixed CVE-2026-43361 in the Linux kernel.
-
-### Fixed
-
-Upgraded sys-apps/makedumpfile to v1.7.9.
 
 ### Security
 
 Fixed CVE-2026-43362 in the Linux kernel.
 
-### Fixed
-
-Upgraded sys-libs/libcap to v2.78.
-
 ### Security
 
 Fixed CVE-2026-43363 in the Linux kernel.
 
-### Fixed
-
-Upgraded sys-process/lsof to v4.99.6.
-
 ### Security
 
 Fixed CVE-2026-43365 in the Linux kernel.
-
-### Fixed
-
-Upgraded the dump capture kernel to Linux v6.18.
 
 ### Security
 
@@ -705,15 +526,7 @@ Fixed CVE-2026-43366 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-0994 in dev-libs/protobuf.
-
-### Security
-
 Fixed CVE-2026-43374 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-34743 in app-arch/xz-utils.
 
 ### Security
 
@@ -721,15 +534,7 @@ Fixed CVE-2026-43383 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-35385 and CVE-2026-35386 in net-misc/openssh.
-
-### Security
-
 Fixed CVE-2026-43392 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-35414 in net-misc/openssh.
 
 ### Security
 
@@ -737,15 +542,7 @@ Fixed CVE-2026-43393 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-4046 in sys-libs/glibc.
-
-### Security
-
 Fixed CVE-2026-43394 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-4437,CVE-2026-4438 in sys-libs/glibc.
 
 ### Security
 
@@ -753,15 +550,7 @@ Fixed CVE-2026-43403 in the Linux kernel.
 
 ### Security
 
-Fixed EFI variable OOB read in grub config parsing.
-
-### Security
-
 Fixed CVE-2026-43409 in the Linux kernel.
-
-### Security
-
-Fixed argument injection in toolbox.
 
 ### Security
 
@@ -769,15 +558,7 @@ Fixed CVE-2026-43438 in the Linux kernel.
 
 ### Security
 
-Updated go to v1.25.9. This resolves CVE-2026-32280, CVE-2026-32281, CVE-2026-32283, CVE-2026-27140, CVE-2026-27144.
-
-### Security
-
 Fixed CVE-2026-43439 in the Linux kernel.
-
-### Security
-
-Updated the Linux kernel to v6.18.31.
 
 ### Security
 
@@ -785,15 +566,7 @@ Fixed CVE-2026-43441 in the Linux kernel.
 
 ### Security
 
-Upgraded containerd to v2.2.3. This fixes CVE-2026-35469.
-
-### Security
-
 Fixed CVE-2026-43448 in the Linux kernel.
-
-### Security
-
-Upgraded dev-libs/libgcrypt to v1.10.4 to fix CVE-2026-41989.
 
 ### Security
 
@@ -801,66 +574,7 @@ Fixed CVE-2026-43449 in the Linux kernel.
 
 ### Security
 
-Upgraded dev-libs/openssl to v3.5.6 to fix CVE-2026-28387, CVE-2026-28388, CVE-2026-28389, CVE-2026-28390, CVE-2026-31790.
-
-### Security
-
 Fixed CVE-2026-43450 in the Linux kernel.
-
-### Change
-
-Runtime sysctl changes:
-
-* Added: dev.raid.sync\_io\_depth: 32
-* Added: fs.dentry-negative: 0
-* Added: fs.fanotify.watchdog\_timeout: 0
-* Added: fs.fuse.default\_request\_timeout: 0
-* Added: fs.fuse.max\_request\_timeout: 0
-* Added: kernel.core\_modes: socket
-* Added: kernel.hung\_task\_detect\_count: 0
-* Added: kernel.panic\_sys\_info:
-* Added: net.ipv4.tcp\_ecn\_option: 2
-* Added: net.ipv4.tcp\_ecn\_option\_beacon: 3
-* Added: net.ipv4.tcp\_rto\_max\_ms: 120000
-* Added: net.ipv4.tcp\_tw\_reuse\_delay: 1000
-* Added: net.ipv6.conf.all.force\_forwarding: 0
-* Added: net.ipv6.conf.default.force\_forwarding: 0
-* Added: net.ipv6.conf.docker0.force\_forwarding: 0
-* Added: net.ipv6.conf.eth0.force\_forwarding: 0
-* Added: net.ipv6.conf.lo.force\_forwarding: 0
-* Added: vm.defrag\_mode: 0
-* Added: vm.vfs\_cache\_pressure\_denom: 100
-* Changed: fs.epoll.max\_user\_watches: 1808517 -> 1808094
-* Changed: fs.fanotify.max\_user\_marks: 68412 -> 68395
-* Changed: fs.inotify.max\_user\_watches: 64189 -> 64173
-* Changed: kernel.threads-max: 63178 -> 63459
-* Changed: net.core.rmem\_max: 212992 -> 4194304
-* Changed: net.core.wmem\_max: 212992 -> 4194304
-* Changed: net.ipv4.tcp\_mem: 94017 125357 188034 -> 93993 125327 187986
-* Changed: net.ipv4.tcp\_rmem: 4096 131072 6291456 -> 4096 131072 33554432
-* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 187989 250654 375978
-* Changed: net.ipv6.icmp.ratelimit: 1000 -> 100
-* Changed: user.max\_cgroup\_namespaces: 31589 -> 31729
-* Changed: user.max\_fanotify\_marks: 68412 -> 68395
-* Changed: user.max\_inotify\_watches: 64189 -> 64173
-* Changed: user.max\_ipc\_namespaces: 31589 -> 31729
-* Changed: user.max\_mnt\_namespaces: 31589 -> 31729
-* Changed: user.max\_net\_namespaces: 31589 -> 31729
-* Changed: user.max\_pid\_namespaces: 31589 -> 31729
-* Changed: user.max\_time\_namespaces: 31589 -> 31729
-* Changed: user.max\_user\_namespaces: 31589 -> 31729
-* Changed: user.max\_uts\_namespaces: 31589 -> 31729
-* Deleted: fs.xfs.irix\_sgid\_inherit: 0
-* Deleted: fs.xfs.irix\_symlink\_mode: 0
-* Deleted: fs.xfs.speculative\_cow\_prealloc\_lifetime: 300
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_loose: 1
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_timeout\_closereq: 64
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_timeout\_closing: 64
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_timeout\_open: 43200
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_timeout\_partopen: 480
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_timeout\_request: 240
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_timeout\_respond: 480
-* Deleted: net.netfilter.nf\_conntrack\_dccp\_timeout\_timewait: 240
 
 ### Security
 

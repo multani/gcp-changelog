@@ -1,5 +1,28 @@
 # Cloud Billing
 
+## 2026-06-01
+
+### Feature
+
+**CUD Analysis is Generally Available**
+
+CUD Analysis has reached general availability (GA). This tool supports the new
+spend-based CUD model and provides a unified interface for customers to examine
+both spend-based and resource-based CUDs. It offers a consolidated view of
+Compute resources including the benefits of both resource-based and spend-based
+CUDs.
+
+You can use this tool to do the following:
+
+* **Understand savings**: Understand the financial impact of your commitments.
+* **Track key metrics**: Track how effectively your commitments are being
+  used.
+* **Download data**: Download a CSV file of your daily usage for offline
+  analysis and reporting.
+
+For more information, see [Analyze the effectiveness of your CUDs](https://docs.cloud.google.com/billing/docs/how-to/analyze-cuds).
+
+---
 ## 2026-04-27
 
 ### Feature

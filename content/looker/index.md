@@ -28,7 +28,7 @@ Now available in preview, dashboard editors can change the size and layout of da
 
 ### Feature
 
-Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To use this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Preview** admin page.
+Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To use this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Preview** admin page. **Note:** Token usage monitoring for Conversational Analytics is not available at this time. This item was updated on June 1, 2026.
 
 ### Feature
 
@@ -66,6 +66,10 @@ Looker has introduced the following new feature updates for tabbed dashboards:
 
 ### Feature
 
+The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature is now supported on Snowflake connections. Your Looker admin can select a Snowflake connection in the [**Default Connection** field](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable) of the **Self-service Explores** admin page. On Snowflake connections, you can [upload comma-separated files (CSV) and Excel files (XLS and XLSX)](https://docs.cloud.google.com/looker/docs/exploring-self-service#files-from-computer) to create a self-service Explore.
+
+### Feature
+
 Looker has introduced a security sandboxing enhancement for Git command-line interface (CLI) operations. For Looker projects that are configured with SSH connections, this enhancement restricts which directories and executables can be accessed on the instance when Git worktree commands are executed. Looker projects that use HTTPS connections are not affected.
 
 This sandboxing feature is enabled automatically for Cloud-hosted Looker (original) and Looker (Google Cloud core) instances starting in Looker 26.8.
@@ -73,10 +77,6 @@ This sandboxing feature is enabled automatically for Cloud-hosted Looker (origin
 For [customer-hosted](https://docs.cloud.google.com/looker/docs/glossary#customer-hosted) Looker instances, this security enhancement is available starting in Looker 26.10. To opt in to security sandboxing, you must install the [`proot` package](https://proot-me.github.io/) on your Looker host machine. If `proot` isn't installed, SSH-connected Git operations will still be executed successfully but won't have the sandboxing protection.
 
 **Note:** This item was updated on May 29, 2026.
-
-### Feature
-
-The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature is now supported on Snowflake connections. Your Looker admin can select a Snowflake connection in the [**Default Connection** field](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable) of the **Self-service Explores** admin page. On Snowflake connections, you can [upload comma-separated files (CSV) and Excel files (XLS and XLSX)](https://docs.cloud.google.com/looker/docs/exploring-self-service#files-from-computer) to create a self-service Explore.
 
 ### Feature
 

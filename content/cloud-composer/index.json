@@ -1,15 +1,17 @@
 {
   "name": "Cloud Composer",
   "entries": {
-    "2026-05-27": [
+    "2026-06-02": [
       {
-        "kind": "Announcement",
-        "content": "A new Managed Service for Apache Airflow release has started on\n**May 27, 2026**. Get ready for upcoming changes and features as we roll out\nthe new release to all regions. This release is in progress at the moment.\nListed changes and features might not be available in some regions yet.",
+        "kind": "Feature",
+        "content": "*(Managed Airflow Gen 3)* You can now\n[access Cloud Run endpoints restricted to internal ingress traffic](https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network#cloud-run-traffic)\nthrough your environment's network attachment. This feature is available\nthrough gcloud CLI beta commands and beta Cloud Composer API in all Managed\nAirflow (Gen 3) versions.",
         "summary": {
-          "title": "New Managed Airflow Service Release",
-          "summary": "A new Managed Service for Apache Airflow release is now underway. This release brings upcoming changes and new features that will be rolled out to all regions. Please note that availability may vary by region during the rollout period."
+          "title": "Internal Cloud Run Access for Managed Airflow",
+          "summary": "Managed Airflow now supports accessing internal Cloud Run endpoints via your environment's network attachment. This new capability is available through gcloud CLI beta commands and the beta Cloud Composer API for all Gen 3 versions."
         }
-      },
+      }
+    ],
+    "2026-05-27": [
       {
         "kind": "Feature",
         "content": "Managed Service for Apache Airflow now\n[supports Google Cloud tags](https://docs.cloud.google.com/composer/docs/composer-3/create-and-manage-tags)\nfor environments.\n\n[Tags](https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview)\nprovide a way to create annotations for resources, and conditionally allow or\ndeny policies based on whether a resource has a specific tag.",

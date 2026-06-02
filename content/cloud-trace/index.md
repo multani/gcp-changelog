@@ -1,5 +1,20 @@
 # Cloud Trace
 
+## 2026-06-02
+
+### Feature
+
+The create-observability bucket flow enforces organization policies with
+constraints on resource locations. This flow also enforces policies that require
+customer-managed encryption keys (CMEKs) and that restrict the projects that
+store those keys. Your trace data is stored in an observability bucket.
+
+For more information, see the following:
+
+* [Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets)
+* [Support for CMEKs](https://docs.cloud.google.com/stackdriver/docs/observability/cmek)
+
+---
 ## 2026-06-01
 
 ### Feature

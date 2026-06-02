@@ -1,5 +1,17 @@
 # Datastream
 
+## 2026-06-02
+
+### Feature
+
+Datastream now offers a free tier for change data capture
+(CDC) data processed from Google Cloud sources, such as
+AlloyDB for PostgreSQL and Spanner. You get the first 100 GiB of
+CDC data for free per billing account, per month.
+
+For more information, see the [Pricing](https://cloud.google.com/datastream/pricing) page.
+
+---
 ## 2026-04-16
 
 ### Feature

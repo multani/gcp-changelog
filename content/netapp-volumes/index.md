@@ -1,5 +1,17 @@
 # NetApp Volumes
 
+## 2026-06-02
+
+### Announcement
+
+Google Cloud NetApp Volumes Flex Unified service level is available with
+limited performance in the following region:
+
+* us-east5 (Columbus)
+
+For more information about limited performance regions, see [Supported regions for Flex Unified limited performance](https://docs.cloud.google.com/netapp/volumes/docs/discover/service-levels#supported_regions_for_flex_unified_limited_performance).
+
+---
 ## 2026-05-18
 
 ### Feature

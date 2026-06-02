@@ -1,5 +1,14 @@
 # AlloyDB for PostgreSQL
 
+## 2026-06-02
+
+### Feature
+
+You can now configure a cooldown period to determine when autoscaling occurs
+for your read pool instances. For more information, see
+[Scale an instance](https://docs.cloud.google.com/alloydb/docs/instance-read-pool-scale#autoscale-read-pool).
+
+---
 ## 2026-05-21
 
 ### Fixed

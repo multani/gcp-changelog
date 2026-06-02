@@ -1,5 +1,23 @@
 # Cloud Monitoring
 
+## 2026-06-02
+
+### Feature
+
+Support for **Histogram** widgets on custom dashboards is
+[generally available](https://docs.cloud.google.com/products#product-launch-stages). These widgets extract
+the most recent value from each time series, group those values into ranges,
+and then provide a graphical representation of the result. Unlike tables or
+other widgets that display the most recent values, **Histograms** display
+information about the relative frequency of ranges of values.
+
+This widget is one of several visualizations that you can use to display the
+most recent values. For more information, see the following documents:
+
+* [Configure a histogram (Google Cloud console)](https://docs.cloud.google.com/monitoring/charts#add_histogram)
+* [Dashboard with an XyChart configured as a histogram (API)](https://docs.cloud.google.com/monitoring/dashboards/api-examples#dashboard_with_a_histogram_widget)
+
+---
 ## 2026-06-01
 
 ### Feature

@@ -1,13 +1,17 @@
 # Cloud Composer
 
+## 2026-06-02
+
+### Feature
+
+*(Managed Airflow Gen 3)* You can now
+[access Cloud Run endpoints restricted to internal ingress traffic](https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network#cloud-run-traffic)
+through your environment's network attachment. This feature is available
+through gcloud CLI beta commands and beta Cloud Composer API in all Managed
+Airflow (Gen 3) versions.
+
+---
 ## 2026-05-27
-
-### Announcement
-
-A new Managed Service for Apache Airflow release has started on
-**May 27, 2026**. Get ready for upcoming changes and features as we roll out
-the new release to all regions. This release is in progress at the moment.
-Listed changes and features might not be available in some regions yet.
 
 ### Feature
 

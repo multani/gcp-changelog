@@ -6,6 +6,23 @@
 
 Agent Assist offers [summarization with custom sections 6.0](https://docs.cloud.google.com/agent-assist/docs/summarization-with-custom-sections) in GA. The 6.0 version is powered by `gemini-3.5-flash` and available in all Agent Assist [regions](https://docs.cloud.google.com/agent-assist/docs/regionalization).
 
+### Change
+
+Agent Assist offers summarization autoevaluation with more rubrics for evaluating completeness. This update also explains the use of N/A in the overall performance view.
+
+[Summarization autoevaluation](https://docs.cloud.google.com/agent-assist/docs/summarization-autoeval-metrics) is available in the following additional regions:
+
+* us-east1
+* northamerica-northeast1
+* eu-west1
+* eu-west2
+* eu-west3
+* eu-west4
+* asia-southeast1
+* asia-northeast1
+* asia-south1
+* australia-southeast1
+
 ---
 ## 2026-04-16
 

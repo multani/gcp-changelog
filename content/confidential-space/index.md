@@ -1,5 +1,16 @@
 # Confidential Space
 
+## 2026-05-20
+
+### Announcement
+
+Confidential Space image 260500 is available. This image introduces support
+for [Intel Trust Authority (ITA)](https://docs.trustauthority.intel.com/main/articles/articles/ita/introduction.html)
+as an independent attestation verifier service for your workloads. This lets
+you verify the identity, the hardware state, and the software state of the
+Confidential Space environment directly using Intel's attestation service.
+
+---
 ## 2026-05-04
 
 ### Issue

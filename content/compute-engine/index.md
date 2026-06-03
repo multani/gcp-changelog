@@ -1,5 +1,21 @@
 # Compute Engine
 
+## 2026-06-03
+
+### Feature
+
+**Generally available**: You can gradually create Flex-start VMs in a
+managed instance group (MIG) as capacity becomes available. Unlike resize
+requests for MIGs that wait for full capacity before creating VMs, this method
+might create only a portion of your requested Flex-start VMs if
+capacity is unavailable. The MIG creates the remaining VMs later as capacity
+permits. Flex-start VMs run for up to seven days and help you
+obtain high-demand resources, such as GPUs, at a discounted price.
+
+For more information, see
+[Create a MIG that uses Flex-start VMs](https://docs.cloud.google.com/compute/docs/instance-groups/create-mig-with-flex-start-vms).
+
+---
 ## 2026-06-01
 
 ### Feature

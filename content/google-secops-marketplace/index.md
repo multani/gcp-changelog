@@ -1,5 +1,75 @@
 # Google SecOps Marketplace
 
+## 2026-06-03
+
+### Change
+
+**AlienVault USM Appliance**: Version 28.0
+
+* Refactored the code for the following action:
+  + **Get PCAP Files For Events**
+
+### Change
+
+**ConnectWise**: Version 23.0
+
+* Refactored the code for the following action:
+  + **Create Alerts Ticket**
+
+### Change
+
+**Google Chronicle**: Version 84.0
+
+* Refactored the code for the following action:
+  + **Get Detection Details**
+
+### Change
+
+**Jira**: Version 58.0
+
+* Refactored the code for the following action:
+  + **Create Alert Issue**
+
+### Change
+
+**ServiceDesk Plus**: Version 10.0
+
+* Refactored the code for the following action:
+  + **Create Alert Request**
+
+### Change
+
+**ServiceDesk PlusV3**: Version 10.0
+
+* Refactored the code for the following action:
+  + **Create Alert Request**
+
+### Change
+
+**ServiceNow**: Version 67.0
+
+* Refactored the code for the following action:
+  + **Create Alert Incident**
+
+### Change
+
+**Siemplify**: Version 245.0
+
+* Refactored internal code execution logic for the platform integration.
+
+### Change
+
+**MISP**: Version 275.6
+
+* Refactored internal code execution logic and optimized core integration components.
+
+### Change
+
+**Microsoft Sentinel Incident Tracking Connector**: Version 29.0
+
+* Added the `Incident Creation Time Filter (days)` advanced parameter and optimized error handling logic.
+
+---
 ## 2026-05-27
 
 ### Feature

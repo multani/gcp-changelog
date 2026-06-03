@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2026-06-01
+
+### Feature
+
+Agent Assist offers [summarization with custom sections 6.0](https://docs.cloud.google.com/agent-assist/docs/summarization-with-custom-sections) in GA. The 6.0 version is powered by `gemini-3.5-flash` and available in all Agent Assist [regions](https://docs.cloud.google.com/agent-assist/docs/regionalization).
+
+---
 ## 2026-04-16
 
 ### Feature

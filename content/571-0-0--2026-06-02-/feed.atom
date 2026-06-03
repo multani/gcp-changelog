@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 571.0.0 (2026-06-02)</title>
+  <subtitle>Changelog for Google Cloud product: 571.0.0 (2026-06-02)</subtitle>
+  <updated>2026-06-02T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/571-0-0--2026-06-02-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:google cloud cli:0</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated Windows PuTTY executables to version 0.83.</li>
+<li>This includes a fix for the issue reported at
+    <a href="https://issuetracker.google.com/issues/515628403">https://issuetracker.google.com/issues/515628403</a>.</li>
+<li>Fixed issue where <code>gcloud compute scp</code> file transfers were extremely slow when
+  using <code>--tunnel-through-iap</code> in PY 3.14.</li>
+</ul>]]></content>
+    <summary>Updated PuTTY to version 0.83 and fixed slow file transfers with `gcloud compute scp` when using `--tunnel-through-iap` in Python 3.14. This release also addresses a reported issue in PuTTY.</summary>
+    <title>Google Cloud CLI: CLI update and SCP fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:alloydb:1</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added flag <code>--labels</code> to <code>gcloud alloydb instances create|create-secondary</code> commands to assign labels to an instance.</li>
+<li>Added flags <code>--update-labels</code>, <code>--remove-labels</code>, and <code>--clear-labels</code> to <code>gcloud alloydb instances update</code> commands to update, remove, or clear labels for an instance.</li>
+</ul>]]></content>
+    <summary>You can now assign, update, remove, or clear labels for your AlloyDB instances using new flags in the `gcloud alloydb instances` commands. This allows for better organization and management of your database resources.</summary>
+    <title>AlloyDB: Manage AlloyDB instance labels</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:biglake:2</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud biglake hive tables</code> to beta.</li>
+</ul>]]></content>
+    <summary>BigLake's Hive tables functionality has been promoted to beta. This allows for easier management and querying of Hive tables within BigLake, improving data integration and accessibility.</summary>
+    <title>BigLake: BigLake Hive tables enter beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:cloud dataproc:3</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--confidential-compute-type</code> flag to <code>gcloud dataproc clusters create</code> to allow specifying the Confidential Computing technology (e.g., <code>SEV</code>, <code>SEV_SNP</code>, <code>TDX</code>).</li>
+<li>Deprecated <code>--confidential-compute</code> flag for <code>gcloud dataproc clusters create</code>. Use <code>--confidential-compute-type</code> flag instead.</li>
+</ul>]]></content>
+    <summary>You can now specify Confidential Computing technologies like SEV, SEV_SNP, or TDX when creating Dataproc clusters using the new --confidential-compute-type flag. The older --confidential-compute flag is now deprecated.</summary>
+    <title>Cloud Dataproc: Confidential Computing for Dataproc</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:cloud datastream:4</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--sql-where-clause</code> flag to <code>gcloud datastream objects start-backfill</code>,
+  which starts a partial backfill on the specified object.</li>
+</ul>]]></content>
+    <summary>Datastream now supports partial backfills for objects. You can use the new --sql-where-clause flag with the gcloud datastream objects start-backfill command to specify a subset of data to backfill.</summary>
+    <title>Cloud Datastream: Datastream adds partial backfill support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:cloud netapp:5</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud netapp volumes start-split</code> and <code>get-split-status</code> commands to alpha and beta tracks of the volumes group.</li>
+<li>Added <code>gcloud netapp storage-pool update-backup-config</code> command to GA track.</li>
+<li>Added <code>--ontap-source</code> flag to <code>gcloud netapp backup-vaults backups create</code> GA track.</li>
+<li>Added <code>gcloud netapp storage-pools list-backup-configs</code> command to the GA track of the <code>storage-pools</code> group.</li>
+<li>Added <code>gcloud netapp storage-pools restore-volume</code> command to GA track.</li>
+</ul>]]></content>
+    <summary>New commands for managing NetApp volumes, backups, and storage pools are now available. This update includes volume split management, backup configuration updates, and volume restoration capabilities, with features rolling out across alpha, beta, and GA tracks.</summary>
+    <title>Cloud NetApp: Cloud NetApp Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:cloud run:6</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added regional endpoint support for <code>gcloud beta run worker-pools</code> and
+  <code>gcloud beta run jobs executions tasks</code> commands.
+  Specify <code>--endpoint-mode=regional</code> or <code>--endpoint-mode=regional-preferred</code> to
+  make API requests with regional endpoints.</li>
+</ul>]]></content>
+    <summary>Cloud Run jobs now support regional endpoints for worker pools and job executions. This allows for more localized API requests by specifying `--endpoint-mode=regional` or `--endpoint-mode=regional-preferred`.</summary>
+    <title>Cloud Run: Regional endpoints for Cloud Run jobs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:cloud sql:7</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated 'cloud-sql-proxy' packaged component to use 2.22.0 of the Cloud SQL
+  Proxy.</li>
+</ul>]]></content>
+    <summary>The Cloud SQL Proxy has been updated to version 2.22.0. This update includes the latest improvements and features for connecting to your Cloud SQL instances securely and reliably.</summary>
+    <title>Cloud SQL: Cloud SQL Proxy Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:cloud storage:8</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--set-object-acls-from-file</code> flag to <code>gcloud storage batch-operations jobs create</code>.</li>
+</ul>]]></content>
+    <summary>You can now use the `--set-object-acls-from-file` flag with `gcloud storage batch-operations jobs create` to manage object Access Control Lists (ACLs) more efficiently. This new option allows you to specify ACLs for multiple objects directly from a file, simplifying batch operations and improving management of access permissions.</summary>
+    <title>Cloud Storage: Manage object ACLs from a file</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:compute engine:9</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--source-machine-image</code> and <code>--source-machine-image-disk-device-name</code> flags for <code>gcloud compute disks create</code> in beta.</li>
+</ul>]]></content>
+    <summary>You can now create Compute Engine disks directly from machine images using the new `--source-machine-image` and `--source-machine-image-disk-device-name` flags in `gcloud compute disks create`. These flags are available in beta.</summary>
+    <title>Compute Engine: Create disks from machine images</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:571-0-0--2026-06-02-:2026-06-02:network security:10</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted project scoping for <code>gcloud network-security security-profiles</code> commands (<code>delete</code>, <code>describe</code>, <code>export</code>, <code>import</code>, <code>list</code>) to GA.</li>
+<li>Promoted project scoping for <code>gcloud network-security security-profiles custom-intercept</code> commands (<code>create</code>, <code>delete</code>, <code>describe</code>, <code>list</code>, <code>update</code>) to GA.</li>
+<li>Promoted project scoping for <code>gcloud network-security security-profiles custom-mirroring</code> commands (<code>create</code>, <code>delete</code>, <code>describe</code>, <code>list</code>, <code>update</code>) to GA.</li>
+<li>Promoted project scoping for
+  <code>gcloud network-security security-profiles threat-prevention</code> commands
+  (<code>add-override</code>, <code>create</code>, <code>delete</code>, <code>delete-override</code>, <code>describe</code>, <code>list</code>,
+  <code>list-overrides</code>, <code>update-override</code>) to GA.</li>
+<li>Promoted project scoping for
+  <code>gcloud network-security security-profiles url-filtering</code> commands
+  (<code>create</code>, <code>delete</code>, <code>describe</code>, <code>list</code>) to GA.</li>
+<li>Promoted project scoping for
+  <code>gcloud network-security security-profile-groups</code> commands
+  (<code>create</code>, <code>delete</code>, <code>describe</code>, <code>list</code>, <code>update</code>) to GA.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>Project scoping for several network security gcloud commands, including security profiles, custom mirroring, threat prevention, and URL filtering, has been promoted to General Availability. This enhancement allows for more granular control and management of your network security configurations within specific projects.</summary>
+    <title>Network Security: Network Security Command Scoping Now Generally Available</title>
+  </entry>
+</feed>

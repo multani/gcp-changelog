@@ -1,5 +1,17 @@
 # Google Kubernetes Engine
 
+## 2026-06-02
+
+### Feature
+
+GKE is introducing the following changes to expand the capabilities of maintenance exclusions:
+
+* **Per-node pool maintenance exclusions**: Available in release channels, these replicate the functionality of disabling node pool auto-upgrades when your cluster isn't enrolled in a release channel.
+* **Extended "No upgrades" exclusion**: The "No upgrades" default maintenance exclusion can now be up to 90 days long.
+
+For more information, see [Maintenance exclusions](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).
+
+---
 ## 2026-05-29
 
 ### Issue

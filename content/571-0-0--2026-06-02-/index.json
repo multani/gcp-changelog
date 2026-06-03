@@ -1,0 +1,95 @@
+{
+  "name": "571.0.0 (2026-06-02)",
+  "entries": {
+    "2026-06-02": [
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Updated Windows PuTTY executables to version 0.83.\n  + This includes a fix for the issue reported at\n    <https://issuetracker.google.com/issues/515628403>.\n* Fixed issue where `gcloud compute scp` file transfers were extremely slow when\n  using `--tunnel-through-iap` in PY 3.14.",
+        "summary": {
+          "title": "CLI update and SCP fix",
+          "summary": "Updated PuTTY to version 0.83 and fixed slow file transfers with `gcloud compute scp` when using `--tunnel-through-iap` in Python 3.14. This release also addresses a reported issue in PuTTY."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Added flag `--labels` to `gcloud alloydb instances create|create-secondary` commands to assign labels to an instance.\n* Added flags `--update-labels`, `--remove-labels`, and `--clear-labels` to `gcloud alloydb instances update` commands to update, remove, or clear labels for an instance.",
+        "summary": {
+          "title": "Manage AlloyDB instance labels",
+          "summary": "You can now assign, update, remove, or clear labels for your AlloyDB instances using new flags in the `gcloud alloydb instances` commands. This allows for better organization and management of your database resources."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Promoted `gcloud biglake hive tables` to beta.",
+        "summary": {
+          "title": "BigLake Hive tables enter beta",
+          "summary": "BigLake's Hive tables functionality has been promoted to beta. This allows for easier management and querying of Hive tables within BigLake, improving data integration and accessibility."
+        }
+      },
+      {
+        "kind": "Cloud Dataproc",
+        "content": "* Added `--confidential-compute-type` flag to `gcloud dataproc clusters create` to allow specifying the Confidential Computing technology (e.g., `SEV`, `SEV_SNP`, `TDX`).\n* Deprecated `--confidential-compute` flag for `gcloud dataproc clusters create`. Use `--confidential-compute-type` flag instead.",
+        "summary": {
+          "title": "Confidential Computing for Dataproc",
+          "summary": "You can now specify Confidential Computing technologies like SEV, SEV_SNP, or TDX when creating Dataproc clusters using the new --confidential-compute-type flag. The older --confidential-compute flag is now deprecated."
+        }
+      },
+      {
+        "kind": "Cloud Datastream",
+        "content": "* Added `--sql-where-clause` flag to `gcloud datastream objects start-backfill`,\n  which starts a partial backfill on the specified object.",
+        "summary": {
+          "title": "Datastream adds partial backfill support",
+          "summary": "Datastream now supports partial backfills for objects. You can use the new --sql-where-clause flag with the gcloud datastream objects start-backfill command to specify a subset of data to backfill."
+        }
+      },
+      {
+        "kind": "Cloud NetApp",
+        "content": "* Added `gcloud netapp volumes start-split` and `get-split-status` commands to alpha and beta tracks of the volumes group.\n* Added `gcloud netapp storage-pool update-backup-config` command to GA track.\n* Added `--ontap-source` flag to `gcloud netapp backup-vaults backups create` GA track.\n* Added `gcloud netapp storage-pools list-backup-configs` command to the GA track of the `storage-pools` group.\n* Added `gcloud netapp storage-pools restore-volume` command to GA track.",
+        "summary": {
+          "title": "Cloud NetApp Enhancements",
+          "summary": "New commands for managing NetApp volumes, backups, and storage pools are now available. This update includes volume split management, backup configuration updates, and volume restoration capabilities, with features rolling out across alpha, beta, and GA tracks."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added regional endpoint support for `gcloud beta run worker-pools` and\n  `gcloud beta run jobs executions tasks` commands.\n  Specify `--endpoint-mode=regional` or `--endpoint-mode=regional-preferred` to\n  make API requests with regional endpoints.",
+        "summary": {
+          "title": "Regional endpoints for Cloud Run jobs",
+          "summary": "Cloud Run jobs now support regional endpoints for worker pools and job executions. This allows for more localized API requests by specifying `--endpoint-mode=regional` or `--endpoint-mode=regional-preferred`."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Updated 'cloud-sql-proxy' packaged component to use 2.22.0 of the Cloud SQL\n  Proxy.",
+        "summary": {
+          "title": "Cloud SQL Proxy Updated",
+          "summary": "The Cloud SQL Proxy has been updated to version 2.22.0. This update includes the latest improvements and features for connecting to your Cloud SQL instances securely and reliably."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* Added `--set-object-acls-from-file` flag to `gcloud storage batch-operations jobs create`.",
+        "summary": {
+          "title": "Manage object ACLs from a file",
+          "summary": "You can now use the `--set-object-acls-from-file` flag with `gcloud storage batch-operations jobs create` to manage object Access Control Lists (ACLs) more efficiently. This new option allows you to specify ACLs for multiple objects directly from a file, simplifying batch operations and improving management of access permissions."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Promoted `--source-machine-image` and `--source-machine-image-disk-device-name` flags for `gcloud compute disks create` in beta.",
+        "summary": {
+          "title": "Create disks from machine images",
+          "summary": "You can now create Compute Engine disks directly from machine images using the new `--source-machine-image` and `--source-machine-image-disk-device-name` flags in `gcloud compute disks create`. These flags are available in beta."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Promoted project scoping for `gcloud network-security security-profiles` commands (`delete`, `describe`, `export`, `import`, `list`) to GA.\n* Promoted project scoping for `gcloud network-security security-profiles custom-intercept` commands (`create`, `delete`, `describe`, `list`, `update`) to GA.\n* Promoted project scoping for `gcloud network-security security-profiles custom-mirroring` commands (`create`, `delete`, `describe`, `list`, `update`) to GA.\n* Promoted project scoping for\n  `gcloud network-security security-profiles threat-prevention` commands\n  (`add-override`, `create`, `delete`, `delete-override`, `describe`, `list`,\n  `list-overrides`, `update-override`) to GA.\n* Promoted project scoping for\n  `gcloud network-security security-profiles url-filtering` commands\n  (`create`, `delete`, `describe`, `list`) to GA.\n* Promoted project scoping for\n  `gcloud network-security security-profile-groups` commands\n  (`create`, `delete`, `describe`, `list`, `update`) to GA.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Network Security Command Scoping Now Generally Available",
+          "summary": "Project scoping for several network security gcloud commands, including security profiles, custom mirroring, threat prevention, and URL filtering, has been promoted to General Availability. This enhancement allows for more granular control and management of your network security configurations within specific projects."
+        }
+      }
+    ]
+  }
+}

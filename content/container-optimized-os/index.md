@@ -1,5 +1,118 @@
 # Container Optimized OS
 
+## 2026-06-01
+
+### Change
+
+
+
+### cos-121-18867-381-148
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/6c119c63599291cd468409254669be8082f330b9 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.148/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Added dev-libs/mpdecimal and dev-python/gentoo-common.
+
+### Change
+
+Updated app-containers/runc from v1.2.8 to v1.2.9
+
+### Change
+
+Updated dev-lang/python to v3.11.15.
+
+### Fixed
+
+Added support for NVIDIA driver v580.159.04.
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.4.
+
+### Security
+
+Fixed EFI variable OOB read in grub config parsing.
+
+### Change
+
+
+
+### cos-125-19216-395-55
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/d2ec5b118f6f5f38bb03d3079965327c76256ba1 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.55/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Allow overriding IMA policy from oem partition.
+
+### Change
+
+On cchost boards, autoload IMA policy on boot.
+
+### Change
+
+Set static UUID for the stateful partition.
+
+### Fixed
+
+Added support for NVIDIA driver v580.159.04.
+
+### Change
+
+
+
+### cos-117-18613-613-29
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/4c8dd0401cd7357d11e75a8467d834167db03513 ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.613.29/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated Python to v3.8.20.
+
+### Change
+
+Updated app-containers/runc from v1.2.8 to v1.2.9
+
+### Fixed
+
+Added support for NVIDIA driver v580.159.04.
+
+### Security
+
+Fixed EFI variable OOB read in grub config parsing.
+
+### Change
+
+
+
+### cos-129-19506-224-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.90](https://cos.googlesource.com/third_party/kernel/+/ee5c0e72ce4f921969d64843af4f37b1e22a9738 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.224.7/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Fixed
+
+Added support for NVIDIA driver v580.159.04.
+
+---
 ## 2026-05-26
 
 ### Change

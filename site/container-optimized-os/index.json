@@ -1,6 +1,200 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-06-01": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to data processing pipeline",
+          "summary": "We are implementing changes to our data processing pipeline to improve efficiency and reliability. These updates will ensure smoother operations and better performance for all users. Further details on the specific changes will be shared shortly."
+        }
+      },
+      {
+        "kind": "cos-121-18867-381-148",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/6c119c63599291cd468409254669be8082f330b9 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.148/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18867.381.148 Release",
+          "summary": "This release includes updates to the kernel, Docker, and containerd. It also provides information on GPU driver versions for enhanced hardware acceleration."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Added dev-libs/mpdecimal and dev-python/gentoo-common.",
+        "summary": {
+          "title": "New libraries available",
+          "summary": "We have added two new libraries: dev-libs/mpdecimal and dev-python/gentoo-common. These libraries are now available for use."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated app-containers/runc from v1.2.8 to v1.2.9",
+        "summary": {
+          "title": "Runc updated to v1.2.9",
+          "summary": "The app-containers/runc package has been updated from version 1.2.8 to 1.2.9. This update brings improvements and potential bug fixes to the runc container runtime."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated dev-lang/python to v3.11.15.",
+        "summary": {
+          "title": "Python updated to 3.11.15",
+          "summary": "The development language Python has been updated to version 3.11.15. This change ensures users have access to the latest improvements and fixes for the Python environment."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.159.04.",
+        "summary": {
+          "title": "NVIDIA Driver Support Updated",
+          "summary": "Support for NVIDIA driver v580.159.04 has been added. This update ensures compatibility and optimal performance with the latest NVIDIA hardware."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-shells/dash to v0.5.13.4.",
+        "summary": {
+          "title": "App-shells/dash updated",
+          "summary": "The app-shells/dash component has been upgraded to version v0.5.13.4. This update addresses recent issues and improves performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed EFI variable OOB read in grub config parsing.",
+        "summary": {
+          "title": "Security fix for grub configuration",
+          "summary": "A security vulnerability in grub configuration parsing has been fixed. This addresses an out-of-bounds read issue in EFI variable handling."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Updated data processing tools",
+          "summary": "We have updated our data processing tools to improve efficiency and performance. These enhancements will streamline your workflows and provide faster insights. Explore the new features today."
+        }
+      },
+      {
+        "kind": "cos-125-19216-395-55",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/d2ec5b118f6f5f38bb03d3079965327c76256ba1 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.55/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19216.395.55 Update",
+          "summary": "This release includes updates to the kernel, Docker, and Containerd. It also features new GPU driver support for enhanced performance. Detailed version information is available in the provided links."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Allow overriding IMA policy from oem partition.",
+        "summary": {
+          "title": "Override IMA policy",
+          "summary": "You can now override the IMA policy from the oem partition. This change provides greater flexibility in managing IMA policies."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "On cchost boards, autoload IMA policy on boot.",
+        "summary": {
+          "title": "Autoload IMA policy on boot",
+          "summary": "The IMA policy will now automatically load on boot for cchost boards. This change ensures consistent policy application from startup."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Set static UUID for the stateful partition.",
+        "summary": {
+          "title": "Static UUID for Stateful Partitions",
+          "summary": "Stateful partitions will now have a static UUID assigned. This change ensures consistent identification for stateful data, improving reliability and simplifying management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.159.04.",
+        "summary": {
+          "title": "NVIDIA Driver Support Updated",
+          "summary": "Support for NVIDIA driver v580.159.04 has been successfully added. This update ensures compatibility with the latest NVIDIA driver version."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to the Cloud Functions pricing model",
+          "summary": "We are announcing changes to the Cloud Functions pricing model. These updates aim to provide more granular billing and better align costs with usage. More details are available in the documentation."
+        }
+      },
+      {
+        "kind": "cos-117-18613-613-29",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/4c8dd0401cd7357d11e75a8467d834167db03513 ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.613.29/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS version with updated components",
+          "summary": "Container-Optimized OS has been updated to version 18613.613.29. This release includes newer versions of the kernel, Docker, and Containerd, along with updated GPU drivers."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated Python to v3.8.20.",
+        "summary": {
+          "title": "Python updated to v3.8.20",
+          "summary": "Python has been updated to version 3.8.20. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated app-containers/runc from v1.2.8 to v1.2.9",
+        "summary": {
+          "title": "App containers runc updated",
+          "summary": "The app-containers/runc package has been updated to version v1.2.9. This update includes improvements and bug fixes for the container runtime."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.159.04.",
+        "summary": {
+          "title": "NVIDIA driver support updated",
+          "summary": "Support for NVIDIA driver version 580.159.04 has been added. This update ensures compatibility with the latest NVIDIA driver release."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed EFI variable OOB read in grub config parsing.",
+        "summary": {
+          "title": "Security fix for grub configuration",
+          "summary": "A security vulnerability in grub configuration parsing, specifically an EFI variable OOB read, has been fixed. This addresses a potential security risk related to how grub handles EFI variables."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Level Agreement Update",
+          "summary": "We are updating our Service Level Agreements to better reflect our commitment to reliability and performance. These changes aim to provide clearer guarantees and improved support for our customers."
+        }
+      },
+      {
+        "kind": "cos-129-19506-224-7",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.90](https://cos.googlesource.com/third_party/kernel/+/ee5c0e72ce4f921969d64843af4f37b1e22a9738 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.224.7/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 6.12.90 Release Notes",
+          "summary": "This release updates the kernel, Docker, and Containerd. It also includes GPU driver information for enhanced hardware support."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: net.ipv4.udp\\_mem: 188034 250714 376068 -> 188034 250715 376068",
+        "summary": {
+          "title": "Runtime sysctl udp_mem updated",
+          "summary": "The net.ipv4.udp_mem sysctl parameter has been updated. This change modifies the memory limits for UDP buffers, potentially improving network performance and stability. The specific values have been adjusted from 188034 250714 376068 to 188034 250715 376068."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.159.04.",
+        "summary": {
+          "title": "NVIDIA driver update",
+          "summary": "Support for NVIDIA driver v580.159.04 has been added. This update ensures compatibility with the latest NVIDIA hardware and software features."
+        }
+      }
+    ],
     "2026-05-26": [
       {
         "kind": "Change",

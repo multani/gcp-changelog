@@ -1,26 +1,39 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-02
+
+### Announcement
+
+**Updates to abuse monitoring and zero data retention documentation**
+
+Documentation for abuse monitoring, zero data retention, and responsible AI has
+been updated to align with the Advanced AI Safety Addendum. These updates
+include new details regarding Advanced AI safety, partner-specific terms, and
+request-response logging for models like Claude Mythos and Opus.
+
+For more information, see:
+
+* [Abuse monitoring](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/abuse-monitoring)
+* [Zero data retention](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/zero-data-retention)
+* [Responsible AI](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/responsible-ai)
+
+---
+## 2026-06-01
+
+### Breaking
+
+**Gemini 2.0 Flash and Gemini 2.0 Flash-Lite are discontinued**
+
+Gemini 2.0 Flash and 2.0 Flash-Lite are discontinued and are no longer
+available. This includes both model serving and Provisioned Throughput. Use
+Gemini 3.1 Flash-Lite, Gemma 4, or more recent Gemini releases.
+
+---
 ## 2026-05-28
 
-### Anthropic's Claude Opus 4.8
+### Feature
 
-[Claude Opus 4.8](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/opus-4-8)
-is available in Model Garden.
-
-### Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro Image Preview deprecation
-
-Gemini Enterprise Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro
-Image Preview are deprecated. We recommend that you update your model endpoints
-before July 17, 2026, to avoid service disruption.
-
-The following are the discontinued endpoints and recommended endpoint migration:
-
-| Discontinued endpoints | Recommended endpoint migration |
-| --- | --- |
-| `gemini-3.1-flash-image-preview` | `gemini-3.1-flash-image` |
-| `gemini-3-pro-image-preview` | `gemini-3-pro-image` |
-
-### Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image
+**Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image**
 
 Gemini Enterprise Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image
 are [Generally
@@ -41,6 +54,28 @@ For more information, see the following:
 * [Gemini 3 Pro Image (Nano Banana
   Pro)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image)
 
+### Deprecated
+
+**Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro Image Preview deprecation**
+
+Gemini Enterprise Agent Platform Gemini 3.1 Flash Image Preview and Gemini 3 Pro
+Image Preview are deprecated. We recommend that you update your model endpoints
+before July 17, 2026, to avoid service disruption.
+
+The following are the discontinued endpoints and recommended endpoint migration:
+
+| Discontinued endpoints | Recommended endpoint migration |
+| --- | --- |
+| `gemini-3.1-flash-image-preview` | `gemini-3.1-flash-image` |
+| `gemini-3-pro-image-preview` | `gemini-3-pro-image` |
+
+### Feature
+
+**Anthropic's Claude Opus 4.8**
+
+[Claude Opus 4.8](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/opus-4-8)
+is available in Model Garden.
+
 ---
 ## 2026-05-27
 
@@ -54,9 +89,9 @@ anomalous tool interactions.
 
 **Important:** Logging of `user.id` is included when opting in to "Enable logging of
 prompt inputs and response outputs" effective May 22, 2026 and later and with
-Agent Development Kit version 2.1 and later. If you opted in prior to this change, your
-logs do not include `user.id`. You will need to redeploy your agents and opt-in
-again for this setting to take effect.
+the Agent Development Kit (ADK) version 2.1 and later. If you opted in prior to
+this change, your logs do not include `user.id`. You will need to redeploy your
+agents and opt-in again for this setting to take effect.
 
 For details on configuration, see
 [Write traces for an agent](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/tracing#write-traces).
@@ -64,17 +99,9 @@ For details on configuration, see
 ---
 ## 2026-05-26
 
-### The Gemini Deep Research Agent (Preview)
+### Feature
 
-The Gemini Deep Research Agent is in Preview. The Gemini Deep Research Agent
-is a managed AI agent that plans, executes, and synthesizes complex,
-multi-step research workflows across the public web and private enterprise data
-to generate comprehensive, cited reports.
-
-For more information, see [Use the Gemini Deep Research
-Agent](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research).
-
-### Agent Platform Sandboxes
+**Agent Platform Sandboxes**
 
 Additional Agent Platform [sandbox](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox)
 features are now available:
@@ -93,14 +120,24 @@ features are now available:
   Save the exact state of your sandbox environment (including dependencies and
   file systems) and restore it to a new sandbox.
 
+### Feature
+
+**The Gemini Deep Research Agent releaased in Preview**
+
+The Gemini Deep Research Agent has been released in Preview. The Gemini Deep
+Research Agent is a managed AI agent that plans, executes, and synthesizes
+complex, multi-step research workflows across the public web and private
+enterprise data to generate comprehensive, cited reports.
+
+For more information, see [Use the Gemini Deep Research
+Agent](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research).
+
 ---
 ## 2026-05-20
 
 ### Change
 
-
-
-### Supervised fine-tuning available for Gemini 3.1 Flash Lite (Preview)
+**Supervised fine-tuning available for Gemini 3.1 Flash Lite (Preview)**
 
 Supervised fine-tuning is now available for limited support for the
 `gemini-3.1-flash-lite` model. During this period, model tuning for Gemini
@@ -113,9 +150,7 @@ for more information.
 
 ### Change
 
-
-
-### Set media resolution at a Part-level for data when using supervised fine-tuning
+**Set media resolution at a Part-level for data when using supervised fine-tuning**
 
 Supervised fine-tuning now supports `Part`-level `mediaResolution` declarations
 for images, videos, and PDFs. `Part`-level media resolution declarations also
@@ -130,13 +165,42 @@ See the following media type–specific pages for more information:
 ---
 ## 2026-05-19
 
-### Gemini 3.5 Flash is generally available (GA)
+### Feature
+
+**Gemini 3.5 Flash is generally available (GA)**
 
 For details, see the [model specifications page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash).
 
-### Managed Agents API on Agent Platform
+### Feature
 
-Managed Agents API on Agent Platform is in Preview.
+**Manage agent revisions and traffic splitting**
+
+Agent revisions and traffic splitting are now available in public preview. You
+can create immutable revisions of deployed agents, and split traffic between the
+different active revisions. This enables canary deployments and safe testing of
+new agent versions. For more information, see
+[Manage revisions and traffic](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/manage-revisions-and-traffic).
+
+### Feature
+
+**Manage and discover agent skills with Skill Registry**
+
+Manage and discover agent skills with the Skill Registry, in public preview.
+This secure, private, and low-latency repository stores skills as
+self-contained packages, including instructions, code, and documentation, to
+enhance agent abilities.
+
+For more information, see:
+
+* [Skill Registry overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry)
+* [Create and manage skills](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry/create-manage)
+
+### Feature
+
+**Managed Agents API on Agent Platform released in Preview**
+
+The Managed Agents API on Agent Platform has been released in Preview.
+
 This feature allows you to build and scale autonomous agents, including those
 built from configuration using the Antigravity harness. These agents run in a
 fully managed and isolated sandbox environment, equipped with tools and skills,
@@ -149,31 +213,15 @@ For more information, see the following:
 * [Interact with agents](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents/interact-with-agents)
 * [Managed Agents API on Agent Platform sandbox environment](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents/sandbox-environment)
 
-### Manage agent revisions and traffic splitting
+### Feature
 
-Agent revisions and traffic splitting are now available in public preview. You
-can create immutable revisions of deployed agents, and split traffic between the
-different active revisions. This enables canary deployments and safe testing of
-new agent versions. For more information, see
-[Manage revisions and traffic](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/manage-revisions-and-traffic).
-
-### Manage and discover agent skills with Skill Registry
-
-Manage and discover agent skills with the Skill Registry, in public preview.
-This secure, private, and low-latency repository stores skills as
-self-contained packages, including instructions, code, and documentation, to
-enhance agent abilities.
-
-For more information, see:
-
-* [Skill Registry overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry)
-* [Create and manage skills](https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry/create-manage)
-
-### AI Content Detection API available
+**AI Content Detection API available**
 
 AI Content Detection API is available in [Preview](https://cloud.google.com/products#product-launch-stages). For details see [AI Content Detection](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/ai-content-detection).
 
-### Provisioned Throughput for Gemini now supports latency SLA
+### Feature
+
+**Provisioned Throughput for Gemini now supports latency SLA**
 
 Provisioned Throughput now provides a tokens per second latency SLA,
 covering generation speed from the first returned token to the last.

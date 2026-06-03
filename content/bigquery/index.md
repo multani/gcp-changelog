@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-06-02
+
+### Feature
+
+[Remote functions](https://docs.cloud.google.com/bigquery/docs/remote-functions#create_a_remote_function) now
+support a custom path in the endpoint URL. You can reuse a single Cloud Run
+service for multiple BigQuery remote functions by specifying different path
+suffixes on the same endpoint. This feature is [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+---
 ## 2026-06-01
 
 ### Change

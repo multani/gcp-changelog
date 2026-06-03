@@ -1,6 +1,7 @@
 # Google Cloud Platform Release Notes (by services)
 
 - [570.0.0 (2026-05-27)](570-0-0--2026-05-27-/index.md)
+- [571.0.0 (2026-06-02)](571-0-0--2026-06-02-/index.md)
 - [AI Applications](ai-applications/index.md)
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)

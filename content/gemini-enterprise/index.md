@@ -1,5 +1,28 @@
 # Gemini Enterprise
 
+## 2026-06-02
+
+### Feature
+
+**Gemini Enterprise: Gemini 3 pro image (Nano Banana Pro) and Gemini 3.1 flash image (Nano Banana 2) for image generation**
+
+Gemini 3.1 flash image (Nano Banana 2) and Gemini 3 pro image
+(gemini-3.0-pro-image) are generally available (GA) in Gemini Enterprise app.
+
+To make these models available to users in your Gemini Enterprise app, a
+Gemini Enterprise administrator can manage them in the feature controls:
+
+* **Gemini 3 pro image (Nano Banana Pro)**: Turned off by default and is only available in the
+  Global region.
+* **Gemini 3.1 flash image (Nano Banana 2)**: Turned off by default and is only available in the
+  Global region. If an administrator turned on this model during
+  its Public Preview, it remains turned on in GA in the
+  Gemini Enterprise app.
+
+For more information about feature controls, see
+[Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-06-01
 
 ### Announcement

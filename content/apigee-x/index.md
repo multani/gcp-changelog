@@ -1,5 +1,20 @@
 # Apigee X
 
+## 2026-06-02
+
+### Announcement
+
+On June 2nd, 2026, we released an updated version of Apigee Cassandra.
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **Apigee Cassandra security update** | **Security fix for Apigee Cassandra infrastructure.** This addresses the following vulnerabilities:   * [CVE-2026-39820](https://nvd.nist.gov/vuln/detail/CVE-2026-39820) * [CVE-2026-42499](https://nvd.nist.gov/vuln/detail/CVE-2026-42499) * [CVE-2026-39836](https://nvd.nist.gov/vuln/detail/CVE-2026-39836) * [CVE-2026-33814](https://nvd.nist.gov/vuln/detail/CVE-2026-33814) * [CVE-2026-42501](https://nvd.nist.gov/vuln/detail/CVE-2026-42501) * [CVE-2026-33811](https://nvd.nist.gov/vuln/detail/CVE-2026-33811) * [CVE-2026-39825](https://nvd.nist.gov/vuln/detail/CVE-2026-39825) * [CVE-2026-39817](https://nvd.nist.gov/vuln/detail/CVE-2026-39817) * [CVE-2026-39823](https://nvd.nist.gov/vuln/detail/CVE-2026-39823) * [CVE-2026-39819](https://nvd.nist.gov/vuln/detail/CVE-2026-39819) * [CVE-2026-39826](https://nvd.nist.gov/vuln/detail/CVE-2026-39826) |
+
+---
 ## 2026-05-29
 
 ### Announcement

@@ -3,6 +3,22 @@
   "entries": {
     "2026-06-03": [
       {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 4.38**\n\nWe've released version 4.38 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 4.38 Now Available",
+          "summary": "Version 4.38 of CCaaS has been released. The specific update timing for your instance will vary based on your chosen deployment schedule."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Sort and filter emails**\n\nAgents can now sort and filter emails by date in the email adapter.\n\nUser experience changes: The email adapter has the following new UI elements:\n\n* A button to toggle between **Oldest to newest** and **Newest to oldest** in\n  the email list.\n* A **Filter by Date** list to filter by preset filters or by a configurable\n  date range.\n\nFor more information, see [Email\nlists](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#email-lists).",
+        "summary": {
+          "title": "Sort and filter emails by date",
+          "summary": "Agents can now sort and filter emails by date in the email adapter, with options to toggle between oldest to newest and newest to oldest, and to filter by preset dates or a custom range."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "This release addresses the following issues:\n\n* Fixed an issue where Canadian French translations for notifications and\n  error messages were appearing in English.\n* Fixed an issue where the Alvaria WFM **Agent Performance** report was\n  exporting every minute instead of once daily.\n* Fixed an issue where the **Agent Preferences** table on the **Agent\n  Availability** dashboard didn't update when an agent modified their\n  availability preferences.\n* Fixed an agent desktop issue where clicking the **Transfer** button in an\n  SMS chat displayed an error instead of starting a transfer.\n* Fixed an issue where a delay in Salesforce task creation caused a lag in\n  updating the ticket ID on calls.\n* Fixed an issue where agents were unable to transfer SMS chats.\n* Fixed an issue where incoming chats were routed to newly signed-in agents\n  instead of to those who had been available the longest.\n* Fixed an issue where messages in the chat adapter's chat history weren't\n  labeled or aligned to distinguish agent messages from end-user messages.\n* Fixed an issue in the IVR **Queue Menu Settings** pane where the text input\n  field didn't appear when users selected **Text-to-speech**.\n* Fixed an issue in the SMS **Queue Menu Settings** pane where phone numbers\n  weren't appearing in the incoming and outbound **Assigned Numbers** fields.\n* Fixed an issue where the web SDK didn't load.\n* Fixed an issue where live transcripts and conversation summarization didn't\n  display in the agent desktop following an instance update.",
         "summary": {

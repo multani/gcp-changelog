@@ -2,6 +2,32 @@
 
 ## 2026-06-03
 
+### Announcement
+
+**Google Cloud CCaaS 4.38**
+
+We've released version 4.38 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Sort and filter emails**
+
+Agents can now sort and filter emails by date in the email adapter.
+
+User experience changes: The email adapter has the following new UI elements:
+
+* A button to toggle between **Oldest to newest** and **Newest to oldest** in
+  the email list.
+* A **Filter by Date** list to filter by preset filters or by a configurable
+  date range.
+
+For more information, see [Email
+lists](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#email-lists).
+
 ### Fixed
 
 This release addresses the following issues:

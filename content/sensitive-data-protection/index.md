@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2026-06-03
+
+### Feature
+
+Added support for inspecting and de-identifying conversational content. You can now include a `Conversation` in your `ContentItem` requests.
+
+---
 ## 2026-05-11
 
 ### Change

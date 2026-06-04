@@ -1,5 +1,21 @@
 # Cloud Interconnect
 
+## 2026-06-02
+
+### Feature
+
+A single-region Critical production SLA for Cloud Interconnect is
+[Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+For workloads that require 99.99% availability within a single region, you can
+now configure a single-region topology that achieves the Critical production SLA.
+
+For more information, see
+[Establish 99.99% availability for Dedicated Interconnect](https://docs.cloud.google.com/network-connectivity/docs/interconnect/tutorials/dedicated-creating-9999-availability)
+or the
+[Cross-Cloud Interconnect overview](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/cci-overview).
+
+---
 ## 2026-04-30
 
 ### Feature

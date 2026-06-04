@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-06-03
+
+### Feature
+
+[BigQuery fluid scaling](https://docs.cloud.google.com/bigquery/docs/slots#slot-autoscaling), which provides
+per-second billing with no minimum duration for autoscaling reservations,
+is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-06-02
 
 ### Feature

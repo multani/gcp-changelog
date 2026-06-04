@@ -1,5 +1,12 @@
 # App Engine standard environment Python
 
+## 2026-06-03
+
+### Feature
+
+App Engine supports [Direct VPC egress](https://docs.cloud.google.com/appengine/docs/standard/vpc-direct-vpc) in [Preview](https://cloud.google.com/products#product-launch-stages). Direct VPC egress lets your workloads access VPC network resources as a simpler, more cost-effective [alternative to Serverless VPC Access connectors](https://docs.cloud.google.com/appengine/docs/standard/compare-direct-vpc-egress-connectors).
+
+---
 ## 2026-05-27
 
 ### Feature

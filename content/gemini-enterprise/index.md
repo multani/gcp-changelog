@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2026-06-03
+
+### Feature
+
+**Gemini Enterprise: DRZ and MLP compliance for NotebookLM Enterprise**
+
+Gemini Enterprise is compliant with data residency (DRZ) and machine learning
+processing (MLP) requirements for NotebookLM Enterprise for adding
+sources and interacting with the sources (chat). However, the Discover Sources
+feature and Studio features, such as audio overview, slide deck, infographic,
+video overview, mind map, and reports, are not MLP compliant.
+
+For more information on location limitations, see [NotebookLM
+limitations](https://docs.cloud.google.com/gemini/enterprise/docs/locations#notebooklm-limitations).
+
+---
 ## 2026-06-02
 
 ### Feature

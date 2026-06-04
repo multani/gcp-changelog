@@ -2,9 +2,313 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2026-05-20T00:00:00+00:00</updated>
+  <updated>2026-06-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:announcement:0</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.28.7-asm.3 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.28.7-asm.3 uses Envoy v1.36.7-dev.</p>]]></content>
+    <summary>The latest version of Cloud Service Mesh, 1.28.7-asm.3, is now available. This release utilizes Envoy v1.36.7-dev. For detailed upgrade instructions, please refer to the provided documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.28.7-asm.3 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:fixed:1</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.28.7-asm.3 contains fixes for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://ubuntu.com/security/CVE-2026-27143">CVE-2026-27143</a> | Yes | Yes | Yes | Yes | Critical (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-31789">CVE-2026-31789</a> | Yes | Yes | No | Yes | Low (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-27140">CVE-2026-27140</a> | Yes | Yes | Yes | Yes | High (8.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-28387">CVE-2026-28387</a> | Yes | Yes | No | Yes | Low (8.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-41413">CVE-2026-41413</a> | Yes | Yes | Yes | Yes | Medium (7.7) |
+| <a href="https://ubuntu.com/security/CVE-2026-2219">CVE-2026-2219</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27135">CVE-2026-27135</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28388">CVE-2026-28388</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28389">CVE-2026-28389</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28390">CVE-2026-28390</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-29181">CVE-2026-29181</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-31790">CVE-2026-31790</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32280">CVE-2026-32280</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32281">CVE-2026-32281</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32283">CVE-2026-32283</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33811">CVE-2026-33811</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33814">CVE-2026-33814</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-34986">CVE-2026-34986</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39820">CVE-2026-39820</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39836">CVE-2026-39836</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42499">CVE-2026-42499</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42501">CVE-2026-42501</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4437">CVE-2026-4437</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-5773">CVE-2026-5773</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-6276">CVE-2026-6276</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27144">CVE-2026-27144</a> | Yes | Yes | Yes | Yes | High (7.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39883">CVE-2026-39883</a> | Yes | Yes | Yes | Yes | High (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a> | Yes | Yes | No | Yes | Medium (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5545">CVE-2026-5545</a> | Yes | Yes | No | Yes | Medium (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32282">CVE-2026-32282</a> | Yes | Yes | Yes | Yes | Medium (6.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-32289">CVE-2026-32289</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39823">CVE-2026-39823</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39826">CVE-2026-39826</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39817">CVE-2026-39817</a> | Yes | Yes | Yes | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-4873">CVE-2026-4873</a> | Yes | Yes | No | Yes | Low (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-6253">CVE-2026-6253</a> | Yes | Yes | No | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-32288">CVE-2026-32288</a> | Yes | Yes | Yes | Yes | Medium (5.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39350">CVE-2026-39350</a> | Yes | Yes | Yes | Yes | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-4438">CVE-2026-4438</a> | No | No | Yes | No | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-39819">CVE-2026-39819</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-39825">CVE-2026-39825</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-6429">CVE-2026-6429</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-7168">CVE-2026-7168</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-35469">CVE-2026-35469</a> | No | Yes | No | Yes | High (0.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5958">CVE-2026-5958</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>Version 1.28.7-asm.3 addresses multiple platform CVEs across proxy, control plane, and CNI components. This update includes fixes for critical, high, medium, and low severity vulnerabilities to enhance system security.</summary>
+    <title>Fixed: Security Fixes in 1.28.7-asm.3</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:announcement:2</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.27.9-asm.4 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.27.9-asm.4 uses Envoy v1.35.10-dev.</p>]]></content>
+    <summary>The latest version of Cloud Service Mesh, 1.27.9-asm.4, is now available. This update includes an upgrade to Envoy version v1.35.10-dev. For detailed instructions on how to upgrade your service mesh, please refer to the official documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.27.9-asm.4 is released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:fixed:3</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.27.9-asm.4 contains fixes for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://ubuntu.com/security/CVE-2022-31045">CVE-2022-31045</a> | Yes | Yes | Yes | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-27143">CVE-2026-27143</a> | Yes | Yes | Yes | Yes | Critical (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-31789">CVE-2026-31789</a> | Yes | Yes | No | Yes | Low (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-27140">CVE-2026-27140</a> | Yes | Yes | Yes | Yes | High (8.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-28387">CVE-2026-28387</a> | Yes | Yes | No | Yes | Low (8.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-41413">CVE-2026-41413</a> | Yes | Yes | Yes | Yes | Medium (7.7) |
+| <a href="https://ubuntu.com/security/CVE-2019-14993">CVE-2019-14993</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2021-39155">CVE-2021-39155</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2021-39156">CVE-2021-39156</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2022-23635">CVE-2022-23635</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-2219">CVE-2026-2219</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27135">CVE-2026-27135</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28388">CVE-2026-28388</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28389">CVE-2026-28389</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28390">CVE-2026-28390</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-29181">CVE-2026-29181</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-31790">CVE-2026-31790</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32280">CVE-2026-32280</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32281">CVE-2026-32281</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32283">CVE-2026-32283</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33811">CVE-2026-33811</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33814">CVE-2026-33814</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-34986">CVE-2026-34986</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39820">CVE-2026-39820</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39836">CVE-2026-39836</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42499">CVE-2026-42499</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42501">CVE-2026-42501</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4437">CVE-2026-4437</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-5773">CVE-2026-5773</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-6276">CVE-2026-6276</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27144">CVE-2026-27144</a> | Yes | Yes | Yes | Yes | High (7.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39883">CVE-2026-39883</a> | Yes | Yes | Yes | Yes | High (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a> | Yes | Yes | No | Yes | Medium (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5545">CVE-2026-5545</a> | Yes | Yes | No | Yes | Medium (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32282">CVE-2026-32282</a> | Yes | Yes | Yes | Yes | Medium (6.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-32289">CVE-2026-32289</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39823">CVE-2026-39823</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39826">CVE-2026-39826</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39817">CVE-2026-39817</a> | Yes | Yes | Yes | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-4873">CVE-2026-4873</a> | Yes | Yes | No | Yes | Low (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-6253">CVE-2026-6253</a> | Yes | Yes | No | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-32288">CVE-2026-32288</a> | Yes | Yes | Yes | Yes | Medium (5.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39350">CVE-2026-39350</a> | Yes | Yes | Yes | Yes | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-4438">CVE-2026-4438</a> | No | No | Yes | No | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-39819">CVE-2026-39819</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-39825">CVE-2026-39825</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-6429">CVE-2026-6429</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-7168">CVE-2026-7168</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-35469">CVE-2026-35469</a> | No | Yes | No | Yes | High (0.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5958">CVE-2026-5958</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>Patch 1.27.9-asm.4 addresses multiple platform CVEs across various components. This update is crucial for maintaining the security posture of your services.</summary>
+    <title>Fixed: Security Patch Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:announcement:4</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following images are now rolling out for managed Cloud Service Mesh:</p>
+<ul>
+<li>1.21.6-asm.32 is rolling out to the rapid release channel.</li>
+<li>The regular release channel is being upgraded from 1.20 to 1.21.6-asm.32.</li>
+<li>The stable release channel is being upgraded from 1.19 to 1.20.8-asm.80.</li>
+</ul>]]></content>
+    <summary>New images are now available for managed Cloud Service Mesh across rapid, regular, and stable release channels. Ensure your deployments are updated to the latest versions for optimal performance and security.</summary>
+    <title>Announcement: Cloud Service Mesh image updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:fixed:5</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>These patch releases contain the fixes for the following CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://ubuntu.com/security/CVE-2026-27143">CVE-2026-27143</a> | Yes | Yes | Yes | Yes | Critical (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-31789">CVE-2026-31789</a> | Yes | Yes | No | Yes | Low (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-27140">CVE-2026-27140</a> | Yes | Yes | Yes | Yes | High (8.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-28387">CVE-2026-28387</a> | Yes | Yes | No | Yes | Low (8.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-41413">CVE-2026-41413</a> | Yes | Yes | Yes | Yes | Medium (7.7) |
+| <a href="https://ubuntu.com/security/CVE-2026-2219">CVE-2026-2219</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27135">CVE-2026-27135</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28388">CVE-2026-28388</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28389">CVE-2026-28389</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28390">CVE-2026-28390</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-29181">CVE-2026-29181</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-31790">CVE-2026-31790</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32280">CVE-2026-32280</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32281">CVE-2026-32281</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32283">CVE-2026-32283</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33811">CVE-2026-33811</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33814">CVE-2026-33814</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-34986">CVE-2026-34986</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39820">CVE-2026-39820</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39836">CVE-2026-39836</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42499">CVE-2026-42499</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42501">CVE-2026-42501</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4437">CVE-2026-4437</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-5773">CVE-2026-5773</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-6276">CVE-2026-6276</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27144">CVE-2026-27144</a> | Yes | Yes | Yes | Yes | High (7.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39883">CVE-2026-39883</a> | Yes | Yes | Yes | Yes | High (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a> | Yes | Yes | No | Yes | Medium (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5545">CVE-2026-5545</a> | Yes | Yes | No | Yes | Medium (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32282">CVE-2026-32282</a> | Yes | Yes | Yes | Yes | Medium (6.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-32289">CVE-2026-32289</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39823">CVE-2026-39823</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39826">CVE-2026-39826</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39817">CVE-2026-39817</a> | Yes | Yes | Yes | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-4873">CVE-2026-4873</a> | Yes | Yes | No | Yes | Low (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-6253">CVE-2026-6253</a> | Yes | Yes | No | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-32288">CVE-2026-32288</a> | Yes | Yes | Yes | Yes | Medium (5.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39350">CVE-2026-39350</a> | Yes | Yes | Yes | Yes | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-4438">CVE-2026-4438</a> | No | No | Yes | No | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-39819">CVE-2026-39819</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-39825">CVE-2026-39825</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-6429">CVE-2026-6429</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-7168">CVE-2026-7168</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-35469">CVE-2026-35469</a> | No | Yes | No | Yes | High (0.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5958">CVE-2026-5958</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>These patch releases include fixes for several CVEs affecting the proxy, control plane, and distroless components. The updates address vulnerabilities ranging from critical to low severity.</summary>
+    <title>Fixed: Security Fixes Deployed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:announcement:6</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.26.8-asm.10 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.26.8-asm.10 uses Envoy v1.34.14.</p>]]></content>
+    <summary>The latest version of Cloud Service Mesh, 1.26.8-asm.10, is now available. This release is based on Envoy v1.34.14 and includes important updates. For information on upgrading, please refer to the provided documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.26.8-asm.10 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-03:fixed:7</id>
+    <published>2026-06-03T00:00:00+00:00</published>
+    <updated>2026-06-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.26.8-asm.10 contains fixes for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://ubuntu.com/security/CVE-2022-31045">CVE-2022-31045</a> | Yes | Yes | Yes | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-27143">CVE-2026-27143</a> | Yes | Yes | Yes | Yes | Critical (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-31789">CVE-2026-31789</a> | Yes | Yes | No | Yes | Low (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-27140">CVE-2026-27140</a> | Yes | Yes | Yes | Yes | High (8.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-28387">CVE-2026-28387</a> | Yes | Yes | No | Yes | Low (8.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-41413">CVE-2026-41413</a> | Yes | Yes | Yes | Yes | Medium (7.7) |
+| <a href="https://ubuntu.com/security/CVE-2019-14993">CVE-2019-14993</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2021-39155">CVE-2021-39155</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2021-39156">CVE-2021-39156</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2022-23635">CVE-2022-23635</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-2219">CVE-2026-2219</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27135">CVE-2026-27135</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28388">CVE-2026-28388</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28389">CVE-2026-28389</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-28390">CVE-2026-28390</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-29181">CVE-2026-29181</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-31790">CVE-2026-31790</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32280">CVE-2026-32280</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32281">CVE-2026-32281</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32283">CVE-2026-32283</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33811">CVE-2026-33811</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-33814">CVE-2026-33814</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-34986">CVE-2026-34986</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39820">CVE-2026-39820</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39836">CVE-2026-39836</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4046">CVE-2026-4046</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42499">CVE-2026-42499</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42501">CVE-2026-42501</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-4437">CVE-2026-4437</a> | No | No | Yes | No | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-5773">CVE-2026-5773</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-6276">CVE-2026-6276</a> | Yes | Yes | No | Yes | Low (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-27144">CVE-2026-27144</a> | Yes | Yes | Yes | Yes | High (7.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39883">CVE-2026-39883</a> | Yes | Yes | Yes | Yes | High (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-4878">CVE-2026-4878</a> | Yes | Yes | No | Yes | Medium (7.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5545">CVE-2026-5545</a> | Yes | Yes | No | Yes | Medium (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-32282">CVE-2026-32282</a> | Yes | Yes | Yes | Yes | Medium (6.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-32289">CVE-2026-32289</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39823">CVE-2026-39823</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39826">CVE-2026-39826</a> | Yes | Yes | Yes | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39817">CVE-2026-39817</a> | Yes | Yes | Yes | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-4873">CVE-2026-4873</a> | Yes | Yes | No | Yes | Low (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-6253">CVE-2026-6253</a> | Yes | Yes | No | Yes | Medium (5.9) |
+| <a href="https://ubuntu.com/security/CVE-2026-32288">CVE-2026-32288</a> | Yes | Yes | Yes | Yes | Medium (5.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39350">CVE-2026-39350</a> | Yes | Yes | Yes | Yes | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-4438">CVE-2026-4438</a> | No | No | Yes | No | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-39819">CVE-2026-39819</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-39825">CVE-2026-39825</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-6429">CVE-2026-6429</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-7168">CVE-2026-7168</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-35469">CVE-2026-35469</a> | No | Yes | No | Yes | High (0.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-5958">CVE-2026-5958</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>Patch 1.26.8-asm.10 addresses multiple platform CVEs across proxy, control plane, distroless, and CNI components. This update includes fixes for vulnerabilities ranging in severity from low to critical, ensuring enhanced platform security.</summary>
+    <title>Fixed: Platform Security Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,20 @@
 # Security Command Center
 
+## 2026-06-05
+
+### Change
+
+The following Security Command Center finding category names from AI Protection have
+new names that clarify that AI Protection detects Gemini foundation models:
+
+* `VERTEX_AI_MODEL_DETECTED` changes to `GEMINI_MODEL_DETECTED`.
+* `VERTEX_AI_MODEL_NOT_PROTECTED_BY_MODEL_ARMOR` changes to
+  `GEMINI_MODEL_NOT_PROTECTED_BY_MODEL_ARMOR`.
+
+For more information about AI Protection findings, see
+[AI Protection overview](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview).
+
+---
 ## 2026-05-28
 
 ### Feature

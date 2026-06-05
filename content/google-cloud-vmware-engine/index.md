@@ -4,14 +4,14 @@
 
 ### Announcement
 
-All 3-year (36-month) `ve2` [committed use discounts (CUDs)](https://docs.cloud.google.com/docs/cuds) for Google Cloud VMware Engine purchased after May 31, 2026, will terminate on October 15, 2028. 3-year CUD pricing will apply, regardless of the actual term of the CUD.
+All 3-year (36-month) post-paid `ve2` [committed use discounts (CUDs)](https://docs.cloud.google.com/vmware-engine/docs/cud) for Google Cloud VMware Engine purchased after May 31, 2026, will terminate on October 15, 2028. 3-year CUD pricing will apply, regardless of the actual term of the CUD. Additionally, 3-year pre-paid CUDs are no longer available; only 1-year pre-paid CUDs are available.
 
 ---
 ## 2026-05-20
 
 ### Announcement
 
-All 1-year [committed use discounts (CUDs)](https://docs.cloud.google.com/docs/cuds) for Google Cloud VMware Engine `ve1` SKUs are now End-of-Sale across the europe-west2 (London, UK) region. You can continue to use `ve1` nodes with on-demand pricing. This change doesn't affect existing CUDs. You can also use `ve2` nodes, including `ve2` CUDs.
+All 1-year [committed use discounts (CUDs)](https://docs.cloud.google.com/vmware-engine/docs/cud) for Google Cloud VMware Engine `ve1` SKUs are now End-of-Sale across the europe-west2 (London, UK) region. You can continue to use `ve1` nodes with on-demand pricing. This change doesn't affect existing CUDs. You can also use `ve2` nodes, including `ve2` CUDs.
 
 ---
 ## 2026-05-15

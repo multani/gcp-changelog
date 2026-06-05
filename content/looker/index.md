@@ -1,5 +1,125 @@
 # Looker
 
+## 2026-06-04
+
+### Announcement
+
+**Looker 26.10** is expected to include the following changes, features, and fixes:
+
+* Expected Looker (original) deployment start: **Sunday, June 7, 2026**
+* Expected Looker (original) final deployment and download available: **Sunday, June 21, 2026**
+* Expected Looker (Google Cloud core) deployment start: **Sunday, June 7, 2026**
+* Expected Looker (Google Cloud core) final deployment: **Sunday, June 21, 2026**
+
+### Fixed
+
+An issue has been fixed where clicking **Save and Schedule** on an Explore could fail to load the **Schedule** dialog in a Looker (Google Cloud core) instance. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where cross filters didn't properly appear in the right-aligned filter bar. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where attempting to download or schedule the **Recent Login Failures** tile on the **User Activity** System Activity dashboard could fail. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where users were unable to scroll dashboards when the filter bar was open. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where dragging a dashboard tile horizontally could cause the tile to expand beyond the browser window. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed for filters on [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) fields that was causing a SQL error when the custom calendar `dimension_group` or the custom calendar `reference_date` had a non-timestamp `datatype` specified. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where configuring remote dependencies with custom SSH ports for on-premise Git repositories could fail. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where applying string matching filters (such as `Contains` or `Starts With`) with an empty value could generate incorrect filter SQL. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the labels that were specified in the **PDT Override Additional JDBC Parameters** field weren't being applied to BigQuery table creation jobs. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where changes to Markdown files weren't saved when you switched between **Edit** and **Preview** mode. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where running queries against derived tables in SQL Runner could cause Looker to return a 500 error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the right-aligned filter bar could become wide enough to require a scroll bar if a range slider filter was added. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where right-clicking in a drill-down menu during a cookieless embed session could incorrectly close the menu. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where retrieving all schemas for a Denodo connection could overload the database CPU. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **Unsubscribe** link could fail to appear in a scheduled report email. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the Advanced Vis Config editor would not recognize the `plotOptions.column.borderRadius` option. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where dashboard filters could fail to be updated from inactive to active color highlighting when certain types of date inputs were present. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where visualizations could overflow instead of shrinking when a tile or browser was resized. This feature now performs as expected.
+
+### Fixed
+
+When you edit a visualization, the Advanced Vis Config editor can now override default theme border and padding styles. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where a join wouldn't be added to a query if the join was required by a measure that was excluded from an Explore. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where period-over-period (POP) measures of types `previous` and `difference` that were based on `count` and `sum` measures would incorrectly return null instead of zero when no data was available for the comparison period. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where filter suggestions on dashboard filters could incorrectly retain previous filter values. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where setting a field name or an Explore name in a LookML dashboard as a non-string datatype could cause the LookML validator to return a 500 error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the `button group` dashboard filter type could display more than 30 options, cluttering the UI. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where moving a filter by dragging it could also inadvertently highlight text. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where some PDT settings were unavailable when you created a BigQuery connection by using the Quickstart flow in a Looker (Google Cloud core) instance. This feature now performs as expected.
+
+### Feature
+
+[Period-over-period (PoP) measures](https://docs.cloud.google.com/looker/docs/period-over-period) are now supported on connections to Trino databases.
+
+---
 ## 2026-05-27
 
 ### Announcement

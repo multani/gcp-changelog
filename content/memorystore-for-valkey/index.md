@@ -1,5 +1,16 @@
 # Memorystore for Valkey
 
+## 2026-06-04
+
+### Feature
+
+Memorystore for Valkey has additional [node-level metrics](https://docs.cloud.google.com/memorystore/docs/valkey/supported-monitoring-metrics#cloud-monitoring-node-metrics) for Cloud
+Monitoring. These metrics offer detailed insights into the health and
+performance of individual nodes within an instance. You can use the metrics to
+troubleshoot issues with the nodes to optimize their performance. The metrics
+are available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-17
 
 ### Feature

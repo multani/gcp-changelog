@@ -1,5 +1,18 @@
 # Document AI
 
+## 2026-06-04
+
+### Feature
+
+Custom extractor offers document validation and correction in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+This feature allows you to enhance extraction accuracy with validation rules
+and document data using Common Expression Language (CEL) dialect.
+
+For more information, see [CEL dialect for document
+validation](https://docs.cloud.google.com/document-ai/docs/ce-common-expression-validation.md).
+
+---
 ## 2026-05-27
 
 ### Feature

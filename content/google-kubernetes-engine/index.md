@@ -1,5 +1,18 @@
 # Google Kubernetes Engine
 
+## 2026-06-04
+
+### Feature
+
+GKE Gateway now supports frontend mTLS (client certificate validation). Frontend mTLS allows the Gateway to authenticate client-presented certificates. This feature is available for the following GatewayClasses:
+
+* `gke-l7-global-external-managed`
+* `gke-l7-regional-external-managed`
+* `gke-l7-rilb`
+
+For more information, see [Configure frontend mTLS for a Gateway](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/secure-gateway#configure-frontend-mtls).
+
+---
 ## 2026-06-02
 
 ### Feature

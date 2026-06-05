@@ -1,5 +1,15 @@
 # Cloud Trace
 
+## 2026-06-04
+
+### Feature
+
+To view the instrumentation scope or the schema associated with a span, open the
+**Details** view for the span and select the **Metadata & Links** tab.
+For more information, see
+[View attributes, log entries, and events](https://docs.cloud.google.com/trace/docs/finding-traces#attributes-events).
+
+---
 ## 2026-06-02
 
 ### Feature

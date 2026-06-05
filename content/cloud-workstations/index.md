@@ -1,5 +1,18 @@
 # Cloud Workstations
 
+## 2026-05-29
+
+### Announcement
+
+The [preconfigured base images](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images)
+include [Antigravity CLI](https://antigravity.google/product/antigravity-cli).
+
+### Announcement
+
+The base VM was upgraded to use [Container-Optimized OS](https://docs.cloud.google.com/container-optimized-os/docs/concepts/features-and-benefits)
+[129 LTS](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m129).
+
+---
 ## 2026-05-18
 
 ### Feature

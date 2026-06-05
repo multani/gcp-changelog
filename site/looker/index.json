@@ -1,6 +1,232 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-06-04": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.10** is expected to include the following changes, features, and fixes:\n\n* Expected Looker (original) deployment start: **Sunday, June 7, 2026**\n* Expected Looker (original) final deployment and download available: **Sunday, June 21, 2026**\n* Expected Looker (Google Cloud core) deployment start: **Sunday, June 7, 2026**\n* Expected Looker (Google Cloud core) final deployment: **Sunday, June 21, 2026**",
+        "summary": {
+          "title": "Looker 26.10 Release Imminent",
+          "summary": "The Looker 26.10 release is scheduled for deployment starting Sunday, June 7, 2026, with final deployments and downloads available by Sunday, June 21, 2026. This update includes changes, features, and fixes for both Looker (original) and Looker (Google Cloud core) versions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where clicking **Save and Schedule** on an Explore could fail to load the **Schedule** dialog in a Looker (Google Cloud core) instance. This feature now performs as expected.",
+        "summary": {
+          "title": "Save and Schedule Dialog Now Loads Correctly",
+          "summary": "An issue preventing the Schedule dialog from loading after clicking Save and Schedule on an Explore has been resolved. The feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where cross filters didn't properly appear in the right-aligned filter bar. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter bar display issue resolved",
+          "summary": "An issue preventing cross filters from appearing correctly in the right-aligned filter bar has been fixed. The feature now functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where attempting to download or schedule the **Recent Login Failures** tile on the **User Activity** System Activity dashboard could fail. This feature now performs as expected.",
+        "summary": {
+          "title": "Login failures tile fixed",
+          "summary": "A bug that prevented downloading or scheduling the Recent Login Failures tile has been resolved. The tile now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where users were unable to scroll dashboards when the filter bar was open. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard scrolling fixed",
+          "summary": "An issue preventing dashboard scrolling with an open filter bar has been resolved. Dashboards now function as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dragging a dashboard tile horizontally could cause the tile to expand beyond the browser window. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard tile drag fixed",
+          "summary": "An issue where dragging a dashboard tile horizontally could cause it to expand beyond the browser window has been resolved. The feature now performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed for filters on [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) fields that was causing a SQL error when the custom calendar `dimension_group` or the custom calendar `reference_date` had a non-timestamp `datatype` specified. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed custom calendar filter SQL error",
+          "summary": "An issue causing SQL errors when filtering custom calendar fields with non-timestamp datatypes has been resolved. The custom calendar dimension group and reference date now function correctly, ensuring filters perform as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where configuring remote dependencies with custom SSH ports for on-premise Git repositories could fail. This feature now performs as expected.",
+        "summary": {
+          "title": "Remote dependency configuration fixed",
+          "summary": "An issue preventing the configuration of remote dependencies with custom SSH ports for on-premise Git repositories has been resolved. This functionality now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where applying string matching filters (such as `Contains` or `Starts With`) with an empty value could generate incorrect filter SQL. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed incorrect filter SQL for empty string matching",
+          "summary": "An issue causing incorrect filter SQL when applying empty value string matching filters has been resolved. The feature now functions as expected, ensuring accurate filter generation."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the labels that were specified in the **PDT Override Additional JDBC Parameters** field weren't being applied to BigQuery table creation jobs. This feature now performs as expected.",
+        "summary": {
+          "title": "JDBC parameter labels applied to BigQuery",
+          "summary": "An issue has been fixed where labels specified in the PDT Override Additional JDBC Parameters field were not applied to BigQuery table creation jobs. This feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where changes to Markdown files weren't saved when you switched between **Edit** and **Preview** mode. This feature now performs as expected.",
+        "summary": {
+          "title": "Markdown save issue resolved",
+          "summary": "An issue where changes to Markdown files were not saved when switching between edit and preview modes has been fixed. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where running queries against derived tables in SQL Runner could cause Looker to return a 500 error. This feature now performs as expected.",
+        "summary": {
+          "title": "SQL Runner derived table queries now work",
+          "summary": "An issue causing 500 errors when querying derived tables in SQL Runner has been resolved. This functionality now operates correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the right-aligned filter bar could become wide enough to require a scroll bar if a range slider filter was added. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter bar behavior corrected",
+          "summary": "An issue causing the filter bar to become too wide and require scrolling has been resolved. The filter bar now functions correctly, even with range slider filters."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where right-clicking in a drill-down menu during a cookieless embed session could incorrectly close the menu. This feature now performs as expected.",
+        "summary": {
+          "title": "Drill-down menu behavior corrected",
+          "summary": "An issue where right-clicking in a drill-down menu during a cookieless embed session incorrectly closed the menu has been resolved. The feature now functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where retrieving all schemas for a Denodo connection could overload the database CPU. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed schema retrieval for Denodo connections",
+          "summary": "An issue where retrieving all schemas for a Denodo connection could overload the database CPU has been fixed. The feature now performs as expected, ensuring stable database performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the **Unsubscribe** link could fail to appear in a scheduled report email. This feature now performs as expected.",
+        "summary": {
+          "title": "Unsubscribe link now appears in scheduled reports",
+          "summary": "An issue that prevented the Unsubscribe link from appearing in scheduled report emails has been resolved. The Unsubscribe link now functions correctly, ensuring users can manage their subscriptions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the Advanced Vis Config editor would not recognize the `plotOptions.column.borderRadius` option. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed column chart border radius issue",
+          "summary": "The Advanced Vis Config editor now correctly recognizes the plotOptions.column.borderRadius option. This resolves a previously existing issue where the option was not being applied as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dashboard filters could fail to be updated from inactive to active color highlighting when certain types of date inputs were present. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard filter updates resolved",
+          "summary": "An issue where dashboard filters failed to update color highlighting with specific date inputs has been fixed. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where visualizations could overflow instead of shrinking when a tile or browser was resized. This feature now performs as expected.",
+        "summary": {
+          "title": "Visualization resizing fixed",
+          "summary": "An issue causing visualizations to overflow instead of shrinking when resized has been resolved. Visualizations now adjust correctly to tile and browser dimensions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "When you edit a visualization, the Advanced Vis Config editor can now override default theme border and padding styles. This feature now performs as expected.",
+        "summary": {
+          "title": "Visualization theme styles now work correctly",
+          "summary": "The Advanced Vis Config editor now correctly overrides default theme border and padding styles when editing visualizations. This fix ensures that theme styles are applied as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where a join wouldn't be added to a query if the join was required by a measure that was excluded from an Explore. This feature now performs as expected.",
+        "summary": {
+          "title": "Join behavior in Explores corrected",
+          "summary": "An issue where joins were incorrectly excluded from queries has been resolved. The system now correctly includes joins required by measures, ensuring expected query performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where period-over-period (POP) measures of types `previous` and `difference` that were based on `count` and `sum` measures would incorrectly return null instead of zero when no data was available for the comparison period. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed incorrect null values for POP measures",
+          "summary": "An issue causing period-over-period measures to incorrectly return null instead of zero has been resolved. This fix ensures that `count` and `sum` based POP measures now display zero when no data is available for the comparison period, performing as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where filter suggestions on dashboard filters could incorrectly retain previous filter values. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter suggestions now retain correct values",
+          "summary": "An issue causing filter suggestions to incorrectly retain previous values has been resolved. This feature now functions as intended, ensuring accurate filter suggestions on dashboards."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where setting a field name or an Explore name in a LookML dashboard as a non-string datatype could cause the LookML validator to return a 500 error. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML validator error fixed",
+          "summary": "An issue causing a 500 error in the LookML validator when using non-string datatypes for field or Explore names has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the `button group` dashboard filter type could display more than 30 options, cluttering the UI. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard filter now displays correctly",
+          "summary": "An issue with the button group dashboard filter has been resolved. It previously displayed too many options, but now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where moving a filter by dragging it could also inadvertently highlight text. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter dragging behavior corrected",
+          "summary": "An issue where dragging a filter would also highlight text has been resolved. The filter can now be moved without affecting text selection, ensuring the feature works as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where some PDT settings were unavailable when you created a BigQuery connection by using the Quickstart flow in a Looker (Google Cloud core) instance. This feature now performs as expected.",
+        "summary": {
+          "title": "BigQuery connection settings restored",
+          "summary": "An issue preventing access to certain PDT settings during BigQuery connection creation via the Quickstart flow in Looker has been resolved. The feature now functions correctly, ensuring all settings are available as expected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Period-over-period (PoP) measures](https://docs.cloud.google.com/looker/docs/period-over-period) are now supported on connections to Trino databases.",
+        "summary": {
+          "title": "Period-over-period measures now supported for Trino",
+          "summary": "You can now use period-over-period measures on connections to Trino databases. This enhancement allows for more insightful comparative analysis of your data over time. Explore how this new feature can benefit your reporting needs."
+        }
+      }
+    ],
     "2026-05-27": [
       {
         "kind": "Announcement",

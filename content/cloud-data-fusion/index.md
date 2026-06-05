@@ -1,5 +1,42 @@
 # Cloud Data Fusion
 
+## 2026-06-05
+
+### Feature
+
+Cloud Data Fusion version 6.11.1.3 is
+generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+### Fixed
+
+Fixed in Cloud Data Fusion 6.11.1.3:
+
+* Fixed an issue that caused pipeline preview runs to fail with an
+  `InaccessibleObjectException` when using certain plugins, such as
+  Cloud SQL for PostgreSQL
+  ([CDAP-21212](https://cdap.atlassian.net/browse/CDAP-21212)).
+* Fixed an issue causing custom plugins to lose their logging context when
+  running in parallel pipeline branches, ensuring consistent log propagation
+  across both linear and parallel branched pipeline executions
+  ([CDAP-21245](https://cdap.atlassian.net/browse/CDAP-21245)).
+* Fixed critical security vulnerabilities in CDAP
+  ([CDAP-21250](https://cdap.atlassian.net/browse/CDAP-21250)).
+* Improved the latency of the **List pipelines** page
+  ([CDAP-21244](https://cdap.atlassian.net/browse/CDAP-21244)).
+* Fixed an issue causing intermittent service unavailability after instance
+  upgrades ([CDAP-21254](https://cdap.atlassian.net/browse/CDAP-21254)).
+
+### Change
+
+Changes in Cloud Data Fusion 6.11.1.3:
+
+* Introduced a `deployStrategy` query parameter in the
+  [Deploy Application API](https://cdap.atlassian.net/wiki/spaces/DOCS/pages/477560983/Lifecycle+Microservices#Create-an-Application)
+  to skip the re-deployment of an existing pipeline if its configuration hasn't
+  changed
+  ([CDAP-21246](https://cdap.atlassian.net/browse/CDAP-21246)).
+
+---
 ## 2026-03-17
 
 ### Fixed

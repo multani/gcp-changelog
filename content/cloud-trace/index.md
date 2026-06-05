@@ -1,5 +1,16 @@
 # Cloud Trace
 
+## 2026-06-05
+
+### Feature
+
+Custom dashboards can display trace data. You can view individual spans or
+aggregated data. This feature is
+[public preview](https://docs.cloud.google.com/products#product-launch-stages).
+For more information, see
+[Display traces on a custom dashboard](https://docs.cloud.google.com/trace/docs/display-traces-on-dashboards).
+
+---
 ## 2026-06-04
 
 ### Feature

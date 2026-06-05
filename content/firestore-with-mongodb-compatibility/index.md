@@ -1,5 +1,15 @@
 # Firestore with MongoDB compatibility
 
+## 2026-06-01
+
+### Feature
+
+Support for searching for and managing your Firestore resources
+using Knowledge Catalog, which is a platform for
+storing, managing, and accessing your metadata. To learn more, see
+[View Knowledge Catalog insights](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/knowledge-catalog).
+
+---
 ## 2026-04-20
 
 ### Feature

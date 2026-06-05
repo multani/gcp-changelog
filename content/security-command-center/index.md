@@ -2,6 +2,14 @@
 
 ## 2026-06-05
 
+### Feature
+
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) supports
+data residency in the European Union (EU) for the Security Command Center Premium tier.
+
+For more information, see [Planning for data
+residency](https://docs.cloud.google.com/security-command-center/docs/data-residency-support).
+
 ### Change
 
 The following Security Command Center finding category names from AI Protection have

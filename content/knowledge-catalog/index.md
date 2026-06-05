@@ -1,5 +1,16 @@
 # Knowledge Catalog
 
+## 2026-06-04
+
+### Feature
+
+You can use the [`lookupContext`](https://docs.cloud.google.com/dataplex/docs/reference/rest/v1/projects.locations/lookupContext) method to retrieve a pre-formatted bundle of data asset context optimized for interactive agentic workflows. This LLM-ready context helps to ground your agents in assessing and using data assets.
+
+This feature is available in [preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Retrieve context for data assets](https://docs.cloud.google.com/dataplex/docs/retrieve-data-context).
+
+---
 ## 2026-05-29
 
 ### Feature

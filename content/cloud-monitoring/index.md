@@ -1,5 +1,18 @@
 # Cloud Monitoring
 
+## 2026-06-05
+
+### Feature
+
+Custom dashboards can display trace data. You can view individual spans or
+aggregated data. This feature is
+[public preview](https://docs.cloud.google.com/products#product-launch-stages).
+For more information, see the following:
+
+* [Display trace data (Google Cloud console)](https://docs.cloud.google.com/monitoring/dashboards/display-traces-on-dashboards)
+* [Dashboard with trace data (API)](https://docs.cloud.google.com/monitoring/dashboards/api-examples#dashboard-with-trace-data)
+
+---
 ## 2026-06-02
 
 ### Feature

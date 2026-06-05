@@ -2,9 +2,66 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Data Fusion</title>
   <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
-  <updated>2026-03-17T00:00:00+00:00</updated>
+  <updated>2026-06-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-06-05:feature:0</id>
+    <published>2026-06-05T00:00:00+00:00</published>
+    <updated>2026-06-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Data Fusion version 6.11.1.3 is
+generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>]]></content>
+    <summary>Cloud Data Fusion version 6.11.1.3 has reached general availability. This update brings the latest improvements and features to the data integration service.</summary>
+    <title>Feature: Data Fusion 6.11.1.3 Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-06-05:fixed:1</id>
+    <published>2026-06-05T00:00:00+00:00</published>
+    <updated>2026-06-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed in Cloud Data Fusion 6.11.1.3:</p>
+<ul>
+<li>Fixed an issue that caused pipeline preview runs to fail with an
+  <code>InaccessibleObjectException</code> when using certain plugins, such as
+  Cloud SQL for PostgreSQL
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21212">CDAP-21212</a>).</li>
+<li>Fixed an issue causing custom plugins to lose their logging context when
+  running in parallel pipeline branches, ensuring consistent log propagation
+  across both linear and parallel branched pipeline executions
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21245">CDAP-21245</a>).</li>
+<li>Fixed critical security vulnerabilities in CDAP
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21250">CDAP-21250</a>).</li>
+<li>Improved the latency of the <strong>List pipelines</strong> page
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21244">CDAP-21244</a>).</li>
+<li>Fixed an issue causing intermittent service unavailability after instance
+  upgrades (<a href="https://cdap.atlassian.net/browse/CDAP-21254">CDAP-21254</a>).</li>
+</ul>]]></content>
+    <summary>This release addresses several issues including pipeline preview failures with specific plugins, logging context loss in custom plugins during parallel execution, and critical security vulnerabilities. It also includes performance improvements for the List pipelines page and resolves intermittent service unavailability after upgrades.</summary>
+    <title>Fixed: Cloud Data Fusion 6.11.1.3 Release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-06-05:change:2</id>
+    <published>2026-06-05T00:00:00+00:00</published>
+    <updated>2026-06-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Changes in Cloud Data Fusion 6.11.1.3:</p>
+<ul>
+<li>Introduced a <code>deployStrategy</code> query parameter in the
+  <a href="https://cdap.atlassian.net/wiki/spaces/DOCS/pages/477560983/Lifecycle+Microservices#Create-an-Application">Deploy Application API</a>
+  to skip the re-deployment of an existing pipeline if its configuration hasn't
+  changed
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21246">CDAP-21246</a>).</li>
+</ul>]]></content>
+    <summary>Cloud Data Fusion 6.11.1.3 has been released with an update to the Deploy Application API. A new query parameter, `deployStrategy`, allows skipping pipeline re-deployment if configurations remain unchanged, improving efficiency. This change helps streamline the deployment process by avoiding unnecessary updates.</summary>
+    <title>Change: Cloud Data Fusion update available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

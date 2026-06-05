@@ -12,6 +12,11 @@ include [Antigravity CLI](https://antigravity.google/product/antigravity-cli).
 The base VM was upgraded to use [Container-Optimized OS](https://docs.cloud.google.com/container-optimized-os/docs/concepts/features-and-benefits)
 [129 LTS](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m129).
 
+### Feature
+
+The [JetBrains RubyMine preconfigured base image](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images#list_of_preconfigured_base_images)
+uses a custom gem directory (`/usr/local/share/gems/ruby/3.1.0`).
+
 ---
 ## 2026-05-18
 

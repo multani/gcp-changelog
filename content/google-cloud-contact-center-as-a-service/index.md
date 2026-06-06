@@ -1,5 +1,46 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-05
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue with Salesforce where virtual agent responses appeared out of
+  order in transcripts.
+* Fixed an issue where the advanced reporting dashboards didn't load.
+* Fixed an issue where PDF and audio attachments weren't visible to agents
+  after a chat transfer.
+* Fixed an issue where end-users were incorrectly placed on hold following a
+  cold transfer to a queue.
+* Fixed an issue where MP3 audio files for agent call deflections couldn't be
+  uploaded.
+* Fixed an issue where agents were automatically logged out due to inactivity
+  while still engaged in active calls or chats.
+* Fixed an issue where a bulk user upload with blank phone number columns
+  caused existing direct inbound phone numbers to become unassigned from agent
+  profiles.
+* Fixed an issue with Salesforce where cases weren't created when a virtual
+  agent connected to a call.
+* Fixed an issue where agents on teams with transfer restrictions couldn't
+  transfer chats to agents not assigned to a team.
+* Fixed an issue where agents who weren't available for chat transfers still
+  appeared in the transfer list, causing transfer attempts to fail.
+* Fixed an issue where the **Submit** wrap-up button didn't appear in the
+  call adapter after agents completed outbound calls.
+* Fixed an issue where an agent and caller could still hear each other after
+  the agent placed the caller on hold.
+* Fixed an issue in the agent desktop that occurred after an agent transferred
+  a call to a different queue. The agent desktop layout of the source queue
+  displayed to the receiving agent instead of the layout of the destination
+  queue.
+* Fixed an issue where the reporting for After Call Work (ACW) time was
+  artificially high for calls transferred to a third party.
+* Fixed an issue where overcapacity deflection settings interfered with
+  after-hours deflections, causing calls to be incorrectly queued.
+* Fixed an issue where the inactivity timeout didn't function as configured.
+
+---
 ## 2026-06-03
 
 ### Announcement

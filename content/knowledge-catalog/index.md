@@ -1,5 +1,14 @@
 # Knowledge Catalog
 
+## 2026-06-05
+
+### Deprecated
+
+Starting June 1, 2026, the Data Catalog service begins a phased shutdown. From this date onward, you might experience disruptions or a complete lack of access to Data Catalog APIs. Knowledge Catalog (formerly known as Dataplex Catalog) operates without impact.
+
+For more information about migrating from Data Catalog to Knowledge Catalog, see [Transition from Data Catalog to Knowledge Catalog](https://docs.cloud.google.com/dataplex/docs/transition-to-dataplex-catalog).
+
+---
 ## 2026-06-04
 
 ### Feature

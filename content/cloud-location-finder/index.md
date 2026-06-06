@@ -1,5 +1,12 @@
 # Cloud Location Finder
 
+## 2026-06-06
+
+### Announcement
+
+Cloud Location Finder is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-03-25
 
 ### Announcement

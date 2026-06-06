@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2026-06-05": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for bare metal 1.33.900-gke.90 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.33.900-gke.90 runs on Kubernetes v1.33.11-gke.100.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release of Google Distributed Cloud for bare metal.",
+        "summary": {
+          "title": "New software release available",
+          "summary": "The latest software-only release for bare metal is now available for download. This update runs on Kubernetes v1.33.11-gke.100. Please ensure your third-party storage vendor is qualified for this release if applicable."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.33.900-gke.90:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).\n* Fixed an issue where a transient or partial failure during node pool updates\n  could cause node taints or labels to become permanently stuck (stranded) on\n  worker nodes, even after you removed them from the NodePool custom resource\n  specification.\n* Fixed an issue where, if a new control plane node failed to join a cluster\n  during bootstrapping or scaling (associated with installer Ansible runner job\n  failures), orphaned etcd memberships were not cleaned up, causing the existing\n  control plane's API server to restart repeatedly (flap) and blocking subsequent\n  retry attempts.\n* Fixed an issue where, during control plane certificate rotation or etcd\n  encryption updates, the installer stalled for three minutes per control plane\n  node while waiting for the local API server to restart, causing nodes to\n  temporarily report an Unknown status and triggering transient routing\n  disruptions (such as 503 Service Unavailable or ImagePullBackOff errors) for\n  workloads scheduled on those nodes.\n* Fixed an issue where, when enabling or updating etcd encryption, the API\n  server was terminated abruptly, causing transient connection timeouts or\n  failures for in-cluster workloads for up to five minutes.\n* Fixed an issue where, when recreating a user cluster with a previously used\n  name (which commonly occurs during Terraform deployments or manual\n  reinstalls), cluster provisioning stalled indefinitely in the provisioning\n  state due to a missing k8s-health-check service account. The installer\n  ensures that the service account is created, eliminating the need to manually\n  create the service account as a workaround.",
+        "summary": {
+          "title": "Maintenance release 1.33.900-gke.90",
+          "summary": "This release addresses multiple vulnerabilities and resolves issues related to node pool updates, control plane bootstrapping, certificate rotation, etcd encryption, and cluster recreation. These fixes enhance stability and prevent common operational disruptions."
+        }
+      }
+    ],
     "2026-05-27": [
       {
         "kind": "Announcement",
@@ -12,10 +30,10 @@
       },
       {
         "kind": "Fixed",
-        "content": "The following issues were fixed in 1.34.500-gke.108:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).\n* Fixed an issue where, if a new control plane node failed to join a cluster during bootstrapping or scaling (associated with installer Ansible runner job failures), orphaned etcd memberships were not cleaned up, causing the existing control plane's API server to restart repeatedly (flap) and blocking subsequent retry attempts.\n* Fixed an issue where, during control plane certificate rotation or etcd encryption updates, the installer stalled for three minutes per control plane node while waiting for the local API server to restart, causing nodes to temporarily report an Unknown status and triggering transient routing disruptions (such as 503 Service Unavailable or ImagePullBackOff errors) for workloads scheduled on those nodes.\n* Fixed an issue where, when enabling or updating etcd encryption, the API server was terminated abruptly, causing transient connection timeouts or failures for in-cluster workloads for up to five minutes.\n* Fixed an issue where, when recreating a user cluster with a previously used name (which commonly occurs during Terraform deployments or manual reinstalls), cluster provisioning stalled indefinitely in the provisioning state due to a missing k8s-health-check service account. The installer ensures that the service account is created, eliminating the need to manually create the service account as a workaround.",
+        "content": "The following issues were fixed in 1.34.500-gke.108:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).\n* Fixed an issue where, if a new control plane node failed to join a cluster\n  during bootstrapping or scaling (associated with installer Ansible runner job\n  failures), orphaned etcd memberships were not cleaned up, causing the existing\n  control plane's API server to restart repeatedly (flap) and blocking subsequent\n  retry attempts.\n* Fixed an issue where, during control plane certificate rotation or etcd\n  encryption updates, the installer stalled for three minutes per control plane node\n  while waiting for the local API server to restart, causing nodes to temporarily\n  report an Unknown status and triggering transient routing disruptions (such as\n  503 Service Unavailable or ImagePullBackOff errors) for workloads scheduled on\n  those nodes.\n* Fixed an issue where, when enabling or updating etcd encryption, the API\n  server was terminated abruptly, causing transient connection timeouts or\n  failures for in-cluster workloads for up to five minutes.\n* Fixed an issue where, when recreating a user cluster with a previously used\n  name (which commonly occurs during Terraform deployments or manual\n  reinstalls), cluster provisioning stalled indefinitely in the provisioning\n  state due to a missing k8s-health-check service account. The installer\n  ensures that the service account is created, eliminating the need to manually\n  create the service account as a workaround.",
         "summary": {
-          "title": "Maintenance release addresses multiple issues",
-          "summary": "Version 1.34.500-gke.108 includes fixes for security vulnerabilities and critical operational issues. This release resolves problems related to control plane node failures, certificate rotation, etcd encryption, and cluster recreation, ensuring improved stability and reliability."
+          "title": "Fixed cluster stability and security issues",
+          "summary": "Version 1.34.500-gke.108 addresses critical vulnerabilities and resolves several issues affecting cluster bootstrapping, control plane operations, and user cluster recreation. These fixes enhance overall cluster stability and security."
         }
       }
     ],

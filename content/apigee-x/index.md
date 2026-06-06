@@ -23,6 +23,16 @@ On May 29, 2026, we released an updated version of the Apigee UI.
 
 ### Feature
 
+**Apigee EventFlow now supports the DataCapture policy**
+
+You can now use the DataCapture policy within an EventFlow to extract and
+persist data from server-sent events (SSE) streams, such as token counts and
+other fields from streaming LLM responses.
+For more information, see
+[Use the DataCapture policy to capture token counts](https://docs.cloud.google.com/apigee/docs/api-platform/develop/server-sent-events#datacapture-token-counts).
+
+### Feature
+
 **Manage Spaces in the Apigee UI**
 
 You can now create, view, update, and delete spaces, and manage their Identity and Access Management (IAM) policies directly in the Apigee UI.

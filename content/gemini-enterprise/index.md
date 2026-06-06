@@ -1,5 +1,34 @@
 # Gemini Enterprise
 
+## 2026-06-05
+
+### Feature
+
+**Gemini Enterprise: Asana data store (Preview)**
+
+The Asana data store is available in Public Preview in Gemini Enterprise.
+
+You can connect an Asana account to search and read projects, workspaces,
+teams, and tasks using natural language. You can also perform actions,
+such as creating projects and tasks, directly from the Gemini Enterprise app.
+
+For more information, see [Connect Asana](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/asana).
+
+### Announcement
+
+**Gemini Enterprise: Administrator control for Gemini 3.5 Flash**
+
+As a reminder, effective June 9, 2026, the feature management toggle for
+Gemini 3.5 Flash is no longer available. Gemini 3.5 Flash
+is enabled by default for all users in the Gemini Enterprise app and cannot
+be disabled.
+
+This change applies to the Global, US, and EU multi-regions.
+
+**Note:** The effective date has been extended by one day from the [originally
+announced schedule](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#May_26_2026).
+
+---
 ## 2026-06-03
 
 ### Feature

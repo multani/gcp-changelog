@@ -1,5 +1,31 @@
 # Cloud Billing
 
+## 2026-06-08
+
+### Feature
+
+**FOCUS billing data export to BigQuery available in Preview**
+
+[Cloud Billing data export to BigQuery](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery)
+now offers a FOCUS billing data export available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+The [*FinOps Open Cost and Usage Specification* (FOCUS)](https://focus.finops.org/what-is-focus/)
+is an open specification that defines clear requirements for technology billing
+data generators to produce consistent cost and usage datasets. The Google Cloud
+billing data export using the
+[FOCUS specifications](https://focus.finops.org/focus-specification/)
+includes FOCUS columns up to
+[FOCUS version 1.2](https://focus.finops.org/focus-specification/v1-2/).
+
+For more information about the FOCUS billing data export to BigQuery, refer
+to the following documentation:
+
+* [Set up FOCUS Cloud Billing data export to BigQuery](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery-focus-setup)
+* [Structure of the FOCUS data export](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/focus-export)
+* [FOCUS conformance report](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/focus-export#conformance-report)
+* [Query examples for FOCUS use cases](https://focus.finops.org/use-cases/?version=v1-2)
+
+---
 ## 2026-06-01
 
 ### Feature

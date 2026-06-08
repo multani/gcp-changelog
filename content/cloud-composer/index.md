@@ -1,5 +1,44 @@
 # Cloud Composer
 
+## 2026-06-08
+
+### Change
+
+Several API dependencies that aren't required by Managed Airflow (Gen 3) are
+now phased out and must be enabled separately if you want to create
+Managed Airflow (Gen 2) environments in a new project. This change was
+[announced previously](https://docs.cloud.google.com/composer/docs/release-notes#June_16_2025).
+
+The following API dependencies were phased out:
+
+* artifactregistry.googleapis.com
+* cloudbuild.googleapis.com
+* container.googleapis.com
+* pubsub.googleapis.com
+
+The following API dependencies aren't phased out yet and are scheduled to be
+detached from the Cloud Composer API in the future:
+
+* sqladmin.googleapis.com
+
+Existing Managed Airflow (Gen 3) and Managed Airflow (Gen 2) environments in
+projects where the Cloud Composer API is already enabled aren't impacted.
+
+You can do the following:
+
+* If your project has only Managed Airflow (Gen 3) environments, then you can
+  manually disable the listed APIs that were phased out.
+* If your project has Managed Airflow (Gen 2) environments, then we recommend
+  to keep these APIs enabled because disabling them might lead to environment's malfunction.
+* If you want to create Managed Airflow (Gen 2) environments in a new project,
+  you can enable the listed APIs manually or using a Google Cloud CLI
+  command. For more information, see
+  [Enable Managed Airflow (Gen 2) dependencies](https://docs.cloud.google.com/composer/docs/composer-2/enable-composer-service#enable-gen-2-dependencies).
+* If you use automation scripts to provision Managed Airflow (Gen 2)
+  environments, then make sure that the listed APIs are enabled in addition
+  to the Cloud Composer API.
+
+---
 ## 2026-06-02
 
 ### Feature

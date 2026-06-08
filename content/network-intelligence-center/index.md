@@ -1,5 +1,24 @@
 # Network Intelligence Center
 
+## 2026-06-08
+
+### Feature
+
+[Cloud Network Insights](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/) is in **General Availability**.
+
+Cloud Network Insights monitors your network and web application performance
+across multicloud and hybrid networks and provides visualization tools to help
+identify and diagnose network issues.
+
+The following additional features are included in this release:
+
+* **Compute Engine VM Monitoring Points**: [deploy a Monitoring Point](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/add-monitoring-points#gce_vm) optimized for Google Cloud directly to your Google
+  Cloud infrastructure using Terraform.
+* **Connectivity Tests support**: [run Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/run-connectivity-tests)
+  from Cloud Network Insights to validate connectivity
+  between endpoints of some dual-ended network paths.
+
+---
 ## 2026-04-17
 
 ### Feature

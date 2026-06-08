@@ -1,5 +1,25 @@
 # BigQuery
 
+## 2026-06-08
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more
+granular control over specific fields for some BigQuery sharing
+resources. For more information, see
+[Manage Sharing data exchanges and listings using custom constraints](https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints).
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+You can manage and limit the costs associated with BigQuery generative AI
+functions by configuring [daily token quotas](https://docs.cloud.google.com/bigquery/docs/control-genai-costs).
+Token-based cost management for BigQuery generative AI functions is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+---
 ## 2026-06-03
 
 ### Feature

@@ -1,5 +1,23 @@
 # Policy Intelligence
 
+## 2026-06-03
+
+### Feature
+
+You can use Policy Analyzer to visualize allow policy queries. This
+can help you understand the relationship between identities, roles, permissions,
+and resources within your resource hierarchy.
+
+Policy Analyzer supports queries about agent identities. You can see
+who can access an agent or what resources and agents a specific agent can reach.
+
+These features are available in in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see
+[Analyze allow policies](https://docs.cloud.google.com/policy-intelligence/docs/analyze-iam-policies).
+
+---
 ## 2026-05-08
 
 ### Feature

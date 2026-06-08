@@ -1,6 +1,16 @@
 {
   "name": "Cloud Composer",
   "entries": {
+    "2026-06-08": [
+      {
+        "kind": "Change",
+        "content": "Several API dependencies that aren't required by Managed Airflow (Gen 3) are\nnow phased out and must be enabled separately if you want to create\nManaged Airflow (Gen 2) environments in a new project. This change was\n[announced previously](https://docs.cloud.google.com/composer/docs/release-notes#June_16_2025).\n\nThe following API dependencies were phased out:\n\n* artifactregistry.googleapis.com\n* cloudbuild.googleapis.com\n* container.googleapis.com\n* pubsub.googleapis.com\n\nThe following API dependencies aren't phased out yet and are scheduled to be\ndetached from the Cloud Composer API in the future:\n\n* sqladmin.googleapis.com\n\nExisting Managed Airflow (Gen 3) and Managed Airflow (Gen 2) environments in\nprojects where the Cloud Composer API is already enabled aren't impacted.\n\nYou can do the following:\n\n* If your project has only Managed Airflow (Gen 3) environments, then you can\n  manually disable the listed APIs that were phased out.\n* If your project has Managed Airflow (Gen 2) environments, then we recommend\n  to keep these APIs enabled because disabling them might lead to environment's malfunction.\n* If you want to create Managed Airflow (Gen 2) environments in a new project,\n  you can enable the listed APIs manually or using a Google Cloud CLI\n  command. For more information, see\n  [Enable Managed Airflow (Gen 2) dependencies](https://docs.cloud.google.com/composer/docs/composer-2/enable-composer-service#enable-gen-2-dependencies).\n* If you use automation scripts to provision Managed Airflow (Gen 2)\n  environments, then make sure that the listed APIs are enabled in addition\n  to the Cloud Composer API.",
+        "summary": {
+          "title": "API dependencies updated for Managed Airflow",
+          "summary": "Several API dependencies are no longer automatically enabled for new Managed Airflow (Gen 2) environments. Existing environments are unaffected, but you may need to manually enable specific APIs for new Gen 2 deployments or if you are using automation scripts."
+        }
+      }
+    ],
     "2026-06-02": [
       {
         "kind": "Feature",

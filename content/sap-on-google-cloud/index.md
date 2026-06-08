@@ -1,5 +1,20 @@
 # SAP on Google Cloud
 
+## 2026-06-04
+
+### Announcement
+
+**Google Cloud's Agent for SAP version 3.15**
+
+Version 3.15 of Google Cloud's Agent for SAP is generally available (GA). This
+version updates the libraries in the agent's
+[GitHub repository](https://github.com/GoogleCloudPlatform/sapagent) to address
+vulnerabilities when you're building the agent from its GitHub source.
+
+For more information, see
+[What's new with Google Cloud's Agent for SAP](https://docs.cloud.google.com/sap/docs/agent-for-sap/whats-new).
+
+---
 ## 2026-06-01
 
 ### Announcement

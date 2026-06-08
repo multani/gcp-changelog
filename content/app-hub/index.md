@@ -1,5 +1,12 @@
 # App Hub
 
+## 2026-06-08
+
+### Feature
+
+App Hub support for resources from [Memorystore](https://docs.cloud.google.com/app-hub/docs/supported-resources) is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2025-12-22
 
 ### Feature

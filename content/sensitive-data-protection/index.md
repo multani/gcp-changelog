@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2026-06-08
+
+### Feature
+
+The `OBJECT_TYPE/PERSON/SIGNATURE` infoType detector is available in `global` and the `asia`, `europe`, and `us` multi-regions. For more information about all infoTypes, see [InfoType detector reference](https://cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2026-06-03
 
 ### Feature

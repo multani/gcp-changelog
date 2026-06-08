@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-06-05T00:00:00+00:00</updated>
+  <updated>2026-06-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-08:fixed:0</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue with Salesforce where cases weren't created when a virtual
+  agent connected to a call.</li>
+<li>Fixed an issue where agents on teams with transfer restrictions couldn't
+  transfer chats to agents not assigned to a team.</li>
+<li>Fixed an issue where agents who weren't available for chat transfers still
+  appeared in the transfer list, causing transfer attempts to fail.</li>
+<li>Fixed an issue where the <strong>Submit</strong> wrap-up button didn't appear in the
+  call adapter after agents completed outbound calls.</li>
+<li>Fixed an issue where an agent and caller could still hear each other after
+  the agent placed the caller on hold.</li>
+<li>Fixed an issue in the agent desktop that occurred after an agent transferred
+  a call to a different queue. The agent desktop layout of the source queue
+  displayed to the receiving agent instead of the layout of the destination
+  queue.</li>
+<li>Fixed an issue where the reporting for After Call Work (ACW) time was
+  artificially high for calls transferred to a third party.</li>
+<li>Fixed an issue where overcapacity deflection settings interfered with
+  after-hours deflections, causing calls to be incorrectly queued.</li>
+<li>Fixed an issue where the inactivity timeout didn't function as configured.</li>
+</ul>]]></content>
+    <summary>This release resolves several issues related to Salesforce case creation, chat transfers, agent availability, call handling, and reporting. It also addresses problems with overcapacity deflection and inactivity timeouts, ensuring a smoother agent experience.</summary>
+    <title>Fixed: Resolved issues in agent desktop and call handling</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -41,28 +73,9 @@ we release this version, we expect the new capabilities to be as shown here.</p>
 <li>Fixed an issue where a bulk user upload with blank phone number columns
   caused existing direct inbound phone numbers to become unassigned from agent
   profiles.</li>
-<li>Fixed an issue with Salesforce where cases weren't created when a virtual
-  agent connected to a call.</li>
-<li>Fixed an issue where agents on teams with transfer restrictions couldn't
-  transfer chats to agents not assigned to a team.</li>
-<li>Fixed an issue where agents who weren't available for chat transfers still
-  appeared in the transfer list, causing transfer attempts to fail.</li>
-<li>Fixed an issue where the <strong>Submit</strong> wrap-up button didn't appear in the
-  call adapter after agents completed outbound calls.</li>
-<li>Fixed an issue where an agent and caller could still hear each other after
-  the agent placed the caller on hold.</li>
-<li>Fixed an issue in the agent desktop that occurred after an agent transferred
-  a call to a different queue. The agent desktop layout of the source queue
-  displayed to the receiving agent instead of the layout of the destination
-  queue.</li>
-<li>Fixed an issue where the reporting for After Call Work (ACW) time was
-  artificially high for calls transferred to a third party.</li>
-<li>Fixed an issue where overcapacity deflection settings interfered with
-  after-hours deflections, causing calls to be incorrectly queued.</li>
-<li>Fixed an issue where the inactivity timeout didn't function as configured.</li>
 </ul>]]></content>
-    <summary>Several issues have been resolved, including problems with Salesforce integrations, reporting dashboards, attachment visibility, call transfers, audio uploads, agent logouts, user uploads, and the agent desktop layout. These fixes ensure a more stable and reliable user experience.</summary>
-    <title>Fixed: Resolved Issues in Recent Update</title>
+    <summary>This release resolves several issues, including problems with Salesforce integrations, reporting dashboards, attachment visibility, call transfers, audio file uploads, agent session timeouts, and user data management. These fixes ensure a more stable and reliable user experience.</summary>
+    <title>Fixed: Resolved issues in recent release</title>
   </entry>
   <entry>
     <author>

@@ -2,9 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Composer</title>
   <subtitle>Changelog for Google Cloud product: Cloud Composer</subtitle>
-  <updated>2026-06-02T00:00:00+00:00</updated>
+  <updated>2026-06-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-composer</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-composer/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-composer:2026-06-08:change:0</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Several API dependencies that aren't required by Managed Airflow (Gen 3) are
+now phased out and must be enabled separately if you want to create
+Managed Airflow (Gen 2) environments in a new project. This change was
+<a href="https://docs.cloud.google.com/composer/docs/release-notes#June_16_2025">announced previously</a>.</p>
+<p>The following API dependencies were phased out:</p>
+<ul>
+<li>artifactregistry.googleapis.com</li>
+<li>cloudbuild.googleapis.com</li>
+<li>container.googleapis.com</li>
+<li>pubsub.googleapis.com</li>
+</ul>
+<p>The following API dependencies aren't phased out yet and are scheduled to be
+detached from the Cloud Composer API in the future:</p>
+<ul>
+<li>sqladmin.googleapis.com</li>
+</ul>
+<p>Existing Managed Airflow (Gen 3) and Managed Airflow (Gen 2) environments in
+projects where the Cloud Composer API is already enabled aren't impacted.</p>
+<p>You can do the following:</p>
+<ul>
+<li>If your project has only Managed Airflow (Gen 3) environments, then you can
+  manually disable the listed APIs that were phased out.</li>
+<li>If your project has Managed Airflow (Gen 2) environments, then we recommend
+  to keep these APIs enabled because disabling them might lead to environment's malfunction.</li>
+<li>If you want to create Managed Airflow (Gen 2) environments in a new project,
+  you can enable the listed APIs manually or using a Google Cloud CLI
+  command. For more information, see
+  <a href="https://docs.cloud.google.com/composer/docs/composer-2/enable-composer-service#enable-gen-2-dependencies">Enable Managed Airflow (Gen 2) dependencies</a>.</li>
+<li>If you use automation scripts to provision Managed Airflow (Gen 2)
+  environments, then make sure that the listed APIs are enabled in addition
+  to the Cloud Composer API.</li>
+</ul>]]></content>
+    <summary>Several API dependencies are no longer automatically enabled for new Managed Airflow (Gen 2) environments. Existing environments are unaffected, but you may need to manually enable specific APIs for new Gen 2 deployments or if you are using automation scripts.</summary>
+    <title>Change: API dependencies updated for Managed Airflow</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

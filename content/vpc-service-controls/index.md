@@ -1,5 +1,15 @@
 # VPC Service Controls
 
+## 2026-06-06
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages)
+support for the following integration:
+
+* [Firebase Phone Number Verification](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_firebase_phone_number_verification)
+
+---
 ## 2026-06-03
 
 ### Feature

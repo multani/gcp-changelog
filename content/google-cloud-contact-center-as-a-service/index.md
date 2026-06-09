@@ -2,6 +2,16 @@
 
 ## 2026-06-08
 
+### Announcement
+
+**Google Cloud CCaaS 4.39**
+
+We've released version 4.39 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
 ### Fixed
 
 This release addresses the following issues:

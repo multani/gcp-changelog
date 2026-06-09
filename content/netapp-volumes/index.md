@@ -1,5 +1,13 @@
 # NetApp Volumes
 
+## 2026-06-09
+
+### Feature
+
+The backup capabilities for [ONTAP-mode](https://docs.cloud.google.com/netapp/volumes/docs/ontap/overview#about_ontap-mode)
+are generally available (GA). For more information, see [About backups](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-backups).
+
+---
 ## 2026-06-02
 
 ### Announcement

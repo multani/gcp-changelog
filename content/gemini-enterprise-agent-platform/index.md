@@ -1,5 +1,15 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-09
+
+### Feature
+
+**Anthropic's Claude Fable 5**
+
+[Claude Fable 5](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/fable-5)
+is available in Model Garden.
+
+---
 ## 2026-06-02
 
 ### Announcement

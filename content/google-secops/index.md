@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-06-09
+
+### Feature
+
+**UDM fields now show whether data is enriched or not**
+
+The new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain values that Google SecOps generates to provide additional context about artifacts in your environment.
+
+For more information, see: [Viewing events](https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events).
+
+---
 ## 2026-06-01
 
 ### Announcement

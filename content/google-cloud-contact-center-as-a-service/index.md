@@ -1,5 +1,21 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-09
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where `UjetWebFormCallback` in the Android SDK lacked the
+  necessary methods to pass form data.
+* Fixed an issue where chat messages and content cards in the Mobile SDK
+  displayed out of order.
+* Fixed an issue where the Android SDK didn't start a new chat session after
+  the previous session ended.
+* Fixed an issue where customers couldn't customize the Android SDK to
+  display the timeout message to end-users.
+
+---
 ## 2026-06-08
 
 ### Announcement

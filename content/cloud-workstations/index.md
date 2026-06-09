@@ -1,5 +1,12 @@
 # Cloud Workstations
 
+## 2026-06-08
+
+### Feature
+
+The workstation configuration creation page in the Google Cloud console has been optimized to make configuration creation faster and easier. Common machine settings are grouped into selectable machine presets, frequently used settings are consolidated on the **Configuration essentials** landing page, and a pending cluster with default settings is automatically provisioned when no cluster exists in your selected region.
+
+---
 ## 2026-05-29
 
 ### Announcement

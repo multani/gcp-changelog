@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2026-06-08
+
+### Feature
+
+**Generally available**:
+The [C4D](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_c4d)
+machine series supports Hyperdisk Balanced High Availability disks.
+
+For more information, see
+[About Hyperdisk Balanced High Availability](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha)
+and [Performance limits for machine series](https://docs.cloud.google.com/compute/docs/disks/hyperdisk-perf-limits#hdbha-perf).
+
+---
 ## 2026-06-03
 
 ### Feature

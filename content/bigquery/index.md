@@ -9,6 +9,13 @@ BigQuery](https://docs.cloud.google.com/bigquery/docs/use-cloud-assist#analyze-l
 
 ### Feature
 
+You can now use Gemini Cloud Assist to
+[schedule queries](https://docs.cloud.google.com/bigquery/docs/use-cloud-assist#schedule_a_query). This
+feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
 You can use the Google-developed, open source
 [Java Database Connectivity (JDBC) driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery)
 to connect your Java applications to BigQuery. This feature is

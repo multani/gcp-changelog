@@ -1,5 +1,48 @@
 # Cloud Service Mesh
 
+## 2026-06-08
+
+### Security
+
+**1.28.7-asm.4 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains the fix for the security vulnerability listed in
+[GCP-2026-035](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035).
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.28.7-asm.4 uses Envoy v1.36.8-dev.
+
+### Security
+
+**1.27.9-asm.5 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains the fix for the security vulnerability listed in
+[GCP-2026-035](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035).
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade). Cloud Service
+Mesh 1.27.9-asm.5 uses Envoy v1.35.12-dev.
+
+### Security
+
+**1.26.8-asm.11 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains the fix for the security vulnerability listed in
+[GCP-2026-035](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035).
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade). Cloud Service
+Mesh 1.26.8-asm.11 uses Envoy v1.34.14.
+
+### Announcement
+
+The rollouts [previously announced on June 3, 2026](#June_03_2026) have been
+stopped. The following release will supersede them and include those patches
+and the fix for the vulnerability listed in
+[GCP-2026-035](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035).
+
+---
 ## 2026-06-03
 
 ### Announcement

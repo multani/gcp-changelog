@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Vertex AI Search</title>
   <subtitle>Changelog for Google Cloud product: Vertex AI Search</subtitle>
-  <updated>2026-05-27T00:00:00+00:00</updated>
+  <updated>2026-06-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:vertex-ai-search</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/vertex-ai-search/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2026-06-08:feature:0</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Search: Prefix and partial matching for filtering search queries (Preview)</strong></p>
+<p>You can configure schema fields to support prefix matching and partial matching
+in filter expressions:</p>
+<ul>
+<li>Prefix matching lets you filter search results based on whether a field value
+  starts with a specific string.</li>
+<li>Partial matching lets you filter results based on whether the query contains
+  some of the words in the field value. Partial matching doesn't require a
+  perfect match like the <code>ANY</code> operator does.</li>
+</ul>
+<p>This feature is in Public Preview. For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/configure-field-settings">Configure field
+settings</a>.</p>]]></content>
+    <summary>Agent Search now supports prefix and partial matching for filtering search queries. This allows for more flexible and intuitive search result refinement, enabling users to find information even with incomplete or varied query terms. This feature is currently in Public Preview.</summary>
+    <title>Feature: Agent Search: Enhanced Filtering Options</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vertex-ai-search:2026-06-08:feature:1</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Search: <code>EXISTS</code> filter for filtering search queries (Preview)</strong></p>
+<p>You can use the <code>EXISTS</code> filter to filter search results for documents.
+Specifying <code>EXISTS</code> for a field means that a document can only be returned in a
+search request if the field has a value and that value is not the default.
+This
+filter is available for custom search and for media search. Use <code>EXISTS</code> with
+other filters such as <code>ANY</code> and <code>IN</code> to create expressions to scope the
+documents that can be returned in a search query.</p>
+<p>This feature is in Public Preview. For more information, see <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata">Filter custom
+search for structured or unstructured
+data</a>, <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-website-search">Filter website
+search</a>, and <a href="https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-media-search">Filter
+media search</a>.</p>]]></content>
+    <summary>A new `EXISTS` filter is now available for agent search, allowing you to refine search results by checking for the presence of values in specific fields. This feature enhances both custom and media search capabilities by enabling more precise scoping of documents.</summary>
+    <title>Feature: New filter for agent search</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

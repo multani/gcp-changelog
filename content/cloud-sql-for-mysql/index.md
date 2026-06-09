@@ -1,5 +1,15 @@
 # Cloud SQL for MySQL
 
+## 2026-06-08
+
+### Feature
+
+Cloud SQL for MySQL [managed buffer pool](https://docs.cloud.google.com/sql/docs/mysql/optimize-high-memory-usage#enable-managed-buffer-pool)
+is now generally available ([GA](https://cloud.google.com/products/#product-launch-stages)).
+Managed buffer pool helps you avoid out-of-memory events (OOMs) on your
+Cloud SQL instance by reducing `innodb_buffer_pool_size` when memory usage is high.
+
+---
 ## 2026-05-12
 
 ### Change

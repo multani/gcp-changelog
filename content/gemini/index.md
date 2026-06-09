@@ -2,10 +2,6 @@
 
 ## 2026-06-08
 
-### Announcement
-
-
-
 ### Gemini 3.5 Flash is generally available
 
 [Gemini 3.5 Flash](https://docs.cloud.google.com/gemini/docs/codeassist/gemini-3)
@@ -13,10 +9,6 @@ is now generally available to Gemini Code Assist users in VS Code and IntelliJ.
 You can use this model for [agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode),
 [chat](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini), and
 [code generation](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts).
-
-### Announcement
-
-
 
 ### Gemini 3.5 Flash is generally available
 

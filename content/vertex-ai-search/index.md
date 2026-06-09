@@ -1,5 +1,42 @@
 # Vertex AI Search
 
+## 2026-06-08
+
+### Feature
+
+**Agent Search: Prefix and partial matching for filtering search queries (Preview)**
+
+You can configure schema fields to support prefix matching and partial matching
+in filter expressions:
+
+* Prefix matching lets you filter search results based on whether a field value
+  starts with a specific string.
+* Partial matching lets you filter results based on whether the query contains
+  some of the words in the field value. Partial matching doesn't require a
+  perfect match like the `ANY` operator does.
+
+This feature is in Public Preview. For more information, see [Configure field
+settings](https://docs.cloud.google.com/generative-ai-app-builder/docs/configure-field-settings).
+
+### Feature
+
+**Agent Search: `EXISTS` filter for filtering search queries (Preview)**
+
+You can use the `EXISTS` filter to filter search results for documents.
+Specifying `EXISTS` for a field means that a document can only be returned in a
+search request if the field has a value and that value is not the default.
+This
+filter is available for custom search and for media search. Use `EXISTS` with
+other filters such as `ANY` and `IN` to create expressions to scope the
+documents that can be returned in a search query.
+
+This feature is in Public Preview. For more information, see [Filter custom
+search for structured or unstructured
+data](https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata), [Filter website
+search](https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-website-search), and [Filter
+media search](https://docs.cloud.google.com/generative-ai-app-builder/docs/filter-media-search).
+
+---
 ## 2026-05-27
 
 ### Feature

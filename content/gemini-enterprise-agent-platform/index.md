@@ -101,6 +101,18 @@ For details on configuration, see
 
 ### Feature
 
+**The Gemini Deep Research Agent released in Preview**
+
+The Gemini Deep Research Agent has been released in Preview. The Gemini Deep
+Research Agent is a managed AI agent that plans, executes, and synthesizes
+complex, multi-step research workflows across the public web and private
+enterprise data to generate comprehensive, cited reports.
+
+For more information, see [Use the Gemini Deep Research
+Agent](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research).
+
+### Feature
+
 **Agent Platform Sandboxes**
 
 Additional Agent Platform [sandbox](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox)
@@ -122,15 +134,13 @@ features are now available:
 
 ### Feature
 
-**The Gemini Deep Research Agent releaased in Preview**
+**Identify the agents with the most content security violations**
 
-The Gemini Deep Research Agent has been released in Preview. The Gemini Deep
-Research Agent is a managed AI agent that plans, executes, and synthesizes
-complex, multi-step research workflows across the public web and private
-enterprise data to generate comprehensive, cited reports.
-
-For more information, see [Use the Gemini Deep Research
-Agent](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research).
+The **Security** dashboard displays the top 10 agents with the most content
+violations detected by Model Armor. The list shows the agent ID of each
+agent and the number of violations detected for that agent. For more
+information, see [Monitor content
+security](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/monitor-content-security).
 
 ---
 ## 2026-05-20

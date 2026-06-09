@@ -1,0 +1,143 @@
+{
+  "name": "Managed Service for Apache Airflow",
+  "entries": {
+    "2026-06-08": [
+      {
+        "kind": "Change",
+        "content": "Several API dependencies that aren't required by Managed Airflow (Gen 3) are\nnow phased out and must be enabled separately if you want to create\nManaged Airflow (Gen 2) environments in a new project. This change was\n[announced previously](https://docs.cloud.google.com/composer/docs/release-notes#June_16_2025).\n\nThe following API dependencies were phased out:\n\n* artifactregistry.googleapis.com\n* cloudbuild.googleapis.com\n* container.googleapis.com\n* pubsub.googleapis.com\n\nThe following API dependencies aren't phased out yet and are scheduled to be\ndetached from the Cloud Composer API in the future:\n\n* sqladmin.googleapis.com\n\nExisting Managed Airflow (Gen 3) and Managed Airflow (Gen 2) environments in\nprojects where the Cloud Composer API is already enabled aren't impacted.\n\nYou can do the following:\n\n* If your project has only Managed Airflow (Gen 3) environments, then you can\n  manually disable the listed APIs that were phased out.\n* If your project has Managed Airflow (Gen 2) environments, then we recommend\n  to keep these APIs enabled because disabling them might lead to environment's malfunction.\n* If you want to create Managed Airflow (Gen 2) environments in a new project,\n  you can enable the listed APIs manually or using a Google Cloud CLI\n  command. For more information, see\n  [Enable Managed Airflow (Gen 2) dependencies](https://docs.cloud.google.com/composer/docs/composer-2/enable-composer-service#enable-gen-2-dependencies).\n* If you use automation scripts to provision Managed Airflow (Gen 2)\n  environments, then make sure that the listed APIs are enabled in addition\n  to the Cloud Composer API.",
+        "summary": {
+          "title": "API dependencies for Managed Airflow updated",
+          "summary": "Several API dependencies are no longer required for Managed Airflow (Gen 3) and have been phased out. If you create new Managed Airflow (Gen 2) environments, you may need to enable these APIs separately. Existing environments are not affected by this change."
+        }
+      }
+    ],
+    "2026-06-02": [
+      {
+        "kind": "Feature",
+        "content": "*(Managed Airflow Gen 3)* You can now\n[access Cloud Run endpoints restricted to internal ingress traffic](https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network#cloud-run-traffic)\nthrough your environment's network attachment. This feature is available\nthrough gcloud CLI beta commands and beta Cloud Composer API in all Managed\nAirflow (Gen 3) versions.",
+        "summary": {
+          "title": "Internal Cloud Run Access for Managed Airflow",
+          "summary": "Managed Airflow (Gen 3) now supports accessing internal-only Cloud Run endpoints via your environment's network attachment. This new capability is available through gcloud CLI beta commands and the beta Cloud Composer API across all Gen 3 versions."
+        }
+      }
+    ],
+    "2026-05-27": [
+      {
+        "kind": "Feature",
+        "content": "Managed Service for Apache Airflow now\n[supports Google Cloud tags](https://docs.cloud.google.com/composer/docs/composer-3/create-and-manage-tags)\nfor environments.\n\n[Tags](https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview)\nprovide a way to create annotations for resources, and conditionally allow or\ndeny policies based on whether a resource has a specific tag.",
+        "summary": {
+          "title": "Airflow environments now support tags",
+          "summary": "Managed Service for Apache Airflow environments now support Google Cloud tags. Tags allow you to create annotations for resources and conditionally allow or deny policies based on tag presence."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In Managed Airflow (Gen 3), it is now possible to\ncreate Kubernetes Secrets with the `kubernetes.io/dockerconfigjson`\n[secret type](https://kubernetes.io/docs/concepts/configuration/secret/#secret-types)\nthrough the beta Cloud Composer API, in addition to the default\n`Opaque` secret type. For more information, see [Manage Kubernetes Secrets](https://docs.cloud.google.com/composer/docs/composer-3/use-kubernetes-pod-operator#api).",
+        "summary": {
+          "title": "Kubernetes secrets support in Composer",
+          "summary": "Cloud Composer now supports creating Kubernetes Secrets of type `kubernetes.io/dockerconfigjson` via the Cloud Composer API. This new feature expands the types of secrets you can manage for your Airflow environments."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "(Airflow 3) The INFO log level filter in Airflow UI now correctly displays log\nmessages with this logging level.",
+        "summary": {
+          "title": "Airflow UI log filter fixed",
+          "summary": "The INFO log level filter in the Airflow UI has been fixed and now correctly displays log messages at this level. This resolves a previous issue where messages were not appearing as expected."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.1.7-build.10](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-10)\n* [composer-3-airflow-2.11.1-build.6](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-6) (default)\n* [composer-3-airflow-2.10.5-build.39](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-39)",
+        "summary": {
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are now available for Managed Airflow (Gen 3). These updates include support for Airflow versions 3.1.7, 2.11.1 (default), and 2.10.5. You can find more details and specific build links in the documentation."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.3-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-11-1) (default)\n* [composer-2.17.3-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-10-5)",
+        "summary": {
+          "title": "Managed Airflow image update",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including composer-2.17.3-airflow-2.11.1 as the default. These updates bring the latest Airflow versions to your managed environments."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.24, composer-2.13.2-airflow-2.9.3,\ncomposer-2.13.2-airflow-2.10.5.",
+        "summary": {
+          "title": "Managed Airflow versions deprecated",
+          "summary": "Several Managed Airflow versions are no longer supported. Please upgrade to a supported version to ensure continued service."
+        }
+      }
+    ],
+    "2026-05-14": [
+      {
+        "kind": "Change",
+        "content": "The `[scheduler]print_stats_interval` Airflow configuration option can now be\noverridden in environments with Airflow 2.10.5 and later. This option\npreviously was blocked.",
+        "summary": {
+          "title": "Airflow scheduler stats override enabled",
+          "summary": "The `[scheduler]print_stats_interval` Airflow configuration option can now be overridden in environments with Airflow 2.10.5 and later. This option was previously blocked, but is now available for customization."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.1.7-build.9](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-9)\n* [composer-3-airflow-2.11.1-build.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-5) (default)\n* [composer-3-airflow-2.10.5-build.38](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-38)",
+        "summary": {
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are now available for Managed Airflow (Gen 3). These updates include newer versions of Airflow, offering potential performance and security improvements. The default build now uses Airflow 2.11.1."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.2-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-2-airflow-2-11-1) (default)\n* [composer-2.17.2-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-2-airflow-2-10-5)",
+        "summary": {
+          "title": "New Managed Airflow Images Available",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including the latest versions of composer and airflow. These updates bring improved features and stability to your Airflow environments."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.23, composer-3-airflow-2.10.5-build.3, and composer-2.13.1-airflow-\\*.",
+        "summary": {
+          "title": "Managed Airflow Versions Reaching End of Support",
+          "summary": "Several Managed Airflow versions and builds are nearing their end of support. This includes specific composer-3 and composer-2 builds. Please refer to the versioning overview for details on deprecation and support timelines."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "The `google-api-core` preinstalled package versions from 2.28.0 to 2.30.2 might\ncause degraded environment performance, which can result in longer times to\nexecute a task and longer times to move a task from the queued to the executing\nstate.\n\nAffected Managed Airflow (Gen 3) builds:\n\n* composer-3-airflow-3.1.7-build.0 to composer-3-airflow-3.1.7-build.5\n* composer-3-airflow-3.1.0-build.5 to composer-3-airflow-3.1.0-build.10\n* composer-3-airflow-2.11.1-build.0\n* composer-3-airflow-2.10.5-build.22 to composer-3-airflow-2.10.5-build.33\n* composer-3-airflow-2.9.3-build.42 to composer-3-airflow-2.9.3-build.53\n\nAffected Managed Airflow (Gen 2) builds:\n\n* composer-2.16.10-airflow-2.11.1\n* composer-2.16.0-airflow-2.10.5 to composer-2.16.10-airflow-2.10.5\n* composer-2.16.0-airflow-2.9.3 to composer-2.16.10-airflow-2.9.3\n\nWe recommend to upgrade your environment to the following versions, which\ncontain a version of the package where the problem is fixed or isn't present:\n\n* composer-3-airflow-3.1.7-build.7 and later\n* composer-3-airflow-2.11.1-build.3 and later\n* composer-3-airflow-2.10.5-build.36 and later\n* composer-3-airflow-2.9.3-build.54 (contains 2.27.0)\n* composer-2.17.0-airflow-2.11.1 and later\n* composer-2.17.0-airflow-2.10.5 and later\n* composer-2.16.11-airflow-2.11.1 (contains 2.27.0)\n* composer-2.16.11-airflow-2.10.5 (contains 2.27.0)\n* composer-2.16.11-airflow-2.9.3 (contains 2.27.0)\n\nAs a workaround, you can manually install a later version of the\n`google-api-core` package to an affected environment by specifying `>=2.30.3`\nas the required version.",
+        "summary": {
+          "title": "Environment Performance Degradation",
+          "summary": "Certain versions of the google-api-core package may cause degraded environment performance, leading to longer task execution and queuing times. We recommend upgrading to recommended versions or applying a workaround by manually installing a later version of the package."
+        }
+      }
+    ],
+    "2026-05-11": [
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.1.7-build.8](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-8)\n* [composer-3-airflow-2.11.1-build.4](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-4) (default)\n* [composer-3-airflow-2.10.5-build.37](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-37)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "New builds for Airflow 3.1.7, 2.11.1, and 2.10.5 are now available in Managed Airflow (Gen 3). The default build has been updated to Airflow 2.11.1."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.1-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-1-airflow-2-11-1) (default)\n* [composer-2.17.1-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-1-airflow-2-10-5)",
+        "summary": {
+          "title": "New Managed Airflow Images Available",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including composer-2.17.1-airflow-2.11.1 as the default. These updates provide the latest versions for your Airflow environments."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-\\*.",
+        "summary": {
+          "title": "Managed Airflow versions reaching end of support",
+          "summary": "Certain versions of Managed Airflow, including composer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-*, are nearing their end of support. Users are advised to review the versioning overview for details on deprecation and support timelines."
+        }
+      }
+    ]
+  }
+}

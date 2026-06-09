@@ -1,5 +1,16 @@
 # Cloud Trace
 
+## 2026-06-08
+
+### Feature
+
+The Trace API supports regional endpoints. For a list of supported endpoints,
+see the REST API reference pages:
+
+* [v1 REST reference](https://docs.cloud.google.com/trace/docs/reference/v1/rest?rep_location=global)
+* [v2 REST reference](https://docs.cloud.google.com/trace/docs/reference/v2/rest?rep_location=global)
+
+---
 ## 2026-06-05
 
 ### Feature

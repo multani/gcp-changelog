@@ -4,11 +4,30 @@
 
 ### Feature
 
+You can [analyze data lineage with Gemini Cloud Assist in
+BigQuery](https://docs.cloud.google.com/bigquery/docs/use-cloud-assist#analyze-lineage). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can use the Google-developed, open source
+[Java Database Connectivity (JDBC) driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery)
+to connect your Java applications to BigQuery. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
 You can use custom constraints with Organization Policy to provide more
 granular control over specific fields for some BigQuery sharing
 resources. For more information, see
 [Manage Sharing data exchanges and listings using custom constraints](https://docs.cloud.google.com/bigquery/docs/analytics-hub-custom-constraints).
 This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+[IAM deny policies](https://docs.cloud.google.com/bigquery/docs/control-access-to-resources-iam#deny_access_to_a_resource)
+for BigQuery are now [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
 ### Feature

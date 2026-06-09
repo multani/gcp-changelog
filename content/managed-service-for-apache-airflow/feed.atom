@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: Managed Service for Apache Airflow</title>
+  <subtitle>Changelog for Google Cloud product: Managed Service for Apache Airflow</subtitle>
+  <updated>2026-06-08T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-airflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-06-08:change:0</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Several API dependencies that aren't required by Managed Airflow (Gen 3) are
+now phased out and must be enabled separately if you want to create
+Managed Airflow (Gen 2) environments in a new project. This change was
+<a href="https://docs.cloud.google.com/composer/docs/release-notes#June_16_2025">announced previously</a>.</p>
+<p>The following API dependencies were phased out:</p>
+<ul>
+<li>artifactregistry.googleapis.com</li>
+<li>cloudbuild.googleapis.com</li>
+<li>container.googleapis.com</li>
+<li>pubsub.googleapis.com</li>
+</ul>
+<p>The following API dependencies aren't phased out yet and are scheduled to be
+detached from the Cloud Composer API in the future:</p>
+<ul>
+<li>sqladmin.googleapis.com</li>
+</ul>
+<p>Existing Managed Airflow (Gen 3) and Managed Airflow (Gen 2) environments in
+projects where the Cloud Composer API is already enabled aren't impacted.</p>
+<p>You can do the following:</p>
+<ul>
+<li>If your project has only Managed Airflow (Gen 3) environments, then you can
+  manually disable the listed APIs that were phased out.</li>
+<li>If your project has Managed Airflow (Gen 2) environments, then we recommend
+  to keep these APIs enabled because disabling them might lead to environment's malfunction.</li>
+<li>If you want to create Managed Airflow (Gen 2) environments in a new project,
+  you can enable the listed APIs manually or using a Google Cloud CLI
+  command. For more information, see
+  <a href="https://docs.cloud.google.com/composer/docs/composer-2/enable-composer-service#enable-gen-2-dependencies">Enable Managed Airflow (Gen 2) dependencies</a>.</li>
+<li>If you use automation scripts to provision Managed Airflow (Gen 2)
+  environments, then make sure that the listed APIs are enabled in addition
+  to the Cloud Composer API.</li>
+</ul>]]></content>
+    <summary>Several API dependencies are no longer required for Managed Airflow (Gen 3) and have been phased out. If you create new Managed Airflow (Gen 2) environments, you may need to enable these APIs separately. Existing environments are not affected by this change.</summary>
+    <title>Change: API dependencies for Managed Airflow updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-06-02:feature:0</id>
+    <published>2026-06-02T00:00:00+00:00</published>
+    <updated>2026-06-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Managed Airflow Gen 3)</em> You can now
+<a href="https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network#cloud-run-traffic">access Cloud Run endpoints restricted to internal ingress traffic</a>
+through your environment's network attachment. This feature is available
+through gcloud CLI beta commands and beta Cloud Composer API in all Managed
+Airflow (Gen 3) versions.</p>]]></content>
+    <summary>Managed Airflow (Gen 3) now supports accessing internal-only Cloud Run endpoints via your environment's network attachment. This new capability is available through gcloud CLI beta commands and the beta Cloud Composer API across all Gen 3 versions.</summary>
+    <title>Feature: Internal Cloud Run Access for Managed Airflow</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-27:feature:0</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Managed Service for Apache Airflow now
+<a href="https://docs.cloud.google.com/composer/docs/composer-3/create-and-manage-tags">supports Google Cloud tags</a>
+for environments.</p>
+<p><a href="https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview">Tags</a>
+provide a way to create annotations for resources, and conditionally allow or
+deny policies based on whether a resource has a specific tag.</p>]]></content>
+    <summary>Managed Service for Apache Airflow environments now support Google Cloud tags. Tags allow you to create annotations for resources and conditionally allow or deny policies based on tag presence.</summary>
+    <title>Feature: Airflow environments now support tags</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-27:feature:1</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In Managed Airflow (Gen 3), it is now possible to
+create Kubernetes Secrets with the <code>kubernetes.io/dockerconfigjson</code>
+<a href="https://kubernetes.io/docs/concepts/configuration/secret/#secret-types">secret type</a>
+through the beta Cloud Composer API, in addition to the default
+<code>Opaque</code> secret type. For more information, see <a href="https://docs.cloud.google.com/composer/docs/composer-3/use-kubernetes-pod-operator#api">Manage Kubernetes Secrets</a>.</p>]]></content>
+    <summary>Cloud Composer now supports creating Kubernetes Secrets of type `kubernetes.io/dockerconfigjson` via the Cloud Composer API. This new feature expands the types of secrets you can manage for your Airflow environments.</summary>
+    <title>Feature: Kubernetes secrets support in Composer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-27:fixed:2</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>(Airflow 3) The INFO log level filter in Airflow UI now correctly displays log
+messages with this logging level.</p>]]></content>
+    <summary>The INFO log level filter in the Airflow UI has been fixed and now correctly displays log messages at this level. This resolves a previous issue where messages were not appearing as expected.</summary>
+    <title>Fixed: Airflow UI log filter fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-27:change:3</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-10">composer-3-airflow-3.1.7-build.10</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-6">composer-3-airflow-2.11.1-build.6</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-39">composer-3-airflow-2.10.5-build.39</a></li>
+</ul>]]></content>
+    <summary>New Airflow builds are now available for Managed Airflow (Gen 3). These updates include support for Airflow versions 3.1.7, 2.11.1 (default), and 2.10.5. You can find more details and specific build links in the documentation.</summary>
+    <title>Change: New Airflow builds available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-27:change:4</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-11-1">composer-2.17.3-airflow-2.11.1</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-3-airflow-2-10-5">composer-2.17.3-airflow-2.10.5</a></li>
+</ul>]]></content>
+    <summary>New images for Managed Airflow (Gen 2) are now available, including composer-2.17.3-airflow-2.11.1 as the default. These updates bring the latest Airflow versions to your managed environments.</summary>
+    <title>Change: Managed Airflow image update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-27:deprecated:5</id>
+    <published>2026-05-27T00:00:00+00:00</published>
+    <updated>2026-05-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Managed Airflow versions and builds have reached their
+<a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.24, composer-2.13.2-airflow-2.9.3,
+composer-2.13.2-airflow-2.10.5.</p>]]></content>
+    <summary>Several Managed Airflow versions are no longer supported. Please upgrade to a supported version to ensure continued service.</summary>
+    <title>Deprecated: Managed Airflow versions deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-14:change:0</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>[scheduler]print_stats_interval</code> Airflow configuration option can now be
+overridden in environments with Airflow 2.10.5 and later. This option
+previously was blocked.</p>]]></content>
+    <summary>The `[scheduler]print_stats_interval` Airflow configuration option can now be overridden in environments with Airflow 2.10.5 and later. This option was previously blocked, but is now available for customization.</summary>
+    <title>Change: Airflow scheduler stats override enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-14:change:1</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-9">composer-3-airflow-3.1.7-build.9</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-5">composer-3-airflow-2.11.1-build.5</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-38">composer-3-airflow-2.10.5-build.38</a></li>
+</ul>]]></content>
+    <summary>New Airflow builds are now available for Managed Airflow (Gen 3). These updates include newer versions of Airflow, offering potential performance and security improvements. The default build now uses Airflow 2.11.1.</summary>
+    <title>Change: New Airflow builds available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-14:change:2</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-2-airflow-2-11-1">composer-2.17.2-airflow-2.11.1</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-2-airflow-2-10-5">composer-2.17.2-airflow-2.10.5</a></li>
+</ul>]]></content>
+    <summary>New images for Managed Airflow (Gen 2) are now available, including the latest versions of composer and airflow. These updates bring improved features and stability to your Airflow environments.</summary>
+    <title>Change: New Managed Airflow Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-14:deprecated:3</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Managed Airflow versions and builds have reached their
+<a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.23, composer-3-airflow-2.10.5-build.3, and composer-2.13.1-airflow-*.</p>]]></content>
+    <summary>Several Managed Airflow versions and builds are nearing their end of support. This includes specific composer-3 and composer-2 builds. Please refer to the versioning overview for details on deprecation and support timelines.</summary>
+    <title>Deprecated: Managed Airflow Versions Reaching End of Support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-14:issue:4</id>
+    <published>2026-05-14T00:00:00+00:00</published>
+    <updated>2026-05-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <code>google-api-core</code> preinstalled package versions from 2.28.0 to 2.30.2 might
+cause degraded environment performance, which can result in longer times to
+execute a task and longer times to move a task from the queued to the executing
+state.</p>
+<p>Affected Managed Airflow (Gen 3) builds:</p>
+<ul>
+<li>composer-3-airflow-3.1.7-build.0 to composer-3-airflow-3.1.7-build.5</li>
+<li>composer-3-airflow-3.1.0-build.5 to composer-3-airflow-3.1.0-build.10</li>
+<li>composer-3-airflow-2.11.1-build.0</li>
+<li>composer-3-airflow-2.10.5-build.22 to composer-3-airflow-2.10.5-build.33</li>
+<li>composer-3-airflow-2.9.3-build.42 to composer-3-airflow-2.9.3-build.53</li>
+</ul>
+<p>Affected Managed Airflow (Gen 2) builds:</p>
+<ul>
+<li>composer-2.16.10-airflow-2.11.1</li>
+<li>composer-2.16.0-airflow-2.10.5 to composer-2.16.10-airflow-2.10.5</li>
+<li>composer-2.16.0-airflow-2.9.3 to composer-2.16.10-airflow-2.9.3</li>
+</ul>
+<p>We recommend to upgrade your environment to the following versions, which
+contain a version of the package where the problem is fixed or isn't present:</p>
+<ul>
+<li>composer-3-airflow-3.1.7-build.7 and later</li>
+<li>composer-3-airflow-2.11.1-build.3 and later</li>
+<li>composer-3-airflow-2.10.5-build.36 and later</li>
+<li>composer-3-airflow-2.9.3-build.54 (contains 2.27.0)</li>
+<li>composer-2.17.0-airflow-2.11.1 and later</li>
+<li>composer-2.17.0-airflow-2.10.5 and later</li>
+<li>composer-2.16.11-airflow-2.11.1 (contains 2.27.0)</li>
+<li>composer-2.16.11-airflow-2.10.5 (contains 2.27.0)</li>
+<li>composer-2.16.11-airflow-2.9.3 (contains 2.27.0)</li>
+</ul>
+<p>As a workaround, you can manually install a later version of the
+<code>google-api-core</code> package to an affected environment by specifying <code>&gt;=2.30.3</code>
+as the required version.</p>]]></content>
+    <summary>Certain versions of the google-api-core package may cause degraded environment performance, leading to longer task execution and queuing times. We recommend upgrading to recommended versions or applying a workaround by manually installing a later version of the package.</summary>
+    <title>Issue: Environment Performance Degradation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-11:change:0</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-8">composer-3-airflow-3.1.7-build.8</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-4">composer-3-airflow-2.11.1-build.4</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-37">composer-3-airflow-2.10.5-build.37</a></li>
+</ul>]]></content>
+    <summary>New builds for Airflow 3.1.7, 2.11.1, and 2.10.5 are now available in Managed Airflow (Gen 3). The default build has been updated to Airflow 2.11.1.</summary>
+    <title>Change: New Airflow Builds Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-11:change:1</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-1-airflow-2-11-1">composer-2.17.1-airflow-2.11.1</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-1-airflow-2-10-5">composer-2.17.1-airflow-2.10.5</a></li>
+</ul>]]></content>
+    <summary>New images for Managed Airflow (Gen 2) are now available, including composer-2.17.1-airflow-2.11.1 as the default. These updates provide the latest versions for your Airflow environments.</summary>
+    <title>Change: New Managed Airflow Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-05-11:deprecated:2</id>
+    <published>2026-05-11T00:00:00+00:00</published>
+    <updated>2026-05-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Managed Airflow versions and builds have reached their
+<a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-*.</p>]]></content>
+    <summary>Certain versions of Managed Airflow, including composer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-*, are nearing their end of support. Users are advised to review the versioning overview for details on deprecation and support timelines.</summary>
+    <title>Deprecated: Managed Airflow versions reaching end of support</title>
+  </entry>
+</feed>

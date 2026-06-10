@@ -2,9 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-06-02T00:00:00+00:00</updated>
+  <updated>2026-06-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-06-08:announcement:0</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On June 8th, 2026, we released an updated version of Apigee (1-17-0-apigee-9).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>An updated version of Apigee (1-17-0-apigee-9) has been released on June 8th, 2026. The rollout has begun and may take several business days to complete across all zones. Your instances will have the new features and fixes available once the rollout is finished.</summary>
+    <title>Announcement: Apigee Update Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-06-08:security:1</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>514384893</strong> | <strong>Security fix for Apigee.</strong> Hardened the Script policy to block server-side request forgery (SSRF) to link-local addresses. |
+| <strong>N/A</strong> | <strong>Security fix for Apigee infrastructure.</strong> |</p>]]></content>
+    <summary>Apigee has released a security update that hardens the Script policy to prevent server-side request forgery (SSRF) to link-local addresses. This update also includes a security fix for Apigee infrastructure.</summary>
+    <title>Security: Security Update for Apigee</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-06-08:fixed:2</id>
+    <published>2026-06-08T00:00:00+00:00</published>
+    <updated>2026-06-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>512850756</strong> | Added observability metrics for the OpenTelemetry trace export pipeline, reporting spans exported, export latency, batch size, and dropped spans. |
+| <strong>515039499</strong> | Fixed an issue where OpenTelemetry trace export over HTTP could fail to authenticate when sent through a forward proxy that requires basic authentication. |</p>]]></content>
+    <summary>Observability metrics for the OpenTelemetry trace export pipeline have been added, including spans exported, export latency, batch size, and dropped spans. Additionally, a fix addresses authentication failures when exporting traces over HTTP through a forward proxy requiring basic authentication.</summary>
+    <title>Fixed: OpenTelemetry Export Improvements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

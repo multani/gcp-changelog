@@ -1,5 +1,15 @@
 # Compute Engine
 
+## 2026-06-09
+
+### Security
+
+A vulnerability (CVE-2025-10263) about bypass of translation stages or GPT protections in some Arm core families
+was discovered and has been addressed.
+For more information, see the
+[GCP-2026-036 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-036).
+
+---
 ## 2026-06-08
 
 ### Feature

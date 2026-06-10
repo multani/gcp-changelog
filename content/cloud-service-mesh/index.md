@@ -1,5 +1,68 @@
 # Cloud Service Mesh
 
+## 2026-06-09
+
+### Announcement
+
+**1.29.4-asm.0 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.29.4-asm.0 for in-cluster Cloud Service Mesh. It includes
+the features of [Istio 1.29.4](https://istio.io/latest/news/releases/1.29.x/announcing-1.29/) subject to the list of
+[supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+The following environment variables, labels, and annotations are not supported:
+
+* `PILOT_IGNORE_RESOURCES` and `PILOT_INCLUDE_RESOURCES`
+* `RetryIgnorePreviousHosts`
+* `omit_empty_values`
+* `PILOT_SPAWN_UPSTREAM_SPAN_FOR_GATEWAY`
+* `MAX_CONNECTIONS_PER_SOCKET_EVENT_LOOP` with the value 1
+* `PILOT_DNS_JITTER_DURATION`
+* `PILOT_DNS_JITTER_DURATION`
+* `ENABLE_NATIVE_SIDECARS` with the value true
+* `PILOT_IP_AUTOALLOCATE_IPV4_PREFIX` and `PILOT_IP_AUTOALLOCATE_IPV6_PREFIX`
+* `PILOT_DNS_CARES_UDP_MAX_QUERIES`
+* `ENABLE_WILDCARD_HOST_SERVICE_ENTRIES_FOR_TLS`
+* 'BLOCKED\_CIDRS\_IN\_JWKS\_URIS`
+* `ENABLE_DEBUG_ENDPOINT_AUTH`
+* `DISABLE_TRACK_REMAINING_CB_METRICS`
+* `gateway.istio.io/tls-cipher-suites`
+* `fileFlushMinSizeKB` and `fileFlushInterval` settings in ProxyConfig
+* `topology.istio.io/locality`
+* `statsCompression` ProxyConfig option
+* `proxy.istio.io/config` annotation for metric compression overrides
+
+Istio's experimental feature to enable lazy subset creation of envoy statistics
+is not supported.
+
+The formatter option within the `spec.tracing[].customTags` field of the
+Telemetry custom resource (telemetry.istio.io) is unsupported.
+
+The `istiod_remote_cluster_sync_status` Prometheus gauge metric, exposed on the
+**Istiod control plane metrics endpoint** (port 15014 `/metrics`), is not
+supported.
+
+The following are unsupported for proxyless gRPC clients:
+
+* Configuring the `LEAST_REQUEST` load balancing policy within the
+  `spec.trafficPolicy.loadBalancer.simple` field of a **DestinationRule** custom
+  resource (`networking.istio.io`)
+* Configuring the `http2MaxRequests` circuit breaker within the
+  `spec.trafficPolicy.connectionPool.http.http2MaxRequests` field of a
+  **DestinationRule** custom resource (`networking.istio.io`)
+
+The `ENABLE_AUTO_SNI` flag is still supported to keep aligned with the legacy
+behavior.
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh version 1.29.4-asm.0 uses Envoy v1.37.4-dev.
+
+### Announcement
+
+In-cluster Cloud Service Mesh 1.26 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see [Supported versions](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions).
+
+---
 ## 2026-06-08
 
 ### Security

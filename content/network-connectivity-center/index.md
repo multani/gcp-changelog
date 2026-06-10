@@ -1,5 +1,23 @@
 # Network Connectivity Center
 
+## 2026-06-09
+
+### Feature
+
+[NCC Gateway](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/ncc-gateway-overview)
+is [generally available](https://cloud.google.com/products#product-launch-stages).
+
+NCC Gateway lets you enable security functions, such
+as third-party Security Service Edge (SSE), for cross-cloud network traffic.
+You can use [Secure Access Connect](https://docs.cloud.google.com/secure-access-connect/docs/overview) with
+NCC Gateway to securely connect remote workforces to private
+applications in Google Cloud, on-premises, or other cloud providers and to
+public applications, like Palo Alto Networks Prisma Access.
+
+For information about pricing, see
+[NCC Gateway pricing](https://cloud.google.com/network-connectivity/pricing#ncc-gateway-pricing).
+
+---
 ## 2026-04-14
 
 ### Feature

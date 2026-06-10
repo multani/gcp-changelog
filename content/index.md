@@ -2,6 +2,7 @@
 
 - [570.0.0 (2026-05-27)](570-0-0--2026-05-27-/index.md)
 - [571.0.0 (2026-06-02)](571-0-0--2026-06-02-/index.md)
+- [572.0.0 (2026-06-09)](572-0-0--2026-06-09-/index.md)
 - [AI Applications](ai-applications/index.md)
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)
@@ -181,6 +182,7 @@
 - [Policy Controller](policy-controller/index.md)
 - [Policy Intelligence](policy-intelligence/index.md)
 - [Pub/Sub](pub-sub/index.md)
+- [Pub/Sub Lite](pub-sub-lite/index.md)
 - [Resource Manager](resource-manager/index.md)
 - [Retail API](retail-api/index.md)
 - [SAP on Google Cloud](sap-on-google-cloud/index.md)

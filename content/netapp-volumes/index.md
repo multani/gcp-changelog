@@ -7,6 +7,15 @@
 The backup capabilities for [ONTAP-mode](https://docs.cloud.google.com/netapp/volumes/docs/ontap/overview#about_ontap-mode)
 are generally available (GA). For more information, see [About backups](https://docs.cloud.google.com/netapp/volumes/docs/protect-data/about-backups).
 
+### Feature
+
+Google Cloud NetApp Volumes remote Model Context Protocol (MCP) server is
+generally available. NetApp Volumes remote MCP server lets you manage storage
+pools, volumes, backup vaults, backup policies, backups, and snapshots from
+LLMs, AI applications, and AI-enabled development platforms. For more
+information, see [Use the NetApp Volumes remote MCP server](https://docs.cloud.google.com/netapp/volumes/docs/deploy-use-cases/mcp/use-netapp-mcp)
+and [NetApp Volumes MCP Reference](https://docs.cloud.google.com/netapp/volumes/docs/reference/mcp).
+
 ---
 ## 2026-06-02
 

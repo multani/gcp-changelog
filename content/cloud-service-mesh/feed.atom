@@ -2,9 +2,77 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2026-06-08T00:00:00+00:00</updated>
+  <updated>2026-06-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-09:announcement:0</id>
+    <published>2026-06-09T00:00:00+00:00</published>
+    <updated>2026-06-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.29.4-asm.0 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>You can now download 1.29.4-asm.0 for in-cluster Cloud Service Mesh. It includes
+the features of <a href="https://istio.io/latest/news/releases/1.29.x/announcing-1.29/">Istio 1.29.4</a> subject to the list of
+<a href="https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
+<p>The following environment variables, labels, and annotations are not supported:</p>
+<ul>
+<li><code>PILOT_IGNORE_RESOURCES</code> and <code>PILOT_INCLUDE_RESOURCES</code></li>
+<li><code>RetryIgnorePreviousHosts</code></li>
+<li><code>omit_empty_values</code></li>
+<li><code>PILOT_SPAWN_UPSTREAM_SPAN_FOR_GATEWAY</code></li>
+<li><code>MAX_CONNECTIONS_PER_SOCKET_EVENT_LOOP</code> with the value 1</li>
+<li><code>PILOT_DNS_JITTER_DURATION</code></li>
+<li><code>PILOT_DNS_JITTER_DURATION</code></li>
+<li><code>ENABLE_NATIVE_SIDECARS</code> with the value true</li>
+<li><code>PILOT_IP_AUTOALLOCATE_IPV4_PREFIX</code> and <code>PILOT_IP_AUTOALLOCATE_IPV6_PREFIX</code></li>
+<li><code>PILOT_DNS_CARES_UDP_MAX_QUERIES</code></li>
+<li><code>ENABLE_WILDCARD_HOST_SERVICE_ENTRIES_FOR_TLS</code></li>
+<li>'BLOCKED_CIDRS_IN_JWKS_URIS`</li>
+<li><code>ENABLE_DEBUG_ENDPOINT_AUTH</code></li>
+<li><code>DISABLE_TRACK_REMAINING_CB_METRICS</code></li>
+<li><code>gateway.istio.io/tls-cipher-suites</code></li>
+<li><code>fileFlushMinSizeKB</code> and <code>fileFlushInterval</code> settings in ProxyConfig</li>
+<li><code>topology.istio.io/locality</code></li>
+<li><code>statsCompression</code> ProxyConfig option</li>
+<li><code>proxy.istio.io/config</code> annotation for metric compression overrides</li>
+</ul>
+<p>Istio's experimental feature to enable lazy subset creation of envoy statistics
+is not supported.</p>
+<p>The formatter option within the <code>spec.tracing[].customTags</code> field of the
+Telemetry custom resource (telemetry.istio.io) is unsupported.</p>
+<p>The <code>istiod_remote_cluster_sync_status</code> Prometheus gauge metric, exposed on the
+<strong>Istiod control plane metrics endpoint</strong> (port 15014 <code>/metrics</code>), is not
+supported.</p>
+<p>The following are unsupported for proxyless gRPC clients:</p>
+<ul>
+<li>Configuring the <code>LEAST_REQUEST</code> load balancing policy within the
+  <code>spec.trafficPolicy.loadBalancer.simple</code> field of a <strong>DestinationRule</strong> custom
+  resource (<code>networking.istio.io</code>)</li>
+<li>Configuring the <code>http2MaxRequests</code> circuit breaker within the
+  <code>spec.trafficPolicy.connectionPool.http.http2MaxRequests</code> field of a
+  <strong>DestinationRule</strong> custom resource (<code>networking.istio.io</code>)</li>
+</ul>
+<p>The <code>ENABLE_AUTO_SNI</code> flag is still supported to keep aligned with the legacy
+behavior.</p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh version 1.29.4-asm.0 uses Envoy v1.37.4-dev.</p>]]></content>
+    <summary>Version 1.29.4-asm.0 of in-cluster Cloud Service Mesh is now available. This update includes features from Istio 1.29.4, with specific unsupported configurations noted. For upgrade details, refer to the provided documentation.</summary>
+    <title>Announcement: New Cloud Service Mesh Version Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-06-09:announcement:1</id>
+    <published>2026-06-09T00:00:00+00:00</published>
+    <updated>2026-06-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In-cluster Cloud Service Mesh 1.26 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see <a href="https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions">Supported versions</a>.</p>]]></content>
+    <summary>Cloud Service Mesh 1.26 is no longer supported. For details on end-of-life dates for other versions, please refer to the supported versions documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.26 End of Support</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

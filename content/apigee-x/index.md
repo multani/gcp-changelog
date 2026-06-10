@@ -1,5 +1,28 @@
 # Apigee X
 
+## 2026-06-08
+
+### Announcement
+
+On June 8th, 2026, we released an updated version of Apigee (1-17-0-apigee-9).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **514384893** | **Security fix for Apigee.** Hardened the Script policy to block server-side request forgery (SSRF) to link-local addresses. |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **512850756** | Added observability metrics for the OpenTelemetry trace export pipeline, reporting spans exported, export latency, batch size, and dropped spans. |
+| **515039499** | Fixed an issue where OpenTelemetry trace export over HTTP could fail to authenticate when sent through a forward proxy that requires basic authentication. |
+
+---
 ## 2026-06-02
 
 ### Announcement

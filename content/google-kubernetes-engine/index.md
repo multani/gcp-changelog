@@ -124,7 +124,7 @@ multiple days to complete across all Google Cloud zones.
     - 1.34 to [1.34.7-gke.1499000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1347)
     - 1.35 to [1.35.3-gke.2190000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353)
 
-### No channel
+### No channel (deprecated)
 
 **Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -543,7 +543,7 @@ multiple days to complete across all Google Cloud zones.
     - 1.34 to [1.34.7-gke.1055000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1347)
     - 1.35 to [1.35.3-gke.1389002](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353)
 
-### No channel
+### No channel (deprecated)
 
 **Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -862,7 +862,7 @@ multiple days to complete across all Google Cloud zones.
   + [1.32.13-gke.1551000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v13213)
   + [1.35.3-gke.1389002](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353)
 
-### No channel
+### No channel (deprecated)
 
 **Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -1116,7 +1116,7 @@ multiple days to complete across all Google Cloud zones.
     - 1.33 to [1.33.11-gke.1013000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v13311)
     - 1.34 to [1.34.6-gke.1307000](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346)
 
-### No channel
+### No channel (deprecated)
 
 **Note**: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take

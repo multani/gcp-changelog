@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-06-10
+
+### Feature
+
+BigQuery continuous queries now support the following aggregation functions:
+
+* [`ARRAY_AGG`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/aggregate_functions#array_agg)
+* [`STRING_AGG`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/aggregate_functions#string_agg)
+
+Support for these functions is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-08
 
 ### Feature

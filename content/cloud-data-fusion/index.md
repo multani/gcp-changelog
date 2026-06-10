@@ -37,6 +37,19 @@ Changes in Cloud Data Fusion 6.11.1.3:
   ([CDAP-21246](https://cdap.atlassian.net/browse/CDAP-21246)).
 
 ---
+## 2026-05-18
+
+### Change
+
+The HTTP plugin version 1.5.2 is available in Cloud Data Fusion version 6.11.1.
+This release includes the following change:
+
+* Fixed an issue in the HTTP plugin where OAuth2 token requests bypassed
+  configured proxies, causing connection failures in restricted environments.
+  Authentication requests now correctly route through the configured proxy
+  ([PLUGIN-1956](https://cdap.atlassian.net/browse/PLUGIN-1956)).
+
+---
 ## 2026-03-17
 
 ### Fixed

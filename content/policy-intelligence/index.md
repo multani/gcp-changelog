@@ -1,5 +1,13 @@
 # Policy Intelligence
 
+## 2026-06-09
+
+### Feature
+
+[Policy Simulator for deny policies](https://docs.cloud.google.com/policy-intelligence/docs/deny-simulator-overview)
+is [generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-03
 
 ### Feature

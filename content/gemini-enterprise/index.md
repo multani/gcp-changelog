@@ -1,5 +1,32 @@
 # Gemini Enterprise
 
+## 2026-06-09
+
+### Feature
+
+**Gemini Enterprise: Share agents with Google Groups**
+
+End users can share agents created using Agent Designer with Google Identity
+groups, provided an administrator has enabled this feature for the
+Gemini Enterprise app.
+
+This feature is generally available (GA). For more information, see
+[Share an agent](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/share-agent).
+
+---
+## 2026-06-08
+
+### Announcement
+
+**Gemini Enterprise: Gemini 3.5 Flash feature management toggle is no longer available after June 16, 2026**
+
+Starting June 16, 2026, the Gemini 3.5 Flash feature management toggle is no longer available. This
+change applies to the Global, US, and EU multi-regions.
+
+**Note:** This is a correction to the date mentioned previously in the [June 05,
+2026 release note](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#June_05_2026).
+
+---
 ## 2026-06-05
 
 ### Feature

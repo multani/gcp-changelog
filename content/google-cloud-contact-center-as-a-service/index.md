@@ -2,6 +2,12 @@
 
 ## 2026-06-09
 
+### Announcement
+
+**Mobile SDK for Android version 2.15.3 patch**
+
+We've released version 2.15.3 of the Mobile SDK for Android.
+
 ### Fixed
 
 This release addresses the following issues:

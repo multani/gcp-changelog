@@ -1,5 +1,12 @@
 # Agent Assist
 
+## 2026-06-10
+
+### Change
+
+Agent Assist offers [Proactive generative knowledge assist](https://docs.cloud.google.com/agent-assist/docs/pgka) V2 in GA. This version supports rich search context, multiple suggested queries, and granular control over triggering events.
+
+---
 ## 2026-06-01
 
 ### Feature

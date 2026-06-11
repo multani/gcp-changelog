@@ -1,5 +1,325 @@
 # Container Optimized OS
 
+## 2026-06-08
+
+### Change
+
+
+
+### cos-125-19216-395-73
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/9b2019e2a0a65bafcc7fb941120bfa3088ef8a59 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.73/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated minijail to r188.
+
+### Security
+
+Fixed CVE-2026-43303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43492 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43496 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43499 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43503 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45837 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45838 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45839 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45841 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45842 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45843 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45844 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45987 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45991 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45997 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46005 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46015 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46021 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46033 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46037 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46040 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46046 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46050 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46051 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46061 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46062 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46065 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46070 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46072 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46076 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46082 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46086 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46089 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46094 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46101 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46102 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46106 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46107 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46108 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46115 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46116 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46120 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46124 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46128 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46129 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46131 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46132 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46139 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46150 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46155 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46159 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46161 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46172 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46173 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46174 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46176 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46177 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46185 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46193 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46195 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46196 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46209 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46214 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46234 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46300 in the Linux kernel.
+
+### Change
+
+
+
+### cos-129-19506-224-16
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.90](https://cos.googlesource.com/third_party/kernel/+/e06aec09f8bd1eace9b1d1adb0ec84899e9a05f5 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.224.16/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated minijail to r188.
+
+### Security
+
+Fixed CVE-2026-43303 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-381-162
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/3d2eca1b468c707fe3702ad6e28719c31d6176b1 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.162/lakitu/gpu_driver_versions.textproto) |
+
+---
 ## 2026-06-04
 
 ### Change

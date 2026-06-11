@@ -70,6 +70,7 @@
 - [Cloud Data Fusion](cloud-data-fusion/index.md)
 - [Cloud Database Migration Service](cloud-database-migration-service/index.md)
 - [Cloud Deploy](cloud-deploy/index.md)
+- [Cloud Domains](cloud-domains/index.md)
 - [Cloud Endpoints](cloud-endpoints/index.md)
 - [Cloud Healthcare API](cloud-healthcare-api/index.md)
 - [Cloud Hub](cloud-hub/index.md)

@@ -1,5 +1,30 @@
 # Cloud Billing
 
+## 2026-06-10
+
+### Feature
+
+**Multi-project access to Cloud Billing cost views available in
+Preview**
+
+In Cloud Billing accounts, multi-project access to usage costs lets
+project owners, solution owners, developers, and other non-billing admins
+see cost data for all of their authorized projects in a single view in the
+Cloud Billing console.
+
+The multi-project view uses a combination of Cloud Billing account
+permissions and Google Cloud project permissions that let Cloud Billing
+administrators and organization administrators jointly control access to
+project-level cost data.
+
+Using project-scoped Cloud Billing account permissions,
+Cloud Billing administrators can control which solution owners can
+view aggregated cost data in the Cloud Billing console.
+
+* Learn more about [cost management for project owners](https://docs.cloud.google.com/billing/docs/how-to/project-owners/overview).
+* Learn how to [set up multi-project access to costs views](https://docs.cloud.google.com/billing/docs/how-to/project-owners/setup-multi-project-access).
+
+---
 ## 2026-06-08
 
 ### Feature

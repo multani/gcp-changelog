@@ -6,11 +6,12 @@
 
 **Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
 Added support for selecting specific [Confidential Computing](https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/confidential-compute) technologies (AMD SEV, AMD SEV-SNP, Intel TDX) when creating clusters using the new `--confidential-compute-type` flag in `gcloud` and the `confidentialInstanceType` field in the API. The boolean `--enable-confidential-compute` flag is now deprecated but will continue to function, defaulting to AMD SEV for backward compatibility.
-\* Introduced `confidentialInstanceType` enum in the [API](https://docs.cloud.google.com/managed-spark/docs/reference/rest/v1/ClusterConfig#confidentialinstanceconfig).
-\* The `--enable-confidential-compute` flag and `enableConfidentialCompute` field are deprecated in favor of the new type-specific flag/field.
-\* Clusters created with the deprecated boolean flag will default to `SEV`.
-\* Added validation for machine type compatibility for `SEV`, `SEV-SNP`, and `TDX`.
-\* Updated live migration logic to support compatible machine types and CPU platforms for each technology, including N2D and C3D for SEV.
+
+* Introduced `confidentialInstanceType` enum in the [API](https://docs.cloud.google.com/managed-spark/docs/reference/rest/v1/ClusterConfig#confidentialinstanceconfig).
+* The `--enable-confidential-compute` flag and `enableConfidentialCompute` field are deprecated in favor of the new type-specific flag/field.
+* Clusters created with the deprecated boolean flag will default to `SEV`.
+* Added validation for machine type compatibility for `SEV`, `SEV-SNP`, and `TDX`.
+* Updated live migration logic to support compatible machine types and CPU platforms for each technology, including N2D and C3D for SEV.
 
 ---
 ## 2026-05-19

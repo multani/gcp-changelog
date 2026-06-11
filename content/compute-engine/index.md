@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-06-11
+
+### Feature
+
+In an autoscaled managed instance group (MIG), you can configure the
+stabilization period to manage how quickly the autoscaler deletes instances
+after a decrease in the load. This configuration can help optimize costs or
+maintain extra capacity based on your workload requirements. For more
+information, see
+[Configure stabilization period](https://docs.cloud.google.com/compute/docs/autoscaler/managing-autoscalers#configure_stabilization_period).
+
+---
 ## 2026-06-09
 
 ### Security

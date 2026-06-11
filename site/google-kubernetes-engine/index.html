@@ -2580,6 +2580,17 @@
 
 
 <h1 id="google-kubernetes-engine">Google Kubernetes Engine</h1>
+<h2 id="2026-06-10">2026-06-10</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>The configuration option to not enroll your cluster in a release channel (known
+as <em>No channel</em>, formerly as <em>Static</em>) is now deprecated, and will be removed
+on June 14, 2027. For any clusters not enrolled in a release channel, we
+recommend that you <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/release-channels#existing-cluster">enroll the cluster</a>
+before this date. After the removal date, GKE will enroll all remaining clusters
+in the Stable channel. For more information about this deprecation and how you
+can achieve the same functionality with release channels, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels#no_channel">Clusters not
+enrolled in a release channel</a>.</p>
+<hr />
 <h2 id="2026-06-04">2026-06-04</h2>
 <h3 id="change">Change</h3>
 <h4 id="2026-r22-version-updates">(2026-R22) Version updates</h4>
@@ -8166,7 +8177,7 @@ For more information, see the
 <h3 id="change_100">Change</h3>
 <p>After March 17, 2026, when you enable GKE, the GKE
 MCP server is automatically enabled.</p>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_1">Deprecated</h3>
 <p>Control of MCP use with organization policies is deprecated. After March 17,
 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code>
 constraint won't work, and you can control MCP use with IAM deny policies. For
@@ -10936,7 +10947,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <h3 id="announcement_1">Announcement</h3>
 <h4 id="kubernetes-135-is-now-available-in-the-rapid-channel">Kubernetes 1.35 is now available in the Rapid channel</h4>
 <p>Kubernetes 1.35 is now available in the Rapid channel. For more information about the content of Kubernetes 1.35, read the <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#changelog-since-v1340">Kubernetes 1.35 Release Notes</a> and Kubernetes <a href="https://kubernetes.io/blog/2025/12/17/kubernetes-v1-35-release/">1.35 Release Blog</a>.</p>
-<h3 id="deprecated_1">Deprecated</h3>
+<h3 id="deprecated_2">Deprecated</h3>
 <h4 id="deprecated-in-135">Deprecated in 1.35</h4>
 <ul>
 <li>The <code>PreferClose</code> value for a <a href="https://kubernetes.io/docs/concepts/services-networking/service/">Kubernetes Service's</a> <code>trafficDistribution</code> field is now deprecated in favor of the more explicit <code>PreferSameZone</code>.</li>
@@ -16115,7 +16126,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><strong>containerd 2.1:</strong> GKE nodes are now upgraded to containerd 2.1. This release includes performance improvements such as faster image downloads. For a complete list of changes, see the official <a href="https://github.com/containerd/containerd/releases/tag/v2.1.0">containerd 2.1 release notes</a>.</li>
 <li><strong>VPA InPlaceOrRecreate</strong>: This version introduces a <a href="https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler/enhancements/4016-in-place-updates-support">new InPlaceOrRecreate mode in Vertical Pod Autoscaler (VPA)</a> (Public Preview) powered by In-Place Pod Resize (IPPR/IPPU) that allows automatically rightsizing workloads often without recreating the Pod. This mode ensures seamless service continuity while minimizing costs during idle periods. If you haven't used VPA with your workloads before, enable Vertical Pod Autoscaler on your cluster and then create a VPA Object for a workload.</li>
 </ul>
-<h3 id="deprecated_2">Deprecated</h3>
+<h3 id="deprecated_3">Deprecated</h3>
 <p><strong>Deprecated in 1.34</strong></p>
 <p>The <a href="https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1beta1">v1beta1</a> gRPC API between the Kubelet and DRA drivers is deprecated in this release in favor of the <a href="https://github.com/kubernetes/kubelet/tree/v0.34.0/pkg/apis/dra/v1">v1</a> API. This API will continue to function but we recommend that all drivers move to the v1 API to prepare for the eventual removal of the v1beta1 API.</p>
 <h3 id="changed_62">Changed</h3>
@@ -20644,6 +20655,9 @@ zones.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-kubernetes-engine">Google Kubernetes Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-10" class="nav-link">2026-06-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-04" class="nav-link">2026-06-04</a>
           </li>

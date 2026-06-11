@@ -1,5 +1,119 @@
 # Google SecOps Marketplace
 
+## 2026-06-11
+
+### Change
+
+**Siemplify**: Version 109.0
+
+* Refactored the code in the following action:
+
+  + **Attach Playbook to Alert**
+
+---
+## 2026-06-10
+
+### Change
+
+**Azure Security Center**: Version 17.0
+
+* Announced deprecation notice. Connector will be deprecated on 30th March 2027.
+  Only critical bug fixes will be considered. For more information refer to the
+  documentation of individual connectors in the following connector:
+
+  + **Azure Security Center - Security Alerts Connector**
+
+### Change
+
+**Google Chronicle**: Version 85.0
+
+* Updated partial batch handling and added dynamic batch sizing to prevent
+  timeout loops, refactored logging and added monitoring signals for process
+  health, and pipeline states, and improved detections batch parsing and
+  processing efficiency in the following connector:
+
+  + **Chronicle Alerts Connector**
+* **Integration**: Updated authentication flow mechanism.
+
+### Change
+
+**Google Cloud IAM**: Version 20.0
+
+* Updated Predefined Widgets in the following widgets:
+
+  + **List Roles**
+  + **List Service Accounts**
+
+### Change
+
+**Microsoft Azure Sentinel**: Version 64.0
+
+* Announced deprecation notice. Connector will be deprecated on 30th March 2027.
+  Only critical bug fixes will be considered. For more information refer to the
+  documentation of individual connectors in the following connectors:
+
+  + **Microsoft Azure Sentinel Incident Connector v2**
+  + **Microsoft Sentinel Incident Tracking Connector**
+
+### Change
+
+**Microsoft Defender ATP**: Version 32.0
+
+* Announced deprecation notice. Connector will be deprecated on 30th March 2027.
+  Only critical bug fixes will be considered. For more information refer to the
+  documentation of individual connectors in the following connectors:
+
+  + **Microsoft Defender ATP Connector**
+  + **Microsoft Defender ATP Connector V2**
+
+### Change
+
+**Microsoft Graph Mail**: Version 42.0
+
+* Updated the logic for robust handling of transient upstream API errors and
+  connection issues in the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 19.0
+
+* Updated the logic for robust handling of transient upstream API errors and
+  connection issues in the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**Microsoft Graph Security**: Version 27.0
+
+* Announced deprecation notice. Connector will be deprecated on 30th March 2027.
+  Only critical bug fixes will be considered. For more information refer to the
+  documentation of individual connectors in the following connectors:
+
+  + **Microsoft Graph Office 365 Security and Compliance Connector**
+  + **Microsoft Graph Security Connector**
+
+### Change
+
+**Protectwise**: Version 7.0
+
+* Refactored the code in the following action:
+
+  + **Get Pcap**
+
+### Change
+
+**Qualys VM**: Version 28.0
+
+* Fixed AttributeError during parsing of multiple host lists and added fallback
+  hostname matching in the following actions:
+
+  + **List Endpoint Detections**
+  + **Enrich Host**
+
+---
 ## 2026-06-03
 
 ### Change

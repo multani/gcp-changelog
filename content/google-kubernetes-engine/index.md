@@ -1,5 +1,19 @@
 # Google Kubernetes Engine
 
+## 2026-06-10
+
+### Deprecated
+
+The configuration option to not enroll your cluster in a release channel (known
+as *No channel*, formerly as *Static*) is now deprecated, and will be removed
+on June 14, 2027. For any clusters not enrolled in a release channel, we
+recommend that you [enroll the cluster](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/release-channels#existing-cluster)
+before this date. After the removal date, GKE will enroll all remaining clusters
+in the Stable channel. For more information about this deprecation and how you
+can achieve the same functionality with release channels, see [Clusters not
+enrolled in a release channel](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels#no_channel).
+
+---
 ## 2026-06-04
 
 ### Change

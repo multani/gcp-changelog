@@ -1,6 +1,64 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-06-11": [
+      {
+        "kind": "Feature",
+        "content": "**New child queues filter option**\n\nDashboards that have the **Queue Name** filter now also have a **Child Queues**\ncheckbox. Select **Yes** if you want to include all child queues of the\nspecified queue. There's also a new **Child Queues (Yes / No)** filter available\nin Explores that have the **Queue Name** filter.",
+        "summary": {
+          "title": "Child Queues Filter Option Added",
+          "summary": "Dashboards and Explores with the Queue Name filter now include a Child Queues option. This allows you to easily include or exclude all child queues of a specified queue in your data analysis."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**The Agent & Queue Status (Live) Explore contains new real-time agent and queue metrics**\n\nThe **Agent & Queue Status (Live)** Explore contains the following new metrics:\n\n* **In Call**: the number of agents currently on a call\n* **Available / Waiting**: the number of agents available and waiting for the\n  next contact\n* **Contacts in Queue**: the number of calls currently waiting in the queue",
+        "summary": {
+          "title": "New real-time agent and queue metrics",
+          "summary": "The Agent & Queue Status (Live) Explore now includes new real-time metrics. You can now track the number of agents in call, available or waiting, and the number of contacts currently in the queue."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Link directly to CSAT scores in your CRM from the CSAT dashboards**\n\nIn the **CSAT Interactions** table of the **CSAT - Calls** and **CSAT - Chats**\ndashboards, next to the **Session ID** numbers, links to the associated CSAT\nscores in your CRM are now available. You can go directly to the CSAT scores\nwithout needing to search for them in your CRM.",
+        "summary": {
+          "title": "Direct CRM Links for CSAT Scores",
+          "summary": "Easily access CSAT scores directly from the CSAT dashboards. New links next to Session IDs in the CSAT Interactions table now lead straight to your CRM, saving you search time."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Updates to the Real-time Queue Monitoring - Calls dashboard**\n\nThe **Real-time Queue Monitoring - Calls** dashboard now includes the following\nmetrics tiles:\n\n* **Total Rolled Over Pending Callbacks**\n* **Total Rolled Over Completed Callbacks**\n* **Avg CSAT Calls**",
+        "summary": {
+          "title": "New Metrics for Real-time Queue Monitoring",
+          "summary": "The Real-time Queue Monitoring - Calls dashboard has been updated with new metrics. You can now track Total Rolled Over Pending Callbacks, Total Rolled Over Completed Callbacks, and Avg CSAT Calls to better understand your call queue performance."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Updates to the Queue Performance dashboards**\n\n* The **Queue Performance - Calls** and **Queue Performance - Chats**\n  dashboards now include the following:\n\n  + A new **Interaction Type** filter\n  + A new **Interaction Type** column in the **Queue Detailed Table**\n* The **Queue Performance - Calls** dashboard now includes the following\n  metrics tiles:\n\n  + **Total Rolled Over Completed Callbacks**\n  + **Total Rolled Over Pending Callbacks**",
+        "summary": {
+          "title": "New Filters and Metrics for Queue Performance",
+          "summary": "The Queue Performance dashboards for Calls and Chats have been updated with new Interaction Type filters and columns. Additionally, the Calls dashboard now features metrics for rolled-over callbacks, providing deeper insights into queue performance."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Repeat contact data in the Queue Performance dashboards**\n\nThe **Queue Summary Table** of the **Queue Performance - Calls** and **Queue\nPerformance - Chats** dashboards now includes the following columns:\n\n* **Total Repeat Contacts**\n* **Repeat Contact %**",
+        "summary": {
+          "title": "Queue Performance Enhancements",
+          "summary": "The Queue Performance dashboards for calls and chats have been updated to include new metrics for repeat contacts. You can now track 'Total Repeat Contacts' and 'Repeat Contact %' in the Queue Summary Table for both calls and chats."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were addressed in this release:\n\n* Fixed an issue where **Repeat Contact %** values in the **Queue Summary\n  Table** of the **Queue Performance - Calls** dashboard exceeded 100%.\n* Fixed an issue where the **Date** filter in Explores returned no results\n  when **is on or after** was set for an absolute date.\n* Removed the **Total Logged in Time** metrics tile from the **Agent\n  Availability** dashboard.\n* Fixed an issue where language labels were missing from the advanced\n  reporting dashboards.\n* Fixed an issue that occurred when filtering by chat ID in the **All\n  Interactions - Chats** dashboard. The wrong chat ID appeared in the\n  **Virtual Agent Chats** table.\n* Fixed an issue where disposition codes were missing or blank for outbound\n  calls in the **Call Agent Metrics (Historical)** dashboard.",
+        "summary": {
+          "title": "Reporting improvements",
+          "summary": "Several issues in reporting dashboards have been resolved, including incorrect percentage values, date filter problems, and missing labels. Additionally, a specific metric tile has been removed, and chat ID filtering has been corrected."
+        }
+      }
+    ],
     "2026-06-09": [
       {
         "kind": "Announcement",

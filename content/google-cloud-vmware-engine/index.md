@@ -1,5 +1,15 @@
 # Google Cloud VMware Engine
 
+## 2026-06-11
+
+### Announcement
+
+The VMware Engine [`ve2` node type](https://docs.cloud.google.com/vmware-engine/docs/concepts/node-types) is now available in the following
+additional region:
+
+* Mexico City (`northamerica-south1`)
+
+---
 ## 2026-06-01
 
 ### Announcement

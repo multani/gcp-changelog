@@ -1,5 +1,91 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-11
+
+### Feature
+
+**New child queues filter option**
+
+Dashboards that have the **Queue Name** filter now also have a **Child Queues**
+checkbox. Select **Yes** if you want to include all child queues of the
+specified queue. There's also a new **Child Queues (Yes / No)** filter available
+in Explores that have the **Queue Name** filter.
+
+### Feature
+
+**The Agent & Queue Status (Live) Explore contains new real-time agent and queue metrics**
+
+The **Agent & Queue Status (Live)** Explore contains the following new metrics:
+
+* **In Call**: the number of agents currently on a call
+* **Available / Waiting**: the number of agents available and waiting for the
+  next contact
+* **Contacts in Queue**: the number of calls currently waiting in the queue
+
+### Feature
+
+**Link directly to CSAT scores in your CRM from the CSAT dashboards**
+
+In the **CSAT Interactions** table of the **CSAT - Calls** and **CSAT - Chats**
+dashboards, next to the **Session ID** numbers, links to the associated CSAT
+scores in your CRM are now available. You can go directly to the CSAT scores
+without needing to search for them in your CRM.
+
+### Feature
+
+**Updates to the Real-time Queue Monitoring - Calls dashboard**
+
+The **Real-time Queue Monitoring - Calls** dashboard now includes the following
+metrics tiles:
+
+* **Total Rolled Over Pending Callbacks**
+* **Total Rolled Over Completed Callbacks**
+* **Avg CSAT Calls**
+
+### Feature
+
+**Updates to the Queue Performance dashboards**
+
+* The **Queue Performance - Calls** and **Queue Performance - Chats**
+  dashboards now include the following:
+
+  + A new **Interaction Type** filter
+  + A new **Interaction Type** column in the **Queue Detailed Table**
+* The **Queue Performance - Calls** dashboard now includes the following
+  metrics tiles:
+
+  + **Total Rolled Over Completed Callbacks**
+  + **Total Rolled Over Pending Callbacks**
+
+### Feature
+
+**Repeat contact data in the Queue Performance dashboards**
+
+The **Queue Summary Table** of the **Queue Performance - Calls** and **Queue
+Performance - Chats** dashboards now includes the following columns:
+
+* **Total Repeat Contacts**
+* **Repeat Contact %**
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where **Repeat Contact %** values in the **Queue Summary
+  Table** of the **Queue Performance - Calls** dashboard exceeded 100%.
+* Fixed an issue where the **Date** filter in Explores returned no results
+  when **is on or after** was set for an absolute date.
+* Removed the **Total Logged in Time** metrics tile from the **Agent
+  Availability** dashboard.
+* Fixed an issue where language labels were missing from the advanced
+  reporting dashboards.
+* Fixed an issue that occurred when filtering by chat ID in the **All
+  Interactions - Chats** dashboard. The wrong chat ID appeared in the
+  **Virtual Agent Chats** table.
+* Fixed an issue where disposition codes were missing or blank for outbound
+  calls in the **Call Agent Metrics (Historical)** dashboard.
+
+---
 ## 2026-06-09
 
 ### Announcement

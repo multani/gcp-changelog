@@ -1,5 +1,39 @@
 # Google SecOps
 
+## 2026-06-12
+
+### Feature
+
+**[Spotlight Feature] Search for cases using SIEM Search**
+
+Google SecOps SIEM Search now provides robust capabilities for analyzing cases and case history alongside existing Unified Data Model (UDM) events and entities. This update allows security analysts to seamlessly correlate case details with other security telemetry within a single interface, streamlining workflows and accelerating incident response.
+
+Key Highlights:
+
+* **Unified Search Experience**: Conduct searches across UDM events, entities, cases, and case history from a single SIEM Search interface.
+* **Correlate SIEM and SOAR Data**: Effortlessly link case details and historical activities with security data, reducing context switching and improving investigation efficiency.
+
+For more information, see [Search cases and case history](https://docs.cloud.google.com/chronicle/docs/investigation/search-and-search-case-history).
+
+### Announcement
+
+**Asynchronous Search APIs for large datasets**
+
+Google SecOps now supports asynchronous Search APIs that let you perform
+long-running queries without blocking your applications. This is ideal for
+searches that return a large volume of results.
+
+* **Non-blocking queries**: Initiate searches and receive an operation ID to
+  track progress, so your application remains responsive.
+* **Handle large result sets**: Retrieve up to 1 million results from data
+  sources including Unified Data Model (UDM) events, data tables, and Entity
+  Context Graph (ECG).
+* **Paginated results**: View results efficiently in manageable pages.
+
+For more information, see [Asynchronous Search APIs](https://docs.cloud.google.com/chronicle/docs/investigation/search-lro-api)
+and [Result limits for data sources](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#resultLimitsDataSources).
+
+---
 ## 2026-06-09
 
 ### Feature

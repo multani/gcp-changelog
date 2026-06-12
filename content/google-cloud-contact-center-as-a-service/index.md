@@ -2,6 +2,13 @@
 
 ## 2026-06-11
 
+### Announcement
+
+**Advanced reporting dashboards prerelease notes**
+
+Here are the prerelease notes for the next version of the advanced reporting
+dashboards.
+
 ### Feature
 
 **New child queues filter option**

@@ -1,5 +1,26 @@
 # Google SecOps SIEM
 
+## 2026-06-12
+
+### Announcement
+
+**Asynchronous Search APIs for large datasets**
+
+Google SecOps now supports asynchronous Search APIs that let you perform
+long-running queries without blocking your applications. This is ideal for
+searches that return a large volume of results.
+
+* **Non-blocking queries**: Initiate searches and receive an operation ID to
+  track progress, so your application remains responsive.
+* **Handle large result sets**: Retrieve up to 1 million results from data
+  sources including Unified Data Model (UDM) events, data tables, and Entity
+  Context Graph (ECG).
+* **Paginated results**: View results efficiently in manageable pages.
+
+For more information, see [Asynchronous Search APIs](https://docs.cloud.google.com/chronicle/docs/investigation/search-lro-api)
+and [Result limits for data sources](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#resultLimitsDataSources).
+
+---
 ## 2026-06-09
 
 ### Feature

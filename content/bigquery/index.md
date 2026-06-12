@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-06-12
+
+### Feature
+
+[BigQuery AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview) can use
+[`ObjectRef` values](https://docs.cloud.google.com/bigquery/docs/work-with-objectref) directly as input,
+without calling the `OBJ.GET_ACCESS_URL` function.
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-06-11
 
 ### Feature

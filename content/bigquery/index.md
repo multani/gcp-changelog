@@ -1,5 +1,23 @@
 # BigQuery
 
+## 2026-06-11
+
+### Feature
+
+You can [monitor performance, analyze capacity, and optimize costs with Gemini Cloud Assist in BigQuery](https://docs.cloud.google.com/bigquery/docs/use-cloud-assist#administer_bigquery).
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Support for the
+[`AI.KEY_DRIVERS` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-key-drivers)
+is restored. You can use the
+`AI.KEY_DRIVERS` function to identify segments of data that cause statistically significant changes to a summable metric.
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-06-10
 
 ### Feature

@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-06-12": [
+      {
+        "kind": "Feature",
+        "content": "You can now create and query [parameterized secure views](https://docs.cloud.google.com/sql/docs/postgres/parameterized-secure-views)\nin Cloud SQL for PostgreSQL.\n\nParameterized secure views let you use PostgreSQL views with more granular\naccess control over your data. While you can issue a `GRANT` statement to control\nwhether a user can query a PostgreSQL view, a `GRANT` statement doesn't let you\ncontrol the data that the view returns based on the user who is making the\nquery.\n\nTo gain this level of control, use parameterized secure views. You can\ndefine parameters such as a user ID or region within the view. When your\napplication queries the view, a user can provide values for these parameters,\nwhich customizes the query results. Using parameterized secure views lets you\nenforce \"least privilege\" access to help ensure that your users interact only\nwith the data that is relevant and authorized to them.\n\nThis feature is in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Introducing Parameterized Secure Views",
+          "summary": "Cloud SQL for PostgreSQL now supports parameterized secure views, offering enhanced data access control. This feature allows you to define parameters within views to customize query results based on user input, ensuring users only see relevant and authorized data."
+        }
+      }
+    ],
     "2026-05-12": [
       {
         "kind": "Change",

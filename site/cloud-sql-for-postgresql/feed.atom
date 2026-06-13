@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-05-12T00:00:00+00:00</updated>
+  <updated>2026-06-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-06-12:feature:0</id>
+    <published>2026-06-12T00:00:00+00:00</published>
+    <updated>2026-06-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now create and query <a href="https://docs.cloud.google.com/sql/docs/postgres/parameterized-secure-views">parameterized secure views</a>
+in Cloud SQL for PostgreSQL.</p>
+<p>Parameterized secure views let you use PostgreSQL views with more granular
+access control over your data. While you can issue a <code>GRANT</code> statement to control
+whether a user can query a PostgreSQL view, a <code>GRANT</code> statement doesn't let you
+control the data that the view returns based on the user who is making the
+query.</p>
+<p>To gain this level of control, use parameterized secure views. You can
+define parameters such as a user ID or region within the view. When your
+application queries the view, a user can provide values for these parameters,
+which customizes the query results. Using parameterized secure views lets you
+enforce "least privilege" access to help ensure that your users interact only
+with the data that is relevant and authorized to them.</p>
+<p>This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>Cloud SQL for PostgreSQL now supports parameterized secure views, offering enhanced data access control. This feature allows you to define parameters within views to customize query results based on user input, ensuring users only see relevant and authorized data.</summary>
+    <title>Feature: Introducing Parameterized Secure Views</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

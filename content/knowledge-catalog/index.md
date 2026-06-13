@@ -1,5 +1,23 @@
 # Knowledge Catalog
 
+## 2026-06-11
+
+### Feature
+
+Knowledge Catalog now supports data profile scans for unstructured data
+(such as PDFs in Cloud Storage) on existing BigQuery object tables.
+This feature uses Vertex AI Gemini models to extract semantic insights,
+including entities and relationships, from unstructured content.
+
+**Note:** Data profile scans for unstructured data are currently available in
+[Preview](https://cloud.google.com/products#product-launch-stages) using the
+Dataplex REST API only. The cloud console and gcloud
+workflows are not supported for this feature.
+
+For more information, see [About unstructured data insights](https://docs.cloud.google.com/dataplex/docs/data-insights-unstructured-data)
+and [Use data profile for unstructured data](https://docs.cloud.google.com/dataplex/docs/use-data-profile-unstructured-data).
+
+---
 ## 2026-06-05
 
 ### Deprecated

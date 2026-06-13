@@ -1,5 +1,27 @@
 # Cloud Service Mesh
 
+## 2026-06-12
+
+### Security
+
+The following images are now rolling out for managed Cloud Service Mesh:
+
+* Sidecar version 1.21.6-asm.36, is rolling out to the rapid release channel.
+* Sidecar version 1.20.8-asm.86 is rolling out to the regular release channel.
+* Sidecar version 1.19.10-asm.76 is rolling out to the stable release channel.
+
+These rollouts will preempt those [previously announced on June 3, 2026](#June_03_2026).
+
+These patch releases contain the fix for the vulnerability listed in
+[GCP-2026-035](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035)
+
+### Security
+
+Proxy version csm\_mesh\_proxy.20260423\_RC03 for Gateway API on GKE clusters is
+rolling out to all Managed Cloud Service Mesh release channels over the next
+week.
+
+---
 ## 2026-06-09
 
 ### Announcement

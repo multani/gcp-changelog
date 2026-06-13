@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2026-06-12
+
+### Feature
+
+Added support for inspecting and de-identifying batched content. You can now include a `BatchContentItem` in your `ContentItem` requests.
+
+---
 ## 2026-06-08
 
 ### Feature

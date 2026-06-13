@@ -1,5 +1,23 @@
 # Media CDN
 
+## 2026-06-12
+
+### Feature
+
+The maximum cacheable object size for Media CDN can be increased up to 1 TiB. To
+request a limit increase for your project, contact your Google support
+representative. This feature is **Generally Available**.
+
+For more information, see [Quotas and limits](https://docs.cloud.google.com/media-cdn/quotas).
+
+### Feature
+
+Media CDN lets you identify the country codes of the edge caches serving client
+requests. This feature is **Generally Available**.
+
+For more information, see [Custom headers](https://docs.cloud.google.com/media-cdn/docs/custom-headers#header-variables).
+
+---
 ## 2025-12-17
 
 ### Feature

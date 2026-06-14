@@ -1,5 +1,18 @@
 # Google SecOps SIEM
 
+## 2026-06-13
+
+### Feature
+
+**Non-prioritized IoC Matching rules Category**
+
+Google SecOps has introduced a new detection category, *Non-prioritized IoC Matching rules*, as part of the [Curated Detections](https://docs.cloud.google.com/chronicle/docs/detection/curated-detections) feature. These rule sets integrate with Google's Indicators of Compromise (IoC) feeds and build on curated threat intelligence to identify malicious activities within Google SecOps environments, specifically focusing on threats identifiable through high-fidelity indicators like IPs, domains, and file hashes.
+
+This rules category provides comprehensive coverage for threats often missed by standard managed content, including cryptomining, Command and Control (C2) communications, and the use of malicious anonymization services.
+
+For more information, refer to [Non-prioritized IoC Matching rules category overview](https://docs.cloud.google.com/chronicle/docs/detection/non-prioritized-ioc-matching-threats-category).
+
+---
 ## 2026-06-12
 
 ### Announcement

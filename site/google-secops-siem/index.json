@@ -13,6 +13,14 @@
     ],
     "2026-06-12": [
       {
+        "kind": "Feature",
+        "content": "**[Spotlight Feature] Investigate detections in Google SecOps Search**\n\nGoogle SecOps Search now supports querying, filtering, and analyzing system-generated detections. When searching on events or entities, matching detections will now appear in the **Alerts and Detections** tab, providing a more holistic workflow for threat investigation.\n\nFor more details, see [Investigate detections in Search](https://docs.cloud.google.com/chronicle/docs/investigation/investigate-detections-in-search).",
+        "summary": {
+          "title": "Investigate Detections in SecOps Search",
+          "summary": "Google SecOps Search now allows you to query, filter, and analyze system-generated detections. When you search for events or entities, matching detections will appear in the Alerts and Detections tab, enhancing your threat investigation workflow."
+        }
+      },
+      {
         "kind": "Announcement",
         "content": "**Asynchronous Search APIs for large datasets**\n\nGoogle SecOps now supports asynchronous Search APIs that let you perform\nlong-running queries without blocking your applications. This is ideal for\nsearches that return a large volume of results.\n\n* **Non-blocking queries**: Initiate searches and receive an operation ID to\n  track progress, so your application remains responsive.\n* **Handle large result sets**: Retrieve up to 1 million results from data\n  sources including Unified Data Model (UDM) events, data tables, and Entity\n  Context Graph (ECG).\n* **Paginated results**: View results efficiently in manageable pages.\n\nFor more information, see [Asynchronous Search APIs](https://docs.cloud.google.com/chronicle/docs/investigation/search-lro-api)\nand [Result limits for data sources](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#resultLimitsDataSources).",
         "summary": {
@@ -24,10 +32,10 @@
     "2026-06-09": [
       {
         "kind": "Feature",
-        "content": "**UDM fields now show whether data is enriched or not**\n\nThe new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain values that Google SecOps generates to provide additional context about artifacts in your environment.\n\nFor more information, see: [Viewing events](https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events).",
+        "content": "**UDM fields now show the sources of enrichment**\n\nThe new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain additional metadata values that indicate the source of the enriched data.\n\nFor more information, see: [Viewing events](https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events).",
         "summary": {
-          "title": "Data Enrichment Status Now Visible in UDM Fields",
-          "summary": "The new Enrichment feature now displays icons next to UDM fields, indicating whether the data is unenriched (U) or enriched (E) by Google SecOps. Enriched fields provide valuable context about artifacts in your environment. This enhancement improves data management and understanding."
+          "title": "Data enrichment sources now visible",
+          "summary": "The new Enrichment feature improves data management by showing the source of each UDM field. An icon indicates whether a field is unenriched (U) or enriched (E), with enriched fields providing metadata about their origin."
         }
       }
     ],

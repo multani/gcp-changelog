@@ -1,5 +1,13 @@
 # Cloud Monitoring
 
+## 2026-06-12
+
+### Change
+
+All `agent.googleapis.com/processes` metrics are retained for 24 months. For
+more information, see [Data retention](https://docs.cloud.google.com/monitoring/quotas#data_retention_policy).
+
+---
 ## 2026-06-05
 
 ### Feature

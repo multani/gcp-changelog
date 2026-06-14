@@ -28,6 +28,14 @@ Key Highlights:
 
 For more information, see [Search cases and case history](https://docs.cloud.google.com/chronicle/docs/investigation/search-and-search-case-history).
 
+### Feature
+
+**[Spotlight Feature] Investigate detections in Google SecOps Search**
+
+Google SecOps Search now supports querying, filtering, and analyzing system-generated detections. When searching on events or entities, matching detections will now appear in the **Alerts and Detections** tab, providing a more holistic workflow for threat investigation.
+
+For more details, see [Investigate detections in Search](https://docs.cloud.google.com/chronicle/docs/investigation/investigate-detections-in-search).
+
 ### Announcement
 
 **Asynchronous Search APIs for large datasets**
@@ -51,9 +59,9 @@ and [Result limits for data sources](https://docs.cloud.google.com/chronicle/doc
 
 ### Feature
 
-**UDM fields now show whether data is enriched or not**
+**UDM fields now show the sources of enrichment**
 
-The new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain values that Google SecOps generates to provide additional context about artifacts in your environment.
+The new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain additional metadata values that indicate the source of the enriched data.
 
 For more information, see: [Viewing events](https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events).
 

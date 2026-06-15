@@ -1,5 +1,21 @@
 # AlloyDB for PostgreSQL
 
+## 2026-06-15
+
+### Feature
+
+The Database Insights remote Model Context Protocol (MCP) server now supports
+the following advanced query insights tools for AlloyDB for PostgreSQL:
+
+* `get_advanced_aggregated_query_stats`
+* `get_advanced_aggregated_wait_event_stats`
+* `get_advanced_time_series_query_stats`
+* `get_advanced_time_series_wait_event_stats`
+* `get_index_recommendations`
+
+For more information, see [Database Insights remote MCP server](https://docs.cloud.google.com/alloydb/docs/reference/mcp/databaseinsights/mcp/index).
+
+---
 ## 2026-06-02
 
 ### Feature

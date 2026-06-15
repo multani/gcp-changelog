@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-06-15
+
+### Feature
+
+You can resize the width of table columns in BigQuery Studio for
+BigQuery listings such as datasets, repositories, job history,
+and connections. To resize a column, hover over the column divider and drag it
+to your preferred width.
+
+---
 ## 2026-06-12
 
 ### Feature

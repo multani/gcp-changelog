@@ -1,5 +1,17 @@
 # AI Hypercomputer
 
+## 2026-06-15
+
+### Feature
+
+**Preview**: Before you create Spot VMs, you can view the real-time
+availability, estimated uptime, historical preemption rate, and pricing for a
+specific machine type and location. This information helps you maximize the
+chances of successfully creating Spot VMs and choose the
+configuration that best fits your workload needs and budget. For more
+information, see [Use Spot](https://docs.cloud.google.com/ai-hypercomputer/docs/consumption-models#spot).
+
+---
 ## 2026-04-16
 
 ### Feature

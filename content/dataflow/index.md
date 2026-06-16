@@ -1,5 +1,37 @@
 # Dataflow
 
+## 2026-06-15
+
+### Feature
+
+Dataflow has updated and expanded its pipeline update features for
+streaming jobs:
+
+* **Automated stop-and-replace updates**: You can perform automated,
+  declarative stop-and-replace updates to streaming jobs.
+* **Parallel updates with the same job name**: When you perform automated
+  parallel updates, you can use the same job name for the new replacement job.
+* **Auto-cancel draining jobs**: When performing parallel or stop-and-replace
+  updates, you can configure Dataflow to automatically cancel
+  the old job if it does not finish draining after a timeout you specify.
+* **Update strategy configuration**: You can explicitly choose between a
+  parallel update (`update_strategy_parallel_job_update`) and a standard
+  in-place update (`update_strategy_in_place_update`) while keeping all other
+  configuration the same.
+* **Template upsert functionality**: When launching pipelines from classic
+  templates, flex templates, Terraform, or Config Connector, you can use the
+  `create_or_update_job` experiment to enable automatic create-or-update
+  (upsert) behavior. If an active job with the specified name already exists,
+  it is updated. Otherwise, a new job is created.
+
+For more information, see [Automated stop and
+replace](https://docs.cloud.google.com/dataflow/docs/guides/upgrade-guide#automated-stop-replace), [Automated
+parallel pipeline
+updates](https://docs.cloud.google.com/dataflow/docs/guides/upgrade-guide#automated-parallel-updates), and
+[Automatic create or update (upsert) for
+templates](https://docs.cloud.google.com/dataflow/docs/guides/upgrade-guide#templates-create-or-update).
+
+---
 ## 2026-04-22
 
 ### Feature

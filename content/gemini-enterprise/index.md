@@ -1,5 +1,37 @@
 # Gemini Enterprise
 
+## 2026-06-15
+
+### Feature
+
+**Gemini Enterprise: Observability settings for individual agents (Preview)**
+
+You can now configure observability settings for individual agents in
+Agent Designer employee-made agents. This allows you to monitor metrics in
+Metrics Explorer and view trace results in Trace Explorer for specific
+agents.
+
+Observability settings for individual agents are configured inside the
+agent-level settings. Previously, observability was only available at the
+application level, which applies to the Core Assistant agent.
+
+This feature is in Public Preview. For more information, see
+[Manage observability settings](https://docs.cloud.google.com/gemini/enterprise/docs/manage-observability-settings).
+
+---
+## 2026-06-12
+
+### Feature
+
+**Gemini Enterprise mobile app: General availability (GA) for Google Identity users**
+
+The Gemini Enterprise mobile app is generally available (GA) for organizations using Google Identity as their identity provider. Users can access their agents, search enterprise data, utilize voice features, and perform interactive actions from iOS and Android devices.
+
+With this release, administrators can display a configuration QR code on the web app homepage to enable user access by scanning the QR code. For organizations using Microsoft Entra ID, access to the mobile app is in GA with allowlist.
+
+To learn more, see [Configure the mobile app](https://docs.cloud.google.com/gemini/enterprise/docs/configure-mobile-app) and [Use the mobile app](https://docs.cloud.google.com/gemini/enterprise/docs/use-the-mobile-app).
+
+---
 ## 2026-06-09
 
 ### Feature

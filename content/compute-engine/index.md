@@ -1,5 +1,26 @@
 # Compute Engine
 
+## 2026-06-15
+
+### Feature
+
+**Preview**: Before you create Spot VMs, you can view the following
+information for a specific machine type and location:
+
+* **You can view the real-time obtainability and estimated uptime**. This
+  information helps you maximize your chances of successfully creating
+  Spot VMs, as well as help ensure that your workload starts
+  and runs efficiently.
+* **You can view historical and current preemption rate and pricing**. This
+  information helps you compare and choose the configuration that best fits
+  your workload needs and budget.
+
+For more information, see
+[View the availability of Spot VMs](https://docs.cloud.google.com/compute/docs/instances/view-vm-availability)
+and
+[View the preemption rate and pricing for Spot VMs](https://docs.cloud.google.com/compute/docs/instances/view-spot-preemption-price).
+
+---
 ## 2026-06-11
 
 ### Feature

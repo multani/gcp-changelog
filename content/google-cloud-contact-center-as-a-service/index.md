@@ -1,5 +1,129 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-15
+
+### Feature
+
+**New child queues filter option**
+
+Dashboards that have the **Queue Name** filter now also have a **Child Queues**
+checkbox. Select **Yes** if you want to include all child queues of the
+specified queue. There's also a new **Child Queues (Yes / No)** filter available
+in Explores that have the **Queue Name** filter.
+
+### Feature
+
+**The Agent & Queue Status (Live) Explore contains new real-time agent and queue metrics**
+
+The **Agent & Queue Status (Live)** Explore contains the following new metrics:
+
+* **In Call**: the number of agents currently on a call
+* **Available / Waiting**: the number of agents available and waiting for the
+  next contact
+* **Contacts in Queue**: the number of calls currently waiting in the queue
+
+### Feature
+
+**Link directly to CSAT scores in your CRM from the CSAT dashboards**
+
+In the **CSAT Interactions** table of the **CSAT - Calls** and **CSAT - Chats**
+dashboards, next to the **Session ID** numbers, links to the associated CSAT
+scores in your CRM are now available. You can go directly to the CSAT scores
+without needing to search for them in your CRM.
+
+For more information, see [CSAT dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-csat).
+
+### Feature
+
+**Updates to the Real-time Queue Monitoring - Calls dashboard**
+
+The **Real-time Queue Monitoring - Calls** dashboard now includes the following
+metrics tiles:
+
+* **Total Rolled Over Pending Callbacks**
+* **Total Rolled Over Completed Callbacks**
+* **Avg CSAT Calls**
+
+For more information, see [Queue monitoring dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-queue-monitor).
+
+### Feature
+
+**Updates to the Queue Performance dashboards**
+
+* The **Queue Performance - Calls** and **Queue Performance - Chats**
+  dashboards now include the following:
+
+  + A new **Interaction Type** filter
+  + A new **Interaction Type** column in the **Queue Detailed Table**
+* The **Queue Performance - Calls** dashboard now includes the following
+  metrics tiles:
+
+  + **Total Rolled Over Completed Callbacks**
+  + **Total Rolled Over Pending Callbacks**
+
+### Feature
+
+**Repeat contact data in the Queue Performance dashboards**
+
+The **Queue Summary Table** of the **Queue Performance - Calls** and **Queue
+Performance - Chats** dashboards now includes the following columns:
+
+* **Total Repeat Contacts**
+* **Repeat Contact %**
+
+For more information, see [Queue Performance dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance).
+
+### Fixed
+
+The following issues were addressed in this release:
+
+* Fixed an issue where **Repeat Contact %** values in the **Queue Summary
+  Table** of the **Queue Performance - Calls** dashboard exceeded 100%.
+* Fixed an issue where the **Date** filter in Explores returned no results
+  when **is on or after** was set for an absolute date.
+* Removed the **Total Logged in Time** metrics tile from the **Agent
+  Availability** dashboard.
+* Fixed an issue where language labels were missing from the advanced
+  reporting dashboards.
+* Fixed an issue that occurred when filtering by chat ID in the **All
+  Interactions - Chats** dashboard. The wrong chat ID appeared in the
+  **Virtual Agent Chats** table.
+* Fixed an issue where disposition codes were missing or blank for outbound
+  calls in the **Call Agent Metrics (Historical)** dashboard.
+
+---
+## 2026-06-12
+
+### Announcement
+
+**Google Cloud CCaaS 4.40**
+
+We've released version 4.40 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue with Salesforce where virtual agent responses appeared out of
+  order in transcripts.
+* Fixed an issue where the advanced reporting dashboards didn't load.
+* Fixed an issue where PDF and audio attachments weren't visible to agents
+  after a chat transfer.
+* Fixed an issue where end-users were incorrectly placed on hold following a
+  cold transfer to a queue.
+* Fixed an issue where MP3 audio files for agent call deflections couldn't be
+  uploaded.
+* Fixed an issue where agents were automatically logged out due to inactivity
+  while still engaged in active calls or chats.
+* Fixed an issue where a bulk user upload with blank phone number columns
+  caused existing direct inbound phone numbers to become unassigned from agent
+  profiles.
+
+---
 ## 2026-06-11
 
 ### Announcement

@@ -1,6 +1,16 @@
 {
   "name": "Dataflow",
   "entries": {
+    "2026-06-15": [
+      {
+        "kind": "Feature",
+        "content": "Dataflow has updated and expanded its pipeline update features for\nstreaming jobs:\n\n* **Automated stop-and-replace updates**: You can perform automated,\n  declarative stop-and-replace updates to streaming jobs.\n* **Parallel updates with the same job name**: When you perform automated\n  parallel updates, you can use the same job name for the new replacement job.\n* **Auto-cancel draining jobs**: When performing parallel or stop-and-replace\n  updates, you can configure Dataflow to automatically cancel\n  the old job if it does not finish draining after a timeout you specify.\n* **Update strategy configuration**: You can explicitly choose between a\n  parallel update (`update_strategy_parallel_job_update`) and a standard\n  in-place update (`update_strategy_in_place_update`) while keeping all other\n  configuration the same.\n* **Template upsert functionality**: When launching pipelines from classic\n  templates, flex templates, Terraform, or Config Connector, you can use the\n  `create_or_update_job` experiment to enable automatic create-or-update\n  (upsert) behavior. If an active job with the specified name already exists,\n  it is updated. Otherwise, a new job is created.\n\nFor more information, see [Automated stop and\nreplace](https://docs.cloud.google.com/dataflow/docs/guides/upgrade-guide#automated-stop-replace), [Automated\nparallel pipeline\nupdates](https://docs.cloud.google.com/dataflow/docs/guides/upgrade-guide#automated-parallel-updates), and\n[Automatic create or update (upsert) for\ntemplates](https://docs.cloud.google.com/dataflow/docs/guides/upgrade-guide#templates-create-or-update).",
+        "summary": {
+          "title": "Enhanced Dataflow Streaming Updates",
+          "summary": "Dataflow now offers more flexible and automated options for updating streaming jobs, including stop-and-replace, parallel updates with the same job name, and auto-cancellation of draining jobs. You can also configure update strategies and use template upsert functionality for easier pipeline management."
+        }
+      }
+    ],
     "2026-04-22": [
       {
         "kind": "Feature",

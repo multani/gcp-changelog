@@ -1,5 +1,16 @@
 # Managed Service for Apache Airflow
 
+## 2026-06-12
+
+### Feature
+
+New Managed Airflow (Gen 2) environments created while the Restrict Endpoint
+Usage organization policy is active now use regional endpoints for services
+like Cloud Storage, Cloud Logging, Pub/Sub, and Data Lineage. For more
+information, see
+[Configure environments with Restrict Endpoint Usage policy](https://docs.cloud.google.com/composer/docs/composer-2/configure-restrict-endpoint-usage-environments).
+
+---
 ## 2026-06-08
 
 ### Change

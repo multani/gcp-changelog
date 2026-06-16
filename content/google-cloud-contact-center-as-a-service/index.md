@@ -2,6 +2,12 @@
 
 ## 2026-06-15
 
+### Announcement
+
+**Advanced reporting dashboards 4.36**
+
+We've released version 4.36 of the advanced reporting dashboards.
+
 ### Feature
 
 **New child queues filter option**

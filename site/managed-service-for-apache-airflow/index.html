@@ -2592,6 +2592,14 @@
 
 
 <h1 id="managed-service-for-apache-airflow">Managed Service for Apache Airflow</h1>
+<h2 id="2026-06-12">2026-06-12</h2>
+<h3 id="feature">Feature</h3>
+<p>New Managed Airflow (Gen 2) environments created while the Restrict Endpoint
+Usage organization policy is active now use regional endpoints for services
+like Cloud Storage, Cloud Logging, Pub/Sub, and Data Lineage. For more
+information, see
+<a href="https://docs.cloud.google.com/composer/docs/composer-2/configure-restrict-endpoint-usage-environments">Configure environments with Restrict Endpoint Usage policy</a>.</p>
+<hr />
 <h2 id="2026-06-08">2026-06-08</h2>
 <h3 id="change">Change</h3>
 <p>Several API dependencies that aren't required by Managed Airflow (Gen 3) are
@@ -2628,7 +2636,7 @@ projects where the Cloud Composer API is already enabled aren't impacted.</p>
 </ul>
 <hr />
 <h2 id="2026-06-02">2026-06-02</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><em>(Managed Airflow Gen 3)</em> You can now
 <a href="https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network#cloud-run-traffic">access Cloud Run endpoints restricted to internal ingress traffic</a>
 through your environment's network attachment. This feature is available
@@ -2636,14 +2644,14 @@ through gcloud CLI beta commands and beta Cloud Composer API in all Managed
 Airflow (Gen 3) versions.</p>
 <hr />
 <h2 id="2026-05-27">2026-05-27</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Managed Service for Apache Airflow now
 <a href="https://docs.cloud.google.com/composer/docs/composer-3/create-and-manage-tags">supports Google Cloud tags</a>
 for environments.</p>
 <p><a href="https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview">Tags</a>
 provide a way to create annotations for resources, and conditionally allow or
 deny policies based on whether a resource has a specific tag.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>In Managed Airflow (Gen 3), it is now possible to
 create Kubernetes Secrets with the <code>kubernetes.io/dockerconfigjson</code>
 <a href="https://kubernetes.io/docs/concepts/configuration/secret/#secret-types">secret type</a>
@@ -2764,6 +2772,9 @@ composer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-*.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#managed-service-for-apache-airflow">Managed Service for Apache Airflow</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-12" class="nav-link">2026-06-12</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-08" class="nav-link">2026-06-08</a>
           </li>

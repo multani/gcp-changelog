@@ -1,5 +1,48 @@
 # Cloud Billing
 
+## 2026-06-15
+
+### Feature
+
+**New filters and group-by options available in Cloud Billing Reports**
+
+Cloud Billing has added two **filters** to the **Billing Reports**
+page to help you analyze and understand your costs:
+
+* **Products**: Google Cloud
+  [Products](https://docs.cloud.google.com/billing/docs/how-to/reports#filter-by-products)
+  consist of a group of SKUs (potentially from more than one
+  [Google Cloud *Service*](https://docs.cloud.google.com/billing/docs/how-to/reports#filter-by-services))
+  that work together and are sold as a single service, sometimes referred to as
+  a *logical* product family or a subscription service. Examples include
+  Gemini Enterprise and Firebase App Hosting.
+* **Originating services**: An
+  [Originating service](https://docs.cloud.google.com/billing/docs/how-to/reports#filter-by-orig-services)
+  is a Google Cloud service that causes usage in another service. For
+  example, Google Kubernetes Engine (GKE) can cause usage in Compute Engine. In
+  this use case, when you are viewing the Compute Engine usage and
+  costs, GKE is an originating service when it causes usage
+  in Compute Engine.
+
+You can also
+[**Group by**](https://docs.cloud.google.com/billing/docs/how-to/reports#group-by) the new filters, to
+summarize your costs by the dimension you select.
+
+* **Product**: When you
+  [group by *Product*](https://docs.cloud.google.com/billing/docs/how-to/reports#group-by-product),
+  the Report shows your costs and savings summarized by Product.
+* **Originating service > Service**: When you
+  [group by *Originating service > Service*](https://docs.cloud.google.com/billing/docs/how-to/reports#group-by-orig-service),
+  the Report shows your costs and savings summarized by Originating service.
+  In the **report table**, you can expand each row for an *Originating service*
+  to see your costs summarized by each *Service* that is associated with the
+  *Originating service*.
+
+Learn more about [analyzing billing data and cost trends with Reports](https://docs.cloud.google.com/billing/docs/how-to/reports).
+
+Learn how to [view Gemini Enterprise costs in Cloud Billing reports](https://docs.cloud.google.com/billing/docs/how-to/reports/gemini-enterprise-costs).
+
+---
 ## 2026-06-10
 
 ### Feature

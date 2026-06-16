@@ -1,5 +1,23 @@
 # Google SecOps SIEM
 
+## 2026-06-16
+
+### Feature
+
+**[Spotlight Feature] Ask Gemini Cloud Assist in Feed Management**
+
+Google SecOps now provides Gemini Cloud Assist (GCA) directly within the Feed Management interface to help you with feed creation, setup, and general troubleshooting questions.
+
+A new **Ask Gemini Cloud Assist** button is now available in the Feed Management interface. You can click this button to open the Gemini Cloud Assist panel and ask questions to get guidance on:
+\* Configuring and managing data feeds.
+\* Understanding ingestion pre-requisites and setup steps for different log sources.
+\* Resolving common setup issues.
+
+*Note: Gemini Cloud Assist provides recommendations and answers to your questions, but does not perform configuration changes on your behalf. You must apply any recommended changes manually to your feeds.*
+
+For more information, see [Feed management overview](https://docs.cloud.google.com/chronicle/docs/administration/feed-management-overview).
+
+---
 ## 2026-06-13
 
 ### Feature

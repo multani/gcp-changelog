@@ -1,0 +1,143 @@
+{
+  "name": "573.0.0 (2026-06-16)",
+  "entries": {
+    "2026-06-16": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Anthos Multi-Cloud)** Deprecated `gcloud container attached clusters get-credentials`.\n  Use `gcloud container fleet memberships get-credentials` to get credentials\n  for a running Attached cluster.",
+        "summary": {
+          "title": "Attached Clusters Credentials Command Deprecated",
+          "summary": "The `gcloud container attached clusters get-credentials` command is deprecated. Please use `gcloud container fleet memberships get-credentials` for managing Attached cluster credentials going forward."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Updated Windows bundled Python for the `gcloud` CLI to 3.14.5.",
+        "summary": {
+          "title": "gcloud CLI Python update",
+          "summary": "The gcloud CLI has been updated with a new bundled Python version, 3.14.5, for Windows users. This update ensures the CLI is running on the latest Python release."
+        }
+      },
+      {
+        "kind": "AI",
+        "content": "* Added `gcloud ai tuning-jobs` command group to manage Vertex AI supervised fine-tuning jobs.",
+        "summary": {
+          "title": "Manage AI tuning jobs",
+          "summary": "You can now manage supervised fine-tuning jobs for AI models using the new `gcloud ai tuning-jobs` command group. This simplifies the process of working with Vertex AI tuning jobs."
+        }
+      },
+      {
+        "kind": "App Engine",
+        "content": "* Updated the Java SDK to version 5.0.4 build from the open source project\n  <https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.0.4>.\n* fixed <https://github.com/GoogleCloudPlatform/appengine-java-standard/issues/506>.",
+        "summary": {
+          "title": "App Engine Java SDK updated",
+          "summary": "The Java SDK for App Engine has been updated to version 5.0.4, incorporating the latest changes from the open source project. This update also addresses a previously identified issue."
+        }
+      },
+      {
+        "kind": "Artifact Registry",
+        "content": "* Added `gcloud artifacts image-streaming-cache` command group to manage\n  image streaming caches per region. This group includes `create`,\n  `describe`, `delete`, and `list` commands.",
+        "summary": {
+          "title": "Manage image streaming caches",
+          "summary": "New commands are available to manage image streaming caches per region. You can now create, describe, delete, and list these caches using the `gcloud artifacts image-streaming-cache` command group."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Promoted `--unity-service-principal-application-id` flag for `gcloud biglake iceberg catalogs create` and `update` to BETA, making it publicly visible.\n* Promoted BigLake catalogs and arguments for `gcloud biglake iceberg catalogs` to GA.",
+        "summary": {
+          "title": "BigLake catalog management now generally available",
+          "summary": "BigLake catalog management commands are now generally available. The `--unity-service-principal-application-id` flag for creating and updating BigLake Iceberg catalogs has been promoted to Beta."
+        }
+      },
+      {
+        "kind": "Cloud Data Lineage",
+        "content": "* Added `gcloud datalineage` command group to manage Cloud Data Lineage resources.\n* Added `gcloud datalineage config describe` and `gcloud datalineage config update` commands to manage Data Lineage configurations.",
+        "summary": {
+          "title": "Manage Cloud Data Lineage with gcloud",
+          "summary": "The `gcloud datalineage` command group is now available for managing Cloud Data Lineage resources. You can use `gcloud datalineage config describe` and `gcloud datalineage config update` to manage Data Lineage configurations."
+        }
+      },
+      {
+        "kind": "Cloud Datastream",
+        "content": "* Added support for Dataverse, Salesforce Marketing Cloud, and ServiceNow connection profiles to `gcloud datastream connection-profiles create` and `update` commands.\n* Added support for Dataverse, Salesforce Marketing Cloud, and ServiceNow streams to `gcloud datastream streams create` and `update` commands.",
+        "summary": {
+          "title": "New Datastream Integrations Available",
+          "summary": "Datastream now supports Dataverse, Salesforce Marketing Cloud, and ServiceNow. You can use these new integrations with both connection profiles and stream configurations via the gcloud CLI."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Promoted `--readiness_probe` in `gcloud run deploy` and `gcloud run services update` to GA.",
+        "summary": {
+          "title": "Cloud Run readiness probes now generally available",
+          "summary": "The `--readiness_probe` flag for Cloud Run services is now generally available. This feature allows you to control when your service is ready to receive traffic, improving application reliability and deployment stability."
+        }
+      },
+      {
+        "kind": "Cloud Services",
+        "content": "* **API Keys**: Updated `gcloud services api-keys` `create` and `update`\n  commands' `--api-target` flag to accept a colon-separated list of `methods`\n  inline (e.g. `--api-target=\"service=foo,methods=m1:m2\"`).",
+        "summary": {
+          "title": "API Keys Commands Updated",
+          "summary": "The `gcloud services api-keys` `create` and `update` commands now support inline method lists for the `--api-target` flag. This allows specifying multiple methods directly within the flag, simplifying API key configuration."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* Promoted `gcloud storage batch-operations bucket-operations` commands to GA.",
+        "summary": {
+          "title": "Cloud Storage Batch Operations Now Generally Available",
+          "summary": "We are excited to announce that the `gcloud storage batch-operations bucket-operations` commands have been promoted to General Availability. This means you can now leverage these powerful batch operations for managing your Cloud Storage buckets in production environments. This update streamlines bulk management tasks, making it easier and more efficient to handle multiple bucket operations."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Added support for creating clusters using blueprints in `gcloud beta cluster-director clusters create`.",
+        "summary": {
+          "title": "Cluster creation with blueprints",
+          "summary": "You can now create clusters using blueprints with the `gcloud beta cluster-director clusters create` command. This simplifies the process of setting up new clusters by leveraging pre-defined configurations."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Promoted `--action-on-vm-failed-health-check` flag to GA for `gcloud compute instance-groups managed create` and `gcloud compute instance-groups managed update`.\n* Fixed an issue where waiting for asynchronous operations would fail for certain global nested resources (like `cross-site-networks wire-groups`).\n* Added `any-reservation-then-fail` choice to `--reservation-affinity` flag in\n  beta for `gcloud compute instances create`,\n  `gcloud compute instances bulk create`,\n  `gcloud compute instance-templates create`,\n  `gcloud compute instances create-with-container`, and\n  `gcloud compute instance-templates create-with-container` commands.\n* Promoted `--include-disks` and `--exclude-disks` flags for `gcloud compute machine-images create` to the BETA release track.",
+        "summary": {
+          "title": "Compute Engine updates",
+          "summary": "New features for managed instance groups, improved asynchronous operation handling, and enhanced reservation options are now available for Compute Engine. Additionally, machine image creation flags have reached beta."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Added `--dataplane-optimization-mode` flag to `gcloud container clusters create` to select scalability mode for Dataplane V2.\n* Deprecated None value of --release-channel flag from gcloud container clusters create and update command. Use RAPID, REGULAR, STABLE or EXTENDED instead.",
+        "summary": {
+          "title": "Kubernetes Engine Dataplane V2 Scalability",
+          "summary": "New flag added for Dataplane V2 scalability mode selection. Release channel 'None' is deprecated; use RAPID, REGULAR, STABLE, or EXTENDED instead."
+        }
+      },
+      {
+        "kind": "Network Connectivity",
+        "content": "* Updated help text for `--region` flag in `gcloud network-connectivity transports create` to include supported regions list.",
+        "summary": {
+          "title": "Network Connectivity Transport Regions Updated",
+          "summary": "The help text for the --region flag in `gcloud network-connectivity transports create` has been updated. It now includes a list of supported regions for creating network connectivity transports."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Added `gcloud network-security operations` command group (`describe`, `wait`, `list`, `cancel`).\n* Promoted project scoping for\n  `gcloud network-security firewall-endpoints` commands\n  (`create`, `delete`, `describe`, `list`, `update`) to GA.\n* Promoted `gcloud network-security security-profiles wildfire-analysis`\n  commands to BETA.\n* Promoted\n  `gcloud network-security firewall-endpoints wildfire-verdict-change-requests`\n  commands to beta.\n* Promoted WildFire-related flags in\n  `gcloud network-security firewall-endpoints create` command to\n  BETA.\n* Promoted WildFire-related flags in\n  `gcloud network-security firewall-endpoints update` command to\n  BETA.",
+        "summary": {
+          "title": "New network security features",
+          "summary": "We've expanded network security capabilities with new operations commands and promoted several features, including firewall endpoints and WildFire analysis, to General Availability and Beta. These updates enhance your ability to manage and secure your network resources."
+        }
+      },
+      {
+        "kind": "Recaptcha",
+        "content": "* Fixed an issue where `gcloud recaptcha keys create` ignored `--testing-score` when creating Android or iOS keys.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Recaptcha: Fix for key creation",
+          "summary": "An issue has been resolved where the `--testing-score` flag was not being applied correctly during the creation of Android or iOS Recaptcha keys using the `gcloud recaptcha keys create` command. This ensures that testing scores are now properly configured for these key types."
+        }
+      }
+    ]
+  }
+}

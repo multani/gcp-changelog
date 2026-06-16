@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 573.0.0 (2026-06-16)</title>
+  <subtitle>Changelog for Google Cloud product: 573.0.0 (2026-06-16)</subtitle>
+  <updated>2026-06-16T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/573-0-0--2026-06-16-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:breaking changes:0</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Anthos Multi-Cloud)</strong> Deprecated <code>gcloud container attached clusters get-credentials</code>.
+  Use <code>gcloud container fleet memberships get-credentials</code> to get credentials
+  for a running Attached cluster.</li>
+</ul>]]></content>
+    <summary>The `gcloud container attached clusters get-credentials` command is deprecated. Please use `gcloud container fleet memberships get-credentials` for managing Attached cluster credentials going forward.</summary>
+    <title>Breaking Changes: Attached Clusters Credentials Command Deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:google cloud cli:1</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated Windows bundled Python for the <code>gcloud</code> CLI to 3.14.5.</li>
+</ul>]]></content>
+    <summary>The gcloud CLI has been updated with a new bundled Python version, 3.14.5, for Windows users. This update ensures the CLI is running on the latest Python release.</summary>
+    <title>Google Cloud CLI: gcloud CLI Python update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:ai:2</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud ai tuning-jobs</code> command group to manage Vertex AI supervised fine-tuning jobs.</li>
+</ul>]]></content>
+    <summary>You can now manage supervised fine-tuning jobs for AI models using the new `gcloud ai tuning-jobs` command group. This simplifies the process of working with Vertex AI tuning jobs.</summary>
+    <title>AI: Manage AI tuning jobs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:app engine:3</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated the Java SDK to version 5.0.4 build from the open source project
+  <a href="https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.0.4">https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.0.4</a>.</li>
+<li>fixed <a href="https://github.com/GoogleCloudPlatform/appengine-java-standard/issues/506">https://github.com/GoogleCloudPlatform/appengine-java-standard/issues/506</a>.</li>
+</ul>]]></content>
+    <summary>The Java SDK for App Engine has been updated to version 5.0.4, incorporating the latest changes from the open source project. This update also addresses a previously identified issue.</summary>
+    <title>App Engine: App Engine Java SDK updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:artifact registry:4</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud artifacts image-streaming-cache</code> command group to manage
+  image streaming caches per region. This group includes <code>create</code>,
+  <code>describe</code>, <code>delete</code>, and <code>list</code> commands.</li>
+</ul>]]></content>
+    <summary>New commands are available to manage image streaming caches per region. You can now create, describe, delete, and list these caches using the `gcloud artifacts image-streaming-cache` command group.</summary>
+    <title>Artifact Registry: Manage image streaming caches</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:biglake:5</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--unity-service-principal-application-id</code> flag for <code>gcloud biglake iceberg catalogs create</code> and <code>update</code> to BETA, making it publicly visible.</li>
+<li>Promoted BigLake catalogs and arguments for <code>gcloud biglake iceberg catalogs</code> to GA.</li>
+</ul>]]></content>
+    <summary>BigLake catalog management commands are now generally available. The `--unity-service-principal-application-id` flag for creating and updating BigLake Iceberg catalogs has been promoted to Beta.</summary>
+    <title>BigLake: BigLake catalog management now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:cloud data lineage:6</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud datalineage</code> command group to manage Cloud Data Lineage resources.</li>
+<li>Added <code>gcloud datalineage config describe</code> and <code>gcloud datalineage config update</code> commands to manage Data Lineage configurations.</li>
+</ul>]]></content>
+    <summary>The `gcloud datalineage` command group is now available for managing Cloud Data Lineage resources. You can use `gcloud datalineage config describe` and `gcloud datalineage config update` to manage Data Lineage configurations.</summary>
+    <title>Cloud Data Lineage: Manage Cloud Data Lineage with gcloud</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:cloud datastream:7</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for Dataverse, Salesforce Marketing Cloud, and ServiceNow connection profiles to <code>gcloud datastream connection-profiles create</code> and <code>update</code> commands.</li>
+<li>Added support for Dataverse, Salesforce Marketing Cloud, and ServiceNow streams to <code>gcloud datastream streams create</code> and <code>update</code> commands.</li>
+</ul>]]></content>
+    <summary>Datastream now supports Dataverse, Salesforce Marketing Cloud, and ServiceNow. You can use these new integrations with both connection profiles and stream configurations via the gcloud CLI.</summary>
+    <title>Cloud Datastream: New Datastream Integrations Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:cloud run:8</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--readiness_probe</code> in <code>gcloud run deploy</code> and <code>gcloud run services update</code> to GA.</li>
+</ul>]]></content>
+    <summary>The `--readiness_probe` flag for Cloud Run services is now generally available. This feature allows you to control when your service is ready to receive traffic, improving application reliability and deployment stability.</summary>
+    <title>Cloud Run: Cloud Run readiness probes now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:cloud services:9</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>API Keys</strong>: Updated <code>gcloud services api-keys</code> <code>create</code> and <code>update</code>
+  commands' <code>--api-target</code> flag to accept a colon-separated list of <code>methods</code>
+  inline (e.g. <code>--api-target="service=foo,methods=m1:m2"</code>).</li>
+</ul>]]></content>
+    <summary>The `gcloud services api-keys` `create` and `update` commands now support inline method lists for the `--api-target` flag. This allows specifying multiple methods directly within the flag, simplifying API key configuration.</summary>
+    <title>Cloud Services: API Keys Commands Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:cloud storage:10</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud storage batch-operations bucket-operations</code> commands to GA.</li>
+</ul>]]></content>
+    <summary>We are excited to announce that the `gcloud storage batch-operations bucket-operations` commands have been promoted to General Availability. This means you can now leverage these powerful batch operations for managing your Cloud Storage buckets in production environments. This update streamlines bulk management tasks, making it easier and more efficient to handle multiple bucket operations.</summary>
+    <title>Cloud Storage: Cloud Storage Batch Operations Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:cluster director:11</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for creating clusters using blueprints in <code>gcloud beta cluster-director clusters create</code>.</li>
+</ul>]]></content>
+    <summary>You can now create clusters using blueprints with the `gcloud beta cluster-director clusters create` command. This simplifies the process of setting up new clusters by leveraging pre-defined configurations.</summary>
+    <title>Cluster Director: Cluster creation with blueprints</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:compute engine:12</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--action-on-vm-failed-health-check</code> flag to GA for <code>gcloud compute instance-groups managed create</code> and <code>gcloud compute instance-groups managed update</code>.</li>
+<li>Fixed an issue where waiting for asynchronous operations would fail for certain global nested resources (like <code>cross-site-networks wire-groups</code>).</li>
+<li>Added <code>any-reservation-then-fail</code> choice to <code>--reservation-affinity</code> flag in
+  beta for <code>gcloud compute instances create</code>,
+  <code>gcloud compute instances bulk create</code>,
+  <code>gcloud compute instance-templates create</code>,
+  <code>gcloud compute instances create-with-container</code>, and
+  <code>gcloud compute instance-templates create-with-container</code> commands.</li>
+<li>Promoted <code>--include-disks</code> and <code>--exclude-disks</code> flags for <code>gcloud compute machine-images create</code> to the BETA release track.</li>
+</ul>]]></content>
+    <summary>New features for managed instance groups, improved asynchronous operation handling, and enhanced reservation options are now available for Compute Engine. Additionally, machine image creation flags have reached beta.</summary>
+    <title>Compute Engine: Compute Engine updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:kubernetes engine:13</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--dataplane-optimization-mode</code> flag to <code>gcloud container clusters create</code> to select scalability mode for Dataplane V2.</li>
+<li>Deprecated None value of --release-channel flag from gcloud container clusters create and update command. Use RAPID, REGULAR, STABLE or EXTENDED instead.</li>
+</ul>]]></content>
+    <summary>New flag added for Dataplane V2 scalability mode selection. Release channel 'None' is deprecated; use RAPID, REGULAR, STABLE, or EXTENDED instead.</summary>
+    <title>Kubernetes Engine: Kubernetes Engine Dataplane V2 Scalability</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:network connectivity:14</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated help text for <code>--region</code> flag in <code>gcloud network-connectivity transports create</code> to include supported regions list.</li>
+</ul>]]></content>
+    <summary>The help text for the --region flag in `gcloud network-connectivity transports create` has been updated. It now includes a list of supported regions for creating network connectivity transports.</summary>
+    <title>Network Connectivity: Network Connectivity Transport Regions Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:network security:15</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud network-security operations</code> command group (<code>describe</code>, <code>wait</code>, <code>list</code>, <code>cancel</code>).</li>
+<li>Promoted project scoping for
+  <code>gcloud network-security firewall-endpoints</code> commands
+  (<code>create</code>, <code>delete</code>, <code>describe</code>, <code>list</code>, <code>update</code>) to GA.</li>
+<li>Promoted <code>gcloud network-security security-profiles wildfire-analysis</code>
+  commands to BETA.</li>
+<li>Promoted
+  <code>gcloud network-security firewall-endpoints wildfire-verdict-change-requests</code>
+  commands to beta.</li>
+<li>Promoted WildFire-related flags in
+  <code>gcloud network-security firewall-endpoints create</code> command to
+  BETA.</li>
+<li>Promoted WildFire-related flags in
+  <code>gcloud network-security firewall-endpoints update</code> command to
+  BETA.</li>
+</ul>]]></content>
+    <summary>We've expanded network security capabilities with new operations commands and promoted several features, including firewall endpoints and WildFire analysis, to General Availability and Beta. These updates enhance your ability to manage and secure your network resources.</summary>
+    <title>Network Security: New network security features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:573-0-0--2026-06-16-:2026-06-16:recaptcha:16</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where <code>gcloud recaptcha keys create</code> ignored <code>--testing-score</code> when creating Android or iOS keys.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>An issue has been resolved where the `--testing-score` flag was not being applied correctly during the creation of Android or iOS Recaptcha keys using the `gcloud recaptcha keys create` command. This ensures that testing scores are now properly configured for these key types.</summary>
+    <title>Recaptcha: Recaptcha: Fix for key creation</title>
+  </entry>
+</feed>

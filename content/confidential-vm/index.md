@@ -1,5 +1,20 @@
 # Confidential VM
 
+## 2026-06-16
+
+### Feature
+
+Support for the accelerator-optimized
+[g4-standard-48 machine type](https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines#g4-vms)
+for securely running AI and ML workloads is available in
+[Preview](https://cloud.google.com/products#product-launch-stages), with the
+following specifications:
+
+* 5th Generation AMD EPYC Turin processor
+* AMD SEV
+* 1 NVIDIA RTX PRO 6000 GPU
+
+---
 ## 2026-04-14
 
 ### Security

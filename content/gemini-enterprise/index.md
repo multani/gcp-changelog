@@ -1,5 +1,23 @@
 # Gemini Enterprise
 
+## 2026-06-16
+
+### Feature
+
+**Gemini Enterprise: ServiceNow data store actions and federation**
+
+The ServiceNow data store supports federation and assistant actions in
+Gemini Enterprise.
+
+You can connect a ServiceNow site to search and read incidents, change
+requests, tasks, and knowledge base articles using natural language. You
+can also perform actions, such as creating and updating incidents,
+directly from the Gemini Enterprise app.
+
+This feature is generally available (GA). For more information, see
+[Connect ServiceNow](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicenow).
+
+---
 ## 2026-06-15
 
 ### Feature

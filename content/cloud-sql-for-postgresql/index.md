@@ -1,5 +1,16 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-06-16
+
+### Feature
+
+QueryData adds support for parameterized secure views (PSVs) to help secure
+applications that use natural language queries. For more information, see [Secure
+and control access to application data](https://docs.cloud.google.com/sql/docs/postgres/secure-app-data-parameterized-secure-views-qd).
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-12
 
 ### Feature

@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-06-16
+
+### Announcement
+
+**New Documentation changelogs**
+
+Google SecOps is now releasing a monthly changelog to capture major documentation updates.
+
+For more information, refer to [Documentation changelog](https://docs.cloud.google.com/chronicle/docs/changelogs/changelogs).
+
+---
 ## 2026-06-13
 
 ### Feature

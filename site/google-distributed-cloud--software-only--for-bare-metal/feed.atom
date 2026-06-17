@@ -2,9 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-06-05T00:00:00+00:00</updated>
+  <updated>2026-06-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-06-16:announcement:0</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.35.200-gke.66 is now available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.35.200-gke.66 runs on Kubernetes v1.35.3-gke.400.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud (software only) for bare metal, 1.35.200-gke.66, is now ready for download and upgrades. This release runs on Kubernetes v1.35.3-gke.400. Please ensure your third-party storage vendor is qualified for this version before upgrading.</summary>
+    <title>Announcement: New GDC Bare Metal Version Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-06-16:fixed:1</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.200-gke.66:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue where a transient or partial failure during node pool updates
+  could cause node taints or labels to become permanently stuck (stranded) on
+  worker nodes, even after you removed them from the NodePool custom resource
+  specification.</li>
+<li>Fixed an issue where, during the machine initialization phase, the
+    <code>etcd-events</code> pod read the stale data directory when it started
+    and attempted to reuse the old member ID to rejoin the cluster instead of the
+    new one. Trying to use the old member ID to rejoin the cluster resulted in an
+    infinite retry loop and caused the cluster to reject the connection. The fix
+    ensures the <code>/var/lib/etcd-events</code> directory is
+    cleared upon failure, and adds retry logic to <code>kubeadm-reset</code> to improve resiliency against transient API errors.</li>
+<li>Fixed an issue where, when enabling or updating etcd encryption, the API
+  server was terminated abruptly, causing transient connection timeouts or
+  failures for in-cluster workloads for up to five minutes.</li>
+<li>Fixed an issue where, during control plane certificate rotation or etcd
+  encryption updates, the installer stalled for three minutes per control plane node
+  while waiting for the local API server to restart, causing nodes to temporarily
+  report an Unknown status and triggering transient routing disruptions (such as
+  503 Service Unavailable or ImagePullBackOff errors) for workloads scheduled on
+  those nodes.</li>
+</ul>]]></content>
+    <summary>This release addresses several critical issues, including vulnerability fixes and improvements to node pool updates. It also resolves problems with etcd pod initialization, API server stability during encryption updates, and control plane certificate rotation, enhancing overall cluster reliability.</summary>
+    <title>Fixed: Maintenance release 1.35.200-gke.66</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

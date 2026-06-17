@@ -1,5 +1,12 @@
 # Managed Service for Apache Spark
 
+## 2026-06-16
+
+### Announcement
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): Rollout of the [new sub-minor versions without pre-configured channels](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions) will begin on June 22, 2026, delayed from the previously planned date of June 15, 2026 ETA.
+
+---
 ## 2026-05-29
 
 ### Announcement

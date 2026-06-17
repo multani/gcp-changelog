@@ -1,5 +1,17 @@
 # Dataflow
 
+## 2026-06-16
+
+### Feature
+
+Dataflow now supports NVIDIA RTX Pro 6000 GPUs. You can use this
+GPU model to run your Apache Beam pipelines on Dataflow. RTX
+Pro 6000 GPUs are recommended for large, medium, and small model inference
+workloads. To configure your workers with this GPU model, set the accelerator
+type to `nvidia-rtx-pro-6000`. For more information, see [Dataflow
+support for GPUs](https://docs.cloud.google.com/dataflow/docs/gpu/gpu-support).
+
+---
 ## 2026-06-15
 
 ### Feature

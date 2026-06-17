@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-06-16
+
+### Announcement
+
+Table Explorer behavior is moving to the **Reference** panel. This transition
+will occur in July 2026 or later. For more information, see
+[Table Explorer](https://docs.cloud.google.com/bigquery/docs/table-explorer).
+
+---
 ## 2026-06-15
 
 ### Feature

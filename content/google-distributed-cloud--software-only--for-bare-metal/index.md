@@ -1,5 +1,49 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-06-16
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.35.200-gke.66 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.35.200-gke.66 runs on Kubernetes v1.35.3-gke.400.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.35.200-gke.66:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed an issue where a transient or partial failure during node pool updates
+  could cause node taints or labels to become permanently stuck (stranded) on
+  worker nodes, even after you removed them from the NodePool custom resource
+  specification.
+  + Fixed an issue where, during the machine initialization phase, the
+    `etcd-events` pod read the stale data directory when it started
+    and attempted to reuse the old member ID to rejoin the cluster instead of the
+    new one. Trying to use the old member ID to rejoin the cluster resulted in an
+    infinite retry loop and caused the cluster to reject the connection. The fix
+    ensures the `/var/lib/etcd-events` directory is
+    cleared upon failure, and adds retry logic to `kubeadm-reset` to improve resiliency against transient API errors.
+* Fixed an issue where, when enabling or updating etcd encryption, the API
+  server was terminated abruptly, causing transient connection timeouts or
+  failures for in-cluster workloads for up to five minutes.
+* Fixed an issue where, during control plane certificate rotation or etcd
+  encryption updates, the installer stalled for three minutes per control plane node
+  while waiting for the local API server to restart, causing nodes to temporarily
+  report an Unknown status and triggering transient routing disruptions (such as
+  503 Service Unavailable or ImagePullBackOff errors) for workloads scheduled on
+  those nodes.
+
+---
 ## 2026-06-05
 
 ### Announcement

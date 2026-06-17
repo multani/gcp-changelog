@@ -17,6 +17,14 @@ A new **Ask Gemini Cloud Assist** button is now available in the Feed Management
 
 For more information, see [Feed management overview](https://docs.cloud.google.com/chronicle/docs/administration/feed-management-overview).
 
+### Announcement
+
+**New Documentation changelogs**
+
+Google SecOps is now releasing a monthly changelog to capture major documentation updates.
+
+For more information, refer to [Documentation changelog](https://docs.cloud.google.com/chronicle/docs/changelogs/changelogs).
+
 ---
 ## 2026-06-13
 

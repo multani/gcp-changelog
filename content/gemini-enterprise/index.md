@@ -22,6 +22,32 @@ This feature is generally available (GA). For more information, see
 
 ### Feature
 
+**Gemini Enterprise: New data stores and support for new actions (Public Preview)**
+
+The following data stores are available in Public Preview:
+
+* [AirOps](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airops)
+* [Airtable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airtable)
+* [Calendly](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/calendly)
+* [Dynamics 365](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/dynamics365)
+* [Freshservice](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/freshservice)
+* [Google Stitch](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/googlestitch)
+* [Intercom](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/intercom)
+* [MailerLite](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/mailerlite)
+* [Zoho CRM](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohocrm)
+
+Additionally, support for new actions is available for the following data
+stores:
+
+* [Smartsheet](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/smartsheet)
+* [Wrike](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/wrike)
+* [Zoho Projects](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohoprojects)
+
+For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+### Feature
+
 **Gemini Enterprise: Observability settings for individual agents (Preview)**
 
 You can now configure observability settings for individual agents in

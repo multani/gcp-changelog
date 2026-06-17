@@ -1,5 +1,14 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-06-15
+
+### Announcement
+
+Starting with Distributed Cloud software only for VMware version
+1.33.0-gke.799, you must add `us.gcr.io` to your firewall allowlist to
+create or upgrade advanced clusters.
+
+---
 ## 2026-05-27
 
 ### Announcement

@@ -189,7 +189,7 @@ or the [flow builder](https://docs.cloud.google.com/gemini/enterprise/docs/agent
 
 ### Feature
 
-**Gemini Enterprise: Create and edit documents and slides in Canvas (Preview)**
+**Gemini Enterprise: Create and edit documents and slides in Canvas**
 
 Canvas is a dedicated, interactive tool within the Gemini Enterprise
 web app. It allows you to create and edit AI-generated documents and
@@ -201,7 +201,7 @@ use it in the Gemini Enterprise app. For more information about feature
 controls, see [Manage features on the web
 app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
 
-This feature is in Public Preview. For more information, see
+For more information, see
 [Create and edit documents and slides in Canvas](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-canvas).
 
 ---

@@ -2,9 +2,64 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-06-15T00:00:00+00:00</updated>
+  <updated>2026-06-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:fixed:0</id>
+    <published>2026-06-17T00:00:00+00:00</published>
+    <updated>2026-06-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed a Kustomer issue where Agent Assist transcripts were
+  delivered to the CRM as file attachments instead of timeline notes.</li>
+<li>Fixed an issue where the <strong>In Progress</strong> banner and the <strong>Cancel</strong> button
+  didn't appear immediately after a virtual task assistant request was
+  initiated.</li>
+<li>Fixed an issue where campaigns stayed in a paused state instead of
+  transitioning to a completed state after finishing.</li>
+<li>Fixed a Deltacast issue where chats weren't routed correctly to available
+  agents when the company-wide concurrency setting was disabled but individual
+  agent limits were active.</li>
+<li>Fixed an issue where supervisor monitoring and whisper features caused
+  system errors during call recording.</li>
+<li>Fixed an issue where agents couldn't dismiss forwarded voicemails if the
+  source queue had been deleted.</li>
+<li>Fixed an issue where Telnyx calls that ended normally didn't generate a
+  disconnect event, resulting in missing recordings, missing transcripts, and
+  calls appearing to still be active in the CCAI Platform portal.</li>
+<li>Fixed an issue where consecutive IVR queue deletions caused performance
+  delays and timeout errors.</li>
+<li>Fixed an issue where queue-level automatic wrap-up settings were
+  disabled without an end-user action.</li>
+<li>Fixed an issue where the queue settings page displayed inconsistent whisper
+  announcement statuses and didn't play queue names during calls.</li>
+<li>Fixed an issue where the <strong>Queues</strong> page displayed incorrect overcapacity
+  deflection settings when end-users navigated quickly between different
+  queues.</li>
+<li>Fixed an issue where virtual agents attempted to fail over to a human agent
+  during outages even when no human agent was configured.</li>
+<li>Fixed a Salesforce issue where initiating an outbound call from an active
+  case linked to a separate case assigned to a different user, incorrectly
+  overriding ownership of the second case.</li>
+<li>Fixed a Kustomer issue where duplicate conversation records were created in
+  the CRM during calls.</li>
+<li>Fixed a Kustomer issue where SMS chat sessions didn't create tickets in the
+  CRM.</li>
+<li>Fixed an issue where underscores in an email address in a shortcut
+  were converted to double backslashes when an agent sent the email address to
+  an end-user.</li>
+<li>Fixed an issue where deleting Twilio records caused unnecessary errors.</li>
+<li>Fixed an issue where disabling the global CSAT setting prevented IVR surveys
+  from being offered to callers, even when the surveys were enabled for
+  specific queues.</li>
+</ul>]]></content>
+    <summary>Several issues have been resolved, including problems with agent assist transcripts, campaign states, call routing, and CRM integrations. This update ensures smoother operation of virtual assistants, supervisor monitoring, voicemail handling, and IVR functionalities.</summary>
+    <title>Fixed: Resolved issues in recent update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -336,7 +391,7 @@ lists</a>.</p>]]></content>
   SMS chat displayed an error instead of starting a transfer.</li>
 <li>Fixed an issue where a delay in Salesforce task creation caused a lag in
   updating the ticket ID on calls.</li>
-<li>Fixed an issue where agents were unable to transfer SMS chats.</li>
+<li>Fixed an issue where agents couldn't transfer SMS chats.</li>
 <li>Fixed an issue where incoming chats were routed to newly signed-in agents
   instead of to those who had been available the longest.</li>
 <li>Fixed an issue where messages in the chat adapter's chat history weren't
@@ -349,8 +404,8 @@ lists</a>.</p>]]></content>
 <li>Fixed an issue where live transcripts and conversation summarization didn't
   display in the agent desktop following an instance update.</li>
 </ul>]]></content>
-    <summary>This release resolves several bugs affecting translations, report exports, agent preferences, chat transfers, and data synchronization. Key fixes include ensuring correct language display, accurate report scheduling, and improved agent availability updates. Additionally, issues with chat functionality, IVR and SMS settings, web SDK loading, and transcript display have been addressed.</summary>
-    <title>Fixed: Resolved Issues in Recent Update</title>
+    <summary>This release includes fixes for various issues, including translation errors, report export problems, agent preference updates, SMS chat transfers, Salesforce task creation delays, chat routing, message labeling, IVR and SMS settings, web SDK loading, and live transcript display. These updates ensure a more stable and efficient user experience.</summary>
+    <title>Fixed: Multiple issues resolved in recent update</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,15 @@
 # Policy Intelligence
 
+## 2026-06-12
+
+### Feature
+
+The ability to [remediate access
+issues](https://docs.cloud.google.com/policy-intelligence/docs/remediate-requests) with Policy Troubleshooter
+is [generally
+available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-09
 
 ### Feature

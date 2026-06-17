@@ -1,5 +1,16 @@
 # AlloyDB for PostgreSQL
 
+## 2026-06-16
+
+### Feature
+
+AlloyDB integration with Knowledge Catalog is now generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+This integration provides a unified metadata view to simplify data governance and analysis. It includes near real-time synchronization and expanded metadata details, like primary and foreign keys.
+
+For more information, see [Integrate AlloyDB with Knowledge Catalog](https://docs.cloud.google.com/alloydb/docs/knowledge-catalog-integration).
+
+---
 ## 2026-06-15
 
 ### Feature

@@ -1,5 +1,55 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-17
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed a Kustomer issue where Agent Assist transcripts were
+  delivered to the CRM as file attachments instead of timeline notes.
+* Fixed an issue where the **In Progress** banner and the **Cancel** button
+  didn't appear immediately after a virtual task assistant request was
+  initiated.
+* Fixed an issue where campaigns stayed in a paused state instead of
+  transitioning to a completed state after finishing.
+* Fixed a Deltacast issue where chats weren't routed correctly to available
+  agents when the company-wide concurrency setting was disabled but individual
+  agent limits were active.
+* Fixed an issue where supervisor monitoring and whisper features caused
+  system errors during call recording.
+* Fixed an issue where agents couldn't dismiss forwarded voicemails if the
+  source queue had been deleted.
+* Fixed an issue where Telnyx calls that ended normally didn't generate a
+  disconnect event, resulting in missing recordings, missing transcripts, and
+  calls appearing to still be active in the CCAI Platform portal.
+* Fixed an issue where consecutive IVR queue deletions caused performance
+  delays and timeout errors.
+* Fixed an issue where queue-level automatic wrap-up settings were
+  disabled without an end-user action.
+* Fixed an issue where the queue settings page displayed inconsistent whisper
+  announcement statuses and didn't play queue names during calls.
+* Fixed an issue where the **Queues** page displayed incorrect overcapacity
+  deflection settings when end-users navigated quickly between different
+  queues.
+* Fixed an issue where virtual agents attempted to fail over to a human agent
+  during outages even when no human agent was configured.
+* Fixed a Salesforce issue where initiating an outbound call from an active
+  case linked to a separate case assigned to a different user, incorrectly
+  overriding ownership of the second case.
+* Fixed a Kustomer issue where duplicate conversation records were created in
+  the CRM during calls.
+* Fixed a Kustomer issue where SMS chat sessions didn't create tickets in the
+  CRM.
+* Fixed an issue where underscores in an email address in a shortcut
+  were converted to double backslashes when an agent sent the email address to
+  an end-user.
+* Fixed an issue where deleting Twilio records caused unnecessary errors.
+* Fixed an issue where disabling the global CSAT setting prevented IVR surveys
+  from being offered to callers, even when the surveys were enabled for
+  specific queues.
+
+---
 ## 2026-06-15
 
 ### Announcement
@@ -354,7 +404,7 @@ This release addresses the following issues:
   SMS chat displayed an error instead of starting a transfer.
 * Fixed an issue where a delay in Salesforce task creation caused a lag in
   updating the ticket ID on calls.
-* Fixed an issue where agents were unable to transfer SMS chats.
+* Fixed an issue where agents couldn't transfer SMS chats.
 * Fixed an issue where incoming chats were routed to newly signed-in agents
   instead of to those who had been available the longest.
 * Fixed an issue where messages in the chat adapter's chat history weren't

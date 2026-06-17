@@ -1,5 +1,23 @@
 # Memorystore for Redis
 
+## 2026-06-17
+
+### Feature
+
+Memorystore for Redis supports the [General Availability](https://docs.cloud.google.com/products#product-launch-stages)
+of the following health issues:
+
+* [**Expensive commands**](https://docs.cloud.google.com/memorystore/docs/redis/expensive-commands):
+  resolve performance issues that are associated with using Redis commands that
+  are resource-intensive (expensive).
+* [**High resource utilization**](https://docs.cloud.google.com/memorystore/docs/redis/high-resource-utilization):
+  resolve issues that are associated with instances not performing optimally.
+* [**Maintenance policy not set**](https://docs.cloud.google.com/memorystore/docs/redis/maintenance-policy-not-set):
+  check whether users set maintenance windows for instances. If there's an optimal
+  time slot for the maintenance windows when there's low traffic, then the health
+  issue provides this slot.
+
+---
 ## 2026-04-17
 
 ### Feature

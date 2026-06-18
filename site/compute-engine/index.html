@@ -2604,6 +2604,31 @@
 
 
 <h1 id="compute-engine">Compute Engine</h1>
+<h2 id="2026-06-16">2026-06-16</h2>
+<h3 id="change">Change</h3>
+<p>For resource-based committed use discounts (CUDs), the default value of CUD
+scope for most Cloud Billing accounts has changed from <strong>Project</strong> to
+<strong>Billing account</strong>. If the CUD scope is set to <strong>Billing account</strong>, then
+resource-based CUDs from a commitment are shared across all projects in that
+account. If the CUD scope is set to <strong>Project</strong>, then resource-based CUDs from a
+commitment are available to only the project in which you purchased that
+commitment.</p>
+<p>Depending on the Cloud Billing account's creation date and the active
+commitments in that account, this change applies in the following way:</p>
+<ul>
+<li><strong>Cloud Billing accounts created on or after June 16, 2026</strong>: The
+  CUD scope is <strong>Billing account</strong> (CUD sharing enabled) by default.</li>
+<li><strong>Cloud Billing accounts created before June 16, 2026</strong>:</li>
+<li>If the account has <strong>no active resource-based commitments</strong> on
+    June 16, 2026, then the CUD scope has changed to <strong>Billing account</strong>
+    (CUD sharing enabled).</li>
+<li>If the account has <strong>any active resource-based commitments</strong> on June 16,
+    2026, then the CUD scope remains unchanged and Google Cloud continues
+    to use your existing configuration.</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/committed-use-discounts/share-resource-cuds-across-projects#cud-scope-configuration">Share resource-based CUDs across projects</a>.</p>
+<hr />
 <h2 id="2026-06-15">2026-06-15</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Preview</strong>: Before you create Spot VMs, you can view the following
@@ -2967,7 +2992,7 @@ to get access.</p>
 organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint
 won't work, and you can control MCP use with IAM deny policies.
 For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>After March 17, 2026, when you enable Compute Engine,
 the Compute Engine MCP server is automatically enabled.</p>
 <hr />
@@ -3007,7 +3032,7 @@ more information, see
 <a href="https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility#instance_flexibility_and_autoscaling">About instance flexibility</a>.</p>
 <hr />
 <h2 id="2026-02-06">2026-02-06</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Expanded coverage for compute flexible committed use discounts (CUDs) is
 available to all Cloud Billing accounts. All Cloud Billing accounts have
 been automatically migrated to the
@@ -3761,6 +3786,9 @@ in, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#compute-engine">Compute Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-16" class="nav-link">2026-06-16</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-15" class="nav-link">2026-06-15</a>
           </li>

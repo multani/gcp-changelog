@@ -1,5 +1,22 @@
 # Gemini Enterprise
 
+## 2026-06-17
+
+### Feature
+
+**Gemini Enterprise: Gemini Enterprise app for Slack**
+
+Gemini Enterprise administrators can integrate Gemini Enterprise with Slack to
+deliver AI-powered answers and search directly to users in their Slack
+workspace. Once integrated, users can interact with Gemini Enterprise through
+direct messages, slash commands, and channel mentions to receive answers that
+incorporate data from all connected data stores.
+
+This feature is generally available (GA). For more information, see
+[Configure the Gemini Enterprise app for
+Slack](https://docs.cloud.google.com/gemini/enterprise/docs/configure-slack-app).
+
+---
 ## 2026-06-16
 
 ### Feature

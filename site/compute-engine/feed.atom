@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-06-15T00:00:00+00:00</updated>
+  <updated>2026-06-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-06-16:change:0</id>
+    <published>2026-06-16T00:00:00+00:00</published>
+    <updated>2026-06-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For resource-based committed use discounts (CUDs), the default value of CUD
+scope for most Cloud Billing accounts has changed from <strong>Project</strong> to
+<strong>Billing account</strong>. If the CUD scope is set to <strong>Billing account</strong>, then
+resource-based CUDs from a commitment are shared across all projects in that
+account. If the CUD scope is set to <strong>Project</strong>, then resource-based CUDs from a
+commitment are available to only the project in which you purchased that
+commitment.</p>
+<p>Depending on the Cloud Billing account's creation date and the active
+commitments in that account, this change applies in the following way:</p>
+<ul>
+<li><strong>Cloud Billing accounts created on or after June 16, 2026</strong>: The
+  CUD scope is <strong>Billing account</strong> (CUD sharing enabled) by default.</li>
+<li><strong>Cloud Billing accounts created before June 16, 2026</strong>:</li>
+<li>If the account has <strong>no active resource-based commitments</strong> on
+    June 16, 2026, then the CUD scope has changed to <strong>Billing account</strong>
+    (CUD sharing enabled).</li>
+<li>If the account has <strong>any active resource-based commitments</strong> on June 16,
+    2026, then the CUD scope remains unchanged and Google Cloud continues
+    to use your existing configuration.</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/committed-use-discounts/share-resource-cuds-across-projects#cud-scope-configuration">Share resource-based CUDs across projects</a>.</p>]]></content>
+    <summary>The default scope for resource-based committed use discounts has changed from Project to Billing account for most accounts. This means commitments can now be shared across all projects within a billing account, rather than being limited to a single project. This change applies to billing accounts created on or after June 16, 2026, and to older accounts without active resource-based commitments on that date.</summary>
+    <title>Change: Committed use discount scope change</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

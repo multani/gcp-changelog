@@ -1,5 +1,25 @@
 # BigQuery
 
+## 2026-06-17
+
+### Feature
+
+You can enable [autonomous embedding
+generation](https://docs.cloud.google.com/bigquery/docs/autonomous-embedding-generation) on new or existing
+tables that you make with the [`CREATE
+TABLE`](https://docs.cloud.google.com/bigquery/docs/autonomous-embedding-generation#create_an_automatically_generated_embedding_column)
+or [`ALTER
+TABLE`](https://docs.cloud.google.com/bigquery/docs/autonomous-embedding-generation#add_an_automatically_generated_embedding_column_to_an_existing_table)
+statements. When you do this, BigQuery maintains a column of embeddings on the
+table based on a source column. When you add or modify data in the source
+column, BigQuery automatically generates or updates the embedding column for
+that data.
+
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-06-16
 
 ### Announcement

@@ -1,5 +1,18 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-17
+
+### Feature
+
+**Memory Bank and Sessions global and multi-regional endpoints GA**
+
+Memory Bank and Sessions support for multi-regional and global endpoints is now
+in General Availability (GA). For more information, see
+[Supported locations for agents](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/agent-locations#multi-regional-and-global-endpoints). Note that
+Customer-Managed Encryption Keys (CMEK) cannot be used if your Memory Bank
+or Sessions instance is configured to use the global endpoint.
+
+---
 ## 2026-06-09
 
 ### Feature

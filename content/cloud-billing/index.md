@@ -1,5 +1,19 @@
 # Cloud Billing
 
+## 2026-06-17
+
+### Feature
+
+**CUD dashboard redesign available (preview)**
+
+The redesigned CUD dashboard is available in the Billing section of the
+Google Cloud console. It provides a consolidated view of all your resource-based
+and spend-based CUDs in a single place. The new design improves usability and
+scalability, helping you find information faster.
+
+For more information, see [View your commitments](https://docs.cloud.google.com/billing/docs/how-to/cuds-list-overview).
+
+---
 ## 2026-06-15
 
 ### Feature

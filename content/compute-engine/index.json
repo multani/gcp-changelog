@@ -1,6 +1,16 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2026-06-16": [
+      {
+        "kind": "Change",
+        "content": "For resource-based committed use discounts (CUDs), the default value of CUD\nscope for most Cloud Billing accounts has changed from **Project** to\n**Billing account**. If the CUD scope is set to **Billing account**, then\nresource-based CUDs from a commitment are shared across all projects in that\naccount. If the CUD scope is set to **Project**, then resource-based CUDs from a\ncommitment are available to only the project in which you purchased that\ncommitment.\n\nDepending on the Cloud Billing account's creation date and the active\ncommitments in that account, this change applies in the following way:\n\n* **Cloud Billing accounts created on or after June 16, 2026**: The\n  CUD scope is **Billing account** (CUD sharing enabled) by default.\n* **Cloud Billing accounts created before June 16, 2026**:\n  + If the account has **no active resource-based commitments** on\n    June 16, 2026, then the CUD scope has changed to **Billing account**\n    (CUD sharing enabled).\n  + If the account has **any active resource-based commitments** on June 16,\n    2026, then the CUD scope remains unchanged and Google Cloud continues\n    to use your existing configuration.\n\nFor more information, see\n[Share resource-based CUDs across projects](https://docs.cloud.google.com/compute/docs/committed-use-discounts/share-resource-cuds-across-projects#cud-scope-configuration).",
+        "summary": {
+          "title": "Committed use discount scope change",
+          "summary": "The default scope for resource-based committed use discounts has changed from Project to Billing account for most accounts. This means commitments can now be shared across all projects within a billing account, rather than being limited to a single project. This change applies to billing accounts created on or after June 16, 2026, and to older accounts without active resource-based commitments on that date."
+        }
+      }
+    ],
     "2026-06-15": [
       {
         "kind": "Feature",

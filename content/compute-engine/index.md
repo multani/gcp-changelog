@@ -1,5 +1,34 @@
 # Compute Engine
 
+## 2026-06-16
+
+### Change
+
+For resource-based committed use discounts (CUDs), the default value of CUD
+scope for most Cloud Billing accounts has changed from **Project** to
+**Billing account**. If the CUD scope is set to **Billing account**, then
+resource-based CUDs from a commitment are shared across all projects in that
+account. If the CUD scope is set to **Project**, then resource-based CUDs from a
+commitment are available to only the project in which you purchased that
+commitment.
+
+Depending on the Cloud Billing account's creation date and the active
+commitments in that account, this change applies in the following way:
+
+* **Cloud Billing accounts created on or after June 16, 2026**: The
+  CUD scope is **Billing account** (CUD sharing enabled) by default.
+* **Cloud Billing accounts created before June 16, 2026**:
+  + If the account has **no active resource-based commitments** on
+    June 16, 2026, then the CUD scope has changed to **Billing account**
+    (CUD sharing enabled).
+  + If the account has **any active resource-based commitments** on June 16,
+    2026, then the CUD scope remains unchanged and Google Cloud continues
+    to use your existing configuration.
+
+For more information, see
+[Share resource-based CUDs across projects](https://docs.cloud.google.com/compute/docs/committed-use-discounts/share-resource-cuds-across-projects#cud-scope-configuration).
+
+---
 ## 2026-06-15
 
 ### Feature

@@ -21,6 +21,15 @@ Added support for selecting specific [Confidential Computing](https://docs.cloud
 * Updated live migration logic to support compatible machine types and CPU platforms for each technology, including N2D and C3D for SEV.
 
 ---
+## 2026-05-25
+
+### Announcement
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): The following subminor image versions announced on [May 19, 2026](https://cloud.google.com/managed-spark/docs/release-notes#May_19_2026) have been rolled back:
+
+* 2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm
+
+---
 ## 2026-05-19
 
 ### Announcement
@@ -30,6 +39,8 @@ New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) 
 * 2.1.114-debian11, 2.1.114-rocky8, 2.1.114-ubuntu20, 2.1.114-ubuntu20-arm
 * 2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm
 * 2.3.30-debian12, 2.3.30-ml-ubuntu22, 2.3.30-rocky9, 2.3.30-ubuntu22, 2.3.30-ubuntu22-arm
+
+**Rollback Notice:** The `2.2.82` image versions were rolled back on [May 25, 2026](https://cloud.google.com/managed-spark/docs/release-notes#May_25_2026).
 
 ### Breaking
 

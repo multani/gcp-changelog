@@ -2,6 +2,38 @@
 
 ## 2026-06-17
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**HubSpot: Control the display of CRM account fields and record fields in the
+agent adapter**
+
+You can now control how CRM account fields (contact and company) and record
+fields (ticket and deal) appear in the agent adapter for HubSpot integrations.
+This gives agents immediate access to important context such as VIP status,
+account ownership, and ticket priority during live interactions.
+
+Administrators: In the **Settings > Developer Settings >
+CRM > Agent Platform > HubSpot > Account
+Lookup** section, there are two new **CRM Account Display Fields** sections and
+a new **CRM Record Display Fields** section.
+
+### Feature
+
+**The chat API supports CSAT surveys**
+
+You can now conduct customer satisfaction (CSAT) surveys using the chat API. You
+can configure CSAT surveys at the global level and at the queue level.
+
+Administrators: On the **Settings > Chat** page, there's a new **Chat
+API** section.
+
 ### Fixed
 
 This release addresses the following issues:

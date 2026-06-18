@@ -2620,14 +2620,22 @@ Added support for selecting specific <a href="https://docs.cloud.google.com/mana
 <li>Updated live migration logic to support compatible machine types and CPU platforms for each technology, including N2D and C3D for SEV.</li>
 </ul>
 <hr />
-<h2 id="2026-05-19">2026-05-19</h2>
+<h2 id="2026-05-25">2026-05-25</h2>
 <h3 id="announcement_2">Announcement</h3>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine): The following subminor image versions announced on <a href="https://cloud.google.com/managed-spark/docs/release-notes#May_19_2026">May 19, 2026</a> have been rolled back:</p>
+<ul>
+<li>2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm</li>
+</ul>
+<hr />
+<h2 id="2026-05-19">2026-05-19</h2>
+<h3 id="announcement_3">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
 <ul>
 <li>2.1.114-debian11, 2.1.114-rocky8, 2.1.114-ubuntu20, 2.1.114-ubuntu20-arm</li>
 <li>2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm</li>
 <li>2.3.30-debian12, 2.3.30-ml-ubuntu22, 2.3.30-rocky9, 2.3.30-ubuntu22, 2.3.30-ubuntu22-arm</li>
 </ul>
+<p><strong>Rollback Notice:</strong> The <code>2.2.82</code> image versions were rolled back on <a href="https://cloud.google.com/managed-spark/docs/release-notes#May_25_2026">May 25, 2026</a>.</p>
 <h3 id="breaking">Breaking</h3>
 <p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):
 The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitions</code>) has changed from an integer to a string type.</p>
@@ -2641,7 +2649,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 </ul>
 <hr />
 <h2 id="2026-05-11">2026-05-11</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions"><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions</a>:</p>
 <ul>
 <li>1.2.80</li>
@@ -2650,7 +2658,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 </ul>
 <hr />
 <h2 id="2026-05-03">2026-05-03</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a> for 3.0 (Preview):</p>
 <ul>
 <li>3.0.0-RC2-debian13, 3.0.0-RC2-ml-ubuntu24, 3.0.0-RC2-rocky9, 3.0.0-RC2-ubuntu24</li>
@@ -2675,7 +2683,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 <li>JupyterLab upgraded to <strong>4.5.7</strong>.</li>
 <li><strong><a href="https://pixi.prefix.dev">Pixi</a></strong> is used as python package manager instead of conda.</li>
 </ul>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions"><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions</a>:</p>
 <ul>
 <li>1.2.79</li>
@@ -2690,7 +2698,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 </ul>
 <hr />
 <h2 id="2026-04-27">2026-04-27</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
 <ul>
 <li>2.1.113-debian11, 2.1.113-rocky8, 2.1.113-ubuntu20, 2.1.113-ubuntu20-arm</li>
@@ -2713,6 +2721,9 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
           </li>
           <li class="nav-item">
             <a href="#2026-05-29" class="nav-link">2026-05-29</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-05-25" class="nav-link">2026-05-25</a>
           </li>
           <li class="nav-item">
             <a href="#2026-05-19" class="nav-link">2026-05-19</a>

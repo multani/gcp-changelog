@@ -10,6 +10,20 @@ and control access to application data](https://docs.cloud.google.com/sql/docs/p
 
 This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
+### Feature
+
+Cloud SQL is integrated with [Google AI Studio](https://ai.google.dev/aistudio)
+to help you build full-stack applications that use a
+[Cloud SQL for PostgreSQL developer edition](https://docs.cloud.google.com/sql/docs/postgres/ai-assisted-coding-and-cloud-sql#cloud-sql-configuration-in-starter-tier)
+instance as the database. You can enter natural language
+prompts in the Google AI Studio to build applications backed by Cloud SQL and
+add features such as authentication, search, and persistent data storage.
+
+For more information, see
+[Build vibe-coded applications using Google AI Studio and Cloud SQL](https://docs.cloud.google.com/sql/docs/postgres/ai-assisted-coding-and-cloud-sql).
+
+This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
 ---
 ## 2026-06-12
 

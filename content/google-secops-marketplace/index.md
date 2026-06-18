@@ -1,5 +1,55 @@
 # Google SecOps Marketplace
 
+## 2026-06-17
+
+### Feature
+
+**Secret Manager**: Version 1.0
+
+* New **Secret Manager** integration.
+
+### Change
+
+Source code is now publicly available on [GitHub](https://github.com/chronicle/content-hub)
+for the following integrations:
+
+* **AlienVault USM Appliance**: Version 29.0
+* **AlienVaultTI**: Version 15.0
+* **Arcsight**: Version 46.0
+* **Axonius**: Version 8.0
+* **BMC Helix Remedyforce**: Version 18.0
+* **Cisco AMP**: Version 24.0
+* **EasyVista**: Version 8.0
+* **Mandiant**: Version 10.0
+* **Office 365 Management API**: Version 11.0
+* **SCCM**: Version 22.0
+* **SonicWall-Beta**: Version 9.0
+* **Stellar Cyber Starlight**: Version 19.0
+* **Symantec Email Security.Cloud**: Version 6.0
+* **Twilio**: Version 16.0
+* **XForce**: Version 20.0
+* **Zabbix**: Version 17.0
+
+### Change
+
+**Google Chronicle**: Version 86.0
+
+* Fixed an issue where the connector would idle or hang on heartbeats instead of
+  breaking early when `nextPageToken` or `nextPageStartTime` is received, and
+  updated ontology mapping in the following connector:
+
+  + **Chronicle Alerts Connector**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 29.0
+
+* Updated host name extraction logic in the raw payload in the following
+  connector:
+
+  + **Palo Alto Cortex XDR Connector**
+
+---
 ## 2026-06-11
 
 ### Change

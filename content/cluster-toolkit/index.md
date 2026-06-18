@@ -1,5 +1,12 @@
 # Cluster Toolkit
 
+## 2026-06-04
+
+### Feature
+
+Cluster Toolkit version 1.92.0 is available. This release introduces support for [ML Diagnostics](https://docs.cloud.google.com/tpu/docs/ml-diagnostics/overview) on TPU machine types and [node auto-provisioning](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/node-auto-provisioning) on GKE clusters. The release also adds an optional infrastructure setup for inference gateways and compact placement for Slurm clusters by using the Dynamic Workload Scheduler (DWS) flex-start provisioning model. For details, see the [Release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5744).
+
+---
 ## 2026-05-14
 
 ### Feature

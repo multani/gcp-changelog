@@ -1,5 +1,18 @@
 # Google SecOps SIEM
 
+## 2026-06-17
+
+### Change
+
+**Auto-collapse setting for the query editor**
+
+You can now configure the query editor to automatically collapse after you run
+a search, maximizing the screen space available for viewing your search results.
+By default, the query editor remains expanded.
+
+For more information, see [Configure query editor behavior](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#CollapsequeryEditor).
+
+---
 ## 2026-06-16
 
 ### Feature

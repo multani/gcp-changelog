@@ -4,6 +4,26 @@
 
 ### Feature
 
+**Gemini Enterprise: Create and manage skills (GA with allowlist)**
+
+You can create, import, update, and use skills in the Gemini Enterprise
+web app. Skills are reusable custom instructions that help the assistant
+perform specific tasks.
+
+This feature is available as a GA with allowlist. To access this feature,
+contact your Google account manager. After your Google Cloud project is added to
+the allowlist, a Gemini Enterprise administrator must turn on the **Enable skills**
+toggle in the web app feature management settings to let users use it.
+
+For more information, see:
+
+* [Create and manage
+  skills](https://docs.cloud.google.com/gemini/enterprise/docs/skills)
+* [Manage web app
+  features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+### Feature
+
 **Gemini Enterprise: Gemini Enterprise app for Slack**
 
 Gemini Enterprise administrators can integrate Gemini Enterprise with Slack to

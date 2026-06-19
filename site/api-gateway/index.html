@@ -2604,14 +2604,60 @@
 
 
 <h1 id="api-gateway">API Gateway</h1>
-<h2 id="2026-04-27">2026-04-27</h2>
+<h2 id="2026-06-18">2026-06-18</h2>
 <h3 id="change">Change</h3>
+<p><strong>Update to the API Gateway runtime architecture</strong></p>
+<p>The API Gateway runtime architecture is being updated to improve its integration
+with Google Cloud Platform and its services.</p>
+<p>This update does not affect existing API Gateway features.
+However, be aware of the following differences:</p>
+<ul>
+<li>Status code changes for <strong>gRPC</strong> API Gateways</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Error</th>
+<th>New status code</th>
+<th>Previous status code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quota exceeded</td>
+<td><code>ResourceExhausted</code></td>
+<td><code>Unavailable</code></td>
+</tr>
+<tr>
+<td>Invalid API key</td>
+<td><code>InvalidArgument</code></td>
+<td><code>InternalError</code></td>
+</tr>
+<tr>
+<td>* For 4xx client-side quota failures, API Gateway will now reject requests</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>(fail closed). This applies to both <strong>gRPC</strong> and <strong>OpenAPI</strong> API Gateways.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>If you experience any other differences in behavior due to this update, contact <a href="https://cloud.google.com/support-hub">Google
+Cloud Customer Care</a>.</p>
+<p><strong>Note</strong>: Rollouts of this release to production instances might take up to 4 weeks to complete
+across all Google Cloud zones. Your instances might not be updated until the rollout is complete.</p>
+<hr />
+<h2 id="2026-04-27">2026-04-27</h2>
+<h3 id="change_1">Change</h3>
 <p><strong>New validations on paths in API configurations</strong></p>
 <p>API Gateway now enforces stricter syntax validations on templated paths when you create new API configurations and gateways.</p>
 <p>See <a href="https://docs.cloud.google.com/api-gateway/docs/path-templating#syntax_rules">path templating syntax rules</a> and <a href="https://docs.cloud.google.com/api-gateway/docs/path-templating#limits">limits</a> for more information.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p><strong>Connect API Gateway to Apigee API hub instances that use VPC Service Controls</strong></p>
 <p>API Gateway can now be <a href="https://docs.cloud.google.com/api-gateway/docs/api-hub-connect">connected to Apigee API hub</a> instances that use <a href="https://docs.cloud.google.com/apigee/docs/api-platform/security/vpc-sc">VPC Service Controls</a>.</p>
 <hr />
@@ -2670,6 +2716,9 @@ available until the rollout is complete.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#api-gateway">API Gateway</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-18" class="nav-link">2026-06-18</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-27" class="nav-link">2026-04-27</a>
           </li>

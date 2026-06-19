@@ -1,6 +1,16 @@
 {
   "name": "API Gateway",
   "entries": {
+    "2026-06-18": [
+      {
+        "kind": "Change",
+        "content": "**Update to the API Gateway runtime architecture**\n\nThe API Gateway runtime architecture is being updated to improve its integration\nwith Google Cloud Platform and its services.\n\nThis update does not affect existing API Gateway features.\nHowever, be aware of the following differences:\n\n* Status code changes for **gRPC** API Gateways\n\n  | Error | New status code | Previous status code |\n  | --- | --- | --- |\n  | Quota exceeded | `ResourceExhausted` | `Unavailable` |\n  | Invalid API key | `InvalidArgument` | `InternalError` |\n* For 4xx client-side quota failures, API Gateway will now reject requests\n  (fail closed). This applies to both **gRPC** and **OpenAPI** API Gateways.\n\nIf you experience any other differences in behavior due to this update, contact [Google\nCloud Customer Care](https://cloud.google.com/support-hub).\n\n**Note**: Rollouts of this release to production instances might take up to 4 weeks to complete\nacross all Google Cloud zones. Your instances might not be updated until the rollout is complete.",
+        "summary": {
+          "title": "API Gateway runtime update",
+          "summary": "The API Gateway runtime architecture is being updated to improve its integration with Google Cloud services. This change introduces updated status codes for gRPC APIs and a new behavior for rejecting client-side quota failures. Existing features remain unaffected."
+        }
+      }
+    ],
     "2026-04-27": [
       {
         "kind": "Change",

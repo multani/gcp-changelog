@@ -1,5 +1,14 @@
 # Cloud Logging
 
+## 2026-06-18
+
+### Change
+
+The Cloud Logging API adds support for the `ca` regional endpoint. For a
+complete list of regional endpoints, see the
+[REST reference pages](https://docs.cloud.google.com/logging/docs/reference/v2/rest?rep_location=global).
+
+---
 ## 2026-05-28
 
 ### Announcement

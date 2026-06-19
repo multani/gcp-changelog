@@ -26,13 +26,13 @@ The following issues were fixed in 1.35.200-gke.66:
   could cause node taints or labels to become permanently stuck (stranded) on
   worker nodes, even after you removed them from the NodePool custom resource
   specification.
-  + Fixed an issue where, during the machine initialization phase, the
-    `etcd-events` pod read the stale data directory when it started
-    and attempted to reuse the old member ID to rejoin the cluster instead of the
-    new one. Trying to use the old member ID to rejoin the cluster resulted in an
-    infinite retry loop and caused the cluster to reject the connection. The fix
-    ensures the `/var/lib/etcd-events` directory is
-    cleared upon failure, and adds retry logic to `kubeadm-reset` to improve resiliency against transient API errors.
+* Fixed an issue where, during the machine initialization phase, the
+  `etcd-events` pod read the stale data directory when it started
+  and attempted to reuse the old member ID to rejoin the cluster instead of the
+  new one. Trying to use the old member ID to rejoin the cluster resulted in an
+  infinite retry loop and caused the cluster to reject the connection. The fix
+  ensures the `/var/lib/etcd-events` directory is
+  cleared upon failure, and adds retry logic to `kubeadm-reset` to improve resiliency against transient API errors.
 * Fixed an issue where, when enabling or updating etcd encryption, the API
   server was terminated abruptly, causing transient connection timeouts or
   failures for in-cluster workloads for up to five minutes.

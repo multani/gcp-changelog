@@ -1,5 +1,34 @@
 # Secure Web Proxy
 
+## 2026-06-16
+
+### Feature
+
+You can now use [authorization
+policies](https://docs.cloud.google.com/secure-web-proxy/docs/policies-and-rules-overview#authorization-policies)
+to perform identity-based and content-based access control checks when
+processing outbound traffic requests through Secure Web Proxy.
+
+By [configuring authorization
+policies](https://docs.cloud.google.com/secure-web-proxy/docs/setup-authz-policies), you can set rules for
+your workloads to access external destinations. You can also use these
+authorization policies to delegate complex authorization decisions to identity
+and content-scanning services like Service Extensions. This feature is
+supported in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can [integrate frontend mutual TLS (mTLS) with
+Secure Web Proxy](https://docs.cloud.google.com/secure-web-proxy/docs/use-frontend-mtls-with-swp) to boost
+the security of your applications and workloads.
+
+With this integration, you can use validated client identities in
+Secure Web Proxy [authorization
+policies](https://docs.cloud.google.com/secure-web-proxy/docs/policies-and-rules-overview#authorization-policies)
+to enforce granular access control for outbound traffic. This feature is
+supported in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-21
 
 ### Feature

@@ -2,9 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: API Gateway</title>
   <subtitle>Changelog for Google Cloud product: API Gateway</subtitle>
-  <updated>2026-04-27T00:00:00+00:00</updated>
+  <updated>2026-06-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:api-gateway</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/api-gateway/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:api-gateway:2026-06-18:change:0</id>
+    <published>2026-06-18T00:00:00+00:00</published>
+    <updated>2026-06-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Update to the API Gateway runtime architecture</strong></p>
+<p>The API Gateway runtime architecture is being updated to improve its integration
+with Google Cloud Platform and its services.</p>
+<p>This update does not affect existing API Gateway features.
+However, be aware of the following differences:</p>
+<ul>
+<li>Status code changes for <strong>gRPC</strong> API Gateways</li>
+</ul>
+<p>| Error | New status code | Previous status code |
+  | --- | --- | --- |
+  | Quota exceeded | <code>ResourceExhausted</code> | <code>Unavailable</code> |
+  | Invalid API key | <code>InvalidArgument</code> | <code>InternalError</code> |
+* For 4xx client-side quota failures, API Gateway will now reject requests
+  (fail closed). This applies to both <strong>gRPC</strong> and <strong>OpenAPI</strong> API Gateways.</p>
+<p>If you experience any other differences in behavior due to this update, contact <a href="https://cloud.google.com/support-hub">Google
+Cloud Customer Care</a>.</p>
+<p><strong>Note</strong>: Rollouts of this release to production instances might take up to 4 weeks to complete
+across all Google Cloud zones. Your instances might not be updated until the rollout is complete.</p>]]></content>
+    <summary>The API Gateway runtime architecture is being updated to improve its integration with Google Cloud services. This change introduces updated status codes for gRPC APIs and a new behavior for rejecting client-side quota failures. Existing features remain unaffected.</summary>
+    <title>Change: API Gateway runtime update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

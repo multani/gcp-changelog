@@ -1,5 +1,19 @@
 # Security Command Center
 
+## 2026-06-18
+
+### Feature
+
+Security Command Center External Exposure is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) for the
+Security Command Center Premium tier. The service helps you manage and reduce your external
+attack surface through automated asset discovery, Google Cloud network exposure
+path validation, and active exploitability testing.
+
+For more information, see [Detect exposed
+resources](https://docs.cloud.google.com/security-command-center/docs/detect-external-exposure).
+
+---
 ## 2026-06-05
 
 ### Feature

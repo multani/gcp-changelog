@@ -1,5 +1,13 @@
 # Cloud Storage
 
+## 2026-06-17
+
+### Feature
+
+When you [create composite objects](https://docs.cloud.google.com/storage/docs/composing-objects), you can
+delete the temporary source objects as part of the composition process.
+
+---
 ## 2026-05-28
 
 ### Breaking

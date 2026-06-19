@@ -1,5 +1,26 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-18
+
+### Feature
+
+**Agent Observability is generally available (GA)**
+
+This release provides visibility into the performance, behavior, and health of deployed agents and Model Context Protocol (MCP) servers directly within the agent management workflow.
+
+Key updates in this release include:
+
+* **Default-On Tracing:** OpenTelemetry tracing is now enabled by default for newly deployed Agent Development Kit (ADK) agents on Agent Engine, simplifying the observability setup process without requiring manual configuration.
+* **Storage Prioritization:** Google Cloud Storage (GCS) is the default storage choice in the Google Cloud Console, instead of Cloud Logging. We recommend that you store your multimodal prompt and response payloads in a Cloud Storage (GCS) bucket. This solution provides robust support for large payloads and it enables fine-grained lifecycle management.
+* **Enhanced Tracing:** Inspect step-by-step session execution and view directed acyclic graphs (DAGs) of trace spans.
+
+For more information, see the following:
+
+* [Observability overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/overview)
+* [View agent traces](https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/traces)
+* [Set up tracing](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/tracing)
+
+---
 ## 2026-06-17
 
 ### Feature

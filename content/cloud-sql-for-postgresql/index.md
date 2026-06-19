@@ -1,14 +1,6 @@
 # Cloud SQL for PostgreSQL
 
-## 2026-06-16
-
-### Feature
-
-QueryData adds support for parameterized secure views (PSVs) to help secure
-applications that use natural language queries. For more information, see [Secure
-and control access to application data](https://docs.cloud.google.com/sql/docs/postgres/secure-app-data-parameterized-secure-views-qd).
-
-This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+## 2026-06-18
 
 ### Feature
 
@@ -23,6 +15,34 @@ For more information, see
 [Build vibe-coded applications using Google AI Studio and Cloud SQL](https://docs.cloud.google.com/sql/docs/postgres/ai-assisted-coding-and-cloud-sql).
 
 This feature is generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+### Feature
+
+The rollout of the following Cloud SQL for PostgreSQL
+minor version and extension upgrades is complete:
+
+**Minor versions**
+
+* 14.22 is upgraded to 14.23.
+* 15.17 is upgraded to 15.18.
+* 16.13 is upgraded to 16.14.
+* 17.9 is upgraded to 17.10.
+* 18.3 is upgraded to 18.4.
+
+The new maintenance version is [`[PostgreSQL version].R20260319.07_04`](https://docs.cloud.google.com/sql/docs/postgres/maintenance-changelog).
+To apply the new maintenance version, see
+[Perform self-service maintenance](https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance).
+
+---
+## 2026-06-16
+
+### Feature
+
+QueryData adds support for parameterized secure views (PSVs) to help secure
+applications that use natural language queries. For more information, see [Secure
+and control access to application data](https://docs.cloud.google.com/sql/docs/postgres/secure-app-data-parameterized-secure-views-qd).
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2026-06-12

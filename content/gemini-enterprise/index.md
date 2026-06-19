@@ -1,5 +1,28 @@
 # Gemini Enterprise
 
+## 2026-06-18
+
+### Feature
+
+**Gemini Enterprise: Workflow agents (GA with allowlist)**
+
+You can create, import, update, and use workflow agents in the Gemini Enterprise
+web app. These agents are designed to execute a sequence of
+steps or actions, which can include a mix of AI automation and human intervention, based on a
+configured trigger.
+
+This feature is available as a GA with allowlist. To access this feature,
+contact your Google account manager. After your Google Cloud project is added to
+the allowlist, a Gemini Enterprise administrator must turn on the **Enable agent designer**
+toggle in the web app feature management settings to let users use it.
+
+For more information, see:
+
+* [Workflow agents](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer-eap/workflow-agents)
+* [Manage web app
+  features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+
+---
 ## 2026-06-17
 
 ### Feature

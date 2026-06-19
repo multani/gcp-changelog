@@ -4,6 +4,18 @@
 
 ### Feature
 
+**Agent Gateway in General Availability**
+
+Agent Gateway is the networking component of the Gemini
+Enterprise Agent Platform ecosystem. It secures and governs connectivity for
+all agentic interactions, whether they occur between users and agents,
+agents and tools, or among agents themselves.
+
+For details, see [Agent Gateway
+overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview).
+
+### Feature
+
 **Agent Observability is generally available (GA)**
 
 This release provides visibility into the performance, behavior, and health of deployed agents and Model Context Protocol (MCP) servers directly within the agent management workflow.

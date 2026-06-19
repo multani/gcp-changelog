@@ -1,5 +1,468 @@
 # Container Optimized OS
 
+## 2026-06-15
+
+### Change
+
+
+
+### cos-129-19506-224-36
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.90](https://cos.googlesource.com/third_party/kernel/+/fac8e2b17485d0065f6f69f83ddb8eb0e9d9c55a ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.224.36/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-133-19862-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.35](https://cos.googlesource.com/third_party/kernel/+/ef0c067405ff6956b986d853c39c609e6d457228 ) | v29.4.3 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19862.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded app-admin/fluent-bit to v4.2.5.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.3.
+
+### Change
+
+Allow overriding IMA policy from oem partition.
+
+### Fixed
+
+Upgraded sys-apps/less to v702.
+
+### Change
+
+On cchost boards, autoload IMA policy on boot.
+
+### Security
+
+Fixed CVE-2025-71289 in the Linux kernel.
+
+### Change
+
+Set static UUID for the stateful partition.
+
+### Security
+
+Fixed CVE-2026-43245 in the Linux kernel.
+
+### Change
+
+Update sys-process/audit to v3.0.9.
+
+### Security
+
+Fixed CVE-2026-43503 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-45838 in the Linux kernel.
+
+### Change
+
+Updated glib to v2.86.5.
+
+### Security
+
+Fixed CVE-2026-45839 in the Linux kernel.
+
+### Change
+
+Updated sys-libs/pam to v1.5.3.
+
+### Security
+
+Fixed CVE-2026-45841 in the Linux kernel.
+
+### Change
+
+Updated the Linux kernel to v6.18.35.
+
+### Security
+
+Fixed CVE-2026-45842 in the Linux kernel.
+
+### Change
+
+Upgraded net-misc/openssh to v10.0\_p2.
+
+### Security
+
+Fixed CVE-2026-45843 in the Linux kernel.
+
+### Change
+
+Upgraded sys-apps/ek-cpu-balloon to v1.2.3.
+
+### Security
+
+Fixed CVE-2026-45844 in the Linux kernel.
+
+### Fixed
+
+Added support for NVIDIA driver v580.159.04.
+
+### Security
+
+Fixed CVE-2026-46243 in the Linux kernel.
+
+### Fixed
+
+Fixed a crash that occurs when using the `configfile` or
+`source` GRUB2 commands when Secure Boot is enabled.
+
+### Security
+
+Fixed CVE-2026-46244 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-containers/docker to v29.4.3, Upgraded app-containers/docker-test to v29.4.3, Upgraded app-containers/docker-cli to v29.4.3.
+
+### Security
+
+Fixed CVE-2026-46274 in the Linux kernel.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.7.
+
+### Security
+
+Fixed CVE-2026-46300 in the Linux kernel.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.2.
+
+### Security
+
+Fixed CVE-2026-46316 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/gentoo-functions to v1.7.7.
+
+### Security
+
+Fixed KCTF-def602e in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-apps/less to v702.
+
+### Security
+
+Fixed KCTF-e5b31d9 in the Linux kernel.
+
+### Fixed
+
+Upgraded sys-libs/libcap-ng to v0.9.3.
+
+### Security
+
+Updated dev-python/pyjwt to v2.13.0. This fixes
+CVE-2026-48522, CVE-2026-48524, CVE-2026-48525, CVE-2026-485256.
+
+### Security
+
+Fixed CVE-2026-44431 in dev-python/urllib3.
+
+### Security
+
+Fixed CVE-2026-6732 in dev-libs/libxml2.
+
+### Security
+
+Updated dev-lang/go to 1.25.10. This fixes CVE-2026-33814,CVE-2026-39819,CVE-2026-39823,CVE-2026-39825,CVE-2026-42499,CVE-2026-39817,CVE-2026-39820,CVE-2026-39826,CVE-2026-39836.
+
+### Security
+
+Updated dev-python/pyjwt to v2.13.0. This fixes
+CVE-2026-48522, CVE-2026-48524, CVE-2026-48525, CVE-2026-485256.
+
+### Security
+
+Updated net-misc/curl to v8.20. This fixes CVE-2026-5545,CVE-2026-4873,CVE-2026-6429,CVE-2026-7168,CVE-2026-6253,CVE-2026-6276,CVE-2026-7009,CVE-2026-5773.
+
+### Change
+
+
+
+### cos-117-18613-613-56
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/7ead0fd4c30a3ac938a51edf82fd36b526ffa21b ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.613.56/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a race condition triggered by ext4 online resize that
+rarely causes machines to fail to boot.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.4.
+
+### Fixed
+
+Upgraded dev-libs/libusb to v1.0.30.
+
+### Fixed
+
+Upgraded sys-apps/less to v702.
+
+### Security
+
+Fixed CVE-2024-56647 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2025-38584 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23272 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23394 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31527 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43492 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43496 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43503 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46244 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46274 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46289 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46294 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46306 in the Linux kernel.
+
+### Security
+
+Updated dev-python/pyjwt to v2.13.0. This fixes
+CVE-2026-48522, CVE-2026-48524, CVE-2026-48525, CVE-2026-485256.
+
+### Change
+
+
+
+### cos-125-19216-395-101
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/19cc070c0f9a696f1ec666a1c12e685222e54963 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.101/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a race condition triggered by ext4 online resize that
+rarely causes machines to fail to boot.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.4.
+
+### Fixed
+
+Upgraded sys-apps/less to v702.
+
+### Fixed
+
+Uprev sys-kernel/lakitu-kernel-6\_12 to v6.12.92
+
+### Security
+
+Fixed CVE-2025-71289 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-23394 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43245 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46160 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46244 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46274 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46283 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46289 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46294 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46306 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46316 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-def602e in the Linux kernel.
+
+### Security
+
+Updated dev-python/pyjwt to v2.13.0. This fixes
+CVE-2026-48522, CVE-2026-48524, CVE-2026-48525, CVE-2026-485256.
+
+### Change
+
+
+
+### cos-121-18867-381-177
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/0b06ec28c776324f21325b54d9c4c8e501b34301 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.177/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a race condition triggered by ext4 online resize that
+rarely causes machines to fail to boot.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.4.
+
+### Fixed
+
+Upgraded sys-apps/less to v702.
+
+### Security
+
+Fixed CVE-2026-23394 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-31527 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43492 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43496 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46243 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46244 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46274 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46289 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46294 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46303 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46304 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46306 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-def602e in the Linux kernel.
+
+### Security
+
+Updated dev-python/pyjwt to v2.13.0. This fixes
+CVE-2026-48522, CVE-2026-48524, CVE-2026-48525, CVE-2026-485256.
+
+---
 ## 2026-06-08
 
 ### Change

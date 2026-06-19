@@ -1,5 +1,17 @@
 # Service Extensions
 
+## 2026-06-17
+
+### Feature
+
+Support for the [`ext_authz` Envoy gRPC API
+protocol](https://docs.cloud.google.com/service-extensions/docs/callouts-overview#ext-authz)
+is now [generally available
+(GA)](https://cloud.google.com/products#product-launch-stages) for regional
+external Application Load Balancers and regional internal
+Application Load Balancers.
+
+---
 ## 2026-04-17
 
 ### Feature

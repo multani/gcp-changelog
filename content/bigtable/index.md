@@ -1,5 +1,14 @@
 # Bigtable
 
+## 2026-06-19
+
+### Feature
+
+You can use the Bigtable Studio explorer to search for all resources except for
+authorized views and column families. For more information, see
+[Manage your data using Bigtable Studio](https://docs.cloud.google.com/bigtable/docs/manage-data-using-console).
+
+---
 ## 2026-05-28
 
 ### Feature

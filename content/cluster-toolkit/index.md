@@ -1,5 +1,20 @@
 # Cluster Toolkit
 
+## 2026-06-11
+
+### Feature
+
+Cluster Toolkit v1.93.0 is available. This release introduces example
+blueprints for GKE H4D deployments that use the [flex-start provisioning
+model](https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms), a [compact placement
+policy](https://docs.cloud.google.com/compute/docs/instances/placement-policies-overview#about-compact-policies)
+and integrated [Google Cloud ML Diagnostics](https://docs.cloud.google.com/tpu/docs/ml-diagnostics/overview).
+This version also adds a Slurm High Availability controller script and upgrades Slurm
+images from Rocky Linux 8 to Rocky Linux 9. For details, see the [Release
+announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5770).
+
+---
 ## 2026-06-04
 
 ### Feature

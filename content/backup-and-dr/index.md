@@ -1,5 +1,12 @@
 # Backup and DR
 
+## 2026-06-18
+
+### Feature
+
+Backup vault support for Cloud SQL instances encrypted with customer-managed encryption keys (CMEK) is generally available (GA), providing immutable and indelible storage with enforced retention. For more information, see [Back up Cloud SQL instances to a backup vault](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup).
+
+---
 ## 2026-05-28
 
 ### Feature

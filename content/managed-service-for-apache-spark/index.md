@@ -25,7 +25,7 @@ Added support for selecting specific [Confidential Computing](https://docs.cloud
 
 ### Announcement
 
-**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): The following subminor image versions announced on [May 19, 2026](https://cloud.google.com/managed-spark/docs/release-notes#May_19_2026) have been rolled back:
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): The following subminor image versions announced on [May 19, 2026](https://docs.cloud.google.com/managed-spark/docs/release-notes#May_19_2026) have been rolled back:
 
 * 2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm
 

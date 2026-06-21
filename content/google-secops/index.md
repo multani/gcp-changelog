@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-06-21
+
+### Announcement
+
+**Scheduled Maintenance**
+
+CloudSQL will undergo a scheduled minor upgrade this Sunday, June 21, 2026.
+
+---
 ## 2026-06-17
 
 ### Change

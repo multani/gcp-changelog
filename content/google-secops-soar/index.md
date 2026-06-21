@@ -1,5 +1,20 @@
 # Google SecOps SOAR
 
+## 2026-06-21
+
+### Announcement
+
+Release 6.3.90 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+### Announcement
+
+**Scheduled Maintenance**
+
+CloudSQL will undergo a scheduled minor upgrade.
+
+---
 ## 2026-06-20
 
 ### Announcement

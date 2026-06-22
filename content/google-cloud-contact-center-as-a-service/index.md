@@ -1,5 +1,70 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-22
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where uploading a PDF document to a chat made the
+  conversation history unavailable during a session transfer or page refresh.
+* Fixed an issue where direct SMS chats didn't send termination notifications
+  at the end of the chat.
+* Fixed an issue where the after-hours voicemail greeting didn't play during
+  agent-to-agent call deflections.
+* Fixed an issue where SIP and IVR calls intermittently failed if the caller
+  disconnected before a virtual agent was assigned.
+* Fixed an issue where calls deflected to voicemail during after-hours were
+  incorrectly reported as errors in the **All Call History** report.
+* Fixed an issue where direct inbound calls were incorrectly deflected to
+  voicemail during an agent's available hours when agent deflections were
+  enabled.
+* Fixed an issue where inbound voice calls failed with an application error
+  during the initial lookup phase.
+* Fixed a Kustomer issue where Agent Assist transcripts were
+  delivered to the CRM as file attachments instead of timeline notes.
+* Fixed an issue where the **In Progress** banner and the **Cancel** button
+  didn't appear immediately after a virtual task assistant request was
+  initiated.
+* Fixed an issue where campaigns stayed in a paused state instead of
+  transitioning to a completed state after finishing.
+* Fixed a Deltacast issue where chats weren't routed correctly to available
+  agents when the company-wide concurrency setting was disabled but individual
+  agent limits were active.
+* Fixed an issue where supervisor monitoring and whisper features caused
+  system errors during call recording.
+* Fixed an issue where agents couldn't dismiss forwarded voicemails if the
+  source queue had been deleted.
+* Fixed an issue where Telnyx calls that ended normally didn't generate a
+  disconnect event, resulting in missing recordings, missing transcripts, and
+  calls appearing to still be active in the CCAI Platform portal.
+* Fixed an issue where consecutive IVR queue deletions caused performance
+  delays and timeout errors.
+* Fixed an issue where queue-level automatic wrap-up settings were
+  disabled without an end-user action.
+* Fixed an issue where the queue settings page displayed inconsistent whisper
+  announcement statuses and didn't play queue names during calls.
+* Fixed an issue where the **Queues** page displayed incorrect overcapacity
+  deflection settings when end-users navigated quickly between different
+  queues.
+* Fixed an issue where virtual agents attempted to fail over to a human agent
+  during outages even when no human agent was configured.
+* Fixed a Salesforce issue where initiating an outbound call from an active
+  case linked to a separate case assigned to a different user, incorrectly
+  overriding ownership of the second case.
+* Fixed a Kustomer issue where duplicate conversation records were created in
+  the CRM during calls.
+* Fixed a Kustomer issue where SMS chat sessions didn't create tickets in the
+  CRM.
+* Fixed an issue where underscores in an email address in a shortcut
+  were converted to double backslashes when an agent sent the email address to
+  an end-user.
+* Fixed an issue where deleting Twilio records caused unnecessary errors.
+* Fixed an issue where disabling the global CSAT setting prevented IVR surveys
+  from being offered to callers, even when the surveys were enabled for
+  specific queues.
+
+---
 ## 2026-06-17
 
 ### Announcement

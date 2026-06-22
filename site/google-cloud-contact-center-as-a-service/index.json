@@ -1,37 +1,13 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
-    "2026-06-17": [
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
-        "summary": {
-          "title": "CCaaS Pre-release Notes",
-          "summary": "This document outlines the upcoming capabilities for Google Cloud CCaaS, providing a preview of the next version's features and functionalities."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**HubSpot: Control the display of CRM account fields and record fields in the\nagent adapter**\n\nYou can now control how CRM account fields (contact and company) and record\nfields (ticket and deal) appear in the agent adapter for HubSpot integrations.\nThis gives agents immediate access to important context such as VIP status,\naccount ownership, and ticket priority during live interactions.\n\nAdministrators: In the **Settings > Developer Settings >\nCRM > Agent Platform > HubSpot > Account\nLookup** section, there are two new **CRM Account Display Fields** sections and\na new **CRM Record Display Fields** section.",
-        "summary": {
-          "title": "Customize HubSpot CRM Field Display",
-          "summary": "You can now control which CRM account and record fields appear in the agent adapter for HubSpot. This ensures agents have quick access to essential customer context like VIP status and ticket priority during live interactions. Administrators can configure these settings within the Developer Settings for HubSpot."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**The chat API supports CSAT surveys**\n\nYou can now conduct customer satisfaction (CSAT) surveys using the chat API. You\ncan configure CSAT surveys at the global level and at the queue level.\n\nAdministrators: On the **Settings > Chat** page, there's a new **Chat\nAPI** section.",
-        "summary": {
-          "title": "Chat API now supports CSAT surveys",
-          "summary": "You can now conduct customer satisfaction (CSAT) surveys using the chat API. CSAT surveys can be configured at both global and queue levels, with new options available for administrators in the Chat API section under Settings > Chat."
-        }
-      },
+    "2026-06-22": [
       {
         "kind": "Fixed",
-        "content": "This release addresses the following issues:\n\n* Fixed a Kustomer issue where Agent Assist transcripts were\n  delivered to the CRM as file attachments instead of timeline notes.\n* Fixed an issue where the **In Progress** banner and the **Cancel** button\n  didn't appear immediately after a virtual task assistant request was\n  initiated.\n* Fixed an issue where campaigns stayed in a paused state instead of\n  transitioning to a completed state after finishing.\n* Fixed a Deltacast issue where chats weren't routed correctly to available\n  agents when the company-wide concurrency setting was disabled but individual\n  agent limits were active.\n* Fixed an issue where supervisor monitoring and whisper features caused\n  system errors during call recording.\n* Fixed an issue where agents couldn't dismiss forwarded voicemails if the\n  source queue had been deleted.\n* Fixed an issue where Telnyx calls that ended normally didn't generate a\n  disconnect event, resulting in missing recordings, missing transcripts, and\n  calls appearing to still be active in the CCAI Platform portal.\n* Fixed an issue where consecutive IVR queue deletions caused performance\n  delays and timeout errors.\n* Fixed an issue where queue-level automatic wrap-up settings were\n  disabled without an end-user action.\n* Fixed an issue where the queue settings page displayed inconsistent whisper\n  announcement statuses and didn't play queue names during calls.\n* Fixed an issue where the **Queues** page displayed incorrect overcapacity\n  deflection settings when end-users navigated quickly between different\n  queues.\n* Fixed an issue where virtual agents attempted to fail over to a human agent\n  during outages even when no human agent was configured.\n* Fixed a Salesforce issue where initiating an outbound call from an active\n  case linked to a separate case assigned to a different user, incorrectly\n  overriding ownership of the second case.\n* Fixed a Kustomer issue where duplicate conversation records were created in\n  the CRM during calls.\n* Fixed a Kustomer issue where SMS chat sessions didn't create tickets in the\n  CRM.\n* Fixed an issue where underscores in an email address in a shortcut\n  were converted to double backslashes when an agent sent the email address to\n  an end-user.\n* Fixed an issue where deleting Twilio records caused unnecessary errors.\n* Fixed an issue where disabling the global CSAT setting prevented IVR surveys\n  from being offered to callers, even when the surveys were enabled for\n  specific queues.",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where uploading a PDF document to a chat made the\n  conversation history unavailable during a session transfer or page refresh.\n* Fixed an issue where direct SMS chats didn't send termination notifications\n  at the end of the chat.\n* Fixed an issue where the after-hours voicemail greeting didn't play during\n  agent-to-agent call deflections.\n* Fixed an issue where SIP and IVR calls intermittently failed if the caller\n  disconnected before a virtual agent was assigned.\n* Fixed an issue where calls deflected to voicemail during after-hours were\n  incorrectly reported as errors in the **All Call History** report.\n* Fixed an issue where direct inbound calls were incorrectly deflected to\n  voicemail during an agent's available hours when agent deflections were\n  enabled.\n* Fixed an issue where inbound voice calls failed with an application error\n  during the initial lookup phase.\n* Fixed a Kustomer issue where Agent Assist transcripts were\n  delivered to the CRM as file attachments instead of timeline notes.\n* Fixed an issue where the **In Progress** banner and the **Cancel** button\n  didn't appear immediately after a virtual task assistant request was\n  initiated.\n* Fixed an issue where campaigns stayed in a paused state instead of\n  transitioning to a completed state after finishing.\n* Fixed a Deltacast issue where chats weren't routed correctly to available\n  agents when the company-wide concurrency setting was disabled but individual\n  agent limits were active.\n* Fixed an issue where supervisor monitoring and whisper features caused\n  system errors during call recording.\n* Fixed an issue where agents couldn't dismiss forwarded voicemails if the\n  source queue had been deleted.\n* Fixed an issue where Telnyx calls that ended normally didn't generate a\n  disconnect event, resulting in missing recordings, missing transcripts, and\n  calls appearing to still be active in the CCAI Platform portal.\n* Fixed an issue where consecutive IVR queue deletions caused performance\n  delays and timeout errors.\n* Fixed an issue where queue-level automatic wrap-up settings were\n  disabled without an end-user action.\n* Fixed an issue where the queue settings page displayed inconsistent whisper\n  announcement statuses and didn't play queue names during calls.\n* Fixed an issue where the **Queues** page displayed incorrect overcapacity\n  deflection settings when end-users navigated quickly between different\n  queues.\n* Fixed an issue where virtual agents attempted to fail over to a human agent\n  during outages even when no human agent was configured.\n* Fixed a Salesforce issue where initiating an outbound call from an active\n  case linked to a separate case assigned to a different user, incorrectly\n  overriding ownership of the second case.\n* Fixed a Kustomer issue where duplicate conversation records were created in\n  the CRM during calls.\n* Fixed a Kustomer issue where SMS chat sessions didn't create tickets in the\n  CRM.\n* Fixed an issue where underscores in an email address in a shortcut\n  were converted to double backslashes when an agent sent the email address to\n  an end-user.\n* Fixed an issue where deleting Twilio records caused unnecessary errors.\n* Fixed an issue where disabling the global CSAT setting prevented IVR surveys\n  from being offered to callers, even when the surveys were enabled for\n  specific queues.",
         "summary": {
-          "title": "Resolved issues in recent update",
-          "summary": "Several issues have been resolved, including problems with agent assist transcripts, campaign states, call routing, and CRM integrations. This update ensures smoother operation of virtual assistants, supervisor monitoring, voicemail handling, and IVR functionalities."
+          "title": "Several issues have been resolved",
+          "summary": "This release includes fixes for various issues, improving chat functionality, call handling, and CRM integrations. Several problems related to call routing, notifications, and reporting have also been addressed."
         }
       }
     ],
@@ -238,6 +214,40 @@
         "summary": {
           "title": "Multiple issues resolved",
           "summary": "This release includes fixes for various issues, including problems with URL formatting in SMS, dialer country code accuracy, live transcription resumption, file uploads, call history display, agent status, default greeting messages, call scheduling, payment virtual task assistants, HubSpot ticket creation, agent desktop layouts, outbound call connections, campaign batch file ingestion, Salesforce case creation, agent status dashboards, WFM reports, abandoned call counts, chat escalations, ticket URLs in reports, team reordering, Agent Assist summaries, and conversation history display."
+        }
+      }
+    ],
+    "2026-06-17": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "CCaaS Pre-release Notes",
+          "summary": "This document outlines the upcoming capabilities for Google Cloud CCaaS, providing a preview of the next version's features and functionalities."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**HubSpot: Control the display of CRM account fields and record fields in the\nagent adapter**\n\nYou can now control how CRM account fields (contact and company) and record\nfields (ticket and deal) appear in the agent adapter for HubSpot integrations.\nThis gives agents immediate access to important context such as VIP status,\naccount ownership, and ticket priority during live interactions.\n\nAdministrators: In the **Settings > Developer Settings >\nCRM > Agent Platform > HubSpot > Account\nLookup** section, there are two new **CRM Account Display Fields** sections and\na new **CRM Record Display Fields** section.",
+        "summary": {
+          "title": "Customize HubSpot CRM Field Display",
+          "summary": "You can now control which CRM account and record fields appear in the agent adapter for HubSpot. This ensures agents have quick access to essential customer context like VIP status and ticket priority during live interactions. Administrators can configure these settings within the Developer Settings for HubSpot."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**The chat API supports CSAT surveys**\n\nYou can now conduct customer satisfaction (CSAT) surveys using the chat API. You\ncan configure CSAT surveys at the global level and at the queue level.\n\nAdministrators: On the **Settings > Chat** page, there's a new **Chat\nAPI** section.",
+        "summary": {
+          "title": "Chat API now supports CSAT surveys",
+          "summary": "You can now conduct customer satisfaction (CSAT) surveys using the chat API. CSAT surveys can be configured at both global and queue levels, with new options available for administrators in the Chat API section under Settings > Chat."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed a Kustomer issue where Agent Assist transcripts were\n  delivered to the CRM as file attachments instead of timeline notes.\n* Fixed an issue where the **In Progress** banner and the **Cancel** button\n  didn't appear immediately after a virtual task assistant request was\n  initiated.\n* Fixed an issue where campaigns stayed in a paused state instead of\n  transitioning to a completed state after finishing.\n* Fixed a Deltacast issue where chats weren't routed correctly to available\n  agents when the company-wide concurrency setting was disabled but individual\n  agent limits were active.\n* Fixed an issue where supervisor monitoring and whisper features caused\n  system errors during call recording.\n* Fixed an issue where agents couldn't dismiss forwarded voicemails if the\n  source queue had been deleted.\n* Fixed an issue where Telnyx calls that ended normally didn't generate a\n  disconnect event, resulting in missing recordings, missing transcripts, and\n  calls appearing to still be active in the CCAI Platform portal.\n* Fixed an issue where consecutive IVR queue deletions caused performance\n  delays and timeout errors.\n* Fixed an issue where queue-level automatic wrap-up settings were\n  disabled without an end-user action.\n* Fixed an issue where the queue settings page displayed inconsistent whisper\n  announcement statuses and didn't play queue names during calls.\n* Fixed an issue where the **Queues** page displayed incorrect overcapacity\n  deflection settings when end-users navigated quickly between different\n  queues.\n* Fixed an issue where virtual agents attempted to fail over to a human agent\n  during outages even when no human agent was configured.\n* Fixed a Salesforce issue where initiating an outbound call from an active\n  case linked to a separate case assigned to a different user, incorrectly\n  overriding ownership of the second case.\n* Fixed a Kustomer issue where duplicate conversation records were created in\n  the CRM during calls.\n* Fixed a Kustomer issue where SMS chat sessions didn't create tickets in the\n  CRM.\n* Fixed an issue where underscores in an email address in a shortcut\n  were converted to double backslashes when an agent sent the email address to\n  an end-user.\n* Fixed an issue where deleting Twilio records caused unnecessary errors.\n* Fixed an issue where disabling the global CSAT setting prevented IVR surveys\n  from being offered to callers, even when the surveys were enabled for\n  specific queues.",
+        "summary": {
+          "title": "Resolved issues in recent update",
+          "summary": "Several issues have been resolved, including problems with agent assist transcripts, campaign states, call routing, and CRM integrations. This update ensures smoother operation of virtual assistants, supervisor monitoring, voicemail handling, and IVR functionalities."
         }
       }
     ],

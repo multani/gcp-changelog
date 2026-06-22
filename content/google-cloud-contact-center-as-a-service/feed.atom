@@ -2,66 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-06-17T00:00:00+00:00</updated>
+  <updated>2026-06-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:announcement:0</id>
-    <published>2026-06-17T00:00:00+00:00</published>
-    <updated>2026-06-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
-<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
-we release this version, we expect the new capabilities to be as shown here.</p>]]></content>
-    <summary>This document outlines the upcoming capabilities for Google Cloud CCaaS, providing a preview of the next version's features and functionalities.</summary>
-    <title>Announcement: CCaaS Pre-release Notes</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:feature:1</id>
-    <published>2026-06-17T00:00:00+00:00</published>
-    <updated>2026-06-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>HubSpot: Control the display of CRM account fields and record fields in the
-agent adapter</strong></p>
-<p>You can now control how CRM account fields (contact and company) and record
-fields (ticket and deal) appear in the agent adapter for HubSpot integrations.
-This gives agents immediate access to important context such as VIP status,
-account ownership, and ticket priority during live interactions.</p>
-<p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;
-CRM &gt; Agent Platform &gt; HubSpot &gt; Account
-Lookup</strong> section, there are two new <strong>CRM Account Display Fields</strong> sections and
-a new <strong>CRM Record Display Fields</strong> section.</p>]]></content>
-    <summary>You can now control which CRM account and record fields appear in the agent adapter for HubSpot. This ensures agents have quick access to essential customer context like VIP status and ticket priority during live interactions. Administrators can configure these settings within the Developer Settings for HubSpot.</summary>
-    <title>Feature: Customize HubSpot CRM Field Display</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:feature:2</id>
-    <published>2026-06-17T00:00:00+00:00</published>
-    <updated>2026-06-17T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>The chat API supports CSAT surveys</strong></p>
-<p>You can now conduct customer satisfaction (CSAT) surveys using the chat API. You
-can configure CSAT surveys at the global level and at the queue level.</p>
-<p>Administrators: On the <strong>Settings &gt; Chat</strong> page, there's a new <strong>Chat
-API</strong> section.</p>]]></content>
-    <summary>You can now conduct customer satisfaction (CSAT) surveys using the chat API. CSAT surveys can be configured at both global and queue levels, with new options available for administrators in the Chat API section under Settings &gt; Chat.</summary>
-    <title>Feature: Chat API now supports CSAT surveys</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:fixed:3</id>
-    <published>2026-06-17T00:00:00+00:00</published>
-    <updated>2026-06-17T00:00:00+00:00</updated>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-22:fixed:0</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
 <ul>
+<li>Fixed an issue where uploading a PDF document to a chat made the
+  conversation history unavailable during a session transfer or page refresh.</li>
+<li>Fixed an issue where direct SMS chats didn't send termination notifications
+  at the end of the chat.</li>
+<li>Fixed an issue where the after-hours voicemail greeting didn't play during
+  agent-to-agent call deflections.</li>
+<li>Fixed an issue where SIP and IVR calls intermittently failed if the caller
+  disconnected before a virtual agent was assigned.</li>
+<li>Fixed an issue where calls deflected to voicemail during after-hours were
+  incorrectly reported as errors in the <strong>All Call History</strong> report.</li>
+<li>Fixed an issue where direct inbound calls were incorrectly deflected to
+  voicemail during an agent's available hours when agent deflections were
+  enabled.</li>
+<li>Fixed an issue where inbound voice calls failed with an application error
+  during the initial lookup phase.</li>
 <li>Fixed a Kustomer issue where Agent Assist transcripts were
   delivered to the CRM as file attachments instead of timeline notes.</li>
 <li>Fixed an issue where the <strong>In Progress</strong> banner and the <strong>Cancel</strong> button
@@ -105,8 +72,8 @@ API</strong> section.</p>]]></content>
   from being offered to callers, even when the surveys were enabled for
   specific queues.</li>
 </ul>]]></content>
-    <summary>Several issues have been resolved, including problems with agent assist transcripts, campaign states, call routing, and CRM integrations. This update ensures smoother operation of virtual assistants, supervisor monitoring, voicemail handling, and IVR functionalities.</summary>
-    <title>Fixed: Resolved issues in recent update</title>
+    <summary>This release includes fixes for various issues, improving chat functionality, call handling, and CRM integrations. Several problems related to call routing, notifications, and reporting have also been addressed.</summary>
+    <title>Fixed: Several issues have been resolved</title>
   </entry>
   <entry>
     <author>
@@ -662,6 +629,109 @@ schedules</a>.</p>]]></content>
 </ul>]]></content>
     <summary>This release includes fixes for various issues, including problems with URL formatting in SMS, dialer country code accuracy, live transcription resumption, file uploads, call history display, agent status, default greeting messages, call scheduling, payment virtual task assistants, HubSpot ticket creation, agent desktop layouts, outbound call connections, campaign batch file ingestion, Salesforce case creation, agent status dashboards, WFM reports, abandoned call counts, chat escalations, ticket URLs in reports, team reordering, Agent Assist summaries, and conversation history display.</summary>
     <title>Fixed: Multiple issues resolved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:announcement:0</id>
+    <published>2026-06-17T00:00:00+00:00</published>
+    <updated>2026-06-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>This document outlines the upcoming capabilities for Google Cloud CCaaS, providing a preview of the next version's features and functionalities.</summary>
+    <title>Announcement: CCaaS Pre-release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:feature:1</id>
+    <published>2026-06-17T00:00:00+00:00</published>
+    <updated>2026-06-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>HubSpot: Control the display of CRM account fields and record fields in the
+agent adapter</strong></p>
+<p>You can now control how CRM account fields (contact and company) and record
+fields (ticket and deal) appear in the agent adapter for HubSpot integrations.
+This gives agents immediate access to important context such as VIP status,
+account ownership, and ticket priority during live interactions.</p>
+<p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;
+CRM &gt; Agent Platform &gt; HubSpot &gt; Account
+Lookup</strong> section, there are two new <strong>CRM Account Display Fields</strong> sections and
+a new <strong>CRM Record Display Fields</strong> section.</p>]]></content>
+    <summary>You can now control which CRM account and record fields appear in the agent adapter for HubSpot. This ensures agents have quick access to essential customer context like VIP status and ticket priority during live interactions. Administrators can configure these settings within the Developer Settings for HubSpot.</summary>
+    <title>Feature: Customize HubSpot CRM Field Display</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:feature:2</id>
+    <published>2026-06-17T00:00:00+00:00</published>
+    <updated>2026-06-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>The chat API supports CSAT surveys</strong></p>
+<p>You can now conduct customer satisfaction (CSAT) surveys using the chat API. You
+can configure CSAT surveys at the global level and at the queue level.</p>
+<p>Administrators: On the <strong>Settings &gt; Chat</strong> page, there's a new <strong>Chat
+API</strong> section.</p>]]></content>
+    <summary>You can now conduct customer satisfaction (CSAT) surveys using the chat API. CSAT surveys can be configured at both global and queue levels, with new options available for administrators in the Chat API section under Settings &gt; Chat.</summary>
+    <title>Feature: Chat API now supports CSAT surveys</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-17:fixed:3</id>
+    <published>2026-06-17T00:00:00+00:00</published>
+    <updated>2026-06-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed a Kustomer issue where Agent Assist transcripts were
+  delivered to the CRM as file attachments instead of timeline notes.</li>
+<li>Fixed an issue where the <strong>In Progress</strong> banner and the <strong>Cancel</strong> button
+  didn't appear immediately after a virtual task assistant request was
+  initiated.</li>
+<li>Fixed an issue where campaigns stayed in a paused state instead of
+  transitioning to a completed state after finishing.</li>
+<li>Fixed a Deltacast issue where chats weren't routed correctly to available
+  agents when the company-wide concurrency setting was disabled but individual
+  agent limits were active.</li>
+<li>Fixed an issue where supervisor monitoring and whisper features caused
+  system errors during call recording.</li>
+<li>Fixed an issue where agents couldn't dismiss forwarded voicemails if the
+  source queue had been deleted.</li>
+<li>Fixed an issue where Telnyx calls that ended normally didn't generate a
+  disconnect event, resulting in missing recordings, missing transcripts, and
+  calls appearing to still be active in the CCAI Platform portal.</li>
+<li>Fixed an issue where consecutive IVR queue deletions caused performance
+  delays and timeout errors.</li>
+<li>Fixed an issue where queue-level automatic wrap-up settings were
+  disabled without an end-user action.</li>
+<li>Fixed an issue where the queue settings page displayed inconsistent whisper
+  announcement statuses and didn't play queue names during calls.</li>
+<li>Fixed an issue where the <strong>Queues</strong> page displayed incorrect overcapacity
+  deflection settings when end-users navigated quickly between different
+  queues.</li>
+<li>Fixed an issue where virtual agents attempted to fail over to a human agent
+  during outages even when no human agent was configured.</li>
+<li>Fixed a Salesforce issue where initiating an outbound call from an active
+  case linked to a separate case assigned to a different user, incorrectly
+  overriding ownership of the second case.</li>
+<li>Fixed a Kustomer issue where duplicate conversation records were created in
+  the CRM during calls.</li>
+<li>Fixed a Kustomer issue where SMS chat sessions didn't create tickets in the
+  CRM.</li>
+<li>Fixed an issue where underscores in an email address in a shortcut
+  were converted to double backslashes when an agent sent the email address to
+  an end-user.</li>
+<li>Fixed an issue where deleting Twilio records caused unnecessary errors.</li>
+<li>Fixed an issue where disabling the global CSAT setting prevented IVR surveys
+  from being offered to callers, even when the surveys were enabled for
+  specific queues.</li>
+</ul>]]></content>
+    <summary>Several issues have been resolved, including problems with agent assist transcripts, campaign states, call routing, and CRM integrations. This update ensures smoother operation of virtual assistants, supervisor monitoring, voicemail handling, and IVR functionalities.</summary>
+    <title>Fixed: Resolved issues in recent update</title>
   </entry>
   <entry>
     <author>

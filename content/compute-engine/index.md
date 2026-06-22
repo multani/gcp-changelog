@@ -1,5 +1,14 @@
 # Compute Engine
 
+## 2026-06-22
+
+### Feature
+
+**Generally available**: You can create instances all at once in a regional
+managed instance group (MIG) by using resize requests. For more information, see
+[About resize requests in a MIG](https://docs.cloud.google.com/compute/docs/instance-groups/about-resize-requests-mig).
+
+---
 ## 2026-06-16
 
 ### Change

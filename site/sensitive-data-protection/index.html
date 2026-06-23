@@ -2604,6 +2604,14 @@
 
 
 <h1 id="sensitive-data-protection">Sensitive Data Protection</h1>
+<h2 id="2026-06-22">2026-06-22</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Between July 2025 and June 2026, some <a href="https://docs.cloud.google.com/sensitive-data-protection/docs/metrics-reference#table-data-profile">table data
+profiles</a> saved to BigQuery contained an incorrect
+<code>1970-01-01</code> timestamp instead of <code>NULL</code> in <a href="https://docs.cloud.google.com/sensitive-data-protection/docs/reference/rest/v2/organizations.locations.tableDataProfiles#TableDataProfile.FIELDS.expiration_time"><code>expiration_time</code></a>
+for tables that don't expire. This issue has been fixed. New exports of table
+data profiles show the correct expiration timestamps.</p>
+<hr />
 <h2 id="2026-06-12">2026-06-12</h2>
 <h3 id="feature">Feature</h3>
 <p>Added support for inspecting and de-identifying batched content. You can now include a <code>BatchContentItem</code> in your <code>ContentItem</code> requests.</p>
@@ -2766,7 +2774,7 @@ date, new jobs and job triggers that are created by those workflows will fail.</
 <p>When you inspect a BigQuery table for sensitive data, you can send the inspection findings to Dataplex Universal Catalog. For more information, see <a href="https://cloud.google.com/sensitive-data-protection/docs/add-aspects-inspection-job">Send inspection results to Dataplex Universal Catalog as aspects</a>.</p>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Fixed the issue preventing Sensitive Data Protection from detecting sensitive data in the headers and footers of certain rich document types.</p>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
@@ -2846,6 +2854,9 @@ date, new jobs and job triggers that are created by those workflows will fail.</
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#sensitive-data-protection">Sensitive Data Protection</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-22" class="nav-link">2026-06-22</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-12" class="nav-link">2026-06-12</a>
           </li>

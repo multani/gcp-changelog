@@ -18,9 +18,10 @@ toggle in the web app feature management settings to let users use it.
 
 For more information, see:
 
-* [Workflow agents](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer-eap/workflow-agents)
 * [Manage web app
   features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Workflow agents](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer-eap/workflow-agents)
+  (You need to be on the allowlist to access the page.)
 
 ---
 ## 2026-06-17
@@ -40,10 +41,10 @@ toggle in the web app feature management settings to let users use it.
 
 For more information, see:
 
-* [Create and manage
-  skills](https://docs.cloud.google.com/gemini/enterprise/docs/skills)
 * [Manage web app
   features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+* [Create and manage
+  skills](https://docs.cloud.google.com/gemini/enterprise/docs/skills) (You need to be on the allowlist to access the page.)
 
 ### Feature
 

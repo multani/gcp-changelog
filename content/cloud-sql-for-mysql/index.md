@@ -1,5 +1,17 @@
 # Cloud SQL for MySQL
 
+## 2026-06-22
+
+### Feature
+
+Customer-managed encryption key (CMEK) support for Cloud SQL enhanced backups is
+generally available. You can protect your CMEK-enabled Cloud SQL instances
+using Google Cloud Backup and DR Service.
+
+For more information, see [Choose your backup
+option](https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backup-options).
+
+---
 ## 2026-06-18
 
 ### Feature

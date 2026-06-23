@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataflow</title>
   <subtitle>Changelog for Google Cloud product: Dataflow</subtitle>
-  <updated>2026-06-16T00:00:00+00:00</updated>
+  <updated>2026-06-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataflow:2026-06-22:feature:0</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use <a href="https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced">Hyperdisk Balanced</a>
+disks for Dataflow worker VMs. With Hyperdisk Balanced disks, you can provision
+IOPS and throughput independently of disk size by using the <code>diskProvisionedIOPS</code>
+and <code>diskProvisionedThroughput</code> pipeline options (Java SDK) or
+<code>disk_provisioned_iops</code> and <code>disk_provisioned_throughput_mibps</code> pipeline options
+(Python and Go SDKs). For more information, see
+<a href="https://docs.cloud.google.com/dataflow/docs/guides/configure-worker-vm#disk-type">Disk type</a> and
+<a href="https://docs.cloud.google.com/dataflow/docs/guides/configure-worker-vm#provisioned-performance">Provision IOPS and throughput</a>.</p>]]></content>
+    <summary>Dataflow worker VMs now support Hyperdisk Balanced disks. This allows you to independently provision IOPS and throughput based on your specific workload needs. Configure these settings using the new pipeline options available for Java, Python, and Go SDKs.</summary>
+    <title>Feature: Hyperdisk Balanced for Dataflow</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

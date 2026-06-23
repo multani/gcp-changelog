@@ -1,5 +1,108 @@
 # Looker
 
+## 2026-06-22
+
+### Announcement
+
+Starting June 22, 2026, the following features will begin rolling out as part of Looker 26.10.
+
+### Feature
+
+Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes` statement to the `localization_settings` parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.
+
+### Feature
+
+Dashboard editors can now enable the [**Preserve desktop layout**](https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#preserve-dashboard-layout) setting to preserve the layout of a dashboard when users view the dashboard in a smaller browser or on a mobile screen. Users can navigate the dashboard with a zoom slider that enlarges tiles, and they can [switch between desktop and mobile view](https://docs.cloud.google.com/looker/docs/mobile-app-viewing-dashboards#viewing_new_dashboards_in_the_app).
+
+### Feature
+
+[Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) suites can now be configured to [automatically run on a recurring schedule](https://docs.cloud.google.com/looker/docs/ci-create-suite#schedule-trigger).
+
+### Feature
+
+The [Enhanced search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.
+
+### Feature
+
+The character limit for descriptions on dashboards and Looks has been increased to 2,000 characters, giving content creators the ability to add comprehensive descriptions, operational definitions, and notes to their dashboards and Looks to ensure that viewers fully understand the data context.
+
+This feature is available to any user with standard content editing rights ([Edit content access level](https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels) or [`save_dashboards`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_dashboards) or [`save_looks`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_looks) permissions).
+
+### Feature
+
+The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature has the following updates:
+
+* You can now [upload data from a BigQuery database table to create a self-service Explore](https://docs.cloud.google.com/looker/docs/exploring-self-service#bq-table).
+* Previously, on the Looker [**Self-service Explores** Admin page](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore), there was a single toggle to enable data uploads on the instance. If the **Data Uploads** toggle was enabled, and your Looker admin also [enabled the APIs to support Google Sheets uploads](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis), then data imports from Google Sheets were enabled on the instance. Starting in Looker 26.10, there is a separate toggle for **Google Sheets data import** to allow your Looker admin more granular control over the data uploads on the instance. Your Looker admin can't enable this toggle until after the Looker admin has enabled the the APIs to support Google Sheets uploads.
+
+### Feature
+
+Looker admins can now programmatically change the owner of dashboards, boards, and agents with the [Looker API](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest) by updating the associated user ID. This simplifies offboarding and content reassignment when users change roles or leave the organization.
+
+When the owner of a dashboard, a board, or an agent is changed, new owners are automatically granted [Manage/Edit access](https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels) to transferred agents. Any existing [certification badges](https://docs.cloud.google.com/looker/docs/content-certification) on transferred dashboards remain intact.
+
+The API initiator must have [`save_content`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_content) and [`manage_spaces`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#manage_spaces) access to the folder where the asset resides.
+
+Transferring ownership of dashboards and boards doesn't automatically grant the new owner access to parent folders, models, or underlying Looks.
+
+### Feature
+
+Now available in preview, the [Filters as tiles and tile-level filter context](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#filters_as_tiles) feature lets you convert dashboard filters into draggable tiles on the dashboard canvas. A dashboard editor can then drag and arrange filter tiles on the dashboard canvas in the same way as other dashboard tiles. To enable this feature, a Looker admin must turn on the **Filters as tiles and tile-level filter context** setting on the **Previews** admin page.
+
+In addition, viewers can now check which filters are applied to a specific visualization tile.
+
+### Feature
+
+Now available in preview, the [Google Maps](https://docs.cloud.google.com/looker/docs/google-map-options) enhancements feature adds the following features:
+
+* Fully supported [vector maps](https://docs.cloud.google.com/looker/docs/google-map-options#3d_heatmap) for rendering thousands of data points seamlessly that support tilt, rotation, and dynamic 3D extrusions to elevate visual storytelling at every zoom level.
+* [Dual-axis metric comparison](https://docs.cloud.google.com/looker/docs/google-map-options#dual-axis_map) that lets you analyze multiple business metrics simultaneously on a single map interface, using heatmaps and points to uncover spatial correlations without switching views.
+* [Contextual and custom overlays](https://docs.cloud.google.com/looker/docs/google-map-options#layers_menu_options) that enhance geographical analysis by layering live traffic, transit, or bicycle routes, with granular styling controls for tailored iconography, colors, and sizing.
+
+### Feature
+
+The [Visualization Assistant](custom-looker-visualization-gemini) is now available in the [new Explore experience](https://docs.cloud.google.com/looker/docs/editing-visualizations-new-explore-experience#using_the_visualization_assistant_in_the_new_explore_experience).
+
+### Feature
+
+The [Gemini Expression Assistant](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) preview feature has been updated to increase performance.
+
+### Feature
+
+Now available in preview, the [**KPI Visualization** feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#kpi_visualization) replaces the **Single Value** chart option with the **KPI (Single Value)** chart option. The new KPI (Single Value) chart option lets users access the following enhanced styling options for single value visualizations:
+
+* Adding secondary visualizations: Users can add a sparkline or bar chart within a visualization to show trends or distributions that are related to the primary KPI.
+* Showing enhanced comparisons: Users can specify and compare a primary value against any other measure in an Explore query, using data from the first row, second row, last row, or totals row.
+* Accessing improved styling options: Users have more control over the appearance of the visualization, including the background color of the tile and the alignment of the values.
+  This feature is disabled by default. [Learn more about the new KPI (Single Value) Visualization](https://docs.cloud.google.com/looker/docs/kpi-single-value-options).
+
+### Change
+
+Looker dashboard agents are now included in the embedded Looker experience. Embed users with the [appropriate permissions](https://docs.cloud.google.com/looker/docs/signed-embedding#permissions) can see dashboard agents on all the embedded dashboards that they have access to.
+
+[Learn more about how to configure an embedded dashboard for embed user visibility](https://docs.cloud.google.com/looker/docs/embedding).
+
+### Change
+
+Conversational Analytics data agents that are [published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) now support visualizations in their conversations.
+
+### Change
+
+The [Granular Dashboard Sizing preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#granular-dashboard-sizing) is now enabled by default.
+
+### Change
+
+The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a [dashboard summary](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries) is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the **Enable Dashboard Summary** feature on the **Gemini in Looker** admin page.
+
+### Feature
+
+Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Previews** admin page.
+
+### Breaking
+
+When you update the Gemini Enterprise instance that is connected to Looker, any [data agents that you published](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) to the previous Gemini Enterprise instance will be unpublished. You can still access these data agents in Looker, but you must re-publish them to the new Gemini Enterprise instance before you can chat with those agents in Gemini Enterprise.
+
+---
 ## 2026-06-04
 
 ### Announcement

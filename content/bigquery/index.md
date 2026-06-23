@@ -1,5 +1,19 @@
 # BigQuery
 
+## 2026-06-22
+
+### Feature
+
+You can use the BigQuery Data Transfer Service to transfer metadata from the
+following data sources into Knowledge Catalog:
+
+* [Oracle](https://docs.cloud.google.com/bigquery/docs/oracle-transfer#transfer_metadata)
+* [MySQL](https://docs.cloud.google.com/bigquery/docs/mysql-transfer#transfer_metadata)
+
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-17
 
 ### Feature

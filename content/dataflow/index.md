@@ -1,5 +1,19 @@
 # Dataflow
 
+## 2026-06-22
+
+### Feature
+
+You can now use [Hyperdisk Balanced](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced)
+disks for Dataflow worker VMs. With Hyperdisk Balanced disks, you can provision
+IOPS and throughput independently of disk size by using the `diskProvisionedIOPS`
+and `diskProvisionedThroughput` pipeline options (Java SDK) or
+`disk_provisioned_iops` and `disk_provisioned_throughput_mibps` pipeline options
+(Python and Go SDKs). For more information, see
+[Disk type](https://docs.cloud.google.com/dataflow/docs/guides/configure-worker-vm#disk-type) and
+[Provision IOPS and throughput](https://docs.cloud.google.com/dataflow/docs/guides/configure-worker-vm#provisioned-performance).
+
+---
 ## 2026-06-16
 
 ### Feature

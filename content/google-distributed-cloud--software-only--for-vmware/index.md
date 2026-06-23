@@ -1,5 +1,14 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-06-17
+
+### Announcement
+
+We are experiencing a delay preventing patch releases for GDCsoftware
+only for VMware. We are working diligently to resolve this issue. We will post
+updates here with more information as it becomes available.
+
+---
 ## 2026-06-15
 
 ### Announcement

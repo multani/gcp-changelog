@@ -1,5 +1,30 @@
 # Apigee X
 
+## 2026-06-22
+
+### Announcement
+
+On June 22nd, 2026, we released an updated version of Apigee (1-17-0-apigee-10).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **519996459** | **Security fix for Apigee.** Upgraded the Apigee ingress gateway to patch the following vulnerabilities:    * [CVE-2026-27143](https://nvd.nist.gov/vuln/detail/CVE-2026-27143) * [CVE-2019-14993](https://nvd.nist.gov/vuln/detail/CVE-2019-14993) * [CVE-2021-39155](https://nvd.nist.gov/vuln/detail/CVE-2021-39155) * [CVE-2021-39156](https://nvd.nist.gov/vuln/detail/CVE-2021-39156) * [CVE-2022-23635](https://nvd.nist.gov/vuln/detail/CVE-2022-23635) * [CVE-2026-27140](https://nvd.nist.gov/vuln/detail/CVE-2026-27140) * [CVE-2026-27144](https://nvd.nist.gov/vuln/detail/CVE-2026-27144) * [CVE-2026-29181](https://nvd.nist.gov/vuln/detail/CVE-2026-29181) * [CVE-2026-32280](https://nvd.nist.gov/vuln/detail/CVE-2026-32280) * [CVE-2026-32281](https://nvd.nist.gov/vuln/detail/CVE-2026-32281) * [CVE-2026-32283](https://nvd.nist.gov/vuln/detail/CVE-2026-32283) * [CVE-2026-33811](https://nvd.nist.gov/vuln/detail/CVE-2026-33811) * [CVE-2026-33814](https://nvd.nist.gov/vuln/detail/CVE-2026-33814) * [CVE-2026-34986](https://nvd.nist.gov/vuln/detail/CVE-2026-34986) * [CVE-2026-35469](https://nvd.nist.gov/vuln/detail/CVE-2026-35469) * [CVE-2026-39820](https://nvd.nist.gov/vuln/detail/CVE-2026-39820) * [CVE-2026-39836](https://nvd.nist.gov/vuln/detail/CVE-2026-39836) * [CVE-2026-39883](https://nvd.nist.gov/vuln/detail/CVE-2026-39883) * [CVE-2026-4046](https://nvd.nist.gov/vuln/detail/CVE-2026-4046) * [CVE-2026-42499](https://nvd.nist.gov/vuln/detail/CVE-2026-42499) * [CVE-2026-42501](https://nvd.nist.gov/vuln/detail/CVE-2026-42501) * [CVE-2026-42504](https://nvd.nist.gov/vuln/detail/CVE-2026-42504) * [CVE-2022-31045](https://nvd.nist.gov/vuln/detail/CVE-2022-31045) * [CVE-2026-27145](https://nvd.nist.gov/vuln/detail/CVE-2026-27145) * [CVE-2026-32282](https://nvd.nist.gov/vuln/detail/CVE-2026-32282) * [CVE-2026-32288](https://nvd.nist.gov/vuln/detail/CVE-2026-32288) * [CVE-2026-32289](https://nvd.nist.gov/vuln/detail/CVE-2026-32289) * [CVE-2026-39350](https://nvd.nist.gov/vuln/detail/CVE-2026-39350) * [CVE-2026-39817](https://nvd.nist.gov/vuln/detail/CVE-2026-39817) * [CVE-2026-39819](https://nvd.nist.gov/vuln/detail/CVE-2026-39819) * [CVE-2026-39823](https://nvd.nist.gov/vuln/detail/CVE-2026-39823) * [CVE-2026-39825](https://nvd.nist.gov/vuln/detail/CVE-2026-39825) * [CVE-2026-39826](https://nvd.nist.gov/vuln/detail/CVE-2026-39826) * [CVE-2026-41413](https://nvd.nist.gov/vuln/detail/CVE-2026-41413) * [CVE-2026-42507](https://nvd.nist.gov/vuln/detail/CVE-2026-42507) * [CVE-2026-4437](https://nvd.nist.gov/vuln/detail/CVE-2026-4437) * [CVE-2026-4438](https://nvd.nist.gov/vuln/detail/CVE-2026-4438) |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **515788622** | Upgraded the default outbound TLS protocol from TLSv1.2 to TLSv1.3 on JVMs that support it. Per-proxy `<SSLInfo><Protocols>` settings continue to take precedence, and the new `HTTPClient.outbound.tls.protocol` override lets operators force a specific protocol. |
+| **184266748** | Fixed an issue where ApigeeDatastore TLS certificate creation could fail in namespaces with longer names when the certificate common name exceeded the 64-byte limit. |
+| **286069772** | Added a per-gateway `proxyProtocol.mode` property (strict, permissive, disable) on Apigee ingress gateway components to opt in to HAProxy PROXY-protocol parsing. The property defaults to disable. |
+| **N/A** | Updates to infrastructure and libraries. |
+
+---
 ## 2026-06-18
 
 ### Announcement

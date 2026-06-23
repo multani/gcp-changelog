@@ -1,6 +1,16 @@
 {
   "name": "Sensitive Data Protection",
   "entries": {
+    "2026-06-22": [
+      {
+        "kind": "Fixed",
+        "content": "Between July 2025 and June 2026, some [table data\nprofiles](https://docs.cloud.google.com/sensitive-data-protection/docs/metrics-reference#table-data-profile) saved to BigQuery contained an incorrect\n`1970-01-01` timestamp instead of `NULL` in [`expiration_time`](https://docs.cloud.google.com/sensitive-data-protection/docs/reference/rest/v2/organizations.locations.tableDataProfiles#TableDataProfile.FIELDS.expiration_time)\nfor tables that don't expire. This issue has been fixed. New exports of table\ndata profiles show the correct expiration timestamps.",
+        "summary": {
+          "title": "Expiration timestamp issue resolved",
+          "summary": "An issue where table data profiles incorrectly showed a `1970-01-01` timestamp instead of NULL for non-expiring tables has been fixed. New exports will reflect the correct expiration timestamps."
+        }
+      }
+    ],
     "2026-06-12": [
       {
         "kind": "Feature",

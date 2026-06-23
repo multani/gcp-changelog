@@ -2,9 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Sensitive Data Protection</title>
   <subtitle>Changelog for Google Cloud product: Sensitive Data Protection</subtitle>
-  <updated>2026-06-12T00:00:00+00:00</updated>
+  <updated>2026-06-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:sensitive-data-protection</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/sensitive-data-protection/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:sensitive-data-protection:2026-06-22:fixed:0</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Between July 2025 and June 2026, some <a href="https://docs.cloud.google.com/sensitive-data-protection/docs/metrics-reference#table-data-profile">table data
+profiles</a> saved to BigQuery contained an incorrect
+<code>1970-01-01</code> timestamp instead of <code>NULL</code> in <a href="https://docs.cloud.google.com/sensitive-data-protection/docs/reference/rest/v2/organizations.locations.tableDataProfiles#TableDataProfile.FIELDS.expiration_time"><code>expiration_time</code></a>
+for tables that don't expire. This issue has been fixed. New exports of table
+data profiles show the correct expiration timestamps.</p>]]></content>
+    <summary>An issue where table data profiles incorrectly showed a `1970-01-01` timestamp instead of NULL for non-expiring tables has been fixed. New exports will reflect the correct expiration timestamps.</summary>
+    <title>Fixed: Expiration timestamp issue resolved</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

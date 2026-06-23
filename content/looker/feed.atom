@@ -2,9 +2,239 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-06-04T00:00:00+00:00</updated>
+  <updated>2026-06-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:announcement:0</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting June 22, 2026, the following features will begin rolling out as part of Looker 26.10.</p>]]></content>
+    <summary>New features for Looker will begin rolling out starting June 22, 2026, as part of the Looker 26.10 release. This update introduces enhancements to the platform. More details will be shared soon.</summary>
+    <title>Announcement: Looker 26.10 Features Rolling Out</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:1</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the <code>import_locale_defs: yes</code> statement to the <code>localization_settings</code> parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>]]></content>
+    <summary>Model localization is now in preview for imported projects. You can choose to use only the importing project's locale definitions or merge them with the imported project's definitions by modifying your manifest file. Refer to the documentation for detailed instructions.</summary>
+    <title>Feature: Model Localization Preview for Imported Projects</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:2</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dashboard editors can now enable the <a href="https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#preserve-dashboard-layout"><strong>Preserve desktop layout</strong></a> setting to preserve the layout of a dashboard when users view the dashboard in a smaller browser or on a mobile screen. Users can navigate the dashboard with a zoom slider that enlarges tiles, and they can <a href="https://docs.cloud.google.com/looker/docs/mobile-app-viewing-dashboards#viewing_new_dashboards_in_the_app">switch between desktop and mobile view</a>.</p>]]></content>
+    <summary>Dashboard editors can now enable the 'Preserve desktop layout' setting. This ensures dashboards maintain their intended appearance on smaller screens, with users able to zoom and switch views as needed.</summary>
+    <title>Feature: Preserve dashboard layout on smaller screens</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:3</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> suites can now be configured to <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#schedule-trigger">automatically run on a recurring schedule</a>.</p>]]></content>
+    <summary>CI suites can now be automatically triggered on a recurring schedule. This new feature allows for more streamlined and predictable deployment workflows.</summary>
+    <title>Feature: Automated CI Suite Scheduling</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:4</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content">Enhanced search</a> feature is now generally available.</p>]]></content>
+    <summary>The enhanced search feature, which helps you find saved content more easily, is now generally available. This improvement streamlines your content discovery process.</summary>
+    <title>Feature: Enhanced search is now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:5</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The character limit for descriptions on dashboards and Looks has been increased to 2,000 characters, giving content creators the ability to add comprehensive descriptions, operational definitions, and notes to their dashboards and Looks to ensure that viewers fully understand the data context.</p>
+<p>This feature is available to any user with standard content editing rights (<a href="https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels">Edit content access level</a> or <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_dashboards"><code>save_dashboards</code></a> or <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_looks"><code>save_looks</code></a> permissions).</p>]]></content>
+    <summary>You can now add up to 2,000 characters to descriptions for dashboards and Looks. This allows for more detailed context and explanations for your viewers. This feature is available to users with standard content editing rights.</summary>
+    <title>Feature: Expanded Description Limits for Dashboards and Looks</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:6</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explores</strong></a> feature has the following updates:</p>
+<ul>
+<li>You can now <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service#bq-table">upload data from a BigQuery database table to create a self-service Explore</a>.</li>
+<li>Previously, on the Looker <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> Admin page</a>, there was a single toggle to enable data uploads on the instance. If the <strong>Data Uploads</strong> toggle was enabled, and your Looker admin also <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis">enabled the APIs to support Google Sheets uploads</a>, then data imports from Google Sheets were enabled on the instance. Starting in Looker 26.10, there is a separate toggle for <strong>Google Sheets data import</strong> to allow your Looker admin more granular control over the data uploads on the instance. Your Looker admin can't enable this toggle until after the Looker admin has enabled the the APIs to support Google Sheets uploads.</li>
+</ul>]]></content>
+    <summary>You can now upload data directly from BigQuery tables to create self-service Explores. Additionally, administrators have more granular control over data import options, with a dedicated toggle for Google Sheets imports.</summary>
+    <title>Feature: New ways to explore your data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:7</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker admins can now programmatically change the owner of dashboards, boards, and agents with the <a href="https://docs.cloud.google.com/looker/docs/reference/looker-api/latest">Looker API</a> by updating the associated user ID. This simplifies offboarding and content reassignment when users change roles or leave the organization.</p>
+<p>When the owner of a dashboard, a board, or an agent is changed, new owners are automatically granted <a href="https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels">Manage/Edit access</a> to transferred agents. Any existing <a href="https://docs.cloud.google.com/looker/docs/content-certification">certification badges</a> on transferred dashboards remain intact.</p>
+<p>The API initiator must have <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_content"><code>save_content</code></a> and <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#manage_spaces"><code>manage_spaces</code></a> access to the folder where the asset resides.</p>
+<p>Transferring ownership of dashboards and boards doesn't automatically grant the new owner access to parent folders, models, or underlying Looks.</p>]]></content>
+    <summary>Looker admins can now use the Looker API to change the owner of dashboards, boards, and agents. This feature streamlines user offboarding and content reassignment by allowing programmatic updates to the associated user ID. New owners receive appropriate access, and existing certifications are preserved.</summary>
+    <title>Feature: Programmatically Transfer Dashboard Ownership</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:8</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#filters_as_tiles">Filters as tiles and tile-level filter context</a> feature lets you convert dashboard filters into draggable tiles on the dashboard canvas. A dashboard editor can then drag and arrange filter tiles on the dashboard canvas in the same way as other dashboard tiles. To enable this feature, a Looker admin must turn on the <strong>Filters as tiles and tile-level filter context</strong> setting on the <strong>Previews</strong> admin page.</p>
+<p>In addition, viewers can now check which filters are applied to a specific visualization tile.</p>]]></content>
+    <summary>Dashboard filters can now be converted into draggable tiles for easier arrangement and management. This new feature also allows viewers to easily see which filters are applied to individual visualization tiles.</summary>
+    <title>Feature: New Dashboard Filter Tiles Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:9</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/google-map-options">Google Maps</a> enhancements feature adds the following features:</p>
+<ul>
+<li>Fully supported <a href="https://docs.cloud.google.com/looker/docs/google-map-options#3d_heatmap">vector maps</a> for rendering thousands of data points seamlessly that support tilt, rotation, and dynamic 3D extrusions to elevate visual storytelling at every zoom level.</li>
+<li><a href="https://docs.cloud.google.com/looker/docs/google-map-options#dual-axis_map">Dual-axis metric comparison</a> that lets you analyze multiple business metrics simultaneously on a single map interface, using heatmaps and points to uncover spatial correlations without switching views.</li>
+<li><a href="https://docs.cloud.google.com/looker/docs/google-map-options#layers_menu_options">Contextual and custom overlays</a> that enhance geographical analysis by layering live traffic, transit, or bicycle routes, with granular styling controls for tailored iconography, colors, and sizing.</li>
+</ul>]]></content>
+    <summary>Explore enhanced map visualizations with vector maps, dual-axis metric comparisons, and customizable overlays. These new features allow for more dynamic data storytelling and deeper spatial analysis, all available now in preview.</summary>
+    <title>Feature: New Map Features Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:10</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="custom-looker-visualization-gemini">Visualization Assistant</a> is now available in the <a href="https://docs.cloud.google.com/looker/docs/editing-visualizations-new-explore-experience#using_the_visualization_assistant_in_the_new_explore_experience">new Explore experience</a>.</p>]]></content>
+    <summary>The new Visualization Assistant is now available in the Looker Explore experience. This feature helps you create visualizations more easily and efficiently.</summary>
+    <title>Feature: Introducing the Visualization Assistant</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:11</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-expression-asst">Gemini Expression Assistant</a> preview feature has been updated to increase performance.</p>]]></content>
+    <summary>The Gemini Expression Assistant preview feature has been updated to improve its performance. This update focuses on making the tool faster and more responsive for users.</summary>
+    <title>Feature: Gemini Expression Assistant performance update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:12</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#kpi_visualization"><strong>KPI Visualization</strong> feature</a> replaces the <strong>Single Value</strong> chart option with the <strong>KPI (Single Value)</strong> chart option. The new KPI (Single Value) chart option lets users access the following enhanced styling options for single value visualizations:</p>
+<ul>
+<li>Adding secondary visualizations: Users can add a sparkline or bar chart within a visualization to show trends or distributions that are related to the primary KPI.</li>
+<li>Showing enhanced comparisons: Users can specify and compare a primary value against any other measure in an Explore query, using data from the first row, second row, last row, or totals row.</li>
+<li>Accessing improved styling options: Users have more control over the appearance of the visualization, including the background color of the tile and the alignment of the values.
+  This feature is disabled by default. <a href="https://docs.cloud.google.com/looker/docs/kpi-single-value-options">Learn more about the new KPI (Single Value) Visualization</a>.</li>
+</ul>]]></content>
+    <summary>A new KPI Visualization feature is now in preview, offering enhanced styling options for single value charts. This includes secondary visualizations like sparklines, improved comparison capabilities, and more control over visual appearance.</summary>
+    <title>Feature: New KPI Visualization Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:change:13</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker dashboard agents are now included in the embedded Looker experience. Embed users with the <a href="https://docs.cloud.google.com/looker/docs/signed-embedding#permissions">appropriate permissions</a> can see dashboard agents on all the embedded dashboards that they have access to.</p>
+<p><a href="https://docs.cloud.google.com/looker/docs/embedding">Learn more about how to configure an embedded dashboard for embed user visibility</a>.</p>]]></content>
+    <summary>Dashboard agents are now part of the embedded Looker experience. Users with the correct permissions can view dashboard agents on any embedded dashboards they can access. This change enhances the interactive capabilities of embedded dashboards.</summary>
+    <title>Change: Dashboard agents now available in embedded Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:change:14</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Conversational Analytics data agents that are <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents">published to Gemini Enterprise</a> now support visualizations in their conversations.</p>]]></content>
+    <summary>Conversational Analytics data agents now support visualizations within their conversations. This enhancement allows for richer and more interactive data exploration directly within the agent interface. This feature is available for agents published to Gemini Enterprise.</summary>
+    <title>Change: New visualization support for data agents</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:change:15</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#granular-dashboard-sizing">Granular Dashboard Sizing preview feature</a> is now enabled by default.</p>]]></content>
+    <summary>The granular dashboard sizing preview feature is now enabled by default. This change allows for more flexible dashboard layout adjustments. Users can now benefit from this feature without needing to explicitly enable it in preview.</summary>
+    <title>Change: Dashboard sizing is now default</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:change:16</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries">dashboard summary</a> is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the <strong>Enable Dashboard Summary</strong> feature on the <strong>Gemini in Looker</strong> admin page.</p>]]></content>
+    <summary>The dashboard summary feature can now be enabled independently from dashboard data agents. This enhancement, disabled by default, automatically generates a summary at the top of dashboard conversations when activated by a Looker admin. Administrators can enable this feature on the Gemini in Looker admin page.</summary>
+    <title>Change: Dashboard Summary Feature Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:17</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Observability</strong> setting on the <strong>Previews</strong> admin page.</p>]]></content>
+    <summary>Preview enhanced observability metrics for Conversational Analytics, including engagement and token usage. A Looker admin can enable this feature via the Previews admin page. Access the new data on the System Activity dashboard.</summary>
+    <title>Feature: Preview: Enhanced Conversational Analytics Metrics</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:breaking:18</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you update the Gemini Enterprise instance that is connected to Looker, any <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents">data agents that you published</a> to the previous Gemini Enterprise instance will be unpublished. You can still access these data agents in Looker, but you must re-publish them to the new Gemini Enterprise instance before you can chat with those agents in Gemini Enterprise.</p>]]></content>
+    <summary>When updating your Gemini Enterprise instance, previously published data agents will be unpublished. You will need to re-publish these agents to the new instance to continue using them for chat interactions.</summary>
+    <title>Breaking: Data agents in Gemini Enterprise may be unpublished after instance updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

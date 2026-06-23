@@ -1,5 +1,18 @@
 # Cloud Monitoring
 
+## 2026-06-22
+
+### Feature
+
+Metrics Explorer can automatically break down a chart into a series of tiles,
+with each displaying time-series data for a specific label key. This view helps
+you identify spikes, dips, or trends that the aggregation settings might
+otherwise hide.
+
+To learn more, see
+[Break down a chart by labels](https://docs.cloud.google.com/monitoring/charts/breakdown-chart-by-labels).
+
+---
 ## 2026-06-12
 
 ### Change

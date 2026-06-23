@@ -1,5 +1,25 @@
 # Cloud Billing
 
+## 2026-06-22
+
+### Feature
+
+**Resource-based CUD recommendations available for Compute Engine GPUs, Local SSD disks, and OS licenses**
+
+Resource-based committed use discount (CUD) recommendations are generally available (GA) for GPUs, Local SSD disks, and premium operating system (OS) licenses.
+
+CUD recommendations provide insight into any additional commitments that you can
+purchase to optimize the costs of the resources that you run. You can use these
+recommendations and purchase commitments for resource usage that isn't covered
+by commitments and is being charged at list prices. Google Cloud analyzes your
+compute instance spending trends with and without a commitment and generates
+CUD recommendations on a monthly basis.
+
+For more information about how CUD recommendations are generated, what resource
+types are supported, and how to use recommendations to purchase commitments, see
+[Get recommendations for committed use discounts (CUDs)](https://docs.cloud.google.com/docs/cuds-recommender).
+
+---
 ## 2026-06-17
 
 ### Feature

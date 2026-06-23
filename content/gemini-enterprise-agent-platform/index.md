@@ -1,5 +1,14 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-22
+
+### Feature
+
+**Provisioned Throughput support for supervised fine-tuned Gemini 3 model inference.**
+
+Provisioned Throughput can be used to assure supervised fine-tuned inference using the same quota. Supervised fine-tuned inference for Gemini 3 models incurs a higher burndown rate compared to base model inference. Learn more [here](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models#supervised-fine-tuned-model-support).
+
+---
 ## 2026-06-18
 
 ### Feature

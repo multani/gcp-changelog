@@ -1,5 +1,41 @@
 # Managed Service for Apache Spark
 
+## 2026-06-22
+
+### Breaking
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+The new subminor image versions (`1.3.96`, `1.4.81`, `1.5.92`, `2.0.161`, `2.1.116`, `2.2.84`, `2.3.32`) do not have preconfigured Conda channels and are not mapped to default aliases (such as `2.3-debian12`, `2.3-ubuntu22`, etc.) until August 25, 2026.
+
+* **Impact:** When creating clusters with these image versions, specify the exact subminor version (for example, `2.3.32-debian12`). Packages cannot be installed using Conda unless channels are manually configured during cluster initialization.
+* **Mitigation:** If your workloads require preconfigured Conda channels or default aliases, pin your clusters to the previous image versions.
+* **Default change schedule:** The subminor versions `1.3.96`, `1.4.81`, `1.5.92`, and `2.0.161` will become default after August 25, 2026. Additionally, newer subminor versions for `2.1`, `2.2`, and `2.3` released after August 25, 2026 will not have preconfigured Conda channels and will be mapped to default aliases. All workloads must use new images after August 25, 2026, since prior subminor versions with conda channels preconfigured will be disallowed from usage.
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 1.3.96-debian10, 1.3.96-ubuntu18
+* 1.4.81-debian10, 1.4.81-ubuntu18
+* 1.5.92-debian10, 1.5.92-rocky8, 1.5.92-ubuntu18
+* 2.0.161-debian10, 2.0.161-rocky8, 2.0.161-ubuntu18
+* 2.1.115-debian11, 2.1.115-rocky8, 2.1.115-ubuntu20, 2.1.115-ubuntu20-arm
+* 2.1.116-debian11, 2.1.116-rocky8, 2.1.116-ubuntu20, 2.1.116-ubuntu20-arm
+* 2.2.83-debian12, 2.2.83-rocky9, 2.2.83-ubuntu22, 2.2.83-ubuntu22-arm
+* 2.2.84-debian12, 2.2.84-rocky9, 2.2.84-ubuntu22, 2.2.84-ubuntu22-arm
+* 2.3.31-debian12, 2.3.31-ml-ubuntu22, 2.3.31-rocky9, 2.3.31-ubuntu22, 2.3.31-ubuntu22-arm
+* 2.3.32-debian12, 2.3.32-ml-ubuntu22, 2.3.32-rocky9, 2.3.32-ubuntu22, 2.3.32-ubuntu22-arm
+
+### Announcement
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+Key updates in these image versions include:
+
+* **Iceberg support**: Added support for Iceberg 1.10 in Dataproc 2.3 images. This change only applies to 2.3 clusters created with the `ICEBERG` optional component. Users can opt-in to Iceberg 1.10 by setting the `dataproc:dataproc.iceberg.version` cluster property to `1.10` during cluster creation.
+* **Spark optimizations**: Enabled Spark skewed-join and self-join optimizations by default in new GCE image versions.
+* **Scheduler exitTimeout**: Configured `spark.scheduler.listenerbus.exitTimeout` to 30s for Compute Engine deployments.
+
+---
 ## 2026-06-16
 
 ### Announcement

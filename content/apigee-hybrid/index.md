@@ -11,6 +11,12 @@ On June 19, 2026 we released an updated version of the Apigee hybrid software, v
 
 **Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
 
+### Feature
+
+**HAProxy PROXY-protocol support on Apigee ingress gateway**
+
+In this release, you can opt into HAProxy PROXY-protocol parsing by setting the [`ingressGateways[].proxyProtocol.mode`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/config-prop-ref#ingressgateways-proxyprotocol-mode) property (with options `strict`, `permissive`, or `disable`) in your overrides configuration file. The property defaults to `disable`.
+
 ### Security
 
 Various security and CVE fixes are included in this release.

@@ -11,6 +11,14 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "**HAProxy PROXY-protocol support on Apigee ingress gateway**\n\nIn this release, you can opt into HAProxy PROXY-protocol parsing by setting the [`ingressGateways[].proxyProtocol.mode`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/config-prop-ref#ingressgateways-proxyprotocol-mode) property (with options `strict`, `permissive`, or `disable`) in your overrides configuration file. The property defaults to `disable`.",
+        "summary": {
+          "title": "HAProxy PROXY-protocol support",
+          "summary": "The Apigee ingress gateway now supports HAProxy PROXY-protocol parsing. You can enable this feature by configuring the proxy protocol mode in your overrides. This allows for enhanced network traffic management and visibility."
+        }
+      },
+      {
         "kind": "Security",
         "content": "Various security and CVE fixes are included in this release.",
         "summary": {

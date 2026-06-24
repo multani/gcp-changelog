@@ -1,5 +1,14 @@
 # Cloud Database Migration Service
 
+## 2026-06-23
+
+### Announcement
+
+Database Migration Service for MySQL homogeneous migrations now supports MySQL version 9.7.
+For more information, see
+[Supported source and destination databases](https://docs.cloud.google.com/database-migration/docs/supported-databases).
+
+---
 ## 2026-05-22
 
 ### Feature

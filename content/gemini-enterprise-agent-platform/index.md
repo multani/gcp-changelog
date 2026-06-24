@@ -1,5 +1,30 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-24
+
+### Feature
+
+**AI security findings in Agent Platform**
+
+Viewing AI security findings and posture management summaries in Gemini
+Enterprise Agent Platform is [generally
+available](https://cloud.google.com/products#product-launch-stages).
+
+With this release, the **Security** dashboard introduces the **Top security
+findings** widget.
+
+Also, specific features within the AI security widgets are
+available in [Preview](https://cloud.google.com/products#product-launch-stages),
+including the following:
+
+* Vulnerability findings and threat monitoring for agent runtimes (such as
+  Cloud Run)
+* Historical content violation trends (**Violations over time**)
+
+For more information, see [View security
+findings](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/view-security-findings).
+
+---
 ## 2026-06-22
 
 ### Change
@@ -100,6 +125,21 @@ in General Availability (GA). For more information, see
 [Supported locations for agents](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/agent-locations#multi-regional-and-global-endpoints). Note that
 Customer-Managed Encryption Keys (CMEK) cannot be used if your Memory Bank
 or Sessions instance is configured to use the global endpoint.
+
+---
+## 2026-06-15
+
+### Feature
+
+**Reinforcement Learning fine-tuning is available for Gemini 3.5 Flash in Public Preview**
+
+Reinforcement Learning fine-tuning is now available for the `gemini-3.5-flash` models in
+[Preview](https://cloud.google.com/products#product-launch-stages). Model tuning
+for Gemini 3.5 Flash is restricted to `us-central1` and `europe-west4`, and tuned
+model serving is restricted to the `us` and `eu` multi-region endpoints.
+
+See [About reinforcement learning fine-tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/reinforcement-tuning)
+for more information.
 
 ---
 ## 2026-06-09

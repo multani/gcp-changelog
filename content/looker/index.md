@@ -8,6 +8,12 @@ Starting June 22, 2026, the following features will begin rolling out as part of
 
 ### Feature
 
+New in Looker 26.10, Looker project deployments have transitioned from a synchronous to an asynchronous process to improve reliability and efficiency. Deployments now run as background processes. Instead of waiting for a deployment to finish, the system immediately returns a deployment ID, allowing you to continue your work without being blocked. In addition, the Looker IDE's **Deploy** tab is visible for all LookML projects, not just for projects where [advanced deploy mode](https://docs.cloud.google.com/looker/docs/advanced-deploy-mode) is enabled. For projects where advanced deploy mode is disabled, when a LookML developer [deploys to production](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#deploying_to_production), the Looker IDE displays a confirmation that the deployment was submitted. The confirmation dialog has a **Go to Deployment Manager** button, which you can click to open the **Deploy** tab in the IDE and see the status of your recent deployments.
+
+**Note:** This item was added on June 23, 2026.
+
+### Feature
+
 Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes` statement to the `localization_settings` parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.
 
 ### Feature

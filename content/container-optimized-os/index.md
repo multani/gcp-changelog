@@ -1,5 +1,284 @@
 # Container Optimized OS
 
+## 2026-06-22
+
+### Change
+
+
+
+### cos-129-19506-224-52
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.90](https://cos.googlesource.com/third_party/kernel/+/fd31f7d8b65031d8f8a98c7aafc59c84a831dfc0 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.224.52/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-133-19879-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.35](https://cos.googlesource.com/third_party/kernel/+/ef0c067405ff6956b986d853c39c609e6d457228 ) | v29.4.3 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19879.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+Minor changes.
+
+### Fixed
+
+Upgraded app-admin/logrotate to v3.22.0-r1.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260605.00.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2026.06.03.194714-r275.
+
+### Fixed
+
+Upgraded cos-gpu-installer to v2.7.4.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.53.2-r1.
+
+### Fixed
+
+Upgraded sys-apps/less to v704.
+
+### Security
+
+Fixed CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, and CVE-2026-47262 in app-containers/containerd.
+
+### Change
+
+
+
+### cos-125-19216-395-112
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/1dd147644c2ffa2b98ed57056012bfed5c2d2190 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.112/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+Minor changes.
+
+### Change
+
+
+
+### cos-121-18867-381-184
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/0cf599aaec4ef39b7c8fddb48963b257e7b1e3c7 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.184/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-5928 in sys-libs/glibc.
+
+### Change
+
+
+
+### cos-117-18613-613-62
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/6baf9cd9b87dc7ebfbc0bf533cef571e4fbcf31e ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.613.62/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+Minor changes.
+
+---
+## 2026-06-18
+
+### Change
+
+
+
+### cos-129-19506-224-49
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.90](https://cos.googlesource.com/third_party/kernel/+/fd31f7d8b65031d8f8a98c7aafc59c84a831dfc0 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.224.49/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated oslogin to v20260605.00.
+
+### Fixed
+
+Upgraded app-admin/logrotate to v3.22.0-r1.
+
+### Fixed
+
+Upgraded sys-apps/less to v704.
+
+### Security
+
+Fix CVE-2026-41567 in app-containers/docker.
+
+### Security
+
+Fix CVE-2026-41568 in app-containers/docker.
+
+### Security
+
+Fix CVE-2026-42306 in app-containers/docker.
+
+### Security
+
+Fixed CVE-2026-46160 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46315 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46321 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46322 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46323 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, and CVE-2026-47262 in app-containers/containerd.
+
+### Change
+
+
+
+### cos-125-19216-395-109
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.85](https://cos.googlesource.com/third_party/kernel/+/1dd147644c2ffa2b98ed57056012bfed5c2d2190 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.395.109/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated oslogin to v20260605.00.
+
+### Security
+
+Fix CVE-2026-41568 in app-containers/docker.
+
+### Security
+
+Fix CVE-2026-415687 in app-containers/docker.
+
+### Security
+
+Fix CVE-2026-42306 in app-containers/docker.
+
+### Security
+
+Fixed CVE-2026-46315 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46321 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46322 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46323 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, and CVE-2026-47262 in app-containers/containerd.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Change
+
+
+
+### cos-117-18613-613-61
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/6baf9cd9b87dc7ebfbc0bf533cef571e4fbcf31e ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.613.61/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated oslogin to v20260605.00.
+
+### Security
+
+Fix CVE-2026-41567 in app-containers/docker.
+
+### Security
+
+Fix CVE-2026-41568 in app-containers/docker.
+
+### Security
+
+Fix CVE-2026-42306 in app-containers/docker.
+
+### Security
+
+Fixed CVE-2025-13462 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2026-46323 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, and CVE-2026-47262 in app-containers/containerd.
+
+### Change
+
+
+
+### cos-121-18867-381-183
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.137](https://cos.googlesource.com/third_party/kernel/+/0cf599aaec4ef39b7c8fddb48963b257e7b1e3c7 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.381.183/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated oslogin to v20260605.00.
+
+### Security
+
+Fixed CVE-2026-46323 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-50195, CVE-2026-53488, CVE-2026-53492, CVE-2026-53489, and CVE-2026-47262 in app-containers/containerd.
+
+---
 ## 2026-06-15
 
 ### Change

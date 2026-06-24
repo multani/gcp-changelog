@@ -2628,12 +2628,44 @@
 
 
 <h1 id="managed-service-for-apache-spark">Managed Service for Apache Spark</h1>
-<h2 id="2026-06-16">2026-06-16</h2>
+<h2 id="2026-06-22">2026-06-22</h2>
+<h3 id="breaking">Breaking</h3>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):
+The new subminor image versions (<code>1.3.96</code>, <code>1.4.81</code>, <code>1.5.92</code>, <code>2.0.161</code>, <code>2.1.116</code>, <code>2.2.84</code>, <code>2.3.32</code>) do not have preconfigured Conda channels and are not mapped to default aliases (such as <code>2.3-debian12</code>, <code>2.3-ubuntu22</code>, etc.) until August 25, 2026.</p>
+<ul>
+<li><strong>Impact:</strong> When creating clusters with these image versions, specify the exact subminor version (for example, <code>2.3.32-debian12</code>). Packages cannot be installed using Conda unless channels are manually configured during cluster initialization.</li>
+<li><strong>Mitigation:</strong> If your workloads require preconfigured Conda channels or default aliases, pin your clusters to the previous image versions.</li>
+<li><strong>Default change schedule:</strong> The subminor versions <code>1.3.96</code>, <code>1.4.81</code>, <code>1.5.92</code>, and <code>2.0.161</code> will become default after August 25, 2026. Additionally, newer subminor versions for <code>2.1</code>, <code>2.2</code>, and <code>2.3</code> released after August 25, 2026 will not have preconfigured Conda channels and will be mapped to default aliases. All workloads must use new images after August 25, 2026, since prior subminor versions with conda channels preconfigured will be disallowed from usage.</li>
+</ul>
 <h3 id="announcement">Announcement</h3>
+<p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
+<ul>
+<li>1.3.96-debian10, 1.3.96-ubuntu18</li>
+<li>1.4.81-debian10, 1.4.81-ubuntu18</li>
+<li>1.5.92-debian10, 1.5.92-rocky8, 1.5.92-ubuntu18</li>
+<li>2.0.161-debian10, 2.0.161-rocky8, 2.0.161-ubuntu18</li>
+<li>2.1.115-debian11, 2.1.115-rocky8, 2.1.115-ubuntu20, 2.1.115-ubuntu20-arm</li>
+<li>2.1.116-debian11, 2.1.116-rocky8, 2.1.116-ubuntu20, 2.1.116-ubuntu20-arm</li>
+<li>2.2.83-debian12, 2.2.83-rocky9, 2.2.83-ubuntu22, 2.2.83-ubuntu22-arm</li>
+<li>2.2.84-debian12, 2.2.84-rocky9, 2.2.84-ubuntu22, 2.2.84-ubuntu22-arm</li>
+<li>2.3.31-debian12, 2.3.31-ml-ubuntu22, 2.3.31-rocky9, 2.3.31-ubuntu22, 2.3.31-ubuntu22-arm</li>
+<li>2.3.32-debian12, 2.3.32-ml-ubuntu22, 2.3.32-rocky9, 2.3.32-ubuntu22, 2.3.32-ubuntu22-arm</li>
+</ul>
+<h3 id="announcement_1">Announcement</h3>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):
+Key updates in these image versions include:</p>
+<ul>
+<li><strong>Iceberg support</strong>: Added support for Iceberg 1.10 in Dataproc 2.3 images. This change only applies to 2.3 clusters created with the <code>ICEBERG</code> optional component. Users can opt-in to Iceberg 1.10 by setting the <code>dataproc:dataproc.iceberg.version</code> cluster property to <code>1.10</code> during cluster creation.</li>
+<li><strong>Spark optimizations</strong>: Enabled Spark skewed-join and self-join optimizations by default in new GCE image versions.</li>
+<li><strong>Scheduler exitTimeout</strong>: Configured <code>spark.scheduler.listenerbus.exitTimeout</code> to 30s for Compute Engine deployments.</li>
+</ul>
+<hr />
+<h2 id="2026-06-16">2026-06-16</h2>
+<h3 id="announcement_2">Announcement</h3>
 <p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine): Rollout of the <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions">new sub-minor versions without pre-configured channels</a> will begin on June 22, 2026, delayed from the previously planned date of June 15, 2026 ETA.</p>
 <hr />
 <h2 id="2026-05-29">2026-05-29</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):
 Added support for selecting specific <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/confidential-compute">Confidential Computing</a> technologies (AMD SEV, AMD SEV-SNP, Intel TDX) when creating clusters using the new <code>--confidential-compute-type</code> flag in <code>gcloud</code> and the <code>confidentialInstanceType</code> field in the API. The boolean <code>--enable-confidential-compute</code> flag is now deprecated but will continue to function, defaulting to AMD SEV for backward compatibility.</p>
 <ul>
@@ -2645,14 +2677,14 @@ Added support for selecting specific <a href="https://docs.cloud.google.com/mana
 </ul>
 <hr />
 <h2 id="2026-05-25">2026-05-25</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine): The following subminor image versions announced on <a href="https://docs.cloud.google.com/managed-spark/docs/release-notes#May_19_2026">May 19, 2026</a> have been rolled back:</p>
 <ul>
 <li>2.2.82-debian12, 2.2.82-rocky9, 2.2.82-ubuntu22, 2.2.82-ubuntu22-arm</li>
 </ul>
 <hr />
 <h2 id="2026-05-19">2026-05-19</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
 <ul>
 <li>2.1.114-debian11, 2.1.114-rocky8, 2.1.114-ubuntu20, 2.1.114-ubuntu20-arm</li>
@@ -2660,7 +2692,7 @@ Added support for selecting specific <a href="https://docs.cloud.google.com/mana
 <li>2.3.30-debian12, 2.3.30-ml-ubuntu22, 2.3.30-rocky9, 2.3.30-ubuntu22, 2.3.30-ubuntu22-arm</li>
 </ul>
 <p><strong>Rollback Notice:</strong> The <code>2.2.82</code> image versions were rolled back on <a href="https://cloud.google.com/managed-spark/docs/release-notes#May_25_2026">May 25, 2026</a>.</p>
-<h3 id="breaking">Breaking</h3>
+<h3 id="breaking_1">Breaking</h3>
 <p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):
 The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitions</code>) has changed from an integer to a string type.</p>
 <p>This change impacts image versions <code>2.3.30</code> and later in version <code>2.3</code>, and <code>2.2.82</code> and later in version <code>2.2</code>.</p>
@@ -2673,7 +2705,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 </ul>
 <hr />
 <h2 id="2026-05-11">2026-05-11</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions"><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions</a>:</p>
 <ul>
 <li>1.2.80</li>
@@ -2682,7 +2714,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 </ul>
 <hr />
 <h2 id="2026-05-03">2026-05-03</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a> for 3.0 (Preview):</p>
 <ul>
 <li>3.0.0-RC2-debian13, 3.0.0-RC2-ml-ubuntu24, 3.0.0-RC2-rocky9, 3.0.0-RC2-ubuntu24</li>
@@ -2707,7 +2739,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 <li>JupyterLab upgraded to <strong>4.5.7</strong>.</li>
 <li><strong><a href="https://pixi.prefix.dev">Pixi</a></strong> is used as python package manager instead of conda.</li>
 </ul>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions"><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions</a>:</p>
 <ul>
 <li>1.2.79</li>
@@ -2722,7 +2754,7 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
 </ul>
 <hr />
 <h2 id="2026-04-27">2026-04-27</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
 <ul>
 <li>2.1.113-debian11, 2.1.113-rocky8, 2.1.113-ubuntu20, 2.1.113-ubuntu20-arm</li>
@@ -2740,6 +2772,9 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#managed-service-for-apache-spark">Managed Service for Apache Spark</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-22" class="nav-link">2026-06-22</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-16" class="nav-link">2026-06-16</a>
           </li>

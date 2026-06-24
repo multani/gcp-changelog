@@ -1,5 +1,28 @@
 # Backup and DR
 
+## 2026-06-23
+
+### Feature
+
+You can now configure application-consistent backups for Compute Engine
+instances directly through the Google Cloud Console. This enhancement
+allows you to enable Guest Flush or VSS options within Backup Plans,
+ensuring data integrity for applications running on Linux or Windows
+VMs during the backup process. The [Back up Compute Engine instances](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-backup) documentation has been updated with instructions on how to create and modify
+backup plans to use this feature.
+
+### Feature
+
+Announcing the general availability (GA) of cross-region backups for
+Backup and DR Service. Customers can now protect Compute Engine instances,
+Compute Engine disks, and Filestore instances against regional
+outages by storing backups in a distinct secondary region of their choice.
+This functionality enhances disaster recovery capabilities, provides a
+cost-effective way to ensure regional resilience, and helps maintain
+strict control over data residency. To learn more, see
+[Backup vaults for immutable and indelible backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#regions).
+
+---
 ## 2026-06-18
 
 ### Feature

@@ -1,6 +1,24 @@
 {
   "name": "Google SecOps SIEM",
   "entries": {
+    "2026-06-23": [
+      {
+        "kind": "Feature",
+        "content": "**Ask Gemini Cloud Assist in Feed Management**\n\nGoogle SecOps now provides Gemini Cloud Assist (GCA) directly within the Feed Management interface to help you with feed creation, setup, and general troubleshooting questions.\n\nA new **Ask Gemini Cloud Assist** button is now available in the Feed Management interface. You can click this button to open the Gemini Cloud Assist panel and ask questions to get guidance on:\n\n* Configuring and managing data feeds.\n* Understanding ingestion pre-requisites and setup steps for different log sources.\n* Resolving common setup issues.\n\n*Note: Gemini Cloud Assist provides recommendations and answers to your questions, but does not perform configuration changes on your behalf. You must apply any recommended changes manually to your feeds.*\n\nFor more information, see [Feed management overview](https://docs.cloud.google.com/chronicle/docs/administration/feed-management-overview).",
+        "summary": {
+          "title": "Gemini Cloud Assist in Feed Management",
+          "summary": "Gemini Cloud Assist is now available directly in the Feed Management interface. This feature helps users with feed creation, setup, and troubleshooting by answering questions and providing guidance. Ask Gemini Cloud Assist for help with configuring feeds, understanding setup steps, and resolving common issues."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Ingestion metrics reporting correction**\n\nGoogle Security Operations has resolved an issue where certain ingestion metrics—which are displayed in both the dashboard and Cloud Monitoring—were under-reported.\n\nBecause of this correction, you might notice a one-time apparent spike in your ingestion metrics when the update is enabled for your region (between June 29 and July 10, 2026). The actual log volume ingested remains unchanged.\n\nHistorical metrics recorded before this update will not be modified or backfilled. This correction does not affect customer billing.\n\nIf you have questions or need assistance, contact Google Security Operations support.",
+        "summary": {
+          "title": "Ingestion metrics reporting corrected",
+          "summary": "An issue causing under-reported ingestion metrics has been resolved. You may see a temporary spike in metrics due to this correction, but actual log volume and billing are unaffected. Historical data remains unchanged."
+        }
+      }
+    ],
     "2026-06-17": [
       {
         "kind": "Change",
@@ -12,14 +30,6 @@
       }
     ],
     "2026-06-16": [
-      {
-        "kind": "Feature",
-        "content": "**[Spotlight Feature] Ask Gemini Cloud Assist in Feed Management**\n\nGoogle SecOps now provides Gemini Cloud Assist (GCA) directly within the Feed Management interface to help you with feed creation, setup, and general troubleshooting questions.\n\nA new **Ask Gemini Cloud Assist** button is now available in the Feed Management interface. You can click this button to open the Gemini Cloud Assist panel and ask questions to get guidance on:\n\\* Configuring and managing data feeds.\n\\* Understanding ingestion pre-requisites and setup steps for different log sources.\n\\* Resolving common setup issues.\n\n*Note: Gemini Cloud Assist provides recommendations and answers to your questions, but does not perform configuration changes on your behalf. You must apply any recommended changes manually to your feeds.*\n\nFor more information, see [Feed management overview](https://docs.cloud.google.com/chronicle/docs/administration/feed-management-overview).",
-        "summary": {
-          "title": "Gemini Cloud Assist in Feed Management",
-          "summary": "You can now access Gemini Cloud Assist directly within the Feed Management interface to get help with feed creation, setup, and troubleshooting. Ask questions to receive guidance on configuring data feeds, understanding ingestion prerequisites, and resolving common issues. Please note that Gemini Cloud Assist provides recommendations that you must apply manually."
-        }
-      },
       {
         "kind": "Announcement",
         "content": "**New Documentation changelogs**\n\nGoogle SecOps is now releasing a monthly changelog to capture major documentation updates.\n\nFor more information, refer to [Documentation changelog](https://docs.cloud.google.com/chronicle/docs/changelogs/changelogs).",

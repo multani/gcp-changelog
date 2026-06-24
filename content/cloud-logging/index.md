@@ -1,5 +1,15 @@
 # Cloud Logging
 
+## 2026-06-22
+
+### Security
+
+If the parent project for a Cloud Storage bucket changes, a log sink
+stops routing log entries to that bucket. For more information about error
+messages and recovery options, see
+[Errors routing to Cloud Storage](https://docs.cloud.google.com/logging/docs/export/troubleshoot#errors_exporting_to_cloud_storage).
+
+---
 ## 2026-06-18
 
 ### Change

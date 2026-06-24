@@ -1,5 +1,24 @@
 # Gemini Enterprise
 
+## 2026-06-23
+
+### Feature
+
+**Gemini Enterprise: Observability settings for Deep Research agents (Preview)**
+
+You can now configure observability settings for individual Deep Research
+agents, the same way as for Agent Designer employee-made agents. This allows
+you to monitor metrics in Metrics Explorer and view trace results in
+Trace Explorer for specific Deep Research agents.
+
+Observability for Deep Research agents is enabled via the agent-level
+**Observability** toggle, not the app-level toggle used for the Core Assistant
+agent.
+
+This feature is in Public Preview. For more information, see
+[Manage observability settings](https://docs.cloud.google.com/gemini/enterprise/docs/manage-observability-settings).
+
+---
 ## 2026-06-18
 
 ### Feature
@@ -197,10 +216,10 @@ announced schedule](https://docs.cloud.google.com/gemini/enterprise/docs/release
 
 ### Feature
 
-**Gemini Enterprise: DRZ and MLP compliance in the EU for NotebookLM Enterprise**
+**Gemini Enterprise: DRZ and MLP compliance in the EU for Google NotebookLM Enterprise**
 
 Gemini Enterprise is compliant with data residency (DRZ) and machine learning
-processing (MLP) requirements in the EU for NotebookLM Enterprise
+processing (MLP) requirements in the EU for Google NotebookLM Enterprise
 for adding sources and interacting with the sources (chat). However, the
 Discover Sources feature and Studio features, such as audio overview, slide
 deck, infographic, video overview, mind map, and reports, are not MLP

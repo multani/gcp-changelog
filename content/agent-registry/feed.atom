@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Agent Registry</title>
   <subtitle>Changelog for Google Cloud product: Agent Registry</subtitle>
-  <updated>2026-04-22T00:00:00+00:00</updated>
+  <updated>2026-06-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:agent-registry</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/agent-registry/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:agent-registry:2026-06-18:announcement:0</id>
+    <published>2026-06-18T00:00:00+00:00</published>
+    <updated>2026-06-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Agent Registry is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.</p>
+<p>The following are features available in Agent Registry for the GA launch stage:</p>
+<ul>
+<li><strong>API v1 and client libraries:</strong> The <code>v1</code> version of the Agent Registry API is available. Cloud client libraries are available in C#, Go, Java, Node.js, PHP, Python, and Ruby.</li>
+<li><strong>A2A v1 support:</strong> Agent Registry supports Agent-to-Agent (A2A) protocol version <code>1.0</code>, letting you explicitly declare transport endpoints and bindings inside the <code>supportedInterfaces</code> array, in addition to the existing <code>0.3</code> schema support.</li>
+<li><strong>Terraform support:</strong> Terraform scripts for Application Default Credentials (ADC) have graduated to General Availability. You can use Terraform to configure and manage your agents, MCP servers, endpoints, and bindings.</li>
+</ul>
+<p><strong>Known limitations:</strong></p>
+<ul>
+<li><strong>Access Transparency and Access Approval:</strong> <a href="https://docs.cloud.google.com/assured-workloads/access-transparency/docs/overview">Access Transparency</a> logs, which provide visibility into when Google personnel access your content, and <a href="https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview">Access Approval</a> controls aren't available for Agent Registry configurations.</li>
+<li><strong>Data Residency:</strong> If you configure the <a href="https://docs.cloud.google.com/organization-policy/restrict-locations">resource location constraint</a> in your organization policy, Agent Registry enforces the constraint when you register a resource. However, detective controls for data residency compliance reporting are limited.</li>
+</ul>]]></content>
+    <summary>Agent Registry has reached General Availability (GA), introducing API v1, client libraries, A2A v1 support, and Terraform integration. This launch enables enhanced management and interoperability for your agents.</summary>
+    <title>Announcement: Agent Registry Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

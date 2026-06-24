@@ -9,7 +9,76 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-22:fixed:0</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-22:announcement:0</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.43</strong></p>
+<p>We've released version 4.43 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>The latest version of CCaaS, 4.43, has been released. The specific update timing for your instance is determined by your chosen deployment schedule.</summary>
+    <title>Announcement: CCaaS 4.43 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-22:feature:1</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Calls to direct numbers display language selection in the call adapter</strong></p>
+<p>When an agent receives a direct call, the call adapter now displays the language
+that the caller chose during language selection.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#direct-phone-numbers">Direct phone
+numbers</a>.</p>]]></content>
+    <summary>The call adapter now shows the language selected by the caller when they make a direct call. This helps agents understand the caller's preferred language at a glance.</summary>
+    <title>Feature: Direct call language selection visible</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-22:feature:2</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>HubSpot: Control the display of CRM account fields and record fields in the
+agent adapter</strong></p>
+<p>You can now control how CRM account fields (contact and company) and record
+fields (ticket and deal) appear in the agent adapter for HubSpot integrations.
+This gives agents immediate access to important context such as VIP status,
+account ownership, and ticket priority during live interactions.</p>
+<p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;
+CRM &gt; Agent Platform &gt; HubSpot &gt; Account
+Lookup</strong> section, there are two new <strong>CRM Account Display Fields</strong> sections and
+a new <strong>CRM Record Display Fields</strong> section.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-lookups">HubSpot
+lookups</a>.</p>]]></content>
+    <summary>You can now control which CRM account and record fields appear in the agent adapter for HubSpot integrations. This allows agents to quickly see crucial information like VIP status or ticket priority during live interactions. Administrators can configure these display fields within the HubSpot settings.</summary>
+    <title>Feature: Customize HubSpot CRM Fields in Agent Adapter</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-22:feature:3</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>The chat API supports CSAT surveys</strong></p>
+<p>You can now conduct customer satisfaction (CSAT) surveys using the chat API. You
+can configure CSAT surveys at the global level and at the queue level.</p>
+<p>Administrators: On the <strong>Settings &gt; Chat</strong> page, there's a new <strong>Chat
+API</strong> section.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/csat-chat-api#adding_translations_for_multiple_languages">CSAT in the chat
+API</a>.</p>]]></content>
+    <summary>You can now conduct customer satisfaction (CSAT) surveys using the chat API. CSAT surveys can be configured at both the global and queue levels, providing greater flexibility for administrators.</summary>
+    <title>Feature: Chat API now supports CSAT surveys</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-22:fixed:4</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
@@ -402,6 +471,10 @@ lists</a>.</p>]]></content>
 <li>Fixed an issue where the <strong>Agent Preferences</strong> table on the <strong>Agent
   Availability</strong> dashboard didn't update when an agent modified their
   availability preferences.</li>
+<li>Fixed an issue that occurred when an agent manually changed their status to
+  <strong>Available</strong> before the point in time that automatic wrap-up was configured
+  to do so. In the <strong>Activity Timeline</strong> report, the status change was
+  mistakenly attributed to the system.</li>
 <li>Fixed an agent desktop issue where clicking the <strong>Transfer</strong> button in an
   SMS chat displayed an error instead of starting a transfer.</li>
 <li>Fixed an issue where a delay in Salesforce task creation caused a lag in
@@ -419,8 +492,8 @@ lists</a>.</p>]]></content>
 <li>Fixed an issue where live transcripts and conversation summarization didn't
   display in the agent desktop following an instance update.</li>
 </ul>]]></content>
-    <summary>This release includes fixes for various issues, including translation errors, report export problems, agent preference updates, SMS chat transfers, Salesforce task creation delays, chat routing, message labeling, IVR and SMS settings, web SDK loading, and live transcript display. These updates ensure a more stable and efficient user experience.</summary>
-    <title>Fixed: Multiple issues resolved in recent update</title>
+    <summary>This release resolves multiple issues including incorrect translations, report inaccuracies, agent preference update failures, status change misattributions, transfer errors, Salesforce integration delays, routing problems, chat history display issues, IVR and SMS configuration problems, web SDK loading errors, and missing live transcripts.</summary>
+    <title>Fixed: Various fixes and improvements</title>
   </entry>
   <entry>
     <author>

@@ -1,6 +1,32 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2026-06-23": [
+      {
+        "kind": "Feature",
+        "content": "**[Spotlight Feature] Ask Gemini Cloud Assist in Feed Management**\n\nGoogle SecOps now provides Gemini Cloud Assist (GCA) directly within the Feed Management interface. Use the new **Ask Gemini Cloud Assist** button to get help with feed creation, setup, and general troubleshooting questions.\n\nClick **Ask Gemini Cloud Assist** to open the Gemini Cloud Assist panel and ask questions to get guidance on:\n\n* Configuring and managing data feeds.\n* Understanding ingestion pre-requisites and setup steps for different log sources.\n* Resolving common setup issues.\n\n*Note: Gemini Cloud Assist provides recommendations and answers to your questions, but does not perform configuration changes on your behalf. You must apply any recommended changes manually to your feeds.*\n\nFor more information, see [Feed management overview](https://docs.cloud.google.com/chronicle/docs/administration/feed-management-overview).",
+        "summary": {
+          "title": "Gemini Cloud Assist in Feed Management",
+          "summary": "Gemini Cloud Assist is now available directly within the Feed Management interface. Use the 'Ask Gemini Cloud Assist' button to receive guidance on feed creation, setup, and troubleshooting. While Gemini Cloud Assist offers recommendations, users must manually apply any suggested configuration changes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Ingestion metrics reporting correction**\n\nGoogle Security Operations has resolved an issue where certain ingestion metrics—which are displayed in both the dashboard and Cloud Monitoring—were under-reported.\n\nBecause of this correction, you might notice a one-time apparent spike in your ingestion metrics when the update is enabled for your region (between June 29 and July 10, 2026). The actual log volume ingested remains unchanged.\n\nHistorical metrics recorded before this update will not be modified or backfilled. This correction does not affect customer billing.\n\nIf you have questions or need assistance, contact Google Security Operations support.",
+        "summary": {
+          "title": "Ingestion metrics reporting corrected",
+          "summary": "An issue causing under-reporting of ingestion metrics has been resolved. You may see a one-time spike in metrics due to this correction, but actual log volume and billing remain unaffected. Historical data will not be changed."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "**Critical Notice: Upcoming reservation of siemAlertId field**\n\nEffective July 5, 2026, the `siemAlertId` field will be strictly reserved for\ninternal Chronicle SIEM alert IDs.\n\nStarting July 5, the system will automatically overwrite any custom or\nuser-supplied data passed through this field. This change impacts all ingestion\nmethods, including the Ingestion API, webhooks, and both first-party and\nthird-party connectors. If you are currently utilizing a custom field named\n`siemAlertId` in any of your data ingestion configurations, please migrate to a\ndifferent field name immediately to prevent data loss.",
+        "summary": {
+          "title": "Upcoming siemAlertId Field Reservation",
+          "summary": "Effective July 5, 2026, the siemAlertId field will be reserved for internal SIEM alert IDs. Custom data in this field will be overwritten, impacting all ingestion methods. Migrate custom siemAlertId fields immediately to avoid data loss."
+        }
+      }
+    ],
     "2026-06-21": [
       {
         "kind": "Announcement",

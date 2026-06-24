@@ -1,6 +1,26 @@
 # Sensitive Data Protection
 
+## 2026-06-23
+
+### Feature
+
+[Image safety classification infoTypes](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference#image-context) are now supported in `ExcludeByImageFindings` and `AdjustByImageFindings` detection rules.
+
+For information about configuring these rules, see [Modifying infoType detectors
+to refine scan results](https://docs.cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes-rules).
+
+---
 ## 2026-06-22
+
+### Change
+
+Image scanning is available in the following cloud regions:
+
+* `asia-southeast1`
+* `us-east4`
+* `us-west1`
+
+For more information, see [Locations that support image scanning](https://cloud.google.com/sensitive-data-protection/docs/locations#image-limitations).
 
 ### Fixed
 

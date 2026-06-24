@@ -2,9 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-06-21T00:00:00+00:00</updated>
+  <updated>2026-06-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-06-23:feature:0</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Ask Gemini Cloud Assist in Feed Management</strong></p>
+<p>Google SecOps now provides Gemini Cloud Assist (GCA) directly within the Feed Management interface. Use the new <strong>Ask Gemini Cloud Assist</strong> button to get help with feed creation, setup, and general troubleshooting questions.</p>
+<p>Click <strong>Ask Gemini Cloud Assist</strong> to open the Gemini Cloud Assist panel and ask questions to get guidance on:</p>
+<ul>
+<li>Configuring and managing data feeds.</li>
+<li>Understanding ingestion pre-requisites and setup steps for different log sources.</li>
+<li>Resolving common setup issues.</li>
+</ul>
+<p><em>Note: Gemini Cloud Assist provides recommendations and answers to your questions, but does not perform configuration changes on your behalf. You must apply any recommended changes manually to your feeds.</em></p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/administration/feed-management-overview">Feed management overview</a>.</p>]]></content>
+    <summary>Gemini Cloud Assist is now available directly within the Feed Management interface. Use the 'Ask Gemini Cloud Assist' button to receive guidance on feed creation, setup, and troubleshooting. While Gemini Cloud Assist offers recommendations, users must manually apply any suggested configuration changes.</summary>
+    <title>Feature: Gemini Cloud Assist in Feed Management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-06-23:change:1</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Ingestion metrics reporting correction</strong></p>
+<p>Google Security Operations has resolved an issue where certain ingestion metrics—which are displayed in both the dashboard and Cloud Monitoring—were under-reported.</p>
+<p>Because of this correction, you might notice a one-time apparent spike in your ingestion metrics when the update is enabled for your region (between June 29 and July 10, 2026). The actual log volume ingested remains unchanged.</p>
+<p>Historical metrics recorded before this update will not be modified or backfilled. This correction does not affect customer billing.</p>
+<p>If you have questions or need assistance, contact Google Security Operations support.</p>]]></content>
+    <summary>An issue causing under-reporting of ingestion metrics has been resolved. You may see a one-time spike in metrics due to this correction, but actual log volume and billing remain unaffected. Historical data will not be changed.</summary>
+    <title>Change: Ingestion metrics reporting corrected</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-06-23:breaking:2</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Critical Notice: Upcoming reservation of siemAlertId field</strong></p>
+<p>Effective July 5, 2026, the <code>siemAlertId</code> field will be strictly reserved for
+internal Chronicle SIEM alert IDs.</p>
+<p>Starting July 5, the system will automatically overwrite any custom or
+user-supplied data passed through this field. This change impacts all ingestion
+methods, including the Ingestion API, webhooks, and both first-party and
+third-party connectors. If you are currently utilizing a custom field named
+<code>siemAlertId</code> in any of your data ingestion configurations, please migrate to a
+different field name immediately to prevent data loss.</p>]]></content>
+    <summary>Effective July 5, 2026, the siemAlertId field will be reserved for internal SIEM alert IDs. Custom data in this field will be overwritten, impacting all ingestion methods. Migrate custom siemAlertId fields immediately to avoid data loss.</summary>
+    <title>Breaking: Upcoming siemAlertId Field Reservation</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

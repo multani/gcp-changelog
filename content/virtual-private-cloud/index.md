@@ -1,5 +1,28 @@
 # Virtual Private Cloud
 
+## 2026-06-23
+
+### Feature
+
+**General Availability**: Service consumers can authorize Private Service
+Connect interfaces to connect to network attachments by adding service class IDs
+to a network attachment's accept list.
+
+For more information, see [Authorization policies](https://docs.cloud.google.com/vpc/docs/about-network-attachments#connection-policies).
+
+---
+## 2026-06-22
+
+### Feature
+
+**Preview**: RoCE VPC networks for VM instances support assigning alias IP
+ranges to `MRDMA` vNICs. For more information about these features, see the
+following:
+
+* [RDMA network profiles](https://docs.cloud.google.com/vpc/docs/rdma-network-profiles)
+* [Alias IP ranges](https://docs.cloud.google.com/vpc/docs/alias-ip)
+
+---
 ## 2026-06-01
 
 ### Feature

@@ -2,6 +2,57 @@
 
 ## 2026-06-22
 
+### Announcement
+
+**Google Cloud CCaaS 4.43**
+
+We've released version 4.43 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Calls to direct numbers display language selection in the call adapter**
+
+When an agent receives a direct call, the call adapter now displays the language
+that the caller chose during language selection.
+
+For more information, see [Direct phone
+numbers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#direct-phone-numbers).
+
+### Feature
+
+**HubSpot: Control the display of CRM account fields and record fields in the
+agent adapter**
+
+You can now control how CRM account fields (contact and company) and record
+fields (ticket and deal) appear in the agent adapter for HubSpot integrations.
+This gives agents immediate access to important context such as VIP status,
+account ownership, and ticket priority during live interactions.
+
+Administrators: In the **Settings > Developer Settings >
+CRM > Agent Platform > HubSpot > Account
+Lookup** section, there are two new **CRM Account Display Fields** sections and
+a new **CRM Record Display Fields** section.
+
+For more information, see [HubSpot
+lookups](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-lookups).
+
+### Feature
+
+**The chat API supports CSAT surveys**
+
+You can now conduct customer satisfaction (CSAT) surveys using the chat API. You
+can configure CSAT surveys at the global level and at the queue level.
+
+Administrators: On the **Settings > Chat** page, there's a new **Chat
+API** section.
+
+For more information, see [CSAT in the chat
+API](https://docs.cloud.google.com/contact-center/ccai-platform/docs/csat-chat-api#adding_translations_for_multiple_languages).
+
 ### Fixed
 
 This release addresses the following issues:
@@ -497,6 +548,10 @@ This release addresses the following issues:
 * Fixed an issue where the **Agent Preferences** table on the **Agent
   Availability** dashboard didn't update when an agent modified their
   availability preferences.
+* Fixed an issue that occurred when an agent manually changed their status to
+  **Available** before the point in time that automatic wrap-up was configured
+  to do so. In the **Activity Timeline** report, the status change was
+  mistakenly attributed to the system.
 * Fixed an agent desktop issue where clicking the **Transfer** button in an
   SMS chat displayed an error instead of starting a transfer.
 * Fixed an issue where a delay in Salesforce task creation caused a lag in

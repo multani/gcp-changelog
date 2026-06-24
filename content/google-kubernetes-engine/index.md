@@ -1,5 +1,64 @@
 # Google Kubernetes Engine
 
+## 2026-06-23
+
+### Issue
+
+For GKE cluster version 1.34.1-gke.3899001 (sidecar mounter image version
+1.21.9) and later affected versions, Cloud Storage FUSE volumes might fail to
+mount if the GKE metadata service isn't ready when the Cloud Storage FUSE
+sidecar initiates.
+
+When this issue occurs, you might see the following error:
+
+```
+MountVolume.SetUp failed for volume "volume-name" : rpc error: code = Internal desc = the sidecar container terminated due to Error, exit code: 255
+```
+
+Additionally, the `gcsfuse-sidecar` container displays the following error:
+
+```
+Failed to fetch identity pool and identity provider details required for bucket access check, got error Failed to set up metadata service: failed to get project: Get "http://X.X.X.X/computeMetadata/v1/project/project-id": dial tcp 169.254.169.254:80: connect: connection refused for identity pool PROJECT_ID.svc.id.goog and identity provider https://container.googleapis.com/v1/projects/PROJECT_ID/locations/LOCATION/clusters/CLUSTER_NAME
+```
+
+**Mitigation**
+
+To resolve this issue, perform one of the following mitigations:
+
+1. Upgrade your cluster to one of the following fixed GKE versions:
+
+   * `1.34.8-gke.1218000` or later
+   * `1.35.3-gke.2347000` or later
+   * `1.36.0-gke.1266000` or later.
+2. Create an init container in your Pod that validates metadata service
+   availability.
+3. Manually inject the sidecar to ensure the sidecar is blocked by an init
+   container.
+
+For more information, see the [Cloud Storage FUSE CSI driver troubleshooting
+guide](https://github.com/GoogleCloudPlatform/gcs-fuse-csi-driver/blob/main/docs/troubleshooting.md#limitations).
+
+### Issue
+
+In GKE version 1.35 and later, due to faster node startup, workloads that use
+Dataplane V2 and Workload Identity Federation for GKE to [authenticate to Google Cloud
+APIs](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/workload-identity) might experience
+transient connectivity timeouts or refused connections to the GKE metadata
+server immediately following node startup.
+
+For recommendations and workarounds
+if this impacts your workload (for example, if your workload doesn't retry
+requests until they succeed), see [Timeout errors at Pod
+startup](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/authentication#troubleshoot-timeout),
+specifically by deploying an `initContainer`.
+
+Alternatively, add any
+that selects no workloads, such as in a namespace with no workloads—to GKE Dataplane V2,
+[network policy](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/network-policy)—including one
+which disables the faster node startup.
+Improvements are in progress and coming in a future GKE patch.
+
+---
 ## 2026-06-12
 
 ### Change
@@ -706,6 +765,9 @@ For more information, see [Maintenance exclusions](https://docs.cloud.google.com
 ## 2026-05-29
 
 ### Issue
+
+Important: This note has been clarified. For the corrected note, see the entry
+for [June 23, 2026](#wi-issue-20260623).
 
 In GKE version 1.35 and later, workloads that use Workload Identity to
 [authenticate to Google Cloud

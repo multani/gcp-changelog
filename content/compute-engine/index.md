@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2026-06-23
+
+### Feature
+
+**Preview**: You can use Gemini in the Google Cloud console as
+an AI-powered interface to evaluate hardware options, estimate deployment costs,
+and view recommended configurations for your Compute Engine instances.
+Prompting Gemini helps you reach an optimal configuration for
+your workload before you create or modify a compute instance. For more
+information, see
+[Design your compute infrastructure with Gemini](https://docs.cloud.google.com/compute/docs/design-with-gemini).
+
+---
 ## 2026-06-22
 
 ### Feature

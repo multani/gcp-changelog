@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps SOAR",
   "entries": {
+    "2026-06-23": [
+      {
+        "kind": "Breaking",
+        "content": "**Critical Notice: Upcoming reservation of siemAlertId field**\n\nEffective July 5, 2026, the `siemAlertId` field will be strictly reserved for\ninternal Chronicle SIEM alert IDs.\n\nStarting July 5, the system will automatically overwrite any custom or\nuser-supplied data passed through this field. This change impacts all ingestion\nmethods, including the Ingestion API, webhooks, and both first-party and\nthird-party connectors. If you are currently utilizing a custom field named\n`siemAlertId` in any of your alert ingestion configurations, please\nmigrate to a different field name immediately to prevent data loss.",
+        "summary": {
+          "title": "Reservation of siemAlertId field",
+          "summary": "Effective July 5, 2026, the `siemAlertId` field will be reserved for internal SIEM alert IDs. Any custom data in this field will be overwritten, impacting all ingestion methods. Please migrate custom usage of `siemAlertId` to a different field to avoid data loss."
+        }
+      }
+    ],
     "2026-06-21": [
       {
         "kind": "Announcement",

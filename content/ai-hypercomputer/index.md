@@ -1,5 +1,29 @@
 # AI Hypercomputer
 
+## 2026-06-23
+
+### Feature
+
+**Preview**: You can use Gemini in the Google Cloud console as
+an AI-powered interface to evaluate hardware options, estimate deployment costs,
+and view recommended configurations for your clusters. Prompting
+Gemini helps you reach an optimal configuration for your cluster
+before you create or modify the cluster. For more information, see
+[Design and optimize your cluster with Gemini](https://docs.cloud.google.com/ai-hypercomputer/docs/design-with-gemini).
+
+---
+## 2026-06-22
+
+### Feature
+
+**Preview**: RoCE VPC networks for VM instances support assigning alias IP
+ranges to `MRDMA` vNICs. For more information about these features, see the
+following:
+
+* [RDMA network profiles](https://docs.cloud.google.com/vpc/docs/rdma-network-profiles)
+* [Alias IP ranges](https://docs.cloud.google.com/vpc/docs/alias-ip)
+
+---
 ## 2026-06-15
 
 ### Feature

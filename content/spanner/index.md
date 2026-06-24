@@ -1,5 +1,18 @@
 # Spanner
 
+## 2026-06-23
+
+### Feature
+
+Spanner supports
+[direct connectivity](https://docs.cloud.google.com/spanner/docs/latency-points#direct_connectivity).
+When enabled, your application traffic is routed directly to
+Spanner servers, bypassing the Google Front End (GFE) servers.
+This can reduce your overall latency.
+Direct connectivity is
+[generally available (GA)](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-27
 
 ### Feature

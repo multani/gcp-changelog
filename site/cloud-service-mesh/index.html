@@ -77,6 +77,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          574 0 0  2026 06 23  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../574-0-0--2026-06-23-/" class="dropdown-item">574.0.0 (2026-06-23)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -1397,6 +1409,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Data studio <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../data-studio/" class="dropdown-item">Data Studio</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Data transfer essentials <b class="caret"></b>
                         </a>
 
@@ -2604,15 +2628,390 @@
 
 
 <h1 id="cloud-service-mesh">Cloud Service Mesh</h1>
-<h2 id="2026-06-15">2026-06-15</h2>
+<h2 id="2026-06-23">2026-06-23</h2>
+<h3 id="security">Security</h3>
+<p><strong>1.29.5-asm.3 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>This patch release contains the fix for the security vulnerability listed in
+<a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040">GCP-2026-040</a>.</p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.29.5-asm.3 uses Envoy v1.37.5-dev.</p>
+<h3 id="fixed">Fixed</h3>
+<p>This patch release also contain the fixes for the following CVEs:</p>
+<table>
+<thead>
+<tr>
+<th>CVE</th>
+<th>Proxy</th>
+<th>Control Plane</th>
+<th>Distroless</th>
+<th>CNI</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CVE-2026-34182</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (9.1)</td>
+</tr>
+<tr>
+<td>CVE-2026-45447</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>High (8.8)</td>
+</tr>
+<tr>
+<td>CVE-2026-7383</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (8.1)</td>
+</tr>
+<tr>
+<td>CVE-2026-34180</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-45445</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-9076</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-42766</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.9)</td>
+</tr>
+<tr>
+<td>CVE-2026-42767</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.9)</td>
+</tr>
+<tr>
+<td>CVE-2026-34743</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.3)</td>
+</tr>
+<tr>
+<td>CVE-2026-45446</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (4.8)</td>
+</tr>
+<tr>
+<td>CVE-2026-42770</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (3.7)</td>
+</tr>
+<tr>
+<td>CVE-2026-40226</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (0.0)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="security_1">Security</h3>
+<p><strong>1.28.9-asm.2 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>This patch release contains the fix for the security vulnerability listed in
+<a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040">GCP-2026-040</a>.</p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.28.9-asm.2 uses Envoy v1.36.9-dev.</p>
+<h3 id="fixed_1">Fixed</h3>
+<p>This patch release also contain the fixes for the following CVEs:</p>
+<table>
+<thead>
+<tr>
+<th>CVE</th>
+<th>Proxy</th>
+<th>Control Plane</th>
+<th>Distroless</th>
+<th>CNI</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CVE-2026-34182</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (9.1)</td>
+</tr>
+<tr>
+<td>CVE-2026-45447</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>High (8.8)</td>
+</tr>
+<tr>
+<td>CVE-2026-7383</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (8.1)</td>
+</tr>
+<tr>
+<td>CVE-2026-34180</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-45445</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-9076</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-42766</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.9)</td>
+</tr>
+<tr>
+<td>CVE-2026-42767</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.9)</td>
+</tr>
+<tr>
+<td>CVE-2026-34743</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.3)</td>
+</tr>
+<tr>
+<td>CVE-2026-45446</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (4.8)</td>
+</tr>
+<tr>
+<td>CVE-2026-42770</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (3.7)</td>
+</tr>
+<tr>
+<td>CVE-2026-40226</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (0.0)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="security_2">Security</h3>
+<p><strong>1.27.9-asm.8 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>This patch release contains the fix for the security vulnerability listed in
+<a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040">GCP-2026-040</a>.</p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.27.9-asm.8 uses Envoy v1.35.13-dev.</p>
+<h3 id="fixed_2">Fixed</h3>
+<p>This patch release also contain the fixes for the following CVEs:</p>
+<table>
+<thead>
+<tr>
+<th>CVE</th>
+<th>Proxy</th>
+<th>Control Plane</th>
+<th>Distroless</th>
+<th>CNI</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CVE-2026-34182</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (9.1)</td>
+</tr>
+<tr>
+<td>CVE-2026-45447</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>High (8.8)</td>
+</tr>
+<tr>
+<td>CVE-2026-7383</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (8.1)</td>
+</tr>
+<tr>
+<td>CVE-2026-34180</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-45445</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-9076</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (7.5)</td>
+</tr>
+<tr>
+<td>CVE-2026-42766</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.9)</td>
+</tr>
+<tr>
+<td>CVE-2026-42767</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.9)</td>
+</tr>
+<tr>
+<td>CVE-2026-34743</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (5.3)</td>
+</tr>
+<tr>
+<td>CVE-2026-45446</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (4.8)</td>
+</tr>
+<tr>
+<td>CVE-2026-42770</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Low (3.7)</td>
+</tr>
+<tr>
+<td>CVE-2026-40226</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Medium (0.0)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="security_3">Security</h3>
+<p>The following images are now rolling out for managed Cloud Service Mesh:</p>
+<ul>
+<li>Sidecar version 1.21.6-asm.38, is rolling out to the rapid release channel.</li>
+<li>Sidecar version 1.20.8-asm.88 is rolling out to the regular release channel.</li>
+<li>Sidecar version 1.19.10-asm.78 is rolling out to the stable release channel.</li>
+</ul>
+<p>These patch releases contain the fix for the vulnerability listed in
+<a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040">GCP-2026-040</a>.</p>
+<p>These rollouts will preempt those previously announced on
+<a href="#June_12_2026">June 12, 2026</a>.</p>
+<hr />
+<h2 id="2026-06-22">2026-06-22</h2>
 <h3 id="feature">Feature</h3>
+<p>The <a href="https://docs.cloud.google.com/service-mesh/docs/data-plane-extensibility#typegoogleapiscomenvoyextensionsfiltershttpluav3lua">Envoy Lua Filter</a>
+is now available as a preview feature in the rapid release channel.</p>
+<hr />
+<h2 id="2026-06-15">2026-06-15</h2>
+<h3 id="feature_1">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/service-mesh/docs/data-plane-extensibility#typegoogleapiscomenvoyextensionsfiltershttpcompressorv3compressor">Envoy Compressor Filter</a>
 is now GA in the rapid release channel.</p>
 <p>To ensure your <code>EnvoyFilter</code> compressor configuration is fully supported, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/migrate/modernize-envoyfilter-compressor">Modernize EnvoyFilter compressor configurations</a>.</p>
 <hr />
 <h2 id="2026-06-12">2026-06-12</h2>
-<h3 id="security">Security</h3>
+<h3 id="security_4">Security</h3>
 <p>The following images are now rolling out for managed Cloud Service Mesh:</p>
 <ul>
 <li>Sidecar version 1.21.6-asm.36, is rolling out to the rapid release channel.</li>
@@ -2622,7 +3021,7 @@ is now GA in the rapid release channel.</p>
 <p>These rollouts will preempt those <a href="#June_03_2026">previously announced on June 3, 2026</a>.</p>
 <p>These patch releases contain the fix for the vulnerability listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035">GCP-2026-035</a></p>
-<h3 id="security_1">Security</h3>
+<h3 id="security_5">Security</h3>
 <p>Proxy version csm_mesh_proxy.20260423_RC03 for Gateway API on GKE clusters is
 rolling out to all Managed Cloud Service Mesh release channels over the next
 week.</p>
@@ -2680,21 +3079,21 @@ Mesh version 1.29.4-asm.0 uses Envoy v1.37.4-dev.</p>
 <p>In-cluster Cloud Service Mesh 1.26 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see <a href="https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions">Supported versions</a>.</p>
 <hr />
 <h2 id="2026-06-08">2026-06-08</h2>
-<h3 id="security_2">Security</h3>
+<h3 id="security_6">Security</h3>
 <p><strong>1.28.7-asm.4 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains the fix for the security vulnerability listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035">GCP-2026-035</a>.</p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.28.7-asm.4 uses Envoy v1.36.8-dev.</p>
-<h3 id="security_3">Security</h3>
+<h3 id="security_7">Security</h3>
 <p><strong>1.27.9-asm.5 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains the fix for the security vulnerability listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035">GCP-2026-035</a>.</p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.27.9-asm.5 uses Envoy v1.35.12-dev.</p>
-<h3 id="security_4">Security</h3>
+<h3 id="security_8">Security</h3>
 <p><strong>1.26.8-asm.11 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains the fix for the security vulnerability listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-035">GCP-2026-035</a>.</p>
@@ -2713,7 +3112,7 @@ and the fix for the vulnerability listed in
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.28.7-asm.3 uses Envoy v1.36.7-dev.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>Patch 1.28.7-asm.3 contains fixes for the following platform CVEs:</p>
 <table>
 <thead>
@@ -3102,7 +3501,7 @@ Mesh 1.28.7-asm.3 uses Envoy v1.36.7-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.27.9-asm.4 uses Envoy v1.35.10-dev.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>Patch 1.27.9-asm.4 contains fixes for the following platform CVEs:</p>
 <table>
 <thead>
@@ -3533,7 +3932,7 @@ Mesh 1.27.9-asm.4 uses Envoy v1.35.10-dev.</p>
 <li>The regular release channel is being upgraded from 1.20 to 1.21.6-asm.32.</li>
 <li>The stable release channel is being upgraded from 1.19 to 1.20.8-asm.80.</li>
 </ul>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>These patch releases contain the fixes for the following CVEs:</p>
 <table>
 <thead>
@@ -3922,7 +4321,7 @@ Mesh 1.27.9-asm.4 uses Envoy v1.35.10-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.26.8-asm.10 uses Envoy v1.34.14.</p>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>Patch 1.26.8-asm.10 contains fixes for the following platform CVEs:</p>
 <table>
 <thead>
@@ -4363,7 +4762,7 @@ state. For more information see
 <a href="https://docs.cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-configuration#membershipstate_error_codes">MembershipState Error Codes</a>.</p>
 <hr />
 <h2 id="2026-05-13">2026-05-13</h2>
-<h3 id="security_5">Security</h3>
+<h3 id="security_9">Security</h3>
 <p>Proxy version csm_mesh_proxy.20260423_RC03 is rolling out to all Managed Cloud
 Service Mesh release channels over the next week.</p>
 <hr />
@@ -4900,7 +5299,7 @@ local rate limiting see
 <a href="https://docs.cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-data-plane-extensibility">Resolving data plane extensibility issues</a>.</p>
 <hr />
 <h2 id="2026-03-11">2026-03-11</h2>
-<h3 id="security_6">Security</h3>
+<h3 id="security_10">Security</h3>
 <p><strong>1.28.5-asm.9 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013">GCP-2026-013</a>
@@ -5154,7 +5553,7 @@ as well as fixes for the following platform CVEs:</p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.28.5-asm.9 uses Envoy 1.36.5.</p>
-<h3 id="security_7">Security</h3>
+<h3 id="security_11">Security</h3>
 <p><strong>1.27.8-asm.7 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013">GCP-2026-013</a>
@@ -5408,7 +5807,7 @@ as well as fixes for the following platform CVEs:</p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
 Mesh 1.27.8-asm.7 uses Envoy 1.35.9.</p>
-<h3 id="security_8">Security</h3>
+<h3 id="security_12">Security</h3>
 <p>The following images are now rolling out for managed Cloud Service Mesh:</p>
 <ul>
 <li>Sidecar version 1.21.6-asm.16 is rolling out to the rapid release channel.</li>
@@ -5680,7 +6079,7 @@ as well as fixes for the following platform CVEs:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_9">Security</h3>
+<h3 id="security_13">Security</h3>
 <p><strong>1.26.8-asm.3 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-013">GCP-2026-013</a>
@@ -6205,7 +6604,7 @@ release channels and contains the fix for the managed Cloud Service Mesh
 security vulnerability listed in [GCP-2025-073](/service-mesh/docs/security-bulletins#gcp-2025-073.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="security_10">Security</h3>
+<h3 id="security_14">Security</h3>
 <p>The following images are now rolling out for managed Cloud Service Mesh:</p>
 <ul>
 <li>1.21.6-asm.7 is rolling out to the rapid release channel.</li>
@@ -6214,13 +6613,13 @@ security vulnerability listed in [GCP-2025-073](/service-mesh/docs/security-bull
 </ul>
 <p>These patch releases contain the fix for the managed Cloud Service Mesh security vulnerability listed in
 <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073">GCP-2025-073</a>.</p>
-<h3 id="security_11">Security</h3>
+<h3 id="security_15">Security</h3>
 <p><strong>1.27.4-asm.1 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073">GCP-2025-073</a>. For details on upgrading Cloud Service Mesh, refer to <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh v1.27.4-asm.1 uses Envoy v1.35.7.</p>
-<h3 id="security_12">Security</h3>
+<h3 id="security_16">Security</h3>
 <p><strong>1.25.6-asm.1 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073">GCP-2025-073</a>. For details on upgrading Cloud Service Mesh, refer to <a href="https://docs.cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh v1.25.6-asm.1 uses Envoy v1.33.13.</p>
-<h3 id="security_13">Security</h3>
+<h3 id="security_17">Security</h3>
 <p><strong>1.26.7-asm.1 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-073">GCP-2025-073</a>. For details on upgrading Cloud Service Mesh, refer to <a href="https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh v1.26.7-asm.1 uses Envoy v1.34.11.</p>
 <hr />
@@ -6248,13 +6647,13 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p>While the managed data plane automatically updates Envoy Proxies by restarting workloads, you must manually restart any StatefulSets and Jobs.</p>
 <hr />
 <h2 id="2025-10-28">2025-10-28</h2>
-<h3 id="security_14">Security</h3>
+<h3 id="security_18">Security</h3>
 <p><strong>1.25.5-asm.9 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064">GCP-2025-064</a>. For details on upgrading Cloud Service Mesh, refer to <a href="https://docs.cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh v1.25.5-asm.9 uses Envoy v1.33.12.</p>
-<h3 id="security_15">Security</h3>
+<h3 id="security_19">Security</h3>
 <p><strong>1.26.5-asm.1 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064">GCP-2025-064</a>. For details on upgrading Cloud Service Mesh, refer to <a href="https://docs.cloud.google.com/service-mesh/v1.26/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh v1.26.5-asm.1 uses Envoy v1.34.10.</p>
-<h3 id="security_16">Security</h3>
+<h3 id="security_20">Security</h3>
 <p><strong>1.27.2-asm.1 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains fixes for the security vulnerabilities listed in <a href="https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-064">GCP-2025-064</a>. For details on upgrading Cloud Service Mesh, refer to <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh v1.27.2-asm.1 uses Envoy v1.35.6.</p>
 <hr />
@@ -6267,7 +6666,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <li>1.19.10-asm.52 is rolling out to the stable release channel.</li>
 </ul>
 <p>CNI/managed data plane controller version 1.20.8-asm.56 is rolling out to all release channels.</p>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>These patches contain fixes for the following CVEs:</p>
 <p><strong>1.21.6-asm.4</strong></p>
 <table>
@@ -6589,7 +6988,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p><strong>1.25.5-asm.7 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.25.5-asm.7 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.25.x/announcing-1.25.5/">Istio 1.25.5</a> subject to the list of <a href="https://cloud.google.com/service-mesh/v1.25/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.25.5-asm.7 uses envoy v1.33.10-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.25/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p>1.25.5-asm.7 includes the fixes for the following CVEs:</p>
 <table>
 <thead>
@@ -6636,7 +7035,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p><strong>1.26.4-asm.7 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.26.4-asm.7 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.26.x/announcing-1.26.4/">Istio 1.26.4</a> subject to the list of <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh version 1.26.4-asm.7 uses Envoy v1.34.8-dev.</p>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>1.26.4-asm.7 includes the fixes for the following CVEs:</p>
 <table>
 <thead>
@@ -6676,7 +7075,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p><strong>1.27.1-asm.5 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.27.1-asm.5 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.27.x/announcing-1.27/">Istio 1.27.1</a> subject to the list of <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service Mesh version 1.27.1-asm.5 uses Envoy v1.35.4-dev.</p>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>1.27.1-asm.5 includes the fixes for the following CVEs:</p>
 <table>
 <thead>
@@ -6730,7 +7129,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p>In-cluster Cloud Service Mesh 1.24 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see <a href="https://cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions">Supported versions</a>.</p>
 <hr />
 <h2 id="2025-09-30">2025-09-30</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can now configure traffic routing using <a href="https://cloud.google.com/service-mesh/docs/configure-cloud-service-mesh-for-cloud-run#service_to_service">Cloud Service Mesh service routing APIs</a> between Cloud Run and Cloud Run, Google Kubernetes Engine, and Google Compute Engine services. (GA).</p>
 <h3 id="changed">Changed</h3>
 <p>Managed Cloud Service Mesh with a TD control plane in the Rapid release channel will start using proxy images with an <a href="https://cloud.google.com/service-mesh/docs/supported-features-managed#base_images">internal envoy version</a>.</p>
@@ -6740,7 +7139,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <h2 id="2025-09-29">2025-09-29</h2>
 <h3 id="announcement_33">Announcement</h3>
 <p>CNI/managed data plane controller version 1.23.6-asm.15 is rolling out to all release channels.</p>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -6894,7 +7293,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p><strong>1.24.6-asm.12 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>You can now download 1.24.6-asm.12 for in-cluster Cloud Service Mesh. It includes the features of <a href="https://istio.io/latest/news/releases/1.24.x/announcing-1.24.6/">Istio 1.24.6</a> subject to the list of <a href="https://cloud.google.com/service-mesh/v1.24/docs/supported-features-in-cluster">supported features</a>. Cloud Service Mesh version 1.24.6-asm.12 uses envoy v1.33.8-dev.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.24/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>These patches address the following CVEs:</p>
 <table>
 <thead>
@@ -6974,7 +7373,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 </table>
 <hr />
 <h2 id="2025-09-09">2025-09-09</h2>
-<h3 id="security_17">Security</h3>
+<h3 id="security_21">Security</h3>
 <p>The managed Cloud Service Mesh rollouts <a href="https://cloud.google.com/service-mesh/docs/release-notes#August_12_2025">previously announced</a> address the following vulnerabilities. While the managed data plane automatically updates Envoy Proxies by restarting workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p><strong>1.21.5-asm.55</strong></p>
 <table>
@@ -7269,7 +7668,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 </table>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="security_18">Security</h3>
+<h3 id="security_22">Security</h3>
 <p><strong>1.26.4-asm.1 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>This patch release contains a fix for a <a href="https://www.cve.org/CVERecord?id=CVE-2025-54588">use-after-free (UAF) vulnerability in the DNS cache</a>. For more information, see the <a href="https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2025-048">security bulletin</a>.</p>
 <p>Only clusters running in-cluster Cloud Service Mesh version 1.26 are affected. If you are running an earlier in-cluster version or managed Cloud Service Mesh, you are not affected and do not need to take any action.</p>
@@ -7285,7 +7684,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 </ul>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><a href="https://cloud.google.com/service-mesh/docs/operate-and-maintain/advanced-load-balancing-istio">Advanced load balancing</a> for managed Cloud Service Mesh (TD) now generally available (GA).</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
@@ -7334,17 +7733,17 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 <p>For details on upgrading Cloud Service Mesh, see <a href="https://cloud.google.com/service-mesh/v1.23/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>You can now enforce cluster-local traffic for an individual service, all services in a particular namespace, or globally for all services in the mesh. For more information, see <a href="https://cloud.google.com/service-mesh/docs/operate-and-maintain/multi-cluster#keeping_traffic_in-cluster">Keeping traffic in-cluster</a>.</p>
 <hr />
 <h2 id="2025-06-06">2025-06-06</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><a href="https://cloud.google.com/service-mesh/docs/operate-and-maintain/dns-proxy">DNS Proxy feature</a> is now available in the Rapid release channel. This feature requires sidecar version <code>1.21.5-asm.39</code> or later.</p>
 <h3 id="changed_3">Changed</h3>
 <p>This change affects clusters using both the <code>TRAFFIC_DIRECTOR</code> and <code>ISTIOD</code> control plane implementations.</p>
 <p>When using Cloud Service Mesh with Istio APIs, configuring an <a href="https://cloud.google.com/service-mesh/docs/onboarding/unsupported-istio-apis">unsupported field</a> or value in an Istio Custom Resources will be reflected as an error in the Mesh status API.</p>
 <p>In some cases, the validation webhook will also reject unsupported API usage with an error message indicating the specific unsupported API. For more information, see <a href="https://cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-webhook#common_webhook_error_messages">Common webhook error messages</a>. You can mitigate these issues by amending the Istio Custom Resource to remove the specified unsupported API configuration.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Isolation support to prevent cross-region overflow is now available as a preview feature for <code>TRAFFIC_DIRECTOR</code> implementations of Cloud Service Mesh. For more information, see <a href="https://cloud.google.com/service-mesh/docs/service-routing/isolation">Isolation for Cloud Service Mesh</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -7357,6 +7756,12 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-service-mesh">Cloud Service Mesh</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-23" class="nav-link">2026-06-23</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-06-22" class="nav-link">2026-06-22</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-15" class="nav-link">2026-06-15</a>
           </li>

@@ -1,5 +1,50 @@
 # Google SecOps
 
+## 2026-06-23
+
+### Feature
+
+**[Spotlight Feature] Ask Gemini Cloud Assist in Feed Management**
+
+Google SecOps now provides Gemini Cloud Assist (GCA) directly within the Feed Management interface. Use the new **Ask Gemini Cloud Assist** button to get help with feed creation, setup, and general troubleshooting questions.
+
+Click **Ask Gemini Cloud Assist** to open the Gemini Cloud Assist panel and ask questions to get guidance on:
+
+* Configuring and managing data feeds.
+* Understanding ingestion pre-requisites and setup steps for different log sources.
+* Resolving common setup issues.
+
+*Note: Gemini Cloud Assist provides recommendations and answers to your questions, but does not perform configuration changes on your behalf. You must apply any recommended changes manually to your feeds.*
+
+For more information, see [Feed management overview](https://docs.cloud.google.com/chronicle/docs/administration/feed-management-overview).
+
+### Change
+
+**Ingestion metrics reporting correction**
+
+Google Security Operations has resolved an issue where certain ingestion metrics—which are displayed in both the dashboard and Cloud Monitoring—were under-reported.
+
+Because of this correction, you might notice a one-time apparent spike in your ingestion metrics when the update is enabled for your region (between June 29 and July 10, 2026). The actual log volume ingested remains unchanged.
+
+Historical metrics recorded before this update will not be modified or backfilled. This correction does not affect customer billing.
+
+If you have questions or need assistance, contact Google Security Operations support.
+
+### Breaking
+
+**Critical Notice: Upcoming reservation of siemAlertId field**
+
+Effective July 5, 2026, the `siemAlertId` field will be strictly reserved for
+internal Chronicle SIEM alert IDs.
+
+Starting July 5, the system will automatically overwrite any custom or
+user-supplied data passed through this field. This change impacts all ingestion
+methods, including the Ingestion API, webhooks, and both first-party and
+third-party connectors. If you are currently utilizing a custom field named
+`siemAlertId` in any of your data ingestion configurations, please migrate to a
+different field name immediately to prevent data loss.
+
+---
 ## 2026-06-21
 
 ### Announcement

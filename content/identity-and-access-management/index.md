@@ -1,5 +1,21 @@
 # Identity and Access Management
 
+## 2026-06-18
+
+### Feature
+
+The Agent Identity API (`agentidentity.googleapis.com`) is
+available in [Preview](https://cloud.google.com/products#product-launch-stages).
+This new API replaces the legacy IAM Connectors API
+(`iamconnectors.googleapis.com`) for managing auth providers and agent
+identities.
+
+During the preview migration period, both APIs operate side-by-side. Existing
+auth providers are automatically mirrored to the new V2 resource hierarchy
+(`authProviders/`), allowing you to migrate your IAM policies,
+agent code, and client applications without downtime.
+
+---
 ## 2026-06-15
 
 ### Feature

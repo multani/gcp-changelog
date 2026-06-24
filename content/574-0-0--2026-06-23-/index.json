@@ -1,0 +1,111 @@
+{
+  "name": "574.0.0 (2026-06-23)",
+  "entries": {
+    "2026-06-23": [
+      {
+        "kind": "AI Platform",
+        "content": "* Added `gcloud beta ai semantic-governance-policy-engine deprovision`\n  command to tear down a semantic governance policy engine, including its\n  tenant project, GKE cluster, and PSC service attachments.",
+        "summary": {
+          "title": "Deprovision Semantic Governance Policy Engine",
+          "summary": "A new command, `gcloud beta ai semantic-governance-policy-engine deprovision`, has been added. This command allows you to tear down a semantic governance policy engine and its associated resources, such as the tenant project, GKE cluster, and PSC service attachments."
+        }
+      },
+      {
+        "kind": "Agent Identity",
+        "content": "* Added `gcloud beta agent-identity auth-providers get-iam-policy|set-iam-policy|add-iam-policy-binding|remove-iam-policy-binding|test-iam-permissions` commands.",
+        "summary": {
+          "title": "Agent Identity IAM Commands",
+          "summary": "New commands for managing IAM policies for agent identities are now available. You can use these commands to get, set, add, remove, and test IAM permissions for your agents."
+        }
+      },
+      {
+        "kind": "Agent Registry",
+        "content": "* Added `gcloud agent-registry` command group to manage Agent Registry resources.",
+        "summary": {
+          "title": "Manage Agent Registry Resources",
+          "summary": "A new command group, `gcloud agent-registry`, is now available for managing Agent Registry resources. This allows for streamlined control and configuration of your agents directly from the command line."
+        }
+      },
+      {
+        "kind": "Backup For GKE",
+        "content": "* Made `gcloud container backup-restore` command groups compatible with non-default universe domains.",
+        "summary": {
+          "title": "Backup and Restore Command Compatibility",
+          "summary": "The `gcloud container backup-restore` command groups have been updated to support non-default universe domains. This enhancement improves flexibility for users managing backups in diverse cloud environments."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Fixed a bug where `stderr` messages from `gcloud` CLI output would be printed to `stdout`.\n* Added `--gcloud_config_cache` flag to enable caching data retrieved from the `gcloud` CLI.\n* Added display of container request concurrency of BigQuery Python UDF in `bq show --routine`.\n* Added information about AI Agent in the execution environment to the user-agent HTTP header in the API request.",
+        "summary": {
+          "title": "BigQuery improvements",
+          "summary": "Several enhancements have been made to BigQuery, including bug fixes for `gcloud` CLI output, added caching capabilities for the `gcloud` CLI, and improved visibility into BigQuery Python UDFs and API requests. These updates aim to provide a more robust and informative user experience."
+        }
+      },
+      {
+        "kind": "Cloud Datastream",
+        "content": "* Added Regional Endpoints (REP) support for all Datastream commands.",
+        "summary": {
+          "title": "Datastream Adds Regional Endpoint Support",
+          "summary": "Cloud Datastream now supports Regional Endpoints (REP) for all its commands. This enhancement improves data replication efficiency and reliability by allowing operations to be performed within specific geographic regions. Users can now leverage REP for enhanced control and performance in their data streaming pipelines."
+        }
+      },
+      {
+        "kind": "Cloud Memorystore",
+        "content": "* Added `--zone-distribution-config-zones` flag to `gcloud memorystore instances create` command. This flag lets users specify multiple zones when they create a `MULTI_ZONE` cluster.\n* Added `--zone-distribution-config-zones` flag to `gcloud redis clusters create` command. This flag lets users specify multiple zones when they create a `MULTI_ZONE` cluster.",
+        "summary": {
+          "title": "Create multi-zone Redis clusters",
+          "summary": "You can now create multi-zone Redis clusters using the `gcloud memorystore instances create` and `gcloud redis clusters create` commands. The new `--zone-distribution-config-zones` flag allows you to specify multiple zones for your cluster during creation."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Added support for creating clusters using `--quickstart-cluster` in `gcloud beta cluster-director clusters create`.",
+        "summary": {
+          "title": "Cluster Director Quickstart",
+          "summary": "Easily create clusters with the new --quickstart-cluster option in gcloud beta cluster-director clusters create. This simplifies the cluster creation process for quick setups and testing."
+        }
+      },
+      {
+        "kind": "Colab",
+        "content": "* Added Hyperdisk options to `--disk-type` of `gcloud colab runtime-templates create`: `HYPERDISK_BALANCED`.",
+        "summary": {
+          "title": "New Colab disk options available",
+          "summary": "You can now choose Hyperdisk balanced storage for your Colab runtimes. This option is available through the `--disk-type` flag when creating new runtimes using `gcloud colab runtime-templates create`, with `HYPERDISK_BALANCED` as the new value."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Fixed an issue where `gcloud compute url-maps import` reset custom `timeout` and `retryPolicy` (specifically `numRetries`) values to defaults when updating an existing URL map.\n* Added `--vsock-mode` flag to `gcloud compute instances create`,\n  `gcloud compute instance-templates create`, `gcloud compute instances bulk\n  create`, and `gcloud compute queued-resources create` in ALPHA to support\n  enabling/disabling VSOCK mode.\n* Promoted `--purpose` flag to `gcloud compute public-delegated-prefixes create` in beta.",
+        "summary": {
+          "title": "Compute Engine CLI Updates",
+          "summary": "The latest Compute Engine command-line tool updates include fixes for URL map configurations and the addition of a new VSOCK mode flag. Additionally, the `--purpose` flag for public delegated prefixes has been promoted to beta."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added Regional Endpoints (REP) support for all Database Migration Service (DMS) commands.",
+        "summary": {
+          "title": "Database Migration Service Enhancements",
+          "summary": "Regional endpoints are now supported for all database migration commands. This update improves flexibility and control over your migration processes."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Updated default kubectl from 1.35.3 to 1.35.6.\n* Added new kubectl version 1.36.2 for the RAPID channel.\n* Additional kubectl versions:\n  + kubectl.1.30 (1.30.14)\n  + kubectl.1.31 (1.31.14)\n  + kubectl.1.32 (1.32.13)\n  + kubectl.1.33 (1.33.13)\n  + kubectl.1.34 (1.34.9)\n  + kubectl.1.35 (1.35.6)\n  + kubectl.1.36 (1.36.2)",
+        "summary": {
+          "title": "Kubernetes Engine kubectl updates",
+          "summary": "We've updated the default kubectl version to 1.35.6 and added 1.36.2 to the RAPID channel. Several other kubectl versions are also available, including 1.30 through 1.36. This ensures you have access to the latest features and bug fixes for managing your Kubernetes clusters."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Promoted `gcloud network-security ull-mirroring-engines` and `gcloud network-security ull-mirroring-collectors` commands to beta.\n* Promoted `gcloud network-security ull-mirroring-engines` and `gcloud network-security ull-mirroring-collectors` commands to GA.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Network mirroring tools reach GA",
+          "summary": "Key commands for network traffic mirroring have been promoted to General Availability. These tools enable enhanced network security monitoring and analysis."
+        }
+      }
+    ]
+  }
+}

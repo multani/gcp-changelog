@@ -1,7 +1,25 @@
 {
   "name": "Sensitive Data Protection",
   "entries": {
+    "2026-06-23": [
+      {
+        "kind": "Feature",
+        "content": "[Image safety classification infoTypes](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference#image-context) are now supported in `ExcludeByImageFindings` and `AdjustByImageFindings` detection rules.\n\nFor information about configuring these rules, see [Modifying infoType detectors\nto refine scan results](https://docs.cloud.google.com/sensitive-data-protection/docs/creating-custom-infotypes-rules).",
+        "summary": {
+          "title": "Image safety classification now supported",
+          "summary": "Image safety classification infoTypes can now be used with ExcludeByImageFindings and AdjustByImageFindings detection rules. This allows for more refined scan results based on image content. Learn more about configuring these rules in our documentation."
+        }
+      }
+    ],
     "2026-06-22": [
+      {
+        "kind": "Change",
+        "content": "Image scanning is available in the following cloud regions:\n\n* `asia-southeast1`\n* `us-east4`\n* `us-west1`\n\nFor more information, see [Locations that support image scanning](https://cloud.google.com/sensitive-data-protection/docs/locations#image-limitations).",
+        "summary": {
+          "title": "Image scanning now available in more regions",
+          "summary": "Image scanning is now supported in additional cloud regions, including asia-southeast1, us-east4, and us-west1. This expansion allows for greater flexibility and broader coverage for your scanning needs. For a full list of supported locations, please refer to the documentation."
+        }
+      },
       {
         "kind": "Fixed",
         "content": "Between July 2025 and June 2026, some [table data\nprofiles](https://docs.cloud.google.com/sensitive-data-protection/docs/metrics-reference#table-data-profile) saved to BigQuery contained an incorrect\n`1970-01-01` timestamp instead of `NULL` in [`expiration_time`](https://docs.cloud.google.com/sensitive-data-protection/docs/reference/rest/v2/organizations.locations.tableDataProfiles#TableDataProfile.FIELDS.expiration_time)\nfor tables that don't expire. This issue has been fixed. New exports of table\ndata profiles show the correct expiration timestamps.",

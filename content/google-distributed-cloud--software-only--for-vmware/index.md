@@ -4,7 +4,7 @@
 
 ### Announcement
 
-We are experiencing a delay preventing patch releases for GDCsoftware
+We are experiencing a delay preventing patch releases for GDC software
 only for VMware. We are working diligently to resolve this issue. We will post
 updates here with more information as it becomes available.
 

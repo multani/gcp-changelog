@@ -3,6 +3,14 @@
   "entries": {
     "2026-06-22": [
       {
+        "kind": "Change",
+        "content": "**Supervised fine-tuning available for Gemini 3.1 Flash Lite and Gemini 3.5 Flash in Public Preview**\n\nSupervised fine-tuning is now available for the `gemini-3.1-flash-lite` and\n`gemini-3.5-flash` models in\n[Preview](https://cloud.google.com/products#product-launch-stages). Model tuning\nfor Gemini 3.1 Flash Lite and Gemini 3.5 Flash is restricted to `us-central1`\nand `europe-west4` and tuned model serving is restricted to the `us` and `eu`\nmulti-region endpoints.\n\nSee [About supervised\nfine-tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini-supervised-tuning)\nfor more information.",
+        "summary": {
+          "title": "Supervised Fine-Tuning for Gemini Flash Models Now in Preview",
+          "summary": "Supervised fine-tuning is now available in Public Preview for Gemini 3.1 Flash Lite and Gemini 3.5 Flash. This feature allows for greater customization of these models, with specific regional restrictions for tuning and serving."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Provisioned Throughput support for supervised fine-tuned Gemini 3 model inference.**\n\nProvisioned Throughput can be used to assure supervised fine-tuned inference using the same quota. Supervised fine-tuned inference for Gemini 3 models incurs a higher burndown rate compared to base model inference. Learn more [here](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models#supervised-fine-tuned-model-support).",
         "summary": {
@@ -26,6 +34,22 @@
         "summary": {
           "title": "Agent Observability Now Generally Available",
           "summary": "Agent Observability is now generally available, offering deep insights into agent performance and health. Key features include default-on tracing for easier setup and enhanced visualization of agent execution flows."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent Registry is generally available (GA)**\n\nAgent Registry is [generally available (GA)](https://cloud.google.com/products#product-launch-stages). Agent Registry is a centralized catalog for discovering and registering agents and Model Context Protocol (MCP) servers.\n\nThe following features are available in Agent Registry for the GA launch stage:\n\n* **API v1 and client libraries:** The `v1` version of the Agent Registry API is available. Cloud client libraries are available in C#, Go, Java, Node.js, PHP, Python, and Ruby.\n* **A2A v1 support:** Agent Registry supports Agent-to-Agent (A2A) protocol version `1.0`, letting you explicitly declare transport endpoints and bindings inside the `supportedInterfaces` array, in addition to the existing `0.3` schema support.\n* **Terraform support:** Terraform scripts for Application Default Credentials (ADC) have graduated to General Availability. You can use Terraform to configure and manage your agents, MCP servers, endpoints, and bindings.\n\n**Known limitations:**\n\n* **Access Transparency and Access Approval:** [Access Transparency](https://docs.cloud.google.com/assured-workloads/access-transparency/docs/overview) logs, which provide visibility into when Google personnel access your content, and [Access Approval](https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview) controls aren't available for Agent Registry configurations.\n* **Data Residency:** If you configure the [resource location constraint](https://docs.cloud.google.com/organization-policy/restrict-locations) in your organization policy, Agent Registry enforces the constraint when you register a resource. However, detective controls for data residency compliance reporting are limited.\n\nFor more information, see the [Agent Registry overview](https://docs.cloud.google.com/agent-registry/overview).",
+        "summary": {
+          "title": "Agent Registry Now Generally Available",
+          "summary": "Agent Registry, a centralized catalog for discovering and registering agents and Model Context Protocol (MCP) servers, is now generally available. This release includes API v1, client libraries, A2A v1 support, and Terraform support for managing your agents and MCP servers. While some limitations exist regarding Access Transparency, Access Approval, and data residency reporting, the core functionality is ready for production use."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The Agent Identity API (`agentidentity.googleapis.com`) is\navailable in [Preview](https://cloud.google.com/products#product-launch-stages).\nThis new API replaces the legacy IAM Connectors API\n(`iamconnectors.googleapis.com`) for managing auth providers and agent\nidentities.\n\nDuring the preview migration period, both APIs operate side-by-side. Existing\nauth providers are automatically mirrored to the new V2 resource hierarchy\n(`authProviders/`), allowing you to migrate your IAM policies, agent code, and\nclient applications without downtime.",
+        "summary": {
+          "title": "Agent Identity API now in Preview",
+          "summary": "The new Agent Identity API is available in Preview, replacing the legacy IAM Connectors API. During the preview, both APIs work together, allowing seamless migration of your auth providers and policies without downtime."
         }
       }
     ],

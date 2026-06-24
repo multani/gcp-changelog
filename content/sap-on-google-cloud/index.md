@@ -1,5 +1,30 @@
 # SAP on Google Cloud
 
+## 2026-06-23
+
+### Announcement
+
+**ABAP SDK for Google Cloud version 1.14 (On-premises or any cloud edition)**
+
+Version 1.14 of the on-premises or any cloud edition of the ABAP SDK for Google
+Cloud is generally available (GA).
+
+This version resolves an issue that occurred during signature verification for Cloud Storage content repository and removes an unreferenced node from the SPRO configuration menu.
+
+For more information, see [What's new with the ABAP SDK for Google Cloud](https://docs.cloud.google.com/sap/docs/abap-sdk/on-premises-or-any-cloud/whats-new#version-1-14).
+
+### Announcement
+
+**BigQuery Connector for SAP version 2.15**
+
+Version 2.15 of the BigQuery Connector for SAP is generally available (GA).
+This version resolves issues related to column descriptions in standalone SLT
+system configurations and attribute consistency in Pub/Sub messages during
+Change Data Capture (CDC) replication.
+
+For more information, see [What's new with BigQuery Connector for SAP](https://docs.cloud.google.com/sap/docs/bq-connector/whats-new#version-2-15).
+
+---
 ## 2026-06-04
 
 ### Announcement

@@ -77,6 +77,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          574 0 0  2026 06 23  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../574-0-0--2026-06-23-/" class="dropdown-item">574.0.0 (2026-06-23)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -1397,6 +1409,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Data studio <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../data-studio/" class="dropdown-item">Data Studio</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Data transfer essentials <b class="caret"></b>
                         </a>
 
@@ -2604,6 +2628,53 @@
 
 
 <h1 id="google-kubernetes-engine">Google Kubernetes Engine</h1>
+<h2 id="2026-06-23">2026-06-23</h2>
+<h3 id="issue">Issue</h3>
+<p>For GKE cluster version 1.34.1-gke.3899001 (sidecar mounter image version
+1.21.9) and later affected versions, Cloud Storage FUSE volumes might fail to
+mount if the GKE metadata service isn't ready when the Cloud Storage FUSE
+sidecar initiates.</p>
+<p>When this issue occurs, you might see the following error:</p>
+<pre><code>MountVolume.SetUp failed for volume &quot;volume-name&quot; : rpc error: code = Internal desc = the sidecar container terminated due to Error, exit code: 255
+</code></pre>
+<p>Additionally, the <code>gcsfuse-sidecar</code> container displays the following error:</p>
+<pre><code>Failed to fetch identity pool and identity provider details required for bucket access check, got error Failed to set up metadata service: failed to get project: Get &quot;http://X.X.X.X/computeMetadata/v1/project/project-id&quot;: dial tcp 169.254.169.254:80: connect: connection refused for identity pool PROJECT_ID.svc.id.goog and identity provider https://container.googleapis.com/v1/projects/PROJECT_ID/locations/LOCATION/clusters/CLUSTER_NAME
+</code></pre>
+<p><strong>Mitigation</strong></p>
+<p>To resolve this issue, perform one of the following mitigations:</p>
+<ol>
+<li>
+<p>Upgrade your cluster to one of the following fixed GKE versions:</p>
+</li>
+<li>
+<p><code>1.34.8-gke.1218000</code> or later</p>
+</li>
+<li><code>1.35.3-gke.2347000</code> or later</li>
+<li><code>1.36.0-gke.1266000</code> or later.</li>
+<li>Create an init container in your Pod that validates metadata service
+   availability.</li>
+<li>Manually inject the sidecar to ensure the sidecar is blocked by an init
+   container.</li>
+</ol>
+<p>For more information, see the <a href="https://github.com/GoogleCloudPlatform/gcs-fuse-csi-driver/blob/main/docs/troubleshooting.md#limitations">Cloud Storage FUSE CSI driver troubleshooting
+guide</a>.</p>
+<h3 id="issue_1">Issue</h3>
+<p>In GKE version 1.35 and later, due to faster node startup, workloads that use
+Dataplane V2 and Workload Identity Federation for GKE to <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/workload-identity">authenticate to Google Cloud
+APIs</a> might experience
+transient connectivity timeouts or refused connections to the GKE metadata
+server immediately following node startup.</p>
+<p>For recommendations and workarounds
+if this impacts your workload (for example, if your workload doesn't retry
+requests until they succeed), see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/authentication#troubleshoot-timeout">Timeout errors at Pod
+startup</a>,
+specifically by deploying an <code>initContainer</code>.</p>
+<p>Alternatively, add any
+that selects no workloads, such as in a namespace with no workloads—to GKE Dataplane V2,
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/network-policy">network policy</a>—including one
+which disables the faster node startup.
+Improvements are in progress and coming in a future GKE patch.</p>
+<hr />
 <h2 id="2026-06-12">2026-06-12</h2>
 <h3 id="change">Change</h3>
 <h4 id="2026-r23-version-updates">(2026-R23) Version updates</h4>
@@ -3370,7 +3441,9 @@ multiple days to complete across all Google Cloud zones.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">Maintenance exclusions</a>.</p>
 <hr />
 <h2 id="2026-05-29">2026-05-29</h2>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_2">Issue</h3>
+<p>Important: This note has been clarified. For the corrected note, see the entry
+for <a href="#wi-issue-20260623">June 23, 2026</a>.</p>
 <p>In GKE version 1.35 and later, workloads that use Workload Identity to
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/workload-identity">authenticate to Google Cloud
 APIs</a> might experience
@@ -10238,7 +10311,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <p>The <code>asia-southeast3</code> region in Bangkok, Thailand is available. For more
 information, see the
 <a href="https://cloud.google.com/about/locations/">Global Locations</a>.</p>
-<h3 id="issue_1">Issue</h3>
+<h3 id="issue_3">Issue</h3>
 <p>In some GKE versions earlier than 1.34.0-gke.2011000, using the
 Cloud Storage FUSE CSI driver with streaming writes enabled might cause file
 writes to fail with an Input/Output error on the application side accompanied by
@@ -11687,7 +11760,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <p>There are no new releases in the Stable channel.</p>
 <hr />
 <h2 id="2025-12-16">2025-12-16</h2>
-<h3 id="issue_2">Issue</h3>
+<h3 id="issue_4">Issue</h3>
 <p>In rare cases, a cluster control plane upgrade can cause an Autopilot node to
 enter into a state in which new system and user Pods are unable to run, which
 then causes issues such as broken Pod networking. GKE is
@@ -12539,7 +12612,7 @@ enhancements since the Public Preview.</p>
 <p>For more information see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-gke-inference-gateway">About GKE Inference Gateway</a>
 and <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/deploy-gke-inference-gateway">Deploy GKE Inference Gateway</a>.</p>
-<h3 id="issue_3">Issue</h3>
+<h3 id="issue_5">Issue</h3>
 <p>Starting with version 1.33.2-gke.4655000, the GCSFuse CSI Driver automatically
 applies performance-tuning defaults for Cloud Storage FUSE volumes used on nodes
 with <a href="https://docs.cloud.google.com/storage/docs/cloud-storage-fuse/automated-configurations">high-performance machine types</a>.
@@ -12814,7 +12887,7 @@ use compatible configurations. For more information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/fast-starting-nodes">About quicker workload startup with fast-starting nodes</a>.</p>
 <hr />
 <h2 id="2025-11-21">2025-11-21</h2>
-<h3 id="issue_4">Issue</h3>
+<h3 id="issue_6">Issue</h3>
 <p>GKE versions earlier than 1.32 don't support
 <a href="https://kubernetes.io/docs/concepts/storage/volumes/#nfs">direct NFS volume mounts</a>
 to NFS volumes that exclusively use an NFS protocol greater than <code>NFSv4.0</code>.</p>
@@ -12835,7 +12908,7 @@ try one of the following options:</p>
 <li>Use a PersistentVolume and PersistentVolumeClaim to mount the NFS volume,
   which allows for explicit NFS version specification.</li>
 </ul>
-<h3 id="issue_5">Issue</h3>
+<h3 id="issue_7">Issue</h3>
 <p>In GKE versions 1.34.1-gke.2037001 and 1.34.1-gke.2541000, Arm
 nodes that use an Ubuntu node image might incorrectly use an image with a
 64 KB page size instead of the default 4 KB page size. Avoid using
@@ -14463,7 +14536,7 @@ currently available with 1, 2, 4, or 8 GPUs.</p>
 </ul>
 <hr />
 <h2 id="2025-10-17">2025-10-17</h2>
-<h3 id="issue_6">Issue</h3>
+<h3 id="issue_8">Issue</h3>
 <p>Don't use GKE version 1.34.1-gke.1431000 or later when creating
 or upgrading node pools with the
 <a href="https://cloud.google.com/compute/docs/gpus#h100-gpus"><code>a3-highgpu-8g</code></a> machine
@@ -14836,7 +14909,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="issue_7">Issue</h3>
+<h3 id="issue_9">Issue</h3>
 <p>In GKE versions 1.32.4-gke.1029000 and later, MountVolume calls
 for network file system (NFS) volumes might fail with the following error:
 <code>mount.nfs:rpc.statd is not running but is required for remote locking</code>.</p>
@@ -15888,7 +15961,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li>Enrolled in the Rapid release channel.</li>
 <li>Running GKE version 1.33.1-gke.1107000 or later.</li>
 </ul>
-<h3 id="issue_8">Issue</h3>
+<h3 id="issue_10">Issue</h3>
 <p><strong>Issue with A4X machine type compatibility on certain GKE versions</strong></p>
 <p>Certain GKE versions are not compatible with the A4X machine type. The issue is that a Container-Optimized OS (COS) image that these GKE versions depend on was not built as a multi-architecture image. This incompatibility causes an <code>exec format</code> error on the Arm-based A4X machines. The issue affects GKE versions 1.33.2-gke.1377000 or later, and any versions earlier than 1.33.4-gke.1036000.</p>
 <hr />
@@ -19051,7 +19124,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="issue_9">Issue</h3>
+<h3 id="issue_11">Issue</h3>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
@@ -19091,7 +19164,7 @@ about setting node labels in compute classes, see the
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="issue_10">Issue</h3>
+<h3 id="issue_12">Issue</h3>
 <p>For information about the latest known issues, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues">Google Distributed Cloud for bare metal known issues</a> in the Troubleshooting section.</p>
 <hr />
 <h2 id="2025-07-16">2025-07-16</h2>
@@ -21061,6 +21134,9 @@ zones.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-kubernetes-engine">Google Kubernetes Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-23" class="nav-link">2026-06-23</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-12" class="nav-link">2026-06-12</a>
           </li>

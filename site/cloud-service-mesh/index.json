@@ -1,6 +1,74 @@
 {
   "name": "Cloud Service Mesh",
   "entries": {
+    "2026-06-23": [
+      {
+        "kind": "Security",
+        "content": "**1.29.5-asm.3 is now available for in-cluster Cloud Service Mesh.**\n\nThis patch release contains the fix for the security vulnerability listed in\n[GCP-2026-040](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040).\n\nFor details on upgrading Cloud Service Mesh, see\n[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service\nMesh 1.29.5-asm.3 uses Envoy v1.37.5-dev.",
+        "summary": {
+          "title": "Service Mesh Security Update",
+          "summary": "A new patch release for in-cluster Cloud Service Mesh is now available. This update addresses a critical security vulnerability. Please upgrade to version 1.29.5-asm.3 to ensure your services are protected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This patch release also contain the fixes for the following CVEs:\n\n| CVE | Proxy | Control Plane | Distroless | CNI | Severity |\n| --- | --- | --- | --- | --- | --- |\n| CVE-2026-34182 | Yes | Yes | No | Yes | Medium (9.1) |\n| CVE-2026-45447 | Yes | Yes | No | Yes | High (8.8) |\n| CVE-2026-7383 | Yes | Yes | No | Yes | Low (8.1) |\n| CVE-2026-34180 | Yes | Yes | No | Yes | Low (7.5) |\n| CVE-2026-45445 | Yes | Yes | No | Yes | Medium (7.5) |\n| CVE-2026-9076 | Yes | Yes | No | Yes | Low (7.5) |\n| CVE-2026-42766 | Yes | Yes | No | Yes | Low (5.9) |\n| CVE-2026-42767 | Yes | Yes | No | Yes | Low (5.9) |\n| CVE-2026-34743 | Yes | Yes | No | Yes | Low (5.3) |\n| CVE-2026-45446 | Yes | Yes | No | Yes | Low (4.8) |\n| CVE-2026-42770 | Yes | Yes | No | Yes | Low (3.7) |\n| CVE-2026-40226 | Yes | Yes | No | Yes | Medium (0.0) |",
+        "summary": {
+          "title": "Security fixes released",
+          "summary": "This release includes fixes for several CVEs affecting the proxy, control plane, and CNI components. These updates address vulnerabilities with severities ranging from low to high."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "**1.28.9-asm.2 is now available for in-cluster Cloud Service Mesh.**\n\nThis patch release contains the fix for the security vulnerability listed in\n[GCP-2026-040](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040).\n\nFor details on upgrading Cloud Service Mesh, see\n[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade). Cloud Service\nMesh 1.28.9-asm.2 uses Envoy v1.36.9-dev.",
+        "summary": {
+          "title": "Security Update for Service Mesh",
+          "summary": "A new version of in-cluster Cloud Service Mesh, 1.28.9-asm.2, is now available. This release addresses a security vulnerability identified in GCP-2026-040. Please refer to the upgrade documentation for instructions on updating your service mesh."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This patch release also contain the fixes for the following CVEs:\n\n| CVE | Proxy | Control Plane | Distroless | CNI | Severity |\n| --- | --- | --- | --- | --- | --- |\n| CVE-2026-34182 | Yes | Yes | No | Yes | Medium (9.1) |\n| CVE-2026-45447 | Yes | Yes | No | Yes | High (8.8) |\n| CVE-2026-7383 | Yes | Yes | No | Yes | Low (8.1) |\n| CVE-2026-34180 | Yes | Yes | No | Yes | Low (7.5) |\n| CVE-2026-45445 | Yes | Yes | No | Yes | Medium (7.5) |\n| CVE-2026-9076 | Yes | Yes | No | Yes | Low (7.5) |\n| CVE-2026-42766 | Yes | Yes | No | Yes | Low (5.9) |\n| CVE-2026-42767 | Yes | Yes | No | Yes | Low (5.9) |\n| CVE-2026-34743 | Yes | Yes | No | Yes | Low (5.3) |\n| CVE-2026-45446 | Yes | Yes | No | Yes | Low (4.8) |\n| CVE-2026-42770 | Yes | Yes | No | Yes | Low (3.7) |\n| CVE-2026-40226 | Yes | Yes | No | Yes | Medium (0.0) |",
+        "summary": {
+          "title": "Security fixes applied",
+          "summary": "This release includes fixes for several security vulnerabilities affecting the proxy, control plane, and CNI components. These updates address issues with varying severity levels to enhance system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "**1.27.9-asm.8 is now available for in-cluster Cloud Service Mesh.**\n\nThis patch release contains the fix for the security vulnerability listed in\n[GCP-2026-040](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040).\n\nFor details on upgrading Cloud Service Mesh, see\n[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade). Cloud Service\nMesh 1.27.9-asm.8 uses Envoy v1.35.13-dev.",
+        "summary": {
+          "title": "Security Update for Service Mesh",
+          "summary": "A new version of Cloud Service Mesh, 1.27.9-asm.8, is now available. This release addresses a critical security vulnerability. Please refer to the upgrade guide for instructions on how to update your service mesh deployment."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This patch release also contain the fixes for the following CVEs:\n\n| CVE | Proxy | Control Plane | Distroless | CNI | Severity |\n| --- | --- | --- | --- | --- | --- |\n| CVE-2026-34182 | Yes | Yes | No | Yes | Medium (9.1) |\n| CVE-2026-45447 | Yes | Yes | No | Yes | High (8.8) |\n| CVE-2026-7383 | Yes | Yes | No | Yes | Low (8.1) |\n| CVE-2026-34180 | Yes | Yes | No | Yes | Low (7.5) |\n| CVE-2026-45445 | Yes | Yes | No | Yes | Medium (7.5) |\n| CVE-2026-9076 | Yes | Yes | No | Yes | Low (7.5) |\n| CVE-2026-42766 | Yes | Yes | No | Yes | Low (5.9) |\n| CVE-2026-42767 | Yes | Yes | No | Yes | Low (5.9) |\n| CVE-2026-34743 | Yes | Yes | No | Yes | Low (5.3) |\n| CVE-2026-45446 | Yes | Yes | No | Yes | Low (4.8) |\n| CVE-2026-42770 | Yes | Yes | No | Yes | Low (3.7) |\n| CVE-2026-40226 | Yes | Yes | No | Yes | Medium (0.0) |",
+        "summary": {
+          "title": "Security fixes released",
+          "summary": "This release includes fixes for several security vulnerabilities affecting the proxy, control plane, and CNI components. These updates address issues with varying severity levels, ensuring enhanced security for your deployment."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "The following images are now rolling out for managed Cloud Service Mesh:\n\n* Sidecar version 1.21.6-asm.38, is rolling out to the rapid release channel.\n* Sidecar version 1.20.8-asm.88 is rolling out to the regular release channel.\n* Sidecar version 1.19.10-asm.78 is rolling out to the stable release channel.\n\nThese patch releases contain the fix for the vulnerability listed in\n[GCP-2026-040](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040).\n\nThese rollouts will preempt those previously announced on\n[June 12, 2026](#June_12_2026).",
+        "summary": {
+          "title": "Security updates for managed Service Mesh",
+          "summary": "New versions of managed Service Mesh sidecar proxies are being released to address a security vulnerability. These updates are rolling out across different release channels and will replace previous announcements."
+        }
+      }
+    ],
+    "2026-06-22": [
+      {
+        "kind": "Feature",
+        "content": "The [Envoy Lua Filter](https://docs.cloud.google.com/service-mesh/docs/data-plane-extensibility#typegoogleapiscomenvoyextensionsfiltershttpluav3lua)\nis now available as a preview feature in the rapid release channel.",
+        "summary": {
+          "title": "Envoy Lua Filter available in preview",
+          "summary": "The Envoy Lua Filter is now available as a preview feature in the rapid release channel. This feature allows for custom request and response manipulation using Lua scripting."
+        }
+      }
+    ],
     "2026-06-15": [
       {
         "kind": "Feature",

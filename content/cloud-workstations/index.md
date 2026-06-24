@@ -14,6 +14,11 @@ The workstation configuration creation page in the Google Cloud console has been
 The [preconfigured base images](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images)
 include [Antigravity CLI](https://antigravity.google/product/antigravity-cli).
 
+### Feature
+
+Cloud Workstations supports configuring custom startup scripts from the Google Cloud Console.
+When you create or edit a workstation configuration, you can specify the Cloud Storage path to your startup script under the advanced environment customization options. For more information, see [Run custom startup scripts](https://docs.cloud.google.com/workstations/docs/startup-scripts).
+
 ### Announcement
 
 The base VM was upgraded to use [Container-Optimized OS](https://docs.cloud.google.com/container-optimized-os/docs/concepts/features-and-benefits)

@@ -1,5 +1,14 @@
 # Knowledge Catalog
 
+## 2026-06-23
+
+### Feature
+
+You can control data lineage ingestion for BigQuery and Managed Service for Apache Airflow at the organization, folder, or project level. This feature is available in [preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Control data ingestion](https://docs.cloud.google.com/dataplex/docs/about-data-lineage#control-lineage-ingestion).
+
+---
 ## 2026-06-22
 
 ### Feature

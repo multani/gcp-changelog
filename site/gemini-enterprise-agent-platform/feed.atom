@@ -9,7 +9,27 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-06-22:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-06-22:change:0</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Supervised fine-tuning available for Gemini 3.1 Flash Lite and Gemini 3.5 Flash in Public Preview</strong></p>
+<p>Supervised fine-tuning is now available for the <code>gemini-3.1-flash-lite</code> and
+<code>gemini-3.5-flash</code> models in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Model tuning
+for Gemini 3.1 Flash Lite and Gemini 3.5 Flash is restricted to <code>us-central1</code>
+and <code>europe-west4</code> and tuned model serving is restricted to the <code>us</code> and <code>eu</code>
+multi-region endpoints.</p>
+<p>See <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini-supervised-tuning">About supervised
+fine-tuning</a>
+for more information.</p>]]></content>
+    <summary>Supervised fine-tuning is now available in Public Preview for Gemini 3.1 Flash Lite and Gemini 3.5 Flash. This feature allows for greater customization of these models, with specific regional restrictions for tuning and serving.</summary>
+    <title>Change: Supervised Fine-Tuning for Gemini Flash Models Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-06-22:feature:1</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Provisioned Throughput support for supervised fine-tuned Gemini 3 model inference.</strong></p>
@@ -57,6 +77,49 @@ overview</a>.</p>]]></content>
 </ul>]]></content>
     <summary>Agent Observability is now generally available, offering deep insights into agent performance and health. Key features include default-on tracing for easier setup and enhanced visualization of agent execution flows.</summary>
     <title>Feature: Agent Observability Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-06-18:feature:2</id>
+    <published>2026-06-18T00:00:00+00:00</published>
+    <updated>2026-06-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Registry is generally available (GA)</strong></p>
+<p>Agent Registry is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. Agent Registry is a centralized catalog for discovering and registering agents and Model Context Protocol (MCP) servers.</p>
+<p>The following features are available in Agent Registry for the GA launch stage:</p>
+<ul>
+<li><strong>API v1 and client libraries:</strong> The <code>v1</code> version of the Agent Registry API is available. Cloud client libraries are available in C#, Go, Java, Node.js, PHP, Python, and Ruby.</li>
+<li><strong>A2A v1 support:</strong> Agent Registry supports Agent-to-Agent (A2A) protocol version <code>1.0</code>, letting you explicitly declare transport endpoints and bindings inside the <code>supportedInterfaces</code> array, in addition to the existing <code>0.3</code> schema support.</li>
+<li><strong>Terraform support:</strong> Terraform scripts for Application Default Credentials (ADC) have graduated to General Availability. You can use Terraform to configure and manage your agents, MCP servers, endpoints, and bindings.</li>
+</ul>
+<p><strong>Known limitations:</strong></p>
+<ul>
+<li><strong>Access Transparency and Access Approval:</strong> <a href="https://docs.cloud.google.com/assured-workloads/access-transparency/docs/overview">Access Transparency</a> logs, which provide visibility into when Google personnel access your content, and <a href="https://docs.cloud.google.com/assured-workloads/access-approval/docs/overview">Access Approval</a> controls aren't available for Agent Registry configurations.</li>
+<li><strong>Data Residency:</strong> If you configure the <a href="https://docs.cloud.google.com/organization-policy/restrict-locations">resource location constraint</a> in your organization policy, Agent Registry enforces the constraint when you register a resource. However, detective controls for data residency compliance reporting are limited.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/agent-registry/overview">Agent Registry overview</a>.</p>]]></content>
+    <summary>Agent Registry, a centralized catalog for discovering and registering agents and Model Context Protocol (MCP) servers, is now generally available. This release includes API v1, client libraries, A2A v1 support, and Terraform support for managing your agents and MCP servers. While some limitations exist regarding Access Transparency, Access Approval, and data residency reporting, the core functionality is ready for production use.</summary>
+    <title>Feature: Agent Registry Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-06-18:feature:3</id>
+    <published>2026-06-18T00:00:00+00:00</published>
+    <updated>2026-06-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Agent Identity API (<code>agentidentity.googleapis.com</code>) is
+available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.
+This new API replaces the legacy IAM Connectors API
+(<code>iamconnectors.googleapis.com</code>) for managing auth providers and agent
+identities.</p>
+<p>During the preview migration period, both APIs operate side-by-side. Existing
+auth providers are automatically mirrored to the new V2 resource hierarchy
+(<code>authProviders/</code>), allowing you to migrate your IAM policies, agent code, and
+client applications without downtime.</p>]]></content>
+    <summary>The new Agent Identity API is available in Preview, replacing the legacy IAM Connectors API. During the preview, both APIs work together, allowing seamless migration of your auth providers and policies without downtime.</summary>
+    <title>Feature: Agent Identity API now in Preview</title>
   </entry>
   <entry>
     <author>

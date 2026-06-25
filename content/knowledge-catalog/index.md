@@ -14,7 +14,7 @@ For more information, see [Control data ingestion](https://docs.cloud.google.com
 ### Feature
 
 Knowledge Catalog connectors for importing metadata from Oracle and MySQL data
-sources are available in [preview](https://cloud.google.com/products#product-launch-stages).
+sources are available in [Preview](https://cloud.google.com/products#product-launch-stages).
 
 Knowledge Catalog connectors automatically extract metadata (technical,
 operational, and business) from external data sources and import it into
@@ -22,7 +22,7 @@ Knowledge Catalog entry groups. You can schedule metadata import runs on a set
 schedule.
 
 For more information, see [About database connectors](https://docs.cloud.google.com/dataplex/docs/connectors)
-and [Manage connector configurations](https://docs.cloud.google.com/dataplex/docs/manage-connector-jobs).
+and [Manage connector jobs](https://docs.cloud.google.com/dataplex/docs/manage-connector-jobs).
 
 ---
 ## 2026-06-11

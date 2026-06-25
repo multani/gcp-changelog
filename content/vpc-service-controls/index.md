@@ -1,5 +1,14 @@
 # VPC Service Controls
 
+## 2026-06-24
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Conversational Analytics API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_conversational_analytics)
+
+---
 ## 2026-06-06
 
 ### Feature

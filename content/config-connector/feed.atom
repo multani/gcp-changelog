@@ -2,9 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-05-19T00:00:00+00:00</updated>
+  <updated>2026-06-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-06-23:announcement:0</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.152.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.152.0 has been released. This update brings new features and improvements. Users are encouraged to upgrade to the latest version for enhanced functionality.</summary>
+    <title>Announcement: Config Connector 1.152.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-06-23:feature:1</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation"><code>ComputeReservation</code></a></li>
+<li>Added <code>spec.shareSettings</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeforwardingrule"><code>ComputeForwardingRule</code></a></li>
+<li>Added <code>status.target</code> field.</li>
+</ul>]]></content>
+    <summary>We've added new fields to ComputeReservation and ComputeForwardingRule resources. The ComputeReservation resource now includes `spec.shareSettings`, and ComputeForwardingRule has a new `status.target` field.</summary>
+    <title>Feature: New Compute Fields Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-06-23:change:2</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<p>Added support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the <code>cnrm.cloud.google.com/reconciler: direct</code> annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation"><code>ComputeReservation</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/firestore/firestoreindex"><code>FirestoreIndex</code></a></li>
+</ul>]]></content>
+    <summary>Config Connector now supports direct reconciliation for ComputeReservation and FirestoreIndex resources. This feature can be enabled by adding the `cnrm.cloud.google.com/reconciler: direct` annotation to the relevant Config Connector object. The API remains unchanged.</summary>
+    <title>Change: Direct Reconciliation Support Expanded</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-06-23:fixed:3</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8025">#8025</a>: <code>SQLInstance</code>: Fixed case sensitivity in <code>availabilityType</code>.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7743">#7743</a>: <code>Preview Tool</code>: Fixed crash on typed resources and hang on defaulting in preview mode.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7371">#7371</a>: <code>ComputeForwardingRule</code>: Fixed target field matching.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8479">#8479</a>: <code>ComputeFutureReservation</code>: Fixed validation logic for future reservation times.</li>
+</ul>]]></content>
+    <summary>Several bugs have been fixed, including issues with SQLInstance availabilityType, Preview Tool crashes, ComputeForwardingRule target field matching, and ComputeFutureReservation validation logic.</summary>
+    <title>Fixed: Bug Fixes Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,14 @@
 # Bigtable
 
+## 2026-06-24
+
+### Feature
+
+You can create [hot backups](https://docs.cloud.google.com/bigtable/docs/backups#hot-backups)
+and modify all backups in Bigtable Studio. For more information, see
+[Manage backups](https://docs.cloud.google.com/bigtable/docs/managing-backups).
+
+---
 ## 2026-06-19
 
 ### Feature

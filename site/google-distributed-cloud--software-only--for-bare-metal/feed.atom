@@ -2,9 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-06-16T00:00:00+00:00</updated>
+  <updated>2026-06-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-06-24:announcement:0</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.34.600-gke.53 is available. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>. Runs on Kubernetes v1.34.7-gke.200.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the GKE On-Prem API clients: the Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the Google Distributed Cloud-ready storage partners document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.</p>]]></content>
+    <summary>A new version of Google Distributed Cloud (software only) for bare metal is now available. It runs on Kubernetes v1.34.7-gke.200. Please check storage partner compatibility if using third-party storage.</summary>
+    <title>Announcement: New Google Distributed Cloud version available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-06-24:fixed:1</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.34.600-gke.53:</p>
+<ul>
+<li>Link to <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a> for the list of security vulnerabilities addressed in this release.</li>
+<li>Fixed an issue where Certificate Authority (CA) rotation failed for
+  self-managing clusters (admin, hybrid, and standalone). The failure occurs
+  during the final phase of the rotation when attempting to move management
+  resources back from the temporary bootstrap cluster to the self-managing
+  cluster, which can leave the cluster in an unmanageable state. You must
+  upgrade your clusters to version 1.34.600-gke.53 before you rotate your CAs.
+  Running a CA rotation on self-managing clusters in versions prior to
+  1.34.600-gke.53 triggers this issue and can disrupt your ability to manage
+  the cluster.</li>
+<li>Fixed an issue where a transient or partial failure during node pool updates
+  could cause node taints or labels to become permanently stuck (stranded) on
+  worker nodes, even after you removed them from the NodePool custom resource
+  specification.</li>
+</ul>]]></content>
+    <summary>This release addresses security vulnerabilities and resolves critical issues, including CA rotation failures for self-managing clusters and persistent node taint/label problems after updates. Ensure clusters are upgraded before performing CA rotations to avoid disruption.</summary>
+    <title>Fixed: Security and stability updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

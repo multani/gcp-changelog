@@ -1,5 +1,35 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-06-24
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.34.600-gke.53 is available. To upgrade, see [Upgrade clusters](how-to/upgrade). Runs on Kubernetes v1.34.7-gke.200.
+
+After a release, it takes approximately 7 to 14 days for the version to become available for installations or upgrades with the GKE On-Prem API clients: the Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready storage partners document to make sure the storage vendor has already passed the qualification for this release of Google Distributed Cloud for bare metal.
+
+### Fixed
+
+The following issues were fixed in 1.34.600-gke.53:
+
+* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities) for the list of security vulnerabilities addressed in this release.
+* Fixed an issue where Certificate Authority (CA) rotation failed for
+  self-managing clusters (admin, hybrid, and standalone). The failure occurs
+  during the final phase of the rotation when attempting to move management
+  resources back from the temporary bootstrap cluster to the self-managing
+  cluster, which can leave the cluster in an unmanageable state. You must
+  upgrade your clusters to version 1.34.600-gke.53 before you rotate your CAs.
+  Running a CA rotation on self-managing clusters in versions prior to
+  1.34.600-gke.53 triggers this issue and can disrupt your ability to manage
+  the cluster.
+* Fixed an issue where a transient or partial failure during node pool updates
+  could cause node taints or labels to become permanently stuck (stranded) on
+  worker nodes, even after you removed them from the NodePool custom resource
+  specification.
+
+---
 ## 2026-06-16
 
 ### Announcement

@@ -1,5 +1,27 @@
 # Gemini Enterprise
 
+## 2026-06-24
+
+### Feature
+
+**Gemini Enterprise: Observability for agents (GA)**
+
+Observability for Gemini Enterprise is now generally available (GA). This
+includes:
+
+* Configuring observability settings at the app level and for individual
+  agents.
+* Viewing metric dashboards in Metrics Explorer and on the agent's
+  **Metrics** tab.
+* Viewing trace spans in Trace Explorer and on the agent's **Traces** tab.
+
+For more information, see:
+
+* [Manage observability settings](https://docs.cloud.google.com/gemini/enterprise/docs/manage-observability-settings)
+* [Access metrics](https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics)
+* [Access traces and spans](https://docs.cloud.google.com/gemini/enterprise/docs/access-traces-and-spans)
+
+---
 ## 2026-06-23
 
 ### Feature

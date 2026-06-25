@@ -1,5 +1,12 @@
 # Identity-Aware Proxy
 
+## 2026-06-24
+
+### Feature
+
+Identity-Aware Proxy (IAP) supports securing agent-to-anywhere egress for Agent Gateway. The feature generally available [GA](https://cloud.google.com/products#product-launch-stages). To learn more about IAP support for Agent Gateway, see [IAP for agents overview](https://docs.cloud.google.com/iap/docs/agent-overview).
+
+---
 ## 2026-03-13
 
 ### Feature

@@ -1,5 +1,39 @@
 # Config Connector
 
+## 2026-06-23
+
+### Announcement
+
+Config Connector version 1.152.0 is now available.
+
+### Feature
+
+New Fields:
+
+* [`ComputeReservation`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation)
+  + Added `spec.shareSettings` field.
+* [`ComputeForwardingRule`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeforwardingrule)
+  + Added `status.target` field.
+
+### Change
+
+Reconciliation Improvements:
+
+Added support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the `cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:
+
+* [`ComputeReservation`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation)
+* [`FirestoreIndex`](https://cloud.google.com/config-connector/docs/reference/resource-docs/firestore/firestoreindex)
+
+### Fixed
+
+Bug Fixes:
+
+* [#8025](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8025): `SQLInstance`: Fixed case sensitivity in `availabilityType`.
+* [#7743](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7743): `Preview Tool`: Fixed crash on typed resources and hang on defaulting in preview mode.
+* [#7371](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7371): `ComputeForwardingRule`: Fixed target field matching.
+* [#8479](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8479): `ComputeFutureReservation`: Fixed validation logic for future reservation times.
+
+---
 ## 2026-05-19
 
 ### Announcement

@@ -1,5 +1,15 @@
 # Virtual Private Cloud
 
+## 2026-06-24
+
+### Feature
+
+**General Availability**: You can cancel pending deletion requests for VPC
+Network Peering connections that are in consensus mode.
+For more information, see
+[Cancel a deletion request](https://docs.cloud.google.com/vpc/docs/using-vpc-peering#cancel-delete).
+
+---
 ## 2026-06-23
 
 ### Feature

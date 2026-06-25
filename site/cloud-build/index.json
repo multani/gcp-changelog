@@ -1,6 +1,16 @@
 {
   "name": "Cloud Build",
   "entries": {
+    "2026-06-24": [
+      {
+        "kind": "Security",
+        "content": "For GitLab Enterprise and Bitbucket Data Center connections, Cloud Build now\nchecks permissions on the calling principal.\n\nWhen you create or update repository connections, Cloud Build uses Secret Manager\nsecrets to authenticate to third-party Git providers. Previously, these\nreferenced secrets were retrieved by the Cloud Build service agent (P4SA) on your\nbehalf, checking permissions only against the P4SA's credentials rather than\nthose of the calling principal. To adhere to the security principle of least\nprivilege, Cloud Build now checks permissions on both the calling principal\n(using end-user credentials) and the P4SA, to ensure both have the\n`secretmanager.versions.access` IAM permission on the referenced\nsecrets.\n\nThis check only affects GitLab Enterprise (GLE) and Bitbucket Data Center (BBDC)\nconnections.\n\nFor instructions and more details, see the\n[Cloud Build security bulletin](https://cloud.google.com/build/docs/security-bulletins#gcp-2026-042).",
+        "summary": {
+          "title": "Enhanced security for Git connections",
+          "summary": "Cloud Build now verifies permissions for GitLab Enterprise and Bitbucket Data Center connections, ensuring both your credentials and the service agent have access to necessary secrets. This update strengthens security by adhering to the principle of least privilege."
+        }
+      }
+    ],
     "2026-05-15": [
       {
         "kind": "Feature",

@@ -467,13 +467,13 @@ This release addresses the following issues:
   appeared in the transfer list, causing transfer attempts to fail.
 * Fixed an issue where the **Submit** wrap-up button didn't appear in the
   call adapter after agents completed outbound calls.
-* Fixed an issue where an agent and caller could still hear each other after
+* Fixed an issue where an agent and caller still heard each other after
   the agent placed the caller on hold.
 * Fixed an issue in the agent desktop that occurred after an agent transferred
   a call to a different queue. The agent desktop layout of the source queue
   displayed to the receiving agent instead of the layout of the destination
   queue.
-* Fixed an issue where the reporting for After Call Work (ACW) time was
+* Fixed an issue where the reporting for after call work (ACW) time was
   artificially high for calls transferred to a third party.
 * Fixed an issue where overcapacity deflection settings interfered with
   after-hours deflections, causing calls to be incorrectly queued.

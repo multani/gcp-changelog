@@ -1,5 +1,21 @@
 # Cortex Framework
 
+## 2026-06-24
+
+### Announcement
+
+
+
+### Release 7.0.0-preview.2 (Public Preview)
+
+
+
+### Feature
+
+* **[Data products for SAP ERP](https://docs.cloud.google.com/cortex/docs/data-product)**: Additional data product accelerators including: accounting documents, accounts payable, accounts receivable, addresses, agency business settlement documents, billing documents, business partners, condition contracts, controlling areas and cost elements, cost and profit centers, currency conversion, financial statement structure & versions, fiscal year variants, fixed assets, general ledger accounts, global settings, plants and storage, project structure, units of measurement, universal journal, and vendor invoices.
+* **[Extensibility guide](https://docs.cloud.google.com/cortex/docs/extensibility-guide)**: Documentation explaining how to customize and extend Cortex Framework, organized by three steps: [Custom namespace setup](https://docs.cloud.google.com/cortex/docs/extensibility-guide-namespaces), [Data foundation module creation](https://docs.cloud.google.com/cortex/docs/extensibility-guide-data-foundation), and [Data product module creation](https://docs.cloud.google.com/cortex/docs/extensibility-guide-data-product).
+
+---
 ## 2026-04-30
 
 ### Release 7

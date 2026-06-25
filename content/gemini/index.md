@@ -1,6 +1,39 @@
 # Gemini
 
+## 2026-06-19
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
+## 2026-06-18
+
+### Other
+
+
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-06-15
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
+## 2026-06-11
 
 ### Other
 
@@ -39,6 +72,17 @@ is now generally available to Gemini Code Assist users in VS Code and IntelliJ.
 You can use this model for [agent mode](https://docs.cloud.google.com/gemini/docs/codeassist/agent-mode),
 [chat](https://docs.cloud.google.com/gemini/docs/codeassist/chat-gemini), and
 [code generation](https://docs.cloud.google.com/gemini/docs/codeassist/write-code-gemini#generate_code_with_prompts).
+
+---
+## 2026-06-04
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
 
 ---
 ## 2026-06-03

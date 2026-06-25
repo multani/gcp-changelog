@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2026-06-24
+
+### Announcement
+
+**HCX upgrade to 4.11.4:** The VMware Engine operations team is initiating updates of the HCX Manager Appliance to version 4.11.4. This upgrade resolves an issue with MON-enabled segments. You are responsible for upgrading the HCX On-Prem/Connectors and Service Mesh Appliances. For more details, see the [Latest service announcements](https://docs.cloud.google.com/vmware-engine/docs/service-announcements#2026-06-24).
+
+---
 ## 2026-06-11
 
 ### Announcement

@@ -2628,6 +2628,24 @@
 
 
 <h1 id="cloud-build">Cloud Build</h1>
+<h2 id="2026-06-24">2026-06-24</h2>
+<h3 id="security">Security</h3>
+<p>For GitLab Enterprise and Bitbucket Data Center connections, Cloud Build now
+checks permissions on the calling principal.</p>
+<p>When you create or update repository connections, Cloud Build uses Secret Manager
+secrets to authenticate to third-party Git providers. Previously, these
+referenced secrets were retrieved by the Cloud Build service agent (P4SA) on your
+behalf, checking permissions only against the P4SA's credentials rather than
+those of the calling principal. To adhere to the security principle of least
+privilege, Cloud Build now checks permissions on both the calling principal
+(using end-user credentials) and the P4SA, to ensure both have the
+<code>secretmanager.versions.access</code> IAM permission on the referenced
+secrets.</p>
+<p>This check only affects GitLab Enterprise (GLE) and Bitbucket Data Center (BBDC)
+connections.</p>
+<p>For instructions and more details, see the
+<a href="https://cloud.google.com/build/docs/security-bulletins#gcp-2026-042">Cloud Build security bulletin</a>.</p>
+<hr />
 <h2 id="2026-05-15">2026-05-15</h2>
 <h3 id="feature">Feature</h3>
 <p>You can now configure the <code>results</code> field in build config files. This
@@ -2723,6 +2741,9 @@ information, see
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-build">Cloud Build</a></li>
+          <li class="nav-item">
+            <a href="#2026-06-24" class="nav-link">2026-06-24</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-05-15" class="nav-link">2026-05-15</a>
           </li>

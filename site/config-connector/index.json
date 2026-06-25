@@ -1,6 +1,40 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-06-23": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.152.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.152.0 Released",
+          "summary": "Config Connector version 1.152.0 has been released. This update brings new features and improvements. Users are encouraged to upgrade to the latest version for enhanced functionality."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`ComputeReservation`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation)\n  + Added `spec.shareSettings` field.\n* [`ComputeForwardingRule`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeforwardingrule)\n  + Added `status.target` field.",
+        "summary": {
+          "title": "New Compute Fields Available",
+          "summary": "We've added new fields to ComputeReservation and ComputeForwardingRule resources. The ComputeReservation resource now includes `spec.shareSettings`, and ComputeForwardingRule has a new `status.target` field."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\nAdded support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the `cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:\n\n* [`ComputeReservation`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation)\n* [`FirestoreIndex`](https://cloud.google.com/config-connector/docs/reference/resource-docs/firestore/firestoreindex)",
+        "summary": {
+          "title": "Direct Reconciliation Support Expanded",
+          "summary": "Config Connector now supports direct reconciliation for ComputeReservation and FirestoreIndex resources. This feature can be enabled by adding the `cnrm.cloud.google.com/reconciler: direct` annotation to the relevant Config Connector object. The API remains unchanged."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [#8025](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8025): `SQLInstance`: Fixed case sensitivity in `availabilityType`.\n* [#7743](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7743): `Preview Tool`: Fixed crash on typed resources and hang on defaulting in preview mode.\n* [#7371](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7371): `ComputeForwardingRule`: Fixed target field matching.\n* [#8479](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8479): `ComputeFutureReservation`: Fixed validation logic for future reservation times.",
+        "summary": {
+          "title": "Bug Fixes Released",
+          "summary": "Several bugs have been fixed, including issues with SQLInstance availabilityType, Preview Tool crashes, ComputeForwardingRule target field matching, and ComputeFutureReservation validation logic."
+        }
+      }
+    ],
     "2026-05-19": [
       {
         "kind": "Announcement",

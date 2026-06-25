@@ -1,6 +1,16 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-06-24": [
+      {
+        "kind": "Fixed",
+        "content": "* Fixed an issue where campaigns that didn't complete prevented subsequent\n  campaigns from starting.\n* Fixed an issue where callers weren't correctly connected to voicemail during\n  a warm transfer to an agent's direct number.\n* Fixed an issue where incoming calls were assigned to agents but\n  didn't appear in the agent adapter, resulting in \"ghost assignments\" and\n  abandoned calls.\n* Fixed an issue where cold-transferring a call from a queue while the\n  transferring agent was in a wrap-up state caused the connection to become\n  unresponsive and silent.\n* Fixed an issue where calls that disconnected before entering a queue were\n  incorrectly displayed in the **Queued Calls** dashboard.\n* Fixed an issue in the agent desktop where the call disposition panel failed\n  to load for queues with forced disposition enabled, leaving agents stuck and\n  unable to proceed without logging out.\n* Fixed an issue where streaming conversations failed due to connection\n  errors.\n* Fixed an issue where outbound calls initiated from a HubSpot company profile\n  created duplicate anonymous contacts instead of matching existing records by\n  phone number.\n* Fixed an issue where the **Session Data** report incorrectly calculated the\n  after call work (ACW) duration for manual wrap-ups.\n* Fixed an issue where the **Start Call** button didn't display in the call\n  adapter.\n* Fixed an issue where voicemails from cold transfers were lost or routed to\n  the wrong queue.\n* Fixed an issue in the agent desktop where active calls appeared to be on\n  hold while the agent was in a \"wrap-up exceeded\" state.",
+        "summary": {
+          "title": "Multiple issues resolved",
+          "summary": "Several issues have been fixed, including problems with campaign scheduling, call routing, agent desktop functionality, and reporting accuracy. These updates ensure a more stable and reliable calling experience."
+        }
+      }
+    ],
     "2026-06-22": [
       {
         "kind": "Announcement",

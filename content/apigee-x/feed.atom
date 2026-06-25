@@ -2,9 +2,89 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-06-22T00:00:00+00:00</updated>
+  <updated>2026-06-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-06-24:announcement:0</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>]]></content>
+    <summary>Introducing the Apigee Emulator, a new tool to streamline your API development workflow. This emulator allows you to test your API proxies locally, reducing the need for frequent deployments to a live environment. It's designed to accelerate your development cycle and improve efficiency.</summary>
+    <title>Announcement: Apigee Emulator Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-06-24:apigee emulator v2.0.1:1</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On June 24, 2026, we released Apigee Emulator version 2.0.1.</p>
+<p>This is a security-only hotfix release on top of v2.0.0 that addresses
+10 security vulnerabilities in the Netty networking library and the embedded
+Cassandra Go standard library health-check binary. There are no functional,
+API, or configuration changes -- v2.0.1 is a drop-in replacement for v2.0.0.</p>
+<p>The emulator image is available at
+<a href="https://console.cloud.google.com/artifacts/docker/apigee-release/us/gcr.io/hybrid%2Fapigee-emulator">Google Artifact Registry</a>.</p>
+<p>To upgrade, update the emulator version in your VS Code Cloud Code settings
+to <code>2.0.1</code>. See
+<a href="https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/manage-apigee-emulator#choose_the_emulator_version">Manage the Apigee Emulator</a>
+for details.</p>]]></content>
+    <summary>A security-focused hotfix, Apigee Emulator v2.0.1, is now available. This release addresses security vulnerabilities without introducing functional changes, making it a direct replacement for v2.0.0.</summary>
+    <title>Apigee Emulator v2.0.1: Apigee Emulator v2.0.1 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-06-24:feature:2</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>
+<h4>Changed in this release</h4>
+<ul>
+<li>Upgraded Netty to <code>4.1.135.Final</code> (from <code>4.1.133.Final</code>) and pinned all
+  transitive <code>netty-*</code> artifacts via <code>netty-bom</code>.</li>
+<li>Refreshed the Cassandra base image to pick up Go standard library <code>1.25.11</code>
+  (from <code>1.25.10</code>) in the embedded health-check binary.</li>
+<li>Updated <code>netty-tcnative-boringssl-static</code> classifier variants from
+  <code>2.0.53.Final</code> to <code>2.0.77.Final</code>.</li>
+</ul>]]></content>
+    <summary>The Apigee Emulator has been updated with new versions of Netty and BoringSSL, and includes a refreshed Cassandra base image with an updated Go standard library.</summary>
+    <title>Feature: Apigee Emulator Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-06-24:security:3</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>
+<h4>Security</h4>
+<p>This release addresses 10 security vulnerabilities in the Netty networking
+library and the embedded Go standard library. All Netty fixes come from
+upgrading to <code>4.1.135.Final</code>; all Go standard library fixes come from a
+Cassandra base image rebuild against Go <code>1.25.11</code>.</p>
+<p>| CVE | Component |
+| --- | --- |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50010">CVE-2026-50010</a> | Netty (<code>netty-handler</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50020">CVE-2026-50020</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50560">CVE-2026-50560</a> | Netty (<code>netty-codec-http2</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48043">CVE-2026-48043</a> | Netty (<code>netty-codec-http2</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44249">CVE-2026-44249</a> | Netty (<code>netty-handler</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45416">CVE-2026-45416</a> | Netty (<code>netty-handler</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47244">CVE-2026-47244</a> | Netty (<code>netty-codec-http2</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-27145">CVE-2026-27145</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42504">CVE-2026-42504</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42507">CVE-2026-42507</a> | Go standard library |</p>]]></content>
+    <summary>This security release addresses 10 vulnerabilities in the Netty networking library and the Go standard library. Updates were made by upgrading Netty to version 4.1.135.Final and rebuilding the Cassandra base image against Go 1.25.11.</summary>
+    <title>Security: Apigee Emulator Security Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

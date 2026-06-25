@@ -1,5 +1,13 @@
 # Confidential Space
 
+## 2026-06-24
+
+### Announcement
+
+Confidential Space image 260600 is available. This image provides support
+for graceful shutdown of container workloads on power button events.
+
+---
 ## 2026-05-20
 
 ### Announcement

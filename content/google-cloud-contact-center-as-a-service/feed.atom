@@ -2,9 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-06-22T00:00:00+00:00</updated>
+  <updated>2026-06-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-24:fixed:0</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where campaigns that didn't complete prevented subsequent
+  campaigns from starting.</li>
+<li>Fixed an issue where callers weren't correctly connected to voicemail during
+  a warm transfer to an agent's direct number.</li>
+<li>Fixed an issue where incoming calls were assigned to agents but
+  didn't appear in the agent adapter, resulting in "ghost assignments" and
+  abandoned calls.</li>
+<li>Fixed an issue where cold-transferring a call from a queue while the
+  transferring agent was in a wrap-up state caused the connection to become
+  unresponsive and silent.</li>
+<li>Fixed an issue where calls that disconnected before entering a queue were
+  incorrectly displayed in the <strong>Queued Calls</strong> dashboard.</li>
+<li>Fixed an issue in the agent desktop where the call disposition panel failed
+  to load for queues with forced disposition enabled, leaving agents stuck and
+  unable to proceed without logging out.</li>
+<li>Fixed an issue where streaming conversations failed due to connection
+  errors.</li>
+<li>Fixed an issue where outbound calls initiated from a HubSpot company profile
+  created duplicate anonymous contacts instead of matching existing records by
+  phone number.</li>
+<li>Fixed an issue where the <strong>Session Data</strong> report incorrectly calculated the
+  after call work (ACW) duration for manual wrap-ups.</li>
+<li>Fixed an issue where the <strong>Start Call</strong> button didn't display in the call
+  adapter.</li>
+<li>Fixed an issue where voicemails from cold transfers were lost or routed to
+  the wrong queue.</li>
+<li>Fixed an issue in the agent desktop where active calls appeared to be on
+  hold while the agent was in a "wrap-up exceeded" state.</li>
+</ul>]]></content>
+    <summary>Several issues have been fixed, including problems with campaign scheduling, call routing, agent desktop functionality, and reporting accuracy. These updates ensure a more stable and reliable calling experience.</summary>
+    <title>Fixed: Multiple issues resolved</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

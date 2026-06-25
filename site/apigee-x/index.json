@@ -1,6 +1,40 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-06-24": [
+      {
+        "kind": "Announcement",
+        "content": "**Apigee Emulator**",
+        "summary": {
+          "title": "Apigee Emulator Available",
+          "summary": "Introducing the Apigee Emulator, a new tool to streamline your API development workflow. This emulator allows you to test your API proxies locally, reducing the need for frequent deployments to a live environment. It's designed to accelerate your development cycle and improve efficiency."
+        }
+      },
+      {
+        "kind": "Apigee Emulator v2.0.1",
+        "content": "On June 24, 2026, we released Apigee Emulator version 2.0.1.\n\nThis is a security-only hotfix release on top of v2.0.0 that addresses\n10 security vulnerabilities in the Netty networking library and the embedded\nCassandra Go standard library health-check binary. There are no functional,\nAPI, or configuration changes -- v2.0.1 is a drop-in replacement for v2.0.0.\n\nThe emulator image is available at\n[Google Artifact Registry](https://console.cloud.google.com/artifacts/docker/apigee-release/us/gcr.io/hybrid%2Fapigee-emulator).\n\nTo upgrade, update the emulator version in your VS Code Cloud Code settings\nto `2.0.1`. See\n[Manage the Apigee Emulator](https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/manage-apigee-emulator#choose_the_emulator_version)\nfor details.",
+        "summary": {
+          "title": "Apigee Emulator v2.0.1 Released",
+          "summary": "A security-focused hotfix, Apigee Emulator v2.0.1, is now available. This release addresses security vulnerabilities without introducing functional changes, making it a direct replacement for v2.0.0."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Apigee Emulator**\n\n#### Changed in this release\n\n* Upgraded Netty to `4.1.135.Final` (from `4.1.133.Final`) and pinned all\n  transitive `netty-*` artifacts via `netty-bom`.\n* Refreshed the Cassandra base image to pick up Go standard library `1.25.11`\n  (from `1.25.10`) in the embedded health-check binary.\n* Updated `netty-tcnative-boringssl-static` classifier variants from\n  `2.0.53.Final` to `2.0.77.Final`.",
+        "summary": {
+          "title": "Apigee Emulator Update",
+          "summary": "The Apigee Emulator has been updated with new versions of Netty and BoringSSL, and includes a refreshed Cassandra base image with an updated Go standard library."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "**Apigee Emulator**\n\n#### Security\n\nThis release addresses 10 security vulnerabilities in the Netty networking\nlibrary and the embedded Go standard library. All Netty fixes come from\nupgrading to `4.1.135.Final`; all Go standard library fixes come from a\nCassandra base image rebuild against Go `1.25.11`.\n\n| CVE | Component |\n| --- | --- |\n| [CVE-2026-50010](https://nvd.nist.gov/vuln/detail/CVE-2026-50010) | Netty (`netty-handler`) |\n| [CVE-2026-50020](https://nvd.nist.gov/vuln/detail/CVE-2026-50020) | Netty (`netty-codec-http`) |\n| [CVE-2026-50560](https://nvd.nist.gov/vuln/detail/CVE-2026-50560) | Netty (`netty-codec-http2`) |\n| [CVE-2026-48043](https://nvd.nist.gov/vuln/detail/CVE-2026-48043) | Netty (`netty-codec-http2`) |\n| [CVE-2026-44249](https://nvd.nist.gov/vuln/detail/CVE-2026-44249) | Netty (`netty-handler`) |\n| [CVE-2026-45416](https://nvd.nist.gov/vuln/detail/CVE-2026-45416) | Netty (`netty-handler`) |\n| [CVE-2026-47244](https://nvd.nist.gov/vuln/detail/CVE-2026-47244) | Netty (`netty-codec-http2`) |\n| [CVE-2026-27145](https://nvd.nist.gov/vuln/detail/CVE-2026-27145) | Go standard library |\n| [CVE-2026-42504](https://nvd.nist.gov/vuln/detail/CVE-2026-42504) | Go standard library |\n| [CVE-2026-42507](https://nvd.nist.gov/vuln/detail/CVE-2026-42507) | Go standard library |",
+        "summary": {
+          "title": "Apigee Emulator Security Update",
+          "summary": "This security release addresses 10 vulnerabilities in the Netty networking library and the Go standard library. Updates were made by upgrading Netty to version 4.1.135.Final and rebuilding the Cassandra base image against Go 1.25.11."
+        }
+      }
+    ],
     "2026-06-22": [
       {
         "kind": "Announcement",

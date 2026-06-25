@@ -1,5 +1,39 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-24
+
+### Fixed
+
+* Fixed an issue where campaigns that didn't complete prevented subsequent
+  campaigns from starting.
+* Fixed an issue where callers weren't correctly connected to voicemail during
+  a warm transfer to an agent's direct number.
+* Fixed an issue where incoming calls were assigned to agents but
+  didn't appear in the agent adapter, resulting in "ghost assignments" and
+  abandoned calls.
+* Fixed an issue where cold-transferring a call from a queue while the
+  transferring agent was in a wrap-up state caused the connection to become
+  unresponsive and silent.
+* Fixed an issue where calls that disconnected before entering a queue were
+  incorrectly displayed in the **Queued Calls** dashboard.
+* Fixed an issue in the agent desktop where the call disposition panel failed
+  to load for queues with forced disposition enabled, leaving agents stuck and
+  unable to proceed without logging out.
+* Fixed an issue where streaming conversations failed due to connection
+  errors.
+* Fixed an issue where outbound calls initiated from a HubSpot company profile
+  created duplicate anonymous contacts instead of matching existing records by
+  phone number.
+* Fixed an issue where the **Session Data** report incorrectly calculated the
+  after call work (ACW) duration for manual wrap-ups.
+* Fixed an issue where the **Start Call** button didn't display in the call
+  adapter.
+* Fixed an issue where voicemails from cold transfers were lost or routed to
+  the wrong queue.
+* Fixed an issue in the agent desktop where active calls appeared to be on
+  hold while the agent was in a "wrap-up exceeded" state.
+
+---
 ## 2026-06-22
 
 ### Announcement

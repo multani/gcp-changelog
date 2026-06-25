@@ -1,5 +1,66 @@
 # Apigee X
 
+## 2026-06-24
+
+### Announcement
+
+**Apigee Emulator**
+
+### Apigee Emulator v2.0.1
+
+On June 24, 2026, we released Apigee Emulator version 2.0.1.
+
+This is a security-only hotfix release on top of v2.0.0 that addresses
+10 security vulnerabilities in the Netty networking library and the embedded
+Cassandra Go standard library health-check binary. There are no functional,
+API, or configuration changes -- v2.0.1 is a drop-in replacement for v2.0.0.
+
+The emulator image is available at
+[Google Artifact Registry](https://console.cloud.google.com/artifacts/docker/apigee-release/us/gcr.io/hybrid%2Fapigee-emulator).
+
+To upgrade, update the emulator version in your VS Code Cloud Code settings
+to `2.0.1`. See
+[Manage the Apigee Emulator](https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/manage-apigee-emulator#choose_the_emulator_version)
+for details.
+
+### Feature
+
+**Apigee Emulator**
+
+#### Changed in this release
+
+* Upgraded Netty to `4.1.135.Final` (from `4.1.133.Final`) and pinned all
+  transitive `netty-*` artifacts via `netty-bom`.
+* Refreshed the Cassandra base image to pick up Go standard library `1.25.11`
+  (from `1.25.10`) in the embedded health-check binary.
+* Updated `netty-tcnative-boringssl-static` classifier variants from
+  `2.0.53.Final` to `2.0.77.Final`.
+
+### Security
+
+**Apigee Emulator**
+
+#### Security
+
+This release addresses 10 security vulnerabilities in the Netty networking
+library and the embedded Go standard library. All Netty fixes come from
+upgrading to `4.1.135.Final`; all Go standard library fixes come from a
+Cassandra base image rebuild against Go `1.25.11`.
+
+| CVE | Component |
+| --- | --- |
+| [CVE-2026-50010](https://nvd.nist.gov/vuln/detail/CVE-2026-50010) | Netty (`netty-handler`) |
+| [CVE-2026-50020](https://nvd.nist.gov/vuln/detail/CVE-2026-50020) | Netty (`netty-codec-http`) |
+| [CVE-2026-50560](https://nvd.nist.gov/vuln/detail/CVE-2026-50560) | Netty (`netty-codec-http2`) |
+| [CVE-2026-48043](https://nvd.nist.gov/vuln/detail/CVE-2026-48043) | Netty (`netty-codec-http2`) |
+| [CVE-2026-44249](https://nvd.nist.gov/vuln/detail/CVE-2026-44249) | Netty (`netty-handler`) |
+| [CVE-2026-45416](https://nvd.nist.gov/vuln/detail/CVE-2026-45416) | Netty (`netty-handler`) |
+| [CVE-2026-47244](https://nvd.nist.gov/vuln/detail/CVE-2026-47244) | Netty (`netty-codec-http2`) |
+| [CVE-2026-27145](https://nvd.nist.gov/vuln/detail/CVE-2026-27145) | Go standard library |
+| [CVE-2026-42504](https://nvd.nist.gov/vuln/detail/CVE-2026-42504) | Go standard library |
+| [CVE-2026-42507](https://nvd.nist.gov/vuln/detail/CVE-2026-42507) | Go standard library |
+
+---
 ## 2026-06-22
 
 ### Announcement

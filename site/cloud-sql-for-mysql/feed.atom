@@ -2,23 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-06-22T00:00:00+00:00</updated>
+  <updated>2026-06-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-06-22:feature:0</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Customer-managed encryption key (CMEK) support for Cloud SQL enhanced backups is
-generally available. You can protect your CMEK-enabled Cloud SQL instances
-using Google Cloud Backup and DR Service.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backup-options">Choose your backup
-option</a>.</p>]]></content>
-    <summary>Customer-managed encryption key (CMEK) support for Cloud SQL enhanced backups is now generally available. This feature allows you to protect your CMEK-enabled Cloud SQL instances using Google Cloud Backup and DR Service, providing an additional layer of security for your data.</summary>
-    <title>Feature: Enhanced Cloud SQL Backups with CMEK</title>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-06-25:feature:0</id>
+    <published>2026-06-25T00:00:00+00:00</published>
+    <updated>2026-06-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now assess the upgrade readiness of your Cloud SQL for MySQL
+instances before a major version upgrade by running a precheck.
+This precheck analyzes your instance for version incompatibilities and
+lists any issues that need to be fixed prior to your upgrade.
+For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/mysql/upgrade-major-db-version-inplace#precheck">Assess upgrade readiness for your instance</a>.</p>
+<p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>You can now run a precheck to assess the upgrade readiness of your Cloud SQL for MySQL instances before a major version upgrade. This feature analyzes your instance for version incompatibilities and lists any issues that need to be fixed prior to your upgrade. This feature is currently in Preview.</summary>
+    <title>Feature: Cloud SQL for MySQL: Pre-upgrade readiness check</title>
   </entry>
   <entry>
     <author>
@@ -47,6 +49,21 @@ Managed buffer pool helps you avoid out-of-memory events (OOMs) on your
 Cloud SQL instance by reducing <code>innodb_buffer_pool_size</code> when memory usage is high.</p>]]></content>
     <summary>Cloud SQL for MySQL now offers managed buffer pool, a feature that helps prevent out-of-memory events by dynamically adjusting the InnoDB buffer pool size. This ensures better stability for your database instances.</summary>
     <title>Feature: Managed buffer pool for Cloud SQL for MySQL now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-06-22:feature:0</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Customer-managed encryption key (CMEK) support for Cloud SQL enhanced backups is
+generally available. You can protect your CMEK-enabled Cloud SQL instances
+using Google Cloud Backup and DR Service.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/backup-options">Choose your backup
+option</a>.</p>]]></content>
+    <summary>Customer-managed encryption key (CMEK) support for Cloud SQL enhanced backups is now generally available. This feature allows you to protect your CMEK-enabled Cloud SQL instances using Google Cloud Backup and DR Service, providing an additional layer of security for your data.</summary>
+    <title>Feature: Enhanced Cloud SQL Backups with CMEK</title>
   </entry>
   <entry>
     <author>

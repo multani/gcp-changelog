@@ -1,5 +1,17 @@
 # Agent Assist
 
+## 2026-06-17
+
+### Feature
+
+Agent Assist offers the following [UI module integrations with Agent Assist for Salesforce](https://docs.cloud.google.com/agent-assist/docs/aaforsalesforce-setup):
+
+* [Chat](https://docs.cloud.google.com/agent-assist/docs/aaforsalesforce-chat)
+* [Voice with Twilio Flex](https://docs.cloud.google.com/agent-assist/docs/aaforsalesforce-voice-twilio)
+* [Voice with Nice CXone](https://docs.cloud.google.com/agent-assist/docs/aaforsalesforce-voice-nice)
+* [Voice with Genesys CX Cloud](https://docs.cloud.google.com/agent-assist/docs/aaforsalesforce-voice-genesys)
+
+---
 ## 2026-06-10
 
 ### Change

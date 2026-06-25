@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-06-25
+
+### Feature
+
+You can view the details of your GoldenGate deployments, connections, and related assignments through Google Cloud console. For more information, see [Manage deployments](https://docs.cloud.google.com/oracle/database/docs/manage-deployments), [Manage connections](https://docs.cloud.google.com/oracle/database/docs/manage-connections), and [Manage assignments](https://docs.cloud.google.com/oracle/database/docs/manage-assignments).
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-18
 
 ### Feature

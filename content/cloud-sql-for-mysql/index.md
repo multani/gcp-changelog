@@ -1,5 +1,19 @@
 # Cloud SQL for MySQL
 
+## 2026-06-25
+
+### Feature
+
+You can now assess the upgrade readiness of your Cloud SQL for MySQL
+instances before a major version upgrade by running a precheck.
+This precheck analyzes your instance for version incompatibilities and
+lists any issues that need to be fixed prior to your upgrade.
+For more information, see
+[Assess upgrade readiness for your instance](https://docs.cloud.google.com/sql/docs/mysql/upgrade-major-db-version-inplace#precheck).
+
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-06-22
 
 ### Feature

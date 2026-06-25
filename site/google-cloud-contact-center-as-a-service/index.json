@@ -3,6 +3,38 @@
   "entries": {
     "2026-06-24": [
       {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS.\nWhen we release this version, we expect the new capabilities to be as shown\nhere.",
+        "summary": {
+          "title": "CCaaS Pre-release Notes",
+          "summary": "Here are the pre-release notes for the upcoming version of CCaaS. These notes outline the new capabilities expected upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Emergency queue shutdown**\n\nYou can temporarily shut down a specific queue during unexpected events such as\nsystem issues, an unexpected staffing shortage, a building emergency, or\nunplanned maintenance. This lets you provide fast, controlled call deflection\nfor the affected queue without impacting the rest of your call center. You can\nshut down a queue using the CCAI Platform portal or programmatically, using the\n`/apps/api/v1/menus/shutdown` API.\n\nAdministrators: We've made the following updates to the CCAI Platform portal:\n\n* In the **Settings > Queue > IVR (Interactive Voice\n  Response) > Edit / View > MENU\\_NAME >\n  Settings** pane, there's a new **Emergency Shutdown** section.\n* On the **Settings > Developer Settings > Audible\n  Messages** page, there's a new **Enable Remote Shutdown via API** toggle.",
+        "summary": {
+          "title": "Queue Emergency Shutdown",
+          "summary": "Temporarily shut down a specific queue during unexpected events to provide controlled call deflection without impacting your call center. This feature can be accessed via the CCAI Platform portal or programmatically."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Do Not Call capability in HubSpot**\n\nYou can configure your HubSpot integration to display **This number is on the Do\nNot Call list** in the call adapter when an agent initiates a call to a contact\nconfigured for Do Not Call (DNC). The agent can proceed with the DNC call if\nneeded. If the agent proceeds with the call, the following comment is logged in\nthe CRM: \"The contact is in TPS, the agent chose to proceed with the call.\"\n\nThis capability is for non-campaign outbound calls. It doesn't affect outbound\ncampaign calls.\n\nAdministrators: In the **Settings > Developer Settings >\nAgent Platform > HubSpot > Account Lookup** section,\nthere's a new **Do-Not-Call CRM Field** section.\n\nUser experience update: The call adapter displays **This number is on the Do Not\nCall list** when an agent initiates a call to a contact configured for DNC.",
+        "summary": {
+          "title": "HubSpot Do Not Call Feature",
+          "summary": "A new Do Not Call (DNC) capability is available in HubSpot for non-campaign outbound calls. Agents will be notified if a contact is on the DNC list, with the option to proceed with the call and have it logged in the CRM. This feature enhances agent awareness and compliance for individual outbound calls."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Return to queue after disconnection**\n\nYou can configure CCAI Platform to offer a disconnected caller the\noption to return to their queue. If they accept, they're returned to the top of\nthe queue. Virtual agents in the queue are skipped. This capability is for IVR\ncalls only.\n\nAdministrators: We've made the following updates to the CCAI Platform portal:\n\n* In the **Settings > Call > Call Details** pane,\n  there's a new **Return to Queue After Disconnection** section.\n* In the **Settings > Queue > IVR (Interactive Voice\n  Response) > Edit / View > MENU\\_NAME >\n  Settings** pane, there's a new **Return to Queue after disconnection**\n  section.\n* In the **Settings > Languages & Messages > Audible\n  Messages** pane, there's a new **Return to Queue After Disconnection\n  Messages** section.",
+        "summary": {
+          "title": "Return to Queue on Disconnect",
+          "summary": "CCAI Platform now allows disconnected callers to return to the top of the queue. This feature, available for IVR calls only, ensures a seamless experience by bypassing virtual agents if the caller chooses to reconnect."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "* Fixed an issue where campaigns that didn't complete prevented subsequent\n  campaigns from starting.\n* Fixed an issue where callers weren't correctly connected to voicemail during\n  a warm transfer to an agent's direct number.\n* Fixed an issue where incoming calls were assigned to agents but\n  didn't appear in the agent adapter, resulting in \"ghost assignments\" and\n  abandoned calls.\n* Fixed an issue where cold-transferring a call from a queue while the\n  transferring agent was in a wrap-up state caused the connection to become\n  unresponsive and silent.\n* Fixed an issue where calls that disconnected before entering a queue were\n  incorrectly displayed in the **Queued Calls** dashboard.\n* Fixed an issue in the agent desktop where the call disposition panel failed\n  to load for queues with forced disposition enabled, leaving agents stuck and\n  unable to proceed without logging out.\n* Fixed an issue where streaming conversations failed due to connection\n  errors.\n* Fixed an issue where outbound calls initiated from a HubSpot company profile\n  created duplicate anonymous contacts instead of matching existing records by\n  phone number.\n* Fixed an issue where the **Session Data** report incorrectly calculated the\n  after call work (ACW) duration for manual wrap-ups.\n* Fixed an issue where the **Start Call** button didn't display in the call\n  adapter.\n* Fixed an issue where voicemails from cold transfers were lost or routed to\n  the wrong queue.\n* Fixed an issue in the agent desktop where active calls appeared to be on\n  hold while the agent was in a \"wrap-up exceeded\" state.",
         "summary": {

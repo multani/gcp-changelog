@@ -36,6 +36,18 @@ Changes in Cloud Data Fusion 6.11.1.3:
   changed
   ([CDAP-21246](https://cdap.atlassian.net/browse/CDAP-21246)).
 
+### Change
+
+The Snowflake plugin version 1.2.1 is available in Cloud Data Fusion version
+6.11.1 and later. This release includes the following change:
+
+* Upgraded the Snowflake JDBC driver version from 3.14.4 to 4.0.2 and adapted
+  to breaking API changes. This update migrates stream upload and download
+  methods to use the new `UploadStreamConfig` and `DownloadStreamConfig`
+  builders, updates OAuth2 authentication logic, and adds passphrase validation
+  for key-pair authentication
+  ([PLUGIN-1954](https://cdap.atlassian.net/browse/PLUGIN-1954)).
+
 ---
 ## 2026-05-18
 

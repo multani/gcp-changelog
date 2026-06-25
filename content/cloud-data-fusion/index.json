@@ -25,6 +25,14 @@
           "title": "Cloud Data Fusion update available",
           "summary": "Cloud Data Fusion 6.11.1.3 has been released with an update to the Deploy Application API. A new query parameter, `deployStrategy`, allows skipping pipeline re-deployment if configurations remain unchanged, improving efficiency. This change helps streamline the deployment process by avoiding unnecessary updates."
         }
+      },
+      {
+        "kind": "Change",
+        "content": "The Snowflake plugin version 1.2.1 is available in Cloud Data Fusion version\n6.11.1 and later. This release includes the following change:\n\n* Upgraded the Snowflake JDBC driver version from 3.14.4 to 4.0.2 and adapted\n  to breaking API changes. This update migrates stream upload and download\n  methods to use the new `UploadStreamConfig` and `DownloadStreamConfig`\n  builders, updates OAuth2 authentication logic, and adds passphrase validation\n  for key-pair authentication\n  ([PLUGIN-1954](https://cdap.atlassian.net/browse/PLUGIN-1954)).",
+        "summary": {
+          "title": "Snowflake Plugin Update Available",
+          "summary": "The Snowflake plugin version 1.2.1 is now available in Cloud Data Fusion version 6.11.1 and later. This update includes an upgraded Snowflake JDBC driver, improved authentication, and enhanced key-pair validation."
+        }
       }
     ],
     "2026-05-18": [

@@ -9,7 +9,96 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-24:fixed:0</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-24:announcement:0</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS.
+When we release this version, we expect the new capabilities to be as shown
+here.</p>]]></content>
+    <summary>Here are the pre-release notes for the upcoming version of CCaaS. These notes outline the new capabilities expected upon release.</summary>
+    <title>Announcement: CCaaS Pre-release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-24:feature:1</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Emergency queue shutdown</strong></p>
+<p>You can temporarily shut down a specific queue during unexpected events such as
+system issues, an unexpected staffing shortage, a building emergency, or
+unplanned maintenance. This lets you provide fast, controlled call deflection
+for the affected queue without impacting the rest of your call center. You can
+shut down a queue using the CCAI Platform portal or programmatically, using the
+<code>/apps/api/v1/menus/shutdown</code> API.</p>
+<p>Administrators: We've made the following updates to the CCAI Platform portal:</p>
+<ul>
+<li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice
+  Response) &gt; Edit / View &gt; MENU_NAME &gt;
+  Settings</strong> pane, there's a new <strong>Emergency Shutdown</strong> section.</li>
+<li>On the <strong>Settings &gt; Developer Settings &gt; Audible
+  Messages</strong> page, there's a new <strong>Enable Remote Shutdown via API</strong> toggle.</li>
+</ul>]]></content>
+    <summary>Temporarily shut down a specific queue during unexpected events to provide controlled call deflection without impacting your call center. This feature can be accessed via the CCAI Platform portal or programmatically.</summary>
+    <title>Feature: Queue Emergency Shutdown</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-24:feature:2</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Do Not Call capability in HubSpot</strong></p>
+<p>You can configure your HubSpot integration to display <strong>This number is on the Do
+Not Call list</strong> in the call adapter when an agent initiates a call to a contact
+configured for Do Not Call (DNC). The agent can proceed with the DNC call if
+needed. If the agent proceeds with the call, the following comment is logged in
+the CRM: "The contact is in TPS, the agent chose to proceed with the call."</p>
+<p>This capability is for non-campaign outbound calls. It doesn't affect outbound
+campaign calls.</p>
+<p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;
+Agent Platform &gt; HubSpot &gt; Account Lookup</strong> section,
+there's a new <strong>Do-Not-Call CRM Field</strong> section.</p>
+<p>User experience update: The call adapter displays <strong>This number is on the Do Not
+Call list</strong> when an agent initiates a call to a contact configured for DNC.</p>]]></content>
+    <summary>A new Do Not Call (DNC) capability is available in HubSpot for non-campaign outbound calls. Agents will be notified if a contact is on the DNC list, with the option to proceed with the call and have it logged in the CRM. This feature enhances agent awareness and compliance for individual outbound calls.</summary>
+    <title>Feature: HubSpot Do Not Call Feature</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-24:feature:3</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Return to queue after disconnection</strong></p>
+<p>You can configure CCAI Platform to offer a disconnected caller the
+option to return to their queue. If they accept, they're returned to the top of
+the queue. Virtual agents in the queue are skipped. This capability is for IVR
+calls only.</p>
+<p>Administrators: We've made the following updates to the CCAI Platform portal:</p>
+<ul>
+<li>In the <strong>Settings &gt; Call &gt; Call Details</strong> pane,
+  there's a new <strong>Return to Queue After Disconnection</strong> section.</li>
+<li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice
+  Response) &gt; Edit / View &gt; MENU_NAME &gt;
+  Settings</strong> pane, there's a new <strong>Return to Queue after disconnection</strong>
+  section.</li>
+<li>In the <strong>Settings &gt; Languages &amp; Messages &gt; Audible
+  Messages</strong> pane, there's a new <strong>Return to Queue After Disconnection
+  Messages</strong> section.</li>
+</ul>]]></content>
+    <summary>CCAI Platform now allows disconnected callers to return to the top of the queue. This feature, available for IVR calls only, ensures a seamless experience by bypassing virtual agents if the caller chooses to reconnect.</summary>
+    <title>Feature: Return to Queue on Disconnect</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-24:fixed:4</id>
     <published>2026-06-24T00:00:00+00:00</published>
     <updated>2026-06-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<ul>

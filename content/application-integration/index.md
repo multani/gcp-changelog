@@ -1,5 +1,14 @@
 # Application Integration
 
+## 2026-06-25
+
+### Security
+
+**Security bulletins page**
+
+See the new security bulletins page for Application Integration. Use it to stay informed about related security updates, vulnerabilities, and remediations. For more information, see [Security bulletins](https://docs.cloud.google.com/application-integration/docs/security-bulletins).
+
+---
 ## 2026-02-02
 
 ### Feature

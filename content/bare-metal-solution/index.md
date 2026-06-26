@@ -1,5 +1,12 @@
 # Bare Metal Solution
 
+## 2026-06-19
+
+### Feature
+
+Bare Metal Solution supports using Privileged Access Manager to provide temporary elevated access to a user to perform the critical evict operation that permanently deletes a storage resource. For more information, see [Evict a LUN or storage volume](https://docs.cloud.google.com/bare-metal/docs/bms-delete-storage-volume-resources#evict-storage-volume).
+
+---
 ## 2025-12-29
 
 ### Deprecated

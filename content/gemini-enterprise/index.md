@@ -4,6 +4,25 @@
 
 ### Feature
 
+**Gemini Enterprise: Governance for agents and MCP servers**
+
+You can access Agent Registry from within Gemini Enterprise. Agent Registry
+provides a catalog of agents and custom Model Context Protocol (MCP) servers.
+From the catalog, you can select A2A agents or MCP servers to add to your Gemini
+Enterprise apps.
+
+Furthermore, through egress policies managed by Agent Gateway, you can set
+allow and deny permissions on traffic going to these agents or these MCP
+servers.
+
+This feature is generally available (GA). For more information, see:
+
+* [Import agents from Agent Registry](https://docs.cloud.google.com/gemini/enterprise/docs/import-govern-agent-registry) and
+* [Import custom MCP servers from Agent
+  Registry](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/import-govern-mcp-server-agent-registry).
+
+### Feature
+
 **Gemini Enterprise: New data store and support for new actions (Public Preview)**
 
 The Lovable data store is available in Public Preview in Gemini Enterprise. End
@@ -28,6 +47,18 @@ following data stores:
 
 For more information, see
 [Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+### Feature
+
+**Gemini Enterprise: View agent identity**
+
+This feature is generally available (GA).
+As a Gemini Enterprise administrator, you can view an agent's identity on the
+Agent details page. This is typically the agent's SPIFFE ID.
+
+If the SPIFFE ID is not published, the Agent Registry resource ID is displayed
+as a fallback. For more information, see [Agent
+identity](https://docs.cloud.google.com/gemini/enterprise/docs/agents-overview#agent-identity).
 
 ---
 ## 2026-06-24

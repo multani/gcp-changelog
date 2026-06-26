@@ -4,10 +4,26 @@
     "2026-06-25": [
       {
         "kind": "Feature",
+        "content": "**Gemini Enterprise: Governance for agents and MCP servers**\n\nYou can access Agent Registry from within Gemini Enterprise. Agent Registry\nprovides a catalog of agents and custom Model Context Protocol (MCP) servers.\nFrom the catalog, you can select A2A agents or MCP servers to add to your Gemini\nEnterprise apps.\n\nFurthermore, through egress policies managed by Agent Gateway, you can set\nallow and deny permissions on traffic going to these agents or these MCP\nservers.\n\nThis feature is generally available (GA). For more information, see:\n\n* [Import agents from Agent Registry](https://docs.cloud.google.com/gemini/enterprise/docs/import-govern-agent-registry) and\n* [Import custom MCP servers from Agent\n  Registry](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/import-govern-mcp-server-agent-registry).",
+        "summary": {
+          "title": "New Governance Features for Gemini Enterprise",
+          "summary": "Gemini Enterprise now offers enhanced governance capabilities through Agent Registry. You can now manage and integrate agents and custom MCP servers directly within Gemini Enterprise, with granular control over traffic via egress policies."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Gemini Enterprise: New data store and support for new actions (Public Preview)**\n\nThe Lovable data store is available in Public Preview in Gemini Enterprise. End\nusers can search and read projects, and use natural language commands to perform\nactions, including adding connectors, remixing projects, and setting project\nknowledge and visibility. For more information, see\n[Connect Lovable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/lovable).\n\nAdditionally, support for new actions is available in Public Preview for the\nfollowing data stores:\n\n* [Airtable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airtable): Create bases, fields, tables, and\n  record comments; update tables.\n* [Freshservice](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/freshservice): Create tickets; place\n  service catalog item requests.\n* [Google Stitch](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/googlestitch): Create and apply design\n  systems.\n* [Zoho Desk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohodesk): Create and update calls; send\n  replies; update tasks.\n* [Zoho Projects](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohoprojects): Create projects and\n  tasks; update task lists.\n\nFor more information, see\n[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).",
         "summary": {
           "title": "Gemini Enterprise: New Data Store and Actions",
           "summary": "Gemini Enterprise is now in Public Preview with a new Lovable data store, allowing users to search projects and perform actions via natural language. Additionally, support for new actions is available for Airtable, Freshservice, Google Stitch, Zoho Desk, and Zoho Projects, enabling more complex task management and data manipulation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: View agent identity**\n\nThis feature is generally available (GA).\nAs a Gemini Enterprise administrator, you can view an agent's identity on the\nAgent details page. This is typically the agent's SPIFFE ID.\n\nIf the SPIFFE ID is not published, the Agent Registry resource ID is displayed\nas a fallback. For more information, see [Agent\nidentity](https://docs.cloud.google.com/gemini/enterprise/docs/agents-overview#agent-identity).",
+        "summary": {
+          "title": "View Agent Identity in Gemini Enterprise",
+          "summary": "Gemini Enterprise administrators can now view agent identities, typically their SPIFFE ID, on the Agent details page. If the SPIFFE ID isn't available, the Agent Registry resource ID will be shown as a fallback. This feature is now generally available."
         }
       }
     ],

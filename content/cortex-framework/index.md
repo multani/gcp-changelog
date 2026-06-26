@@ -1,5 +1,20 @@
 # Cortex Framework
 
+## 2026-06-25
+
+### Announcement
+
+
+
+### Release 7.0.0-preview.2.1 (Public Preview)
+
+
+
+### Fixed
+
+* **Configuration**: Fix for `tableSettings` path resolution issue.
+
+---
 ## 2026-06-24
 
 ### Release 7.0.0-preview.2 (Public Preview)

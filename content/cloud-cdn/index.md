@@ -1,5 +1,18 @@
 # Cloud CDN
 
+## 2026-06-25
+
+### Feature
+
+Cloud CDN and external Application Load Balancers support self-service
+Private Bucket Access for Cloud Storage buckets. This feature allows you to
+securely serve content without making your storage buckets public. The access
+on the buckets is managed securely via IAM permissions on a Google-managed
+service account. This feature is **Generally Available**.
+
+For more information, see [Private bucket access](https://docs.cloud.google.com/cdn/docs/setting-up-cdn-with-bucket#enable_private_bucket_access).
+
+---
 ## 2026-05-26
 
 ### Feature

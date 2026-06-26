@@ -1,5 +1,35 @@
 # Gemini Enterprise
 
+## 2026-06-25
+
+### Feature
+
+**Gemini Enterprise: New data store and support for new actions (Public Preview)**
+
+The Lovable data store is available in Public Preview in Gemini Enterprise. End
+users can search and read projects, and use natural language commands to perform
+actions, including adding connectors, remixing projects, and setting project
+knowledge and visibility. For more information, see
+[Connect Lovable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/lovable).
+
+Additionally, support for new actions is available in Public Preview for the
+following data stores:
+
+* [Airtable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airtable): Create bases, fields, tables, and
+  record comments; update tables.
+* [Freshservice](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/freshservice): Create tickets; place
+  service catalog item requests.
+* [Google Stitch](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/googlestitch): Create and apply design
+  systems.
+* [Zoho Desk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohodesk): Create and update calls; send
+  replies; update tasks.
+* [Zoho Projects](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohoprojects): Create projects and
+  tasks; update task lists.
+
+For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+---
 ## 2026-06-24
 
 ### Feature

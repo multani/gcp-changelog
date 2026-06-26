@@ -2629,18 +2629,21 @@
 
 <h1 id="bigquery">BigQuery</h1>
 <h2 id="2026-06-25">2026-06-25</h2>
-<h3 id="feature">Feature</h3>
-<p>You can now use the <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/search_functions#vector_search"><code>VECTOR_SEARCH</code> function</a>
-to combine a semantic search with a lexical (keyword) search. This is known as a
-hybrid search. You can also extend a
-<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_vector_index_statement">vector index</a>
-to include keyword information to improve the speed of the lexical search
-portion of a hybrid search.</p>
-<p>This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <h3 id="change">Change</h3>
 <p>An updated version of the
 <a href="https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver">Simba ODBC driver for BigQuery</a>
 is now available.</p>
+<h3 id="feature">Feature</h3>
+<p>You can now use the <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/search_functions#vector_search"><code>VECTOR_SEARCH</code> function</a>
+to combine a semantic search with a lexical (keyword) search. This is known as a
+hybrid search. For tables with autonomous embedding generation enabled, you can
+use <code>HYBRID</code> mode in the <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-search"><code>AI.SEARCH</code></a>
+function to simplify your search syntax.</p>
+<p>You can also extend a
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_vector_index_statement">vector index</a>
+to include keyword information to improve the speed of the lexical search
+portion of a hybrid search.</p>
+<p>This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-06-24">2026-06-24</h2>
 <h3 id="feature_1">Feature</h3>

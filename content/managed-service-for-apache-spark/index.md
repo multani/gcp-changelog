@@ -5,11 +5,20 @@
 ### Breaking
 
 **Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
-The new subminor image versions (`1.3.96`, `1.4.81`, `1.5.92`, `2.0.161`, `2.1.116`, `2.2.84`, `2.3.32`) do not have preconfigured Conda channels and are not mapped to default aliases (such as `2.3-debian12`, `2.3-ubuntu22`, etc.) until August 25, 2026.
+The following new subminor image versions, `1.3.96`, `1.4.81`, `1.5.92`, `2.0.161`, and `2.3.32`,
+don't have preconfigured Conda channels, and are not mapped to default aliases
+(such as `2.3-debian12` and `2.3-ubuntu22`) until August 25, 2026.
+The new 2.1 and 2.2 subminor images continue to have preconfigured Conda channels,
+but note the following **Default change schedule:**, which will impact all supported
+image versions.
 
 * **Impact:** When creating clusters with these image versions, specify the exact subminor version (for example, `2.3.32-debian12`). Packages cannot be installed using Conda unless channels are manually configured during cluster initialization.
 * **Mitigation:** If your workloads require preconfigured Conda channels or default aliases, pin your clusters to the previous image versions.
-* **Default change schedule:** The subminor versions `1.3.96`, `1.4.81`, `1.5.92`, and `2.0.161` will become default after August 25, 2026. Additionally, newer subminor versions for `2.1`, `2.2`, and `2.3` released after August 25, 2026 will not have preconfigured Conda channels and will be mapped to default aliases. All workloads must use new images after August 25, 2026, since prior subminor versions with conda channels preconfigured will be disallowed from usage.
+* **Default change schedule:** The subminor versions `1.3.96`, `1.4.81`, `1.5.92`, and `2.0.161` will become default after August 25, 2026.
+  Additionally, newer subminor versions for `2.1`, `2.2`, and `2.3` released after August 25, 2026 will not have preconfigured Conda channels and will be mapped to default aliases.
+  All workloads must use new images after August 25, 2026
+  since the use of prior subminor versions with preconfigured conda
+  channels will be disallowed.
 
 ### Announcement
 

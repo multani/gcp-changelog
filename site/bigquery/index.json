@@ -3,19 +3,19 @@
   "entries": {
     "2026-06-25": [
       {
-        "kind": "Feature",
-        "content": "You can now use the [`VECTOR_SEARCH` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/search_functions#vector_search)\nto combine a semantic search with a lexical (keyword) search. This is known as a\nhybrid search. You can also extend a\n[vector index](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_vector_index_statement)\nto include keyword information to improve the speed of the lexical search\nportion of a hybrid search.\n\nThis feature is in [Preview](https://cloud.google.com/products#product-launch-stages).",
-        "summary": {
-          "title": "BigQuery hybrid search is now available",
-          "summary": "BigQuery now supports hybrid search, combining semantic and keyword search capabilities. You can also extend vector indexes with keyword information for faster lexical searches. This feature is currently in Preview."
-        }
-      },
-      {
         "kind": "Change",
         "content": "An updated version of the\n[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)\nis now available.",
         "summary": {
           "title": "Simba ODBC driver updated",
           "summary": "An updated version of the Simba ODBC driver for BigQuery has been released. This update is now available for download."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the [`VECTOR_SEARCH` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/search_functions#vector_search)\nto combine a semantic search with a lexical (keyword) search. This is known as a\nhybrid search. For tables with autonomous embedding generation enabled, you can\nuse `HYBRID` mode in the [`AI.SEARCH`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-search)\nfunction to simplify your search syntax.\n\nYou can also extend a\n[vector index](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/data-definition-language#create_vector_index_statement)\nto include keyword information to improve the speed of the lexical search\nportion of a hybrid search.\n\nThis feature is in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Hybrid Search in BigQuery",
+          "summary": "BigQuery now supports hybrid search, combining semantic and lexical search capabilities. You can simplify your search syntax using the `AI.SEARCH` function in `HYBRID` mode for tables with autonomous embedding generation. Additionally, vector indexes can be extended to include keyword information, improving lexical search performance. This feature is currently in Preview."
         }
       }
     ],

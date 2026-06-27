@@ -2,10 +2,6 @@
 
 ## 2026-06-26
 
-### Feature
-
-
-
 ### New Provisioned Throughput features
 
 The following Provisioned Throughput features are generally available:

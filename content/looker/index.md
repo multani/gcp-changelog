@@ -22,6 +22,12 @@ Dashboard editors can now enable the [**Preserve desktop layout**](https://docs.
 
 ### Feature
 
+When you [publish an in-database analytic model as a stable model on your database](https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#publish_as_db_analytic_model), you can now view its stable name in the **Stable Name** field of the [**PDT Details** modal](https://docs.cloud.google.com/looker/docs/admin-panel-database-pdts#pdt_details_modal) on the **Persistent Derived Tables** admin page. You can then use the stable name to query the published analytic model. See the [`derived_analytic_model`](https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#pdt_details_modal) parameter page for more information.
+
+**Note:** This item was added on June 26, 2026.
+
+### Feature
+
 [Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) suites can now be configured to [automatically run on a recurring schedule](https://docs.cloud.google.com/looker/docs/ci-create-suite#schedule-trigger).
 
 ### Feature

@@ -11,6 +11,24 @@
         }
       }
     ],
+    "2026-06-19": [
+      {
+        "kind": "Change",
+        "content": "When you [migrate from Percona XtraBackup physical file to Cloud SQL for MySQL](https://docs.cloud.google.com/sql/docs/mysql/migrate-xtrabackup-physical-file),\nyou can now specify multiple data files in the `innodb_data_file_path`\nparameter of your external server configuration. Also, you are no longer\nrequired to use the default name for your data files.",
+        "summary": {
+          "title": "Update to MySQL migration",
+          "summary": "You can now specify multiple data files and use custom names when migrating to Cloud SQL for MySQL using Percona XtraBackup. This update provides more flexibility in your migration process."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Cloud SQL for MySQL now supports multiple system tablespace files, allowing\n[system tablespace size](https://docs.cloud.google.com/sql/docs/quotas#table_limit) to grow larger than 16TB.",
+        "summary": {
+          "title": "MySQL tablespace size increased",
+          "summary": "Cloud SQL for MySQL now supports multiple system tablespace files. This change allows system tablespace size to grow beyond 16TB, offering greater flexibility for your database."
+        }
+      }
+    ],
     "2026-06-18": [
       {
         "kind": "Feature",

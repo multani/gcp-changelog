@@ -1,5 +1,23 @@
 # Compute Engine
 
+## 2026-06-26
+
+### Feature
+
+**Generally available**: You can cancel a future reservation request in calendar
+mode to prevent Compute Engine from provisioning your requested resources and
+incurring unnecessary charges. For more information, see
+[Delete a future reservation request in calendar mode](https://docs.cloud.google.com/compute/docs/instances/delete-future-reservations-calendar-mode).
+
+### Feature
+
+**Generally available**: In a managed instance group (MIG), you can use a health
+check to monitor your application health without triggering repairs for an
+unhealthy VM, if the application fails the health check. You can prevent the MIG
+from repairing an unhealthy VM by turning off autohealing. For more information,
+see [Turn off repairs in a MIG](https://docs.cloud.google.com/compute/docs/instance-groups/turn-off-vm-repairs-in-mig).
+
+---
 ## 2026-06-23
 
 ### Feature

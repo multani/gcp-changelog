@@ -2,10 +2,6 @@
 
 ## 2026-06-25
 
-### Announcement
-
-
-
 ### Release 7.0.0-preview.2.1 (Public Preview)
 
 

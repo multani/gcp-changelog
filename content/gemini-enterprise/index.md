@@ -1,5 +1,18 @@
 # Gemini Enterprise
 
+## 2026-06-26
+
+### Feature
+
+**Gemini Enterprise: Confluence Data Center federated data store**
+
+The Confluence Data Center federated data store is generally available
+(GA) in Gemini Enterprise.
+
+For more information, see
+[Confluence Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/confluence-dc).
+
+---
 ## 2026-06-25
 
 ### Feature
@@ -155,7 +168,7 @@ For more information, see:
 Gemini Enterprise administrators can integrate Gemini Enterprise with Slack to
 deliver AI-powered answers and search directly to users in their Slack
 workspace. Once integrated, users can interact with Gemini Enterprise through
-direct messages, slash commands, and channel mentions to receive answers that
+direct messages and slash commands to receive answers that
 incorporate data from all connected data stores.
 
 This feature is generally available (GA). For more information, see

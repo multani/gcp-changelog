@@ -1,5 +1,115 @@
 # Google SecOps Marketplace
 
+## 2026-06-25
+
+### Feature
+
+**Palo Alto Cortex XDR**: Version 30.0
+
+* The following new action has been added:
+
+  + **Download File**
+
+### Feature
+
+**CyberArk PAM**: Version 11.0
+
+* The following new action has been added:
+
+  + **Change Account Password**
+
+### Change
+
+**Siemplify**: Version 110.0
+
+* Updated results processing logic to cleanly escape backslashes in the
+  following action:
+
+  + **Create Gemini Case Summary**
+
+### Change
+
+**Secret Manager**: Version 2.0
+
+* Updated action description in the following action:
+
+  + **Ping**
+
+### Change
+
+**CrowdStrike Falcon**: Version 77.0
+
+* Updated syncing logic to support multiple CrowdStrike alert IDs mapped to a
+  single SecOps alert and improved error handling for alert ID context values in
+  the following connector:
+
+  + **Sync Alerts**
+
+### Change
+
+**Azure Active Directory**: Version 29.0
+
+* Updated error handling for sign-in activity retrieval in the following action:
+
+  + **Enrich User**
+
+### Change
+
+**Google Cloud Compute**: Version 19.0
+
+* Refactored action code in the following actions:
+
+  + **Add IP To Firewall Rule**
+  + **Remove external IP addresses**
+  + **Execute VM Patch Job**
+  + **Update Firewall Rule**
+
+### Change
+
+**VirusTotalV3**: Version 41.0
+
+* Updated Predefined Widgets to fix cached fallback rendering in the following
+  actions:
+
+  + **Enrich Hash**
+  + **Enrich IOC**
+  + **Enrich IP**
+  + **Enrich URL**
+  + **Get Domain Details**
+
+### Change
+
+**Google Threat Intelligence**: Version 16.0
+
+* Updated Predefined Widgets to optimize loading performance and aligned layouts
+  to prevent visual shifts in the following actions:
+
+  + **Enrich Entities**
+  + **Enrich IOCs**
+
+### Change
+
+**EmailV2**: Version 42.0
+
+* Updated default values for IMAP server address, port, username, and password
+  for the following connector:
+
+  + **Generic IMAP Email Connector**
+
+### Change
+
+**FireEye Helix**: Version 20.0
+
+* Added Trellix IAM OAuth authentication support.
+
+### Change
+
+**FireEye ETP**: Version 9.0
+
+* Added Trellix OAuth support, updated public API endpoints to v2, and removed
+  legacy V1 API support.
+
+---
 ## 2026-06-17
 
 ### Feature

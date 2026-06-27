@@ -1,5 +1,38 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-26
+
+### Feature
+
+
+
+### New Provisioned Throughput features
+
+The following Provisioned Throughput features are generally available:
+
+* **Change an order**: See [Change a standard Provisioned Throughput
+  order](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput#change-order).
+* **Schedule a new order**: Set a start date and time when you create an
+  order. See [Place a standard Provisioned Throughput
+  order](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput#place-an-order).
+* **Schedule a change to an order**: Set a start date and time when you
+  change an order. See [Change a standard Provisioned Throughput
+  order](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput#change-order).
+* **Split an order**: Divide an active order into two orders. See [Split an
+  order](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput#split-order).
+
+---
+## 2026-06-25
+
+### Announcement
+
+**Administrative correction to Gemini Online Inference API on Gemini Enterprise Agent Platform SLA**
+
+We made an administrative correction to the Gemini Online Inference API on
+Gemini Enterprise Agent Platform [Service Level Agreement (SLA)](https://cloud.google.com/vertex-ai/generative-ai/sla?e=48754805),
+addressing a clerical issue.
+
+---
 ## 2026-06-24
 
 ### Feature

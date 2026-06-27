@@ -1,5 +1,19 @@
 # Cloud Monitoring
 
+## 2026-06-25
+
+### Feature
+
+Support for applying role-based access controls (RBAC) to
+Cloud Monitoring dashboards and alerting policies using Tags is
+[generally available](https://docs.cloud.google.com/products#product-launch-stages).
+
+You can use Tags to protect Terraform-managed
+Cloud Monitoring resources and configure team-scoped access. For more
+information, see
+[Use Tags to control access to resources](https://docs.cloud.google.com/monitoring/docs/access-control-with-tags).
+
+---
 ## 2026-06-22
 
 ### Feature

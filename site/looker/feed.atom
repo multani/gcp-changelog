@@ -23,6 +23,18 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:1</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-expression-asst">Gemini Expression Assistant</a> preview feature has been updated to increase performance.</p>
+<p><strong>Note:</strong> This item was updated on June 26, 2026 to indicate support for Looker (original) only.</p>]]></content>
+    <summary>The Gemini Expression Assistant preview feature has been updated to improve performance. This update specifically enhances functionality for Looker (original) users.</summary>
+    <title>Feature: Gemini Expression Assistant Performance Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:2</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New in Looker 26.10, Looker project deployments have transitioned from a synchronous to an asynchronous process to improve reliability and efficiency. Deployments now run as background processes. Instead of waiting for a deployment to finish, the system immediately returns a deployment ID, allowing you to continue your work without being blocked. In addition, the Looker IDE's <strong>Deploy</strong> tab is visible for all LookML projects, not just for projects where <a href="https://docs.cloud.google.com/looker/docs/advanced-deploy-mode">advanced deploy mode</a> is enabled. For projects where advanced deploy mode is disabled, when a LookML developer <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#deploying_to_production">deploys to production</a>, the Looker IDE displays a confirmation that the deployment was submitted. The confirmation dialog has a <strong>Go to Deployment Manager</strong> button, which you can click to open the <strong>Deploy</strong> tab in the IDE and see the status of your recent deployments.</p>
 <p><strong>Note:</strong> This item was added on June 23, 2026.</p>]]></content>
     <summary>Looker 26.10 updates project deployments to an asynchronous process, enhancing reliability and user efficiency. Deployments now run in the background, returning a deployment ID immediately so you can keep working. The Deploy tab is now universally available in the IDE for all LookML projects.</summary>
@@ -32,75 +44,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:2</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the <code>import_locale_defs: yes</code> statement to the <code>localization_settings</code> parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>]]></content>
-    <summary>Model localization is now in preview for imported projects. You can choose to use only the importing project's locale definitions or merge them with the imported project's definitions by modifying your manifest file. Refer to the documentation for detailed instructions.</summary>
-    <title>Feature: Model Localization Preview for Imported Projects</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:3</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Dashboard editors can now enable the <a href="https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#preserve-dashboard-layout"><strong>Preserve desktop layout</strong></a> setting to preserve the layout of a dashboard when users view the dashboard in a smaller browser or on a mobile screen. Users can navigate the dashboard with a zoom slider that enlarges tiles, and they can <a href="https://docs.cloud.google.com/looker/docs/mobile-app-viewing-dashboards#viewing_new_dashboards_in_the_app">switch between desktop and mobile view</a>.</p>]]></content>
-    <summary>Dashboard editors can now enable the 'Preserve desktop layout' setting. This ensures dashboards maintain their intended appearance on smaller screens, with users able to zoom and switch views as needed.</summary>
-    <title>Feature: Preserve dashboard layout on smaller screens</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:4</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>When you <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#publish_as_db_analytic_model">publish an in-database analytic model as a stable model on your database</a>, you can now view its stable name in the <strong>Stable Name</strong> field of the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-database-pdts#pdt_details_modal"><strong>PDT Details</strong> modal</a> on the <strong>Persistent Derived Tables</strong> admin page. You can then use the stable name to query the published analytic model. See the <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#pdt_details_modal"><code>derived_analytic_model</code></a> parameter page for more information.</p>
-<p><strong>Note:</strong> This item was added on June 26, 2026.</p>]]></content>
-    <summary>You can now see the stable name of in-database analytic models within the PDT Details modal. This allows you to easily query your published models using their stable names. Refer to the derived_analytic_model parameter documentation for more details.</summary>
-    <title>Feature: View stable model names for in-database analytics</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:5</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> suites can now be configured to <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#schedule-trigger">automatically run on a recurring schedule</a>.</p>]]></content>
-    <summary>CI suites can now be automatically triggered on a recurring schedule. This new feature allows for more streamlined and predictable deployment workflows.</summary>
-    <title>Feature: Automated CI Suite Scheduling</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:6</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content">Enhanced search</a> feature is now generally available.</p>]]></content>
-    <summary>The enhanced search feature, which helps you find saved content more easily, is now generally available. This improvement streamlines your content discovery process.</summary>
-    <title>Feature: Enhanced search is now available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:7</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The character limit for descriptions on dashboards and Looks has been increased to 2,000 characters, giving content creators the ability to add comprehensive descriptions, operational definitions, and notes to their dashboards and Looks to ensure that viewers fully understand the data context.</p>
-<p>This feature is available to any user with standard content editing rights (<a href="https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels">Edit content access level</a> or <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_dashboards"><code>save_dashboards</code></a> or <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_looks"><code>save_looks</code></a> permissions).</p>]]></content>
-    <summary>You can now add up to 2,000 characters to descriptions for dashboards and Looks. This allows for more detailed context and explanations for your viewers. This feature is available to users with standard content editing rights.</summary>
-    <title>Feature: Expanded Description Limits for Dashboards and Looks</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:8</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service"><strong>Self-service Explores</strong></a> feature has the following updates:</p>
@@ -115,7 +59,75 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:4</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the <code>import_locale_defs: yes</code> statement to the <code>localization_settings</code> parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>]]></content>
+    <summary>Model localization is now in preview for imported projects. You can choose to use only the importing project's locale definitions or merge them with the imported project's definitions by modifying your manifest file. Refer to the documentation for detailed instructions.</summary>
+    <title>Feature: Model Localization Preview for Imported Projects</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:5</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dashboard editors can now enable the <a href="https://docs.cloud.google.com/looker/docs/editing-user-defined-dashboards#preserve-dashboard-layout"><strong>Preserve desktop layout</strong></a> setting to preserve the layout of a dashboard when users view the dashboard in a smaller browser or on a mobile screen. Users can navigate the dashboard with a zoom slider that enlarges tiles, and they can <a href="https://docs.cloud.google.com/looker/docs/mobile-app-viewing-dashboards#viewing_new_dashboards_in_the_app">switch between desktop and mobile view</a>.</p>]]></content>
+    <summary>Dashboard editors can now enable the 'Preserve desktop layout' setting. This ensures dashboards maintain their intended appearance on smaller screens, with users able to zoom and switch views as needed.</summary>
+    <title>Feature: Preserve dashboard layout on smaller screens</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:6</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#publish_as_db_analytic_model">publish an in-database analytic model as a stable model on your database</a>, you can now view its stable name in the <strong>Stable Name</strong> field of the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-database-pdts#pdt_details_modal"><strong>PDT Details</strong> modal</a> on the <strong>Persistent Derived Tables</strong> admin page. You can then use the stable name to query the published analytic model. See the <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#pdt_details_modal"><code>derived_analytic_model</code></a> parameter page for more information.</p>
+<p><strong>Note:</strong> This item was added on June 26, 2026.</p>]]></content>
+    <summary>You can now see the stable name of in-database analytic models within the PDT Details modal. This allows you to easily query your published models using their stable names. Refer to the derived_analytic_model parameter documentation for more details.</summary>
+    <title>Feature: View stable model names for in-database analytics</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:7</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> suites can now be configured to <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#schedule-trigger">automatically run on a recurring schedule</a>.</p>]]></content>
+    <summary>CI suites can now be automatically triggered on a recurring schedule. This new feature allows for more streamlined and predictable deployment workflows.</summary>
+    <title>Feature: Automated CI Suite Scheduling</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:8</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content">Enhanced search</a> feature is now generally available.</p>]]></content>
+    <summary>The enhanced search feature, which helps you find saved content more easily, is now generally available. This improvement streamlines your content discovery process.</summary>
+    <title>Feature: Enhanced search is now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:9</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The character limit for descriptions on dashboards and Looks has been increased to 2,000 characters, giving content creators the ability to add comprehensive descriptions, operational definitions, and notes to their dashboards and Looks to ensure that viewers fully understand the data context.</p>
+<p>This feature is available to any user with standard content editing rights (<a href="https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels">Edit content access level</a> or <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_dashboards"><code>save_dashboards</code></a> or <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_looks"><code>save_looks</code></a> permissions).</p>]]></content>
+    <summary>You can now add up to 2,000 characters to descriptions for dashboards and Looks. This allows for more detailed context and explanations for your viewers. This feature is available to users with standard content editing rights.</summary>
+    <title>Feature: Expanded Description Limits for Dashboards and Looks</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:10</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker admins can now programmatically change the owner of dashboards, boards, and agents with the <a href="https://docs.cloud.google.com/looker/docs/reference/looker-api/latest">Looker API</a> by updating the associated user ID. This simplifies offboarding and content reassignment when users change roles or leave the organization.</p>
@@ -129,7 +141,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:11</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#filters_as_tiles">Filters as tiles and tile-level filter context</a> feature lets you convert dashboard filters into draggable tiles on the dashboard canvas. A dashboard editor can then drag and arrange filter tiles on the dashboard canvas in the same way as other dashboard tiles. To enable this feature, a Looker admin must turn on the <strong>Filters as tiles and tile-level filter context</strong> setting on the <strong>Previews</strong> admin page.</p>
@@ -141,7 +153,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:12</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/google-map-options">Google Maps</a> enhancements feature adds the following features:</p>
@@ -157,23 +169,12 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:13</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="custom-looker-visualization-gemini">Visualization Assistant</a> is now available in the <a href="https://docs.cloud.google.com/looker/docs/editing-visualizations-new-explore-experience#using_the_visualization_assistant_in_the_new_explore_experience">new Explore experience</a>.</p>]]></content>
     <summary>The new Visualization Assistant is now available in the Looker Explore experience. This feature helps you create visualizations more easily and efficiently.</summary>
     <title>Feature: Introducing the Visualization Assistant</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:13</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-expression-asst">Gemini Expression Assistant</a> preview feature has been updated to increase performance.</p>]]></content>
-    <summary>The Gemini Expression Assistant preview feature has been updated to improve its performance. This update focuses on making the tool faster and more responsive for users.</summary>
-    <title>Feature: Gemini Expression Assistant performance update</title>
   </entry>
   <entry>
     <author>

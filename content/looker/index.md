@@ -8,9 +8,22 @@ Starting June 22, 2026, the following features will begin rolling out as part of
 
 ### Feature
 
+The [Gemini Expression Assistant](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) preview feature has been updated to increase performance.
+
+**Note:** This item was updated on June 26, 2026 to indicate support for Looker (original) only.
+
+### Feature
+
 New in Looker 26.10, Looker project deployments have transitioned from a synchronous to an asynchronous process to improve reliability and efficiency. Deployments now run as background processes. Instead of waiting for a deployment to finish, the system immediately returns a deployment ID, allowing you to continue your work without being blocked. In addition, the Looker IDE's **Deploy** tab is visible for all LookML projects, not just for projects where [advanced deploy mode](https://docs.cloud.google.com/looker/docs/advanced-deploy-mode) is enabled. For projects where advanced deploy mode is disabled, when a LookML developer [deploys to production](https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#deploying_to_production), the Looker IDE displays a confirmation that the deployment was submitted. The confirmation dialog has a **Go to Deployment Manager** button, which you can click to open the **Deploy** tab in the IDE and see the status of your recent deployments.
 
 **Note:** This item was added on June 23, 2026.
+
+### Feature
+
+The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature has the following updates:
+
+* You can now [upload data from a BigQuery database table to create a self-service Explore](https://docs.cloud.google.com/looker/docs/exploring-self-service#bq-table).
+* Previously, on the Looker [**Self-service Explores** Admin page](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore), there was a single toggle to enable data uploads on the instance. If the **Data Uploads** toggle was enabled, and your Looker admin also [enabled the APIs to support Google Sheets uploads](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis), then data imports from Google Sheets were enabled on the instance. Starting in Looker 26.10, there is a separate toggle for **Google Sheets data import** to allow your Looker admin more granular control over the data uploads on the instance. Your Looker admin can't enable this toggle until after the Looker admin has enabled the the APIs to support Google Sheets uploads.
 
 ### Feature
 
@@ -42,13 +55,6 @@ This feature is available to any user with standard content editing rights ([Edi
 
 ### Feature
 
-The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/exploring-self-service) feature has the following updates:
-
-* You can now [upload data from a BigQuery database table to create a self-service Explore](https://docs.cloud.google.com/looker/docs/exploring-self-service#bq-table).
-* Previously, on the Looker [**Self-service Explores** Admin page](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore), there was a single toggle to enable data uploads on the instance. If the **Data Uploads** toggle was enabled, and your Looker admin also [enabled the APIs to support Google Sheets uploads](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis), then data imports from Google Sheets were enabled on the instance. Starting in Looker 26.10, there is a separate toggle for **Google Sheets data import** to allow your Looker admin more granular control over the data uploads on the instance. Your Looker admin can't enable this toggle until after the Looker admin has enabled the the APIs to support Google Sheets uploads.
-
-### Feature
-
 Looker admins can now programmatically change the owner of dashboards, boards, and agents with the [Looker API](https://docs.cloud.google.com/looker/docs/reference/looker-api/latest) by updating the associated user ID. This simplifies offboarding and content reassignment when users change roles or leave the organization.
 
 When the owner of a dashboard, a board, or an agent is changed, new owners are automatically granted [Manage/Edit access](https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels) to transferred agents. Any existing [certification badges](https://docs.cloud.google.com/looker/docs/content-certification) on transferred dashboards remain intact.
@@ -74,10 +80,6 @@ Now available in preview, the [Google Maps](https://docs.cloud.google.com/looker
 ### Feature
 
 The [Visualization Assistant](custom-looker-visualization-gemini) is now available in the [new Explore experience](https://docs.cloud.google.com/looker/docs/editing-visualizations-new-explore-experience#using_the_visualization_assistant_in_the_new_explore_experience).
-
-### Feature
-
-The [Gemini Expression Assistant](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) preview feature has been updated to increase performance.
 
 ### Feature
 

@@ -1,5 +1,15 @@
 # Google SecOps SOAR
 
+## 2026-06-28
+
+### Announcement
+
+**Remote Agents Version 2.6.7**
+
+Remote Agents Version 2.6.7 is now available. This release contains minor bug
+fixes.
+
+---
 ## 2026-06-27
 
 ### Announcement

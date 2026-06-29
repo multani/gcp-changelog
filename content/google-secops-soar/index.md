@@ -32,17 +32,6 @@ available for all regions.
 **Improved documentation portal navigation**
 
 Finding help is now easier! We've updated the navigation of our documentation portal to be primarily user-centric. Sections have been reorganized and renamed to align with your workflows, providing a logical path through the documentation.
-Navigation is focused around these core stages of security operations, rather than product silos:
-
-* Discover
-* Get started
-* Administer
-* Build and integrate
-* Ingest
-* Detect
-* Analyze and respond
-* Automate
-* Monitor and troubleshoot
 
 We've also added:
 

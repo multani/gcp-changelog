@@ -1,5 +1,19 @@
 # Security Command Center
 
+## 2026-06-25
+
+### Change
+
+The Assured Open Source Software premium tier includes an updated list of curated
+binaries for the Go, Java, and Python languages.
+
+For more information, see [List of supported Java and Python packages for the
+Assured OSS premium
+tier](https://docs.cloud.google.com/security-command-center/docs/aoss-supported-packages-premium) and [List of supported
+Go packages for the Assured OSS premium
+tier](https://docs.cloud.google.com/security-command-center/docs/aoss-supported-packages-go-premium).
+
+---
 ## 2026-06-18
 
 ### Feature

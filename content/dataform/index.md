@@ -1,5 +1,16 @@
 # Dataform
 
+## 2026-06-29
+
+### Feature
+
+You can grant workflows
+[access to Bigtable, Google Drive, and Knowledge Catalog](https://docs.cloud.google.com/dataform/docs/schedule-runs)
+when running or scheduling them with your Google Account user credentials.
+Extended access options are available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-29
 
 ### Feature

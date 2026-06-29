@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-06-29
+
+### Feature
+
+You can now grant data preparations and pipelines access to additional
+services when running or scheduling them with user credentials
+for a Google Account. You can grant [data preparations access to Google Drive](https://docs.cloud.google.com/bigquery/docs/orchestrate-data-preparations),
+and [grant pipelines access to Google Drive, Bigtable, and Knowledge Catalog](https://docs.cloud.google.com/bigquery/docs/schedule-pipelines).
+Extended access options are available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-25
 
 ### Change

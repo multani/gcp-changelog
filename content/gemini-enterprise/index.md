@@ -4,6 +4,16 @@
 
 ### Feature
 
+**Gemini Enterprise: Jira Data Center federated data store**
+
+The Jira Data Center federated data store is generally available (GA) in
+Gemini Enterprise.
+
+For more information, see
+[Jira Data Center](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-dc).
+
+### Feature
+
 **Gemini Enterprise: Action-filtering support for Microsoft SharePoint and OneDrive data stores (Preview)**
 
 Filters configured on Microsoft SharePoint and Microsoft OneDrive federated data stores apply to both search queries and action execution. These filters let you specify which SharePoint sites and OneDrive paths are accessible to the Assistant; mutations or retrievals on out-of-scope data fail or return no results.

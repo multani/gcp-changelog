@@ -2630,6 +2630,11 @@
 <h1 id="gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</h1>
 <h2 id="2026-06-29">2026-06-29</h2>
 <h3 id="feature">Feature</h3>
+<p><strong>Gemini 3.5 Flash default model for Memory Bank</strong></p>
+<p>The default model used for Memory Bank generation is now Gemini 3.5 Flash
+instead of Gemini 2.5 Flash. For information, see
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/setup">Set up Memory Bank</a>.</p>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Semantic Governance Policies available in Public Preview</strong></p>
 <p>Semantic Governance Policies (SGP) and the SGP engine are now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. SGP provides an intelligent security and compliance layer that evaluates an AI agent's proposed tool calls against user intent and organizational business rules at runtime.</p>
 <p>Key capabilities include:</p>
@@ -2670,7 +2675,7 @@ Gemini Enterprise Agent Platform <a href="https://cloud.google.com/vertex-ai/gen
 addressing a clerical issue.</p>
 <hr />
 <h2 id="2026-06-24">2026-06-24</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>AI security findings in Agent Platform</strong></p>
 <p>Viewing AI security findings and posture management summaries in Gemini
 Enterprise Agent Platform is <a href="https://cloud.google.com/products#product-launch-stages">generally
@@ -2687,7 +2692,7 @@ including the following:</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/view-security-findings">View security
 findings</a>.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p><strong>Model Armor for Agent Gateway in General Availability</strong></p>
 <p>You can enable Model Armor on an Agent Gateway resource to apply your
 organization's content security guardrails to prompts and responses that pass
@@ -2708,12 +2713,12 @@ multi-region endpoints.</p>
 <p>See <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini-supervised-tuning">About supervised
 fine-tuning</a>
 for more information.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Provisioned Throughput support for supervised fine-tuned Gemini 3 model inference.</strong></p>
 <p>Provisioned Throughput can be used to assure supervised fine-tuned inference using the same quota. Supervised fine-tuned inference for Gemini 3 models incurs a higher burndown rate compared to base model inference. Learn more <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models#supervised-fine-tuned-model-support">here</a>.</p>
 <hr />
 <h2 id="2026-06-18">2026-06-18</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><strong>Agent Gateway in General Availability</strong></p>
 <p>Agent Gateway is the networking component of the Gemini
 Enterprise Agent Platform ecosystem. It secures and governs connectivity for
@@ -2721,7 +2726,7 @@ all agentic interactions, whether they occur between users and agents,
 agents and tools, or among agents themselves.</p>
 <p>For details, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview">Agent Gateway
 overview</a>.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Agent Observability is generally available (GA)</strong></p>
 <p>This release provides visibility into the performance, behavior, and health of deployed agents and Model Context Protocol (MCP) servers directly within the agent management workflow.</p>
 <p>Key updates in this release include:</p>
@@ -2736,7 +2741,7 @@ overview</a>.</p>
 <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/optimize/observability/traces">View agent traces</a></li>
 <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/tracing">Set up tracing</a></li>
 </ul>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>Agent Registry is generally available (GA)</strong></p>
 <p>Agent Registry is <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. Agent Registry is a centralized catalog for discovering and registering agents and Model Context Protocol (MCP) servers.</p>
 <p>The following features are available in Agent Registry for the GA launch stage:</p>
@@ -2751,7 +2756,7 @@ overview</a>.</p>
 <li><strong>Data Residency:</strong> If you configure the <a href="https://docs.cloud.google.com/organization-policy/restrict-locations">resource location constraint</a> in your organization policy, Agent Registry enforces the constraint when you register a resource. However, detective controls for data residency compliance reporting are limited.</li>
 </ul>
 <p>For more information, see the <a href="https://docs.cloud.google.com/agent-registry/overview">Agent Registry overview</a>.</p>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>The Agent Identity API (<code>agentidentity.googleapis.com</code>) is
 available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.
 This new API replaces the legacy IAM Connectors API
@@ -2763,7 +2768,7 @@ auth providers are automatically mirrored to the new V2 resource hierarchy
 client applications without downtime.</p>
 <hr />
 <h2 id="2026-06-17">2026-06-17</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><strong>Memory Bank and Sessions global and multi-regional endpoints GA</strong></p>
 <p>Memory Bank and Sessions support for multi-regional and global endpoints is now
 in General Availability (GA). For more information, see
@@ -2772,7 +2777,7 @@ Customer-Managed Encryption Keys (CMEK) cannot be used if your Memory Bank
 or Sessions instance is configured to use the global endpoint.</p>
 <hr />
 <h2 id="2026-06-15">2026-06-15</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><strong>Reinforcement Learning fine-tuning is available for Gemini 3.5 Flash in Public Preview</strong></p>
 <p>Reinforcement Learning fine-tuning is now available for the <code>gemini-3.5-flash</code> models in
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Model tuning
@@ -2782,7 +2787,7 @@ model serving is restricted to the <code>us</code> and <code>eu</code> multi-reg
 for more information.</p>
 <hr />
 <h2 id="2026-06-09">2026-06-09</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p><strong>Anthropic's Claude Fable 5</strong></p>
 <p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/fable-5">Claude Fable 5</a>
 is available in Model Garden.</p>
@@ -2809,7 +2814,7 @@ available. This includes both model serving and Provisioned Throughput. Use
 Gemini 3.1 Flash-Lite, Gemma 4, or more recent Gemini releases.</p>
 <hr />
 <h2 id="2026-05-28">2026-05-28</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image</strong></p>
 <p>Gemini Enterprise Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image
 are <a href="https://cloud.google.com/products#product-launch-stages">Generally
@@ -2851,13 +2856,13 @@ before July 17, 2026, to avoid service disruption.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Anthropic's Claude Opus 4.8</strong></p>
 <p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/opus-4-8">Claude Opus 4.8</a>
 is available in Model Garden.</p>
 <hr />
 <h2 id="2026-05-27">2026-05-27</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>User ID logging now included with agent logs when you opt in to "Enable logging of prompt inputs and response outputs"</strong></p>
 <p>Prompt input and response output logging now includes the
 <code>user.id</code> field. This addition allows better tracking of
@@ -2871,7 +2876,7 @@ agents and opt-in again for this setting to take effect.</p>
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/tracing#write-traces">Write traces for an agent</a>.</p>
 <hr />
 <h2 id="2026-05-26">2026-05-26</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>The Gemini Deep Research Agent released in Preview</strong></p>
 <p>The Gemini Deep Research Agent has been released in Preview. The Gemini Deep
 Research Agent is a managed AI agent that plans, executes, and synthesizes
@@ -2879,7 +2884,7 @@ complex, multi-step research workflows across the public web and private
 enterprise data to generate comprehensive, cited reports.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/use-deep-research">Use the Gemini Deep Research
 Agent</a>.</p>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><strong>Agent Platform Sandboxes</strong></p>
 <p>Additional Agent Platform <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox">sandbox</a>
 features are now available:</p>
@@ -2898,7 +2903,7 @@ features are now available:</p>
   Save the exact state of your sandbox environment (including dependencies and
   file systems) and restore it to a new sandbox.</li>
 </ul>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p><strong>Identify the agents with the most content security violations</strong></p>
 <p>The <strong>Security</strong> dashboard displays the top 10 agents with the most content
 violations detected by Model Armor. The list shows the agent ID of each
@@ -2929,17 +2934,17 @@ support the <code>MEDIA_RESOLUTION_ULTRA_HIGH</code> level.</p>
 </ul>
 <hr />
 <h2 id="2026-05-19">2026-05-19</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p><strong>Gemini 3.5 Flash is generally available (GA)</strong></p>
 <p>For details, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash">model specifications page</a>.</p>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p><strong>Manage agent revisions and traffic splitting</strong></p>
 <p>Agent revisions and traffic splitting are now available in public preview. You
 can create immutable revisions of deployed agents, and split traffic between the
 different active revisions. This enables canary deployments and safe testing of
 new agent versions. For more information, see
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/manage-revisions-and-traffic">Manage revisions and traffic</a>.</p>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p><strong>Manage and discover agent skills with Skill Registry</strong></p>
 <p>Manage and discover agent skills with the Skill Registry, in public preview.
 This secure, private, and low-latency repository stores skills as
@@ -2950,7 +2955,7 @@ enhance agent abilities.</p>
 <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry">Skill Registry overview</a></li>
 <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/skill-registry/create-manage">Create and manage skills</a></li>
 </ul>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p><strong>Managed Agents API on Agent Platform released in Preview</strong></p>
 <p>The Managed Agents API on Agent Platform has been released in Preview.</p>
 <p>This feature allows you to build and scale autonomous agents, including those
@@ -2964,10 +2969,10 @@ and can be interacted with via a dedicated API.</p>
 <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents/interact-with-agents">Interact with agents</a></li>
 <li><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/build/managed-agents/sandbox-environment">Managed Agents API on Agent Platform sandbox environment</a></li>
 </ul>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p><strong>AI Content Detection API available</strong></p>
 <p>AI Content Detection API is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For details see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/ai-content-detection">AI Content Detection</a>.</p>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p><strong>Provisioned Throughput for Gemini now supports latency SLA</strong></p>
 <p>Provisioned Throughput now provides a tokens per second latency SLA,
 covering generation speed from the first returned token to the last.</p>
@@ -2980,7 +2985,7 @@ covering generation speed from the first returned token to the last.</p>
 see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/agent-locations#multi-regional_and_global_endpoints">Supported locations for agents in Agent Platform</a>.</p>
 <hr />
 <h2 id="2026-05-15">2026-05-15</h2>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p><strong>Manage agent revisions and traffic splitting</strong></p>
 <p>Agent revisions and traffic splitting are now available in public preview. You
 can create immutable revisions of deployed agents, and split traffic between the
@@ -2989,7 +2994,7 @@ new agent versions. For more information, see
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/manage-revisions-and-traffic">Manage revisions and traffic</a>.</p>
 <hr />
 <h2 id="2026-05-14">2026-05-14</h2>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p><strong>Priority PayGo is generally available (GA)</strong></p>
 <p>Priority PayGo is a consumption option that provides more consistent performance
 than standard PayGo without the upfront commitment of Provisioned Throughput. It
@@ -3050,13 +3055,13 @@ Image Preview are introducing the following changes:</p>
 </ul>
 <hr />
 <h2 id="2026-04-28">2026-04-28</h2>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p><strong>Improved transcription quality for Gemini Live API</strong></p>
 <p>You can now improve transcription quality for multilingual automatic speech
 recognition (ASR) by using the
 <code>[input/output]_audio_transcription.language_codes</code> field.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/live-api/start-manage-session#enable-audio-transcription">Enable audio transcription for the session</a>.</p>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p><strong>Asynchronous function calling with Live API</strong></p>
 <p>Asynchronous function calling is now available in <a href="https://cloud.google.com/products#product-launch-stages">public
 preview</a> in

@@ -1,5 +1,31 @@
 # Secret Manager
 
+## 2026-06-19
+
+### Feature
+
+Secret Manager supports multi-region storage. You can choose between a single
+region or a multi-region location when you create a regional secret in the
+Google Cloud console.
+
+For more information, see [Create a regional secret](https://docs.cloud.google.com/secret-manager/regional-secrets/create-regional-secret).
+
+---
+## 2026-06-18
+
+### Feature
+
+Secret Manager is available in the following multi-regions:
+
+* United States (`us`)
+* European Union (`eu`)
+* Canada (`ca`)
+* India (`in`)
+
+For more information, see
+[Secret Manager locations](https://docs.cloud.google.com/secret-manager/docs/locations#location-mr).
+
+---
 ## 2026-05-20
 
 ### Feature

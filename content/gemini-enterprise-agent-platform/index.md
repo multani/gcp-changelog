@@ -1,5 +1,15 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-30
+
+### Feature
+
+**Anthropic's Claude Sonnet 5**
+
+[Claude Sonnet 5](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/sonnet-5)
+is available in Model Garden.
+
+---
 ## 2026-06-29
 
 ### Feature

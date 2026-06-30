@@ -23,6 +23,16 @@ This feature is in Public Preview. For more information, see:
 * [Set up a Microsoft SharePoint data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint/set-up-data-store) and [Add filters to a Microsoft SharePoint data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint/add-filters-to-sharepoint-data-store)
 * [Set up a Microsoft OneDrive data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-onedrive/set-up-data-store) and [Add filters to a Microsoft OneDrive data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-onedrive/add-filters-to-onedrive-data-store)
 
+### Feature
+
+**Gemini Enterprise: HubSpot federated data store**
+
+The HubSpot federated data store is generally available (GA) in Gemini
+Enterprise.
+
+For more information, see [Set up a HubSpot data
+store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hubspot/set-up-data-store).
+
 ---
 ## 2026-06-26
 

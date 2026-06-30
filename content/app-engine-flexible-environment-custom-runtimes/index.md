@@ -1,5 +1,13 @@
 # App Engine flexible environment custom runtimes
 
+## 2026-06-29
+
+### Feature
+
+Support for deploying your existing apps in the flexible environment to Cloud Run using
+the `gcloud beta app migrate-to-run` command is in [Preview](https://cloud.google.com/products/#product-launch-stages). For more information, see [Deploy an App Engine app in the flexible environment to Cloud Run](https://docs.cloud.google.com/appengine/migration-center/run/migrate-app-engine-flexible-to-run).
+
+---
 ## 2025-08-07
 
 ### Feature

@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2026-06-30
+
+### Feature
+
+**General Availability**: If a consumer VPC network uses an
+[RDMA network profile for Falcon VPC networks](https://docs.cloud.google.com/vpc/docs/rdma-network-profiles#falcon-supported-features),
+a single Compute Engine instance can connect to it by using multiple virtual
+Private Service Connect interfaces.
+
+For more information, see
+[Create VMs with Private Service Connect interfaces](https://docs.cloud.google.com/vpc/docs/create-manage-private-service-connect-interfaces#create).
+
+---
 ## 2026-06-24
 
 ### Feature

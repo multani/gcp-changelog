@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2026-06-29
+
+### Feature
+
+Alerting policies based on PromQL queries can now operate over more than
+25 hours of data. For more information, see
+[Query over 2 years of metric data](https://docs.cloud.google.com/monitoring/alerts/using-promql#promql-2years)
+and [Limits for alerting](https://docs.cloud.google.com/monitoring/quotas#alerting_uptime_limits).
+
+---
 ## 2026-06-25
 
 ### Feature

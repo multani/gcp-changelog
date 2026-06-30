@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2026-06-29
+
+### Change
+
+reCAPTCHA Mobile SDK v18.9.2 is available for Android. This version
+includes minor bug fixes.
+
+---
 ## 2026-06-04
 
 ### Change

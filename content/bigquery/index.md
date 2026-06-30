@@ -2,6 +2,19 @@
 
 ## 2026-06-29
 
+### Change
+
+Effective *March 9, 2026*, new users are required to have a Cloud Billing
+account to use the [BigQuery Migration Service](https://docs.cloud.google.com/bigquery/docs/migration-intro).
+This change applies to users starting new projects using BigQuery Migration
+Service features, such as SQL translation and migration assessment.
+
+After *May 18, 2026*, all users are required to have a Cloud Billing account to
+use the BigQuery Migration Service.
+
+[Pricing for the BigQuery Migration Service](https://docs.cloud.google.com/bigquery/docs/migration-intro#pricing)
+remains without charge.
+
 ### Feature
 
 You can now grant data preparations and pipelines access to additional

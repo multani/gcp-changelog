@@ -1,5 +1,24 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-06-29
+
+### Feature
+
+**Semantic Governance Policies available in Public Preview**
+
+Semantic Governance Policies (SGP) and the SGP engine are now available in [Preview](https://cloud.google.com/products#product-launch-stages). SGP provides an intelligent security and compliance layer that evaluates an AI agent's proposed tool calls against user intent and organizational business rules at runtime.
+
+Key capabilities include:
+
+* **Natural Language Constraints (NLC):** Author declarative business rules and security guardrails in plain English without needing to write code or redeploy agent applications.
+* **Layered Intent Gating:** Intercepts agent tool calls at runtime to verify alignment with trusted user intent and prevent unauthorized actions, rogue tool use, and data exfiltration.
+* **Granular Scoping:** Apply constraints globally across all tools for an agent or target specific tools and parameters (e.g., enforcing strict financial limits or geographic restrictions).
+* **Agent Skills Lifecycle Governance:** Protects agents from context poisoning and supply-chain exploits by governing the dynamic loading of Agent Skills (tool packages) during sessions.
+* **Dry Run Mode:** Test and observe policy verdicts in Log Explorer before enforcing them on active traffic.
+
+For more information, see [Semantic governance policies overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/semantic-governance-overview).
+
+---
 ## 2026-06-26
 
 ### New Provisioned Throughput features

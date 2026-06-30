@@ -1,5 +1,50 @@
 # Cloud Service Mesh
 
+## 2026-06-29
+
+### Security
+
+**1.29.5-asm.5 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains the fix for the security vulnerability listed in
+[GCP-2026-045](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-045).
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.29.5-asm.5 uses Envoy v1.37.5.
+
+### Security
+
+**1.28.9-asm.4 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains the fix for the security vulnerability listed in
+[GCP-2026-045](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-045).
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade). Cloud Service
+Mesh 1.28.9-asm.4 uses Envoy v1.36.9.
+
+### Security
+
+**1.27.9-asm.9 is now available for in-cluster Cloud Service Mesh.**
+
+This patch release contains the fix for the security vulnerability listed in
+[GCP-2026-045](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-045).
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.27/docs/upgrade/upgrade). Cloud Service
+Mesh 1.27.9-asm.9 uses Envoy v1.35.13.
+
+### Security
+
+Proxy version csm\_mesh\_proxy.csm\_mesh\_proxy.20260624e\_RC01 for Gateway API on
+GKE clusters is rolling out to all Managed Cloud Service Mesh release channels
+over the next week.
+
+This patch release contains the fixes for the security vulnerabilities listed in
+[GCP-2026-040](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-040).
+
+---
 ## 2026-06-23
 
 ### Security

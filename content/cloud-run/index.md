@@ -1,5 +1,16 @@
 # Cloud Run
 
+## 2026-06-29
+
+### Feature
+
+Deploy a highly available, multi-region Cloud Run service with automated failover and failback for internal and external traffic using [Cloud Run service health](https://docs.cloud.google.com/run/docs/configuring/configure-service-health) in [General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+[Configure HTTP and gRPC readiness probes](https://docs.cloud.google.com/run/docs/configuring/configure-service-health) for your Cloud Run services is in [General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-20
 
 ### Feature

@@ -1,5 +1,18 @@
 # Cloud Trace
 
+## 2026-06-29
+
+### Feature
+
+Google Cloud Observability has expanded the supported locations for observability buckets,
+which store your trace data, to include the following:
+
+* europe-west9
+
+For a list of supported locations, see
+[Locations for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/observability-bucket-locations).
+
+---
 ## 2026-06-18
 
 ### Feature

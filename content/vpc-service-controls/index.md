@@ -1,5 +1,19 @@
 # VPC Service Controls
 
+## 2026-06-29
+
+### Feature
+
+**VPC Service Controls feature:** Support for using the following identities in
+ingress and egress rules to allow access to resources protected by a service
+perimeter is [generally available](https://cloud.google.com/products#product-launch-stages):
+
+* Agent identities
+* SPIFFE formats for third-party workforce and workload identities
+
+For more information, see [Configure identity groups and third-party identities in ingress and egress rules](https://docs.cloud.google.com/vpc-service-controls/docs/configure-identity-groups) and [Supported identities for ingress and egress rules](https://docs.cloud.google.com/vpc-service-controls/docs/supported-identities).
+
+---
 ## 2026-06-24
 
 ### Feature

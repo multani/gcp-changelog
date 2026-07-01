@@ -1,5 +1,27 @@
 # Gemini Enterprise
 
+## 2026-06-30
+
+### Feature
+
+**Gemini Enterprise: Support for India and Singapore regions (GA with
+allowlist)**
+
+You can use the Gemini Enterprise app in the India (`IN`) and Singapore
+(`SG`) regions with at-rest data
+residency (DRZ) and machine learning processing (MLP) in region. You can
+also use the latest Gemini 3.5 Flash model in these regions with
+in-region at-rest DRZ and MLP.
+
+These locations are available in GA with allowlist. To get access to these
+locations for use with Gemini Enterprise or NotebookLM Enterprise,
+contact your Google account team.
+
+Certain limitations apply when using these regions. For more information,
+see [Data residency for Gemini Enterprise Standard and Plus
+Editions](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+
+---
 ## 2026-06-29
 
 ### Feature

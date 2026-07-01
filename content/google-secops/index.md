@@ -1,5 +1,18 @@
 # Google SecOps
 
+## 2026-06-30
+
+### Announcement
+
+**[Spotlight Feature] Unified rules interface**
+
+The new rules interface is now available in public preview. The Google SecOps unified rules interface brings custom and curated rule management into a single, cohesive workflow. This optimizes detection engineering with a redesigned dashboard, an advanced rule editor, and expanded API capabilities to streamline rule deployment and troubleshooting.
+
+You can still revert to the legacy experience. At the top right of the screen, click **Switch to the legacy experience**.
+
+For more information about the Unified rules interface, see [Manage unified rules](https://docs.cloud.google.com/chronicle/docs/detection/unified-rules/manage-unified-rules).
+
+---
 ## 2026-06-28
 
 ### Change

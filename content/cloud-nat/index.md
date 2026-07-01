@@ -1,5 +1,14 @@
 # Cloud NAT
 
+## 2026-06-30
+
+### Feature
+
+**Preview**: Cloud NAT gateways for Private NAT support IPv6 to IPv4 network
+address translation. For more information, see
+[NAT64 in Private NAT](https://docs.cloud.google.com/nat/docs/private-nat#nat64).
+
+---
 ## 2026-04-13
 
 ### Feature

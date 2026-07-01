@@ -1,0 +1,199 @@
+{
+  "name": "575.0.0 (2026-06-30)",
+  "entries": {
+    "2026-06-30": [
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Added `any-reservation-then-fail` argument for flag `--reservation-affinity`\n  in `gcloud container clusters node-pools create`.",
+        "summary": {
+          "title": "gcloud container clusters: node-pool reservation option",
+          "summary": "The `gcloud container clusters node-pools create` command now supports the `--reservation-affinity` flag with the new `any-reservation-then-fail` argument. This allows for more flexible control over node pool reservations."
+        }
+      },
+      {
+        "kind": "Agent Registry",
+        "content": "* Added `gcloud agent-registry` command group to manage Agent Registry resources.",
+        "summary": {
+          "title": "Agent Registry commands added",
+          "summary": "You can now manage Agent Registry resources directly from the command line. The new `gcloud agent-registry` command group provides access to these management capabilities."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Added `--failover` flag to `gcloud beta alloydb clusters promote` to support cross-region failover.",
+        "summary": {
+          "title": "AlloyDB cross-region failover support",
+          "summary": "New support for cross-region failover has been added to AlloyDB. This functionality is available via the `--failover` flag in the `gcloud beta alloydb clusters promote` command, enabling enhanced disaster recovery capabilities."
+        }
+      },
+      {
+        "kind": "Apigee",
+        "content": "* Added `gcloud apigee apis import` which allows customers to upload API Proxy\n  bundles in archive ZIP or feature template YAML format.",
+        "summary": {
+          "title": "Import API Proxies",
+          "summary": "You can now upload API Proxy bundles in ZIP or YAML format using the new `gcloud apigee apis import` command. This simplifies the process of deploying your APIs to Apigee."
+        }
+      },
+      {
+        "kind": "Artifact Registry",
+        "content": "* Expose the Registry URL in the output of `gcloud artifacts repositories describe` and in the output of `gcloud artifacts repositories create` (upon synchronous creation).",
+        "summary": {
+          "title": "Registry URL exposed in gcloud",
+          "summary": "The Registry URL is now exposed in the output of `gcloud artifacts repositories describe` and `gcloud artifacts repositories create` commands for easier access and management."
+        }
+      },
+      {
+        "kind": "Assured Workloads",
+        "content": "* Added `SWITZERLAND_DATA_BOUNDARY_WITH_ACCESS_JUSTIFICATIONS` option to `--compliance-regime` flag of `gcloud assured workloads create`.",
+        "summary": {
+          "title": "New Switzerland data boundary option",
+          "summary": "Assured Workloads now supports the Switzerland data boundary with access justifications. This new option, `SWITZERLAND_DATA_BOUNDARY_WITH_ACCESS_JUSTIFICATIONS`, can be used when creating new workloads via the `gcloud assured workloads create` command."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Added `gcloud biglake hive tables create` to beta.",
+        "summary": {
+          "title": "BigLake Hive tables creation now in beta",
+          "summary": "The `gcloud biglake hive tables create` command has been added to beta. This new feature allows for easier creation of Hive tables within BigLake."
+        }
+      },
+      {
+        "kind": "Cloud Access Context Manager",
+        "content": "* Exposed `--service-account` and `--service-account-project-number` for `gcloud access-context-manager cloud-bindings` commands in the GA track.",
+        "summary": {
+          "title": "New options for cloud bindings",
+          "summary": "The `gcloud access-context-manager cloud-bindings` command now supports `--service-account` and `--service-account-project-number` flags. These options are available in the GA track for enhanced control over cloud resource access."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable",
+        "content": "* Added support for `--tags` flag to `gcloud bigtable instances create` to allow binding tags on instance creation.",
+        "summary": {
+          "title": "Bigtable instance tagging support",
+          "summary": "You can now bind tags to Bigtable instances when creating them using the new --tags flag in the gcloud bigtable instances create command. This feature simplifies resource management and organization by allowing you to categorize and label your Bigtable instances directly upon creation."
+        }
+      },
+      {
+        "kind": "Cloud Data Lineage",
+        "content": "* Added `gcloud datalineage processes` command group to manage data lineage processes.",
+        "summary": {
+          "title": "Manage data lineage processes",
+          "summary": "A new command group, `gcloud datalineage processes`, has been added. This allows you to manage data lineage processes directly from the command line."
+        }
+      },
+      {
+        "kind": "Cloud Dataproc",
+        "content": "* Added `--master-machine-types` flag in `gcloud dataproc clusters create`.",
+        "summary": {
+          "title": "Cloud Dataproc cluster creation update",
+          "summary": "The `gcloud dataproc clusters create` command now supports the `--master-machine-types` flag, allowing for more flexible configuration of master node machine types when creating clusters."
+        }
+      },
+      {
+        "kind": "Cloud IAM",
+        "content": "* Updated `gcloud iam service-accounts create` to print the created service account's email address.",
+        "summary": {
+          "title": "Service account creation update",
+          "summary": "The `gcloud iam service-accounts create` command now prints the email address of the newly created service account. This streamlines the process of identifying and using your service accounts after creation."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Made the `FILE` positional argument optional for all `gcloud run * replace` commands, defaulting to their respective standard filenames if not specified.\n* Promoted regional inference to beta for Cloud Run services, jobs, and worker\n  pools. When `--region` or the `run/region` property is not specified, the\n  command line looks for a resource with that name in all regions.\n* Added `--sandbox-launcher` flag to `gcloud beta run deploy` and\n  `gcloud beta run services update` to allow setting a container as sandbox\n  launcher.\n* Promoted `--workdir` flag for `gcloud run` commands to GA.\n* Promoted interactive project prompt when project is not specified in `gcloud run deploy` to GA.\n* Promoted suggesting project and region from Artifact Registry URL in `gcloud run deploy` to GA.\n* Added `--tail` flag to `gcloud beta run jobs execute` to tail logs\n  of the running execution.\n* Added `--dry-run` flag to `gcloud beta run deploy`,\n  `gcloud beta run services update`, `gcloud beta run services delete`,\n  `gcloud beta run worker-pools deploy`, `gcloud beta run worker-pools update`,\n  and `gcloud beta run worker-pools delete` to validate configuration without\n  persisting changes.\n* Added `gcloud run jobs executions describe-latest` command to describe the latest execution of a job.\n* Call out proxy when deploying or updating services with `gcloud run deploy` or `gcloud run services update` that require authentication in all tracks.",
+        "summary": {
+          "title": "Cloud Run: New CLI features",
+          "summary": "The Cloud Run CLI now offers more flexibility with optional arguments and new flags for enhanced control and validation. Key updates include making the FILE argument optional, promoting regional inference and the --workdir flag to GA, and introducing a --dry-run flag for configuration validation."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Added `--user` and `--password-secret-version` to `gcloud sql instances execute-sql`.",
+        "summary": {
+          "title": "Easier SQL execution in Cloud SQL",
+          "summary": "You can now use `--user` and `--password-secret-version` flags with `gcloud sql instances execute-sql` for more secure and flexible SQL command execution. This simplifies managing credentials when running SQL commands against your Cloud SQL instances."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* Added download validation via MD5 hash and checksumming for streaming downloads in `gcloud storage cp`, `gcloud storage mv` and `gcloud storage cat` commands, see <https://docs.cloud.google.com/storage/docs/streaming-downloads>.\n* Updated `gcloud storage cp` command to support streaming uploads with objects in RAPID storage see <https://docs.cloud.google.com/storage/docs/streaming-uploads>.\n* Updated `gcloud storage cp` and `gcloud storage mv` commands to support streaming downloads with objects in RAPID storage see <https://docs.cloud.google.com/storage/docs/streaming-downloads>.\n* Updated `gcloud storage cat` to support Rapid Bucket see <https://docs.cloud.google.com/storage/docs/rapid/rapid-bucket>.",
+        "summary": {
+          "title": "Cloud Storage download and upload improvements",
+          "summary": "New features in Cloud Storage enhance download and upload capabilities. You can now validate downloads using MD5 hashes for streaming downloads and benefit from improved streaming upload support for objects in RAPID storage."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Promoted `--pd-disk-size` flag of `gcloud workstations update` to GA.",
+        "summary": {
+          "title": "Cloud Workstations disk size updates",
+          "summary": "The --pd-disk-size flag for updating Cloud Workstations is now generally available. This allows you to easily configure persistent disk sizes for your workstations. You can now manage your workstation storage more effectively."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Users must supply a staticNodeCount if they want one. This no longer defaults\n  to 1.",
+        "summary": {
+          "title": "Cluster Director: Static Node Count Required",
+          "summary": "Cluster Director now requires users to explicitly provide a staticNodeCount. The default value of 1 is no longer applied, ensuring clarity and control over cluster configurations."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `gcloud alpha compute instance-groups managed configure-accelerator-topologies` command to configure accelerator topologies of a managed instance group.\n* Added `gcloud compute instances set-machine-resources` command to allow setting machine resources for a virtual machine instances in alpha, beta, and GA.\n* Added `test-iam-permissions` command to `gcloud compute storage-pools` to return permissions that a caller has on the specified storage pool.\n* Added `gcloud compute reservations sub-blocks set-iam-policy` command to beta and GA release tracks.\n* Added `gcloud compute reservations blocks set-iam-policy` command to set IAM policy on a reservation block in beta, preview, and GA.\n* Promoted support for `gcloud compute instance-groups managed resize-requests create` for regional MIG to GA.\n* Promoted support for `gcloud compute instance-groups managed resize-requests cancel` for regional MIG to GA.\n* Promoted support for `gcloud compute instance-groups managed resize-requests delete` for regional MIG to GA.\n* Promoted support for `gcloud compute instance-groups managed resize-requests describe` for regional MIG to GA.\n* Promoted support for `gcloud compute instance-groups managed resize-requests list` for regional MIG to GA.\n* Added `gcloud compute instance-templates test-iam-permissions` command to test IAM permissions on an instance template in alpha, beta, GA, and preview.\n* Added `gcloud compute target-https-proxies set-quic-override` command in beta, preview, and GA.\n* Added `gcloud compute reservations test-iam-permissions` to test IAM permissions on Compute Engine reservations.\n* Added `gcloud compute network-attachments set-iam-policy` command to set IAM policy on a network attachment in alpha, beta, preview, and GA.\n* Added `gcloud compute instances list-referrers` command to alpha, beta, and GA\n  release tracks.\n* Added `gcloud compute reservations blocks test-iam-permissions` command to test IAM permissions on a reservation block in beta.\n* Added `gcloud compute interconnects attachments groups test-iam-permissions` command to test IAM permissions on an interconnect attachment group in beta, preview, and GA.\n* Added support for displaying dynamic fields (such as `TERMINATION_TIMESTAMP`) to `gcloud compute instance-groups managed list-instances` in GA.",
+        "summary": {
+          "title": "New Compute Engine Commands and Features",
+          "summary": "This update introduces several new gcloud commands for managing Compute Engine resources, including enhanced capabilities for instance groups, reservations, and network attachments. Key additions include commands for configuring accelerator topologies, setting machine resources, and testing IAM permissions across various Compute Engine resources. Support for regional managed instance group resize requests has been promoted to General Availability."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added `--source-database-name-override` flag to\n  `gcloud database-migration conversion-workspaces seed|update` to allow\n  overriding the database name for the seed operation.",
+        "summary": {
+          "title": "Database name override for seeding",
+          "summary": "A new flag, `--source-database-name-override`, has been added to `gcloud database-migration conversion-workspaces seed|update`. This flag allows users to specify a different database name for the seed operation, providing more flexibility in migration configurations."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Promoted `gcloud container fleet rollouts` to GA.\n* Promoted `gcloud container fleet rolloutsequences` to GA.",
+        "summary": {
+          "title": "Rollouts commands now generally available",
+          "summary": "The gcloud container fleet rollouts and rolloutsequences commands are now generally available. These commands provide enhanced capabilities for managing your GKE deployments."
+        }
+      },
+      {
+        "kind": "Kpt",
+        "content": "* Updated kpt to v1.0.0-beta.64. See <https://github.com/kptdev/kpt/releases/tag/v1.0.0-beta.64> for more details.",
+        "summary": {
+          "title": "kpt updated to v1.0.0-beta.64",
+          "summary": "kpt has been updated to version 1.0.0-beta.64. This release includes various improvements and bug fixes. For a comprehensive list of changes, please refer to the release notes."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Promoted GKE custom image flags (`--image` and `--image-project`)\n  to GA, making them publicly visible in\n  `gcloud container clusters create`,\n  `gcloud container clusters create-auto`, and\n  `gcloud container node-pools create` (and `--image`/`--image-project`\n  in `gcloud container clusters upgrade`).\n* Added `stack-type` option to `--additional-node-network` flag of\n  `gcloud container node-pools create` to configure the stack type\n  (`ipv4`, `ipv4-ipv6`, or `ipv6`) for additional network interfaces.",
+        "summary": {
+          "title": "GKE image and network options now generally available",
+          "summary": "The custom image flags for GKE are now generally available, offering more control over your node images. Additionally, a new stack type option allows for flexible configuration of network interfaces on node pools."
+        }
+      },
+      {
+        "kind": "Network Management",
+        "content": "* Added `--source-cloud-run-job` flag to `gcloud network-management connectivity-tests`.",
+        "summary": {
+          "title": "Connectivity Test Enhancement",
+          "summary": "The `gcloud network-management connectivity-tests` command now supports the `--source-cloud-run-job` flag, allowing for more flexible network connectivity testing. This update enhances the ability to diagnose network issues by enabling tests to originate from Cloud Run jobs."
+        }
+      },
+      {
+        "kind": "Network Services",
+        "content": "* Updated `gcloud edge-cache services` import schemas to support specifying up to 100 allowed origins in `CORSPolicy.allowOrigins` and a client TTL of `0s` in `CDNPolicy.clientTtl`.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Edge Cache Services: Increased Origin Limits and Client TTL",
+          "summary": "The `gcloud edge-cache services` command now supports up to 100 allowed origins in `CORSPolicy.allowOrigins` and a client TTL of `0s` in `CDNPolicy.clientTtl`. These updates enhance flexibility for network service configurations."
+        }
+      }
+    ]
+  }
+}

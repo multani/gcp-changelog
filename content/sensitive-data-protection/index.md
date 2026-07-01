@@ -1,5 +1,15 @@
 # Sensitive Data Protection
 
+## 2026-06-29
+
+### Feature
+
+You can configure Sensitive Data Protection to detect specific file labels,
+which can represent Google Drive labels or Microsoft sensitivity labels. For
+more information, see [Create a custom metadata label
+detector](https://docs.cloud.google.com/sensitive-data-protection/docs/create-custom-infotypes-metadata-labels).
+
+---
 ## 2026-06-23
 
 ### Feature

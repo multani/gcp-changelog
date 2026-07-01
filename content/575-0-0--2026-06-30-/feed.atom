@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 575.0.0 (2026-06-30)</title>
+  <subtitle>Changelog for Google Cloud product: 575.0.0 (2026-06-30)</subtitle>
+  <updated>2026-06-30T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/575-0-0--2026-06-30-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:google cloud cli:0</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>any-reservation-then-fail</code> argument for flag <code>--reservation-affinity</code>
+  in <code>gcloud container clusters node-pools create</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud container clusters node-pools create` command now supports the `--reservation-affinity` flag with the new `any-reservation-then-fail` argument. This allows for more flexible control over node pool reservations.</summary>
+    <title>Google Cloud CLI: gcloud container clusters: node-pool reservation option</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:agent registry:1</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud agent-registry</code> command group to manage Agent Registry resources.</li>
+</ul>]]></content>
+    <summary>You can now manage Agent Registry resources directly from the command line. The new `gcloud agent-registry` command group provides access to these management capabilities.</summary>
+    <title>Agent Registry: Agent Registry commands added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:alloydb:2</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--failover</code> flag to <code>gcloud beta alloydb clusters promote</code> to support cross-region failover.</li>
+</ul>]]></content>
+    <summary>New support for cross-region failover has been added to AlloyDB. This functionality is available via the `--failover` flag in the `gcloud beta alloydb clusters promote` command, enabling enhanced disaster recovery capabilities.</summary>
+    <title>AlloyDB: AlloyDB cross-region failover support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:apigee:3</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud apigee apis import</code> which allows customers to upload API Proxy
+  bundles in archive ZIP or feature template YAML format.</li>
+</ul>]]></content>
+    <summary>You can now upload API Proxy bundles in ZIP or YAML format using the new `gcloud apigee apis import` command. This simplifies the process of deploying your APIs to Apigee.</summary>
+    <title>Apigee: Import API Proxies</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:artifact registry:4</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Expose the Registry URL in the output of <code>gcloud artifacts repositories describe</code> and in the output of <code>gcloud artifacts repositories create</code> (upon synchronous creation).</li>
+</ul>]]></content>
+    <summary>The Registry URL is now exposed in the output of `gcloud artifacts repositories describe` and `gcloud artifacts repositories create` commands for easier access and management.</summary>
+    <title>Artifact Registry: Registry URL exposed in gcloud</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:assured workloads:5</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>SWITZERLAND_DATA_BOUNDARY_WITH_ACCESS_JUSTIFICATIONS</code> option to <code>--compliance-regime</code> flag of <code>gcloud assured workloads create</code>.</li>
+</ul>]]></content>
+    <summary>Assured Workloads now supports the Switzerland data boundary with access justifications. This new option, `SWITZERLAND_DATA_BOUNDARY_WITH_ACCESS_JUSTIFICATIONS`, can be used when creating new workloads via the `gcloud assured workloads create` command.</summary>
+    <title>Assured Workloads: New Switzerland data boundary option</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:biglake:6</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud biglake hive tables create</code> to beta.</li>
+</ul>]]></content>
+    <summary>The `gcloud biglake hive tables create` command has been added to beta. This new feature allows for easier creation of Hive tables within BigLake.</summary>
+    <title>BigLake: BigLake Hive tables creation now in beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud access context manager:7</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Exposed <code>--service-account</code> and <code>--service-account-project-number</code> for <code>gcloud access-context-manager cloud-bindings</code> commands in the GA track.</li>
+</ul>]]></content>
+    <summary>The `gcloud access-context-manager cloud-bindings` command now supports `--service-account` and `--service-account-project-number` flags. These options are available in the GA track for enhanced control over cloud resource access.</summary>
+    <title>Cloud Access Context Manager: New options for cloud bindings</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud bigtable:8</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for <code>--tags</code> flag to <code>gcloud bigtable instances create</code> to allow binding tags on instance creation.</li>
+</ul>]]></content>
+    <summary>You can now bind tags to Bigtable instances when creating them using the new --tags flag in the gcloud bigtable instances create command. This feature simplifies resource management and organization by allowing you to categorize and label your Bigtable instances directly upon creation.</summary>
+    <title>Cloud Bigtable: Bigtable instance tagging support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud data lineage:9</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud datalineage processes</code> command group to manage data lineage processes.</li>
+</ul>]]></content>
+    <summary>A new command group, `gcloud datalineage processes`, has been added. This allows you to manage data lineage processes directly from the command line.</summary>
+    <title>Cloud Data Lineage: Manage data lineage processes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud dataproc:10</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--master-machine-types</code> flag in <code>gcloud dataproc clusters create</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud dataproc clusters create` command now supports the `--master-machine-types` flag, allowing for more flexible configuration of master node machine types when creating clusters.</summary>
+    <title>Cloud Dataproc: Cloud Dataproc cluster creation update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud iam:11</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud iam service-accounts create</code> to print the created service account's email address.</li>
+</ul>]]></content>
+    <summary>The `gcloud iam service-accounts create` command now prints the email address of the newly created service account. This streamlines the process of identifying and using your service accounts after creation.</summary>
+    <title>Cloud IAM: Service account creation update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud run:12</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Made the <code>FILE</code> positional argument optional for all <code>gcloud run * replace</code> commands, defaulting to their respective standard filenames if not specified.</li>
+<li>Promoted regional inference to beta for Cloud Run services, jobs, and worker
+  pools. When <code>--region</code> or the <code>run/region</code> property is not specified, the
+  command line looks for a resource with that name in all regions.</li>
+<li>Added <code>--sandbox-launcher</code> flag to <code>gcloud beta run deploy</code> and
+  <code>gcloud beta run services update</code> to allow setting a container as sandbox
+  launcher.</li>
+<li>Promoted <code>--workdir</code> flag for <code>gcloud run</code> commands to GA.</li>
+<li>Promoted interactive project prompt when project is not specified in <code>gcloud run deploy</code> to GA.</li>
+<li>Promoted suggesting project and region from Artifact Registry URL in <code>gcloud run deploy</code> to GA.</li>
+<li>Added <code>--tail</code> flag to <code>gcloud beta run jobs execute</code> to tail logs
+  of the running execution.</li>
+<li>Added <code>--dry-run</code> flag to <code>gcloud beta run deploy</code>,
+  <code>gcloud beta run services update</code>, <code>gcloud beta run services delete</code>,
+  <code>gcloud beta run worker-pools deploy</code>, <code>gcloud beta run worker-pools update</code>,
+  and <code>gcloud beta run worker-pools delete</code> to validate configuration without
+  persisting changes.</li>
+<li>Added <code>gcloud run jobs executions describe-latest</code> command to describe the latest execution of a job.</li>
+<li>Call out proxy when deploying or updating services with <code>gcloud run deploy</code> or <code>gcloud run services update</code> that require authentication in all tracks.</li>
+</ul>]]></content>
+    <summary>The Cloud Run CLI now offers more flexibility with optional arguments and new flags for enhanced control and validation. Key updates include making the FILE argument optional, promoting regional inference and the --workdir flag to GA, and introducing a --dry-run flag for configuration validation.</summary>
+    <title>Cloud Run: Cloud Run: New CLI features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud sql:13</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--user</code> and <code>--password-secret-version</code> to <code>gcloud sql instances execute-sql</code>.</li>
+</ul>]]></content>
+    <summary>You can now use `--user` and `--password-secret-version` flags with `gcloud sql instances execute-sql` for more secure and flexible SQL command execution. This simplifies managing credentials when running SQL commands against your Cloud SQL instances.</summary>
+    <title>Cloud SQL: Easier SQL execution in Cloud SQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud storage:14</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added download validation via MD5 hash and checksumming for streaming downloads in <code>gcloud storage cp</code>, <code>gcloud storage mv</code> and <code>gcloud storage cat</code> commands, see <a href="https://docs.cloud.google.com/storage/docs/streaming-downloads">https://docs.cloud.google.com/storage/docs/streaming-downloads</a>.</li>
+<li>Updated <code>gcloud storage cp</code> command to support streaming uploads with objects in RAPID storage see <a href="https://docs.cloud.google.com/storage/docs/streaming-uploads">https://docs.cloud.google.com/storage/docs/streaming-uploads</a>.</li>
+<li>Updated <code>gcloud storage cp</code> and <code>gcloud storage mv</code> commands to support streaming downloads with objects in RAPID storage see <a href="https://docs.cloud.google.com/storage/docs/streaming-downloads">https://docs.cloud.google.com/storage/docs/streaming-downloads</a>.</li>
+<li>Updated <code>gcloud storage cat</code> to support Rapid Bucket see <a href="https://docs.cloud.google.com/storage/docs/rapid/rapid-bucket">https://docs.cloud.google.com/storage/docs/rapid/rapid-bucket</a>.</li>
+</ul>]]></content>
+    <summary>New features in Cloud Storage enhance download and upload capabilities. You can now validate downloads using MD5 hashes for streaming downloads and benefit from improved streaming upload support for objects in RAPID storage.</summary>
+    <title>Cloud Storage: Cloud Storage download and upload improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cloud workstations:15</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--pd-disk-size</code> flag of <code>gcloud workstations update</code> to GA.</li>
+</ul>]]></content>
+    <summary>The --pd-disk-size flag for updating Cloud Workstations is now generally available. This allows you to easily configure persistent disk sizes for your workstations. You can now manage your workstation storage more effectively.</summary>
+    <title>Cloud Workstations: Cloud Workstations disk size updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:cluster director:16</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Users must supply a staticNodeCount if they want one. This no longer defaults
+  to 1.</li>
+</ul>]]></content>
+    <summary>Cluster Director now requires users to explicitly provide a staticNodeCount. The default value of 1 is no longer applied, ensuring clarity and control over cluster configurations.</summary>
+    <title>Cluster Director: Cluster Director: Static Node Count Required</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:compute engine:17</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud alpha compute instance-groups managed configure-accelerator-topologies</code> command to configure accelerator topologies of a managed instance group.</li>
+<li>Added <code>gcloud compute instances set-machine-resources</code> command to allow setting machine resources for a virtual machine instances in alpha, beta, and GA.</li>
+<li>Added <code>test-iam-permissions</code> command to <code>gcloud compute storage-pools</code> to return permissions that a caller has on the specified storage pool.</li>
+<li>Added <code>gcloud compute reservations sub-blocks set-iam-policy</code> command to beta and GA release tracks.</li>
+<li>Added <code>gcloud compute reservations blocks set-iam-policy</code> command to set IAM policy on a reservation block in beta, preview, and GA.</li>
+<li>Promoted support for <code>gcloud compute instance-groups managed resize-requests create</code> for regional MIG to GA.</li>
+<li>Promoted support for <code>gcloud compute instance-groups managed resize-requests cancel</code> for regional MIG to GA.</li>
+<li>Promoted support for <code>gcloud compute instance-groups managed resize-requests delete</code> for regional MIG to GA.</li>
+<li>Promoted support for <code>gcloud compute instance-groups managed resize-requests describe</code> for regional MIG to GA.</li>
+<li>Promoted support for <code>gcloud compute instance-groups managed resize-requests list</code> for regional MIG to GA.</li>
+<li>Added <code>gcloud compute instance-templates test-iam-permissions</code> command to test IAM permissions on an instance template in alpha, beta, GA, and preview.</li>
+<li>Added <code>gcloud compute target-https-proxies set-quic-override</code> command in beta, preview, and GA.</li>
+<li>Added <code>gcloud compute reservations test-iam-permissions</code> to test IAM permissions on Compute Engine reservations.</li>
+<li>Added <code>gcloud compute network-attachments set-iam-policy</code> command to set IAM policy on a network attachment in alpha, beta, preview, and GA.</li>
+<li>Added <code>gcloud compute instances list-referrers</code> command to alpha, beta, and GA
+  release tracks.</li>
+<li>Added <code>gcloud compute reservations blocks test-iam-permissions</code> command to test IAM permissions on a reservation block in beta.</li>
+<li>Added <code>gcloud compute interconnects attachments groups test-iam-permissions</code> command to test IAM permissions on an interconnect attachment group in beta, preview, and GA.</li>
+<li>Added support for displaying dynamic fields (such as <code>TERMINATION_TIMESTAMP</code>) to <code>gcloud compute instance-groups managed list-instances</code> in GA.</li>
+</ul>]]></content>
+    <summary>This update introduces several new gcloud commands for managing Compute Engine resources, including enhanced capabilities for instance groups, reservations, and network attachments. Key additions include commands for configuring accelerator topologies, setting machine resources, and testing IAM permissions across various Compute Engine resources. Support for regional managed instance group resize requests has been promoted to General Availability.</summary>
+    <title>Compute Engine: New Compute Engine Commands and Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:database migration:18</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--source-database-name-override</code> flag to
+  <code>gcloud database-migration conversion-workspaces seed|update</code> to allow
+  overriding the database name for the seed operation.</li>
+</ul>]]></content>
+    <summary>A new flag, `--source-database-name-override`, has been added to `gcloud database-migration conversion-workspaces seed|update`. This flag allows users to specify a different database name for the seed operation, providing more flexibility in migration configurations.</summary>
+    <title>Database Migration: Database name override for seeding</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:gke hub:19</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud container fleet rollouts</code> to GA.</li>
+<li>Promoted <code>gcloud container fleet rolloutsequences</code> to GA.</li>
+</ul>]]></content>
+    <summary>The gcloud container fleet rollouts and rolloutsequences commands are now generally available. These commands provide enhanced capabilities for managing your GKE deployments.</summary>
+    <title>GKE Hub: Rollouts commands now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:kpt:20</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated kpt to v1.0.0-beta.64. See <a href="https://github.com/kptdev/kpt/releases/tag/v1.0.0-beta.64">https://github.com/kptdev/kpt/releases/tag/v1.0.0-beta.64</a> for more details.</li>
+</ul>]]></content>
+    <summary>kpt has been updated to version 1.0.0-beta.64. This release includes various improvements and bug fixes. For a comprehensive list of changes, please refer to the release notes.</summary>
+    <title>Kpt: kpt updated to v1.0.0-beta.64</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:kubernetes engine:21</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted GKE custom image flags (<code>--image</code> and <code>--image-project</code>)
+  to GA, making them publicly visible in
+  <code>gcloud container clusters create</code>,
+  <code>gcloud container clusters create-auto</code>, and
+  <code>gcloud container node-pools create</code> (and <code>--image</code>/<code>--image-project</code>
+  in <code>gcloud container clusters upgrade</code>).</li>
+<li>Added <code>stack-type</code> option to <code>--additional-node-network</code> flag of
+  <code>gcloud container node-pools create</code> to configure the stack type
+  (<code>ipv4</code>, <code>ipv4-ipv6</code>, or <code>ipv6</code>) for additional network interfaces.</li>
+</ul>]]></content>
+    <summary>The custom image flags for GKE are now generally available, offering more control over your node images. Additionally, a new stack type option allows for flexible configuration of network interfaces on node pools.</summary>
+    <title>Kubernetes Engine: GKE image and network options now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:network management:22</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--source-cloud-run-job</code> flag to <code>gcloud network-management connectivity-tests</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud network-management connectivity-tests` command now supports the `--source-cloud-run-job` flag, allowing for more flexible network connectivity testing. This update enhances the ability to diagnose network issues by enabling tests to originate from Cloud Run jobs.</summary>
+    <title>Network Management: Connectivity Test Enhancement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:575-0-0--2026-06-30-:2026-06-30:network services:23</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud edge-cache services</code> import schemas to support specifying up to 100 allowed origins in <code>CORSPolicy.allowOrigins</code> and a client TTL of <code>0s</code> in <code>CDNPolicy.clientTtl</code>.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>The `gcloud edge-cache services` command now supports up to 100 allowed origins in `CORSPolicy.allowOrigins` and a client TTL of `0s` in `CDNPolicy.clientTtl`. These updates enhance flexibility for network service configurations.</summary>
+    <title>Network Services: Edge Cache Services: Increased Origin Limits and Client TTL</title>
+  </entry>
+</feed>

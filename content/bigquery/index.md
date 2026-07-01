@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-06-30
+
+### Feature
+
+You can specify an optional `principal` property on
+[BigQuery reservation assignments](https://docs.cloud.google.com/bigquery/docs/reservations-assignments) to
+route queries to specific reservations based on the identity of the user,
+service account, or third-party identity executing the job.
+
+---
 ## 2026-06-29
 
 ### Change

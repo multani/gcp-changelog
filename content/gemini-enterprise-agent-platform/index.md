@@ -36,7 +36,9 @@ Key capabilities include:
 
 For more information, see [Semantic governance policies overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/semantic-governance-overview).
 
-### Provisioned Throughput: Email notifications GA
+### Feature
+
+**Provisioned Throughput: Email notifications GA**
 
 The ability to get email notifications for Provisioned Throughput
 events is generally available. See [Get email
@@ -45,7 +47,9 @@ notifications](https://docs.cloud.google.com/gemini-enterprise-agent-platform/mo
 ---
 ## 2026-06-26
 
-### New Provisioned Throughput features
+### Feature
+
+**New Provisioned Throughput features**
 
 The following Provisioned Throughput features are generally available:
 

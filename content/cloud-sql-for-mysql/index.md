@@ -1,5 +1,15 @@
 # Cloud SQL for MySQL
 
+## 2026-06-29
+
+### Feature
+
+MySQL 8.0.45 is now the [default minor version](https://docs.cloud.google.com/sql/docs/mysql/db-versions#database-version-support) for Cloud SQL for MySQL 8.0.
+
+For more information about minor version support in Cloud SQL for MySQL,
+see [MySQL 8.0](https://docs.cloud.google.com/sql/docs/mysql/db-versions#mysql-8.0).
+
+---
 ## 2026-06-25
 
 ### Feature

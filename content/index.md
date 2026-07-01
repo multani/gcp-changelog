@@ -12,6 +12,7 @@
 - [Access Approval](access-approval/index.md)
 - [Access Transparency](access-transparency/index.md)
 - [Agent Assist](agent-assist/index.md)
+- [Agent Platform Workbench](agent-platform-workbench/index.md)
 - [Agent Registry](agent-registry/index.md)
 - [AlloyDB Omni](alloydb-omni/index.md)
 - [AlloyDB for PostgreSQL](alloydb-for-postgresql/index.md)

@@ -1,5 +1,20 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-06-24
+
+### Change
+
+Cloud SQL now supports Private Service Connect outbound connectivity on the
+following additional types of instances:
+
+* Read replica instances.
+* Instances that use advanced disaster recovery features such as switchover and
+  failover operations.
+
+For more information about Private Service Connect outbound connectivity see
+[About Private Service Connect](https://docs.cloud.google.com/sql/docs/postgres/about-private-service-connect#psc-outbound).
+
+---
 ## 2026-06-22
 
 ### Feature

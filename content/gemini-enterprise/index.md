@@ -4,6 +4,16 @@
 
 ### Feature
 
+**Gemini Enterprise: Filters for Microsoft SharePoint data stores are generally available (GA)**
+
+Filters for Microsoft SharePoint federated data stores are now generally
+available (GA).
+
+For more information, see
+[Add filters to a Microsoft SharePoint data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint/add-filters-to-sharepoint-data-store).
+
+### Feature
+
 **Gemini Enterprise: Support for India and Singapore regions (GA with
 allowlist)**
 

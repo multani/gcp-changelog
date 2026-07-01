@@ -137,6 +137,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Agent platform workbench <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../agent-platform-workbench/" class="dropdown-item">Agent Platform Workbench</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Agent registry <b class="caret"></b>
                         </a>
 
@@ -2650,6 +2662,18 @@ For more information, see
 <a href="https://docs.cloud.google.com/sql/docs/mysql/upgrade-major-db-version-inplace#precheck">Assess upgrade readiness for your instance</a>.</p>
 <p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
 <hr />
+<h2 id="2026-06-24">2026-06-24</h2>
+<h3 id="change">Change</h3>
+<p>Cloud SQL now supports Private Service Connect outbound connectivity on the
+following additional types of instances:</p>
+<ul>
+<li>Read replica instances.</li>
+<li>Instances that use advanced disaster recovery features such as switchover and
+  failover operations.</li>
+</ul>
+<p>For more information about Private Service Connect outbound connectivity see
+<a href="https://docs.cloud.google.com/sql/docs/mysql/about-private-service-connect#psc-outbound">About Private Service Connect</a>.</p>
+<hr />
 <h2 id="2026-06-22">2026-06-22</h2>
 <h3 id="feature_1">Feature</h3>
 <p>Customer-managed encryption key (CMEK) support for Cloud SQL enhanced backups is
@@ -2659,12 +2683,12 @@ using Google Cloud Backup and DR Service.</p>
 option</a>.</p>
 <hr />
 <h2 id="2026-06-19">2026-06-19</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>When you <a href="https://docs.cloud.google.com/sql/docs/mysql/migrate-xtrabackup-physical-file">migrate from Percona XtraBackup physical file to Cloud SQL for MySQL</a>,
 you can now specify multiple data files in the <code>innodb_data_file_path</code>
 parameter of your external server configuration. Also, you are no longer
 required to use the default name for your data files.</p>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Cloud SQL for MySQL now supports multiple system tablespace files, allowing
 <a href="https://docs.cloud.google.com/sql/docs/quotas#table_limit">system tablespace size</a> to grow larger than 16TB.</p>
 <hr />
@@ -2683,7 +2707,7 @@ Managed buffer pool helps you avoid out-of-memory events (OOMs) on your
 Cloud SQL instance by reducing <code>innodb_buffer_pool_size</code> when memory usage is high.</p>
 <hr />
 <h2 id="2026-05-12">2026-05-12</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>The command for upgrading Cloud SQL instances to the new network architecture
 has been re-enabled.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/upgrade-cloud-sql-instance-new-network-architecture">Upgrade an instance to the new network architecture</a>.</p>
@@ -2853,7 +2877,7 @@ Cloud SQL for MySQL (<a href="https://cloud.google.com/products/#product-launch-
 <a href="https://docs.cloud.google.com/sql/docs/mysql/troubleshoot-slow-queries">Troubleshoot slow queries with AI assistance</a>.</p>
 <hr />
 <h2 id="2026-02-18">2026-02-18</h2>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>After March 17, 2026, when you enable the Cloud SQL Admin API
 (<code>sqladmin.googleapis.com</code>), the Cloud SQL remote MCP server is
 enabled automatically.</p>
@@ -2926,7 +2950,7 @@ the problem occurred.</p>
 Performance capture is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-01-21">2026-01-21</h2>
-<h3 id="change_4">Change</h3>
+<h3 id="change_5">Change</h3>
 <p>Cloud SQL for MySQL 8.0.43 is now the <a href="https://docs.cloud.google.com/sql/docs/mysql/db-versions#database-version-support">default minor version</a>
 of Cloud SQL for MySQL 8.0.</p>
 <p>If you have automatic minor version upgrade enabled for your instance,
@@ -3178,6 +3202,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/mysql/backu
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-mysql">Cloud SQL for MySQL</a></li>
           <li class="nav-item">
             <a href="#2026-06-25" class="nav-link">2026-06-25</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-06-24" class="nav-link">2026-06-24</a>
           </li>
           <li class="nav-item">
             <a href="#2026-06-22" class="nav-link">2026-06-22</a>

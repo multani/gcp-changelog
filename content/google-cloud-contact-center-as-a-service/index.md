@@ -1,5 +1,49 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-06-30
+
+### Announcement
+
+**In the Agent Desktop, the Knowledge Assist panel is being replaced with a new
+Agent Assist Hub panel**
+
+**Who's affected?**
+
+Customers who use the Agent Desktop and the Knowledge Assist panel in a desktop
+layout are affected. If you don't use Agent Desktop and the Knowledge Assist
+panel, you can ignore this announcement.
+
+**What's changing?**
+
+We're replacing the Knowledge Assist panel in Agent Desktop with a new Agent
+Assist Hub panel. The Agent Assist Hub panel contains a Knowledge Assist module
+that is a 1:1 functional replacement of the Knowledge Assist panel.
+
+**How does this affect my contact center?**
+
+For any agents that are signed into your contact center at the moment we update
+it, the new Knowledge Assist module will stop working. To fix this problem, the
+agent needs to sign out of the contact center and sign in again. The Knowledge
+Assist module will begin working. Agents who sign into your contact center after
+we update it won't be affected by this issue.
+
+**What do I need to do?**
+
+When we roll out this change, your Google Cloud CCaaS instance will be updated
+automatically - you don't need to change any configurations. However, you
+should tell your agents to sign out of your contact center and sign in again if
+the Knowledge Assist module within the Agent Assist Hub panel isn't working for
+them. Your agents do not need to take action If your instance is configured as a
+Critical deployment and is updated outside of the contact center hours of
+operation.
+
+**When is this happening?**
+
+We expect to make this change in early Q3 of 2026, around mid to late July.
+We'll publish prerelease notes and release notes to keep you informed of this
+change.
+
+---
 ## 2026-06-25
 
 ### Announcement

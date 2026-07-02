@@ -1,5 +1,23 @@
 # Google SecOps SIEM
 
+## 2026-07-01
+
+### Announcement
+
+**[Spotlight Feature] Security Tokens**
+
+Security Tokens are now available for metering agentic consumption within Google
+SecOps. Tokens are consumed by generally available security agents only. These
+agents are invoked automatically or manually using the web interface, CLI, chat,
+or Model Context Protocol (MCP). Assistive features, such as standard chat
+panels and automated summaries, along with preview agents, won't consume
+Security Tokens.
+
+Security Tokens will start rolling out across all regions starting July 1. For
+more information, see [Google SecOps Agentic SOC Security Tokens pricing and
+billing](https://docs.cloud.google.com/chronicle/docs/agentic-soc/security-tokens).
+
+---
 ## 2026-06-30
 
 ### Announcement

@@ -2,10 +2,6 @@
 
 ## 2026-07-01
 
-### Feature
-
-
-
 ### Provisioned Throughput: Multiple pending new orders GA
 
 The ability to submit multiple pending orders is generally available. you can

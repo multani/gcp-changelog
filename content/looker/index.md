@@ -1,5 +1,20 @@
 # Looker
 
+## 2026-07-01
+
+### Announcement
+
+The latest versions in the Looker (Google Cloud core) [release channels](https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels) are beginning deployment as follows:
+
+* Latest version in the Rapid channel: **26.10**
+* Latest version in the Regular channel: **26.10**
+* Latest version in the No Channel channel: **26.10**
+
+### Feature
+
+Looker (Google Cloud core) has introduced [release channels](https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels) in preview, allowing users to choose between Rapid, Regular, and "No channel" options to manage the cadence of version updates. The Rapid channel provides early access to new capabilities but is excluded from the Service Level Agreement (SLA), while the Regular channel offers balanced stability with an optional Accelerated Security Patching flag.
+
+---
 ## 2026-06-22
 
 ### Announcement

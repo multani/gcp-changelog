@@ -1,5 +1,30 @@
 # Google SecOps Marketplace
 
+## 2026-07-01
+
+### Feature
+
+**Proofpoint Email Protection**: Version 8.0
+
+* The following new actions have been added to support searching and
+  programmatically managing quarantined emails:
+
+  + **Search Quarantined Emails**
+  + **Delete Quarantined Email**
+  + **Resubmit Quarantined Email**
+  + **Move Quarantined Email**
+
+### Change
+
+**Proofpoint Email Protection**: Version 8.0
+
+* Updated backend script implementation to support the new framework for the
+  following actions:
+
+  + **Enrich Entities**
+  + **Ping**
+
+---
 ## 2026-06-25
 
 ### Feature

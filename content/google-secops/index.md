@@ -1,5 +1,29 @@
 # Google SecOps
 
+## 2026-07-01
+
+### Feature
+
+**[Spotlight Feature] Enhanced security and compliance for the Advanced BigQuery Export feature**
+
+The [Advanced BigQuery Export feature](https://docs.cloud.google.com/chronicle/docs/reports/bigquery-export) is in Preview and is available for Google SecOps Enterprise Plus customers only.
+
+**Here's what's new:** We're excited to announce significant performance and coverage enhancements to Advanced BigQuery Export for Google SecOps Enterprise Plus customers.
+
+* **Expanded dataset support**: In addition to UDM events, rule detections, and IoC matches, we now support the export of Entity Graph and Ingestion Metrics.
+* **Enhanced security & compliance**: The offering natively supports [VPC Service Controls (VPC-SC)](https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops), [Customer-Managed Encryption Keys (CMEK)](https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops), and Data Residency (DRZ). Furthermore, customer-facing audit logs (Access Transparency) are delivered directly to your Cloud Logging workspace using the Federated Resource Identification Service.
+* **Data integrity and deduplication**: The system now uses Fine-Grained DML merges to update records in place behind the scenes. This ensures that you receive clean, deduplicated data without needing to write complex SQL routines.
+* **Seamless MSSP support (hub and spoke)**: Managed Security Service Providers (MSSPs) can now efficiently manage analytics across multiple customer tenants. This is achieved by programmatically subscribing to customers' linked datasets from a single centralized "Hub" project.
+* **Enum mapping tables**: Advanced BigQuery Export now includes `entity_enum_value_to_name_mapping` and `udm_enum_value_to_name_mapping` tables. These allow you to easily join against your events to translate numerical enum values into human-readable strings.
+
+**Key reminders**
+
+* **Public preview & feature activation**: This feature is currently in Public Preview, is enabled only upon request, and may require initial configuration in your organization's Google SecOps instance. Contact your Google SecOps representative to confirm feature enablement.
+* **Enterprise Plus only**: This feature is exclusive to the Enterprise Plus tier.
+* **Zero-maintenance**: Your security data remains in a Google-managed project, appearing as a read-only linked dataset directly in your own Google Cloud project. This lets you query the data locally without the overhead of managing the pipeline or paying for storage.
+* **Migration and dual operation**: To support a smooth transition without disruption during the Public Preview, your data will be exported to the new BigQuery tenant project in addition to your existing Google-managed BigQuery project. You'll be notified before the old export pipeline is disabled for your account.
+
+---
 ## 2026-06-30
 
 ### Announcement

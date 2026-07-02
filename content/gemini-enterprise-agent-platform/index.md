@@ -1,5 +1,19 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-07-01
+
+### Feature
+
+
+
+### Provisioned Throughput: Multiple pending new orders GA
+
+The ability to submit multiple pending orders is generally available. you can
+submit up to seven Google model orders for the same model and region.
+See [Multiple pending
+orders](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput#multiple).
+
+---
 ## 2026-06-30
 
 ### Feature

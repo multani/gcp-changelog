@@ -2,9 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-06-30T00:00:00+00:00</updated>
+  <updated>2026-07-01T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-07-01:feature:0</id>
+    <published>2026-07-01T00:00:00+00:00</published>
+    <updated>2026-07-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Enhanced security and compliance for the Advanced BigQuery Export feature</strong></p>
+<p>The <a href="https://docs.cloud.google.com/chronicle/docs/reports/bigquery-export">Advanced BigQuery Export feature</a> is in Preview and is available for Google SecOps Enterprise Plus customers only.</p>
+<p><strong>Here's what's new:</strong> We're excited to announce significant performance and coverage enhancements to Advanced BigQuery Export for Google SecOps Enterprise Plus customers.</p>
+<ul>
+<li><strong>Expanded dataset support</strong>: In addition to UDM events, rule detections, and IoC matches, we now support the export of Entity Graph and Ingestion Metrics.</li>
+<li><strong>Enhanced security &amp; compliance</strong>: The offering natively supports <a href="https://docs.cloud.google.com/chronicle/docs/secops/vpcsc-for-secops">VPC Service Controls (VPC-SC)</a>, <a href="https://docs.cloud.google.com/chronicle/docs/secops/cmek_for_secops">Customer-Managed Encryption Keys (CMEK)</a>, and Data Residency (DRZ). Furthermore, customer-facing audit logs (Access Transparency) are delivered directly to your Cloud Logging workspace using the Federated Resource Identification Service.</li>
+<li><strong>Data integrity and deduplication</strong>: The system now uses Fine-Grained DML merges to update records in place behind the scenes. This ensures that you receive clean, deduplicated data without needing to write complex SQL routines.</li>
+<li><strong>Seamless MSSP support (hub and spoke)</strong>: Managed Security Service Providers (MSSPs) can now efficiently manage analytics across multiple customer tenants. This is achieved by programmatically subscribing to customers' linked datasets from a single centralized "Hub" project.</li>
+<li><strong>Enum mapping tables</strong>: Advanced BigQuery Export now includes <code>entity_enum_value_to_name_mapping</code> and <code>udm_enum_value_to_name_mapping</code> tables. These allow you to easily join against your events to translate numerical enum values into human-readable strings.</li>
+</ul>
+<p><strong>Key reminders</strong></p>
+<ul>
+<li><strong>Public preview &amp; feature activation</strong>: This feature is currently in Public Preview, is enabled only upon request, and may require initial configuration in your organization's Google SecOps instance. Contact your Google SecOps representative to confirm feature enablement.</li>
+<li><strong>Enterprise Plus only</strong>: This feature is exclusive to the Enterprise Plus tier.</li>
+<li><strong>Zero-maintenance</strong>: Your security data remains in a Google-managed project, appearing as a read-only linked dataset directly in your own Google Cloud project. This lets you query the data locally without the overhead of managing the pipeline or paying for storage.</li>
+<li><strong>Migration and dual operation</strong>: To support a smooth transition without disruption during the Public Preview, your data will be exported to the new BigQuery tenant project in addition to your existing Google-managed BigQuery project. You'll be notified before the old export pipeline is disabled for your account.</li>
+</ul>]]></content>
+    <summary>The Advanced BigQuery Export feature now offers expanded dataset support, enhanced security and compliance with VPC-SC and CMEK, improved data integrity through deduplication, and seamless MSSP integration. This update aims to provide a more robust and efficient data export experience for Google SecOps Enterprise Plus customers.</summary>
+    <title>Feature: Enhanced BigQuery Export for SecOps</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

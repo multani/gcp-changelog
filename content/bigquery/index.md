@@ -1,5 +1,22 @@
 # BigQuery
 
+## 2026-07-01
+
+### Feature
+
+You can now use pre-trained TimesFM models in BigQuery ML
+directly from
+[Connected Sheets](https://docs.cloud.google.com/bigquery/docs/connected-sheets).
+These models let you create
+forecasts and detect anomalies in your data by using the
+[`AI.FORECAST`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast)
+and
+[`AI.DETECT_ANOMALIES`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)
+functions. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-06-30
 
 ### Feature

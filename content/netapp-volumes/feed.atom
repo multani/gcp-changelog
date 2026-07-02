@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: NetApp Volumes</title>
   <subtitle>Changelog for Google Cloud product: NetApp Volumes</subtitle>
-  <updated>2026-06-09T00:00:00+00:00</updated>
+  <updated>2026-07-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:netapp-volumes</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/netapp-volumes/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:netapp-volumes:2026-07-02:feature:0</id>
+    <published>2026-07-02T00:00:00+00:00</published>
+    <updated>2026-07-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Flex Unified service level supports the optional feature <a href="https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/overview#block-volume-deletion">Block volume from deletion when clients are connected</a> for both block and file volumes. This option is
+required for using NetApp Volumes with Google Cloud VMware Engine (GCVE)
+datastores. When this option is enabled, it prevents the deletion of a volume if
+the volume is mounted as a GCVE datastore.</p>]]></content>
+    <summary>A new optional feature allows you to prevent the deletion of volumes when clients are connected. This is particularly useful for NetApp Volumes used with Google Cloud VMware Engine datastores, ensuring data integrity by blocking deletion if the volume is mounted.</summary>
+    <title>Feature: Prevent Volume Deletion When Clients Are Connected</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

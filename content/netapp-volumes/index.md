@@ -1,5 +1,15 @@
 # NetApp Volumes
 
+## 2026-07-02
+
+### Feature
+
+The Flex Unified service level supports the optional feature [Block volume from deletion when clients are connected](https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/overview#block-volume-deletion) for both block and file volumes. This option is
+required for using NetApp Volumes with Google Cloud VMware Engine (GCVE)
+datastores. When this option is enabled, it prevents the deletion of a volume if
+the volume is mounted as a GCVE datastore.
+
+---
 ## 2026-06-09
 
 ### Feature

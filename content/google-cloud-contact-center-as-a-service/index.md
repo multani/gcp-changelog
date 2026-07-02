@@ -1,5 +1,96 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-07-01
+
+### Announcement
+
+**Google Cloud CCaaS 4.45**
+
+We've released version 4.45 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Do Not Call capability in HubSpot**
+
+You can configure your HubSpot integration to display **This number is on the Do
+Not Call list** in the call adapter when an agent initiates a call to a contact
+configured for Do Not Call (DNC). The agent can proceed with the DNC call if
+needed. If the agent proceeds with the call, the following comment is logged in
+the CRM: "The contact is in TPS, the agent chose to proceed with the call."
+
+This capability is for non-campaign outbound calls. It doesn't affect outbound
+campaign calls.
+
+Administrators: In the **Settings > Developer Settings >
+Agent Platform > HubSpot > Account Lookup** section,
+there's a new **Do-Not-Call CRM Field** section.
+
+User experience update: The call adapter displays **This number is on the Do Not
+Call list** when an agent initiates a call to a contact configured for DNC.
+
+For more information, see [Do Not Call for
+HubSpot](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-do-not-call).
+
+### Feature
+
+**Return to queue after disconnection**
+
+You can configure CCAI Platform to offer a disconnected caller the
+option to return to their queue. If they accept, they're returned to the top of
+the queue. Virtual agents in the queue are skipped. This capability is for IVR
+calls only.
+
+Administrators: We've made the following updates to the CCAI Platform portal:
+
+* In the **Settings > Call > Call Details** pane,
+  there's a new **Return to Queue After Disconnection** section.
+* In the **Settings > Queue > IVR (Interactive Voice
+  Response) > Edit / View > MENU\_NAME >
+  Settings** pane, there's a new **Return to Queue after disconnection**
+  section.
+* In the **Settings > Languages & Messages > Audible
+  Messages** pane, there's a new **Return to Queue After Disconnection
+  Messages** section.
+
+For more information, see [Return to
+queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/return-to-queue).
+
+### Fixed
+
+* Fixed an issue where campaigns that didn't complete prevented subsequent
+  campaigns from starting.
+* Fixed an issue where callers weren't correctly connected to voicemail during
+  a warm transfer to an agent's direct number.
+* Fixed an issue where incoming calls were assigned to agents but
+  didn't appear in the agent adapter, resulting in "ghost assignments" and
+  abandoned calls.
+* Fixed an issue where cold-transferring a call from a queue while the
+  transferring agent was in a wrap-up state caused the connection to become
+  unresponsive and silent.
+* Fixed an issue where calls that disconnected before entering a queue were
+  incorrectly displayed in the **Queued Calls** dashboard.
+* Fixed an issue in the agent desktop where the call disposition panel failed
+  to load for queues with forced disposition enabled, leaving agents stuck and
+  unable to proceed without logging out.
+* Fixed an issue where streaming conversations failed due to connection
+  errors.
+* Fixed an issue where outbound calls initiated from a HubSpot company profile
+  created duplicate anonymous contacts instead of matching existing records by
+  phone number.
+* Fixed an issue where the **Session Data** report incorrectly calculated the
+  after call work (ACW) duration for manual wrap-ups.
+* Fixed an issue where the **Start Call** button didn't display in the call
+  adapter.
+* Fixed an issue where voicemails from cold transfers were lost or routed to
+  the wrong queue.
+* Fixed an issue in the agent desktop where active calls appeared to be on
+  hold while the agent was in a "wrap-up exceeded" state.
+
+---
 ## 2026-06-30
 
 ### Announcement

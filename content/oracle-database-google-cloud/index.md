@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-07-02
+
+### Feature
+
+Oracle Database@Google Cloud supports Exascale Storage Vaults for Exadata on Dedicated Infrastructure and Exadata VM Clusters. For more information, see [Create an Exascale Storage Vault for an Exadata Infrastructure](https://docs.cloud.google.com/oracle/database/docs/create-exadata-storage-vaults), [Configure Exascale Storage Vault for Exadata Infrastructure](https://docs.cloud.google.com/oracle/database/docs/configure-exascale-storage), and [Create Exadata VM Clusters with Exascale Storage Vaults](https://docs.cloud.google.com/oracle/database/docs/create-clusters#create-cluster-using-vault).
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-25
 
 ### Feature

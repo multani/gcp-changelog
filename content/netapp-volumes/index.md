@@ -9,6 +9,11 @@ required for using NetApp Volumes with Google Cloud VMware Engine (GCVE)
 datastores. When this option is enabled, it prevents the deletion of a volume if
 the volume is mounted as a GCVE datastore.
 
+### Feature
+
+The Flex Unified Default-mode service level supports the thick clone (thin clone
+split) feature in Preview. For more information, see [Manage volume clones](https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/manage-volume-clones).
+
 ---
 ## 2026-06-09
 

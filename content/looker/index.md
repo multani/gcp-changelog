@@ -60,13 +60,15 @@ When you [publish an in-database analytic model as a stable model on your databa
 
 ### Feature
 
-The [Enhanced search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.
-
-### Feature
-
 The character limit for descriptions on dashboards and Looks has been increased to 2,000 characters, giving content creators the ability to add comprehensive descriptions, operational definitions, and notes to their dashboards and Looks to ensure that viewers fully understand the data context.
 
 This feature is available to any user with standard content editing rights ([Edit content access level](https://docs.cloud.google.com/looker/docs/organizing-spaces#folder_access_levels) or [`save_dashboards`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_dashboards) or [`save_looks`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_looks) permissions).
+
+### Feature
+
+The [Enhanced search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.
+
+**Note**: The general availability of **Enhanced Search** preview feature has been temporarily delayed. This release note was updated on July 1, 2026.
 
 ### Feature
 

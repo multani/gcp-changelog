@@ -1,13 +1,33 @@
 # Managed Service for Apache Airflow
 
-## 2026-06-26
+## 2026-06-29
 
 ### Announcement
 
-A new Managed Service for Apache Airflow release has started on **June 26, 2026**. Get ready
+A new Managed Service for Apache Airflow release has started on **June 29, 2026**. Get ready
 for upcoming changes and features as we roll out the new release to all regions.
 This release is in progress at the moment. Listed changes and features might
 not be available in some regions yet.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.1.7-build.12](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-12)
+* [composer-3-airflow-2.11.1-build.8](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-8) (default)
+* [composer-3-airflow-2.10.5-build.41](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-41)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.5-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-5-airflow-2-11-1) (default)
+* [composer-2.17.5-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-5-airflow-2-10-5)
+
+---
+## 2026-06-26
 
 ### Change
 

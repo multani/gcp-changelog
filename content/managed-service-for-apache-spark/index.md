@@ -17,8 +17,16 @@ image versions.
 * **Default change schedule:** The subminor versions `1.3.96`, `1.4.81`, `1.5.92`, and `2.0.161` will become default after August 25, 2026.
   Additionally, newer subminor versions for `2.1`, `2.2`, and `2.3` released after August 25, 2026 will not have preconfigured Conda channels and will be mapped to default aliases.
   All workloads must use new images after August 25, 2026
-  since the use of prior subminor versions with preconfigured conda
+  since the use of prior subminor versions with preconfigured Conda
   channels will be disallowed.
+
+**You may need to delete and replace existing clusters** After August 25, 2026,
+existing clusters created with images that have preconfigured Conda channels
+(even if cluster jobs don't use Conda to install packages) need to be deleted
+and replaced with new
+[clusters created](https://docs.cloud.google.com/managed-spark/docs/guides/create-cluster#creating_a_cloud_dataproc_cluster)
+or [recreated](https://docs.cloud.google.com/managed-spark/docs/guides/recreate-cluster#recreate_and_update_a_cluster_2)
+with images that don't have preconfigured Conda channels.
 
 ### Announcement
 

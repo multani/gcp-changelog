@@ -25,11 +25,18 @@ image versions.</p>
 <li><strong>Default change schedule:</strong> The subminor versions <code>1.3.96</code>, <code>1.4.81</code>, <code>1.5.92</code>, and <code>2.0.161</code> will become default after August 25, 2026.
   Additionally, newer subminor versions for <code>2.1</code>, <code>2.2</code>, and <code>2.3</code> released after August 25, 2026 will not have preconfigured Conda channels and will be mapped to default aliases.
   All workloads must use new images after August 25, 2026
-  since the use of prior subminor versions with preconfigured conda
+  since the use of prior subminor versions with preconfigured Conda
   channels will be disallowed.</li>
-</ul>]]></content>
-    <summary>New Apache Spark image versions are available, but they require explicit version specification and manual Conda channel configuration. Existing workloads may need adjustments or to be pinned to older versions to maintain compatibility before August 25, 2026.</summary>
-    <title>Breaking: Apache Spark image updates</title>
+</ul>
+<p><strong>You may need to delete and replace existing clusters</strong> After August 25, 2026,
+existing clusters created with images that have preconfigured Conda channels
+(even if cluster jobs don't use Conda to install packages) need to be deleted
+and replaced with new
+<a href="https://docs.cloud.google.com/managed-spark/docs/guides/create-cluster#creating_a_cloud_dataproc_cluster">clusters created</a>
+or <a href="https://docs.cloud.google.com/managed-spark/docs/guides/recreate-cluster#recreate_and_update_a_cluster_2">recreated</a>
+with images that don't have preconfigured Conda channels.</p>]]></content>
+    <summary>New Apache Spark image versions will no longer include preconfigured Conda channels by default. Users may need to specify exact versions and manually configure Conda channels, or pin to older versions to avoid cluster disruptions after August 25, 2026.</summary>
+    <title>Breaking: Apache Spark image update impacts Conda</title>
   </entry>
   <entry>
     <author>

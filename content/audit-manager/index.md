@@ -1,5 +1,14 @@
 # Audit Manager
 
+## 2026-07-02
+
+### Feature
+
+Audit Manager now supports [built-in frameworks and custom
+frameworks](https://docs.cloud.google.com/audit-manager/docs/overview#supported_compliance) that you define
+using Compliance Manager or Assured Workloads frameworks (preview).
+
+---
 ## 2025-08-27
 
 ### Feature

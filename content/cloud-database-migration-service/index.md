@@ -1,8 +1,20 @@
 # Cloud Database Migration Service
 
+## 2026-07-02
+
+### Change
+
+MySQL version 9.7 support for MySQL homogeneous migrations is being rolled out
+across all regions. A new announcement will be published when MySQL version 9.7
+for MySQL homogeneous migrations with Database Migration Service becomes available.
+
+---
 ## 2026-06-23
 
 ### Announcement
+
+**Note:** MySQL version 9.7 version isn't yet available. For more information, see the
+[release note from July 2nd, 2026](#July_02_2026).
 
 Database Migration Service for MySQL homogeneous migrations now supports MySQL version 9.7.
 For more information, see

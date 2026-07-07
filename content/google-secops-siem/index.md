@@ -22,6 +22,14 @@ billing](https://docs.cloud.google.com/chronicle/docs/agentic-soc/security-token
 
 ### Announcement
 
+**Increased multiple event limits**
+
+Multiple event rule limits have been increased to 200 for Enterprise customers and 400 for Enterprise+ customers.
+
+For more information, see [Package comparison](https://docs.cloud.google.com/chronicle/docs/secops/secops-packages#package_comparison)
+
+### Announcement
+
 **Unified rules interface**
 
 The new rules interface is now available in public preview.

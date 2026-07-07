@@ -4,16 +4,32 @@
 
 ### Announcement
 
-Release 6.3.92 is being rolled out to the first phase of regions as listed [here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+Release 6.3.92 is being rolled out to the first phase of regions as listed
+[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
 
 This release contains internal and customer bug fixes.
+
+### Feature
+
+**Publisher Agent Version 2.7.0**
+
+Publisher Agent Version 2.7.0 is being rolled out to the first phase of regions.
+
+This release includes the following updates for the remote agent:
+
+* **High Availability support:** Adds applicative support for Publisher high
+  availability.
+* **File transfer support:** You can now upload and download files using
+  playbooks and the SDK on agents that have been migrated to the GCOM
+  infrastructure.
 
 ---
 ## 2026-07-04
 
 ### Announcement
 
-[Release 6.3.91](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#June_28_2026) is now available for all regions.
+[Release 6.3.91](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#June_28_2026) is now
+available for all regions.
 
 ---
 ## 2026-06-28

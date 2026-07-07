@@ -67,6 +67,14 @@ The [Advanced BigQuery Export feature](https://docs.cloud.google.com/chronicle/d
 
 ### Announcement
 
+**Increased multiple event limits**
+
+Multiple event rule limits have been increased to 200 for Enterprise customers and 400 for Enterprise+ customers.
+
+For more information, see [Package comparison](https://docs.cloud.google.com/chronicle/docs/secops/secops-packages#package_comparison)
+
+### Announcement
+
 **[Spotlight Feature] Unified rules interface**
 
 The new rules interface is now available in public preview. The Google SecOps unified rules interface brings custom and curated rule management into a single, cohesive workflow. This optimizes detection engineering with a redesigned dashboard, an advanced rule editor, and expanded API capabilities to streamline rule deployment and troubleshooting.

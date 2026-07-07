@@ -8,13 +8,6 @@ Bigtable supports direct connectivity, which bypasses the Google frontend and
 optimizes performance for application traffic that meets certain criteria. For
 more information, see [Direct connectivity](https://docs.cloud.google.com/bigtable/docs/performance#direct-connectivity).
 
-### Feature
-
-You can use Organization Policy Service custom constraints to manage specific
-operations on continuous materialized views. This feature is [generally available
-(GA)](https://cloud.google.com/products#product-launch-stages).
-For more information, see [Use custom organization policies](https://docs.cloud.google.com/bigtable/docs/custom-constraints).
-
 ---
 ## 2026-06-24
 

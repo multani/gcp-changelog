@@ -1,5 +1,31 @@
 # Bigtable
 
+## 2026-07-07
+
+### Feature
+
+You can bind existing [tags](https://docs.cloud.google.com/bigtable/docs/tags) to Bigtable instances when you
+create an instance and use policies to enforce mandatory tag assignments. This
+feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Create an instance](https://docs.cloud.google.com/bigtable/docs/creating-instance).
+
+### Feature
+
+The Bigtable agent skill (`bigtable-basics`) is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages)
+in the public [Google Agent Skills repository](https://github.com/google/skills/tree/main/skills/cloud/bigtable-basics).
+This skill lets you equip AI agents with capabilities for Bigtable tasks, such as
+provisioning instances and tables, designing schemas, querying data using
+GoogleSQL and key-value APIs, and diagnosing performance issues or hotspots.
+
+### Feature
+
+You can use Organization Policy Service custom constraints to manage specific
+operations on continuous materialized views. This feature is [generally available
+(GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Use custom organization policies](https://docs.cloud.google.com/bigtable/docs/custom-constraints).
+
+---
 ## 2026-07-06
 
 ### Feature

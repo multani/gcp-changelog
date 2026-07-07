@@ -1,5 +1,16 @@
 # Retail API
 
+## 2026-06-29
+
+### Feature
+
+Vertex AI Search for commerce, which has been previously known under the mame Retail Search, has been rebranded to AI Commerce Search in Gemini Enterprise for Customer Experience.
+
+An intelligent AI search platform customized for ecommerce use cases, AI Commerce Search now belongs to the Gemini Enterprise for Customer Experience product suite.
+
+For general product information, see [AI Commerce Search on Gemini Enterprise for Customer Experience](https://cloud.google.com/gemini-enterprise-cx/commerce?e=48754805).
+
+---
 ## 2025-11-14
 
 ### Feature

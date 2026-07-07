@@ -1,5 +1,28 @@
 # Apigee UI
 
+## 2026-07-06
+
+### Announcement
+
+On July 6, 2026, we released an updated version of the Apigee UI.
+
+### Feature
+
+**ParsePayload policy and payload operations matching in the Apigee UI**
+
+The Apigee UI now supports the new payload operations matching feature:
+
+* The new **ParsePayload** policy is now available in the proxy editor for API
+  proxy authoring. You can use it to extract logical operations from
+  structured payloads at runtime.
+* The API Product page now displays payload-based operations, allowing you to
+  configure and manage access control and quotas based on request payload
+  content.
+
+For more information, see [Manage MCP tool access with API
+products](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/manage-mcp-tool-access).
+
+---
 ## 2026-03-13
 
 ### Announcement

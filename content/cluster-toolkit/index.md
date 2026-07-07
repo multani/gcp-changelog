@@ -1,5 +1,30 @@
 # Cluster Toolkit
 
+## 2026-06-25
+
+### Feature
+
+Cluster Toolkit v1.95.0 is available. This release introduces Slurm
+high availability controller support using managed instance groups (MIGs). This
+version also implements Google Kubernetes Engine node auto-provisioning (NAP) and unified
+compute consumption options for the `gcluster job submit` command. For details,
+see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5852).
+
+---
+## 2026-06-18
+
+### Feature
+
+Cluster Toolkit v1.94.0 is available. This release provides reservation
+subblock support in the `nodeset` module for Slurm. This version also adds
+`network_policy` as a variable in the `gke-cluster` module and loosens strict
+Terraform version constraints across core and community modules. By moving to a
+minimum version requirement, you can use newer versions of Terraform while
+maintaining compatibility. For details, see the [Release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5804).
+
+---
 ## 2026-06-11
 
 ### Feature
@@ -9,7 +34,7 @@ blueprints for GKE H4D deployments that use the [flex-start provisioning
 model](https://docs.cloud.google.com/compute/docs/instances/about-flex-start-vms), a [compact placement
 policy](https://docs.cloud.google.com/compute/docs/instances/placement-policies-overview#about-compact-policies)
 and integrated [Google Cloud ML Diagnostics](https://docs.cloud.google.com/tpu/docs/ml-diagnostics/overview).
-This version also adds a Slurm High Availability controller script and upgrades Slurm
+This version also adds a Slurm high availability controller script and upgrades Slurm
 images from Rocky Linux 8 to Rocky Linux 9. For details, see the [Release
 announcement on
 GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5770).

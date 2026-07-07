@@ -1,5 +1,15 @@
 # App Engine standard environment Java
 
+## 2026-07-07
+
+### Feature
+
+To modernize image processing, [migrate from the App Engine Images service to
+Cloud Run](https://docs.cloud.google.com/appengine/migration-center/standard/java/images-to-cloud-run) by
+routing calls to a Cloud Run image transformation service while your app
+continues to run on App Engine (Preview).
+
+---
 ## 2026-06-03
 
 ### Feature

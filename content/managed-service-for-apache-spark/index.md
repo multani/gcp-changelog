@@ -1,5 +1,31 @@
 # Managed Service for Apache Spark
 
+## 2026-06-30
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 2.1.117-debian11, 2.1.117-rocky8, 2.1.117-ubuntu20, 2.1.117-ubuntu20-arm
+* 2.2.85-debian12, 2.2.85-rocky9, 2.2.85-ubuntu22, 2.2.85-ubuntu22-arm
+* 2.3.33-debian12, 2.3.33-ml-ubuntu22, 2.3.33-rocky9, 2.3.33-ubuntu22, 2.3.33-ubuntu22-arm
+
+Key updates in these image versions include:
+
+* **Conda channels**: The new `2.1.117` and `2.2.85` subminor image versions don't have preconfigured Conda channels, and are not mapped to default aliases (such as `2.1-debian11` and `2.2-debian12`) until August 25, 2026.
+  + **Impact:** When creating clusters with these image versions, specify the exact subminor version (for example, `2.1.117-debian11` or `2.2.85-debian12`). Packages cannot be installed using Conda unless channels are manually configured during cluster initialization.
+  + **Mitigation:** If your workloads require preconfigured Conda channels or default aliases, pin your clusters to the previous image versions (for example, `2.1.116-debian11` or `2.2.84-debian12`).
+  + **Default change schedule:** After August 25, 2026, the default aliases for `2.1` and `2.2` will point to image versions without preconfigured Conda channels (the latest subminor versions). All workloads must transition to these new images after August 25, 2026 since the use of prior subminor versions with preconfigured Conda channels will be disallowed.
+
+**You may need to delete and replace existing clusters** After August 25, 2026,
+existing clusters created with images that have preconfigured Conda channels
+(even if cluster jobs don't use Conda to install packages) need to be deleted
+and replaced with new
+[clusters created](https://docs.cloud.google.com/managed-spark/docs/guides/create-cluster#creating_a_cloud_dataproc_cluster)
+or [recreated](https://docs.cloud.google.com/managed-spark/docs/guides/recreate-cluster#recreate_and_update_a_cluster_2)
+with images that don't have preconfigured Conda channels.
+
+---
 ## 2026-06-22
 
 ### Breaking
@@ -58,6 +84,21 @@ Key updates in these image versions include:
 ### Announcement
 
 **Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): Rollout of the [new sub-minor versions without pre-configured channels](https://docs.cloud.google.com/dataproc/docs/concepts/versioning/dataproc-version-clusters#supported-dataproc-image-versions) will begin on June 22, 2026, delayed from the previously planned date of June 15, 2026 ETA.
+
+---
+## 2026-06-09
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions):
+
+* 1.2.82
+* 2.2.82
+* 2.3.35
+
+Key updates in these runtime versions include:
+
+* **Spark optimizations**: Enabled Spark skewed-join and self-join optimizations by default.
 
 ---
 ## 2026-05-29

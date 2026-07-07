@@ -1,5 +1,22 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-07-06
+
+### Feature
+
+**AlphaGenome released for Gemini Enterprise Agent Platform**
+
+AlphaGenome, Google DeepMind's state-of-the-art genomics foundation model, is
+now available for deployment and use with Gemini Enterprise Agent Platform.
+
+Designed to decipher the functional regulatory code of the human genome,
+AlphaGenome analyzes large-scale DNA sequences at single-base resolution to
+predict how genetic variations affect molecular and biological mechanisms like
+gene expression, chromatin accessibility, and RNA splicing. For information on
+how to use AlphaGenome in Agent Platform, see the
+[documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/alphagenome).
+
+---
 ## 2026-07-01
 
 ### Provisioned Throughput: Multiple pending new orders GA

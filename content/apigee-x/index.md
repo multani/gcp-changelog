@@ -1,5 +1,26 @@
 # Apigee X
 
+## 2026-07-06
+
+### Feature
+
+**Support for payload operations matching in API Products**
+
+Apigee now supports payload operations matching (`payloadOperationGroup`) in API
+Products, powered by the new **ParsePayload** policy.
+
+Payload operations matching allows you to define API Product operations that
+match fields within request payloads, such as JSON-RPC requests used by the
+Model Context Protocol (MCP). Apigee can then route, monetize, authorize, and
+apply distinct quota limits to traffic based on the derived payload operation.
+
+This feature is available to all Apigee X customers in all supported regions
+with no additional charge. For more information, see [Manage MCP tool access
+with API products](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/manage-mcp-tool-access)
+and the [ParsePayload policy
+reference](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/parse-payload-policy).
+
+---
 ## 2026-06-24
 
 ### Announcement

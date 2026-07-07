@@ -1,6 +1,16 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-06-30": [
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):\n\n* 2.1.117-debian11, 2.1.117-rocky8, 2.1.117-ubuntu20, 2.1.117-ubuntu20-arm\n* 2.2.85-debian12, 2.2.85-rocky9, 2.2.85-ubuntu22, 2.2.85-ubuntu22-arm\n* 2.3.33-debian12, 2.3.33-ml-ubuntu22, 2.3.33-rocky9, 2.3.33-ubuntu22, 2.3.33-ubuntu22-arm\n\nKey updates in these image versions include:\n\n* **Conda channels**: The new `2.1.117` and `2.2.85` subminor image versions don't have preconfigured Conda channels, and are not mapped to default aliases (such as `2.1-debian11` and `2.2-debian12`) until August 25, 2026.\n  + **Impact:** When creating clusters with these image versions, specify the exact subminor version (for example, `2.1.117-debian11` or `2.2.85-debian12`). Packages cannot be installed using Conda unless channels are manually configured during cluster initialization.\n  + **Mitigation:** If your workloads require preconfigured Conda channels or default aliases, pin your clusters to the previous image versions (for example, `2.1.116-debian11` or `2.2.84-debian12`).\n  + **Default change schedule:** After August 25, 2026, the default aliases for `2.1` and `2.2` will point to image versions without preconfigured Conda channels (the latest subminor versions). All workloads must transition to these new images after August 25, 2026 since the use of prior subminor versions with preconfigured Conda channels will be disallowed.\n\n**You may need to delete and replace existing clusters** After August 25, 2026,\nexisting clusters created with images that have preconfigured Conda channels\n(even if cluster jobs don't use Conda to install packages) need to be deleted\nand replaced with new\n[clusters created](https://docs.cloud.google.com/managed-spark/docs/guides/create-cluster#creating_a_cloud_dataproc_cluster)\nor [recreated](https://docs.cloud.google.com/managed-spark/docs/guides/recreate-cluster#recreate_and_update_a_cluster_2)\nwith images that don't have preconfigured Conda channels.",
+        "summary": {
+          "title": "New Managed Spark Image Versions Released",
+          "summary": "New subminor image versions for Managed Service for Apache Spark are now available, offering updated configurations. Note that newer versions (2.1.117 and 2.2.85) do not include preconfigured Conda channels by default, requiring explicit channel specification during cluster creation. Existing clusters using older images with preconfigured channels will need to be replaced after August 25, 2026."
+        }
+      }
+    ],
     "2026-06-22": [
       {
         "kind": "Breaking",
@@ -34,6 +44,16 @@
         "summary": {
           "title": "Managed Service for Apache Spark version update delayed",
           "summary": "The rollout of new sub-minor versions for Managed Service for Apache Spark, previously known as Dataproc on Compute Engine, has been rescheduled. The update, which introduces new sub-minor versions without pre-configured channels, will now begin on June 22, 2026, a slight delay from the original June 15, 2026 date."
+        }
+      }
+    ],
+    "2026-06-09": [
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions):\n\n* 1.2.82\n* 2.2.82\n* 2.3.35\n\nKey updates in these runtime versions include:\n\n* **Spark optimizations**: Enabled Spark skewed-join and self-join optimizations by default.",
+        "summary": {
+          "title": "Managed Spark runtime updates",
+          "summary": "New subminor runtime versions for Managed Service for Apache Spark are now available, including Spark optimizations for skewed-join and self-join enabled by default. These updates enhance performance and stability for your Spark workloads."
         }
       }
     ],

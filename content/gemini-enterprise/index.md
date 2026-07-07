@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-07-07
+
+### Feature
+
+**Gemini Enterprise: Managed organization policy constraints for data connectors (GA)**
+
+You can now use managed organization policy constraints to secure and control your data connectors in Gemini Enterprise.
+
+With this release, the following constraints are generally available (GA):
+\* **Restrict allowed data sources**: Use this policy to control which external data sources (such as Jira, Box, or Confluence) are permitted when adding a data store. For more information, see [Configure allowed data sources](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-data-sources).
+\* **Restrict allowed egress FQDNs**: Use this policy to control the egress fully qualified domain names (FQDNs) that your data stores can connect to. For more information, see [Configure allowed egress FQDNs for data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-egress-fqdns).
+
+For an overview of these policies and how they interact, see [Overview of managed policy constraints](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/managed-policy-constraints-overview).
+
+---
 ## 2026-07-06
 
 ### Feature

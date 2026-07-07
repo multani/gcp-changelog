@@ -1,5 +1,29 @@
 # Google SecOps
 
+## 2026-07-06
+
+### Feature
+
+**Data RBAC for first-party (1P) cases and alerts in public preview**
+
+**Availability:** This feature is available **only in the following regions:** europe-central2, asia-northeast1, asia-south1, australia-southeast1, northamerica-northeast2, europe-west3, europe-west6, southamerica-east1, asia-southeast1, me-central1, me-central2, me-west1, europe-west2, europe-west9, europe-west12, asia-southeast2, africa-south1, asia-east1, and asia-northeast3.
+
+Google SecOps now supports data role-based access control (Data RBAC) for first-party (1P) cases and alerts in SOAR. This feature automatically applies SIEM data access scopes to alerts and cases ingested using the Chronicle connector, ensuring analysts only see data they are authorized to access.
+
+**Key highlights**
+
+* **SIEM-scope-to-SOAR inheritance:** Ingested 1P SIEM alerts carry their assigned data access scopes, which are automatically inherited by their parent SOAR cases.
+* **Dual access enforcement:** To view a case or alert, users must have access to both the assigned SOAR environment and all associated data access scopes. Global users maintain full visibility.
+* **Scope-to-environment mapping:** Administrators can map SIEM data access scopes to SOAR environments (**SOAR settings > Environments**) to manage alert routing and grouping. Alerts without mapped scopes are routed to a fallback environment.
+* **Enhanced UI visibility and filtering:** Assigned data access scopes are visible next to the environment in the **Case header** and the **List cases** table, allowing for easy filtering.
+* **Manual case and grouping logic:** When creating cases manually, analysts can only select from the intersection of their permitted data access scopes and environment mappings.
+
+**Prerequisites and enablement**
+
+* Requires a unified Google SecOps instance with the **Chronicle connector** using the modern Chronicle API.
+* Administrators can enable this feature under **SIEM settings > Data access** by selecting **Enforce data access in SOAR** (or **Enforce data access** if SIEM data access is not yet active).
+
+---
 ## 2026-07-01
 
 ### Announcement

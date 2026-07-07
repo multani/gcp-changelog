@@ -1,5 +1,16 @@
 # Anthos Config Management
 
+## 2026-06-25
+
+### Change
+
+Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
+
+### Change
+
+Upgraded the Open Telemetry image from 0.150.0 to 0.152.0 to pick up vulnerability fixes. To understand the changes in each release, review the full changelog for [opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/CHANGELOG.md).
+
+---
 ## 2026-06-04
 
 ### Change

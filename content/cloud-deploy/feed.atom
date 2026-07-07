@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Deploy</title>
   <subtitle>Changelog for Google Cloud product: Cloud Deploy</subtitle>
-  <updated>2026-04-14T00:00:00+00:00</updated>
+  <updated>2026-06-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-deploy</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-deploy/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-deploy:2026-06-15:change:0</id>
+    <published>2026-06-15T00:00:00+00:00</published>
+    <updated>2026-06-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Cloud Deploy image now uses Kubectl Kustomize.</p>
+<p>By default, Cloud Deploy now uses the
+<a href="https://kubernetes.io/docs/reference/kubectl/generated/kubectl_kustomize/">Kustomize built into kubectl</a>.
+Previously, the default version of Kustomize was the version embedded in the
+Cloud Deploy image. Now it's the version used by kubectl.</p>
+<p>You can still use kustomize directly (not through kubectl) by specifying the
+kustomize version when you create a release.</p>]]></content>
+    <summary>Cloud Deploy has updated its default Kustomize behavior. It now utilizes the Kustomize integrated within kubectl, replacing the previous version embedded in the Cloud Deploy image. Users can still opt for a specific Kustomize version if needed.</summary>
+    <title>Change: Cloud Deploy image now uses Kubectl Kustomize</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

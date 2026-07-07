@@ -109,13 +109,13 @@ Now available in preview, the [**KPI Visualization** feature](https://docs.cloud
 
 ### Change
 
-Looker dashboard agents are now included in the embedded Looker experience. Embed users with the [appropriate permissions](https://docs.cloud.google.com/looker/docs/signed-embedding#permissions) can see dashboard agents on all the embedded dashboards that they have access to.
-
-[Learn more about how to configure an embedded dashboard for embed user visibility](https://docs.cloud.google.com/looker/docs/embedding).
+Conversational Analytics data agents that are [published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) now support visualizations in their conversations.
 
 ### Change
 
-Conversational Analytics data agents that are [published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) now support visualizations in their conversations.
+Looker dashboard agents are now included in the embedded Looker experience. Embed users with the [appropriate permissions](https://docs.cloud.google.com/looker/docs/signed-embedding#permissions) can see dashboard agents on all the embedded dashboards that they have access to.
+
+[Learn more about how to configure an embedded dashboard for embed user visibility](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding).
 
 ### Change
 

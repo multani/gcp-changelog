@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-07-01T00:00:00+00:00</updated>
+  <updated>2026-07-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-07-06:feature:0</id>
+    <published>2026-07-06T00:00:00+00:00</published>
+    <updated>2026-07-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Data RBAC for first-party (1P) cases and alerts in public preview</strong></p>
+<p><strong>Availability:</strong> This feature is available <strong>only in the following regions:</strong> europe-central2, asia-northeast1, asia-south1, australia-southeast1, northamerica-northeast2, europe-west3, europe-west6, southamerica-east1, asia-southeast1, me-central1, me-central2, me-west1, europe-west2, europe-west9, europe-west12, asia-southeast2, africa-south1, asia-east1, and asia-northeast3.</p>
+<p>Google SecOps now supports data role-based access control (Data RBAC) for first-party (1P) cases and alerts in SOAR. This feature automatically applies SIEM data access scopes to alerts and cases ingested using the Chronicle connector, ensuring analysts only see data they are authorized to access.</p>
+<p><strong>Key highlights</strong></p>
+<ul>
+<li><strong>SIEM-scope-to-SOAR inheritance:</strong> Ingested 1P SIEM alerts carry their assigned data access scopes, which are automatically inherited by their parent SOAR cases.</li>
+<li><strong>Dual access enforcement:</strong> To view a case or alert, users must have access to both the assigned SOAR environment and all associated data access scopes. Global users maintain full visibility.</li>
+<li><strong>Scope-to-environment mapping:</strong> Administrators can map SIEM data access scopes to SOAR environments (<strong>SOAR settings &gt; Environments</strong>) to manage alert routing and grouping. Alerts without mapped scopes are routed to a fallback environment.</li>
+<li><strong>Enhanced UI visibility and filtering:</strong> Assigned data access scopes are visible next to the environment in the <strong>Case header</strong> and the <strong>List cases</strong> table, allowing for easy filtering.</li>
+<li><strong>Manual case and grouping logic:</strong> When creating cases manually, analysts can only select from the intersection of their permitted data access scopes and environment mappings.</li>
+</ul>
+<p><strong>Prerequisites and enablement</strong></p>
+<ul>
+<li>Requires a unified Google SecOps instance with the <strong>Chronicle connector</strong> using the modern Chronicle API.</li>
+<li>Administrators can enable this feature under <strong>SIEM settings &gt; Data access</strong> by selecting <strong>Enforce data access in SOAR</strong> (or <strong>Enforce data access</strong> if SIEM data access is not yet active).</li>
+</ul>]]></content>
+    <summary>Google SecOps now supports data role-based access control (Data RBAC) for first-party cases and alerts in public preview. This feature automatically applies SIEM data access scopes to alerts and cases ingested using the Chronicle connector, ensuring analysts only see data they are authorized to access. Administrators can manage these access controls through SIEM and SOAR settings for enhanced security and data governance.</summary>
+    <title>Feature: Data RBAC for 1P Cases and Alerts Now in Public Preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

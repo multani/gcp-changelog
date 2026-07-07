@@ -1,5 +1,20 @@
 # BigQuery
 
+## 2026-07-06
+
+### Change
+
+For [data transfers from Facebook Ads](https://docs.cloud.google.com/bigquery/docs/facebook-ads-transfer),
+support for the `AdInsightsMMM` report has been temporarily disabled. Existing
+data transfers from Facebook Ads that include the `AdInsightsMMM` report will
+continue to run, but the transfer won't include data from the `AdInsightsMMM`
+report.
+
+This change is due to schema changes in the Facebook Ads API.
+
+For more information, see [July 06, 2026](https://docs.cloud.google.com/bigquery/docs/transfer-changes#Jul06-fb-ads).
+
+---
 ## 2026-07-01
 
 ### Feature

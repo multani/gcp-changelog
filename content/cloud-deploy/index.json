@@ -1,6 +1,16 @@
 {
   "name": "Cloud Deploy",
   "entries": {
+    "2026-06-15": [
+      {
+        "kind": "Change",
+        "content": "The Cloud Deploy image now uses Kubectl Kustomize.\n\nBy default, Cloud Deploy now uses the\n[Kustomize built into kubectl](https://kubernetes.io/docs/reference/kubectl/generated/kubectl_kustomize/).\nPreviously, the default version of Kustomize was the version embedded in the\nCloud Deploy image. Now it's the version used by kubectl.\n\nYou can still use kustomize directly (not through kubectl) by specifying the\nkustomize version when you create a release.",
+        "summary": {
+          "title": "Cloud Deploy image now uses Kubectl Kustomize",
+          "summary": "Cloud Deploy has updated its default Kustomize behavior. It now utilizes the Kustomize integrated within kubectl, replacing the previous version embedded in the Cloud Deploy image. Users can still opt for a specific Kustomize version if needed."
+        }
+      }
+    ],
     "2026-04-14": [
       {
         "kind": "Change",

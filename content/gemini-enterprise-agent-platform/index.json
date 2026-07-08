@@ -1,6 +1,32 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-07-08": [
+      {
+        "kind": "Deprecated",
+        "content": "**Grok 4.1 models deprecation**\n\nThe Grok 4.1 model family (including `xai/grok-4.1-fast-reasoning` and `xai/grok-4.1-fast-non-reasoning`) on the Gemini Enterprise Agent Platform is deprecated and will be shut down on August 20, 2026. After this date, Google Agent Platform Model as a Service (MaaS) will no longer serve these models. Specifically, API requests directed to the `https://aiplatform.googleapis.com/v1/projects/<your-project>/locations/global/endpoints/openapi/chat/completions` endpoint using the Grok 4.1 model IDs will fail and return a `400` error. To maintain service, migrate your applications to newer xAI models (such as Grok 4.2 or Grok 4.3) or choose an alternative model from the Google Cloud Model Garden.",
+        "summary": {
+          "title": "Grok 4.1 models are deprecated",
+          "summary": "The Grok 4.1 model family is deprecated and will be shut down on August 20, 2026. Migrate to newer xAI models or alternatives to maintain service."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Memory Bank support for Gemini Embedding 2**\n\nMemory Bank supports the `gemini-embedding-2` model for similarity search configurations.\n\nWhen you configure `gemini-embedding-2` as the embedding model, you must use one of the `global`, `us`, or `eu` endpoints in the model's resource name (for example, `projects/{project}/locations/us/publishers/google/models/gemini-embedding-2`). Memory Bank does not support using regional locations (for example, `us-central1`) for `gemini-embedding-2`.\n\nFor details, see [Similarity search configuration](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/setup#similarity-search-config).",
+        "summary": {
+          "title": "Memory Bank adds Gemini Embedding 2 support",
+          "summary": "Memory Bank now supports the gemini-embedding-2 model for similarity search. When configuring this model, use global, us, or eu endpoints. Regional locations like us-central1 are not supported for gemini-embedding-2."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Memory Bank IngestEvents is generally available (GA)**\n\nThe Memory Bank `IngestEvents` API is generally available. The `IngestEvents` API decouples event ingestion from memory generation, letting you continuously stream content to Memory Bank and configure when memory generation is triggered.\n\nThis GA release includes the following features:\n\n* **Carry over context between generation windows:** Use the `overlap_event_count` parameter to re-include already-processed events at the start of the next window to keep memories coherent.\n* **Configure memory revisions for ingested events:** Use `revision_labels`, `revision_ttl`, or `disable_memory_revisions` to customize how generated revisions are managed.\n* **Attach metadata to memories:** Use the `metadata` and `metadata_merge_strategy` configuration parameters to store structured information alongside generated memories.\n\nFor details, see [Ingest events](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/ingest-events).",
+        "summary": {
+          "title": "Memory Bank IngestEvents Now Generally Available",
+          "summary": "The IngestEvents API for Memory Bank is now generally available, offering enhanced control over event streaming and memory generation. This release introduces features like carrying over context between generation windows, configuring memory revisions, and attaching metadata to memories."
+        }
+      }
+    ],
     "2026-07-06": [
       {
         "kind": "Feature",

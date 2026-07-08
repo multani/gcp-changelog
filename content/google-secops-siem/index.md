@@ -318,6 +318,8 @@ and [Result limits for data sources](https://docs.cloud.google.com/chronicle/doc
 
 The new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain additional metadata values that indicate the source of the enriched data.
 
+**Note:** The Enrichment feature requires the `chronicle.events.fetchEnrichedEvent` IAM permission. If you're using custom IAM roles, you must add one of the following permissions to your custom policies: `chronicle.googleapis.com/limitedViewer`, `chronicle.googleapis.com/restrictedDataAccessViewer`, or `chronicle.googleapis.com/viewer`.
+
 For more information, see: [Viewing events](https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events).
 
 ---

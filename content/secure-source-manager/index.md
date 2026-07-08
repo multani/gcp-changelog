@@ -1,5 +1,12 @@
 # Secure Source Manager
 
+## 2026-07-02
+
+### Feature
+
+Secure Source Manager is now compliant with EU VPAT / WCAG 2.2.
+
+---
 ## 2026-05-28
 
 ### Breaking

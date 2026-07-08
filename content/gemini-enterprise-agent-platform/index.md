@@ -1,5 +1,38 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-07-08
+
+### Deprecated
+
+**Grok 4.1 models deprecation**
+
+The Grok 4.1 model family (including `xai/grok-4.1-fast-reasoning` and `xai/grok-4.1-fast-non-reasoning`) on the Gemini Enterprise Agent Platform is deprecated and will be shut down on August 20, 2026. After this date, Google Agent Platform Model as a Service (MaaS) will no longer serve these models. Specifically, API requests directed to the `https://aiplatform.googleapis.com/v1/projects/<your-project>/locations/global/endpoints/openapi/chat/completions` endpoint using the Grok 4.1 model IDs will fail and return a `400` error. To maintain service, migrate your applications to newer xAI models (such as Grok 4.2 or Grok 4.3) or choose an alternative model from the Google Cloud Model Garden.
+
+### Feature
+
+**Memory Bank support for Gemini Embedding 2**
+
+Memory Bank supports the `gemini-embedding-2` model for similarity search configurations.
+
+When you configure `gemini-embedding-2` as the embedding model, you must use one of the `global`, `us`, or `eu` endpoints in the model's resource name (for example, `projects/{project}/locations/us/publishers/google/models/gemini-embedding-2`). Memory Bank does not support using regional locations (for example, `us-central1`) for `gemini-embedding-2`.
+
+For details, see [Similarity search configuration](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/setup#similarity-search-config).
+
+### Feature
+
+**Memory Bank IngestEvents is generally available (GA)**
+
+The Memory Bank `IngestEvents` API is generally available. The `IngestEvents` API decouples event ingestion from memory generation, letting you continuously stream content to Memory Bank and configure when memory generation is triggered.
+
+This GA release includes the following features:
+
+* **Carry over context between generation windows:** Use the `overlap_event_count` parameter to re-include already-processed events at the start of the next window to keep memories coherent.
+* **Configure memory revisions for ingested events:** Use `revision_labels`, `revision_ttl`, or `disable_memory_revisions` to customize how generated revisions are managed.
+* **Attach metadata to memories:** Use the `metadata` and `metadata_merge_strategy` configuration parameters to store structured information alongside generated memories.
+
+For details, see [Ingest events](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/ingest-events).
+
+---
 ## 2026-07-06
 
 ### Feature

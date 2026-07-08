@@ -118,10 +118,10 @@
     "2026-06-09": [
       {
         "kind": "Feature",
-        "content": "**UDM fields now show the sources of enrichment**\n\nThe new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain additional metadata values that indicate the source of the enriched data.\n\nFor more information, see: [Viewing events](https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events).",
+        "content": "**UDM fields now show the sources of enrichment**\n\nThe new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain additional metadata values that indicate the source of the enriched data.\n\n**Note:** The Enrichment feature requires the `chronicle.events.fetchEnrichedEvent` IAM permission. If you're using custom IAM roles, you must add one of the following permissions to your custom policies: `chronicle.googleapis.com/limitedViewer`, `chronicle.googleapis.com/restrictedDataAccessViewer`, or `chronicle.googleapis.com/viewer`.\n\nFor more information, see: [Viewing events](https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events).",
         "summary": {
-          "title": "Data enrichment sources now visible",
-          "summary": "The new Enrichment feature improves data management by showing the source of each UDM field. An icon indicates whether a field is unenriched (U) or enriched (E), with enriched fields providing metadata about their origin."
+          "title": "UDM Fields Show Enrichment Sources",
+          "summary": "The new Enrichment feature now displays icons next to UDM fields, indicating whether they are unenriched (U) or enriched (E). Enriched fields provide additional metadata about their data sources. This feature requires specific IAM permissions."
         }
       }
     ],

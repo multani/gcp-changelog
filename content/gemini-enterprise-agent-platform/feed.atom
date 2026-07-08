@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-07-06T00:00:00+00:00</updated>
+  <updated>2026-07-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-08:deprecated:0</id>
+    <published>2026-07-08T00:00:00+00:00</published>
+    <updated>2026-07-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Grok 4.1 models deprecation</strong></p>
+<p>The Grok 4.1 model family (including <code>xai/grok-4.1-fast-reasoning</code> and <code>xai/grok-4.1-fast-non-reasoning</code>) on the Gemini Enterprise Agent Platform is deprecated and will be shut down on August 20, 2026. After this date, Google Agent Platform Model as a Service (MaaS) will no longer serve these models. Specifically, API requests directed to the <code>https://aiplatform.googleapis.com/v1/projects/&lt;your-project&gt;/locations/global/endpoints/openapi/chat/completions</code> endpoint using the Grok 4.1 model IDs will fail and return a <code>400</code> error. To maintain service, migrate your applications to newer xAI models (such as Grok 4.2 or Grok 4.3) or choose an alternative model from the Google Cloud Model Garden.</p>]]></content>
+    <summary>The Grok 4.1 model family is deprecated and will be shut down on August 20, 2026. Migrate to newer xAI models or alternatives to maintain service.</summary>
+    <title>Deprecated: Grok 4.1 models are deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-08:feature:1</id>
+    <published>2026-07-08T00:00:00+00:00</published>
+    <updated>2026-07-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Memory Bank support for Gemini Embedding 2</strong></p>
+<p>Memory Bank supports the <code>gemini-embedding-2</code> model for similarity search configurations.</p>
+<p>When you configure <code>gemini-embedding-2</code> as the embedding model, you must use one of the <code>global</code>, <code>us</code>, or <code>eu</code> endpoints in the model's resource name (for example, <code>projects/{project}/locations/us/publishers/google/models/gemini-embedding-2</code>). Memory Bank does not support using regional locations (for example, <code>us-central1</code>) for <code>gemini-embedding-2</code>.</p>
+<p>For details, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/setup#similarity-search-config">Similarity search configuration</a>.</p>]]></content>
+    <summary>Memory Bank now supports the gemini-embedding-2 model for similarity search. When configuring this model, use global, us, or eu endpoints. Regional locations like us-central1 are not supported for gemini-embedding-2.</summary>
+    <title>Feature: Memory Bank adds Gemini Embedding 2 support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-08:feature:2</id>
+    <published>2026-07-08T00:00:00+00:00</published>
+    <updated>2026-07-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Memory Bank IngestEvents is generally available (GA)</strong></p>
+<p>The Memory Bank <code>IngestEvents</code> API is generally available. The <code>IngestEvents</code> API decouples event ingestion from memory generation, letting you continuously stream content to Memory Bank and configure when memory generation is triggered.</p>
+<p>This GA release includes the following features:</p>
+<ul>
+<li><strong>Carry over context between generation windows:</strong> Use the <code>overlap_event_count</code> parameter to re-include already-processed events at the start of the next window to keep memories coherent.</li>
+<li><strong>Configure memory revisions for ingested events:</strong> Use <code>revision_labels</code>, <code>revision_ttl</code>, or <code>disable_memory_revisions</code> to customize how generated revisions are managed.</li>
+<li><strong>Attach metadata to memories:</strong> Use the <code>metadata</code> and <code>metadata_merge_strategy</code> configuration parameters to store structured information alongside generated memories.</li>
+</ul>
+<p>For details, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/ingest-events">Ingest events</a>.</p>]]></content>
+    <summary>The IngestEvents API for Memory Bank is now generally available, offering enhanced control over event streaming and memory generation. This release introduces features like carrying over context between generation windows, configuring memory revisions, and attaching metadata to memories.</summary>
+    <title>Feature: Memory Bank IngestEvents Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

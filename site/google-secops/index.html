@@ -2979,6 +2979,7 @@ and <a href="https://docs.cloud.google.com/chronicle/docs/investigation/udm-sear
 <h3 id="feature_6">Feature</h3>
 <p><strong>UDM fields now show the sources of enrichment</strong></p>
 <p>The new Enrichment feature introduces improvements for managing and understanding your data. Each UDM field is now labeled with an icon to indicate its data source: U for unenriched fields and E for enriched fields. Enriched fields contain additional metadata values that indicate the source of the enriched data.</p>
+<p><strong>Note:</strong> The Enrichment feature requires the <code>chronicle.events.fetchEnrichedEvent</code> IAM permission. If you're using custom IAM roles, you must add one of the following permissions to your custom policies: <code>chronicle.googleapis.com/limitedViewer</code>, <code>chronicle.googleapis.com/restrictedDataAccessViewer</code>, or <code>chronicle.googleapis.com/viewer</code>.</p>
 <p>For more information, see: <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/data-enrichment#viewing_events">Viewing events</a>.</p>
 <hr />
 <h2 id="2026-06-01">2026-06-01</h2>

@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-07-07
+
+### Feature
+
+When you delete a Looker (Google Cloud core) instance, it is now [moved to the trash](https://docs.cloud.google.com/looker/docs/looker-core-delete#instance-delete) for seven days before being permanently deleted. During this period, you can [restore the instance](https://docs.cloud.google.com/looker/docs/looker-core-delete#restore) to its previous state. After seven days, the instance is permanently deleted from the trash and cannot be recovered.
+
+---
 ## 2026-07-01
 
 ### Announcement
@@ -125,15 +132,17 @@ The [Granular Dashboard Sizing preview feature](https://docs.cloud.google.com/lo
 
 The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a [dashboard summary](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries) is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the **Enable Dashboard Summary** feature on the **Gemini in Looker** admin page.
 
-### Feature
-
-Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Previews** admin page.
-
-**Note**: The **Conversational Analytics Observability** preview feature is temporarily unavailable. You can still monitor Conversational Analytics engagement on the Conversational Analytics System Activity dashboard, but metrics on token usage are not available. (This release note was updated on June 29, 2026.)
+**Note**: This feature is not yet available. This item was updated on July 6, 2026.
 
 ### Breaking
 
 When you update the Gemini Enterprise instance that is connected to Looker, any [data agents that you published](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) to the previous Gemini Enterprise instance will be unpublished. You can still access these data agents in Looker, but you must re-publish them to the new Gemini Enterprise instance before you can chat with those agents in Gemini Enterprise.
+
+### Feature
+
+Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Previews** admin page.
+
+**Note**: The **Conversational Analytics Observability** preview feature is temporarily unavailable. You can still monitor Conversational Analytics engagement on the Conversational Analytics System Activity dashboard, but metrics on token usage are not available. This item was updated on June 29, 2026.
 
 ---
 ## 2026-06-04

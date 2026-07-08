@@ -1,5 +1,51 @@
 # Google Kubernetes Engine
 
+## 2026-07-07
+
+### Feature
+
+In GKE version 1.34 and later, you can configure Google Cloud Managed Service
+for Prometheus to collect Pressure Stall Information (PSI) metrics from
+cAdvisor. You can use PSI metrics to monitor CPU, memory, and I/O congestion and
+stall times for your containers, Pods, and nodes. For more information, see
+[Collect specific Prometheus metrics from Kubernetes](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/collect-specific-prometheus-metrics).
+
+### Feature
+
+In GKE version 1.35.3-gke.1389000 and later, you can run GPU workloads on
+Confidential GKE Nodes with certain G4 machine types and NVIDIA RTX PRO 6000
+GPUs. This feature is available in Preview. For more information, see
+[Encrypt GPU workload data in use with Confidential GKE Nodes](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/gpus-confidential-nodes).
+
+### Feature
+
+In GKE version 1.36.0-gke.1601000 and later, you can enable the logging of
+VerticalPodAutoscaler decisions in Cloud Logging. You can use these logs to
+understand why specific vertical Pod autoscaling decisions were made. This
+feature is available in Preview. For more information, see
+[Collect vertical Pod autoscaler event logs](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/view-vertical-pod-autoscaling-events).
+
+### Feature
+
+GKE Gateway now supports backend mutual TLS (mTLS). In addition to backend authenticated TLS, backend mTLS allows the GKE Gateway load balancer to authenticate its identity to backend Pods by presenting a client certificate. GKE Gateway configures backend mTLS using the standard Gateway API `spec.tls.backend.clientCertificateRef` field.
+
+This feature is supported for the following GatewayClasses:
+
+* `gke-l7-global-external-managed`
+* `gke-l7-regional-external-managed`
+* `gke-l7-rilb`
+
+For more information, see [Configure backend mutual TLS (mTLS) for a Gateway](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/secure-gateway#configure-backend-mtls).
+
+### Change
+
+For GKE Standard clusters, the maximum number of nodes that you can upgrade
+simultaneously by using surge upgrades (`maxSurge` + `maxUnavailable`) is now
+100. Each of these settings can be set as high as 100, but their sum can be no
+higher than 100. For more information, see
+[Surge upgrades](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#surge).
+
+---
 ## 2026-06-29
 
 ### Change

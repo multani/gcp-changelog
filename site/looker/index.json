@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-07-07": [
+      {
+        "kind": "Feature",
+        "content": "When you delete a Looker (Google Cloud core) instance, it is now [moved to the trash](https://docs.cloud.google.com/looker/docs/looker-core-delete#instance-delete) for seven days before being permanently deleted. During this period, you can [restore the instance](https://docs.cloud.google.com/looker/docs/looker-core-delete#restore) to its previous state. After seven days, the instance is permanently deleted from the trash and cannot be recovered.",
+        "summary": {
+          "title": "Instance deletion now offers a 7-day recovery period",
+          "summary": "Looker instances deleted are now moved to a trash bin for seven days, during which they can be restored. After this period, the instance will be permanently deleted."
+        }
+      }
+    ],
     "2026-07-01": [
       {
         "kind": "Announcement",
@@ -166,18 +176,10 @@
       },
       {
         "kind": "Change",
-        "content": "The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a [dashboard summary](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries) is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the **Enable Dashboard Summary** feature on the **Gemini in Looker** admin page.",
+        "content": "The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a [dashboard summary](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries) is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the **Enable Dashboard Summary** feature on the **Gemini in Looker** admin page.\n\n**Note**: This feature is not yet available. This item was updated on July 6, 2026.",
         "summary": {
-          "title": "Dashboard Summary Feature Now Available",
-          "summary": "The dashboard summary feature can now be enabled independently from dashboard data agents. This enhancement, disabled by default, automatically generates a summary at the top of dashboard conversations when activated by a Looker admin. Administrators can enable this feature on the Gemini in Looker admin page."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Previews** admin page.\n\n**Note**: The **Conversational Analytics Observability** preview feature is temporarily unavailable. You can still monitor Conversational Analytics engagement on the Conversational Analytics System Activity dashboard, but metrics on token usage are not available. (This release note was updated on June 29, 2026.)",
-        "summary": {
-          "title": "Enhanced Observability for Conversational Analytics Now in Preview",
-          "summary": "Preview enhanced observability metrics for Conversational Analytics, including engagement and token usage, are now available on the System Activity dashboard. A Looker admin can enable this feature by activating the 'Conversational Analytics Observability' setting on the Previews admin page. Please note that token usage metrics are temporarily unavailable, but engagement monitoring remains accessible."
+          "title": "Dashboard summary feature now available",
+          "summary": "The dashboard summary feature can now be enabled independently of dashboard data agents. This feature, which generates an automatic summary at the top of dashboard conversations, is disabled by default and requires admin enablement. Please note that this feature is not yet available."
         }
       },
       {
@@ -186,6 +188,14 @@
         "summary": {
           "title": "Data agents in Gemini Enterprise may be unpublished after instance updates",
           "summary": "When updating your Gemini Enterprise instance, previously published data agents will be unpublished. You will need to re-publish these agents to the new instance to continue using them for chat interactions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Observability** setting on the **Previews** admin page.\n\n**Note**: The **Conversational Analytics Observability** preview feature is temporarily unavailable. You can still monitor Conversational Analytics engagement on the Conversational Analytics System Activity dashboard, but metrics on token usage are not available. This item was updated on June 29, 2026.",
+        "summary": {
+          "title": "Enhanced Observability Metrics for Conversational Analytics Now in Preview",
+          "summary": "Preview enhanced observability metrics for Conversational Analytics, including engagement and token usage data, on the System Activity dashboard. A Looker admin must enable the Conversational Analytics Observability setting to access these new insights. Note that token usage metrics are temporarily unavailable."
         }
       }
     ],

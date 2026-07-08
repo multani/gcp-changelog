@@ -1,5 +1,15 @@
 # Google Cloud VMware Engine
 
+## 2026-07-07
+
+### Feature
+
+Custom organization policy constraints are generally available (GA) for Google Cloud VMware Engine.
+You can use custom constraints to enforce security policies and restrict configuration of your VMware Engine resources.
+
+For more information, see [Use custom organization policies](https://docs.cloud.google.com/vmware-engine/docs/custom-constraints).
+
+---
 ## 2026-06-24
 
 ### Announcement

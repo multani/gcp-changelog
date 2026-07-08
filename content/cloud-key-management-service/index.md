@@ -1,5 +1,19 @@
 # Cloud Key Management Service
 
+## 2026-07-07
+
+### Feature
+
+The Cloud KMS overview dashboard **Asymmetric PQC insights** chart is generally
+available. You can use the **Asymmetric PQC insights** chart and details view to identify how many and which of your asymmetric keys are susceptible to attacks
+from future quantum computers. This information is an important input into your
+quantum computing modernization planning and process.
+
+For more information about the **Asymmetric PQC insights** chart, see [View
+asymmetric post-quantum cryptography (PQC)
+insights](https://docs.cloud.google.com/kms/docs/view-pqc-insights).
+
+---
 ## 2026-05-14
 
 ### Feature

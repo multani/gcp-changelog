@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-07-07
+
+### Feature
+
+Managed Service for Apache Kafka now supports topic compression with `zstd`.
+
+---
 ## 2026-04-17
 
 ### Feature

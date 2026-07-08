@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-07-01T00:00:00+00:00</updated>
+  <updated>2026-07-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-07:feature:0</id>
+    <published>2026-07-07T00:00:00+00:00</published>
+    <updated>2026-07-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you delete a Looker (Google Cloud core) instance, it is now <a href="https://docs.cloud.google.com/looker/docs/looker-core-delete#instance-delete">moved to the trash</a> for seven days before being permanently deleted. During this period, you can <a href="https://docs.cloud.google.com/looker/docs/looker-core-delete#restore">restore the instance</a> to its previous state. After seven days, the instance is permanently deleted from the trash and cannot be recovered.</p>]]></content>
+    <summary>Looker instances deleted are now moved to a trash bin for seven days, during which they can be restored. After this period, the instance will be permanently deleted.</summary>
+    <title>Feature: Instance deletion now offers a 7-day recovery period</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -262,32 +273,33 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-06-22:change:18</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries">dashboard summary</a> is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the <strong>Enable Dashboard Summary</strong> feature on the <strong>Gemini in Looker</strong> admin page.</p>]]></content>
-    <summary>The dashboard summary feature can now be enabled independently from dashboard data agents. This enhancement, disabled by default, automatically generates a summary at the top of dashboard conversations when activated by a Looker admin. Administrators can enable this feature on the Gemini in Looker admin page.</summary>
-    <title>Change: Dashboard Summary Feature Now Available</title>
+    <content type="html"><![CDATA[<p>The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries">dashboard summary</a> is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the <strong>Enable Dashboard Summary</strong> feature on the <strong>Gemini in Looker</strong> admin page.</p>
+<p><strong>Note</strong>: This feature is not yet available. This item was updated on July 6, 2026.</p>]]></content>
+    <summary>The dashboard summary feature can now be enabled independently of dashboard data agents. This feature, which generates an automatic summary at the top of dashboard conversations, is disabled by default and requires admin enablement. Please note that this feature is not yet available.</summary>
+    <title>Change: Dashboard summary feature now available</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:19</id>
-    <published>2026-06-22T00:00:00+00:00</published>
-    <updated>2026-06-22T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Observability</strong> setting on the <strong>Previews</strong> admin page.</p>
-<p><strong>Note</strong>: The <strong>Conversational Analytics Observability</strong> preview feature is temporarily unavailable. You can still monitor Conversational Analytics engagement on the Conversational Analytics System Activity dashboard, but metrics on token usage are not available. (This release note was updated on June 29, 2026.)</p>]]></content>
-    <summary>Preview enhanced observability metrics for Conversational Analytics, including engagement and token usage, are now available on the System Activity dashboard. A Looker admin can enable this feature by activating the 'Conversational Analytics Observability' setting on the Previews admin page. Please note that token usage metrics are temporarily unavailable, but engagement monitoring remains accessible.</summary>
-    <title>Feature: Enhanced Observability for Conversational Analytics Now in Preview</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:breaking:20</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:breaking:19</id>
     <published>2026-06-22T00:00:00+00:00</published>
     <updated>2026-06-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When you update the Gemini Enterprise instance that is connected to Looker, any <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents">data agents that you published</a> to the previous Gemini Enterprise instance will be unpublished. You can still access these data agents in Looker, but you must re-publish them to the new Gemini Enterprise instance before you can chat with those agents in Gemini Enterprise.</p>]]></content>
     <summary>When updating your Gemini Enterprise instance, previously published data agents will be unpublished. You will need to re-publish these agents to the new instance to continue using them for chat interactions.</summary>
     <title>Breaking: Data agents in Gemini Enterprise may be unpublished after instance updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-06-22:feature:20</id>
+    <published>2026-06-22T00:00:00+00:00</published>
+    <updated>2026-06-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, enhanced observability metrics, including engagement and token usage data, are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Observability</strong> setting on the <strong>Previews</strong> admin page.</p>
+<p><strong>Note</strong>: The <strong>Conversational Analytics Observability</strong> preview feature is temporarily unavailable. You can still monitor Conversational Analytics engagement on the Conversational Analytics System Activity dashboard, but metrics on token usage are not available. This item was updated on June 29, 2026.</p>]]></content>
+    <summary>Preview enhanced observability metrics for Conversational Analytics, including engagement and token usage data, on the System Activity dashboard. A Looker admin must enable the Conversational Analytics Observability setting to access these new insights. Note that token usage metrics are temporarily unavailable.</summary>
+    <title>Feature: Enhanced Observability Metrics for Conversational Analytics Now in Preview</title>
   </entry>
   <entry>
     <author>

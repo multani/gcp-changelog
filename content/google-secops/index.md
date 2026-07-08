@@ -23,6 +23,8 @@ Google SecOps now supports data role-based access control (Data RBAC) for first-
 * Requires a unified Google SecOps instance with the **Chronicle connector** using the modern Chronicle API.
 * Administrators can enable this feature under **SIEM settings > Data access** by selecting **Enforce data access in SOAR** (or **Enforce data access** if SIEM data access is not yet active).
 
+For more information, see [Control access to 1P cases and alerts](https://docs.cloud.google.com/chronicle/docs/administration/datarbac-impact-cases).
+
 ---
 ## 2026-07-01
 

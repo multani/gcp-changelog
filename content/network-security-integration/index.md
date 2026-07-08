@@ -1,5 +1,33 @@
 # Network Security Integration
 
+## 2026-06-30
+
+### Feature
+
+The broker mode for out-of-band Network Security Integration (also known as
+packet broker) is now available in **General Availability (GA) with allowlist**.
+Broker mode lets you mirror GENEVE-encapsulated network packets from a consumer
+network to multiple producer networks for analysis, and adds additional GENEVE
+metadata (such as timestamp and network stable ID).
+This feature is not available to all users. To access this feature, contact your
+Google account team.
+
+For more information, see [Out-of-band integration
+overview](https://docs.cloud.google.com/network-security-integration/docs/out-of-band/out-of-band-integration-overview#oob-modes)
+and [Understand GENEVE
+format](https://docs.cloud.google.com/network-security-integration/docs/understand-geneve).
+
+### Feature
+
+Project-level security profiles and security profile groups for Network Security
+Integration are now available in **General Availability (GA)**.
+
+For more information, see [Security profiles
+overview](https://docs.cloud.google.com/network-security-integration/docs/security-profiles-overview) and
+[Security profile groups
+overview](https://docs.cloud.google.com/network-security-integration/docs/security-profile-groups-overview).
+
+---
 ## 2026-05-04
 
 ### Feature

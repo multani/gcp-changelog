@@ -2,9 +2,103 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-07-01T00:00:00+00:00</updated>
+  <updated>2026-07-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-07:announcement:0</id>
+    <published>2026-07-07T00:00:00+00:00</published>
+    <updated>2026-07-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS.
+When we release this version, we expect the new capabilities to be as shown
+here.</p>]]></content>
+    <summary>These are the pre-release notes for the upcoming version of Google Cloud CCaaS, detailing the new capabilities expected upon release.</summary>
+    <title>Announcement: CCaaS pre-release notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-07:feature:1</id>
+    <published>2026-07-07T00:00:00+00:00</published>
+    <updated>2026-07-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Direct Access Points for chats</strong></p>
+<p>You can use a Direct Access Point (DAP) to route a chat conversation directly to
+a queue, based on the response from an API that you configure. This lets
+API-initiated chats bypass default routing and enter the intended queue
+immediately.</p>]]></content>
+    <summary>Route chats directly to queues using API responses. This feature allows API-initiated chats to bypass default routing and reach their intended queue instantly, streamlining conversation management.</summary>
+    <title>Feature: Direct chat routing</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-07:fixed:2</id>
+    <published>2026-07-07T00:00:00+00:00</published>
+    <updated>2026-07-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where the inactive chat dismissal timer didn't reset after
+  a chat was transferred from a virtual agent to a human agent.</li>
+<li>Fixed an issue where voicemails disappeared from the queue
+  immediately after being opened.</li>
+<li>Fixed an issue where the reporting dashboard incorrectly displayed call and
+  agent status during a cold transfer to another queue.</li>
+<li>Improved rendering performance in the agent desktop mini chat adapter.</li>
+<li>Fixed an issue where the storage path for screen recordings didn't align
+  with the folder structure displayed in the user interface.</li>
+<li>Fixed an issue where missing public files were incorrectly cached by the
+  CDN for up to seven days.</li>
+<li>Fixed an issue where agents were automatically redirected to the <strong>Closed</strong>
+  inbox view after changing an interaction status to <strong>Closed</strong>.</li>
+<li>Fixed an issue where the <strong>You cannot log out when in a chat</strong> notification
+  was truncated in the chat adapter.</li>
+<li>Fixed an issue with Salesforce integrations where rapid, concurrent data
+  requests caused information to be lost.</li>
+<li>Fixed an issue where duplicate call recording links were posted to Zendesk
+  tickets for multi-segment calls.</li>
+<li>Fixed an issue with Salesforce integrations where the UI retained settings
+  from a previous Salesforce organization after switching to a new
+  organization.</li>
+<li>Fixed an issue where duplicate customer satisfaction surveys were submitted
+  and recorded for a single live chat session.</li>
+<li>Fixed an issue where the message field in the chat adapter was inactive
+  when an agent accepted a new chat.</li>
+<li>Fixed an issue where task virtual agents were incorrectly identified as
+  <strong>Nobody</strong> when joining a conversation after a transfer from a human agent.</li>
+<li>Fixed an issue that occurred when a chat entered a queue and the greeting
+  message was sent before an agent was assigned. In these cases, the
+  associated push notification crashed and logged an error, producing
+  excessive noise in logs.</li>
+<li>Fixed an issue where the agent's final message in a chat session
+  appeared after <strong>This chat is ended</strong> in the chat adapter and the CRM
+  transcript.</li>
+<li>Fixed an issue where agents using instances without a CRM configuration
+  received a <strong>No Account Detected</strong> warning when making outbound calls.</li>
+<li>Fixed an issue where notification chimes played after an agent had connected
+  to an active call.</li>
+<li>Fixed an issue where the country code list didn't automatically update the
+  country flag when a phone number was entered without the <code>+</code> prefix.</li>
+<li>Fixed an issue where calls to an agent's personal queue didn't break through
+  if the agent was also assigned to an inbound queue with breakthrough
+  disabled.</li>
+<li>Fixed an issue where outbound calls that were transferred to a queue didn't
+  adhere to the queue's deltacast configuration.</li>
+<li>Fixed an issue where the agent desktop became unstable or didn't load.</li>
+<li>Fixed an issue where wrap-up time was incorrectly reported when agents
+  exceeded the configured wrap-up time.</li>
+<li>Fixed an issue where the IVR queues dashboard didn't load for instances with
+  a large volume of queues.</li>
+<li>Fixed an issue where calls to the <code>manager/api/v1/agent_activity_logs</code>
+  endpoint timed out when <code>sort_direction</code> was turned off.</li>
+</ul>]]></content>
+    <summary>This update addresses several issues, including problems with chat transfers, voicemail handling, reporting accuracy, and integration stability. Performance in the agent desktop mini chat adapter has also been improved.</summary>
+    <title>Fixed: Resolved issues and performance improvements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

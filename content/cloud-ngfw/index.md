@@ -1,5 +1,33 @@
 # Cloud NGFW
 
+## 2026-06-30
+
+### Feature
+
+You can now create and configure project-level resources for application layer
+inspection in Cloud NGFW, including project-level firewall endpoints, security
+profile groups, and security profiles. For more information, see
+[Organization-level and project-level
+resources](https://docs.cloud.google.com/firewall/docs/about-app-layer-inspection#org-project-resources),
+[Firewall endpoints overview](https://docs.cloud.google.com/firewall/docs/about-firewall-endpoints),
+[Security profile groups overview](https://docs.cloud.google.com/firewall/docs/about-security-profile-groups),
+and [Security profiles overview](https://docs.cloud.google.com/firewall/docs/about-security-profiles). This
+feature is available in **General Availability**.
+
+### Feature
+
+To restrict traffic to the managed Envoy proxies in a
+[proxy-only subnet](https://docs.cloud.google.com/load-balancing/docs/proxy-only-subnets), you can configure
+global network firewall policies and regional network firewall policies to
+protect internal Application Load Balancers and internal proxy Network Load
+Balancers. For more information, see [Use global network firewall policies to
+protect Envoy-based load balancers](https://docs.cloud.google.com/firewall/docs/global-network-app-lb) and
+[Use regional network firewall policies to protect internal Application Load
+Balancers and internal proxy Network Load
+Balancers](https://docs.cloud.google.com/firewall/docs/regional-network-app-lb). This feature is available in
+**General Availability**.
+
+---
 ## 2026-05-04
 
 ### Feature

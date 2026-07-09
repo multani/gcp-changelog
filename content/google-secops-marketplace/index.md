@@ -1,5 +1,34 @@
 # Google SecOps Marketplace
 
+## 2026-07-08
+
+### Change
+
+**FileUtilities**: Version 27.0
+
+* Added support for extracting files from .7z archives in the following action:
+
+  + **Extract Zip Files**
+
+### Change
+
+**Google Threat Intelligence**: Version 17.0
+
+* Fixed widget rendering failures by escaping raw HTML script tags within
+  `extended_response_body` in the following action:
+
+  + **Get ASM Entity Details**
+
+### Change
+
+**Google Chronicle**: Version 87.0
+
+* Improved case and alert synchronization logic by fixing the verification
+  handling of valid external ID values in the following job:
+
+  + **Google Chronicle Sync Job**
+
+---
 ## 2026-07-01
 
 ### Feature

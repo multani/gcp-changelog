@@ -1,5 +1,16 @@
 # Apigee X
 
+## 2026-07-08
+
+### Security
+
+An Improper Input Validation vulnerability in BigQuery DAO in Google Cloud Apigee versions prior to 2026-06-12 on Google Cloud Platform allowed an authenticated attacker to exfiltrate cross-tenant data.
+
+This vulnerability was patched on 12 June 2026 on the Apigee Servers, and no customer action is needed. Apigee hybrid was not affected.
+
+For more information, see [CVE-2026-12879](http://cve.org/CVERecord?id=CVE-2026-12879).
+
+---
 ## 2026-07-06
 
 ### Feature

@@ -1,6 +1,32 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-07-08": [
+      {
+        "kind": "Change",
+        "content": "**FileUtilities**: Version 27.0\n\n* Added support for extracting files from .7z archives in the following action:\n\n  + **Extract Zip Files**",
+        "summary": {
+          "title": "FileUtilities update adds 7z support",
+          "summary": "FileUtilities version 27.0 now supports extracting files from .7z archives. This functionality has been added to the Extract Zip Files action."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Threat Intelligence**: Version 17.0\n\n* Fixed widget rendering failures by escaping raw HTML script tags within\n  `extended_response_body` in the following action:\n\n  + **Get ASM Entity Details**",
+        "summary": {
+          "title": "Security update for threat intelligence",
+          "summary": "Version 17.0 of Google Threat Intelligence includes a fix for widget rendering failures. This resolves an issue where raw HTML script tags in extended response bodies could cause rendering problems, specifically within the Get ASM Entity Details action."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Chronicle**: Version 87.0\n\n* Improved case and alert synchronization logic by fixing the verification\n  handling of valid external ID values in the following job:\n\n  + **Google Chronicle Sync Job**",
+        "summary": {
+          "title": "Chronicle Version 87.0 Update",
+          "summary": "Version 87.0 of Chronicle includes improvements to case and alert synchronization. This update addresses verification handling for external ID values within the Chronicle Sync Job."
+        }
+      }
+    ],
     "2026-07-01": [
       {
         "kind": "Feature",

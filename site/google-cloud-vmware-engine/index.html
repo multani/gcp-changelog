@@ -2673,9 +2673,24 @@ Disaster recovery options include the following:</p>
 <li>Protect workloads on a primary private cloud by using a recovery site in another Google Cloud location or on-premises environment.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-disaster-recovery-jetstream">Configure disaster recovery using JetStream</a>.</p>
+<h3 id="feature_1">Feature</h3>
+<p><strong>Generally available</strong>: Google Cloud VMware Engine offers self-service management for
+<a href="https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-vsan-encryption">customer-managed encryption keys (CMEK)</a>
+using the Google Cloud console and the VMware Engine API. You can enable CMEK for
+your private clouds, using Cloud Key Management Service (Cloud KMS) to manage encryption keys for
+vSAN and <a href="https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-vtpm">vTPM</a>. Key features and considerations include:</p>
+<ul>
+<li>You can transition between CMEK and Google-owned and Google-managed encryption keys (GMEK) as
+  needed.</li>
+<li>The "Auto-Rekey" feature integrates with Cloud KMS key rotation to perform automated key rotation
+  for the key encryption key (KEK), maintaining security without manual intervention or
+  service downtime.</li>
+</ul>
+<p><strong>Limitations</strong>: This self-service functionality is unavailable for private clouds
+that use CMEK through service tickets.</p>
 <hr />
 <h2 id="2026-07-07">2026-07-07</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Custom organization policy constraints are generally available (GA) for Google Cloud VMware Engine.
 You can use custom constraints to enforce security policies and restrict configuration of your VMware Engine resources.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/vmware-engine/docs/custom-constraints">Use custom organization policies</a>.</p>
@@ -2706,7 +2721,7 @@ additional region:</p>
 documentation to <a href="https://docs.cloud.google.com/vmware-engine/docs/howto-migrate-ve1-hardware">migrate workloads from retiring ve1 hardware</a>. First-generation <code>ve1</code> bare metal nodes are reaching the end of their useful life on a rolling basis. When your hardware is scheduled for retirement, you receive an EoL notification containing timelines and instructions to migrate your clusters.</p>
 <hr />
 <h2 id="2026-05-11">2026-05-11</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can now use Privileged Access Manager (PAM) to <a href="https://docs.cloud.google.com/vmware-engine/docs/private-clouds/howto-manage-private-cloud#delete-cluster">delete clusters</a>
 in the private clouds.</p>
 <hr />
@@ -2719,7 +2734,7 @@ additional region:</p>
 </ul>
 <hr />
 <h2 id="2026-04-27">2026-04-27</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><strong>Generally available (GA) with an allowlist:</strong> You can now <a href="https://docs.cloud.google.com/vmware-engine/docs/private-clouds/howto-manage-private-cloud#migrate-vms">migrate VMware management VMs</a>
 from their host cluster to a different cluster within the same private cloud.
 This feature is available to select customers through an allowlist. To migrate
@@ -2729,12 +2744,12 @@ the target workload cluster to a management cluster, and the source management
 cluster becomes a workload cluster.</p>
 <hr />
 <h2 id="2026-04-09">2026-04-09</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>You can now use Privileged Access Manager (PAM) to <a href="https://docs.cloud.google.com/vmware-engine/docs/private-clouds/howto-manage-private-cloud#delete-cluster">delete clusters</a>
 in the private clouds.</p>
 <hr />
 <h2 id="2026-03-10">2026-03-10</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p><strong>Public Preview:</strong> You can now <a href="https://docs.cloud.google.com/vmware-engine/docs/private-clouds/howto-manage-private-cloud#migrate-vms">migrate VMware management VMs</a>
 from their host cluster to a different cluster within the same private cloud.
 To migrate management VMs, you must have at least two clusters in your private
@@ -2795,7 +2810,7 @@ must be comprised of nodes from the same family type.</p>
 Cloud Customer Care.</p>
 <hr />
 <h2 id="2026-01-06">2026-01-06</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>VMware Engine introduces enhancements to simplify using external NFS
 datastores. External NFS datastores let you scale storage independently of
 compute resources for your VMware workloads. You can use Filestore or
@@ -2874,7 +2889,7 @@ Google Cloud VMware Engine. For more information, see <a href="https://docs.clou
 </ul>
 <hr />
 <h2 id="2025-09-11">2025-09-11</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>You can now use Privileged Access Manager (PAM) to accelerate the deletion of "soft deleted" private clouds. For more information, see the documentation on how to <a href="https://cloud.google.com/vmware-engine/docs/private-clouds/howto-delete-private-cloud">delete a private cloud</a>.</p>
 <hr />
 <h2 id="2025-08-28">2025-08-28</h2>
@@ -2894,12 +2909,12 @@ Google Cloud VMware Engine. For more information, see <a href="https://docs.clou
 <p>VMware Engine <code>ve2</code> nodes are now available in the São Paulo, Brazil (<code>southamerica-east1-c</code>) zone in the São Paulo region (<code>southamerica-east1</code>).</p>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>When upgrading to Windows Server 2022 or newer images on your GCVE private clouds, you can use a combination of Windows Server BYOL for Windows Server 2019 and earlier images and on-demand licensing for Google-provided Windows Server 2022. For more information, see
 <a href="https://cloud.google.com/vmware-engine/docs/vmware-ecosystem/microsoft-licensing#combination-mode">Use a combination of BYOL and on-demand Windows Server licenses from Google</a>.</p>
 <hr />
 <h2 id="2025-07-01">2025-07-01</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>VMware Engine single-node private clouds, created after June 4th 2025, will no longer delete after 60 days. All single-node private clouds will have no time limit. Single-node private clouds have limitations to <a href="https://cloud.google.com/vmware-engine/sla?e=48754805&amp;hl=en">SLA</a>, <a href="https://cloud.google.com/vmware-engine/docs/concepts-private-cloud#single-node">patching</a>, and <a href="https://cloud.google.com/vmware-engine/docs/concepts-private-cloud#single-node">upgrades</a>.</p>
 <hr />
 <h2 id="2025-06-11">2025-06-11</h2>

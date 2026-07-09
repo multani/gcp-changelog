@@ -26,6 +26,30 @@ Disaster recovery options include the following:</p>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-vmware-engine:2026-07-08:feature:1</id>
+    <published>2026-07-08T00:00:00+00:00</published>
+    <updated>2026-07-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: Google Cloud VMware Engine offers self-service management for
+<a href="https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-vsan-encryption">customer-managed encryption keys (CMEK)</a>
+using the Google Cloud console and the VMware Engine API. You can enable CMEK for
+your private clouds, using Cloud Key Management Service (Cloud KMS) to manage encryption keys for
+vSAN and <a href="https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-vtpm">vTPM</a>. Key features and considerations include:</p>
+<ul>
+<li>You can transition between CMEK and Google-owned and Google-managed encryption keys (GMEK) as
+  needed.</li>
+<li>The "Auto-Rekey" feature integrates with Cloud KMS key rotation to perform automated key rotation
+  for the key encryption key (KEK), maintaining security without manual intervention or
+  service downtime.</li>
+</ul>
+<p><strong>Limitations</strong>: This self-service functionality is unavailable for private clouds
+that use CMEK through service tickets.</p>]]></content>
+    <summary>Google Cloud VMware Engine now supports self-service management of customer-managed encryption keys (CMEK) through the Google Cloud console and API. This feature allows you to manage encryption keys for vSAN and vTPM using Cloud KMS, with options for transitioning between CMEK and Google-managed keys, and automated rekeying.</summary>
+    <title>Feature: Enable self-service encryption key management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:google-cloud-vmware-engine:2026-07-07:feature:0</id>
     <published>2026-07-07T00:00:00+00:00</published>
     <updated>2026-07-07T00:00:00+00:00</updated>

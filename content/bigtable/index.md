@@ -1,5 +1,13 @@
 # Bigtable
 
+## 2026-07-09
+
+### Feature
+
+You can use the [Bigtable client library for Go](https://docs.cloud.google.com/bigtable/docs/reference/libraries)
+to execute read jobs and queries using [Data Boost](https://docs.cloud.google.com/bigtable/docs/data-boost-overview).
+
+---
 ## 2026-07-07
 
 ### Feature

@@ -1,5 +1,19 @@
 # Compute Engine
 
+## 2026-07-09
+
+### Feature
+
+**Preview**: Advanced Compute Images provide high-performance images to support
+your artificial intelligence (AI), machine learning (ML), and high-performance
+computing (HPC) workloads on Google Cloud.
+
+Advanced Compute Images provide a single source of trusted, performance-tuned
+OS images that remove the need for manual image building for specialized
+workloads. Each image version is pre-installed with the necessary drivers,
+network fabrics, and Slurm agents to help you run your workloads.
+
+---
 ## 2026-07-08
 
 ### Feature

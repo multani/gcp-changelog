@@ -12,6 +12,23 @@ Disaster recovery options include the following:
 
 For more information, see [Configure disaster recovery using JetStream](https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-disaster-recovery-jetstream).
 
+### Feature
+
+**Generally available**: Google Cloud VMware Engine offers self-service management for
+[customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-vsan-encryption)
+using the Google Cloud console and the VMware Engine API. You can enable CMEK for
+your private clouds, using Cloud Key Management Service (Cloud KMS) to manage encryption keys for
+vSAN and [vTPM](https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-vtpm). Key features and considerations include:
+
+* You can transition between CMEK and Google-owned and Google-managed encryption keys (GMEK) as
+  needed.
+* The "Auto-Rekey" feature integrates with Cloud KMS key rotation to perform automated key rotation
+  for the key encryption key (KEK), maintaining security without manual intervention or
+  service downtime.
+
+**Limitations**: This self-service functionality is unavailable for private clouds
+that use CMEK through service tickets.
+
 ---
 ## 2026-07-07
 

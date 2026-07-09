@@ -1,5 +1,26 @@
 # Gemini Enterprise
 
+## 2026-07-09
+
+### Feature
+
+**Gemini Enterprise: AlphaEvolve algorithm optimization agent (GA)**
+
+The AlphaEvolve optimization service is generally available (GA) on the
+Gemini Enterprise agent. AlphaEvolve is a code optimization
+and discovery agent built on top of Gemini that helps solve the hardest algorithmic
+problems for your business and research. It combines creative, server-side
+LLM exploration with secure client-side code execution to autonomously
+discover new, optimized solutions that surpass human-designed
+baselines.
+
+**Note:** AlphaEvolve does not support FedRAMP or DoD compliance
+requirements. Access for environments requiring these standards is restricted
+by default but can be requested through your account team.
+
+For more information, see [AlphaEvolve documentation](https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/developer-guide/overview).
+
+---
 ## 2026-07-07
 
 ### Feature

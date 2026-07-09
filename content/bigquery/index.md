@@ -1,5 +1,22 @@
 # BigQuery
 
+## 2026-07-08
+
+### Change
+
+An updated version of the
+[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
+is now available.
+
+### Feature
+
+You can now perform
+[multi-level aggregation](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/aggregate-function-calls#multi_level_aggregation)
+in GoogleSQL, which lets you use an aggregate function as an
+argument to another aggregate function. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-06
 
 ### Change

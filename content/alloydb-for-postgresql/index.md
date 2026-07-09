@@ -1,5 +1,13 @@
 # AlloyDB for PostgreSQL
 
+## 2026-07-08
+
+### Feature
+
+External search with AlloyDB now supports Apache [Solr](https://docs.cloud.google.com/alloydb/docs/solr-search) in [Preview](https://cloud.google.com/products#product-launch-stages).
+You can use the [`external_search_fdw`](https://docs.cloud.google.com/alloydb/docs/reference/extensions#external_search_fdw) extension to connect to a Solr cluster and query its data directly from your database.
+
+---
 ## 2026-06-16
 
 ### Feature

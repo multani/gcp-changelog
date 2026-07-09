@@ -1,5 +1,18 @@
 # Google Cloud VMware Engine
 
+## 2026-07-08
+
+### Feature
+
+**Preview**: You can configure disaster recovery for Google Cloud VMware Engine by using JetStream.
+Disaster recovery options include the following:
+
+* Set up a Google Cloud VMware Engine private cloud as a recovery site for your on-premises VMware applications.
+* Protect workloads on a primary private cloud by using a recovery site in another Google Cloud location or on-premises environment.
+
+For more information, see [Configure disaster recovery using JetStream](https://docs.cloud.google.com/vmware-engine/docs/vmware-ecosystem/howto-disaster-recovery-jetstream).
+
+---
 ## 2026-07-07
 
 ### Feature

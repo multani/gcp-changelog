@@ -6,11 +6,16 @@
 
 **Gemini Enterprise: Managed organization policy constraints for data connectors (GA)**
 
-You can now use managed organization policy constraints to secure and control your data connectors in Gemini Enterprise.
+You can now use managed organization policy constraints to secure and control
+your data connectors in Gemini Enterprise.
 
 With this release, the following constraints are generally available (GA):
-\* **Restrict allowed data sources**: Use this policy to control which external data sources (such as Jira, Box, or Confluence) are permitted when adding a data store. For more information, see [Configure allowed data sources](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-data-sources).
-\* **Restrict allowed egress FQDNs**: Use this policy to control the egress fully qualified domain names (FQDNs) that your data stores can connect to. For more information, see [Configure allowed egress FQDNs for data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-egress-fqdns).
+\* **Restrict allowed data sources**: Use this policy to control which
+external data sources (such as Jira, Box, or Confluence) are permitted
+when adding a data store. For more information, see [Configure allowed data sources](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-data-sources).
+\* **Restrict allowed egress FQDNs**: Use this policy to control the egress
+fully qualified domain names (FQDNs) that your data stores can connect
+to. For more information, see [Configure allowed egress FQDNs for data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-egress-fqdns).
 
 For an overview of these policies and how they interact, see [Overview of managed policy constraints](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/managed-policy-constraints-overview).
 
@@ -19,22 +24,20 @@ For an overview of these policies and how they interact, see [Overview of manage
 
 ### Feature
 
-**Gemini Enterprise: Support for Japan and UK regions (GA with
-allowlist)**
+**Gemini Enterprise: Support for Japan and UK regions (GA with allowlist)**
 
-You can use the Gemini Enterprise app in the Japan (`asia-northeast1`) and United Kingdom
-(`europe-west2`) regions with at-rest data
-residency (DRZ) and machine learning processing (MLP) in region. You can
-also use the latest Gemini 3.5 Flash model in these regions with
-in-region at-rest DRZ and MLP.
+You can use the Gemini Enterprise app in the Japan (`asia-northeast1`) and
+United Kingdom (`europe-west2`) regions with at-rest data residency (DRZ)
+and machine learning processing (MLP) in region. You can also use the
+latest Gemini 3.5 Flash model in these regions with in-region at-rest DRZ
+and MLP.
 
 These locations are available in GA with allowlist. To get access to these
 locations for use with Gemini Enterprise or NotebookLM Enterprise,
 contact your Google account team.
 
 Certain limitations apply when using these regions. For more information,
-see [Data residency for Gemini Enterprise Standard and Plus
-Editions](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+see [Data residency for Gemini Enterprise Standard and Plus Editions](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
 
 ---
 ## 2026-06-30

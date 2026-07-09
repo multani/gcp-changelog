@@ -1,5 +1,33 @@
 # Compute Engine
 
+## 2026-07-08
+
+### Feature
+
+**Generally available**: The network-optimized C4N machine series is generally
+available for Compute Engine and Google Kubernetes Engine (GKE) customers. Powered
+by 5th generation Intel Xeon Scalable processors (Emerald Rapids), C4N instances
+are purpose-built for network- and block storage-intensive workloads such as:
+
+* Network and security appliances
+* High-performance databases
+* High-scale data analytics
+* Distributed filesystems
+
+The C4N machine series delivers the highest I/O performance available in
+Compute Engine, supporting up to 400 Gbps of network bandwidth
+and up to 95 million packets per second (Mpps) of sustained packet processing
+performance. C4N also offers leading block storage performance with Hyperdisk Extreme that
+scales up to 25 GiB/s of bandwidth and 1M IOPS. C4N instances are available
+in predefined machine shapes with three different vCPU to memory ratios, ranging
+in size from 2 to 192 vCPUs and up to 1,488 GB of DDR5 memory.
+
+For C4N machine types with attached Local SSD disks, you can
+[Request preview access](https://forms.gle/ehRSqssSEavKt1Fh7).
+
+For more information, see [C4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series).
+
+---
 ## 2026-06-26
 
 ### Feature

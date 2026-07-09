@@ -1,5 +1,14 @@
 # Network Intelligence Center
 
+## 2026-07-08
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+analyzes Proxy Network Load Balancers that are configured with
+Server Name Indication (SNI) routing for TLS traffic.
+
+---
 ## 2026-06-08
 
 ### Feature

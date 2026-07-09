@@ -1,5 +1,15 @@
 # Google Kubernetes Engine
 
+## 2026-07-08
+
+### Feature
+
+The network-optimized
+[C4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series) is
+available with GKE clusters running 1.36.0-gke.3009002 or later. You can use
+C4N machine types in Standard or Autopilot mode.
+
+---
 ## 2026-07-07
 
 ### Feature

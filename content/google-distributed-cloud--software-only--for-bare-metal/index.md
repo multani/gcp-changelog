@@ -1,5 +1,37 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-07-10
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.33.1000-gke.59 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.33.1000-gke.59 runs on Kubernetes v1.33.11-gke.100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+### Fixed
+
+The following issues were fixed in 1.33.1000-gke.59:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed an issue where Certificate Authority (CA) rotation failed for
+  self-managing clusters (admin, hybrid, and standalone). The failure occurs
+  during the final phase of the rotation when attempting to move management
+  resources back from the temporary bootstrap cluster to the self-managing
+  cluster, which can leave the cluster in an unmanageable state. You must
+  upgrade your clusters to version 1.33.1000-gke.59 before you rotate your CAs.
+  Running a CA rotation on self-managing clusters in versions prior to
+  1.33.1000-gke.59 triggers this issue and can disrupt your ability to manage
+  the cluster.
+
+---
 ## 2026-06-24
 
 ### Announcement

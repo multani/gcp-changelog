@@ -1,5 +1,19 @@
 # Cloud Workstations
 
+## 2026-07-08
+
+### Announcement
+
+The base VM for your workstation includes the Content-Addressable Storage File
+System (CASFS) kernel module, which lets you run the Android Build File System
+(ABFS). For more information about the introduction of this module, see the
+[Container-Optimized OS Milestone 129 LTS release notes](https://docs.cloud.google.com/container-optimized-os/docs/release-notes/m129#February_20_2026).
+
+### Feature
+
+The [Data Agent Toolkit Extension](https://docs.cloud.google.com/data-cloud-extension) is installed by default in Code OSS for Cloud Workstations.
+
+---
 ## 2026-06-08
 
 ### Feature

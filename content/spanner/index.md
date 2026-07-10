@@ -24,6 +24,16 @@ Direct connectivity is
 [generally available (GA)](https://docs.cloud.google.com/products#product-launch-stages).
 
 ---
+## 2026-06-15
+
+### Feature
+
+You can publish a [Spanner conversational analytics agent in
+Gemini Enterprise](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/spanner/create-data-agents#publish-agent-gemini-enterprise).
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-05-27
 
 ### Feature

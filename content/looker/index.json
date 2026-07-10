@@ -1,6 +1,272 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-07-09": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.12** will roll out to Looker (original) instances on the following schedule:\n\n* Expected deployment start: **Sunday, July 12, 2026**\n* Expected final deployment and download available: **Sunday, July 26, 2026**\n\nLooker 26.12 is expected to include the following changes, features, and fixes.",
+        "summary": {
+          "title": "Looker 26.12 Release Notes",
+          "summary": "Looker 26.12 is scheduled for rollout between July 12 and July 26, 2026. This release includes new features, changes, and fixes for the Looker platform. Detailed release notes will be available upon completion of the deployment."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where accessing a folder that contained scheduled content that was configured for disabled integrations could cause Looker to crash with a `TypeError`. This feature now performs as expected.",
+        "summary": {
+          "title": "Folder access stability improved",
+          "summary": "An issue causing Looker to crash when accessing folders with disabled integrations has been resolved. The feature now functions correctly, ensuring a more stable user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where users with only the Admin via IAM role on Looker (Google Cloud Core) instances would incorrectly lack access to connections when Advanced Control Governance (ACG) was enabled. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker ACG Access Fix",
+          "summary": "An issue where users with only the Admin via IAM role on Looker instances incorrectly lacked access to connections when Advanced Control Governance (ACG) was enabled has been resolved. The feature now functions as expected, ensuring proper access control."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Layout spacing and column alignment issues have been fixed on the OIDC and SAML authentication Admin pages. These features now perform as expected.",
+        "summary": {
+          "title": "Admin authentication pages fixed",
+          "summary": "Layout spacing and column alignment issues on the OIDC and SAML authentication Admin pages have been resolved. These pages now function correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where clicking **Reset Styles** in the table visualization formatting panel would unexpectedly reset the table theme, color palette, and custom borders. This feature now performs as expected.",
+        "summary": {
+          "title": "Table formatting reset fixed",
+          "summary": "An issue that caused the reset styles button to unexpectedly change table formatting has been resolved. The reset styles feature now functions correctly, preserving the table's theme, color palette, and custom borders as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the **Workflows** page was not visible to users with the `create_alerts` permission. This feature now performs as expected.",
+        "summary": {
+          "title": "Workflows page visibility fixed",
+          "summary": "The Workflows page is now visible to users with the 'create_alerts' permission. This resolves a previous issue where the page was inaccessible to these users. The feature now functions as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the comparison value in a KPI visualization could be incorrectly centered when the sparkline was disabled. This feature now performs as expected.",
+        "summary": {
+          "title": "KPI visualization comparison value corrected",
+          "summary": "An issue where the comparison value in a KPI visualization was incorrectly centered when the sparkline was disabled has been fixed. The feature now performs as expected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [**KPI Visualization** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#kpi_visualization) is now enabled by default.",
+        "summary": {
+          "title": "Kpi Visualization Now Enabled",
+          "summary": "The KPI Visualization feature is now enabled by default, offering enhanced ways to visualize key performance indicators. This update aims to provide users with more accessible and insightful data representation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [**Increased Row Limit**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) feature is now out of labs and generally available.",
+        "summary": {
+          "title": "Increased Row Limit Now Generally Available",
+          "summary": "The Increased Row Limit feature, previously in labs, is now generally available. This enhancement allows for more data to be displayed in visualizations without performance degradation."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the LookML validator used a stale cache for local project dependencies when the dependencies were updated in production. This feature now performs as expected.",
+        "summary": {
+          "title": "LookML validator cache fixed",
+          "summary": "The LookML validator's stale cache issue for local project dependencies has been resolved. It now correctly reflects updates made in production, ensuring accurate validation."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where some custom visualizations could be cut off in PDF exports. This feature now performs as expected.",
+        "summary": {
+          "title": "Custom visualizations now export correctly",
+          "summary": "An issue causing custom visualizations to be cut off in PDF exports has been resolved. This feature now functions as intended, ensuring visualizations are displayed completely in exported documents."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where, if a dashboard tile contained no results, the `row_total` table calculation function could return an error, which would prevent scheduled deliveries. This feature now performs as expected.",
+        "summary": {
+          "title": "Scheduled Deliveries Now Functional",
+          "summary": "An issue preventing scheduled deliveries due to errors with empty dashboard tiles has been resolved. The `row_total` function now performs as expected, ensuring reliable delivery of reports."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the commit hash in the Deploy Manager displayed PENDING during compilation and didn't update upon refresh. This feature now performs as expected.",
+        "summary": {
+          "title": "Commit hash display issue resolved",
+          "summary": "An issue where the commit hash in Deploy Manager incorrectly displayed PENDING during compilation and failed to update on refresh has been fixed. The feature now functions correctly, ensuring accurate commit hash information is displayed."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where drilling down on a value for which the custom value format contained the `#` character could cause the page to crash. This feature now performs as expected.",
+        "summary": {
+          "title": "Drill-down issue fixed",
+          "summary": "An issue that caused the page to crash when drilling down on a value with a custom format containing the '#' character has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where inline button toggle filters on dashboards could be cut off or could overlap with adjacent filters. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard filter display corrected",
+          "summary": "An issue causing dashboard inline button toggle filters to be cut off or overlap has been resolved. The filters now display and function correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where deleting a duplicated dashboard tab would incorrectly delete shared elements from other tabs. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed issue with dashboard tab deletion",
+          "summary": "An issue where deleting a duplicated dashboard tab incorrectly removed shared elements has been resolved. The feature now functions as expected, ensuring shared elements are preserved."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the column limit could fail to apply to an Explore that used pivots. This feature now performs as expected.",
+        "summary": {
+          "title": "Column limit now applies correctly with pivots",
+          "summary": "An issue preventing the column limit from applying to explores with pivots has been resolved. This functionality now works as intended, ensuring accurate column limiting in all scenarios."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where `added_params` metadata in streaming JSON responses could be malformed or missing. This feature now performs as expected.",
+        "summary": {
+          "title": "Streaming JSON metadata issue resolved",
+          "summary": "An issue causing malformed or missing `added_params` metadata in streaming JSON responses has been fixed. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where OAuth connections would incorrectly fail connection tests on the **Self-service Explores** Admin page. This feature now performs as expected.",
+        "summary": {
+          "title": "OAuth connection tests fixed",
+          "summary": "An issue where OAuth connections failed connection tests on the Self-service Explores Admin page has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the **Run** and **Settings** buttons were not correctly being displayed on embedded Explores with the `_theme` URL parameter. This feature now performs as expected.",
+        "summary": {
+          "title": "Embedded Explore buttons display fixed",
+          "summary": "An issue causing the Run and Settings buttons to not display correctly on embedded Explores has been resolved. The feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the Content Validator returned a generic error message instead of returning the specific models that were affected. This feature now performs as expected.",
+        "summary": {
+          "title": "Content validator error message fixed",
+          "summary": "The Content Validator now displays specific affected models instead of a generic error message. This resolves a previous issue and ensures the feature functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where drilling into a value while in Dev mode could return a `500 internal server` error. This feature now performs as expected.",
+        "summary": {
+          "title": "Drill-down in Dev mode fixed",
+          "summary": "An issue causing a 500 internal server error when drilling into a value in Dev mode has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where API calls that were made by service account users without a configured last name failed with a `500 internal server` error. This feature now performs as expected.",
+        "summary": {
+          "title": "Service account API calls now succeed",
+          "summary": "An issue causing API calls from service accounts without a last name to fail has been resolved. These calls will now function correctly, returning expected results."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where `view.field` references in Liquid were not correctly rendered if the field name matched a built-in Liquid variable. This feature now performs as expected.",
+        "summary": {
+          "title": "Liquid field rendering fixed",
+          "summary": "An issue where `view.field` references in Liquid were not correctly rendered if the field name matched a built-in Liquid variable has been resolved. This functionality now behaves as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where autosizing table columns didn't work as expected in drill menus. This feature now performs as expected.",
+        "summary": {
+          "title": "Table column autosizing fixed",
+          "summary": "An issue with autosizing table columns in drill menus has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where drill modals could repeatedly render a visualization, which would present as constant flickering in the browser. This feature now performs as expected.",
+        "summary": {
+          "title": "Drill modal visualization flickering fixed",
+          "summary": "An issue causing drill modals to repeatedly render a visualization and flicker in the browser has been resolved. The feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where invalid parameters in an embed URL could result in Looker displaying an unnecessarily verbose stack trace instead of a concise error. This feature now performs as expected.",
+        "summary": {
+          "title": "Embed URL error handling improved",
+          "summary": "An issue where invalid embed URL parameters caused Looker to show a verbose stack trace has been fixed. The system now displays a concise error as expected, improving the user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where editing a workflow on the **Workflow Management** page could load indefinitely. This feature now performs as expected.",
+        "summary": {
+          "title": "Workflow editing issue resolved",
+          "summary": "An issue that caused indefinite loading when editing workflows on the Workflow Management page has been fixed. The workflow editing feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where clearing the **Totals Labels** option for the **Totals Color** setting in the color picker resulted in black text in the chart. This feature now performs as expected.",
+        "summary": {
+          "title": "Totals Color Bug Fix",
+          "summary": "The issue where clearing the Totals Labels option resulted in black text has been resolved. The color picker now functions correctly for Totals Color settings."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The OAuth interface now prohibits forward slashes in the OAuth Client ID field. Previously, the inclusion of one or more forward slashes would result in a 401 error. This feature now performs as expected.",
+        "summary": {
+          "title": "OAuth Client ID validation updated",
+          "summary": "The OAuth interface now correctly prohibits forward slashes in the OAuth Client ID field, resolving a previous issue that caused 401 errors. This change ensures the interface functions as expected, improving security and reliability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Looker CI Run Alert emails now include the Run ID in the subject line to prevent email threading. The email body now includes the Git branch and commit details.",
+        "summary": {
+          "title": "CI Run Alert Improvements",
+          "summary": "CI Run Alert emails now feature the Run ID in the subject for better organization and include Git branch and commit details in the body for enhanced context."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker (Google Cloud core) now supports [FIPS 140-3 level 1 compliance](https://docs.cloud.google.com/looker/docs/looker-core-fips-mode). Existing FIPS 140-2 compliant instances will be automatically upgraded to the FIPS 140-3 standard when they're upgraded to Looker 26.12.",
+        "summary": {
+          "title": "Looker Now FIPS 140-3 Compliant",
+          "summary": "Looker has achieved FIPS 140-3 level 1 compliance, enhancing security for data analytics. Existing FIPS 140-2 compliant instances will automatically upgrade to the new standard with the Looker 26.12 release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the [**Table Row Grouping** feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#table-row-grouping) option for table charts lets users display table chart data hierarchically in groups and customize the appearance with new [**Grouping** menu options](https://docs.cloud.google.com/looker/docs/table-options#grouping-menu-options).\nThis feature is enabled by default.",
+        "summary": {
+          "title": "Table Row Grouping Now in Preview",
+          "summary": "The new Table Row Grouping feature is now available in preview. This allows users to display table data hierarchically and customize its appearance using new grouping options. The feature is enabled by default."
+        }
+      }
+    ],
     "2026-07-07": [
       {
         "kind": "Feature",
@@ -64,10 +330,10 @@
       },
       {
         "kind": "Feature",
-        "content": "Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes` statement to the `localization_settings` parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.",
+        "content": "Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes`\n\n**Note:** The release of this preview feature has been temporarily delayed. This release note was updated on July 9, 2026.",
         "summary": {
-          "title": "Model Localization Preview for Imported Projects",
-          "summary": "Model localization is now in preview for imported projects. You can choose to use only the importing project's locale definitions or merge them with the imported project's definitions by modifying your manifest file. Refer to the documentation for detailed instructions."
+          "title": "Model localization for imported projects",
+          "summary": "Preview support for model localization is now available for imported projects. You can choose to use only the importing project's locale definitions or merge them with those from the imported project by setting `import_locale_defs: yes`."
         }
       },
       {
@@ -152,14 +418,6 @@
       },
       {
         "kind": "Change",
-        "content": "Conversational Analytics data agents that are [published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) now support visualizations in their conversations.",
-        "summary": {
-          "title": "New visualization support for data agents",
-          "summary": "Conversational Analytics data agents now support visualizations within their conversations. This enhancement allows for richer and more interactive data exploration directly within the agent interface. This feature is available for agents published to Gemini Enterprise."
-        }
-      },
-      {
-        "kind": "Change",
         "content": "Looker dashboard agents are now included in the embedded Looker experience. Embed users with the [appropriate permissions](https://docs.cloud.google.com/looker/docs/signed-embedding#permissions) can see dashboard agents on all the embedded dashboards that they have access to.\n\n[Learn more about how to configure an embedded dashboard for embed user visibility](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding).",
         "summary": {
           "title": "Dashboard agents are now available in embedded Looker",
@@ -172,6 +430,14 @@
         "summary": {
           "title": "Dashboard sizing is now default",
           "summary": "The granular dashboard sizing preview feature is now enabled by default. This change allows for more flexible dashboard layout adjustments. Users can now benefit from this feature without needing to explicitly enable it in preview."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Conversational Analytics data agents that are [published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) now support visualizations in their conversations. **Note**: This feature is not yet available. This item was updated on July 9, 2026.",
+        "summary": {
+          "title": "Data agents now support visualizations",
+          "summary": "Conversational Analytics data agents now support visualizations in conversations. This feature, which was updated on July 9, 2026, is not yet available."
         }
       },
       {

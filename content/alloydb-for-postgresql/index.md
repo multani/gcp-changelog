@@ -34,6 +34,13 @@ the following advanced query insights tools for AlloyDB for PostgreSQL:
 
 For more information, see [Database Insights remote MCP server](https://docs.cloud.google.com/alloydb/docs/reference/mcp/databaseinsights/mcp/index).
 
+### Feature
+
+You can publish an [AlloyDB for PostgreSQL conversational analytics agent in
+Gemini Enterprise](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/alloydb/create-data-agents#publish-agent-gemini-enterprise).
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
 ---
 ## 2026-06-02
 

@@ -2,6 +2,23 @@
 
 ## 2026-07-09
 
+### Announcement
+
+**Gemini Enterprise: Enable skills feature management toggle is
+not available**
+
+The **Enable skills** feature management toggle is not available.
+This feature is generally available (GA) with an allowlist in Gemini
+Enterprise. After your organization is added to the allowlist, end users can
+create and use skills directly in the app. To access this feature, contact your
+Google account manager.
+
+We will update the release notes when the **Enable skills** toggle for
+administrators is available.
+
+**Note:** This is a correction to the [June 17, 2026 release
+note](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#June_17_2026).
+
 ### Feature
 
 **Gemini Enterprise: AlphaEvolve algorithm optimization agent (GA)**
@@ -31,12 +48,13 @@ You can now use managed organization policy constraints to secure and control
 your data connectors in Gemini Enterprise.
 
 With this release, the following constraints are generally available (GA):
-\* **Restrict allowed data sources**: Use this policy to control which
-external data sources (such as Jira, Box, or Confluence) are permitted
-when adding a data store. For more information, see [Configure allowed data sources](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-data-sources).
-\* **Restrict allowed egress FQDNs**: Use this policy to control the egress
-fully qualified domain names (FQDNs) that your data stores can connect
-to. For more information, see [Configure allowed egress FQDNs for data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-egress-fqdns).
+
+* **Restrict allowed data sources**: Use this policy to control which
+  external data sources (such as Jira, Box, or Confluence) are permitted
+  when adding a data store. For more information, see [Configure allowed data sources](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-data-sources).
+* **Restrict allowed egress FQDNs**: Use this policy to control the egress
+  fully qualified domain names (FQDNs) that your data stores can connect
+  to. For more information, see [Configure allowed egress FQDNs for data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/configure-allowed-egress-fqdns).
 
 For an overview of these policies and how they interact, see [Overview of managed policy constraints](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/managed-policy-constraints-overview).
 
@@ -280,6 +298,10 @@ This feature is available as a GA with allowlist. To access this feature,
 contact your Google account manager. After your Google Cloud project is added to
 the allowlist, a Gemini Enterprise administrator must turn on the **Enable skills**
 toggle in the web app feature management settings to let users use it.
+
+**Note:** There is a correction to this release note regarding the **Enable
+skills** toggle. See [July 09,
+2026](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#July_09_2026).
 
 For more information, see:
 

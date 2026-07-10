@@ -1,5 +1,24 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-07-09
+
+### Feature
+
+**Retirement for preview models for 2.5 Flash, 2.5 Flash-Lite, and 3.1
+Flash-Lite**
+
+The following preview model endpoints have been retired and are no longer
+accessible:
+
+* `gemini-2.5-flash-lite-preview-09-2025`
+* `gemini-2.5-flash-preview-05-2025`
+* `gemini-3.1-flash-lite-preview`
+
+See [Migrate to the latest Google
+models](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/migrate) for information on how
+to migrate your project.
+
+---
 ## 2026-07-08
 
 ### Deprecated
@@ -52,7 +71,9 @@ how to use AlphaGenome in Agent Platform, see the
 ---
 ## 2026-07-01
 
-### Provisioned Throughput: Multiple pending new orders GA
+### Feature
+
+**Provisioned Throughput: Multiple pending new orders GA**
 
 The ability to submit multiple pending orders is generally available. you can
 submit up to seven Google model orders for the same model and region.

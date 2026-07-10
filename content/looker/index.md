@@ -1,5 +1,146 @@
 # Looker
 
+## 2026-07-09
+
+### Announcement
+
+**Looker 26.12** will roll out to Looker (original) instances on the following schedule:
+
+* Expected deployment start: **Sunday, July 12, 2026**
+* Expected final deployment and download available: **Sunday, July 26, 2026**
+
+Looker 26.12 is expected to include the following changes, features, and fixes.
+
+### Fixed
+
+An issue has been fixed where accessing a folder that contained scheduled content that was configured for disabled integrations could cause Looker to crash with a `TypeError`. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where users with only the Admin via IAM role on Looker (Google Cloud Core) instances would incorrectly lack access to connections when Advanced Control Governance (ACG) was enabled. This feature now performs as expected.
+
+### Fixed
+
+Layout spacing and column alignment issues have been fixed on the OIDC and SAML authentication Admin pages. These features now perform as expected.
+
+### Fixed
+
+An issue has been fixed where clicking **Reset Styles** in the table visualization formatting panel would unexpectedly reset the table theme, color palette, and custom borders. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **Workflows** page was not visible to users with the `create_alerts` permission. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the comparison value in a KPI visualization could be incorrectly centered when the sparkline was disabled. This feature now performs as expected.
+
+### Feature
+
+The [**KPI Visualization** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#kpi_visualization) is now enabled by default.
+
+### Feature
+
+The [**Increased Row Limit**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits) feature is now out of labs and generally available.
+
+### Fixed
+
+An issue has been fixed where the LookML validator used a stale cache for local project dependencies when the dependencies were updated in production. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where some custom visualizations could be cut off in PDF exports. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where, if a dashboard tile contained no results, the `row_total` table calculation function could return an error, which would prevent scheduled deliveries. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the commit hash in the Deploy Manager displayed PENDING during compilation and didn't update upon refresh. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where drilling down on a value for which the custom value format contained the `#` character could cause the page to crash. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where inline button toggle filters on dashboards could be cut off or could overlap with adjacent filters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where deleting a duplicated dashboard tab would incorrectly delete shared elements from other tabs. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the column limit could fail to apply to an Explore that used pivots. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where `added_params` metadata in streaming JSON responses could be malformed or missing. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where OAuth connections would incorrectly fail connection tests on the **Self-service Explores** Admin page. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **Run** and **Settings** buttons were not correctly being displayed on embedded Explores with the `_theme` URL parameter. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the Content Validator returned a generic error message instead of returning the specific models that were affected. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where drilling into a value while in Dev mode could return a `500 internal server` error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where API calls that were made by service account users without a configured last name failed with a `500 internal server` error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where `view.field` references in Liquid were not correctly rendered if the field name matched a built-in Liquid variable. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where autosizing table columns didn't work as expected in drill menus. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where drill modals could repeatedly render a visualization, which would present as constant flickering in the browser. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where invalid parameters in an embed URL could result in Looker displaying an unnecessarily verbose stack trace instead of a concise error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where editing a workflow on the **Workflow Management** page could load indefinitely. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where clearing the **Totals Labels** option for the **Totals Color** setting in the color picker resulted in black text in the chart. This feature now performs as expected.
+
+### Fixed
+
+The OAuth interface now prohibits forward slashes in the OAuth Client ID field. Previously, the inclusion of one or more forward slashes would result in a 401 error. This feature now performs as expected.
+
+### Change
+
+Looker CI Run Alert emails now include the Run ID in the subject line to prevent email threading. The email body now includes the Git branch and commit details.
+
+### Feature
+
+Looker (Google Cloud core) now supports [FIPS 140-3 level 1 compliance](https://docs.cloud.google.com/looker/docs/looker-core-fips-mode). Existing FIPS 140-2 compliant instances will be automatically upgraded to the FIPS 140-3 standard when they're upgraded to Looker 26.12.
+
+### Feature
+
+Now available in preview, the [**Table Row Grouping** feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#table-row-grouping) option for table charts lets users display table chart data hierarchically in groups and customize the appearance with new [**Grouping** menu options](https://docs.cloud.google.com/looker/docs/table-options#grouping-menu-options).
+This feature is enabled by default.
+
+---
 ## 2026-07-07
 
 ### Feature
@@ -49,7 +190,9 @@ The [**Self-service Explores**](https://docs.cloud.google.com/looker/docs/explor
 
 ### Feature
 
-Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes` statement to the `localization_settings` parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.
+Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the `import_locale_defs: yes`
+
+**Note:** The release of this preview feature has been temporarily delayed. This release note was updated on July 9, 2026.
 
 ### Feature
 
@@ -116,10 +259,6 @@ Now available in preview, the [**KPI Visualization** feature](https://docs.cloud
 
 ### Change
 
-Conversational Analytics data agents that are [published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) now support visualizations in their conversations.
-
-### Change
-
 Looker dashboard agents are now included in the embedded Looker experience. Embed users with the [appropriate permissions](https://docs.cloud.google.com/looker/docs/signed-embedding#permissions) can see dashboard agents on all the embedded dashboards that they have access to.
 
 [Learn more about how to configure an embedded dashboard for embed user visibility](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding).
@@ -127,6 +266,10 @@ Looker dashboard agents are now included in the embedded Looker experience. Embe
 ### Change
 
 The [Granular Dashboard Sizing preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#granular-dashboard-sizing) is now enabled by default.
+
+### Change
+
+Conversational Analytics data agents that are [published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents) now support visualizations in their conversations. **Note**: This feature is not yet available. This item was updated on July 9, 2026.
 
 ### Change
 

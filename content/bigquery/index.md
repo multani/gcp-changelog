@@ -1,5 +1,35 @@
 # BigQuery
 
+## 2026-07-09
+
+### Feature
+
+You can use the BigQuery Data Transfer Service to transfer metadata from the
+following data sources into Knowledge Catalog:
+
+* [PostgreSQL](https://docs.cloud.google.com/bigquery/docs/postgresql-transfer#transfer_metadata)
+* [Microsoft SQL Server](https://docs.cloud.google.com/bigquery/docs/sqlserver-transfer#transfer_metadata)
+
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+[The Data Agent Kit extension](https://docs.cloud.google.com/data-cloud-extension) is an extension for agent
+coding tools, such as VS Code, Antigravity, and Cursor, that lets
+you interact with BigQuery resources directly in your agent environment. You can
+use this extension to browse datasets, manage pipelines, run queries, and prompt
+your agent to perform other BigQuery tasks directly in your preferred IDE. This
+feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Support for hybrid search (using the `VECTOR_SEARCH` function to combine a
+semantic search with a lexical (keyword) search) has been temporarily disabled.
+We are working to restore this feature as soon as possible.
+
+---
 ## 2026-07-08
 
 ### Change

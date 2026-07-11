@@ -1,5 +1,16 @@
 # Security Command Center
 
+## 2026-07-09
+
+### Feature
+
+You can modify the [data residency](https://docs.cloud.google.com/security-command-center/docs/data-residency-support)
+and [data encryption](https://docs.cloud.google.com/security-command-center/docs/cmek) configuration
+on the Premium and Standard tiers after you activate Security Command Center for your
+organization. For more information, see
+[Modify data residency or data encryption configuration](https://docs.cloud.google.com/security-command-center/docs/modify-data-residency-encryption.md).
+
+---
 ## 2026-06-25
 
 ### Change

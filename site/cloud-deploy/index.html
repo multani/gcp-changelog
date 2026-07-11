@@ -2664,8 +2664,15 @@
 
 
 <h1 id="cloud-deploy">Cloud Deploy</h1>
-<h2 id="2026-06-15">2026-06-15</h2>
+<h2 id="2026-07-10">2026-07-10</h2>
 <h3 id="change">Change</h3>
+<p>The Cloud Deploy image now uses a Google-specific fork of Skaffold. The
+Skaffold version that you see if you run <code>gcloud deploy releases describe</code>, or
+if you view the release in the Google Cloud Console, is now <code>cd-skaffold</code>
+instead of a version number.</p>
+<hr />
+<h2 id="2026-06-15">2026-06-15</h2>
+<h3 id="change_1">Change</h3>
 <p>The Cloud Deploy image now uses Kubectl Kustomize.</p>
 <p>By default, Cloud Deploy now uses the
 <a href="https://kubernetes.io/docs/reference/kubectl/generated/kubectl_kustomize/">Kustomize built into kubectl</a>.
@@ -2675,7 +2682,7 @@ Cloud Deploy image. Now it's the version used by kubectl.</p>
 kustomize version when you create a release.</p>
 <hr />
 <h2 id="2026-04-14">2026-04-14</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Support for <a href="https://docs.cloud.google.com/deploy/docs/run-targets">deploying Cloud Run worker pools</a> is now
 generally available
 (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
@@ -2706,13 +2713,13 @@ This feature is
 (in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>).</p>
 <hr />
 <h2 id="2026-01-23">2026-01-23</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>The limit on deployment minutes per delivery pipeline has been removed. The only
 quota now enforced in Cloud Deploy is the system limit of 18,000 API
 requests per minute per region. <a href="https://docs.cloud.google.com/deploy/quotas">Learn more</a>.</p>
 <hr />
 <h2 id="2025-12-12">2025-12-12</h2>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>We now <a href="https://docs.cloud.google.com/deploy/docs/select-tool-version">upgrade the tools used for deployments more frequently</a>.
 This includes tools like Skaffold, Kubectl, and Helm. You can also
 <a href="https://docs.cloud.google.com/deploy/docs/select-tool-version#how_select">select specific versions</a> of these
@@ -2732,6 +2739,9 @@ tools when you create a release.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-deploy">Cloud Deploy</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-10" class="nav-link">2026-07-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-15" class="nav-link">2026-06-15</a>
           </li>

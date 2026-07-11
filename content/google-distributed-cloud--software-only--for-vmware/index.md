@@ -1,5 +1,34 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-07-10
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.1000-gke.59 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.33.1000-gke.59 runs on Kubernetes v1.33.11-gke.100.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+The following patches were skipped:
+
+* 1.33.900
+* 1.34.600
+* 1.35.200
+
+### Fixed
+
+The following issues were fixed in 1.33.1000-gke.59:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed the issue preventing patch releases for GDC software only for VMware.
+
+---
 ## 2026-06-17
 
 ### Announcement

@@ -1,5 +1,15 @@
 # Cloud Deploy
 
+## 2026-07-10
+
+### Change
+
+The Cloud Deploy image now uses a Google-specific fork of Skaffold. The
+Skaffold version that you see if you run `gcloud deploy releases describe`, or
+if you view the release in the Google Cloud Console, is now `cd-skaffold`
+instead of a version number.
+
+---
 ## 2026-06-15
 
 ### Change

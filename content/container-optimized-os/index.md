@@ -1,5 +1,116 @@
 # Container Optimized OS
 
+## 2026-07-09
+
+### Change
+
+
+
+### cos-117-18613-675-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/5aec657e051de42c4e591b15fcf30c82947bd22a ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.675.7/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260626.00.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.8.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.53.3.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.2.
+
+### Fixed
+
+Upgraded sys-apps/acl to v2.4.0.
+
+### Security
+
+Fixed CVE-2026-53359 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-d82ba05 in the Linux kernel.
+
+### Change
+
+
+
+### cos-125-19216-532-9
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/5576e06b230afb3a4f89d660421d5400b443d9bc ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.532.9/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for NVIDIA GRID driver version 580.159.03.
+
+### Security
+
+Fixed CVE-2026-40225 in sys-apps/systemd.
+
+### Security
+
+Fixed CVE-2026-53167 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53359 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-d82ba05 in the Linux kernel.
+
+### Change
+
+
+
+### cos-129-19506-299-8
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/528543b74575bd46e7fc7ccc61eabc1868789e84 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.299.8/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for NVIDIA GRID driver version 580.159.03.
+
+### Security
+
+Fixed CVE-2026-53359 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-528-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/973fc67ab8454c85a6f165680dbe1459a1520353 ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.528.7/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-53359 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-d82ba05 in the Linux kernel.
+
+---
 ## 2026-07-06
 
 ### Change

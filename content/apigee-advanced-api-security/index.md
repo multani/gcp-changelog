@@ -1,5 +1,21 @@
 # Apigee Advanced API Security
 
+## 2026-07-10
+
+### Deprecated
+
+**Deprecation and shutdown of GenAI Incident Summary (generative AI Insights)**
+
+The standalone **GenAI Incident Summary** (generative AI Insights) feature in
+Apigee Advanced API Security Abuse Detection, currently in Preview, is
+deprecated and shut down as of July 9, 2026. This feature used Google Cloud
+generative AI large language models (LLMs) to provide automated summaries and
+mitigation guidance for security incidents identified by the Abuse Detection
+clustering tool.
+
+For more information, see [GenAI Incident Summary deprecation](https://docs.cloud.google.com/apigee/docs/deprecations/genai-incident-summary).
+
+---
 ## 2026-03-17
 
 ### Announcement

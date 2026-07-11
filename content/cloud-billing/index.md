@@ -1,5 +1,35 @@
 # Cloud Billing
 
+## 2026-07-10
+
+### Feature
+
+**Payments documents for invoiced billing accounts available on Payment
+status page**
+
+For
+[Cloud Billing accounts that are paid by invoice](https://docs.cloud.google.com/billing/docs/concepts#billing_account_types),
+access to your payments documents, such as invoices and credit memos, is now
+available in the Cloud Billing console in the **Payment status** page.
+
+The **Payment status** page replaces the **Invoices** page. Self-service
+(online) Cloud Billing accounts will continue to access Payments
+documents on the **Invoices** page.
+
+The **Payment status** page provides a real-time and customizable view of your
+financial standing with your Cloud Billing account. The Payment status
+page is based on the
+[Google payments **Statement of account**](https://support.google.com/paymentscenter/answer/7520537)
+page, with your payments documents filtered by the *Google payments account*
+that is linked to the Cloud Billing account that you are viewing.
+
+For more information about payments documents, see:
+
+* [Get a Cloud Billing document such as an invoice, statement, or receipt](https://docs.cloud.google.com/billing/docs/how-to/get-invoice).
+* [View your cost and payment history](https://docs.cloud.google.com/billing/docs/how-to/view-history)
+* [Google payments Statement of account](https://support.google.com/paymentscenter/answer/7520537)
+
+---
 ## 2026-06-22
 
 ### Feature

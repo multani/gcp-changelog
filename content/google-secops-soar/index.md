@@ -1,5 +1,15 @@
 # Google SecOps SOAR
 
+## 2026-07-12
+
+### Feature
+
+**Publisher Agent Version 2.7.0**
+
+[Publisher Agent Version 2.7.0](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#July_05_2026)
+is now available for all regions.
+
+---
 ## 2026-07-11
 
 ### Announcement

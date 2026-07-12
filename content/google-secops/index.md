@@ -1,5 +1,19 @@
 # Google SecOps
 
+## 2026-07-12
+
+### Feature
+
+**Publisher Agent Version 2.7.0**
+
+Publisher Agent Version 2.7.0 is now available for all regions.
+
+This release includes the following updates for the remote agent:
+
+* **High Availability support:** Adds applicative support for Publisher high availability.
+* **File transfer support:** You can now upload and download files using playbooks and the SDK on agents that have been migrated to the GCOM infrastructure.
+
+---
 ## 2026-07-06
 
 ### Feature

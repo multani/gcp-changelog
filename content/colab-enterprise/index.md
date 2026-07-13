@@ -1,5 +1,16 @@
 # Colab Enterprise
 
+## 2026-07-13
+
+### Security
+
+A Missing Authorization vulnerability was discovered in repositories in
+BigQuery, Dataform, and Colab Enterprise. An authenticated attacker could
+potentially escalate permissions and perform cross-tenant repository takeover.
+For more information, see the
+[GCP-2026-047](https://docs.cloud.google.com/support/bulletins#gcp-2026-047) security bulletin.
+
+---
 ## 2026-05-26
 
 ### Feature

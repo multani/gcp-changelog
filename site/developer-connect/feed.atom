@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Developer Connect</title>
   <subtitle>Changelog for Google Cloud product: Developer Connect</subtitle>
-  <updated>2026-04-21T00:00:00+00:00</updated>
+  <updated>2026-07-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:developer-connect</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/developer-connect/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:developer-connect:2026-07-13:security:0</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For GitLab Enterprise and Bitbucket Data Center connections, Developer Connect now
+checks permissions on the calling principal.</p>
+<p>When you create or update repository connections, Developer Connect uses Secret Manager
+secrets to authenticate to third-party Git providers. Previously, these
+referenced secrets were retrieved by the Developer Connect service agent (P4SA) on your
+behalf, checking permissions only against the P4SA's credentials rather than
+those of the calling principal. To adhere to the security principle of least
+privilege, Developer Connect now checks permissions on both the calling principal
+(using end-user credentials) and the P4SA, to ensure both have the
+<code>secretmanager.versions.access</code> IAM permission on the referenced
+secrets.</p>
+<p>This check only affects GitLab Enterprise (GLE) and Bitbucket Data Center (BBDC)
+connections.</p>
+<p>For instructions and more details, see the
+<a href="https://cloud.google.com/developer-connect/docs/security-bulletins#gcp-2026-048">Developer Connect security bulletin</a>.</p>]]></content>
+    <summary>Developer Connect now verifies permissions for GitLab Enterprise and Bitbucket Data Center connections. This update ensures that both the calling principal and the service agent have the necessary access to secrets, enforcing the principle of least privilege.</summary>
+    <title>Security: Enhanced security for Git connections</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

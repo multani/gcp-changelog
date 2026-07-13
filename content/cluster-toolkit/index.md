@@ -1,5 +1,18 @@
 # Cluster Toolkit
 
+## 2026-07-02
+
+### Feature
+
+Cluster Toolkit v1.96.0 is available. This release adds support for G4
+Confidential VMs with Blackwell GPUs and customer-managed encryption keys (CMEK)
+for storage. This version also introduces warnings for GKE
+version vulnerabilities and support for the `--env` flag in the `gcluster job
+submit` command to set custom environment variables. For details, see the
+[release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5889).
+
+---
 ## 2026-06-25
 
 ### Feature
@@ -8,7 +21,7 @@ Cluster Toolkit v1.95.0 is available. This release introduces Slurm
 high availability controller support using managed instance groups (MIGs). This
 version also implements Google Kubernetes Engine node auto-provisioning (NAP) and unified
 compute consumption options for the `gcluster job submit` command. For details,
-see the [Release announcement on
+see the [release announcement on
 GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5852).
 
 ---
@@ -21,7 +34,7 @@ subblock support in the `nodeset` module for Slurm. This version also adds
 `network_policy` as a variable in the `gke-cluster` module and loosens strict
 Terraform version constraints across core and community modules. By moving to a
 minimum version requirement, you can use newer versions of Terraform while
-maintaining compatibility. For details, see the [Release announcement on
+maintaining compatibility. For details, see the [release announcement on
 GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5804).
 
 ---

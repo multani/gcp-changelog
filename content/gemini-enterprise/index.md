@@ -44,7 +44,7 @@ For more information, see [AlphaEvolve documentation](https://docs.cloud.google.
 
 **Gemini Enterprise: Managed organization policy constraints for data connectors (GA)**
 
-You can now use managed organization policy constraints to secure and control
+You can use managed organization policy constraints to secure and control
 your data connectors in Gemini Enterprise.
 
 With this release, the following constraints are generally available (GA):
@@ -85,7 +85,7 @@ see [Data residency for Gemini Enterprise Standard and Plus Editions](https://do
 
 **Gemini Enterprise: Filters for Microsoft SharePoint data stores are generally available (GA)**
 
-Filters for Microsoft SharePoint federated data stores are now generally
+Filters for Microsoft SharePoint federated data stores are generally
 available (GA).
 
 For more information, see
@@ -225,7 +225,7 @@ identity](https://docs.cloud.google.com/gemini/enterprise/docs/agents-overview#a
 
 **Gemini Enterprise: Observability for agents (GA)**
 
-Observability for Gemini Enterprise is now generally available (GA). This
+Observability for Gemini Enterprise is generally available (GA). This
 includes:
 
 * Configuring observability settings at the app level and for individual
@@ -247,7 +247,7 @@ For more information, see:
 
 **Gemini Enterprise: Observability settings for Deep Research agents (Preview)**
 
-You can now configure observability settings for individual Deep Research
+You can configure observability settings for individual Deep Research
 agents, the same way as for Agent Designer employee-made agents. This allows
 you to monitor metrics in Metrics Explorer and view trace results in
 Trace Explorer for specific Deep Research agents.
@@ -375,7 +375,7 @@ For more information, see
 
 **Gemini Enterprise: Observability settings for individual agents (Preview)**
 
-You can now configure observability settings for individual agents in
+You can configure observability settings for individual agents in
 Agent Designer employee-made agents. This allows you to monitor metrics in
 Metrics Explorer and view trace results in Trace Explorer for specific
 agents.

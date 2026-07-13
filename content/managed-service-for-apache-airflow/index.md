@@ -1,13 +1,52 @@
 # Managed Service for Apache Airflow
 
+## 2026-07-13
+
+### Issue
+
+In Managed Airflow (Gen 3) builds with Airflow 2.11.1 starting from
+[composer-3-airflow-2.11.1-build.7](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-7),
+the Airflow web server requires at least 3 GB of memory (the default amount of
+memory for a Small environment preset is 4 GB).
+
+If the Airflow web server has less than 3 GB of memory, it might experience
+intermittent out-of-memory (OOM) issues. To resolve these issues,
+[increase the web server memory](https://docs.cloud.google.com/composer/docs/composer-3/scale-environments#web-server-parameters)
+to at least 3 GB.
+
+---
+## 2026-07-07
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.1.7-build.13](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-7-build-13)
+* [composer-3-airflow-2.11.1-build.9](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-9) (default)
+* [composer-3-airflow-2.10.5-build.42](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-42)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.6-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-6-airflow-2-11-1) (default)
+* [composer-2.17.6-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-6-airflow-2-10-5)
+
+### Deprecated
+
+The following Managed Airflow versions and builds have reached their
+[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.28, composer-3-airflow-2.10.5-build.0,
+composer-3-airflow-2.10.5-build.2, composer-3-airflow-2.10.5-build.3,
+composer-3-airflow-2.10.5-build.4, composer-3-airflow-2.10.5-build.5,
+composer-3-airflow-2.10.5-build.6, composer-3-airflow-2.10.5-build.7,
+composer-3-airflow-2.10.5-build.8, composer-2.13.6-airflow-2.9.3,
+and composer-2.13.6-airflow-2.10.5.
+
+---
 ## 2026-06-29
-
-### Announcement
-
-A new Managed Service for Apache Airflow release has started on **June 29, 2026**. Get ready
-for upcoming changes and features as we roll out the new release to all regions.
-This release is in progress at the moment. Listed changes and features might
-not be available in some regions yet.
 
 ### Change
 

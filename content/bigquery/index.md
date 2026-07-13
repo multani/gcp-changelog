@@ -1,5 +1,33 @@
 # BigQuery
 
+## 2026-07-13
+
+### Security
+
+A Missing Authorization vulnerability was discovered in repositories in
+BigQuery, Dataform, and Colab Enterprise. An authenticated attacker could
+potentially escalate permissions and perform cross-tenant repository takeover.
+For more information, see the
+[GCP-2026-047](https://docs.cloud.google.com/support/bulletins#gcp-2026-047) security bulletin.
+
+### Feature
+
+The BigQuery [**Overview** page](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#open-overview)
+is a hub for discovering tutorials, features, and resources to help you get the
+most out of BigQuery. It provides guided paths for users of all skill levels.
+This feature is now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+Incremental data transfers for the
+[BigQuery Data Transfer Service for Salesforce](https://docs.cloud.google.com/bigquery/docs/salesforce-transfer)
+are now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-07-09
 
 ### Feature

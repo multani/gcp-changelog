@@ -1,5 +1,23 @@
 # SAP on Google Cloud
 
+## 2026-07-10
+
+### Announcement
+
+**New SAP certifications: M4N series of memory-optimized machine types**
+
+For use with SAP HANA scale-up (OLAP and OLTP) and SAP NetWeaver workloads, SAP
+has certified the Compute Engine memory-optimized M4N series machine types with
+the Intel Emerald Rapids CPU platform.
+
+For more information, see:
+
+* For SAP HANA, see
+  [M4N memory-optimized machine types](https://docs.cloud.google.com/sap/docs/sap-hana-planning-guide#m4n-memory-optimized)
+* For SAP NetWeaver, see
+  [M4N memory-optimized machine types](https://docs.cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-vms-mem-optimized-m4n)
+
+---
 ## 2026-06-23
 
 ### Announcement

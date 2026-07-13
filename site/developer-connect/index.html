@@ -2664,6 +2664,24 @@
 
 
 <h1 id="developer-connect">Developer Connect</h1>
+<h2 id="2026-07-13">2026-07-13</h2>
+<h3 id="security">Security</h3>
+<p>For GitLab Enterprise and Bitbucket Data Center connections, Developer Connect now
+checks permissions on the calling principal.</p>
+<p>When you create or update repository connections, Developer Connect uses Secret Manager
+secrets to authenticate to third-party Git providers. Previously, these
+referenced secrets were retrieved by the Developer Connect service agent (P4SA) on your
+behalf, checking permissions only against the P4SA's credentials rather than
+those of the calling principal. To adhere to the security principle of least
+privilege, Developer Connect now checks permissions on both the calling principal
+(using end-user credentials) and the P4SA, to ensure both have the
+<code>secretmanager.versions.access</code> IAM permission on the referenced
+secrets.</p>
+<p>This check only affects GitLab Enterprise (GLE) and Bitbucket Data Center (BBDC)
+connections.</p>
+<p>For instructions and more details, see the
+<a href="https://cloud.google.com/developer-connect/docs/security-bulletins#gcp-2026-048">Developer Connect security bulletin</a>.</p>
+<hr />
 <h2 id="2026-04-21">2026-04-21</h2>
 <h3 id="feature">Feature</h3>
 <p>You can now create an account connector <a href="https://docs.cloud.google.com/developer-connect/docs/configure-connectors#configure-custom-oauth">using a custom OAuth client</a>.</p>
@@ -2690,6 +2708,9 @@ arbitrary HTTP endpoints.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#developer-connect">Developer Connect</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-13" class="nav-link">2026-07-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-04-21" class="nav-link">2026-04-21</a>
           </li>

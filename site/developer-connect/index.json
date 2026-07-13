@@ -1,6 +1,16 @@
 {
   "name": "Developer Connect",
   "entries": {
+    "2026-07-13": [
+      {
+        "kind": "Security",
+        "content": "For GitLab Enterprise and Bitbucket Data Center connections, Developer Connect now\nchecks permissions on the calling principal.\n\nWhen you create or update repository connections, Developer Connect uses Secret Manager\nsecrets to authenticate to third-party Git providers. Previously, these\nreferenced secrets were retrieved by the Developer Connect service agent (P4SA) on your\nbehalf, checking permissions only against the P4SA's credentials rather than\nthose of the calling principal. To adhere to the security principle of least\nprivilege, Developer Connect now checks permissions on both the calling principal\n(using end-user credentials) and the P4SA, to ensure both have the\n`secretmanager.versions.access` IAM permission on the referenced\nsecrets.\n\nThis check only affects GitLab Enterprise (GLE) and Bitbucket Data Center (BBDC)\nconnections.\n\nFor instructions and more details, see the\n[Developer Connect security bulletin](https://cloud.google.com/developer-connect/docs/security-bulletins#gcp-2026-048).",
+        "summary": {
+          "title": "Enhanced security for Git connections",
+          "summary": "Developer Connect now verifies permissions for GitLab Enterprise and Bitbucket Data Center connections. This update ensures that both the calling principal and the service agent have the necessary access to secrets, enforcing the principle of least privilege."
+        }
+      }
+    ],
     "2026-04-21": [
       {
         "kind": "Feature",

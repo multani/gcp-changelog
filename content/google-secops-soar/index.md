@@ -2,6 +2,13 @@
 
 ## 2026-07-12
 
+### Announcement
+
+Release 6.3.93 is being rolled out to the first phase of regions as listed
+[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
 ### Feature
 
 **Publisher Agent Version 2.7.0**

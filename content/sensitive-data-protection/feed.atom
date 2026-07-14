@@ -2,9 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Sensitive Data Protection</title>
   <subtitle>Changelog for Google Cloud product: Sensitive Data Protection</subtitle>
-  <updated>2026-06-29T00:00:00+00:00</updated>
+  <updated>2026-07-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:sensitive-data-protection</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/sensitive-data-protection/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:sensitive-data-protection:2026-07-13:change:0</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>If you leave <code>InfoType.version</code> unset or set it to <code>stable</code> when including the <code>MEDICAL_ID</code> infoType in your <code>InspectConfig</code>, Sensitive Data Protection will now include <code>MEDICAL_RECORD_NUMBER</code> findings as type <code>MEDICAL_ID</code> in the scan results.</p>
+<p>You can still use the old functionality by setting <code>InfoType.version</code> to <code>legacy</code> for the next 90 days.</p>]]></content>
+    <summary>Sensitive Data Protection now includes MEDICAL_RECORD_NUMBER findings as MEDICAL_ID when version is unset or stable. You can use the legacy setting for 90 days.</summary>
+    <title>Change: Medical ID findings updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

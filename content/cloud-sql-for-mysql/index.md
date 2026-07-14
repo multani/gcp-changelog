@@ -96,6 +96,15 @@ To upgrade your existing instance to the new minor version, see
 [Upgrade the database minor version](https://docs.cloud.google.com/sql/docs/mysql/upgrade-minor-db-version#manual-upgrade).
 
 ---
+## 2026-06-15
+
+### Feature
+
+You can publish a [Cloud SQL for MySQL conversational analytics agent in Gemini Enterprise](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/sql-mysql/create-data-agents#publish-agent-gemini-enterprise).
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-06-08
 
 ### Feature

@@ -4,10 +4,10 @@
     "2026-07-13": [
       {
         "kind": "Change",
-        "content": "If you leave `InfoType.version` unset or set it to `stable` when including the `MEDICAL_ID` infoType in your `InspectConfig`, Sensitive Data Protection will now include `MEDICAL_RECORD_NUMBER` findings as type `MEDICAL_ID` in the scan results.\n\nYou can still use the old functionality by setting `InfoType.version` to `legacy` for the next 90 days.",
+        "content": "If you leave `InfoType.version` unset\nor set it to `stable` when setting the `MEDICAL_ID`\ninfoType in your `InspectConfig`,\nSensitive Data Protection includes `MEDICAL_RECORD_NUMBER`\nfindings as type `MEDICAL_ID` in the scan results.\n\nYou can still use the old functionality by setting\n`InfoType.version` to `legacy` for the next 90 days.",
         "summary": {
-          "title": "Medical ID findings updated",
-          "summary": "Sensitive Data Protection now includes MEDICAL_RECORD_NUMBER findings as MEDICAL_ID when version is unset or stable. You can use the legacy setting for 90 days."
+          "title": "Medical ID infoType change",
+          "summary": "Sensitive Data Protection now includes MEDICAL_RECORD_NUMBER findings as MEDICAL_ID by default. You can revert to the previous behavior for 90 days by setting InfoType.version to \"legacy\"."
         }
       }
     ],

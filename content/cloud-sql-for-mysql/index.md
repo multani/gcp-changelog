@@ -1,5 +1,25 @@
 # Cloud SQL for MySQL
 
+## 2026-07-13
+
+### Feature
+
+You can now create and query parameterized secure views in Cloud SQL for MySQL.
+Parameterized secure views let you create MySQL views in your MySQL database
+that reference session variables for managing data access. By using a
+parameterized secure view, you can create a single view that is flexible enough
+to accommodate multiple queries across a predefined range of data without
+being required to create multiple static view definitions for different users.
+
+To use parameterized secure views, you're required to have Cloud SQL for
+MySQL 8.0.43 or later and
+[maintenance version R20260320.00\_20 or later](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog)
+installed on your instance.
+
+For more information, see [Parameterized secure views in Cloud SQL](https://docs.cloud.google.com/sql/docs/mysql/parameterized-secure-views).
+This feature is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-06-29
 
 ### Feature

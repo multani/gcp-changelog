@@ -2,6 +2,13 @@
 
 ## 2026-07-13
 
+### Feature
+
+Table partitioning, multi-statement transactions, and advanced runtime are now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA) for
+[Apache Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/biglake-iceberg-tables-in-bigquery).
+
 ### Security
 
 A Missing Authorization vulnerability was discovered in repositories in

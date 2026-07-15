@@ -1,6 +1,32 @@
 {
   "name": "Cloud Data Fusion",
   "entries": {
+    "2026-07-15": [
+      {
+        "kind": "Feature",
+        "content": "Cloud Data Fusion version 6.11.1.4 is generally available\n([GA](https://cloud.google.com/products#product-launch-stages)).",
+        "summary": {
+          "title": "Data Fusion 6.11.1.4 Released",
+          "summary": "Cloud Data Fusion version 6.11.1.4 is now generally available. This release brings important updates and improvements to the data integration service. Users can now leverage the latest features and enhancements for their data pipelines."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed in Cloud Data Fusion 6.11.1.4:\n\n* Fixed a race condition where successfully completed Dataproc jobs were\n  incorrectly marked as `failed` on the Dataproc console due to premature program\n  cancellation ([CDAP-21219](https://cdap.atlassian.net/browse/CDAP-21219)).\n* Fixed an issue where the **Pipeline list** page would hang due to a race\n  condition in an internal service\n  ([CDAP-21241](https://cdap.atlassian.net/browse/CDAP-21241)).\n* Fixed a security vulnerability in log downloads by enforcing strict\n  validation on requested log paths and query parameters to prevent\n  unauthorized access ([CDAP-21260](https://cdap.atlassian.net/browse/CDAP-21260)).",
+        "summary": {
+          "title": "Resolved issues in Data Fusion 6.11.1.4",
+          "summary": "This release addresses a race condition causing incorrect job status reporting, resolves a hanging issue on the Pipeline list page, and enhances security by validating log download paths to prevent unauthorized access."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Changes in Cloud Data Fusion 6.11.1.4:\n\n* Increased the default Wrangler browsing limit to 2,000 items\n  ([CDAP-21259](https://cdap.atlassian.net/browse/CDAP-21259)).",
+        "summary": {
+          "title": "Data Fusion 6.11.1.4 update",
+          "summary": "The latest update to Cloud Data Fusion, version 6.11.1.4, brings improvements to data exploration. The default limit for browsing items in Wrangler has been increased to 2,000, allowing for a more comprehensive view of your data."
+        }
+      }
+    ],
     "2026-06-05": [
       {
         "kind": "Feature",

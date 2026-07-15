@@ -1,5 +1,20 @@
 # Datastream
 
+## 2026-07-15
+
+### Feature
+
+You can now replicate change data from the following application sources with
+Datastream:
+
+* [ServiceNow](https://docs.cloud.google.com/datastream/docs/sources-servicenow)
+* [Salesforce Marketing Cloud](https://docs.cloud.google.com/datastream/docs/sources-salesforce-marketing-cloud)
+* [Microsoft Dataverse](https://docs.cloud.google.com/datastream/docs/sources-dataverse)
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-06-02
 
 ### Feature

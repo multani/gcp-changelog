@@ -2,9 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Data Fusion</title>
   <subtitle>Changelog for Google Cloud product: Cloud Data Fusion</subtitle>
-  <updated>2026-06-05T00:00:00+00:00</updated>
+  <updated>2026-07-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-data-fusion</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-data-fusion/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-07-15:feature:0</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Data Fusion version 6.11.1.4 is generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>]]></content>
+    <summary>Cloud Data Fusion version 6.11.1.4 is now generally available. This release brings important updates and improvements to the data integration service. Users can now leverage the latest features and enhancements for their data pipelines.</summary>
+    <title>Feature: Data Fusion 6.11.1.4 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-07-15:fixed:1</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed in Cloud Data Fusion 6.11.1.4:</p>
+<ul>
+<li>Fixed a race condition where successfully completed Dataproc jobs were
+  incorrectly marked as <code>failed</code> on the Dataproc console due to premature program
+  cancellation (<a href="https://cdap.atlassian.net/browse/CDAP-21219">CDAP-21219</a>).</li>
+<li>Fixed an issue where the <strong>Pipeline list</strong> page would hang due to a race
+  condition in an internal service
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21241">CDAP-21241</a>).</li>
+<li>Fixed a security vulnerability in log downloads by enforcing strict
+  validation on requested log paths and query parameters to prevent
+  unauthorized access (<a href="https://cdap.atlassian.net/browse/CDAP-21260">CDAP-21260</a>).</li>
+</ul>]]></content>
+    <summary>This release addresses a race condition causing incorrect job status reporting, resolves a hanging issue on the Pipeline list page, and enhances security by validating log download paths to prevent unauthorized access.</summary>
+    <title>Fixed: Resolved issues in Data Fusion 6.11.1.4</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-data-fusion:2026-07-15:change:2</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Changes in Cloud Data Fusion 6.11.1.4:</p>
+<ul>
+<li>Increased the default Wrangler browsing limit to 2,000 items
+  (<a href="https://cdap.atlassian.net/browse/CDAP-21259">CDAP-21259</a>).</li>
+</ul>]]></content>
+    <summary>The latest update to Cloud Data Fusion, version 6.11.1.4, brings improvements to data exploration. The default limit for browsing items in Wrangler has been increased to 2,000, allowing for a more comprehensive view of your data.</summary>
+    <title>Change: Data Fusion 6.11.1.4 update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,34 @@
 # Cloud Data Fusion
 
+## 2026-07-15
+
+### Feature
+
+Cloud Data Fusion version 6.11.1.4 is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+### Fixed
+
+Fixed in Cloud Data Fusion 6.11.1.4:
+
+* Fixed a race condition where successfully completed Dataproc jobs were
+  incorrectly marked as `failed` on the Dataproc console due to premature program
+  cancellation ([CDAP-21219](https://cdap.atlassian.net/browse/CDAP-21219)).
+* Fixed an issue where the **Pipeline list** page would hang due to a race
+  condition in an internal service
+  ([CDAP-21241](https://cdap.atlassian.net/browse/CDAP-21241)).
+* Fixed a security vulnerability in log downloads by enforcing strict
+  validation on requested log paths and query parameters to prevent
+  unauthorized access ([CDAP-21260](https://cdap.atlassian.net/browse/CDAP-21260)).
+
+### Change
+
+Changes in Cloud Data Fusion 6.11.1.4:
+
+* Increased the default Wrangler browsing limit to 2,000 items
+  ([CDAP-21259](https://cdap.atlassian.net/browse/CDAP-21259)).
+
+---
 ## 2026-06-05
 
 ### Feature

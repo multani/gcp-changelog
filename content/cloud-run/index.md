@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-07-14
+
+### Feature
+
+Cloud Run support for [importing public container images from GitHub Container Registry](https://docs.cloud.google.com/run/docs/deploying#images) is in [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-08
 
 ### Feature

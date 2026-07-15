@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-07-14
+
+### Feature
+
+[Conversational analytics](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)
+now supports the
+[`AI.AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-agg).
+This function is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-13
 
 ### Feature

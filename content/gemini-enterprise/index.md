@@ -1,5 +1,22 @@
 # Gemini Enterprise
 
+## 2026-07-14
+
+### Announcement
+
+**Gemini Enterprise: Idea Generation agent removal**
+
+The Idea Generation agent which was in public preview is removed
+starting the week of July 14, 2026. Users can brainstorm ideas directly
+using the assistant.
+
+* For general brainstorming and creative thinking, use the Gemini Enterprise
+  app [assistant](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat).
+* For in-depth exploration or hypothesis generation, use
+  [Deep Research](https://docs.cloud.google.com/gemini/enterprise/docs/research-assistant) or
+  [Co-Scientist](https://docs.cloud.google.com/gemini/enterprise/docs/co-scientist-and-alphaevolve) agents.
+
+---
 ## 2026-07-09
 
 ### Announcement

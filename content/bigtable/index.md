@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-07-14
+
+### Feature
+
+AI agents can use the [`list_hot_tablets` Model Context Protocol (MCP) tool](https://docs.cloud.google.com/bigtable/docs/reference/admin/mcp/bigtable/mcp/tools_list/list_hot_tablets)
+to programmatically query Bigtable cluster health to isolate resource-intensive
+tablets (hot tablets) and detect overutilized node CPUs. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-09
 
 ### Feature

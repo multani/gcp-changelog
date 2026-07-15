@@ -1,5 +1,16 @@
 # Looker
 
+## 2026-07-13
+
+### Announcement
+
+The latest versions in the Looker (Google Cloud core) [release channels](https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels) are beginning deployment as follows:
+
+* Latest version in the Rapid channel: **Looker 26.12**
+* Latest version in the Regular channel: **Looker 26.10**
+* Latest version in the No Channel channel: **Looker 26.12**
+
+---
 ## 2026-07-09
 
 ### Announcement

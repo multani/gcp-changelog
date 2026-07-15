@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2026-07-14
+
+### Feature
+
+The `CRIME_STATUS` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2026-07-13
 
 ### Change

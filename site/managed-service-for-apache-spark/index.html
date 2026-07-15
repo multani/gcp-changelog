@@ -2688,6 +2688,30 @@
 
 
 <h1 id="managed-service-for-apache-spark">Managed Service for Apache Spark</h1>
+<h2 id="2026-07-13">2026-07-13</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):</p>
+<ul>
+<li>The <code>2.1</code>, <code>2.2</code> and <code>2.3</code> cluster image versions now support
+  <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/confidential-compute">Confidential Compute</a>
+  for the
+  <a href="https://docs.cloud.google.com/compute/docs/gpus#rtx-6000-gpus"><code>g4-standard-48</code></a>
+  GPU machine type.</li>
+</ul>
+<h3 id="change">Change</h3>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark):</p>
+<ul>
+<li>
+<p>The <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/spark-runtime-3.0">3.0 runtime</a>
+  now uses fewer executors, as follows:</p>
+</li>
+<li>
+<p>0 min executors for <code>spark.dynamicAllocation.minExecutors</code> property</p>
+</li>
+<li>1 min executor for <code>spark.executor.instances</code> and <code>spark.dynamicAllocation.initialExecutors</code> properties</li>
+<li>All runtimes now configure <code>spark.scheduler.listenerbus.exitTimeout</code> to <code>30</code> seconds.</li>
+</ul>
+<hr />
 <h2 id="2026-06-30">2026-06-30</h2>
 <h3 id="announcement">Announcement</h3>
 <p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
@@ -2884,6 +2908,9 @@ The configuration for Spark shuffle partitions (<code>spark.sql.shuffle.partitio
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#managed-service-for-apache-spark">Managed Service for Apache Spark</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-13" class="nav-link">2026-07-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-30" class="nav-link">2026-06-30</a>
           </li>

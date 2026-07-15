@@ -10,6 +10,14 @@ now supports the
 This function is in
 [Preview](https://cloud.google.com/products#product-launch-stages).
 
+### Announcement
+
+As part of
+[Gemini in BigQuery](https://docs.cloud.google.com/bigquery/docs/gemini-security-privacy-compliance),
+[conversational analytics](https://docs.cloud.google.com/bigquery/docs/conversational-analytics)
+now supports [HIPAA](https://cloud.google.com/security/compliance/hipaa)
+compliance.
+
 ---
 ## 2026-07-13
 

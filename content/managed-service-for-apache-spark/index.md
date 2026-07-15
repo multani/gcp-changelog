@@ -1,5 +1,29 @@
 # Managed Service for Apache Spark
 
+## 2026-07-13
+
+### Feature
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+
+* The `2.1`, `2.2` and `2.3` cluster image versions now support
+  [Confidential Compute](https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/confidential-compute)
+  for the
+  [`g4-standard-48`](https://docs.cloud.google.com/compute/docs/gpus#rtx-6000-gpus)
+  GPU machine type.
+
+### Change
+
+**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):
+
+* The [3.0 runtime](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/spark-runtime-3.0)
+  now uses fewer executors, as follows:
+
+  + 0 min executors for `spark.dynamicAllocation.minExecutors` property
+  + 1 min executor for `spark.executor.instances` and `spark.dynamicAllocation.initialExecutors` properties
+* All runtimes now configure `spark.scheduler.listenerbus.exitTimeout` to `30` seconds.
+
+---
 ## 2026-06-30
 
 ### Announcement

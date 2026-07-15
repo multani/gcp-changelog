@@ -2,9 +2,49 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Spark</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Spark</subtitle>
-  <updated>2026-06-30T00:00:00+00:00</updated>
+  <updated>2026-07-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-spark/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-07-13:feature:0</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):</p>
+<ul>
+<li>The <code>2.1</code>, <code>2.2</code> and <code>2.3</code> cluster image versions now support
+  <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/confidential-compute">Confidential Compute</a>
+  for the
+  <a href="https://docs.cloud.google.com/compute/docs/gpus#rtx-6000-gpus"><code>g4-standard-48</code></a>
+  GPU machine type.</li>
+</ul>]]></content>
+    <summary>Managed Service for Apache Spark now supports Confidential Compute for g4-standard-48 GPU machine types on cluster image versions 2.1, 2.2, and 2.3. This enhancement provides increased security for your Spark workloads.</summary>
+    <title>Feature: Confidential Compute for Apache Spark</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-07-13:change:1</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark):</p>
+<ul>
+<li>
+<p>The <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/spark-runtime-3.0">3.0 runtime</a>
+  now uses fewer executors, as follows:</p>
+</li>
+<li>
+<p>0 min executors for <code>spark.dynamicAllocation.minExecutors</code> property</p>
+</li>
+<li>1 min executor for <code>spark.executor.instances</code> and <code>spark.dynamicAllocation.initialExecutors</code> properties</li>
+<li>All runtimes now configure <code>spark.scheduler.listenerbus.exitTimeout</code> to <code>30</code> seconds.</li>
+</ul>]]></content>
+    <summary>Managed Service for Apache Spark has updated its 3.0 runtime to use fewer executors by default. Additionally, all runtimes now have a configured exit timeout of 30 seconds for the listener bus.</summary>
+    <title>Change: Managed Spark runtime update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

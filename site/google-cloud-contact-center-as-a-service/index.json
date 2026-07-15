@@ -1,32 +1,6 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
-    "2026-07-07": [
-      {
-        "kind": "Announcement",
-        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS.\nWhen we release this version, we expect the new capabilities to be as shown\nhere.",
-        "summary": {
-          "title": "CCaaS pre-release notes",
-          "summary": "These are the pre-release notes for the upcoming version of Google Cloud CCaaS, detailing the new capabilities expected upon release."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Direct Access Points for chats**\n\nYou can use a Direct Access Point (DAP) to route a chat conversation directly to\na queue, based on the response from an API that you configure. This lets\nAPI-initiated chats bypass default routing and enter the intended queue\nimmediately.",
-        "summary": {
-          "title": "Direct chat routing",
-          "summary": "Route chats directly to queues using API responses. This feature allows API-initiated chats to bypass default routing and reach their intended queue instantly, streamlining conversation management."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "* Fixed an issue where the inactive chat dismissal timer didn't reset after\n  a chat was transferred from a virtual agent to a human agent.\n* Fixed an issue where voicemails disappeared from the queue\n  immediately after being opened.\n* Fixed an issue where the reporting dashboard incorrectly displayed call and\n  agent status during a cold transfer to another queue.\n* Improved rendering performance in the agent desktop mini chat adapter.\n* Fixed an issue where the storage path for screen recordings didn't align\n  with the folder structure displayed in the user interface.\n* Fixed an issue where missing public files were incorrectly cached by the\n  CDN for up to seven days.\n* Fixed an issue where agents were automatically redirected to the **Closed**\n  inbox view after changing an interaction status to **Closed**.\n* Fixed an issue where the **You cannot log out when in a chat** notification\n  was truncated in the chat adapter.\n* Fixed an issue with Salesforce integrations where rapid, concurrent data\n  requests caused information to be lost.\n* Fixed an issue where duplicate call recording links were posted to Zendesk\n  tickets for multi-segment calls.\n* Fixed an issue with Salesforce integrations where the UI retained settings\n  from a previous Salesforce organization after switching to a new\n  organization.\n* Fixed an issue where duplicate customer satisfaction surveys were submitted\n  and recorded for a single live chat session.\n* Fixed an issue where the message field in the chat adapter was inactive\n  when an agent accepted a new chat.\n* Fixed an issue where task virtual agents were incorrectly identified as\n  **Nobody** when joining a conversation after a transfer from a human agent.\n* Fixed an issue that occurred when a chat entered a queue and the greeting\n  message was sent before an agent was assigned. In these cases, the\n  associated push notification crashed and logged an error, producing\n  excessive noise in logs.\n* Fixed an issue where the agent's final message in a chat session\n  appeared after **This chat is ended** in the chat adapter and the CRM\n  transcript.\n* Fixed an issue where agents using instances without a CRM configuration\n  received a **No Account Detected** warning when making outbound calls.\n* Fixed an issue where notification chimes played after an agent had connected\n  to an active call.\n* Fixed an issue where the country code list didn't automatically update the\n  country flag when a phone number was entered without the `+` prefix.\n* Fixed an issue where calls to an agent's personal queue didn't break through\n  if the agent was also assigned to an inbound queue with breakthrough\n  disabled.\n* Fixed an issue where outbound calls that were transferred to a queue didn't\n  adhere to the queue's deltacast configuration.\n* Fixed an issue where the agent desktop became unstable or didn't load.\n* Fixed an issue where wrap-up time was incorrectly reported when agents\n  exceeded the configured wrap-up time.\n* Fixed an issue where the IVR queues dashboard didn't load for instances with\n  a large volume of queues.\n* Fixed an issue where calls to the `manager/api/v1/agent_activity_logs`\n  endpoint timed out when `sort_direction` was turned off.",
-        "summary": {
-          "title": "Resolved issues and performance improvements",
-          "summary": "This update addresses several issues, including problems with chat transfers, voicemail handling, reporting accuracy, and integration stability. Performance in the agent desktop mini chat adapter has also been improved."
-        }
-      }
-    ],
     "2026-07-01": [
       {
         "kind": "Announcement",
@@ -186,6 +160,32 @@
         "summary": {
           "title": "Resolved reporting inaccuracies and dashboard issues",
           "summary": "Several reporting inaccuracies in dashboards have been fixed, including issues with repeat contact percentages, date filters, and missing disposition codes. Additionally, language labels have been restored, and a chat ID filtering problem has been resolved."
+        }
+      }
+    ],
+    "2026-07-07": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS.\nWhen we release this version, we expect the new capabilities to be as shown\nhere.",
+        "summary": {
+          "title": "CCaaS pre-release notes",
+          "summary": "These are the pre-release notes for the upcoming version of Google Cloud CCaaS, detailing the new capabilities expected upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Direct Access Points for chats**\n\nYou can use a Direct Access Point (DAP) to route a chat conversation directly to\na queue, based on the response from an API that you configure. This lets\nAPI-initiated chats bypass default routing and enter the intended queue\nimmediately.",
+        "summary": {
+          "title": "Direct chat routing",
+          "summary": "Route chats directly to queues using API responses. This feature allows API-initiated chats to bypass default routing and reach their intended queue instantly, streamlining conversation management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "* Fixed an issue where the inactive chat dismissal timer didn't reset after\n  a chat was transferred from a virtual agent to a human agent.\n* Fixed an issue where voicemails disappeared from the queue\n  immediately after being opened.\n* Fixed an issue where the reporting dashboard incorrectly displayed call and\n  agent status during a cold transfer to another queue.\n* Improved rendering performance in the agent desktop mini chat adapter.\n* Fixed an issue where the storage path for screen recordings didn't align\n  with the folder structure displayed in the user interface.\n* Fixed an issue where missing public files were incorrectly cached by the\n  CDN for up to seven days.\n* Fixed an issue where agents were automatically redirected to the **Closed**\n  inbox view after changing an interaction status to **Closed**.\n* Fixed an issue where the **You cannot log out when in a chat** notification\n  was truncated in the chat adapter.\n* Fixed an issue with Salesforce integrations where rapid, concurrent data\n  requests caused information to be lost.\n* Fixed an issue where duplicate call recording links were posted to Zendesk\n  tickets for multi-segment calls.\n* Fixed an issue with Salesforce integrations where the UI retained settings\n  from a previous Salesforce organization after switching to a new\n  organization.\n* Fixed an issue where duplicate customer satisfaction surveys were submitted\n  and recorded for a single live chat session.\n* Fixed an issue where the message field in the chat adapter was inactive\n  when an agent accepted a new chat.\n* Fixed an issue where task virtual agents were incorrectly identified as\n  **Nobody** when joining a conversation after a transfer from a human agent.\n* Fixed an issue that occurred when a chat entered a queue and the greeting\n  message was sent before an agent was assigned. In these cases, the\n  associated push notification crashed and logged an error, producing\n  excessive noise in logs.\n* Fixed an issue where the agent's final message in a chat session\n  appeared after **This chat is ended** in the chat adapter and the CRM\n  transcript.\n* Fixed an issue where agents using instances without a CRM configuration\n  received a **No Account Detected** warning when making outbound calls.\n* Fixed an issue where notification chimes played after an agent had connected\n  to an active call.\n* Fixed an issue where the country code list didn't automatically update the\n  country flag when a phone number was entered without the `+` prefix.\n* Fixed an issue where calls to an agent's personal queue didn't break through\n  if the agent was also assigned to an inbound queue with breakthrough\n  disabled.\n* Fixed an issue where outbound calls that were transferred to a queue didn't\n  adhere to the queue's deltacast configuration.\n* Fixed an issue where the agent desktop became unstable or didn't load.\n* Fixed an issue where wrap-up time was incorrectly reported when agents\n  exceeded the configured wrap-up time.\n* Fixed an issue where the IVR queues dashboard didn't load for instances with\n  a large volume of queues.\n* Fixed an issue where calls to the `manager/api/v1/agent_activity_logs`\n  endpoint timed out when `sort_direction` was turned off.",
+        "summary": {
+          "title": "Resolved issues and performance improvements",
+          "summary": "This update addresses several issues, including problems with chat transfers, voicemail handling, reporting accuracy, and integration stability. Performance in the agent desktop mini chat adapter has also been improved."
         }
       }
     ],

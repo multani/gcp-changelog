@@ -1,6 +1,24 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-07-13": [
+      {
+        "kind": "Feature",
+        "content": "**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):\n\n* The `2.1`, `2.2` and `2.3` cluster image versions now support\n  [Confidential Compute](https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/confidential-compute)\n  for the\n  [`g4-standard-48`](https://docs.cloud.google.com/compute/docs/gpus#rtx-6000-gpus)\n  GPU machine type.",
+        "summary": {
+          "title": "Confidential Compute for Apache Spark",
+          "summary": "Managed Service for Apache Spark now supports Confidential Compute for g4-standard-48 GPU machine types on cluster image versions 2.1, 2.2, and 2.3. This enhancement provides increased security for your Spark workloads."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):\n\n* The [3.0 runtime](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/spark-runtime-3.0)\n  now uses fewer executors, as follows:\n\n  + 0 min executors for `spark.dynamicAllocation.minExecutors` property\n  + 1 min executor for `spark.executor.instances` and `spark.dynamicAllocation.initialExecutors` properties\n* All runtimes now configure `spark.scheduler.listenerbus.exitTimeout` to `30` seconds.",
+        "summary": {
+          "title": "Managed Spark runtime update",
+          "summary": "Managed Service for Apache Spark has updated its 3.0 runtime to use fewer executors by default. Additionally, all runtimes now have a configured exit timeout of 30 seconds for the listener bus."
+        }
+      }
+    ],
     "2026-06-30": [
       {
         "kind": "Announcement",

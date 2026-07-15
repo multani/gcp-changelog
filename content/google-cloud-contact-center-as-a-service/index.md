@@ -1,5 +1,150 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-07-14
+
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS.
+When we release this version, we expect the new capabilities to be as shown
+here.
+
+### Feature
+
+**Agent Assist hub**
+
+The Agent Assist hub is a new panel in the agent desktop that combines
+generative knowledge assist and agent coaching features in a single unified
+interface. The Agent Assist hub contains a knowledge assist module that
+is a 1:1 functional replacement of the agent desktop knowledge assist panel.
+
+**Important:**
+
+* For any agents that are signed into your contact center at the moment we
+  update it, the new Knowledge Assist module will stop working. To fix this
+  problem, the agent needs to sign out of the contact center and sign in
+  again. The Knowledge Assist module will begin working. Agents who sign into
+  your contact center after we update it won't be affected by this issue.
+* When we roll out this change, your Google Cloud CCaaS instance will be
+  updated automatically - you don't need to change any configurations.
+  However, you should tell your agents to sign out of your contact center and
+  sign in again if the Knowledge Assist module within the Agent Assist Hub
+  panel isn't working for them. Your agents do not need to take action If your
+  instance is configured as a Critical deployment and is updated outside of
+  the contact center hours of operation.
+
+Administrators: We've made the following updates to the CCAI Platform portal:
+
+* We've reorganized the **Agent Assist** panels at **Settings >
+  Call > Agent Assist** and **Settings
+  > Chat > Agent Assist** as follows:
+
+  + Settings are now grouped in **Knowledge & Guidance** and **Conversation
+    Insights** sections.
+  + The **Knowledge & Guidance** section contains a new **Agent Assist Hub**
+    option.
+* A new **Agent Assist Hub** panel is available in the desktop layout
+  builder of the agent desktop.
+
+### Feature
+
+**Manual wrap-up**
+
+You can now configure CCAI Platform so agents can attribute wrap-up
+time, disposition code, and notes to a previous interaction. You can also let
+agents modify the disposition code and notes of previously completed sessions.
+
+Administrators: In the **Settings > Operation Management >
+Wrap-up** pane, a new **Manual Wrap-up** section is available.
+
+User experience change: If configured, a new **Previous Sessions** list appears
+in the agent adapter.
+
+### Feature
+
+**API direct access point for chat**
+
+The API direct access point (DAP) for chat lets you automatically route incoming
+chat sessions to a queue based on a response from an external API endpoint that
+you configure. This eliminates the need for end-users to select from a queue
+menu.
+
+### Fixed
+
+* Fixed an issue where emails were stuck in a **Transferring** state when
+  moved between queues.
+* Fixed an issue where end-users didn't receive messages from agents during
+  web chats.
+* Fixed an issue where calls or chats remained in a queue without being
+  offered to available agents.
+* Fixed an issue where voice calls were prematurely moved from an agent's
+  queue during a multi-group cascade.
+* Fixed an issue where the disposition panel didn't appear after a call ended,
+  leaving agents unable to change their status without signing out and signing
+  in.
+* Fixed an issue where end-users were incorrectly assigned to teams and skills
+  they weren't originally part of during bulk CSV imports.
+* Fixed an issue where interaction transcripts for calls in non-English
+  languages were incorrect.
+* Fixed an issue in Salesforce integrations where incoming chat audio and
+  desktop notifications didn't play for agents using the embedded
+  CCAI Platform widget.
+* Fixed an issue where the inactive chat dismissal timer didn't reset after
+  a chat was transferred from a virtual agent to a human agent.
+* Fixed an issue where voicemails disappeared from the queue
+  immediately after being opened.
+* Fixed an issue where the reporting dashboard incorrectly displayed call and
+  agent status during a cold transfer to another queue.
+* Improved rendering performance in the agent desktop mini chat adapter.
+* Fixed an issue where the storage path for screen recordings didn't align
+  with the folder structure displayed in the user interface.
+* Fixed an issue where missing public files were incorrectly cached by the
+  CDN for up to seven days.
+* Fixed an issue where agents were automatically redirected to the **Closed**
+  inbox view after changing an interaction status to **Closed**.
+* Fixed an issue where the **You cannot log out when in a chat** notification
+  was truncated in the chat adapter.
+* Fixed an issue with Salesforce integrations where rapid, concurrent data
+  requests caused information to be lost.
+* Fixed an issue where duplicate call recording links were posted to Zendesk
+  tickets for multi-segment calls.
+* Fixed an issue with Salesforce integrations where the UI retained settings
+  from a previous Salesforce organization after switching to a new
+  organization.
+* Fixed an issue where duplicate customer satisfaction surveys were submitted
+  and recorded for a single live chat session.
+* Fixed an issue where the message field in the chat adapter was inactive
+  when an agent accepted a new chat.
+* Fixed an issue where task virtual agents were incorrectly identified as
+  **Nobody** when joining a conversation after a transfer from a human agent.
+* Fixed an issue that occurred when a chat entered a queue and the greeting
+  message was sent before an agent was assigned. In these cases, the
+  associated push notification crashed and logged an error, producing
+  excessive noise in logs.
+* Fixed an issue where the agent's final message in a chat session
+  appeared after **This chat is ended** in the chat adapter and the CRM
+  transcript.
+* Fixed an issue where agents using instances without a CRM configuration
+  received a **No Account Detected** warning when making outbound calls.
+* Fixed an issue where notification chimes played after an agent had connected
+  to an active call.
+* Fixed an issue where the country code list didn't automatically update the
+  country flag when a phone number was entered without the `+` prefix.
+* Fixed an issue where calls to an agent's personal queue didn't break through
+  if the agent was also assigned to an inbound queue with breakthrough
+  disabled.
+* Fixed an issue where outbound calls that were transferred to a queue didn't
+  adhere to the queue's deltacast configuration.
+* Fixed an issue where the agent desktop became unstable or didn't load.
+* Fixed an issue where wrap-up time was incorrectly reported when agents
+  exceeded the configured wrap-up time.
+* Fixed an issue where the IVR queues dashboard didn't load for instances with
+  a large volume of queues.
+* Fixed an issue where calls to the `manager/api/v1/agent_activity_logs`
+  endpoint timed out when `sort_direction` was turned off.
+
+---
 ## 2026-07-07
 
 ### Announcement

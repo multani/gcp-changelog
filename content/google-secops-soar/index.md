@@ -25,6 +25,19 @@ is now available for all regions.
 available for all regions.
 
 ---
+## 2026-07-07
+
+### Feature
+
+**SOAR migration to Google Cloud validation status**
+
+You can now check if the SOAR migration was successful by going to the **SOAR Settings > License Management** page.
+After successful completion of Stage 1, it will say **Google.com** after the system version number.
+After successful completion of Stage 2 of SOAR permissions to IAM roles, it will say both **Google.com** and **CloudIAM Enabled** after the system version number.
+
+For more information on the migration, see the [SOAR migration guide](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp)
+
+---
 ## 2026-07-05
 
 ### Announcement

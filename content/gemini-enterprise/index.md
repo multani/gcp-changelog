@@ -4,6 +4,33 @@
 
 ### Feature
 
+**Gemini Enterprise: New data stores and support for new actions (Preview)**
+
+The following data stores are available in Public Preview:
+
+* [Aiwyn Tax](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/aiwyn_tax)
+* [AllTrails](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/alltrails)
+* [Autodesk Product Help](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/autodesk-product-help)
+* [AWS Marketplace](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/aws-marketplace)
+* [Courtroom5](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/courtroom5)
+* [pg-aiguide](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/pg_aiguide)
+* [Taskrabbit](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/taskrabbit)
+* [Twilio Docs](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/twilio_docs)
+* [Viator](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/viator)
+* [ZoomInfo](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zoominfo)
+
+Additionally, support for new actions is available in Public Preview for the
+following data stores:
+
+* [Freshservice](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/freshservice): Update tickets.
+* [Zoho Desk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohodesk): Update ticket comments.
+* [ZoomInfo](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zoominfo): Submit feedback.
+
+For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+### Feature
+
 **Gemini Enterprise: Action-filtering support for Jira Data Center data stores (Preview)**
 
 Filters configured on Jira Data Center federated data stores apply to both search queries and action execution. These filters let you specify which Jira projects are accessible to the Gemini Enterprise app assistant; mutations or retrievals on out-of-scope data fail or return no results.
@@ -133,7 +160,7 @@ also use the latest Gemini 3.5 Flash model in these regions with
 in-region at-rest DRZ and MLP.
 
 These locations are available in GA with allowlist. To get access to these
-locations for use with Gemini Enterprise or NotebookLM Enterprise,
+locations for use with Gemini Enterprise or Gemini Notebook Enterprise,
 contact your Google account team.
 
 Certain limitations apply when using these regions. For more information,

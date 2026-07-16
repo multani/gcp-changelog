@@ -1,5 +1,27 @@
 # Cloud Key Management Service
 
+## 2026-07-16
+
+### Feature
+
+Cloud KMS supports the following post-quantum computing (PQC) signing algorithms
+in General Availability:
+
+* `PQ_SIGN_HASH_SLH_DSA_SHA2_128S_SHA256`
+* `PQ_SIGN_ML_DSA_44`
+* `PQ_SIGN_ML_DSA_44_EXTERNAL_MU`
+* `PQ_SIGN_ML_DSA_65`
+* `PQ_SIGN_ML_DSA_65_EXTERNAL_MU`
+* `PQ_SIGN_ML_DSA_87`
+* `PQ_SIGN_ML_DSA_87_EXTERNAL_MU`
+* `PQ_SIGN_SLH_DSA_SHA2_128S`
+
+For more information about supported algorithms, see [PQC signing
+algorithms](https://docs.cloud.google.com/kms/docs/algorithms#pqc_signing_algorithms). For more information
+about PQC signing, see [Post-quantum cryptography (PQC) digital
+signature](https://docs.cloud.google.com/kms/docs/digital-signatures#pqc).
+
+---
 ## 2026-07-07
 
 ### Feature

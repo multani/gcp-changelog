@@ -1,5 +1,15 @@
 # Apigee UI
 
+## 2026-07-15
+
+### Fixed
+
+**Apigee UI**
+
+Fixed an issue where editing a legacy API Product with a selected API Proxy
+could cause the Apigee UI to become unresponsive.
+
+---
 ## 2026-07-06
 
 ### Announcement

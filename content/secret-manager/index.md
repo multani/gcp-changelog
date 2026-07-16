@@ -1,5 +1,17 @@
 # Secret Manager
 
+## 2026-07-12
+
+### Feature
+
+Parameter templates are available in
+[Preview](https://cloud.google.com/products#product-launch-stages). This feature
+lets you define standardized configuration blueprints and securely substitute
+environment-specific variables from parameter versions during deployment.
+
+For more information, see [Parameter templates overview](https://docs.cloud.google.com/secret-manager/parameter-manager/docs/parameter-templates-overview).
+
+---
 ## 2026-06-19
 
 ### Feature

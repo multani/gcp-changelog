@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-07-16
+
+### Feature
+
+Oracle Database@Google Cloud supports cloning for Autonomous AI Databases. You can create full, metadata, and refreshable clones using Google Cloud CLI and API. For more information, see [Clone an Autonomous AI Database](https://docs.cloud.google.com/oracle/database/docs/clone-autonomous-database).
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-02
 
 ### Feature

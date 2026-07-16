@@ -1,5 +1,18 @@
 # Backup and DR
 
+## 2026-07-10
+
+### Feature
+
+* You can now change the backup plan applied to an existing AlloyDB for PostgreSQL cluster,
+  provided that the new backup plan uses the same backup vault and is in the same
+  region as the AlloyDB for PostgreSQL cluster. For more information, see
+  [Change a backup plan](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/alloydb/alloydb-backup#change-plan).
+* You can now take **on-demand backups with custom retention** of your AlloyDB for PostgreSQL cluster
+  at any time, independently of your *scheduled backups*. For more information,
+  see [Create an on-demand backup](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/alloydb/alloydb-backup#create_an_on-demand_backup).
+
+---
 ## 2026-06-23
 
 ### Feature

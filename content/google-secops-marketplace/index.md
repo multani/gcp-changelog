@@ -1,5 +1,66 @@
 # Google SecOps Marketplace
 
+## 2026-07-15
+
+### Change
+
+**AWS GuardDuty**: Version 14.0
+
+* Added support for Google Cloud Web Identity (OIDC) Federation authentication.
+
+### Change
+
+**SCC Enterprise**: Version 22.0
+
+* Refactored integration code to optimize underlying execution performance.
+
+### Change
+
+**Google Threat Intelligence**: Version 18.0
+
+* Added an optional `Active Group` parameter to support multi-tenant
+  organization context routing in the integration configuration and the following
+  connector:
+
+  + **ASM Issues Connector**
+
+### Change
+
+**Google Chronicle**: Version 88.0
+
+* Added `api_root` parameter to alert extensions to expand normalization
+  metadata options in the following connector:
+
+  + **Chronicle Alerts Connector**
+
+### Change
+
+**Microsoft Defender ATP**: Version 33.0
+
+* Updated execution processing logic to improve backend tracking stability in
+  the following action:
+
+  + **Execute Live Response Command**
+
+### Change
+
+**ServiceNow**: Version 68.0
+
+* Updated affected CIs processing logic to handle missing reference keys
+  smoothly in the following job:
+
+  + **Sync Incidents Job**
+
+### Change
+
+**CrowdStrike Falcon**: Version 78.0
+
+* Fixed pagination loop logic to prevent infinite timeouts during high-volume
+  sweeps in the following action:
+
+  + **Get Host Information**
+
+---
 ## 2026-07-08
 
 ### Change

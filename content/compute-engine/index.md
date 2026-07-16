@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2026-07-15
+
+### Feature
+
+**Preview**: The network-optimized C4N machine series offers machine types with
+375 GiB to 12,000 GiB of attached Titanium SSD.
+
+To use C4N machine types with attached Local SSD disks, you can
+[Request preview access](https://forms.gle/ehRSqssSEavKt1Fh7).
+
+For more information, see [C4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series).
+
+---
 ## 2026-07-09
 
 ### Feature

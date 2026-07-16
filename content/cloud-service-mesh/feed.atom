@@ -2,9 +2,156 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2026-07-06T00:00:00+00:00</updated>
+  <updated>2026-07-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-07-15:announcement:0</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.29.5-asm.12 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.29.5-asm.12 uses Envoy v1.35.13.</p>]]></content>
+    <summary>The new version 1.29.5-asm.12 of Cloud Service Mesh is now available. This release includes an upgrade to Envoy v1.35.13. For information on upgrading your existing installation, please refer to the provided documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.29.5-asm.12 is available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-07-15:fixed:1</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.29.5-asm.12 contains fixes for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://ubuntu.com/security/CVE-2026-46595">CVE-2026-46595</a> | Yes | Yes | Yes | Yes | Critical (10.0) |
+| <a href="https://ubuntu.com/security/CVE-2026-8376">CVE-2026-8376</a> | Yes | Yes | No | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-8925">CVE-2026-8925</a> | Yes | Yes | No | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-39830">CVE-2026-39830</a> | Yes | Yes | Yes | Yes | Critical (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39831">CVE-2026-39831</a> | Yes | Yes | Yes | Yes | Critical (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39832">CVE-2026-39832</a> | Yes | Yes | Yes | Yes | Critical (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39833">CVE-2026-39833</a> | Yes | Yes | Yes | Yes | Critical (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-39834">CVE-2026-39834</a> | Yes | Yes | Yes | Yes | Critical (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-42496">CVE-2026-42496</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-42508">CVE-2026-42508</a> | Yes | Yes | Yes | Yes | Critical (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8924">CVE-2026-8924</a> | Yes | Yes | No | Yes | Low (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8927">CVE-2026-8927</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8286">CVE-2026-8286</a> | Yes | Yes | No | Yes | Low (8.1) |
+| <a href="https://ubuntu.com/security/CVE-2025-69720">CVE-2025-69720</a> | Yes | Yes | No | Yes | Low (7.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-39822">CVE-2026-39822</a> | Yes | Yes | Yes | Yes | High (7.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-39829">CVE-2026-39829</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-41992">CVE-2026-41992</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-46597">CVE-2026-46597</a> | Yes | Yes | Yes | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-9547">CVE-2026-9547</a> | Yes | Yes | No | Yes | Low (7.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-25680">CVE-2026-25680</a> | Yes | Yes | Yes | Yes | Medium (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39827">CVE-2026-39827</a> | Yes | Yes | Yes | Yes | Medium (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-8458">CVE-2026-8458</a> | Yes | Yes | No | Yes | Low (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-39828">CVE-2026-39828</a> | Yes | Yes | Yes | Yes | Medium (6.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-5704">CVE-2026-5704</a> | Yes | Yes | No | Yes | Medium (5.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-58055">CVE-2026-58055</a> | Yes | Yes | No | Yes | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-39835">CVE-2026-39835</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-42505">CVE-2026-42505</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-46598">CVE-2026-46598</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-41991">CVE-2026-41991</a> | Yes | Yes | No | Yes | Medium (4.7) |
+| <a href="https://ubuntu.com/security/CVE-2025-45582">CVE-2025-45582</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>Patch 1.29.5-asm.12 addresses multiple platform CVEs across proxy, control plane, and CNI components. This update includes fixes for several critical and high-severity vulnerabilities.</summary>
+    <title>Fixed: Platform Security Updates Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-07-15:announcement:2</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.28.10-asm.4 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.28.10-asm.4 uses Envoy v1.36.9.</p>]]></content>
+    <summary>The latest version of Cloud Service Mesh, 1.28.10-asm.4, is now available. This update includes Envoy v1.36.9. For information on upgrading, please refer to the documentation.</summary>
+    <title>Announcement: Cloud Service Mesh update available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-07-15:fixed:3</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.28.10-asm.4 contains fixes for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://ubuntu.com/security/CVE-2026-8376">CVE-2026-8376</a> | Yes | Yes | No | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-8925">CVE-2026-8925</a> | Yes | Yes | No | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-42496">CVE-2026-42496</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8924">CVE-2026-8924</a> | Yes | Yes | No | Yes | Low (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8927">CVE-2026-8927</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8286">CVE-2026-8286</a> | Yes | Yes | No | Yes | Low (8.1) |
+| <a href="https://ubuntu.com/security/CVE-2025-69720">CVE-2025-69720</a> | Yes | Yes | No | Yes | Low (7.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-39822">CVE-2026-39822</a> | Yes | Yes | Yes | Yes | High (7.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-41992">CVE-2026-41992</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42151">CVE-2026-42151</a> | No | No | No | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-42154">CVE-2026-42154</a> | No | No | No | Yes | High (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-9547">CVE-2026-9547</a> | Yes | Yes | No | Yes | Low (7.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-8458">CVE-2026-8458</a> | Yes | Yes | No | Yes | Low (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-40179">CVE-2026-40179</a> | No | No | No | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-44903">CVE-2026-44903</a> | No | No | No | Yes | Medium (6.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-5704">CVE-2026-5704</a> | Yes | Yes | No | Yes | Medium (5.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-58055">CVE-2026-58055</a> | Yes | Yes | No | Yes | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-42505">CVE-2026-42505</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-41991">CVE-2026-41991</a> | Yes | Yes | No | Yes | Medium (4.7) |
+| <a href="https://ubuntu.com/security/CVE-2025-45582">CVE-2025-45582</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>Patch 1.28.10-asm.4 addresses multiple platform CVEs, including several with medium and high severity ratings. This update is crucial for maintaining the security posture of your systems.</summary>
+    <title>Fixed: Security Patch Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-07-15:announcement:4</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.27.9-asm.15 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.27.9-asm.15 uses Envoy v1.35.13v.</p>]]></content>
+    <summary>The latest version of Cloud Service Mesh, 1.27.9-asm.15, is now available. This update includes Envoy v1.35.13v. For information on upgrading, please refer to the Cloud Service Mesh upgrade documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.27.9-asm.15 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-07-15:fixed:5</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.27.9-asm.15 contains fixes for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://ubuntu.com/security/CVE-2026-8376">CVE-2026-8376</a> | Yes | Yes | No | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-8925">CVE-2026-8925</a> | Yes | Yes | No | Yes | Medium (9.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-42496">CVE-2026-42496</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8924">CVE-2026-8924</a> | Yes | Yes | No | Yes | Low (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8927">CVE-2026-8927</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://ubuntu.com/security/CVE-2026-8286">CVE-2026-8286</a> | Yes | Yes | No | Yes | Low (8.1) |
+| <a href="https://ubuntu.com/security/CVE-2025-69720">CVE-2025-69720</a> | Yes | Yes | No | Yes | Low (7.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-39822">CVE-2026-39822</a> | Yes | Yes | Yes | Yes | High (7.8) |
+| <a href="https://ubuntu.com/security/CVE-2026-41992">CVE-2026-41992</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-9547">CVE-2026-9547</a> | Yes | Yes | No | Yes | Low (7.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-8458">CVE-2026-8458</a> | Yes | Yes | No | Yes | Low (6.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-5704">CVE-2026-5704</a> | Yes | Yes | No | Yes | Medium (5.5) |
+| <a href="https://ubuntu.com/security/CVE-2026-58055">CVE-2026-58055</a> | Yes | Yes | No | Yes | Medium (5.4) |
+| <a href="https://ubuntu.com/security/CVE-2026-42505">CVE-2026-42505</a> | Yes | Yes | Yes | Yes | Medium (5.3) |
+| <a href="https://ubuntu.com/security/CVE-2026-41991">CVE-2026-41991</a> | Yes | Yes | No | Yes | Medium (4.7) |
+| <a href="https://ubuntu.com/security/CVE-2025-45582">CVE-2025-45582</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>The latest patch, 1.27.9-asm.15, addresses several platform security vulnerabilities. This update is crucial for maintaining the security and integrity of your systems.</summary>
+    <title>Fixed: Security Patch Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,32 @@
 # Apigee X
 
+## 2026-07-15
+
+### Announcement
+
+On July 15th, 2026, we released an updated version of Apigee (1-18-0-apigee-1).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **527586459** | Fixed a cache policy throttling bug (CacheThrottlerV2 key poisoning) to enhance reliability. |
+| **525697701** | Fixed an issue where API proxy deployments could get stuck during basepath migrations in Apigee X. |
+| **N/A** | Updates to infrastructure and libraries. |
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **527415966, 524656652** | **Security fix for Apigee.** Upgraded the Apigee ingress gateway (ASM) to patch security vulnerabilities. |
+| **527956223** | **Security fix for Apigee.** Enhanced security in the Java Callout policy to prevent sandbox escape. |
+| **519729209** | **Security fix for Apigee.** Fixed a SAML XML Signature Wrapping (XSW) vulnerability in the ValidateSAMLAssertion policy. |
+| **530886487** | **Security fix for Apigee.** Upgraded the apigee-connect-agent to patch [CVE-2026-25680](https://nvd.nist.gov/vuln/detail/CVE-2026-25680). |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+---
 ## 2026-07-08
 
 ### Security

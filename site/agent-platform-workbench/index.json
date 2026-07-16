@@ -1,6 +1,26 @@
 {
   "name": "Agent Platform Workbench",
   "entries": {
+    "2026-07-13": [
+      {
+        "kind": "Feature",
+        "content": "**Agent Platform Workbench image release**\n\nThe following Agent Platform Workbench instances image releases are available:\n\n* **20260712-2130-rc0 (`workbench-instances-2603` - Debian 12)**\n  + Installed latest packages from upstream dependencies.\n  + Fixed broken cupy installation.\n* **M144 (`workbench-instances` - Debian 11)**\n  + Installed latest packages from upstream dependencies.\n  + Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.",
+        "summary": {
+          "title": "Agent Platform Workbench Image Release",
+          "summary": "New Agent Platform Workbench images are now available, including updates for Debian 12 and Debian 11 instances. These releases incorporate the latest upstream packages, fix a cupy installation issue, and resolve a JupyterLab reachability problem on GPU instances."
+        }
+      }
+    ],
+    "2026-07-06": [
+      {
+        "kind": "Feature",
+        "content": "**Agent Platform Workbench image release**\n\nThe following Agent Platform Workbench instances image release is available:\n\n* **20260701-2130-rc0 (`workbench-instances-2603` - Debian 12)**\n  + Installed latest packages from upstream dependencies.\n  + Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.\n  + Fixed an issue where long-running requests (for example, streaming or long-poll connections) could be terminated after about 60 seconds.",
+        "summary": {
+          "title": "Agent Platform Workbench Image Update",
+          "summary": "A new image release for Agent Platform Workbench is now available, including updated packages and fixes for JupyterLab reachability and request termination issues. This release ensures a more stable and reliable user experience."
+        }
+      }
+    ],
     "2026-06-30": [
       {
         "kind": "Feature",
@@ -8,6 +28,36 @@
         "summary": {
           "title": "Python 3.12 support for custom containers",
           "summary": "You can now build custom containers for Agent Platform Workbench instances using Python 3.12 base images. This provides an updated Python environment for your custom container needs."
+        }
+      }
+    ],
+    "2026-06-29": [
+      {
+        "kind": "Feature",
+        "content": "**Agent Platform Workbench image release**\n\nThe following Agent Platform Workbench instances image release is available:\n\n* **20260628-2130-rc0 (`workbench-instances-2603` - Debian 12)**\n  + Installed latest packages from upstream dependencies.\n  + Installed TensorFlow and PyTorch packages to the default kernel.",
+        "summary": {
+          "title": "Agent Platform Workbench Image Update",
+          "summary": "The latest Agent Platform Workbench image release, version 20260628-2130-rc0, is now available. This update includes the latest upstream packages and installs TensorFlow and PyTorch in the default kernel."
+        }
+      }
+    ],
+    "2026-06-24": [
+      {
+        "kind": "Feature",
+        "content": "**Agent Platform Workbench image release**\n\nThe following Agent Platform Workbench instances image release is available:\n\n* **20260624-1604-rc0 (`workbench-instances-2603` - Debian 12)**\n  + Installed latest packages from upstream dependencies.\n  + Fixed an issue where notebook kernels could become unavailable if the Dataproc plugin failed to load.",
+        "summary": {
+          "title": "Agent Platform Workbench Image Update",
+          "summary": "A new image release for Agent Platform Workbench instances is now available. This update includes the latest packages from upstream dependencies and resolves an issue with notebook kernel availability."
+        }
+      }
+    ],
+    "2026-06-23": [
+      {
+        "kind": "Feature",
+        "content": "**Agent Platform Workbench image release**\n\nThe following Agent Platform Workbench instances image releases are available:\n\n* **20260622-2130-rc0 (`workbench-instances-2603` - Debian 12)**\n  + Installed latest packages from upstream dependencies.\n  + Fixed a duplicate \"Python 3 (ipykernel)\" kernel appearing in the launcher.\n* **M143 (`workbench-instances` - Debian 11)**\n  + Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Agent Platform Workbench image updates",
+          "summary": "New image releases for Agent Platform Workbench are now available, including updates for Debian 12 and Debian 11 instances. These releases bring the latest package updates and bug fixes, such as resolving duplicate kernel issues."
         }
       }
     ]

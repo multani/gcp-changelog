@@ -1,5 +1,18 @@
 # Gemini Enterprise
 
+## 2026-07-15
+
+### Feature
+
+**Gemini Enterprise: Action-filtering support for Jira Data Center data stores (Preview)**
+
+Filters configured on Jira Data Center federated data stores apply to both search queries and action execution. These filters let you specify which Jira projects are accessible to the Gemini Enterprise app assistant; mutations or retrievals on out-of-scope data fail or return no results.
+
+This feature is in Public Preview. For more information, see:
+
+* [Set up a Jira Data Center data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-dc/set-up-data-store) and [Add filters to a Jira Data Center data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/jira-dc/add-filters-to-jira-data-store)
+
+---
 ## 2026-07-14
 
 ### Announcement

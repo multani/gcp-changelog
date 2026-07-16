@@ -1,5 +1,16 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-07-15
+
+### Feature
+
+**Memory Bank memory profiles are generally available (GA)**
+
+Memory profiles in Memory Bank are generally available (GA). Memory profiles allow you to generate structured profiles, which are data structures with static schemas populated and updated using LLMs. By defining a fixed schema, you ensure your agents have immediate, low-latency access to evolving information without the need for expensive search operations during a session.
+
+For details, see [Memory profiles](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/profiles).
+
+---
 ## 2026-07-09
 
 ### Feature

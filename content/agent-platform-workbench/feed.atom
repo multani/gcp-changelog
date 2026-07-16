@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Agent Platform Workbench</title>
   <subtitle>Changelog for Google Cloud product: Agent Platform Workbench</subtitle>
-  <updated>2026-06-30T00:00:00+00:00</updated>
+  <updated>2026-07-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:agent-platform-workbench</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/agent-platform-workbench/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:agent-platform-workbench:2026-07-13:feature:0</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Platform Workbench image release</strong></p>
+<p>The following Agent Platform Workbench instances image releases are available:</p>
+<ul>
+<li><strong>20260712-2130-rc0 (<code>workbench-instances-2603</code> - Debian 12)</strong></li>
+<li>Installed latest packages from upstream dependencies.</li>
+<li>Fixed broken cupy installation.</li>
+<li><strong>M144 (<code>workbench-instances</code> - Debian 11)</strong></li>
+<li>Installed latest packages from upstream dependencies.</li>
+<li>Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.</li>
+</ul>]]></content>
+    <summary>New Agent Platform Workbench images are now available, including updates for Debian 12 and Debian 11 instances. These releases incorporate the latest upstream packages, fix a cupy installation issue, and resolve a JupyterLab reachability problem on GPU instances.</summary>
+    <title>Feature: Agent Platform Workbench Image Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:agent-platform-workbench:2026-07-06:feature:0</id>
+    <published>2026-07-06T00:00:00+00:00</published>
+    <updated>2026-07-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Platform Workbench image release</strong></p>
+<p>The following Agent Platform Workbench instances image release is available:</p>
+<ul>
+<li><strong>20260701-2130-rc0 (<code>workbench-instances-2603</code> - Debian 12)</strong></li>
+<li>Installed latest packages from upstream dependencies.</li>
+<li>Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.</li>
+<li>Fixed an issue where long-running requests (for example, streaming or long-poll connections) could be terminated after about 60 seconds.</li>
+</ul>]]></content>
+    <summary>A new image release for Agent Platform Workbench is now available, including updated packages and fixes for JupyterLab reachability and request termination issues. This release ensures a more stable and reliable user experience.</summary>
+    <title>Feature: Agent Platform Workbench Image Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -23,5 +61,58 @@ base containers are available at the following URIs:</p>
 </ul>]]></content>
     <summary>You can now build custom containers for Agent Platform Workbench instances using Python 3.12 base images. This provides an updated Python environment for your custom container needs.</summary>
     <title>Feature: Python 3.12 support for custom containers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:agent-platform-workbench:2026-06-29:feature:0</id>
+    <published>2026-06-29T00:00:00+00:00</published>
+    <updated>2026-06-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Platform Workbench image release</strong></p>
+<p>The following Agent Platform Workbench instances image release is available:</p>
+<ul>
+<li><strong>20260628-2130-rc0 (<code>workbench-instances-2603</code> - Debian 12)</strong></li>
+<li>Installed latest packages from upstream dependencies.</li>
+<li>Installed TensorFlow and PyTorch packages to the default kernel.</li>
+</ul>]]></content>
+    <summary>The latest Agent Platform Workbench image release, version 20260628-2130-rc0, is now available. This update includes the latest upstream packages and installs TensorFlow and PyTorch in the default kernel.</summary>
+    <title>Feature: Agent Platform Workbench Image Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:agent-platform-workbench:2026-06-24:feature:0</id>
+    <published>2026-06-24T00:00:00+00:00</published>
+    <updated>2026-06-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Platform Workbench image release</strong></p>
+<p>The following Agent Platform Workbench instances image release is available:</p>
+<ul>
+<li><strong>20260624-1604-rc0 (<code>workbench-instances-2603</code> - Debian 12)</strong></li>
+<li>Installed latest packages from upstream dependencies.</li>
+<li>Fixed an issue where notebook kernels could become unavailable if the Dataproc plugin failed to load.</li>
+</ul>]]></content>
+    <summary>A new image release for Agent Platform Workbench instances is now available. This update includes the latest packages from upstream dependencies and resolves an issue with notebook kernel availability.</summary>
+    <title>Feature: Agent Platform Workbench Image Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:agent-platform-workbench:2026-06-23:feature:0</id>
+    <published>2026-06-23T00:00:00+00:00</published>
+    <updated>2026-06-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Platform Workbench image release</strong></p>
+<p>The following Agent Platform Workbench instances image releases are available:</p>
+<ul>
+<li><strong>20260622-2130-rc0 (<code>workbench-instances-2603</code> - Debian 12)</strong></li>
+<li>Installed latest packages from upstream dependencies.</li>
+<li>Fixed a duplicate "Python 3 (ipykernel)" kernel appearing in the launcher.</li>
+<li><strong>M143 (<code>workbench-instances</code> - Debian 11)</strong></li>
+<li>Installed latest packages from upstream dependencies.</li>
+</ul>]]></content>
+    <summary>New image releases for Agent Platform Workbench are now available, including updates for Debian 12 and Debian 11 instances. These releases bring the latest package updates and bug fixes, such as resolving duplicate kernel issues.</summary>
+    <title>Feature: Agent Platform Workbench image updates</title>
   </entry>
 </feed>

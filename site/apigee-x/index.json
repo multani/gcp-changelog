@@ -1,6 +1,32 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-07-15": [
+      {
+        "kind": "Announcement",
+        "content": "On July 15th, 2026, we released an updated version of Apigee (1-18-0-apigee-1).\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
+        "summary": {
+          "title": "Apigee 1-18-0-apigee-1 Released",
+          "summary": "An updated version of Apigee (1-18-0-apigee-1) was released on July 15th, 2026. The rollout has commenced and may take several business days to complete across all zones. Your instances will have the new features and fixes available once the rollout is finished."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **527586459** | Fixed a cache policy throttling bug (CacheThrottlerV2 key poisoning) to enhance reliability. |\n| **525697701** | Fixed an issue where API proxy deployments could get stuck during basepath migrations in Apigee X. |\n| **N/A** | Updates to infrastructure and libraries. |",
+        "summary": {
+          "title": "Resolved performance and deployment issues",
+          "summary": "We have fixed a cache policy throttling bug to improve reliability and resolved an issue preventing API proxy deployments from getting stuck during basepath migrations. Additionally, infrastructure and library updates have been applied."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **527415966, 524656652** | **Security fix for Apigee.** Upgraded the Apigee ingress gateway (ASM) to patch security vulnerabilities. |\n| **527956223** | **Security fix for Apigee.** Enhanced security in the Java Callout policy to prevent sandbox escape. |\n| **519729209** | **Security fix for Apigee.** Fixed a SAML XML Signature Wrapping (XSW) vulnerability in the ValidateSAMLAssertion policy. |\n| **530886487** | **Security fix for Apigee.** Upgraded the apigee-connect-agent to patch [CVE-2026-25680](https://nvd.nist.gov/vuln/detail/CVE-2026-25680). |\n| **N/A** | **Security fix for Apigee infrastructure.** |",
+        "summary": {
+          "title": "Apigee Security Updates",
+          "summary": "This release includes several security fixes for Apigee, addressing vulnerabilities in the ingress gateway, Java Callout policy, SAML assertion validation, and the apigee-connect-agent. These updates enhance the overall security posture of Apigee."
+        }
+      }
+    ],
     "2026-07-08": [
       {
         "kind": "Security",

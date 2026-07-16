@@ -1,5 +1,119 @@
 # Cloud Service Mesh
 
+## 2026-07-15
+
+### Announcement
+
+**1.29.5-asm.12 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.29.5-asm.12 uses Envoy v1.35.13.
+
+### Fixed
+
+Patch 1.29.5-asm.12 contains fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-46595](https://ubuntu.com/security/CVE-2026-46595) | Yes | Yes | Yes | Yes | Critical (10.0) |
+| [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-39830](https://ubuntu.com/security/CVE-2026-39830) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-39831](https://ubuntu.com/security/CVE-2026-39831) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-39832](https://ubuntu.com/security/CVE-2026-39832) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-39833](https://ubuntu.com/security/CVE-2026-39833) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-39834](https://ubuntu.com/security/CVE-2026-39834) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-42508](https://ubuntu.com/security/CVE-2026-42508) | Yes | Yes | Yes | Yes | Critical (9.1) |
+| [CVE-2026-8924](https://ubuntu.com/security/CVE-2026-8924) | Yes | Yes | No | Yes | Low (9.1) |
+| [CVE-2026-8927](https://ubuntu.com/security/CVE-2026-8927) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-8286](https://ubuntu.com/security/CVE-2026-8286) | Yes | Yes | No | Yes | Low (8.1) |
+| [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720) | Yes | Yes | No | Yes | Low (7.8) |
+| [CVE-2026-39822](https://ubuntu.com/security/CVE-2026-39822) | Yes | Yes | Yes | Yes | High (7.8) |
+| [CVE-2026-39829](https://ubuntu.com/security/CVE-2026-39829) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-46597](https://ubuntu.com/security/CVE-2026-46597) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2026-9547](https://ubuntu.com/security/CVE-2026-9547) | Yes | Yes | No | Yes | Low (7.4) |
+| [CVE-2026-25680](https://ubuntu.com/security/CVE-2026-25680) | Yes | Yes | Yes | Yes | Medium (6.5) |
+| [CVE-2026-39827](https://ubuntu.com/security/CVE-2026-39827) | Yes | Yes | Yes | Yes | Medium (6.5) |
+| [CVE-2026-8458](https://ubuntu.com/security/CVE-2026-8458) | Yes | Yes | No | Yes | Low (6.5) |
+| [CVE-2026-39828](https://ubuntu.com/security/CVE-2026-39828) | Yes | Yes | Yes | Yes | Medium (6.3) |
+| [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704) | Yes | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055) | Yes | Yes | No | Yes | Medium (5.4) |
+| [CVE-2026-39835](https://ubuntu.com/security/CVE-2026-39835) | Yes | Yes | Yes | Yes | Medium (5.3) |
+| [CVE-2026-42505](https://ubuntu.com/security/CVE-2026-42505) | Yes | Yes | Yes | Yes | Medium (5.3) |
+| [CVE-2026-46598](https://ubuntu.com/security/CVE-2026-46598) | Yes | Yes | Yes | Yes | Medium (5.3) |
+| [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991) | Yes | Yes | No | Yes | Medium (4.7) |
+| [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582) | Yes | Yes | No | Yes | Medium (0.0) |
+
+### Announcement
+
+**1.28.10-asm.4 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade). Cloud Service
+Mesh 1.28.10-asm.4 uses Envoy v1.36.9.
+
+### Fixed
+
+Patch 1.28.10-asm.4 contains fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-8924](https://ubuntu.com/security/CVE-2026-8924) | Yes | Yes | No | Yes | Low (9.1) |
+| [CVE-2026-8927](https://ubuntu.com/security/CVE-2026-8927) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-8286](https://ubuntu.com/security/CVE-2026-8286) | Yes | Yes | No | Yes | Low (8.1) |
+| [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720) | Yes | Yes | No | Yes | Low (7.8) |
+| [CVE-2026-39822](https://ubuntu.com/security/CVE-2026-39822) | Yes | Yes | Yes | Yes | High (7.8) |
+| [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-42151](https://ubuntu.com/security/CVE-2026-42151) | No | No | No | Yes | High (7.5) |
+| [CVE-2026-42154](https://ubuntu.com/security/CVE-2026-42154) | No | No | No | Yes | High (7.5) |
+| [CVE-2026-9547](https://ubuntu.com/security/CVE-2026-9547) | Yes | Yes | No | Yes | Low (7.4) |
+| [CVE-2026-8458](https://ubuntu.com/security/CVE-2026-8458) | Yes | Yes | No | Yes | Low (6.5) |
+| [CVE-2026-40179](https://ubuntu.com/security/CVE-2026-40179) | No | No | No | Yes | Medium (6.1) |
+| [CVE-2026-44903](https://ubuntu.com/security/CVE-2026-44903) | No | No | No | Yes | Medium (6.1) |
+| [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704) | Yes | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055) | Yes | Yes | No | Yes | Medium (5.4) |
+| [CVE-2026-42505](https://ubuntu.com/security/CVE-2026-42505) | Yes | Yes | Yes | Yes | Medium (5.3) |
+| [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991) | Yes | Yes | No | Yes | Medium (4.7) |
+| [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582) | Yes | Yes | No | Yes | Medium (0.0) |
+
+### Announcement
+
+**1.27.9-asm.15 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.27.9-asm.15 uses Envoy v1.35.13v.
+
+### Fixed
+
+Patch 1.27.9-asm.15 contains fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-8376](https://ubuntu.com/security/CVE-2026-8376) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-8925](https://ubuntu.com/security/CVE-2026-8925) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-42496](https://ubuntu.com/security/CVE-2026-42496) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-8924](https://ubuntu.com/security/CVE-2026-8924) | Yes | Yes | No | Yes | Low (9.1) |
+| [CVE-2026-8927](https://ubuntu.com/security/CVE-2026-8927) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-8286](https://ubuntu.com/security/CVE-2026-8286) | Yes | Yes | No | Yes | Low (8.1) |
+| [CVE-2025-69720](https://ubuntu.com/security/CVE-2025-69720) | Yes | Yes | No | Yes | Low (7.8) |
+| [CVE-2026-39822](https://ubuntu.com/security/CVE-2026-39822) | Yes | Yes | Yes | Yes | High (7.8) |
+| [CVE-2026-41992](https://ubuntu.com/security/CVE-2026-41992) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-9547](https://ubuntu.com/security/CVE-2026-9547) | Yes | Yes | No | Yes | Low (7.4) |
+| [CVE-2026-8458](https://ubuntu.com/security/CVE-2026-8458) | Yes | Yes | No | Yes | Low (6.5) |
+| [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704) | Yes | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-58055](https://ubuntu.com/security/CVE-2026-58055) | Yes | Yes | No | Yes | Medium (5.4) |
+| [CVE-2026-42505](https://ubuntu.com/security/CVE-2026-42505) | Yes | Yes | Yes | Yes | Medium (5.3) |
+| [CVE-2026-41991](https://ubuntu.com/security/CVE-2026-41991) | Yes | Yes | No | Yes | Medium (4.7) |
+| [CVE-2025-45582](https://ubuntu.com/security/CVE-2025-45582) | Yes | Yes | No | Yes | Medium (0.0) |
+
+---
 ## 2026-07-06
 
 ### Feature

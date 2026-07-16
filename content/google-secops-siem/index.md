@@ -1,5 +1,25 @@
 # Google SecOps SIEM
 
+## 2026-07-15
+
+### Feature
+
+**Advanced Filtering in Dashboards**
+
+This feature is in Public Preview.
+
+Advanced Filtering in dashboards is now available in Google SecOps. This feature enhances dashboard capabilities by enabling security analysts to use query variables, also known as tokens, to inject dynamic values, complex regular expressions, or boolean logic directly into YARA-L queries at runtime.
+
+Key aspects of Advanced Filtering include:
+
+* **Token Variable Definition:** When creating an advanced filter, you can define a Token Variable. Token variable names must consist only of alphanumeric characters and underscores (`^[a-zA-Z0-9_]+$`) and must be unique within the dashboard.
+* **Filter Value Generation:** Token values can be generated dynamically from YARA-L query results or entered manually as a static list.
+* **Customizable Wrappers:** You can specify prefixes and suffixes to wrap token values, enabling specific logic such as regular expressions.
+* **Multi-Select Support:** The ability to select multiple options for a token can be enabled, with a configurable delimiter (for example, `|`) for combining values in queries.
+
+For more information, see [Dashboard filters](chronicle/docs/reports/native-dashboards-filters).
+
+---
 ## 2026-07-01
 
 ### Announcement

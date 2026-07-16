@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-07-15
+
+### Feature
+
+BigQuery supports [data governance tags](https://docs.cloud.google.com/bigquery/docs/tags#data-governance-tags),
+which let you enforce column-level security and data masking. Data governance
+tags are a type of Resource Manager tag that you can attach to sensitive columns
+and use in BigQuery data policies to grant conditional access to your users.
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-14
 
 ### Feature

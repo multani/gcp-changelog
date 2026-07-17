@@ -1,5 +1,21 @@
 # Batch
 
+## 2026-07-17
+
+### Feature
+
+[Instance flexibility](https://docs.cloud.google.com/batch/docs/create-run-job-instance-flexibility) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+Instance flexibility lets you allow a job to run on multiple machine types that
+you specify and can optionally rank. Use instance flexibility to improve
+*obtainability*—the probability that resources are available to run your
+job. For example, by allowing multiple machine types, you can reduce the
+probability of resource availability errors and try to obtain Spot VMs
+that are less likely to be preempted.
+
+To get started, see [Improve resource obtainability for jobs](https://docs.cloud.google.com/batch/docs/improve-obtainability-overview).
+
+---
 ## 2026-03-20
 
 ### Feature

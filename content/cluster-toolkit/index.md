@@ -1,5 +1,16 @@
 # Cluster Toolkit
 
+## 2026-07-13
+
+### Feature
+
+Cluster Toolkit v1.97.0 is available. This release integrates cluster
+health checks into the toolkit, adds support for collecting static node counts
+from blueprints, and enforces strict Google Kubernetes Engine node auto-provisioning (NAP)
+accelerator validation. For details, see the [release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/5945).
+
+---
 ## 2026-07-02
 
 ### Feature

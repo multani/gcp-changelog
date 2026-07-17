@@ -1,5 +1,44 @@
 # Google Kubernetes Engine
 
+## 2026-07-16
+
+### Feature
+
+In GKE version 1.36.0-gke.3204000 and later, when you manually or automatically
+create a GKE node pool that consumes capacity reservations, you can stop GKE
+from falling back to on-demand capacity if reserved capacity isn't available. To
+consume any matching reservation without fallback, specify the
+`any-reservation-then-fail` reservation affinity in your node pool creation
+request, Pod specification, or ComputeClass specification. In ComputeClasses,
+this reservation affinity lets GKE move on to the next priority rule instead of
+creating on-demand compute resources. For more information, see [Consuming
+reserved zonal
+resources](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/consuming-reservations).
+
+### Feature
+
+GKE version 1.33 now supports the N4D machine series for node pool auto-creation
+and Autopilot clusters in the following patch versions and later:
+
+* **Node pool auto-creation**: 1.33.12-gke.1208000 and later
+* **Autopilot**: 1.33.13-gke.1079000 and later
+
+### Feature
+
+In GKE version 1.36.0-gke.4447000 and later, the VerticalPodAutoscaler supports
+[CPU startup boost](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler#cpu-startup-boost),
+which temporarily increases CPU requests during application startup to improve
+startup latency and cost efficiency. This feature is available in Preview.
+
+### Change
+
+Starting on June 30, 2026, the [Filestore API](https://docs.cloud.google.com/filestore/docs/reference/rest)
+(`file.googleapis.com`) is enabled by default when you enable the Kubernetes
+Engine API (`container.googleapis.com`) in a project. The Filestore API is
+required for PersistentVolumes that use the [`ReadWriteMany` access mode in
+GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/filestore-for-gke).
+
+---
 ## 2026-07-14
 
 ### Change

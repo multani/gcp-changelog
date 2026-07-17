@@ -1,13 +1,13 @@
 {
   "name": "Compute Engine",
   "entries": {
-    "2026-07-15": [
+    "2026-07-16": [
       {
-        "kind": "Feature",
-        "content": "**Preview**: The network-optimized C4N machine series offers machine types with\n375 GiB to 12,000 GiB of attached Titanium SSD.\n\nTo use C4N machine types with attached Local SSD disks, you can\n[Request preview access](https://forms.gle/ehRSqssSEavKt1Fh7).\n\nFor more information, see [C4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series).",
+        "kind": "Change",
+        "content": "**Changed**: The following operations on the boot disk of a Compute Engine instance\nthat has a service account attached no longer require the `iam.serviceAccounts.actAs`\npermission. In the following list, the boot disk of such an instance is\nreferred to as the *source disk*.\n\n* Creating a standard or archive snapshot of the source disk.\n* Cloning the source disk.\n* Creating a machine image of the instance.\n* Creating a custom image of the source disk.\n* Starting asynchronous replication of the source disk to another region.\n* Creating a new disk when you create an instance, if the new disk is created\n  from an instant snapshot of the source disk.",
         "summary": {
-          "title": "New C4N Machine Series Available",
-          "summary": "Introducing the C4N machine series, now in preview. These machines offer powerful performance with large attached Titanium SSDs, ideal for demanding workloads. Request access to try them out."
+          "title": "Compute Engine boot disk operations simplified",
+          "summary": "Several operations on Compute Engine instance boot disks, including creating snapshots, cloning, and machine image creation, no longer require the iam.serviceAccounts.actAs permission when a service account is attached. This change simplifies disk management for Compute Engine instances."
         }
       }
     ],
@@ -74,6 +74,16 @@
         "summary": {
           "title": "New CUD Recommendations Available",
           "summary": "Resource-based committed use discount recommendations are now generally available for GPUs, Local SSD disks, and premium OS licenses. These recommendations help optimize costs by identifying potential savings on resources currently charged at list prices. They are generated monthly based on your compute instance spending trends."
+        }
+      }
+    ],
+    "2026-07-15": [
+      {
+        "kind": "Feature",
+        "content": "**Preview**: The network-optimized C4N machine series offers machine types with\n375 GiB to 12,000 GiB of attached Titanium SSD.\n\nTo use C4N machine types with attached Local SSD disks, you can\n[Request preview access](https://forms.gle/ehRSqssSEavKt1Fh7).\n\nFor more information, see [C4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series).",
+        "summary": {
+          "title": "New C4N Machine Series Available",
+          "summary": "Introducing the C4N machine series, now in preview. These machines offer powerful performance with large attached Titanium SSDs, ideal for demanding workloads. Request access to try them out."
         }
       }
     ],

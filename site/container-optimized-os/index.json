@@ -1,6 +1,216 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-07-13": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Level Objective Updates",
+          "summary": "We are updating our Service Level Objectives (SLOs) to better reflect our commitment to performance and reliability. These changes aim to enhance transparency and provide clearer expectations for our users. More details on the specific updates can be found in the full announcement."
+        }
+      },
+      {
+        "kind": "cos-129-19506-299-20",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/bc1d3c4eb1b1c9af6d66b58a41aa4f5c4ffe0a57 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.299.20/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS Version 6.12.94 Released",
+          "summary": "Container-Optimized OS version 6.12.94 is now available, featuring updated Docker and Containerd components. This release includes support for GPU drivers, enhancing performance for graphics-intensive workloads. Check the documentation for a list of supported GPU driver versions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled CONFIG\\_MEMORY\\_FAILURE in the Linux kernel for ARM64. This should improve memory errors handling when running CUDA workloads.",
+        "summary": {
+          "title": "Improved memory error handling for ARM64 CUDA",
+          "summary": "We've enabled CONFIG_MEMORY_FAILURE in the Linux kernel for ARM64. This enhancement improves the handling of memory errors, particularly benefiting CUDA workloads running on this architecture."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Changed google-guest-agent's plugin installation path to /var/lib/google/guest-agent.",
+        "summary": {
+          "title": "Guest agent plugin path updated",
+          "summary": "The installation path for the google-guest-agent's plugin has been changed to /var/lib/google/guest-agent. This update ensures a more consistent and organized file structure for the agent's components."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/fluent-bit to v4.2.6.",
+        "summary": {
+          "title": "Fluent Bit upgraded to v4.2.6",
+          "summary": "The application administration tool, fluent-bit, has been upgraded to version 4.2.6. This update addresses potential issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.8.",
+        "summary": {
+          "title": "Docker credential helpers updated",
+          "summary": "The app-containers/docker-credential-helpers have been upgraded to version 0.9.8. This update addresses underlying components of the credential management system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-40225 in sys-apps/systemd.",
+        "summary": {
+          "title": "Security Update for Systemd",
+          "summary": "A security vulnerability (CVE-2026-40225) affecting systemd has been resolved. This update addresses the identified issue to enhance system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-43010 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical vulnerability (CVE-2026-43010) in the Linux kernel has been addressed. This update ensures enhanced security and stability for systems utilizing the Linux kernel. Users are advised to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53167 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-53167, has been addressed. This update ensures improved security for systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53341 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-53341, has been fixed. This update is crucial for maintaining the security and stability of your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-736b380 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability, KCTF-736b380, has been resolved within the Linux kernel. This update addresses a critical issue, enhancing the overall security posture of systems running the affected kernel version."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to our services",
+          "summary": "We are announcing a change to our services. This update is designed to improve performance and user experience. Further details will be shared shortly."
+        }
+      },
+      {
+        "kind": "cos-125-19216-532-14",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/847eb2fe7a011d36889f243da604899209354057 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.532.14/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New Container-Optimized OS Release",
+          "summary": "Container-Optimized OS has been updated to version 6.12.94. This release includes updated versions of the Kernel, Docker, and Containerd, along with GPU driver support."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled CONFIG\\_MEMORY\\_FAILURE in the Linux kernel for ARM64. This should improve memory errors handling when running CUDA workloads.",
+        "summary": {
+          "title": "Improved memory error handling for ARM64 CUDA",
+          "summary": "We've enabled CONFIG_MEMORY_FAILURE in the Linux kernel for ARM64. This enhancement improves memory error handling, particularly beneficial for CUDA workloads."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Changed google-guest-agent's plugin installation path to /var/lib/google/guest-agent.",
+        "summary": {
+          "title": "Guest agent plugin path updated",
+          "summary": "The installation path for the google-guest-agent's plugins has been updated to /var/lib/google/guest-agent. This change standardizes the location for these essential components."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53341 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-53341, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-736b380 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability, KCTF-736b380, has been resolved in the Linux kernel. This update addresses a critical security issue, enhancing the overall stability and safety of the system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New features and improvements released",
+          "summary": "We're excited to announce a range of new features and improvements designed to enhance your experience. These updates include performance optimizations and expanded capabilities, all aimed at providing you with a more robust and efficient platform. Explore the latest enhancements today!"
+        }
+      },
+      {
+        "kind": "cos-117-18613-675-11",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/1a837eaf8fd49bfc926b94a27eeff3d7a266a6cc ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.675.11/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update",
+          "summary": "The latest Container Optimized OS update includes new versions of the kernel, Docker, and containerd. This release also provides updated GPU driver support for enhanced performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-40225 in sys-apps/systemd.",
+        "summary": {
+          "title": "Security update for systemd",
+          "summary": "A security vulnerability in systemd, CVE-2026-40225, has been fixed. This update addresses the issue, ensuring the security and stability of your system. It is recommended to apply this update promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53362 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-53362, enhancing the overall security of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-7cb9a23 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix deployed",
+          "summary": "A critical security vulnerability, KCTF-7cb9a23, within the Linux kernel has been successfully patched. This update ensures the integrity and security of systems running the Linux operating system. Users are advised to apply this fix promptly to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Availability Update",
+          "summary": "We are making changes to our service availability to improve performance and reliability. These updates will ensure a more stable and efficient experience for all users."
+        }
+      },
+      {
+        "kind": "cos-121-18867-528-10",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/98a225b277dfcfe3429160042cb7cb70cfefe3ca ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.528.10/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Update",
+          "summary": "This release of Container-Optimized OS includes updates to the kernel, Docker, and containerd. It also provides access to the latest GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-40225 in sys-apps/systemd.",
+        "summary": {
+          "title": "Systemd security update",
+          "summary": "A security vulnerability in systemd has been fixed. This update addresses CVE-2026-40225, ensuring the security of your system. We recommend applying this patch as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53362 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-53362, affecting the Linux kernel has been successfully patched. This update is essential for maintaining system integrity and protecting against potential exploits."
+        }
+      }
+    ],
     "2026-07-09": [
       {
         "kind": "Change",

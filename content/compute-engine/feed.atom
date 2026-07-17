@@ -2,23 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-07-15T00:00:00+00:00</updated>
+  <updated>2026-07-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:compute-engine:2026-07-15:feature:0</id>
-    <published>2026-07-15T00:00:00+00:00</published>
-    <updated>2026-07-15T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Preview</strong>: The network-optimized C4N machine series offers machine types with
-375 GiB to 12,000 GiB of attached Titanium SSD.</p>
-<p>To use C4N machine types with attached Local SSD disks, you can
-<a href="https://forms.gle/ehRSqssSEavKt1Fh7">Request preview access</a>.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series">C4N machine series</a>.</p>]]></content>
-    <summary>Introducing the C4N machine series, now in preview. These machines offer powerful performance with large attached Titanium SSDs, ideal for demanding workloads. Request access to try them out.</summary>
-    <title>Feature: New C4N Machine Series Available</title>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-07-16:change:0</id>
+    <published>2026-07-16T00:00:00+00:00</published>
+    <updated>2026-07-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Changed</strong>: The following operations on the boot disk of a Compute Engine instance
+that has a service account attached no longer require the <code>iam.serviceAccounts.actAs</code>
+permission. In the following list, the boot disk of such an instance is
+referred to as the <em>source disk</em>.</p>
+<ul>
+<li>Creating a standard or archive snapshot of the source disk.</li>
+<li>Cloning the source disk.</li>
+<li>Creating a machine image of the instance.</li>
+<li>Creating a custom image of the source disk.</li>
+<li>Starting asynchronous replication of the source disk to another region.</li>
+<li>Creating a new disk when you create an instance, if the new disk is created
+  from an instant snapshot of the source disk.</li>
+</ul>]]></content>
+    <summary>Several operations on Compute Engine instance boot disks, including creating snapshots, cloning, and machine image creation, no longer require the iam.serviceAccounts.actAs permission when a service account is attached. This change simplifies disk management for Compute Engine instances.</summary>
+    <title>Change: Compute Engine boot disk operations simplified</title>
   </entry>
   <entry>
     <author>
@@ -147,6 +155,21 @@ types are supported, and how to use recommendations to purchase commitments, see
 <a href="https://docs.cloud.google.com/docs/cuds-recommender">Get recommendations for committed use discounts (CUDs)</a>.</p>]]></content>
     <summary>Resource-based committed use discount recommendations are now generally available for GPUs, Local SSD disks, and premium OS licenses. These recommendations help optimize costs by identifying potential savings on resources currently charged at list prices. They are generated monthly based on your compute instance spending trends.</summary>
     <title>Feature: New CUD Recommendations Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-07-15:feature:0</id>
+    <published>2026-07-15T00:00:00+00:00</published>
+    <updated>2026-07-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview</strong>: The network-optimized C4N machine series offers machine types with
+375 GiB to 12,000 GiB of attached Titanium SSD.</p>
+<p>To use C4N machine types with attached Local SSD disks, you can
+<a href="https://forms.gle/ehRSqssSEavKt1Fh7">Request preview access</a>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series">C4N machine series</a>.</p>]]></content>
+    <summary>Introducing the C4N machine series, now in preview. These machines offer powerful performance with large attached Titanium SSDs, ideal for demanding workloads. Request access to try them out.</summary>
+    <title>Feature: New C4N Machine Series Available</title>
   </entry>
   <entry>
     <author>

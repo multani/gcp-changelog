@@ -1,5 +1,23 @@
 # Compute Engine
 
+## 2026-07-16
+
+### Change
+
+**Changed**: The following operations on the boot disk of a Compute Engine instance
+that has a service account attached no longer require the `iam.serviceAccounts.actAs`
+permission. In the following list, the boot disk of such an instance is
+referred to as the *source disk*.
+
+* Creating a standard or archive snapshot of the source disk.
+* Cloning the source disk.
+* Creating a machine image of the instance.
+* Creating a custom image of the source disk.
+* Starting asynchronous replication of the source disk to another region.
+* Creating a new disk when you create an instance, if the new disk is created
+  from an instant snapshot of the source disk.
+
+---
 ## 2026-07-15
 
 ### Feature

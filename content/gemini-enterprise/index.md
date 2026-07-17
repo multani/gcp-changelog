@@ -1,5 +1,33 @@
 # Gemini Enterprise
 
+## 2026-07-16
+
+### Feature
+
+**Gemini Enterprise: Bring Your Own Identity (BYOID) for mobile apps (GA)**
+
+The Gemini Enterprise mobile app is generally available (GA) for
+organizations using third-party identity providers. You can connect the
+mobile app to supported third-party identity providers without being on an
+allowlist.
+
+For more information, see
+[Configure the mobile app](https://docs.cloud.google.com/gemini/enterprise/docs/configure-mobile-app).
+
+### Change
+
+**Gemini Notebook Enterprise: NotebookLM Enterprise renamed to Gemini Notebook Enterprise**
+
+NotebookLM Enterprise is renamed to Gemini Notebook Enterprise.
+Despite the rebrand, the product functionality remains the same, and the APIs
+still use the same endpoints. See [Create and manage notebooks
+(API)](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks).
+
+The Gemini Enterprise web app and the admin console display
+the name Gemini Notebook Enterprise.
+However, the subscription page still displays the name NotebookLM Enterprise.
+
+---
 ## 2026-07-15
 
 ### Feature

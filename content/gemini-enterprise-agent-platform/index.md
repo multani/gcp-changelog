@@ -116,7 +116,7 @@ instead of Gemini 2.5 Flash. For information, see
 
 **Semantic Governance Policies available in Public Preview**
 
-Semantic Governance Policies (SGP) and the SGP engine are now available in [Preview](https://cloud.google.com/products#product-launch-stages). SGP provides an intelligent security and compliance layer that evaluates an AI agent's proposed tool calls against user intent and organizational business rules at runtime.
+Semantic governance policies and the policy engine are now available in [Preview](https://cloud.google.com/products#product-launch-stages). Semantic governance policy provides an intelligent security and compliance layer that evaluates an AI agent's proposed tool calls against user intent and organizational business rules at runtime.
 
 Key capabilities include:
 

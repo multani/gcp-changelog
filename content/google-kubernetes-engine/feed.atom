@@ -2,9 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-07-14T00:00:00+00:00</updated>
+  <updated>2026-07-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-16:feature:0</id>
+    <published>2026-07-16T00:00:00+00:00</published>
+    <updated>2026-07-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE version 1.36.0-gke.3204000 and later, when you manually or automatically
+create a GKE node pool that consumes capacity reservations, you can stop GKE
+from falling back to on-demand capacity if reserved capacity isn't available. To
+consume any matching reservation without fallback, specify the
+<code>any-reservation-then-fail</code> reservation affinity in your node pool creation
+request, Pod specification, or ComputeClass specification. In ComputeClasses,
+this reservation affinity lets GKE move on to the next priority rule instead of
+creating on-demand compute resources. For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/consuming-reservations">Consuming
+reserved zonal
+resources</a>.</p>]]></content>
+    <summary>GKE version 1.36.0-gke.3204000 and later allows you to prevent node pools from falling back to on-demand capacity when reserved capacity is unavailable. By specifying `any-reservation-then-fail`, you can ensure your node pools strictly use reservations or fail creation, preventing unexpected on-demand costs. This feature is particularly useful when working with ComputeClasses, where it allows GKE to adhere to priority rules instead of provisioning on-demand resources.</summary>
+    <title>Feature: Control capacity fallback for node pools</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-16:feature:1</id>
+    <published>2026-07-16T00:00:00+00:00</published>
+    <updated>2026-07-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE version 1.33 now supports the N4D machine series for node pool auto-creation
+and Autopilot clusters in the following patch versions and later:</p>
+<ul>
+<li><strong>Node pool auto-creation</strong>: 1.33.12-gke.1208000 and later</li>
+<li><strong>Autopilot</strong>: 1.33.13-gke.1079000 and later</li>
+</ul>]]></content>
+    <summary>GKE version 1.33 now includes support for the N4D machine series. This enhancement is available for node pool auto-creation starting with patch version 1.33.12-gke.1208000 and for Autopilot clusters from 1.33.13-gke.1079000 onwards.</summary>
+    <title>Feature: GKE 1.33 Supports N4D Machine Series</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-16:feature:2</id>
+    <published>2026-07-16T00:00:00+00:00</published>
+    <updated>2026-07-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE version 1.36.0-gke.4447000 and later, the VerticalPodAutoscaler supports
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler#cpu-startup-boost">CPU startup boost</a>,
+which temporarily increases CPU requests during application startup to improve
+startup latency and cost efficiency. This feature is available in Preview.</p>]]></content>
+    <summary>GKE version 1.36.0-gke.4447000 and later now supports CPU startup boost for VerticalPodAutoscaler. This feature temporarily increases CPU requests during application startup, aiming to reduce latency and improve cost efficiency. It is currently available in Preview.</summary>
+    <title>Feature: CPU startup boost in GKE</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-16:change:3</id>
+    <published>2026-07-16T00:00:00+00:00</published>
+    <updated>2026-07-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting on June 30, 2026, the <a href="https://docs.cloud.google.com/filestore/docs/reference/rest">Filestore API</a>
+(<code>file.googleapis.com</code>) is enabled by default when you enable the Kubernetes
+Engine API (<code>container.googleapis.com</code>) in a project. The Filestore API is
+required for PersistentVolumes that use the <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/filestore-for-gke"><code>ReadWriteMany</code> access mode in
+GKE</a>.</p>]]></content>
+    <summary>Starting June 30, 2026, the Filestore API will be enabled by default when the Kubernetes Engine API is enabled. This change is necessary for PersistentVolumes using the ReadWriteMany access mode in GKE.</summary>
+    <title>Change: Filestore API enabled by default</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

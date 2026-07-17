@@ -1,5 +1,124 @@
 # Container Optimized OS
 
+## 2026-07-13
+
+### Change
+
+
+
+### cos-129-19506-299-20
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/bc1d3c4eb1b1c9af6d66b58a41aa4f5c4ffe0a57 ) | v27.5.1 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19506.299.20/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Enabled CONFIG\_MEMORY\_FAILURE in the Linux kernel for ARM64. This should improve memory errors handling when running CUDA workloads.
+
+### Fixed
+
+Changed google-guest-agent's plugin installation path to /var/lib/google/guest-agent.
+
+### Fixed
+
+Upgraded app-admin/fluent-bit to v4.2.6.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.8.
+
+### Security
+
+Fixed CVE-2026-40225 in sys-apps/systemd.
+
+### Security
+
+Fixed CVE-2026-43010 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53167 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53341 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-736b380 in the Linux kernel.
+
+### Change
+
+
+
+### cos-125-19216-532-14
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/847eb2fe7a011d36889f243da604899209354057 ) | v27.5.1 | v2.1.7 | [See List](https://storage.googleapis.com/cos-tools/19216.532.14/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Enabled CONFIG\_MEMORY\_FAILURE in the Linux kernel for ARM64. This should improve memory errors handling when running CUDA workloads.
+
+### Fixed
+
+Changed google-guest-agent's plugin installation path to /var/lib/google/guest-agent.
+
+### Security
+
+Fixed CVE-2026-53341 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-736b380 in the Linux kernel.
+
+### Change
+
+
+
+### cos-117-18613-675-11
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/1a837eaf8fd49bfc926b94a27eeff3d7a266a6cc ) | v24.0.9 | v1.7.31 | [See List](https://storage.googleapis.com/cos-tools/18613.675.11/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-40225 in sys-apps/systemd.
+
+### Security
+
+Fixed CVE-2026-53362 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-7cb9a23 in the Linux kernel.
+
+### Change
+
+
+
+### cos-121-18867-528-10
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/98a225b277dfcfe3429160042cb7cb70cfefe3ca ) | v27.5.1 | v2.0.8 | [See List](https://storage.googleapis.com/cos-tools/18867.528.10/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-40225 in sys-apps/systemd.
+
+### Security
+
+Fixed CVE-2026-53362 in the Linux kernel.
+
+---
 ## 2026-07-09
 
 ### Change

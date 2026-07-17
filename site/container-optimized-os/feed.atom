@@ -2,9 +2,307 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Container Optimized OS</title>
   <subtitle>Changelog for Google Cloud product: Container Optimized OS</subtitle>
-  <updated>2026-07-09T00:00:00+00:00</updated>
+  <updated>2026-07-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:container-optimized-os</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/container-optimized-os/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:change:0</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are updating our Service Level Objectives (SLOs) to better reflect our commitment to performance and reliability. These changes aim to enhance transparency and provide clearer expectations for our users. More details on the specific updates can be found in the full announcement.</summary>
+    <title>Change: Service Level Objective Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:cos-129-19506-299-20:1</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/bc1d3c4eb1b1c9af6d66b58a41aa4f5c4ffe0a57">COS-6.12.94</a> | v27.5.1 | v2.2.3 | <a href="https://storage.googleapis.com/cos-tools/19506.299.20/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>Container-Optimized OS version 6.12.94 is now available, featuring updated Docker and Containerd components. This release includes support for GPU drivers, enhancing performance for graphics-intensive workloads. Check the documentation for a list of supported GPU driver versions.</summary>
+    <title>cos-129-19506-299-20: New COS Version 6.12.94 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:feature:2</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Enabled CONFIG_MEMORY_FAILURE in the Linux kernel for ARM64. This should improve memory errors handling when running CUDA workloads.</p>]]></content>
+    <summary>We've enabled CONFIG_MEMORY_FAILURE in the Linux kernel for ARM64. This enhancement improves the handling of memory errors, particularly benefiting CUDA workloads running on this architecture.</summary>
+    <title>Feature: Improved memory error handling for ARM64 CUDA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:fixed:3</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Changed google-guest-agent's plugin installation path to /var/lib/google/guest-agent.</p>]]></content>
+    <summary>The installation path for the google-guest-agent's plugin has been changed to /var/lib/google/guest-agent. This update ensures a more consistent and organized file structure for the agent's components.</summary>
+    <title>Fixed: Guest agent plugin path updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:fixed:4</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded app-admin/fluent-bit to v4.2.6.</p>]]></content>
+    <summary>The application administration tool, fluent-bit, has been upgraded to version 4.2.6. This update addresses potential issues and improves performance.</summary>
+    <title>Fixed: Fluent Bit upgraded to v4.2.6</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:fixed:5</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Upgraded app-containers/docker-credential-helpers to v0.9.8.</p>]]></content>
+    <summary>The app-containers/docker-credential-helpers have been upgraded to version 0.9.8. This update addresses underlying components of the credential management system.</summary>
+    <title>Fixed: Docker credential helpers updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:6</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-40225 in sys-apps/systemd.</p>]]></content>
+    <summary>A security vulnerability (CVE-2026-40225) affecting systemd has been resolved. This update addresses the identified issue to enhance system security.</summary>
+    <title>Security: Security Update for Systemd</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:7</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-43010 in the Linux kernel.</p>]]></content>
+    <summary>A critical vulnerability (CVE-2026-43010) in the Linux kernel has been addressed. This update ensures enhanced security and stability for systems utilizing the Linux kernel. Users are advised to apply the patch to protect against potential exploits.</summary>
+    <title>Security: Linux Kernel Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:8</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-53167 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability in the Linux kernel, CVE-2026-53167, has been addressed. This update ensures improved security for systems running the Linux kernel.</summary>
+    <title>Security: Linux kernel security fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:9</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-53341 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability in the Linux kernel, CVE-2026-53341, has been fixed. This update is crucial for maintaining the security and stability of your systems.</summary>
+    <title>Security: Linux kernel security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:10</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed KCTF-736b380 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability, KCTF-736b380, has been resolved within the Linux kernel. This update addresses a critical issue, enhancing the overall security posture of systems running the affected kernel version.</summary>
+    <title>Security: Linux Kernel Security Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:change:11</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are announcing a change to our services. This update is designed to improve performance and user experience. Further details will be shared shortly.</summary>
+    <title>Change: Update to our services</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:cos-125-19216-532-14:12</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/847eb2fe7a011d36889f243da604899209354057">COS-6.12.94</a> | v27.5.1 | v2.1.7 | <a href="https://storage.googleapis.com/cos-tools/19216.532.14/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>Container-Optimized OS has been updated to version 6.12.94. This release includes updated versions of the Kernel, Docker, and Containerd, along with GPU driver support.</summary>
+    <title>cos-125-19216-532-14: New Container-Optimized OS Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:feature:13</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Enabled CONFIG_MEMORY_FAILURE in the Linux kernel for ARM64. This should improve memory errors handling when running CUDA workloads.</p>]]></content>
+    <summary>We've enabled CONFIG_MEMORY_FAILURE in the Linux kernel for ARM64. This enhancement improves memory error handling, particularly beneficial for CUDA workloads.</summary>
+    <title>Feature: Improved memory error handling for ARM64 CUDA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:fixed:14</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Changed google-guest-agent's plugin installation path to /var/lib/google/guest-agent.</p>]]></content>
+    <summary>The installation path for the google-guest-agent's plugins has been updated to /var/lib/google/guest-agent. This change standardizes the location for these essential components.</summary>
+    <title>Fixed: Guest agent plugin path updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:15</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-53341 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-53341, enhancing the overall security of systems running the Linux kernel.</summary>
+    <title>Security: Linux kernel security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:16</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed KCTF-736b380 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability, KCTF-736b380, has been resolved in the Linux kernel. This update addresses a critical security issue, enhancing the overall stability and safety of the system.</summary>
+    <title>Security: Linux Kernel Security Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:change:17</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We're excited to announce a range of new features and improvements designed to enhance your experience. These updates include performance optimizations and expanded capabilities, all aimed at providing you with a more robust and efficient platform. Explore the latest enhancements today!</summary>
+    <title>Change: New features and improvements released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:cos-117-18613-675-11:18</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/1a837eaf8fd49bfc926b94a27eeff3d7a266a6cc">COS-6.6.143</a> | v24.0.9 | v1.7.31 | <a href="https://storage.googleapis.com/cos-tools/18613.675.11/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>The latest Container Optimized OS update includes new versions of the kernel, Docker, and containerd. This release also provides updated GPU driver support for enhanced performance.</summary>
+    <title>cos-117-18613-675-11: Container Optimized OS Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:19</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-40225 in sys-apps/systemd.</p>]]></content>
+    <summary>A security vulnerability in systemd, CVE-2026-40225, has been fixed. This update addresses the issue, ensuring the security and stability of your system. It is recommended to apply this update promptly.</summary>
+    <title>Security: Security update for systemd</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:20</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-53362 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-53362, enhancing the overall security of the system.</summary>
+    <title>Security: Linux Kernel Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:21</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed KCTF-7cb9a23 in the Linux kernel.</p>]]></content>
+    <summary>A critical security vulnerability, KCTF-7cb9a23, within the Linux kernel has been successfully patched. This update ensures the integrity and security of systems running the Linux operating system. Users are advised to apply this fix promptly to protect against potential exploits.</summary>
+    <title>Security: Linux kernel security fix deployed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:change:22</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are making changes to our service availability to improve performance and reliability. These updates will ensure a more stable and efficient experience for all users.</summary>
+    <title>Change: Service Availability Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:cos-121-18867-528-10:23</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/98a225b277dfcfe3429160042cb7cb70cfefe3ca">COS-6.6.143</a> | v27.5.1 | v2.0.8 | <a href="https://storage.googleapis.com/cos-tools/18867.528.10/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>This release of Container-Optimized OS includes updates to the kernel, Docker, and containerd. It also provides access to the latest GPU drivers for enhanced performance.</summary>
+    <title>cos-121-18867-528-10: Container-Optimized OS Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:24</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-40225 in sys-apps/systemd.</p>]]></content>
+    <summary>A security vulnerability in systemd has been fixed. This update addresses CVE-2026-40225, ensuring the security of your system. We recommend applying this patch as soon as possible.</summary>
+    <title>Security: Systemd security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-07-13:security:25</id>
+    <published>2026-07-13T00:00:00+00:00</published>
+    <updated>2026-07-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-53362 in the Linux kernel.</p>]]></content>
+    <summary>A critical security vulnerability, CVE-2026-53362, affecting the Linux kernel has been successfully patched. This update is essential for maintaining system integrity and protecting against potential exploits.</summary>
+    <title>Security: Linux Kernel Security Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

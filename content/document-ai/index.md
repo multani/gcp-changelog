@@ -1,5 +1,19 @@
 # Document AI
 
+## 2026-07-17
+
+### Feature
+
+[Custom extractor](https://docs.cloud.google.com/document-ai/docs/ce-with-genai) model
+`pretrained-foundation-model-v3.5-2026-05-26` powered by Gemini 3.5
+Flash LLM is available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+This processor version has ML processing capabilities in the US and EU.
+
+For more information about available models, see the [custom
+extractor](https://docs.cloud.google.com/document-ai/docs/custom-based-extraction) page.
+
+---
 ## 2026-06-04
 
 ### Feature

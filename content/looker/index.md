@@ -1,5 +1,20 @@
 # Looker
 
+## 2026-07-17
+
+### Feature
+
+Starting in Looker 26.8, Looker supports Java OpenJDK version 21. Looker-hosted instances have been upgraded to OpenJDK 21. Customer-hosted instances should [upgrade to OpenJDK 21](https://docs.cloud.google.com/looker/docs/upgrading-to-openjdk-21-customer-hosted-instance).
+
+If you run Looker directly using the `java -jar` command (instead of using the startup script), you must include these three specific settings:
+
+```
+--add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED
+```
+
+Looker recommends that you transition to new Java updates as they are released. Other versions of Java, Oracle JDK, and OpenJDK are not supported at this time.
+
+---
 ## 2026-07-13
 
 ### Announcement
@@ -240,6 +255,12 @@ When the owner of a dashboard, a board, or an agent is changed, new owners are a
 The API initiator must have [`save_content`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#save_content) and [`manage_spaces`](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#manage_spaces) access to the folder where the asset resides.
 
 Transferring ownership of dashboards and boards doesn't automatically grant the new owner access to parent folders, models, or underlying Looks.
+
+### Feature
+
+For [self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service), Looker admins can now enable your instance with [Advanced connection governance](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#agc), which means that more than one connection can be used for data uploads. Looker admins can individually test the validity of each connection directly from the **Self-service Explores Admin** page. When a user [uploads data to create a self-service Explore](https://docs.cloud.google.com/looker/docs/exploring-self-service#upload-data), the user can choose from a list of connections that their Looker admin has enabled for data uploads and to which the user has access.
+
+**Note:** This item was added on July 17, 2026.
 
 ### Feature
 

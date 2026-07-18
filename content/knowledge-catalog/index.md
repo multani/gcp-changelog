@@ -1,5 +1,15 @@
 # Knowledge Catalog
 
+## 2026-07-17
+
+### Feature
+
+Data lineage control at the organization, folder, or project level is [generally available](https://cloud.google.com/products#product-launch-stages) for BigQuery, Managed Service for Apache Spark, and Managed Service for Apache Airflow.
+
+For more information, see [About data lineage ingestion control](https://docs.cloud.google.com/dataplex/docs/control-lineage-ingestion)
+and [Configure data lineage ingestion for a service](https://docs.cloud.google.com/dataplex/docs/configure-lineage-ingestion).
+
+---
 ## 2026-07-09
 
 ### Feature

@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-07-17": [
+      {
+        "kind": "Feature",
+        "content": "Starting in Looker 26.8, Looker supports Java OpenJDK version 21. Looker-hosted instances have been upgraded to OpenJDK 21. Customer-hosted instances should [upgrade to OpenJDK 21](https://docs.cloud.google.com/looker/docs/upgrading-to-openjdk-21-customer-hosted-instance).\n\nIf you run Looker directly using the `java -jar` command (instead of using the startup script), you must include these three specific settings:\n\n```\n--add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED\n```\n\nLooker recommends that you transition to new Java updates as they are released. Other versions of Java, Oracle JDK, and OpenJDK are not supported at this time.",
+        "summary": {
+          "title": "Looker Now Supports OpenJDK 21",
+          "summary": "Looker 26.8 introduces support for Java OpenJDK version 21. This update is automatically applied to Looker-hosted instances, and customers with self-hosted instances are encouraged to upgrade. This ensures compatibility and access to the latest Java features and security enhancements."
+        }
+      }
+    ],
     "2026-07-13": [
       {
         "kind": "Announcement",
@@ -392,6 +402,14 @@
         "summary": {
           "title": "Programmatically Transfer Dashboard Ownership",
           "summary": "Looker admins can now use the Looker API to change the owner of dashboards, boards, and agents. This feature streamlines user offboarding and content reassignment by allowing programmatic updates to the associated user ID. New owners receive appropriate access, and existing certifications are preserved."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "For [self-service Explores](https://docs.cloud.google.com/looker/docs/exploring-self-service), Looker admins can now enable your instance with [Advanced connection governance](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#agc), which means that more than one connection can be used for data uploads. Looker admins can individually test the validity of each connection directly from the **Self-service Explores Admin** page. When a user [uploads data to create a self-service Explore](https://docs.cloud.google.com/looker/docs/exploring-self-service#upload-data), the user can choose from a list of connections that their Looker admin has enabled for data uploads and to which the user has access.\n\n**Note:** This item was added on July 17, 2026.",
+        "summary": {
+          "title": "Multiple Connections for Data Uploads",
+          "summary": "Looker admins can now enable advanced connection governance, allowing users to select from multiple enabled connections when uploading data for self-service Explores. This feature enhances flexibility and control over data sources for user-created Explores."
         }
       },
       {

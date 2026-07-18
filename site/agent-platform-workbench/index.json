@@ -9,6 +9,14 @@
           "title": "Agent Platform Workbench Image Release",
           "summary": "New Agent Platform Workbench images are now available, including updates for Debian 12 and Debian 11 instances. These releases incorporate the latest upstream packages, fix a cupy installation issue, and resolve a JupyterLab reachability problem on GPU instances."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Secure Boot is compatible with GPUs**\n\nYou can now enable Secure Boot on Agent Platform Workbench instances that have a\nGPU attached. Secure Boot with GPUs is supported on the `workbench-instances-2603`\nVM image and the `workbench-container-2606` custom container, which include a\nSecure Boot-signed NVIDIA GPU driver so the driver loads under Secure Boot. For\nmore information, see [Create an\ninstance](https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/create).",
+        "summary": {
+          "title": "Secure Boot Now Supports GPUs",
+          "summary": "Agent Platform Workbench instances with GPUs now support Secure Boot. This feature is available on specific VM images and custom containers, ensuring the NVIDIA GPU driver loads securely. This enhances the security posture of your AI development environments."
+        }
       }
     ],
     "2026-07-06": [

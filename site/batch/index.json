@@ -1,6 +1,16 @@
 {
   "name": "Batch",
   "entries": {
+    "2026-07-20": [
+      {
+        "kind": "Breaking",
+        "content": "Starting on the following dates, you can no longer create a job that locates\nits Compute Engine resources outside of the job's location.\n\n* For projects that have successfully submitted before July 31, 2026 at least\n  one job that uses the `allowedLocations[]` field with any region or zones\n  outside of the job's location, changes are starting on *June 30, 2027*.\n* For all other projects, changes are starting on *July 31, 2026*.\n\nIf none of your jobs specify the `allowedLocations[]` field, then no action is\nrequired. Otherwise, ensure that any region or zones specified in the\n`allowedLocations[]` field are in the same region as the job's location\nbefore these dates. For more information, see\n[Batch locations](https://docs.cloud.google.com/batch/docs/locations).",
+        "summary": {
+          "title": "Job location restrictions update",
+          "summary": "Starting July 31, 2026, new job creations will be restricted to resources within the job's specified location. Projects with prior `allowedLocations` usage before July 31, 2026, will see changes starting June 30, 2027. Ensure your `allowedLocations` align with job locations to avoid disruption."
+        }
+      }
+    ],
     "2026-07-17": [
       {
         "kind": "Feature",

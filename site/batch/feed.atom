@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Batch</title>
   <subtitle>Changelog for Google Cloud product: Batch</subtitle>
-  <updated>2026-07-17T00:00:00+00:00</updated>
+  <updated>2026-07-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:batch</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/batch/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:batch:2026-07-20:breaking:0</id>
+    <published>2026-07-20T00:00:00+00:00</published>
+    <updated>2026-07-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting on the following dates, you can no longer create a job that locates
+its Compute Engine resources outside of the job's location.</p>
+<ul>
+<li>For projects that have successfully submitted before July 31, 2026 at least
+  one job that uses the <code>allowedLocations[]</code> field with any region or zones
+  outside of the job's location, changes are starting on <em>June 30, 2027</em>.</li>
+<li>For all other projects, changes are starting on <em>July 31, 2026</em>.</li>
+</ul>
+<p>If none of your jobs specify the <code>allowedLocations[]</code> field, then no action is
+required. Otherwise, ensure that any region or zones specified in the
+<code>allowedLocations[]</code> field are in the same region as the job's location
+before these dates. For more information, see
+<a href="https://docs.cloud.google.com/batch/docs/locations">Batch locations</a>.</p>]]></content>
+    <summary>Starting July 31, 2026, new job creations will be restricted to resources within the job's specified location. Projects with prior `allowedLocations` usage before July 31, 2026, will see changes starting June 30, 2027. Ensure your `allowedLocations` align with job locations to avoid disruption.</summary>
+    <title>Breaking: Job location restrictions update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

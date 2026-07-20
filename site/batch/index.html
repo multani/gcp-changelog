@@ -2688,6 +2688,22 @@
 
 
 <h1 id="batch">Batch</h1>
+<h2 id="2026-07-20">2026-07-20</h2>
+<h3 id="breaking">Breaking</h3>
+<p>Starting on the following dates, you can no longer create a job that locates
+its Compute Engine resources outside of the job's location.</p>
+<ul>
+<li>For projects that have successfully submitted before July 31, 2026 at least
+  one job that uses the <code>allowedLocations[]</code> field with any region or zones
+  outside of the job's location, changes are starting on <em>June 30, 2027</em>.</li>
+<li>For all other projects, changes are starting on <em>July 31, 2026</em>.</li>
+</ul>
+<p>If none of your jobs specify the <code>allowedLocations[]</code> field, then no action is
+required. Otherwise, ensure that any region or zones specified in the
+<code>allowedLocations[]</code> field are in the same region as the job's location
+before these dates. For more information, see
+<a href="https://docs.cloud.google.com/batch/docs/locations">Batch locations</a>.</p>
+<hr />
 <h2 id="2026-07-17">2026-07-17</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://docs.cloud.google.com/batch/docs/create-run-job-instance-flexibility">Instance flexibility</a> is available in
@@ -2749,6 +2765,9 @@ For more information, see <a href="https://docs.cloud.google.com/batch/docs/crea
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#batch">Batch</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-20" class="nav-link">2026-07-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-07-17" class="nav-link">2026-07-17</a>
           </li>

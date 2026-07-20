@@ -1,5 +1,23 @@
 # Cloud Load Balancing
 
+## 2026-07-20
+
+### Feature
+
+For regional external passthrough Network Load Balancers, you can reserve specific or automatically
+allocated bring your own IP (BYOIP) IPv6 addresses before creating a load
+balancer, so that the IPv6 address persists independently of the load balancer's lifecycle. You can also promote an ephemeral BYOIP IPv6 address that is in use
+by a load balancer to a reserved static IP address.
+
+For more information, see the following documentation:
+
+* [Set up a regional external passthrough Network Load Balancer with a backend service](https://docs.cloud.google.com/load-balancing/docs/network/setting-up-network-backend-service#byoip-ipv6).
+* [Set up a regional external passthrough Network Load Balancer for multiple IP protocols](https://docs.cloud.google.com/load-balancing/docs/network/setting-up-networklb-multiple-protocols#byoip-ipv6)
+* [Set up a regional external passthrough Network Load Balancer with zonal NEGs](https://docs.cloud.google.com/load-balancing/docs/network/setting-up-network-zonal-neg#byoip-ipv6)
+
+This feature is in **Preview**.
+
+---
 ## 2026-06-02
 
 ### Feature

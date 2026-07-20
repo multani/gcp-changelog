@@ -1,5 +1,24 @@
 # Batch
 
+## 2026-07-20
+
+### Breaking
+
+Starting on the following dates, you can no longer create a job that locates
+its Compute Engine resources outside of the job's location.
+
+* For projects that have successfully submitted before July 31, 2026 at least
+  one job that uses the `allowedLocations[]` field with any region or zones
+  outside of the job's location, changes are starting on *June 30, 2027*.
+* For all other projects, changes are starting on *July 31, 2026*.
+
+If none of your jobs specify the `allowedLocations[]` field, then no action is
+required. Otherwise, ensure that any region or zones specified in the
+`allowedLocations[]` field are in the same region as the job's location
+before these dates. For more information, see
+[Batch locations](https://docs.cloud.google.com/batch/docs/locations).
+
+---
 ## 2026-07-17
 
 ### Feature

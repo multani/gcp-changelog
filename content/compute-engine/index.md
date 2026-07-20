@@ -2,6 +2,16 @@
 
 ## 2026-07-16
 
+### Feature
+
+Hyperdisk Balanced High Availability volumes on C4 instances have increased performance
+limits for several machine types. For example, an instance that uses the
+`c4-standard-16` machine type can reach up to 1,600 MiB/s of throughput,
+up from 600 MiB/s.
+
+For detailed performance limits, see
+[Hyperdisk Balanced High Availability performance limits when attached to an instance](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha#perf-limits).
+
 ### Change
 
 **Changed**: The following operations on the boot disk of a Compute Engine instance

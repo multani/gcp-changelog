@@ -4,6 +4,14 @@
     "2026-07-10": [
       {
         "kind": "Feature",
+        "content": "Cloud SQL enhanced backups now supports custom on-demand backups. You can\nnow initiate an on-demand backup with a custom retention period. To cap this\nretention period, you can specify a maximum retention limit by using the\n`max-custom-on-demand-retention-days` field when creating a backup plan.\nAdditionally, you can now create a backup plan without scheduled backup\nrules, provided that the custom on-demand retention period is configured.\n\nFor more information, see [On-demand backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup#on-demand-backups) and [Create a backup plan with no backup rule](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/backup-plan-create#create-backup-plan-with-no-backup-rule).",
+        "summary": {
+          "title": "Custom On-Demand Backups for Cloud SQL",
+          "summary": "Cloud SQL now offers enhanced on-demand backups with custom retention periods. You can set a maximum retention limit and create backup plans without scheduled rules, providing more flexibility for your data protection needs."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "* You can now change the backup plan applied to an existing AlloyDB for PostgreSQL cluster,\n  provided that the new backup plan uses the same backup vault and is in the same\n  region as the AlloyDB for PostgreSQL cluster. For more information, see\n  [Change a backup plan](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/alloydb/alloydb-backup#change-plan).\n* You can now take **on-demand backups with custom retention** of your AlloyDB for PostgreSQL cluster\n  at any time, independently of your *scheduled backups*. For more information,\n  see [Create an on-demand backup](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/alloydb/alloydb-backup#create_an_on-demand_backup).",
         "summary": {
           "title": "AlloyDB backup plan updates",

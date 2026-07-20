@@ -4,6 +4,17 @@
 
 ### Feature
 
+Cloud SQL enhanced backups now supports custom on-demand backups. You can
+now initiate an on-demand backup with a custom retention period. To cap this
+retention period, you can specify a maximum retention limit by using the
+`max-custom-on-demand-retention-days` field when creating a backup plan.
+Additionally, you can now create a backup plan without scheduled backup
+rules, provided that the custom on-demand retention period is configured.
+
+For more information, see [On-demand backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup#on-demand-backups) and [Create a backup plan with no backup rule](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/backup-plan-create#create-backup-plan-with-no-backup-rule).
+
+### Feature
+
 * You can now change the backup plan applied to an existing AlloyDB for PostgreSQL cluster,
   provided that the new backup plan uses the same backup vault and is in the same
   region as the AlloyDB for PostgreSQL cluster. For more information, see

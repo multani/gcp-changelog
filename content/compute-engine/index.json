@@ -3,6 +3,14 @@
   "entries": {
     "2026-07-16": [
       {
+        "kind": "Feature",
+        "content": "Hyperdisk Balanced High Availability volumes on C4 instances have increased performance\nlimits for several machine types. For example, an instance that uses the\n`c4-standard-16` machine type can reach up to 1,600 MiB/s of throughput,\nup from 600 MiB/s.\n\nFor detailed performance limits, see\n[Hyperdisk Balanced High Availability performance limits when attached to an instance](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha#perf-limits).",
+        "summary": {
+          "title": "Increased Hyperdisk Balanced HA Performance",
+          "summary": "Hyperdisk Balanced High Availability volumes now offer significantly increased performance limits when attached to C4 instances. This upgrade boosts throughput for several machine types, enhancing storage performance for your workloads."
+        }
+      },
+      {
         "kind": "Change",
         "content": "**Changed**: The following operations on the boot disk of a Compute Engine instance\nthat has a service account attached no longer require the `iam.serviceAccounts.actAs`\npermission. In the following list, the boot disk of such an instance is\nreferred to as the *source disk*.\n\n* Creating a standard or archive snapshot of the source disk.\n* Cloning the source disk.\n* Creating a machine image of the instance.\n* Creating a custom image of the source disk.\n* Starting asynchronous replication of the source disk to another region.\n* Creating a new disk when you create an instance, if the new disk is created\n  from an instant snapshot of the source disk.",
         "summary": {

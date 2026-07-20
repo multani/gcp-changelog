@@ -26,8 +26,8 @@ For more information, see [Dashboard filters](chronicle/docs/reports/native-dash
 
 **[Spotlight Feature] Security Tokens**
 
-Security Tokens are now available for metering agentic consumption within Google
-SecOps. Tokens are consumed by generally available security agents only. These
+Security Tokens are now available for metering agentic consumption within Google SecOps.
+Tokens are consumed by generally available security agents only. These
 agents are invoked automatically or manually using the web interface, CLI, chat,
 or Model Context Protocol (MCP). Assistive features, such as standard chat
 panels and automated summaries, along with preview agents, won't consume

@@ -38,7 +38,7 @@ Key aspects of Advanced Filtering include:
 * **Customizable Wrappers:** You can specify prefixes and suffixes to wrap token values, enabling specific logic such as regular expressions.
 * **Multi-Select Support:** The ability to select multiple options for a token can be enabled, with a configurable delimiter (for example, `|`) for combining values in queries.
 
-For more information, see [Dashboard filters](chronicle/docs/reports/native-dashboards-filters).
+For more information, see [Advanced filtering](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards-filters#advanced_filtering).
 
 ---
 ## 2026-07-13

@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-07-15T00:00:00+00:00</updated>
+  <updated>2026-07-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-20:security:0</id>
+    <published>2026-07-20T00:00:00+00:00</published>
+    <updated>2026-07-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Security update for Server-Side Request Forgery (SSRF) in Agent Studio</strong></p>
+<p>This release fixes a Server-Side Request Forgery (SSRF) vulnerability in the
+auto-generated <code>/api-proxy</code> backend endpoint for web applications created
+before July 1, 2026, using Agent Studio.</p>
+<p>If you downloaded, generated, or deployed web application code from Agent Studio
+before July 1, 2026, regenerate the app from Agent Studio and deploy the new
+version. For more information,
+see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/deploy-vais-prompt">Quickstart: Deploy your Agent Studio prompt as a web
+application</a></p>
+<p>The updated backend code includes strict domain allowlist validation, ensuring
+that destination hostnames for the <code>/api-proxy</code> endpoint end with allowed Google
+Cloud domains, such as <code>*-aiplatform.clients6.google.com</code></p>]]></content>
+    <summary>A security vulnerability in Agent Studio has been addressed. Users who created web applications before July 1, 2026, are advised to regenerate and redeploy their applications to ensure they are protected by the latest security measures.</summary>
+    <title>Security: Security update for Agent Studio</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

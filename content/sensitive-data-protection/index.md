@@ -21,6 +21,13 @@ You can still use the old functionality by setting
 `InfoType.version` to `legacy` for the next 90 days.
 
 ---
+## 2026-07-09
+
+### Feature
+
+The `SWITZERLAND_PASSPORT` infoType detector is available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference).
+
+---
 ## 2026-06-29
 
 ### Feature

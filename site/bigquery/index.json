@@ -1,6 +1,24 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-07-20": [
+      {
+        "kind": "Feature",
+        "content": "[*Lakehouse for Apache Iceberg*](https://docs.cloud.google.com/lakehouse/docs/introduction): Cross-cloud\nLakehouse now supports integration with SAP Business Data Cloud\n(BDC) in Preview.\n\nThis update includes the following features:\n\n* **Federation from SAP BDC:** Create Delta Sharing catalogs in\n  Lakehouse to automatically synchronize shares, schemas, and\n  tables from SAP BDC.\n* **Querying SAP data:** Query synchronized SAP BDC tables directly from\n  BigQuery without data migration.\n* **Publishing to SAP BDC:** Publish Apache Iceberg REST catalog (IRC) tables\n  or Knowledge Catalog Data Products from\n  Lakehouse directly to SAP BDC, allowing SAP users and\n  applications to consume Google Cloud data directly as remote tables\n  in SAP Datasphere without migrating data.\n\nFor more information, see [Set up cross-cloud Lakehouse for SAP\nBDC](https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-lakehouse-sap-bdc), [Query SAP BDC\ndata](https://docs.cloud.google.com/lakehouse/docs/query-sap-data), and [Publish Lakehouse\ntables to SAP BDC](https://docs.cloud.google.com/lakehouse/docs/publish-data-to-sap-bdc).",
+        "summary": {
+          "title": "Lakehouse Integrates with SAP Business Data Cloud",
+          "summary": "Lakehouse for Apache Iceberg now supports integration with SAP Business Data Cloud (BDC) in preview. This allows for seamless data synchronization, querying of SAP data directly from BigQuery, and publishing Lakehouse tables to SAP BDC for consumption in SAP Datasphere."
+        }
+      },
+      {
+        "kind": "Issue",
+        "content": "[*Lakehouse for Apache Iceberg*](https://docs.cloud.google.com/lakehouse/docs/introduction): Data Products with\nspecial characters, such as \"/\" or \"-\", are not supported and will not be\navailable in BigQuery even if shared from SAP BDC to\nBigQuery. If you share a Data Product with special characters,\nthis could cause the stop a refresh and require\nre-enrollment. Known SAP systems producing these Data Products include\nSAP Business Warehouse (BW) sources and SAP SuccessFactors.",
+        "summary": {
+          "title": "Issue with Data Products containing special characters",
+          "summary": "Data Products with special characters like '/' or '-' are not supported in BigQuery and may cause refresh failures. This issue affects data shared from SAP systems, potentially requiring re-enrollment. Known affected sources include SAP BW and SAP SuccessFactors."
+        }
+      }
+    ],
     "2026-07-15": [
       {
         "kind": "Feature",

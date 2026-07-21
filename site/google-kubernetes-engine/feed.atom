@@ -2,9 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-07-16T00:00:00+00:00</updated>
+  <updated>2026-07-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-20:deprecated:0</id>
+    <published>2026-07-20T00:00:00+00:00</published>
+    <updated>2026-07-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To improve security, Ubuntu node images in GKE version 1.37 and later don't
+pre-install the <code>vulkan-tools</code> package. If you run Vulkan diagnostic tools
+(such as <code>vulkaninfo</code>) directly on GKE Ubuntu hosts, then you must manually
+install the <code>vulkan-tools</code> package. This change doesn't affect containerized
+GPU/Vulkan workloads.</p>]]></content>
+    <summary>For improved security, Ubuntu node images in GKE versions 1.37+ will no longer pre-install the `vulkan-tools` package. Users needing to run Vulkan diagnostic tools directly on GKE Ubuntu hosts must now install this package manually. This change does not impact containerized GPU/Vulkan workloads.</summary>
+    <title>Deprecated: Vulkan Tools No Longer Pre-installed on GKE Ubuntu Nodes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

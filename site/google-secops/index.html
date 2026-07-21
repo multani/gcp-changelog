@@ -2688,6 +2688,23 @@
 
 
 <h1 id="google-secops">Google SecOps</h1>
+<h2 id="2026-07-20">2026-07-20</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p><strong>[Spotlight Feature] Deprecation of Google Security Operations legacy SIEM APIs</strong></p>
+<p>Google Security Operations is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecating</a> its legacy SIEM APIs—<a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#backstory_api">Backstory API</a> (including <a href="https://docs.cloud.google.com/chronicle/docs/reference/customer-management-api">Customer Management API</a>) and <a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#ingestion_api">Ingestion API</a>—in favor of the modern <a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#chronicle_api">Chronicle API</a>.</p>
+<p><strong>Key dates</strong></p>
+<ul>
+<li><strong>October 26, 2026:</strong> New Google SecOps instances provisioned from this date will no longer support legacy API calls.</li>
+<li><strong>July 20, 2027:</strong> All requests to legacy endpoints fail from this date because legacy APIs for all existing instances will be completely turned down.</li>
+</ul>
+<p>This change applies only to custom scripts, integrations, SOAR connectors, or ingestion feeds calling legacy Backstory API or Ingestion API endpoints. Any changes impacting the Google SecOps UI are already addressed and don't call for your action.</p>
+<p><strong>Next steps</strong></p>
+<ul>
+<li>Audit API usage to identify any affected components that currently call legacy Backstory API or Ingestion API endpoints, and replace them with Chronicle API endpoints.</li>
+<li>Validate and test that your updated components work properly.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/administration/migrate-from-legacy-api-to-chronicle-api">Migrate from legacy API to Chronicle API</a>.</p>
+<hr />
 <h2 id="2026-07-15">2026-07-15</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>[Spotlight Feature] Advanced Filtering in Dashboards</strong></p>
@@ -3290,13 +3307,13 @@ after <strong>May 18, 2026</strong>.</p>
 <p><strong>Note:</strong> It might take one to six days before you see the changes reflected in your region. 
 <strong>Important:</strong> You need to update your API settings to call the new <code>v1</code> endpoint instead of the <code>v1alpha</code> endpoint. For example, to create a new data export job, you need to update the existing endpoint <code>POST https://chronicle.{region}.rep.googleapis.com/v1alpha/{parent}/dataExports</code> to the new endpoint <code>POST https://chronicle.{region}.rep.googleapis.com/v1/{parent}/dataExports</code>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">Data Export API (enhanced)</a>.</p>
-<h3 id="deprecated">Deprecated</h3>
-<p>The legacy Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">enhanced Data Export API</a>, which provides a more secure and scalable data archival experience. After June 18, 2026, legacy Data Export API won't work.</p>
 <h3 id="deprecated_1">Deprecated</h3>
-<p>The <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.dataExports/fetchavailablelogtypes"><code>fetchavailablelogtypes</code></a> API endpoint is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1beta/projects.locations.instances.logTypes/list"><code>list</code> endpoint</a>. After June 18, 2026, the <code>fetchavailablelogtypes</code> API endpoint won't work.</p>
+<p>The legacy Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">enhanced Data Export API</a>, which provides a more secure and scalable data archival experience. After June 18, 2026, legacy Data Export API won't work.</p>
 <h3 id="deprecated_2">Deprecated</h3>
-<p>The <code>updateDataExport</code> endpoint in the enhanced Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a>. The reduction in job queue times using the <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">enhanced Data Export API</a> has eliminated the need for the update functionality of the <code>updateDataExport</code> API endpoint. The <code>updateDataExport</code> endpoint was present in v1alpha only; it wasn't present in in v1beta or v1. After June 18, 2026, the <code>updateDataExport</code> API endpoint won't work. You can still cancel queued export jobs.</p>
+<p>The <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.dataExports/fetchavailablelogtypes"><code>fetchavailablelogtypes</code></a> API endpoint is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1beta/projects.locations.instances.logTypes/list"><code>list</code> endpoint</a>. After June 18, 2026, the <code>fetchavailablelogtypes</code> API endpoint won't work.</p>
 <h3 id="deprecated_3">Deprecated</h3>
+<p>The <code>updateDataExport</code> endpoint in the enhanced Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a>. The reduction in job queue times using the <a href="https://docs.cloud.google.com/chronicle/docs/reference/data-export-api-enhanced">enhanced Data Export API</a> has eliminated the need for the update functionality of the <code>updateDataExport</code> API endpoint. The <code>updateDataExport</code> endpoint was present in v1alpha only; it wasn't present in in v1beta or v1. After June 18, 2026, the <code>updateDataExport</code> API endpoint won't work. You can still cancel queued export jobs.</p>
+<h3 id="deprecated_4">Deprecated</h3>
 <p>The <a href="https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.dataExports#DataExport:%7E:text=05%3A30%22.-,logType,to%20export.%20Format%3A%20projects/%7Bproject%7D/locations/%7Blocation%7D/instances/%7Binstance%7D/logTypes/%7BlogType%7D,-gcsBucket"><code>logType</code></a> field in the enhanced Data Export API is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the new (optional)<code>includeLogTypes</code> field, which supports an array of log types for data filtering. If left blank, the export job includes all log types by default. The <code>logType</code> field was present in v1alpha only; it wasn't present in in v1beta or v1. After June 18, 2026, the <code>logType</code> field is discontinued.</p>
 <hr />
 <h2 id="2026-05-17">2026-05-17</h2>
@@ -3565,7 +3582,7 @@ after <strong>May 18, 2026</strong>.</p>
 </ul>
 <hr />
 <h2 id="2026-04-22">2026-04-22</h2>
-<h3 id="deprecated_4">Deprecated</h3>
+<h3 id="deprecated_5">Deprecated</h3>
 <p>Support for the legacy Google Security Operations SIEM infrastructure will end on April 30, 2027. After this date, you will no longer have access to your Google SecOps SIEM instance on the legacy infrastructure. You need to self-migrate Google Security Operations SIEM in legacy Infrastructure to Google Cloud to align with industry standards and improve your reliability, privacy, security, compliance, and granular access controls. Follow the <a href="https://docs.cloud.google.com/chronicle/docs/administration/migrate-legacy-siem-infra">Migration guide</a> and <a href="https://security.googlecloudcommunity.com/community-blog-42/elevate-your-defense-modernizing-google-secops-for-the-agentic-soc-7087">Community post</a> to begin your transition.</p>
 <p>This migration applies to you <strong>only</strong> if your SIEM instance meets <strong>one of the conditions</strong> below:</p>
 <ul>
@@ -3708,7 +3725,7 @@ access:</p>
 <p><strong>Note:</strong> This change follows a phased rollout from <strong>April 06, 2026</strong>, to
 <strong>April 30, 2026</strong>. Contact Support if you don't see the new limits applied
 to your environment after <strong>April 30, 2026</strong>.</p>
-<h3 id="deprecated_5">Deprecated</h3>
+<h3 id="deprecated_6">Deprecated</h3>
 <p><strong>v1 Cloud Storage Feed Types (GCS, S3, SQS, Azure)</strong></p>
 <p>The v1 feed types for <code>GOOGLE_CLOUD_STORAGE</code>, <code>AMAZON_S3</code>, <code>AMAZON_SQS</code>, and <code>AZURE_BLOBSTORE</code> are deprecated and will be discontinued on <strong>March 15, 2027</strong>. The new v2 feed types uses the Google Cloud Storage Transfer Service (STS) to provide improved performance, scalability, and reliability.</p>
 <p>To ensure continued ingestion, transition your feeds before the March 15, 2027 shutdown date:</p>
@@ -4247,7 +4264,7 @@ For more information about TIN, see
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/manage-parser-updates#manage-parser-versions">Manage prebuilt parser versions</a>.</p>
 <hr />
 <h2 id="2026-03-02">2026-03-02</h2>
-<h3 id="deprecated_6">Deprecated</h3>
+<h3 id="deprecated_7">Deprecated</h3>
 <p><code>Chronicle.soarAnalyst</code>, <code>chronicle.soarViewer</code>, <code>chronicle.soarEngineer</code> roles in Cloud IAM are being deprecated and will be fully removed in six months. Although these roles were accessible and can historically be assigned to users in Cloud IAM, they were non-operational. SOAR roles were managed through Permission Groups and with its migration to Cloud IAM as part of the <a href="https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp#permissions-iam">SOAR Migration to Google Cloud</a>, the preceding roles are being deprecated.</p>
 <p>To maintain seamless access and adhere to the principle of least privilege, transition your SOAR users to the following options:</p>
 <ul>
@@ -4365,7 +4382,7 @@ that protect the resources and data of services that you explicitly specify. For
 </ul>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="deprecated_7">Deprecated</h3>
+<h3 id="deprecated_8">Deprecated</h3>
 <p>Control of MCP use with organization policies is deprecated. After March 17, 2026, organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint won't work, and you can control MCP use with IAM deny policies. For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <h3 id="change_12">Change</h3>
 <p>After March 17, 2026, when you enable Google SecOps, the Google SecOps MCP server is automatically enabled.</p>
@@ -4460,7 +4477,7 @@ without losing unmatched events.</p>
 <p>Google SecOps now lets you share custom sets of columns in the <strong>Events</strong> table for
 consistent analysis across teams.</p>
 <p>For more details, see <a href="https://cloud.google.com/chronicle/docs/investigation/udm-search">Search for events and alerts</a></p>
-<h3 id="deprecated_8">Deprecated</h3>
+<h3 id="deprecated_9">Deprecated</h3>
 <p><strong>Mute an IoC deprecated</strong></p>
 <p>The Mute an IoC feature is deprecated, and the <strong>IOC details</strong> page no longer displays the <strong>Mute</strong> indicator.</p>
 <h3 id="announcement_20">Announcement</h3>
@@ -5479,7 +5496,7 @@ The following rules have been added to the rulepack:</p>
 <p>This enhanced parser is available as a <strong>Release Candidate</strong> for the next 2 months. To opt in and begin testing it, go to <strong>SIEM Settings &gt; Parsers</strong>. We encourage you to try it out and evaluate the improvements before it becomes the default.</p>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="deprecated_9">Deprecated</h3>
+<h3 id="deprecated_10">Deprecated</h3>
 <p>The Netskope v1 API feed has been deprecated by Netskope. If you are using the Netskope REST API v1 with Google SecOps, you must switch to the Netskope REST API v2.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
@@ -6734,6 +6751,9 @@ sources directly within a single query.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-secops">Google SecOps</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-20" class="nav-link">2026-07-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-07-15" class="nav-link">2026-07-15</a>
           </li>

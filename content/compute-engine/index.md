@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-07-20
+
+### Deprecated
+
+Encrypting disks, snapshots, images, and machine images with customer-supplied
+encryption keys (CSEKs) is deprecated and will be disabled on July 20, 2027.
+
+For more information and alternatives to CSEKs for your Compute Engine resources,
+see [Deprecation of customer-supplied encryption keys (CSEK) in Compute Engine](https://docs.cloud.google.com/compute/docs/deprecations/csek-deprecation-in-compute-engine).
+
+---
 ## 2026-07-16
 
 ### Feature

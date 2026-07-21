@@ -1,6 +1,32 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2026-07-20": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for bare metal 1.35.300-gke.87 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.35.300-gke.87 runs on Kubernetes v1.35.3-gke.400.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the Google Distributed Cloud-ready\nstorage partners document to make sure the storage vendor has already passed the\nqualification for this release of Google Distributed Cloud for bare metal.",
+        "summary": {
+          "title": "New version of GDC available",
+          "summary": "Google Distributed Cloud for bare metal 1.35.300-gke.87 is now available. This release runs on Kubernetes v1.35.3-gke.400. Please check storage partner qualifications before upgrading."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following change was added in 1.35.300-gke.87:\n\n* Removed the deprecated `csi-snapshot-validation-webhook` component. Upstream Kubernetes validation is now handled natively via Common Expression Language (CEL) rules within the deployed Custom Resource Definitions (CRDs). For more information, see [Volume snapshots](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/volume-snapshots).",
+        "summary": {
+          "title": "Snapshot Validation Webhook Removed",
+          "summary": "The deprecated csi-snapshot-validation-webhook component has been removed. Kubernetes now handles snapshot validation natively using CEL rules within CRDs."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.35.300-gke.87:\n\n* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities) for the list of security vulnerabilities addressed in this release.",
+        "summary": {
+          "title": "Security fixes released",
+          "summary": "Version 1.35.300-gke.87 includes fixes for several security vulnerabilities. A detailed list of addressed vulnerabilities is available in the documentation."
+        }
+      }
+    ],
     "2026-07-10": [
       {
         "kind": "Announcement",

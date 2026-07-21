@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-07-20": [
+      {
+        "kind": "Deprecated",
+        "content": "To improve security, Ubuntu node images in GKE version 1.37 and later don't\npre-install the `vulkan-tools` package. If you run Vulkan diagnostic tools\n(such as `vulkaninfo`) directly on GKE Ubuntu hosts, then you must manually\ninstall the `vulkan-tools` package. This change doesn't affect containerized\nGPU/Vulkan workloads.",
+        "summary": {
+          "title": "Vulkan Tools No Longer Pre-installed on GKE Ubuntu Nodes",
+          "summary": "For improved security, Ubuntu node images in GKE versions 1.37+ will no longer pre-install the `vulkan-tools` package. Users needing to run Vulkan diagnostic tools directly on GKE Ubuntu hosts must now install this package manually. This change does not impact containerized GPU/Vulkan workloads."
+        }
+      }
+    ],
     "2026-07-16": [
       {
         "kind": "Change",

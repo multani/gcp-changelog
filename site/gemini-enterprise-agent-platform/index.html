@@ -2688,6 +2688,21 @@
 
 
 <h1 id="gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</h1>
+<h2 id="2026-07-20">2026-07-20</h2>
+<h3 id="security">Security</h3>
+<p><strong>Security update for Server-Side Request Forgery (SSRF) in Agent Studio</strong></p>
+<p>This release fixes a Server-Side Request Forgery (SSRF) vulnerability in the
+auto-generated <code>/api-proxy</code> backend endpoint for web applications created
+before July 1, 2026, using Agent Studio.</p>
+<p>If you downloaded, generated, or deployed web application code from Agent Studio
+before July 1, 2026, regenerate the app from Agent Studio and deploy the new
+version. For more information,
+see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/deploy-vais-prompt">Quickstart: Deploy your Agent Studio prompt as a web
+application</a></p>
+<p>The updated backend code includes strict domain allowlist validation, ensuring
+that destination hostnames for the <code>/api-proxy</code> endpoint end with allowed Google
+Cloud domains, such as <code>*-aiplatform.clients6.google.com</code></p>
+<hr />
 <h2 id="2026-07-15">2026-07-15</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Memory Bank memory profiles are generally available (GA)</strong></p>
@@ -3538,6 +3553,9 @@ changes:</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-20" class="nav-link">2026-07-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-07-15" class="nav-link">2026-07-15</a>
           </li>

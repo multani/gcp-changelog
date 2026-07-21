@@ -1,5 +1,42 @@
 # BigQuery
 
+## 2026-07-20
+
+### Feature
+
+[*Lakehouse for Apache Iceberg*](https://docs.cloud.google.com/lakehouse/docs/introduction): Cross-cloud
+Lakehouse now supports integration with SAP Business Data Cloud
+(BDC) in Preview.
+
+This update includes the following features:
+
+* **Federation from SAP BDC:** Create Delta Sharing catalogs in
+  Lakehouse to automatically synchronize shares, schemas, and
+  tables from SAP BDC.
+* **Querying SAP data:** Query synchronized SAP BDC tables directly from
+  BigQuery without data migration.
+* **Publishing to SAP BDC:** Publish Apache Iceberg REST catalog (IRC) tables
+  or Knowledge Catalog Data Products from
+  Lakehouse directly to SAP BDC, allowing SAP users and
+  applications to consume Google Cloud data directly as remote tables
+  in SAP Datasphere without migrating data.
+
+For more information, see [Set up cross-cloud Lakehouse for SAP
+BDC](https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-lakehouse-sap-bdc), [Query SAP BDC
+data](https://docs.cloud.google.com/lakehouse/docs/query-sap-data), and [Publish Lakehouse
+tables to SAP BDC](https://docs.cloud.google.com/lakehouse/docs/publish-data-to-sap-bdc).
+
+### Issue
+
+[*Lakehouse for Apache Iceberg*](https://docs.cloud.google.com/lakehouse/docs/introduction): Data Products with
+special characters, such as "/" or "-", are not supported and will not be
+available in BigQuery even if shared from SAP BDC to
+BigQuery. If you share a Data Product with special characters,
+this could cause the stop a refresh and require
+re-enrollment. Known SAP systems producing these Data Products include
+SAP Business Warehouse (BW) sources and SAP SuccessFactors.
+
+---
 ## 2026-07-15
 
 ### Feature

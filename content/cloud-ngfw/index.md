@@ -1,5 +1,20 @@
 # Cloud NGFW
 
+## 2026-07-20
+
+### Feature
+
+You can now use the WildFire service to protect your network against unknown,
+novel malware, and file-based threats. WildFire integrates advanced malware sandboxing
+and real-time machine learning (ML) to perform deep inspection of
+network-routed file transfers and block zero-day malware before it reaches your
+workloads. WildFire is available in the Cloud Firewall Enterprise tier.
+
+For more information, see [WildFire overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and
+[Configure WildFire in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire). This
+feature is available in **Preview**.
+
+---
 ## 2026-06-30
 
 ### Feature

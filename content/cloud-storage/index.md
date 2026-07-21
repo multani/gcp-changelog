@@ -1,5 +1,14 @@
 # Cloud Storage
 
+## 2026-07-20
+
+### Feature
+
+Object Lifecycle Management conditions for
+[`sizeAboveBytes` and `sizeBelowBytes`](https://docs.cloud.google.com/storage/docs/lifecycle#size-above-below-bytes)
+let you define a minimum and maximum size threshold for lifecycle actions.
+
+---
 ## 2026-06-17
 
 ### Feature

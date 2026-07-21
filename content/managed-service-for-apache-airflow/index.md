@@ -1,5 +1,66 @@
 # Managed Service for Apache Airflow
 
+## 2026-07-16
+
+### Announcement
+
+A new Managed Service for Apache Airflow release has started on
+**July 16, 2026**. Get ready for upcoming changes and features as we roll out
+the new release to all regions. This release is in progress at the moment.
+Listed changes and features might not be available in some regions yet.
+
+### Feature
+
+**Airflow 3.1.8** is available in Managed Airflow (Gen 3).
+
+### Change
+
+Airflow 3.1.7 is no longer included in Managed Airflow images and builds.
+
+### Fixed
+
+*(Airflow 3.1.8)* Backported
+[#64031](https://github.com/apache/airflow/pull/64031) to fix an issue in
+the Airflow UI when viewing tasks in non-terminal states (scheduled, running)
+with "Show Gantt" enabled.
+
+### Change
+
+*(Airflow 3.1.8)* The `apache-airflow-providers-google` package was upgraded to version 22.2.0.
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
+
+### Change
+
+*(Airflow 2.11.1)* The `apache-airflow-providers-google` package was upgraded to version 22.2.1.
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.1.8-build.0](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-8-build-0)
+* [composer-3-airflow-2.11.1-build.11](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-11) (default)
+* [composer-3-airflow-2.10.5-build.44](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-44)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.7-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-7-airflow-2-11-1) (default)
+* [composer-2.17.7-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-7-airflow-2-10-5)
+
+### Deprecated
+
+The following Managed Airflow versions and builds have reached their
+[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.10.5-build.9, composer-3-airflow-2.9.3-build.29,
+composer-2.13.7-airflow-2.9.3, composer-2.13.7-airflow-2.10.5.
+
+---
 ## 2026-07-13
 
 ### Issue

@@ -1,5 +1,35 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-07-20
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.35.300-gke.87 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.35.300-gke.87 runs on Kubernetes v1.35.3-gke.400.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release of Google Distributed Cloud for bare metal.
+
+### Feature
+
+The following change was added in 1.35.300-gke.87:
+
+* Removed the deprecated `csi-snapshot-validation-webhook` component. Upstream Kubernetes validation is now handled natively via Common Expression Language (CEL) rules within the deployed Custom Resource Definitions (CRDs). For more information, see [Volume snapshots](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/volume-snapshots).
+
+### Fixed
+
+The following issues were fixed in 1.35.300-gke.87:
+
+* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities) for the list of security vulnerabilities addressed in this release.
+
+---
 ## 2026-07-10
 
 ### Announcement

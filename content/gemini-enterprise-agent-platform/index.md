@@ -1,5 +1,26 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-07-20
+
+### Security
+
+**Security update for Server-Side Request Forgery (SSRF) in Agent Studio**
+
+This release fixes a Server-Side Request Forgery (SSRF) vulnerability in the
+auto-generated `/api-proxy` backend endpoint for web applications created
+before July 1, 2026, using Agent Studio.
+
+If you downloaded, generated, or deployed web application code from Agent Studio
+before July 1, 2026, regenerate the app from Agent Studio and deploy the new
+version. For more information,
+see [Quickstart: Deploy your Agent Studio prompt as a web
+application](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agent-studio/deploy-vais-prompt)
+
+The updated backend code includes strict domain allowlist validation, ensuring
+that destination hostnames for the `/api-proxy` endpoint end with allowed Google
+Cloud domains, such as `*-aiplatform.clients6.google.com`
+
+---
 ## 2026-07-15
 
 ### Feature

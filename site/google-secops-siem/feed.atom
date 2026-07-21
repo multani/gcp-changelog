@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2026-07-15T00:00:00+00:00</updated>
+  <updated>2026-07-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-07-20:deprecated:0</id>
+    <published>2026-07-20T00:00:00+00:00</published>
+    <updated>2026-07-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Deprecation of Google Security Operations legacy SIEM APIs</strong></p>
+<p>Google Security Operations is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecating</a> its legacy SIEM APIs—<a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#backstory_api">Backstory API</a> (including <a href="https://docs.cloud.google.com/chronicle/docs/reference/customer-management-api">Customer Management API</a>) and <a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#ingestion_api">Ingestion API</a>—in favor of the modern <a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#chronicle_api">Chronicle API</a>.</p>
+<p><strong>Key dates</strong></p>
+<ul>
+<li><strong>October 26, 2026:</strong> New Google SecOps instances provisioned from this date will no longer support legacy API calls.</li>
+<li><strong>July 20, 2027:</strong> All requests to legacy endpoints fail from this date because legacy APIs for all existing instances will be completely turned down.</li>
+</ul>
+<p>This change applies only to custom scripts, integrations, SOAR connectors, or ingestion feeds calling legacy Backstory API or Ingestion API endpoints. Any changes impacting the Google SecOps UI are already addressed and don't call for your action.</p>
+<p><strong>Next steps</strong></p>
+<ul>
+<li>Audit API usage to identify any affected components that currently call legacy Backstory API or Ingestion API endpoints, and replace them with Chronicle API endpoints.</li>
+<li>Validate and test that your updated components work properly.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/administration/migrate-from-legacy-api-to-chronicle-api">Migrate from legacy API to Chronicle API</a>.</p>]]></content>
+    <summary>Legacy SIEM APIs, including Backstory and Ingestion APIs, are being deprecated in favor of the modern Chronicle API. This change affects custom scripts and integrations, with new instances no longer supporting legacy calls by October 2026 and all legacy endpoints failing by July 2027. Users are advised to audit their API usage and migrate to the Chronicle API.</summary>
+    <title>Deprecated: Deprecation of Legacy SIEM APIs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

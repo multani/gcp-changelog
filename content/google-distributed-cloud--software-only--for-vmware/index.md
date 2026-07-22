@@ -1,5 +1,28 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-07-22
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.35.300-gke.87 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.35.300-gke.87 runs on Kubernetes v1.35.3-gke.400.
+
+If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.35.300-gke.87:
+
+* Fixed an issue where upgrading a user cluster with Anthos Network Gateway (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the upgrade process attempted to modify immutable `spec.selector` fields on existing ANG resources. The upgrade operator now preserves existing label selectors during reconciliation so that V1 to V2 cluster migrations complete successfully.
+
+---
 ## 2026-07-10
 
 ### Announcement

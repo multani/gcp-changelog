@@ -2712,6 +2712,26 @@
 
 
 <h1 id="looker">Looker</h1>
+<h2 id="2026-07-22">2026-07-22</h2>
+<h3 id="security">Security</h3>
+<p>A Cross-Site Scripting (XSS) vulnerability was discovered in Looker. An attacker could craft a malicious URL that, when opened by a Looker administrator, would allow the attacker to execute arbitrary scripts on their behalf and potentially compromise the administrator account.</p>
+<p>Both Looker-hosted and self-hosted instances were found to be vulnerable.</p>
+<p>This issue has already been mitigated for Looker-hosted instances.</p>
+<p><strong>What should I do?</strong></p>
+<p>For Looker-hosted instances, no action is required.</p>
+<p>For self-hosted Looker instances, update your Looker instances as soon as possible. This vulnerability has been patched in all supported versions of Looker for self-hosted instances. The following versions have all been updated to fix this vulnerability:</p>
+<ul>
+<li>Looker 26.8.7 and all later versions</li>
+<li>Looker 26.6.28+</li>
+<li>Looker 26.4.36+</li>
+<li>Looker 26.2.47+</li>
+<li>Looker 26.0.66+</li>
+<li>Looker 25.18.68+</li>
+<li>Looker 25.12.65+</li>
+<li>Looker 25.6.103+</li>
+</ul>
+<p>For more information, see <a href="http://cve.org/CVERecord?id=CVE-2026-15810">CVE-2026-15810</a>.</p>
+<hr />
 <h2 id="2026-07-21">2026-07-21</h2>
 <h3 id="deprecated">Deprecated</h3>
 <p>As of July 13, 2026, Looker reports have been deprecated. If you had previously enabled the preview for Looker reports, be aware of the following:</p>
@@ -4365,6 +4385,9 @@ is created automatically for instances that use an <a href="https://cloud.google
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#looker">Looker</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-22" class="nav-link">2026-07-22</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-07-21" class="nav-link">2026-07-21</a>
           </li>

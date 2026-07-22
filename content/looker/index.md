@@ -1,5 +1,33 @@
 # Looker
 
+## 2026-07-22
+
+### Security
+
+A Cross-Site Scripting (XSS) vulnerability was discovered in Looker. An attacker could craft a malicious URL that, when opened by a Looker administrator, would allow the attacker to execute arbitrary scripts on their behalf and potentially compromise the administrator account.
+
+Both Looker-hosted and self-hosted instances were found to be vulnerable.
+
+This issue has already been mitigated for Looker-hosted instances.
+
+**What should I do?**
+
+For Looker-hosted instances, no action is required.
+
+For self-hosted Looker instances, update your Looker instances as soon as possible. This vulnerability has been patched in all supported versions of Looker for self-hosted instances. The following versions have all been updated to fix this vulnerability:
+
+* Looker 26.8.7 and all later versions
+* Looker 26.6.28+
+* Looker 26.4.36+
+* Looker 26.2.47+
+* Looker 26.0.66+
+* Looker 25.18.68+
+* Looker 25.12.65+
+* Looker 25.6.103+
+
+For more information, see [CVE-2026-15810](http://cve.org/CVERecord?id=CVE-2026-15810).
+
+---
 ## 2026-07-21
 
 ### Deprecated

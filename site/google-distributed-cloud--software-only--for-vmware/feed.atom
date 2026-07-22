@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-07-10T00:00:00+00:00</updated>
+  <updated>2026-07-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-07-22:announcement:0</id>
+    <published>2026-07-22T00:00:00+00:00</published>
+    <updated>2026-07-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.35.300-gke.87 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.35.300-gke.87 runs on Kubernetes v1.35.3-gke.400.</p>
+<p>If you are using a third-party storage vendor, check the Google Distributed Cloud-ready
+storage partners document to make sure the storage vendor has already passed the
+qualification for this release.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for VMware, 1.35.300-gke.87, is now available. This release runs on Kubernetes v1.35.3-gke.400 and includes important updates. Users should consult the upgrade documentation and verify third-party storage compatibility before proceeding.</summary>
+    <title>Announcement: Distributed Cloud for VMware 1.35.300-gke.87 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-07-22:fixed:1</id>
+    <published>2026-07-22T00:00:00+00:00</published>
+    <updated>2026-07-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.300-gke.87:</p>
+<ul>
+<li>Fixed an issue where upgrading a user cluster with Anthos Network Gateway (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the upgrade process attempted to modify immutable <code>spec.selector</code> fields on existing ANG resources. The upgrade operator now preserves existing label selectors during reconciliation so that V1 to V2 cluster migrations complete successfully.</li>
+</ul>]]></content>
+    <summary>Resolved an issue that caused user cluster upgrades with Anthos Network Gateway to stall or fail. The fix ensures that cluster migrations complete successfully by preserving existing label selectors during reconciliation.</summary>
+    <title>Fixed: Upgrade fix for Anthos Network Gateway</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

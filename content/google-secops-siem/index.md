@@ -42,6 +42,14 @@ Key aspects of Advanced Filtering include:
 
 For more information, see [Advanced filtering](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards-filters#advanced_filtering).
 
+### Feature
+
+**Parser extensions for code snippets now support Append/Replace for Repeated Fields**
+
+You can now use append and replace functionality for repeated fields when creating code snippet extensions. Previously, this was only available for no-code extensions. This enhancement provides more granular control over how data is handled in repeated UDM fields, allowing you to either add new values or entirely replace existing ones.
+
+For more information, see [Repeated fields selector](https://docs.cloud.google.com/chronicle/docs/event-processing/using-parser-extensions#repeated_fields_selector).
+
 ---
 ## 2026-07-01
 

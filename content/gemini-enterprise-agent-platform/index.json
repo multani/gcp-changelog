@@ -3,6 +3,14 @@
   "entries": {
     "2026-07-21": [
       {
+        "kind": "Feature",
+        "content": "**Gemini 3.6 Flash and 3.5 Flash-Lite are generally available (GA)**\n\n[Gemini 3.6 Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-6-flash)\nand [Gemini 3.5\nFlash-Lite](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite) are\nnow generally available (GA) and available for production use. These models are\ndesigned to improve upon their predecessors' capabilities, including improved\ntoken usage and improved document understanding. See the linked model\ninformation pages for more information.\n\nThis release includes some potentially breaking changes from previous Flash and\nFlash-Lite models:\n\n* **Sampling parameters**: Custom values for temperature, top-K, and top-P are\n  not supported and will be ignored if set.\n* **Penalty parameters**: Custom values for frequency and presence penalty\n  parameters are not supported. Setting these will result in an API error.\n* **API turn structure**: API requests where the last input turn has a role of\n  `Model` are no longer supported and will return an error:\n  + **Interactions API**: Requests where the last object in the input array\n    has `\"type\": \"model_output\"` will fail.\n  + **GenerateContent API**: Requests where the last object in the contents\n    array has `\"role\": \"model\"` will fail.",
+        "summary": {
+          "title": "Gemini 3.6 Flash and 3.5 Flash-Lite Now Generally Available",
+          "summary": "Gemini 3.6 Flash and 3.5 Flash-Lite are now generally available for production use, offering enhanced capabilities for token usage and document understanding. Note that certain sampling and penalty parameters, along with specific API turn structures, are no longer supported in this release."
+        }
+      },
+      {
         "kind": "Deprecated",
         "content": "**Open model endpoint deprecations**\n\nThe following open model endpoints are deprecated and will be retired on\nOctober 21, 2026. For more information, see [Open model\ndeprecations](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models).\n\n* `deepseek-ocr-maas`\n* `deepseek-r1-0528-maas`\n* `deepseek-v3.2-maas`\n* `deepseek-v3.1-maas`\n* `glm-5-maas`\n* `glm-4.7-maas`\n* `gpt-oss-20b-maas`\n* `kimi-k2-thinking-maas`\n* `llama-3.3-70b-instruct-maas`\n* `minimax-m2-maas`\n* `multilingual-e5-large-instruct-maas`\n* `multilingual-e5-small-maas`\n* `qwen3-235b-a22b-instruct-2507-maas`\n* `qwen3-coder-480b-a35b-instruct-maas`\n* `qwen3-next-80b-a3b-instruct-maas`\n* `qwen3-next-80b-a3b-thinking-maas`",
         "summary": {

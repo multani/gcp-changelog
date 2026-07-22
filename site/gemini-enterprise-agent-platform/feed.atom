@@ -9,7 +9,39 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:deprecated:0</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:feature:0</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini 3.6 Flash and 3.5 Flash-Lite are generally available (GA)</strong></p>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-6-flash">Gemini 3.6 Flash</a>
+and <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite">Gemini 3.5
+Flash-Lite</a> are
+now generally available (GA) and available for production use. These models are
+designed to improve upon their predecessors' capabilities, including improved
+token usage and improved document understanding. See the linked model
+information pages for more information.</p>
+<p>This release includes some potentially breaking changes from previous Flash and
+Flash-Lite models:</p>
+<ul>
+<li><strong>Sampling parameters</strong>: Custom values for temperature, top-K, and top-P are
+  not supported and will be ignored if set.</li>
+<li><strong>Penalty parameters</strong>: Custom values for frequency and presence penalty
+  parameters are not supported. Setting these will result in an API error.</li>
+<li><strong>API turn structure</strong>: API requests where the last input turn has a role of
+  <code>Model</code> are no longer supported and will return an error:</li>
+<li><strong>Interactions API</strong>: Requests where the last object in the input array
+    has <code>"type": "model_output"</code> will fail.</li>
+<li><strong>GenerateContent API</strong>: Requests where the last object in the contents
+    array has <code>"role": "model"</code> will fail.</li>
+</ul>]]></content>
+    <summary>Gemini 3.6 Flash and 3.5 Flash-Lite are now generally available for production use, offering enhanced capabilities for token usage and document understanding. Note that certain sampling and penalty parameters, along with specific API turn structures, are no longer supported in this release.</summary>
+    <title>Feature: Gemini 3.6 Flash and 3.5 Flash-Lite Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:deprecated:1</id>
     <published>2026-07-21T00:00:00+00:00</published>
     <updated>2026-07-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Open model endpoint deprecations</strong></p>

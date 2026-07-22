@@ -2,6 +2,32 @@
 
 ## 2026-07-21
 
+### Feature
+
+**Gemini 3.6 Flash and 3.5 Flash-Lite are generally available (GA)**
+
+[Gemini 3.6 Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-6-flash)
+and [Gemini 3.5
+Flash-Lite](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite) are
+now generally available (GA) and available for production use. These models are
+designed to improve upon their predecessors' capabilities, including improved
+token usage and improved document understanding. See the linked model
+information pages for more information.
+
+This release includes some potentially breaking changes from previous Flash and
+Flash-Lite models:
+
+* **Sampling parameters**: Custom values for temperature, top-K, and top-P are
+  not supported and will be ignored if set.
+* **Penalty parameters**: Custom values for frequency and presence penalty
+  parameters are not supported. Setting these will result in an API error.
+* **API turn structure**: API requests where the last input turn has a role of
+  `Model` are no longer supported and will return an error:
+  + **Interactions API**: Requests where the last object in the input array
+    has `"type": "model_output"` will fail.
+  + **GenerateContent API**: Requests where the last object in the contents
+    array has `"role": "model"` will fail.
+
 ### Deprecated
 
 **Open model endpoint deprecations**

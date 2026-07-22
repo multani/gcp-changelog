@@ -1,5 +1,36 @@
 # Gemini Enterprise
 
+## 2026-07-21
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.6 Flash available in the Global region**
+
+Gemini 3.6 Flash is available in the `global` region. To make Gemini 3.6 Flash
+available to users in the Gemini Enterprise app, administrators must turn on
+the **Gemini 3.6 Flash** feature toggle.
+
+Gemini 3.6 Flash is also available in Agent Designer workflow agents. Updates
+take up to a day to appear in workflow agents.
+
+For more information, see:
+
+* [Manage features on the web
+  app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Data residency for Gemini Enterprise Standard and Plus Editions and Gemini
+  Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+### Announcement
+
+**Gemini Enterprise: Gemini 3.5 Flash removal in the Global region**
+
+Gemini 3.5 Flash will be removed as a model from the `global` region in the
+Gemini Enterprise app on August 4, 2026.
+
+For more information, see [Manage features on the web
+app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-07-16
 
 ### Feature

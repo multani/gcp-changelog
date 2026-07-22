@@ -1,5 +1,14 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-07-20
+
+### Feature
+
+Cloud SQL for PostgreSQL now supports authentication via Secret Manager when executing SQL statements using the Data API (`executeSql`). You can store your database password in a regional secret in Secret Manager and pass the secret version resource name in your API request.
+
+For more information, see [Execute SQL statements on a Cloud SQL instance](https://docs.cloud.google.com/sql/docs/postgres/executesql-instance#configure-db-user).
+
+---
 ## 2026-06-24
 
 ### Change

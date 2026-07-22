@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-07-21
+
+### Feature
+
+**Generally available**: You can configure a regional managed instance group
+(MIG) to allow a VM repair in an alternate zone when the MIG can't repair the VM
+in its original zone. Repairing a VM in an alternate zone can help to improve
+your application's resiliency and resource obtainability. For more information,
+see [Repair a VM in an alternate zone](https://docs.cloud.google.com/compute/docs/instance-groups/repair-vm-in-alternate-zone).
+
+---
 ## 2026-07-20
 
 ### Deprecated

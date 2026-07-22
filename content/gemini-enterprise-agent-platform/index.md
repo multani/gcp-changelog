@@ -1,5 +1,33 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-07-21
+
+### Deprecated
+
+**Open model endpoint deprecations**
+
+The following open model endpoints are deprecated and will be retired on
+October 21, 2026. For more information, see [Open model
+deprecations](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/open-models).
+
+* `deepseek-ocr-maas`
+* `deepseek-r1-0528-maas`
+* `deepseek-v3.2-maas`
+* `deepseek-v3.1-maas`
+* `glm-5-maas`
+* `glm-4.7-maas`
+* `gpt-oss-20b-maas`
+* `kimi-k2-thinking-maas`
+* `llama-3.3-70b-instruct-maas`
+* `minimax-m2-maas`
+* `multilingual-e5-large-instruct-maas`
+* `multilingual-e5-small-maas`
+* `qwen3-235b-a22b-instruct-2507-maas`
+* `qwen3-coder-480b-a35b-instruct-maas`
+* `qwen3-next-80b-a3b-instruct-maas`
+* `qwen3-next-80b-a3b-thinking-maas`
+
+---
 ## 2026-07-20
 
 ### Security

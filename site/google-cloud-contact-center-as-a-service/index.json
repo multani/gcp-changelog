@@ -54,6 +54,14 @@
       },
       {
         "kind": "Feature",
+        "content": "**Emergency queue shutdown**\n\nYou can temporarily shut down a specific queue during unexpected events such as\nsystem issues, an unexpected staffing shortage, a building emergency, or\nunplanned maintenance. This lets you provide fast, controlled call deflection\nfor the affected queue without impacting the rest of your call center. You can\nshut down a queue using the CCAI Platform portal or programmatically, using the\n`/apps/api/v1/menus/shutdown` API.\n\nBy default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.\n\nAdministrators: We've made the following updates to the CCAI Platform portal:\n\n* In the **Settings > Queue > IVR (Interactive Voice\n  Response) > Edit / View > MENU\\_NAME >\n  Settings** pane, there's a new **Emergency Shutdown** section.\n* On the **Settings > Developer Settings > Audible\n  Messages** page, there's a new **Enable Remote Shutdown via API** toggle.\n\nFor more information, see [Emergency queue\nshutdown](https://docs.cloud.google.com/contact-center/ccai-platform/docs/emergency-queue-shutdown).",
+        "summary": {
+          "title": "Emergency Queue Shutdown",
+          "summary": "Temporarily shut down specific queues during emergencies to control call deflection without affecting other call center operations. This feature can be accessed via the CCAI Platform portal or programmatically."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Do Not Call capability in HubSpot**\n\nYou can configure your HubSpot integration to display **This number is on the Do\nNot Call list** in the call adapter when an agent initiates a call to a contact\nconfigured for Do Not Call (DNC). The agent can proceed with the DNC call if\nneeded. If the agent proceeds with the call, the following comment is logged in\nthe CRM: \"The contact is in TPS, the agent chose to proceed with the call.\"\n\nThis capability is for non-campaign outbound calls. It doesn't affect outbound\ncampaign calls.\n\nAdministrators: In the **Settings > Developer Settings >\nAgent Platform > HubSpot > Account Lookup** section,\nthere's a new **Do-Not-Call CRM Field** section.\n\nUser experience update: The call adapter displays **This number is on the Do Not\nCall list** when an agent initiates a call to a contact configured for DNC.\n\nFor more information, see [Do Not Call for\nHubSpot](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-do-not-call).",
         "summary": {
           "title": "HubSpot Do Not Call Feature",

@@ -1,5 +1,47 @@
 # Managed Service for Apache Spark
 
+## 2026-07-15
+
+### Announcement
+
+Announcing the [General Availability (GA)](https://cloud.google.com/products#product-launch-stages) release of Managed Service for Apache Spark cluster
+image version [`3.0`](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0),
+as follows:
+
+* `3.0.0-debian13`, `3.0.0-ml-ubuntu24`, `3.0.0-rocky9`, and `3.0.0-ubuntu24`.
+
+  + The `3.0.0-ml-ubuntu24` image extends the 3.0 base image with ML-specific libraries.
+
+Image version `3.0` is a lightweight image that contains the following
+pre-installed core components, reducing exposure to Common Vulnerabilities and Exposures (CVEs):
+
+* Apache Hadoop 3.5.0.
+* Apache Hive 4.2.0
+* Apache Spark 4.1.2
+* Apache Tez 0.10.5
+* Cloud Storage Connector 3.1.13
+* Conscrypt 2.6
+* Java 21
+* Python 3.12
+* R 4.5
+* Scala 2.13.17
+* Spark-BigQuery Connector 0.44.1-preview
+
+You can add
+[listed optional components](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0)
+when you create a `3.0` image version cluster.
+
+**Recommendation:** Use the `3.0` (and later) image versions to meet security
+compliance requirements.
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 2.3.34-debian12, 2.3.34-ml-ubuntu22, 2.3.34-rocky9, 2.3.34-ubuntu22, 2.3.34-ubuntu22-arm
+* 3.0.0-debian13, 3.0.0-ml-ubuntu24, 3.0.0-rocky9, 3.0.0-ubuntu24
+
+---
 ## 2026-07-13
 
 ### Feature

@@ -235,6 +235,30 @@ schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment
 
 ### Feature
 
+**Emergency queue shutdown**
+
+You can temporarily shut down a specific queue during unexpected events such as
+system issues, an unexpected staffing shortage, a building emergency, or
+unplanned maintenance. This lets you provide fast, controlled call deflection
+for the affected queue without impacting the rest of your call center. You can
+shut down a queue using the CCAI Platform portal or programmatically, using the
+`/apps/api/v1/menus/shutdown` API.
+
+By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.
+
+Administrators: We've made the following updates to the CCAI Platform portal:
+
+* In the **Settings > Queue > IVR (Interactive Voice
+  Response) > Edit / View > MENU\_NAME >
+  Settings** pane, there's a new **Emergency Shutdown** section.
+* On the **Settings > Developer Settings > Audible
+  Messages** page, there's a new **Enable Remote Shutdown via API** toggle.
+
+For more information, see [Emergency queue
+shutdown](https://docs.cloud.google.com/contact-center/ccai-platform/docs/emergency-queue-shutdown).
+
+### Feature
+
 **Do Not Call capability in HubSpot**
 
 You can configure your HubSpot integration to display **This number is on the Do

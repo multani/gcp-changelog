@@ -1,5 +1,16 @@
 # Virtual Private Cloud
 
+## 2026-07-21
+
+### Feature
+
+For Google Cloud resources that are registered as
+[App Hub](https://docs.cloud.google.com/app-hub/docs/overview)
+workloads or services, VPC Flow Logs records contain
+application-specific labels. For more information, see
+[App Hub labels](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#app-hub).
+
+---
 ## 2026-07-20
 
 ### Feature

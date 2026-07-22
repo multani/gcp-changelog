@@ -1,5 +1,14 @@
 # Cloud SQL for MySQL
 
+## 2026-07-20
+
+### Feature
+
+Cloud SQL for MySQL now supports authentication via Secret Manager when executing SQL statements using the Data API (`executeSql`). You can store your database password in a regional secret in Secret Manager and pass the secret version resource name in your API request.
+
+For more information, see [Execute SQL statements on a Cloud SQL instance](https://docs.cloud.google.com/sql/docs/mysql/executesql-instance#configure-db-user).
+
+---
 ## 2026-07-16
 
 ### Change

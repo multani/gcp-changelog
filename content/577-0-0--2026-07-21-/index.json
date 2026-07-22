@@ -1,0 +1,111 @@
+{
+  "name": "577.0.0 (2026-07-21)",
+  "entries": {
+    "2026-07-21": [
+      {
+        "kind": "Agent Identity",
+        "content": "* Promoted `gcloud agent-identity auth-providers` and `gcloud agent-identity access-summaries` to GA.",
+        "summary": {
+          "title": "Agent Identity GA Release",
+          "summary": "We are excited to announce that agent identity auth providers and access summaries have reached General Availability. This milestone signifies the full release and stability of these powerful features for managing and understanding agent access."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Modify flag `--no-enable-autoscaler` of `gcloud beta alloydb instances create|update` commands to only set the `enabled` field to `false` and not clear autoscaling config.\n* Modify `gcloud beta alloydb instances update` command to only allow one of\n  `--autoscaler-delete-schedule`, `--autoscaler-disable-schedule`,\n  `--autoscaler-enable-schedule`, or `--autoscaler-set-schedule` to be\n  specified.",
+        "summary": {
+          "title": "AlloyDB autoscaler updates",
+          "summary": "Updates to AlloyDB autoscaler commands are here. The --no-enable-autoscaler flag now only disables autoscaling, and update commands now restrict the use of schedule flags."
+        }
+      },
+      {
+        "kind": "Artifact Registry",
+        "content": "* Added `connector-repository` mode to `gcloud artifacts repositories create`.",
+        "summary": {
+          "title": "New Artifact Registry repository mode",
+          "summary": "You can now create connector repositories in Artifact Registry using `gcloud artifacts repositories create`. This new mode simplifies the management of your connected repositories."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Added support for `--s3_service_directory_service` flag to pass custom\n  Service Directory endpoints for AWS connection make and update operations.\n  This is used for routing traffic over a private network connection through\n  Cross-Cloud Interconnect.\n* Updated the data source of agent name value set in the user agent HTTP\n  header.\n* Stopped enforcing `bq init` when `--oauth_access_token` is provided.",
+        "summary": {
+          "title": "BigQuery enhancements for private AWS connections",
+          "summary": "BigQuery now supports custom Service Directory endpoints for AWS connections, enabling private network routing via Cross-Cloud Interconnect. This update also refines user agent information and relaxes the `bq init` enforcement with OAuth access tokens."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable",
+        "content": "* fix: cbt cli escape row keys and column qualifiers in printRow.",
+        "summary": {
+          "title": "Bigtable CLI Improvement",
+          "summary": "The Cloud Bigtable command-line interface now correctly handles special characters in row keys and column qualifiers when printing rows. This fix ensures accurate data display for all your Bigtable entries."
+        }
+      },
+      {
+        "kind": "Cloud Firestore Emulator",
+        "content": "* Release Cloud Firestore emulator v1.22.0\n  + Added DML support for the Firestore Pipelines API\n  + Added ability to model when composite indexes are required in Datastore mode using new `--require-indexes` and `--index-file` flags\n  + Added depreciation warning for JRE versions <25",
+        "summary": {
+          "title": "Firestore emulator update",
+          "summary": "The latest version of the Firestore emulator, v1.22.0, now includes Data Manipulation Language (DML) support for the Firestore Pipelines API. This update also introduces new flags to manage composite index requirements in Datastore mode and adds a depreciation warning for older Java Runtime Environment versions."
+        }
+      },
+      {
+        "kind": "Cloud Key Management Service",
+        "content": "* (GA) Added `--folder` flag to\n  `gcloud kms autokey-config show-effective-config` to retrieve the effective\n  Cloud KMS Autokey configuration for folders. The `--project` and `--folder`\n  flags are now optional, defaulting to the current project.",
+        "summary": {
+          "title": "KMS Autokey Configuration for Folders",
+          "summary": "Cloud Key Management Service now supports retrieving the effective Autokey configuration for folders using the `--folder` flag. This update makes the `--project` and `--folder` flags optional, defaulting to the current project for convenience."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Added `gcloud beta workstations suspend` and `gcloud alpha workstations suspend` commands.",
+        "summary": {
+          "title": "Cloud Workstations suspend command",
+          "summary": "You can now suspend and resume your Cloud Workstations using new gcloud commands. This feature allows for better cost management by pausing compute resources when not in use."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `gcloud compute machine-images test-iam-permissions` command to test IAM permissions on a Compute Engine machine image in beta, preview, and GA.\n* Promoted `regex_rewrite` support in `url_rewrite` block to beta for `gcloud compute url-maps`.\n* Promoted the following `gcloud compute routers` command groups to GA:\n  `add-named-set`, `add-named-set-element`, `download-named-set`,\n  `get-named-set`, `list-named-sets`, `remove-named-set`,\n  `remove-named-set-element`, and `upload-named-set`.\n* Added `gcloud compute health-sources test-iam-permissions` command to test IAM permissions on a health source.\n* Added `--logging-http-request-headers` and `--logging-http-response-headers`\n  flags to `gcloud compute backend-services create` and `update` commands to\n  configure Cloud Logging HTTP headers for external L7 load balancers.\n* Added `--local-ssd-encryption-mode` flag to `gcloud compute instances create` to specify the encryption mode for Local SSDs.\n* Deprecated customer-supplied encryption keys (CSEK) flags\n  `--csek-key-file`, `--require-csek-key-create`,\n  `--source-machine-image-csek-key-file`, `--source-disk-csek-key`,\n  `--source-disk-key-file`, and `--source-instant-snapshot-key-file` for\n  `gcloud compute` commands.",
+        "summary": {
+          "title": "Compute Engine updates",
+          "summary": "New commands for machine images and health sources are available in beta. Several router commands have been promoted to general availability, and new logging and encryption options have been added for backend services and local SSDs. Customer-supplied encryption keys flags are now deprecated."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Changed both `--config` flag on\n  `gcloud beta container fleet|hub config-management apply` command and\n  `--fleet-default-member-config` flag on\n  `gcloud beta container fleet|hub config-management enable` command to no\n  longer default `spec.upgrades: manual` population since auto-upgrades is no\n  longer supported from Config Sync version 1.21.0 and `spec.upgrades: manual`\n  is behaviorally equivalent to not setting this field.",
+        "summary": {
+          "title": "Config Management flag updates",
+          "summary": "The `--config` and `--fleet-default-member-config` flags in the `gcloud` Config Management commands have been updated. They no longer default to `spec.upgrades: manual` to align with changes in Config Sync version 1.21.0, where auto-upgrades are unsupported and this setting is equivalent to omitting the field."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Fix overwriting autoscaling settings in `gcloud container clusters update`.",
+        "summary": {
+          "title": "Kubernetes autoscaling settings fixed",
+          "summary": "A bug that caused autoscaling settings to be overwritten when updating Kubernetes Engine clusters with `gcloud container clusters update` has been resolved. This ensures that your autoscaling configurations are preserved."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Updated `gcloud beta network-security authz-policies import` to support `networkRules` and `snis` fields.",
+        "summary": {
+          "title": "Network security policy updates",
+          "summary": "The network security authorization policy import command has been updated to support networkRules and snis fields. This enhancement provides more granular control over network traffic security policies."
+        }
+      },
+      {
+        "kind": "Recaptcha",
+        "content": "* Added `--universal` option to `gcloud recaptcha keys create` and\n  `gcloud recaptcha keys update`.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Recaptcha key option updated",
+          "summary": "The `gcloud recaptcha keys create` and `gcloud recaptcha keys update` commands now support a `--universal` option. This update enhances the flexibility of managing Recaptcha keys."
+        }
+      }
+    ]
+  }
+}

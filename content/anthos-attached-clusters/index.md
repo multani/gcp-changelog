@@ -1,5 +1,16 @@
 # Anthos Attached Clusters
 
+## 2026-07-21
+
+### Announcement
+
+You can now launch clusters with the following Kubernetes versions. Click on the following links to see the release notes associated with these patches:
+
+* [1.35.0-gke.1](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/attached/aks/reference/supported-versions#1350-gke1)
+* [1.34.0-gke.2](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/attached/aks/reference/supported-versions#1340-gke2)
+* [1.33.0-gke.3](https://cloud.google.com/kubernetes-engine/multi-cloud/docs/attached/aks/reference/supported-versions#1330-gke3)
+
+---
 ## 2026-02-10
 
 ### Announcement

@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 577.0.0 (2026-07-21)</title>
+  <subtitle>Changelog for Google Cloud product: 577.0.0 (2026-07-21)</subtitle>
+  <updated>2026-07-21T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/577-0-0--2026-07-21-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:agent identity:0</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud agent-identity auth-providers</code> and <code>gcloud agent-identity access-summaries</code> to GA.</li>
+</ul>]]></content>
+    <summary>We are excited to announce that agent identity auth providers and access summaries have reached General Availability. This milestone signifies the full release and stability of these powerful features for managing and understanding agent access.</summary>
+    <title>Agent Identity: Agent Identity GA Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:alloydb:1</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Modify flag <code>--no-enable-autoscaler</code> of <code>gcloud beta alloydb instances create|update</code> commands to only set the <code>enabled</code> field to <code>false</code> and not clear autoscaling config.</li>
+<li>Modify <code>gcloud beta alloydb instances update</code> command to only allow one of
+  <code>--autoscaler-delete-schedule</code>, <code>--autoscaler-disable-schedule</code>,
+  <code>--autoscaler-enable-schedule</code>, or <code>--autoscaler-set-schedule</code> to be
+  specified.</li>
+</ul>]]></content>
+    <summary>Updates to AlloyDB autoscaler commands are here. The --no-enable-autoscaler flag now only disables autoscaling, and update commands now restrict the use of schedule flags.</summary>
+    <title>AlloyDB: AlloyDB autoscaler updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:artifact registry:2</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>connector-repository</code> mode to <code>gcloud artifacts repositories create</code>.</li>
+</ul>]]></content>
+    <summary>You can now create connector repositories in Artifact Registry using `gcloud artifacts repositories create`. This new mode simplifies the management of your connected repositories.</summary>
+    <title>Artifact Registry: New Artifact Registry repository mode</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:bigquery:3</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for <code>--s3_service_directory_service</code> flag to pass custom
+  Service Directory endpoints for AWS connection make and update operations.
+  This is used for routing traffic over a private network connection through
+  Cross-Cloud Interconnect.</li>
+<li>Updated the data source of agent name value set in the user agent HTTP
+  header.</li>
+<li>Stopped enforcing <code>bq init</code> when <code>--oauth_access_token</code> is provided.</li>
+</ul>]]></content>
+    <summary>BigQuery now supports custom Service Directory endpoints for AWS connections, enabling private network routing via Cross-Cloud Interconnect. This update also refines user agent information and relaxes the `bq init` enforcement with OAuth access tokens.</summary>
+    <title>BigQuery: BigQuery enhancements for private AWS connections</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:cloud bigtable:4</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>fix: cbt cli escape row keys and column qualifiers in printRow.</li>
+</ul>]]></content>
+    <summary>The Cloud Bigtable command-line interface now correctly handles special characters in row keys and column qualifiers when printing rows. This fix ensures accurate data display for all your Bigtable entries.</summary>
+    <title>Cloud Bigtable: Bigtable CLI Improvement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:cloud firestore emulator:5</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Release Cloud Firestore emulator v1.22.0</li>
+<li>Added DML support for the Firestore Pipelines API</li>
+<li>Added ability to model when composite indexes are required in Datastore mode using new <code>--require-indexes</code> and <code>--index-file</code> flags</li>
+<li>Added depreciation warning for JRE versions &lt;25</li>
+</ul>]]></content>
+    <summary>The latest version of the Firestore emulator, v1.22.0, now includes Data Manipulation Language (DML) support for the Firestore Pipelines API. This update also introduces new flags to manage composite index requirements in Datastore mode and adds a depreciation warning for older Java Runtime Environment versions.</summary>
+    <title>Cloud Firestore Emulator: Firestore emulator update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:cloud key management service:6</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>(GA) Added <code>--folder</code> flag to
+  <code>gcloud kms autokey-config show-effective-config</code> to retrieve the effective
+  Cloud KMS Autokey configuration for folders. The <code>--project</code> and <code>--folder</code>
+  flags are now optional, defaulting to the current project.</li>
+</ul>]]></content>
+    <summary>Cloud Key Management Service now supports retrieving the effective Autokey configuration for folders using the `--folder` flag. This update makes the `--project` and `--folder` flags optional, defaulting to the current project for convenience.</summary>
+    <title>Cloud Key Management Service: KMS Autokey Configuration for Folders</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:cloud workstations:7</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta workstations suspend</code> and <code>gcloud alpha workstations suspend</code> commands.</li>
+</ul>]]></content>
+    <summary>You can now suspend and resume your Cloud Workstations using new gcloud commands. This feature allows for better cost management by pausing compute resources when not in use.</summary>
+    <title>Cloud Workstations: Cloud Workstations suspend command</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:compute engine:8</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud compute machine-images test-iam-permissions</code> command to test IAM permissions on a Compute Engine machine image in beta, preview, and GA.</li>
+<li>Promoted <code>regex_rewrite</code> support in <code>url_rewrite</code> block to beta for <code>gcloud compute url-maps</code>.</li>
+<li>Promoted the following <code>gcloud compute routers</code> command groups to GA:
+  <code>add-named-set</code>, <code>add-named-set-element</code>, <code>download-named-set</code>,
+  <code>get-named-set</code>, <code>list-named-sets</code>, <code>remove-named-set</code>,
+  <code>remove-named-set-element</code>, and <code>upload-named-set</code>.</li>
+<li>Added <code>gcloud compute health-sources test-iam-permissions</code> command to test IAM permissions on a health source.</li>
+<li>Added <code>--logging-http-request-headers</code> and <code>--logging-http-response-headers</code>
+  flags to <code>gcloud compute backend-services create</code> and <code>update</code> commands to
+  configure Cloud Logging HTTP headers for external L7 load balancers.</li>
+<li>Added <code>--local-ssd-encryption-mode</code> flag to <code>gcloud compute instances create</code> to specify the encryption mode for Local SSDs.</li>
+<li>Deprecated customer-supplied encryption keys (CSEK) flags
+  <code>--csek-key-file</code>, <code>--require-csek-key-create</code>,
+  <code>--source-machine-image-csek-key-file</code>, <code>--source-disk-csek-key</code>,
+  <code>--source-disk-key-file</code>, and <code>--source-instant-snapshot-key-file</code> for
+  <code>gcloud compute</code> commands.</li>
+</ul>]]></content>
+    <summary>New commands for machine images and health sources are available in beta. Several router commands have been promoted to general availability, and new logging and encryption options have been added for backend services and local SSDs. Customer-supplied encryption keys flags are now deprecated.</summary>
+    <title>Compute Engine: Compute Engine updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:gke hub:9</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Changed both <code>--config</code> flag on
+  <code>gcloud beta container fleet|hub config-management apply</code> command and
+  <code>--fleet-default-member-config</code> flag on
+  <code>gcloud beta container fleet|hub config-management enable</code> command to no
+  longer default <code>spec.upgrades: manual</code> population since auto-upgrades is no
+  longer supported from Config Sync version 1.21.0 and <code>spec.upgrades: manual</code>
+  is behaviorally equivalent to not setting this field.</li>
+</ul>]]></content>
+    <summary>The `--config` and `--fleet-default-member-config` flags in the `gcloud` Config Management commands have been updated. They no longer default to `spec.upgrades: manual` to align with changes in Config Sync version 1.21.0, where auto-upgrades are unsupported and this setting is equivalent to omitting the field.</summary>
+    <title>GKE Hub: Config Management flag updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:kubernetes engine:10</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fix overwriting autoscaling settings in <code>gcloud container clusters update</code>.</li>
+</ul>]]></content>
+    <summary>A bug that caused autoscaling settings to be overwritten when updating Kubernetes Engine clusters with `gcloud container clusters update` has been resolved. This ensures that your autoscaling configurations are preserved.</summary>
+    <title>Kubernetes Engine: Kubernetes autoscaling settings fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:network security:11</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud beta network-security authz-policies import</code> to support <code>networkRules</code> and <code>snis</code> fields.</li>
+</ul>]]></content>
+    <summary>The network security authorization policy import command has been updated to support networkRules and snis fields. This enhancement provides more granular control over network traffic security policies.</summary>
+    <title>Network Security: Network security policy updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:577-0-0--2026-07-21-:2026-07-21:recaptcha:12</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--universal</code> option to <code>gcloud recaptcha keys create</code> and
+  <code>gcloud recaptcha keys update</code>.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>The `gcloud recaptcha keys create` and `gcloud recaptcha keys update` commands now support a `--universal` option. This update enhances the flexibility of managing Recaptcha keys.</summary>
+    <title>Recaptcha: Recaptcha key option updated</title>
+  </entry>
+</feed>

@@ -1,5 +1,13 @@
 # Cloud Service Mesh
 
+## 2026-07-21
+
+### Feature
+
+The [Envoy Lua Filter](https://docs.cloud.google.com/service-mesh/docs/data-plane-extensibility#typegoogleapiscomenvoyextensionsfiltershttpluav3lua)
+is now available as a preview feature in the stable release channel.
+
+---
 ## 2026-07-15
 
 ### Announcement

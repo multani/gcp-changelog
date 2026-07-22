@@ -1,6 +1,24 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-07-15": [
+      {
+        "kind": "Announcement",
+        "content": "Announcing the [General Availability (GA)](https://cloud.google.com/products#product-launch-stages) release of Managed Service for Apache Spark cluster\nimage version [`3.0`](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0),\nas follows:\n\n* `3.0.0-debian13`, `3.0.0-ml-ubuntu24`, `3.0.0-rocky9`, and `3.0.0-ubuntu24`.\n\n  + The `3.0.0-ml-ubuntu24` image extends the 3.0 base image with ML-specific libraries.\n\nImage version `3.0` is a lightweight image that contains the following\npre-installed core components, reducing exposure to Common Vulnerabilities and Exposures (CVEs):\n\n* Apache Hadoop 3.5.0.\n* Apache Hive 4.2.0\n* Apache Spark 4.1.2\n* Apache Tez 0.10.5\n* Cloud Storage Connector 3.1.13\n* Conscrypt 2.6\n* Java 21\n* Python 3.12\n* R 4.5\n* Scala 2.13.17\n* Spark-BigQuery Connector 0.44.1-preview\n\nYou can add\n[listed optional components](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0)\nwhen you create a `3.0` image version cluster.\n\n**Recommendation:** Use the `3.0` (and later) image versions to meet security\ncompliance requirements.",
+        "summary": {
+          "title": "Managed Service for Apache Spark 3.0 GA",
+          "summary": "Managed Service for Apache Spark is now generally available with image version 3.0. This release offers lightweight images with pre-installed core components and enhanced security features. You can also add optional components for customized deployments."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):\n\n* 2.3.34-debian12, 2.3.34-ml-ubuntu22, 2.3.34-rocky9, 2.3.34-ubuntu22, 2.3.34-ubuntu22-arm\n* 3.0.0-debian13, 3.0.0-ml-ubuntu24, 3.0.0-rocky9, 3.0.0-ubuntu24",
+        "summary": {
+          "title": "New Apache Spark Image Versions Available",
+          "summary": "Managed Service for Apache Spark now supports new image versions, including releases based on Debian 12 and 13, Ubuntu 22 and 24, and Rocky 9. These updates provide the latest features and security patches for your Spark workloads."
+        }
+      }
+    ],
     "2026-07-13": [
       {
         "kind": "Feature",

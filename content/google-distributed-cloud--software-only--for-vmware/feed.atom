@@ -49,6 +49,21 @@ gcloud CLI, and Terraform.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-07-22:fixed:2</id>
     <published>2026-07-22T00:00:00+00:00</published>
     <updated>2026-07-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.34.700-gke.93:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue where upgrading a user cluster with Anthos Network Gateway (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the upgrade process attempted to modify immutable <code>spec.selector</code> fields on existing ANG resources. The upgrade operator now preserves existing label selectors during reconciliation so that V1 to V2 cluster migrations complete successfully.</li>
+</ul>]]></content>
+    <summary>This release addresses security vulnerabilities and resolves an issue with user cluster upgrades when Anthos Network Gateway is enabled, ensuring smoother migrations.</summary>
+    <title>Fixed: Security and upgrade fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-07-22:fixed:3</id>
+    <published>2026-07-22T00:00:00+00:00</published>
+    <updated>2026-07-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.300-gke.87:</p>
 <ul>
 <li>Fixed an issue where upgrading a user cluster with Anthos Network Gateway (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the upgrade process attempted to modify immutable <code>spec.selector</code> fields on existing ANG resources. The upgrade operator now preserves existing label selectors during reconciliation so that V1 to V2 cluster migrations complete successfully.</li>

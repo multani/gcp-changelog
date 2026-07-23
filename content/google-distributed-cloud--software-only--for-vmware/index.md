@@ -31,6 +31,13 @@ gcloud CLI, and Terraform.
 
 ### Fixed
 
+The following issues were fixed in 1.34.700-gke.93:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where upgrading a user cluster with Anthos Network Gateway (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the upgrade process attempted to modify immutable `spec.selector` fields on existing ANG resources. The upgrade operator now preserves existing label selectors during reconciliation so that V1 to V2 cluster migrations complete successfully.
+
+### Fixed
+
 The following issues were fixed in 1.35.300-gke.87:
 
 * Fixed an issue where upgrading a user cluster with Anthos Network Gateway (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the upgrade process attempted to modify immutable `spec.selector` fields on existing ANG resources. The upgrade operator now preserves existing label selectors during reconciliation so that V1 to V2 cluster migrations complete successfully.

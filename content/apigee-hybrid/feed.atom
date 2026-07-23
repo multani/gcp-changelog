@@ -2,9 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee hybrid</title>
   <subtitle>Changelog for Google Cloud product: Apigee hybrid</subtitle>
-  <updated>2026-07-15T00:00:00+00:00</updated>
+  <updated>2026-07-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-23:announcement:0</id>
+    <published>2026-07-23T00:00:00+00:00</published>
+    <updated>2026-07-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are excited to announce the release of several new features designed to enhance your experience. These updates include improvements to performance and usability, along with new tools to help you achieve your goals more effectively.</summary>
+    <title>Announcement: New Features Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-23:v1.14.7:1</id>
+    <published>2026-07-23T00:00:00+00:00</published>
+    <updated>2026-07-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On July 23, 2026 we released an updated version of the Apigee hybrid software, v1.14.7.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/upgrade">Upgrading Apigee hybrid to version 1.14</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
+    <summary>The latest version of Apigee hybrid, v1.14.7, was released on July 23, 2026. This patch release includes updated container images integrated with the Apigee hybrid Helm charts. Refer to the upgrade and installation guides for more details.</summary>
+    <title>v1.14.7: Apigee hybrid v1.14.7 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-23:feature:2</id>
+    <published>2026-07-23T00:00:00+00:00</published>
+    <updated>2026-07-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Runtime rollout strategy configuration</strong></p>
+<p>In this release, you can configure the rollout strategy used when updating runtime (message processor) ReplicaSets by setting the <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/config-prop-ref#runtime-release-strategy"><code>runtime.release.strategy</code></a> property (with options <code>rolling</code>, <code>scale-down-first</code>, or <code>none</code>) or per-environment with <code>envs[].components.runtime.release.strategy</code> in your overrides configuration file. The property defaults to <code>rolling</code>.</p>]]></content>
+    <summary>You can now configure the rollout strategy for updating runtime ReplicaSets. Choose between 'rolling', 'scale-down-first', or 'none' to manage your updates effectively. This setting can be applied globally or on a per-environment basis.</summary>
+    <title>Feature: Configure runtime rollout strategy</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-23:security:3</id>
+    <published>2026-07-23T00:00:00+00:00</published>
+    <updated>2026-07-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Various security and CVE fixes are included in this release.</p>]]></content>
+    <summary>This release includes important security updates and fixes for various known vulnerabilities. It is recommended to update to the latest version to ensure your system is protected.</summary>
+    <title>Security: Security and Bug Fixes Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

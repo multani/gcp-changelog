@@ -1,5 +1,63 @@
 # Google SecOps Marketplace
 
+## 2026-07-22
+
+### Feature
+
+**Wiz**: Version 14.0
+
+* Added the following action:
+
+  + **Get Blue Agent Analysis**
+
+### Feature
+
+**SentinelOne Singularity Operations Center**: Version 1.0
+
+* Added **SentinelOne Singularity Operations Center** integration.
+
+### Feature
+
+**Proofpoint Email Protection**: Version 10.0
+
+* Added the following action:
+
+  + **Download Quarantined Email**
+
+### Change
+
+**Azure Monitor**: Version 5.0
+
+* Updated integration documentation links in the integration configuration.
+
+### Change
+
+**QRadar**: Version 69.0
+
+* Updated timestamp filtering to use `last_persisted_time` for tracking
+  modifications in the following connector:
+
+  + **Qradar Offenses Connector**
+
+### Change
+
+**Jira**: Version 60.0
+
+* Added support for the `Created Before` date filter and `Custom JQL` query
+  parameter in the following action:
+
+  + **List Issues**
+
+### Change
+
+**Google Chronicle**: Version 90.0
+
+* Updated handling of Wiz Defend detections and ontology mapping in the
+  following connector:
+
+  + **Chronicle Alerts Connector**
+
+---
 ## 2026-07-15
 
 ### Change

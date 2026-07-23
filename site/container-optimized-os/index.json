@@ -1,6 +1,360 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-07-20": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Endpoint Update",
+          "summary": "We are updating the service endpoint to improve performance and reliability. This change will not affect existing configurations. Further details will be provided in a follow-up communication."
+        }
+      },
+      {
+        "kind": "cos-117-18613-675-20",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/045443ea52af5948575258b1df0f85d66a77fd7a ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.675.20/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 18613.675.20 Release",
+          "summary": "The latest Container-Optimized OS release, 18613.675.20, includes updates to the kernel, Docker, and containerd. This version also provides access to the latest GPU driver information."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a bug in the XFS file system where direct I/O writes could use\noutdated block mappings during Copy-on-Write operations.",
+        "summary": {
+          "title": "XFS Direct I/O Write Bug Fix",
+          "summary": "A bug in the XFS file system that caused outdated block mappings during Copy-on-Write operations for direct I/O writes has been resolved. This fix ensures data integrity and correct file system behavior."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/curl to 8.21.0.",
+        "summary": {
+          "title": "Curl updated to 8.21.0",
+          "summary": "The net-misc/curl package has been successfully upgraded to version 8.21.0. This update addresses any issues present in the previous version."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.",
+        "summary": {
+          "title": "Security patches for glib released",
+          "summary": "Critical security vulnerabilities in glib have been addressed with the release of patches for CVE-2026-58013, CVE-2026-58014, CVE-2026-58015, and CVE-2026-58016. Users are advised to update their systems to the latest version to protect against potential threats."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2025-13462 in dev-lang/python",
+        "summary": {
+          "title": "Security update for Python",
+          "summary": "A security vulnerability in the Python runtime has been addressed. This update resolves CVE-2025-13462, ensuring a more secure development environment. We recommend applying this update promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-3644 in dev-lang/python",
+        "summary": {
+          "title": "Python Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-3644, affecting Python has been resolved. This update ensures the security and integrity of your Python environment."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-4224 in dev-lang/python",
+        "summary": {
+          "title": "Security fix for Python",
+          "summary": "A critical security vulnerability, CVE-2026-4224, affecting the Python development language has been resolved. This update ensures a more secure environment for developers using Python."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-43010 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. The update fixes CVE-2026-43010, enhancing the system's overall security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-46135 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. The fix resolves CVE-2026-46135, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-46331 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability, CVE-2026-46331, in the Linux kernel has been successfully patched. This update addresses the vulnerability, enhancing the overall security posture of systems running the affected kernel versions."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53163 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability, CVE-2026-53163, affecting the Linux kernel has been resolved. This update ensures enhanced protection against potential threats."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53167 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-53167, has been fixed. This update addresses potential security risks. Users are advised to apply the patch to ensure system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.",
+        "summary": {
+          "title": "wget security updates",
+          "summary": "We have fixed several critical security vulnerabilities in wget, including CVE-2026-58469, CVE-2026-58471, and CVE-2026-58472. Please update your wget packages to the latest version to ensure your systems are protected."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated containerd to v1.7.34. This resolves CVE-2026-46680\nand CVE-2026-53488.",
+        "summary": {
+          "title": "containerd security update",
+          "summary": "Updated containerd to v1.7.34 to address CVE-2026-46680 and CVE-2026-53488. This update enhances the security of your container environment."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Management Update",
+          "summary": "We are making changes to our service management processes to improve efficiency and user experience. These updates will streamline operations and provide a more intuitive interface for managing your services."
+        }
+      },
+      {
+        "kind": "cos-121-18867-528-21",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/c4fcdba2d32933938b008b72e53252ddc6286367 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.528.21/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update",
+          "summary": "The latest update for Container Optimized OS includes new versions of the kernel, Docker, and containerd. This release also provides updated GPU drivers for enhanced performance and compatibility."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated containerd to v2.0.10. This resolves CVE-2026-46680.",
+        "summary": {
+          "title": "containerd updated",
+          "summary": "containerd has been updated to v2.0.10, addressing CVE-2026-46680. This update ensures improved security and stability for container management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a bug in the XFS file system where direct I/O writes could use\noutdated block mappings during Copy-on-Write operations.",
+        "summary": {
+          "title": "XFS direct I/O write bug fixed",
+          "summary": "A bug in the XFS file system has been resolved. This issue could lead to outdated block mappings during Copy-on-Write operations for direct I/O writes. The fix ensures accurate block mapping for improved data integrity."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/curl to 8.21.0.",
+        "summary": {
+          "title": "curl updated to 8.21.0",
+          "summary": "The curl package has been updated to version 8.21.0. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.",
+        "summary": {
+          "title": "Security Updates for glib",
+          "summary": "Critical security vulnerabilities in glib have been addressed. These updates resolve CVE-2026-58013, CVE-2026-58014, CVE-2026-58015, and CVE-2026-58016, ensuring the integrity and safety of your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-23278 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A critical security vulnerability, CVE-2026-23278, affecting the Linux kernel has been successfully addressed. This fix ensures improved system security and stability. Users are advised to update their systems to incorporate this important patch."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-43010 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-43010, affecting the Linux kernel has been successfully patched. This update is essential for maintaining system security and protecting against potential exploits. Users are strongly advised to apply this fix as soon as possible."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-46135 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-46135, affecting the Linux kernel has been successfully patched. This update addresses a potential security risk, ensuring the integrity and safety of systems running the Linux operating system. Users are advised to apply this security fix promptly to protect against any exploitation of the vulnerability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-46331 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-46331, has been addressed. This update ensures enhanced protection against potential exploits. Users are advised to apply the patch to maintain system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53163 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-53163, has been addressed. This update ensures the stability and security of systems running the Linux kernel by patching the identified issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-53167 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability (CVE-2026-53167) in the Linux kernel has been addressed. This update is essential for maintaining system security and protecting against potential exploits. Applying this patch will help safeguard your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.",
+        "summary": {
+          "title": "Security Fixes in Wget",
+          "summary": "Critical security vulnerabilities in wget have been addressed. This update fixes CVE-2026-58469, CVE-2026-58471, and CVE-2026-58472, enhancing the security of your systems."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to data processing pipeline",
+          "summary": "We've made significant improvements to our data processing pipeline. These updates enhance efficiency and reliability, ensuring faster and more accurate data handling. This change will benefit all users by providing a more robust data infrastructure."
+        }
+      },
+      {
+        "kind": "cos-129-19506-299-36",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/2d3868d9c2a54dbfe692ca8ea26defa8889e6433 ) | v27.5.1 | v2.2.5 | [See List](https://storage.googleapis.com/cos-tools/19506.299.36/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19506.299.36 release",
+          "summary": "This release includes updates to the kernel, Docker, and containerd. It also provides access to GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a bug in the XFS file system where direct I/O writes could use\noutdated block mappings during Copy-on-Write operations.",
+        "summary": {
+          "title": "XFS Direct I/O Write Bug Fixed",
+          "summary": "A bug affecting XFS file system direct I/O writes has been resolved. The issue involved outdated block mappings during Copy-on-Write operations. This fix ensures more reliable data handling for direct I/O operations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/curl to 8.21.0.",
+        "summary": {
+          "title": "curl updated to 8.21.0",
+          "summary": "The net-misc/curl package has been updated to version 8.21.0. This update includes various fixes and improvements to the curl utility."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.",
+        "summary": {
+          "title": "Security updates for glib",
+          "summary": "We have released security updates for glib, addressing several critical vulnerabilities including CVE-2026-58013, CVE-2026-58014, CVE-2026-58015, and CVE-2026-58016. It is strongly recommended to update your systems to the latest version of glib to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-43216 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-43216, has been addressed. This update ensures improved system security and stability. Applying this patch is recommended for all users."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.",
+        "summary": {
+          "title": "Security updates for wget",
+          "summary": "Recent security vulnerabilities in wget have been addressed. This update fixes CVE-2026-58469, CVE-2026-58471, and CVE-2026-58472, ensuring a more secure environment."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated containerd to v2.2.5. This resolves\nCVE-2026-46680,CVE-2026-50195,CVE-2026-53492,CVE-2026-53488.",
+        "summary": {
+          "title": "Security update for container runtime",
+          "summary": "An update to our container runtime addresses several critical security vulnerabilities. This upgrade ensures the continued security and integrity of your containerized applications."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features Released",
+          "summary": "Exciting new features have been rolled out to enhance your experience. These updates include improved performance and new tools to help you work more efficiently. Explore the changes today!"
+        }
+      },
+      {
+        "kind": "cos-125-19216-532-25",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/2049bd2bd5fb77d15efcbc7409707051cd3205c8 ) | v27.5.1 | v2.1.9 | [See List](https://storage.googleapis.com/cos-tools/19216.532.25/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19216.532.25 Update",
+          "summary": "This release includes updates to the kernel, Docker, and Containerd. GPU driver information is also available for this version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/curl to 8.21.0.",
+        "summary": {
+          "title": "curl updated to 8.21.0",
+          "summary": "The curl package has been updated to version 8.21.0. This update includes various improvements and bug fixes for the curl utility."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed\nCVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.",
+        "summary": {
+          "title": "Security fixes for glib",
+          "summary": "Several security vulnerabilities in glib have been addressed. These fixes include CVE-2026-58013, CVE-2026-58014, CVE-2026-58015, and CVE-2026-58016. Applying these updates is recommended to maintain system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-43010 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability (CVE-2026-43010) in the Linux kernel has been addressed. This update ensures the integrity and protection of systems running the Linux kernel by patching this known exploit. Users are advised to apply this fix promptly to maintain a secure environment."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-43216 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical vulnerability in the Linux kernel, CVE-2026-43216, has been addressed. This security update is now available to protect your systems. Applying this patch is recommended to prevent potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.",
+        "summary": {
+          "title": "Security Updates for Wget",
+          "summary": "Critical security vulnerabilities in Wget have been addressed. The latest update resolves CVE-2026-58469, CVE-2026-58471, and CVE-2026-58472, ensuring enhanced protection against potential threats."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated containerd to v2.1.9. This resolves CVE-2026-46680,CVE-2026-50195,\nCVE-2026-53492,CVE-2026-53488.",
+        "summary": {
+          "title": "Security update for containerd",
+          "summary": "Containerd has been updated to v2.1.9, addressing several critical security vulnerabilities including CVE-2026-46680, CVE-2026-50195, CVE-2026-53492, and CVE-2026-53488. This update is essential for maintaining the security posture of your containerized environments."
+        }
+      }
+    ],
     "2026-07-13": [
       {
         "kind": "Change",

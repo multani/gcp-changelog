@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-07-22
+
+### Feature
+
+**Gemini Enterprise: Support for unauthenticated Custom MCP Server data stores (Preview)**
+
+When setting up a Custom MCP Server data store, you can
+select **No authentication** if your Model Context Protocol (MCP) server doesn't
+require authentication.
+
+Creating a custom MCP Server data store is in Public Preview.
+For more information, see [Set up a custom MCP
+server](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server).
+
+---
 ## 2026-07-21
 
 ### Feature

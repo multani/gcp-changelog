@@ -1,5 +1,203 @@
 # Container Optimized OS
 
+## 2026-07-20
+
+### Change
+
+
+
+### cos-117-18613-675-20
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/045443ea52af5948575258b1df0f85d66a77fd7a ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.675.20/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a bug in the XFS file system where direct I/O writes could use
+outdated block mappings during Copy-on-Write operations.
+
+### Fixed
+
+Upgraded net-misc/curl to 8.21.0.
+
+### Security
+
+Fixed CVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.
+
+### Security
+
+Fixed CVE-2025-13462 in dev-lang/python
+
+### Security
+
+Fixed CVE-2026-3644 in dev-lang/python
+
+### Security
+
+Fixed CVE-2026-4224 in dev-lang/python
+
+### Security
+
+Fixed CVE-2026-43010 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46331 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53163 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53167 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.
+
+### Security
+
+Updated containerd to v1.7.34. This resolves CVE-2026-46680
+and CVE-2026-53488.
+
+### Change
+
+
+
+### cos-121-18867-528-21
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/c4fcdba2d32933938b008b72e53252ddc6286367 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.528.21/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated containerd to v2.0.10. This resolves CVE-2026-46680.
+
+### Fixed
+
+Fixed a bug in the XFS file system where direct I/O writes could use
+outdated block mappings during Copy-on-Write operations.
+
+### Fixed
+
+Upgraded net-misc/curl to 8.21.0.
+
+### Security
+
+Fixed CVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.
+
+### Security
+
+Fixed CVE-2026-23278 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43010 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46135 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-46331 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53163 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53167 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.
+
+### Change
+
+
+
+### cos-129-19506-299-36
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/2d3868d9c2a54dbfe692ca8ea26defa8889e6433 ) | v27.5.1 | v2.2.5 | [See List](https://storage.googleapis.com/cos-tools/19506.299.36/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed a bug in the XFS file system where direct I/O writes could use
+outdated block mappings during Copy-on-Write operations.
+
+### Fixed
+
+Upgraded net-misc/curl to 8.21.0.
+
+### Security
+
+Fixed CVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.
+
+### Security
+
+Fixed CVE-2026-43216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.
+
+### Security
+
+Updated containerd to v2.2.5. This resolves
+CVE-2026-46680,CVE-2026-50195,CVE-2026-53492,CVE-2026-53488.
+
+### Change
+
+
+
+### cos-125-19216-532-25
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/2049bd2bd5fb77d15efcbc7409707051cd3205c8 ) | v27.5.1 | v2.1.9 | [See List](https://storage.googleapis.com/cos-tools/19216.532.25/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Upgraded net-misc/curl to 8.21.0.
+
+### Security
+
+Fixed
+CVE-2026-58013,CVE-2026-58014,CVE-2026-58015,CVE-2026-58016 in glib.
+
+### Security
+
+Fixed CVE-2026-43010 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-43216 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-58469, CVE-2026-58471, CVE-2026-58472 in net-misc/wget.
+
+### Security
+
+Updated containerd to v2.1.9. This resolves CVE-2026-46680,CVE-2026-50195,
+CVE-2026-53492,CVE-2026-53488.
+
+---
 ## 2026-07-13
 
 ### Change

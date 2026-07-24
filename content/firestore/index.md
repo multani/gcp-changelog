@@ -1,5 +1,20 @@
 # Firestore
 
+## 2026-07-20
+
+### Feature
+
+You can now view, manage, and deploy Firestore Security Rules directly in the
+Google Cloud console for Firestore in Native mode (Standard and Enterprise
+editions). You can create new rulesets and clone or restore rulesets from the
+timeline.
+
+To learn more, see
+[Manage Firestore Security Rules](https://docs.cloud.google.com/firestore/native/docs/using-console#manage-firestore-security-rules)
+or
+[Use the Google Cloud console](https://docs.cloud.google.com/firestore/native/docs/security/get-started#use-the-cloud-console).
+
+---
 ## 2026-06-01
 
 ### Feature

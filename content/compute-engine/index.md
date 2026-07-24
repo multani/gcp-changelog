@@ -1,5 +1,19 @@
 # Compute Engine
 
+## 2026-07-24
+
+### Feature
+
+You can observe real-time virtual machine (VM) distribution across zones,
+machine types, and instance states in your managed instance groups (MIGs) by
+using the **GCE MIG Instance Distribution Monitoring** dashboard in
+Cloud Monitoring. When your group uses location flexibility across zones,
+instance flexibility across machine types, or both, this visibility helps you
+monitor capacity allocation and diagnose runtime fallback behavior. For more
+information, see
+[Monitor instance distribution in MIGs](https://docs.cloud.google.com/compute/docs/instance-groups/monitor-instance-distribution).
+
+---
 ## 2026-07-21
 
 ### Feature

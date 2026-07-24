@@ -75,6 +75,18 @@ that destination hostnames for the `/api-proxy` endpoint end with allowed Google
 Cloud domains, such as `*-aiplatform.clients6.google.com`
 
 ---
+## 2026-07-17
+
+### Breaking
+
+**Gemini 3.1 Flash Image Preview and 3 Pro Image Preview are retired**
+
+The Nano Banana preview models `gemini-3.1-flash-image-preview` and
+`gemini-3-pro-image-preview` have been retired and are no longer accessible.
+Update your code to use either `gemini-3.1-flash-image` or
+`gemini-3-flash-image` instead.
+
+---
 ## 2026-07-15
 
 ### Feature

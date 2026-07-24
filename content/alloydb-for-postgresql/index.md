@@ -1,5 +1,18 @@
 # AlloyDB for PostgreSQL
 
+## 2026-07-23
+
+### Feature
+
+Transparent query forwarding is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages) for clusters compatible with PostgreSQL 17 and 18. With this
+feature, the primary node in a cluster intercepts read-only queries and
+selectively forwards them to read pool instances while maintaining
+read-your-writes consistency.
+
+For more information, see [Optimize resources and isolate read queries with transparent query forwarding](https://docs.cloud.google.com/alloydb/docs/transparent-query-forwarding).
+
+---
 ## 2026-07-08
 
 ### Feature

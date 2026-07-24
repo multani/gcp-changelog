@@ -1,5 +1,22 @@
 # Vertex AI Search
 
+## 2026-07-23
+
+### Feature
+
+**Agent Search: Decrease thresholds for configurable pricing**
+
+You can decrease the storage size and queries per minute (QPM) subscription
+thresholds for configurable pricing. Previously, you could only increase these
+thresholds.
+
+Decreased thresholds take effect at the start of the next billing cycle.
+
+For more information, see [Modify subscription
+thresholds](https://docs.cloud.google.com/generative-ai-app-builder/docs/enable-configurable-pricing#modify-thresholds).
+This feature is generally available (GA).
+
+---
 ## 2026-06-08
 
 ### Feature

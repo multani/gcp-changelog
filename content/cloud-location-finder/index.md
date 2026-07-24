@@ -1,5 +1,12 @@
 # Cloud Location Finder
 
+## 2026-07-23
+
+### Feature
+
+Model Context Protocol (MCP) integration is available in [Preview](https://cloud.google.com/products#product-launch-stages). This built-in integration lets LLM-powered agents securely retrieve data using standard MCP tools (`search_cloud_locations` and `list_cloud_locations`). For more information, see [Use the Model Context Protocol (MCP) with Cloud Location Finder](https://docs.cloud.google.com/location-finder/docs/use-cloud-location-finder-mcp).
+
+---
 ## 2026-06-06
 
 ### Announcement

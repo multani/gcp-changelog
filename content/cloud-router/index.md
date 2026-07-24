@@ -1,5 +1,13 @@
 # Cloud Router
 
+## 2026-07-23
+
+### Feature
+
+Cloud Router support for named sets for BGP route policies is now [generally available](https://cloud.google.com/products#product-launch-stages). For more information, see
+[BGP route policies overview](https://docs.cloud.google.com/network-connectivity/docs/router/concepts/bgp-route-policies-overview#what-are-bgp-route-policies).
+
+---
 ## 2026-03-24
 
 ### Feature

@@ -1,5 +1,23 @@
 # Apigee API hub
 
+## 2026-07-24
+
+### Feature
+
+**General availability (GA) launch of Model Context Protocol (MCP) in API hub**
+
+The API hub MCP server is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages). This release enables seamless integration between your AI agents and API hub, allowing your applications to discover, query, and manage your API ecosystem using natural language.
+
+**What's new in GA**
+
+* **Expanded read and write capabilities**: AI agents can create, update, and delete APIs, versions, specs, and deployments. They can also configure and deploy MCP discovery proxies in Apigee.
+* **Global endpoint routing**: Connect to the API hub MCP server using the global endpoint (`apihub.googleapis.com/mcp`), in addition to the supported regional endpoints. For a list of supported regions, see the [API hub MCP reference](https://docs.cloud.google.com/apigee/docs/reference/apis/apihub/mcp#server-endpoints).
+* **Granular OAuth scopes**: Use service-specific OAuth scopes (`apihub.readonly` and `apihub.readwrite`) for more secure access.
+* **Model Armor integration**: Protect MCP tool invocations from prompt-injection and other attacks by integrating with Model Armor.
+
+For configuration details and a complete list of available tools, see [API hub MCP reference](https://docs.cloud.google.com/apigee/docs/reference/apis/apihub/mcp).
+
+---
 ## 2026-05-12
 
 ### Feature

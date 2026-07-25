@@ -1,5 +1,82 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-07-24
+
+### Fixed
+
+* Fixed an issue where emails were stuck in a **Transferring** state when
+  moved between queues.
+* Fixed an issue where end-users didn't receive messages from agents during
+  web chats.
+* Fixed an issue where calls or chats remained in a queue without being
+  offered to available agents.
+* Fixed an issue where voice calls were prematurely moved from an agent's
+  queue during a multi-group cascade.
+* Fixed an issue where the disposition panel didn't appear after a call ended,
+  leaving agents unable to change their status without signing out and signing
+  in.
+* Fixed an issue where end-users were incorrectly assigned to teams and skills
+  they weren't originally part of during bulk CSV imports.
+* Fixed an issue where interaction transcripts for calls in non-English
+  languages were incorrect.
+* Fixed an issue in Salesforce integrations where incoming chat audio and
+  desktop notifications didn't play for agents using the embedded
+  CCAI Platform widget.
+* Fixed an issue where the inactive chat dismissal timer didn't reset after
+  a chat was transferred from a virtual agent to a human agent.
+* Fixed an issue where voicemails disappeared from the queue
+  immediately after being opened.
+* Fixed an issue where the reporting dashboard incorrectly displayed call and
+  agent status during a cold transfer to another queue.
+* Improved rendering performance in the agent desktop mini chat adapter.
+* Fixed an issue where the storage path for screen recordings didn't align
+  with the folder structure displayed in the user interface.
+* Fixed an issue where missing public files were incorrectly cached by the
+  CDN for up to seven days.
+* Fixed an issue where agents were automatically redirected to the **Closed**
+  inbox view after changing an interaction status to **Closed**.
+* Fixed an issue where the **You cannot log out when in a chat** notification
+  was truncated in the chat adapter.
+* Fixed an issue with Salesforce integrations where rapid, concurrent data
+  requests caused information to be lost.
+* Fixed an issue where duplicate call recording links were posted to Zendesk
+  tickets for multi-segment calls.
+* Fixed an issue with Salesforce integrations where the UI retained settings
+  from a previous Salesforce organization after switching to a new
+  organization.
+* Fixed an issue where duplicate customer satisfaction surveys were submitted
+  and recorded for a single live chat session.
+* Fixed an issue where the message field in the chat adapter was inactive
+  when an agent accepted a new chat.
+* Fixed an issue where task virtual agents were incorrectly identified as
+  **Nobody** when joining a conversation after a transfer from a human agent.
+* Fixed an issue that occurred when a chat entered a queue and the greeting
+  message was sent before an agent was assigned. In these cases, the
+  associated push notification crashed and logged an error, producing
+  excessive noise in logs.
+* Fixed an issue where the agent's final message in a chat session
+  appeared after **This chat is ended** in the chat adapter and the CRM
+  transcript.
+* Fixed an issue where agents using instances without a CRM configuration
+  received a **No Account Detected** warning when making outbound calls.
+* Fixed an issue where notification chimes played after an agent had connected
+  to an active call.
+* Fixed an issue where the country code list didn't automatically update the
+  country flag when a phone number was entered without the `+` prefix.
+* Fixed an issue where calls to an agent's personal queue didn't break through
+  if the agent was also assigned to an inbound queue with breakthrough
+  disabled.
+* Fixed an issue where outbound calls that were transferred to a queue didn't
+  adhere to the queue's deltacast configuration.
+* Fixed an issue where the agent desktop became unstable or didn't load.
+* Fixed an issue where wrap-up time was incorrectly reported when agents
+  exceeded the configured wrap-up time.
+* Fixed an issue where the IVR queues dashboard didn't load for instances with
+  a large volume of queues.
+* Fixed an issue where calls to the `manager/api/v1/agent_activity_logs`
+  endpoint timed out when `sort_direction` was turned off.
+
+---
 ## 2026-07-14
 
 ### Announcement

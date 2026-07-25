@@ -2,9 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-07-14T00:00:00+00:00</updated>
+  <updated>2026-07-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-24:fixed:0</id>
+    <published>2026-07-24T00:00:00+00:00</published>
+    <updated>2026-07-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where emails were stuck in a <strong>Transferring</strong> state when
+  moved between queues.</li>
+<li>Fixed an issue where end-users didn't receive messages from agents during
+  web chats.</li>
+<li>Fixed an issue where calls or chats remained in a queue without being
+  offered to available agents.</li>
+<li>Fixed an issue where voice calls were prematurely moved from an agent's
+  queue during a multi-group cascade.</li>
+<li>Fixed an issue where the disposition panel didn't appear after a call ended,
+  leaving agents unable to change their status without signing out and signing
+  in.</li>
+<li>Fixed an issue where end-users were incorrectly assigned to teams and skills
+  they weren't originally part of during bulk CSV imports.</li>
+<li>Fixed an issue where interaction transcripts for calls in non-English
+  languages were incorrect.</li>
+<li>Fixed an issue in Salesforce integrations where incoming chat audio and
+  desktop notifications didn't play for agents using the embedded
+  CCAI Platform widget.</li>
+<li>Fixed an issue where the inactive chat dismissal timer didn't reset after
+  a chat was transferred from a virtual agent to a human agent.</li>
+<li>Fixed an issue where voicemails disappeared from the queue
+  immediately after being opened.</li>
+<li>Fixed an issue where the reporting dashboard incorrectly displayed call and
+  agent status during a cold transfer to another queue.</li>
+<li>Improved rendering performance in the agent desktop mini chat adapter.</li>
+<li>Fixed an issue where the storage path for screen recordings didn't align
+  with the folder structure displayed in the user interface.</li>
+<li>Fixed an issue where missing public files were incorrectly cached by the
+  CDN for up to seven days.</li>
+<li>Fixed an issue where agents were automatically redirected to the <strong>Closed</strong>
+  inbox view after changing an interaction status to <strong>Closed</strong>.</li>
+<li>Fixed an issue where the <strong>You cannot log out when in a chat</strong> notification
+  was truncated in the chat adapter.</li>
+<li>Fixed an issue with Salesforce integrations where rapid, concurrent data
+  requests caused information to be lost.</li>
+<li>Fixed an issue where duplicate call recording links were posted to Zendesk
+  tickets for multi-segment calls.</li>
+<li>Fixed an issue with Salesforce integrations where the UI retained settings
+  from a previous Salesforce organization after switching to a new
+  organization.</li>
+<li>Fixed an issue where duplicate customer satisfaction surveys were submitted
+  and recorded for a single live chat session.</li>
+<li>Fixed an issue where the message field in the chat adapter was inactive
+  when an agent accepted a new chat.</li>
+<li>Fixed an issue where task virtual agents were incorrectly identified as
+  <strong>Nobody</strong> when joining a conversation after a transfer from a human agent.</li>
+<li>Fixed an issue that occurred when a chat entered a queue and the greeting
+  message was sent before an agent was assigned. In these cases, the
+  associated push notification crashed and logged an error, producing
+  excessive noise in logs.</li>
+<li>Fixed an issue where the agent's final message in a chat session
+  appeared after <strong>This chat is ended</strong> in the chat adapter and the CRM
+  transcript.</li>
+<li>Fixed an issue where agents using instances without a CRM configuration
+  received a <strong>No Account Detected</strong> warning when making outbound calls.</li>
+<li>Fixed an issue where notification chimes played after an agent had connected
+  to an active call.</li>
+<li>Fixed an issue where the country code list didn't automatically update the
+  country flag when a phone number was entered without the <code>+</code> prefix.</li>
+<li>Fixed an issue where calls to an agent's personal queue didn't break through
+  if the agent was also assigned to an inbound queue with breakthrough
+  disabled.</li>
+<li>Fixed an issue where outbound calls that were transferred to a queue didn't
+  adhere to the queue's deltacast configuration.</li>
+<li>Fixed an issue where the agent desktop became unstable or didn't load.</li>
+<li>Fixed an issue where wrap-up time was incorrectly reported when agents
+  exceeded the configured wrap-up time.</li>
+<li>Fixed an issue where the IVR queues dashboard didn't load for instances with
+  a large volume of queues.</li>
+<li>Fixed an issue where calls to the <code>manager/api/v1/agent_activity_logs</code>
+  endpoint timed out when <code>sort_direction</code> was turned off.</li>
+</ul>]]></content>
+    <summary>This release addresses multiple bugs, including issues with message delivery, call routing, agent status updates, and integration functionalities. These fixes aim to improve the overall stability and performance of the platform.</summary>
+    <title>Fixed: Resolved several issues affecting agent and customer experience.</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

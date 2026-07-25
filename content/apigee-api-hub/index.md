@@ -17,6 +17,14 @@ The API hub MCP server is [Generally Available (GA)](https://cloud.google.com/pr
 
 For configuration details and a complete list of available tools, see [API hub MCP reference](https://docs.cloud.google.com/apigee/docs/reference/apis/apihub/mcp).
 
+### Feature
+
+**Configure and deploy MCP servers with API hub RPC**
+
+API hub now includes a new RPC, `ConfigureAndDeployServer`, which enables the configuration and deployment of Model Context Protocol (MCP) servers directly to an Apigee runtime.
+
+For more information, see [Manage MCP proxies](https://docs.cloud.google.com/apigee/docs/apihub/manage-mcp-proxies) and the [API hub reference](https://docs.cloud.google.com/apigee/docs/reference/apis/apihub/).
+
 ---
 ## 2026-05-12
 

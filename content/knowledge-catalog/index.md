@@ -1,5 +1,16 @@
 # Knowledge Catalog
 
+## 2026-07-24
+
+### Feature
+
+Governance workflows let you set up automated controls for data product access
+management by providing a request-review mechanism.
+This feature is available in [preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [About governance workflows](https://docs.cloud.google.com/dataplex/docs/about-governance-workflows).
+
+---
 ## 2026-07-17
 
 ### Feature

@@ -2,6 +2,47 @@
 
 ## 2026-07-24
 
+### Announcement
+
+**Google Cloud CCaaS 5.0**
+
+We've released version 5.0 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Disposition timing**
+
+You can now configure CCAI Platform so agents can attribute wrap-up
+time, disposition code, and notes to a previous interaction. You can also let
+agents modify the disposition code and notes of previously completed sessions.
+
+Administrators: In the **Settings > Operation Management >
+Wrap-up** pane, a new **Manual Wrap-up** section is available.
+
+User experience change: If configured, a new **Previous Sessions** list appears
+in the agent adapter.
+
+For more information, see [Configure disposition
+timing](https://docs.cloud.google.com/contact-center/ccai-platform/docs/configure-disposition-timing).
+
+### Feature
+
+**API direct access point for chat**
+
+The API direct access point (DAP) for chat lets you automatically route incoming
+chat sessions to a queue based on a response from an external API endpoint that
+you configure. This eliminates the need for end-users to select from a queue
+menu.
+
+By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.
+
+For more information, see [API direct access point for
+chat](https://docs.cloud.google.com/contact-center/ccai-platform/docs/api-dap-for-chat).
+
 ### Fixed
 
 * Fixed an issue where emails were stuck in a **Transferring** state when

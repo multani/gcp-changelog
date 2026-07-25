@@ -1,13 +1,28 @@
 # Managed Service for Apache Airflow
 
-## 2026-07-16
+## 2026-07-24
 
 ### Announcement
 
-A new Managed Service for Apache Airflow release has started on
-**July 16, 2026**. Get ready for upcoming changes and features as we roll out
-the new release to all regions. This release is in progress at the moment.
-Listed changes and features might not be available in some regions yet.
+Starting in September, 2026, **Airflow 2.10.5 will no longer be included** in
+new Managed Airflow images and builds. This change will not affect existing
+images and builds.
+
+### Announcement
+
+Starting in September 2026, we are changing the version support policy for
+Managed Airflow (Gen 2) to align it with the Managed Airflow (Gen 3) policy.
+The changes will **affect Airflow 2 versions that we release**:
+
+* In Managed Airflow (Gen 2), we will
+  **release only new images with Airflow 2.11**. New Airflow 2.10.5 images
+  will no longer be released.
+* In Managed Airflow (Gen 3) we will keep releasing new builds of Airflow 3
+  (no changes) and will release only new Airflow 2.11 builds. New
+  Airflow 2.10.5 builds will no longer be released.
+
+---
+## 2026-07-16
 
 ### Feature
 

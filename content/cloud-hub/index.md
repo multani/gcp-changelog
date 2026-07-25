@@ -1,5 +1,13 @@
 # Cloud Hub
 
+## 2026-07-17
+
+### Feature
+
+The [Security & compliance](https://docs.cloud.google.com/hub/docs/security) page in Cloud Hub has
+launched to [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-04-22
 
 ### Feature

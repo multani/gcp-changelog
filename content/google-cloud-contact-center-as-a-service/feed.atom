@@ -9,6 +9,201 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:announcement:0</id>
+    <published>2026-07-01T00:00:00+00:00</published>
+    <updated>2026-07-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.45</strong></p>
+<p>We've released version 4.45 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>Version 4.45 of CCaaS has been released. The update schedule for your instance depends on your chosen deployment plan. Please refer to the deployment schedules documentation for more details.</summary>
+    <title>Announcement: CCaaS 4.45 Update Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:feature:1</id>
+    <published>2026-07-01T00:00:00+00:00</published>
+    <updated>2026-07-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Emergency queue shutdown</strong></p>
+<p>You can temporarily shut down a specific queue during unexpected events such as
+system issues, an unexpected staffing shortage, a building emergency, or
+unplanned maintenance. This lets you provide fast, controlled call deflection
+for the affected queue without impacting the rest of your call center. You can
+shut down a queue using the CCAI Platform portal or programmatically, using the
+<code>/apps/api/v1/menus/shutdown</code> API.</p>
+<p>By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.</p>
+<p>Administrators: We've made the following updates to the CCAI Platform portal:</p>
+<ul>
+<li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice
+  Response) &gt; Edit / View &gt; MENU_NAME &gt;
+  Settings</strong> pane, there's a new <strong>Emergency Shutdown</strong> section.</li>
+<li>On the <strong>Settings &gt; Developer Settings &gt; Audible
+  Messages</strong> page, there's a new <strong>Enable Remote Shutdown via API</strong> toggle.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/emergency-queue-shutdown">Emergency queue
+shutdown</a>.</p>]]></content>
+    <summary>Temporarily shut down specific queues during emergencies to control call deflection without affecting other call center operations. This feature can be accessed via the CCAI Platform portal or programmatically.</summary>
+    <title>Feature: Emergency Queue Shutdown</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:feature:2</id>
+    <published>2026-07-01T00:00:00+00:00</published>
+    <updated>2026-07-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Do Not Call capability in HubSpot</strong></p>
+<p>You can configure your HubSpot integration to display <strong>This number is on the Do
+Not Call list</strong> in the call adapter when an agent initiates a call to a contact
+configured for Do Not Call (DNC). The agent can proceed with the DNC call if
+needed. If the agent proceeds with the call, the following comment is logged in
+the CRM: "The contact is in TPS, the agent chose to proceed with the call."</p>
+<p>This capability is for non-campaign outbound calls. It doesn't affect outbound
+campaign calls.</p>
+<p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;
+Agent Platform &gt; HubSpot &gt; Account Lookup</strong> section,
+there's a new <strong>Do-Not-Call CRM Field</strong> section.</p>
+<p>User experience update: The call adapter displays <strong>This number is on the Do Not
+Call list</strong> when an agent initiates a call to a contact configured for DNC.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-do-not-call">Do Not Call for
+HubSpot</a>.</p>]]></content>
+    <summary>A new feature for HubSpot allows agents to see if a contact is on the Do Not Call list before initiating a call. While agents can still proceed with DNC calls, a log entry will be created in the CRM. This feature is specifically for non-campaign outbound calls.</summary>
+    <title>Feature: HubSpot Do Not Call Feature</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:feature:3</id>
+    <published>2026-07-01T00:00:00+00:00</published>
+    <updated>2026-07-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Return to queue after disconnection</strong></p>
+<p>You can configure CCAI Platform to offer a disconnected caller the
+option to return to their queue. If they accept, they're returned to the top of
+the queue. Virtual agents in the queue are skipped. This capability is for IVR
+calls only.</p>
+<p>Administrators: We've made the following updates to the CCAI Platform portal:</p>
+<ul>
+<li>In the <strong>Settings &gt; Call &gt; Call Details</strong> pane,
+  there's a new <strong>Return to Queue After Disconnection</strong> section.</li>
+<li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice
+  Response) &gt; Edit / View &gt; MENU_NAME &gt;
+  Settings</strong> pane, there's a new <strong>Return to Queue after disconnection</strong>
+  section.</li>
+<li>In the <strong>Settings &gt; Languages &amp; Messages &gt; Audible
+  Messages</strong> pane, there's a new <strong>Return to Queue After Disconnection
+  Messages</strong> section.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/return-to-queue">Return to
+queue</a>.</p>]]></content>
+    <summary>New feature allows disconnected callers to rejoin the queue. If accepted, they are placed at the front, skipping virtual agents. This is applicable only for IVR calls.</summary>
+    <title>Feature: Return to queue after disconnection</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:fixed:4</id>
+    <published>2026-07-01T00:00:00+00:00</published>
+    <updated>2026-07-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where campaigns that didn't complete prevented subsequent
+  campaigns from starting.</li>
+<li>Fixed an issue where callers weren't correctly connected to voicemail during
+  a warm transfer to an agent's direct number.</li>
+<li>Fixed an issue where incoming calls were assigned to agents but
+  didn't appear in the agent adapter, resulting in "ghost assignments" and
+  abandoned calls.</li>
+<li>Fixed an issue where cold-transferring a call from a queue while the
+  transferring agent was in a wrap-up state caused the connection to become
+  unresponsive and silent.</li>
+<li>Fixed an issue where calls that disconnected before entering a queue were
+  incorrectly displayed in the <strong>Queued Calls</strong> dashboard.</li>
+<li>Fixed an issue in the agent desktop where the call disposition panel failed
+  to load for queues with forced disposition enabled, leaving agents stuck and
+  unable to proceed without logging out.</li>
+<li>Fixed an issue where streaming conversations failed due to connection
+  errors.</li>
+<li>Fixed an issue where outbound calls initiated from a HubSpot company profile
+  created duplicate anonymous contacts instead of matching existing records by
+  phone number.</li>
+<li>Fixed an issue where the <strong>Session Data</strong> report incorrectly calculated the
+  after call work (ACW) duration specifically for manual wrap-up scenarios.</li>
+</ul>
+<p><strong>Note:</strong> This is different from the known issue where auto wrap-up time is
+  capped at 10 seconds. This issue is targeted for resolution in a future
+  release.
+* Fixed an issue where the <strong>Start Call</strong> button didn't display in the call
+  adapter.
+* Fixed an issue where voicemails from cold transfers were lost or routed to
+  the wrong queue.
+* Fixed an issue in the agent desktop where active calls appeared to be on
+  hold while the agent was in a "wrap-up exceeded" state.</p>]]></content>
+    <summary>We've resolved multiple issues affecting campaign progression and call management. This includes fixes for campaign startup failures, incorrect call routing during transfers, ghost assignments, unresponsive connections, and inaccurate reporting.</summary>
+    <title>Fixed: Resolved several issues impacting campaign flow and call handling.</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-30:announcement:0</id>
+    <published>2026-06-30T00:00:00+00:00</published>
+    <updated>2026-06-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>In the Agent Desktop, the Knowledge Assist panel is being replaced with a new
+Agent Assist Hub panel</strong></p>
+<p><strong>Who's affected?</strong></p>
+<p>Customers who use the Agent Desktop and the Knowledge Assist panel in a desktop
+layout are affected. If you don't use Agent Desktop and the Knowledge Assist
+panel, you can ignore this announcement.</p>
+<p><strong>What's changing?</strong></p>
+<p>We're replacing the Knowledge Assist panel in Agent Desktop with a new Agent
+Assist Hub panel. The Agent Assist Hub panel contains a Knowledge Assist module
+that is a 1:1 functional replacement of the Knowledge Assist panel.</p>
+<p><strong>How does this affect my contact center?</strong></p>
+<p>For any agents that are signed into your contact center at the moment we update
+it, the new Knowledge Assist module will stop working. To fix this problem, the
+agent needs to sign out of the contact center and sign in again. The Knowledge
+Assist module will begin working. Agents who sign into your contact center after
+we update it won't be affected by this issue.</p>
+<p><strong>What do I need to do?</strong></p>
+<p>When we roll out this change, your Google Cloud CCaaS instance will be updated
+automatically - you don't need to change any configurations. However, you
+should tell your agents to sign out of your contact center and sign in again if
+the Knowledge Assist module within the Agent Assist Hub panel isn't working for
+them. Your agents do not need to take action If your instance is configured as a
+Critical deployment and is updated outside of the contact center hours of
+operation.</p>
+<p><strong>When is this happening?</strong></p>
+<p>We expect to make this change in early Q3 of 2026, around mid to late July.
+We'll publish prerelease notes and release notes to keep you informed of this
+change.</p>]]></content>
+    <summary>The Knowledge Assist panel in Agent Desktop is being replaced by the new Agent Assist Hub panel. This change will occur in early Q3 2026. Agents may need to sign out and back in after the update for the Knowledge Assist module to function correctly.</summary>
+    <title>Announcement: Agent Assist Hub panel replaces Knowledge Assist</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-25:announcement:0</id>
+    <published>2026-06-25T00:00:00+00:00</published>
+    <updated>2026-06-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
+<p>On June 26, 2025, we announced the launch of <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version
+3</a>. Starting on
+<strong>June 26, 2026</strong>, the web SDK v2 will no longer be supported. Be sure to
+<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">update your website</a> to
+use the web SDK v3 to avoid disrupting your integration with the web SDK. We are
+no longer adding new features to the web SDK v2.</p>]]></content>
+    <summary>Web SDK version 2 will be shut down on June 26, 2026. Please update your website to use version 3 to ensure uninterrupted service. No new features will be added to version 2.</summary>
+    <title>Announcement: Web SDK v2 End of Support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-14:announcement:0</id>
     <published>2026-07-14T00:00:00+00:00</published>
     <updated>2026-07-14T00:00:00+00:00</updated>
@@ -182,198 +377,6 @@ menu.</p>]]></content>
 </ul>]]></content>
     <summary>Several issues have been resolved, including problems with email transfers, message delivery during web chats, call and chat queue handling, agent status updates, and data import accuracy. These fixes enhance the reliability and performance of the platform.</summary>
     <title>Fixed: Resolved various system issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:announcement:0</id>
-    <published>2026-07-01T00:00:00+00:00</published>
-    <updated>2026-07-01T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 4.45</strong></p>
-<p>We've released version 4.45 of Google Cloud CCaaS.</p>
-<p>The timing of the update to your instance depends on the deployment schedule
-that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
-schedules</a>.</p>]]></content>
-    <summary>Version 4.45 of CCaaS has been released. The update schedule for your instance depends on your chosen deployment plan. Please refer to the deployment schedules documentation for more details.</summary>
-    <title>Announcement: CCaaS 4.45 Update Available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:feature:1</id>
-    <published>2026-07-01T00:00:00+00:00</published>
-    <updated>2026-07-01T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Emergency queue shutdown</strong></p>
-<p>You can temporarily shut down a specific queue during unexpected events such as
-system issues, an unexpected staffing shortage, a building emergency, or
-unplanned maintenance. This lets you provide fast, controlled call deflection
-for the affected queue without impacting the rest of your call center. You can
-shut down a queue using the CCAI Platform portal or programmatically, using the
-<code>/apps/api/v1/menus/shutdown</code> API.</p>
-<p>By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.</p>
-<p>Administrators: We've made the following updates to the CCAI Platform portal:</p>
-<ul>
-<li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice
-  Response) &gt; Edit / View &gt; MENU_NAME &gt;
-  Settings</strong> pane, there's a new <strong>Emergency Shutdown</strong> section.</li>
-<li>On the <strong>Settings &gt; Developer Settings &gt; Audible
-  Messages</strong> page, there's a new <strong>Enable Remote Shutdown via API</strong> toggle.</li>
-</ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/emergency-queue-shutdown">Emergency queue
-shutdown</a>.</p>]]></content>
-    <summary>Temporarily shut down specific queues during emergencies to control call deflection without affecting other call center operations. This feature can be accessed via the CCAI Platform portal or programmatically.</summary>
-    <title>Feature: Emergency Queue Shutdown</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:feature:2</id>
-    <published>2026-07-01T00:00:00+00:00</published>
-    <updated>2026-07-01T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Do Not Call capability in HubSpot</strong></p>
-<p>You can configure your HubSpot integration to display <strong>This number is on the Do
-Not Call list</strong> in the call adapter when an agent initiates a call to a contact
-configured for Do Not Call (DNC). The agent can proceed with the DNC call if
-needed. If the agent proceeds with the call, the following comment is logged in
-the CRM: "The contact is in TPS, the agent chose to proceed with the call."</p>
-<p>This capability is for non-campaign outbound calls. It doesn't affect outbound
-campaign calls.</p>
-<p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;
-Agent Platform &gt; HubSpot &gt; Account Lookup</strong> section,
-there's a new <strong>Do-Not-Call CRM Field</strong> section.</p>
-<p>User experience update: The call adapter displays <strong>This number is on the Do Not
-Call list</strong> when an agent initiates a call to a contact configured for DNC.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-do-not-call">Do Not Call for
-HubSpot</a>.</p>]]></content>
-    <summary>A new feature for HubSpot allows agents to see if a contact is on the Do Not Call list before initiating a call. While agents can still proceed with DNC calls, a log entry will be created in the CRM. This feature is specifically for non-campaign outbound calls.</summary>
-    <title>Feature: HubSpot Do Not Call Feature</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:feature:3</id>
-    <published>2026-07-01T00:00:00+00:00</published>
-    <updated>2026-07-01T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Return to queue after disconnection</strong></p>
-<p>You can configure CCAI Platform to offer a disconnected caller the
-option to return to their queue. If they accept, they're returned to the top of
-the queue. Virtual agents in the queue are skipped. This capability is for IVR
-calls only.</p>
-<p>Administrators: We've made the following updates to the CCAI Platform portal:</p>
-<ul>
-<li>In the <strong>Settings &gt; Call &gt; Call Details</strong> pane,
-  there's a new <strong>Return to Queue After Disconnection</strong> section.</li>
-<li>In the <strong>Settings &gt; Queue &gt; IVR (Interactive Voice
-  Response) &gt; Edit / View &gt; MENU_NAME &gt;
-  Settings</strong> pane, there's a new <strong>Return to Queue after disconnection</strong>
-  section.</li>
-<li>In the <strong>Settings &gt; Languages &amp; Messages &gt; Audible
-  Messages</strong> pane, there's a new <strong>Return to Queue After Disconnection
-  Messages</strong> section.</li>
-</ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/return-to-queue">Return to
-queue</a>.</p>]]></content>
-    <summary>New feature allows disconnected callers to rejoin the queue. If accepted, they are placed at the front, skipping virtual agents. This is applicable only for IVR calls.</summary>
-    <title>Feature: Return to queue after disconnection</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-01:fixed:4</id>
-    <published>2026-07-01T00:00:00+00:00</published>
-    <updated>2026-07-01T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<ul>
-<li>Fixed an issue where campaigns that didn't complete prevented subsequent
-  campaigns from starting.</li>
-<li>Fixed an issue where callers weren't correctly connected to voicemail during
-  a warm transfer to an agent's direct number.</li>
-<li>Fixed an issue where incoming calls were assigned to agents but
-  didn't appear in the agent adapter, resulting in "ghost assignments" and
-  abandoned calls.</li>
-<li>Fixed an issue where cold-transferring a call from a queue while the
-  transferring agent was in a wrap-up state caused the connection to become
-  unresponsive and silent.</li>
-<li>Fixed an issue where calls that disconnected before entering a queue were
-  incorrectly displayed in the <strong>Queued Calls</strong> dashboard.</li>
-<li>Fixed an issue in the agent desktop where the call disposition panel failed
-  to load for queues with forced disposition enabled, leaving agents stuck and
-  unable to proceed without logging out.</li>
-<li>Fixed an issue where streaming conversations failed due to connection
-  errors.</li>
-<li>Fixed an issue where outbound calls initiated from a HubSpot company profile
-  created duplicate anonymous contacts instead of matching existing records by
-  phone number.</li>
-<li>Fixed an issue where the <strong>Session Data</strong> report incorrectly calculated the
-  after call work (ACW) duration for manual wrap-ups.</li>
-<li>Fixed an issue where the <strong>Start Call</strong> button didn't display in the call
-  adapter.</li>
-<li>Fixed an issue where voicemails from cold transfers were lost or routed to
-  the wrong queue.</li>
-<li>Fixed an issue in the agent desktop where active calls appeared to be on
-  hold while the agent was in a "wrap-up exceeded" state.</li>
-</ul>]]></content>
-    <summary>Several issues affecting campaign progression, call routing, agent experience, and reporting accuracy have been resolved. These fixes ensure smoother call handling, correct display of call status, and improved agent workflow.</summary>
-    <title>Fixed: Resolved several call handling issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-30:announcement:0</id>
-    <published>2026-06-30T00:00:00+00:00</published>
-    <updated>2026-06-30T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>In the Agent Desktop, the Knowledge Assist panel is being replaced with a new
-Agent Assist Hub panel</strong></p>
-<p><strong>Who's affected?</strong></p>
-<p>Customers who use the Agent Desktop and the Knowledge Assist panel in a desktop
-layout are affected. If you don't use Agent Desktop and the Knowledge Assist
-panel, you can ignore this announcement.</p>
-<p><strong>What's changing?</strong></p>
-<p>We're replacing the Knowledge Assist panel in Agent Desktop with a new Agent
-Assist Hub panel. The Agent Assist Hub panel contains a Knowledge Assist module
-that is a 1:1 functional replacement of the Knowledge Assist panel.</p>
-<p><strong>How does this affect my contact center?</strong></p>
-<p>For any agents that are signed into your contact center at the moment we update
-it, the new Knowledge Assist module will stop working. To fix this problem, the
-agent needs to sign out of the contact center and sign in again. The Knowledge
-Assist module will begin working. Agents who sign into your contact center after
-we update it won't be affected by this issue.</p>
-<p><strong>What do I need to do?</strong></p>
-<p>When we roll out this change, your Google Cloud CCaaS instance will be updated
-automatically - you don't need to change any configurations. However, you
-should tell your agents to sign out of your contact center and sign in again if
-the Knowledge Assist module within the Agent Assist Hub panel isn't working for
-them. Your agents do not need to take action If your instance is configured as a
-Critical deployment and is updated outside of the contact center hours of
-operation.</p>
-<p><strong>When is this happening?</strong></p>
-<p>We expect to make this change in early Q3 of 2026, around mid to late July.
-We'll publish prerelease notes and release notes to keep you informed of this
-change.</p>]]></content>
-    <summary>The Knowledge Assist panel in Agent Desktop is being replaced by the new Agent Assist Hub panel. This change will occur in early Q3 2026. Agents may need to sign out and back in after the update for the Knowledge Assist module to function correctly.</summary>
-    <title>Announcement: Agent Assist Hub panel replaces Knowledge Assist</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-06-25:announcement:0</id>
-    <published>2026-06-25T00:00:00+00:00</published>
-    <updated>2026-06-25T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
-<p>On June 26, 2025, we announced the launch of <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version
-3</a>. Starting on
-<strong>June 26, 2026</strong>, the web SDK v2 will no longer be supported. Be sure to
-<a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">update your website</a> to
-use the web SDK v3 to avoid disrupting your integration with the web SDK. We are
-no longer adding new features to the web SDK v2.</p>]]></content>
-    <summary>Web SDK version 2 will be shut down on June 26, 2026. Please update your website to use version 3 to ensure uninterrupted service. No new features will be added to version 2.</summary>
-    <title>Announcement: Web SDK v2 End of Support</title>
   </entry>
   <entry>
     <author>

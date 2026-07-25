@@ -327,7 +327,11 @@ queue](https://docs.cloud.google.com/contact-center/ccai-platform/docs/return-to
   created duplicate anonymous contacts instead of matching existing records by
   phone number.
 * Fixed an issue where the **Session Data** report incorrectly calculated the
-  after call work (ACW) duration for manual wrap-ups.
+  after call work (ACW) duration specifically for manual wrap-up scenarios.
+
+  **Note:** This is different from the known issue where auto wrap-up time is
+  capped at 10 seconds. This issue is targeted for resolution in a future
+  release.
 * Fixed an issue where the **Start Call** button didn't display in the call
   adapter.
 * Fixed an issue where voicemails from cold transfers were lost or routed to

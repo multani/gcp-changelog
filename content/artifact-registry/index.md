@@ -1,5 +1,17 @@
 # Artifact Registry
 
+## 2026-07-24
+
+### Feature
+
+Connector repositories act as proxies for upstream sources. All requests to the
+repository are proxied to the upstream source and no artifacts are cached in
+Artifact Registry. This configuration allows for full auditability of
+upstream sources and supports cases where third-party policies prevent artifact
+caching. For more information, see
+[Connector repositories overview](https://docs.cloud.google.com/artifact-registry/docs/repositories/connector-overview).
+
+---
 ## 2026-04-15
 
 ### Feature

@@ -1,6 +1,48 @@
 {
   "name": "Apigee hybrid",
   "entries": {
+    "2026-07-24": [
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Feature Announcement",
+          "summary": "We are excited to announce a new feature designed to enhance your experience. This update introduces improved functionality and user-friendly interfaces, making it easier than ever to achieve your goals. Explore the latest enhancements today!"
+        }
+      },
+      {
+        "kind": "v1.16.8",
+        "content": "On July 24, 2026 we released an updated version of the Apigee hybrid software, v1.16.8.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version 1.16](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
+        "summary": {
+          "title": "Apigee hybrid v1.16.8 released",
+          "summary": "A new version, v1.16.8, of the Apigee hybrid software was released on July 24, 2026. This patch release includes updated container images integrated with the Apigee hybrid Helm charts for a streamlined upgrade process. Refer to the documentation for details on upgrading and new installations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "#### Fixed in this release\n\n| Bug ID | Description |\n| --- | --- |\n| **493354568** | **Fixed an issue where component-specific nodeSelector configurations are ignored in Helm charts.** |",
+        "summary": {
+          "title": "Node selector configuration fixed",
+          "summary": "An issue where component-specific nodeSelector configurations were ignored in Helm charts has been resolved. This fix ensures that node selector settings are correctly applied as intended."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Runtime rollout strategy configuration**\n\nIn this release, you can configure the rollout strategy used when updating runtime (message processor) ReplicaSets by setting the [`runtime.release.strategy`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/config-prop-ref#runtime-release-strategy) property (with options `rolling`, `scale-down-first`, or `none`) or per-environment with `envs[].components.runtime.release.strategy` in your overrides configuration file. The property defaults to `rolling`.",
+        "summary": {
+          "title": "Configure runtime update strategy",
+          "summary": "You can now configure the runtime rollout strategy for updating message processor ReplicaSets. Choose between 'rolling', 'scale-down-first', or 'none' strategies to better manage your deployments."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Various security and CVE fixes are included in this release.",
+        "summary": {
+          "title": "Security Updates Released",
+          "summary": "This release includes various security fixes and addresses several CVEs to enhance system protection."
+        }
+      }
+    ],
     "2026-07-23": [
       {
         "kind": "v1.14.7",

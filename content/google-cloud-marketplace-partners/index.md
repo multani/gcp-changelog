@@ -1,5 +1,20 @@
 # Google Cloud Marketplace Partners
 
+## 2026-07-24
+
+### Feature
+
+You can now use the Cloud Commerce Producer API to programmatically create,
+manage, and publish private offers. The API lets you automate your
+private offer workflows, including configuring custom pricing models,
+attaching EULA or SOW documents, and determining which active offer to amend.
+
+For more information, see
+[Create and manage private offers using the API](https://docs.cloud.google.com/marketplace/docs/partners/offers/commerce-producer-api)
+and
+[Determine which offer to amend](https://docs.cloud.google.com/marketplace/docs/partners/offers/commerce-producer-api#determine-which-offer-to-amend).
+
+---
 ## 2026-05-27
 
 ### Change

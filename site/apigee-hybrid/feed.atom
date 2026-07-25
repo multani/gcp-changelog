@@ -2,9 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee hybrid</title>
   <subtitle>Changelog for Google Cloud product: Apigee hybrid</subtitle>
-  <updated>2026-07-23T00:00:00+00:00</updated>
+  <updated>2026-07-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-24:announcement:0</id>
+    <published>2026-07-24T00:00:00+00:00</published>
+    <updated>2026-07-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are excited to announce a new feature designed to enhance your experience. This update introduces improved functionality and user-friendly interfaces, making it easier than ever to achieve your goals. Explore the latest enhancements today!</summary>
+    <title>Announcement: New Feature Announcement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-24:v1.16.8:1</id>
+    <published>2026-07-24T00:00:00+00:00</published>
+    <updated>2026-07-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On July 24, 2026 we released an updated version of the Apigee hybrid software, v1.16.8.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade">Upgrading Apigee hybrid to version 1.16</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
+    <summary>A new version, v1.16.8, of the Apigee hybrid software was released on July 24, 2026. This patch release includes updated container images integrated with the Apigee hybrid Helm charts for a streamlined upgrade process. Refer to the documentation for details on upgrading and new installations.</summary>
+    <title>v1.16.8: Apigee hybrid v1.16.8 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-24:fixed:2</id>
+    <published>2026-07-24T00:00:00+00:00</published>
+    <updated>2026-07-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>493354568</strong> | <strong>Fixed an issue where component-specific nodeSelector configurations are ignored in Helm charts.</strong> |</p>]]></content>
+    <summary>An issue where component-specific nodeSelector configurations were ignored in Helm charts has been resolved. This fix ensures that node selector settings are correctly applied as intended.</summary>
+    <title>Fixed: Node selector configuration fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-24:feature:3</id>
+    <published>2026-07-24T00:00:00+00:00</published>
+    <updated>2026-07-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Runtime rollout strategy configuration</strong></p>
+<p>In this release, you can configure the rollout strategy used when updating runtime (message processor) ReplicaSets by setting the <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/config-prop-ref#runtime-release-strategy"><code>runtime.release.strategy</code></a> property (with options <code>rolling</code>, <code>scale-down-first</code>, or <code>none</code>) or per-environment with <code>envs[].components.runtime.release.strategy</code> in your overrides configuration file. The property defaults to <code>rolling</code>.</p>]]></content>
+    <summary>You can now configure the runtime rollout strategy for updating message processor ReplicaSets. Choose between 'rolling', 'scale-down-first', or 'none' strategies to better manage your deployments.</summary>
+    <title>Feature: Configure runtime update strategy</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-07-24:security:4</id>
+    <published>2026-07-24T00:00:00+00:00</published>
+    <updated>2026-07-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Various security and CVE fixes are included in this release.</p>]]></content>
+    <summary>This release includes various security fixes and addresses several CVEs to enhance system protection.</summary>
+    <title>Security: Security Updates Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

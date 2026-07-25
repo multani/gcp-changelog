@@ -1,5 +1,16 @@
 # Cloud API Registry
 
+## 2026-07-24
+
+### Deprecated
+
+As of July 30, 2026, support for Model Context Protocol (MCP) servers and tools
+will be shut down. You will not be able to retrieve, list, enable, and disable
+MCP servers and tools using the Cloud API Registry API. For more
+information, see
+[Feature deprecations](https://docs.cloud.google.com/api-registry/docs/deprecations).
+
+---
 ## 2026-04-30
 
 ### Deprecated

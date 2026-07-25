@@ -1,5 +1,14 @@
 # Security Command Center
 
+## 2026-07-17
+
+### Announcement
+
+Key insights from Security Command Center are available on the [Security & compliance](https://docs.cloud.google.com/hub/docs/security)
+page in [Cloud Hub](https://docs.cloud.google.com/hub/docs/overview). This feature is available in
+[General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-09
 
 ### Feature

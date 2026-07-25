@@ -1,5 +1,13 @@
 # Cloud Service Mesh
 
+## 2026-07-24
+
+### Feature
+
+The [Envoy Compressor Filter](https://docs.cloud.google.com/service-mesh/docs/data-plane-extensibility#typegoogleapiscomenvoyextensionsfiltershttpcompressorv3compressor)
+is now GA in the stable release channel.
+
+---
 ## 2026-07-21
 
 ### Feature

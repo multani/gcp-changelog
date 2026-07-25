@@ -1,5 +1,23 @@
 # reCAPTCHA
 
+## 2026-07-24
+
+### Feature
+
+**Preview**: [Policy Engine](https://docs.cloud.google.com/recaptcha/docs/policy-engine), [Universal keys](https://docs.cloud.google.com/recaptcha/docs/install-universal-keys-web-pages), and [challenge policies](https://docs.cloud.google.com/recaptcha/docs/challenge-policies) are available in [Preview](https://docs.cloud.google.com/products#product-launch-stages) for Google Cloud Fraud Defense.
+
+* Policy Engine lets you perform frontend JavaScript integration using
+  AutoExecute and configure custom rules to selectively trigger CAPTCHA
+  challenges based on risk score, IP addresses, user agents, ASNs, or verified
+  bot identities.
+* A new AI-resistant
+  [QR code
+  challenge](https://docs.cloud.google.com/recaptcha/docs/select-challenge-types#qr-code-challenges) is available.
+
+For more information about the types of challenges that are available,
+see [Challenge types](https://docs.cloud.google.com/recaptcha/docs/select-challenge-types).
+
+---
 ## 2026-06-29
 
 ### Change

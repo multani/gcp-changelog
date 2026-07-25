@@ -1,5 +1,22 @@
 # Cloud Billing
 
+## 2026-07-24
+
+### Feature
+
+**Early signals for AI workloads**
+
+For AI workloads (such as Gemini API and Vertex AI),
+you can now view early anomalies. Early anomalies use near real-time cost
+estimates to provide daily, service-level insights before finalized billing
+occurs. You can view these alerts on the **By service (Early signals)** tab
+on the Anomalies dashboard in the Google Cloud console. User-configured
+thresholds do not apply to early anomalies.
+
+For more information, see
+[View early anomalies for AI workloads](https://docs.cloud.google.com/billing/docs/how-to/manage-anomalies#view-early-anomalies).
+
+---
 ## 2026-07-10
 
 ### Feature

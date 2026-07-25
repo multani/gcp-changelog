@@ -1,5 +1,14 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-07-24
+
+### Feature
+
+Cloud SQL for PostgreSQL now supports logical replication using failover slot which you can use with advanced disaster recovery (DR) switchover and replica failover operations to ensure business continuity.
+
+For more information, see [Advanced disaster recovery (DR) with logical failover slot](https://docs.cloud.google.com/sql/docs/postgres/advanced-dr-logical-failover-slot).
+
+---
 ## 2026-07-20
 
 ### Feature

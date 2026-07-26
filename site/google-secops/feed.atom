@@ -2,9 +2,65 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-07-20T00:00:00+00:00</updated>
+  <updated>2026-07-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-07-26:feature:0</id>
+    <published>2026-07-26T00:00:00+00:00</published>
+    <updated>2026-07-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Customizable schedules for multi-event rules</strong></p>
+<p><a href="https://docs.cloud.google.com/chronicle/docs/detection/set-customized-schedule">Customizable schedules for multi-event rules</a> are available in public preview. You can customize rule execution schedules on the <strong>Rule schedule</strong> tab to specify a first-run delay offset that accounts for data ingestion latency. The system also performs automated background true-up runs to catch late-arriving logs and process metadata enrichment without requiring manual system interventions. This gives you precise control over detection evaluation timing, reduces false negatives without missing detections, and promotes alert accuracy.</p>
+<p>To view or modify rule schedules using custom Identity and Access Management (IAM) roles, update your <a href="https://docs.cloud.google.com/chronicle/docs/reference/feature-rbac-permissions-roles">IAM permissions</a> to include the following:</p>
+<ul>
+<li><code>chronicle.ruleDeployments.update</code> to update individual rule schedules using the API.</li>
+<li><code>chronicle.rules.modifyRules</code> to modify rule schedules using the web interface or in batch using the API.</li>
+</ul>
+<p>If you use <a href="https://docs.cloud.google.com/chronicle/docs/onboard/configure-feature-access#predefined-roles">predefined IAM roles</a>, such as Chronicle API Admin (<code>roles/chronicle.admin</code>) or Chronicle API Editor (<code>roles/chronicle.editor</code>), these permissions are included automatically.</p>]]></content>
+    <summary>You can now customize rule execution schedules for multi-event rules in public preview. This feature allows for a first-run delay offset to handle data ingestion latency and includes automated background true-up runs for late-arriving logs. This provides precise control over detection timing, reduces false negatives, and promotes alert accuracy.</summary>
+    <title>Feature: Customizable Schedules for Multi-Event Rules Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-07-26:feature:1</id>
+    <published>2026-07-26T00:00:00+00:00</published>
+    <updated>2026-07-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Investigation and case management experience</strong></p>
+<p>This feature is in public preview. Google SecOps now includes a revamped
+Investigation Management experience that supports tracking raw UDM events and
+detections alongside alerts to accommodate new investigation types (such as
+retrohunt and threat hunt) and higher investigation volumes in cases. You can
+navigate your case queue using customizable table views, side-drawer previews,
+and integrated UDM Search workflows. For more information, see
+<a href="https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/investigation-management-overview">Investigation and case management overview</a>.</p>
+<p>This preview is currently supported only for single-SIEM deployments (instances
+where a single Google SecOps SIEM instance ingests data into SOAR) and does not
+support federated or MSSP environments.</p>
+<p>Additional enhancements include:</p>
+<ul>
+<li><strong>Attach SIEM search results to cases:</strong> Manually attach individual UDM events
+  or detections directly from SIEM search results to new or existing cases as core
+  evidence (supporting up to 500 detections and 5,000 UDM events per case). For
+  details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/create-case-from-search">Attach SIEM search results to cases</a>.</li>
+<li><strong>Interactive Events Viewer:</strong> Dive directly into technical evidence from an
+  interactive side panel. Inspect parsed UDM records, review original raw logs,
+  pin key evidence to your case, and build detection exclusions in real time. For
+  details, see <a href="https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/use-events-viewer">Use the Events Viewer</a>.</li>
+<li><strong>Configure new default views:</strong> Two new views (<strong>New Default Alert View</strong> and
+  <strong>New Default Case View</strong>) are available under <strong>SOAR Settings &gt; Case Data &gt; Views</strong>
+  for the enhanced Cases experience. Before enabling the feature, make sure to
+  manually copy over advanced widget configurations (such as <strong>Safe HTML Rendering</strong>
+  or custom <strong>Conditions</strong>) from the <strong>Default Alert View</strong> and <strong>Default Case View</strong>
+  to these new default views to preserve your preferred setups.</li>
+</ul>]]></content>
+    <summary>Google SecOps now offers a revamped Investigation Management experience, allowing you to track UDM events and detections alongside alerts for new investigation types. This feature supports customizable case queues and integrates UDM Search workflows for efficient analysis. Attach SIEM search results, use the interactive Events Viewer, and configure new default views for a streamlined workflow.</summary>
+    <title>Feature: Enhanced Investigation and Case Management</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,7 +68,7 @@
     <id>urn:github:multani:gcp-changelog:google-secops:2026-07-20:deprecated:0</id>
     <published>2026-07-20T00:00:00+00:00</published>
     <updated>2026-07-20T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Deprecation of Google SecOps legacy SIEM APIs</strong></p>
+    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Deprecation of Google Security Operations legacy SIEM APIs</strong></p>
 <p>Google Security Operations is <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecating</a> its legacy SIEM APIs—<a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#backstory_api">Backstory API</a> (including <a href="https://docs.cloud.google.com/chronicle/docs/reference/customer-management-api">Customer Management API</a>) and <a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#ingestion_api">Ingestion API</a>—in favor of the modern <a href="https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#chronicle_api">Chronicle API</a>.</p>
 <p><strong>Key dates</strong></p>
 <ul>
@@ -26,8 +82,8 @@
 <li>Validate and test that your updated components work properly.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/administration/migrate-from-legacy-api-to-chronicle-api">Migrate from legacy API to Chronicle API</a>.</p>]]></content>
-    <summary>Google Security Operations is deprecating its legacy SIEM APIs, including Backstory API and Ingestion API. These will be replaced by the modern Chronicle API. The deprecation will be fully completed by July 20, 2027. Customers should migrate their custom scripts and integrations to the Chronicle API to avoid disruption.</summary>
-    <title>Deprecated: Deprecation of Legacy SIEM APIs</title>
+    <summary>Google Security Operations is deprecating its legacy SIEM APIs, Backstory API and Ingestion API. Customers should migrate to the modern Chronicle API to ensure continued functionality. Key dates for this transition are October 26, 2026, and July 20, 2027.</summary>
+    <title>Deprecated: Legacy SIEM APIs Deprecated</title>
   </entry>
   <entry>
     <author>

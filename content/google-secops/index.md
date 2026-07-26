@@ -1,10 +1,59 @@
 # Google SecOps
 
+## 2026-07-26
+
+### Feature
+
+**Customizable schedules for multi-event rules**
+
+[Customizable schedules for multi-event rules](https://docs.cloud.google.com/chronicle/docs/detection/set-customized-schedule) are available in public preview. You can customize rule execution schedules on the **Rule schedule** tab to specify a first-run delay offset that accounts for data ingestion latency. The system also performs automated background true-up runs to catch late-arriving logs and process metadata enrichment without requiring manual system interventions. This gives you precise control over detection evaluation timing, reduces false negatives without missing detections, and promotes alert accuracy.
+
+To view or modify rule schedules using custom Identity and Access Management (IAM) roles, update your [IAM permissions](https://docs.cloud.google.com/chronicle/docs/reference/feature-rbac-permissions-roles) to include the following:
+
+* `chronicle.ruleDeployments.update` to update individual rule schedules using the API.
+* `chronicle.rules.modifyRules` to modify rule schedules using the web interface or in batch using the API.
+
+If you use [predefined IAM roles](https://docs.cloud.google.com/chronicle/docs/onboard/configure-feature-access#predefined-roles), such as Chronicle API Admin (`roles/chronicle.admin`) or Chronicle API Editor (`roles/chronicle.editor`), these permissions are included automatically.
+
+### Feature
+
+**[Spotlight Feature] Investigation and case management experience**
+
+This feature is in public preview. Google SecOps now includes a revamped
+Investigation Management experience that supports tracking raw UDM events and
+detections alongside alerts to accommodate new investigation types (such as
+retrohunt and threat hunt) and higher investigation volumes in cases. You can
+navigate your case queue using customizable table views, side-drawer previews,
+and integrated UDM Search workflows. For more information, see
+[Investigation and case management overview](https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/investigation-management-overview).
+
+This preview is currently supported only for single-SIEM deployments (instances
+where a single Google SecOps SIEM instance ingests data into SOAR) and does not
+support federated or MSSP environments.
+
+Additional enhancements include:
+
+* **Attach SIEM search results to cases:** Manually attach individual UDM events
+  or detections directly from SIEM search results to new or existing cases as core
+  evidence (supporting up to 500 detections and 5,000 UDM events per case). For
+  details, see [Attach SIEM search results to cases](https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/create-case-from-search).
+* **Interactive Events Viewer:** Dive directly into technical evidence from an
+  interactive side panel. Inspect parsed UDM records, review original raw logs,
+  pin key evidence to your case, and build detection exclusions in real time. For
+  details, see [Use the Events Viewer](https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/use-events-viewer).
+* **Configure new default views:** Two new views (**New Default Alert View** and
+  **New Default Case View**) are available under **SOAR Settings > Case Data > Views**
+  for the enhanced Cases experience. Before enabling the feature, make sure to
+  manually copy over advanced widget configurations (such as **Safe HTML Rendering**
+  or custom **Conditions**) from the **Default Alert View** and **Default Case View**
+  to these new default views to preserve your preferred setups.
+
+---
 ## 2026-07-20
 
 ### Deprecated
 
-**[Spotlight Feature] Deprecation of Google SecOps legacy SIEM APIs**
+**[Spotlight Feature] Deprecation of Google Security Operations legacy SIEM APIs**
 
 Google Security Operations is [deprecating](https://docs.cloud.google.com/chronicle/docs/deprecations) its legacy SIEM APIs—[Backstory API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#backstory_api) (including [Customer Management API](https://docs.cloud.google.com/chronicle/docs/reference/customer-management-api)) and [Ingestion API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#ingestion_api)—in favor of the modern [Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#chronicle_api).
 

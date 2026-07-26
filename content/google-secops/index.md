@@ -4,7 +4,7 @@
 
 ### Deprecated
 
-**[Spotlight Feature] Deprecation of Google Security Operations legacy SIEM APIs**
+**[Spotlight Feature] Deprecation of Google SecOps legacy SIEM APIs**
 
 Google Security Operations is [deprecating](https://docs.cloud.google.com/chronicle/docs/deprecations) its legacy SIEM APIs—[Backstory API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#backstory_api) (including [Customer Management API](https://docs.cloud.google.com/chronicle/docs/reference/customer-management-api)) and [Ingestion API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#ingestion_api)—in favor of the modern [Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#chronicle_api).
 

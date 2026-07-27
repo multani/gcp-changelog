@@ -1,5 +1,23 @@
 # Agent Registry
 
+## 2026-07-23
+
+### Feature
+
+Agent skill governance is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+Agent Registry supports standalone skill governance, helping enable secure, enterprise-level management and governance of standalone skills for AI agents. You can register skill resources, upload and validate ZIP payload packages, track version history through immutable skill revisions, and review verified skill publishers.
+
+This release includes the following features:
+
+* **Lifecycle and versioning:** Register and manage standalone `Skill` resources, lifecycle states, and version snapshots (`SkillRevision`).
+* **Console support:** A dedicated **Skills** tab in Google Cloud Console to register, update, download, and monitor skills and revisions.
+* **Access policy enforcement:** Use policy bindings to authorize reasoning engine agents to load standalone skills.
+* **Semantic search:** Query the registry to search and discover standalone skills.
+
+For more information, see [Register skills](https://docs.cloud.google.com/agent-registry/register-skills) and [Manage skills](https://docs.cloud.google.com/agent-registry/manage-skills).
+
+---
 ## 2026-06-18
 
 ### Announcement

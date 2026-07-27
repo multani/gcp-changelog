@@ -1142,22 +1142,7 @@ Fixed CVE-2026-53275 in the Linux kernel.
 
 ### Change
 
-
-
-### cos-dev-133-19907-0-0
-
-|  |  |  |  |
-| --- | --- | --- | --- |
-| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
-| [COS-6.18.36](https://cos.googlesource.com/third_party/kernel/+/3b8b0b32fb46c4ac9a0174e54d556700fcf584c7 ) | v29.4.3 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19907.0.0/lakitu/gpu_driver_versions.textproto) |
-
-### Change
-
 Updated cloud-provider-gcp to v35.0.8, docker-credential-gcr to v2.1.32, docker-credential-helpers to v0.9.7, nvidia-container-toolkit to v1.17.9, isa-l to v2.31.1, oauthlib to v3.0.2, apparmor-profiles to v3.1.7, apparmor to v3.1.7, ek-cpu-balloon to v1.2.3, libapparmor to v3.1.7.
-
-### Change
-
-Updated app-arch/gzip to v1.14\_p20260502, app-arch/xz-utils to v5.4.7, app-arch/zstd to v1.5.7, app-crypt/mit-krb5 to v1.22.2, app-editors/vim and app-editors/vim-core to v9.1.2148, dev-libs/libaio to v0.3.113-r2, dev-libs/xxhash to v0.8.3, dev-python/PySocks to v1.6.8, dev-python/cryptography to v39.0.2, dev-python/markupsafe to v2.1.5, dev-python/pyrsistent to v0.14.11, dev-python/python-magic to v0.4.27, dev-python/pyyaml to v6.0.3, dev-python/rfc3339-validator to v0.1.4-r1, net-misc/rsync to v3.4.4, sys-apps/mawk to v1.3.4\_p20260302, sys-libs/libxcrypt to v4.4.38, sys-libs/talloc to v2.4.4, sys-fs/lvm2 to v2.03.39, sys-libs/binutils-libs to v2.46.1.
 
 ### Change
 
@@ -1165,19 +1150,7 @@ Updated gzip to v1.14\_p20260502, xz-utils to v5.4.7, zstd to v1.5.7, mit-krb5 t
 
 ### Change
 
-Updated app-containers/cloud-provider-gcp to v35.0.8, app-containers/docker-credential-gcr to v2.1.32, app-containers/nvidia-container-toolkit to v1.17.9, dev-libs/isa-l to v2.31.1, dev-python/oauthlib to v3.0.2, net-fs/nfs-utils to v2.6.4, sec-policy/apparmor-profiles, sys-apps/apparmor, and sys-libs/libapparmor to v3.1.7.
-
-### Change
-
 Updated libtraceevent to v1.7.3, libtracefs to v1.6.4, conntrack-tools to v1.4.9, fuse to v2.9.9, fuse-common to v3.10.5.
-
-### Change
-
-Updated dev-libs/libtraceevent to v1.7.3, dev-libs/libtracefs to v1.6.4, net-firewall/conntrack-tools to v1.4.9, sys-fs/fuse to v2.9.9, sys-fs/fuse-common to v3.10.5.
-
-### Change
-
-Updated sys-apps/casfs to v0.1.14.
 
 ### Change
 
@@ -1188,37 +1161,17 @@ Updated sys-apps/casfs to v0.1.14.
 Added cos-dkms support for vast client
 drivers v4.5.7.
 
-### Change
-
-Updated the Linux kernel to v6.18.36.
-
 ### Feature
 
 Support nvidia-fs for COS GPU installer
 
-### Feature
-
-Added support for loading the ublk kernel module.
-
 ### Fixed
 
 Upgraded app-admin/sosreport to v4.11.2.
-
-### Fixed
-
-Upgraded app-admin/sosreport to v4.11.2.
-
-### Fixed
-
-Upgraded app-containers/docker-credential-helpers to v0.9.8.
 
 ### Fixed
 
 Upgraded app-shells/dash to v0.5.13.4-r2.
-
-### Fixed
-
-Upgraded app-emulation/cloud-init to v26.1.
 
 ### Fixed
 
@@ -1230,27 +1183,15 @@ Upgraded net-misc/curl to v8.20.0-r1.
 
 ### Fixed
 
-Upgraded app-shells/dash to v0.5.13.4-r2.
-
-### Fixed
-
 Upgraded net-misc/rsync to v3.4.4.
 
 ### Fixed
 
 Upgraded sys-apps/gentoo-functions to v1.7.7.
 
-### Fixed
-
-Upgraded chromeos-base/google-breakpad to v2026.06.22.165940-r278.
-
 ### Security
 
 Fixed CVE-2026-11822, CVE-2026-11824 in dev-db/sqlite.
-
-### Fixed
-
-Upgraded net-misc/curl to v8.20.0-r1.
 
 ### Security
 
@@ -1258,15 +1199,7 @@ Fixed CVE-2026-43116 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-40226 in sys-apps/systemd.
-
-### Security
-
 Fixed CVE-2026-45850 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-5928 in sys-libs/glibc.
 
 ### Security
 
@@ -1274,15 +1207,7 @@ Fixed CVE-2026-52908 in the Linux kernel.
 
 ### Security
 
-Fixed CVE-2026-6238 in sys-libs/glibc.
-
-### Security
-
 Fixed CVE-2026-52910 in the Linux kernel.
-
-### Security
-
-Fixed CVE-2026-7210 in dev-lang/python.
 
 ### Security
 
@@ -1290,28 +1215,7 @@ Fixed CVE-2026-52912 in the Linux kernel.
 
 ### Security
 
-Upgraded dev-libs/openssl to v3.5.7 to fix CVE-2026-9076,
-CVE-2026-34183,CVE-2026-45445,CVE-2026-42764,CVE-2026-7383,CVE-2026-45447,
-CVE-2026-34182,CVE-2026-34181,CVE-2026-34180.
-
-### Security
-
 Fixed CVE-2026-52920 in the Linux kernel.
-
-### Change
-
-Runtime sysctl changes:
-
-* Changed: kernel.threads-max: 63459 -> 63460
-* Changed: net.ipv4.udp\_mem: 187989 250654 375978 -> 187989 250655 375978
-* Changed: user.max\_cgroup\_namespaces: 31729 -> 31730
-* Changed: user.max\_ipc\_namespaces: 31729 -> 31730
-* Changed: user.max\_mnt\_namespaces: 31729 -> 31730
-* Changed: user.max\_net\_namespaces: 31729 -> 31730
-* Changed: user.max\_pid\_namespaces: 31729 -> 31730
-* Changed: user.max\_time\_namespaces: 31729 -> 31730
-* Changed: user.max\_user\_namespaces: 31729 -> 31730
-* Changed: user.max\_uts\_namespaces: 31729 -> 31730
 
 ### Security
 

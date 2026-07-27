@@ -1,5 +1,15 @@
 # Dataform
 
+## 2026-07-27
+
+### Feature
+
+[Dataform deployments](https://docs.cloud.google.com/dataform/docs/deployments)
+provide a centralized experience for creating and managing pipeline
+deployments connected to remote Git repositories. This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-13
 
 ### Security

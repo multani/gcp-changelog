@@ -1,5 +1,13 @@
 # Cloud NGFW
 
+## 2026-07-27
+
+### Breaking
+
+Enabling WildFire in an existing firewall endpoint can cause a temporary
+data plane outage. As a result, the WildFire feature is temporarily removed.
+
+---
 ## 2026-07-20
 
 ### Feature

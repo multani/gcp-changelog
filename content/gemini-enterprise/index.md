@@ -1,5 +1,24 @@
 # Gemini Enterprise
 
+## 2026-07-27
+
+### Feature
+
+**Gemini Enterprise: Transparent thinking**
+
+Transparent thinking is generally available (GA). During chat interactions,
+the assistant shares its real-time reasoning and planning in the user
+interface before calling tools or data sources.
+
+An expandable section displays the tool activity between the thinking phase
+and the final answer. This transparency delivers a faster time to first
+token (TTFT) and improves perceived latency without increasing total
+response time.
+
+For more information, see
+[Ask questions and view sources](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat#ask_questions_and_view_sources).
+
+---
 ## 2026-07-24
 
 ### Feature

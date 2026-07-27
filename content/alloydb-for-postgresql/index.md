@@ -4,6 +4,21 @@
 
 ### Feature
 
+AlloyDB now supports cross-region failover in
+[Preview](https://cloud.google.com/products#product-launch-stages). You can
+optionally enable cross-region failover to automate the recreation of the
+original primary when a secondary cluster is promoted while maintaining your
+replication topology without requiring manual cluster deletion or re-creation.
+Cross-region failover is supported only for topologies with a single primary
+cluster and a single secondary cluster.
+
+For more information, see [About cross-region
+replication](https://docs.cloud.google.com/alloydb/docs/cross-region-replication/about-cross-region-replication)
+and [Work with cross-region
+replication](https://docs.cloud.google.com/alloydb/docs/cross-region-replication/work-with-cross-region-replication).
+
+### Feature
+
 External search with AlloyDB now supports [OpenSearch](https://docs.cloud.google.com/alloydb/docs/opensearch) in [Preview](https://cloud.google.com/products#product-launch-stages).
 You can use the [`external_search_fdw`](https://docs.cloud.google.com/alloydb/docs/reference/extensions#external_search_fdw) extension to connect to an OpenSearch cluster and query its data directly from your database.
 

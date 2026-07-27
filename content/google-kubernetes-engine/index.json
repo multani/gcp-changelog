@@ -1,6 +1,24 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-07-27": [
+      {
+        "kind": "Security",
+        "content": "The general availability (GA) stage of mixed-protocol Services of type\nLoadBalancer fixes errors in traffic routing from stages prior to GA. This\nfeature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.",
+        "summary": {
+          "title": "LoadBalancer services now GA",
+          "summary": "Mixed-protocol Services of type LoadBalancer have reached general availability in GKE version 1.36.2-gke.1498000 and later. This update resolves prior traffic routing errors. This enhancement improves the reliability and performance of your network services."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In version 1.36.2-gke.1498000 and later, GKE supports mixed-protocol Services of\ntype LoadBalancer in general availability (GA). Mixed-protocol Services let both\nexternal (NetLB) and internal (ILB) passthrough Network Load Balancers handle\nsimultaneous TCP and UDP traffic on a single IP address across IPv4, IPv6, and\ndual-stack environments.",
+        "summary": {
+          "title": "Mixed-Protocol Load Balancer Support is Now GA",
+          "summary": "GKE now supports mixed-protocol LoadBalancer Services in general availability. This feature allows a single IP address to handle simultaneous TCP and UDP traffic across IPv4, IPv6, and dual-stack environments for both external and internal passthrough Network Load Balancers."
+        }
+      }
+    ],
     "2026-07-24": [
       {
         "kind": "Change",

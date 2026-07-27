@@ -1,5 +1,22 @@
 # BigQuery
 
+## 2026-07-27
+
+### Feature
+
+You can discover commercial BigQuery sharing listings on Google Cloud Marketplace with the **Marketplace** filter. For more information, see [Subscribe to a Cloud Marketplace-integrated listing](https://docs.cloud.google.com/bigquery/docs/analytics-hub-cloud-marketplace#subscribe).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can use the [`APPENDS` and `CHANGES` change history functions](https://docs.cloud.google.com/bigquery/docs/change-history)
+to view the rows that were appended to or changed in a table during a given time
+range. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-07-23
 
 ### Change

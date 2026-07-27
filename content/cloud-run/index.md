@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-07-27
+
+### Feature
+
+Support for the [Node.js 26 runtime](https://docs.cloud.google.com/run/docs/runtime-support#node.js) is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-14
 
 ### Feature

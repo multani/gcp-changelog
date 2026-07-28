@@ -2,6 +2,31 @@
 
 ## 2026-07-27
 
+### Feature
+
+**Smart disposition**
+
+Smart disposition is a new AI-powered capability that automatically suggests a
+disposition code at the end of a session. This reduces manual work for agents
+and improves data consistency.
+
+Administrators: There's a new **Smart Disposition** toggle in the following
+locations:
+
+* The **Settings > Operation Management > Wrap-up
+  > Automatic wrap-up for inbound calls > Disposition
+  Codes & Notes for calls > Disposition Codes** section.
+* The **Settings > Operation Management > Wrap-up
+  > Automatic wrap-up for outbound calls > Disposition
+  Codes & Notes for calls > Disposition Codes** section.
+* The **Settings > Operation Management > Wrap-up
+  > Automatic wrap-up for chats > Disposition Codes &
+  Notes for chats > Disposition Codes** section.
+
+User experience change: When smart disposition is turned on, a suggested
+disposition displays in the **Disposition** field of the **Wrap-up** screen in
+the agent adapter.
+
 ### Fixed
 
 This release addresses the following issues:

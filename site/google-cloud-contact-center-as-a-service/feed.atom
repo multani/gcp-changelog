@@ -9,7 +9,78 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:announcement:0</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.</p>]]></content>
+    <summary>These are the pre-release notes for the upcoming version of CCaaS, detailing the new capabilities expected upon release.</summary>
+    <title>Announcement: CCaaS Pre-release Notes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:feature:1</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Answering machine detection for progressive campaigns</strong></p>
+<p>Answering machine detection (AMD) is now supported for progressive outbound
+campaigns. When enabled, Contact Center AI Platform analyzes call audio in the background
+to determine whether a call reaches a live person, or whether it reaches an
+answering machine or voicemail. If an answering machine or voicemail is
+detected, the call ends and the dialer proceeds to the next contact.</p>
+<p>Administrators: In the <strong>Settings &gt; Campaigns &gt; Dialer
+Modes</strong> pane, there's a new <strong>Enable Answering Machine Detection</strong> toggle.</p>
+<p>User experience change: When CCAI Platform detects voicemail or an
+answering machine, a green banner appears in the call adapter to indicate this.</p>]]></content>
+    <summary>Progressive outbound campaigns now support answering machine detection. This feature analyzes call audio to identify live persons versus answering machines, allowing the dialer to proceed to the next contact if voicemail is detected. A green banner will indicate when voicemail is detected.</summary>
+    <title>Feature: Answering Machine Detection Launched</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:feature:2</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email parsed data endpoints</strong></p>
+<p>Two new read-only apps API endpoints are now available, allowing external
+systems to retrieve the parsed contents of an email interaction. This includes
+the sender, recipients, subject, body, and attachment metadata. Here are the
+endpoints:</p>
+<ul>
+<li><code>/apps/api/v1/email/sessions/{email_support_id}</code>: Returns a summarization of a
+  session and lists its messages.</li>
+<li><code>/apps/api/v1/email/messages/{email_thread_id}</code>: Returns the full parsed
+  content of a single message.</li>
+</ul>]]></content>
+    <summary>Two new read-only API endpoints are now available to retrieve parsed email interaction data, including sender, recipients, subject, body, and attachment metadata. These endpoints allow external systems to access summarized session data or the full content of individual messages.</summary>
+    <title>Feature: Access Parsed Email Data via New API Endpoints</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:feature:3</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email forwarding with attachments</strong></p>
+<p>Agents can now forward emails to external recipients directly from the email
+adapter. When forwarding, all attachments from the original email are
+automatically included. Agents can remove attachments before sending, if needed.
+The original email remains in its assigned queue with its status unchanged.</p>
+<p>User experience change: A new <strong>Forward</strong> button is available in the email
+adapter.</p>]]></content>
+    <summary>Agents can now forward emails with attachments directly from the email adapter. Attachments are automatically included but can be removed before sending. The original email is preserved in its queue.</summary>
+    <title>Feature: Email forwarding with attachments</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:feature:4</id>
     <published>2026-07-27T00:00:00+00:00</published>
     <updated>2026-07-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Smart disposition</strong></p>
@@ -45,7 +116,7 @@ the agent adapter.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-27:fixed:5</id>
     <published>2026-07-27T00:00:00+00:00</published>
     <updated>2026-07-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>

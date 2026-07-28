@@ -1,5 +1,20 @@
 # Secret Manager
 
+## 2026-07-27
+
+### Feature
+
+Automatic rotation of regional Cloud SQL database credentials in Secret Manager
+is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). This feature
+lets you automatically generate secure passwords, update target Cloud SQL
+database instances (PostgreSQL or SQL Server), and rotate secret versions on a
+configured schedule without custom Cloud Run functions.
+
+For more information, see [Automatic rotation of Cloud SQL
+secrets](https://docs.cloud.google.com/secret-manager/regional-secrets/autorotation-of-cloudsql-secrets-rs).
+
+---
 ## 2026-07-12
 
 ### Feature

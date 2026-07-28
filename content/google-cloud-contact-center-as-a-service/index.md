@@ -2,6 +2,55 @@
 
 ## 2026-07-27
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Answering machine detection for progressive campaigns**
+
+Answering machine detection (AMD) is now supported for progressive outbound
+campaigns. When enabled, Contact Center AI Platform analyzes call audio in the background
+to determine whether a call reaches a live person, or whether it reaches an
+answering machine or voicemail. If an answering machine or voicemail is
+detected, the call ends and the dialer proceeds to the next contact.
+
+Administrators: In the **Settings > Campaigns > Dialer
+Modes** pane, there's a new **Enable Answering Machine Detection** toggle.
+
+User experience change: When CCAI Platform detects voicemail or an
+answering machine, a green banner appears in the call adapter to indicate this.
+
+### Feature
+
+**Email parsed data endpoints**
+
+Two new read-only apps API endpoints are now available, allowing external
+systems to retrieve the parsed contents of an email interaction. This includes
+the sender, recipients, subject, body, and attachment metadata. Here are the
+endpoints:
+
+* `/apps/api/v1/email/sessions/{email_support_id}`: Returns a summarization of a
+  session and lists its messages.
+* `/apps/api/v1/email/messages/{email_thread_id}`: Returns the full parsed
+  content of a single message.
+
+### Feature
+
+**Email forwarding with attachments**
+
+Agents can now forward emails to external recipients directly from the email
+adapter. When forwarding, all attachments from the original email are
+automatically included. Agents can remove attachments before sending, if needed.
+The original email remains in its assigned queue with its status unchanged.
+
+User experience change: A new **Forward** button is available in the email
+adapter.
+
 ### Feature
 
 **Smart disposition**

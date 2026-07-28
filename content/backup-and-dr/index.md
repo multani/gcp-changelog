@@ -1,5 +1,17 @@
 # Backup and DR
 
+## 2026-07-24
+
+### Feature
+
+You can now use Model Context Protocol (MCP) servers with Backup and DR Service to connect AI assistants and applications—such as the Gemini CLI, ChatGPT, or Claude—with your backup environment. Using either the local or remote MCP server, you can use natural language prompts to perform and automate Backup and DR tasks, such as creating backup plans, triggering on-demand backups, and managing backup vaults. Comprehensive reference documentation is also available with detailed specifications, input and output schemas, and sample invocation commands for all available MCP tools.
+
+For more information, see the following:
+
+* [Use the Backup and DR remote MCP server](https://docs.cloud.google.com/backup-disaster-recovery/docs/integrations/remote-mcp)
+* [Backup and DR MCP reference](https://docs.cloud.google.com/backup-disaster-recovery/docs/reference/mcp)
+
+---
 ## 2026-07-10
 
 ### Feature

@@ -1,5 +1,17 @@
 # Bigtable
 
+## 2026-07-27
+
+### Feature
+
+The Bigtable remote MCP server supports the Bigtable Data API, which
+provides the `execute_sql` tool that you can use to query Bigtable data using
+natural language prompts. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[Use the Bigtable remote MCP server](https://docs.cloud.google.com/bigtable/docs/use-bigtable-mcp).
+
+---
 ## 2026-07-14
 
 ### Feature

@@ -1,5 +1,18 @@
 # Google SecOps
 
+## 2026-07-28
+
+### Feature
+
+**[Spotlight Feature] Data RBAC for first-party (1P) cases and alerts**
+
+**Availability** This feature is now available in public preview for all regions.
+
+Google SecOps now supports data role-based access control (Data RBAC) for first-party (1P) SOAR cases and alerts. This feature automatically applies SIEM data access scopes to alerts and cases ingested using the Chronicle connector, ensuring analysts only see data they are authorized to access.
+
+For more information, see the [Release Note entry for July 6th](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#July_06_2026).
+
+---
 ## 2026-07-26
 
 ### Feature

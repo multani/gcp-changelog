@@ -1,5 +1,16 @@
 # Audit Manager
 
+## 2026-07-17
+
+### Feature
+
+Audit Manager includes the following features in [Preview](https://cloud.google.com/products#product-launch-stages):
+
+* A new [UI and report experience](https://docs.cloud.google.com/audit-manager/docs/view-audit#compliance-score)
+* Ability to [schedule audits](https://docs.cloud.google.com/audit-manager/docs/run-audit)
+* Ability to run audits at an organization level
+
+---
 ## 2026-07-02
 
 ### Feature

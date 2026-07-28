@@ -1,5 +1,13 @@
 # Access Transparency
 
+## 2026-07-22
+
+### Feature
+
+Privileged Access Manager is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-22
 
 ### Feature

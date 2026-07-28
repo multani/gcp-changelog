@@ -3,6 +3,38 @@
   "entries": {
     "2026-07-27": [
       {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "CCaaS Pre-release Notes",
+          "summary": "These are the pre-release notes for the upcoming version of CCaaS, detailing the new capabilities expected upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Answering machine detection for progressive campaigns**\n\nAnswering machine detection (AMD) is now supported for progressive outbound\ncampaigns. When enabled, Contact Center AI Platform analyzes call audio in the background\nto determine whether a call reaches a live person, or whether it reaches an\nanswering machine or voicemail. If an answering machine or voicemail is\ndetected, the call ends and the dialer proceeds to the next contact.\n\nAdministrators: In the **Settings > Campaigns > Dialer\nModes** pane, there's a new **Enable Answering Machine Detection** toggle.\n\nUser experience change: When CCAI Platform detects voicemail or an\nanswering machine, a green banner appears in the call adapter to indicate this.",
+        "summary": {
+          "title": "Answering Machine Detection Launched",
+          "summary": "Progressive outbound campaigns now support answering machine detection. This feature analyzes call audio to identify live persons versus answering machines, allowing the dialer to proceed to the next contact if voicemail is detected. A green banner will indicate when voicemail is detected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Email parsed data endpoints**\n\nTwo new read-only apps API endpoints are now available, allowing external\nsystems to retrieve the parsed contents of an email interaction. This includes\nthe sender, recipients, subject, body, and attachment metadata. Here are the\nendpoints:\n\n* `/apps/api/v1/email/sessions/{email_support_id}`: Returns a summarization of a\n  session and lists its messages.\n* `/apps/api/v1/email/messages/{email_thread_id}`: Returns the full parsed\n  content of a single message.",
+        "summary": {
+          "title": "Access Parsed Email Data via New API Endpoints",
+          "summary": "Two new read-only API endpoints are now available to retrieve parsed email interaction data, including sender, recipients, subject, body, and attachment metadata. These endpoints allow external systems to access summarized session data or the full content of individual messages."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Email forwarding with attachments**\n\nAgents can now forward emails to external recipients directly from the email\nadapter. When forwarding, all attachments from the original email are\nautomatically included. Agents can remove attachments before sending, if needed.\nThe original email remains in its assigned queue with its status unchanged.\n\nUser experience change: A new **Forward** button is available in the email\nadapter.",
+        "summary": {
+          "title": "Email forwarding with attachments",
+          "summary": "Agents can now forward emails with attachments directly from the email adapter. Attachments are automatically included but can be removed before sending. The original email is preserved in its queue."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Smart disposition**\n\nSmart disposition is a new AI-powered capability that automatically suggests a\ndisposition code at the end of a session. This reduces manual work for agents\nand improves data consistency.\n\nAdministrators: There's a new **Smart Disposition** toggle in the following\nlocations:\n\n* The **Settings > Operation Management > Wrap-up\n  > Automatic wrap-up for inbound calls > Disposition\n  Codes & Notes for calls > Disposition Codes** section.\n* The **Settings > Operation Management > Wrap-up\n  > Automatic wrap-up for outbound calls > Disposition\n  Codes & Notes for calls > Disposition Codes** section.\n* The **Settings > Operation Management > Wrap-up\n  > Automatic wrap-up for chats > Disposition Codes &\n  Notes for chats > Disposition Codes** section.\n\nUser experience change: When smart disposition is turned on, a suggested\ndisposition displays in the **Disposition** field of the **Wrap-up** screen in\nthe agent adapter.",
         "summary": {

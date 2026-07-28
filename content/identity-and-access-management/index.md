@@ -1,5 +1,15 @@
 # Identity and Access Management
 
+## 2026-07-27
+
+### Feature
+
+Managed workload identities for Compute Engine are
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Configure managed workload identity authentication for Compute Engine](https://docs.cloud.google.com/iam/docs/create-managed-workload-identities).
+
+---
 ## 2026-06-18
 
 ### Feature

@@ -6,6 +6,10 @@
 
 Support for the [Node.js 26 runtime](https://docs.cloud.google.com/run/docs/runtime-support#node.js) is in [Preview](https://cloud.google.com/products#product-launch-stages).
 
+### Feature
+
+Support for [Budget spend caps](https://docs.cloud.google.com/run/docs/configuring/billing-settings#spend-caps) to pause your Cloud Run workloads is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
 ---
 ## 2026-07-14
 

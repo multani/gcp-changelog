@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-07-27
+
+### Feature
+
+Added [support](https://docs.cloud.google.com/memorystore/docs/valkey/supported-versions) for Valkey version 9.1. As a result, you can now upgrade the version of your Memorystore for Valkey instance to 9.1. For more information, see [About upgrading the Valkey version of an instance](https://docs.cloud.google.com/memorystore/docs/valkey/about-upgrading-version). This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-04
 
 ### Feature

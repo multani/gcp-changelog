@@ -1,5 +1,27 @@
 # Apigee X
 
+## 2026-07-27
+
+### Announcement
+
+On July 27th, 2026, we released an updated version of Apigee (1-18-0-apigee-2).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **534852923** | **Security fix for Apigee.** Fixed a security issue in the Java Callout policy. |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | Updates to infrastructure and libraries. |
+
+---
 ## 2026-07-16
 
 ### Announcement

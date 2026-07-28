@@ -2,11 +2,13 @@
 
 ## 2026-07-27
 
-### Security
+### Feature
 
-The general availability (GA) stage of mixed-protocol Services of type
-LoadBalancer fixes errors in traffic routing from stages prior to GA. This
-feature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.
+In GKE version 1.36 and later, GKE Dataplane V2 with NetworkPolicies supports up
+to 15,000 nodes per cluster, increased from the previous limit of 7,500 nodes.
+For clusters exceeding 5,000 nodes, contact Cloud Customer Care to request a
+quota increase. For more information, see
+[Cluster size limits and requirements](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/planning-large-clusters#clusters-5k-nodes).
 
 ### Feature
 
@@ -15,6 +17,12 @@ type LoadBalancer in general availability (GA). Mixed-protocol Services let both
 external (NetLB) and internal (ILB) passthrough Network Load Balancers handle
 simultaneous TCP and UDP traffic on a single IP address across IPv4, IPv6, and
 dual-stack environments.
+
+### Security
+
+The general availability (GA) stage of mixed-protocol Services of type
+LoadBalancer fixes errors in traffic routing from stages prior to GA. This
+feature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.
 
 ---
 ## 2026-07-24

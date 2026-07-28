@@ -2148,10 +2148,34 @@
       },
       {
         "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to the event data API",
+          "summary": "We are releasing an update to the event data API that will improve its performance and reliability. This update includes several bug fixes and optimizations that will ensure a smoother experience for our users. The new version will be rolled out gradually over the next week."
+        }
+      },
+      {
+        "kind": "cos-dev-133-19907-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.18.36](https://cos.googlesource.com/third_party/kernel/+/3b8b0b32fb46c4ac9a0174e54d556700fcf584c7 ) | v29.4.3 | v2.2.3 | [See List](https://storage.googleapis.com/cos-tools/19907.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19907.0.0 Released",
+          "summary": "The Container-Optimized OS 19907.0.0 release includes kernel v6.18.36, Docker v29.4.3, and Containerd v2.2.3. This update also provides updated GPU drivers for enhanced hardware support."
+        }
+      },
+      {
+        "kind": "Change",
         "content": "Updated cloud-provider-gcp to v35.0.8, docker-credential-gcr to v2.1.32, docker-credential-helpers to v0.9.7, nvidia-container-toolkit to v1.17.9, isa-l to v2.31.1, oauthlib to v3.0.2, apparmor-profiles to v3.1.7, apparmor to v3.1.7, ek-cpu-balloon to v1.2.3, libapparmor to v3.1.7.",
         "summary": {
           "title": "Software updates released",
           "summary": "Several components have been updated to their latest versions, including cloud-provider-gcp, docker-credential-gcr, and nvidia-container-toolkit. These updates bring the software to v35.0.8, v2.1.32, and v1.17.9 respectively. Other notable updates include isa-l to v2.31.1 and oauthlib to v3.0.2."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated app-arch/gzip to v1.14\\_p20260502, app-arch/xz-utils to v5.4.7, app-arch/zstd to v1.5.7, app-crypt/mit-krb5 to v1.22.2, app-editors/vim and app-editors/vim-core to v9.1.2148, dev-libs/libaio to v0.3.113-r2, dev-libs/xxhash to v0.8.3, dev-python/PySocks to v1.6.8, dev-python/cryptography to v39.0.2, dev-python/markupsafe to v2.1.5, dev-python/pyrsistent to v0.14.11, dev-python/python-magic to v0.4.27, dev-python/pyyaml to v6.0.3, dev-python/rfc3339-validator to v0.1.4-r1, net-misc/rsync to v3.4.4, sys-apps/mawk to v1.3.4\\_p20260302, sys-libs/libxcrypt to v4.4.38, sys-libs/talloc to v2.4.4, sys-fs/lvm2 to v2.03.39, sys-libs/binutils-libs to v2.46.1.",
+        "summary": {
+          "title": "Software package updates",
+          "summary": "Several software packages have been updated to their latest versions, including compression utilities, security libraries, text editors, and system utilities. These updates bring improvements and bug fixes to various components of the system."
         }
       },
       {
@@ -2164,10 +2188,34 @@
       },
       {
         "kind": "Change",
+        "content": "Updated app-containers/cloud-provider-gcp to v35.0.8, app-containers/docker-credential-gcr to v2.1.32, app-containers/nvidia-container-toolkit to v1.17.9, dev-libs/isa-l to v2.31.1, dev-python/oauthlib to v3.0.2, net-fs/nfs-utils to v2.6.4, sec-policy/apparmor-profiles, sys-apps/apparmor, and sys-libs/libapparmor to v3.1.7.",
+        "summary": {
+          "title": "Software Updates Released",
+          "summary": "Several software packages have been updated to their latest versions. This includes updates for app-containers, docker-credential-gcr, nvidia-container-toolkit, isa-l, oauthlib, nfs-utils, and apparmor-profiles."
+        }
+      },
+      {
+        "kind": "Change",
         "content": "Updated libtraceevent to v1.7.3, libtracefs to v1.6.4, conntrack-tools to v1.4.9, fuse to v2.9.9, fuse-common to v3.10.5.",
         "summary": {
           "title": "Package Updates",
           "summary": "Several key packages, including libtraceevent, libtracefs, conntrack-tools, fuse, and fuse-common, have been updated to their latest versions. These updates bring improvements and bug fixes to the system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated dev-libs/libtraceevent to v1.7.3, dev-libs/libtracefs to v1.6.4, net-firewall/conntrack-tools to v1.4.9, sys-fs/fuse to v2.9.9, sys-fs/fuse-common to v3.10.5.",
+        "summary": {
+          "title": "Library updates",
+          "summary": "Several development libraries and system utilities have been updated to their latest versions, including libtraceevent, libtracefs, conntrack-tools, fuse, and fuse-common. These updates ensure improved performance and security."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated sys-apps/casfs to v0.1.14.",
+        "summary": {
+          "title": "sys-apps/casfs updated",
+          "summary": "sys-apps/casfs has been updated to version 0.1.14. This update includes various improvements and bug fixes."
         }
       },
       {
@@ -2187,11 +2235,27 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "Updated the Linux kernel to v6.18.36.",
+        "summary": {
+          "title": "Linux kernel updated",
+          "summary": "The Linux kernel has been updated to version 6.18.36. This update includes various improvements and bug fixes for the operating system."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "Support nvidia-fs for COS GPU installer",
         "summary": {
           "title": "NVIDIA FS Support for COS GPU Installer",
           "summary": "We're excited to announce that the COS GPU installer now supports NVIDIA FS. This update enhances GPU management and performance for your workloads. You can now leverage NVIDIA FS seamlessly with our COS GPU installer for improved efficiency."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for loading the ublk kernel module.",
+        "summary": {
+          "title": "Support for ublk kernel module added",
+          "summary": "We've added support for loading the ublk kernel module. This enhancement improves the flexibility of storage management within the system."
         }
       },
       {
@@ -2204,10 +2268,34 @@
       },
       {
         "kind": "Fixed",
+        "content": "Upgraded app-admin/sosreport to v4.11.2.",
+        "summary": {
+          "title": "sosreport upgraded",
+          "summary": "The sosreport tool has been upgraded to version 4.11.2. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.8.",
+        "summary": {
+          "title": "Updated credential helpers",
+          "summary": "The app-containers/docker-credential-helpers have been upgraded to version 0.9.8. This update addresses underlying components related to credential management."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "Upgraded app-shells/dash to v0.5.13.4-r2.",
         "summary": {
           "title": "App-shells/dash updated",
           "summary": "The app-shells/dash component has been updated to version v0.5.13.4-r2. This is a fixed release."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-emulation/cloud-init to v26.1.",
+        "summary": {
+          "title": "Cloud-init updated",
+          "summary": "The app-emulation/cloud-init package has been successfully upgraded to version 26.1. This update addresses recent issues and improves functionality."
         }
       },
       {
@@ -2228,6 +2316,14 @@
       },
       {
         "kind": "Fixed",
+        "content": "Upgraded app-shells/dash to v0.5.13.4-r2.",
+        "summary": {
+          "title": "App-shells/dash updated",
+          "summary": "The app-shells/dash component has been updated to version v0.5.13.4-r2. This is a fixed release."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "Upgraded net-misc/rsync to v3.4.4.",
         "summary": {
           "title": "rsync upgraded to v3.4.4",
@@ -2243,11 +2339,27 @@
         }
       },
       {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2026.06.22.165940-r278.",
+        "summary": {
+          "title": "Breakpad upgrade",
+          "summary": "The google-breakpad package has been upgraded to version v2026.06.22.165940-r278. This update resolves issues and improves stability."
+        }
+      },
+      {
         "kind": "Security",
         "content": "Fixed CVE-2026-11822, CVE-2026-11824 in dev-db/sqlite.",
         "summary": {
           "title": "Security Updates for SQLite",
           "summary": "Critical security vulnerabilities in dev-db/sqlite have been addressed. This update fixes CVE-2026-11822 and CVE-2026-11824, enhancing the overall security of systems relying on this database component."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-misc/curl to v8.20.0-r1.",
+        "summary": {
+          "title": "curl package updated",
+          "summary": "The curl package has been updated to version 8.20.0-r1. This update addresses known issues and improves performance."
         }
       },
       {
@@ -2260,10 +2372,26 @@
       },
       {
         "kind": "Security",
+        "content": "Fixed CVE-2026-40226 in sys-apps/systemd.",
+        "summary": {
+          "title": "Security fix for systemd",
+          "summary": "A security vulnerability in systemd, CVE-2026-40226, has been addressed. This update resolves the issue, enhancing the overall security of the system. It is recommended to apply this fix promptly."
+        }
+      },
+      {
+        "kind": "Security",
         "content": "Fixed CVE-2026-45850 in the Linux kernel.",
         "summary": {
           "title": "Linux kernel security update",
           "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-45850, ensuring enhanced protection for your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-5928 in sys-libs/glibc.",
+        "summary": {
+          "title": "glibc Security Update",
+          "summary": "A security vulnerability (CVE-2026-5928) in sys-libs/glibc has been addressed. This update ensures the security and stability of your system by patching this critical issue."
         }
       },
       {
@@ -2276,10 +2404,26 @@
       },
       {
         "kind": "Security",
+        "content": "Fixed CVE-2026-6238 in sys-libs/glibc.",
+        "summary": {
+          "title": "glibc security fix released",
+          "summary": "A security vulnerability (CVE-2026-6238) in the glibc library has been addressed. This update resolves the issue, enhancing system security. Users are advised to apply the patch to protect their systems."
+        }
+      },
+      {
+        "kind": "Security",
         "content": "Fixed CVE-2026-52910 in the Linux kernel.",
         "summary": {
           "title": "Linux Kernel Security Update",
           "summary": "A security vulnerability (CVE-2026-52910) in the Linux kernel has been addressed. This update resolves the issue, enhancing system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-7210 in dev-lang/python.",
+        "summary": {
+          "title": "Security fix for Python",
+          "summary": "A security vulnerability, CVE-2026-7210, affecting Python has been resolved. This update ensures better protection against potential threats."
         }
       },
       {
@@ -2292,10 +2436,26 @@
       },
       {
         "kind": "Security",
+        "content": "Upgraded dev-libs/openssl to v3.5.7 to fix CVE-2026-9076,\nCVE-2026-34183,CVE-2026-45445,CVE-2026-42764,CVE-2026-7383,CVE-2026-45447,\nCVE-2026-34182,CVE-2026-34181,CVE-2026-34180.",
+        "summary": {
+          "title": "OpenSSL Security Update",
+          "summary": "This update addresses multiple critical vulnerabilities in OpenSSL by upgrading to version 3.5.7. Applying this patch is essential for maintaining the security and integrity of your systems."
+        }
+      },
+      {
+        "kind": "Security",
         "content": "Fixed CVE-2026-52920 in the Linux kernel.",
         "summary": {
           "title": "Linux kernel security update",
           "summary": "A critical security vulnerability, CVE-2026-52920, affecting the Linux kernel has been successfully patched. This update is essential for maintaining the security and integrity of systems running the Linux operating system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: kernel.threads-max: 63459 -> 63460\n* Changed: net.ipv4.udp\\_mem: 187989 250654 375978 -> 187989 250655 375978\n* Changed: user.max\\_cgroup\\_namespaces: 31729 -> 31730\n* Changed: user.max\\_ipc\\_namespaces: 31729 -> 31730\n* Changed: user.max\\_mnt\\_namespaces: 31729 -> 31730\n* Changed: user.max\\_net\\_namespaces: 31729 -> 31730\n* Changed: user.max\\_pid\\_namespaces: 31729 -> 31730\n* Changed: user.max\\_time\\_namespaces: 31729 -> 31730\n* Changed: user.max\\_user\\_namespaces: 31729 -> 31730\n* Changed: user.max\\_uts\\_namespaces: 31729 -> 31730",
+        "summary": {
+          "title": "Runtime sysctl updates",
+          "summary": "Several runtime sysctl parameters have been updated to improve system performance and stability. These changes include adjustments to thread limits, UDP memory settings, and maximum values for various cgroup namespaces."
         }
       },
       {

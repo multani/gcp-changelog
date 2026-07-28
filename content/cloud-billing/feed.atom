@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Billing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Billing</subtitle>
-  <updated>2026-07-24T00:00:00+00:00</updated>
+  <updated>2026-07-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-billing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-billing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-billing:2026-07-27:feature:0</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Spend cap budgets are now available for a limited set of services (Preview)</strong></p>
+<p>Available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>
+for
+<a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#eligible-services">eligible services</a>,
+you can now configure a
+<a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps"><strong>spend cap budget</strong></a>
+to automatically pause usage when your spend exceeds the budget amount you set.</p>
+<p>Spend caps are a cost control mechanism. A spend cap is enforced when usage
+costs exceed your budget target amount. When enforced, any new request to the
+eligible services, within the specified project, are paused and no further
+usage costs are accrued until you manually lift the spend cap.</p>
+<p>Spend caps typically use <em>estimated costs</em> to trigger the alerts and caps,
+enforcing a cap much faster than the <em>actual costs</em> are processed and appear
+on billing reports. Even though faster than reports, the enforcement of spend
+caps isn't instant and any cost overages are billed as normal.</p>
+<p>For more information about spend cap budgets, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#how-spend-cap-budgets-work">How spend cap budgets work to help you control spend</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#configure-spend-cap">Configure a spend cap budget</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#lift-spend-cap">Lift an enforced spend cap</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#limitations">Limitations of spend cap budgets</a></li>
+</ul>]]></content>
+    <summary>You can now set spend cap budgets for eligible services to automatically pause usage when your spending exceeds your set budget. This feature helps control costs by stopping new requests before overspending occurs.</summary>
+    <title>Feature: New Spend Cap Budgets Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -48,12 +80,12 @@ page, with your payments documents filtered by the <em>Google payments account</
 that is linked to the Cloud Billing account that you are viewing.</p>
 <p>For more information about payments documents, see:</p>
 <ul>
-<li><a href="https://docs.cloud.google.com/billing/docs/how-to/get-invoice">Get a Cloud Billing document such as an invoice, statement, or receipt</a>.</li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/get-invoice">Get a Cloud Billing document such as an invoice, statement, or receipt</a></li>
 <li><a href="https://docs.cloud.google.com/billing/docs/how-to/view-history">View your cost and payment history</a></li>
 <li><a href="https://support.google.com/paymentscenter/answer/7520537">Google payments Statement of account</a></li>
 </ul>]]></content>
-    <summary>You can now find invoices and credit memos for invoiced billing accounts on the new Payment status page in the Cloud Billing console. This page offers a real-time view of your financial standing and replaces the previous Invoices page for these account types.</summary>
-    <title>Feature: Access Invoices on Payment Status Page</title>
+    <summary>Invoiced billing accounts can now access payment documents like invoices and credit memos on the new Payment status page in the Cloud Billing console. This page replaces the Invoices page for these accounts and offers a real-time view of your financial standing. Self-service accounts will continue to use the Invoices page.</summary>
+    <title>Feature: Payment documents now on Payment status page</title>
   </entry>
   <entry>
     <author>

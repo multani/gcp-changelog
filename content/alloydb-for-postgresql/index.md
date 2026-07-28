@@ -4,6 +4,18 @@
 
 ### Feature
 
+AlloyDB write endpoints are now available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+Write endpoints simplify database connection management by providing a stable
+domain name service (DNS) name for your applications, decoupling them from
+instance IP addresses. During disaster recovery switchovers or failovers,
+AlloyDB automatically updates the endpoint to point to the new primary instance.
+
+For more information, see
+[Manage database connections with write endpoints](https://docs.cloud.google.com/alloydb/docs/manage-write-endpoints).
+
+### Feature
+
 AlloyDB now supports cross-region failover in
 [Preview](https://cloud.google.com/products#product-launch-stages). You can
 optionally enable cross-region failover to automate the recreation of the

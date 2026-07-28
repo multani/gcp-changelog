@@ -9,14 +9,16 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-27:security:0</id>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-27:feature:0</id>
     <published>2026-07-27T00:00:00+00:00</published>
     <updated>2026-07-27T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The general availability (GA) stage of mixed-protocol Services of type
-LoadBalancer fixes errors in traffic routing from stages prior to GA. This
-feature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.</p>]]></content>
-    <summary>Mixed-protocol Services of type LoadBalancer have reached general availability in GKE version 1.36.2-gke.1498000 and later. This update resolves prior traffic routing errors. This enhancement improves the reliability and performance of your network services.</summary>
-    <title>Security: LoadBalancer services now GA</title>
+    <content type="html"><![CDATA[<p>In GKE version 1.36 and later, GKE Dataplane V2 with NetworkPolicies supports up
+to 15,000 nodes per cluster, increased from the previous limit of 7,500 nodes.
+For clusters exceeding 5,000 nodes, contact Cloud Customer Care to request a
+quota increase. For more information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/planning-large-clusters#clusters-5k-nodes">Cluster size limits and requirements</a>.</p>]]></content>
+    <summary>GKE Dataplane V2 now supports up to 15,000 nodes per cluster in versions 1.36 and later, a significant increase from the previous limit. For clusters larger than 5,000 nodes, a quota increase can be requested through Cloud Customer Care.</summary>
+    <title>Feature: GKE Dataplane V2 node limit increased</title>
   </entry>
   <entry>
     <author>
@@ -32,6 +34,19 @@ simultaneous TCP and UDP traffic on a single IP address across IPv4, IPv6, and
 dual-stack environments.</p>]]></content>
     <summary>GKE now supports mixed-protocol LoadBalancer Services in general availability. This feature allows a single IP address to handle simultaneous TCP and UDP traffic across IPv4, IPv6, and dual-stack environments for both external and internal passthrough Network Load Balancers.</summary>
     <title>Feature: Mixed-Protocol Load Balancer Support is Now GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-27:security:2</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The general availability (GA) stage of mixed-protocol Services of type
+LoadBalancer fixes errors in traffic routing from stages prior to GA. This
+feature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.</p>]]></content>
+    <summary>Mixed-protocol Services of type LoadBalancer have reached general availability in GKE version 1.36.2-gke.1498000 and later. This update resolves prior traffic routing errors. This enhancement improves the reliability and performance of your network services.</summary>
+    <title>Security: LoadBalancer services now GA</title>
   </entry>
   <entry>
     <author>

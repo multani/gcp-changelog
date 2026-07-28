@@ -1,5 +1,21 @@
 # Cloud Load Balancing
 
+## 2026-07-27
+
+### Feature
+
+Service load balancing policies (`serviceLbPolicy`) are now supported for
+regional external Application Load Balancers and regional internal Application Load Balancers. This feature enables
+advanced load balancing optimizations such as custom load balancing algorithms,
+auto-capacity draining, failover thresholds, and the ability to designate
+preferred backends for these load balancers.
+
+For more information, see [Advanced load balancing
+optimizations](https://docs.cloud.google.com/load-balancing/docs/service-lb-policy).
+
+This feature is in **Preview**.
+
+---
 ## 2026-07-20
 
 ### Feature

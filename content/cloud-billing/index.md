@@ -1,5 +1,36 @@
 # Cloud Billing
 
+## 2026-07-27
+
+### Feature
+
+**Spend cap budgets are now available for a limited set of services (Preview)**
+
+Available in [Preview](https://cloud.google.com/products#product-launch-stages)
+for
+[eligible services](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#eligible-services),
+you can now configure a
+[**spend cap budget**](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps)
+to automatically pause usage when your spend exceeds the budget amount you set.
+
+Spend caps are a cost control mechanism. A spend cap is enforced when usage
+costs exceed your budget target amount. When enforced, any new request to the
+eligible services, within the specified project, are paused and no further
+usage costs are accrued until you manually lift the spend cap.
+
+Spend caps typically use *estimated costs* to trigger the alerts and caps,
+enforcing a cap much faster than the *actual costs* are processed and appear
+on billing reports. Even though faster than reports, the enforcement of spend
+caps isn't instant and any cost overages are billed as normal.
+
+For more information about spend cap budgets, see:
+
+* [How spend cap budgets work to help you control spend](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#how-spend-cap-budgets-work)
+* [Configure a spend cap budget](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#configure-spend-cap)
+* [Lift an enforced spend cap](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#lift-spend-cap)
+* [Limitations of spend cap budgets](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#limitations)
+
+---
 ## 2026-07-24
 
 ### Feature
@@ -42,7 +73,7 @@ that is linked to the Cloud Billing account that you are viewing.
 
 For more information about payments documents, see:
 
-* [Get a Cloud Billing document such as an invoice, statement, or receipt](https://docs.cloud.google.com/billing/docs/how-to/get-invoice).
+* [Get a Cloud Billing document such as an invoice, statement, or receipt](https://docs.cloud.google.com/billing/docs/how-to/get-invoice)
 * [View your cost and payment history](https://docs.cloud.google.com/billing/docs/how-to/view-history)
 * [Google payments Statement of account](https://support.google.com/paymentscenter/answer/7520537)
 

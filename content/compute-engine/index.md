@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2026-07-27
+
+### Feature
+
+The maximum IOPS per GiB for Hyperdisk Balanced Storage Pools have increased from
+4 IOPS per GiB. The new limits depend on the provisioning type:
+
+* **Standard performance**: 30 IOPS per GiB
+* **Advanced performance**: 6 IOPS per GiB
+
+For more information, see [Limits for Hyperdisk Storage Pools](https://docs.cloud.google.com/compute/docs/disks/storage-pools#hdsp-limits).
+
+---
 ## 2026-07-24
 
 ### Feature

@@ -16,6 +16,22 @@ range. This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
+### Feature
+
+You can use the Google-developed
+[Open Database Connectivity (ODBC) driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/odbc-for-bigquery)
+to connect your applications to BigQuery. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Change
+
+The feature formerly known as the *legacy `tabledata.insertAll` method* is now
+called the
+[*Storage Write API (REST)*](https://docs.cloud.google.com/bigquery/docs/streaming-data-into-bigquery). The
+feature formerly known as the *Storage Write API* is now called the
+[*Storage Write API (gRPC)*](https://docs.cloud.google.com/bigquery/docs/write-api).
+
 ---
 ## 2026-07-23
 

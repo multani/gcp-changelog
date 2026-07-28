@@ -1,5 +1,16 @@
 # Anthos Config Management
 
+## 2026-07-27
+
+### Change
+
+Upgraded bundled Helm version from v3.20.2 to [v3.21.1](https://github.com/helm/helm/releases/tag/v3.21.1) to pick up vulnerability fixes. To understand the changes in each release, review the [changelogs](https://github.com/helm/helm/releases).
+
+### Change
+
+Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
+
+---
 ## 2026-06-25
 
 ### Change

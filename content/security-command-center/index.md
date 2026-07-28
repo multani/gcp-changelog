@@ -1,5 +1,23 @@
 # Security Command Center
 
+## 2026-07-27
+
+### Feature
+
+For the Security Command Center Premium tier, you can enable
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) at the
+project level.
+
+Project-level activations include access to the [AI security
+dashboard](https://docs.cloud.google.com/security-command-center/docs/assess-risk#ai-protection), [AI threat
+detection](https://docs.cloud.google.com/security-command-center/docs/agent-engine-threat-detection-overview), and [AI
+vulnerability and misconfiguration
+findings](https://docs.cloud.google.com/security-command-center/docs/review-ai-security#review-findings).
+
+For more information, see [Configure AI
+Protection](https://docs.cloud.google.com/security-command-center/docs/configure-ai-protection).
+
+---
 ## 2026-07-17
 
 ### Announcement

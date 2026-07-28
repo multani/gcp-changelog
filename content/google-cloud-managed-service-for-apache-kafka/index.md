@@ -1,5 +1,16 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-07-27
+
+### Feature
+
+You can now create a Cloud SQL for PostgreSQL Source connector and a Generic PostgreSQL Source connector for Kafka Connect.
+
+A Cloud SQL for PostgreSQL Source connector or Generic PostgreSQL Source connector is an instance of a [Debezium PostgreSQL connector](https://debezium.io/documentation/reference/stable/connectors/postgresql.html). It reads row-level changes from a PostgreSQL database and writes them to topics in a Managed Service for Apache Kafka cluster.
+
+For more information, see [Create a Cloud SQL for PostgreSQL Source connector](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-cloud-sql-postgres-source-connector), [Create a Generic PostgreSQL Source connector](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-generic-postgres-source-connector), and [Troubleshoot a PostgreSQL Source connector](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/troubleshoot-postgres-source-connector).
+
+---
 ## 2026-07-07
 
 ### Feature

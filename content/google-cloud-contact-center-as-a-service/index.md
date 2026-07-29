@@ -4,6 +4,32 @@
 
 ### Feature
 
+**Email parsed data endpoints**
+
+Two new read-only apps API endpoints are now available, allowing external
+systems to retrieve the parsed contents of an email interaction. This includes
+the sender, recipients, subject, body, and attachment metadata. Here are the
+endpoints:
+
+* `/apps/api/v1/email/sessions/{email_support_id}`: Returns a summarization of a
+  session and lists its messages.
+* `/apps/api/v1/email/messages/{email_thread_id}`: Returns the full parsed
+  content of a single message.
+
+### Feature
+
+**Email forwarding with attachments**
+
+Agents can now forward emails to external recipients directly from the email
+adapter. When forwarding, all attachments from the original email are
+automatically included. Agents can remove attachments before sending, if needed.
+The original email remains in its assigned queue with its status unchanged.
+
+User experience change: A new **Forward** button is available in the email
+adapter.
+
+### Feature
+
 **Smart disposition**
 
 Smart disposition is a new AI-powered capability that automatically suggests a

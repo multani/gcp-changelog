@@ -12,6 +12,44 @@
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-28:feature:0</id>
     <published>2026-07-28T00:00:00+00:00</published>
     <updated>2026-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email parsed data endpoints</strong></p>
+<p>Two new read-only apps API endpoints are now available, allowing external
+systems to retrieve the parsed contents of an email interaction. This includes
+the sender, recipients, subject, body, and attachment metadata. Here are the
+endpoints:</p>
+<ul>
+<li><code>/apps/api/v1/email/sessions/{email_support_id}</code>: Returns a summarization of a
+  session and lists its messages.</li>
+<li><code>/apps/api/v1/email/messages/{email_thread_id}</code>: Returns the full parsed
+  content of a single message.</li>
+</ul>]]></content>
+    <summary>Two new read-only API endpoints allow external systems to retrieve parsed email interaction data, including sender, recipients, subject, body, and attachment metadata. Access email session summaries or full message content through these new endpoints.</summary>
+    <title>Feature: Email Parsed Data Endpoints Now Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-28:feature:1</id>
+    <published>2026-07-28T00:00:00+00:00</published>
+    <updated>2026-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email forwarding with attachments</strong></p>
+<p>Agents can now forward emails to external recipients directly from the email
+adapter. When forwarding, all attachments from the original email are
+automatically included. Agents can remove attachments before sending, if needed.
+The original email remains in its assigned queue with its status unchanged.</p>
+<p>User experience change: A new <strong>Forward</strong> button is available in the email
+adapter.</p>]]></content>
+    <summary>Agents can now forward emails with all original attachments directly from the email adapter. Attachments can be removed before sending, and the original email remains in its queue.</summary>
+    <title>Feature: Email forwarding with attachments</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-28:feature:2</id>
+    <published>2026-07-28T00:00:00+00:00</published>
+    <updated>2026-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Smart disposition</strong></p>
 <p>Smart disposition is a new AI-powered capability that automatically suggests a
 disposition code at the end of a session. This reduces manual work for agents
@@ -45,7 +83,7 @@ the agent adapter.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-28:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-28:fixed:3</id>
     <published>2026-07-28T00:00:00+00:00</published>
     <updated>2026-07-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>

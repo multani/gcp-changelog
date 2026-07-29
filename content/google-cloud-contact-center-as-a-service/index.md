@@ -2,6 +2,29 @@
 
 ## 2026-07-28
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
+### Feature
+
+**Answering machine detection for progressive campaigns**
+
+Answering machine detection (AMD) is now supported for progressive outbound
+campaigns. When enabled, Contact Center AI Platform analyzes call audio in the background
+to determine whether a call reaches a live person, or whether it reaches an
+answering machine or voicemail. If an answering machine or voicemail is
+detected, the call ends and the dialer proceeds to the next contact.
+
+Administrators: In the **Settings > Campaigns > Dialer
+Modes** pane, there's a new **Enable Answering Machine Detection** toggle.
+
+User experience change: When CCAI Platform detects voicemail or an
+answering machine, a green banner appears in the call adapter to indicate this.
+
 ### Feature
 
 **Email parsed data endpoints**

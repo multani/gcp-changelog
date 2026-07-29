@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-07-29
+
+### Feature
+
+**View prebuilt parser version content**
+
+You can now view the prebuilt parser preview version content even if you are using a custom parser for the same log type. Although the prebuilt parser version is inactive, you can still see the content of the new preview version for this parser.
+
+---
 ## 2026-07-28
 
 ### Feature
@@ -54,12 +63,12 @@ Additional enhancements include:
   interactive side panel. Inspect parsed UDM records, review original raw logs,
   pin key evidence to your case, and build detection exclusions in real time. For
   details, see [Use the Events Viewer](https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/use-events-viewer).
-* **Configure new default views:** Two new views (**New Default Alert View** and
-  **New Default Case View**) are available under **SOAR Settings > Case Data > Views**
-  for the enhanced Cases experience. Before enabling the feature, make sure to
-  manually copy over advanced widget configurations (such as **Safe HTML Rendering**
-  or custom **Conditions**) from the **Default Alert View** and **Default Case View**
-  to these new default views to preserve your preferred setups.
+* **Configure new default views:** Before enabling the updated Cases experience,
+  set up your default views under **SOAR Settings > Case Data > Views**. Make sure
+  to manually copy over advanced widget configurations (such as
+  **Safe HTML Rendering** or custom conditions) from the **Default Alert View**
+  and **Default Case View** to the **New Default Alert View** and
+  **New Default Case View** to preserve your preferred setups.
 
 ---
 ## 2026-07-20

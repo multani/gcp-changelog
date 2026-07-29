@@ -3,6 +3,22 @@
   "entries": {
     "2026-07-28": [
       {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS prerelease notes**\n\nHere are the pre-release notes for the next version of Google Cloud CCaaS. When\nwe release this version, we expect the new capabilities to be as shown here.",
+        "summary": {
+          "title": "New CCaaS Features Coming Soon",
+          "summary": "Get ready for the next version of Google Cloud CCaaS. These pre-release notes outline the upcoming capabilities, providing a glimpse into the enhanced features you can expect upon release."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Answering machine detection for progressive campaigns**\n\nAnswering machine detection (AMD) is now supported for progressive outbound\ncampaigns. When enabled, Contact Center AI Platform analyzes call audio in the background\nto determine whether a call reaches a live person, or whether it reaches an\nanswering machine or voicemail. If an answering machine or voicemail is\ndetected, the call ends and the dialer proceeds to the next contact.\n\nAdministrators: In the **Settings > Campaigns > Dialer\nModes** pane, there's a new **Enable Answering Machine Detection** toggle.\n\nUser experience change: When CCAI Platform detects voicemail or an\nanswering machine, a green banner appears in the call adapter to indicate this.",
+        "summary": {
+          "title": "Answering Machine Detection Now Available",
+          "summary": "Progressive outbound campaigns now support answering machine detection. This feature analyzes calls to distinguish between live persons and answering machines, automatically ending calls to voicemail and proceeding to the next contact. Administrators can enable this feature in the Campaign Dialer Modes settings."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Email parsed data endpoints**\n\nTwo new read-only apps API endpoints are now available, allowing external\nsystems to retrieve the parsed contents of an email interaction. This includes\nthe sender, recipients, subject, body, and attachment metadata. Here are the\nendpoints:\n\n* `/apps/api/v1/email/sessions/{email_support_id}`: Returns a summarization of a\n  session and lists its messages.\n* `/apps/api/v1/email/messages/{email_thread_id}`: Returns the full parsed\n  content of a single message.",
         "summary": {

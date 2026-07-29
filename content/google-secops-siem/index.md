@@ -1,5 +1,14 @@
 # Google SecOps SIEM
 
+## 2026-07-29
+
+### Feature
+
+**View prebuilt parser version content**
+
+You can now view the prebuilt parser preview version content even if you are using a custom parser for the same log type. Although the prebuilt parser version is inactive, you can still see the content of the new preview version for this parser.
+
+---
 ## 2026-07-20
 
 ### Deprecated

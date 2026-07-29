@@ -1,5 +1,16 @@
 # Cloud Scheduler
 
+## 2026-07-29
+
+### Change
+
+Cloud Scheduler is available in the following [locations](https://docs.cloud.google.com/scheduler/docs/locations):
+
+* `europe-west8` (Milan, Italy)
+* `europe-west9` (Paris, France)
+* `us-south1` (Dallas, United States)
+
+---
 ## 2026-04-17
 
 ### Change

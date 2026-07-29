@@ -1,5 +1,19 @@
 # Cloud Key Management Service
 
+## 2026-07-29
+
+### Feature
+
+Cloud KMS Autokey with same-project key storage (formerly known as Autokey for
+delegated key management) is generally available. Autokey with same-project key
+storage can be used on its own or alongside Autokey with dedicated-project key
+storage (formerly known as Autokey for centralized key management).
+
+For more information, see [Enable Cloud KMS Autokey](https://docs.cloud.google.com/kms/docs/enable-autokey).
+To learn how to set guardrails to constrain how Autokey is used in your
+organization, see [Control Autokey usage](https://docs.cloud.google.com/kms/docs/control-autokey-usage).
+
+---
 ## 2026-07-16
 
 ### Feature

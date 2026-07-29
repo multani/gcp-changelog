@@ -1,5 +1,30 @@
 # Security Command Center
 
+## 2026-07-28
+
+### Feature
+
+Version 1.2.0 of the Google SCC ITSM app and version 1.3.0 of the Google SCC SIR
+app have been released.
+
+To reflect this update, the ServiceNow integration guide is updated with
+the following changes:
+
+* Added support for ServiceNow Yokohama, Zurich, and Australia versions.
+* Added the following features:
+
+  + Mute and unmute findings
+  + Create mute rules
+  + Create Configuration Item (CI) lookup rules
+  + View the action log
+* Updated setup instructions for Java KeyStore certificates.
+* Added additional troubleshooting steps for maximum execution time exceeded
+  errors, data collection issues, and ECC Queue timeout errors.
+
+For more information, see [Sending Security Command Center data to
+ServiceNow](https://docs.cloud.google.com/security-command-center/docs/how-to-configure-scc-servicenow).
+
+---
 ## 2026-07-27
 
 ### Feature

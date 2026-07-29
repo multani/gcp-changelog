@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-07-06T00:00:00+00:00</updated>
+  <updated>2026-07-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-07-28:feature:0</id>
+    <published>2026-07-28T00:00:00+00:00</published>
+    <updated>2026-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports creating tables without defining primary keys.
+When you create a table without a primary key, Spanner creates a
+hidden <code>rowid</code> column that serves as the primary key. For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/primary-key-default-value#tables-without-primary-keys">Create a table without defining a primary key</a>.</p>]]></content>
+    <summary>Spanner now allows you to create tables without explicitly defining a primary key. In such cases, Spanner automatically generates a hidden `rowid` column to act as the primary key for the table.</summary>
+    <title>Feature: Tables without primary keys</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

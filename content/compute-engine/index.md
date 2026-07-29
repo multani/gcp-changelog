@@ -1,5 +1,20 @@
 # Compute Engine
 
+## 2026-07-28
+
+### Feature
+
+Hyperdisk Balanced volumes on C4D instances have increased maximum throughput
+limits for these machine types:
+
+* `c4d-*-96`: 3,125 MiB/s (up from 2,800 MiB/s).
+* `c4d-*-192`: 6,250 MiB/s (up from 4,800 MiB/s).
+* `c4d-*-384`: 12,500 MiB/s (up from 10,000 MiB/s).
+
+For detailed performance limits, see
+[Hyperdisk Balanced performance limits when attached to an instance](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced#perf-limits).
+
+---
 ## 2026-07-27
 
 ### Feature

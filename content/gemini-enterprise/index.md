@@ -1,5 +1,16 @@
 # Gemini Enterprise
 
+## 2026-07-28
+
+### Feature
+
+**Gemini Enterprise: Microsoft Teams federated connector is generally available (GA)**
+
+The Microsoft Teams federated data store is generally available (GA) in Gemini Enterprise. Connect Microsoft Teams to query channels, chats, teams, and messages, and execute supported actions directly from the assistant.
+
+For more information, see [Connect Microsoft Teams](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-teams).
+
+---
 ## 2026-07-27
 
 ### Feature

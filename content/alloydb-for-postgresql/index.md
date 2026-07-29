@@ -1,5 +1,18 @@
 # AlloyDB for PostgreSQL
 
+## 2026-07-28
+
+### Feature
+
+**Note:** IAM group authentication is available in [Preview](https://cloud.google.com/products#product-launch-stages)
+for new AlloyDB clusters. To enable this feature on an existing cluster,
+contact your Google Cloud account team.
+
+IAM group authentication for AlloyDB is available in [Preview](https://cloud.google.com/products#product-launch-stages) for new clusters running PostgreSQL 15 and later. This feature simplifies database user management by allowing access management at the group level, where group members inherit database roles and permissions. To use this feature, enable the `alloydb.iam_authentication` and `alloydb.iam_group_authentication` database flags.
+
+For more information, see [IAM group authentication](https://docs.cloud.google.com/alloydb/docs/database-users/iam-authentication#group-auth) and [Manage IAM authentication](https://docs.cloud.google.com/alloydb/docs/database-users/manage-iam-auth#group).
+
+---
 ## 2026-07-27
 
 ### Feature

@@ -1,0 +1,135 @@
+{
+  "name": "578.0.0 (2026-07-28)",
+  "entries": {
+    "2026-07-28": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Database Migration)** Made `--auto-commit` flag the default for `gcloud database-migration\n  conversion-workspaces seed|convert|import-rules` operations. To disable\n  auto-committing, use `--no-auto-commit` flag.",
+        "summary": {
+          "title": "Database Migration: Auto-commit is now default",
+          "summary": "The `--auto-commit` flag is now the default for several database migration operations, including `seed`, `convert`, and `import-rules`. To disable this behavior, use the `--no-auto-commit` flag."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Fixed an issue where running `gcloud init` crashed when Enterprise Certificate Proxy (ECP) binaries were missing from configuration.\n* Updated macOS Python Virtualenv for the `gcloud` CLI to 3.14.6.",
+        "summary": {
+          "title": "gcloud init crash fixed",
+          "summary": "The gcloud CLI has been updated to fix a crash when running gcloud init with missing Enterprise Certificate Proxy binaries. The macOS Python Virtualenv for the gcloud CLI has also been updated."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Promote AlloyDB Backup DR restore flags (`--backupdr-backup` and `--backupdr-data-source`) to the GA track.",
+        "summary": {
+          "title": "AlloyDB Backup DR restore flags now generally available",
+          "summary": "We are promoting the AlloyDB Backup DR restore flags, `--backupdr-backup` and `--backupdr-data-source`, to the GA track. This means these features are now fully supported and recommended for production use."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Fixed a bug where `gcloud biglake iceberg tables` commands failed to send the `X-Iceberg-Access-Delegation: vended-credentials` header.",
+        "summary": {
+          "title": "BigLake command fix",
+          "summary": "A bug has been fixed in BigLake where certain `gcloud` commands were not sending the correct header for Iceberg table access. This resolves an issue that prevented these commands from functioning correctly."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Added `-f`/`--force` support to `bq rm --connection` to ignore NOT\\_FOUND\n  errors if the connection does not exist.\n* Fixed reading configuration from `gcloud` CLI with `--nouse_google_auth` flag.\n* Added a predefined label for jobs created in specific metrics environments.\n* Updated the help text for several global flags.\n* Updated command format in the user-agent HTTP header of API requests.",
+        "summary": {
+          "title": "BigQuery CLI improvements",
+          "summary": "The BigQuery command-line tool has been updated with new features, including force deletion for connections, improved configuration reading, predefined job labels, and updated help text and API request formatting."
+        }
+      },
+      {
+        "kind": "Cloud Backup DR",
+        "content": "* Added `--log-retention-days` flag across `gcloud backup-dr backup-plans create` and `update` across all release tracks to enable Point-in-Time Recovery (PITR) log retention configuration.",
+        "summary": {
+          "title": "Configure backup log retention",
+          "summary": "You can now configure log retention for point-in-time recovery with the new --log-retention-days flag. This flag is available for backup plans during creation and update across all release tracks."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable",
+        "content": "* Added `--ignore-warnings` flag to `gcloud bigtable instances tables update` and `gcloud bigtable tables update`.\n* Promoted `--ignore-warnings` flag of `gcloud bigtable materialized-views create` to GA.",
+        "summary": {
+          "title": "Bigtable: ignore warnings in table updates and materialized views",
+          "summary": "You can now use the `--ignore-warnings` flag with `gcloud bigtable instances tables update` and `gcloud bigtable tables update` commands. The `--ignore-warnings` flag for creating materialized views is now generally available."
+        }
+      },
+      {
+        "kind": "Cloud Composer",
+        "content": "* Enabled Airflow CLI commands for Composer environments running Airflow 3.2.",
+        "summary": {
+          "title": "Airflow CLI commands now available for Composer",
+          "summary": "You can now use Airflow CLI commands directly with your Composer environments running Airflow 3.2. This provides greater flexibility and control over your workflows."
+        }
+      },
+      {
+        "kind": "Cloud IAM",
+        "content": "* Promoted `enabled-for-users-groups` option for `--scim-usage` flag to beta in `gcloud beta iam workforce-pools providers`.",
+        "summary": {
+          "title": "Cloud IAM SCIM Usage Beta",
+          "summary": "The `enabled-for-users-groups` option for the `--scim-usage` flag in `gcloud beta iam workforce-pools providers` has been promoted to beta. This enhancement improves SCIM provisioning capabilities within Cloud IAM."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added `--sandbox-launcher` flag to `gcloud beta run jobs` and\n  `gcloud beta run worker-pools` command groups to allow setting a container as\n  sandbox launcher when creating or updating a Cloud Run job or a worker pool.",
+        "summary": {
+          "title": "Run jobs with custom sandbox launcher",
+          "summary": "You can now specify a custom container as a sandbox launcher for Cloud Run jobs and worker pools using the new `--sandbox-launcher` flag. This allows for greater control over the sandbox environment for your workloads."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Added `--idle-action` flag to `gcloud alpha workstations configs create`,\n  `gcloud alpha workstations configs update`, `gcloud beta workstations\n  configs create`, and `gcloud beta workstations configs update` commands.",
+        "summary": {
+          "title": "Cloud Workstations idle action flag",
+          "summary": "New flags allow you to configure actions for Cloud Workstations when they are idle. This helps manage resources efficiently by automatically stopping or restarting workstations based on inactivity."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `--network-tier` flag to `gcloud compute public-advertised-prefixes create` in beta.\n* Added `--metadata-filter` flag to `gcloud compute forwarding-rules create` command across all release tracks.\n* Added `--metadata-filter` flag to `gcloud compute forwarding-rules update` commands across all release tracks.\n* Added `gcloud compute machine-images test-iam-permissions` command to test IAM permissions on a Compute Engine machine image in beta, preview, and GA.\n* Promoted `regex_rewrite` support in `url_rewrite` block to beta for `gcloud compute url-maps`.\n* Promoted the following `gcloud compute routers` command groups to GA:\n  `add-named-set`, `add-named-set-element`, `download-named-set`,\n  `get-named-set`, `list-named-sets`, `remove-named-set`,\n  `remove-named-set-element`, and `upload-named-set`.\n* Added `gcloud compute health-sources test-iam-permissions` command to test IAM permissions on a health source.\n* Added `gcloud compute instant-snapshot-groups set-iam-policy` command to set the IAM policy for a Compute Engine instant snapshot group.\n* Added `gcloud compute networks subnets test-iam-permissions` command in beta, preview, and GA.\n* Added `gcloud compute image-views describe` command in beta.\n* Added `gcloud compute snapshots test-iam-permissions` to test IAM permissions for Compute Engine snapshots.\n* Added `gcloud compute interconnects attachments groups set-iam-policy` command to set IAM policy on an interconnect attachment group in beta, preview, and GA.\n* Added `--internal-range` flag to `gcloud compute addresses create`\n  to support allocating global internal IP addresses from an Internal Range\n  for Private Service Connect.\n* Updated `gcloud compute reservations hosts list` and `gcloud compute reservations hosts describe` to require `--reservation` when `--reservation-block` is specified.",
+        "summary": {
+          "title": "New Compute Engine features and updates",
+          "summary": "This update introduces new flags for network tiers and metadata filtering, along with enhanced IAM permission testing for various Compute Engine resources. It also includes advancements in machine images, URL rewrite capabilities, and the promotion of several router command groups to general availability. Additionally, new commands for managing health sources and instant snapshot groups are now available."
+        }
+      },
+      {
+        "kind": "Developer Connect",
+        "content": "* Updated `gcloud beta developer-connect account-connectors` commands to support Bring Your Own (BYO) and Bitbucket Cloud (BBC) connection types.",
+        "summary": {
+          "title": "Developer Connect Enhancements",
+          "summary": "New options for connecting your development accounts are now available. The `gcloud beta developer-connect account-connectors` commands have been updated to support Bring Your Own (BYO) and Bitbucket Cloud (BBC) connection types, offering greater flexibility for your development workflows."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Promoted `--view`, `--memberships`, `--filter`, and `--sort-by` flags on\n  `gcloud container fleet|hub config-management describe` command to `beta`.",
+        "summary": {
+          "title": "Fleet config management flags promoted to beta",
+          "summary": "The `--view`, `--memberships`, `--filter`, and `--sort-by` flags for the `gcloud container fleet config-management describe` command have been promoted to beta. This update enhances the command's capabilities for managing fleet configurations."
+        }
+      },
+      {
+        "kind": "Network Management",
+        "content": "* Added `--source-dms-private-connection` flag to `gcloud network-management connectivity-tests`.",
+        "summary": {
+          "title": "New flag for connectivity tests",
+          "summary": "A new flag, `--source-dms-private-connection`, has been added to `gcloud network-management connectivity-tests`. This enhancement allows for more specific configuration of connectivity tests, particularly when dealing with private connections."
+        }
+      },
+      {
+        "kind": "Secret Manager",
+        "content": "* Added the `--secret-type` flag to `gcloud secrets create` to support creating secrets of different types (e.g. Cloud SQL credentials).\n* Added the `gcloud secrets enable-managed-rotation` command to enable managed rotation for a secret using Cloud SQL credentials.\n* Added the `gcloud secrets rotate-secret` command to rotate a secret.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "New secret management features",
+          "summary": "New features for secret management have been released, including support for different secret types with the `--secret-type` flag, enabling managed rotation for secrets like Cloud SQL credentials, and a new command to rotate secrets. You can subscribe to release notes for more updates."
+        }
+      }
+    ]
+  }
+}

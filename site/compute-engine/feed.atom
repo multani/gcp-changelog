@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-07-27T00:00:00+00:00</updated>
+  <updated>2026-07-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-07-28:feature:0</id>
+    <published>2026-07-28T00:00:00+00:00</published>
+    <updated>2026-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Hyperdisk Balanced volumes on C4D instances have increased maximum throughput
+limits for these machine types:</p>
+<ul>
+<li><code>c4d-*-96</code>: 3,125 MiB/s (up from 2,800 MiB/s).</li>
+<li><code>c4d-*-192</code>: 6,250 MiB/s (up from 4,800 MiB/s).</li>
+<li><code>c4d-*-384</code>: 12,500 MiB/s (up from 10,000 MiB/s).</li>
+</ul>
+<p>For detailed performance limits, see
+<a href="https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced#perf-limits">Hyperdisk Balanced performance limits when attached to an instance</a>.</p>]]></content>
+    <summary>Hyperdisk Balanced volumes attached to C4D instances now offer significantly higher maximum throughput limits. This enhancement benefits `c4d-*-96`, `c4d-*-192`, and `c4d-*-384` machine types, providing up to 12,500 MiB/s for the largest configurations. These improvements allow for faster data operations and better performance for demanding workloads.</summary>
+    <title>Feature: Increased Throughput for Hyperdisk Balanced on C4D Instances</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

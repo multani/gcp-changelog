@@ -80,7 +80,24 @@ is now available.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2026-07-20:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-07-20:issue:0</id>
+    <published>2026-07-20T00:00:00+00:00</published>
+    <updated>2026-07-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/lakehouse/docs/introduction"><em>Lakehouse for Apache Iceberg</em></a>: Data Products with
+special characters, such as "/" or "-", are not supported and will not be
+available in BigQuery even if shared from SAP BDC to
+BigQuery. If you share a Data Product with special characters,
+this could cause the refresh to stop and require
+re-enrollment. Known SAP systems producing these Data Products include
+SAP Business Warehouse (BW) sources and SAP SuccessFactors.</p>]]></content>
+    <summary>Data Products with special characters like '/' or '-' are not supported when shared from SAP BDC to BigQuery. This can disrupt data refreshes and necessitate re-enrollment, particularly with SAP BW and SAP SuccessFactors sources.</summary>
+    <title>Issue: Issue with Data Products containing special characters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-07-20:feature:1</id>
     <published>2026-07-20T00:00:00+00:00</published>
     <updated>2026-07-20T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/lakehouse/docs/introduction"><em>Lakehouse for Apache Iceberg</em></a>: Cross-cloud
@@ -101,27 +118,9 @@ Lakehouse now supports integration with SAP Business Data Cloud
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-lakehouse-sap-bdc">Set up cross-cloud Lakehouse for SAP
 BDC</a>, <a href="https://docs.cloud.google.com/lakehouse/docs/query-sap-data">Query SAP BDC
-data</a>, and <a href="https://docs.cloud.google.com/lakehouse/docs/publish-data-to-sap-bdc">Publish Lakehouse
-tables to SAP BDC</a>.</p>]]></content>
-    <summary>Lakehouse for Apache Iceberg now supports integration with SAP Business Data Cloud (BDC) in preview. This allows for seamless data synchronization, querying of SAP data directly from BigQuery, and publishing Lakehouse tables to SAP BDC for consumption in SAP Datasphere.</summary>
-    <title>Feature: Lakehouse Integrates with SAP Business Data Cloud</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2026-07-20:issue:1</id>
-    <published>2026-07-20T00:00:00+00:00</published>
-    <updated>2026-07-20T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/lakehouse/docs/introduction"><em>Lakehouse for Apache Iceberg</em></a>: Data Products with
-special characters, such as "/" or "-", are not supported and will not be
-available in BigQuery even if shared from SAP BDC to
-BigQuery. If you share a Data Product with special characters,
-this could cause the stop a refresh and require
-re-enrollment. Known SAP systems producing these Data Products include
-SAP Business Warehouse (BW) sources and SAP SuccessFactors.</p>]]></content>
-    <summary>Data Products with special characters like '/' or '-' are not supported in BigQuery and may cause refresh failures. This issue affects data shared from SAP systems, potentially requiring re-enrollment. Known affected sources include SAP BW and SAP SuccessFactors.</summary>
-    <title>Issue: Issue with Data Products containing special characters</title>
+data</a>, and <a href="https://docs.cloud.google.com/lakehouse/docs/publish-data-to-sap-bdc">Publish Data Products to SAP BDC</a>.</p>]]></content>
+    <summary>Lakehouse for Apache Iceberg now integrates with SAP Business Data Cloud (BDC) in preview. This allows for seamless federation, querying, and publishing of data between the two platforms without the need for data migration. Users can now access SAP data directly from BigQuery and publish data products to SAP BDC for consumption in SAP Datasphere.</summary>
+    <title>Feature: SAP BDC Integration with Lakehouse</title>
   </entry>
   <entry>
     <author>

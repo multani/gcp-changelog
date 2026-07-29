@@ -44,6 +44,16 @@ is now available.
 ---
 ## 2026-07-20
 
+### Issue
+
+[*Lakehouse for Apache Iceberg*](https://docs.cloud.google.com/lakehouse/docs/introduction): Data Products with
+special characters, such as "/" or "-", are not supported and will not be
+available in BigQuery even if shared from SAP BDC to
+BigQuery. If you share a Data Product with special characters,
+this could cause the refresh to stop and require
+re-enrollment. Known SAP systems producing these Data Products include
+SAP Business Warehouse (BW) sources and SAP SuccessFactors.
+
 ### Feature
 
 [*Lakehouse for Apache Iceberg*](https://docs.cloud.google.com/lakehouse/docs/introduction): Cross-cloud
@@ -65,18 +75,7 @@ This update includes the following features:
 
 For more information, see [Set up cross-cloud Lakehouse for SAP
 BDC](https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-lakehouse-sap-bdc), [Query SAP BDC
-data](https://docs.cloud.google.com/lakehouse/docs/query-sap-data), and [Publish Lakehouse
-tables to SAP BDC](https://docs.cloud.google.com/lakehouse/docs/publish-data-to-sap-bdc).
-
-### Issue
-
-[*Lakehouse for Apache Iceberg*](https://docs.cloud.google.com/lakehouse/docs/introduction): Data Products with
-special characters, such as "/" or "-", are not supported and will not be
-available in BigQuery even if shared from SAP BDC to
-BigQuery. If you share a Data Product with special characters,
-this could cause the stop a refresh and require
-re-enrollment. Known SAP systems producing these Data Products include
-SAP Business Warehouse (BW) sources and SAP SuccessFactors.
+data](https://docs.cloud.google.com/lakehouse/docs/query-sap-data), and [Publish Data Products to SAP BDC](https://docs.cloud.google.com/lakehouse/docs/publish-data-to-sap-bdc).
 
 ---
 ## 2026-07-15

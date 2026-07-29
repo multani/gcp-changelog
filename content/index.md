@@ -9,6 +9,7 @@
 - [575.0.1 (2026-07-07)](575-0-1--2026-07-07-/index.md)
 - [576.0.0 (2026-07-14)](576-0-0--2026-07-14-/index.md)
 - [577.0.0 (2026-07-21)](577-0-0--2026-07-21-/index.md)
+- [578.0.0 (2026-07-28)](578-0-0--2026-07-28-/index.md)
 - [AI Applications](ai-applications/index.md)
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)

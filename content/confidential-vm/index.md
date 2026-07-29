@@ -1,5 +1,16 @@
 # Confidential VM
 
+## 2026-07-28
+
+### Issue
+
+Starting August 2026, Confidential VM instances using AMD SEV-SNP might
+have longer boot times and performance changes due to a guest
+kernel migration and security updates. This issue is expected to be resolved
+by November 2026. Confidential VM instances using AMD SEV or Intel TDX aren't
+affected.
+
+---
 ## 2026-06-26
 
 ### Feature

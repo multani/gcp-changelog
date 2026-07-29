@@ -1,5 +1,15 @@
 # Spanner
 
+## 2026-07-28
+
+### Feature
+
+Spanner supports creating tables without defining primary keys.
+When you create a table without a primary key, Spanner creates a
+hidden `rowid` column that serves as the primary key. For more information, see
+[Create a table without defining a primary key](https://docs.cloud.google.com/spanner/docs/primary-key-default-value#tables-without-primary-keys).
+
+---
 ## 2026-07-06
 
 ### Feature

@@ -2,9 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-07-27T00:00:00+00:00</updated>
+  <updated>2026-07-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-28:feature:0</id>
+    <published>2026-07-28T00:00:00+00:00</published>
+    <updated>2026-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE now supports opting out of the default <code>kubernetes.io/arch=arm64:NoSchedule</code>
+taint on Arm nodes in Standard node pools and in custom ComputeClasses. To opt
+out of the default taint, set the <code>--node-architecture-taint-behavior</code> gcloud
+CLI flag to <code>NONE</code> for a node pool or set the
+<code>taintConfig.architectureTaintBehavior</code> field to <code>NONE</code> for a ComputeClass. By
+configuring this behavior, you allow workloads that lack explicit Arm
+tolerations to be scheduled on Arm-based machine families (such as N4A and C4A).
+This is useful for running multi-architecture workloads or simplifying
+scheduling in mixed-mode clusters. For more information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/prepare-arm-workloads-for-deployment#configure-default-taint">Configure the default Arm architecture taint</a>.</p>]]></content>
+    <summary>GKE now allows you to opt out of the default `kubernetes.io/arch=arm64:NoSchedule` taint on Arm nodes. By setting the `--node-architecture-taint-behavior` flag to `NONE`, you can enable workloads without explicit Arm tolerations to be scheduled on Arm-based machine families, simplifying mixed-mode cluster operations.</summary>
+    <title>Feature: Opt-out of default Arm taint on GKE nodes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-07-28:feature:1</id>
+    <published>2026-07-28T00:00:00+00:00</published>
+    <updated>2026-07-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE Gateway and Inference Gateway now support Cross-Origin Resource Sharing
+(CORS). You can configure a CORS filter directly on an <code>HTTPRoute</code> resource by
+using the portable syntax standardized by
+<a href="https://gateway-api.sigs.k8s.io/guides/user-guides/http-cors/">Gateway API</a>.
+This feature is available in Preview in GKE version 1.35 and later for the
+following GatewayClasses:</p>
+<ul>
+<li><code>gke-l7-rilb</code></li>
+<li><code>gke-l7-regional-external-managed</code></li>
+<li><code>gke-l7-global-external-managed</code></li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/deploying-gateways#configure-cors">Configure Cross-Origin Resource Sharing</a>.</p>]]></content>
+    <summary>GKE Gateway and Inference Gateway now support Cross-Origin Resource Sharing (CORS). You can configure a CORS filter directly on an HTTPRoute resource using the portable syntax standardized by Gateway API. This feature is available in Preview in GKE version 1.35 and later.</summary>
+    <title>Feature: CORS support for GKE Gateways</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

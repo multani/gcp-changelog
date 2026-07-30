@@ -1,5 +1,14 @@
 # App Engine standard environment PHP
 
+## 2026-07-29
+
+### Feature
+
+Support for enabling only needed legacy bundled services using the
+[`app_engine_bundled_services`](https://docs.cloud.google.com/appengine/docs/standard/reference/app-yaml?tab=php#app_engine_bundled_services)
+field is in [General Availability](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-06-03
 
 ### Feature

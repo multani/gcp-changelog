@@ -1,5 +1,14 @@
 # Cloud Service Mesh
 
+## 2026-07-29
+
+### Feature
+
+For the clusters using `TRAFFIC_DIRECTOR` implementation,
+[IP auto-allocation](https://docs.cloud.google.com/service-mesh/docs/operate-and-maintain/dns-proxy#ip_auto-allocation_for_serviceentry)
+with DNS Proxy is now supported in Rapid release channel.
+
+---
 ## 2026-07-24
 
 ### Feature

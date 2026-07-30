@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-07-29
+
+### Feature
+
+The BigQuery Data Transfer Service now supports [incremental data transfers](https://docs.cloud.google.com/bigquery/docs/klaviyo-transfer-intro#full_or_incremental_transfers)
+when transferring data from Klaviyo to BigQuery. This feature is supported in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-07-27
 
 ### Feature

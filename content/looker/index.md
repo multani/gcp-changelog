@@ -1,5 +1,14 @@
 # Looker
 
+## 2026-07-27
+
+### Feature
+
+Now available in preview ([Preview](https://cloud.google.com/products#product-launch-stages)), [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries) (also referred to as *golden queries*) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.
+
+To enable verified queries, a Looker admin must turn on the **Verified Queries** setting on the **Gemini in Looker** admin page. The **Conversational Analytics** setting must also be enabled to use verified queries.
+
+---
 ## 2026-07-22
 
 ### Security

@@ -1,5 +1,14 @@
 # reCAPTCHA
 
+## 2026-07-29
+
+### Feature
+
+The Agent overview dashboard is available on the Google Cloud Fraud Defense home page. This dashboard helps you monitor and analyze automated agent traffic on your site by distinguishing verified agents from suspected agents.
+
+For more information, see [Monitor agent traffic](https://docs.cloud.google.com/recaptcha/docs/monitor-agents).
+
+---
 ## 2026-07-24
 
 ### Feature

@@ -1,5 +1,13 @@
 # Bigtable
 
+## 2026-07-29
+
+### Feature
+
+You can use the Google Cloud console to [manage row key schemas](https://docs.cloud.google.com/bigtable/docs/manage-row-key-schemas)
+for your Bigtable tables. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-27
 
 ### Feature

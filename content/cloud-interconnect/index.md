@@ -1,5 +1,17 @@
 # Cloud Interconnect
 
+## 2026-07-14
+
+### Feature
+
+[Partner Cross-Cloud Interconnect for Amazon Web Services (AWS)](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview) supports the following new locations:
+
+* australia-southeast1
+* europe-north2
+
+For available locations, see [Choose a paired location](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/partner-cci-for-aws/paired-locations).
+
+---
 ## 2026-06-02
 
 ### Feature

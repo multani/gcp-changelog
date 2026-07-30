@@ -1,5 +1,19 @@
 # Virtual Private Cloud
 
+## 2026-07-30
+
+### Feature
+
+**General Availability**: You can use the **Resolve subnet mask** setting on a
+subnet to configure all attached Compute Engine instances with the same netmask
+as the subnet (instead of `/32`). Configuring larger instance netmasks lets
+compute instances discover the MAC addresses of other machines within the same
+subnet and directly communicate with them by using destination MAC addresses.
+
+For more information, see
+[Compute instance netmasks](https://docs.cloud.google.com/vpc/docs/compute-instance-netmasks).
+
+---
 ## 2026-07-21
 
 ### Feature

@@ -1,6 +1,16 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2026-07-27": [
+      {
+        "kind": "Fixed",
+        "content": "Version `20260716.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available for all supported operating systems. This version introduces\nthe following fixes:\n\n* The `systemctl start` operations performed by the OS Login module no longer\n  leave behind zombie processes.\n* The extensions monitor, which monitors the health of extensions that the\n  guest agent manages, no longer logs an error when it reads an empty log file\n  from an extension.\n* Dependency updates address multiple high-severity CVEs, such as\n  [CVE-2026-39830](https://www.cve.org/CVERecord?id=CVE-2026-39830) and\n  [CVE-2026-39832](https://www.cve.org/CVERecord?id=CVE-2026-39832).",
+        "summary": {
+          "title": "Guest Agent Update",
+          "summary": "Version 20260716.00 of the guest agent has been released, addressing issues with zombie processes and log file handling. This update also includes dependency upgrades to resolve critical security vulnerabilities."
+        }
+      }
+    ],
     "2026-05-20": [
       {
         "kind": "Fixed",

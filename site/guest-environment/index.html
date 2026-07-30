@@ -2724,8 +2724,24 @@
 
 
 <h1 id="guest-environment">Guest Environment</h1>
-<h2 id="2026-05-20">2026-05-20</h2>
+<h2 id="2026-07-27">2026-07-27</h2>
 <h3 id="fixed">Fixed</h3>
+<p>Version <code>20260716.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This version introduces
+the following fixes:</p>
+<ul>
+<li>The <code>systemctl start</code> operations performed by the OS Login module no longer
+  leave behind zombie processes.</li>
+<li>The extensions monitor, which monitors the health of extensions that the
+  guest agent manages, no longer logs an error when it reads an empty log file
+  from an extension.</li>
+<li>Dependency updates address multiple high-severity CVEs, such as
+  <a href="https://www.cve.org/CVERecord?id=CVE-2026-39830">CVE-2026-39830</a> and
+  <a href="https://www.cve.org/CVERecord?id=CVE-2026-39832">CVE-2026-39832</a>.</li>
+</ul>
+<hr />
+<h2 id="2026-05-20">2026-05-20</h2>
+<h3 id="fixed_1">Fixed</h3>
 <p>Version <code>20260511.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 is now available for all supported operating systems. This is a rebuild of
 version <code>20260423.01</code> announced in the
@@ -2738,7 +2754,7 @@ password resets. This package update automatically restarts the agent on
 instances where auto-update is enabled to resolve the issue.</p>
 <hr />
 <h2 id="2026-04-27">2026-04-27</h2>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>Version <code>20260423.01</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 is now available for all supported operating systems. This version includes
 the following fixes:</p>
@@ -2766,7 +2782,7 @@ the following features:</p>
   forces a specific connection type when the guest agent connects to the
   extensions it is managing. Supported connection types are UDS and TCP.</li>
 </ul>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>Version <code>20260329.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 is now available for all supported operating systems. This version introduces
 the following fixes:</p>
@@ -2808,7 +2824,7 @@ included in version <code>20260228.00</code> of the guest agent, see the
 <a href="https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#March_02_2026">March 2, 2026 release notes</a>.</p>
 <hr />
 <h2 id="2026-03-02">2026-03-02</h2>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>Version <code>20260228.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 includes the following fixes:</p>
 <ul>
@@ -2846,7 +2862,7 @@ following features:</p>
 </ul>
 <hr />
 <h2 id="2025-12-18">2025-12-18</h2>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>Version <code>20251218.00</code> of the <a href="compute/docs/images/guest-agent">guest agent</a> is
 now available for Windows only. This version includes the following fixes:</p>
 <ul>
@@ -2866,7 +2882,7 @@ architecture to Windows, is now available.</p>
 <p>The plugin-based architecture for Windows was previously rolled back due to a bug that prevented the correct setup of IP alias routes when used with the WSFC module, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_21_2025">October 21, 2025 release notes</a>.</p>
 <hr />
 <h2 id="2025-12-08">2025-12-08</h2>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>Version <code>20251205.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a> is
 available for Linux only. This version includes the following fixes:</p>
 <ul>
@@ -2898,7 +2914,7 @@ now available for Windows only. This version includes the following fix:</p>
 <h3 id="feature_8">Feature</h3>
 <p>Version <code>20251115.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 is now available.</p>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>Version <code>20251115.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
 is now available and includes the following fixes:</p>
 <ul>
@@ -2909,7 +2925,7 @@ is now available and includes the following fixes:</p>
 </ul>
 <hr />
 <h2 id="2025-11-13">2025-11-13</h2>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p>Version <code>20251107.01</code> includes a fix for the
 <a href="compute/docs/instances/startup-scripts">Startup script runner</a> component
 that prevented it from writing status logs and script output to Cloud Logging.</p>
@@ -2918,7 +2934,7 @@ that prevented it from writing status logs and script output to Cloud Logging.</
 is now available.</p>
 <hr />
 <h2 id="2025-10-31">2025-10-31</h2>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>Version <code>20251030.02</code> includes fixes for the plugin-based architecture that is used by guest agent. For more information about the plugin-based architecture, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
 <ul>
 <li>The Clock Skew module no longer causes time inconsistencies on VMs. The agent no longer attempts to synchronize the hardware clock (<code>hwclock</code>) when the VM's Real-time Clock (RTC) isn't set to Coordinated Universal Time 0(UTC). For more information about how the guest agent handles clock synchronization, see <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#clock-synchronization">Clock Synchronization</a>.</li>
@@ -2927,7 +2943,7 @@ is now available.</p>
 </ul>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>Version <code>20251009.01</code> of the guest agent, announced in the <a href="https://docs.cloud.google.com/compute/docs/images/guest-environment/release-notes#October_20_2025">October 20, 2025 release notes</a>, has been rolled back. This version introduced the plugin-based architecture to Windows but contained a bug in the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent-functions#windows-failover">WSFC module</a>.
 To resolve this issue, guest agent version <code>20251011.00</code> is now available for Windows, which excludes the new plugin-based architecture.</p>
 <hr />
@@ -2946,7 +2962,7 @@ architecture to Debian 11, is now available.</p>
 <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
 <hr />
 <h2 id="2025-09-30">2025-09-30</h2>
-<h3 id="fixed_10">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <p>Version <code>20250930.01</code> includes the following fixes for issues found in the
 plugin-based architecture. For more information about the plugin-based
 architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
@@ -2977,7 +2993,7 @@ Enterprise Linux 10 operating systems:</p>
 </ul>
 <p>For more information about the plugin-based architecture, see
 <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>Version <code>20250918.01</code> includes the following fixes for issues found in
 plugin-based architecture. For more information about the plugin-based
 architecture, see <a href="https://cloud.google.com/compute/docs/images/guest-agent">Guest agent</a>.</p>
@@ -3003,7 +3019,7 @@ following operating systems:</p>
 <li>Oracle Linux 8</li>
 <li>AlmaLinux 8</li>
 </ul>
-<h3 id="fixed_12">Fixed</h3>
+<h3 id="fixed_13">Fixed</h3>
 <p>Version <code>20250907.00</code> includes the following fixes for issues found in guest
 agent version <code>20250901.00</code>:</p>
 <ul>
@@ -3037,7 +3053,7 @@ the following updates:</p>
 * The guest agent updates the metadata script runner and the Authorized Keys
   binary (Windows only) to use the new, configurable logging framework.
   Compatibility managers are included to facilitate the migration.</p>
-<h3 id="fixed_13">Fixed</h3>
+<h3 id="fixed_14">Fixed</h3>
 <p>An issue is fixed where network routes were not consistently applied
 (<a href="https://github.com/GoogleCloudPlatform/guest-agent/issues/516">GitHub Issue #516</a>).
 The system now consistently applies network routes by monitoring the route table
@@ -3053,6 +3069,9 @@ and re-adding routes when they disappear.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#guest-environment">Guest Environment</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-27" class="nav-link">2026-07-27</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-05-20" class="nav-link">2026-05-20</a>
           </li>

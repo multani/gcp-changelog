@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Virtual Private Cloud</title>
   <subtitle>Changelog for Google Cloud product: Virtual Private Cloud</subtitle>
-  <updated>2026-07-21T00:00:00+00:00</updated>
+  <updated>2026-07-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:virtual-private-cloud</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/virtual-private-cloud/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:virtual-private-cloud:2026-07-30:feature:0</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General Availability</strong>: You can use the <strong>Resolve subnet mask</strong> setting on a
+subnet to configure all attached Compute Engine instances with the same netmask
+as the subnet (instead of <code>/32</code>). Configuring larger instance netmasks lets
+compute instances discover the MAC addresses of other machines within the same
+subnet and directly communicate with them by using destination MAC addresses.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/vpc/docs/compute-instance-netmasks">Compute instance netmasks</a>.</p>]]></content>
+    <summary>A new subnet mask setting is now available for Compute Engine instances. This setting allows you to configure instances with the same netmask as the subnet, enabling direct communication between machines within the same subnet using MAC addresses.</summary>
+    <title>Feature: New subnet mask setting for Compute Engine instances</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,71 @@
 # Google SecOps Marketplace
 
+## 2026-07-30
+
+### Change
+
+**Google Chronicle**: Version 91.0
+
+* Updated Wiz Defend alert naming format in the following connector:
+
+  + **Google Chronicle - Chronicle Alerts Connector**
+
+---
+## 2026-07-29
+
+### Change
+
+**Active Directory**: Version 44.0
+
+* Added optional `Connection Timeout` and `Receive Timeout` parameters to configure network connectivity limits in the following action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Anomali ThreatStream**: Version 18.0
+
+* Updated API output handling in the following action:
+
+  + **Enrich Entities**
+
+### Change
+
+**Google Threat Intelligence**: Version 20.0
+
+* Added support for `CHILDHASH` and `PARENTHASH` entity types in the following action:
+
+  + **Enrich Entities**
+* Added `Entity Type Filter` parameter to allow configuring entity types for notifications in the following connector:
+
+  + **Google Threat Intelligence - Livehunt Connector**
+
+### Change
+
+**Microsoft 365 Defender**: Version 28.0
+
+* Updated case syncing logic in the following action:
+
+  + **Sync Alerts**
+* Updated alert processing logic in the following connector:
+
+  + **Microsoft 365 Defender - Incidents Connector**
+
+### Change
+
+**Siemplify**: Version 112.0
+
+* Added `Update Enabled Connectors Only` filtering option in the following job:
+
+  + **Response Integration & Connector Upgrade Job**
+
+### Change
+
+**Vertex AI**: Version 8.0
+
+* Added support for multi-region endpoints across the integration configuration.
+
+---
 ## 2026-07-22
 
 ### Feature

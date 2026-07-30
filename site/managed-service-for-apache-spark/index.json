@@ -1,6 +1,16 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-07-30": [
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark on Google Kubernetes Engine** (formerly Dataproc on Google Kubernetes Engine) subminor image version](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/gke-versions):\n\n* 3.5-dataproc-28\n\nKey updates in this image version include:\n\n* **Conda channels**: The new `3.5-dataproc-28` subminor image version doesn't have preconfigured Conda channels, and is mapped to default aliases (such as `3.5` and `latest`).\n  + **Impact:** When creating clusters with `3.5-dataproc-28` or using default aliases (`3.5`, `latest`), packages cannot be installed using Conda unless channels are manually configured during cluster initialization.\n  + **Mitigation:** If your workloads require preconfigured Conda channels, pin your clusters to the previous image versions before August 25, 2026.\n  + **Default change schedule:** All workloads must transition to image versions without preconfigured Conda channels after August 25, 2026 since the use of prior subminor versions with preconfigured Conda channels will be disallowed.\n\n**You may need to delete and replace existing clusters** After August 25, 2026,\nexisting clusters created with images that have preconfigured Conda channels\n(even if cluster jobs don't use Conda to install packages) need to be deleted\nand replaced with new\n[clusters created](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/quickstarts/gke-quickstart-create-cluster#create-dpgke-cluster)\nor [recreated](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/gke-recreate-cluster#recreate-gke-cluster)\nwith images that don't have preconfigured Conda channels.",
+        "summary": {
+          "title": "New Managed Service for Apache Spark Image Version Available",
+          "summary": "A new subminor image version, 3.5-dataproc-28, for Managed Service for Apache Spark on Google Kubernetes Engine has been released. This version removes preconfigured Conda channels, requiring manual configuration for package installations. Users are advised to update their clusters before August 25, 2026, as older versions with preconfigured channels will be disallowed after this date."
+        }
+      }
+    ],
     "2026-07-15": [
       {
         "kind": "Announcement",

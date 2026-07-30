@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2026-05-20T00:00:00+00:00</updated>
+  <updated>2026-07-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-07-27:fixed:0</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260716.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This version introduces
+the following fixes:</p>
+<ul>
+<li>The <code>systemctl start</code> operations performed by the OS Login module no longer
+  leave behind zombie processes.</li>
+<li>The extensions monitor, which monitors the health of extensions that the
+  guest agent manages, no longer logs an error when it reads an empty log file
+  from an extension.</li>
+<li>Dependency updates address multiple high-severity CVEs, such as
+  <a href="https://www.cve.org/CVERecord?id=CVE-2026-39830">CVE-2026-39830</a> and
+  <a href="https://www.cve.org/CVERecord?id=CVE-2026-39832">CVE-2026-39832</a>.</li>
+</ul>]]></content>
+    <summary>Version 20260716.00 of the guest agent has been released, addressing issues with zombie processes and log file handling. This update also includes dependency upgrades to resolve critical security vulnerabilities.</summary>
+    <title>Fixed: Guest Agent Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

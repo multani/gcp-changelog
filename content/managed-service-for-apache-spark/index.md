@@ -1,5 +1,29 @@
 # Managed Service for Apache Spark
 
+## 2026-07-30
+
+### Announcement
+
+New [**Managed Service for Apache Spark on Google Kubernetes Engine** (formerly Dataproc on Google Kubernetes Engine) subminor image version](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/gke-versions):
+
+* 3.5-dataproc-28
+
+Key updates in this image version include:
+
+* **Conda channels**: The new `3.5-dataproc-28` subminor image version doesn't have preconfigured Conda channels, and is mapped to default aliases (such as `3.5` and `latest`).
+  + **Impact:** When creating clusters with `3.5-dataproc-28` or using default aliases (`3.5`, `latest`), packages cannot be installed using Conda unless channels are manually configured during cluster initialization.
+  + **Mitigation:** If your workloads require preconfigured Conda channels, pin your clusters to the previous image versions before August 25, 2026.
+  + **Default change schedule:** All workloads must transition to image versions without preconfigured Conda channels after August 25, 2026 since the use of prior subminor versions with preconfigured Conda channels will be disallowed.
+
+**You may need to delete and replace existing clusters** After August 25, 2026,
+existing clusters created with images that have preconfigured Conda channels
+(even if cluster jobs don't use Conda to install packages) need to be deleted
+and replaced with new
+[clusters created](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/quickstarts/gke-quickstart-create-cluster#create-dpgke-cluster)
+or [recreated](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/gke-recreate-cluster#recreate-gke-cluster)
+with images that don't have preconfigured Conda channels.
+
+---
 ## 2026-07-15
 
 ### Announcement

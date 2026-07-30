@@ -1,5 +1,16 @@
 # Datastream
 
+## 2026-07-29
+
+### Feature
+
+You can now create a Datastream stream directly from the instance or
+database overview page in Spanner using the automated flow.
+
+For more information, see
+[Create a Spanner stream using the automated flow](https://docs.cloud.google.com/datastream/docs/create-spanner-stream-automated).
+
+---
 ## 2026-07-15
 
 ### Feature

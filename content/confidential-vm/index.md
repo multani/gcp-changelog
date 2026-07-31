@@ -1,5 +1,13 @@
 # Confidential VM
 
+## 2026-07-29
+
+### Feature
+
+Confidential VM instances with AMD SEV on C3D and C4D machine types now support
+configurations with more than 255 vCPUs.
+
+---
 ## 2026-07-28
 
 ### Issue

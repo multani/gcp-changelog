@@ -9,7 +9,123 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-30:fixed:0</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-30:announcement:0</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 5.2</strong></p>
+<p>We've released version 5.2 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>Version 5.2 of Google Cloud CCaaS has been released. The update timing for your instance depends on your chosen deployment schedule. More details can be found in the deployment schedules documentation.</summary>
+    <title>Announcement: New CCaaS Version Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-30:feature:1</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Answering machine detection for progressive campaigns</strong></p>
+<p>Answering machine detection (AMD) is now supported for progressive outbound
+campaigns. When enabled, Contact Center AI Platform analyzes call audio in the background
+to determine whether a call reaches a live person, or whether it reaches an
+answering machine or voicemail. If an answering machine or voicemail is
+detected, the call ends and the dialer proceeds to the next contact.</p>
+<p>Administrators: In the <strong>Settings &gt; Campaigns &gt; Dialer
+Modes</strong> pane, there's a new <strong>Enable Answering Machine Detection</strong> toggle.</p>
+<p>User experience change: When CCAI Platform detects voicemail or an
+answering machine, a green banner appears in the call adapter to indicate this.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-progressive-amd">Answering machine detection for progressive
+campaigns</a>.</p>]]></content>
+    <summary>Progressive outbound campaigns now support answering machine detection. This feature analyzes call audio to identify live connections versus answering machines, automatically ending calls to voicemail and proceeding to the next contact. A green banner in the call adapter will indicate when an answering machine is detected.</summary>
+    <title>Feature: Answering Machine Detection Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-30:feature:2</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New endpoints for getting email sessions and messages</strong></p>
+<p>Two new read-only endpoints are now available, allowing external systems to
+retrieve the parsed contents of an email interaction. This includes the sender,
+recipients, subject, body, and attachment metadata. Here are the endpoints:</p>
+<ul>
+<li><code>/apps/api/v1/email/sessions/EMAIL_SUPPORT_ID</code>: Returns
+  email session summary information and a list of message IDs with metadata.</li>
+<li><code>/apps/api/v1/email/messages/EMAIL_THREAD_ID</code>: Returns the
+  full content of a single message.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/get-email-sessions-and-messages">Get email sessions and
+messages</a>.</p>]]></content>
+    <summary>New read-only endpoints are available to retrieve parsed email interaction data, including sender, recipients, subject, body, and attachment metadata. These endpoints allow external systems to access email session summaries and full message content.</summary>
+    <title>Feature: New Endpoints for Email Data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-30:feature:3</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email forwarding with attachments</strong></p>
+<p>Agents can now forward emails to external recipients directly from the email
+adapter. When forwarding, all attachments from the original email are
+automatically included. Agents can remove attachments before sending, if needed.
+The original email remains in its assigned queue with its status unchanged.</p>
+<p>User experience change: A new <strong>Forward</strong> button is available in the email
+adapter.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#forward-an-email">Forward an
+email</a>.</p>]]></content>
+    <summary>Agents can now forward emails with all their original attachments to external recipients directly from the email adapter. Attachments can be removed before sending, and the original email remains in its queue. This feature adds a new 'Forward' button to the email adapter interface.</summary>
+    <title>Feature: Forward emails with attachments</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-30:feature:4</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Smart disposition</strong></p>
+<p>Smart disposition is a new AI-powered capability that automatically suggests a
+disposition code at the end of a session. This reduces manual work for agents
+and improves data consistency.</p>
+<p>Administrators: There's a new <strong>Smart Disposition</strong> toggle in the following
+locations:</p>
+<ul>
+<li>The **Settings &gt; Operation Management &gt; Wrap-up<blockquote>
+<p>Automatic wrap-up for inbound calls &gt; Disposition
+  Codes &amp; Notes for calls &gt; Disposition Codes** section.</p>
+</blockquote>
+</li>
+<li>The **Settings &gt; Operation Management &gt; Wrap-up<blockquote>
+<p>Automatic wrap-up for outbound calls &gt; Disposition
+  Codes &amp; Notes for calls &gt; Disposition Codes** section.</p>
+</blockquote>
+</li>
+<li>The **Settings &gt; Operation Management &gt; Wrap-up<blockquote>
+<p>Automatic wrap-up for chats &gt; Disposition Codes &amp;
+  Notes for chats &gt; Disposition Codes** section.</p>
+</blockquote>
+</li>
+</ul>
+<p>User experience change: When smart disposition is turned on, a suggested
+disposition displays in the <strong>Disposition</strong> field of the <strong>Wrap-up</strong> screen in
+the agent adapter.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/smart-disposition">Smart
+disposition</a>.</p>]]></content>
+    <summary>A new AI-powered capability, smart disposition, automatically suggests disposition codes at the end of a session. This feature reduces manual work for agents and enhances data consistency. Administrators can enable this feature through new toggles in the operation management settings.</summary>
+    <title>Feature: New AI-powered smart disposition</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-07-30:fixed:5</id>
     <published>2026-07-30T00:00:00+00:00</published>
     <updated>2026-07-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>

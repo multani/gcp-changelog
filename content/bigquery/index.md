@@ -62,6 +62,17 @@ called the
 feature formerly known as the *Storage Write API* is now called the
 [*Storage Write API (gRPC)*](https://docs.cloud.google.com/bigquery/docs/write-api).
 
+### Feature
+
+BigQuery dataset insights is
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+[BigQuery dataset insights](https://docs.cloud.google.com/bigquery/docs/generate-dataset-insights) helps you
+discover and visualize relationships between tables and automatically generate
+cross-table queries. You can run and publish these insights to
+Knowledge Catalog for agentic grounding use cases, or
+generate them on demand without publishing for quick, ad hoc dataset exploration.
+
 ---
 ## 2026-07-23
 

@@ -1,5 +1,17 @@
 # Datastream
 
+## 2026-07-31
+
+### Feature
+
+You can now replicate change data from Workday with Datastream.
+For more information, see
+[Stream data from Workday](https://docs.cloud.google.com/datastream/docs/sources-workday).
+
+This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-07-29
 
 ### Feature

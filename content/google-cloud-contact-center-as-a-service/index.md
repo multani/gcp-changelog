@@ -2,6 +2,94 @@
 
 ## 2026-07-30
 
+### Announcement
+
+**Google Cloud CCaaS 5.2**
+
+We've released version 5.2 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Answering machine detection for progressive campaigns**
+
+Answering machine detection (AMD) is now supported for progressive outbound
+campaigns. When enabled, Contact Center AI Platform analyzes call audio in the background
+to determine whether a call reaches a live person, or whether it reaches an
+answering machine or voicemail. If an answering machine or voicemail is
+detected, the call ends and the dialer proceeds to the next contact.
+
+Administrators: In the **Settings > Campaigns > Dialer
+Modes** pane, there's a new **Enable Answering Machine Detection** toggle.
+
+User experience change: When CCAI Platform detects voicemail or an
+answering machine, a green banner appears in the call adapter to indicate this.
+
+For more information, see [Answering machine detection for progressive
+campaigns](https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-progressive-amd).
+
+### Feature
+
+**New endpoints for getting email sessions and messages**
+
+Two new read-only endpoints are now available, allowing external systems to
+retrieve the parsed contents of an email interaction. This includes the sender,
+recipients, subject, body, and attachment metadata. Here are the endpoints:
+
+* `/apps/api/v1/email/sessions/EMAIL_SUPPORT_ID`: Returns
+  email session summary information and a list of message IDs with metadata.
+* `/apps/api/v1/email/messages/EMAIL_THREAD_ID`: Returns the
+  full content of a single message.
+
+For more information, see [Get email sessions and
+messages](https://docs.cloud.google.com/contact-center/ccai-platform/docs/get-email-sessions-and-messages).
+
+### Feature
+
+**Email forwarding with attachments**
+
+Agents can now forward emails to external recipients directly from the email
+adapter. When forwarding, all attachments from the original email are
+automatically included. Agents can remove attachments before sending, if needed.
+The original email remains in its assigned queue with its status unchanged.
+
+User experience change: A new **Forward** button is available in the email
+adapter.
+
+For more information, see [Forward an
+email](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#forward-an-email).
+
+### Feature
+
+**Smart disposition**
+
+Smart disposition is a new AI-powered capability that automatically suggests a
+disposition code at the end of a session. This reduces manual work for agents
+and improves data consistency.
+
+Administrators: There's a new **Smart Disposition** toggle in the following
+locations:
+
+* The **Settings > Operation Management > Wrap-up
+  > Automatic wrap-up for inbound calls > Disposition
+  Codes & Notes for calls > Disposition Codes** section.
+* The **Settings > Operation Management > Wrap-up
+  > Automatic wrap-up for outbound calls > Disposition
+  Codes & Notes for calls > Disposition Codes** section.
+* The **Settings > Operation Management > Wrap-up
+  > Automatic wrap-up for chats > Disposition Codes &
+  Notes for chats > Disposition Codes** section.
+
+User experience change: When smart disposition is turned on, a suggested
+disposition displays in the **Disposition** field of the **Wrap-up** screen in
+the agent adapter.
+
+For more information, see [Smart
+disposition](https://docs.cloud.google.com/contact-center/ccai-platform/docs/smart-disposition).
+
 ### Fixed
 
 This release addresses the following issues:

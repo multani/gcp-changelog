@@ -1,5 +1,18 @@
 # Google Cloud Marketplace Partners
 
+## 2026-07-30
+
+### Change
+
+We've added the `city` field to Customer Insights reports and Detailed
+Disbursements reports.
+
+For more information, see
+[Customer Insights report fields](https://docs.cloud.google.com/marketplace/docs/partners/reports/report-customer-insight#report_fields)
+and
+[Detailed Disbursements report fields](https://docs.cloud.google.com/marketplace/docs/partners/reports/report-detailed-disbursement#report_fields).
+
+---
 ## 2026-07-24
 
 ### Feature

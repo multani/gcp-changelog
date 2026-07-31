@@ -1,5 +1,58 @@
 # Looker
 
+## 2026-07-30
+
+### Announcement
+
+From July 27 through July 30, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.12.
+
+### Feature
+
+Looker admins now have the ability to configure a Looker instance to require [multi-factor authentication (MFA)](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-two-factor) whenever a user tries to [log in by using an email and a password](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-password). This feature is enabled by default.
+
+### Feature
+
+The [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) feature is now generally available.
+
+### Feature
+
+The [Expression Assistant](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) is now generally available.
+
+### Feature
+
+The [Enhanced search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.
+
+### Feature
+
+Looker Continuous Integration (CI) now supports email alerts. When you create or edit a CI suite, you can enable the **Enable email alerts** toggle to specify email recipients and select which run statuses will trigger emails (**Failed**, **Error**, **Passed**, or **Cancelled**). For more information, see [Set up alerting](https://docs.cloud.google.com/looker/docs/ci-create-suite#alerting).
+
+### Feature
+
+The [LookML Projects page](https://docs.cloud.google.com/looker/docs/manage-projects) has been updated with a more performant tabbed layout, which features three tabs: **Models and Projects**, **Pending Projects**, and **Marketplace Projects**.
+
+### Feature
+
+Now available in preview, the new [**Modern User Interface** feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#modern_user_interface) enables [modernized layouts and design](https://docs.cloud.google.com/looker/docs/modern-ui) alongside new configuration settings for visualizations and dashboards. When this preview feature is enabled, users can apply a **Modern** visualization theme that features updated typography and modern, accessible color palettes for improved data legibility. Additionally, a new **Modern** dashboard style provides a high-density, streamlined design that optimizes data viewing and aligns with Google's latest design standards.
+
+### Feature
+
+Now available in preview, [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries) (also referred to as *golden queries*) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.
+
+To enable verified queries, a Looker admin must turn on the **Verified Queries** setting on the **Gemini in Looker** admin page. The **Conversational Analytics** setting must also be enabled for verified queries to be used.
+
+### Change
+
+When you [chat in Gemini Enterprise with data agents that you create in Looker](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#chat-agent-ge), agent responses now include charts and visualizations.
+
+### Change
+
+The [Insight Assistant](https://docs.cloud.google.com/looker/docs/gemini-insight-asst) now displays the process the assistant uses to generate the response, showing key details in your data that it used to generate the response, and listing the fields from your Explore that it used.
+
+### Announcement
+
+[Complimentary Data Studio Pro licenses](https://docs.cloud.google.com/looker/docs/admin-panel-platform-dsp) aren't available for Looker instances that are affiliated with Looker contracts that are signed after August 1, 2026.
+
+---
 ## 2026-07-27
 
 ### Feature

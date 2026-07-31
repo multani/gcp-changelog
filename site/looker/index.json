@@ -1,13 +1,101 @@
 {
   "name": "Looker",
   "entries": {
-    "2026-07-27": [
+    "2026-07-30": [
+      {
+        "kind": "Announcement",
+        "content": "From July 27 through July 30, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.12.",
+        "summary": {
+          "title": "New features coming to Looker",
+          "summary": "Starting July 27, 2026, new features will be automatically enabled for Looker (original) instances running version 26.12. This update aims to enhance the user experience and provide additional capabilities."
+        }
+      },
       {
         "kind": "Feature",
-        "content": "Now available in preview ([Preview](https://cloud.google.com/products#product-launch-stages)), [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries) (also referred to as *golden queries*) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.\n\nTo enable verified queries, a Looker admin must turn on the **Verified Queries** setting on the **Gemini in Looker** admin page. The **Conversational Analytics** setting must also be enabled to use verified queries.",
+        "content": "Looker admins now have the ability to configure a Looker instance to require [multi-factor authentication (MFA)](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-two-factor) whenever a user tries to [log in by using an email and a password](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-password). This feature is enabled by default.",
         "summary": {
-          "title": "Verified queries now in preview",
-          "summary": "Verified queries, also known as golden queries, are now available in preview. They provide predefined natural language questions and their corresponding Looker Explore queries to guide your data agent and ensure accurate responses to complex business requests. Admins can enable this feature through the Gemini in Looker admin page, provided Conversational Analytics is also active."
+          "title": "MFA login requirement for Looker",
+          "summary": "Admins can now configure Looker instances to require multi-factor authentication (MFA) for users logging in with email and password. This enhanced security feature is enabled by default to protect user accounts."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [custom calendar](https://docs.cloud.google.com/looker/docs/custom-calendars) feature is now generally available.",
+        "summary": {
+          "title": "Custom calendars now available",
+          "summary": "The custom calendars feature is now generally available. This feature allows for greater flexibility in how you define and manage calendars for your data analysis."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Expression Assistant](https://docs.cloud.google.com/looker/docs/gemini-expression-asst) is now generally available.",
+        "summary": {
+          "title": "Expression Assistant is now generally available",
+          "summary": "The Expression Assistant is now generally available. This feature helps users write Looker expressions more easily. It leverages generative AI to provide suggestions and complete expressions."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Enhanced search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.",
+        "summary": {
+          "title": "Enhanced search is now available",
+          "summary": "The enhanced search feature for finding saved content is now generally available. This update improves how you locate your saved items within the platform."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Looker Continuous Integration (CI) now supports email alerts. When you create or edit a CI suite, you can enable the **Enable email alerts** toggle to specify email recipients and select which run statuses will trigger emails (**Failed**, **Error**, **Passed**, or **Cancelled**). For more information, see [Set up alerting](https://docs.cloud.google.com/looker/docs/ci-create-suite#alerting).",
+        "summary": {
+          "title": "Looker CI adds email alerts",
+          "summary": "Looker Continuous Integration now supports email alerts. You can enable this feature when creating or editing a CI suite to notify specific recipients about various run statuses, including failed, error, passed, or cancelled events."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [LookML Projects page](https://docs.cloud.google.com/looker/docs/manage-projects) has been updated with a more performant tabbed layout, which features three tabs: **Models and Projects**, **Pending Projects**, and **Marketplace Projects**.",
+        "summary": {
+          "title": "Updated LookML Projects Page",
+          "summary": "The LookML Projects page now features a more performant tabbed layout with distinct sections for Models and Projects, Pending Projects, and Marketplace Projects. This update enhances navigation and project management within the platform."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the new [**Modern User Interface** feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#modern_user_interface) enables [modernized layouts and design](https://docs.cloud.google.com/looker/docs/modern-ui) alongside new configuration settings for visualizations and dashboards. When this preview feature is enabled, users can apply a **Modern** visualization theme that features updated typography and modern, accessible color palettes for improved data legibility. Additionally, a new **Modern** dashboard style provides a high-density, streamlined design that optimizes data viewing and aligns with Google's latest design standards.",
+        "summary": {
+          "title": "Preview: Modern User Interface for Looker",
+          "summary": "A new Modern User Interface is now in preview, offering modernized layouts, design settings for visualizations and dashboards, updated typography, and accessible color palettes. This feature enhances data legibility and provides a streamlined design aligned with Google's latest standards."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries) (also referred to as *golden queries*) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.\n\nTo enable verified queries, a Looker admin must turn on the **Verified Queries** setting on the **Gemini in Looker** admin page. The **Conversational Analytics** setting must also be enabled for verified queries to be used.",
+        "summary": {
+          "title": "Verified Queries Now in Preview",
+          "summary": "Verified queries, also known as golden queries, are now available in preview. These predefined pairs of natural language questions and Looker Explore queries serve as verified standards to guide your data agent in handling complex business requests accurately. To use this feature, Looker admins need to enable the 'Verified Queries' setting on the 'Gemini in Looker' admin page, ensuring 'Conversational Analytics' is also enabled."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "When you [chat in Gemini Enterprise with data agents that you create in Looker](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#chat-agent-ge), agent responses now include charts and visualizations.",
+        "summary": {
+          "title": "Agent responses now include charts",
+          "summary": "Gemini Enterprise agents created in Looker now provide responses with charts and visualizations. This enhancement allows for more insightful data exploration directly within your conversations."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The [Insight Assistant](https://docs.cloud.google.com/looker/docs/gemini-insight-asst) now displays the process the assistant uses to generate the response, showing key details in your data that it used to generate the response, and listing the fields from your Explore that it used.",
+        "summary": {
+          "title": "Understand how Insight Assistant works",
+          "summary": "Insight Assistant now shows you the exact process it uses to generate responses. You can see the key data details and Explore fields it leveraged, giving you more transparency into its analysis."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "[Complimentary Data Studio Pro licenses](https://docs.cloud.google.com/looker/docs/admin-panel-platform-dsp) aren't available for Looker instances that are affiliated with Looker contracts that are signed after August 1, 2026.",
+        "summary": {
+          "title": "Data Studio Pro Licenses Update",
+          "summary": "Complimentary Data Studio Pro licenses will not be available for Looker instances under contracts signed after August 1, 2026. This change affects instances affiliated with newer Looker contracts. Please review the terms of your contract for details."
         }
       }
     ],
@@ -342,6 +430,16 @@
         "summary": {
           "title": "Manage your Looker updates",
           "summary": "Looker now offers release channels in preview, letting you select between Rapid, Regular, and \"No channel\" options for version updates. Choose Rapid for early access, Regular for balanced stability, or \"No channel\" for manual control."
+        }
+      }
+    ],
+    "2026-07-27": [
+      {
+        "kind": "Feature",
+        "content": "Now available in preview ([Preview](https://cloud.google.com/products#product-launch-stages)), [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries) (also referred to as *golden queries*) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.\n\nTo enable verified queries, a Looker admin must turn on the **Verified Queries** setting on the **Gemini in Looker** admin page. The **Conversational Analytics** setting must also be enabled to use verified queries.",
+        "summary": {
+          "title": "Verified queries now in preview",
+          "summary": "Verified queries, also known as golden queries, are now available in preview. They provide predefined natural language questions and their corresponding Looker Explore queries to guide your data agent and ensure accurate responses to complex business requests. Admins can enable this feature through the Gemini in Looker admin page, provided Conversational Analytics is also active."
         }
       }
     ],

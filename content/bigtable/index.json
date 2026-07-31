@@ -1,6 +1,16 @@
 {
   "name": "Bigtable",
   "entries": {
+    "2026-07-30": [
+      {
+        "kind": "Feature",
+        "content": "You can use Bigtable as a remote storage backend for\n[LMCache](https://docs.lmcache.ai/kv_cache/storage_backends/bigtable.html). By\nstoring the large language model (LLM) key-value (KV) cache externally in\nBigtable, multiple AI serving instances can share and reuse precomputed\nattention tensors. This reduces compute overhead and significantly improves\ntime-to-first-token (TTFT) for repeated prompts and shared documents. This\nfeature is in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Bigtable as LMCache remote storage",
+          "summary": "You can now use Bigtable as a remote storage backend for LMCache. This allows multiple AI serving instances to share and reuse precomputed attention tensors, reducing compute overhead and improving time-to-first-token for repeated prompts. This feature is currently in Preview."
+        }
+      }
+    ],
     "2026-07-29": [
       {
         "kind": "Feature",

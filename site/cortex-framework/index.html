@@ -2724,6 +2724,40 @@
 
 
 <h1 id="cortex-framework">Cortex Framework</h1>
+<h2 id="2026-07-30">2026-07-30</h2>
+<h3 id="announcement">Announcement</h3>
+<h3 id="release-700-ga-general-availability">Release 7.0.0-GA (General Availability)</h3>
+<p><strong>Note: Important upgrade considerations for Version 7</strong></p>
+<ul>
+<li><strong>Upgrading from v6:</strong> Because v7 is a new major version it implies breaking changes with no automatic migration path. For v6 customers looking to adopt v7, we provide <a href="https://docs.cloud.google.com/cortex/docs/v6-compatibility">v6 compatibility content for SAP reporting.</a></li>
+<li><strong>Upgrading from a v7 Preview:</strong> Due to configuration model improvements, you must recreate your configuration files and re-deploy</li>
+</ul>
+<h3 id="feature">Feature</h3>
+<p>Google Cloud Cortex Framework version 7 is now generally available. Version 7 introduces a modular deployment architecture, simplified data orchestration via <a href="https://cloud.google.com/dataform/docs">Dataform</a>, and AI-ready data products with <a href="https://cloud.google.com/bigquery/docs">BigQuery</a> and <a href="https://cloud.google.com/products/knowledge-catalog">Knowledge Catalog</a> integration. This enables enterprises to build, extend, and deploy data assets and pipelines for advanced analytics and agentic use cases with less risk, complexity, and cost.</p>
+<p><strong>New features and enhancements</strong></p>
+<p><em>additional to those released in preview</em></p>
+<p>AI, discovery, and governance:</p>
+<ul>
+<li><strong><a href="https://docs.cloud.google.com/cortex/docs/agentic-skills-for-data-product-building">New agentic data product builder skills</a></strong>: Automate the creation and customization of data products using natural language.</li>
+<li><strong><a href="https://docs.cloud.google.com/cortex/docs/knowledge-catalog">New Knowledge Catalog integration</a></strong>: Automatically synchronize deployed Cortex Framework data products and enriched metadata directly into Knowledge Catalog for discovery and governance.</li>
+</ul>
+<p>Expanded data product content and integrations:</p>
+<ul>
+<li><strong><a href="https://docs.cloud.google.com/cortex/docs/data-product#available_data_products">New data products available for SAP ERP</a></strong>: Access an expanded number of Cortex Framework delivered data products for SAP ECC and SAP S/4HANA.</li>
+<li><strong><a href="https://docs.cloud.google.com/cortex/docs/source-system-integration/sap-bdc">New support for SAP Business Data Cloud data products</a></strong>: Register your SAP BDC data products with Cortex Framework for expanded use case opportunities on top.</li>
+<li><strong><a href="https://docs.cloud.google.com/cortex/docs/solution-samples/overview">New solution samples features</a></strong>: Consumption data product samples for SAP ERP and SAP BDC can now be easily deployed on top of Cortex Framework managed data products.</li>
+<li><strong><a href="https://docs.cloud.google.com/cortex/docs/v6-compatibility">New v6 compatibility for SAP reporting</a></strong>: Provides an option to use Cortex Framework version 6 delivered SAP BigQuery data models within the version 7 architecture to support customers looking to migrate while continuing to use v6 delivered Looker reports.</li>
+</ul>
+<p>Supportability:</p>
+<ul>
+<li><strong><a href="https://docs.cloud.google.com/cortex/docs/observability">New observability features</a></strong>: Enhanced error reporting and pipeline monitoring.</li>
+</ul>
+<h3 id="change">Change</h3>
+<p>Google Cloud Cortex Framework version 7 includes <a href="https://docs.cloud.google.com/cortex/docs/telemetry">telemetry</a>
+to capture anonymized deployment statistics. This data helps the solution build
+team focus on improving modules with high adoption. Telemetry is enabled by
+default, but you can opt out at any time.</p>
+<hr />
 <h2 id="2026-06-25">2026-06-25</h2>
 <h3 id="release-700-preview21-public-preview">Release 7.0.0-preview.2.1 (Public Preview)</h3>
 <h3 id="fixed">Fixed</h3>
@@ -2733,7 +2767,7 @@
 <hr />
 <h2 id="2026-06-24">2026-06-24</h2>
 <h3 id="release-700-preview2-public-preview">Release 7.0.0-preview.2 (Public Preview)</h3>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <ul>
 <li><strong><a href="https://docs.cloud.google.com/cortex/docs/data-product">Data products for SAP ERP</a></strong>: Additional data product accelerators including: accounting documents, accounts payable, accounts receivable, addresses, agency business settlement documents, billing documents, business partners, condition contracts, controlling areas and cost elements, cost and profit centers, currency conversion, financial statement structure &amp; versions, fiscal year variants, fixed assets, general ledger accounts, global settings, plants and storage, project structure, units of measurement, universal journal, and vendor invoices.</li>
 <li><strong><a href="https://docs.cloud.google.com/cortex/docs/extensibility-guide">Extensibility guide</a></strong>: Documentation explaining how to customize and extend Cortex Framework, organized by three steps: <a href="https://docs.cloud.google.com/cortex/docs/extensibility-guide-namespaces">Custom namespace setup</a>, <a href="https://docs.cloud.google.com/cortex/docs/extensibility-guide-data-foundation">Data foundation module creation</a>, and <a href="https://docs.cloud.google.com/cortex/docs/extensibility-guide-data-product">Data product module creation</a>.</li>
@@ -2741,7 +2775,7 @@
 <hr />
 <h2 id="2026-04-30">2026-04-30</h2>
 <h3 id="release-7">Release 7</h3>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Cortex Framework <strong>version 7</strong> introduces a highly modular deployment architecture, simplified data orchestration via <a href="https://docs.cloud.google.com/dataform/docs">Dataform</a>, and enhanced support for the next generation of AI-ready data products with <a href="https://docs.cloud.google.com/bigquery/docs">BigQuery</a> - enabling enterprises to build, extend, and deploy robust data models and pipelines for advanced analytics and AI/agentic use cases. To request access to the GitHub repository, see <a href="https://docs.cloud.google.com/cortex/docs/request-access">Request access</a>.</p>
 <ul>
 <li>
@@ -2806,7 +2840,7 @@
 <li><strong>Composer DAG</strong>: Corrected propagation of location parameterization.</li>
 <li><strong>Cortex for Marketing</strong>: Updated references to Google Ads API v22.</li>
 </ul>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <ul>
 <li><strong>SAP</strong>: The column <code>DUMMY_SDDOCPARTNER_INCL_EEW_PS</code> has been removed from
   <em>SalesOrderPartnerFunction</em> (ECC and S/4) as it is a non-standard column not
@@ -2918,6 +2952,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cortex-framework">Cortex Framework</a></li>
+          <li class="nav-item">
+            <a href="#2026-07-30" class="nav-link">2026-07-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-25" class="nav-link">2026-06-25</a>
           </li>

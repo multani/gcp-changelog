@@ -1,5 +1,26 @@
 # BigQuery
 
+## 2026-07-30
+
+### Feature
+
+You can add tables, views, data sources, and data quality tests as tasks to
+BigQuery pipelines. For more information, see
+[Add a pipeline task](https://docs.cloud.google.com/bigquery/docs/create-pipelines#add_a_pipeline_task).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can audit when users download query results by using the BigQuery
+console. Data Access audit logs for the `tabledata.list` method now include a
+[`uiDownloadRequest`](https://docs.cloud.google.com/bigquery/docs/reference/auditlogs/rest/Shared.Types/BigQueryAuditMetadata.html#BigQueryAuditMetadata.TableDataRead.FIELDS.ui_download_request)
+field to indicate whether the request was triggered by a UI download.
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-07-29
 
 ### Feature

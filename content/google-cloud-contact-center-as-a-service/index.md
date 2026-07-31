@@ -1,5 +1,156 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-07-30
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where voice calls became stuck in a virtual agent state after
+  a session ended abnormally or an escalation handoff didn't complete.
+* Fixed an issue where using invalid sorting parameters on agent activity logs
+  caused a server error.
+* Fixed an issue where canceling a warm transfer to a queue at overcapacity
+  caused the caller to become stranded in an automated menu loop.
+* Fixed an issue where the agent activity logs API allowed unbounded
+  time ranges, which led to system performance degradation and gateway
+  timeouts.
+* Fixed an issue where the team and menu endpoints experienced performance
+  delays.
+* Fixed an issue where calls transferred to a queue with overcapacity
+  deflection (OCD) enabled didn't redirect, causing callers to hear indefinite
+  ringing.
+* Fixed an issue where the call duration in the call adapter and in the
+  in-call status timer of the agent desktop didn't match for outbound calls.
+* Fixed an issue where the Agent Activity dashboard displayed time zones
+  inconsistently.
+* Fixed an issue where the inactivity timer wouldn't force a session to end if
+  the agent closed the browser or browser tab before the inactivity timer
+  expired.
+* Fixed an issue where the **All Call History** and **Individual Call
+  History** reports displayed incorrect cascade group numbers for transferred
+  calls and chats.
+* Fixed an issue where the sentiment score appeared in the **Call Details**
+  panel of the agent desktop despite sentiment analysis being turned off in
+  the conversation profile.
+* Fixed an issue with IVR calls routed through Nexmo, where the virtual agent
+  missed the first several seconds of caller audio, forcing callers to repeat
+  themselves.
+* Fixed an issue where chats became stuck in the queue after a deltacast
+  routing projection expired or an agent didn't connect.
+* Fixed an issue where reordering queues in the CCAI Platform portal caused
+  significant latency and required a manual page refresh to display the
+  changes.
+* Fixed an issue with Salesforce integrations where adding a third party to a
+  call incorrectly displayed their contact name in the customer field in the
+  agent desktop participants panel.
+* Fixed an issue where direct inbound SMS chats that were sent to an
+  unavailable agent expired and failed instead of being rerouted.
+* Fixed an issue where anonymous inbound calls incorrectly displayed an
+  agent's contact information instead of indicating an unknown caller.
+* Fixed an issue where database deadlocks caused transactions to run against
+  the wrong database, causing failed lookups and chat sessions getting stuck.
+* Fixed an issue where manual status changes to **Available** after an
+  automatic wrap-up were incorrectly attributed to the system instead of the
+  agent in activity reports.
+* Fixed an issue where retrieving large datasets using the manager API caused
+  connection timeouts and incomplete data synchronization for downstream
+  systems.
+* Fixed an issue where the **Agent Assist Hub** incorrectly displayed `The
+  Agent Assist Hub feature is not enabled` during voice sessions despite Agent
+  Assist Hub being enabled.
+* Fixed a web SDK issue where navigating between pages on the host website
+  during an active chat resulted in a duplicate session being created.
+* Fixed an issue where the **AgentSystemData** historical report incorrectly
+  showed zero login time for agents who were actively handling calls.
+* Fixed an issue where Dialogflow agents incorrectly escalated or
+  disconnected calls when responding with only pre-recorded audio.
+* Fixed an issue where transfer completion events appeared twice in the agent
+  desktop session data feed when a user was transferred to a task virtual
+  agent.
+* Fixed an issue where virtual agent interactions failed and escalated
+  prematurely.
+* Fixed an issue where a single wrap-up event was incorrectly dispatched twice
+  to Dialogflow on bidirectional-enabled voice calls.
+* Fixed an issue where session summarization sections weren't displayed in the
+  order that they were configured.
+* Fixed an issue where sensitive information in the CC and BCC fields of email
+  requests was visible in system logs.
+* Fixed an issue where the email adapter displayed a blank gray screen when an
+  agent attempted to transfer emails between queues.
+* Fixed an issue in Kustomer integrations where abandoned or failed calls
+  weren't finalized, leaving records in the `Call In Progress` state.
+* Fixed an issue in ServiceNow integrations where starting a chat from a queue
+  caused duplicate cases for a single chat ID.
+* Fixed an issue where mobile chat sessions ended unexpectedly after
+  successfully escalating to a human agent.
+* Fixed an issue where chat transcript PDF headers remained in English for
+  non-English queues.
+* Fixed an issue where placeholder text (`Content cards displayed here`)
+  didn't appear in the agent adapter or live chat view when content cards
+  weren't supported.
+* Fixed an issue where agents received duplicate SMS messages from end-users.
+* Fixed an issue where the inactivity timeout didn't trigger for chats
+  waiting in a transfer queue.
+* Fixed an issue where chats waiting in a transfer queue remained open
+  indefinitely and created duplicate metadata files.
+* Fixed an issue where chat transcripts were missing from data exports when a
+  CRM ticket wasn't created.
+* Fixed an issue where chats escalated from a virtual agent remained in queued
+  status after being assigned to an agent.
+* Fixed an issue where calls escalated from a virtual agent to a
+  holiday-closed queue bypassed the holiday message and played the after-hours
+  deflection message.
+* Fixed an issue where call recording URLs weren't saved or synced to
+  the CRM for calls with multiple audio segments, such as those involving an
+  IVR followed by an agent conference.
+* Fixed an issue where voice calls remained in an assigned state without
+  progressing or requeueing if a system error occurred during the assignment
+  process.
+* Fixed an issue where callers were disconnected from voicemail greetings
+  after an agent completed their wrap-up following a call transfer.
+* Fixed an issue where manual wrap-up session data was incorrectly recorded
+  across multiple sessions, leading to inflated duration reports.
+* Fixed an issue where duplicate call recording files with an `.N` suffix were
+  created in external storage.
+* Fixed an issue where calls prematurely disconnected or experienced audio
+  loss during the hangup process.
+* Fixed an issue where Telnyx VoIP calls silently dropped without
+  notification if the connection was interrupted.
+* Improved internal instrumentation to diagnose poor call quality scores and
+  improve call reliability.
+* Fixed an issue where agents configured for Deltacast and auto-answer
+  received unexpected multicast call offers.
+* Fixed an issue where the agent desktop didn't save call-related settings
+  such as mute status.
+* Fixed an issue where queue-level automatic wrap-up settings were
+  unexpectedly disabled.
+* Fixed an issue where the switch to chat button wasn't accessible from the
+  keyboard.
+* Fixed an issue where an agent could end the wrap-up session of another
+  agent.
+* Fixed an issue where agents experienced delays of up to 30 seconds when
+  transitioning from "Wrap" to "Available" status.
+* Fixed an issue where an `An error has occurred` message incorrectly appeared
+  when a user created a direct access point for instances without a configured
+  CRM.
+* Fixed an issue where message timestamps weren't visible to supervisors and
+  administrators when monitoring active chats in the CCAI Platform portal.
+* Fixed an issue where historical data syncs to Calabrio failed.
+* Fixed an issue where the bulk user upload process allowed unauthorized role
+  assignments.
+* Fixed an issue where deleting a notification rule removed all associated
+  historical notifications without warning.
+* Fixed an issue where call events in timeline reports appeared out of
+  chronological order.
+* Fixed an issue where technical connection timeouts during call offers
+  weren't correctly tracked as skipped interactions.
+* Fixed an issue where chats remained in the queue following a virtual agent
+  escalation.
+* Fixed an issue where importing a contact list CSV for a Native Power Dial
+  campaign failed if the file contained malformed rows or encoding issues.
+
+---
 ## 2026-07-28
 
 ### Announcement

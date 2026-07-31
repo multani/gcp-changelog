@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Bigtable</title>
   <subtitle>Changelog for Google Cloud product: Bigtable</subtitle>
-  <updated>2026-07-29T00:00:00+00:00</updated>
+  <updated>2026-07-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigtable</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigtable/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigtable:2026-07-30:feature:0</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use Bigtable as a remote storage backend for
+<a href="https://docs.lmcache.ai/kv_cache/storage_backends/bigtable.html">LMCache</a>. By
+storing the large language model (LLM) key-value (KV) cache externally in
+Bigtable, multiple AI serving instances can share and reuse precomputed
+attention tensors. This reduces compute overhead and significantly improves
+time-to-first-token (TTFT) for repeated prompts and shared documents. This
+feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>You can now use Bigtable as a remote storage backend for LMCache. This allows multiple AI serving instances to share and reuse precomputed attention tensors, reducing compute overhead and improving time-to-first-token for repeated prompts. This feature is currently in Preview.</summary>
+    <title>Feature: Bigtable as LMCache remote storage</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

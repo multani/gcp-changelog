@@ -1,5 +1,17 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-07-24
+
+### Fixed
+
+A release note published on [May 6, 2025](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes#May_06_2025) stated that each Keepalived instance
+virtual router redundancy protocol (VRRP) configuration is configured with a
+`nopreempt` flag to avoid elections when a non-master instance is restarted.
+
+The `nopreempt` flag was removed in release 1.32.200 and later. For more
+information, see [Control plane VIP isn't moved when HAProxy is unavailable](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#keepalived-config-issue).
+
+---
 ## 2026-07-22
 
 ### Announcement

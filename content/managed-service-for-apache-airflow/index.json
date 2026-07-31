@@ -1,6 +1,88 @@
 {
   "name": "Managed Service for Apache Airflow",
   "entries": {
+    "2026-07-29": [
+      {
+        "kind": "Announcement",
+        "content": "A new Managed Service for Apache Airflow release has started on\n**July 29, 2026**. Get ready for upcoming changes and features as we roll out\nthe new release to all regions. This release is in progress at the moment.\nListed changes and features might not be available in some regions yet.",
+        "summary": {
+          "title": "New Airflow Release Rolling Out",
+          "summary": "A new Managed Service for Apache Airflow release has begun rolling out as of July 29, 2026. This release introduces upcoming changes and features, which will be available across all regions. Please note that not all features may be immediately accessible in every region as the rollout is currently in progress."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Airflow 3.2.2** is available in Managed Airflow (Gen 3).",
+        "summary": {
+          "title": "Managed Airflow 3.2.2 Now Available",
+          "summary": "Managed Airflow now supports version 3.2.2 for Gen 3 environments. This update brings the latest features and improvements to your managed Airflow instances."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "*(Airflow 3.2.2)* The\n[Multi-Team](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/multi-team.html)\nAirflow feature isn't available. The `[core]multi_team` Airflow configuration\noption is set to `False` and it isn't possible to override it.",
+        "summary": {
+          "title": "Multi-Team Feature Unavailable",
+          "summary": "The Multi-Team feature in Airflow 3.2.2 is currently unavailable. The configuration option 'core.multi_team' is set to False and cannot be overridden. This means that multiple teams cannot effectively utilize Airflow in this version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "*(Airflow 3.2.2)* Backported\n[#69877](https://github.com/apache/airflow/pull/69877) to restore the ability\nto deliver failure and retry alerts through a pluggable email backend\n(configured through the `[email]email_backend` Airflow configuration option).",
+        "summary": {
+          "title": "Email alerts delivery restored",
+          "summary": "The ability to send failure and retry alerts via a pluggable email backend has been restored. This fix ensures that alerts configured through the `[email]email_backend` Airflow configuration option are now reliably delivered."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "*(Managed Airflow Gen 3 with Airflow 2)* Default triggerer resources are\nchanging to 1 vCPU and 2 GB memory to match Airflow 3 defaults. This change is\navailable in the Google Cloud CLI, Terraform, and Cloud Composer API and is\ngradually rolling out in the Google Cloud console.",
+        "summary": {
+          "title": "Airflow triggerer resources updated",
+          "summary": "Default triggerer resources for Managed Airflow Gen 3 are changing to 1 vCPU and 2 GB memory to align with Airflow 3 defaults. This update is being rolled out across the Google Cloud CLI, Terraform, API, and console."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "A correct error message is now generated when an environment creation request\nfails because of malformed network and subnetwork identifiers.",
+        "summary": {
+          "title": "Corrected network error message",
+          "summary": "The system now displays an accurate error message when environment creation fails due to invalid network or subnetwork identifiers. This fix ensures clearer communication about network configuration issues."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "*(Available without upgrading)* The correct default task priority weight of `1`\nis now shown for tasks in the Google Cloud console.",
+        "summary": {
+          "title": "Default task priority weight corrected",
+          "summary": "The default task priority weight of 1 is now correctly displayed in the Google Cloud console. This update is available without requiring an upgrade."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.2.2-build.0](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-0)\n* [composer-3-airflow-3.1.8-build.2](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-8-build-2)\n* [composer-3-airflow-2.11.1-build.13](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-13) (default)\n* [composer-3-airflow-2.10.5-build.46](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-46)",
+        "summary": {
+          "title": "New Airflow builds available",
+          "summary": "New Airflow builds are now available for Managed Airflow (Gen 3). These updates include several new versions of Airflow, with composer-3-airflow-2.11.1-build.13 being the default. Please refer to the documentation for a full list of available builds and their details."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.8-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-8-airflow-2-11-1) (default)\n* [composer-2.17.8-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-8-airflow-2-10-5)",
+        "summary": {
+          "title": "New Managed Airflow Images Available",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including the default composer-2.17.8-airflow-2.11.1. These updates bring the latest Airflow versions to your managed environments."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.10.5-build.10, composer-3-airflow-2.9.3-build.30,\ncomposer-2.13.8-airflow-2.9.3, and composer-2.13.8-airflow-2.10.5.",
+        "summary": {
+          "title": "Managed Airflow Versions Deprecated",
+          "summary": "Several Managed Airflow versions are now out of support. Please upgrade to a supported version to continue receiving updates and security patches."
+        }
+      }
+    ],
     "2026-07-24": [
       {
         "kind": "Announcement",

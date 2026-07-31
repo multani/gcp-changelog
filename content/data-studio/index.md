@@ -1,5 +1,20 @@
 # Data Studio
 
+## 2026-07-30
+
+### Feature
+
+**Conversational Analytics is generally available**
+
+Conversational Analytics in Data Studio is now generally available. You can now filter your [data agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-data-agents#start-a-conversation-with-an-agent) by the Google Cloud project to which they belong. Agents that require additional permissions are now displayed with an **Unavailable** label.
+
+### Feature
+
+**Email notifications when sharing Conversational Analytics data agents**
+
+When you [share data agents](https://docs.cloud.google.com/bigquery/docs/create-data-agents#share-data-studio-users) that were created in BigQuery with Data Studio users, you can opt to send an email to notify those users of their access to the agent.
+
+---
 ## 2026-06-18
 
 ### Feature

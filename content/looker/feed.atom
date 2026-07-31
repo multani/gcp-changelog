@@ -2,20 +2,141 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-07-27T00:00:00+00:00</updated>
+  <updated>2026-07-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-07-27:feature:0</id>
-    <published>2026-07-27T00:00:00+00:00</published>
-    <updated>2026-07-27T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Now available in preview (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>), <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries">verified queries</a> (also referred to as <em>golden queries</em>) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.</p>
-<p>To enable verified queries, a Looker admin must turn on the <strong>Verified Queries</strong> setting on the <strong>Gemini in Looker</strong> admin page. The <strong>Conversational Analytics</strong> setting must also be enabled to use verified queries.</p>]]></content>
-    <summary>Verified queries, also known as golden queries, are now available in preview. They provide predefined natural language questions and their corresponding Looker Explore queries to guide your data agent and ensure accurate responses to complex business requests. Admins can enable this feature through the Gemini in Looker admin page, provided Conversational Analytics is also active.</summary>
-    <title>Feature: Verified queries now in preview</title>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:announcement:0</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>From July 27 through July 30, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.12.</p>]]></content>
+    <summary>Starting July 27, 2026, new features will be automatically enabled for Looker (original) instances running version 26.12. This update aims to enhance the user experience and provide additional capabilities.</summary>
+    <title>Announcement: New features coming to Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:1</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker admins now have the ability to configure a Looker instance to require <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-two-factor">multi-factor authentication (MFA)</a> whenever a user tries to <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-password">log in by using an email and a password</a>. This feature is enabled by default.</p>]]></content>
+    <summary>Admins can now configure Looker instances to require multi-factor authentication (MFA) for users logging in with email and password. This enhanced security feature is enabled by default to protect user accounts.</summary>
+    <title>Feature: MFA login requirement for Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:2</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/custom-calendars">custom calendar</a> feature is now generally available.</p>]]></content>
+    <summary>The custom calendars feature is now generally available. This feature allows for greater flexibility in how you define and manage calendars for your data analysis.</summary>
+    <title>Feature: Custom calendars now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:3</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-expression-asst">Expression Assistant</a> is now generally available.</p>]]></content>
+    <summary>The Expression Assistant is now generally available. This feature helps users write Looker expressions more easily. It leverages generative AI to provide suggestions and complete expressions.</summary>
+    <title>Feature: Expression Assistant is now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:4</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content">Enhanced search</a> feature is now generally available.</p>]]></content>
+    <summary>The enhanced search feature for finding saved content is now generally available. This update improves how you locate your saved items within the platform.</summary>
+    <title>Feature: Enhanced search is now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:5</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker Continuous Integration (CI) now supports email alerts. When you create or edit a CI suite, you can enable the <strong>Enable email alerts</strong> toggle to specify email recipients and select which run statuses will trigger emails (<strong>Failed</strong>, <strong>Error</strong>, <strong>Passed</strong>, or <strong>Cancelled</strong>). For more information, see <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#alerting">Set up alerting</a>.</p>]]></content>
+    <summary>Looker Continuous Integration now supports email alerts. You can enable this feature when creating or editing a CI suite to notify specific recipients about various run statuses, including failed, error, passed, or cancelled events.</summary>
+    <title>Feature: Looker CI adds email alerts</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:6</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/manage-projects">LookML Projects page</a> has been updated with a more performant tabbed layout, which features three tabs: <strong>Models and Projects</strong>, <strong>Pending Projects</strong>, and <strong>Marketplace Projects</strong>.</p>]]></content>
+    <summary>The LookML Projects page now features a more performant tabbed layout with distinct sections for Models and Projects, Pending Projects, and Marketplace Projects. This update enhances navigation and project management within the platform.</summary>
+    <title>Feature: Updated LookML Projects Page</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:7</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, the new <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#modern_user_interface"><strong>Modern User Interface</strong> feature</a> enables <a href="https://docs.cloud.google.com/looker/docs/modern-ui">modernized layouts and design</a> alongside new configuration settings for visualizations and dashboards. When this preview feature is enabled, users can apply a <strong>Modern</strong> visualization theme that features updated typography and modern, accessible color palettes for improved data legibility. Additionally, a new <strong>Modern</strong> dashboard style provides a high-density, streamlined design that optimizes data viewing and aligns with Google's latest design standards.</p>]]></content>
+    <summary>A new Modern User Interface is now in preview, offering modernized layouts, design settings for visualizations and dashboards, updated typography, and accessible color palettes. This feature enhances data legibility and provides a streamlined design aligned with Google's latest standards.</summary>
+    <title>Feature: Preview: Modern User Interface for Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:feature:8</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries">verified queries</a> (also referred to as <em>golden queries</em>) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.</p>
+<p>To enable verified queries, a Looker admin must turn on the <strong>Verified Queries</strong> setting on the <strong>Gemini in Looker</strong> admin page. The <strong>Conversational Analytics</strong> setting must also be enabled for verified queries to be used.</p>]]></content>
+    <summary>Verified queries, also known as golden queries, are now available in preview. These predefined pairs of natural language questions and Looker Explore queries serve as verified standards to guide your data agent in handling complex business requests accurately. To use this feature, Looker admins need to enable the 'Verified Queries' setting on the 'Gemini in Looker' admin page, ensuring 'Conversational Analytics' is also enabled.</summary>
+    <title>Feature: Verified Queries Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:change:9</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#chat-agent-ge">chat in Gemini Enterprise with data agents that you create in Looker</a>, agent responses now include charts and visualizations.</p>]]></content>
+    <summary>Gemini Enterprise agents created in Looker now provide responses with charts and visualizations. This enhancement allows for more insightful data exploration directly within your conversations.</summary>
+    <title>Change: Agent responses now include charts</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:change:10</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-insight-asst">Insight Assistant</a> now displays the process the assistant uses to generate the response, showing key details in your data that it used to generate the response, and listing the fields from your Explore that it used.</p>]]></content>
+    <summary>Insight Assistant now shows you the exact process it uses to generate responses. You can see the key data details and Explore fields it leveraged, giving you more transparency into its analysis.</summary>
+    <title>Change: Understand how Insight Assistant works</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-30:announcement:11</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-dsp">Complimentary Data Studio Pro licenses</a> aren't available for Looker instances that are affiliated with Looker contracts that are signed after August 1, 2026.</p>]]></content>
+    <summary>Complimentary Data Studio Pro licenses will not be available for Looker instances under contracts signed after August 1, 2026. This change affects instances affiliated with newer Looker contracts. Please review the terms of your contract for details.</summary>
+    <title>Announcement: Data Studio Pro Licenses Update</title>
   </entry>
   <entry>
     <author>
@@ -497,6 +618,18 @@ This feature is enabled by default.</p>]]></content>
     <content type="html"><![CDATA[<p>Looker (Google Cloud core) has introduced <a href="https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels">release channels</a> in preview, allowing users to choose between Rapid, Regular, and "No channel" options to manage the cadence of version updates. The Rapid channel provides early access to new capabilities but is excluded from the Service Level Agreement (SLA), while the Regular channel offers balanced stability with an optional Accelerated Security Patching flag.</p>]]></content>
     <summary>Looker now offers release channels in preview, letting you select between Rapid, Regular, and "No channel" options for version updates. Choose Rapid for early access, Regular for balanced stability, or "No channel" for manual control.</summary>
     <title>Feature: Manage your Looker updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-07-27:feature:0</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview (<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>), <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries">verified queries</a> (also referred to as <em>golden queries</em>) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.</p>
+<p>To enable verified queries, a Looker admin must turn on the <strong>Verified Queries</strong> setting on the <strong>Gemini in Looker</strong> admin page. The <strong>Conversational Analytics</strong> setting must also be enabled to use verified queries.</p>]]></content>
+    <summary>Verified queries, also known as golden queries, are now available in preview. They provide predefined natural language questions and their corresponding Looker Explore queries to guide your data agent and ensure accurate responses to complex business requests. Admins can enable this feature through the Gemini in Looker admin page, provided Conversational Analytics is also active.</summary>
+    <title>Feature: Verified queries now in preview</title>
   </entry>
   <entry>
     <author>

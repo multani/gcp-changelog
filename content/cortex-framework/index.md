@@ -2,10 +2,6 @@
 
 ## 2026-07-30
 
-### Announcement
-
-
-
 ### Release 7.0.0-GA (General Availability)
 
 **Note: Important upgrade considerations for Version 7**

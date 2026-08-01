@@ -2,9 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-07-27T00:00:00+00:00</updated>
+  <updated>2026-07-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-07-31:feature:0</id>
+    <published>2026-07-31T00:00:00+00:00</published>
+    <updated>2026-07-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Load Balancing introduces a new version of the Network Load
+Balancer—the global external passthrough Network Load Balancer, which is the global variant of the
+regional external passthrough Network Load Balancer. The load balancer is available in <strong>Preview</strong>.</p>
+<p>This load balancer variant solves use cases for Security Service Edge (SSE), DNS
+hosting, Adtech (real-time bidding), real-time communications (RTC), live
+streaming, and online gaming, among others.</p>
+<p>Global external passthrough Network Load Balancers are Layer 4 passthrough load balancers that
+distribute external traffic among backends (instance groups or network endpoint
+groups) that can reside in multiple Google Cloud regions. By using
+Google's global anycast IP routing, the global external passthrough Network Load Balancer steers
+user traffic to the closest region with healthy backends and available capacity,
+delivering ultra-low latency and dynamic cross-region failover
+to ensure resilience to regional outages.</p>
+<p>The load balancer provides you with two external IP addresses, each served by a
+disjoint and isolated global load balancing control and data plane server
+infrastructure (also known as an <em>availability group</em>) to provide high
+availability.</p>
+<p>The load balancer supports
+TCP, UDP, ESP, GRE, ICMP, and ICMPv6
+traffic and can
+handle both IPv4 and IPv6 traffic. You can deploy your
+backends in any of the following Google Cloud regions:</p>
+<ul>
+<li>North America: <code>us-west1</code>, <code>us-west4</code>, <code>us-east4</code>, <code>us-east5</code></li>
+<li>Europe: <code>europe-west2</code>, <code>europe-west3</code></li>
+<li>Asia: <code>asia-southeast1</code>, <code>asia-south1</code>, <code>asia-northeast1</code></li>
+<li>South America: <code>southamerica-east1</code></li>
+<li>Africa: <code>africa-south1</code></li>
+<li>Australia: <code>australia-southeast1</code></li>
+</ul>
+<p>Note that this release doesn't support GKE backends
+for the global external passthrough Network Load Balancer.</p>
+<p>For details on the new load balancer, see <a href="https://docs.cloud.google.com/load-balancing/docs/network/global-networklb-architecture">Global external passthrough Network Load Balancer overview</a>.</p>]]></content>
+    <summary>A new global external passthrough Network Load Balancer is now in Preview. This load balancer distributes external traffic across multiple regions, offering low latency and resilience for various applications like real-time communication and gaming. It supports TCP, UDP, and other protocols for both IPv4 and IPv6 traffic.</summary>
+    <title>Feature: New Global Network Load Balancer Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

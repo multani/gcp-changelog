@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-07-31": [
+      {
+        "kind": "Feature",
+        "content": "Cloud Load Balancing introduces a new version of the Network Load\nBalancer—the global external passthrough Network Load Balancer, which is the global variant of the\nregional external passthrough Network Load Balancer. The load balancer is available in **Preview**.\n\nThis load balancer variant solves use cases for Security Service Edge (SSE), DNS\nhosting, Adtech (real-time bidding), real-time communications (RTC), live\nstreaming, and online gaming, among others.\n\nGlobal external passthrough Network Load Balancers are Layer 4 passthrough load balancers that\ndistribute external traffic among backends (instance groups or network endpoint\ngroups) that can reside in multiple Google Cloud regions. By using\nGoogle's global anycast IP routing, the global external passthrough Network Load Balancer steers\nuser traffic to the closest region with healthy backends and available capacity,\ndelivering ultra-low latency and dynamic cross-region failover\nto ensure resilience to regional outages.\n\nThe load balancer provides you with two external IP addresses, each served by a\ndisjoint and isolated global load balancing control and data plane server\ninfrastructure (also known as an *availability group*) to provide high\navailability.\n\nThe load balancer supports\nTCP, UDP, ESP, GRE, ICMP, and ICMPv6\ntraffic and can\nhandle both IPv4 and IPv6 traffic. You can deploy your\nbackends in any of the following Google Cloud regions:\n\n* North America: `us-west1`, `us-west4`, `us-east4`, `us-east5`\n* Europe: `europe-west2`, `europe-west3`\n* Asia: `asia-southeast1`, `asia-south1`, `asia-northeast1`\n* South America: `southamerica-east1`\n* Africa: `africa-south1`\n* Australia: `australia-southeast1`\n\nNote that this release doesn't support GKE backends\nfor the global external passthrough Network Load Balancer.\n\nFor details on the new load balancer, see [Global external passthrough Network Load Balancer overview](https://docs.cloud.google.com/load-balancing/docs/network/global-networklb-architecture).",
+        "summary": {
+          "title": "New Global Network Load Balancer Available",
+          "summary": "A new global external passthrough Network Load Balancer is now in Preview. This load balancer distributes external traffic across multiple regions, offering low latency and resilience for various applications like real-time communication and gaming. It supports TCP, UDP, and other protocols for both IPv4 and IPv6 traffic."
+        }
+      }
+    ],
     "2026-07-27": [
       {
         "kind": "Feature",

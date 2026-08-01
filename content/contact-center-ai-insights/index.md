@@ -1,5 +1,12 @@
 # Contact Center AI Insights
 
+## 2026-07-31
+
+### Feature
+
+Customer Experience Insights offers [data tracing](https://docs.cloud.google.com/contact-center/insights/docs/qai-best-practices) in Quality AI. This feature uses system events and metadata in conversation analysis to enhance the accuracy of Quality AI scorecards.
+
+---
 ## 2026-02-19
 
 ### Feature

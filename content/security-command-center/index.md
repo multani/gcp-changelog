@@ -1,5 +1,20 @@
 # Security Command Center
 
+## 2026-07-31
+
+### Feature
+
+Organizations that are enrolled in the data residency Preview program can update their organization's [data residency](https://docs.cloud.google.com/security-command-center/docs/data-residency-support) and [data encryption](https://docs.cloud.google.com/security-command-center/docs/cmek) configuration.
+For more information, see
+[Modify data residency or data encryption configuration](https://docs.cloud.google.com/security-command-center/docs/modify-data-residency-encryption).
+
+### Feature
+
+Agent Platform Vulnerability Assessment ([Preview](https://cloud.google.com/products/#product-launch-stages)) scans for plaintext secrets, such as
+credentials, access tokens, and API keys, in customer-deployed Gemini Enterprise Agent Platform containers. For more information,
+see [Agent Platform Vulnerability Assessment](https://docs.cloud.google.com/security-command-center/docs/concepts-security-sources#aevs).
+
+---
 ## 2026-07-28
 
 ### Feature

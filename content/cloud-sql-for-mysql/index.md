@@ -1,5 +1,45 @@
 # Cloud SQL for MySQL
 
+## 2026-07-31
+
+### Change
+
+Starting on August 1, 2026, when you create or clone a Cloud SQL instance
+enabled with Private Service Connect, or when you enable Private Service Connect
+for an existing instance, then [connection reconciliation](https://docs.cloud.google.com/vpc/docs/about-controlling-access-published-services#connection-reconciliation)
+behavior is enabled by default and can't be disabled.
+
+When you remove a project from the list of allowed projects, all existing
+Private Service Connect connections from the removed project are immediately
+closed (reconciled). This means that applications using Private Service
+Connect endpoints in those removed projects can't continue to connect to the
+Cloud SQL instance using those endpoints.
+
+For more information, see [Allowed Private Service Connect projects](https://docs.cloud.google.com/sql/docs/mysql/about-private-service-connect#allowed-psc-projects).
+
+### Feature
+
+QueryData adds support for parameterized secure views (PSVs) to help secure
+applications that use natural language queries. For more information, see [Secure
+and control access to application data](https://docs.cloud.google.com/gemini/data-agents/querydata/sql-mysql/secure-app-data-parameterized-secure-views-qd).
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2026-07-29
+
+### Feature
+
+Cloud SQL for MySQL now supports significantly faster re-encryption of
+instances and replicas protected by customer-managed encryption keys (CMEKs),
+and re-encryption now completes with zero downtime. The steps to re-encrypt your
+instances and replicas are unchanged, but the operation now re-encrypts the
+underlying disks in-place, without creating re-encryption backups.
+
+For more information, see [Re-encrypt an existing CMEK-enabled instance or
+replica](https://docs.cloud.google.com/sql/docs/mysql/configure-cmek#reencrypt).
+
+---
 ## 2026-07-20
 
 ### Feature

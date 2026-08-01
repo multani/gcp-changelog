@@ -1,6 +1,34 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2026-07-31": [
+      {
+        "kind": "Change",
+        "content": "Starting on August 1, 2026, when you create or clone a Cloud SQL instance\nenabled with Private Service Connect, or when you enable Private Service Connect\nfor an existing instance, then [connection reconciliation](https://docs.cloud.google.com/vpc/docs/about-controlling-access-published-services#connection-reconciliation)\nbehavior is enabled by default and can't be disabled.\n\nWhen you remove a project from the list of allowed projects, all existing\nPrivate Service Connect connections from the removed project are immediately\nclosed (reconciled). This means that applications using Private Service\nConnect endpoints in those removed projects can't continue to connect to the\nCloud SQL instance using those endpoints.\n\nFor more information, see [Allowed Private Service Connect projects](https://docs.cloud.google.com/sql/docs/mysql/about-private-service-connect#allowed-psc-projects).",
+        "summary": {
+          "title": "Private Service Connect connection behavior update",
+          "summary": "Starting August 1, 2026, connection reconciliation will be enabled by default for new and existing Cloud SQL instances using Private Service Connect. Removing a project from the allowed list will immediately close existing Private Service Connect connections from that project."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "QueryData adds support for parameterized secure views (PSVs) to help secure\napplications that use natural language queries. For more information, see [Secure\nand control access to application data](https://docs.cloud.google.com/gemini/data-agents/querydata/sql-mysql/secure-app-data-parameterized-secure-views-qd).\n\nThis feature is in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Secure Views for Natural Language Queries",
+          "summary": "QueryData now supports parameterized secure views (PSVs), enhancing security for applications using natural language queries. This preview feature helps control access to application data. Learn more about securing your data with PSVs."
+        }
+      }
+    ],
+    "2026-07-29": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for MySQL now supports significantly faster re-encryption of\ninstances and replicas protected by customer-managed encryption keys (CMEKs),\nand re-encryption now completes with zero downtime. The steps to re-encrypt your\ninstances and replicas are unchanged, but the operation now re-encrypts the\nunderlying disks in-place, without creating re-encryption backups.\n\nFor more information, see [Re-encrypt an existing CMEK-enabled instance or\nreplica](https://docs.cloud.google.com/sql/docs/mysql/configure-cmek#reencrypt).",
+        "summary": {
+          "title": "Faster CMEK re-encryption for Cloud SQL for MySQL",
+          "summary": "Cloud SQL for MySQL now offers significantly faster re-encryption for instances and replicas using customer-managed encryption keys (CMEKs). This improved process completes with zero downtime, re-encrypting underlying disks in-place without the need for backups."
+        }
+      }
+    ],
     "2026-07-20": [
       {
         "kind": "Feature",

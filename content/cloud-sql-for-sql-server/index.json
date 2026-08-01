@@ -1,6 +1,26 @@
 {
   "name": "Cloud SQL for SQL Server",
   "entries": {
+    "2026-07-31": [
+      {
+        "kind": "Change",
+        "content": "Starting on August 1, 2026, when you create or clone a Cloud SQL instance\nenabled with Private Service Connect, or when you enable Private Service Connect\nfor an existing instance, then [connection reconciliation](https://docs.cloud.google.com/vpc/docs/about-controlling-access-published-services#connection-reconciliation)\nbehavior is enabled by default and can't be disabled.\n\nWhen you remove a project from the list of allowed projects, all existing\nPrivate Service Connect connections from the removed project are immediately\nclosed (reconciled). This means that applications using Private Service\nConnect endpoints in those removed projects can't continue to connect to the\nCloud SQL instance using those endpoints.\n\nFor more information, see [Allowed Private Service Connect projects](https://docs.cloud.google.com/sql/docs/sqlserver/about-private-service-connect#allowed-psc-projects).",
+        "summary": {
+          "title": "Private Service Connect behavior change",
+          "summary": "Starting August 1, 2026, connection reconciliation will be enabled by default for new and existing Cloud SQL instances using Private Service Connect. Removing a project from allowed projects will immediately close existing Private Service Connect connections from that project."
+        }
+      }
+    ],
+    "2026-07-29": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for SQL Server now supports significantly faster re-encryption of\ninstances and replicas protected by customer-managed encryption keys (CMEKs),\nand re-encryption now completes with zero downtime. The steps to re-encrypt your\ninstances and replicas are unchanged, but the operation now re-encrypts the\nunderlying disks in-place, without creating re-encryption backups.\n\nFor more information, see [Re-encrypt an existing CMEK-enabled instance or\nreplica](https://docs.cloud.google.com/sql/docs/sqlserver/configure-cmek#reencrypt).",
+        "summary": {
+          "title": "Faster CMEK re-encryption for Cloud SQL for SQL Server",
+          "summary": "Cloud SQL for SQL Server now offers faster re-encryption for Customer-Managed Encryption Keys (CMEKs) with zero downtime. The underlying disks are re-encrypted in-place, eliminating the need for re-encryption backups and simplifying the process."
+        }
+      }
+    ],
     "2026-06-24": [
       {
         "kind": "Change",

@@ -15,6 +15,60 @@ The following Agent Platform Workbench instances image releases are available:
   + Installed latest packages from upstream dependencies.
   + Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.
 
+### Change
+
+
+
+### M144 Release
+
+
+
+### Change
+
+
+
+### 20260712-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.
+
+### Fixed
+
+Fixed broken cupy installation.
+
+### Feature
+
+**Secure Boot is compatible with GPUs**
+
+You can now enable Secure Boot on Agent Platform Workbench instances that have a
+GPU attached. Secure Boot with GPUs is supported on the `workbench-instances-2603`
+VM image and the `workbench-container-2606` custom container, which include a
+Secure Boot-signed NVIDIA GPU driver so the driver loads under Secure Boot. For
+more information, see [Create an
+instance](https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/create).
+
+### Feature
+
+**Secure Boot is compatible with GPUs**
+
+You can now enable Secure Boot on Agent Platform Workbench instances that have a
+GPU attached. Secure Boot with GPUs is supported on the `workbench-instances-2603`
+VM image and the `workbench-container-2606` custom container, which include a
+Secure Boot-signed NVIDIA GPU driver so the driver loads under Secure Boot. For
+more information, see [Create an
+instance](https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/create).
+
 ### Feature
 
 **Secure Boot is compatible with GPUs**
@@ -39,6 +93,26 @@ The following Agent Platform Workbench instances image release is available:
   + Installed latest packages from upstream dependencies.
   + Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.
   + Fixed an issue where long-running requests (for example, streaming or long-poll connections) could be terminated after about 60 seconds.
+
+### Change
+
+
+
+### 20260701-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.
+
+### Fixed
+
+Fixed an issue where long-running requests (for example, streaming or long-poll connections) could be terminated after about 60 seconds.
 
 ---
 ## 2026-06-30

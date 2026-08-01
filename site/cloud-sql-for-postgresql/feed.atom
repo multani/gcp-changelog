@@ -2,9 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-07-24T00:00:00+00:00</updated>
+  <updated>2026-07-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-07-31:change:0</id>
+    <published>2026-07-31T00:00:00+00:00</published>
+    <updated>2026-07-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting on August 1, 2026, when you create or clone a Cloud SQL instance
+enabled with Private Service Connect, or when you enable Private Service Connect
+for an existing instance, then <a href="https://docs.cloud.google.com/vpc/docs/about-controlling-access-published-services#connection-reconciliation">connection reconciliation</a>
+behavior is enabled by default and can't be disabled.</p>
+<p>When you remove a project from the list of allowed projects, all existing
+Private Service Connect connections from the removed project are immediately
+closed (reconciled). This means that applications using Private Service
+Connect endpoints in those removed projects can't continue to connect to the
+Cloud SQL instance using those endpoints.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/about-private-service-connect#allowed-psc-projects">Allowed Private Service Connect projects</a>.</p>]]></content>
+    <summary>Starting August 1, 2026, connection reconciliation will be enabled by default for new and existing Cloud SQL instances using Private Service Connect. This change impacts how connections are managed and can lead to immediate connection closures if projects are removed from allowed lists.</summary>
+    <title>Change: Private Service Connect changes for Cloud SQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-07-29:feature:0</id>
+    <published>2026-07-29T00:00:00+00:00</published>
+    <updated>2026-07-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for PostgreSQL now supports significantly faster re-encryption of
+instances and replicas protected by customer-managed encryption keys (CMEKs),
+and re-encryption now completes with zero downtime. The steps to re-encrypt your
+instances and replicas are unchanged, but the operation now re-encrypts the
+underlying disks in-place, without creating re-encryption backups.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/configure-cmek#reencrypt">Re-encrypt an existing CMEK-enabled instance or
+replica</a>.</p>]]></content>
+    <summary>Cloud SQL for PostgreSQL now offers significantly faster re-encryption for instances and replicas using customer-managed encryption keys (CMEKs), completing the operation with zero downtime. This improvement is achieved by re-encrypting underlying disks in-place, eliminating the need for re-encryption backups.</summary>
+    <title>Feature: Faster CMEK Re-encryption for Cloud SQL PostgreSQL</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

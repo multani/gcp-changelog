@@ -158,6 +158,17 @@ Table partitioning, multi-statement transactions, and advanced runtime are now
 (GA) for
 [Apache Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/biglake-iceberg-tables-in-bigquery).
 
+### Feature
+
+*Cross-cloud Lakehouse* now supports Snowflake as a remote
+catalog provider (Preview). You can configure federated catalogs to query data
+stored in Snowflake directly from Google Cloud using
+BigQuery or Apache Spark without migrating data or building
+complex ETL pipelines.
+
+For more information, see [Set up cross-cloud Lakehouse for
+Snowflake](https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-lakehouse-snowflake).
+
 ### Security
 
 A Missing Authorization vulnerability was discovered in repositories in

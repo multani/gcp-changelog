@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-07-31
+
+### Feature
+
+You can generate synthetic data for a Managed Service for Apache Kafka cluster by using Dataflow. For more information, see [Generate synthetic data for a Managed Service for Apache Kafka cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/quickstart-synthetic-data).
+
+---
 ## 2026-07-27
 
 ### Feature

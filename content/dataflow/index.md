@@ -1,5 +1,17 @@
 # Dataflow
 
+## 2026-07-31
+
+### Feature
+
+You can now pause a Dataflow batch job using the `pause_on_failure`
+service option. This feature lets you preserve the state of your batch pipeline
+job, address external issues, and resume processing without losing completed
+work. You can use this option to automatically pause a job on failure, or use
+this feature to manually pause a job when you chose to. For more information,
+see [Pause a Dataflow job](https://docs.cloud.google.com/dataflow/docs/guides/pause-job).
+
+---
 ## 2026-06-22
 
 ### Feature

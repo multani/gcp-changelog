@@ -2,9 +2,298 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-07-01T00:00:00+00:00</updated>
+  <updated>2026-07-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-07-30:announcement:0</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.154.1 is now available.</p>]]></content>
+    <summary>Config Connector version 1.154.1 has been released. This update brings the latest improvements and features to the tool.</summary>
+    <title>Announcement: Config Connector 1.154.1 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-07-30:feature:1</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li><code>ApigeeApiProduct</code></li>
+<li>Manage <a href="https://cloud.google.com/apigee/docs/api-platform/publish/what-api-product">Apigee API products</a> to bundle APIs and make them available to developers.</li>
+<li><code>ApigeeRegistryApi</code></li>
+<li>Manage <a href="https://cloud.google.com/apigee/docs/api-hub/registry-overview">Apigee Registry APIs</a> to catalog and manage APIs.</li>
+<li><code>ApigeeRegistryArtifact</code></li>
+<li>Manage <a href="https://cloud.google.com/apigee/docs/api-hub/registry-overview">Apigee Registry artifacts</a> associated with APIs, versions, or specs.</li>
+<li><code>APIHubExternalAPI</code></li>
+<li>Manage <a href="https://cloud.google.com/apigee/docs/api-hub/api-hub-overview">API Hub external APIs</a> to track APIs hosted outside of Google Cloud.</li>
+<li><code>APIHubInstance</code></li>
+<li>Manage <a href="https://cloud.google.com/apigee/docs/api-hub/api-hub-overview">API Hub instances</a> to enable enterprise API management.</li>
+<li><code>AppOptimizeReport</code></li>
+<li>Manage <a href="https://cloud.google.com/app-hub/docs/overview">App Hub Optimize reports</a>.</li>
+<li><code>ArtifactRegistryVPCSCConfig</code></li>
+<li>Manage <a href="https://cloud.google.com/artifact-registry/docs/vpc-sc">Artifact Registry VPC Service Controls configurations</a> to secure repository access.</li>
+<li><code>BigQueryMigrationMigrationWorkflow</code></li>
+<li>Manage <a href="https://cloud.google.com/bigquery/docs/migration-intro">BigQuery Migration workflows</a> to orchestrate data migration to BigQuery.</li>
+<li><code>BlockchainNodeEngineBlockchainNode</code></li>
+<li>Manage <a href="https://cloud.google.com/blockchain-node-engine/docs">Blockchain Node Engine blockchain nodes</a> to deploy and manage dedicated blockchain nodes.</li>
+<li><code>CCInsightsConversation</code></li>
+<li>Manage <a href="https://cloud.google.com/contact-center/insights/docs">Contact Center Insights conversations</a> to analyze customer interactions.</li>
+<li><code>CCInsightsIssueModel</code></li>
+<li>Manage <a href="https://cloud.google.com/contact-center/insights/docs">Contact Center Insights issue models</a> to categorize conversation topics.</li>
+<li><code>CCInsightsPhraseMatcher</code></li>
+<li>Manage <a href="https://cloud.google.com/contact-center/insights/docs">Contact Center Insights phrase matchers</a> to detect specific phrases in conversations.</li>
+<li><code>CESApp</code></li>
+<li>Manage <a href="https://cloud.google.com/ces/docs">Consumer Experience Suite (CES) applications</a>.</li>
+<li><code>CloudBuildConnection</code></li>
+<li>Manage <a href="https://cloud.google.com/build/docs/submitting-builds/git-repos/connect-repo-github">Cloud Build 2nd gen connections</a> to integrate external source repositories.</li>
+<li><code>CloudSecurityComplianceFramework</code></li>
+<li>Manage <a href="https://cloud.google.com/security-command-center/docs/compliance-standards">Cloud Security Compliance frameworks</a>.</li>
+<li><code>ConnectorsConnection</code></li>
+<li>Manage <a href="https://cloud.google.com/integration-connectors/docs">Integration Connectors connections</a> to connect to SaaS, databases, and enterprise systems.</li>
+<li><code>ContentWarehouseDocument</code></li>
+<li>Manage <a href="https://cloud.google.com/document-ai/docs/warehouse">Document AI Warehouse documents</a>.</li>
+<li><code>ContentWarehouseRuleSet</code></li>
+<li>Manage <a href="https://cloud.google.com/document-ai/docs/warehouse">Document AI Warehouse rule sets</a> to enforce document policies.</li>
+<li><code>ContentWarehouseSynonymSet</code></li>
+<li>Manage <a href="https://cloud.google.com/document-ai/docs/warehouse">Document AI Warehouse synonym sets</a> to expand search queries.</li>
+<li><code>DatabaseMigrationPrivateConnection</code></li>
+<li>Manage <a href="https://cloud.google.com/database-migration/docs">Database Migration Service private connections</a> to securely connect source databases to Google Cloud.</li>
+<li><code>DataformFolder</code></li>
+<li>Manage <a href="https://cloud.google.com/dataform/docs">Dataform folders</a> in Dataform repositories.</li>
+<li><code>DataformTeamFolder</code></li>
+<li>Manage <a href="https://cloud.google.com/dataform/docs">Dataform team folders</a> to organize repository assets.</li>
+<li><code>DataLabelingDataset</code></li>
+<li>Manage <a href="https://cloud.google.com/ai-platform/data-labeling/docs">AI Platform Data Labeling datasets</a> for annotating training data.</li>
+<li><code>DataLabelingEvaluationJob</code></li>
+<li>Manage <a href="https://cloud.google.com/ai-platform/data-labeling/docs">AI Platform Data Labeling evaluation jobs</a> to assess model quality.</li>
+<li><code>DataLineageProcess</code></li>
+<li>Manage <a href="https://cloud.google.com/dataplex/docs/data-lineage">Dataplex Data Lineage processes</a> to track data origin and movement.</li>
+<li><code>DataplexAspectType</code></li>
+<li>Manage <a href="https://cloud.google.com/dataplex/docs">Dataplex aspect types</a> to define metadata schemas.</li>
+<li><code>DataplexDataAttributeBinding</code></li>
+<li>Manage <a href="https://cloud.google.com/dataplex/docs">Dataplex data attribute bindings</a> to map security and governance attributes to assets.</li>
+<li><code>DataplexDataScan</code></li>
+<li>Manage <a href="https://cloud.google.com/dataplex/docs/data-profile-overview">Dataplex data scans</a> for data profiling and quality.</li>
+<li><code>DataplexDataTaxonomy</code></li>
+<li>Manage <a href="https://cloud.google.com/dataplex/docs">Dataplex data taxonomies</a> to organize business metadata.</li>
+<li><code>DataplexGlossary</code></li>
+<li>Manage <a href="https://cloud.google.com/dataplex/docs">Dataplex business glossaries</a> for consistent vocabulary.</li>
+<li><code>DataplexMetadataJob</code></li>
+<li>Manage <a href="https://cloud.google.com/dataplex/docs">Dataplex metadata jobs</a> for metadata extraction.</li>
+<li><code>DevConnectConnection</code></li>
+<li>Manage <a href="https://cloud.google.com/developer-connect/docs">Developer Connect connections</a> to securely link third-party Git hosts.</li>
+<li><code>DialogflowConversationDataset</code></li>
+<li>Manage <a href="https://cloud.google.com/dialogflow/cx/docs">Dialogflow conversation datasets</a> for agent training.</li>
+<li><code>DialogflowSecuritySettings</code></li>
+<li>Manage <a href="https://cloud.google.com/dialogflow/cx/docs">Dialogflow security settings</a> for data redaction and access control.</li>
+<li><code>DialogflowSipTrunk</code></li>
+<li>Manage <a href="https://cloud.google.com/dialogflow/cx/docs">Dialogflow SIP trunks</a> for telecom integration.</li>
+<li><code>DiscoveryEngineControl</code></li>
+<li>Manage <a href="https://cloud.google.com/generative-ai-app-builder/docs">Discovery Engine controls</a> to boost or filter search results.</li>
+<li><code>DiscoveryEngineSampleQuerySet</code></li>
+<li>Manage <a href="https://cloud.google.com/generative-ai-app-builder/docs">Discovery Engine sample query sets</a> to evaluate search performance.</li>
+<li><code>DLPConnection</code></li>
+<li>Manage <a href="https://cloud.google.com/security-command-center/docs/sensitive-data-protection">Sensitive Data Protection (DLP) connections</a>.</li>
+<li><code>DLPDiscoveryConfig</code></li>
+<li>Manage <a href="https://cloud.google.com/security-command-center/docs/sensitive-data-protection">Sensitive Data Protection (DLP) discovery configurations</a> for profiling data assets.</li>
+<li><code>EventarcGoogleApiSource</code></li>
+<li>Manage <a href="https://cloud.google.com/eventarc/docs">Eventarc Google API sources</a> to configure event routing.</li>
+<li><code>GeminiDataAnalyticsConversation</code></li>
+<li>Manage <a href="https://cloud.google.com/gemini/docs">Gemini Data Analytics conversations</a>.</li>
+<li><code>GKEBackupBackupChannel</code></li>
+<li>Manage <a href="https://cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke">Backup for GKE backup channels</a>.</li>
+<li><code>LiveStreamAsset</code></li>
+<li>Manage <a href="https://cloud.google.com/livestream/docs">Live Stream assets</a> for processing live video.</li>
+<li><code>ManagedKafkaConnectCluster</code></li>
+<li>Manage <a href="https://cloud.google.com/managed-kafka/docs">Apache Kafka for BigQuery connections</a>.</li>
+<li><code>MigrationCenterGroup</code></li>
+<li>Manage <a href="https://cloud.google.com/migration-center/docs">Migration Center groups</a> to organize assets for migration assessment.</li>
+<li><code>NetworkSecurityAddressGroup</code></li>
+<li>Manage <a href="https://cloud.google.com/vpc/docs/configure-firewall-policies-address-groups">Network Security address groups</a> to define reusable network criteria.</li>
+<li><code>NetworkSecurityAuthzPolicy</code></li>
+<li>Manage <a href="https://cloud.google.com/secure-web-proxy/docs">Network Security authorization policies</a> to secure network paths.</li>
+<li><code>NetworkSecurityFirewallEndpoint</code></li>
+<li>Manage <a href="https://cloud.google.com/firewall/docs/about-cloud-firewall-plus">Network Security firewall endpoints</a> for Cloud Firewall Plus threat inspection.</li>
+<li><code>NetworkSecurityFirewallEndpointAssociation</code></li>
+<li>Manage <a href="https://cloud.google.com/firewall/docs/about-cloud-firewall-plus">Network Security firewall endpoint associations</a> to apply threat inspection to networks.</li>
+<li><code>NetworkSecurityGatewaySecurityPolicy</code></li>
+<li>Manage <a href="https://cloud.google.com/secure-web-proxy/docs">Network Security gateway security policies</a> for Secure Web Proxy configurations.</li>
+<li><code>NetworkSecurityPartnerSSEGateway</code></li>
+<li>Manage <a href="https://cloud.google.com/secure-web-proxy/docs">Network Security partner Secure Service Edge (SSE) gateways</a>.</li>
+<li><code>NetworkSecurityPartnerSSERealm</code></li>
+<li>Manage <a href="https://cloud.google.com/secure-web-proxy/docs">Network Security partner Secure Service Edge (SSE) realms</a>.</li>
+<li><code>NetworkSecuritySecurityProfile</code></li>
+<li>Manage <a href="https://cloud.google.com/firewall/docs/about-cloud-firewall-plus">Network Security security profiles</a> to group threat prevention policies.</li>
+<li><code>NetworkSecurityTLSInspectionPolicy</code></li>
+<li>Manage <a href="https://cloud.google.com/secure-web-proxy/docs/configure-tls-inspection">Network Security TLS inspection policies</a> to inspect encrypted traffic.</li>
+<li><code>NetworkServicesAuthzExtension</code></li>
+<li>Manage <a href="https://cloud.google.com/service-extensions/docs">Network Services authorization extensions</a> to integrate third-party callouts.</li>
+<li><code>NotebooksSchedule</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs/workbench">Vertex AI Workbench schedules</a> to run automated notebooks.</li>
+<li><code>RedisClusterEndpoint</code></li>
+<li>Manage <a href="https://cloud.google.com/memorystore/docs/cluster">Google Cloud Memorystore for Redis Cluster endpoints</a>.</li>
+<li><code>RunWorkerPool</code></li>
+<li>Manage <a href="https://cloud.google.com/run/docs">Cloud Run worker pools</a> for long-running non-HTTP workloads.</li>
+<li><code>SaasServiceMgmtRelease</code></li>
+<li>Manage <a href="https://cloud.google.com/service-infrastructure/docs">SaaS Service Management releases</a>.</li>
+<li><code>SQLAdminBackup</code></li>
+<li>Manage <a href="https://cloud.google.com/sql/docs">Cloud SQL backups</a> (read-only/reference representation).</li>
+<li><code>StorageInsightsDatasetConfig</code></li>
+<li>Manage <a href="https://cloud.google.com/storage/docs/insights/using-storage-insights">Storage Insights dataset configurations</a> to generate storage inventories.</li>
+<li><code>TestingDeviceSession</code></li>
+<li>Manage <a href="https://firebase.google.com/docs/test-lab">Firebase Test Lab device sessions</a>.</li>
+<li><code>TranslateAdaptiveMtDataset</code></li>
+<li>Manage <a href="https://cloud.google.com/translate/docs/adaptive-mt">Cloud Translation adaptive machine translation datasets</a>.</li>
+<li><code>VectorSearchCollection</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs/vector-search">Vertex AI Vector Search collections</a>.</li>
+<li><code>VertexAIFeatureGroup</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs/featurestore/overview">Vertex AI Feature Store feature groups</a> to organize features.</li>
+<li><code>VertexAIFeatureOnlineStore</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs/featurestore/overview">Vertex AI Feature Store feature online stores</a> for low-latency serving.</li>
+<li><code>VertexAIPipelineJob</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs/pipelines">Vertex AI pipeline jobs</a> to run machine learning pipelines.</li>
+<li><code>VertexAISpecialistPool</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs">Vertex AI specialist pools</a> for human labeling.</li>
+<li><code>VertexAIStudy</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs/vizier">Vertex AI Vizier studies</a> for hyperparameter tuning.</li>
+<li><code>VertexAITuningJob</code></li>
+<li>Manage <a href="https://cloud.google.com/vertex-ai/docs">Vertex AI model tuning jobs</a> for model customization.</li>
+<li><code>VideoStitcherCDNKey</code></li>
+<li>Manage <a href="https://cloud.google.com/video-stitcher/docs">Video Stitcher CDN keys</a> to authenticate to external CDNs.</li>
+<li><code>VisionProduct</code></li>
+<li>Manage <a href="https://cloud.google.com/vision/product-search/docs">Cloud Vision products</a> for product search cataloging.</li>
+<li><code>VMwareEnginePrivateConnection</code></li>
+<li>Manage <a href="https://cloud.google.com/vmware-engine/docs">VMware Engine private connections</a> to connect private clouds to other services.</li>
+</ul>]]></content>
+    <summary>A new set of Alpha resources has been released, expanding management capabilities across various services. These new resources provide direct reconciler support for a wide range of functionalities, from API management and data analytics to network security and machine learning pipelines.</summary>
+    <title>Feature: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-07-30:feature:2</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesubnetwork"><code>ComputeSubnetwork</code></a></li>
+<li>Added <code>spec.reservedInternalRange</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/networkconnectivity/networkconnectivityinternalrange"><code>NetworkConnectivityInternalRange</code></a></li>
+<li>Added <code>spec.allocationOptions</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computenetwork"><code>ComputeNetwork</code></a></li>
+<li>Added <code>spec.networkProfile</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesecuritypolicy"><code>ComputeSecurityPolicy</code></a></li>
+<li>Added <code>spec.region</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dns/dnsrecordset"><code>DNSRecordSet</code></a></li>
+<li>Added support for routing policy <code>healthCheckRef</code> and <code>rrdatasRefs</code> fields.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeaddress"><code>ComputeAddress</code></a></li>
+<li>Added <code>spec.ipCollection</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeurlmap"><code>ComputeURLMap</code></a></li>
+<li>Added <code>spec.defaultCustomErrorResponsePolicy</code> field.</li>
+<li>Added <code>spec.test[].expectedOutputUrl</code> and <code>spec.test[].expectedRedirectResponseCode</code> fields.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/redis/rediscluster"><code>RedisCluster</code></a></li>
+<li>Added <code>spec.crossClusterReplicationConfig</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/monitoring/monitoringalertpolicy"><code>MonitoringAlertPolicy</code></a></li>
+<li>Added <code>spec.conditions[].conditionSql</code> field (SQL Condition).</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/storage/storagebucket"><code>StorageBucket</code></a></li>
+<li>Added <code>spec.ipFilter</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/pubsub/pubsubtopic"><code>PubSubTopic</code></a></li>
+<li>Added <code>spec.messageStoragePolicy.enforceInTransit</code> field.</li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouternat"><code>ComputeRouterNAT</code></a></li>
+<li>Added Private NAT feature support.</li>
+</ul>]]></content>
+    <summary>Several resources have been enhanced with new fields, including ComputeSubnetwork, NetworkConnectivityInternalRange, and ComputeNetwork. Additionally, new features like Private NAT support for ComputeRouterNAT and SQL Condition support for MonitoringAlertPolicy have been introduced. These updates provide more granular control and expanded capabilities for managing your infrastructure.</summary>
+    <title>Feature: New Fields and Features Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-07-30:change:3</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<p>We have added support for direct reconciliation to more resources, with opt-in behaviour. The API is unchanged. To use the direct reconciler, add the <code>cnrm.cloud.google.com/reconciler: direct</code> annotation to the corresponding Config Connector object.</p>
+<ul>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigqueryreservation/bigqueryreservationcapacitycommitment"><code>BigQueryReservationCapacityCommitment</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigtable/bigtablegcpolicy"><code>BigtableGCPolicy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/billingbudgets/billingbudgetsbudget"><code>BillingBudgetsBudget</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagercertificatemap"><code>CertificateManagerCertificateMap</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagercertificatemapentry"><code>CertificateManagerCertificateMapEntry</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeaddress"><code>ComputeAddress</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeautoscaler"><code>ComputeAutoscaler</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computebackendservicesignedurlkey"><code>ComputeBackendServiceSignedURLKey</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computedisk"><code>ComputeDisk</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computediskresourcepolicyattachment"><code>ComputeDiskResourcePolicyAttachment</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeexternalvpngateway"><code>ComputeExternalVPNGateway</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computefirewall"><code>ComputeFirewall</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computefirewallpolicy"><code>ComputeFirewallPolicy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computehttphealthcheck"><code>ComputeHTTPHealthCheck</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computehttpshealthcheck"><code>ComputeHTTPSHealthCheck</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeimage"><code>ComputeImage</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeinstance"><code>ComputeInstance</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeinstancegroup"><code>ComputeInstanceGroup</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeinstancegroupmanager"><code>ComputeInstanceGroupManager</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computenetwork"><code>ComputeNetwork</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computenodetemplate"><code>ComputeNodeTemplate</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeroute"><code>ComputeRoute</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouter"><code>ComputeRouter</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouterinterface"><code>ComputeRouterInterface</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouternat"><code>ComputeRouterNAT</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesslpolicy"><code>ComputeSSLPolicy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesecuritypolicy"><code>ComputeSecurityPolicy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computetargethttpsproxy"><code>ComputeTargetHTTPSProxy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeurlmap"><code>ComputeURLMap</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataflow/dataflowjob"><code>DataflowJob</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataproc/dataprocautoscalingpolicy"><code>DataprocAutoscalingPolicy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataproc/dataproccluster"><code>DataprocCluster</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dns/dnsresponsepolicy"><code>DNSResponsePolicy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/kms/kmscryptokey"><code>KMSCryptoKey</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/kms/kmskeyring"><code>KMSKeyRing</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/logging/logginglogexclusion"><code>LoggingLogExclusion</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/monitoring/monitoringalertpolicy"><code>MonitoringAlertPolicy</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/networkservices/networkservicesgateway"><code>NetworkServicesGateway</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/privateca/privatecacertificateauthority"><code>PrivateCACertificateAuthority</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/privateca/privatecacertificatetemplate"><code>PrivateCACertificateTemplate</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/pubsub/pubsubsubscription"><code>PubSubSubscription</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/recaptchaenterprise/recaptchaenterprisekey"><code>RecaptchaEnterpriseKey</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/redis/redisinstance"><code>RedisInstance</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/servicedirectory/servicedirectoryendpoint"><code>ServiceDirectoryEndpoint</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/servicedirectory/servicedirectorynamespace"><code>ServiceDirectoryNamespace</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/serviceusage/service"><code>Service</code></a></li>
+<li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/serviceusage/serviceidentity"><code>ServiceIdentity</code></a></li>
+</ul>]]></content>
+    <summary>We've enhanced reconciliation capabilities by adding support for direct reconciliation to a wider range of resources. This new functionality is opt-in and can be enabled by adding the `cnrm.cloud.google.com/reconciler: direct` annotation to your Config Connector objects. The API remains unchanged, ensuring a smooth integration process.</summary>
+    <title>Change: Direct Reconciliation Support Expanded</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-07-30:fixed:4</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/11001"><code>ComposerEnvironment</code></a>: Fix storageConfig.bucketRef mapping.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/11547"><code>MemorystoreInstance</code></a>: Prevent infinite reconciliation drift loop by aligning connections list length.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/11559"><code>MemorystoreInstance</code></a>: Prevent false drift and update attempts on unspecified immutable fields.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/11800"><code>ComputeBackendService</code></a>: Fix config-connector export tool to export <code>backend</code> field.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9658"><code>KMSAutokeyConfig</code></a>: Clean up and improve autokey config identity and deletion resolution.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9623"><code>BigQuery</code></a>: Fix perpetual diff on tables inheriting dataset encryption.</li>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9810"><code>NotebooksInstance</code></a>: Fix direct controller for NotebookInstance to resolve references.</li>
+</ul>]]></content>
+    <summary>This release includes several bug fixes across multiple resources, including ComposerEnvironment, MemorystoreInstance, ComputeBackendService, KMSAutokeyConfig, BigQuery, and NotebooksInstance. These fixes address issues related to configuration mapping, reconciliation loops, immutable field updates, export tool functionality, identity and deletion resolution, perpetual diffs, and reference resolution.</summary>
+    <title>Fixed: Bug Fixes for Various Resources</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

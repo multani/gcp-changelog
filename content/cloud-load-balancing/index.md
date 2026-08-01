@@ -1,5 +1,49 @@
 # Cloud Load Balancing
 
+## 2026-07-31
+
+### Feature
+
+Cloud Load Balancing introduces a new version of the Network Load
+Balancer—the global external passthrough Network Load Balancer, which is the global variant of the
+regional external passthrough Network Load Balancer. The load balancer is available in **Preview**.
+
+This load balancer variant solves use cases for Security Service Edge (SSE), DNS
+hosting, Adtech (real-time bidding), real-time communications (RTC), live
+streaming, and online gaming, among others.
+
+Global external passthrough Network Load Balancers are Layer 4 passthrough load balancers that
+distribute external traffic among backends (instance groups or network endpoint
+groups) that can reside in multiple Google Cloud regions. By using
+Google's global anycast IP routing, the global external passthrough Network Load Balancer steers
+user traffic to the closest region with healthy backends and available capacity,
+delivering ultra-low latency and dynamic cross-region failover
+to ensure resilience to regional outages.
+
+The load balancer provides you with two external IP addresses, each served by a
+disjoint and isolated global load balancing control and data plane server
+infrastructure (also known as an *availability group*) to provide high
+availability.
+
+The load balancer supports
+TCP, UDP, ESP, GRE, ICMP, and ICMPv6
+traffic and can
+handle both IPv4 and IPv6 traffic. You can deploy your
+backends in any of the following Google Cloud regions:
+
+* North America: `us-west1`, `us-west4`, `us-east4`, `us-east5`
+* Europe: `europe-west2`, `europe-west3`
+* Asia: `asia-southeast1`, `asia-south1`, `asia-northeast1`
+* South America: `southamerica-east1`
+* Africa: `africa-south1`
+* Australia: `australia-southeast1`
+
+Note that this release doesn't support GKE backends
+for the global external passthrough Network Load Balancer.
+
+For details on the new load balancer, see [Global external passthrough Network Load Balancer overview](https://docs.cloud.google.com/load-balancing/docs/network/global-networklb-architecture).
+
+---
 ## 2026-07-27
 
 ### Feature

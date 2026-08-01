@@ -1,6 +1,40 @@
 {
   "name": "Apigee hybrid",
   "entries": {
+    "2026-07-31": [
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Feature Announcement",
+          "summary": "We are excited to announce a significant new feature designed to enhance user experience and productivity. This update introduces advanced capabilities that streamline workflows and provide greater flexibility. Explore the possibilities and unlock new levels of efficiency with our latest innovation."
+        }
+      },
+      {
+        "kind": "v1.15.7",
+        "content": "On July 31, 2026 we released an updated version of the Apigee hybrid software, v1.15.7.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version v1.15.7](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
+        "summary": {
+          "title": "Apigee hybrid v1.15.7 released",
+          "summary": "A new patch version, v1.15.7, of the Apigee hybrid software was released on July 31, 2026. This release includes updated container images integrated with the Apigee hybrid Helm charts for easier upgrades. Refer to the documentation for details on upgrading or new installations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Runtime rollout strategy configuration**\n\nIn this release, you can configure the rollout strategy used when updating runtime (message processor) ReplicaSets by setting the [`runtime.release.strategy`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#runtime-release-strategy) property (with options `rolling`, `scale-down-first`, or `none`) or per-environment with `envs[].components.runtime.release.strategy` in your overrides configuration file. The property defaults to `rolling`.",
+        "summary": {
+          "title": "Configure runtime update strategy",
+          "summary": "You can now configure how runtime updates are rolled out by setting the runtime release strategy property. Options include rolling updates, scale-down-first, or no rollout. This can be set globally or per environment."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Various security and CVE fixes are included in this release.",
+        "summary": {
+          "title": "Security and Bug Fixes",
+          "summary": "This release includes important security updates and addresses various known vulnerabilities. We recommend applying this update to ensure your system remains secure."
+        }
+      }
+    ],
     "2026-07-24": [
       {
         "kind": "v1.16.8",

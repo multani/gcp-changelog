@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-07-31
+
+### Feature
+
+You can use [custom organization policies](https://docs.cloud.google.com/memorystore/docs/valkey/use-custom-org-policies) to improve the security, compliance, and governance of your Memorystore for Valkey instances by enforcing consistent configurations and restrictions for the instances. This ensures that your instances adhere to security best practices and regulatory requirements. This feature is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-27
 
 ### Feature

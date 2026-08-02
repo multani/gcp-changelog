@@ -1,5 +1,23 @@
 # Google SecOps SOAR
 
+## 2026-08-02
+
+### Announcement
+
+Release 6.3.96 is being rolled out to the first phase of regions as listed
+[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+### Announcement
+
+**Scheduled Maintenance**
+
+SOAR database and infrastructure maintenance is scheduled to take place during
+the standard maintenance window on August 2. During this window, environments
+will experience a brief period of downtime. No customer action is required.
+
+---
 ## 2026-08-01
 
 ### Announcement

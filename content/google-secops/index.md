@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-08-02
+
+### Announcement
+
+**Scheduled Maintenance**
+
+SOAR database and infrastructure maintenance is scheduled to take place during
+the standard maintenance window on August 2. During this window, environments
+will experience a brief period of downtime. No customer action is required.
+
+---
 ## 2026-07-29
 
 ### Change

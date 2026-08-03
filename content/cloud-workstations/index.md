@@ -1,5 +1,23 @@
 # Cloud Workstations
 
+## 2026-08-03
+
+### Change
+
+Updated the following
+[JetBrains preconfigured base images](https://docs.cloud.google.com/workstations/docs/preconfigured-base-images#list_of_preconfigured_base_images)
+to version 2026.x:
+
+* [CLion 2026.1](https://youtrack.jetbrains.com/articles/CPP-A-230654453/CLion-2026.1)
+* [GoLand 2026.2](https://youtrack.jetbrains.com/articles/GO-A-231736055/GoLand-2026.2)
+* [IntelliJ Ultimate 2026.1](https://youtrack.jetbrains.com/articles/IDEA-A-2100662608/IntelliJ-IDEA-2026.1-Latest-Builds)
+* [PhpStorm 2026.2](https://youtrack.jetbrains.com/articles/WI-A-231736318/PhpStorm-2026.2)
+* [WebStorm 2026.1](https://youtrack.jetbrains.com/articles/WEB-A-233538705/WebStorm-2026.1)
+* [RubyMine 2026.1](https://youtrack.jetbrains.com/articles/RUBY-A-220365320/RubyMine-2026.1)
+* [PyCharm 2026.1](https://youtrack.jetbrains.com/articles/PY-A-233538506/PyCharm-2026.1)
+* [Rider 2026.1](https://youtrack.jetbrains.com/issues?q=project:%20Rider%20%7B2026.1%7D)
+
+---
 ## 2026-07-08
 
 ### Announcement

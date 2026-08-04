@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise",
   "entries": {
+    "2026-08-04": [
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: End-to-end tracing support for data connectors**\n\nTracing support is extended end-to-end across the data connector workflow,\nintroducing two new trace spans for better observability:\n\n* `execute_tool`: Represents the execution of a tool on the agent\n  orchestration layer.\n* `invoke_connector`: Represents the request logic and execution on the\n  connector execution layer.\n\nThese spans help you visualize end-to-end parent-child relationship workflows\nfrom the assistant prompt to the third-party API. You can search and filter for\nthese spans in the Trace Explorer by service or span name, query them using\nturn-level legacy assist tokens via the `gemini_enterprise.assist_token`\nattribute, or look up traces using the W3C trace ID.\n\nFor more information, see [Access traces and\nspans](https://docs.cloud.google.com/gemini/enterprise/docs/access-traces-and-spans).",
+        "summary": {
+          "title": "End-to-end tracing for data connectors",
+          "summary": "Gemini Enterprise now offers end-to-end tracing for data connectors, introducing new trace spans for enhanced observability. This feature allows visualization of workflows from assistant prompts to third-party APIs, with advanced search and filtering capabilities in the Trace Explorer."
+        }
+      }
+    ],
     "2026-07-28": [
       {
         "kind": "Feature",

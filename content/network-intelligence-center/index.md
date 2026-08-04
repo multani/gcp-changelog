@@ -1,5 +1,17 @@
 # Network Intelligence Center
 
+## 2026-08-03
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+supports testing connectivity from a
+Database Migration Service private connection to a Cloud SQL instance.
+
+For more information, see
+[Test from a Database Migration Service private connection to a Cloud SQL instance](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/how-to/running-connectivity-tests#testing-dms-private-connection).
+
+---
 ## 2026-07-08
 
 ### Feature

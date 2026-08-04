@@ -1,5 +1,18 @@
 # AlloyDB for PostgreSQL
 
+## 2026-08-04
+
+### Feature
+
+AlloyDB now supports Best Matching 25 (BM25) indexes for full-text search in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+You can use the `pg_textsearch` extension to create BM25 indexes and optimize
+probabilistic ranking of full-text search. This feature is supported on AlloyDB
+instances running PostgreSQL 17 or 18.
+
+For more information, see [Create and manage a BM25 index](https://docs.cloud.google.com/alloydb/docs/ai/create-bm25-index).
+
+---
 ## 2026-07-28
 
 ### Feature

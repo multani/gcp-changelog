@@ -1,5 +1,19 @@
 # Cloud SQL for SQL Server
 
+## 2026-08-04
+
+### Feature
+
+[DNS automation](https://docs.cloud.google.com/sql/docs/sqlserver/configure-dns#dns-auto)
+is now generally available ([GA](https://cloud.google.com/products#product-launch-stages))
+on Cloud SQL instances where Private Service Connect is enabled.
+
+You can use DNS automation to provision and manage per-instance DNS records
+automatically. On Enterprise Plus edition instances where DNS automation is
+enabled, you can also enable a global write endpoint DNS that automatically
+resolves to your current primary instance.
+
+---
 ## 2026-08-03
 
 ### Change

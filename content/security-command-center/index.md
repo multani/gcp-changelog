@@ -1,5 +1,18 @@
 # Security Command Center
 
+## 2026-08-04
+
+### Feature
+
+Security Command Center released new **Malicious Skill** runtime threat detectors for Google Kubernetes Engine (GKE), Cloud Run, and Agent Platform. These detectors identify when a malicious skill (an AI agent capability) is executed or loaded. A malicious skill is any malicious binary that has been tagged as an LLM skill by Google's threat intelligence.
+
+For more information, see the following:
+
+* [Container Threat Detection overview](https://docs.cloud.google.com/security-command-center/docs/concepts-container-threat-detection-overview)
+* [Cloud Run Threat Detection overview](https://docs.cloud.google.com/security-command-center/docs/cloud-run-threat-detection-overview)
+* [Agent Platform overview](https://docs.cloud.google.com/security-command-center/docs/agent-platform-threat-detection-overview)
+
+---
 ## 2026-08-03
 
 ### Feature

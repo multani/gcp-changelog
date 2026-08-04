@@ -1,0 +1,175 @@
+{
+  "name": "579.0.0 (2026-08-04)",
+  "entries": {
+    "2026-08-04": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(API Registry)** Removed `gcloud api-registry mcp enable` and `gcloud api-registry mcp disable`. MCP server enablement is no longer required; enabling the underlying service is sufficient.\n* **(Compute Engine)** Removed `PRESERVED_STATE` column from `gcloud compute instance-groups managed list-instances` output in beta.",
+        "summary": {
+          "title": "API Registry and Compute Engine Updates",
+          "summary": "API Registry no longer requires MCP server enablement. Compute Engine has removed the PRESERVED_STATE column from its managed instance group output."
+        }
+      },
+      {
+        "kind": "AI",
+        "content": "* Route `gcloud ai` requests for the `us` multi-region to the Vertex AI multi-regional (REP) endpoint.",
+        "summary": {
+          "title": "AI routing update",
+          "summary": "Requests to the `gcloud ai` command for the `us` multi-region will now be routed to the Vertex AI multi-regional endpoint. This change ensures optimal performance and reliability for your AI workloads."
+        }
+      },
+      {
+        "kind": "Agent Identity",
+        "content": "* Added `--three-legged-oauth-default-continue-uri` flag to `gcloud agent-identity auth-providers create` and `update` commands.",
+        "summary": {
+          "title": "Agent Identity Authentication Providers",
+          "summary": "New flags for agent identity authentication providers allow setting a default continue URI for three-legged OAuth. This improves the user experience for OAuth flows by directing users to a specified URL after authentication."
+        }
+      },
+      {
+        "kind": "Cloud Auth",
+        "content": "* Enabled ECP HTTP Proxy support for external users (disabled by default).\n* Added optional `--ecp-http-proxy` flag to `gcloud auth enterprise-certificate-config create` to support custom ECP HTTP proxy binary paths.",
+        "summary": {
+          "title": "Cloud Auth Enhancements",
+          "summary": "External users can now leverage ECP HTTP Proxy support, which is disabled by default. A new flag allows for custom ECP HTTP proxy binary paths, providing greater flexibility for authentication configurations."
+        }
+      },
+      {
+        "kind": "Cloud Dataproc",
+        "content": "* Promoted `--master-instance-selection`,\n  `--master-instance-flexibility-policy-file`, `--worker-instance-selection`,\n  `--worker-instance-flexibility-policy-file`,\n  `--secondary-worker-instance-selection`, and\n  `--secondary-worker-instance-flexibility-policy-file` flags to GA for\n  `gcloud dataproc clusters create` and\n  `gcloud dataproc workflow-templates set-managed-cluster`.",
+        "summary": {
+          "title": "Dataproc cluster creation enhancements",
+          "summary": "We are promoting several flags to General Availability for Dataproc cluster creation and workflow templates. These flags allow for more flexible instance selection and flexibility policies for master, worker, and secondary worker nodes. This provides greater control over cluster resource provisioning."
+        }
+      },
+      {
+        "kind": "Cloud Firestore Emulator",
+        "content": "* Added support for `--require-indexes` and `--index-file` flags in `gcloud emulators firestore start` command.",
+        "summary": {
+          "title": "Firestore emulator index support",
+          "summary": "The Firestore emulator now supports the `--require-indexes` and `--index-file` flags. This allows for more consistent local development by enforcing index definitions."
+        }
+      },
+      {
+        "kind": "Cloud Functions",
+        "content": "* Added `all-traffic` as an allowed value for `--direct-vpc-egress` flag in `gcloud functions deploy`.\n* Promoted `gcloud functions upgrade` command to GA.",
+        "summary": {
+          "title": "Cloud Functions updates",
+          "summary": "New options for VPC egress and general availability for function upgrades are now available for Cloud Functions."
+        }
+      },
+      {
+        "kind": "Cloud NetApp",
+        "content": "* Added `gcloud netapp volumes start-split` and `gcloud netapp volumes get-split-status` commands to GA track.",
+        "summary": {
+          "title": "NetApp volume split commands now GA",
+          "summary": "New commands for managing NetApp volume split operations are now generally available. Use `gcloud netapp volumes start-split` to initiate a split and `gcloud netapp volumes get-split-status` to monitor its progress."
+        }
+      },
+      {
+        "kind": "Cloud Quotas",
+        "content": "* Promoted `gcloud quotas` surface (info, preferences, and adjuster settings) to General Availability (GA).",
+        "summary": {
+          "title": "Cloud Quotas Now Generally Available",
+          "summary": "The `gcloud quotas` surface, including info, preferences, and adjuster settings, has been promoted to General Availability (GA). This update provides stable and production-ready access to quota management features."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Modified `gcloud sql instances reencrypt` to support zero-downtime\n  re-encryption for most Cloud SQL instances, removing the previous downtime\n  warning. Instances using C4, C4A, or N4 machine types are not yet supported for\n  zero-downtime re-encryption; they will still restart during this operation and\n  prompt a downtime warning.",
+        "summary": {
+          "title": "Zero-downtime re-encryption for Cloud SQL instances",
+          "summary": "Cloud SQL now supports zero-downtime re-encryption for most instances, eliminating the need for downtime during this process. While instances using C4, C4A, or N4 machine types will still experience a restart, this update significantly improves the re-encryption experience for users."
+        }
+      },
+      {
+        "kind": "Cloud Services",
+        "content": "* Updated `gcloud beta services mcp enable` command to be a no-op, as MCP enablement is no longer required.",
+        "summary": {
+          "title": "Service enablement update",
+          "summary": "The `gcloud beta services mcp enable` command is now a no-op. MCP enablement is no longer required for this service."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Fixed an issue where the default zone for cluster resources (storage, network, etc.) was always set to the location's \"b\" zone, overriding the user-specified zone in compute flags.\n* Renamed `--blueprint` flag to `--reference-architecture` in `gcloud beta cluster-director clusters create`.",
+        "summary": {
+          "title": "Cluster Director fixes and flag updates",
+          "summary": "Cluster Director has been updated with a fix for default zone selection for cluster resources, ensuring user-specified zones are respected. Additionally, the `--blueprint` flag has been renamed to `--reference-architecture` for clarity in cluster creation commands."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Promoted `gcloud compute hosts` and `gcloud compute reservations hosts` to GA.\n* Updated `gcloud compute reservations hosts list` and `gcloud compute reservations hosts describe` to require `--reservation` when `--reservation-block` is specified.\n* Added support for 3500GB, and 7000GB partition sizes when creating\n  local SSDs via `gcloud compute instances create` and\n  `gcloud compute instance-templates create`.\n* Promoted `--igmp-query` flag in `--network-interface` of `gcloud compute instance-templates create` to GA.\n* Promoted `--igmp-query` flag in `gcloud compute instances network-interfaces add` to GA.\n* Promoted `--igmp-query` flag in `--network-interface` of `gcloud compute instances bulk create` to GA.\\* Added `gcloud compute http-health-checks test-iam-permissions` command.\n* Added `--routing-mode` flag to `gcloud compute service-attachments create` and `update` commands in beta.\n* Added `gcloud compute snapshot-groups test-iam-permissions` command in beta release track.\n* Added `gcloud compute instances test-iam-permissions` command to test\n  IAM permissions on a Compute Engine virtual machine instance in GA, beta,\n  and preview.\n* Added `gcloud compute interconnects groups set-iam-policy` command to set IAM policy on an interconnect group in beta, preview, and GA.\n* Added `--exapool-capacity-optimized-capacity`,\n  `--exapool-read-optimized-capacity`, and\n  `--exapool-write-optimized-capacity` flags to\n  `gcloud alpha compute storage-pools update` for Exapool storage pools.\n* Added Arm `CCA` support to the `confidential-compute-type` option in `gcloud compute instance create`.\n* Added `gcloud compute network-firewall-policies test-iam-permissions` command.\n* Added `gcloud compute disks test-iam-permissions` command to test IAM permissions on a Compute Engine disk.\n* Promoted `--ipv6-network-tier` flag of\n  `gcloud compute networks subnets create` and\n  `gcloud compute networks subnets update` to beta.\n* Added `STANDARD` option to `--ipv6-network-tier` flag of\n  `gcloud compute instances create`,\n  `gcloud compute instance-templates create`,\n  `gcloud compute instances network-interfaces add`, and\n  `gcloud compute instances network-interfaces update` in beta.\n* Added `gcloud compute routers test-iam-permissions` command to test specific IAM permissions on a Compute Engine router in beta.",
+        "summary": {
+          "title": "Compute Engine CLI Updates",
+          "summary": "New features and GA promotions for Compute Engine command-line tools. This update includes enhancements to instance creation, network interface management, storage pools, and IAM permission testing."
+        }
+      },
+      {
+        "kind": "Compute Firewall Policies",
+        "content": "* Promoted new ULL\\_POLICY value for `--policy-type` flag of `gcloud compute network-firewall-policies create` to GA.",
+        "summary": {
+          "title": "Compute Firewall Policies Now Generally Available",
+          "summary": "We are excited to announce that the new ULL_POLICY value for the --policy-type flag of `gcloud compute network-firewall-policies create` has been promoted to General Availability. This update enhances our network security capabilities, providing more robust and scalable firewall policy management."
+        }
+      },
+      {
+        "kind": "Distributed Cloud Edge",
+        "content": "* Promoted `gcloud edge-cloud zones list` to GA.",
+        "summary": {
+          "title": "Edge Cloud Zones Now Generally Available",
+          "summary": "The `gcloud edge-cloud zones list` command is now generally available, allowing users to easily discover and manage Edge Cloud zones. This feature enhances the usability of Distributed Cloud Edge by providing a streamlined way to interact with your edge infrastructure."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Promoted\n  `gcloud container fleet|hub config-management update` command to `beta`.",
+        "summary": {
+          "title": "Config Management Command Promoted to Beta",
+          "summary": "The `gcloud container fleet config-management update` command has been promoted to the beta release. This update signifies improved stability and introduces new features for managing your GKE configurations."
+        }
+      },
+      {
+        "kind": "Identity and Access Management",
+        "content": "* Added `gcloud iam access-policies create|delete|describe|list|update|search-policy-bindings` commands to allow management of access policy resources.\n* Added `--target-resource` flag to `gcloud iam policy-bindings create`.",
+        "summary": {
+          "title": "Manage access policies with gcloud",
+          "summary": "New gcloud commands are available for managing access policy resources. You can now create, delete, describe, list, update, and search access policies and their bindings. The `--target-resource` flag has also been added to `gcloud iam policy-bindings create`."
+        }
+      },
+      {
+        "kind": "Kpt",
+        "content": "* Updated kpt to v1.0.0-beta.67. See <https://github.com/kptdev/kpt/releases/tag/v1.0.0-beta.67> for more details.",
+        "summary": {
+          "title": "kpt updated to v1.0.0-beta.67",
+          "summary": "The kpt tool has been updated to version v1.0.0-beta.67. This release includes various improvements and bug fixes. For a detailed list of changes, please refer to the release notes."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Updated default kubectl to 1.35.6.\n* Additional kubectl versions:\n  + 1.30.14\n  + 1.31.14\n  + 1.32.13\n  + 1.33.13\n  + 1.34.10\n  + 1.35.7\n  + 1.36.3",
+        "summary": {
+          "title": "Kubernetes Engine kubectl updates",
+          "summary": "We have updated the default kubectl version in Kubernetes Engine to 1.35.6. Several other kubectl versions are also available, including 1.30.14 through 1.36.3, to provide flexibility for your deployments."
+        }
+      },
+      {
+        "kind": "Network Services",
+        "content": "* Deprecated `clientTlsPolicy` field in `gcloud network-services endpoint-policies`.\n* Updated `gcloud network-services endpoint-policies` resource name pattern to support regional locations.",
+        "summary": {
+          "title": "Endpoint Policies Update",
+          "summary": "The `clientTlsPolicy` field in endpoint policies is now deprecated. The resource name pattern for endpoint policies has also been updated to better support regional locations."
+        }
+      },
+      {
+        "kind": "Vmware Engine",
+        "content": "* Added `--kms-key` flag to `gcloud vmware private-clouds create`. Specifying this flag with a valid KMS key resource name enables CMEK.\n* Added `--encryption-type` and `--kms-key` flags to `gcloud vmware private-clouds update`. `--kms-key` (valid KMS key resource name) is required when `--encryption-type` is CMEK.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "VMware Engine adds CMEK support",
+          "summary": "VMware Engine now supports Customer-Managed Encryption Keys (CMEK) for private clouds. You can enable CMEK during private cloud creation or update an existing private cloud to use CMEK by specifying a valid KMS key."
+        }
+      }
+    ]
+  }
+}

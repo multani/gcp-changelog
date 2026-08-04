@@ -1,5 +1,18 @@
 # Guest Environment
 
+## 2026-08-03
+
+### Fixed
+
+Version `20260717.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available for Windows only. This version introduces the following fix:
+
+* Fixed a race condition in the extensions manager during Windows shutdown
+  that could cause an incorrect state on the next boot. This occurred when the
+  Service Control Manager (SCM) attempted to restart the extensions manager
+  after it received an early termination signal.
+
+---
 ## 2026-07-27
 
 ### Fixed

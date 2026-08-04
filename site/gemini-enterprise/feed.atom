@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-07-28T00:00:00+00:00</updated>
+  <updated>2026-08-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-08-04:feature:0</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: End-to-end tracing support for data connectors</strong></p>
+<p>Tracing support is extended end-to-end across the data connector workflow,
+introducing two new trace spans for better observability:</p>
+<ul>
+<li><code>execute_tool</code>: Represents the execution of a tool on the agent
+  orchestration layer.</li>
+<li><code>invoke_connector</code>: Represents the request logic and execution on the
+  connector execution layer.</li>
+</ul>
+<p>These spans help you visualize end-to-end parent-child relationship workflows
+from the assistant prompt to the third-party API. You can search and filter for
+these spans in the Trace Explorer by service or span name, query them using
+turn-level legacy assist tokens via the <code>gemini_enterprise.assist_token</code>
+attribute, or look up traces using the W3C trace ID.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/access-traces-and-spans">Access traces and
+spans</a>.</p>]]></content>
+    <summary>Gemini Enterprise now offers end-to-end tracing for data connectors, introducing new trace spans for enhanced observability. This feature allows visualization of workflows from assistant prompts to third-party APIs, with advanced search and filtering capabilities in the Trace Explorer.</summary>
+    <title>Feature: End-to-end tracing for data connectors</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

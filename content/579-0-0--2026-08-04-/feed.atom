@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 579.0.0 (2026-08-04)</title>
+  <subtitle>Changelog for Google Cloud product: 579.0.0 (2026-08-04)</subtitle>
+  <updated>2026-08-04T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/579-0-0--2026-08-04-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:breaking changes:0</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(API Registry)</strong> Removed <code>gcloud api-registry mcp enable</code> and <code>gcloud api-registry mcp disable</code>. MCP server enablement is no longer required; enabling the underlying service is sufficient.</li>
+<li><strong>(Compute Engine)</strong> Removed <code>PRESERVED_STATE</code> column from <code>gcloud compute instance-groups managed list-instances</code> output in beta.</li>
+</ul>]]></content>
+    <summary>API Registry no longer requires MCP server enablement. Compute Engine has removed the PRESERVED_STATE column from its managed instance group output.</summary>
+    <title>Breaking Changes: API Registry and Compute Engine Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:ai:1</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Route <code>gcloud ai</code> requests for the <code>us</code> multi-region to the Vertex AI multi-regional (REP) endpoint.</li>
+</ul>]]></content>
+    <summary>Requests to the `gcloud ai` command for the `us` multi-region will now be routed to the Vertex AI multi-regional endpoint. This change ensures optimal performance and reliability for your AI workloads.</summary>
+    <title>AI: AI routing update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:agent identity:2</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--three-legged-oauth-default-continue-uri</code> flag to <code>gcloud agent-identity auth-providers create</code> and <code>update</code> commands.</li>
+</ul>]]></content>
+    <summary>New flags for agent identity authentication providers allow setting a default continue URI for three-legged OAuth. This improves the user experience for OAuth flows by directing users to a specified URL after authentication.</summary>
+    <title>Agent Identity: Agent Identity Authentication Providers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud auth:3</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Enabled ECP HTTP Proxy support for external users (disabled by default).</li>
+<li>Added optional <code>--ecp-http-proxy</code> flag to <code>gcloud auth enterprise-certificate-config create</code> to support custom ECP HTTP proxy binary paths.</li>
+</ul>]]></content>
+    <summary>External users can now leverage ECP HTTP Proxy support, which is disabled by default. A new flag allows for custom ECP HTTP proxy binary paths, providing greater flexibility for authentication configurations.</summary>
+    <title>Cloud Auth: Cloud Auth Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud dataproc:4</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--master-instance-selection</code>,
+  <code>--master-instance-flexibility-policy-file</code>, <code>--worker-instance-selection</code>,
+  <code>--worker-instance-flexibility-policy-file</code>,
+  <code>--secondary-worker-instance-selection</code>, and
+  <code>--secondary-worker-instance-flexibility-policy-file</code> flags to GA for
+  <code>gcloud dataproc clusters create</code> and
+  <code>gcloud dataproc workflow-templates set-managed-cluster</code>.</li>
+</ul>]]></content>
+    <summary>We are promoting several flags to General Availability for Dataproc cluster creation and workflow templates. These flags allow for more flexible instance selection and flexibility policies for master, worker, and secondary worker nodes. This provides greater control over cluster resource provisioning.</summary>
+    <title>Cloud Dataproc: Dataproc cluster creation enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud firestore emulator:5</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for <code>--require-indexes</code> and <code>--index-file</code> flags in <code>gcloud emulators firestore start</code> command.</li>
+</ul>]]></content>
+    <summary>The Firestore emulator now supports the `--require-indexes` and `--index-file` flags. This allows for more consistent local development by enforcing index definitions.</summary>
+    <title>Cloud Firestore Emulator: Firestore emulator index support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud functions:6</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>all-traffic</code> as an allowed value for <code>--direct-vpc-egress</code> flag in <code>gcloud functions deploy</code>.</li>
+<li>Promoted <code>gcloud functions upgrade</code> command to GA.</li>
+</ul>]]></content>
+    <summary>New options for VPC egress and general availability for function upgrades are now available for Cloud Functions.</summary>
+    <title>Cloud Functions: Cloud Functions updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud netapp:7</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud netapp volumes start-split</code> and <code>gcloud netapp volumes get-split-status</code> commands to GA track.</li>
+</ul>]]></content>
+    <summary>New commands for managing NetApp volume split operations are now generally available. Use `gcloud netapp volumes start-split` to initiate a split and `gcloud netapp volumes get-split-status` to monitor its progress.</summary>
+    <title>Cloud NetApp: NetApp volume split commands now GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud quotas:8</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud quotas</code> surface (info, preferences, and adjuster settings) to General Availability (GA).</li>
+</ul>]]></content>
+    <summary>The `gcloud quotas` surface, including info, preferences, and adjuster settings, has been promoted to General Availability (GA). This update provides stable and production-ready access to quota management features.</summary>
+    <title>Cloud Quotas: Cloud Quotas Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud sql:9</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Modified <code>gcloud sql instances reencrypt</code> to support zero-downtime
+  re-encryption for most Cloud SQL instances, removing the previous downtime
+  warning. Instances using C4, C4A, or N4 machine types are not yet supported for
+  zero-downtime re-encryption; they will still restart during this operation and
+  prompt a downtime warning.</li>
+</ul>]]></content>
+    <summary>Cloud SQL now supports zero-downtime re-encryption for most instances, eliminating the need for downtime during this process. While instances using C4, C4A, or N4 machine types will still experience a restart, this update significantly improves the re-encryption experience for users.</summary>
+    <title>Cloud SQL: Zero-downtime re-encryption for Cloud SQL instances</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cloud services:10</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud beta services mcp enable</code> command to be a no-op, as MCP enablement is no longer required.</li>
+</ul>]]></content>
+    <summary>The `gcloud beta services mcp enable` command is now a no-op. MCP enablement is no longer required for this service.</summary>
+    <title>Cloud Services: Service enablement update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:cluster director:11</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where the default zone for cluster resources (storage, network, etc.) was always set to the location's "b" zone, overriding the user-specified zone in compute flags.</li>
+<li>Renamed <code>--blueprint</code> flag to <code>--reference-architecture</code> in <code>gcloud beta cluster-director clusters create</code>.</li>
+</ul>]]></content>
+    <summary>Cluster Director has been updated with a fix for default zone selection for cluster resources, ensuring user-specified zones are respected. Additionally, the `--blueprint` flag has been renamed to `--reference-architecture` for clarity in cluster creation commands.</summary>
+    <title>Cluster Director: Cluster Director fixes and flag updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:compute engine:12</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud compute hosts</code> and <code>gcloud compute reservations hosts</code> to GA.</li>
+<li>Updated <code>gcloud compute reservations hosts list</code> and <code>gcloud compute reservations hosts describe</code> to require <code>--reservation</code> when <code>--reservation-block</code> is specified.</li>
+<li>Added support for 3500GB, and 7000GB partition sizes when creating
+  local SSDs via <code>gcloud compute instances create</code> and
+  <code>gcloud compute instance-templates create</code>.</li>
+<li>Promoted <code>--igmp-query</code> flag in <code>--network-interface</code> of <code>gcloud compute instance-templates create</code> to GA.</li>
+<li>Promoted <code>--igmp-query</code> flag in <code>gcloud compute instances network-interfaces add</code> to GA.</li>
+<li>Promoted <code>--igmp-query</code> flag in <code>--network-interface</code> of <code>gcloud compute instances bulk create</code> to GA.* Added <code>gcloud compute http-health-checks test-iam-permissions</code> command.</li>
+<li>Added <code>--routing-mode</code> flag to <code>gcloud compute service-attachments create</code> and <code>update</code> commands in beta.</li>
+<li>Added <code>gcloud compute snapshot-groups test-iam-permissions</code> command in beta release track.</li>
+<li>Added <code>gcloud compute instances test-iam-permissions</code> command to test
+  IAM permissions on a Compute Engine virtual machine instance in GA, beta,
+  and preview.</li>
+<li>Added <code>gcloud compute interconnects groups set-iam-policy</code> command to set IAM policy on an interconnect group in beta, preview, and GA.</li>
+<li>Added <code>--exapool-capacity-optimized-capacity</code>,
+  <code>--exapool-read-optimized-capacity</code>, and
+  <code>--exapool-write-optimized-capacity</code> flags to
+  <code>gcloud alpha compute storage-pools update</code> for Exapool storage pools.</li>
+<li>Added Arm <code>CCA</code> support to the <code>confidential-compute-type</code> option in <code>gcloud compute instance create</code>.</li>
+<li>Added <code>gcloud compute network-firewall-policies test-iam-permissions</code> command.</li>
+<li>Added <code>gcloud compute disks test-iam-permissions</code> command to test IAM permissions on a Compute Engine disk.</li>
+<li>Promoted <code>--ipv6-network-tier</code> flag of
+  <code>gcloud compute networks subnets create</code> and
+  <code>gcloud compute networks subnets update</code> to beta.</li>
+<li>Added <code>STANDARD</code> option to <code>--ipv6-network-tier</code> flag of
+  <code>gcloud compute instances create</code>,
+  <code>gcloud compute instance-templates create</code>,
+  <code>gcloud compute instances network-interfaces add</code>, and
+  <code>gcloud compute instances network-interfaces update</code> in beta.</li>
+<li>Added <code>gcloud compute routers test-iam-permissions</code> command to test specific IAM permissions on a Compute Engine router in beta.</li>
+</ul>]]></content>
+    <summary>New features and GA promotions for Compute Engine command-line tools. This update includes enhancements to instance creation, network interface management, storage pools, and IAM permission testing.</summary>
+    <title>Compute Engine: Compute Engine CLI Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:compute firewall policies:13</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted new ULL_POLICY value for <code>--policy-type</code> flag of <code>gcloud compute network-firewall-policies create</code> to GA.</li>
+</ul>]]></content>
+    <summary>We are excited to announce that the new ULL_POLICY value for the --policy-type flag of `gcloud compute network-firewall-policies create` has been promoted to General Availability. This update enhances our network security capabilities, providing more robust and scalable firewall policy management.</summary>
+    <title>Compute Firewall Policies: Compute Firewall Policies Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:distributed cloud edge:14</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud edge-cloud zones list</code> to GA.</li>
+</ul>]]></content>
+    <summary>The `gcloud edge-cloud zones list` command is now generally available, allowing users to easily discover and manage Edge Cloud zones. This feature enhances the usability of Distributed Cloud Edge by providing a streamlined way to interact with your edge infrastructure.</summary>
+    <title>Distributed Cloud Edge: Edge Cloud Zones Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:gke hub:15</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted
+  <code>gcloud container fleet|hub config-management update</code> command to <code>beta</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud container fleet config-management update` command has been promoted to the beta release. This update signifies improved stability and introduces new features for managing your GKE configurations.</summary>
+    <title>GKE Hub: Config Management Command Promoted to Beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:identity and access management:16</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud iam access-policies create|delete|describe|list|update|search-policy-bindings</code> commands to allow management of access policy resources.</li>
+<li>Added <code>--target-resource</code> flag to <code>gcloud iam policy-bindings create</code>.</li>
+</ul>]]></content>
+    <summary>New gcloud commands are available for managing access policy resources. You can now create, delete, describe, list, update, and search access policies and their bindings. The `--target-resource` flag has also been added to `gcloud iam policy-bindings create`.</summary>
+    <title>Identity and Access Management: Manage access policies with gcloud</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:kpt:17</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated kpt to v1.0.0-beta.67. See <a href="https://github.com/kptdev/kpt/releases/tag/v1.0.0-beta.67">https://github.com/kptdev/kpt/releases/tag/v1.0.0-beta.67</a> for more details.</li>
+</ul>]]></content>
+    <summary>The kpt tool has been updated to version v1.0.0-beta.67. This release includes various improvements and bug fixes. For a detailed list of changes, please refer to the release notes.</summary>
+    <title>Kpt: kpt updated to v1.0.0-beta.67</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:kubernetes engine:18</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated default kubectl to 1.35.6.</li>
+<li>Additional kubectl versions:</li>
+<li>1.30.14</li>
+<li>1.31.14</li>
+<li>1.32.13</li>
+<li>1.33.13</li>
+<li>1.34.10</li>
+<li>1.35.7</li>
+<li>1.36.3</li>
+</ul>]]></content>
+    <summary>We have updated the default kubectl version in Kubernetes Engine to 1.35.6. Several other kubectl versions are also available, including 1.30.14 through 1.36.3, to provide flexibility for your deployments.</summary>
+    <title>Kubernetes Engine: Kubernetes Engine kubectl updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:network services:19</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Deprecated <code>clientTlsPolicy</code> field in <code>gcloud network-services endpoint-policies</code>.</li>
+<li>Updated <code>gcloud network-services endpoint-policies</code> resource name pattern to support regional locations.</li>
+</ul>]]></content>
+    <summary>The `clientTlsPolicy` field in endpoint policies is now deprecated. The resource name pattern for endpoint policies has also been updated to better support regional locations.</summary>
+    <title>Network Services: Endpoint Policies Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:579-0-0--2026-08-04-:2026-08-04:vmware engine:20</id>
+    <published>2026-08-04T00:00:00+00:00</published>
+    <updated>2026-08-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--kms-key</code> flag to <code>gcloud vmware private-clouds create</code>. Specifying this flag with a valid KMS key resource name enables CMEK.</li>
+<li>Added <code>--encryption-type</code> and <code>--kms-key</code> flags to <code>gcloud vmware private-clouds update</code>. <code>--kms-key</code> (valid KMS key resource name) is required when <code>--encryption-type</code> is CMEK.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>VMware Engine now supports Customer-Managed Encryption Keys (CMEK) for private clouds. You can enable CMEK during private cloud creation or update an existing private cloud to use CMEK by specifying a valid KMS key.</summary>
+    <title>Vmware Engine: VMware Engine adds CMEK support</title>
+  </entry>
+</feed>

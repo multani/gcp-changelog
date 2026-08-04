@@ -1,5 +1,18 @@
 # Apigee UI
 
+## 2026-07-16
+
+### Announcement
+
+On July 16, 2026, we released an updated version of the Apigee UI.
+
+### Fixed
+
+**Updated PDU and basepath limits display in the Apigee UI**
+
+Removed the ambiguous org-wide PDU limit visualization from the Apigee proxy usage card. Added display of **Deployments per instance** and **Per-org basepaths** limits to the **Instance details** page in the Apigee UI.
+
+---
 ## 2026-07-15
 
 ### Fixed

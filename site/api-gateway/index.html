@@ -2724,6 +2724,18 @@
 
 
 <h1 id="api-gateway">API Gateway</h1>
+<h2 id="2026-08-03">2026-08-03</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Route LLM requests with model routing</strong></p>
+<p>You can now use model routing in API Gateway as a managed traffic management layer to accept OpenAI-compatible prompt requests, transcode them in-flight, and route them to specific foundation models in Vertex AI Model Garden (including Gemini, Anthropic Claude, and OpenAI GPT models).</p>
+<p>Key benefits and capabilities include:</p>
+<ul>
+<li><strong>Centralized traffic management</strong>: Consolidate AI traffic routing and lifecycle management at the network edge without hosting standalone client-side proxies.</li>
+<li><strong>In-flight transcoding</strong>: Standardize client applications on an OpenAI-compatible REST interface while dynamically dispatching requests to diverse underlying Vertex AI Model Garden endpoints.</li>
+<li><strong>OpenAPI 3.x configuration</strong>: Define model routing tables, explicit routing rules, and default model fallbacks using the new <code>x-google-api-management.ai.models.routing</code> and <code>x-google-model-router</code> OpenAPI 3.x extensions.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/model-routing-overview">Overview of model routing</a> and <a href="https://docs.cloud.google.com/api-gateway/docs/model-routing-configure">Configure model routing</a>.</p>
+<hr />
 <h2 id="2026-06-18">2026-06-18</h2>
 <h3 id="change">Change</h3>
 <p><strong>Update to the API Gateway runtime architecture</strong></p>
@@ -2782,7 +2794,7 @@ across all Google Cloud zones. Your instances might not be updated until the rol
 <p>API Gateway can now be <a href="https://docs.cloud.google.com/api-gateway/docs/api-hub-connect">connected to Apigee API hub</a> instances that use <a href="https://docs.cloud.google.com/apigee/docs/api-platform/security/vpc-sc">VPC Service Controls</a>.</p>
 <hr />
 <h2 id="2026-01-12">2026-01-12</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Centralize API Gateway API management using Apigee API hub</strong></p>
 <p>Connect API Gateway to Apigee API hub to enable seamless publishing of API metadata
 from your API Gateway project to API hub. This integration provides a
@@ -2802,7 +2814,7 @@ available until the rollout is complete.</p>
 <h2 id="2025-11-12">2025-11-12</h2>
 <h3 id="announcement">Announcement</h3>
 <p>On November 12, 2025, we released a new version of API Gateway.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><strong>API Gateway now supports OpenAPI version 3.0.</strong></p>
 <p>With this release, API Gateway now supports OpenAPI version 3.0, including all patch versions (3.0.x).</p>
 <p>Key Benefits:</p>
@@ -2822,7 +2834,7 @@ available until the rollout is complete.</p>
 <h2 id="2025-06-09">2025-06-09</h2>
 <h3 id="announcement_2">Announcement</h3>
 <p>On June 9, 2025, we released an updated version of API Gateway.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>With this release, the limit on the number of API gateways that can be created per region is increased to <strong>50</strong>.</p>
 <p>For more information, see <a href="https://cloud.google.com/api-gateway/docs/quotas">Quotas and limits</a></p>
 <hr /></div>
@@ -2836,6 +2848,9 @@ available until the rollout is complete.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#api-gateway">API Gateway</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-03" class="nav-link">2026-08-03</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-18" class="nav-link">2026-06-18</a>
           </li>

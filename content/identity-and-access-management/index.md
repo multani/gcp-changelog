@@ -1,5 +1,18 @@
 # Identity and Access Management
 
+## 2026-08-03
+
+### Feature
+
+Organization Policy Service custom constraints are available for
+Privileged Access Manager (PAM). You can use custom constraints to restrict how users create
+and modify entitlements and grants. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Use custom organization policies for
+Privileged Access Manager](https://docs.cloud.google.com/iam/docs/pam-custom-constraints).
+
+---
 ## 2026-07-27
 
 ### Feature

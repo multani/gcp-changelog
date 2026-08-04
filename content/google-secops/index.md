@@ -15,6 +15,11 @@ Key capabilities include:
 * **Automated query translation and execution:** Converts investigative hypotheses into YARA-L 2.0 search queries and executes against historical security telemetry.
 * **AI-driven evidence extraction:** Filters out routine background noise to isolate high-fidelity forensic evidence (hostnames, user accounts, and command lines).
 
+### Announcement
+
+The deadline for Stage 2 of the SOAR migration to Google Cloud has been extended from September 30th to November 30th, 2026.
+For more information, refer to the [SOAR migration guide](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp).
+
 ---
 ## 2026-08-02
 

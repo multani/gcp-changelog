@@ -1,5 +1,13 @@
 # Google SecOps SOAR
 
+## 2026-08-03
+
+### Announcement
+
+The deadline for Stage 2 of the SOAR migration to Google Cloud has been extended from September 30th to November 30th, 2026.
+For more information, refer to the [SOAR migration guide](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp).
+
+---
 ## 2026-08-02
 
 ### Announcement

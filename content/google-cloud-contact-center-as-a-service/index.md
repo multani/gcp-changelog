@@ -2,6 +2,40 @@
 
 ## 2026-08-03
 
+### Announcement
+
+**Advanced reporting dashboards prerelease notes**
+
+Here are the pre-release notes for updates to the advanced reporting dashboards.
+When we release these updates, we expect the new capabilities to be as shown
+here.
+
+### Feature
+
+**Sub teams are included when top-level teams are selected in the Team filter**
+
+When you select a team in a **Team** filter on a dashboard, the data for that
+team's sub-teams is now included.
+
+### Feature
+
+**The Agent Performance dashboard contains the average chat concurrency metric**
+
+The **Agent Performance** dashboard now contains the average chat concurrency
+metric to capture concurrency trends for agents, teams, and queues.
+
+### Feature
+
+**Metrics for warm transfers and agent consultations**
+
+The **Transfers - Calls** and **Transfers - Chats** dashboards now have the
+following metrics in the **Call Transfers** and **Chat Transfers** tables:
+
+* **Agent Connection Time (H:M:S)**. Reports the time spent consulting with
+  another agent and then warm transferring to that agent.
+* **Agent Consult Time (H:M:S)**. Reports the time spent consulting with
+  another agent before returning to the call.
+
 ### Fixed
 
 This release addresses the following issues:

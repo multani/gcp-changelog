@@ -1,5 +1,21 @@
 # Cloud CDN
 
+## 2026-08-04
+
+### Feature
+
+Cloud CDN supports native image optimization at the Google network edge
+for global external Application Load Balancers. This feature offloads
+compute-intensive image transformations, such as resizing, cropping,
+and format conversion to reduce origin server load and egress costs.
+This feature is in **Preview**.
+
+**Note:** During the Preview phase, image optimization is available free of charge.
+Charges will apply once it becomes Generally Available (GA).
+
+For more information, see [Optimize images with Cloud CDN](https://docs.cloud.google.com/cdn/docs/imageoptimization).
+
+---
 ## 2026-07-03
 
 ### Feature

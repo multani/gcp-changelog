@@ -1,6 +1,16 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-08-03": [
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where the **This Week** and **This Month** per-hour figures\n  on the **Performance Overview** and **Agent Performance** dashboards were\n  inaccurate.\n* Fixed an issue where the **Queue Abandons** and **Abandon %** fields on the\n  **Queue Group Performance - All** and **Queue Group Performance - Chats**\n  dashboards always displayed `0` for chats.\n* Fixed an issue where the virtual agent call metrics on the **Virtual Agent -\n  Calls**, **All Interactions - Calls**, and **Performance Overview**\n  dashboards were incorrect.\n* Fixed an issue where agents appeared under **Assigned Agent** for calls that\n  they weren't connected to.\n* Fixed an issue where exporting data from dashboards using date ranges\n  greater than seven days failed.\n* Fixed an issue in the **Real-time Queue Monitoring** and **Queued Calls**\n  dashboards where transferred calls were incorrectly displayed as **Queued**\n  when they were active with an agent.\n* Fixed an issue where queue groups that were turned off remained visible in\n  advanced reporting dashboards.\n* Fixed an issue where the **Queue Time** filter on the **All Interactions**\n  dashboard wasn't displaying data.\n* Fixed an issue where the **SLA Target** field in the **Queue Group\n  Performance - All** dashboard was empty.\n* Fixed an issue where the **No** checkbox of the **Child Queues** filter\n  disappeared when cleared. No child queues is the default for this filter, so\n  we removed the **No** checkbox, leaving only the **Yes** checkbox.\n* Fixed an issue where the **Available Agents** field overstated real capacity.\n* Fixed an issue on the **Queue Groups - Calls** and **Queue Groups - Chats**\n  dashboards where the **Ave Current Queue Time** metric displayed incorrect\n  data.\n* For time-related exports, there's now a column that displays time in\n  HH:MM:SS format (in addition to seconds). You can't apply conditional\n  formatting to this format in an Explore.\n* Fixed an issue where **Max Queue Wait Time**, **Max Speed To Answer**, and\n  **Max Queue Abandon Time** displayed incorrect data in Explores.\n* Fixed an issue where changes to an agent's availability preferences in the\n  agent adapter weren't reflected in the **Agent Activity** dashboard.\n* Updated the labels in the **Agent Metrics (Historical)** Explore to be\n  channel-agnostic for metrics that include both calls and chats.",
+        "summary": {
+          "title": "Reporting Dashboard Fixes",
+          "summary": "Several reporting dashboards have been updated to fix inaccurate data displays for metrics like queue performance, agent activity, and call handling. This includes corrections to time-based figures, abandon rates, and agent availability, ensuring more reliable insights into contact center operations."
+        }
+      }
+    ],
     "2026-07-30": [
       {
         "kind": "Announcement",

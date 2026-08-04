@@ -1,5 +1,51 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-08-03
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where the **This Week** and **This Month** per-hour figures
+  on the **Performance Overview** and **Agent Performance** dashboards were
+  inaccurate.
+* Fixed an issue where the **Queue Abandons** and **Abandon %** fields on the
+  **Queue Group Performance - All** and **Queue Group Performance - Chats**
+  dashboards always displayed `0` for chats.
+* Fixed an issue where the virtual agent call metrics on the **Virtual Agent -
+  Calls**, **All Interactions - Calls**, and **Performance Overview**
+  dashboards were incorrect.
+* Fixed an issue where agents appeared under **Assigned Agent** for calls that
+  they weren't connected to.
+* Fixed an issue where exporting data from dashboards using date ranges
+  greater than seven days failed.
+* Fixed an issue in the **Real-time Queue Monitoring** and **Queued Calls**
+  dashboards where transferred calls were incorrectly displayed as **Queued**
+  when they were active with an agent.
+* Fixed an issue where queue groups that were turned off remained visible in
+  advanced reporting dashboards.
+* Fixed an issue where the **Queue Time** filter on the **All Interactions**
+  dashboard wasn't displaying data.
+* Fixed an issue where the **SLA Target** field in the **Queue Group
+  Performance - All** dashboard was empty.
+* Fixed an issue where the **No** checkbox of the **Child Queues** filter
+  disappeared when cleared. No child queues is the default for this filter, so
+  we removed the **No** checkbox, leaving only the **Yes** checkbox.
+* Fixed an issue where the **Available Agents** field overstated real capacity.
+* Fixed an issue on the **Queue Groups - Calls** and **Queue Groups - Chats**
+  dashboards where the **Ave Current Queue Time** metric displayed incorrect
+  data.
+* For time-related exports, there's now a column that displays time in
+  HH:MM:SS format (in addition to seconds). You can't apply conditional
+  formatting to this format in an Explore.
+* Fixed an issue where **Max Queue Wait Time**, **Max Speed To Answer**, and
+  **Max Queue Abandon Time** displayed incorrect data in Explores.
+* Fixed an issue where changes to an agent's availability preferences in the
+  agent adapter weren't reflected in the **Agent Activity** dashboard.
+* Updated the labels in the **Agent Metrics (Historical)** Explore to be
+  channel-agnostic for metrics that include both calls and chats.
+
+---
 ## 2026-07-30
 
 ### Announcement

@@ -1,5 +1,34 @@
 # BigQuery
 
+## 2026-08-03
+
+### Feature
+
+You can now use
+[cross-cloud connections](https://docs.cloud.google.com/bigquery/docs/cross-cloud-connections) to query data
+in AWS, Azure, and Salesforce Data 360 from all BigQuery regions. These
+connections let you use more BigQuery features and are more cost efficient than
+standard connections that use BigQuery Omni. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+The JDBC driver for BigQuery now supports
+[OpenTelemetry](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery#opentelemetry) for tracing and
+logging, which helps you monitor the performance of your database interactions
+and troubleshoot issues.
+[Automatic exports to Google Cloud Observability](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery#zero-config-gcp-telemetry)
+are also available. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Announcement
+
+Support for hybrid search (using the `VECTOR_SEARCH` function to combine a
+semantic search with a lexical (keyword) search) has been restored. Using
+`HYBRID` mode in the `AI.SEARCH` function has also been restored.
+
+---
 ## 2026-07-30
 
 ### Feature

@@ -1,5 +1,14 @@
 # VPC Service Controls
 
+## 2026-08-03
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Google Antigravity in Gemini Enterprise](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_gemini_enterprise_antigravity)
+
+---
 ## 2026-06-29
 
 ### Feature

@@ -1,5 +1,16 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-08-03
+
+### Change
+
+You can change the backup plan for your
+[Cloud SQL enhanced backups](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/manage-enhanced-backups)
+without first removing the existing plan.
+For more information, see
+[Change your instance's associated backup plan](https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/manage-enhanced-backups#change-plan).
+
+---
 ## 2026-07-31
 
 ### Change

@@ -1,5 +1,22 @@
 # Security Command Center
 
+## 2026-08-03
+
+### Feature
+
+For the Security Command Center Standard tier,
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) is supported
+for both projects and organizations.
+
+Project-level activations for the Standard tier include access to the [AI security
+dashboard](https://docs.cloud.google.com/security-command-center/docs/assess-risk#ai-protection), basic inventory view (excluding Gemini models), and
+baseline security findings.
+
+Some features of AI Protection are only available for the Premium
+and Enterprise tiers or for organization-level activations. For more information, see
+[Configure AI Protection](https://docs.cloud.google.com/security-command-center/docs/configure-ai-protection).
+
+---
 ## 2026-07-31
 
 ### Feature
@@ -41,6 +58,22 @@ ServiceNow](https://docs.cloud.google.com/security-command-center/docs/how-to-co
 
 ---
 ## 2026-07-27
+
+### Feature
+
+For the Security Command Center Premium tier, you can enable
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) at the
+project level.
+
+Project-level activations include access to the [AI security
+dashboard](https://docs.cloud.google.com/security-command-center/docs/assess-risk#ai-protection), [AI threat
+detection](https://docs.cloud.google.com/security-command-center/docs/agent-engine-threat-detection-overview), and [AI
+vulnerability and misconfiguration
+findings](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview#review-findings).
+
+Some features of AI Protection are only available for
+organization-level activations. For more information, see [Configure AI
+Protection](https://docs.cloud.google.com/security-command-center/docs/configure-ai-protection).
 
 ### Feature
 

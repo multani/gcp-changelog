@@ -1,5 +1,18 @@
 # Google SecOps SIEM
 
+## 2026-08-03
+
+### Feature
+
+**[Spotlight Feature] Analyze feed activity with Cloud Logging**
+
+This feature is in public preview. You can now monitor, debug, and troubleshoot Google SecOps SIEM ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.
+
+This visibility into push- and pull-based ingestion mechanisms lets you use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console. Additionally, you can use the **Debug with logs** option on the **Feed management** page to open **Logs Explorer** pre-filtered for a specific feed.
+
+For more information, see [Analyze feed activity with Cloud Logging](https://docs.cloud.google.com/chronicle/docs/ingestion/analyze-feed-activity-with-cloud-logging).
+
+---
 ## 2026-07-29
 
 ### Change
@@ -180,7 +193,7 @@ For more information, see [Migrate from legacy API to Chronicle API](https://doc
 
 **Advanced Filtering in Dashboards**
 
-This feature is in Public Preview.
+This feature is in public preview.
 
 Advanced Filtering in dashboards is now available in Google SecOps. This feature enhances dashboard capabilities by enabling security analysts to use query variables, also known as tokens, to inject dynamic values, complex regular expressions, or boolean logic directly into YARA-L queries at runtime.
 

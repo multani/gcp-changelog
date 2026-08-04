@@ -1,5 +1,22 @@
 # Google Cloud VMware Engine
 
+## 2026-08-01
+
+### Feature
+
+**Preview**: Google Cloud VMware Engine capacity allocations are available in preview. A capacity
+allocation is a global reservation of physical nodes for your Cloud Billing account.
+Your reserved nodes are organized into placement groups (PGs), which represent the specific physical
+hardware and location of your reserved capacity.
+
+Google Cloud VMware Engine capacity allocations let you do the following:
+\* Use a capacity allocation during private cloud creation by selecting a PG.
+\* Use a capacity allocation when adding a cluster.
+\* Configure a hybrid private cloud across multiple PGs.
+
+For more information, see [Manage capacity allocations](https://docs.cloud.google.com/vmware-engine/docs/private-clouds/howto-manage-capacity-allocations).
+
+---
 ## 2026-07-08
 
 ### Feature

@@ -1,5 +1,21 @@
 # Google SecOps
 
+## 2026-08-03
+
+### Feature
+
+**[Spotlight Feature] Threat Hunt Agent**
+
+The Threat Hunt Agent is now available in Public Preview for Google SecOps Enterprise Plus customers. Powered by Gemini and grounded in Google Threat Intelligence (GTI), Mandiant frontline expertise, and the MITRE ATT&CK® framework, the Threat Hunt Agent autonomously automates proactive threat hunting across your historical security telemetry. For more information, see [Threat Hunt Agent](https://docs.cloud.google.com/chronicle/docs/detection/threat-hunt-agent).
+
+Key capabilities include:
+
+* **Autonomous hunt planning:** Generates structured hunting plans tailored to specific threat actors, campaigns, malware families, software toolkits, or MITRE ATT&CK techniques.
+* **Automated case creation and determinations:** Synthesizes findings into summaries, assigns a verdict (Substantial Evidence, Evidence Found, or Threat Not Found), and automatically creates a dedicated case in Case Management.
+* **Automated query translation and execution:** Converts investigative hypotheses into YARA-L 2.0 search queries and executes against historical security telemetry.
+* **AI-driven evidence extraction:** Filters out routine background noise to isolate high-fidelity forensic evidence (hostnames, user accounts, and command lines).
+
+---
 ## 2026-08-02
 
 ### Announcement

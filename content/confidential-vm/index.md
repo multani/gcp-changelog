@@ -1,5 +1,13 @@
 # Confidential VM
 
+## 2026-07-31
+
+### Security
+
+Support for [Intel TDX on `c4-standard-*` machine types](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/supported-configurations#machine-type-cpu-zone) is
+available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-29
 
 ### Feature

@@ -100,9 +100,8 @@ This release addresses the following issues:
   caused a server error.
 * Fixed an issue where canceling a warm transfer to a queue at overcapacity
   caused the caller to become stranded in an automated menu loop.
-* Fixed an issue where the agent activity logs API allowed unbounded
-  time ranges, which led to system performance degradation and gateway
-  timeouts.
+* Fixed an issue where the agent activity logs API allowed unbounded time
+  ranges, which led to system performance degradation and gateway timeouts.
 * Fixed an issue where the team and menu endpoints experienced performance
   delays.
 * Fixed an issue where calls transferred to a queue with overcapacity
@@ -110,9 +109,9 @@ This release addresses the following issues:
   ringing.
 * Fixed an issue where the call duration in the call adapter and in the
   in-call status timer of the agent desktop didn't match for outbound calls.
-* Fixed an issue where the Agent Activity dashboard displayed time zones
+* Fixed an issue where the **Agent Activity** dashboard displayed time zones
   inconsistently.
-* Fixed an issue where the inactivity timer wouldn't force a session to end if
+* Fixed an issue where the inactivity timer didn't force a session to end if
   the agent closed the browser or browser tab before the inactivity timer
   expired.
 * Fixed an issue where the **All Call History** and **Individual Call
@@ -131,7 +130,7 @@ This release addresses the following issues:
   changes.
 * Fixed an issue with Salesforce integrations where adding a third party to a
   call incorrectly displayed their contact name in the customer field in the
-  agent desktop participants panel.
+  agent desktop **Participants** panel.
 * Fixed an issue where direct inbound SMS chats that were sent to an
   unavailable agent expired and failed instead of being rerouted.
 * Fixed an issue where anonymous inbound calls incorrectly displayed an
@@ -145,8 +144,8 @@ This release addresses the following issues:
   connection timeouts and incomplete data synchronization for downstream
   systems.
 * Fixed an issue where the **Agent Assist Hub** incorrectly displayed `The
-  Agent Assist Hub feature is not enabled` during voice sessions despite Agent
-  Assist Hub being enabled.
+  Agent Assist Hub feature is not enabled` during voice sessions despite the
+  **Agent Assist Hub** being enabled.
 * Fixed a web SDK issue where navigating between pages on the host website
   during an active chat resulted in a duplicate session being created.
 * Fixed an issue where the **AgentSystemData** historical report incorrectly
@@ -178,8 +177,8 @@ This release addresses the following issues:
   didn't appear in the agent adapter or live chat view when content cards
   weren't supported.
 * Fixed an issue where agents received duplicate SMS messages from end-users.
-* Fixed an issue where the inactivity timeout didn't trigger for chats
-  waiting in a transfer queue.
+* Fixed an issue where the inactivity timeout didn't trigger for chats waiting
+  in a transfer queue.
 * Fixed an issue where chats waiting in a transfer queue remained open
   indefinitely and created duplicate metadata files.
 * Fixed an issue where chat transcripts were missing from data exports when a
@@ -189,9 +188,9 @@ This release addresses the following issues:
 * Fixed an issue where calls escalated from a virtual agent to a
   holiday-closed queue bypassed the holiday message and played the after-hours
   deflection message.
-* Fixed an issue where call recording URLs weren't saved or synced to
-  the CRM for calls with multiple audio segments, such as those involving an
-  IVR followed by an agent conference.
+* Fixed an issue where call recording URLs weren't saved or synced to the CRM
+  for calls with multiple audio segments, such as those involving an IVR
+  followed by an agent conference.
 * Fixed an issue where voice calls remained in an assigned state without
   progressing or requeueing if a system error occurred during the assignment
   process.
@@ -203,8 +202,8 @@ This release addresses the following issues:
   created in external storage.
 * Fixed an issue where calls prematurely disconnected or experienced audio
   loss during the hangup process.
-* Fixed an issue where Telnyx VoIP calls silently dropped without
-  notification if the connection was interrupted.
+* Fixed an issue where Telnyx VoIP calls silently dropped without notification
+  if the connection was interrupted.
 * Improved internal instrumentation to diagnose poor call quality scores and
   improve call reliability.
 * Fixed an issue where agents configured for Deltacast and auto-answer
@@ -215,8 +214,7 @@ This release addresses the following issues:
   unexpectedly disabled.
 * Fixed an issue where the switch to chat button wasn't accessible from the
   keyboard.
-* Fixed an issue where an agent could end the wrap-up session of another
-  agent.
+* Fixed an issue where an agent ended the wrap-up session of another agent.
 * Fixed an issue where agents experienced delays of up to 30 seconds when
   transitioning from "Wrap" to "Available" status.
 * Fixed an issue where an `An error has occurred` message incorrectly appeared
@@ -235,7 +233,7 @@ This release addresses the following issues:
   weren't correctly tracked as skipped interactions.
 * Fixed an issue where chats remained in the queue following a virtual agent
   escalation.
-* Fixed an issue where importing a contact list CSV for a Native Power Dial
+* Fixed an issue where importing a contact list CSV for a native power dial
   campaign failed if the file contained malformed rows or encoding issues.
 
 ---
@@ -699,17 +697,17 @@ This release addresses the following issues:
 * Fixed an issue in Salesforce integrations where incoming chat audio and
   desktop notifications didn't play for agents using the embedded
   CCAI Platform widget.
-* Fixed an issue where the inactive chat dismissal timer didn't reset after
-  a chat was transferred from a virtual agent to a human agent.
-* Fixed an issue where voicemails disappeared from the queue
-  immediately after being opened.
+* Fixed an issue where the inactive chat dismissal timer didn't reset after a
+  chat was transferred from a virtual agent to a human agent.
+* Fixed an issue where voicemails disappeared from the queue immediately after
+  being opened.
 * Fixed an issue where the reporting dashboard incorrectly displayed call and
   agent status during a cold transfer to another queue.
 * Improved rendering performance in the agent desktop mini chat adapter.
 * Fixed an issue where the storage path for screen recordings didn't align
   with the folder structure displayed in the user interface.
-* Fixed an issue where missing public files were incorrectly cached by the
-  CDN for up to seven days.
+* Fixed an issue where missing public files were incorrectly cached by the CDN
+  for up to seven days.
 * Fixed an issue where agents were automatically redirected to the **Closed**
   inbox view after changing an interaction status to **Closed**.
 * Fixed an issue where the **You cannot log out when in a chat** notification
@@ -723,17 +721,16 @@ This release addresses the following issues:
   organization.
 * Fixed an issue where duplicate customer satisfaction surveys were submitted
   and recorded for a single live chat session.
-* Fixed an issue where the message field in the chat adapter was inactive
-  when an agent accepted a new chat.
+* Fixed an issue where the message field in the chat adapter was inactive when
+  an agent accepted a new chat.
 * Fixed an issue where task virtual agents were incorrectly identified as
   **Nobody** when joining a conversation after a transfer from a human agent.
 * Fixed an issue that occurred when a chat entered a queue and the greeting
   message was sent before an agent was assigned. In these cases, the
   associated push notification crashed and logged an error, producing
   excessive noise in logs.
-* Fixed an issue where the agent's final message in a chat session
-  appeared after **This chat is ended** in the chat adapter and the CRM
-  transcript.
+* Fixed an issue where the agent's final message in a chat session appeared
+  after **This chat is ended** in the chat adapter and the CRM transcript.
 * Fixed an issue where agents using instances without a CRM configuration
   received a **No Account Detected** warning when making outbound calls.
 * Fixed an issue where notification chimes played after an agent had connected

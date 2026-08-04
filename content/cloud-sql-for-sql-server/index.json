@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for SQL Server",
   "entries": {
+    "2026-08-03": [
+      {
+        "kind": "Change",
+        "content": "You can change the backup plan for your\n[Cloud SQL enhanced backups](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/manage-enhanced-backups)\nwithout first removing the existing plan.\nFor more information, see\n[Change your instance's associated backup plan](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/manage-enhanced-backups#change-plan).",
+        "summary": {
+          "title": "Modify Cloud SQL backup plans",
+          "summary": "You can now change the backup plan for your Cloud SQL enhanced backups without needing to remove the existing plan first. This simplifies the process of managing your backup configurations."
+        }
+      }
+    ],
     "2026-07-31": [
       {
         "kind": "Change",
@@ -8,6 +18,14 @@
         "summary": {
           "title": "Private Service Connect behavior change",
           "summary": "Starting August 1, 2026, connection reconciliation will be enabled by default for new and existing Cloud SQL instances using Private Service Connect. Removing a project from allowed projects will immediately close existing Private Service Connect connections from that project."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for SQL Server now supports executing SQL statements using the\n[Cloud SQL Data API](https://docs.cloud.google.com/sql/docs/sqlserver/executesql-instance).",
+        "summary": {
+          "title": "Execute SQL with Data API",
+          "summary": "Cloud SQL for SQL Server now allows executing SQL statements directly through the Cloud SQL Data API. This simplifies data interaction and management for your SQL Server instances."
         }
       }
     ],

@@ -1,5 +1,15 @@
 # Virtual Private Cloud
 
+## 2026-08-03
+
+### Feature
+
+**Preview**: You can create v2 IPv4 public advertised prefixes for
+bring your own IP addresses (BYOIP) that use
+[Standard Tier](https://docs.cloud.google.com/network-tiers/docs/overview#standard_tier) IP addresses.
+For more information, see [Network Service Tiers](https://docs.cloud.google.com/vpc/docs/bring-your-own-ip#service-tiers).
+
+---
 ## 2026-07-30
 
 ### Feature

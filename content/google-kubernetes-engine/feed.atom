@@ -2,9 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-07-30T00:00:00+00:00</updated>
+  <updated>2026-08-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-08-03:feature:0</id>
+    <published>2026-08-03T00:00:00+00:00</published>
+    <updated>2026-08-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>TPU Subslicing (also known as Dynamic Subslicing) is now generally available for
+Ironwood (TPU7x). This feature enables you to incrementally provision node pools
+for a cube or litepod, breaking them into smaller slices (subslices) to run
+workloads requiring smaller topologies. Updates in this GA release include:</p>
+<ul>
+<li><strong>Dynamic sub-slicing</strong> (topologies smaller than <code>4x4x4</code>, such as <code>2x2x1</code>,
+  <code>2x2x2</code>, <code>2x2x4</code>, and <code>2x4x4</code>): Supported in GKE version
+  <code>1.36.0-gke.3712000</code> or later.</li>
+<li><strong>Dynamic super-slicing</strong> (topologies <code>4x4x4</code> or larger): Supported in GKE
+  version <code>1.35.2-gke.1842000</code> or later.</li>
+<li><strong>Partition Health Labels</strong>: The partition state label is updated to
+  <code>cloud.google.com/gke-tpu-partition-[shape]-state</code> to specify smaller
+  subslice shapes. It also introduces <code>UNSET</code> and <code>INCOMPLETE</code> states. Support
+  for the <code>DEGRADED</code> state only applies to the top-level <code>4x4x4</code> topology, and
+  not for smaller sub-slicing topologies.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/dynamic-slicing">About GKE dynamic slicing</a>.</p>]]></content>
+    <summary>TPU Subslicing (Dynamic Subslicing) is now generally available for Ironwood (TPU7x). This feature allows for incremental provisioning of node pools, breaking them into smaller slices to efficiently run workloads with smaller topologies. Updates include dynamic sub-slicing for smaller topologies and dynamic super-slicing for larger ones, along with enhanced partition health labels.</summary>
+    <title>Feature: TPU Subslicing Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps SIEM",
   "entries": {
+    "2026-08-03": [
+      {
+        "kind": "Feature",
+        "content": "**[Spotlight Feature] Analyze feed activity with Cloud Logging**\n\nThis feature is in public preview. You can now monitor, debug, and troubleshoot Google SecOps SIEM ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.\n\nThis visibility into push- and pull-based ingestion mechanisms lets you use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console. Additionally, you can use the **Debug with logs** option on the **Feed management** page to open **Logs Explorer** pre-filtered for a specific feed.\n\nFor more information, see [Analyze feed activity with Cloud Logging](https://docs.cloud.google.com/chronicle/docs/ingestion/analyze-feed-activity-with-cloud-logging).",
+        "summary": {
+          "title": "Analyze feed activity with Cloud Logging",
+          "summary": "Monitor, debug, and troubleshoot your SIEM ingestion pipelines and feeds with Cloud Logging. This new feature provides visibility into feed activity, allowing for faster diagnosis and resolution of ingestion issues. You can now use Logs Explorer and Gemini Cloud Assist for deeper insights directly from the SecOps console."
+        }
+      }
+    ],
     "2026-07-29": [
       {
         "kind": "Change",
@@ -32,10 +42,10 @@
     "2026-07-15": [
       {
         "kind": "Feature",
-        "content": "**Advanced Filtering in Dashboards**\n\nThis feature is in Public Preview.\n\nAdvanced Filtering in dashboards is now available in Google SecOps. This feature enhances dashboard capabilities by enabling security analysts to use query variables, also known as tokens, to inject dynamic values, complex regular expressions, or boolean logic directly into YARA-L queries at runtime.\n\nKey aspects of Advanced Filtering include:\n\n* **Token Variable Definition:** When creating an advanced filter, you can define a Token Variable. Token variable names must consist only of alphanumeric characters and underscores (`^[a-zA-Z0-9_]+$`) and must be unique within the dashboard.\n* **Filter Value Generation:** Token values can be generated dynamically from YARA-L query results or entered manually as a static list.\n* **Customizable Wrappers:** You can specify prefixes and suffixes to wrap token values, enabling specific logic such as regular expressions.\n* **Multi-Select Support:** The ability to select multiple options for a token can be enabled, with a configurable delimiter (for example, `|`) for combining values in queries.\n\nFor more information, see [Advanced filtering](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards-filters#advanced_filtering).",
+        "content": "**Advanced Filtering in Dashboards**\n\nThis feature is in public preview.\n\nAdvanced Filtering in dashboards is now available in Google SecOps. This feature enhances dashboard capabilities by enabling security analysts to use query variables, also known as tokens, to inject dynamic values, complex regular expressions, or boolean logic directly into YARA-L queries at runtime.\n\nKey aspects of Advanced Filtering include:\n\n* **Token Variable Definition:** When creating an advanced filter, you can define a Token Variable. Token variable names must consist only of alphanumeric characters and underscores (`^[a-zA-Z0-9_]+$`) and must be unique within the dashboard.\n* **Filter Value Generation:** Token values can be generated dynamically from YARA-L query results or entered manually as a static list.\n* **Customizable Wrappers:** You can specify prefixes and suffixes to wrap token values, enabling specific logic such as regular expressions.\n* **Multi-Select Support:** The ability to select multiple options for a token can be enabled, with a configurable delimiter (for example, `|`) for combining values in queries.\n\nFor more information, see [Advanced filtering](https://docs.cloud.google.com/chronicle/docs/reports/native-dashboards-filters#advanced_filtering).",
         "summary": {
-          "title": "Dashboard Filters Now Available",
-          "summary": "Enhance your dashboard analysis with new advanced filtering capabilities. Security analysts can now use dynamic query variables to build more precise and powerful YARA-L queries at runtime, improving the flexibility and depth of your security insights."
+          "title": "New Advanced Filtering for Dashboards",
+          "summary": "Security Operations now offers Advanced Filtering for dashboards, allowing analysts to use dynamic values, regular expressions, and complex logic within YARA-L queries at runtime. This feature supports token variable definitions, dynamic or static filter value generation, customizable wrappers, and multi-select options for enhanced query flexibility."
         }
       },
       {

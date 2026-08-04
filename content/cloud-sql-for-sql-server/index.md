@@ -1,5 +1,16 @@
 # Cloud SQL for SQL Server
 
+## 2026-08-03
+
+### Change
+
+You can change the backup plan for your
+[Cloud SQL enhanced backups](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/manage-enhanced-backups)
+without first removing the existing plan.
+For more information, see
+[Change your instance's associated backup plan](https://docs.cloud.google.com/sql/docs/sqlserver/backup-recovery/manage-enhanced-backups#change-plan).
+
+---
 ## 2026-07-31
 
 ### Change
@@ -16,6 +27,11 @@ Connect endpoints in those removed projects can't continue to connect to the
 Cloud SQL instance using those endpoints.
 
 For more information, see [Allowed Private Service Connect projects](https://docs.cloud.google.com/sql/docs/sqlserver/about-private-service-connect#allowed-psc-projects).
+
+### Feature
+
+Cloud SQL for SQL Server now supports executing SQL statements using the
+[Cloud SQL Data API](https://docs.cloud.google.com/sql/docs/sqlserver/executesql-instance).
 
 ---
 ## 2026-07-29

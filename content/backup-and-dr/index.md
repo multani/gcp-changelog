@@ -1,5 +1,12 @@
 # Backup and DR
 
+## 2026-08-03
+
+### Feature
+
+You can now change the backup plan associated with a Cloud SQL instance. This allows you to switch an instance to a different backup plan, provided the new plan uses the same backup vault and is in the same region as the instance. This feature is available through the Google Cloud console and [gcloud CLI](https://docs.cloud.google.com/sdk/gcloud). To learn more, see [Change the associated backup plan for a Cloud SQL instance](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup#change-plan).
+
+---
 ## 2026-07-24
 
 ### Feature

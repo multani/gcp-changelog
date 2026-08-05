@@ -1,5 +1,20 @@
 # Cloud Load Balancing
 
+## 2026-08-04
+
+### Feature
+
+Regular expression URL rewrites (`regexRewrite`) for route rules in URL maps are
+now available for Application Load Balancers. You can use regular expression
+pattern rewrite actions to rewrite URL paths by substituting or removing URL
+path components before forwarding requests to your backends.
+
+For more information, see [Regular expression URL rewrites for route
+rules](https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-url-rewrite).
+
+This feature is in **Preview.**
+
+---
 ## 2026-07-31
 
 ### Feature

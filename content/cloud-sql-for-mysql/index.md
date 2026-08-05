@@ -1,5 +1,32 @@
 # Cloud SQL for MySQL
 
+## 2026-08-04
+
+### Feature
+
+[DNS automation](https://docs.cloud.google.com/sql/docs/mysql/configure-dns#dns-auto)
+is now generally available ([GA](https://cloud.google.com/products#product-launch-stages))
+on Cloud SQL instances where Private Service Connect is enabled.
+
+You can use DNS automation to provision and manage per-instance DNS records
+automatically. On Enterprise Plus edition instances where DNS automation is
+enabled, you can also enable a global write endpoint DNS that automatically
+resolves to your current primary instance.
+
+### Feature
+
+Cloud SQL for MySQL supports [resource groups](https://dev.mysql.com/doc/refman/8.0/en/resource-groups.html).
+MySQL resource groups let you manage resource allocation for different workloads
+on your Cloud SQL for MySQL instance. By using resource groups, you can prevent
+less important workloads from consuming excessive CPU or memory resources.
+
+To use MySQL resource groups, you must have maintenance version
+[*MYSQL\_VERSION*.R20260320.00\_20](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog)
+or later installed on your instance.
+
+For more information, see [Manage CPU allocation with MySQL resource groups](https://docs.cloud.google.com/sql/docs/mysql/resource-groups).
+
+---
 ## 2026-08-03
 
 ### Change

@@ -1,5 +1,24 @@
 # Looker
 
+## 2026-08-04
+
+### Feature
+
+Now available in preview, enhanced observability metrics — including engagement and projected token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.
+
+### Feature
+
+Now available in preview, Looker admins can review end-user query success rates, rating distributions, and written user feedback in the **Responses & Feedback** tab on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). This data helps administrators improve system performance, support troubleshooting, and refine data agents.
+
+To enable this feature, a Looker admin must turn on the **End User Conversational Analytics (CA) Query Review** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-user-feedback) in the **Preview** section of the **Admin** panel. The **End User Conversational Analytics (CA) Query Review** admin setting is disabled by default.
+
+Specific user query data is visible only for users who have [consented to share their query data](https://docs.cloud.google.com/looker/docs/user-account#conversational-analytics) in their account settings. The **End User Conversational Analytics (CA) Query Review** user setting is disabled by default.
+
+### Announcement
+
+From August 3 through August 7, 2026, the following features will be automatically enabled for Looker (original) and Looker (Google Cloud core) instances running Looker 26.12.
+
+---
 ## 2026-07-30
 
 ### Announcement

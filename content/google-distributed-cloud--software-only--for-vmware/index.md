@@ -1,5 +1,43 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-08-04
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.33.1100-gke.72 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.33.1100-gke.72 runs on Kubernetes v1.33.11-gke.100.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.33.1100-gke.72:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where `gkectl prepare` failed with a
+  permission denied error when attempting to read a private
+  registry CA certificate. The certificate file permissions
+  are now set to `644` so non-root processes can read it.
+* Fixed an issue where retrying a failed upgrade to an
+  Advanced Cluster (such as re-running with an existing
+  bootstrap cluster) could wipe or strip the encryption
+  keys in the generated-key-kms-plugin-config secret,
+  preventing the control plane from decrypting existing
+  Kubernetes secrets in etcd.
+* Fixed an issue where upgrading a user cluster with Anthos Network Gateway
+  (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the
+  upgrade process attempted to modify immutable `spec.selector` fields on
+  existing ANG resources. The upgrade operator now preserves existing label
+  selectors during reconciliation so that V1 to V2 cluster migrations complete
+  successfully.
+
+---
 ## 2026-07-22
 
 ### Announcement

@@ -2,6 +2,10 @@
 
 ## 2026-07-30
 
+### Announcement
+
+The following features are rolling out over the next week.
+
 ### Feature
 
 **Conversational Analytics is generally available**

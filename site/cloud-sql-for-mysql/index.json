@@ -1,6 +1,24 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2026-08-04": [
+      {
+        "kind": "Feature",
+        "content": "[DNS automation](https://docs.cloud.google.com/sql/docs/mysql/configure-dns#dns-auto)\nis now generally available ([GA](https://cloud.google.com/products#product-launch-stages))\non Cloud SQL instances where Private Service Connect is enabled.\n\nYou can use DNS automation to provision and manage per-instance DNS records\nautomatically. On Enterprise Plus edition instances where DNS automation is\nenabled, you can also enable a global write endpoint DNS that automatically\nresolves to your current primary instance.",
+        "summary": {
+          "title": "DNS automation for Cloud SQL now GA",
+          "summary": "DNS automation for Cloud SQL instances with Private Service Connect is now generally available. This feature automates the provisioning and management of per-instance DNS records. For Enterprise Plus edition instances, a global write endpoint DNS can also be enabled for automatic resolution to the current primary instance."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for MySQL supports [resource groups](https://dev.mysql.com/doc/refman/8.0/en/resource-groups.html).\nMySQL resource groups let you manage resource allocation for different workloads\non your Cloud SQL for MySQL instance. By using resource groups, you can prevent\nless important workloads from consuming excessive CPU or memory resources.\n\nTo use MySQL resource groups, you must have maintenance version\n[*MYSQL\\_VERSION*.R20260320.00\\_20](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog)\nor later installed on your instance.\n\nFor more information, see [Manage CPU allocation with MySQL resource groups](https://docs.cloud.google.com/sql/docs/mysql/resource-groups).",
+        "summary": {
+          "title": "MySQL resource groups now supported",
+          "summary": "Cloud SQL for MySQL now supports MySQL resource groups. This feature allows you to manage resource allocation for different workloads on your instance, preventing less important tasks from consuming excessive CPU or memory. Ensure your instance is running on maintenance version MYSQL_VERSION.R20260320.00 or later to use this functionality."
+        }
+      }
+    ],
     "2026-08-03": [
       {
         "kind": "Change",

@@ -1,5 +1,21 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-03
+
+### Feature
+
+
+
+### Process-level sandboxing and auto-updates (Preview)
+
+This release introduces process-level sandboxing and automatic update checks to the CodeMender CLI (Preview):
+
+* **Process-level sandboxing**: To safeguard your workstation against unintended file modifications or unexpected tool side effects, you can now execute all agent-proposed tools (such as compiling code, running tests, or executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled by default to allow seamless dependency resolution, but can be enabled persistently in `config.yaml` or per-command using the new `--sandbox` flag.
+* **Automatic updates**: The CLI now automatically checks for updates in the background (at most once every 24 hours) when running in an interactive terminal. You can also run `cm update` to forcefully check for and apply updates immediately.
+
+For more information, see [Install the CLI and configure](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment).
+
+---
 ## 2026-07-24
 
 ### Feature
@@ -38,6 +54,35 @@ Flash-Lite models:
   + **GenerateContent API**: Requests where the last object in the contents
     array has `"role": "model"` will fail.
 
+### Feature
+
+**CodeMender available in Public Preview**
+
+CodeMender is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages). CodeMender
+is an AI code security agent that can find, verify, and fix deep vulnerabilities
+in your codebase. CodeMender wraps a fine-tuned harness around a large language
+model (LLM), using Google DeepMind-engineered prompts, skills, and orchestration
+logic to turn the model into an agentic system specialized in code security.
+
+Key capabilities include:
+
+* **Find vulnerabilities**: Scan your codebase using an agent-guided LLM with
+  specialized security tools, or import findings from external static analysis
+  tools.
+* **Verify vulnerabilities**: Build code and execute proof-of-concept (PoC)
+  exploits in your local sandbox to confirm exploitability and reduce false
+  positives.
+* **Fix vulnerabilities**: Automatically generate, validate, and apply source
+  code patches tested against local builds and unit tests to prevent
+  regressions.
+* **Manage sessions and diffs**: Track scan and remediation attempts as
+  stateful sessions, inspect unified diffs, and export detailed findings
+  reports in HTML, Markdown, JSON, or SARIF formats.
+
+For more information, see [CodeMender
+overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
 ### Deprecated
 
 **Open model endpoint deprecations**
@@ -62,6 +107,18 @@ deprecations](https://docs.cloud.google.com/gemini-enterprise-agent-platform/mod
 * `qwen3-coder-480b-a35b-instruct-maas`
 * `qwen3-next-80b-a3b-instruct-maas`
 * `qwen3-next-80b-a3b-thinking-maas`
+
+### CodeMender is available in Public Preview
+
+CodeMender is now available in Public Preview for select customers. CodeMender is an AI-powered code security agent that runs on your local workstation to find, verify, and fix security vulnerabilities in your codebase.
+
+Key capabilities in this release include:
+\* **Scan and find**: Scan your codebase for application logic, memory management, and authentication vulnerabilities, or import findings from external scanners.
+\* **Verify**: Build your code and run tests locally to confirm whether findings are exploitable, minimizing false positives.
+\* **Fix**: Auto-generate security patches and verify them locally before applying them to your workspace.
+\* **Safety controls**: Enforces a Human-in-the-Loop workflow with mandatory manual confirmations for all disk writes and command executions by default.
+
+For more information, see the [CodeMender overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/).
 
 ---
 ## 2026-07-20

@@ -1,5 +1,29 @@
 # Compute Engine
 
+## 2026-08-03
+
+### Feature
+
+**Changed**: The minimum provisioned throughput for a Hyperdisk ML volume
+attached to more than 20 instances is 20 MiB/s per instance, reduced from
+100 MiB/s.
+
+For more information, see
+[Share a Hyperdisk ML volume between instances](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-ml#hdml-ro).
+
+---
+## 2026-07-29
+
+### Feature
+
+**Public preview**: you can create a machine image that includes or excludes
+specific non-boot disks attached to a source Compute Engine instance. For more
+information, see [Create a machine image from specific disks](https://docs.cloud.google.com/compute/docs/machine-images/create-machine-images#specific-disk-backup).
+You can also create a new disk by restoring a specific individual disk from a
+machine image without creating a new Compute Engine instance. For more
+information, see [Create a disk from a machine image](https://docs.cloud.google.com/compute/docs/machine-images/create-instance-from-machine-image#create-disk-from-machine-image).
+
+---
 ## 2026-07-28
 
 ### Feature

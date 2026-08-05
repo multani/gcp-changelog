@@ -2,9 +2,36 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-07-24T00:00:00+00:00</updated>
+  <updated>2026-08-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-08-03:feature:0</id>
+    <published>2026-08-03T00:00:00+00:00</published>
+    <updated>2026-08-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are excited to introduce a new feature designed to enhance your experience. This update brings improved functionality and user-centric design to streamline your workflow. Explore the latest enhancements today!</summary>
+    <title>Feature: New Feature Announcement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-08-03:process-level sandboxing and auto-updates (preview):1</id>
+    <published>2026-08-03T00:00:00+00:00</published>
+    <updated>2026-08-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release introduces process-level sandboxing and automatic update checks to the CodeMender CLI (Preview):</p>
+<ul>
+<li><strong>Process-level sandboxing</strong>: To safeguard your workstation against unintended file modifications or unexpected tool side effects, you can now execute all agent-proposed tools (such as compiling code, running tests, or executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled by default to allow seamless dependency resolution, but can be enabled persistently in <code>config.yaml</code> or per-command using the new <code>--sandbox</code> flag.</li>
+<li><strong>Automatic updates</strong>: The CLI now automatically checks for updates in the background (at most once every 24 hours) when running in an interactive terminal. You can also run <code>cm update</code> to forcefully check for and apply updates immediately.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment">Install the CLI and configure</a>.</p>]]></content>
+    <summary>The CodeMender CLI now offers process-level sandboxing to protect your workstation during tool execution and automatically checks for updates in the background. These features are available in preview and can be configured to suit your workflow.</summary>
+    <title>Process-level sandboxing and auto-updates (Preview): CodeMender CLI: Sandboxing and Auto-Updates (Preview)</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -54,7 +81,41 @@ Flash-Lite models:</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:deprecated:1</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:feature:1</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender available in Public Preview</strong></p>
+<p>CodeMender is now available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. CodeMender
+is an AI code security agent that can find, verify, and fix deep vulnerabilities
+in your codebase. CodeMender wraps a fine-tuned harness around a large language
+model (LLM), using Google DeepMind-engineered prompts, skills, and orchestration
+logic to turn the model into an agentic system specialized in code security.</p>
+<p>Key capabilities include:</p>
+<ul>
+<li><strong>Find vulnerabilities</strong>: Scan your codebase using an agent-guided LLM with
+  specialized security tools, or import findings from external static analysis
+  tools.</li>
+<li><strong>Verify vulnerabilities</strong>: Build code and execute proof-of-concept (PoC)
+  exploits in your local sandbox to confirm exploitability and reduce false
+  positives.</li>
+<li><strong>Fix vulnerabilities</strong>: Automatically generate, validate, and apply source
+  code patches tested against local builds and unit tests to prevent
+  regressions.</li>
+<li><strong>Manage sessions and diffs</strong>: Track scan and remediation attempts as
+  stateful sessions, inspect unified diffs, and export detailed findings
+  reports in HTML, Markdown, JSON, or SARIF formats.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender
+overview</a>.</p>]]></content>
+    <summary>CodeMender, an AI agent for code security, is now in public preview. It can find, verify, and fix vulnerabilities in your codebase using advanced AI and security tools. The agent helps reduce false positives and automatically generates patches tested against your code.</summary>
+    <title>Feature: CodeMender now in Public Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:deprecated:2</id>
     <published>2026-07-21T00:00:00+00:00</published>
     <updated>2026-07-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Open model endpoint deprecations</strong></p>
@@ -81,6 +142,23 @@ deprecations</a>.</p>
 </ul>]]></content>
     <summary>Several open model endpoints will be deprecated and retired on October 21, 2026. This change affects various models, and users are advised to consult the documentation for further details and to plan accordingly.</summary>
     <title>Deprecated: Open model endpoints to be retired</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:codemender is available in public preview:3</id>
+    <published>2026-07-21T00:00:00+00:00</published>
+    <updated>2026-07-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>CodeMender is now available in Public Preview for select customers. CodeMender is an AI-powered code security agent that runs on your local workstation to find, verify, and fix security vulnerabilities in your codebase.</p>
+<p>Key capabilities in this release include:
+* <strong>Scan and find</strong>: Scan your codebase for application logic, memory management, and authentication vulnerabilities, or import findings from external scanners.
+* <strong>Verify</strong>: Build your code and run tests locally to confirm whether findings are exploitable, minimizing false positives.
+* <strong>Fix</strong>: Auto-generate security patches and verify them locally before applying them to your workspace.
+* <strong>Safety controls</strong>: Enforces a Human-in-the-Loop workflow with mandatory manual confirmations for all disk writes and command executions by default.</p>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/">CodeMender overview</a>.</p>]]></content>
+    <summary>CodeMender, an AI-powered agent for identifying, verifying, and fixing code security vulnerabilities directly on your local workstation, has entered Public Preview. This initial release allows select customers to leverage its capabilities for enhanced code security.</summary>
+    <title>CodeMender is available in Public Preview: CodeMender Public Preview Now Available</title>
   </entry>
   <entry>
     <author>

@@ -1,6 +1,26 @@
 {
   "name": "Compute Engine",
   "entries": {
+    "2026-08-03": [
+      {
+        "kind": "Feature",
+        "content": "**Changed**: The minimum provisioned throughput for a Hyperdisk ML volume\nattached to more than 20 instances is 20 MiB/s per instance, reduced from\n100 MiB/s.\n\nFor more information, see\n[Share a Hyperdisk ML volume between instances](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-ml#hdml-ro).",
+        "summary": {
+          "title": "Reduced minimum throughput for Hyperdisk ML",
+          "summary": "The minimum provisioned throughput for a Hyperdisk ML volume attached to more than 20 instances has been reduced from 100 MiB/s to 20 MiB/s per instance. This change aims to improve cost-effectiveness and flexibility when sharing Hyperdisk ML volumes across multiple compute instances."
+        }
+      }
+    ],
+    "2026-07-29": [
+      {
+        "kind": "Feature",
+        "content": "**Public preview**: you can create a machine image that includes or excludes\nspecific non-boot disks attached to a source Compute Engine instance. For more\ninformation, see [Create a machine image from specific disks](https://docs.cloud.google.com/compute/docs/machine-images/create-machine-images#specific-disk-backup).\nYou can also create a new disk by restoring a specific individual disk from a\nmachine image without creating a new Compute Engine instance. For more\ninformation, see [Create a disk from a machine image](https://docs.cloud.google.com/compute/docs/machine-images/create-instance-from-machine-image#create-disk-from-machine-image).",
+        "summary": {
+          "title": "Machine Images with Specific Disks",
+          "summary": "You can now create machine images that include or exclude specific non-boot disks from a Compute Engine instance. This feature also allows you to restore individual disks from a machine image without creating a new instance."
+        }
+      }
+    ],
     "2026-07-28": [
       {
         "kind": "Feature",

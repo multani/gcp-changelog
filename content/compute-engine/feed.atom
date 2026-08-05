@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-07-28T00:00:00+00:00</updated>
+  <updated>2026-08-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-08-03:feature:0</id>
+    <published>2026-08-03T00:00:00+00:00</published>
+    <updated>2026-08-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Changed</strong>: The minimum provisioned throughput for a Hyperdisk ML volume
+attached to more than 20 instances is 20 MiB/s per instance, reduced from
+100 MiB/s.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-ml#hdml-ro">Share a Hyperdisk ML volume between instances</a>.</p>]]></content>
+    <summary>The minimum provisioned throughput for a Hyperdisk ML volume attached to more than 20 instances has been reduced from 100 MiB/s to 20 MiB/s per instance. This change aims to improve cost-effectiveness and flexibility when sharing Hyperdisk ML volumes across multiple compute instances.</summary>
+    <title>Feature: Reduced minimum throughput for Hyperdisk ML</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-07-29:feature:0</id>
+    <published>2026-07-29T00:00:00+00:00</published>
+    <updated>2026-07-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Public preview</strong>: you can create a machine image that includes or excludes
+specific non-boot disks attached to a source Compute Engine instance. For more
+information, see <a href="https://docs.cloud.google.com/compute/docs/machine-images/create-machine-images#specific-disk-backup">Create a machine image from specific disks</a>.
+You can also create a new disk by restoring a specific individual disk from a
+machine image without creating a new Compute Engine instance. For more
+information, see <a href="https://docs.cloud.google.com/compute/docs/machine-images/create-instance-from-machine-image#create-disk-from-machine-image">Create a disk from a machine image</a>.</p>]]></content>
+    <summary>You can now create machine images that include or exclude specific non-boot disks from a Compute Engine instance. This feature also allows you to restore individual disks from a machine image without creating a new instance.</summary>
+    <title>Feature: Machine Images with Specific Disks</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

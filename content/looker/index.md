@@ -19,6 +19,22 @@ Specific user query data is visible only for users who have [consented to share 
 From August 3 through August 7, 2026, the following features will be automatically enabled for Looker (original) and Looker (Google Cloud core) instances running Looker 26.12.
 
 ---
+## 2026-08-03
+
+### Feature
+
+A localized processing option for
+[Conversational Analytics](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#eu-ca-compliance)
+is now available for European Union (EU) based customers, enabling data
+processing within the EU jurisdiction by routing traffic through an EU
+multi-regional endpoint.
+
+Note that the EU multi-region endpoint covers data residency strictly within
+EU member states and does not include the `europe-west2` (London, UK) or
+`europe-west6` (Zurich, Switzerland) regions. Support for the `europe-west12` (Turin, Italy)
+region is also unavailable at this time.
+
+---
 ## 2026-07-30
 
 ### Announcement

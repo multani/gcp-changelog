@@ -1,5 +1,17 @@
 # Cloud Monitoring
 
+## 2026-08-05
+
+### Announcement
+
+The Telemetry API for metric ingestion is
+[generally available (GA)](https://docs.cloud.google.com/products#product-launch-stages).
+You can ingest OTLP metrics into Cloud Monitoring by using an
+OpenTelemetry Collector, an OTLP exporter, and the Telemetry API. For more
+information, see
+[OTLP metric ingestion overview](https://docs.cloud.google.com/stackdriver/docs/otlp-metrics/overview).
+
+---
 ## 2026-06-29
 
 ### Feature

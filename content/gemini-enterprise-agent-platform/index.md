@@ -2,10 +2,6 @@
 
 ## 2026-08-03
 
-### Feature
-
-
-
 ### Process-level sandboxing and auto-updates (Preview)
 
 This release introduces process-level sandboxing and automatic update checks to the CodeMender CLI (Preview):

@@ -24,6 +24,28 @@ For more information, see [Access traces and
 spans](https://docs.cloud.google.com/gemini/enterprise/docs/access-traces-and-spans).
 
 ---
+## 2026-08-01
+
+### Feature
+
+**Gemini Enterprise: Pay for what you consume with the Pay-as-you-go edition**
+
+The Gemini Enterprise Pay-as-you-go edition is generally available. With
+this edition, you pay for the feature usage your project consumes without
+pooled user license quotas. To get started, you need an invoiced
+Cloud Billing billing account with a one-seat minimum. You can monitor
+feature usage and set monthly spend limits in the Google Cloud console.
+This feature is rolling out gradually to eligible customers over the next
+few weeks.
+
+For more information, see the following:
+
+* [Compare editions of Gemini Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/editions)
+* [Get a subscription](https://docs.cloud.google.com/gemini/enterprise/docs/licenses#get-subscription)
+* [View feature usage](https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage)
+* [Set a monthly spend limit](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages#set-spend-limit)
+
+---
 ## 2026-07-28
 
 ### Feature

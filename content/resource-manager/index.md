@@ -1,5 +1,25 @@
 # Resource Manager
 
+## 2026-08-04
+
+### Feature
+
+**Preview**: Semantic tags are available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+Semantic tags provide standardized key-value metadata backed by OpenTelemetry
+(OTel) conventions. Tags automatically replicates *Environment* and
+*Criticality* attributes set on App Hub services and workloads as
+read-only system semantic tags (`google:AppHub/environment` and
+`google:AppHub/criticality`) on underlying direct resources. You can also view
+available semantics and their OTel mappings in the Semantic Catalog in the
+Google Cloud console.
+
+For more information, see
+[Tags overview](https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview#semantic_tags)
+and
+[Create and manage tags](https://docs.cloud.google.com/resource-manager/docs/tags/tags-creating-and-managing#view_and_manage_semantic_tags).
+
+---
 ## 2026-04-30
 
 ### Feature

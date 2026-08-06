@@ -4,6 +4,12 @@
 
 ### Feature
 
+Agent Identity is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) for Access
+Transparency.
+
+### Feature
+
 Privileged Access Manager is available in
 [Preview](https://cloud.google.com/products#product-launch-stages).
 

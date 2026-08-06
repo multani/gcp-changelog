@@ -24,6 +24,41 @@ For more information, see [Access traces and
 spans](https://docs.cloud.google.com/gemini/enterprise/docs/access-traces-and-spans).
 
 ---
+## 2026-08-03
+
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Public Preview)**
+
+The following data stores are in Public Preview:
+
+* [Attio](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/attio)
+* [Cohesity](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/cohesity)
+* [Descript](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/descript)
+* [Fiscal.ai](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/fiscal-ai)
+* [Gamma](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gamma)
+* [iManage platform](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/imanage-platform)
+* [Moody's](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/moody_s)
+* [NetDocuments](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/netdocuments)
+* [Nexla](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/nexla-mcp-studio)
+* [Oracle NetSuite](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/oracle_netsuite)
+* [Pylon](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/pylon)
+* [S&P Global - Deterministic Retrieval](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/s_p_global)
+* [Sanity](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/sanity)
+* [Supabase](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/supabase)
+* [Supermetrics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/supermetrics)
+* [SurveyMonkey](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/surveymonkey)
+* [Wix](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/wix)
+
+Additionally, support for a new action is available in Public Preview for the
+following data store:
+
+* [Freshservice](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/freshservice): Create ticket notes.
+
+For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+---
 ## 2026-08-01
 
 ### Feature

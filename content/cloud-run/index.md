@@ -4,7 +4,7 @@
 
 ### Feature
 
-Cloud Run supports sandboxes for all resources, including [jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/sandboxes) and [worker pools](https://docs.cloud.google.com/run/docs/configuring/workerpools/sandboxes) ([Preview](https://cloud.google.com/products#product-launch-stages)).
+Cloud Run supports [sandboxes](https://docs.cloud.google.com/run/docs/code-execution) for all resources, including [jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/sandboxes) and [worker pools](https://docs.cloud.google.com/run/docs/configuring/workerpools/sandboxes) ([Preview](https://cloud.google.com/products#product-launch-stages)).
 
 ---
 ## 2026-07-27

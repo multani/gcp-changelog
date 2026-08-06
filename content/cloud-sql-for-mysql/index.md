@@ -1,5 +1,30 @@
 # Cloud SQL for MySQL
 
+## 2026-08-05
+
+### Feature
+
+Performance capture for Cloud SQL for MySQL is now generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+Performance capture lets you take a point-in-time snapshot of your database and
+operating system metrics automatically and route them to Cloud Logging for
+root-cause analysis.
+
+With the GA release, you can configure custom thresholds that
+[end long-running transactions automatically](https://docs.cloud.google.com/sql/docs/mysql/configure-performance-capture#end-transactions)
+before they slow down your database. In addition,
+the GA release includes six additional performance capture triggers:
+
+* High CPU utilization
+* High memory usage
+* High temporary files usage
+* History list length
+* Semaphore waits
+* Transaction lock waits
+
+For more information, see [Cloud SQL performance capture overview](https://docs.cloud.google.com/sql/docs/mysql/performance-capture).
+
+---
 ## 2026-08-04
 
 ### Feature

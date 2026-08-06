@@ -1,5 +1,129 @@
 # Container Optimized OS
 
+## 2026-07-30
+
+### Change
+
+
+
+### cos-121-18867-528-36
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/400af8cd3f9a397a9d99e1ee065650e6f0d9a8ec ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.528.36/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Added opt-in support for the guest
+agent extensions manager, MWLID, and Telemetry extensions.
+
+### Security
+
+Fixed CVE-2026-29111 in sys-apps/systemd
+
+### Security
+
+Fixed CVE-2026-35177 in app-editors/vim and app-editors/vim-core.
+
+### Security
+
+Fixed CVE-2026-3644 in dev-lang/python
+
+### Security
+
+Fixed CVE-2026-40355 and CVE-2026-40356 in app-crypt/mit-krb5.
+
+### Security
+
+Fixed CVE-2026-53381 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53385 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53388 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53391 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53397 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-53398 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-59995, CVE-2026-59996, CVE-2026-59997, CVE-2026-59999, CVE-2026-60000, CVE-2026-60001, and
+CVE-2026-60002 in openssh.
+
+### Security
+
+Fixed CVE-2026-6019 in dev-lang/python
+
+### Security
+
+Fixed CVE-2026-63794 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63795 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63800 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63802 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63807 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63809 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63823 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63824 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63827 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63828 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-63830 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64244 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64247 in the Linux kernel.
+
+### Security
+
+Upgraded net-libs/nghttp2 to 1.69.0 and fixed CVE-2026-58055.
+
+---
 ## 2026-07-28
 
 ### Change

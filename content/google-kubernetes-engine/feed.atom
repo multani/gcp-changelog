@@ -2,9 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-08-03T00:00:00+00:00</updated>
+  <updated>2026-08-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-08-05:feature:0</id>
+    <published>2026-08-05T00:00:00+00:00</published>
+    <updated>2026-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can generate optimized GKE configurations that can improve performance for
+specific workloads, such as Redis and MySQL, by using the gcloud CLI. The
+configurations are ConfigMaps and ComputeClasses that apply performance
+recommendations to the workloads and the nodes. These optimizations are
+available in Preview for GKE version 1.31.1-gke.12000 or later. You can measure
+the performance improvements by using open source benchmarks. For more
+information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-optimization">Optimize for workloads on GKE</a>.</p>]]></content>
+    <summary>Generate optimized GKE configurations for workloads like Redis and MySQL using the gcloud CLI. These optimizations, available in Preview for GKE version 1.31.1-gke.12000+, can improve performance and are applied via ConfigMaps and ComputeClasses.</summary>
+    <title>Feature: GKE workload optimization</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-08-05:feature:1</id>
+    <published>2026-08-05T00:00:00+00:00</published>
+    <updated>2026-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE version 1.36.0-gke.3302001 and later, you can run Arm workloads on the
+Autopilot container-optimized compute platform by using the general-purpose
+<code>autopilot-arm</code> and <code>autopilot-arm-spot</code> ComputeClasses. You can select these
+ComputeClasses in Autopilot or Standard clusters. GKE runs the workloads that
+select these ComputeClasses in Autopilot mode. This compute platform improves
+Pod scheduling latency, especially during autoscaling operations. For more
+information, see the following documents:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview#deploy-workloads">Deploy workloads in Autopilot
+  mode</a></li>
+<li><a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/autopilot-arm-workloads">Autopilot Arm
+  workloads</a></li>
+</ul>]]></content>
+    <summary>You can now run Arm workloads on the Autopilot compute platform using new ComputeClasses. This feature enhances Pod scheduling latency, particularly during autoscaling events.</summary>
+    <title>Feature: Run Arm workloads on Autopilot</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

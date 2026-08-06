@@ -2,9 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-08-04T00:00:00+00:00</updated>
+  <updated>2026-08-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-08-05:feature:0</id>
+    <published>2026-08-05T00:00:00+00:00</published>
+    <updated>2026-08-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Performance capture for Cloud SQL for MySQL is now generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).
+Performance capture lets you take a point-in-time snapshot of your database and
+operating system metrics automatically and route them to Cloud Logging for
+root-cause analysis.</p>
+<p>With the GA release, you can configure custom thresholds that
+<a href="https://docs.cloud.google.com/sql/docs/mysql/configure-performance-capture#end-transactions">end long-running transactions automatically</a>
+before they slow down your database. In addition,
+the GA release includes six additional performance capture triggers:</p>
+<ul>
+<li>High CPU utilization</li>
+<li>High memory usage</li>
+<li>High temporary files usage</li>
+<li>History list length</li>
+<li>Semaphore waits</li>
+<li>Transaction lock waits</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/performance-capture">Cloud SQL performance capture overview</a>.</p>]]></content>
+    <summary>Performance capture for Cloud SQL for MySQL is now generally available. This feature automatically snapshots database and OS metrics for root-cause analysis and allows for automatic termination of long-running transactions. New triggers include high CPU, memory, temporary file usage, and various wait conditions.</summary>
+    <title>Feature: Cloud SQL performance capture now available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -110,18 +138,6 @@ replica</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-07-20:feature:0</id>
-    <published>2026-07-20T00:00:00+00:00</published>
-    <updated>2026-07-20T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Cloud SQL for MySQL now supports authentication via Secret Manager when executing SQL statements using the Data API (<code>executeSql</code>). You can store your database password in a regional secret in Secret Manager and pass the secret version resource name in your API request.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/executesql-instance#configure-db-user">Execute SQL statements on a Cloud SQL instance</a>.</p>]]></content>
-    <summary>Cloud SQL for MySQL now supports authentication using Secret Manager for the Data API. You can store your database password in Secret Manager and reference it in your API requests to execute SQL statements securely.</summary>
-    <title>Feature: Secret Manager authentication for Cloud SQL Data API</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-07-16:change:0</id>
     <published>2026-07-16T00:00:00+00:00</published>
     <updated>2026-07-16T00:00:00+00:00</updated>
@@ -152,6 +168,18 @@ installed on your instance.</p>
 This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
     <summary>Cloud SQL for MySQL now supports parameterized secure views, allowing for flexible data access management through session variables. This feature enables the creation of a single, adaptable view that can serve multiple queries without needing multiple static definitions, simplifying data security and access control.</summary>
     <title>Feature: Secure Views in Cloud SQL for MySQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-07-20:feature:0</id>
+    <published>2026-07-20T00:00:00+00:00</published>
+    <updated>2026-07-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for MySQL now supports authentication via Secret Manager when executing SQL statements using the Data API (<code>executeSql</code>). You can store your database password in a regional secret in Secret Manager and pass the secret version resource name in your API request.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/executesql-instance#configure-db-user">Execute SQL statements on a Cloud SQL instance</a>.</p>]]></content>
+    <summary>Cloud SQL for MySQL now supports authentication using Secret Manager for the Data API. You can store your database password in Secret Manager and reference it in your API requests to execute SQL statements securely.</summary>
+    <title>Feature: Secret Manager authentication for Cloud SQL Data API</title>
   </entry>
   <entry>
     <author>

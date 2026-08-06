@@ -1,6 +1,24 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-08-05": [
+      {
+        "kind": "Feature",
+        "content": "You can generate optimized GKE configurations that can improve performance for\nspecific workloads, such as Redis and MySQL, by using the gcloud CLI. The\nconfigurations are ConfigMaps and ComputeClasses that apply performance\nrecommendations to the workloads and the nodes. These optimizations are\navailable in Preview for GKE version 1.31.1-gke.12000 or later. You can measure\nthe performance improvements by using open source benchmarks. For more\ninformation, see\n[Optimize for workloads on GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-optimization).",
+        "summary": {
+          "title": "GKE workload optimization",
+          "summary": "Generate optimized GKE configurations for workloads like Redis and MySQL using the gcloud CLI. These optimizations, available in Preview for GKE version 1.31.1-gke.12000+, can improve performance and are applied via ConfigMaps and ComputeClasses."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "In GKE version 1.36.0-gke.3302001 and later, you can run Arm workloads on the\nAutopilot container-optimized compute platform by using the general-purpose\n`autopilot-arm` and `autopilot-arm-spot` ComputeClasses. You can select these\nComputeClasses in Autopilot or Standard clusters. GKE runs the workloads that\nselect these ComputeClasses in Autopilot mode. This compute platform improves\nPod scheduling latency, especially during autoscaling operations. For more\ninformation, see the following documents:\n\n* [Deploy workloads in Autopilot\n  mode](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview#deploy-workloads)\n* [Autopilot Arm\n  workloads](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/autopilot-arm-workloads)",
+        "summary": {
+          "title": "Run Arm workloads on Autopilot",
+          "summary": "You can now run Arm workloads on the Autopilot compute platform using new ComputeClasses. This feature enhances Pod scheduling latency, particularly during autoscaling events."
+        }
+      }
+    ],
     "2026-08-03": [
       {
         "kind": "Feature",

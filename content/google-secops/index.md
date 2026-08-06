@@ -1,5 +1,12 @@
 # Google SecOps
 
+## 2026-08-05
+
+### Deprecated
+
+The `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds are [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the `GTI_IOC` feed. After March 18, 2027, we will be removing the `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds. For more information on how to migrate, see [Migrate Mandiant legacy feeds to GTI](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).
+
+---
 ## 2026-08-03
 
 ### Feature

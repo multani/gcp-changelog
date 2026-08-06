@@ -1,5 +1,15 @@
 # VPC Service Controls
 
+## 2026-08-04
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages)
+support for the following integration:
+
+* [Gemini Cloud Assist](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_cloud_assist)
+
+---
 ## 2026-08-03
 
 ### Feature

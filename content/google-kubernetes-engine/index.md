@@ -1,5 +1,34 @@
 # Google Kubernetes Engine
 
+## 2026-08-05
+
+### Feature
+
+You can generate optimized GKE configurations that can improve performance for
+specific workloads, such as Redis and MySQL, by using the gcloud CLI. The
+configurations are ConfigMaps and ComputeClasses that apply performance
+recommendations to the workloads and the nodes. These optimizations are
+available in Preview for GKE version 1.31.1-gke.12000 or later. You can measure
+the performance improvements by using open source benchmarks. For more
+information, see
+[Optimize for workloads on GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/workload-optimization).
+
+### Feature
+
+In GKE version 1.36.0-gke.3302001 and later, you can run Arm workloads on the
+Autopilot container-optimized compute platform by using the general-purpose
+`autopilot-arm` and `autopilot-arm-spot` ComputeClasses. You can select these
+ComputeClasses in Autopilot or Standard clusters. GKE runs the workloads that
+select these ComputeClasses in Autopilot mode. This compute platform improves
+Pod scheduling latency, especially during autoscaling operations. For more
+information, see the following documents:
+
+* [Deploy workloads in Autopilot
+  mode](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview#deploy-workloads)
+* [Autopilot Arm
+  workloads](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/autopilot-arm-workloads)
+
+---
 ## 2026-08-03
 
 ### Feature

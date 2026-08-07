@@ -1,5 +1,21 @@
 # Cortex Framework
 
+## 2026-08-07
+
+### Announcement
+
+
+
+### Release 7.0.1
+
+
+
+### Fixed
+
+* Resolved an issue where running the [`uv run cortex-build`](https://docs.cloud.google.com/cortex/docs/uv-run-cortex-build) command in Windows PowerShell or Windows Command Prompt resulted in a `Could not auto-import local builder` warning and an `Invalid builder type NoneType for category ...` error.
+* Improved Dataform quota management in [`uv run cortex-deploy`](https://docs.cloud.google.com/cortex/docs/uv-run-cortex-deploy) script.
+
+---
 ## 2026-07-30
 
 ### Release 7.0.0-GA (General Availability)
@@ -29,9 +45,10 @@ Expanded data product content and integrations:
 * **[New solution samples features](https://docs.cloud.google.com/cortex/docs/solution-samples/overview)**: Consumption data product samples for SAP ERP and SAP BDC can now be easily deployed on top of Cortex Framework managed data products.
 * **[New v6 compatibility for SAP reporting](https://docs.cloud.google.com/cortex/docs/v6-compatibility)**: Provides an option to use Cortex Framework version 6 delivered SAP BigQuery data models within the version 7 architecture to support customers looking to migrate while continuing to use v6 delivered Looker reports.
 
-Supportability:
+Supportability and operations:
 
 * **[New observability features](https://docs.cloud.google.com/cortex/docs/observability)**: Enhanced error reporting and pipeline monitoring.
+* **[New environment management and operations features](https://docs.cloud.google.com/cortex/docs/deployment)**: Gain deeper control over deployments with the option to provide compilation overrides that integrate cleanly with Dataform release configurations.
 
 ### Change
 

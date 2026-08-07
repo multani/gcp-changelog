@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-08-06
+
+### Announcement
+
+**Gemini Enterprise: Postponed removal of Gemini 3.5 Flash in the Global
+region**
+
+We have postponed the removal of Gemini 3.5 Flash from the `global` region
+in the Gemini Enterprise app. A revised removal schedule will be provided
+when available.
+
+**Note:** This is a correction to the [July 21, 2026 release
+note](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#July_21_2026).
+
+---
 ## 2026-08-04
 
 ### Feature
@@ -187,6 +202,9 @@ For more information, see:
 
 Gemini 3.5 Flash will be removed as a model from the `global` region in the
 Gemini Enterprise app on August 4, 2026.
+
+**Note:** There is a correction to this release note. See [August 05,
+2026](#August_05_2026).
 
 For more information, see [Manage features on the web
 app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).

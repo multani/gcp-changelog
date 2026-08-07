@@ -1,5 +1,14 @@
 # NetApp Volumes
 
+## 2026-08-06
+
+### Feature
+
+The thick clone (thin clone split) feature is generally available (GA) for the
+Flex Unified Default-mode service level. For more information, see
+[Manage volume clones](https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/volumes/manage-volume-clones).
+
+---
 ## 2026-07-02
 
 ### Feature

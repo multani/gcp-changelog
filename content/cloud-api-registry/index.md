@@ -1,5 +1,16 @@
 # Cloud API Registry
 
+## 2026-07-30
+
+### Deprecated
+
+Support for retrieving, listing, enabling, and disabling Model Context Protocol
+(MCP) servers and tools using the Cloud API Registry API is shut
+down. For supported services, [MCP endpoints
+are available once you enable the API](https://docs.cloud.google.com/mcp/manage-mcp-servers). For more information, see
+[Feature deprecations](https://docs.cloud.google.com/api-registry/docs/deprecations).
+
+---
 ## 2026-07-24
 
 ### Deprecated

@@ -1,5 +1,23 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-04
+
+### Feature
+
+
+
+### Process-level sandboxing and auto-updates (Preview)
+
+This release introduces process-level sandboxing, automatic update checks, and other improvements to the CodeMender CLI (Preview):
+
+* **Process-level sandboxing**: To safeguard your workstation against unintended file modifications or unexpected tool side effects, you can now execute all agent-proposed tools (such as compiling code, running tests, or executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled by default to allow seamless dependency resolution, but can be enabled persistently in `config.yaml` or per-command using the new `--sandbox` flag.
+* **Automatic updates**: The CLI now automatically checks for updates in the background (at most once every 24 hours) when running in an interactive terminal. You can also run `cm update` to forcefully check for and apply updates immediately.
+* **Token usage statistics**: You can now use the `cm stats` subcommand to view a summary of token usage (input, output, cached, thought, tool-use) for your local sessions.
+* **Improved Windows support**: The standalone CLI now has improved support for running on Windows.
+
+For more information, see [Install the CLI and configure](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment).
+
+---
 ## 2026-08-03
 
 ### Process-level sandboxing and auto-updates (Preview)

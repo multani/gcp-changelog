@@ -1,5 +1,20 @@
 # Cloud Key Management Service
 
+## 2026-08-06
+
+### Feature
+
+**Preview:** Cloud KMS supports quantum-safe key import. You can use the
+following quantum-safe import methods:
+
+* `HPKE_KEM_XWING_HKDF_SHA256_AES_256_GCM`
+* `HPKE_KEM_ML_KEM_768_HKDF_SHA256_AES_256_GCM`
+* `HPKE_KEM_ML_KEM_1024_HKDF_SHA256_AES_256_GCM`
+
+For more information about quantum-safe key import, see [Quantum-safe key
+import](https://docs.cloud.google.com/kms/docs/quantum-safe-key-import).
+
+---
 ## 2026-07-29
 
 ### Feature

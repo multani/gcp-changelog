@@ -1,15 +1,49 @@
 {
   "name": "Managed Service for Apache Airflow",
   "entries": {
-    "2026-07-29": [
+    "2026-08-05": [
       {
         "kind": "Announcement",
-        "content": "A new Managed Service for Apache Airflow release has started on\n**July 29, 2026**. Get ready for upcoming changes and features as we roll out\nthe new release to all regions. This release is in progress at the moment.\nListed changes and features might not be available in some regions yet.",
+        "content": "A new Managed Service for Apache Airflow release has started on **August 05, 2026**. Get ready\nfor upcoming changes and features as we roll out the new release to all regions.\nThis release is in progress at the moment. Listed changes and features might\nnot be available in some regions yet.",
         "summary": {
-          "title": "New Airflow Release Rolling Out",
-          "summary": "A new Managed Service for Apache Airflow release has begun rolling out as of July 29, 2026. This release introduces upcoming changes and features, which will be available across all regions. Please note that not all features may be immediately accessible in every region as the rollout is currently in progress."
+          "title": "New Airflow Service Release",
+          "summary": "A new Managed Service for Apache Airflow release is now live, bringing upcoming changes and features across all regions. This update is currently in progress, with features gradually rolling out to every location."
         }
       },
+      {
+        "kind": "Change",
+        "content": "*(Airflow 3.2.2, 3.1.8, and 2.11.1)*\nThe `apache-airflow-providers-google` package was upgraded to version 22.2.2.\nFor more information about changes, see the\n[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).",
+        "summary": {
+          "title": "Airflow Google Provider Updated",
+          "summary": "The apache-airflow-providers-google package has been updated to version 22.2.2. This update includes changes to the Airflow Google provider. For a detailed list of modifications, please refer to the official changelog."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.2.2-build.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-1)\n* [composer-3-airflow-3.1.8-build.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-8-build-3)\n* [composer-3-airflow-2.11.1-build.14](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-14) (default)\n* [composer-3-airflow-2.10.5-build.47](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-47)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "New Airflow builds are now available for Managed Airflow (Gen 3). This update includes several new versions for improved performance and features. The default version has also been updated."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.9-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-9-airflow-2-11-1) (default)\n* [composer-2.17.9-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-9-airflow-2-10-5)",
+        "summary": {
+          "title": "New Managed Airflow Images Available",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including the latest default version composer-2.17.9-airflow-2.11.1. These updates provide access to the newest Airflow functionalities and improvements."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The following Managed Airflow versions and builds have reached their\n[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):\ncomposer-3-airflow-2.10.5-build.11, composer-3-airflow-2.9.3-build.31, composer-2.13.9-airflow-2.9.3, and composer-2.13.9-airflow-2.10.5.",
+        "summary": {
+          "title": "Managed Airflow versions deprecated",
+          "summary": "Several Managed Airflow versions have reached their end of support. Please migrate to a supported version to ensure continued service."
+        }
+      }
+    ],
+    "2026-07-29": [
       {
         "kind": "Feature",
         "content": "**Airflow 3.2.2** is available in Managed Airflow (Gen 3).",

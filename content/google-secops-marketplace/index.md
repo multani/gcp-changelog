@@ -1,5 +1,73 @@
 # Google SecOps Marketplace
 
+## 2026-08-05
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 21.0
+
+* Updated logic for parsing email headers and S/MIME digitally signed emails in
+  the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**ServiceNow**: Version 70.0
+
+* Fixed verification logic when updating reference fields in the following
+  action:
+
+  + **Update Incident**
+
+### Change
+
+**Microsoft Graph Mail**: Version 44.0
+
+* Updated logic for parsing email headers and S/MIME digitally signed emails in
+  the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Microsoft 365 Defender**: Version 29.0
+
+* Updated Google SecOps event structure, added support for incident tags and
+  assignee filtering, updated ontology mapping, and optimized evidence handling
+  with limits on maximum evidence items per alert in the following connector:
+
+  + **Microsoft 365 Defender - Incidents Connector**
+
+### Change
+
+**Jira**: Version 61.0
+
+* Added support for customizable status-to-closure mapping, Case-level job
+  scope, custom field variables in Closed Reason Mapping, context value alignment
+  to JIRA\_ISSUE\_KEY, and automatic fallback retry mechanism in the following job:
+
+  + **Sync Closure Job**
+
+### Change
+
+**Google Chronicle**: Version 92.0
+
+* Updated the action to use new search API in the following action:
+
+  + **Is Value in Data Table**
+
+### Change
+
+**CrowdStrike Falcon**: Version 80.0
+
+* Implemented 500-device safety limit per entity search, updated device sorting
+  by last\_seen.desc, and added batch request chunking for device details, login
+  history, and online states in the following action:
+
+  + **Get Host Information**
+
+---
 ## 2026-07-30
 
 ### Change
@@ -17,7 +85,8 @@
 
 **Active Directory**: Version 44.0
 
-* Added optional `Connection Timeout` and `Receive Timeout` parameters to configure network connectivity limits in the following action:
+* Added optional `Connection Timeout` and `Receive Timeout` parameters to
+  configure network connectivity limits in the following action:
 
   + **Enrich Entities**
 
@@ -33,10 +102,12 @@
 
 **Google Threat Intelligence**: Version 20.0
 
-* Added support for `CHILDHASH` and `PARENTHASH` entity types in the following action:
+* Added support for `CHILDHASH` and `PARENTHASH` entity types in the following
+  action:
 
   + **Enrich Entities**
-* Added `Entity Type Filter` parameter to allow configuring entity types for notifications in the following connector:
+* Added `Entity Type Filter` parameter to allow configuring entity types for
+  notifications in the following connector:
 
   + **Google Threat Intelligence - Livehunt Connector**
 

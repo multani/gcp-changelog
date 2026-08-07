@@ -2,9 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-08-04T00:00:00+00:00</updated>
+  <updated>2026-08-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-08-06:feature:0</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for <code>/readonly</code>, <code>/instance_manage</code>, and <code>/query_execution</code>. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#available-toolsets">Available toolsets</a>.</p>]]></content>
+    <summary>The Cloud SQL remote MCP server now supports specialized endpoint URLs for /readonly, /instance_manage, and /query_execution. These specialized URLs allow you to restrict the set of exposed MCP tools, enhancing security and workflow management.</summary>
+    <title>Feature: Cloud SQL MCP server adds specialized endpoint URLs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-08-06:feature:1</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When executing SQL queries using the <code>execute_sql</code> or <code>execute_sql_readonly</code> tool, the Cloud SQL remote MCP server now automatically appends SqlCommenter tags (<code>mcp.tool</code>, <code>mcp.server</code>, <code>user.identity</code>, <code>mcp.client</code>) to SQL statements for enhanced database observability.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#sqlcommenter">SqlCommenter tags</a>.</p>]]></content>
+    <summary>SQL queries executed via the `execute_sql` or `execute_sql_readonly` tool now include automatic SqlCommenter tags. This enhancement improves database observability by adding tags like `mcp.tool`, `mcp.server`, `user.identity`, and `mcp.client` to your SQL statements. This provides deeper insights into query execution and performance.</summary>
+    <title>Feature: Enhanced SQL Query Observability</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-08-06:feature:2</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the <code>create_instance</code> tool in the Cloud SQL remote MCP server to provision free trial instances for testing and development by setting the <code>free_trial</code> parameter to <code>true</code>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#create-free-trial">Create a free trial instance</a>.</p>]]></content>
+    <summary>You can now provision free trial instances for testing and development using the `create_instance` tool by setting the `free_trial` parameter to `true`. This feature allows for easier experimentation with Cloud SQL instances without incurring costs.</summary>
+    <title>Feature: Provision free trial instances</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

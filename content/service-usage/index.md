@@ -1,5 +1,16 @@
 # Service Usage
 
+## 2026-07-30
+
+### Deprecated
+
+Support for managing Model Context Protocol (MCP) endpoint enablement using the
+Service Usage v2beta API is shut down.
+
+For more information, see
+[Feature deprecations](https://docs.cloud.google.com/service-usage/docs/deprecations).
+
+---
 ## 2026-07-24
 
 ### Deprecated

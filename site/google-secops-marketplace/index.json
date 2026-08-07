@@ -1,6 +1,64 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-08-05": [
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail Delegated**: Version 21.0\n\n* Updated logic for parsing email headers and S/MIME digitally signed emails in\n  the following connector:\n\n  + **Microsoft Graph Mail Delegated Connector**",
+        "summary": {
+          "title": "Mail Delegated connector update",
+          "summary": "The Microsoft Graph Mail Delegated connector has been updated. This version includes improved logic for parsing email headers and S/MIME digitally signed emails."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**ServiceNow**: Version 70.0\n\n* Fixed verification logic when updating reference fields in the following\n  action:\n\n  + **Update Incident**",
+        "summary": {
+          "title": "ServiceNow Update Incident Reference Fields",
+          "summary": "Version 70.0 of ServiceNow includes a fix for the verification logic when updating reference fields in the Update Incident action. This ensures more reliable data handling within incidents."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail**: Version 44.0\n\n* Updated logic for parsing email headers and S/MIME digitally signed emails in\n  the following connector:\n\n  + **Microsoft Graph Mail Connector**",
+        "summary": {
+          "title": "Microsoft Graph Mail v44.0 Update",
+          "summary": "Version 44.0 of the Microsoft Graph Mail connector has been updated. This update includes enhanced logic for parsing email headers and S/MIME digitally signed emails."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft 365 Defender**: Version 29.0\n\n* Updated Google SecOps event structure, added support for incident tags and\n  assignee filtering, updated ontology mapping, and optimized evidence handling\n  with limits on maximum evidence items per alert in the following connector:\n\n  + **Microsoft 365 Defender - Incidents Connector**",
+        "summary": {
+          "title": "Microsoft 365 Defender Update",
+          "summary": "Version 29.0 of Microsoft 365 Defender brings enhancements to the Incidents Connector, including support for incident tags, assignee filtering, and optimized evidence handling. This update also refines the event structure and ontology mapping for improved security operations."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Jira**: Version 61.0\n\n* Added support for customizable status-to-closure mapping, Case-level job\n  scope, custom field variables in Closed Reason Mapping, context value alignment\n  to JIRA\\_ISSUE\\_KEY, and automatic fallback retry mechanism in the following job:\n\n  + **Sync Closure Job**",
+        "summary": {
+          "title": "Updated closure mapping and job features",
+          "summary": "Version 61.0 introduces enhanced closure mapping with customizable status-to-closure options and custom field variables. It also adds case-level job scope and an automatic fallback retry mechanism to the Sync Closure Job."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Chronicle**: Version 92.0\n\n* Updated the action to use new search API in the following action:\n\n  + **Is Value in Data Table**",
+        "summary": {
+          "title": "Updated Chronicle action",
+          "summary": "The 'Is Value in Data Table' action in Google Chronicle has been updated to utilize the new search API for improved performance and functionality."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**CrowdStrike Falcon**: Version 80.0\n\n* Implemented 500-device safety limit per entity search, updated device sorting\n  by last\\_seen.desc, and added batch request chunking for device details, login\n  history, and online states in the following action:\n\n  + **Get Host Information**",
+        "summary": {
+          "title": "CrowdStrike Falcon Version 80.0 Released",
+          "summary": "CrowdStrike Falcon version 80.0 introduces a 500-device safety limit for entity searches, updated device sorting by last seen time, and batch request chunking for enhanced data retrieval. These improvements apply to actions such as Get Host Information, device details, login history, and online states."
+        }
+      }
+    ],
     "2026-07-30": [
       {
         "kind": "Change",
@@ -14,10 +72,10 @@
     "2026-07-29": [
       {
         "kind": "Change",
-        "content": "**Active Directory**: Version 44.0\n\n* Added optional `Connection Timeout` and `Receive Timeout` parameters to configure network connectivity limits in the following action:\n\n  + **Enrich Entities**",
+        "content": "**Active Directory**: Version 44.0\n\n* Added optional `Connection Timeout` and `Receive Timeout` parameters to\n  configure network connectivity limits in the following action:\n\n  + **Enrich Entities**",
         "summary": {
-          "title": "Active Directory: New Network Timeout Options",
-          "summary": "The Active Directory integration now supports optional Connection Timeout and Receive Timeout parameters. These new settings allow you to configure network connectivity limits for the Enrich Entities action."
+          "title": "Active Directory: New Timeout Options",
+          "summary": "Version 44.0 of Active Directory introduces optional 'Connection Timeout' and 'Receive Timeout' parameters. These settings allow for configurable network connectivity limits within the 'Enrich Entities' action, providing greater control over network operations."
         }
       },
       {
@@ -30,10 +88,10 @@
       },
       {
         "kind": "Change",
-        "content": "**Google Threat Intelligence**: Version 20.0\n\n* Added support for `CHILDHASH` and `PARENTHASH` entity types in the following action:\n\n  + **Enrich Entities**\n* Added `Entity Type Filter` parameter to allow configuring entity types for notifications in the following connector:\n\n  + **Google Threat Intelligence - Livehunt Connector**",
+        "content": "**Google Threat Intelligence**: Version 20.0\n\n* Added support for `CHILDHASH` and `PARENTHASH` entity types in the following\n  action:\n\n  + **Enrich Entities**\n* Added `Entity Type Filter` parameter to allow configuring entity types for\n  notifications in the following connector:\n\n  + **Google Threat Intelligence - Livehunt Connector**",
         "summary": {
-          "title": "New Google Threat Intelligence Features",
-          "summary": "Google Threat Intelligence version 20.0 introduces support for CHILDHASH and PARENTHASH entity types in Enrich Entities. Additionally, the Livehunt Connector now includes an Entity Type Filter for notification configuration."
+          "title": "New features in Google Threat Intelligence v20.0",
+          "summary": "Google Threat Intelligence version 20.0 introduces support for CHILDHASH and PARENTHASH entity types in the Enrich Entities action. Additionally, the Livehunt Connector now includes an Entity Type Filter parameter for configuring notification entity types."
         }
       },
       {

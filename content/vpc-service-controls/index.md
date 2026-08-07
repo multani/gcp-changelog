@@ -1,5 +1,21 @@
 # VPC Service Controls
 
+## 2026-08-06
+
+### Feature
+
+**VPC Service Controls feature:** The VPC Service Controls service patterns
+feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+You can use service patterns to explicitly configure which Google APIs (both
+supported and unsupported) can be accessed from VPC networks
+within a service perimeter when using the private VIP (`private.googleapis.com`)
+or a Private Service Connect endpoint with the `all-apis` bundle.
+
+For more information, see
+[VPC Service Controls service patterns](https://docs.cloud.google.com/vpc-service-controls/docs/vpc-accessible-services#service-patterns).
+
+---
 ## 2026-08-04
 
 ### Feature

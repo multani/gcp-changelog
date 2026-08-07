@@ -1,6 +1,32 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-08-06": [
+      {
+        "kind": "Feature",
+        "content": "The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for `/readonly`, `/instance_manage`, and `/query_execution`. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.\n\nFor more information, see [Available toolsets](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#available-toolsets).",
+        "summary": {
+          "title": "Cloud SQL MCP server adds specialized endpoint URLs",
+          "summary": "The Cloud SQL remote MCP server now supports specialized endpoint URLs for /readonly, /instance_manage, and /query_execution. These specialized URLs allow you to restrict the set of exposed MCP tools, enhancing security and workflow management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "When executing SQL queries using the `execute_sql` or `execute_sql_readonly` tool, the Cloud SQL remote MCP server now automatically appends SqlCommenter tags (`mcp.tool`, `mcp.server`, `user.identity`, `mcp.client`) to SQL statements for enhanced database observability.\n\nFor more information, see [SqlCommenter tags](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#sqlcommenter).",
+        "summary": {
+          "title": "Enhanced SQL Query Observability",
+          "summary": "SQL queries executed via the `execute_sql` or `execute_sql_readonly` tool now include automatic SqlCommenter tags. This enhancement improves database observability by adding tags like `mcp.tool`, `mcp.server`, `user.identity`, and `mcp.client` to your SQL statements. This provides deeper insights into query execution and performance."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the `create_instance` tool in the Cloud SQL remote MCP server to provision free trial instances for testing and development by setting the `free_trial` parameter to `true`.\n\nFor more information, see [Create a free trial instance](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#create-free-trial).",
+        "summary": {
+          "title": "Provision free trial instances",
+          "summary": "You can now provision free trial instances for testing and development using the `create_instance` tool by setting the `free_trial` parameter to `true`. This feature allows for easier experimentation with Cloud SQL instances without incurring costs."
+        }
+      }
+    ],
     "2026-08-04": [
       {
         "kind": "Feature",

@@ -1,48 +1,6 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
-    "2026-08-03": [
-      {
-        "kind": "Announcement",
-        "content": "**Advanced reporting dashboards prerelease notes**\n\nHere are the pre-release notes for updates to the advanced reporting dashboards.\nWhen we release these updates, we expect the new capabilities to be as shown\nhere.",
-        "summary": {
-          "title": "New reporting dashboards available",
-          "summary": "Pre-release notes are now available for updates to the advanced reporting dashboards. These updates include new capabilities that are detailed in the release notes."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Sub teams are included when top-level teams are selected in the Team filter**\n\nWhen you select a team in a **Team** filter on a dashboard, the data for that\nteam's sub-teams is now included.",
-        "summary": {
-          "title": "Team filter now includes sub-teams",
-          "summary": "When you select a team in the Team filter on a dashboard, the data for that team's sub-teams is now automatically included. This change simplifies data analysis by ensuring all relevant team data is visible at once."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**The Agent Performance dashboard contains the average chat concurrency metric**\n\nThe **Agent Performance** dashboard now contains the average chat concurrency\nmetric to capture concurrency trends for agents, teams, and queues.",
-        "summary": {
-          "title": "New agent performance metric",
-          "summary": "The Agent Performance dashboard now includes average chat concurrency. This metric helps track concurrency trends across agents, teams, and queues. Understand your team's performance better with this new insight."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Metrics for warm transfers and agent consultations**\n\nThe **Transfers - Calls** and **Transfers - Chats** dashboards now have the\nfollowing metrics in the **Call Transfers** and **Chat Transfers** tables:\n\n* **Agent Connection Time (H:M:S)**. Reports the time spent consulting with\n  another agent and then warm transferring to that agent.\n* **Agent Consult Time (H:M:S)**. Reports the time spent consulting with\n  another agent before returning to the call.",
-        "summary": {
-          "title": "New Metrics for Transfers",
-          "summary": "Two new metrics, Agent Connection Time and Agent Consult Time, have been added to the Transfers - Calls and Transfers - Chats dashboards. These metrics provide insights into the duration of agent consultations during warm transfers and before returning to the original call."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "This release addresses the following issues:\n\n* Fixed an issue where the **This Week** and **This Month** per-hour figures\n  on the **Performance Overview** and **Agent Performance** dashboards were\n  inaccurate.\n* Fixed an issue where the **Queue Abandons** and **Abandon %** fields on the\n  **Queue Group Performance - All** and **Queue Group Performance - Chats**\n  dashboards always displayed `0` for chats.\n* Fixed an issue where the virtual agent call metrics on the **Virtual Agent -\n  Calls**, **All Interactions - Calls**, and **Performance Overview**\n  dashboards were incorrect.\n* Fixed an issue where agents appeared under **Assigned Agent** for calls that\n  they weren't connected to.\n* Fixed an issue where exporting data from dashboards using date ranges\n  greater than seven days failed.\n* Fixed an issue in the **Real-time Queue Monitoring** and **Queued Calls**\n  dashboards where transferred calls were incorrectly displayed as **Queued**\n  when they were active with an agent.\n* Fixed an issue where queue groups that were turned off remained visible in\n  advanced reporting dashboards.\n* Fixed an issue where the **Queue Time** filter on the **All Interactions**\n  dashboard wasn't displaying data.\n* Fixed an issue where the **SLA Target** field in the **Queue Group\n  Performance - All** dashboard was empty.\n* Fixed an issue where the **No** checkbox of the **Child Queues** filter\n  disappeared when cleared. No child queues is the default for this filter, so\n  we removed the **No** checkbox, leaving only the **Yes** checkbox.\n* Fixed an issue where the **Available Agents** field overstated real capacity.\n* Fixed an issue on the **Queue Groups - Calls** and **Queue Groups - Chats**\n  dashboards where the **Ave Current Queue Time** metric displayed incorrect\n  data.\n* For time-related exports, there's now a column that displays time in\n  HH:MM:SS format (in addition to seconds). You can't apply conditional\n  formatting to this format in an Explore.\n* Fixed an issue where **Max Queue Wait Time**, **Max Speed To Answer**, and\n  **Max Queue Abandon Time** displayed incorrect data in Explores.\n* Fixed an issue where changes to an agent's availability preferences in the\n  agent adapter weren't reflected in the **Agent Activity** dashboard.\n* Updated the labels in the **Agent Metrics (Historical)** Explore to be\n  channel-agnostic for metrics that include both calls and chats.",
-        "summary": {
-          "title": "Reporting Dashboard Fixes",
-          "summary": "Several reporting dashboards have been updated to fix inaccurate data displays for metrics like queue performance, agent activity, and call handling. This includes corrections to time-based figures, abandon rates, and agent availability, ensuring more reliable insights into contact center operations."
-        }
-      }
-    ],
     "2026-07-30": [
       {
         "kind": "Announcement",
@@ -124,6 +82,48 @@
         "summary": {
           "title": "Resolved various issues for improved performance",
           "summary": "This release addresses multiple bugs across chat, voice, and integrations, ensuring smoother operations. Key fixes include issues with message delivery, call routing, agent status updates, and data synchronization in Salesforce."
+        }
+      }
+    ],
+    "2026-08-03": [
+      {
+        "kind": "Announcement",
+        "content": "**Advanced reporting dashboards prerelease notes**\n\nHere are the pre-release notes for updates to the advanced reporting dashboards.\nWhen we release these updates, we expect the new capabilities to be as shown\nhere.",
+        "summary": {
+          "title": "New reporting dashboards available",
+          "summary": "Pre-release notes are now available for updates to the advanced reporting dashboards. These updates include new capabilities that are detailed in the release notes."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Sub teams are included when top-level teams are selected in the Team filter**\n\nWhen you select a team in a **Team** filter on a dashboard, the data for that\nteam's sub-teams is now included.",
+        "summary": {
+          "title": "Team filter now includes sub-teams",
+          "summary": "When you select a team in the Team filter on a dashboard, the data for that team's sub-teams is now automatically included. This change simplifies data analysis by ensuring all relevant team data is visible at once."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**The Agent Performance dashboard contains the average chat concurrency metric**\n\nThe **Agent Performance** dashboard now contains the average chat concurrency\nmetric to capture concurrency trends for agents, teams, and queues.",
+        "summary": {
+          "title": "New agent performance metric",
+          "summary": "The Agent Performance dashboard now includes average chat concurrency. This metric helps track concurrency trends across agents, teams, and queues. Understand your team's performance better with this new insight."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Metrics for warm transfers and agent consultations**\n\nThe **Transfers - Calls** and **Transfers - Chats** dashboards now have the\nfollowing metrics in the **Call Transfers** and **Chat Transfers** tables:\n\n* **Agent Connection Time (H:M:S)**. Reports the time spent consulting with\n  another agent and then warm transferring to that agent.\n* **Agent Consult Time (H:M:S)**. Reports the time spent consulting with\n  another agent before returning to the call.",
+        "summary": {
+          "title": "New Metrics for Transfers",
+          "summary": "Two new metrics, Agent Connection Time and Agent Consult Time, have been added to the Transfers - Calls and Transfers - Chats dashboards. These metrics provide insights into the duration of agent consultations during warm transfers and before returning to the original call."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where the **This Week** and **This Month** per-hour figures\n  on the **Performance Overview** and **Agent Performance** dashboards were\n  inaccurate.\n* Fixed an issue where the **Queue Abandons** and **Abandon %** fields on the\n  **Queue Group Performance - All** and **Queue Group Performance - Chats**\n  dashboards always displayed `0` for chats.\n* Fixed an issue where the virtual agent call metrics on the **Virtual Agent -\n  Calls**, **All Interactions - Calls**, and **Performance Overview**\n  dashboards were incorrect.\n* Fixed an issue where agents appeared under **Assigned Agent** for calls that\n  they weren't connected to.\n* Fixed an issue where exporting data from dashboards using date ranges\n  greater than seven days failed.\n* Fixed an issue in the **Real-time Queue Monitoring** and **Queued Calls**\n  dashboards where transferred calls were incorrectly displayed as **Queued**\n  when they were active with an agent.\n* Fixed an issue where queue groups that were turned off remained visible in\n  advanced reporting dashboards.\n* Fixed an issue where the **Queue Time** filter on the **All Interactions**\n  dashboard wasn't displaying data.\n* Fixed an issue where the **SLA Target** field in the **Queue Group\n  Performance - All** dashboard was empty.\n* Fixed an issue where the **No** checkbox of the **Child Queues** filter\n  disappeared when cleared. No child queues is the default for this filter, so\n  we removed the **No** checkbox, leaving only the **Yes** checkbox.\n* Fixed an issue where the **Available Agents** field overstated real capacity.\n* Fixed an issue on the **Queue Groups - Calls** and **Queue Groups - Chats**\n  dashboards where the **Ave Current Queue Time** metric displayed incorrect\n  data.\n* For time-related exports, there's now a column that displays time in\n  HH:MM:SS format (in addition to seconds). You can't apply conditional\n  formatting to this format in an Explore.\n* Fixed an issue where **Max Queue Wait Time**, **Max Speed To Answer**, and\n  **Max Queue Abandon Time** displayed incorrect data in Explores.\n* Fixed an issue where changes to an agent's availability preferences in the\n  agent adapter weren't reflected in the **Agent Activity** dashboard.\n* Updated the labels in the **Agent Metrics (Historical)** Explore to be\n  channel-agnostic for metrics that include both calls and chats.",
+        "summary": {
+          "title": "Reporting Dashboard Fixes",
+          "summary": "Several reporting dashboards have been updated to fix inaccurate data displays for metrics like queue performance, agent activity, and call handling. This includes corrections to time-based figures, abandon rates, and agent availability, ensuring more reliable insights into contact center operations."
         }
       }
     ],

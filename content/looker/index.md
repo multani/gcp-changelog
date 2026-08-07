@@ -1,5 +1,154 @@
 # Looker
 
+## 2026-08-06
+
+### Announcement
+
+**Looker 26.14** will roll out to Looker (original) instances on the following schedule:
+
+* Expected deployment start: **Monday, August 10, 2026**
+* Expected final deployment and download available: **Sunday, August 23, 2026**
+
+Looker 26.14 is expected to include the following changes, features, and fixes.
+
+### Fixed
+
+An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where dashboard filters of `type: string_filter` could spin indefinitely if no suggestions were configured. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where clicking **edit** for a visualization from a dashboard caused the dashboard tile header to render on top of the Explore, preventing editing. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where LookML drill links and Liquid variables inside table cells could fail to render properly on dashboards and embedded visualizations. This feature now performs as expected.
+
+### Feature
+
+Conversational Analytics data agent editors can now specify whether the agent will
+show its thinking or debugging information when generating a response.
+
+### Change
+
+A Conversational Analytics data agent now displays query results in its thinking rather than in its final response.
+
+### Fixed
+
+An issue has been fixed where large queries on Snowflake connections could fail with an `SSLHandshakeException: No trusted certificate found` error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **Show Region Field in Tooltip** option was hidden for region maps that were configured without LookML map layer metadata. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the list of Explores in the Conversational Analytics agent's card could be cut off for embed users with longer names. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where users with mixed roles across projects were unable to see and re-authorize OAuth connections for projects where they had viewer-only access. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where a secondary Y-axis could reset its position if a parameter value was updated. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where validating LookML with an empty `value_format` parameter could result in a 500 internal server error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where modifying table calculations could cause Looker to run a new query rather than pulling results from cache. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where clicking the **Fullscreen** button while using the Conversational Analytics dashboard caused the chat view to disappear. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where scheduled jobs that were owned by users who authenticated by using Workforce Identity (BYOID) could fail with IAM login failures. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the merged results page could return a `403` error after a period of user inactivity while cookieless embedding was being used. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where some characters were incorrectly displayed as HTML entities. For example,`"` would render as `&quot;`. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Looker could generate incorrect SQL when creating a Self-service Explore from a spreadsheet. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the drill modal incorrectly displayed a pivot option for queries that couldn't be pivoted. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where updating the data for a Self-service Explore could fail with a generic error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Timeline visualizations could fail to respect admin color collection overrides. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where visualizations were not respecting internal dashboard theme color collections, which caused custom theme color collections to revert to the defaults.
+
+### Fixed
+
+An issue has been fixed where timeout settings in the Extension SDK could be reset to their default value of 120 seconds. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the items in the **Axis Order** section in the Y panel of the visualization edit panel were inaccessible to screen readers. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where non-admin user OAuth tokens remained valid even after database connection parameters were updated. This feature now performs as expected.
+
+### Fixed
+
+An issue with column numbers has been fixed that could occur when XLSX results for tiles that used pivots were generated. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed in the Conversational Analytics interface where chats that used deleted agents or Explores could neither be deleted nor restored. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where searching by label in the field picker would fail to find fields where the `group_label` or `group_item_label` was set to an empty string. This feature now performs as expected.
+
+### Fixed
+
+Looker now displays a more informative error when a Conversational Analytics conversation fails to load as the result of a network failure. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where LookML dashboards could fail to deploy if the project name exceeded 64 characters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where modifying a self-service model that was created from a blank canvas could return a `Resource already exists` error. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Waterfall chart visualization configurations could fail to render if the X-axis label rotation was set to an empty, a null, or another undefined value. This feature now performs as expected.
+
+### Change
+
+The timeout length for Conversational Analytics queries has been increased from two to five minutes.
+
+### Feature
+
+The **Axis Order** options in the Y tab of the visualization editor now support keyboard inputs.
+
+---
 ## 2026-08-05
 
 ### Announcement
@@ -197,7 +346,7 @@ As of July 13, 2026, Looker reports have been deprecated. If you had previously 
 
 Access to the rest of your Looker content in your instance will remain unaffected and you will continue to have access to Looker as a data source from Data Studio and Data Studio Pro.
 
-You can create ad hoc Explores using Looker's self-service Explores feature, which lets you upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.
+You can create ad hoc Explores using Looker's **Self-service Explores** feature, which lets you upload CSV, XLS, and XLSX files to Looker and then query and visualize the data in a Looker Explore without needing to configure a LookML model or set up Git version control.
 
 ---
 ## 2026-07-17
@@ -212,7 +361,7 @@ If you run Looker directly using the `java -jar` command (instead of using the s
 --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED
 ```
 
-Looker recommends that you transition to new Java updates as they are released. Other versions of Java, Oracle JDK, and OpenJDK are not supported at this time.
+Looker recommends that you transition to new Java updates as they are released. Other versions of Java, Oracle JDK, and OpenJDK aren't supported at this time.
 
 ---
 ## 2026-07-13

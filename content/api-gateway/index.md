@@ -6,12 +6,12 @@
 
 **Route LLM requests with model routing**
 
-You can now use model routing in API Gateway as a managed traffic management layer to accept OpenAI-compatible prompt requests, transcode them in-flight, and route them to specific foundation models in Vertex AI Model Garden (including Gemini, Anthropic Claude, and OpenAI GPT models).
+You can now use model routing in API Gateway as a managed traffic management layer to accept OpenAI-compatible prompt requests, transcode them in-flight, and route them to specific foundation models in Gemini Enterprise Agent Platform Model Garden (including Gemini, Anthropic Claude, and OpenAI GPT models).
 
 Key benefits and capabilities include:
 
 * **Centralized traffic management**: Consolidate AI traffic routing and lifecycle management at the network edge without hosting standalone client-side proxies.
-* **In-flight transcoding**: Standardize client applications on an OpenAI-compatible REST interface while dynamically dispatching requests to diverse underlying Vertex AI Model Garden endpoints.
+* **In-flight transcoding**: Standardize client applications on an OpenAI-compatible REST interface while dynamically dispatching requests to diverse underlying Agent Platform Model Garden endpoints.
 * **OpenAPI 3.x configuration**: Define model routing tables, explicit routing rules, and default model fallbacks using the new `x-google-api-management.ai.models.routing` and `x-google-model-router` OpenAPI 3.x extensions.
 
 For more information, see [Overview of model routing](https://docs.cloud.google.com/api-gateway/docs/model-routing-overview) and [Configure model routing](https://docs.cloud.google.com/api-gateway/docs/model-routing-configure).

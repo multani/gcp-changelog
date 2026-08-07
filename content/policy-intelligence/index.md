@@ -1,5 +1,16 @@
 # Policy Intelligence
 
+## 2026-08-06
+
+### Feature
+
+The Policy Troubleshooter MCP server is [generally
+available](https://cloud.google.com/products?e=48754805#product-launch-stages).
+To learn about using the Policy Troubleshooter MCP server to let agents
+and AI applications troubleshoot IAM issues and errors, see [Use
+the Policy Troubleshooter remote MCP server](https://docs.cloud.google.com/policy-intelligence/docs/use-policy-troubleshooter-mcp).
+
+---
 ## 2026-06-12
 
 ### Feature

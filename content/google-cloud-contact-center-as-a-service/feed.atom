@@ -2,9 +2,119 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-08-03T00:00:00+00:00</updated>
+  <updated>2026-08-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-06:announcement:0</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards 5.1</strong></p>
+<p>We've released version 5.1 of the advanced reporting dashboards.</p>]]></content>
+    <summary>Version 5.1 of the advanced reporting dashboards is now available. This update brings enhanced features for your data analysis needs. Explore the latest improvements to gain deeper insights from your reports.</summary>
+    <title>Announcement: New reporting dashboards released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-06:feature:1</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Sub teams are included when top-level teams are selected in the Team filter</strong></p>
+<p>When you select a team in a <strong>Team</strong> filter on a dashboard, the data for that
+team's sub-teams is now included.</p>]]></content>
+    <summary>The Team filter on dashboards now automatically includes data for sub-teams when a top-level team is selected. This provides a more comprehensive view of your team's data.</summary>
+    <title>Feature: Team filter includes sub-teams</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-06:feature:2</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>The Agent Metrics (Historical) Explore contains the Avg Chat Concurrency
+metric</strong></p>
+<p>The <strong>Agent Metrics (Historical)</strong> Explore now contains the <strong>Ave Chat
+Concurrency</strong> metric to capture concurrency trends for agents, teams, and
+queues.</p>]]></content>
+    <summary>The Agent Metrics (Historical) Explore now includes the Avg Chat Concurrency metric. This allows you to track concurrency trends for agents, teams, and queues over time.</summary>
+    <title>Feature: New metric for agent concurrency</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-06:feature:3</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Metrics for warm transfers and agent consultations</strong></p>
+<p>The <strong>Transfers - Calls</strong> and <strong>Transfers - Chats</strong> dashboards now have the
+following metrics in the <strong>Call Transfers</strong> and <strong>Chat Transfers</strong> tables:</p>
+<ul>
+<li><strong>Agent Connection Time (H:M:S)</strong>. Reports the time spent consulting with
+  another agent and then warm transferring to that agent.</li>
+<li><strong>Agent Consult Time (H:M:S)</strong>. Reports the time spent consulting with
+  another agent before returning to the call.</li>
+</ul>]]></content>
+    <summary>The Transfers - Calls and Transfers - Chats dashboards have been updated with new metrics to track agent connection and consult time during warm transfers. These new metrics provide insights into the time agents spend consulting with colleagues before completing a transfer.</summary>
+    <title>Feature: New metrics for agent consultations</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-06:fixed:4</id>
+    <published>2026-08-06T00:00:00+00:00</published>
+    <updated>2026-08-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where the <strong>This Week</strong> and <strong>This Month</strong> per-hour figures
+  on the <strong>Performance Overview</strong> and <strong>Agent Performance</strong> dashboards were
+  inaccurate.</li>
+<li>Fixed an issue where the <strong>Queue Abandons</strong> and <strong>Abandon %</strong> fields on the
+  <strong>Queue Group Performance - All</strong> and <strong>Queue Group Performance - Chats</strong>
+  dashboards always displayed <code>0</code> for chats.</li>
+<li>Fixed an issue where the virtual agent call metrics on the <strong>Virtual Agent -
+  Calls</strong>, <strong>All Interactions - Calls</strong>, and <strong>Performance Overview</strong>
+  dashboards were incorrect.</li>
+<li>Fixed an issue where agents appeared under <strong>Assigned Agent</strong> for calls that
+  they weren't connected to.</li>
+<li>Fixed an issue where exporting data from dashboards using date ranges
+  greater than seven days failed.</li>
+<li>Fixed an issue in the <strong>Real-time Queue Monitoring</strong> and <strong>Queued Calls</strong>
+  dashboards where transferred calls were incorrectly displayed as <strong>Queued</strong>
+  when they were active with an agent.</li>
+<li>Fixed an issue where queue groups that were turned off remained visible in
+  advanced reporting dashboards.</li>
+<li>Fixed an issue where the <strong>Queue Time</strong> filter on the <strong>All Interactions</strong>
+  dashboard wasn't displaying data.</li>
+<li>Fixed an issue where the <strong>SLA Target</strong> field in the <strong>Queue Group
+  Performance - All</strong> dashboard was empty.</li>
+<li>Fixed an issue where the <strong>No</strong> checkbox of the <strong>Child Queues</strong> filter
+  disappeared when cleared. No child queues is the default for this filter, so
+  we removed the <strong>No</strong> checkbox, leaving only the <strong>Yes</strong> checkbox.</li>
+<li>Fixed an issue where the <strong>Available Agents</strong> field overstated real capacity.</li>
+<li>Fixed an issue on the <strong>Queue Groups - Calls</strong> and <strong>Queue Groups - Chats</strong>
+  dashboards where the <strong>Ave Current Queue Time</strong> metric displayed incorrect
+  data.</li>
+<li>For time-related exports, there's now a column that displays time in
+  HH:MM:SS format (in addition to seconds). You can't apply conditional
+  formatting to this format in an Explore.</li>
+<li>Fixed an issue where <strong>Max Queue Wait Time</strong>, <strong>Max Speed To Answer</strong>, and
+  <strong>Max Queue Abandon Time</strong> displayed incorrect data in Explores.</li>
+<li>Fixed an issue where changes to an agent's availability preferences in the
+  agent adapter weren't reflected in the <strong>Agent Activity</strong> dashboard.</li>
+<li>Updated the labels in the <strong>Agent Metrics (Historical)</strong> Explore to be
+  channel-agnostic for metrics that include both calls and chats.</li>
+</ul>]]></content>
+    <summary>This release corrects several inaccuracies and display problems across various performance and reporting dashboards. Key fixes include accurate per-hour figures, correct queue and virtual agent metrics, and improved data export functionality. Agent availability and reporting labels have also been updated for better clarity.</summary>
+    <title>Fixed: Resolved Reporting Issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

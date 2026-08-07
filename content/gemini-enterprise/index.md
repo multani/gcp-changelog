@@ -2,6 +2,21 @@
 
 ## 2026-08-06
 
+### Change
+
+**Gemini Enterprise: Description field removed from Custom MCP server data store**
+
+Gemini Enterprise automatically calls your server's `tools/list`
+endpoint to discover and understand tools, parameter schemas, and
+capabilities directly. Because Gemini Enterprise routes requests using
+explicit tool definitions and parameter schemas, you don't need to
+write descriptions. This change simplifies data store
+setup and improves routing accuracy. Existing custom MCP data stores do not
+require any updates.
+
+For more information, see
+[Set up a custom MCP server](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server).
+
 ### Announcement
 
 **Gemini Enterprise: Postponed removal of Gemini 3.5 Flash in the Global

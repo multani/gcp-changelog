@@ -2,6 +2,13 @@
 
 ## 2026-08-07
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes**
+
+Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.
+
 ### Feature
 
 **Agent desktop supports parameters in custom panel URLs**

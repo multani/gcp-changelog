@@ -1,5 +1,44 @@
 # Cloud Billing
 
+## 2026-08-07
+
+### Feature
+
+**New filter and group-by option available in Cloud Billing Reports**
+
+In **Billing Reports**, Cloud Billing has added the
+**Originating products**
+[*filter*](https://docs.cloud.google.com/billing/docs/how-to/reports#filter-by-orig-products) and
+[*Group by*](https://docs.cloud.google.com/billing/docs/how-to/reports#group-by-orig-product)
+to provide additional options that let you analyze and understand your costs.
+*Originating products* are Google Cloud products that cause usage in
+another product. For example, Gemini Enterprise is an
+originating product when it causes usage in the Gemini Enterprise
+app.
+
+To help you **track and analyze your *AI spend***, the *Originating products*
+dimension is used in the following ways:
+
+* You can use the *Originating products* filter and group by option to
+  configure your Cloud Billing report to track and analyze your
+  [Gemini Enterprise subscription and consumption costs](https://docs.cloud.google.com/billing/docs/how-to/reports/gemini-enterprise-costs).
+* The *Originating products* dimension supports a new
+  [*preset report*](https://docs.cloud.google.com/billing/docs/how-to/reports#preset_views)
+  for quick report configuration, called
+  [Gemini Enterprise costs by SKU](https://docs.cloud.google.com/billing/docs/how-to/reports/gemini-enterprise-costs#preset-report).
+* When you are viewing your costs in the Gemini Enterprise console,
+  on the *Gemini Enterprise > Usage & Spending* page,
+  the *Originating products* dimension supports the functionality of the costs
+  displayed on the
+  [Gemini Enterprise Billing tab](https://docs.cloud.google.com/gemini/enterprise/docs/view-costs).
+
+For more information, see the following resources:
+
+* [Learn how to view Gemini Enterprise costs in Cloud Billing reports](https://docs.cloud.google.com/billing/docs/how-to/reports/gemini-enterprise-costs)
+* [Learn more about analyzing billing data and cost trends with Reports](https://docs.cloud.google.com/billing/docs/how-to/reports)
+* [Learn how to view Gemini Enterprise costs in the Gemini Enterprise console](https://docs.cloud.google.com/gemini/enterprise/docs/view-costs)
+
+---
 ## 2026-07-27
 
 ### Feature

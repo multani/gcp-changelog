@@ -13,10 +13,6 @@ Looker 26.14 is expected to include the following changes, features, and fixes.
 
 ### Fixed
 
-An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.
-
-### Fixed
-
 An issue has been fixed where dashboard filters of `type: string_filter` could spin indefinitely if no suggestions were configured. This feature now performs as expected.
 
 ### Fixed
@@ -35,6 +31,10 @@ show its thinking or debugging information when generating a response.
 ### Change
 
 A Conversational Analytics data agent now displays query results in its thinking rather than in its final response.
+
+### Change
+
+The timeout length for Conversational Analytics queries has been increased from two to five minutes. **Note:** This item was updated on August 7, 2026.
 
 ### Fixed
 
@@ -140,9 +140,9 @@ An issue has been fixed where modifying a self-service model that was created fr
 
 An issue has been fixed where Waterfall chart visualization configurations could fail to render if the X-axis label rotation was set to an empty, a null, or another undefined value. This feature now performs as expected.
 
-### Change
+### Fixed
 
-The timeout length for Conversational Analytics queries has been increased from two to five minutes.
+An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.
 
 ### Feature
 
@@ -185,11 +185,11 @@ The [Enhanced search](https://docs.cloud.google.com/looker/docs/finding-content#
 
 ### Feature
 
-Now available in preview, enhanced observability metrics — including engagement and projected token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.
+Now available in preview, the [Admin Assistant](https://docs.cloud.google.com/looker/docs/gemini-admin-asst) helps you use natural language to manage Looker roles.
 
 ### Feature
 
-Now available in preview, the [Admin Assistant](https://docs.cloud.google.com/looker/docs/gemini-admin-asst) helps you use natural language to manage Looker roles.
+Now available in preview, enhanced observability metrics — including engagement and estimated token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.
 
 ### Feature
 
@@ -212,7 +212,7 @@ When you [chat in Gemini Enterprise with data agents that you create in Looker](
 
 ### Feature
 
-Now available in preview, enhanced observability metrics — including engagement and projected token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.
+Now available in preview, enhanced observability metrics — including engagement and estimated token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.
 
 ### Feature
 

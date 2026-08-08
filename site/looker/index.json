@@ -12,14 +12,6 @@
       },
       {
         "kind": "Fixed",
-        "content": "An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.",
-        "summary": {
-          "title": "Looker Marketplace access restored for IAM admins",
-          "summary": "An issue preventing users with Admin via IAM privileges on Looker from enabling the Looker Marketplace has been resolved. This functionality is now working correctly, allowing these administrators to access and utilize the Marketplace."
-        }
-      },
-      {
-        "kind": "Fixed",
         "content": "An issue has been fixed where dashboard filters of `type: string_filter` could spin indefinitely if no suggestions were configured. This feature now performs as expected.",
         "summary": {
           "title": "Dashboard filter issue resolved",
@@ -56,6 +48,14 @@
         "summary": {
           "title": "Query results now in thinking",
           "summary": "Query results for the Conversational Analytics data agent are now displayed within its thinking process, rather than solely in the final response. This change provides clearer insight into how the agent arrives at its answers."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The timeout length for Conversational Analytics queries has been increased from two to five minutes. **Note:** This item was updated on August 7, 2026.",
+        "summary": {
+          "title": "Conversational Analytics query timeouts increased",
+          "summary": "The timeout duration for Conversational Analytics queries has been extended from two to five minutes. This change aims to provide users with more time to complete their analytical tasks."
         }
       },
       {
@@ -267,11 +267,11 @@
         }
       },
       {
-        "kind": "Change",
-        "content": "The timeout length for Conversational Analytics queries has been increased from two to five minutes.",
+        "kind": "Fixed",
+        "content": "An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.",
         "summary": {
-          "title": "Query timeout increased",
-          "summary": "The timeout for Conversational Analytics queries has been extended from two to five minutes to allow for more complex analysis."
+          "title": "Looker Marketplace access restored for IAM admins",
+          "summary": "An issue preventing users with Admin via IAM privileges on Looker from enabling the Looker Marketplace has been resolved. This functionality is now working correctly, allowing these administrators to access and utilize the Marketplace."
         }
       },
       {
@@ -350,18 +350,18 @@
       },
       {
         "kind": "Feature",
-        "content": "Now available in preview, enhanced observability metrics — including engagement and projected token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.",
-        "summary": {
-          "title": "Enhanced Observability Metrics for Conversational Analytics",
-          "summary": "Preview enhanced observability metrics for Conversational Analytics, including engagement and projected token usage. Enable this feature via the Admin panel's General page. This update provides deeper insights into your conversational data."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "Now available in preview, the [Admin Assistant](https://docs.cloud.google.com/looker/docs/gemini-admin-asst) helps you use natural language to manage Looker roles.",
         "summary": {
           "title": "Manage Looker roles with natural language",
           "summary": "Preview of Admin Assistant is now available. This feature allows you to manage Looker roles using natural language prompts."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, enhanced observability metrics — including engagement and estimated token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.",
+        "summary": {
+          "title": "Preview: Enhanced Observability Metrics for Conversational Analytics",
+          "summary": "Preview release of enhanced observability metrics for Conversational Analytics, including engagement and estimated token usage data. These metrics are now available on the Conversational Analytics System Activity dashboard. A Looker admin must enable the 'Conversational Analytics Agent Token usage' setting to activate this feature."
         }
       },
       {
@@ -400,10 +400,10 @@
     "2026-08-04": [
       {
         "kind": "Feature",
-        "content": "Now available in preview, enhanced observability metrics — including engagement and projected token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.",
+        "content": "Now available in preview, enhanced observability metrics — including engagement and estimated token usage data — are available for Conversational Analytics on the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics). To enable this feature, a Looker admin must turn on the **Conversational Analytics Agent Token usage** setting on the [**General** page](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) in the **Preview** section of the **Admin** panel.",
         "summary": {
-          "title": "Enhanced Conversational Analytics Metrics Now in Preview",
-          "summary": "Preview enhanced observability metrics for Conversational Analytics, including engagement and projected token usage data. To enable this feature, a Looker admin must activate the 'Conversational Analytics Agent Token usage' setting in the Admin panel."
+          "title": "Enhanced Conversational Analytics Metrics in Preview",
+          "summary": "Preview enhanced observability metrics for Conversational Analytics, including engagement and estimated token usage. To activate, a Looker admin needs to enable the 'Conversational Analytics Agent Token usage' setting in the Admin panel. This provides deeper insights into conversational data."
         }
       },
       {

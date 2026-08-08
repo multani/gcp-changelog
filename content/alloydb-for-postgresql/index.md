@@ -1,5 +1,25 @@
 # AlloyDB for PostgreSQL
 
+## 2026-08-07
+
+### Feature
+
+You can now sync tables from BigQuery into your AlloyDB instance, either as a
+one-time operation or on a periodic schedule. This feature (in [Preview](https://cloud.google.com/products#product-launch-stages))
+lets you enable operational analytics that benefit from low-latency,
+transactional access to your data lake.
+
+For more information, see [Sync BigQuery data to AlloyDB](https://docs.cloud.google.com/alloydb/docs/sync-bigquery-data-to-alloydb).
+
+### Feature
+
+AlloyDB integration with BigQuery lets you connect your operational and
+analytical data through real-time data access (lakehouse federation), periodic
+data synchronization, and one-time table syncs. These features are in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Choose how to access BigQuery data from AlloyDB](https://docs.cloud.google.com/alloydb/docs/choose-access-bigquery-data-from-alloydb).
+
+---
 ## 2026-08-04
 
 ### Feature

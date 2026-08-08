@@ -1,5 +1,25 @@
 # Gemini Enterprise
 
+## 2026-08-07
+
+### Feature
+
+**Gemini Enterprise: Custom MCP server data stores**
+
+You can connect your custom Model Context Protocol (MCP) server with
+Gemini Enterprise to securely access your company's private data, custom
+internal tools, and MCP-compliant third-party systems.
+
+This feature is turned off by default. To enable it, an Organization Policy
+Administrator must remove the organization constraint. This feature is generally
+available (GA).
+
+For more information, see:
+
+* [Set up your custom MCP server](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server)
+* [Override the organization policy for Custom MCP data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/override-constraint-for-custom-mcp-data-stores)
+
+---
 ## 2026-08-06
 
 ### Change
@@ -115,7 +135,7 @@ For more information, see the following:
 
 ### Feature
 
-**Gemini Enterprise: Microsoft Teams federated connector is generally available (GA)**
+**Gemini Enterprise: Microsoft Teams federated data store is generally available**
 
 The Microsoft Teams federated data store is generally available (GA) in Gemini Enterprise. Connect Microsoft Teams to query channels, chats, teams, and messages, and execute supported actions directly from the assistant.
 

@@ -65,7 +65,8 @@ This release addresses the following issues:
 * Fixed an issue where the **No** checkbox of the **Child Queues** filter
   disappeared when cleared. No child queues is the default for this filter, so
   we removed the **No** checkbox, leaving only the **Yes** checkbox.
-* Fixed an issue where the **Available Agents** field overstated real capacity.
+* Fixed an issue where the **Available Agents** field overstated real
+  capacity.
 * Fixed an issue on the **Queue Groups - Calls** and **Queue Groups - Chats**
   dashboards where the **Ave Current Queue Time** metric displayed incorrect
   data.

@@ -2745,72 +2745,72 @@
 </ul>
 <p>Looker 26.14 is expected to include the following changes, features, and fixes.</p>
 <h3 id="fixed">Fixed</h3>
-<p>An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.</p>
-<h3 id="fixed_1">Fixed</h3>
 <p>An issue has been fixed where dashboard filters of <code>type: string_filter</code> could spin indefinitely if no suggestions were configured. This feature now performs as expected.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>An issue has been fixed where clicking <strong>edit</strong> for a visualization from a dashboard caused the dashboard tile header to render on top of the Explore, preventing editing. This feature now performs as expected.</p>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>An issue has been fixed where LookML drill links and Liquid variables inside table cells could fail to render properly on dashboards and embedded visualizations. This feature now performs as expected.</p>
 <h3 id="feature">Feature</h3>
 <p>Conversational Analytics data agent editors can now specify whether the agent will
 show its thinking or debugging information when generating a response.</p>
 <h3 id="change">Change</h3>
 <p>A Conversational Analytics data agent now displays query results in its thinking rather than in its final response.</p>
-<h3 id="fixed_4">Fixed</h3>
-<p>An issue has been fixed where large queries on Snowflake connections could fail with an <code>SSLHandshakeException: No trusted certificate found</code> error. This feature now performs as expected.</p>
-<h3 id="fixed_5">Fixed</h3>
-<p>An issue has been fixed where the <strong>Show Region Field in Tooltip</strong> option was hidden for region maps that were configured without LookML map layer metadata. This feature now performs as expected.</p>
-<h3 id="fixed_6">Fixed</h3>
-<p>An issue has been fixed where the list of Explores in the Conversational Analytics agent's card could be cut off for embed users with longer names. This feature now performs as expected.</p>
-<h3 id="fixed_7">Fixed</h3>
-<p>An issue has been fixed where users with mixed roles across projects were unable to see and re-authorize OAuth connections for projects where they had viewer-only access. This feature now performs as expected.</p>
-<h3 id="fixed_8">Fixed</h3>
-<p>An issue has been fixed where a secondary Y-axis could reset its position if a parameter value was updated. This feature now performs as expected.</p>
-<h3 id="fixed_9">Fixed</h3>
-<p>An issue has been fixed where validating LookML with an empty <code>value_format</code> parameter could result in a 500 internal server error. This feature now performs as expected.</p>
-<h3 id="fixed_10">Fixed</h3>
-<p>An issue has been fixed where modifying table calculations could cause Looker to run a new query rather than pulling results from cache. This feature now performs as expected.</p>
-<h3 id="fixed_11">Fixed</h3>
-<p>An issue has been fixed where clicking the <strong>Fullscreen</strong> button while using the Conversational Analytics dashboard caused the chat view to disappear. This feature now performs as expected.</p>
-<h3 id="fixed_12">Fixed</h3>
-<p>An issue has been fixed where scheduled jobs that were owned by users who authenticated by using Workforce Identity (BYOID) could fail with IAM login failures. This feature now performs as expected.</p>
-<h3 id="fixed_13">Fixed</h3>
-<p>An issue has been fixed where the merged results page could return a <code>403</code> error after a period of user inactivity while cookieless embedding was being used. This feature now performs as expected.</p>
-<h3 id="fixed_14">Fixed</h3>
-<p>An issue has been fixed where some characters were incorrectly displayed as HTML entities. For example,<code>"</code> would render as <code>&amp;quot;</code>. This feature now performs as expected.</p>
-<h3 id="fixed_15">Fixed</h3>
-<p>An issue has been fixed where Looker could generate incorrect SQL when creating a Self-service Explore from a spreadsheet. This feature now performs as expected.</p>
-<h3 id="fixed_16">Fixed</h3>
-<p>An issue has been fixed where the drill modal incorrectly displayed a pivot option for queries that couldn't be pivoted. This feature now performs as expected.</p>
-<h3 id="fixed_17">Fixed</h3>
-<p>An issue has been fixed where updating the data for a Self-service Explore could fail with a generic error. This feature now performs as expected.</p>
-<h3 id="fixed_18">Fixed</h3>
-<p>An issue has been fixed where Timeline visualizations could fail to respect admin color collection overrides. This feature now performs as expected.</p>
-<h3 id="fixed_19">Fixed</h3>
-<p>An issue has been fixed where visualizations were not respecting internal dashboard theme color collections, which caused custom theme color collections to revert to the defaults.</p>
-<h3 id="fixed_20">Fixed</h3>
-<p>An issue has been fixed where timeout settings in the Extension SDK could be reset to their default value of 120 seconds. This feature now performs as expected.</p>
-<h3 id="fixed_21">Fixed</h3>
-<p>An issue has been fixed where the items in the <strong>Axis Order</strong> section in the Y panel of the visualization edit panel were inaccessible to screen readers. This feature now performs as expected.</p>
-<h3 id="fixed_22">Fixed</h3>
-<p>An issue has been fixed where non-admin user OAuth tokens remained valid even after database connection parameters were updated. This feature now performs as expected.</p>
-<h3 id="fixed_23">Fixed</h3>
-<p>An issue with column numbers has been fixed that could occur when XLSX results for tiles that used pivots were generated. This feature now performs as expected.</p>
-<h3 id="fixed_24">Fixed</h3>
-<p>An issue has been fixed in the Conversational Analytics interface where chats that used deleted agents or Explores could neither be deleted nor restored. This feature now performs as expected.</p>
-<h3 id="fixed_25">Fixed</h3>
-<p>An issue has been fixed where searching by label in the field picker would fail to find fields where the <code>group_label</code> or <code>group_item_label</code> was set to an empty string. This feature now performs as expected.</p>
-<h3 id="fixed_26">Fixed</h3>
-<p>Looker now displays a more informative error when a Conversational Analytics conversation fails to load as the result of a network failure. This feature now performs as expected.</p>
-<h3 id="fixed_27">Fixed</h3>
-<p>An issue has been fixed where LookML dashboards could fail to deploy if the project name exceeded 64 characters. This feature now performs as expected.</p>
-<h3 id="fixed_28">Fixed</h3>
-<p>An issue has been fixed where modifying a self-service model that was created from a blank canvas could return a <code>Resource already exists</code> error. This feature now performs as expected.</p>
-<h3 id="fixed_29">Fixed</h3>
-<p>An issue has been fixed where Waterfall chart visualization configurations could fail to render if the X-axis label rotation was set to an empty, a null, or another undefined value. This feature now performs as expected.</p>
 <h3 id="change_1">Change</h3>
-<p>The timeout length for Conversational Analytics queries has been increased from two to five minutes.</p>
+<p>The timeout length for Conversational Analytics queries has been increased from two to five minutes. <strong>Note:</strong> This item was updated on August 7, 2026.</p>
+<h3 id="fixed_3">Fixed</h3>
+<p>An issue has been fixed where large queries on Snowflake connections could fail with an <code>SSLHandshakeException: No trusted certificate found</code> error. This feature now performs as expected.</p>
+<h3 id="fixed_4">Fixed</h3>
+<p>An issue has been fixed where the <strong>Show Region Field in Tooltip</strong> option was hidden for region maps that were configured without LookML map layer metadata. This feature now performs as expected.</p>
+<h3 id="fixed_5">Fixed</h3>
+<p>An issue has been fixed where the list of Explores in the Conversational Analytics agent's card could be cut off for embed users with longer names. This feature now performs as expected.</p>
+<h3 id="fixed_6">Fixed</h3>
+<p>An issue has been fixed where users with mixed roles across projects were unable to see and re-authorize OAuth connections for projects where they had viewer-only access. This feature now performs as expected.</p>
+<h3 id="fixed_7">Fixed</h3>
+<p>An issue has been fixed where a secondary Y-axis could reset its position if a parameter value was updated. This feature now performs as expected.</p>
+<h3 id="fixed_8">Fixed</h3>
+<p>An issue has been fixed where validating LookML with an empty <code>value_format</code> parameter could result in a 500 internal server error. This feature now performs as expected.</p>
+<h3 id="fixed_9">Fixed</h3>
+<p>An issue has been fixed where modifying table calculations could cause Looker to run a new query rather than pulling results from cache. This feature now performs as expected.</p>
+<h3 id="fixed_10">Fixed</h3>
+<p>An issue has been fixed where clicking the <strong>Fullscreen</strong> button while using the Conversational Analytics dashboard caused the chat view to disappear. This feature now performs as expected.</p>
+<h3 id="fixed_11">Fixed</h3>
+<p>An issue has been fixed where scheduled jobs that were owned by users who authenticated by using Workforce Identity (BYOID) could fail with IAM login failures. This feature now performs as expected.</p>
+<h3 id="fixed_12">Fixed</h3>
+<p>An issue has been fixed where the merged results page could return a <code>403</code> error after a period of user inactivity while cookieless embedding was being used. This feature now performs as expected.</p>
+<h3 id="fixed_13">Fixed</h3>
+<p>An issue has been fixed where some characters were incorrectly displayed as HTML entities. For example,<code>"</code> would render as <code>&amp;quot;</code>. This feature now performs as expected.</p>
+<h3 id="fixed_14">Fixed</h3>
+<p>An issue has been fixed where Looker could generate incorrect SQL when creating a Self-service Explore from a spreadsheet. This feature now performs as expected.</p>
+<h3 id="fixed_15">Fixed</h3>
+<p>An issue has been fixed where the drill modal incorrectly displayed a pivot option for queries that couldn't be pivoted. This feature now performs as expected.</p>
+<h3 id="fixed_16">Fixed</h3>
+<p>An issue has been fixed where updating the data for a Self-service Explore could fail with a generic error. This feature now performs as expected.</p>
+<h3 id="fixed_17">Fixed</h3>
+<p>An issue has been fixed where Timeline visualizations could fail to respect admin color collection overrides. This feature now performs as expected.</p>
+<h3 id="fixed_18">Fixed</h3>
+<p>An issue has been fixed where visualizations were not respecting internal dashboard theme color collections, which caused custom theme color collections to revert to the defaults.</p>
+<h3 id="fixed_19">Fixed</h3>
+<p>An issue has been fixed where timeout settings in the Extension SDK could be reset to their default value of 120 seconds. This feature now performs as expected.</p>
+<h3 id="fixed_20">Fixed</h3>
+<p>An issue has been fixed where the items in the <strong>Axis Order</strong> section in the Y panel of the visualization edit panel were inaccessible to screen readers. This feature now performs as expected.</p>
+<h3 id="fixed_21">Fixed</h3>
+<p>An issue has been fixed where non-admin user OAuth tokens remained valid even after database connection parameters were updated. This feature now performs as expected.</p>
+<h3 id="fixed_22">Fixed</h3>
+<p>An issue with column numbers has been fixed that could occur when XLSX results for tiles that used pivots were generated. This feature now performs as expected.</p>
+<h3 id="fixed_23">Fixed</h3>
+<p>An issue has been fixed in the Conversational Analytics interface where chats that used deleted agents or Explores could neither be deleted nor restored. This feature now performs as expected.</p>
+<h3 id="fixed_24">Fixed</h3>
+<p>An issue has been fixed where searching by label in the field picker would fail to find fields where the <code>group_label</code> or <code>group_item_label</code> was set to an empty string. This feature now performs as expected.</p>
+<h3 id="fixed_25">Fixed</h3>
+<p>Looker now displays a more informative error when a Conversational Analytics conversation fails to load as the result of a network failure. This feature now performs as expected.</p>
+<h3 id="fixed_26">Fixed</h3>
+<p>An issue has been fixed where LookML dashboards could fail to deploy if the project name exceeded 64 characters. This feature now performs as expected.</p>
+<h3 id="fixed_27">Fixed</h3>
+<p>An issue has been fixed where modifying a self-service model that was created from a blank canvas could return a <code>Resource already exists</code> error. This feature now performs as expected.</p>
+<h3 id="fixed_28">Fixed</h3>
+<p>An issue has been fixed where Waterfall chart visualization configurations could fail to render if the X-axis label rotation was set to an empty, a null, or another undefined value. This feature now performs as expected.</p>
+<h3 id="fixed_29">Fixed</h3>
+<p>An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.</p>
 <h3 id="feature_1">Feature</h3>
 <p>The <strong>Axis Order</strong> options in the Y tab of the visualization editor now support keyboard inputs.</p>
 <hr />
@@ -2832,9 +2832,9 @@ show its thinking or debugging information when generating a response.</p>
 <h3 id="feature_8">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content">Enhanced search</a> feature is now generally available.</p>
 <h3 id="feature_9">Feature</h3>
-<p>Now available in preview, enhanced observability metrics — including engagement and projected token usage data — are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Agent Token usage</strong> setting on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage"><strong>General</strong> page</a> in the <strong>Preview</strong> section of the <strong>Admin</strong> panel.</p>
-<h3 id="feature_10">Feature</h3>
 <p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/gemini-admin-asst">Admin Assistant</a> helps you use natural language to manage Looker roles.</p>
+<h3 id="feature_10">Feature</h3>
+<p>Now available in preview, enhanced observability metrics — including engagement and estimated token usage data — are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Agent Token usage</strong> setting on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage"><strong>General</strong> page</a> in the <strong>Preview</strong> section of the <strong>Admin</strong> panel.</p>
 <h3 id="feature_11">Feature</h3>
 <p>Now available in preview, the new <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#modern_user_interface"><strong>Modern User Interface</strong> feature</a> enables <a href="https://docs.cloud.google.com/looker/docs/modern-ui">modernized layouts and design</a> alongside new configuration settings for visualizations and dashboards. When this preview feature is enabled, users can apply a <strong>Modern</strong> visualization theme that features updated typography and modern, accessible color palettes for improved data legibility. Additionally, a new <strong>Modern</strong> dashboard style provides a high-density, streamlined design that optimizes data viewing and aligns with Google's latest design standards.</p>
 <h3 id="change_2">Change</h3>
@@ -2846,7 +2846,7 @@ show its thinking or debugging information when generating a response.</p>
 <hr />
 <h2 id="2026-08-04">2026-08-04</h2>
 <h3 id="feature_12">Feature</h3>
-<p>Now available in preview, enhanced observability metrics — including engagement and projected token usage data — are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Agent Token usage</strong> setting on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage"><strong>General</strong> page</a> in the <strong>Preview</strong> section of the <strong>Admin</strong> panel.</p>
+<p>Now available in preview, enhanced observability metrics — including engagement and estimated token usage data — are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Agent Token usage</strong> setting on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage"><strong>General</strong> page</a> in the <strong>Preview</strong> section of the <strong>Admin</strong> panel.</p>
 <h3 id="feature_13">Feature</h3>
 <p>Now available in preview, Looker admins can review end-user query success rates, rating distributions, and written user feedback in the <strong>Responses &amp; Feedback</strong> tab on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. This data helps administrators improve system performance, support troubleshooting, and refine data agents.</p>
 <p>To enable this feature, a Looker admin must turn on the <strong>End User Conversational Analytics (CA) Query Review</strong> setting on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-user-feedback"><strong>General</strong> page</a> in the <strong>Preview</strong> section of the <strong>Admin</strong> panel. The <strong>End User Conversational Analytics (CA) Query Review</strong> admin setting is disabled by default.</p>

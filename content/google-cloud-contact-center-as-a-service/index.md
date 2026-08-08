@@ -1,5 +1,121 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-08-07
+
+### Feature
+
+**Agent desktop supports parameters in custom panel URLs**
+
+In the agent desktop, you can now configure fixed and dynamic parameters to
+include in the URLs of custom panels. This lets you pass relevant session,
+agent, and customer context into custom panels.
+
+### Feature
+
+**Callback restrictions**
+
+You can now configure your instance to automatically deflect or schedule
+callbacks for end-users when they contact you close to the end of your business
+day or when your queues are shut down.
+
+Administrators: We've added the following checkboxes to the CCAI Platform portal:
+
+* **Restrict callback offer outside of callback window**
+* **Restrict callback offer that will exceed hours of operation. If queue
+  condition improve offer callbacks**
+
+These checkboxes are available in the following locations:
+
+* The **Settings > Call > Callback Settings** pane (to
+  configure globally).
+* The **Settings > Queue > IVR (Interactive Voice
+  Response) > Edit / View >
+  `QUEUE_NAME` > Callback Settings
+  > Configure > Callback Management** pane (to configure
+  a queue).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where custom SIP headers were dropped. This occurred when a
+  directly dialed agent was over capacity, the call was redirected to the
+  agent's queue, and that queue was configured to redirect to a SIP URI.
+* Fixed an agent desktop issue where the chat screen went blank when an agent
+  accepted or dismissed a chat.
+* Fixed an issue where the **Deflections - Calls** dashboard incorrectly
+  reported the queues that calls were redirected to when using percent
+  allocation.
+* Fixed an issue where auto-answered interactions became stuck in a **Queued**
+  status despite being accepted by an agent.
+* Fixed an issue where the chat adapter in a CRM integration didn't post
+  outbound messages when using rich text formatting.
+* Fixed an issue where the `agent_activity_logs` endpoint experienced timeouts
+  and degraded performance when processing large data requests.
+* Fixed an agent desktop issue where outbound calls appeared to start
+  successfully but didn't connect to the end-user.
+* Fixed an issue where **New photo received** notifications appeared whenever
+  an agent switched between chat tabs.
+* Fixed an issue where short outbound calls incorrectly displayed a **This
+  call was abandoned by the customer** message.
+* Fixed an issue where agents experienced significant delays when switching
+  between multiple concurrent web chats.
+* Fixed an issue where attaching PDF or text files in the chat adapter failed
+  or timed out.
+* Fixed an issue where calls transferred from a virtual agent to an
+  agent extension were incorrectly deflected.
+* Fixed an issue where reordering queues in the CCAI Platform portal experienced
+  extreme latency and didn't update visually without a manual page refresh.
+* Fixed an issue where chat history for added agents became unavailable
+  after a page refresh.
+* Fixed an issue where calls to the `user_activity_logs` endpoint experienced
+  significant delays.
+* Fixed an issue where repeated voicemail re-reads caused duplicate
+  participant entries and inflated session data.
+* Fixed an issue where callback sessions remained in a **Connected** status
+  indefinitely after completion.
+* Fixed an issue where agents using IdP-initiated SAML SSO were automatically
+  routed to the default home page instead of the agent desktop.
+* Fixed an issue where DTMF options in the softphone didn't register with
+  external IVR systems during outbound calls.
+* Fixed an issue where agents were unable to receive or fetch incoming calls.
+* Fixed an issue where supervisors using Telnyx who ended a monitoring
+  session were unable to monitor subsequent calls.
+* Fixed an issue where empty chat bubbles appeared in the chat adapter when
+  an end-user used suggestion chips to respond to a virtual agent.
+* Fixed an issue where duplicated contact handle-duration events caused
+  inaccurate reporting for call and chat interactions.
+* Fixed an issue where agents didn't receive the correct error messages when
+  their microphone was disabled or inaccessible during a call.
+* Fixed an issue where incoming calls were incorrectly multicasted and didn't
+  auto-answer when an agent was already in an active chat session.
+* Fixed an issue where calls deflected to external SIP or phone destinations
+  were missing the `ends_at` timestamp in call data.
+* Fixed an issue where the chat timeout event wasn't correctly emitted to the
+  headless web SDK, causing sessions to remain active for up to 120 minutes,
+  regardless of the configured settings.
+* Fixed an issue where agents using Salesforce-Lightning or Zendesk embeds
+  couldn't maintain a stable presence connection.
+* Fixed an issue where headless web SDK client methods didn't work after a
+  mid-session authentication update.
+* Fixed an issue where agents were unexpectedly logged out of all active
+  sessions.
+* Fixed an issue where calls producing multiple recording segments resulted in
+  duplicate entries in Customer Experience Insights.
+* Fixed an issue where the `parent_id` field was missing from callback call
+  responses in the manager API.
+* Fixed an issue where virtual agent transcripts were lost during escalations
+  to live agents.
+* Fixed an issue in the agent desktop where the sentiment score appeared in
+  the **Call details** panel despite sentiment analysis being turned off in
+  the conversation profile.
+* Fixed an issue where the **Escalated To Language** column in the
+  **Escalations** table of the **Virtual Agent - Calls** dashboard incorrectly
+  displayed `Unknown` for French (Canada) calls.
+* Fixed an issue where calls didn't advance to the next cascade group after
+  the timer threshold was reached.
+
+---
 ## 2026-08-06
 
 ### Announcement

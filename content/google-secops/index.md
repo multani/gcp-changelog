@@ -1,5 +1,34 @@
 # Google SecOps
 
+## 2026-08-09
+
+### Feature
+
+**Self-service Bindplane Enterprise license download**
+
+This feature is currently in Preview. Google SecOps Enterprise Plus and Google Unified Security (GUS) customers can now download their **Bindplane Enterprise (Google Edition)** license key directly from the platform console under **SIEM Settings > Collection Agents**.
+
+For more information, see [Bindplane Enterprise (Google Edition)](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent#bp-download-license).
+
+### Feature
+
+**Updated rich-text editor**
+
+Upgraded the rich-text editor across Google SecOps, including the Cases Wall,
+Use Case Upload dialog, Report Template dialog, and Dashboard Editor widget.
+
+Key changes include:
+
+* **Simplified typography**: Choose font sizes using semantic options (Small,
+  Normal, Large, Huge). Legacy font sizes on existing text are preserved.
+* **Streamlined tables**: You can insert or remove entire tables. Formatting
+  inside table cells is no longer supported.
+* **Toolbar cleanup**: Removed the Cut, Copy, and Paste buttons from the toolbar.
+  Standard OS keyboard shortcuts remain supported.
+* **Visual alignment**: Improved visual consistency between editor content
+  during editing and after submission.
+
+---
 ## 2026-08-05
 
 ### Deprecated

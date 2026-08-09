@@ -1,13 +1,23 @@
 {
   "name": "Google SecOps SIEM",
   "entries": {
+    "2026-08-05": [
+      {
+        "kind": "Deprecated",
+        "content": "The `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds are [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the `GTI_IOC` feed. After March 18, 2027, we will be removing the `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds. For more information on how to migrate, see [Migrate Mandiant legacy feeds to GTI](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).",
+        "summary": {
+          "title": "IOC Feeds Deprecation",
+          "summary": "The MANDIANT_ACTIVE_BREACH_IOC, MANDIANT_FUSION_IOC, and OPEN_SOURCE_INTEL_IOC feeds are deprecated and will be removed after March 18, 2027. The GTI_IOC feed is now the recommended replacement. For migration guidance, please refer to the documentation."
+        }
+      }
+    ],
     "2026-08-03": [
       {
         "kind": "Feature",
-        "content": "**Self-service Bindplane Enterprise license download**\n\nThis feature is currently in Preview. Google SecOps Enterprise Plus and Google Unified Security (GUS) customers can now download their **Bindplane Enterprise (Google Edition)** license key directly from the platform console under **SIEM Settings > Collection Agents**.\n\nFor more information, see [Bindplane Enterprise (Google Edition)](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent#bp-download-license).",
+        "content": "**[Spotlight Feature] Analyze feed activity with Cloud Logging**\n\nThis feature is in public preview. You can now monitor, debug, and troubleshoot Google SecOps SIEM ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.\n\nThis visibility into push- and pull-based ingestion mechanisms lets you use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console. Additionally, you can use the **Debug with logs** option on the **Feed management** page to open **Logs Explorer** pre-filtered for a specific feed.\n\nFor more information, see [Analyze feed activity with Cloud Logging](https://docs.cloud.google.com/chronicle/docs/ingestion/analyze-feed-activity-with-cloud-logging).",
         "summary": {
-          "title": "Download your Bindplane Enterprise license",
-          "summary": "Google SecOps Enterprise Plus and GUS customers can now self-serve their Bindplane Enterprise license download directly from the platform console. This new feature simplifies license management for eligible users."
+          "title": "Analyze feed activity with Cloud Logging",
+          "summary": "Monitor, debug, and troubleshoot your SIEM ingestion pipelines and feeds directly within Cloud Logging. This new feature helps you quickly diagnose and resolve log delivery issues, reducing the time needed to fix ingestion anomalies."
         }
       }
     ],
@@ -54,16 +64,6 @@
         "summary": {
           "title": "Parser extensions support append/replace for repeated fields",
           "summary": "You can now use append and replace functionality for repeated fields when creating code snippet extensions. This enhancement provides more granular control over how data is handled in repeated UDM fields."
-        }
-      }
-    ],
-    "2026-08-05": [
-      {
-        "kind": "Deprecated",
-        "content": "The `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds are [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the `GTI_IOC` feed. After March 18, 2027, we will be removing the `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds. For more information on how to migrate, see [Migrate Mandiant legacy feeds to GTI](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).",
-        "summary": {
-          "title": "IOC Feeds Deprecation",
-          "summary": "The MANDIANT_ACTIVE_BREACH_IOC, MANDIANT_FUSION_IOC, and OPEN_SOURCE_INTEL_IOC feeds are deprecated and will be removed after March 18, 2027. The GTI_IOC feed is now the recommended replacement. For migration guidance, please refer to the documentation."
         }
       }
     ],

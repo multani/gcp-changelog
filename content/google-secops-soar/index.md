@@ -1,5 +1,33 @@
 # Google SecOps SOAR
 
+## 2026-08-09
+
+### Announcement
+
+Release 6.3.97 is being rolled out to the first phase of regions as listed
+[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+### Feature
+
+**Updated rich-text editor**
+
+Upgraded the rich-text editor across Google SecOps, including the Cases Wall,
+Use Case Upload dialog, Report Template dialog, and Dashboard Editor widget.
+
+Key changes include:
+
+* **Simplified typography**: Choose font sizes using semantic options (Small,
+  Normal, Large, Huge). Legacy font sizes on existing text are preserved.
+* **Streamlined tables**: You can insert or remove entire tables. Formatting
+  inside table cells is no longer supported.
+* **Toolbar cleanup**: Removed the Cut, Copy, and Paste buttons from the toolbar.
+  Standard OS keyboard shortcuts remain supported.
+* **Visual alignment**: Improved visual consistency between editor content
+  during editing and after submission.
+
+---
 ## 2026-08-08
 
 ### Announcement

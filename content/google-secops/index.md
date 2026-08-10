@@ -4,6 +4,16 @@
 
 ### Feature
 
+**[Spotlight Feature] Analyze feed activity with Cloud Logging**
+
+This feature is in public preview. You can now monitor, debug, and troubleshoot Google SecOps ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.
+
+This visibility into push- and pull-based ingestion mechanisms lets you use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console. Additionally, you can use the **Debug with logs** option on the **Feed management** page to open **Logs Explorer** pre-filtered for a specific feed.
+
+For more information, see [Analyze feed activity with Cloud Logging](https://docs.cloud.google.com/chronicle/docs/ingestion/analyze-feed-activity-with-cloud-logging).
+
+### Feature
+
 **Self-service Bindplane Enterprise license download**
 
 This feature is currently in Preview. Google SecOps Enterprise Plus and Google Unified Security (GUS) customers can now download their **Bindplane Enterprise (Google Edition)** license key directly from the platform console under **SIEM Settings > Collection Agents**.

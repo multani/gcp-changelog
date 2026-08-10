@@ -131,6 +131,32 @@ For more information, see the following:
 * [Set a monthly spend limit](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages#set-spend-limit)
 
 ---
+## 2026-07-29
+
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Preview)**
+
+The following data stores are available in Public Preview:
+
+* [Egnyte](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/egnyte)
+* [ServiceM8](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8)
+* [Sourcegraph](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/sourcegraph)
+* [Tavily](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/tavily)
+
+Additionally, support for new actions is available in Public Preview for the
+following data stores:
+
+* [AirOps](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airops): Suggest Brand Kit edits and write grid.
+* [Egnyte](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/egnyte): Create comments, create folders, create links, and upload files.
+* [Lovable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/lovable): Deploy projects, enable databases, send messages, and set workspace knowledge.
+* [ServiceM8](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8): Add job note, change job status, compose email message, create job, create job activity, and send job to queue.
+* [Smartsheet](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/smartsheet): Add favorites, create sheets, create workspaces, and update rows.
+
+For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+---
 ## 2026-07-28
 
 ### Feature

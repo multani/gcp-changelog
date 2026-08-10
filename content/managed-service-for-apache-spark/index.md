@@ -1,5 +1,28 @@
 # Managed Service for Apache Spark
 
+## 2026-08-07
+
+### Announcement
+
+New **Managed Service for Apache Spark** (formerly Google Cloud Serverless for
+Apache Spark) [subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions#supported-dataproc-serverless-for-spark-runtime-versions):
+
+* 1.2.85
+* 2.2.85
+* 2.3.38
+
+Notes:
+
+* Apache Spark upgraded to `3.5.3` in `2.2` runtime.
+* Apache Gluten upgraded to `1.6` in `2.3` runtime.
+
+### Change
+
+**Managed Service for Apache Spark** latest image and runtime versions:
+
+* Configured `spark.scheduler.listenerbus.exitTimeout` to 30s.
+
+---
 ## 2026-07-30
 
 ### Announcement

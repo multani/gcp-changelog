@@ -1,5 +1,26 @@
 # Security Command Center
 
+## 2026-08-10
+
+### Feature
+
+The integration of Security Command Center with
+[Application Design Center](https://docs.cloud.google.com/application-design-center/docs/overview) for
+application lifecycle security assessments is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). Design-time
+findings are sent to Security Command Center on demand during deployment. This
+feature lets you filter findings by App Hub application at the
+app-enabled folder and project levels.
+
+For more information, see [Application lifecycle security
+assessments](https://docs.cloud.google.com/security-command-center/docs/concepts-security-sources#application-security-assessments).
+
+### Feature
+
+[Vulnerability Assessment for Google Cloud](https://docs.cloud.google.com/security-command-center/docs/vulnerability-assessment-google-cloud) is available in
+[General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-04
 
 ### Feature
@@ -111,6 +132,14 @@ Protection](https://docs.cloud.google.com/security-command-center/docs/configure
 Key insights from Security Command Center are available on the [Security & compliance](https://docs.cloud.google.com/hub/docs/security)
 page in [Cloud Hub](https://docs.cloud.google.com/hub/docs/overview). This feature is available in
 [General Availability](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2026-07-13
+
+### Feature
+
+You can integrate Security Command Center with Jira to review findings in your Jira project. For more information,
+see [Integrate Jira with Security Command Center](https://docs.cloud.google.com/security-command-center/docs/integrate-jira).
 
 ---
 ## 2026-07-09

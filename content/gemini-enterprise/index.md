@@ -50,6 +50,19 @@ when available.
 note](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#July_21_2026).
 
 ---
+## 2026-08-05
+
+### Change
+
+**Gemini Enterprise: Clinical Trials data store no longer available**
+
+The Clinical Trials data store is no longer available in Public Preview. The
+data store has returned to Private Preview.
+
+**Note:** This is a correction to the [April 14,
+2026](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#April_14_2026) release note.
+
+---
 ## 2026-08-04
 
 ### Feature

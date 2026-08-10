@@ -1,5 +1,25 @@
 # Cloud Database Migration Service
 
+## 2026-08-05
+
+### Feature
+
+You can now manage your Database Migration Service migration jobs directly from the
+destination Cloud SQL instance or AlloyDB for PostgreSQL cluster pages in
+the Google Cloud console. For more information, see:
+
+* Manage homogeneous migration jobs:
+  + [SQL Server to Cloud SQL for SQL Server](https://docs.cloud.google.com/database-migration/docs/sqlserver/manage-migration-jobs)
+  + [MySQL to Cloud SQL for MySQL](https://docs.cloud.google.com/database-migration/docs/mysql/migration-job-actions)
+  + [PostgreSQL to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/postgres/migration-job-actions)
+  + [PostgreSQL to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/migration-job-actions)
+* Manage heterogeneous migration jobs:
+  + [Oracle to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/manage-migration-jobs)
+  + [Oracle to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/manage-migration-jobs)
+  + [SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/manage-migration-jobs)
+  + [SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/manage-migration-jobs)
+
+---
 ## 2026-07-02
 
 ### Change

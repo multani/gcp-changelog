@@ -1,5 +1,20 @@
 # Cortex Framework
 
+## 2026-08-11
+
+### Announcement
+
+
+
+### Release 7.0.2
+
+
+
+### Fixed
+
+* Resolved security vulnerabilities in transitive dependencies by updating the following corresponding direct dependencies: `google-auth`, `google-cloud-bigquery`, `google-cloud-dataform`, `google-cloud-resource-manager`, `google-cloud-service-usage` and `google-cloud-storage`.
+
+---
 ## 2026-08-07
 
 ### Release 7.0.1

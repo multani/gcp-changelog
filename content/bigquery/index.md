@@ -1,5 +1,23 @@
 # BigQuery
 
+## 2026-08-11
+
+### Feature
+
+[Query templates](https://docs.cloud.google.com/bigquery/docs/query-templates)
+for data clean rooms are
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA). Query templates allow data clean room owners and publishers to share
+predefined queries without exposing the underlying tables and views.
+
+Additionally,
+[table parameters](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)
+in table-valued functions (TVFs) are
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA). You can use the `ANY TABLE` type as a table parameter to create
+generic functions that accept tables of any structure.
+
+---
 ## 2026-08-10
 
 ### Feature

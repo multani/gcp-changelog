@@ -38,6 +38,12 @@ For more information, see the following:
 
 ### Feature
 
+The Assured Open Source Software Premium tier supports JavaScript (NPM) packages for Node.js environments.
+
+For more information, see [Download NPM packages using direct repository access](https://docs.cloud.google.com/security-command-center/docs/aoss-download-npm-packages) and [List of supported NPM packages for the Assured Open Source Software premium tier](https://docs.cloud.google.com/security-command-center/docs/aoss-supported-packages-npm-premium).
+
+### Feature
+
 For the Security Command Center Standard tier,
 [AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) is supported
 for both projects and organizations.

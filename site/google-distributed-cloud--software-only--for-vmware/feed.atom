@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-08-04T00:00:00+00:00</updated>
+  <updated>2026-08-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-08-11:announcement:0</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.35.400-gke.81 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.35.400-gke.81 runs on Kubernetes v1.35.3-gke.400.</p>
+<p>If you use a third-party storage vendor, check the listing of our
+previously-qualified <a href="https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">storage partners</a>.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>Version 1.35.400-gke.81 of Google Distributed Cloud for VMware is now available. This release runs on Kubernetes v1.35.3-gke.400. Please check the documentation for upgrade instructions and information on compatible storage partners.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-08-11:fixed:1</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.400-gke.81:</p>
+<ul>
+<li>Link to <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>
+  for the list of security vulnerabilities addressed in this release.</li>
+<li>Fixed an issue where user clusters remained stuck in a <code>Reconciling</code> state
+  after an admin cluster upgrade. The admin cluster controller skipped
+  reconciling legacy cluster lifecycle components during upgrades unless an initial
+  migration annotation was set. If legacy user clusters still existed on the
+  admin cluster, missing legacy API discovery (<code>cluster.k8s.io/v1alpha1</code>) caused
+  controller reconciliation to stall. With this fix, the controller preserves
+  legacy components as long as any legacy user clusters exist, and prunes them only
+  after all user clusters have migrated to advanced clusters.</li>
+<li>Fixed an issue where <code>gkectl prepare</code> failed with a <code>permission denied</code> error
+  when authenticating against a private container registry.</li>
+<li>Fixed an issue where retrying a user or admin cluster upgrade to advanced
+  clusters caused etcd secret decryption failures.</li>
+</ul>]]></content>
+    <summary>This release addresses several critical issues, including user clusters getting stuck during upgrades, permission errors with private registries, and etcd secret decryption failures during cluster upgrades. Security vulnerabilities have also been resolved.</summary>
+    <title>Fixed: Release 1.35.400-gke.81 Fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

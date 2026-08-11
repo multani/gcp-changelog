@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 580.0.0 (2026-08-11)</title>
+  <subtitle>Changelog for Google Cloud product: 580.0.0 (2026-08-11)</subtitle>
+  <updated>2026-08-11T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/580-0-0--2026-08-11-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:breaking changes:0</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Google Cloud CLI)</strong> The <code>google-cloud-sdk</code> Snap package will be deprecated and removed on September 29th, 2026. Please migrate to the <code>google-cloud-cli</code> package. For more information, see <a href="https://docs.cloud.google.com/sdk/docs/downloads-snap">https://docs.cloud.google.com/sdk/docs/downloads-snap</a>.</li>
+</ul>]]></content>
+    <summary>The google-cloud-sdk Snap package will be deprecated and removed on September 29th, 2026. Users should migrate to the google-cloud-cli package to avoid service disruption. Further details and migration instructions can be found in the official documentation.</summary>
+    <title>Breaking Changes: Snap package for Google Cloud CLI to be removed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:google cloud cli:1</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed Google Compute Engine residency detection to prevent authentication
+  failures due to transient issues and command latency regressions in
+  non-Google Cloud environments.</li>
+</ul>]]></content>
+    <summary>Compute Engine residency detection has been fixed to avoid authentication failures caused by temporary issues and command latency in non-Google Cloud environments. This update ensures smoother operation and more reliable authentication.</summary>
+    <title>Google Cloud CLI: Compute Engine residency detection improved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:apihub:2</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud apihub locations configure-and-deploy-server</code> command to GA. This command configures and deploys an MCP (Model Context Protocol) server on Apigee X via API Hub.</li>
+</ul>]]></content>
+    <summary>The `gcloud apihub locations configure-and-deploy-server` command is now generally available. This command simplifies the deployment of an MCP server on Apigee X through API Hub, streamlining your API management workflow.</summary>
+    <title>Apihub: API Hub Server Deployment Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:certificate authority service:3</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added first-party activation support to <code>gcloud privateca subordinates activate</code> via <code>--issuer-pool</code>, <code>--issuer-location</code>, and <code>--issuer-ca</code> flags.</li>
+<li>Added suggestion to use <code>gcloud privateca subordinates activate</code> when <code>gcloud privateca subordinates create</code> with issuer flags fails due to an already existing subordinate CA.</li>
+</ul>]]></content>
+    <summary>You can now activate subordinate Certificate Authorities using the `gcloud privateca subordinates activate` command with new issuer flags. The tool also suggests this activation command if creating a subordinate CA fails because it already exists.</summary>
+    <title>Certificate Authority Service: Subordinate CA Activation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:certificate manager:4</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--tags</code> flag to <code>gcloud certificate-manager</code> create commands (<code>certificates create</code>, <code>dns-authorizations create</code>, <code>issuance-configs create</code>, <code>maps create</code>, and <code>trust-configs create</code>).</li>
+</ul>]]></content>
+    <summary>The Certificate Manager now supports tags for its create commands, including certificates, DNS authorizations, issuance configurations, maps, and trust configurations. This enhancement allows for better organization and management of your resources within the Certificate Manager.</summary>
+    <title>Certificate Manager: New tagging capabilities for Certificate Manager</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:cloud backup dr:5</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added selective disk backup properties (<code>boot-disk-only</code> and <code>disk-exclusion-labels</code>) under <code>--compute-instance-properties</code> in <code>gcloud backup-dr backup-plans create</code> and <code>update</code> commands.</li>
+<li>Added <code>--source-instance-boot-disk</code> and <code>--source-instance-disk-device-name</code> flags to <code>gcloud backup-dr backups restore disk</code> for individual disk restore from compute instance backup.</li>
+</ul>]]></content>
+    <summary>New options allow for more granular control over Compute Engine instance backups, including selective disk backups and individual disk restores. This provides greater flexibility in managing your data protection strategies.</summary>
+    <title>Cloud Backup DR: Enhanced backup and restore for Compute Engine instances</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:cloud composer:6</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Enabled the 'backfill' Airflow CLI sub-command for Composer environments running Airflow 3.</li>
+<li>Enabled the 'config lint' Airflow CLI sub-command for Composer environments running Airflow 2.11.0 or higher.</li>
+</ul>]]></content>
+    <summary>We've enabled the 'backfill' Airflow CLI sub-command for Composer environments running Airflow 2. We've also enabled the 'config lint' Airflow CLI sub-command for Composer environments running Airflow 2.11.0 or higher.</summary>
+    <title>Cloud Composer: New Airflow CLI Commands Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:cloud dataflow:7</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud dataflow jobs pause</code> and <code>gcloud dataflow jobs resume</code> commands.</li>
+<li>Added <code>--enable-turnkey-alerts</code> flag to <code>gcloud dataflow jobs run</code> and <code>gcloud dataflow flex-template run</code>.</li>
+</ul>]]></content>
+    <summary>New commands are available to pause and resume Dataflow jobs, enhancing control over your data processing pipelines. Additionally, a new flag, `--enable-turnkey-alerts`, has been introduced for `gcloud dataflow jobs run` and `gcloud dataflow flex-template run` to simplify alert configuration.</summary>
+    <title>Cloud Dataflow: Dataflow job management updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:cloud iam:8</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for X.509 certificate-based credentials and locational mTLS endpoints to <code>gcloud iam workload-identity-pools create-cred-config</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud iam workload-identity-pools create-cred-config` command now supports X.509 certificate-based credentials and locational mTLS endpoints. This enhances security for workload identity configurations.</summary>
+    <title>Cloud IAM: Secure workload identity with certificates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:cloud spanner:9</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Update <code>gcloud spanner backups list</code> command to display INSTANCE_PARTITIONS column in GA track.</li>
+</ul>]]></content>
+    <summary>The `gcloud spanner backups list` command now displays the INSTANCE_PARTITIONS column. This update is generally available and provides more detailed information about your Spanner backups.</summary>
+    <title>Cloud Spanner: Spanner backups list command updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:cloud storage:10</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><code>gcloud storage rsync</code>:</li>
+<li>Skipping syncing files which goes outside of destination directory.</li>
+</ul>]]></content>
+    <summary>The `gcloud storage rsync` command now prevents files from being synced outside the destination directory, enhancing data safety. This update ensures that your synchronization operations remain within the intended boundaries.</summary>
+    <title>Cloud Storage: Cloud Storage Sync Safety Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:cluster director:11</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud cluster-director clusters create</code> to default to dynamic nodes when using flex start.</li>
+</ul>]]></content>
+    <summary>Cluster Director now defaults to dynamic nodes for flex start when creating clusters. This update enhances flexibility and resource management for your cluster deployments.</summary>
+    <title>Cluster Director: Cluster Director: Dynamic Nodes Default</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:compute engine:12</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud compute resource-policies test-iam-permissions</code> command to test IAM permissions on a Compute Engine resource policy in GA, beta, preview, and alpha.</li>
+<li>Added <code>gcloud compute snapshot-groups set-iam-policy</code> command in beta.</li>
+<li>Added <code>--kms-key-service-account</code> to <code>gcloud compute disks create</code>,
+  <code>gcloud compute images create</code>, <code>gcloud compute machine-images create</code> and
+  <code>gcloud compute snapshots create</code> for beta track.</li>
+<li>Added <code>--boot-disk-kms-key-service-account</code> and
+  <code>--instance-kms-key-service-account</code> to <code>gcloud compute instances create</code> and
+  <code>gcloud compute instance-templates create</code> for beta track.</li>
+<li>Added <code>--consistent-hash-minimum-ring-size</code> flag to
+  <code>gcloud compute backend-services create</code> and <code>update</code> commands.</li>
+<li>Added <code>--circuit-breakers-max-requests</code> flag to <code>gcloud compute backend-services create</code> and <code>update</code> commands.</li>
+<li>Added <code>gcloud compute backend-services test-iam-permissions</code> command to test IAM permissions on a Compute Engine backend service in beta, preview, and GA.</li>
+<li>Added <code>gcloud compute ssl-policies test-iam-permissions</code> command to test IAM permissions on a Compute Engine SSL policy in beta.</li>
+<li>Added <code>gcloud compute firewall-policies test-iam-permissions</code> command.</li>
+<li>Promoted <code>--graceful-shutdown</code>, <code>--graceful-shutdown-max-duration</code>, and
+  <code>--no-graceful-shutdown</code> flags to the GA track for <code>gcloud compute instances</code>
+  and <code>gcloud compute instance-templates</code> commands.</li>
+<li>Added <code>--identity-type</code> flag to <code>gcloud compute instances create</code>,
+  <code>gcloud compute instances update</code>, and
+  <code>gcloud compute instance-templates create</code> in alpha.</li>
+<li>Promoted exapool capacity flags to beta and GA tracks for
+  <code>gcloud compute storage-pools update</code> command.</li>
+<li>Added <code>--maintenance-freeze-duration</code> and <code>--clear-maintenance-freeze-duration</code> flags to <code>gcloud compute instances set-scheduling</code> and <code>gcloud compute instances create</code> in beta.</li>
+<li>Added <code>gcloud compute images test-iam-permissions</code> command to test IAM permissions on a Compute Engine image in beta, preview, and GA.</li>
+</ul>]]></content>
+    <summary>New commands and flags have been added to the Compute Engine command-line interface, including enhanced IAM permission testing, KMS key service account support for disks and images, and improved backend service configurations. Several features related to graceful shutdown and maintenance freeze have also been promoted to GA and beta tracks.</summary>
+    <title>Compute Engine: Compute Engine CLI Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:device run:13</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud device-run sessions wait</code> command to beta.</li>
+<li>Updated <code>--instrumentation-timeout</code> flag of <code>gcloud beta device-run sessions submit instrumentation</code> to allow a maximum duration of 3 hours.</li>
+<li>Updated <code>gcloud device-run devices describe</code> to display <code>hardware_type</code> instead of <code>form</code>.</li>
+<li>Updated <code>gcloud device-run devices list</code> to display <code>HARDWARE_TYPE</code> column instead of <code>FORM</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud device-run sessions wait` command has been promoted to beta. Additionally, several commands have been updated to improve user experience and provide more detailed hardware information.</summary>
+    <title>Device Run: Device Run beta improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:gke hub:14</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted API field schema for <code>--fleet-default-member-config</code> flag on
+  <code>gcloud container fleet|hub config-management enable</code> command to <code>beta</code>.</li>
+</ul>]]></content>
+    <summary>The Fleet default member configuration API for the `gcloud container fleet config-management enable` command has been promoted to beta. This change applies to the `--fleet-default-member-config` flag, offering enhanced capabilities for managing your fleet's configurations.</summary>
+    <title>GKE Hub: Fleet Config Management API Promoted to Beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:metastore:15</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud beta metastore services migrations start</code> to support migrations to Lakehouse runtime catalog(s).</li>
+<li>Deprecated Cloud SQL migration arguments in <code>gcloud beta metastore services migrations start</code>.</li>
+</ul>]]></content>
+    <summary>Metastore now supports migrations to Lakehouse runtime catalogs. The `gcloud beta metastore services migrations start` command has been updated accordingly. Note that Cloud SQL migration arguments for this command are now deprecated.</summary>
+    <title>Metastore: Metastore Migrations Enhanced for Lakehouse Runtime</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:network connectivity:16</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--export-psc-published-services-and-regional-google-apis</code> and
+  <code>--export-psc-global-google-apis</code> flags to
+  <code>gcloud beta network-connectivity hubs create</code> and
+  <code>gcloud beta network-connectivity hubs update</code> commands.</li>
+</ul>]]></content>
+    <summary>We've added new flags to the `gcloud beta network-connectivity hubs create` and `gcloud beta network-connectivity hubs update` commands. These flags allow you to export published services and regional or global Google APIs. This enhances the flexibility and control you have over your network connectivity.</summary>
+    <title>Network Connectivity: New options for network connectivity hubs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:network security:17</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>mcp</code> and <code>policyProfile</code> fields to GA in <code>gcloud network-security authz-policies import</code> and <code>export</code> commands.</li>
+<li>Made <code>loadBalancingScheme</code> optional in <code>gcloud network-security authz-policies import</code> and <code>export</code> commands.</li>
+</ul>]]></content>
+    <summary>The network security authorization policies feature is now generally available. Key fields like `mcp` and `policyProfile` are promoted to GA, and `loadBalancingScheme` is now optional in import and export commands.</summary>
+    <title>Network Security: Network Security Authorization Policies Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:580-0-0--2026-08-11-:2026-08-11:network services:18</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud network-services telemetry-policies delete</code> command to BETA.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>The `gcloud network-services telemetry-policies delete` command has been promoted to BETA. This command allows you to manage telemetry policies for your network services. Subscribe to release notes for future updates.</summary>
+    <title>Network Services: Network telemetry policies command promoted to BETA</title>
+  </entry>
+</feed>

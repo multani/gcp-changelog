@@ -1,0 +1,159 @@
+{
+  "name": "580.0.0 (2026-08-11)",
+  "entries": {
+    "2026-08-11": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Google Cloud CLI)** The `google-cloud-sdk` Snap package will be deprecated and removed on September 29th, 2026. Please migrate to the `google-cloud-cli` package. For more information, see <https://docs.cloud.google.com/sdk/docs/downloads-snap>.",
+        "summary": {
+          "title": "Snap package for Google Cloud CLI to be removed",
+          "summary": "The google-cloud-sdk Snap package will be deprecated and removed on September 29th, 2026. Users should migrate to the google-cloud-cli package to avoid service disruption. Further details and migration instructions can be found in the official documentation."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Fixed Google Compute Engine residency detection to prevent authentication\n  failures due to transient issues and command latency regressions in\n  non-Google Cloud environments.",
+        "summary": {
+          "title": "Compute Engine residency detection improved",
+          "summary": "Compute Engine residency detection has been fixed to avoid authentication failures caused by temporary issues and command latency in non-Google Cloud environments. This update ensures smoother operation and more reliable authentication."
+        }
+      },
+      {
+        "kind": "Apihub",
+        "content": "* Promoted `gcloud apihub locations configure-and-deploy-server` command to GA. This command configures and deploys an MCP (Model Context Protocol) server on Apigee X via API Hub.",
+        "summary": {
+          "title": "API Hub Server Deployment Now Generally Available",
+          "summary": "The `gcloud apihub locations configure-and-deploy-server` command is now generally available. This command simplifies the deployment of an MCP server on Apigee X through API Hub, streamlining your API management workflow."
+        }
+      },
+      {
+        "kind": "Certificate Authority Service",
+        "content": "* Added first-party activation support to `gcloud privateca subordinates activate` via `--issuer-pool`, `--issuer-location`, and `--issuer-ca` flags.\n* Added suggestion to use `gcloud privateca subordinates activate` when `gcloud privateca subordinates create` with issuer flags fails due to an already existing subordinate CA.",
+        "summary": {
+          "title": "Subordinate CA Activation",
+          "summary": "You can now activate subordinate Certificate Authorities using the `gcloud privateca subordinates activate` command with new issuer flags. The tool also suggests this activation command if creating a subordinate CA fails because it already exists."
+        }
+      },
+      {
+        "kind": "Certificate Manager",
+        "content": "* Added `--tags` flag to `gcloud certificate-manager` create commands (`certificates create`, `dns-authorizations create`, `issuance-configs create`, `maps create`, and `trust-configs create`).",
+        "summary": {
+          "title": "New tagging capabilities for Certificate Manager",
+          "summary": "The Certificate Manager now supports tags for its create commands, including certificates, DNS authorizations, issuance configurations, maps, and trust configurations. This enhancement allows for better organization and management of your resources within the Certificate Manager."
+        }
+      },
+      {
+        "kind": "Cloud Backup DR",
+        "content": "* Added selective disk backup properties (`boot-disk-only` and `disk-exclusion-labels`) under `--compute-instance-properties` in `gcloud backup-dr backup-plans create` and `update` commands.\n* Added `--source-instance-boot-disk` and `--source-instance-disk-device-name` flags to `gcloud backup-dr backups restore disk` for individual disk restore from compute instance backup.",
+        "summary": {
+          "title": "Enhanced backup and restore for Compute Engine instances",
+          "summary": "New options allow for more granular control over Compute Engine instance backups, including selective disk backups and individual disk restores. This provides greater flexibility in managing your data protection strategies."
+        }
+      },
+      {
+        "kind": "Cloud Composer",
+        "content": "* Enabled the 'backfill' Airflow CLI sub-command for Composer environments running Airflow 3.\n* Enabled the 'config lint' Airflow CLI sub-command for Composer environments running Airflow 2.11.0 or higher.",
+        "summary": {
+          "title": "New Airflow CLI Commands Available",
+          "summary": "We've enabled the 'backfill' Airflow CLI sub-command for Composer environments running Airflow 2. We've also enabled the 'config lint' Airflow CLI sub-command for Composer environments running Airflow 2.11.0 or higher."
+        }
+      },
+      {
+        "kind": "Cloud Dataflow",
+        "content": "* Added `gcloud dataflow jobs pause` and `gcloud dataflow jobs resume` commands.\n* Added `--enable-turnkey-alerts` flag to `gcloud dataflow jobs run` and `gcloud dataflow flex-template run`.",
+        "summary": {
+          "title": "Dataflow job management updates",
+          "summary": "New commands are available to pause and resume Dataflow jobs, enhancing control over your data processing pipelines. Additionally, a new flag, `--enable-turnkey-alerts`, has been introduced for `gcloud dataflow jobs run` and `gcloud dataflow flex-template run` to simplify alert configuration."
+        }
+      },
+      {
+        "kind": "Cloud IAM",
+        "content": "* Added support for X.509 certificate-based credentials and locational mTLS endpoints to `gcloud iam workload-identity-pools create-cred-config`.",
+        "summary": {
+          "title": "Secure workload identity with certificates",
+          "summary": "The `gcloud iam workload-identity-pools create-cred-config` command now supports X.509 certificate-based credentials and locational mTLS endpoints. This enhances security for workload identity configurations."
+        }
+      },
+      {
+        "kind": "Cloud Spanner",
+        "content": "* Update `gcloud spanner backups list` command to display INSTANCE\\_PARTITIONS column in GA track.",
+        "summary": {
+          "title": "Spanner backups list command updated",
+          "summary": "The `gcloud spanner backups list` command now displays the INSTANCE_PARTITIONS column. This update is generally available and provides more detailed information about your Spanner backups."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* `gcloud storage rsync`:\n  + Skipping syncing files which goes outside of destination directory.",
+        "summary": {
+          "title": "Cloud Storage Sync Safety Update",
+          "summary": "The `gcloud storage rsync` command now prevents files from being synced outside the destination directory, enhancing data safety. This update ensures that your synchronization operations remain within the intended boundaries."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Updated `gcloud cluster-director clusters create` to default to dynamic nodes when using flex start.",
+        "summary": {
+          "title": "Cluster Director: Dynamic Nodes Default",
+          "summary": "Cluster Director now defaults to dynamic nodes for flex start when creating clusters. This update enhances flexibility and resource management for your cluster deployments."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `gcloud compute resource-policies test-iam-permissions` command to test IAM permissions on a Compute Engine resource policy in GA, beta, preview, and alpha.\n* Added `gcloud compute snapshot-groups set-iam-policy` command in beta.\n* Added `--kms-key-service-account` to `gcloud compute disks create`,\n  `gcloud compute images create`, `gcloud compute machine-images create` and\n  `gcloud compute snapshots create` for beta track.\n* Added `--boot-disk-kms-key-service-account` and\n  `--instance-kms-key-service-account` to `gcloud compute instances create` and\n  `gcloud compute instance-templates create` for beta track.\n* Added `--consistent-hash-minimum-ring-size` flag to\n  `gcloud compute backend-services create` and `update` commands.\n* Added `--circuit-breakers-max-requests` flag to `gcloud compute backend-services create` and `update` commands.\n* Added `gcloud compute backend-services test-iam-permissions` command to test IAM permissions on a Compute Engine backend service in beta, preview, and GA.\n* Added `gcloud compute ssl-policies test-iam-permissions` command to test IAM permissions on a Compute Engine SSL policy in beta.\n* Added `gcloud compute firewall-policies test-iam-permissions` command.\n* Promoted `--graceful-shutdown`, `--graceful-shutdown-max-duration`, and\n  `--no-graceful-shutdown` flags to the GA track for `gcloud compute instances`\n  and `gcloud compute instance-templates` commands.\n* Added `--identity-type` flag to `gcloud compute instances create`,\n  `gcloud compute instances update`, and\n  `gcloud compute instance-templates create` in alpha.\n* Promoted exapool capacity flags to beta and GA tracks for\n  `gcloud compute storage-pools update` command.\n* Added `--maintenance-freeze-duration` and `--clear-maintenance-freeze-duration` flags to `gcloud compute instances set-scheduling` and `gcloud compute instances create` in beta.\n* Added `gcloud compute images test-iam-permissions` command to test IAM permissions on a Compute Engine image in beta, preview, and GA.",
+        "summary": {
+          "title": "Compute Engine CLI Updates",
+          "summary": "New commands and flags have been added to the Compute Engine command-line interface, including enhanced IAM permission testing, KMS key service account support for disks and images, and improved backend service configurations. Several features related to graceful shutdown and maintenance freeze have also been promoted to GA and beta tracks."
+        }
+      },
+      {
+        "kind": "Device Run",
+        "content": "* Promoted `gcloud device-run sessions wait` command to beta.\n* Updated `--instrumentation-timeout` flag of `gcloud beta device-run sessions submit instrumentation` to allow a maximum duration of 3 hours.\n* Updated `gcloud device-run devices describe` to display `hardware_type` instead of `form`.\n* Updated `gcloud device-run devices list` to display `HARDWARE_TYPE` column instead of `FORM`.",
+        "summary": {
+          "title": "Device Run beta improvements",
+          "summary": "The `gcloud device-run sessions wait` command has been promoted to beta. Additionally, several commands have been updated to improve user experience and provide more detailed hardware information."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Promoted API field schema for `--fleet-default-member-config` flag on\n  `gcloud container fleet|hub config-management enable` command to `beta`.",
+        "summary": {
+          "title": "Fleet Config Management API Promoted to Beta",
+          "summary": "The Fleet default member configuration API for the `gcloud container fleet config-management enable` command has been promoted to beta. This change applies to the `--fleet-default-member-config` flag, offering enhanced capabilities for managing your fleet's configurations."
+        }
+      },
+      {
+        "kind": "Metastore",
+        "content": "* Updated `gcloud beta metastore services migrations start` to support migrations to Lakehouse runtime catalog(s).\n* Deprecated Cloud SQL migration arguments in `gcloud beta metastore services migrations start`.",
+        "summary": {
+          "title": "Metastore Migrations Enhanced for Lakehouse Runtime",
+          "summary": "Metastore now supports migrations to Lakehouse runtime catalogs. The `gcloud beta metastore services migrations start` command has been updated accordingly. Note that Cloud SQL migration arguments for this command are now deprecated."
+        }
+      },
+      {
+        "kind": "Network Connectivity",
+        "content": "* Added `--export-psc-published-services-and-regional-google-apis` and\n  `--export-psc-global-google-apis` flags to\n  `gcloud beta network-connectivity hubs create` and\n  `gcloud beta network-connectivity hubs update` commands.",
+        "summary": {
+          "title": "New options for network connectivity hubs",
+          "summary": "We've added new flags to the `gcloud beta network-connectivity hubs create` and `gcloud beta network-connectivity hubs update` commands. These flags allow you to export published services and regional or global Google APIs. This enhances the flexibility and control you have over your network connectivity."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Promoted `mcp` and `policyProfile` fields to GA in `gcloud network-security authz-policies import` and `export` commands.\n* Made `loadBalancingScheme` optional in `gcloud network-security authz-policies import` and `export` commands.",
+        "summary": {
+          "title": "Network Security Authorization Policies Now Generally Available",
+          "summary": "The network security authorization policies feature is now generally available. Key fields like `mcp` and `policyProfile` are promoted to GA, and `loadBalancingScheme` is now optional in import and export commands."
+        }
+      },
+      {
+        "kind": "Network Services",
+        "content": "* Promoted `gcloud network-services telemetry-policies delete` command to BETA.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Network telemetry policies command promoted to BETA",
+          "summary": "The `gcloud network-services telemetry-policies delete` command has been promoted to BETA. This command allows you to manage telemetry policies for your network services. Subscribe to release notes for future updates."
+        }
+      }
+    ]
+  }
+}

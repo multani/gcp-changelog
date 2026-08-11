@@ -1,5 +1,40 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-08-11
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.35.400-gke.81 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.35.400-gke.81 runs on Kubernetes v1.35.3-gke.400.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.35.400-gke.81:
+
+* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities)
+  for the list of security vulnerabilities addressed in this release.
+* Fixed an issue where user clusters remained stuck in a `Reconciling` state
+  after an admin cluster upgrade. The admin cluster controller skipped
+  reconciling legacy cluster lifecycle components during upgrades unless an initial
+  migration annotation was set. If legacy user clusters still existed on the
+  admin cluster, missing legacy API discovery (`cluster.k8s.io/v1alpha1`) caused
+  controller reconciliation to stall. With this fix, the controller preserves
+  legacy components as long as any legacy user clusters exist, and prunes them only
+  after all user clusters have migrated to advanced clusters.
+* Fixed an issue where `gkectl prepare` failed with a `permission denied` error
+  when authenticating against a private container registry.
+* Fixed an issue where retrying a user or admin cluster upgrade to advanced
+  clusters caused etcd secret decryption failures.
+
+---
 ## 2026-08-04
 
 ### Announcement

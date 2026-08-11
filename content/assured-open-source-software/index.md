@@ -1,5 +1,14 @@
 # Assured Open Source Software
 
+## 2026-08-03
+
+### Feature
+
+The Assured Open Source Software Premium tier supports JavaScript (NPM) packages for Node.js environments.
+
+For more information, see [Download NPM packages using direct repository access](https://docs.cloud.google.com/security-command-center/docs/aoss-download-npm-packages) and [List of supported NPM packages for the Assured Open Source Software premium tier](https://docs.cloud.google.com/security-command-center/docs/aoss-supported-packages-npm-premium).
+
+---
 ## 2026-06-25
 
 ### Change

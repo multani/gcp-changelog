@@ -1,6 +1,16 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-08-10": [
+      {
+        "kind": "Fixed",
+        "content": "**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):\n\nA critical bug related to Conda channels has been fixed in-place in image versions\n`1.4.81`, `1.5.92`, `2.1.117`, and `2.2.85`. These image versions were released without pre-configured Conda channels.\n\n**Required customer actions:** To comply with Google requirements, recreate\nthe following resources if they were created using these image versions on or\nbefore August 10, 2026:\n\n* Custom images\n* Clusters",
+        "summary": {
+          "title": "Conda Channel Bug Fixed",
+          "summary": "A critical bug affecting Conda channels has been resolved in several Managed Service for Apache Spark image versions. Customers using these versions before August 10, 2026, should recreate custom images and clusters."
+        }
+      }
+    ],
     "2026-08-07": [
       {
         "kind": "Announcement",
@@ -26,6 +36,16 @@
         "summary": {
           "title": "New Managed Service for Apache Spark Image Version Available",
           "summary": "A new subminor image version, 3.5-dataproc-28, for Managed Service for Apache Spark on Google Kubernetes Engine has been released. This version removes preconfigured Conda channels, requiring manual configuration for package installations. Users are advised to update their clusters before August 25, 2026, as older versions with preconfigured channels will be disallowed after this date."
+        }
+      }
+    ],
+    "2026-07-28": [
+      {
+        "kind": "Announcement",
+        "content": "Starting with Managed Service for Apache Spark [image version `3.0`](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0),\nclusters that are created without a specified machine type for a node are created with a\n[Flex VM](https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/flexible-vms)\nconfiguration for the node.",
+        "summary": {
+          "title": "Apache Spark 3.0 Node Configuration Update",
+          "summary": "Managed Service for Apache Spark now defaults to Flex VM configurations for nodes in clusters created without a specified machine type, starting with image version 3.0. This change enhances flexibility and resource optimization for your Spark workloads. Existing clusters are not affected by this update."
         }
       }
     ],

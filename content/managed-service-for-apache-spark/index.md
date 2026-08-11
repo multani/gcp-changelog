@@ -1,5 +1,22 @@
 # Managed Service for Apache Spark
 
+## 2026-08-10
+
+### Fixed
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+
+A critical bug related to Conda channels has been fixed in-place in image versions
+`1.4.81`, `1.5.92`, `2.1.117`, and `2.2.85`. These image versions were released without pre-configured Conda channels.
+
+**Required customer actions:** To comply with Google requirements, recreate
+the following resources if they were created using these image versions on or
+before August 10, 2026:
+
+* Custom images
+* Clusters
+
+---
 ## 2026-08-07
 
 ### Announcement
@@ -45,6 +62,16 @@ and replaced with new
 [clusters created](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/quickstarts/gke-quickstart-create-cluster#create-dpgke-cluster)
 or [recreated](https://docs.cloud.google.com/managed-spark/docs/guides/dpgke/gke-recreate-cluster#recreate-gke-cluster)
 with images that don't have preconfigured Conda channels.
+
+---
+## 2026-07-28
+
+### Announcement
+
+Starting with Managed Service for Apache Spark [image version `3.0`](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0),
+clusters that are created without a specified machine type for a node are created with a
+[Flex VM](https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/flexible-vms)
+configuration for the node.
 
 ---
 ## 2026-07-15

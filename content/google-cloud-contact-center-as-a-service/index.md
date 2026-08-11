@@ -1,5 +1,21 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-08-10
+
+### Announcement
+
+**Google Cloud CCaaS 6.0**
+
+We've released version 6.0 of Google Cloud CCaaS.
+
+Version 6.0 updates internal Google Cloud CCaaS infrastructure. It contains no
+customer-facing changes from version 5.2.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+---
 ## 2026-08-07
 
 ### Announcement

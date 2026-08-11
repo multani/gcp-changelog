@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2026-08-10
+
+### Feature
+
+The [Cloud Run functions upgrade tool](https://docs.cloud.google.com/functions/1stgendocs/migrating/upgrade-gen1-functions) is in [General Availability](https://cloud.google.com/products#product-launch-stages). Use this tool to upgrade 1st gen functions to Cloud Run functions.
+
+---
 ## 2026-07-27
 
 ### Feature

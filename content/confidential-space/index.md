@@ -1,5 +1,12 @@
 # Confidential Space
 
+## 2026-08-10
+
+### Announcement
+
+A new Confidential Space image (260701) is available.
+
+---
 ## 2026-06-24
 
 ### Announcement

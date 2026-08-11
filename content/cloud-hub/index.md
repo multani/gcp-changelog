@@ -1,5 +1,15 @@
 # Cloud Hub
 
+## 2026-08-10
+
+### Announcement
+
+Starting September 15, 2026, the App Topology API transitions to a
+usage-based billing model that includes a daily free data usage allotment. For
+more information, see
+[App Topology pricing](https://docs.cloud.google.com/hub/docs/app-topology/index#pricing).
+
+---
 ## 2026-07-17
 
 ### Feature

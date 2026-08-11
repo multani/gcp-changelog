@@ -1,5 +1,23 @@
 # Cloud SQL for SQL Server
 
+## 2026-08-07
+
+### Change
+
+Newly created instances configured with [high availability (HA)](https://docs.cloud.google.com/sql/docs/sqlserver/high-availability)
+now have [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/sqlserver/dataplex-catalog-integration)
+enabled by default.
+
+Cloud SQL for SQL Server instances send updates and metadata to Knowledge Catalog
+to help support data discovery.
+
+You can either verify enablement or [disable the feature](https://docs.cloud.google.com/sql/docs/sqlserver/dataplex-catalog-integration#deactivate-dataplex-catalog)
+using the Google Cloud console.
+
+For more information, see
+[Manage your Cloud SQL resources using Knowledge Catalog](https://docs.cloud.google.com/sql/docs/sqlserver/dataplex-catalog-integration).
+
+---
 ## 2026-08-04
 
 ### Feature

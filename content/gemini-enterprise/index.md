@@ -1,5 +1,19 @@
 # Gemini Enterprise
 
+## 2026-08-10
+
+### Feature
+
+**Gemini Enterprise: Export user data to a CSV file**
+
+Gemini Enterprise administrators can export user data to a comma-separated
+values (CSV) file to sort, filter, and analyze records offline. This feature is
+generally available (GA).
+
+For more information, see
+[Export user data](https://docs.cloud.google.com/gemini/enterprise/docs/licenses#export-user-data).
+
+---
 ## 2026-08-07
 
 ### Feature

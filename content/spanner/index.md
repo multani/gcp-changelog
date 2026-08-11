@@ -1,5 +1,21 @@
 # Spanner
 
+## 2026-08-10
+
+### Feature
+
+Dynamic channel pooling (DCP) for gRPC channels in the Spanner Go and Java client
+libraries is
+generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+DCP prevents performance
+issues from under-provisioned or over-provisioned channels and reduces configuration
+overhead. DCP is disabled by default.
+
+For more information, see
+[Configure the number of sessions and gRPC channels in the pools](https://docs.cloud.google.com/spanner/docs/sessions#configure_the_number_of_sessions_and_grpc_channels_in_the_pools).
+
+---
 ## 2026-07-28
 
 ### Feature

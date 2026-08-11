@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-08-10
+
+### Feature
+
+You can use the Google Cloud console to secure access to your instances by using [basic token-based authentication](https://docs.cloud.google.com/memorystore/docs/valkey/manage-basic-auth). This feature is available in [Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-31
 
 ### Feature

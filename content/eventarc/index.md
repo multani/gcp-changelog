@@ -1,5 +1,15 @@
 # Eventarc
 
+## 2026-08-10
+
+### Change
+
+When configuring Eventarc triggers for Cloud Run destinations (including Cloud
+Run functions), you can specify a single delivery attempt with no retries. For
+more information, see
+[Retries for Cloud Run destinations](https://docs.cloud.google.com/eventarc/docs/retry-events#run-targets).
+
+---
 ## 2026-04-22
 
 ### Feature

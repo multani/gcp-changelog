@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-08-10
+
+### Feature
+
+BigQuery now supports the `gemini-3.1-flash-lite` and `gemini-3.5-flash` GA
+models, which are available for the `us`, `eu`, and `global` multi-regional
+endpoints. You can use these models in all generative AI functions.
+For information about how to specify a multi-regional endpoint and
+how endpoints are selected, read about
+[locations](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#locations)
+in the generative AI overview.
+
+---
 ## 2026-08-03
 
 ### Feature

@@ -1,5 +1,22 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-08-07
+
+### Change
+
+Newly created instances configured with [high availability (HA)](https://docs.cloud.google.com/sql/docs/postgres/high-availability)
+now have [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)
+enabled by default.
+
+Cloud SQL for PostgreSQL instances running on PostgreSQL version 14.0 or later
+send updates and metadata to Knowledge Catalog in near real-time.
+
+You can either verify enablement or [disable the feature](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#deactivate-dataplex-catalog)
+using the Google Cloud console.
+
+For more information, see [Near real-time](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#near-real-time).
+
+---
 ## 2026-08-06
 
 ### Feature

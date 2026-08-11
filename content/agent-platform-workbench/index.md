@@ -1,5 +1,131 @@
 # Agent Platform Workbench
 
+## 2026-08-02
+
+### Change
+
+
+
+### 20260802-2330-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260802-2330-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed an error that could prevent creating new `micromamba` environments at runtime due to package cache permissions.
+
+### Fixed
+
+Fixed an error that could prevent creating new `micromamba` environments at runtime due to package cache permissions.
+
+### Change
+
+
+
+### 20260802-2230-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260802-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+---
+## 2026-07-30
+
+### Change
+
+
+
+### M145 Release
+
+
+
+### Change
+
+
+
+### 20260730-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the JupyterLab Git extension's Pull and Push buttons being disabled by pinning `jupyterlab-git` to 0.53.0.
+
+### Fixed
+
+Fixed the JupyterLab Git extension's Pull and Push buttons being disabled by pinning `jupyterlab-git` to 0.53.0.
+
+### Fixed
+
+Fixed an error that could prevent creating new `micromamba` environments at runtime due to package cache permissions.
+
+### Fixed
+
+Fixed an error that could prevent creating new `micromamba` environments at runtime due to package cache permissions.
+
+### Fixed
+
+Workbench internal agents now trust custom and enterprise CA certificates installed on the host operating system, fixing TLS certificate verification failures for connections routed through the instance proxy.
+
+### Fixed
+
+Workbench internal agents now trust custom and enterprise CA certificates installed on the host operating system, fixing TLS certificate verification failures for connections routed through the instance proxy.
+
+### Fixed
+
+Files created by the post-startup script are now owned by the `jupyter` user, and `git safe.directory` is configured so that root-owned repositories continue to work.
+
+### Fixed
+
+Files created by the post-startup script are now owned by the `jupyter` user, and `git safe.directory` is configured so that root-owned repositories continue to work.
+
+### Change
+
+The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.
+
+### Change
+
+The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.
+
+---
 ## 2026-07-13
 
 ### Feature

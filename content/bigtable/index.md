@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-08-12
+
+### Feature
+
+You can use the `CLUSTER_ATTRIBUTE()` filter to restrict continuous materialized
+view processing to specific clusters. This function lets you isolate views
+within an instance. This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Non-deterministic SQL functions](https://docs.cloud.google.com/bigtable/docs/continuous-materialized-views#non-deterministic-functions).
+
+---
 ## 2026-08-10
 
 ### Libraries

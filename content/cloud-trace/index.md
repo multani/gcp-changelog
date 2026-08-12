@@ -1,5 +1,29 @@
 # Cloud Trace
 
+## 2026-08-12
+
+### Feature
+
+The following remote MCP servers automatically generate a trace span for
+`tools/call` operations. These spans can help you understand the behavior of
+your agentic applications. For more information, see
+[Investigate MCP calls using Trace](https://docs.cloud.google.com/stackdriver/docs/instrumentation/trace-remote-mcp-server-calls).
+
+* Cloud Billing
+* Personalized Service Health
+
+### Feature
+
+Google Cloud Observability automatically generates trace exemplars for charts on custom
+dashboards that display the result of a SQL query when the query runs against
+your trace data and satisfies some constraints. The exemplars link the
+SQL query result to specific traces. This feature is in
+[Preview](https://docs.cloud.google.com/products#product-launch-stages).
+
+For more information, see
+[Generate and display trace exemplars](https://docs.cloud.google.com/trace/docs/analytics-chart#show-trace-exemplars).
+
+---
 ## 2026-06-29
 
 ### Feature

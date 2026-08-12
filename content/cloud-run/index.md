@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-08-11
+
+### Feature
+
+Cloud Run NVIDIA L4 GPU driver version 580.x.x is available for [services](https://docs.cloud.google.com/run/docs/configuring/services/gpu), [jobs](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu), and [worker pools](https://docs.cloud.google.com/run/docs/configuring/workerpools/gpu).
+
+---
 ## 2026-08-05
 
 ### Feature

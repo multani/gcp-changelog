@@ -2748,6 +2748,47 @@
 
 
 <h1 id="bigtable">Bigtable</h1>
+<h2 id="2026-08-10">2026-08-10</h2>
+<h3 id="libraries">Libraries</h3>
+<h3 id="go">Go</h3>
+<h4 id="1520-2026-08-03"><a href="https://github.com/googleapis/google-cloud-go/compare/bigtable/v1.51.0...bigtable/v1.52.0">1.52.0</a> (2026-08-03)</h4>
+<h5 id="features">Features</h5>
+<ul>
+<li><strong>bigtable:</strong> Add AFE picker (Simple / LeastInFlight / LeastLatency) (<a href="https://github.com/googleapis/google-cloud-go/issues/20204">#20204</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/bcbf71431d1742e2e13a13d1cbe8b0fc0433aede">bcbf714</a>)</li>
+<li><strong>bigtable:</strong> Add ClientConfig.DisableSession to opt out of session backend (<a href="https://github.com/googleapis/google-cloud-go/issues/20297">#20297</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/7ee5e44e0304c5509b9b77fe0760d97771657cd9">7ee5e44</a>)</li>
+<li><strong>bigtable:</strong> Add getClientConfigDirectAccessChecker for session pools (<a href="https://github.com/googleapis/google-cloud-go/issues/20209">#20209</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/3b8d30adeaf03c8452207b056d69922646d63bf2">3b8d30a</a>)</li>
+<li><strong>bigtable:</strong> Add NoOpChannelPrimer for session channel pools (<a href="https://github.com/googleapis/google-cloud-go/issues/20208">#20208</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/d055a8a1b23980ad4b53c0cd690e291c9aa6248c">d055a8a</a>)</li>
+<li><strong>bigtable:</strong> Add per-AFE sessionList for the two-tier session pool (<a href="https://github.com/googleapis/google-cloud-go/issues/20224">#20224</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/dbf0c3f3ea37279a2aa00803ded8e489229b15c9">dbf0c3f</a>)</li>
+<li><strong>bigtable:</strong> Add protoRowToRow conversion helper for TableShim (<a href="https://github.com/googleapis/google-cloud-go/issues/20257">#20257</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/1297143a4fab4bf58cbd0bd6e44db4653a818c47">1297143</a>)</li>
+<li><strong>bigtable:</strong> Add Session debug surface (observability fields + methods) (<a href="https://github.com/googleapis/google-cloud-go/issues/20211">#20211</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/d8d3e160c3e63150ef5d14e83a2ea0fd25a7e214">d8d3e16</a>)</li>
+<li><strong>bigtable:</strong> Add Session lifecycle (Start, Close, ForceClose, readLoop, heartBeatLoop) (<a href="https://github.com/googleapis/google-cloud-go/issues/20215">#20215</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/b9e53c6276efe28428adfcd4671d7ac8c7e8d330">b9e53c6</a>)</li>
+<li><strong>bigtable:</strong> Add Session struct + state machine (<a href="https://github.com/googleapis/google-cloud-go/issues/20117">#20117</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/09acbb37a385d2c6fca465adb70a3eb03ea4a38e">09acbb3</a>)</li>
+<li><strong>bigtable:</strong> Add session.Config.EnableDebug to gate sessionz debug state (<a href="https://github.com/googleapis/google-cloud-go/issues/20247">#20247</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/ce74c315d41371b0ddf2c1ba7342446695a53900">ce74c31</a>)</li>
+<li><strong>bigtable:</strong> Add SessionClient + SessionTable + lazyPool (<a href="https://github.com/googleapis/google-cloud-go/issues/20228">#20228</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/ab2c96c3ed62514dcf6526bb32259267fbe63e97">ab2c96c</a>)</li>
+<li><strong>bigtable:</strong> Add SessionPoolImpl (two-tier pool + scaling + debug) (<a href="https://github.com/googleapis/google-cloud-go/issues/20225">#20225</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/683eda8c690fd2b948bd3b56777039d28421ee7c">683eda8</a>)</li>
+<li><strong>bigtable:</strong> Rename session pool display to <resource-id>-<PERM> (<a href="https://github.com/googleapis/google-cloud-go/issues/20248">#20248</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/35e146e25d2897082f2d1b78b9273087efd855fd">35e146e</a>)</li>
+<li><strong>bigtable:</strong> Route Client.Open()-returned *Table through the Diverter (<a href="https://github.com/googleapis/google-cloud-go/issues/20273">#20273</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/2b81c7dc2d73739f4d5f87aa43cc9a3ac031822d">2b81c7d</a>)</li>
+<li><strong>bigtable:</strong> State-based classification for abnormal session close (<a href="https://github.com/googleapis/google-cloud-go/issues/20243">#20243</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/f2905b793d062ae597d9c39597d15a680e9e9967">f2905b7</a>)</li>
+<li><strong>bigtable:</strong> TableShim fallback to classic on session UNIMPLEMENTED (<a href="https://github.com/googleapis/google-cloud-go/issues/20269">#20269</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/36540af84ab5f7360c5c1a92bbfb5a631d4c5cc6">36540af</a>)</li>
+<li><strong>bigtable:</strong> TTL-on-idle cache for per-resource session.TableAPI (<a href="https://github.com/googleapis/google-cloud-go/issues/20263">#20263</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/00b2a49de38fe600736cf10c496f85e082ae8871">00b2a49</a>)</li>
+<li><strong>bigtable:</strong> Wire Diverter on Client and route Open* via TableShim (<a href="https://github.com/googleapis/google-cloud-go/issues/20256">#20256</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/b32fbd7d02f835e8f83b4be1926e5826c27fa8a9">b32fbd7</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>bigtable:</strong> AFE picker latency signal — subtract poolWait and compute TransportLatency = wire − backend at source (<a href="https://github.com/googleapis/google-cloud-go/issues/20281">#20281</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/bb8c4d56bf5bb53e5e1f1d510be326821fe4ddee">bb8c4d5</a>)</li>
+<li><strong>bigtable:</strong> Guard NewStream OnFinish against grpc-go double-fire (<a href="https://github.com/googleapis/google-cloud-go/issues/20295">#20295</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/b51da29536de5aa59582d2a9633a07186f8636ae">b51da29</a>)</li>
+<li><strong>bigtable:</strong> Real per-resource pool teardown on sessionTable.Close + cache close-race gate (<a href="https://github.com/googleapis/google-cloud-go/issues/20264">#20264</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/599aea9e67ca2526b7822eb1e873e3aaf7b5124e">599aea9</a>)</li>
+<li><strong>bigtable:</strong> Session.durations / session.uptime — set explicit histogram bucket boundaries (<a href="https://github.com/googleapis/google-cloud-go/issues/20276">#20276</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/97eee225c412db9288bb7813e6b9cc856e6aba44">97eee22</a>)</li>
+<li><strong>bigtable:</strong> SessionTableHandle self-heals across cache eviction (<a href="https://github.com/googleapis/google-cloud-go/issues/20296">#20296</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/0dd98cd75383bd5902f3bec936d9ae68c64e6682">0dd98cd</a>)</li>
+<li><strong>bigtable:</strong> Translate ctx errors to gRPC status on session vRPC (<a href="https://github.com/googleapis/google-cloud-go/issues/20299">#20299</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/0f3b2a519e07eccdfacad1129aa0fb69bc8f06e6">0f3b2a5</a>)</li>
+<li><strong>bigtable:</strong> Treat PingAndWarm NotFound as a successful prime (<a href="https://github.com/googleapis/google-cloud-go/issues/20219">#20219</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/a1557adec2fc8a579f70cdb4de5f959ceb8d51a1">a1557ad</a>)</li>
+</ul>
+<h5 id="performance-improvements">Performance Improvements</h5>
+<ul>
+<li><strong>bigtable:</strong> Delete periodic Tick loop; sizing is event-driven (<a href="https://github.com/googleapis/google-cloud-go/issues/20285">#20285</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/2c096bddf6fc5353a3804d222b3683a55eda13e5">2c096bd</a>)</li>
+<li><strong>bigtable:</strong> Drop pick_lost_race debug tag from CheckoutSession hot path (<a href="https://github.com/googleapis/google-cloud-go/issues/20280">#20280</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/bd0e400948a15639546f150d5d2b1a1a7ceb5741">bd0e400</a>)</li>
+</ul>
+<hr />
 <h2 id="2026-07-30">2026-07-30</h2>
 <h3 id="feature">Feature</h3>
 <p>You can use Bigtable as a remote storage backend for
@@ -2771,6 +2812,33 @@ natural language prompts. This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.
 For more information, see
 <a href="https://docs.cloud.google.com/bigtable/docs/use-bigtable-mcp">Use the Bigtable remote MCP server</a>.</p>
+<h3 id="libraries_1">Libraries</h3>
+<h3 id="go_1">Go</h3>
+<h4 id="1510-2026-07-23"><a href="https://github.com/googleapis/google-cloud-go/compare/bigtable/v1.50.0...bigtable/v1.51.0">1.51.0</a> (2026-07-23)</h4>
+<h5 id="features_1">Features</h5>
+<ul>
+<li><strong>bigtable:</strong> Add ChainInterceptors and RetryingVRpc for vRPC pipeline (<a href="https://github.com/googleapis/google-cloud-go/issues/20185">#20185</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/c7a832aa13bad0896c3906f491d798482dd8c02a">c7a832a</a>)</li>
+<li><strong>bigtable:</strong> Add ClientConfigurationManager (<a href="https://github.com/googleapis/google-cloud-go/issues/19986">#19986</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/3a8f9270d9c2831b5d76efe89c913555577ace6a">3a8f927</a>)</li>
+<li><strong>bigtable:</strong> Add debug tag counter (recordDebugTag / assertDebugTag) (<a href="https://github.com/googleapis/google-cloud-go/issues/20114">#20114</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/3c97590192a19306612389e9d55b93b538e8584b">3c97590</a>)</li>
+<li><strong>bigtable:</strong> Add lazyPool helper for on-demand session pool opening (<a href="https://github.com/googleapis/google-cloud-go/issues/20182">#20182</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/f6ae3fbf65e9e41a1c2d64f281f881ebe8828439">f6ae3fb</a>)</li>
+<li><strong>bigtable:</strong> Add PeakEwma continuous time-decay latency tracker (<a href="https://github.com/googleapis/google-cloud-go/issues/20187">#20187</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/9d124ef7773dae916dfbb97657f83ae633d15220">9d124ef</a>)</li>
+<li><strong>bigtable:</strong> Add PoolSizer for server-driven session pool capacity (<a href="https://github.com/googleapis/google-cloud-go/issues/20189">#20189</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/57ebbeb8e846f574034e93060682309bc1a00dc1">57ebbeb</a>)</li>
+<li><strong>bigtable:</strong> Add session package with SessionClient + SessionTableAPI interfaces (<a href="https://github.com/googleapis/google-cloud-go/issues/20180">#20180</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/4b82fd25cc81cdee5563d5a049b48d2694bca088">4b82fd2</a>)</li>
+<li><strong>bigtable:</strong> Add Session primitives (AttemptOutcome, vRPC ctx, msgtype) (<a href="https://github.com/googleapis/google-cloud-go/issues/20116">#20116</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/e1011e2d2c43a838abe080ad9d3f614f8c92e55a">e1011e2</a>)</li>
+<li><strong>bigtable:</strong> Add Session state enum (<a href="https://github.com/googleapis/google-cloud-go/issues/19981">#19981</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/07489725b63174375f7faa68b7aad18cc638c27b">0748972</a>)</li>
+<li><strong>bigtable:</strong> Add SessionThrottler / AdaptiveSessionThrottler for OpenSession pacing (<a href="https://github.com/googleapis/google-cloud-go/issues/20184">#20184</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/02e3c6d19e8ff5b6a12803bc9b0636575e070dff">02e3c6d</a>)</li>
+<li><strong>bigtable:</strong> Add SessionThrottler / AdaptiveSessionThrottler for OpenSession pacing (<a href="https://github.com/googleapis/google-cloud-go/issues/20184">#20184</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/29be83ed3b631a472e28be4d8569d34f0a071d86">29be83e</a>)</li>
+<li><strong>bigtable:</strong> Add sessionTracer for per-Session lifecycle + vRPC metrics (<a href="https://github.com/googleapis/google-cloud-go/issues/20190">#20190</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/a4663459260ba054af918c29a94570d5ec69f399">a466345</a>)</li>
+<li><strong>bigtable:</strong> Enable new auth library and JWT for instance admin client (<a href="https://github.com/googleapis/google-cloud-go/issues/20013">#20013</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/21c4a448adf789e8acaebfaed7df5c49ac434aab">21c4a44</a>)</li>
+<li><strong>bigtable:</strong> Modularize channel priming behind a ChannelPrimer interface (<a href="https://github.com/googleapis/google-cloud-go/issues/20027">#20027</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/5214ab7033bd8a5aa672878ae17ce828d5d78c3c">5214ab7</a>)</li>
+<li><strong>bigtable:</strong> Modularize Direct Access compatibility check (<a href="https://github.com/googleapis/google-cloud-go/issues/19987">#19987</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/a25e93d25635b8fd42985edbe0290ba9a8cf2169">a25e93d</a>)</li>
+<li><strong>o11y:</strong> Regenerate clients for LRO tracing (<a href="https://github.com/googleapis/google-cloud-go/issues/20107">#20107</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/779074edd267a26520bae459307660953129eb07">779074e</a>)</li>
+</ul>
+<h5 id="bug-fixes_1">Bug Fixes</h5>
+<ul>
+<li><strong>bigtable:</strong> Default cluster/zone in toOtelMetricAttrs to avoid Monitoring reject (<a href="https://github.com/googleapis/google-cloud-go/issues/20178">#20178</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/14493f4de7298b8fac36c1ee67f2647fbc2e6ba9">14493f4</a>)</li>
+<li><strong>bigtable:</strong> Eliminate stats-handler MD race in internal/metrics tracer (<a href="https://github.com/googleapis/google-cloud-go/issues/20158">#20158</a>) (<a href="https://github.com/googleapis/google-cloud-go/commit/c38706633aa13da88e8c54b0b6340b9ce7209007">c387066</a>)</li>
+</ul>
 <hr />
 <h2 id="2026-07-14">2026-07-14</h2>
 <h3 id="feature_3">Feature</h3>
@@ -3013,16 +3081,16 @@ mutations to include in each batch sent to Bigtable. This feature is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="libraries">Libraries</h3>
+<h3 id="libraries_2">Libraries</h3>
 <h3 id="java">Java</h3>
 <h4 id="2720-2026-01-30"><a href="https://github.com/googleapis/java-bigtable/compare/v2.71.0...v2.72.0">2.72.0</a> (2026-01-30)</h4>
-<h5 id="features">Features</h5>
+<h5 id="features_2">Features</h5>
 <ul>
 <li>Add GcRuleBuilder for safe GC rule construction (<a href="https://github.com/googleapis/java-bigtable/issues/2758">#2758</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/4a99a8ccad8469933b63aa63205bc2c800a24fef">4a99a8c</a>)</li>
 <li>Handle StatusRuntimeException in CbtTestProxy, increase inbound message / metadata size (<a href="https://github.com/googleapis/java-bigtable/issues/2763">#2763</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/3e27d2895816685743ee59d566cd8870447c02f1">3e27d28</a>)</li>
 <li>Regenerate protos using protoc 4</li>
 </ul>
-<h5 id="bug-fixes">Bug Fixes</h5>
+<h5 id="bug-fixes_2">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.66.0 (<a href="https://github.com/googleapis/java-bigtable/commit/ca240078ea4400cd071d796259ed4b8c9501a6f6">ca24007</a>)</li>
 </ul>
@@ -3044,14 +3112,14 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/m
 information, see <a href="https://docs.cloud.google.com/bigtable/docs/locations">Bigtable locations</a>.</p>
 <hr />
 <h2 id="2026-01-19">2026-01-19</h2>
-<h3 id="libraries_1">Libraries</h3>
+<h3 id="libraries_3">Libraries</h3>
 <h3 id="java_1">Java</h3>
 <h4 id="2710-2026-01-15"><a href="https://github.com/googleapis/java-bigtable/compare/v2.70.1...v2.71.0">2.71.0</a> (2026-01-15)</h4>
-<h5 id="features_1">Features</h5>
+<h5 id="features_3">Features</h5>
 <ul>
 <li>Add CSM for batch write flow control (<a href="https://github.com/googleapis/java-bigtable/issues/2685">#2685</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/62ffd1babb910bc9ef2e83482de9500e3e1a1b4f">62ffd1b</a>)</li>
 </ul>
-<h5 id="bug-fixes_1">Bug Fixes</h5>
+<h5 id="bug-fixes_3">Bug Fixes</h5>
 <ul>
 <li><strong>bigtable:</strong> Add handling for gauge metrics (<a href="https://github.com/googleapis/java-bigtable/issues/2719">#2719</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/87aa4d54c047d2de1e92d75a4ff69e6d02689bdb">87aa4d5</a>)</li>
 <li>Create stub with BigtableClientContext so otels are closed (<a href="https://github.com/googleapis/java-bigtable/issues/2747">#2747</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/3d0a6d9d52bd8a97adafe04ac7d6142b42139e51">3d0a6d9</a>)</li>
@@ -3073,10 +3141,10 @@ indexes on the same base table. For more information, see
 <a href="https://docs.cloud.google.com/bigtable/docs/continuous-materialized-views">Continuous materialized views</a>.</p>
 <hr />
 <h2 id="2025-12-22">2025-12-22</h2>
-<h3 id="libraries_2">Libraries</h3>
+<h3 id="libraries_4">Libraries</h3>
 <h3 id="python">Python</h3>
 <h4 id="2350-2025-12-16"><a href="https://github.com/googleapis/python-bigtable/compare/v2.34.0...v2.35.0">2.35.0</a> (2025-12-16)</h4>
-<h5 id="features_2">Features</h5>
+<h5 id="features_4">Features</h5>
 <ul>
 <li>add basic interceptor to client (#1206) (<a href="https://github.com/googleapis/python-bigtable/commit/6561cfac">6561cfac</a>)</li>
 <li>Add encodings for STRUCT and the Timestamp type (<a href="https://github.com/googleapis/python-bigtable/commit/72dfdc44">72dfdc44</a>)</li>
@@ -3084,7 +3152,7 @@ indexes on the same base table. For more information, see
 <li>Add Type API updates needed to support structured keys in materialized views (<a href="https://github.com/googleapis/python-bigtable/commit/72dfdc44">72dfdc44</a>)</li>
 <li>support mTLS certificates when available (#1249) (<a href="https://github.com/googleapis/python-bigtable/commit/ca20219c">ca20219c</a>)</li>
 </ul>
-<h5 id="bug-fixes_2">Bug Fixes</h5>
+<h5 id="bug-fixes_4">Bug Fixes</h5>
 <ul>
 <li>re-export AddToCell for consistency (#1241) (<a href="https://github.com/googleapis/python-bigtable/commit/2a5baf11">2a5baf11</a>)</li>
 <li>async client uses fixed grace period (#1236) (<a href="https://github.com/googleapis/python-bigtable/commit/544db1cd">544db1cd</a>)</li>
@@ -3094,7 +3162,7 @@ indexes on the same base table. For more information, see
 </ul>
 <h3 id="java_2">Java</h3>
 <h4 id="2710-rc1-2025-12-19"><a href="https://github.com/googleapis/java-bigtable/compare/v2.70.1...v2.71.0-rc1">2.71.0-rc1</a> (2025-12-19)</h4>
-<h5 id="features_3">Features</h5>
+<h5 id="features_5">Features</h5>
 <ul>
 <li>update with latest from main (<a href="https://github.com/googleapis/java-bigtable/issues/2740">#2740</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/90e1a02c46830751a0f158b3a337eb2f926b0ee0">90e1a02</a>)</li>
 <li>feat: Upgrade protobuf gen code to 4.33 (<a href="https://github.com/googleapis/java-bigtable/issues/2741">#2741</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/2b1d201d56540cdb45b65b4ed2a1c786a519d3a0">2b1d201</a>)</li>
@@ -3105,7 +3173,7 @@ indexes on the same base table. For more information, see
 </ul>
 <hr />
 <h2 id="2025-12-15">2025-12-15</h2>
-<h3 id="libraries_3">Libraries</h3>
+<h3 id="libraries_5">Libraries</h3>
 <h3 id="java_3">Java</h3>
 <h4 id="2701-2025-12-12"><a href="https://github.com/googleapis/java-bigtable/compare/v2.70.0...v2.70.1">2.70.1</a> (2025-12-12)</h4>
 <h5 id="dependencies_3">Dependencies</h5>
@@ -3134,16 +3202,16 @@ information, see <a href="https://docs.cloud.google.com/bigtable/docs/import-exp
 <h3 id="feature_45">Feature</h3>
 <p>Bigtable provides vector and key-value store integrations for LangChain, an LLM orchestration framework.
 For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/langchain">Build LLM-powered applications using LangChain</a> and <a href="https://docs.cloud.google.com/bigtable/docs/mmr-vector-search">Perform Maximal Marginal Relevance search with LangChain on Bigtable</a>.</p>
-<h3 id="libraries_4">Libraries</h3>
+<h3 id="libraries_6">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://docs.cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_4">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2680-2025-10-22"><a href="https://github.com/googleapis/java-bigtable/compare/v2.67.1...v2.68.0">2.68.0</a> (2025-10-22)</h4>
-<h5 id="features_4">Features</h5>
+<h5 id="features_6">Features</h5>
 <ul>
 <li>Add Type API updates needed to support structured keys in materialized views (<a href="https://github.com/googleapis/java-bigtable/commit/469290eb188ce7155abc81d4fec9dd8319851cd9">469290e</a>)</li>
 </ul>
-<h5 id="bug-fixes_3">Bug Fixes</h5>
+<h5 id="bug-fixes_5">Bug Fixes</h5>
 <ul>
 <li>Add ReadRows/SampleRowKeys bindings for materialized views (<a href="https://github.com/googleapis/java-bigtable/commit/469290eb188ce7155abc81d4fec9dd8319851cd9">469290e</a>)</li>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.62.3 (<a href="https://github.com/googleapis/java-bigtable/commit/469290eb188ce7155abc81d4fec9dd8319851cd9">469290e</a>)</li>
@@ -3158,7 +3226,7 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <h3 id="python_1">Python</h3>
 <h3 id="changes-for-google-cloud-bigtable_1">Changes for <a href="https://github.com/googleapis/python-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2340-2025-10-16"><a href="https://github.com/googleapis/python-bigtable/compare/v2.33.0...v2.34.0">2.34.0</a> (2025-10-16)</h4>
-<h5 id="features_5">Features</h5>
+<h5 id="features_7">Features</h5>
 <ul>
 <li>Add support for Python 3.14 (<a href="https://github.com/googleapis/python-bigtable/issues/1217">#1217</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/263332af71a229cb4fa598008a708137086a6f67">263332a</a>)</li>
 </ul>
@@ -3168,7 +3236,7 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <p>You can <a href="https://docs.cloud.google.com/bigtable/docs/manage-data-using-console#save-query">save queries</a> and then <a href="https://docs.cloud.google.com/bigtable/docs/manage-data-using-console#view_and_manage_saved_queries">view and manage</a> the saved queries in Bigtable Studio. This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-10-13">2025-10-13</h2>
-<h3 id="libraries_5">Libraries</h3>
+<h3 id="libraries_7">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://docs.cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_5">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_2">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
@@ -3180,12 +3248,12 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <h3 id="python_2">Python</h3>
 <h3 id="changes-for-google-cloud-bigtable_3">Changes for <a href="https://github.com/googleapis/python-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2330-2025-10-06"><a href="https://github.com/googleapis/python-bigtable/compare/v2.32.0...v2.33.0">2.33.0</a> (2025-10-06)</h4>
-<h5 id="features_6">Features</h5>
+<h5 id="features_8">Features</h5>
 <ul>
 <li>Add support for Proto and Enum types (<a href="https://github.com/googleapis/python-bigtable/issues/1202">#1202</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/34ceb86007db08d453fa25cca4968d5b498ffcd6">34ceb86</a>)</li>
 <li>Expose universe_domain for tpc (<a href="https://github.com/googleapis/python-bigtable/issues/1150">#1150</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/451fd97e435218ffed47d39423680ffc4feccac4">451fd97</a>)</li>
 </ul>
-<h5 id="bug-fixes_4">Bug Fixes</h5>
+<h5 id="bug-fixes_6">Bug Fixes</h5>
 <ul>
 <li>Fix instance registration cleanup on early iterator termination (<a href="https://github.com/googleapis/python-bigtable/issues/1216">#1216</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/bbfd746c61a6362efa42c7899ec3e34ceb541c83">bbfd746</a>)</li>
 <li>Refactor channel refresh (<a href="https://github.com/googleapis/python-bigtable/issues/1174">#1174</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/6fa30084058bc34d4487d1fee5c87d7795ff167a">6fa3008</a>)</li>
@@ -3202,17 +3270,17 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <p>You can optimize storage with Bigtable <a href="https://cloud.google.com/bigtable/docs/tiered-storage">tiered storage</a>, reduce storage costs, and retain data for longer. This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-09-29">2025-09-29</h2>
-<h3 id="libraries_6">Libraries</h3>
+<h3 id="libraries_8">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_6">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_4">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2670-2025-09-24"><a href="https://github.com/googleapis/java-bigtable/compare/v2.66.0...v2.67.0">2.67.0</a> (2025-09-24)</h4>
-<h5 id="features_7">Features</h5>
+<h5 id="features_9">Features</h5>
 <ul>
 <li>Idle channel eviction (<a href="https://github.com/googleapis/java-bigtable/issues/2651">#2651</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/70c05c9c09a63c53818384d2a66c622c9b95e00e">70c05c9</a>)</li>
 <li>Load balancing options for BigtableChannelPool (<a href="https://github.com/googleapis/java-bigtable/issues/2667">#2667</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/5adaa84d80df08779da7c36a50de4632049cfe96">5adaa84</a>)</li>
 </ul>
-<h5 id="bug-fixes_5">Bug Fixes</h5>
+<h5 id="bug-fixes_7">Bug Fixes</h5>
 <ul>
 <li>Add missing break; to PROTO and ENUM value type check (<a href="https://github.com/googleapis/java-bigtable/issues/2672">#2672</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/337e4325f6cb5d11309ec5f33550d47d97cbe3c3">337e432</a>)</li>
 <li>Remove beta api annotation for query paginator (<a href="https://github.com/googleapis/java-bigtable/issues/2660">#2660</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/f68a1fae49b701d1fb9942e2af2fa84a1e5b508a">f68a1fa</a>)</li>
@@ -3223,19 +3291,19 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 </ul>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="libraries_7">Libraries</h3>
+<h3 id="libraries_9">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs">Node.js</h3>
 <h3 id="changes-for-google-cloudbigtable">Changes for <a href="https://github.com/googleapis/nodejs-bigtable">@google-cloud/bigtable</a></h3>
 <h4 id="641-2025-09-09"><a href="https://github.com/googleapis/nodejs-bigtable/compare/v6.4.0...v6.4.1">6.4.1</a> (2025-09-09)</h4>
-<h5 id="bug-fixes_6">Bug Fixes</h5>
+<h5 id="bug-fixes_8">Bug Fixes</h5>
 <ul>
 <li>Directly import JS-native impl for crc32c on non-x64 platforms to avoid segfault (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1715">#1715</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/98489637befe779df0438f466eecb0428222a29a">9848963</a>)</li>
 </ul>
 <h3 id="java_7">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_5">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2660-2025-09-10"><a href="https://github.com/googleapis/java-bigtable/compare/v2.65.1...v2.66.0">2.66.0</a> (2025-09-10)</h4>
-<h5 id="features_8">Features</h5>
+<h5 id="features_10">Features</h5>
 <ul>
 <li>Add support for Proto and Enum types (<a href="https://github.com/googleapis/java-bigtable/issues/2662">#2662</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/da3065db331be191fdf9e06be71e45c7832574ea">da3065d</a>)</li>
 </ul>
@@ -3245,7 +3313,7 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 </ul>
 <hr />
 <h2 id="2025-09-01">2025-09-01</h2>
-<h3 id="libraries_8">Libraries</h3>
+<h3 id="libraries_10">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_8">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_6">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
@@ -3264,24 +3332,24 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 </ul>
 <hr />
 <h2 id="2025-08-25">2025-08-25</h2>
-<h3 id="libraries_9">Libraries</h3>
+<h3 id="libraries_11">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs_1">Node.js</h3>
 <h3 id="changes-for-google-cloudbigtable_1">Changes for <a href="https://github.com/googleapis/nodejs-bigtable">@google-cloud/bigtable</a></h3>
 <h4 id="640-2025-08-21"><a href="https://github.com/googleapis/nodejs-bigtable/compare/v6.3.0...v6.4.0">6.4.0</a> (2025-08-21)</h4>
-<h5 id="features_9">Features</h5>
+<h5 id="features_11">Features</h5>
 <ul>
 <li>Enable csm by default (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1695">#1695</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/9744aa355e87c2170019c52b58d1045160f19e7c">9744aa3</a>)</li>
 <li>For application latencies timed stream a few cosmetic changes are needed (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1645">#1645</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/75d1a6f5bc8d8cd74214bdf3c9db9d06786f9575">75d1a6f</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-08-18">2025-08-18</h2>
-<h3 id="libraries_10">Libraries</h3>
+<h3 id="libraries_12">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs_2">Node.js</h3>
 <h3 id="changes-for-google-cloudbigtable_2">Changes for <a href="https://github.com/googleapis/nodejs-bigtable">@google-cloud/bigtable</a></h3>
 <h4 id="630-2025-08-11"><a href="https://github.com/googleapis/nodejs-bigtable/compare/v6.2.0...v6.3.0">6.3.0</a> (2025-08-11)</h4>
-<h5 id="features_10">Features</h5>
+<h5 id="features_12">Features</h5>
 <ul>
 <li>Add client side metrics for checkAndMutateRow calls (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1661">#1661</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/c258ea1b29203aad3eaaf9cfe64ddabb8c1018bf">c258ea1</a>)</li>
 <li>Add client side metrics for readModifyWriteRow calls (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1656">#1656</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/2129312401bf9f5b8e51b13ac576cb765de401df">2129312</a>)</li>
@@ -3290,25 +3358,25 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <li>For client side metrics, record metrics as MUTATE_ROW for single row mutates (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1650">#1650</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/f190a8c322498ddfbe73406759a43a268c16bdc4">f190a8c</a>)</li>
 <li>Record ReadRows application latencies for client side metrics (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1647">#1647</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/8af801b3ecd7ff5e30e6c8cc67bd4123bdf34ee9">8af801b</a>)</li>
 </ul>
-<h5 id="bug-fixes_7">Bug Fixes</h5>
+<h5 id="bug-fixes_9">Bug Fixes</h5>
 <ul>
 <li>FirstResponseLatencies should only be collected for readRows calls (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1658">#1658</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/99cf5a6010249ed0eedd88f23b2d32cacb106c07">99cf5a6</a>)</li>
 </ul>
 <h3 id="java_9">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_7">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2650-2025-08-12"><a href="https://github.com/googleapis/java-bigtable/compare/v2.64.0...v2.65.0">2.65.0</a> (2025-08-12)</h4>
-<h5 id="features_11">Features</h5>
+<h5 id="features_13">Features</h5>
 <ul>
 <li><strong>bigtable:</strong> Lower the value for max rpc channels as channel resize is slow (1m, 2 channel) (<a href="https://github.com/googleapis/java-bigtable/issues/2656">#2656</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/d8055c1fb75a616cda1503b92d7cddb9da47d42b">d8055c1</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-08-11">2025-08-11</h2>
-<h3 id="libraries_11">Libraries</h3>
+<h3 id="libraries_13">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_10">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_8">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2640-2025-08-08"><a href="https://github.com/googleapis/java-bigtable/compare/v2.63.0...v2.64.0">2.64.0</a> (2025-08-08)</h4>
-<h5 id="features_12">Features</h5>
+<h5 id="features_14">Features</h5>
 <ul>
 <li>Add tags field to Instance proto (stable branch) (<a href="https://github.com/googleapis/java-bigtable/commit/089d52700c225015fabfaa763163c5874b96d830">089d527</a>)</li>
 </ul>
@@ -3320,7 +3388,7 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <h3 id="python_3">Python</h3>
 <h3 id="changes-for-google-cloud-bigtable_9">Changes for <a href="https://github.com/googleapis/python-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2320-2025-08-01"><a href="https://github.com/googleapis/python-bigtable/compare/v2.31.0...v2.32.0">2.32.0</a> (2025-08-01)</h4>
-<h5 id="features_13">Features</h5>
+<h5 id="features_15">Features</h5>
 <ul>
 <li>Add Idempotency to Cloud Bigtable MutateRowsRequest API (<a href="https://github.com/googleapis/python-bigtable/issues/1143">#1143</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/c3e3eb0e4ce44ece72b150dc5822846627074fba">c3e3eb0</a>)</li>
 <li>Add support for AddToCell in Data Client (<a href="https://github.com/googleapis/python-bigtable/issues/1147">#1147</a>) (<a href="https://github.com/googleapis/python-bigtable/commit/1a5b4b514cadae5c83d61296314285d3774992c5">1a5b4b5</a>)</li>
@@ -3331,12 +3399,12 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <h2 id="2025-08-04">2025-08-04</h2>
 <h3 id="announcement_3">Announcement</h3>
 <p>You can add the <a href="https://github.com/GoogleCloudPlatform/cloud-bigtable-ecosystem/blob/main/cassandra-bigtable-migration-tools/cassandra-bigtable-java-client/cassandra-bigtable-java-client-lib/README.md">Cassandra to Bigtable client for Java</a> library to your Java project from the Maven Central repository.</p>
-<h3 id="libraries_12">Libraries</h3>
+<h3 id="libraries_14">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_11">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_10">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2630-2025-07-30"><a href="https://github.com/googleapis/java-bigtable/compare/v2.62.0...v2.63.0">2.63.0</a> (2025-07-30)</h4>
-<h5 id="features_14">Features</h5>
+<h5 id="features_16">Features</h5>
 <ul>
 <li>Add Idempotency to Cloud Bigtable MutateRowsRequest API (<a href="https://github.com/googleapis/java-bigtable/commit/bc58b4f31ef457bd322f270b044735e4b62d298f">bc58b4f</a>)</li>
 <li>Add port as a parameter for the Bigtable emulator (<a href="https://github.com/googleapis/java-bigtable/issues/2645">#2645</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/5acd3dc01c36072bd28248d560c5d923c34b1817">5acd3dc</a>)</li>
@@ -3344,7 +3412,7 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <li>Publish Proto and Enum types to CBT data API (<a href="https://github.com/googleapis/java-bigtable/commit/ace12d53fe9f4d3779b2b1a2aed69ceeedd11600">ace12d5</a>)</li>
 <li>Selective GAPIC autogeneration for Python Bigtable Admin (<a href="https://github.com/googleapis/java-bigtable/commit/e219c387487673869fb8bb55a5060bdc9d37bbcb">e219c38</a>)</li>
 </ul>
-<h5 id="bug-fixes_8">Bug Fixes</h5>
+<h5 id="bug-fixes_10">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.60.2 (<a href="https://github.com/googleapis/java-bigtable/commit/e219c387487673869fb8bb55a5060bdc9d37bbcb">e219c38</a>)</li>
 <li>Update routing_parameters.path_template (<a href="https://github.com/googleapis/java-bigtable/commit/e219c387487673869fb8bb55a5060bdc9d37bbcb">e219c38</a>)</li>
@@ -3363,30 +3431,30 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <p><a href="https://cloud.google.com/bigtable/docs/create-manage-logical-views">Logical views</a> for Bigtable are now generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). Logical views let you save a SQL query as a specific, shareable view of your data—even with a flexible schema—and then control who has permission to see the results.</p>
 <hr />
 <h2 id="2025-07-28">2025-07-28</h2>
-<h3 id="libraries_13">Libraries</h3>
+<h3 id="libraries_15">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs_3">Node.js</h3>
 <h3 id="changes-for-google-cloudbigtable_3">Changes for <a href="https://github.com/googleapis/nodejs-bigtable">@google-cloud/bigtable</a></h3>
 <h4 id="620-2025-07-23"><a href="https://github.com/googleapis/nodejs-bigtable/compare/v6.1.0...v6.2.0">6.2.0</a> (2025-07-23)</h4>
-<h5 id="features_15">Features</h5>
+<h5 id="features_17">Features</h5>
 <ul>
 <li>Add client-side metrics collection to readRows calls (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1571">#1571</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/71f4d78422137c88f1521be45004982367dbda31">71f4d78</a>)</li>
 <li>Add plumbing to support unary calls for client side metric collection (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1631">#1631</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/c267ede0140aa29bc75feada93899a4945980375">c267ede</a>)</li>
 <li>Add support for Execute Query (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1613">#1613</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/e3894edf4fc881153432f77ce976141397dc0348">e3894ed</a>)</li>
 <li>Initial timed stream implementation for application latencies (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1639">#1639</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/ca490e80f2359156475e52c5f72fe0a9fe8e9740">ca490e8</a>)</li>
 </ul>
-<h5 id="bug-fixes_9">Bug Fixes</h5>
+<h5 id="bug-fixes_11">Bug Fixes</h5>
 <ul>
 <li>In client-side metrics, make sure that the right views get created for the right metrics (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1590">#1590</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/6cb7cddf42ff1fe29b2ae4a729739bc12c3d4942">6cb7cdd</a>)</li>
 </ul>
 <hr />
 <h2 id="2025-07-21">2025-07-21</h2>
-<h3 id="libraries_14">Libraries</h3>
+<h3 id="libraries_16">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_12">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_11">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2620-2025-07-15"><a href="https://github.com/googleapis/java-bigtable/compare/v2.61.0...v2.62.0">2.62.0</a> (2025-07-15)</h4>
-<h5 id="features_16">Features</h5>
+<h5 id="features_18">Features</h5>
 <ul>
 <li>Add Idempotency to Cloud Bigtable MutateRowRequest API (<a href="https://github.com/googleapis/java-bigtable/commit/b5acca6ac4f1eec420adb27bc77aa1bda0ec2dca">b5acca6</a>)</li>
 <li>Add SchemaBundles API (<a href="https://github.com/googleapis/java-bigtable/commit/b5acca6ac4f1eec420adb27bc77aa1bda0ec2dca">b5acca6</a>)</li>
@@ -3404,16 +3472,16 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <p>When you <a href="https://cloud.google.com/bigtable/docs/managing-tables#undelete-table">undelete a table</a>, Bigtable automatically enables deletion protection for that table.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
-<h3 id="libraries_15">Libraries</h3>
+<h3 id="libraries_17">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_13">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_12">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2610-2025-06-27"><a href="https://github.com/googleapis/java-bigtable/compare/v2.60.0...v2.61.0">2.61.0</a> (2025-06-27)</h4>
-<h5 id="features_17">Features</h5>
+<h5 id="features_19">Features</h5>
 <ul>
 <li>Add getter for universe domain in JwtCredentialsWithAudience (<a href="https://github.com/googleapis/java-bigtable/issues/2598">#2598</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/9ad66b129923500cdeb794fc2e4570ad8b1d92fd">9ad66b1</a>)</li>
 </ul>
-<h5 id="bug-fixes_10">Bug Fixes</h5>
+<h5 id="bug-fixes_12">Bug Fixes</h5>
 <ul>
 <li>Add name elements for the pom.xml files (<a href="https://github.com/googleapis/java-bigtable/commit/a873719e7e32a0cd21dc259911a193520f20797e">a873719</a>)</li>
 <li>Populate table ID for materialized view (<a href="https://github.com/googleapis/java-bigtable/issues/2610">#2610</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/50c3fe2ffe66acaba8cb408dc3b1a4d13a4a2556">50c3fe2</a>)</li>
@@ -3428,17 +3496,17 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 <p>You can use <a href="https://cloud.google.com/bigquery/docs/create-bigtable-external-table#compute">Data Boost</a> to analyze your Bigtable data with BigQuery without impacting the performance of the clusters that handle your application traffic. This feature is generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="libraries_16">Libraries</h3>
+<h3 id="libraries_18">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="java_14">Java</h3>
 <h3 id="changes-for-google-cloud-bigtable_13">Changes for <a href="https://github.com/googleapis/java-bigtable">google-cloud-bigtable</a></h3>
 <h4 id="2600-2025-06-06"><a href="https://github.com/googleapis/java-bigtable/compare/v2.59.0...v2.60.0">2.60.0</a> (2025-06-06)</h4>
-<h5 id="features_18">Features</h5>
+<h5 id="features_20">Features</h5>
 <ul>
 <li>Improve error message on malformed struct (<a href="https://github.com/googleapis/java-bigtable/issues/2592">#2592</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/7f5fdf094c5fe140807ce6abcea0b891462ba809">7f5fdf0</a>)</li>
 <li>Run ExecuteQuery conformance tests (<a href="https://github.com/googleapis/java-bigtable/issues/2557">#2557</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/0bbc083b9e798e5b557f3ffe7090b45e66c9ada5">0bbc083</a>)</li>
 </ul>
-<h5 id="bug-fixes_11">Bug Fixes</h5>
+<h5 id="bug-fixes_13">Bug Fixes</h5>
 <ul>
 <li><strong>deps:</strong> Update the Java code generator (gapic-generator-java) to 2.59.0 (<a href="https://github.com/googleapis/java-bigtable/commit/65782aaf89ad78aafd7f5928e81e513c3016b471">65782aa</a>)</li>
 <li>Ensure that multiple instances of a client in the same process don't clobber each other (<a href="https://github.com/googleapis/java-bigtable/issues/2590">#2590</a>) (<a href="https://github.com/googleapis/java-bigtable/commit/8d3dca43224179829829bcf91972610c666b130b">8d3dca4</a>)</li>
@@ -3449,12 +3517,12 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
 </ul>
 <hr />
 <h2 id="2025-06-02">2025-06-02</h2>
-<h3 id="libraries_17">Libraries</h3>
+<h3 id="libraries_19">Libraries</h3>
 <p>A weekly digest of client library updates from across the <a href="https://cloud.google.com/sdk">Cloud SDK</a>.</p>
 <h3 id="nodejs_4">Node.js</h3>
 <h3 id="changes-for-google-cloudbigtable_4">Changes for <a href="https://github.com/googleapis/nodejs-bigtable">@google-cloud/bigtable</a></h3>
 <h4 id="610-2025-05-30"><a href="https://github.com/googleapis/nodejs-bigtable/compare/v6.0.0...v6.1.0">6.1.0</a> (2025-05-30)</h4>
-<h5 id="features_19">Features</h5>
+<h5 id="features_21">Features</h5>
 <ul>
 <li>Add full support for the universe domain (<a href="https://github.com/googleapis/nodejs-bigtable/issues/1604">#1604</a>) (<a href="https://github.com/googleapis/nodejs-bigtable/commit/4562e2329e734c0c9d9f00cfa83aa2be13e9a7fe">4562e23</a>)</li>
 </ul>
@@ -3481,6 +3549,9 @@ For more information, see <a href="https://docs.cloud.google.com/bigtable/docs/l
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#bigtable">Bigtable</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-10" class="nav-link">2026-08-10</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-07-30" class="nav-link">2026-07-30</a>
           </li>

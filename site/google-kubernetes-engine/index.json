@@ -1,6 +1,26 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-07-27": [
+      {
+        "kind": "Security",
+        "content": "The general availability (GA) stage of mixed-protocol Services of type\nLoadBalancer fixes errors in traffic routing from stages prior to GA. This\nfeature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.",
+        "summary": {
+          "title": "LoadBalancer services now GA",
+          "summary": "Mixed-protocol Services of type LoadBalancer have reached general availability in GKE version 1.36.2-gke.1498000 and later. This update resolves prior traffic routing errors. This enhancement improves the reliability and performance of your network services."
+        }
+      }
+    ],
+    "2026-07-20": [
+      {
+        "kind": "Deprecated",
+        "content": "To improve security, Ubuntu node images in GKE version 1.37 and later don't\npre-install the `vulkan-tools` package. If you run Vulkan diagnostic tools\n(such as `vulkaninfo`) directly on GKE Ubuntu hosts, then you must manually\ninstall the `vulkan-tools` package. This change doesn't affect containerized\nGPU/Vulkan workloads.",
+        "summary": {
+          "title": "Vulkan Tools No Longer Pre-installed on GKE Ubuntu Nodes",
+          "summary": "For improved security, Ubuntu node images in GKE versions 1.37+ will no longer pre-install the `vulkan-tools` package. Users needing to run Vulkan diagnostic tools directly on GKE Ubuntu hosts must now install this package manually. This change does not impact containerized GPU/Vulkan workloads."
+        }
+      }
+    ],
     "2026-08-05": [
       {
         "kind": "Feature",
@@ -97,32 +117,6 @@
         }
       }
     ],
-    "2026-07-27": [
-      {
-        "kind": "Feature",
-        "content": "In GKE version 1.36 and later, GKE Dataplane V2 with NetworkPolicies supports up\nto 15,000 nodes per cluster, increased from the previous limit of 7,500 nodes.\nFor clusters exceeding 5,000 nodes, contact Cloud Customer Care to request a\nquota increase. For more information, see\n[Cluster size limits and requirements](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/planning-large-clusters#clusters-5k-nodes).",
-        "summary": {
-          "title": "GKE Dataplane V2 node limit increased",
-          "summary": "GKE Dataplane V2 now supports up to 15,000 nodes per cluster in versions 1.36 and later, a significant increase from the previous limit. For clusters larger than 5,000 nodes, a quota increase can be requested through Cloud Customer Care."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "In version 1.36.2-gke.1498000 and later, GKE supports mixed-protocol Services of\ntype LoadBalancer in general availability (GA). Mixed-protocol Services let both\nexternal (NetLB) and internal (ILB) passthrough Network Load Balancers handle\nsimultaneous TCP and UDP traffic on a single IP address across IPv4, IPv6, and\ndual-stack environments.",
-        "summary": {
-          "title": "Mixed-Protocol Load Balancer Support is Now GA",
-          "summary": "GKE now supports mixed-protocol LoadBalancer Services in general availability. This feature allows a single IP address to handle simultaneous TCP and UDP traffic across IPv4, IPv6, and dual-stack environments for both external and internal passthrough Network Load Balancers."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "The general availability (GA) stage of mixed-protocol Services of type\nLoadBalancer fixes errors in traffic routing from stages prior to GA. This\nfeature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.",
-        "summary": {
-          "title": "LoadBalancer services now GA",
-          "summary": "Mixed-protocol Services of type LoadBalancer have reached general availability in GKE version 1.36.2-gke.1498000 and later. This update resolves prior traffic routing errors. This enhancement improves the reliability and performance of your network services."
-        }
-      }
-    ],
     "2026-07-24": [
       {
         "kind": "Change",
@@ -178,16 +172,6 @@
         "summary": {
           "title": "Version Updates Available",
           "summary": "New versions are now available for the Extended channel, including a new default version for cluster creation. Some older versions are now deprecated and will be removed soon. Auto-upgrades have also been updated to target these new versions."
-        }
-      }
-    ],
-    "2026-07-20": [
-      {
-        "kind": "Deprecated",
-        "content": "To improve security, Ubuntu node images in GKE version 1.37 and later don't\npre-install the `vulkan-tools` package. If you run Vulkan diagnostic tools\n(such as `vulkaninfo`) directly on GKE Ubuntu hosts, then you must manually\ninstall the `vulkan-tools` package. This change doesn't affect containerized\nGPU/Vulkan workloads.",
-        "summary": {
-          "title": "Vulkan Tools No Longer Pre-installed on GKE Ubuntu Nodes",
-          "summary": "For improved security, Ubuntu node images in GKE versions 1.37+ will no longer pre-install the `vulkan-tools` package. Users needing to run Vulkan diagnostic tools directly on GKE Ubuntu hosts must now install this package manually. This change does not impact containerized GPU/Vulkan workloads."
         }
       }
     ],

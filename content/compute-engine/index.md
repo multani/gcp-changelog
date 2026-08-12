@@ -1,5 +1,32 @@
 # Compute Engine
 
+## 2026-08-11
+
+### Feature
+
+**Generally available**: Compute flexible committed use discounts (CUDs) are
+available for G2 and G4 GPU accelerator-optimized machine series. The supported
+resources include vCPUs, memory, Local SSD disks, and GPUs.
+
+Compute flexible CUDs are spend-based CUDs that apply to eligible Google Cloud
+spend across Compute Engine, GKE, and
+Cloud Run. For G2 and G4 machine series, compute flexible
+commitments provide the flexibility to switch between eligible machine series
+and regions depending on your workload needs. For GPUs that belong to these
+machine series, compute flexible commitments don't require attached
+reservations.
+
+For more information, see
+[Compute flexible CUDs](https://docs.cloud.google.com/compute/docs/instances/committed-use-discounts-overview#spend_based).
+
+### Security
+
+A vulnerability (CVE-2026-6726) in the Trusted Computing Group's TPM 2.0
+reference implementation code was discovered and is being addressed.
+For more information, see the
+[GCP-2026-054 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-054).
+
+---
 ## 2026-08-03
 
 ### Feature

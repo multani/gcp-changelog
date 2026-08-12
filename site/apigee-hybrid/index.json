@@ -1,6 +1,40 @@
 {
   "name": "Apigee hybrid",
   "entries": {
+    "2026-08-11": [
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Features Released",
+          "summary": "We are excited to announce the release of several new features designed to enhance your experience. These updates include improvements to performance and usability, along with new tools to streamline your workflow. Explore these new capabilities today!"
+        }
+      },
+      {
+        "kind": "v1.16.9",
+        "content": "On August 11, 2026 we released an updated version of the Apigee hybrid software, v1.16.9.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.9](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
+        "summary": {
+          "title": "Apigee hybrid v1.16.9 released",
+          "summary": "The latest version of Apigee hybrid, v1.16.9, is now available. This release includes important updates and is recommended for all users. Refer to the upgrade or installation guides for detailed instructions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "#### Fixed in this release\n\n| Bug ID | Description |\n| --- | --- |\n| **514973778** | **Fixed an issue where the `SanitizeUserPrompt` and `SanitizeModelResponse` policies failed to tolerate unknown fields while parsing responses from the Model Armor Service.** |\n| **543171828** | **Fixed an issue where the `apigee-logger` DaemonSet failed to schedule on cluster nodes without custom node labels due to a default `logger.nodeSelector` in the Helm chart.** |",
+        "summary": {
+          "title": "Resolved parsing and scheduling issues",
+          "summary": "This release fixes problems with policy parsing that occurred when encountering unknown fields in responses from the Model Armor Service. Additionally, an issue preventing the apigee-logger from scheduling on nodes without custom labels has been resolved."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Various security and CVE fixes are included in this release.",
+        "summary": {
+          "title": "Security updates released",
+          "summary": "This release includes important security fixes and resolves several CVEs. We recommend updating to the latest version to benefit from these improvements."
+        }
+      }
+    ],
     "2026-07-31": [
       {
         "kind": "v1.15.7",

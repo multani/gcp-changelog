@@ -2,14 +2,28 @@
 
 ## 2026-08-04
 
-### Process-level sandboxing and auto-updates (Preview)
+### Feature
 
-This release introduces process-level sandboxing, automatic update checks, and other improvements to the CodeMender CLI (Preview):
+**Process-level sandboxing and auto-updates (Preview)**
 
-* **Process-level sandboxing**: To safeguard your workstation against unintended file modifications or unexpected tool side effects, you can now execute all agent-proposed tools (such as compiling code, running tests, or executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled by default to allow seamless dependency resolution, but can be enabled persistently in `config.yaml` or per-command using the new `--sandbox` flag.
-* **Automatic updates**: The CLI now automatically checks for updates in the background (at most once every 24 hours) when running in an interactive terminal. You can also run `cm update` to forcefully check for and apply updates immediately.
-* **Token usage statistics**: You can now use the `cm stats` subcommand to view a summary of token usage (input, output, cached, thought, tool-use) for your local sessions.
-* **Improved Windows support**: The standalone CLI now has improved support for running on Windows.
+This release introduces process-level sandboxing, automatic update checks, and
+other improvements to the CodeMender CLI (Preview):
+
+* **Process-level sandboxing**: To safeguard your workstation against
+  unintended file modifications or unexpected tool side effects, you can now
+  execute all agent-proposed tools (such as compiling code, running tests, or
+  executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled
+  by default to allow seamless dependency resolution, but can be enabled
+  persistently in `config.yaml` or per-command using the new `--sandbox` flag.
+* **Automatic updates**: The CLI now automatically checks for updates in the
+  background (at most once every 24 hours) when running in an interactive
+  terminal. You can also run `cm update` to forcefully check for and apply
+  updates immediately.
+* **Token usage statistics**: You can now use the `cm stats` subcommand to
+  view a summary of token usage (input, output, cached, thought, tool-use) for
+  your local sessions.
+* **Improved Windows support**: The standalone CLI now has improved support
+  for running on Windows.
 
 For more information, see [Install the CLI and configure](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment).
 
@@ -118,17 +132,28 @@ deprecations](https://docs.cloud.google.com/gemini-enterprise-agent-platform/mod
 * `qwen3-next-80b-a3b-instruct-maas`
 * `qwen3-next-80b-a3b-thinking-maas`
 
-### CodeMender is available in Public Preview
+### Announcement
 
-CodeMender is now available in Public Preview for select customers. CodeMender is an AI-powered code security agent that runs on your local workstation to find, verify, and fix security vulnerabilities in your codebase.
+**CodeMender is available in Public Preview**
+
+CodeMender is now available in Public Preview for select customers. CodeMender
+is an AI-powered code security agent that runs on your local workstation to
+find, verify, and fix security vulnerabilities in your codebase.
 
 Key capabilities in this release include:
-\* **Scan and find**: Scan your codebase for application logic, memory management, and authentication vulnerabilities, or import findings from external scanners.
-\* **Verify**: Build your code and run tests locally to confirm whether findings are exploitable, minimizing false positives.
-\* **Fix**: Auto-generate security patches and verify them locally before applying them to your workspace.
-\* **Safety controls**: Enforces a Human-in-the-Loop workflow with mandatory manual confirmations for all disk writes and command executions by default.
 
-For more information, see the [CodeMender overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/).
+* **Scan and find**: Scan your codebase for application logic, memory
+  management, and authentication vulnerabilities, or import findings from
+  external scanners.
+* **Verify**: Build your code and run tests locally to confirm whether
+  findings are exploitable, minimizing false positives.
+* **Fix**: Auto-generate security patches and verify them locally before
+  applying them to your workspace.
+* **Safety controls**: Enforces a Human-in-the-Loop workflow with mandatory
+  manual confirmations for all disk writes and command executions by default.
+
+For more information, see the [CodeMender
+overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/).
 
 ---
 ## 2026-07-20
@@ -170,9 +195,14 @@ Update your code to use either `gemini-3.1-flash-image` or
 
 **Memory Bank memory profiles are generally available (GA)**
 
-Memory profiles in Memory Bank are generally available (GA). Memory profiles allow you to generate structured profiles, which are data structures with static schemas populated and updated using LLMs. By defining a fixed schema, you ensure your agents have immediate, low-latency access to evolving information without the need for expensive search operations during a session.
+Memory profiles in Memory Bank are generally available (GA). Memory profiles
+allow you to generate structured profiles, which are data structures with static
+schemas populated and updated using LLMs. By defining a fixed schema, you ensure
+your agents have immediate, low-latency access to evolving information without
+the need for expensive search operations during a session.
 
-For details, see [Memory profiles](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/profiles).
+For details, see [Memory
+profiles](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/profiles).
 
 ---
 ## 2026-07-09

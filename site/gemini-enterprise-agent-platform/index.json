@@ -3,11 +3,11 @@
   "entries": {
     "2026-08-04": [
       {
-        "kind": "Process-level sandboxing and auto-updates (Preview)",
-        "content": "This release introduces process-level sandboxing, automatic update checks, and other improvements to the CodeMender CLI (Preview):\n\n* **Process-level sandboxing**: To safeguard your workstation against unintended file modifications or unexpected tool side effects, you can now execute all agent-proposed tools (such as compiling code, running tests, or executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled by default to allow seamless dependency resolution, but can be enabled persistently in `config.yaml` or per-command using the new `--sandbox` flag.\n* **Automatic updates**: The CLI now automatically checks for updates in the background (at most once every 24 hours) when running in an interactive terminal. You can also run `cm update` to forcefully check for and apply updates immediately.\n* **Token usage statistics**: You can now use the `cm stats` subcommand to view a summary of token usage (input, output, cached, thought, tool-use) for your local sessions.\n* **Improved Windows support**: The standalone CLI now has improved support for running on Windows.\n\nFor more information, see [Install the CLI and configure](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment).",
+        "kind": "Feature",
+        "content": "**Process-level sandboxing and auto-updates (Preview)**\n\nThis release introduces process-level sandboxing, automatic update checks, and\nother improvements to the CodeMender CLI (Preview):\n\n* **Process-level sandboxing**: To safeguard your workstation against\n  unintended file modifications or unexpected tool side effects, you can now\n  execute all agent-proposed tools (such as compiling code, running tests, or\n  executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled\n  by default to allow seamless dependency resolution, but can be enabled\n  persistently in `config.yaml` or per-command using the new `--sandbox` flag.\n* **Automatic updates**: The CLI now automatically checks for updates in the\n  background (at most once every 24 hours) when running in an interactive\n  terminal. You can also run `cm update` to forcefully check for and apply\n  updates immediately.\n* **Token usage statistics**: You can now use the `cm stats` subcommand to\n  view a summary of token usage (input, output, cached, thought, tool-use) for\n  your local sessions.\n* **Improved Windows support**: The standalone CLI now has improved support\n  for running on Windows.\n\nFor more information, see [Install the CLI and configure](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment).",
         "summary": {
-          "title": "CodeMender CLI: Sandboxing and Auto-Updates (Preview)",
-          "summary": "The CodeMender CLI now offers process-level sandboxing to protect your workstation and automatic update checks for enhanced security and features. This preview release also includes token usage statistics and improved Windows support."
+          "title": "CodeMender CLI Enhancements",
+          "summary": "The CodeMender CLI now offers process-level sandboxing for enhanced security and automatic update checks. It also includes token usage statistics and improved Windows support."
         }
       }
     ],
@@ -47,11 +47,11 @@
         }
       },
       {
-        "kind": "CodeMender is available in Public Preview",
-        "content": "CodeMender is now available in Public Preview for select customers. CodeMender is an AI-powered code security agent that runs on your local workstation to find, verify, and fix security vulnerabilities in your codebase.\n\nKey capabilities in this release include:\n\\* **Scan and find**: Scan your codebase for application logic, memory management, and authentication vulnerabilities, or import findings from external scanners.\n\\* **Verify**: Build your code and run tests locally to confirm whether findings are exploitable, minimizing false positives.\n\\* **Fix**: Auto-generate security patches and verify them locally before applying them to your workspace.\n\\* **Safety controls**: Enforces a Human-in-the-Loop workflow with mandatory manual confirmations for all disk writes and command executions by default.\n\nFor more information, see the [CodeMender overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/).",
+        "kind": "Announcement",
+        "content": "**CodeMender is available in Public Preview**\n\nCodeMender is now available in Public Preview for select customers. CodeMender\nis an AI-powered code security agent that runs on your local workstation to\nfind, verify, and fix security vulnerabilities in your codebase.\n\nKey capabilities in this release include:\n\n* **Scan and find**: Scan your codebase for application logic, memory\n  management, and authentication vulnerabilities, or import findings from\n  external scanners.\n* **Verify**: Build your code and run tests locally to confirm whether\n  findings are exploitable, minimizing false positives.\n* **Fix**: Auto-generate security patches and verify them locally before\n  applying them to your workspace.\n* **Safety controls**: Enforces a Human-in-the-Loop workflow with mandatory\n  manual confirmations for all disk writes and command executions by default.\n\nFor more information, see the [CodeMender\noverview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/).",
         "summary": {
-          "title": "CodeMender Public Preview Now Available",
-          "summary": "CodeMender, an AI-powered agent for identifying, verifying, and fixing code security vulnerabilities directly on your local workstation, has entered Public Preview. This initial release allows select customers to leverage its capabilities for enhanced code security."
+          "title": "CodeMender Now in Public Preview",
+          "summary": "CodeMender, an AI-powered agent for finding, verifying, and fixing code vulnerabilities, is now in public preview. It scans code, verifies findings locally to reduce false positives, and auto-generates security patches with safety controls."
         }
       }
     ],
@@ -78,10 +78,10 @@
     "2026-07-15": [
       {
         "kind": "Feature",
-        "content": "**Memory Bank memory profiles are generally available (GA)**\n\nMemory profiles in Memory Bank are generally available (GA). Memory profiles allow you to generate structured profiles, which are data structures with static schemas populated and updated using LLMs. By defining a fixed schema, you ensure your agents have immediate, low-latency access to evolving information without the need for expensive search operations during a session.\n\nFor details, see [Memory profiles](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/profiles).",
+        "content": "**Memory Bank memory profiles are generally available (GA)**\n\nMemory profiles in Memory Bank are generally available (GA). Memory profiles\nallow you to generate structured profiles, which are data structures with static\nschemas populated and updated using LLMs. By defining a fixed schema, you ensure\nyour agents have immediate, low-latency access to evolving information without\nthe need for expensive search operations during a session.\n\nFor details, see [Memory\nprofiles](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/profiles).",
         "summary": {
-          "title": "Memory Bank memory profiles now available",
-          "summary": "Memory Bank memory profiles are now generally available. These profiles allow agents to access evolving information quickly and efficiently using structured data with fixed schemas, eliminating the need for costly search operations during a session."
+          "title": "Memory Bank memory profiles now generally available",
+          "summary": "Memory profiles in Memory Bank are now generally available. These profiles allow you to generate structured data with fixed schemas, providing low-latency access to information without costly search operations during a session. This feature ensures your agents can quickly access evolving data."
         }
       }
     ],

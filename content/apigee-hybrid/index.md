@@ -1,5 +1,34 @@
 # Apigee hybrid
 
+## 2026-08-11
+
+### Announcement
+
+
+
+### v1.16.9
+
+On August 11, 2026 we released an updated version of the Apigee hybrid software, v1.16.9.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.16.9](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **514973778** | **Fixed an issue where the `SanitizeUserPrompt` and `SanitizeModelResponse` policies failed to tolerate unknown fields while parsing responses from the Model Armor Service.** |
+| **543171828** | **Fixed an issue where the `apigee-logger` DaemonSet failed to schedule on cluster nodes without custom node labels due to a default `logger.nodeSelector` in the Helm chart.** |
+
+### Security
+
+Various security and CVE fixes are included in this release.
+
+---
 ## 2026-07-31
 
 ### v1.15.7

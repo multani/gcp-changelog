@@ -11,6 +11,14 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "**SanitizeUserPrompt and SanitizeModelResponse policies now support function calling**\n\nThe SanitizeUserPrompt and SanitizeModelResponse policies now handle LLM function calling\n(tool use) flows. Two new optional XML elements extract function calling content for\nModel Armor sanitization:\n\n* `<FunctionResponseSource>` in SanitizeUserPrompt: extracts function/tool\n  response data from user turns. Used as a fallback when `<UserPromptSource>`\n  returns empty on function calling turns.\n* `<FunctionCallSource>` in SanitizeModelResponse: extracts function call\n  arguments from model responses. Used as a fallback when `<LLMResponseSource>`\n  returns empty.\n\nDefault templates target the Gemini format and require no additional configuration.\nFor OpenAI and Anthropic formats, configure custom JSONPath templates.\nFor more information, see\n[FunctionResponseSource](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy#functionresponsesource) and\n[FunctionCallSource](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-llm-response-policy#functioncallsource).",
+        "summary": {
+          "title": "Function Calling Support Added to Sanitization Policies",
+          "summary": "The SanitizeUserPrompt and SanitizeModelResponse policies now support function calling, also known as tool use, in LLM flows. New XML elements, FunctionResponseSource and FunctionCallSource, have been added to extract relevant data during these interactions. This enhancement simplifies the sanitization process for function calling scenarios."
+        }
+      },
+      {
         "kind": "Security",
         "content": "| Bug ID | Description |\n| --- | --- |\n| **534852923** | **Security fix for Apigee.** Fixed a security issue in the Java Callout policy. |\n| **N/A** | **Security fix for Apigee infrastructure.** |",
         "summary": {

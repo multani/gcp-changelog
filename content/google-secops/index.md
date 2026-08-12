@@ -14,14 +14,6 @@ For more information, see [Analyze feed activity with Cloud Logging](https://doc
 
 ### Feature
 
-**Self-service Bindplane Enterprise license download**
-
-This feature is currently in Preview. Google SecOps Enterprise Plus and Google Unified Security (GUS) customers can now download their **Bindplane Enterprise (Google Edition)** license key directly from the platform console under **SIEM Settings > Collection Agents**.
-
-For more information, see [Bindplane Enterprise (Google Edition)](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent#bp-download-license).
-
-### Feature
-
 **Updated rich-text editor**
 
 Upgraded the rich-text editor across Google SecOps, including the Cases Wall,

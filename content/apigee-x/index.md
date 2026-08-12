@@ -8,6 +8,27 @@ On July 27th, 2026, we released an updated version of Apigee (1-18-0-apigee-2).
 
 **Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
 
+### Feature
+
+**SanitizeUserPrompt and SanitizeModelResponse policies now support function calling**
+
+The SanitizeUserPrompt and SanitizeModelResponse policies now handle LLM function calling
+(tool use) flows. Two new optional XML elements extract function calling content for
+Model Armor sanitization:
+
+* `<FunctionResponseSource>` in SanitizeUserPrompt: extracts function/tool
+  response data from user turns. Used as a fallback when `<UserPromptSource>`
+  returns empty on function calling turns.
+* `<FunctionCallSource>` in SanitizeModelResponse: extracts function call
+  arguments from model responses. Used as a fallback when `<LLMResponseSource>`
+  returns empty.
+
+Default templates target the Gemini format and require no additional configuration.
+For OpenAI and Anthropic formats, configure custom JSONPath templates.
+For more information, see
+[FunctionResponseSource](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy#functionresponsesource) and
+[FunctionCallSource](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-llm-response-policy#functioncallsource).
+
 ### Security
 
 | Bug ID | Description |

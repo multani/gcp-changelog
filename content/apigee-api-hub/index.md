@@ -1,5 +1,17 @@
 # Apigee API hub
 
+## 2026-08-12
+
+### Feature
+
+**Configure and deploy MCP servers with gcloud CLI**
+
+You can use the `gcloud apihub locations configure-and-deploy-server` command to configure and deploy API hub Model Context Protocol (MCP) servers to an attached Apigee runtime.
+Define MCP tools inline or by referencing a YAML or JSON specification file to expose your API hub operations for agent integrations.
+
+For more information, see [gcloud CLI for API hub](https://docs.cloud.google.com/apigee/docs/apihub/gcloud-cli-apihub).
+
+---
 ## 2026-07-24
 
 ### Feature

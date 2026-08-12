@@ -1,5 +1,44 @@
 # Gemini Enterprise
 
+## 2026-08-11
+
+### Feature
+
+**Gemini Enterprise: Manage overages, spend limits, and costs for invoiced Cloud Billing accounts**
+
+If your project has an [invoiced Cloud Billing
+account](https://docs.cloud.google.com/billing/docs/concepts#billing_account_types) and at least one active,
+non-free-trial subscription, administrators can enable overages, configure
+monthly spend limits, and monitor feature usage and costs in Gemini Enterprise:
+
+* **Enable overages**: Allow users to continue using features at pay-as-you-go
+  rates after reaching pooled quotas. Overages are supported for Standard,
+  Plus, and Standard Emerging Market editions for customers with an invoiced
+  Cloud Billing account and at least one active, non-free-trial subscription.
+* **Set spend limits**: Configure monthly project spending caps and budget
+  alert thresholds in Cloud Billing to prevent unexpected charges.
+* **View feature usage and costs**: Track pooled quota consumption,
+  pay-as-you-go usage, and 30-day billing trends on the Usage & Spending page
+  in the Gemini Enterprise console and Cloud Billing console.
+
+**Note:** This feature only applies to projects linked to an invoiced Cloud
+Billing account. However, it isn't available if you received an email with the
+subject *[Billing Update] New Gemini Enterprise
+overage billing controls launching Aug 17, 2026*.
+
+For more information, see:
+
+* [Overview of overages and spend
+  controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview)
+* [Configure overages and spend
+  limits](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages)
+* [View feature usage](https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage)
+* [View costs](https://docs.cloud.google.com/gemini/enterprise/docs/view-costs)
+* [View Gemini Enterprise costs in Cloud Billing
+  reports](https://docs.cloud.google.com/billing/docs/how-to/reports/gemini-enterprise-costs)
+* [Find out your Cloud Billing account type and charging cycle](https://docs.cloud.google.com/billing/docs/how-to/billing-cycle#view-your-charging-cycle)
+
+---
 ## 2026-08-10
 
 ### Feature
@@ -122,18 +161,19 @@ The following data stores are in Public Preview:
 * [Pylon](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/pylon)
 * [S&P Global - Deterministic Retrieval](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/s_p_global)
 * [Sanity](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/sanity)
+* [ServiceM8](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8)
 * [Supabase](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/supabase)
 * [Supermetrics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/supermetrics)
 * [SurveyMonkey](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/surveymonkey)
 * [Wix](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/wix)
 
-Additionally, support for a new action is available in Public Preview for the
-following data store:
+Additionally, support for new actions is available in Public Preview for the
+following data stores:
 
 * [Freshservice](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/freshservice): Create ticket notes.
-
-For more information, see
-[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+* [ServiceM8](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8): Add job note, change job status, compose email message, create job, create job activity, and send job to queue.
+  For more information, see
+  [Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
 
 ---
 ## 2026-08-01
@@ -145,7 +185,7 @@ For more information, see
 The Gemini Enterprise Pay-as-you-go edition is generally available. With
 this edition, you pay for the feature usage your project consumes without
 pooled user license quotas. To get started, you need an invoiced
-Cloud Billing billing account with a one-seat minimum. You can monitor
+Cloud Billing account with a one-seat minimum. You can monitor
 feature usage and set monthly spend limits in the Google Cloud console.
 This feature is rolling out gradually to eligible customers over the next
 few weeks.
@@ -166,8 +206,8 @@ For more information, see the following:
 
 The following data stores are available in Public Preview:
 
+* [Compute Engine](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/google-compute-engine)
 * [Egnyte](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/egnyte)
-* [ServiceM8](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8)
 * [Sourcegraph](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/sourcegraph)
 * [Tavily](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/tavily)
 
@@ -176,8 +216,8 @@ following data stores:
 
 * [AirOps](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airops): Suggest Brand Kit edits and write grid.
 * [Egnyte](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/egnyte): Create comments, create folders, create links, and upload files.
+* [Google Stitch](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/googlestitch): Edit screens.
 * [Lovable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/lovable): Deploy projects, enable databases, send messages, and set workspace knowledge.
-* [ServiceM8](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8): Add job note, change job status, compose email message, create job, create job activity, and send job to queue.
 * [Smartsheet](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/smartsheet): Add favorites, create sheets, create workspaces, and update rows.
 
 For more information, see

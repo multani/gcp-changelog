@@ -1,11 +1,21 @@
 # Firestore
 
+## 2026-08-11
+
+### Feature
+
+Firestore now supports the `asia-southeast3` Bangkok region.
+
+For a full list of supported locations, see
+[Locations](https://docs.cloud.google.com/firestore/docs/locations).
+
+---
 ## 2026-07-20
 
 ### Feature
 
 You can now view, manage, and deploy Firestore Security Rules directly in the
-Google Cloud console for Firestore in Native mode (Standard and Enterprise
+Google Cloud console for Firestore (Standard and Enterprise
 editions). You can create new rulesets and clone or restore rulesets from the
 timeline.
 

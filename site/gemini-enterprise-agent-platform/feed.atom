@@ -9,19 +9,32 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-08-04:process-level sandboxing and auto-updates (preview):0</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-08-04:feature:0</id>
     <published>2026-08-04T00:00:00+00:00</published>
     <updated>2026-08-04T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>This release introduces process-level sandboxing, automatic update checks, and other improvements to the CodeMender CLI (Preview):</p>
+    <content type="html"><![CDATA[<p><strong>Process-level sandboxing and auto-updates (Preview)</strong></p>
+<p>This release introduces process-level sandboxing, automatic update checks, and
+other improvements to the CodeMender CLI (Preview):</p>
 <ul>
-<li><strong>Process-level sandboxing</strong>: To safeguard your workstation against unintended file modifications or unexpected tool side effects, you can now execute all agent-proposed tools (such as compiling code, running tests, or executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled by default to allow seamless dependency resolution, but can be enabled persistently in <code>config.yaml</code> or per-command using the new <code>--sandbox</code> flag.</li>
-<li><strong>Automatic updates</strong>: The CLI now automatically checks for updates in the background (at most once every 24 hours) when running in an interactive terminal. You can also run <code>cm update</code> to forcefully check for and apply updates immediately.</li>
-<li><strong>Token usage statistics</strong>: You can now use the <code>cm stats</code> subcommand to view a summary of token usage (input, output, cached, thought, tool-use) for your local sessions.</li>
-<li><strong>Improved Windows support</strong>: The standalone CLI now has improved support for running on Windows.</li>
+<li><strong>Process-level sandboxing</strong>: To safeguard your workstation against
+  unintended file modifications or unexpected tool side effects, you can now
+  execute all agent-proposed tools (such as compiling code, running tests, or
+  executing shell scripts) inside an OS-level sandbox. Sandboxing is disabled
+  by default to allow seamless dependency resolution, but can be enabled
+  persistently in <code>config.yaml</code> or per-command using the new <code>--sandbox</code> flag.</li>
+<li><strong>Automatic updates</strong>: The CLI now automatically checks for updates in the
+  background (at most once every 24 hours) when running in an interactive
+  terminal. You can also run <code>cm update</code> to forcefully check for and apply
+  updates immediately.</li>
+<li><strong>Token usage statistics</strong>: You can now use the <code>cm stats</code> subcommand to
+  view a summary of token usage (input, output, cached, thought, tool-use) for
+  your local sessions.</li>
+<li><strong>Improved Windows support</strong>: The standalone CLI now has improved support
+  for running on Windows.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment">Install the CLI and configure</a>.</p>]]></content>
-    <summary>The CodeMender CLI now offers process-level sandboxing to protect your workstation and automatic update checks for enhanced security and features. This preview release also includes token usage statistics and improved Windows support.</summary>
-    <title>Process-level sandboxing and auto-updates (Preview): CodeMender CLI: Sandboxing and Auto-Updates (Preview)</title>
+    <summary>The CodeMender CLI now offers process-level sandboxing for enhanced security and automatic update checks. It also includes token usage statistics and improved Windows support.</summary>
+    <title>Feature: CodeMender CLI Enhancements</title>
   </entry>
   <entry>
     <author>
@@ -138,18 +151,29 @@ deprecations</a>.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:codemender is available in public preview:3</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-07-21:announcement:3</id>
     <published>2026-07-21T00:00:00+00:00</published>
     <updated>2026-07-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>CodeMender is now available in Public Preview for select customers. CodeMender is an AI-powered code security agent that runs on your local workstation to find, verify, and fix security vulnerabilities in your codebase.</p>
-<p>Key capabilities in this release include:
-* <strong>Scan and find</strong>: Scan your codebase for application logic, memory management, and authentication vulnerabilities, or import findings from external scanners.
-* <strong>Verify</strong>: Build your code and run tests locally to confirm whether findings are exploitable, minimizing false positives.
-* <strong>Fix</strong>: Auto-generate security patches and verify them locally before applying them to your workspace.
-* <strong>Safety controls</strong>: Enforces a Human-in-the-Loop workflow with mandatory manual confirmations for all disk writes and command executions by default.</p>
-<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/">CodeMender overview</a>.</p>]]></content>
-    <summary>CodeMender, an AI-powered agent for identifying, verifying, and fixing code security vulnerabilities directly on your local workstation, has entered Public Preview. This initial release allows select customers to leverage its capabilities for enhanced code security.</summary>
-    <title>CodeMender is available in Public Preview: CodeMender Public Preview Now Available</title>
+    <content type="html"><![CDATA[<p><strong>CodeMender is available in Public Preview</strong></p>
+<p>CodeMender is now available in Public Preview for select customers. CodeMender
+is an AI-powered code security agent that runs on your local workstation to
+find, verify, and fix security vulnerabilities in your codebase.</p>
+<p>Key capabilities in this release include:</p>
+<ul>
+<li><strong>Scan and find</strong>: Scan your codebase for application logic, memory
+  management, and authentication vulnerabilities, or import findings from
+  external scanners.</li>
+<li><strong>Verify</strong>: Build your code and run tests locally to confirm whether
+  findings are exploitable, minimizing false positives.</li>
+<li><strong>Fix</strong>: Auto-generate security patches and verify them locally before
+  applying them to your workspace.</li>
+<li><strong>Safety controls</strong>: Enforces a Human-in-the-Loop workflow with mandatory
+  manual confirmations for all disk writes and command executions by default.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/">CodeMender
+overview</a>.</p>]]></content>
+    <summary>CodeMender, an AI-powered agent for finding, verifying, and fixing code vulnerabilities, is now in public preview. It scans code, verifies findings locally to reduce false positives, and auto-generates security patches with safety controls.</summary>
+    <title>Announcement: CodeMender Now in Public Preview</title>
   </entry>
   <entry>
     <author>
@@ -196,10 +220,15 @@ Update your code to use either <code>gemini-3.1-flash-image</code> or
     <published>2026-07-15T00:00:00+00:00</published>
     <updated>2026-07-15T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Memory Bank memory profiles are generally available (GA)</strong></p>
-<p>Memory profiles in Memory Bank are generally available (GA). Memory profiles allow you to generate structured profiles, which are data structures with static schemas populated and updated using LLMs. By defining a fixed schema, you ensure your agents have immediate, low-latency access to evolving information without the need for expensive search operations during a session.</p>
-<p>For details, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/profiles">Memory profiles</a>.</p>]]></content>
-    <summary>Memory Bank memory profiles are now generally available. These profiles allow agents to access evolving information quickly and efficiently using structured data with fixed schemas, eliminating the need for costly search operations during a session.</summary>
-    <title>Feature: Memory Bank memory profiles now available</title>
+<p>Memory profiles in Memory Bank are generally available (GA). Memory profiles
+allow you to generate structured profiles, which are data structures with static
+schemas populated and updated using LLMs. By defining a fixed schema, you ensure
+your agents have immediate, low-latency access to evolving information without
+the need for expensive search operations during a session.</p>
+<p>For details, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/memory-bank/profiles">Memory
+profiles</a>.</p>]]></content>
+    <summary>Memory profiles in Memory Bank are now generally available. These profiles allow you to generate structured data with fixed schemas, providing low-latency access to information without costly search operations during a session. This feature ensures your agents can quickly access evolving data.</summary>
+    <title>Feature: Memory Bank memory profiles now generally available</title>
   </entry>
   <entry>
     <author>

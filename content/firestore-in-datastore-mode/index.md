@@ -1,5 +1,16 @@
 # Firestore in Datastore mode
 
+## 2026-08-11
+
+### Feature
+
+Firestore in Datastore mode (Datastore) now supports the `asia-southeast3` Bangkok
+region.
+
+For a full list of supported locations, see
+[Locations](https://docs.cloud.google.com/datastore/docs/locations).
+
+---
 ## 2026-03-23
 
 ### Feature

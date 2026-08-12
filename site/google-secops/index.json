@@ -12,28 +12,10 @@
       },
       {
         "kind": "Feature",
-        "content": "**Self-service Bindplane Enterprise license download**\n\nThis feature is currently in Preview. Google SecOps Enterprise Plus and Google Unified Security (GUS) customers can now download their **Bindplane Enterprise (Google Edition)** license key directly from the platform console under **SIEM Settings > Collection Agents**.\n\nFor more information, see [Bindplane Enterprise (Google Edition)](https://docs.cloud.google.com/chronicle/docs/ingestion/use-bindplane-agent#bp-download-license).",
-        "summary": {
-          "title": "Download Bindplane Enterprise License",
-          "summary": "Google SecOps Enterprise Plus and GUS customers can now self-serve their Bindplane Enterprise license download directly from the platform console. This feature simplifies license management for eligible users. Access it under SIEM Settings > Collection Agents."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "**Updated rich-text editor**\n\nUpgraded the rich-text editor across Google SecOps, including the Cases Wall,\nUse Case Upload dialog, Report Template dialog, and Dashboard Editor widget.\n\nKey changes include:\n\n* **Simplified typography**: Choose font sizes using semantic options (Small,\n  Normal, Large, Huge). Legacy font sizes on existing text are preserved.\n* **Streamlined tables**: You can insert or remove entire tables. Formatting\n  inside table cells is no longer supported.\n* **Toolbar cleanup**: Removed the Cut, Copy, and Paste buttons from the toolbar.\n  Standard OS keyboard shortcuts remain supported.\n* **Visual alignment**: Improved visual consistency between editor content\n  during editing and after submission.",
         "summary": {
           "title": "Rich-Text Editor Enhanced",
           "summary": "The rich-text editor has been upgraded across Google SecOps with simplified typography, streamlined tables, and a cleaner toolbar. These changes improve visual consistency and usability."
-        }
-      }
-    ],
-    "2026-08-05": [
-      {
-        "kind": "Deprecated",
-        "content": "The `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds are [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the `GTI_IOC` feed. After March 18, 2027, we will be removing the `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds. For more information on how to migrate, see [Migrate Mandiant legacy feeds to GTI](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).",
-        "summary": {
-          "title": "IOC Feeds Deprecated",
-          "summary": "The MANDIANT_ACTIVE_BREACH_IOC, MANDIANT_FUSION_IOC, and OPEN_SOURCE_INTEL_IOC feeds are deprecated. These feeds will be removed after March 18, 2027, and users should migrate to the GTI_IOC feed. For migration guidance, please refer to the documentation."
         }
       }
     ],
@@ -126,6 +108,16 @@
         "summary": {
           "title": "Code Snippet Extensions Now Support Repeated Fields",
           "summary": "Parser extensions for code snippets now support append and replace operations for repeated fields. This update extends granular control over UDM field data, previously only available for no-code extensions. You can now efficiently manage repeated fields by adding new values or replacing existing ones."
+        }
+      }
+    ],
+    "2026-08-05": [
+      {
+        "kind": "Deprecated",
+        "content": "The `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds are [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the `GTI_IOC` feed. After March 18, 2027, we will be removing the `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds. For more information on how to migrate, see [Migrate Mandiant legacy feeds to GTI](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).",
+        "summary": {
+          "title": "IOC Feeds Deprecated",
+          "summary": "The MANDIANT_ACTIVE_BREACH_IOC, MANDIANT_FUSION_IOC, and OPEN_SOURCE_INTEL_IOC feeds are deprecated. These feeds will be removed after March 18, 2027, and users should migrate to the GTI_IOC feed. For migration guidance, please refer to the documentation."
         }
       }
     ],

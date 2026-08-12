@@ -21,7 +21,34 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-07-27:security:1</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-07-27:feature:1</id>
+    <published>2026-07-27T00:00:00+00:00</published>
+    <updated>2026-07-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>SanitizeUserPrompt and SanitizeModelResponse policies now support function calling</strong></p>
+<p>The SanitizeUserPrompt and SanitizeModelResponse policies now handle LLM function calling
+(tool use) flows. Two new optional XML elements extract function calling content for
+Model Armor sanitization:</p>
+<ul>
+<li><code>&lt;FunctionResponseSource&gt;</code> in SanitizeUserPrompt: extracts function/tool
+  response data from user turns. Used as a fallback when <code>&lt;UserPromptSource&gt;</code>
+  returns empty on function calling turns.</li>
+<li><code>&lt;FunctionCallSource&gt;</code> in SanitizeModelResponse: extracts function call
+  arguments from model responses. Used as a fallback when <code>&lt;LLMResponseSource&gt;</code>
+  returns empty.</li>
+</ul>
+<p>Default templates target the Gemini format and require no additional configuration.
+For OpenAI and Anthropic formats, configure custom JSONPath templates.
+For more information, see
+<a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-user-prompt-policy#functionresponsesource">FunctionResponseSource</a> and
+<a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/sanitize-llm-response-policy#functioncallsource">FunctionCallSource</a>.</p>]]></content>
+    <summary>The SanitizeUserPrompt and SanitizeModelResponse policies now support function calling, also known as tool use, in LLM flows. New XML elements, FunctionResponseSource and FunctionCallSource, have been added to extract relevant data during these interactions. This enhancement simplifies the sanitization process for function calling scenarios.</summary>
+    <title>Feature: Function Calling Support Added to Sanitization Policies</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-07-27:security:2</id>
     <published>2026-07-27T00:00:00+00:00</published>
     <updated>2026-07-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
@@ -35,7 +62,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:apigee-x:2026-07-27:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-07-27:fixed:3</id>
     <published>2026-07-27T00:00:00+00:00</published>
     <updated>2026-07-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |

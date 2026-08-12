@@ -2,9 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-08-10T00:00:00+00:00</updated>
+  <updated>2026-08-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-08-11:feature:0</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Manage overages, spend limits, and costs for invoiced Cloud Billing accounts</strong></p>
+<p>If your project has an <a href="https://docs.cloud.google.com/billing/docs/concepts#billing_account_types">invoiced Cloud Billing
+account</a> and at least one active,
+non-free-trial subscription, administrators can enable overages, configure
+monthly spend limits, and monitor feature usage and costs in Gemini Enterprise:</p>
+<ul>
+<li><strong>Enable overages</strong>: Allow users to continue using features at pay-as-you-go
+  rates after reaching pooled quotas. Overages are supported for Standard,
+  Plus, and Standard Emerging Market editions for customers with an invoiced
+  Cloud Billing account and at least one active, non-free-trial subscription.</li>
+<li><strong>Set spend limits</strong>: Configure monthly project spending caps and budget
+  alert thresholds in Cloud Billing to prevent unexpected charges.</li>
+<li><strong>View feature usage and costs</strong>: Track pooled quota consumption,
+  pay-as-you-go usage, and 30-day billing trends on the Usage &amp; Spending page
+  in the Gemini Enterprise console and Cloud Billing console.</li>
+</ul>
+<p><strong>Note:</strong> This feature only applies to projects linked to an invoiced Cloud
+Billing account. However, it isn't available if you received an email with the
+subject <em>[Billing Update] New Gemini Enterprise
+overage billing controls launching Aug 17, 2026</em>.</p>
+<p>For more information, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview">Overview of overages and spend
+  controls</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages">Configure overages and spend
+  limits</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage">View feature usage</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/view-costs">View costs</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/reports/gemini-enterprise-costs">View Gemini Enterprise costs in Cloud Billing
+  reports</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/billing-cycle#view-your-charging-cycle">Find out your Cloud Billing account type and charging cycle</a></li>
+</ul>]]></content>
+    <summary>Administrators can now manage overages, set spend limits, and monitor costs for Gemini Enterprise when using an invoiced Cloud Billing account. This provides greater control over feature usage and spending, with options to enable pay-as-you-go rates after reaching quotas and set monthly spending caps.</summary>
+    <title>Feature: New cost controls for Gemini Enterprise</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -144,19 +186,21 @@ spans</a>.</p>]]></content>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/pylon">Pylon</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/s_p_global">S&amp;P Global - Deterministic Retrieval</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/sanity">Sanity</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8">ServiceM8</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/supabase">Supabase</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/supermetrics">Supermetrics</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/surveymonkey">SurveyMonkey</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/wix">Wix</a></li>
 </ul>
-<p>Additionally, support for a new action is available in Public Preview for the
-following data store:</p>
+<p>Additionally, support for new actions is available in Public Preview for the
+following data stores:</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/freshservice">Freshservice</a>: Create ticket notes.</li>
-</ul>
-<p>For more information, see
-<a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source">Connect a third-party data source</a>.</p>]]></content>
-    <summary>Gemini Enterprise is now in Public Preview with support for numerous new data stores, enhancing its integration capabilities. Additionally, a new action to create ticket notes is available for Freshservice. Explore these updates to expand how Gemini Enterprise interacts with your essential business tools.</summary>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8">ServiceM8</a>: Add job note, change job status, compose email message, create job, create job activity, and send job to queue.
+  For more information, see
+  <a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source">Connect a third-party data source</a>.</li>
+</ul>]]></content>
+    <summary>Gemini Enterprise is now in Public Preview with support for new data stores including Attio, Cohesity, and Oracle NetSuite. Additionally, new actions are available for Freshservice and ServiceM8, enhancing workflow automation.</summary>
     <title>Feature: New data stores and actions for Gemini Enterprise</title>
   </entry>
   <entry>
@@ -170,7 +214,7 @@ following data store:</p>
 <p>The Gemini Enterprise Pay-as-you-go edition is generally available. With
 this edition, you pay for the feature usage your project consumes without
 pooled user license quotas. To get started, you need an invoiced
-Cloud Billing billing account with a one-seat minimum. You can monitor
+Cloud Billing account with a one-seat minimum. You can monitor
 feature usage and set monthly spend limits in the Google Cloud console.
 This feature is rolling out gradually to eligible customers over the next
 few weeks.</p>
@@ -181,8 +225,8 @@ few weeks.</p>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage">View feature usage</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages#set-spend-limit">Set a monthly spend limit</a></li>
 </ul>]]></content>
-    <summary>Gemini Enterprise's Pay-as-you-go edition is now generally available. This new option allows you to pay only for the features your project consumes, offering a flexible alternative to user-based licensing. You can easily monitor usage and set spending limits directly within the Google Cloud console.</summary>
-    <title>Feature: Gemini Enterprise: Pay-as-you-go now available</title>
+    <summary>Gemini Enterprise's Pay-as-you-go edition is now generally available. This new option allows you to pay only for the features your project consumes, offering flexibility without pooled user licenses. You can easily monitor usage and set spending limits directly within the Google Cloud console.</summary>
+    <title>Feature: Gemini Enterprise: Pay for what you use</title>
   </entry>
   <entry>
     <author>
@@ -194,8 +238,8 @@ few weeks.</p>
     <content type="html"><![CDATA[<p><strong>Gemini Enterprise: New data stores and support for new actions (Preview)</strong></p>
 <p>The following data stores are available in Public Preview:</p>
 <ul>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/google-compute-engine">Compute Engine</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/egnyte">Egnyte</a></li>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8">ServiceM8</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/sourcegraph">Sourcegraph</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/tavily">Tavily</a></li>
 </ul>
@@ -204,14 +248,14 @@ following data stores:</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airops">AirOps</a>: Suggest Brand Kit edits and write grid.</li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/egnyte">Egnyte</a>: Create comments, create folders, create links, and upload files.</li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/googlestitch">Google Stitch</a>: Edit screens.</li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/lovable">Lovable</a>: Deploy projects, enable databases, send messages, and set workspace knowledge.</li>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/servicem8">ServiceM8</a>: Add job note, change job status, compose email message, create job, create job activity, and send job to queue.</li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/smartsheet">Smartsheet</a>: Add favorites, create sheets, create workspaces, and update rows.</li>
 </ul>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source">Connect a third-party data source</a>.</p>]]></content>
-    <summary>Gemini Enterprise now supports new data stores including Egnyte, ServiceM8, Sourcegraph, and Tavily. Additionally, enhanced actions are available for several data stores, allowing for greater integration and workflow automation.</summary>
-    <title>Feature: Gemini Enterprise: New Integrations and Actions Available</title>
+    <summary>Gemini Enterprise now offers public preview access to new data stores including Compute Engine and Egnyte. Additionally, enhanced action support is available for services like AirOps and Smartsheet, allowing for more dynamic integrations and workflows.</summary>
+    <title>Feature: Gemini Enterprise: New data stores and actions</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,131 @@
 # Google SecOps Marketplace
 
+## 2026-08-12
+
+### Feature
+
+**CyberArk Credential Provider**: Version 5.0
+
+* The following new job has been added:
+
+  + **Sync Integration Credentials Job**
+
+### Feature
+
+**Microsoft Graph Mail**: Version 45.0
+
+* The following new actions have been added:
+
+  + **Block Domain**
+  + **Block Sender**
+  + **Delete Inbox Rules**
+  + **List Rules**
+  + **Remove Block Domain**
+  + **Remove Block Sender**
+
+### Feature
+
+**Microsoft Graph Mail Delegated**: Version 22.0
+
+* The following new actions have been added:
+
+  + **Block Domain**
+  + **Block Sender**
+  + **Delete Inbox Rules**
+  + **List Rules**
+  + **Remove Block Domain**
+  + **Remove Block Sender**
+
+### Change
+
+**Active Directory**: Version 45.0
+
+* Fixed an issue in the following action where entity properties were
+  incorrectly reset on update:
+
+  + **Enrich Entities**
+
+### Change
+
+**AWS WAF**: Version 14.0
+
+* Updated integration dependencies.
+
+### Change
+
+**Cisco Umbrella**: Version 21.0
+
+* Fixed an issue in the following action where entity attachment failed due to a
+  bytes object serialization error:
+
+  + **Get Domain Security Info**
+
+### Change
+
+**CrowdStrike Falcon**: Version 81.0
+
+* Added the ability to use device IDs as input parameters in the following actions:
+
+  + **Hide Hosts**
+  + **Contain Endpoint**
+  + **Download File**
+  + **Execute Command**
+  + **Get Host Information**
+  + **Lift Contained Endpoint**
+  + **List Host Vulnerabilities**
+  + **On-Demand Scan**
+  + **Run Script**
+
+### Change
+
+**Enrichment**
+
+* Fixed an issue in the following action where unsupported entity types were
+  selected during enrichment:
+
+  + **Whois**
+
+### Change
+
+**GitSync**
+
+* Fixed an issue in the following action where the **Include Playbook Blocks**
+  parameter was ignored when a folder allowlist was used:
+
+  + **Push Playbook**
+
+### Change
+
+**Microsoft 365 Defender**: Version 30.0
+
+* Added support for GCC High tenants by dynamically constructing API token
+  scopes and adding a configurable **API Root** parameter in the following
+  connector:
+
+  + **Microsoft 365 Defender - Incidents Connector**
+* Improved error handling and alert processing mechanisms in the following job:
+
+  + **Sync Alerts**
+
+### Change
+
+**Microsoft Graph Mail**: Version 45.0
+
+* Fixed an issue in the following action where an unhandled exception occurred
+  when a user mailbox was not found:
+
+  + **Get Mailbox Account Out Of Facility Settings**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 22.0
+
+* Fixed an issue in the following action where an unhandled exception occurred
+  when a user mailbox was not found:
+
+  + **Get Mailbox Account Out Of Facility Settings**
+
+---
 ## 2026-08-05
 
 ### Change

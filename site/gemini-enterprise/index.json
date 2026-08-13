@@ -1,7 +1,33 @@
 {
   "name": "Gemini Enterprise",
   "entries": {
+    "2026-08-12": [
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: GitHub connector with data federation**\n\nThe GitHub connector with data federation is generally available (GA)\nin Gemini Enterprise. The connector lets you search and act on GitHub\nrepositories, issues, and pull requests directly from the Gemini\nEnterprise agent, with tool actions such as creating branches, adding\nissue comments, merging pull requests, and pushing files.\n\nFor more information, see the\n[Connect GitHub with data federation](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github)\ndocumentation.",
+        "summary": {
+          "title": "Gemini Enterprise GitHub Connector Now Available",
+          "summary": "The Gemini Enterprise GitHub connector is now generally available, allowing users to search and act on GitHub repositories, issues, and pull requests directly within the Gemini Enterprise agent. This feature supports various tool actions, streamlining development workflows."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: AlphaEvolve HPC solution**\n\nThe AlphaEvolve HPC solution provides a distributed, containerized\ninfrastructure for running large-scale evolutionary code optimization\nexperiments on Google Cloud. If your evaluations require specialized\nhardware or exceed the resource limits of a single machine, use the\nAlphaEvolve HPC solution.\n\nFor more information, see [AlphaEvolve for HPC use\ncases](https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/developer-guide/use-alphaevolve-hpc).",
+        "summary": {
+          "title": "AlphaEvolve HPC Solution",
+          "summary": "A distributed, containerized infrastructure for large-scale evolutionary code optimization experiments. This solution is ideal for evaluations requiring specialized hardware or exceeding single-machine resource limits."
+        }
+      }
+    ],
     "2026-08-11": [
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: New data stores and support for new actions (Public Preview)**\n\nThe following data stores are available in Public Preview in Gemini Enterprise:\n\n* [Cisco Workspaces](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/cisco-workspaces)\n* [Fibery](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/fibery)\n* [Gong](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gong)\n* [Guru](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/guru)\n* [Hex](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hex)\n* [LegalZoom](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/legalzoom)\n* [Mercury](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/mercury-mcp)\n* [Miro](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/miro)\n* [Ramp](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ramp-mcp)\n* [Solve Intelligence](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/solve-intelligence)\n* [Vanta](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/vanta)\n* [Webex Meetings](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/webex-meetings)\n\nYou can search and read data from these data stores using natural language.\n\nAdditionally, the following data stores support new actions in Public Preview:\n\n* [Airtable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airtable): Update records for a table.\n* [Hex](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hex): Create threads and continue threads.\n* [Miro](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/miro): Create documents and update documents.\n* [Smartsheet](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/smartsheet): Add rows.",
+        "summary": {
+          "title": "Gemini Enterprise: New Data Stores and Actions Available",
+          "summary": "Gemini Enterprise now offers public preview support for numerous new data stores, allowing you to search and read information using natural language. Additionally, several existing data stores, including Airtable, Hex, Miro, and Smartsheet, now support new actions like updating records, creating threads, and adding rows."
+        }
+      },
       {
         "kind": "Feature",
         "content": "**Gemini Enterprise: Manage overages, spend limits, and costs for invoiced Cloud Billing accounts**\n\nIf your project has an [invoiced Cloud Billing\naccount](https://docs.cloud.google.com/billing/docs/concepts#billing_account_types) and at least one active,\nnon-free-trial subscription, administrators can enable overages, configure\nmonthly spend limits, and monitor feature usage and costs in Gemini Enterprise:\n\n* **Enable overages**: Allow users to continue using features at pay-as-you-go\n  rates after reaching pooled quotas. Overages are supported for Standard,\n  Plus, and Standard Emerging Market editions for customers with an invoiced\n  Cloud Billing account and at least one active, non-free-trial subscription.\n* **Set spend limits**: Configure monthly project spending caps and budget\n  alert thresholds in Cloud Billing to prevent unexpected charges.\n* **View feature usage and costs**: Track pooled quota consumption,\n  pay-as-you-go usage, and 30-day billing trends on the Usage & Spending page\n  in the Gemini Enterprise console and Cloud Billing console.\n\n**Note:** This feature only applies to projects linked to an invoiced Cloud\nBilling account. However, it isn't available if you received an email with the\nsubject *[Billing Update] New Gemini Enterprise\noverage billing controls launching Aug 17, 2026*.\n\nFor more information, see:\n\n* [Overview of overages and spend\n  controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview)\n* [Configure overages and spend\n  limits](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages)\n* [View feature usage](https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage)\n* [View costs](https://docs.cloud.google.com/gemini/enterprise/docs/view-costs)\n* [View Gemini Enterprise costs in Cloud Billing\n  reports](https://docs.cloud.google.com/billing/docs/how-to/reports/gemini-enterprise-costs)\n* [Find out your Cloud Billing account type and charging cycle](https://docs.cloud.google.com/billing/docs/how-to/billing-cycle#view-your-charging-cycle)",
@@ -22,6 +48,14 @@
       }
     ],
     "2026-08-07": [
+      {
+        "kind": "Change",
+        "content": "**Gemini Enterprise: Experimental agent telemetry aligned with OpenTelemetry generative AI semantic conventions**\n\nGemini Enterprise agents emit richer, standards-aligned telemetry based on the\nOpenTelemetry generative AI semantic conventions, in addition to the existing\nstable telemetry. Trace spans and Cloud Logging entries include\nstandardized `gen_ai.*` attributes (for example, `gen_ai.agent.name`,\n`gen_ai.conversation.id`, `gen_ai.usage.input_tokens`, and\n`gen_ai.input.messages`) that describe agent, model, and tool activity.\n\nPrompt and response message content appears in these attributes only when your\nobservability settings allow logging of prompt inputs and response outputs;\notherwise it is redacted or omitted. OpenTelemetry classifies these conventions\nas Development status, so this telemetry is experimental and subject to change.\n\nFor more information, see\n[Access traces and spans](https://docs.cloud.google.com/gemini/enterprise/docs/access-traces-and-spans#experimental-telemetry).",
+        "summary": {
+          "title": "Agent telemetry updates for Gemini Enterprise",
+          "summary": "Gemini Enterprise agents now provide enhanced telemetry data aligned with OpenTelemetry generative AI semantic conventions. This experimental feature adds standardized attributes to trace spans and logs, offering deeper insights into agent and model activity, with configurable privacy controls for message content."
+        }
+      },
       {
         "kind": "Feature",
         "content": "**Gemini Enterprise: Custom MCP server data stores**\n\nYou can connect your custom Model Context Protocol (MCP) server with\nGemini Enterprise to securely access your company's private data, custom\ninternal tools, and MCP-compliant third-party systems.\n\nThis feature is turned off by default. To enable it, an Organization Policy\nAdministrator must remove the organization constraint. This feature is generally\navailable (GA).\n\nFor more information, see:\n\n* [Set up your custom MCP server](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server)\n* [Override the organization policy for Custom MCP data stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/override-constraint-for-custom-mcp-data-stores)",

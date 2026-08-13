@@ -1,6 +1,104 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-08-12": [
+      {
+        "kind": "Feature",
+        "content": "**CyberArk Credential Provider**: Version 5.0\n\n* The following new job has been added:\n\n  + **Sync Integration Credentials Job**",
+        "summary": {
+          "title": "CyberArk Credential Provider v5.0",
+          "summary": "Version 5.0 of the CyberArk Credential Provider is now available. This release introduces a new Sync Integration Credentials Job to enhance credential management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Microsoft Graph Mail**: Version 45.0\n\n* The following new actions have been added:\n\n  + **Block Domain**\n  + **Block Sender**\n  + **Delete Inbox Rules**\n  + **List Rules**\n  + **Remove Block Domain**\n  + **Remove Block Sender**",
+        "summary": {
+          "title": "New Mail Actions Available",
+          "summary": "Version 45.0 of Microsoft Graph Mail introduces several new actions to manage your inbox. You can now block and unblock senders and domains, as well as delete and list inbox rules."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Microsoft Graph Mail Delegated**: Version 22.0\n\n* The following new actions have been added:\n\n  + **Block Domain**\n  + **Block Sender**\n  + **Delete Inbox Rules**\n  + **List Rules**\n  + **Remove Block Domain**\n  + **Remove Block Sender**",
+        "summary": {
+          "title": "New Mail Actions Available",
+          "summary": "Version 22.0 of Microsoft Graph Mail Delegated introduces several new actions to manage your inbox. You can now block specific domains and senders, delete existing inbox rules, and list all your current rules."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Active Directory**: Version 45.0\n\n* Fixed an issue in the following action where entity properties were\n  incorrectly reset on update:\n\n  + **Enrich Entities**",
+        "summary": {
+          "title": "Active Directory action update",
+          "summary": "An issue with entity property resets during updates in the Enrich Entities action has been resolved. This fix ensures that entity properties are maintained correctly after an update."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**AWS WAF**: Version 14.0\n\n* Updated integration dependencies.",
+        "summary": {
+          "title": "AWS WAF Version 14.0 Released",
+          "summary": "AWS WAF has been updated to version 14.0, including improvements to its integration dependencies. This update ensures better performance and compatibility with other services."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Cisco Umbrella**: Version 21.0\n\n* Fixed an issue in the following action where entity attachment failed due to a\n  bytes object serialization error:\n\n  + **Get Domain Security Info**",
+        "summary": {
+          "title": "Umbrella Version 21.0 Update",
+          "summary": "Umbrella version 21.0 addresses a serialization error in the 'Get Domain Security Info' action, resolving issues with entity attachment. This update ensures the action functions correctly."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**CrowdStrike Falcon**: Version 81.0\n\n* Added the ability to use device IDs as input parameters in the following actions:\n\n  + **Hide Hosts**\n  + **Contain Endpoint**\n  + **Download File**\n  + **Execute Command**\n  + **Get Host Information**\n  + **Lift Contained Endpoint**\n  + **List Host Vulnerabilities**\n  + **On-Demand Scan**\n  + **Run Script**",
+        "summary": {
+          "title": "CrowdStrike Falcon 81.0: New Input Options",
+          "summary": "CrowdStrike Falcon version 81.0 now supports using device IDs as input parameters for several key actions. This enhancement streamlines workflows by allowing direct targeting of specific endpoints for tasks like hiding hosts, containing endpoints, and executing commands."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Enrichment**\n\n* Fixed an issue in the following action where unsupported entity types were\n  selected during enrichment:\n\n  + **Whois**",
+        "summary": {
+          "title": "Enrichment action improved",
+          "summary": "We have fixed an issue in the enrichment action, specifically within the Whois tool. This correction ensures that only supported entity types can be selected, preventing errors."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**GitSync**\n\n* Fixed an issue in the following action where the **Include Playbook Blocks**\n  parameter was ignored when a folder allowlist was used:\n\n  + **Push Playbook**",
+        "summary": {
+          "title": "GitSync Fix for Playbook Push",
+          "summary": "An issue has been resolved in GitSync's Push Playbook action. The Include Playbook Blocks parameter will now be correctly applied even when a folder allowlist is in use."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft 365 Defender**: Version 30.0\n\n* Added support for GCC High tenants by dynamically constructing API token\n  scopes and adding a configurable **API Root** parameter in the following\n  connector:\n\n  + **Microsoft 365 Defender - Incidents Connector**\n* Improved error handling and alert processing mechanisms in the following job:\n\n  + **Sync Alerts**",
+        "summary": {
+          "title": "Microsoft 365 Defender v30.0 Update",
+          "summary": "Version 30.0 of Microsoft 365 Defender introduces support for GCC High tenants through dynamic API token scopes and a configurable API Root parameter for the Incidents Connector. Additionally, the Sync Alerts job has been enhanced with improved error handling and alert processing."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail**: Version 45.0\n\n* Fixed an issue in the following action where an unhandled exception occurred\n  when a user mailbox was not found:\n\n  + **Get Mailbox Account Out Of Facility Settings**",
+        "summary": {
+          "title": "Mailbox Account Action Update",
+          "summary": "Version 45.0 of Microsoft Graph Mail includes a fix for the 'Get Mailbox Account Out Of Facility Settings' action. This resolves an unhandled exception that occurred when a user's mailbox was not found."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail Delegated**: Version 22.0\n\n* Fixed an issue in the following action where an unhandled exception occurred\n  when a user mailbox was not found:\n\n  + **Get Mailbox Account Out Of Facility Settings**",
+        "summary": {
+          "title": "Mail Delegated Action Fix",
+          "summary": "Version 22.0 of Microsoft Graph Mail Delegated includes a fix for the Get Mailbox Account Out Of Facility Settings action. This resolves an unhandled exception that occurred when a user's mailbox was not found."
+        }
+      }
+    ],
     "2026-08-05": [
       {
         "kind": "Change",

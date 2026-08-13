@@ -1,6 +1,64 @@
 # Gemini Enterprise
 
+## 2026-08-12
+
+### Feature
+
+**Gemini Enterprise: GitHub connector with data federation**
+
+The GitHub connector with data federation is generally available (GA)
+in Gemini Enterprise. The connector lets you search and act on GitHub
+repositories, issues, and pull requests directly from the Gemini
+Enterprise agent, with tool actions such as creating branches, adding
+issue comments, merging pull requests, and pushing files.
+
+For more information, see the
+[Connect GitHub with data federation](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/github)
+documentation.
+
+### Feature
+
+**Gemini Enterprise: AlphaEvolve HPC solution**
+
+The AlphaEvolve HPC solution provides a distributed, containerized
+infrastructure for running large-scale evolutionary code optimization
+experiments on Google Cloud. If your evaluations require specialized
+hardware or exceed the resource limits of a single machine, use the
+AlphaEvolve HPC solution.
+
+For more information, see [AlphaEvolve for HPC use
+cases](https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/developer-guide/use-alphaevolve-hpc).
+
+---
 ## 2026-08-11
+
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Public Preview)**
+
+The following data stores are available in Public Preview in Gemini Enterprise:
+
+* [Cisco Workspaces](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/cisco-workspaces)
+* [Fibery](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/fibery)
+* [Gong](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gong)
+* [Guru](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/guru)
+* [Hex](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hex)
+* [LegalZoom](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/legalzoom)
+* [Mercury](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/mercury-mcp)
+* [Miro](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/miro)
+* [Ramp](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ramp-mcp)
+* [Solve Intelligence](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/solve-intelligence)
+* [Vanta](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/vanta)
+* [Webex Meetings](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/webex-meetings)
+
+You can search and read data from these data stores using natural language.
+
+Additionally, the following data stores support new actions in Public Preview:
+
+* [Airtable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airtable): Update records for a table.
+* [Hex](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/hex): Create threads and continue threads.
+* [Miro](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/miro): Create documents and update documents.
+* [Smartsheet](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/smartsheet): Add rows.
 
 ### Feature
 
@@ -54,6 +112,25 @@ For more information, see
 
 ---
 ## 2026-08-07
+
+### Change
+
+**Gemini Enterprise: Experimental agent telemetry aligned with OpenTelemetry generative AI semantic conventions**
+
+Gemini Enterprise agents emit richer, standards-aligned telemetry based on the
+OpenTelemetry generative AI semantic conventions, in addition to the existing
+stable telemetry. Trace spans and Cloud Logging entries include
+standardized `gen_ai.*` attributes (for example, `gen_ai.agent.name`,
+`gen_ai.conversation.id`, `gen_ai.usage.input_tokens`, and
+`gen_ai.input.messages`) that describe agent, model, and tool activity.
+
+Prompt and response message content appears in these attributes only when your
+observability settings allow logging of prompt inputs and response outputs;
+otherwise it is redacted or omitted. OpenTelemetry classifies these conventions
+as Development status, so this telemetry is experimental and subject to change.
+
+For more information, see
+[Access traces and spans](https://docs.cloud.google.com/gemini/enterprise/docs/access-traces-and-spans#experimental-telemetry).
 
 ### Feature
 

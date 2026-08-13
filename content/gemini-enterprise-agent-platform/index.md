@@ -1,5 +1,20 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-12
+
+### Feature
+
+
+
+### CodeMender CLI: Sandbox enabled by default
+
+This release updates the CodeMender CLI default behavior:
+
+* **Sandbox enabled by default**: The CLI now runs commands inside the process-level sandbox by default to protect your workstation. You can disable the sandbox in your `config.yaml`, by passing `--sandbox=false` to CLI commands, or bypass it using the `--unrestricted` flag.
+
+For more information, see [Install the CLI and configure](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender/set-up-environment).
+
+---
 ## 2026-08-04
 
 ### Feature

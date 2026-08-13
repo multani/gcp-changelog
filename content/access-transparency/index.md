@@ -1,5 +1,13 @@
 # Access Transparency
 
+## 2026-07-31
+
+### Feature
+
+App Topology (including One Graph) is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-22
 
 ### Feature

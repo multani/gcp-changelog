@@ -1,5 +1,84 @@
 # Agent Platform Workbench
 
+## 2026-08-09
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260809-2330-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260809-2330-rc0 Release
+
+
+
+### Fixed
+
+Fixed the Git panel's grayed out buttons which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.
+
+### Change
+
+
+
+### 20260809-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the Git panel's grayed out buttons which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.
+
+### Change
+
+
+
+### 20260809-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260809-2130-rc0 Release
+
+
+
+### Change
+
+Updated the NVIDIA GPU driver on Workbench Debian 12 images from 580.65.06 to 580.126.20 for compatibility with the Debian 12 6.1.0-52 kernel.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the Git panel's grayed out buttons which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.
+
+---
 ## 2026-08-02
 
 ### Change
@@ -18,9 +97,25 @@
 
 
 
+### Fixed
+
+Fixed issue with JupyterLab UI silently reverting file changes and interrupting kernels due to Gemini CLI's auto reload extension.
+
+### Change
+
+The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.
+
 ### Change
 
 Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed issue with JupyterLab UI silently reverting file changes and interrupting kernels due to Gemini CLI's auto reload extension.
+
+### Change
+
+The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.
 
 ### Change
 
@@ -50,9 +145,25 @@ Fixed an error that could prevent creating new `micromamba` environments at runt
 
 
 
+### Fixed
+
+Fixed issue with JupyterLab UI silently reverting file changes and interrupting kernels due to Gemini CLI's auto reload extension.
+
+### Change
+
+The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.
+
 ### Change
 
 Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed issue with JupyterLab UI silently reverting file changes and interrupting kernels due to Gemini CLI's auto reload extension.
+
+### Change
+
+The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.
 
 ### Change
 
@@ -87,6 +198,14 @@ Installed latest packages from upstream dependencies.
 
 ### Fixed
 
+Fixed issue with JupyterLab UI silently reverting file changes and interrupting kernels due to Gemini CLI's auto reload extension.
+
+### Change
+
+The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.
+
+### Fixed
+
 Fixed the JupyterLab Git extension's Pull and Push buttons being disabled by pinning `jupyterlab-git` to 0.53.0.
 
 ### Fixed
@@ -116,6 +235,10 @@ Files created by the post-startup script are now owned by the `jupyter` user, an
 ### Fixed
 
 Files created by the post-startup script are now owned by the `jupyter` user, and `git safe.directory` is configured so that root-owned repositories continue to work.
+
+### Fixed
+
+Fixed issue with JupyterLab UI silently reverting file changes and interrupting kernels due to Gemini CLI's auto reload extension.
 
 ### Change
 

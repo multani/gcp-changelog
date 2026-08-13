@@ -1,5 +1,54 @@
 # Data Studio
 
+## 2026-08-13
+
+### Feature
+
+**Fullscreen charts**
+
+You can view individual charts in fullscreen mode. Click the fullscreen
+button in the chart header to expand the chart. This feature is not available
+for scorecards and gauge charts.
+
+### Feature
+
+**Rotate components**
+
+You can rotate text boxes, images, and shapes in Data Studio. Report
+creators can rotate these components on a non-responsive canvas and can reset
+the rotation to 0 degrees.
+
+### Feature
+
+**Center labels on stacked bar charts**
+
+You can position labels in the center of stacked bar charts. If
+insufficient space is available to center the label within the bar, the label
+is displayed outside the bar.
+
+For more information, see the [Bar chart and column chart
+reference](https://docs.cloud.google.com/data-studio/bar-chart-and-column-chart-reference).
+
+### Feature
+
+**Search for settings**
+
+You can search for settings in the **Setup** and **Style** tabs of the
+[properties panel](https://docs.cloud.google.com/data-studio/properties-panel).
+
+### Feature
+
+**Copy chart as image**
+
+You can copy a chart as a PNG image to your clipboard.
+
+### Feature
+
+**Bubble chart border color**
+
+You can modify the border color of bubbles in bubble charts.
+
+---
 ## 2026-07-30
 
 ### Announcement

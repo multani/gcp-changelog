@@ -22,6 +22,14 @@ Privileged Access Manager is available in
 [Preview](https://cloud.google.com/products#product-launch-stages).
 
 ---
+## 2026-07-15
+
+### Feature
+
+Firebase App Hosting is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-05-22
 
 ### Feature

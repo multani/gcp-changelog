@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Error Reporting</title>
   <subtitle>Changelog for Google Cloud product: Error Reporting</subtitle>
-  <updated>2026-05-28T00:00:00+00:00</updated>
+  <updated>2026-08-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:error-reporting</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/error-reporting/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:error-reporting:2026-08-13:announcement:0</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Error Reporting can report stack traces collected from Rust applications
+using <a href="https://doc.rust-lang.org/std/backtrace/index.html"><code>std::backtrace</code></a>.
+To enable, set the <code>RUST_BACKTRACE=1</code> environment variable and
+make sure debug symbols are enabled.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/error-reporting/reference/rest/v1beta1/projects.events/report.html?rep_location=global#reportederrorevent">ReportedErrorEvent</a>.</p>]]></content>
+    <summary>Error Reporting now supports stack traces from Rust applications using std::backtrace. Enable this feature by setting the RUST_BACKTRACE=1 environment variable and ensuring debug symbols are included in your build. This allows for more detailed debugging of errors originating from Rust code.</summary>
+    <title>Announcement: Rust Error Reporting with Backtraces</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

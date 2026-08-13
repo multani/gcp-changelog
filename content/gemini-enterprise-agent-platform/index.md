@@ -4,9 +4,7 @@
 
 ### Feature
 
-
-
-### CodeMender CLI: Sandbox enabled by default
+**CodeMender CLI: Sandbox enabled by default**
 
 This release updates the CodeMender CLI default behavior:
 

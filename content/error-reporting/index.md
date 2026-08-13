@@ -1,5 +1,18 @@
 # Error Reporting
 
+## 2026-08-13
+
+### Announcement
+
+Error Reporting can report stack traces collected from Rust applications
+using [`std::backtrace`](https://doc.rust-lang.org/std/backtrace/index.html).
+To enable, set the `RUST_BACKTRACE=1` environment variable and
+make sure debug symbols are enabled.
+
+For more information, see
+[ReportedErrorEvent](https://docs.cloud.google.com/error-reporting/reference/rest/v1beta1/projects.events/report.html?rep_location=global#reportederrorevent).
+
+---
 ## 2026-05-28
 
 ### Announcement

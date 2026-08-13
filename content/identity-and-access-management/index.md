@@ -1,5 +1,18 @@
 # Identity and Access Management
 
+## 2026-08-12
+
+### Change
+
+The workflow for creating workforce identity pool providers in the
+Google Cloud console changed. After submitting the initial provider configuration,
+the console directs you to a centralized page to configure provider attributes,
+including attribute mappings, attribute conditions, and extra attributes.
+
+For more information, see
+[Manage workforce identity pools and providers](https://docs.cloud.google.com/iam/docs/manage-workforce-identity-pools-providers).
+
+---
 ## 2026-08-03
 
 ### Feature

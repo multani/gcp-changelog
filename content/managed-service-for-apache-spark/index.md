@@ -1,5 +1,22 @@
 # Managed Service for Apache Spark
 
+## 2026-08-12
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions#supported-dataproc-serverless-for-spark-runtime-versions):
+
+* 1.2.86
+* 2.2.86
+* 2.3.39
+
+Key updates in these runtime versions include:
+
+* **OpenLineage updates**: In the `2.3` runtime:
+  + Upgraded OpenLineage to version `1.49` to support lineage for tables created using the Lakehouse Runtime catalog.
+  + Fixed a segmentation fault when OpenLineage parses complex SQL query strings.
+
+---
 ## 2026-08-10
 
 ### Fixed

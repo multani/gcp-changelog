@@ -1,5 +1,27 @@
 # VPC Service Controls
 
+## 2026-08-13
+
+### Feature
+
+**VPC Service Controls feature (Status: [Preview](https://cloud.google.com/products#product-launch-stages)):** Support for optimizing service
+perimeters using the VPC Service Controls recommender is available.
+
+The recommender detects architectural risks and perimeter
+misconfigurations, including the following:
+
+* **Critical resources at risk of exfiltration**: Identifies active and
+  sensitive services (such as BigQuery and Cloud Storage) operating
+  outside service perimeters.
+* **Unconfigured VPC accessible services**: Identifies perimeters that leave
+  APIs unrestricted from within the security boundary.
+* **Misconfigured VPC accessible services**: Identifies mismatches between
+  allowed accessible APIs and restricted services inside a perimeter.
+
+For more information, see
+[Optimize perimeters with recommender](https://docs.cloud.google.com/vpc-service-controls/docs/recommender).
+
+---
 ## 2026-08-06
 
 ### Feature

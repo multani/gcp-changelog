@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: VPC Service Controls</title>
   <subtitle>Changelog for Google Cloud product: VPC Service Controls</subtitle>
-  <updated>2026-08-06T00:00:00+00:00</updated>
+  <updated>2026-08-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:vpc-service-controls</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/vpc-service-controls/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:vpc-service-controls:2026-08-13:feature:0</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>VPC Service Controls feature (Status: <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>):</strong> Support for optimizing service
+perimeters using the VPC Service Controls recommender is available.</p>
+<p>The recommender detects architectural risks and perimeter
+misconfigurations, including the following:</p>
+<ul>
+<li><strong>Critical resources at risk of exfiltration</strong>: Identifies active and
+  sensitive services (such as BigQuery and Cloud Storage) operating
+  outside service perimeters.</li>
+<li><strong>Unconfigured VPC accessible services</strong>: Identifies perimeters that leave
+  APIs unrestricted from within the security boundary.</li>
+<li><strong>Misconfigured VPC accessible services</strong>: Identifies mismatches between
+  allowed accessible APIs and restricted services inside a perimeter.</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/vpc-service-controls/docs/recommender">Optimize perimeters with recommender</a>.</p>]]></content>
+    <summary>A new recommender helps you optimize VPC Service Controls by detecting architectural risks and misconfigurations in your service perimeters. It identifies critical resources at risk and helps ensure your perimeters are correctly configured to prevent data exfiltration.</summary>
+    <title>Feature: Optimize VPC Service Controls</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

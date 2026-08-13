@@ -1,5 +1,18 @@
 # Cloud Workstations
 
+## 2026-08-12
+
+### Feature
+
+Cloud Workstations supports
+[Compute Engine suspend and resume](https://docs.cloud.google.com/compute/docs/instances/suspend-resume-instance)
+in Preview. You can configure workstation VMs to suspend when they reach
+their idle timeouts, referred to as auto-sleep in the Google Cloud Console,
+rather than shutting down and deleting the VM, by using the
+[IdleAction](https://docs.cloud.google.com/workstations/docs/reference/rest/v1beta/projects.locations.workstationClusters.workstationConfigs#idleaction)
+workstation configuration setting.
+
+---
 ## 2026-08-03
 
 ### Change

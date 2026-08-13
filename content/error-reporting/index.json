@@ -1,6 +1,16 @@
 {
   "name": "Error Reporting",
   "entries": {
+    "2026-08-13": [
+      {
+        "kind": "Announcement",
+        "content": "Error Reporting can report stack traces collected from Rust applications\nusing [`std::backtrace`](https://doc.rust-lang.org/std/backtrace/index.html).\nTo enable, set the `RUST_BACKTRACE=1` environment variable and\nmake sure debug symbols are enabled.\n\nFor more information, see\n[ReportedErrorEvent](https://docs.cloud.google.com/error-reporting/reference/rest/v1beta1/projects.events/report.html?rep_location=global#reportederrorevent).",
+        "summary": {
+          "title": "Rust Error Reporting with Backtraces",
+          "summary": "Error Reporting now supports stack traces from Rust applications using std::backtrace. Enable this feature by setting the RUST_BACKTRACE=1 environment variable and ensuring debug symbols are included in your build. This allows for more detailed debugging of errors originating from Rust code."
+        }
+      }
+    ],
     "2026-05-28": [
       {
         "kind": "Announcement",

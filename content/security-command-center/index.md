@@ -1,5 +1,17 @@
 # Security Command Center
 
+## 2026-08-13
+
+### Feature
+
+[AI Protection](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) supports
+data residency in the Kingdom of Saudi Arabia (KSA) for all Security Command Center service
+tiers.
+
+For more information, see [Planning for data
+residency](https://docs.cloud.google.com/security-command-center/docs/data-residency-support).
+
+---
 ## 2026-08-10
 
 ### Feature

@@ -1,5 +1,308 @@
 # Container Optimized OS
 
+## 2026-08-11
+
+### Change
+
+
+
+### cos-beta-133-19999-0-28
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.39](https://cos.googlesource.com/third_party/kernel/+/a70f21557a81969b982fcfa58dc76478e5dd4cae ) | v29.4.3 | v2.3.2 | [See List](https://storage.googleapis.com/cos-tools/19999.0.28/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-129-19506-299-116
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/e55e3beb430afda0e871fbacbc825fd78ca377e6 ) | v27.5.1 | v2.2.6 | [See List](https://storage.googleapis.com/cos-tools/19506.299.116/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-138-20035-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.41](https://cos.googlesource.com/third_party/kernel/+/292c022b57a02a84aa84cb97e809da06a7bbd8ac ) | v29.4.3 | v2.3.2 | [See List](https://storage.googleapis.com/cos-tools/20035.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for installing the Vast 4.5.8 NFS client drivers with cos-dkms.
+
+### Fixed
+
+Added kernel patch to reduce bcache garbage collection sleep
+interval to prevent I/O stalls.
+
+### Feature
+
+Added support for installing the Vast 4.5.8 NFS client drivers with cos-dkms.
+
+### Fixed
+
+Added kernel patch to reduce bcache garbage collection sleep
+interval to prevent I/O stalls.
+
+### Fixed
+
+Fixed CVE-2026-33186 in google-guest-agent.
+
+### Fixed
+
+Added kernel patch to reduce bcache garbage collection sleep
+interval to prevent I/O stalls.
+
+### Fixed
+
+Mask nfttables-restore.service to address time to ssh regression.
+
+### Security
+
+Fixed CVE-2026-64227 in the Linux kernel.
+
+### Fixed
+
+Mask nfttables-restore.service to address time to ssh regression.
+
+### Security
+
+Fixed KCTF-8173f7e in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2026-64279 in the Linux kernel.
+
+### Fixed
+
+Updated app-admin/node-problem-detector to v0.8.25.
+
+### Security
+
+Fixed CVE-2026-64286 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-8173f7e in the Linux Kernel.
+
+### Security
+
+Fixed CVE-2026-64287 in the Linux kernel.
+
+### Security
+
+Upgraded net-libs/nghttp2 to 1.69.0 and fixed CVE-2026-58055.
+
+### Security
+
+Fixed CVE-2026-64352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64375 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64401 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64413 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64416 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64476 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64508 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64530 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64532 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64533 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64534 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64535 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64538 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64542 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64545 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64546 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64548 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64552 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64554 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64555 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-8173f7e in the Linux Kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Change
+
+
+
+### cos-121-18867-528-58
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/39754e5eb6a303ec0db05e7cefac442983d8b50d ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.528.58/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Update dev-lang/go to 1.25.12.
+
+### Security
+
+Fixed CVE-2026-64279 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64375 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64401 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64413 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64474 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64476 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64535 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-8173f7e in the Linux Kernel.
+
+### Change
+
+
+
+### cos-117-18613-675-48
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/8e2178b6ff2c1c86c3ea021ca7b3a8427b8384bf ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.675.48/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Update dev-lang/go to 1.25.12.
+
+### Security
+
+Fixed CVE-2026-64279 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64319 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64352 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64375 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64401 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64413 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64535 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64548 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-64556 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-8173f7e in the Linux Kernel.
+
+---
 ## 2026-08-04
 
 ### Change

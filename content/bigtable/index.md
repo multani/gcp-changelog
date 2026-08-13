@@ -4,6 +4,13 @@
 
 ### Feature
 
+You can use parameterized views in Bigtable to dynamically filter data ranges
+for logical views based on application context and mitigate SQL injection risks.
+This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Parameterized views overview](https://docs.cloud.google.com/bigtable/docs/parameterized-views-overview).
+
+### Feature
+
 You can use the `CLUSTER_ATTRIBUTE()` filter to restrict continuous materialized
 view processing to specific clusters. This function lets you isolate views
 within an instance. This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).

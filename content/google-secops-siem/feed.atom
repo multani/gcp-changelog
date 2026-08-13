@@ -2,21 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2026-08-05T00:00:00+00:00</updated>
+  <updated>2026-08-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-08-03:feature:0</id>
-    <published>2026-08-03T00:00:00+00:00</published>
-    <updated>2026-08-03T00:00:00+00:00</updated>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-08-12:feature:0</id>
+    <published>2026-08-12T00:00:00+00:00</published>
+    <updated>2026-08-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Analyze feed activity with Cloud Logging</strong></p>
-<p>This feature is in public preview. You can now monitor, debug, and troubleshoot Google SecOps SIEM ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.</p>
-<p>This visibility into push- and pull-based ingestion mechanisms lets you use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console. Additionally, you can use the <strong>Debug with logs</strong> option on the <strong>Feed management</strong> page to open <strong>Logs Explorer</strong> pre-filtered for a specific feed.</p>
+<p>This feature is in public preview. To use this feature, your Google SecOps instance must be configured with a Bring Your Own Project (BYOP) Google Cloud project. You can now monitor, debug, and troubleshoot Google SecOps SIEM ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.</p>
+<p>This visibility into push- and pull-based ingestion mechanisms provides the following capabilities:</p>
+<ul>
+<li><strong>Investigate telemetry</strong>: Use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console.</li>
+<li><strong>Debug feeds</strong>: Use the <strong>Debug with logs</strong> option on the <strong>Feed management</strong> page to open <strong>Logs Explorer</strong> pre-filtered for a specific feed.</li>
+<li><strong>Filter routed logs</strong>: Configure exclusion filters in the Log Router to exclude specific logs, such as Storage Transfer Service (STS) logs, from being routed to Cloud Logging.</li>
+</ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/analyze-feed-activity-with-cloud-logging">Analyze feed activity with Cloud Logging</a>.</p>]]></content>
-    <summary>Monitor, debug, and troubleshoot your SIEM ingestion pipelines and feeds directly within Cloud Logging. This new feature helps you quickly diagnose and resolve log delivery issues, reducing the time needed to fix ingestion anomalies.</summary>
+    <summary>Monitor, debug, and troubleshoot SIEM ingestion pipelines and feeds using Cloud Logging. This new feature allows you to diagnose log delivery issues and resolve ingestion anomalies faster by providing visibility into push- and pull-based ingestion mechanisms.</summary>
     <title>Feature: Analyze feed activity with Cloud Logging</title>
   </entry>
   <entry>
@@ -237,6 +242,20 @@
 <p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/event-processing/using-parser-extensions#repeated_fields_selector">Repeated fields selector</a>.</p>]]></content>
     <summary>You can now use append and replace functionality for repeated fields when creating code snippet extensions. This enhancement provides more granular control over how data is handled in repeated UDM fields.</summary>
     <title>Feature: Parser extensions support append/replace for repeated fields</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-08-03:feature:0</id>
+    <published>2026-08-03T00:00:00+00:00</published>
+    <updated>2026-08-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Analyze feed activity with Cloud Logging</strong></p>
+<p>This feature is in public preview. You can now monitor, debug, and troubleshoot Google SecOps SIEM ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.</p>
+<p>This visibility into push- and pull-based ingestion mechanisms lets you use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console. Additionally, you can use the <strong>Debug with logs</strong> option on the <strong>Feed management</strong> page to open <strong>Logs Explorer</strong> pre-filtered for a specific feed.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/analyze-feed-activity-with-cloud-logging">Analyze feed activity with Cloud Logging</a>.</p>]]></content>
+    <summary>Monitor, debug, and troubleshoot your SIEM ingestion pipelines and feeds directly within Cloud Logging. This new feature helps you quickly diagnose and resolve log delivery issues, reducing the time needed to fix ingestion anomalies.</summary>
+    <title>Feature: Analyze feed activity with Cloud Logging</title>
   </entry>
   <entry>
     <author>

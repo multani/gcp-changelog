@@ -1,5 +1,22 @@
 # Google SecOps SIEM
 
+## 2026-08-12
+
+### Feature
+
+**[Spotlight Feature] Analyze feed activity with Cloud Logging**
+
+This feature is in public preview. To use this feature, your Google SecOps instance must be configured with a Bring Your Own Project (BYOP) Google Cloud project. You can now monitor, debug, and troubleshoot Google SecOps SIEM ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.
+
+This visibility into push- and pull-based ingestion mechanisms provides the following capabilities:
+
+* **Investigate telemetry**: Use Gemini Cloud Assist to investigate logging and metrics telemetry directly from the Google SecOps console.
+* **Debug feeds**: Use the **Debug with logs** option on the **Feed management** page to open **Logs Explorer** pre-filtered for a specific feed.
+* **Filter routed logs**: Configure exclusion filters in the Log Router to exclude specific logs, such as Storage Transfer Service (STS) logs, from being routed to Cloud Logging.
+
+For more information, see [Analyze feed activity with Cloud Logging](https://docs.cloud.google.com/chronicle/docs/ingestion/analyze-feed-activity-with-cloud-logging).
+
+---
 ## 2026-08-05
 
 ### Deprecated

@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-08-12
+
+### Announcement
+
+Table Explorer behavior has moved to the **Reference** panel. Table Explorer
+has been deprecated. For more information, see "Use the Reference panel" in
+[Run a query](https://docs.cloud.google.com/bigquery/docs/running-queries#use-reference-panel).
+
+---
 ## 2026-08-11
 
 ### Feature

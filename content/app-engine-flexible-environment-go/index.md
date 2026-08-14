@@ -1,5 +1,12 @@
 # App Engine flexible environment Go
 
+## 2026-08-14
+
+### Feature
+
+To improve security, starting in August 2026, App Engine opts your application into TLS version 1.2 and later. You can opt out until the end of August 2026. Starting in September 2026, App Engine might permanently block insecure traffic with TLS version 1.1 and earlier. For more information, see [Secure minimum TLS](https://docs.cloud.google.com/appengine/docs/flexible/secure-minimum-tls).
+
+---
 ## 2026-06-29
 
 ### Feature

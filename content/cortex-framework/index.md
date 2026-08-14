@@ -1,5 +1,20 @@
 # Cortex Framework
 
+## 2026-08-14
+
+### Announcement
+
+
+
+### Release 7.0.3
+
+
+
+### Fixed
+
+* Resolved an issue where `SapBdcProductBuilder` incorrectly enforced SAP-versioned sections (ecc, s4, common) in `table_settings`.
+
+---
 ## 2026-08-11
 
 ### Release 7.0.2

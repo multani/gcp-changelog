@@ -1,5 +1,12 @@
 # Carbon Footprint
 
+## 2026-08-14
+
+### Announcement
+
+As detailed in our [2026 Environmental Report (p. 22)](https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/21455428735c7305f2cb5c0038fc14bb0803abb8.pdf#page=22), Google is now using Granular Certificates purchased from the marketplace to strategically match more of our load on an hourly basis. To accurately incorporate these certificates into the Cloud customers' allocation of carbon intensity calculations, the July 2026 semi-annual [methodology refresh](https://docs.cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation) will be delayed by one month. We will provide further updates once the revised data is available.
+
+---
 ## 2026-02-15
 
 ### Feature

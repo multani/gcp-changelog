@@ -1,5 +1,17 @@
 # Identity and Access Management
 
+## 2026-08-14
+
+### Feature
+
+You can use custom constraints with Organization Policy to provide more
+granular control over specific fields for Agent Identity resources, such as
+`agentidentity.googleapis.com/AuthProvider`. For more information, see
+[Use custom organization policies for Agent Identity](https://docs.cloud.google.com/iam/docs/agent-identity-custom-constraints).
+This feature is in
+[GA](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-12
 
 ### Change

@@ -1,5 +1,17 @@
 # Network Intelligence Center
 
+## 2026-08-12
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+supports using a Cloud Run job as a source endpoint
+for connectivity testing.
+
+For more information, see
+[Test from a Cloud Run job to a destination](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/how-to/running-connectivity-tests#test-jobs).
+
+---
 ## 2026-08-03
 
 ### Feature

@@ -1,80 +1,6 @@
 {
   "name": "BigQuery",
   "entries": {
-    "2026-08-12": [
-      {
-        "kind": "Announcement",
-        "content": "Table Explorer behavior has moved to the **Reference** panel. Table Explorer\nhas been deprecated. For more information, see \"Use the Reference panel\" in\n[Run a query](https://docs.cloud.google.com/bigquery/docs/running-queries#use-reference-panel).",
-        "summary": {
-          "title": "Table Explorer moved to Reference panel",
-          "summary": "Table Explorer has been deprecated and its functionality is now available in the Reference panel. For more details on how to use this new location, please refer to the 'Use the Reference panel' section in the Run a query documentation."
-        }
-      }
-    ],
-    "2026-08-11": [
-      {
-        "kind": "Feature",
-        "content": "[Query templates](https://docs.cloud.google.com/bigquery/docs/query-templates)\nfor data clean rooms are\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA). Query templates allow data clean room owners and publishers to share\npredefined queries without exposing the underlying tables and views.\n\nAdditionally,\n[table parameters](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)\nin table-valued functions (TVFs) are\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA). You can use the `ANY TABLE` type as a table parameter to create\ngeneric functions that accept tables of any structure.",
-        "summary": {
-          "title": "Query templates and table parameters are now GA",
-          "summary": "Query templates for data clean rooms are now generally available, allowing owners and publishers to share predefined queries securely. Additionally, table parameters in table-valued functions are also GA, enabling the creation of generic functions that accept tables of any structure."
-        }
-      }
-    ],
-    "2026-08-10": [
-      {
-        "kind": "Feature",
-        "content": "BigQuery now supports the `gemini-3.1-flash-lite` and `gemini-3.5-flash` GA\nmodels, which are available for the `us`, `eu`, and `global` multi-regional\nendpoints. You can use these models in all generative AI functions.\nFor information about how to specify a multi-regional endpoint and\nhow endpoints are selected, read about\n[locations](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#locations)\nin the generative AI overview.",
-        "summary": {
-          "title": "BigQuery integrates new Gemini models",
-          "summary": "BigQuery now supports the `gemini-3.1-flash-lite` and `gemini-3.5-flash` GA models. These models are available across multiple regions and can be used with all generative AI functions within BigQuery."
-        }
-      }
-    ],
-    "2026-08-03": [
-      {
-        "kind": "Feature",
-        "content": "You can now use\n[cross-cloud connections](https://docs.cloud.google.com/bigquery/docs/cross-cloud-connections) to query data\nin AWS, Azure, and Salesforce Data 360 from all BigQuery regions. These\nconnections let you use more BigQuery features and are more cost efficient than\nstandard connections that use BigQuery Omni. This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
-        "summary": {
-          "title": "Query data across clouds with BigQuery",
-          "summary": "BigQuery now supports cross-cloud connections, allowing you to query data in AWS, Azure, and Salesforce Data 360 from any BigQuery region. This feature offers enhanced BigQuery functionality and greater cost efficiency compared to previous solutions. It is currently available in Preview."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "The JDBC driver for BigQuery now supports\n[OpenTelemetry](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery#opentelemetry) for tracing and\nlogging, which helps you monitor the performance of your database interactions\nand troubleshoot issues.\n[Automatic exports to Google Cloud Observability](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery#zero-config-gcp-telemetry)\nare also available. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
-        "summary": {
-          "title": "BigQuery JDBC Driver Adds OpenTelemetry Support",
-          "summary": "The BigQuery JDBC driver now supports OpenTelemetry for enhanced tracing and logging. This feature, which is generally available, allows for easier monitoring and troubleshooting of database interactions, with automatic exports to Google Cloud Observability."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "Support for hybrid search (using the `VECTOR_SEARCH` function to combine a\nsemantic search with a lexical (keyword) search) has been restored. Using\n`HYBRID` mode in the `AI.SEARCH` function has also been restored.",
-        "summary": {
-          "title": "Hybrid search support restored",
-          "summary": "Support for hybrid search, combining semantic and keyword searches using the VECTOR_SEARCH function, has been restored. The HYBRID mode in the AI.SEARCH function is also back online."
-        }
-      }
-    ],
-    "2026-07-30": [
-      {
-        "kind": "Feature",
-        "content": "You can add tables, views, data sources, and data quality tests as tasks to\nBigQuery pipelines. For more information, see\n[Add a pipeline task](https://docs.cloud.google.com/bigquery/docs/create-pipelines#add_a_pipeline_task).\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages).",
-        "summary": {
-          "title": "New task types for BigQuery pipelines",
-          "summary": "You can now add tables, views, data sources, and data quality tests as tasks to BigQuery pipelines. This feature is generally available."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "You can audit when users download query results by using the BigQuery\nconsole. Data Access audit logs for the `tabledata.list` method now include a\n[`uiDownloadRequest`](https://docs.cloud.google.com/bigquery/docs/reference/auditlogs/rest/Shared.Types/BigQueryAuditMetadata.html#BigQueryAuditMetadata.TableDataRead.FIELDS.ui_download_request)\nfield to indicate whether the request was triggered by a UI download.\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
-        "summary": {
-          "title": "Audit query result downloads",
-          "summary": "You can now audit when users download query results from the BigQuery console. A new field in Data Access audit logs indicates UI download requests, helping you track data access."
-        }
-      }
-    ],
     "2026-07-29": [
       {
         "kind": "Feature",
@@ -162,6 +88,80 @@
         "summary": {
           "title": "New: Column-level security and masking in BigQuery",
           "summary": "BigQuery now supports data governance tags, enabling column-level security and data masking. These tags, a type of Resource Manager tag, can be attached to sensitive columns and utilized in BigQuery data policies for conditional access control. This feature is currently in Preview."
+        }
+      }
+    ],
+    "2026-08-12": [
+      {
+        "kind": "Announcement",
+        "content": "Table Explorer behavior has moved to the **Reference** panel. Table Explorer\nhas been deprecated. For more information, see \"Use the Reference panel\" in\n[Run a query](https://docs.cloud.google.com/bigquery/docs/running-queries#use-reference-panel).",
+        "summary": {
+          "title": "Table Explorer moved to Reference panel",
+          "summary": "Table Explorer has been deprecated and its functionality is now available in the Reference panel. For more details on how to use this new location, please refer to the 'Use the Reference panel' section in the Run a query documentation."
+        }
+      }
+    ],
+    "2026-08-11": [
+      {
+        "kind": "Feature",
+        "content": "[Query templates](https://docs.cloud.google.com/bigquery/docs/query-templates)\nfor data clean rooms are\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA). Query templates allow data clean room owners and publishers to share\npredefined queries without exposing the underlying tables and views.\n\nAdditionally,\n[table parameters](https://docs.cloud.google.com/bigquery/docs/table-functions#table_parameters)\nin table-valued functions (TVFs) are\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA). You can use the `ANY TABLE` type as a table parameter to create\ngeneric functions that accept tables of any structure.",
+        "summary": {
+          "title": "Query templates and table parameters are now GA",
+          "summary": "Query templates for data clean rooms are now generally available, allowing owners and publishers to share predefined queries securely. Additionally, table parameters in table-valued functions are also GA, enabling the creation of generic functions that accept tables of any structure."
+        }
+      }
+    ],
+    "2026-08-10": [
+      {
+        "kind": "Feature",
+        "content": "BigQuery now supports the `gemini-3.1-flash-lite` and `gemini-3.5-flash` GA\nmodels, which are available for the `us`, `eu`, and `global` multi-regional\nendpoints. You can use these models in all generative AI functions.\nFor information about how to specify a multi-regional endpoint and\nhow endpoints are selected, read about\n[locations](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#locations)\nin the generative AI overview.",
+        "summary": {
+          "title": "BigQuery integrates new Gemini models",
+          "summary": "BigQuery now supports the `gemini-3.1-flash-lite` and `gemini-3.5-flash` GA models. These models are available across multiple regions and can be used with all generative AI functions within BigQuery."
+        }
+      }
+    ],
+    "2026-08-03": [
+      {
+        "kind": "Feature",
+        "content": "You can now use\n[cross-cloud connections](https://docs.cloud.google.com/bigquery/docs/cross-cloud-connections) to query data\nin AWS, Azure, and Salesforce Data 360 from all BigQuery regions. These\nconnections let you use more BigQuery features and are more cost efficient than\nstandard connections that use BigQuery Omni. This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Query data across clouds with BigQuery",
+          "summary": "BigQuery now supports cross-cloud connections, allowing you to query data in AWS, Azure, and Salesforce Data 360 from any BigQuery region. This feature offers enhanced BigQuery functionality and greater cost efficiency compared to previous solutions. It is currently available in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The JDBC driver for BigQuery now supports\n[OpenTelemetry](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery#opentelemetry) for tracing and\nlogging, which helps you monitor the performance of your database interactions\nand troubleshoot issues.\n[Automatic exports to Google Cloud Observability](https://docs.cloud.google.com/bigquery/docs/jdbc-for-bigquery#zero-config-gcp-telemetry)\nare also available. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "BigQuery JDBC Driver Adds OpenTelemetry Support",
+          "summary": "The BigQuery JDBC driver now supports OpenTelemetry for enhanced tracing and logging. This feature, which is generally available, allows for easier monitoring and troubleshooting of database interactions, with automatic exports to Google Cloud Observability."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Support for hybrid search (using the `VECTOR_SEARCH` function to combine a\nsemantic search with a lexical (keyword) search) has been restored. Using\n`HYBRID` mode in the `AI.SEARCH` function has also been restored.",
+        "summary": {
+          "title": "Hybrid search support restored",
+          "summary": "Support for hybrid search, combining semantic and keyword searches using the VECTOR_SEARCH function, has been restored. The HYBRID mode in the AI.SEARCH function is also back online."
+        }
+      }
+    ],
+    "2026-07-30": [
+      {
+        "kind": "Feature",
+        "content": "You can add tables, views, data sources, and data quality tests as tasks to\nBigQuery pipelines. For more information, see\n[Add a pipeline task](https://docs.cloud.google.com/bigquery/docs/create-pipelines#add_a_pipeline_task).\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "New task types for BigQuery pipelines",
+          "summary": "You can now add tables, views, data sources, and data quality tests as tasks to BigQuery pipelines. This feature is generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can audit when users download query results by using the BigQuery\nconsole. Data Access audit logs for the `tabledata.list` method now include a\n[`uiDownloadRequest`](https://docs.cloud.google.com/bigquery/docs/reference/auditlogs/rest/Shared.Types/BigQueryAuditMetadata.html#BigQueryAuditMetadata.TableDataRead.FIELDS.ui_download_request)\nfield to indicate whether the request was triggered by a UI download.\nThis feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Audit query result downloads",
+          "summary": "You can now audit when users download query results from the BigQuery console. A new field in Data Access audit logs indicates UI download requests, helping you track data access."
         }
       }
     ],

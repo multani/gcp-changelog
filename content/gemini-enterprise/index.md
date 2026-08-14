@@ -29,6 +29,10 @@ regions. To make Gemini 3.7 Flash available to users in the Gemini Enterprise
 app, administrators must turn on the **Gemini 3.7 Flash** feature toggle in the
 Google Cloud console.
 
+**Note:** Gemini 3.7 Flash is not available in the Gemini Enterprise mobile app.
+For a correction to this release note, see the August 13th **Gemini Enterprise:
+Gemini 3.7 Flash availability in mobile app** release note.
+
 For in-country regions where the model isn't supported, administrators
 can still enable the model by confirming a warning that traffic is routed
 to the `global` endpoint, which doesn't support regional data residency.
@@ -42,6 +46,17 @@ For more information, see:
   app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
 * [Data residency for Gemini Enterprise Standard and Plus Editions and Gemini
   Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+### Announcement
+
+**Gemini Enterprise: Gemini 3.7 Flash availability in mobile app**
+
+Gemini 3.7 Flash is not available in the Gemini Enterprise mobile app.
+A new release note will be added when the Gemini 3.7 Flash rollout for the
+Gemini Enterprise mobile app is complete.
+
+**Note:** This is a correction to the August 13th,
+**Gemini Enterprise: Use Gemini 3.7 Flash** release note.
 
 ---
 ## 2026-08-12

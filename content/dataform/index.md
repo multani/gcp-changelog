@@ -1,5 +1,18 @@
 # Dataform
 
+## 2026-08-13
+
+### Feature
+
+Dataform workflows and BigQuery pipelines now support automated metadata
+enrichment for BigQuery tables and views, allowing you to define semantic
+metadata directly in SQLX configurations for synchronization with the Knowledge
+Catalog. For more information, see
+[Add metadata for Knowledge Catalog](https://docs.cloud.google.com/dataform/docs/create-tables#add-metadata).
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-27
 
 ### Feature

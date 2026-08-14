@@ -17,6 +17,39 @@ Note: Instances that meet either of the following two criteria will **not** be u
 
 For more information on participating in scheduled maintenance windows, see [Maintenance overview](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance) and [Manage Apigee instance maintenance windows](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance-windows).
 
+### Announcement
+
+On August 13th, 2026, we released an updated version of Apigee (1-18-0-apigee-3).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **532147587** | To fix forward proxy support. |
+| **537657987** | Fixed a bug where watcher failed to reconcile all routes if an environment was not found in the control plane. |
+| **543022076** | Google Cloud BOM upgrade (protobuf 4.x, gRPC 1.81, Guava 33.5). One user-visible change: a malformed inbound gRPC request frame is now reported to the client as grpc-status INTERNAL(13) and recorded in analytics as x-apigee.grpc.status=13, where it was previously an Apigee ServiceUnavailable fault seen as UNAVAILABLE(14) with no x-apigee.grpc.status recorded. Otherwise no user facing impact, but any prod issue related to gcp, protobuf or gRPC may relate to this. |
+| **542242046** | Fixed LLMTokenQuota metering the request against an arbitrary quota bucket when the API Product declared multiple models and the request carried no model. |
+| **531731614** | Apigee analytics fields ai\_llm\_response\_token\_count, ai\_llm\_prompt\_token\_count, ai\_llm\_model\_name, and ai\_llm\_model\_provider are available in the Custom Report when LLMTokenQuota and PromptTokenLimit policies are used in Apigee proxies. |
+| **492044413** | LLMTokenQuota resolves the model from the API Product LLM Operation when LLMModelSource is omitted and the request body has no model field. |
+| **67169710** | Adds an opt-in <DynamicClientIdSupported> boolean XML element to the OAuthV2 policy. When true, AbstractOAuthStepExecution.extractClientDetails() preserves any non-empty ClientID/ClientSecret already present on the OAuthClientContext. |
+| **531731614** | Apigee auto identifies the providers and publishes them to analytics. |
+| **537396574** | Added feature to rotate the apigee-ca certificate. |
+| **540861752** | Aligned the ApigeeDeployment conversion hub with its v1alpha3 storage version. Internal change; no effect on existing ApigeeDeployment resources. |
+| **540861752** | Aligned the ApigeeDeployment custom resource's conversion hub with its v1alpha3 storage version. This internal change does not affect existing ApigeeDeployment resources. |
+| **N/A** | Updates to infrastructure and libraries. |
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **535928300** | **Security fix for Apigee.** Fixed a security issue in JWT refresh token revocation handling. |
+| **539515020** | **Security fix for Apigee.** Fixed a security issue in the MessageValidation policy. |
+| **535928530** | **Security fix for Apigee.** Fixed a security issue in the OAuthV2 policy. |
+| **535683286** | **Security fix for Apigee.** Fixed a security issue in HTTP target interim-response handling. |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
 ---
 ## 2026-07-27
 

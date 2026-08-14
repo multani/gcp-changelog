@@ -1,5 +1,45 @@
 # Managed Service for Apache Airflow
 
+## 2026-08-10
+
+### Announcement
+
+A new Managed Service for Apache Airflow release has started on
+**August 10, 2026**. Get ready for upcoming changes and features as we roll out
+the new release to all regions. This release is in progress at the moment.
+Listed changes and features might not be available in some regions yet.
+
+### Change
+
+*(Managed Airflow Gen 3)* Adjusted the formula used to calculate the number
+of Airflow web server workers based on allocated CPU and memory resources. This
+update aligns with resource consumption changes in recent Airflow versions,
+improving web server stability.
+
+### Change
+
+*(Airflow 3.2.2 and 2.11.1)* The `[api]rbac_bindings` Airflow configuration
+option is blocked and it isn't possible to override its value.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.2.2-build.2](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-2)
+* [composer-3-airflow-3.1.8-build.4](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-8-build-4)
+* [composer-3-airflow-2.11.1-build.15](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-15) (default)
+* [composer-3-airflow-2.10.5-build.48](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-48)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.10-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-10-airflow-2-11-1) (default)
+* [composer-2.17.10-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-10-airflow-2-10-5)
+
+---
 ## 2026-08-05
 
 ### Change

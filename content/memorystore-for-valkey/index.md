@@ -1,5 +1,14 @@
 # Memorystore for Valkey
 
+## 2026-08-13
+
+### Feature
+
+You can [migrate workloads](https://docs.cloud.google.com/memorystore/docs/valkey/migrate-workloads) from
+self-managed Redis and Valkey instances running on Google Cloud to Memorystore
+for Valkey. This feature is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-10
 
 ### Feature

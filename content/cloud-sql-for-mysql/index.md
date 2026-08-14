@@ -1,5 +1,68 @@
 # Cloud SQL for MySQL
 
+## 2026-08-13
+
+### Feature
+
+[Cloud SQL for MySQL 9.7](https://docs.cloud.google.com/sql/docs/mysql/db-versions) is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+For more information about the differences between MySQL 9.7 and previous
+versions, review the [MySQL 9.7 Release Notes](https://dev.mysql.com/doc/relnotes/mysql/9.7/en/).
+
+By default, if you specify MySQL 9.7 as the version when you create a Cloud SQL
+instance (either primary or replica) using the gcloud CLI, the Google Cloud
+console, or the REST API, then the Cloud SQL edition is Cloud SQL Enterprise Plus
+edition.
+
+This release introduces support for key MySQL 9.7 capabilities, including:
+
+* [**Vector search**](https://docs.cloud.google.com/sql/docs/mysql/vector-search#version-differences): support
+  for the community-standard vector storage format
+  combined with advanced approximate nearest neighbor (ANN) vector
+  indexing in Cloud SQL.
+* [**Hypergraph optimizer**](https://blogs.oracle.com/mysql/the-hypergraph-optimizer-is-now-available-in-mysql-9-7-community-edition):
+  an alternative join-planning framework designed for
+  complex, multi-table queries. You can enable the hypergraph optimizer using an
+  [optimizer switch](https://dev.mysql.com/doc/refman/9.7/en/switchable-optimizations.html).
+* [**JSON Duality Views**](https://dev.mysql.com/doc/refman/9.7/en/json-duality-views.html):
+  a feature that bridges relational SQL and hierarchical
+  JSON document models to interact with the same underlying data.
+* **Upgrade and migration paths**: support for [in-place major version upgrade](https://docs.cloud.google.com/sql/docs/mysql/upgrade-major-db-version-inplace)
+  from Cloud SQL for MySQL 8.4 and
+  [migrations from MySQL 8.4 using the Database Migration Service (DMS)](https://docs.cloud.google.com/database-migration/docs/mysql/migration-src-and-dest#cross-version-support).
+
+**Note:** The legacy `mysql_native_password` authentication plugin is no longer
+supported starting in Cloud SQL for MySQL 9.7. You must update all clients that
+use built-in authentication user accounts to use the `caching_sha2_password` plugin
+instead. For more information, see [MySQL authentication](https://docs.cloud.google.com/sql/docs/mysql/features#mysql-authentication).
+
+### Flag updates for MySQL 9.7
+
+Additionally, this release introduces several database flag changes.
+
+| MySQL database flag | Action | Details |
+| --- | --- | --- |
+| `activate_mandatory_roles` | Added / Supported | Exposes mandatory roles configuration. Default is ON. |
+| `innodb_native_foreign_keys` | Added / Supported | Exposes SQL layer foreign key handling configuration. |
+| `table_open_cache_triggers` | Added / Supported | Configures trigger cache size limits. |
+| `connection_memory_status_limit` | Added / Supported | Sets limit configurations on connection memory. |
+| `global_connection_memory_status_limit` | Added / Supported | Sets global limit configurations on connection memory. |
+| `performance_schema_max_logger_classes` | Added / Supported | Sets limits for performance schema logger classes. |
+| `caching_sha2_password_proxy_users` | Added / Supported | Configures proxy users support for caching SHA-2. |
+| `caching_sha2_password_enforce_storage_format` | Added / Supported | Enforces storage format rules for caching SHA-2. |
+| `caching_sha2_password_storage_format` | Added / Supported | Sets storage format defaults for caching SHA-2. |
+| `innodb_log_file_size` | Removed | Flag not supported in MySQL 9.7 and later. |
+| `innodb_log_files_in_group` | Removed | Flag not supported in MySQL 9.7 and later. |
+| `innodb_undo_tablespaces` | Removed | Flag not supported in MySQL 9.7 and later. |
+| `mysql_native_password_proxy_users` | Removed | Flag not supported in MySQL 9.7 and later. |
+| `replica_parallel_type` | Removed | Flag not supported in MySQL 9.7 and later. |
+| `slave_parallel_type` | Removed | Flag not supported in MySQL 9.7 and later. |
+| `temptable_use_mmap` | Removed | Flag not supported in MySQL 9.7 and later. |
+
+For more information about MySQL database flags, see [Configure database flags](https://docs.cloud.google.com/sql/docs/mysql/flags).
+
+---
 ## 2026-08-05
 
 ### Feature

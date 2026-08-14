@@ -9,6 +9,30 @@
           "title": "Apigee instance maintenance update",
           "summary": "Apigee instances configured for maintenance windows will receive updates to version 1-18-0-apigee-2 within the next 7-21 days. Instances with specific DNS misconfigurations or removed Java libraries will not be updated. A notification with the upgrade date will be sent within two business days."
         }
+      },
+      {
+        "kind": "Announcement",
+        "content": "On August 13th, 2026, we released an updated version of Apigee (1-18-0-apigee-3).\n\n**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.",
+        "summary": {
+          "title": "Apigee 1-18-0-apigee-3 Released",
+          "summary": "An updated version of Apigee, 1-18-0-apigee-3, was released on August 13th, 2026. Rollout has begun and may take several business days to complete across all zones. Your instances will have the new features and fixes once the rollout is finished."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **532147587** | To fix forward proxy support. |\n| **537657987** | Fixed a bug where watcher failed to reconcile all routes if an environment was not found in the control plane. |\n| **543022076** | Google Cloud BOM upgrade (protobuf 4.x, gRPC 1.81, Guava 33.5). One user-visible change: a malformed inbound gRPC request frame is now reported to the client as grpc-status INTERNAL(13) and recorded in analytics as x-apigee.grpc.status=13, where it was previously an Apigee ServiceUnavailable fault seen as UNAVAILABLE(14) with no x-apigee.grpc.status recorded. Otherwise no user facing impact, but any prod issue related to gcp, protobuf or gRPC may relate to this. |\n| **542242046** | Fixed LLMTokenQuota metering the request against an arbitrary quota bucket when the API Product declared multiple models and the request carried no model. |\n| **531731614** | Apigee analytics fields ai\\_llm\\_response\\_token\\_count, ai\\_llm\\_prompt\\_token\\_count, ai\\_llm\\_model\\_name, and ai\\_llm\\_model\\_provider are available in the Custom Report when LLMTokenQuota and PromptTokenLimit policies are used in Apigee proxies. |\n| **492044413** | LLMTokenQuota resolves the model from the API Product LLM Operation when LLMModelSource is omitted and the request body has no model field. |\n| **67169710** | Adds an opt-in <DynamicClientIdSupported> boolean XML element to the OAuthV2 policy. When true, AbstractOAuthStepExecution.extractClientDetails() preserves any non-empty ClientID/ClientSecret already present on the OAuthClientContext. |\n| **531731614** | Apigee auto identifies the providers and publishes them to analytics. |\n| **537396574** | Added feature to rotate the apigee-ca certificate. |\n| **540861752** | Aligned the ApigeeDeployment conversion hub with its v1alpha3 storage version. Internal change; no effect on existing ApigeeDeployment resources. |\n| **540861752** | Aligned the ApigeeDeployment custom resource's conversion hub with its v1alpha3 storage version. This internal change does not affect existing ApigeeDeployment resources. |\n| **N/A** | Updates to infrastructure and libraries. |",
+        "summary": {
+          "title": "Resolved issues and improvements",
+          "summary": "Several bugs have been fixed, including issues with forward proxy support and route reconciliation. Updates to infrastructure and libraries have also been implemented, along with an enhancement to the OAuthV2 policy for dynamic client ID support and certificate rotation for Apigee."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **535928300** | **Security fix for Apigee.** Fixed a security issue in JWT refresh token revocation handling. |\n| **539515020** | **Security fix for Apigee.** Fixed a security issue in the MessageValidation policy. |\n| **535928530** | **Security fix for Apigee.** Fixed a security issue in the OAuthV2 policy. |\n| **535683286** | **Security fix for Apigee.** Fixed a security issue in HTTP target interim-response handling. |\n| **N/A** | **Security fix for Apigee infrastructure.** |",
+        "summary": {
+          "title": "Apigee Security Updates",
+          "summary": "Recent security fixes have been applied to Apigee, addressing vulnerabilities in JWT refresh token revocation, MessageValidation, OAuthV2 policies, and HTTP target interim-response handling. Additionally, Apigee infrastructure has received a security update."
+        }
       }
     ],
     "2026-07-27": [

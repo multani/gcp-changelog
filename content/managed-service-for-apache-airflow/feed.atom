@@ -2,9 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Airflow</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Airflow</subtitle>
-  <updated>2026-08-05T00:00:00+00:00</updated>
+  <updated>2026-08-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-airflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-08-10:announcement:0</id>
+    <published>2026-08-10T00:00:00+00:00</published>
+    <updated>2026-08-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Managed Service for Apache Airflow release has started on
+<strong>August 10, 2026</strong>. Get ready for upcoming changes and features as we roll out
+the new release to all regions. This release is in progress at the moment.
+Listed changes and features might not be available in some regions yet.</p>]]></content>
+    <summary>A new Managed Service for Apache Airflow release is now live as of August 10, 2026. This release introduces several changes and new features, which are currently being rolled out across all regions. Please note that availability may vary by region during the ongoing deployment.</summary>
+    <title>Announcement: New Apache Airflow Release Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-08-10:change:1</id>
+    <published>2026-08-10T00:00:00+00:00</published>
+    <updated>2026-08-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Managed Airflow Gen 3)</em> Adjusted the formula used to calculate the number
+of Airflow web server workers based on allocated CPU and memory resources. This
+update aligns with resource consumption changes in recent Airflow versions,
+improving web server stability.</p>]]></content>
+    <summary>The formula for calculating Airflow web server workers has been adjusted to better match resource consumption in newer Airflow versions. This change enhances web server stability.</summary>
+    <title>Change: Airflow Web Server Worker Formula Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-08-10:change:2</id>
+    <published>2026-08-10T00:00:00+00:00</published>
+    <updated>2026-08-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 3.2.2 and 2.11.1)</em> The <code>[api]rbac_bindings</code> Airflow configuration
+option is blocked and it isn't possible to override its value.</p>]]></content>
+    <summary>The api.rbac_bindings configuration option in Airflow 3.2.2 and 2.11.1 is currently blocked and cannot be overridden. This change affects how RBAC bindings are managed within Airflow.</summary>
+    <title>Change: Airflow config option blocked</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-08-10:change:3</id>
+    <published>2026-08-10T00:00:00+00:00</published>
+    <updated>2026-08-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-2">composer-3-airflow-3.2.2-build.2</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-1-8-build-4">composer-3-airflow-3.1.8-build.4</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-15">composer-3-airflow-2.11.1-build.15</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-48">composer-3-airflow-2.10.5-build.48</a></li>
+</ul>]]></content>
+    <summary>New Airflow builds are now available for Managed Airflow (Gen 3), including updated versions for Airflow 3.2.2, 3.1.8, 2.11.1, and 2.10.5. These updates provide the latest features and improvements for your Airflow environments.</summary>
+    <title>Change: New Airflow builds available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-08-10:change:4</id>
+    <published>2026-08-10T00:00:00+00:00</published>
+    <updated>2026-08-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-10-airflow-2-11-1">composer-2.17.10-airflow-2.11.1</a> (default)</li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-10-airflow-2-10-5">composer-2.17.10-airflow-2.10.5</a></li>
+</ul>]]></content>
+    <summary>New images for Managed Airflow (Gen 2) are now available, including composer-2.17.10-airflow-2.11.1 as the default. This update brings the latest Airflow version for improved performance and features.</summary>
+    <title>Change: New Managed Airflow Images Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

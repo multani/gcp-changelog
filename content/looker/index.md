@@ -25,6 +25,14 @@ An issue has been fixed where LookML drill links and Liquid variables inside tab
 
 ### Feature
 
+Now generally available, the **Granular Dashboard Sizing** feature allows dashboard editors to change the size and layout of dashboard tiles with more granularity. **Note:** This item was added on August 13, 2026.
+
+### Feature
+
+The **Axis Order** options in the Y tab of the visualization editor now support keyboard inputs.
+
+### Feature
+
 Conversational Analytics data agent editors can now specify whether the agent will
 show its thinking or debugging information when generating a response.
 
@@ -146,7 +154,7 @@ An issue has been fixed where users with Admin via IAM privileges on Looker (Goo
 
 ### Feature
 
-The **Axis Order** options in the Y tab of the visualization editor now support keyboard inputs.
+Now generally available, the **Dashboard Tile Limits** feature allows admins to set limits on tiles per dashboard and per tab to optimize performance, which is configured on the [**Content Guardrails**](https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails) page in the **Performance Center** section of the **Admin** panel. **Note:** This item was added on August 13, 2026.
 
 ---
 ## 2026-08-05

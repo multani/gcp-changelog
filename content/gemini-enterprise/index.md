@@ -1,5 +1,49 @@
 # Gemini Enterprise
 
+## 2026-08-13
+
+### Feature
+
+**Gemini Enterprise: Create, upload, and share custom skills**
+
+Skills are reusable custom instructions that help the Gemini Enterprise
+assistant perform specific tasks. End users can create, upload, and share
+skills. To enable this feature, administrators must turn on the skills and
+skill-sharing settings in **Feature Management**. Administrators can also
+configure skill availability and approve skill-sharing requests.
+
+This feature is generally available (GA). For more information, see the
+following:
+
+* Learn how to [create and manage skills](https://docs.cloud.google.com/gemini/enterprise/docs/skills) as a Gemini
+  Enterprise end user.
+* Learn how to [manage skills](https://docs.cloud.google.com/gemini/enterprise/docs/manage-skills) as a Gemini
+  Enterprise administrator.
+
+### Feature
+
+**Gemini Enterprise: Use Gemini 3.7 Flash**
+
+Gemini 3.7 Flash is generally available (GA) in the `global`, `us`, and `eu`
+regions. To make Gemini 3.7 Flash available to users in the Gemini Enterprise
+app, administrators must turn on the **Gemini 3.7 Flash** feature toggle in the
+Google Cloud console.
+
+For in-country regions where the model isn't supported, administrators
+can still enable the model by confirming a warning that traffic is routed
+to the `global` endpoint, which doesn't support regional data residency.
+
+Gemini 3.7 Flash is also available in Agent Designer workflow agents. Updates
+take up to a day to appear in workflow agents.
+
+For more information, see:
+
+* [Manage features on the web
+  app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Data residency for Gemini Enterprise Standard and Plus Editions and Gemini
+  Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+---
 ## 2026-08-12
 
 ### Feature

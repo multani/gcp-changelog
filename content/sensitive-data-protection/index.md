@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2026-08-13
+
+### Feature
+
+The `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`, and `OPENAI_API_KEY` infoType detectors are available in all regions. For more information about all built-in infoTypes, see the [InfoType detector reference](https://cloud.google.com/dlp/docs/infotypes-reference).
+
+---
 ## 2026-07-14
 
 ### Feature

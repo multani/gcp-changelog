@@ -1,5 +1,18 @@
 # Vertex AI Search
 
+## 2026-08-13
+
+### Feature
+
+**Agent Search: Gemini 3.5 Flash answer generation**
+
+You can generate answers with the Gemini 3.5 Flash model.
+
+For more information, see [Answer generation model versions and
+lifecycle](https://docs.cloud.google.com/generative-ai-app-builder/docs/answer-generation-models) and
+[Gemini 3.5 Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash).
+
+---
 ## 2026-07-23
 
 ### Feature

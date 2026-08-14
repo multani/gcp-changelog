@@ -29,6 +29,59 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-08-13:announcement:1</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On August 13th, 2026, we released an updated version of Apigee (1-18-0-apigee-3).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>An updated version of Apigee, 1-18-0-apigee-3, was released on August 13th, 2026. Rollout has begun and may take several business days to complete across all zones. Your instances will have the new features and fixes once the rollout is finished.</summary>
+    <title>Announcement: Apigee 1-18-0-apigee-3 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-08-13:fixed:2</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>532147587</strong> | To fix forward proxy support. |
+| <strong>537657987</strong> | Fixed a bug where watcher failed to reconcile all routes if an environment was not found in the control plane. |
+| <strong>543022076</strong> | Google Cloud BOM upgrade (protobuf 4.x, gRPC 1.81, Guava 33.5). One user-visible change: a malformed inbound gRPC request frame is now reported to the client as grpc-status INTERNAL(13) and recorded in analytics as x-apigee.grpc.status=13, where it was previously an Apigee ServiceUnavailable fault seen as UNAVAILABLE(14) with no x-apigee.grpc.status recorded. Otherwise no user facing impact, but any prod issue related to gcp, protobuf or gRPC may relate to this. |
+| <strong>542242046</strong> | Fixed LLMTokenQuota metering the request against an arbitrary quota bucket when the API Product declared multiple models and the request carried no model. |
+| <strong>531731614</strong> | Apigee analytics fields ai_llm_response_token_count, ai_llm_prompt_token_count, ai_llm_model_name, and ai_llm_model_provider are available in the Custom Report when LLMTokenQuota and PromptTokenLimit policies are used in Apigee proxies. |
+| <strong>492044413</strong> | LLMTokenQuota resolves the model from the API Product LLM Operation when LLMModelSource is omitted and the request body has no model field. |
+| <strong>67169710</strong> | Adds an opt-in <DynamicClientIdSupported> boolean XML element to the OAuthV2 policy. When true, AbstractOAuthStepExecution.extractClientDetails() preserves any non-empty ClientID/ClientSecret already present on the OAuthClientContext. |
+| <strong>531731614</strong> | Apigee auto identifies the providers and publishes them to analytics. |
+| <strong>537396574</strong> | Added feature to rotate the apigee-ca certificate. |
+| <strong>540861752</strong> | Aligned the ApigeeDeployment conversion hub with its v1alpha3 storage version. Internal change; no effect on existing ApigeeDeployment resources. |
+| <strong>540861752</strong> | Aligned the ApigeeDeployment custom resource's conversion hub with its v1alpha3 storage version. This internal change does not affect existing ApigeeDeployment resources. |
+| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
+    <summary>Several bugs have been fixed, including issues with forward proxy support and route reconciliation. Updates to infrastructure and libraries have also been implemented, along with an enhancement to the OAuthV2 policy for dynamic client ID support and certificate rotation for Apigee.</summary>
+    <title>Fixed: Resolved issues and improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-08-13:security:3</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>535928300</strong> | <strong>Security fix for Apigee.</strong> Fixed a security issue in JWT refresh token revocation handling. |
+| <strong>539515020</strong> | <strong>Security fix for Apigee.</strong> Fixed a security issue in the MessageValidation policy. |
+| <strong>535928530</strong> | <strong>Security fix for Apigee.</strong> Fixed a security issue in the OAuthV2 policy. |
+| <strong>535683286</strong> | <strong>Security fix for Apigee.</strong> Fixed a security issue in HTTP target interim-response handling. |
+| <strong>N/A</strong> | <strong>Security fix for Apigee infrastructure.</strong> |</p>]]></content>
+    <summary>Recent security fixes have been applied to Apigee, addressing vulnerabilities in JWT refresh token revocation, MessageValidation, OAuthV2 policies, and HTTP target interim-response handling. Additionally, Apigee infrastructure has received a security update.</summary>
+    <title>Security: Apigee Security Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:apigee-x:2026-07-27:announcement:0</id>
     <published>2026-07-27T00:00:00+00:00</published>
     <updated>2026-07-27T00:00:00+00:00</updated>

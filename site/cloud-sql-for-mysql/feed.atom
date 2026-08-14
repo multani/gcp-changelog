@@ -2,9 +2,78 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-08-05T00:00:00+00:00</updated>
+  <updated>2026-08-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-08-13:feature:0</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/sql/docs/mysql/db-versions">Cloud SQL for MySQL 9.7</a> is generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).</p>
+<p>For more information about the differences between MySQL 9.7 and previous
+versions, review the <a href="https://dev.mysql.com/doc/relnotes/mysql/9.7/en/">MySQL 9.7 Release Notes</a>.</p>
+<p>By default, if you specify MySQL 9.7 as the version when you create a Cloud SQL
+instance (either primary or replica) using the gcloud CLI, the Google Cloud
+console, or the REST API, then the Cloud SQL edition is Cloud SQL Enterprise Plus
+edition.</p>
+<p>This release introduces support for key MySQL 9.7 capabilities, including:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/sql/docs/mysql/vector-search#version-differences"><strong>Vector search</strong></a>: support
+  for the community-standard vector storage format
+  combined with advanced approximate nearest neighbor (ANN) vector
+  indexing in Cloud SQL.</li>
+<li><a href="https://blogs.oracle.com/mysql/the-hypergraph-optimizer-is-now-available-in-mysql-9-7-community-edition"><strong>Hypergraph optimizer</strong></a>:
+  an alternative join-planning framework designed for
+  complex, multi-table queries. You can enable the hypergraph optimizer using an
+  <a href="https://dev.mysql.com/doc/refman/9.7/en/switchable-optimizations.html">optimizer switch</a>.</li>
+<li><a href="https://dev.mysql.com/doc/refman/9.7/en/json-duality-views.html"><strong>JSON Duality Views</strong></a>:
+  a feature that bridges relational SQL and hierarchical
+  JSON document models to interact with the same underlying data.</li>
+<li><strong>Upgrade and migration paths</strong>: support for <a href="https://docs.cloud.google.com/sql/docs/mysql/upgrade-major-db-version-inplace">in-place major version upgrade</a>
+  from Cloud SQL for MySQL 8.4 and
+  <a href="https://docs.cloud.google.com/database-migration/docs/mysql/migration-src-and-dest#cross-version-support">migrations from MySQL 8.4 using the Database Migration Service (DMS)</a>.</li>
+</ul>
+<p><strong>Note:</strong> The legacy <code>mysql_native_password</code> authentication plugin is no longer
+supported starting in Cloud SQL for MySQL 9.7. You must update all clients that
+use built-in authentication user accounts to use the <code>caching_sha2_password</code> plugin
+instead. For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/features#mysql-authentication">MySQL authentication</a>.</p>]]></content>
+    <summary>MySQL 9.7 is now generally available, bringing powerful new features like vector search, the hypergraph optimizer, and JSON Duality Views. This release also supports in-place upgrades and migrations from previous versions, enhancing data management capabilities.</summary>
+    <title>Feature: MySQL 9.7 is now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-08-13:flag updates for mysql 9.7:1</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Additionally, this release introduces several database flag changes.</p>
+<p>| MySQL database flag | Action | Details |
+| --- | --- | --- |
+| <code>activate_mandatory_roles</code> | Added / Supported | Exposes mandatory roles configuration. Default is ON. |
+| <code>innodb_native_foreign_keys</code> | Added / Supported | Exposes SQL layer foreign key handling configuration. |
+| <code>table_open_cache_triggers</code> | Added / Supported | Configures trigger cache size limits. |
+| <code>connection_memory_status_limit</code> | Added / Supported | Sets limit configurations on connection memory. |
+| <code>global_connection_memory_status_limit</code> | Added / Supported | Sets global limit configurations on connection memory. |
+| <code>performance_schema_max_logger_classes</code> | Added / Supported | Sets limits for performance schema logger classes. |
+| <code>caching_sha2_password_proxy_users</code> | Added / Supported | Configures proxy users support for caching SHA-2. |
+| <code>caching_sha2_password_enforce_storage_format</code> | Added / Supported | Enforces storage format rules for caching SHA-2. |
+| <code>caching_sha2_password_storage_format</code> | Added / Supported | Sets storage format defaults for caching SHA-2. |
+| <code>innodb_log_file_size</code> | Removed | Flag not supported in MySQL 9.7 and later. |
+| <code>innodb_log_files_in_group</code> | Removed | Flag not supported in MySQL 9.7 and later. |
+| <code>innodb_undo_tablespaces</code> | Removed | Flag not supported in MySQL 9.7 and later. |
+| <code>mysql_native_password_proxy_users</code> | Removed | Flag not supported in MySQL 9.7 and later. |
+| <code>replica_parallel_type</code> | Removed | Flag not supported in MySQL 9.7 and later. |
+| <code>slave_parallel_type</code> | Removed | Flag not supported in MySQL 9.7 and later. |
+| <code>temptable_use_mmap</code> | Removed | Flag not supported in MySQL 9.7 and later. |</p>
+<p>For more information about MySQL database flags, see <a href="https://docs.cloud.google.com/sql/docs/mysql/flags">Configure database flags</a>.</p>]]></content>
+    <summary>MySQL 9.7 introduces several new database flags for enhanced configuration and control, including options for roles, foreign keys, and connection memory. This release also removes several flags that are no longer supported in newer versions.</summary>
+    <title>Flag updates for MySQL 9.7: MySQL 9.7 Flag Updates</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

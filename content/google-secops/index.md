@@ -1,5 +1,23 @@
 # Google SecOps
 
+## 2026-08-14
+
+### Feature
+
+**[Spotlight Feature] Monitor your data latency with the Health Hub**
+
+This feature is in public preview. The **Health Hub** now includes two new tables to track the ingestion latency at both the source level and the log-type level. In addition, you can select a specific source or log type to open the **Data Health Deep Dive** page and view detailed information about ingestion latency. For more information, see [Monitor health of data sources](https://docs.cloud.google.com/chronicle/docs/reports/data-health-monitoring-and-troubleshooting-dashboard).
+
+Key capabilities include:
+
+* **Improve end-to-end visibility and reduce mean time to debug (MTTD):** Google SecOps calculates latency at both the source level and the log type level to improve end-to-end visibility and help reduce the mean time to debug (MTTD) for delayed logs.
+* **Monitor ingestion latency by source:** View the ingestion latency for each individual data source.
+* **Monitor ingestion latency by log type:** View the ingestion latency for each individual log type.
+* **View detailed information about ingestion latency:** Select a specific source or log type to open the **Data Health Deep Dive** page and view detailed information about ingestion latency.
+
+**Note:** The **Lookback Window** will be fully rolled out next week.
+
+---
 ## 2026-08-13
 
 ### Announcement

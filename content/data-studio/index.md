@@ -2,6 +2,10 @@
 
 ## 2026-08-13
 
+### Announcement
+
+The following features are rolling out over the next week.
+
 ### Feature
 
 **Fullscreen charts**

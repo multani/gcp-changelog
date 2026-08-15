@@ -1,5 +1,25 @@
 # Gemini Enterprise
 
+## 2026-08-14
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.7 Flash available in the mobile app**
+
+Gemini 3.7 Flash is generally available (GA) in the Gemini Enterprise
+mobile app. Mobile app users can select and use the Gemini 3.7 Flash model for
+their conversations within the app. To make the model available, administrators
+must turn on the **Gemini 3.7 Flash** feature toggle in the Google Cloud
+console.
+
+For more information, see:
+
+* [Manage features on the web
+  app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Data residency for Gemini Enterprise Standard and Plus Editions and Gemini
+  Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+---
 ## 2026-08-13
 
 ### Feature

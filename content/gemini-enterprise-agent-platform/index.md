@@ -1,5 +1,22 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-15
+
+### Feature
+
+**Monitor semantic governance policies with built-in metrics (Preview)**
+
+Built-in Cloud Monitoring metrics for the semantic governance policy engine
+are available in Preview. You can now observe request throughput, evaluation
+counts, latencies, verdict distribution (`ALLOW` versus `DENY`), and LLM
+token consumption for the policy engine directly in
+[Metrics Explorer](https://docs.cloud.google.com/monitoring/charts/metrics-explorer), query them through
+the Cloud Monitoring v3 API and PromQL, and use them in alerting policies.
+
+For more information, see [Monitor semantic governance
+policies](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/monitor-semantic-governance).
+
+---
 ## 2026-08-13
 
 ### Feature

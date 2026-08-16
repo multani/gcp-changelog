@@ -1,5 +1,19 @@
 # BigQuery
 
+## 2026-08-13
+
+### Feature
+
+BigQuery pipelines now support automated metadata enrichment, allowing you to
+define semantic metadata directly in SQLX configurations for synchronization
+with Knowledge Catalog. In addition, the Data Engineering Agent proactively
+generates this metadata based on your intent or context. For more information,
+see
+[Metadata enrichment and data quality scorecard integration](https://docs.cloud.google.com/bigquery/docs/manage-pipelines#metadata-scorecard).
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-12
 
 ### Announcement

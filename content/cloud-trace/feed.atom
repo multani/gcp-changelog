@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Trace</title>
   <subtitle>Changelog for Google Cloud product: Cloud Trace</subtitle>
-  <updated>2026-08-12T00:00:00+00:00</updated>
+  <updated>2026-08-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-trace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-trace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-08-17:feature:0</id>
+    <published>2026-08-17T00:00:00+00:00</published>
+    <updated>2026-08-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following limits associated with the Cloud Trace API,
+<code>cloudtrace.googleapis.com</code>, have increased:</p>
+<ul>
+<li>Maximum attributes per span: 1,024</li>
+<li>Maximum attribute value size: 65,532 bytes</li>
+<li>Maximum attribute key size: 512 bytes</li>
+<li>Maximum span name length: 1,024 bytes</li>
+<li>Maximum events per span: 256</li>
+</ul>
+<p>The new limits are consistent with those supported by the Telemetry API,
+which implements the <a href="https://opentelemetry.io/docs/specs/otlp">OpenTelemetry Protocol (OTLP)</a>.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/trace/docs/quotas#trace-api-quotas-and-limits">Cloud Trace API quotas and limits</a>.</p>]]></content>
+    <summary>The Cloud Trace API has increased its limits for attributes per span, attribute value and key sizes, span name length, and events per span. These new limits align with the Telemetry API and the OpenTelemetry Protocol (OTLP).</summary>
+    <title>Feature: Cloud Trace API Limits Increased</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

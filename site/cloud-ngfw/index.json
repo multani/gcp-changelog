@@ -1,23 +1,33 @@
 {
   "name": "Cloud NGFW",
   "entries": {
+    "2026-08-17": [
+      {
+        "kind": "Feature",
+        "content": "Support for the Advanced malware sandbox (WildFire) service is now restored.\nYou can now use Advanced malware sandbox to perform deep inspection of\nnetwork-routed file transfers and block zero-day malware before it reaches\nyour workloads. Advanced malware sandbox\nis available in the Cloud Next Generation Firewall Enterprise tier.\n\nFor more information, see\n[Advanced malware sandbox overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and\n[Configure Advanced malware sandbox in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire).\nThis feature is available in **Preview**.",
+        "summary": {
+          "title": "Advanced malware sandbox support restored",
+          "summary": "Support for the Advanced malware sandbox service has been restored, allowing for deep inspection of file transfers and blocking of zero-day malware. This feature is available in the Cloud Next Generation Firewall Enterprise tier and is currently in Preview."
+        }
+      }
+    ],
     "2026-07-27": [
       {
         "kind": "Breaking",
-        "content": "Enabling WildFire in an existing firewall endpoint can cause a temporary\ndata plane outage. As a result, the WildFire feature is temporarily removed.",
+        "content": "Enabling Advanced malware sandbox (WildFire) in an existing firewall\nendpoint can cause a temporary data plane outage. As a result, the\nAdvanced malware sandbox feature is temporarily removed.",
         "summary": {
-          "title": "Firewall outage during WildFire enablement",
-          "summary": "Enabling the WildFire feature on an existing firewall endpoint may lead to a temporary data plane outage. Consequently, the WildFire feature will be temporarily unavailable. We are working to resolve this issue quickly."
+          "title": "Malware Sandbox Feature Temporarily Removed",
+          "summary": "Enabling the Advanced malware sandbox feature in an existing firewall endpoint may cause a temporary data plane outage. Consequently, the Advanced malware sandbox feature has been temporarily removed."
         }
       }
     ],
     "2026-07-20": [
       {
         "kind": "Feature",
-        "content": "You can now use the WildFire service to protect your network against unknown,\nnovel malware, and file-based threats. WildFire integrates advanced malware sandboxing\nand real-time machine learning (ML) to perform deep inspection of\nnetwork-routed file transfers and block zero-day malware before it reaches your\nworkloads. WildFire is available in the Cloud Firewall Enterprise tier.\n\nFor more information, see [WildFire overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and\n[Configure WildFire in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire). This\nfeature is available in **Preview**.",
+        "content": "You can now use the Advanced malware sandbox (WildFire) service to protect\nyour network against unknown, novel malware, and file-based threats.\nAdvanced malware sandbox integrates dynamic machine learning (ML) and\ncloud-based behavioral sandboxing to perform deep inspection of network-routed\nfile transfers and block zero-day malware before it reaches your workloads.\nAdvanced malware sandbox is available in the Cloud Firewall Enterprise tier.\n\nFor more information, see [Advanced malware sandbox overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and\n[Configure Advanced malware sandbox in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire). This\nfeature is available in **Preview**.",
         "summary": {
-          "title": "New WildFire service protects against unknown malware",
-          "summary": "The new WildFire service offers advanced protection against unknown and novel malware. It uses deep inspection and machine learning to block zero-day threats before they impact your network. This feature is now available in Preview within the Cloud Firewall Enterprise tier."
+          "title": "Protect Against Unknown Malware",
+          "summary": "The new Advanced malware sandbox service now protects your network from unknown and novel malware. It uses machine learning and cloud-based behavioral sandboxing to inspect file transfers and block zero-day threats before they impact your workloads. This feature is available in the Cloud Firewall Enterprise tier and is currently in Preview."
         }
       }
     ],

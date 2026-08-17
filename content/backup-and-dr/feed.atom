@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Backup and DR</title>
   <subtitle>Changelog for Google Cloud product: Backup and DR</subtitle>
-  <updated>2026-08-03T00:00:00+00:00</updated>
+  <updated>2026-08-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:backup-and-dr</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/backup-and-dr/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-08-13:feature:0</id>
+    <published>2026-08-13T00:00:00+00:00</published>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now configure scheduled, application-consistent backups and point-in-time recovery (PITR) workflows for self-managed databases (including IBM Db2, SAP HANA, SAP ASE, SAP IQ, SAP MaxDB, PostgreSQL, MySQL, and MariaDB) running on Compute Engine Linux instances.</p>
+<p>This feature uses the bring-your-own-script guest-flush framework to quiesce the database before snapshot creation, ensuring transaction consistency and eliminating data corruption risks. Additionally, you can configure dedicated Persistent Disk backups for database archive logs to enable point-in-time recovery.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/application-consistent-backups-for-self-managed-databases">Configure application-consistent backups</a>.</p>]]></content>
+    <summary>Configure scheduled, application-consistent backups and point-in-time recovery for self-managed databases on Compute Engine Linux instances. This feature ensures transaction consistency and reduces data corruption risks by quiescing databases before snapshot creation. You can also set up dedicated Persistent Disk backups for archive logs to enable point-in-time recovery.</summary>
+    <title>Feature: Database backups for Compute Engine</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

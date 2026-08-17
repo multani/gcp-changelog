@@ -1,25 +1,43 @@
 # Cloud NGFW
 
+## 2026-08-17
+
+### Feature
+
+Support for the Advanced malware sandbox (WildFire) service is now restored.
+You can now use Advanced malware sandbox to perform deep inspection of
+network-routed file transfers and block zero-day malware before it reaches
+your workloads. Advanced malware sandbox
+is available in the Cloud Next Generation Firewall Enterprise tier.
+
+For more information, see
+[Advanced malware sandbox overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and
+[Configure Advanced malware sandbox in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire).
+This feature is available in **Preview**.
+
+---
 ## 2026-07-27
 
 ### Breaking
 
-Enabling WildFire in an existing firewall endpoint can cause a temporary
-data plane outage. As a result, the WildFire feature is temporarily removed.
+Enabling Advanced malware sandbox (WildFire) in an existing firewall
+endpoint can cause a temporary data plane outage. As a result, the
+Advanced malware sandbox feature is temporarily removed.
 
 ---
 ## 2026-07-20
 
 ### Feature
 
-You can now use the WildFire service to protect your network against unknown,
-novel malware, and file-based threats. WildFire integrates advanced malware sandboxing
-and real-time machine learning (ML) to perform deep inspection of
-network-routed file transfers and block zero-day malware before it reaches your
-workloads. WildFire is available in the Cloud Firewall Enterprise tier.
+You can now use the Advanced malware sandbox (WildFire) service to protect
+your network against unknown, novel malware, and file-based threats.
+Advanced malware sandbox integrates dynamic machine learning (ML) and
+cloud-based behavioral sandboxing to perform deep inspection of network-routed
+file transfers and block zero-day malware before it reaches your workloads.
+Advanced malware sandbox is available in the Cloud Firewall Enterprise tier.
 
-For more information, see [WildFire overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and
-[Configure WildFire in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire). This
+For more information, see [Advanced malware sandbox overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and
+[Configure Advanced malware sandbox in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire). This
 feature is available in **Preview**.
 
 ---

@@ -1,5 +1,16 @@
 # Backup and DR
 
+## 2026-08-13
+
+### Feature
+
+You can now configure scheduled, application-consistent backups and point-in-time recovery (PITR) workflows for self-managed databases (including IBM Db2, SAP HANA, SAP ASE, SAP IQ, SAP MaxDB, PostgreSQL, MySQL, and MariaDB) running on Compute Engine Linux instances.
+
+This feature uses the bring-your-own-script guest-flush framework to quiesce the database before snapshot creation, ensuring transaction consistency and eliminating data corruption risks. Additionally, you can configure dedicated Persistent Disk backups for database archive logs to enable point-in-time recovery.
+
+For more information, see [Configure application-consistent backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/application-consistent-backups-for-self-managed-databases).
+
+---
 ## 2026-08-03
 
 ### Feature

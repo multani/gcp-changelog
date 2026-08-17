@@ -1,6 +1,16 @@
 {
   "name": "Cloud Trace",
   "entries": {
+    "2026-08-17": [
+      {
+        "kind": "Feature",
+        "content": "The following limits associated with the Cloud Trace API,\n`cloudtrace.googleapis.com`, have increased:\n\n* Maximum attributes per span: 1,024\n* Maximum attribute value size: 65,532 bytes\n* Maximum attribute key size: 512 bytes\n* Maximum span name length: 1,024 bytes\n* Maximum events per span: 256\n\nThe new limits are consistent with those supported by the Telemetry API,\nwhich implements the [OpenTelemetry Protocol (OTLP)](https://opentelemetry.io/docs/specs/otlp).\n\nFor more information, see\n[Cloud Trace API quotas and limits](https://docs.cloud.google.com/trace/docs/quotas#trace-api-quotas-and-limits).",
+        "summary": {
+          "title": "Cloud Trace API Limits Increased",
+          "summary": "The Cloud Trace API has increased its limits for attributes per span, attribute value and key sizes, span name length, and events per span. These new limits align with the Telemetry API and the OpenTelemetry Protocol (OTLP)."
+        }
+      }
+    ],
     "2026-08-12": [
       {
         "kind": "Feature",

@@ -11,6 +11,13 @@ granular control over specific fields for Agent Identity resources, such as
 This feature is in
 [GA](https://cloud.google.com/products#product-launch-stages).
 
+### Feature
+
+Agent Identity VPC Service Controls (VPC Service Controls) integration is [generally available](https://cloud.google.com/products#product-launch-stages).
+You can add the Agent Identity API (`agentidentity.googleapis.com`) and Agent Identity Credentials API (`agentidentitycredentials.googleapis.com`) to a service perimeter and specify agent identities in ingress and egress rules.
+
+For more information, see [Agent Identity overview](https://docs.cloud.google.com/iam/docs/agent-identity-overview).
+
 ---
 ## 2026-08-12
 

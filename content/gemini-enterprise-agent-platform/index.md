@@ -32,6 +32,18 @@ enabled by default.
 For more information on 3.7 Flash, see the [model
 page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-7-flash).
 
+### Feature
+
+**Agent Runtime: ADK telemetry metrics**
+
+Agents deployed to Agent Runtime with Agent Development Kit (ADK) 2.6.0 or later
+can emit `gen_ai` application metrics that follow OpenTelemetry's generative AI
+semantic conventions. Set the `GOOGLE_CLOUD_AGENT_ENGINE_ENABLE_TELEMETRY`
+environment variable to export these metrics to Cloud Monitoring as
+user-defined metrics, alongside agent traces and logs.
+
+For more information, see [Set up monitoring](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/runtime/monitoring#adk-metrics).
+
 ---
 ## 2026-08-12
 

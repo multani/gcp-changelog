@@ -1,5 +1,16 @@
 # Dataform
 
+## 2026-08-17
+
+### Feature
+
+You can now use the
+[Dataform remote Model Context Protocol (MCP) server](https://docs.cloud.google.com/dataform/docs/use-dataform-mcp)
+to manage data transformation workflows through AI agents. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-08-13
 
 ### Feature

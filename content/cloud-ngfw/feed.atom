@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud NGFW</title>
   <subtitle>Changelog for Google Cloud product: Cloud NGFW</subtitle>
-  <updated>2026-07-27T00:00:00+00:00</updated>
+  <updated>2026-08-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-ngfw</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-ngfw/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-ngfw:2026-08-17:feature:0</id>
+    <published>2026-08-17T00:00:00+00:00</published>
+    <updated>2026-08-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Support for the Advanced malware sandbox (WildFire) service is now restored.
+You can now use Advanced malware sandbox to perform deep inspection of
+network-routed file transfers and block zero-day malware before it reaches
+your workloads. Advanced malware sandbox
+is available in the Cloud Next Generation Firewall Enterprise tier.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/firewall/docs/about-wildfire">Advanced malware sandbox overview</a> and
+<a href="https://docs.cloud.google.com/firewall/docs/configure-wildfire">Configure Advanced malware sandbox in your network</a>.
+This feature is available in <strong>Preview</strong>.</p>]]></content>
+    <summary>Support for the Advanced malware sandbox service has been restored, allowing for deep inspection of file transfers and blocking of zero-day malware. This feature is available in the Cloud Next Generation Firewall Enterprise tier and is currently in Preview.</summary>
+    <title>Feature: Advanced malware sandbox support restored</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -12,10 +31,11 @@
     <id>urn:github:multani:gcp-changelog:cloud-ngfw:2026-07-27:breaking:0</id>
     <published>2026-07-27T00:00:00+00:00</published>
     <updated>2026-07-27T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Enabling WildFire in an existing firewall endpoint can cause a temporary
-data plane outage. As a result, the WildFire feature is temporarily removed.</p>]]></content>
-    <summary>Enabling the WildFire feature on an existing firewall endpoint may lead to a temporary data plane outage. Consequently, the WildFire feature will be temporarily unavailable. We are working to resolve this issue quickly.</summary>
-    <title>Breaking: Firewall outage during WildFire enablement</title>
+    <content type="html"><![CDATA[<p>Enabling Advanced malware sandbox (WildFire) in an existing firewall
+endpoint can cause a temporary data plane outage. As a result, the
+Advanced malware sandbox feature is temporarily removed.</p>]]></content>
+    <summary>Enabling the Advanced malware sandbox feature in an existing firewall endpoint may cause a temporary data plane outage. Consequently, the Advanced malware sandbox feature has been temporarily removed.</summary>
+    <title>Breaking: Malware Sandbox Feature Temporarily Removed</title>
   </entry>
   <entry>
     <author>
@@ -24,16 +44,17 @@ data plane outage. As a result, the WildFire feature is temporarily removed.</p>
     <id>urn:github:multani:gcp-changelog:cloud-ngfw:2026-07-20:feature:0</id>
     <published>2026-07-20T00:00:00+00:00</published>
     <updated>2026-07-20T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>You can now use the WildFire service to protect your network against unknown,
-novel malware, and file-based threats. WildFire integrates advanced malware sandboxing
-and real-time machine learning (ML) to perform deep inspection of
-network-routed file transfers and block zero-day malware before it reaches your
-workloads. WildFire is available in the Cloud Firewall Enterprise tier.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/firewall/docs/about-wildfire">WildFire overview</a> and
-<a href="https://docs.cloud.google.com/firewall/docs/configure-wildfire">Configure WildFire in your network</a>. This
+    <content type="html"><![CDATA[<p>You can now use the Advanced malware sandbox (WildFire) service to protect
+your network against unknown, novel malware, and file-based threats.
+Advanced malware sandbox integrates dynamic machine learning (ML) and
+cloud-based behavioral sandboxing to perform deep inspection of network-routed
+file transfers and block zero-day malware before it reaches your workloads.
+Advanced malware sandbox is available in the Cloud Firewall Enterprise tier.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/firewall/docs/about-wildfire">Advanced malware sandbox overview</a> and
+<a href="https://docs.cloud.google.com/firewall/docs/configure-wildfire">Configure Advanced malware sandbox in your network</a>. This
 feature is available in <strong>Preview</strong>.</p>]]></content>
-    <summary>The new WildFire service offers advanced protection against unknown and novel malware. It uses deep inspection and machine learning to block zero-day threats before they impact your network. This feature is now available in Preview within the Cloud Firewall Enterprise tier.</summary>
-    <title>Feature: New WildFire service protects against unknown malware</title>
+    <summary>The new Advanced malware sandbox service now protects your network from unknown and novel malware. It uses machine learning and cloud-based behavioral sandboxing to inspect file transfers and block zero-day threats before they impact your workloads. This feature is available in the Cloud Firewall Enterprise tier and is currently in Preview.</summary>
+    <title>Feature: Protect Against Unknown Malware</title>
   </entry>
   <entry>
     <author>

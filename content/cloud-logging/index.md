@@ -1,5 +1,17 @@
 # Cloud Logging
 
+## 2026-08-14
+
+### Announcement
+
+The Telemetry API for logs ingestion is
+[generally available (GA)](https://docs.cloud.google.com/products#product-launch-stages).
+You can ingest OTLP logs into Cloud Logging by using an
+OpenTelemetry Collector, an OTLP exporter, and the Telemetry API. For more
+information, see
+[OTLP ingestion overview](https://docs.cloud.google.com/stackdriver/docs/otlp/overview).
+
+---
 ## 2026-06-22
 
 ### Security

@@ -2748,6 +2748,18 @@
 
 
 <h1 id="secret-manager">Secret Manager</h1>
+<h2 id="2026-08-12">2026-08-12</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Parameter Manager enforces the location organization policy
+(<code>constraints/gcp.resourceLocations</code>) on resources in the <code>global</code> location.</p>
+<p>If your organization policy restricts allowed resource locations, you must
+explicitly allow the <code>global</code> location in the policy. Otherwise, attempts to
+create global resources fail.</p>
+<p>This helps ensure that Parameter Manager consistently applies the location
+organization policy checks to global resources.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/organization-policy/restrict-locations">Defining resource
+locations</a>.</p>
+<hr />
 <h2 id="2026-07-27">2026-07-27</h2>
 <h3 id="feature">Feature</h3>
 <p>Automatic rotation of regional Cloud SQL database credentials in Secret Manager
@@ -2874,6 +2886,9 @@ time and debug issues related to specific parameter updates.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#secret-manager">Secret Manager</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-12" class="nav-link">2026-08-12</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-07-27" class="nav-link">2026-07-27</a>
           </li>

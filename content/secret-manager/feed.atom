@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Secret Manager</title>
   <subtitle>Changelog for Google Cloud product: Secret Manager</subtitle>
-  <updated>2026-07-27T00:00:00+00:00</updated>
+  <updated>2026-08-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:secret-manager</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/secret-manager/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:secret-manager:2026-08-12:fixed:0</id>
+    <published>2026-08-12T00:00:00+00:00</published>
+    <updated>2026-08-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Parameter Manager enforces the location organization policy
+(<code>constraints/gcp.resourceLocations</code>) on resources in the <code>global</code> location.</p>
+<p>If your organization policy restricts allowed resource locations, you must
+explicitly allow the <code>global</code> location in the policy. Otherwise, attempts to
+create global resources fail.</p>
+<p>This helps ensure that Parameter Manager consistently applies the location
+organization policy checks to global resources.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/organization-policy/restrict-locations">Defining resource
+locations</a>.</p>]]></content>
+    <summary>Parameter Manager now enforces the location organization policy on resources in the global location. If your organization policy restricts allowed resource locations, you must explicitly allow the global location in the policy, or attempts to create global resources will fail. This change ensures consistent policy application.</summary>
+    <title>Fixed: Parameter Manager now enforces location policies for global resources</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

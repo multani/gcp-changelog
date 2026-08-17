@@ -1,5 +1,23 @@
 # Secret Manager
 
+## 2026-08-12
+
+### Fixed
+
+Parameter Manager enforces the location organization policy
+(`constraints/gcp.resourceLocations`) on resources in the `global` location.
+
+If your organization policy restricts allowed resource locations, you must
+explicitly allow the `global` location in the policy. Otherwise, attempts to
+create global resources fail.
+
+This helps ensure that Parameter Manager consistently applies the location
+organization policy checks to global resources.
+
+For more information, see [Defining resource
+locations](https://docs.cloud.google.com/organization-policy/restrict-locations).
+
+---
 ## 2026-07-27
 
 ### Feature

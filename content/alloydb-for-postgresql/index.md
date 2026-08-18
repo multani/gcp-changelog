@@ -1,5 +1,15 @@
 # AlloyDB for PostgreSQL
 
+## 2026-08-17
+
+### Feature
+
+You can now use the
+[Model Context Protocol (MCP) Toolbox for Databases](https://docs.cloud.google.com/alloydb/docs/connect-ide-using-mcp-toolbox#access-advanced-query-insights)
+to access AlloyDB observability features and advanced query insights directly in
+your IDE.
+
+---
 ## 2026-08-07
 
 ### Feature

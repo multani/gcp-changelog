@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2026-07-20T00:00:00+00:00</updated>
+  <updated>2026-08-17T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-08-17:feature:0</id>
+    <published>2026-08-17T00:00:00+00:00</published>
+    <updated>2026-08-17T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>If you delete your project, buckets that have soft delete enabled are
+now retained for a limited amount of time before being permanently deleted.
+If you restore a deleted project during this time period, these buckets are
+restored to the state that they were in when the project was deleted.</p>
+<p>For more information about soft delete and the restoration window, see
+<a href="https://docs.cloud.google.com/storage/docs/soft-delete">Soft delete</a>.</p>]]></content>
+    <summary>Buckets with soft delete enabled are now retained for a limited time after project deletion. If the project is restored within this period, the buckets are also restored to their previous state. This feature enhances data recovery capabilities.</summary>
+    <title>Feature: Bucket retention after project deletion</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

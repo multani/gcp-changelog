@@ -1,5 +1,16 @@
 # Cloud Interconnect
 
+## 2026-07-27
+
+### Feature
+
+Viewing traffic metrics for the `transport` resource for
+[Partner Cross-Cloud Interconnect for Amazon Web Services (AWS)](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview) is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+For information on how to view metrics, see
+[Monitor connections](https://docs.cloud.google.com/network-connectivity/docs/interconnect/how-to/monitoring).
+
+---
 ## 2026-07-14
 
 ### Feature

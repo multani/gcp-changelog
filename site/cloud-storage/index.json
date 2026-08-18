@@ -1,6 +1,16 @@
 {
   "name": "Cloud Storage",
   "entries": {
+    "2026-08-17": [
+      {
+        "kind": "Feature",
+        "content": "If you delete your project, buckets that have soft delete enabled are\nnow retained for a limited amount of time before being permanently deleted.\nIf you restore a deleted project during this time period, these buckets are\nrestored to the state that they were in when the project was deleted.\n\nFor more information about soft delete and the restoration window, see\n[Soft delete](https://docs.cloud.google.com/storage/docs/soft-delete).",
+        "summary": {
+          "title": "Bucket retention after project deletion",
+          "summary": "Buckets with soft delete enabled are now retained for a limited time after project deletion. If the project is restored within this period, the buckets are also restored to their previous state. This feature enhances data recovery capabilities."
+        }
+      }
+    ],
     "2026-07-20": [
       {
         "kind": "Feature",

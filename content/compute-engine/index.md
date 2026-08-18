@@ -1,5 +1,22 @@
 # Compute Engine
 
+## 2026-08-14
+
+### Feature
+
+**Generally available**: You can use zonal and global extension
+policies in VM Extension Manager to
+automatically install and manage extensions, such as the Ops Agent, on a fleet of VMs and to ensure consistent extension states across your project.
+
+To improve observability of enforcement states and guest agent activities, you
+can [view VM extension logs](https://docs.cloud.google.com/compute/docs/vm-extensions/view-vm-extension-logs)
+by using Cloud Logging. These logs help you identify and troubleshoot issues with
+VM extensions.
+
+For more information, see [About VM Extension
+Manager](https://docs.cloud.google.com/compute/docs/vm-extensions/about-vm-extension-manager).
+
+---
 ## 2026-08-11
 
 ### Feature

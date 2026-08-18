@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-08-17
+
+### Announcement
+
+Looker's [Continuous Integration](https://docs.cloud.google.com/looker/docs/continuous-integration) is based on the legacy standalone Spectacles service. Looker will continue to integrate and evolve the Spectacles features into Looker's Continuous Integration, and the legacy standalone Spectacles service itself will be discontinued starting November 30, 2026. Existing Spectacles customers will receive an email with details. If you have any questions or require assistance, please contact us at [spectacles-support@google.com](mailto:spectacles-support@google.com).
+
+---
 ## 2026-08-06
 
 ### Announcement

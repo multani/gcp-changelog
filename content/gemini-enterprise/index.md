@@ -1,5 +1,29 @@
 # Gemini Enterprise
 
+## 2026-08-17
+
+### Feature
+
+**Gemini Enterprise: General availability for registering A2UI and A2A agents with Gemini Enterprise, including A2UI version v0.9 support**
+
+Gemini Enterprise administrators can register and manage agents using [Agent to
+UI (A2UI)](https://a2ui.org/introduction/what-is-a2ui/) to build custom
+interfaces and the [Agent2Agent (A2A) Protocol](https://a2a-protocol.org/) for
+communication with Gemini Enterprise.
+
+With this release:
+
+* The feature is generally available (GA) instead of Public Preview.
+* Support is added for A2UI version v0.9, in addition to v0.8 protocols. A2UI
+  v0.9 supports the new Material Design-based components catalog.
+
+For more information, see:
+
+* [Register and manage agents using A2UI and A2A](https://docs.cloud.google.com/gemini/enterprise/docs/a2ui-agents/register-and-manage-an-a2ui-agent)
+* [A2UI component gallery reference](https://docs.cloud.google.com/gemini/enterprise/docs/a2ui-agents/a2ui-component-gallery-reference)
+* [Tutorial: Host an agent on Cloud Run](https://docs.cloud.google.com/gemini/enterprise/docs/a2ui-agents/tutorial-host-agent-cloud-run)
+
+---
 ## 2026-08-14
 
 ### Feature

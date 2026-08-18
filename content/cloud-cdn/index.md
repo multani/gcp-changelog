@@ -1,5 +1,17 @@
 # Cloud CDN
 
+## 2026-08-17
+
+### Feature
+
+Cloud CDN supports the targeted `CDN-Cache-Control` HTTP response
+header [RFC 9213](https://www.rfc-editor.org/rfc/rfc9213). You can use
+this header to specify caching directives specifically for Cloud CDN edge
+caches without affecting browser-level caching.
+
+For details, see [Cache control header precedence](https://docs.cloud.google.com/cdn/docs/caching#cache-control-headers).
+
+---
 ## 2026-08-04
 
 ### Feature

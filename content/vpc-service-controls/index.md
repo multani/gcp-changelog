@@ -1,5 +1,16 @@
 # VPC Service Controls
 
+## 2026-08-14
+
+### Feature
+
+[Generally available (GA)](https://cloud.google.com/products#product-launch-stages) support
+for the following integrations:
+
+* [Agent Identity API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_agent_identity)
+* [Agent Identity Credentials API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_agent_identity_credentials)
+
+---
 ## 2026-08-13
 
 ### Feature

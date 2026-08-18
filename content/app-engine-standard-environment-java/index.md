@@ -1,5 +1,14 @@
 # App Engine standard environment Java
 
+## 2026-08-18
+
+### Feature
+
+Support for [migrating from the App Engine Images service to
+Cloud Run](https://docs.cloud.google.com/appengine/migration-center/standard/java/images-to-cloud-run) is in
+[General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-08-14
 
 ### Feature

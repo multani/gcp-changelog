@@ -438,20 +438,6 @@ For more information, see
 
 ### Feature
 
-**Gemini Enterprise: Gemini 3.6 Flash in US multi-region**
-
-If your project is on the allowlist, you can use Gemini 3.6 Flash in the US
-multi-region (`us`) with data residency at-rest (DRZ) and machine learning
-processing (MLP).
-
-To request access to Gemini 3.6 Flash in the US multi-region, contact
-your Google account team.
-
-For more information, see
-[Data residency for Gemini Enterprise Standard and Plus Editions and Gemini Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
-
-### Feature
-
 **Gemini Enterprise: Create and edit documents and slides in Canvas (GA)**
 
 The Canvas assistant is generally available within the

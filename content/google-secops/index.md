@@ -36,7 +36,7 @@ required.
 
 **[Spotlight Feature] Analyze feed activity with Cloud Logging**
 
-This feature is in public preview. To use this feature, your Google SecOps instance must be configured with a Bring Your Own Project (BYOP) Google Cloud project. You can now monitor, debug, and troubleshoot Google SecOps ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.
+This feature is in public preview. To use this feature, your Google SecOps instance must be configured with a Bring Your Own Project (BYOP) Google Cloud project. You can now monitor, debug, and troubleshoot Google SecOps ingestion pipelines and feeds using Cloud Logging. By sending, viewing, and querying ingestion and feed activity logs in the Logs Explorer, you can diagnose log delivery issues, such as, missing, delayed, or failing logs, and decrease the time required to resolve ingestion anomalies.
 
 This visibility into push- and pull-based ingestion mechanisms provides the following capabilities:
 
@@ -324,9 +324,9 @@ Additional enhancements include:
 
 ### Deprecated
 
-**[Spotlight Feature] Deprecation of Google Security Operations legacy SIEM APIs**
+**[Spotlight Feature] Deprecation of Google SecOps legacy SIEM APIs**
 
-Google Security Operations is [deprecating](https://docs.cloud.google.com/chronicle/docs/deprecations) its legacy SIEM APIs—[Backstory API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#backstory_api) (including [Customer Management API](https://docs.cloud.google.com/chronicle/docs/reference/customer-management-api)) and [Ingestion API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#ingestion_api)—in favor of the modern [Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#chronicle_api).
+Google SecOps is [deprecating](https://docs.cloud.google.com/chronicle/docs/deprecations) its legacy SIEM APIs—[Backstory API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#backstory_api) (including [Customer Management API](https://docs.cloud.google.com/chronicle/docs/reference/customer-management-api)) and [Ingestion API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#ingestion_api)—in favor of the modern [Chronicle API](https://docs.cloud.google.com/chronicle/docs/reference/google-secops-api-libraries-overview#chronicle_api).
 
 **Key dates**
 

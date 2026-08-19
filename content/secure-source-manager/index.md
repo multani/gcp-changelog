@@ -1,5 +1,18 @@
 # Secure Source Manager
 
+## 2026-08-15
+
+### Feature
+
+The Secure Source Manager Model Context Protocol (MCP) server is available in
+[Preview](https://docs.cloud.google.com/products#product-launch-stages). You can use the
+Secure Source Manager MCP server to connect AI tools and coding assistants directly
+to your repositories, branch rules, pull requests, and issues.
+
+For more information, see the
+[Secure Source Manager MCP reference](https://docs.cloud.google.com/secure-source-manager/docs/reference/mcp).
+
+---
 ## 2026-07-02
 
 ### Feature

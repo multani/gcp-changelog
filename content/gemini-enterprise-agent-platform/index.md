@@ -16,6 +16,18 @@ the Cloud Monitoring v3 API and PromQL, and use them in alerting policies.
 For more information, see [Monitor semantic governance
 policies](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/monitor-semantic-governance).
 
+### Feature
+
+**AlphaFold 3 is generally available**
+
+AlphaFold 3 is now generally available (GA) and available for approved users for
+commercial research use.
+
+AlphaFold 3 Google DeepMind's and Isomorphic Labs' deep learning model to
+predict the 3D structures and interactions of proteins, DNA, RNA, ligands, and
+ions. For more information, see
+[AlphaFold 3](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/alphafold-3).
+
 ---
 ## 2026-08-13
 

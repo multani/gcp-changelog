@@ -1,5 +1,108 @@
 # Agent Platform Workbench
 
+## 2026-08-16
+
+### Security
+
+Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing known vulnerabilities.
+
+### Change
+
+
+
+### 20260816-2330-rc0 Release
+
+
+
+### Security
+
+Updated aiohttp, joblib and cryptography to patched versions, addressing known vulnerabilities including CVE-2022-21797 and CVE-2025-69223.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Updated the CUDA base image from 12.8.1 to 12.9.2 (CUDA 12.9, cuDNN 9.10). This is a minor CUDA 12 update, binary compatible with the previous image, and also addresses known vulnerabilities in a bundled NVIDIA profiler component.
+
+### Security
+
+Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing known vulnerabilities.
+
+### Deprecated
+
+Removed the JupyterLab 3 environment from the Python 3.12 custom container; JupyterLab 4 is now the only JupyterLab environment and is always used. The Python 3.10 images are unaffected.
+
+### Change
+
+
+
+### 20260816-2330-rc0 Release
+
+
+
+### Security
+
+Updated aiohttp, joblib and cryptography to patched versions, addressing known vulnerabilities including CVE-2022-21797 and CVE-2025-69223.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260816-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260816-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260816-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the Git panel's grayed out buttons, which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.
+
+### Change
+
+
+
+### 20260816-2030-rc0 Release
+
+
+
+---
 ## 2026-08-09
 
 ### Change

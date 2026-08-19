@@ -1,5 +1,63 @@
 # Gemini Enterprise
 
+## 2026-08-18
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.6 Flash available in US and EU multi-regions**
+
+Gemini 3.6 Flash is generally available in the `us` and `eu` multi-regions, and
+an allowlist is no longer required to use Gemini 3.6 Flash in the `us`
+multi-region.
+To make Gemini 3.6 Flash available to users in the Gemini Enterprise app,
+administrators must turn on the **Gemini 3.6 Flash** feature toggle in the
+Google Cloud console.
+
+If an administrator previously turned on the **Gemini 3.6 Flash** toggle for
+an app in the `us` or `eu` multi-region and accepted the out-of-region routing
+warning, traffic for that app automatically routes to the app's location
+(`us` or `eu`). No action is required.
+
+In regions where the model is not supported, administrators can still enable
+the model by acknowledging a warning that traffic routes to the `global`
+endpoint, which does not support regional data residency.
+
+For more information, see:
+
+* [Manage features on the web
+  app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Data residency for Gemini Enterprise Standard and Plus Editions and Gemini
+  Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+### Feature
+
+**Gemini Enterprise: Access and configure AI developer tools**
+
+AI developer tools is generally available (GA) for Gemini Enterprise Standard,
+Plus, and Pay-as-you-go editions with an invoiced Cloud Billing account.
+This launch includes access to Antigravity 2.0, Antigravity CLI, and
+Android Studio.
+
+Key capabilities of AI developer tools include the following:
+
+* **Administrative controls**: Turn on or turn off AI developer tools, configure
+  security policies (such as file access and terminal command execution), and
+  manage model availability in the Google Cloud console.
+* **Usage metrics dashboard**: Monitor developer adoption, active users, token
+  consumption, and API call volumes with integrated Cloud Monitoring and
+  logging.
+
+You can manage access to AI developer tools using a custom
+IAM role.
+
+For more information, see the following:
+
+* [AI developer tools overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
+* [Configure AI developer tools settings](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-settings)
+* [Create custom roles for AI developer tools](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-creating-custom-roles)
+* [View AI developer tools metrics](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-metrics)
+
+---
 ## 2026-08-17
 
 ### Feature
@@ -435,6 +493,23 @@ For more information, see
 
 ---
 ## 2026-07-24
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.6 Flash in US multi-region**
+
+If your project is on the allowlist, you can use Gemini 3.6 Flash in the US
+multi-region (`us`) with data residency at-rest (DRZ) and machine learning
+processing (MLP).
+
+**Note:** For an update to this release note, see the [August 18, 2026 release
+note](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#August_18_2026).
+
+To request access to Gemini 3.6 Flash in the US multi-region, contact
+your Google account team.
+
+For more information, see
+[Data residency for Gemini Enterprise Standard and Plus Editions and Gemini Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
 
 ### Feature
 

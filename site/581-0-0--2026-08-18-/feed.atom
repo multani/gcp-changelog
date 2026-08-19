@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 581.0.0 (2026-08-18)</title>
+  <subtitle>Changelog for Google Cloud product: 581.0.0 (2026-08-18)</subtitle>
+  <updated>2026-08-18T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/581-0-0--2026-08-18-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:breaking changes:0</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Cloud Services)</strong> Removed <code>gcloud beta services mcp enable</code>, <code>gcloud beta services mcp disable</code>, and <code>gcloud beta services mcp list</code> as MCP enablement is no longer required and they have been functioning as no-ops.</li>
+</ul>]]></content>
+    <summary>The `gcloud beta services mcp enable`, `gcloud beta services mcp disable`, and `gcloud beta services mcp list` commands have been removed. MCP enablement is no longer necessary for these operations, and the commands have been functioning as no-ops.</summary>
+    <title>Breaking Changes: MCP enablement commands removed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:ai platform:1</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta ai semantic-governance-policy-engine deprovision</code>
+  command to tear down a semantic governance policy engine, including its
+  tenant project, GKE cluster, and PSC service attachments.</li>
+<li>Promoted <code>gcloud ai semantic-governance-policies</code> (<code>create</code>, <code>describe</code>,
+  <code>update</code>, <code>delete</code>, <code>list</code>) and <code>gcloud ai
+  semantic-governance-policy-engine</code> (<code>describe</code>, <code>update</code>, <code>deprovision</code>)
+  commands from beta to GA.</li>
+</ul>]]></content>
+    <summary>Key commands for managing AI semantic governance policies and policy engines have been promoted to General Availability. This includes commands for creating, describing, updating, deleting, and listing policies, as well as describing, updating, and deprovisioning policy engines. A new command, `gcloud beta ai semantic-governance-policy-engine deprovision`, is also available to facilitate the teardown of policy engine resources.</summary>
+    <title>AI Platform: AI Governance Policy Engine Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:bigquery:2</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added fields <code>precedence</code> and <code>condition</code> to the commands <code>bq ls
+  --reservation_assignment</code> and <code>bq show --reservation_assignment</code> output.</li>
+<li>Added the new <code>AUTOMATIC_MATERIALIZED_VIEW_REFRESH</code> job type for users to create reservation assignments with.</li>
+</ul>]]></content>
+    <summary>We've enhanced reservation assignments in BigQuery by adding `precedence` and `condition` fields to `bq ls` and `bq show` commands. Additionally, a new `AUTOMATIC_MATERIALIZED_VIEW_REFRESH` job type is now available for creating reservation assignments.</summary>
+    <title>BigQuery: Reservation assignment updates in BigQuery</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:cloud auth:3</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Enabled Enterprise Certificate Proxy (ECP) HTTP Proxy by default for context-aware mTLS requests.</li>
+</ul>]]></content>
+    <summary>Enterprise Certificate Proxy (ECP) HTTP Proxy is now enabled by default for context-aware mTLS requests. This update improves the security and efficiency of mutual TLS authentication processes.</summary>
+    <title>Cloud Auth: Enhanced Certificate Proxy for Secure Access</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:cloud bigtable:4</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Rebuilt cbt cli with newer version of bigtable client for CVE-2026-39883.</li>
+</ul>]]></content>
+    <summary>The Cloud Bigtable CLI has been rebuilt with an updated client library to address CVE-2026-39883. This update ensures enhanced security for your Bigtable interactions. We recommend updating to the latest version.</summary>
+    <title>Cloud Bigtable: Bigtable CLI Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:cloud iam:5</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud iam workforce-pools create-cred-config</code> and <code>gcloud iam workforce-pools create-login-config</code> to accept short-format provider audiences (<code>&lt;pool&gt;/&lt;provider&gt;</code>).</li>
+<li>Added <code>gcloud beta iam workforce-pools providers create-saml</code> and <code>gcloud beta iam workforce-pools providers update-saml</code> commands.</li>
+</ul>]]></content>
+    <summary>New commands are available for creating and updating SAML providers within workforce pools. Additionally, commands for creating credential and login configurations now support short-format provider audiences for easier management.</summary>
+    <title>Cloud IAM: Workforce Pool IAM Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:cloud services:6</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>API Keys</strong>: Added <code>--append</code> flag to <code>gcloud services api-keys update</code>
+  command to merge new application and API target restrictions with existing
+  key restrictions instead of replacing them.</li>
+</ul>]]></content>
+    <summary>The gcloud services api-keys update command now supports an --append flag. This allows you to merge new restrictions with existing ones instead of overwriting them entirely.</summary>
+    <title>Cloud Services: Update API key restrictions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:cluster director:7</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed <code>gcloud cluster-director clusters create</code> to not create default compute resources when they are overridden by the user.</li>
+<li>Updated <code>gcloud cluster-director clusters create</code> to default to <code>hyperdisk-balanced</code> boot disks and restrict persistent disks (PD) for non-N2 and non-CT5P machine types.</li>
+<li>Fixed a validation error during cluster updates that concurrently modified storage resources and Slurm node sets.</li>
+</ul>]]></content>
+    <summary>This update addresses issues with cluster creation and updates, including fixes for default resource creation and storage validation. It also refines boot disk defaults for improved performance and compatibility.</summary>
+    <title>Cluster Director: Cluster Director Improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:compute engine:8</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud compute target-ssl-proxies test-iam-permissions</code> command to test IAM permissions on a Compute Engine target SSL proxy in <code>beta</code>, <code>preview</code>, and <code>GA</code>.</li>
+<li>Added <code>--max-stream-duration</code> flag to <code>gcloud compute backend-services create</code> and <code>update</code> commands in beta, preview, and GA.</li>
+<li>Added <code>gcloud compute packet-mirrorings test-iam-permissions</code> command for beta, preview and GA tracks.</li>
+</ul>]]></content>
+    <summary>Compute Engine now supports testing IAM permissions for target SSL proxies and packet mirrorings. Additionally, a new flag for managing stream duration in backend services has been introduced.</summary>
+    <title>Compute Engine: New Compute Engine Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:container:9</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed issue where <code>gcloud</code> CLI would crash on corrupted <code>~/.kube/config</code>.
+  Now you will now get a more detailed explanation about which section and line
+  is wrong, to make troubleshooting easier. Corrupted kubeconfig will be backed
+  up for further troubleshooting.</li>
+</ul>]]></content>
+    <summary>The gcloud CLI no longer crashes when encountering a corrupted kubeconfig file. The corrupted file will be backed up, and more detailed error information will be provided to aid in troubleshooting.</summary>
+    <title>Container: CLI crash fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:database migration:10</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--reserved-public-ip</code> and <code>--reserved-public-ip-nat-ips-count</code> flags to <code>gcloud database-migration private-connections create</code>.</li>
+<li>Added <code>--fetch-reserved-public-ips</code> flag to <code>gcloud database-migration connection-profiles fetch-static-ips</code>.</li>
+</ul>]]></content>
+    <summary>Enhance your private connectivity configurations with new flags for creating private connections and fetching reserved public IP addresses. These additions offer greater control over your network setup during database migrations.</summary>
+    <title>Database Migration: New options for private connectivity</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:kubernetes engine:11</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Add <code>--enable-slice-controller</code> flag in <code>gcloud container clusters create</code> and <code>gcloud container clusters update</code>.</li>
+</ul>]]></content>
+    <summary>Kubernetes Engine now supports the slice controller. Enable it during cluster creation or update using the `--enable-slice-controller` flag in gcloud commands.</summary>
+    <title>Kubernetes Engine: Slice Controller Enabled for Clusters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:581-0-0--2026-08-18-:2026-08-18:oracle database:12</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--total-vm-storage-size-gb</code> flag to
+  <code>gcloud oracle-database cloud-exadata-infrastructures configure-exascale</code>
+  and <code>--properties-vm-backup-storage-type</code>,
+  <code>--properties-vm-file-system-storage-type</code> flags to
+  <code>gcloud oracle-database cloud-vm-clusters create</code> to support Exascale VM
+  storage options.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>New flags have been added to gcloud oracle-database commands to support Exascale VM storage options. These updates include `--total-vm-storage-size-gb` for infrastructure configuration and `--properties-vm-backup-storage-type` and `--properties-vm-file-system-storage-type` for VM cluster creation. This enhances the flexibility for managing storage in Exascale environments.</summary>
+    <title>Oracle Database: Oracle Database Exascale Storage Options</title>
+  </entry>
+</feed>

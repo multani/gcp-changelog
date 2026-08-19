@@ -1,5 +1,14 @@
 # NetApp Volumes
 
+## 2026-08-18
+
+### Announcement
+
+Google Cloud NetApp Volumes is now Canada Controlled Goods (CCG) compliant for
+the Standard, Premium, and Extreme service levels. For more information, see
+[Compliance](https://docs.cloud.google.com/netapp/volumes/docs/compliance).
+
+---
 ## 2026-08-06
 
 ### Feature

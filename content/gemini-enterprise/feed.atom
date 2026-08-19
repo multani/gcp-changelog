@@ -2,9 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-08-17T00:00:00+00:00</updated>
+  <updated>2026-08-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-08-18:feature:0</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Gemini 3.6 Flash available in US and EU multi-regions</strong></p>
+<p>Gemini 3.6 Flash is generally available in the <code>us</code> and <code>eu</code> multi-regions, and
+an allowlist is no longer required to use Gemini 3.6 Flash in the <code>us</code>
+multi-region.
+To make Gemini 3.6 Flash available to users in the Gemini Enterprise app,
+administrators must turn on the <strong>Gemini 3.6 Flash</strong> feature toggle in the
+Google Cloud console.</p>
+<p>If an administrator previously turned on the <strong>Gemini 3.6 Flash</strong> toggle for
+an app in the <code>us</code> or <code>eu</code> multi-region and accepted the out-of-region routing
+warning, traffic for that app automatically routes to the app's location
+(<code>us</code> or <code>eu</code>). No action is required.</p>
+<p>In regions where the model is not supported, administrators can still enable
+the model by acknowledging a warning that traffic routes to the <code>global</code>
+endpoint, which does not support regional data residency.</p>
+<p>For more information, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features">Manage features on the web
+  app</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/locations">Data residency for Gemini Enterprise Standard and Plus Editions and Gemini
+  Notebook Enterprise</a></li>
+</ul>]]></content>
+    <summary>Gemini 3.6 Flash is now generally available in US and EU multi-regions, with no allowlist needed for US users. Administrators can enable this feature in the Google Cloud console. This update provides faster access to Gemini 3.6 Flash for enterprise users.</summary>
+    <title>Feature: Gemini 3.6 Flash Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-08-18:feature:1</id>
+    <published>2026-08-18T00:00:00+00:00</published>
+    <updated>2026-08-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Access and configure AI developer tools</strong></p>
+<p>AI developer tools is generally available (GA) for Gemini Enterprise Standard,
+Plus, and Pay-as-you-go editions with an invoiced Cloud Billing account.
+This launch includes access to Antigravity 2.0, Antigravity CLI, and
+Android Studio.</p>
+<p>Key capabilities of AI developer tools include the following:</p>
+<ul>
+<li><strong>Administrative controls</strong>: Turn on or turn off AI developer tools, configure
+  security policies (such as file access and terminal command execution), and
+  manage model availability in the Google Cloud console.</li>
+<li><strong>Usage metrics dashboard</strong>: Monitor developer adoption, active users, token
+  consumption, and API call volumes with integrated Cloud Monitoring and
+  logging.</li>
+</ul>
+<p>You can manage access to AI developer tools using a custom
+IAM role.</p>
+<p>For more information, see the following:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview">AI developer tools overview</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-settings">Configure AI developer tools settings</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-creating-custom-roles">Create custom roles for AI developer tools</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-metrics">View AI developer tools metrics</a></li>
+</ul>]]></content>
+    <summary>AI developer tools for Gemini Enterprise are now generally available for Standard, Plus, and Pay-as-you-go editions. This release includes Antigravity 2.0, Antigravity CLI, and Android Studio, offering administrative controls and a usage metrics dashboard for enhanced management and monitoring. Access can be managed through custom IAM roles.</summary>
+    <title>Feature: AI Developer Tools Now Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -509,6 +573,26 @@ response time.</p>
       <name>Google Cloud</name>
     </author>
     <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-07-24:feature:0</id>
+    <published>2026-07-24T00:00:00+00:00</published>
+    <updated>2026-07-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Gemini 3.6 Flash in US multi-region</strong></p>
+<p>If your project is on the allowlist, you can use Gemini 3.6 Flash in the US
+multi-region (<code>us</code>) with data residency at-rest (DRZ) and machine learning
+processing (MLP).</p>
+<p><strong>Note:</strong> For an update to this release note, see the <a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#August_18_2026">August 18, 2026 release
+note</a>.</p>
+<p>To request access to Gemini 3.6 Flash in the US multi-region, contact
+your Google account team.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/gemini/enterprise/docs/locations">Data residency for Gemini Enterprise Standard and Plus Editions and Gemini Notebook Enterprise</a></p>]]></content>
+    <summary>Gemini 3.6 Flash is now accessible in the US multi-region for eligible projects. This update offers data residency at-rest and machine learning processing capabilities. Contact your Google account team to request access.</summary>
+    <title>Feature: Gemini 3.6 Flash now available in US multi-region</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-07-24:feature:1</id>
     <published>2026-07-24T00:00:00+00:00</published>
     <updated>2026-07-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Create and edit documents and slides in Canvas (GA)</strong></p>

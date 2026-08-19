@@ -1,5 +1,18 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-18
+
+### Feature
+
+**CodeMender updates: Model support**
+
+This release introduces updates to CodeMender:
+
+* **Gemini 3 Flash removal**: Gemini 3 Flash (`gemini-3-flash-preview`) is no longer supported as a model backend for CodeMender. CodeMender supports Gemini 3.5 Flash (default) and Gemini 3.1 Pro Preview.
+
+For more information, see [Specifying the model](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender#specifying-the-model).
+
+---
 ## 2026-08-15
 
 ### Feature

@@ -1,5 +1,24 @@
 # Google SecOps
 
+## 2026-08-18
+
+### Feature
+
+**[Spotlight Feature] Evaluate threat coverage and generate rules with the Detection Engineering Agent**
+
+This feature is in public preview. You can now evaluate and strengthen your Google SecOps security posture against emerging threats using the Detection Engineering Agent. This AI-powered assistant helps you extract threat intelligence and automatically draft YARA-L detection rules, drastically improves time-to-value for custom security automation and accelerating risk mitigation. The agent is accessible using Model Context Protocol (MCP) tools operated by compatible AI clients (such as Google Antigravity or Claude Code). For more information, see [Evaluate threat coverage with the Detection Engineering Agent](https://docs.cloud.google.com/chronicle/docs/secops/agentic-detection-engineering).
+
+### Feature
+
+**[Spotlight Feature] Event simulation for detection coverage evaluation**
+
+This feature is in public preview. You can now programmatically deliver realistic threat sequences into the live ingestion pipeline using event simulation. Event simulation provides a full-funnel detection coverage evaluation framework embedded directly within Google SecOps, enabling detection engineering and SOC teams to verify the entire detection lifecycle—from UDM normalization to multi-event correlation and alerting—while preserving production SOC workflows.
+
+As a core capability of the [Detection Engineering Agent (DEA)](https://docs.cloud.google.com/chronicle/docs/secops/agentic-detection-engineering) architecture, event simulation connects Google SecOps MCP tools with AI assistance (such as Gemini) to automate threat intel processing, synthetic telemetry generation, and YARA-L 2.0 rule coverage evaluation.
+
+For more information, see [Use event simulation for detection coverage evaluation](https://docs.cloud.google.com/chronicle/docs/secops/event-simulation).
+
+---
 ## 2026-08-14
 
 ### Feature

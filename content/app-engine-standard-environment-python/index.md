@@ -1,5 +1,16 @@
 # App Engine standard environment Python
 
+## 2026-08-19
+
+### Feature
+
+You can migrate your App Engine push queues to Cloud Tasks by updating the
+bundled services SDK. This method lets you upgrade your app without needing to
+modify your application code. For more information on how to migrate, see the
+[push queues migration guide](https://docs.cloud.google.com/appengine/migration-center/standard/python/migrating-push-queues-upgrade-sdk)
+([Preview](https://cloud.google.com/products/#product-launch-stages)).
+
+---
 ## 2026-08-18
 
 ### Feature

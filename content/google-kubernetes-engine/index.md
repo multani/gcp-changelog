@@ -1,5 +1,14 @@
 # Google Kubernetes Engine
 
+## 2026-08-18
+
+### Change
+
+For node pools running on GKE versions 1.36.3-gke.1480000 and later, the minimum
+supported boot disk size is 15 GB. For earlier versions, the minimum supported
+boot disk size is 12 GB.
+
+---
 ## 2026-08-14
 
 ### Change

@@ -4,6 +4,18 @@
 
 ### Feature
 
+**Gemini Enterprise: Show new team member announcements on the app home page**
+
+Gemini Enterprise can display new team member announcement cards on the
+app home page to welcome people who recently joined the organization. Users see
+people who recently joined their part of the organization.
+
+This feature is generally available (GA).
+For more information, see [Show new team member
+announcements](https://docs.cloud.google.com/gemini/enterprise/docs/app-home-page#new-team-member).
+
+### Feature
+
 **Gemini Enterprise: Gemini 3.6 Flash available in US and EU multi-regions**
 
 Gemini 3.6 Flash is generally available in the `us` and `eu` multi-regions, and

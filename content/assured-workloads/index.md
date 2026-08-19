@@ -1,5 +1,14 @@
 # Assured Workloads
 
+## 2026-08-17
+
+### Feature
+
+The
+[Data Boundary for Canada Controlled Goods Program (CGP)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/canada-controlled-goods-program)
+control package is now generally available.
+
+---
 ## 2026-05-15
 
 ### Feature

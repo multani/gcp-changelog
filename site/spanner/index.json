@@ -1,6 +1,16 @@
 {
   "name": "Spanner",
   "entries": {
+    "2026-08-11": [
+      {
+        "kind": "Feature",
+        "content": "For DML statements, Spanner now enforces the 80,000 mutation limit (including indexes) per statement rather than cumulatively across the transaction. This allows a transaction to execute multiple DML statements that collectively exceed the limit, as long as each individual statement remains under it. For the Mutation API, the 80,000 limit applies to all mutations in the commit. All transactions are still subject to the 100 MiB commit size limit.",
+        "summary": {
+          "title": "Spanner DML mutation limit updated",
+          "summary": "Spanner now enforces the 80,000 mutation limit per DML statement, not cumulatively per transaction. This change allows for more flexibility in executing multiple DML statements within a single transaction, provided each statement individually adheres to the limit. The 100 MiB commit size limit remains in effect."
+        }
+      }
+    ],
     "2026-08-10": [
       {
         "kind": "Feature",

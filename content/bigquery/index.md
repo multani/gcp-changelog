@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-08-18
+
+### Feature
+
+The default per-project limit of user-specific
+[reservation assignments](https://docs.cloud.google.com/bigquery/docs/reservations-assignments#assignment-logic-and-criteria)
+has been increased from 10 to 100.
+
+---
 ## 2026-08-13
 
 ### Feature

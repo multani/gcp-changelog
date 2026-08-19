@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-08-19
+
+### Feature
+
+Oracle Database@Google Cloud supports provisioning VM file system storage (VM images) and VM backups on Exascale storage for Exadata VM Clusters. This feature lets you to offload VM artifacts to Exascale, freeing up capacity and reducing dependence on local DB Server storage. For more information, see [Configure Exascale Storage Vault for Exadata Infrastructure](https://docs.cloud.google.com/oracle/database/docs/configure-exascale-storage) and [Create Exadata VM Clusters with Exascale Storage Vaults](https://docs.cloud.google.com/oracle/database/docs/create-clusters#create-cluster-using-vault).
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-30
 
 ### Feature

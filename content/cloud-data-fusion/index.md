@@ -1,5 +1,35 @@
 # Cloud Data Fusion
 
+## 2026-08-07
+
+### Change
+
+The Cloud SQL for MySQL and Cloud SQL for PostgreSQL plugins, version 1.11.14,
+are available in Cloud Data Fusion version 6.10.x. Version 1.12.5 of these
+plugins is available in Cloud Data Fusion version 6.11.x.
+
+This release includes the following feature:
+
+* You can now configure transaction isolation levels in the Cloud SQL for
+  MySQL and Cloud SQL for PostgreSQL plugins. This configuration applies to
+  both batch sources and sinks, providing more precise control over data
+  consistency and database locking
+  ([PLUGIN-1779](https://cdap.atlassian.net/browse/PLUGIN-1779)).
+
+### Change
+
+The Windows Share Copy Action plugin version 2.12.5 is available in Cloud Data
+Fusion version 6.9.1 and later. Version 2.13.2 of this plugin is available in
+Cloud Data Fusion version 6.11.0 and later.
+
+This release includes the following change:
+
+* Added support for the modern SMBv2 and SMBv3 protocols to improve connection
+  performance and reliability, while maintaining backward compatibility with
+  pipelines that use SMBv1
+  ([PLUGIN-1960](https://cdap.atlassian.net/browse/PLUGIN-1960)).
+
+---
 ## 2026-07-15
 
 ### Feature

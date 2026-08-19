@@ -1,6 +1,24 @@
 {
   "name": "Cloud Data Fusion",
   "entries": {
+    "2026-08-07": [
+      {
+        "kind": "Change",
+        "content": "The Cloud SQL for MySQL and Cloud SQL for PostgreSQL plugins, version 1.11.14,\nare available in Cloud Data Fusion version 6.10.x. Version 1.12.5 of these\nplugins is available in Cloud Data Fusion version 6.11.x.\n\nThis release includes the following feature:\n\n* You can now configure transaction isolation levels in the Cloud SQL for\n  MySQL and Cloud SQL for PostgreSQL plugins. This configuration applies to\n  both batch sources and sinks, providing more precise control over data\n  consistency and database locking\n  ([PLUGIN-1779](https://cdap.atlassian.net/browse/PLUGIN-1779)).",
+        "summary": {
+          "title": "Updated Cloud SQL plugins available",
+          "summary": "New versions of the Cloud SQL for MySQL and Cloud SQL for PostgreSQL plugins are now available for Cloud Data Fusion 6.10.x and 6.11.x. This update introduces the ability to configure transaction isolation levels for both batch sources and sinks, offering enhanced control over data consistency."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The Windows Share Copy Action plugin version 2.12.5 is available in Cloud Data\nFusion version 6.9.1 and later. Version 2.13.2 of this plugin is available in\nCloud Data Fusion version 6.11.0 and later.\n\nThis release includes the following change:\n\n* Added support for the modern SMBv2 and SMBv3 protocols to improve connection\n  performance and reliability, while maintaining backward compatibility with\n  pipelines that use SMBv1\n  ([PLUGIN-1960](https://cdap.atlassian.net/browse/PLUGIN-1960)).",
+        "summary": {
+          "title": "Windows Share Copy Action Plugin Update",
+          "summary": "The Windows Share Copy Action plugin has been updated with support for SMBv2 and SMBv3 protocols, enhancing connection performance and reliability. This update is available in Cloud Data Fusion version 6.9.1 and later, with newer versions offering additional improvements."
+        }
+      }
+    ],
     "2026-07-15": [
       {
         "kind": "Feature",

@@ -1,5 +1,34 @@
 # Batch
 
+## 2026-08-19
+
+### Deprecated
+
+The Batch Debian 11 operating system (OS) image family has
+reached end of development due to the
+[end of support (EOS) for Compute Engine Debian 11 images on August 31, 2026](https://docs.cloud.google.com/compute/docs/images/os-details#debian).
+The last Batch Debian 11
+images—any image versions with the `batch-debian-11-official` prefix—are
+only supported until August 31, 2026. Before then, migrate any job that uses a
+Batch Debian 11 image to a Batch Debian 12
+image (or other image) as follows:
+
+* For job definitions that use the `batch-debian` image prefix (which is the
+  default image for jobs with any script runnables), the image that
+  Batch automatically selects during job creation is
+  gradually migrating to Debian 12 no later than August 31, 2026.
+  For any jobs created before August 31, 2026, you can check whether the job
+  uses Debian 11 or Debian 12 by describing the job.
+* For job definitions that specify either the `batch-debian-11-official` image
+  family or an image version with that prefix, specify a different image during
+  job creation. For example, to migrate to Debian 12, specify either the
+  `batch-debian-12-official` image family or an image version with that prefix.
+
+Learn more about [OS images](https://docs.cloud.google.com/batch/docs/vm-os-environment-overview),
+[viewing OS images](https://docs.cloud.google.com/batch/docs/view-os-images), and
+[specifying OS images](https://docs.cloud.google.com/batch/docs/specify-vm-os-image).
+
+---
 ## 2026-07-20
 
 ### Breaking

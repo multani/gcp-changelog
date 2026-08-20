@@ -4,6 +4,19 @@
 
 ### Feature
 
+Support for the [Go 1.27 runtime](https://docs.cloud.google.com/appengine/docs/standard/go/runtime) is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+Starting from Go runtime version 1.26 and later, the lifecycle support dates
+align more closely with the
+[Go community release cycle](https://go.dev/wiki/Go-Release-Cycle). For more
+information, see
+[Runtime support schedule](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/support-schedule#go).
+
+### Feature
+
 You can migrate your App Engine push queues to Cloud Tasks by updating the
 bundled services SDK. This method lets you upgrade your app without needing to
 modify your application code. For more information on how to migrate, see the

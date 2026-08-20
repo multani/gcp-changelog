@@ -1,5 +1,16 @@
 # Buildpacks
 
+## 2026-08-19
+
+### Feature
+
+Starting from Go runtime version 1.26 and later, the lifecycle support dates
+align more closely with the
+[Go community release cycle](https://go.dev/wiki/Go-Release-Cycle). For more
+information, see
+[Runtime support schedule](https://docs.cloud.google.com/docs/buildpacks/runtime-support#go).
+
+---
 ## 2026-05-12
 
 ### Feature

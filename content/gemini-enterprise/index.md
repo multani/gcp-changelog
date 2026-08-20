@@ -1,5 +1,22 @@
 # Gemini Enterprise
 
+## 2026-08-19
+
+### Change
+
+**Gemini Enterprise: Subscription seat quantity limits**
+
+If you purchase or modify a seat-based subscription directly through the Google
+Cloud console, the number of seats is capped according to your Cloud Billing
+account type:
+
+* Self-serve (online) and resold accounts: Up to 25 seats per account.
+* Invoiced (offline) accounts: Up to 1,000 seats per account.
+
+For more information, see
+[Subscription seat quantity limits](https://docs.cloud.google.com/gemini/enterprise/docs/licenses#seat-limits).
+
+---
 ## 2026-08-18
 
 ### Feature

@@ -1,5 +1,16 @@
 # Virtual Private Cloud
 
+## 2026-08-19
+
+### Feature
+
+**General Availability**: You can use Private Service Connect
+[endpoints](https://docs.cloud.google.com/vpc/docs/about-accessing-regional-google-apis-endpoints) and
+[backends](https://docs.cloud.google.com/vpc/docs/private-service-connect-backends#multiregional-google-apis)
+to access multi-regional service endpoints such as
+`storage.us.rep.googleapis.com`.
+
+---
 ## 2026-08-03
 
 ### Feature

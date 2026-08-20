@@ -2760,6 +2760,32 @@
 
 
 <h1 id="batch">Batch</h1>
+<h2 id="2026-08-19">2026-08-19</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>The Batch Debian 11 operating system (OS) image family has
+reached end of development due to the
+<a href="https://docs.cloud.google.com/compute/docs/images/os-details#debian">end of support (EOS) for Compute Engine Debian 11 images on August 31, 2026</a>.
+The last Batch Debian 11
+images—any image versions with the <code>batch-debian-11-official</code> prefix—are
+only supported until August 31, 2026. Before then, migrate any job that uses a
+Batch Debian 11 image to a Batch Debian 12
+image (or other image) as follows:</p>
+<ul>
+<li>For job definitions that use the <code>batch-debian</code> image prefix (which is the
+  default image for jobs with any script runnables), the image that
+  Batch automatically selects during job creation is
+  gradually migrating to Debian 12 no later than August 31, 2026.
+  For any jobs created before August 31, 2026, you can check whether the job
+  uses Debian 11 or Debian 12 by describing the job.</li>
+<li>For job definitions that specify either the <code>batch-debian-11-official</code> image
+  family or an image version with that prefix, specify a different image during
+  job creation. For example, to migrate to Debian 12, specify either the
+  <code>batch-debian-12-official</code> image family or an image version with that prefix.</li>
+</ul>
+<p>Learn more about <a href="https://docs.cloud.google.com/batch/docs/vm-os-environment-overview">OS images</a>,
+<a href="https://docs.cloud.google.com/batch/docs/view-os-images">viewing OS images</a>, and
+<a href="https://docs.cloud.google.com/batch/docs/specify-vm-os-image">specifying OS images</a>.</p>
+<hr />
 <h2 id="2026-07-20">2026-07-20</h2>
 <h3 id="breaking">Breaking</h3>
 <p>Starting on the following dates, you can no longer create a job that locates
@@ -2837,6 +2863,9 @@ For more information, see <a href="https://docs.cloud.google.com/batch/docs/crea
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#batch">Batch</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-19" class="nav-link">2026-08-19</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-07-20" class="nav-link">2026-07-20</a>
           </li>

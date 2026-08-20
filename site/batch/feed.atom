@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Batch</title>
   <subtitle>Changelog for Google Cloud product: Batch</subtitle>
-  <updated>2026-07-20T00:00:00+00:00</updated>
+  <updated>2026-08-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:batch</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/batch/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:batch:2026-08-19:deprecated:0</id>
+    <published>2026-08-19T00:00:00+00:00</published>
+    <updated>2026-08-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Batch Debian 11 operating system (OS) image family has
+reached end of development due to the
+<a href="https://docs.cloud.google.com/compute/docs/images/os-details#debian">end of support (EOS) for Compute Engine Debian 11 images on August 31, 2026</a>.
+The last Batch Debian 11
+images—any image versions with the <code>batch-debian-11-official</code> prefix—are
+only supported until August 31, 2026. Before then, migrate any job that uses a
+Batch Debian 11 image to a Batch Debian 12
+image (or other image) as follows:</p>
+<ul>
+<li>For job definitions that use the <code>batch-debian</code> image prefix (which is the
+  default image for jobs with any script runnables), the image that
+  Batch automatically selects during job creation is
+  gradually migrating to Debian 12 no later than August 31, 2026.
+  For any jobs created before August 31, 2026, you can check whether the job
+  uses Debian 11 or Debian 12 by describing the job.</li>
+<li>For job definitions that specify either the <code>batch-debian-11-official</code> image
+  family or an image version with that prefix, specify a different image during
+  job creation. For example, to migrate to Debian 12, specify either the
+  <code>batch-debian-12-official</code> image family or an image version with that prefix.</li>
+</ul>
+<p>Learn more about <a href="https://docs.cloud.google.com/batch/docs/vm-os-environment-overview">OS images</a>,
+<a href="https://docs.cloud.google.com/batch/docs/view-os-images">viewing OS images</a>, and
+<a href="https://docs.cloud.google.com/batch/docs/specify-vm-os-image">specifying OS images</a>.</p>]]></content>
+    <summary>The Batch Debian 11 OS image is deprecated and will be unsupported after August 31, 2026. Please migrate your jobs to Batch Debian 12 images or other supported OS images before this date. For jobs using the default `batch-debian` prefix, the image will gradually migrate to Debian 12. For jobs specifying `batch-debian-11-official`, you must manually select a new image.</summary>
+    <title>Deprecated: Batch Debian 11 OS image deprecated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

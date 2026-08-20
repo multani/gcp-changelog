@@ -1,5 +1,21 @@
 # Cloud Run
 
+## 2026-08-19
+
+### Feature
+
+Support for the [Go 1.27 runtime](https://docs.cloud.google.com/run/docs/runtime-support#go) is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+### Feature
+
+Starting from Go runtime version 1.26 and later, the lifecycle support dates
+align more closely with the
+[Go community release cycle](https://go.dev/wiki/Go-Release-Cycle). For more
+information, see
+[Runtime support schedule](https://docs.cloud.google.com/run/docs/runtime-support#go).
+
+---
 ## 2026-08-11
 
 ### Feature

@@ -1,5 +1,45 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-08-19
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.34.800-gke.90 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.34.800-gke.90 runs on Kubernetes v1.34.7-gke.200.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.34.800-gke.90:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where user clusters remained stuck in a `Reconciling` state
+  after an admin cluster upgrade. The admin cluster controller skipped
+  reconciling legacy cluster lifecycle components during upgrades unless an initial
+  migration annotation was set. If legacy user clusters still existed on the
+  admin cluster, missing legacy API discovery (`cluster.k8s.io/v1alpha1`) caused
+  controller reconciliation to stall. With this fix, the controller preserves
+  legacy components as long as any legacy user clusters exist, and prunes them only
+  after all user clusters have migrated to advanced clusters.
+* Fixed an issue where `gkectl prepare` failed with a
+  permission denied error when attempting to read a private
+  registry CA certificate. The certificate file permissions
+  are now set to `644` so non-root processes can read it.
+* Fixed an issue where retrying a failed upgrade to an
+  Advanced Cluster (such as re-running with an existing
+  bootstrap cluster) could wipe or strip the encryption
+  keys in the generated-key-kms-plugin-config secret,
+  preventing the control plane from decrypting existing
+  Kubernetes secrets in etcd.
+
+---
 ## 2026-08-11
 
 ### Announcement

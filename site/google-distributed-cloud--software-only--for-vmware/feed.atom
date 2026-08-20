@@ -2,9 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-08-11T00:00:00+00:00</updated>
+  <updated>2026-08-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-08-19:announcement:0</id>
+    <published>2026-08-19T00:00:00+00:00</published>
+    <updated>2026-08-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.34.800-gke.90 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.34.800-gke.90 runs on Kubernetes v1.34.7-gke.200.</p>
+<p>If you use a third-party storage vendor, check the listing of our
+previously-qualified <a href="https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">storage partners</a>.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for VMware is now available for download. This release runs on Kubernetes v1.34.7-gke.200 and includes important updates. Please check the documentation for upgrade instructions and a list of qualified storage partners.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-08-19:fixed:1</id>
+    <published>2026-08-19T00:00:00+00:00</published>
+    <updated>2026-08-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.34.800-gke.90:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue where user clusters remained stuck in a <code>Reconciling</code> state
+  after an admin cluster upgrade. The admin cluster controller skipped
+  reconciling legacy cluster lifecycle components during upgrades unless an initial
+  migration annotation was set. If legacy user clusters still existed on the
+  admin cluster, missing legacy API discovery (<code>cluster.k8s.io/v1alpha1</code>) caused
+  controller reconciliation to stall. With this fix, the controller preserves
+  legacy components as long as any legacy user clusters exist, and prunes them only
+  after all user clusters have migrated to advanced clusters.</li>
+<li>Fixed an issue where <code>gkectl prepare</code> failed with a
+  permission denied error when attempting to read a private
+  registry CA certificate. The certificate file permissions
+  are now set to <code>644</code> so non-root processes can read it.</li>
+<li>Fixed an issue where retrying a failed upgrade to an
+  Advanced Cluster (such as re-running with an existing
+  bootstrap cluster) could wipe or strip the encryption
+  keys in the generated-key-kms-plugin-config secret,
+  preventing the control plane from decrypting existing
+  Kubernetes secrets in etcd.</li>
+</ul>]]></content>
+    <summary>Version 1.34.800-gke.90 addresses critical security vulnerabilities and resolves several issues, including user clusters getting stuck during upgrades and permission errors with private registry certificates. It also ensures proper handling of encryption keys during upgrade retries.</summary>
+    <title>Fixed: Fixed security vulnerabilities and cluster upgrade issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

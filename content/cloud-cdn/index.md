@@ -1,5 +1,20 @@
 # Cloud CDN
 
+## 2026-08-19
+
+### Feature
+
+[Global Front End](https://docs.cloud.google.com/docs/networking/cross-cloud-network/global-front-end/gfee-overview)
+is a unified offering that simplifies billing by consolidating pricing across
+networking products, including Cloud CDN,
+global external Application Load Balancer, Google Cloud Armor, and Service Extensions,
+into one solution to help deliver, scale, and secure your internet-facing
+applications. Cloud CDN is included in the
+Global Front End Enterprise billing tier. This feature is available in **Preview**.
+
+For more information, see [Global Front End](https://docs.cloud.google.com/cdn/docs/overview#cdn_with_globalfrontend).
+
+---
 ## 2026-08-17
 
 ### Feature

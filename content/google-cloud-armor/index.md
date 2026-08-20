@@ -1,5 +1,20 @@
 # Google Cloud Armor
 
+## 2026-08-19
+
+### Feature
+
+[Global Front
+End](https://docs.cloud.google.com/docs/networking/cross-cloud-network/global-front-end/gfee-overview) is a
+unified offering that simplifies billing by consolidating pricing across
+networking products. Cloud Armor is included in the Global Front End Enterprise
+billing tier. Enabling Global Front End Enterprise in a project enables specific
+Cloud Armor Enterprise features for your global external Application Load
+Balancers. For more information, see [Global Front
+End](https://docs.cloud.google.com/armor/docs/armor-enterprise-overview#global-front-end).This feature is
+available in Preview.
+
+---
 ## 2026-07-08
 
 ### Feature

@@ -1,5 +1,19 @@
 # Cloud Load Balancing
 
+## 2026-08-19
+
+### Feature
+
+Global Front End combines global external Application Load Balancers, Google Cloud Armor,
+Cloud CDN, and Service Extensions into one solution
+to help deliver, scale, and secure your
+internet-facing applications.
+
+For more information, see [Global Front End](https://docs.cloud.google.com/load-balancing/docs/https#global-front-end).
+
+This feature is available in **Preview**.
+
+---
 ## 2026-08-04
 
 ### Feature

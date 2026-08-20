@@ -1,5 +1,250 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-08-19
+
+### Announcement
+
+**Google Cloud CCaaS 6.3**
+
+We've released version 6.3 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Agent desktop supports parameters in custom panel URLs**
+
+In the agent desktop, you can now configure fixed and dynamic parameters to
+include in the URLs of custom panels. This lets you pass relevant session,
+agent, and customer context into custom panels.
+
+For more information, see
+[Parameters](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-configure-widgets#parameters).
+
+### Feature
+
+**Callback offer restrictions**
+
+You now have greater control over when callbacks are offered. You can configure
+the following:
+
+* Prevent callback offers from being made outside of callback hours.
+* Prevent callback offers that will likely occur outside of callback hours. If
+  conditions improve (that is, EWT decreases), the system adjusts and can
+  offer callbacks.
+
+Administrators: We've added the following checkboxes to the CCAI Platform portal:
+
+* **Restrict callback offer outside of callback window**
+* **Restrict callback offer that will exceed hours of operation. If queue
+  condition improve offer callbacks**
+
+These checkboxes are available in the following locations:
+
+* The **Settings > Call > Callback Settings** pane (to
+  configure globally).
+* The **Settings > Queue > IVR (Interactive Voice
+  Response) > Edit / View >
+  `QUEUE_NAME` > Callback Settings
+  > Configure > Callback Management** pane (to configure
+  a queue).
+
+For more information, see [Manage
+callbacks](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#callback-fulfillment-hours).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where chat transcripts incorrectly displayed **undefined
+  joined** instead of the agent's name during a chat transfer when real-time
+  redaction was enabled.
+* Fixed an issue where agents were incorrectly placed into **Unresponsive**
+  status after answering a call if the customer declined the system's callback
+  attempt.
+* Fixed an issue where overcapacity deflection didn't trigger when
+  agent-initiated outbound or direct-inbound calls were transferred to a
+  queue, causing users to wait indefinitely.
+* Fixed an issue where the **Answer** button didn't appear for incoming calls
+  in the agent desktop, preventing agents from accepting calls.
+* Fixed an issue where live translation didn't activate (or translated in the
+  wrong direction) after a chat was transferred between queues.
+* Fixed an issue where predictive campaign calls became stuck in a queued
+  state, causing agents to appear available despite being unable to receive
+  new calls.
+* Fixed an issue where web chats became stuck in a queued state and were never
+  assigned to an agent.
+* Fixed an issue where previously closed chat sessions briefly reappeared and
+  gained focus when launching agent desktop.
+* Fixed an issue where agents couldn't submit disposition codes and notes
+  during wrap-up.
+* Fixed an issue where agents couldn't change their status after a call ended
+  abnormally, causing them to remain stuck in the wrap-up state.
+* Fixed an issue where the **Call History** list incorrectly displayed the
+  same customer phone number for all Acqueon campaign calls.
+* Fixed an issue where an agent's status incorrectly remained **Available**
+  during outbound calls and wrap-up periods, allowing the routing engine to
+  offer new inbound calls to occupied agents.
+* Fixed an issue where agents were forced to re-authenticate when opening the
+  chat adapter or email adapter despite having an active session.
+* Fixed an issue where the text screen in the email adapter suddenly
+  re-rendered while typing, causing characters to disappear or be displaced.
+* Fixed an issue where the headings in Generative AI session summaries in chat
+  wrap-up notes lost their bold formatting when saved.
+* Fixed an issue where the global after-hours deflection message played
+  despite a queue-level custom redirect to a phone number being configured.
+* Fixed an issue where calls abandoned by a customer while waiting in a
+  transfer queue were incorrectly reported as queue failures.
+* Fixed an issue where transient CRM errors caused significant delays in
+  retrieving ticket IDs during active calls.
+* Fixed an issue where the CCAI Platform portal incorrectly displayed a chat
+  status as **Unknown** (instead of **Check In Timeout**) when a consumer
+  didn't check in.
+* Fixed an issue where the call adapter incorrectly displayed **Portuguese
+  BR** instead of **Portuguese (Portugal)** during call handoffs.
+* Fixed an issue where agents making outbound calls remained in an
+  **Available** status, which incorrectly allowed new inbound calls to be
+  routed to them while they were already engaged.
+* Fixed an issue where Agent Assist live transcription and generative
+  summary stopped working mid-call following a transfer or a hold-and-resume
+  cycle.
+* Fixed an issue where the transfer menu delayed loading queues.
+* Fixed an issue where the agent adapter incorrectly displayed an agent's
+  status as **Unavailable** when a custom status, such as **Break** or
+  **Special Task**, was selected.
+* Fixed an issue where chats escalated from a virtual agent to a human agent
+  queue bypassed menu-level after-hours and over-capacity deflection messages.
+* Fixed an issue where the call adapter defaulted to English in the **Outbound
+  call** screen regardless of the agent's system language.
+* Fixed an issue where **Call** and **Chat** each appeared twice in the
+  **Dashboard** menu when using high browser zoom levels or small window
+  resolutions.
+* Fixed an issue where legacy dashboards were restricted to English-only
+  labels.
+* Fixed an issue where users in SAML-only or SSO-enabled environments received
+  invitation emails directing them to a non-existent **Forgot Password** flow.
+* Fixed an issue where the user activity logs incorrectly recorded an end-user
+  ID instead of the agent's ID when a chat disconnected.
+* Fixed an issue where customer calls were abandoned during payment
+  transactions when DTMF inputs were provided.
+* Fixed an issue where agents could see and select outbound caller IDs that
+  weren't assigned to their teams or queues.
+* Fixed an issue where post-session virtual agent transfers stalled if a
+  customer left the chat while still in a queue for a human agent.
+* Fixed an issue where agents and end-users could hear each other's voices
+  despite the agent putting the call on hold.
+* Fixed an issue where the agent adapter incorrectly reverted to displaying
+  English when initiating an outbound call in a non-default language.
+* Fixed an issue where the **Hide Agent Assist** button wasn't appearing in
+  the user interface during the call disposition phase.
+* Fixed an issue where cascade agent availability conditions weren't enforced,
+  causing regional agents to be incorrectly routed into international queues
+  and leaving local queues understaffed.
+* Fixed an issue where agents appeared available but weren't receiving calls.
+* Fixed an issue where administrators received multiple email notifications
+  instead of a single notification after deactivating a call channel.
+* Fixed an issue where Telnyx error handling was incorrectly configured,
+  causing system alerts to fail during call disconnect or hold actions.
+* Fixed an issue where inbound IVR calls were stuck in a queued state if a
+  caller disconnected during initial call processing.
+* Fixed an issue where callbacks became permanently stuck in a queued state
+  if an agent missed a projected call.
+* Fixed an issue where calls using Telnyx or Nexmo numbers received an "An
+  Application error has occurred" message during overcapacity deflection or
+  automatic redirection.
+* Fixed an issue where call recordings weren't delivered or processed
+  correctly.
+* Fixed an issue under **Settings > Operation Management
+  > Localization > Manage Location Setting** where
+  configured locations with **Portuguese (Portugal)** or **Spanish (Spain)**
+  selected incorrectly displayed as **Unknown** in the **Language** column,
+  and locations with **Spanish (Mexico)** selected incorrectly displayed as
+  **Spanish (Spain)**.
+* Fixed an issue in iOS and Android SDKs where the end user's initial
+  message and custom data weren't correctly passed to the routing API during
+  the chat menu fetch.
+* Fixed an issue where inbound calls cancelled by the caller within the first
+  second incorrectly remained active in the system for several hours.
+* Fixed an issue where custom SIP headers were dropped. This occurred when a
+  directly dialed agent was over capacity, the call was redirected to the
+  agent's queue, and that queue was configured to redirect to a SIP URI.
+* Fixed an agent desktop issue where the chat screen went blank when an agent
+  accepted or dismissed a chat.
+* Fixed an issue where the **Deflections - Calls** dashboard incorrectly
+  reported the queues that calls were redirected to when using percent
+  allocation.
+* Fixed an issue where auto-answered interactions became stuck in a **Queued**
+  status despite being accepted by an agent.
+* Fixed an issue where the chat adapter in a CRM integration didn't post
+  outbound messages when using rich text formatting.
+* Fixed an issue where the `agent_activity_logs` endpoint experienced timeouts
+  and degraded performance when processing large data requests.
+* Fixed an agent desktop issue where outbound calls appeared to start
+  successfully but didn't connect to the end-user.
+* Fixed an issue where **New photo received** notifications appeared whenever
+  an agent switched between chat tabs.
+* Fixed an issue where short outbound calls incorrectly displayed a **This
+  call was abandoned by the customer** message.
+* Fixed an issue where agents experienced significant delays when switching
+  between multiple concurrent web chats.
+* Fixed an issue where attaching PDF or text files in the chat adapter failed
+  or timed out.
+* Fixed an issue where calls transferred from a virtual agent to an
+  agent extension were incorrectly deflected.
+* Fixed an issue where reordering queues in the CCAI Platform portal experienced
+  extreme latency and didn't update visually without a manual page refresh.
+* Fixed an issue where chat history for added agents became unavailable
+  after a page refresh.
+* Fixed an issue where calls to the `user_activity_logs` endpoint experienced
+  significant delays.
+* Fixed an issue where repeated voicemail re-reads caused duplicate
+  participant entries and inflated session data.
+* Fixed an issue where callback sessions remained in a **Connected** status
+  indefinitely after completion.
+* Fixed an issue where agents using IdP-initiated SAML SSO were automatically
+  routed to the default home page instead of the agent desktop.
+* Fixed an issue where DTMF options in the softphone didn't register with
+  external IVR systems during outbound calls.
+* Fixed an issue where agents were unable to receive or fetch incoming calls.
+* Fixed an issue where supervisors using Telnyx who ended a monitoring
+  session were unable to monitor subsequent calls.
+* Fixed an issue where empty chat bubbles appeared in the chat adapter when
+  an end-user used suggestion chips to respond to a virtual agent.
+* Fixed an issue where duplicated contact handle-duration events caused
+  inaccurate reporting for call and chat interactions.
+* Fixed an issue where agents didn't receive the correct error messages when
+  their microphone was disabled or inaccessible during a call.
+* Fixed an issue where incoming calls were incorrectly multicasted and didn't
+  auto-answer when an agent was already in an active chat session.
+* Fixed an issue where calls deflected to external SIP or phone destinations
+  were missing the `ends_at` timestamp in call data.
+* Fixed an issue where the chat timeout event wasn't correctly emitted to the
+  headless web SDK, causing sessions to remain active for up to 120 minutes,
+  regardless of the configured settings.
+* Fixed an issue where agents using Salesforce-Lightning or Zendesk embeds
+  couldn't maintain a stable presence connection.
+* Fixed an issue where headless web SDK client methods didn't work after a
+  mid-session authentication update.
+* Fixed an issue where agents were unexpectedly logged out of all active
+  sessions.
+* Fixed an issue where calls producing multiple recording segments resulted in
+  duplicate entries in Customer Experience Insights.
+* Fixed an issue where the `parent_id` field was missing from callback call
+  responses in the manager API.
+* Fixed an issue where virtual agent transcripts were lost during escalations
+  to live agents.
+* Fixed an issue in the agent desktop where the sentiment score appeared in
+  the **Call details** panel despite sentiment analysis being turned off in
+  the conversation profile.
+* Fixed an issue where the **Escalated To Language** column in the
+  **Escalations** table of the **Virtual Agent - Calls** dashboard incorrectly
+  displayed `Unknown` for French (Canada) calls.
+* Fixed an issue where calls didn't advance to the next cascade group after
+  the timer threshold was reached.
+
+---
 ## 2026-08-12
 
 ### Announcement

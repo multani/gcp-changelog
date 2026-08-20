@@ -1,6 +1,128 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-08-19": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to our service",
+          "summary": "We are implementing a significant update to our service. This change is designed to improve performance and introduce new features. We expect these enhancements to provide a better user experience."
+        }
+      },
+      {
+        "kind": "cos-125-19216-532-121",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/641f6bd58e060e095b56c0307945430ee63ca12c ) | v27.5.1 | v2.1.9 | [See List](https://storage.googleapis.com/cos-tools/19216.532.121/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS Update",
+          "summary": "The latest Container-Optimized OS release, 19216.532.121, includes updates to the kernel, Docker, and containerd. This version also provides access to the latest GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.7.6.",
+        "summary": {
+          "title": "cos-gpu-installer updated",
+          "summary": "The cos-gpu-installer has been updated to version 2.7.6. This update includes fixes and improvements to the GPU installation process."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68116 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. The update fixes CVE-2026-68116, enhancing system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68139 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-68139, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68171 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-68171, ensuring enhanced protection for your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68325 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-68325, enhancing the overall security posture."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68336 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-68336, has been fixed. This update addresses a critical security issue, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68343 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-68343, has been resolved. This update ensures improved protection against potential exploits. Users are encouraged to apply the patch to maintain system security."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Update",
+          "summary": "We are implementing a change to our service. This update aims to improve performance and user experience. Further details will be provided shortly."
+        }
+      },
+      {
+        "kind": "cos-129-19506-299-148",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/aff334becfdb3e9c96a3fe8628c553b0934b5b08 ) | v27.5.1 | v2.2.6 | [See List](https://storage.googleapis.com/cos-tools/19506.299.148/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19506.299.148 Update",
+          "summary": "This release includes updates to the kernel, Docker, and containerd. It also provides access to the latest GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.7.6.",
+        "summary": {
+          "title": "GPU installer updated",
+          "summary": "The cos-gpu-installer has been updated to version 2.7.6. This update addresses recent issues and improves performance."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68284 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-68284, has been addressed. This update ensures enhanced protection against potential exploits. Users are advised to apply the patch to maintain system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-68398 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-68398, enhancing the overall security of systems running the Linux kernel."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: net.ipv4.udp\\_mem: 188034 250714 376068 -> 188034 250715 376068",
+        "summary": {
+          "title": "Runtime sysctl udp_mem value changed",
+          "summary": "The runtime sysctl setting for net.ipv4.udp_mem has been updated. The values for min, pressure, and max have been adjusted slightly to improve performance. Specifically, the pressure threshold has been increased by 1."
+        }
+      }
+    ],
     "2026-08-17": [
       {
         "kind": "Change",

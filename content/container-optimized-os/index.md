@@ -1,5 +1,76 @@
 # Container Optimized OS
 
+## 2026-08-19
+
+### Change
+
+
+
+### cos-125-19216-532-121
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/641f6bd58e060e095b56c0307945430ee63ca12c ) | v27.5.1 | v2.1.9 | [See List](https://storage.googleapis.com/cos-tools/19216.532.121/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated cos-gpu-installer to v2.7.6.
+
+### Security
+
+Fixed CVE-2026-68116 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68139 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68325 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68336 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68343 in the Linux kernel.
+
+### Change
+
+
+
+### cos-129-19506-299-148
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/aff334becfdb3e9c96a3fe8628c553b0934b5b08 ) | v27.5.1 | v2.2.6 | [See List](https://storage.googleapis.com/cos-tools/19506.299.148/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Updated cos-gpu-installer to v2.7.6.
+
+### Security
+
+Fixed CVE-2026-68284 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68398 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+---
 ## 2026-08-17
 
 ### Change

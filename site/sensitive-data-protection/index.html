@@ -2760,6 +2760,15 @@
 
 
 <h1 id="sensitive-data-protection">Sensitive Data Protection</h1>
+<h2 id="2026-08-20">2026-08-20</h2>
+<h3 id="change">Change</h3>
+<p>Image scanning is available in the following regions:</p>
+<ul>
+<li><code>europe-north1</code></li>
+<li><code>us-central1</code></li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/sensitive-data-protection/docs/locations#image-limitations">Locations that support image scanning</a>.</p>
+<hr />
 <h2 id="2026-08-13">2026-08-13</h2>
 <h3 id="feature">Feature</h3>
 <p>The <code>ANTHROPIC_API_KEY</code>, <code>GEMINI_API_KEY</code>, and <code>OPENAI_API_KEY</code> infoType detectors are available in all regions. For more information about all built-in infoTypes, see the <a href="https://cloud.google.com/dlp/docs/infotypes-reference">InfoType detector reference</a>.</p>
@@ -2769,7 +2778,7 @@
 <p>The <code>CRIME_STATUS</code> infoType detector is available in all regions. For more information about all built-in infoTypes, see the <a href="https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference">InfoType detector reference</a>.</p>
 <hr />
 <h2 id="2026-07-13">2026-07-13</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>If you leave <code>InfoType.version</code> unset
 or set it to <code>stable</code> when setting the <code>MEDICAL_ID</code>
 infoType in your <code>InspectConfig</code>,
@@ -2796,7 +2805,7 @@ detector</a>.</p>
 to refine scan results</a>.</p>
 <hr />
 <h2 id="2026-06-22">2026-06-22</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Image scanning is available in the following cloud regions:</p>
 <ul>
 <li><code>asia-southeast1</code></li>
@@ -2824,7 +2833,7 @@ data profiles show the correct expiration timestamps.</p>
 <p>Added support for inspecting and de-identifying conversational content. You can now include a <code>Conversation</code> in your <code>ContentItem</code> requests.</p>
 <hr />
 <h2 id="2026-05-11">2026-05-11</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>If you set <code>InfoType.version</code> to <code>latest</code> when including the <code>MEDICAL_ID</code> infoType in your <code>InspectConfig</code>, Sensitive Data Protection will now include <code>MEDICAL_RECORD_NUMBER</code> findings as type <code>MEDICAL_ID</code> in the scan results.</p>
 <p>You can still use the old functionality by setting <code>InfoType.version</code> to <code>stable</code>. In 30 days, the new functionality will be promoted to <code>stable</code>.</p>
 <hr />
@@ -3053,6 +3062,9 @@ date, new jobs and job triggers that are created by those workflows will fail.</
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#sensitive-data-protection">Sensitive Data Protection</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-20" class="nav-link">2026-08-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-08-13" class="nav-link">2026-08-13</a>
           </li>

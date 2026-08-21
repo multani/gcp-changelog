@@ -1,5 +1,17 @@
 # Sensitive Data Protection
 
+## 2026-08-20
+
+### Change
+
+Image scanning is available in the following regions:
+
+* `europe-north1`
+* `us-central1`
+
+For more information, see [Locations that support image scanning](https://docs.cloud.google.com/sensitive-data-protection/docs/locations#image-limitations).
+
+---
 ## 2026-08-13
 
 ### Feature

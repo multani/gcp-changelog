@@ -1,5 +1,12 @@
 # App Engine flexible environment Node.js
 
+## 2026-08-20
+
+### Feature
+
+Starting from August 2026, to provide modern security patches and support for MySQL 8.4 and later, the App Engine flexible environment uses Cloud SQL Auth Proxy v2 as the built-in sidecar container for connections to Cloud SQL. To use the latest Cloud SQL Auth Proxy container immediately, restart your VMs or deploy a new version of your application.
+
+---
 ## 2026-08-14
 
 ### Feature

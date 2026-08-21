@@ -1,5 +1,14 @@
 # Application Integration
 
+## 2026-08-21
+
+### Security
+
+**Missing authorization in QueryEngineTask (CVE-2026-12710)**
+
+A missing authorization vulnerability ([CVE-2026-12710](https://nvd.nist.gov/vuln/detail/CVE-2026-12710)) in `QueryEngineTask` in [Application Integration](https://docs.cloud.google.com/application-integration/docs) was patched on April 4, 2026, and no customer action is needed.
+
+---
 ## 2026-06-25
 
 ### Security

@@ -13,6 +13,10 @@
 | Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
 | [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/1a752fac9475f0905bc7fd710d7f3d21e08f67ff ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.532.123/lakitu/gpu_driver_versions.textproto) |
 
+### Change
+
+Updated containerd to v2.2.7.
+
 ### Security
 
 Fixed CVE-2026-68329 in the Linux kernel.

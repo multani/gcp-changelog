@@ -2,6 +2,23 @@
 
 ## 2026-08-20
 
+### Feature
+
+BigQuery supports the following table-valued functions in the query editor and
+as part of
+[conversational analytics](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)
+to help you analyze your time series data:
+
+* [`ML.TREND`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-trend):
+  identify the directional trajectory of your data.
+* [`ML.SEASONALITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-seasonality):
+  identify repeating patterns in your data.
+* [`ML.DETECT_CHANGE_POINTS`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-detect-change-points):
+  identify intervals where structural shifts occur in your data.
+
+These functions are in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
 ### Deprecated
 
 Starting April 26, 2027, core graph processing for [BigQuery

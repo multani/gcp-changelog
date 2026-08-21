@@ -3,6 +3,14 @@
   "entries": {
     "2026-08-20": [
       {
+        "kind": "Feature",
+        "content": "BigQuery supports the following table-valued functions in the query editor and\nas part of\n[conversational analytics](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)\nto help you analyze your time series data:\n\n* [`ML.TREND`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-trend):\n  identify the directional trajectory of your data.\n* [`ML.SEASONALITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-seasonality):\n  identify repeating patterns in your data.\n* [`ML.DETECT_CHANGE_POINTS`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-detect-change-points):\n  identify intervals where structural shifts occur in your data.\n\nThese functions are in\n[preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "New Time Series Analysis Functions",
+          "summary": "BigQuery now supports ML.TREND, ML.SEASONALITY, and ML.DETECT_CHANGE_POINTS in the query editor and for conversational analytics. These functions help you analyze time series data by identifying trends, seasonality, and change points."
+        }
+      },
+      {
         "kind": "Deprecated",
         "content": "Starting April 26, 2027, core graph processing for [BigQuery\nGraph](https://docs.cloud.google.com/bigquery/docs/graph-overview) will be restricted to the [BigQuery\nEnterprise and Enterprise Plus editions](https://docs.cloud.google.com/bigquery/docs/editions-intro).\nConsequently, we are deprecating support for Standard edition and on-demand\nbilling for core graph processing.\n\n[Graph measures](https://docs.cloud.google.com/bigquery/docs/graph-measures) will remain available in the\nEnterprise and Enterprise Plus editions and for queries run using on-demand\npricing. Measures are not available in Standard edition.",
         "summary": {

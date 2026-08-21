@@ -1,5 +1,25 @@
 # Cloud Service Mesh
 
+## 2026-08-20
+
+### Feature
+
+The guidance for using proxy image types (`default` and `distroless`) with
+Managed Cloud Service Mesh has been updated:
+
+* **Directly onboarded clusters** using the `TRAFFIC_DIRECTOR` implementation
+  use `distroless` proxy images by default, and other image types are not
+  supported.
+* **Migrated clusters** (migrated from `ISTIOD` to `TRAFFIC_DIRECTOR`) default
+  to `default` images, but can opt in to `distroless` images via `MeshConfig` or
+  the `sidecar.istio.io/proxyImageType: distroless` Pod annotation.
+
+For more information, see
+[Distroless proxy images](https://docs.cloud.google.com/service-mesh/docs/enable-optional-features-managed#distroless_proxy_image)
+and
+[Identify the proxy image type used in the cluster](https://docs.cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-proxy#identify_proxy_image_type).
+
+---
 ## 2026-07-29
 
 ### Feature

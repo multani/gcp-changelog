@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2026-07-29T00:00:00+00:00</updated>
+  <updated>2026-08-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-08-20:feature:0</id>
+    <published>2026-08-20T00:00:00+00:00</published>
+    <updated>2026-08-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The guidance for using proxy image types (<code>default</code> and <code>distroless</code>) with
+Managed Cloud Service Mesh has been updated:</p>
+<ul>
+<li><strong>Directly onboarded clusters</strong> using the <code>TRAFFIC_DIRECTOR</code> implementation
+  use <code>distroless</code> proxy images by default, and other image types are not
+  supported.</li>
+<li><strong>Migrated clusters</strong> (migrated from <code>ISTIOD</code> to <code>TRAFFIC_DIRECTOR</code>) default
+  to <code>default</code> images, but can opt in to <code>distroless</code> images via <code>MeshConfig</code> or
+  the <code>sidecar.istio.io/proxyImageType: distroless</code> Pod annotation.</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/enable-optional-features-managed#distroless_proxy_image">Distroless proxy images</a>
+and
+<a href="https://docs.cloud.google.com/service-mesh/docs/troubleshooting/troubleshoot-proxy#identify_proxy_image_type">Identify the proxy image type used in the cluster</a>.</p>]]></content>
+    <summary>Updated guidance on using default and distroless proxy images with Managed Cloud Service Mesh. Directly onboarded clusters use distroless by default, while migrated clusters can opt in.</summary>
+    <title>Feature: Proxy Image Type Guidance Updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

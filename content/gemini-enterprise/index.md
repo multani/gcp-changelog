@@ -17,6 +17,53 @@ For more information, see the following:
 * [AI developer tools overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview#tools-for-developers)
 * [Antigravity for IDEs extensions](https://antigravity.google/docs/ide/extensions)
 
+### Feature
+
+**Gemini Enterprise and Gemini Notebook Enterprise: Autocomplete for sharing
+notebooks and agents with Okta**
+
+If you use Okta as your external identity provider (IdP) with Workforce
+Identity Federation, you can configure System for Cross-domain Identity
+Management (SCIM).
+
+Configuring SCIM enables autocomplete when sharing Gemini Notebook Enterprise
+notebooks and when sharing agents in Gemini Enterprise.
+With autocomplete, users can quickly search and select people or groups
+instead of entering full email addresses or group names.
+
+This feature is generally available (GA).
+
+For more information, see the following:
+
+* [Configure identity
+  provider](https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider)
+* [Set up Gemini Notebook
+  Enterprise](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm#before_you_begin)
+* [Autocomplete for user emails and group
+  names](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/share-notebooks#autocomplete)
+* [Share an agent](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/share-agent)
+* [Configure Workforce Identity Federation with Okta and sign in
+  users](https://docs.cloud.google.com/iam/docs/workforce-sign-in-okta)
+
+### Feature
+
+**Gemini Enterprise: Google Identity support for third-party data stores**
+
+Google Identity is supported and recommended to manage access when connecting
+third-party data sources to Gemini Enterprise.
+
+* **What's new:** Gemini Enterprise supports Google Identity when
+  connecting to third-party data sources with external identity providers
+  (such as Microsoft Entra ID or Okta) using OIDC or SAML 2.0. This includes
+  all third-party federated connectors and ingestion connectors, with the
+  exception of Microsoft 365 data ingestion.
+* **Recommendation:** Google Identity is recommended for all new setups.
+* **Existing setups:** Customers already using Workforce Identity Federation
+  can choose to remain on their existing configuration.
+
+This feature is generally available (GA). For more information, see
+[Configure identity provider](https://docs.cloud.google.com/gemini/enterprise/docs/configure-identity-provider).
+
 ---
 ## 2026-08-19
 

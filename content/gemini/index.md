@@ -1,5 +1,16 @@
 # Gemini
 
+## 2026-08-20
+
+### Announcement
+
+Credits for the first month of Gemini Code Assist usage are discontinued.
+Customers currently receiving these credits are unaffected by this change.
+[Previously](https://docs.cloud.google.com/gemini/docs/release-notes#January_30_2025), these
+credits had been available to new customers with billing accounts if they had
+never had a Gemini Code Assist subscription.
+
+---
 ## 2026-08-10
 
 ### Other

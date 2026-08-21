@@ -1,6 +1,24 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-08-20": [
+      {
+        "kind": "Deprecated",
+        "content": "Starting April 26, 2027, core graph processing for [BigQuery\nGraph](https://docs.cloud.google.com/bigquery/docs/graph-overview) will be restricted to the [BigQuery\nEnterprise and Enterprise Plus editions](https://docs.cloud.google.com/bigquery/docs/editions-intro).\nConsequently, we are deprecating support for Standard edition and on-demand\nbilling for core graph processing.\n\n[Graph measures](https://docs.cloud.google.com/bigquery/docs/graph-measures) will remain available in the\nEnterprise and Enterprise Plus editions and for queries run using on-demand\npricing. Measures are not available in Standard edition.",
+        "summary": {
+          "title": "BigQuery Graph Processing Changes",
+          "summary": "Core graph processing in BigQuery will be restricted to Enterprise and Enterprise Plus editions starting April 26, 2027. Support for Standard edition and on-demand billing for core graph processing is being deprecated. Graph measures will still be available in Enterprise and Enterprise Plus editions and for on-demand queries."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [`run_bq_command` tool](https://docs.cloud.google.com/sdk/use-gcloud-mcp#available-tools)\nexposes the `bq` command-line tool within the\nCloud CLI remote MCP server. AI agents can now execute advanced BigQuery\noperations, such as job scheduling, job management, and reservation management,\nthrough a managed MCP endpoint.\nFor more information, see\n[Use the Cloud CLI remote MCP server](https://docs.cloud.google.com/sdk/use-gcloud-mcp). This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Execute BigQuery Commands via MCP",
+          "summary": "AI agents can now run advanced BigQuery operations like job scheduling and management using the new `run_bq_command` tool through the Cloud CLI remote MCP server. This feature, currently in Preview, simplifies complex data management tasks."
+        }
+      }
+    ],
     "2026-08-18": [
       {
         "kind": "Feature",

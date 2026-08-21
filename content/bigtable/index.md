@@ -1,5 +1,15 @@
 # Bigtable
 
+## 2026-08-20
+
+### Feature
+
+You can use the `allow_incomplete_view` query hint in SQL queries to read data
+from a continuous materialized view before its initial population finishes. This
+feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Read data during initial population](https://docs.cloud.google.com/bigtable/docs/reads#read-during-initial-population).
+
+---
 ## 2026-08-12
 
 ### Feature

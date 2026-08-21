@@ -2,9 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-08-18T00:00:00+00:00</updated>
+  <updated>2026-08-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-20:deprecated:0</id>
+    <published>2026-08-20T00:00:00+00:00</published>
+    <updated>2026-08-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting April 26, 2027, core graph processing for <a href="https://docs.cloud.google.com/bigquery/docs/graph-overview">BigQuery
+Graph</a> will be restricted to the <a href="https://docs.cloud.google.com/bigquery/docs/editions-intro">BigQuery
+Enterprise and Enterprise Plus editions</a>.
+Consequently, we are deprecating support for Standard edition and on-demand
+billing for core graph processing.</p>
+<p><a href="https://docs.cloud.google.com/bigquery/docs/graph-measures">Graph measures</a> will remain available in the
+Enterprise and Enterprise Plus editions and for queries run using on-demand
+pricing. Measures are not available in Standard edition.</p>]]></content>
+    <summary>Core graph processing in BigQuery will be restricted to Enterprise and Enterprise Plus editions starting April 26, 2027. Support for Standard edition and on-demand billing for core graph processing is being deprecated. Graph measures will still be available in Enterprise and Enterprise Plus editions and for on-demand queries.</summary>
+    <title>Deprecated: BigQuery Graph Processing Changes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-20:feature:1</id>
+    <published>2026-08-20T00:00:00+00:00</published>
+    <updated>2026-08-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/sdk/use-gcloud-mcp#available-tools"><code>run_bq_command</code> tool</a>
+exposes the <code>bq</code> command-line tool within the
+Cloud CLI remote MCP server. AI agents can now execute advanced BigQuery
+operations, such as job scheduling, job management, and reservation management,
+through a managed MCP endpoint.
+For more information, see
+<a href="https://docs.cloud.google.com/sdk/use-gcloud-mcp">Use the Cloud CLI remote MCP server</a>. This feature is in
+<a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>AI agents can now run advanced BigQuery operations like job scheduling and management using the new `run_bq_command` tool through the Cloud CLI remote MCP server. This feature, currently in Preview, simplifies complex data management tasks.</summary>
+    <title>Feature: Execute BigQuery Commands via MCP</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

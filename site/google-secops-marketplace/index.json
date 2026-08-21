@@ -1,6 +1,72 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-08-19": [
+      {
+        "kind": "Feature",
+        "content": "**Wiz**: Version 9.0\n\n* Added the following new job:\n\n  + **Wiz and Google SecOps Bi-directional Sync Job**",
+        "summary": {
+          "title": "Wiz 9.0 Released",
+          "summary": "Wiz version 9.0 is now available. This update introduces a new bi-directional sync job for Wiz and Google SecOps."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Exchange**: Version 125.0\n\n* Updated the parsing logic for nested S/MIME email attachments (`.eml`) sent\n  from macOS and Windows in the following connector:\n\n  + **Exchange Mail Connector v2 with Oauth Authentication**",
+        "summary": {
+          "title": "Email attachment parsing updated",
+          "summary": "We've updated the parsing logic for nested S/MIME email attachments (.eml) sent from macOS and Windows. This change improves compatibility with the Exchange Mail Connector v2 with OAuth Authentication."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Teams**: Version 39.0\n\n* Updated error handling in the following job:\n\n  + **Refresh Token Renewal Job**",
+        "summary": {
+          "title": "Microsoft Teams update",
+          "summary": "Microsoft Teams version 39.0 has been released with improved error handling for the Refresh Token Renewal Job."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Palo Alto Cortex XDR**: Version 32.0\n\n* Fixed an issue where the job repeatedly logged errors when a case was merged\n  or deleted in Google SecOps in the following job:\n\n  + **Sync Incidents**",
+        "summary": {
+          "title": "Cortex XDR 32.0 Incident Sync Fix",
+          "summary": "Version 32.0 of Palo Alto Cortex XDR addresses a recurring error in the Sync Incidents job. This fix resolves issues that occurred when cases were merged or deleted in Google SecOps, ensuring smoother incident management."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Proofpoint Cloud Threat Response**: Version 5.0\n\n* Fixed an issue where null, missing, or unmapped priority values in API\n  payloads caused log ingestion errors in the following connector:\n\n  + **Proofpoint Cloud Threat Response - Incidents Connector**",
+        "summary": {
+          "title": "Proofpoint Cloud Threat Response Update",
+          "summary": "Version 5.0 of Proofpoint Cloud Threat Response has been released. This update resolves an issue with log ingestion errors caused by missing or unmapped priority values in the Incidents Connector. The fix ensures smoother data processing for incident logs."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Pub/Sub**: Version 4.0\n\n* Added support for `pubsub_message_id` in the **Unique ID Field** parameter in\n  the following connector:\n\n  + **Pub/Sub - Messages Connector**",
+        "summary": {
+          "title": "Pub/Sub Version 4.0 Release",
+          "summary": "Version 4.0 of the Pub/Sub connector is now available. This update introduces support for `pubsub_message_id` within the Unique ID Field parameter for the Pub/Sub - Messages Connector."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Splunk**: Version 67.0\n\n* Updated the lookback timestamp progression logic when all fetched alerts in a\n  cycle have already been processed in the following connector:\n\n  + **Splunk ES - Notable Events Connector**",
+        "summary": {
+          "title": "Splunk Connector Updated",
+          "summary": "The Splunk ES - Notable Events Connector has been updated with improved logic for processing fetched alerts. This change ensures more efficient handling of alerts by refining the lookback timestamp progression."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Zscaler**: Version 16.0\n\n* Fixed an issue where legacy API key and password authentication failed due to\n  URL path normalization issues.",
+        "summary": {
+          "title": "Zscaler v16.0 Update Released",
+          "summary": "Zscaler version 16.0 has been released. This update addresses a bug that caused authentication failures with legacy API keys and passwords due to URL path normalization. The issue has now been resolved."
+        }
+      }
+    ],
     "2026-08-12": [
       {
         "kind": "Feature",

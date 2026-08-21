@@ -1,5 +1,24 @@
 # Google SecOps
 
+## 2026-08-20
+
+### Feature
+
+**Side-by-side view on the Alerts & Detections tab in Cases**
+
+This feature is in public preview. The **Alerts & Detections** tab in the
+revamped Investigation Management experience now supports a
+**Side-by-side view** layout.
+
+You can switch between the default **List view** and the **Side-by-side view**
+to inspect an alert or detection's detailed metadata, status, priority, creation
+date, and Gemini investigation insights in an adjacent side pane without
+navigating away from the main list.
+
+For more information, see
+[Investigation and case management overview](https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/investigation-management-overview).
+
+---
 ## 2026-08-18
 
 ### Feature

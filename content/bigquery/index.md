@@ -1,5 +1,31 @@
 # BigQuery
 
+## 2026-08-20
+
+### Deprecated
+
+Starting April 26, 2027, core graph processing for [BigQuery
+Graph](https://docs.cloud.google.com/bigquery/docs/graph-overview) will be restricted to the [BigQuery
+Enterprise and Enterprise Plus editions](https://docs.cloud.google.com/bigquery/docs/editions-intro).
+Consequently, we are deprecating support for Standard edition and on-demand
+billing for core graph processing.
+
+[Graph measures](https://docs.cloud.google.com/bigquery/docs/graph-measures) will remain available in the
+Enterprise and Enterprise Plus editions and for queries run using on-demand
+pricing. Measures are not available in Standard edition.
+
+### Feature
+
+The [`run_bq_command` tool](https://docs.cloud.google.com/sdk/use-gcloud-mcp#available-tools)
+exposes the `bq` command-line tool within the
+Cloud CLI remote MCP server. AI agents can now execute advanced BigQuery
+operations, such as job scheduling, job management, and reservation management,
+through a managed MCP endpoint.
+For more information, see
+[Use the Cloud CLI remote MCP server](https://docs.cloud.google.com/sdk/use-gcloud-mcp). This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-08-18
 
 ### Feature

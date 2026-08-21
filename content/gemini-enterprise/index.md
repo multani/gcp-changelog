@@ -1,5 +1,23 @@
 # Gemini Enterprise
 
+## 2026-08-20
+
+### Feature
+
+**Gemini Enterprise: Antigravity for IDEs available in AI developer tools**
+
+Antigravity for IDEs is available as part of AI developer tools for Gemini
+Enterprise Standard, Plus, and Pay-as-you-go editions linked to an invoiced
+Cloud Billing account that receives an active monthly invoice. Antigravity
+for IDEs brings the power of Antigravity AI agents directly into your
+integrated development environment (IDE).
+
+For more information, see the following:
+
+* [AI developer tools overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview#tools-for-developers)
+* [Antigravity for IDEs extensions](https://antigravity.google/docs/ide/extensions)
+
+---
 ## 2026-08-19
 
 ### Change

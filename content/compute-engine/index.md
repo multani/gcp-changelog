@@ -1,5 +1,20 @@
 # Compute Engine
 
+## 2026-08-20
+
+### Feature
+
+**Preview**: Image Builder is available in allowlist-only Preview.
+Image Builder is a declarative operating system (OS)
+image customization tool that automates the process of building,
+customizing, and validating custom OS images within Google Cloud
+by using Cloud Build. For more information about Image Builder, see
+[About Image Builder](https://docs.cloud.google.com/compute/docs/images/image-builder/overview).
+
+To onboard your project and request access, fill out the
+[request form](https://forms.gle/4NncEhwetZDjaPx9A).
+
+---
 ## 2026-08-14
 
 ### Feature

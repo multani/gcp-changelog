@@ -1,5 +1,76 @@
 # Google SecOps Marketplace
 
+## 2026-08-19
+
+### Feature
+
+**Wiz**: Version 9.0
+
+* Added the following new job:
+
+  + **Wiz and Google SecOps Bi-directional Sync Job**
+
+### Change
+
+**Exchange**: Version 125.0
+
+* Updated the parsing logic for nested S/MIME email attachments (`.eml`) sent
+  from macOS and Windows in the following connector:
+
+  + **Exchange Mail Connector v2 with Oauth Authentication**
+
+### Change
+
+**Microsoft Teams**: Version 39.0
+
+* Updated error handling in the following job:
+
+  + **Refresh Token Renewal Job**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 32.0
+
+* Fixed an issue where the job repeatedly logged errors when a case was merged
+  or deleted in Google SecOps in the following job:
+
+  + **Sync Incidents**
+
+### Change
+
+**Proofpoint Cloud Threat Response**: Version 5.0
+
+* Fixed an issue where null, missing, or unmapped priority values in API
+  payloads caused log ingestion errors in the following connector:
+
+  + **Proofpoint Cloud Threat Response - Incidents Connector**
+
+### Change
+
+**Pub/Sub**: Version 4.0
+
+* Added support for `pubsub_message_id` in the **Unique ID Field** parameter in
+  the following connector:
+
+  + **Pub/Sub - Messages Connector**
+
+### Change
+
+**Splunk**: Version 67.0
+
+* Updated the lookback timestamp progression logic when all fetched alerts in a
+  cycle have already been processed in the following connector:
+
+  + **Splunk ES - Notable Events Connector**
+
+### Change
+
+**Zscaler**: Version 16.0
+
+* Fixed an issue where legacy API key and password authentication failed due to
+  URL path normalization issues.
+
+---
 ## 2026-08-12
 
 ### Feature

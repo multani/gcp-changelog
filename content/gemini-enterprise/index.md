@@ -1,5 +1,26 @@
 # Gemini Enterprise
 
+## 2026-08-21
+
+### Feature
+
+**Gemini Enterprise: AI developer tools on Standard Emerging Market edition**
+
+The AI developer tools feature is available on the Gemini Enterprise Standard
+Emerging Market edition. Your project must be linked to an invoiced
+Cloud Billing account that receives an active monthly invoice to access the
+feature. This edition doesn't include bundled base quota or Antigravity credits.
+
+**Note:** Gemini Enterprise Standard Emerging Market edition is available only to
+eligible customers. Contact your Google account team to assess the requirements
+and determine your eligibility.
+
+For more information, see the following:
+
+* [AI developer tools overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
+* [Quotas and overages for Emerging market editions](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#quotas-emerging-market)
+
+---
 ## 2026-08-20
 
 ### Feature

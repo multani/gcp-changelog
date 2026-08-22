@@ -1,6 +1,56 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-08-20": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.155.1 is now available.",
+        "summary": {
+          "title": "Config Connector 1.155.1 Released",
+          "summary": "Config Connector version 1.155.1 has been released. This update brings new features and improvements to the tool."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Beta Resources (Direct Reconciler):\n\n* `DiscoveryEngineLicenseConfig`\n\n  + Manage [Discovery Engine license configurations](https://cloud.google.com/generative-ai-app-builder/docs) to manage application licenses.\n* `StorageManagedFolder`\n\n  + Manage [Google Cloud Storage managed folders](https://cloud.google.com/storage/docs/managed-folders) to apply granular access control policies to subsets of storage objects.\n* `VertexAITensorboardExperiment`\n\n  + Manage [Vertex AI Tensorboard experiments](https://cloud.google.com/vertex-ai/docs/tensorboard) to organize and track runs.",
+        "summary": {
+          "title": "New Beta Resources Available",
+          "summary": "We're excited to announce the beta release of three new resources: Discovery Engine License Config for managing application licenses, Storage Managed Folder for granular access control in Cloud Storage, and Vertex AI Tensorboard Experiment for organizing ML runs. These additions aim to enhance your workflow and control within Google Cloud."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`BigtableTable`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigtable/bigtabletable)\n\n  + Added `spec.automatedBackupPolicy` field.\n* [`CertificateManagerDNSAuthorization`](https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagerdnsauthorization)\n\n  + Added `spec.type` field.\n* [`ComputeForwardingRule`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeforwardingrule)\n\n  + Added `spec.target.redisClusterServiceAttachment` field.\n* [`ComputeURLMap`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeurlmap)\n\n  + Added `spec.tests[].expectedOutputURL` field.\n  + Added `spec.tests[].expectedRedirectResponseCode` field.\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n\n  + Added `spec.nodeConfig.kubeletConfig.imageGcLowThresholdPercent` field.\n  + Added `spec.nodeConfig.kubeletConfig.imageGcHighThresholdPercent` field.\n  + Added `spec.nodeConfig.kubeletConfig.imageMinimumGcAge` field.\n  + Added `spec.nodeConfig.kubeletConfig.imageMaximumGcAge` field.\n  + Added `spec.nodeConfig.containerdConfig` field.\n  + Added `spec.inTransitEncryptionConfig` field.\n  + Added `spec.disableL4LbFirewallReconciliation` field.\n  + Added `spec.nodeConfig.resourceManagerTags` field.\n  + Added `spec.nodePoolAutoConfig.resourceManagerTags` field.\n* [`ContainerNodePool`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool)\n\n  + Added `spec.nodeConfig.kubeletConfig.imageGcLowThresholdPercent` field.\n  + Added `spec.nodeConfig.kubeletConfig.imageGcHighThresholdPercent` field.\n  + Added `spec.nodeConfig.kubeletConfig.imageMinimumGcAge` field.\n  + Added `spec.nodeConfig.kubeletConfig.imageMaximumGcAge` field.\n  + Added `spec.nodeConfig.containerdConfig` field.\n  + Added `spec.nodeConfig.resourceManagerTags` field.\n* [`StorageBucket`](https://cloud.google.com/config-connector/docs/reference/resource-docs/storage/storagebucket)\n\n  + Added `spec.autoclass.terminalStorageClass` field.\n  + Added `status.observedState.storageClass` field.",
+        "summary": {
+          "title": "New Configuration Fields Added",
+          "summary": "Several resources have been updated with new fields to enhance configuration flexibility. These include additions to Bigtable, Certificate Manager, Compute Engine, Container, and Storage resources, providing more granular control over backups, DNS authorization, load balancing, cluster settings, and storage classes."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Features:\n\n* **Configurable metrics server address**: Made the manager's built-in metrics server bind address configurable.\n* **Brownfield state comparison**: Added a generic helper function to compare desired and actual states in brownfield resources, improving reconciliation reliability.\n* **Irregular shortname pluralization**: Added support for irregular shortname pluralization of \"corpus\" to \"corpora\".",
+        "summary": {
+          "title": "Enhanced Manager Capabilities Released",
+          "summary": "This release introduces configurable metrics server addresses for improved flexibility. It also enhances reconciliation reliability with a new brownfield state comparison helper and adds support for irregular pluralization of 'corpus' to 'corpora'."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\nWe have added support for direct reconciliation to more resources, with opt-in behavior. The API is unchanged. To use the direct reconciler, add the `cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object.\n\n* [`NetworkServicesHTTPRoute`](https://cloud.google.com/config-connector/docs/reference/resource-docs/networkservices/networkserviceshttproute)\n  + Support direct reconciliation (opt-in).",
+        "summary": {
+          "title": "Direct Reconciliation Support Added",
+          "summary": "Config Connector now supports direct reconciliation for additional resources, including NetworkServicesHTTPRoute. This feature is opt-in and can be enabled by adding the `cnrm.cloud.google.com/reconciler: direct` annotation to your Config Connector objects. The API remains the same."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)\n\n  + Improved reconciliation, diffing, and update logic for `ComposerEnvironment` in the direct reconciler. ([GitHub PR #12364](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12365))\n  + Skip the update of a ComposerEnvironment when the state of the underlying Google Cloud Composer environment is not RUNNING. ([GitHub PR #12365](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12365))\n* [`ComputeReservation`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation)\n\n  + Ignore diff for `specificReservation.inUseCount` to prevent infinite/unwanted reconciliations.\n* [`RedisInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/redis/redisinstance)\n\n  + Marked `MaintenanceSchedule` field as output only to align with GCP's behavior.\n* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)\n\n  + Fixed legacy fuzzer roundtrip mismatch for `PscAutoConnectionPolicyEnabled`.\n* [`CloudFunctions2Function`](https://cloud.google.com/config-connector/docs/reference/resource-docs/cloudfunctions/cloudfunctions2function)\n\n  + Declared source fields mutable-but-unreadable to avoid spurious diffs.",
+        "summary": {
+          "title": "Bug fixes for Composer, Compute, Redis, SQL, and Cloud Functions",
+          "summary": "This release includes several bug fixes across various services. Improvements have been made to ComposerEnvironment reconciliation and update logic. ComputeReservation diffing has been refined, and RedisInstance maintenance schedules are now correctly marked as output-only. SQLInstance and CloudFunctions2Function also receive fixes for reconciliation and diffing issues."
+        }
+      }
+    ],
     "2026-07-30": [
       {
         "kind": "Announcement",

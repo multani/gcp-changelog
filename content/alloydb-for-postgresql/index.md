@@ -1,5 +1,14 @@
 # AlloyDB for PostgreSQL
 
+## 2026-08-21
+
+### Fixed
+
+AlloyDB now provides more accurate memory usage estimation, and it prevents out-of-memory (OOM) errors when you build a ScaNN [four-level tree index](https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index#create-scann-index-manual). This feature is in [Preview](https://cloud.google.com/products#product-launch-stages). This update improves the stability of index builds by enforcing memory limits and improving memory estimation under constrained conditions.
+
+For more information, see [Create a ScaNN index](https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index#create-scann-index-manual).
+
+---
 ## 2026-08-17
 
 ### Feature

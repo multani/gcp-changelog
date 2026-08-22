@@ -1,6 +1,24 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-08-21": [
+      {
+        "kind": "Change",
+        "content": "Per the [June 10, 2026 release note](#June_10_2026), the configuration option to\nnot enroll your cluster in a release channel is deprecated, and will be removed\non June 14, 2027. In alignment with this deprecation, creating new clusters not\nenrolled in a release channel is now only allowed for existing customers. New\ncustomers can use a release channel, where you can achieve the same\nfunctionality as not enrolling your cluster in a release channel. For more\ninformation, see [Clusters not enrolled in a release\nchannel](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels#no_channel).",
+        "summary": {
+          "title": "Release channel configuration deprecated",
+          "summary": "The option to not enroll your cluster in a release channel is deprecated and will be removed on June 14, 2027. New customers should use release channels for equivalent functionality. Existing customers may continue to create clusters without a release channel."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The Windows Server 2019 (LTSC) GKE node image doesn't receive updates after the\nDecember 2025 version. Windows Server 2019 (LTSC) is in the Extended Support\nperiod of the Microsoft [fixed lifecycle\npolicy](https://learn.microsoft.com/en-us/lifecycle/policies/fixed) and receives\nonly security updates. To prevent stability issues, the GKE node image for\nWindows Server 2019 (LTSC) is pinned to the December 2025 version. If you use\nthis node image, switch to Windows Server 2022 (LTSC), which is in the\nMainstream Support period and receives updates from Microsoft and GKE. For more\ninformation, see [Creating a cluster using Windows Server node\npools](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster-windows).",
+        "summary": {
+          "title": "Windows Server 2019 node image update policy",
+          "summary": "The Windows Server 2019 GKE node image will not receive updates after December 2025. To ensure continued support and stability, please migrate to the Windows Server 2022 node image. This change is due to Windows Server 2019 reaching its Extended Support phase."
+        }
+      }
+    ],
     "2026-08-20": [
       {
         "kind": "Change",

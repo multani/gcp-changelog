@@ -1,5 +1,28 @@
 # Compute Engine
 
+## 2026-08-21
+
+### Feature
+
+**Generally available**: The network- and memory-optimized
+[M4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#m4n_series) is
+generally available. Powered by 5th generation Intel Xeon Scalable processors
+(Emerald Rapids), M4N instances are purpose-built for network and block
+storage-intensive workloads such as:
+
+* High-performance vector databases
+* Retrieval-augmented generation (RAG) data layers
+* Massive in-memory context caching
+* Real-time semantic search
+
+The M4N machine series delivers the highest I/O performance available in
+Compute Engine, supporting up to 400 Gbps of network bandwidth.
+M4N also offers leading block storage performance with Hyperdisk Extreme that scales up to
+25 GiB/s of bandwidth and 1M IOPS. M4N instances are available in
+predefined machine shapes, ranging in size from 16 to 224 vCPUs and up to
+5,952 GB of DDR5 memory.
+
+---
 ## 2026-08-20
 
 ### Feature

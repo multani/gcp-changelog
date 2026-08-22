@@ -307,6 +307,12 @@ The [LookML Projects page](https://docs.cloud.google.com/looker/docs/manage-proj
 
 ### Feature
 
+The [**New Looker Explore and Merge Query Experience** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#new-looker-explore-and-merge-query-experience) is now enabled by default.
+
+**Note:** This release note was added on August 21, 2026.
+
+### Feature
+
 Now available in preview, the new [**Modern User Interface** feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#modern_user_interface) enables [modernized layouts and design](https://docs.cloud.google.com/looker/docs/modern-ui) alongside new configuration settings for visualizations and dashboards. When this preview feature is enabled, users can apply a **Modern** visualization theme that features updated typography and modern, accessible color palettes for improved data legibility. Additionally, a new **Modern** dashboard style provides a high-density, streamlined design that optimizes data viewing and aligns with Google's latest design standards.
 
 ### Feature

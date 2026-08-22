@@ -2760,8 +2760,30 @@
 
 
 <h1 id="google-kubernetes-engine">Google Kubernetes Engine</h1>
-<h2 id="2026-08-20">2026-08-20</h2>
+<h2 id="2026-08-21">2026-08-21</h2>
 <h3 id="change">Change</h3>
+<p>Per the <a href="#June_10_2026">June 10, 2026 release note</a>, the configuration option to
+not enroll your cluster in a release channel is deprecated, and will be removed
+on June 14, 2027. In alignment with this deprecation, creating new clusters not
+enrolled in a release channel is now only allowed for existing customers. New
+customers can use a release channel, where you can achieve the same
+functionality as not enrolling your cluster in a release channel. For more
+information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels#no_channel">Clusters not enrolled in a release
+channel</a>.</p>
+<h3 id="change_1">Change</h3>
+<p>The Windows Server 2019 (LTSC) GKE node image doesn't receive updates after the
+December 2025 version. Windows Server 2019 (LTSC) is in the Extended Support
+period of the Microsoft <a href="https://learn.microsoft.com/en-us/lifecycle/policies/fixed">fixed lifecycle
+policy</a> and receives
+only security updates. To prevent stability issues, the GKE node image for
+Windows Server 2019 (LTSC) is pinned to the December 2025 version. If you use
+this node image, switch to Windows Server 2022 (LTSC), which is in the
+Mainstream Support period and receives updates from Microsoft and GKE. For more
+information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster-windows">Creating a cluster using Windows Server node
+pools</a>.</p>
+<hr />
+<h2 id="2026-08-20">2026-08-20</h2>
+<h3 id="change_2">Change</h3>
 <h4 id="2026-r35-version-updates">(2026-R35) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -2974,7 +2996,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_1">Change</h3>
+<h3 id="change_3">Change</h3>
 <h4 id="2026-r35-version-updates_1">(2026-R35) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -2998,7 +3020,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_2">Change</h3>
+<h3 id="change_4">Change</h3>
 <h4 id="2026-r35-version-updates_2">(2026-R35) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3027,7 +3049,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_3">Change</h3>
+<h3 id="change_5">Change</h3>
 <h4 id="2026-r35-version-updates_3">(2026-R35) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3058,7 +3080,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_4">Change</h3>
+<h3 id="change_6">Change</h3>
 <h4 id="2026-r35-version-updates_4">(2026-R35) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3105,7 +3127,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_5">Change</h3>
+<h3 id="change_7">Change</h3>
 <h4 id="2026-r35-version-updates_5">(2026-R35) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3144,13 +3166,13 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-08-18">2026-08-18</h2>
-<h3 id="change_6">Change</h3>
+<h3 id="change_8">Change</h3>
 <p>For node pools running on GKE versions 1.36.3-gke.1480000 and later, the minimum
 supported boot disk size is 15 GB. For earlier versions, the minimum supported
 boot disk size is 12 GB.</p>
 <hr />
 <h2 id="2026-08-14">2026-08-14</h2>
-<h3 id="change_7">Change</h3>
+<h3 id="change_9">Change</h3>
 <h4 id="2026-r34-version-updates">(2026-R34) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -3370,7 +3392,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_8">Change</h3>
+<h3 id="change_10">Change</h3>
 <h4 id="2026-r34-version-updates_1">(2026-R34) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3397,7 +3419,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_9">Change</h3>
+<h3 id="change_11">Change</h3>
 <h4 id="2026-r34-version-updates_2">(2026-R34) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3428,7 +3450,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_10">Change</h3>
+<h3 id="change_12">Change</h3>
 <h4 id="2026-r34-version-updates_3">(2026-R34) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3460,7 +3482,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_11">Change</h3>
+<h3 id="change_13">Change</h3>
 <h4 id="2026-r34-version-updates_4">(2026-R34) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3501,7 +3523,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_12">Change</h3>
+<h3 id="change_14">Change</h3>
 <h4 id="2026-r34-version-updates_5">(2026-R34) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3542,7 +3564,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-08-12">2026-08-12</h2>
-<h3 id="change_13">Change</h3>
+<h3 id="change_15">Change</h3>
 <h4 id="2026-r33-version-updates">(2026-R33) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -3769,7 +3791,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_14">Change</h3>
+<h3 id="change_16">Change</h3>
 <h4 id="2026-r33-version-updates_1">(2026-R33) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3794,7 +3816,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_15">Change</h3>
+<h3 id="change_17">Change</h3>
 <h4 id="2026-r33-version-updates_2">(2026-R33) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3825,7 +3847,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_16">Change</h3>
+<h3 id="change_18">Change</h3>
 <h4 id="2026-r33-version-updates_3">(2026-R33) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3856,7 +3878,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_17">Change</h3>
+<h3 id="change_19">Change</h3>
 <h4 id="2026-r33-version-updates_4">(2026-R33) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3895,7 +3917,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_18">Change</h3>
+<h3 id="change_20">Change</h3>
 <h4 id="2026-r33-version-updates_5">(2026-R33) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -3988,7 +4010,7 @@ workloads requiring smaller topologies. Updates in this GA release include:</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/dynamic-slicing">About GKE dynamic slicing</a>.</p>
 <hr />
 <h2 id="2026-07-30">2026-07-30</h2>
-<h3 id="change_19">Change</h3>
+<h3 id="change_21">Change</h3>
 <h4 id="2026-r32-version-updates">(2026-R32) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -4158,7 +4180,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_20">Change</h3>
+<h3 id="change_22">Change</h3>
 <h4 id="2026-r32-version-updates_1">(2026-R32) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4183,7 +4205,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_21">Change</h3>
+<h3 id="change_23">Change</h3>
 <h4 id="2026-r32-version-updates_2">(2026-R32) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4216,7 +4238,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_22">Change</h3>
+<h3 id="change_24">Change</h3>
 <h4 id="2026-r32-version-updates_3">(2026-R32) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4250,7 +4272,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_23">Change</h3>
+<h3 id="change_25">Change</h3>
 <h4 id="2026-r32-version-updates_4">(2026-R32) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4291,7 +4313,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_24">Change</h3>
+<h3 id="change_26">Change</h3>
 <h4 id="2026-r32-version-updates_5">(2026-R32) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4371,7 +4393,7 @@ LoadBalancer fixes errors in traffic routing from stages prior to GA. This
 feature is in the GA stage in GKE version 1.36.2-gke.1498000 and later.</p>
 <hr />
 <h2 id="2026-07-24">2026-07-24</h2>
-<h3 id="change_25">Change</h3>
+<h3 id="change_27">Change</h3>
 <h4 id="2026-r31-version-updates">(2026-R31) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -4573,7 +4595,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_26">Change</h3>
+<h3 id="change_28">Change</h3>
 <h4 id="2026-r31-version-updates_1">(2026-R31) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4583,7 +4605,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v13312">1.33.12-gke.1270000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1349">1.34.9-gke.1065000</a></li>
 </ul>
-<h3 id="change_27">Change</h3>
+<h3 id="change_29">Change</h3>
 <h4 id="2026-r31-version-updates_2">(2026-R31) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4616,7 +4638,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_28">Change</h3>
+<h3 id="change_30">Change</h3>
 <h4 id="2026-r31-version-updates_3">(2026-R31) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4651,7 +4673,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_29">Change</h3>
+<h3 id="change_31">Change</h3>
 <h4 id="2026-r31-version-updates_4">(2026-R31) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4688,7 +4710,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_30">Change</h3>
+<h3 id="change_32">Change</h3>
 <h4 id="2026-r31-version-updates_5">(2026-R31) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -4745,7 +4767,7 @@ install the <code>vulkan-tools</code> package. This change doesn't affect contai
 GPU/Vulkan workloads.</p>
 <hr />
 <h2 id="2026-07-16">2026-07-16</h2>
-<h3 id="change_31">Change</h3>
+<h3 id="change_33">Change</h3>
 <h4 id="2026-r30-version-updates">(2026-R30) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -4950,7 +4972,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_32">Change</h3>
+<h3 id="change_34">Change</h3>
 <p>Starting on June 30, 2026, the <a href="https://docs.cloud.google.com/filestore/docs/reference/rest">Filestore API</a>
 (<code>file.googleapis.com</code>) is enabled by default when you enable the Kubernetes
 Engine API (<code>container.googleapis.com</code>) in a project. The Filestore API is
@@ -4979,7 +5001,7 @@ and Autopilot clusters in the following patch versions and later:</p>
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/verticalpodautoscaler#cpu-startup-boost">CPU startup boost</a>,
 which temporarily increases CPU requests during application startup to improve
 startup latency and cost efficiency. This feature is available in Preview.</p>
-<h3 id="change_33">Change</h3>
+<h3 id="change_35">Change</h3>
 <h4 id="2026-r30-version-updates_1">(2026-R30) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5001,7 +5023,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_34">Change</h3>
+<h3 id="change_36">Change</h3>
 <h4 id="2026-r30-version-updates_2">(2026-R30) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5034,7 +5056,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_35">Change</h3>
+<h3 id="change_37">Change</h3>
 <h4 id="2026-r30-version-updates_3">(2026-R30) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5067,7 +5089,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_36">Change</h3>
+<h3 id="change_38">Change</h3>
 <h4 id="2026-r30-version-updates_4">(2026-R30) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5107,7 +5129,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_37">Change</h3>
+<h3 id="change_39">Change</h3>
 <h4 id="2026-r30-version-updates_5">(2026-R30) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5156,7 +5178,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-07-14">2026-07-14</h2>
-<h3 id="change_38">Change</h3>
+<h3 id="change_40">Change</h3>
 <p>GKE Dataplane V2 clusters running version 1.35.1-gke.1516000 or later now use
 CNI version 1.1.0 in the CNI configuration files. This change requires
 downstream CNI plugins to be compatible with CNI version 1.1.0.</p>
@@ -5184,7 +5206,7 @@ for the first time, offers a robust set of features including the following:</p>
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/rollout-sequencing-custom-stages/about-rollout-sequencing">About rollout sequencing with custom stages</a>.</p>
 <hr />
 <h2 id="2026-07-10">2026-07-10</h2>
-<h3 id="change_39">Change</h3>
+<h3 id="change_41">Change</h3>
 <h4 id="2026-r29-version-updates">(2026-R29) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -5351,7 +5373,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_40">Change</h3>
+<h3 id="change_42">Change</h3>
 <h4 id="2026-r29-version-updates_1">(2026-R29) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5361,7 +5383,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v13312">1.33.12-gke.1165000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1348">1.34.8-gke.1278000</a></li>
 </ul>
-<h3 id="change_41">Change</h3>
+<h3 id="change_43">Change</h3>
 <h4 id="2026-r29-version-updates_2">(2026-R29) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5374,7 +5396,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#v1360">1.36.0-gke.3302004</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#v1360">1.36.0-gke.3712000</a></li>
 </ul>
-<h3 id="change_42">Change</h3>
+<h3 id="change_44">Change</h3>
 <h4 id="2026-r29-version-updates_3">(2026-R29) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5408,7 +5430,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_43">Change</h3>
+<h3 id="change_45">Change</h3>
 <h4 id="2026-r29-version-updates_4">(2026-R29) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5430,7 +5452,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#v1360">1.36.0-gke.4681000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#v1362">1.36.2-gke.1346000</a></li>
 </ul>
-<h3 id="change_44">Change</h3>
+<h3 id="change_46">Change</h3>
 <h4 id="2026-r29-version-updates_5">(2026-R29) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5470,25 +5492,25 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-07-09">2026-07-09</h2>
-<h3 id="change_45">Change</h3>
+<h3 id="change_47">Change</h3>
 <h4 id="2026-r27-version-updates">(2026-R27) Version updates</h4>
 <p>There are no version updates for 2026-R27.</p>
-<h3 id="change_46">Change</h3>
+<h3 id="change_48">Change</h3>
 <h4 id="2026-r27-version-updates_1">(2026-R27) Version updates</h4>
 <p>There are no version updates for 2026-R27.</p>
-<h3 id="change_47">Change</h3>
+<h3 id="change_49">Change</h3>
 <h4 id="2026-r27-version-updates_2">(2026-R27) Version updates</h4>
 <p>There are no version updates for 2026-R27.</p>
-<h3 id="change_48">Change</h3>
+<h3 id="change_50">Change</h3>
 <h4 id="2026-r27-version-updates_3">(2026-R27) Version updates</h4>
 <p>There are no version updates for 2026-R27.</p>
-<h3 id="change_49">Change</h3>
+<h3 id="change_51">Change</h3>
 <h4 id="2026-r27-version-updates_4">(2026-R27) Version updates</h4>
 <p>There are no version updates for 2026-R27.</p>
-<h3 id="change_50">Change</h3>
+<h3 id="change_52">Change</h3>
 <h4 id="2026-r27-version-updates_5">(2026-R27) Version updates</h4>
 <p>There are no version updates for 2026-R27.</p>
-<h3 id="change_51">Change</h3>
+<h3 id="change_53">Change</h3>
 <h4 id="2026-r28-version-updates">(2026-R28) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -5651,7 +5673,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_52">Change</h3>
+<h3 id="change_54">Change</h3>
 <h4 id="2026-r28-version-updates_1">(2026-R28) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5675,7 +5697,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_53">Change</h3>
+<h3 id="change_55">Change</h3>
 <h4 id="2026-r28-version-updates_2">(2026-R28) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5702,7 +5724,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_54">Change</h3>
+<h3 id="change_56">Change</h3>
 <h4 id="2026-r28-version-updates_3">(2026-R28) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5735,7 +5757,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_55">Change</h3>
+<h3 id="change_57">Change</h3>
 <h4 id="2026-r28-version-updates_4">(2026-R28) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5779,7 +5801,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_56">Change</h3>
+<h3 id="change_58">Change</h3>
 <h4 id="2026-r28-version-updates_5">(2026-R28) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -5845,7 +5867,7 @@ feature is available in Preview. For more information, see
 <li><code>gke-l7-rilb</code></li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/secure-gateway#configure-backend-mtls">Configure backend mutual TLS (mTLS) for a Gateway</a>.</p>
-<h3 id="change_57">Change</h3>
+<h3 id="change_59">Change</h3>
 <p>For GKE Standard clusters, the maximum number of nodes that you can upgrade
 simultaneously by using surge upgrades (<code>maxSurge</code> + <code>maxUnavailable</code>) is now
 100. Each of these settings can be set as high as 100, but their sum can be no
@@ -5853,7 +5875,7 @@ higher than 100. For more information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#surge">Surge upgrades</a>.</p>
 <hr />
 <h2 id="2026-06-29">2026-06-29</h2>
-<h3 id="change_58">Change</h3>
+<h3 id="change_60">Change</h3>
 <h4 id="2026-r26-version-updates">(2026-R26) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -6093,7 +6115,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_59">Change</h3>
+<h3 id="change_61">Change</h3>
 <h4 id="2026-r26-version-updates_1">(2026-R26) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6121,7 +6143,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_60">Change</h3>
+<h3 id="change_62">Change</h3>
 <h4 id="2026-r26-version-updates_2">(2026-R26) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6153,7 +6175,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_61">Change</h3>
+<h3 id="change_63">Change</h3>
 <h4 id="2026-r26-version-updates_3">(2026-R26) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6188,7 +6210,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_62">Change</h3>
+<h3 id="change_64">Change</h3>
 <h4 id="2026-r26-version-updates_4">(2026-R26) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6231,7 +6253,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_63">Change</h3>
+<h3 id="change_65">Change</h3>
 <h4 id="2026-r26-version-updates_5">(2026-R26) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6275,25 +6297,25 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-06-26">2026-06-26</h2>
-<h3 id="change_64">Change</h3>
+<h3 id="change_66">Change</h3>
 <h4 id="2026-r24-version-updates">(2026-R24) Version updates</h4>
 <p>There are no version updates for 2026-R24.</p>
-<h3 id="change_65">Change</h3>
+<h3 id="change_67">Change</h3>
 <h4 id="2026-r24-version-updates_1">(2026-R24) Version updates</h4>
 <p>There are no version updates for 2026-R24.</p>
-<h3 id="change_66">Change</h3>
+<h3 id="change_68">Change</h3>
 <h4 id="2026-r24-version-updates_2">(2026-R24) Version updates</h4>
 <p>There are no version updates for 2026-R24.</p>
-<h3 id="change_67">Change</h3>
+<h3 id="change_69">Change</h3>
 <h4 id="2026-r24-version-updates_3">(2026-R24) Version updates</h4>
 <p>There are no version updates for 2026-R24.</p>
-<h3 id="change_68">Change</h3>
+<h3 id="change_70">Change</h3>
 <h4 id="2026-r24-version-updates_4">(2026-R24) Version updates</h4>
 <p>There are no version updates for 2026-R24.</p>
-<h3 id="change_69">Change</h3>
+<h3 id="change_71">Change</h3>
 <h4 id="2026-r24-version-updates_5">(2026-R24) Version updates</h4>
 <p>There are no version updates for 2026-R24.</p>
-<h3 id="change_70">Change</h3>
+<h3 id="change_72">Change</h3>
 <h4 id="2026-r25-version-updates">(2026-R25) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -6584,7 +6606,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_71">Change</h3>
+<h3 id="change_73">Change</h3>
 <h4 id="2026-r25-version-updates_1">(2026-R25) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6612,7 +6634,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_72">Change</h3>
+<h3 id="change_74">Change</h3>
 <h4 id="2026-r25-version-updates_2">(2026-R25) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6644,7 +6666,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_73">Change</h3>
+<h3 id="change_75">Change</h3>
 <h4 id="2026-r25-version-updates_3">(2026-R25) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6682,7 +6704,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_74">Change</h3>
+<h3 id="change_76">Change</h3>
 <h4 id="2026-r25-version-updates_4">(2026-R25) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6734,7 +6756,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_75">Change</h3>
+<h3 id="change_77">Change</h3>
 <h4 id="2026-r25-version-updates_5">(2026-R25) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -6829,7 +6851,7 @@ which disables the faster node startup.
 Improvements are in progress and coming in a future GKE patch.</p>
 <hr />
 <h2 id="2026-06-12">2026-06-12</h2>
-<h3 id="change_76">Change</h3>
+<h3 id="change_78">Change</h3>
 <h4 id="2026-r23-version-updates">(2026-R23) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -7044,7 +7066,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_77">Change</h3>
+<h3 id="change_79">Change</h3>
 <h4 id="2026-r23-version-updates_1">(2026-R23) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7060,7 +7082,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_78">Change</h3>
+<h3 id="change_80">Change</h3>
 <h4 id="2026-r23-version-updates_2">(2026-R23) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7091,7 +7113,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_79">Change</h3>
+<h3 id="change_81">Change</h3>
 <h4 id="2026-r23-version-updates_3">(2026-R23) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7124,7 +7146,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_80">Change</h3>
+<h3 id="change_82">Change</h3>
 <h4 id="2026-r23-version-updates_4">(2026-R23) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7164,7 +7186,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_81">Change</h3>
+<h3 id="change_83">Change</h3>
 <h4 id="2026-r23-version-updates_5">(2026-R23) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7222,7 +7244,7 @@ can achieve the same functionality with release channels, see <a href="https://d
 enrolled in a release channel</a>.</p>
 <hr />
 <h2 id="2026-06-04">2026-06-04</h2>
-<h3 id="change_82">Change</h3>
+<h3 id="change_84">Change</h3>
 <h4 id="2026-r22-version-updates">(2026-R22) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -7416,7 +7438,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_83">Change</h3>
+<h3 id="change_85">Change</h3>
 <h4 id="2026-r22-version-updates_1">(2026-R22) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7437,7 +7459,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_84">Change</h3>
+<h3 id="change_86">Change</h3>
 <h4 id="2026-r22-version-updates_2">(2026-R22) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7466,7 +7488,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_85">Change</h3>
+<h3 id="change_87">Change</h3>
 <h4 id="2026-r22-version-updates_3">(2026-R22) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7498,7 +7520,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_86">Change</h3>
+<h3 id="change_88">Change</h3>
 <h4 id="2026-r22-version-updates_4">(2026-R22) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7541,7 +7563,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><code>gke-l7-rilb</code></li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/secure-gateway#configure-frontend-mtls">Configure frontend mTLS for a Gateway</a>.</p>
-<h3 id="change_87">Change</h3>
+<h3 id="change_89">Change</h3>
 <h4 id="2026-r22-version-updates_5">(2026-R22) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7643,7 +7665,7 @@ CustomResourceDefinition (CRD).</p>
 </ul>
 <hr />
 <h2 id="2026-05-27">2026-05-27</h2>
-<h3 id="change_88">Change</h3>
+<h3 id="change_90">Change</h3>
 <h4 id="2026-r21-version-updates">(2026-R21) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -7870,7 +7892,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_89">Change</h3>
+<h3 id="change_91">Change</h3>
 <h4 id="2026-r21-version-updates_1">(2026-R21) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7899,7 +7921,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_90">Change</h3>
+<h3 id="change_92">Change</h3>
 <h4 id="2026-r21-version-updates_2">(2026-R21) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7928,7 +7950,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_91">Change</h3>
+<h3 id="change_93">Change</h3>
 <h4 id="2026-r21-version-updates_3">(2026-R21) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -7964,7 +7986,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_92">Change</h3>
+<h3 id="change_94">Change</h3>
 <h4 id="2026-r21-version-updates_4">(2026-R21) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8002,7 +8024,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_93">Change</h3>
+<h3 id="change_95">Change</h3>
 <h4 id="2026-r21-version-updates_5">(2026-R21) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8078,7 +8100,7 @@ library</a>.</p>
 <p>You can also view these new GKE metrics in the <a href="https://docs.cloud.google.com/kubernetes-engine/docs/tutorials/tpu-multislice-kueue#monitor_the_workloads">JobSet monitoring dashboard</a>.</p>
 <hr />
 <h2 id="2026-05-21">2026-05-21</h2>
-<h3 id="change_94">Change</h3>
+<h3 id="change_96">Change</h3>
 <h4 id="2026-r20-version-updates">(2026-R20) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -8171,7 +8193,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_95">Change</h3>
+<h3 id="change_97">Change</h3>
 <h4 id="2026-r20-version-updates_1">(2026-R20) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8182,7 +8204,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1307000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1389002</a></li>
 </ul>
-<h3 id="change_96">Change</h3>
+<h3 id="change_98">Change</h3>
 <h4 id="2026-r20-version-updates_2">(2026-R20) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8190,7 +8212,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <ul>
 <li>Version <a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1389002</a> is now available in the Regular channel.</li>
 </ul>
-<h3 id="change_97">Change</h3>
+<h3 id="change_99">Change</h3>
 <h4 id="2026-r20-version-updates_3">(2026-R20) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8202,7 +8224,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1355">1.35.5-gke.1000000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md#v1360">1.36.0-gke.2253000</a></li>
 </ul>
-<h3 id="change_98">Change</h3>
+<h3 id="change_100">Change</h3>
 <h4 id="2026-r20-version-updates_4">(2026-R20) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8222,7 +8244,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1389002</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1355">1.35.5-gke.1000000</a></li>
 </ul>
-<h3 id="change_99">Change</h3>
+<h3 id="change_101">Change</h3>
 <h4 id="2026-r20-version-updates_5">(2026-R20) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8250,12 +8272,12 @@ and responses (Preview) for LangGraph and Agent Development Kit (ADK) agents.
 You can view and analyze the data in the Trace Explorer and BigQuery platforms.
 For more details, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/managed-otel-gke#multimodal-prompts-responses">Collect multimodal prompts and responses
 data</a>.</p>
-<h3 id="change_100">Change</h3>
+<h3 id="change_102">Change</h3>
 <p>Container-Optimized OS (COS) milestone 129 and higher no longer include the
 <code>kubectl</code> binary in the <code>/usr/bin/</code> directory.</p>
 <hr />
 <h2 id="2026-05-13">2026-05-13</h2>
-<h3 id="change_101">Change</h3>
+<h3 id="change_103">Change</h3>
 <h4 id="2026-r19-version-updates">(2026-R19) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -8468,7 +8490,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_102">Change</h3>
+<h3 id="change_104">Change</h3>
 <h4 id="2026-r19-version-updates_1">(2026-R19) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8497,7 +8519,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_103">Change</h3>
+<h3 id="change_105">Change</h3>
 <h4 id="2026-r19-version-updates_2">(2026-R19) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8521,7 +8543,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_104">Change</h3>
+<h3 id="change_106">Change</h3>
 <h4 id="2026-r19-version-updates_3">(2026-R19) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8549,7 +8571,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_105">Change</h3>
+<h3 id="change_107">Change</h3>
 <h4 id="2026-r19-version-updates_4">(2026-R19) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8586,7 +8608,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_106">Change</h3>
+<h3 id="change_108">Change</h3>
 <h4 id="2026-r19-version-updates_5">(2026-R19) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8623,7 +8645,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-05-06">2026-05-06</h2>
-<h3 id="change_107">Change</h3>
+<h3 id="change_109">Change</h3>
 <h4 id="2026-r18-version-updates">(2026-R18) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -8877,7 +8899,7 @@ series</a>
 with <a href="https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview#amd_sev">AMD
 SEV</a>
 enabled.</p>
-<h3 id="change_108">Change</h3>
+<h3 id="change_110">Change</h3>
 <h4 id="2026-r18-version-updates_1">(2026-R18) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8906,7 +8928,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_109">Change</h3>
+<h3 id="change_111">Change</h3>
 <h4 id="2026-r18-version-updates_2">(2026-R18) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8936,7 +8958,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_110">Change</h3>
+<h3 id="change_112">Change</h3>
 <h4 id="2026-r18-version-updates_3">(2026-R18) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -8968,7 +8990,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_111">Change</h3>
+<h3 id="change_113">Change</h3>
 <h4 id="2026-r18-version-updates_4">(2026-R18) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9010,7 +9032,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_112">Change</h3>
+<h3 id="change_114">Change</h3>
 <h4 id="2026-r18-version-updates_5">(2026-R18) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9079,7 +9101,7 @@ and <a href="https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/">Ku
 </ul>
 <hr />
 <h2 id="2026-04-29">2026-04-29</h2>
-<h3 id="change_113">Change</h3>
+<h3 id="change_115">Change</h3>
 <h4 id="2026-r17-version-updates">(2026-R17) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -9390,7 +9412,7 @@ or later, you can mitigate this issue by setting the
 <code>skipCSIBucketAccessCheck: "true"</code> volume attribute to bypass the check.</p>
 <p>There is no supported fix for this issue in cluster versions
 1.33.5-gke.2435000 and earlier.</p>
-<h3 id="change_114">Change</h3>
+<h3 id="change_116">Change</h3>
 <h4 id="2026-r17-version-updates_1">(2026-R17) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9425,7 +9447,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_115">Change</h3>
+<h3 id="change_117">Change</h3>
 <h4 id="2026-r17-version-updates_2">(2026-R17) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9474,7 +9496,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_116">Change</h3>
+<h3 id="change_118">Change</h3>
 <h4 id="2026-r17-version-updates_3">(2026-R17) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9525,7 +9547,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_117">Change</h3>
+<h3 id="change_119">Change</h3>
 <h4 id="2026-r17-version-updates_4">(2026-R17) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9575,7 +9597,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_118">Change</h3>
+<h3 id="change_120">Change</h3>
 <h4 id="2026-r17-version-updates_5">(2026-R17) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9642,7 +9664,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/configuration-overview#ai-zones">AI zones</a>.</p>
 <hr />
 <h2 id="2026-04-22">2026-04-22</h2>
-<h3 id="change_119">Change</h3>
+<h3 id="change_121">Change</h3>
 <h4 id="2026-r16-version-updates">(2026-R16) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -9751,13 +9773,13 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_120">Change</h3>
+<h3 id="change_122">Change</h3>
 <h4 id="2026-r16-version-updates_1">(2026-R16) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.</p>
 <p>There are no new releases in the Stable channel.</p>
-<h3 id="change_121">Change</h3>
+<h3 id="change_123">Change</h3>
 <h4 id="2026-r16-version-updates_2">(2026-R16) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9769,7 +9791,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1154000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1234000</a></li>
 </ul>
-<h3 id="change_122">Change</h3>
+<h3 id="change_124">Change</h3>
 <h4 id="2026-r16-version-updates_3">(2026-R16) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9781,7 +9803,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1307000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1522000</a></li>
 </ul>
-<h3 id="change_123">Change</h3>
+<h3 id="change_125">Change</h3>
 <h4 id="2026-r16-version-updates_4">(2026-R16) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9800,7 +9822,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1307000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1522000</a></li>
 </ul>
-<h3 id="change_124">Change</h3>
+<h3 id="change_126">Change</h3>
 <h4 id="2026-r16-version-updates_5">(2026-R16) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9843,7 +9865,7 @@ GPU and TPU workloads. For details, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/config-auto-net-for-accelerators">Configure automated networking for accelerator VMs</a>.</p>
 <hr />
 <h2 id="2026-04-15">2026-04-15</h2>
-<h3 id="change_125">Change</h3>
+<h3 id="change_127">Change</h3>
 <h4 id="2026-r15-version-updates">(2026-R15) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -9947,13 +9969,13 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_126">Change</h3>
+<h3 id="change_128">Change</h3>
 <h4 id="2026-r15-version-updates_1">(2026-R15) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.</p>
 <p>There are no new releases in the Stable channel.</p>
-<h3 id="change_127">Change</h3>
+<h3 id="change_129">Change</h3>
 <h4 id="2026-r15-version-updates_2">(2026-R15) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9965,7 +9987,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1068000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1352">1.35.2-gke.1962000</a></li>
 </ul>
-<h3 id="change_128">Change</h3>
+<h3 id="change_130">Change</h3>
 <h4 id="2026-r15-version-updates_3">(2026-R15) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9977,7 +9999,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1237000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1389000</a></li>
 </ul>
-<h3 id="change_129">Change</h3>
+<h3 id="change_131">Change</h3>
 <h4 id="2026-r15-version-updates_4">(2026-R15) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -9996,7 +10018,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1237000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1389000</a></li>
 </ul>
-<h3 id="change_130">Change</h3>
+<h3 id="change_132">Change</h3>
 <h4 id="2026-r15-version-updates_5">(2026-R15) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10008,7 +10030,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-04-13">2026-04-13</h2>
-<h3 id="change_131">Change</h3>
+<h3 id="change_133">Change</h3>
 <p>The validation of the <code>HealthCheckPolicy</code> custom resource from the
 GKE Gateway API is more rigorous in GKE
 version 1.34 and later. Existing <code>HealthCheckPolicy</code> resources that already
@@ -10028,7 +10050,7 @@ and the configuration in the health check field is ignored.</p>
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gateway-resources#configure_health_check">Configure health checks</a>.</p>
 <hr />
 <h2 id="2026-04-09">2026-04-09</h2>
-<h3 id="change_132">Change</h3>
+<h3 id="change_134">Change</h3>
 <h4 id="2026-r14-version-updates">(2026-R14) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -10157,7 +10179,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_133">Change</h3>
+<h3 id="change_135">Change</h3>
 <h4 id="2026-r14-version-updates_1">(2026-R14) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10174,7 +10196,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_134">Change</h3>
+<h3 id="change_136">Change</h3>
 <h4 id="2026-r14-version-updates_2">(2026-R14) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10186,7 +10208,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1345">1.34.5-gke.1208000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1352">1.35.2-gke.1842000</a></li>
 </ul>
-<h3 id="change_135">Change</h3>
+<h3 id="change_137">Change</h3>
 <h4 id="2026-r14-version-updates_3">(2026-R14) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10198,7 +10220,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1154000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1234000</a></li>
 </ul>
-<h3 id="change_136">Change</h3>
+<h3 id="change_138">Change</h3>
 <h4 id="2026-r14-version-updates_4">(2026-R14) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10217,7 +10239,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1154000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1353">1.35.3-gke.1234000</a></li>
 </ul>
-<h3 id="change_137">Change</h3>
+<h3 id="change_139">Change</h3>
 <h4 id="2026-r14-version-updates_5">(2026-R14) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10251,14 +10273,14 @@ include the following hardware:</p>
 </ul>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/allocate-network-resources-dra">Allocate network resources by using GKE managed DRANET</a>.</p>
-<h3 id="change_138">Change</h3>
+<h3 id="change_140">Change</h3>
 <p>The feature announced on <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#November_07_2025">November 7, 2025</a>,
 providing faster log processing, has been rolled back. The rollback is due
 to an issue in an underlying dependency. The described performance
 improvements are not currently in effect.</p>
 <hr />
 <h2 id="2026-04-02">2026-04-02</h2>
-<h3 id="change_139">Change</h3>
+<h3 id="change_141">Change</h3>
 <h4 id="2026-r13-version-updates">(2026-R13) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -10376,7 +10398,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_140">Change</h3>
+<h3 id="change_142">Change</h3>
 <h4 id="2026-r13-version-updates_1">(2026-R13) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10387,7 +10409,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1338">1.33.8-gke.1169000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1344">1.34.4-gke.1193000</a></li>
 </ul>
-<h3 id="change_141">Change</h3>
+<h3 id="change_143">Change</h3>
 <h4 id="2026-r13-version-updates_2">(2026-R13) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10399,7 +10421,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1345">1.34.5-gke.1153000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1352">1.35.2-gke.1485000</a></li>
 </ul>
-<h3 id="change_142">Change</h3>
+<h3 id="change_144">Change</h3>
 <h4 id="2026-r13-version-updates_3">(2026-R13) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10411,7 +10433,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1068000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1352">1.35.2-gke.1962000</a></li>
 </ul>
-<h3 id="change_143">Change</h3>
+<h3 id="change_145">Change</h3>
 <h4 id="2026-r13-version-updates_4">(2026-R13) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10430,7 +10452,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1346">1.34.6-gke.1068000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1352">1.35.2-gke.1962000</a></li>
 </ul>
-<h3 id="change_144">Change</h3>
+<h3 id="change_146">Change</h3>
 <h4 id="2026-r13-version-updates_5">(2026-R13) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10446,7 +10468,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-03-25">2026-03-25</h2>
-<h3 id="change_145">Change</h3>
+<h3 id="change_147">Change</h3>
 <h4 id="2026-r12-version-updates">(2026-R12) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -10657,7 +10679,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_146">Change</h3>
+<h3 id="change_148">Change</h3>
 <h4 id="2026-r12-version-updates_1">(2026-R12) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10685,7 +10707,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_147">Change</h3>
+<h3 id="change_149">Change</h3>
 <h4 id="2026-r12-version-updates_2">(2026-R12) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10715,7 +10737,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_148">Change</h3>
+<h3 id="change_150">Change</h3>
 <h4 id="2026-r12-version-updates_3">(2026-R12) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10748,7 +10770,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_149">Change</h3>
+<h3 id="change_151">Change</h3>
 <h4 id="2026-r12-version-updates_4">(2026-R12) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10797,7 +10819,7 @@ the following:</p>
   information, see
   <a href="https://docs.cloud.google.com/kubernetes-engine/versioning#patch-version-support">Patch version support</a>.</li>
 </ul>
-<h3 id="change_150">Change</h3>
+<h3 id="change_152">Change</h3>
 <h4 id="2026-r12-version-updates_5">(2026-R12) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -10837,7 +10859,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-03-18">2026-03-18</h2>
-<h3 id="change_151">Change</h3>
+<h3 id="change_153">Change</h3>
 <h4 id="2026-r11-version-updates">(2026-R11) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -11060,7 +11082,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_152">Change</h3>
+<h3 id="change_154">Change</h3>
 <h4 id="2026-r11-version-updates_1">(2026-R11) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11088,7 +11110,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_153">Change</h3>
+<h3 id="change_155">Change</h3>
 <h4 id="2026-r11-version-updates_2">(2026-R11) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11122,7 +11144,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_154">Change</h3>
+<h3 id="change_156">Change</h3>
 <h4 id="2026-r11-version-updates_3">(2026-R11) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11157,7 +11179,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_155">Change</h3>
+<h3 id="change_157">Change</h3>
 <h4 id="2026-r11-version-updates_4">(2026-R11) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11202,7 +11224,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_156">Change</h3>
+<h3 id="change_158">Change</h3>
 <h4 id="2026-r11-version-updates_5">(2026-R11) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11260,7 +11282,7 @@ Autopilot mode by using custom allowlists.</p>
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/about-autopilot-privileged-workloads">About Autopilot privileged workloads</a>.</p>
 <hr />
 <h2 id="2026-03-12">2026-03-12</h2>
-<h3 id="change_157">Change</h3>
+<h3 id="change_159">Change</h3>
 <h4 id="2026-r10-version-updates">(2026-R10) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -11459,7 +11481,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_158">Change</h3>
+<h3 id="change_160">Change</h3>
 <h4 id="2026-r10-version-updates_1">(2026-R10) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11487,7 +11509,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_159">Change</h3>
+<h3 id="change_161">Change</h3>
 <h4 id="2026-r10-version-updates_2">(2026-R10) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11517,7 +11539,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_160">Change</h3>
+<h3 id="change_162">Change</h3>
 <h4 id="2026-r10-version-updates_3">(2026-R10) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11547,7 +11569,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_161">Change</h3>
+<h3 id="change_163">Change</h3>
 <h4 id="2026-r10-version-updates_4">(2026-R10) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11584,7 +11606,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_162">Change</h3>
+<h3 id="change_164">Change</h3>
 <h4 id="2026-r10-version-updates_5">(2026-R10) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11664,7 +11686,7 @@ RDMA-enabled 200 Gbps networking.</p>
 <p>You can use H4D with GKE clusters in Standard, or with
 the Performance compute class in Autopilot. For more information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/run-hpc-workloads">Run high performance computing (HPC) workloads with H4D</a>.</p>
-<h3 id="change_163">Change</h3>
+<h3 id="change_165">Change</h3>
 <h4 id="2026-r9-version-updates">(2026-R9) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -11854,7 +11876,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_164">Change</h3>
+<h3 id="change_166">Change</h3>
 <h4 id="2026-r9-version-updates_1">(2026-R9) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11882,7 +11904,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_165">Change</h3>
+<h3 id="change_167">Change</h3>
 <h4 id="2026-r9-version-updates_2">(2026-R9) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11915,7 +11937,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_166">Change</h3>
+<h3 id="change_168">Change</h3>
 <h4 id="2026-r9-version-updates_3">(2026-R9) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11950,7 +11972,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_167">Change</h3>
+<h3 id="change_169">Change</h3>
 <h4 id="2026-r9-version-updates_4">(2026-R9) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -11997,7 +12019,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_168">Change</h3>
+<h3 id="change_170">Change</h3>
 <h4 id="2026-r9-version-updates_5">(2026-R9) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12042,7 +12064,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-02-25">2026-02-25</h2>
-<h3 id="change_169">Change</h3>
+<h3 id="change_171">Change</h3>
 <h4 id="2026-r8-version-updates">(2026-R8) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -12216,7 +12238,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_170">Change</h3>
+<h3 id="change_172">Change</h3>
 <h4 id="2026-r8-version-updates_1">(2026-R8) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12238,7 +12260,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_171">Change</h3>
+<h3 id="change_173">Change</h3>
 <h4 id="2026-r8-version-updates_2">(2026-R8) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12269,7 +12291,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_172">Change</h3>
+<h3 id="change_174">Change</h3>
 <h4 id="2026-r8-version-updates_3">(2026-R8) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12304,7 +12326,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_173">Change</h3>
+<h3 id="change_175">Change</h3>
 <h4 id="2026-r8-version-updates_4">(2026-R8) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12346,7 +12368,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_174">Change</h3>
+<h3 id="change_176">Change</h3>
 <h4 id="2026-r8-version-updates_5">(2026-R8) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12392,7 +12414,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <p>The release note for <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#November_11_2025">November 11, 2025</a> has been updated to correct the version requirements for using N4D machine types. Cluster autoscaler was incorrectly included in the list of features requiring GKE version 1.34.1-gke.2037000 or later. You can use any available GKE version to use N4D and Cluster autoscaler.</p>
 <h3 id="feature_42">Feature</h3>
 <p>You can create a bare metal instance from the <a href="https://docs.cloud.google.com/compute/docs/general-purpose-machines#c4a_series">C4A machine series</a> with the <code>c4a-highmem-96-metal</code> machine type. This machine type is available in Public Preview for Standard clusters running GKE version 1.35.0-gke.2232000 or later. You can select this machine type by using the <code>--machine-type</code> flag when creating a cluster or node pool. For more information about the requirements and limitations of this machine type, see the <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/arm-on-gke#arm-requirements-limitations">Requirements and limitations</a> section of the "Arm workloads on GKE" document.</p>
-<h3 id="change_175">Change</h3>
+<h3 id="change_177">Change</h3>
 <p>Expanded coverage for compute flexible committed use discounts (CUDs) is
 available to all Cloud Billing accounts. All Cloud Billing accounts have
 been automatically migrated to the
@@ -12404,7 +12426,7 @@ see <a href="https://cloud.google.com/skus/sku-groups/compute-flexible-cud-eligi
 the <a href="https://docs.cloud.google.com/kubernetes-engine/cud">GKE CUDs documentation</a>.</p>
 <hr />
 <h2 id="2026-02-19">2026-02-19</h2>
-<h3 id="change_176">Change</h3>
+<h3 id="change_178">Change</h3>
 <h4 id="2026-r7-version-updates">(2026-R7) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -12617,7 +12639,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_177">Change</h3>
+<h3 id="change_179">Change</h3>
 <h4 id="2026-r7-version-updates_1">(2026-R7) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12643,7 +12665,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_178">Change</h3>
+<h3 id="change_180">Change</h3>
 <h4 id="2026-r7-version-updates_2">(2026-R7) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12675,7 +12697,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_179">Change</h3>
+<h3 id="change_181">Change</h3>
 <h4 id="2026-r7-version-updates_3">(2026-R7) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12710,7 +12732,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_180">Change</h3>
+<h3 id="change_182">Change</h3>
 <h4 id="2026-r7-version-updates_4">(2026-R7) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12754,7 +12776,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_181">Change</h3>
+<h3 id="change_183">Change</h3>
 <h4 id="2026-r7-version-updates_5">(2026-R7) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -12806,7 +12828,7 @@ For more information, see the
 <a href="https://docs.cloud.google.com/kubernetes-engine/security-bulletins#gcp-2026-006-gke">GCP-2026-006 security bulletin</a>.</p>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="change_182">Change</h3>
+<h3 id="change_184">Change</h3>
 <p>After March 17, 2026, when you enable GKE, the GKE
 MCP server is automatically enabled.</p>
 <h3 id="deprecated_2">Deprecated</h3>
@@ -12867,7 +12889,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_183">Change</h3>
+<h3 id="change_185">Change</h3>
 <h4 id="2026-r6-version-updates">(2026-R6) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -13022,7 +13044,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_184">Change</h3>
+<h3 id="change_186">Change</h3>
 <h4 id="2026-r6-version-updates_1">(2026-R6) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13047,7 +13069,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_185">Change</h3>
+<h3 id="change_187">Change</h3>
 <h4 id="2026-r6-version-updates_2">(2026-R6) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13070,7 +13092,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_186">Change</h3>
+<h3 id="change_188">Change</h3>
 <h4 id="2026-r6-version-updates_3">(2026-R6) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13103,7 +13125,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_187">Change</h3>
+<h3 id="change_189">Change</h3>
 <h4 id="2026-r6-version-updates_4">(2026-R6) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13139,7 +13161,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_188">Change</h3>
+<h3 id="change_190">Change</h3>
 <h4 id="2026-r6-version-updates_5">(2026-R6) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13180,7 +13202,7 @@ multiple days to complete across all Google Cloud zones.</p>
 see the <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/image-streaming">Image streaming</a> documentation.</p>
 <hr />
 <h2 id="2026-02-04">2026-02-04</h2>
-<h3 id="change_189">Change</h3>
+<h3 id="change_191">Change</h3>
 <h4 id="2026-r5-version-updates">(2026-R5) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -13392,7 +13414,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_190">Change</h3>
+<h3 id="change_192">Change</h3>
 <h4 id="2026-r5-version-updates_1">(2026-R5) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13430,7 +13452,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_191">Change</h3>
+<h3 id="change_193">Change</h3>
 <h4 id="2026-r5-version-updates_2">(2026-R5) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13468,7 +13490,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_192">Change</h3>
+<h3 id="change_194">Change</h3>
 <h4 id="2026-r5-version-updates_3">(2026-R5) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13504,7 +13526,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_193">Change</h3>
+<h3 id="change_195">Change</h3>
 <h4 id="2026-r5-version-updates_4">(2026-R5) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13529,7 +13551,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_194">Change</h3>
+<h3 id="change_196">Change</h3>
 <h4 id="2026-r5-version-updates_5">(2026-R5) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13608,7 +13630,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_195">Change</h3>
+<h3 id="change_197">Change</h3>
 <h4 id="2026-r4-version-updates">(2026-R4) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -13811,7 +13833,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_196">Change</h3>
+<h3 id="change_198">Change</h3>
 <h4 id="2026-r4-version-updates_1">(2026-R4) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13855,7 +13877,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_197">Change</h3>
+<h3 id="change_199">Change</h3>
 <h4 id="2026-r4-version-updates_2">(2026-R4) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13915,7 +13937,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_198">Change</h3>
+<h3 id="change_200">Change</h3>
 <h4 id="2026-r4-version-updates_3">(2026-R4) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13951,7 +13973,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_199">Change</h3>
+<h3 id="change_201">Change</h3>
 <h4 id="2026-r4-version-updates_4">(2026-R4) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -13983,7 +14005,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_200">Change</h3>
+<h3 id="change_202">Change</h3>
 <h4 id="2026-r4-version-updates_5">(2026-R4) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14078,7 +14100,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_201">Change</h3>
+<h3 id="change_203">Change</h3>
 <h4 id="2026-r3-version-updates">(2026-R3) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -14263,7 +14285,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_202">Change</h3>
+<h3 id="change_204">Change</h3>
 <h4 id="2026-r3-version-updates_1">(2026-R3) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14318,7 +14340,7 @@ available system metrics:</p>
 <li><code>kubernetes.io/node/assigned_jobsets</code>: Kubernetes JobSets that have
   scheduled Pods on a GKE node.</li>
 </ul>
-<h3 id="change_203">Change</h3>
+<h3 id="change_205">Change</h3>
 <h4 id="2026-r3-version-updates_2">(2026-R3) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14365,7 +14387,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_204">Change</h3>
+<h3 id="change_206">Change</h3>
 <h4 id="2026-r3-version-updates_3">(2026-R3) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14399,7 +14421,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_205">Change</h3>
+<h3 id="change_207">Change</h3>
 <h4 id="2026-r3-version-updates_4">(2026-R3) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14431,7 +14453,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_206">Change</h3>
+<h3 id="change_208">Change</h3>
 <h4 id="2026-r3-version-updates_5">(2026-R3) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14513,7 +14535,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_207">Change</h3>
+<h3 id="change_209">Change</h3>
 <h4 id="2026-r2-version-updates">(2026-R2) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -14698,7 +14720,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_208">Change</h3>
+<h3 id="change_210">Change</h3>
 <h4 id="2026-r2-version-updates_1">(2026-R2) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14742,7 +14764,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_209">Change</h3>
+<h3 id="change_211">Change</h3>
 <h4 id="2026-r2-version-updates_2">(2026-R2) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14782,7 +14804,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_210">Change</h3>
+<h3 id="change_212">Change</h3>
 <h4 id="2026-r2-version-updates_3">(2026-R2) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14818,7 +14840,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_211">Change</h3>
+<h3 id="change_213">Change</h3>
 <h4 id="2026-r2-version-updates_4">(2026-R2) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14850,7 +14872,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_212">Change</h3>
+<h3 id="change_214">Change</h3>
 <h4 id="2026-r2-version-updates_5">(2026-R2) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -14881,7 +14903,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-01-07">2026-01-07</h2>
-<h3 id="change_213">Change</h3>
+<h3 id="change_215">Change</h3>
 <h4 id="2026-r1-version-updates">(2026-R1) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -15157,7 +15179,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_214">Change</h3>
+<h3 id="change_216">Change</h3>
 <h4 id="2026-r1-version-updates_1">(2026-R1) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15223,7 +15245,7 @@ or later. NodeLocal DNSCache is a GKE add-on that improves DNS
 performance by running a DNS cache directly on each cluster node as a DaemonSet.
 To learn more, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/nodelocal-dns-cache">Set up NodeLocal
 DNSCache</a>.</p>
-<h3 id="change_215">Change</h3>
+<h3 id="change_217">Change</h3>
 <h4 id="2026-r1-version-updates_2">(2026-R1) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15284,7 +15306,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_216">Change</h3>
+<h3 id="change_218">Change</h3>
 <h4 id="2026-r1-version-updates_3">(2026-R1) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15340,7 +15362,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_217">Change</h3>
+<h3 id="change_219">Change</h3>
 <h4 id="2026-r1-version-updates_4">(2026-R1) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15381,7 +15403,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_218">Change</h3>
+<h3 id="change_220">Change</h3>
 <h4 id="2026-r1-version-updates_5">(2026-R1) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15422,7 +15444,7 @@ run on a Node due to NRI RunPodSandbox failed</a>.</p>
 later.</p>
 <hr />
 <h2 id="2026-01-05">2026-01-05</h2>
-<h3 id="change_219">Change</h3>
+<h3 id="change_221">Change</h3>
 <h4 id="2025-r54-version-updates">(2025-R54) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -15513,7 +15535,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_220">Change</h3>
+<h3 id="change_222">Change</h3>
 <h4 id="2025-r54-version-updates_1">(2025-R54) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15524,7 +15546,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2617000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1861000</a></li>
 </ul>
-<h3 id="change_221">Change</h3>
+<h3 id="change_223">Change</h3>
 <h4 id="2025-r54-version-updates_2">(2025-R54) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15544,7 +15566,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.2100000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3947000</a></li>
 </ul>
-<h3 id="change_222">Change</h3>
+<h3 id="change_224">Change</h3>
 <h4 id="2025-r54-version-updates_3">(2025-R54) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15557,7 +15579,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3947000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.35.md#v1350">1.35.0-gke.1340000</a></li>
 </ul>
-<h3 id="change_223">Change</h3>
+<h3 id="change_225">Change</h3>
 <h4 id="2025-r54-version-updates_4">(2025-R54) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15568,7 +15590,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1675000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.2019000</a></li>
 </ul>
-<h3 id="change_224">Change</h3>
+<h3 id="change_226">Change</h3>
 <h4 id="2025-r54-version-updates_5">(2025-R54) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15589,12 +15611,12 @@ multiple days to complete across all Google Cloud zones.</p>
 <li>Kubernetes has <a href="https://kubernetes.io/blog/2025/11/26/kubernetes-v1-35-sneak-peek/#cgroup-v1-support">deprecated cgroup v1</a> support.</li>
 <li>GKE is removing cgroup v1 support in 1.35. If you have specifically configured your node pools to use cgroup v1 then upgrades will be blocked until you configure cgroup v2. To migrate to cgroup v2, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/migrate-cgroupv2#migrate">Migrate to cgroup v2</a>.</li>
 </ul>
-<h3 id="change_225">Change</h3>
+<h3 id="change_227">Change</h3>
 <h4 id="other-changes-in-135">Other changes in 1.35</h4>
 <ul>
 <li><strong>Windows containerd 2.1:</strong> GKE Windows nodes will use containerd 2.1 in 1.35, upgraded from containerd 1.7 in GKE 1.34. Clusters containing Windows nodes will have auto-upgrades to 1.35 delayed until 1.34 EOL due to possible compatibility issues introduced in containerd 2.0. Check if you're using deprecated containerd features removed in 2.0 and migrate off of them, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/deprecations/migrate-containerd-2#migrate">Migrate nodes to containerd 2</a>. After all deprecated features are removed, manually upgrade your cluster to 1.35.</li>
 </ul>
-<h3 id="change_226">Change</h3>
+<h3 id="change_228">Change</h3>
 <h4 id="2025-r53-version-updates">(2025-R53) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -15664,7 +15686,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.2072000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3899000</a></li>
 </ul>
-<h3 id="change_227">Change</h3>
+<h3 id="change_229">Change</h3>
 <h4 id="2025-r53-version-updates_1">(2025-R53) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15681,7 +15703,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><strong>In-place Pod Resize:</strong> <a href="https://kubernetes.io/docs/tasks/configure-pod-container/resize-container-resources/">In-place Pod Resize</a> is now GA. This feature allows Pod CPU and memory requests and limits to be modified in-place without Pod or container restart.</li>
 <li><strong>Writable cgroups:</strong> GKE <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/writable-cgroups">Writable cgroups</a> for containers is now GA. This feature allows workloads to manage resources for child processes using the Linux cgroups API, improving reliability for applications like <a href="https://www.ray.io/">Ray</a>.</li>
 </ul>
-<h3 id="change_228">Change</h3>
+<h3 id="change_230">Change</h3>
 <h4 id="2025-r53-version-updates_2">(2025-R53) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15701,7 +15723,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.2072000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3899000</a></li>
 </ul>
-<h3 id="change_229">Change</h3>
+<h3 id="change_231">Change</h3>
 <h4 id="2025-r53-version-updates_3">(2025-R53) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15719,7 +15741,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_230">Change</h3>
+<h3 id="change_232">Change</h3>
 <h4 id="2025-r53-version-updates_4">(2025-R53) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15730,7 +15752,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1632000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1956000</a></li>
 </ul>
-<h3 id="change_231">Change</h3>
+<h3 id="change_233">Change</h3>
 <h4 id="2025-r53-version-updates_5">(2025-R53) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15746,7 +15768,7 @@ more information see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/rollout-sequencing-custom-stages/about-rollout-sequencing">About rollout sequencing with custom stages</a>.</p>
 <hr />
 <h2 id="2025-12-18">2025-12-18</h2>
-<h3 id="change_232">Change</h3>
+<h3 id="change_234">Change</h3>
 <h4 id="2025-r52-version-updates">(2025-R52) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -15836,7 +15858,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_233">Change</h3>
+<h3 id="change_235">Change</h3>
 <p>GKE Standard clusters enrolled in the Regular channel now
 support Autopilot features. Autopilot features include the container-optimized
 compute platform and fully managed nodes, letting you use Autopilot's
@@ -15851,7 +15873,7 @@ following configurations:</p>
 </ul>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/autopilot-classes-standard-clusters">Run workloads in Autopilot mode in Standard clusters</a>.</p>
-<h3 id="change_234">Change</h3>
+<h3 id="change_236">Change</h3>
 <h4 id="2025-r52-version-updates_1">(2025-R52) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15862,7 +15884,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2585000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1820000</a></li>
 </ul>
-<h3 id="change_235">Change</h3>
+<h3 id="change_237">Change</h3>
 <h4 id="2025-r52-version-updates_2">(2025-R52) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15885,7 +15907,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1340">1.34.0-gke.2201000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3759000</a></li>
 </ul>
-<h3 id="change_236">Change</h3>
+<h3 id="change_238">Change</h3>
 <h4 id="2025-r52-version-updates_3">(2025-R52) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15899,13 +15921,13 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2541000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3759000</a></li>
 </ul>
-<h3 id="change_237">Change</h3>
+<h3 id="change_239">Change</h3>
 <h4 id="2025-r52-version-updates_4">(2025-R52) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
 multiple days to complete across all Google Cloud zones.</p>
 <p>There are no new releases in the Regular channel.</p>
-<h3 id="change_238">Change</h3>
+<h3 id="change_240">Change</h3>
 <h4 id="2025-r52-version-updates_5">(2025-R52) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -15942,7 +15964,7 @@ Public Preview, available on clusters running
 version 1.34.1-gke.3403001 or later.</p>
 <hr />
 <h2 id="2025-12-10">2025-12-10</h2>
-<h3 id="change_239">Change</h3>
+<h3 id="change_241">Change</h3>
 <h4 id="2025-r51-version-updates">(2025-R51) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -16130,7 +16152,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_240">Change</h3>
+<h3 id="change_242">Change</h3>
 <h4 id="2025-r51-version-updates_1">(2025-R51) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16179,7 +16201,7 @@ in ComputeClasses. GKE adds those secure tags to the nodes that
 GKE creates for that ComputeClass, so that you can target
 nodes by using these tags in firewall policies. For more information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/tags-firewall-policies">Selectively enforce firewall policies in GKE</a>.</p>
-<h3 id="change_241">Change</h3>
+<h3 id="change_243">Change</h3>
 <h4 id="2025-r51-version-updates_2">(2025-R51) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16213,7 +16235,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li>1.34.1-gke.2037001</li>
 <li>1.34.1-gke.3403001</li>
 </ul>
-<h3 id="change_242">Change</h3>
+<h3 id="change_244">Change</h3>
 <h4 id="2025-r51-version-updates_3">(2025-R51) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16244,7 +16266,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_243">Change</h3>
+<h3 id="change_245">Change</h3>
 <h4 id="2025-r51-version-updates_4">(2025-R51) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16260,7 +16282,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li>1.32.9-gke.1548000</li>
 <li>1.33.5-gke.1791000</li>
 </ul>
-<h3 id="change_244">Change</h3>
+<h3 id="change_246">Change</h3>
 <h4 id="2025-r51-version-updates_5">(2025-R51) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16284,7 +16306,7 @@ issue in which MountVolume calls for network file system (NFS) volumes might
 fail is fixed for GKE versions 1.34.1-gke.2877000 and later.</p>
 <hr />
 <h2 id="2025-12-05">2025-12-05</h2>
-<h3 id="change_245">Change</h3>
+<h3 id="change_247">Change</h3>
 <h4 id="2025-r50-version-updates">(2025-R50) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16338,7 +16360,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_246">Change</h3>
+<h3 id="change_248">Change</h3>
 <h4 id="2025-r50-version-updates_1">(2025-R50) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16400,7 +16422,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_247">Change</h3>
+<h3 id="change_249">Change</h3>
 <h4 id="2025-r50-version-updates_2">(2025-R50) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16440,7 +16462,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_248">Change</h3>
+<h3 id="change_250">Change</h3>
 <h4 id="2025-r50-version-updates_3">(2025-R50) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16482,7 +16504,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_249">Change</h3>
+<h3 id="change_251">Change</h3>
 <h4 id="2025-r50-version-updates_4">(2025-R50) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16511,7 +16533,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_250">Change</h3>
+<h3 id="change_252">Change</h3>
 <h4 id="2025-r50-version-updates_5">(2025-R50) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -16840,7 +16862,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_251">Change</h3>
+<h3 id="change_253">Change</h3>
 <h4 id="2025-r49-version-updates">(2025-R49) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -16932,7 +16954,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_252">Change</h3>
+<h3 id="change_254">Change</h3>
 <h4 id="2025-r49-version-updates_1">(2025-R49) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16943,7 +16965,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2505000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1746000</a></li>
 </ul>
-<h3 id="change_253">Change</h3>
+<h3 id="change_255">Change</h3>
 <h4 id="2025-r49-version-updates_2">(2025-R49) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16984,7 +17006,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_254">Change</h3>
+<h3 id="change_256">Change</h3>
 <h4 id="2025-r49-version-updates_3">(2025-R49) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -16997,7 +17019,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3225000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3355000</a></li>
 </ul>
-<h3 id="change_255">Change</h3>
+<h3 id="change_257">Change</h3>
 <h4 id="2025-r49-version-updates_4">(2025-R49) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -17014,7 +17036,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 </li>
 </ul>
-<h3 id="change_256">Change</h3>
+<h3 id="change_258">Change</h3>
 <h4 id="2025-r49-version-updates_5">(2025-R49) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -17068,7 +17090,7 @@ nodes that use an Ubuntu node image might incorrectly use an image with a
 version 1.34.1-gke.2037001 and 1.34.1-gke.2541000 for your Ubuntu Arm nodes.</p>
 <hr />
 <h2 id="2025-11-20">2025-11-20</h2>
-<h3 id="change_257">Change</h3>
+<h3 id="change_259">Change</h3>
 <h4 id="2025-r48-version-updates">(2025-R48) Version updates</h4>
 <p>GKE cluster versions have been updated.</p>
 <p><strong>New versions available for upgrades and new clusters.</strong></p>
@@ -17187,7 +17209,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="change_258">Change</h3>
+<h3 id="change_260">Change</h3>
 <h4 id="2025-r48-version-updates_1">(2025-R48) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -17198,7 +17220,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.29.md#v12915">1.29.15-gke.2467000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.30.md#v13014">1.30.14-gke.1719000</a></li>
 </ul>
-<h3 id="change_259">Change</h3>
+<h3 id="change_261">Change</h3>
 <h4 id="2025-r48-version-updates_2">(2025-R48) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -17216,7 +17238,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1548000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1791000</a></li>
 </ul>
-<h3 id="change_260">Change</h3>
+<h3 id="change_262">Change</h3>
 <h4 id="2025-r48-version-updates_3">(2025-R48) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -17229,7 +17251,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.2980000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.34.md#v1341">1.34.1-gke.3084001</a></li>
 </ul>
-<h3 id="change_261">Change</h3>
+<h3 id="change_263">Change</h3>
 <h4 id="2025-r48-version-updates_4">(2025-R48) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -17240,7 +17262,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.32.md#v1329">1.32.9-gke.1330000</a></li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.33.md#v1335">1.33.5-gke.1521000</a></li>
 </ul>
-<h3 id="change_262">Change</h3>
+<h3 id="change_264">Change</h3>
 <h4 id="2025-r48-version-updates_5">(2025-R48) Version updates</h4>
 <p><strong>Note</strong>: Your clusters might not have these versions available.
 Rollouts are already in progress when we publish the release notes, and can take
@@ -25287,6 +25309,9 @@ zones.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-kubernetes-engine">Google Kubernetes Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-21" class="nav-link">2026-08-21</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-08-20" class="nav-link">2026-08-20</a>
           </li>

@@ -1,5 +1,32 @@
 # Google Kubernetes Engine
 
+## 2026-08-21
+
+### Change
+
+Per the [June 10, 2026 release note](#June_10_2026), the configuration option to
+not enroll your cluster in a release channel is deprecated, and will be removed
+on June 14, 2027. In alignment with this deprecation, creating new clusters not
+enrolled in a release channel is now only allowed for existing customers. New
+customers can use a release channel, where you can achieve the same
+functionality as not enrolling your cluster in a release channel. For more
+information, see [Clusters not enrolled in a release
+channel](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/release-channels#no_channel).
+
+### Change
+
+The Windows Server 2019 (LTSC) GKE node image doesn't receive updates after the
+December 2025 version. Windows Server 2019 (LTSC) is in the Extended Support
+period of the Microsoft [fixed lifecycle
+policy](https://learn.microsoft.com/en-us/lifecycle/policies/fixed) and receives
+only security updates. To prevent stability issues, the GKE node image for
+Windows Server 2019 (LTSC) is pinned to the December 2025 version. If you use
+this node image, switch to Windows Server 2022 (LTSC), which is in the
+Mainstream Support period and receives updates from Microsoft and GKE. For more
+information, see [Creating a cluster using Windows Server node
+pools](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/creating-a-cluster-windows).
+
+---
 ## 2026-08-20
 
 ### Change

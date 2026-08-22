@@ -14,6 +14,19 @@
     <updated>2026-08-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>| Bug ID | Description |
 | --- | --- |
+| 543626585 | <strong>ServiceCallout policy can now be added in the Apigee UI</strong>  Adding a ServiceCallout policy in the Apigee UI no longer leaves the <strong>Create</strong> or <strong>Add</strong> button disabled.  Previously, selecting <strong>Service Callout</strong> in the <strong>Create policy</strong> or <strong>Add policy</strong> panel could display only the <strong>Name</strong> and <strong>Display name</strong> fields and omit the required HTTP target field. With the required field missing, the form never became valid, so the <strong>Create</strong> or <strong>Add</strong> button stayed disabled no matter what you entered. This affected both API proxies and shared flows.  The earlier workaround of creating a placeholder policy and replacing its XML in the code editor is no longer needed. For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/service-callout-policy">ServiceCallout policy</a> and <a href="https://docs.cloud.google.com/apigee/docs/api-platform/develop/attaching-and-configuring-policies-management-ui">Attach and configure policies in the UI</a>. |</p>]]></content>
+    <summary>The Apigee UI now correctly enables the 'Create' or 'Add' button when adding a ServiceCallout policy. Previously, a missing required field prevented policy creation through the UI, necessitating a workaround. This fix resolves the issue for both API proxies and shared flows.</summary>
+    <title>Fixed: ServiceCallout policy now available in UI</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-ui:2026-08-22:fixed:1</id>
+    <published>2026-08-22T00:00:00+00:00</published>
+    <updated>2026-08-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
 | 540008387 | <strong>Developer custom attributes now save reliably in the Apigee UI</strong>  Saving changes to a developer in the <a href="https://docs.cloud.google.com/apigee/docs/api-platform/fundamentals/ui-overview">Apigee UI in Cloud console</a> no longer intermittently fails to persist that developer's custom attributes.  Previously, the UI reported the save as successful, but the previous attribute values reappeared when the page was reloaded. Developer updates made with the Apigee API were not affected. |</p>]]></content>
     <summary>Changes to developer custom attributes in the Apigee UI are now saved reliably. Previously, updates could intermittently fail to persist, causing previous values to reappear on reload. Developer updates made via the Apigee API were unaffected.</summary>
     <title>Fixed: Developer custom attributes save reliably</title>

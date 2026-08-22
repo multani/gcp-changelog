@@ -2,9 +2,121 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-08-19T00:00:00+00:00</updated>
+  <updated>2026-08-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-21:announcement:0</id>
+    <published>2026-08-21T00:00:00+00:00</published>
+    <updated>2026-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 6.4</strong></p>
+<p>We've released version 6.4 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>Version 6.4 of Google Cloud CCaaS is now available. The update schedule for your instance depends on your chosen deployment plan. Refer to the deployment schedules documentation for more details.</summary>
+    <title>Announcement: CCaaS 6.4 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-21:feature:1</id>
+    <published>2026-08-21T00:00:00+00:00</published>
+    <updated>2026-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Automatic SIP parameter mapping in contact lists</strong></p>
+<p>Contact lists now support automatic SIP header mapping for outbound call
+destinations.</p>
+<p>Administrators: In the <strong>Add Destination</strong> dialog at **Settings &gt; Call</p>
+<blockquote>
+<p>Contact Lists &gt; Contact list management &gt;
+<code>CREATE OR EDIT CONTACT LIST</code>&gt; Add
+Destination<strong>, toggle </strong>Pass Data Parameters<strong> to the on position to see the
+new </strong>Automatically Include and Pass all Inbound SIP Headers** checkbox.</p>
+</blockquote>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/contact-list#add-sip-uri-address-destination">Add a SIP URI address destination to a contact
+list</a>.</p>]]></content>
+    <summary>Contact lists now automatically map SIP parameters for outbound call destinations. Administrators can enable this feature in the 'Add Destination' dialog to pass inbound SIP headers automatically.</summary>
+    <title>Feature: Automatic SIP Header Mapping for Calls</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-21:feature:2</id>
+    <published>2026-08-21T00:00:00+00:00</published>
+    <updated>2026-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email OAuth profiles and Microsoft 365 client credentials</strong></p>
+<p>You can now create email OAuth profiles for Microsoft 365 using the client
+credentials grant type. This lets shared mailboxes authenticate through an app
+registration instead of relying on an individual user sign-in. OAuth IMAP setup
+is more resilient for support inboxes and other application-managed mailboxes.</p>
+<p>Documentation is coming soon.</p>]]></content>
+    <summary>New email OAuth profiles for Microsoft 365 now support client credentials. This allows shared mailboxes to authenticate via app registration, improving resilience for support inboxes and other application-managed mailboxes.</summary>
+    <title>Feature: Microsoft 365 email OAuth profiles</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-21:feature:3</id>
+    <published>2026-08-21T00:00:00+00:00</published>
+    <updated>2026-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved connection times for predictive dialing</strong></p>
+<p>We reduced the connection time for predictive dialing to under two seconds to
+comply with CRTC and FTC regulations.</p>]]></content>
+    <summary>Predictive dialing connection times have been reduced to under two seconds. This improvement ensures compliance with CRTC and FTC regulations.</summary>
+    <title>Feature: Faster predictive dialing connections</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-08-21:fixed:4</id>
+    <published>2026-08-21T00:00:00+00:00</published>
+    <updated>2026-08-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where a long delay occurred when an agent clicked <strong>Chat
+  Shortcuts</strong> in the chat adapter.</li>
+<li>Fixed an agent desktop issue where the <strong>Session Data Feed</strong> pane displayed
+  data from the previous chat and the chat transcript stopped updating.</li>
+<li>Fixed an issue where conversation history loaded slowly for agents using the
+  CCaaS widget embedded in Salesforce.</li>
+<li>Fixed an issue where outbound calls with zero duration time were missing
+  from <strong>Individual Call History</strong> reports that were scoped to agents and
+  teams.</li>
+<li>Fixed an issue where customers couldn't leave a voicemail during a warm
+  transfer.</li>
+<li>Fixed an issue where the <strong>Queued Calls</strong> dashboard displayed the incorrect
+  originating queue and transferring agent for a cold-transferred call.</li>
+<li>Fixed an issue where the agent desktop experienced significant loading
+  delays.</li>
+<li>Fixed an issue where calls transferred from a virtual agent directly to a
+  human agent bypassed the <strong>Keep Waiting</strong> overcapacity setting, causing
+  callers to be incorrectly routed to a fallback queue or to voicemail.</li>
+<li>Fixed a raw data export issue where file names for the <code>MENU_PATH_ITEMS</code>
+  dataset incorrectly contained <code>path_items</code>.</li>
+<li>Fixed an issue where a parent queue was incorrectly marked as after-hours
+  even though one or more of its child queues were in operation.</li>
+<li>Fixed an issue with chats that were escalated from a virtual agent to a
+  human agent and then reached a terminal status (canceled, finished, or
+  failed). These chats mistakenly appeared in the <strong>Queued Chats</strong> dashboard.</li>
+<li>Fixed an issue where the agent desktop froze and the <strong>Call Adapter</strong> pane
+  displayed <strong>Call on hold</strong> after a call was terminated or dropped.</li>
+<li>Fixed an issue where agents couldn't change their chat status while a call
+  was in the wrap-up stage.</li>
+<li>Fixed an issue where the call adapter displayed calls waiting when there
+  were actually no calls waiting.</li>
+<li>Fixed an issue where outbound calls that failed immediately caused the call
+  adapter to be stuck in the In-call state with the timer running.</li>
+</ul>]]></content>
+    <summary>This release fixes several bugs impacting agent experience, including delays in chat shortcuts and session data, slow loading of conversation history, and incorrect data display on dashboards. It also resolves issues with outbound calls, voicemails during warm transfers, and call routing logic.</summary>
+    <title>Fixed: Resolved various agent desktop and call issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

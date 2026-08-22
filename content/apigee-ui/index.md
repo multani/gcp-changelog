@@ -1,5 +1,14 @@
 # Apigee UI
 
+## 2026-08-22
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| 540008387 | **Developer custom attributes now save reliably in the Apigee UI**  Saving changes to a developer in the [Apigee UI in Cloud console](https://docs.cloud.google.com/apigee/docs/api-platform/fundamentals/ui-overview) no longer intermittently fails to persist that developer's custom attributes.  Previously, the UI reported the save as successful, but the previous attribute values reappeared when the page was reloaded. Developer updates made with the Apigee API were not affected. |
+
+---
 ## 2026-07-16
 
 ### Announcement

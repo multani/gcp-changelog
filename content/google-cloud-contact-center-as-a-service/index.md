@@ -1,5 +1,90 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-08-21
+
+### Announcement
+
+**Google Cloud CCaaS 6.4**
+
+We've released version 6.4 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Automatic SIP parameter mapping in contact lists**
+
+Contact lists now support automatic SIP header mapping for outbound call
+destinations.
+
+Administrators: In the **Add Destination** dialog at **Settings > Call
+> Contact Lists > Contact list management >
+`CREATE OR EDIT CONTACT LIST`> Add
+Destination**, toggle **Pass Data Parameters** to the on position to see the
+new **Automatically Include and Pass all Inbound SIP Headers** checkbox.
+
+For more information, see [Add a SIP URI address destination to a contact
+list](https://docs.cloud.google.com/contact-center/ccai-platform/docs/contact-list#add-sip-uri-address-destination).
+
+### Feature
+
+**Email OAuth profiles and Microsoft 365 client credentials**
+
+You can now create email OAuth profiles for Microsoft 365 using the client
+credentials grant type. This lets shared mailboxes authenticate through an app
+registration instead of relying on an individual user sign-in. OAuth IMAP setup
+is more resilient for support inboxes and other application-managed mailboxes.
+
+Documentation is coming soon.
+
+### Feature
+
+**Improved connection times for predictive dialing**
+
+We reduced the connection time for predictive dialing to under two seconds to
+comply with CRTC and FTC regulations.
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where a long delay occurred when an agent clicked **Chat
+  Shortcuts** in the chat adapter.
+* Fixed an agent desktop issue where the **Session Data Feed** pane displayed
+  data from the previous chat and the chat transcript stopped updating.
+* Fixed an issue where conversation history loaded slowly for agents using the
+  CCaaS widget embedded in Salesforce.
+* Fixed an issue where outbound calls with zero duration time were missing
+  from **Individual Call History** reports that were scoped to agents and
+  teams.
+* Fixed an issue where customers couldn't leave a voicemail during a warm
+  transfer.
+* Fixed an issue where the **Queued Calls** dashboard displayed the incorrect
+  originating queue and transferring agent for a cold-transferred call.
+* Fixed an issue where the agent desktop experienced significant loading
+  delays.
+* Fixed an issue where calls transferred from a virtual agent directly to a
+  human agent bypassed the **Keep Waiting** overcapacity setting, causing
+  callers to be incorrectly routed to a fallback queue or to voicemail.
+* Fixed a raw data export issue where file names for the `MENU_PATH_ITEMS`
+  dataset incorrectly contained `path_items`.
+* Fixed an issue where a parent queue was incorrectly marked as after-hours
+  even though one or more of its child queues were in operation.
+* Fixed an issue with chats that were escalated from a virtual agent to a
+  human agent and then reached a terminal status (canceled, finished, or
+  failed). These chats mistakenly appeared in the **Queued Chats** dashboard.
+* Fixed an issue where the agent desktop froze and the **Call Adapter** pane
+  displayed **Call on hold** after a call was terminated or dropped.
+* Fixed an issue where agents couldn't change their chat status while a call
+  was in the wrap-up stage.
+* Fixed an issue where the call adapter displayed calls waiting when there
+  were actually no calls waiting.
+* Fixed an issue where outbound calls that failed immediately caused the call
+  adapter to be stuck in the In-call state with the timer running.
+
+---
 ## 2026-08-19
 
 ### Announcement

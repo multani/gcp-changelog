@@ -1,6 +1,48 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-08-21": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 6.4**\n\nWe've released version 6.4 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 6.4 Released",
+          "summary": "Version 6.4 of Google Cloud CCaaS is now available. The update schedule for your instance depends on your chosen deployment plan. Refer to the deployment schedules documentation for more details."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Automatic SIP parameter mapping in contact lists**\n\nContact lists now support automatic SIP header mapping for outbound call\ndestinations.\n\nAdministrators: In the **Add Destination** dialog at **Settings > Call\n> Contact Lists > Contact list management >\n`CREATE OR EDIT CONTACT LIST`> Add\nDestination**, toggle **Pass Data Parameters** to the on position to see the\nnew **Automatically Include and Pass all Inbound SIP Headers** checkbox.\n\nFor more information, see [Add a SIP URI address destination to a contact\nlist](https://docs.cloud.google.com/contact-center/ccai-platform/docs/contact-list#add-sip-uri-address-destination).",
+        "summary": {
+          "title": "Automatic SIP Header Mapping for Calls",
+          "summary": "Contact lists now automatically map SIP parameters for outbound call destinations. Administrators can enable this feature in the 'Add Destination' dialog to pass inbound SIP headers automatically."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Email OAuth profiles and Microsoft 365 client credentials**\n\nYou can now create email OAuth profiles for Microsoft 365 using the client\ncredentials grant type. This lets shared mailboxes authenticate through an app\nregistration instead of relying on an individual user sign-in. OAuth IMAP setup\nis more resilient for support inboxes and other application-managed mailboxes.\n\nDocumentation is coming soon.",
+        "summary": {
+          "title": "Microsoft 365 email OAuth profiles",
+          "summary": "New email OAuth profiles for Microsoft 365 now support client credentials. This allows shared mailboxes to authenticate via app registration, improving resilience for support inboxes and other application-managed mailboxes."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved connection times for predictive dialing**\n\nWe reduced the connection time for predictive dialing to under two seconds to\ncomply with CRTC and FTC regulations.",
+        "summary": {
+          "title": "Faster predictive dialing connections",
+          "summary": "Predictive dialing connection times have been reduced to under two seconds. This improvement ensures compliance with CRTC and FTC regulations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where a long delay occurred when an agent clicked **Chat\n  Shortcuts** in the chat adapter.\n* Fixed an agent desktop issue where the **Session Data Feed** pane displayed\n  data from the previous chat and the chat transcript stopped updating.\n* Fixed an issue where conversation history loaded slowly for agents using the\n  CCaaS widget embedded in Salesforce.\n* Fixed an issue where outbound calls with zero duration time were missing\n  from **Individual Call History** reports that were scoped to agents and\n  teams.\n* Fixed an issue where customers couldn't leave a voicemail during a warm\n  transfer.\n* Fixed an issue where the **Queued Calls** dashboard displayed the incorrect\n  originating queue and transferring agent for a cold-transferred call.\n* Fixed an issue where the agent desktop experienced significant loading\n  delays.\n* Fixed an issue where calls transferred from a virtual agent directly to a\n  human agent bypassed the **Keep Waiting** overcapacity setting, causing\n  callers to be incorrectly routed to a fallback queue or to voicemail.\n* Fixed a raw data export issue where file names for the `MENU_PATH_ITEMS`\n  dataset incorrectly contained `path_items`.\n* Fixed an issue where a parent queue was incorrectly marked as after-hours\n  even though one or more of its child queues were in operation.\n* Fixed an issue with chats that were escalated from a virtual agent to a\n  human agent and then reached a terminal status (canceled, finished, or\n  failed). These chats mistakenly appeared in the **Queued Chats** dashboard.\n* Fixed an issue where the agent desktop froze and the **Call Adapter** pane\n  displayed **Call on hold** after a call was terminated or dropped.\n* Fixed an issue where agents couldn't change their chat status while a call\n  was in the wrap-up stage.\n* Fixed an issue where the call adapter displayed calls waiting when there\n  were actually no calls waiting.\n* Fixed an issue where outbound calls that failed immediately caused the call\n  adapter to be stuck in the In-call state with the timer running.",
+        "summary": {
+          "title": "Resolved various agent desktop and call issues",
+          "summary": "This release fixes several bugs impacting agent experience, including delays in chat shortcuts and session data, slow loading of conversation history, and incorrect data display on dashboards. It also resolves issues with outbound calls, voicemails during warm transfers, and call routing logic."
+        }
+      }
+    ],
     "2026-08-19": [
       {
         "kind": "Announcement",

@@ -1,5 +1,22 @@
 # Google SecOps
 
+## 2026-08-21
+
+### Feature
+
+**[Spotlight Feature] Relative time filtering in Google SecOps**
+
+This feature is in public preview. Google SecOps has updated how relative time filters
+calculate data ranges. You can now choose from three distinct, mathematically
+precise operators: Past, Previous, and Current. This change eliminates ambiguity
+between rolling windows and calendar-aligned periods, ensuring consistent behavior
+across all time units (like seconds, minutes, hours, days, weeks, months, years)
+and aligning SecOps dashboards with Search and other Google tools (such as Looker).
+
+For more information, see the **Relative time range** section of the
+[Understand search](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#relative_time_range) guide.
+
+---
 ## 2026-08-20
 
 ### Feature

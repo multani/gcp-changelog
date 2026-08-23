@@ -1,5 +1,28 @@
 # AI Hypercomputer
 
+## 2026-08-21
+
+### Change
+
+AI Hypercomputer has expanded to cover all GPU machine series. Specifically,
+the documentation for AI Hypercomputer has been significantly updated as
+follows:
+
+* Documentation has been added for the A3 Edge, A2, G4, G2, N1+T4, and N1+V100 GPU machine series.
+* Pages are labeled based on whether they are relevant to the newly documented
+  machine series for
+  [general GPU](https://docs.cloud.google.com/ai-hypercomputer/docs/evaluate-general-gpus),
+  the pre-existing machine series for
+  [clustered GPU](https://docs.cloud.google.com/ai-hypercomputer/docs/evaluate-clustered-gpus),
+  or both.
+
+To learn more about the differences between
+general GPUs and
+clustered GPUs, see
+[Choose your accelerator infrastructure](https://docs.cloud.google.com/ai-hypercomputer/docs/choose-infrastructure).
+To view workload recommendations, see [Choose between general GPUs and clustered GPUs](https://docs.cloud.google.com/ai-hypercomputer/docs/choose-strategy).
+
+---
 ## 2026-06-23
 
 ### Feature

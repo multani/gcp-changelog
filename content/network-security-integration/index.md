@@ -1,5 +1,20 @@
 # Network Security Integration
 
+## 2026-08-20
+
+### Feature
+
+Network Security Integration in-band integration now supports the direct
+internet egress deployment model. In this model, the network security appliance
+in the producer VPC network inspects outbound traffic and sends it directly to the
+internet through its external network interface. The appliance then sends the
+internet response packet directly to the consumer VM using GENEVE, bypassing the
+return hop to the consumer VPC network.
+
+For more information, see [Direct internet
+egress](https://docs.cloud.google.com/network-security-integration/docs/in-band/in-band-integration-overview#direct-internet-egress).
+
+---
 ## 2026-06-30
 
 ### Feature

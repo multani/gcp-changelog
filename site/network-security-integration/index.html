@@ -2760,8 +2760,19 @@
 
 
 <h1 id="network-security-integration">Network Security Integration</h1>
-<h2 id="2026-06-30">2026-06-30</h2>
+<h2 id="2026-08-20">2026-08-20</h2>
 <h3 id="feature">Feature</h3>
+<p>Network Security Integration in-band integration now supports the direct
+internet egress deployment model. In this model, the network security appliance
+in the producer VPC network inspects outbound traffic and sends it directly to the
+internet through its external network interface. The appliance then sends the
+internet response packet directly to the consumer VM using GENEVE, bypassing the
+return hop to the consumer VPC network.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/network-security-integration/docs/in-band/in-band-integration-overview#direct-internet-egress">Direct internet
+egress</a>.</p>
+<hr />
+<h2 id="2026-06-30">2026-06-30</h2>
+<h3 id="feature_1">Feature</h3>
 <p>The broker mode for out-of-band Network Security Integration (also known as
 packet broker) is now available in <strong>General Availability (GA) with allowlist</strong>.
 Broker mode lets you mirror GENEVE-encapsulated network packets from a consumer
@@ -2773,7 +2784,7 @@ Google account team.</p>
 overview</a>
 and <a href="https://docs.cloud.google.com/network-security-integration/docs/understand-geneve">Understand GENEVE
 format</a>.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>Project-level security profiles and security profile groups for Network Security
 Integration are now available in <strong>General Availability (GA)</strong>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/network-security-integration/docs/security-profiles-overview">Security profiles
@@ -2782,14 +2793,14 @@ overview</a> and
 overview</a>.</p>
 <hr />
 <h2 id="2026-05-04">2026-05-04</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can now enable zonal affinity for your Network Security Integration in-band
 integration deployments and configure zonal interception with regional backends.
 For more information, see <a href="https://docs.cloud.google.com/network-security-integration/docs/in-band/in-band-integration-overview#zonal-affinity">Zonal
 affinity</a>.</p>
 <hr />
 <h2 id="2026-01-14">2026-01-14</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>You can now integrate your network security appliances directly in the network traffic path for inspection and identify any threats before the traffic reaches its destination. For more information, see <a href="https://docs.cloud.google.com/network-security-integration/docs/in-band/in-band-integration-overview">In-band integration overview</a>. This feature is available in <strong>General Availability</strong>.</p>
 <hr />
 <h2 id="2025-06-05">2025-06-05</h2>
@@ -2806,6 +2817,9 @@ affinity</a>.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#network-security-integration">Network Security Integration</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-20" class="nav-link">2026-08-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-30" class="nav-link">2026-06-30</a>
           </li>

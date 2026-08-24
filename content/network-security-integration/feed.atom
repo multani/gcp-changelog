@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Network Security Integration</title>
   <subtitle>Changelog for Google Cloud product: Network Security Integration</subtitle>
-  <updated>2026-06-30T00:00:00+00:00</updated>
+  <updated>2026-08-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:network-security-integration</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/network-security-integration/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:network-security-integration:2026-08-20:feature:0</id>
+    <published>2026-08-20T00:00:00+00:00</published>
+    <updated>2026-08-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Network Security Integration in-band integration now supports the direct
+internet egress deployment model. In this model, the network security appliance
+in the producer VPC network inspects outbound traffic and sends it directly to the
+internet through its external network interface. The appliance then sends the
+internet response packet directly to the consumer VM using GENEVE, bypassing the
+return hop to the consumer VPC network.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/network-security-integration/docs/in-band/in-band-integration-overview#direct-internet-egress">Direct internet
+egress</a>.</p>]]></content>
+    <summary>Network Security Integration now supports the direct internet egress deployment model. This allows network security appliances to inspect outbound traffic and send internet responses directly to consumer VMs, bypassing the consumer VPC network for increased efficiency.</summary>
+    <title>Feature: Direct Internet Egress for Network Security</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

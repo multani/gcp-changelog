@@ -37,7 +37,8 @@ credentials grant type. This lets shared mailboxes authenticate through an app
 registration instead of relying on an individual user sign-in. OAuth IMAP setup
 is more resilient for support inboxes and other application-managed mailboxes.
 
-Documentation is coming soon.
+For more information, see [Email OAuth profiles and Microsoft 365 client
+credentials](https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-oauth-profiles-ms).
 
 ### Feature
 

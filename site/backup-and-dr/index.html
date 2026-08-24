@@ -2537,6 +2537,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Service health <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../service-health/" class="dropdown-item">Service Health</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Service usage <b class="caret"></b>
                         </a>
 
@@ -2775,8 +2787,24 @@
 <h3 id="feature_1">Feature</h3>
 <p>You can now change the backup plan associated with a Cloud SQL instance. This allows you to switch an instance to a different backup plan, provided the new plan uses the same backup vault and is in the same region as the instance. This feature is available through the Google Cloud console and <a href="https://docs.cloud.google.com/sdk/gcloud">gcloud CLI</a>. To learn more, see <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup#change-plan">Change the associated backup plan for a Cloud SQL instance</a>.</p>
 <hr />
-<h2 id="2026-07-24">2026-07-24</h2>
+<h2 id="2026-07-30">2026-07-30</h2>
 <h3 id="feature_2">Feature</h3>
+<p>You can now configure <strong>selective disk backup</strong> for Compute Engine instances
+in a backup plan to exclude specific attached non-boot disks from virtual
+machine (VM) backups. You can configure selective disk backup by backing up
+only the boot disk (<code>boot-disk-only</code>) or by excluding disks that match
+specified label key-value pairs (<code>disk-exclusion-labels</code>). When you restore a
+VM from a selective disk backup, only the protected disks are restored.</p>
+<p>Additionally, you can now perform a <strong>selective disk restore</strong> from a
+Compute Engine instance backup by selecting the <strong>Individual disk</strong> restore
+scope. This allows you to selectively restore an individual protected disk from
+an instance backup to create a new Persistent Disk volume without restoring the entire VM instance.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-backup#selective-disk-backup">Selective disk backup for Compute Engine instances</a>,
+<a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-restore#restore-from-selective-disk-backup">Restore limitations for selective disk backups</a>, and
+<a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/disk-restore#restore-disk-from-compute-instance-backup">Perform a selective disk restore from a Compute Engine instance backup</a>.</p>
+<hr />
+<h2 id="2026-07-24">2026-07-24</h2>
+<h3 id="feature_3">Feature</h3>
 <p>You can now use Model Context Protocol (MCP) servers with Backup and DR Service to connect AI assistants and applications—such as the Gemini CLI, ChatGPT, or Claude—with your backup environment. Using either the local or remote MCP server, you can use natural language prompts to perform and automate Backup and DR tasks, such as creating backup plans, triggering on-demand backups, and managing backup vaults. Comprehensive reference documentation is also available with detailed specifications, input and output schemas, and sample invocation commands for all available MCP tools.</p>
 <p>For more information, see the following:</p>
 <ul>
@@ -2785,7 +2813,7 @@
 </ul>
 <hr />
 <h2 id="2026-07-10">2026-07-10</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Cloud SQL enhanced backups now supports custom on-demand backups. You can
 now initiate an on-demand backup with a custom retention period. To cap this
 retention period, you can specify a maximum retention limit by using the
@@ -2793,7 +2821,7 @@ retention period, you can specify a maximum retention limit by using the
 Additionally, you can now create a backup plan without scheduled backup
 rules, provided that the custom on-demand retention period is configured.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup#on-demand-backups">On-demand backups</a> and <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/backup-plan-create#create-backup-plan-with-no-backup-rule">Create a backup plan with no backup rule</a>.</p>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <ul>
 <li>You can now change the backup plan applied to an existing AlloyDB for PostgreSQL cluster,
   provided that the new backup plan uses the same backup vault and is in the same
@@ -2805,14 +2833,14 @@ rules, provided that the custom on-demand retention period is configured.</p>
 </ul>
 <hr />
 <h2 id="2026-06-23">2026-06-23</h2>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>You can now configure application-consistent backups for Compute Engine
 instances directly through the Google Cloud Console. This enhancement
 allows you to enable Guest Flush or VSS options within Backup Plans,
 ensuring data integrity for applications running on Linux or Windows
 VMs during the backup process. The <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-backup">Back up Compute Engine instances</a> documentation has been updated with instructions on how to create and modify
 backup plans to use this feature.</p>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>Announcing the general availability (GA) of cross-region backups for
 Backup and DR Service. Customers can now protect Compute Engine instances,
 Compute Engine disks, and Filestore instances against regional
@@ -2823,22 +2851,22 @@ strict control over data residency. To learn more, see
 <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-vault#regions">Backup vaults for immutable and indelible backups</a>.</p>
 <hr />
 <h2 id="2026-06-18">2026-06-18</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>Backup vault support for Cloud SQL instances encrypted with customer-managed encryption keys (CMEK) is generally available (GA), providing immutable and indelible storage with enforced retention. For more information, see <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup">Back up Cloud SQL instances to a backup vault</a>.</p>
 <hr />
 <h2 id="2026-05-28">2026-05-28</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>You can now view the Google Cloud Backup and DR Service protection summary at
 the organization and folder levels. To learn more about protection summary, see
 <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/backup-admin/protection-summary">Find unprotected resources using protection summary</a>.</p>
 <hr />
 <h2 id="2026-05-18">2026-05-18</h2>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>You can now use Protection Summary to identify and fix data protection gaps at
 both Folder and Org levels.</p>
 <hr />
 <h2 id="2026-05-15">2026-05-15</h2>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>Backup and DR Service now supports customer-managed encryption keys (CMEK)
 for Cloud SQL enhanced backups. This allows you to protect your
 Cloud SQL backups using the same KMS key as the source instance, with
@@ -2846,7 +2874,7 @@ decoupled IAM permissions anchored to the Backup and DR Service service
 agent.</p>
 <hr />
 <h2 id="2026-05-14">2026-05-14</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>These features are now available:</p>
 <ul>
 <li>Replication Optimization: Introduced a deletion replication optimization for
@@ -2888,7 +2916,7 @@ CVE-2026-34487, and CVE-2026-29146.</p>
 </ul>
 <hr />
 <h2 id="2026-04-10">2026-04-10</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>Expanded OS Support: Qualified Linux Change Block Tracking (CBT) support for
 multiple new RHEL 8 and 9 kernels, including versions 8.8, 8.10, 9.2, 9.4,
 and 9.7.</p>
@@ -2931,7 +2959,7 @@ Kernel, OpenSSL, rsync, glibc, and OpenJDK packages.</p>
 </ul>
 <hr />
 <h2 id="2026-01-20">2026-01-20</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>Cost reports are now generally available for Backup and DR Service. Use cost reports
 to view resource specific Backup &amp; DR Billing costs to gain granular insights
 into service spend and take actions to optimize resource allocation.</p>
@@ -2940,13 +2968,13 @@ into service spend and take actions to optimize resource allocation.</p>
 <h3 id="announcement_1">Announcement</h3>
 <p>Protection summary is now generally available for Backup and DR Service. Use
 Protection summary to identify and fix data protection gaps across your projects.</p>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>You can now use cost reports to view resource-specific Backup and DR
 billing costs to gain granular insights into service spending and to take
 actions to optimize resource allocation.</p>
 <hr />
 <h2 id="2025-12-22">2025-12-22</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>Enhanced performance for restore and clone of VMware VMs.</p>
 <p>Expanded Linux CBT support for new kernels on RHEL 8 and 9.</p>
 <h3 id="security_2">Security</h3>
@@ -2957,7 +2985,7 @@ actions to optimize resource allocation.</p>
 <p>Corrected the data copy reporting for Persistent Disk (PD) based backups, ensuring it accurately reflects zero data copied.</p>
 <hr />
 <h2 id="2025-12-17">2025-12-17</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>Backup Vault: CMEK support for Compute Engine (GA) Backup Vault now supports
 data protection for Compute Engine instances and Persistent Disks encrypted with
 Customer-Managed Encryption Keys (CMEK). This capability is currently available
@@ -2965,7 +2993,7 @@ via Allow-list General Availability; please contact your Google Cloud sales
 representative to request access.</p>
 <hr />
 <h2 id="2025-12-16">2025-12-16</h2>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>Cloud SQL enhanced backups are now generally available (GA).
 With enhanced backups, backups are managed and stored in a centralized backup
 management project that leverages
@@ -2978,7 +3006,7 @@ Enhanced backups now also support
 <p>For more information about enhanced backups pricing, see <a href="https://cloud.google.com/backup-disaster-recovery/pricing">Backup and DR pricing</a>.</p>
 <hr />
 <h2 id="2025-11-19">2025-11-19</h2>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p>Added Change Block Tracking (CBT) support for RHEL 8.8 SAP kernels.</p>
 <h3 id="fixed_4">Fixed</h3>
 <ul>
@@ -2991,7 +3019,7 @@ Enhanced backups now also support
 <p>Resolved a decryption failure that occurred when accessing KMS keys.</p>
 <hr />
 <h2 id="2025-11-07">2025-11-07</h2>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p>Announcing the public preview launch of Database Center support for
 resources protected with Backup and DR Service. Database Center is an
 AI-assisted dashboard that highlights fleet-wide data points.The integration is
@@ -3002,16 +3030,16 @@ for all Cloud SQL customers who have protected their databases through
 Backup and DR Service enhanced protection.</p>
 <hr />
 <h2 id="2025-10-30">2025-10-30</h2>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p>A new backup vault setting, <strong>Prevent deletion for duration specified in backup rule</strong>,
 is now available. When enabled, this feature locks backups for the exact retention
 period defined in the associated backup plan, overriding the vault's local minimum
 retention and preventing manual deletion.</p>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p>Announcing the <strong>Public Preview</strong> launch of AlloyDB for PostgreSQL enhanced backups with Backup and DR Service. This enables advanced data protection capabilities offered by Backup and DR Service including backup vault support, granular scheduling through backup plans, and centralized management.</p>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <ul>
 <li>Change Block Tracking (CBT) support has been added for latest kernel versions in RHEL 8.10, 9.2, 9.4 and 9.6.</li>
 <li>Improved alerting for long-running jobs by adding application type and name to the alerts.</li>
@@ -3046,7 +3074,7 @@ retention and preventing manual deletion.</p>
 <p>You can subscribe to these events and configure email alerts.</p>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p>You can now set up backup vault specific workload quotas for critical resources like data sources, backups, backup plans, and backup plan associations. Until now these quotas were set up only at the project level, not at the workload level.</p>
 <hr />
 <h2 id="2025-08-12">2025-08-12</h2>
@@ -3087,6 +3115,9 @@ retention and preventing manual deletion.</p>
           </li>
           <li class="nav-item">
             <a href="#2026-08-03" class="nav-link">2026-08-03</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-07-30" class="nav-link">2026-07-30</a>
           </li>
           <li class="nav-item">
             <a href="#2026-07-24" class="nav-link">2026-07-24</a>

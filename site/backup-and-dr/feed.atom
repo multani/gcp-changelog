@@ -45,6 +45,29 @@
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-07-30:feature:0</id>
+    <published>2026-07-30T00:00:00+00:00</published>
+    <updated>2026-07-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now configure <strong>selective disk backup</strong> for Compute Engine instances
+in a backup plan to exclude specific attached non-boot disks from virtual
+machine (VM) backups. You can configure selective disk backup by backing up
+only the boot disk (<code>boot-disk-only</code>) or by excluding disks that match
+specified label key-value pairs (<code>disk-exclusion-labels</code>). When you restore a
+VM from a selective disk backup, only the protected disks are restored.</p>
+<p>Additionally, you can now perform a <strong>selective disk restore</strong> from a
+Compute Engine instance backup by selecting the <strong>Individual disk</strong> restore
+scope. This allows you to selectively restore an individual protected disk from
+an instance backup to create a new Persistent Disk volume without restoring the entire VM instance.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-backup#selective-disk-backup">Selective disk backup for Compute Engine instances</a>,
+<a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-restore#restore-from-selective-disk-backup">Restore limitations for selective disk backups</a>, and
+<a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/disk-restore#restore-disk-from-compute-instance-backup">Perform a selective disk restore from a Compute Engine instance backup</a>.</p>]]></content>
+    <summary>You can now configure selective disk backup for Compute Engine instances to exclude specific non-boot disks from backups. Additionally, perform a selective disk restore to restore individual disks from backups without restoring the entire VM. This provides more granular control over your VM backup and restore operations.</summary>
+    <title>Feature: Selective disk backup and restore for Compute Engine VMs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-07-24:feature:0</id>
     <published>2026-07-24T00:00:00+00:00</published>
     <updated>2026-07-24T00:00:00+00:00</updated>

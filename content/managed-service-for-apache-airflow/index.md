@@ -1,13 +1,54 @@
 # Managed Service for Apache Airflow
 
-## 2026-08-10
+## 2026-08-20
 
 ### Announcement
 
 A new Managed Service for Apache Airflow release has started on
-**August 10, 2026**. Get ready for upcoming changes and features as we roll out
+**August 20, 2026**. Get ready for upcoming changes and features as we roll out
 the new release to all regions. This release is in progress at the moment.
 Listed changes and features might not be available in some regions yet.
+
+### Feature
+
+**Airflow 3.3.1** is available in Managed Airflow (Gen 3).
+
+### Change
+
+Airflow 3.1.8 is no longer included in Managed Airflow images and builds.
+
+### Feature
+
+[Composer Local Development CLI tool](https://docs.cloud.google.com/composer/docs/composer-3/run-local-airflow-environments)
+now supports deployment with Podman in Linux and Windows.
+
+### Change
+
+*(Airflow 3.2.2, 3.1.8, and 2.11.1)*
+The `apache-airflow-providers-google` package was upgraded to version 22.3.0.
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.3.1-build.0](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-0)
+* [composer-3-airflow-3.2.2-build.4](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-4)
+* [composer-3-airflow-2.11.1-build.17](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-17) (default)
+* [composer-3-airflow-2.10.5-build.50](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-50)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.11-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-11-airflow-2-11-1) (default)
+* [composer-2.17.11-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-11-airflow-2-10-5)
+
+---
+## 2026-08-10
 
 ### Change
 

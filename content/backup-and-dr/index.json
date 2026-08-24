@@ -31,6 +31,16 @@
         }
       }
     ],
+    "2026-07-30": [
+      {
+        "kind": "Feature",
+        "content": "You can now configure **selective disk backup** for Compute Engine instances\nin a backup plan to exclude specific attached non-boot disks from virtual\nmachine (VM) backups. You can configure selective disk backup by backing up\nonly the boot disk (`boot-disk-only`) or by excluding disks that match\nspecified label key-value pairs (`disk-exclusion-labels`). When you restore a\nVM from a selective disk backup, only the protected disks are restored.\n\nAdditionally, you can now perform a **selective disk restore** from a\nCompute Engine instance backup by selecting the **Individual disk** restore\nscope. This allows you to selectively restore an individual protected disk from\nan instance backup to create a new Persistent Disk volume without restoring the entire VM instance.\n\nFor more information, see [Selective disk backup for Compute Engine instances](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-backup#selective-disk-backup),\n[Restore limitations for selective disk backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-restore#restore-from-selective-disk-backup), and\n[Perform a selective disk restore from a Compute Engine instance backup](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/disk-restore#restore-disk-from-compute-instance-backup).",
+        "summary": {
+          "title": "Selective disk backup and restore for Compute Engine VMs",
+          "summary": "You can now configure selective disk backup for Compute Engine instances to exclude specific non-boot disks from backups. Additionally, perform a selective disk restore to restore individual disks from backups without restoring the entire VM. This provides more granular control over your VM backup and restore operations."
+        }
+      }
+    ],
     "2026-07-24": [
       {
         "kind": "Feature",

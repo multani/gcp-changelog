@@ -27,6 +27,27 @@ For more information, see [Configure application-consistent backups](https://doc
 You can now change the backup plan associated with a Cloud SQL instance. This allows you to switch an instance to a different backup plan, provided the new plan uses the same backup vault and is in the same region as the instance. This feature is available through the Google Cloud console and [gcloud CLI](https://docs.cloud.google.com/sdk/gcloud). To learn more, see [Change the associated backup plan for a Cloud SQL instance](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup#change-plan).
 
 ---
+## 2026-07-30
+
+### Feature
+
+You can now configure **selective disk backup** for Compute Engine instances
+in a backup plan to exclude specific attached non-boot disks from virtual
+machine (VM) backups. You can configure selective disk backup by backing up
+only the boot disk (`boot-disk-only`) or by excluding disks that match
+specified label key-value pairs (`disk-exclusion-labels`). When you restore a
+VM from a selective disk backup, only the protected disks are restored.
+
+Additionally, you can now perform a **selective disk restore** from a
+Compute Engine instance backup by selecting the **Individual disk** restore
+scope. This allows you to selectively restore an individual protected disk from
+an instance backup to create a new Persistent Disk volume without restoring the entire VM instance.
+
+For more information, see [Selective disk backup for Compute Engine instances](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-backup#selective-disk-backup),
+[Restore limitations for selective disk backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/compute-instance-restore#restore-from-selective-disk-backup), and
+[Perform a selective disk restore from a Compute Engine instance backup](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/compute/disk-restore#restore-disk-from-compute-instance-backup).
+
+---
 ## 2026-07-24
 
 ### Feature

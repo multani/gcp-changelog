@@ -1,5 +1,19 @@
 # Google SecOps
 
+## 2026-08-24
+
+### Feature
+
+**[Spotlight Feature] Operations in Emerging Threats Center**
+
+Google SecOps now supports **Operations** in the **Emerging Threats Center** feed to provide rapid visibility into threat activity details involving the targeting of a single organization. Operations complement global Campaigns by providing granular threat intelligence derived from frontline investigations, such as Managed Threat Defense (MTD) engagements. For more information, see [Operations in Emerging Threats](https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats#what_is_an_operation).
+
+Key capabilities include:
+
+* **Focused threat insights**: Zero in on localized adversary activity and personalized attack vectors specific to individual missions.
+* **Holistic threat mapping**: View Operations alongside global Campaigns to see the full scope of adversary tactics, techniques, and procedures (TTPs).
+
+---
 ## 2026-08-21
 
 ### Feature

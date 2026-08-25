@@ -1,5 +1,21 @@
 # Google SecOps SIEM
 
+## 2026-08-24
+
+### Feature
+
+**Unroll Processor for Data Processing Pipelines**
+
+Google SecOps data processing pipelines now support the **Unroll processor** (event breaking). This processor allows you to split log entries containing arrays or slices of events into multiple individual log events prior to parsing and ingestion.
+
+Key details:
+
+* **Event Breaking Capability:** Automatically expands log arrays into discrete log events.
+* **Pre-parsing Requirement:** The Unroll processor requires structured data inputs. Raw string payloads must first be parsed using a Transform processor (e.g., `set(body, ParseJSON(body))`) positioned prior to the Unroll processor in the pipeline execution sequence.
+
+For details on configuring data processing pipelines and processors, see [Set up and manage data processing pipelines](https://docs.cloud.google.com/chronicle/docs/ingestion/data-processing-pipeline#configure-processors).
+
+---
 ## 2026-08-12
 
 ### Feature

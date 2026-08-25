@@ -12,6 +12,24 @@
     <id>urn:github:multani:gcp-changelog:google-secops:2026-08-24:feature:0</id>
     <published>2026-08-24T00:00:00+00:00</published>
     <updated>2026-08-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Unroll Processor for Data Processing Pipelines</strong></p>
+<p>Google SecOps data processing pipelines now support the <strong>Unroll processor</strong> (event breaking). This processor allows you to split log entries containing arrays or slices of events into multiple individual log events prior to parsing and ingestion.</p>
+<p>Key details:</p>
+<ul>
+<li><strong>Event Breaking Capability:</strong> Automatically expands log arrays into discrete log events.</li>
+<li><strong>Pre-parsing Requirement:</strong> The Unroll processor requires structured data inputs. Raw string payloads must first be parsed using a Transform processor (e.g., <code>set(body, ParseJSON(body))</code>) positioned prior to the Unroll processor in the pipeline execution sequence.</li>
+</ul>
+<p>For details on configuring data processing pipelines and processors, see <a href="https://docs.cloud.google.com/chronicle/docs/ingestion/data-processing-pipeline#configure-processors">Set up and manage data processing pipelines</a>.</p>]]></content>
+    <summary>The Unroll processor is now available for data processing pipelines, enabling you to split log entries containing arrays into multiple individual log events before parsing and ingestion. This feature simplifies the processing of complex log data by automatically expanding log arrays into discrete events, streamlining your data ingestion workflow.</summary>
+    <title>Feature: New Unroll Processor for Event Breaking</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-08-24:feature:1</id>
+    <published>2026-08-24T00:00:00+00:00</published>
+    <updated>2026-08-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>[Spotlight Feature] Operations in Emerging Threats Center</strong></p>
 <p>Google SecOps now supports <strong>Operations</strong> in the <strong>Emerging Threats Center</strong> feed to provide rapid visibility into threat activity details involving the targeting of a single organization. Operations complement global Campaigns by providing granular threat intelligence derived from frontline investigations, such as Managed Threat Defense (MTD) engagements. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/emerging-threats#what_is_an_operation">Operations in Emerging Threats</a>.</p>
 <p>Key capabilities include:</p>

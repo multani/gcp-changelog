@@ -55,6 +55,28 @@ For more information, see the following:
 * [AI developer tools overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
 * [Quotas and overages for Emerging market editions](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#quotas-emerging-market)
 
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Public Preview)**
+
+The following data stores are available in Public Preview in Gemini Enterprise:
+
+* [Atlan](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/atlan-mcp)
+* [Bitly](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/bitly): Create QR code, create short link, update QR code, and update short link.
+* [FactSet AI-Ready Data](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/factset_ai_ready_data)
+* [FullStory](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/fullstory)
+* [Globalping](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/globalping)
+* [Pendo](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/pendo_mcp)
+* [Stripe](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/stripe)
+
+You can search and read data from these data stores using natural language.
+
+Additionally, the following data stores support new actions in Public Preview:
+
+* [Descript](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/descript): Import media, prompt project agent, and publish project.
+* [Gamma](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/gamma): Generate Gamma.
+* [Supabase](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/supabase): Apply migration, deploy edge function, execute SQL, pause project, and restore project.
+
 ---
 ## 2026-08-20
 

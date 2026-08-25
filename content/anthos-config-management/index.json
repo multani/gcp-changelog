@@ -1,6 +1,24 @@
 {
   "name": "Anthos Config Management",
   "entries": {
+    "2026-08-24": [
+      {
+        "kind": "Change",
+        "content": "Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.",
+        "summary": {
+          "title": "Dependencies updated to address vulnerabilities",
+          "summary": "We have updated our dependencies to resolve several Common Vulnerabilities and Exposures (CVEs). This proactive measure enhances the security and stability of our services."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now disable monitoring for specific custom `RootSync` or `RepoSync` objects by setting the `spec.monitoring.enabled` field to `false`. This disables metric telemetry collection and exporting for that reconciler, which can help reduce cluster resource consumption. For more information, see [Disable monitoring](https://docs.cloud.google.com/kubernetes-engine/config-sync/docs/how-to/monitoring-config-sync#disable-monitoring).",
+        "summary": {
+          "title": "Disable monitoring for RootSync and RepoSync",
+          "summary": "You can now disable monitoring for specific RootSync or RepoSync objects by setting spec.monitoring.enabled to false. This action stops metric telemetry collection and export for the reconciler, which can help lower resource usage within your cluster. Refer to the documentation for detailed instructions on disabling monitoring."
+        }
+      }
+    ],
     "2026-07-27": [
       {
         "kind": "Change",

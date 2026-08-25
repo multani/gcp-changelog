@@ -1,6 +1,32 @@
 {
   "name": "Cloud Trace",
   "entries": {
+    "2026-08-24": [
+      {
+        "kind": "Feature",
+        "content": "You can update the display name, description, and Cloud KMS key\napplied to a `_Trace` observability bucket.\n\nFor more information, see\n[Update observability buckets](https://docs.cloud.google.com/trace/docs/update-observability-buckets).",
+        "summary": {
+          "title": "Update observability buckets",
+          "summary": "You can now update the display name, description, and Cloud KMS key for your observability buckets. This allows for greater flexibility in managing your observability data."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can manually create the `_Trace` observability bucket before your project\nreceives trace data. When creating the bucket, you must specify a storage\nlocation. Google Cloud Observability applies the Cloud KMS key defined in your\ndefault settings unless you explicitly specify a different key in your create\nrequest.\n\nFor more information, see the following documents:\n\n* [Create observability buckets](https://docs.cloud.google.com/trace/docs/create-observability-buckets)\n* [Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets)",
+        "summary": {
+          "title": "Create observability buckets manually",
+          "summary": "You can now manually create the `_Trace` observability bucket. This allows you to specify a storage location and optionally a Cloud KMS key before receiving trace data."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following remote MCP servers automatically generate a trace span for\n`tools/call` operations.\n\n* Policy Troubleshooter\n* Managed Service for Apache Airflow\n\nThese spans can help you understand the behavior of\nyour agentic applications. For more information, see\n[Investigate MCP calls using Trace](https://docs.cloud.google.com/trace/docs/trace-remote-mcp-server-calls).",
+        "summary": {
+          "title": "Trace Spans for tools/call Operations",
+          "summary": "Remote MCP servers like Policy Troubleshooter and Managed Service for Apache Airflow now automatically generate trace spans for `tools/call` operations. These spans provide valuable insights into the behavior of your agentic applications, aiding in debugging and performance analysis."
+        }
+      }
+    ],
     "2026-08-17": [
       {
         "kind": "Feature",

@@ -1,5 +1,41 @@
 # Cloud Trace
 
+## 2026-08-24
+
+### Feature
+
+You can update the display name, description, and Cloud KMS key
+applied to a `_Trace` observability bucket.
+
+For more information, see
+[Update observability buckets](https://docs.cloud.google.com/trace/docs/update-observability-buckets).
+
+### Feature
+
+You can manually create the `_Trace` observability bucket before your project
+receives trace data. When creating the bucket, you must specify a storage
+location. Google Cloud Observability applies the Cloud KMS key defined in your
+default settings unless you explicitly specify a different key in your create
+request.
+
+For more information, see the following documents:
+
+* [Create observability buckets](https://docs.cloud.google.com/trace/docs/create-observability-buckets)
+* [Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets)
+
+### Feature
+
+The following remote MCP servers automatically generate a trace span for
+`tools/call` operations.
+
+* Policy Troubleshooter
+* Managed Service for Apache Airflow
+
+These spans can help you understand the behavior of
+your agentic applications. For more information, see
+[Investigate MCP calls using Trace](https://docs.cloud.google.com/trace/docs/trace-remote-mcp-server-calls).
+
+---
 ## 2026-08-17
 
 ### Feature

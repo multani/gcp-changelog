@@ -1,5 +1,12 @@
 # Google Cloud VMware Engine
 
+## 2026-08-24
+
+### Announcement
+
+**VMware component updates:** The VMware Engine operations team is updating vCenter Server and ESXi to version 8.0 Update 3k to address security vulnerabilities described in Broadcom Security Advisory [VMSA-2026-0006](https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017). For details about the update and schedule, see the [Latest service announcements](https://docs.cloud.google.com/vmware-engine/docs/service-announcements#2026-08-24).
+
+---
 ## 2026-08-01
 
 ### Feature

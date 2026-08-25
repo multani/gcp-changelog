@@ -1,5 +1,30 @@
 # Assured Workloads
 
+## 2026-08-21
+
+### Feature
+
+The
+[Switzerland Data Boundary with Access Justifications](https://docs.cloud.google.com/assured-workloads/docs/control-packages/switzerland-data-boundary-access-justifications)
+control package is now generally available.
+
+### Feature
+
+The [Data Boundary for ITAR](https://docs.cloud.google.com/assured-workloads/docs/control-packages/itar)
+supports the following products:
+
+* Apigee
+* Artifact Analysis
+* Backup and DR Service
+* Cloud Billing API
+* Cloud Deploy
+* Spanner
+* Eventarc
+* GKE Image streaming
+* Google Cloud Managed Service for Apache Kafka
+* Vertex AI Online prediction
+
+---
 ## 2026-08-17
 
 ### Feature

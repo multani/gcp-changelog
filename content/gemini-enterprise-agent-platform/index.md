@@ -1,5 +1,19 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-24
+
+### Feature
+
+**GLM 5.2 is available in Public Preview**
+
+GLM 5.2 from Z.ai is available as a fully managed model (MaaS) in Model Garden.
+The model targets long-horizon agentic and coding tasks and supports a 1M-token
+context window.
+
+For more information, see [GLM
+5.2](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/zaiorg/glm-52).
+
+---
 ## 2026-08-21
 
 ### Feature

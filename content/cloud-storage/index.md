@@ -1,5 +1,17 @@
 # Cloud Storage
 
+## 2026-08-21
+
+### Feature
+
+Rapid Cache supports prefix-level ingest-on-write filtering, allowing
+you to selectively ingest objects that match specific prefixes rather than
+ingesting all objects written to a bucket.
+
+For more information, see
+[Ingesting data on write](https://docs.cloud.google.com/storage/docs/rapid/rapid-cache#ingest-on-write).
+
+---
 ## 2026-08-17
 
 ### Feature

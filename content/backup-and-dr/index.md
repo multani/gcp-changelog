@@ -1,5 +1,14 @@
 # Backup and DR
 
+## 2026-08-24
+
+### Feature
+
+Backup vault support for Filestore instances encrypted with customer-managed encryption keys (CMEK) is now generally available (GA). When you back up Filestore instances to a CMEK-enabled backup vault, the backups are encrypted using the backup vault CMEK key.
+
+For more information, see [Customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/cmek), [Back up Filestore instances to a backup vault](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/filestore/filestore-instance-backup), and [Restore a Filestore instance from a backup vault](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/filestore/filestore-instance-restore).
+
+---
 ## 2026-08-17
 
 ### Announcement

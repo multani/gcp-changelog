@@ -1,5 +1,294 @@
 # Container Optimized OS
 
+## 2026-08-24
+
+### Change
+
+
+
+### cos-121-18867-528-78
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/4cc0f9832ba76d734091636ce815239edde4911b ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.528.78/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p259.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260804.00.
+
+### Fixed
+
+Upgraded app-arch/zstd to v1.5.7-r1.
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.5.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.3.
+
+### Fixed
+
+Upgraded dev-libs/libverto to v0.3.2-r1.
+
+### Fixed
+
+Upgraded dev-libs/popt to v1.19-r1.
+
+### Fixed
+
+Upgraded dev-libs/xxhash to v0.8.3-r2.
+
+### Fixed
+
+Upgraded sys-apps/acl to v2.4.0-r2.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.10.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.7.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68129 in the linux kernel
+
+### Security
+
+Fixed CVE-2026-68146 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68299 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68329 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-0650f1c in the Linux Kernel.
+
+### Change
+
+
+
+### cos-117-18613-675-64
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.143](https://cos.googlesource.com/third_party/kernel/+/2c8ba6aac7a4075ebfccf6c1fdb39ab4dc46d806 ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.675.64/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p259.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.10.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68116 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68129 in the linux kernel
+
+### Security
+
+Fixed CVE-2026-68146 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68147 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68149 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68171 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68325 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68386 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68428 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-0650f1c in the Linux Kernel.
+
+### Change
+
+
+
+### cos-129-19506-299-161
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/b6c0270f579107bbe932382609e40146cb7e8ea6 ) | v27.5.1 | v2.2.6 | [See List](https://storage.googleapis.com/cos-tools/19506.299.161/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated cos-gpu-installer to v2.7.7.
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p259.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.10.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68129 in the linux kernel
+
+### Security
+
+Fixed CVE-2026-68146 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68325 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68338 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68422 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-0650f1c in the Linux Kernel.
+
+### Change
+
+
+
+### cos-125-19216-532-135
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.94](https://cos.googlesource.com/third_party/kernel/+/ee59a4a73fdc4a0b29499e5a8625446f6c566f1e ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.532.135/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated cos-gpu-installer to v2.7.7.
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p259.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.10.
+
+### Security
+
+Fixed CVE-2026-68093 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68096 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68129 in the linux kernel
+
+### Security
+
+Fixed CVE-2026-68296 in the Linux kernel.
+
+### Security
+
+Fixed CVE-2026-68386 in the Linux kernel.
+
+### Security
+
+Fixed KCTF-0650f1c in the Linux Kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+---
 ## 2026-08-20
 
 ### Change

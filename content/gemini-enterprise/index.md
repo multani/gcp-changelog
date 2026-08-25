@@ -1,5 +1,40 @@
 # Gemini Enterprise
 
+## 2026-08-24
+
+### Feature
+
+**Gemini Enterprise: D&B Commercial Graph data store (Preview)**
+
+The D&B Commercial Graph data store is available in Public Preview in
+Gemini Enterprise. You can connect D&B Commercial Graph to search and import
+company data using natural language.
+
+For more information, see [Connect D&B Commercial
+Graph](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d-and-b-commercial-graph).
+
+### Feature
+
+**Gemini Enterprise: Cloud Monitoring observability for data connectors**
+
+Cloud Monitoring telemetry for Gemini Enterprise data connectors (also referred
+to as data stores) has been updated with support for new metric dimensions and a
+new latency metric:
+
+* The `discoveryengine.googleapis.com/dataconnector/request_count` count
+  metric has been updated to include three new dimensions: `tool_id` (the
+  identifier of the connector tool invoked), `engine_id` (the Gemini
+  Enterprise app identifier), and `response_code` (the gRPC response status).
+  The existing `status` dimension remains supported.
+* A new latency metric,
+  `discoveryengine.googleapis.com/dataconnector/request_latencies` (Beta), is
+  available to monitor the distribution of tool invocation latency in
+  milliseconds. It includes the dimensions `status`, `response_code`,
+  `tool_id`, and `engine_id`.
+
+For more information, see [Access metrics](https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics).
+
+---
 ## 2026-08-21
 
 ### Feature

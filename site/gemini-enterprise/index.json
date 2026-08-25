@@ -1,6 +1,24 @@
 {
   "name": "Gemini Enterprise",
   "entries": {
+    "2026-08-24": [
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: D&B Commercial Graph data store (Preview)**\n\nThe D&B Commercial Graph data store is available in Public Preview in\nGemini Enterprise. You can connect D&B Commercial Graph to search and import\ncompany data using natural language.\n\nFor more information, see [Connect D&B Commercial\nGraph](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d-and-b-commercial-graph).",
+        "summary": {
+          "title": "Gemini Enterprise: D&B Commercial Graph Preview",
+          "summary": "The D&B Commercial Graph data store is now in Public Preview within Gemini Enterprise. This feature allows you to search and import company data using natural language queries."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: Cloud Monitoring observability for data connectors**\n\nCloud Monitoring telemetry for Gemini Enterprise data connectors (also referred\nto as data stores) has been updated with support for new metric dimensions and a\nnew latency metric:\n\n* The `discoveryengine.googleapis.com/dataconnector/request_count` count\n  metric has been updated to include three new dimensions: `tool_id` (the\n  identifier of the connector tool invoked), `engine_id` (the Gemini\n  Enterprise app identifier), and `response_code` (the gRPC response status).\n  The existing `status` dimension remains supported.\n* A new latency metric,\n  `discoveryengine.googleapis.com/dataconnector/request_latencies` (Beta), is\n  available to monitor the distribution of tool invocation latency in\n  milliseconds. It includes the dimensions `status`, `response_code`,\n  `tool_id`, and `engine_id`.\n\nFor more information, see [Access metrics](https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics).",
+        "summary": {
+          "title": "Enhance data connector observability",
+          "summary": "Cloud Monitoring now offers enhanced observability for Gemini Enterprise data connectors with new metric dimensions and a latency metric. These updates provide deeper insights into connector performance and usage, including tool ID, engine ID, and response codes."
+        }
+      }
+    ],
     "2026-08-21": [
       {
         "kind": "Feature",

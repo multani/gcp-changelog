@@ -2,9 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-08-21T00:00:00+00:00</updated>
+  <updated>2026-08-24T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-08-24:feature:0</id>
+    <published>2026-08-24T00:00:00+00:00</published>
+    <updated>2026-08-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: D&amp;B Commercial Graph data store (Preview)</strong></p>
+<p>The D&amp;B Commercial Graph data store is available in Public Preview in
+Gemini Enterprise. You can connect D&amp;B Commercial Graph to search and import
+company data using natural language.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d-and-b-commercial-graph">Connect D&amp;B Commercial
+Graph</a>.</p>]]></content>
+    <summary>The D&amp;B Commercial Graph data store is now in Public Preview within Gemini Enterprise. This feature allows you to search and import company data using natural language queries.</summary>
+    <title>Feature: Gemini Enterprise: D&amp;B Commercial Graph Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-08-24:feature:1</id>
+    <published>2026-08-24T00:00:00+00:00</published>
+    <updated>2026-08-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Cloud Monitoring observability for data connectors</strong></p>
+<p>Cloud Monitoring telemetry for Gemini Enterprise data connectors (also referred
+to as data stores) has been updated with support for new metric dimensions and a
+new latency metric:</p>
+<ul>
+<li>The <code>discoveryengine.googleapis.com/dataconnector/request_count</code> count
+  metric has been updated to include three new dimensions: <code>tool_id</code> (the
+  identifier of the connector tool invoked), <code>engine_id</code> (the Gemini
+  Enterprise app identifier), and <code>response_code</code> (the gRPC response status).
+  The existing <code>status</code> dimension remains supported.</li>
+<li>A new latency metric,
+  <code>discoveryengine.googleapis.com/dataconnector/request_latencies</code> (Beta), is
+  available to monitor the distribution of tool invocation latency in
+  milliseconds. It includes the dimensions <code>status</code>, <code>response_code</code>,
+  <code>tool_id</code>, and <code>engine_id</code>.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics">Access metrics</a>.</p>]]></content>
+    <summary>Cloud Monitoring now offers enhanced observability for Gemini Enterprise data connectors with new metric dimensions and a latency metric. These updates provide deeper insights into connector performance and usage, including tool ID, engine ID, and response codes.</summary>
+    <title>Feature: Enhance data connector observability</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

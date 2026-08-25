@@ -1,5 +1,29 @@
 # Cluster Toolkit
 
+## 2026-08-13
+
+### Feature
+
+Cluster Toolkit v1.100.0 is available. This release adds the
+`--gke-namespace` flag to enable namespace-aware operations, enables `sauth` by
+default in the Slurm module, and removes topology labels from the `nodeLabels` resources in Kueue
+`ResourceFlavor` objects. For details, see the [release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6136).
+
+---
+## 2026-08-06
+
+### Feature
+
+Cluster Toolkit v1.99.0 is available. This release adds built-in
+Prometheus OpenMetrics telemetry for Slurm version 25.11 and later, promotes toolkit
+telemetry to production, and enhances Slurm resilience to capacity constraints
+and quota errors. This version also enables Multi-Tier Checkpointing (MTC) at
+the job submission stage and adds GKE TPU v4 and v5p examples.
+For details, see the [release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6087).
+
+---
 ## 2026-07-13
 
 ### Feature

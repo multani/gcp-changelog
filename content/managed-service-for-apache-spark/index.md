@@ -1,5 +1,27 @@
 # Managed Service for Apache Spark
 
+## 2026-08-19
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 2.1.118-debian11, 2.1.118-rocky8, 2.1.118-ubuntu20, 2.1.118-ubuntu20-arm
+* 2.2.86-debian12, 2.2.86-rocky9, 2.2.86-ubuntu22, 2.2.86-ubuntu22-arm
+* 2.3.35-debian12, 2.3.35-ml-ubuntu22, 2.3.35-rocky9, 2.3.35-ubuntu22, 2.3.35-ubuntu22-arm
+* 3.0.1-debian13, 3.0.1-ml-ubuntu24, 3.0.1-rocky9, 3.0.1-ubuntu24
+
+Key updates in these image versions include:
+
+* **Iceberg updates**: In the `2.3` image version, 2.3 clusters with Lightning Engine now use Iceberg version `1.10` by default.
+* **OpenLineage updates**: In the `2.2` and `2.3` image versions:
+  + Upgraded OpenLineage to version `1.49` to support lineage for tables created using the Lakehouse Runtime catalog.
+
+### Fixed
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): Fixed a segmentation fault when OpenLineage parses complex SQL query strings.
+
+---
 ## 2026-08-12
 
 ### Announcement

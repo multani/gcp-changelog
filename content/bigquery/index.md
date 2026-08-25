@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-08-24
+
+### Feature
+
+You can now
+[monitor](https://docs.cloud.google.com/bigquery/docs/create-data-agents#monitor_agents_and_conversations)
+the performance, adoption, latency, and costs of your data agents and their
+conversations by using Google Cloud Observability in BigQuery.
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-20
 
 ### Feature

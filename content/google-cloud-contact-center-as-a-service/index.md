@@ -320,7 +320,7 @@ This release addresses the following issues:
 * Fixed an issue where the `parent_id` field was missing from callback call
   responses in the manager API.
 * Fixed an issue where virtual agent transcripts were lost during escalations
-  to live agents.
+  to human agents.
 * Fixed an issue in the agent desktop where the sentiment score appeared in
   the **Call details** panel despite sentiment analysis being turned off in
   the conversation profile.

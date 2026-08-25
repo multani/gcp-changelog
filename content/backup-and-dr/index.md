@@ -13,7 +13,7 @@ For more information, see [Customer-managed encryption keys (CMEK)](https://docs
 
 ### Announcement
 
-Beginning November 1, 2026, Backup and DR Service will automatically apply a project-level lien to any project containing a backup vault with backups protected by enforced retention. To secure project liens against unauthorized removal and manage lien deletion securely, you can configure multi-party approval using Privileged Access Manager (PAM).
+Beginning November 1, 2026, Backup and DR will automatically apply a project-level lien to any project containing a backup vault with backups protected by enforced retention. To secure project liens against unauthorized removal and manage lien deletion securely, you can configure multi-party approval using Privileged Access Manager (PAM).
 
 For more information, see [Protect project liens by using Privileged Access Manager](https://docs.cloud.google.com/backup-disaster-recovery/docs/configuration/project-liens-multi-party-approval) and [Protect projects with liens](https://docs.cloud.google.com/resource-manager/docs/project-liens).
 

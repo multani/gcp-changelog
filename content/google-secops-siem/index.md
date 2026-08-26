@@ -1,5 +1,18 @@
 # Google SecOps SIEM
 
+## 2026-08-26
+
+### Feature
+
+**[Spotlight Feature] Mandiant Frontline Threats rule packs**
+
+[Curated Detections](https://docs.cloud.google.com/chronicle/docs/detection/curated-detections) has been enhanced with additional Mandiant Frontline Threats detections for Linux, MacOS, and Google Cloud. The following rule packs have been added to the [Content Hub](https://docs.cloud.google.com/chronicle/docs/secops/content_hub):
+
+* [Mandiant Frontline Threats for Linux](https://docs.cloud.google.com/chronicle/docs/detection/linux-threats-category)
+* [Mandiant Frontline Threats for MacOS](https://docs.cloud.google.com/chronicle/docs/detection/macos-threats-category)
+* [Mandiant Frontline Threats for Google Cloud](https://docs.cloud.google.com/chronicle/docs/detection/cloud-threats-category#cloud-rule-sets)
+
+---
 ## 2026-08-24
 
 ### Feature

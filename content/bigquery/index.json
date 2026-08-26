@@ -1,6 +1,16 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-08-26": [
+      {
+        "kind": "Security",
+        "content": "An Improper Input Validation vulnerability was discovered in the JDBC driver\nin BigQuery Data Transfer Service versions prior to May 1, 2026.\nAn authenticated attacker could use crafted JDBC connection string parameters\nto achieve remote code execution in the connector container and escalate\nprivileges in the tenant project.\nFor more information, see the\n[GCP-2026-056](https://docs.cloud.google.com/bigquery/docs/security-bulletins#gcp-2026-056) security bulletin.",
+        "summary": {
+          "title": "JDBC Driver Security Update",
+          "summary": "A security vulnerability in the JDBC driver has been addressed. This update resolves an improper input validation issue that could have allowed for remote code execution. It is recommended to update to the latest version to protect your environment."
+        }
+      }
+    ],
     "2026-08-25": [
       {
         "kind": "Feature",

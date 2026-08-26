@@ -1,5 +1,94 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-08-25
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.36.0-gke.532 is now available
+for download. To upgrade, see [Upgrade a cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.36.0-gke.532 runs on Kubernetes v1.36.0-gke.2800.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Feature
+
+Google Distributed Cloud (software only) for VMware includes the following feature
+enhancements:
+
+* Updated the Kubernetes version to 1.36.
+* Upgraded containerd from 2.1 to 2.2
+* Updates vSphere support to vSphere version 9.0 and 9.1 and removes support for
+  vSphere version 7.0.
+* Updated `gkectl` to perform an empty reconciliation health check prior to
+  running the `gkectl update` or `gkectl upgrade` commands. The health check
+  prevents starting cluster lifecycle updates when a cluster is in an unhealthy
+  state.
+* Improved the `status` and `conditions` fields in `OnPrem` custom resources to
+  provide clearer visibility into cluster reconciliation phases and state
+  transitions during cluster management operations.
+* Updated `gkectl` to provide more specific error messages and actionable
+  troubleshooting recommendations when operations encounter failures.
+* Expanded pre-upgrade validation checks to proactively identify potential
+  configuration or cluster health blockers prior to upgrade initiation.
+* This release supports resilient, idempotent migrations to advanced clusters,
+  enabling interrupted upgrades to safely resume without risking cluster
+  degradation or state loss. This update also introduces preflight health
+  checks, improves gkectl error diagnostics, and resolves key behavioral
+  discrepancies in workload scheduling, proxy parsing, and logging.
+
+### Fixed
+
+The following issues were fixed in 1.36.0-gke.532:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where user clusters remained stuck in a `Reconciling` state
+  after an admin cluster upgrade. The admin cluster controller skipped
+  reconciling legacy cluster lifecycle components during upgrades unless an initial
+  migration annotation was set. If legacy user clusters still existed on the
+  admin cluster, missing legacy API discovery (`cluster.k8s.io/v1alpha1`) caused
+  controller reconciliation to stall. With this fix, the controller preserves
+  legacy components as long as any legacy user clusters exist, and prunes them only
+  after all user clusters have migrated to advanced clusters.
+* Fixed an issue where `gkectl prepare` failed with a
+  permission denied error when attempting to read a private
+  registry CA certificate. The certificate file permissions
+  are now set to `644` so non-root processes can read it.
+* Fixed an issue where retrying a failed upgrade to an
+  Advanced Cluster (such as re-running with an existing
+  bootstrap cluster) could wipe or strip the encryption
+  keys in the generated-key-kms-plugin-config secret,
+  preventing the control plane from decrypting existing
+  Kubernetes secrets in etcd.
+* Fixed an issue where upgrading a user cluster with Anthos Network Gateway
+  (ANG) enabled to an Advanced Cluster would stall or fail. Previously, the
+  upgrade process attempted to modify immutable `spec.selector` fields on
+  existing ANG resources. The upgrade operator now preserves existing label
+  selectors during reconciliation so that V1 to V2 cluster migrations complete
+  successfully.
+* Updated `cluster-proportional-autoscaler` to address security vulnerabilities.
+* Fixed an issue where recreating a user cluster using a previously used name
+  caused cluster provisioning to stall indefinitely in the `PROVISIONING` state
+  because of a missing `k8s-health-check` service account.
+* Fixed an issue where `gkectl diagnose` failed to run on non-advanced user
+  clusters managed by an advanced admin cluster.
+* Fixed an issue where creating a cluster on the root of a vSAN datastore failed
+  during data disk creation because the installer used an unsupported API for
+  top-level vSAN directory creation.
+* Fixed an issue where control plane quorum restore stalled or failed due to IP
+  address collisions. After the fix, `gkectl restore quorum` recreates missing
+  `IPAddress` objects for `VSphereMachine` resources before waiting for cluster
+  readiness.
+* Fixed an issue where enabling generated key secrets encryption (KMSv1) during
+  Day 2 cluster updates failed or got stuck in an infinite reconciliation loop.
+* Fixed an issue where setting `stackdriver.disableVsphereResourceMetrics` to
+  `true` caused cluster installations or upgrades to stall because the `vsphere-ca-certificate` ConfigMap was deleted, but still needed.
+
+---
 ## 2026-08-19
 
 ### Announcement

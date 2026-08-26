@@ -1,5 +1,28 @@
 # Cloud Load Balancing
 
+## 2026-08-26
+
+### Feature
+
+SSL policy cross-project referencing is now available for
+Application Load Balancers and proxy Network Load Balancers in **Preview**. You can use
+cross-project referencing to define and maintain a central SSL policy in an
+administrative project and reference it from target HTTPS proxies or target SSL
+proxies in different projects.
+
+Cross-project referencing is supported for global and regional SSL policies. You
+can use cross-project referencing with the following load balancers:
+
+* Global external Application Load Balancer
+* Regional external Application Load Balancer
+* Cross-region internal Application Load Balancer
+* Regional internal Application Load Balancer
+* Global external proxy Network Load Balancer
+
+For more information, see
+[Cross-project SSL policy referencing](https://docs.cloud.google.com/load-balancing/docs/ssl-policies-concepts#cross-project-referencing).
+
+---
 ## 2026-08-19
 
 ### Feature
@@ -26,7 +49,7 @@ path components before forwarding requests to your backends.
 For more information, see [Regular expression URL rewrites for route
 rules](https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-url-rewrite).
 
-This feature is in **Preview.**
+This feature is in **Preview**.
 
 ---
 ## 2026-07-31

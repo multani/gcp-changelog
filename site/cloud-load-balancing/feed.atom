@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-08-19T00:00:00+00:00</updated>
+  <updated>2026-08-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-08-26:feature:0</id>
+    <published>2026-08-26T00:00:00+00:00</published>
+    <updated>2026-08-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>SSL policy cross-project referencing is now available for
+Application Load Balancers and proxy Network Load Balancers in <strong>Preview</strong>. You can use
+cross-project referencing to define and maintain a central SSL policy in an
+administrative project and reference it from target HTTPS proxies or target SSL
+proxies in different projects.</p>
+<p>Cross-project referencing is supported for global and regional SSL policies. You
+can use cross-project referencing with the following load balancers:</p>
+<ul>
+<li>Global external Application Load Balancer</li>
+<li>Regional external Application Load Balancer</li>
+<li>Cross-region internal Application Load Balancer</li>
+<li>Regional internal Application Load Balancer</li>
+<li>Global external proxy Network Load Balancer</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/load-balancing/docs/ssl-policies-concepts#cross-project-referencing">Cross-project SSL policy referencing</a>.</p>]]></content>
+    <summary>SSL policy cross-project referencing is now in Preview for Application Load Balancers and proxy Network Load Balancers. This feature allows you to define a central SSL policy in one project and reference it from target proxies in other projects, simplifying management and consistency. It supports global and regional SSL policies across various load balancer types.</summary>
+    <title>Feature: SSL Policy Cross-Project Referencing for Load Balancers</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -34,9 +60,9 @@ pattern rewrite actions to rewrite URL paths by substituting or removing URL
 path components before forwarding requests to your backends.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-url-rewrite">Regular expression URL rewrites for route
 rules</a>.</p>
-<p>This feature is in <strong>Preview.</strong></p>]]></content>
-    <summary>Application Load Balancers now support regular expression URL rewrites for route rules. This feature allows you to modify URL paths by substituting or removing components before requests are sent to backends. This is a preview feature.</summary>
-    <title>Feature: Url Path Rewriting for Load Balancers</title>
+<p>This feature is in <strong>Preview</strong>.</p>]]></content>
+    <summary>Application Load Balancers now support regular expression URL rewrites for route rules. This allows you to rewrite URL paths by substituting or removing components before forwarding requests to backends. This feature is currently in Preview.</summary>
+    <title>Feature: Url rewrites for route rules</title>
   </entry>
   <entry>
     <author>

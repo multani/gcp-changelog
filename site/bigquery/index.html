@@ -2784,6 +2784,16 @@
 
 
 <h1 id="bigquery">BigQuery</h1>
+<h2 id="2026-08-26">2026-08-26</h2>
+<h3 id="security">Security</h3>
+<p>An Improper Input Validation vulnerability was discovered in the JDBC driver
+in BigQuery Data Transfer Service versions prior to May 1, 2026.
+An authenticated attacker could use crafted JDBC connection string parameters
+to achieve remote code execution in the connector container and escalate
+privileges in the tenant project.
+For more information, see the
+<a href="https://docs.cloud.google.com/bigquery/docs/security-bulletins#gcp-2026-056">GCP-2026-056</a> security bulletin.</p>
+<hr />
 <h2 id="2026-08-25">2026-08-25</h2>
 <h3 id="feature">Feature</h3>
 <p>BigQuery <a href="https://docs.cloud.google.com/bigquery/docs/tags#data-governance-tags">data governance tags</a> are
@@ -3029,7 +3039,7 @@ BigQuery or Apache Spark without migrating data or building
 complex ETL pipelines.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-lakehouse-snowflake">Set up cross-cloud Lakehouse for
 Snowflake</a>.</p>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <p>A Missing Authorization vulnerability was discovered in repositories in
 BigQuery, Dataform, and Colab Enterprise. An authenticated attacker could
 potentially escalate permissions and perform cross-tenant repository takeover.
@@ -5642,6 +5652,9 @@ use the <code>PARTITION BY</code> clause of the
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#bigquery">BigQuery</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-26" class="nav-link">2026-08-26</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-08-25" class="nav-link">2026-08-25</a>
           </li>

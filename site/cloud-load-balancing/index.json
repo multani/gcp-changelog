@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-08-26": [
+      {
+        "kind": "Feature",
+        "content": "SSL policy cross-project referencing is now available for\nApplication Load Balancers and proxy Network Load Balancers in **Preview**. You can use\ncross-project referencing to define and maintain a central SSL policy in an\nadministrative project and reference it from target HTTPS proxies or target SSL\nproxies in different projects.\n\nCross-project referencing is supported for global and regional SSL policies. You\ncan use cross-project referencing with the following load balancers:\n\n* Global external Application Load Balancer\n* Regional external Application Load Balancer\n* Cross-region internal Application Load Balancer\n* Regional internal Application Load Balancer\n* Global external proxy Network Load Balancer\n\nFor more information, see\n[Cross-project SSL policy referencing](https://docs.cloud.google.com/load-balancing/docs/ssl-policies-concepts#cross-project-referencing).",
+        "summary": {
+          "title": "SSL Policy Cross-Project Referencing for Load Balancers",
+          "summary": "SSL policy cross-project referencing is now in Preview for Application Load Balancers and proxy Network Load Balancers. This feature allows you to define a central SSL policy in one project and reference it from target proxies in other projects, simplifying management and consistency. It supports global and regional SSL policies across various load balancer types."
+        }
+      }
+    ],
     "2026-08-19": [
       {
         "kind": "Feature",
@@ -14,10 +24,10 @@
     "2026-08-04": [
       {
         "kind": "Feature",
-        "content": "Regular expression URL rewrites (`regexRewrite`) for route rules in URL maps are\nnow available for Application Load Balancers. You can use regular expression\npattern rewrite actions to rewrite URL paths by substituting or removing URL\npath components before forwarding requests to your backends.\n\nFor more information, see [Regular expression URL rewrites for route\nrules](https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-url-rewrite).\n\nThis feature is in **Preview.**",
+        "content": "Regular expression URL rewrites (`regexRewrite`) for route rules in URL maps are\nnow available for Application Load Balancers. You can use regular expression\npattern rewrite actions to rewrite URL paths by substituting or removing URL\npath components before forwarding requests to your backends.\n\nFor more information, see [Regular expression URL rewrites for route\nrules](https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-url-rewrite).\n\nThis feature is in **Preview**.",
         "summary": {
-          "title": "Url Path Rewriting for Load Balancers",
-          "summary": "Application Load Balancers now support regular expression URL rewrites for route rules. This feature allows you to modify URL paths by substituting or removing components before requests are sent to backends. This is a preview feature."
+          "title": "Url rewrites for route rules",
+          "summary": "Application Load Balancers now support regular expression URL rewrites for route rules. This allows you to rewrite URL paths by substituting or removing components before forwarding requests to backends. This feature is currently in Preview."
         }
       }
     ],

@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-08-25T00:00:00+00:00</updated>
+  <updated>2026-08-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-26:security:0</id>
+    <published>2026-08-26T00:00:00+00:00</published>
+    <updated>2026-08-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>An Improper Input Validation vulnerability was discovered in the JDBC driver
+in BigQuery Data Transfer Service versions prior to May 1, 2026.
+An authenticated attacker could use crafted JDBC connection string parameters
+to achieve remote code execution in the connector container and escalate
+privileges in the tenant project.
+For more information, see the
+<a href="https://docs.cloud.google.com/bigquery/docs/security-bulletins#gcp-2026-056">GCP-2026-056</a> security bulletin.</p>]]></content>
+    <summary>A security vulnerability in the JDBC driver has been addressed. This update resolves an improper input validation issue that could have allowed for remote code execution. It is recommended to update to the latest version to protect your environment.</summary>
+    <title>Security: JDBC Driver Security Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -2,6 +2,14 @@
 
 ## 2026-08-20
 
+### Other
+
+
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
 ### Announcement
 
 Credits for the first month of Gemini Code Assist usage are discontinued.

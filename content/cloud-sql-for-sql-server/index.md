@@ -4,6 +4,12 @@
 
 ### Feature
 
+You can now use the `update_user` tool in the Cloud SQL remote MCP server to update passwords for Cloud SQL for SQL Server database users.
+
+For more information, see [Available tools](https://docs.cloud.google.com/sql/docs/sqlserver/use-cloudsql-mcp#available-tools).
+
+### Feature
+
 The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for `/readonly` and `/instance_manage`. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.
 
 For more information, see [Available toolsets](https://docs.cloud.google.com/sql/docs/sqlserver/use-cloudsql-mcp#available-toolsets).

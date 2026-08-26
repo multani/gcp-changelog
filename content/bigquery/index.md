@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-08-26
+
+### Security
+
+An Improper Input Validation vulnerability was discovered in the JDBC driver
+in BigQuery Data Transfer Service versions prior to May 1, 2026.
+An authenticated attacker could use crafted JDBC connection string parameters
+to achieve remote code execution in the connector container and escalate
+privileges in the tenant project.
+For more information, see the
+[GCP-2026-056](https://docs.cloud.google.com/bigquery/docs/security-bulletins#gcp-2026-056) security bulletin.
+
+---
 ## 2026-08-25
 
 ### Feature

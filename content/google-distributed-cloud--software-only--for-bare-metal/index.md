@@ -1,5 +1,92 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-08-25
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.36.0-gke.532 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.36.0-gke.532 runs on Kubernetes v1.36.0-gke.2800.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+### Feature
+
+Google Distributed Cloud (software only) for bare metal includes the following feature
+enhancements:
+
+* Upgraded the Ansible version to 2.18. This version requires Python 3.8+ on
+  target nodes. Because RHEL 8 defaults to Python 3.6, you must have
+  Python 3.9 installed on nodes using RHEL 8.10. RHEL 8.8 is no
+  longer supported.
+* Updated the Kubernetes version to 1.36.
+* Upgraded containerd from 2.1 to 2.2
+* Containerd is required for new cluster installations and cluster migrations
+  to Node Agent mode.
+* Added support for the layer 4 gateway controller.
+* `bmctl backup cluster` in Node Agent mode requires at least 12 GB of free
+  space in `/tmp` on the admin workstation and all target nodes to buffer backup
+  archives. You can configure a custom temporary directory by setting `TMPDIR`.
+* If you use Node Agent and receive an error that creating the backup fails to
+  create an archive file, you might need 12 GBs of free space in the `/tmp`
+  directory on the admin node and all target nodes. For more information,
+  see [Can't create a backup for a Node Agent node](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/bmctl-backup-restore.md#cant-create-na-backup%7D) .
+* Removed the deprecated `anthos-metadata-agent` component that
+  `kubestore-collector` replaced.
+* Removed the deprecated `csi-snapshot-validation-webhook` component.
+  Upstream Kubernetes validation is now handled natively via Common
+  Expression Language (CEL) rules within the deployed Custom Resource
+  Definitions (CRDs). For more information, see [Volume snapshots](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/volume-snapshots).
+* Vertical pod autoscaling is generally available. For more information, see
+  [Configure vertical Pod autoscaling](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/verticalpodautoscale)
+* Unified registry mirror and private registry update behavior across all
+  cluster types while preserving configurations.
+
+### Fixed
+
+The following issues were fixed in 1.36.0-gke.532:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed an issue where CA certificate secrets with identical names across
+  different namespaces stalled cluster upgrades. In this release, the system
+  automatically prepends the target namespace prefix to all the CA certificate
+  secret names when forwarding them to the destination namespace. The prefix
+  makes sure each CA certificate secret name is unique so the
+  upgrade doesn't stall.
+* Fixed an issue where Certificate Authority (CA) rotation failed for
+  self-managing clusters (admin, hybrid, and standalone). The failure occurs
+  during the final phase of the rotation when attempting to move management
+  resources back from the temporary bootstrap cluster to the self-managing
+  cluster, which can leave the cluster in an unmanageable state. You must
+  upgrade your clusters to version 1.33.1000-gke.59 before you rotate your CAs.
+* Fixed an issue where the status for `Ingress` resources didn't update when
+  using bundled ingress.
+* Fixed an issue where rolling back a node pool failed because stale Cluster API
+  (CAPI) bootstrap secrets retained deprecated `kubelet` flags.
+* Updated `cluster-proportional-autoscaler` to address security vulnerabilities.
+* Fixed an issue where `etcd-events` installation entered an infinite retry loop
+  during machine initialization due to incomplete cleanup of the data directory
+  after a learner promotion failure.
+* Fixed an issue where the `NodePool` controller prematurely updated `Status.ManagedFields`
+  on partial reconciliation failures, causing removed taints and labels to remain
+  stranded on affected nodes.
+* Fixed an issue where recreating a user cluster using a previously used name
+  caused cluster provisioning to stall indefinitely in the `PROVISIONING` state
+  because of a missing `k8s-health-check` Service account.
+* Fixed an issue where restarting `kube-apiserver` during etcd encryption
+  updates abruptly terminates the container, causing stale service endpoints
+  and transient connection failures for in-cluster workloads.
+* Fixed an issue where the installer stalled for three minutes per control
+  plane node during certificate rotation or etcd encryption updates because of
+  an incorrect `kube-apiserver` container termination check.
+
+---
 ## 2026-08-19
 
 ### Announcement

@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Secure Web Proxy</title>
   <subtitle>Changelog for Google Cloud product: Secure Web Proxy</subtitle>
-  <updated>2026-06-16T00:00:00+00:00</updated>
+  <updated>2026-08-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:secure-web-proxy</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/secure-web-proxy/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:secure-web-proxy:2026-08-20:feature:0</id>
+    <published>2026-08-20T00:00:00+00:00</published>
+    <updated>2026-08-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Secure Web Proxy now supports the <a href="https://docs.cloud.google.com/secure-web-proxy/docs/enable-tls-inspection#ca-pool-intermediate-ca-config">local intermediate CA
+signing</a>
+certificate issuance mode for TLS inspection. By using this mode,
+Secure Web Proxy caches a single intermediate certificate authority (CA)
+certificate from your CA pool to sign leaf certificates locally for requested
+domains, reducing certificate issuance requests and transaction costs. To use
+this certificate issuance mode, you must make sure that your CA pool is
+configured to issue intermediate CA certificates.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/secure-web-proxy/docs/tls-inspection-overview#certificate_issuance_modes">Certificate issuance
+modes</a>
+and <a href="https://docs.cloud.google.com/secure-web-proxy/docs/enable-tls-inspection#ca-pool-intermediate-ca-config">Configure a local intermediate CA
+signing</a>.
+This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally
+available (GA)</a>.</p>]]></content>
+    <summary>Secure Web Proxy now supports local intermediate CA signing for TLS inspection. This feature reduces certificate issuance requests and transaction costs by caching a single intermediate CA certificate to sign leaf certificates locally. This update is now generally available.</summary>
+    <title>Feature: Secure Web Proxy supports local CA signing for TLS inspection</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

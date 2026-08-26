@@ -1,5 +1,16 @@
 # Managed Service for Apache Airflow
 
+## 2026-08-25
+
+### Feature
+
+[Managed Airflow Agent](https://docs.cloud.google.com/composer/docs/composer-3/troubleshoot-tasks-and-dag-runs-with-agent)
+is now available in Google Cloud Console. The agent can help you understand,
+diagnose, and resolve issues with failed Airflow tasks and DAG runs, optimize
+your environment's performance, identify existing or potential issues,
+bottlenecks, and areas for optimization.
+
+---
 ## 2026-08-20
 
 ### Announcement

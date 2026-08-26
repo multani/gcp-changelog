@@ -1,5 +1,13 @@
 # Cloud Build
 
+## 2026-08-24
+
+### Security
+
+An Incorrect Authorization vulnerability [CVE-2026-19410](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-19410),
+in GitHub Trigger Comment Control in Cloud Build, was fixed. No customer action is needed.
+
+---
 ## 2026-06-24
 
 ### Security

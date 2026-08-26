@@ -1,5 +1,16 @@
 # Cloud Run
 
+## 2026-08-25
+
+### Feature
+
+[Cloud Run instances](https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run#cloud-run-instances)
+are available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Instances
+are specifically designed for running long-lived and individually addressable
+workloads.
+
+---
 ## 2026-08-19
 
 ### Feature

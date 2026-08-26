@@ -1,5 +1,26 @@
 # Secure Web Proxy
 
+## 2026-08-20
+
+### Feature
+
+Secure Web Proxy now supports the [local intermediate CA
+signing](https://docs.cloud.google.com/secure-web-proxy/docs/enable-tls-inspection#ca-pool-intermediate-ca-config)
+certificate issuance mode for TLS inspection. By using this mode,
+Secure Web Proxy caches a single intermediate certificate authority (CA)
+certificate from your CA pool to sign leaf certificates locally for requested
+domains, reducing certificate issuance requests and transaction costs. To use
+this certificate issuance mode, you must make sure that your CA pool is
+configured to issue intermediate CA certificates.
+
+For more information, see [Certificate issuance
+modes](https://docs.cloud.google.com/secure-web-proxy/docs/tls-inspection-overview#certificate_issuance_modes)
+and [Configure a local intermediate CA
+signing](https://docs.cloud.google.com/secure-web-proxy/docs/enable-tls-inspection#ca-pool-intermediate-ca-config).
+This feature is [generally
+available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-16
 
 ### Feature

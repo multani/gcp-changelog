@@ -1,5 +1,17 @@
 # reCAPTCHA
 
+## 2026-08-25
+
+### Change
+
+Fraud Defense Mobile SDK v18.10.0-beta01 is available for iOS. This
+version includes the following:
+
+* Adds support for macOS desktop and tvOS.
+* Improvements to networking consumption.
+* Improvements to latency and reliability.
+
+---
 ## 2026-07-29
 
 ### Feature

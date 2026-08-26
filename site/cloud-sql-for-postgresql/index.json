@@ -1,6 +1,42 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-08-25": [
+      {
+        "kind": "Feature",
+        "content": "Use assessments ([Preview](https://cloud.google.com/products/#product-launch-stages))\nin [Database Center](https://docs.cloud.google.com/database-center/docs/overview) to assess and test the\nperformance impact of database recommendations before you apply them to your\nproduction database fleet.\n\nThe assessments workflow performs these operations:\n\n* Clones your database instance.\n* Runs benchmarking simulation tests on the clone.\n* Compares the baseline performance of the clone against the performance after\n  you apply the recommended configuration changes.\n\nFor more information, see [Assessments in Database Center](https://docs.cloud.google.com/sql/docs/postgres/assessments-overview).",
+        "summary": {
+          "title": "Assess database changes before applying",
+          "summary": "Database Center now offers assessments to safely test the performance impact of database recommendations. This feature clones your instance, runs simulations, and compares performance before and after applying changes, ensuring a smooth update process for your production database fleet."
+        }
+      }
+    ],
+    "2026-08-11": [
+      {
+        "kind": "Feature",
+        "content": "The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for `/readonly`, `/instance_manage`, and `/query_execution`. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.\n\nFor more information, see [Available toolsets](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#available-toolsets).",
+        "summary": {
+          "title": "Cloud SQL MCP server now supports specialized endpoints",
+          "summary": "The Cloud SQL remote MCP server now supports specialized endpoint URLs for /readonly, /instance_manage, and /query_execution. These specialized URLs allow you to restrict the set of exposed MCP tools based on your security and workflow needs."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the `create_instance` tool in the Cloud SQL remote MCP server to provision free trial instances for testing and development by setting the `free_trial` parameter to `true`.\n\nFor more information, see [Create a free trial instance](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#create-free-trial).",
+        "summary": {
+          "title": "New free trial instances available",
+          "summary": "You can now provision free trial instances for testing and development using the `create_instance` tool. Simply set the `free_trial` parameter to `true` to get started."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "When executing SQL queries using the `execute_sql` or `execute_sql_readonly` tool, setting the `sql_commenter_enabled` parameter to `true` automatically appends sqlcommenter tags (`mcp.tool`, `mcp.server`, `user.identity`, `mcp.client`) to SQL statements for enhanced database observability.\n\nFor more information, see [sqlcommenter tags](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#sqlcommenter).",
+        "summary": {
+          "title": "Enhanced SQL Query Observability",
+          "summary": "You can now automatically append sqlcommenter tags to SQL statements when using the `execute_sql` or `execute_sql_readonly` tool by setting `sql_commenter_enabled` to `true`. This feature significantly enhances database observability by including valuable metadata with your queries."
+        }
+      }
+    ],
     "2026-08-07": [
       {
         "kind": "Change",

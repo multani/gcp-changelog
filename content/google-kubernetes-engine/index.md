@@ -1,5 +1,35 @@
 # Google Kubernetes Engine
 
+## 2026-08-25
+
+### Fixed
+
+Fixed the issue in which GPUDirect-TCPX for `a3-highgpu-8g` machine types was
+incompatible with the Linux kernel version that was used by Container-Optimized
+OS in GKE version 1.34 and later. To prevent errors, GKE blocked creating or
+upgrading node pools that used the `a3-highgpu-8g` machine type to version 1.34
+or later. For more information about this issue, see [GKE known
+issues](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/known-issues#tcpx-cos125).
+
+You can now create or upgrade node pools that use the `a3-highgpu-8g` machine
+type to any of the following GKE versions. **Automatic upgrades of these node
+pools from version 1.33 to version 1.34 or later are no longer blocked.**
+
+* For minor version 1.34, use patch version 1.34.5-gke.1153000 or later.
+* For minor version 1.35, use patch version 1.35.2-gke.1485000 or later.
+* For minor version 1.36 and later, use any available patch version.
+
+In GKE version 1.34 and later, you must use version 3.1.9 or later of the
+GPUDirect-TCPX installer and version 2.0.12 or later of the GPUDirect-TCPX
+sidecar. If you previously installed these components, verify that the container
+images use these versions or later. **To avoid degraded performance or workload
+failures, update your installer and sidecar image versions before the
+`a3-highgpu-8g` node pools are manually or automatically upgraded to version
+1.34 or later.** These container image versions correspond to the upstream
+definitions maintained in the [gpudirect-tcpx GitHub
+repository](https://github.com/GoogleCloudPlatform/container-engine-accelerators/tree/master/gpudirect-tcpx).
+
+---
 ## 2026-08-21
 
 ### Change

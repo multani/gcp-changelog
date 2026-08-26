@@ -1,5 +1,26 @@
 # Database Center
 
+## 2026-08-25
+
+### Feature
+
+Use assessments ([Preview](https://cloud.google.com/products/#product-launch-stages))
+in Database Center to assess and test the performance impact of
+database recommendations before you apply them to your production database fleet.
+
+The assessments workflow performs these operations:
+
+* Clones your database instance.
+* Runs benchmarking simulation tests on the clone.
+* Compares the baseline performance of the clone against the performance after
+  you apply the recommended configuration changes.
+
+Database Center assessments are available only for
+Cloud SQL for PostgreSQL instances.
+
+For more information, see [Create an assessment of a recommendation](https://docs.cloud.google.com/database-center/docs/assessments).
+
+---
 ## 2026-05-22
 
 ### Feature

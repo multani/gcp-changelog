@@ -1,5 +1,88 @@
 # Agent Platform Workbench
 
+## 2026-08-23
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260823-2330-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260823-2330-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260823-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260823-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Scheduled notebook executions now report their final status when the execution user's credentials stop working part way through a run, instead of continuing until the execution timeout.
+
+### Change
+
+
+
+### 20260823-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Scheduled notebook executions now report their final status when the execution user's credentials stop working part way through a run, instead of continuing until the execution timeout.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### M147 Release
+
+
+
+---
 ## 2026-08-16
 
 ### Security
@@ -98,7 +181,7 @@ Fixed the Git panel's grayed out buttons, which were disabled due to an issue wi
 
 
 
-### 20260816-2030-rc0 Release
+### M146 Release
 
 
 

@@ -2,9 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-08-07T00:00:00+00:00</updated>
+  <updated>2026-08-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-08-25:feature:0</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Use assessments (<a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>)
+in <a href="https://docs.cloud.google.com/database-center/docs/overview">Database Center</a> to assess and test the
+performance impact of database recommendations before you apply them to your
+production database fleet.</p>
+<p>The assessments workflow performs these operations:</p>
+<ul>
+<li>Clones your database instance.</li>
+<li>Runs benchmarking simulation tests on the clone.</li>
+<li>Compares the baseline performance of the clone against the performance after
+  you apply the recommended configuration changes.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/assessments-overview">Assessments in Database Center</a>.</p>]]></content>
+    <summary>Database Center now offers assessments to safely test the performance impact of database recommendations. This feature clones your instance, runs simulations, and compares performance before and after applying changes, ensuring a smooth update process for your production database fleet.</summary>
+    <title>Feature: Assess database changes before applying</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-08-11:feature:0</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for <code>/readonly</code>, <code>/instance_manage</code>, and <code>/query_execution</code>. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#available-toolsets">Available toolsets</a>.</p>]]></content>
+    <summary>The Cloud SQL remote MCP server now supports specialized endpoint URLs for /readonly, /instance_manage, and /query_execution. These specialized URLs allow you to restrict the set of exposed MCP tools based on your security and workflow needs.</summary>
+    <title>Feature: Cloud SQL MCP server now supports specialized endpoints</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-08-11:feature:1</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now use the <code>create_instance</code> tool in the Cloud SQL remote MCP server to provision free trial instances for testing and development by setting the <code>free_trial</code> parameter to <code>true</code>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#create-free-trial">Create a free trial instance</a>.</p>]]></content>
+    <summary>You can now provision free trial instances for testing and development using the `create_instance` tool. Simply set the `free_trial` parameter to `true` to get started.</summary>
+    <title>Feature: New free trial instances available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-08-11:feature:2</id>
+    <published>2026-08-11T00:00:00+00:00</published>
+    <updated>2026-08-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When executing SQL queries using the <code>execute_sql</code> or <code>execute_sql_readonly</code> tool, setting the <code>sql_commenter_enabled</code> parameter to <code>true</code> automatically appends sqlcommenter tags (<code>mcp.tool</code>, <code>mcp.server</code>, <code>user.identity</code>, <code>mcp.client</code>) to SQL statements for enhanced database observability.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#sqlcommenter">sqlcommenter tags</a>.</p>]]></content>
+    <summary>You can now automatically append sqlcommenter tags to SQL statements when using the `execute_sql` or `execute_sql_readonly` tool by setting `sql_commenter_enabled` to `true`. This feature significantly enhances database observability by including valuable metadata with your queries.</summary>
+    <title>Feature: Enhanced SQL Query Observability</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

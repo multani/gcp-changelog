@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-08-25
+
+### Feature
+
+BigQuery [data governance tags](https://docs.cloud.google.com/bigquery/docs/tags#data-governance-tags) are
+supported in Terraform. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-24
 
 ### Feature

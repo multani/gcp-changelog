@@ -1,0 +1,143 @@
+{
+  "name": "582.0.0 (2026-08-25)",
+  "entries": {
+    "2026-08-25": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Google Cloud CLI)** Removed the legacy Cloud SQL Proxy V1 component ('cloud\\_sql\\_proxy') from the Google Cloud CLI. All connect commands now rely exclusively on Cloud SQL Auth Proxy V2 ('cloud-sql-proxy').\n* **(API Registry)** Removed `gcloud api-registry mcp servers list` and `gcloud api-registry\n  mcp tools list`. For similar functionality, see Agent Registry at\n  `<https://docs.cloud.google.com/sdk/gcloud/reference/alpha/agent-registry/mcp-servers>`.\n* **(Cloud Services)** Removed `gcloud beta services mcp policies get`, `gcloud beta services mcp\n  policies get-effective`, and `gcloud beta services mcp policies test-enabled`\n  as MCP policies are not required and they have been functioning as no-ops.",
+        "summary": {
+          "title": "CLI components removed",
+          "summary": "Several legacy components and commands have been removed from the gcloud CLI, including the Cloud SQL Proxy V1 component and specific API Registry and Cloud Services commands. Users should refer to updated documentation for alternative functionalities."
+        }
+      },
+      {
+        "kind": "Anthos",
+        "content": "* Updated anthos-cli with newer go version and library dependencies.",
+        "summary": {
+          "title": "Anthos CLI Update",
+          "summary": "The Anthos command-line interface has been updated with newer Go versions and library dependencies. This update ensures improved performance and security for the Anthos platform."
+        }
+      },
+      {
+        "kind": "App Engine",
+        "content": "* Updated the Java SDK to version 5.1.0 build from the open source project\n  <https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.1.0>.\n* Upgraded Jetty 12.0 to 12.0.38 and Jetty 12.1 to 12.1.12.\n* Added gRPC support to the App Engine Images service for image transformations and composition.",
+        "summary": {
+          "title": "App Engine Java SDK Update",
+          "summary": "The App Engine Java SDK has been updated to version 5.1.0, incorporating upgrades to Jetty and adding gRPC support to the Images service for enhanced image transformations."
+        }
+      },
+      {
+        "kind": "App Lifecycle Manager",
+        "content": "* Added `--flags` flag to `gcloud beta app-lifecycle-manager flags releases create` to allow creating flag releases from a list of flag IDs.",
+        "summary": {
+          "title": "App Lifecycle Manager flags release creation",
+          "summary": "You can now create flag releases using a list of flag IDs. This is done by using the new `--flags` flag with the `gcloud beta app-lifecycle-manager flags releases create` command."
+        }
+      },
+      {
+        "kind": "Cloud Composer",
+        "content": "* Enabled Airflow CLI commands for Composer environments running new Airflow 3.3.x versions.",
+        "summary": {
+          "title": "Airflow CLI now available for Composer",
+          "summary": "You can now run Airflow CLI commands for Composer environments. This is available for environments running Airflow 3.3.x versions. This enhancement provides greater flexibility and control over your workflows."
+        }
+      },
+      {
+        "kind": "Cloud Firestore",
+        "content": "* Added support for search shorthands to `gcloud beta firestore indexes composite create`.",
+        "summary": {
+          "title": "New Firestore Indexing Features",
+          "summary": "Enhance your Firestore database with new shorthand options for creating composite indexes using `gcloud beta firestore indexes composite create`. This update simplifies index management and improves query performance."
+        }
+      },
+      {
+        "kind": "Cloud Key Management Service",
+        "content": "* Added `--protection-level` and `--crypto-key-backend` flags to `gcloud kms keys versions update` command.",
+        "summary": {
+          "title": "KMS Key Version Update Enhancements",
+          "summary": "The Cloud Key Management Service now supports updating key versions with new protection levels and crypto key backends via the `gcloud kms keys versions update` command. This provides greater flexibility in managing cryptographic keys."
+        }
+      },
+      {
+        "kind": "Cloud Managed Kafka",
+        "content": "* Released 'broker-disk' flags to GA.",
+        "summary": {
+          "title": "Managed Kafka Broker Disk Flags Now Generally Available",
+          "summary": "We are pleased to announce that the 'broker-disk' flags for Managed Kafka have reached General Availability (GA). This release enhances control over broker disk configurations, providing more flexibility for your Kafka deployments."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Promote `gcloud run instances` commands to the beta track.\n* Added `--delay-execution` flag to `gcloud beta run jobs` command groups to\n  allow run job execution within a delay window.\n* Added `--run-upload` flag to `gcloud beta run deploy` to specify that the source should be uploaded via the Cloud Run UploadSource API.",
+        "summary": {
+          "title": "Cloud Run updates: Instance commands and job execution",
+          "summary": "The `gcloud run instances` commands are now in beta. You can also now delay the execution of Cloud Run jobs using the `--delay-execution` flag and specify source uploads via the Cloud Run UploadSource API with the `--run-upload` flag."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Updated 'cloud-sql-proxy' packaged component to use 2.25.2 of the Cloud SQL\n  Proxy.",
+        "summary": {
+          "title": "Cloud SQL Proxy Updated",
+          "summary": "The Cloud SQL Proxy has been updated to version 2.25.2. This update ensures improved performance and security for your database connections."
+        }
+      },
+      {
+        "kind": "Cloud Spanner Emulator",
+        "content": "* Added `--remote_functions_host_port` flag to Spanner emulator start command.\n  This flag allows Spanner emulator to connect to a Functions Framework\n  instance that hosts implementation of Remote User Defined Functions.",
+        "summary": {
+          "title": "Spanner emulator supports remote functions",
+          "summary": "The Spanner emulator now supports connecting to a Functions Framework instance for remote user-defined functions. This is enabled by the new --remote_functions_host_port flag, allowing for more flexible function implementations."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Changed the default value of `--pool-size` flag for `gcloud workstations\n  configs create` and `gcloud beta workstations configs create` to 1. To\n  explicitly create a configuration without a fast start pool, run with\n  `--pool-size=0`.",
+        "summary": {
+          "title": "Cloud Workstations default pool size changed",
+          "summary": "The default value for the `--pool-size` flag in `gcloud workstations configs create` and `gcloud beta workstations configs create` has been updated to 1. To disable the fast start pool, set `--pool-size=0`."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `gcloud compute composite-health-checks test-iam-permissions` command to test IAM permissions on a Compute Engine composite health check in `alpha`, `beta`, and `GA`.\n* Added `--security-settings-client-tls-policy`, `--security-settings-subject-alt-names`, and `--security-settings-aws-v4-*` flags to `gcloud compute backend-services create` and `update` commands.\n* Added allowed value `asn` to flags `--enforce-on-key` and `--enforce-on-key-configs` to `gcloud compute security-policies rules create` and `update` commands in alpha, beta, and GA.\n* Added `gcloud beta compute service-attachments test-iam-permissions` command to test IAM permissions on a service attachment.\n* Added `--consistent-hash-http-header-name` flag to\n  `gcloud compute backend-services create` and `update` commands.\n* Added `BMSAI` support to `--confidential-compute-type` option in `gcloud compute instances create` and `bulk create` commands.\n* Promoted identity support for Backend Services to GA.",
+        "summary": {
+          "title": "Compute Engine Updates",
+          "summary": "New commands and flags are available for managing Compute Engine resources, including IAM permission testing, security settings, and network policies. Updates also include enhanced backend service identity support and confidential computing options."
+        }
+      },
+      {
+        "kind": "Design Center",
+        "content": "* Added `gcloud design-center spaces application-templates export` command to export IaC for an application template.\n* Added `gcloud design-center spaces application-templates revisions export` command to export IaC for an application template revision.",
+        "summary": {
+          "title": "Export application templates",
+          "summary": "You can now export Infrastructure as Code (IaC) for application templates and their revisions using new gcloud design-center commands. This allows for easier management and version control of your application template configurations."
+        }
+      },
+      {
+        "kind": "Developer Connect",
+        "content": "* Promoted `gcloud developer-connect account-connectors` commands to GA.",
+        "summary": {
+          "title": "Account Connectors Now Generally Available",
+          "summary": "We are excited to announce that the `gcloud developer-connect account-connectors` commands have been promoted to General Availability. This release signifies a major step forward in simplifying your cloud development workflows."
+        }
+      },
+      {
+        "kind": "Orchestration Pipelines",
+        "content": "* Added `gcloud beta orchestration-pipelines` command group to manage Orchestration Pipelines.",
+        "summary": {
+          "title": "Manage Orchestration Pipelines",
+          "summary": "A new command group, `gcloud beta orchestration-pipelines`, has been added to manage Orchestration Pipelines. This simplifies the process of controlling and deploying your pipeline workflows."
+        }
+      },
+      {
+        "kind": "Vmware Engine",
+        "content": "* Added `gcloud vmware private-clouds migrate-management-vms` which migrates the management VMs of a private cloud from the current management cluster to a workload cluster.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Migrate VMware Engine management VMs",
+          "summary": "You can now migrate VMware Engine management VMs from the current management cluster to a workload cluster using the `gcloud vmware private-clouds migrate-management-vms` command. This feature enhances flexibility in managing your private cloud infrastructure."
+        }
+      }
+    ]
+  }
+}

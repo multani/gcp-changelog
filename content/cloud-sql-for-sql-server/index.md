@@ -1,5 +1,14 @@
 # Cloud SQL for SQL Server
 
+## 2026-08-11
+
+### Feature
+
+The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for `/readonly` and `/instance_manage`. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.
+
+For more information, see [Available toolsets](https://docs.cloud.google.com/sql/docs/sqlserver/use-cloudsql-mcp#available-toolsets).
+
+---
 ## 2026-08-07
 
 ### Change

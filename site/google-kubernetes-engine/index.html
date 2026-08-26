@@ -185,6 +185,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          582 0 0  2026 08 25  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../582-0-0--2026-08-25-/" class="dropdown-item">582.0.0 (2026-08-25)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -2772,6 +2784,32 @@
 
 
 <h1 id="google-kubernetes-engine">Google Kubernetes Engine</h1>
+<h2 id="2026-08-25">2026-08-25</h2>
+<h3 id="fixed">Fixed</h3>
+<p>Fixed the issue in which GPUDirect-TCPX for <code>a3-highgpu-8g</code> machine types was
+incompatible with the Linux kernel version that was used by Container-Optimized
+OS in GKE version 1.34 and later. To prevent errors, GKE blocked creating or
+upgrading node pools that used the <code>a3-highgpu-8g</code> machine type to version 1.34
+or later. For more information about this issue, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/known-issues#tcpx-cos125">GKE known
+issues</a>.</p>
+<p>You can now create or upgrade node pools that use the <code>a3-highgpu-8g</code> machine
+type to any of the following GKE versions. <strong>Automatic upgrades of these node
+pools from version 1.33 to version 1.34 or later are no longer blocked.</strong></p>
+<ul>
+<li>For minor version 1.34, use patch version 1.34.5-gke.1153000 or later.</li>
+<li>For minor version 1.35, use patch version 1.35.2-gke.1485000 or later.</li>
+<li>For minor version 1.36 and later, use any available patch version.</li>
+</ul>
+<p>In GKE version 1.34 and later, you must use version 3.1.9 or later of the
+GPUDirect-TCPX installer and version 2.0.12 or later of the GPUDirect-TCPX
+sidecar. If you previously installed these components, verify that the container
+images use these versions or later. <strong>To avoid degraded performance or workload
+failures, update your installer and sidecar image versions before the
+<code>a3-highgpu-8g</code> node pools are manually or automatically upgraded to version
+1.34 or later.</strong> These container image versions correspond to the upstream
+definitions maintained in the <a href="https://github.com/GoogleCloudPlatform/container-engine-accelerators/tree/master/gpudirect-tcpx">gpudirect-tcpx GitHub
+repository</a>.</p>
+<hr />
 <h2 id="2026-08-21">2026-08-21</h2>
 <h3 id="change">Change</h3>
 <p>Per the <a href="#June_10_2026">June 10, 2026 release note</a>, the configuration option to
@@ -8887,7 +8925,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>A fix is available for an issue that caused incomplete file reads and premature
 end-of-file (EOF) errors when you used the Cloud Storage FUSE CSI driver on
 ARM64 nodes that use 64 KiB page sizes, such as A4X and A4X Max instances. This
@@ -9393,7 +9431,7 @@ each updated Container-Optimized OS image:</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>In GKE versions earlier than 1.34.6-gke.1154000 and
 1.35.2-gke.1691000, mounting Cloud Storage buckets by using the
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/cloud-storage-fuse-csi-driver">Cloud Storage FUSE CSI driver</a>
@@ -15446,7 +15484,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2026-01-06">2026-01-06</h2>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>A fix is available for the <a href="#December_16_2025">December 16, 2025</a> issue in which
 Autopilot nodes enter into a state where new system Pods and user Pods are
 unable to run due to NRI RunPodSandbox failures. For more details, including
@@ -16312,7 +16350,7 @@ nodes by using these tags in firewall policies. For more information, see
 <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/tags-firewall-policies">Selectively enforce firewall policies in GKE</a>.</p>
 <hr />
 <h2 id="2025-12-08">2025-12-08</h2>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>The <a href="https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#October_14_2025">October 14, 2025</a>
 issue in which MountVolume calls for network file system (NFS) volumes might
 fail is fixed for GKE versions 1.34.1-gke.2877000 and later.</p>
@@ -21113,7 +21151,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>A fix is available for an issue with Cloud Storage FUSE CSI driver that could
 cause Pod to be stuck during startup after a node restart event.
 Cloud Storage FUSE CSI driver now gracefully handles a node restart behavior.</p>
@@ -21763,7 +21801,7 @@ multiple days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>A fix is available for an issue where the <code>device-fs-monitor</code> component in the
 Node Problem Detector generated false <code>ReadOnlyLocalSSDDetected</code> warnings on
 nodes that did not have local SSDs. This could cause customer confusion and
@@ -22422,7 +22460,7 @@ multiple days to complete across all Google Cloud zones.</p>
 <h2 id="2025-08-05">2025-08-05</h2>
 <h3 id="feature_96">Feature</h3>
 <p>The <a href="https://cloud.google.com/compute/docs/memory-optimized-machines#m4_series">M4 machine series</a> is generally available in GKE Standard clusters.</p>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI
 driver failed with an <code>invalid cpuString</code> error on GKE nodes that used custom
 machine types. This issue prevented successful attachment and mounting of
@@ -22818,7 +22856,7 @@ maintenance, we recommend that you do the following:</p>
   in your cluster that require access to the Kubernetes API, avoid scheduling
   these operations during maintenance windows.</li>
 </ul>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p><strong>Important:</strong> This note is incorrect. For the correct note, see the entry for
 <a href="#csi-fix-20250805">August 5, 2025</a>.</p>
 <p>A fix is available for an issue in which the Compute Engine Persistent Disk CSI
@@ -23301,12 +23339,12 @@ multiple days to complete across all Google Cloud zones.</p>
 <ul>
 <li>Updated the validation checks for cluster upgrades to enforce the <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/how-to/upgrade-lifecycle#version_skew">cluster version skew rules</a> for user clusters.</li>
 </ul>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>The following issues were fixed in 1.31.700-gke.72:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>The following issues were fixed in 1.31.700-gke.72:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
@@ -23339,14 +23377,14 @@ about setting node labels in compute classes, see the
 <p>Google Distributed Cloud (software only) for VMware 1.32.200-gke.104 is now available for <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/downloads">download</a>. To upgrade, see <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading">Upgrade a cluster</a>. Google Distributed Cloud 1.32.200-gke.104 runs on Kubernetes v1.32.4-gke.1000.</p>
 <p>If you are using a third-party storage vendor, check the <a href="https://cloud.google.com/anthos/docs/resources/partner-storage">GDC Ready storage partners</a> document to make sure the storage vendor has already passed the qualification for this release.</p>
 <p>After a release, it takes approximately 7 to 14 days for the version to become available for use with <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/cluster-lifecycle-management-tools">GKE On-Prem API clients</a>: the Google Cloud console, the gcloud CLI, and Terraform.</p>
-<h3 id="fixed_10">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <p>The following issues were fixed in 1.32.200-gke.104:</p>
 <ul>
 <li>Fixed a <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#keepalived-config-issue">known issue</a> where Keepalived failover is blocked when the corresponding HAProxy instance is unreachable. This issue prevented the control plane VIP from being made available on a new, healthy node.</li>
 <li>Fixed an issue that caused nodes to get stuck in maintenance mode. Health checks have been updated so that the network check job skips connectivity checks for nodes that are in maintenance mode.</li>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
 </ul>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>The following issues were fixed in 1.32.200-gke.104:</p>
 <ul>
 <li>Fixed vulnerabilities listed in <a href="https://cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
@@ -23522,7 +23560,7 @@ days to complete across all Google Cloud zones.</p>
 </ul>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="fixed_12">Fixed</h3>
+<h3 id="fixed_13">Fixed</h3>
 <p>Windows NVMe attached disks are supported only in GKE version
 1.33.2-gke.1240000 and later. In earlier GKE versions, creating
 PersistentVolumeClaims on Windows nodes that use NVMe volumes results in errors.
@@ -25321,6 +25359,9 @@ zones.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-kubernetes-engine">Google Kubernetes Engine</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-25" class="nav-link">2026-08-25</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-08-21" class="nav-link">2026-08-21</a>
           </li>

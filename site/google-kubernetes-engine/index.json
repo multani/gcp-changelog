@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-08-25": [
+      {
+        "kind": "Fixed",
+        "content": "Fixed the issue in which GPUDirect-TCPX for `a3-highgpu-8g` machine types was\nincompatible with the Linux kernel version that was used by Container-Optimized\nOS in GKE version 1.34 and later. To prevent errors, GKE blocked creating or\nupgrading node pools that used the `a3-highgpu-8g` machine type to version 1.34\nor later. For more information about this issue, see [GKE known\nissues](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/known-issues#tcpx-cos125).\n\nYou can now create or upgrade node pools that use the `a3-highgpu-8g` machine\ntype to any of the following GKE versions. **Automatic upgrades of these node\npools from version 1.33 to version 1.34 or later are no longer blocked.**\n\n* For minor version 1.34, use patch version 1.34.5-gke.1153000 or later.\n* For minor version 1.35, use patch version 1.35.2-gke.1485000 or later.\n* For minor version 1.36 and later, use any available patch version.\n\nIn GKE version 1.34 and later, you must use version 3.1.9 or later of the\nGPUDirect-TCPX installer and version 2.0.12 or later of the GPUDirect-TCPX\nsidecar. If you previously installed these components, verify that the container\nimages use these versions or later. **To avoid degraded performance or workload\nfailures, update your installer and sidecar image versions before the\n`a3-highgpu-8g` node pools are manually or automatically upgraded to version\n1.34 or later.** These container image versions correspond to the upstream\ndefinitions maintained in the [gpudirect-tcpx GitHub\nrepository](https://github.com/GoogleCloudPlatform/container-engine-accelerators/tree/master/gpudirect-tcpx).",
+        "summary": {
+          "title": "GPUDirect-TCPX compatibility fix for a3-highgpu-8g nodes",
+          "summary": "The incompatibility between GPUDirect-TCPX and the Linux kernel in Container-Optimized OS for `a3-highgpu-8g` machine types in GKE versions 1.34+ has been resolved. You can now create or upgrade node pools using these machine types to GKE 1.34 and later. Ensure you update the GPUDirect-TCPX installer and sidecar to the recommended versions to avoid performance issues."
+        }
+      }
+    ],
     "2026-08-21": [
       {
         "kind": "Change",

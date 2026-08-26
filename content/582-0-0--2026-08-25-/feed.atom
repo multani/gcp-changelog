@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 582.0.0 (2026-08-25)</title>
+  <subtitle>Changelog for Google Cloud product: 582.0.0 (2026-08-25)</subtitle>
+  <updated>2026-08-25T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/582-0-0--2026-08-25-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:breaking changes:0</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Google Cloud CLI)</strong> Removed the legacy Cloud SQL Proxy V1 component ('cloud_sql_proxy') from the Google Cloud CLI. All connect commands now rely exclusively on Cloud SQL Auth Proxy V2 ('cloud-sql-proxy').</li>
+<li><strong>(API Registry)</strong> Removed <code>gcloud api-registry mcp servers list</code> and <code>gcloud api-registry
+  mcp tools list</code>. For similar functionality, see Agent Registry at
+  <code>&lt;https://docs.cloud.google.com/sdk/gcloud/reference/alpha/agent-registry/mcp-servers&gt;</code>.</li>
+<li><strong>(Cloud Services)</strong> Removed <code>gcloud beta services mcp policies get</code>, <code>gcloud beta services mcp
+  policies get-effective</code>, and <code>gcloud beta services mcp policies test-enabled</code>
+  as MCP policies are not required and they have been functioning as no-ops.</li>
+</ul>]]></content>
+    <summary>Several legacy components and commands have been removed from the gcloud CLI, including the Cloud SQL Proxy V1 component and specific API Registry and Cloud Services commands. Users should refer to updated documentation for alternative functionalities.</summary>
+    <title>Breaking Changes: CLI components removed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:anthos:1</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated anthos-cli with newer go version and library dependencies.</li>
+</ul>]]></content>
+    <summary>The Anthos command-line interface has been updated with newer Go versions and library dependencies. This update ensures improved performance and security for the Anthos platform.</summary>
+    <title>Anthos: Anthos CLI Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:app engine:2</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated the Java SDK to version 5.1.0 build from the open source project
+  <a href="https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.1.0">https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.1.0</a>.</li>
+<li>Upgraded Jetty 12.0 to 12.0.38 and Jetty 12.1 to 12.1.12.</li>
+<li>Added gRPC support to the App Engine Images service for image transformations and composition.</li>
+</ul>]]></content>
+    <summary>The App Engine Java SDK has been updated to version 5.1.0, incorporating upgrades to Jetty and adding gRPC support to the Images service for enhanced image transformations.</summary>
+    <title>App Engine: App Engine Java SDK Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:app lifecycle manager:3</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--flags</code> flag to <code>gcloud beta app-lifecycle-manager flags releases create</code> to allow creating flag releases from a list of flag IDs.</li>
+</ul>]]></content>
+    <summary>You can now create flag releases using a list of flag IDs. This is done by using the new `--flags` flag with the `gcloud beta app-lifecycle-manager flags releases create` command.</summary>
+    <title>App Lifecycle Manager: App Lifecycle Manager flags release creation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud composer:4</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Enabled Airflow CLI commands for Composer environments running new Airflow 3.3.x versions.</li>
+</ul>]]></content>
+    <summary>You can now run Airflow CLI commands for Composer environments. This is available for environments running Airflow 3.3.x versions. This enhancement provides greater flexibility and control over your workflows.</summary>
+    <title>Cloud Composer: Airflow CLI now available for Composer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud firestore:5</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for search shorthands to <code>gcloud beta firestore indexes composite create</code>.</li>
+</ul>]]></content>
+    <summary>Enhance your Firestore database with new shorthand options for creating composite indexes using `gcloud beta firestore indexes composite create`. This update simplifies index management and improves query performance.</summary>
+    <title>Cloud Firestore: New Firestore Indexing Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud key management service:6</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--protection-level</code> and <code>--crypto-key-backend</code> flags to <code>gcloud kms keys versions update</code> command.</li>
+</ul>]]></content>
+    <summary>The Cloud Key Management Service now supports updating key versions with new protection levels and crypto key backends via the `gcloud kms keys versions update` command. This provides greater flexibility in managing cryptographic keys.</summary>
+    <title>Cloud Key Management Service: KMS Key Version Update Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud managed kafka:7</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Released 'broker-disk' flags to GA.</li>
+</ul>]]></content>
+    <summary>We are pleased to announce that the 'broker-disk' flags for Managed Kafka have reached General Availability (GA). This release enhances control over broker disk configurations, providing more flexibility for your Kafka deployments.</summary>
+    <title>Cloud Managed Kafka: Managed Kafka Broker Disk Flags Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud run:8</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promote <code>gcloud run instances</code> commands to the beta track.</li>
+<li>Added <code>--delay-execution</code> flag to <code>gcloud beta run jobs</code> command groups to
+  allow run job execution within a delay window.</li>
+<li>Added <code>--run-upload</code> flag to <code>gcloud beta run deploy</code> to specify that the source should be uploaded via the Cloud Run UploadSource API.</li>
+</ul>]]></content>
+    <summary>The `gcloud run instances` commands are now in beta. You can also now delay the execution of Cloud Run jobs using the `--delay-execution` flag and specify source uploads via the Cloud Run UploadSource API with the `--run-upload` flag.</summary>
+    <title>Cloud Run: Cloud Run updates: Instance commands and job execution</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud sql:9</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated 'cloud-sql-proxy' packaged component to use 2.25.2 of the Cloud SQL
+  Proxy.</li>
+</ul>]]></content>
+    <summary>The Cloud SQL Proxy has been updated to version 2.25.2. This update ensures improved performance and security for your database connections.</summary>
+    <title>Cloud SQL: Cloud SQL Proxy Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud spanner emulator:10</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--remote_functions_host_port</code> flag to Spanner emulator start command.
+  This flag allows Spanner emulator to connect to a Functions Framework
+  instance that hosts implementation of Remote User Defined Functions.</li>
+</ul>]]></content>
+    <summary>The Spanner emulator now supports connecting to a Functions Framework instance for remote user-defined functions. This is enabled by the new --remote_functions_host_port flag, allowing for more flexible function implementations.</summary>
+    <title>Cloud Spanner Emulator: Spanner emulator supports remote functions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:cloud workstations:11</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Changed the default value of <code>--pool-size</code> flag for <code>gcloud workstations
+  configs create</code> and <code>gcloud beta workstations configs create</code> to 1. To
+  explicitly create a configuration without a fast start pool, run with
+  <code>--pool-size=0</code>.</li>
+</ul>]]></content>
+    <summary>The default value for the `--pool-size` flag in `gcloud workstations configs create` and `gcloud beta workstations configs create` has been updated to 1. To disable the fast start pool, set `--pool-size=0`.</summary>
+    <title>Cloud Workstations: Cloud Workstations default pool size changed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:compute engine:12</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud compute composite-health-checks test-iam-permissions</code> command to test IAM permissions on a Compute Engine composite health check in <code>alpha</code>, <code>beta</code>, and <code>GA</code>.</li>
+<li>Added <code>--security-settings-client-tls-policy</code>, <code>--security-settings-subject-alt-names</code>, and <code>--security-settings-aws-v4-*</code> flags to <code>gcloud compute backend-services create</code> and <code>update</code> commands.</li>
+<li>Added allowed value <code>asn</code> to flags <code>--enforce-on-key</code> and <code>--enforce-on-key-configs</code> to <code>gcloud compute security-policies rules create</code> and <code>update</code> commands in alpha, beta, and GA.</li>
+<li>Added <code>gcloud beta compute service-attachments test-iam-permissions</code> command to test IAM permissions on a service attachment.</li>
+<li>Added <code>--consistent-hash-http-header-name</code> flag to
+  <code>gcloud compute backend-services create</code> and <code>update</code> commands.</li>
+<li>Added <code>BMSAI</code> support to <code>--confidential-compute-type</code> option in <code>gcloud compute instances create</code> and <code>bulk create</code> commands.</li>
+<li>Promoted identity support for Backend Services to GA.</li>
+</ul>]]></content>
+    <summary>New commands and flags are available for managing Compute Engine resources, including IAM permission testing, security settings, and network policies. Updates also include enhanced backend service identity support and confidential computing options.</summary>
+    <title>Compute Engine: Compute Engine Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:design center:13</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud design-center spaces application-templates export</code> command to export IaC for an application template.</li>
+<li>Added <code>gcloud design-center spaces application-templates revisions export</code> command to export IaC for an application template revision.</li>
+</ul>]]></content>
+    <summary>You can now export Infrastructure as Code (IaC) for application templates and their revisions using new gcloud design-center commands. This allows for easier management and version control of your application template configurations.</summary>
+    <title>Design Center: Export application templates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:developer connect:14</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud developer-connect account-connectors</code> commands to GA.</li>
+</ul>]]></content>
+    <summary>We are excited to announce that the `gcloud developer-connect account-connectors` commands have been promoted to General Availability. This release signifies a major step forward in simplifying your cloud development workflows.</summary>
+    <title>Developer Connect: Account Connectors Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:orchestration pipelines:15</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta orchestration-pipelines</code> command group to manage Orchestration Pipelines.</li>
+</ul>]]></content>
+    <summary>A new command group, `gcloud beta orchestration-pipelines`, has been added to manage Orchestration Pipelines. This simplifies the process of controlling and deploying your pipeline workflows.</summary>
+    <title>Orchestration Pipelines: Manage Orchestration Pipelines</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:582-0-0--2026-08-25-:2026-08-25:vmware engine:16</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud vmware private-clouds migrate-management-vms</code> which migrates the management VMs of a private cloud from the current management cluster to a workload cluster.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>You can now migrate VMware Engine management VMs from the current management cluster to a workload cluster using the `gcloud vmware private-clouds migrate-management-vms` command. This feature enhances flexibility in managing your private cloud infrastructure.</summary>
+    <title>Vmware Engine: Migrate VMware Engine management VMs</title>
+  </entry>
+</feed>

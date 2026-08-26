@@ -63,6 +63,27 @@ Additionally, this release introduces several database flag changes.
 For more information about MySQL database flags, see [Configure database flags](https://docs.cloud.google.com/sql/docs/mysql/flags).
 
 ---
+## 2026-08-11
+
+### Feature
+
+The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for `/readonly`, `/instance_manage`, and `/query_execution`. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.
+
+For more information, see [Available toolsets](https://docs.cloud.google.com/sql/docs/mysql/use-cloudsql-mcp#available-toolsets).
+
+### Feature
+
+You can now use the `create_instance` tool in the Cloud SQL remote MCP server to provision free trial instances for testing and development by setting the `free_trial` parameter to `true`.
+
+For more information, see [Create a free trial instance](https://docs.cloud.google.com/sql/docs/mysql/use-cloudsql-mcp#create-free-trial).
+
+### Feature
+
+When executing SQL queries using the `execute_sql` or `execute_sql_readonly` tool, setting the `sql_commenter_enabled` parameter to `true` automatically appends sqlcommenter tags (`mcp.tool`, `mcp.server`, `user.identity`, `mcp.client`) to SQL statements for enhanced database observability.
+
+For more information, see [sqlcommenter tags](https://docs.cloud.google.com/sql/docs/mysql/use-cloudsql-mcp#sqlcommenter).
+
+---
 ## 2026-08-05
 
 ### Feature

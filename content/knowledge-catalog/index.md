@@ -1,5 +1,20 @@
 # Knowledge Catalog
 
+## 2026-08-26
+
+### Feature
+
+Knowledge Catalog support for importing metadata from dbt Core and MetricFlow is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+You can use the `gcloud alpha dataplex dbt metadata-jobs` command to extract and
+import technical, semantic (MetricFlow), operational, data quality, and lineage
+metadata from dbt Core artifacts into Knowledge Catalog.
+
+For more information, see [Import metadata from dbt Core](https://docs.cloud.google.com/dataplex/docs/dbt-transfer)
+and [About metadata connectors](https://docs.cloud.google.com/dataplex/docs/connectors).
+
+---
 ## 2026-07-24
 
 ### Feature

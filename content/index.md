@@ -194,6 +194,7 @@
 - [Network Intelligence Center](network-intelligence-center/index.md)
 - [Network Security Integration](network-security-integration/index.md)
 - [Oracle Database@Google Cloud](oracle-database-google-cloud/index.md)
+- [Oracle on Google Cloud Compute](oracle-on-google-cloud-compute/index.md)
 - [Organization Policy](organization-policy/index.md)
 - [Organization Policy Service](organization-policy-service/index.md)
 - [Policy Controller](policy-controller/index.md)

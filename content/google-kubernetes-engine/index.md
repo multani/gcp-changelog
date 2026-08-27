@@ -1,5 +1,23 @@
 # Google Kubernetes Engine
 
+## 2026-08-26
+
+### Feature
+
+In GKE version 1.36 and later, GCPAuthzPolicy and GCPAuthzExtension resources
+for GKE Gateway are now available in Preview. You can use these resources to
+enforce identity-based access control and zero-trust authorization on incoming
+traffic at the Gateway layer. These capabilities are supported on the following
+GatewayClasses:
+
+* gke-l7-global-external-managed
+* gke-l7-regional-external-managed
+* gke-l7-rilb
+
+For more information, see [Configure the GCPAuthzExtension
+resource](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gke-service-extensions#configure-gcp-authz-ext).
+
+---
 ## 2026-08-25
 
 ### Fixed

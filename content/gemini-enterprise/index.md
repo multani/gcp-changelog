@@ -1,5 +1,34 @@
 # Gemini Enterprise
 
+## 2026-08-26
+
+### Feature
+
+**Gemini Enterprise: Updates to A2UI Material catalog component properties**
+
+The [A2UI component gallery
+reference](https://docs.cloud.google.com/gemini/enterprise/docs/a2ui-agents/a2ui-component-gallery-reference)
+has been updated to reflect the latest A2UI version v0.9 Material catalog
+component properties and schema:
+
+* **`MaterialButton`**: Added support for Material 3 styling properties
+  (`appearance`, `disableRipple`, and `extended`), along with new variants
+  (`icon`, `fab`, and `mini-fab`). Obsolete `color` and ARIA description
+  properties have been removed.
+* **Validation `checks`**: Replaced the static `required` boolean property
+  across input components (`MaterialCheckbox`, `MaterialDatepicker`,
+  `MaterialInput`, `MaterialSelect`, and `MaterialTimepicker`) with the
+  reactive validation `checks` rule array.
+* **`MaterialIcon` and `MaterialChips`**: Added the `tooltip` property on
+  `MaterialIcon` and the `action` property on `MaterialChips`.
+* **Layout and input types**: Documented all supported `justify` alignment
+  values for `MaterialColumn` and `MaterialRow`, and updated allowed input
+  types for `MaterialInput`.
+
+For more information, see [A2UI component gallery
+reference](https://docs.cloud.google.com/gemini/enterprise/docs/a2ui-agents/a2ui-component-gallery-reference).
+
+---
 ## 2026-08-24
 
 ### Feature

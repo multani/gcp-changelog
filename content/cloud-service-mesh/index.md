@@ -1,5 +1,77 @@
 # Cloud Service Mesh
 
+## 2026-08-26
+
+### Announcement
+
+**1.29.7-asm.2 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.29.7-asm.2 uses Envoy v1.35.14.
+
+This release resolves the security vulnerabilities listed in Security Bulletin
+[GCP-2026-057](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057).
+
+### Fixed
+
+Patch 1.29.7-asm.2 contains the fix for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704) | Yes | Yes | No | Yes | Medium (5.5) |
+
+### Announcement
+
+**1.28.10-asm.24 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade). Cloud Service
+Mesh 1.28.10-asm.24 uses Envoy v1.36.10.
+
+This release resolves the security vulnerabilities listed in Security Bulletin
+[GCP-2026-057](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057).
+
+### Fixed
+
+Patch 1.28.10-asm.24 contains the fix for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704) | Yes | Yes | No | Yes | Medium (5.5) |
+
+### Announcement
+
+**1.27.9-asm.34 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.27.9-asm.34 uses Envoy v1.35.14.
+
+This release resolves the security vulnerabilities listed in Security Bulletin
+[GCP-2026-057](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057).
+
+### Fixed
+
+Patch 1.27.9-asm.34 contains fixes for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2026-10536](https://ubuntu.com/security/CVE-2026-10536) | Yes | Yes | No | Yes | Low (9.8) |
+| [CVE-2026-42151](https://ubuntu.com/security/CVE-2026-42151) | No | No | No | Yes | High (7.5) |
+| [CVE-2026-42154](https://ubuntu.com/security/CVE-2026-42154) | No | No | No | Yes | High (7.5) |
+| [CVE-2026-40179](https://ubuntu.com/security/CVE-2026-40179) | No | No | No | Yes | Medium (6.1) |
+| [CVE-2026-44903](https://ubuntu.com/security/CVE-2026-44903) | No | No | No | Yes | Medium (6.1) |
+| [CVE-2026-5704](https://ubuntu.com/security/CVE-2026-5704) | Yes | Yes | No | Yes | Medium (5.5) |
+
+### Feature
+
+For clusters using the `TRAFFIC_DIRECTOR` implementation, configuring the trace
+sampling rate with `randomSamplingPercentage` with the `Telemetry` API is now
+supported in the Rapid release channel. For more information, see
+[Accessing Cloud Trace](https://docs.cloud.google.com/service-mesh/docs/observability/accessing-traces).
+
+---
 ## 2026-08-20
 
 ### Feature

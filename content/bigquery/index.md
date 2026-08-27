@@ -12,6 +12,13 @@ privileges in the tenant project.
 For more information, see the
 [GCP-2026-056](https://docs.cloud.google.com/bigquery/docs/security-bulletins#gcp-2026-056) security bulletin.
 
+### Feature
+
+You can now
+[view real-time logs](https://docs.cloud.google.com/bigquery/docs/user-defined-functions-python#use_logging)
+for your Python UDFs in Cloud Logging. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
 ---
 ## 2026-08-25
 

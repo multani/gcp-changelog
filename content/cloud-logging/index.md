@@ -1,5 +1,17 @@
 # Cloud Logging
 
+## 2026-08-26
+
+### Change
+
+VM Extension Manager extension policies for the Ops Agent are
+[Generally Available (GA)](https://docs.cloud.google.com/products#product-launch-stages).
+Extension policies provide zonal and project-wide Ops Agent installation,
+version upgrades, and configuration management. For more information, see
+[Install and manage the Ops Agent by using
+VM Extension Manager policies](https://docs.cloud.google.com/logging/docs/agent/ops-agent/agent-vmem-policies).
+
+---
 ## 2026-08-14
 
 ### Announcement

@@ -1,5 +1,58 @@
 # Google SecOps Marketplace
 
+## 2026-08-26
+
+### Feature
+
+**FireEye HX**: Version 26.0
+
+* Added the following new actions:
+  + **Get File**
+  + **Check Containment Status**
+* Added the **Agent Id** input parameter to the following actions:
+  + **Contain Host**
+  + **Cancel Host Contain**
+
+### Feature
+
+**Proofpoint Email Protection**: Version 11.0
+
+* Added the following new actions:
+  + **Forward Quarantined Email**
+  + **Release Quarantined Email**
+
+### Feature
+
+**Wiz**: Version 10.0
+
+* Added the **Authentication URL** parameter to support Gov (FedRAMP) and custom environments.
+* Added the following new job:
+  + **Wiz and Google SecOps Bi-directional Sync Job**
+
+### Change
+
+**Microsoft Graph Mail**: Version 46.0
+
+* Updated parameters and filtering options in the following actions:
+  + **Wait For Email From User**
+  + **Search Emails**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 23.0
+
+* Updated parameters and filtering options in the following actions:
+  + **Wait For Email From User**
+  + **Search Emails**
+
+### Change
+
+**ServiceNow**: Version 71.0
+
+* Added support for OAuth authentication in the following job:
+  + **Sync Incidents Job**
+
+---
 ## 2026-08-19
 
 ### Feature

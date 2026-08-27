@@ -1,5 +1,19 @@
 # Cloud Trace
 
+## 2026-08-27
+
+### Feature
+
+The following remote MCP server automatically generates a trace span for
+`tools/call` operations.
+
+* Datastream
+
+These spans can help you understand the behavior of
+your agentic applications. For more information, see
+[Investigate MCP calls using Trace](https://docs.cloud.google.com/trace/docs/trace-remote-mcp-server-calls).
+
+---
 ## 2026-08-24
 
 ### Feature

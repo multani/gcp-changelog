@@ -1,5 +1,19 @@
 # Cloud Service Mesh
 
+## 2026-08-27
+
+### Security
+
+The following images are now rolling out for managed Cloud Service Mesh:
+
+* 1.21.6-asm.71 is rolling out to the rapid release channel.
+* 1.20.8-asm.119 is rolling out to the regular release channel.
+* 1.19.10-asm.109 is rolling out to the stable release channel.
+
+These versions resolve the security vulnerabilities listed in Security Bulletin
+[GCP-2026-057](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057).
+
+---
 ## 2026-08-26
 
 ### Announcement

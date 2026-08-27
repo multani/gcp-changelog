@@ -1,5 +1,15 @@
 # VPC Service Controls
 
+## 2026-08-26
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support
+for the following integration:
+
+* [Cloud FTP](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_cloud_ftp)
+
+---
 ## 2026-08-14
 
 ### Feature

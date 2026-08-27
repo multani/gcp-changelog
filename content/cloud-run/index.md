@@ -8,7 +8,10 @@
 are available in
 [Preview](https://cloud.google.com/products#product-launch-stages). Instances
 are specifically designed for running long-lived and individually addressable
-workloads.
+workloads. To learn more, see the
+[product overview](https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run),
+[resource comparison](https://docs.cloud.google.com/run/docs/resource-model#resource-comparison),
+and [instance lifecycle](https://docs.cloud.google.com/run/docs/instances/instance-lifecycle) pages.
 
 ---
 ## 2026-08-19

@@ -1,5 +1,22 @@
 # Virtual Private Cloud
 
+## 2026-08-27
+
+### Feature
+
+**General availability**: You can reserve static external IPv6 addresses from
+bring your own IP addresses (BYOIP) sub-prefixes that are in
+`EXTERNAL_IPV6_FORWARDING_RULE_CREATION` mode.
+
+You can assign these addresses to forwarding rules for external passthrough
+Network Load Balancers and external protocol forwarding. You can also promote
+ephemeral IPv6 BYOIP addresses that are used by external forwarding rules
+to reserved static IP addresses.
+
+For more information, see
+[Create external forwarding rules](https://docs.cloud.google.com/vpc/docs/create-ipv6-sub-prefixes#create-subprefix-use).
+
+---
 ## 2026-08-19
 
 ### Feature

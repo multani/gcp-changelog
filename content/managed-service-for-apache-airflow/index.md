@@ -4,6 +4,11 @@
 
 ### Feature
 
+[Managed Airflow remote Model Context Protocol (MCP) server](https://docs.cloud.google.com/composer/docs/composer-3/use-composer-mcp)
+is now generally available (GA).
+
+### Feature
+
 [Managed Airflow Agent](https://docs.cloud.google.com/composer/docs/composer-3/troubleshoot-tasks-and-dag-runs-with-agent)
 is now available in Google Cloud Console. The agent can help you understand,
 diagnose, and resolve issues with failed Airflow tasks and DAG runs, optimize

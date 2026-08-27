@@ -1,5 +1,19 @@
 # Cloud SQL for SQL Server
 
+## 2026-08-27
+
+### Feature
+
+Cloud SQL now makes it easier to configure [Private Service Connect](https://docs.cloud.google.com/sql/docs/sqlserver/about-private-service-connect) for your
+Cloud SQL instance. When you create an
+instance that's enabled with
+Private Service Connect, you can choose to automatically create
+the service connection policy and endpoint in the VPC network
+that you want to use with Private Service Connect.
+
+For more information, see [Configure Private Service Connect](https://docs.cloud.google.com/sql/docs/sqlserver/configure-private-service-connect).
+
+---
 ## 2026-08-11
 
 ### Feature
@@ -10,7 +24,9 @@ For more information, see [Available tools](https://docs.cloud.google.com/sql/do
 
 ### Feature
 
-The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets) for `/readonly` and `/instance_manage`. Specialized toolset URLs let you restrict the set of exposed MCP tools based on your security and workflow requirements.
+The Cloud SQL remote MCP server now supports specialized endpoint URLs (toolsets)
+for `/readonly` and `/instance_manage`. Specialized toolset URLs let you restrict
+the set of exposed MCP tools based on your security and workflow requirements.
 
 For more information, see [Available toolsets](https://docs.cloud.google.com/sql/docs/sqlserver/use-cloudsql-mcp#available-toolsets).
 

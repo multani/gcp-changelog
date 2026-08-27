@@ -1,5 +1,14 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-08-27
+
+### Feature
+
+You can now configure the disk capacity per broker when you create a Kafka
+cluster and increase it later. For more information, see
+[Configure broker disk size](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/brokers/configure-disk-size).
+
+---
 ## 2026-07-31
 
 ### Feature

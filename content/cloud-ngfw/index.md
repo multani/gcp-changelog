@@ -16,6 +16,20 @@ For more information, see
 This feature is available in **Preview**.
 
 ---
+## 2026-07-30
+
+### Announcement
+
+The limits for the following Cloud NGFW resources have been updated:
+
+* Security profile groups with threat prevention per project: 35
+* Security profile groups with URL filtering per project: 35
+* Firewall endpoint associations per organization-level firewall endpoint: 50
+* Firewall endpoint associations per project-level firewall endpoint: 50
+
+For more information, see [Quotas and limits](https://docs.cloud.google.com/firewall/docs/quotas).
+
+---
 ## 2026-07-27
 
 ### Breaking

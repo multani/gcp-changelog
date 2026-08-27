@@ -55,6 +55,36 @@ For more information, see [About VM Extension
 Manager](https://docs.cloud.google.com/compute/docs/vm-extensions/about-vm-extension-manager).
 
 ---
+## 2026-08-12
+
+### Feature
+
+**Generally available**: The U4 Ultra Low Latency (ULL) network-optimized
+machine family is generally available with allowlist for
+[ULL Solution](https://docs.cloud.google.com/ull-solution/participants/configuration-overview) customers.
+Designed for financial exchange ecosystems, the U4 machine family provides
+industry-specific networking capabilities and ultra-low latency unicast and
+multicast communication. All U4 instances leverage Google's
+[Titanium IPU](https://cloud.google.com/titanium).
+
+The U4 machine family includes the following machine series:
+
+* **U4P machine series**: Bare metal instances powered by 5th generation Intel
+  Xeon Scalable processors (Emerald Rapids), delivering specialized compute for
+  exchange operators running core trading systems.
+* **U4C machine series**: Bare metal instances powered by 5th generation Intel
+  Xeon Scalable processors (Emerald Rapids), designed for exchange participants
+  executing latency-sensitive trading strategies.
+* **U4S machine series**: Virtual machine (VM) instances powered by 6th
+  generation Intel Xeon Scalable processors (Granite Rapids), providing advanced
+  flexibility and cost optimization for adjacent workloads and ecosystem
+  services requiring close physical proximity to U4P and U4C instances.
+
+For more information, see the
+[U4 machine family overview](https://docs.cloud.google.com/ull-solution/participants/u4-machines) in the ULL
+Solution documentation.
+
+---
 ## 2026-08-11
 
 ### Feature

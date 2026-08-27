@@ -43,7 +43,11 @@ An issue has been fixed where LookML drill links and Liquid variables inside tab
 
 ### Feature
 
-Now generally available, the **Granular Dashboard Sizing** feature allows dashboard editors to change the size and layout of dashboard tiles with more granularity. **Note:** This item was added on August 13, 2026.
+Now generally available, the **Granular Dashboard Sizing** feature allows dashboard editors to change the size and layout of dashboard tiles with more granularity.
+
+When you first open a dashboard to edit it after the **Granular Dashboard Sizing** feature has been enabled, the tiles will be in a different configuration because of the new sizing constraints and layout formats. This behavior is expected. Once you have manually reorganized the tiles and saved the dashboard with the new granular layout, that tile arrangement will persist and won't change unexpectedly.
+
+**Note:** This item was added on August 13, 2026 and updated on August 19, 2026.
 
 ### Feature
 

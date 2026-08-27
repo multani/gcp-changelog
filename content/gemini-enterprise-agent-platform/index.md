@@ -1,5 +1,18 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-27
+
+### Feature
+
+**Gemini Omni 1.1 Flash is available in Public Preview**
+
+[Gemini Omni 1.1 Flash (`gemini-omni-1.1-flash-preview`)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-1-flash)
+is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+Gemini Omni 1.1 Flash is a multimodal model designed for video, image,
+and text tasks, optimized for high-speed video generation that supports
+audio and video editing.
+
+---
 ## 2026-08-24
 
 ### Feature

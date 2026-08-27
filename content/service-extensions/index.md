@@ -1,5 +1,23 @@
 # Service Extensions
 
+## 2026-08-20
+
+### Feature
+
+[Global Front End](https://docs.cloud.google.com/docs/networking/cross-cloud-network/global-front-end/gfee-overview)
+is a unified offering that combines Service Extensions,
+global external Application Load Balancer, Google Cloud Armor, and Cloud CDN into one solution to
+help deliver, scale, and secure your internet-facing
+applications. Service Extensions is included in the
+Global Front End Enterprise billing tier. This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see the [Global Front
+End](https://docs.cloud.google.com/service-extensions/docs/overview#global-front-end) section on the
+[Service Extensions overview](https://docs.cloud.google.com/service-extensions/docs/overview)
+page.
+
+---
 ## 2026-06-17
 
 ### Feature

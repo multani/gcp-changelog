@@ -1,5 +1,19 @@
 # Cloud SQL for MySQL
 
+## 2026-08-27
+
+### Feature
+
+Cloud SQL now makes it easier to configure [Private Service Connect](https://docs.cloud.google.com/sql/docs/mysql/about-private-service-connect) for your
+Cloud SQL instance. When you create an
+instance that's enabled with
+Private Service Connect, you can choose to automatically create
+the service connection policy and endpoint in the VPC network
+that you want to use with Private Service Connect.
+
+For more information, see [Configure Private Service Connect](https://docs.cloud.google.com/sql/docs/mysql/configure-private-service-connect).
+
+---
 ## 2026-08-13
 
 ### Feature

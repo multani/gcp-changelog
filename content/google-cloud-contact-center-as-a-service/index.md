@@ -1,5 +1,88 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-08-27
+
+### Announcement
+
+**Google Cloud CCaaS 6.7**
+
+We've released version 6.7 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Bulk email status updates**
+
+You can use the new `apps/api/v1/email/update_status` endpoint to change the
+status of multiple email sessions to the status that you specify.
+
+The new endpoint includes the following capabilities:
+
+* You can optionally specify the status that you expect email sessions to be
+  in. Email sessions that aren't in that status aren't updated.
+* For each email session, the response reports whether it was updated, required
+  no change, or couldn't be updated (and why). This means that integrations can
+  handle partial success and identify which sessions still need attention.
+
+For more information, see [Bulk email status
+endpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/bulk-email-status-endpoint).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where blended SMS transcripts were incorrectly identified as
+  call audio recordings when uploaded to Customer Experience Insights, causing them to appear
+  as missing or unanalyzable data.
+* Fixed an issue where the chat text-input field was unresponsive after an
+  agent accepted a new chat.
+* Fixed an issue where call-cascade agent availability safeguards weren't
+  enforced for terminal queue paths, which resulted in agents being assigned
+  calls from secondary queues even when their primary queue fell below the
+  minimum availability threshold.
+* Fixed an issue where chats that were connected to an agent continued to
+  appear on the **Queued Chats** dashboard with a status of **Ongoing**.
+* Fixed an issue where direct inbound and dial-by-extension calls didn't reach
+  an agent when multiple calls were waiting in the agent's queue.
+* Fixed an issue where chat messages from supervisors were incorrectly
+  attributed to the end-user in Customer Experience Insights transcripts.
+* Fixed an issue where changes to hours of operation didn't appear in the
+  **Audit Dashboard**.
+* Fixed an issue with Salesforce integrations where outbound calls were
+  incorrectly labeled as **Inbound** and didn't pass the
+  CCAI Platform call ID into Salesforce case activity comments.
+* Fixed an issue where requests for agent activity logs resulted in high
+  database latency and gateway timeouts.
+* Fixed an agent desktop issue where an agent sent a chat form to an end-user
+  but the end-user didn't receive it.
+* Fixed an issue where a chat that was escalated from a virtual agent to a
+  human agent was stuck in the queue and couldn't be successfully offered to
+  available agents.
+* Fixed an issue where the **Queue** dashboard displayed
+  `{{Count}}` and
+  `{{Level}}` variables instead of numerals.
+* Fixed an issue where the wait times API incorrectly reported zero available
+  agents for chat queues that had agent availability.
+* Fixed an issue where the **Queues > Calls** dashboard didn't load
+  and timed out for instances with a large number of queues.
+* Fixed an agent desktop issue where the sentiment score didn't appear in the
+  call adapter in the agent desktop or in Salesforce for calls that were
+  escalated from a virtual agent to a human agent.
+* Fixed an issue where newly created voice queues didn't correctly inherit the
+  global whisper and countdown settings.
+* Fixed an issue where queue duration metrics incorrectly included IVR
+  timeout time for calls that were cold transferred into a closed queue.
+* Fixed an issue where an agent who reopened a previously read voicemail was
+  stuck in **In-call** status, preventing them from accepting new contacts or
+  changing their status.
+* Fixed an issue where an agent's assigned call ID was cleared during
+  wrap-up, which prevented them from submitting their wrap-up disposition
+  after refreshing the page.
+
+---
 ## 2026-08-25
 
 ### Announcement

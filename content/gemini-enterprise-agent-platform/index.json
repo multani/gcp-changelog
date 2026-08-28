@@ -4,6 +4,14 @@
     "2026-08-27": [
       {
         "kind": "Feature",
+        "content": "**CodeMender updates**\n\nThis release introduces updates to CodeMender:\n\n* **Model support**: Support for Gemini 3.6 Flash (`gemini-3.6-flash`) and Gemini 3.7 Flash (`gemini-3.7-flash`, default).\n* **Unrestricted verification**: Added the `--unrestricted` flag to `cm verify` to bypass command policy restrictions during exploit verification in isolated environments.\n* **Bug fixes**:\n  + Improved reliability of long sessions.\n  + Improved shell resolution across operating environments.\n  + Clearer permission denied error messages.\n  + Fixed an issue where the CodeMender sandbox would fail to initialize with an error due to relative paths.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "summary": {
+          "title": "CodeMender Enhancements",
+          "summary": "CodeMender now supports Gemini 3.6 and 3.7 Flash models, and includes an unrestricted verification flag for enhanced testing. This update also brings improved session reliability, shell resolution, and clearer error messages."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Gemini Omni 1.1 Flash is available in Public Preview**\n\n[Gemini Omni 1.1 Flash (`gemini-omni-1.1-flash-preview`)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-1-flash)\nis available in [Preview](https://cloud.google.com/products#product-launch-stages).\nGemini Omni 1.1 Flash is a multimodal model designed for video, image,\nand text tasks, optimized for high-speed video generation that supports\naudio and video editing.",
         "summary": {
           "title": "Gemini Omni 1.1 Flash Now in Preview",

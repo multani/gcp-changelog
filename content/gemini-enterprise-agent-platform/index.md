@@ -4,6 +4,22 @@
 
 ### Feature
 
+**CodeMender updates**
+
+This release introduces updates to CodeMender:
+
+* **Model support**: Support for Gemini 3.6 Flash (`gemini-3.6-flash`) and Gemini 3.7 Flash (`gemini-3.7-flash`, default).
+* **Unrestricted verification**: Added the `--unrestricted` flag to `cm verify` to bypass command policy restrictions during exploit verification in isolated environments.
+* **Bug fixes**:
+  + Improved reliability of long sessions.
+  + Improved shell resolution across operating environments.
+  + Clearer permission denied error messages.
+  + Fixed an issue where the CodeMender sandbox would fail to initialize with an error due to relative paths.
+
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
+### Feature
+
 **Gemini Omni 1.1 Flash is available in Public Preview**
 
 [Gemini Omni 1.1 Flash (`gemini-omni-1.1-flash-preview`)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-1-flash)

@@ -2,9 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-08-13T00:00:00+00:00</updated>
+  <updated>2026-08-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-08-27:announcement:0</id>
+    <published>2026-08-27T00:00:00+00:00</published>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On August 27th, 2026, we released an updated version of Apigee (1-18-0-apigee-4).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>A new version of Apigee, 1-18-0-apigee-4, was released on August 27th, 2026. Rollouts have begun and may take several business days to complete across all zones. Features and fixes will be available once the rollout is finished.</summary>
+    <title>Announcement: Apigee 1-18-0-apigee-4 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-08-27:fixed:1</id>
+    <published>2026-08-27T00:00:00+00:00</published>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>507878328</strong> | Upgraded the Apigee runtime to run on JDK 17, while maintaining backward compatibility with JDK 11. |
+| <strong>530965355</strong> | Added an opt-in Message Processor connection-failure back-off (CWC property HTTPClient.backoff.enabled, defaults to false) that prevents the Message Processor from consuming excessive CPU when a target is completely unavailable. |
+| <strong>532793298</strong> | Fixed an API product bug where combining a payloadOperationGroup with a REST or llmOperationGroup rejected REST/LLM traffic with a 401. |
+| <strong>534420582</strong> | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |
+| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
+    <summary>The Apigee runtime has been upgraded to JDK 17, with backward compatibility for JDK 11. This release includes several fixes and improvements, such as an opt-in back-off mechanism for Message Processors, a fix for API product bugs with operation groups, and enhanced JSON threat protection with duplicate key rejection. Updates to infrastructure and libraries have also been applied.</summary>
+    <title>Fixed: Apigee Runtime and Policy Fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-08-27:security:2</id>
+    <published>2026-08-27T00:00:00+00:00</published>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>544570126</strong> | <strong>Security fix for Apigee.</strong> Fixed a security issue in the PythonScript policy. |
+| <strong>N/A</strong> | <strong>Security fix for Apigee infrastructure.</strong> |</p>]]></content>
+    <summary>Recent security fixes have been implemented for Apigee, addressing an issue in the PythonScript policy and general infrastructure vulnerabilities. These updates enhance the overall security posture of the Apigee platform.</summary>
+    <title>Security: Security Updates for Apigee</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

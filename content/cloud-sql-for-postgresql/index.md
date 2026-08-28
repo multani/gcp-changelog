@@ -2,6 +2,16 @@
 
 ## 2026-08-27
 
+### Change
+
+The rollout of the following extension upgrades is complete:
+
+* `pg_partman` is upgraded from 5.2.4 to 5.4.3.
+* `pgfincore` is upgraded from 1.3.1 to 1.4.
+* `pgvector` is upgraded from 0.8.1 to 0.8.5.
+
+For more information, see [Configure PostgreSQL extensions](https://docs.cloud.google.com/sql/docs/postgres/extensions).
+
 ### Feature
 
 Cloud SQL now makes it easier to configure [Private Service Connect](https://docs.cloud.google.com/sql/docs/postgres/about-private-service-connect) for your

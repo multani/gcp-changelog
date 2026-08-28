@@ -1,6 +1,32 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-08-27": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 6.7**\n\nWe've released version 6.7 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 6.7 Released",
+          "summary": "Version 6.7 of our Contact Center AI platform has been released. The specific update timing for your instance will follow your chosen deployment schedule. More details on deployment schedules can be found in the documentation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Bulk email status updates**\n\nYou can use the new `apps/api/v1/email/update_status` endpoint to change the\nstatus of multiple email sessions to the status that you specify.\n\nThe new endpoint includes the following capabilities:\n\n* You can optionally specify the status that you expect email sessions to be\n  in. Email sessions that aren't in that status aren't updated.\n* For each email session, the response reports whether it was updated, required\n  no change, or couldn't be updated (and why). This means that integrations can\n  handle partial success and identify which sessions still need attention.\n\nFor more information, see [Bulk email status\nendpoint](https://docs.cloud.google.com/contact-center/ccai-platform/docs/bulk-email-status-endpoint).",
+        "summary": {
+          "title": "Bulk email status updates",
+          "summary": "A new endpoint allows you to efficiently update the status of multiple email sessions at once. This feature provides detailed reporting on each update, enabling better integration and error handling."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where blended SMS transcripts were incorrectly identified as\n  call audio recordings when uploaded to Customer Experience Insights, causing them to appear\n  as missing or unanalyzable data.\n* Fixed an issue where the chat text-input field was unresponsive after an\n  agent accepted a new chat.\n* Fixed an issue where call-cascade agent availability safeguards weren't\n  enforced for terminal queue paths, which resulted in agents being assigned\n  calls from secondary queues even when their primary queue fell below the\n  minimum availability threshold.\n* Fixed an issue where chats that were connected to an agent continued to\n  appear on the **Queued Chats** dashboard with a status of **Ongoing**.\n* Fixed an issue where direct inbound and dial-by-extension calls didn't reach\n  an agent when multiple calls were waiting in the agent's queue.\n* Fixed an issue where chat messages from supervisors were incorrectly\n  attributed to the end-user in Customer Experience Insights transcripts.\n* Fixed an issue where changes to hours of operation didn't appear in the\n  **Audit Dashboard**.\n* Fixed an issue with Salesforce integrations where outbound calls were\n  incorrectly labeled as **Inbound** and didn't pass the\n  CCAI Platform call ID into Salesforce case activity comments.\n* Fixed an issue where requests for agent activity logs resulted in high\n  database latency and gateway timeouts.\n* Fixed an agent desktop issue where an agent sent a chat form to an end-user\n  but the end-user didn't receive it.\n* Fixed an issue where a chat that was escalated from a virtual agent to a\n  human agent was stuck in the queue and couldn't be successfully offered to\n  available agents.\n* Fixed an issue where the **Queue** dashboard displayed\n  `{{Count}}` and\n  `{{Level}}` variables instead of numerals.\n* Fixed an issue where the wait times API incorrectly reported zero available\n  agents for chat queues that had agent availability.\n* Fixed an issue where the **Queues > Calls** dashboard didn't load\n  and timed out for instances with a large number of queues.\n* Fixed an agent desktop issue where the sentiment score didn't appear in the\n  call adapter in the agent desktop or in Salesforce for calls that were\n  escalated from a virtual agent to a human agent.\n* Fixed an issue where newly created voice queues didn't correctly inherit the\n  global whisper and countdown settings.\n* Fixed an issue where queue duration metrics incorrectly included IVR\n  timeout time for calls that were cold transferred into a closed queue.\n* Fixed an issue where an agent who reopened a previously read voicemail was\n  stuck in **In-call** status, preventing them from accepting new contacts or\n  changing their status.\n* Fixed an issue where an agent's assigned call ID was cleared during\n  wrap-up, which prevented them from submitting their wrap-up disposition\n  after refreshing the page.",
+        "summary": {
+          "title": "Resolved Issues in Recent Update",
+          "summary": "Several issues have been resolved, including problems with SMS transcript identification, chat responsiveness, agent availability safeguards, and data display in various dashboards. This update ensures more accurate data processing and a smoother user experience for agents and administrators."
+        }
+      }
+    ],
     "2026-08-21": [
       {
         "kind": "Announcement",

@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-08-26T00:00:00+00:00</updated>
+  <updated>2026-08-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-27:feature:0</id>
+    <published>2026-08-27T00:00:00+00:00</published>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines">Data Engineering Agent</a>
+is now <a href="https://docs.cloud.google.com/bigquery/docs/gemini-security-privacy-compliance">HIPAA compliant</a>.
+For more information, see <a href="https://cloud.google.com/security/compliance/hipaa">HIPAA compliance on Google Cloud</a>.</p>]]></content>
+    <summary>The Data Engineering Agent now meets HIPAA compliance standards, enhancing data privacy and security for healthcare-related workloads. This update allows for more secure handling of sensitive patient information within your data pipelines.</summary>
+    <title>Feature: Data Engineering Agent is HIPAA Compliant</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-27:announcement:1</id>
+    <published>2026-08-27T00:00:00+00:00</published>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Core graph processing for <a href="https://docs.cloud.google.com/bigquery/docs/graph-overview">BigQuery Graph</a>
+requires an Enterprise or Enterprise Plus edition reservation. Existing
+allowlisted users can continue to use Standard edition or on-demand billing
+until April 26, 2027, after which these billing models will no longer be
+supported for core graph processing.</p>
+<p><a href="https://docs.cloud.google.com/bigquery/docs/graph-measures">Graph measures</a> will remain available in the
+Enterprise and Enterprise Plus editions and for queries run using on-demand
+pricing. Measures are not available in Standard edition.</p>]]></content>
+    <summary>Core graph processing in BigQuery now requires an Enterprise or Enterprise Plus reservation. Existing allowlisted users have until April 26, 2027, to use Standard edition or on-demand billing for this feature. Graph measures will continue to be available in Enterprise and Enterprise Plus editions and with on-demand pricing, but not in Standard edition.</summary>
+    <title>Announcement: BigQuery Graph Processing Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-27:feature:2</id>
+    <published>2026-08-27T00:00:00+00:00</published>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now train models using XGBoost version 2.1 by using the
+<code>XGBOOST_VERSION</code> option. BigQuery uses the XGBoost 3.1.0 library to load and
+make predictions on XGBoost models. This feature is
+<a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>]]></content>
+    <summary>You can now train models using XGBoost version 2.1 by using the XGBOOST_VERSION option. BigQuery uses the XGBoost 3.1.0 library to load and make predictions on XGBoost models.</summary>
+    <title>Feature: XGBoost version 2.1 support</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -103,9 +148,12 @@ Consequently, we are deprecating support for Standard edition and on-demand
 billing for core graph processing.</p>
 <p><a href="https://docs.cloud.google.com/bigquery/docs/graph-measures">Graph measures</a> will remain available in the
 Enterprise and Enterprise Plus editions and for queries run using on-demand
-pricing. Measures are not available in Standard edition.</p>]]></content>
-    <summary>Core graph processing in BigQuery will be restricted to Enterprise and Enterprise Plus editions starting April 26, 2027. Support for Standard edition and on-demand billing for core graph processing is being deprecated. Graph measures will still be available in Enterprise and Enterprise Plus editions and for on-demand queries.</summary>
-    <title>Deprecated: BigQuery Graph Processing Changes</title>
+pricing. Measures are not available in Standard edition.</p>
+<p>For additional details and enforcement dates regarding Standard edition and
+on-demand billing support, see the <a href="#August_27_2026">August 27, 2026</a>
+release note.</p>]]></content>
+    <summary>Core graph processing in BigQuery will soon be restricted to Enterprise editions. Support for Standard edition and on-demand billing for this feature will be deprecated starting April 26, 2027.</summary>
+    <title>Deprecated: BigQuery Graph core processing changes</title>
   </entry>
   <entry>
     <author>

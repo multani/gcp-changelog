@@ -1,5 +1,31 @@
 # Apigee X
 
+## 2026-08-27
+
+### Announcement
+
+On August 27th, 2026, we released an updated version of Apigee (1-18-0-apigee-4).
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **507878328** | Upgraded the Apigee runtime to run on JDK 17, while maintaining backward compatibility with JDK 11. |
+| **530965355** | Added an opt-in Message Processor connection-failure back-off (CWC property HTTPClient.backoff.enabled, defaults to false) that prevents the Message Processor from consuming excessive CPU when a target is completely unavailable. |
+| **532793298** | Fixed an API product bug where combining a payloadOperationGroup with a REST or llmOperationGroup rejected REST/LLM traffic with a 401. |
+| **534420582** | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |
+| **N/A** | Updates to infrastructure and libraries. |
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **544570126** | **Security fix for Apigee.** Fixed a security issue in the PythonScript policy. |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+---
 ## 2026-08-13
 
 ### Announcement

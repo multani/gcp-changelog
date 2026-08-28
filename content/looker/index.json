@@ -1,6 +1,128 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-08-28": [
+      {
+        "kind": "Announcement",
+        "content": "From August 24 through August 26, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.14.",
+        "summary": {
+          "title": "Looker features enabled August 24-26, 2026",
+          "summary": "Key features will be automatically enabled for Looker (original) instances running Looker 26.14. This update will take place between August 24 and August 26, 2026. Ensure your instance is running version 26.14 to benefit from these enhancements."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [**Advanced Unused Content Cleanup**](https://docs.cloud.google.com/looker/docs/manage-unused-content) feature is now generally available.",
+        "summary": {
+          "title": "Unused Content Cleanup Now Available",
+          "summary": "The Advanced Unused Content Cleanup feature is now generally available. This feature helps you manage and remove unused content within your Looker instance, improving organization and efficiency."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Conversational Analytics [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries), also known as *golden queries*, are now generally available. You can also now define verified queries in Looker (Google Cloud core) instances.",
+        "summary": {
+          "title": "Verified Queries Now Generally Available",
+          "summary": "Verified queries, also known as golden queries, are now generally available. You can now define verified queries directly within your Looker instances, streamlining your data analysis workflow."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now configure Continuous Integration to automatically [run CI suites when a dbt Cloud CI job finishes](https://docs.cloud.google.com/looker/docs/ci-create-suite#dbt-trigger). The CI suite run verifies whether changes in your dbt models will cause SQL errors in your Looker Explores before the dbt changes are deployed.",
+        "summary": {
+          "title": "Automated CI suite for dbt Cloud",
+          "summary": "You can now automatically run CI suites when a dbt Cloud CI job finishes. This feature verifies if your dbt model changes will cause SQL errors in Looker Explores before deployment. It helps ensure data integrity and prevent deployment issues."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the **New/Edit Roles Enhancement** feature provides a modernized, step-by-step interface for [creating and editing roles](https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#creating-editing-roles-enhancement) on the **Roles** page in the **Users** section of the Admin panel.",
+        "summary": {
+          "title": "Role management enhancement available in preview",
+          "summary": "A new, step-by-step interface for creating and editing roles is now available in preview. This enhancement streamlines the process of managing user roles within the Admin panel."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, you can define and chat with [data agents on a LookML dashboard](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-lookml-dashboards). To use this feature, the **Conversational Analytics** and **Enable Dashboard Agents** settings must be enabled on the **Gemini in Looker** Admin page.",
+        "summary": {
+          "title": "New data agents for LookML dashboards",
+          "summary": "You can now define and chat with data agents directly on LookML dashboards. This preview feature requires enabling Conversational Analytics and Enable Dashboard Agents in the Gemini in Looker Admin settings."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in [preview](https://cloud.google.com/products#product-launch-stages), you can define Looker-managed, in-database analytic models directly from existing LookML Explores by using the [`model_source`](https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#model_source) subparameter of the [`derived_analytic_model`](https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model) parameter. Looker automatically translates your Explore topology, joins that are defined with `foreign_key`, dimensions, and measures into in-database analytic models (such as BigQuery Graphs or Snowflake semantic views).\n\nFor more information, see the [`derived_analytic_model`](https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#lookml-based-derived-analytic-models) parameter reference page.",
+        "summary": {
+          "title": "New Feature: In-Database Analytic Models",
+          "summary": "You can now define in-database analytic models directly from LookML Explores. This new feature automatically translates your Explore definitions into models that reside within your database. This allows for more efficient and integrated data analysis."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The **Google Maps Enhancements** preview feature now includes the following features:\n\nThe [**Dual-axis Map** option](https://docs.cloud.google.com/looker/docs/google-map-options#dual-axis_map) now supports points and circles.\nYou can now specify a [custom map layer](https://docs.cloud.google.com/looker/docs/google-map-options#custom_layer) by providing a URL to a TopoJSON file.",
+        "summary": {
+          "title": "New Map Features Available",
+          "summary": "The Google Maps Enhancements preview feature has been updated with new capabilities. You can now use points and circles with the Dual-axis Map option and specify custom map layers using TopoJSON files."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "When the **New Looker Explore** and **Merge Query Experience** preview features are enabled, [editing a merge query tile on a dashboard](https://docs.cloud.google.com/looker/docs/merge-queries-new-explore) now opens the **Join data** page directly within the dashboard edit canvas, rather than opening a new tab.",
+        "summary": {
+          "title": "Dashboard edit experience updated",
+          "summary": "Editing merge query tiles on a dashboard now opens the Join data page directly within the dashboard edit canvas. This change streamlines the editing process by avoiding the need to open a new tab."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The [Conversational Analytics System Activity dashboard **Token usage** tab](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage) now includes observability information about top users and top conversations by token usage. The tab also now indicates the type of data agent in its observability metrics.",
+        "summary": {
+          "title": "System Activity Dashboard Updated",
+          "summary": "The System Activity dashboard's token usage tab now provides insights into top users and conversations by token consumption. It also displays the type of data agent used in its metrics."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "When connecting Looker to your database, you can specify [additional Java Database Connectivity (JDBC) parameters](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters). To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the \"Supported JDBC parameters\" section of the [database configuration instructions](https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions) page for your dialect.",
+        "summary": {
+          "title": "Database connection parameter updates",
+          "summary": "Looker now restricts certain JDBC parameters for enhanced security. You can find the updated list of supported parameters in the database configuration instructions for your specific dialect."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (`looker-sdk`). For configuration steps and sample scripts, see the [Admin settings - Continuous Integration](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations) documentation.",
+        "summary": {
+          "title": "Automate Looker deployments with CI",
+          "summary": "You can now automate Looker deployments using your preferred CI/CD tools like GitLab CI, Bitbucket Pipelines, and GitHub Actions. This integration leverages the Looker API and the official Python SDK, allowing for smoother and more efficient development workflows."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Dashboard parameter filters now correctly respect manually restricted option lists when determining default values. This prevents filters from reverting to base LookML defaults that were intentionally hidden from the dashboard's user interface.",
+        "summary": {
+          "title": "Dashboard filter default values fixed",
+          "summary": "Dashboard parameter filters now correctly use manually restricted option lists for default values. This resolves an issue where filters were reverting to unintended LookML defaults, ensuring a more accurate and controlled user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Tiles that are on [dashboard tabs](https://docs.cloud.google.com/looker/docs/tabbed-dashboards) will now run only when the dashboard tab that they are saved on is opened.",
+        "summary": {
+          "title": "Dashboard tabs now load on demand",
+          "summary": "Tiles on dashboard tabs will now only run when the tab they are saved on is opened. This change improves dashboard performance by ensuring that tiles are loaded only when needed."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "Looker now supports connections to [MongoSQL](https://docs.cloud.google.com/looker/docs/db-config-mongosql). Although existing connections to the legacy [MongoDB Connector for BI](https://docs.cloud.google.com/looker/docs/db-config-mongodb) are still fully supported, Looker recommends that you update MongoDB Connector for BI connections to use the MongoSQL dialect.\n\nSee the MongoDB documentation [Transition from Atlas BI Connector to MongoSQL](https://www.mongodb.com/docs/sql-interface/transition-bic-to-atlas-sql/) and the Looker documentation [Migrating to MongoSQL](https://docs.cloud.google.com/looker/docs/db-config-mongodb#migrating-to-mongosql) for information on migrating from the MongoDB Atlas BI Connector to the newer MongoSQL Interface.\n\n**Note:** One year before the MongoDB Connector for BI is to be deprecated, customers will be sent a service announcement to that effect. The information will also be reflected in product documentation and release notes.",
+        "summary": {
+          "title": "Looker supports MongoSQL",
+          "summary": "Looker now supports connections to MongoSQL. While existing MongoDB Connector for BI connections are supported, updating to MongoSQL is recommended for improved performance and features. Migration guides are available for a smooth transition."
+        }
+      }
+    ],
     "2026-08-18": [
       {
         "kind": "Announcement",
@@ -374,6 +496,14 @@
         "summary": {
           "title": "MFA required for email/password logins",
           "summary": "Looker admins can now enforce multi-factor authentication for users logging in with email and password. This security enhancement is enabled by default to protect user accounts."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The **Table Visualization Improvements** feature is now generally available.\n\nYou can now use the following features for [table visualizations](https://docs.cloud.google.com/looker/docs/table-options):\n\n* [Pagination](https://docs.cloud.google.com/looker/docs/table-options#pagination)\n* [Show/Hide Table Headers](https://docs.cloud.google.com/looker/docs/table-options#row_and_header_formatting)\n* [Table Borders](https://docs.cloud.google.com/looker/docs/table-options#row_and_header_formatting)\n* [Cell Highlighting](https://docs.cloud.google.com/looker/docs/table-options#cell_highlighting)\n* [Conditional formatting for string fields](https://docs.cloud.google.com/looker/docs/table-options#enable_conditional_formatting)",
+        "summary": {
+          "title": "Table Visualization Improvements Now Available",
+          "summary": "Enhance your data presentation with new table visualization features, including pagination, header control, borders, cell highlighting, and conditional formatting for strings. These improvements are now generally available."
         }
       },
       {

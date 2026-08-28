@@ -1,5 +1,19 @@
 # Developer Connect
 
+## 2026-08-14
+
+### Announcement
+
+[Developer Connect insights](https://cloud.google.com/developer-connect/docs/insights) is now [generally available](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+VPC Service Controls support for Developer Connect is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+For instructions on using this feature, see
+[Using VPC Service Controls](https://docs.cloud.google.com/build/docs/private-pools/using-vpc-service-controls).
+
+---
 ## 2026-07-13
 
 ### Security

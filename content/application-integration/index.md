@@ -1,5 +1,16 @@
 # Application Integration
 
+## 2026-08-28
+
+### Announcement
+
+**Upcoming authorization changes for integration runs**
+
+Application Integration is updating how identities are handled for integration runs. Every run will act as either the person who triggered it or a run-as service account that you configure, and running an integration will require permission to act as that service account. Integrations that run without a person, such as those started by a schedule or an event, will need an explicitly configured run-as service account.
+
+Action might be required before the change takes effect. For guidance on identifying affected integrations and updating them, see [Prepare for upcoming authorization changes](https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes).
+
+---
 ## 2026-08-21
 
 ### Security

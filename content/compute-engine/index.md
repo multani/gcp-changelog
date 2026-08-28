@@ -1,5 +1,27 @@
 # Compute Engine
 
+## 2026-08-26
+
+### Feature
+
+**Generally available**: Red Hat Enterprise Linux (RHEL) images pre-configured
+with Logical Volume Manager (LVM) partitioning are available for
+Compute Engine in the Google Cloud console. LVM-enabled images let you
+manage volumes flexibly and size partitions dynamically on your boot disk.
+
+For more information, see [Red Hat Enterprise Linux (RHEL)](https://docs.cloud.google.com/compute/docs/images/os-details#red_hat_enterprise_linux_rhel).
+
+### Feature
+
+**Generally available**: Red Hat Enterprise Linux (RHEL) Extended Update
+Support (EUS) images are available for Compute Engine in the
+Google Cloud console. RHEL EUS images let you lock your VMs to a specific minor
+version while receiving critical security updates and bug fixes for up to two
+years.
+
+For more information, see [Red Hat Enterprise Linux (RHEL)](https://docs.cloud.google.com/compute/docs/images/os-details#red_hat_enterprise_linux_rhel).
+
+---
 ## 2026-08-21
 
 ### Feature

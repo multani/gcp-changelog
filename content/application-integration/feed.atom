@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Application Integration</title>
   <subtitle>Changelog for Google Cloud product: Application Integration</subtitle>
-  <updated>2026-08-21T00:00:00+00:00</updated>
+  <updated>2026-08-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:application-integration</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/application-integration/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:application-integration:2026-08-28:announcement:0</id>
+    <published>2026-08-28T00:00:00+00:00</published>
+    <updated>2026-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Upcoming authorization changes for integration runs</strong></p>
+<p>Application Integration is updating how identities are handled for integration runs. Every run will act as either the person who triggered it or a run-as service account that you configure, and running an integration will require permission to act as that service account. Integrations that run without a person, such as those started by a schedule or an event, will need an explicitly configured run-as service account.</p>
+<p>Action might be required before the change takes effect. For guidance on identifying affected integrations and updating them, see <a href="https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes">Prepare for upcoming authorization changes</a>.</p>]]></content>
+    <summary>Application Integration is updating how identities are handled for integration runs. Integrations that run without a person will require an explicitly configured run-as service account. Action may be required to update affected integrations before the change takes effect.</summary>
+    <title>Announcement: Upcoming changes to integration run authorization</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

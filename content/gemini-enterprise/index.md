@@ -1,5 +1,28 @@
 # Gemini Enterprise
 
+## 2026-08-28
+
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Preview)**
+
+The following data stores are available in Public Preview in Gemini Enterprise:
+
+* [Campfire](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/campfire)
+* [Clay](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/clay)
+* [CourtListener](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/courtlistener)
+* [Daloopa](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/daloopa)
+* [MSCI](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/msci)
+
+You can search and read data from these data stores using natural language.
+
+Additionally, the following data stores support new actions in Public Preview:
+
+* [AirOps](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airops): Update knowledge base document metadata.
+* [Airtable](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/airtable): Create records for a table.
+* [Zoho Desk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zohodesk): Update event.
+
+---
 ## 2026-08-26
 
 ### Feature

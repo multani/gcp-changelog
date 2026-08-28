@@ -1,5 +1,13 @@
 # Managed Service for Apache Airflow
 
+## 2026-08-28
+
+### Feature
+
+[Orchestration Pipelines](https://docs.cloud.google.com/composer/docs/composer-3/run-orchestration-pipelines)
+are now **generally available (GA)**.
+
+---
 ## 2026-08-25
 
 ### Feature

@@ -20,6 +20,13 @@ for the following integrations:
 * [Agent Identity API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_agent_identity)
 * [Agent Identity Credentials API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_agent_identity_credentials)
 
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages)
+support for the following integration:
+
+* [Developer Connect insights](https://docs.cloud.google.com/developer-connect/docs/vpc-service-controls)
+
 ---
 ## 2026-08-13
 

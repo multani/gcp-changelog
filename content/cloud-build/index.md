@@ -1,5 +1,20 @@
 # Cloud Build
 
+## 2026-08-28
+
+### Feature
+
+You can now update access tokens from the **Connection details** page for
+your 2nd generation Bitbucket and 2nd generation Gitlab host connections.
+For more information, see the following:
+
+* [Rotate old or expired Bitbucket Cloud access tokens](https://docs.cloud.google.com/build/docs/automating-builds/bitbucket/connect-host-bitbucket-cloud#rotate-token)
+* [Rotate old or expired Bitbucket Data Center access tokens](https://docs.cloud.google.com/build/docs/automating-builds/bitbucket/connect-host-bitbucket-data-center?generation=2nd-gen#rotate-token)
+* [Rotate old or expired Bitbucket Server access tokens](https://docs.cloud.google.com/build/docs/automating-builds/bitbucket/connect-host-bitbucket-server?generation=2nd-gen#rotate-token)
+* [Rotate old or expired GitLab Enterprise Edition access tokens](https://docs.cloud.google.com/build/docs/automating-builds/gitlab/connect-host-gitlab-enterprise-edition#rotate-token)
+* [Rotate old or expired GitLab access tokens](https://docs.cloud.google.com/build/docs/automating-builds/gitlab/connect-host-gitlab#rotate-token)
+
+---
 ## 2026-08-24
 
 ### Security

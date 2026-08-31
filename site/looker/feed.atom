@@ -125,6 +125,18 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:10</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import_locale_defs: yesstatement to thelocalization_settings parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>
+<p><strong>Note:</strong> This item was added August 31, 2026</p>]]></content>
+    <summary>Model localization is now available in preview for imported projects. You can now merge locale definitions from importing and imported projects by setting import_locale_defs: yes in your manifest file. This enhances the flexibility of localizing your LookML models.</summary>
+    <title>Change: Model localization now in preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:11</id>
+    <published>2026-08-28T00:00:00+00:00</published>
+    <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When connecting Looker to your database, you can specify <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters">additional Java Database Connectivity (JDBC) parameters</a>. To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the "Supported JDBC parameters" section of the <a href="https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions">database configuration instructions</a> page for your dialect.</p>]]></content>
     <summary>Looker now restricts certain JDBC parameters for enhanced security. You can find the updated list of supported parameters in the database configuration instructions for your specific dialect.</summary>
     <title>Change: Database connection parameter updates</title>
@@ -133,7 +145,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:12</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (<code>looker-sdk</code>). For configuration steps and sample scripts, see the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations">Admin settings - Continuous Integration</a> documentation.</p>]]></content>
@@ -144,7 +156,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:13</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Dashboard parameter filters now correctly respect manually restricted option lists when determining default values. This prevents filters from reverting to base LookML defaults that were intentionally hidden from the dashboard's user interface.</p>]]></content>
@@ -155,7 +167,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:14</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Tiles that are on <a href="https://docs.cloud.google.com/looker/docs/tabbed-dashboards">dashboard tabs</a> will now run only when the dashboard tab that they are saved on is opened.</p>]]></content>
@@ -166,7 +178,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:announcement:14</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:announcement:15</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker now supports connections to <a href="https://docs.cloud.google.com/looker/docs/db-config-mongosql">MongoSQL</a>. Although existing connections to the legacy <a href="https://docs.cloud.google.com/looker/docs/db-config-mongodb">MongoDB Connector for BI</a> are still fully supported, Looker recommends that you update MongoDB Connector for BI connections to use the MongoSQL dialect.</p>

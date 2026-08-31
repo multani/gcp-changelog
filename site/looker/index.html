@@ -2821,8 +2821,11 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
 <h3 id="change_2">Change</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage">Conversational Analytics System Activity dashboard <strong>Token usage</strong> tab</a> now includes observability information about top users and top conversations by token usage. The tab also now indicates the type of data agent in its observability metrics.</p>
 <h3 id="change_3">Change</h3>
-<p>When connecting Looker to your database, you can specify <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters">additional Java Database Connectivity (JDBC) parameters</a>. To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the "Supported JDBC parameters" section of the <a href="https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions">database configuration instructions</a> page for your dialect.</p>
+<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import_locale_defs: yesstatement to thelocalization_settings parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>
+<p><strong>Note:</strong> This item was added August 31, 2026</p>
 <h3 id="change_4">Change</h3>
+<p>When connecting Looker to your database, you can specify <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters">additional Java Database Connectivity (JDBC) parameters</a>. To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the "Supported JDBC parameters" section of the <a href="https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions">database configuration instructions</a> page for your dialect.</p>
+<h3 id="change_5">Change</h3>
 <p>Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (<code>looker-sdk</code>). For configuration steps and sample scripts, see the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations">Admin settings - Continuous Integration</a> documentation.</p>
 <h3 id="fixed">Fixed</h3>
 <p>Dashboard parameter filters now correctly respect manually restricted option lists when determining default values. This prevents filters from reverting to base LookML defaults that were intentionally hidden from the dashboard's user interface.</p>
@@ -2869,9 +2872,9 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
 <h3 id="feature_8">Feature</h3>
 <p>Conversational Analytics data agent editors can now specify whether the agent will
 show its thinking or debugging information when generating a response.</p>
-<h3 id="change_5">Change</h3>
-<p>A Conversational Analytics data agent now displays query results in its thinking rather than in its final response.</p>
 <h3 id="change_6">Change</h3>
+<p>A Conversational Analytics data agent now displays query results in its thinking rather than in its final response.</p>
+<h3 id="change_7">Change</h3>
 <p>The timeout length for Conversational Analytics queries has been increased from two to five minutes. <strong>Note:</strong> This item was updated on August 7, 2026.</p>
 <h3 id="fixed_5">Fixed</h3>
 <p>An issue has been fixed where large queries on Snowflake connections could fail with an <code>SSLHandshakeException: No trusted certificate found</code> error. This feature now performs as expected.</p>
@@ -2963,9 +2966,9 @@ show its thinking or debugging information when generating a response.</p>
 <p>Now available in preview, enhanced observability metrics — including engagement and estimated token usage data — are available for Conversational Analytics on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. To enable this feature, a Looker admin must turn on the <strong>Conversational Analytics Agent Token usage</strong> setting on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage"><strong>General</strong> page</a> in the <strong>Preview</strong> section of the <strong>Admin</strong> panel.</p>
 <h3 id="feature_20">Feature</h3>
 <p>Now available in preview, the new <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#modern_user_interface"><strong>Modern User Interface</strong> feature</a> enables <a href="https://docs.cloud.google.com/looker/docs/modern-ui">modernized layouts and design</a> alongside new configuration settings for visualizations and dashboards. When this preview feature is enabled, users can apply a <strong>Modern</strong> visualization theme that features updated typography and modern, accessible color palettes for improved data legibility. Additionally, a new <strong>Modern</strong> dashboard style provides a high-density, streamlined design that optimizes data viewing and aligns with Google's latest design standards.</p>
-<h3 id="change_7">Change</h3>
-<p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-insight-asst">Insight Assistant</a> now displays the process the assistant uses to generate the response, showing key details in your data that it used to generate the response, and listing the fields from your Explore that it used.</p>
 <h3 id="change_8">Change</h3>
+<p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-insight-asst">Insight Assistant</a> now displays the process the assistant uses to generate the response, showing key details in your data that it used to generate the response, and listing the fields from your Explore that it used.</p>
+<h3 id="change_9">Change</h3>
 <p>When you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#chat-agent-ge">chat in Gemini Enterprise with data agents that you create in Looker</a>, agent responses now include charts and visualizations.</p>
 <h3 id="announcement_6">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-dsp">Complimentary Data Studio Pro licenses</a> aren't available for Looker (Google Cloud core) instances that are created after August 1, 2026.</p>
@@ -3018,9 +3021,9 @@ region is also unavailable at this time.</p>
 <h3 id="feature_33">Feature</h3>
 <p>Now available in preview, <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries">verified queries</a> (also referred to as <em>golden queries</em>) are predefined pairs of natural language questions and their exact, corresponding Looker Explore queries that act as verified standards of truth to teach your Explore data agent how to handle complex business requests without guessing.</p>
 <p>To enable verified queries, a Looker admin must turn on the <strong>Verified Queries</strong> setting on the <strong>Gemini in Looker</strong> admin page. The <strong>Conversational Analytics</strong> setting must also be enabled for verified queries to be used.</p>
-<h3 id="change_9">Change</h3>
-<p>When you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#chat-agent-ge">chat in Gemini Enterprise with data agents that you create in Looker</a>, agent responses now include charts and visualizations.</p>
 <h3 id="change_10">Change</h3>
+<p>When you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#chat-agent-ge">chat in Gemini Enterprise with data agents that you create in Looker</a>, agent responses now include charts and visualizations.</p>
+<h3 id="change_11">Change</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-insight-asst">Insight Assistant</a> now displays the process the assistant uses to generate the response, showing key details in your data that it used to generate the response, and listing the fields from your Explore that it used.</p>
 <hr />
 <h2 id="2026-07-27">2026-07-27</h2>
@@ -3141,7 +3144,7 @@ region is also unavailable at this time.</p>
 <p>An issue has been fixed where clearing the <strong>Totals Labels</strong> option for the <strong>Totals Color</strong> setting in the color picker resulted in black text in the chart. This feature now performs as expected.</p>
 <h3 id="fixed_58">Fixed</h3>
 <p>The OAuth interface now prohibits forward slashes in the OAuth Client ID field. Previously, the inclusion of one or more forward slashes would result in a 401 error. This feature now performs as expected.</p>
-<h3 id="change_11">Change</h3>
+<h3 id="change_12">Change</h3>
 <p>Looker CI Run Alert emails now include the Run ID in the subject line to prevent email threading. The email body now includes the Git branch and commit details.</p>
 <h3 id="feature_38">Feature</h3>
 <p>Looker (Google Cloud core) now supports <a href="https://docs.cloud.google.com/looker/docs/looker-core-fips-mode">FIPS 140-3 level 1 compliance</a>. Existing FIPS 140-2 compliant instances will be automatically upgraded to the FIPS 140-3 standard when they're upgraded to Looker 26.12.</p>
@@ -3223,14 +3226,14 @@ This feature is enabled by default.</p>
 <li>Accessing improved styling options: Users have more control over the appearance of the visualization, including the background color of the tile and the alignment of the values.
   This feature is disabled by default. <a href="https://docs.cloud.google.com/looker/docs/kpi-single-value-options">Learn more about the new KPI (Single Value) Visualization</a>.</li>
 </ul>
-<h3 id="change_12">Change</h3>
+<h3 id="change_13">Change</h3>
 <p>Looker dashboard agents are now included in the embedded Looker experience. Embed users with the <a href="https://docs.cloud.google.com/looker/docs/signed-embedding#permissions">appropriate permissions</a> can see dashboard agents on all the embedded dashboards that they have access to.</p>
 <p><a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding">Learn more about how to configure an embedded dashboard for embed user visibility</a>.</p>
-<h3 id="change_13">Change</h3>
-<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#granular-dashboard-sizing">Granular Dashboard Sizing preview feature</a> is now enabled by default.</p>
 <h3 id="change_14">Change</h3>
-<p>Conversational Analytics data agents that are <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents">published to Gemini Enterprise</a> now support visualizations in their conversations. <strong>Note</strong>: This feature is not yet available. This item was updated on July 9, 2026.</p>
+<p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#granular-dashboard-sizing">Granular Dashboard Sizing preview feature</a> is now enabled by default.</p>
 <h3 id="change_15">Change</h3>
+<p>Conversational Analytics data agents that are <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents">published to Gemini Enterprise</a> now support visualizations in their conversations. <strong>Note</strong>: This feature is not yet available. This item was updated on July 9, 2026.</p>
+<h3 id="change_16">Change</h3>
 <p>The dashboard summary feature can now be enabled separately from dashboard data agents. This feature is disabled by default. When this feature is enabled, a <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#dashboard-summaries">dashboard summary</a> is generated automatically at the top of the dashboard data agent conversation. To enable this feature, a Looker admin must turn on the <strong>Enable Dashboard Summary</strong> feature on the <strong>Gemini in Looker</strong> admin page.</p>
 <p><strong>Note</strong>: This feature is not yet available. This item was updated on July 6, 2026.</p>
 <h3 id="breaking">Breaking</h3>
@@ -3375,7 +3378,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>Now available in preview, you can <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents">publish the Conversational Analytics Explore data agents</a> that you create in Looker to Gemini Enterprise. All users who have the <code>save_agents</code> permission will be granted the <code>publish_agent_externally</code> permission. <strong>Note</strong>: This feature is not yet available. This release note was updated on May 14, 2026.</p>
 <h3 id="feature_77">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/reference/param-field-approximate"><code>approximate</code></a> parameter is now supported on Snowflake connections.</p>
-<h3 id="change_16">Change</h3>
+<h3 id="change_17">Change</h3>
 <p>Conversational Analytics now supports <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data">querying Looker Explores</a> in <a href="https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a>.</p>
 <h3 id="fixed_85">Fixed</h3>
 <p>An issue has been fixed where queries that used <a href="https://docs.cloud.google.com/looker/docs/custom-calendars">custom calendars</a> with <a href="https://docs.cloud.google.com/looker/docs/table-options#subtotals">subtotals</a> may have produced incorrect results.
@@ -3630,7 +3633,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <h3 id="feature_108">Feature</h3>
 <p>Looker (Google Cloud core) instances with public or hybrid connections now support <a href="https://docs.cloud.google.com/looker/docs/looker-core-ip-allowlist">IP allowlists</a>, which enhance security by ensuring that only traffic from specified IP addresses can access your instance. To connect to certain Google Cloud services, like Conversational Analytics or Connected Sheets, you can <a href="https://docs.cloud.google.com/looker/docs/looker-core-ip-allowlist#allowlist-services">select an option</a> to automatically allowlist the necessary IP ranges for those services. You can configure an IP allowlist for an existing instance by editing it in the Google Cloud console.</p>
 <p>This feature will roll out to instances over the next week.</p>
-<h3 id="change_17">Change</h3>
+<h3 id="change_18">Change</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#granular-dashboard-sizing"><strong>Granular Dashboard Sizing</strong> preview feature</a> is temporarily unavailable for some Looker instances. Any dashboard tiles that were resized during this feature's enablement will revert to Looker's original sizing constraints.</p>
 <p>(<strong>Note</strong>: This release note was added on March 16, 2026.)</p>
 <hr />
@@ -3790,7 +3793,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>An issue has been fixed where some drill links could fail to work when cookieless embed was enabled. This feature now performs as expected.</p>
 <h3 id="feature_131">Feature</h3>
 <p>When you are <a href="https://docs.cloud.google.com/looker/docs/delivering-looks-explores#delivery_options_for_sftp_servers">delivering content to an SFTP server</a>, additional key exchange algorithms and host key algorithms are now supported.</p>
-<h3 id="change_18">Change</h3>
+<h3 id="change_19">Change</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the <code>merge_query</code> table now refreshes every 10 minutes.</p>
 <h3 id="fixed_133">Fixed</h3>
 <p>An issue has been fixed where the pagination option was not being displayed in the LookML Dashboards folder for some users.
@@ -3818,7 +3821,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>An issue has been fixed where switching a visualization type from Table to Single Value could carry over unwanted conditional formatting. This feature now performs as expected.</p>
 <h3 id="fixed_140">Fixed</h3>
 <p>An issue has been fixed where conditional formatting no longer appeared on certain dashboard tiles. This feature now performs as expected.</p>
-<h3 id="change_19">Change</h3>
+<h3 id="change_20">Change</h3>
 <p>The Looker Action Hub has been updated to support newer API versions for Google Ads (from v19 to v22) and Facebook Custom Audiences (from v22 to v24).</p>
 <h3 id="feature_136">Feature</h3>
 <p>The <strong>Increase SQL Runner Schema and Table Limit</strong> Labs feature is now available in private preview.</p>

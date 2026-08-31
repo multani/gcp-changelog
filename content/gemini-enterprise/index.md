@@ -1,5 +1,33 @@
 # Gemini Enterprise
 
+## 2026-08-31
+
+### Feature
+
+**Gemini Enterprise: Support for federated data stores in Assured Workloads
+with FedRAMP High compliance**
+
+Gemini Enterprise now supports connecting Google Workspace and third-party
+federated data stores to projects inside Assured Workloads folders, which
+automatically enforce security and compliance controls on your Google Cloud
+resources to meet FedRAMP High standards.
+This feature is generally available (GA). For more information, see
+
+* [Connect a Google data
+  source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/create-data-store).
+* [Connect a third-party data
+  source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.5 Flash regional availability in Canada**
+
+Gemini 3.5 Flash is available in Canada (`ca`) with
+in-region at-rest data residency (DRZ) and machine learning processing (MLP).
+
+For more information, see [Locations](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+
+---
 ## 2026-08-28
 
 ### Feature

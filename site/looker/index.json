@@ -84,6 +84,14 @@
       },
       {
         "kind": "Change",
+        "content": "Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import\\_locale\\_defs: yesstatement to thelocalization\\_settings parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.\n\n**Note:** This item was added August 31, 2026",
+        "summary": {
+          "title": "Model localization now in preview",
+          "summary": "Model localization is now available in preview for imported projects. You can now merge locale definitions from importing and imported projects by setting import_locale_defs: yes in your manifest file. This enhances the flexibility of localizing your LookML models."
+        }
+      },
+      {
+        "kind": "Change",
         "content": "When connecting Looker to your database, you can specify [additional Java Database Connectivity (JDBC) parameters](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters). To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the \"Supported JDBC parameters\" section of the [database configuration instructions](https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions) page for your dialect.",
         "summary": {
           "title": "Database connection parameter updates",

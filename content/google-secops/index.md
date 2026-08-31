@@ -1,5 +1,24 @@
 # Google SecOps
 
+## 2026-08-31
+
+### Feature
+
+**[Spotlight Feature] Customizable schedules for multi-event rules general availability**
+
+The [customizable schedules for multi-event rules](https://docs.cloud.google.com/chronicle/docs/detection/set-customized-schedule) feature is now in General Availability (GA).
+
+Customizable schedules give security teams granular control and transparency over how multi-event rules execute in Google SecOps, and provide the following capabilities:
+
+* **Configure settlement delays:** Set first-run delay offsets (from 1 minute up to 48 hours) to account for log ingestion latency and reduce false negatives.
+* **Leverage automated true-up runs:** Automatically re-evaluate time windows at 4 hours (and optionally 30 hours for full context enrichment) to capture late-arriving logs.
+* **Migrate legacy rules:** Upgrade existing custom multi-event rules to customizable schedules directly from the **Rules Dashboard**.
+
+To manage rule schedules with custom IAM roles, make sure your roles include `chronicle.rules.modifyRules` and `chronicle.ruleDeployments.update`. Predefined IAM roles include these permissions automatically.
+
+For more information, see [Configure customized schedules for rules](https://docs.cloud.google.com/chronicle/docs/detection/set-customized-schedule) and [Understand rule run scheduling](https://docs.cloud.google.com/chronicle/docs/detection/rule-execution-frequency).
+
+---
 ## 2026-08-27
 
 ### Announcement

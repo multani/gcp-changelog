@@ -1,5 +1,32 @@
 # BigQuery
 
+## 2026-08-31
+
+### Feature
+
+You can now [create, store](https://docs.cloud.google.com/bigquery/docs/create-pipelines), and
+[manage pipelines](https://docs.cloud.google.com/bigquery/docs/manage-pipelines) in Git folders.
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+Using [folders](https://docs.cloud.google.com/bigquery/docs/code-asset-folders) to
+[create, store, and manage pipelines](https://docs.cloud.google.com/bigquery/docs/create-pipelines) is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now create an
+[identity column](https://docs.cloud.google.com/bigquery/docs/identity-columns), sometimes
+referred to as an auto-incrementing column, on a table. You can use identity
+columns to create and
+maintain primary keys on your tables. When you insert a row into a table
+that has an identity column, BigQuery generates a unique integer
+value for that column. This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-27
 
 ### Feature

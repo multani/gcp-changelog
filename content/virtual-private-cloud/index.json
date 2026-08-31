@@ -1,13 +1,31 @@
 {
   "name": "Virtual Private Cloud",
   "entries": {
+    "2026-08-31": [
+      {
+        "kind": "Feature",
+        "content": "**General Availability**: You can create Compute Engine instances that have\nmultiple virtual network interfaces (vNICs) in the same VPC network.\nFor more information, see\n[Multiple network interfaces in the same VPC network](https://docs.cloud.google.com/vpc/docs/multiple-interfaces-concepts#same-vpc).",
+        "summary": {
+          "title": "Compute Engine instances with multiple vNICs",
+          "summary": "You can now create Compute Engine instances with multiple virtual network interfaces (vNICs) within the same VPC network. This feature enhances network flexibility for your workloads."
+        }
+      }
+    ],
     "2026-08-27": [
       {
         "kind": "Feature",
-        "content": "**General availability**: You can reserve static external IPv6 addresses from\nbring your own IP addresses (BYOIP) sub-prefixes that are in\n`EXTERNAL_IPV6_FORWARDING_RULE_CREATION` mode.\n\nYou can assign these addresses to forwarding rules for external passthrough\nNetwork Load Balancers and external protocol forwarding. You can also promote\nephemeral IPv6 BYOIP addresses that are used by external forwarding rules\nto reserved static IP addresses.\n\nFor more information, see\n[Create external forwarding rules](https://docs.cloud.google.com/vpc/docs/create-ipv6-sub-prefixes#create-subprefix-use).",
+        "content": "**General Availability**: VPC Flow Logs generates log records for dropped\ntraffic. For more information, see\n[Records for dropped traffic](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#packet-drops).",
         "summary": {
-          "title": "Static external IPv6 addresses now available",
-          "summary": "You can now reserve static external IPv6 addresses from your own IP address sub-prefixes. These addresses can be assigned to forwarding rules for external passthrough Network Load Balancers and external protocol forwarding. Additionally, ephemeral IPv6 BYOIP addresses used by external forwarding rules can be promoted to static reserved IP addresses."
+          "title": "Flow Logs Now Record Dropped Traffic",
+          "summary": "VPC Flow Logs can now generate log records for dropped traffic. This new capability provides greater visibility into network traffic, helping you to troubleshoot and secure your network more effectively."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**General Availability**: You can reserve static external IPv6 addresses from\nbring your own IP addresses (BYOIP) sub-prefixes that are in\n`EXTERNAL_IPV6_FORWARDING_RULE_CREATION` mode.\n\nYou can assign these addresses to forwarding rules for external passthrough\nNetwork Load Balancers and external protocol forwarding. You can also promote\nephemeral IPv6 BYOIP addresses that are used by external forwarding rules\nto reserved static IP addresses.\n\nFor more information, see\n[Create external forwarding rules](https://docs.cloud.google.com/vpc/docs/create-ipv6-sub-prefixes#create-subprefix-use).",
+        "summary": {
+          "title": "Static IPv6 address reservations now available",
+          "summary": "You can now reserve static external IPv6 addresses from your own IP address sub-prefixes. These addresses can be assigned to forwarding rules for external passthrough Network Load Balancers and external protocol forwarding. Ephemeral IPv6 addresses can also be promoted to static."
         }
       }
     ],

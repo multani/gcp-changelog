@@ -1,10 +1,26 @@
 # Virtual Private Cloud
 
+## 2026-08-31
+
+### Feature
+
+**General Availability**: You can create Compute Engine instances that have
+multiple virtual network interfaces (vNICs) in the same VPC network.
+For more information, see
+[Multiple network interfaces in the same VPC network](https://docs.cloud.google.com/vpc/docs/multiple-interfaces-concepts#same-vpc).
+
+---
 ## 2026-08-27
 
 ### Feature
 
-**General availability**: You can reserve static external IPv6 addresses from
+**General Availability**: VPC Flow Logs generates log records for dropped
+traffic. For more information, see
+[Records for dropped traffic](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#packet-drops).
+
+### Feature
+
+**General Availability**: You can reserve static external IPv6 addresses from
 bring your own IP addresses (BYOIP) sub-prefixes that are in
 `EXTERNAL_IPV6_FORWARDING_RULE_CREATION` mode.
 

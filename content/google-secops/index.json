@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2026-08-31": [
+      {
+        "kind": "Feature",
+        "content": "**[Spotlight Feature] Customizable schedules for multi-event rules general availability**\n\nThe [customizable schedules for multi-event rules](https://docs.cloud.google.com/chronicle/docs/detection/set-customized-schedule) feature is now in General Availability (GA).\n\nCustomizable schedules give security teams granular control and transparency over how multi-event rules execute in Google SecOps, and provide the following capabilities:\n\n* **Configure settlement delays:** Set first-run delay offsets (from 1 minute up to 48 hours) to account for log ingestion latency and reduce false negatives.\n* **Leverage automated true-up runs:** Automatically re-evaluate time windows at 4 hours (and optionally 30 hours for full context enrichment) to capture late-arriving logs.\n* **Migrate legacy rules:** Upgrade existing custom multi-event rules to customizable schedules directly from the **Rules Dashboard**.\n\nTo manage rule schedules with custom IAM roles, make sure your roles include `chronicle.rules.modifyRules` and `chronicle.ruleDeployments.update`. Predefined IAM roles include these permissions automatically.\n\nFor more information, see [Configure customized schedules for rules](https://docs.cloud.google.com/chronicle/docs/detection/set-customized-schedule) and [Understand rule run scheduling](https://docs.cloud.google.com/chronicle/docs/detection/rule-execution-frequency).",
+        "summary": {
+          "title": "Customizable Schedules for Multi-Event Rules Now Available",
+          "summary": "The customizable schedules for multi-event rules feature is now in General Availability. This feature provides enhanced control over rule execution, allowing for configured settlement delays and automated true-up runs to improve detection accuracy. Security teams can also easily migrate legacy rules to the new scheduling system."
+        }
+      }
+    ],
     "2026-08-27": [
       {
         "kind": "Announcement",

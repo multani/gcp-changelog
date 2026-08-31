@@ -1,5 +1,15 @@
 # Memorystore for Valkey
 
+## 2026-08-31
+
+### Feature
+
+You can use [access control list (ACL) policies](https://docs.cloud.google.com/memorystore/docs/valkey/use-acl-policies)
+to secure access to your instances. You can enable fine-grained security by
+restricting user and service access to specific keys, commands, operations, and
+Pub/Sub channels. This feature is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-13
 
 ### Feature

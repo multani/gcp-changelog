@@ -104,10 +104,7 @@ ions. For more information, see
 **Gemini 3.7 Flash is generally available**
 
 [Gemini 3.7 Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-7-flash) is
-now generally available (GA) and available for production use. This model is our
-first model to enable [agentic video
-processing](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/video-understanding#agentic-video-processing)
-enabled by default.
+now generally available (GA) and available for production use.
 
 For more information on 3.7 Flash, see the [model
 page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-7-flash).

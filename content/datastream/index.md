@@ -1,5 +1,16 @@
 # Datastream
 
+## 2026-08-31
+
+### Feature
+
+You can now create a Datastream stream directly from the overview page
+of your Cloud SQL instances using the automated flow.
+
+For more information, see
+[Create a Cloud SQL stream using the automated flow](https://docs.cloud.google.com/datastream/docs/create-a-stream-automated).
+
+---
 ## 2026-07-31
 
 ### Feature

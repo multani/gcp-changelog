@@ -1,5 +1,17 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-01
+
+### Change
+
+**Pricing updates for agent metering**
+
+Session and memory bank compute metering is in effect for the Agent Platform
+compute SKU.
+For more information, see [Gemini Agent Platform
+Pricing](https://services.google.com/fh/files/emails/b_502770571_gemini_enterprise_agent_platform_pricing.pdf).
+
+---
 ## 2026-08-31
 
 ### Feature

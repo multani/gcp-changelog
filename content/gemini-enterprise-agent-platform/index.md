@@ -1,5 +1,24 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-08-31
+
+### Feature
+
+**Gemini 3.1 Flash Image and Gemini 3 Pro Image updates**
+
+This release introduces feature updates and expanded endpoint availability for Gemini 3.1 Flash Image and Gemini 3 Pro Image:
+
+* **Multi-region endpoint support**: [Gemini 3.1 Flash Image (`gemini-3.1-flash-image`)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image) is now available on US (`us`) and EU (`eu`) multi-region endpoints for model availability, ML processing, Provisioned Throughput, and PayGo Standard.
+* **4K image output in GA**: Generating 4K resolution images is now [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages) for both [Gemini 3.1 Flash Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image) and [Gemini 3 Pro Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image).
+* **Video inputs in GA**: Image generation from video inputs is now [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages) for [Gemini 3.1 Flash Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image).
+
+For more information, see the following:
+
+* [Gemini 3.1 Flash Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image)
+* [Gemini 3 Pro Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image)
+* [Model locations](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations#multi-region)
+
+---
 ## 2026-08-27
 
 ### Feature

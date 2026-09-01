@@ -1,5 +1,41 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-08-31
+
+### Announcement
+
+**Google Cloud CCaaS prerelease notes 6.9**
+
+Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.
+
+**Important:** The next version of Google Cloud CCaaS could be greater than 6.9.
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where agents couldn't send new outbound emails.
+* Fixed an issue where the disposition panel in the call adapter was
+  incorrectly hidden or visible due to inconsistent state updates.
+* Fixed an issue where direct inbound voicemails appeared multiple times in
+  the **History** tab of the call adapter.
+* Fixed an issue where voice callbacks were canceled at the end of operating
+  hours instead of rolling over to the next day.
+* Fixed an issue where using click-to-dial from a Salesforce case incorrectly
+  overwrote the parent account's mobile phone number with the dialed number.
+* Fixed an issue where ending a call resulted in significant latency or
+  connection errors in the instance.
+* Fixed an issue where hold music in call recordings overlapped live
+  conversation.
+* Fixed an issue where the deletion of a custom hours of operation group
+  didn't appear in the **Audit Dashboard**.
+* Fixed an issue in Zendesk integrations where the system mistakenly navigated
+  from the active ticket tab to the customer profile page when a voice call
+  ended.
+
+---
 ## 2026-08-27
 
 ### Announcement

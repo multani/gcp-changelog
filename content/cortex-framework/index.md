@@ -1,5 +1,35 @@
 # Cortex Framework
 
+## 2026-09-01
+
+### Announcement
+
+
+
+### Release 7.0.5
+
+
+
+### Fixed
+
+* Removed obsolete review items checklist from tests.
+
+---
+## 2026-08-26
+
+### Announcement
+
+
+
+### Release 7.0.4
+
+
+
+### Fixed
+
+* Removed unused dependencies (pandas, pytest-bigquery-mock) and lockfile cleanup.
+
+---
 ## 2026-08-14
 
 ### Release 7.0.3

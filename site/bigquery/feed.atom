@@ -26,6 +26,39 @@ This feature is in
     <id>urn:github:multani:gcp-changelog:bigquery:2026-08-31:feature:1</id>
     <published>2026-08-31T00:00:00+00:00</published>
     <updated>2026-08-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery now supports <a href="https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/">TabFM</a>,
+Google's pre-trained foundation model for tabular data. TabFM enables zero-shot
+regression and classification through in-context learning. It delivers
+high-accuracy predictions on structured data without requiring model training
+or hyperparameter tuning.
+You can use TabFM directly through the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-predict"><code>AI.PREDICT</code> function</a>
+and evaluate model performance by using the
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate"><code>AI.EVALUATE</code> function</a>.
+This feature is in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>BigQuery now integrates TabFM, a pre-trained foundation model for tabular data. This enables zero-shot regression and classification, delivering high-accuracy predictions without model training. Use it directly via the AI.PREDICT function.</summary>
+    <title>Feature: Tabular Data Foundation Model in BigQuery</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-31:fixed:2</id>
+    <published>2026-08-31T00:00:00+00:00</published>
+    <updated>2026-08-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Support for <a href="https://docs.cloud.google.com/bigquery/docs/control-genai-costs">configuring daily token quotas</a>
+for BigQuery generative AI functions has been restored.</p>]]></content>
+    <summary>The ability to configure daily token quotas for BigQuery generative AI functions has been restored. This feature allows for better cost control when using these powerful AI capabilities within BigQuery.</summary>
+    <title>Fixed: Daily token quotas for BigQuery AI restored</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-31:feature:3</id>
+    <published>2026-08-31T00:00:00+00:00</published>
+    <updated>2026-08-31T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Using <a href="https://docs.cloud.google.com/bigquery/docs/code-asset-folders">folders</a> to
 <a href="https://docs.cloud.google.com/bigquery/docs/create-pipelines">create, store, and manage pipelines</a> is
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>]]></content>
@@ -36,7 +69,7 @@ This feature is in
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-31:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-31:feature:4</id>
     <published>2026-08-31T00:00:00+00:00</published>
     <updated>2026-08-31T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now create an
@@ -49,6 +82,28 @@ value for that column. This feature is in
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>]]></content>
     <summary>BigQuery now supports identity columns, which automatically generate unique integer values for rows. This feature simplifies the creation and management of primary keys on your tables. Identity columns are currently in Preview.</summary>
     <title>Feature: New: Identity Columns for Auto-Incrementing Keys</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-08-31:feature:5</id>
+    <published>2026-08-31T00:00:00+00:00</published>
+    <updated>2026-08-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/bigquery/docs/graph-overview">BigQuery Graph</a>
+is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+(GA).</p>
+<p>BigQuery Graph now includes support for the <code>CALL</code>
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/graph-query-statements">graph query statement</a>,
+and the following path inspection
+<a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/graph-gql-functions">GQL functions</a>:</p>
+<ul>
+<li><code>IS_ACYCLIC</code></li>
+<li><code>IS_SIMPLE</code></li>
+<li><code>IS_TRAIL</code>.</li>
+</ul>]]></content>
+    <summary>BigQuery Graph has reached general availability, enhancing your ability to analyze graph data. This release introduces support for the CALL graph query statement and new path inspection functions like IS_ACYCLIC, IS_SIMPLE, and IS_TRAIL, enabling more sophisticated graph analysis directly within BigQuery.</summary>
+    <title>Feature: BigQuery Graph is Now Generally Available</title>
   </entry>
   <entry>
     <author>

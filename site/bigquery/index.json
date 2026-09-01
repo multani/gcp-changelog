@@ -12,6 +12,22 @@
       },
       {
         "kind": "Feature",
+        "content": "BigQuery now supports [TabFM](https://research.google/blog/introducing-tabfm-a-zero-shot-foundation-model-for-tabular-data/),\nGoogle's pre-trained foundation model for tabular data. TabFM enables zero-shot\nregression and classification through in-context learning. It delivers\nhigh-accuracy predictions on structured data without requiring model training\nor hyperparameter tuning.\nYou can use TabFM directly through the\n[`AI.PREDICT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-predict)\nand evaluate model performance by using the\n[`AI.EVALUATE` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate).\nThis feature is in\n[Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Tabular Data Foundation Model in BigQuery",
+          "summary": "BigQuery now integrates TabFM, a pre-trained foundation model for tabular data. This enables zero-shot regression and classification, delivering high-accuracy predictions without model training. Use it directly via the AI.PREDICT function."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Support for [configuring daily token quotas](https://docs.cloud.google.com/bigquery/docs/control-genai-costs)\nfor BigQuery generative AI functions has been restored.",
+        "summary": {
+          "title": "Daily token quotas for BigQuery AI restored",
+          "summary": "The ability to configure daily token quotas for BigQuery generative AI functions has been restored. This feature allows for better cost control when using these powerful AI capabilities within BigQuery."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "Using [folders](https://docs.cloud.google.com/bigquery/docs/code-asset-folders) to\n[create, store, and manage pipelines](https://docs.cloud.google.com/bigquery/docs/create-pipelines) is\n[generally available](https://cloud.google.com/products#product-launch-stages).",
         "summary": {
           "title": "Manage pipelines using folders",
@@ -24,6 +40,14 @@
         "summary": {
           "title": "New: Identity Columns for Auto-Incrementing Keys",
           "summary": "BigQuery now supports identity columns, which automatically generate unique integer values for rows. This feature simplifies the creation and management of primary keys on your tables. Identity columns are currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[BigQuery Graph](https://docs.cloud.google.com/bigquery/docs/graph-overview)\nis [generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).\n\nBigQuery Graph now includes support for the `CALL`\n[graph query statement](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/graph-query-statements),\nand the following path inspection\n[GQL functions](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/graph-gql-functions):\n\n* `IS_ACYCLIC`\n* `IS_SIMPLE`\n* `IS_TRAIL`.",
+        "summary": {
+          "title": "BigQuery Graph is Now Generally Available",
+          "summary": "BigQuery Graph has reached general availability, enhancing your ability to analyze graph data. This release introduces support for the CALL graph query statement and new path inspection functions like IS_ACYCLIC, IS_SIMPLE, and IS_TRAIL, enabling more sophisticated graph analysis directly within BigQuery."
         }
       }
     ],

@@ -1,5 +1,31 @@
 # Google Kubernetes Engine
 
+## 2026-08-31
+
+### Feature
+
+Session affinity support using GCPTrafficDistributionPolicy for GKE Gateway is
+generally available. This release currently supports single-cluster GKE Gateway
+load balancers using the following GatewayClasses:
+
+* `gke-l7-rilb`
+* `gke-l7-regional-external-managed`
+* `gke-l7-global-external-managed`
+
+In addition to the session affinity types available in Preview, you can now use
+the `STRONG_COOKIE_AFFINITY` type, which provides the most persistent session
+stickiness among the session affinity types available in Google Cloud
+Application Load Balancers.
+
+The session affinity types require the following minimum GKE versions:
+
+* `CLIENT_IP`, `HEADER_FIELD`, `GENERATED_COOKIE`, and `HTTP_COOKIE`:
+  version 1.35.2-gke.1269001 or later
+* `STRONG_COOKIE_AFFINITY`: version 1.36.3-gke.1767000 or later
+
+For more information, see [Configure session affinity using GCPTrafficDistributionPolicy](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gateway-resources#expanded-session-affinity).
+
+---
 ## 2026-08-27
 
 ### Feature

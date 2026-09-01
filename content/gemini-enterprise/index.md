@@ -27,6 +27,35 @@ in-region at-rest data residency (DRZ) and machine learning processing (MLP).
 
 For more information, see [Locations](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
 
+### Feature
+
+**Gemini Enterprise: Gemini 3.1 Flash image available in US and EU multi-regions**
+
+Gemini 3.1 Flash image (Nano Banana 2) for image generation is generally
+available in the `us` and `eu` multi-regions.
+
+For more information, see:
+
+* [Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Data residency for Gemini Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+### Feature
+
+**Gemini Enterprise: Protect sensitive data with content policies**
+
+You can apply Sensitive Data Protection content policies to your
+Gemini Enterprise connectors, apps, and Gemini Notebook Enterprise notebooks.
+
+Content policies inspect data for violating or unwanted content and block it.
+Content policies can block Gemini Enterprise apps from presenting sensitive or
+inappropriate material to users and can stop end users from uploading files
+that contain sensitive or inappropriate material.
+
+This feature is generally available (GA). For more information, see [Protect
+sensitive data in sources](https://docs.cloud.google.com/gemini/enterprise/docs/protect-sensitive-data) and
+[Protect sensitive data in NotebookLM Enterprise
+sources](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/protect-sensitive-data).
+
 ---
 ## 2026-08-28
 

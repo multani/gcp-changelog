@@ -1,5 +1,21 @@
 # Cloud Trace
 
+## 2026-08-31
+
+### Breaking
+
+Starting August 31, 2026, you can no longer create or edit
+[trace sinks](https://docs.cloud.google.com/trace/docs/trace-export-overview). Trace sinks were deprecated
+on February 18, 2026. For more information, see
+[Export trace spans with sinks deprecation](https://docs.cloud.google.com/stackdriver/docs/deprecations/export-spans-with-sinks).
+
+For information about how to analyze your trace data using SQL,
+see the following documents:
+
+* [Query and analyze traces using Observability Analytics](https://docs.cloud.google.com/trace/docs/analytics)
+* [Query a linked BigQuery dataset](https://docs.cloud.google.com/trace/docs/analytics-query-linked-dataset)
+
+---
 ## 2026-08-27
 
 ### Feature

@@ -2,9 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-08-27T00:00:00+00:00</updated>
+  <updated>2026-08-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-08-31:feature:0</id>
+    <published>2026-08-31T00:00:00+00:00</published>
+    <updated>2026-08-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Session affinity support using GCPTrafficDistributionPolicy for GKE Gateway is
+generally available. This release currently supports single-cluster GKE Gateway
+load balancers using the following GatewayClasses:</p>
+<ul>
+<li><code>gke-l7-rilb</code></li>
+<li><code>gke-l7-regional-external-managed</code></li>
+<li><code>gke-l7-global-external-managed</code></li>
+</ul>
+<p>In addition to the session affinity types available in Preview, you can now use
+the <code>STRONG_COOKIE_AFFINITY</code> type, which provides the most persistent session
+stickiness among the session affinity types available in Google Cloud
+Application Load Balancers.</p>
+<p>The session affinity types require the following minimum GKE versions:</p>
+<ul>
+<li><code>CLIENT_IP</code>, <code>HEADER_FIELD</code>, <code>GENERATED_COOKIE</code>, and <code>HTTP_COOKIE</code>:
+  version 1.35.2-gke.1269001 or later</li>
+<li><code>STRONG_COOKIE_AFFINITY</code>: version 1.36.3-gke.1767000 or later</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/configure-gateway-resources#expanded-session-affinity">Configure session affinity using GCPTrafficDistributionPolicy</a>.</p>]]></content>
+    <summary>Session affinity is now generally available for GKE Gateway load balancers, enhancing traffic management. This feature supports multiple GatewayClasses and introduces the robust STRONG_COOKIE_AFFINITY type for improved session stickiness. Ensure your GKE version meets the requirements for the desired session affinity type.</summary>
+    <title>Feature: Session Affinity for GKE Gateway Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

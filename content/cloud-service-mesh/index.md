@@ -1,5 +1,31 @@
 # Cloud Service Mesh
 
+## 2026-08-31
+
+### Announcement
+
+**1.30.4-asm.1 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.30.4-asm.1 for in-cluster Cloud Service Mesh. It includes
+the features of [Istio 1.30.4](https://istio.io/latest/news/releases/1.30.x/announcing-1.30/) subject to the list of
+[supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+The following are not supported:
+
+* Failover Priority support for DNS clusters
+* `ENABLE_WILDCARD_HOST_SERVICE_ENTRIES_FOR_TLS`
+* Multiple `CUSTOM` external authorization providers per workload
+* The `DEBUG_ENDPOINT_AUTH_ALLOWED_NAMESPACES` flag
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh version 1.30.4-asm.1 uses Envoy v1.38.4-dev.
+
+### Announcement
+
+In-cluster Cloud Service Mesh 1.27 is no longer supported. For more information and to view the earliest end-of-life dates for other versions, see [Supported versions](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions).
+
+---
 ## 2026-08-27
 
 ### Security

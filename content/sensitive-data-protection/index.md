@@ -1,5 +1,29 @@
 # Sensitive Data Protection
 
+## 2026-08-31
+
+### Feature
+
+Sensitive Data Protection content policies are in [General
+Availability](https://cloud.google.com/products#product-launch-stages). You can
+use content policies to evaluate content and return an `ALLOW` or `BLOCK`
+verdict based on data sensitivity.
+
+For more information about content policies, see the following:
+
+* [Overview of content policies](https://docs.cloud.google.com/sensitive-data-protection/docs/content-policy)
+* [Create and manage content
+  policies](https://docs.cloud.google.com/sensitive-data-protection/docs/manage-content-policies)
+
+Sensitive Data Protection content policies are integrated with
+Gemini Enterprise. For more information, see the following:
+
+* [Protect sensitive data in
+  sources](https://docs.cloud.google.com/gemini/enterprise/docs/protect-sensitive-data)
+* [Protect sensitive data in Gemini Notebook Enterprise
+  sources](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/protect-sensitive-data)
+
+---
 ## 2026-08-20
 
 ### Change

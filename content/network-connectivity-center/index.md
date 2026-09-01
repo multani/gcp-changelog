@@ -1,5 +1,17 @@
 # Network Connectivity Center
 
+## 2026-08-31
+
+### Feature
+
+IPv6 dynamic routes support for include and exclude [spoke filters](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/spoke-filters-overview)
+for hybrid spokes is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+Export filters control which subnets or routes a spoke can
+send to the hub. Import filters control which subnets or routes can be
+accepted by a spoke from the hub.
+
+---
 ## 2026-07-10
 
 ### Feature

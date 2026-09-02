@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 583.0.0 (2026-09-01)</title>
+  <subtitle>Changelog for Google Cloud product: 583.0.0 (2026-09-01)</subtitle>
+  <updated>2026-09-01T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/583-0-0--2026-09-01-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:alloydb:0</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for <code>POSTGRES_19</code> as a version in <code>alloydb clusters create</code> for alpha and beta tracks.</li>
+<li>Added support for <code>POSTGRES_19</code> as a version in <code>alloydb clusters migrate-cloud-sql</code> for alpha and beta tracks.</li>
+</ul>]]></content>
+    <summary>AlloyDB now supports PostgreSQL 19 for alpha and beta tracks. This includes support for cluster creation and Cloud SQL migration. This enhancement allows users to leverage the latest PostgreSQL features with AlloyDB.</summary>
+    <title>AlloyDB: AlloyDB adds support for PostgreSQL 19</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:apigee:1</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where <code>gcloud apigee apis import --from-template</code> nested
+  <code>&lt;FaultRule&gt;</code> and <code>&lt;DefaultFaultRule&gt;</code> steps inside a <code>&lt;Request&gt;</code> element,
+  which caused the generated fault rules to run no steps. Steps are now
+  emitted as direct children, and fault rules are read correctly in either
+  form when importing a bundle.</li>
+<li>Modified <code>gcloud apigee apis import --from-template</code> to ignore the <code>mode</code>
+  field when it is set on a fault rule and to log a warning. The field applies
+  only to flows.</li>
+</ul>]]></content>
+    <summary>The Apigee import command has been updated to correctly handle fault rules, ensuring that nested steps are properly processed and that the `mode` field is ignored on fault rules. This resolves an issue where imported fault rules might not execute any steps.</summary>
+    <title>Apigee: Apigee import improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:bigquery:2</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for <code>--service_directory_service</code> flag for <code>bq mk --connection</code>
+  and <code>bq update --connection</code> commands for Azure connections.</li>
+<li>Deprecated <code>--s3_service_directory_service</code> flag. Use
+  <code>--service_directory_service</code> instead for <code>bq mk --connection</code> and
+  <code>bq update --connection</code> commands for AWS connections.</li>
+<li>Added <code>creationTime</code> and <code>updateTime</code> to be displayed in <code>bq show</code> for
+  reservation group.</li>
+<li>Added <code>--precedence</code> and <code>--condition</code> flags to <code>bq mk</code> and <code>bq update</code> for
+  reservation assignments.</li>
+</ul>]]></content>
+    <summary>New flags for Azure and AWS connections in BigQuery improve service directory integration. Reservation assignments now support precedence and condition flags, and reservation groups display creation and update times.</summary>
+    <title>BigQuery: BigQuery Connection Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:cloud access context manager:3</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud access-context-manager lookup-configured-perimeter</code> to beta and GA.</li>
+</ul>]]></content>
+    <summary>The `lookup-configured-perimeter` command for Access Context Manager is now available in beta and general availability. This command helps you to easily retrieve information about your configured perimeters.</summary>
+    <title>Cloud Access Context Manager: Access Context Manager: new commands available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:cloud bigtable emulator:4</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Rebuilding cbt emulator with go version 1.25.9 which fixed CVE-2026-27140.</li>
+</ul>]]></content>
+    <summary>The Cloud Bigtable emulator has been rebuilt using Go 1.25.9. This update includes a fix for CVE-2026-27140, enhancing the security of the emulator.</summary>
+    <title>Cloud Bigtable Emulator: Bigtable emulator updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:cloud composer:5</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta composer environments hibernate</code> command to hibernate a Cloud Composer environment.</li>
+<li>Added <code>gcloud beta composer environments resume</code> command to resume a Cloud Composer environment.</li>
+<li>Added <code>--enable-development-mode</code> flag to <code>gcloud beta composer environments create</code> to enable development mode for environments.</li>
+</ul>]]></content>
+    <summary>Manage your Cloud Composer environments more efficiently with new commands for hibernating and resuming environments. You can now also enable development mode during environment creation using the `--enable-development-mode` flag.</summary>
+    <title>Cloud Composer: New environment management features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:cloud run:6</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added an interactive prompt when creating or updating Cloud Run jobs
+  configured with GPUs and task timeouts greater than 1 hour in
+  <code>gcloud beta run jobs</code> command group.</li>
+<li>Added <code>--identity-certificate</code>, <code>--identity-type</code>, and <code>--functional-type</code>
+  flags to the beta track for <code>gcloud run deploy</code> and
+  <code>gcloud run services update</code> to configure workloads with Agent Registry and
+  Agent Identity.</li>
+<li>Added <code>--identity-certificate</code>, <code>--identity-type</code>, and <code>--functional-type</code>
+  flags to <code>gcloud beta run jobs</code> command groups to configure workloads with
+  Agent Registry and Agent Identity.</li>
+</ul>]]></content>
+    <summary>Cloud Run now offers an interactive prompt for configuring GPU and long-running jobs, alongside new flags for enhanced workload identity management with Agent Registry. These updates streamline job creation and improve security for your containerized applications.</summary>
+    <title>Cloud Run: Cloud Run Enhancements for Jobs and Workloads</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:cloud sql:7</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated 'cloud-sql-proxy' packaged component to use 2.25.3 of the Cloud SQL Proxy.</li>
+</ul>]]></content>
+    <summary>The Cloud SQL Proxy has been updated to version 2.25.3. This update ensures you are using the latest version of the proxy for secure and reliable connections to Cloud SQL instances.</summary>
+    <title>Cloud SQL: Cloud SQL Proxy Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:cloud storage:8</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Tuned download performance for gRPC bidi streaming used by RAPID storage in <code>gcloud storage</code>.</li>
+</ul>]]></content>
+    <summary>Download performance for gRPC bidi streaming in `gcloud storage` has been optimized. This update improves the speed of your storage operations.</summary>
+    <title>Cloud Storage: Faster Cloud Storage Downloads</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:cluster director:9</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where creating a cluster using <code>--quickstart-cluster</code> (or
+  any other reference architecture) would automatically inject default storage
+  resources (such as managed Lustre) even when custom storage configurations
+  (e.g. <code>--filestores</code>) were explicitly specified.</li>
+<li>Promoted <code>gcloud cluster-director</code> to GA.</li>
+</ul>]]></content>
+    <summary>Cluster Director is now generally available. A fix has been implemented to ensure custom storage configurations are respected when creating clusters with reference architectures.</summary>
+    <title>Cluster Director: Cluster Director GA and Storage Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:compute engine:10</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--no-graceful-shutdown</code> flag to <code>gcloud compute instance-groups managed stop-instances</code> command across all release tracks.</li>
+<li>Added <code>--no-graceful-shutdown</code> flag to <code>gcloud compute instance-groups managed delete-instances</code> command across all release tracks.</li>
+<li>Added <code>--no-graceful-shutdown</code> flag to <code>gcloud compute instance-groups managed recreate-instances</code> command across all release tracks.</li>
+<li>Added <code>--no-graceful-shutdown</code> flag to <code>gcloud compute instance-groups managed delete</code> command across all release tracks.</li>
+<li>Added <code>--outlier-detection-*</code> flags to <code>gcloud compute backend-services create</code> and <code>update</code> commands to configure outlier detection settings.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots recover</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots delete</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots describe</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots list</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots set-iam-policy</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots test-iam-permissions</code> to beta.</li>
+<li>Promoted <code>gcloud compute snapshot-recycle-bin-policy describe</code> to beta.</li>
+<li>Promoted <code>gcloud compute snapshot-recycle-bin-policy patch</code> to beta.</li>
+<li>Promoted <code>gcloud compute snapshots get-effective-recycle-bin-rule</code> to beta.</li>
+</ul>]]></content>
+    <summary>The latest Compute Engine update introduces a new --no-graceful-shutdown flag for managed instance group operations and promotes several recoverable snapshot commands to beta. Additionally, new outlier detection flags are available for backend services.</summary>
+    <title>Compute Engine: New Compute Engine features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:database migration:11</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for homogeneous MySQL destination connection profiles for
+  quickstart migrations in <code>gcloud database-migration connection-profiles create
+  mysql</code> and <code>gcloud database-migration connection-profiles update</code>.</li>
+</ul>]]></content>
+    <summary>Users can now create and update homogeneous MySQL destination connection profiles for quickstart migrations using gcloud database-migration commands. This simplifies the initial setup for migrating MySQL databases.</summary>
+    <title>Database Migration: Quickstart MySQL Migrations Now Supported</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:distributed cloud edge:12</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud edge-cloud zones describe</code>, <code>get-iam-policy</code>, <code>list</code>, <code>roles list</code>, and <code>set-iam-policy</code> to GA.</li>
+<li>Promoted <code>gcloud edge-cloud services describe</code>, <code>enable</code>, and <code>list</code> to GA.</li>
+<li>Promoted <code>gcloud edge-cloud projects describe</code>, <code>enable</code>, and <code>list</code> to GA.</li>
+<li>Promoted <code>gcloud edge-cloud service-accounts create</code>, <code>delete</code>, <code>describe</code>, and <code>list</code> to GA.</li>
+<li>Promoted <code>gcloud edge-cloud service-accounts keys create</code>, <code>describe</code>, <code>disable</code>, and <code>list</code> to GA.</li>
+<li>Promoted <code>gcloud edge-cloud api-keys create</code>, <code>delete</code>, <code>describe</code>, and <code>list</code> to GA.</li>
+<li>Promoted <code>--control-plane-node-system-partition-size-gib</code> flag from alpha to GA for <code>edge-cloud container clusters create</code>.</li>
+</ul>]]></content>
+    <summary>Key command-line interface tools for managing Distributed Cloud Edge resources, including zones, services, projects, service accounts, and API keys, have now reached General Availability. This includes features for creating, describing, listing, and managing IAM policies and service account keys. Additionally, the `--control-plane-node-system-partition-size-gib` flag for creating container clusters is now GA.</summary>
+    <title>Distributed Cloud Edge: Distributed Cloud Edge CLI commands reach General Availability</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:gke hub:13</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--ignore-maintenance-policies</code>, <code>--ignore-cluster-disruption-budgets</code>,
+  <code>--soak-duration-overrides-per-stage</code> and <code>--soak-duration-override-all-stages</code>
+  flags to <code>gcloud beta container fleet rolloutsequences upgrade</code>.</li>
+<li>Added <code>--patch-only</code> flag to <code>gcloud beta container fleet rolloutsequences upgrade</code>.</li>
+</ul>]]></content>
+    <summary>New flags have been added to `gcloud beta container fleet rolloutsequences upgrade` to provide more control over upgrade processes. These include options to ignore maintenance policies and disruption budgets, and to customize soak durations. Additionally, a `--patch-only` flag is now available for patch upgrades.</summary>
+    <title>GKE Hub: New GKE Hub Rollout Sequence Flags</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:kubernetes engine:14</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated default kubectl from 1.35.6 to 1.35.7.</li>
+<li>Additional kubectl versions:</li>
+<li>1.31.14</li>
+<li>1.32.13</li>
+<li>1.33.13</li>
+<li>1.34.11</li>
+<li>1.35.8</li>
+<li>1.36.4</li>
+</ul>]]></content>
+    <summary>Kubernetes Engine now supports kubectl versions 1.31 through 1.36, with the default version updated to 1.35.7. This update includes the latest patch releases for each supported minor version.</summary>
+    <title>Kubernetes Engine: Kubernetes Engine kubectl update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:network services:15</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud network-services telemetry-policies delete</code> to beta.</li>
+<li>Promoted <code>gcloud network-services telemetry-policies describe</code> and
+  <code>gcloud network-services telemetry-policies list</code> to beta.</li>
+<li>Promoted <code>gcloud network-services telemetry-policies export</code> and
+  <code>gcloud network-services telemetry-policies import</code> to beta.</li>
+</ul>]]></content>
+    <summary>The gcloud network-services telemetry-policies commands for delete, describe, list, export, and import have been promoted to Beta. This update brings enhanced network observability and management capabilities to users.</summary>
+    <title>Network Services: Network Services Telemetry Policies reach Beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:orchestration pipelines:16</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added BUNDLE_ID as a default variable to allow dynamic referencing
+  in pipeline configurations. BUNDLE_ID resolves to the Git repository name,
+  auto-generated local bundle name, or the current working directory name as
+  a fallback. Used in <code>gcloud orchestration-pipelines deploy</code> command.</li>
+</ul>]]></content>
+    <summary>Orchestration Pipelines now supports BUNDLE_ID as a default variable. This variable dynamically references your Git repository name, auto-generated bundle name, or current working directory, simplifying pipeline configuration. It is used with the `gcloud orchestration-pipelines deploy` command.</summary>
+    <title>Orchestration Pipelines: Bundle ID variable for pipelines</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:583-0-0--2026-09-01-:2026-09-01:transfer:17</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--match-glob</code> flag in <code>transfer jobs create</code> to GA.</li>
+<li>Promoted <code>--match-glob</code> flag in <code>transfer jobs update</code> to GA.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>The `--match-glob` flag for creating and updating transfer jobs has been promoted to General Availability. This enhancement allows for more flexible file matching in transfer operations.</summary>
+    <title>Transfer: Transfer jobs match glob GA</title>
+  </entry>
+</feed>

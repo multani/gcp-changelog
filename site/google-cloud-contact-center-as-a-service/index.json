@@ -11,6 +11,14 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "**Agent desktop supports email**\n\nThe agent desktop now supports email. Agents can handle email interactions\nusing the email adapter in a desktop layout.\n\nAdministrators: In the **Desktop Layout Builder** view, there's a new **Email\nAdapter** widget that you can drag and drop into a desktop layout.",
+        "summary": {
+          "title": "Agent desktop now supports email",
+          "summary": "Agents can now handle email interactions directly within the agent desktop using the new email adapter. Administrators can easily integrate this feature by adding the Email Adapter widget to their desktop layouts via the Desktop Layout Builder."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "This release addresses the following issues:\n\n* Fixed an issue where agents couldn't send new outbound emails.\n* Fixed an issue where the disposition panel in the call adapter was\n  incorrectly hidden or visible due to inconsistent state updates.\n* Fixed an issue where direct inbound voicemails appeared multiple times in\n  the **History** tab of the call adapter.\n* Fixed an issue where voice callbacks were canceled at the end of operating\n  hours instead of rolling over to the next day.\n* Fixed an issue where using click-to-dial from a Salesforce case incorrectly\n  overwrote the parent account's mobile phone number with the dialed number.\n* Fixed an issue where ending a call resulted in significant latency or\n  connection errors in the instance.\n* Fixed an issue where hold music in call recordings overlapped live\n  conversation.\n* Fixed an issue where the deletion of a custom hours of operation group\n  didn't appear in the **Audit Dashboard**.\n* Fixed an issue in Zendesk integrations where the system mistakenly navigated\n  from the active ticket tab to the customer profile page when a voice call\n  ended.",
         "summary": {

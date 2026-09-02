@@ -1,0 +1,151 @@
+{
+  "name": "583.0.0 (2026-09-01)",
+  "entries": {
+    "2026-09-01": [
+      {
+        "kind": "AlloyDB",
+        "content": "* Added support for `POSTGRES_19` as a version in `alloydb clusters create` for alpha and beta tracks.\n* Added support for `POSTGRES_19` as a version in `alloydb clusters migrate-cloud-sql` for alpha and beta tracks.",
+        "summary": {
+          "title": "AlloyDB adds support for PostgreSQL 19",
+          "summary": "AlloyDB now supports PostgreSQL 19 for alpha and beta tracks. This includes support for cluster creation and Cloud SQL migration. This enhancement allows users to leverage the latest PostgreSQL features with AlloyDB."
+        }
+      },
+      {
+        "kind": "Apigee",
+        "content": "* Fixed an issue where `gcloud apigee apis import --from-template` nested\n  `<FaultRule>` and `<DefaultFaultRule>` steps inside a `<Request>` element,\n  which caused the generated fault rules to run no steps. Steps are now\n  emitted as direct children, and fault rules are read correctly in either\n  form when importing a bundle.\n* Modified `gcloud apigee apis import --from-template` to ignore the `mode`\n  field when it is set on a fault rule and to log a warning. The field applies\n  only to flows.",
+        "summary": {
+          "title": "Apigee import improvements",
+          "summary": "The Apigee import command has been updated to correctly handle fault rules, ensuring that nested steps are properly processed and that the `mode` field is ignored on fault rules. This resolves an issue where imported fault rules might not execute any steps."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Added support for `--service_directory_service` flag for `bq mk --connection`\n  and `bq update --connection` commands for Azure connections.\n* Deprecated `--s3_service_directory_service` flag. Use\n  `--service_directory_service` instead for `bq mk --connection` and\n  `bq update --connection` commands for AWS connections.\n* Added `creationTime` and `updateTime` to be displayed in `bq show` for\n  reservation group.\n* Added `--precedence` and `--condition` flags to `bq mk` and `bq update` for\n  reservation assignments.",
+        "summary": {
+          "title": "BigQuery Connection Updates",
+          "summary": "New flags for Azure and AWS connections in BigQuery improve service directory integration. Reservation assignments now support precedence and condition flags, and reservation groups display creation and update times."
+        }
+      },
+      {
+        "kind": "Cloud Access Context Manager",
+        "content": "* Promoted `gcloud access-context-manager lookup-configured-perimeter` to beta and GA.",
+        "summary": {
+          "title": "Access Context Manager: new commands available",
+          "summary": "The `lookup-configured-perimeter` command for Access Context Manager is now available in beta and general availability. This command helps you to easily retrieve information about your configured perimeters."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable Emulator",
+        "content": "* Rebuilding cbt emulator with go version 1.25.9 which fixed CVE-2026-27140.",
+        "summary": {
+          "title": "Bigtable emulator updated",
+          "summary": "The Cloud Bigtable emulator has been rebuilt using Go 1.25.9. This update includes a fix for CVE-2026-27140, enhancing the security of the emulator."
+        }
+      },
+      {
+        "kind": "Cloud Composer",
+        "content": "* Added `gcloud beta composer environments hibernate` command to hibernate a Cloud Composer environment.\n* Added `gcloud beta composer environments resume` command to resume a Cloud Composer environment.\n* Added `--enable-development-mode` flag to `gcloud beta composer environments create` to enable development mode for environments.",
+        "summary": {
+          "title": "New environment management features",
+          "summary": "Manage your Cloud Composer environments more efficiently with new commands for hibernating and resuming environments. You can now also enable development mode during environment creation using the `--enable-development-mode` flag."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added an interactive prompt when creating or updating Cloud Run jobs\n  configured with GPUs and task timeouts greater than 1 hour in\n  `gcloud beta run jobs` command group.\n* Added `--identity-certificate`, `--identity-type`, and `--functional-type`\n  flags to the beta track for `gcloud run deploy` and\n  `gcloud run services update` to configure workloads with Agent Registry and\n  Agent Identity.\n* Added `--identity-certificate`, `--identity-type`, and `--functional-type`\n  flags to `gcloud beta run jobs` command groups to configure workloads with\n  Agent Registry and Agent Identity.",
+        "summary": {
+          "title": "Cloud Run Enhancements for Jobs and Workloads",
+          "summary": "Cloud Run now offers an interactive prompt for configuring GPU and long-running jobs, alongside new flags for enhanced workload identity management with Agent Registry. These updates streamline job creation and improve security for your containerized applications."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Updated 'cloud-sql-proxy' packaged component to use 2.25.3 of the Cloud SQL Proxy.",
+        "summary": {
+          "title": "Cloud SQL Proxy Updated",
+          "summary": "The Cloud SQL Proxy has been updated to version 2.25.3. This update ensures you are using the latest version of the proxy for secure and reliable connections to Cloud SQL instances."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* Tuned download performance for gRPC bidi streaming used by RAPID storage in `gcloud storage`.",
+        "summary": {
+          "title": "Faster Cloud Storage Downloads",
+          "summary": "Download performance for gRPC bidi streaming in `gcloud storage` has been optimized. This update improves the speed of your storage operations."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Fixed an issue where creating a cluster using `--quickstart-cluster` (or\n  any other reference architecture) would automatically inject default storage\n  resources (such as managed Lustre) even when custom storage configurations\n  (e.g. `--filestores`) were explicitly specified.\n* Promoted `gcloud cluster-director` to GA.",
+        "summary": {
+          "title": "Cluster Director GA and Storage Fix",
+          "summary": "Cluster Director is now generally available. A fix has been implemented to ensure custom storage configurations are respected when creating clusters with reference architectures."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `--no-graceful-shutdown` flag to `gcloud compute instance-groups managed stop-instances` command across all release tracks.\n* Added `--no-graceful-shutdown` flag to `gcloud compute instance-groups managed delete-instances` command across all release tracks.\n* Added `--no-graceful-shutdown` flag to `gcloud compute instance-groups managed recreate-instances` command across all release tracks.\n* Added `--no-graceful-shutdown` flag to `gcloud compute instance-groups managed delete` command across all release tracks.\n* Added `--outlier-detection-*` flags to `gcloud compute backend-services create` and `update` commands to configure outlier detection settings.\n* Promoted `gcloud compute recoverable-snapshots recover` to beta.\n* Promoted `gcloud compute recoverable-snapshots delete` to beta.\n* Promoted `gcloud compute recoverable-snapshots describe` to beta.\n* Promoted `gcloud compute recoverable-snapshots list` to beta.\n* Promoted `gcloud compute recoverable-snapshots set-iam-policy` to beta.\n* Promoted `gcloud compute recoverable-snapshots test-iam-permissions` to beta.\n* Promoted `gcloud compute snapshot-recycle-bin-policy describe` to beta.\n* Promoted `gcloud compute snapshot-recycle-bin-policy patch` to beta.\n* Promoted `gcloud compute snapshots get-effective-recycle-bin-rule` to beta.",
+        "summary": {
+          "title": "New Compute Engine features",
+          "summary": "The latest Compute Engine update introduces a new --no-graceful-shutdown flag for managed instance group operations and promotes several recoverable snapshot commands to beta. Additionally, new outlier detection flags are available for backend services."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added support for homogeneous MySQL destination connection profiles for\n  quickstart migrations in `gcloud database-migration connection-profiles create\n  mysql` and `gcloud database-migration connection-profiles update`.",
+        "summary": {
+          "title": "Quickstart MySQL Migrations Now Supported",
+          "summary": "Users can now create and update homogeneous MySQL destination connection profiles for quickstart migrations using gcloud database-migration commands. This simplifies the initial setup for migrating MySQL databases."
+        }
+      },
+      {
+        "kind": "Distributed Cloud Edge",
+        "content": "* Promoted `gcloud edge-cloud zones describe`, `get-iam-policy`, `list`, `roles list`, and `set-iam-policy` to GA.\n* Promoted `gcloud edge-cloud services describe`, `enable`, and `list` to GA.\n* Promoted `gcloud edge-cloud projects describe`, `enable`, and `list` to GA.\n* Promoted `gcloud edge-cloud service-accounts create`, `delete`, `describe`, and `list` to GA.\n* Promoted `gcloud edge-cloud service-accounts keys create`, `describe`, `disable`, and `list` to GA.\n* Promoted `gcloud edge-cloud api-keys create`, `delete`, `describe`, and `list` to GA.\n* Promoted `--control-plane-node-system-partition-size-gib` flag from alpha to GA for `edge-cloud container clusters create`.",
+        "summary": {
+          "title": "Distributed Cloud Edge CLI commands reach General Availability",
+          "summary": "Key command-line interface tools for managing Distributed Cloud Edge resources, including zones, services, projects, service accounts, and API keys, have now reached General Availability. This includes features for creating, describing, listing, and managing IAM policies and service account keys. Additionally, the `--control-plane-node-system-partition-size-gib` flag for creating container clusters is now GA."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Added `--ignore-maintenance-policies`, `--ignore-cluster-disruption-budgets`,\n  `--soak-duration-overrides-per-stage` and `--soak-duration-override-all-stages`\n  flags to `gcloud beta container fleet rolloutsequences upgrade`.\n* Added `--patch-only` flag to `gcloud beta container fleet rolloutsequences upgrade`.",
+        "summary": {
+          "title": "New GKE Hub Rollout Sequence Flags",
+          "summary": "New flags have been added to `gcloud beta container fleet rolloutsequences upgrade` to provide more control over upgrade processes. These include options to ignore maintenance policies and disruption budgets, and to customize soak durations. Additionally, a `--patch-only` flag is now available for patch upgrades."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Updated default kubectl from 1.35.6 to 1.35.7.\n* Additional kubectl versions:\n  + 1.31.14\n  + 1.32.13\n  + 1.33.13\n  + 1.34.11\n  + 1.35.8\n  + 1.36.4",
+        "summary": {
+          "title": "Kubernetes Engine kubectl update",
+          "summary": "Kubernetes Engine now supports kubectl versions 1.31 through 1.36, with the default version updated to 1.35.7. This update includes the latest patch releases for each supported minor version."
+        }
+      },
+      {
+        "kind": "Network Services",
+        "content": "* Promoted `gcloud network-services telemetry-policies delete` to beta.\n* Promoted `gcloud network-services telemetry-policies describe` and\n  `gcloud network-services telemetry-policies list` to beta.\n* Promoted `gcloud network-services telemetry-policies export` and\n  `gcloud network-services telemetry-policies import` to beta.",
+        "summary": {
+          "title": "Network Services Telemetry Policies reach Beta",
+          "summary": "The gcloud network-services telemetry-policies commands for delete, describe, list, export, and import have been promoted to Beta. This update brings enhanced network observability and management capabilities to users."
+        }
+      },
+      {
+        "kind": "Orchestration Pipelines",
+        "content": "* Added BUNDLE\\_ID as a default variable to allow dynamic referencing\n  in pipeline configurations. BUNDLE\\_ID resolves to the Git repository name,\n  auto-generated local bundle name, or the current working directory name as\n  a fallback. Used in `gcloud orchestration-pipelines deploy` command.",
+        "summary": {
+          "title": "Bundle ID variable for pipelines",
+          "summary": "Orchestration Pipelines now supports BUNDLE_ID as a default variable. This variable dynamically references your Git repository name, auto-generated bundle name, or current working directory, simplifying pipeline configuration. It is used with the `gcloud orchestration-pipelines deploy` command."
+        }
+      },
+      {
+        "kind": "Transfer",
+        "content": "* Promoted `--match-glob` flag in `transfer jobs create` to GA.\n* Promoted `--match-glob` flag in `transfer jobs update` to GA.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Transfer jobs match glob GA",
+          "summary": "The `--match-glob` flag for creating and updating transfer jobs has been promoted to General Availability. This enhancement allows for more flexible file matching in transfer operations."
+        }
+      }
+    ]
+  }
+}

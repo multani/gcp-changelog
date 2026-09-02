@@ -12,6 +12,16 @@ capabilities to be as shown here.
 
 **Important:** The next version of Google Cloud CCaaS could be greater than 6.9.
 
+### Feature
+
+**Agent desktop supports email**
+
+The agent desktop now supports email. Agents can handle email interactions
+using the email adapter in a desktop layout.
+
+Administrators: In the **Desktop Layout Builder** view, there's a new **Email
+Adapter** widget that you can drag and drop into a desktop layout.
+
 ### Fixed
 
 This release addresses the following issues:

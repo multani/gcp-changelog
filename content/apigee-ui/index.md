@@ -1,5 +1,18 @@
 # Apigee UI
 
+## 2026-09-01
+
+### Announcement
+
+On September 1, 2026, we released an updated version of the Apigee UI.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| 547582067 | **Revisions can now be imported for API proxies and shared flows in a space**  Importing a revision in the Apigee UI now works for an API proxy or shared flow that is associated with a [space](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/spaces/apigee-spaces-overview).  Previously, the Apigee UI did not include the space when it uploaded the revision bundle, so the import request was rejected and the new revision was not created. This affected both API proxies and shared flows.  The earlier workaround of removing the API proxy or shared flow from its space, importing the revision, and then adding it back to the space is no longer needed. |
+
+---
 ## 2026-08-22
 
 ### Fixed

@@ -1,5 +1,17 @@
 # Cloud Service Mesh
 
+## 2026-09-01
+
+### Security
+
+Managed Cloud Service Mesh will start using proxy version
+csm\_mesh\_proxy.20260819\_RC00 for Gateway API on GKE clusters. This proxy
+version maps closest to Envoy version 1.37. This change is rolling out to all
+release channels and contains the fix for the managed Cloud Service Mesh
+security vulnerabilities listed in
+[GCP-2026-057](https://docs.cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-057).
+
+---
 ## 2026-08-31
 
 ### Announcement

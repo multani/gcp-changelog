@@ -1,5 +1,15 @@
 # Cloud Key Management Service
 
+## 2026-08-24
+
+### Feature
+
+Cloud KMS supports deleting key rings in General Availability.
+
+For more information about deleting Cloud KMS resources, see [Delete Cloud KMS
+resources](https://docs.cloud.google.com/kms/docs/delete-kms-resources).
+
+---
 ## 2026-08-06
 
 ### Feature

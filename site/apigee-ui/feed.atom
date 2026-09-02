@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee UI</title>
   <subtitle>Changelog for Google Cloud product: Apigee UI</subtitle>
-  <updated>2026-08-22T00:00:00+00:00</updated>
+  <updated>2026-09-01T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-ui</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-ui/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-ui:2026-09-01:announcement:0</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On September 1, 2026, we released an updated version of the Apigee UI.</p>]]></content>
+    <summary>An updated version of the Apigee UI was released on September 1, 2026. This update brings improvements and new features to the user interface.</summary>
+    <title>Announcement: Apigee UI Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-ui:2026-09-01:fixed:1</id>
+    <published>2026-09-01T00:00:00+00:00</published>
+    <updated>2026-09-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| 547582067 | <strong>Revisions can now be imported for API proxies and shared flows in a space</strong>  Importing a revision in the Apigee UI now works for an API proxy or shared flow that is associated with a <a href="https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/spaces/apigee-spaces-overview">space</a>.  Previously, the Apigee UI did not include the space when it uploaded the revision bundle, so the import request was rejected and the new revision was not created. This affected both API proxies and shared flows.  The earlier workaround of removing the API proxy or shared flow from its space, importing the revision, and then adding it back to the space is no longer needed. |</p>]]></content>
+    <summary>Importing revisions for API proxies and shared flows in spaces now works correctly. Previously, the Apigee UI would reject these imports due to issues with space association. This fix eliminates the need for workarounds.</summary>
+    <title>Fixed: Revision import fixed for API proxies and shared flows in spaces</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

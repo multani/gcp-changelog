@@ -1,28 +1,12 @@
 # Agent Platform Workbench
 
-## 2026-08-23
-
-### Change
-
-Installed latest packages from upstream dependencies.
+## 2026-08-30
 
 ### Change
 
 
 
-### 20260823-2330-rc0 Release
-
-
-
-### Change
-
-Installed latest packages from upstream dependencies.
-
-### Change
-
-
-
-### 20260823-2330-rc0 Release
+### 20260830-2330-rc0 Release
 
 
 
@@ -30,7 +14,7 @@ Installed latest packages from upstream dependencies.
 
 
 
-### 20260823-2230-rc0 Release
+### 20260831.01_p0 Release
 
 
 
@@ -40,9 +24,60 @@ Installed latest packages from upstream dependencies.
 
 ### Change
 
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.
+
+### Fixed
+
+Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.
+
+### Change
+
+The obsolete
+google-cloud-sdk transitional package is no longer installed. The Google Cloud
+CLI itself is unchanged; it was already provided by the google-cloud-cli
+package.
+
+### Change
 
 
-### 20260823-2230-rc0 Release
+
+### 20260830-2230-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260830-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.
+
+### Fixed
+
+The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.
+
+### Change
+
+
+
+### 20260830-2154-rc1 Release
 
 
 
@@ -52,7 +87,98 @@ Installed latest packages from upstream dependencies.
 
 ### Fixed
 
-Scheduled notebook executions now report their final status when the execution user's credentials stop working part way through a run, instead of continuing until the execution timeout.
+Fixed an issue where a notebook's cells and their outputs could be unexpectedly erased. The automatic reload of an open notebook (which keeps it in sync with changes made to its file on disk) is now restricted to run only while the Gemini CLI is in use, so notebooks are no longer overwritten at other times.
+
+### Fixed
+
+Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.
+
+### Fixed
+
+The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.
+
+### Change
+
+Agent Platform Workbench instances internal agents now honor custom CA certificates installed on the host OS (e.g. via a custom VM image), fixing TLS certificate verification failures when Google API traffic is routed through a customer-managed proxy.
+
+### Change
+
+
+
+### M148 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed an issue where a notebook's cells and their outputs could be unexpectedly erased. The automatic reload of an open notebook (which keeps it in sync with changes made to its file on disk) is now restricted to run only while the Gemini CLI is in use, so notebooks are no longer overwritten at other times.
+
+### Fixed
+
+The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.
+
+### Fixed
+
+Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.
+
+### Change
+
+Agent Platform Workbench instances internal agents now honor custom CA certificates installed on the host OS (e.g. via a custom VM image), fixing TLS certificate verification failures when Google API traffic is routed through a customer-managed proxy.
+
+---
+## 2026-08-23
+
+### Change
+
+
+
+### 20260823-2330-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260823-2330-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### 20260823-2230-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260823-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
 
 ### Change
 
@@ -61,10 +187,6 @@ Scheduled notebook executions now report their final status when the execution u
 ### 20260823-2130-rc0 Release
 
 
-
-### Change
-
-Installed latest packages from upstream dependencies.
 
 ### Fixed
 
@@ -82,12 +204,16 @@ Installed latest packages from upstream dependencies.
 
 
 
+### Fixed
+
+Scheduled notebook executions now report their final status when the execution user's credentials stop working part way through a run, instead of continuing until the execution timeout.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
 ---
 ## 2026-08-16
-
-### Security
-
-Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing known vulnerabilities.
 
 ### Change
 
@@ -96,6 +222,18 @@ Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing
 ### 20260816-2330-rc0 Release
 
 
+
+### Change
+
+
+
+### 20260816-2330-rc0 Release
+
+
+
+### Security
+
+Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing known vulnerabilities.
 
 ### Security
 
@@ -117,14 +255,6 @@ Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing
 
 Removed the JupyterLab 3 environment from the Python 3.12 custom container; JupyterLab 4 is now the only JupyterLab environment and is always used. The Python 3.10 images are unaffected.
 
-### Change
-
-
-
-### 20260816-2330-rc0 Release
-
-
-
 ### Security
 
 Updated aiohttp, joblib and cryptography to patched versions, addressing known vulnerabilities including CVE-2022-21797 and CVE-2025-69223.
@@ -143,15 +273,15 @@ Installed latest packages from upstream dependencies.
 
 ### Change
 
-Installed latest packages from upstream dependencies.
-
-### Change
-
 
 
 ### 20260816-2230-rc0 Release
 
 
+
+### Change
+
+Installed latest packages from upstream dependencies.
 
 ### Change
 
@@ -171,19 +301,19 @@ Installed latest packages from upstream dependencies.
 
 ### Change
 
-Installed latest packages from upstream dependencies.
-
-### Fixed
-
-Fixed the Git panel's grayed out buttons, which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.
-
-### Change
-
 
 
 ### M146 Release
 
 
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the Git panel's grayed out buttons, which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.
 
 ---
 ## 2026-08-09

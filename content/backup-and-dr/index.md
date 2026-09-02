@@ -1,5 +1,14 @@
 # Backup and DR
 
+## 2026-09-01
+
+### Feature
+
+Backup vault support for AlloyDB for PostgreSQL instances encrypted with customer-managed encryption keys (CMEK) is generally available (GA), providing immutable and indelible storage with enforced retention. For more information, see [Encrypt AlloyDB for PostgreSQL cluster backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/alloydb/alloydb-backup#alloydb-encryption-context).
+
+Announcing the general availability (GA) of cross-region backups for AlloyDB for PostgreSQL clusters. You can now protect AlloyDB for PostgreSQL clusters against regional outages by storing backups in a distinct secondary region of your choice. To learn more, see [Backup vaults for immutable and indelible backups](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/alloydb/alloydb-backup#backup-vaults-for-immutable-and-indel-backups).
+
+---
 ## 2026-08-24
 
 ### Feature

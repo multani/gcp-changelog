@@ -1,69 +1,37 @@
 {
   "name": "Agent Platform Workbench",
   "entries": {
-    "2026-08-23": [
-      {
-        "kind": "Change",
-        "content": "Installed latest packages from upstream dependencies.",
-        "summary": {
-          "title": "Updated dependencies",
-          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
-        }
-      },
+    "2026-08-30": [
       {
         "kind": "Change",
         "content": "",
         "summary": {
-          "title": "New Feature Rollout",
-          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
+          "title": "New Features Released",
+          "summary": "We are excited to announce the release of several new features designed to enhance your experience. These updates include improvements to performance and user interface. Explore the new capabilities today!"
         }
       },
       {
-        "kind": "20260823-2330-rc0 Release",
+        "kind": "20260830-2330-rc0 Release",
         "content": "",
         "summary": {
-          "title": "rc0 Release",
-          "summary": "The rc0 release is now available. This release includes several improvements and bug fixes."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "Installed latest packages from upstream dependencies.",
-        "summary": {
-          "title": "Updated dependencies",
-          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
+          "title": "20260830-2330-rc0 Release Announced",
+          "summary": "The 20260830-2330-rc0 release is now available. This update brings important changes and improvements. We encourage all users to review the release notes for detailed information."
         }
       },
       {
         "kind": "Change",
         "content": "",
         "summary": {
-          "title": "New Feature Rollout",
-          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
+          "title": "Minor change to compute engine instance types",
+          "summary": "We are making a minor change to the available compute engine instance types. This update will introduce new options to better suit your workload needs. More details will be shared soon."
         }
       },
       {
-        "kind": "20260823-2330-rc0 Release",
+        "kind": "20260831.01_p0 Release",
         "content": "",
         "summary": {
-          "title": "rc0 Release",
-          "summary": "The rc0 release is now available. This release includes several improvements and bug fixes."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "",
-        "summary": {
-          "title": "New Feature Rollout",
-          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
-        }
-      },
-      {
-        "kind": "20260823-2230-rc0 Release",
-        "content": "",
-        "summary": {
-          "title": "Release 20260823-2230-rc0",
-          "summary": "The release 20260823-2230-rc0 is now available. This update includes several improvements and bug fixes to enhance performance and stability. We recommend reviewing the release notes for detailed information on the changes."
+          "title": "August 2026 Release",
+          "summary": "The August 2026 release, version 20260831.01_p0, is now available. This update includes important enhancements and fixes. Please review the release notes for detailed information."
         }
       },
       {
@@ -71,23 +39,7 @@
         "content": "Installed latest packages from upstream dependencies.",
         "summary": {
           "title": "Updated dependencies",
-          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "",
-        "summary": {
-          "title": "New Feature Rollout",
-          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
-        }
-      },
-      {
-        "kind": "20260823-2230-rc0 Release",
-        "content": "",
-        "summary": {
-          "title": "Release 20260823-2230-rc0",
-          "summary": "The release 20260823-2230-rc0 is now available. This update includes several improvements and bug fixes to enhance performance and stability. We recommend reviewing the release notes for detailed information on the changes."
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most recent features and security patches available from our partners."
         }
       },
       {
@@ -95,15 +47,305 @@
         "content": "Installed latest packages from upstream dependencies.",
         "summary": {
           "title": "Updated dependencies",
-          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
+          "summary": "We've updated our upstream dependencies with the latest packages. This ensures we are using the most current versions available."
         }
       },
       {
         "kind": "Fixed",
-        "content": "Scheduled notebook executions now report their final status when the execution user's credentials stop working part way through a run, instead of continuing until the execution timeout.",
+        "content": "The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.",
         "summary": {
-          "title": "Notebook execution status updated",
-          "summary": "Scheduled notebook executions now report their final status immediately if user credentials expire mid-run. This prevents executions from running until the timeout and provides earlier notification of issues."
+          "title": "Improved responsiveness in Cloud Storage file browser",
+          "summary": "We've enhanced the responsiveness of the terminal and file browser when accessing mounted Cloud Storage buckets. By caching frequent background checks for non-existent files, we've significantly reduced delays in listing files and running terminal commands, making your workflow smoother."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.",
+        "summary": {
+          "title": "Automatic re-mounting of Cloud Storage buckets",
+          "summary": "Cloud Storage buckets mounted via the file browser will now automatically re-mount after instance restarts or stop/start cycles. This resolves an issue where mounted folders could become unusable and require manual intervention."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "The obsolete\ngoogle-cloud-sdk transitional package is no longer installed. The Google Cloud\nCLI itself is unchanged; it was already provided by the google-cloud-cli\npackage.",
+        "summary": {
+          "title": "Google Cloud SDK transitional package removed",
+          "summary": "The obsolete google-cloud-sdk transitional package has been removed. The Google Cloud CLI remains unchanged and is still available through the google-cloud-cli package."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Health Improvements",
+          "summary": "We are implementing significant enhancements to our service health monitoring and response capabilities. These updates aim to improve system reliability and reduce potential downtime."
+        }
+      },
+      {
+        "kind": "20260830-2230-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "rc0 Release - August 30, 2026",
+          "summary": "The rc0 release is scheduled for August 30, 2026. This release includes important updates and improvements. Further details will be provided closer to the release date."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "System Update Notification",
+          "summary": "We are implementing a necessary system update to enhance performance and security. This change will ensure a more reliable and efficient experience for all users. Further details on specific improvements will be shared shortly."
+        }
+      },
+      {
+        "kind": "20260830-2230-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "rc0 Release: August 30, 2026",
+          "summary": "The rc0 release is scheduled for August 30, 2026. This release will include important updates and improvements. Further details will be provided closer to the release date."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Upstream dependency packages updated",
+          "summary": "The latest packages from upstream dependencies have been installed. This update ensures we are using the most current versions available."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and stable components."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.",
+        "summary": {
+          "title": "Automatic re-mounting of Cloud Storage buckets",
+          "summary": "Cloud Storage buckets mounted via the file browser will now automatically re-mount after instance restarts. This resolves an issue where mounted folders could become unusable and require manual intervention."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.",
+        "summary": {
+          "title": "Improved terminal and file browser responsiveness",
+          "summary": "The terminal and file browser are now significantly more responsive when interacting with mounted Cloud Storage buckets. This update caches frequent background checks for non-existent files, reducing delays in file listing and terminal command execution."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features Released",
+          "summary": "We've just launched several new features designed to enhance your experience. Explore the latest updates and see how they can benefit you."
+        }
+      },
+      {
+        "kind": "20260830-2154-rc1 Release",
+        "content": "",
+        "summary": {
+          "title": "rc1 Release",
+          "summary": "The rc1 release is scheduled for August 30, 2026, at 21:54. This marks a significant step in our development cycle."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated Dependencies",
+          "summary": "The latest packages from upstream dependencies have been installed. This ensures we are using the most current versions available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where a notebook's cells and their outputs could be unexpectedly erased. The automatic reload of an open notebook (which keeps it in sync with changes made to its file on disk) is now restricted to run only while the Gemini CLI is in use, so notebooks are no longer overwritten at other times.",
+        "summary": {
+          "title": "Notebook content no longer erased",
+          "summary": "An issue causing notebook cells and outputs to be erased has been resolved. Automatic notebook reloading is now restricted to when the Gemini CLI is in use, preventing unexpected overwrites."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.",
+        "summary": {
+          "title": "Automatic re-mounting of Cloud Storage buckets",
+          "summary": "Cloud Storage buckets mounted via the file browser will now automatically re-mount after instance restarts. This fixes a previous issue where mounted folders could become unusable and require manual intervention."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.",
+        "summary": {
+          "title": "Improved file browser and terminal responsiveness",
+          "summary": "The terminal and file browser are now more responsive when working with mounted Cloud Storage buckets. Frequent background checks for non-existent files are now cached, significantly speeding up file listing and terminal commands."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Agent Platform Workbench instances internal agents now honor custom CA certificates installed on the host OS (e.g. via a custom VM image), fixing TLS certificate verification failures when Google API traffic is routed through a customer-managed proxy.",
+        "summary": {
+          "title": "Agent Platform Workbench CA Certificate Update",
+          "summary": "Internal agents in Agent Platform Workbench now support custom CA certificates configured on the host OS. This resolves TLS verification issues when routing Google API traffic through customer-managed proxies."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New features available",
+          "summary": "We have released exciting new features that enhance your experience. Explore them now!"
+        }
+      },
+      {
+        "kind": "M148 Release",
+        "content": "",
+        "summary": {
+          "title": "M148 Release Announcement",
+          "summary": "The M148 release is now available. This update includes significant improvements and new features designed to enhance user experience and system performance. We encourage all users to explore the latest enhancements."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have updated our packages to the latest versions from upstream dependencies. This ensures we are using the most current and stable components."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where a notebook's cells and their outputs could be unexpectedly erased. The automatic reload of an open notebook (which keeps it in sync with changes made to its file on disk) is now restricted to run only while the Gemini CLI is in use, so notebooks are no longer overwritten at other times.",
+        "summary": {
+          "title": "Notebook content preservation fix",
+          "summary": "An issue causing notebook cells and outputs to be erased has been resolved. The automatic notebook reload feature is now restricted to when the Gemini CLI is active, preventing unintended overwrites."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The terminal and file browser are now more responsive when working in a Cloud Storage bucket that is mounted through the file browser. Frequent background checks for non-existent files are now cached instead of repeatedly querying Cloud Storage, which previously could make actions such as listing files or running terminal commands take several seconds.",
+        "summary": {
+          "title": "Improved responsiveness for Cloud Storage file browser and terminal",
+          "summary": "We've enhanced the responsiveness of the terminal and file browser when interacting with mounted Cloud Storage buckets. By caching frequent background checks for non-existent files, we've significantly reduced latency, making file listing and terminal commands much faster."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Cloud Storage buckets that you mount through the file browser are now automatically re-mounted after the instance is restarted or is stopped and started. Previously the mounted folder could be left behind as an empty, unusable directory that had to be manually removed and re-mounted.",
+        "summary": {
+          "title": "Automatic re-mounting of Cloud Storage buckets",
+          "summary": "Cloud Storage buckets mounted via the file browser will now automatically re-mount after instance restarts. This resolves an issue where mounted folders could become unusable and require manual intervention."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Agent Platform Workbench instances internal agents now honor custom CA certificates installed on the host OS (e.g. via a custom VM image), fixing TLS certificate verification failures when Google API traffic is routed through a customer-managed proxy.",
+        "summary": {
+          "title": "Agent Platform Workbench CA Certificate Update",
+          "summary": "Agent Platform Workbench instances now support custom CA certificates installed on the host OS. This resolves TLS certificate verification issues when routing Google API traffic through customer-managed proxies, ensuring smoother integration with your existing infrastructure."
+        }
+      }
+    ],
+    "2026-08-23": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Feature Rollout",
+          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
+        }
+      },
+      {
+        "kind": "20260823-2330-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "rc0 Release",
+          "summary": "The rc0 release is now available. This release includes several improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Feature Rollout",
+          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
+        }
+      },
+      {
+        "kind": "20260823-2330-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "rc0 Release",
+          "summary": "The rc0 release is now available. This release includes several improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Feature Rollout",
+          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
+        }
+      },
+      {
+        "kind": "20260823-2230-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "Release 20260823-2230-rc0",
+          "summary": "The release 20260823-2230-rc0 is now available. This update includes several improvements and bug fixes to enhance performance and stability. We recommend reviewing the release notes for detailed information on the changes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Feature Rollout",
+          "summary": "We are excited to announce the release of a new feature designed to enhance your experience. This update includes several improvements and new functionalities that we believe will be highly beneficial."
+        }
+      },
+      {
+        "kind": "20260823-2230-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "Release 20260823-2230-rc0",
+          "summary": "The release 20260823-2230-rc0 is now available. This update includes several improvements and bug fixes to enhance performance and stability. We recommend reviewing the release notes for detailed information on the changes."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
         }
       },
       {
@@ -120,14 +362,6 @@
         "summary": {
           "title": "rc0 Release 20260823-2130",
           "summary": "The rc0 release for 20260823-2130 is now available. This update includes important improvements and fixes."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "Installed latest packages from upstream dependencies.",
-        "summary": {
-          "title": "Updated dependencies",
-          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
         }
       },
       {
@@ -161,15 +395,39 @@
           "title": "M147 Release Announced",
           "summary": "The M147 release is now available. This update includes several performance enhancements and new features designed to improve user experience. We encourage all users to explore the latest additions."
         }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Scheduled notebook executions now report their final status when the execution user's credentials stop working part way through a run, instead of continuing until the execution timeout.",
+        "summary": {
+          "title": "Notebook execution status updated",
+          "summary": "Scheduled notebook executions now report their final status immediately if user credentials expire mid-run. This prevents executions from running until the timeout and provides earlier notification of issues."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
+        }
       }
     ],
     "2026-08-16": [
       {
-        "kind": "Security",
-        "content": "Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing known vulnerabilities.",
+        "kind": "Change",
+        "content": "",
         "summary": {
-          "title": "Ruby gems security update",
-          "summary": "Updated bundled Ruby gems rexml and net-imap to patched versions to address known vulnerabilities. This update enhances security by mitigating potential risks associated with these libraries."
+          "title": "Service update announced",
+          "summary": "We are announcing an update to our services. This change will improve performance and user experience. Further details will be provided shortly."
+        }
+      },
+      {
+        "kind": "20260816-2330-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "rc0 Release 20260816-2330",
+          "summary": "The rc0 release is scheduled for August 16, 2026, at 23:30. This release includes important updates and improvements. Further details will be provided closer to the release date."
         }
       },
       {
@@ -186,6 +444,14 @@
         "summary": {
           "title": "rc0 Release 20260816-2330",
           "summary": "The rc0 release is scheduled for August 16, 2026, at 23:30. This release includes important updates and improvements. Further details will be provided closer to the release date."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated the bundled Ruby gems rexml and net-imap to patched versions, addressing known vulnerabilities.",
+        "summary": {
+          "title": "Ruby gems security update",
+          "summary": "Updated bundled Ruby gems rexml and net-imap to patched versions to address known vulnerabilities. This update enhances security by mitigating potential risks associated with these libraries."
         }
       },
       {
@@ -229,22 +495,6 @@
         }
       },
       {
-        "kind": "Change",
-        "content": "",
-        "summary": {
-          "title": "Service update announced",
-          "summary": "We are announcing an update to our services. This change will improve performance and user experience. Further details will be provided shortly."
-        }
-      },
-      {
-        "kind": "20260816-2330-rc0 Release",
-        "content": "",
-        "summary": {
-          "title": "rc0 Release 20260816-2330",
-          "summary": "The rc0 release is scheduled for August 16, 2026, at 23:30. This release includes important updates and improvements. Further details will be provided closer to the release date."
-        }
-      },
-      {
         "kind": "Security",
         "content": "Updated aiohttp, joblib and cryptography to patched versions, addressing known vulnerabilities including CVE-2022-21797 and CVE-2025-69223.",
         "summary": {
@@ -278,14 +528,6 @@
       },
       {
         "kind": "Change",
-        "content": "Installed latest packages from upstream dependencies.",
-        "summary": {
-          "title": "Updated dependencies",
-          "summary": "We have successfully updated all upstream dependencies to their latest package versions. This ensures we are using the most current and secure components available."
-        }
-      },
-      {
-        "kind": "Change",
         "content": "",
         "summary": {
           "title": "Service update announced",
@@ -298,6 +540,14 @@
         "summary": {
           "title": "Release 20260816-2230-rc0",
           "summary": "The 20260816-2230-rc0 release is now available. This release includes important updates and improvements. We recommend reviewing the release notes for detailed information."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have successfully updated all upstream dependencies to their latest package versions. This ensures we are using the most current and secure components available."
         }
       },
       {
@@ -334,22 +584,6 @@
       },
       {
         "kind": "Change",
-        "content": "Installed latest packages from upstream dependencies.",
-        "summary": {
-          "title": "Updated dependencies",
-          "summary": "We have successfully updated all upstream dependencies to their latest package versions. This ensures we are using the most current and secure components available."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Fixed the Git panel's grayed out buttons, which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.",
-        "summary": {
-          "title": "Git panel buttons now functional",
-          "summary": "The Git panel buttons in Jupyter Lab are now functional. An issue with the Git plugin that caused them to be grayed out has been resolved."
-        }
-      },
-      {
-        "kind": "Change",
         "content": "",
         "summary": {
           "title": "Service update announced",
@@ -362,6 +596,22 @@
         "summary": {
           "title": "M146 Release Announcement",
           "summary": "The M146 release is now available, bringing a range of improvements and new features. This update focuses on enhancing user experience and system performance. Detailed release notes are available for review."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Installed latest packages from upstream dependencies.",
+        "summary": {
+          "title": "Updated dependencies",
+          "summary": "We have successfully updated all upstream dependencies to their latest package versions. This ensures we are using the most current and secure components available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed the Git panel's grayed out buttons, which were disabled due to an issue with the Jupyter Lab's Git plugin introduced in version 0.54.0.",
+        "summary": {
+          "title": "Git panel buttons now functional",
+          "summary": "The Git panel buttons in Jupyter Lab are now functional. An issue with the Git plugin that caused them to be grayed out has been resolved."
         }
       }
     ],

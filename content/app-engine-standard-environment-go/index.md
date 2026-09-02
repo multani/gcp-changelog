@@ -1,5 +1,13 @@
 # App Engine standard environment Go
 
+## 2026-09-01
+
+### Feature
+
+Support for the [Go 1.27 runtime](https://docs.cloud.google.com/appengine/docs/standard/go/runtime) is in
+[General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-08-19
 
 ### Feature

@@ -1,5 +1,13 @@
 # BigQuery
 
+## 2026-09-01
+
+### Feature
+
+The [Rust SDK for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/libraries) is now in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-31
 
 ### Feature

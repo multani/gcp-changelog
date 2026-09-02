@@ -1,5 +1,31 @@
 # Google Kubernetes Engine
 
+## 2026-09-01
+
+### Change
+
+GKE version 1.35.1-gke.1031000 and later include the following changes to [automatically created firewall rules for Services](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/firewall-rules#service-fws):
+
+* Changes the priority of multiple existing firewall rules for Services from `1000` to `999`.
+* Creates additional firewall rules to deny traffic that is not explicitly allowed by other auto-created firewall rules.
+
+If you use custom firewall rules to override GKE firewall rules for Services, these changes might cause unexpected behavior. Before you upgrade your clusters to version 1.35.1-gke.1031000 or later, do the following:
+
+* If you have custom firewall rules that allow or deny traffic with a priority of `1000`, change the priority of those rules to a numerically lower value (such as `999` or lower) to maintain their precedence.
+* Verify that the new auto-created deny rules do not block required traffic for load balancers that use external IP addresses.
+
+### Feature
+
+The bare metal machine types from the [C3 machine
+series](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c3_series) are now generally
+available with GKE clusters. You can now provision machine types such as
+`c3-standard-192-metal` in Standard mode with any available GKE version.
+
+To use these machine types with Autopilot mode, ComputeClasses, and node pool
+auto-creation, you must specify the exact machine type using a custom
+ComputeClass and use GKE version 1.35.3-gke.1389000 or later.
+
+---
 ## 2026-08-31
 
 ### Feature

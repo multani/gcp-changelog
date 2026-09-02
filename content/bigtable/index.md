@@ -1,5 +1,13 @@
 # Bigtable
 
+## 2026-09-01
+
+### Feature
+
+You can use the Google Cloud console to create and manage [aggregate column families](https://docs.cloud.google.com/bigtable/docs/aggregates)
+for your Bigtable tables. You can also view and query aggregate column families in Bigtable Studio. This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages). For more information, see [Create and manage tables](https://docs.cloud.google.com/bigtable/docs/managing-tables#add-column-families) and [Manage your data using Bigtable Studio](https://docs.cloud.google.com/bigtable/docs/manage-data-using-console).
+
+---
 ## 2026-08-20
 
 ### Feature

@@ -2,6 +2,26 @@
 
 ## 2026-09-01
 
+### Feature
+
+**Anthropic's Claude Fable 5.1 is now available**
+
+[Claude Fable 5.1](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/fable-5-1)
+is available in Model Garden.
+
+### Change
+
+**Embedding SKUs are changing**
+
+Memory bank uses the following embedding model SKUs:
+
+* 6E46-5623-C0B6
+* C15D-A68F-5C1E
+* 2D07-D52C-A93B
+
+For detailed information about individual SKUs, see
+[Google Cloud Platform SKUs](https://cloud.google.com/skus).
+
 ### Change
 
 **Pricing updates for agent metering**

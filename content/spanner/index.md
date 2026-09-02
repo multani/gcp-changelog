@@ -1,5 +1,12 @@
 # Spanner
 
+## 2026-08-28
+
+### Feature
+
+Spanner supports creating secondary indexes based on scalar expressions that apply to one or more table columns. Expression indexes eliminate the need to create and maintain a dedicated generated column in your table for indexing purposes. For more information, see [Create an index based on a scalar expression](https://docs.cloud.google.com/spanner/docs/secondary-indexes#expression-index).
+
+---
 ## 2026-08-11
 
 ### Feature

@@ -1,5 +1,13 @@
 # reCAPTCHA
 
+## 2026-09-01
+
+### Change
+
+Fraud Defense Mobile SDK v18.9.3 is available for Android. This version
+includes detection and performance enhancements.
+
+---
 ## 2026-08-25
 
 ### Change

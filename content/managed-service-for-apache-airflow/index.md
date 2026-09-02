@@ -110,6 +110,17 @@ are available in Managed Airflow (Gen 2):
 ### Change
 
 *(Airflow 3.2.2, 3.1.8, and 2.11.1)*
+The `google-cloud-dataproc` package was upgraded to version 5.30.0, which
+includes support for Managed Service for Apache Spark
+[flexible instance configurations](https://docs.cloud.google.com/managed-spark/docs/concepts/configuring-clusters/flexible-vms)
+(flexible VMs).
+
+This package was upgraded in Airflow 2.10.5 in a
+[previous release](https://docs.cloud.google.com/composer/docs/release-notes#July_16_2026).
+
+### Change
+
+*(Airflow 3.2.2, 3.1.8, and 2.11.1)*
 The `apache-airflow-providers-google` package was upgraded to version 22.2.2.
 For more information about changes, see the
 [apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).

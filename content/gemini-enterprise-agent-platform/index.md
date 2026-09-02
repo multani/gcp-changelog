@@ -1,5 +1,18 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-02
+
+### Feature
+
+**Gemini 3.8 Flash is generally available**
+
+[Gemini 3.8 Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash) is
+now generally available (GA) and available for production use.
+
+For more information on 3.8 Flash, see the [model
+page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash).
+
+---
 ## 2026-09-01
 
 ### Feature

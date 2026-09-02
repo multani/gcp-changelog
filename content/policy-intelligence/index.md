@@ -1,5 +1,17 @@
 # Policy Intelligence
 
+## 2026-09-01
+
+### Feature
+
+The Policy Analyzer MCP server is [generally
+available](https://cloud.google.com/products#product-launch-stages). To learn
+about using the Policy Analyzer MCP server to let agents and AI
+applications analyze and audit IAM configurations, see [Use the
+Policy Analyzer remote MCP
+server](https://docs.cloud.google.com/policy-intelligence/docs/use-policy-analyzer-mcp).
+
+---
 ## 2026-08-06
 
 ### Feature

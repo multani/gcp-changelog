@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2026-09-01
+
+### Feature
+
+You can opt out of alert notifications from an SMS notification channel by
+sending a text message to the phone number associated with the notification
+channel. For more information, see
+[Opt out of SMS notifications](monitoring/alerts/sms-opt-out).
+
+---
 ## 2026-08-26
 
 ### Change

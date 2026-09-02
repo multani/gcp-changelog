@@ -1,5 +1,16 @@
 # Cloud SQL for MySQL
 
+## 2026-09-02
+
+### Feature
+
+Cloud SQL supports Workforce Identity Federation authentication. This lets you
+authenticate to your Cloud SQL instance using identities from an external
+identity provider such as Microsoft Active Directory or Okta. For more
+information, see [Workforce Identity Federation
+authentication](https://docs.cloud.google.com/sql/docs/mysql/workforce-authentication).
+
+---
 ## 2026-08-27
 
 ### Feature

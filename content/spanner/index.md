@@ -1,5 +1,16 @@
 # Spanner
 
+## 2026-09-02
+
+### Feature
+
+Spanner supports using the `TABLESAMPLE` operator in PostgreSQL-dialect
+databases to select a random sample of a dataset.
+
+For more information, see
+[`TABLESAMPLE` operator](https://docs.cloud.google.com/spanner/docs/reference/postgresql/query-syntax#tablesample_operator).
+
+---
 ## 2026-08-28
 
 ### Feature

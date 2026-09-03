@@ -12,6 +12,21 @@ now generally available (GA) and available for production use.
 For more information on 3.8 Flash, see the [model
 page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash).
 
+### Deferred tier for autonomous agent scheduling (Preview)
+
+The *deferred tier* is available in Preview. The deferred tier automatically
+queues non-latency-sensitive background agent workloads and schedules them to
+execute during off-peak hours.
+
+Key capabilities and benefits include:
+
+* **50% token discount**: Receive a 50% discount on consumed tokens for deferred workloads.
+* **Reduced rate limiting**: Mitigate resource exhaustion (429) errors and infrastructure pressure during long-running background tasks.
+* **Supported agents**:
+  + **Deep Research Agent**: Pass `service_tier="deferred"` in the Python SDK or `"service_tier": "deferred"` in REST API interaction requests.
+
+For more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).
+
 ---
 ## 2026-09-01
 

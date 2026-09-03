@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: API Gateway</title>
   <subtitle>Changelog for Google Cloud product: API Gateway</subtitle>
-  <updated>2026-08-03T00:00:00+00:00</updated>
+  <updated>2026-09-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:api-gateway</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/api-gateway/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:api-gateway:2026-09-03:change:0</id>
+    <published>2026-09-03T00:00:00+00:00</published>
+    <updated>2026-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New model routing gateways might use a gateway.dev default hostname</strong></p>
+<p>If you create a gateway that uses model routing on or after September 3, 2026, it
+might receive a <code>gateway.dev</code> default hostname instead of a <code>run.app</code> one, in the
+form <code>https://GATEWAY_ID-PROJECT_NUMBER.REGION.gateway.dev</code> — for example, <code>https://my-gateway-123456789012.us-central1.gateway.dev</code>. This is a second <code>gateway.dev</code> format; other gateways keep the existing one.</p>
+<p>To get a gateway's URL, read its <code>defaultHostname</code> property.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/deploying-api">Deploy an API to a gateway</a>.</p>]]></content>
+    <summary>Starting September 3, 2026, new model routing gateways may be assigned a gateway.dev default hostname. This change affects gateways created on or after this date, providing an alternative format for their URLs. You can find the specific URL by checking the defaultHostname property of your gateway.</summary>
+    <title>Change: Model routing gateways may use gateway.dev hostname</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

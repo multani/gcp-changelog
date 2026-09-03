@@ -1,5 +1,13 @@
 # Access Transparency
 
+## 2026-08-25
+
+### Feature
+
+Gemini Data Analytics is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-08-12
 
 ### Feature

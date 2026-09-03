@@ -1,5 +1,20 @@
 # API Gateway
 
+## 2026-09-03
+
+### Change
+
+**New model routing gateways might use a gateway.dev default hostname**
+
+If you create a gateway that uses model routing on or after September 3, 2026, it
+might receive a `gateway.dev` default hostname instead of a `run.app` one, in the
+form `https://GATEWAY_ID-PROJECT_NUMBER.REGION.gateway.dev` — for example, `https://my-gateway-123456789012.us-central1.gateway.dev`. This is a second `gateway.dev` format; other gateways keep the existing one.
+
+To get a gateway's URL, read its `defaultHostname` property.
+
+For more information, see [Deploy an API to a gateway](https://docs.cloud.google.com/api-gateway/docs/deploying-api).
+
+---
 ## 2026-08-03
 
 ### Feature

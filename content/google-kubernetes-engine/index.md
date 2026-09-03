@@ -1,5 +1,23 @@
 # Google Kubernetes Engine
 
+## 2026-09-03
+
+### Feature
+
+GKE support for using the `c3-standard-*-lssd` machine types as Confidential
+GKE Nodes with Intel TDX is generally available. For more information, see the
+following:
+
+* To use this feature with GKE, see [Encrypt workload data in-use with
+  Confidential GKE
+  Nodes](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/confidential-gke-nodes).
+* To learn more about the feature from Compute Engine, see [Confidential VM
+  overview](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview).
+* To see supported configurations, including machine support, see
+  [Supported configurations](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/supported-configurations)
+  and its "Machine types, CPUs, and zones" section.
+
+---
 ## 2026-09-02
 
 ### Change

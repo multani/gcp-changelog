@@ -2,10 +2,6 @@
 
 ## 2026-09-02
 
-### Announcement
-
-
-
 ### Release 7.0.6
 
 

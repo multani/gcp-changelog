@@ -2808,6 +2808,15 @@
 
 
 <h1 id="api-gateway">API Gateway</h1>
+<h2 id="2026-09-03">2026-09-03</h2>
+<h3 id="change">Change</h3>
+<p><strong>New model routing gateways might use a gateway.dev default hostname</strong></p>
+<p>If you create a gateway that uses model routing on or after September 3, 2026, it
+might receive a <code>gateway.dev</code> default hostname instead of a <code>run.app</code> one, in the
+form <code>https://GATEWAY_ID-PROJECT_NUMBER.REGION.gateway.dev</code> — for example, <code>https://my-gateway-123456789012.us-central1.gateway.dev</code>. This is a second <code>gateway.dev</code> format; other gateways keep the existing one.</p>
+<p>To get a gateway's URL, read its <code>defaultHostname</code> property.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/deploying-api">Deploy an API to a gateway</a>.</p>
+<hr />
 <h2 id="2026-08-03">2026-08-03</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Route LLM requests with model routing</strong></p>
@@ -2821,7 +2830,7 @@
 <p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/model-routing-overview">Overview of model routing</a> and <a href="https://docs.cloud.google.com/api-gateway/docs/model-routing-configure">Configure model routing</a>.</p>
 <hr />
 <h2 id="2026-06-18">2026-06-18</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p><strong>Update to the API Gateway runtime architecture</strong></p>
 <p>The API Gateway runtime architecture is being updated to improve its integration
 with Google Cloud Platform and its services.</p>
@@ -2867,13 +2876,13 @@ Cloud Customer Care</a>.</p>
 across all Google Cloud zones. Your instances might not be updated until the rollout is complete.</p>
 <hr />
 <h2 id="2026-04-27">2026-04-27</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p><strong>New validations on paths in API configurations</strong></p>
 <p>API Gateway now enforces stricter syntax validations on templated paths when you create new API configurations and gateways.</p>
 <p>See <a href="https://docs.cloud.google.com/api-gateway/docs/path-templating#syntax_rules">path templating syntax rules</a> and <a href="https://docs.cloud.google.com/api-gateway/docs/path-templating#limits">limits</a> for more information.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p><strong>Connect API Gateway to Apigee API hub instances that use VPC Service Controls</strong></p>
 <p>API Gateway can now be <a href="https://docs.cloud.google.com/api-gateway/docs/api-hub-connect">connected to Apigee API hub</a> instances that use <a href="https://docs.cloud.google.com/apigee/docs/api-platform/security/vpc-sc">VPC Service Controls</a>.</p>
 <hr />
@@ -2932,6 +2941,9 @@ available until the rollout is complete.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#api-gateway">API Gateway</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-03" class="nav-link">2026-09-03</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-08-03" class="nav-link">2026-08-03</a>
           </li>

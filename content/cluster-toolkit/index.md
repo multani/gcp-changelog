@@ -1,5 +1,19 @@
 # Cluster Toolkit
 
+## 2026-08-20
+
+### Feature
+
+Cluster Toolkit version v1.101.0 is available. This release adds
+support for [Persistent Disk](https://docs.cloud.google.com/compute/docs/disks/persistent-disks) storage pools to
+the `vm-instance` module,
+GKE node pools, and storage. The update also optimizes
+dependency management to improve the user experience, and updates Cloud TPU v4
+and TPU v5p shorthand mappings to use TensorCore counts. For more information,
+see the [release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6180).
+
+---
 ## 2026-08-13
 
 ### Feature

@@ -60,6 +60,20 @@ To onboard your project and request access, fill out the
 [request form](https://forms.gle/4NncEhwetZDjaPx9A).
 
 ---
+## 2026-08-19
+
+### Feature
+
+**Preview**: Advanced Compute Images provide high-performance images to support
+your artificial intelligence (AI), machine learning (ML), and high-performance
+computing (HPC) workloads running on non-GPU instances on Google Cloud.
+
+Advanced Compute Images optimized for CPUs provide a single source of trusted,
+performance-tuned OS images that remove the need for manual image building for
+specialized workloads. Each image version is pre-installed with the necessary
+drivers, network fabrics, and Slurm agents to help you run your workloads.
+
+---
 ## 2026-08-14
 
 ### Feature

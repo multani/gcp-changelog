@@ -1,5 +1,26 @@
 # Application Design Center
 
+## 2026-08-18
+
+### Feature
+
+Application Design Center provides the
+`application-design-center-design-deploy` agent skill to help AI agents design,
+validate, deploy, and troubleshoot Google Cloud infrastructure. For more
+information, see
+[App Design Center agent skills](https://docs.cloud.google.com/application-design-center/docs/agent-skills-overview).
+
+---
+## 2026-08-06
+
+### Feature
+
+You can attach Security Command Center frameworks to your application templates to enforce
+security policies and validate application designs
+[(Preview)](https://cloud.google.com/products#product-launch-stages) by using
+Google Cloud CLI. For more information, see [Enforce security policies](https://docs.cloud.google.com/application-design-center/docs/enforce-security-policies).
+
+---
 ## 2026-04-29
 
 ### Feature

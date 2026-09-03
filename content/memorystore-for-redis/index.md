@@ -1,5 +1,14 @@
 # Memorystore for Redis
 
+## 2026-09-03
+
+### Feature
+
+You can use [client-side metrics](https://docs.cloud.google.com/memorystore/docs/redis/about-client-side-metrics)
+to troubleshoot why your application might experience high latency. This feature
+is [generally available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-17
 
 ### Feature

@@ -1,5 +1,37 @@
 # Gemini Enterprise
 
+## 2026-09-02
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.8 Flash available in Global, US, and EU regions**
+
+Gemini 3.8 Flash is generally available (GA) in the `global`, `us`, and `eu`
+regions.
+
+For more information, see:
+
+* [Manage features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Data residency for Gemini Enterprise Standard and Plus Editions and Gemini Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+---
+## 2026-09-01
+
+### Feature
+
+**Gemini Enterprise: Overage controls available for all invoiced Cloud Billing
+accounts**
+
+Configuring overage controls in Gemini Enterprise is available to all projects
+linked to an invoiced Cloud Billing account. Previously, customers that received
+an email with the subject line *[Billing Update] New Gemini Enterprise overage
+billing controls launching Aug 17, 2026* couldn't enable overages despite
+having an invoiced Cloud Billing account. This restriction no longer applies.
+
+For more information, see [Overview of overages and spend
+controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview).
+
+---
 ## 2026-08-31
 
 ### Feature
@@ -525,6 +557,8 @@ monthly spend limits, and monitor feature usage and costs in Gemini Enterprise:
 Billing account. However, it isn't available if you received an email with the
 subject *[Billing Update] New Gemini Enterprise
 overage billing controls launching Aug 17, 2026*.
+**Note:** For an update to this release note, see the
+[September 1, 2026 release note](https://docs.cloud.google.com/gemini/enterprise/docs/release-notes#September_1_2026).
 
 For more information, see:
 

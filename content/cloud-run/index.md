@@ -4,15 +4,15 @@
 
 ### Feature
 
-Configure [Agent Platform features](https://docs.cloud.google.com/run/docs/ai/agent-platform-features.md)
-on your Cloud Run services and jobs to securely authenticate AI agents and MCP
-servers using system-managed Agent Identities. This support also includes
-automatic registration in the Agent Registry ([Preview](https://cloud.google.com/products#product-launch-stages)).
+Support for the [Go 1.27 runtime](https://docs.cloud.google.com/run/docs/runtime-support#go) is in
+[General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
 
 ### Feature
 
-Support for the [Go 1.27 runtime](https://docs.cloud.google.com/run/docs/runtime-support#go) is in
-[General Availability (GA)](https://cloud.google.com/products/#product-launch-stages).
+Configure [Agent Platform features](https://docs.cloud.google.com/run/docs/ai/agent-platform-features)
+on your Cloud Run services and jobs to securely authenticate AI agents and MCP
+servers using system-managed Agent Identities. This support also includes
+automatic registration in the Agent Registry ([Preview](https://cloud.google.com/products#product-launch-stages)).
 
 ---
 ## 2026-08-25

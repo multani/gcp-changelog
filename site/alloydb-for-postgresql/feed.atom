@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2026-08-21T00:00:00+00:00</updated>
+  <updated>2026-09-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-09-02:feature:0</id>
+    <published>2026-09-02T00:00:00+00:00</published>
+    <updated>2026-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>AlloyDB real-time data access to BigQuery (in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>) now offers limit pushdown and runtime projects:</p>
+<ul>
+<li>Limit pushdown: when you query foreign tables, some <code>LIMIT</code> and <code>OFFSET</code> clauses are automatically pushed down to BigQuery, reducing network transfer and improving query response times. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/access-real-time-data-overview">Access to real-time data in BigQuery overview</a>.</li>
+<li>Runtime projects: you can specify an optional runtime project at either the foreign server or foreign table level to execute queries and manage compute costs independently of the project that stores your data. For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/configure-access-real-time-data">Configure access to real-time data in BigQuery</a>.</li>
+</ul>
+<p>Consider using least-privilege security controls to restrict foreign server usage.
+For more information, see <a href="https://docs.cloud.google.com/alloydb/docs/security-best-practices#secure-bq-fdw">Secure BigQuery data access using the foreign data wrapper</a>.</p>]]></content>
+    <summary>Access BigQuery data in real-time with AlloyDB for PostgreSQL. New features include limit pushdown for faster queries and runtime projects for independent cost management. These enhancements improve performance and provide more control over your data access.</summary>
+    <title>Feature: AlloyDB for PostgreSQL: Real-time data access enhancements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,16 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-09-02": [
+      {
+        "kind": "Feature",
+        "content": "AlloyDB real-time data access to BigQuery (in [Preview](https://cloud.google.com/products#product-launch-stages)) now offers limit pushdown and runtime projects:\n\n* Limit pushdown: when you query foreign tables, some `LIMIT` and `OFFSET` clauses are automatically pushed down to BigQuery, reducing network transfer and improving query response times. For more information, see [Access to real-time data in BigQuery overview](https://docs.cloud.google.com/alloydb/docs/access-real-time-data-overview).\n* Runtime projects: you can specify an optional runtime project at either the foreign server or foreign table level to execute queries and manage compute costs independently of the project that stores your data. For more information, see [Configure access to real-time data in BigQuery](https://docs.cloud.google.com/alloydb/docs/configure-access-real-time-data).\n\nConsider using least-privilege security controls to restrict foreign server usage.\nFor more information, see [Secure BigQuery data access using the foreign data wrapper](https://docs.cloud.google.com/alloydb/docs/security-best-practices#secure-bq-fdw).",
+        "summary": {
+          "title": "AlloyDB for PostgreSQL: Real-time data access enhancements",
+          "summary": "Access BigQuery data in real-time with AlloyDB for PostgreSQL. New features include limit pushdown for faster queries and runtime projects for independent cost management. These enhancements improve performance and provide more control over your data access."
+        }
+      }
+    ],
     "2026-08-21": [
       {
         "kind": "Fixed",

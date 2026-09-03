@@ -1,12 +1,17 @@
 # Looker
 
+## 2026-09-02
+
+### Deprecated
+
+OpenJDK 11 will no longer be supported as of **January 14, 2027**. Customer-hosted instances must [upgrade to OpenJDK 21](https://docs.cloud.google.com/looker/docs/upgrading-to-openjdk-21-customer-hosted-instance).
+
+---
 ## 2026-08-31
 
 ### Deprecated
 
-The Looker Mobile (Legacy) application is no longer available for download from the App Store or Play Store and support for the app has been discontinued.
-
-Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy [Looker mobile app](https://docs.cloud.google.com/looker/docs/mobile-app-installation).
+The [Looker Mobile (Legacy) application](https://docs.cloud.google.com/looker/docs/mobile-app-legacy) is no longer available for download from the App Store or Play Store and support for the app has been discontinued. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy [Looker mobile app](https://docs.cloud.google.com/looker/docs/mobile-app-installation).
 
 ---
 ## 2026-08-28

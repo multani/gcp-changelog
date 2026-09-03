@@ -1,5 +1,21 @@
 # Cortex Framework
 
+## 2026-09-02
+
+### Announcement
+
+
+
+### Release 7.0.6
+
+
+
+### Fixed
+
+* Added support for logical SAP table remapping in SAP Data Foundation.
+* Added `custom/` directory scaffolding across all developer skills for local extensions.
+
+---
 ## 2026-09-01
 
 ### Release 7.0.5

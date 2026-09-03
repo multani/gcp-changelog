@@ -1,5 +1,16 @@
 # Google Cloud Armor
 
+## 2026-09-02
+
+### Feature
+
+Cloud Armor managed rulesets protect your backend services and APIs from a wide
+range of web application threats using threat signatures which are automatically
+kept up-to-date. For more information, see [Managed rules
+overview](https://docs.cloud.google.com/armor/docs/managed-rules-overview). This feature is available in
+Preview.
+
+---
 ## 2026-08-27
 
 ### Security

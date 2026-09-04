@@ -27,6 +27,22 @@ Key capabilities and benefits include:
 
 For more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).
 
+### Fixed
+
+**CodeMender updates**
+
+This release introduces updates to CodeMender:
+
+* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).
+* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.
+* **Bug fixes**:
+  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.
+  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.
+  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.
+  + Prevented erroneous verification verdicts when workspace reset fails.
+
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
 ---
 ## 2026-09-01
 
@@ -77,6 +93,32 @@ For more information, see the following:
 * [Gemini 3.1 Flash Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image)
 * [Gemini 3 Pro Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image)
 * [Model locations](https://docs.cloud.google.com/gemini-enterprise-agent-platform/resources/locations#multi-region)
+
+### Feature
+
+**IAM Unified Access Policies are generally available (GA)**
+
+IAM Unified Access Policies (Access policies) for Gemini Enterprise Agent
+Platform are [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+Agent Gateway uses Identity-Aware Proxy and Access policies to govern agentic
+communication between agent principals and destination resources, such as Model
+Context Protocol (MCP) servers, other agents, and registered or unregistered
+endpoints.
+
+Key capabilities include:
+
+* Multiple allow and deny rules within a single Access policy to
+  establish fine-grained behavioral guardrails.
+* Common Expression Language (CEL) conditions in rules to enforce access
+  criteria based on tool names, read-only constraints, HTTP methods, and URL
+  path attributes.
+* Dry-run and enforcement modes to validate and audit policy evaluation
+  before blocking agent traffic.
+* End-to-end agent identity authentication and authorization using mutual TLS
+  (mTLS) and Context-Aware Access (CAA) with Demonstrating Proof of Possession
+  (DPoP).
+
+For more information, see [IAM access policies overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/iam-overview-uap).
 
 ---
 ## 2026-08-27

@@ -24,6 +24,37 @@ To monitor operational telemetry for your agents, use the two new views on the
 This feature is generally available (GA). For more information, see
 [Access metrics](https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics#access-metrics-for-agents).
 
+### Feature
+
+**Gemini Enterprise: General availability of Workflow Builder (formerly Agent Designer)**
+
+Workflow Builder (formerly known as Agent Designer) is generally available (GA)
+in Gemini Enterprise.
+
+Workflow Builder enables users across your organization to build multi-step
+automated workflows to streamline tasks and connect to enterprise data.
+
+Key capabilities in this release include:
+
+* **Workflows and on-demand execution**: Build multi-step workflows that can run
+  on an automated schedule, trigger manually on demand, or execute via
+  `@-mention` directly within Gemini Enterprise chat conversations.
+* **Chat agents**: Call chat agents from chat conversations using `@-mention`.
+* **In conversation**: Call workflows from a chat conversation using `@-mention`.
+* **Agent import**: Import existing A2A and ADK agents into Gemini Enterprise
+  for centralized management, sharing, and enterprise governance.
+* **Enterprise connectors**: Connect workflows to enterprise data and
+  applications—including Google Workspace (Gmail, Google Calendar, Google Chat,
+  Google Drive) and third-party tools (Slack, Jira, ServiceNow, Confluence,
+  Microsoft OneDrive, SharePoint, and Outlook)—to search data and execute actions.
+* **Enhanced Agent Gallery**: Discover and organize organization-wide and
+  Google-created agents using keyword search, filter chips, and pinned items.
+* **Administrative controls**: Administrators can manage feature availability
+  org-wide in the Google Cloud console, including dedicated toggles for
+  workflows and chat agents.
+
+For more information, see [Workflow Builder](https://docs.cloud.google.com/gemini/enterprise/docs/workflow-builder).
+
 ---
 ## 2026-09-02
 

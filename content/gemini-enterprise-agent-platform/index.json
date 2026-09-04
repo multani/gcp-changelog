@@ -17,6 +17,14 @@
           "title": "Deferred tier for agent scheduling available",
           "summary": "A new deferred tier for agent scheduling is now in Preview. This tier automatically queues non-latency-sensitive background agent workloads and schedules them for execution during off-peak hours, offering a 50% token discount and reduced rate limiting. The Deep Research Agent is supported for this tier."
         }
+      },
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates**\n\nThis release introduces updates to CodeMender:\n\n* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).\n* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.\n* **Bug fixes**:\n  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.\n  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.\n  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.\n  + Prevented erroneous verification verdicts when workspace reset fails.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "summary": {
+          "title": "CodeMender updates and fixes",
+          "summary": "CodeMender now offers machine-readable metrics and session drill-down capabilities. This release also includes several bug fixes to improve reliability and user experience."
+        }
       }
     ],
     "2026-09-01": [
@@ -52,6 +60,14 @@
         "summary": {
           "title": "Gemini Image Model Updates",
           "summary": "Gemini 3.1 Flash Image and Gemini 3 Pro Image models have received significant updates. Key features include multi-region endpoint support for Gemini 3.1 Flash Image, and the general availability of 4K image output and video input capabilities for both models."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**IAM Unified Access Policies are generally available (GA)**\n\nIAM Unified Access Policies (Access policies) for Gemini Enterprise Agent\nPlatform are [generally available (GA)](https://cloud.google.com/products#product-launch-stages).\nAgent Gateway uses Identity-Aware Proxy and Access policies to govern agentic\ncommunication between agent principals and destination resources, such as Model\nContext Protocol (MCP) servers, other agents, and registered or unregistered\nendpoints.\n\nKey capabilities include:\n\n* Multiple allow and deny rules within a single Access policy to\n  establish fine-grained behavioral guardrails.\n* Common Expression Language (CEL) conditions in rules to enforce access\n  criteria based on tool names, read-only constraints, HTTP methods, and URL\n  path attributes.\n* Dry-run and enforcement modes to validate and audit policy evaluation\n  before blocking agent traffic.\n* End-to-end agent identity authentication and authorization using mutual TLS\n  (mTLS) and Context-Aware Access (CAA) with Demonstrating Proof of Possession\n  (DPoP).\n\nFor more information, see [IAM access policies overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/iam-overview-uap).",
+        "summary": {
+          "title": "Unified Access Policies Now Generally Available",
+          "summary": "Gemini Enterprise Agent Platform's IAM Unified Access Policies are now generally available. These policies leverage Identity-Aware Proxy to provide fine-grained control over agentic communication, enabling robust security guardrails through customizable rules and advanced authentication methods."
         }
       }
     ],

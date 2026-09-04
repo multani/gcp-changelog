@@ -45,6 +45,28 @@ execute during off-peak hours.</p>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:fixed:2</id>
+    <published>2026-09-02T00:00:00+00:00</published>
+    <updated>2026-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Machine-readable metrics</strong>: Added the <code>--json</code> flag to <code>cm stats</code> to export aggregate and per-session metrics (<code>CACHE_HIT%</code>, <code>THINK_RATIO%</code>, <code>TOOL_CALLS</code>, <code>DURATION</code>).</li>
+<li><strong>Session drill-down</strong>: Added <code>cm stats --session &lt;id&gt;</code> to inspect turn-by-turn token consumption for specific sessions.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Improved codebase search reliability by skipping binary archives and non-regular files during traversal.</li>
+<li>Fixed an issue where <code>cm report import</code> failed on native JSON reports or findings referencing new files.</li>
+<li>Fixed an issue where preview mode could create empty directories on disk before user confirmation.</li>
+<li>Prevented erroneous verification verdicts when workspace reset fails.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender now offers machine-readable metrics and session drill-down capabilities. This release also includes several bug fixes to improve reliability and user experience.</summary>
+    <title>Fixed: CodeMender updates and fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-01:feature:0</id>
     <published>2026-09-01T00:00:00+00:00</published>
     <updated>2026-09-01T00:00:00+00:00</updated>
@@ -110,6 +132,37 @@ Pricing</a>.</p>]]></content>
 </ul>]]></content>
     <summary>Gemini 3.1 Flash Image and Gemini 3 Pro Image models have received significant updates. Key features include multi-region endpoint support for Gemini 3.1 Flash Image, and the general availability of 4K image output and video input capabilities for both models.</summary>
     <title>Feature: Gemini Image Model Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-08-31:feature:1</id>
+    <published>2026-08-31T00:00:00+00:00</published>
+    <updated>2026-08-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>IAM Unified Access Policies are generally available (GA)</strong></p>
+<p>IAM Unified Access Policies (Access policies) for Gemini Enterprise Agent
+Platform are <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.
+Agent Gateway uses Identity-Aware Proxy and Access policies to govern agentic
+communication between agent principals and destination resources, such as Model
+Context Protocol (MCP) servers, other agents, and registered or unregistered
+endpoints.</p>
+<p>Key capabilities include:</p>
+<ul>
+<li>Multiple allow and deny rules within a single Access policy to
+  establish fine-grained behavioral guardrails.</li>
+<li>Common Expression Language (CEL) conditions in rules to enforce access
+  criteria based on tool names, read-only constraints, HTTP methods, and URL
+  path attributes.</li>
+<li>Dry-run and enforcement modes to validate and audit policy evaluation
+  before blocking agent traffic.</li>
+<li>End-to-end agent identity authentication and authorization using mutual TLS
+  (mTLS) and Context-Aware Access (CAA) with Demonstrating Proof of Possession
+  (DPoP).</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/iam-overview-uap">IAM access policies overview</a>.</p>]]></content>
+    <summary>Gemini Enterprise Agent Platform's IAM Unified Access Policies are now generally available. These policies leverage Identity-Aware Proxy to provide fine-grained control over agentic communication, enabling robust security guardrails through customizable rules and advanced authentication methods.</summary>
+    <title>Feature: Unified Access Policies Now Generally Available</title>
   </entry>
   <entry>
     <author>

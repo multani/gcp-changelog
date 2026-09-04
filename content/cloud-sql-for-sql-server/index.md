@@ -1,5 +1,19 @@
 # Cloud SQL for SQL Server
 
+## 2026-09-04
+
+### Feature
+
+Cloud SQL for SQL Server now supports connecting to instances
+with write endpoints using the Cloud SQL Auth Proxy or Cloud SQL language
+connectors. When you configure the proxy or a language connector with a
+write endpoint DNS name, connections are redirected automatically to the new
+primary instance during replica failover or switchover.
+
+For more information, see
+[Connect to an instance using a write endpoint](https://docs.cloud.google.com/sql/docs/sqlserver/connect-to-instance-using-write-endpoint).
+
+---
 ## 2026-08-27
 
 ### Feature

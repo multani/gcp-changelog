@@ -1,5 +1,19 @@
 # Application Design Center
 
+## 2026-09-02
+
+### Feature
+
+Application Design Center [supports](https://docs.cloud.google.com/application-design-center/docs/supported-resources) the following components in [General Availability](https://docs.cloud.google.com/products#product-launch-stages):
+
+* Firebase AI Logic
+* Firebase AI Logic Prompt Template
+* Firebase App Check
+* Firebase Authentication
+* Firebase Multi-Platform App
+* Firestore Security Rules
+
+---
 ## 2026-08-18
 
 ### Feature

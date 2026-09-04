@@ -1,5 +1,65 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-09-03
+
+### Announcement
+
+**Google Cloud CCaaS 6.9**
+
+We've released version 6.9 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Agent desktop supports email**
+
+The agent desktop now supports email. Agents can handle email interactions
+using the email adapter in a desktop layout.
+
+Administrators: There's a new **Email Adapter** checkbox in the following locations:
+
+* The **Desktop Layout Builder** dialog at **Settings > Operation
+  Management > Agent Desktop > Manage Desktop Layout
+  Lists > Add desktop layout**.
+* The **Desktop Layout Builder** at **Settings > Operation
+  Management > Agent Desktop > Manage Desktop Layout
+  Lists > Add desktop layout > Next**.
+
+User experience change: There's a new **new emails** menu in the menu bar of the
+agent desktop.
+
+For more information, see [Create a desktop
+layout](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts#create-desktop-layout)
+and [Handle an
+email](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-use-agent-desktop#handle-an-email).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where agents couldn't send new outbound emails.
+* Fixed an issue where the disposition panel in the call adapter was
+  incorrectly hidden or visible due to inconsistent state updates.
+* Fixed an issue where direct inbound voicemails appeared multiple times in
+  the **History** tab of the call adapter.
+* Fixed an issue where voice callbacks were canceled at the end of operating
+  hours instead of rolling over to the next day.
+* Fixed an issue where using click-to-dial from a Salesforce case incorrectly
+  overwrote the parent account's mobile phone number with the dialed number.
+* Fixed an issue where ending a call resulted in significant latency or
+  connection errors in the instance.
+* Fixed an issue where hold music in call recordings overlapped live
+  conversation.
+* Fixed an issue where the deletion of a custom hours of operation group
+  didn't appear in the **Audit Dashboard**.
+* Fixed an issue in Zendesk integrations where the system mistakenly navigated
+  from the active ticket tab to the customer profile page when a voice call
+  ended.
+
+---
 ## 2026-08-31
 
 ### Announcement

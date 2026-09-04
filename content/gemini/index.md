@@ -1,5 +1,36 @@
 # Gemini
 
+## 2026-09-04
+
+### Announcement
+
+New subscriptions for Gemini Code Assist can no longer be purchased through the
+Google Cloud console using billing accounts that don't have an active
+Gemini Code Assist subscription. Billing accounts that currently have an active
+Gemini Code Assist subscription are unaffected.
+
+For billing accounts that don't have an active Gemini Code Assist
+subscription, you can obtain a new Gemini Code Assist subscription by
+[contacting Google Cloud sales](https://cloud.google.com/contact).
+For alternative AI developer tools, use Antigravity, which is available through
+eligible [Gemini Enterprise subscriptions](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
+and through [Gemini Enterprise Agent Platform](https://antigravity.google/docs/enterprise/#gemini-enterprise-agent-platform-api-setup).
+
+### Announcement
+
+New subscriptions for Gemini Code Assist can no longer be purchased through the
+Google Cloud console using billing accounts that don't have an active
+Gemini Code Assist subscription. Billing accounts that currently have an active
+Gemini Code Assist subscription are unaffected.
+
+For billing accounts that don't have an active Gemini Code Assist
+subscription, you can obtain a new Gemini Code Assist subscription by
+[contacting Google Cloud sales](https://cloud.google.com/contact).
+For alternative AI developer tools, use Antigravity, which is available through
+eligible [Gemini Enterprise subscriptions](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
+and through [Gemini Enterprise Agent Platform](https://antigravity.google/docs/enterprise/#gemini-enterprise-agent-platform-api-setup).
+
+---
 ## 2026-09-01
 
 ### Other

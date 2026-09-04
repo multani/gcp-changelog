@@ -2,9 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-08-31T00:00:00+00:00</updated>
+  <updated>2026-09-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-03:announcement:0</id>
+    <published>2026-09-03T00:00:00+00:00</published>
+    <updated>2026-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 6.9</strong></p>
+<p>We've released version 6.9 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>Version 6.9 of our CCaaS solution has been released. The update schedule for your instance is determined by your chosen deployment plan. For details, please refer to the deployment schedules documentation.</summary>
+    <title>Announcement: CCaaS 6.9 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-03:feature:1</id>
+    <published>2026-09-03T00:00:00+00:00</published>
+    <updated>2026-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent desktop supports email</strong></p>
+<p>The agent desktop now supports email. Agents can handle email interactions
+using the email adapter in a desktop layout.</p>
+<p>Administrators: There's a new <strong>Email Adapter</strong> checkbox in the following locations:</p>
+<ul>
+<li>The <strong>Desktop Layout Builder</strong> dialog at <strong>Settings &gt; Operation
+  Management &gt; Agent Desktop &gt; Manage Desktop Layout
+  Lists &gt; Add desktop layout</strong>.</li>
+<li>The <strong>Desktop Layout Builder</strong> at <strong>Settings &gt; Operation
+  Management &gt; Agent Desktop &gt; Manage Desktop Layout
+  Lists &gt; Add desktop layout &gt; Next</strong>.</li>
+</ul>
+<p>User experience change: There's a new <strong>new emails</strong> menu in the menu bar of the
+agent desktop.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts#create-desktop-layout">Create a desktop
+layout</a>
+and <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-use-agent-desktop#handle-an-email">Handle an
+email</a>.</p>]]></content>
+    <summary>The agent desktop now supports email interactions. Agents can handle emails directly within their desktop layout using the new email adapter. Administrators can enable this feature in the Desktop Layout Builder.</summary>
+    <title>Feature: Agent desktop now supports email</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-03:fixed:2</id>
+    <published>2026-09-03T00:00:00+00:00</published>
+    <updated>2026-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where agents couldn't send new outbound emails.</li>
+<li>Fixed an issue where the disposition panel in the call adapter was
+  incorrectly hidden or visible due to inconsistent state updates.</li>
+<li>Fixed an issue where direct inbound voicemails appeared multiple times in
+  the <strong>History</strong> tab of the call adapter.</li>
+<li>Fixed an issue where voice callbacks were canceled at the end of operating
+  hours instead of rolling over to the next day.</li>
+<li>Fixed an issue where using click-to-dial from a Salesforce case incorrectly
+  overwrote the parent account's mobile phone number with the dialed number.</li>
+<li>Fixed an issue where ending a call resulted in significant latency or
+  connection errors in the instance.</li>
+<li>Fixed an issue where hold music in call recordings overlapped live
+  conversation.</li>
+<li>Fixed an issue where the deletion of a custom hours of operation group
+  didn't appear in the <strong>Audit Dashboard</strong>.</li>
+<li>Fixed an issue in Zendesk integrations where the system mistakenly navigated
+  from the active ticket tab to the customer profile page when a voice call
+  ended.</li>
+</ul>]]></content>
+    <summary>This release resolves several critical issues, including problems with outbound emails, call adapter functionality, voicemail display, callback handling, click-to-dial behavior, call ending latency, hold music overlap, and integration syncs. These fixes ensure a more stable and reliable user experience.</summary>
+    <title>Fixed: Resolved Issues in Recent Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

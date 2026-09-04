@@ -1,6 +1,32 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-09-03": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 6.9**\n\nWe've released version 6.9 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 6.9 Released",
+          "summary": "Version 6.9 of our CCaaS solution has been released. The update schedule for your instance is determined by your chosen deployment plan. For details, please refer to the deployment schedules documentation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Agent desktop supports email**\n\nThe agent desktop now supports email. Agents can handle email interactions\nusing the email adapter in a desktop layout.\n\nAdministrators: There's a new **Email Adapter** checkbox in the following locations:\n\n* The **Desktop Layout Builder** dialog at **Settings > Operation\n  Management > Agent Desktop > Manage Desktop Layout\n  Lists > Add desktop layout**.\n* The **Desktop Layout Builder** at **Settings > Operation\n  Management > Agent Desktop > Manage Desktop Layout\n  Lists > Add desktop layout > Next**.\n\nUser experience change: There's a new **new emails** menu in the menu bar of the\nagent desktop.\n\nFor more information, see [Create a desktop\nlayout](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-create-desktop-layouts#create-desktop-layout)\nand [Handle an\nemail](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-use-agent-desktop#handle-an-email).",
+        "summary": {
+          "title": "Agent desktop now supports email",
+          "summary": "The agent desktop now supports email interactions. Agents can handle emails directly within their desktop layout using the new email adapter. Administrators can enable this feature in the Desktop Layout Builder."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where agents couldn't send new outbound emails.\n* Fixed an issue where the disposition panel in the call adapter was\n  incorrectly hidden or visible due to inconsistent state updates.\n* Fixed an issue where direct inbound voicemails appeared multiple times in\n  the **History** tab of the call adapter.\n* Fixed an issue where voice callbacks were canceled at the end of operating\n  hours instead of rolling over to the next day.\n* Fixed an issue where using click-to-dial from a Salesforce case incorrectly\n  overwrote the parent account's mobile phone number with the dialed number.\n* Fixed an issue where ending a call resulted in significant latency or\n  connection errors in the instance.\n* Fixed an issue where hold music in call recordings overlapped live\n  conversation.\n* Fixed an issue where the deletion of a custom hours of operation group\n  didn't appear in the **Audit Dashboard**.\n* Fixed an issue in Zendesk integrations where the system mistakenly navigated\n  from the active ticket tab to the customer profile page when a voice call\n  ended.",
+        "summary": {
+          "title": "Resolved Issues in Recent Update",
+          "summary": "This release resolves several critical issues, including problems with outbound emails, call adapter functionality, voicemail display, callback handling, click-to-dial behavior, call ending latency, hold music overlap, and integration syncs. These fixes ensure a more stable and reliable user experience."
+        }
+      }
+    ],
     "2026-08-27": [
       {
         "kind": "Announcement",

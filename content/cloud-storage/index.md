@@ -1,5 +1,27 @@
 # Cloud Storage
 
+## 2026-09-03
+
+### Feature
+
+You can use Storage batch operations to do the following:
+
+* Select objects dynamically across a project by using [Common Expression
+  Language (CEL) filters](https://docs.cloud.google.com/storage/docs/batch-operations/cel-filters-reference)
+  based on metadata in your [Storage Insights datasets](https://docs.cloud.google.com/storage/docs/insights/datasets),
+  without manual CSV manifests or BigQuery export queries.
+* Target objects across up to 1,000 buckets in a single batch job.
+* Transition objects in bulk to different storage classes.
+* Patch object access control lists (ACLs) in bulk to update or remove
+  permissions.
+* Use dry run to validate job configurations across multiple buckets, and
+  create jobs directly from a dry run to process the same validated
+  objects.
+
+For more information, see [Storage batch operations overview](https://docs.cloud.google.com/storage/docs/batch-operations/overview)
+and [Create and manage batch operations jobs](https://docs.cloud.google.com/storage/docs/batch-operations/create-manage-batch-operation-jobs).
+
+---
 ## 2026-08-21
 
 ### Feature

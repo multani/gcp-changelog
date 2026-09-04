@@ -1,5 +1,30 @@
 # Gemini Enterprise
 
+## 2026-09-03
+
+### Feature
+
+**Gemini Enterprise: Latency and error rate views for agents**
+
+To monitor operational telemetry for your agents, use the two new views on the
+**Observability** tab:
+
+* **Latency:** Shows response times for your agents. This view displays p50
+  (median) and p95 (95th percentile) metrics for Time to First Token (TTFT),
+  Time to First Answer (TTFA), and Time to Last Token (TTLT). TTFT counts the
+  first token of any kind, including the model's thinking, while TTFA counts
+  only the first token of the answer itself. You can also compare latencies by
+  specific agent features, such as web search, media generation, or parametric
+  interactions.
+* **Error rate:** Shows how your agent's requests resolve by tracking request
+  volume and error rates. This view groups results by response class (OK, client
+  errors, server errors, and canceled) and displays the associated client and
+  server error codes.
+
+This feature is generally available (GA). For more information, see
+[Access metrics](https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics#access-metrics-for-agents).
+
+---
 ## 2026-09-02
 
 ### Feature

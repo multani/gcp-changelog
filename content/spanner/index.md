@@ -1,5 +1,24 @@
 # Spanner
 
+## 2026-09-03
+
+### Feature
+
+Spanner supports the following PostgreSQL-dialect database operators:
+
+* `ILIKE` (`~~*`)
+* `NOT ILIKE` (`!~~*`)
+
+Spanner supports the following PostgreSQL-dialect database functions:
+
+* `pg.ilike`
+* `pg.not_ilike`
+
+For more information, see
+[Pattern matching operators](https://docs.cloud.google.com/spanner/docs/reference/postgresql/operators#pattern-matching-operators)
+and [Functions](https://docs.cloud.google.com/spanner/docs/reference/postgresql/functions).
+
+---
 ## 2026-09-02
 
 ### Feature

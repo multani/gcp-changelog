@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-09-03
+
+### Feature
+
+Conversational analytics now supports questions about
+[market basket analysis](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#analytic_task_support).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-09-02
 
 ### Change

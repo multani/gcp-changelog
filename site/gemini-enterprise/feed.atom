@@ -2,9 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-09-02T00:00:00+00:00</updated>
+  <updated>2026-09-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-09-03:feature:0</id>
+    <published>2026-09-03T00:00:00+00:00</published>
+    <updated>2026-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Latency and error rate views for agents</strong></p>
+<p>To monitor operational telemetry for your agents, use the two new views on the
+<strong>Observability</strong> tab:</p>
+<ul>
+<li><strong>Latency:</strong> Shows response times for your agents. This view displays p50
+  (median) and p95 (95th percentile) metrics for Time to First Token (TTFT),
+  Time to First Answer (TTFA), and Time to Last Token (TTLT). TTFT counts the
+  first token of any kind, including the model's thinking, while TTFA counts
+  only the first token of the answer itself. You can also compare latencies by
+  specific agent features, such as web search, media generation, or parametric
+  interactions.</li>
+<li><strong>Error rate:</strong> Shows how your agent's requests resolve by tracking request
+  volume and error rates. This view groups results by response class (OK, client
+  errors, server errors, and canceled) and displays the associated client and
+  server error codes.</li>
+</ul>
+<p>This feature is generally available (GA). For more information, see
+<a href="https://docs.cloud.google.com/gemini/enterprise/docs/access-metrics#access-metrics-for-agents">Access metrics</a>.</p>]]></content>
+    <summary>Monitor your agent's performance with new latency and error rate views on the Observability tab. These views provide detailed insights into response times and request resolution, helping you optimize agent operations. This feature is now generally available.</summary>
+    <title>Feature: New agent performance insights available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,121 @@
 # Looker
 
+## 2026-09-04
+
+### Announcement
+
+**Looker 26.16** will roll out to Looker (original) instances on the following schedule:
+
+* Expected deployment start: **Tuesday, September 8, 2026**
+* Expected final deployment and download available: **Sunday, September 20, 2026**
+
+Looker 26.16 is expected to include the following changes, features, and fixes.
+
+### Fixed
+
+An issue has been fixed where logging in with a Google Cloud Workforce Identity within an embedded iframe could fail as a result of frame restrictions or because the authentication popup closed before session cookies were established. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where switching to a histogram visualization in an Explore could fail or revert unexpectedly. Additionally, stack resolution on pivoted histograms has been improved. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the alert creation and edit modal displayed `Method` instead of defaulting to `Email` as the notification method. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where embedded dashboards with numerous filters caused horizontal container overflow, prevented filters from wrapping across rows, and resulted in clipped tiles during PDF and PNG exports.
+
+### Fixed
+
+An issue has been fixed where custom themes configured as the instance default were not applied to dashboards in view-only mode or during dashboard navigation. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where LookML dashboard URLs that were opened from the search page contained encoded colons (`%3A%3A`), which prevented filter interactions from updating URL query parameters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where Single Value visualizations and KPI visualizations would not allow creating a comparison against a non-measure table calculation. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where visualization-level filters could not be edited or deleted because of missing popover menus. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where resizing an Explore that contained a Word Cloud visualization could cause the Explore to crash. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where generating LookML for analytic models without selecting any database tables could cause Looker to create views for all database tables and to drop certain properties because of identifier case sensitivity. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where filter context banners and timezone settings were not preserved when generating PNG downloads from drill menus. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where applying pivots to merge queries could cause visualization errors and blank column headers in the results table. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where standalone tile exports from embedded dashboards with filter context could render off-screen or with clipped visualizations in PDF and PNG formats. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where clearing all text from a dashboard note tile failed to persist upon page refresh. This feature now performs as expected.
+
+### Fixed
+
+The BigQuery High Throughput API has been disabled by default to prevent connection errors for environments without `bigquery.readsessions.create` permissions. Additionally, required JVM flags for JDK 11 environments have been added. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where multi-line prompt text in dashboard chat views caused action buttons (such as the **Thinking** toggle and **Send** button) and vertical scrollbars to be misaligned. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where pinned Looks on boards generated broken URLs that redirected to the home page and failed to dynamically reflect title updates. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where selecting a suggestion could reset the dropdown to a loading spinner. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where collapsible navigation items in the Admin panel and the main navigation pane rendered rectangular focus outlines rather than rounded focus indicators during keyboard navigation. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where typed search strings persisted after you selected an autocomplete suggestion in multi-select filters. This feature now performs as expected.
+
+### Fixed
+
+When you duplicate a user-defined dashboard, associated Looker data agent instructions, configurations, and sources are now preserved on the copied dashboard.
+
+### Fixed
+
+Self-service models have been restricted to only their assigned user database connections, preventing unintended instance-wide database connection access.
+
+### Fixed
+
+Boxplot visualizations now render transparent median dividers and borders properly in inverted and dark theme layouts.
+
+### Fixed
+
+An issue has been fixed where IAM administrators on Looker (Google Cloud core) instances failed authentication when the `auth_requires_role` and strict Group Role Mapping were enabled. This feature now performs as expected.
+
+### Feature
+
+The [Semantic Search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.
+
+### Feature
+
+Now available in preview, the [Admin Assistant](https://docs.cloud.google.com/looker/docs/gemini-admin-asst) helps you use natural language to manage Looker roles.
+
+---
 ## 2026-09-02
 
 ### Deprecated

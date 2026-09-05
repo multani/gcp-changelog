@@ -1,5 +1,28 @@
 # Cloud Billing
 
+## 2026-09-04
+
+### Change
+
+**Introducing the Incentives page, for tracking spend-based milestone credits,
+RaMP, and other conditional incentives**
+
+If you have a custom pricing contract, you might be enrolled in conditional
+incentives, where you earn credits or discounts for spending specific amounts
+on Google Cloud.
+
+The [**Incentives page**](https://docs.cloud.google.com/billing/docs/how-to/incentives-program-tracker)
+replaces the
+[*Spend-based Milestones tab*](https://docs.cloud.google.com/billing/docs/release-notes#July_22_2024)
+that was located in the *Credits* page. The Incentives page provides a
+consolidated and enhanced experience for tracking your progress towards
+conditional incentives, including spend-based milestone credits and Rapid
+Migration & Modernization Program (RaMP) credits and discounts.
+
+Learn more about
+[tracking conditional incentives](https://docs.cloud.google.com/billing/docs/how-to/incentives-program-tracker).
+
+---
 ## 2026-08-07
 
 ### Feature

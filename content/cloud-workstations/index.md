@@ -1,5 +1,14 @@
 # Cloud Workstations
 
+## 2026-08-26
+
+### Feature
+
+Cloud Workstations supports an
+[agent-optimized development](https://docs.cloud.google.com/workstations/docs/agent-optimized-development)
+experience.
+
+---
 ## 2026-08-12
 
 ### Feature

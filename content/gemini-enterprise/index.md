@@ -1,5 +1,38 @@
 # Gemini Enterprise
 
+## 2026-09-04
+
+### Feature
+
+**Gemini Enterprise: Monday federated data store (GA)**
+
+Connecting a Monday data source with Gemini Enterprise using data federation is
+generally available (GA). You can use the Gemini Enterprise app assistant to
+search across your Monday boards, items, updates, and docs, and get answers
+grounded in that content without needing to ingest the data.
+
+For more information, see
+[Set up a Monday data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/monday/set-up-data-store).
+
+### Feature
+
+**Gemini Enterprise: Create and manage projects**
+
+You can create and manage projects in the Gemini Enterprise web app to build a
+dedicated knowledge base for your own work or to collaborate with your team.
+Within a project, you can upload files and chat privately
+with the assistant to get answers grounded in your project files and web search.
+
+This feature is generally available (GA). To make projects available to users,
+a Gemini Enterprise administrator must turn on the **Enable projects** toggle
+in the Google Cloud console.
+
+For more information, see the following:
+
+* [Create and manage projects](https://docs.cloud.google.com/gemini/enterprise/docs/projects)
+* [Manage web app features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+
+---
 ## 2026-09-03
 
 ### Feature
@@ -316,7 +349,7 @@ For more information, see the following:
   Enterprise](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm#before_you_begin)
 * [Autocomplete for user emails and group
   names](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/share-notebooks#autocomplete)
-* [Share an agent](https://docs.cloud.google.com/gemini/enterprise/docs/agent-designer/share-agent)
+* [Share an agent](https://docs.cloud.google.com/gemini/enterprise/docs/workflow-builder/share-chat-agent)
 * [Configure Workforce Identity Federation with Okta and sign in
   users](https://docs.cloud.google.com/iam/docs/workforce-sign-in-okta)
 
@@ -358,6 +391,18 @@ For more information, see
 
 ---
 ## 2026-08-18
+
+### Feature
+
+**Gemini Enterprise: Google Sites federated connector (GA)**
+
+The Google Sites federated connector is generally available (GA) on
+Gemini Enterprise. You can use the Gemini Enterprise app assistant to
+search across internal company websites, team sites, intranets, project
+hubs, and informational pages hosted on Google Sites, and get answers
+grounded in that content without needing to ingest the data.
+
+For more information, see [Connect to Google Sites](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-sites).
 
 ### Feature
 

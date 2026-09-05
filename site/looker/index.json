@@ -1,6 +1,224 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-09-04": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.16** will roll out to Looker (original) instances on the following schedule:\n\n* Expected deployment start: **Tuesday, September 8, 2026**\n* Expected final deployment and download available: **Sunday, September 20, 2026**\n\nLooker 26.16 is expected to include the following changes, features, and fixes.",
+        "summary": {
+          "title": "Looker 26.16 Release Notes",
+          "summary": "The Looker 26.16 release is scheduled for deployment between September 8th and September 20th, 2026. This update will introduce new changes, features, and fixes to the platform. Users can expect the full rollout to be completed by September 20th."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where logging in with a Google Cloud Workforce Identity within an embedded iframe could fail as a result of frame restrictions or because the authentication popup closed before session cookies were established. This feature now performs as expected.",
+        "summary": {
+          "title": "Login issue resolved",
+          "summary": "An issue preventing successful login with Workforce Identity in embedded iframes has been fixed. The authentication process now functions correctly, ensuring seamless access."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where switching to a histogram visualization in an Explore could fail or revert unexpectedly. Additionally, stack resolution on pivoted histograms has been improved. This feature now performs as expected.",
+        "summary": {
+          "title": "Histogram visualization issue resolved",
+          "summary": "An issue that caused the histogram visualization in Explore to fail or revert unexpectedly has been fixed. Stack resolution on pivoted histograms has also been improved, ensuring the feature now performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the alert creation and edit modal displayed `Method` instead of defaulting to `Email` as the notification method. This feature now performs as expected.",
+        "summary": {
+          "title": "Alert notification method fixed",
+          "summary": "An issue has been resolved where the alert creation and edit modal incorrectly displayed 'Method' instead of defaulting to 'Email'. The notification method now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where embedded dashboards with numerous filters caused horizontal container overflow, prevented filters from wrapping across rows, and resulted in clipped tiles during PDF and PNG exports.",
+        "summary": {
+          "title": "Dashboard filter overflow fix",
+          "summary": "An issue causing horizontal overflow and filter wrapping problems in embedded dashboards has been resolved. This fix ensures that filters wrap correctly and dashboard tiles are not clipped during PDF and PNG exports."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where custom themes configured as the instance default were not applied to dashboards in view-only mode or during dashboard navigation. This feature now performs as expected.",
+        "summary": {
+          "title": "Custom themes now applied to dashboards",
+          "summary": "An issue where custom themes were not applied to dashboards in view-only mode or during navigation has been resolved. Dashboards will now correctly display custom themes as configured."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where LookML dashboard URLs that were opened from the search page contained encoded colons (`%3A%3A`), which prevented filter interactions from updating URL query parameters. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard URL Encoding Fixed",
+          "summary": "An issue causing encoded colons in LookML dashboard URLs has been resolved. This fix ensures that filter interactions correctly update URL query parameters, restoring expected functionality."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where Single Value visualizations and KPI visualizations would not allow creating a comparison against a non-measure table calculation. This feature now performs as expected.",
+        "summary": {
+          "title": "Fix for visualization comparison",
+          "summary": "An issue preventing comparisons in Single Value and KPI visualizations has been resolved. Users can now create comparisons against non-measure table calculations as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where visualization-level filters could not be edited or deleted because of missing popover menus. This feature now performs as expected.",
+        "summary": {
+          "title": "Visualization filter editing restored",
+          "summary": "An issue preventing the editing and deletion of visualization-level filters has been resolved. The popover menus are now functioning correctly, allowing users to manage filters as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where resizing an Explore that contained a Word Cloud visualization could cause the Explore to crash. This feature now performs as expected.",
+        "summary": {
+          "title": "Explore resizing issue fixed",
+          "summary": "An issue where resizing an Explore with a Word Cloud visualization caused crashes has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where generating LookML for analytic models without selecting any database tables could cause Looker to create views for all database tables and to drop certain properties because of identifier case sensitivity. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker analytics models fixed",
+          "summary": "An issue causing Looker to create unnecessary views and drop properties in analytic models has been resolved. The feature now functions correctly, ensuring proper handling of database tables and identifier case sensitivity."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where filter context banners and timezone settings were not preserved when generating PNG downloads from drill menus. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter and timezone settings now preserved in PNG downloads",
+          "summary": "An issue where filter context banners and timezone settings were not preserved when generating PNG downloads from drill menus has been fixed. This feature now performs as expected, ensuring your settings are maintained."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where applying pivots to merge queries could cause visualization errors and blank column headers in the results table. This feature now performs as expected.",
+        "summary": {
+          "title": "Query pivot visualization fixed",
+          "summary": "An issue that caused visualization errors and blank column headers when applying pivots to merge queries has been resolved. The query pivot feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where standalone tile exports from embedded dashboards with filter context could render off-screen or with clipped visualizations in PDF and PNG formats. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard export issue resolved",
+          "summary": "An issue causing off-screen or clipped visualizations in PDF and PNG exports from embedded dashboards has been fixed. Standalone tile exports now render correctly, ensuring all visualizations are visible as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where clearing all text from a dashboard note tile failed to persist upon page refresh. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard note tile bug fixed",
+          "summary": "An issue where clearing dashboard note tile text did not persist after a page refresh has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The BigQuery High Throughput API has been disabled by default to prevent connection errors for environments without `bigquery.readsessions.create` permissions. Additionally, required JVM flags for JDK 11 environments have been added. This feature now performs as expected.",
+        "summary": {
+          "title": "BigQuery API fix",
+          "summary": "The BigQuery High Throughput API has been fixed. This update ensures it functions correctly by default and addresses potential connection issues for users lacking specific permissions. JVM flags for JDK 11 environments have also been implemented."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where multi-line prompt text in dashboard chat views caused action buttons (such as the **Thinking** toggle and **Send** button) and vertical scrollbars to be misaligned. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard chat UI fixed",
+          "summary": "An issue causing misalignment of action buttons and scrollbars in dashboard chat views due to multi-line prompts has been resolved. The chat interface now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where pinned Looks on boards generated broken URLs that redirected to the home page and failed to dynamically reflect title updates. This feature now performs as expected.",
+        "summary": {
+          "title": "Pinned Looks URLs now correct",
+          "summary": "An issue causing broken URLs for pinned Looks on boards has been resolved. These URLs now direct correctly and reflect title updates as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where selecting a suggestion could reset the dropdown to a loading spinner. This feature now performs as expected.",
+        "summary": {
+          "title": "Dropdown selection now works correctly",
+          "summary": "An issue that caused the dropdown to reset to a loading spinner after selecting a suggestion has been resolved. The feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where collapsible navigation items in the Admin panel and the main navigation pane rendered rectangular focus outlines rather than rounded focus indicators during keyboard navigation. This feature now performs as expected.",
+        "summary": {
+          "title": "Navigation focus indicators fixed",
+          "summary": "An issue with rectangular focus outlines on collapsible navigation items has been resolved. Keyboard navigation now displays rounded focus indicators as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where typed search strings persisted after you selected an autocomplete suggestion in multi-select filters. This feature now performs as expected.",
+        "summary": {
+          "title": "Search persistence issue resolved",
+          "summary": "An issue where typed search strings persisted after selecting an autocomplete suggestion in multi-select filters has been fixed. The feature now performs as expected, ensuring a smoother user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "When you duplicate a user-defined dashboard, associated Looker data agent instructions, configurations, and sources are now preserved on the copied dashboard.",
+        "summary": {
+          "title": "Dashboard duplication now preserves agent settings",
+          "summary": "Duplicating a user-defined dashboard now correctly preserves associated Looker data agent instructions, configurations, and sources. This ensures that your copied dashboards maintain their intended data connections and settings."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Self-service models have been restricted to only their assigned user database connections, preventing unintended instance-wide database connection access.",
+        "summary": {
+          "title": "Restricted model access to user database connections",
+          "summary": "Self-service models are now restricted to only their assigned user database connections. This change prevents unintended instance-wide database connection access. The fix ensures better security and data isolation for your models."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Boxplot visualizations now render transparent median dividers and borders properly in inverted and dark theme layouts.",
+        "summary": {
+          "title": "Boxplot visualizations improved",
+          "summary": "Boxplot visualizations now correctly display transparent median dividers and borders in inverted and dark themes. This fix enhances visual clarity across different display settings."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where IAM administrators on Looker (Google Cloud core) instances failed authentication when the `auth_requires_role` and strict Group Role Mapping were enabled. This feature now performs as expected.",
+        "summary": {
+          "title": "Authentication Fix for Looker Instances",
+          "summary": "An issue affecting IAM administrators in Looker instances has been resolved. Authentication now functions correctly when `auth_requires_role` and strict Group Role Mapping are enabled."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [Semantic Search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.",
+        "summary": {
+          "title": "Semantic Search is now available",
+          "summary": "Semantic Search, a new feature for finding content, is now generally available. This enhancement improves content discovery within the platform."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, the [Admin Assistant](https://docs.cloud.google.com/looker/docs/gemini-admin-asst) helps you use natural language to manage Looker roles.",
+        "summary": {
+          "title": "Manage Looker roles with natural language",
+          "summary": "Preview is now available for Admin Assistant, a new feature that allows you to manage Looker roles using natural language. This tool simplifies role management by enabling you to interact with Looker using everyday language."
+        }
+      }
+    ],
     "2026-09-02": [
       {
         "kind": "Deprecated",

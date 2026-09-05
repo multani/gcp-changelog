@@ -1,5 +1,43 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-09-04
+
+### Feature
+
+The [C4 machine series](https://docs.cloud.google.com/sql/docs/postgres/machine-series-overview.md#c4)
+is now available for Cloud SQL for PostgreSQL Enterprise Plus instances in the
+following regions:
+
+* `africa-south1` — Johannesburg
+* `asia-northeast3` — Seoul
+* `asia-south2` — Delhi
+* `europe-west6` — Zürich
+* `southamerica-west1` — Santiago
+* `us-west3` — Salt Lake City
+
+The C4 machine series provides the following benefits:
+
+* Supports fifth and sixth generation Intel Xeon Scalable processors.
+* Offers a price-performance balance that makes it suitable for
+  high-demand workloads.
+
+### Feature
+
+Cloud SQL supports in-place upgrades and downgrades to your instance's
+infrastructure. You can change all of the following in place:
+
+* The edition that your Cloud SQL instance uses.
+* The machine type.
+* The storage type.
+* The database version.
+
+Making in-place changes is the most direct and least error-prone way to
+reconfigure an instance.
+
+For more information about in-place upgrades and downgrades, see
+[Upgrade in place](https://docs.cloud.google.com/sql/docs/postgres/upgrade-in-place).
+
+---
 ## 2026-09-02
 
 ### Feature

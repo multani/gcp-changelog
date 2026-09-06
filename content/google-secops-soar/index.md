@@ -1,5 +1,27 @@
 # Google SecOps SOAR
 
+## 2026-09-06
+
+### Feature
+
+**Case playbooks**
+
+This feature is in preview. Google SecOps now supports case playbooks. You can
+run playbooks or execute manual actions across an entire case container rather
+than individual alerts, consolidating response tasks and reducing redundant
+operations during investigations.
+
+For more information, see [Case playbooks overview](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/case-playbooks).
+
+---
+## 2026-09-05
+
+### Announcement
+
+[Release 6.3.99](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#August_30_2026) is now
+available for all regions.
+
+---
 ## 2026-08-30
 
 ### Announcement

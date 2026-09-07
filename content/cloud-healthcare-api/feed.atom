@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Healthcare API</title>
   <subtitle>Changelog for Google Cloud product: Cloud Healthcare API</subtitle>
-  <updated>2026-02-08T00:00:00+00:00</updated>
+  <updated>2026-09-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-healthcare-api</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-healthcare-api/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-healthcare-api:2026-09-03:feature:0</id>
+    <published>2026-09-03T00:00:00+00:00</published>
+    <updated>2026-09-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General availability:</strong> Filtered export of DICOM data using <code>filterConfig</code> is now
+generally available (GA) in Cloud Healthcare API <code>v1</code>. You can supply a Cloud Storage
+URI (<code>resourcePathsGcsUri</code>) containing a newline-delimited list of DICOMweb resource
+paths (<code>studies/&lt;studyUID&gt;[/series/&lt;seriesUID&gt;[/instances/&lt;instanceUID&gt;]]</code>) in
+<a href="https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.dicomStores/export"><code>projects.locations.datasets.dicomStores.export</code></a>
+to export targeted subsets of DICOM data rather than the entire DICOM store.
+For more information, see
+<a href="https://docs.cloud.google.com/healthcare-api/docs/how-tos/dicom-import-export#exporting_dicom_instances_using_filters">Exporting DICOM instances using filters</a>.</p>]]></content>
+    <summary>The Cloud Healthcare API now supports filtered export of DICOM data using `filterConfig`. This feature allows you to export targeted subsets of DICOM data by specifying Cloud Storage URIs with DICOMweb resource paths, rather than exporting the entire DICOM store.</summary>
+    <title>Feature: Filtered DICOM Export Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,16 @@
 {
   "name": "Cloud Healthcare API",
   "entries": {
+    "2026-09-03": [
+      {
+        "kind": "Feature",
+        "content": "**General availability:** Filtered export of DICOM data using `filterConfig` is now\ngenerally available (GA) in Cloud Healthcare API `v1`. You can supply a Cloud Storage\nURI (`resourcePathsGcsUri`) containing a newline-delimited list of DICOMweb resource\npaths (`studies/<studyUID>[/series/<seriesUID>[/instances/<instanceUID>]]`) in\n[`projects.locations.datasets.dicomStores.export`](https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.dicomStores/export)\nto export targeted subsets of DICOM data rather than the entire DICOM store.\nFor more information, see\n[Exporting DICOM instances using filters](https://docs.cloud.google.com/healthcare-api/docs/how-tos/dicom-import-export#exporting_dicom_instances_using_filters).",
+        "summary": {
+          "title": "Filtered DICOM Export Now Generally Available",
+          "summary": "The Cloud Healthcare API now supports filtered export of DICOM data using `filterConfig`. This feature allows you to export targeted subsets of DICOM data by specifying Cloud Storage URIs with DICOMweb resource paths, rather than exporting the entire DICOM store."
+        }
+      }
+    ],
     "2026-02-08": [
       {
         "kind": "Feature",

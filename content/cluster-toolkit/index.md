@@ -1,5 +1,14 @@
 # Cluster Toolkit
 
+## 2026-09-07
+
+### Security
+
+Google addressed a security vulnerability (CVE-2026-65107) in the Slurm `sbcast`
+tool that affects Cluster Toolkit. For more information, see the
+[security bulletin](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060).
+
+---
 ## 2026-08-20
 
 ### Feature

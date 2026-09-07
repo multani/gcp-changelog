@@ -1,5 +1,12 @@
 # Anti Money Laundering AI
 
+## 2026-08-24
+
+### Announcement
+
+New minor engine versions released for the commercial line of business within the `v004.009` and `v004.010` version lines (`aml-commercial.default.v004.009.202608-000` and `aml-commercial.default.v004.010.202608-000`). These versions extend support for the major engine version and include no significant changes compared to the previous minor versions.
+
+---
 ## 2026-06-15
 
 ### Announcement

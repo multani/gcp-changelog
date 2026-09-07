@@ -2,6 +2,24 @@
 
 ## 2026-09-06
 
+### Announcement
+
+Release 6.3.100 is being rolled out to the first phase of regions as listed
+[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+### Feature
+
+**Reaction triggers**
+
+This feature is in preview. Google SecOps now supports reaction triggers. As
+post-ingestion triggers, they allow playbooks to automatically fire in response
+to real-time case or alert updates during active investigations, such as changes
+to the case assignee, case tags, alert priority, or newly added entities.
+
+For more information, see [Use reaction triggers in playbooks](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-reaction-triggers-in-playbooks).
+
 ### Feature
 
 **Case playbooks**

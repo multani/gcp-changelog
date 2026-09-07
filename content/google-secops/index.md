@@ -1,5 +1,30 @@
 # Google SecOps
 
+## 2026-09-06
+
+### Feature
+
+**[Spotlight Feature] Case playbooks**
+
+This feature is in preview. Google SecOps now supports case playbooks. You can
+run playbooks or execute manual actions across an entire case container rather
+than individual alerts, consolidating response tasks and reducing redundant
+operations during investigations.
+
+For more information, see [Case playbooks overview](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/case-playbooks).
+
+### Feature
+
+**[Spotlight Feature] Reaction triggers**
+
+This feature is in preview. Google SecOps now supports reaction triggers. As
+post-ingestion triggers, they allow playbooks to automatically fire in response
+to real-time case or alert updates during active investigations, such as changes
+to the case assignee, case tags, alert priority, or newly added entities.
+
+For more information, see [Use reaction triggers in playbooks](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/using-reaction-triggers-in-playbooks).
+
+---
 ## 2026-09-03
 
 ### Feature

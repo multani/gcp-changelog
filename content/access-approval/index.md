@@ -1,5 +1,13 @@
 # Access Approval
 
+## 2026-09-07
+
+### Feature
+
+Privileged Access Manager is generally available
+[(GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-25
 
 ### Feature

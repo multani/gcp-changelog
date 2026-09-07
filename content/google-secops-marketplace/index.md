@@ -1,5 +1,34 @@
 # Google SecOps Marketplace
 
+## 2026-09-04
+
+### Feature
+
+**Google Chronicle**: Version 93.0
+
+* Added the following new action:
+
+  + **Execute UDM Query Async**
+
+### Change
+
+**ServiceNow**: Version 72.0
+
+* Added the ability to authenticate using client credentials without a refresh
+  token to the following connector:
+
+  + **Sync Incidents**
+
+### Change
+
+**FireEye ETP**: Version 11.0
+
+* Updated ontology mapping rules and fixed missing alert details and event data
+  for v2 API issue in the following connector:
+
+  + **FireEye ETP - Email Alerts Connector**
+
+---
 ## 2026-09-03
 
 ### Feature

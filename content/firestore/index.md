@@ -1,5 +1,20 @@
 # Firestore
 
+## 2026-09-04
+
+### Feature
+
+The Security Rules simulator is now available in the Google Cloud console for
+Firestore (Standard and Enterprise editions). You can test draft
+security rules against simulated database requests and evaluate authentication
+tokens before deploying rules.
+
+For more information, see
+[Test rules with the rules simulator](https://docs.cloud.google.com/firestore/native/docs/using-console#test-rules-simulator)
+or
+[Test rules in the Google Cloud console](https://docs.cloud.google.com/firestore/native/docs/security/get-started#test-rules-cloud-console).
+
+---
 ## 2026-08-11
 
 ### Feature

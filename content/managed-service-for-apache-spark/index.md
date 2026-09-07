@@ -1,5 +1,14 @@
 # Managed Service for Apache Spark
 
+## 2026-08-31
+
+### Announcement
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): The following subminor image versions announced on [August 19, 2026](https://cloud.google.com/managed-spark/docs/release-notes#August_19_2026) have been rolled back:
+
+* 2.2.86-debian12, 2.2.86-rocky9, 2.2.86-ubuntu22, 2.2.86-ubuntu22-arm
+
+---
 ## 2026-08-19
 
 ### Announcement
@@ -16,6 +25,8 @@ Key updates in these image versions include:
 * **Iceberg updates**: In the `2.3` image version, 2.3 clusters with Lightning Engine now use Iceberg version `1.10` by default.
 * **OpenLineage updates**: In the `2.2` and `2.3` image versions:
   + Upgraded OpenLineage to version `1.49` to support lineage for tables created using the Lakehouse Runtime catalog.
+
+**Rollback Notice:** The `2.2.86` image versions were rolled back on [August 31, 2026](https://cloud.google.com/managed-spark/docs/release-notes#August_31_2026).
 
 ### Fixed
 

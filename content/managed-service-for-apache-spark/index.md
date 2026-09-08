@@ -1,5 +1,45 @@
 # Managed Service for Apache Spark
 
+## 2026-09-04
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 2.1.119-debian11, 2.1.119-rocky8, 2.1.119-ubuntu20, 2.1.119-ubuntu20-arm
+* 2.2.87-debian12, 2.2.87-rocky9, 2.2.87-ubuntu22, 2.2.87-ubuntu22-arm
+* 2.3.36-debian12, 2.3.36-ml-ubuntu22, 2.3.36-rocky9, 2.3.36-ubuntu22, 2.3.36-ubuntu22-arm
+* 3.0.2-debian13, 3.0.2-ml-ubuntu24, 3.0.2-rocky9, 3.0.2-ubuntu24
+
+Key updates in these image versions include:
+
+* **Feature updates:**
+  + **Apache Hudi:** Added support for the Apache Hudi optional component in `3.0` images. Version `1.2.0` is available in `3.0` images.
+  + **Parquet footer caching:** Enabled Parquet footer caching by default for Lightning Engine (Velox). If executor out-of-memory (OOM) or task failure spikes on tiny files are observed, these can be mitigated by setting `spark.gluten.sql.columnar.backend.velox.cacheParquetFooters=false`.
+  + **Apache Iceberg 1.10:** Added support for Apache Iceberg `1.10` in `2.2` images. Users can opt-in by setting the cluster property, `dataproc:dataproc.iceberg.version=1.10`.
+  + **Lakehouse catalog:** Lakehouse catalog auto-loading is supported for image versions `2.2` and later.
+* **Library updates:**
+  + **Cloud Storage connector:** Upgraded the Cloud Storage connector to `4.0.4` in `3.0` images.
+  + **OpenLineage:** Upgraded OpenLineage to `1.49` in `3.0` images to support lineage for tables created using the Lakehouse Runtime catalog.
+
+### Breaking
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+
+* **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All image version aliases now point to the latest image without conda channel configuration. Support for earlier images with conda channels configuration to be announced in upcoming release notes. Recommendation: Migrate to the latest image versions as soon as possible.
+  + **Affected image versions:** `1.3.96+`, `1.4.81+`, `1.5.92+`, `2.0.161+`, `2.1.119+`, `2.2.87+`, and `2.3.36+`.
+  + **Impact:** Additional conda package installation using the `dataproc:conda.packages` cluster property or direct `conda install <package>` command will fail.
+  + **Workaround:**
+    - Use the `<channel>::<package>==<version>` specification for the `dataproc:conda.packages` property (for example: `dataproc:conda.packages=conda-forge::pip==24.0`).
+    - Specify the channel name on the command line when running `conda install` (for example: `conda install <packages> -c conda-forge`).
+* **google-guest-agent upgraded:** Upgraded `google-guest-agent` on Debian and Rocky Linux images (remediating CVE-2026-33186).
+* **SSH metadata restriction:** Stricter SSH metadata restrictions are enforced by default; metadata SSH keys mapped directly to root are ignored. Connect using a standard non-root user (such as `dataproc`) with `sudo`, or use Google Cloud OS Login.
+
+### Fixed
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): Fixed a segmentation fault when OpenLineage parses complex SQL query strings with the Lakehouse Runtime catalog.
+
+---
 ## 2026-08-31
 
 ### Announcement

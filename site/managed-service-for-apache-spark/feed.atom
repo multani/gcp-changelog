@@ -2,9 +2,71 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Spark</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Spark</subtitle>
-  <updated>2026-08-31T00:00:00+00:00</updated>
+  <updated>2026-09-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-spark/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-04:announcement:0</id>
+    <published>2026-09-04T00:00:00+00:00</published>
+    <updated>2026-09-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
+<ul>
+<li>2.1.119-debian11, 2.1.119-rocky8, 2.1.119-ubuntu20, 2.1.119-ubuntu20-arm</li>
+<li>2.2.87-debian12, 2.2.87-rocky9, 2.2.87-ubuntu22, 2.2.87-ubuntu22-arm</li>
+<li>2.3.36-debian12, 2.3.36-ml-ubuntu22, 2.3.36-rocky9, 2.3.36-ubuntu22, 2.3.36-ubuntu22-arm</li>
+<li>3.0.2-debian13, 3.0.2-ml-ubuntu24, 3.0.2-rocky9, 3.0.2-ubuntu24</li>
+</ul>
+<p>Key updates in these image versions include:</p>
+<ul>
+<li><strong>Feature updates:</strong></li>
+<li><strong>Apache Hudi:</strong> Added support for the Apache Hudi optional component in <code>3.0</code> images. Version <code>1.2.0</code> is available in <code>3.0</code> images.</li>
+<li><strong>Parquet footer caching:</strong> Enabled Parquet footer caching by default for Lightning Engine (Velox). If executor out-of-memory (OOM) or task failure spikes on tiny files are observed, these can be mitigated by setting <code>spark.gluten.sql.columnar.backend.velox.cacheParquetFooters=false</code>.</li>
+<li><strong>Apache Iceberg 1.10:</strong> Added support for Apache Iceberg <code>1.10</code> in <code>2.2</code> images. Users can opt-in by setting the cluster property, <code>dataproc:dataproc.iceberg.version=1.10</code>.</li>
+<li><strong>Lakehouse catalog:</strong> Lakehouse catalog auto-loading is supported for image versions <code>2.2</code> and later.</li>
+<li><strong>Library updates:</strong></li>
+<li><strong>Cloud Storage connector:</strong> Upgraded the Cloud Storage connector to <code>4.0.4</code> in <code>3.0</code> images.</li>
+<li><strong>OpenLineage:</strong> Upgraded OpenLineage to <code>1.49</code> in <code>3.0</code> images to support lineage for tables created using the Lakehouse Runtime catalog.</li>
+</ul>]]></content>
+    <summary>Managed Service for Apache Spark now offers updated image versions with new features like Apache Hudi support and Apache Iceberg 1.10 integration. These updates also include performance enhancements and library upgrades for improved data processing capabilities.</summary>
+    <title>Announcement: New Managed Spark Image Versions Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-04:breaking:1</id>
+    <published>2026-09-04T00:00:00+00:00</published>
+    <updated>2026-09-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):</p>
+<ul>
+<li><strong>Preconfigured Conda channels removed:</strong> Preconfigured conda channels (such as <code>conda-forge</code>) have been removed from configurations. All image version aliases now point to the latest image without conda channel configuration. Support for earlier images with conda channels configuration to be announced in upcoming release notes. Recommendation: Migrate to the latest image versions as soon as possible.</li>
+<li><strong>Affected image versions:</strong> <code>1.3.96+</code>, <code>1.4.81+</code>, <code>1.5.92+</code>, <code>2.0.161+</code>, <code>2.1.119+</code>, <code>2.2.87+</code>, and <code>2.3.36+</code>.</li>
+<li><strong>Impact:</strong> Additional conda package installation using the <code>dataproc:conda.packages</code> cluster property or direct <code>conda install &lt;package&gt;</code> command will fail.</li>
+<li><strong>Workaround:</strong><ul>
+<li>Use the <code>&lt;channel&gt;::&lt;package&gt;==&lt;version&gt;</code> specification for the <code>dataproc:conda.packages</code> property (for example: <code>dataproc:conda.packages=conda-forge::pip==24.0</code>).</li>
+<li>Specify the channel name on the command line when running <code>conda install</code> (for example: <code>conda install &lt;packages&gt; -c conda-forge</code>).</li>
+</ul>
+</li>
+<li><strong>google-guest-agent upgraded:</strong> Upgraded <code>google-guest-agent</code> on Debian and Rocky Linux images (remediating CVE-2026-33186).</li>
+<li><strong>SSH metadata restriction:</strong> Stricter SSH metadata restrictions are enforced by default; metadata SSH keys mapped directly to root are ignored. Connect using a standard non-root user (such as <code>dataproc</code>) with <code>sudo</code>, or use Google Cloud OS Login.</li>
+</ul>]]></content>
+    <summary>Managed Service for Apache Spark has removed preconfigured conda channels, upgraded the guest agent, and enforced stricter SSH metadata restrictions by default. Users are advised to migrate to the latest image versions and adjust their conda package installation methods. Connecting via a standard non-root user or OS Login is recommended.</summary>
+    <title>Breaking: Managed Spark Service Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-04:fixed:2</id>
+    <published>2026-09-04T00:00:00+00:00</published>
+    <updated>2026-09-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine): Fixed a segmentation fault when OpenLineage parses complex SQL query strings with the Lakehouse Runtime catalog.</p>]]></content>
+    <summary>A segmentation fault that occurred when OpenLineage parsed complex SQL query strings with the Lakehouse Runtime catalog has been fixed. This issue impacted the Managed Service for Apache Spark.</summary>
+    <title>Fixed: Fixed OpenLineage parsing issue</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

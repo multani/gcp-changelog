@@ -1,5 +1,15 @@
 # Knowledge Catalog
 
+## 2026-09-07
+
+### Feature
+
+Data domains in Knowledge Catalog allow you to logically organize the resources within the enterprise to discover and curate your data at scale.
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [About data domains](https://docs.cloud.google.com/dataplex/docs/data-domains-overview).
+
+---
 ## 2026-08-26
 
 ### Feature

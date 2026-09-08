@@ -1,5 +1,14 @@
 # Cloud Run
 
+## 2026-09-08
+
+### Feature
+
+To take advantage of [reduced pricing](https://cloud.google.com/run/pricing#delayed-jobs)
+for Cloud Run jobs, you can [delay job execution](https://docs.cloud.google.com/run/docs/delayed-jobs) to
+defer non-urgent tasks for up to 12 hours ([Preview](https://cloud.google.com/products)).
+
+---
 ## 2026-09-01
 
 ### Feature

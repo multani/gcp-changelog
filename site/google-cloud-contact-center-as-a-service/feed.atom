@@ -2,9 +2,70 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-09-03T00:00:00+00:00</updated>
+  <updated>2026-09-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-08:fixed:0</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where the formatting of numeric values was inconsistent
+  across tiles.</li>
+<li>Fixed an issue where column headers, filter labels, and tile titles didn't
+  immediately switch to a newly selected language.</li>
+<li>Fixed an issue where the <strong>Productive Agents</strong> column in the tables of the
+  <strong>Queue Group Performance - All</strong> dashboard didn't display values
+  appropriate to the queue group settings.</li>
+<li>Fixed an issue in the <strong>Call Queue Metrics (Historical)</strong> Explore where
+  filtering by <strong>Agent Name</strong> without including it as a visible column
+  resulted in zero rows being returned.</li>
+<li>Fixed an issue that affected calls to a sub-menu that were deflected using
+  <strong>Custom After Hours Deflection</strong> to a message. These calls were incorrectly
+  attributed to the parent menu in the <strong>All Queued Interactions</strong> report.</li>
+<li>
+<p>Fixed the effectiveness of the <strong>Direction</strong> filter in the following
+  dashboards:</p>
+</li>
+<li>
+<p><strong>Agent Performance</strong>. The <strong>Agent Productivity Detailed – Calls</strong> and
+    <strong>Agent Productivity Detailed – Chats</strong> tables correctly reflect the
+    filter setting.</p>
+</li>
+<li><strong>Real-time Agent Monitoring</strong>. The <strong>Agent Performance</strong> table and
+    historical metrics tiles correctly reflect the filter setting.</li>
+<li><strong>All Interactions – Calls</strong> and <strong>All Interactions – Chats</strong>. The <strong>IVR
+    Interactions</strong> (calls only) and <strong>Virtual Agent Interactions</strong> tables
+    correctly reflect the filter setting.</li>
+<li>Fixed an issue with the <strong>Queue Performance - Calls</strong> dashboard when short
+  abandons were present in the specified date range. The <strong>Avg Queue Time</strong>
+  column in the <strong>Queue Summary</strong> table incorrectly displayed the raw sum of
+  queue durations instead of a true average.</li>
+<li>Fixed an issue where team filters didn't apply correctly when generating the
+  <strong>Individual Call History Report</strong> and the <strong>Individual Chat History
+  Report</strong>. This resulted in the inclusion of data from unmanaged queues.</li>
+<li>
+<p>Fixed the following issues with the <strong>Real-time Calls - Calls Queued</strong>
+  dashboard:</p>
+</li>
+<li>
+<p>The <strong>Total Queued Now</strong> metric didn't include callers who were returned
+    to the queue after an automated-answer detection miss.</p>
+</li>
+<li>The <strong>Current Max Queue Wait Time (H:M:S)</strong> and <strong>Current Avg Queue Wait
+    Time (H:M:S)</strong> metrics mistakenly measured from a caller's original
+    entry into the queue, rather than from their most recent return to the
+    queue.</li>
+<li>Fixed an issue where a gray bar appeared at the bottom of the advanced
+  reporting dashboards, preventing a full view of the dashboards.</li>
+</ul>]]></content>
+    <summary>Several issues impacting reporting accuracy and display have been resolved. This includes fixes for data inconsistencies, incorrect metric calculations, and display problems in various dashboards and reports. The effectiveness of filters and the accuracy of queue and agent performance metrics have been improved.</summary>
+    <title>Fixed: Reporting and Dashboard Fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

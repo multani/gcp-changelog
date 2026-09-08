@@ -1,6 +1,40 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-09-04": [
+      {
+        "kind": "Announcement",
+        "content": "#### Kubernetes 1.37 is available\n\nKubernetes 1.37 is now available in the Rapid channel. For more information\nabout the content of Kubernetes 1.37, read the\n[Kubernetes 1.37 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md)\nand Kubernetes [1.37 Release Blog](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/).",
+        "summary": {
+          "title": "Kubernetes 1.37 Released",
+          "summary": "Kubernetes 1.37 is now available in the Rapid channel. You can find more details in the official release notes and blog post."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "#### Removed in 1.37\n\n* Identity Service for GKE is no longer supported starting in GKE 1.37: Creating\n  new clusters or upgrading existing clusters to GKE version 1.37 or later with\n  Identity Service for GKE enabled is blocked. For external OIDC authentication,\n  please migrate to [Workforce Identity Federation](https://cloud.google.com/iam/docs/workforce-identity-federation).\n  For more information, refer to [Authenticate with third-party identity providers](https://cloud.google.com/kubernetes-engine/docs/how-to/oidc).",
+        "summary": {
+          "title": "Identity Service for GKE deprecated",
+          "summary": "Identity Service for GKE is no longer supported starting in GKE 1.37. Users are advised to migrate to Workforce Identity Federation for external OIDC authentication. Creating new clusters or upgrading existing ones to GKE 1.37+ with Identity Service enabled will be blocked."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "#### Other changes in 1.37\n\n* Starting with GKE version 1.37.0-gke.2100000, newly created clusters default\n  to using control plane node creation, which improves cluster security by having\n  the control plane manage node registration instead of kubelet self-registration.\n  Existing clusters are not affected. If your workloads require legacy kubelet\n  self-registration, you can opt out during cluster creation by specifying\n  `--node-creation-mode=KUBELET`. For more information, see\n  [Disable control plane node creation](https://docs.cloud.google.com/kubernetes-engine/security/control-plane-node-creation#disable_control_plane_node_creation).\n* In version 1.37 and later, newly created node pools use an improved formula to\n  calculate the default system reservation for CPU and memory resources on each node.\n  This updated reservation algorithm reduces the system memory reservation by\n  10% to 15% when compared to the algorithm that's used in version 1.36 and earlier.\n* The updated default reservation algorithm applies only to new node pools that\n  are created on version 1.37 and later. Existing node pools that you upgrade to\n  1.37 or later from version 1.36 or earlier don't use the updated algorithm.\n* Additionally, any new or existing node pool that runs GKE version 1.37 and\n  later can modify the amount of CPU and memory that's reserved for system\n  workloads in node pools by using the\n  [`reservedResourcesConfig` option in the node system configuration file](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options).",
+        "summary": {
+          "title": "GKE 1.37: Enhanced Security and Resource Management",
+          "summary": "GKE version 1.37 introduces a change to control plane node creation by default, enhancing cluster security. It also features an improved formula for calculating default system reservations in new node pools, reducing memory usage. These updates aim to provide a more secure and efficient Kubernetes experience."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "#### New features in 1.37\n\n* The [PodCertificateRequest](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#pod-certificate-requests) and [ClusterTrustBundle](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#cluster-trust-bundles) APIs are generally available and promoted to certificates.k8s.io/v1.\n* [DRA device metadata publishing](https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/access-dra-device-metadata/) is enabled with beta support (for use with DRA drivers which include this feature).\n* HorizontalPodAutoscaler enables beta support for [scaling to zero](https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#scaling-to-and-from-zero).\n* [StatefulSet maxUnavailable support](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#maximum-unavailable-pods) is now enabled.",
+        "summary": {
+          "title": "Kubernetes 1.37: New Features",
+          "summary": "Kubernetes 1.37 introduces several new features, including the general availability of PodCertificateRequest and ClusterTrustBundle APIs, beta support for DRA device metadata publishing, and enhanced HorizontalPodAutoscaler capabilities for scaling to zero. Additionally, StatefulSets now support maxUnavailable pods."
+        }
+      }
+    ],
     "2026-09-03": [
       {
         "kind": "Feature",

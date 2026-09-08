@@ -1,5 +1,19 @@
 # Cloud Trace
 
+## 2026-09-08
+
+### Feature
+
+The Observability API supports VPC Service Controls. This integration is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see the following:
+
+* [Use VPC Service Controls with Google Cloud Observability](https://docs.cloud.google.com/stackdriver/docs/observability/use-vpc-service-controls)
+* [Observability API overview](https://docs.cloud.google.com/stackdriver/docs/reference/api-overview)
+* [Supported products: Observability API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_observability_api)
+
+---
 ## 2026-08-31
 
 ### Breaking

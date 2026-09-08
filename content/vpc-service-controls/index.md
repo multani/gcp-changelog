@@ -1,5 +1,15 @@
 # VPC Service Controls
 
+## 2026-09-08
+
+### Feature
+
+[General availability](https://cloud.google.com/products#product-launch-stages)
+support for the following integration:
+
+* [Observability API](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_observability_api)
+
+---
 ## 2026-09-03
 
 ### Feature

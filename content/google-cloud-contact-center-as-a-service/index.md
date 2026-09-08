@@ -1,5 +1,55 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-09-08
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where the formatting of numeric values was inconsistent
+  across tiles.
+* Fixed an issue where column headers, filter labels, and tile titles didn't
+  immediately switch to a newly selected language.
+* Fixed an issue where the **Productive Agents** column in the tables of the
+  **Queue Group Performance - All** dashboard didn't display values
+  appropriate to the queue group settings.
+* Fixed an issue in the **Call Queue Metrics (Historical)** Explore where
+  filtering by **Agent Name** without including it as a visible column
+  resulted in zero rows being returned.
+* Fixed an issue that affected calls to a sub-menu that were deflected using
+  **Custom After Hours Deflection** to a message. These calls were incorrectly
+  attributed to the parent menu in the **All Queued Interactions** report.
+* Fixed the effectiveness of the **Direction** filter in the following
+  dashboards:
+
+  + **Agent Performance**. The **Agent Productivity Detailed – Calls** and
+    **Agent Productivity Detailed – Chats** tables correctly reflect the
+    filter setting.
+  + **Real-time Agent Monitoring**. The **Agent Performance** table and
+    historical metrics tiles correctly reflect the filter setting.
+  + **All Interactions – Calls** and **All Interactions – Chats**. The **IVR
+    Interactions** (calls only) and **Virtual Agent Interactions** tables
+    correctly reflect the filter setting.
+* Fixed an issue with the **Queue Performance - Calls** dashboard when short
+  abandons were present in the specified date range. The **Avg Queue Time**
+  column in the **Queue Summary** table incorrectly displayed the raw sum of
+  queue durations instead of a true average.
+* Fixed an issue where team filters didn't apply correctly when generating the
+  **Individual Call History Report** and the **Individual Chat History
+  Report**. This resulted in the inclusion of data from unmanaged queues.
+* Fixed the following issues with the **Real-time Calls - Calls Queued**
+  dashboard:
+
+  + The **Total Queued Now** metric didn't include callers who were returned
+    to the queue after an automated-answer detection miss.
+  + The **Current Max Queue Wait Time (H:M:S)** and **Current Avg Queue Wait
+    Time (H:M:S)** metrics mistakenly measured from a caller's original
+    entry into the queue, rather than from their most recent return to the
+    queue.
+* Fixed an issue where a gray bar appeared at the bottom of the advanced
+  reporting dashboards, preventing a full view of the dashboards.
+
+---
 ## 2026-09-03
 
 ### Announcement

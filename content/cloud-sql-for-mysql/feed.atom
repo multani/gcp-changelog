@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-09-04T00:00:00+00:00</updated>
+  <updated>2026-09-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-09-08:feature:0</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/sql/docs/mysql/admin-api/rep">Regional endpoints (REP)</a>
+are now generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>)
+for the Cloud SQL for MySQL Admin API.</p>
+<p>Regional endpoints let you interact with Cloud SQL for MySQL instances
+using regionalized URLs (such as
+<code>sqladmin.{region}.rep.googleapis.com</code>)
+rather than through a single global endpoint.</p>
+<p>Regional endpoints provide regional frontend and load balancing infrastructure
+that improves data residency by keeping network traffic within the same
+region as the instance. This reduces the instance's dependency on global
+frontend infrastructure.</p>
+<p>Regional endpoints have strong regional isolation, so the failure of a load
+balancer or frontend in one region doesn't affect any other
+region. Regional service load balancers have a separate, regionally
+isolated control plane.</p>
+<p>Regional endpoints are designed to meet stringent data residency and
+sovereignty standards, such as ITAR and Assured Workloads Regions, ensuring
+data in transit remains within the committed region.</p>
+<p>Certificate management and TLS termination occurs within each region, on the
+regional load balancer, so data remains encrypted until it reaches its
+destination region and stays within that region while being processed there.</p>]]></content>
+    <summary>Regional endpoints for the Cloud SQL for MySQL Admin API are now generally available. These endpoints offer regionalized URLs, improving data residency by keeping network traffic within the same region as your instance and enhancing regional isolation. This feature ensures data remains encrypted and within the committed region, meeting stringent data residency standards.</summary>
+    <title>Feature: Cloud SQL for MySQL Admin API regional endpoints now available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

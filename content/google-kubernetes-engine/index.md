@@ -1,5 +1,59 @@
 # Google Kubernetes Engine
 
+## 2026-09-04
+
+### Announcement
+
+#### Kubernetes 1.37 is available
+
+Kubernetes 1.37 is now available in the Rapid channel. For more information
+about the content of Kubernetes 1.37, read the
+[Kubernetes 1.37 Release Notes](https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md)
+and Kubernetes [1.37 Release Blog](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/).
+
+### Deprecated
+
+#### Removed in 1.37
+
+* Identity Service for GKE is no longer supported starting in GKE 1.37: Creating
+  new clusters or upgrading existing clusters to GKE version 1.37 or later with
+  Identity Service for GKE enabled is blocked. For external OIDC authentication,
+  please migrate to [Workforce Identity Federation](https://cloud.google.com/iam/docs/workforce-identity-federation).
+  For more information, refer to [Authenticate with third-party identity providers](https://cloud.google.com/kubernetes-engine/docs/how-to/oidc).
+
+### Change
+
+#### Other changes in 1.37
+
+* Starting with GKE version 1.37.0-gke.2100000, newly created clusters default
+  to using control plane node creation, which improves cluster security by having
+  the control plane manage node registration instead of kubelet self-registration.
+  Existing clusters are not affected. If your workloads require legacy kubelet
+  self-registration, you can opt out during cluster creation by specifying
+  `--node-creation-mode=KUBELET`. For more information, see
+  [Disable control plane node creation](https://docs.cloud.google.com/kubernetes-engine/security/control-plane-node-creation#disable_control_plane_node_creation).
+* In version 1.37 and later, newly created node pools use an improved formula to
+  calculate the default system reservation for CPU and memory resources on each node.
+  This updated reservation algorithm reduces the system memory reservation by
+  10% to 15% when compared to the algorithm that's used in version 1.36 and earlier.
+* The updated default reservation algorithm applies only to new node pools that
+  are created on version 1.37 and later. Existing node pools that you upgrade to
+  1.37 or later from version 1.36 or earlier don't use the updated algorithm.
+* Additionally, any new or existing node pool that runs GKE version 1.37 and
+  later can modify the amount of CPU and memory that's reserved for system
+  workloads in node pools by using the
+  [`reservedResourcesConfig` option in the node system configuration file](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/node-system-config#kubelet-options).
+
+### Feature
+
+#### New features in 1.37
+
+* The [PodCertificateRequest](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#pod-certificate-requests) and [ClusterTrustBundle](https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#cluster-trust-bundles) APIs are generally available and promoted to certificates.k8s.io/v1.
+* [DRA device metadata publishing](https://kubernetes.io/docs/tasks/configure-pod-container/assign-resources/access-dra-device-metadata/) is enabled with beta support (for use with DRA drivers which include this feature).
+* HorizontalPodAutoscaler enables beta support for [scaling to zero](https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/#scaling-to-and-from-zero).
+* [StatefulSet maxUnavailable support](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#maximum-unavailable-pods) is now enabled.
+
+---
 ## 2026-09-03
 
 ### Feature

@@ -1,5 +1,38 @@
 # Cloud SQL for SQL Server
 
+## 2026-09-08
+
+### Feature
+
+[Regional endpoints (REP)](https://docs.cloud.google.com/sql/docs/sqlserver/admin-api/rep)
+are now generally available
+([GA](https://cloud.google.com/products#product-launch-stages))
+for the Cloud SQL for SQL Server Admin API.
+
+Regional endpoints let you interact with Cloud SQL for SQL Server instances
+using regionalized URLs (such as
+`sqladmin.{region}.rep.googleapis.com`)
+rather than through a single global endpoint.
+
+Regional endpoints provide regional frontend and load balancing infrastructure
+that improves data residency by keeping network traffic within the same
+region as the instance. This reduces the instance's dependency on global
+frontend infrastructure.
+
+Regional endpoints have strong regional isolation, so the failure of a load
+balancer or frontend in one region doesn't affect any other
+region. Regional service load balancers have a separate, regionally
+isolated control plane.
+
+Regional endpoints are designed to meet stringent data residency and
+sovereignty standards, such as ITAR and Assured Workloads Regions, ensuring
+data in transit remains within the committed region.
+
+Certificate management and TLS termination occurs within each region, on the
+regional load balancer, so data remains encrypted until it reaches its
+destination region and stays within that region while being processed there.
+
+---
 ## 2026-09-04
 
 ### Feature

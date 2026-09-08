@@ -1,5 +1,17 @@
 # AI Hypercomputer
 
+## 2026-09-07
+
+### Security
+
+Google addressed a security vulnerability (CVE-2026-65107) that affects Slurm
+clusters. Based on the Google Cloud product that you used to create your Slurm
+cluster, see one of the following to mitigate the vulnerability:
+
+* [Security bulletin for Cluster Director](https://docs.cloud.google.com/cluster-director/docs/security-bulletins#gcp-2026-060)
+* [Security bulletin for Cluster Toolkit](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060)
+
+---
 ## 2026-08-21
 
 ### Change

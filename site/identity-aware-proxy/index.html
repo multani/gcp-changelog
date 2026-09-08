@@ -2808,12 +2808,36 @@
 
 
 <h1 id="identity-aware-proxy">Identity-Aware Proxy</h1>
-<h2 id="2026-06-24">2026-06-24</h2>
+<h2 id="2026-08-31">2026-08-31</h2>
 <h3 id="feature">Feature</h3>
+<p><strong>IAM Unified Access Policies for Agent Gateway are generally available (GA)</strong></p>
+<p>IAM Unified Access Policies (Access policies) for Agent Gateway and
+Identity-Aware Proxy (IAP) are <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.
+Identity-Aware Proxy integrates with Agent Gateway and uses Access policies to
+help secure and govern agentic egress communication between agent principals
+and destination resources, such as Model Context Protocol (MCP) servers,
+other agents, and registered or unregistered endpoints.</p>
+<p>Key capabilities include:</p>
+<ul>
+<li>Multiple allow and deny rules within a single Access policy to establish
+  fine-grained behavioral guardrails for egress traffic.</li>
+<li>Common Expression Language (CEL) condition evaluation in rules to enforce
+  egress access criteria based on tool names, read-only constraints, HTTP
+  methods, and URL paths.</li>
+<li>Dry-run and enforcement modes to validate and audit policy evaluation
+  before blocking egress traffic.</li>
+<li>End-to-end agent identity authentication and authorization using mutual TLS
+  (mTLS) and Context-Aware Access (CAA) with Demonstrating Proof of Possession
+  (DPoP).</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/iam-overview-uap">IAM access policies overview</a>.</p>
+<hr />
+<h2 id="2026-06-24">2026-06-24</h2>
+<h3 id="feature_1">Feature</h3>
 <p>Identity-Aware Proxy (IAP) supports securing agent-to-anywhere egress for Agent Gateway. The feature generally available <a href="https://cloud.google.com/products#product-launch-stages">GA</a>. To learn more about IAP support for Agent Gateway, see <a href="https://docs.cloud.google.com/iap/docs/agent-overview">IAP for agents overview</a>.</p>
 <hr />
 <h2 id="2026-03-13">2026-03-13</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can configure custom OAuth clients in Identity-Aware Proxy by using the
 Google Cloud console; the feature is generally available <a href="https://cloud.google.com/products#product-launch-stages">(GA)</a>.
 You must use custom OAuth clients to do the following:</p>
@@ -2827,7 +2851,7 @@ You must use custom OAuth clients to do the following:</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/iap/docs/custom-oauth-configuration">Use custom OAuth clients with IAP</a>.</p>
 <hr />
 <h2 id="2025-10-28">2025-10-28</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>The ability to use a path wildcard in the <code>aud</code> (audience) field when using a
 service account JWT to authenticate with an IAP-secured resource
 is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>
@@ -2835,7 +2859,7 @@ is <a href="https://cloud.google.com/products#product-launch-stages">generally a
 <a href="https://docs.cloud.google.com/iap/docs/authentication-howto#create_the_jwt">Authenticate with a service account JWT</a>.</p>
 <hr />
 <h2 id="2025-09-23">2025-09-23</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>The ability to use a path wildcard in the <code>aud</code> (audience) field when using a service account JWT to authenticate with an IAP-secured resource is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>.</p>
 <p>For more information, see <a href="https://cloud.google.com/iap/docs/authentication-howto#create_the_jwt">Authenticate with a service account JWT</a></p>
 <hr /></div>
@@ -2849,6 +2873,9 @@ is <a href="https://cloud.google.com/products#product-launch-stages">generally a
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#identity-aware-proxy">Identity-Aware Proxy</a></li>
+          <li class="nav-item">
+            <a href="#2026-08-31" class="nav-link">2026-08-31</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-06-24" class="nav-link">2026-06-24</a>
           </li>

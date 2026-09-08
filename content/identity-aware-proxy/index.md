@@ -1,5 +1,34 @@
 # Identity-Aware Proxy
 
+## 2026-08-31
+
+### Feature
+
+**IAM Unified Access Policies for Agent Gateway are generally available (GA)**
+
+IAM Unified Access Policies (Access policies) for Agent Gateway and
+Identity-Aware Proxy (IAP) are [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+Identity-Aware Proxy integrates with Agent Gateway and uses Access policies to
+help secure and govern agentic egress communication between agent principals
+and destination resources, such as Model Context Protocol (MCP) servers,
+other agents, and registered or unregistered endpoints.
+
+Key capabilities include:
+
+* Multiple allow and deny rules within a single Access policy to establish
+  fine-grained behavioral guardrails for egress traffic.
+* Common Expression Language (CEL) condition evaluation in rules to enforce
+  egress access criteria based on tool names, read-only constraints, HTTP
+  methods, and URL paths.
+* Dry-run and enforcement modes to validate and audit policy evaluation
+  before blocking egress traffic.
+* End-to-end agent identity authentication and authorization using mutual TLS
+  (mTLS) and Context-Aware Access (CAA) with Demonstrating Proof of Possession
+  (DPoP).
+
+For more information, see [IAM access policies overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/iam-overview-uap).
+
+---
 ## 2026-06-24
 
 ### Feature

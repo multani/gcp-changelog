@@ -1,5 +1,15 @@
 # Audit Manager
 
+## 2026-09-04
+
+### Feature
+
+The [remote Model Context Protocol (MCP)
+server](https://docs.cloud.google.com/audit-manager/docs/use-audit-manager-mcp) for Audit Manager is
+generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-07-17
 
 ### Feature

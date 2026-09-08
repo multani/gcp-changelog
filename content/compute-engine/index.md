@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-09-08
+
+### Feature
+
+**Generally available**: You can convert a single-project reservation into a
+shared reservation, or a shared reservation into a single-project reservation.
+Modify the share type for a reservation to share your reserved resources with
+other projects in your Google Cloud organization, or to restrict access to only
+the reservation's owner project. For more information, see
+[Modify the share type for a reservation](https://docs.cloud.google.com/compute/docs/instances/reservations-modify#modify-share-type).
+
+---
 ## 2026-08-26
 
 ### Feature

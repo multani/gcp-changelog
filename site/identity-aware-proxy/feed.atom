@@ -2,9 +2,40 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Identity-Aware Proxy</title>
   <subtitle>Changelog for Google Cloud product: Identity-Aware Proxy</subtitle>
-  <updated>2026-06-24T00:00:00+00:00</updated>
+  <updated>2026-08-31T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:identity-aware-proxy</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/identity-aware-proxy/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:identity-aware-proxy:2026-08-31:feature:0</id>
+    <published>2026-08-31T00:00:00+00:00</published>
+    <updated>2026-08-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>IAM Unified Access Policies for Agent Gateway are generally available (GA)</strong></p>
+<p>IAM Unified Access Policies (Access policies) for Agent Gateway and
+Identity-Aware Proxy (IAP) are <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>.
+Identity-Aware Proxy integrates with Agent Gateway and uses Access policies to
+help secure and govern agentic egress communication between agent principals
+and destination resources, such as Model Context Protocol (MCP) servers,
+other agents, and registered or unregistered endpoints.</p>
+<p>Key capabilities include:</p>
+<ul>
+<li>Multiple allow and deny rules within a single Access policy to establish
+  fine-grained behavioral guardrails for egress traffic.</li>
+<li>Common Expression Language (CEL) condition evaluation in rules to enforce
+  egress access criteria based on tool names, read-only constraints, HTTP
+  methods, and URL paths.</li>
+<li>Dry-run and enforcement modes to validate and audit policy evaluation
+  before blocking egress traffic.</li>
+<li>End-to-end agent identity authentication and authorization using mutual TLS
+  (mTLS) and Context-Aware Access (CAA) with Demonstrating Proof of Possession
+  (DPoP).</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/iam-overview-uap">IAM access policies overview</a>.</p>]]></content>
+    <summary>Unified Access Policies for Agent Gateway are now generally available, enhancing security for agentic egress communication. These policies allow for fine-grained control over traffic using multiple rules, CEL conditions, and dry-run modes, ensuring secure and governed interactions with various destination resources.</summary>
+    <title>Feature: Unified Access Policies for Agent Gateway Now GA</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

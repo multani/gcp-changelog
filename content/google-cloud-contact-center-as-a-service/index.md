@@ -2,6 +2,14 @@
 
 ## 2026-09-08
 
+### Feature
+
+**Real-time Calls - Calls Queued dashboard: new Projecting column**
+
+The **Real-time Calls - Calls Queued** dashboard has a new **Projecting** column
+in the **Call Queued** table. Indicates whether the routing engine (deltacast)
+is currently projecting this queued call to an available agent.
+
 ### Fixed
 
 This release addresses the following issues:

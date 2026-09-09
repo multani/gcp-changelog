@@ -1,5 +1,19 @@
 # Gemini Enterprise
 
+## 2026-09-08
+
+### Feature
+
+**Gemini Enterprise: Semantic search support in Google Cloud Marketplace (Preview)**
+
+The agent search in Google Cloud Marketplace now supports semantic search,
+allowing you to find agents by describing their functionality (for example,
+"generate reports" or "translate text") without needing exact keyword matches.
+
+For more information, see
+[Add and manage A2A agents from Google Cloud Marketplace](https://docs.cloud.google.com/gemini/enterprise/docs/register-and-manage-marketplace-agents).
+
+---
 ## 2026-09-04
 
 ### Feature
@@ -415,18 +429,6 @@ hubs, and informational pages hosted on Google Sites, and get answers
 grounded in that content without needing to ingest the data.
 
 For more information, see [Connect to Google Sites](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-sites).
-
-### Feature
-
-**Gemini Enterprise: Show new team member announcements on the app home page**
-
-Gemini Enterprise can display new team member announcement cards on the
-app home page to welcome people who recently joined the organization. Users see
-people who recently joined their part of the organization.
-
-This feature is generally available (GA).
-For more information, see [Show new team member
-announcements](https://docs.cloud.google.com/gemini/enterprise/docs/app-home-page#new-team-member).
 
 ### Feature
 

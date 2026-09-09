@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-09-08
+
+### Feature
+
+Conversational analytics now supports predictive modeling questions using the
+[`AI.PREDICT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-predict).
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-03
 
 ### Feature

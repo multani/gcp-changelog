@@ -1,5 +1,20 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-08
+
+### Feature
+
+**Agent connectivity templates for VPC connectivity in Agent Gateway**
+
+Agent Gateway now uses *agent connectivity templates*
+(`agentConnectivityTemplate`) to configure and manage egress connectivity to VPC
+networks. Connectivity templates let you choose whether to route all outbound
+agent traffic (`ALL_TRAFFIC`) or only traffic to certain private IP address
+ranges (`PRIVATE_RANGES_ONLY`) into your VPC network. For more information, see
+[Set up VPC connectivity for Agent
+Gateway](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-vpc-connectivity).
+
+---
 ## 2026-09-02
 
 ### Feature

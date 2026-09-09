@@ -1,5 +1,282 @@
 # Container Optimized OS
 
+## 2026-09-08
+
+### Change
+
+
+
+### cos-beta-133-19999-44-28
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.48](https://cos.googlesource.com/third_party/kernel/+/84f978496731ef2e17206873e397a8129c813697 ) | v29.4.3 | v2.3.4 | [See List](https://storage.googleapis.com/cos-tools/19999.44.28/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-129-19506-448-20
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.105](https://cos.googlesource.com/third_party/kernel/+/583df4fb246cc3cdc69bbb933a78ef88032ecfd6 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.448.20/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-138-20098-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.49](https://cos.googlesource.com/third_party/kernel/+/3c4a8bfeaddc3759224158bd0440c337bb253d46 ) | v29.4.3 | v2.3.2 | [See List](https://storage.googleapis.com/cos-tools/20098.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated containerd and containerd-test to v2.3.4.
+
+### Fixed
+
+Updated the Linux kernel to v6.18.48.
+
+### Fixed
+
+Fixed CVE-2026-33186 in app-containers/docker.
+
+### Change
+
+Updated the Linux kernel to v6.18.48.
+
+### Fixed
+
+Fixed docker cp failure when copying to/from containers with symlinked bind mounts.
+
+### Change
+
+Updated the Linux kernel to v6.18.49.
+
+### Fixed
+
+Fixed CVE-2026-33186 in app-admin/extensions-manager.
+
+### Fixed
+
+Updated sys-devel/binutils to v2.40.
+
+### Fixed
+
+Fixed CVE-2026-33186 in app-admin/google-osconfig-agent.
+
+### Security
+
+Update dev-go/net to v0.55.0 to fix CVE-2026-25680.
+
+### Fixed
+
+Fixed CVE-2026-33186 in app-admin/node-problem-detector.
+
+### Fixed
+
+Fixed CVE-2026-33186 in app-containers/containerd.
+
+### Fixed
+
+Fixed CVE-2026-33186 in app-emulation/kubernetes.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.9.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.53.4.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.4.
+
+### Fixed
+
+Upgraded dev-libs/xxhash to v0.8.3-r2.
+
+### Fixed
+
+Upgraded net-libs/libnftnl to v1.2.9.
+
+### Fixed
+
+Fixed CVE-2026-6238 in sys-libs/glibc.
+
+### Security
+
+Updated dev-go/net to v0.55.0 to fix CVE-2026-25680.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Change
+
+
+
+### cos-117-18613-731-6
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.153](https://cos.googlesource.com/third_party/kernel/+/3f9d5994b9233645cbedcc27ffb9885482af3d41 ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.731.6/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed docker cp failure when copying to/from containers with symlinked bind mounts.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260819.00.
+
+### Fixed
+
+Upgraded app-arch/zstd to v1.5.7-r1.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.9.
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.5.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.53.4.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.3.
+
+### Fixed
+
+Upgraded dev-libs/libverto to v0.3.2-r1.
+
+### Fixed
+
+Upgraded dev-libs/popt to v1.19-r1.
+
+### Fixed
+
+Upgraded dev-libs/xxhash to v0.8.3-r2.
+
+### Fixed
+
+Upgraded net-libs/libnftnl to v1.2.9.
+
+### Fixed
+
+Upgraded sys-apps/acl to v2.4.0-r2.
+
+### Fixed
+
+Upgraded sys-auth/passwdqc to v2.0.3-r1.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.7.
+
+### Security
+
+Fixed CVE-2026-6238 in sys-libs/glibc.
+
+### Security
+
+Updated dev-go/net to v0.55.0 to fix CVE-2026-25680.
+
+### Change
+
+
+
+### cos-121-18867-584-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.153](https://cos.googlesource.com/third_party/kernel/+/bce7645596996d31068d8b3c7ad0f24fc8848df3 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.584.7/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed docker cp failure when copying to/from containers with symlinked bind mounts.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260819.00.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.9.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.53.4.
+
+### Fixed
+
+Upgraded net-libs/libnftnl to v1.2.9.
+
+### Fixed
+
+Upgraded sys-auth/passwdqc to v2.0.3-r1.
+
+### Security
+
+Fixed CVE-2026-6238 in sys-libs/glibc.
+
+### Security
+
+Updated dev-go/net to v0.55.0 to fix CVE-2026-25680.
+
+### Change
+
+
+
+### cos-125-19216-655-12
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.105](https://cos.googlesource.com/third_party/kernel/+/728af8e16745d2a2cef9323806e50619cc900208 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.655.12/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for NVIDIA driver v595.91.07.
+
+### Fixed
+
+Fixed docker cp failure when copying to/from containers with symlinked bind mounts.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.53.4.
+
+### Security
+
+Fixed CVE-2026-6238 in sys-libs/glibc.
+
+### Security
+
+Updated dev-go/net to v0.55.0 to fix CVE-2026-25680.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+---
 ## 2026-08-31
 
 ### Change

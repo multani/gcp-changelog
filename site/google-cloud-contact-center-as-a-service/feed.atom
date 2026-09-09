@@ -12,6 +12,77 @@
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-08:feature:0</id>
     <published>2026-09-08T00:00:00+00:00</published>
     <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Real-time Agent Monitoring dashboard: new Active call ID(s) column</strong></p>
+<p>The <strong>Real-time Agent Monitoring</strong> dashboard now has an <strong>Active Call ID(s)</strong>
+column in the <strong>Live Agent Data</strong> table. The column displays the call ID(s) for
+any call in a connecting, connected, or reconnecting state for the agent. If an
+agent is handling multiple concurrent calls, the call IDs appear in a
+comma-separated list. The <strong>Active Call ID(s)</strong> column reduces the number of
+steps required for supervisors to identify active calls during live monitoring.</p>]]></content>
+    <summary>The Real-time Agent Monitoring dashboard now includes an Active Call ID(s) column. This new column displays the call ID(s) for agents handling live calls, simplifying the process for supervisors to identify active calls and manage multiple concurrent calls.</summary>
+    <title>Feature: New Active Call ID column in Agent Monitoring</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-08:feature:1</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved filtering by team</strong></p>
+<p>We made the following changes to team-based filtering:</p>
+<ul>
+<li>Renamed the <strong>Teams</strong> filter to <strong>Agent Teams</strong> to clarify that it filters
+  by the agent team handling the interactions. This change is in the
+  <strong>Real-time Queue Monitoring - Calls</strong>, <strong>Real-time Queue Monitoring -
+  Chats</strong>, <strong>Real-time Calls - Calls Connected</strong>, and <strong>Real-time Chats -
+  Chats Connected</strong> dashboards.</li>
+<li>Added a <strong>Queue Teams</strong> filter to the <strong>Real-time Calls - Calls Queued</strong> and
+  <strong>Real-time Chats - Chats Queued</strong> dashboards. This lets you filter queued
+  interactions by the team assigned to the queue.</li>
+</ul>]]></content>
+    <summary>We've improved team-based filtering with clearer naming for agent teams and added new queue team filters to relevant dashboards. This allows for more precise monitoring of interactions by agent and queue assignments.</summary>
+    <title>Feature: Enhanced Team Filtering</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-08:feature:2</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Improved the Real-time Calls and Real-time Chats dashboards</strong></p>
+<p>We made the following dashboard improvements:</p>
+<ul>
+<li>
+<p><strong>Real-time Calls - Calls Connected dashboard</strong>. Added the following
+  columns to the <strong>Connected Calls</strong> table:</p>
+</li>
+<li>
+<p><strong>Total Consumer Talk Time</strong>. Total time since the call first
+    connected to a virtual agent or a human agent.</p>
+</li>
+<li><strong>Total Hold Time</strong>. Total time the call has spent on hold so far,
+    including a hold currently in progress.</li>
+<li>
+<p><strong>Real-time Chats - Chats Connected dashboard</strong>. Added the following
+  column to the <strong>Connected Chats</strong> table:</p>
+</li>
+<li>
+<p><strong>Total Consumer Chat Time</strong>. Total time since the chat first connected
+    to a virtual agent or a human agent.</p>
+</li>
+</ul>]]></content>
+    <summary>New metrics for call and chat duration are now available on the Real-time Calls and Real-time Chats dashboards. These updates provide deeper insights into connected calls and chats, including total consumer talk time and total consumer chat time.</summary>
+    <title>Feature: Enhanced Real-time Dashboards</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-08:feature:3</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Real-time Calls - Calls Queued dashboard: new Projecting column</strong></p>
 <p>The <strong>Real-time Calls - Calls Queued</strong> dashboard has a new <strong>Projecting</strong> column
 in the <strong>Call Queued</strong> table. Indicates whether the routing engine (deltacast)
@@ -23,7 +94,7 @@ is currently projecting this queued call to an available agent.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-08:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-08:fixed:4</id>
     <published>2026-09-08T00:00:00+00:00</published>
     <updated>2026-09-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>

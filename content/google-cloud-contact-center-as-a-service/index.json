@@ -4,6 +4,30 @@
     "2026-09-08": [
       {
         "kind": "Feature",
+        "content": "**Real-time Agent Monitoring dashboard: new Active call ID(s) column**\n\nThe **Real-time Agent Monitoring** dashboard now has an **Active Call ID(s)**\ncolumn in the **Live Agent Data** table. The column displays the call ID(s) for\nany call in a connecting, connected, or reconnecting state for the agent. If an\nagent is handling multiple concurrent calls, the call IDs appear in a\ncomma-separated list. The **Active Call ID(s)** column reduces the number of\nsteps required for supervisors to identify active calls during live monitoring.",
+        "summary": {
+          "title": "New Active Call ID column in Agent Monitoring",
+          "summary": "The Real-time Agent Monitoring dashboard now includes an Active Call ID(s) column. This new column displays the call ID(s) for agents handling live calls, simplifying the process for supervisors to identify active calls and manage multiple concurrent calls."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved filtering by team**\n\nWe made the following changes to team-based filtering:\n\n* Renamed the **Teams** filter to **Agent Teams** to clarify that it filters\n  by the agent team handling the interactions. This change is in the\n  **Real-time Queue Monitoring - Calls**, **Real-time Queue Monitoring -\n  Chats**, **Real-time Calls - Calls Connected**, and **Real-time Chats -\n  Chats Connected** dashboards.\n* Added a **Queue Teams** filter to the **Real-time Calls - Calls Queued** and\n  **Real-time Chats - Chats Queued** dashboards. This lets you filter queued\n  interactions by the team assigned to the queue.",
+        "summary": {
+          "title": "Enhanced Team Filtering",
+          "summary": "We've improved team-based filtering with clearer naming for agent teams and added new queue team filters to relevant dashboards. This allows for more precise monitoring of interactions by agent and queue assignments."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved the Real-time Calls and Real-time Chats dashboards**\n\nWe made the following dashboard improvements:\n\n* **Real-time Calls - Calls Connected dashboard**. Added the following\n  columns to the **Connected Calls** table:\n\n  + **Total Consumer Talk Time**. Total time since the call first\n    connected to a virtual agent or a human agent.\n  + **Total Hold Time**. Total time the call has spent on hold so far,\n    including a hold currently in progress.\n* **Real-time Chats - Chats Connected dashboard**. Added the following\n  column to the **Connected Chats** table:\n\n  + **Total Consumer Chat Time**. Total time since the chat first connected\n    to a virtual agent or a human agent.",
+        "summary": {
+          "title": "Enhanced Real-time Dashboards",
+          "summary": "New metrics for call and chat duration are now available on the Real-time Calls and Real-time Chats dashboards. These updates provide deeper insights into connected calls and chats, including total consumer talk time and total consumer chat time."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Real-time Calls - Calls Queued dashboard: new Projecting column**\n\nThe **Real-time Calls - Calls Queued** dashboard has a new **Projecting** column\nin the **Call Queued** table. Indicates whether the routing engine (deltacast)\nis currently projecting this queued call to an available agent.",
         "summary": {
           "title": "New column added to Calls Queued dashboard",

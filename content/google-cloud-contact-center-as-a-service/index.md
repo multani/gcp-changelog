@@ -4,6 +4,51 @@
 
 ### Feature
 
+**Real-time Agent Monitoring dashboard: new Active call ID(s) column**
+
+The **Real-time Agent Monitoring** dashboard now has an **Active Call ID(s)**
+column in the **Live Agent Data** table. The column displays the call ID(s) for
+any call in a connecting, connected, or reconnecting state for the agent. If an
+agent is handling multiple concurrent calls, the call IDs appear in a
+comma-separated list. The **Active Call ID(s)** column reduces the number of
+steps required for supervisors to identify active calls during live monitoring.
+
+### Feature
+
+**Improved filtering by team**
+
+We made the following changes to team-based filtering:
+
+* Renamed the **Teams** filter to **Agent Teams** to clarify that it filters
+  by the agent team handling the interactions. This change is in the
+  **Real-time Queue Monitoring - Calls**, **Real-time Queue Monitoring -
+  Chats**, **Real-time Calls - Calls Connected**, and **Real-time Chats -
+  Chats Connected** dashboards.
+* Added a **Queue Teams** filter to the **Real-time Calls - Calls Queued** and
+  **Real-time Chats - Chats Queued** dashboards. This lets you filter queued
+  interactions by the team assigned to the queue.
+
+### Feature
+
+**Improved the Real-time Calls and Real-time Chats dashboards**
+
+We made the following dashboard improvements:
+
+* **Real-time Calls - Calls Connected dashboard**. Added the following
+  columns to the **Connected Calls** table:
+
+  + **Total Consumer Talk Time**. Total time since the call first
+    connected to a virtual agent or a human agent.
+  + **Total Hold Time**. Total time the call has spent on hold so far,
+    including a hold currently in progress.
+* **Real-time Chats - Chats Connected dashboard**. Added the following
+  column to the **Connected Chats** table:
+
+  + **Total Consumer Chat Time**. Total time since the chat first connected
+    to a virtual agent or a human agent.
+
+### Feature
+
 **Real-time Calls - Calls Queued dashboard: new Projecting column**
 
 The **Real-time Calls - Calls Queued** dashboard has a new **Projecting** column

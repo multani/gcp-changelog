@@ -1,5 +1,16 @@
 # Secret Manager
 
+## 2026-09-08
+
+### Feature
+
+Parameter Manager supports using tags to group and organize parameters and
+conditionally manage access control using Identity and Access Management (IAM)
+policies.
+
+For more information, see [Create and manage tags](https://docs.cloud.google.com/secret-manager/parameter-manager/docs/create-and-manage-tags).
+
+---
 ## 2026-08-12
 
 ### Fixed

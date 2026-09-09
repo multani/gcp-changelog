@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-09-08T00:00:00+00:00</updated>
+  <updated>2026-09-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-09:feature:0</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Gateway supports VPC Service Controls</strong></p>
+<p>Agent Gateway now enforces VPC Service Controls perimeter rules for agent
+communications. When you <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-vpc-connectivity">configure Agent Gateway with VPC
+connectivity</a>,
+agent traffic is routed through your private VPC network, ensuring that your
+organization's VPC-SC perimeter rules are applied to all agent traffic as well.</p>
+<p>Note that setting up VPC connectivity is required to enable VPC Service Controls
+perimeter enforcement for Agent Gateway deployments. The connectivity template
+must be configured in <code>ALL_TRAFFIC</code> egress mode.</p>
+<p><strong>Important:</strong> VPC Service Controls is only supported for Agent Gateway deployments
+created after September 8, 2026 that use the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-vpc-connectivity">agent connectivity
+template</a>
+to configure VPC connectivity.</p>]]></content>
+    <summary>Agent Gateway now enforces VPC Service Controls perimeter rules for agent communications. Configuring Agent Gateway with VPC connectivity routes agent traffic through your private VPC network, ensuring your organization's VPC-SC perimeter rules are applied. This feature is supported for Agent Gateway deployments created after September 8, 2026, using the agent connectivity template.</summary>
+    <title>Feature: Agent Gateway Now Supports VPC Service Controls</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

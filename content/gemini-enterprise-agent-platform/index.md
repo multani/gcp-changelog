@@ -1,5 +1,27 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-09
+
+### Feature
+
+**Agent Gateway supports VPC Service Controls**
+
+Agent Gateway now enforces VPC Service Controls perimeter rules for agent
+communications. When you [configure Agent Gateway with VPC
+connectivity](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-vpc-connectivity),
+agent traffic is routed through your private VPC network, ensuring that your
+organization's VPC-SC perimeter rules are applied to all agent traffic as well.
+
+Note that setting up VPC connectivity is required to enable VPC Service Controls
+perimeter enforcement for Agent Gateway deployments. The connectivity template
+must be configured in `ALL_TRAFFIC` egress mode.
+
+**Important:** VPC Service Controls is only supported for Agent Gateway deployments
+created after September 8, 2026 that use the [agent connectivity
+template](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-vpc-connectivity)
+to configure VPC connectivity.
+
+---
 ## 2026-09-08
 
 ### Feature

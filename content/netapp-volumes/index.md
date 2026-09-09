@@ -1,5 +1,19 @@
 # NetApp Volumes
 
+## 2026-09-09
+
+### Announcement
+
+Google Cloud NetApp Volumes now supports the Flex Unified service level in the
+following regions:
+
+* asia-east1 (Taiwan)
+* australia-southeast2 (Melbourne)
+* europe-southwest1 (Madrid)
+
+For more information about available regions, see [Supported regions](https://docs.cloud.google.com/netapp/volumes/docs/discover/service-levels#supported_regions).
+
+---
 ## 2026-08-18
 
 ### Announcement

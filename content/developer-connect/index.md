@@ -1,5 +1,12 @@
 # Developer Connect
 
+## 2026-09-01
+
+### Announcement
+
+Developer Connect [account connectors](https://docs.cloud.google.com/developer-connect/docs/account-connectors) is now [generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-14
 
 ### Announcement

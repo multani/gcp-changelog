@@ -2,6 +2,17 @@
 
 ## 2026-09-08
 
+### Announcement
+
+**Advanced reporting dashboards prerelease notes 6.4**
+
+Here are the pre-release notes for updates to the advanced reporting dashboards
+and other reporting in CCAI Platform. When we release these updates, we
+expect the new capabilities to be as shown here.
+
+**Important:** The next version of the advanced reporting dashboards could be greater
+than 6.4.
+
 ### Feature
 
 **Real-time Agent Monitoring dashboard: new Active call ID(s) column**

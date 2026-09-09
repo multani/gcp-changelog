@@ -2,31 +2,13 @@
 
 ## 2026-09-04
 
-### Feature
-
-**Google Chronicle**: Version 93.0
-
-* Added the following new action:
-
-  + **Execute UDM Query Async**
-
 ### Change
 
-**ServiceNow**: Version 72.0
+**Google Chronicle**: Version 94.0
 
-* Added the ability to authenticate using client credentials without a refresh
-  token to the following connector:
+* Reverted the execution mode to synchronous in the following action:
 
-  + **Sync Incidents**
-
-### Change
-
-**FireEye ETP**: Version 11.0
-
-* Updated ontology mapping rules and fixed missing alert details and event data
-  for v2 API issue in the following connector:
-
-  + **FireEye ETP - Email Alerts Connector**
+  + **Is Value in Data Table**
 
 ---
 ## 2026-09-03

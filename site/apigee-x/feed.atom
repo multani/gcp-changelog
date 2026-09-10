@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-08-27T00:00:00+00:00</updated>
+  <updated>2026-09-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-09-09:feature:0</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>SemanticCacheLookup policy supports non-default Vector Search distance measures</strong></p>
+<p>Available in Apigee <code>1-18-0-apigee-4</code> and later. A new optional
+<code>&lt;DistanceMeasureType&gt;</code> element accepts <code>DOT_PRODUCT_DISTANCE</code> (the
+default, and the existing behavior), <code>COSINE_DISTANCE</code>,
+<code>SQUARED_L2_DISTANCE</code> and <code>L1_DISTANCE</code>. The policy now compares
+<code>&lt;Threshold&gt;</code> in the direction the declared measure implies, so declaring a
+non-default measure requires re-tuning the threshold in the same edit. The 0-to-1 restriction on
+<code>&lt;Threshold&gt;</code> is also removed.</p>]]></content>
+    <summary>The SemanticCacheLookup policy now supports multiple distance measures for Vector Search, including DOT_PRODUCT_DISTANCE, COSINE_DISTANCE, SQUARED_L2_DISTANCE, and L1_DISTANCE. This update allows for more flexible similarity comparisons and removes the previous 0-to-1 restriction on the Threshold element.</summary>
+    <title>Feature: Vector Search Distance Measures Enhanced</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -30,9 +48,11 @@
 | <strong>530965355</strong> | Added an opt-in Message Processor connection-failure back-off (CWC property HTTPClient.backoff.enabled, defaults to false) that prevents the Message Processor from consuming excessive CPU when a target is completely unavailable. |
 | <strong>532793298</strong> | Fixed an API product bug where combining a payloadOperationGroup with a REST or llmOperationGroup rejected REST/LLM traffic with a 401. |
 | <strong>534420582</strong> | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |
-| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
-    <summary>The Apigee runtime has been upgraded to JDK 17, with backward compatibility for JDK 11. This release includes several fixes and improvements, such as an opt-in back-off mechanism for Message Processors, a fix for API product bugs with operation groups, and enhanced JSON threat protection with duplicate key rejection. Updates to infrastructure and libraries have also been applied.</summary>
-    <title>Fixed: Apigee Runtime and Policy Fixes</title>
+| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>
+<p>This list is incomplete; see entry for
+<a href="#September_09_2026">September 9, 2026</a>.</p>]]></content>
+    <summary>This release includes an upgrade to JDK 17 for the Apigee runtime, improved handling of target connection failures, and fixes for API product and JSON threat protection policies. Updates to infrastructure and libraries are also included.</summary>
+    <title>Fixed: Runtime and Security Enhancements</title>
   </entry>
   <entry>
     <author>

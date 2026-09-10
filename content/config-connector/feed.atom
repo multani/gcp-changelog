@@ -2,9 +2,179 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-08-20T00:00:00+00:00</updated>
+  <updated>2026-09-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-08:announcement:0</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.156.0 is now available.</p>]]></content>
+    <summary>The latest version of Config Connector, 1.156.0, has been released. This update brings new features and improvements to the tool.</summary>
+    <title>Announcement: Config Connector 1.156.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-08:feature:1</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li>
+<p><code>CCInsightsQAScorecard</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/contact-center/insights/docs">Contact Center Insights QA scorecards</a> to manage and evaluate agent performance.</p>
+</li>
+<li>
+<p><code>ContentWarehouseSynonymSet</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/document-ai-warehouse/docs">Document AI Warehouse Synonym Sets</a> to manage custom synonym groups for searches.</p>
+</li>
+<li>
+<p><code>DevConnectAccountConnector</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/developer-connect/docs">Developer Connect Account Connectors</a> to connect GKE clusters to developer systems.</p>
+</li>
+<li>
+<p><code>DiscoveryEngineEngine</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/generative-ai-app-builder/docs">Discovery Engine search engines</a> to power search experiences.</p>
+</li>
+<li>
+<p><code>DiscoveryEngineServingConfig</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/generative-ai-app-builder/docs">Discovery Engine serving configurations</a> to control search, recommendation, and listing features.</p>
+</li>
+<li>
+<p><code>GKEHubFleet</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/anthos/multicluster-management/connect/docs">GKE Hub Fleets</a> to logically group and manage clusters.</p>
+</li>
+<li>
+<p><code>ModelArmorTemplate</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/model-armor/docs">Model Armor templates</a> to define safety and security policies for large language models.</p>
+</li>
+<li>
+<p><code>NetworkSecurityAuthzPolicy</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/traffic-director/docs/security-authz-policy">Network Security Authorization Policies</a> to authorize traffic.</p>
+</li>
+<li>
+<p><code>RapidMigrationAssessmentCollector</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/migration-center/docs/rma">Rapid Migration Assessment collectors</a> to gather environment discovery data for cloud migration.</p>
+</li>
+<li>
+<p><code>SecurityCenterManagementEventThreatDetectionCustomModule</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/security-command-center/docs">Security Command Center event threat detection custom modules</a> to customize threat detection.</p>
+</li>
+<li>
+<p><code>StorageInsightsDatasetConfig</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/storage/docs/insights">Cloud Storage Insights dataset configurations</a> to automatically inventory and analyze storage datasets.</p>
+</li>
+<li>
+<p><code>VectorSearchCollection</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/vertex-ai/docs/vector-search">Vertex AI Vector Search collections</a> to manage similarity search indexes.</p>
+</li>
+</ul>]]></content>
+    <summary>Several new alpha resources are now available for managing various aspects of your cloud environment. These include tools for agent performance evaluation, search customization, cluster management, AI model security, and storage insights. Explore these new features to enhance your cloud operations and data management.</summary>
+    <title>Feature: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-08:feature:2</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigtable/bigtabletable"><code>BigtableTable</code></a></p>
+</li>
+<li>
+<p>Added <code>spec.automatedBackupPolicy.locations</code> field.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></p>
+</li>
+<li>
+<p>Added <code>spec.nodeConfig.swapConfig</code> field.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool"><code>ContainerNodePool</code></a></p>
+</li>
+<li>
+<p>Added <code>spec.nodeConfig.swapConfig</code> field.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataproc/dataproccluster"><code>DataprocCluster</code></a></p>
+</li>
+<li>
+<p>Added <code>spec.secondaryWorkerConfig.instanceFlexibilityPolicy</code> field.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/networksecurity/networksecurityfirewallendpoint"><code>NetworkSecurityFirewallEndpoint</code></a></p>
+</li>
+<li>
+<p>Added <code>spec.organizationRef</code> field to support organizing resources at the organization level, and made <code>spec.projectRef</code> optional.</p>
+</li>
+</ul>]]></content>
+    <summary>We've added new fields to BigtableTable, ContainerCluster, ContainerNodePool, DataprocCluster, and NetworkSecurityFirewallEndpoint resources. These updates enhance configuration flexibility and organization options for your cloud resources.</summary>
+    <title>Feature: New fields for several resources</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-08:feature:3</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Features:</p>
+<ul>
+<li><strong>Optional NAT IP Allocate Option</strong>: Made <code>natIpAllocateOption</code> an optional field in <code>ComputeRouterNat</code> to support dynamic allocation.</li>
+<li><strong>Preview Summary CLI Improvements</strong>: Added namespace and current status to the preview summary report.</li>
+</ul>]]></content>
+    <summary>We've updated Compute Router NAT to support dynamic IP allocation by making `natIpAllocateOption` optional. Additionally, the preview summary report now includes namespace and current status for better clarity.</summary>
+    <title>Feature: Router NAT and Preview Summary Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-08:change:4</id>
+    <published>2026-09-08T00:00:00+00:00</published>
+    <updated>2026-09-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Reconciliation Improvements:</p>
+<p>We have added support for direct reconciliation to more resources, with opt-in behavior. The API is unchanged. To use the direct reconciler, add the <code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:</p>
+<ul>
+<li><code>VertexAITensorboard</code></li>
+<li>Support direct reconciliation (opt-in).</li>
+</ul>]]></content>
+    <summary>Direct reconciliation is now supported for more resources, including Vertex AI Tensorboard. This feature is opt-in and can be enabled by adding an annotation to your Config Connector objects. The API remains the same.</summary>
+    <title>Change: Reconciliation Improvements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

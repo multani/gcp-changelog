@@ -29,6 +29,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          2026 08 20 <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../2026-08-20/" class="dropdown-item">2026-08-20</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           570 0 0  2026 05 27  <b class="caret"></b>
                         </a>
 
@@ -204,6 +216,18 @@
                             
   <li>
     <a href="../583-0-0--2026-09-01-/" class="dropdown-item">583.0.0 (2026-09-01)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          584 0 0  2026 09 09  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../584-0-0--2026-09-09-/" class="dropdown-item">584.0.0 (2026-09-09)</a>
   </li>
                         </ul>
                       </li>
@@ -432,6 +456,30 @@
                             
   <li>
     <a href="../apigee-apim-operator/" class="dropdown-item">Apigee APIM Operator</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Apigee edge for private cloud <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../apigee-edge-for-private-cloud/" class="dropdown-item">Apigee Edge for Private Cloud</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Apigee edge for public cloud <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../apigee-edge-for-public-cloud/" class="dropdown-item">Apigee Edge for Public Cloud</a>
   </li>
                         </ul>
                       </li>
@@ -2808,6 +2856,50 @@
 
 
 <h1 id="model-armor">Model Armor</h1>
+<h2 id="2026-09-04">2026-09-04</h2>
+<h3 id="feature">Feature</h3>
+<p><strong>Clarification: August 5, 2026 release note for Melbourne and Seoul</strong></p>
+<p>In Melbourne (<code>australia-southeast2</code>) and Seoul (<code>asia-northeast3</code>), only the
+Sensitive Data Protection filter is supported when data residency is
+enforced. To use other Model Armor features in these regions,
+<a href="https://docs.cloud.google.com/model-armor/manage-templates#set-data-residency-compliance">disable data residency enforcement in the
+template</a>.</p>
+<p>For information about available Model Armor features for each
+region, see <a href="https://docs.cloud.google.com/model-armor/feature-availability-by-region#supported-by-region">Supported features by
+region</a>.</p>
+<hr />
+<h2 id="2026-09-02">2026-09-02</h2>
+<h3 id="feature_1">Feature</h3>
+<p>Filter version <code>v3</code> will be promoted to the <code>Stable</code> alias on or before
+September 25, 2026. On the same date, filter versions <code>v1</code> and <code>v2</code> transition
+to <code>Legacy</code> status and retire on November 29, 2026.</p>
+<p>If your templates use the <code>Stable</code> alias, they will automatically upgrade to
+<code>v3</code> when it is promoted. If your templates use explicit version numbers (<code>v1</code>
+or <code>v2</code>), migrate them to <code>v3</code> or the <code>Stable</code> alias before November 29, 2026.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/set-filter-version#release-timeline">Set the filter version for a
+template</a>.</p>
+<hr />
+<h2 id="2026-08-27">2026-08-27</h2>
+<h3 id="feature_2">Feature</h3>
+<p>You can disable data residency enforcement for in-use and in-transit data in
+Model Armor templates. Disabling data residency enforcement
+allows cross-jurisdictional routing to enable Model Armor
+features that are otherwise unavailable in <a href="https://docs.cloud.google.com/model-armor/feature-availability-by-region#limited-support">limited-support
+regions</a>. Data at
+rest remains compliant with data residency requirements.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/manage-templates#set-data-residency-compliance">Set data residency
+compliance</a> and
+<a href="https://docs.cloud.google.com/model-armor/data-residency">Data residency and endpoints</a>.</p>
+<hr />
+<h2 id="2026-08-25">2026-08-25</h2>
+<h3 id="feature_3">Feature</h3>
+<p>Model Armor supports screening prompts and responses up to
+65,536 tokens (262,144 characters) for prompt injection and
+jailbreak detection, responsible AI, and child sexual abuse material (CSAM)
+filters. Model Armor scans only the first 256 URLs found in prompts
+and responses.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/quotas#token-limits">Token system limits</a>.</p>
+<hr />
 <h2 id="2026-01-30">2026-01-30</h2>
 <h3 id="change">Change</h3>
 <p>The <a href="https://docs.cloud.google.com/model-armor/overview#ma-prompt-injection">prompt injection and jailbreak detection</a>
@@ -2815,15 +2907,15 @@ filter for the Mumbai (<code>asia-south1</code>) and Singapore (<code>asia-south
 is upgraded to improve detection accuracy and reduce the rate of false positives.</p>
 <hr />
 <h2 id="2025-09-16">2025-09-16</h2>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>Model Armor is integrated with Google Agentspace to provide greater insights and enhanced security of your agent interactions by default. For more information, see <a href="https://cloud.google.com/security-command-center/docs/model-armor-agentspace-integration">Integration with Google Agentspace</a>.</p>
 <hr />
 <h2 id="2025-09-15">2025-09-15</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><a href="https://cloud.google.com/security-command-center/docs/model-armor-gke-integration">Model Armor integration with Google Kubernetes Engine</a> is available in <a href="https://cloud.google.com/products#product-launch-stages">General Availability</a>.</p>
 <hr />
 <h2 id="2025-09-08">2025-09-08</h2>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>The Model Armor monitoring dashboard provides a centralized view to track interactions and violations within your projects. This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. For more information, see <a href="https://cloud.google.com/security-command-center/docs/model-armor-monitoring-dashboard">View the monitoring dashboard</a>.</p>
 <hr />
 <h2 id="2025-08-04">2025-08-04</h2>
@@ -2831,7 +2923,7 @@ is upgraded to improve detection accuracy and reduce the rate of false positives
 <p>Model Armor supports the <code>asia-southeast1</code> location. For information about supported locations, see <a href="https://cloud.google.com/security-command-center/docs/regional-endpoints#locations-model-armor">Locations for the Model Armor API</a>.</p>
 <hr />
 <h2 id="2025-07-29">2025-07-29</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>You can use Terraform to manage Model Armor floor settings and templates. This helps reduce manual overhead with Model Armor deployments. For more information, see <a href="https://cloud.google.com/security-command-center/docs/terraform#resources">Terraform resources for Security Command Center</a>.</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2844,6 +2936,18 @@ is upgraded to improve detection accuracy and reduce the rate of false positives
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#model-armor">Model Armor</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-04" class="nav-link">2026-09-04</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-09-02" class="nav-link">2026-09-02</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-08-27" class="nav-link">2026-08-27</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-08-25" class="nav-link">2026-08-25</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-30" class="nav-link">2026-01-30</a>
           </li>

@@ -2,9 +2,81 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Model Armor</title>
   <subtitle>Changelog for Google Cloud product: Model Armor</subtitle>
-  <updated>2026-01-30T00:00:00+00:00</updated>
+  <updated>2026-09-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:model-armor</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/model-armor/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:model-armor:2026-09-04:feature:0</id>
+    <published>2026-09-04T00:00:00+00:00</published>
+    <updated>2026-09-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Clarification: August 5, 2026 release note for Melbourne and Seoul</strong></p>
+<p>In Melbourne (<code>australia-southeast2</code>) and Seoul (<code>asia-northeast3</code>), only the
+Sensitive Data Protection filter is supported when data residency is
+enforced. To use other Model Armor features in these regions,
+<a href="https://docs.cloud.google.com/model-armor/manage-templates#set-data-residency-compliance">disable data residency enforcement in the
+template</a>.</p>
+<p>For information about available Model Armor features for each
+region, see <a href="https://docs.cloud.google.com/model-armor/feature-availability-by-region#supported-by-region">Supported features by
+region</a>.</p>]]></content>
+    <summary>For Melbourne and Seoul, only the Sensitive Data Protection filter is supported with data residency enforced. Other Model Armor features require disabling data residency enforcement in the template.</summary>
+    <title>Feature: Data Residency Clarification for Melbourne and Seoul</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:model-armor:2026-09-02:feature:0</id>
+    <published>2026-09-02T00:00:00+00:00</published>
+    <updated>2026-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Filter version <code>v3</code> will be promoted to the <code>Stable</code> alias on or before
+September 25, 2026. On the same date, filter versions <code>v1</code> and <code>v2</code> transition
+to <code>Legacy</code> status and retire on November 29, 2026.</p>
+<p>If your templates use the <code>Stable</code> alias, they will automatically upgrade to
+<code>v3</code> when it is promoted. If your templates use explicit version numbers (<code>v1</code>
+or <code>v2</code>), migrate them to <code>v3</code> or the <code>Stable</code> alias before November 29, 2026.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/set-filter-version#release-timeline">Set the filter version for a
+template</a>.</p>]]></content>
+    <summary>Filter version `v3` will be promoted to the `Stable` alias on or before September 25, 2026. On the same date, filter versions `v1` and `v2` will transition to `Legacy` status and retire on November 29, 2026. If your templates use the `Stable` alias, they will automatically upgrade to `v3`. If you are using explicit version numbers, migrate them to `v3` or the `Stable` alias before November 29, 2026.</summary>
+    <title>Feature: Filter version v3 promoted to Stable</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:model-armor:2026-08-27:feature:0</id>
+    <published>2026-08-27T00:00:00+00:00</published>
+    <updated>2026-08-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can disable data residency enforcement for in-use and in-transit data in
+Model Armor templates. Disabling data residency enforcement
+allows cross-jurisdictional routing to enable Model Armor
+features that are otherwise unavailable in <a href="https://docs.cloud.google.com/model-armor/feature-availability-by-region#limited-support">limited-support
+regions</a>. Data at
+rest remains compliant with data residency requirements.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/manage-templates#set-data-residency-compliance">Set data residency
+compliance</a> and
+<a href="https://docs.cloud.google.com/model-armor/data-residency">Data residency and endpoints</a>.</p>]]></content>
+    <summary>You can now disable data residency enforcement for in-use and in-transit data in Model Armor templates. This allows for cross-jurisdictional routing, enabling features that might otherwise be unavailable in limited-support regions, while data at rest remains compliant with residency requirements.</summary>
+    <title>Feature: Disable data residency enforcement for in-use data</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:model-armor:2026-08-25:feature:0</id>
+    <published>2026-08-25T00:00:00+00:00</published>
+    <updated>2026-08-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Model Armor supports screening prompts and responses up to
+65,536 tokens (262,144 characters) for prompt injection and
+jailbreak detection, responsible AI, and child sexual abuse material (CSAM)
+filters. Model Armor scans only the first 256 URLs found in prompts
+and responses.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/quotas#token-limits">Token system limits</a>.</p>]]></content>
+    <summary>Model Armor now screens prompts and responses up to 65,536 tokens for various safety filters, including prompt injection, jailbreak detection, responsible AI, and CSAM. It scans the first 256 URLs within these prompts and responses to ensure comprehensive protection.</summary>
+    <title>Feature: Enhanced prompt and response screening</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

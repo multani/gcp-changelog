@@ -1,6 +1,16 @@
 {
   "name": "Agent Platform Workbench",
   "entries": {
+    "2026-09-08": [
+      {
+        "kind": "Fixed",
+        "content": "**Scheduled upgrade metadata is validated**\n\nThe value of the `notebook-upgrade-schedule` metadata key is now validated when\nyou create or update an Agent Platform Workbench instance. The value must be a\nsingle-line [unix-cron\nformat](https://man7.org/linux/man-pages/man5/crontab.5.html) schedule. For more\ninformation, see [Manage features through\nmetadata](https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/manage-metadata#keys).",
+        "summary": {
+          "title": "Upgrade schedule metadata validated",
+          "summary": "The notebook-upgrade-schedule metadata key is now validated to ensure it uses the correct unix-cron format when creating or updating an Agent Platform Workbench instance."
+        }
+      }
+    ],
     "2026-08-30": [
       {
         "kind": "Change",

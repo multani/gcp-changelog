@@ -1,0 +1,151 @@
+{
+  "name": "584.0.0 (2026-09-09)",
+  "entries": {
+    "2026-09-09": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Cloud Storage)** Deprecated `gcloud storage buckets anywhere-caches pause` command.",
+        "summary": {
+          "title": "Cloud Storage command deprecated",
+          "summary": "The 'gcloud storage buckets anywhere-caches pause' command in Cloud Storage has been deprecated. Users should no longer rely on this command for managing anywhere caches."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Deprecated `minikube` component in Google Cloud CLI. The component will be removed after January 31, 2027. Existing local configurations and clusters in `~/.minikube` will be preserved. Minikube is an open-source project and continues to be actively maintained. To avoid disruptions, please migrate to standard OSS Minikube installations: <https://minikube.sigs.k8s.io/docs/start/>.\n* Upgraded OpenSSL version to 3.5.8 in Linux bundled Python to resolve CVE-2026-42508.",
+        "summary": {
+          "title": "Minikube component deprecated",
+          "summary": "The minikube component in Google Cloud CLI is deprecated and will be removed after January 31, 2027. Users should migrate to standard OSS Minikube installations to avoid disruptions. Additionally, the OpenSSL version in Linux bundled Python has been upgraded to 3.5.8 to address a security vulnerability."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Added `--edition` flag in `gcloud alloydb clusters create|update` for alpha and beta tracks.",
+        "summary": {
+          "title": "AlloyDB editions flag",
+          "summary": "The AlloyDB team has introduced a new --edition flag for cluster creation and updates. This flag is currently available in alpha and beta tracks, allowing users to specify different editions for their AlloyDB clusters."
+        }
+      },
+      {
+        "kind": "Apigee",
+        "content": "* Added `gcloud apigee apis delete` which deletes an API proxy and all of its\n  revisions. Undeploy every deployed revision first with `gcloud apigee apis\n  undeploy`.",
+        "summary": {
+          "title": "Apigee API Proxy Deletion Command",
+          "summary": "A new command, `gcloud apigee apis delete`, has been introduced to remove API proxies and all their revisions. Ensure all deployed revisions are undeployed first using `gcloud apigee apis undeploy` before executing the delete command."
+        }
+      },
+      {
+        "kind": "Artifact Registry",
+        "content": "* Added `gcloud artifacts files upload` which allows user to upload\n  Conda packages to a Conda repository.",
+        "summary": {
+          "title": "Upload Conda Packages to Artifact Registry",
+          "summary": "You can now upload Conda packages to your Conda repositories using the `gcloud artifacts files upload` command. This new feature simplifies the process of managing and distributing your Conda packages within Artifact Registry."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Added `--cross-cloud-cache` to `gcloud biglake iceberg catalogs create` and `update` commands to configure cross-cloud cache per catalog.\n* Added `--kms-key` flag to `gcloud biglake iceberg catalogs create` and `update` commands.\n* Added `--kms-key` flag to `gcloud biglake delta-sharing catalogs create` and `update` commands.",
+        "summary": {
+          "title": "BigLake Catalog Enhancements",
+          "summary": "BigLake now supports cross-cloud caching and KMS key configuration for both Iceberg and Delta Sharing catalogs. These updates enhance security and performance for your data catalog management."
+        }
+      },
+      {
+        "kind": "Cloud Backup DR",
+        "content": "* Added `gcloud backup-dr auto-protection-policies` command group in alpha and beta tracks.\n* Added `gcloud backup-dr auto-protection-bindings` command group in alpha and beta tracks.\n* Added `gcloud beta backup-dr binding-matching-resources` command group to manage Backup and DR BindingMatchingResources.",
+        "summary": {
+          "title": "New Auto-Protection Commands for Backup and DR",
+          "summary": "New `gcloud backup-dr` commands for auto-protection policies, auto-protection bindings, and binding-matching resources are now available in alpha and beta. These additions enhance the management capabilities for Backup and DR services."
+        }
+      },
+      {
+        "kind": "Cloud Firestore",
+        "content": "* Promoted `gcloud firestore change-streams` commands to beta.\n* Promoted search configuration options to GA for `gcloud firestore indexes composite create`.",
+        "summary": {
+          "title": "Firestore commands reach new milestones",
+          "summary": "We're excited to announce that `gcloud firestore change-streams` commands have been promoted to beta. Additionally, search configuration options for `gcloud firestore indexes composite create` are now generally available."
+        }
+      },
+      {
+        "kind": "Cloud Managed Kafka",
+        "content": "* Promoted `--public-cluster` and `--allowed-source-ip-ranges` flags to GA for `gcloud managed-kafka clusters create` and `gcloud managed-kafka clusters update`.",
+        "summary": {
+          "title": "Managed Kafka Public Clusters Now Generally Available",
+          "summary": "We are excited to announce that the `--public-cluster` and `--allowed-source-ip-ranges` flags for creating and updating managed Kafka clusters are now generally available. This release simplifies the process of configuring secure, publicly accessible Kafka clusters."
+        }
+      },
+      {
+        "kind": "Cloud Memorystore",
+        "content": "* Promoted `--tags` flag of `gcloud redis instance create`.",
+        "summary": {
+          "title": "New tag support for Redis instances",
+          "summary": "You can now use the `--tags` flag when creating Memorystore for Redis instances. This feature allows you to add custom metadata to your Redis instances, making them easier to manage and organize. This can be particularly useful for large deployments or when you need to categorize instances for billing or operational purposes."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Updated 'cloud-sql-proxy' packaged component to use 2.25.4 of the Cloud SQL Proxy.",
+        "summary": {
+          "title": "Cloud SQL Proxy Updated",
+          "summary": "The Cloud SQL Proxy has been updated to version 2.25.4. This update includes the latest improvements and security patches for the proxy component."
+        }
+      },
+      {
+        "kind": "Cloud Services",
+        "content": "* **API Keys**: Added `--[no-]check-existing-usage` flag to `gcloud services\n  api-keys update` and `gcloud services api-keys delete` to verify whether\n  the key has recent incompatible traffic before updating or deleting the key\n  (defaults to true).",
+        "summary": {
+          "title": "API Key Management Enhanced",
+          "summary": "New flags `--[no-]check-existing-usage` are now available for `gcloud services api-keys update` and `gcloud services api-keys delete`. These flags help verify recent key traffic before performing updates or deletions, preventing accidental disruptions."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Fixed an issue in `gcloud cluster-director clusters update` help text and documentation where `--update-slurm-partitions` included an unsupported `exclusive` flag in examples.",
+        "summary": {
+          "title": "Cluster Director Update Fix",
+          "summary": "Resolved an issue in the Cluster Director update command's help text and documentation. The unsupported 'exclusive' flag has been removed from Slurm partition examples to ensure accurate guidance."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Promoted `regex_rewrite` support in `url_rewrite` block to GA for `gcloud compute url-maps`.\n* Added `--network-endpoint-group` flag to `gcloud compute backend-services create` command.\n* Added `--ha-policy-fast-ip-move` flag to `gcloud compute backend-services create` command.\n* Added `--ha-policy-leader-backend-group` and `--ha-policy-leader-instance` flags to `gcloud compute backend-services update` command.\n* Added `--no-graceful-shutdown` flag to `gcloud compute instance-groups managed stop-instances` command across all release tracks.\n* Added `--no-graceful-shutdown` flag to `gcloud compute instance-groups managed delete-instances` command across all release tracks.\n* Added `--outlier-detection-*` flags to `gcloud compute backend-services create` and `update` commands to configure outlier detection settings.\n* Promoted `gcloud compute recoverable-snapshots recover` to beta.\n* Promoted `gcloud compute recoverable-snapshots delete` to beta.\n* Promoted `gcloud compute recoverable-snapshots describe` to beta.\n* Promoted `gcloud compute recoverable-snapshots list` to beta.\n* Promoted `gcloud compute recoverable-snapshots set-iam-policy` to beta.\n* Promoted `gcloud compute recoverable-snapshots test-iam-permissions` to beta.\n* Promoted `gcloud compute instances get-vm-extension-state` to beta.\n* Promoted `gcloud compute instances list-vm-extension-states` to beta.\n* Promoted `enable-vpc-scoped-dns` sub-argument of `--network-interface` flag in `gcloud compute instances create` to GA.\n* Promoted `enable-vpc-scoped-dns` sub-argument of `--network-interface` flag in `gcloud compute instance-templates create` to GA.\n* Promoted `--share-setting` flag in `gcloud compute reservations update` to GA.\n* Promoted `gcloud compute project-views describe` command to GA.",
+        "summary": {
+          "title": "Compute Engine updates for Compute Engine users",
+          "summary": "New features and updates for Compute Engine users include GA for regex rewrite support in url maps, enhanced backend service configurations, and new beta features for recoverable snapshots and VM extensions. Several flags for managing instances and reservations are now generally available."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added support for updating connectivity options (`--private-connection`,\n  `--psc-service-attachment`, `--static-ip-connectivity`, and forward SSH flags\n  where supported) in `gcloud database-migration connection-profiles update`.\n* Added `--mysql-is-primary-destination` flag to `gcloud database-migration migration-jobs create` command to specify whether the destination for the migration job is a primary instance.",
+        "summary": {
+          "title": "Update connection profiles and migration jobs",
+          "summary": "You can now update connectivity options for your database migration connection profiles using the `gcloud database-migration connection-profiles update` command. Additionally, a new flag is available for migration job creation to specify if the destination is a primary instance."
+        }
+      },
+      {
+        "kind": "Dataproc Metastore",
+        "content": "* Promoted `gcloud metastore services migrations start`, `describe`, `list`,\n  and `delete` to GA for one-shot migrations (`mode:BACKFILL`).\n* Added support for `INCREMENTAL_SYNC` mode in public preview for\n  iceberg migrations.",
+        "summary": {
+          "title": "Dataproc Metastore migrations now GA",
+          "summary": "Dataproc Metastore has promoted one-shot migration commands to General Availability. Additionally, support for incremental sync migrations is now in public preview."
+        }
+      },
+      {
+        "kind": "Design Center",
+        "content": "* Added `gcloud design-center spaces application-templates export` command to export IaC for an application template.\n* Added `gcloud design-center spaces application-templates revisions export` command to export IaC for an application template revision.\n* Added `--input-variable-aliases`, `--add-input-variable-aliases`,\n  `--clear-input-variable-aliases`, and `--remove-input-variable-aliases` flags\n  to `gcloud design-center components update` to manage input variable aliases.",
+        "summary": {
+          "title": "Design Center: Export IaC and Manage Aliases",
+          "summary": "New commands allow exporting Infrastructure as Code for application templates and their revisions. Additionally, flags have been introduced to `gcloud design-center components update` for managing input variable aliases."
+        }
+      },
+      {
+        "kind": "Developer Knowledge",
+        "content": "* # Release notes for developer\\_knowledge component.",
+        "summary": {
+          "title": "Developer Knowledge Release Notes",
+          "summary": "This is a release announcement for the developer_knowledge component. It provides updates and changes related to this component."
+        }
+      }
+    ]
+  }
+}

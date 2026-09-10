@@ -1,6 +1,16 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-09-09": [
+      {
+        "kind": "Feature",
+        "content": "**SemanticCacheLookup policy supports non-default Vector Search distance measures**\n\nAvailable in Apigee `1-18-0-apigee-4` and later. A new optional\n`<DistanceMeasureType>` element accepts `DOT_PRODUCT_DISTANCE` (the\ndefault, and the existing behavior), `COSINE_DISTANCE`,\n`SQUARED_L2_DISTANCE` and `L1_DISTANCE`. The policy now compares\n`<Threshold>` in the direction the declared measure implies, so declaring a\nnon-default measure requires re-tuning the threshold in the same edit. The 0-to-1 restriction on\n`<Threshold>` is also removed.",
+        "summary": {
+          "title": "Vector Search Distance Measures Enhanced",
+          "summary": "The SemanticCacheLookup policy now supports multiple distance measures for Vector Search, including DOT_PRODUCT_DISTANCE, COSINE_DISTANCE, SQUARED_L2_DISTANCE, and L1_DISTANCE. This update allows for more flexible similarity comparisons and removes the previous 0-to-1 restriction on the Threshold element."
+        }
+      }
+    ],
     "2026-08-27": [
       {
         "kind": "Announcement",
@@ -12,10 +22,10 @@
       },
       {
         "kind": "Fixed",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **507878328** | Upgraded the Apigee runtime to run on JDK 17, while maintaining backward compatibility with JDK 11. |\n| **530965355** | Added an opt-in Message Processor connection-failure back-off (CWC property HTTPClient.backoff.enabled, defaults to false) that prevents the Message Processor from consuming excessive CPU when a target is completely unavailable. |\n| **532793298** | Fixed an API product bug where combining a payloadOperationGroup with a REST or llmOperationGroup rejected REST/LLM traffic with a 401. |\n| **534420582** | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |\n| **N/A** | Updates to infrastructure and libraries. |",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **507878328** | Upgraded the Apigee runtime to run on JDK 17, while maintaining backward compatibility with JDK 11. |\n| **530965355** | Added an opt-in Message Processor connection-failure back-off (CWC property HTTPClient.backoff.enabled, defaults to false) that prevents the Message Processor from consuming excessive CPU when a target is completely unavailable. |\n| **532793298** | Fixed an API product bug where combining a payloadOperationGroup with a REST or llmOperationGroup rejected REST/LLM traffic with a 401. |\n| **534420582** | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |\n| **N/A** | Updates to infrastructure and libraries. |\n\nThis list is incomplete; see entry for\n[September 9, 2026](#September_09_2026).",
         "summary": {
-          "title": "Apigee Runtime and Policy Fixes",
-          "summary": "The Apigee runtime has been upgraded to JDK 17, with backward compatibility for JDK 11. This release includes several fixes and improvements, such as an opt-in back-off mechanism for Message Processors, a fix for API product bugs with operation groups, and enhanced JSON threat protection with duplicate key rejection. Updates to infrastructure and libraries have also been applied."
+          "title": "Runtime and Security Enhancements",
+          "summary": "This release includes an upgrade to JDK 17 for the Apigee runtime, improved handling of target connection failures, and fixes for API product and JSON threat protection policies. Updates to infrastructure and libraries are also included."
         }
       },
       {

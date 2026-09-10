@@ -12,6 +12,54 @@
     <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-09:feature:0</id>
     <published>2026-09-09T00:00:00+00:00</published>
     <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Computer Use and Shell sandboxes are generally available</strong></p>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/computer-use">Computer Use</a> and Shell sandboxes in Gemini Enterprise Agent Platform are now generally available (GA). This release also includes the following new features for Agent Platform sandboxes:</p>
+<ul>
+<li><strong>Shell sandboxes</strong>: Run untrusted shell commands, install packages, and manipulate files in an isolated Linux container using direct API <code>/exec</code> calls. For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/shell-sandbox-quickstart">Shell sandbox quickstart</a>.</li>
+<li><strong>VPC Service Controls &amp; Private Service Connect</strong>: Protect sandbox data and isolate network boundaries with VPC Service Controls, private ingress endpoints (PSC-E), and private egress routing (PSC-I). For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/configure-vpc-sc">Configure VPC Service Controls and Private Service Connect with sandboxes</a>.</li>
+<li><strong>Customer-Managed Encryption Keys (CMEK)</strong>: Protect sandbox data at rest, including disk storage and snapshot checkpoints, using Cloud KMS keys. For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/configure-cmek">Configure customer-managed encryption keys (CMEK) for sandboxes</a>.</li>
+<li><strong>Pausing and resuming sandboxes</strong>: Deschedule compute resources for idle sandboxes while preserving file system state and connection identity, and resume them in seconds. For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/manage-sandboxes#pause-a-sandbox">Manage sandboxes</a>.</li>
+</ul>]]></content>
+    <summary>New features for Computer Use and Shell sandboxes in Gemini Enterprise Agent Platform are now generally available. This includes enhanced security with VPC Service Controls and CMEK, alongside new capabilities like pausing and resuming sandboxes.</summary>
+    <title>Feature: Sandbox features now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-09:feature:1</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Priority PayGo now supports the US and EU multi-region endpoints</strong></p>
+<p>You can send Priority PayGo requests to the <code>us</code> and <code>eu</code> multi-region
+endpoints, in addition to the <code>global</code> endpoint.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/priority-paygo">Priority PayGo</a>.</p>]]></content>
+    <summary>Priority PayGo now offers expanded endpoint support, allowing requests to be sent to the US and EU multi-region endpoints in addition to the global endpoint. This enhancement provides greater flexibility for users managing their AI model usage.</summary>
+    <title>Feature: Priority PayGo supports US and EU endpoints</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-09:feature:2</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Agent Gateway supports multiple Agent Registry instances</strong></p>
+<p>Agent Gateway now lets you associate up to two Agent Registry instances (one
+global registry and one regional or multi-region registry) with a single Agent
+Gateway instance. For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-agent-gateway#agent-registry">Register your agents and
+destination
+resources</a>.</p>]]></content>
+    <summary>Agent Gateway now allows association with up to two Agent Registry instances, including a global registry and a regional or multi-region registry. This enhancement provides greater flexibility in managing your agents and destination resources.</summary>
+    <title>Feature: Agent Gateway Supports Multiple Registries</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-09:feature:3</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Agent Gateway supports VPC Service Controls</strong></p>
 <p>Agent Gateway now enforces VPC Service Controls perimeter rules for agent
 communications. When you <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-vpc-connectivity">configure Agent Gateway with VPC
@@ -65,28 +113,7 @@ page</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:deferred tier for autonomous agent scheduling (preview):1</id>
-    <published>2026-09-02T00:00:00+00:00</published>
-    <updated>2026-09-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <em>deferred tier</em> is available in Preview. The deferred tier automatically
-queues non-latency-sensitive background agent workloads and schedules them to
-execute during off-peak hours.</p>
-<p>Key capabilities and benefits include:</p>
-<ul>
-<li><strong>50% token discount</strong>: Receive a 50% discount on consumed tokens for deferred workloads.</li>
-<li><strong>Reduced rate limiting</strong>: Mitigate resource exhaustion (429) errors and infrastructure pressure during long-running background tasks.</li>
-<li><strong>Supported agents</strong>:</li>
-<li><strong>Deep Research Agent</strong>: Pass <code>service_tier="deferred"</code> in the Python SDK or <code>"service_tier": "deferred"</code> in REST API interaction requests.</li>
-</ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling">Autonomous agent scheduling</a>.</p>]]></content>
-    <summary>A new deferred tier for agent scheduling is now in Preview. This tier automatically queues non-latency-sensitive background agent workloads and schedules them for execution during off-peak hours, offering a 50% token discount and reduced rate limiting. The Deep Research Agent is supported for this tier.</summary>
-    <title>Deferred tier for autonomous agent scheduling (Preview): Deferred tier for agent scheduling available</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:fixed:2</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:fixed:1</id>
     <published>2026-09-02T00:00:00+00:00</published>
     <updated>2026-09-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>CodeMender updates</strong></p>
@@ -103,6 +130,28 @@ execute during off-peak hours.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
     <summary>CodeMender now offers machine-readable metrics and session drill-down capabilities. This release also includes several bug fixes to improve reliability and user experience.</summary>
     <title>Fixed: CodeMender updates and fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:feature:2</id>
+    <published>2026-09-02T00:00:00+00:00</published>
+    <updated>2026-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Deferred tier for autonomous agent scheduling (Preview)</strong></p>
+<p>The <em>deferred tier</em> is available in Preview. The deferred tier automatically
+queues non-latency-sensitive background agent workloads and schedules them to
+execute during off-peak hours.</p>
+<p>Key capabilities and benefits include:</p>
+<ul>
+<li><strong>50% token discount</strong>: Receive a 50% discount on consumed tokens for deferred workloads.</li>
+<li><strong>Reduced rate limiting</strong>: Mitigate resource exhaustion (429) errors and infrastructure pressure during long-running background tasks.</li>
+<li><strong>Supported agents</strong>:</li>
+<li><strong>Deep Research Agent</strong>: Pass <code>service_tier="deferred"</code> in the Python SDK or <code>"service_tier": "deferred"</code> in REST API interaction requests.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling">Autonomous agent scheduling</a>.</p>]]></content>
+    <summary>A new deferred tier for autonomous agents automatically queues non-latency-sensitive background workloads and schedules them for off-peak execution. This offers a 50% token discount and reduced rate limiting for supported agents like the Deep Research Agent. This feature is currently in Preview.</summary>
+    <title>Feature: Deferred Tier for Agent Scheduling (Preview)</title>
   </entry>
   <entry>
     <author>

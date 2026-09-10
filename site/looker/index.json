@@ -1,6 +1,16 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-09-09": [
+      {
+        "kind": "Deprecated",
+        "content": "The deprecation of the [Looker Mobile (Legacy) application](https://docs.cloud.google.com/looker/docs/mobile-app-legacy) has been postponed to January 31, 2027. Starting on January 31, 2027, support for the Looker Mobile (Legacy) app will be discontinued and the app will be unavailable for download from the App Store or Play Store. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy [Looker mobile app](https://docs.cloud.google.com/looker/docs/mobile-app-installation).",
+        "summary": {
+          "title": "Looker Mobile (Legacy) App Deprecation Postponed",
+          "summary": "The deprecation of the Looker Mobile (Legacy) application has been postponed to January 31, 2027. After this date, support will be discontinued and the app will be unavailable for download. Users are encouraged to switch to the non-legacy Looker mobile app."
+        }
+      }
+    ],
     "2026-09-04": [
       {
         "kind": "Announcement",
@@ -231,11 +241,19 @@
     ],
     "2026-08-31": [
       {
-        "kind": "Deprecated",
-        "content": "The [Looker Mobile (Legacy) application](https://docs.cloud.google.com/looker/docs/mobile-app-legacy) is no longer available for download from the App Store or Play Store and support for the app has been discontinued. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy [Looker mobile app](https://docs.cloud.google.com/looker/docs/mobile-app-installation).",
+        "kind": "Announcement",
+        "content": "[Localized data processing](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#eu-ca-compliance) for European Union (EU)-based customers now applies to all Conversational Analytics data agents, including agents that are associated with Looker Explores, user-defined dashboards, and LookML dashboards. This support means that localized data processing now applies to [all Conversational Analytics in Looker features](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#key-features).\n\n**Note:** This item was added September 9, 2026.",
         "summary": {
-          "title": "Looker Mobile (Legacy) App Discontinued",
-          "summary": "The Looker Mobile (Legacy) application is no longer available for download or support. While existing installations will continue to function, users are encouraged to migrate to the current Looker mobile app."
+          "title": "Conversational Analytics data processing updated for EU customers",
+          "summary": "Localized data processing for European Union customers now extends to all Conversational Analytics data agents, including those linked to Looker Explores and various dashboard types. This update ensures that all Conversational Analytics features in Looker benefit from localized data processing."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "The [Looker Mobile (Legacy) application](https://docs.cloud.google.com/looker/docs/mobile-app-legacy) is no longer available for download from the App Store or Play Store and support for the app has been discontinued. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy [Looker mobile app](https://docs.cloud.google.com/looker/docs/mobile-app-installation).\n\n**Note:** The deprecation of the Looker Mobile (Legacy) application has been postponed to January 31, 2027. This item was updated on September 9, 2026.",
+        "summary": {
+          "title": "Looker Mobile (Legacy) App Deprecated",
+          "summary": "The Looker Mobile (Legacy) application is no longer available for download and support has been discontinued. While existing installations will continue to function, we advise migrating to the current Looker mobile app. The deprecation is now scheduled for January 31, 2027."
         }
       }
     ],
@@ -262,6 +280,14 @@
         "summary": {
           "title": "Verified Queries Now Generally Available",
           "summary": "Verified queries, also known as golden queries, are now generally available. You can now define verified queries directly within your Looker instances, streamlining your data analysis workflow."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import\\_locale\\_defs: yesstatement to thelocalization\\_settings parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.\n\n**Note:** This item was added on August 31, 2026 and changed from a non-breaking change to a feature on September 9, 2026.",
+        "summary": {
+          "title": "Model localization for imported projects now in preview",
+          "summary": "Model localization is now available in preview for imported projects. You can merge locale definitions from importing projects by setting \"import_locale_defs: yes\" in your manifest file. This allows for more flexible localization management across your LookML models."
         }
       },
       {
@@ -334,14 +360,6 @@
         "summary": {
           "title": "Database connection parameter updates",
           "summary": "Looker now restricts certain JDBC parameters for enhanced security. You can find the updated list of supported parameters in the database configuration instructions for your specific dialect."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (`looker-sdk`). For configuration steps and sample scripts, see the [Admin settings - Continuous Integration](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations) documentation.",
-        "summary": {
-          "title": "Automate Looker deployments with CI",
-          "summary": "You can now automate Looker deployments using your preferred CI/CD tools like GitLab CI, Bitbucket Pipelines, and GitHub Actions. This integration leverages the Looker API and the official Python SDK, allowing for smoother and more efficient development workflows."
         }
       },
       {

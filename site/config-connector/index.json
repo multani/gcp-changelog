@@ -1,6 +1,48 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-09-08": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.156.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.156.0 Released",
+          "summary": "The latest version of Config Connector, 1.156.0, has been released. This update brings new features and improvements to the tool."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `CCInsightsQAScorecard`\n\n  + Manage [Contact Center Insights QA scorecards](https://cloud.google.com/contact-center/insights/docs) to manage and evaluate agent performance.\n* `ContentWarehouseSynonymSet`\n\n  + Manage [Document AI Warehouse Synonym Sets](https://cloud.google.com/document-ai-warehouse/docs) to manage custom synonym groups for searches.\n* `DevConnectAccountConnector`\n\n  + Manage [Developer Connect Account Connectors](https://cloud.google.com/developer-connect/docs) to connect GKE clusters to developer systems.\n* `DiscoveryEngineEngine`\n\n  + Manage [Discovery Engine search engines](https://cloud.google.com/generative-ai-app-builder/docs) to power search experiences.\n* `DiscoveryEngineServingConfig`\n\n  + Manage [Discovery Engine serving configurations](https://cloud.google.com/generative-ai-app-builder/docs) to control search, recommendation, and listing features.\n* `GKEHubFleet`\n\n  + Manage [GKE Hub Fleets](https://cloud.google.com/anthos/multicluster-management/connect/docs) to logically group and manage clusters.\n* `ModelArmorTemplate`\n\n  + Manage [Model Armor templates](https://cloud.google.com/model-armor/docs) to define safety and security policies for large language models.\n* `NetworkSecurityAuthzPolicy`\n\n  + Manage [Network Security Authorization Policies](https://cloud.google.com/traffic-director/docs/security-authz-policy) to authorize traffic.\n* `RapidMigrationAssessmentCollector`\n\n  + Manage [Rapid Migration Assessment collectors](https://cloud.google.com/migration-center/docs/rma) to gather environment discovery data for cloud migration.\n* `SecurityCenterManagementEventThreatDetectionCustomModule`\n\n  + Manage [Security Command Center event threat detection custom modules](https://cloud.google.com/security-command-center/docs) to customize threat detection.\n* `StorageInsightsDatasetConfig`\n\n  + Manage [Cloud Storage Insights dataset configurations](https://cloud.google.com/storage/docs/insights) to automatically inventory and analyze storage datasets.\n* `VectorSearchCollection`\n\n  + Manage [Vertex AI Vector Search collections](https://cloud.google.com/vertex-ai/docs/vector-search) to manage similarity search indexes.",
+        "summary": {
+          "title": "New Alpha Resources Available",
+          "summary": "Several new alpha resources are now available for managing various aspects of your cloud environment. These include tools for agent performance evaluation, search customization, cluster management, AI model security, and storage insights. Explore these new features to enhance your cloud operations and data management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`BigtableTable`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigtable/bigtabletable)\n\n  + Added `spec.automatedBackupPolicy.locations` field.\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n\n  + Added `spec.nodeConfig.swapConfig` field.\n* [`ContainerNodePool`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool)\n\n  + Added `spec.nodeConfig.swapConfig` field.\n* [`DataprocCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/dataproc/dataproccluster)\n\n  + Added `spec.secondaryWorkerConfig.instanceFlexibilityPolicy` field.\n* [`NetworkSecurityFirewallEndpoint`](https://cloud.google.com/config-connector/docs/reference/resource-docs/networksecurity/networksecurityfirewallendpoint)\n\n  + Added `spec.organizationRef` field to support organizing resources at the organization level, and made `spec.projectRef` optional.",
+        "summary": {
+          "title": "New fields for several resources",
+          "summary": "We've added new fields to BigtableTable, ContainerCluster, ContainerNodePool, DataprocCluster, and NetworkSecurityFirewallEndpoint resources. These updates enhance configuration flexibility and organization options for your cloud resources."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Features:\n\n* **Optional NAT IP Allocate Option**: Made `natIpAllocateOption` an optional field in `ComputeRouterNat` to support dynamic allocation.\n* **Preview Summary CLI Improvements**: Added namespace and current status to the preview summary report.",
+        "summary": {
+          "title": "Router NAT and Preview Summary Updates",
+          "summary": "We've updated Compute Router NAT to support dynamic IP allocation by making `natIpAllocateOption` optional. Additionally, the preview summary report now includes namespace and current status for better clarity."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Reconciliation Improvements:\n\nWe have added support for direct reconciliation to more resources, with opt-in behavior. The API is unchanged. To use the direct reconciler, add the `alpha.cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:\n\n* `VertexAITensorboard`\n  + Support direct reconciliation (opt-in).",
+        "summary": {
+          "title": "Reconciliation Improvements",
+          "summary": "Direct reconciliation is now supported for more resources, including Vertex AI Tensorboard. This feature is opt-in and can be enabled by adding an annotation to your Config Connector objects. The API remains the same."
+        }
+      }
+    ],
     "2026-08-20": [
       {
         "kind": "Announcement",

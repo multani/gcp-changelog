@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-09-04T00:00:00+00:00</updated>
+  <updated>2026-09-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-09-09:deprecated:0</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The deprecation of the <a href="https://docs.cloud.google.com/looker/docs/mobile-app-legacy">Looker Mobile (Legacy) application</a> has been postponed to January 31, 2027. Starting on January 31, 2027, support for the Looker Mobile (Legacy) app will be discontinued and the app will be unavailable for download from the App Store or Play Store. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy <a href="https://docs.cloud.google.com/looker/docs/mobile-app-installation">Looker mobile app</a>.</p>]]></content>
+    <summary>The deprecation of the Looker Mobile (Legacy) application has been postponed to January 31, 2027. After this date, support will be discontinued and the app will be unavailable for download. Users are encouraged to switch to the non-legacy Looker mobile app.</summary>
+    <title>Deprecated: Looker Mobile (Legacy) App Deprecation Postponed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -322,12 +333,25 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-31:deprecated:0</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-31:announcement:0</id>
     <published>2026-08-31T00:00:00+00:00</published>
     <updated>2026-08-31T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/mobile-app-legacy">Looker Mobile (Legacy) application</a> is no longer available for download from the App Store or Play Store and support for the app has been discontinued. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy <a href="https://docs.cloud.google.com/looker/docs/mobile-app-installation">Looker mobile app</a>.</p>]]></content>
-    <summary>The Looker Mobile (Legacy) application is no longer available for download or support. While existing installations will continue to function, users are encouraged to migrate to the current Looker mobile app.</summary>
-    <title>Deprecated: Looker Mobile (Legacy) App Discontinued</title>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#eu-ca-compliance">Localized data processing</a> for European Union (EU)-based customers now applies to all Conversational Analytics data agents, including agents that are associated with Looker Explores, user-defined dashboards, and LookML dashboards. This support means that localized data processing now applies to <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#key-features">all Conversational Analytics in Looker features</a>.</p>
+<p><strong>Note:</strong> This item was added September 9, 2026.</p>]]></content>
+    <summary>Localized data processing for European Union customers now extends to all Conversational Analytics data agents, including those linked to Looker Explores and various dashboard types. This update ensures that all Conversational Analytics features in Looker benefit from localized data processing.</summary>
+    <title>Announcement: Conversational Analytics data processing updated for EU customers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-31:deprecated:1</id>
+    <published>2026-08-31T00:00:00+00:00</published>
+    <updated>2026-08-31T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/mobile-app-legacy">Looker Mobile (Legacy) application</a> is no longer available for download from the App Store or Play Store and support for the app has been discontinued. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy <a href="https://docs.cloud.google.com/looker/docs/mobile-app-installation">Looker mobile app</a>.</p>
+<p><strong>Note:</strong> The deprecation of the Looker Mobile (Legacy) application has been postponed to January 31, 2027. This item was updated on September 9, 2026.</p>]]></content>
+    <summary>The Looker Mobile (Legacy) application is no longer available for download and support has been discontinued. While existing installations will continue to function, we advise migrating to the current Looker mobile app. The deprecation is now scheduled for January 31, 2027.</summary>
+    <title>Deprecated: Looker Mobile (Legacy) App Deprecated</title>
   </entry>
   <entry>
     <author>
@@ -369,6 +393,18 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:3</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import_locale_defs: yesstatement to thelocalization_settings parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>
+<p><strong>Note:</strong> This item was added on August 31, 2026 and changed from a non-breaking change to a feature on September 9, 2026.</p>]]></content>
+    <summary>Model localization is now available in preview for imported projects. You can merge locale definitions from importing projects by setting "import_locale_defs: yes" in your manifest file. This allows for more flexible localization management across your LookML models.</summary>
+    <title>Feature: Model localization for imported projects now in preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:4</id>
+    <published>2026-08-28T00:00:00+00:00</published>
+    <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now configure Continuous Integration to automatically <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#dbt-trigger">run CI suites when a dbt Cloud CI job finishes</a>. The CI suite run verifies whether changes in your dbt models will cause SQL errors in your Looker Explores before the dbt changes are deployed.</p>]]></content>
     <summary>You can now automatically run CI suites when a dbt Cloud CI job finishes. This feature verifies if your dbt model changes will cause SQL errors in Looker Explores before deployment. It helps ensure data integrity and prevent deployment issues.</summary>
     <title>Feature: Automated CI suite for dbt Cloud</title>
@@ -377,7 +413,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:5</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, the <strong>New/Edit Roles Enhancement</strong> feature provides a modernized, step-by-step interface for <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#creating-editing-roles-enhancement">creating and editing roles</a> on the <strong>Roles</strong> page in the <strong>Users</strong> section of the Admin panel.</p>]]></content>
@@ -388,7 +424,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:6</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, you can define and chat with <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-lookml-dashboards">data agents on a LookML dashboard</a>. To use this feature, the <strong>Conversational Analytics</strong> and <strong>Enable Dashboard Agents</strong> settings must be enabled on the <strong>Gemini in Looker</strong> Admin page.</p>]]></content>
@@ -399,7 +435,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:7</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>, you can define Looker-managed, in-database analytic models directly from existing LookML Explores by using the <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#model_source"><code>model_source</code></a> subparameter of the <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model"><code>derived_analytic_model</code></a> parameter. Looker automatically translates your Explore topology, joins that are defined with <code>foreign_key</code>, dimensions, and measures into in-database analytic models (such as BigQuery Graphs or Snowflake semantic views).</p>
@@ -411,7 +447,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:8</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <strong>Google Maps Enhancements</strong> preview feature now includes the following features:</p>
@@ -424,7 +460,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:8</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:9</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When the <strong>New Looker Explore</strong> and <strong>Merge Query Experience</strong> preview features are enabled, <a href="https://docs.cloud.google.com/looker/docs/merge-queries-new-explore">editing a merge query tile on a dashboard</a> now opens the <strong>Join data</strong> page directly within the dashboard edit canvas, rather than opening a new tab.</p>]]></content>
@@ -435,7 +471,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:9</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:10</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage">Conversational Analytics System Activity dashboard <strong>Token usage</strong> tab</a> now includes observability information about top users and top conversations by token usage. The tab also now indicates the type of data agent in its observability metrics.</p>]]></content>
@@ -446,7 +482,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:11</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import_locale_defs: yesstatement to thelocalization_settings parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>
@@ -458,23 +494,12 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:12</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When connecting Looker to your database, you can specify <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters">additional Java Database Connectivity (JDBC) parameters</a>. To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the "Supported JDBC parameters" section of the <a href="https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions">database configuration instructions</a> page for your dialect.</p>]]></content>
     <summary>Looker now restricts certain JDBC parameters for enhanced security. You can find the updated list of supported parameters in the database configuration instructions for your specific dialect.</summary>
     <title>Change: Database connection parameter updates</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:12</id>
-    <published>2026-08-28T00:00:00+00:00</published>
-    <updated>2026-08-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (<code>looker-sdk</code>). For configuration steps and sample scripts, see the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations">Admin settings - Continuous Integration</a> documentation.</p>]]></content>
-    <summary>You can now automate Looker deployments using your preferred CI/CD tools like GitLab CI, Bitbucket Pipelines, and GitHub Actions. This integration leverages the Looker API and the official Python SDK, allowing for smoother and more efficient development workflows.</summary>
-    <title>Change: Automate Looker deployments with CI</title>
   </entry>
   <entry>
     <author>

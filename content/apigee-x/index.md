@@ -1,5 +1,20 @@
 # Apigee X
 
+## 2026-09-09
+
+### Feature
+
+**SemanticCacheLookup policy supports non-default Vector Search distance measures**
+
+Available in Apigee `1-18-0-apigee-4` and later. A new optional
+`<DistanceMeasureType>` element accepts `DOT_PRODUCT_DISTANCE` (the
+default, and the existing behavior), `COSINE_DISTANCE`,
+`SQUARED_L2_DISTANCE` and `L1_DISTANCE`. The policy now compares
+`<Threshold>` in the direction the declared measure implies, so declaring a
+non-default measure requires re-tuning the threshold in the same edit. The 0-to-1 restriction on
+`<Threshold>` is also removed.
+
+---
 ## 2026-08-27
 
 ### Announcement
@@ -17,6 +32,9 @@ On August 27th, 2026, we released an updated version of Apigee (1-18-0-apigee-4)
 | **532793298** | Fixed an API product bug where combining a payloadOperationGroup with a REST or llmOperationGroup rejected REST/LLM traffic with a 401. |
 | **534420582** | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |
 | **N/A** | Updates to infrastructure and libraries. |
+
+This list is incomplete; see entry for
+[September 9, 2026](#September_09_2026).
 
 ### Security
 

@@ -4,6 +4,36 @@
 
 ### Feature
 
+**Computer Use and Shell sandboxes are generally available**
+
+[Computer Use](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/computer-use) and Shell sandboxes in Gemini Enterprise Agent Platform are now generally available (GA). This release also includes the following new features for Agent Platform sandboxes:
+
+* **Shell sandboxes**: Run untrusted shell commands, install packages, and manipulate files in an isolated Linux container using direct API `/exec` calls. For more information, see the [Shell sandbox quickstart](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/shell-sandbox-quickstart).
+* **VPC Service Controls & Private Service Connect**: Protect sandbox data and isolate network boundaries with VPC Service Controls, private ingress endpoints (PSC-E), and private egress routing (PSC-I). For more information, see [Configure VPC Service Controls and Private Service Connect with sandboxes](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/configure-vpc-sc).
+* **Customer-Managed Encryption Keys (CMEK)**: Protect sandbox data at rest, including disk storage and snapshot checkpoints, using Cloud KMS keys. For more information, see [Configure customer-managed encryption keys (CMEK) for sandboxes](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/configure-cmek).
+* **Pausing and resuming sandboxes**: Deschedule compute resources for idle sandboxes while preserving file system state and connection identity, and resume them in seconds. For more information, see [Manage sandboxes](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/sandbox/manage-sandboxes#pause-a-sandbox).
+
+### Feature
+
+**Priority PayGo now supports the US and EU multi-region endpoints**
+
+You can send Priority PayGo requests to the `us` and `eu` multi-region
+endpoints, in addition to the `global` endpoint.
+
+For more information, see [Priority PayGo](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/priority-paygo).
+
+### Feature
+
+**Agent Gateway supports multiple Agent Registry instances**
+
+Agent Gateway now lets you associate up to two Agent Registry instances (one
+global registry and one regional or multi-region registry) with a single Agent
+Gateway instance. For more information, see [Register your agents and
+destination
+resources](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-agent-gateway#agent-registry).
+
+### Feature
+
 **Agent Gateway supports VPC Service Controls**
 
 Agent Gateway now enforces VPC Service Controls perimeter rules for agent
@@ -49,21 +79,6 @@ now generally available (GA) and available for production use.
 For more information on 3.8 Flash, see the [model
 page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash).
 
-### Deferred tier for autonomous agent scheduling (Preview)
-
-The *deferred tier* is available in Preview. The deferred tier automatically
-queues non-latency-sensitive background agent workloads and schedules them to
-execute during off-peak hours.
-
-Key capabilities and benefits include:
-
-* **50% token discount**: Receive a 50% discount on consumed tokens for deferred workloads.
-* **Reduced rate limiting**: Mitigate resource exhaustion (429) errors and infrastructure pressure during long-running background tasks.
-* **Supported agents**:
-  + **Deep Research Agent**: Pass `service_tier="deferred"` in the Python SDK or `"service_tier": "deferred"` in REST API interaction requests.
-
-For more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).
-
 ### Fixed
 
 **CodeMender updates**
@@ -79,6 +94,23 @@ This release introduces updates to CodeMender:
   + Prevented erroneous verification verdicts when workspace reset fails.
 
 For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
+### Feature
+
+**Deferred tier for autonomous agent scheduling (Preview)**
+
+The *deferred tier* is available in Preview. The deferred tier automatically
+queues non-latency-sensitive background agent workloads and schedules them to
+execute during off-peak hours.
+
+Key capabilities and benefits include:
+
+* **50% token discount**: Receive a 50% discount on consumed tokens for deferred workloads.
+* **Reduced rate limiting**: Mitigate resource exhaustion (429) errors and infrastructure pressure during long-running background tasks.
+* **Supported agents**:
+  + **Deep Research Agent**: Pass `service_tier="deferred"` in the Python SDK or `"service_tier": "deferred"` in REST API interaction requests.
+
+For more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).
 
 ---
 ## 2026-09-01

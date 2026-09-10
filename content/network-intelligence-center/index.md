@@ -1,5 +1,14 @@
 # Network Intelligence Center
 
+## 2026-09-09
+
+### Feature
+
+You can deploy Monitoring Points optimized for [Amazon Web Services (AWS)](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/deploy-aws-monitoring-points)
+or [Microsoft Azure](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/deploy-azure-monitoring-points)
+cloud infrastructure from [Cloud Network Insights](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/).
+
+---
 ## 2026-08-12
 
 ### Feature

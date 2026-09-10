@@ -1,5 +1,19 @@
 # Identity and Access Management
 
+## 2026-09-09
+
+### Feature
+
+You can get IAM role suggestions from Gemini
+programmatically by using the Policy Assist API
+([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+For more information, see the following documentation:
+
+* [Get predefined role suggestions with Gemini assistance](https://docs.cloud.google.com/iam/docs/role-picker-gemini)
+* [Policy Assist REST reference](https://docs.cloud.google.com/policy-intelligence/docs/reference/policyassist/rest)
+
+---
 ## 2026-08-22
 
 ### Feature

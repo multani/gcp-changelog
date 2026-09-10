@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-09-09
+
+### Deprecated
+
+The deprecation of the [Looker Mobile (Legacy) application](https://docs.cloud.google.com/looker/docs/mobile-app-legacy) has been postponed to January 31, 2027. Starting on January 31, 2027, support for the Looker Mobile (Legacy) app will be discontinued and the app will be unavailable for download from the App Store or Play Store. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy [Looker mobile app](https://docs.cloud.google.com/looker/docs/mobile-app-installation).
+
+---
 ## 2026-09-04
 
 ### Announcement
@@ -125,9 +132,17 @@ OpenJDK 11 will no longer be supported as of **January 14, 2027**. Customer-host
 ---
 ## 2026-08-31
 
+### Announcement
+
+[Localized data processing](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#eu-ca-compliance) for European Union (EU)-based customers now applies to all Conversational Analytics data agents, including agents that are associated with Looker Explores, user-defined dashboards, and LookML dashboards. This support means that localized data processing now applies to [all Conversational Analytics in Looker features](https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#key-features).
+
+**Note:** This item was added September 9, 2026.
+
 ### Deprecated
 
 The [Looker Mobile (Legacy) application](https://docs.cloud.google.com/looker/docs/mobile-app-legacy) is no longer available for download from the App Store or Play Store and support for the app has been discontinued. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy [Looker mobile app](https://docs.cloud.google.com/looker/docs/mobile-app-installation).
+
+**Note:** The deprecation of the Looker Mobile (Legacy) application has been postponed to January 31, 2027. This item was updated on September 9, 2026.
 
 ---
 ## 2026-08-28
@@ -143,6 +158,12 @@ The [**Advanced Unused Content Cleanup**](https://docs.cloud.google.com/looker/d
 ### Feature
 
 Conversational Analytics [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries), also known as *golden queries*, are now generally available. You can also now define verified queries in Looker (Google Cloud core) instances.
+
+### Feature
+
+Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import\_locale\_defs: yesstatement to thelocalization\_settings parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.
+
+**Note:** This item was added on August 31, 2026 and changed from a non-breaking change to a feature on September 9, 2026.
 
 ### Feature
 
@@ -186,10 +207,6 @@ Now available in preview, model localization is supported for imported projects.
 ### Change
 
 When connecting Looker to your database, you can specify [additional Java Database Connectivity (JDBC) parameters](https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters). To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the "Supported JDBC parameters" section of the [database configuration instructions](https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions) page for your dialect.
-
-### Change
-
-Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (`looker-sdk`). For configuration steps and sample scripts, see the [Admin settings - Continuous Integration](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations) documentation.
 
 ### Fixed
 

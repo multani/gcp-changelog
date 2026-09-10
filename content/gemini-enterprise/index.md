@@ -1,5 +1,35 @@
 # Gemini Enterprise
 
+## 2026-09-09
+
+### Breaking
+
+**Gemini Notebook Enterprise: Website URL ingestion blocked by VPC Service Controls**
+
+Projects with VPC Service Controls enabled can't add website URLs as
+notebook sources in Gemini Notebook Enterprise.
+
+This is because direct website
+ingestion performs a live web crawl, generating outbound traffic beyond Google
+networks, which would violate VPC Service Controls perimeter policies.
+
+Other source types, such as Google Docs and YouTube URLs, remain supported in
+projects with VPC Service Controls enabled.
+
+### Feature
+
+**Gemini Enterprise: Configure custom actions and custom fields in data stores (Private preview)**
+
+Gemini Enterprise supports custom fields and custom entities for data store search and actions.
+You can do the following:
+
+* **Configure custom actions:** Generate and enable custom actions based on your data store's custom entities.
+* **Modify custom field descriptions:** Modify the descriptions of fields in the downloaded specifications, to provide more context to the model.
+* **Enrich specifications:** Download, modify, and upload the action specification JSON to refine descriptions and provide precise model instructions.
+
+This feature is in [private preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Manage custom actions](https://docs.cloud.google.com/gemini/enterprise/docs/manage-actions#manage-custom-actions).
+
+---
 ## 2026-09-08
 
 ### Feature

@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 584.0.0 (2026-09-09)</title>
+  <subtitle>Changelog for Google Cloud product: 584.0.0 (2026-09-09)</subtitle>
+  <updated>2026-09-09T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/584-0-0--2026-09-09-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:breaking changes:0</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Cloud Storage)</strong> Deprecated <code>gcloud storage buckets anywhere-caches pause</code> command.</li>
+</ul>]]></content>
+    <summary>The 'gcloud storage buckets anywhere-caches pause' command in Cloud Storage has been deprecated. Users should no longer rely on this command for managing anywhere caches.</summary>
+    <title>Breaking Changes: Cloud Storage command deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:google cloud cli:1</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Deprecated <code>minikube</code> component in Google Cloud CLI. The component will be removed after January 31, 2027. Existing local configurations and clusters in <code>~/.minikube</code> will be preserved. Minikube is an open-source project and continues to be actively maintained. To avoid disruptions, please migrate to standard OSS Minikube installations: <a href="https://minikube.sigs.k8s.io/docs/start/">https://minikube.sigs.k8s.io/docs/start/</a>.</li>
+<li>Upgraded OpenSSL version to 3.5.8 in Linux bundled Python to resolve CVE-2026-42508.</li>
+</ul>]]></content>
+    <summary>The minikube component in Google Cloud CLI is deprecated and will be removed after January 31, 2027. Users should migrate to standard OSS Minikube installations to avoid disruptions. Additionally, the OpenSSL version in Linux bundled Python has been upgraded to 3.5.8 to address a security vulnerability.</summary>
+    <title>Google Cloud CLI: Minikube component deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:alloydb:2</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--edition</code> flag in <code>gcloud alloydb clusters create|update</code> for alpha and beta tracks.</li>
+</ul>]]></content>
+    <summary>The AlloyDB team has introduced a new --edition flag for cluster creation and updates. This flag is currently available in alpha and beta tracks, allowing users to specify different editions for their AlloyDB clusters.</summary>
+    <title>AlloyDB: AlloyDB editions flag</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:apigee:3</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud apigee apis delete</code> which deletes an API proxy and all of its
+  revisions. Undeploy every deployed revision first with <code>gcloud apigee apis
+  undeploy</code>.</li>
+</ul>]]></content>
+    <summary>A new command, `gcloud apigee apis delete`, has been introduced to remove API proxies and all their revisions. Ensure all deployed revisions are undeployed first using `gcloud apigee apis undeploy` before executing the delete command.</summary>
+    <title>Apigee: Apigee API Proxy Deletion Command</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:artifact registry:4</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud artifacts files upload</code> which allows user to upload
+  Conda packages to a Conda repository.</li>
+</ul>]]></content>
+    <summary>You can now upload Conda packages to your Conda repositories using the `gcloud artifacts files upload` command. This new feature simplifies the process of managing and distributing your Conda packages within Artifact Registry.</summary>
+    <title>Artifact Registry: Upload Conda Packages to Artifact Registry</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:biglake:5</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--cross-cloud-cache</code> to <code>gcloud biglake iceberg catalogs create</code> and <code>update</code> commands to configure cross-cloud cache per catalog.</li>
+<li>Added <code>--kms-key</code> flag to <code>gcloud biglake iceberg catalogs create</code> and <code>update</code> commands.</li>
+<li>Added <code>--kms-key</code> flag to <code>gcloud biglake delta-sharing catalogs create</code> and <code>update</code> commands.</li>
+</ul>]]></content>
+    <summary>BigLake now supports cross-cloud caching and KMS key configuration for both Iceberg and Delta Sharing catalogs. These updates enhance security and performance for your data catalog management.</summary>
+    <title>BigLake: BigLake Catalog Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:cloud backup dr:6</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud backup-dr auto-protection-policies</code> command group in alpha and beta tracks.</li>
+<li>Added <code>gcloud backup-dr auto-protection-bindings</code> command group in alpha and beta tracks.</li>
+<li>Added <code>gcloud beta backup-dr binding-matching-resources</code> command group to manage Backup and DR BindingMatchingResources.</li>
+</ul>]]></content>
+    <summary>New `gcloud backup-dr` commands for auto-protection policies, auto-protection bindings, and binding-matching resources are now available in alpha and beta. These additions enhance the management capabilities for Backup and DR services.</summary>
+    <title>Cloud Backup DR: New Auto-Protection Commands for Backup and DR</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:cloud firestore:7</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud firestore change-streams</code> commands to beta.</li>
+<li>Promoted search configuration options to GA for <code>gcloud firestore indexes composite create</code>.</li>
+</ul>]]></content>
+    <summary>We're excited to announce that `gcloud firestore change-streams` commands have been promoted to beta. Additionally, search configuration options for `gcloud firestore indexes composite create` are now generally available.</summary>
+    <title>Cloud Firestore: Firestore commands reach new milestones</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:cloud managed kafka:8</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--public-cluster</code> and <code>--allowed-source-ip-ranges</code> flags to GA for <code>gcloud managed-kafka clusters create</code> and <code>gcloud managed-kafka clusters update</code>.</li>
+</ul>]]></content>
+    <summary>We are excited to announce that the `--public-cluster` and `--allowed-source-ip-ranges` flags for creating and updating managed Kafka clusters are now generally available. This release simplifies the process of configuring secure, publicly accessible Kafka clusters.</summary>
+    <title>Cloud Managed Kafka: Managed Kafka Public Clusters Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:cloud memorystore:9</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--tags</code> flag of <code>gcloud redis instance create</code>.</li>
+</ul>]]></content>
+    <summary>You can now use the `--tags` flag when creating Memorystore for Redis instances. This feature allows you to add custom metadata to your Redis instances, making them easier to manage and organize. This can be particularly useful for large deployments or when you need to categorize instances for billing or operational purposes.</summary>
+    <title>Cloud Memorystore: New tag support for Redis instances</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:cloud sql:10</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated 'cloud-sql-proxy' packaged component to use 2.25.4 of the Cloud SQL Proxy.</li>
+</ul>]]></content>
+    <summary>The Cloud SQL Proxy has been updated to version 2.25.4. This update includes the latest improvements and security patches for the proxy component.</summary>
+    <title>Cloud SQL: Cloud SQL Proxy Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:cloud services:11</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>API Keys</strong>: Added <code>--[no-]check-existing-usage</code> flag to <code>gcloud services
+  api-keys update</code> and <code>gcloud services api-keys delete</code> to verify whether
+  the key has recent incompatible traffic before updating or deleting the key
+  (defaults to true).</li>
+</ul>]]></content>
+    <summary>New flags `--[no-]check-existing-usage` are now available for `gcloud services api-keys update` and `gcloud services api-keys delete`. These flags help verify recent key traffic before performing updates or deletions, preventing accidental disruptions.</summary>
+    <title>Cloud Services: API Key Management Enhanced</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:cluster director:12</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue in <code>gcloud cluster-director clusters update</code> help text and documentation where <code>--update-slurm-partitions</code> included an unsupported <code>exclusive</code> flag in examples.</li>
+</ul>]]></content>
+    <summary>Resolved an issue in the Cluster Director update command's help text and documentation. The unsupported 'exclusive' flag has been removed from Slurm partition examples to ensure accurate guidance.</summary>
+    <title>Cluster Director: Cluster Director Update Fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:compute engine:13</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>regex_rewrite</code> support in <code>url_rewrite</code> block to GA for <code>gcloud compute url-maps</code>.</li>
+<li>Added <code>--network-endpoint-group</code> flag to <code>gcloud compute backend-services create</code> command.</li>
+<li>Added <code>--ha-policy-fast-ip-move</code> flag to <code>gcloud compute backend-services create</code> command.</li>
+<li>Added <code>--ha-policy-leader-backend-group</code> and <code>--ha-policy-leader-instance</code> flags to <code>gcloud compute backend-services update</code> command.</li>
+<li>Added <code>--no-graceful-shutdown</code> flag to <code>gcloud compute instance-groups managed stop-instances</code> command across all release tracks.</li>
+<li>Added <code>--no-graceful-shutdown</code> flag to <code>gcloud compute instance-groups managed delete-instances</code> command across all release tracks.</li>
+<li>Added <code>--outlier-detection-*</code> flags to <code>gcloud compute backend-services create</code> and <code>update</code> commands to configure outlier detection settings.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots recover</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots delete</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots describe</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots list</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots set-iam-policy</code> to beta.</li>
+<li>Promoted <code>gcloud compute recoverable-snapshots test-iam-permissions</code> to beta.</li>
+<li>Promoted <code>gcloud compute instances get-vm-extension-state</code> to beta.</li>
+<li>Promoted <code>gcloud compute instances list-vm-extension-states</code> to beta.</li>
+<li>Promoted <code>enable-vpc-scoped-dns</code> sub-argument of <code>--network-interface</code> flag in <code>gcloud compute instances create</code> to GA.</li>
+<li>Promoted <code>enable-vpc-scoped-dns</code> sub-argument of <code>--network-interface</code> flag in <code>gcloud compute instance-templates create</code> to GA.</li>
+<li>Promoted <code>--share-setting</code> flag in <code>gcloud compute reservations update</code> to GA.</li>
+<li>Promoted <code>gcloud compute project-views describe</code> command to GA.</li>
+</ul>]]></content>
+    <summary>New features and updates for Compute Engine users include GA for regex rewrite support in url maps, enhanced backend service configurations, and new beta features for recoverable snapshots and VM extensions. Several flags for managing instances and reservations are now generally available.</summary>
+    <title>Compute Engine: Compute Engine updates for Compute Engine users</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:database migration:14</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for updating connectivity options (<code>--private-connection</code>,
+  <code>--psc-service-attachment</code>, <code>--static-ip-connectivity</code>, and forward SSH flags
+  where supported) in <code>gcloud database-migration connection-profiles update</code>.</li>
+<li>Added <code>--mysql-is-primary-destination</code> flag to <code>gcloud database-migration migration-jobs create</code> command to specify whether the destination for the migration job is a primary instance.</li>
+</ul>]]></content>
+    <summary>You can now update connectivity options for your database migration connection profiles using the `gcloud database-migration connection-profiles update` command. Additionally, a new flag is available for migration job creation to specify if the destination is a primary instance.</summary>
+    <title>Database Migration: Update connection profiles and migration jobs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:dataproc metastore:15</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud metastore services migrations start</code>, <code>describe</code>, <code>list</code>,
+  and <code>delete</code> to GA for one-shot migrations (<code>mode:BACKFILL</code>).</li>
+<li>Added support for <code>INCREMENTAL_SYNC</code> mode in public preview for
+  iceberg migrations.</li>
+</ul>]]></content>
+    <summary>Dataproc Metastore has promoted one-shot migration commands to General Availability. Additionally, support for incremental sync migrations is now in public preview.</summary>
+    <title>Dataproc Metastore: Dataproc Metastore migrations now GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:design center:16</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud design-center spaces application-templates export</code> command to export IaC for an application template.</li>
+<li>Added <code>gcloud design-center spaces application-templates revisions export</code> command to export IaC for an application template revision.</li>
+<li>Added <code>--input-variable-aliases</code>, <code>--add-input-variable-aliases</code>,
+  <code>--clear-input-variable-aliases</code>, and <code>--remove-input-variable-aliases</code> flags
+  to <code>gcloud design-center components update</code> to manage input variable aliases.</li>
+</ul>]]></content>
+    <summary>New commands allow exporting Infrastructure as Code for application templates and their revisions. Additionally, flags have been introduced to `gcloud design-center components update` for managing input variable aliases.</summary>
+    <title>Design Center: Design Center: Export IaC and Manage Aliases</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:584-0-0--2026-09-09-:2026-09-09:developer knowledge:17</id>
+    <published>2026-09-09T00:00:00+00:00</published>
+    <updated>2026-09-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>
+<h1>Release notes for developer_knowledge component.</h1>
+</li>
+</ul>]]></content>
+    <summary>This is a release announcement for the developer_knowledge component. It provides updates and changes related to this component.</summary>
+    <title>Developer Knowledge: Developer Knowledge Release Notes</title>
+  </entry>
+</feed>

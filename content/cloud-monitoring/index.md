@@ -1,5 +1,20 @@
 # Cloud Monitoring
 
+## 2026-09-09
+
+### Feature
+
+A chart on a dashboard can override the dashboard's time-range setting. This
+feature lets you view trends over a long period or metric data with low
+sampling rates alongside charts that show only recent data, and is
+[Generally Available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see the following documents:
+
+* Google Cloud console: [Set a time-range override for a chart or group](https://docs.cloud.google.com/monitoring/charts/chart-view-options#override-dashboard-time-range)
+* API: [Dashboard with an `XyChart` widget that sets a time-range override](https://docs.cloud.google.com/monitoring/dashboards/api-examples#dashboard_with_a_time_range)
+
+---
 ## 2026-09-01
 
 ### Feature

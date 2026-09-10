@@ -2,6 +2,25 @@
 
 ## 2026-09-09
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes 6.12**
+
+Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.
+
+**Important:** The next version of Google Cloud CCaaS could be greater than 6.12.
+
+### Feature
+
+**Cold transfers auto-resume**
+
+When an agent performs a cold transfer, the call now resumes at the moment the
+receiving agent answers the call. The receiving agent no longer needs to
+manually take the caller off hold. This eliminates the silence that previously
+occurred between an agent answering a call and taking the caller off hold.
+
 ### Feature
 
 **Hubspot: Configure Do Not Call by phone number**

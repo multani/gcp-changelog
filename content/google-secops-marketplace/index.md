@@ -1,5 +1,41 @@
 # Google SecOps Marketplace
 
+## 2026-09-09
+
+### Feature
+
+**Google Chronicle**: Version 95.0
+
+* The following new action has been added:
+
+  + **Is Value In Data Table Async**
+
+### Change
+
+**Microsoft 365 Defender**: Version 31.0
+
+* Updated alert tracking logic, extracted alert object metadata, and improved
+  the pagination and timeout handling mechanism in the following connector:
+
+  + **Microsoft 365 Defender - Incidents Connector**
+
+### Change
+
+**Google Chronicle**: Version 95.0
+
+* **Integration**: Improved OAuth 2.0/JWT authentication logging, validation
+  diagnostics, and error messaging.
+
+### Change
+
+**Trend Vision One**: Version 12.0
+
+* Made the `Description` parameter mandatory in the following actions:
+
+  + **Isolate Endpoint**
+  + **Unisolate Endpoint**
+
+---
 ## 2026-09-04
 
 ### Change

@@ -60,18 +60,6 @@ For more information, see
 
 ### Feature
 
-**Gemini Enterprise: New data stores and support for new actions (Preview)**
-
-The following data stores are available in Public Preview in Gemini Enterprise:
-
-* [Relativity](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/relativity)
-* [Streak](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/streak) (actions supported)
-* [Superhuman Mail](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/superhuman-mail)
-
-You can search and read data from these data stores, and perform actions using natural language.
-
-### Feature
-
 **Gemini Enterprise: Create and manage projects**
 
 You can create and manage projects in the Gemini Enterprise web app to build a
@@ -87,6 +75,19 @@ For more information, see the following:
 
 * [Create and manage projects](https://docs.cloud.google.com/gemini/enterprise/docs/projects)
 * [Manage web app features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Preview)**
+
+The following data stores are available in Public Preview in Gemini Enterprise:
+
+* [CoinDesk](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/coindesk)
+* [Relativity](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/relativity)
+* [Streak](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/streak) (actions supported)
+* [Superhuman Mail](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/superhuman-mail)
+
+You can search and read data from these data stores, and perform actions using natural language.
 
 ---
 ## 2026-09-03

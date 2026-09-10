@@ -1,5 +1,12 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-09-10
+
+### Feature
+
+You can configure a Managed Service for Apache Kafka cluster as a public cluster to let client applications connect over the public internet. For more information, see [Connect clients to a public cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/networking-kafka#connect-clients-to-a-public-cluster).
+
+---
 ## 2026-08-27
 
 ### Feature

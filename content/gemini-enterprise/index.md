@@ -1,5 +1,37 @@
 # Gemini Enterprise
 
+## 2026-09-10
+
+### Feature
+
+**Gemini Enterprise: Pay-as-you-go edition and AI developer tools available for all invoiced Cloud Billing accounts**
+
+Subscribing to the Gemini Enterprise Pay-as-you-go edition and accessing AI
+developer tools is available to all projects linked to an
+[invoiced Cloud Billing account](https://docs.cloud.google.com/billing/docs/concepts#billing_account_types).
+Previously, only customers who received an email with the subject line *[Billing
+Update] New Gemini Enterprise overage billing controls launching Aug 17, 2026*
+could access AI developer tools. This restriction no longer applies.
+
+For more information, see:
+
+* [Compare editions of Gemini Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/editions)
+* [AI developer tools overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
+
+### Feature
+
+**Gemini Enterprise: Support for channel mentions and multi-turn conversations in the Gemini Enterprise app for Slack**
+
+The Gemini Enterprise app for Slack has the following new capabilities:
+
+* **Channel mentions:** You can `@mention` the Gemini Enterprise app directly in Slack channels and conversational threads. The app returns responses privately so you can review them before choosing to share.
+* **Multi-turn conversations:** The Gemini Enterprise app remembers the context of your current session in direct messages. You can ask follow-up questions and refine previous responses. You can clear the context and start over by clicking **New chat**.
+
+To enable these features, your Slack administrator must reinstall the Gemini Enterprise app. For more information, see [Install the Gemini Enterprise app for Slack in your Slack workspace](https://docs.cloud.google.com/gemini/enterprise/docs/configure-slack-app#install-app). After the administrator reinstalls the app, end users must authorize the Slack connector. For more information, see [User authorization](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-existing-data-store#user_authorization). If you don't reinstall and re-authorize the Gemini Enterprise app, your Slack workspace retains the legacy experience.
+
+These features are generally available (GA). For more information, see [Configure the Gemini Enterprise app for Slack](https://docs.cloud.google.com/gemini/enterprise/docs/configure-slack-app#use-app).
+
+---
 ## 2026-09-09
 
 ### Breaking
@@ -15,19 +47,6 @@ networks, which would violate VPC Service Controls perimeter policies.
 
 Other source types, such as Google Docs and YouTube URLs, remain supported in
 projects with VPC Service Controls enabled.
-
-### Feature
-
-**Gemini Enterprise: Configure custom actions and custom fields in data stores (Private preview)**
-
-Gemini Enterprise supports custom fields and custom entities for data store search and actions.
-You can do the following:
-
-* **Configure custom actions:** Generate and enable custom actions based on your data store's custom entities.
-* **Modify custom field descriptions:** Modify the descriptions of fields in the downloaded specifications, to provide more context to the model.
-* **Enrich specifications:** Download, modify, and upload the action specification JSON to refine descriptions and provide precise model instructions.
-
-This feature is in [private preview](https://cloud.google.com/products#product-launch-stages). For more information, see [Manage custom actions](https://docs.cloud.google.com/gemini/enterprise/docs/manage-actions#manage-custom-actions).
 
 ---
 ## 2026-09-08
@@ -169,10 +188,12 @@ For more information, see:
 accounts**
 
 Configuring overage controls in Gemini Enterprise is available to all projects
-linked to an invoiced Cloud Billing account. Previously, customers that received
-an email with the subject line *[Billing Update] New Gemini Enterprise overage
-billing controls launching Aug 17, 2026* couldn't enable overages despite
-having an invoiced Cloud Billing account. This restriction no longer applies.
+linked to an
+[invoiced Cloud Billing account](https://docs.cloud.google.com/billing/docs/concepts#billing_account_types).
+Previously, customers that received an email with the subject line *[Billing
+Update] New Gemini Enterprise overage billing controls launching Aug 17, 2026*
+couldn't enable overages despite having an invoiced Cloud Billing account.
+This restriction no longer applies.
 
 For more information, see [Overview of overages and spend
 controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview).

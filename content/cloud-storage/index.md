@@ -1,5 +1,17 @@
 # Cloud Storage
 
+## 2026-09-10
+
+### Feature
+
+Storage Intelligence advisor
+is now [generally available](https://cloud.google.com/products#product-launch-stages).
+Storage Intelligence advisor lets you monitor and manage your
+Cloud Storage environment at scale across organizations, folders, and
+projects.
+For more information, see [About Storage Intelligence advisor](https://docs.cloud.google.com/storage/docs/storage-intelligence/advisor-overview).
+
+---
 ## 2026-09-03
 
 ### Feature

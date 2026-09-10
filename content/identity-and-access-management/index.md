@@ -1,5 +1,21 @@
 # Identity and Access Management
 
+## 2026-09-10
+
+### Feature
+
+The Identity and Access Management (IAM) Model Context Protocol
+(MCP) server is [generally
+available](https://cloud.google.com/products#product-launch-stages). You can
+connect to the IAM remote MCP server from AI applications to
+inspect and manage custom roles and deny policies across your resources.
+
+For more information, see the following documentation:
+
+* [Use the IAM remote MCP server](https://docs.cloud.google.com/iam/docs/use-iam-mcp)
+* [IAM MCP reference](https://docs.cloud.google.com/iam/docs/reference/mcp)
+
+---
 ## 2026-09-09
 
 ### Feature

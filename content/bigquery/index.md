@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-09-10
+
+### Feature
+
+[The Data Engineering Agent now integrates with BigQuery Graph](https://docs.cloud.google.com/gemini/data-agents/data-engineering-agent/agent-overview#schema-mapping-with-graph)
+to provide additional context between your data source and destination schema,
+and improves schema mapping accuracy for your data engineering pipelines.
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-09-09
 
 ### Feature

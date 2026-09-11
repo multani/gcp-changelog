@@ -1,13 +1,41 @@
 {
   "name": "Cluster Toolkit",
   "entries": {
+    "2026-09-11": [
+      {
+        "kind": "Security",
+        "content": "Google addressed multiple security vulnerabilities in Slurm that affect\nCluster Toolkit. For more information, see the\n[security bulletin](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-062).",
+        "summary": {
+          "title": "Slurm Security Vulnerabilities Addressed",
+          "summary": "Google has resolved several security vulnerabilities found in Slurm, which impacted Cluster Toolkit. Further details are available in the official security bulletin."
+        }
+      }
+    ],
     "2026-09-07": [
+      {
+        "kind": "Feature",
+        "content": "Cluster Toolkit version v1.103.0 is available. This release simplifies\nthe `gcluster` job configuration workflow, adds dynamic catalog fallback for\nsystem node pools, increases the maximum system node pool limit to 150 nodes,\nand replaces deprecated `e2` instances with `n2d` across daily tests and\nconfigurations. This release also upgrades Slurm to version 25.11.8 to address\nmultiple security vulnerabilities. For more information about the vulnerabilities, see the\n[security bulletin](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-062) and\nthe [release announcement on\nGitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6280).",
+        "summary": {
+          "title": "Cluster Toolkit v1.103.0 Released",
+          "summary": "Cluster Toolkit v1.103.0 is now available, bringing simplified job configuration, enhanced node pool management with a limit of 150 nodes, and upgraded security through Slurm version 25.11.8. This update also transitions to more efficient instance types for improved performance and security."
+        }
+      },
       {
         "kind": "Security",
         "content": "Google addressed a security vulnerability (CVE-2026-65107) in the Slurm `sbcast`\ntool that affects Cluster Toolkit. For more information, see the\n[security bulletin](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060).",
         "summary": {
           "title": "Security vulnerability in Slurm sbcast tool",
           "summary": "A security vulnerability (CVE-2026-65107) has been identified in the Slurm sbcast tool, impacting Cluster Toolkit. Users are advised to review the security bulletin for details and mitigation steps."
+        }
+      }
+    ],
+    "2026-08-27": [
+      {
+        "kind": "Feature",
+        "content": "Cluster Toolkit version v1.102.0 is available. This release enables\nMulti-Tier Checkpointing (MTC) when you create GKE clusters, and\nadds support for Flex unified volumes to NetApp Volumes modules. This release\nalso updates Slurm blueprints to use OS image families, enables Distributed\nResilient Architecture Network (DRANET) in example blueprints for A3 Ultra, A4,\nCloud TPU v7x, and Cloud TPU v6e, and updates the Go toolchain to version 1.26.\nIn addition, this release consolidates the lifecycle and queue management for\nKueue, validates authorized CIDR ranges in GKE blueprints,\nenables `gcluster` job submission with VM boot disk fixes, and lets you disable\nPrivate Google Access for IPv6. For details, see the\n[release announcement on\nGitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/releases/tag/v1.102.0).",
+        "summary": {
+          "title": "Cluster Toolkit v1.102.0 Now Available",
+          "summary": "Cluster Toolkit v1.102.0 introduces Multi-Tier Checkpointing for GKE clusters and support for Flex unified volumes with NetApp. This update also includes enhancements to Slurm blueprints, DRANET enablement for A3 Ultra and other TPUs, and updates to the Go toolchain, Kueue management, and GKE blueprint validations."
         }
       }
     ],

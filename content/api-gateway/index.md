@@ -1,5 +1,16 @@
 # API Gateway
 
+## 2026-09-11
+
+### Feature
+
+**Enable Model Context Protocol (MCP)**
+
+You can now configure API Gateway to act as a remote Model Context Protocol (MCP) server. This Public Preview feature allows you to expose your existing REST APIs to AI agents as tools, without requiring changes to your backend services. You can enable MCP by annotating your OpenAPI 3.x specification using custom Google extensions.
+
+For more information, see [Model Context Protocol overview](https://docs.cloud.google.com/api-gateway/docs/mcp-overview) and [Configure Model Context Protocol](https://docs.cloud.google.com/api-gateway/docs/mcp-configure).
+
+---
 ## 2026-09-03
 
 ### Change

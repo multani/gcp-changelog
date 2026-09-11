@@ -1,12 +1,51 @@
 # Cluster Toolkit
 
+## 2026-09-11
+
+### Security
+
+Google addressed multiple security vulnerabilities in Slurm that affect
+Cluster Toolkit. For more information, see the
+[security bulletin](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-062).
+
+---
 ## 2026-09-07
+
+### Feature
+
+Cluster Toolkit version v1.103.0 is available. This release simplifies
+the `gcluster` job configuration workflow, adds dynamic catalog fallback for
+system node pools, increases the maximum system node pool limit to 150 nodes,
+and replaces deprecated `e2` instances with `n2d` across daily tests and
+configurations. This release also upgrades Slurm to version 25.11.8 to address
+multiple security vulnerabilities. For more information about the vulnerabilities, see the
+[security bulletin](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-062) and
+the [release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6280).
 
 ### Security
 
 Google addressed a security vulnerability (CVE-2026-65107) in the Slurm `sbcast`
 tool that affects Cluster Toolkit. For more information, see the
 [security bulletin](https://docs.cloud.google.com/cluster-toolkit/docs/security-bulletins#gcp-2026-060).
+
+---
+## 2026-08-27
+
+### Feature
+
+Cluster Toolkit version v1.102.0 is available. This release enables
+Multi-Tier Checkpointing (MTC) when you create GKE clusters, and
+adds support for Flex unified volumes to NetApp Volumes modules. This release
+also updates Slurm blueprints to use OS image families, enables Distributed
+Resilient Architecture Network (DRANET) in example blueprints for A3 Ultra, A4,
+Cloud TPU v7x, and Cloud TPU v6e, and updates the Go toolchain to version 1.26.
+In addition, this release consolidates the lifecycle and queue management for
+Kueue, validates authorized CIDR ranges in GKE blueprints,
+enables `gcluster` job submission with VM boot disk fixes, and lets you disable
+Private Google Access for IPv6. For details, see the
+[release announcement on
+GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/releases/tag/v1.102.0).
 
 ---
 ## 2026-08-20

@@ -1,5 +1,17 @@
 # AlloyDB for PostgreSQL
 
+## 2026-09-11
+
+### Feature
+
+You can now monitor the status, throughput, and backlog of the audit logging
+pipeline for your AlloyDB for PostgreSQL instances and nodes using
+Cloud Monitoring.
+
+For more information, see
+[Monitor audit log pipeline status](https://docs.cloud.google.com/alloydb/docs/pgaudit/view-audit-log#monitor-audit-log-pipeline-status).
+
+---
 ## 2026-09-02
 
 ### Feature

@@ -1,5 +1,48 @@
 # Managed Service for Apache Airflow
 
+## 2026-09-02
+
+### Announcement
+
+A new Managed Service for Apache Airflow release has started on **September 02, 2026**. Get ready
+for upcoming changes and features as we roll out the new release to all regions.
+This release is in progress at the moment. Listed changes and features might
+not be available in some regions yet.
+
+### Feature
+
+Managed Airflow (Gen 3) environments now provide Out-of-Memory (OOM) event logs
+to help troubleshoot and diagnose memory exhaustion.
+
+### Change
+
+Improved Airflow task resilience against transient Kubernetes pod connection
+issues.
+
+### Change
+
+Improved Airflow web server update process during environment upgrade
+operations.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.3.1-build.2](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-2)
+* [composer-3-airflow-3.2.2-build.6](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-6)
+* [composer-3-airflow-2.11.1-build.19](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-19) (default)
+* [composer-3-airflow-2.10.5-build.52](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-52)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.13-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-13-airflow-2-11-1) (default)
+* [composer-2.17.13-airflow-2.10.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-13-airflow-2-10-5)
+
+---
 ## 2026-08-28
 
 ### Feature

@@ -1,5 +1,111 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-09-11
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where SmartAction statuses were incorrectly marked as
+  "failed" when a call ended before a photo or video upload completed.
+* Fixed an issue where loading the outbound numbers list timed out or caused
+  significant delays for organizations with large teams and custom roles.
+* Fixed an issue where estimated wait times of less than one minute were
+  incorrectly rounded down to zero, preventing the system from accurately
+  triggering over-capacity actions.
+* Fixed an issue where sudden spikes in call volume bypassed a team's capacity
+  protections and reduced the team's agent availability to below configured
+  minimums.
+* Fixed an issue where nested object values in custom data were incorrectly
+  displayed as `[object Object]` in the agent desktop session data feed.
+* Fixed an agent desktop issue where the navigation bar in the **Previous
+  Interactions** page of the call adapter was overlapped by summary text and
+  didn't stay fixed while scrolling.
+* Fixed an issue where answered voice calls triggered a second, unrequested
+  callback after the end-user hung up.
+* Fixed an issue where intermittent IMAP connection rejections caused email
+  fetch workers to enter an extended backoff loop, resulting in several hours
+  of mailbox downtime.
+* Fixed an issue where inbound voice call recordings weren't exported to
+  external storage when a virtual agent escalation was deflected to voicemail
+  due to over-capacity.
+* Fixed an issue where manual wrap-up sessions were incorrectly attributed to
+  the most recent call in the **Agent Activity Timeline** and in raw data
+  exports, even when the wrap-up was unrelated to that call.
+* Fixed an issue where the "agent leg" of a call connection stalled in a
+  connecting state for the full timeout duration before failing silently and
+  moving the agent to an available status.
+* Fixed an issue where custom form responses weren't exported to external
+  storage for instances without an external CRM integration.
+* Fixed an issue where a queue name saved in the **SLA thresholds for queues**
+  dialog didn't persist after saving.
+* Fixed an issue where virtual agent voice calls triggered a session error
+  during wrap-up.
+* Fixed an issue during high-capacity redirections where voicemails weren't
+  saved.
+* Fixed an issue where completed call transfers generated duplicate queue
+  duration records, leading to inflated reporting for queue volume and SLA
+  metrics.
+* Fixed an agent desktop issue where the sentiment banner in the call adapter
+  didn't immediately appear at the start of a call.
+* Fixed an issue where saving the **Upload audio recording for Language
+  Selection** option of the **Languages** dialog didn't persist and switched
+  to **Text-to-speech**.
+* Fixed an issue where inefficient database queries caused high CPU
+  utilization and performance degradation across all communication channels.
+* Fixed an issue where transient connection errors during Twilio ICE token
+  fetching caused agent call setup to fail or take longer to connect.
+* Fixed an issue where temporary connection drops during chat webhook delivery
+  caused unnecessary delays.
+* Fixed an issue where work time and wait time durations overlapped in
+  reporting metrics.
+* Fixed an issue where the agent adapter call history incorrectly displayed
+  English queue names for French-Canadian calls.
+* Fixed an issue where agents were assigned calls from secondary queues even
+  when their primary queue fell below the minimum availability threshold.
+* Fixed an issue where canceled virtual-agent-to-human escalations
+  incorrectly reported negative queue durations and inaccurate SLA metrics in
+  chat session data and reports.
+* Fixed an issue where creating or updating queues failed and returned a
+  timeout error.
+* Fixed an agent desktop issue where an outbound call canceled by an agent
+  while connecting was recorded as an unknown failure instead of an agent
+  cancellation.
+* Fixed an issue where clicking the rewind and forward buttons on the
+  voicemail page of the call adapter restarted the voicemail from the
+  beginning.
+* Fixed an agent desktop issue where the chat adapter displayed a loading
+  progress indicator instead of the chat transcript when a chat session was
+  assigned.
+* Fixed an issue where a disposition prompt didn't appear in the call
+  adapter after a disconnected call, even when mandatory disposition was
+  configured.
+* Fixed an issue where Agent Assist real-time transcription didn't
+  start on Vonage BYOC calls.
+* Fixed an issue where changes made outside of browser-originated HTTP
+  requests (such as from API clients or background jobs) failed to generate
+  audit log records.
+* Fixed an issue where over-capacity phone deflection didn't activate for
+  direct agent calls, resulting in an error message or callers waiting
+  indefinitely.
+* Fixed an issue where transient network connection failures during call and
+  chat DAP lookups caused inbound calls to route to default queues or
+  prevented chat sessions from starting.
+* Fixed a web SDK issue where static, non-interactive text within the chat
+  widget incorrectly received keyboard focus, disrupting the navigation flow
+  for keyboard and screen reader users.
+* Fixed an issue where temporary asset errors during deployments were
+  cached by the CDN, leading to web SDK initialization failures.
+* Fixed an agent desktop issue where incomplete configuration settings
+  prevented call control buttons from updating or rendering properly.
+* Fixed an issue where the audio for an over-capacity deflection played in the
+  source queue's language instead of the destination queue's language
+  following a cross-language transfer.
+* Fixed an issue where waiting chats weren't immediately offered to available
+  agents who became eligible for a queue through a team membership update or
+  direct queue assignment.
+
+---
 ## 2026-09-09
 
 ### Announcement

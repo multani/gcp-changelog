@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-09-11
+
+### Deprecated
+
+**Deprecation of write permissions from the chronicle.readonly OAuth scope**
+
+Effective January 25, 2027, **write** permissions will be removed from the `chronicle.readonly` OAuth scope, restricting it strictly to **read** operations. You can continue using `chronicle.readonly` for read operations. Make sure you update any workflows performing **write** operations to use the `chronicle` OAuth scope.
+
+---
 ## 2026-09-06
 
 ### Feature

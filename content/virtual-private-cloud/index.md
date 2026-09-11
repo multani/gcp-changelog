@@ -1,5 +1,18 @@
 # Virtual Private Cloud
 
+## 2026-09-10
+
+### Feature
+
+**Preview**: [Propagated connections](https://docs.cloud.google.com/vpc/docs/about-propagated-connections)
+support Private Service Connect
+[endpoints that access global Google APIs](https://docs.cloud.google.com/vpc/docs/about-accessing-google-apis-endpoints).
+With propagated connections,
+endpoints that access global Google APIs in one consumer VPC spoke can be
+privately accessed by other consumer VPC spokes that are connected to the same
+Network Connectivity Center hub.
+
+---
 ## 2026-08-31
 
 ### Feature

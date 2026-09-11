@@ -1,5 +1,15 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-09-10
+
+### Breaking
+
+Appending `sqlcommenter` tags using the `sql_commenter_enabled` parameter when
+executing SQL queries on a Cloud SQL remote MCP server is temporarily disabled.
+
+For more information, see [sqlcommenter tags](https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#sqlcommenter).
+
+---
 ## 2026-09-08
 
 ### Feature

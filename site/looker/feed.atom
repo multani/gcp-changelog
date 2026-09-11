@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-09-09T00:00:00+00:00</updated>
+  <updated>2026-09-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-09-10:feature:0</id>
+    <published>2026-09-10T00:00:00+00:00</published>
+    <updated>2026-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/getting-started-vscode-extension">Looker extension for VS Code</a> is now generally available, enabling local LookML development and <a href="https://docs.cloud.google.com/looker/docs/ai-assisted-development-vscode">AI-assisted "vibe coding"</a> using the <a href="https://docs.cloud.google.com/looker/docs/mcp">Model Context Protocol (MCP)</a>. This update introduces an interactive onboarding walkthrough, support for populating workspaces from bare repositories, and enhanced synchronization between local Git branches and Looker <a href="https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a>. Additional improvements include support for OAuth with the Kiro IDE and more secure storage of API client secrets.</p>]]></content>
+    <summary>The Looker extension for VS Code is now generally available, offering local LookML development and AI-assisted coding. This update includes an interactive onboarding, support for bare repositories, and improved Git synchronization. It also features OAuth support and enhanced security for API secrets.</summary>
+    <title>Feature: Looker Extension for VS Code Now Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -382,6 +393,31 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:2</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (<code>looker-sdk</code>). For configuration steps and sample scripts, see the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations">Admin settings - Continuous Integration</a> documentation.</p>
+<p><strong>Note:</strong> This item was added on August 28, 2026 and changed from a non-breaking change to a feature on September 9, 2026.</p>]]></content>
+    <summary>Looker Continuous Integration can now be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions. This integration allows for automated testing and deployment workflows, streamlining your Looker development process. Refer to the documentation for detailed configuration steps and sample scripts.</summary>
+    <title>Feature: Automate Looker CI with popular platforms</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:3</id>
+    <published>2026-08-28T00:00:00+00:00</published>
+    <updated>2026-08-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Now available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>, the <a href="https://docs.cloud.google.com/looker/docs/visual-modeling">visual modeling canvas</a> lets you connect to BigQuery data sources to build and edit LookML data models using an interactive, drag-and-drop canvas. With the visual modeling canvas, you can visually join tables, define dimensions and measures, preview query results in real time, and publish Explores without writing LookML code.</p>
+<p>For more information, see the <a href="https://docs.cloud.google.com/looker/docs/visual-modeling">Using the visual modeling canvas</a> documentation page.</p>
+<p><strong>Note:</strong> This item was added on September 9, 2026.</p>]]></content>
+    <summary>A new visual modeling canvas is now available in preview. This feature allows users to connect to BigQuery data sources and build LookML data models using an interactive, drag-and-drop interface, eliminating the need to write LookML code.</summary>
+    <title>Feature: Visual modeling canvas for LookML</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:4</id>
+    <published>2026-08-28T00:00:00+00:00</published>
+    <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Conversational Analytics <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries">verified queries</a>, also known as <em>golden queries</em>, are now generally available. You can also now define verified queries in Looker (Google Cloud core) instances.</p>]]></content>
     <summary>Verified queries, also known as golden queries, are now generally available. You can now define verified queries directly within your Looker instances, streamlining your data analysis workflow.</summary>
     <title>Feature: Verified Queries Now Generally Available</title>
@@ -390,7 +426,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:5</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import_locale_defs: yesstatement to thelocalization_settings parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>
@@ -402,7 +438,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:6</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now configure Continuous Integration to automatically <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#dbt-trigger">run CI suites when a dbt Cloud CI job finishes</a>. The CI suite run verifies whether changes in your dbt models will cause SQL errors in your Looker Explores before the dbt changes are deployed.</p>]]></content>
@@ -413,7 +449,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:7</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, the <strong>New/Edit Roles Enhancement</strong> feature provides a modernized, step-by-step interface for <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#creating-editing-roles-enhancement">creating and editing roles</a> on the <strong>Roles</strong> page in the <strong>Users</strong> section of the Admin panel.</p>]]></content>
@@ -424,7 +460,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:8</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in preview, you can define and chat with <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-lookml-dashboards">data agents on a LookML dashboard</a>. To use this feature, the <strong>Conversational Analytics</strong> and <strong>Enable Dashboard Agents</strong> settings must be enabled on the <strong>Gemini in Looker</strong> Admin page.</p>]]></content>
@@ -435,7 +471,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:feature:9</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in <a href="https://cloud.google.com/products#product-launch-stages">preview</a>, you can define Looker-managed, in-database analytic models directly from existing LookML Explores by using the <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model#model_source"><code>model_source</code></a> subparameter of the <a href="https://docs.cloud.google.com/looker/docs/reference/param-view-derived-analytic-model"><code>derived_analytic_model</code></a> parameter. Looker automatically translates your Explore topology, joins that are defined with <code>foreign_key</code>, dimensions, and measures into in-database analytic models (such as BigQuery Graphs or Snowflake semantic views).</p>
@@ -447,7 +483,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:8</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:10</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <strong>Google Maps Enhancements</strong> preview feature now includes the following features:</p>
@@ -460,7 +496,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:9</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:11</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When the <strong>New Looker Explore</strong> and <strong>Merge Query Experience</strong> preview features are enabled, <a href="https://docs.cloud.google.com/looker/docs/merge-queries-new-explore">editing a merge query tile on a dashboard</a> now opens the <strong>Join data</strong> page directly within the dashboard edit canvas, rather than opening a new tab.</p>]]></content>
@@ -471,7 +507,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:12</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage">Conversational Analytics System Activity dashboard <strong>Token usage</strong> tab</a> now includes observability information about top users and top conversations by token usage. The tab also now indicates the type of data agent in its observability metrics.</p>]]></content>
@@ -482,19 +518,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:11</id>
-    <published>2026-08-28T00:00:00+00:00</published>
-    <updated>2026-08-28T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import_locale_defs: yesstatement to thelocalization_settings parameter in your importing project's manifest file. See the <a href="https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import">Localizing your LookML model</a> documentation page for more information.</p>
-<p><strong>Note:</strong> This item was added August 31, 2026</p>]]></content>
-    <summary>Model localization is now available in preview for imported projects. You can now merge locale definitions from importing and imported projects by setting import_locale_defs: yes in your manifest file. This enhances the flexibility of localizing your LookML models.</summary>
-    <title>Change: Model localization now in preview</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:change:13</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When connecting Looker to your database, you can specify <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters">additional Java Database Connectivity (JDBC) parameters</a>. To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the "Supported JDBC parameters" section of the <a href="https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions">database configuration instructions</a> page for your dialect.</p>]]></content>
@@ -505,7 +529,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:14</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Dashboard parameter filters now correctly respect manually restricted option lists when determining default values. This prevents filters from reverting to base LookML defaults that were intentionally hidden from the dashboard's user interface.</p>]]></content>
@@ -516,7 +540,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:14</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:fixed:15</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Tiles that are on <a href="https://docs.cloud.google.com/looker/docs/tabbed-dashboards">dashboard tabs</a> will now run only when the dashboard tab that they are saved on is opened.</p>]]></content>
@@ -527,7 +551,7 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:announcement:15</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-08-28:announcement:16</id>
     <published>2026-08-28T00:00:00+00:00</published>
     <updated>2026-08-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker now supports connections to <a href="https://docs.cloud.google.com/looker/docs/db-config-mongosql">MongoSQL</a>. Although existing connections to the legacy <a href="https://docs.cloud.google.com/looker/docs/db-config-mongodb">MongoDB Connector for BI</a> are still fully supported, Looker recommends that you update MongoDB Connector for BI connections to use the MongoSQL dialect.</p>

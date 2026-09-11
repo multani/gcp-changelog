@@ -1,5 +1,17 @@
 # Network Connectivity Center
 
+## 2026-09-10
+
+### Feature
+
+Support for [global Google APIs for endpoint propagation through Network
+Connectivity Center](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/psc-propagated-connection-overview#access-gapi-through-psc) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For information about the new quota for propagated global Google APIs, see
+[NCC quotas](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/quotas#general-ncc-quotas).
+
+---
 ## 2026-08-31
 
 ### Feature

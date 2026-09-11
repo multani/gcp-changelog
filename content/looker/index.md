@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-09-10
+
+### Feature
+
+The [Looker extension for VS Code](https://docs.cloud.google.com/looker/docs/getting-started-vscode-extension) is now generally available, enabling local LookML development and [AI-assisted "vibe coding"](https://docs.cloud.google.com/looker/docs/ai-assisted-development-vscode) using the [Model Context Protocol (MCP)](https://docs.cloud.google.com/looker/docs/mcp). This update introduces an interactive onboarding walkthrough, support for populating workspaces from bare repositories, and enhanced synchronization between local Git branches and Looker [Development Mode](https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode). Additional improvements include support for OAuth with the Kiro IDE and more secure storage of API client secrets.
+
+---
 ## 2026-09-09
 
 ### Deprecated
@@ -157,6 +164,20 @@ The [**Advanced Unused Content Cleanup**](https://docs.cloud.google.com/looker/d
 
 ### Feature
 
+Looker Continuous Integration (CI) can be triggered from GitLab CI, Bitbucket Pipelines, and GitHub Actions workflows by using the Looker API and the official Looker Python SDK (`looker-sdk`). For configuration steps and sample scripts, see the [Admin settings - Continuous Integration](https://docs.cloud.google.com/looker/docs/admin-panel-platform-ci#integrations) documentation.
+
+**Note:** This item was added on August 28, 2026 and changed from a non-breaking change to a feature on September 9, 2026.
+
+### Feature
+
+Now available in [preview](https://cloud.google.com/products#product-launch-stages), the [visual modeling canvas](https://docs.cloud.google.com/looker/docs/visual-modeling) lets you connect to BigQuery data sources to build and edit LookML data models using an interactive, drag-and-drop canvas. With the visual modeling canvas, you can visually join tables, define dimensions and measures, preview query results in real time, and publish Explores without writing LookML code.
+
+For more information, see the [Using the visual modeling canvas](https://docs.cloud.google.com/looker/docs/visual-modeling) documentation page.
+
+**Note:** This item was added on September 9, 2026.
+
+### Feature
+
 Conversational Analytics [verified queries](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#define-verified-queries), also known as *golden queries*, are now generally available. You can also now define verified queries in Looker (Google Cloud core) instances.
 
 ### Feature
@@ -197,12 +218,6 @@ When the **New Looker Explore** and **Merge Query Experience** preview features 
 ### Change
 
 The [Conversational Analytics System Activity dashboard **Token usage** tab](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage) now includes observability information about top users and top conversations by token usage. The tab also now indicates the type of data agent in its observability metrics.
-
-### Change
-
-Now available in preview, model localization is supported for imported projects. By default, Looker uses the locale definitions from the importing project only, if the importing project has locale definitions. However, if you want to merge the locale definitions from an imported project with the locale definitions of the importing project, you can add the import\_locale\_defs: yesstatement to thelocalization\_settings parameter in your importing project's manifest file. See the [Localizing your LookML model](https://docs.cloud.google.com/looker/docs/model-localization#model_localization_and_project_import) documentation page for more information.
-
-**Note:** This item was added August 31, 2026
 
 ### Change
 

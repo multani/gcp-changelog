@@ -1,5 +1,29 @@
 # Policy Intelligence
 
+## 2026-09-09
+
+### Feature
+
+The Policy Assist remote MCP server is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). To learn
+about using the Policy Assist remote MCP server to let external AI agents and
+applications suggest IAM roles, see [Use the Policy Assist
+remote MCP server](https://docs.cloud.google.com/policy-intelligence/docs/use-policy-assist-mcp) and the
+[Policy Assist MCP
+reference](https://docs.cloud.google.com/policy-intelligence/docs/reference/policyassist/mcp).
+
+### Feature
+
+The Policy Assist REST API is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Policy
+Assist lets you get IAM role suggestions for individual
+principals with AI assistance.
+
+To learn about using the Policy Assist API to get
+role suggestions programmatically, see the [Policy Assist REST
+reference](https://docs.cloud.google.com/policy-intelligence/docs/reference/policyassist/rest).
+
+---
 ## 2026-09-01
 
 ### Feature

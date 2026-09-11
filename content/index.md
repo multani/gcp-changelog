@@ -217,6 +217,7 @@
 - [Service Extensions](service-extensions/index.md)
 - [Service Health](service-health/index.md)
 - [Service Usage](service-usage/index.md)
+- [Sovereign Controls by Partners](sovereign-controls-by-partners/index.md)
 - [Spanner](spanner/index.md)
 - [Speech-to-Text](speech-to-text/index.md)
 - [Storage Transfer Service](storage-transfer-service/index.md)

@@ -4,10 +4,26 @@
     "2026-09-10": [
       {
         "kind": "Feature",
-        "content": "[The Data Engineering Agent now integrates with BigQuery Graph](https://docs.cloud.google.com/gemini/data-agents/data-engineering-agent/agent-overview#schema-mapping-with-graph)\nto provide additional context between your data source and destination schema,\nand improves schema mapping accuracy for your data engineering pipelines.\n\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "content": "Conversational analytics in BigQuery now supports the [`ML.CORRELATION`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-correlation)\nfunction to calculate statistical correlations between a target column and one\nor more metric columns in a table. This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).",
         "summary": {
-          "title": "Data Engineering Agent Enhances Schema Mapping",
-          "summary": "The Data Engineering Agent now integrates with BigQuery Graph, providing enhanced context for schema mapping. This general availability feature improves the accuracy of schema mapping for your data engineering pipelines by understanding relationships between data sources and destinations."
+          "title": "Analyze correlations with BigQuery ML",
+          "summary": "BigQuery ML now supports the ML.CORRELATION function, allowing you to calculate statistical correlations between columns in your tables. This new feature, currently in preview, helps you understand relationships within your data."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now use the [`ML.METRICS` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-metrics)\nto compute evaluation metrics for machine learning\nclassification or regression tasks on any table or query that contains actual\nand predicted values. This function lets you evaluate predictions without\nneeding to create or reference a stored model. This feature is in\n[Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Evaluate ML predictions with ML.METRICS",
+          "summary": "BigQuery ML now supports the ML.METRICS function, allowing you to compute evaluation metrics for classification and regression tasks directly on your data. This feature enables prediction evaluation without the need for a stored model and is currently in Preview."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can use the [`AI.CAUSAL_EFFECT`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-causal-effect)\nfunction to quantify the impact of specific interventions on time series data.\nThis feature is in [Preview](https://cloud.google.com/products#product-launch-stages).",
+        "summary": {
+          "title": "Quantify intervention impact on time series",
+          "summary": "You can now use the AI.CAUSAL_EFFECT function to measure the impact of specific interventions on your time series data. This new feature is available in Preview."
         }
       }
     ],

@@ -1,5 +1,17 @@
 # Assured Workloads
 
+## 2026-09-08
+
+### Feature
+
+The [EU Data Boundary with Access Justifications](https://docs.cloud.google.com/assured-workloads/docs/control-packages/eu-data-boundary-access-justifications)
+supports the following products:
+
+* AlloyDB for PostgreSQL
+* Apigee
+* Eventarc
+
+---
 ## 2026-08-21
 
 ### Feature

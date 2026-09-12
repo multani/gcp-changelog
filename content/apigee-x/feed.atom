@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-09-09T00:00:00+00:00</updated>
+  <updated>2026-09-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-09-10:fixed:0</id>
+    <published>2026-09-10T00:00:00+00:00</published>
+    <updated>2026-09-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Addendum to Apigee release notes dated <a href="#August_27_2026">August 27, 2026</a> (1-18-0-apigee-4).</p>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>502540992</strong> | Fixed an issue where the SemanticCacheLookup policy was incompatible with Vertex AI Vector Search Private Service Connect (PSC) endpoints. |</p>]]></content>
+    <summary>This release note addresses an issue where the SemanticCacheLookup policy was incompatible with Vertex AI Vector Search Private Service Connect endpoints. The incompatibility has now been resolved.</summary>
+    <title>Fixed: SemanticCacheLookup policy fixed for Vertex AI PSC</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -49,10 +63,10 @@ non-default measure requires re-tuning the threshold in the same edit. The 0-to-
 | <strong>532793298</strong> | Fixed an API product bug where combining a payloadOperationGroup with a REST or llmOperationGroup rejected REST/LLM traffic with a 401. |
 | <strong>534420582</strong> | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |
 | <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>
-<p>This list is incomplete; see entry for
-<a href="#September_09_2026">September 9, 2026</a>.</p>]]></content>
-    <summary>This release includes an upgrade to JDK 17 for the Apigee runtime, improved handling of target connection failures, and fixes for API product and JSON threat protection policies. Updates to infrastructure and libraries are also included.</summary>
-    <title>Fixed: Runtime and Security Enhancements</title>
+<p>This list is incomplete; see entries for
+<a href="#September_09_2026">September 9, 2026</a> and <a href="#September_10_2026">September 10, 2026</a>.</p>]]></content>
+    <summary>This release includes an upgrade to JDK 17 for the Apigee runtime, enhancing performance and security. It also introduces an opt-in back-off mechanism for Message Processors to improve stability with unavailable targets and fixes an API product bug related to operation group combinations. Additionally, the JSONThreatProtection policy now supports rejecting duplicate JSON keys.</summary>
+    <title>Fixed: Runtime and Policy Improvements</title>
   </entry>
   <entry>
     <author>

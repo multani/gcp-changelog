@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-09-11": [
+      {
+        "kind": "Feature",
+        "content": "Agent Substrate on GKE is now available for evaluation and non-production use.\nProduction support is offered on an allowlist basis under a limited GA program.\n\nAgent Substrate runs agentic workloads at scale on GKE clusters. To reduce\nresource usage, Agent Substrate suspends idle agents and takes a snapshot of\nthe agent's active memory (RAM) and local files. When a suspended agent is\ntriggered, the system restores the agent's state onto an available sandbox with\nsub-second latency.\n\nAgent Substrate improves on the capabilities of Agent Sandbox by bypassing the\nbottlenecks of the standard Kubernetes control plane to run significantly more\nconcurrent agents per machine.\n\nFor more information, see [About GKE Substrate](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/machine-learning/agent-substrate/about-agent-substrate).",
+        "summary": {
+          "title": "Agent Substrate now in preview",
+          "summary": "Agent Substrate is now available for evaluation and non-production use, allowing you to run agentic workloads at scale on GKE clusters. It improves on Agent Sandbox by efficiently managing resources and offering faster agent restoration with sub-second latency. Production support is available through a limited GA program."
+        }
+      }
+    ],
     "2026-09-08": [
       {
         "kind": "Change",

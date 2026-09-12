@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-09-08T00:00:00+00:00</updated>
+  <updated>2026-09-11T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-09-11:feature:0</id>
+    <published>2026-09-11T00:00:00+00:00</published>
+    <updated>2026-09-11T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Agent Substrate on GKE is now available for evaluation and non-production use.
+Production support is offered on an allowlist basis under a limited GA program.</p>
+<p>Agent Substrate runs agentic workloads at scale on GKE clusters. To reduce
+resource usage, Agent Substrate suspends idle agents and takes a snapshot of
+the agent's active memory (RAM) and local files. When a suspended agent is
+triggered, the system restores the agent's state onto an available sandbox with
+sub-second latency.</p>
+<p>Agent Substrate improves on the capabilities of Agent Sandbox by bypassing the
+bottlenecks of the standard Kubernetes control plane to run significantly more
+concurrent agents per machine.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/machine-learning/agent-substrate/about-agent-substrate">About GKE Substrate</a>.</p>]]></content>
+    <summary>Agent Substrate is now available for evaluation and non-production use, allowing you to run agentic workloads at scale on GKE clusters. It improves on Agent Sandbox by efficiently managing resources and offering faster agent restoration with sub-second latency. Production support is available through a limited GA program.</summary>
+    <title>Feature: Agent Substrate now in preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

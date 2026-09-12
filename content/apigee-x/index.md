@@ -1,5 +1,16 @@
 # Apigee X
 
+## 2026-09-10
+
+### Fixed
+
+Addendum to Apigee release notes dated [August 27, 2026](#August_27_2026) (1-18-0-apigee-4).
+
+| Bug ID | Description |
+| --- | --- |
+| **502540992** | Fixed an issue where the SemanticCacheLookup policy was incompatible with Vertex AI Vector Search Private Service Connect (PSC) endpoints. |
+
+---
 ## 2026-09-09
 
 ### Feature
@@ -33,8 +44,8 @@ On August 27th, 2026, we released an updated version of Apigee (1-18-0-apigee-4)
 | **534420582** | The JSONThreatProtection policy adds a new optional child element <RejectDuplicateKeys> that rejects request bodies containing duplicate JSON keys within the same object. Defaults to false to preserve existing behavior. |
 | **N/A** | Updates to infrastructure and libraries. |
 
-This list is incomplete; see entry for
-[September 9, 2026](#September_09_2026).
+This list is incomplete; see entries for
+[September 9, 2026](#September_09_2026) and [September 10, 2026](#September_10_2026).
 
 ### Security
 

@@ -2,6 +2,64 @@
 
 ## 2026-09-11
 
+### Announcement
+
+**Google Cloud CCaaS 6.12**
+
+We've released version 6.12 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Cold transfers auto-resume**
+
+When an agent performs a cold transfer, the call now resumes at the moment the
+receiving agent answers the call. The receiving agent no longer needs to
+manually take the caller off hold. This eliminates the silence that previously
+occurred between an agent answering a call and taking the caller off hold.
+
+For more information, see [Cold
+transfers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#cold-transfer).
+
+### Feature
+
+**Hubspot: Configure Do Not Call by phone number**
+
+In HubSpot integrations, you can now configure Do Not Call for specific phone
+numbers instead of for an entire contact or company record. Opt-out matching is
+no longer case-sensitive.
+
+Administrators: There's a new **Do Not Call Configuration** section in the
+**CRM** pane, located at **Settings > Developer Settings** (with
+**HubSpot** selected).
+
+For more information, see [Configure Do Not Call for
+HubSpot](https://docs.cloud.google.com/contact-center/ccai-platform/docs/hubspot-do-not-call).
+
+### Feature
+
+**Agent desktop: New network diagnostics tool**
+
+The agent desktop has a new network diagnostics tool in the navigation menu that
+displays network strength and diagnostics information. This tool can help you
+quickly assess your network's health and troubleshoot connection issues.
+
+For more information, see [Get network diagnostic information](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-use-agent-desktop#get-network-diagnostic-information).
+
+### Feature
+
+**Agent desktop: Open from the CCaaS portal**
+
+You can now access the Agent Desktop using the new **Apps** menu. In the CCaaS
+portal, click **Apps > Agent Desktop** to open the Agent Desktop in
+a new browser tab. This lets you move between the portal and the Agent
+Desktop without ending your portal session.
+
+For more information, see [Open the agent desktop](https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-use-agent-desktop#open-agent-desktop).
+
 ### Fixed
 
 This release addresses the following issues:

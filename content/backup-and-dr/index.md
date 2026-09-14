@@ -1,5 +1,20 @@
 # Backup and DR
 
+## 2026-09-14
+
+### Feature
+
+You can now monitor restore jobs for Filestore instances directly
+from the Backup and DR **Jobs** page in the Google Cloud console. When you
+trigger a restore on a Filestore instance, Backup and DR
+automatically tracks the job progress and status.
+
+For more information, see
+[Restore a Filestore instance from a backup vault](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/filestore/filestore-instance-restore)
+and
+[Monitor backup and restore jobs in Google Cloud console](https://docs.cloud.google.com/backup-disaster-recovery/docs/monitor-reports/monitor-jobs-console).
+
+---
 ## 2026-09-01
 
 ### Feature

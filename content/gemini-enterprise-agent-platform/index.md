@@ -1,5 +1,23 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-15
+
+### Feature
+
+**Reinforcement learning fine-tuning in the Google Cloud console (Preview)**
+
+You can create, monitor, and test reinforcement learning fine-tuning jobs
+for Gemini models in the Google Cloud console
+([Preview](https://cloud.google.com/products#product-launch-stages)). From the
+**Models > Tuning** page, you can configure Python code or model-based reward
+functions, test reward logic against sample prompts before launching a job,
+track training and evaluation metrics in real time, and test tuned checkpoints
+in Agent Studio.
+
+For more information, see
+[Quick start: Reinforcement learning fine-tuning using the console](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/reinforcement-tuning/quick-start-console).
+
+---
 ## 2026-09-14
 
 ### Fixed

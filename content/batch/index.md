@@ -1,5 +1,13 @@
 # Batch
 
+## 2026-09-15
+
+### Issue
+
+A workaround has been added for the known issue that
+[jobs might fail when specifying Compute Engine (or custom) VM OS images with outdated kernels](https://docs.cloud.google.com/batch/docs/known-issues#jobs-fail-specify-compute-images-outdated-kernels).
+
+---
 ## 2026-08-19
 
 ### Deprecated

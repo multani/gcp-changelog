@@ -1,5 +1,13 @@
 # Policy Intelligence
 
+## 2026-09-15
+
+### Feature
+
+Policy Troubleshooter now supports troubleshooting access for [agent identities](https://docs.cloud.google.com/iam/docs/agent-identity-overview). You can troubleshoot IAM allow policies, deny policies, and principal access boundary policies for agents acting under their own authority by entering the agent's principal identifier or by troubleshooting with an error ID from an access
+denial event. To learn more, see [Troubleshooting access](https://docs.cloud.google.com/policy-intelligence/docs/troubleshoot-access#troubleshoot-access).
+
+---
 ## 2026-09-09
 
 ### Feature

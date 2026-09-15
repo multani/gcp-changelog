@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-09-11T00:00:00+00:00</updated>
+  <updated>2026-09-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-09-14:feature:0</id>
+    <published>2026-09-14T00:00:00+00:00</published>
+    <updated>2026-09-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>[Spotlight Feature] GoogleSQL query support in Search</strong></p>
+<p>This feature is in public preview. You can now use GoogleSQL in <strong>Search</strong> to query your security data in Google SecOps, offering a flexible and powerful industry-standard alternative to YARA-L 2.0. GoogleSQL is optimized for broad data exploration, statistical aggregation, and deep-dive ad hoc investigations. You can query telemetry tables including but not limited to UDM events, entity graphs, detection rules, and case management data—using either standard declarative SQL or the linear, sequential Piped SQL syntax.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/reference/standard-sql/getting-started-googlesql">Get started with GoogleSQL</a>.</p>]]></content>
+    <summary>You can now use GoogleSQL in Search to query your security data in Google SecOps. This offers a flexible and powerful industry-standard alternative to YARA-L 2.0, optimized for broad data exploration and ad hoc investigations. Query telemetry tables using standard declarative SQL or Piped SQL syntax.</summary>
+    <title>Feature: Search now supports GoogleSQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-09-14:deprecated:1</id>
+    <published>2026-09-14T00:00:00+00:00</published>
+    <updated>2026-09-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>MANDIANT_ACTIVE_BREACH_IOC<code>,</code>MANDIANT_FUSION_IOC<code>, and</code>OPEN_SOURCE_INTEL_IOC` feeds are being removed</strong></p>
+<p>The <code>MANDIANT_ACTIVE_BREACH_IOC</code>, <code>MANDIANT_FUSION_IOC</code>, and <code>OPEN_SOURCE_INTEL_IOC</code> feeds are <a href="https://docs.cloud.google.com/chronicle/docs/deprecations">deprecated</a> in favor of the <code>GTI_IOC</code> feed. After March 18, 2027, we will be removing the <code>MANDIANT_ACTIVE_BREACH_IOC</code>, <code>MANDIANT_FUSION_IOC</code>, and <code>OPEN_SOURCE_INTEL_IOC</code> feeds. For more information on how to migrate, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI">Migrate Mandiant legacy feeds to GTI</a>.</p>]]></content>
+    <summary>The MANDIANT_ACTIVE_BREACH_IOC, MANDIANT_FUSION_IOC, and OPEN_SOURCE_INTEL_IOC feeds will be removed after March 18, 2027. These feeds are deprecated in favor of the GTI_IOC feed. Information on migrating can be found in the documentation.</summary>
+    <title>Deprecated: IOC Feeds Removal</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,34 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-09-14": [
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.7.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Network stream resilience**: Improved CLI session stability with automatic reconnection and transient error recovery during long-running scans and remediation workflows.\n* **Configuration uniformity**: Standardized directory exclusion rules across configuration files and CLI scanning flags under `scan_config.exclude_dirs`.\n* **Bug fixes**:\n  + Fixed an issue where `cm report` incorrectly categorized `DISMISSED` findings as `OPEN` in the summary table.\n  + Resolved sandbox permission denial errors by preventing child worker processes from attempting to create internal session logs on disk.\n  + Hardened sandbox command policy to prevent directory traversal and file inspection outside the designated repository root into adjacent directories.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "summary": {
+          "title": "CodeMender v0.7.0: Enhanced Stability and Security",
+          "summary": "CodeMender version 0.7.0 brings significant improvements to network stream resilience and configuration uniformity. This release also addresses several critical bugs, including accurate reporting of dismissed findings and enhanced sandbox security to prevent unauthorized access."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Cyber Verification Program for Claude is available in Preview**\n\nAnthropic's Cyber Verification Program (CVP) is available in\n[Preview](https://cloud.google.com/products#product-launch-stages) on\nGemini Enterprise Agent Platform. CVP enables verified organizations to use\nsupported Claude models (Claude Opus 4.7, Claude Opus 4.8, Claude Sonnet 5, and\nClaude Opus 5) for legitimate defensive cybersecurity tasks with default\ndual-use restrictions lifted.\n\nFor more information, see [Cyber Verification Program for\nClaude](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/cyber-verification-program).",
+        "summary": {
+          "title": "Claude's Cyber Verification Program Now in Preview",
+          "summary": "Anthropic's Cyber Verification Program (CVP) is now available in preview on Gemini Enterprise Agent Platform. This program allows verified organizations to utilize supported Claude models for defensive cybersecurity tasks with dual-use restrictions removed. More details can be found in the official documentation."
+        }
+      }
+    ],
+    "2026-09-10": [
+      {
+        "kind": "Feature",
+        "content": "**Provisioned Throughput: Support for multiple pending orders and change requests**\n\nProvisioned Throughput now directly supports from the self service console the\nability to schedule multiple new orders at the same time and change requests\nacross multiple orders within the same project.\n\nFor more information, see [Purchase Provisioned Throughput](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput).",
+        "summary": {
+          "title": "Multiple Pending Orders for Provisioned Throughput",
+          "summary": "Provisioned Throughput now allows scheduling multiple new orders and managing change requests simultaneously within the self-service console. This enhancement simplifies the process of handling concurrent requests across different orders in the same project."
+        }
+      }
+    ],
     "2026-09-09": [
       {
         "kind": "Feature",
@@ -55,19 +83,19 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "**CodeMender updates**\n\nThis release introduces updates to CodeMender:\n\n* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).\n* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.\n* **Bug fixes**:\n  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.\n  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.\n  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.\n  + Prevented erroneous verification verdicts when workspace reset fails.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
-        "summary": {
-          "title": "CodeMender updates and fixes",
-          "summary": "CodeMender now offers machine-readable metrics and session drill-down capabilities. This release also includes several bug fixes to improve reliability and user experience."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "**Deferred tier for autonomous agent scheduling (Preview)**\n\nThe *deferred tier* is available in Preview. The deferred tier automatically\nqueues non-latency-sensitive background agent workloads and schedules them to\nexecute during off-peak hours.\n\nKey capabilities and benefits include:\n\n* **50% token discount**: Receive a 50% discount on consumed tokens for deferred workloads.\n* **Reduced rate limiting**: Mitigate resource exhaustion (429) errors and infrastructure pressure during long-running background tasks.\n* **Supported agents**:\n  + **Deep Research Agent**: Pass `service_tier=\"deferred\"` in the Python SDK or `\"service_tier\": \"deferred\"` in REST API interaction requests.\n\nFor more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).",
         "summary": {
           "title": "Deferred Tier for Agent Scheduling (Preview)",
           "summary": "A new deferred tier for autonomous agents automatically queues non-latency-sensitive background workloads and schedules them for off-peak execution. This offers a 50% token discount and reduced rate limiting for supported agents like the Deep Research Agent. This feature is currently in Preview."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.6.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).\n* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.\n* **Bug fixes**:\n  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.\n  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.\n  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.\n  + Prevented erroneous verification verdicts when workspace reset fails.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "summary": {
+          "title": "CodeMender updates: metrics and bug fixes",
+          "summary": "CodeMender v0.6.0 introduces machine-readable metrics for `cm stats` and session drill-down capabilities. This release also includes several bug fixes to improve reliability and user experience."
         }
       }
     ],
@@ -118,10 +146,10 @@
     "2026-08-27": [
       {
         "kind": "Feature",
-        "content": "**CodeMender updates**\n\nThis release introduces updates to CodeMender:\n\n* **Model support**: Support for Gemini 3.6 Flash (`gemini-3.6-flash`) and Gemini 3.7 Flash (`gemini-3.7-flash`, default).\n* **Unrestricted verification**: Added the `--unrestricted` flag to `cm verify` to bypass command policy restrictions during exploit verification in isolated environments.\n* **Bug fixes**:\n  + Improved reliability of long sessions.\n  + Improved shell resolution across operating environments.\n  + Clearer permission denied error messages.\n  + Fixed an issue where the CodeMender sandbox would fail to initialize with an error due to relative paths.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "content": "**CodeMender updates (v0.5.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Model support**: Support for Gemini 3.6 Flash (`gemini-3.6-flash`) and Gemini 3.7 Flash (`gemini-3.7-flash`, default).\n* **Unrestricted verification**: Added the `--unrestricted` flag to `cm verify` to bypass command policy restrictions during exploit verification in isolated environments.\n* **Bug fixes**:\n  + Improved reliability of long sessions.\n  + Improved shell resolution across operating environments.\n  + Clearer permission denied error messages.\n  + Fixed an issue where the CodeMender sandbox would fail to initialize with an error due to relative paths.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
         "summary": {
-          "title": "CodeMender Enhancements",
-          "summary": "CodeMender now supports Gemini 3.6 and 3.7 Flash models, and includes an unrestricted verification flag for enhanced testing. This update also brings improved session reliability, shell resolution, and clearer error messages."
+          "title": "CodeMender v0.5.0 Released",
+          "summary": "The latest release of CodeMender (v0.5.0) brings support for new Gemini models, an unrestricted verification flag for `cm verify`, and several bug fixes for improved reliability and user experience. This update enhances CodeMender's functionality and stability for developers."
         }
       },
       {
@@ -156,10 +184,10 @@
     "2026-08-18": [
       {
         "kind": "Feature",
-        "content": "**CodeMender updates: Model support**\n\nThis release introduces updates to CodeMender:\n\n* **Gemini 3 Flash removal**: Gemini 3 Flash (`gemini-3-flash-preview`) is no longer supported as a model backend for CodeMender. CodeMender supports Gemini 3.5 Flash (default) and Gemini 3.1 Pro Preview.\n\nFor more information, see [Specifying the model](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender#specifying-the-model).",
+        "content": "**CodeMender updates (v0.4.0): Model support**\n\nThis release introduces updates to CodeMender:\n\n* **Gemini 3 Flash removal**: Gemini 3 Flash (`gemini-3-flash-preview`) is no longer supported as a model backend for CodeMender. CodeMender supports Gemini 3.5 Flash (default) and Gemini 3.1 Pro Preview.\n\nFor more information, see [Specifying the model](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender#specifying-the-model).",
         "summary": {
           "title": "CodeMender Model Updates",
-          "summary": "CodeMender has been updated to no longer support Gemini 3 Flash. It now exclusively supports Gemini 3.5 Flash and Gemini 3.1 Pro Preview as model backends. Refer to the documentation for details on specifying models."
+          "summary": "CodeMender has been updated to no longer support Gemini 3 Flash. The tool now supports Gemini 3.5 Flash and Gemini 3.1 Pro Preview. This change enhances model compatibility and performance for users."
         }
       }
     ],

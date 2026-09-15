@@ -1,5 +1,50 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-14
+
+### Fixed
+
+**CodeMender updates (v0.7.0)**
+
+This release introduces updates to CodeMender:
+
+* **Network stream resilience**: Improved CLI session stability with automatic reconnection and transient error recovery during long-running scans and remediation workflows.
+* **Configuration uniformity**: Standardized directory exclusion rules across configuration files and CLI scanning flags under `scan_config.exclude_dirs`.
+* **Bug fixes**:
+  + Fixed an issue where `cm report` incorrectly categorized `DISMISSED` findings as `OPEN` in the summary table.
+  + Resolved sandbox permission denial errors by preventing child worker processes from attempting to create internal session logs on disk.
+  + Hardened sandbox command policy to prevent directory traversal and file inspection outside the designated repository root into adjacent directories.
+
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
+### Feature
+
+**Cyber Verification Program for Claude is available in Preview**
+
+Anthropic's Cyber Verification Program (CVP) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) on
+Gemini Enterprise Agent Platform. CVP enables verified organizations to use
+supported Claude models (Claude Opus 4.7, Claude Opus 4.8, Claude Sonnet 5, and
+Claude Opus 5) for legitimate defensive cybersecurity tasks with default
+dual-use restrictions lifted.
+
+For more information, see [Cyber Verification Program for
+Claude](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/cyber-verification-program).
+
+---
+## 2026-09-10
+
+### Feature
+
+**Provisioned Throughput: Support for multiple pending orders and change requests**
+
+Provisioned Throughput now directly supports from the self service console the
+ability to schedule multiple new orders at the same time and change requests
+across multiple orders within the same project.
+
+For more information, see [Purchase Provisioned Throughput](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput).
+
+---
 ## 2026-09-09
 
 ### Feature
@@ -79,22 +124,6 @@ now generally available (GA) and available for production use.
 For more information on 3.8 Flash, see the [model
 page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash).
 
-### Fixed
-
-**CodeMender updates**
-
-This release introduces updates to CodeMender:
-
-* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).
-* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.
-* **Bug fixes**:
-  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.
-  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.
-  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.
-  + Prevented erroneous verification verdicts when workspace reset fails.
-
-For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
-
 ### Feature
 
 **Deferred tier for autonomous agent scheduling (Preview)**
@@ -111,6 +140,22 @@ Key capabilities and benefits include:
   + **Deep Research Agent**: Pass `service_tier="deferred"` in the Python SDK or `"service_tier": "deferred"` in REST API interaction requests.
 
 For more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).
+
+### Fixed
+
+**CodeMender updates (v0.6.0)**
+
+This release introduces updates to CodeMender:
+
+* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).
+* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.
+* **Bug fixes**:
+  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.
+  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.
+  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.
+  + Prevented erroneous verification verdicts when workspace reset fails.
+
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
 
 ---
 ## 2026-09-01
@@ -194,7 +239,7 @@ For more information, see [IAM access policies overview](https://docs.cloud.goog
 
 ### Feature
 
-**CodeMender updates**
+**CodeMender updates (v0.5.0)**
 
 This release introduces updates to CodeMender:
 
@@ -249,7 +294,7 @@ Garden.
 
 ### Feature
 
-**CodeMender updates: Model support**
+**CodeMender updates (v0.4.0): Model support**
 
 This release introduces updates to CodeMender:
 

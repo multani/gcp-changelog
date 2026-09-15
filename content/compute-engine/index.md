@@ -1,5 +1,28 @@
 # Compute Engine
 
+## 2026-09-14
+
+### Feature
+
+**Preview**: You can create regional disks, including Hyperdisk Balanced High Availability volumes,
+from custom and public OS images.
+
+For more information, see
+[Create and manage regional disks](https://docs.cloud.google.com/compute/docs/disks/regional-persistent-disk).
+
+---
+## 2026-09-11
+
+### Feature
+
+**Preview**: You can view Workload Manager rule findings directly on the Compute
+Engine **Overview** page in the Google Cloud console. The **Workload Manager
+findings** tile lets you identify configuration risks for your compute instances
+and resources against best practices for reliability and security.
+
+For more information, see [View Workload Manager rule findings in Compute Engine](https://docs.cloud.google.com/compute/docs/view-wlm-findings).
+
+---
 ## 2026-09-08
 
 ### Feature

@@ -1,5 +1,29 @@
 # BigQuery
 
+## 2026-09-14
+
+### Change
+
+An updated version of the
+[Simba ODBC driver for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/odbc-jdbc-drivers#current_odbc_driver)
+is now available.
+
+### Feature
+
+Metadata for [BigQuery Graph](https://docs.cloud.google.com/bigquery/docs/graph-overview) is
+automatically ingested and searchable in
+[Knowledge Catalog](https://docs.cloud.google.com/bigquery/docs/use-knowledge-catalog). This feature is
+available in [preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+You can now include a `WHERE` clause inside of an
+[aggregate function call](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/aggregate-function-calls)
+to filter your aggregate function input using a boolean expression.
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-10
 
 ### Feature
@@ -22,6 +46,15 @@ needing to create or reference a stored model. This feature is in
 You can use the [`AI.CAUSAL_EFFECT`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-causal-effect)
 function to quantify the impact of specific interventions on time series data.
 This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+### Feature
+
+[The Data Engineering Agent now integrates with BigQuery Graph](https://docs.cloud.google.com/gemini/data-agents/data-engineering-agent/agent-overview#schema-mapping-with-graph)
+to provide additional context between your data source and destination schema,
+and improves schema mapping accuracy for your data engineering pipelines.
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
 
 ---
 ## 2026-09-09

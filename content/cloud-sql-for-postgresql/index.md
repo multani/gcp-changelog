@@ -1,5 +1,22 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-09-14
+
+### Feature
+
+You can use the
+[`pg_textsearch`](https://github.com/timescale/pg_textsearch)
+extension in Cloud SQL for PostgreSQL to perform full-text search using the
+industry-standard
+[BM25 (Best Matching 25)](https://en.wikipedia.org/wiki/Okapi_BM25) scoring
+algorithm for highly accurate relevance scoring.
+
+This extension requires PostgreSQL 17 or later and is supported on PostgreSQL
+release `R20260712.01_06` or later.
+
+For more information, see [Full-text search using pg\_textsearch](https://docs.cloud.google.com/sql/docs/postgres/pg-textsearch).
+
+---
 ## 2026-09-10
 
 ### Breaking

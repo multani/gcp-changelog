@@ -1,5 +1,14 @@
 # Google SecOps SIEM
 
+## 2026-09-14
+
+### Deprecated
+
+**MANDIANT\_ACTIVE\_BREACH\_IOC`,`MANDIANT\_FUSION\_IOC`, and`OPEN\_SOURCE\_INTEL\_IOC` feeds are being removed**
+
+The `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds are [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the `GTI_IOC` feed. After March 18, 2027, we will be removing the `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds. For more information on how to migrate, see [Migrate Mandiant legacy feeds to GTI](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).
+
+---
 ## 2026-09-11
 
 ### Deprecated

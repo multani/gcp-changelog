@@ -1,5 +1,19 @@
 # Cloud SQL for SQL Server
 
+## 2026-09-14
+
+### Deprecated
+
+Beginning April 12, 2027, you won't be able to create new instances of
+Cloud SQL for SQL Server 2017. Starting on October 13, 2027, SQL Server 2017
+will reach end of life (EOL) and Microsoft will stop releasing
+[security updates](https://learn.microsoft.com/en-us/sql/sql-server/end-of-support/sql-server-end-of-support-overview?view=sql-server-ver17#understand-the-sql-server-lifecycle).
+Cloud SQL for SQL Server will stop supporting SQL Server 2017 after this date.
+
+For more information, see
+[Database versions and version policies](https://docs.cloud.google.com/sql/docs/sqlserver/db-versions).
+
+---
 ## 2026-09-08
 
 ### Feature

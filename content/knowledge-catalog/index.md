@@ -1,5 +1,16 @@
 # Knowledge Catalog
 
+## 2026-09-14
+
+### Feature
+
+Metadata for BigQuery Graph is now automatically ingested and
+searchable in Knowledge Catalog. This feature is available in
+[preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Knowledge Catalog overview](https://docs.cloud.google.com/dataplex/docs/introduction#ingestions).
+
+---
 ## 2026-09-07
 
 ### Feature

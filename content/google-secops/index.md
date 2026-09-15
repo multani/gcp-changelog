@@ -1,5 +1,22 @@
 # Google SecOps
 
+## 2026-09-14
+
+### Feature
+
+**[Spotlight Feature] GoogleSQL query support in Search**
+
+This feature is in public preview. You can now use GoogleSQL in **Search** to query your security data in Google SecOps, offering a flexible and powerful industry-standard alternative to YARA-L 2.0. GoogleSQL is optimized for broad data exploration, statistical aggregation, and deep-dive ad hoc investigations. You can query telemetry tables including but not limited to UDM events, entity graphs, detection rules, and case management data—using either standard declarative SQL or the linear, sequential Piped SQL syntax.
+
+For more information, see [Get started with GoogleSQL](https://docs.cloud.google.com/chronicle/docs/reference/standard-sql/getting-started-googlesql).
+
+### Deprecated
+
+**MANDIANT\_ACTIVE\_BREACH\_IOC`,`MANDIANT\_FUSION\_IOC`, and`OPEN\_SOURCE\_INTEL\_IOC` feeds are being removed**
+
+The `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds are [deprecated](https://docs.cloud.google.com/chronicle/docs/deprecations) in favor of the `GTI_IOC` feed. After March 18, 2027, we will be removing the `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds. For more information on how to migrate, see [Migrate Mandiant legacy feeds to GTI](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).
+
+---
 ## 2026-09-11
 
 ### Deprecated

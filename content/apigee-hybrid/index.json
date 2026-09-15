@@ -1,6 +1,88 @@
 {
   "name": "Apigee hybrid",
   "entries": {
+    "2026-09-14": [
+      {
+        "kind": "Announcement",
+        "content": "",
+        "summary": {
+          "title": "New Features for Your Productivity",
+          "summary": "Discover exciting new features designed to boost your productivity. These updates offer enhanced tools and streamlined workflows to help you achieve more. Explore the latest advancements and see how they can benefit your daily tasks."
+        }
+      },
+      {
+        "kind": "hybrid v1.17.0",
+        "content": "On September 14, 2026 we released an updated version of the Apigee hybrid software, 1.17.0.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version v1.17](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/big-picture).\n\n**Note:** This is a minor release: The container images used in minor releases are integrated with the Apigee hybrid Helm charts. Upgrading to a minor via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
+        "summary": {
+          "title": "Apigee hybrid 1.17.0 released",
+          "summary": "A new version of Apigee hybrid, 1.17.0, was released on September 14, 2026. This minor release includes updated container images integrated with the Helm charts, simplifying the upgrade process. Refer to the documentation for details on upgrading or new installations."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Model Context Protocol (MCP) support**\n\nApigee hybrid now supports [Model Context Protocol (MCP)](https://modelcontextprotocol.io), an open protocol that lets agentic AI applications use your APIs as tools through managed MCP endpoints. Apigee hybrid routes, authorizes, and secures these MCP tool calls the same way it manages your other APIs, so you don't need to run or maintain your own MCP servers.\n\nMCP support is an optional feature that is not enabled by default. You must explicitly enable it in your Apigee hybrid configuration.\n\nFor more information, see [Model Context Protocol (MCP) overview](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview), [Enable MCP for Apigee hybrid](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/enable-mcp), and the [MCP quickstart](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-quickstart).",
+        "summary": {
+          "title": "Apigee hybrid adds MCP support",
+          "summary": "Apigee hybrid now supports the Model Context Protocol (MCP), allowing agentic AI applications to use your APIs as tools. This feature enables secure and managed API access for AI agents without requiring separate MCP server infrastructure. MCP support is an optional feature that needs to be explicitly enabled."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Root CA certificate rotation**\n\nApigee hybrid v1.17.0 lets you rotate the root certificate authority (CA) certificate that anchors trust for TLS communication between your runtime components. You can now replace the root CA before it expires, without downtime.\n\nFor more information, see [Rotate the root CA](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/rotate-root-ca).",
+        "summary": {
+          "title": "Root CA Certificate Rotation in Apigee Hybrid",
+          "summary": "Apigee hybrid v1.17.0 introduces the ability to rotate the root CA certificate. This feature allows for proactive replacement of the root CA before expiration, ensuring uninterrupted TLS communication between runtime components without any downtime."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**TLS 1.3 support**\n\nApigee hybrid v1.17.0 adds support for TLS 1.3, a newer version of the Transport Layer Security (TLS) protocol that offers faster connection handshakes and stronger security than earlier TLS versions.\n\nFor information about configuring TLS on the ingress gateway, see [Configuring TLS and mTLS on the Apigee ingress gateway](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/ingress-tls).",
+        "summary": {
+          "title": "TLS 1.3 Support Added",
+          "summary": "Apigee hybrid now supports TLS 1.3, offering enhanced security and faster connections. This update improves the overall security posture and performance of your API traffic management."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Forward proxy support for AI policies**\n\nApigee hybrid v1.17.0 adds forward proxy support for AI policies, such as the Model Armor and semantic caching policies. Outbound calls from these policies can now be routed through an HTTP forward proxy.\n\nFor more information, see [Configure a forward proxy](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/forward-proxy), [Get started with the Model Armor policies](https://docs.cloud.google.com/apigee/docs/api-platform/tutorials/using-model-armor-policies), and [Get started with semantic caching policies](https://docs.cloud.google.com/apigee/docs/api-platform/tutorials/using-semantic-caching-policies).",
+        "summary": {
+          "title": "Forward proxy for AI policies",
+          "summary": "Apigee hybrid now supports forward proxy for AI policies, allowing outbound calls to be routed through an HTTP forward proxy. This enhances security and flexibility for policies like Model Armor and semantic caching."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Semantic cache Private Service Connect (PSC) endpoint support**\n\nApigee hybrid v1.17.0 adds Private Service Connect (PSC) endpoint support for semantic caching. The semantic caching policies can now reach their backing services over a Private Service Connect endpoint, which keeps that traffic on your private network.\n\nFor more information, see [Configure semantic caching over Private Service Connect](https://docs.cloud.google.com/apigee/docs/api-platform/tutorials/using-semantic-caching-policies-psc).",
+        "summary": {
+          "title": "Semantic Cache PSC Endpoint Support",
+          "summary": "Apigee hybrid v1.17.0 now supports Private Service Connect (PSC) endpoints for semantic caching. This enhancement allows semantic caching policies to access backing services via a PSC endpoint, ensuring traffic remains within your private network."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Semantic cache distance measure support**\n\nApigee hybrid v1.17.0 adds support for non-default Vertex AI Vector Search distance measures in the SemanticCacheLookup policy. A new optional `<DistanceMeasureType>` element accepts `DOT_PRODUCT_DISTANCE` (the default, and the existing behavior), `COSINE_DISTANCE`, `SQUARED_L2_DISTANCE`, and `L1_DISTANCE`. The policy compares `<Threshold>` in the direction the declared measure implies, so declaring a non-default measure requires re-tuning the threshold in the same edit.\n\nFor more information, see [SemanticCacheLookup policy](https://docs.cloud.google.com/apigee/docs/api-platform/reference/policies/semantic-cache-lookup-policy).",
+        "summary": {
+          "title": "New Distance Measures for Semantic Cache",
+          "summary": "Apigee hybrid v1.17.0 now supports multiple distance measures for the SemanticCacheLookup policy, including DOT_PRODUCT_DISTANCE, COSINE_DISTANCE, SQUARED_L2_DISTANCE, and L1_DISTANCE. This allows for more flexible similarity searches. Remember to re-tune your threshold when using a non-default measure."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Reduced service account permissions**\n\nApigee hybrid v1.17.0 reduces the Google Cloud IAM permissions that Apigee service accounts require. Service accounts that use Cloud Storage now require only the `storage.objects.get` and `storage.objects.create` permissions rather than the broader Storage Admin (`roles/storage.admin`) role. The Cassandra components also no longer run with the `privileged: true` security context.\n\nFor more information about service accounts, see [Create service accounts](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/create-service-account).",
+        "summary": {
+          "title": "Reduced Service Account Permissions",
+          "summary": "Apigee hybrid v1.17.0 now requires fewer permissions for service accounts, specifically for Cloud Storage operations. Additionally, Cassandra components no longer run with a privileged security context."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Various security and CVE fixes are included in this release.",
+        "summary": {
+          "title": "Security updates released",
+          "summary": "This release includes important security fixes and addresses various CVEs to enhance the overall security of the system."
+        }
+      }
+    ],
     "2026-08-26": [
       {
         "kind": "v1.14.8",

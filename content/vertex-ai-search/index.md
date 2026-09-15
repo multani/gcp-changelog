@@ -1,5 +1,23 @@
 # Vertex AI Search
 
+## 2026-09-14
+
+### Feature
+
+**Agent Search: Search query add-ons for configurable pricing (GA)**
+
+Search query add-on specifications (`searchAddonSpec`) for configurable
+pricing are generally available (GA) in the v1 API. You can use
+`searchAddonSpec` when you want to save money by turning off add-ons for
+individual search requests made programmatically.
+
+For more information, see [About controlling which add-ons apply to a search
+request](https://docs.cloud.google.com/generative-ai-app-builder/docs/enable-configurable-pricing#control-addons)
+and [REST, per search
+request](https://docs.cloud.google.com/generative-ai-app-builder/docs/enable-configurable-pricing#search-configurable)
+in *Manage configurable pricing for search query add-ons*.
+
+---
 ## 2026-08-13
 
 ### Feature

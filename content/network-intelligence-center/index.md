@@ -1,5 +1,15 @@
 # Network Intelligence Center
 
+## 2026-09-14
+
+### Feature
+
+When adding a new Google Cloud Compute Engine, container, or VM Monitoring Point,
+[Cloud Network Insights](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/)
+lets you generate Google Cloud CLI commands in the Google Cloud console to
+download Monitoring Point installation bundles.
+
+---
 ## 2026-09-09
 
 ### Feature

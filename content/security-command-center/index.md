@@ -1,5 +1,13 @@
 # Security Command Center
 
+## 2026-09-14
+
+### Deprecated
+
+Data Security Posture Management is deprecated. It will be shut down on February 1, 2027.
+Learn more about the controls and [alternative detection capabilities](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security#data-security-framework).
+
+---
 ## 2026-08-13
 
 ### Feature

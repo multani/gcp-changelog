@@ -1,5 +1,15 @@
 # Cloud Workstations
 
+## 2026-09-14
+
+### Feature
+
+Cloud Workstations supports customizing
+[provisioned IOPS and throughput](https://docs.cloud.google.com/workstations/docs/reference/rest/v1beta/projects.locations.workstationClusters.workstationConfigs#gcehyperdiskbalancedhighavailability)
+for Hyperdisk Balanced High Availability disks. This customization feature
+is in Preview.
+
+---
 ## 2026-08-26
 
 ### Feature

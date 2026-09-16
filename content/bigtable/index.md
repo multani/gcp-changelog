@@ -1,5 +1,18 @@
 # Bigtable
 
+## 2026-09-14
+
+### Feature
+
+You can use the Google Cloud console to create, list, and query
+[parameterized views](https://docs.cloud.google.com/bigtable/docs/parameterized-views-overview) for your
+Bigtable instances. You can also configure view parameters and run queries in
+Bigtable Studio. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[Create and manage parameterized views](https://docs.cloud.google.com/bigtable/docs/create-manage-parameterized-views).
+
+---
 ## 2026-09-01
 
 ### Feature

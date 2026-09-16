@@ -1,5 +1,23 @@
 # Datastream
 
+## 2026-09-16
+
+### Feature
+
+Datastream now supports MongoDB extended JSON canonical mode as the
+default format for new streams from MongoDB sources to BigQuery
+destinations.
+
+Canonical mode provides higher data fidelity by explicitly labeling every
+BSON type to prevent precision loss during data exchange.
+
+For more information, see the following:
+
+* [Stream data from MongoDB databases](https://docs.cloud.google.com/datastream/docs/sources-mongodb)
+* [MongoDB data types in
+  BigQuery](https://docs.cloud.google.com/datastream/docs/bq-map-data-types#mongodb-data-types)
+
+---
 ## 2026-08-31
 
 ### Feature

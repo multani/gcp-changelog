@@ -1,5 +1,15 @@
 # BigQuery
 
+## 2026-09-16
+
+### Feature
+
+You can use the [migration lineage service](https://docs.cloud.google.com/bigquery/docs/migration/migration-lineage) to
+visualize the data flow and connections in your source database and
+help you plan a BigQuery data warehouse migration. This feature is in
+[Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-09-14
 
 ### Change

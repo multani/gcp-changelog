@@ -1,5 +1,16 @@
 # NetApp Volumes
 
+## 2026-09-15
+
+### Announcement
+
+Effective September 15, 2026, you can't create new Flex File storage pools, but
+existing pools remain supported. Support for the Flex File service level of
+Google Cloud NetApp Volumes ends on June 15, 2027. You must migrate your data
+from Flex File to the Flex Unified service level. For more information, see
+[Migration to Flex Unified service level](https://docs.cloud.google.com/netapp/volumes/docs/get-started/migration-to-flex-unified).
+
+---
 ## 2026-09-09
 
 ### Announcement

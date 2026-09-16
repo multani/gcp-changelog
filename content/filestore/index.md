@@ -1,5 +1,14 @@
 # Filestore
 
+## 2026-09-16
+
+### Feature
+
+Small capacity Filestore instances for the Regional service tier are [generally available (GA)](https://cloud.google.com/products#product-launch-stages). Small capacity instances start at 100 GiB and scale in 1 GiB increments, providing an option for development, testing, and applications with low traffic or basic storage needs.
+
+For more information, see [Small capacity instances](https://docs.cloud.google.com/filestore/docs/service-tiers#small-instances).
+
+---
 ## 2026-06-02
 
 ### Feature

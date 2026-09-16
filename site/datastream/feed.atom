@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Datastream</title>
   <subtitle>Changelog for Google Cloud product: Datastream</subtitle>
-  <updated>2026-08-31T00:00:00+00:00</updated>
+  <updated>2026-09-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:datastream</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/datastream/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:datastream:2026-09-16:feature:0</id>
+    <published>2026-09-16T00:00:00+00:00</published>
+    <updated>2026-09-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Datastream now supports MongoDB extended JSON canonical mode as the
+default format for new streams from MongoDB sources to BigQuery
+destinations.</p>
+<p>Canonical mode provides higher data fidelity by explicitly labeling every
+BSON type to prevent precision loss during data exchange.</p>
+<p>For more information, see the following:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/datastream/docs/sources-mongodb">Stream data from MongoDB databases</a></li>
+<li><a href="https://docs.cloud.google.com/datastream/docs/bq-map-data-types#mongodb-data-types">MongoDB data types in
+  BigQuery</a></li>
+</ul>]]></content>
+    <summary>Datastream now defaults to MongoDB extended JSON canonical mode for new streams to BigQuery. This mode enhances data fidelity by explicitly labeling BSON types, preventing precision loss during data exchange.</summary>
+    <title>Feature: Datastream supports MongoDB extended JSON</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,119 @@
 # Agent Platform Workbench
 
+## 2026-09-13
+
+### Change
+
+
+
+### 20260911.00_p0 Release
+
+
+
+### Change
+
+
+
+### 20260913.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the %%bigquery notebook cell magic, which returned an error instead of query results in JupyterLab 4.
+
+### Fixed
+
+Fixed the %%bigquery notebook cell magic, which returned an error instead of query results in JupyterLab 4.
+
+### Change
+
+
+
+### 20260913-2230-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260913-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed an issue where the `notebook-disable-nbconvert` metadata flag was ignored in custom containers.
+
+### Change
+
+The obsolete
+`google-cloud-sdk` transitional package is no longer installed. The Google Cloud
+CLI itself is unchanged; it was already provided by the `google-cloud-cli`
+package.
+
+### Fixed
+
+Fixed the %%bigquery notebook cell magic, which returned an error instead of query results in JupyterLab 4.
+
+### Fixed
+
+Fixed an issue where the `notebook-disable-nbconvert` metadata flag was ignored in custom containers.
+
+### Fixed
+
+Fixed the %%bigquery notebook cell magic, which returned an error instead of query results in JupyterLab 4.
+
+### Change
+
+
+
+### 20260913-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the %%bigquery notebook cell magic, which returned an error instead of query results in JupyterLab 4.
+
+### Change
+
+
+
+### M149 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed the %%bigquery notebook cell magic, which returned an error instead of query results in JupyterLab 4.
+
+---
 ## 2026-09-08
 
 ### Fixed

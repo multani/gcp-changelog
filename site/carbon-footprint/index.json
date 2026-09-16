@@ -1,6 +1,16 @@
 {
   "name": "Carbon Footprint",
   "entries": {
+    "2026-09-15": [
+      {
+        "kind": "Change",
+        "content": "For the July 2026 data release (published mid-September 2026), we have upgraded the carbon model to version 17 and implemented the following updates:\n\n**Updating Scope 1 & 3 Emissions from Google's Corporate Footprint**\n\n* Allocation factor refresh: Updated Scope 1 and Scope 3 allocation factors using company-wide data from the [2026 Google Environmental Report](https://sustainability.google/google-2026-environmental-report/).\n* Methodology application: For details on how corporate Scope 1 and Scope 3 emissions are distributed across cloud products and services, refer to the [non-electricity emission sources section of the methodology documentation](https://docs.cloud.google.com/carbon-footprint/docs/methodology#non-electricity-allocation).\n\n**Updating Inputs for Scope 2 Market-Based Emissions Calculations**\n\n* Updated annual renewable electricity allocation percentages in accordance with the [2026 Google Environmental Report](https://sustainability.google/google-2026-environmental-report/).\n* Refreshed background annual emissions factors using updated government data sources across Scope 1, Scope 2, and Scope 3. Note that Scope 2 location-based emissions continue to be calculated using hourly greenhouse gas emission factors. Learn more in the [Scope 2 market-based allocation documentation](https://docs.cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation).\n* Incorporated marketplace purchases of Granular Certificates (Type B certificates / T-EACs) covering a significant portion of electricity load across carbon-intensive regions.\n* Granular certificate purchases represent market-based accounting allocations. Customers seeking to minimize emissions are encouraged to prioritize [regions with high Carbon Free Energy](https://cloud.google.com/sustainability/region-carbon#data) (CFE) scores for new workloads.\n\n**Regional Accounting & Boundary Updates**\n\n* Aligned European clean energy matching boundaries with updated RE100 criteria.\n* Corrected country mapping configurations in annual emission factor scripts to resolve historical data discrepancies across select Asian market regions (e.g., asia-east2, asia-northeast3).\n\nTo correct your July emissions data, [schedule a manual data backfill](https://docs.cloud.google.com/bigquery/docs/working-with-transfers#bq_8) for the month.",
+        "summary": {
+          "title": "Carbon Model Update for July 2026 Data Release",
+          "summary": "The carbon model has been upgraded to version 17 for the July 2026 data release, incorporating updated Scope 1, 2, and 3 emissions calculations. This includes refreshed allocation factors, renewable energy percentages, and regional accounting adjustments based on the latest environmental report and data sources. Customers can request a manual data backfill to reflect these changes in their July emissions data."
+        }
+      }
+    ],
     "2026-08-14": [
       {
         "kind": "Announcement",

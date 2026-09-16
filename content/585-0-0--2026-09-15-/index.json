@@ -1,0 +1,135 @@
+{
+  "name": "585.0.0 (2026-09-15)",
+  "entries": {
+    "2026-09-15": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Cloud Storage)** Deprecated `ADMIT_ON_SECOND_MISS` choice for `--admission-policy` flag in `gcloud storage buckets anywhere-caches create` and `gcloud storage buckets anywhere-caches update`.",
+        "summary": {
+          "title": "Admission Policy Change in Cloud Storage",
+          "summary": "The ADMIT_ON_SECOND_MISS option for the --admission-policy flag in gcloud storage buckets anywhere-caches commands has been deprecated. This change affects how caches handle admission policies."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Removed the legacy `--tls-offload` flag from\n  `gcloud auth enterprise-certificate-config create` and deprecated the legacy\n  C++ ECP TLS Offload Engine. Certificate-Based Access (CBA) requests now\n  exclusively use the ECP HTTP Proxy (`ecp_http_proxy`).\n* Added support for ANSI escape sequences and colorization in `tmux` environments.",
+        "summary": {
+          "title": "gcloud CLI updates",
+          "summary": "The gcloud CLI has been updated with changes to certificate authentication and improved tmux support. The legacy --tls-offload flag has been removed, and ANSI escape sequences are now supported in tmux."
+        }
+      },
+      {
+        "kind": "App Topology",
+        "content": "* Promoted `gcloud app-topology` to GA and beta.",
+        "summary": {
+          "title": "App Topology Now Generally Available",
+          "summary": "The app topology feature, previously in beta, has now graduated to General Availability. This release provides a stable and production-ready solution for visualizing your application's structure and dependencies."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Added `--cross-cloud-cache` to `gcloud biglake delta-sharing catalogs create` and `update` commands to configure cross-cloud cache per catalog.",
+        "summary": {
+          "title": "BigLake Introduces Cross-Cloud Caching",
+          "summary": "BigLake now supports cross-cloud caching for Delta Sharing catalogs. This feature can be configured using the `--cross-cloud-cache` flag in the `gcloud biglake delta-sharing catalogs create` and `update` commands, allowing for improved data accessibility across different cloud environments."
+        }
+      },
+      {
+        "kind": "Cloud API Gateway",
+        "content": "* Added `--enable-streaming` to `gcloud api-gateway gateways create`, which\n  creates a gateway that serves response streaming: server-sent events, HTTP\n  chunked transfer, WebSockets, and gRPC/HTTP2 bidirectional streaming. The\n  streaming mode can only be set when the gateway is created.",
+        "summary": {
+          "title": "Gateway Support for Streaming Responses",
+          "summary": "The Cloud API Gateway now supports response streaming, including server-sent events, HTTP chunked transfer, WebSockets, and gRPC/HTTP2 bidirectional streaming. This feature can be enabled during gateway creation using the new `--enable-streaming` flag with the `gcloud api-gateway gateways create` command."
+        }
+      },
+      {
+        "kind": "Cloud Backup DR",
+        "content": "* Added `gcloud backup-dr auto-protection-policies` command group in alpha and beta tracks.\n* Added `gcloud backup-dr auto-protection-bindings` command group in alpha and beta tracks.\n* Added `gcloud backup-dr applied-auto-protection-policies` command group in alpha and beta tracks.\n* Added `gcloud backup-dr binding-matching-resources` command group to manage Backup and DR Binding Matching Resources in alpha and beta tracks.",
+        "summary": {
+          "title": "New Backup and DR Commands Available",
+          "summary": "New alpha and beta commands for managing auto-protection policies and bindings in Backup and DR are now available. These commands allow for finer control over backup and disaster recovery configurations."
+        }
+      },
+      {
+        "kind": "Cloud Dataflow",
+        "content": "* Added support for `--additional-pipeline-options` flag to\n  `gcloud dataflow jobs run` command to support common runtime pipeline\n  option assignments for classic Dataflow Templates.",
+        "summary": {
+          "title": "Dataflow classic templates runtime options",
+          "summary": "You can now set runtime options for classic Dataflow Templates using the `--additional-pipeline-options` flag with the `gcloud dataflow jobs run` command. This simplifies the assignment of common pipeline options during job execution."
+        }
+      },
+      {
+        "kind": "Cloud Filestore",
+        "content": "* Added `--psc-requested-ip-address` flag to `gcloud filestore instances create`\n  to allow specifying a desired IP address.",
+        "summary": {
+          "title": "Specify Filestore IP Address",
+          "summary": "You can now request a specific IP address when creating a Cloud Filestore instance using the new `--psc-requested-ip-address` flag in the `gcloud filestore instances create` command. This provides greater control over your network configuration."
+        }
+      },
+      {
+        "kind": "Cloud IAM",
+        "content": "* Promoted `enabled-for-users-groups` option for `--scim-usage` flag to GA in `gcloud iam workforce-pools providers`.",
+        "summary": {
+          "title": "Workforce Pool SCIM Usage GA",
+          "summary": "The `enabled-for-users-groups` option for the `--scim-usage` flag in `gcloud iam workforce-pools providers` has now reached General Availability. This promotion allows for enhanced management of user and group provisioning within workforce identity federation."
+        }
+      },
+      {
+        "kind": "Cloud Memorystore",
+        "content": "* Promoted `--tags` flag of `gcloud memcache instances create to GA`.\n* Promote `gcloud memorystore instances` basic auth feature to the GA release track:\n  + Promote `--authorization-mode=token-auth` flag in `gcloud memorystore instances create` and `update` commands.\n  + Promote new command groups and commands:\n  + `gcloud memorystore instances create-token-auth-user`\n  + `gcloud memorystore instances token-auth-users` (commands: `create-auth-token`, `delete`, `describe`, `list`)\n  + `gcloud memorystore instances token-auth-users auth-tokens` (commands: `delete`, `describe`, `list`)",
+        "summary": {
+          "title": "Memorystore Enhancements Now Generally Available",
+          "summary": "Cloud Memorystore for Redis now offers a generally available release track for key features. This includes the promoted `--tags` flag for instance creation and the basic authentication feature, which now supports token authentication via `gcloud` commands."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Added `--disk-provisioned-iops` and `--disk-provisioned-throughput` flags to `gcloud beta workstations configs create` and `gcloud beta workstations configs update` commands.\n* Added `--console-base-url` flag to `gcloud beta workstations clusters create`\n  and `gcloud beta workstations clusters update` commands.",
+        "summary": {
+          "title": "Cloud Workstations disk and console enhancements",
+          "summary": "New flags for Cloud Workstations allow for custom disk IOPS and throughput provisioning. Additionally, the console base URL can now be configured during cluster creation and updates."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Fixed an issue where updating labels on Interconnect Attachments using `gcloud compute interconnects attachments [dedicated|partner|provider|l2-forwarding] update --update-labels` failed.\n* Allowed using project numbers in command arguments.\n* Promoted `gcloud compute image-views describe` command to GA.\n* Promoted `gcloud compute image-views list` command to beta and GA.\n* Added `--content-type`, `--http-status`, `--backend-bucket`, and `--backend-service` flags to `gcloud beta compute url-maps invalidate-cdn-cache` to support extended invalidation matchers.\n* Added support for wildcard (`*`) matching in `--host` flag of `gcloud beta compute url-maps invalidate-cdn-cache` (e.g., `--host=\"*.example.com\"`).",
+        "summary": {
+          "title": "Compute Engine Updates",
+          "summary": "Recent Compute Engine updates include fixes for Interconnect Attachments, improved project number support, and enhancements to CDN cache invalidation with new flags and wildcard matching. Several image view commands have also been promoted to General Availability and Beta."
+        }
+      },
+      {
+        "kind": "Compute OS Config",
+        "content": "* Added Regional Endpoints (REP) support for `gcloud compute os-config` commands via `--endpoint-mode`.",
+        "summary": {
+          "title": "OS Config: Regional Endpoint Support",
+          "summary": "OS Config now supports regional endpoints through the `--endpoint-mode` flag in `gcloud compute os-config` commands. This enhancement allows for more localized and efficient management of OS configurations across different regions."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Added `--ignore-maintenance-policies`, `--ignore-cluster-disruption-budgets`,\n  `--patch-only`, `--soak-duration-overrides-per-stage`,\n  and `--soak-duration-override-all-stages` flags\n  to `gcloud container fleet rolloutsequences upgrade`.",
+        "summary": {
+          "title": "New flags for GKE Hub rollout upgrades",
+          "summary": "The `gcloud container fleet rolloutsequences upgrade` command now supports new flags: `--ignore-maintenance-policies`, `--ignore-cluster-disruption-budgets`, `--patch-only`, `--soak-duration-overrides-per-stage`, and `--soak-duration-override-all-stages`. These additions provide more granular control over the rollout upgrade process."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Updated default kubectl from 1.35.7 to 1.35.8.\n* Added kubectl version 1.37.0 for the RAPID channel.\n* Additional kubectl versions:\n  + 1.31.14\n  + 1.32.13\n  + 1.33.13\n  + 1.34.11\n  + 1.35.8\n  + 1.36.4\n  + 1.37.0",
+        "summary": {
+          "title": "Kubernetes Engine kubectl Updates",
+          "summary": "We've updated the default kubectl version and added new versions to the RAPID channel, along with several additional patch versions for broader compatibility."
+        }
+      },
+      {
+        "kind": "Transfer",
+        "content": "* Added `--include-storage-classes` flag to `gcloud transfer jobs create` and `gcloud transfer jobs update`, and `--clear-include-storage-classes` flag to `gcloud transfer jobs update`.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "New transfer job flags available",
+          "summary": "New flags, --include-storage-classes and --clear-include-storage-classes, have been added to the transfer job commands. These flags allow for more granular control over data transfers."
+        }
+      }
+    ]
+  }
+}

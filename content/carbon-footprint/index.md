@@ -1,5 +1,31 @@
 # Carbon Footprint
 
+## 2026-09-15
+
+### Change
+
+For the July 2026 data release (published mid-September 2026), we have upgraded the carbon model to version 17 and implemented the following updates:
+
+**Updating Scope 1 & 3 Emissions from Google's Corporate Footprint**
+
+* Allocation factor refresh: Updated Scope 1 and Scope 3 allocation factors using company-wide data from the [2026 Google Environmental Report](https://sustainability.google/google-2026-environmental-report/).
+* Methodology application: For details on how corporate Scope 1 and Scope 3 emissions are distributed across cloud products and services, refer to the [non-electricity emission sources section of the methodology documentation](https://docs.cloud.google.com/carbon-footprint/docs/methodology#non-electricity-allocation).
+
+**Updating Inputs for Scope 2 Market-Based Emissions Calculations**
+
+* Updated annual renewable electricity allocation percentages in accordance with the [2026 Google Environmental Report](https://sustainability.google/google-2026-environmental-report/).
+* Refreshed background annual emissions factors using updated government data sources across Scope 1, Scope 2, and Scope 3. Note that Scope 2 location-based emissions continue to be calculated using hourly greenhouse gas emission factors. Learn more in the [Scope 2 market-based allocation documentation](https://docs.cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation).
+* Incorporated marketplace purchases of Granular Certificates (Type B certificates / T-EACs) covering a significant portion of electricity load across carbon-intensive regions.
+* Granular certificate purchases represent market-based accounting allocations. Customers seeking to minimize emissions are encouraged to prioritize [regions with high Carbon Free Energy](https://cloud.google.com/sustainability/region-carbon#data) (CFE) scores for new workloads.
+
+**Regional Accounting & Boundary Updates**
+
+* Aligned European clean energy matching boundaries with updated RE100 criteria.
+* Corrected country mapping configurations in annual emission factor scripts to resolve historical data discrepancies across select Asian market regions (e.g., asia-east2, asia-northeast3).
+
+To correct your July emissions data, [schedule a manual data backfill](https://docs.cloud.google.com/bigquery/docs/working-with-transfers#bq_8) for the month.
+
+---
 ## 2026-08-14
 
 ### Announcement

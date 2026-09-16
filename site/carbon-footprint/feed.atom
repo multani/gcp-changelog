@@ -2,9 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Carbon Footprint</title>
   <subtitle>Changelog for Google Cloud product: Carbon Footprint</subtitle>
-  <updated>2026-08-14T00:00:00+00:00</updated>
+  <updated>2026-09-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:carbon-footprint</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/carbon-footprint/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:carbon-footprint:2026-09-15:change:0</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For the July 2026 data release (published mid-September 2026), we have upgraded the carbon model to version 17 and implemented the following updates:</p>
+<p><strong>Updating Scope 1 &amp; 3 Emissions from Google's Corporate Footprint</strong></p>
+<ul>
+<li>Allocation factor refresh: Updated Scope 1 and Scope 3 allocation factors using company-wide data from the <a href="https://sustainability.google/google-2026-environmental-report/">2026 Google Environmental Report</a>.</li>
+<li>Methodology application: For details on how corporate Scope 1 and Scope 3 emissions are distributed across cloud products and services, refer to the <a href="https://docs.cloud.google.com/carbon-footprint/docs/methodology#non-electricity-allocation">non-electricity emission sources section of the methodology documentation</a>.</li>
+</ul>
+<p><strong>Updating Inputs for Scope 2 Market-Based Emissions Calculations</strong></p>
+<ul>
+<li>Updated annual renewable electricity allocation percentages in accordance with the <a href="https://sustainability.google/google-2026-environmental-report/">2026 Google Environmental Report</a>.</li>
+<li>Refreshed background annual emissions factors using updated government data sources across Scope 1, Scope 2, and Scope 3. Note that Scope 2 location-based emissions continue to be calculated using hourly greenhouse gas emission factors. Learn more in the <a href="https://docs.cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation">Scope 2 market-based allocation documentation</a>.</li>
+<li>Incorporated marketplace purchases of Granular Certificates (Type B certificates / T-EACs) covering a significant portion of electricity load across carbon-intensive regions.</li>
+<li>Granular certificate purchases represent market-based accounting allocations. Customers seeking to minimize emissions are encouraged to prioritize <a href="https://cloud.google.com/sustainability/region-carbon#data">regions with high Carbon Free Energy</a> (CFE) scores for new workloads.</li>
+</ul>
+<p><strong>Regional Accounting &amp; Boundary Updates</strong></p>
+<ul>
+<li>Aligned European clean energy matching boundaries with updated RE100 criteria.</li>
+<li>Corrected country mapping configurations in annual emission factor scripts to resolve historical data discrepancies across select Asian market regions (e.g., asia-east2, asia-northeast3).</li>
+</ul>
+<p>To correct your July emissions data, <a href="https://docs.cloud.google.com/bigquery/docs/working-with-transfers#bq_8">schedule a manual data backfill</a> for the month.</p>]]></content>
+    <summary>The carbon model has been upgraded to version 17 for the July 2026 data release, incorporating updated Scope 1, 2, and 3 emissions calculations. This includes refreshed allocation factors, renewable energy percentages, and regional accounting adjustments based on the latest environmental report and data sources. Customers can request a manual data backfill to reflect these changes in their July emissions data.</summary>
+    <title>Change: Carbon Model Update for July 2026 Data Release</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

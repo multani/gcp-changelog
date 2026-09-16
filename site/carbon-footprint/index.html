@@ -233,6 +233,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          585 0 0  2026 09 15  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../585-0-0--2026-09-15-/" class="dropdown-item">585.0.0 (2026-09-15)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -2868,6 +2880,28 @@
 
 
 <h1 id="carbon-footprint">Carbon Footprint</h1>
+<h2 id="2026-09-15">2026-09-15</h2>
+<h3 id="change">Change</h3>
+<p>For the July 2026 data release (published mid-September 2026), we have upgraded the carbon model to version 17 and implemented the following updates:</p>
+<p><strong>Updating Scope 1 &amp; 3 Emissions from Google's Corporate Footprint</strong></p>
+<ul>
+<li>Allocation factor refresh: Updated Scope 1 and Scope 3 allocation factors using company-wide data from the <a href="https://sustainability.google/google-2026-environmental-report/">2026 Google Environmental Report</a>.</li>
+<li>Methodology application: For details on how corporate Scope 1 and Scope 3 emissions are distributed across cloud products and services, refer to the <a href="https://docs.cloud.google.com/carbon-footprint/docs/methodology#non-electricity-allocation">non-electricity emission sources section of the methodology documentation</a>.</li>
+</ul>
+<p><strong>Updating Inputs for Scope 2 Market-Based Emissions Calculations</strong></p>
+<ul>
+<li>Updated annual renewable electricity allocation percentages in accordance with the <a href="https://sustainability.google/google-2026-environmental-report/">2026 Google Environmental Report</a>.</li>
+<li>Refreshed background annual emissions factors using updated government data sources across Scope 1, Scope 2, and Scope 3. Note that Scope 2 location-based emissions continue to be calculated using hourly greenhouse gas emission factors. Learn more in the <a href="https://docs.cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation">Scope 2 market-based allocation documentation</a>.</li>
+<li>Incorporated marketplace purchases of Granular Certificates (Type B certificates / T-EACs) covering a significant portion of electricity load across carbon-intensive regions.</li>
+<li>Granular certificate purchases represent market-based accounting allocations. Customers seeking to minimize emissions are encouraged to prioritize <a href="https://cloud.google.com/sustainability/region-carbon#data">regions with high Carbon Free Energy</a> (CFE) scores for new workloads.</li>
+</ul>
+<p><strong>Regional Accounting &amp; Boundary Updates</strong></p>
+<ul>
+<li>Aligned European clean energy matching boundaries with updated RE100 criteria.</li>
+<li>Corrected country mapping configurations in annual emission factor scripts to resolve historical data discrepancies across select Asian market regions (e.g., asia-east2, asia-northeast3).</li>
+</ul>
+<p>To correct your July emissions data, <a href="https://docs.cloud.google.com/bigquery/docs/working-with-transfers#bq_8">schedule a manual data backfill</a> for the month.</p>
+<hr />
 <h2 id="2026-08-14">2026-08-14</h2>
 <h3 id="announcement">Announcement</h3>
 <p>As detailed in our <a href="https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/21455428735c7305f2cb5c0038fc14bb0803abb8.pdf#page=22">2026 Environmental Report (p. 22)</a>, Google is now using Granular Certificates purchased from the marketplace to strategically match more of our load on an hourly basis. To accurately incorporate these certificates into the Cloud customers' allocation of carbon intensity calculations, the July 2026 semi-annual <a href="https://docs.cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation">methodology refresh</a> will be delayed by one month. We will provide further updates once the revised data is available.</p>
@@ -2974,6 +3008,9 @@ provide an update when the data correction is available.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#carbon-footprint">Carbon Footprint</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-15" class="nav-link">2026-09-15</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-08-14" class="nav-link">2026-08-14</a>
           </li>

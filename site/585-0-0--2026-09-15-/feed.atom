@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 585.0.0 (2026-09-15)</title>
+  <subtitle>Changelog for Google Cloud product: 585.0.0 (2026-09-15)</subtitle>
+  <updated>2026-09-15T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/585-0-0--2026-09-15-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:breaking changes:0</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Cloud Storage)</strong> Deprecated <code>ADMIT_ON_SECOND_MISS</code> choice for <code>--admission-policy</code> flag in <code>gcloud storage buckets anywhere-caches create</code> and <code>gcloud storage buckets anywhere-caches update</code>.</li>
+</ul>]]></content>
+    <summary>The ADMIT_ON_SECOND_MISS option for the --admission-policy flag in gcloud storage buckets anywhere-caches commands has been deprecated. This change affects how caches handle admission policies.</summary>
+    <title>Breaking Changes: Admission Policy Change in Cloud Storage</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:google cloud cli:1</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Removed the legacy <code>--tls-offload</code> flag from
+  <code>gcloud auth enterprise-certificate-config create</code> and deprecated the legacy
+  C++ ECP TLS Offload Engine. Certificate-Based Access (CBA) requests now
+  exclusively use the ECP HTTP Proxy (<code>ecp_http_proxy</code>).</li>
+<li>Added support for ANSI escape sequences and colorization in <code>tmux</code> environments.</li>
+</ul>]]></content>
+    <summary>The gcloud CLI has been updated with changes to certificate authentication and improved tmux support. The legacy --tls-offload flag has been removed, and ANSI escape sequences are now supported in tmux.</summary>
+    <title>Google Cloud CLI: gcloud CLI updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:app topology:2</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud app-topology</code> to GA and beta.</li>
+</ul>]]></content>
+    <summary>The app topology feature, previously in beta, has now graduated to General Availability. This release provides a stable and production-ready solution for visualizing your application's structure and dependencies.</summary>
+    <title>App Topology: App Topology Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:biglake:3</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--cross-cloud-cache</code> to <code>gcloud biglake delta-sharing catalogs create</code> and <code>update</code> commands to configure cross-cloud cache per catalog.</li>
+</ul>]]></content>
+    <summary>BigLake now supports cross-cloud caching for Delta Sharing catalogs. This feature can be configured using the `--cross-cloud-cache` flag in the `gcloud biglake delta-sharing catalogs create` and `update` commands, allowing for improved data accessibility across different cloud environments.</summary>
+    <title>BigLake: BigLake Introduces Cross-Cloud Caching</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:cloud api gateway:4</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--enable-streaming</code> to <code>gcloud api-gateway gateways create</code>, which
+  creates a gateway that serves response streaming: server-sent events, HTTP
+  chunked transfer, WebSockets, and gRPC/HTTP2 bidirectional streaming. The
+  streaming mode can only be set when the gateway is created.</li>
+</ul>]]></content>
+    <summary>The Cloud API Gateway now supports response streaming, including server-sent events, HTTP chunked transfer, WebSockets, and gRPC/HTTP2 bidirectional streaming. This feature can be enabled during gateway creation using the new `--enable-streaming` flag with the `gcloud api-gateway gateways create` command.</summary>
+    <title>Cloud API Gateway: Gateway Support for Streaming Responses</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:cloud backup dr:5</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud backup-dr auto-protection-policies</code> command group in alpha and beta tracks.</li>
+<li>Added <code>gcloud backup-dr auto-protection-bindings</code> command group in alpha and beta tracks.</li>
+<li>Added <code>gcloud backup-dr applied-auto-protection-policies</code> command group in alpha and beta tracks.</li>
+<li>Added <code>gcloud backup-dr binding-matching-resources</code> command group to manage Backup and DR Binding Matching Resources in alpha and beta tracks.</li>
+</ul>]]></content>
+    <summary>New alpha and beta commands for managing auto-protection policies and bindings in Backup and DR are now available. These commands allow for finer control over backup and disaster recovery configurations.</summary>
+    <title>Cloud Backup DR: New Backup and DR Commands Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:cloud dataflow:6</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for <code>--additional-pipeline-options</code> flag to
+  <code>gcloud dataflow jobs run</code> command to support common runtime pipeline
+  option assignments for classic Dataflow Templates.</li>
+</ul>]]></content>
+    <summary>You can now set runtime options for classic Dataflow Templates using the `--additional-pipeline-options` flag with the `gcloud dataflow jobs run` command. This simplifies the assignment of common pipeline options during job execution.</summary>
+    <title>Cloud Dataflow: Dataflow classic templates runtime options</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:cloud filestore:7</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--psc-requested-ip-address</code> flag to <code>gcloud filestore instances create</code>
+  to allow specifying a desired IP address.</li>
+</ul>]]></content>
+    <summary>You can now request a specific IP address when creating a Cloud Filestore instance using the new `--psc-requested-ip-address` flag in the `gcloud filestore instances create` command. This provides greater control over your network configuration.</summary>
+    <title>Cloud Filestore: Specify Filestore IP Address</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:cloud iam:8</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>enabled-for-users-groups</code> option for <code>--scim-usage</code> flag to GA in <code>gcloud iam workforce-pools providers</code>.</li>
+</ul>]]></content>
+    <summary>The `enabled-for-users-groups` option for the `--scim-usage` flag in `gcloud iam workforce-pools providers` has now reached General Availability. This promotion allows for enhanced management of user and group provisioning within workforce identity federation.</summary>
+    <title>Cloud IAM: Workforce Pool SCIM Usage GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:cloud memorystore:9</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--tags</code> flag of <code>gcloud memcache instances create to GA</code>.</li>
+<li>Promote <code>gcloud memorystore instances</code> basic auth feature to the GA release track:</li>
+<li>Promote <code>--authorization-mode=token-auth</code> flag in <code>gcloud memorystore instances create</code> and <code>update</code> commands.</li>
+<li>Promote new command groups and commands:</li>
+<li><code>gcloud memorystore instances create-token-auth-user</code></li>
+<li><code>gcloud memorystore instances token-auth-users</code> (commands: <code>create-auth-token</code>, <code>delete</code>, <code>describe</code>, <code>list</code>)</li>
+<li><code>gcloud memorystore instances token-auth-users auth-tokens</code> (commands: <code>delete</code>, <code>describe</code>, <code>list</code>)</li>
+</ul>]]></content>
+    <summary>Cloud Memorystore for Redis now offers a generally available release track for key features. This includes the promoted `--tags` flag for instance creation and the basic authentication feature, which now supports token authentication via `gcloud` commands.</summary>
+    <title>Cloud Memorystore: Memorystore Enhancements Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:cloud workstations:10</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--disk-provisioned-iops</code> and <code>--disk-provisioned-throughput</code> flags to <code>gcloud beta workstations configs create</code> and <code>gcloud beta workstations configs update</code> commands.</li>
+<li>Added <code>--console-base-url</code> flag to <code>gcloud beta workstations clusters create</code>
+  and <code>gcloud beta workstations clusters update</code> commands.</li>
+</ul>]]></content>
+    <summary>New flags for Cloud Workstations allow for custom disk IOPS and throughput provisioning. Additionally, the console base URL can now be configured during cluster creation and updates.</summary>
+    <title>Cloud Workstations: Cloud Workstations disk and console enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:compute engine:11</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where updating labels on Interconnect Attachments using <code>gcloud compute interconnects attachments [dedicated|partner|provider|l2-forwarding] update --update-labels</code> failed.</li>
+<li>Allowed using project numbers in command arguments.</li>
+<li>Promoted <code>gcloud compute image-views describe</code> command to GA.</li>
+<li>Promoted <code>gcloud compute image-views list</code> command to beta and GA.</li>
+<li>Added <code>--content-type</code>, <code>--http-status</code>, <code>--backend-bucket</code>, and <code>--backend-service</code> flags to <code>gcloud beta compute url-maps invalidate-cdn-cache</code> to support extended invalidation matchers.</li>
+<li>Added support for wildcard (<code>*</code>) matching in <code>--host</code> flag of <code>gcloud beta compute url-maps invalidate-cdn-cache</code> (e.g., <code>--host="*.example.com"</code>).</li>
+</ul>]]></content>
+    <summary>Recent Compute Engine updates include fixes for Interconnect Attachments, improved project number support, and enhancements to CDN cache invalidation with new flags and wildcard matching. Several image view commands have also been promoted to General Availability and Beta.</summary>
+    <title>Compute Engine: Compute Engine Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:compute os config:12</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added Regional Endpoints (REP) support for <code>gcloud compute os-config</code> commands via <code>--endpoint-mode</code>.</li>
+</ul>]]></content>
+    <summary>OS Config now supports regional endpoints through the `--endpoint-mode` flag in `gcloud compute os-config` commands. This enhancement allows for more localized and efficient management of OS configurations across different regions.</summary>
+    <title>Compute OS Config: OS Config: Regional Endpoint Support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:gke hub:13</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--ignore-maintenance-policies</code>, <code>--ignore-cluster-disruption-budgets</code>,
+  <code>--patch-only</code>, <code>--soak-duration-overrides-per-stage</code>,
+  and <code>--soak-duration-override-all-stages</code> flags
+  to <code>gcloud container fleet rolloutsequences upgrade</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud container fleet rolloutsequences upgrade` command now supports new flags: `--ignore-maintenance-policies`, `--ignore-cluster-disruption-budgets`, `--patch-only`, `--soak-duration-overrides-per-stage`, and `--soak-duration-override-all-stages`. These additions provide more granular control over the rollout upgrade process.</summary>
+    <title>GKE Hub: New flags for GKE Hub rollout upgrades</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:kubernetes engine:14</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated default kubectl from 1.35.7 to 1.35.8.</li>
+<li>Added kubectl version 1.37.0 for the RAPID channel.</li>
+<li>Additional kubectl versions:</li>
+<li>1.31.14</li>
+<li>1.32.13</li>
+<li>1.33.13</li>
+<li>1.34.11</li>
+<li>1.35.8</li>
+<li>1.36.4</li>
+<li>1.37.0</li>
+</ul>]]></content>
+    <summary>We've updated the default kubectl version and added new versions to the RAPID channel, along with several additional patch versions for broader compatibility.</summary>
+    <title>Kubernetes Engine: Kubernetes Engine kubectl Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:585-0-0--2026-09-15-:2026-09-15:transfer:15</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--include-storage-classes</code> flag to <code>gcloud transfer jobs create</code> and <code>gcloud transfer jobs update</code>, and <code>--clear-include-storage-classes</code> flag to <code>gcloud transfer jobs update</code>.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>New flags, --include-storage-classes and --clear-include-storage-classes, have been added to the transfer job commands. These flags allow for more granular control over data transfers.</summary>
+    <title>Transfer: New transfer job flags available</title>
+  </entry>
+</feed>

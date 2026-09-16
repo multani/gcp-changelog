@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-09-15
+
+### Feature
+
+**Public preview**: Network-optimized C4N machine type with
+375 GiB to 12,000 GiB of attached Titanium SSD are now available
+in [Preview](https://cloud.google.com/products#product-launch-stages). You don't
+have to request allowlist approval.
+
+For more information, see [C4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series).
+
+---
 ## 2026-09-14
 
 ### Feature

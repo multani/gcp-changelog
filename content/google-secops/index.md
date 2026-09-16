@@ -1,5 +1,18 @@
 # Google SecOps
 
+## 2026-09-15
+
+### Feature
+
+**Grok filter match\_all option in parser syntax**
+
+The Google SecOps parser syntax is updated to support the `match_all` option
+within the Grok filter. This allows parsers to extract all non-overlapping
+pattern occurrences within a field, rather than returning only the first match.
+
+For more information, see [Parser syntax reference](https://docs.cloud.google.com/chronicle/docs/reference/parser-syntax#grok_match_all_option).
+
+---
 ## 2026-09-14
 
 ### Feature

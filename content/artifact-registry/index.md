@@ -1,5 +1,14 @@
 # Artifact Registry
 
+## 2026-09-15
+
+### Feature
+
+Artifact Registry support for managing Conda packages with Artifact Registry
+repositories is in [Preview](https://cloud.google.com/products#section-22).
+For more information, see [Get started with Conda packages](https://docs.cloud.google.com/artifact-registry/docs/conda).
+
+---
 ## 2026-07-24
 
 ### Feature

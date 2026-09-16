@@ -1,5 +1,15 @@
 # Confidential Space
 
+## 2026-09-15
+
+### Announcement
+
+A new Confidential Space image (260800) is available. Support for Confidential
+Space on H100 GPU (`a3-highgpu-1g` machine family) with Intel Trust Authority
+(ITA) attestation is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-10
 
 ### Announcement

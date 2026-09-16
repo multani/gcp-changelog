@@ -1,5 +1,66 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-09-15
+
+### Announcement
+
+**Mobile SDKs 2.16.2**
+
+We've released version 2.16.2 of the mobile SDKs.
+
+### Feature
+
+**Chat check-in for the Mobile SDKs**
+
+Chat check-in is now available for the mobile SDKs. Chat check-in ensures that
+end-users are present and ready to engage before the system connects them to a
+human agent. This decreases the average agent handle time by eliminating the
+time lost when agents wait for end-users who have abandoned a chat.
+
+For more information, see:
+
+* [Chat check-in](https://docs.cloud.google.com/contact-center/ccai-platform/docs/chat-check-in)
+* [SDK
+  configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#sdk-configuration)
+  (Android)
+* [Chat check-in after-hours
+  options](https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#chat_check-in_after-hours_options)
+  (iOS)
+
+### Feature
+
+**New "is typing" indicator in the Mobile SDKs**
+
+The mobile SDKs now display an "is typing" indicator to the end-user when an
+agent is typing.
+
+### Fixed
+
+We've addressed the following issues.
+
+Android and iOS SDKs:
+
+* Fixed an issue that occurred after force-closing a mobile app while the
+  check-in timeout dialog was displayed. When the app was relaunched, the
+  check-in dialog didn't reappear.
+* Fixed an issue where mobile inbound calls didn't connect.
+
+iOS SDK only:
+
+* Fixed an issue where end-users received duplicate end-of-chat notifications
+  when a virtual agent ended a conversation.
+* Fixed an issue where a virtual agent's final message appeared out of order
+  during a chat escalation.
+* Fixed an issue where apps didn't upload logs when the server returned a
+  relative URL.
+
+Android SDK only:
+
+* Fixed an issue where a five-second delay occurred between session creation
+  and the initial chat fetch, significantly delaying when the message
+  appeared.
+
+---
 ## 2026-09-11
 
 ### Announcement

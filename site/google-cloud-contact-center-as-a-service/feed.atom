@@ -2,9 +2,92 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-09-11T00:00:00+00:00</updated>
+  <updated>2026-09-15T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-15:announcement:0</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Mobile SDKs 2.16.2</strong></p>
+<p>We've released version 2.16.2 of the mobile SDKs.</p>]]></content>
+    <summary>Version 2.16.2 of the mobile SDKs has been released. This update is now available for all users.</summary>
+    <title>Announcement: Mobile SDKs Updated to Version 2.16.2</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-15:feature:1</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Chat check-in for the Mobile SDKs</strong></p>
+<p>Chat check-in is now available for the mobile SDKs. Chat check-in ensures that
+end-users are present and ready to engage before the system connects them to a
+human agent. This decreases the average agent handle time by eliminating the
+time lost when agents wait for end-users who have abandoned a chat.</p>
+<p>For more information, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/chat-check-in">Chat check-in</a></li>
+<li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#sdk-configuration">SDK
+  configuration</a>
+  (Android)</li>
+<li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#chat_check-in_after-hours_options">Chat check-in after-hours
+  options</a>
+  (iOS)</li>
+</ul>]]></content>
+    <summary>Chat check-in is now available for our mobile SDKs. This feature ensures end-users are present before connecting them to an agent, reducing wasted agent time and improving efficiency. It helps eliminate instances where agents wait for users who have already left the chat.</summary>
+    <title>Feature: New Chat Check-in for Mobile SDKs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-15:feature:2</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>New "is typing" indicator in the Mobile SDKs</strong></p>
+<p>The mobile SDKs now display an "is typing" indicator to the end-user when an
+agent is typing.</p>]]></content>
+    <summary>The mobile SDKs now feature an 'is typing' indicator. This enhancement provides real-time feedback to users when an agent is composing a message, improving the conversational experience.</summary>
+    <title>Feature: Typing indicator for mobile SDKs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-15:fixed:3</id>
+    <published>2026-09-15T00:00:00+00:00</published>
+    <updated>2026-09-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>We've addressed the following issues.</p>
+<p>Android and iOS SDKs:</p>
+<ul>
+<li>Fixed an issue that occurred after force-closing a mobile app while the
+  check-in timeout dialog was displayed. When the app was relaunched, the
+  check-in dialog didn't reappear.</li>
+<li>Fixed an issue where mobile inbound calls didn't connect.</li>
+</ul>
+<p>iOS SDK only:</p>
+<ul>
+<li>Fixed an issue where end-users received duplicate end-of-chat notifications
+  when a virtual agent ended a conversation.</li>
+<li>Fixed an issue where a virtual agent's final message appeared out of order
+  during a chat escalation.</li>
+<li>Fixed an issue where apps didn't upload logs when the server returned a
+  relative URL.</li>
+</ul>
+<p>Android SDK only:</p>
+<ul>
+<li>Fixed an issue where a five-second delay occurred between session creation
+  and the initial chat fetch, significantly delaying when the message
+  appeared.</li>
+</ul>]]></content>
+    <summary>Several issues have been fixed across Android and iOS SDKs, including problems with app relaunch after force-closing, mobile inbound call connections, duplicate notifications, message ordering during escalations, log uploads, and session creation delays.</summary>
+    <title>Fixed: SDKs fixed: mobile app issues and call connection</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,40 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-09-15": [
+      {
+        "kind": "Announcement",
+        "content": "**Mobile SDKs 2.16.2**\n\nWe've released version 2.16.2 of the mobile SDKs.",
+        "summary": {
+          "title": "Mobile SDKs Updated to Version 2.16.2",
+          "summary": "Version 2.16.2 of the mobile SDKs has been released. This update is now available for all users."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Chat check-in for the Mobile SDKs**\n\nChat check-in is now available for the mobile SDKs. Chat check-in ensures that\nend-users are present and ready to engage before the system connects them to a\nhuman agent. This decreases the average agent handle time by eliminating the\ntime lost when agents wait for end-users who have abandoned a chat.\n\nFor more information, see:\n\n* [Chat check-in](https://docs.cloud.google.com/contact-center/ccai-platform/docs/chat-check-in)\n* [SDK\n  configuration](https://docs.cloud.google.com/contact-center/ccai-platform/docs/android-sdk-guide#sdk-configuration)\n  (Android)\n* [Chat check-in after-hours\n  options](https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#chat_check-in_after-hours_options)\n  (iOS)",
+        "summary": {
+          "title": "New Chat Check-in for Mobile SDKs",
+          "summary": "Chat check-in is now available for our mobile SDKs. This feature ensures end-users are present before connecting them to an agent, reducing wasted agent time and improving efficiency. It helps eliminate instances where agents wait for users who have already left the chat."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**New \"is typing\" indicator in the Mobile SDKs**\n\nThe mobile SDKs now display an \"is typing\" indicator to the end-user when an\nagent is typing.",
+        "summary": {
+          "title": "Typing indicator for mobile SDKs",
+          "summary": "The mobile SDKs now feature an 'is typing' indicator. This enhancement provides real-time feedback to users when an agent is composing a message, improving the conversational experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "We've addressed the following issues.\n\nAndroid and iOS SDKs:\n\n* Fixed an issue that occurred after force-closing a mobile app while the\n  check-in timeout dialog was displayed. When the app was relaunched, the\n  check-in dialog didn't reappear.\n* Fixed an issue where mobile inbound calls didn't connect.\n\niOS SDK only:\n\n* Fixed an issue where end-users received duplicate end-of-chat notifications\n  when a virtual agent ended a conversation.\n* Fixed an issue where a virtual agent's final message appeared out of order\n  during a chat escalation.\n* Fixed an issue where apps didn't upload logs when the server returned a\n  relative URL.\n\nAndroid SDK only:\n\n* Fixed an issue where a five-second delay occurred between session creation\n  and the initial chat fetch, significantly delaying when the message\n  appeared.",
+        "summary": {
+          "title": "SDKs fixed: mobile app issues and call connection",
+          "summary": "Several issues have been fixed across Android and iOS SDKs, including problems with app relaunch after force-closing, mobile inbound call connections, duplicate notifications, message ordering during escalations, log uploads, and session creation delays."
+        }
+      }
+    ],
     "2026-09-11": [
       {
         "kind": "Announcement",

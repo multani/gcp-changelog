@@ -1,5 +1,15 @@
 # Secret Manager
 
+## 2026-09-14
+
+### Feature
+
+Parameter Manager supports CRC32C checksums to verify data integrity when you
+add or access parameter versions.
+
+For more information, see [Data integrity assurance](https://docs.cloud.google.com/secret-manager/parameter-manager/docs/data-integrity).
+
+---
 ## 2026-09-08
 
 ### Feature

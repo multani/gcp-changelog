@@ -1,5 +1,21 @@
 # Compute Engine
 
+## 2026-09-17
+
+### Feature
+
+**Generally available**: The storage-optimized Z4D machine series is generally available for Compute Engine. Powered by AMD EPYC Turin processors and Titanium offload processors, Z4D instances are purpose-built for low core usage and high storage density workloads such as:
+
+* SQL, NoSQL, and vector databases
+* Data analytics and data warehouses
+* Search
+* Parallel file systems for AI/ML
+
+The Z4D machine series delivers up to 3 TB of memory and 42,000 GiB of local Titanium SSD capacity. Z4D also supports up to 400 Gbps of network bandwidth using two physical NICs. Z4D instances are available in predefined `standardlssd` and `highlssd` machine shapes.
+
+For more information, see [Storage-optimized machine family](https://docs.cloud.google.com/compute/docs/storage-optimized-machines#z4d_series).
+
+---
 ## 2026-09-15
 
 ### Feature

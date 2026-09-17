@@ -2880,6 +2880,15 @@
 
 
 <h1 id="cloud-sql-for-mysql">Cloud SQL for MySQL</h1>
+<h2 id="2026-09-17">2026-09-17</h2>
+<h3 id="change">Change</h3>
+<p>Cloud SQL for MySQL now automatically enables point-in-time recovery (PITR) in
+a separate, asynchronous operation after disaster recovery (DR) switchover and
+replica failover operations complete. Because PITR enablement no longer blocks
+switchover and replica failover, these operations complete faster, helping you
+reduce your recovery time.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/use-advanced-disaster-recovery">Use advanced disaster recovery (DR)</a>.</p>
+<hr />
 <h2 id="2026-09-10">2026-09-10</h2>
 <h3 id="breaking">Breaking</h3>
 <p>Appending <code>sqlcommenter</code> tags using the <code>sql_commenter_enabled</code> parameter when
@@ -3140,7 +3149,7 @@ or later installed on your instance.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/resource-groups">Manage CPU allocation with MySQL resource groups</a>.</p>
 <hr />
 <h2 id="2026-08-03">2026-08-03</h2>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p>You can change the backup plan for your
 <a href="https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/manage-enhanced-backups">Cloud SQL enhanced backups</a>
 without first removing the existing plan.
@@ -3148,7 +3157,7 @@ For more information, see
 <a href="https://docs.cloud.google.com/sql/docs/mysql/backup-recovery/manage-enhanced-backups#change-plan">Change your instance's associated backup plan</a>.</p>
 <hr />
 <h2 id="2026-07-31">2026-07-31</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Starting on August 1, 2026, when you create or clone a Cloud SQL instance
 enabled with Private Service Connect, or when you enable Private Service Connect
 for an existing instance, then <a href="https://docs.cloud.google.com/vpc/docs/about-controlling-access-published-services#connection-reconciliation">connection reconciliation</a>
@@ -3181,7 +3190,7 @@ replica</a>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/executesql-instance#configure-db-user">Execute SQL statements on a Cloud SQL instance</a>.</p>
 <hr />
 <h2 id="2026-07-16">2026-07-16</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>Cloud SQL for MySQL 8.4.8 is upgraded to MySQL 8.4.10. For more information, see
 the <a href="https://dev.mysql.com/doc/relnotes/mysql/8.4/en/news-8-4-10.html">MySQL 8.4.10 Release Notes</a>
 and <a href="https://docs.cloud.google.com/sql/docs/mysql/db-versions">Cloud SQL database versions</a>.</p>
@@ -3218,7 +3227,7 @@ For more information, see
 <p>This feature is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-06-24">2026-06-24</h2>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>Cloud SQL now supports Private Service Connect outbound connectivity on the
 following additional types of instances:</p>
 <ul>
@@ -3238,12 +3247,12 @@ using Google Cloud Backup and DR Service.</p>
 option</a>.</p>
 <hr />
 <h2 id="2026-06-19">2026-06-19</h2>
-<h3 id="change_4">Change</h3>
+<h3 id="change_5">Change</h3>
 <p>When you <a href="https://docs.cloud.google.com/sql/docs/mysql/migrate-xtrabackup-physical-file">migrate from Percona XtraBackup physical file to Cloud SQL for MySQL</a>,
 you can now specify multiple data files in the <code>innodb_data_file_path</code>
 parameter of your external server configuration. Also, you are no longer
 required to use the default name for your data files.</p>
-<h3 id="change_5">Change</h3>
+<h3 id="change_6">Change</h3>
 <p>Cloud SQL for MySQL now supports multiple system tablespace files, allowing
 <a href="https://docs.cloud.google.com/sql/docs/quotas#table_limit">system tablespace size</a> to grow larger than 16TB.</p>
 <hr />
@@ -3268,7 +3277,7 @@ Managed buffer pool helps you avoid out-of-memory events (OOMs) on your
 Cloud SQL instance by reducing <code>innodb_buffer_pool_size</code> when memory usage is high.</p>
 <hr />
 <h2 id="2026-05-12">2026-05-12</h2>
-<h3 id="change_6">Change</h3>
+<h3 id="change_7">Change</h3>
 <p>The command for upgrading Cloud SQL instances to the new network architecture
 has been re-enabled.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/upgrade-cloud-sql-instance-new-network-architecture">Upgrade an instance to the new network architecture</a>.</p>
@@ -3438,7 +3447,7 @@ Cloud SQL for MySQL (<a href="https://cloud.google.com/products/#product-launch-
 <a href="https://docs.cloud.google.com/sql/docs/mysql/troubleshoot-slow-queries">Troubleshoot slow queries with AI assistance</a>.</p>
 <hr />
 <h2 id="2026-02-18">2026-02-18</h2>
-<h3 id="change_7">Change</h3>
+<h3 id="change_8">Change</h3>
 <p>After March 17, 2026, when you enable the Cloud SQL Admin API
 (<code>sqladmin.googleapis.com</code>), the Cloud SQL remote MCP server is
 enabled automatically.</p>
@@ -3511,7 +3520,7 @@ the problem occurred.</p>
 Performance capture is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-01-21">2026-01-21</h2>
-<h3 id="change_8">Change</h3>
+<h3 id="change_9">Change</h3>
 <p>Cloud SQL for MySQL 8.0.43 is now the <a href="https://docs.cloud.google.com/sql/docs/mysql/db-versions#database-version-support">default minor version</a>
 of Cloud SQL for MySQL 8.0.</p>
 <p>If you have automatic minor version upgrade enabled for your instance,
@@ -3761,6 +3770,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/mysql/backu
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-mysql">Cloud SQL for MySQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-17" class="nav-link">2026-09-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-10" class="nav-link">2026-09-10</a>
           </li>

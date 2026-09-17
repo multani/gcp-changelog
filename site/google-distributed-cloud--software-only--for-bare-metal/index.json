@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2026-09-17": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for bare metal 1.34.900-gke.135 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.34.900-gke.135 runs on Kubernetes v1.34.7-gke.200.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the listing of our\npreviously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).",
+        "summary": {
+          "title": "New software release available",
+          "summary": "A new version of Google Distributed Cloud for bare metal is now available for download. This release runs on Kubernetes v1.34.7-gke.200. Please refer to the documentation for upgrade instructions and information on qualified storage partners."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.34.900-gke.135:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).\n* Fixed an issue where the status for `Ingress` resources was not updated when\n  using bundled Ingress.\n* Fixed an issue where user clusters repeatedly alternated between `reconciling`\n  and `running` states if the management cluster had a different pod\n  density configuration than the user cluster.\n* Updated `etcd` to `v3.5.33-0-gke.3` to address security vulnerabilities\n  CVE-2026-46595 and CVE-2026-39821.\n* Fixed an issue where deleting a cluster could get stuck because the node pool\n  controller attempted to recreate machine resources while cluster deletion was in\n  progress.",
+        "summary": {
+          "title": "Security and stability updates",
+          "summary": "Version 1.34.900-gke.135 includes fixes for security vulnerabilities and resolves issues related to Ingress status updates, user cluster state toggling, and node pool controller behavior during cluster deletion. The etcd component has also been updated to address critical security vulnerabilities."
+        }
+      }
+    ],
     "2026-09-15": [
       {
         "kind": "Announcement",

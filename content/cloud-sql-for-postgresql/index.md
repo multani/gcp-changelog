@@ -1,5 +1,18 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-09-17
+
+### Change
+
+Cloud SQL for PostgreSQL now automatically enables point-in-time recovery
+(PITR) in a separate, asynchronous operation after disaster recovery (DR)
+switchover and replica failover operations complete. Because PITR enablement no
+longer blocks switchover and replica failover, these operations complete faster,
+helping you reduce your recovery time.
+
+For more information, see [Use advanced disaster recovery (DR)](https://docs.cloud.google.com/sql/docs/postgres/use-advanced-disaster-recovery).
+
+---
 ## 2026-09-14
 
 ### Feature

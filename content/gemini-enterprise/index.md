@@ -1,5 +1,25 @@
 # Gemini Enterprise
 
+## 2026-09-17
+
+### Feature
+
+**Gemini Enterprise: Voice input for the chat box**
+
+You can speak your queries and prompts to Gemini Enterprise. Use the microphone
+button to record your voice, review and edit the transcribed text, and then
+submit the text.
+
+This feature is generally available (GA). To make voice input available to users,
+a Gemini Enterprise administrator must turn on the **Enable speech-to-text**
+toggle in the Google Cloud console.
+
+For more information, see the following:
+
+* [Manage web app features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Chat with the assistant](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat)
+
+---
 ## 2026-09-10
 
 ### Feature

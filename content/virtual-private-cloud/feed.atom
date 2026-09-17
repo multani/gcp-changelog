@@ -2,9 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Virtual Private Cloud</title>
   <subtitle>Changelog for Google Cloud product: Virtual Private Cloud</subtitle>
-  <updated>2026-09-10T00:00:00+00:00</updated>
+  <updated>2026-09-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:virtual-private-cloud</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/virtual-private-cloud/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:virtual-private-cloud:2026-09-16:feature:0</id>
+    <published>2026-09-16T00:00:00+00:00</published>
+    <updated>2026-09-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General Availability</strong>: You can add Dynamic NICs to the same VPC network used
+by other network interfaces of a Compute Engine instance. For more information,
+see <a href="https://docs.cloud.google.com/vpc/docs/multiple-interfaces-concepts#specifications">Multiple network interfaces</a>.</p>]]></content>
+    <summary>Dynamic NICs can now be added to the same VPC network used by other network interfaces on a Compute Engine instance. This provides greater flexibility in configuring your instance's networking.</summary>
+    <title>Feature: Dynamic NICs now available in existing VPCs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:virtual-private-cloud:2026-09-16:feature:1</id>
+    <published>2026-09-16T00:00:00+00:00</published>
+    <updated>2026-09-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General Availability</strong>: VPC Flow Logs supports logging for
+App Engine resources that are configured with
+<a href="https://docs.cloud.google.com/appengine/docs/standard/vpc-direct-vpc">Direct VPC egress</a>.
+For more information, see
+<a href="https://docs.cloud.google.com/vpc/docs/about-traffic-flows#serverless-flows">Serverless flows</a> and
+<a href="https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#serverless-details">ServerlessDetails field format</a>.</p>]]></content>
+    <summary>VPC Flow Logs now supports logging for App Engine resources using Direct VPC egress. This enhancement allows for better visibility into network traffic for serverless applications connected to your VPC. Analyze network flows and troubleshoot connectivity issues more effectively with this new capability.</summary>
+    <title>Feature: VPC Flow Logs for App Engine Direct VPC Egress</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:virtual-private-cloud:2026-09-16:feature:2</id>
+    <published>2026-09-16T00:00:00+00:00</published>
+    <updated>2026-09-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General Availability</strong>: VPC Flow Logs adds the following metadata annotations
+for Private Service Connect:</p>
+<ul>
+<li><code>src_psc_interface</code> and <code>dest_psc_interface</code></li>
+<li><code>psc.consumer_connection</code></li>
+<li><code>psc.psc_endpoint.name</code></li>
+<li><code>psc.psc_attachment.name</code></li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#record_format">Record format</a>.</p>]]></content>
+    <summary>VPC Flow Logs has been updated to include new metadata annotations for Private Service Connect. This enhancement provides deeper visibility into network traffic within Private Service Connect configurations. The added fields include source and destination interface information, consumer connection details, and endpoint and attachment names.</summary>
+    <title>Feature: VPC Flow Logs Now Includes Private Service Connect Metadata</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

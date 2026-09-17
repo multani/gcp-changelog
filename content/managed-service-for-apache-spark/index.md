@@ -40,6 +40,13 @@ Key updates in these image versions include:
 **Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): Fixed a segmentation fault when OpenLineage parses complex SQL query strings with the Lakehouse Runtime catalog.
 
 ---
+## 2026-09-01
+
+### Feature
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): [Lightning Engine with Native Query Execution (NQE) is now supported on ARM](https://docs.cloud.google.com/managed-spark/docs/guides/lightning-engine#native-query-execution-on-arm) for image version [`2.3 clusters`](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-2.3) (`2.3-ubuntu22-arm`), enabling accelerated vectorized query execution on Google Axion (C4A) instances for Apache Spark SQL, Cloud Storage Parquet, Apache Iceberg, and Delta Lake workloads.
+
+---
 ## 2026-08-31
 
 ### Announcement

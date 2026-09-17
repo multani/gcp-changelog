@@ -1,5 +1,36 @@
 # Virtual Private Cloud
 
+## 2026-09-16
+
+### Feature
+
+**General Availability**: You can add Dynamic NICs to the same VPC network used
+by other network interfaces of a Compute Engine instance. For more information,
+see [Multiple network interfaces](https://docs.cloud.google.com/vpc/docs/multiple-interfaces-concepts#specifications).
+
+### Feature
+
+**General Availability**: VPC Flow Logs supports logging for
+App Engine resources that are configured with
+[Direct VPC egress](https://docs.cloud.google.com/appengine/docs/standard/vpc-direct-vpc).
+For more information, see
+[Serverless flows](https://docs.cloud.google.com/vpc/docs/about-traffic-flows#serverless-flows) and
+[ServerlessDetails field format](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#serverless-details).
+
+### Feature
+
+**General Availability**: VPC Flow Logs adds the following metadata annotations
+for Private Service Connect:
+
+* `src_psc_interface` and `dest_psc_interface`
+* `psc.consumer_connection`
+* `psc.psc_endpoint.name`
+* `psc.psc_attachment.name`
+
+For more information, see
+[Record format](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#record_format).
+
+---
 ## 2026-09-10
 
 ### Feature

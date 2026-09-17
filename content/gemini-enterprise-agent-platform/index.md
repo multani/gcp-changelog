@@ -1,5 +1,24 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-16
+
+### Feature
+
+**CodeMender updates (v0.8.0)**
+
+This release introduces updates to CodeMender:
+
+* **Gemini 3.8 Flash default**: Gemini 3.8 Flash (`gemini-3.8-flash`) is now supported and enabled as the default model for CodeMender CLI sessions, delivering faster inference and improved reasoning. A one-time notice in the CLI informs users when the new default is active.
+* **Tool payload guardrails**: Introduced safe output limits for file reading (2 MiB) and codebase grep search (512 KiB) with centered match context windows, eliminating payload overflow errors and improving stability during large repository scans.
+* **Bug fixes**:
+  + Fixed an issue where shell detection and command execution on Windows could fail during repository resets and exploit verification when Git Bash was installed in standard registry or non-PATH locations.
+  + Fixed an issue in `cm verify` where verified findings could report "not found" or fail to persist confidence and status upon session completion or resumption.
+  + Fixed syntax errors in generated verification scripts caused by invalid regex escaping in grep assertions during `cm verify`.
+  + Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.
+
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
+---
 ## 2026-09-15
 
 ### Feature
@@ -19,6 +38,17 @@ For more information, see
 
 ---
 ## 2026-09-14
+
+### Deprecated
+
+**Gemini model deprecation and retirement date updates**
+
+The retirement and deprecation dates for the following Gemini models have been updated:
+
+* **Gemini 2.5 Flash Image (`gemini-2.5-flash-image`)**: Deprecated and scheduled for retirement on March 15, 2027 (extended from October 2, 2026). Migrate to [Gemini 3.1 Flash-Lite Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite-image) (`gemini-3.1-flash-lite-image`).
+* **Gemini 3.1 Flash-Lite Image (`gemini-3.1-flash-lite-image`)**: Retirement date is scheduled for June 28, 2027 or later.
+
+For more information, see [Gemini model versions and lifecycle](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions).
 
 ### Fixed
 

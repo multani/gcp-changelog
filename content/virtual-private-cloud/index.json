@@ -1,6 +1,32 @@
 {
   "name": "Virtual Private Cloud",
   "entries": {
+    "2026-09-16": [
+      {
+        "kind": "Feature",
+        "content": "**General Availability**: You can add Dynamic NICs to the same VPC network used\nby other network interfaces of a Compute Engine instance. For more information,\nsee [Multiple network interfaces](https://docs.cloud.google.com/vpc/docs/multiple-interfaces-concepts#specifications).",
+        "summary": {
+          "title": "Dynamic NICs now available in existing VPCs",
+          "summary": "Dynamic NICs can now be added to the same VPC network used by other network interfaces on a Compute Engine instance. This provides greater flexibility in configuring your instance's networking."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**General Availability**: VPC Flow Logs supports logging for\nApp Engine resources that are configured with\n[Direct VPC egress](https://docs.cloud.google.com/appengine/docs/standard/vpc-direct-vpc).\nFor more information, see\n[Serverless flows](https://docs.cloud.google.com/vpc/docs/about-traffic-flows#serverless-flows) and\n[ServerlessDetails field format](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#serverless-details).",
+        "summary": {
+          "title": "VPC Flow Logs for App Engine Direct VPC Egress",
+          "summary": "VPC Flow Logs now supports logging for App Engine resources using Direct VPC egress. This enhancement allows for better visibility into network traffic for serverless applications connected to your VPC. Analyze network flows and troubleshoot connectivity issues more effectively with this new capability."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**General Availability**: VPC Flow Logs adds the following metadata annotations\nfor Private Service Connect:\n\n* `src_psc_interface` and `dest_psc_interface`\n* `psc.consumer_connection`\n* `psc.psc_endpoint.name`\n* `psc.psc_attachment.name`\n\nFor more information, see\n[Record format](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#record_format).",
+        "summary": {
+          "title": "VPC Flow Logs Now Includes Private Service Connect Metadata",
+          "summary": "VPC Flow Logs has been updated to include new metadata annotations for Private Service Connect. This enhancement provides deeper visibility into network traffic within Private Service Connect configurations. The added fields include source and destination interface information, consumer connection details, and endpoint and attachment names."
+        }
+      }
+    ],
     "2026-09-10": [
       {
         "kind": "Feature",

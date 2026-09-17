@@ -1,5 +1,18 @@
 # Secure Source Manager
 
+## 2026-09-16
+
+### Feature
+
+Secure Source Manager webhooks now support **Pull request comment** trigger events.
+You can configure webhooks to trigger notifications whenever a comment is
+added, edited, or deleted on a pull request.
+
+For more information, see the
+[Pull request comment event payload](https://docs.cloud.google.com/secure-source-manager/docs/webhooks-overview#pull-request-comment-event-payload) in the
+[Webhooks overview](https://docs.cloud.google.com/secure-source-manager/docs/webhooks-overview).
+
+---
 ## 2026-08-15
 
 ### Feature

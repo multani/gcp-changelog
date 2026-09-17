@@ -1,5 +1,24 @@
 # Spanner
 
+## 2026-09-11
+
+### Feature
+
+Spanner Graph supports the following enhancements for `CREATE PROPERTY GRAPH`:
+
+* **Semantic options for labels and properties**: You can configure `OPTIONS`
+  (`description` and `synonyms`) on labels and properties to provide context
+  and improve discoverability for natural language querying interfaces.
+* **Element key uniqueness validation option**: You can configure the
+  `validate_element_key_uniqueness` option in the property graph `OPTIONS`
+  clause to control whether Spanner Graph validates element key
+  uniqueness at schema creation time.
+
+For more information, see
+[CREATE PROPERTY GRAPH statement](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/graph-schema-statements#create_property_graph)
+and [Disabled key validation](https://docs.cloud.google.com/spanner/docs/graph/graph-with-views-overview#disabled-key-validation).
+
+---
 ## 2026-09-03
 
 ### Feature

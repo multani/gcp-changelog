@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-09-16": [
+      {
+        "kind": "Feature",
+        "content": "**CodeMender updates (v0.8.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Gemini 3.8 Flash default**: Gemini 3.8 Flash (`gemini-3.8-flash`) is now supported and enabled as the default model for CodeMender CLI sessions, delivering faster inference and improved reasoning. A one-time notice in the CLI informs users when the new default is active.\n* **Tool payload guardrails**: Introduced safe output limits for file reading (2 MiB) and codebase grep search (512 KiB) with centered match context windows, eliminating payload overflow errors and improving stability during large repository scans.\n* **Bug fixes**:\n  + Fixed an issue where shell detection and command execution on Windows could fail during repository resets and exploit verification when Git Bash was installed in standard registry or non-PATH locations.\n  + Fixed an issue in `cm verify` where verified findings could report \"not found\" or fail to persist confidence and status upon session completion or resumption.\n  + Fixed syntax errors in generated verification scripts caused by invalid regex escaping in grep assertions during `cm verify`.\n  + Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "summary": {
+          "title": "CodeMender v0.8.0: Faster, Safer, More Reliable",
+          "summary": "CodeMender version 0.8.0 is here, featuring Gemini 3.8 Flash as the new default for quicker and smarter code analysis. This update also enhances stability with payload limits for file reading and grep searches, and includes several important bug fixes for a smoother user experience."
+        }
+      }
+    ],
     "2026-09-15": [
       {
         "kind": "Feature",
@@ -12,6 +22,14 @@
       }
     ],
     "2026-09-14": [
+      {
+        "kind": "Deprecated",
+        "content": "**Gemini model deprecation and retirement date updates**\n\nThe retirement and deprecation dates for the following Gemini models have been updated:\n\n* **Gemini 2.5 Flash Image (`gemini-2.5-flash-image`)**: Deprecated and scheduled for retirement on March 15, 2027 (extended from October 2, 2026). Migrate to [Gemini 3.1 Flash-Lite Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite-image) (`gemini-3.1-flash-lite-image`).\n* **Gemini 3.1 Flash-Lite Image (`gemini-3.1-flash-lite-image`)**: Retirement date is scheduled for June 28, 2027 or later.\n\nFor more information, see [Gemini model versions and lifecycle](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions).",
+        "summary": {
+          "title": "Gemini Model Updates",
+          "summary": "Several Gemini models have updated deprecation and retirement dates. Please review the changes and migrate to recommended alternatives as needed."
+        }
+      },
       {
         "kind": "Fixed",
         "content": "**CodeMender updates (v0.7.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Network stream resilience**: Improved CLI session stability with automatic reconnection and transient error recovery during long-running scans and remediation workflows.\n* **Configuration uniformity**: Standardized directory exclusion rules across configuration files and CLI scanning flags under `scan_config.exclude_dirs`.\n* **Bug fixes**:\n  + Fixed an issue where `cm report` incorrectly categorized `DISMISSED` findings as `OPEN` in the summary table.\n  + Resolved sandbox permission denial errors by preventing child worker processes from attempting to create internal session logs on disk.\n  + Hardened sandbox command policy to prevent directory traversal and file inspection outside the designated repository root into adjacent directories.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",

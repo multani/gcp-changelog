@@ -1,5 +1,17 @@
 # Security Command Center
 
+## 2026-09-16
+
+### Feature
+
+You can use the following MCP server endpoints to enable LLM agents to perform investigative and management tasks in Security Command Center.
+
+* [Security Command Center](https://docs.cloud.google.com/security-command-center/docs/reference/mcp)
+* [Security Command Center Management](https://docs.cloud.google.com/security-command-center/docs/reference/security-center-management/mcp)
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-14
 
 ### Deprecated

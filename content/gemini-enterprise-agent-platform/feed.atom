@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-09-15T00:00:00+00:00</updated>
+  <updated>2026-09-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-16:feature:0</id>
+    <published>2026-09-16T00:00:00+00:00</published>
+    <updated>2026-09-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.8.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Gemini 3.8 Flash default</strong>: Gemini 3.8 Flash (<code>gemini-3.8-flash</code>) is now supported and enabled as the default model for CodeMender CLI sessions, delivering faster inference and improved reasoning. A one-time notice in the CLI informs users when the new default is active.</li>
+<li><strong>Tool payload guardrails</strong>: Introduced safe output limits for file reading (2 MiB) and codebase grep search (512 KiB) with centered match context windows, eliminating payload overflow errors and improving stability during large repository scans.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Fixed an issue where shell detection and command execution on Windows could fail during repository resets and exploit verification when Git Bash was installed in standard registry or non-PATH locations.</li>
+<li>Fixed an issue in <code>cm verify</code> where verified findings could report "not found" or fail to persist confidence and status upon session completion or resumption.</li>
+<li>Fixed syntax errors in generated verification scripts caused by invalid regex escaping in grep assertions during <code>cm verify</code>.</li>
+<li>Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender version 0.8.0 is here, featuring Gemini 3.8 Flash as the new default for quicker and smarter code analysis. This update also enhances stability with payload limits for file reading and grep searches, and includes several important bug fixes for a smoother user experience.</summary>
+    <title>Feature: CodeMender v0.8.0: Faster, Safer, More Reliable</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -29,7 +51,24 @@ in Agent Studio.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-14:fixed:0</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-14:deprecated:0</id>
+    <published>2026-09-14T00:00:00+00:00</published>
+    <updated>2026-09-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini model deprecation and retirement date updates</strong></p>
+<p>The retirement and deprecation dates for the following Gemini models have been updated:</p>
+<ul>
+<li><strong>Gemini 2.5 Flash Image (<code>gemini-2.5-flash-image</code>)</strong>: Deprecated and scheduled for retirement on March 15, 2027 (extended from October 2, 2026). Migrate to <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite-image">Gemini 3.1 Flash-Lite Image</a> (<code>gemini-3.1-flash-lite-image</code>).</li>
+<li><strong>Gemini 3.1 Flash-Lite Image (<code>gemini-3.1-flash-lite-image</code>)</strong>: Retirement date is scheduled for June 28, 2027 or later.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions">Gemini model versions and lifecycle</a>.</p>]]></content>
+    <summary>Several Gemini models have updated deprecation and retirement dates. Please review the changes and migrate to recommended alternatives as needed.</summary>
+    <title>Deprecated: Gemini Model Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-14:fixed:1</id>
     <published>2026-09-14T00:00:00+00:00</published>
     <updated>2026-09-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.7.0)</strong></p>
@@ -50,7 +89,7 @@ in Agent Studio.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-14:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-14:feature:2</id>
     <published>2026-09-14T00:00:00+00:00</published>
     <updated>2026-09-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Cyber Verification Program for Claude is available in Preview</strong></p>

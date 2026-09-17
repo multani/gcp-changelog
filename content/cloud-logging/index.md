@@ -1,5 +1,17 @@
 # Cloud Logging
 
+## 2026-09-14
+
+### Feature
+
+Starting with version 2.71.0, you can use an Ops Agent configuration option
+to export your metrics, logs, and traces by using the OpenTelemetry-based
+[Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview) rather than
+by using the Cloud Monitoring API, Logging API, or Trace API
+For more information, see
+[Use the Telemetry API](https://docs.cloud.google.com/monitoring/agent/ops-agent/use-telemetry-api).
+
+---
 ## 2026-08-26
 
 ### Change

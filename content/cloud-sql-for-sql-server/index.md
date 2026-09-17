@@ -51,6 +51,18 @@ destination region and stays within that region while being processed there.
 
 ### Feature
 
+Cloud SQL for SQL Server supports the `sp_help_revlogin` stored procedure in
+the `msdb` database. You can enable this stored procedure by configuring the
+`cloud sql enable sp_help_revlogin` database flag to export SQL Server logins,
+password hashes, and security identifiers (SIDs) when migrating databases or
+synchronizing logins.
+
+For more information, see
+[Export SQL Server logins](https://docs.cloud.google.com/sql/docs/sqlserver/export-logins) and
+[Configure database flags](https://docs.cloud.google.com/sql/docs/sqlserver/flags).
+
+### Feature
+
 Cloud SQL for SQL Server now supports connecting to instances
 with write endpoints using the Cloud SQL Auth Proxy or Cloud SQL language
 connectors. When you configure the proxy or a language connector with a

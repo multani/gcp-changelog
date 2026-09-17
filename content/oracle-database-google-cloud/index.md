@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-09-17
+
+### Feature
+
+For Exadata Database Service, Oracle Database@Google Cloud is available in `europe-west12` (Turin, Italy) region.
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-08-19
 
 ### Feature

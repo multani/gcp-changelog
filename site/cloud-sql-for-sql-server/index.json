@@ -24,6 +24,14 @@
     "2026-09-04": [
       {
         "kind": "Feature",
+        "content": "Cloud SQL for SQL Server supports the `sp_help_revlogin` stored procedure in\nthe `msdb` database. You can enable this stored procedure by configuring the\n`cloud sql enable sp_help_revlogin` database flag to export SQL Server logins,\npassword hashes, and security identifiers (SIDs) when migrating databases or\nsynchronizing logins.\n\nFor more information, see\n[Export SQL Server logins](https://docs.cloud.google.com/sql/docs/sqlserver/export-logins) and\n[Configure database flags](https://docs.cloud.google.com/sql/docs/sqlserver/flags).",
+        "summary": {
+          "title": "Export SQL Server Logins",
+          "summary": "Cloud SQL for SQL Server now supports the `sp_help_revlogin` stored procedure. This feature allows you to export SQL Server logins, password hashes, and SIDs, which is useful for database migrations and login synchronization. Enable it using the `cloud sql enable sp_help_revlogin` database flag."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "Cloud SQL for SQL Server now supports connecting to instances\nwith write endpoints using the Cloud SQL Auth Proxy or Cloud SQL language\nconnectors. When you configure the proxy or a language connector with a\nwrite endpoint DNS name, connections are redirected automatically to the new\nprimary instance during replica failover or switchover.\n\nFor more information, see\n[Connect to an instance using a write endpoint](https://docs.cloud.google.com/sql/docs/sqlserver/connect-to-instance-using-write-endpoint).",
         "summary": {
           "title": "Cloud SQL for SQL Server write endpoint support",

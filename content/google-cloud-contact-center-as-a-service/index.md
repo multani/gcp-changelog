@@ -2,6 +2,16 @@
 
 ## 2026-09-16
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes 6.13**
+
+Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.
+
+**Important:** The next version of Google Cloud CCaaS could be greater than 6.13.
+
 ### Fixed
 
 This release addresses the following issues:

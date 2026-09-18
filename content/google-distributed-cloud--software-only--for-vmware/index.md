@@ -1,5 +1,38 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-09-17
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.34.900-gke.135 is now available
+for download. To upgrade, see [Upgrade a cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.34.900-gke.135 runs on Kubernetes v1.34.7-gke.200.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.34.900-gke.135:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where user clusters repeatedly alternated between `Reconciling`
+  and `Running` states if the management cluster configured a different pod
+  density than the user cluster.
+* Updated `etcd` to `v3.5.33-0-gke.3` to address security vulnerabilities
+  CVE-2026-46595 and CVE-2026-39821.
+* Fixed an issue where `gkectl diagnose` and preflight validations failed to
+  locate `PersistentVolume` datastores for user clusters deployed in a separate
+  vSphere datacenter from the admin cluster (`cpNodesInAdminDatacenter: true`).
+* Fixed an issue where deleting a cluster could get stuck because the node pool
+  controller attempted to recreate machine resources while deletion was in
+  progress.
+
+---
 ## 2026-09-15
 
 ### Announcement

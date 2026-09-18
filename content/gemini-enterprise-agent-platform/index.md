@@ -1,5 +1,23 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-17
+
+### Feature
+
+**Gemini Omni Flash supports stateful and streaming video generation (Preview)**
+
+Gemini Omni Flash supports stateful (`store: true`) and
+server-sent event (SSE) streaming (`stream: true`) video generation in the
+Interactions API in [Preview](https://cloud.google.com/products#product-launch-stages).
+You can temporarily store generated videos and interaction state on the server,
+stream status updates and final outputs over an SSE connection, or
+retrieve completed asynchronous interactions using unary or streaming GET
+requests.
+
+For more information, see [Generate videos from
+text](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/generate-videos-from-text).
+
+---
 ## 2026-09-16
 
 ### Feature
@@ -171,6 +189,13 @@ now generally available (GA) and available for production use.
 
 For more information on 3.8 Flash, see the [model
 page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash).
+
+### Feature
+
+**Provisioned Throughput support for Gemini Omni**
+
+Provisioned Throughput supports Gemini Omni. To learn more, see
+[supported models](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models).
 
 ### Feature
 

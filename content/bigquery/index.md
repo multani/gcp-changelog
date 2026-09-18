@@ -1,5 +1,14 @@
 # BigQuery
 
+## 2026-09-17
+
+### Feature
+
+You can [add unit tests](https://docs.cloud.google.com/dataform/docs/test-data#unit-tests) to pipelines
+to validate your SQL transformation logic against mock datasets. Unit tests for
+pipelines are [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2026-09-16
 
 ### Feature

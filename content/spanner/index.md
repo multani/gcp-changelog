@@ -1,5 +1,17 @@
 # Spanner
 
+## 2026-09-17
+
+### Feature
+
+Spanner queues are [generally available (GA)](https://cloud.google.com/products/#product-launch-stages).
+Spanner queues provide transactional messaging to help you
+manage asynchronous work. The feature pairs this capability with the
+scalability and reliability of Spanner, letting you build
+event-driven applications. For more information, see the [Spanner
+queues overview](https://docs.cloud.google.com/spanner/docs/queues/queues-overview).
+
+---
 ## 2026-09-11
 
 ### Feature

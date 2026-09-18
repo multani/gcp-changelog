@@ -1,6 +1,168 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-09-17": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.18** will roll out to Looker (original) instances on the following schedule:\n\n* Expected deployment start: **Monday, September 21, 2026**\n* Expected final deployment and download available: **Sunday, October 4, 2026**\n\nLooker 26.18 is expected to include the following changes, features, and fixes.",
+        "summary": {
+          "title": "Looker 26.18 Release Notes",
+          "summary": "The Looker 26.18 update is scheduled for deployment between September 21 and October 4, 2026. This release will include various changes, features, and fixes for Looker (original) instances."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where custom content theme fonts were improperly applied to the Look edit mode bar. This feature now performs as expected.",
+        "summary": {
+          "title": "Custom theme fonts now applied correctly",
+          "summary": "An issue has been fixed where custom content theme fonts were improperly applied to the Look edit mode bar. This feature now performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where downloading a dashboard as a CSV or ZIP file could result in a `500` error if any dashboard elements lacked an explicit title. This feature now performs as expected.",
+        "summary": {
+          "title": "Download issue resolved",
+          "summary": "A `500` error that occurred when downloading dashboards as CSV or ZIP files has been fixed. This issue was triggered by dashboard elements missing explicit titles. The download functionality now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where links created using the LookML `link` parameter could return a `500` error if no label was specified. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed LookML link parameter issue",
+          "summary": "An issue where LookML links could return a 500 error without a label has been resolved. The link parameter now functions correctly in all cases."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dashboard filter token chips didn't display an active highlighted background when a filter value was selected. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard filter highlight fixed",
+          "summary": "The issue where dashboard filter token chips did not display an active highlighted background when a filter value was selected has been resolved. This feature now functions correctly, ensuring selected filter values are clearly indicated."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the Git connection test could fail to recognize Git credentials as sufficient if a branch protection rule on the Git provider restricted temporary branches. This feature now performs as expected.",
+        "summary": {
+          "title": "Git connection test corrected",
+          "summary": "The Git connection test now correctly recognizes Git credentials as sufficient, even when branch protection rules restrict temporary branches. This resolves an issue where the test could previously fail under these conditions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where analytic models that referenced cross-database, schema-qualified, or dot-delimited table names failed to compile in BigQuery and Snowflake DDL generation. This feature now performs as expected.",
+        "summary": {
+          "title": "Model compilation issue resolved",
+          "summary": "An issue that prevented analytic models with specific table name formats from compiling in BigQuery and Snowflake DDL generation has been fixed. The feature now functions correctly, ensuring models compile as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where custom tooltips in Single Record visualizations appeared at the bottom of the Explore panel rather than directly beneath the selected row. This feature now performs as expected.",
+        "summary": {
+          "title": "Custom tooltips fixed",
+          "summary": "An issue causing custom tooltips in Single Record visualizations to appear at the bottom of the Explore panel has been resolved. Tooltips will now display correctly beneath the selected row as intended."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dashboard filter tokens and popover menus could fail to inherit fonts from custom themes. This feature now performs as expected.",
+        "summary": {
+          "title": "Filter font inheritance fixed",
+          "summary": "An issue preventing dashboard filter tokens and popover menus from inheriting fonts from custom themes has been resolved. This functionality now works correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where dragging series between Y-axes on pivoted Cartesian charts could cause the Explore page to crash or prevent visualization configurations from being saved. This feature now performs as expected.",
+        "summary": {
+          "title": "Chart interaction issue resolved",
+          "summary": "An issue causing the Explore page to crash when dragging series between Y-axes on pivoted Cartesian charts has been fixed. Visualization configurations can now be saved without interruption. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed in Explores where you couldn't scroll within the **Chart Config Editor** dialog when editing JSON visualization configurations. This feature now performs as expected.",
+        "summary": {
+          "title": "Explores chart config editor scrolling fixed",
+          "summary": "The ability to scroll within the Chart Config Editor dialog when editing JSON visualization configurations in Explores has been restored. This issue is now resolved, and the feature performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where scheduled PDF deliveries to Cloud Storage could produce corrupted files and unexpectedly replace spaces in filenames with underscores. This feature now performs as expected.",
+        "summary": {
+          "title": "PDF delivery to Cloud Storage fixed",
+          "summary": "An issue causing corrupted PDF files and incorrect filenames during scheduled deliveries to Cloud Storage has been resolved. The feature now functions correctly, ensuring reliable delivery and proper file naming."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where attempting to visualize pivoted query results in SQL Runner resulted in a `TypeError` configuration error. This feature now performs as expected.",
+        "summary": {
+          "title": "Pivoted query visualization fixed",
+          "summary": "An issue that caused a configuration error when visualizing pivoted query results in SQL Runner has been resolved. The feature now functions correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "API requests that target a LookML project whose files or directories aren't found on the instance now return a `404 Not Found` error instead of a `500 Internal Server Error`.",
+        "summary": {
+          "title": "Fixed: API returns 404 for missing LookML files",
+          "summary": "API requests for LookML projects with missing files or directories will now correctly return a 404 Not Found error. Previously, these requests incorrectly returned a 500 Internal Server Error. This change ensures more accurate error reporting for LookML project issues."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "In Conversational Analytics, the **Open in Explore** button and sidebar exploration links are now hidden or disabled with explanatory tooltips when you lack `explore` permissions for the underlying model.",
+        "summary": {
+          "title": "Exploration permissions updated",
+          "summary": "Conversational Analytics now hides or disables exploration links and the Open in Explore button for users without the necessary permissions. Tooltips will explain why these features are unavailable."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The embed preload page now supports custom theming using the `theme` URL query parameter.",
+        "summary": {
+          "title": "Embed page theming enabled",
+          "summary": "Custom theming is now available for the embed preload page through the `theme` URL query parameter. This allows for greater customization of the embed appearance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Donut Multiples visualizations now automatically hide overlapping value labels.",
+        "summary": {
+          "title": "Overlapping labels hidden in Donut Multiples",
+          "summary": "Overlapping value labels in Donut Multiples visualizations are now automatically hidden. This change improves readability and user experience by decluttering the visualization. Users will now see a cleaner and more understandable representation of their data."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed in self-service analytics where CSV and Excel uploads to BigQuery and Snowflake could fail or corrupt data when files contained multiline headers, leading numeric characters, UTF-8 BOM markers, or special characters. This feature now performs as expected.",
+        "summary": {
+          "title": "Analytics upload issues resolved",
+          "summary": "An issue preventing successful CSV and Excel uploads to BigQuery and Snowflake has been fixed. The analytics feature now correctly handles files with complex headers, including multiline entries, numeric characters, UTF-8 BOM, and special characters, ensuring data integrity."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where creating a shared branch based on the production branch in a bare repository project could initialize from stale remote commits, causing the Looker IDE to immediately report the branch as being behind production. This feature now performs as expected.",
+        "summary": {
+          "title": "Shared branch creation issue resolved",
+          "summary": "An issue preventing shared branches from being created correctly in bare repository projects has been fixed. The Looker IDE now accurately reflects branch status, ensuring a smoother development workflow."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where scheduled deliveries intermittently failed with permission errors such as `Cannot send all results` because user permissions were incorrectly cached across scheduled jobs on worker threads. This feature now performs as expected.",
+        "summary": {
+          "title": "Scheduled delivery permission errors fixed",
+          "summary": "Intermittent permission errors during scheduled deliveries have been resolved. The issue was caused by incorrect caching of user permissions across jobs. Scheduled deliveries now function correctly."
+        }
+      }
+    ],
     "2026-09-10": [
       {
         "kind": "Feature",

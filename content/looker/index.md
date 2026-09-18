@@ -1,5 +1,93 @@
 # Looker
 
+## 2026-09-17
+
+### Announcement
+
+**Looker 26.18** will roll out to Looker (original) instances on the following schedule:
+
+* Expected deployment start: **Monday, September 21, 2026**
+* Expected final deployment and download available: **Sunday, October 4, 2026**
+
+Looker 26.18 is expected to include the following changes, features, and fixes.
+
+### Fixed
+
+An issue has been fixed where custom content theme fonts were improperly applied to the Look edit mode bar. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where downloading a dashboard as a CSV or ZIP file could result in a `500` error if any dashboard elements lacked an explicit title. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where links created using the LookML `link` parameter could return a `500` error if no label was specified. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where dashboard filter token chips didn't display an active highlighted background when a filter value was selected. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the Git connection test could fail to recognize Git credentials as sufficient if a branch protection rule on the Git provider restricted temporary branches. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where analytic models that referenced cross-database, schema-qualified, or dot-delimited table names failed to compile in BigQuery and Snowflake DDL generation. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where custom tooltips in Single Record visualizations appeared at the bottom of the Explore panel rather than directly beneath the selected row. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where dashboard filter tokens and popover menus could fail to inherit fonts from custom themes. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where dragging series between Y-axes on pivoted Cartesian charts could cause the Explore page to crash or prevent visualization configurations from being saved. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed in Explores where you couldn't scroll within the **Chart Config Editor** dialog when editing JSON visualization configurations. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where scheduled PDF deliveries to Cloud Storage could produce corrupted files and unexpectedly replace spaces in filenames with underscores. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where attempting to visualize pivoted query results in SQL Runner resulted in a `TypeError` configuration error. This feature now performs as expected.
+
+### Fixed
+
+API requests that target a LookML project whose files or directories aren't found on the instance now return a `404 Not Found` error instead of a `500 Internal Server Error`.
+
+### Fixed
+
+In Conversational Analytics, the **Open in Explore** button and sidebar exploration links are now hidden or disabled with explanatory tooltips when you lack `explore` permissions for the underlying model.
+
+### Fixed
+
+The embed preload page now supports custom theming using the `theme` URL query parameter.
+
+### Fixed
+
+Donut Multiples visualizations now automatically hide overlapping value labels.
+
+### Fixed
+
+An issue has been fixed in self-service analytics where CSV and Excel uploads to BigQuery and Snowflake could fail or corrupt data when files contained multiline headers, leading numeric characters, UTF-8 BOM markers, or special characters. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where creating a shared branch based on the production branch in a bare repository project could initialize from stale remote commits, causing the Looker IDE to immediately report the branch as being behind production. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where scheduled deliveries intermittently failed with permission errors such as `Cannot send all results` because user permissions were incorrectly cached across scheduled jobs on worker threads. This feature now performs as expected.
+
+---
 ## 2026-09-10
 
 ### Feature

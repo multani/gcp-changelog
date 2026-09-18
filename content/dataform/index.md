@@ -1,5 +1,15 @@
 # Dataform
 
+## 2026-09-17
+
+### Feature
+
+You can
+[use unit tests to test Dataform actions](https://docs.cloud.google.com/dataform/docs/test-data#unit-tests)
+against mock data with an expected result set. Dataform unit tests are
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2026-08-17
 
 ### Feature

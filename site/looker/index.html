@@ -2880,6 +2880,53 @@
 
 
 <h1 id="looker">Looker</h1>
+<h2 id="2026-09-17">2026-09-17</h2>
+<h3 id="announcement">Announcement</h3>
+<p><strong>Looker 26.18</strong> will roll out to Looker (original) instances on the following schedule:</p>
+<ul>
+<li>Expected deployment start: <strong>Monday, September 21, 2026</strong></li>
+<li>Expected final deployment and download available: <strong>Sunday, October 4, 2026</strong></li>
+</ul>
+<p>Looker 26.18 is expected to include the following changes, features, and fixes.</p>
+<h3 id="fixed">Fixed</h3>
+<p>An issue has been fixed where custom content theme fonts were improperly applied to the Look edit mode bar. This feature now performs as expected.</p>
+<h3 id="fixed_1">Fixed</h3>
+<p>An issue has been fixed where downloading a dashboard as a CSV or ZIP file could result in a <code>500</code> error if any dashboard elements lacked an explicit title. This feature now performs as expected.</p>
+<h3 id="fixed_2">Fixed</h3>
+<p>An issue has been fixed where links created using the LookML <code>link</code> parameter could return a <code>500</code> error if no label was specified. This feature now performs as expected.</p>
+<h3 id="fixed_3">Fixed</h3>
+<p>An issue has been fixed where dashboard filter token chips didn't display an active highlighted background when a filter value was selected. This feature now performs as expected.</p>
+<h3 id="fixed_4">Fixed</h3>
+<p>An issue has been fixed where the Git connection test could fail to recognize Git credentials as sufficient if a branch protection rule on the Git provider restricted temporary branches. This feature now performs as expected.</p>
+<h3 id="fixed_5">Fixed</h3>
+<p>An issue has been fixed where analytic models that referenced cross-database, schema-qualified, or dot-delimited table names failed to compile in BigQuery and Snowflake DDL generation. This feature now performs as expected.</p>
+<h3 id="fixed_6">Fixed</h3>
+<p>An issue has been fixed where custom tooltips in Single Record visualizations appeared at the bottom of the Explore panel rather than directly beneath the selected row. This feature now performs as expected.</p>
+<h3 id="fixed_7">Fixed</h3>
+<p>An issue has been fixed where dashboard filter tokens and popover menus could fail to inherit fonts from custom themes. This feature now performs as expected.</p>
+<h3 id="fixed_8">Fixed</h3>
+<p>An issue has been fixed where dragging series between Y-axes on pivoted Cartesian charts could cause the Explore page to crash or prevent visualization configurations from being saved. This feature now performs as expected.</p>
+<h3 id="fixed_9">Fixed</h3>
+<p>An issue has been fixed in Explores where you couldn't scroll within the <strong>Chart Config Editor</strong> dialog when editing JSON visualization configurations. This feature now performs as expected.</p>
+<h3 id="fixed_10">Fixed</h3>
+<p>An issue has been fixed where scheduled PDF deliveries to Cloud Storage could produce corrupted files and unexpectedly replace spaces in filenames with underscores. This feature now performs as expected.</p>
+<h3 id="fixed_11">Fixed</h3>
+<p>An issue has been fixed where attempting to visualize pivoted query results in SQL Runner resulted in a <code>TypeError</code> configuration error. This feature now performs as expected.</p>
+<h3 id="fixed_12">Fixed</h3>
+<p>API requests that target a LookML project whose files or directories aren't found on the instance now return a <code>404 Not Found</code> error instead of a <code>500 Internal Server Error</code>.</p>
+<h3 id="fixed_13">Fixed</h3>
+<p>In Conversational Analytics, the <strong>Open in Explore</strong> button and sidebar exploration links are now hidden or disabled with explanatory tooltips when you lack <code>explore</code> permissions for the underlying model.</p>
+<h3 id="fixed_14">Fixed</h3>
+<p>The embed preload page now supports custom theming using the <code>theme</code> URL query parameter.</p>
+<h3 id="fixed_15">Fixed</h3>
+<p>Donut Multiples visualizations now automatically hide overlapping value labels.</p>
+<h3 id="fixed_16">Fixed</h3>
+<p>An issue has been fixed in self-service analytics where CSV and Excel uploads to BigQuery and Snowflake could fail or corrupt data when files contained multiline headers, leading numeric characters, UTF-8 BOM markers, or special characters. This feature now performs as expected.</p>
+<h3 id="fixed_17">Fixed</h3>
+<p>An issue has been fixed where creating a shared branch based on the production branch in a bare repository project could initialize from stale remote commits, causing the Looker IDE to immediately report the branch as being behind production. This feature now performs as expected.</p>
+<h3 id="fixed_18">Fixed</h3>
+<p>An issue has been fixed where scheduled deliveries intermittently failed with permission errors such as <code>Cannot send all results</code> because user permissions were incorrectly cached across scheduled jobs on worker threads. This feature now performs as expected.</p>
+<hr />
 <h2 id="2026-09-10">2026-09-10</h2>
 <h3 id="feature">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/getting-started-vscode-extension">Looker extension for VS Code</a> is now generally available, enabling local LookML development and <a href="https://docs.cloud.google.com/looker/docs/ai-assisted-development-vscode">AI-assisted "vibe coding"</a> using the <a href="https://docs.cloud.google.com/looker/docs/mcp">Model Context Protocol (MCP)</a>. This update introduces an interactive onboarding walkthrough, support for populating workspaces from bare repositories, and enhanced synchronization between local Git branches and Looker <a href="https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a>. Additional improvements include support for OAuth with the Kiro IDE and more secure storage of API client secrets.</p>
@@ -2889,60 +2936,60 @@
 <p>The deprecation of the <a href="https://docs.cloud.google.com/looker/docs/mobile-app-legacy">Looker Mobile (Legacy) application</a> has been postponed to January 31, 2027. Starting on January 31, 2027, support for the Looker Mobile (Legacy) app will be discontinued and the app will be unavailable for download from the App Store or Play Store. Although users will still be able to use the Looker Mobile (Legacy) app if they already have it installed, we recommend that you install the non-legacy <a href="https://docs.cloud.google.com/looker/docs/mobile-app-installation">Looker mobile app</a>.</p>
 <hr />
 <h2 id="2026-09-04">2026-09-04</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p><strong>Looker 26.16</strong> will roll out to Looker (original) instances on the following schedule:</p>
 <ul>
 <li>Expected deployment start: <strong>Tuesday, September 8, 2026</strong></li>
 <li>Expected final deployment and download available: <strong>Sunday, September 20, 2026</strong></li>
 </ul>
 <p>Looker 26.16 is expected to include the following changes, features, and fixes.</p>
-<h3 id="fixed">Fixed</h3>
-<p>An issue has been fixed where logging in with a Google Cloud Workforce Identity within an embedded iframe could fail as a result of frame restrictions or because the authentication popup closed before session cookies were established. This feature now performs as expected.</p>
-<h3 id="fixed_1">Fixed</h3>
-<p>An issue has been fixed where switching to a histogram visualization in an Explore could fail or revert unexpectedly. Additionally, stack resolution on pivoted histograms has been improved. This feature now performs as expected.</p>
-<h3 id="fixed_2">Fixed</h3>
-<p>An issue has been fixed where the alert creation and edit modal displayed <code>Method</code> instead of defaulting to <code>Email</code> as the notification method. This feature now performs as expected.</p>
-<h3 id="fixed_3">Fixed</h3>
-<p>An issue has been fixed where embedded dashboards with numerous filters caused horizontal container overflow, prevented filters from wrapping across rows, and resulted in clipped tiles during PDF and PNG exports.</p>
-<h3 id="fixed_4">Fixed</h3>
-<p>An issue has been fixed where custom themes configured as the instance default were not applied to dashboards in view-only mode or during dashboard navigation. This feature now performs as expected.</p>
-<h3 id="fixed_5">Fixed</h3>
-<p>An issue has been fixed where LookML dashboard URLs that were opened from the search page contained encoded colons (<code>%3A%3A</code>), which prevented filter interactions from updating URL query parameters. This feature now performs as expected.</p>
-<h3 id="fixed_6">Fixed</h3>
-<p>An issue has been fixed where Single Value visualizations and KPI visualizations would not allow creating a comparison against a non-measure table calculation. This feature now performs as expected.</p>
-<h3 id="fixed_7">Fixed</h3>
-<p>An issue has been fixed where visualization-level filters could not be edited or deleted because of missing popover menus. This feature now performs as expected.</p>
-<h3 id="fixed_8">Fixed</h3>
-<p>An issue has been fixed where resizing an Explore that contained a Word Cloud visualization could cause the Explore to crash. This feature now performs as expected.</p>
-<h3 id="fixed_9">Fixed</h3>
-<p>An issue has been fixed where generating LookML for analytic models without selecting any database tables could cause Looker to create views for all database tables and to drop certain properties because of identifier case sensitivity. This feature now performs as expected.</p>
-<h3 id="fixed_10">Fixed</h3>
-<p>An issue has been fixed where filter context banners and timezone settings were not preserved when generating PNG downloads from drill menus. This feature now performs as expected.</p>
-<h3 id="fixed_11">Fixed</h3>
-<p>An issue has been fixed where applying pivots to merge queries could cause visualization errors and blank column headers in the results table. This feature now performs as expected.</p>
-<h3 id="fixed_12">Fixed</h3>
-<p>An issue has been fixed where standalone tile exports from embedded dashboards with filter context could render off-screen or with clipped visualizations in PDF and PNG formats. This feature now performs as expected.</p>
-<h3 id="fixed_13">Fixed</h3>
-<p>An issue has been fixed where clearing all text from a dashboard note tile failed to persist upon page refresh. This feature now performs as expected.</p>
-<h3 id="fixed_14">Fixed</h3>
-<p>The BigQuery High Throughput API has been disabled by default to prevent connection errors for environments without <code>bigquery.readsessions.create</code> permissions. Additionally, required JVM flags for JDK 11 environments have been added. This feature now performs as expected.</p>
-<h3 id="fixed_15">Fixed</h3>
-<p>An issue has been fixed where multi-line prompt text in dashboard chat views caused action buttons (such as the <strong>Thinking</strong> toggle and <strong>Send</strong> button) and vertical scrollbars to be misaligned. This feature now performs as expected.</p>
-<h3 id="fixed_16">Fixed</h3>
-<p>An issue has been fixed where pinned Looks on boards generated broken URLs that redirected to the home page and failed to dynamically reflect title updates. This feature now performs as expected.</p>
-<h3 id="fixed_17">Fixed</h3>
-<p>An issue has been fixed where selecting a suggestion could reset the dropdown to a loading spinner. This feature now performs as expected.</p>
-<h3 id="fixed_18">Fixed</h3>
-<p>An issue has been fixed where collapsible navigation items in the Admin panel and the main navigation pane rendered rectangular focus outlines rather than rounded focus indicators during keyboard navigation. This feature now performs as expected.</p>
 <h3 id="fixed_19">Fixed</h3>
-<p>An issue has been fixed where typed search strings persisted after you selected an autocomplete suggestion in multi-select filters. This feature now performs as expected.</p>
+<p>An issue has been fixed where logging in with a Google Cloud Workforce Identity within an embedded iframe could fail as a result of frame restrictions or because the authentication popup closed before session cookies were established. This feature now performs as expected.</p>
 <h3 id="fixed_20">Fixed</h3>
-<p>When you duplicate a user-defined dashboard, associated Looker data agent instructions, configurations, and sources are now preserved on the copied dashboard.</p>
+<p>An issue has been fixed where switching to a histogram visualization in an Explore could fail or revert unexpectedly. Additionally, stack resolution on pivoted histograms has been improved. This feature now performs as expected.</p>
 <h3 id="fixed_21">Fixed</h3>
-<p>Self-service models have been restricted to only their assigned user database connections, preventing unintended instance-wide database connection access.</p>
+<p>An issue has been fixed where the alert creation and edit modal displayed <code>Method</code> instead of defaulting to <code>Email</code> as the notification method. This feature now performs as expected.</p>
 <h3 id="fixed_22">Fixed</h3>
-<p>Boxplot visualizations now render transparent median dividers and borders properly in inverted and dark theme layouts.</p>
+<p>An issue has been fixed where embedded dashboards with numerous filters caused horizontal container overflow, prevented filters from wrapping across rows, and resulted in clipped tiles during PDF and PNG exports.</p>
 <h3 id="fixed_23">Fixed</h3>
+<p>An issue has been fixed where custom themes configured as the instance default were not applied to dashboards in view-only mode or during dashboard navigation. This feature now performs as expected.</p>
+<h3 id="fixed_24">Fixed</h3>
+<p>An issue has been fixed where LookML dashboard URLs that were opened from the search page contained encoded colons (<code>%3A%3A</code>), which prevented filter interactions from updating URL query parameters. This feature now performs as expected.</p>
+<h3 id="fixed_25">Fixed</h3>
+<p>An issue has been fixed where Single Value visualizations and KPI visualizations would not allow creating a comparison against a non-measure table calculation. This feature now performs as expected.</p>
+<h3 id="fixed_26">Fixed</h3>
+<p>An issue has been fixed where visualization-level filters could not be edited or deleted because of missing popover menus. This feature now performs as expected.</p>
+<h3 id="fixed_27">Fixed</h3>
+<p>An issue has been fixed where resizing an Explore that contained a Word Cloud visualization could cause the Explore to crash. This feature now performs as expected.</p>
+<h3 id="fixed_28">Fixed</h3>
+<p>An issue has been fixed where generating LookML for analytic models without selecting any database tables could cause Looker to create views for all database tables and to drop certain properties because of identifier case sensitivity. This feature now performs as expected.</p>
+<h3 id="fixed_29">Fixed</h3>
+<p>An issue has been fixed where filter context banners and timezone settings were not preserved when generating PNG downloads from drill menus. This feature now performs as expected.</p>
+<h3 id="fixed_30">Fixed</h3>
+<p>An issue has been fixed where applying pivots to merge queries could cause visualization errors and blank column headers in the results table. This feature now performs as expected.</p>
+<h3 id="fixed_31">Fixed</h3>
+<p>An issue has been fixed where standalone tile exports from embedded dashboards with filter context could render off-screen or with clipped visualizations in PDF and PNG formats. This feature now performs as expected.</p>
+<h3 id="fixed_32">Fixed</h3>
+<p>An issue has been fixed where clearing all text from a dashboard note tile failed to persist upon page refresh. This feature now performs as expected.</p>
+<h3 id="fixed_33">Fixed</h3>
+<p>The BigQuery High Throughput API has been disabled by default to prevent connection errors for environments without <code>bigquery.readsessions.create</code> permissions. Additionally, required JVM flags for JDK 11 environments have been added. This feature now performs as expected.</p>
+<h3 id="fixed_34">Fixed</h3>
+<p>An issue has been fixed where multi-line prompt text in dashboard chat views caused action buttons (such as the <strong>Thinking</strong> toggle and <strong>Send</strong> button) and vertical scrollbars to be misaligned. This feature now performs as expected.</p>
+<h3 id="fixed_35">Fixed</h3>
+<p>An issue has been fixed where pinned Looks on boards generated broken URLs that redirected to the home page and failed to dynamically reflect title updates. This feature now performs as expected.</p>
+<h3 id="fixed_36">Fixed</h3>
+<p>An issue has been fixed where selecting a suggestion could reset the dropdown to a loading spinner. This feature now performs as expected.</p>
+<h3 id="fixed_37">Fixed</h3>
+<p>An issue has been fixed where collapsible navigation items in the Admin panel and the main navigation pane rendered rectangular focus outlines rather than rounded focus indicators during keyboard navigation. This feature now performs as expected.</p>
+<h3 id="fixed_38">Fixed</h3>
+<p>An issue has been fixed where typed search strings persisted after you selected an autocomplete suggestion in multi-select filters. This feature now performs as expected.</p>
+<h3 id="fixed_39">Fixed</h3>
+<p>When you duplicate a user-defined dashboard, associated Looker data agent instructions, configurations, and sources are now preserved on the copied dashboard.</p>
+<h3 id="fixed_40">Fixed</h3>
+<p>Self-service models have been restricted to only their assigned user database connections, preventing unintended instance-wide database connection access.</p>
+<h3 id="fixed_41">Fixed</h3>
+<p>Boxplot visualizations now render transparent median dividers and borders properly in inverted and dark theme layouts.</p>
+<h3 id="fixed_42">Fixed</h3>
 <p>An issue has been fixed where IAM administrators on Looker (Google Cloud core) instances failed authentication when the <code>auth_requires_role</code> and strict Group Role Mapping were enabled. This feature now performs as expected.</p>
 <h3 id="feature_1">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content">Semantic Search</a> feature is now generally available.</p>
@@ -2954,7 +3001,7 @@
 <p>OpenJDK 11 will no longer be supported as of <strong>January 14, 2027</strong>. Customer-hosted instances must <a href="https://docs.cloud.google.com/looker/docs/upgrading-to-openjdk-21-customer-hosted-instance">upgrade to OpenJDK 21</a>.</p>
 <hr />
 <h2 id="2026-08-31">2026-08-31</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#eu-ca-compliance">Localized data processing</a> for European Union (EU)-based customers now applies to all Conversational Analytics data agents, including agents that are associated with Looker Explores, user-defined dashboards, and LookML dashboards. This support means that localized data processing now applies to <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview#key-features">all Conversational Analytics in Looker features</a>.</p>
 <p><strong>Note:</strong> This item was added September 9, 2026.</p>
 <h3 id="deprecated_2">Deprecated</h3>
@@ -2962,7 +3009,7 @@
 <p><strong>Note:</strong> The deprecation of the Looker Mobile (Legacy) application has been postponed to January 31, 2027. This item was updated on September 9, 2026.</p>
 <hr />
 <h2 id="2026-08-28">2026-08-28</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>From August 24 through August 26, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.14.</p>
 <h3 id="feature_3">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/manage-unused-content"><strong>Advanced Unused Content Cleanup</strong></a> feature is now generally available.</p>
@@ -2997,17 +3044,17 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
 <p>The <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage">Conversational Analytics System Activity dashboard <strong>Token usage</strong> tab</a> now includes observability information about top users and top conversations by token usage. The tab also now indicates the type of data agent in its observability metrics.</p>
 <h3 id="change_3">Change</h3>
 <p>When connecting Looker to your database, you can specify <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#additional_jdbc_parameters">additional Java Database Connectivity (JDBC) parameters</a>. To maintain security, Looker restricts the allowed values for certain parameters. For the JDBC parameters that have a restricted set of allowed values, the allowed values are listed in the "Supported JDBC parameters" section of the <a href="https://docs.cloud.google.com/looker/docs/dialects#database_configuration_instructions">database configuration instructions</a> page for your dialect.</p>
-<h3 id="fixed_24">Fixed</h3>
+<h3 id="fixed_43">Fixed</h3>
 <p>Dashboard parameter filters now correctly respect manually restricted option lists when determining default values. This prevents filters from reverting to base LookML defaults that were intentionally hidden from the dashboard's user interface.</p>
-<h3 id="fixed_25">Fixed</h3>
+<h3 id="fixed_44">Fixed</h3>
 <p>Tiles that are on <a href="https://docs.cloud.google.com/looker/docs/tabbed-dashboards">dashboard tabs</a> will now run only when the dashboard tab that they are saved on is opened.</p>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Looker now supports connections to <a href="https://docs.cloud.google.com/looker/docs/db-config-mongosql">MongoSQL</a>. Although existing connections to the legacy <a href="https://docs.cloud.google.com/looker/docs/db-config-mongodb">MongoDB Connector for BI</a> are still fully supported, Looker recommends that you update MongoDB Connector for BI connections to use the MongoSQL dialect.</p>
 <p>See the MongoDB documentation <a href="https://www.mongodb.com/docs/sql-interface/transition-bic-to-atlas-sql/">Transition from Atlas BI Connector to MongoSQL</a> and the Looker documentation <a href="https://docs.cloud.google.com/looker/docs/db-config-mongodb#migrating-to-mongosql">Migrating to MongoSQL</a> for information on migrating from the MongoDB Atlas BI Connector to the newer MongoSQL Interface.</p>
 <p><strong>Note:</strong> One year before the MongoDB Connector for BI is to be deprecated, customers will be sent a service announcement to that effect. The information will also be reflected in product documentation and release notes.</p>
 <hr />
 <h2 id="2026-08-18">2026-08-18</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>The latest versions in the Looker (Google Cloud core) <a href="https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels">release channels</a> are beginning deployment as follows:</p>
 <ul>
 <li>Latest version in the Rapid channel: <strong>Looker 26.14</strong></li>
@@ -3016,22 +3063,22 @@ You can now specify a <a href="https://docs.cloud.google.com/looker/docs/google-
 </ul>
 <hr />
 <h2 id="2026-08-17">2026-08-17</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>Looker's <a href="https://docs.cloud.google.com/looker/docs/continuous-integration">Continuous Integration</a> is based on the legacy standalone Spectacles service. Looker will continue to integrate and evolve the Spectacles features into Looker's Continuous Integration, and the legacy standalone Spectacles service itself will be discontinued starting November 30, 2026. Existing Spectacles customers will receive an email with details. If you have any questions or require assistance, please contact us at <a href="mailto:spectacles-support@google.com">spectacles-support@google.com</a>.</p>
 <hr />
 <h2 id="2026-08-06">2026-08-06</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>Looker 26.14</strong> will roll out to Looker (original) instances on the following schedule:</p>
 <ul>
 <li>Expected deployment start: <strong>Monday, August 10, 2026</strong></li>
 <li>Expected final deployment and download available: <strong>Sunday, August 23, 2026</strong></li>
 </ul>
 <p>Looker 26.14 is expected to include the following changes, features, and fixes.</p>
-<h3 id="fixed_26">Fixed</h3>
+<h3 id="fixed_45">Fixed</h3>
 <p>An issue has been fixed where dashboard filters of <code>type: string_filter</code> could spin indefinitely if no suggestions were configured. This feature now performs as expected.</p>
-<h3 id="fixed_27">Fixed</h3>
+<h3 id="fixed_46">Fixed</h3>
 <p>An issue has been fixed where clicking <strong>edit</strong> for a visualization from a dashboard caused the dashboard tile header to render on top of the Explore, preventing editing. This feature now performs as expected.</p>
-<h3 id="fixed_28">Fixed</h3>
+<h3 id="fixed_47">Fixed</h3>
 <p>An issue has been fixed where LookML drill links and Liquid variables inside table cells could fail to render properly on dashboards and embedded visualizations. This feature now performs as expected.</p>
 <h3 id="feature_12">Feature</h3>
 <p>Now generally available, the <strong>Granular Dashboard Sizing</strong> feature allows dashboard editors to change the size and layout of dashboard tiles with more granularity.</p>
@@ -3046,65 +3093,65 @@ show its thinking or debugging information when generating a response.</p>
 <p>A Conversational Analytics data agent now displays query results in its thinking rather than in its final response.</p>
 <h3 id="change_5">Change</h3>
 <p>The timeout length for Conversational Analytics queries has been increased from two to five minutes. <strong>Note:</strong> This item was updated on August 7, 2026.</p>
-<h3 id="fixed_29">Fixed</h3>
-<p>An issue has been fixed where large queries on Snowflake connections could fail with an <code>SSLHandshakeException: No trusted certificate found</code> error. This feature now performs as expected.</p>
-<h3 id="fixed_30">Fixed</h3>
-<p>An issue has been fixed where the <strong>Show Region Field in Tooltip</strong> option was hidden for region maps that were configured without LookML map layer metadata. This feature now performs as expected.</p>
-<h3 id="fixed_31">Fixed</h3>
-<p>An issue has been fixed where the list of Explores in the Conversational Analytics agent's card could be cut off for embed users with longer names. This feature now performs as expected.</p>
-<h3 id="fixed_32">Fixed</h3>
-<p>An issue has been fixed where users with mixed roles across projects were unable to see and re-authorize OAuth connections for projects where they had viewer-only access. This feature now performs as expected.</p>
-<h3 id="fixed_33">Fixed</h3>
-<p>An issue has been fixed where a secondary Y-axis could reset its position if a parameter value was updated. This feature now performs as expected.</p>
-<h3 id="fixed_34">Fixed</h3>
-<p>An issue has been fixed where validating LookML with an empty <code>value_format</code> parameter could result in a 500 internal server error. This feature now performs as expected.</p>
-<h3 id="fixed_35">Fixed</h3>
-<p>An issue has been fixed where modifying table calculations could cause Looker to run a new query rather than pulling results from cache. This feature now performs as expected.</p>
-<h3 id="fixed_36">Fixed</h3>
-<p>An issue has been fixed where clicking the <strong>Fullscreen</strong> button while using the Conversational Analytics dashboard caused the chat view to disappear. This feature now performs as expected.</p>
-<h3 id="fixed_37">Fixed</h3>
-<p>An issue has been fixed where scheduled jobs that were owned by users who authenticated by using Workforce Identity (BYOID) could fail with IAM login failures. This feature now performs as expected.</p>
-<h3 id="fixed_38">Fixed</h3>
-<p>An issue has been fixed where the merged results page could return a <code>403</code> error after a period of user inactivity while cookieless embedding was being used. This feature now performs as expected.</p>
-<h3 id="fixed_39">Fixed</h3>
-<p>An issue has been fixed where some characters were incorrectly displayed as HTML entities. For example,<code>"</code> would render as <code>&amp;quot;</code>. This feature now performs as expected.</p>
-<h3 id="fixed_40">Fixed</h3>
-<p>An issue has been fixed where Looker could generate incorrect SQL when creating a Self-service Explore from a spreadsheet. This feature now performs as expected.</p>
-<h3 id="fixed_41">Fixed</h3>
-<p>An issue has been fixed where the drill modal incorrectly displayed a pivot option for queries that couldn't be pivoted. This feature now performs as expected.</p>
-<h3 id="fixed_42">Fixed</h3>
-<p>An issue has been fixed where updating the data for a Self-service Explore could fail with a generic error. This feature now performs as expected.</p>
-<h3 id="fixed_43">Fixed</h3>
-<p>An issue has been fixed where Timeline visualizations could fail to respect admin color collection overrides. This feature now performs as expected.</p>
-<h3 id="fixed_44">Fixed</h3>
-<p>An issue has been fixed where visualizations were not respecting internal dashboard theme color collections, which caused custom theme color collections to revert to the defaults.</p>
-<h3 id="fixed_45">Fixed</h3>
-<p>An issue has been fixed where timeout settings in the Extension SDK could be reset to their default value of 120 seconds. This feature now performs as expected.</p>
-<h3 id="fixed_46">Fixed</h3>
-<p>An issue has been fixed where the items in the <strong>Axis Order</strong> section in the Y panel of the visualization edit panel were inaccessible to screen readers. This feature now performs as expected.</p>
-<h3 id="fixed_47">Fixed</h3>
-<p>An issue has been fixed where non-admin user OAuth tokens remained valid even after database connection parameters were updated. This feature now performs as expected.</p>
 <h3 id="fixed_48">Fixed</h3>
-<p>An issue with column numbers has been fixed that could occur when XLSX results for tiles that used pivots were generated. This feature now performs as expected.</p>
+<p>An issue has been fixed where large queries on Snowflake connections could fail with an <code>SSLHandshakeException: No trusted certificate found</code> error. This feature now performs as expected.</p>
 <h3 id="fixed_49">Fixed</h3>
-<p>An issue has been fixed in the Conversational Analytics interface where chats that used deleted agents or Explores could neither be deleted nor restored. This feature now performs as expected.</p>
+<p>An issue has been fixed where the <strong>Show Region Field in Tooltip</strong> option was hidden for region maps that were configured without LookML map layer metadata. This feature now performs as expected.</p>
 <h3 id="fixed_50">Fixed</h3>
-<p>An issue has been fixed where searching by label in the field picker would fail to find fields where the <code>group_label</code> or <code>group_item_label</code> was set to an empty string. This feature now performs as expected.</p>
+<p>An issue has been fixed where the list of Explores in the Conversational Analytics agent's card could be cut off for embed users with longer names. This feature now performs as expected.</p>
 <h3 id="fixed_51">Fixed</h3>
-<p>Looker now displays a more informative error when a Conversational Analytics conversation fails to load as the result of a network failure. This feature now performs as expected.</p>
+<p>An issue has been fixed where users with mixed roles across projects were unable to see and re-authorize OAuth connections for projects where they had viewer-only access. This feature now performs as expected.</p>
 <h3 id="fixed_52">Fixed</h3>
-<p>An issue has been fixed where LookML dashboards could fail to deploy if the project name exceeded 64 characters. This feature now performs as expected.</p>
+<p>An issue has been fixed where a secondary Y-axis could reset its position if a parameter value was updated. This feature now performs as expected.</p>
 <h3 id="fixed_53">Fixed</h3>
-<p>An issue has been fixed where modifying a self-service model that was created from a blank canvas could return a <code>Resource already exists</code> error. This feature now performs as expected.</p>
+<p>An issue has been fixed where validating LookML with an empty <code>value_format</code> parameter could result in a 500 internal server error. This feature now performs as expected.</p>
 <h3 id="fixed_54">Fixed</h3>
-<p>An issue has been fixed where Waterfall chart visualization configurations could fail to render if the X-axis label rotation was set to an empty, a null, or another undefined value. This feature now performs as expected.</p>
+<p>An issue has been fixed where modifying table calculations could cause Looker to run a new query rather than pulling results from cache. This feature now performs as expected.</p>
 <h3 id="fixed_55">Fixed</h3>
+<p>An issue has been fixed where clicking the <strong>Fullscreen</strong> button while using the Conversational Analytics dashboard caused the chat view to disappear. This feature now performs as expected.</p>
+<h3 id="fixed_56">Fixed</h3>
+<p>An issue has been fixed where scheduled jobs that were owned by users who authenticated by using Workforce Identity (BYOID) could fail with IAM login failures. This feature now performs as expected.</p>
+<h3 id="fixed_57">Fixed</h3>
+<p>An issue has been fixed where the merged results page could return a <code>403</code> error after a period of user inactivity while cookieless embedding was being used. This feature now performs as expected.</p>
+<h3 id="fixed_58">Fixed</h3>
+<p>An issue has been fixed where some characters were incorrectly displayed as HTML entities. For example,<code>"</code> would render as <code>&amp;quot;</code>. This feature now performs as expected.</p>
+<h3 id="fixed_59">Fixed</h3>
+<p>An issue has been fixed where Looker could generate incorrect SQL when creating a Self-service Explore from a spreadsheet. This feature now performs as expected.</p>
+<h3 id="fixed_60">Fixed</h3>
+<p>An issue has been fixed where the drill modal incorrectly displayed a pivot option for queries that couldn't be pivoted. This feature now performs as expected.</p>
+<h3 id="fixed_61">Fixed</h3>
+<p>An issue has been fixed where updating the data for a Self-service Explore could fail with a generic error. This feature now performs as expected.</p>
+<h3 id="fixed_62">Fixed</h3>
+<p>An issue has been fixed where Timeline visualizations could fail to respect admin color collection overrides. This feature now performs as expected.</p>
+<h3 id="fixed_63">Fixed</h3>
+<p>An issue has been fixed where visualizations were not respecting internal dashboard theme color collections, which caused custom theme color collections to revert to the defaults.</p>
+<h3 id="fixed_64">Fixed</h3>
+<p>An issue has been fixed where timeout settings in the Extension SDK could be reset to their default value of 120 seconds. This feature now performs as expected.</p>
+<h3 id="fixed_65">Fixed</h3>
+<p>An issue has been fixed where the items in the <strong>Axis Order</strong> section in the Y panel of the visualization edit panel were inaccessible to screen readers. This feature now performs as expected.</p>
+<h3 id="fixed_66">Fixed</h3>
+<p>An issue has been fixed where non-admin user OAuth tokens remained valid even after database connection parameters were updated. This feature now performs as expected.</p>
+<h3 id="fixed_67">Fixed</h3>
+<p>An issue with column numbers has been fixed that could occur when XLSX results for tiles that used pivots were generated. This feature now performs as expected.</p>
+<h3 id="fixed_68">Fixed</h3>
+<p>An issue has been fixed in the Conversational Analytics interface where chats that used deleted agents or Explores could neither be deleted nor restored. This feature now performs as expected.</p>
+<h3 id="fixed_69">Fixed</h3>
+<p>An issue has been fixed where searching by label in the field picker would fail to find fields where the <code>group_label</code> or <code>group_item_label</code> was set to an empty string. This feature now performs as expected.</p>
+<h3 id="fixed_70">Fixed</h3>
+<p>Looker now displays a more informative error when a Conversational Analytics conversation fails to load as the result of a network failure. This feature now performs as expected.</p>
+<h3 id="fixed_71">Fixed</h3>
+<p>An issue has been fixed where LookML dashboards could fail to deploy if the project name exceeded 64 characters. This feature now performs as expected.</p>
+<h3 id="fixed_72">Fixed</h3>
+<p>An issue has been fixed where modifying a self-service model that was created from a blank canvas could return a <code>Resource already exists</code> error. This feature now performs as expected.</p>
+<h3 id="fixed_73">Fixed</h3>
+<p>An issue has been fixed where Waterfall chart visualization configurations could fail to render if the X-axis label rotation was set to an empty, a null, or another undefined value. This feature now performs as expected.</p>
+<h3 id="fixed_74">Fixed</h3>
 <p>An issue has been fixed where users with Admin via IAM privileges on Looker (Google Cloud core) couldn't enable the Looker Marketplace. This feature now performs as expected.</p>
 <h3 id="feature_15">Feature</h3>
 <p>Now generally available, the <strong>Dashboard Tile Limits</strong> feature allows admins to set limits on tiles per dashboard and per tab to optimize performance, which is configured on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails"><strong>Content Guardrails</strong></a> page in the <strong>Performance Center</strong> section of the <strong>Admin</strong> panel. <strong>Note:</strong> This item was added on August 13, 2026.</p>
 <hr />
 <h2 id="2026-08-05">2026-08-05</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>From August 3 through August 5, 2026, the following features will be automatically enabled for Looker (Google Cloud core) instances running Looker 26.12.</p>
 <h3 id="feature_16">Feature</h3>
 <p>Looker Continuous Integration (CI) now supports email alerts. When you create or edit a CI suite, you can enable the <strong>Enable email alerts</strong> toggle to specify email recipients and select which run statuses will trigger emails (<strong>Failed</strong>, <strong>Error</strong>, <strong>Passed</strong>, or <strong>Cancelled</strong>). For more information, see <a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#alerting">Set up alerting</a>.</p>
@@ -3140,7 +3187,7 @@ show its thinking or debugging information when generating a response.</p>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-insight-asst">Insight Assistant</a> now displays the process the assistant uses to generate the response, showing key details in your data that it used to generate the response, and listing the fields from your Explore that it used.</p>
 <h3 id="change_7">Change</h3>
 <p>When you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#chat-agent-ge">chat in Gemini Enterprise with data agents that you create in Looker</a>, agent responses now include charts and visualizations.</p>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-dsp">Complimentary Data Studio Pro licenses</a> aren't available for Looker (Google Cloud core) instances that are created after August 1, 2026.</p>
 <hr />
 <h2 id="2026-08-04">2026-08-04</h2>
@@ -3150,7 +3197,7 @@ show its thinking or debugging information when generating a response.</p>
 <p>Now available in preview, Looker admins can review end-user query success rates, rating distributions, and written user feedback in the <strong>Responses &amp; Feedback</strong> tab on the <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics">Conversational Analytics System Activity dashboard</a>. This data helps administrators improve system performance, support troubleshooting, and refine data agents.</p>
 <p>To enable this feature, a Looker admin must turn on the <strong>End User Conversational Analytics (CA) Query Review</strong> setting on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-user-feedback"><strong>General</strong> page</a> in the <strong>Preview</strong> section of the <strong>Admin</strong> panel. The <strong>End User Conversational Analytics (CA) Query Review</strong> admin setting is disabled by default.</p>
 <p>Specific user query data is visible only for users who have <a href="https://docs.cloud.google.com/looker/docs/user-account#conversational-analytics">consented to share their query data</a> in their account settings. The <strong>End User Conversational Analytics (CA) Query Review</strong> user setting is disabled by default.</p>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>From August 3 through August 7, 2026, the following features will be automatically enabled for Looker (original) and Looker (Google Cloud core) instances running Looker 26.12.</p>
 <hr />
 <h2 id="2026-08-03">2026-08-03</h2>
@@ -3166,7 +3213,7 @@ EU member states and does not include the <code>europe-west2</code> (London, UK)
 region is also unavailable at this time.</p>
 <hr />
 <h2 id="2026-07-30">2026-07-30</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>From July 27 through July 30, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.12.</p>
 <h3 id="feature_30">Feature</h3>
 <p>Looker admins now have the ability to configure a Looker instance to require <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-two-factor">multi-factor authentication (MFA)</a> whenever a user tries to <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-password">log in by using an email and a password</a>. This feature is enabled by default.</p>
@@ -3240,7 +3287,7 @@ region is also unavailable at this time.</p>
 <p>Looker recommends that you transition to new Java updates as they are released. Other versions of Java, Oracle JDK, and OpenJDK aren't supported at this time.</p>
 <hr />
 <h2 id="2026-07-13">2026-07-13</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>The latest versions in the Looker (Google Cloud core) <a href="https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels">release channels</a> are beginning deployment as follows:</p>
 <ul>
 <li>Latest version in the Rapid channel: <strong>Looker 26.12</strong></li>
@@ -3249,70 +3296,70 @@ region is also unavailable at this time.</p>
 </ul>
 <hr />
 <h2 id="2026-07-09">2026-07-09</h2>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p><strong>Looker 26.12</strong> will roll out to Looker (original) instances on the following schedule:</p>
 <ul>
 <li>Expected deployment start: <strong>Sunday, July 12, 2026</strong></li>
 <li>Expected final deployment and download available: <strong>Sunday, July 26, 2026</strong></li>
 </ul>
 <p>Looker 26.12 is expected to include the following changes, features, and fixes.</p>
-<h3 id="fixed_56">Fixed</h3>
+<h3 id="fixed_75">Fixed</h3>
 <p>An issue has been fixed where accessing a folder that contained scheduled content that was configured for disabled integrations could cause Looker to crash with a <code>TypeError</code>. This feature now performs as expected.</p>
-<h3 id="fixed_57">Fixed</h3>
+<h3 id="fixed_76">Fixed</h3>
 <p>An issue has been fixed where users with only the Admin via IAM role on Looker (Google Cloud Core) instances would incorrectly lack access to connections when Advanced Control Governance (ACG) was enabled. This feature now performs as expected.</p>
-<h3 id="fixed_58">Fixed</h3>
+<h3 id="fixed_77">Fixed</h3>
 <p>Layout spacing and column alignment issues have been fixed on the OIDC and SAML authentication Admin pages. These features now perform as expected.</p>
-<h3 id="fixed_59">Fixed</h3>
+<h3 id="fixed_78">Fixed</h3>
 <p>An issue has been fixed where clicking <strong>Reset Styles</strong> in the table visualization formatting panel would unexpectedly reset the table theme, color palette, and custom borders. This feature now performs as expected.</p>
-<h3 id="fixed_60">Fixed</h3>
+<h3 id="fixed_79">Fixed</h3>
 <p>An issue has been fixed where the <strong>Workflows</strong> page was not visible to users with the <code>create_alerts</code> permission. This feature now performs as expected.</p>
-<h3 id="fixed_61">Fixed</h3>
+<h3 id="fixed_80">Fixed</h3>
 <p>An issue has been fixed where the comparison value in a KPI visualization could be incorrectly centered when the sparkline was disabled. This feature now performs as expected.</p>
 <h3 id="feature_42">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#kpi_visualization"><strong>KPI Visualization</strong> preview feature</a> is now enabled by default.</p>
 <h3 id="feature_43">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits"><strong>Increased Row Limit</strong></a> feature is now out of labs and generally available.</p>
-<h3 id="fixed_62">Fixed</h3>
-<p>An issue has been fixed where the LookML validator used a stale cache for local project dependencies when the dependencies were updated in production. This feature now performs as expected.</p>
-<h3 id="fixed_63">Fixed</h3>
-<p>An issue has been fixed where some custom visualizations could be cut off in PDF exports. This feature now performs as expected.</p>
-<h3 id="fixed_64">Fixed</h3>
-<p>An issue has been fixed where, if a dashboard tile contained no results, the <code>row_total</code> table calculation function could return an error, which would prevent scheduled deliveries. This feature now performs as expected.</p>
-<h3 id="fixed_65">Fixed</h3>
-<p>An issue has been fixed where the commit hash in the Deploy Manager displayed PENDING during compilation and didn't update upon refresh. This feature now performs as expected.</p>
-<h3 id="fixed_66">Fixed</h3>
-<p>An issue has been fixed where drilling down on a value for which the custom value format contained the <code>#</code> character could cause the page to crash. This feature now performs as expected.</p>
-<h3 id="fixed_67">Fixed</h3>
-<p>An issue has been fixed where inline button toggle filters on dashboards could be cut off or could overlap with adjacent filters. This feature now performs as expected.</p>
-<h3 id="fixed_68">Fixed</h3>
-<p>An issue has been fixed where deleting a duplicated dashboard tab would incorrectly delete shared elements from other tabs. This feature now performs as expected.</p>
-<h3 id="fixed_69">Fixed</h3>
-<p>An issue has been fixed where the column limit could fail to apply to an Explore that used pivots. This feature now performs as expected.</p>
-<h3 id="fixed_70">Fixed</h3>
-<p>An issue has been fixed where <code>added_params</code> metadata in streaming JSON responses could be malformed or missing. This feature now performs as expected.</p>
-<h3 id="fixed_71">Fixed</h3>
-<p>An issue has been fixed where OAuth connections would incorrectly fail connection tests on the <strong>Self-service Explores</strong> Admin page. This feature now performs as expected.</p>
-<h3 id="fixed_72">Fixed</h3>
-<p>An issue has been fixed where the <strong>Run</strong> and <strong>Settings</strong> buttons were not correctly being displayed on embedded Explores with the <code>_theme</code> URL parameter. This feature now performs as expected.</p>
-<h3 id="fixed_73">Fixed</h3>
-<p>An issue has been fixed where the Content Validator returned a generic error message instead of returning the specific models that were affected. This feature now performs as expected.</p>
-<h3 id="fixed_74">Fixed</h3>
-<p>An issue has been fixed where drilling into a value while in Dev mode could return a <code>500 internal server</code> error. This feature now performs as expected.</p>
-<h3 id="fixed_75">Fixed</h3>
-<p>An issue has been fixed where API calls that were made by service account users without a configured last name failed with a <code>500 internal server</code> error. This feature now performs as expected.</p>
-<h3 id="fixed_76">Fixed</h3>
-<p>An issue has been fixed where <code>view.field</code> references in Liquid were not correctly rendered if the field name matched a built-in Liquid variable. This feature now performs as expected.</p>
-<h3 id="fixed_77">Fixed</h3>
-<p>An issue has been fixed where autosizing table columns didn't work as expected in drill menus. This feature now performs as expected.</p>
-<h3 id="fixed_78">Fixed</h3>
-<p>An issue has been fixed where drill modals could repeatedly render a visualization, which would present as constant flickering in the browser. This feature now performs as expected.</p>
-<h3 id="fixed_79">Fixed</h3>
-<p>An issue has been fixed where invalid parameters in an embed URL could result in Looker displaying an unnecessarily verbose stack trace instead of a concise error. This feature now performs as expected.</p>
-<h3 id="fixed_80">Fixed</h3>
-<p>An issue has been fixed where editing a workflow on the <strong>Workflow Management</strong> page could load indefinitely. This feature now performs as expected.</p>
 <h3 id="fixed_81">Fixed</h3>
-<p>An issue has been fixed where clearing the <strong>Totals Labels</strong> option for the <strong>Totals Color</strong> setting in the color picker resulted in black text in the chart. This feature now performs as expected.</p>
+<p>An issue has been fixed where the LookML validator used a stale cache for local project dependencies when the dependencies were updated in production. This feature now performs as expected.</p>
 <h3 id="fixed_82">Fixed</h3>
+<p>An issue has been fixed where some custom visualizations could be cut off in PDF exports. This feature now performs as expected.</p>
+<h3 id="fixed_83">Fixed</h3>
+<p>An issue has been fixed where, if a dashboard tile contained no results, the <code>row_total</code> table calculation function could return an error, which would prevent scheduled deliveries. This feature now performs as expected.</p>
+<h3 id="fixed_84">Fixed</h3>
+<p>An issue has been fixed where the commit hash in the Deploy Manager displayed PENDING during compilation and didn't update upon refresh. This feature now performs as expected.</p>
+<h3 id="fixed_85">Fixed</h3>
+<p>An issue has been fixed where drilling down on a value for which the custom value format contained the <code>#</code> character could cause the page to crash. This feature now performs as expected.</p>
+<h3 id="fixed_86">Fixed</h3>
+<p>An issue has been fixed where inline button toggle filters on dashboards could be cut off or could overlap with adjacent filters. This feature now performs as expected.</p>
+<h3 id="fixed_87">Fixed</h3>
+<p>An issue has been fixed where deleting a duplicated dashboard tab would incorrectly delete shared elements from other tabs. This feature now performs as expected.</p>
+<h3 id="fixed_88">Fixed</h3>
+<p>An issue has been fixed where the column limit could fail to apply to an Explore that used pivots. This feature now performs as expected.</p>
+<h3 id="fixed_89">Fixed</h3>
+<p>An issue has been fixed where <code>added_params</code> metadata in streaming JSON responses could be malformed or missing. This feature now performs as expected.</p>
+<h3 id="fixed_90">Fixed</h3>
+<p>An issue has been fixed where OAuth connections would incorrectly fail connection tests on the <strong>Self-service Explores</strong> Admin page. This feature now performs as expected.</p>
+<h3 id="fixed_91">Fixed</h3>
+<p>An issue has been fixed where the <strong>Run</strong> and <strong>Settings</strong> buttons were not correctly being displayed on embedded Explores with the <code>_theme</code> URL parameter. This feature now performs as expected.</p>
+<h3 id="fixed_92">Fixed</h3>
+<p>An issue has been fixed where the Content Validator returned a generic error message instead of returning the specific models that were affected. This feature now performs as expected.</p>
+<h3 id="fixed_93">Fixed</h3>
+<p>An issue has been fixed where drilling into a value while in Dev mode could return a <code>500 internal server</code> error. This feature now performs as expected.</p>
+<h3 id="fixed_94">Fixed</h3>
+<p>An issue has been fixed where API calls that were made by service account users without a configured last name failed with a <code>500 internal server</code> error. This feature now performs as expected.</p>
+<h3 id="fixed_95">Fixed</h3>
+<p>An issue has been fixed where <code>view.field</code> references in Liquid were not correctly rendered if the field name matched a built-in Liquid variable. This feature now performs as expected.</p>
+<h3 id="fixed_96">Fixed</h3>
+<p>An issue has been fixed where autosizing table columns didn't work as expected in drill menus. This feature now performs as expected.</p>
+<h3 id="fixed_97">Fixed</h3>
+<p>An issue has been fixed where drill modals could repeatedly render a visualization, which would present as constant flickering in the browser. This feature now performs as expected.</p>
+<h3 id="fixed_98">Fixed</h3>
+<p>An issue has been fixed where invalid parameters in an embed URL could result in Looker displaying an unnecessarily verbose stack trace instead of a concise error. This feature now performs as expected.</p>
+<h3 id="fixed_99">Fixed</h3>
+<p>An issue has been fixed where editing a workflow on the <strong>Workflow Management</strong> page could load indefinitely. This feature now performs as expected.</p>
+<h3 id="fixed_100">Fixed</h3>
+<p>An issue has been fixed where clearing the <strong>Totals Labels</strong> option for the <strong>Totals Color</strong> setting in the color picker resulted in black text in the chart. This feature now performs as expected.</p>
+<h3 id="fixed_101">Fixed</h3>
 <p>The OAuth interface now prohibits forward slashes in the OAuth Client ID field. Previously, the inclusion of one or more forward slashes would result in a 401 error. This feature now performs as expected.</p>
 <h3 id="change_10">Change</h3>
 <p>Looker CI Run Alert emails now include the Run ID in the subject line to prevent email threading. The email body now includes the Git branch and commit details.</p>
@@ -3327,7 +3374,7 @@ This feature is enabled by default.</p>
 <p>When you delete a Looker (Google Cloud core) instance, it is now <a href="https://docs.cloud.google.com/looker/docs/looker-core-delete#instance-delete">moved to the trash</a> for seven days before being permanently deleted. During this period, you can <a href="https://docs.cloud.google.com/looker/docs/looker-core-delete#restore">restore the instance</a> to its previous state. After seven days, the instance is permanently deleted from the trash and cannot be recovered.</p>
 <hr />
 <h2 id="2026-07-01">2026-07-01</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p>The latest versions in the Looker (Google Cloud core) <a href="https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels">release channels</a> are beginning deployment as follows:</p>
 <ul>
 <li>Latest version in the Rapid channel: <strong>26.10</strong></li>
@@ -3338,7 +3385,7 @@ This feature is enabled by default.</p>
 <p>Looker (Google Cloud core) has introduced <a href="https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels">release channels</a> in preview, allowing users to choose between Rapid, Regular, and "No channel" options to manage the cadence of version updates. The Rapid channel provides early access to new capabilities but is excluded from the Service Level Agreement (SLA), while the Regular channel offers balanced stability with an optional Accelerated Security Patching flag.</p>
 <hr />
 <h2 id="2026-06-22">2026-06-22</h2>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p>Starting June 22, 2026, the following features will begin rolling out as part of Looker 26.10.</p>
 <h3 id="feature_48">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/gemini-expression-asst">Gemini Expression Assistant</a> preview feature has been updated to increase performance.</p>
@@ -3413,7 +3460,7 @@ This feature is enabled by default.</p>
 <p><strong>Note</strong>: The <strong>Conversational Analytics Observability</strong> preview feature is temporarily unavailable. You can still monitor Conversational Analytics engagement on the Conversational Analytics System Activity dashboard, but metrics on token usage are not available. This item was updated on June 29, 2026.</p>
 <hr />
 <h2 id="2026-06-04">2026-06-04</h2>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p><strong>Looker 26.10</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Sunday, June 7, 2026</strong></li>
@@ -3421,63 +3468,63 @@ This feature is enabled by default.</p>
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Sunday, June 7, 2026</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Sunday, June 21, 2026</strong></li>
 </ul>
-<h3 id="fixed_83">Fixed</h3>
-<p>An issue has been fixed where clicking <strong>Save and Schedule</strong> on an Explore could fail to load the <strong>Schedule</strong> dialog in a Looker (Google Cloud core) instance. This feature now performs as expected.</p>
-<h3 id="fixed_84">Fixed</h3>
-<p>An issue has been fixed where cross filters didn't properly appear in the right-aligned filter bar. This feature now performs as expected.</p>
-<h3 id="fixed_85">Fixed</h3>
-<p>An issue has been fixed where attempting to download or schedule the <strong>Recent Login Failures</strong> tile on the <strong>User Activity</strong> System Activity dashboard could fail. This feature now performs as expected.</p>
-<h3 id="fixed_86">Fixed</h3>
-<p>An issue has been fixed where users were unable to scroll dashboards when the filter bar was open. This feature now performs as expected.</p>
-<h3 id="fixed_87">Fixed</h3>
-<p>An issue has been fixed where dragging a dashboard tile horizontally could cause the tile to expand beyond the browser window. This feature now performs as expected.</p>
-<h3 id="fixed_88">Fixed</h3>
-<p>An issue has been fixed for filters on <a href="https://docs.cloud.google.com/looker/docs/custom-calendars">custom calendar</a> fields that was causing a SQL error when the custom calendar <code>dimension_group</code> or the custom calendar <code>reference_date</code> had a non-timestamp <code>datatype</code> specified. This feature now performs as expected.</p>
-<h3 id="fixed_89">Fixed</h3>
-<p>An issue has been fixed where configuring remote dependencies with custom SSH ports for on-premise Git repositories could fail. This feature now performs as expected.</p>
-<h3 id="fixed_90">Fixed</h3>
-<p>An issue has been fixed where applying string matching filters (such as <code>Contains</code> or <code>Starts With</code>) with an empty value could generate incorrect filter SQL. This feature now performs as expected.</p>
-<h3 id="fixed_91">Fixed</h3>
-<p>An issue has been fixed where the labels that were specified in the <strong>PDT Override Additional JDBC Parameters</strong> field weren't being applied to BigQuery table creation jobs. This feature now performs as expected.</p>
-<h3 id="fixed_92">Fixed</h3>
-<p>An issue has been fixed where changes to Markdown files weren't saved when you switched between <strong>Edit</strong> and <strong>Preview</strong> mode. This feature now performs as expected.</p>
-<h3 id="fixed_93">Fixed</h3>
-<p>An issue has been fixed where running queries against derived tables in SQL Runner could cause Looker to return a 500 error. This feature now performs as expected.</p>
-<h3 id="fixed_94">Fixed</h3>
-<p>An issue has been fixed where the right-aligned filter bar could become wide enough to require a scroll bar if a range slider filter was added. This feature now performs as expected.</p>
-<h3 id="fixed_95">Fixed</h3>
-<p>An issue has been fixed where right-clicking in a drill-down menu during a cookieless embed session could incorrectly close the menu. This feature now performs as expected.</p>
-<h3 id="fixed_96">Fixed</h3>
-<p>An issue has been fixed where retrieving all schemas for a Denodo connection could overload the database CPU. This feature now performs as expected.</p>
-<h3 id="fixed_97">Fixed</h3>
-<p>An issue has been fixed where the <strong>Unsubscribe</strong> link could fail to appear in a scheduled report email. This feature now performs as expected.</p>
-<h3 id="fixed_98">Fixed</h3>
-<p>An issue has been fixed where the Advanced Vis Config editor would not recognize the <code>plotOptions.column.borderRadius</code> option. This feature now performs as expected.</p>
-<h3 id="fixed_99">Fixed</h3>
-<p>An issue has been fixed where dashboard filters could fail to be updated from inactive to active color highlighting when certain types of date inputs were present. This feature now performs as expected.</p>
-<h3 id="fixed_100">Fixed</h3>
-<p>An issue has been fixed where visualizations could overflow instead of shrinking when a tile or browser was resized. This feature now performs as expected.</p>
-<h3 id="fixed_101">Fixed</h3>
-<p>When you edit a visualization, the Advanced Vis Config editor can now override default theme border and padding styles. This feature now performs as expected.</p>
 <h3 id="fixed_102">Fixed</h3>
-<p>An issue has been fixed where a join wouldn't be added to a query if the join was required by a measure that was excluded from an Explore. This feature now performs as expected.</p>
+<p>An issue has been fixed where clicking <strong>Save and Schedule</strong> on an Explore could fail to load the <strong>Schedule</strong> dialog in a Looker (Google Cloud core) instance. This feature now performs as expected.</p>
 <h3 id="fixed_103">Fixed</h3>
-<p>An issue has been fixed where period-over-period (POP) measures of types <code>previous</code> and <code>difference</code> that were based on <code>count</code> and <code>sum</code> measures would incorrectly return null instead of zero when no data was available for the comparison period. This feature now performs as expected.</p>
+<p>An issue has been fixed where cross filters didn't properly appear in the right-aligned filter bar. This feature now performs as expected.</p>
 <h3 id="fixed_104">Fixed</h3>
-<p>An issue has been fixed where filter suggestions on dashboard filters could incorrectly retain previous filter values. This feature now performs as expected.</p>
+<p>An issue has been fixed where attempting to download or schedule the <strong>Recent Login Failures</strong> tile on the <strong>User Activity</strong> System Activity dashboard could fail. This feature now performs as expected.</p>
 <h3 id="fixed_105">Fixed</h3>
-<p>An issue has been fixed where setting a field name or an Explore name in a LookML dashboard as a non-string datatype could cause the LookML validator to return a 500 error. This feature now performs as expected.</p>
+<p>An issue has been fixed where users were unable to scroll dashboards when the filter bar was open. This feature now performs as expected.</p>
 <h3 id="fixed_106">Fixed</h3>
-<p>An issue has been fixed where the <code>button group</code> dashboard filter type could display more than 30 options, cluttering the UI. This feature now performs as expected.</p>
+<p>An issue has been fixed where dragging a dashboard tile horizontally could cause the tile to expand beyond the browser window. This feature now performs as expected.</p>
 <h3 id="fixed_107">Fixed</h3>
-<p>An issue has been fixed where moving a filter by dragging it could also inadvertently highlight text. This feature now performs as expected.</p>
+<p>An issue has been fixed for filters on <a href="https://docs.cloud.google.com/looker/docs/custom-calendars">custom calendar</a> fields that was causing a SQL error when the custom calendar <code>dimension_group</code> or the custom calendar <code>reference_date</code> had a non-timestamp <code>datatype</code> specified. This feature now performs as expected.</p>
 <h3 id="fixed_108">Fixed</h3>
+<p>An issue has been fixed where configuring remote dependencies with custom SSH ports for on-premise Git repositories could fail. This feature now performs as expected.</p>
+<h3 id="fixed_109">Fixed</h3>
+<p>An issue has been fixed where applying string matching filters (such as <code>Contains</code> or <code>Starts With</code>) with an empty value could generate incorrect filter SQL. This feature now performs as expected.</p>
+<h3 id="fixed_110">Fixed</h3>
+<p>An issue has been fixed where the labels that were specified in the <strong>PDT Override Additional JDBC Parameters</strong> field weren't being applied to BigQuery table creation jobs. This feature now performs as expected.</p>
+<h3 id="fixed_111">Fixed</h3>
+<p>An issue has been fixed where changes to Markdown files weren't saved when you switched between <strong>Edit</strong> and <strong>Preview</strong> mode. This feature now performs as expected.</p>
+<h3 id="fixed_112">Fixed</h3>
+<p>An issue has been fixed where running queries against derived tables in SQL Runner could cause Looker to return a 500 error. This feature now performs as expected.</p>
+<h3 id="fixed_113">Fixed</h3>
+<p>An issue has been fixed where the right-aligned filter bar could become wide enough to require a scroll bar if a range slider filter was added. This feature now performs as expected.</p>
+<h3 id="fixed_114">Fixed</h3>
+<p>An issue has been fixed where right-clicking in a drill-down menu during a cookieless embed session could incorrectly close the menu. This feature now performs as expected.</p>
+<h3 id="fixed_115">Fixed</h3>
+<p>An issue has been fixed where retrieving all schemas for a Denodo connection could overload the database CPU. This feature now performs as expected.</p>
+<h3 id="fixed_116">Fixed</h3>
+<p>An issue has been fixed where the <strong>Unsubscribe</strong> link could fail to appear in a scheduled report email. This feature now performs as expected.</p>
+<h3 id="fixed_117">Fixed</h3>
+<p>An issue has been fixed where the Advanced Vis Config editor would not recognize the <code>plotOptions.column.borderRadius</code> option. This feature now performs as expected.</p>
+<h3 id="fixed_118">Fixed</h3>
+<p>An issue has been fixed where dashboard filters could fail to be updated from inactive to active color highlighting when certain types of date inputs were present. This feature now performs as expected.</p>
+<h3 id="fixed_119">Fixed</h3>
+<p>An issue has been fixed where visualizations could overflow instead of shrinking when a tile or browser was resized. This feature now performs as expected.</p>
+<h3 id="fixed_120">Fixed</h3>
+<p>When you edit a visualization, the Advanced Vis Config editor can now override default theme border and padding styles. This feature now performs as expected.</p>
+<h3 id="fixed_121">Fixed</h3>
+<p>An issue has been fixed where a join wouldn't be added to a query if the join was required by a measure that was excluded from an Explore. This feature now performs as expected.</p>
+<h3 id="fixed_122">Fixed</h3>
+<p>An issue has been fixed where period-over-period (POP) measures of types <code>previous</code> and <code>difference</code> that were based on <code>count</code> and <code>sum</code> measures would incorrectly return null instead of zero when no data was available for the comparison period. This feature now performs as expected.</p>
+<h3 id="fixed_123">Fixed</h3>
+<p>An issue has been fixed where filter suggestions on dashboard filters could incorrectly retain previous filter values. This feature now performs as expected.</p>
+<h3 id="fixed_124">Fixed</h3>
+<p>An issue has been fixed where setting a field name or an Explore name in a LookML dashboard as a non-string datatype could cause the LookML validator to return a 500 error. This feature now performs as expected.</p>
+<h3 id="fixed_125">Fixed</h3>
+<p>An issue has been fixed where the <code>button group</code> dashboard filter type could display more than 30 options, cluttering the UI. This feature now performs as expected.</p>
+<h3 id="fixed_126">Fixed</h3>
+<p>An issue has been fixed where moving a filter by dragging it could also inadvertently highlight text. This feature now performs as expected.</p>
+<h3 id="fixed_127">Fixed</h3>
 <p>An issue has been fixed where some PDT settings were unavailable when you created a BigQuery connection by using the Quickstart flow in a Looker (Google Cloud core) instance. This feature now performs as expected.</p>
 <h3 id="feature_64">Feature</h3>
 <p><a href="https://docs.cloud.google.com/looker/docs/period-over-period">Period-over-period (PoP) measures</a> are now supported on connections to Trino databases.</p>
 <hr />
 <h2 id="2026-05-27">2026-05-27</h2>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p>The following features will begin rolling out as part of Looker 26.8.</p>
 <h3 id="feature_65">Feature</h3>
 <p>The Looker <a href="https://docs.cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> feature is now generally available.</p>
@@ -3526,13 +3573,13 @@ This feature is enabled by default.</p>
 <p>Looker admins can no longer create or manage API credentials for individual standard users in Looker (original) instances. Users must now <a href="https://docs.cloud.google.com/looker/docs/user-account#api-keys">manage their own keys</a> from their <strong>Account</strong> page. Admins can <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#api_keys">enable or disable self-service API key management</a> for users and continue to manage credentials for API-only service accounts. To improve security, API keys are no longer visible to admins while they are <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-users#impersonating_users">sudoing</a> as another user.</p>
 <hr />
 <h2 id="2026-05-08">2026-05-08</h2>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p>Dataplex Universal Catalog is now called Knowledge Catalog. The API, client
 library, CLI, and Identity and Access Management (IAM) names remain unchanged.
 For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/introduction">Knowledge Catalog overview</a>.</p>
 <hr />
 <h2 id="2026-05-07">2026-05-07</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p><strong>Looker 26.8</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Sunday, May 10, 2026</strong></li>
@@ -3550,46 +3597,46 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>The <a href="https://docs.cloud.google.com/looker/docs/reference/param-field-approximate"><code>approximate</code></a> parameter is now supported on Snowflake connections.</p>
 <h3 id="change_15">Change</h3>
 <p>Conversational Analytics now supports <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data">querying Looker Explores</a> in <a href="https://docs.cloud.google.com/looker/docs/dev-mode-prod-mode#development_mode">Development Mode</a>.</p>
-<h3 id="fixed_109">Fixed</h3>
+<h3 id="fixed_128">Fixed</h3>
 <p>An issue has been fixed where queries that used <a href="https://docs.cloud.google.com/looker/docs/custom-calendars">custom calendars</a> with <a href="https://docs.cloud.google.com/looker/docs/table-options#subtotals">subtotals</a> may have produced incorrect results.
 <strong>Note:</strong> This item was updated on May 12, 2026.</p>
-<h3 id="fixed_110">Fixed</h3>
+<h3 id="fixed_129">Fixed</h3>
 <p>An issue has been fixed where Looker could use an aggregate table of incorrect granularity if the SQL of a dimension was defined by using Liquid and if aggregate awareness was enabled. This feature now performs as expected.</p>
-<h3 id="fixed_111">Fixed</h3>
+<h3 id="fixed_130">Fixed</h3>
 <p>An issue has been fixed where users who don't have the <code>see_user_dashboards</code> permission could get a 404 error when viewing the Looker home page. This feature now performs as expected.</p>
-<h3 id="fixed_112">Fixed</h3>
+<h3 id="fixed_131">Fixed</h3>
 <p>An issue has been fixed where only admins could use the <strong>Unlock Branch</strong> feature. This feature is now available to LookML developers.</p>
-<h3 id="fixed_113">Fixed</h3>
+<h3 id="fixed_132">Fixed</h3>
 <p>An issue has been fixed where the <code>sync_lookml_dashboard</code> API endpoint was not compatible with tabbed dashboards. This feature now performs as expected.</p>
-<h3 id="fixed_114">Fixed</h3>
+<h3 id="fixed_133">Fixed</h3>
 <p>An issue has been fixed where the <strong>Select All</strong> button on dashboards filters could appear even if the filter was not populated. The <strong>Select All</strong> button will only appear when there is non-empty filter input.</p>
-<h3 id="fixed_115">Fixed</h3>
+<h3 id="fixed_134">Fixed</h3>
 <p>The generic error message that Looker produces when BigQuery OAuth connections are being tested has been updated to encourage checking the correct root cause, such as context-aware access restrictions. This feature now performs as expected.</p>
-<h3 id="fixed_116">Fixed</h3>
+<h3 id="fixed_135">Fixed</h3>
 <p>An issue has been fixed where enabling Admin Assistant could have no effect. This feature now performs as expected.</p>
-<h3 id="fixed_117">Fixed</h3>
+<h3 id="fixed_136">Fixed</h3>
 <p>An issue has been fixed where Conversational Analytics could not be used when an IP allowlist was enabled.</p>
-<h3 id="fixed_118">Fixed</h3>
+<h3 id="fixed_137">Fixed</h3>
 <p>An issue has been fixed where appending the string <code>/edit</code> to an Explore URL could incorrectly change the Explore UI to the legacy Explore UI. This feature now performs as expected.</p>
-<h3 id="fixed_119">Fixed</h3>
+<h3 id="fixed_138">Fixed</h3>
 <p>The <strong>Page breaks between tabs</strong> option no longer appears on dashboards that don't have any tabs. This feature now performs as expected.</p>
-<h3 id="fixed_120">Fixed</h3>
+<h3 id="fixed_139">Fixed</h3>
 <p>An issue has been fixed where enabling totals on a query with a period-over-period measure could cause Looker to return a 500 error. This feature now performs as expected.</p>
-<h3 id="fixed_121">Fixed</h3>
+<h3 id="fixed_140">Fixed</h3>
 <p>An issue has been fixed where Looker could incorrectly display string filter options for a <code>time</code> timeframe instead of datetime filter options. This feature now performs as expected.</p>
-<h3 id="fixed_122">Fixed</h3>
+<h3 id="fixed_141">Fixed</h3>
 <p>An issue has been fixed where LookML projects that contained the string "self-service" were incorrectly hidden in the <strong>Manage LookML Projects</strong> UI. This feature now performs as expected.</p>
-<h3 id="fixed_123">Fixed</h3>
+<h3 id="fixed_142">Fixed</h3>
 <p>An issue has been fixed where navigating dialogs with the Tab key could cause the user to unexpectedly exit the dialog. This feature now performs as expected.</p>
-<h3 id="fixed_124">Fixed</h3>
+<h3 id="fixed_143">Fixed</h3>
 <p>An issue has been fixed where Looker could fail to save Markdown files that were edited in the Looker IDE. This feature now performs as expected.</p>
-<h3 id="fixed_125">Fixed</h3>
+<h3 id="fixed_144">Fixed</h3>
 <p>An issue has been fixed where updating dashboard filters could fail to update linked child filters. This feature now performs as expected. <strong>Note:</strong> This release note was updated on May 18, 2026. This feature is not yet available.</p>
-<h3 id="fixed_126">Fixed</h3>
+<h3 id="fixed_145">Fixed</h3>
 <p>An issue has been fixed where clearing numeric input fields on the <strong>Content Guardrails</strong> admin page caused Looker to input a zero that would be appended to subsequent user input. This feature now performs as expected.</p>
-<h3 id="fixed_127">Fixed</h3>
+<h3 id="fixed_146">Fixed</h3>
 <p>An issue has been fixed where clicking links inside an iframe could result in a 401 or 403 error when cookieless embed was enabled. This feature now performs as expected.</p>
-<h3 id="fixed_128">Fixed</h3>
+<h3 id="fixed_147">Fixed</h3>
 <p>An issue has been fixed where LookML dashboards could fail to appear on the home page. This feature now performs as expected.</p>
 <h3 id="feature_84">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-code-interpreter">Conversational Analytics Advanced Analytics</a> feature, formerly known as the Code Interpreter, is now generally available.</p>
@@ -3604,7 +3651,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>Microsoft is <a href="https://mc.merill.net/message/MC1181996">retiring</a> the legacy Office 365 Connectors in favor of Power Automate Workflows. Connectors will stop working by the end of April 2026. To ensure that your Looker alerts continue to deliver to Teams, you must replace your current webhook URL with a new "Workflow" URL. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/best-practices/migrate-teams-webhook-to-workflows">Migrate your Teams webhook to "Workflows"</a> Best Practices notice.</p>
 <hr />
 <h2 id="2026-04-09">2026-04-09</h2>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p>Starting with the Looker 26.8 release, which will release in May 2026, the following changes will occur:</p>
 <ul>
 <li>Looker (original) admins will no longer be able to access or manage the API credentials of their standard users.</li>
@@ -3628,7 +3675,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 </ul>
 <hr />
 <h2 id="2026-03-30">2026-03-30</h2>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p>Starting March 30, 2026, the following features will begin rolling out.</p>
 <h3 id="feature_87">Feature</h3>
 <p>Available in preview for Looker (Google Cloud core), you can now track <a href="https://docs.cloud.google.com/looker/docs/looker-core-lineage">end-to-end data lineage</a> from BigQuery to Looker content, including views, Explores, dashboards, and Looks, through the Looker and Dataplex lineage integration. This enables impact analysis to see how BigQuery changes affect downstream Looker (Google Cloud core) contents.</p>
@@ -3673,7 +3720,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>As part of Looker 26.6, <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview">Conversational Analytics</a> will now ask you questions to clarify any ambiguities in your original query.</p>
 <hr />
 <h2 id="2026-03-25">2026-03-25</h2>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p><strong>Looker 26.6</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Sunday, March 22, 2026</strong></li>
@@ -3681,35 +3728,35 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, March 23, 2026</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Friday, April 3, 2026</strong></li>
 </ul>
-<h3 id="fixed_129">Fixed</h3>
+<h3 id="fixed_148">Fixed</h3>
 <p>An issue has been fixed where creating or updating database connections that use OAuth (such as Snowflake or BigQuery) could fail with the error <code>JDBC Parameter Validation Failed</code>. This feature now performs as expected.</p>
-<h3 id="fixed_130">Fixed</h3>
+<h3 id="fixed_149">Fixed</h3>
 <p>When no theme is selected, the Theme picker will now display "Default" rather than "None".</p>
-<h3 id="fixed_131">Fixed</h3>
+<h3 id="fixed_150">Fixed</h3>
 <p>An issue has been fixed where dashboard themes were not applying color collections correctly. This feature now performs as expected.</p>
-<h3 id="fixed_132">Fixed</h3>
+<h3 id="fixed_151">Fixed</h3>
 <p>An issue has been fixed where buttons on dashboards that used the extension framework could unnecessarily add <code>/embed/</code> to link URLs. This feature now performs as expected.</p>
-<h3 id="fixed_133">Fixed</h3>
+<h3 id="fixed_152">Fixed</h3>
 <p>An issue has been fixed where the font and background color picker was not accessible when you edited visualizations on merge queries. This feature now performs as expected.</p>
-<h3 id="fixed_134">Fixed</h3>
+<h3 id="fixed_153">Fixed</h3>
 <p>An issue has been fixed where opening the <strong>Interaction Details</strong> dialog on the <strong>Historical Analytics Interactions Search</strong> dashboard in a new window could result in a 401 error. This feature now performs as expected.</p>
-<h3 id="fixed_135">Fixed</h3>
+<h3 id="fixed_154">Fixed</h3>
 <p>An issue has been fixed where searching for content could return a 500 error. This feature now performs as expected.</p>
-<h3 id="fixed_136">Fixed</h3>
+<h3 id="fixed_155">Fixed</h3>
 <p>An issue has been fixed where pressing Enter to confirm IME composition when writing a message in Conversational Analytics would prematurely submit the message. This feature now performs as expected.</p>
-<h3 id="fixed_137">Fixed</h3>
+<h3 id="fixed_156">Fixed</h3>
 <p>An issue has been fixed where the LookML Assistant could return a 404 error. This feature now performs as expected.</p>
-<h3 id="fixed_138">Fixed</h3>
+<h3 id="fixed_157">Fixed</h3>
 <p>An issue has been fixed where tabs could be automatically added to existing dashboards. This feature now performs as expected.</p>
-<h3 id="fixed_139">Fixed</h3>
+<h3 id="fixed_158">Fixed</h3>
 <p>An issue has been fixed where visualization tooltips on dashboards could use incorrect background or text colors. This feature now performs as expected.</p>
-<h3 id="fixed_140">Fixed</h3>
+<h3 id="fixed_159">Fixed</h3>
 <p>An issue has been fixed where the <strong>LookML dashboards</strong> folder could fail to display the complete list of LookML dashboards. This feature now performs as expected.</p>
 <h3 id="breaking_2">Breaking</h3>
 <p>Tabbed dashboards with unsupported layouts will now display a warning message prompting users to <a href="https://docs.cloud.google.com/looker/docs/best-practices/troubleshooting-unsupported-dashboard-layout">update to a new layout</a>.</p>
 <hr />
 <h2 id="2026-03-23">2026-03-23</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p>To enhance security, the <a href="https://docs.cloud.google.com/looker/docs/api-sdk">Looker language SDKs</a> and the Looker API <a href="https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ApiAuth/login"><code>/login</code> endpoint</a> are being modified. They will exclusively accept passing credentials in the HTTP request body and will no longer support using URL query parameters.</p>
 <p><strong>Release date</strong>: This update is expected to take effect with the Looker 26.18 release in October 2026.</p>
 <p><strong>Potential impact</strong>: Any scripts or applications currently passing credentials in the URL query parameters in the Looker SDK libraries, or directly calling the <code>/login</code> API endpoint, will fail after this update.</p>
@@ -3733,7 +3780,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 </ul>
 <hr />
 <h2 id="2026-03-17">2026-03-17</h2>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p>As part of Looker 26.4, the following features will begin rolling out on March 17, 2026.</p>
 <h3 id="feature_100">Feature</h3>
 <p>Looker <strong>Connections Settings</strong> page has a new option, <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#disable_connection"><strong>Disable Connection</strong></a>, that allows a Looker admin to disable a connection in cases where there are downstream issues with the database, instead of killing queries manually or allowing queries to remain in the query queue. When the connection is disabled, Looker will not send queries to the database and will return an error message to users.</p>
@@ -3796,7 +3843,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#increased-row-limit"><strong>Increased Row Limit</strong> preview feature</a> feature is now available, and is disabled by default.</p>
 <p>When enabled, the <strong>Increased Row Limit</strong> preview feature lets admins set row limits up to 50,000 rows or datapoints for <a href="https://docs.cloud.google.com/looker/docs/google-map-options">map charts</a>, <a href="https://docs.cloud.google.com/looker/docs/scatter-options">scatterplot charts</a>, and <a href="https://docs.cloud.google.com/looker/docs/table-options">table charts</a>. Admins can set the limits for each visualization type in the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-performance-center-content-guardrails#visualization-limits"><strong>Visualization limits</strong></a> setting on the <strong>Content guardrails</strong> admin page.</p>
 <p>Table charts, scatterplot charts, and Google Maps charts that have increased row limits are subject to additional limitations when you download, send, or schedule dashboards in PDF format. See <a href="https://docs.cloud.google.com/looker/docs/best-practices/rendered-format-options-downloading-delivering-dashboards">Downloading or delivering dashboards in rendered formats</a> for more information about scheduling and downloading dashboard PDFs with increased row limits.</p>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p>The following features will roll out over a four-day period starting March 17, 2026.</p>
 <hr />
 <h2 id="2026-03-12">2026-03-12</h2>
@@ -3816,13 +3863,13 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>It is no longer necessary to <a href="https://docs.cloud.google.com/looker/docs/looker-core-create-oauth">manually configure OAuth credentials</a> when creating a Looker (Google Cloud core) instance that uses only public secure connections and no custom domain. For these instances, Looker (Google Cloud core) now automatically manages OAuth client and secret information, simplifying the setup process. Manual OAuth configuration is still required for instances that use private connections, hybrid connections, or a custom domain.</p>
 <hr />
 <h2 id="2026-03-05">2026-03-05</h2>
-<h3 id="fixed_141">Fixed</h3>
+<h3 id="fixed_160">Fixed</h3>
 <p>An issue has been fixed where dashboard buttons that open links in a new tab could fail to work properly when cookieless embed was enabled. This feature now performs as expected.</p>
-<h3 id="fixed_142">Fixed</h3>
+<h3 id="fixed_161">Fixed</h3>
 <p>An issue has been fixed where certain tables were being unnecessarily truncated when they were downloaded to PDF. This feature now performs as expected.</p>
-<h3 id="fixed_143">Fixed</h3>
+<h3 id="fixed_162">Fixed</h3>
 <p>An issue has been fixed where the "raw" timeframe of a <code>dimension_group</code> could be displayed in a 12-hour format instead of the expected 24-hour format. This feature now performs as expected.</p>
-<h3 id="fixed_144">Fixed</h3>
+<h3 id="fixed_163">Fixed</h3>
 <p>An issue has been fixed where dimension fill could fail to populate values when the row limit is reached. This feature now performs as expected.</p>
 <h3 id="feature_117">Feature</h3>
 <p>Full support for connections with <a href="https://docs.cloud.google.com/looker/docs/db-config-alloydb">AlloyDB for PostgreSQL</a> is available in preview. When you <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db">create a connection</a> in Looker, you can now select <strong>Google Cloud AlloyDB for PostgreSQL</strong> from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the <strong>PostgreSQL 9.5+</strong> option in the Dialect menu.</p>
@@ -3843,7 +3890,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <li>Enhance performance: Load only the tiles on an active tab, potentially speeding up initial dashboard load times.</li>
 <li>Reduce clutter: Consolidate multiple related analyses into a single dashboard.</li>
 </ul>
-<h3 id="fixed_145">Fixed</h3>
+<h3 id="fixed_164">Fixed</h3>
 <p>An issue has been fixed where dashboard table tiles could fail to display the scroll bar and total row. This feature now performs as expected.</p>
 <h3 id="feature_120">Feature</h3>
 <p>The <strong>Labs</strong> page in the <strong>Admin</strong> panel has been renamed <strong>Preview Features</strong>. The new page organizes in-progress features into two categories to provide better clarity on their status:</p>
@@ -3852,19 +3899,19 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <li><strong>Labs features</strong>: These experimental features may be removed from the product at any time, and issues may not be resolved.</li>
 </ul>
 <p>Your enablement status for each feature has not changed. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features">Preview Features</a> documentation page.</p>
-<h3 id="fixed_146">Fixed</h3>
+<h3 id="fixed_165">Fixed</h3>
 <p>An issue has been fixed where Looker could fail to retain sorts when content from a drill modal was being downloaded. This feature now performs as expected.</p>
 <h3 id="feature_121">Feature</h3>
 <p>The Looker API now includes Looker <a href="https://docs.cloud.google.com/looker/docs/reference/looker-api/latest/methods/ConversationalAnalytics">Conversational Analytics endpoints</a> that you can use with applications that embed Looker to create and manage agents, conversations, and messages.</p>
 <p>For tips on using the Conversational Analytics endpoints, see the <a href="https://docs.cloud.google.com/looker/docs/best-practices/ca-apis-in-looker-api-best-practices">Best practices for using the ConversationalAnalytics API endpoints in Looker's API</a> documentation page.</p>
 <p><strong>Note:</strong> This item was updated March 13, 2026.</p>
-<h3 id="fixed_147">Fixed</h3>
+<h3 id="fixed_166">Fixed</h3>
 <p>An issue has been fixed where selecting the <strong>Expand tables</strong> option during a PDF download or schedule could cause the tables to shrink instead of expand. This feature now performs as expected.</p>
-<h3 id="fixed_148">Fixed</h3>
+<h3 id="fixed_167">Fixed</h3>
 <p>An issue has been fixed where pivoted columns could fail to be sorted correctly when content was being downloaded. This feature now performs as expected.</p>
-<h3 id="fixed_149">Fixed</h3>
+<h3 id="fixed_168">Fixed</h3>
 <p>An issue has been fixed where conditional formatting rules could fail to be saved. This feature now performs as expected.</p>
-<h3 id="fixed_150">Fixed</h3>
+<h3 id="fixed_169">Fixed</h3>
 <p>An issue has been fixed where LookML dashboards could not be created using the <code>ProjectFile</code> API endpoint. This feature now performs as expected.</p>
 <h3 id="feature_122">Feature</h3>
 <p>Custom tooltips are now generally available and supported for more visualization types. Custom tooltips let you configure tooltips within the <a href="https://docs.cloud.google.com/looker/docs/creating-visualizations#quick_guide">Explore visualization editor</a> by using a combination of UI settings and an HTML editor that supports Liquid templating. Custom tooltips are supported for most visualization types except the following:</p>
@@ -3877,13 +3924,13 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <li>Custom visualizations</li>
 </ul>
 <p><a href="https://docs.cloud.google.com/looker/docs/custom-tooltips">Learn more about custom tooltips</a>.</p>
-<h3 id="fixed_151">Fixed</h3>
+<h3 id="fixed_170">Fixed</h3>
 <p>An issue has been fixed where Looker would prevent users from saving changes on the Content Guardrails admin settings page. This feature now performs as expected.</p>
-<h3 id="fixed_152">Fixed</h3>
+<h3 id="fixed_171">Fixed</h3>
 <p>An issue has been fixed where Looker could fail to recognize non-numeric values in conditional formatting rules for single value visualizations. This feature now performs as expected.</p>
-<h3 id="fixed_153">Fixed</h3>
+<h3 id="fixed_172">Fixed</h3>
 <p>An issue has been fixed where entering Japanese characters into advanced filters could add extra characters. This feature now performs as expected.</p>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p><strong>Looker 26.4</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Sunday, March 8, 2026</strong></li>
@@ -3891,7 +3938,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, March 16, 2026</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Monday, March 23, 2026</strong></li>
 </ul>
-<h3 id="fixed_154">Fixed</h3>
+<h3 id="fixed_173">Fixed</h3>
 <p>An issue has been fixed where dashboards that used ClickHouse connections could fail to load with a <code>ClassCastException</code> error. This feature now performs as expected.</p>
 <h3 id="feature_123">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding">Embed Conversational Analytics</a> feature is now generally available. In Looker 26.4, the following support has been added:</p>
@@ -3900,7 +3947,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <li>The Looker <a href="https://docs.cloud.google.com/looker/docs/embed-sdk-demo">embed SDK</a> now supports embedded Conversational Analytics.</li>
 <li><a href="https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores">Embedded themes</a> are now partially supported with embedded Conversational Analytics. All of the <a href="https://docs.cloud.google.com/looker/docs/themes-for-embedded-dashboards-and-explores#general">General options</a> for themes are supported. All other theme options are not supported.</li>
 </ul>
-<h3 id="fixed_155">Fixed</h3>
+<h3 id="fixed_174">Fixed</h3>
 <p>An issue has been fixed where comma-separated negative filters could be incorrectly interpreted with OR logic in the filter UI. This feature now performs as expected.</p>
 <h3 id="feature_124">Feature</h3>
 <p>The <strong>Gemini in Looker</strong> page in the <strong>Admin</strong> panel has been redesigned to allow Looker admins to selectively enable Gemini in Looker features. For more information about how to enable the features that are available for each Looker instance type, see the following documentation:</p>
@@ -3936,7 +3983,7 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>Now available in preview, dashboard editors can change the size and layout of dashboard tiles with more granularity. To enable this feature, a Looker admin must turn on the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#granular-dashboard-sizing"><strong>Granular Dashboard Sizing</strong> Labs feature</a>.</p>
 <h3 id="feature_130">Feature</h3>
 <p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#embed_conversational_analytics"><strong>Embed Conversational Analytics</strong> Labs feature</a> is now available. When enabled, the Embed Conversational Analytics Labs feature lets you <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-embedding">embed Conversational Analytics conversations and agents in an iframe</a> like other Looker content types.</p>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p>The following features will roll out over a four-day period starting February 17, 2026.</p>
 <h3 id="feature_131">Feature</h3>
 <p>Now available in preview, LookML developers can unlock their Git branch in cases where their Git branch is locked as a result of another Git operation in progress or a previous Git operation failing. When the Git repository is locked, Looker displays the <strong>Unlock Branch</strong> option in the <a href="https://docs.cloud.google.com/looker/docs/git-command-reference#git_actions_panel"><strong>Git Actions</strong> panel</a> of the Looker IDE. In addition, if a LookML developer tries to commit a change on a locked Git branch, Looker displays a warning in the <strong>Commit</strong> dialog, along with an option to delete the Git lock. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#unlock-branch">Using version control and deploying</a> documentation page for details.</p>
@@ -3959,56 +4006,56 @@ For more information, see <a href="https://docs.cloud.google.com/dataplex/docs/i
 <p>The <a href="https://docs.cloud.google.com/looker/docs/system-activity-dashboards#user_activity_dashboard">System Activity <strong>User Activity</strong> dashboard</a> has been updated to improve authentication troubleshooting. New information includes recent login failures, the authentication method that was used, the error message that was returned, and the time of the attempt.</p>
 <hr />
 <h2 id="2026-02-09">2026-02-09</h2>
-<h3 id="fixed_156">Fixed</h3>
+<h3 id="fixed_175">Fixed</h3>
 <p>An issue has been fixed where some drill links could fail to work when cookieless embed was enabled. This feature now performs as expected.</p>
 <h3 id="feature_137">Feature</h3>
 <p>When you are <a href="https://docs.cloud.google.com/looker/docs/delivering-looks-explores#delivery_options_for_sftp_servers">delivering content to an SFTP server</a>, additional key exchange algorithms and host key algorithms are now supported.</p>
 <h3 id="change_17">Change</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the <code>merge_query</code> table now refreshes every 10 minutes.</p>
-<h3 id="fixed_157">Fixed</h3>
+<h3 id="fixed_176">Fixed</h3>
 <p>An issue has been fixed where the pagination option was not being displayed in the LookML Dashboards folder for some users.
 This feature now performs as expected.</p>
 <h3 id="feature_138">Feature</h3>
 <p>The user attribute pairing user interface for <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-saml">SAML</a>, <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-ldap">LDAP</a>, and <a href="https://docs.cloud.google.com/looker/docs/admin-panel-authentication-openid-connect">OpenID Connect</a> authentication has been updated. A new "Manage Pairings" side panel provides a robust interface for adding, removing, and viewing attribute pairings. This new interface also includes filtering and pagination and allows for a single claim to be associated with multiple Looker user attributes.</p>
-<h3 id="fixed_158">Fixed</h3>
+<h3 id="fixed_177">Fixed</h3>
 <p>An issue has been fixed where custom dimensions that were based on numeric fields could be converted to strings, which caused incorrect sorting. This feature now performs as expected.</p>
-<h3 id="fixed_159">Fixed</h3>
+<h3 id="fixed_178">Fixed</h3>
 <p>An issue has been fixed where choosing a non-default color collection and then choosing a custom color in a conditional formatting rule could cause the rule to revert to the default color collection. This feature now performs as expected.</p>
 <h3 id="feature_139">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-users-roles#customer_engineer_advanced_editor">Customer Engineer Advanced Editor</a> default role now includes the <code>gemini_in_looker</code>, <code>chat_with_agent</code>, <code>chat_with_explore</code>, and <code>save_agents</code> permissions, which grant access to Gemini features and Conversational Analytics functionality.</p>
-<h3 id="fixed_160">Fixed</h3>
+<h3 id="fixed_179">Fixed</h3>
 <p>An issue has been fixed where a modification to the color palette for the "Along a scale..." conditional formatting feature could fail to be saved. This feature now performs as expected.</p>
-<h3 id="fixed_161">Fixed</h3>
+<h3 id="fixed_180">Fixed</h3>
 <p>An issue has been fixed where non-admin users could not favorite
 LookML dashboards. This feature now performs as expected.</p>
 <h3 id="feature_140">Feature</h3>
 <p>Looker admins can now <a href="https://docs.cloud.google.com/looker/docs/admin-panel-server-ip-allowlist">grant essential Google Cloud services</a>, such as <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-overview">Conversational Analytics</a>, access to a Looker instance, even when an IP allowlist is active.</p>
-<h3 id="fixed_162">Fixed</h3>
+<h3 id="fixed_181">Fixed</h3>
 <p>An issue has been fixed where Looker could return a 500 error if a user with one or more single quotes in their name attempted to commit LookML. This feature now performs as expected.</p>
 <h3 id="feature_141">Feature</h3>
 <p>Now available in preview, Looker has full support for connections with <a href="https://docs.cloud.google.com/looker/docs/db-config-alloydb">AlloyDB for PostgreSQL</a>. When you <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db">create a connection</a> in Looker, you can now select "Google Cloud AlloyDB for PostgreSQL" from the Dialect drop-down menu. This update does not affect existing AlloyDB connections that were created using the PostgreSQL 9.5+ option in the Dialect menu.</p>
-<h3 id="fixed_163">Fixed</h3>
+<h3 id="fixed_182">Fixed</h3>
 <p>An issue has been fixed where switching a visualization type from Table to Single Value could carry over unwanted conditional formatting. This feature now performs as expected.</p>
-<h3 id="fixed_164">Fixed</h3>
+<h3 id="fixed_183">Fixed</h3>
 <p>An issue has been fixed where conditional formatting no longer appeared on certain dashboard tiles. This feature now performs as expected.</p>
 <h3 id="change_18">Change</h3>
 <p>The Looker Action Hub has been updated to support newer API versions for Google Ads (from v19 to v22) and Facebook Custom Audiences (from v22 to v24).</p>
 <h3 id="feature_142">Feature</h3>
 <p>The <strong>Increase SQL Runner Schema and Table Limit</strong> Labs feature is now available in private preview.</p>
 <p><strong>Note:</strong> This item was added on February 20, 2026 and updated on March 2, 2026.</p>
-<h3 id="fixed_165">Fixed</h3>
+<h3 id="fixed_184">Fixed</h3>
 <p>An issue has been fixed where changing the collection in a conditional formatting rule could reset styles for the rule. This feature now performs as expected.</p>
-<h3 id="fixed_166">Fixed</h3>
+<h3 id="fixed_185">Fixed</h3>
 <p>An issue has been fixed where the filter bar would automatically expand on dashboard load when the filter location was set to "Right". This feature now performs as expected.</p>
-<h3 id="fixed_167">Fixed</h3>
+<h3 id="fixed_186">Fixed</h3>
 <p>An issue has been fixed where switching filter types from <code>Matches (Advanced)</code> to another filter type could populate that filter with an incorrect filter configuration. This feature now performs as expected.</p>
-<h3 id="fixed_168">Fixed</h3>
+<h3 id="fixed_187">Fixed</h3>
 <p>An issue has been fixed where adding a new field to a conditionally formatted result set could fail to apply the conditional formatting to the new field. This feature now performs as expected.</p>
-<h3 id="fixed_169">Fixed</h3>
+<h3 id="fixed_188">Fixed</h3>
 <p>An issue has been fixed where dashboard tiles with titles that included the % symbol could not be downloaded in the Safari 26.0 browser. This feature now performs as expected.</p>
 <h3 id="breaking_4">Breaking</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, all System Activity fields of the <code>longtext</code> type that have a size greater than 2 MB will be truncated. If a table has only one column with a <code>longtext</code> type, that column will be set to a maximum of 1.9 MB in size. If a table has multiple columns of the <code>longtext</code> type, the total maximum size across all such columns is 2 MB, and this limit is distributed uniformly among those columns. For example, if a table has <code>x</code> <code>longtext</code> columns, each column will have a maximum length of 2 MB divided by <code>x</code>.</p>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p><strong>Looker 26.2</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, February 9, 2026</strong></li>
@@ -4041,7 +4088,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>Gemini in Looker can now <a href="https://docs.cloud.google.com/looker/docs/explore-summary-gemini">generate a summary and an analysis of an Explore</a>.</p>
 <h3 id="feature_149">Feature</h3>
 <p>Now available in preview, the <a href="https://docs.cloud.google.com/looker/docs/git-options#configuration"><strong>Configuration</strong> tab of the <strong>Projects Settings</strong> page</a> in the Looker IDE contains a <strong>Delete Developer Copy</strong> button that lets LookML developers delete their local developer copy of the project's Git repository. See the <a href="https://docs.cloud.google.com/looker/docs/version-control-and-deploying-changes#delete-dev-copy">Using version control and deploying</a> documentation page for details.</p>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p><strong>Looker 26.0</strong> includes the following feature updates, which will start rolling out on January 26, 2026:</p>
 <h3 id="feature_150">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore"><strong>Self-service Explores</strong> admin page</a> now supports a connection test button so that Looker admins can verify that the BigQuery connection is able to support self-service Explores.</p>
@@ -4072,43 +4119,43 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>Looker (Google Cloud core) is now available in the asia-southeast3 (Bangkok) region. For more information, see the <a href="https://docs.cloud.google.com/looker/docs/looker-core-locations#asia-pacific">Looker (Google Cloud core) locations</a> documentation.</p>
 <hr />
 <h2 id="2026-01-08">2026-01-08</h2>
-<h3 id="fixed_170">Fixed</h3>
+<h3 id="fixed_189">Fixed</h3>
 <p>An issue has been fixed where Looker would generate inefficient SQL for some Databricks queries that included date manipulation for weekly data. Looker now uses Databricks functions like <code>date_trunc</code> when generating SQL.</p>
-<h3 id="fixed_171">Fixed</h3>
+<h3 id="fixed_190">Fixed</h3>
 <p>For the Spanish (<code>es_ES</code>) locale, the weekday initials for Sunday and Tuesday in the schedule dashboard dialog have been set to the correct values (<code>D</code> and <code>M</code>).</p>
 <h3 id="feature_155">Feature</h3>
 <p>The JDBC driver for <a href="https://docs.cloud.google.com/looker/docs/db-config-apache-spark">Apache Spark 3+</a> connections has been updated to version 2.7.6.</p>
-<h3 id="fixed_172">Fixed</h3>
+<h3 id="fixed_191">Fixed</h3>
 <p>An issue has been fixed where applying filters to a Google Map visualization would require a refresh before the filters would take effect. This feature now performs as expected.</p>
 <h3 id="feature_156">Feature</h3>
 <p><a href="https://docs.cloud.google.com/looker/docs/admin-panel-platform-smtp">Custom mail settings that are configured for SMTP servers</a> now support OAuth 2.0 authentication.</p>
-<h3 id="fixed_173">Fixed</h3>
+<h3 id="fixed_192">Fixed</h3>
 <p>An issue has been fixed where some columns in the Query Concurrency System Activity Explore were displaying null values. This feature now performs as expected.</p>
 <h3 id="feature_157">Feature</h3>
 <p>For <a href="https://docs.cloud.google.com/looker/docs/exploring-self-service">creating self-service Explores</a> from Excel files that contain multiple worksheets, the <strong>Data upload</strong> dialog now lets you specify which Excel worksheet to upload. Previously, the self-service Explore was always based on the first worksheet in the Excel file. <strong>Note:</strong> This item was added on January 15, 2026.</p>
-<h3 id="fixed_174">Fixed</h3>
+<h3 id="fixed_193">Fixed</h3>
 <p>An issue has been fixed where a join wouldn't be added to the query, even if one was required by a measure of type <code>count_distinct</code>, <code>sum_distinct</code>, or <code>avg_distinct</code>.</p>
-<h3 id="fixed_175">Fixed</h3>
+<h3 id="fixed_194">Fixed</h3>
 <p>An issue has been fixed where Looker would prevent users from uploading data if they lacked the <code>explore</code> permission. This feature now performs as expected.</p>
-<h3 id="fixed_176">Fixed</h3>
+<h3 id="fixed_195">Fixed</h3>
 <p>An issue has been fixed where testing a connection could fail to return an error message in cases where the user had insufficient permissions or if the connection no longer existed. This feature now performs as expected.</p>
 <h3 id="feature_158">Feature</h3>
 <p>The LookML dashboards folder is now paginated, showing 30 dashboards per page.</p>
-<h3 id="fixed_177">Fixed</h3>
+<h3 id="fixed_196">Fixed</h3>
 <p>When you use the Field Picker to clear all fields, the chart type no longer changes to Table (Legacy).</p>
-<h3 id="fixed_178">Fixed</h3>
+<h3 id="fixed_197">Fixed</h3>
 <p>An issue has been fixed where strings with accented characters were not being displayed properly in the Y-Axis of a visualization. This feature now performs as expected.</p>
-<h3 id="fixed_179">Fixed</h3>
+<h3 id="fixed_198">Fixed</h3>
 <p>An issue has been fixed where the Get LookML Model Explore API endpoint could time out without returning results. This feature now performs as expected.</p>
-<h3 id="fixed_180">Fixed</h3>
+<h3 id="fixed_199">Fixed</h3>
 <p>An issue has been fixed where manually resetting column widths from a dashboard grid tile header had no effect. This feature now performs as expected.</p>
-<h3 id="fixed_181">Fixed</h3>
+<h3 id="fixed_200">Fixed</h3>
 <p>An issue has been fixed where long content in tooltips could not be scrolled. This feature now performs as expected.</p>
-<h3 id="fixed_182">Fixed</h3>
+<h3 id="fixed_201">Fixed</h3>
 <p>A retry limit has been added for scheduled jobs. If a scheduled job fails five times in a row, then it's skipped until the next time the schedule is triggered.</p>
 <h3 id="breaking_5">Breaking</h3>
 <p>HTML characters are now displayed in plaintext in table visualizations to match other visualization types. For example, <code>&amp;quot;</code> is no longer rendered as <code>"</code>.</p>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p><strong>Looker 26.0</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, January 12, 2026</strong></li>
@@ -4116,69 +4163,69 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Monday, January 12, 2026</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Friday, January 23, 2026</strong></li>
 </ul>
-<h3 id="fixed_183">Fixed</h3>
+<h3 id="fixed_202">Fixed</h3>
 <p>An issue has been fixed where, after you uploaded data, Looker would not redirect you to the uploaded file. This feature now performs as expected.</p>
 <h3 id="feature_159">Feature</h3>
 <p>Looker now supports encrypted files for <a href="https://docs.cloud.google.com/looker/docs/db-config-snowflake#key-pair">key-pair authentication for Snowflake connections</a>.</p>
-<h3 id="fixed_184">Fixed</h3>
+<h3 id="fixed_203">Fixed</h3>
 <p>The <strong>Skip to Main Content</strong> accessibility link for dashboards has been removed for embedded dashboards.</p>
 <h3 id="feature_160">Feature</h3>
 <p>When you <a href="https://docs.cloud.google.com/looker/docs/viewing-embedded-items#viewing_folders_on_embedded_looks_explores_and_dashboards">view folders on embedded content</a>, LookML dashboards are now visible. The LookML dashboards folder, however, will not be visible.</p>
-<h3 id="fixed_185">Fixed</h3>
-<p>An issue has been fixed where a SQL Runner query against a model would fail if the user had not yet opened the model in Development Mode. This feature now performs as expected.</p>
-<h3 id="fixed_186">Fixed</h3>
-<p>An issue has been fixed where merged queries could disappear if a user edited one of the settings in the Values tab for a field. This feature now performs as expected.</p>
-<h3 id="fixed_187">Fixed</h3>
-<p>An issue has been identified and fixed in search where the latency in fetching search results spiked, causing search to be slow in returning results. A layer of caching has been added, causing search results to be more performant. <strong>Note:</strong> This item was added on January 13, 2026.</p>
-<h3 id="fixed_188">Fixed</h3>
-<p>An issue has been fixed where the custom tooltip editor was unable to scroll to edit long tooltip templates. This feature now performs as expected.</p>
-<h3 id="fixed_189">Fixed</h3>
-<p>An issue has been fixed where tooltip background colors were not being correctly rendered. This feature now performs as expected.</p>
-<h3 id="fixed_190">Fixed</h3>
-<p>An issue has been fixed where certain fields in dialogs, such as the Format field in the Download dialog, were incorrectly labeled as read-only to screen readers. This feature now performs as expected.</p>
-<h3 id="fixed_191">Fixed</h3>
-<p>An issue has been fixed where the dialog to select a folder would attempt to load a second page of results without being prompted by the user. This feature now performs as expected.</p>
-<h3 id="fixed_192">Fixed</h3>
-<p>An issue has been fixed where <code>value_format</code> was not respected in table visualizations for numeric values larger than 16 digits. This feature now performs as expected.</p>
-<h3 id="fixed_193">Fixed</h3>
-<p>An issue has been fixed where selecting the filter option "is before N hours ago" incorrectly displayed "is before N hours" in the filter.</p>
-<h3 id="fixed_194">Fixed</h3>
-<p>An issue has been fixed where Looker extensions could not access webpack development servers. This feature now performs as expected.</p>
-<h3 id="fixed_195">Fixed</h3>
-<p>An issue has been fixed where filters with commas were not including all filter conditions on Safari browsers. This feature now performs as expected.</p>
-<h3 id="fixed_196">Fixed</h3>
-<p>An issue has been fixed where a table visualization could become unresponsive if a fixed column width was specified for multiple columns. This feature now performs as expected.</p>
-<h3 id="fixed_197">Fixed</h3>
-<p>An issue has been fixed where downloading pivoted queries with table calculations while using an Exasol database could return an error. This feature now performs as expected.</p>
-<h3 id="fixed_198">Fixed</h3>
-<p>An issue has been fixed where any Liquid usage in a derived table SQL resulted in full suggestions behavior. This feature now performs as expected.</p>
-<h3 id="fixed_199">Fixed</h3>
-<p>An issue has been fixed where clicking <strong>Status details</strong> in the connection setup page without first selecting a dialect caused the page to crash. This feature now performs as expected.</p>
-<h3 id="fixed_200">Fixed</h3>
-<p>An issue has been fixed where modifying conditional formatting rules other than the first one incorrectly affected the first rule. This fix has been backported to Looker versions 25.18.41 and 25.20.17.</p>
-<h3 id="fixed_201">Fixed</h3>
-<p>An issue has been fixed where the <strong>Show More</strong> button wouldn't appear for large lists when a user was managing folder access. This feature now performs as expected.</p>
-<h3 id="fixed_202">Fixed</h3>
-<p>An issue has been fixed where custom measures with invalid field references could cause queries to fail, even if those measures weren't selected in the query. This feature now performs as expected.</p>
-<h3 id="fixed_203">Fixed</h3>
-<p>An issue has been fixed where the LookML Validator was not surfacing errors if an invalid field name was referenced in a <code>suggest_dimension</code> field. This feature now performs as expected.</p>
 <h3 id="fixed_204">Fixed</h3>
-<p>An issue has been fixed where very long dashboard names were not properly truncated. This feature now performs as expected.</p>
+<p>An issue has been fixed where a SQL Runner query against a model would fail if the user had not yet opened the model in Development Mode. This feature now performs as expected.</p>
 <h3 id="fixed_205">Fixed</h3>
+<p>An issue has been fixed where merged queries could disappear if a user edited one of the settings in the Values tab for a field. This feature now performs as expected.</p>
+<h3 id="fixed_206">Fixed</h3>
+<p>An issue has been identified and fixed in search where the latency in fetching search results spiked, causing search to be slow in returning results. A layer of caching has been added, causing search results to be more performant. <strong>Note:</strong> This item was added on January 13, 2026.</p>
+<h3 id="fixed_207">Fixed</h3>
+<p>An issue has been fixed where the custom tooltip editor was unable to scroll to edit long tooltip templates. This feature now performs as expected.</p>
+<h3 id="fixed_208">Fixed</h3>
+<p>An issue has been fixed where tooltip background colors were not being correctly rendered. This feature now performs as expected.</p>
+<h3 id="fixed_209">Fixed</h3>
+<p>An issue has been fixed where certain fields in dialogs, such as the Format field in the Download dialog, were incorrectly labeled as read-only to screen readers. This feature now performs as expected.</p>
+<h3 id="fixed_210">Fixed</h3>
+<p>An issue has been fixed where the dialog to select a folder would attempt to load a second page of results without being prompted by the user. This feature now performs as expected.</p>
+<h3 id="fixed_211">Fixed</h3>
+<p>An issue has been fixed where <code>value_format</code> was not respected in table visualizations for numeric values larger than 16 digits. This feature now performs as expected.</p>
+<h3 id="fixed_212">Fixed</h3>
+<p>An issue has been fixed where selecting the filter option "is before N hours ago" incorrectly displayed "is before N hours" in the filter.</p>
+<h3 id="fixed_213">Fixed</h3>
+<p>An issue has been fixed where Looker extensions could not access webpack development servers. This feature now performs as expected.</p>
+<h3 id="fixed_214">Fixed</h3>
+<p>An issue has been fixed where filters with commas were not including all filter conditions on Safari browsers. This feature now performs as expected.</p>
+<h3 id="fixed_215">Fixed</h3>
+<p>An issue has been fixed where a table visualization could become unresponsive if a fixed column width was specified for multiple columns. This feature now performs as expected.</p>
+<h3 id="fixed_216">Fixed</h3>
+<p>An issue has been fixed where downloading pivoted queries with table calculations while using an Exasol database could return an error. This feature now performs as expected.</p>
+<h3 id="fixed_217">Fixed</h3>
+<p>An issue has been fixed where any Liquid usage in a derived table SQL resulted in full suggestions behavior. This feature now performs as expected.</p>
+<h3 id="fixed_218">Fixed</h3>
+<p>An issue has been fixed where clicking <strong>Status details</strong> in the connection setup page without first selecting a dialect caused the page to crash. This feature now performs as expected.</p>
+<h3 id="fixed_219">Fixed</h3>
+<p>An issue has been fixed where modifying conditional formatting rules other than the first one incorrectly affected the first rule. This fix has been backported to Looker versions 25.18.41 and 25.20.17.</p>
+<h3 id="fixed_220">Fixed</h3>
+<p>An issue has been fixed where the <strong>Show More</strong> button wouldn't appear for large lists when a user was managing folder access. This feature now performs as expected.</p>
+<h3 id="fixed_221">Fixed</h3>
+<p>An issue has been fixed where custom measures with invalid field references could cause queries to fail, even if those measures weren't selected in the query. This feature now performs as expected.</p>
+<h3 id="fixed_222">Fixed</h3>
+<p>An issue has been fixed where the LookML Validator was not surfacing errors if an invalid field name was referenced in a <code>suggest_dimension</code> field. This feature now performs as expected.</p>
+<h3 id="fixed_223">Fixed</h3>
+<p>An issue has been fixed where very long dashboard names were not properly truncated. This feature now performs as expected.</p>
+<h3 id="fixed_224">Fixed</h3>
 <p>An issue has been fixed where an empty <code>sorts:</code> property in a LookML <code>explore</code> file definition could cause Looker to return a 500 error. This feature now performs as expected.</p>
 <h3 id="breaking_6">Breaking</h3>
 <p>When you use <a href="https://docs.cloud.google.com/looker/docs/elite-system-activity">Elite System Activity</a>, the System Activity field <code>scheduled_plan.filters_string</code> is limited to a length of 1.9 MB. Any data beyond the 1.9 MB limit is truncated.</p>
-<h3 id="fixed_206">Fixed</h3>
+<h3 id="fixed_225">Fixed</h3>
 <p>An issue has been fixed where tooltips incorrectly displayed the text <code>[object Object]</code>. This feature now performs as expected.</p>
-<h3 id="fixed_207">Fixed</h3>
+<h3 id="fixed_226">Fixed</h3>
 <p>An issue has been fixed where the <strong>Explore from SQL Runner query</strong> feature could return an error if it found Liquid syntax in the query. The feature now exports the query as plaintext.</p>
 <h3 id="feature_161">Feature</h3>
 <p>The new LookML parameter <a href="https://docs.cloud.google.com/looker/docs/reference/param-explore-autogenerate-primary-keys"><code>autogenerate_primary_keys</code></a> parameter is now supported. When a view or Explore is defined with <code>autogenerate_primary_keys: yes</code>, Looker generates a temporary, distinct key for a view, allowing symmetric aggregates and one-to-many counts to be calculated correctly without any changes to your underlying database table. The primary key is generated at query runtime; it does not persist across queries. <strong>Note:</strong> This item was added on January 12, 2026.</p>
 <h3 id="feature_162">Feature</h3>
 <p>The JDBC driver for <a href="https://docs.cloud.google.com/looker/docs/db-config-databricks">Databricks</a> connections has been updated to version 3.0.5.</p>
-<h3 id="fixed_208">Fixed</h3>
+<h3 id="fixed_227">Fixed</h3>
 <p>An issue has been fixed where filtered custom measures could fail to load if they referenced a dimension that used the <code>alias</code> parameter in their filter. This feature now performs as expected.</p>
-<h3 id="fixed_209">Fixed</h3>
+<h3 id="fixed_228">Fixed</h3>
 <p>An issue has been fixed where the <strong>Show Totals</strong> option in the Plot menu was not correctly hiding totals when a user downloaded results. This feature now performs as expected.</p>
 <h3 id="feature_163">Feature</h3>
 <p>The user interface for configuring group mappings for LDAP, SAML, and OpenID Connect has been updated for improved management. The new interface allows administrators to more easily add, edit, remove, and search for group mappings.</p>
@@ -4186,9 +4233,9 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>Looker now supports conditional formatting rules for string types in single value and table visualizations.</p>
 <h3 id="feature_165">Feature</h3>
 <p>Looker now supports key-pair authentication in the <a href="https://docs.cloud.google.com/looker/docs/db-config-snowflake#pdt-overrides">PDT overrides for Snowflake connections</a>.</p>
-<h3 id="fixed_210">Fixed</h3>
+<h3 id="fixed_229">Fixed</h3>
 <p>An issue has been fixed where downloaded reports with pivoted tables could contain extra whitespace. This feature now performs as expected.</p>
-<h3 id="fixed_211">Fixed</h3>
+<h3 id="fixed_230">Fixed</h3>
 <p>An issue has been fixed where creating a custom dimension with a single letter name could cause the query to fail. This feature now performs as expected.</p>
 <h3 id="feature_166">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/looker/docs/admin-panel-general-labs#tabbed-dashboards"><strong>Tabbed Dashboards</strong> Labs feature</a> lets dashboard editors organize dashboard content across multiple tabs within a single dashboard. Adding tabs to dashboards lets you do the following:</p>
@@ -4309,17 +4356,17 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>Expected Looker (Google Cloud core) deployment start: <strong>Thursday, November 6, 2025</strong></li>
 <li>Expected Looker (Google Cloud core) final deployment: <strong>Tuesday, November 18, 2025</strong></li>
 </ul>
-<h3 id="fixed_212">Fixed</h3>
+<h3 id="fixed_231">Fixed</h3>
 <p>An issue has been fixed where SQL Runner could return a <code>NoMethodError</code> when trying to query a LookML model that doesn't exist in the user's development mode. This feature now performs as expected.</p>
-<h3 id="fixed_213">Fixed</h3>
+<h3 id="fixed_232">Fixed</h3>
 <p>An issue has been fixed where a measure of <code>type: period_over_period</code> could be referenced in the <code>sql</code> parameter for a measure of <code>type: number</code>. Attempting to do so now correctly displays an error in the LookML validator. This feature now performs as expected.</p>
-<h3 id="fixed_214">Fixed</h3>
+<h3 id="fixed_233">Fixed</h3>
 <p>An issue has been fixed where the <strong>Clear field keep filter</strong> button on an Explore could incorrectly become disabled when a user used the field search bar in the field picker. This feature now performs as expected.</p>
 <h3 id="feature_189">Feature</h3>
 <p>The Visual Drilling feature is now out of Labs and generally available on the Admin &gt; General Settings page.</p>
 <h3 id="feature_190">Feature</h3>
 <p>A new Labs feature, Internal Dashboard Theming, lets users apply predefined themes to a Looker dashboard. These themes, which are distinct from the themes that are used for embedded dashboards, can be managed by users with the <code>manage_internal_themes</code> permission.</p>
-<h3 id="fixed_215">Fixed</h3>
+<h3 id="fixed_234">Fixed</h3>
 <p>An issue has been fixed where disabling the Favoriting LookML Dashboards Labs feature prevented users from moving LookML dashboards in folders. This feature now performs as expected.</p>
 <h3 id="feature_191">Feature</h3>
 <p>The Visual Drilling feature is now generally available on the Admin &gt; General Settings page.</p>
@@ -4366,7 +4413,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>(This release note was updated on October 9, 2025 to correct the Looker version for this release.)</p>
 <hr />
 <h2 id="2025-10-06">2025-10-06</h2>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p><strong>Looker 25.18</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Tuesday, October 7, 2025</strong></li>
@@ -4380,7 +4427,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>The Athena JDBC driver version has been upgraded from 2.1.5 to 2.2.2. The Athena JDBC driver is used for connections to <a href="https://docs.cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>.</p>
 <h3 id="changed">Changed</h3>
 <p>Conversational Analytics users with the <code>save_agents</code> permission can now <a href="https://docs.cloud.google.com/looker/docs/studio/conversational-data-agents-looker">share data agents</a>, which lets other users chat with the data agent and its Explores. (This release note was added on October 9, 2025.)</p>
-<h3 id="fixed_216">Fixed</h3>
+<h3 id="fixed_235">Fixed</h3>
 <p>Looker 25.18 contains the following accessibility improvements:</p>
 <ul>
 <li>You can navigate drill menus by using a keyboard.</li>
@@ -4397,29 +4444,29 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>The options in the visualization settings panel now have names that can be read by screen readers.</li>
 <li>The state of expanded dialogs on the Explore page, such as the field picker and visualization settings panel, can now be read by screen readers.</li>
 </ul>
-<h3 id="fixed_217">Fixed</h3>
+<h3 id="fixed_236">Fixed</h3>
 <p>An issue has been fixed where, when dashboard filters were updated, column widths could resize on table visualizations that included pivoted values. This feature now performs as expected.</p>
-<h3 id="fixed_218">Fixed</h3>
+<h3 id="fixed_237">Fixed</h3>
 <p>An issue has been fixed where non-string values that were entered in the expression element of the <code>dynamic_fields</code> section of a LookML dashboard could cause the LookML validator to crash. This feature now performs as expected.</p>
-<h3 id="fixed_219">Fixed</h3>
+<h3 id="fixed_238">Fixed</h3>
 <p>An issue has been fixed where subtotal values could display incorrect values after a filter was added or updated. This feature now performs as expected.</p>
-<h3 id="fixed_220">Fixed</h3>
+<h3 id="fixed_239">Fixed</h3>
 <p>An issue has been fixed where, when dashboard filters were updated, table visualizations could get incorrectly cropped to exclude the Total row and scroll bar. This feature now performs as expected.</p>
-<h3 id="fixed_221">Fixed</h3>
+<h3 id="fixed_240">Fixed</h3>
 <p>An issue has been fixed where the Collapse Subtotal toggle wasn't collapsing subtotals on table visualizations. This feature now performs as expected.</p>
-<h3 id="fixed_222">Fixed</h3>
+<h3 id="fixed_241">Fixed</h3>
 <p>An issue has been fixed where the maximum column limit warning could obscure the contents of a visualization. This feature now performs as expected.</p>
-<h3 id="fixed_223">Fixed</h3>
+<h3 id="fixed_242">Fixed</h3>
 <p>An issue has been fixed where users couldn't sort tables that included pivoted values. This feature now performs as expected.</p>
-<h3 id="fixed_224">Fixed</h3>
+<h3 id="fixed_243">Fixed</h3>
 <p>LookML dashboards that aren't deployed to production can no longer be moved into folders other than the LookML Dashboards folder.</p>
-<h3 id="fixed_225">Fixed</h3>
+<h3 id="fixed_244">Fixed</h3>
 <p>LookML project parse errors now include the LookML file path as well as the line number of the error.</p>
-<h3 id="fixed_226">Fixed</h3>
+<h3 id="fixed_245">Fixed</h3>
 <p>An issue has been fixed where Databricks connections that used OAuth could not be saved if the password field was blank. You can now use OAuth without entering a password on the connections page.</p>
-<h3 id="fixed_227">Fixed</h3>
+<h3 id="fixed_246">Fixed</h3>
 <p>An issue has been fixed where users were sometimes unable to add line breaks to table calculations. This feature now performs as expected.</p>
-<h3 id="fixed_228">Fixed</h3>
+<h3 id="fixed_247">Fixed</h3>
 <p>An issue has been fixed where certain countries would not be displayed when a custom TopoJSON file was used. The following country names are now supported:</p>
 <ul>
 <li>Czechia for Czech Republic</li>
@@ -4470,7 +4517,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>You can now <a href="https://cloud.google.com/looker/docs/connect-ide-to-looker-using-mcp-toolbox">connect to your Looker instance with the Gemini CLI</a> using a dedicated <a href="https://github.com/gemini-cli-extensions/looker">Gemini extension</a>. The Gemini extension can run queries, create Looks and dashboards, and retrieve elements of your LookML models.</p>
 <hr />
 <h2 id="2025-09-10">2025-09-10</h2>
-<h3 id="announcement_31">Announcement</h3>
+<h3 id="announcement_32">Announcement</h3>
 <p><strong>Looker 25.16</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, September 15, 2025</strong></li>
@@ -4490,7 +4537,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>The <a href="https://cloud.google.com/looker/docs/powerbi-connector">Looker–Power BI Connector</a> is now supported for <a href="https://cloud.google.com/looker/docs/customer-hosted-installation-steps">customer-hosted Looker instances</a> and for Looker (Google Cloud core) instances that use <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private connections</a>. <strong>Note:</strong> This item was added on September 19, 2025.</p>
 <h3 id="feature_217">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/tableau-connector">Looker–Tableau BI Connector</a> is now supported for <a href="https://cloud.google.com/looker/docs/customer-hosted-installation-steps">customer-hosted Looker instances</a> and for Looker (Google Cloud core) instances that use <a href="https://cloud.google.com/looker/docs/looker-core-networking-options#private_ip_connections">private connections</a>. <strong>Note:</strong> This item was added on September 19, 2025.</p>
-<h3 id="fixed_229">Fixed</h3>
+<h3 id="fixed_248">Fixed</h3>
 <p>Looker 25.16 contains the following accessibility improvements:</p>
 <ul>
 <li>Improved keyboard navigation for embed folders.</li>
@@ -4500,57 +4547,57 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>Improved VoiceOver support for filter navigation.</li>
 <li>Added the ability for users to close modals by using the Esc key. Users will be prevented from closing modals this way if there are unsaved changes in the modal.</li>
 </ul>
-<h3 id="fixed_230">Fixed</h3>
-<p>When you upload a p12 file to a database connection, Looker now checks that it is a valid file before completing the upload.</p>
-<h3 id="fixed_231">Fixed</h3>
-<p>An issue has been fixed where adding multiple filters to the same field could cause filter conditions to overwrite each other. This feature now performs as expected.</p>
-<h3 id="fixed_232">Fixed</h3>
-<p>An issue has been fixed where changing the size of a visualization could cause the visualization to flicker. This feature now performs as expected.</p>
-<h3 id="fixed_233">Fixed</h3>
-<p>An issue has been fixed where users could enter color codes that were longer than six characters when they were updating custom color collections. This feature now performs as expected.</p>
-<h3 id="fixed_234">Fixed</h3>
-<p>An issue has been fixed where Explore drill links would not open correctly if cookieless embed was enabled. This feature now performs as expected.</p>
-<h3 id="fixed_235">Fixed</h3>
-<p>An issue has been fixed where generating a view inside a folder could fail if the folder's name contained special characters. This feature now performs as expected.</p>
-<h3 id="fixed_236">Fixed</h3>
-<p>An issue has been fixed where generating an embed URL from a LookML dashboard could fail with the following error: <code>'models' param cannot be converted to an array of String</code>. This feature now performs as expected.</p>
-<h3 id="fixed_237">Fixed</h3>
-<p>An issue has been fixed where loading JavaScript files for custom visualizations could take more than one second. This feature now performs as expected.</p>
-<h3 id="fixed_238">Fixed</h3>
-<p>An issue has been fixed where non-admin users were unable to select a project when they added a connection. This feature now performs as expected.</p>
-<h3 id="fixed_239">Fixed</h3>
-<p>An issue has been fixed where scheduled deliveries could fail with the following error message: <code>Async delivery failed due to errors Internal server error. [Google Cloud Storage] undefined</code>. This feature now performs as expected.</p>
-<h3 id="fixed_240">Fixed</h3>
-<p>An issue has been fixed where subtotal rows could fail to appear in downloaded result sets. This feature now performs as expected.</p>
-<h3 id="fixed_241">Fixed</h3>
-<p>An issue has been fixed where the OAuth client secret could not be updated in the Connections page. This feature now performs as expected.</p>
-<h3 id="fixed_242">Fixed</h3>
-<p>An issue has been fixed where total references and row total references in table calculations could return the following error if there was no data: <code>Field either does not exist in the current query or is a measure.</code> This feature now performs as expected.</p>
-<h3 id="fixed_243">Fixed</h3>
-<p>An issue has been fixed where updating a Spanner connection could fail to save changes. This feature now performs as expected.</p>
-<h3 id="fixed_244">Fixed</h3>
-<p>An issue has been fixed where users with only the <code>embed_browse_spaces</code> permission could be incorrectly classified as Standard users instead of Viewer users. This feature now performs as expected.</p>
-<h3 id="fixed_245">Fixed</h3>
-<p>An issue has been fixed where using the <code>matches_filter</code> function in custom filters could return an error. This feature now performs as expected.</p>
-<h3 id="fixed_246">Fixed</h3>
-<p>An issue has been fixed where visualizations could render twice when they were first loaded on an Explore or a dashboard. This feature now performs as expected.</p>
-<h3 id="fixed_247">Fixed</h3>
-<p>The Athena JDBC driver version has been downgraded from 2.2.1 to 2.1.5 to fix an issue with result set streaming. This feature now performs as expected. The Athena JDBC driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>.</p>
-<h3 id="fixed_248">Fixed</h3>
-<p>Dashboards that are not configured to run on load no longer show past query results when you revisit the dashboard in the same browser session. You must click the Load button to run the queries again.</p>
 <h3 id="fixed_249">Fixed</h3>
-<p>An issue has been fixed where the Collapse subtotal toggle on table visualizations was unresponsive. This feature now performs as expected.</p>
+<p>When you upload a p12 file to a database connection, Looker now checks that it is a valid file before completing the upload.</p>
 <h3 id="fixed_250">Fixed</h3>
-<p>An issue has been fixed where updating a customer-hosted instance could fail with the following error message: <code>Data import is in progress and some features will not be available</code>. This feature now performs as expected.</p>
+<p>An issue has been fixed where adding multiple filters to the same field could cause filter conditions to overwrite each other. This feature now performs as expected.</p>
 <h3 id="fixed_251">Fixed</h3>
+<p>An issue has been fixed where changing the size of a visualization could cause the visualization to flicker. This feature now performs as expected.</p>
+<h3 id="fixed_252">Fixed</h3>
+<p>An issue has been fixed where users could enter color codes that were longer than six characters when they were updating custom color collections. This feature now performs as expected.</p>
+<h3 id="fixed_253">Fixed</h3>
+<p>An issue has been fixed where Explore drill links would not open correctly if cookieless embed was enabled. This feature now performs as expected.</p>
+<h3 id="fixed_254">Fixed</h3>
+<p>An issue has been fixed where generating a view inside a folder could fail if the folder's name contained special characters. This feature now performs as expected.</p>
+<h3 id="fixed_255">Fixed</h3>
+<p>An issue has been fixed where generating an embed URL from a LookML dashboard could fail with the following error: <code>'models' param cannot be converted to an array of String</code>. This feature now performs as expected.</p>
+<h3 id="fixed_256">Fixed</h3>
+<p>An issue has been fixed where loading JavaScript files for custom visualizations could take more than one second. This feature now performs as expected.</p>
+<h3 id="fixed_257">Fixed</h3>
+<p>An issue has been fixed where non-admin users were unable to select a project when they added a connection. This feature now performs as expected.</p>
+<h3 id="fixed_258">Fixed</h3>
+<p>An issue has been fixed where scheduled deliveries could fail with the following error message: <code>Async delivery failed due to errors Internal server error. [Google Cloud Storage] undefined</code>. This feature now performs as expected.</p>
+<h3 id="fixed_259">Fixed</h3>
+<p>An issue has been fixed where subtotal rows could fail to appear in downloaded result sets. This feature now performs as expected.</p>
+<h3 id="fixed_260">Fixed</h3>
+<p>An issue has been fixed where the OAuth client secret could not be updated in the Connections page. This feature now performs as expected.</p>
+<h3 id="fixed_261">Fixed</h3>
+<p>An issue has been fixed where total references and row total references in table calculations could return the following error if there was no data: <code>Field either does not exist in the current query or is a measure.</code> This feature now performs as expected.</p>
+<h3 id="fixed_262">Fixed</h3>
+<p>An issue has been fixed where updating a Spanner connection could fail to save changes. This feature now performs as expected.</p>
+<h3 id="fixed_263">Fixed</h3>
+<p>An issue has been fixed where users with only the <code>embed_browse_spaces</code> permission could be incorrectly classified as Standard users instead of Viewer users. This feature now performs as expected.</p>
+<h3 id="fixed_264">Fixed</h3>
+<p>An issue has been fixed where using the <code>matches_filter</code> function in custom filters could return an error. This feature now performs as expected.</p>
+<h3 id="fixed_265">Fixed</h3>
+<p>An issue has been fixed where visualizations could render twice when they were first loaded on an Explore or a dashboard. This feature now performs as expected.</p>
+<h3 id="fixed_266">Fixed</h3>
+<p>The Athena JDBC driver version has been downgraded from 2.2.1 to 2.1.5 to fix an issue with result set streaming. This feature now performs as expected. The Athena JDBC driver is used for connections to <a href="https://cloud.google.com/looker/docs/db-config-amazon-athena">Amazon Athena</a>.</p>
+<h3 id="fixed_267">Fixed</h3>
+<p>Dashboards that are not configured to run on load no longer show past query results when you revisit the dashboard in the same browser session. You must click the Load button to run the queries again.</p>
+<h3 id="fixed_268">Fixed</h3>
+<p>An issue has been fixed where the Collapse subtotal toggle on table visualizations was unresponsive. This feature now performs as expected.</p>
+<h3 id="fixed_269">Fixed</h3>
+<p>An issue has been fixed where updating a customer-hosted instance could fail with the following error message: <code>Data import is in progress and some features will not be available</code>. This feature now performs as expected.</p>
+<h3 id="fixed_270">Fixed</h3>
 <p>An issue has been fixed where SQL Runner could fail to return new results after running a second query. This feature now performs as expected.</p>
 <h3 id="feature_218">Feature</h3>
 <p>A new Labs feature, Favoriting LookML Dashboards, enables LookML dashboards to be <a href="https://cloud.google.com/looker/docs/finding-content#navigating_to_content_in_folders">marked as favorites</a> causing the LookML dashboards to appear on the Looker Favorites tab.</p>
 <h3 id="feature_219">Feature</h3>
 <p>The Full Screen Visualizations Labs feature is now generally available. You can turn it on and off on the Admin - General page.</p>
-<h3 id="fixed_252">Fixed</h3>
+<h3 id="fixed_271">Fixed</h3>
 <p>An issue has been fixed where updating the Host URL in the Admin - Settings page could fail to be saved. This feature now performs as expected.</p>
-<h3 id="fixed_253">Fixed</h3>
+<h3 id="fixed_272">Fixed</h3>
 <p>An issue has been fixed where visualization templates could be edited by API users without the need for the <code>explore</code> permission.</p>
 <h3 id="feature_220">Feature</h3>
 <p>Looker (Google Cloud core) 90-day trial instances are now available.</p>
@@ -4558,7 +4605,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>The Full Screen Visualizations feature is now generally available. You can turn it on and off on the Admin - General page.</p>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_32">Announcement</h3>
+<h3 id="announcement_33">Announcement</h3>
 <p><strong>Looker 25.14</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, August 18, 2025</strong></li>
@@ -4609,7 +4656,7 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>For queries with PoP measures, if no time-based dimensions are included in the query from the Explore's field picker, Looker can now infer the time period from time-based dimensions in the Explore's filters. (Previously, for queries with PoP measures, the user was required to specify a time-based dimension from the Explore's field picker.) See <a href="https://cloud.google.com/looker/docs/period-over-period#explore-requirements">Requirements for Explore queries with PoP measures</a> for more information. <strong>Note:</strong> This item was added on August 21, 2025.</li>
 <li>PoP measures are now supported with <a href="https://cloud.google.com/looker/docs/connected-sheets">Connected Sheets</a>. <strong>Note:</strong> This item was added on August 21, 2025.</li>
 </ul>
-<h3 id="fixed_254">Fixed</h3>
+<h3 id="fixed_273">Fixed</h3>
 <p>Looker 25.14 contains the following accessibility improvements:</p>
 <ul>
 <li>ARIA labels have been added to iframes that contain custom visualizations.</li>
@@ -4624,47 +4671,47 @@ LookML dashboards. This feature now performs as expected.</p>
 <li>Users can interact with Single Value visualizations by using the keyboard.</li>
 <li>PDF rendering progress messages have been updated to better integrate with screen readers.</li>
 </ul>
-<h3 id="fixed_255">Fixed</h3>
+<h3 id="fixed_274">Fixed</h3>
 <p>The LookML validation spinner now correctly stops if there is an error with the server's validation process.</p>
-<h3 id="fixed_256">Fixed</h3>
+<h3 id="fixed_275">Fixed</h3>
 <p>An issue has been fixed where a route that wasn't intended for embedding was allowed to be embedded. This feature now performs as expected.</p>
-<h3 id="fixed_257">Fixed</h3>
+<h3 id="fixed_276">Fixed</h3>
 <p>An issue has been fixed where "Create view from table" would fail if it was initiated from a LookML subfolder. This feature now performs as expected.</p>
-<h3 id="fixed_258">Fixed</h3>
+<h3 id="fixed_277">Fixed</h3>
 <p>An issue has been fixed where color palettes with Japanese labels could not be added or removed. This feature now performs as expected.</p>
-<h3 id="fixed_259">Fixed</h3>
+<h3 id="fixed_278">Fixed</h3>
 <p>An issue has been fixed where getting LookML for dashboards wouldn't preserve all query filters even if they overlapped with dashboard-level filters. This feature now performs as expected.</p>
-<h3 id="fixed_260">Fixed</h3>
+<h3 id="fixed_279">Fixed</h3>
 <p>An issue has been fixed where <code>include</code> statements for empty folders that used single-slash syntax returned an unrecognized project reference error. This feature now performs as expected.</p>
-<h3 id="fixed_261">Fixed</h3>
+<h3 id="fixed_280">Fixed</h3>
 <p>An issue has been fixed where multiple tooltips could be displayed at once. This feature now performs as expected.</p>
-<h3 id="fixed_262">Fixed</h3>
+<h3 id="fixed_281">Fixed</h3>
 <p>An issue has been fixed where project names weren't fully sanitized. This feature now performs as expected.</p>
-<h3 id="fixed_263">Fixed</h3>
+<h3 id="fixed_282">Fixed</h3>
 <p>An issue has been fixed where projects that have not been deployed to production wouldn't appear in a user's list of available projects. This feature now performs as expected.</p>
-<h3 id="fixed_264">Fixed</h3>
+<h3 id="fixed_283">Fixed</h3>
 <p>An issue has been fixed where removing fields from embedded dashboard tiles could become impossible. This feature now performs as expected.</p>
-<h3 id="fixed_265">Fixed</h3>
+<h3 id="fixed_284">Fixed</h3>
 <p>An issue has been fixed where resetting a project's git connection and attempting to use a bare repo would fail. This feature now performs as expected.</p>
-<h3 id="fixed_266">Fixed</h3>
+<h3 id="fixed_285">Fixed</h3>
 <p>An issue has been fixed where sorting a pivoted column in the drill modal could sort all pivoted columns instead of just the selected one. This feature now performs as expected.</p>
-<h3 id="fixed_267">Fixed</h3>
+<h3 id="fixed_286">Fixed</h3>
 <p>An issue has been fixed where special characters such as slashes, ampersands, and question marks were allowed in BigQuery and Spanner connection names. This feature now performs as expected.</p>
-<h3 id="fixed_268">Fixed</h3>
+<h3 id="fixed_287">Fixed</h3>
 <p>An issue has been fixed where the HTTP error codes for moving and copying dashboards and Looks could return 422 when they should return 404. This feature now performs as expected.</p>
-<h3 id="fixed_269">Fixed</h3>
+<h3 id="fixed_288">Fixed</h3>
 <p>An issue has been fixed where the last accessed time for Looks that were saved to a dashboard as Looks wasn't updated when the dashboard was accessed. This feature now performs as expected.</p>
-<h3 id="fixed_270">Fixed</h3>
+<h3 id="fixed_289">Fixed</h3>
 <p>An issue has been fixed where the MoreVert button would not be disabled when no options were available in the menu. This feature now performs as expected.</p>
-<h3 id="fixed_271">Fixed</h3>
+<h3 id="fixed_290">Fixed</h3>
 <p>An issue has been fixed where the new dashboard name wasn't preserved when a LookML dashboard was copied to a folder. This feature now performs as expected.</p>
-<h3 id="fixed_272">Fixed</h3>
+<h3 id="fixed_291">Fixed</h3>
 <p>An issue has been fixed where unfavoriting a dashboard or Look on a board would not persist. This feature now performs as expected.</p>
 <h3 id="feature_235">Feature</h3>
 <p><strong>Note:</strong> This item was removed on August 27, 2025.</p>
 <hr />
 <h2 id="2025-07-25">2025-07-25</h2>
-<h3 id="announcement_33">Announcement</h3>
+<h3 id="announcement_34">Announcement</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter in Conversational Analytics</a> is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> for Looker (original) and Looker (Google Cloud core) instances. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default.</p>
 <ul>
 <li>Looker (original) instances must be on Looker 25.8 or later. Looker admins can manage enablement for the Code Interpreter on the <a href="https://cloud.google.com/looker/docs/admin-panel-platform-gil#enable-and-disable-gil-original"><strong>Gemini in Looker</strong> admin page</a> of the Looker (original) instance.</li>
@@ -4672,7 +4719,7 @@ LookML dashboards. This feature now performs as expected.</p>
 </ul>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_34">Announcement</h3>
+<h3 id="announcement_35">Announcement</h3>
 <p><strong>Looker 25.12</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Monday, July 28, 2025</strong></li>
@@ -4688,69 +4735,69 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>For faster response time for queries in BigQuery, Looker will execute BigQuery queries by using <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/jobs/query#jobcreationmode"><code>jobCreationMode=JOB_CREATION_OPTIONAL</code></a>. If BigQuery can return immediate results, it will run the query without creating a job, so the record in the Looker query history will have a BigQuery query ID instead of a BigQuery job ID. See the <a href="https://cloud.google.com/looker/docs/query-performance-metrics#bigquery_bi_engine_metrics">Understanding query performance metrics</a> documentation page for more information about the BigQuery BI Engine metrics.</p>
 <h3 id="feature_238">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/usage-reports-with-system-activity-explores#query_concurrency">Query Concurrency System Activity Explore</a> is now available. This Explore can help you identify periods of high load and investigate performance bottlenecks that are related to database connection limits. <strong>Note:</strong> This feature launch was delayed and is now available in Looker 25.14. This item was updated on August 13, 2025.</p>
-<h3 id="fixed_273">Fixed</h3>
+<h3 id="fixed_292">Fixed</h3>
 <p>An issue has been fixed where certain API calls would fail to time out and would instead run indefinitely. <strong>Note:</strong> This item was added August 18, 2025.</p>
-<h3 id="fixed_274">Fixed</h3>
+<h3 id="fixed_293">Fixed</h3>
 <p>Looker 25.12 contains the following accessibility improvements:</p>
 <ul>
 <li>Improved contrast for exit buttons on dialogs</li>
 <li>Improved contrast for checkbox borders</li>
 </ul>
-<h3 id="fixed_275">Fixed</h3>
-<p>An issue has been fixed where pull requests could display a different user than the pull request's owner. This feature now performs as expected.</p>
-<h3 id="fixed_276">Fixed</h3>
-<p>An issue has been fixed where the System Activity Query Metrics Explore was not reliably populating with data. This feature now performs as expected.</p>
-<h3 id="fixed_277">Fixed</h3>
-<p>An issue has been fixed where API users could view a list of users on a Looker instance, even if they didn't have the <code>see_users</code> permission. This feature now performs as expected.</p>
-<h3 id="fixed_278">Fixed</h3>
-<p>An issue has been fixed where the response headers from some API calls were not set by Looker. This feature now performs as expected.</p>
-<h3 id="fixed_279">Fixed</h3>
-<p>An issue has been fixed where exploring from a dashboard tile while editing a dashboard could result in a permissions error, even if the user had permission to view the Explore. This feature now performs as expected.</p>
-<h3 id="fixed_280">Fixed</h3>
-<p>An issue has been fixed where the row limit in an Explore could display a blank field when the row limit was set to 5,000. This feature now performs as expected.</p>
-<h3 id="fixed_281">Fixed</h3>
-<p>An issue has been fixed where some users were unable to create or edit BigQuery OAuth connections. This feature now performs as expected.</p>
-<h3 id="fixed_282">Fixed</h3>
-<p>An issue has been fixed where SQL Runner would display a blank page if a user changed the visualization type after pivoting on a dimension. This feature now performs as expected.</p>
-<h3 id="fixed_283">Fixed</h3>
-<p>An issue has been fixed where some queries to the internal database were unoptimized, affecting instance performance. This feature now performs as expected.</p>
-<h3 id="fixed_284">Fixed</h3>
-<p>An issue has been fixed where a visualization template could fail to be displayed in the list of templates if the name contained certain unicode characters. This feature now performs as expected.</p>
-<h3 id="fixed_285">Fixed</h3>
-<p>An issue has been fixed where invalid query killing statements could cause unnecessarily verbose log outputs. This feature now performs as expected.</p>
-<h3 id="fixed_286">Fixed</h3>
-<p>An issue has been fixed where API users without the <code>explore</code> permission could access visualization templates. This feature now performs as expected.</p>
-<h3 id="fixed_287">Fixed</h3>
-<p>An issue has been fixed where Looker could return a 500 error while retrieving dashboard details if the details contained non-UTF-8 characters. This feature now performs as expected.</p>
-<h3 id="fixed_288">Fixed</h3>
-<p>An issue has been fixed where forecasting didn't work properly on fields that were based on JSON data. This feature now performs as expected.</p>
-<h3 id="fixed_289">Fixed</h3>
-<p>An issue has been fixed where Looker didn't properly sanitize slash characters in git references that were used for remote dependencies. This feature now performs as expected.</p>
-<h3 id="fixed_290">Fixed</h3>
-<p>An issue has been fixed where fields could be sorted differently when a visualization was downloaded or scheduled as a PNG. This feature now performs as expected.</p>
-<h3 id="fixed_291">Fixed</h3>
-<p>An issue has been fixed where the <code>all_connections</code> API call could ignore the <code>fields</code> parameter. This feature now performs as expected.</p>
-<h3 id="fixed_292">Fixed</h3>
-<p>An issue has been fixed where a map visualization would display drill links for fields that were hidden from the visualization. This feature now performs as expected.</p>
-<h3 id="fixed_293">Fixed</h3>
-<p>An issue has been fixed where some System Activity tables were missing the <code>element_id</code> field. This feature now performs as expected.</p>
 <h3 id="fixed_294">Fixed</h3>
-<p>An issue has been fixed where subtotals could be incorrectly formatted in PDF downloads when an HTML parameter was defined on the field and the "Expand tables to show all rows" option was enabled. This feature now performs as expected.</p>
+<p>An issue has been fixed where pull requests could display a different user than the pull request's owner. This feature now performs as expected.</p>
 <h3 id="fixed_295">Fixed</h3>
-<p>The Looker IDE now checks for subparameters in local and remote dependencies and displays a more informative error if the subparameters are missing. Local dependencies must be defined with a project subparameter, while remote dependencies require both a <code>url</code> subparameter and a <code>ref</code> subparameter.</p>
+<p>An issue has been fixed where the System Activity Query Metrics Explore was not reliably populating with data. This feature now performs as expected.</p>
 <h3 id="fixed_296">Fixed</h3>
-<p>An issue has been fixed where editing a merged query in an embedded session would open in a new tab. This feature now performs as expected.</p>
+<p>An issue has been fixed where API users could view a list of users on a Looker instance, even if they didn't have the <code>see_users</code> permission. This feature now performs as expected.</p>
 <h3 id="fixed_297">Fixed</h3>
-<p>An issue has been fixed where Looker could generate duplicate SQL table references if a PDT referenced a table directly as well as through a join. This feature now performs as expected.</p>
+<p>An issue has been fixed where the response headers from some API calls were not set by Looker. This feature now performs as expected.</p>
 <h3 id="fixed_298">Fixed</h3>
-<p>An issue has been fixed where some PDT regeneration events were not tracked in System Activity. This feature now performs as expected.</p>
+<p>An issue has been fixed where exploring from a dashboard tile while editing a dashboard could result in a permissions error, even if the user had permission to view the Explore. This feature now performs as expected.</p>
 <h3 id="fixed_299">Fixed</h3>
-<p>When an Explore is saved as a new dashboard, Looker will create advanced filter type dashboard filters, rather than drop-down type dashboard filters, for number type parameters.</p>
+<p>An issue has been fixed where the row limit in an Explore could display a blank field when the row limit was set to 5,000. This feature now performs as expected.</p>
 <h3 id="fixed_300">Fixed</h3>
-<p>An issue has been fixed where SAML authentication could fail for a Looker (Google Cloud core) instance. This feature now performs as expected.</p>
+<p>An issue has been fixed where some users were unable to create or edit BigQuery OAuth connections. This feature now performs as expected.</p>
 <h3 id="fixed_301">Fixed</h3>
-<p>An issue has been fixed where the Looker Marketplace toggle was not being displayed in Looker core instances for users who were granted Admin permissions with an IAM role. This feature now performs as expected.</p>
+<p>An issue has been fixed where SQL Runner would display a blank page if a user changed the visualization type after pivoting on a dimension. This feature now performs as expected.</p>
 <h3 id="fixed_302">Fixed</h3>
+<p>An issue has been fixed where some queries to the internal database were unoptimized, affecting instance performance. This feature now performs as expected.</p>
+<h3 id="fixed_303">Fixed</h3>
+<p>An issue has been fixed where a visualization template could fail to be displayed in the list of templates if the name contained certain unicode characters. This feature now performs as expected.</p>
+<h3 id="fixed_304">Fixed</h3>
+<p>An issue has been fixed where invalid query killing statements could cause unnecessarily verbose log outputs. This feature now performs as expected.</p>
+<h3 id="fixed_305">Fixed</h3>
+<p>An issue has been fixed where API users without the <code>explore</code> permission could access visualization templates. This feature now performs as expected.</p>
+<h3 id="fixed_306">Fixed</h3>
+<p>An issue has been fixed where Looker could return a 500 error while retrieving dashboard details if the details contained non-UTF-8 characters. This feature now performs as expected.</p>
+<h3 id="fixed_307">Fixed</h3>
+<p>An issue has been fixed where forecasting didn't work properly on fields that were based on JSON data. This feature now performs as expected.</p>
+<h3 id="fixed_308">Fixed</h3>
+<p>An issue has been fixed where Looker didn't properly sanitize slash characters in git references that were used for remote dependencies. This feature now performs as expected.</p>
+<h3 id="fixed_309">Fixed</h3>
+<p>An issue has been fixed where fields could be sorted differently when a visualization was downloaded or scheduled as a PNG. This feature now performs as expected.</p>
+<h3 id="fixed_310">Fixed</h3>
+<p>An issue has been fixed where the <code>all_connections</code> API call could ignore the <code>fields</code> parameter. This feature now performs as expected.</p>
+<h3 id="fixed_311">Fixed</h3>
+<p>An issue has been fixed where a map visualization would display drill links for fields that were hidden from the visualization. This feature now performs as expected.</p>
+<h3 id="fixed_312">Fixed</h3>
+<p>An issue has been fixed where some System Activity tables were missing the <code>element_id</code> field. This feature now performs as expected.</p>
+<h3 id="fixed_313">Fixed</h3>
+<p>An issue has been fixed where subtotals could be incorrectly formatted in PDF downloads when an HTML parameter was defined on the field and the "Expand tables to show all rows" option was enabled. This feature now performs as expected.</p>
+<h3 id="fixed_314">Fixed</h3>
+<p>The Looker IDE now checks for subparameters in local and remote dependencies and displays a more informative error if the subparameters are missing. Local dependencies must be defined with a project subparameter, while remote dependencies require both a <code>url</code> subparameter and a <code>ref</code> subparameter.</p>
+<h3 id="fixed_315">Fixed</h3>
+<p>An issue has been fixed where editing a merged query in an embedded session would open in a new tab. This feature now performs as expected.</p>
+<h3 id="fixed_316">Fixed</h3>
+<p>An issue has been fixed where Looker could generate duplicate SQL table references if a PDT referenced a table directly as well as through a join. This feature now performs as expected.</p>
+<h3 id="fixed_317">Fixed</h3>
+<p>An issue has been fixed where some PDT regeneration events were not tracked in System Activity. This feature now performs as expected.</p>
+<h3 id="fixed_318">Fixed</h3>
+<p>When an Explore is saved as a new dashboard, Looker will create advanced filter type dashboard filters, rather than drop-down type dashboard filters, for number type parameters.</p>
+<h3 id="fixed_319">Fixed</h3>
+<p>An issue has been fixed where SAML authentication could fail for a Looker (Google Cloud core) instance. This feature now performs as expected.</p>
+<h3 id="fixed_320">Fixed</h3>
+<p>An issue has been fixed where the Looker Marketplace toggle was not being displayed in Looker core instances for users who were granted Admin permissions with an IAM role. This feature now performs as expected.</p>
+<h3 id="fixed_321">Fixed</h3>
 <p>An issue has been fixed where installing multiple drivers for the same database type on a customer-hosted instance could cause Looker to display an error. This feature now performs as expected.</p>
 <hr />
 <h2 id="2025-06-30">2025-06-30</h2>
@@ -4767,7 +4814,7 @@ LookML dashboards. This feature now performs as expected.</p>
 </ul>
 <hr />
 <h2 id="2025-06-11">2025-06-11</h2>
-<h3 id="announcement_35">Announcement</h3>
+<h3 id="announcement_36">Announcement</h3>
 <p><strong>Looker 25.10</strong> is expected to include the following changes, features, and fixes:</p>
 <ul>
 <li>Expected Looker (original) deployment start: <strong>Tuesday, June 17, 2025</strong></li>
@@ -4799,60 +4846,60 @@ LookML dashboards. This feature now performs as expected.</p>
 <p>The new Content Guardrails admin panel lets Looker admins limit both the ability for users to add or execute merged results queries on dashboards and the use of the dashboard auto-refresh option. Limiting merged results queries and dashboard auto-refreshes can reduce the number of queries that are sent to the database and improve dashboard performance. <strong>Note:</strong> This item was added on June 12, 2025.</p>
 <h3 id="feature_249">Feature</h3>
 <p>The Looker <a href="https://cloud.google.com/looker/docs/continuous-integration">Continuous Integration (CI)</a> features let you run tests on your LookML project to deliver more reliable, efficient, and user-friendly data experiences. You can use the CI validators to catch issues with SQL, data test, content, and LookML before they hit production to verify your LookML and prevent query errors for your users. You can also configure the CI validators to run automatically when a pull request is submitted to your LookML repository. <strong>Note:</strong> This item was added on June 23, 2025.</p>
-<h3 id="fixed_303">Fixed</h3>
+<h3 id="fixed_322">Fixed</h3>
 <p>This release contains the following accessibility improvements:</p>
 <ul>
 <li>Increased contrast ratio for graphic elements, including icon bullets</li>
 <li>Improved contrast for download links and unemphasized text to comply with Web Content Accessibility Guidelines (WCAG) Level AA</li>
 </ul>
-<h3 id="fixed_304">Fixed</h3>
+<h3 id="fixed_323">Fixed</h3>
 <p>The Tile Actions kebab menu now includes the name of the dashboard tile in its <code>aria-label</code> value.</p>
-<h3 id="fixed_305">Fixed</h3>
+<h3 id="fixed_324">Fixed</h3>
 <p>An issue has been fixed where SDK API calls could return a 500 error if optional headers were not specified. The API calls now work as expected even if optional headers are not included.</p>
-<h3 id="fixed_306">Fixed</h3>
+<h3 id="fixed_325">Fixed</h3>
 <p>An issue has been fixed where the PDT Override Service Account field was not available for connections that use OAuth credentials. This feature now performs as expected.</p>
-<h3 id="fixed_307">Fixed</h3>
+<h3 id="fixed_326">Fixed</h3>
 <p>An issue has been fixed where the Manage Access dialog on a folder could load slowly if the Looker instance has a large number of groups. This feature now performs as expected.</p>
-<h3 id="fixed_308">Fixed</h3>
+<h3 id="fixed_327">Fixed</h3>
 <p>An issue has been fixed where, previously, testing a new OAuth connection before saving would run connection tests on an empty connection. OAuth settings must now be saved before running connection tests. This feature now performs as expected.</p>
-<h3 id="fixed_309">Fixed</h3>
+<h3 id="fixed_328">Fixed</h3>
 <p>The OAuth Tenant ID field will no longer appear in connections for which it is not relevant. The only connection type that supports this field is Trino.</p>
-<h3 id="fixed_310">Fixed</h3>
+<h3 id="fixed_329">Fixed</h3>
 <p>An issue has been fixed where the API calls to run git connection tests would fail unless the user was in dev mode. These calls now work as expected whether the user is in production or development mode.</p>
-<h3 id="fixed_311">Fixed</h3>
+<h3 id="fixed_330">Fixed</h3>
 <p>An issue has been fixed where drill downs wouldn't be displayed for a field if the first field value had null values. This feature now performs as expected.</p>
-<h3 id="fixed_312">Fixed</h3>
+<h3 id="fixed_331">Fixed</h3>
 <p>An issue has been fixed where assigning the user attribute
 <code>looker_internal_email_domain_allowlist</code> on the SAML config page would return a 500 error. This user attribute is not designed to be assigned at the user level, so the option to assign it has been removed from the SAML config page.</p>
-<h3 id="fixed_313">Fixed</h3>
+<h3 id="fixed_332">Fixed</h3>
 <p>An issue has been fixed where restarting the Looker instance during a folder sync could cause the instance to fail to start.</p>
-<h3 id="fixed_314">Fixed</h3>
+<h3 id="fixed_333">Fixed</h3>
 <p>An issue has been fixed where selecting fields from the Session view in the System Activity User Explore could cause fanout. This feature now performs as expected.</p>
-<h3 id="fixed_315">Fixed</h3>
+<h3 id="fixed_334">Fixed</h3>
 <p>An issue has been fixed where the <code>count</code> table calculation function could return incorrect values if its inputs included a list with null values. This feature now performs as expected.</p>
-<h3 id="fixed_316">Fixed</h3>
+<h3 id="fixed_335">Fixed</h3>
 <p>An issue has been fixed where the drill menu did not properly translate some entries when the locale was set to Swedish (sv_SE). This feature now performs as expected.</p>
-<h3 id="fixed_317">Fixed</h3>
+<h3 id="fixed_336">Fixed</h3>
 <p>An issue has been fixed where drilling on a query with subtotals could display incorrect values. This feature now performs as expected.</p>
-<h3 id="fixed_318">Fixed</h3>
+<h3 id="fixed_337">Fixed</h3>
 <p>An issue has been fixed where filtering on a custom dimension that references a <code>datetime</code> type field could return the following error message: <code>No matching signature</code>. This feature now performs as expected.</p>
-<h3 id="fixed_319">Fixed</h3>
+<h3 id="fixed_338">Fixed</h3>
 <p>An issue has been fixed where the LookML validator would return a 500 error if a LookML file contained a <code>sum_distinct</code> measure for a database that doesn't support <code>sum_distinct</code> measures. The LookML validator now returns a more descriptive error message.</p>
-<h3 id="fixed_320">Fixed</h3>
+<h3 id="fixed_339">Fixed</h3>
 <p>An issue has been fixed where entering the value <code>12:00</code> in the Time field of an alert schedule dialog would input <code>00:00</code> instead.</p>
-<h3 id="fixed_321">Fixed</h3>
+<h3 id="fixed_340">Fixed</h3>
 <p>An issue has been fixed where changes to PDT override settings would not be saved. This feature now performs as expected.</p>
-<h3 id="fixed_322">Fixed</h3>
+<h3 id="fixed_341">Fixed</h3>
 <p>An issue has been fixed where PDTs could fail to rebuild with the following error message: <code>undefined method trace_id_hex</code>. This feature now performs as expected.</p>
 <h3 id="feature_250">Feature</h3>
 <p>You can now <a href="https://cloud.google.com/looker/docs/embed-reports">embed Looker reports</a> on Looker (original) instances when Looker reports and the Embed Looker reports Labs features are enabled for your instance. Looker reports are available in preview.</p>
-<h3 id="fixed_323">Fixed</h3>
+<h3 id="fixed_342">Fixed</h3>
 <p>An issue has been fixed where LDAP authentication could fail with the following error message: <code>no implicit conversion of Hash into String</code>. This feature now performs as expected.</p>
 <h3 id="feature_251">Feature</h3>
 <p>The <a href="https://cloud.google.com/looker/docs/studio/conversational-analytics-code-interpreter">Code Interpreter in Conversational Analytics</a> is now available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. The Code Interpreter translates your natural language questions into Python code and executes that code to provide advanced analysis and visualizations. The Code Interpreter is disabled by default. Admins of Looker (Google Cloud core) instances can manage enablement for the Code Interpreter on the <a href="https://cloud.google.com/looker/docs/looker-core-admin-gemini#enable-ci-core">Gemini in Looker admin page</a>. <strong>Note:</strong> This item was added on June 23, 2025.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_36">Announcement</h3>
+<h3 id="announcement_37">Announcement</h3>
 <p>Gemini in Looker will be enabled by default for Looker (original) instances that meet at least one of the following criteria:</p>
 <ul>
 <li>The Automated Gemini in Looker enablement and user management setting on the Settings page in the Looker Admin panel was previously enabled.</li>
@@ -4874,6 +4921,9 @@ is created automatically for instances that use an <a href="https://cloud.google
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#looker">Looker</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-17" class="nav-link">2026-09-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-10" class="nav-link">2026-09-10</a>
           </li>

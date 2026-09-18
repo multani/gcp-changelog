@@ -2,6 +2,20 @@
 
 ## 2026-09-17
 
+### Announcement
+
+**Gemini Enterprise: Gemini Code Assist availability update for subscriptions**
+
+If you're getting a new Gemini Enterprise Standard or Plus subscription or
+renewing an existing subscription online, the subscription no longer includes
+access to Gemini Code Assist features. Existing subscriptions that include
+Gemini Code Assist features can still access the features until the end of
+their subscription term.
+
+Instead of Gemini Code Assist, you can use Antigravity for IDEs with AI developer
+tools. For more information, see [AI developer tools
+overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview).
+
 ### Feature
 
 **Gemini Enterprise: Voice input for the chat box**

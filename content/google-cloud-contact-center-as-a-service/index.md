@@ -1,5 +1,100 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-09-18
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where session metadata and data feed files were missing from
+  external storage for chats that ended before the first message from the
+  end-user.
+* Fixed an issue with Kustomer integrations where the caller's information
+  didn't appear on the **Incoming call** page of the call adapter for
+  direct-line inbound calls.
+* Fixed an issue with inbound mobile calls where the end-user leg of the call
+  failed, returning `Unknown error`, while the agent leg connected normally.
+* Fixed an agent desktop issue where live call and chat data were lost.
+* Fixed an issue that occurred when the receiving agent in an agent-to-agent
+  transfer didn't answer the call. The receiving agent was marked as active on
+  the call indefinitely, even after the call ended.
+* Fixed an issue where the **Dismiss** button remained active after an agent
+  sent a message, resulting in a 409 error when clicked.
+* Fixed an issue where duplicate "chat finished" events were reported when the
+  end-user left a chat session at nearly the same time that the agent ended
+  the chat session.
+* Fixed an issue where deflected calls were missing from the **All Call
+  History** and **Voice Inbound (IVR) History** reports.
+* Fixed an issue that occurred when a direct inbound call was deflected to the
+  agent's overcapacity queue, then that queue redirected to a SIP URI. The
+  SIP redirect didn't include the custom SIP headers.
+* Fixed an issue where an in-queue announcement interval of several minutes
+  for inbound IVR calls was incorrectly reduced to approximately 60 seconds.
+* Fixed an issue where calls that agents were unable to answer due to
+  microphone failures were incorrectly reported as "picked up" in the **Agent
+  Activity Timeline** report.
+* Fixed an issue where the system incorrectly marked agents as still being on
+  a call after it ended, which either prevented them from changing their
+  status to **Available** or silently blocked them from receiving new calls.
+* Fixed an issue where processing delays for ended calls caused timeout
+  errors.
+* Fixed an issue where a sudden spike in calls bypassed capacity limits,
+  causing agent availability to drop below required minimums.
+* Fixed an issue where the **Agent Activity Timeline** report incorrectly
+  attributed manual agent logins and logouts to **System** instead of the
+  appropriate agents.
+* Fixed an issue where calls with a missed offer became permanently stuck in
+  the queue, preventing them from being routed to other available agents. This
+  occurred with queues configured with multicast fallback disabled.
+* Fixed an issue where manual or cascade outbound calls that were canceled
+  before connecting were missing from team-filtered **Call History** reports.
+* Fixed an issue that prevented over-capacity deflection from triggering when
+  an agent warm-transferred an outbound call to a queue.
+* Fixed an issue where calls weren't correctly routed to the top-ranked agent
+  when using agent priority overrides.
+* Fixed an issue where escalated voice calls were incorrectly reported as both
+  answered and abandoned.
+* Fixed an issue where calls were missing from the **All Call History** and
+  **Voice Inbound History** reports if the caller hung up before leaving a
+  voicemail.
+* Fixed an issue where Salesforce click-to-dial outbound calls were
+  incorrectly associated with the most recent open case instead of the case
+  from which the call was initiated.
+* Fixed an issue where email accounts remained disconnected indefinitely after
+  a temporary authentication failure.
+* Fixed an issue in Agent Assist where long periods of silence
+  during calls caused connection timeouts, triggering false-positive error
+  alerts.
+* Fixed an issue where the **arrow-down-icon** and **arrow-up-icon** arrows
+  on the **Agents > Filter Settings** page were rendered at an
+  incorrect scale.
+* Fixed an issue where incoming calls incorrectly created duplicate
+  Salesforce accounts instead of linking to existing accounts.
+* Fixed an issue where the outbound call queue list displayed stale
+  information, potentially causing calls to be placed in a queue that didn't
+  match the agent's selected language.
+* Fixed an issue where the menus for transferring calls and forwarding calls
+  to voicemail appeared in English instead of the agent's selected language.
+* Fixed an issue where the wrap-up disposition panel froze after a network
+  reconnection even though the submission had completed successfully.
+* Fixed an issue where outbound, click-to-dial calls initiated in Salesforce
+  incorrectly linked to and reassigned ownership of other cases associated
+  with the same phone number.
+* Fixed an issue where the agent adapter went blank and prevented new calls
+  from reaching the agent if an end-user hung up immediately after the
+  agent received the call notification.
+* Fixed an issue where calls that failed to connect got stuck in a silent
+  'connecting' state in the call adapter.
+* Fixed an issue where Salesforce CRM connections dropped for organizations
+  enforcing OAuth Refresh Token Rotation.
+* Fixed an issue where part of an agent's audio was dropped from recordings
+  when a virtual task assistant ran in the middle of a call.
+* Fixed a web SDK issue where menus in the pre-chat and chat screens didn't
+  comply with WAI-ARIA keyboard navigation standards.
+* Fixed a web SDK issue where screen readers couldn't identify the purpose of
+  the **Text size** options for the chat screen.
+
+---
 ## 2026-09-16
 
 ### Announcement

@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2026-09-18
+
+### Feature
+
+**Gemini Enterprise: Support for new actions (Public Preview)**
+
+Support for new actions is available in Public Preview for the following data stores:
+
+* [Microsoft OneDrive](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-onedrive): Copy folder, move file, move folder, rename file, rename folder, share file or folder, and update file properties.
+* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-outlook): Create calendar, RSVP to event, and update calendar.
+* [Microsoft SharePoint](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-sharepoint): Create list item, discard check out document, get list fields, get list item, list lists, share resource, update file properties, update list, update list item, and update page.
+* [Microsoft Teams](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-teams): Add member to channel, create channel, create chat, create schedule, create time off entry, update channel, update channel message, update chat, update chat message, and update time off entry.
+
+For more information, see [Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+---
 ## 2026-09-17
 
 ### Announcement

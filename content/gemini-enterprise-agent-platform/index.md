@@ -1,5 +1,17 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-18
+
+### Feature
+
+**xAI's Grok 4.6 is generally available**
+
+[Grok 4.6](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/grok/grok-4-6)
+is now [generally available
+(GA)](https://cloud.google.com/products#product-launch-stages) and available for
+production use on the global endpoint and the US multi-region endpoint.
+
+---
 ## 2026-09-17
 
 ### Feature

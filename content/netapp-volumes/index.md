@@ -1,5 +1,18 @@
 # NetApp Volumes
 
+## 2026-09-17
+
+### Feature
+
+Organization Policy Service custom constraints are available for Google Cloud
+NetApp Volumes. You can use custom constraints to control how NetApp Volumes is
+used in your organization. For example, you can restrict storage pool or volume
+capacity, or enforce that storage pools are created only with Premium or Extreme
+service levels.
+
+For more information, see [Custom organization policy constraints](https://docs.cloud.google.com/netapp/volumes/docs/secure-control-access/custom-constraints).
+
+---
 ## 2026-09-15
 
 ### Announcement

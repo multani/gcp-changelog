@@ -1,5 +1,13 @@
 # Memorystore for Valkey
 
+## 2026-09-18
+
+### Feature
+
+The [basic token-based authentication](https://docs.cloud.google.com/memorystore/docs/valkey/manage-basic-auth)
+feature is [generally available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-31
 
 ### Feature

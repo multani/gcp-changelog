@@ -1,5 +1,14 @@
 # Cloud Scheduler
 
+## 2026-09-18
+
+### Change
+
+Cloud Scheduler is available in the following [location](https://docs.cloud.google.com/scheduler/docs/locations):
+
+* `asia-southeast3` (Bangkok, Thailand)
+
+---
 ## 2026-07-29
 
 ### Change

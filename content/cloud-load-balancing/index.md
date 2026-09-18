@@ -1,5 +1,33 @@
 # Cloud Load Balancing
 
+## 2026-09-18
+
+### Feature
+
+Managed workload identity for backend mTLS is **generally available** for the
+following Application Load Balancers:
+
+* Global external Application Load Balancers
+* Regional external Application Load Balancers
+* Cross-region internal Application Load Balancers
+* Regional internal Application Load Balancers
+
+The key benefits are as follows:
+
+* **Streamline certificate management**: Automated certificate and trust
+  management for backend mTLS through seamless
+  integration with Certificate Authority Service and Certificate Manager.
+* **Eliminate operational toil**: Certificates are automatically rotated based
+  on the workload identity pool's configuration, removing the complexity and
+  manual bottleneck of private key provisioning and maintenance.
+* **Improve visibility and governance**: Gain visibility into communication
+  between distributed services and proactively apply governance to workloads
+  across environments.
+
+For more information, see
+[Backend mTLS with managed workload identity overview](https://docs.cloud.google.com/load-balancing/docs/managed-workload-identities-load-balancers-overview)
+
+---
 ## 2026-08-27
 
 ### Feature

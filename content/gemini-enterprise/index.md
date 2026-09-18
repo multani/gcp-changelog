@@ -12,9 +12,14 @@ access to Gemini Code Assist features. Existing subscriptions that include
 Gemini Code Assist features can still access the features until the end of
 their subscription term.
 
-Instead of Gemini Code Assist, you can use Antigravity for IDEs with AI developer
-tools. For more information, see [AI developer tools
+Instead of Gemini Code Assist, you can use Antigravity for IDEs with AI
+developer tools. For more information, see [AI developer tools
 overview](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview).
+
+If you're still looking to use Gemini Code Assist with your Gemini Enterprise
+licenses, you can obtain a new Gemini Enterprise subscription that includes
+Gemini Code Assist by [contacting Google Cloud
+sales](https://cloud.google.com/contact).
 
 ### Feature
 

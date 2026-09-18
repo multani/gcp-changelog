@@ -2,9 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Model Armor</title>
   <subtitle>Changelog for Google Cloud product: Model Armor</subtitle>
-  <updated>2026-09-04T00:00:00+00:00</updated>
+  <updated>2026-09-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:model-armor</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/model-armor/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:model-armor:2026-09-18:feature:0</id>
+    <published>2026-09-18T00:00:00+00:00</published>
+    <updated>2026-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Filter version <code>v4</code> is available and set as the default for the <code>Latest</code> alias.
+Filter version <code>v3</code> is promoted to the <code>Stable</code> alias in all supported regions
+except the following:</p>
+<ul>
+<li>In <code>asia-northeast3</code>, <code>v1</code> remains the <code>Stable</code> version.</li>
+<li>In <code>australia-southeast2</code>, <code>v3</code> becomes the <code>Stable</code> version on
+  September 25, 2026.</li>
+</ul>
+<p>If your templates use the <code>Stable</code> alias, they automatically upgrade to <code>v3</code>
+when <code>v3</code> becomes <code>Stable</code> in that region.</p>
+<p>Filter versions <code>v1</code> (except in <code>asia-northeast3</code>, and starting
+September 25, 2026 in <code>australia-southeast2</code>) and <code>v2</code> transition to <code>Legacy</code>
+status and retire on December 17, 2026. If your templates are explicitly
+configured with <code>v1</code> or <code>v2</code> in regions where those versions are in <code>Legacy</code>
+status, you must migrate them to <code>v3</code> or the <code>Stable</code> alias before December 17,
+2026.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/set-filter-version#release-timeline">Version release
+timeline</a> and
+<a href="https://docs.cloud.google.com/model-armor/version-history#release-history">Model Armor filter version
+history</a>.</p>]]></content>
+    <summary>Filter version v4 is now the default for the Latest alias, and v3 is promoted to Stable in most regions. Older versions v1 and v2 will transition to Legacy status and retire by December 17, 2026, requiring migration for templates explicitly using them. Check the release timeline for specific regional details and upgrade requirements.</summary>
+    <title>Feature: New Filter Version Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

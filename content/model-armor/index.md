@@ -1,5 +1,33 @@
 # Model Armor
 
+## 2026-09-18
+
+### Feature
+
+Filter version `v4` is available and set as the default for the `Latest` alias.
+Filter version `v3` is promoted to the `Stable` alias in all supported regions
+except the following:
+
+* In `asia-northeast3`, `v1` remains the `Stable` version.
+* In `australia-southeast2`, `v3` becomes the `Stable` version on
+  September 25, 2026.
+
+If your templates use the `Stable` alias, they automatically upgrade to `v3`
+when `v3` becomes `Stable` in that region.
+
+Filter versions `v1` (except in `asia-northeast3`, and starting
+September 25, 2026 in `australia-southeast2`) and `v2` transition to `Legacy`
+status and retire on December 17, 2026. If your templates are explicitly
+configured with `v1` or `v2` in regions where those versions are in `Legacy`
+status, you must migrate them to `v3` or the `Stable` alias before December 17,
+2026.
+
+For more information, see [Version release
+timeline](https://docs.cloud.google.com/model-armor/set-filter-version#release-timeline) and
+[Model Armor filter version
+history](https://docs.cloud.google.com/model-armor/version-history#release-history).
+
+---
 ## 2026-09-04
 
 ### Feature

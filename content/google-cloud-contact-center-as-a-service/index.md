@@ -2,6 +2,16 @@
 
 ## 2026-09-18
 
+### Announcement
+
+**Google Cloud CCaaS 6.13**
+
+We've released version 6.13 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
 ### Fixed
 
 This release addresses the following issues:

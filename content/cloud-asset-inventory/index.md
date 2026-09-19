@@ -1,5 +1,20 @@
 # Cloud Asset Inventory
 
+## 2026-09-17
+
+### Feature
+
+The following resource type is publicly available through the
+[ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets),
+[ListAssets](https://docs.cloud.google.com/asset-inventory/docs/listing-assets),
+[BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory),
+[QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets),
+and [Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds) APIs.
+
+* Cloud TPU API
+  + `tpu.googleapis.com/QueuedResource`
+
+---
 ## 2026-09-15
 
 ### Feature

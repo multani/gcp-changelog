@@ -56,6 +56,23 @@ Key updates in these image versions include:
 * 2.2.86-debian12, 2.2.86-rocky9, 2.2.86-ubuntu22, 2.2.86-ubuntu22-arm
 
 ---
+## 2026-08-25
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime version](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/spark-runtime-3.0):
+
+* `3.0.14` (image `3.0.20260809_212300-RC01-spark`)
+
+Key updates in this runtime version include:
+
+* Upgraded Cloud Storage Connector to version `3.1.16`.
+* Upgraded Conda installer to Miniforge3 `25.9.1`.
+* Upgraded OpenLineage to version `1.49.1` to support lineage for tables created using the Lakehouse Runtime catalog, and fixed a segmentation fault when OpenLineage parses complex SQL query strings.
+* Upgraded Spark RAPIDS to version `26.04.2`.
+* Upgraded Metastore Proxy to version `v0.0.79`.
+
+---
 ## 2026-08-19
 
 ### Announcement

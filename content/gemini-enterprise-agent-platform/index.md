@@ -11,6 +11,14 @@ is now [generally available
 (GA)](https://cloud.google.com/products#product-launch-stages) and available for
 production use on the global endpoint and the US multi-region endpoint.
 
+### Breaking
+
+**Agent Platform SDK for Python version 2.0.1 is available**
+
+Version 2.0.1 of the Agent Platform SDK for Python (`google-cloud-agentplatform`) is now available. This release migrates generative AI modules to the Google Gen AI SDK, decouples the agent surface from `google-cloud-aiplatform` into a dedicated package, and introduces restructured namespaces.
+
+For details and migration instructions from `google-cloud-aiplatform`, see the [Agent Platform SDK for Python version 2.0.1 migration guide](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/python-sdk/sdk-migration).
+
 ---
 ## 2026-09-17
 

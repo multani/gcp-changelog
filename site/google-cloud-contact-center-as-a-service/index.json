@@ -3,11 +3,43 @@
   "entries": {
     "2026-09-18": [
       {
-        "kind": "Fixed",
-        "content": "This release addresses the following issues:\n\n* Fixed an issue where session metadata and data feed files were missing from\n  external storage for chats that ended before the first message from the\n  end-user.\n* Fixed an issue with Kustomer integrations where the caller's information\n  didn't appear on the **Incoming call** page of the call adapter for\n  direct-line inbound calls.\n* Fixed an issue with inbound mobile calls where the end-user leg of the call\n  failed, returning `Unknown error`, while the agent leg connected normally.\n* Fixed an agent desktop issue where live call and chat data were lost.\n* Fixed an issue that occurred when the receiving agent in an agent-to-agent\n  transfer didn't answer the call. The receiving agent was marked as active on\n  the call indefinitely, even after the call ended.\n* Fixed an issue where the **Dismiss** button remained active after an agent\n  sent a message, resulting in a 409 error when clicked.\n* Fixed an issue where duplicate \"chat finished\" events were reported when the\n  end-user left a chat session at nearly the same time that the agent ended\n  the chat session.\n* Fixed an issue where deflected calls were missing from the **All Call\n  History** and **Voice Inbound (IVR) History** reports.\n* Fixed an issue that occurred when a direct inbound call was deflected to the\n  agent's overcapacity queue, then that queue redirected to a SIP URI. The\n  SIP redirect didn't include the custom SIP headers.\n* Fixed an issue where an in-queue announcement interval of several minutes\n  for inbound IVR calls was incorrectly reduced to approximately 60 seconds.\n* Fixed an issue where calls that agents were unable to answer due to\n  microphone failures were incorrectly reported as \"picked up\" in the **Agent\n  Activity Timeline** report.\n* Fixed an issue where the system incorrectly marked agents as still being on\n  a call after it ended, which either prevented them from changing their\n  status to **Available** or silently blocked them from receiving new calls.\n* Fixed an issue where processing delays for ended calls caused timeout\n  errors.\n* Fixed an issue where a sudden spike in calls bypassed capacity limits,\n  causing agent availability to drop below required minimums.\n* Fixed an issue where the **Agent Activity Timeline** report incorrectly\n  attributed manual agent logins and logouts to **System** instead of the\n  appropriate agents.\n* Fixed an issue where calls with a missed offer became permanently stuck in\n  the queue, preventing them from being routed to other available agents. This\n  occurred with queues configured with multicast fallback disabled.\n* Fixed an issue where manual or cascade outbound calls that were canceled\n  before connecting were missing from team-filtered **Call History** reports.\n* Fixed an issue that prevented over-capacity deflection from triggering when\n  an agent warm-transferred an outbound call to a queue.\n* Fixed an issue where calls weren't correctly routed to the top-ranked agent\n  when using agent priority overrides.\n* Fixed an issue where escalated voice calls were incorrectly reported as both\n  answered and abandoned.\n* Fixed an issue where calls were missing from the **All Call History** and\n  **Voice Inbound History** reports if the caller hung up before leaving a\n  voicemail.\n* Fixed an issue where Salesforce click-to-dial outbound calls were\n  incorrectly associated with the most recent open case instead of the case\n  from which the call was initiated.\n* Fixed an issue where email accounts remained disconnected indefinitely after\n  a temporary authentication failure.\n* Fixed an issue in Agent Assist where long periods of silence\n  during calls caused connection timeouts, triggering false-positive error\n  alerts.\n* Fixed an issue where the **arrow-down-icon** and **arrow-up-icon** arrows\n  on the **Agents > Filter Settings** page were rendered at an\n  incorrect scale.\n* Fixed an issue where incoming calls incorrectly created duplicate\n  Salesforce accounts instead of linking to existing accounts.\n* Fixed an issue where the outbound call queue list displayed stale\n  information, potentially causing calls to be placed in a queue that didn't\n  match the agent's selected language.\n* Fixed an issue where the menus for transferring calls and forwarding calls\n  to voicemail appeared in English instead of the agent's selected language.\n* Fixed an issue where the wrap-up disposition panel froze after a network\n  reconnection even though the submission had completed successfully.\n* Fixed an issue where outbound, click-to-dial calls initiated in Salesforce\n  incorrectly linked to and reassigned ownership of other cases associated\n  with the same phone number.\n* Fixed an issue where the agent adapter went blank and prevented new calls\n  from reaching the agent if an end-user hung up immediately after the\n  agent received the call notification.\n* Fixed an issue where calls that failed to connect got stuck in a silent\n  'connecting' state in the call adapter.\n* Fixed an issue where Salesforce CRM connections dropped for organizations\n  enforcing OAuth Refresh Token Rotation.\n* Fixed an issue where part of an agent's audio was dropped from recordings\n  when a virtual task assistant ran in the middle of a call.\n* Fixed a web SDK issue where menus in the pre-chat and chat screens didn't\n  comply with WAI-ARIA keyboard navigation standards.\n* Fixed a web SDK issue where screen readers couldn't identify the purpose of\n  the **Text size** options for the chat screen.",
+        "kind": "Feature",
+        "content": "**Improved filtering by team**\n\nWe made the following changes to team-based filtering:\n\n* Renamed the **Teams** filter to **Agent Teams** to clarify that it filters\n  by the agent team handling the interactions. This change is in the\n  **Real-time Queue Monitoring - Calls**, **Real-time Queue Monitoring -\n  Chats**, **Real-time Connected - Calls**, and **Real-time Connected -\n  Chats** dashboards. For more information, see [Queue monitoring\n  dashboards](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-queue-monitor),\n  [Real-time Connected - Calls\n  dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-calls-connected),\n  and [Real-time Connected - Chats\n  dashboard](https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-chats-connected).\n* Added a **Queue Teams** filter to the **Real-time Queued - Calls** and\n  **Real-time Queued - Chats** dashboards. This lets you filter queued\n  interactions by the team assigned to the queue.",
         "summary": {
-          "title": "Resolved Issues in Recent Update",
-          "summary": "This release includes fixes for various issues affecting call handling, agent desktop functionality, reporting accuracy, and integration stability. Key improvements include resolving data feed discrepancies, ensuring correct caller information display, and preventing call routing errors. The update also addresses problems with agent status updates, reporting inconsistencies, and Salesforce integration."
+          "title": "Enhanced Team Filtering for Dashboards",
+          "summary": "We've improved team-based filtering in several real-time dashboards. The 'Teams' filter is now 'Agent Teams' for clarity, and new 'Queue Teams' filters have been added to 'Real-time Queued' dashboards, allowing for more precise monitoring of interactions by agent and queue teams."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved the Real-time Calls and Real-time Chats dashboards**\n\nWe made the following dashboard improvements:\n\n* **Real-time Calls - Calls Connected dashboard**. Added the following\n  columns to the **Connected Calls** table:\n\n  + **Total Consumer Talk Time**. Total time since the call first\n    connected to a virtual agent or a human agent.\n  + **Total Hold Time**. Total time the call has spent on hold so far,\n    including a hold currently in progress.\n* **Real-time Chats - Chats Connected dashboard**. Added the following\n  column to the **Connected Chats** table:\n\n  + **Total Consumer Chat Time**. Total time since the chat first connected\n    to a virtual agent or a human agent.",
+        "summary": {
+          "title": "Enhanced Real-time Dashboards",
+          "summary": "The Real-time Calls and Chats dashboards have been improved with new metrics. The Calls Connected dashboard now includes Total Consumer Talk Time and Total Hold Time, while the Chats Connected dashboard features Total Consumer Chat Time for more comprehensive monitoring."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Real-time Calls - Calls Queued dashboard: new Projecting column**\n\nThe **Real-time Calls - Calls Queued** dashboard has a new **Projecting** column\nin the **Call Queued** table. Indicates whether the routing engine (deltacast)\nis currently projecting this queued call to an available agent.",
+        "summary": {
+          "title": "New column in Calls Queued dashboard",
+          "summary": "The Real-time Calls - Calls Queued dashboard now includes a Projecting column. This column indicates if the routing engine is currently projecting a queued call to an agent."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Advanced reporting available in French Canadian**\n\nAll advanced reporting dashboards and Explores are now available in French\nCanadian. When you select French Canadian as your profile language in the\nCCAI Platform portal, these dashboards and Explores display in that language.\n\nAdministrators: There's a new **Français (CAN)** option when you click **Admin\n> Change Language** in the CCAI Platform portal.",
+        "summary": {
+          "title": "Advanced reporting now in French Canadian",
+          "summary": "All advanced reporting dashboards and Explores are now available in French Canadian. Simply select 'Français (CAN)' as your profile language in the CCAI Platform portal to view them."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where the formatting of numeric values was inconsistent\n  across tiles.\n* Fixed an issue where column headers, filter labels, and tile titles didn't\n  immediately switch to a newly selected language.\n* Fixed an issue where the **Productive Agents** column in the tables of the\n  **Queue Group Performance - All** dashboard didn't display values\n  appropriate to the queue group settings.\n* Fixed an issue in the **Call Queue Metrics (Historical)** Explore where\n  filtering by **Agent Name** without including it as a visible column\n  resulted in zero rows being returned.\n* Fixed an issue that affected calls to a sub-menu that were deflected using\n  **Custom After Hours Deflection** to a message. These calls were incorrectly\n  attributed to the parent menu in the **All Queued Interactions** report.\n* Fixed the effectiveness of the **Direction** filter in the following\n  dashboards:\n\n  + **Agent Performance**. The **Agent Productivity Detailed – Calls** and\n    **Agent Productivity Detailed – Chats** tables correctly reflect the\n    filter setting.\n  + **Real-time Agent Monitoring**. The **Agent Performance** table and\n    historical metrics tiles correctly reflect the filter setting.\n  + **All Interactions – Calls** and **All Interactions – Chats**. The **IVR\n    Interactions** (calls only) and **Virtual Agent Interactions** tables\n    correctly reflect the filter setting.\n* Fixed an issue with the **Queue Performance - Calls** dashboard when short\n  abandons were present in the specified date range. The **Avg Queue Time**\n  column in the **Queue Summary** table incorrectly displayed the raw sum of\n  queue durations instead of a true average.\n* Fixed an issue where team filters didn't apply correctly when generating the\n  **Individual Call History Report** and the **Individual Chat History\n  Report**. This resulted in the inclusion of data from unmanaged queues.\n* Fixed an issue where French Canadian translations for several dashboard\n  metrics and labels were incorrect, incomplete, or missing.\n* Fixed the following issues with the **Real-time Calls - Calls Queued**\n  dashboard:\n\n  + The **Total Queued Now** metric didn't include callers who were returned\n    to the queue after an automated-answer detection miss.\n  + The **Current Max Queue Wait Time (H:M:S)** and **Current Avg Queue Wait\n    Time (H:M:S)** metrics mistakenly measured from a caller's original\n    entry into the queue, rather than from their most recent return to the\n    queue.\n* Fixed an issue where a gray bar appeared at the bottom of the advanced\n  reporting dashboards, preventing a full view of the dashboards.",
+        "summary": {
+          "title": "Resolved Reporting and Formatting Issues",
+          "summary": "Several issues have been resolved, including inconsistent numeric formatting, delayed language switching, and inaccurate data display in various reports and dashboards. These fixes ensure more reliable and accurate reporting across different metrics and filters."
         }
       }
     ],
@@ -92,56 +124,6 @@
         "summary": {
           "title": "Various issues fixed",
           "summary": "This release includes numerous fixes for issues related to call handling, reporting, agent desktop functionality, and system performance. It addresses problems with status reporting, timeouts, incorrect rounding, capacity protections, data display, call recording exports, and more, ensuring improved stability and accuracy."
-        }
-      }
-    ],
-    "2026-09-08": [
-      {
-        "kind": "Announcement",
-        "content": "**Advanced reporting dashboards prerelease notes 6.4**\n\nHere are the pre-release notes for updates to the advanced reporting dashboards\nand other reporting in CCAI Platform. When we release these updates, we\nexpect the new capabilities to be as shown here.\n\n**Important:** The next version of the advanced reporting dashboards could be greater\nthan 6.4.",
-        "summary": {
-          "title": "New Reporting Dashboards Available",
-          "summary": "Pre-release notes for version 6.4 of advanced reporting dashboards and other reporting features in CCAI Platform are now available. These updates introduce new capabilities to enhance your reporting experience."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Real-time Agent Monitoring dashboard: new Active call ID(s) column**\n\nThe **Real-time Agent Monitoring** dashboard now has an **Active Call ID(s)**\ncolumn in the **Live Agent Data** table. The column displays the call ID(s) for\nany call in a connecting, connected, or reconnecting state for the agent. If an\nagent is handling multiple concurrent calls, the call IDs appear in a\ncomma-separated list. The **Active Call ID(s)** column reduces the number of\nsteps required for supervisors to identify active calls during live monitoring.",
-        "summary": {
-          "title": "New Active Call ID column in Agent Monitoring",
-          "summary": "The Real-time Agent Monitoring dashboard now includes an Active Call ID(s) column. This new column displays the call ID(s) for agents handling live calls, simplifying the process for supervisors to identify active calls and manage multiple concurrent calls."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Improved filtering by team**\n\nWe made the following changes to team-based filtering:\n\n* Renamed the **Teams** filter to **Agent Teams** to clarify that it filters\n  by the agent team handling the interactions. This change is in the\n  **Real-time Queue Monitoring - Calls**, **Real-time Queue Monitoring -\n  Chats**, **Real-time Calls - Calls Connected**, and **Real-time Chats -\n  Chats Connected** dashboards.\n* Added a **Queue Teams** filter to the **Real-time Calls - Calls Queued** and\n  **Real-time Chats - Chats Queued** dashboards. This lets you filter queued\n  interactions by the team assigned to the queue.",
-        "summary": {
-          "title": "Enhanced Team Filtering",
-          "summary": "We've improved team-based filtering with clearer naming for agent teams and added new queue team filters to relevant dashboards. This allows for more precise monitoring of interactions by agent and queue assignments."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Improved the Real-time Calls and Real-time Chats dashboards**\n\nWe made the following dashboard improvements:\n\n* **Real-time Calls - Calls Connected dashboard**. Added the following\n  columns to the **Connected Calls** table:\n\n  + **Total Consumer Talk Time**. Total time since the call first\n    connected to a virtual agent or a human agent.\n  + **Total Hold Time**. Total time the call has spent on hold so far,\n    including a hold currently in progress.\n* **Real-time Chats - Chats Connected dashboard**. Added the following\n  column to the **Connected Chats** table:\n\n  + **Total Consumer Chat Time**. Total time since the chat first connected\n    to a virtual agent or a human agent.",
-        "summary": {
-          "title": "Enhanced Real-time Dashboards",
-          "summary": "New metrics for call and chat duration are now available on the Real-time Calls and Real-time Chats dashboards. These updates provide deeper insights into connected calls and chats, including total consumer talk time and total consumer chat time."
-        }
-      },
-      {
-        "kind": "Feature",
-        "content": "**Real-time Calls - Calls Queued dashboard: new Projecting column**\n\nThe **Real-time Calls - Calls Queued** dashboard has a new **Projecting** column\nin the **Call Queued** table. Indicates whether the routing engine (deltacast)\nis currently projecting this queued call to an available agent.",
-        "summary": {
-          "title": "New column added to Calls Queued dashboard",
-          "summary": "The Calls Queued dashboard now includes a 'Projecting' column. This new column indicates if a queued call is currently being projected to an available agent by the routing engine."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "This release addresses the following issues:\n\n* Fixed an issue where the formatting of numeric values was inconsistent\n  across tiles.\n* Fixed an issue where column headers, filter labels, and tile titles didn't\n  immediately switch to a newly selected language.\n* Fixed an issue where the **Productive Agents** column in the tables of the\n  **Queue Group Performance - All** dashboard didn't display values\n  appropriate to the queue group settings.\n* Fixed an issue in the **Call Queue Metrics (Historical)** Explore where\n  filtering by **Agent Name** without including it as a visible column\n  resulted in zero rows being returned.\n* Fixed an issue that affected calls to a sub-menu that were deflected using\n  **Custom After Hours Deflection** to a message. These calls were incorrectly\n  attributed to the parent menu in the **All Queued Interactions** report.\n* Fixed the effectiveness of the **Direction** filter in the following\n  dashboards:\n\n  + **Agent Performance**. The **Agent Productivity Detailed – Calls** and\n    **Agent Productivity Detailed – Chats** tables correctly reflect the\n    filter setting.\n  + **Real-time Agent Monitoring**. The **Agent Performance** table and\n    historical metrics tiles correctly reflect the filter setting.\n  + **All Interactions – Calls** and **All Interactions – Chats**. The **IVR\n    Interactions** (calls only) and **Virtual Agent Interactions** tables\n    correctly reflect the filter setting.\n* Fixed an issue with the **Queue Performance - Calls** dashboard when short\n  abandons were present in the specified date range. The **Avg Queue Time**\n  column in the **Queue Summary** table incorrectly displayed the raw sum of\n  queue durations instead of a true average.\n* Fixed an issue where team filters didn't apply correctly when generating the\n  **Individual Call History Report** and the **Individual Chat History\n  Report**. This resulted in the inclusion of data from unmanaged queues.\n* Fixed the following issues with the **Real-time Calls - Calls Queued**\n  dashboard:\n\n  + The **Total Queued Now** metric didn't include callers who were returned\n    to the queue after an automated-answer detection miss.\n  + The **Current Max Queue Wait Time (H:M:S)** and **Current Avg Queue Wait\n    Time (H:M:S)** metrics mistakenly measured from a caller's original\n    entry into the queue, rather than from their most recent return to the\n    queue.\n* Fixed an issue where a gray bar appeared at the bottom of the advanced\n  reporting dashboards, preventing a full view of the dashboards.",
-        "summary": {
-          "title": "Reporting and Dashboard Fixes",
-          "summary": "Several issues impacting reporting accuracy and display have been resolved. This includes fixes for data inconsistencies, incorrect metric calculations, and display problems in various dashboards and reports. The effectiveness of filters and the accuracy of queue and agent performance metrics have been improved."
         }
       }
     ],
@@ -270,6 +252,56 @@
         "summary": {
           "title": "Resolved various issues",
           "summary": "This release addresses numerous issues across the platform, including problems with call handling, chat functionality, agent status, and reporting. Key fixes ensure accurate display of agent names, proper status updates, and reliable call routing."
+        }
+      }
+    ],
+    "2026-09-08": [
+      {
+        "kind": "Announcement",
+        "content": "**Advanced reporting dashboards prerelease notes 6.4**\n\nHere are the pre-release notes for updates to the advanced reporting dashboards\nand other reporting in CCAI Platform. When we release these updates, we\nexpect the new capabilities to be as shown here.\n\n**Important:** The next version of the advanced reporting dashboards could be greater\nthan 6.4.",
+        "summary": {
+          "title": "New Reporting Dashboards Available",
+          "summary": "Pre-release notes for version 6.4 of advanced reporting dashboards and other reporting features in CCAI Platform are now available. These updates introduce new capabilities to enhance your reporting experience."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Real-time Agent Monitoring dashboard: new Active call ID(s) column**\n\nThe **Real-time Agent Monitoring** dashboard now has an **Active Call ID(s)**\ncolumn in the **Live Agent Data** table. The column displays the call ID(s) for\nany call in a connecting, connected, or reconnecting state for the agent. If an\nagent is handling multiple concurrent calls, the call IDs appear in a\ncomma-separated list. The **Active Call ID(s)** column reduces the number of\nsteps required for supervisors to identify active calls during live monitoring.",
+        "summary": {
+          "title": "New Active Call ID column in Agent Monitoring",
+          "summary": "The Real-time Agent Monitoring dashboard now includes an Active Call ID(s) column. This new column displays the call ID(s) for agents handling live calls, simplifying the process for supervisors to identify active calls and manage multiple concurrent calls."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved filtering by team**\n\nWe made the following changes to team-based filtering:\n\n* Renamed the **Teams** filter to **Agent Teams** to clarify that it filters\n  by the agent team handling the interactions. This change is in the\n  **Real-time Queue Monitoring - Calls**, **Real-time Queue Monitoring -\n  Chats**, **Real-time Calls - Calls Connected**, and **Real-time Chats -\n  Chats Connected** dashboards.\n* Added a **Queue Teams** filter to the **Real-time Calls - Calls Queued** and\n  **Real-time Chats - Chats Queued** dashboards. This lets you filter queued\n  interactions by the team assigned to the queue.",
+        "summary": {
+          "title": "Enhanced Team Filtering",
+          "summary": "We've improved team-based filtering with clearer naming for agent teams and added new queue team filters to relevant dashboards. This allows for more precise monitoring of interactions by agent and queue assignments."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Improved the Real-time Calls and Real-time Chats dashboards**\n\nWe made the following dashboard improvements:\n\n* **Real-time Calls - Calls Connected dashboard**. Added the following\n  columns to the **Connected Calls** table:\n\n  + **Total Consumer Talk Time**. Total time since the call first\n    connected to a virtual agent or a human agent.\n  + **Total Hold Time**. Total time the call has spent on hold so far,\n    including a hold currently in progress.\n* **Real-time Chats - Chats Connected dashboard**. Added the following\n  column to the **Connected Chats** table:\n\n  + **Total Consumer Chat Time**. Total time since the chat first connected\n    to a virtual agent or a human agent.",
+        "summary": {
+          "title": "Enhanced Real-time Dashboards",
+          "summary": "New metrics for call and chat duration are now available on the Real-time Calls and Real-time Chats dashboards. These updates provide deeper insights into connected calls and chats, including total consumer talk time and total consumer chat time."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Real-time Calls - Calls Queued dashboard: new Projecting column**\n\nThe **Real-time Calls - Calls Queued** dashboard has a new **Projecting** column\nin the **Call Queued** table. Indicates whether the routing engine (deltacast)\nis currently projecting this queued call to an available agent.",
+        "summary": {
+          "title": "New column added to Calls Queued dashboard",
+          "summary": "The Calls Queued dashboard now includes a 'Projecting' column. This new column indicates if a queued call is currently being projected to an available agent by the routing engine."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where the formatting of numeric values was inconsistent\n  across tiles.\n* Fixed an issue where column headers, filter labels, and tile titles didn't\n  immediately switch to a newly selected language.\n* Fixed an issue where the **Productive Agents** column in the tables of the\n  **Queue Group Performance - All** dashboard didn't display values\n  appropriate to the queue group settings.\n* Fixed an issue in the **Call Queue Metrics (Historical)** Explore where\n  filtering by **Agent Name** without including it as a visible column\n  resulted in zero rows being returned.\n* Fixed an issue that affected calls to a sub-menu that were deflected using\n  **Custom After Hours Deflection** to a message. These calls were incorrectly\n  attributed to the parent menu in the **All Queued Interactions** report.\n* Fixed the effectiveness of the **Direction** filter in the following\n  dashboards:\n\n  + **Agent Performance**. The **Agent Productivity Detailed – Calls** and\n    **Agent Productivity Detailed – Chats** tables correctly reflect the\n    filter setting.\n  + **Real-time Agent Monitoring**. The **Agent Performance** table and\n    historical metrics tiles correctly reflect the filter setting.\n  + **All Interactions – Calls** and **All Interactions – Chats**. The **IVR\n    Interactions** (calls only) and **Virtual Agent Interactions** tables\n    correctly reflect the filter setting.\n* Fixed an issue with the **Queue Performance - Calls** dashboard when short\n  abandons were present in the specified date range. The **Avg Queue Time**\n  column in the **Queue Summary** table incorrectly displayed the raw sum of\n  queue durations instead of a true average.\n* Fixed an issue where team filters didn't apply correctly when generating the\n  **Individual Call History Report** and the **Individual Chat History\n  Report**. This resulted in the inclusion of data from unmanaged queues.\n* Fixed the following issues with the **Real-time Calls - Calls Queued**\n  dashboard:\n\n  + The **Total Queued Now** metric didn't include callers who were returned\n    to the queue after an automated-answer detection miss.\n  + The **Current Max Queue Wait Time (H:M:S)** and **Current Avg Queue Wait\n    Time (H:M:S)** metrics mistakenly measured from a caller's original\n    entry into the queue, rather than from their most recent return to the\n    queue.\n* Fixed an issue where a gray bar appeared at the bottom of the advanced\n  reporting dashboards, preventing a full view of the dashboards.",
+        "summary": {
+          "title": "Reporting and Dashboard Fixes",
+          "summary": "Several issues impacting reporting accuracy and display have been resolved. This includes fixes for data inconsistencies, incorrect metric calculations, and display problems in various dashboards and reports. The effectiveness of filters and the accuracy of queue and agent performance metrics have been improved."
         }
       }
     ],

@@ -9,7 +9,136 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:fixed:0</id>
+    <published>2026-09-18T00:00:00+00:00</published>
+    <updated>2026-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where session metadata and data feed files were missing from
+  external storage for chats that ended before the first message from the
+  end-user.</li>
+<li>Fixed an issue with Kustomer integrations where the caller's information
+  didn't appear on the <strong>Incoming call</strong> page of the call adapter for
+  direct-line inbound calls.</li>
+<li>Fixed an issue with inbound mobile calls where the end-user leg of the call
+  failed, returning <code>Unknown error</code>, while the agent leg connected normally.</li>
+<li>Fixed an agent desktop issue where live call and chat data were lost.</li>
+<li>Fixed an issue that occurred when the receiving agent in an agent-to-agent
+  transfer didn't answer the call. The receiving agent was marked as active on
+  the call indefinitely, even after the call ended.</li>
+<li>Fixed an issue where the <strong>Dismiss</strong> button remained active after an agent
+  sent a message, resulting in a 409 error when clicked.</li>
+<li>Fixed an issue where duplicate "chat finished" events were reported when the
+  end-user left a chat session at nearly the same time that the agent ended
+  the chat session.</li>
+<li>Fixed an issue where deflected calls were missing from the <strong>All Call
+  History</strong> and <strong>Voice Inbound (IVR) History</strong> reports.</li>
+<li>Fixed an issue that occurred when a direct inbound call was deflected to the
+  agent's overcapacity queue, then that queue redirected to a SIP URI. The
+  SIP redirect didn't include the custom SIP headers.</li>
+<li>Fixed an issue where an in-queue announcement interval of several minutes
+  for inbound IVR calls was incorrectly reduced to approximately 60 seconds.</li>
+<li>Fixed an issue where calls that agents were unable to answer due to
+  microphone failures were incorrectly reported as "picked up" in the <strong>Agent
+  Activity Timeline</strong> report.</li>
+<li>Fixed an issue where the system incorrectly marked agents as still being on
+  a call after it ended, which either prevented them from changing their
+  status to <strong>Available</strong> or silently blocked them from receiving new calls.</li>
+<li>Fixed an issue where processing delays for ended calls caused timeout
+  errors.</li>
+<li>Fixed an issue where a sudden spike in calls bypassed capacity limits,
+  causing agent availability to drop below required minimums.</li>
+<li>Fixed an issue where the <strong>Agent Activity Timeline</strong> report incorrectly
+  attributed manual agent logins and logouts to <strong>System</strong> instead of the
+  appropriate agents.</li>
+<li>Fixed an issue where calls with a missed offer became permanently stuck in
+  the queue, preventing them from being routed to other available agents. This
+  occurred with queues configured with multicast fallback disabled.</li>
+<li>Fixed an issue where manual or cascade outbound calls that were canceled
+  before connecting were missing from team-filtered <strong>Call History</strong> reports.</li>
+<li>Fixed an issue that prevented over-capacity deflection from triggering when
+  an agent warm-transferred an outbound call to a queue.</li>
+<li>Fixed an issue where calls weren't correctly routed to the top-ranked agent
+  when using agent priority overrides.</li>
+<li>Fixed an issue where escalated voice calls were incorrectly reported as both
+  answered and abandoned.</li>
+<li>Fixed an issue where calls were missing from the <strong>All Call History</strong> and
+  <strong>Voice Inbound History</strong> reports if the caller hung up before leaving a
+  voicemail.</li>
+<li>Fixed an issue where Salesforce click-to-dial outbound calls were
+  incorrectly associated with the most recent open case instead of the case
+  from which the call was initiated.</li>
+<li>Fixed an issue where email accounts remained disconnected indefinitely after
+  a temporary authentication failure.</li>
+<li>Fixed an issue in Agent Assist where long periods of silence
+  during calls caused connection timeouts, triggering false-positive error
+  alerts.</li>
+<li>Fixed an issue where the <strong>arrow-down-icon</strong> and <strong>arrow-up-icon</strong> arrows
+  on the <strong>Agents &gt; Filter Settings</strong> page were rendered at an
+  incorrect scale.</li>
+<li>Fixed an issue where incoming calls incorrectly created duplicate
+  Salesforce accounts instead of linking to existing accounts.</li>
+<li>Fixed an issue where the outbound call queue list displayed stale
+  information, potentially causing calls to be placed in a queue that didn't
+  match the agent's selected language.</li>
+<li>Fixed an issue where the menus for transferring calls and forwarding calls
+  to voicemail appeared in English instead of the agent's selected language.</li>
+<li>Fixed an issue where the wrap-up disposition panel froze after a network
+  reconnection even though the submission had completed successfully.</li>
+<li>Fixed an issue where outbound, click-to-dial calls initiated in Salesforce
+  incorrectly linked to and reassigned ownership of other cases associated
+  with the same phone number.</li>
+<li>Fixed an issue where the agent adapter went blank and prevented new calls
+  from reaching the agent if an end-user hung up immediately after the
+  agent received the call notification.</li>
+<li>Fixed an issue where calls that failed to connect got stuck in a silent
+  'connecting' state in the call adapter.</li>
+<li>Fixed an issue where Salesforce CRM connections dropped for organizations
+  enforcing OAuth Refresh Token Rotation.</li>
+<li>Fixed an issue where part of an agent's audio was dropped from recordings
+  when a virtual task assistant ran in the middle of a call.</li>
+<li>Fixed a web SDK issue where menus in the pre-chat and chat screens didn't
+  comply with WAI-ARIA keyboard navigation standards.</li>
+<li>Fixed a web SDK issue where screen readers couldn't identify the purpose of
+  the <strong>Text size</strong> options for the chat screen.</li>
+</ul>]]></content>
+    <summary>This release includes fixes for several issues, including problems with call handling, data reporting, integration stability, and user interface elements. These updates ensure more reliable performance and accurate data across the platform.</summary>
+    <title>Fixed: Resolved Various Issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:announcement:1</id>
+    <published>2026-09-18T00:00:00+00:00</published>
+    <updated>2026-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards 6.4</strong></p>
+<p>We've released version 6.4 of the advanced reporting dashboards.</p>]]></content>
+    <summary>Version 6.4 of the advanced reporting dashboards is now available. This update brings enhanced features for better data visualization and analysis.</summary>
+    <title>Announcement: New Reporting Dashboards Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:2</id>
+    <published>2026-09-18T00:00:00+00:00</published>
+    <updated>2026-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Real-time Agent Monitoring dashboard: new Active call ID(s) column</strong></p>
+<p>The <strong>Real-time Agent Monitoring</strong> dashboard now has an <strong>Active Call ID(s)</strong>
+column in the <strong>Live Agent Data</strong> table. The column displays the call ID(s) for
+any call in a connecting, connected, or reconnecting state for the agent. If an
+agent is handling multiple concurrent calls, the call IDs appear in a
+comma-separated list. The <strong>Active Call ID(s)</strong> column reduces the number of
+steps required for supervisors to identify active calls during live monitoring.</p>]]></content>
+    <summary>The Real-time Agent Monitoring dashboard now includes an Active Call ID(s) column. This column shows the call ID(s) for agents' active calls, making it easier for supervisors to identify and track live calls.</summary>
+    <title>Feature: New column in Agent Monitoring dashboard</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:3</id>
     <published>2026-09-18T00:00:00+00:00</published>
     <updated>2026-09-18T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Improved filtering by team</strong></p>
@@ -36,7 +165,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:4</id>
     <published>2026-09-18T00:00:00+00:00</published>
     <updated>2026-09-18T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Improved the Real-time Calls and Real-time Chats dashboards</strong></p>
@@ -68,7 +197,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:5</id>
     <published>2026-09-18T00:00:00+00:00</published>
     <updated>2026-09-18T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Real-time Calls - Calls Queued dashboard: new Projecting column</strong></p>
@@ -82,7 +211,7 @@ is currently projecting this queued call to an available agent.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:feature:6</id>
     <published>2026-09-18T00:00:00+00:00</published>
     <updated>2026-09-18T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Advanced reporting available in French Canadian</strong></p>
@@ -100,7 +229,7 @@ CCAI Platform portal, these dashboards and Explores display in that language.</p
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:fixed:4</id>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-18:fixed:7</id>
     <published>2026-09-18T00:00:00+00:00</published>
     <updated>2026-09-18T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>

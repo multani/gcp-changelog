@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-09-18
+
+### Feature
+
+**Resizable side panels in the Investigation Management experience**
+
+You can now dynamically resize the **Case preview** and **Alert and detection preview** side panels in the revamped **Investigation Management** experience in Google SecOps. You can adjust the panel width using your mouse or keyboard shortcuts to view detailed telemetry, parsed UDM records, and raw logs without navigating away from your main case queue.
+
+To explore the complete triage workflow, see [Investigation and case management overview](https://docs.cloud.google.com/chronicle/docs/secops/investigate/investigation-management/investigation-management-overview).
+
+---
 ## 2026-09-15
 
 ### Feature

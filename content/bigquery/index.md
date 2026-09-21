@@ -1,5 +1,13 @@
 # BigQuery
 
+## 2026-09-21
+
+### Feature
+
+BigQuery [generative AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#locations)
+now support the `gemini-3.8-flash` Gemini model.
+
+---
 ## 2026-09-17
 
 ### Feature

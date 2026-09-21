@@ -1,5 +1,22 @@
 # Dataform
 
+## 2026-09-21
+
+### Feature
+
+The Dataform remote Model Context Protocol (MCP) server now supports pipeline
+authoring in development workspaces and Git repository operations. AI agents can
+create and list workspaces, search and edit files, commit changes and push
+commits to remote Git providers, update repository settings, and organize
+repositories in folders. For more information, see
+[Use the Dataform remote MCP server](https://docs.cloud.google.com/dataform/docs/use-dataform-mcp)
+and the
+[Dataform MCP reference](https://docs.cloud.google.com/dataform/docs/reference/mcp).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-09-17
 
 ### Feature

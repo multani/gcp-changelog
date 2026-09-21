@@ -1,5 +1,21 @@
 # Secure Web Proxy
 
+## 2026-09-17
+
+### Feature
+
+Secure Web Proxy now supports [distributed
+tracing](https://docs.cloud.google.com/secure-web-proxy/docs/distributed-tracing-overview) by integrating
+with [Cloud Trace](https://docs.cloud.google.com/trace/docs/overview). With distributed tracing, you can
+[track the lifecycle of outbound
+requests](https://docs.cloud.google.com/secure-web-proxy/docs/monitor-traces) from internal workloads through
+your Secure Web Proxy gateways to external endpoints. This integration helps
+you detect latency bottlenecks and troubleshoot connectivity errors.
+
+This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-20
 
 ### Feature

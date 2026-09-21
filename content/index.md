@@ -22,6 +22,7 @@
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)
 - [Access Approval](access-approval/index.md)
+- [Access Context Manager](access-context-manager/index.md)
 - [Access Transparency](access-transparency/index.md)
 - [Agent Assist](agent-assist/index.md)
 - [Agent Platform Workbench](agent-platform-workbench/index.md)

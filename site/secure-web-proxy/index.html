@@ -257,6 +257,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Access context manager <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../access-context-manager/" class="dropdown-item">Access Context Manager</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access transparency <b class="caret"></b>
                         </a>
 
@@ -2880,8 +2892,20 @@
 
 
 <h1 id="secure-web-proxy">Secure Web Proxy</h1>
-<h2 id="2026-08-20">2026-08-20</h2>
+<h2 id="2026-09-17">2026-09-17</h2>
 <h3 id="feature">Feature</h3>
+<p>Secure Web Proxy now supports <a href="https://docs.cloud.google.com/secure-web-proxy/docs/distributed-tracing-overview">distributed
+tracing</a> by integrating
+with <a href="https://docs.cloud.google.com/trace/docs/overview">Cloud Trace</a>. With distributed tracing, you can
+<a href="https://docs.cloud.google.com/secure-web-proxy/docs/monitor-traces">track the lifecycle of outbound
+requests</a> from internal workloads through
+your Secure Web Proxy gateways to external endpoints. This integration helps
+you detect latency bottlenecks and troubleshoot connectivity errors.</p>
+<p>This feature is available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
+<hr />
+<h2 id="2026-08-20">2026-08-20</h2>
+<h3 id="feature_1">Feature</h3>
 <p>Secure Web Proxy now supports the <a href="https://docs.cloud.google.com/secure-web-proxy/docs/enable-tls-inspection#ca-pool-intermediate-ca-config">local intermediate CA
 signing</a>
 certificate issuance mode for TLS inspection. By using this mode,
@@ -2898,7 +2922,7 @@ This feature is <a href="https://cloud.google.com/products#product-launch-stages
 available (GA)</a>.</p>
 <hr />
 <h2 id="2026-06-16">2026-06-16</h2>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>You can now use <a href="https://docs.cloud.google.com/secure-web-proxy/docs/policies-and-rules-overview#authorization-policies">authorization
 policies</a>
 to perform identity-based and content-based access control checks when
@@ -2909,7 +2933,7 @@ your workloads to access external destinations. You can also use these
 authorization policies to delegate complex authorization decisions to identity
 and content-scanning services like Service Extensions. This feature is
 supported in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>You can <a href="https://docs.cloud.google.com/secure-web-proxy/docs/use-frontend-mtls-with-swp">integrate frontend mutual TLS (mTLS) with
 Secure Web Proxy</a> to boost
 the security of your applications and workloads.</p>
@@ -2920,7 +2944,7 @@ to enforce granular access control for outbound traffic. This feature is
 supported in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-05-21">2026-05-21</h2>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>When deploying your Secure Web Proxy instance as <a href="https://docs.cloud.google.com/secure-web-proxy/docs/deploy-next-hop">next
 hop</a>, you can now configure the gateway
 to listen on all ports (from <code>1</code> to <code>65535</code>). By using this feature, your proxy
@@ -2930,7 +2954,7 @@ outbound traffic, removing the need to manage specific port lists.</p>
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2025-08-18">2025-08-18</h2>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>Support for <a href="https://cloud.google.com/vpc-service-controls/docs/supported-products#table_swp">VPC Service Controls</a> is <a href="https://cloud.google.com/products/#general-availability">generally available</a> (GA).</p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -2943,6 +2967,9 @@ outbound traffic, removing the need to manage specific port lists.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#secure-web-proxy">Secure Web Proxy</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-17" class="nav-link">2026-09-17</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-08-20" class="nav-link">2026-08-20</a>
           </li>

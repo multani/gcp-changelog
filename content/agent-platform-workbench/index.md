@@ -1,5 +1,98 @@
 # Agent Platform Workbench
 
+## 2026-09-21
+
+### Change
+
+
+
+### 20260920.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Feature
+
+JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.
+
+### Change
+
+
+
+### 20260920.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Feature
+
+JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.
+
+---
+## 2026-09-18
+
+### Change
+
+
+
+### 20260918-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Feature
+
+JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.
+
+### Feature
+
+JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.
+
+### Change
+
+
+
+### 20260918-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Feature
+
+JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.
+
+---
+## 2026-09-14
+
+### Change
+
+
+
+### M150 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+---
 ## 2026-09-13
 
 ### Change

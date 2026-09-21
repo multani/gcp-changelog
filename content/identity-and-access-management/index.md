@@ -1,5 +1,27 @@
 # Identity and Access Management
 
+## 2026-09-16
+
+### Feature
+
+The Cloud OAuth API (`cloudoauth.googleapis.com`) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+The Cloud OAuth API provides dedicated OAuth 2.0 and OpenID Connect (OIDC)
+token exchange and authentication endpoints for Workforce Identity Federation
+integrations. Applications can use the Cloud OAuth API to exchange external
+credentials, authorization codes, or refresh tokens for Google Cloud
+access tokens, or to retrieve authenticated user profile claims and enterprise
+group memberships.
+
+For more information, see the following documentation:
+
+* [Cloud OAuth API overview](https://docs.cloud.google.com/iam/docs/cloud-oauth-api-overview)
+* [Exchange tokens with the Cloud OAuth API](https://docs.cloud.google.com/iam/docs/cloud-oauth-exchange-tokens)
+* [Retrieve user info with the Cloud OAuth API](https://docs.cloud.google.com/iam/docs/cloud-oauth-userinfo)
+* [Retrieve enterprise groups with the Cloud OAuth API](https://docs.cloud.google.com/iam/docs/cloud-oauth-groups)
+
+---
 ## 2026-09-10
 
 ### Feature

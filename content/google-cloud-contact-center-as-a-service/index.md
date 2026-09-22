@@ -1,5 +1,83 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-09-21
+
+### Announcement
+
+**Google Cloud CCaaS prerelease notes 6.15**
+
+Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.
+
+**Important:** The next version of Google Cloud CCaaS could be greater than 6.15.
+
+### Feature
+
+**Remove a user from all teams at once**
+
+Using the new **Remove from all teams** button, you can remove a user from all
+of the teams that they belong to.
+
+Administrators: There's a new **Remove from all teams** button in the **Teams**
+section of the **Edit User** dialog.
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue that led to increased startup latency and errors for mobile
+  and web chat sessions.
+* Fixed an issue where agents were incorrectly demoted to an **Unresponsive**
+  status and removed from the routing pool despite successfully receiving call
+  offers.
+* Fixed an issue where dialed numbers on Twilio BYOC SIP inbound calls were
+  incorrectly formatted with extra digits from the SIP host and port.
+* Fixed an issue that prevented chat transcripts from being generated and
+  delivered for sessions containing structured message content.
+* Fixed an issue where the call adapter incorrectly showed a call as on hold
+  after a carrier failed to process the hold request, leaving the audio
+  channel open between the agent and the customer.
+* Fixed an issue where a failed media download caused the service to restart
+  unexpectedly.
+* Fixed an issue that caused queue-specific wrap-up and disposition settings
+  to reset to global defaults after changing unrelated fields on the **Queue
+  Settings** page.
+* Fixed an issue where machine translation didn't activate for chats that were
+  transferred into a non-English language queue if the session originated with
+  a virtual agent.
+* Fixed an issue where generative knowledge assist answers that contain long
+  URLs were cut off at the edge of the panel.
+* Fixed an issue where queued calls were neither routed to available agents
+  nor offered a callback.
+* Fixed an issue where voicemails were automatically dismissed and marked as
+  read if a playback error occurred.
+* Fixed an issue where agent call recordings were missing or attached to the
+  wrong call record after a virtual agent deflection.
+* Fixed an issue where unanswered DCR calls that were routed using Nexmo
+  disconnected the caller instead of requeuing the call.
+* Fixed an issue that prevented virtual agents from transferring calls to a
+  human-agent queue.
+* Fixed an issue where calls lacking a carrier hangup reason were incorrectly
+  categorized as "customer abandoned", even when the call center didn't answer
+  the call.
+* Fixed an issue where the call event API payload for DCR calls contained
+  incorrect virtual agent parameters.
+* Fixed an issue where custom data from chat interactions wasn't recorded in
+  Salesforce records.
+* Fixed an issue where Mexico time zones were incorrectly applying daylight
+  saving time adjustments.
+* Fixed an issue where agents and end-users were joined to separate
+  conferences, preventing audio communication between them.
+* Fixed an issue where call recording deletion tasks entered an endless loop
+  if the provider didn't return a successful response.
+* Fixed an issue where IVR voice calls didn't send custom wrap-up events to
+  Dialogflow CX under certain configurations.
+* Fixed an issue where a trailing slash in the host URL caused the web SDK to
+  unexpectedly re-enable features that had been previously disabled for
+  specific deployments.
+
+---
 ## 2026-09-18
 
 ### Announcement

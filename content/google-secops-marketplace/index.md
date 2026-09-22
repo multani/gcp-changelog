@@ -1,5 +1,80 @@
 # Google SecOps Marketplace
 
+## 2026-09-16
+
+### Feature
+
+**CyberArk PAM**: Version 13.0
+
+* The following new job has been added:
+
+  + **Sync Integration Credentials Job**
+
+### Feature
+
+**Siemplify**: Version 113.0
+
+* The following new action has been added:
+
+  + **Attach Playbook to Case**
+
+### Change
+
+**Microsoft 365 Defender**: Version 32.0
+
+* Improved the rate limit handling and timestamp updating mechanism in the following connector:
+
+  + **Microsoft 365 Defender - Incidents Connector**
+* Added the `Sync Direction` and `Closed Reason Mapping` parameters for configurable sync direction and improved comment payload handling to skip empty and whitespace comments in the following job:
+
+  + **Sync Alerts**
+
+### Change
+
+**Microsoft Graph Mail**: Version 47.0
+
+* Added support for S/MIME digital signing and encryption in the following action:
+
+  + **Send Email**
+* Added support for HTML URL extraction, attachment exclusions, event field exclusions, and S/MIME signature verification bypass in the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 33.0
+
+* Added the `Unzip File` parameter and improved error handling for failed retrievals in the following action:
+
+  + **Download File**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 24.0
+
+* Added support for S/MIME digital signing and encryption in the following action:
+
+  + **Send Email**
+* Added support for HTML URL extraction, attachment exclusions, event field exclusions, and S/MIME signature verification bypass in the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**CrowdStrike Falcon**: Version 82.0
+
+* Updated the polling logic to prevent host containment flapping in the following actions:
+
+  + **Contain Endpoint**
+  + **Lift Contained Endpoint**
+
+### Change
+
+**Microsoft Graph Security**: Version 29.0
+
+* **Integration**: Added support for Microsoft Sovereign / GCC High environments by adding Login API Root and API Root parameters.
+
+---
 ## 2026-09-09
 
 ### Feature

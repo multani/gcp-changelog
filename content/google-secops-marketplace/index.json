@@ -1,6 +1,72 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-09-16": [
+      {
+        "kind": "Feature",
+        "content": "**CyberArk PAM**: Version 13.0\n\n* The following new job has been added:\n\n  + **Sync Integration Credentials Job**",
+        "summary": {
+          "title": "CyberArk PAM 13.0: New Credential Sync Job",
+          "summary": "CyberArk PAM version 13.0 introduces a new 'Sync Integration Credentials Job'. This enhancement aims to streamline and automate the management of integration credentials within the PAM solution."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Siemplify**: Version 113.0\n\n* The following new action has been added:\n\n  + **Attach Playbook to Case**",
+        "summary": {
+          "title": "New Action: Attach Playbook to Case",
+          "summary": "Siemplify version 113.0 introduces a new action that allows users to directly attach playbooks to cases. This enhancement streamlines incident response workflows by enabling quicker association of relevant automated processes with ongoing investigations."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft 365 Defender**: Version 32.0\n\n* Improved the rate limit handling and timestamp updating mechanism in the following connector:\n\n  + **Microsoft 365 Defender - Incidents Connector**\n* Added the `Sync Direction` and `Closed Reason Mapping` parameters for configurable sync direction and improved comment payload handling to skip empty and whitespace comments in the following job:\n\n  + **Sync Alerts**",
+        "summary": {
+          "title": "Microsoft 365 Defender Update",
+          "summary": "Version 32.0 of Microsoft 365 Defender brings enhancements to the Incidents Connector for better rate limit handling and timestamp updates. The Sync Alerts job now includes configurable sync direction and closed reason mapping, along with improved comment payload handling."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail**: Version 47.0\n\n* Added support for S/MIME digital signing and encryption in the following action:\n\n  + **Send Email**\n* Added support for HTML URL extraction, attachment exclusions, event field exclusions, and S/MIME signature verification bypass in the following connector:\n\n  + **Microsoft Graph Mail Connector**",
+        "summary": {
+          "title": "Microsoft Graph Mail v47.0 Update",
+          "summary": "Version 47.0 of Microsoft Graph Mail introduces S/MIME support for digital signing and encryption in the Send Email action. Additionally, the Microsoft Graph Mail Connector now supports HTML URL extraction, attachment exclusions, event field exclusions, and bypassing S/MIME signature verification."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Palo Alto Cortex XDR**: Version 33.0\n\n* Added the `Unzip File` parameter and improved error handling for failed retrievals in the following action:\n\n  + **Download File**",
+        "summary": {
+          "title": "Updated Cortex XDR Action",
+          "summary": "Version 33.0 of Palo Alto Cortex XDR introduces an 'Unzip File' parameter and enhanced error handling for the 'Download File' action, improving retrieval reliability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail Delegated**: Version 24.0\n\n* Added support for S/MIME digital signing and encryption in the following action:\n\n  + **Send Email**\n* Added support for HTML URL extraction, attachment exclusions, event field exclusions, and S/MIME signature verification bypass in the following connector:\n\n  + **Microsoft Graph Mail Delegated Connector**",
+        "summary": {
+          "title": "Mail delegated updates",
+          "summary": "Microsoft Graph Mail Delegated version 24.0 now supports S/MIME for sending emails and includes enhancements for HTML URL extraction, attachment exclusions, and S/MIME signature verification bypass in its connector. These updates improve security and flexibility for email handling."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**CrowdStrike Falcon**: Version 82.0\n\n* Updated the polling logic to prevent host containment flapping in the following actions:\n\n  + **Contain Endpoint**\n  + **Lift Contained Endpoint**",
+        "summary": {
+          "title": "Endpoint containment logic improved",
+          "summary": "CrowdStrike Falcon version 82.0 introduces an update to the polling logic. This change prevents intermittent host containment issues for the 'Contain Endpoint' and 'Lift Contained Endpoint' actions."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Security**: Version 29.0\n\n* **Integration**: Added support for Microsoft Sovereign / GCC High environments by adding Login API Root and API Root parameters.",
+        "summary": {
+          "title": "Microsoft Graph Security API update",
+          "summary": "Version 29.0 of the Microsoft Graph Security API now supports Microsoft Sovereign / GCC High environments. This update includes new parameters for Login API Root and API Root to facilitate integration."
+        }
+      }
+    ],
     "2026-09-09": [
       {
         "kind": "Feature",

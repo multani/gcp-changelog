@@ -1,5 +1,15 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-22
+
+### Feature
+
+**Anthropic's Claude Opus 5.5**
+
+[Claude Opus 5.5](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/opus-5-5)
+is available in Model Garden.
+
+---
 ## 2026-09-18
 
 ### Feature

@@ -2,9 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Backup and DR</title>
   <subtitle>Changelog for Google Cloud product: Backup and DR</subtitle>
-  <updated>2026-09-16T00:00:00+00:00</updated>
+  <updated>2026-09-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:backup-and-dr</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/backup-and-dr/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-09-21:announcement:0</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Beginning September 21, 2026, the Backup and DR API
+(<code>backupdr.googleapis.com</code>) is automatically enabled in a project whenever any
+of the following APIs are enabled:</p>
+<ul>
+<li>Compute Engine API (<code>compute.googleapis.com</code>)</li>
+<li>Cloud SQL Admin API (<code>sqladmin.googleapis.com</code>)</li>
+<li>AlloyDB for PostgreSQL API (<code>alloydb.googleapis.com</code>)</li>
+<li>Filestore API (<code>file.googleapis.com</code>)</li>
+</ul>
+<p>This update provides seamless access to enhanced backup and disaster recovery
+options with reduced onboarding friction. To avoid conflicts in environments
+where the API was intentionally kept disabled or where strict governance is
+required, automatic enablement respects existing controls:</p>
+<ul>
+<li>Resource usage restrictions configured using the
+  <code>constraints/gcp.restrictServiceUsage</code> organization policy constraint.</li>
+<li>Assured Workloads folders with configured service boundary restrictions.</li>
+<li>Project-level or organization-level opt-out requests submitted before the
+  launch date.</li>
+</ul>]]></content>
+    <summary>Starting September 21, 2026, the Backup and DR API will be automatically enabled when you enable Compute Engine, Cloud SQL Admin, AlloyDB for PostgreSQL, or Filestore APIs. This change simplifies access to backup and disaster recovery capabilities. Existing controls, like organization policies and Assured Workloads, will prevent automatic enablement if configured.</summary>
+    <title>Announcement: Backup and DR API now auto-enabled with other services</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

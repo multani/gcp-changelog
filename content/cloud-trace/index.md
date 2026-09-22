@@ -1,5 +1,37 @@
 # Cloud Trace
 
+## 2026-09-22
+
+### Feature
+
+The following remote Google Cloud MCP servers automatically generate a trace span for
+`tools/call` operations.
+
+* Identity and Access Management
+* Organization Policy Service
+* Policy Analyzer
+* Security Command Center
+* Spanner
+* Unified Maintenance
+
+These spans can help you understand the behavior of
+your agentic applications. For more information, see
+[Investigate MCP calls using Trace](https://docs.cloud.google.com/stackdriver/docs/instrumentation/trace-remote-mcp-server-calls).
+
+### Feature
+
+You can use Terraform to configure resources managed by the Observability API.
+For example, you can use Terraform to create and update observability buckets,
+create links on datasets, and configure default settings.
+
+For more information, see the following documents:
+
+* [Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets)
+* [Create observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/create-observability-buckets)
+* [Update observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/update-observability-buckets)
+* [List buckets and manage datasets](https://docs.cloud.google.com/stackdriver/docs/observability/storage-manage)
+
+---
 ## 2026-09-08
 
 ### Feature

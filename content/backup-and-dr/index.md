@@ -1,5 +1,30 @@
 # Backup and DR
 
+## 2026-09-21
+
+### Announcement
+
+Beginning September 21, 2026, the Backup and DR API
+(`backupdr.googleapis.com`) is automatically enabled in a project whenever any
+of the following APIs are enabled:
+
+* Compute Engine API (`compute.googleapis.com`)
+* Cloud SQL Admin API (`sqladmin.googleapis.com`)
+* AlloyDB for PostgreSQL API (`alloydb.googleapis.com`)
+* Filestore API (`file.googleapis.com`)
+
+This update provides seamless access to enhanced backup and disaster recovery
+options with reduced onboarding friction. To avoid conflicts in environments
+where the API was intentionally kept disabled or where strict governance is
+required, automatic enablement respects existing controls:
+
+* Resource usage restrictions configured using the
+  `constraints/gcp.restrictServiceUsage` organization policy constraint.
+* Assured Workloads folders with configured service boundary restrictions.
+* Project-level or organization-level opt-out requests submitted before the
+  launch date.
+
+---
 ## 2026-09-16
 
 ### Feature

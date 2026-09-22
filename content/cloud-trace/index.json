@@ -1,6 +1,24 @@
 {
   "name": "Cloud Trace",
   "entries": {
+    "2026-09-22": [
+      {
+        "kind": "Feature",
+        "content": "The following remote Google Cloud MCP servers automatically generate a trace span for\n`tools/call` operations.\n\n* Identity and Access Management\n* Organization Policy Service\n* Policy Analyzer\n* Security Command Center\n* Spanner\n* Unified Maintenance\n\nThese spans can help you understand the behavior of\nyour agentic applications. For more information, see\n[Investigate MCP calls using Trace](https://docs.cloud.google.com/stackdriver/docs/instrumentation/trace-remote-mcp-server-calls).",
+        "summary": {
+          "title": "Trace Spans for MCP Operations",
+          "summary": "Remote MCP servers now automatically generate trace spans for `tools/call` operations. These spans, available for services like IAM, Security Command Center, and Spanner, provide insights into agentic application behavior. This feature aids in understanding MCP call performance and debugging."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can use Terraform to configure resources managed by the Observability API.\nFor example, you can use Terraform to create and update observability buckets,\ncreate links on datasets, and configure default settings.\n\nFor more information, see the following documents:\n\n* [Set defaults for observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets)\n* [Create observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/create-observability-buckets)\n* [Update observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/update-observability-buckets)\n* [List buckets and manage datasets](https://docs.cloud.google.com/stackdriver/docs/observability/storage-manage)",
+        "summary": {
+          "title": "Manage Observability with Terraform",
+          "summary": "You can now use Terraform to configure resources managed by the Observability API. This includes creating and updating observability buckets, setting up dataset links, and configuring default settings."
+        }
+      }
+    ],
     "2026-09-08": [
       {
         "kind": "Feature",

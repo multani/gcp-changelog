@@ -2,9 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Trace</title>
   <subtitle>Changelog for Google Cloud product: Cloud Trace</subtitle>
-  <updated>2026-09-08T00:00:00+00:00</updated>
+  <updated>2026-09-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-trace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-trace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-09-22:feature:0</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following remote Google Cloud MCP servers automatically generate a trace span for
+<code>tools/call</code> operations.</p>
+<ul>
+<li>Identity and Access Management</li>
+<li>Organization Policy Service</li>
+<li>Policy Analyzer</li>
+<li>Security Command Center</li>
+<li>Spanner</li>
+<li>Unified Maintenance</li>
+</ul>
+<p>These spans can help you understand the behavior of
+your agentic applications. For more information, see
+<a href="https://docs.cloud.google.com/stackdriver/docs/instrumentation/trace-remote-mcp-server-calls">Investigate MCP calls using Trace</a>.</p>]]></content>
+    <summary>Remote MCP servers now automatically generate trace spans for `tools/call` operations. These spans, available for services like IAM, Security Command Center, and Spanner, provide insights into agentic application behavior. This feature aids in understanding MCP call performance and debugging.</summary>
+    <title>Feature: Trace Spans for MCP Operations</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-trace:2026-09-22:feature:1</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can use Terraform to configure resources managed by the Observability API.
+For example, you can use Terraform to create and update observability buckets,
+create links on datasets, and configure default settings.</p>
+<p>For more information, see the following documents:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/stackdriver/docs/observability/set-defaults-for-observability-buckets">Set defaults for observability buckets</a></li>
+<li><a href="https://docs.cloud.google.com/stackdriver/docs/observability/create-observability-buckets">Create observability buckets</a></li>
+<li><a href="https://docs.cloud.google.com/stackdriver/docs/observability/update-observability-buckets">Update observability buckets</a></li>
+<li><a href="https://docs.cloud.google.com/stackdriver/docs/observability/storage-manage">List buckets and manage datasets</a></li>
+</ul>]]></content>
+    <summary>You can now use Terraform to configure resources managed by the Observability API. This includes creating and updating observability buckets, setting up dataset links, and configuring default settings.</summary>
+    <title>Feature: Manage Observability with Terraform</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

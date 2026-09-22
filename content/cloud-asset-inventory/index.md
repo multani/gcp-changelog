@@ -14,6 +14,24 @@ and [Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/
 * Cloud TPU API
   + `tpu.googleapis.com/QueuedResource`
 
+### Feature
+
+The following resource types are publicly available through the
+[ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets),
+[ListAssets](https://docs.cloud.google.com/asset-inventory/docs/listing-assets),
+[BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory),
+[QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets),
+[Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds),
+[SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources),
+and
+[SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)
+APIs.
+
+* Developer Connect
+  + `developerconnect.googleapis.com/InsightsConfig`
+* Workload Manager
+  + `workloadmanager.googleapis.com/Evaluation`
+
 ---
 ## 2026-09-15
 

@@ -29,6 +29,55 @@ next seven to 21 days. A notification containing the expected date of upgrade wi
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-09-21:announcement:1</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On September 21st, 2026, we released an updated version of Apigee (1-18-0-apigee-5).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and can take four or more business days to be completed across all Google Cloud zones. Your instances might not have the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>A new version of Apigee, 1-18-0-apigee-5, has been released on September 21st, 2026. The rollout is in progress and may take several business days to complete across all zones. Please note that features and fixes will be available once the rollout is fully completed.</summary>
+    <title>Announcement: Apigee Version 1-18-0-apigee-5 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-09-21:security:2</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>560130499</strong> | <strong>Security fix for Apigee.</strong> Fixed a security issue in the Java Callout policy. |
+| <strong>547681234</strong> | <strong>Security fix for Apigee.</strong> Patched <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-69247">CVE-2026-69247</a> by upgrading a third-party library used by the Apigee model-security engine. |
+| <strong>556568593</strong> | <strong>Security fix for Apigee.</strong> Patched <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> by upgrading gRPC. |
+| <strong>N/A</strong> | <strong>Security fix for Apigee infrastructure.</strong> |</p>]]></content>
+    <summary>Apigee has released several security fixes, including updates to the Java Callout policy, third-party libraries, and gRPC. These patches address vulnerabilities and enhance the overall security of the Apigee platform.</summary>
+    <title>Security: Security Updates for Apigee</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-09-21:fixed:3</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>559009293</strong> | Fixed elevated OAuth and VerifyAPIKey latency and Cassandra read load for AppGroup apps by caching the AppGroup entity in the Message Processor runtime, matching Developer-app behavior. |
+| <strong>558888960</strong> | Fixed distributed tracing so that the target URL is included as a span attribute in all scenarios. |
+| <strong>556750755</strong> | Fixed EventFlow (Server-Sent Events) dropping or truncating events that follow a large (greater than 16 KB) event under load on the http-adaptor data path. |
+| <strong>553931019</strong> | The MCP tools/list method now aggregates tools across all approved API products. |
+| <strong>531783017</strong> | Implemented the <code>&lt;Enforce&gt;true&lt;/Enforce&gt;</code> element of SSLInfo for a Syslog endpoint, so that the syslog target's TLS server identity is verified. |
+| <strong>554114419</strong> | Policies can now change request pseudo-headers (for example, :path and :authority) when HTTP/2 is in use. |
+| <strong>548763108</strong> | Blocked outbound HTTP from the Message Processor to Kubernetes-internal targets. |
+| <strong>513032450</strong> | Restored a 15-second TCP keep-alive on the Apigee Connect control-plane connection so that a silently dropped connection recovers in seconds rather than approximately two hours. |
+| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
+    <summary>Several issues have been resolved, including latency in OAuth and VerifyAPIKey, distributed tracing accuracy, and EventFlow event handling. Additionally, updates have been made to MCP tools, Syslog endpoint security, HTTP/2 pseudo-header policies, outbound HTTP blocking, Apigee Connect connection reliability, and underlying infrastructure.</summary>
+    <title>Fixed: Resolved issues and improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:apigee-x:2026-09-10:fixed:0</id>
     <published>2026-09-10T00:00:00+00:00</published>
     <updated>2026-09-10T00:00:00+00:00</updated>

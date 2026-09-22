@@ -2,9 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-09-18T00:00:00+00:00</updated>
+  <updated>2026-09-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-09-21:feature:0</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Transfer ownership of shared agents</strong></p>
+<p>Administrators can transfer ownership of shared employee-made agents to another
+user or to themselves in the Google Cloud console. This is useful when
+reassigning agents created by departing employees or when temporary workers
+hand over agents to full-time staff.</p>
+<p>Key characteristics and requirements include:</p>
+<ul>
+<li><strong>Administrator only:</strong> Only users with the Gemini Enterprise Admin role
+  (<code>roles/discoveryengine.agentspaceAdmin</code> or <code>roles/discoveryengine.admin</code>) can
+  transfer agent ownership. Agent owners cannot transfer ownership unless they
+  are also administrators.</li>
+<li><strong>Shared agents only:</strong> Ownership transfer is supported only for agents that
+  are already shared. Private agents cannot be transferred.</li>
+<li><strong>Single owner:</strong> Each agent has only one owner at a time. When ownership is
+  transferred, the selected user becomes the sole owner, and the previous owner
+  is retained as a permissioned user with the <code>agentUser</code> role.</li>
+<li><strong>Agents with schedules or triggers:</strong> If the transferred agent has a schedule
+  trigger or event trigger, the transfer operation marks them as disabled
+  schedules or events. The new owner must enable it before being able to use
+  the agent.</li>
+<li><strong>Identity formats:</strong> Administrators can transfer ownership to users with
+  Google accounts (using email addresses) or to users in a Workforce Identity
+  Federation (WIF) pool (using workforce identity principal identifiers).</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-agents#transfer-ownership">Transfer agent
+ownership</a>.</p>]]></content>
+    <summary>Administrators can now transfer ownership of shared Gemini Enterprise agents to another user or themselves. This feature simplifies agent management when employees depart or when transitioning responsibilities.</summary>
+    <title>Feature: Transfer ownership of shared agents</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

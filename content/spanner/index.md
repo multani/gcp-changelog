@@ -1,5 +1,21 @@
 # Spanner
 
+## 2026-09-18
+
+### Feature
+
+Spanner supports automatic parameterization of SQL query literals
+to improve query performance, reduce latency, and lower CPU costs.
+Spanner converts literal values hardcoded in CRUD-style queries, such as
+primary key lookups, index lookups, and primary key joins, into query parameters,
+allowing execution plans to be cached and reused to reduce latency and CPU costs.
+
+For more information, see
+[Use query parameters](https://docs.cloud.google.com/spanner/docs/sql-best-practices#query-parameters)
+and statement hints ([GoogleSQL](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/query-syntax#statement_hints)
+and [PostgreSQL](https://docs.cloud.google.com/spanner/docs/reference/postgresql/query-syntax#statement-hints)).
+
+---
 ## 2026-09-17
 
 ### Feature

@@ -9,6 +9,30 @@
           "title": "Apigee Instance Maintenance Update",
           "summary": "Apigee instances configured with maintenance windows are receiving updates to version 1-18-0-apigee-4 starting September 21st, 2026. You will receive a notification with the specific upgrade date within two business days. Instances with specific DNS misconfigurations or outdated Apigee Java Libraries will not be updated."
         }
+      },
+      {
+        "kind": "Announcement",
+        "content": "On September 21st, 2026, we released an updated version of Apigee (1-18-0-apigee-5).\n\n**Note:** Rollouts of this release began today and can take four or more business days to be completed across all Google Cloud zones. Your instances might not have the features and fixes available until the rollout is complete.",
+        "summary": {
+          "title": "Apigee Version 1-18-0-apigee-5 Released",
+          "summary": "A new version of Apigee, 1-18-0-apigee-5, has been released on September 21st, 2026. The rollout is in progress and may take several business days to complete across all zones. Please note that features and fixes will be available once the rollout is fully completed."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **560130499** | **Security fix for Apigee.** Fixed a security issue in the Java Callout policy. |\n| **547681234** | **Security fix for Apigee.** Patched [CVE-2026-69247](https://nvd.nist.gov/vuln/detail/CVE-2026-69247) by upgrading a third-party library used by the Apigee model-security engine. |\n| **556568593** | **Security fix for Apigee.** Patched [CVE-2026-84304](https://nvd.nist.gov/vuln/detail/CVE-2026-84304) by upgrading gRPC. |\n| **N/A** | **Security fix for Apigee infrastructure.** |",
+        "summary": {
+          "title": "Security Updates for Apigee",
+          "summary": "Apigee has released several security fixes, including updates to the Java Callout policy, third-party libraries, and gRPC. These patches address vulnerabilities and enhance the overall security of the Apigee platform."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **559009293** | Fixed elevated OAuth and VerifyAPIKey latency and Cassandra read load for AppGroup apps by caching the AppGroup entity in the Message Processor runtime, matching Developer-app behavior. |\n| **558888960** | Fixed distributed tracing so that the target URL is included as a span attribute in all scenarios. |\n| **556750755** | Fixed EventFlow (Server-Sent Events) dropping or truncating events that follow a large (greater than 16 KB) event under load on the http-adaptor data path. |\n| **553931019** | The MCP tools/list method now aggregates tools across all approved API products. |\n| **531783017** | Implemented the `<Enforce>true</Enforce>` element of SSLInfo for a Syslog endpoint, so that the syslog target's TLS server identity is verified. |\n| **554114419** | Policies can now change request pseudo-headers (for example, :path and :authority) when HTTP/2 is in use. |\n| **548763108** | Blocked outbound HTTP from the Message Processor to Kubernetes-internal targets. |\n| **513032450** | Restored a 15-second TCP keep-alive on the Apigee Connect control-plane connection so that a silently dropped connection recovers in seconds rather than approximately two hours. |\n| **N/A** | Updates to infrastructure and libraries. |",
+        "summary": {
+          "title": "Resolved issues and improvements",
+          "summary": "Several issues have been resolved, including latency in OAuth and VerifyAPIKey, distributed tracing accuracy, and EventFlow event handling. Additionally, updates have been made to MCP tools, Syslog endpoint security, HTTP/2 pseudo-header policies, outbound HTTP blocking, Apigee Connect connection reliability, and underlying infrastructure."
+        }
       }
     ],
     "2026-09-10": [

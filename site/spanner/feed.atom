@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-09-17T00:00:00+00:00</updated>
+  <updated>2026-09-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-09-18:feature:0</id>
+    <published>2026-09-18T00:00:00+00:00</published>
+    <updated>2026-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports automatic parameterization of SQL query literals
+to improve query performance, reduce latency, and lower CPU costs.
+Spanner converts literal values hardcoded in CRUD-style queries, such as
+primary key lookups, index lookups, and primary key joins, into query parameters,
+allowing execution plans to be cached and reused to reduce latency and CPU costs.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/sql-best-practices#query-parameters">Use query parameters</a>
+and statement hints (<a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/query-syntax#statement_hints">GoogleSQL</a>
+and <a href="https://docs.cloud.google.com/spanner/docs/reference/postgresql/query-syntax#statement-hints">PostgreSQL</a>).</p>]]></content>
+    <summary>Spanner now automatically parameterizes SQL query literals, enhancing performance by enabling query plan caching and reuse. This feature reduces latency and CPU costs for common query patterns like primary key lookups and joins.</summary>
+    <title>Feature: Automatic query parameterization</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -4,6 +4,14 @@
 
 ### Feature
 
+The **Query results** pane in the BigQuery Studio query editor lets you
+[view a short history of recent runs for a query](https://docs.cloud.google.com/bigquery/docs/multi-statement-queries#view_multi_statement_query_results), including
+multi-statement queries, without having to navigate to the **Job history** tab.
+This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA).
+
+### Feature
+
 BigQuery [generative AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#locations)
 now support the `gemini-3.8-flash` Gemini model.
 

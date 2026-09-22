@@ -1,5 +1,18 @@
 # AlloyDB for PostgreSQL
 
+## 2026-09-21
+
+### Feature
+
+You can now use the AlloyDB Columnar Engine as a read-optimized, in-memory
+cache for HNSW vector indexes. This feature is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). It accelerates vector search
+performance and increases queries per second (QPS) for vector workloads.
+
+For more information, see
+[Accelerate queries with the Columnar Engine](https://docs.cloud.google.com/alloydb/docs/ai/accelerate-with-ce).
+
+---
 ## 2026-09-11
 
 ### Feature

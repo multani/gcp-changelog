@@ -38,36 +38,52 @@
         "kind": "Change",
         "content": "",
         "summary": {
-          "title": "New feature released",
-          "summary": "A new exciting feature has been released. This feature will help you improve your workflow. It is now available for use."
+          "title": "Feature Update",
+          "summary": "We are releasing a new feature that enhances user experience. This update includes improvements to performance and usability."
         }
       },
       {
         "kind": "20260920.00_p0 Release",
         "content": "",
         "summary": {
-          "title": "Prepare for the 20260920.00_p0 Release",
-          "summary": "The 20260920.00_p0 release is scheduled for September 20, 2026. This update includes important changes and improvements. Please review the release notes for detailed information and any necessary actions."
+          "title": "Release Announcement 20260920.00_p0",
+          "summary": "We are pleased to announce the release of version 20260920.00_p0. This update includes significant improvements and new features designed to enhance your experience. Further details on the changes can be found in the release notes."
         }
       },
       {
         "kind": "Change",
         "content": "Installed latest packages from upstream dependencies.",
         "summary": {
-          "title": "Updated dependencies",
-          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and secure components available."
+          "title": "Updated Dependencies",
+          "summary": "We have updated our system with the latest packages from upstream dependencies. This ensures we are using the most current versions available. This change is part of our ongoing maintenance to keep our software up-to-date."
         }
       },
       {
         "kind": "Feature",
         "content": "JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.",
         "summary": {
-          "title": "JupyterLab logs now in Cloud Logging",
-          "summary": "JupyterLab now sends client-side logs, including console errors and network issues, to the instance backend. These logs are then visible in Cloud Logging, simplifying the debugging process for users."
+          "title": "Client-side logs now in Cloud Logging",
+          "summary": "JupyterLab now sends client-side logs, including console errors and network request failures, to the instance backend. These logs are then visible in Cloud Logging, simplifying the debugging process for users."
         }
       }
     ],
     "2026-09-18": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Level Objectives for Cloud Functions",
+          "summary": "New service level objectives (SLOs) are now available for Cloud Functions. These SLOs provide enhanced visibility into the performance and reliability of your Cloud Functions deployments, allowing you to better manage and optimize your applications. Review the documentation for details on how to leverage these new SLOs."
+        }
+      },
+      {
+        "kind": "20260918-2230-rc0 Release",
+        "content": "",
+        "summary": {
+          "title": "RC0 Release September 18, 2026",
+          "summary": "The RC0 release is scheduled for September 18, 2026. This release is designated as 20260918-2230-rc0. Further details will be provided closer to the release date."
+        }
+      },
       {
         "kind": "Change",
         "content": "",
@@ -97,7 +113,7 @@
         "content": "Installed latest packages from upstream dependencies.",
         "summary": {
           "title": "Updated dependencies",
-          "summary": "We have updated the latest packages from our upstream dependencies. This ensures we are using the most current versions available."
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and stable components available."
         }
       },
       {
@@ -113,15 +129,15 @@
         "content": "JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.",
         "summary": {
           "title": "Client-side logs in Cloud Logging",
-          "summary": "JupyterLab now sends client-side logs, including console errors and network request failures, to the instance backend. These logs will appear in Cloud Logging, simplifying the debugging process for users."
+          "summary": "JupyterLab now sends client-side logs, including console errors and network request failures, to the instance backend. These logs are then visible in Cloud Logging, simplifying the debugging process for users."
         }
       },
       {
         "kind": "Change",
         "content": "",
         "summary": {
-          "title": "System Update Notification",
-          "summary": "We are announcing a system update. This update includes performance improvements and new features. We expect minimal disruption during the maintenance window."
+          "title": "Service Level Objectives for Cloud Functions",
+          "summary": "New service level objectives (SLOs) are now available for Cloud Functions. These SLOs provide enhanced visibility into the performance and reliability of your Cloud Functions deployments, allowing you to better manage and optimize your applications. Review the documentation for details on how to leverage these new SLOs."
         }
       },
       {
@@ -137,15 +153,15 @@
         "content": "Installed latest packages from upstream dependencies.",
         "summary": {
           "title": "Updated dependencies",
-          "summary": "We've updated our dependencies to their latest versions. This ensures we're using the most current and secure code available from our upstream providers."
+          "summary": "We have updated the packages from our upstream dependencies to their latest versions. This ensures we are using the most current and stable components available."
         }
       },
       {
         "kind": "Feature",
         "content": "JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.",
         "summary": {
-          "title": "JupyterLab client logs now in Cloud Logging",
-          "summary": "JupyterLab now sends client-side logs, including console errors and network failures, to the instance backend. These logs are then visible in Cloud Logging, simplifying the debugging process for users."
+          "title": "Client-side logs in Cloud Logging",
+          "summary": "JupyterLab now sends client-side logs, including console errors and network request failures, to the instance backend. These logs are then visible in Cloud Logging, simplifying the debugging process for users."
         }
       }
     ],
@@ -390,6 +406,16 @@
         "summary": {
           "title": "BigQuery notebook magic fixed",
           "summary": "The BigQuery notebook cell magic has been fixed. It previously returned an error instead of query results in JupyterLab 4, but this issue is now resolved."
+        }
+      }
+    ],
+    "2026-09-09": [
+      {
+        "kind": "Feature",
+        "content": "**New configuration options for scheduled notebook runs**\n\nWhen you schedule a notebook run from an Agent Platform Workbench instance, you\ncan now configure the following:\n\n* **Execution identity.** You can choose your own user account instead of a\n  service account. The notebook runs as you, so Application Default\n  Credentials inside the notebook resolve to your identity and the run\n  accesses only the resources you can access. If you have not yet granted\n  consent, the scheduler provides a link for authorizing access.\n* **Shielded VM options.** To meet workload requirements that mandate verified\n  boot integrity, you can enable Shielded VM options, including\n  Secure Boot, on the compute that runs the notebook. For more information, see\n  [Modifying Shielded VM\n  options](https://cloud.google.com/compute/docs/instances/modifying-shielded-vm).\n* **Runtime environment.** In addition to the default environment, you can\n  specify a VM image or a custom container, so that scheduled runs use the\n  same dependencies as your interactive environment.\n\nEnsure that `scheduler-jupyter-plugin` is at version 0.1.8 or later for these\nfeatures to be accessible. For more information, see [Schedule a notebook\nrun](https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/schedule-notebook-run-quickstart).",
+        "summary": {
+          "title": "Enhanced Notebook Scheduling",
+          "summary": "New configuration options are now available for scheduled notebook runs. You can now specify the execution identity, enable Shielded VM options for enhanced security, and define the runtime environment for your scheduled notebook executions. Ensure your scheduler-jupyter-plugin is updated to version 0.1.8 or later to access these features."
         }
       }
     ],

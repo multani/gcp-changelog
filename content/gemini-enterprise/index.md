@@ -1,5 +1,39 @@
 # Gemini Enterprise
 
+## 2026-09-21
+
+### Feature
+
+**Gemini Enterprise: Transfer ownership of shared agents**
+
+Administrators can transfer ownership of shared employee-made agents to another
+user or to themselves in the Google Cloud console. This is useful when
+reassigning agents created by departing employees or when temporary workers
+hand over agents to full-time staff.
+
+Key characteristics and requirements include:
+
+* **Administrator only:** Only users with the Gemini Enterprise Admin role
+  (`roles/discoveryengine.agentspaceAdmin` or `roles/discoveryengine.admin`) can
+  transfer agent ownership. Agent owners cannot transfer ownership unless they
+  are also administrators.
+* **Shared agents only:** Ownership transfer is supported only for agents that
+  are already shared. Private agents cannot be transferred.
+* **Single owner:** Each agent has only one owner at a time. When ownership is
+  transferred, the selected user becomes the sole owner, and the previous owner
+  is retained as a permissioned user with the `agentUser` role.
+* **Agents with schedules or triggers:** If the transferred agent has a schedule
+  trigger or event trigger, the transfer operation marks them as disabled
+  schedules or events. The new owner must enable it before being able to use
+  the agent.
+* **Identity formats:** Administrators can transfer ownership to users with
+  Google accounts (using email addresses) or to users in a Workforce Identity
+  Federation (WIF) pool (using workforce identity principal identifiers).
+
+For more information, see [Transfer agent
+ownership](https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-agents#transfer-ownership).
+
+---
 ## 2026-09-18
 
 ### Feature

@@ -17,6 +17,35 @@ Note: Instances that meet either of the following two criteria will **not** be u
 
 For more information on participating in scheduled maintenance windows, see [Maintenance overview](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance) and [Manage Apigee instance maintenance windows](https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/maintenance-windows).
 
+### Announcement
+
+On September 21st, 2026, we released an updated version of Apigee (1-18-0-apigee-5).
+
+**Note:** Rollouts of this release began today and can take four or more business days to be completed across all Google Cloud zones. Your instances might not have the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **560130499** | **Security fix for Apigee.** Fixed a security issue in the Java Callout policy. |
+| **547681234** | **Security fix for Apigee.** Patched [CVE-2026-69247](https://nvd.nist.gov/vuln/detail/CVE-2026-69247) by upgrading a third-party library used by the Apigee model-security engine. |
+| **556568593** | **Security fix for Apigee.** Patched [CVE-2026-84304](https://nvd.nist.gov/vuln/detail/CVE-2026-84304) by upgrading gRPC. |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **559009293** | Fixed elevated OAuth and VerifyAPIKey latency and Cassandra read load for AppGroup apps by caching the AppGroup entity in the Message Processor runtime, matching Developer-app behavior. |
+| **558888960** | Fixed distributed tracing so that the target URL is included as a span attribute in all scenarios. |
+| **556750755** | Fixed EventFlow (Server-Sent Events) dropping or truncating events that follow a large (greater than 16 KB) event under load on the http-adaptor data path. |
+| **553931019** | The MCP tools/list method now aggregates tools across all approved API products. |
+| **531783017** | Implemented the `<Enforce>true</Enforce>` element of SSLInfo for a Syslog endpoint, so that the syslog target's TLS server identity is verified. |
+| **554114419** | Policies can now change request pseudo-headers (for example, :path and :authority) when HTTP/2 is in use. |
+| **548763108** | Blocked outbound HTTP from the Message Processor to Kubernetes-internal targets. |
+| **513032450** | Restored a 15-second TCP keep-alive on the Apigee Connect control-plane connection so that a silently dropped connection recovers in seconds rather than approximately two hours. |
+| **N/A** | Updates to infrastructure and libraries. |
+
 ---
 ## 2026-09-10
 

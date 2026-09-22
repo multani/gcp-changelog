@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise",
   "entries": {
+    "2026-09-21": [
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: Transfer ownership of shared agents**\n\nAdministrators can transfer ownership of shared employee-made agents to another\nuser or to themselves in the Google Cloud console. This is useful when\nreassigning agents created by departing employees or when temporary workers\nhand over agents to full-time staff.\n\nKey characteristics and requirements include:\n\n* **Administrator only:** Only users with the Gemini Enterprise Admin role\n  (`roles/discoveryengine.agentspaceAdmin` or `roles/discoveryengine.admin`) can\n  transfer agent ownership. Agent owners cannot transfer ownership unless they\n  are also administrators.\n* **Shared agents only:** Ownership transfer is supported only for agents that\n  are already shared. Private agents cannot be transferred.\n* **Single owner:** Each agent has only one owner at a time. When ownership is\n  transferred, the selected user becomes the sole owner, and the previous owner\n  is retained as a permissioned user with the `agentUser` role.\n* **Agents with schedules or triggers:** If the transferred agent has a schedule\n  trigger or event trigger, the transfer operation marks them as disabled\n  schedules or events. The new owner must enable it before being able to use\n  the agent.\n* **Identity formats:** Administrators can transfer ownership to users with\n  Google accounts (using email addresses) or to users in a Workforce Identity\n  Federation (WIF) pool (using workforce identity principal identifiers).\n\nFor more information, see [Transfer agent\nownership](https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-agents#transfer-ownership).",
+        "summary": {
+          "title": "Transfer ownership of shared agents",
+          "summary": "Administrators can now transfer ownership of shared Gemini Enterprise agents to another user or themselves. This feature simplifies agent management when employees depart or when transitioning responsibilities."
+        }
+      }
+    ],
     "2026-09-18": [
       {
         "kind": "Feature",

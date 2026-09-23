@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-09-23": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.35.500-gke.142 is available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.35.500-gke.142 runs on Kubernetes v1.35.8-gke.100.\n\nIf you use a third-party storage vendor, check the listing of our\npreviously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New version of Distributed Cloud for VMware available",
+          "summary": "The latest version of Google Distributed Cloud (software only) for VMware, 1.35.500-gke.142, is now available for download. This release runs on Kubernetes v1.35.8-gke.100. Please note that it may take 7 to 14 days for this new version to be fully available through Google Cloud console, gcloud CLI, and Terraform."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.35.500-gke.142:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Fixed a reconciliation loop issue in `metrics-server` by checking the\n  ConfigMap on the target cluster.\n* Updated `etcd` to `v3.5.33-0-gke.3` to address security vulnerabilities\n  CVE-2026-46595 and CVE-2026-39821.\n* Fixed an issue in split-datacenter environments where cluster validation and\n  diagnostics incorrectly reported missing datastores for PersistentVolumes\n  residing in the user datacenter.\n* Fixed an issue where deleting a cluster stalled indefinitely because node pool\n  controllers recreated machine resources during cluster deletion.",
+        "summary": {
+          "title": "Security and stability updates",
+          "summary": "This release addresses several security vulnerabilities, including updates to etcd and vulnerability fixes. It also resolves issues related to metrics server reconciliation, cluster validation in split-datacenter environments, and cluster deletion stalling."
+        }
+      }
+    ],
     "2026-09-17": [
       {
         "kind": "Announcement",

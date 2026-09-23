@@ -1,5 +1,26 @@
 # Cloud Trace
 
+## 2026-09-23
+
+### Feature
+
+The Google Cloud CLI version 586.0.0 includes the following changes:
+
+* Added `create` and `update` methods to the `gcloud observability buckets`
+  command group.
+* Promoted the `gcloud observability` commands from `BETA` to `GA`.
+
+For more information, see the
+[`gcloud observability`](https://docs.cloud.google.com/sdk/gcloud/reference/observability) reference pages.
+
+For example usage, see the guides that describe how to configure and manage
+observability buckets:
+
+* [Create observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/create-observability-buckets)
+* [Update observability buckets](https://docs.cloud.google.com/stackdriver/docs/observability/update-observability-buckets)
+* [List buckets and manage datasets](https://docs.cloud.google.com/stackdriver/docs/observability/storage-manage)
+
+---
 ## 2026-09-22
 
 ### Feature

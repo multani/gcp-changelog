@@ -8,7 +8,7 @@ Metadata for BigQuery Graph is now automatically ingested and
 searchable in Knowledge Catalog. This feature is available in
 [preview](https://cloud.google.com/products#product-launch-stages).
 
-For more information, see [Knowledge Catalog overview](https://docs.cloud.google.com/dataplex/docs/introduction#ingestions).
+For more information, see [Knowledge Catalog overview](https://docs.cloud.google.com/knowledge-catalog/docs/introduction#ingestions).
 
 ---
 ## 2026-09-07
@@ -18,7 +18,7 @@ For more information, see [Knowledge Catalog overview](https://docs.cloud.google
 Data domains in Knowledge Catalog allow you to logically organize the resources within the enterprise to discover and curate your data at scale.
 This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
 
-For more information, see [About data domains](https://docs.cloud.google.com/dataplex/docs/data-domains-overview).
+For more information, see [About data domains](https://docs.cloud.google.com/knowledge-catalog/docs/data-domains-overview).
 
 ---
 ## 2026-08-26
@@ -32,8 +32,8 @@ You can use the `gcloud alpha dataplex dbt metadata-jobs` command to extract and
 import technical, semantic (MetricFlow), operational, data quality, and lineage
 metadata from dbt Core artifacts into Knowledge Catalog.
 
-For more information, see [Import metadata from dbt Core](https://docs.cloud.google.com/dataplex/docs/dbt-transfer)
-and [About metadata connectors](https://docs.cloud.google.com/dataplex/docs/connectors).
+For more information, see [Import metadata from dbt Core](https://docs.cloud.google.com/knowledge-catalog/docs/dbt-transfer)
+and [About metadata connectors](https://docs.cloud.google.com/knowledge-catalog/docs/connectors).
 
 ---
 ## 2026-07-24

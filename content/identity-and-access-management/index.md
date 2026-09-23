@@ -1,5 +1,24 @@
 # Identity and Access Management
 
+## 2026-09-21
+
+### Feature
+
+You can use System for Cross-domain Identity Management (SCIM) data as the
+source for both user and group claims in the OAuth sign-in workflows for Looker.
+You can also use Extended Session Length (ESL) when using SCIM.
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see the following:
+
+* [SCIM provisioning for Workforce Identity Federation](https://docs.cloud.google.com/iam/docs/workforce-identity-federation-scim)
+* [Configure SCIM with Microsoft Entra ID](https://docs.cloud.google.com/iam/docs/configure-scim-ms-entra)
+* [Configure SCIM with Okta](https://docs.cloud.google.com/iam/docs/configure-scim-okta)
+* [Configure SCIM with OIDC or SAML](https://docs.cloud.google.com/iam/docs/configure-scim-oidc-saml)
+* [Troubleshoot SCIM provisioning and synchronization](https://docs.cloud.google.com/iam/docs/troubleshooting-workforce-identity-federation#scim-signin-users-groups-fail)
+
+---
 ## 2026-09-16
 
 ### Feature

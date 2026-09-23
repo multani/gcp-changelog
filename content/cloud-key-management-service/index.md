@@ -1,5 +1,19 @@
 # Cloud Key Management Service
 
+## 2026-09-23
+
+### Feature
+
+**Preview:** Cloud EKM supports external key migration. For keys with the
+`EXTERNAL` or `EXTERNAL_VPC` protection levels, you can create new key versions
+with either of these protection levels. You can also change the protection level
+of existing external key versions to change how you access your existing key
+material with zero downtime and without reconfiguring your applications.
+
+For more information about migrating external keys, see [Migrate external
+keys](https://docs.cloud.google.com/kms/docs/migrate-external-keys).
+
+---
 ## 2026-08-24
 
 ### Feature

@@ -1,5 +1,13 @@
 # Document AI
 
+## 2026-09-21
+
+### Feature
+
+[Gemini layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) model
+`pretrained-layout-parser-v3.1-lite-2026-08-11`is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-07-17
 
 ### Feature

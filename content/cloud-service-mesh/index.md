@@ -1,5 +1,211 @@
 # Cloud Service Mesh
 
+## 2026-09-23
+
+### Announcement
+
+**1.30.4-asm.14 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.30.4-asm.14 uses Envoy v1.38.5-dev.
+
+### Fixed
+
+Patch 1.30.4-asm.14 contains the fix for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2022-31045](https://nvd.nist.gov/vuln/detail/CVE-2022-31045) | Yes | Yes | Yes | Yes | Medium (9.8) |
+| [CVE-2026-5450](https://nvd.nist.gov/vuln/detail/CVE-2026-5450) | No | No | Yes | No | Low (9.8) |
+| [CVE-2026-84304](https://nvd.nist.gov/vuln/detail/CVE-2026-84304) | Yes | Yes | Yes | Yes | High (8.7) |
+| [CVE-2026-84445](https://nvd.nist.gov/vuln/detail/CVE-2026-84445) | Yes | Yes | Yes | Yes | High (8.7) |
+| [CVE-2026-54371](https://nvd.nist.gov/vuln/detail/CVE-2026-54371) | Yes | Yes | No | Yes | Medium (8.4) |
+| [CVE-2019-14993](https://nvd.nist.gov/vuln/detail/CVE-2019-14993) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2021-39155](https://nvd.nist.gov/vuln/detail/CVE-2021-39155) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2021-39156](https://nvd.nist.gov/vuln/detail/CVE-2021-39156) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2022-23635](https://nvd.nist.gov/vuln/detail/CVE-2022-23635) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2026-5928](https://nvd.nist.gov/vuln/detail/CVE-2026-5928) | No | No | Yes | No | Low (7.5) |
+| [CVE-2026-59847](https://nvd.nist.gov/vuln/detail/CVE-2026-59847) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-59850](https://nvd.nist.gov/vuln/detail/CVE-2026-59850) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-59843](https://nvd.nist.gov/vuln/detail/CVE-2026-59843) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-84303](https://nvd.nist.gov/vuln/detail/CVE-2026-84303) | Yes | Yes | Yes | Yes | Medium (6.3) |
+| [CVE-2026-13757](https://nvd.nist.gov/vuln/detail/CVE-2026-13757) | Yes | Yes | No | Yes | Medium (6.2) |
+| [CVE-2026-18938](https://nvd.nist.gov/vuln/detail/CVE-2026-18938) | Yes | Yes | No | Yes | Medium (6.2) |
+| [CVE-2024-2236](https://nvd.nist.gov/vuln/detail/CVE-2024-2236) | Yes | Yes | No | Yes | Low (5.9) |
+| [CVE-2026-59845](https://nvd.nist.gov/vuln/detail/CVE-2026-59845) | Yes | Yes | No | Yes | Medium (5.9) |
+| [CVE-2026-27171](https://nvd.nist.gov/vuln/detail/CVE-2026-27171) | Yes | Yes | No | Yes | Low (5.5) |
+| [CVE-2026-13595](https://nvd.nist.gov/vuln/detail/CVE-2026-13595) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2026-59848](https://nvd.nist.gov/vuln/detail/CVE-2026-59848) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2025-6141](https://nvd.nist.gov/vuln/detail/CVE-2025-6141) | Yes | Yes | No | Yes | Low (4.8) |
+| [CVE-2026-27456](https://nvd.nist.gov/vuln/detail/CVE-2026-27456) | Yes | Yes | No | Yes | Medium (4.7) |
+| [CVE-2025-5278](https://nvd.nist.gov/vuln/detail/CVE-2025-5278) | Yes | Yes | No | Yes | Low (4.4) |
+| [CVE-2026-59846](https://nvd.nist.gov/vuln/detail/CVE-2026-59846) | Yes | Yes | No | Yes | Medium (3.9) |
+| [CVE-2026-19499](https://nvd.nist.gov/vuln/detail/CVE-2026-19499) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-19542](https://nvd.nist.gov/vuln/detail/CVE-2026-19542) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-41990](https://nvd.nist.gov/vuln/detail/CVE-2026-41990) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-42250](https://nvd.nist.gov/vuln/detail/CVE-2026-42250) | Yes | Yes | No | Yes | Low (0.0) |
+| [CVE-2026-53612](https://nvd.nist.gov/vuln/detail/CVE-2026-53612) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53613](https://nvd.nist.gov/vuln/detail/CVE-2026-53613) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53614](https://nvd.nist.gov/vuln/detail/CVE-2026-53614) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53615](https://nvd.nist.gov/vuln/detail/CVE-2026-53615) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53910](https://nvd.nist.gov/vuln/detail/CVE-2026-53910) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-57062](https://nvd.nist.gov/vuln/detail/CVE-2026-57062) | Yes | Yes | No | Yes | Low (0.0) |
+| [CVE-2026-6368](https://nvd.nist.gov/vuln/detail/CVE-2026-6368) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-6791](https://nvd.nist.gov/vuln/detail/CVE-2026-6791) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-77117](https://nvd.nist.gov/vuln/detail/CVE-2026-77117) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-80489](https://nvd.nist.gov/vuln/detail/CVE-2026-80489) | Yes | Yes | No | Yes | Medium (0.0) |
+
+### Announcement
+
+**1.29.7-asm.18 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh 1.29.7-asm.18 uses Envoy v1.37.6.
+
+### Fixed
+
+Patch 1.29.7-asm.18 contains the fix for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2022-31045](https://nvd.nist.gov/vuln/detail/CVE-2022-31045) | No | Yes | Yes | Yes | Medium (9.8) |
+| [CVE-2026-11856](https://nvd.nist.gov/vuln/detail/CVE-2026-11856) | No | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-5450](https://nvd.nist.gov/vuln/detail/CVE-2026-5450) | No | No | Yes | No | Low (9.8) |
+| [CVE-2026-57433](https://nvd.nist.gov/vuln/detail/CVE-2026-57433) | No | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-12087](https://nvd.nist.gov/vuln/detail/CVE-2026-12087) | No | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-13221](https://nvd.nist.gov/vuln/detail/CVE-2026-13221) | No | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-75803](https://nvd.nist.gov/vuln/detail/CVE-2026-75803) | No | Yes | No | Yes | Low (9.1) |
+| [CVE-2026-84304](https://nvd.nist.gov/vuln/detail/CVE-2026-84304) | No | Yes | Yes | Yes | High (8.7) |
+| [CVE-2026-84445](https://nvd.nist.gov/vuln/detail/CVE-2026-84445) | No | Yes | Yes | Yes | High (8.7) |
+| [CVE-2026-54371](https://nvd.nist.gov/vuln/detail/CVE-2026-54371) | No | Yes | No | Yes | Medium (8.4) |
+| [CVE-2026-57432](https://nvd.nist.gov/vuln/detail/CVE-2026-57432) | No | Yes | No | Yes | Medium (8.4) |
+| [CVE-2019-14993](https://nvd.nist.gov/vuln/detail/CVE-2019-14993) | No | Yes | Yes | Yes | High (7.5) |
+| [CVE-2021-39155](https://nvd.nist.gov/vuln/detail/CVE-2021-39155) | No | Yes | Yes | Yes | High (7.5) |
+| [CVE-2021-39156](https://nvd.nist.gov/vuln/detail/CVE-2021-39156) | No | Yes | Yes | Yes | High (7.5) |
+| [CVE-2022-23635](https://nvd.nist.gov/vuln/detail/CVE-2022-23635) | No | Yes | Yes | Yes | High (7.5) |
+| [CVE-2026-42151](https://nvd.nist.gov/vuln/detail/CVE-2026-42151) | No | Yes | No | No | High (7.5) |
+| [CVE-2026-42154](https://nvd.nist.gov/vuln/detail/CVE-2026-42154) | No | Yes | No | No | High (7.5) |
+| [CVE-2026-48959](https://nvd.nist.gov/vuln/detail/CVE-2026-48959) | No | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-54874](https://nvd.nist.gov/vuln/detail/CVE-2026-54874) | No | Yes | No | Yes | Low (7.5) |
+| [CVE-2026-5928](https://nvd.nist.gov/vuln/detail/CVE-2026-5928) | No | No | Yes | No | Low (7.5) |
+| [CVE-2026-59847](https://nvd.nist.gov/vuln/detail/CVE-2026-59847) | No | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-59850](https://nvd.nist.gov/vuln/detail/CVE-2026-59850) | No | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-63072](https://nvd.nist.gov/vuln/detail/CVE-2026-63072) | No | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-63076](https://nvd.nist.gov/vuln/detail/CVE-2026-63076) | No | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-8932](https://nvd.nist.gov/vuln/detail/CVE-2026-8932) | No | Yes | No | Yes | Low (7.5) |
+| [CVE-2026-9538](https://nvd.nist.gov/vuln/detail/CVE-2026-9538) | No | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-48962](https://nvd.nist.gov/vuln/detail/CVE-2026-48962) | No | Yes | No | Yes | Medium (7.3) |
+| [CVE-2026-7017](https://nvd.nist.gov/vuln/detail/CVE-2026-7017) | No | Yes | No | Yes | Medium (7.1) |
+| [CVE-2026-59843](https://nvd.nist.gov/vuln/detail/CVE-2026-59843) | No | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-84303](https://nvd.nist.gov/vuln/detail/CVE-2026-84303) | No | Yes | Yes | Yes | Medium (6.3) |
+| [CVE-2026-13757](https://nvd.nist.gov/vuln/detail/CVE-2026-13757) | No | Yes | No | Yes | Medium (6.2) |
+| [CVE-2026-18938](https://nvd.nist.gov/vuln/detail/CVE-2026-18938) | No | Yes | No | Yes | Medium (6.2) |
+| [CVE-2026-40179](https://nvd.nist.gov/vuln/detail/CVE-2026-40179) | No | Yes | No | No | Medium (6.1) |
+| [CVE-2026-44903](https://nvd.nist.gov/vuln/detail/CVE-2026-44903) | No | Yes | No | No | Medium (6.1) |
+| [CVE-2024-2236](https://nvd.nist.gov/vuln/detail/CVE-2024-2236) | No | Yes | No | Yes | Low (5.9) |
+| [CVE-2026-59845](https://nvd.nist.gov/vuln/detail/CVE-2026-59845) | No | Yes | No | Yes | Medium (5.9) |
+| [CVE-2026-63074](https://nvd.nist.gov/vuln/detail/CVE-2026-63074) | No | Yes | No | Yes | Low (5.9) |
+| [CVE-2025-15649](https://nvd.nist.gov/vuln/detail/CVE-2025-15649) | No | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-27171](https://nvd.nist.gov/vuln/detail/CVE-2026-27171) | No | Yes | No | Yes | Low (5.5) |
+| [CVE-2026-13595](https://nvd.nist.gov/vuln/detail/CVE-2026-13595) | No | Yes | No | Yes | Medium (5.3) |
+| [CVE-2026-59848](https://nvd.nist.gov/vuln/detail/CVE-2026-59848) | No | Yes | No | Yes | Medium (5.3) |
+| [CVE-2025-6141](https://nvd.nist.gov/vuln/detail/CVE-2025-6141) | No | Yes | No | Yes | Low (4.8) |
+| [CVE-2026-27456](https://nvd.nist.gov/vuln/detail/CVE-2026-27456) | No | Yes | No | Yes | Medium (4.7) |
+| [CVE-2025-5278](https://nvd.nist.gov/vuln/detail/CVE-2025-5278) | No | Yes | No | Yes | Low (4.4) |
+| [CVE-2026-59846](https://nvd.nist.gov/vuln/detail/CVE-2026-59846) | No | Yes | No | Yes | Medium (3.9) |
+| [CVE-2026-19499](https://nvd.nist.gov/vuln/detail/CVE-2026-19499) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-19542](https://nvd.nist.gov/vuln/detail/CVE-2026-19542) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-41990](https://nvd.nist.gov/vuln/detail/CVE-2026-41990) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-42250](https://nvd.nist.gov/vuln/detail/CVE-2026-42250) | No | Yes | No | Yes | Low (0.0) |
+| [CVE-2026-53612](https://nvd.nist.gov/vuln/detail/CVE-2026-53612) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53613](https://nvd.nist.gov/vuln/detail/CVE-2026-53613) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53614](https://nvd.nist.gov/vuln/detail/CVE-2026-53614) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53615](https://nvd.nist.gov/vuln/detail/CVE-2026-53615) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53910](https://nvd.nist.gov/vuln/detail/CVE-2026-53910) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-57062](https://nvd.nist.gov/vuln/detail/CVE-2026-57062) | No | Yes | No | Yes | Low (0.0) |
+| [CVE-2026-6368](https://nvd.nist.gov/vuln/detail/CVE-2026-6368) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-6791](https://nvd.nist.gov/vuln/detail/CVE-2026-6791) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-77117](https://nvd.nist.gov/vuln/detail/CVE-2026-77117) | No | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-80489](https://nvd.nist.gov/vuln/detail/CVE-2026-80489) | No | Yes | No | Yes | Medium (0.0) |
+
+### Announcement
+
+**1.28.10-asm.40 is now available for in-cluster Cloud Service Mesh.**
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade). Cloud Service
+Mesh 1.28.10-asm.40 uses Envoy v1.36.10-dev.
+
+### Fixed
+
+Patch 1.28.10-asm.40 contains the fix for the following platform CVEs:
+
+| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| [CVE-2022-31045](https://nvd.nist.gov/vuln/detail/CVE-2022-31045) | Yes | Yes | Yes | Yes | Medium (9.8) |
+| [CVE-2026-11856](https://nvd.nist.gov/vuln/detail/CVE-2026-11856) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-5450](https://nvd.nist.gov/vuln/detail/CVE-2026-5450) | No | No | Yes | No | Low (9.8) |
+| [CVE-2026-57433](https://nvd.nist.gov/vuln/detail/CVE-2026-57433) | Yes | Yes | No | Yes | Medium (9.8) |
+| [CVE-2026-12087](https://nvd.nist.gov/vuln/detail/CVE-2026-12087) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-13221](https://nvd.nist.gov/vuln/detail/CVE-2026-13221) | Yes | Yes | No | Yes | Medium (9.1) |
+| [CVE-2026-75803](https://nvd.nist.gov/vuln/detail/CVE-2026-75803) | Yes | Yes | No | Yes | Low (9.1) |
+| [CVE-2026-84304](https://nvd.nist.gov/vuln/detail/CVE-2026-84304) | Yes | Yes | Yes | Yes | High (8.7) |
+| [CVE-2026-84445](https://nvd.nist.gov/vuln/detail/CVE-2026-84445) | Yes | Yes | Yes | Yes | High (8.7) |
+| [CVE-2026-54371](https://nvd.nist.gov/vuln/detail/CVE-2026-54371) | Yes | Yes | No | Yes | Medium (8.4) |
+| [CVE-2026-57432](https://nvd.nist.gov/vuln/detail/CVE-2026-57432) | Yes | Yes | No | Yes | Medium (8.4) |
+| [CVE-2019-14993](https://nvd.nist.gov/vuln/detail/CVE-2019-14993) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2021-39155](https://nvd.nist.gov/vuln/detail/CVE-2021-39155) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2021-39156](https://nvd.nist.gov/vuln/detail/CVE-2021-39156) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2022-23635](https://nvd.nist.gov/vuln/detail/CVE-2022-23635) | Yes | Yes | Yes | Yes | High (7.5) |
+| [CVE-2026-42151](https://nvd.nist.gov/vuln/detail/CVE-2026-42151) | No | Yes | No | No | High (7.5) |
+| [CVE-2026-42154](https://nvd.nist.gov/vuln/detail/CVE-2026-42154) | No | Yes | No | No | High (7.5) |
+| [CVE-2026-48959](https://nvd.nist.gov/vuln/detail/CVE-2026-48959) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-54874](https://nvd.nist.gov/vuln/detail/CVE-2026-54874) | Yes | Yes | No | Yes | Low (7.5) |
+| [CVE-2026-5928](https://nvd.nist.gov/vuln/detail/CVE-2026-5928) | No | No | Yes | No | Low (7.5) |
+| [CVE-2026-59847](https://nvd.nist.gov/vuln/detail/CVE-2026-59847) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-59850](https://nvd.nist.gov/vuln/detail/CVE-2026-59850) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-63072](https://nvd.nist.gov/vuln/detail/CVE-2026-63072) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-63076](https://nvd.nist.gov/vuln/detail/CVE-2026-63076) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-8932](https://nvd.nist.gov/vuln/detail/CVE-2026-8932) | Yes | Yes | No | Yes | Low (7.5) |
+| [CVE-2026-9538](https://nvd.nist.gov/vuln/detail/CVE-2026-9538) | Yes | Yes | No | Yes | Medium (7.5) |
+| [CVE-2026-48962](https://nvd.nist.gov/vuln/detail/CVE-2026-48962) | Yes | Yes | No | Yes | Medium (7.3) |
+| [CVE-2026-7017](https://nvd.nist.gov/vuln/detail/CVE-2026-7017) | Yes | Yes | No | Yes | Medium (7.1) |
+| [CVE-2026-59843](https://nvd.nist.gov/vuln/detail/CVE-2026-59843) | Yes | Yes | No | Yes | Medium (6.5) |
+| [CVE-2026-84303](https://nvd.nist.gov/vuln/detail/CVE-2026-84303) | Yes | Yes | Yes | Yes | Medium (6.3) |
+| [CVE-2026-13757](https://nvd.nist.gov/vuln/detail/CVE-2026-13757) | Yes | Yes | No | Yes | Medium (6.2) |
+| [CVE-2026-18938](https://nvd.nist.gov/vuln/detail/CVE-2026-18938) | Yes | Yes | No | Yes | Medium (6.2) |
+| [CVE-2026-40179](https://nvd.nist.gov/vuln/detail/CVE-2026-40179) | No | Yes | No | No | Medium (6.1) |
+| [CVE-2026-44903](https://nvd.nist.gov/vuln/detail/CVE-2026-44903) | No | Yes | No | No | Medium (6.1) |
+| [CVE-2024-2236](https://nvd.nist.gov/vuln/detail/CVE-2024-2236) | Yes | Yes | No | Yes | Low (5.9) |
+| [CVE-2026-59845](https://nvd.nist.gov/vuln/detail/CVE-2026-59845) | Yes | Yes | No | Yes | Medium (5.9) |
+| [CVE-2026-63074](https://nvd.nist.gov/vuln/detail/CVE-2026-63074) | Yes | Yes | No | Yes | Low (5.9) |
+| [CVE-2025-15649](https://nvd.nist.gov/vuln/detail/CVE-2025-15649) | Yes | Yes | No | Yes | Medium (5.5) |
+| [CVE-2026-27171](https://nvd.nist.gov/vuln/detail/CVE-2026-27171) | Yes | Yes | No | Yes | Low (5.5) |
+| [CVE-2026-13595](https://nvd.nist.gov/vuln/detail/CVE-2026-13595) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2026-59848](https://nvd.nist.gov/vuln/detail/CVE-2026-59848) | Yes | Yes | No | Yes | Medium (5.3) |
+| [CVE-2025-6141](https://nvd.nist.gov/vuln/detail/CVE-2025-6141) | Yes | Yes | No | Yes | Low (4.8) |
+| [CVE-2026-27456](https://nvd.nist.gov/vuln/detail/CVE-2026-27456) | Yes | Yes | No | Yes | Medium (4.7) |
+| [CVE-2025-5278](https://nvd.nist.gov/vuln/detail/CVE-2025-5278) | Yes | Yes | No | Yes | Low (4.4) |
+| [CVE-2026-59846](https://nvd.nist.gov/vuln/detail/CVE-2026-59846) | Yes | Yes | No | Yes | Medium (3.9) |
+| [CVE-2026-19499](https://nvd.nist.gov/vuln/detail/CVE-2026-19499) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-19542](https://nvd.nist.gov/vuln/detail/CVE-2026-19542) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-41990](https://nvd.nist.gov/vuln/detail/CVE-2026-41990) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-42250](https://nvd.nist.gov/vuln/detail/CVE-2026-42250) | Yes | Yes | No | Yes | Low (0.0) |
+| [CVE-2026-53612](https://nvd.nist.gov/vuln/detail/CVE-2026-53612) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53613](https://nvd.nist.gov/vuln/detail/CVE-2026-53613) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53614](https://nvd.nist.gov/vuln/detail/CVE-2026-53614) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53615](https://nvd.nist.gov/vuln/detail/CVE-2026-53615) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-53910](https://nvd.nist.gov/vuln/detail/CVE-2026-53910) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-57062](https://nvd.nist.gov/vuln/detail/CVE-2026-57062) | Yes | Yes | No | Yes | Low (0.0) |
+| [CVE-2026-6368](https://nvd.nist.gov/vuln/detail/CVE-2026-6368) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-6791](https://nvd.nist.gov/vuln/detail/CVE-2026-6791) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-77117](https://nvd.nist.gov/vuln/detail/CVE-2026-77117) | Yes | Yes | No | Yes | Medium (0.0) |
+| [CVE-2026-80489](https://nvd.nist.gov/vuln/detail/CVE-2026-80489) | Yes | Yes | No | Yes | Medium (0.0) |
+| [GHSA-gcjh-h69q-9w9g](https://github.com/advisories/GHSA-gcjh-h69q-9w9g) | No | Yes | No | No | Medium (0.0) |
+
+---
 ## 2026-09-01
 
 ### Security
@@ -21,6 +227,8 @@ security vulnerabilities listed in
 You can now download 1.30.4-asm.1 for in-cluster Cloud Service Mesh. It includes
 the features of [Istio 1.30.4](https://istio.io/latest/news/releases/1.30.x/announcing-1.30/) subject to the list of
 [supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+Fixed an issue that caused incomplete telemetry in multicluster deployments for routes configured with TLS or PROXY traffic policies. Refer Istio 1.30 Telemetry Release Notes ([last bullet](https://istio.io/latest/news/releases/1.30.x/announcing-1.30/#telemetry)) for more details on the issue.
 
 The following are not supported:
 

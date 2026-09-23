@@ -1,5 +1,14 @@
 # Network Intelligence Center
 
+## 2026-09-22
+
+### Feature
+
+[Connectivity Tests](https://docs.cloud.google.com/network-intelligence-center/docs/connectivity-tests/concepts/overview)
+analyzes firewall policy rules that use
+[Google Threat Intelligence data](https://docs.cloud.google.com/firewall/docs/threat-intelligence-overview).
+
+---
 ## 2026-09-14
 
 ### Feature

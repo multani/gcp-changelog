@@ -201,6 +201,14 @@
         }
       },
       {
+        "kind": "Feature",
+        "content": "The [Semantic Search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.",
+        "summary": {
+          "title": "Semantic Search is now available",
+          "summary": "Semantic Search, a new feature for finding content, is now generally available. This enhancement improves content discovery within the platform."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "An issue has been fixed where switching to a histogram visualization in an Explore could fail or revert unexpectedly. Additionally, stack resolution on pivoted histograms has been improved. This feature now performs as expected.",
         "summary": {
@@ -314,6 +322,14 @@
       },
       {
         "kind": "Fixed",
+        "content": "An issue has been fixed where [updating the data for a self-service Explore](https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data) that was created from a Google Sheets document with [OAuth authentication](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enabling_oauth_for_uploads) would default to the BigQuery connection's service account credentials instead of using the user's OAuth credentials, which could cause Google Sheets API enablement or permission errors during model refresh. Looker admins now need only to [enable the Google Sheets API](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis) in either the Google Cloud project that's associated with the service account or the Google Cloud project that owns the OAuth client ID credentials, depending on which authentication method is used. This feature now performs as expected.\n\n**Note:** This item was added on September 22, 2026.",
+        "summary": {
+          "title": "Self-service Explore data update issue resolved",
+          "summary": "An issue where self-service Explore data updates would incorrectly use service account credentials instead of user OAuth credentials has been fixed. This resolves potential enablement and permission errors during model refresh. Admins should ensure the Google Sheets API is enabled in the relevant Google Cloud project."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "An issue has been fixed where multi-line prompt text in dashboard chat views caused action buttons (such as the **Thinking** toggle and **Send** button) and vertical scrollbars to be misaligned. This feature now performs as expected.",
         "summary": {
           "title": "Dashboard chat UI fixed",
@@ -386,18 +402,18 @@
       },
       {
         "kind": "Feature",
-        "content": "The [Semantic Search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.",
-        "summary": {
-          "title": "Semantic Search is now available",
-          "summary": "Semantic Search, a new feature for finding content, is now generally available. This enhancement improves content discovery within the platform."
-        }
-      },
-      {
-        "kind": "Feature",
         "content": "Now available in preview, the [Admin Assistant](https://docs.cloud.google.com/looker/docs/gemini-admin-asst) helps you use natural language to manage Looker roles.",
         "summary": {
           "title": "Manage Looker roles with natural language",
           "summary": "Preview is now available for Admin Assistant, a new feature that allows you to manage Looker roles using natural language. This tool simplifies role management by enabling you to interact with Looker using everyday language."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "Some elements of the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics) have been renamed. The dashboard layout and functionality remain the same.\n\nSpecifically, the **Feature** column and **Feature Name** filter value on the **Token usage** tab have each been renamed to **Conversation Surface**. The renaming of this element may cause a potential breaking change for users who have built custom dashboards that reference the **Feature** column or the **Feature Name** filter value.\n\n**Note:** This item was added on September 22, 2026.",
+        "summary": {
+          "title": "Dashboard elements renamed",
+          "summary": "Key elements within the Conversational Analytics System Activity dashboard have been renamed, specifically the 'Feature' column and 'Feature Name' filter to 'Conversation Surface'. This change may impact custom dashboards referencing these elements."
         }
       }
     ],
@@ -564,6 +580,14 @@
         "summary": {
           "title": "Looker supports MongoSQL",
           "summary": "Looker now supports connections to MongoSQL. While existing MongoDB Connector for BI connections are supported, updating to MongoSQL is recommended for improved performance and features. Migration guides are available for a smooth transition."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[Looker Continuous Integration](https://docs.cloud.google.com/looker/docs/continuous-integration) is now supported on Looker (Google Cloud core) instances that use [Private Service Connect](https://docs.cloud.google.com/looker/docs/looker-core-networking-options#psc) private or hybrid connections, instances enabled for [customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/looker/docs/looker-core-cmek), and instances within a [Virtual Private Cloud Service Controls perimeter](https://docs.cloud.google.com/looker/docs/looker-core-vpcsc).\n\n**Note:** This item was added on September 22, 2026.",
+        "summary": {
+          "title": "New Looker CI Capabilities",
+          "summary": "Looker Continuous Integration now supports instances with Private Service Connect, customer-managed encryption keys (CMEK), and VPC Service Controls. This expansion enhances security and network flexibility for Looker deployments."
         }
       }
     ],

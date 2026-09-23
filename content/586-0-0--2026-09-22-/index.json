@@ -1,0 +1,143 @@
+{
+  "name": "586.0.0 (2026-09-22)",
+  "entries": {
+    "2026-09-22": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Google Cloud CLI)** The `google-cloud-sdk` Snap package will be deprecated and removed on September 29th, 2026. Please migrate to the `google-cloud-cli` package. For more information, see <https://docs.cloud.google.com/sdk/docs/downloads-snap>.\n* **(Google Cloud CLI)** Deprecated and removed the bundled Kustomize component ('kustomize') from the Google Cloud CLI. Kustomize is an open-source project and continues to be maintained.\n  + To avoid disruptions, please migrate to standard OSS kustomize installation: <https://kubectl.docs.kubernetes.io/installation/kustomize/> or use the built-in 'kubectl kustomize ...'.\n* **(Google Cloud CLI)** The `gcloud` CLI man pages component (`gcloud-man-pages`) is deprecated and\n  will be removed in release version 590.0.0 on October 20th, 2026. Please use\n  the built-in `--help` flag for full command documentation.\n* **(Cloud Services)** Updated `gcloud services api-keys create` and\n  `gcloud services api-keys update` to require `--api-target` restrictions\n  across GA and beta.\n* **(Cloud Services)** Removed `--clear-restrictions` flag from `gcloud services api-keys update`.\n* **(Kpt)** Removed `kpt` component from the Google Cloud CLI. Kpt is an open-source project and continues to be actively maintained. To avoid disruptions, please migrate to the standard OSS kpt installation: <https://kpt.dev/installation/kpt-cli/>.",
+        "summary": {
+          "title": "gcloud CLI Breaking Changes",
+          "summary": "Several components of the gcloud CLI are being deprecated and removed, including the Snap package, bundled Kustomize and kpt, and gcloud man pages. API key creation and update commands now require `--api-target` restrictions, and the `--clear-restrictions` flag has been removed. Please migrate to alternative installation methods or updated command usage to avoid disruption."
+        }
+      },
+      {
+        "kind": "Apigee",
+        "content": "* Added support for DRZ endpoints for CH region.",
+        "summary": {
+          "title": "DRZ endpoint support for CH region",
+          "summary": "We've added support for DRZ endpoints in the CH region. This enhancement improves resilience and availability for your API traffic."
+        }
+      },
+      {
+        "kind": "Artifact Registry",
+        "content": "* Fixed an issue where Artifact Registry Docker commands failed to parse\n  domain-scoped project URIs.",
+        "summary": {
+          "title": "Artifact Registry command parsing fix",
+          "summary": "An issue preventing Artifact Registry Docker commands from parsing domain-scoped project URIs has been resolved. This ensures smoother operation for users working with Docker images within Artifact Registry."
+        }
+      },
+      {
+        "kind": "Audit Manager",
+        "content": "* Added the `gcloud audit-manager audit-schedules` command group, supporting `create`, `list`, and `update` commands.",
+        "summary": {
+          "title": "New audit schedule commands",
+          "summary": "The Audit Manager now supports creating, listing, and updating audit schedules through the `gcloud audit-manager audit-schedules` command group."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Promoted to GA `gcloud biglake iceberg catalogs create\n  --[federated-catalog-type, glue-aws-region, glue-aws-role-arn,\n  glue-warehouse, namespace-filters, refresh-interval, secret-name,\n  service-directory-name, snowflake-account-identifier, snowflake-role,\n  snowflake-warehouse, unity-catalog-name, unity-instance-name,\n  unity-service-principal-application-id, workday-base-url, workday-tenant]`.\n* Promoted to beta `gcloud beta biglake iceberg catalogs create\n  --[service-directory-name, snowflake-account-identifier, snowflake-role,\n  snowflake-warehouse, workday-base-url, workday-tenant]`.\n* Promoted to beta `gcloud beta biglake iceberg catalogs update\n  --[service-directory-name, snowflake-role]`.\n* Promoted to GA `gcloud biglake iceberg catalogs update --[glue-aws-role-arn,\n  namespace-filters, refresh-interval, secret-name, service-directory-name,\n  snowflake-role, unity-service-principal-application-id]`.",
+        "summary": {
+          "title": "BigLake Iceberg Catalogs Now Generally Available",
+          "summary": "BigLake Iceberg catalogs have been promoted to General Availability, with expanded support for federated catalog types including AWS Glue and Snowflake. Several new options for creating and updating catalogs are now GA, enhancing flexibility and integration capabilities for your data lakehouse."
+        }
+      },
+      {
+        "kind": "Cloud Observability",
+        "content": "* Added `create` and `update` methods to `gcloud observability buckets`\n  command group.\n* Promoted Observability commands from `BETA` to `GA`.",
+        "summary": {
+          "title": "Observability commands now generally available",
+          "summary": "The `gcloud observability buckets` command group now supports `create` and `update` methods. Observability commands have been promoted from Beta to General Availability, offering a more stable and comprehensive experience."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added Custom URL support on `gcloud domain mappings create`, allowing users\n  to create easy to remember and shareable subdomains of the format\n  `<user-chosen>`.cloud.run\n* Added `--clear-key` flag to `gcloud beta run instances deploy` and `gcloud\n  beta run instances update` to remove a previously set CMEK key reference.",
+        "summary": {
+          "title": "Cloud Run Custom Domains and CMEK Management",
+          "summary": "Announcing custom domain support for Cloud Run, enabling users to create memorable subdomains like '<user-chosen>.cloud.run'. Additionally, a new `--clear-key` flag simplifies the management of Customer-Managed Encryption Keys (CMEK) for Cloud Run instances by allowing easy removal of existing key references."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Added `networkTags` property to instance configuration flags in `gcloud beta\n  cluster-director clusters create`.\n* Added existing NFS storage support (`--nfs`, `--add-nfs`, `--remove-nfs`,\n  and `existingNfs` in `--config`) in `gcloud beta cluster-director clusters\n  create/update`.",
+        "summary": {
+          "title": "Cluster Director Enhancements",
+          "summary": "New features for Cluster Director include the addition of network tags to instance configurations and expanded support for existing NFS storage in cluster creation and update operations."
+        }
+      },
+      {
+        "kind": "Compliance Manager",
+        "content": "* Added `gcloud compliance-manager framework-deployments update` to update framework deployments across organization and project scopes.",
+        "summary": {
+          "title": "Update framework deployments",
+          "summary": "You can now update framework deployments across your organization and projects using the new `gcloud compliance-manager framework-deployments update` command. This enhancement provides greater flexibility in managing your compliance frameworks."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `gcloud compute url-maps test-iam-permissions` command to test IAM permissions on a URL map in beta, preview, and GA.\n* Promoted `--request-body-to-exclude` flag of `gcloud compute security-policies rules add-preconfig-waf-exclusion` and `gcloud compute security-policies rules remove-preconfig-waf-exclusion` to GA.\n* Promoted `--request-body-to-exclude` flag of\n  `gcloud compute org-security-policies rules add-preconfig-waf-exclusion`\n  and `gcloud compute org-security-policies rules\n  remove-preconfig-waf-exclusion` to GA.\n* Promoted `--preemption-notice-duration` flag to `gcloud compute instances`\n  in GA.\n* Promoted `gcloud compute interconnects set-name` to beta.",
+        "summary": {
+          "title": "New Compute Engine CLI commands and features",
+          "summary": "We've added a new command to test IAM permissions on URL maps and promoted several flags and commands to GA and beta, including security policy WAF exclusion flags, preemption notice duration for instances, and interconnect naming. These updates enhance the management and security of your Compute Engine resources."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added `--load-parallel-level` flag to `gcloud database-migration\n  migration-jobs create` and `gcloud database-migration migration-jobs update`\n  commands to specify the parallelism level during initial load for MySQL\n  migrations.",
+        "summary": {
+          "title": "Improve initial load performance",
+          "summary": "New flags allow specifying parallelism for faster initial data loads in MySQL migrations. This enhancement aims to reduce migration times and improve efficiency. The `--load-parallel-level` flag is now available for creating and updating migration jobs."
+        }
+      },
+      {
+        "kind": "Design Center",
+        "content": "* Added `gcloud design-center spaces applications recommend-iam-roles` command to get recommended IAM roles for a Design Center application.",
+        "summary": {
+          "title": "IAM Role Recommendations in Design Center",
+          "summary": "A new command, `gcloud design-center spaces applications recommend-iam-roles`, is now available. This command provides recommended IAM roles for your Design Center applications, simplifying access management."
+        }
+      },
+      {
+        "kind": "Developer Knowledge",
+        "content": "* Promoted `gcloud developer-knowledge` commands to GA.",
+        "summary": {
+          "title": "Developer Knowledge GA",
+          "summary": "The `gcloud developer-knowledge` commands are now generally available. This release brings new tools to help developers access and manage knowledge relevant to their projects."
+        }
+      },
+      {
+        "kind": "Device Run",
+        "content": "* Promoted `gcloud device-run sessions submit xctest` to beta.\n* Added `gcloud device-run software-versions list` command to list available test software versions.\n* Added `gcloud device-run software-versions describe` command to describe a specific software version.",
+        "summary": {
+          "title": "Device Run beta update",
+          "summary": "Device Run sessions submit is now in beta. New commands are available to list and describe available software versions for testing."
+        }
+      },
+      {
+        "kind": "Network Connectivity",
+        "content": "* Promoted `--hub`, `--auto-accept`, and `--psc-routing-enabled` flags of `gcloud network-connectivity transports create` to GA.",
+        "summary": {
+          "title": "Network connectivity options now generally available",
+          "summary": "Key flags for creating network transports, including --hub, --auto-accept, and --psc-routing-enabled, have been promoted to General Availability. This simplifies and enhances your network connectivity setup."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Updated `gcloud network-security authz-policies import` to support `DENY_BY_DEFAULT` action.\n* Added `gcloud network-security firewall-endpoints wildfire-verdict-change-requests` commands to the ALPHA and BETA release tracks.",
+        "summary": {
+          "title": "Network Security Updates",
+          "summary": "New features and commands have been added to network security tools, including support for DENY_BY_DEFAULT actions and new commands for firewall endpoint wildfire verdict change requests in ALPHA and BETA tracks."
+        }
+      },
+      {
+        "kind": "Orchestration Pipelines",
+        "content": "* Added `gcloud beta orchestration-pipelines info` command to display information about the orchestration pipelines library and supported model version.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Orchestration Pipelines Info Command",
+          "summary": "A new command, `gcloud beta orchestration-pipelines info`, is now available to display details about the orchestration pipelines library and its supported model versions. This update enhances visibility into the capabilities of the orchestration pipelines feature."
+        }
+      }
+    ]
+  }
+}

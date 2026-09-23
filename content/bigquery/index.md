@@ -1,5 +1,23 @@
 # BigQuery
 
+## 2026-09-22
+
+### Feature
+
+You can now [publish a BigQuery data agent in
+Gemini Enterprise](https://docs.cloud.google.com/bigquery/docs/create-data-agents#publish-agent-gemini-enterprise)
+by registering the agent with Agent Registry and importing it using
+default Google-managed credentials. When
+BigQuery and Gemini Enterprise are in the same
+Google Cloud project and configured with a matching
+[Agent Gateway](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview)
+region, you don't need to manually copy the Agent-to-Agent (A2A) JSON card or
+configure OAuth client credentials.
+
+These features are in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-21
 
 ### Feature

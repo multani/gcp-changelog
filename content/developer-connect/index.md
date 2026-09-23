@@ -1,5 +1,14 @@
 # Developer Connect
 
+## 2026-09-22
+
+### Announcement
+
+The Secret Manager API is no longer enabled by default when you enable
+the Developer Connect API. For Git repository connections, you
+must enable the Secret Manager API explicitly.
+
+---
 ## 2026-09-01
 
 ### Announcement

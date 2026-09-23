@@ -1,5 +1,21 @@
 # Infrastructure Manager
 
+## 2026-09-15
+
+### Feature
+
+Infrastructure Manager now supports the `us` multi-regional location in
+General Availability (GA).
+
+You can now create and manage deployments, revisions, and previews in the
+`us` multi-region (`projects/PROJECT_ID/locations/us`). Deployments in the
+`us` multi-region benefit from metadata and state file redundancy across data
+centers in the United States.
+
+For more information, see
+[Infrastructure Manager locations](https://docs.cloud.google.com/infrastructure-manager/docs/locations).
+
+---
 ## 2026-01-12
 
 ### Change

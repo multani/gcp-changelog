@@ -1,5 +1,14 @@
 # Config Controller
 
+## 2026-09-18
+
+### Change
+
+Config Controller now uses the following versions of its included products:
+
+* Config Connector v1.156.0, [release notes](https://docs.cloud.google.com/config-connector/docs/release-notes#September_08_2026)
+
+---
 ## 2026-08-24
 
 ### Change

@@ -1,5 +1,29 @@
 # Cloud SQL for MySQL
 
+## 2026-09-21
+
+### Feature
+
+The [C4 machine series](https://docs.cloud.google.com/sql/docs/mysql/machine-series-overview.md#c4)
+is available for Cloud SQL for MySQL Enterprise Plus instances in the
+following regions:
+
+* `asia-east2` — Hong Kong
+* `asia-southeast2` — Jakarta, Indonesia
+* `europe-west3` — Frankfurt, Germany
+* `europe-west4` — Eemshaven, Netherlands
+* `europe-west8` — Milan, Italy
+* `us-east5` — Columbus, Ohio, USA
+* `us-south1` — Dallas, Texas, USA
+* `us-west4` — Las Vegas, Nevada, USA
+
+The C4 machine series provides the following benefits:
+
+* Supports fifth and sixth generation Intel Xeon Scalable processors.
+* Offers a price-performance balance that makes it suitable for
+  high-demand workloads.
+
+---
 ## 2026-09-17
 
 ### Change

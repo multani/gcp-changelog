@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 586.0.0 (2026-09-22)</title>
+  <subtitle>Changelog for Google Cloud product: 586.0.0 (2026-09-22)</subtitle>
+  <updated>2026-09-22T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/586-0-0--2026-09-22-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:breaking changes:0</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Google Cloud CLI)</strong> The <code>google-cloud-sdk</code> Snap package will be deprecated and removed on September 29th, 2026. Please migrate to the <code>google-cloud-cli</code> package. For more information, see <a href="https://docs.cloud.google.com/sdk/docs/downloads-snap">https://docs.cloud.google.com/sdk/docs/downloads-snap</a>.</li>
+<li><strong>(Google Cloud CLI)</strong> Deprecated and removed the bundled Kustomize component ('kustomize') from the Google Cloud CLI. Kustomize is an open-source project and continues to be maintained.</li>
+<li>To avoid disruptions, please migrate to standard OSS kustomize installation: <a href="https://kubectl.docs.kubernetes.io/installation/kustomize/">https://kubectl.docs.kubernetes.io/installation/kustomize/</a> or use the built-in 'kubectl kustomize ...'.</li>
+<li><strong>(Google Cloud CLI)</strong> The <code>gcloud</code> CLI man pages component (<code>gcloud-man-pages</code>) is deprecated and
+  will be removed in release version 590.0.0 on October 20th, 2026. Please use
+  the built-in <code>--help</code> flag for full command documentation.</li>
+<li><strong>(Cloud Services)</strong> Updated <code>gcloud services api-keys create</code> and
+  <code>gcloud services api-keys update</code> to require <code>--api-target</code> restrictions
+  across GA and beta.</li>
+<li><strong>(Cloud Services)</strong> Removed <code>--clear-restrictions</code> flag from <code>gcloud services api-keys update</code>.</li>
+<li><strong>(Kpt)</strong> Removed <code>kpt</code> component from the Google Cloud CLI. Kpt is an open-source project and continues to be actively maintained. To avoid disruptions, please migrate to the standard OSS kpt installation: <a href="https://kpt.dev/installation/kpt-cli/">https://kpt.dev/installation/kpt-cli/</a>.</li>
+</ul>]]></content>
+    <summary>Several components of the gcloud CLI are being deprecated and removed, including the Snap package, bundled Kustomize and kpt, and gcloud man pages. API key creation and update commands now require `--api-target` restrictions, and the `--clear-restrictions` flag has been removed. Please migrate to alternative installation methods or updated command usage to avoid disruption.</summary>
+    <title>Breaking Changes: gcloud CLI Breaking Changes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:apigee:1</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for DRZ endpoints for CH region.</li>
+</ul>]]></content>
+    <summary>We've added support for DRZ endpoints in the CH region. This enhancement improves resilience and availability for your API traffic.</summary>
+    <title>Apigee: DRZ endpoint support for CH region</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:artifact registry:2</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where Artifact Registry Docker commands failed to parse
+  domain-scoped project URIs.</li>
+</ul>]]></content>
+    <summary>An issue preventing Artifact Registry Docker commands from parsing domain-scoped project URIs has been resolved. This ensures smoother operation for users working with Docker images within Artifact Registry.</summary>
+    <title>Artifact Registry: Artifact Registry command parsing fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:audit manager:3</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added the <code>gcloud audit-manager audit-schedules</code> command group, supporting <code>create</code>, <code>list</code>, and <code>update</code> commands.</li>
+</ul>]]></content>
+    <summary>The Audit Manager now supports creating, listing, and updating audit schedules through the `gcloud audit-manager audit-schedules` command group.</summary>
+    <title>Audit Manager: New audit schedule commands</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:biglake:4</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted to GA <code>gcloud biglake iceberg catalogs create
+  --[federated-catalog-type, glue-aws-region, glue-aws-role-arn,
+  glue-warehouse, namespace-filters, refresh-interval, secret-name,
+  service-directory-name, snowflake-account-identifier, snowflake-role,
+  snowflake-warehouse, unity-catalog-name, unity-instance-name,
+  unity-service-principal-application-id, workday-base-url, workday-tenant]</code>.</li>
+<li>Promoted to beta <code>gcloud beta biglake iceberg catalogs create
+  --[service-directory-name, snowflake-account-identifier, snowflake-role,
+  snowflake-warehouse, workday-base-url, workday-tenant]</code>.</li>
+<li>Promoted to beta <code>gcloud beta biglake iceberg catalogs update
+  --[service-directory-name, snowflake-role]</code>.</li>
+<li>Promoted to GA <code>gcloud biglake iceberg catalogs update --[glue-aws-role-arn,
+  namespace-filters, refresh-interval, secret-name, service-directory-name,
+  snowflake-role, unity-service-principal-application-id]</code>.</li>
+</ul>]]></content>
+    <summary>BigLake Iceberg catalogs have been promoted to General Availability, with expanded support for federated catalog types including AWS Glue and Snowflake. Several new options for creating and updating catalogs are now GA, enhancing flexibility and integration capabilities for your data lakehouse.</summary>
+    <title>BigLake: BigLake Iceberg Catalogs Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:cloud observability:5</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>create</code> and <code>update</code> methods to <code>gcloud observability buckets</code>
+  command group.</li>
+<li>Promoted Observability commands from <code>BETA</code> to <code>GA</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud observability buckets` command group now supports `create` and `update` methods. Observability commands have been promoted from Beta to General Availability, offering a more stable and comprehensive experience.</summary>
+    <title>Cloud Observability: Observability commands now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:cloud run:6</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added Custom URL support on <code>gcloud domain mappings create</code>, allowing users
+  to create easy to remember and shareable subdomains of the format
+  <code>&lt;user-chosen&gt;</code>.cloud.run</li>
+<li>Added <code>--clear-key</code> flag to <code>gcloud beta run instances deploy</code> and <code>gcloud
+  beta run instances update</code> to remove a previously set CMEK key reference.</li>
+</ul>]]></content>
+    <summary>Announcing custom domain support for Cloud Run, enabling users to create memorable subdomains like '&lt;user-chosen&gt;.cloud.run'. Additionally, a new `--clear-key` flag simplifies the management of Customer-Managed Encryption Keys (CMEK) for Cloud Run instances by allowing easy removal of existing key references.</summary>
+    <title>Cloud Run: Cloud Run Custom Domains and CMEK Management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:cluster director:7</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>networkTags</code> property to instance configuration flags in <code>gcloud beta
+  cluster-director clusters create</code>.</li>
+<li>Added existing NFS storage support (<code>--nfs</code>, <code>--add-nfs</code>, <code>--remove-nfs</code>,
+  and <code>existingNfs</code> in <code>--config</code>) in <code>gcloud beta cluster-director clusters
+  create/update</code>.</li>
+</ul>]]></content>
+    <summary>New features for Cluster Director include the addition of network tags to instance configurations and expanded support for existing NFS storage in cluster creation and update operations.</summary>
+    <title>Cluster Director: Cluster Director Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:compliance manager:8</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud compliance-manager framework-deployments update</code> to update framework deployments across organization and project scopes.</li>
+</ul>]]></content>
+    <summary>You can now update framework deployments across your organization and projects using the new `gcloud compliance-manager framework-deployments update` command. This enhancement provides greater flexibility in managing your compliance frameworks.</summary>
+    <title>Compliance Manager: Update framework deployments</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:compute engine:9</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud compute url-maps test-iam-permissions</code> command to test IAM permissions on a URL map in beta, preview, and GA.</li>
+<li>Promoted <code>--request-body-to-exclude</code> flag of <code>gcloud compute security-policies rules add-preconfig-waf-exclusion</code> and <code>gcloud compute security-policies rules remove-preconfig-waf-exclusion</code> to GA.</li>
+<li>Promoted <code>--request-body-to-exclude</code> flag of
+  <code>gcloud compute org-security-policies rules add-preconfig-waf-exclusion</code>
+  and <code>gcloud compute org-security-policies rules
+  remove-preconfig-waf-exclusion</code> to GA.</li>
+<li>Promoted <code>--preemption-notice-duration</code> flag to <code>gcloud compute instances</code>
+  in GA.</li>
+<li>Promoted <code>gcloud compute interconnects set-name</code> to beta.</li>
+</ul>]]></content>
+    <summary>We've added a new command to test IAM permissions on URL maps and promoted several flags and commands to GA and beta, including security policy WAF exclusion flags, preemption notice duration for instances, and interconnect naming. These updates enhance the management and security of your Compute Engine resources.</summary>
+    <title>Compute Engine: New Compute Engine CLI commands and features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:database migration:10</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--load-parallel-level</code> flag to <code>gcloud database-migration
+  migration-jobs create</code> and <code>gcloud database-migration migration-jobs update</code>
+  commands to specify the parallelism level during initial load for MySQL
+  migrations.</li>
+</ul>]]></content>
+    <summary>New flags allow specifying parallelism for faster initial data loads in MySQL migrations. This enhancement aims to reduce migration times and improve efficiency. The `--load-parallel-level` flag is now available for creating and updating migration jobs.</summary>
+    <title>Database Migration: Improve initial load performance</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:design center:11</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud design-center spaces applications recommend-iam-roles</code> command to get recommended IAM roles for a Design Center application.</li>
+</ul>]]></content>
+    <summary>A new command, `gcloud design-center spaces applications recommend-iam-roles`, is now available. This command provides recommended IAM roles for your Design Center applications, simplifying access management.</summary>
+    <title>Design Center: IAM Role Recommendations in Design Center</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:developer knowledge:12</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud developer-knowledge</code> commands to GA.</li>
+</ul>]]></content>
+    <summary>The `gcloud developer-knowledge` commands are now generally available. This release brings new tools to help developers access and manage knowledge relevant to their projects.</summary>
+    <title>Developer Knowledge: Developer Knowledge GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:device run:13</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud device-run sessions submit xctest</code> to beta.</li>
+<li>Added <code>gcloud device-run software-versions list</code> command to list available test software versions.</li>
+<li>Added <code>gcloud device-run software-versions describe</code> command to describe a specific software version.</li>
+</ul>]]></content>
+    <summary>Device Run sessions submit is now in beta. New commands are available to list and describe available software versions for testing.</summary>
+    <title>Device Run: Device Run beta update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:network connectivity:14</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--hub</code>, <code>--auto-accept</code>, and <code>--psc-routing-enabled</code> flags of <code>gcloud network-connectivity transports create</code> to GA.</li>
+</ul>]]></content>
+    <summary>Key flags for creating network transports, including --hub, --auto-accept, and --psc-routing-enabled, have been promoted to General Availability. This simplifies and enhances your network connectivity setup.</summary>
+    <title>Network Connectivity: Network connectivity options now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:network security:15</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud network-security authz-policies import</code> to support <code>DENY_BY_DEFAULT</code> action.</li>
+<li>Added <code>gcloud network-security firewall-endpoints wildfire-verdict-change-requests</code> commands to the ALPHA and BETA release tracks.</li>
+</ul>]]></content>
+    <summary>New features and commands have been added to network security tools, including support for DENY_BY_DEFAULT actions and new commands for firewall endpoint wildfire verdict change requests in ALPHA and BETA tracks.</summary>
+    <title>Network Security: Network Security Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:586-0-0--2026-09-22-:2026-09-22:orchestration pipelines:16</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta orchestration-pipelines info</code> command to display information about the orchestration pipelines library and supported model version.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>A new command, `gcloud beta orchestration-pipelines info`, is now available to display details about the orchestration pipelines library and its supported model versions. This update enhances visibility into the capabilities of the orchestration pipelines feature.</summary>
+    <title>Orchestration Pipelines: Orchestration Pipelines Info Command</title>
+  </entry>
+</feed>

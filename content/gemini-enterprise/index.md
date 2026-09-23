@@ -1,5 +1,23 @@
 # Gemini Enterprise
 
+## 2026-09-22
+
+### Feature
+
+**Gemini Enterprise: D&B Risk Analytics data store**
+
+The D&B Risk Analytics data store is generally available (GA) in Gemini
+Enterprise. You can connect D&B Risk Analytics to run third-party and
+counterparty risk workflows against your D&B Risk Analytics tenant using
+natural language. Supported workflows include KYB onboarding, counterparty due
+diligence, sanctions and adverse media screening, and supplier and financial
+risk assessment. The data store also supports actions, such as creating an
+entity, starting a screening, and updating tags and custom fields.
+
+For more information, see [Connect D&B Risk
+Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d_b_risk_analytics).
+
+---
 ## 2026-09-21
 
 ### Feature

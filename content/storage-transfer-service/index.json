@@ -1,6 +1,24 @@
 {
   "name": "Storage Transfer Service",
   "entries": {
+    "2026-09-21": [
+      {
+        "kind": "Feature",
+        "content": "Storage Transfer Service now supports filtering Amazon S3 source objects by storage\nclass. You can specify a list of storage classes to include when creating or\nupdating transfer jobs using the Google Cloud console, the `gcloud` CLI, or the\nREST API.\n\nFor more information, see\n[Filter source objects by storage class](https://docs.cloud.google.com/storage-transfer/docs/filtering-by-storage-class).",
+        "summary": {
+          "title": "Filter S3 objects by storage class",
+          "summary": "Storage Transfer Service now allows filtering Amazon S3 source objects by storage class. You can specify which storage classes to include when setting up new or updating existing transfer jobs. This provides more control over data transfers from S3."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Storage Transfer Service now supports filtering source objects using glob patterns\nwith wildcard characters such as `*` and `?`. Glob filtering is supported for\ntransfers from Amazon S3 and Microsoft Azure Blob Storage when configuring transfer jobs using\nthe `gcloud` CLI or the REST API.\n\nFor more information, see\n[Filter source objects using wildcards](https://docs.cloud.google.com/storage-transfer/docs/filter-by-glob-pattern).",
+        "summary": {
+          "title": "New filtering options for Storage Transfer Service",
+          "summary": "Storage Transfer Service now allows filtering source objects using glob patterns with wildcards like * and ?. This feature is available for transfers from Amazon S3 and Microsoft Azure Blob Storage when using the gcloud CLI or the REST API."
+        }
+      }
+    ],
     "2026-05-08": [
       {
         "kind": "Feature",

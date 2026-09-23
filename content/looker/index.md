@@ -117,6 +117,10 @@ Looker 26.16 is expected to include the following changes, features, and fixes.
 
 An issue has been fixed where logging in with a Google Cloud Workforce Identity within an embedded iframe could fail as a result of frame restrictions or because the authentication popup closed before session cookies were established. This feature now performs as expected.
 
+### Feature
+
+The [Semantic Search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.
+
 ### Fixed
 
 An issue has been fixed where switching to a histogram visualization in an Explore could fail or revert unexpectedly. Additionally, stack resolution on pivoted histograms has been improved. This feature now performs as expected.
@@ -175,6 +179,12 @@ The BigQuery High Throughput API has been disabled by default to prevent connect
 
 ### Fixed
 
+An issue has been fixed where [updating the data for a self-service Explore](https://docs.cloud.google.com/looker/docs/exploring-self-service#update-data) that was created from a Google Sheets document with [OAuth authentication](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enabling_oauth_for_uploads) would default to the BigQuery connection's service account credentials instead of using the user's OAuth credentials, which could cause Google Sheets API enablement or permission errors during model refresh. Looker admins now need only to [enable the Google Sheets API](https://docs.cloud.google.com/looker/docs/admin-panel-self-service-explore#enable-apis) in either the Google Cloud project that's associated with the service account or the Google Cloud project that owns the OAuth client ID credentials, depending on which authentication method is used. This feature now performs as expected.
+
+**Note:** This item was added on September 22, 2026.
+
+### Fixed
+
 An issue has been fixed where multi-line prompt text in dashboard chat views caused action buttons (such as the **Thinking** toggle and **Send** button) and vertical scrollbars to be misaligned. This feature now performs as expected.
 
 ### Fixed
@@ -211,11 +221,15 @@ An issue has been fixed where IAM administrators on Looker (Google Cloud core) i
 
 ### Feature
 
-The [Semantic Search](https://docs.cloud.google.com/looker/docs/finding-content#searching_for_saved_content) feature is now generally available.
-
-### Feature
-
 Now available in preview, the [Admin Assistant](https://docs.cloud.google.com/looker/docs/gemini-admin-asst) helps you use natural language to manage Looker roles.
+
+### Breaking
+
+Some elements of the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics) have been renamed. The dashboard layout and functionality remain the same.
+
+Specifically, the **Feature** column and **Feature Name** filter value on the **Token usage** tab have each been renamed to **Conversation Surface**. The renaming of this element may cause a potential breaking change for users who have built custom dashboards that reference the **Feature** column or the **Feature Name** filter value.
+
+**Note:** This item was added on September 22, 2026.
 
 ---
 ## 2026-09-02
@@ -326,6 +340,12 @@ Looker now supports connections to [MongoSQL](https://docs.cloud.google.com/look
 See the MongoDB documentation [Transition from Atlas BI Connector to MongoSQL](https://www.mongodb.com/docs/sql-interface/transition-bic-to-atlas-sql/) and the Looker documentation [Migrating to MongoSQL](https://docs.cloud.google.com/looker/docs/db-config-mongodb#migrating-to-mongosql) for information on migrating from the MongoDB Atlas BI Connector to the newer MongoSQL Interface.
 
 **Note:** One year before the MongoDB Connector for BI is to be deprecated, customers will be sent a service announcement to that effect. The information will also be reflected in product documentation and release notes.
+
+### Feature
+
+[Looker Continuous Integration](https://docs.cloud.google.com/looker/docs/continuous-integration) is now supported on Looker (Google Cloud core) instances that use [Private Service Connect](https://docs.cloud.google.com/looker/docs/looker-core-networking-options#psc) private or hybrid connections, instances enabled for [customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/looker/docs/looker-core-cmek), and instances within a [Virtual Private Cloud Service Controls perimeter](https://docs.cloud.google.com/looker/docs/looker-core-vpcsc).
+
+**Note:** This item was added on September 22, 2026.
 
 ---
 ## 2026-08-18

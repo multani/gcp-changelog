@@ -245,6 +245,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          586 0 0  2026 09 22  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../586-0-0--2026-09-22-/" class="dropdown-item">586.0.0 (2026-09-22)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -2898,6 +2910,20 @@
 <p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/opus-5-5">Claude Opus 5.5</a>
 is available in Model Garden.</p>
 <hr />
+<h2 id="2026-09-21">2026-09-21</h2>
+<h3 id="fixed">Fixed</h3>
+<p><strong>CodeMender updates (v0.9.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Interactive HTML security reports</strong>: Overhauled <code>cm report --format html</code> to provide a modern, interactive dashboard featuring severity metric cards, syntax-highlighted code snippets with line numbers, and an inline patch diff viewer. Added the <code>--open</code> (<code>-o</code>) flag to automatically open the generated report in the default browser.</li>
+<li><strong>Expanded language support</strong>: Added out-of-the-box vulnerability scanning support for C# (<code>.cs</code>), Rust (<code>.rs</code>), Kotlin (<code>.kt</code>, <code>.kts</code>), Ruby (<code>.rb</code>), and PHP (<code>.php</code>) to the default discovery configuration and initialization templates.</li>
+<li><strong>Per-turn latency metrics</strong>: Enhanced <code>cm stats</code> and session exports to report per-turn latency breakdowns, distinguishing time spent waiting on model inference from local tool execution.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Improved session reliability and error recovery during long-running repository scans.</li>
+<li>Fixed local workspace state compatibility issues when upgrading from earlier CLI versions.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>
+<hr />
 <h2 id="2026-09-18">2026-09-18</h2>
 <h3 id="feature_1">Feature</h3>
 <p><strong>xAI's Grok 4.6 is generally available</strong></p>
@@ -2960,7 +2986,7 @@ in Agent Studio.</p>
 <li><strong>Gemini 3.1 Flash-Lite Image (<code>gemini-3.1-flash-lite-image</code>)</strong>: Retirement date is scheduled for June 28, 2027 or later.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions">Gemini model versions and lifecycle</a>.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p><strong>CodeMender updates (v0.7.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3063,7 +3089,7 @@ execute during off-peak hours.</p>
 <li><strong>Deep Research Agent</strong>: Pass <code>service_tier="deferred"</code> in the Python SDK or <code>"service_tier": "deferred"</code> in REST API interaction requests.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling">Autonomous agent scheduling</a>.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p><strong>CodeMender updates (v0.6.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3867,7 +3893,7 @@ more, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-pla
 overview</a>.</p>
 <hr />
 <h2 id="2026-05-06">2026-05-06</h2>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>Fixed an issue with <strong>Audio track extraction (Gemini Embedding 2 only)</strong> where the <code>audio_track_extraction</code> feature did not work. For more information, see <a href="https://issuetracker.google.com/504505771">Issue #504505771</a>.</p>
 <h3 id="change_11">Change</h3>
 <p><strong>Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image</strong></p>
@@ -4241,6 +4267,9 @@ changes:</p>
         <li class="nav-item main"><a class="nav-link" href="#gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</a></li>
           <li class="nav-item">
             <a href="#2026-09-22" class="nav-link">2026-09-22</a>
+          </li>
+          <li class="nav-item">
+            <a href="#2026-09-21" class="nav-link">2026-09-21</a>
           </li>
           <li class="nav-item">
             <a href="#2026-09-18" class="nav-link">2026-09-18</a>

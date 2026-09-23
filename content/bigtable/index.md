@@ -1,5 +1,17 @@
 # Bigtable
 
+## 2026-09-22
+
+### Feature
+
+You can use the Google Cloud console to create and manage protobuf schemas
+(schema bundles) for your Bigtable tables. You can also view schema bundle
+definitions in Bigtable Studio. This feature is [generally available
+(GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Create and manage protobuf
+schemas](https://docs.cloud.google.com/bigtable/docs/create-manage-protobuf-schemas).
+
+---
 ## 2026-09-14
 
 ### Feature

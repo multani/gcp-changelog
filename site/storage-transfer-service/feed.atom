@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Storage Transfer Service</title>
   <subtitle>Changelog for Google Cloud product: Storage Transfer Service</subtitle>
-  <updated>2026-05-08T00:00:00+00:00</updated>
+  <updated>2026-09-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:storage-transfer-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/storage-transfer-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:storage-transfer-service:2026-09-21:feature:0</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Storage Transfer Service now supports filtering Amazon S3 source objects by storage
+class. You can specify a list of storage classes to include when creating or
+updating transfer jobs using the Google Cloud console, the <code>gcloud</code> CLI, or the
+REST API.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/storage-transfer/docs/filtering-by-storage-class">Filter source objects by storage class</a>.</p>]]></content>
+    <summary>Storage Transfer Service now allows filtering Amazon S3 source objects by storage class. You can specify which storage classes to include when setting up new or updating existing transfer jobs. This provides more control over data transfers from S3.</summary>
+    <title>Feature: Filter S3 objects by storage class</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:storage-transfer-service:2026-09-21:feature:1</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Storage Transfer Service now supports filtering source objects using glob patterns
+with wildcard characters such as <code>*</code> and <code>?</code>. Glob filtering is supported for
+transfers from Amazon S3 and Microsoft Azure Blob Storage when configuring transfer jobs using
+the <code>gcloud</code> CLI or the REST API.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/storage-transfer/docs/filter-by-glob-pattern">Filter source objects using wildcards</a>.</p>]]></content>
+    <summary>Storage Transfer Service now allows filtering source objects using glob patterns with wildcards like * and ?. This feature is available for transfers from Amazon S3 and Microsoft Azure Blob Storage when using the gcloud CLI or the REST API.</summary>
+    <title>Feature: New filtering options for Storage Transfer Service</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

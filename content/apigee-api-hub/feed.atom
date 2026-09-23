@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee API hub</title>
   <subtitle>Changelog for Google Cloud product: Apigee API hub</subtitle>
-  <updated>2026-08-12T00:00:00+00:00</updated>
+  <updated>2026-09-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-api-hub</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-api-hub/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-api-hub:2026-09-23:feature:0</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Preview launch of AWS API Gateway and Azure API Management plugins</strong></p>
+<p>API hub now includes two new built-in plugins for ingesting API metadata from third-party gateways: <strong>AWS API Gateway</strong> and <strong>Azure API Management</strong>. Both plugins are in <a href="https://cloud.google.com/products#product-launch-stages">Public Preview</a>, extending API hub's multi-cloud governance to give you a single pane of glass across your Google Cloud, AWS, and Azure APIs.</p>
+<p><strong>What's new</strong></p>
+<ul>
+<li><strong>Automated discovery and onboarding</strong>: Connect your AWS account or Azure API Management (APIM) service and API hub automatically discovers your existing deployed APIs and related metadata.</li>
+<li><strong>Scheduled pull sync</strong>: A full metadata sync runs every 6 hours by default, with reconciliation (upserts and orphan deletes) to keep your catalog in sync with the source gateway.</li>
+<li><strong>Optional near-real-time push sync</strong>: Deploy a customer-managed AWS Lambda function (for AWS API Gateway) or Azure Function (for Azure API Management) to relay control-plane change events to API hub in near real time. For sample deployment code, see the <a href="https://github.com/GoogleCloudPlatform/apigee-samples/tree/main/apihub-plugins">apigee-samples</a> repository.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/apihub/plugins">About plugins</a>, <a href="https://docs.cloud.google.com/apigee/docs/apihub/manage-third-party-plugins">Manage third-party plugins</a>, and <a href="https://docs.cloud.google.com/apigee/docs/apihub/create-plugin-instances">Create a plugin instance</a>.</p>]]></content>
+    <summary>API hub now supports ingesting API metadata from AWS API Gateway and Azure API Management. These new plugins offer automated discovery, scheduled syncs, and optional near-real-time updates, extending multi-cloud governance for your APIs.</summary>
+    <title>Feature: New Plugins for API Management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-api-hub:2026-09-23:feature:1</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Spec-to-deployment linkage and gateway revision tracking in API hub (GA)</strong></p>
+<p>API hub now provides a first-class, bidirectional link between API specifications, operations, and the deployments that serve them, together with native tracking of the underlying gateway revision.</p>
+<p><strong>What's new</strong></p>
+<ul>
+<li><strong>Direct visibility between specs and deployments</strong>: See exactly which API specification and operations are served by a specific deployment, and navigate from a spec to the deployments that serve it.</li>
+<li><strong>Native gateway revision tracking</strong>: Deployments now capture and display their underlying gateway revision (for example, an Apigee proxy revision) via the new <code>source_revision</code> field on the Deployment resource.</li>
+<li><strong>More accurate operation resolution</strong>: When multiple revisions expose overlapping operations (same method and path), API hub associates each operation with its specific specification instead of dropping duplicates.</li>
+<li><strong>Multiple spec revisions per API</strong>: API hub can store multiple revisions of the same spec for an API deployed across different environments.</li>
+</ul>]]></content>
+    <summary>API hub now offers a direct, bidirectional link between API specifications and their deployments, along with automatic tracking of gateway revisions. This enhancement improves visibility, accuracy, and management of your deployed APIs.</summary>
+    <title>Feature: API Hub: Link Specs to Deployments</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

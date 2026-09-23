@@ -1,5 +1,35 @@
 # Apigee API hub
 
+## 2026-09-23
+
+### Feature
+
+**Preview launch of AWS API Gateway and Azure API Management plugins**
+
+API hub now includes two new built-in plugins for ingesting API metadata from third-party gateways: **AWS API Gateway** and **Azure API Management**. Both plugins are in [Public Preview](https://cloud.google.com/products#product-launch-stages), extending API hub's multi-cloud governance to give you a single pane of glass across your Google Cloud, AWS, and Azure APIs.
+
+**What's new**
+
+* **Automated discovery and onboarding**: Connect your AWS account or Azure API Management (APIM) service and API hub automatically discovers your existing deployed APIs and related metadata.
+* **Scheduled pull sync**: A full metadata sync runs every 6 hours by default, with reconciliation (upserts and orphan deletes) to keep your catalog in sync with the source gateway.
+* **Optional near-real-time push sync**: Deploy a customer-managed AWS Lambda function (for AWS API Gateway) or Azure Function (for Azure API Management) to relay control-plane change events to API hub in near real time. For sample deployment code, see the [apigee-samples](https://github.com/GoogleCloudPlatform/apigee-samples/tree/main/apihub-plugins) repository.
+
+For more information, see [About plugins](https://docs.cloud.google.com/apigee/docs/apihub/plugins), [Manage third-party plugins](https://docs.cloud.google.com/apigee/docs/apihub/manage-third-party-plugins), and [Create a plugin instance](https://docs.cloud.google.com/apigee/docs/apihub/create-plugin-instances).
+
+### Feature
+
+**Spec-to-deployment linkage and gateway revision tracking in API hub (GA)**
+
+API hub now provides a first-class, bidirectional link between API specifications, operations, and the deployments that serve them, together with native tracking of the underlying gateway revision.
+
+**What's new**
+
+* **Direct visibility between specs and deployments**: See exactly which API specification and operations are served by a specific deployment, and navigate from a spec to the deployments that serve it.
+* **Native gateway revision tracking**: Deployments now capture and display their underlying gateway revision (for example, an Apigee proxy revision) via the new `source_revision` field on the Deployment resource.
+* **More accurate operation resolution**: When multiple revisions expose overlapping operations (same method and path), API hub associates each operation with its specific specification instead of dropping duplicates.
+* **Multiple spec revisions per API**: API hub can store multiple revisions of the same spec for an API deployed across different environments.
+
+---
 ## 2026-08-12
 
 ### Feature

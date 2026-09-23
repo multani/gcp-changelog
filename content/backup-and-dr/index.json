@@ -1,16 +1,6 @@
 {
   "name": "Backup and DR",
   "entries": {
-    "2026-09-21": [
-      {
-        "kind": "Announcement",
-        "content": "Beginning September 21, 2026, the Backup and DR API\n(`backupdr.googleapis.com`) is automatically enabled in a project whenever any\nof the following APIs are enabled:\n\n* Compute Engine API (`compute.googleapis.com`)\n* Cloud SQL Admin API (`sqladmin.googleapis.com`)\n* AlloyDB for PostgreSQL API (`alloydb.googleapis.com`)\n* Filestore API (`file.googleapis.com`)\n\nThis update provides seamless access to enhanced backup and disaster recovery\noptions with reduced onboarding friction. To avoid conflicts in environments\nwhere the API was intentionally kept disabled or where strict governance is\nrequired, automatic enablement respects existing controls:\n\n* Resource usage restrictions configured using the\n  `constraints/gcp.restrictServiceUsage` organization policy constraint.\n* Assured Workloads folders with configured service boundary restrictions.\n* Project-level or organization-level opt-out requests submitted before the\n  launch date.",
-        "summary": {
-          "title": "Backup and DR API now auto-enabled with other services",
-          "summary": "Starting September 21, 2026, the Backup and DR API will be automatically enabled when you enable Compute Engine, Cloud SQL Admin, AlloyDB for PostgreSQL, or Filestore APIs. This change simplifies access to backup and disaster recovery capabilities. Existing controls, like organization policies and Assured Workloads, will prevent automatic enablement if configured."
-        }
-      }
-    ],
     "2026-09-16": [
       {
         "kind": "Feature",
@@ -48,6 +38,16 @@
         "summary": {
           "title": "Backup Vault Support for CMEK Encrypted Filestore Instances",
           "summary": "Filestore instances encrypted with customer-managed encryption keys (CMEK) now have general availability for backup vault support. This ensures that backups stored in CMEK-enabled backup vaults are encrypted using the backup vault's CMEK key, enhancing data security for your Filestore backups."
+        }
+      }
+    ],
+    "2026-09-21": [
+      {
+        "kind": "Announcement",
+        "content": "Beginning September 21, 2026, the Backup and DR API\n(`backupdr.googleapis.com`) is automatically enabled in a project whenever any\nof the following APIs are enabled:\n\n* Compute Engine API (`compute.googleapis.com`)\n* Cloud SQL Admin API (`sqladmin.googleapis.com`)\n* AlloyDB for PostgreSQL API (`alloydb.googleapis.com`)\n* Filestore API (`file.googleapis.com`)\n\nThis update provides seamless access to enhanced backup and disaster recovery\noptions with reduced onboarding friction. To avoid conflicts in environments\nwhere the API was intentionally kept disabled or where strict governance is\nrequired, automatic enablement respects existing controls:\n\n* Resource usage restrictions configured using the\n  `constraints/gcp.restrictServiceUsage` organization policy constraint.\n* Assured Workloads folders with configured service boundary restrictions.\n* Project-level or organization-level opt-out requests submitted before the\n  launch date.",
+        "summary": {
+          "title": "Backup and DR API now auto-enabled with other services",
+          "summary": "Starting September 21, 2026, the Backup and DR API will be automatically enabled when you enable Compute Engine, Cloud SQL Admin, AlloyDB for PostgreSQL, or Filestore APIs. This change simplifies access to backup and disaster recovery capabilities. Existing controls, like organization policies and Assured Workloads, will prevent automatic enablement if configured."
         }
       }
     ],

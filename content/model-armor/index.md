@@ -1,5 +1,20 @@
 # Model Armor
 
+## 2026-09-24
+
+### Feature
+
+You can use the following filters in Melbourne (`australia-southeast2`)
+with [data residency enforcement enabled](https://docs.cloud.google.com/model-armor/manage-templates#set-data-residency-compliance):
+
+* Prompt injection and jailbreak detection
+* Responsible AI
+
+For information about available Model Armor features for each
+region, see [Supported features by
+region](https://docs.cloud.google.com/model-armor/feature-availability-by-region#supported-by-region).
+
+---
 ## 2026-09-18
 
 ### Feature

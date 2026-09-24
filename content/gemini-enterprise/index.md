@@ -17,6 +17,17 @@ entity, starting a screening, and updating tags and custom fields.
 For more information, see [Connect D&B Risk
 Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d_b_risk_analytics).
 
+### Feature
+
+**Gemini Enterprise: New data store (Preview)**
+
+The following data store is available in Gemini Enterprise:
+
+* [DirectBooker](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/directbooker)
+
+This data store is in Public Preview. For more information, see [Connect a
+third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
 ---
 ## 2026-09-21
 
@@ -56,7 +67,7 @@ ownership](https://docs.cloud.google.com/gemini/enterprise/docs/share-custom-age
 
 ### Feature
 
-**Gemini Enterprise: Support for new actions (Public Preview)**
+**Gemini Enterprise: Support for new actions (Preview)**
 
 Support for new actions is available in Public Preview for the following data stores:
 
@@ -66,6 +77,21 @@ Support for new actions is available in Public Preview for the following data st
 * [Microsoft Teams](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-teams): Add member to channel, create channel, create chat, create schedule, create time off entry, update channel, update channel message, update chat, update chat message, and update time off entry.
 
 For more information, see [Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Preview)**
+
+The following data stores are available in Public Preview in Gemini Enterprise:
+
+* [Adobe Workfront](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/adobe-workfront)
+* [Kiwi.com](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/kiwi-com)
+* [Squarespace](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/squarespace)
+* [Starburst](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/starburst)
+* [Windsor.ai](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/windsor-ai) (actions supported)
+
+You can search and read data from these data stores, and perform actions using
+natural language.
 
 ---
 ## 2026-09-17
@@ -105,6 +131,26 @@ For more information, see the following:
 
 * [Manage web app features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
 * [Chat with the assistant](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat)
+
+---
+## 2026-09-11
+
+### Feature
+
+**Gemini Enterprise: New data stores and support for new actions (Preview)**
+
+The following data stores are available in Public Preview in Gemini Enterprise:
+
+* [D&B Risk Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d-and-b-risk-analytics) (actions supported)
+* [Finnhub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/finnhub)
+* [Grafana](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/grafana)
+
+You can search and read data from these data stores, and perform actions using
+natural language.
+
+Additionally, the following data store supports new actions in Public Preview:
+
+* [Clay](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/clay): Find and enrich company, find and enrich contacts at company, and find and enrich list of contacts.
 
 ---
 ## 2026-09-10

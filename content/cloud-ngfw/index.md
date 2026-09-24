@@ -1,5 +1,23 @@
 # Cloud NGFW
 
+## 2026-09-22
+
+### Feature
+
+You can now use Cloud NGFW Enterprise advanced threat prevention with
+cross-region internal Application Load Balancers
+([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+You can configure global network firewall policies with security profile groups
+to inspect incoming traffic targeting load balancer forwarding rules. This
+integration supports intrusion detection and prevention service and Advanced
+malware sandbox (WildFire) to protect workloads and backends.
+
+For more information, see [Supported load
+balancers](https://docs.cloud.google.com/firewall/docs/about-firewalls#ngfw-load-balancers). This feature is
+available in **Preview**.
+
+---
 ## 2026-08-17
 
 ### Feature

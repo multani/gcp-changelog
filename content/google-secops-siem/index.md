@@ -1,5 +1,23 @@
 # Google SecOps SIEM
 
+## 2026-09-21
+
+### Feature
+
+**Google Cloud organization ID enrichment for direct ingestion**
+
+Google SecOps now automatically enriches logs ingested through [Google Cloud direct ingestion](https://docs.cloud.google.com/chronicle/docs/ingestion/cloud/ingest-gcp-logs#option_1_direct_ingestion) with the originating Google Cloud organization ID.
+
+Previously, direct ingestion did not include organization-level identifiers, requiring customers with multiple Google Cloud organizations to configure separate Cloud Logging sinks and feeds to distinguish their log sources. With this update, you can easily identify the source organization for each event, filter UDM searches, scope detection rules, and configure Data RBAC or [Data Processing Pipelines](https://docs.cloud.google.com/chronicle/docs/ingestion/data-processing-pipeline) across multi-organization environments without additional configuration.
+
+In UDM events, the organization ID appears automatically under `metadata.base_labels.ingestion_kv_labels`:
+
+* `key`: `"gcp_organization_id"`
+* `value`: `"<YOUR_GCP_ORGANIZATION_ID>"`
+
+**Rollout details**: This feature will roll out gradually starting September 21, 2026, through September 28, 2026. No action or configuration change is required.
+
+---
 ## 2026-09-15
 
 ### Feature

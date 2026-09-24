@@ -15,12 +15,12 @@ For the July 2026 data release (published mid-September 2026), we have upgraded 
 
 * Updated annual renewable electricity allocation percentages in accordance with the [2026 Google Environmental Report](https://sustainability.google/google-2026-environmental-report/).
 * Refreshed background annual emissions factors using updated government data sources across Scope 1, Scope 2, and Scope 3. Note that Scope 2 location-based emissions continue to be calculated using hourly greenhouse gas emission factors. Learn more in the [Scope 2 market-based allocation documentation](https://docs.cloud.google.com/carbon-footprint/docs/methodology#market-based-allocation).
-* Incorporated marketplace purchases of Granular Certificates (Type B certificates / T-EACs) covering a significant portion of electricity load across carbon-intensive regions.
+* Incorporated marketplace purchases of Granular Certificates covering a significant portion of electricity load across carbon-intensive regions.
 * Granular certificate purchases represent market-based accounting allocations. Customers seeking to minimize emissions are encouraged to prioritize [regions with high Carbon Free Energy](https://cloud.google.com/sustainability/region-carbon#data) (CFE) scores for new workloads.
 
 **Regional Accounting & Boundary Updates**
 
-* Aligned European clean energy matching boundaries with updated RE100 criteria.
+* Aligned European clean energy matching boundaries with updated [RE100](https://www.theclimategroup.org/hubfs/RE100/PDFs/RE100%20technical%20criteria%20+%20appendices%20(15%20April%202025).pdf#page=28) criteria.
 * Corrected country mapping configurations in annual emission factor scripts to resolve historical data discrepancies across select Asian market regions (e.g., asia-east2, asia-northeast3).
 
 To correct your July emissions data, [schedule a manual data backfill](https://docs.cloud.google.com/bigquery/docs/working-with-transfers#bq_8) for the month.

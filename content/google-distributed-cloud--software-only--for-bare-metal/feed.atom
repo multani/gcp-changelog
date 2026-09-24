@@ -2,9 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-09-17T00:00:00+00:00</updated>
+  <updated>2026-09-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-09-23:announcement:0</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.35.500-gke.142 is available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.35.500-gke.142 runs on Kubernetes v1.35.8-gke.100.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the listing of our
+previously-qualified <a href="https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">storage partners</a>.</p>]]></content>
+    <summary>The latest software-only release for bare metal is now available for download. Please refer to the upgrade guide for instructions. This version runs on Kubernetes v1.35.8-gke.100. Please note that it may take 7-14 days for this version to be available through GKE On-Prem API clients. If you use third-party storage, please check the list of qualified partners.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-09-23:fixed:1</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.500-gke.142:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue where node drain in maintenance mode did not wait for attached storage volumes to detach.</li>
+<li>Fixed <code>BareMetalMachine</code> conditions during maintenance mode transitions.</li>
+<li>Fixed a reconciliation loop issue in <code>metrics-server</code> by checking the
+  ConfigMap on the target cluster.</li>
+<li>Fixed an issue where the status for <code>Ingress</code> resources didn't update when
+  using bundled ingress.</li>
+<li>Updated <code>etcd</code> to <code>v3.5.33-0-gke.3</code> to address security vulnerabilities
+  CVE-2026-46595 and CVE-2026-39821.</li>
+<li>Fixed an issue where deleting a cluster stalled indefinitely because node pool
+  controllers recreated machine resources during deletion.</li>
+<li>Fixed an issue where updating control plane configurations caused multiple API
+  servers to restart simultaneously, leading to transient control plane
+  unavailability.</li>
+<li>Fixed an issue where creating a worker node pool stalled indefinitely while
+  waiting for node machines in the pool to become ready.</li>
+</ul>]]></content>
+    <summary>This release includes fixes for various issues, including security vulnerabilities, node drain behavior, resource management during maintenance, and cluster operations. It also updates etcd to a more secure version.</summary>
+    <title>Fixed: Maintenance release addresses multiple issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

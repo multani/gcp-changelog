@@ -1,5 +1,35 @@
 # Cloud Workstations
 
+## 2026-09-23
+
+### Feature
+
+[Regional endpoints](https://docs.cloud.google.com/vpc/docs/regional-service-endpoints#cloud-workstations)
+(`workstations.REGION.rep.googleapis.com`) are generally
+available (GA) for Cloud Workstations. Regional endpoints help you meet data
+residency requirements by routing and terminating HTTPS connections to the Cloud
+Workstations API within a specific region, keeping data in transit within your
+chosen regional boundary.
+
+Regional endpoints for Cloud Workstations are available in the
+following [regions](https://docs.cloud.google.com/workstations/docs/locations):
+
+* `asia-south1` (Mumbai, India, APAC)
+* `europe-west6` (Zurich, Switzerland, Europe)
+* `us-central1` (Council Bluffs, Iowa, North America)
+* `us-east1` (Moncks Corner, South Carolina, North America)
+* `us-east4` (Ashburn, Virginia, North America)
+* `us-east5` (Columbus, Ohio, North America)
+* `us-west1` (The Dalles, Oregon, North America)
+* `us-west4` (Las Vegas, Nevada, North America)
+
+You can also use the Google Cloud CLI `gcloud workstations` command group to
+configure regional endpoints. For more information, see
+[Regional service endpoints](https://docs.cloud.google.com/vpc/docs/regional-service-endpoints#cloud-workstations)
+and the
+[Cloud Workstations REST API reference](https://docs.cloud.google.com/workstations/docs/reference/rest).
+
+---
 ## 2026-09-14
 
 ### Feature

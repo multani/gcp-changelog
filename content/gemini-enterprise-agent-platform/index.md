@@ -1,5 +1,31 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-24
+
+### Feature
+
+**Gemini 3.8 Live**
+
+Gemini 3.8 Live is generally available. This release introduces improvements in
+voice quality, model reliability, and agent orchestration.
+
+For more information, see the following:
+
+* [Gemini 3.8 Live](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-live)
+* [Gemini Live API overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/live-api)
+
+### Feature
+
+**Muse Spark 1.3 from Meta**
+
+[Muse Spark 1.3 from Meta](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3)
+is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Muse Spark
+1.3 from Meta is a reasoning model trained for agentic workflows and
+competitive coding. It delivers higher first-attempt accuracy, reliable built-in
+tool calling with MCP support, and 1M-token long context for multi-step tasks.
+
+---
 ## 2026-09-22
 
 ### Feature
@@ -83,6 +109,17 @@ This release introduces updates to CodeMender:
   + Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.
 
 For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
+### Feature
+
+**Gemini 3.8 Flash Cyber available in allowlisted GA**
+
+Gemini 3.8 Flash Cyber is a post-training version of the Gemini 3.8 Flash model
+tailored specifically for cybersecurity use cases. Gemini 3.8 Flash Cyber is
+available in GA behind an allowlist.
+
+For more information, see [Gemini 3.8 Flash
+Cyber](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-cyber).
 
 ---
 ## 2026-09-15

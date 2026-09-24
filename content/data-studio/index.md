@@ -1,5 +1,19 @@
 # Data Studio
 
+## 2026-09-24
+
+### Deprecated
+
+**MySQL 5.6 and 5.7 deprecation**
+
+Support for MySQL 5.6 and 5.7 in the MySQL connector is ending:
+
+* Creating new data sources that connect to MySQL 5.6 or 5.7 won't be possible after February 26, 2027.
+* Data sources or reports that use MySQL 5.6 or 5.7 might not properly load data after February 26, 2027.
+
+For more information, see [Connect to MySQL](https://docs.cloud.google.com/data-studio/connect-to-mysql).
+
+---
 ## 2026-08-13
 
 ### Announcement

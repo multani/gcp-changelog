@@ -1,5 +1,20 @@
 # Knowledge Catalog
 
+## 2026-09-24
+
+### Feature
+
+Data products now support configuring a default IAM role in an access group. The
+default role, once configured, is automatically granted on all packaged and
+supported assets in the data product. Data product owners can override the
+default role for individual assets. In addition, the assets table in a data
+product now shows the permission state of each asset (`Applied`, `Failed`, or
+`Unsupported`).
+
+For more information, see [Create data products](https://docs.cloud.google.com/knowledge-catalog/docs/create-data-products)
+and [Manage data products](https://docs.cloud.google.com/knowledge-catalog/docs/manage-data-products).
+
+---
 ## 2026-09-14
 
 ### Feature

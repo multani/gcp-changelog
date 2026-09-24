@@ -1,5 +1,31 @@
 # Google Kubernetes Engine
 
+## 2026-09-24
+
+### Feature
+
+GKE ambient networking is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages) through an
+allowlist.
+
+GKE ambient networking provides a simplified, sidecarless deployment model for a
+service mesh with Layer 4 capabilities. By moving proxy functionality to
+node-level components integrated into
+[GKE Dataplane V2](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/dataplane-v2), ambient
+networking reduces resource overhead, eliminates workload restarts for proxy
+updates, and simplifies mesh lifecycle management.
+
+The Preview release supports single-cluster Layer 4 mesh capabilities using the
+[Gateway API](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/gateway-api), which includes mutual
+TLS (mTLS), service discovery, Layer 4 traffic management, and Layer 4
+telemetry.
+
+For more information, see
+[Ambient networking overview](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/ambient-overview)
+and
+[Prepare GKE ambient networking](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/prepare-ambient-networking).
+
+---
 ## 2026-09-23
 
 ### Change

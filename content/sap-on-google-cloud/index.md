@@ -1,5 +1,23 @@
 # SAP on Google Cloud
 
+## 2026-09-24
+
+### Announcement
+
+**New SAP certifications: X5 series of memory-optimized bare metal machine types**
+
+For use with SAP HANA scale-up (OLAP and OLTP) and SAP NetWeaver workloads, SAP
+has certified the Compute Engine X5 series of memory-optimized bare metal
+machine types with the Intel Granite Rapids CPU platform.
+
+For more information, see:
+
+* For SAP HANA, see
+  [X5 memory-optimized bare metal machine types](https://docs.cloud.google.com/sap/docs/sap-hana-planning-guide#x5-memory-optimized)
+* For SAP NetWeaver, see
+  [X5 memory-optimized bare metal machine types](https://docs.cloud.google.com/sap/docs/certifications-sap-apps#sap-certified-x5)
+
+---
 ## 2026-07-24
 
 ### Announcement

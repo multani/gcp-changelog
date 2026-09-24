@@ -1,5 +1,25 @@
 # Gemini Enterprise
 
+## 2026-09-23
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.8 Flash enabled by default**
+
+Gemini 3.8 Flash is generally available (GA) and enabled by default in the
+Gemini Enterprise app in the `global`, `us`, and `eu` regions. Gemini
+Enterprise administrators can use the **Gemini 3.8 Flash** toggle in feature
+management to turn off the model for their users, or turn it on for unsupported
+in-country regions by confirming the warning dialog to route traffic to the
+`global` endpoint.
+
+For more information, see:
+
+* [Manage web app features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features)
+* [Data residency for Gemini Enterprise Standard and Plus Editions and Gemini
+  Notebook Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations)
+
+---
 ## 2026-09-22
 
 ### Feature

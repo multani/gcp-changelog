@@ -1,5 +1,12 @@
 # Memorystore for Valkey
 
+## 2026-09-24
+
+### Feature
+
+[Support](https://docs.cloud.google.com/memorystore/docs/valkey/supported-versions) for version 9.1 of Valkey is [generally available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-18
 
 ### Feature

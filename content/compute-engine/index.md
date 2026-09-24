@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-09-24
+
+### Feature
+
+**Preview**: To protect standard snapshots from accidental or malicious
+deletion, Compute Engine retains deleted snapshots in the *recycle bin* for
+three days before permanently erasing the snapshots.
+
+For more information, see
+[Retain deleted resources in the recycle bin](https://docs.cloud.google.com/compute/docs/disks/retain-deleted-resources).
+
+---
 ## 2026-09-22
 
 ### Deprecated

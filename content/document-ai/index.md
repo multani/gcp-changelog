@@ -4,6 +4,21 @@
 
 ### Feature
 
+[Custom extractor](https://docs.cloud.google.com/document-ai/docs/ce-with-genai) model
+`pretrained-foundation-model-v3.1-lite-2026-07-15` powered by Gemini 3.1
+Flash Lite LLM is available in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+This processor version supports fine-tuning and is serving multi-region locations
+in the US and EU.
+
+CMEK is not fully supported in all regions, support requires being allowlisted.
+Contact your Google Cloud account team for more information.
+
+For more information about available models, see the [custom
+extractor](https://docs.cloud.google.com/document-ai/docs/custom-based-extraction) page.
+
+### Feature
+
 [Gemini layout parser](https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk) model
 `pretrained-layout-parser-v3.1-lite-2026-08-11`is in [Preview](https://cloud.google.com/products/#product-launch-stages).
 

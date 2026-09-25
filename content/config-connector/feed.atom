@@ -2,9 +2,101 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-09-08T00:00:00+00:00</updated>
+  <updated>2026-09-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-23:announcement:0</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.157.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.157.0 has been released. This update brings new features and improvements to the tool.</summary>
+    <title>Announcement: Config Connector 1.157.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-23:feature:1</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li>
+<p><code>AIPlatformModel</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/vertex-ai/docs/model-registry/introduction">Vertex AI models</a>.</p>
+</li>
+<li>
+<p><code>APIHubExternalAPI</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/apigee/docs/reference/apis/apihub/rest/v1/projects.locations.externalApis">API Hub external APIs</a>.</p>
+</li>
+<li>
+<p><code>NotebookInstanceV2</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/reference/rest/v2/projects.locations.instances">Agent Platform Workbench instance</a>.</p>
+</li>
+<li>
+<p><code>RedisClusterEndpoint</code></p>
+</li>
+<li>
+<p>Manage <a href="https://cloud.google.com/memorystore/docs/cluster/reference/rest/v1/projects.locations.clusters#ClusterEndpoint">Memorystore for Redis Cluster endpoints</a>.</p>
+</li>
+</ul>]]></content>
+    <summary>We are excited to announce the release of several new alpha resources. These include tools for managing Vertex AI models, API Hub external APIs, Agent Platform Workbench instances, and Memorystore for Redis Cluster endpoints. This expansion offers greater flexibility and control over your cloud resources.</summary>
+    <title>Feature: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-23:feature:2</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li><code>NetworkServicesEdgeCacheService</code></li>
+<li>Added <code>routeMethods</code> and <code>compressionMode</code> support.</li>
+</ul>]]></content>
+    <summary>The Edge Cache Service now supports route methods and compression mode. These enhancements allow for greater control over content delivery and optimization.</summary>
+    <title>Feature: Edge Cache Service Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-23:fixed:3</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12615"><code>NetworkConnectivityInternalRange</code></a></li>
+<li>Fixed continuous reconciliation loop and 400 error on <code>NetworkConnectivityInternalRange</code> when auto-allocation fields are set.</li>
+</ul>]]></content>
+    <summary>Resolved a continuous reconciliation loop and 400 error for NetworkConnectivityInternalRange when auto-allocation fields were set. This ensures smoother operation and correct handling of these configurations.</summary>
+    <title>Fixed: Fixed NetworkConnectivityInternalRange issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-09-23:change:4</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Other:</p>
+<ul>
+<li><strong>BeyondCorpClientGateway</strong>: Removed support for the deprecated BeyondCorp Enterprise client connector.</li>
+</ul>]]></content>
+    <summary>Support for the deprecated BeyondCorp Enterprise client connector has been removed from BeyondCorpClientGateway. This change impacts users relying on the older connector.</summary>
+    <title>Change: Client Connector Support Removed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -29,13 +121,13 @@
 <p><code>CCInsightsQAScorecard</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/contact-center/insights/docs">Contact Center Insights QA scorecards</a> to manage and evaluate agent performance.</p>
+<p>Manage <a href="https://docs.cloud.google.com/gemini-enterprise-cx/insights/reference/rest/v1/projects.locations.qaScorecards">Contact Center Insights QA scorecards</a> to manage and evaluate agent performance.</p>
 </li>
 <li>
 <p><code>ContentWarehouseSynonymSet</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/document-ai-warehouse/docs">Document AI Warehouse Synonym Sets</a> to manage custom synonym groups for searches.</p>
+<p>Manage <a href="https://docs.cloud.google.com/document-warehouse/docs/reference/rest/v1/projects.locations.synonymSets">Document AI Warehouse Synonym Sets</a> to manage custom synonym groups for searches.</p>
 </li>
 <li>
 <p><code>DevConnectAccountConnector</code></p>
@@ -59,25 +151,25 @@
 <p><code>GKEHubFleet</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/anthos/multicluster-management/connect/docs">GKE Hub Fleets</a> to logically group and manage clusters.</p>
+<p>Manage <a href="https://cloud.google.com/kubernetes-engine/fleet-management/docs">GKE Hub Fleets</a> to logically group and manage clusters.</p>
 </li>
 <li>
 <p><code>ModelArmorTemplate</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/model-armor/docs">Model Armor templates</a> to define safety and security policies for large language models.</p>
+<p>Manage <a href="https://docs.cloud.google.com/model-armor/manage-templates">Model Armor templates</a> to define safety and security policies for large language models.</p>
 </li>
 <li>
 <p><code>NetworkSecurityAuthzPolicy</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/traffic-director/docs/security-authz-policy">Network Security Authorization Policies</a> to authorize traffic.</p>
+<p>Manage <a href="https://cloud.google.com/service-mesh/docs/tutorials/authz">Network Security Authorization Policies</a> to authorize traffic.</p>
 </li>
 <li>
 <p><code>RapidMigrationAssessmentCollector</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/migration-center/docs/rma">Rapid Migration Assessment collectors</a> to gather environment discovery data for cloud migration.</p>
+<p>Manage <a href="https://cloud.google.com/migration-center/docs">Rapid Migration Assessment collectors</a> to gather environment discovery data for cloud migration.</p>
 </li>
 <li>
 <p><code>SecurityCenterManagementEventThreatDetectionCustomModule</code></p>
@@ -89,16 +181,16 @@
 <p><code>StorageInsightsDatasetConfig</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/storage/docs/insights">Cloud Storage Insights dataset configurations</a> to automatically inventory and analyze storage datasets.</p>
+<p>Manage <a href="https://docs.cloud.google.com/storage/docs/insights/datasets">Cloud Storage Insights dataset configurations</a> to automatically inventory and analyze storage datasets.</p>
 </li>
 <li>
 <p><code>VectorSearchCollection</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/vertex-ai/docs/vector-search">Vertex AI Vector Search collections</a> to manage similarity search indexes.</p>
+<p>Manage <a href="https://docs.cloud.google.com/vertex-ai/docs/vector-search/overview">Vertex AI Vector Search collections</a> to manage similarity search indexes.</p>
 </li>
 </ul>]]></content>
-    <summary>Several new alpha resources are now available for managing various aspects of your cloud environment. These include tools for agent performance evaluation, search customization, cluster management, AI model security, and storage insights. Explore these new features to enhance your cloud operations and data management.</summary>
+    <summary>A new set of Alpha resources are now available for managing various services, including Contact Center Insights, Document AI Warehouse, GKE, Discovery Engine, Model Armor, Network Security, Migration Center, Security Command Center, Cloud Storage, and Vertex AI. These resources allow for enhanced control over agent performance evaluation, search customization, cluster management, AI model policies, traffic authorization, migration assessments, threat detection, storage analysis, and similarity search.</summary>
     <title>Feature: New Alpha Resources Available</title>
   </entry>
   <entry>
@@ -135,14 +227,14 @@
 <p>Added <code>spec.secondaryWorkerConfig.instanceFlexibilityPolicy</code> field.</p>
 </li>
 <li>
-<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/networksecurity/networksecurityfirewallendpoint"><code>NetworkSecurityFirewallEndpoint</code></a></p>
+<p><code>NetworkSecurityFirewallEndpoint</code></p>
 </li>
 <li>
 <p>Added <code>spec.organizationRef</code> field to support organizing resources at the organization level, and made <code>spec.projectRef</code> optional.</p>
 </li>
 </ul>]]></content>
-    <summary>We've added new fields to BigtableTable, ContainerCluster, ContainerNodePool, DataprocCluster, and NetworkSecurityFirewallEndpoint resources. These updates enhance configuration flexibility and organization options for your cloud resources.</summary>
-    <title>Feature: New fields for several resources</title>
+    <summary>Several resources have been updated with new configuration fields. These include BigtableTable, ContainerCluster, ContainerNodePool, DataprocCluster, and NetworkSecurityFirewallEndpoint, offering more flexibility in resource management and customization.</summary>
+    <title>Feature: New configuration options added</title>
   </entry>
   <entry>
     <author>

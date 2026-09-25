@@ -3,14 +3,6 @@
   "entries": {
     "2026-09-24": [
       {
-        "kind": "Announcement",
-        "content": "",
-        "summary": {
-          "title": "New Features for Enhanced Productivity",
-          "summary": "Discover the latest updates designed to streamline your workflow and boost efficiency. These new capabilities offer improved performance and user-friendly interfaces, helping you achieve more with less effort."
-        }
-      },
-      {
         "kind": "v1.15.8",
         "content": "On September 24, 2026 we released an updated version of the Apigee hybrid software, v1.15.8.\n\n* For information on upgrading, see [Upgrading Apigee hybrid to version v1.15.8](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/upgrade).\n* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture).\n\n**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).",
         "summary": {
@@ -32,6 +24,14 @@
         "summary": {
           "title": "Security Updates for Apigee Components",
           "summary": "This announcement details security fixes for various Apigee components, addressing multiple reported vulnerabilities. Please update your systems to ensure continued security and stability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Correction: API base path limit for Apigee hybrid organizations**\n\nThe [December 16, 2024](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#December_16_2024) release note for enhanced per-environment proxy limits stated that the maximum number of API base paths per Apigee organization is 3000. That number is incorrect. The maximum number of API base paths per organization is 6,000 for both Apigee and Apigee hybrid.\n\nFor optimal performance, Apigee recommends using no more than 3,000 API proxy basepaths per environment or environment group. This is a recommendation, not an enforced limit.\n\nFor more information, see [Limits](https://docs.cloud.google.com/apigee/docs/api-platform/reference/limits#environment-and-organization) and [Enhanced per-environment proxy limits](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/enhanced-proxy-limits).",
+        "summary": {
+          "title": "Apigee hybrid base path limit corrected",
+          "summary": "The previously stated limit of 3000 API base paths for Apigee hybrid organizations was incorrect. The actual maximum limit is 6,000 API base paths for both Apigee and Apigee hybrid. While not an enforced limit, it is recommended to use no more than 3,000 API proxy base paths per environment for optimal performance."
         }
       }
     ],

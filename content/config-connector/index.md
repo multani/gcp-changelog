@@ -1,5 +1,49 @@
 # Config Connector
 
+## 2026-09-23
+
+### Announcement
+
+Config Connector version 1.157.0 is now available.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `AIPlatformModel`
+
+  + Manage [Vertex AI models](https://cloud.google.com/vertex-ai/docs/model-registry/introduction).
+* `APIHubExternalAPI`
+
+  + Manage [API Hub external APIs](https://cloud.google.com/apigee/docs/reference/apis/apihub/rest/v1/projects.locations.externalApis).
+* `NotebookInstanceV2`
+
+  + Manage [Agent Platform Workbench instance](https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/reference/rest/v2/projects.locations.instances).
+* `RedisClusterEndpoint`
+
+  + Manage [Memorystore for Redis Cluster endpoints](https://cloud.google.com/memorystore/docs/cluster/reference/rest/v1/projects.locations.clusters#ClusterEndpoint).
+
+### Feature
+
+New Fields:
+
+* `NetworkServicesEdgeCacheService`
+  + Added `routeMethods` and `compressionMode` support.
+
+### Fixed
+
+Bug Fixes:
+
+* [`NetworkConnectivityInternalRange`](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12615)
+  + Fixed continuous reconciliation loop and 400 error on `NetworkConnectivityInternalRange` when auto-allocation fields are set.
+
+### Change
+
+Other:
+
+* **BeyondCorpClientGateway**: Removed support for the deprecated BeyondCorp Enterprise client connector.
+
+---
 ## 2026-09-08
 
 ### Announcement
@@ -12,10 +56,10 @@ New Alpha Resources (Direct Reconciler):
 
 * `CCInsightsQAScorecard`
 
-  + Manage [Contact Center Insights QA scorecards](https://cloud.google.com/contact-center/insights/docs) to manage and evaluate agent performance.
+  + Manage [Contact Center Insights QA scorecards](https://docs.cloud.google.com/gemini-enterprise-cx/insights/reference/rest/v1/projects.locations.qaScorecards) to manage and evaluate agent performance.
 * `ContentWarehouseSynonymSet`
 
-  + Manage [Document AI Warehouse Synonym Sets](https://cloud.google.com/document-ai-warehouse/docs) to manage custom synonym groups for searches.
+  + Manage [Document AI Warehouse Synonym Sets](https://docs.cloud.google.com/document-warehouse/docs/reference/rest/v1/projects.locations.synonymSets) to manage custom synonym groups for searches.
 * `DevConnectAccountConnector`
 
   + Manage [Developer Connect Account Connectors](https://cloud.google.com/developer-connect/docs) to connect GKE clusters to developer systems.
@@ -27,25 +71,25 @@ New Alpha Resources (Direct Reconciler):
   + Manage [Discovery Engine serving configurations](https://cloud.google.com/generative-ai-app-builder/docs) to control search, recommendation, and listing features.
 * `GKEHubFleet`
 
-  + Manage [GKE Hub Fleets](https://cloud.google.com/anthos/multicluster-management/connect/docs) to logically group and manage clusters.
+  + Manage [GKE Hub Fleets](https://cloud.google.com/kubernetes-engine/fleet-management/docs) to logically group and manage clusters.
 * `ModelArmorTemplate`
 
-  + Manage [Model Armor templates](https://cloud.google.com/model-armor/docs) to define safety and security policies for large language models.
+  + Manage [Model Armor templates](https://docs.cloud.google.com/model-armor/manage-templates) to define safety and security policies for large language models.
 * `NetworkSecurityAuthzPolicy`
 
-  + Manage [Network Security Authorization Policies](https://cloud.google.com/traffic-director/docs/security-authz-policy) to authorize traffic.
+  + Manage [Network Security Authorization Policies](https://cloud.google.com/service-mesh/docs/tutorials/authz) to authorize traffic.
 * `RapidMigrationAssessmentCollector`
 
-  + Manage [Rapid Migration Assessment collectors](https://cloud.google.com/migration-center/docs/rma) to gather environment discovery data for cloud migration.
+  + Manage [Rapid Migration Assessment collectors](https://cloud.google.com/migration-center/docs) to gather environment discovery data for cloud migration.
 * `SecurityCenterManagementEventThreatDetectionCustomModule`
 
   + Manage [Security Command Center event threat detection custom modules](https://cloud.google.com/security-command-center/docs) to customize threat detection.
 * `StorageInsightsDatasetConfig`
 
-  + Manage [Cloud Storage Insights dataset configurations](https://cloud.google.com/storage/docs/insights) to automatically inventory and analyze storage datasets.
+  + Manage [Cloud Storage Insights dataset configurations](https://docs.cloud.google.com/storage/docs/insights/datasets) to automatically inventory and analyze storage datasets.
 * `VectorSearchCollection`
 
-  + Manage [Vertex AI Vector Search collections](https://cloud.google.com/vertex-ai/docs/vector-search) to manage similarity search indexes.
+  + Manage [Vertex AI Vector Search collections](https://docs.cloud.google.com/vertex-ai/docs/vector-search/overview) to manage similarity search indexes.
 
 ### Feature
 
@@ -63,7 +107,7 @@ New Fields:
 * [`DataprocCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/dataproc/dataproccluster)
 
   + Added `spec.secondaryWorkerConfig.instanceFlexibilityPolicy` field.
-* [`NetworkSecurityFirewallEndpoint`](https://cloud.google.com/config-connector/docs/reference/resource-docs/networksecurity/networksecurityfirewallendpoint)
+* `NetworkSecurityFirewallEndpoint`
 
   + Added `spec.organizationRef` field to support organizing resources at the organization level, and made `spec.projectRef` optional.
 

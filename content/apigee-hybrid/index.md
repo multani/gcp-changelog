@@ -2,10 +2,6 @@
 
 ## 2026-09-24
 
-### Announcement
-
-
-
 ### v1.15.8
 
 On September 24, 2026 we released an updated version of the Apigee hybrid software, v1.15.8.
@@ -49,6 +45,16 @@ On September 24, 2026 we released an updated version of the Apigee hybrid softwa
 | **N/A** | **Security fixes for `apigee-runtime`.**  This addresses the following vulnerabilities:  * [CVE-2026-54515](https://nvd.nist.gov/vuln/detail/CVE-2026-54515) * [CVE-2026-55831](https://nvd.nist.gov/vuln/detail/CVE-2026-55831) * [CVE-2026-55833](https://nvd.nist.gov/vuln/detail/CVE-2026-55833) * [CVE-2026-56745](https://nvd.nist.gov/vuln/detail/CVE-2026-56745) * [CVE-2026-56746](https://nvd.nist.gov/vuln/detail/CVE-2026-56746) * [CVE-2026-56819](https://nvd.nist.gov/vuln/detail/CVE-2026-56819) * [CVE-2026-59889](https://nvd.nist.gov/vuln/detail/CVE-2026-59889) * [CVE-2026-59898](https://nvd.nist.gov/vuln/detail/CVE-2026-59898) * [CVE-2026-59899](https://nvd.nist.gov/vuln/detail/CVE-2026-59899) * [CVE-2026-59900](https://nvd.nist.gov/vuln/detail/CVE-2026-59900) * [CVE-2026-59901](https://nvd.nist.gov/vuln/detail/CVE-2026-59901) * [CVE-2026-59903](https://nvd.nist.gov/vuln/detail/CVE-2026-59903) * [CVE-2026-59921](https://nvd.nist.gov/vuln/detail/CVE-2026-59921) * [CVE-2026-73508](https://nvd.nist.gov/vuln/detail/CVE-2026-73508) * [CVE-2026-75595](https://nvd.nist.gov/vuln/detail/CVE-2026-75595) * [CVE-2026-75596](https://nvd.nist.gov/vuln/detail/CVE-2026-75596) * [GHSA-mhm7-754m-9p8w](https://osv.dev/vulnerability/GHSA-mhm7-754m-9p8w) |
 | **N/A** | **Security fixes for `apigee-synchronizer`.**  This addresses the following vulnerabilities:  * [CVE-2026-54515](https://nvd.nist.gov/vuln/detail/CVE-2026-54515) * [CVE-2026-55831](https://nvd.nist.gov/vuln/detail/CVE-2026-55831) * [CVE-2026-55833](https://nvd.nist.gov/vuln/detail/CVE-2026-55833) * [CVE-2026-56745](https://nvd.nist.gov/vuln/detail/CVE-2026-56745) * [CVE-2026-56746](https://nvd.nist.gov/vuln/detail/CVE-2026-56746) * [CVE-2026-56819](https://nvd.nist.gov/vuln/detail/CVE-2026-56819) * [CVE-2026-59889](https://nvd.nist.gov/vuln/detail/CVE-2026-59889) * [CVE-2026-59898](https://nvd.nist.gov/vuln/detail/CVE-2026-59898) * [CVE-2026-59899](https://nvd.nist.gov/vuln/detail/CVE-2026-59899) * [CVE-2026-59900](https://nvd.nist.gov/vuln/detail/CVE-2026-59900) * [CVE-2026-59901](https://nvd.nist.gov/vuln/detail/CVE-2026-59901) * [CVE-2026-59903](https://nvd.nist.gov/vuln/detail/CVE-2026-59903) * [CVE-2026-59921](https://nvd.nist.gov/vuln/detail/CVE-2026-59921) * [CVE-2026-73508](https://nvd.nist.gov/vuln/detail/CVE-2026-73508) * [GHSA-mhm7-754m-9p8w](https://osv.dev/vulnerability/GHSA-mhm7-754m-9p8w) |
 | **N/A** | **Security fixes for `apigee-watcher`.**  This addresses the following vulnerabilities:  * [CVE-2026-33818](https://nvd.nist.gov/vuln/detail/CVE-2026-33818) * [CVE-2026-39821](https://nvd.nist.gov/vuln/detail/CVE-2026-39821) * [CVE-2026-56853](https://nvd.nist.gov/vuln/detail/CVE-2026-56853) * [CVE-2026-56858](https://nvd.nist.gov/vuln/detail/CVE-2026-56858) * [CVE-2026-56859](https://nvd.nist.gov/vuln/detail/CVE-2026-56859) * [CVE-2026-56860](https://nvd.nist.gov/vuln/detail/CVE-2026-56860) * [CVE-2026-56862](https://nvd.nist.gov/vuln/detail/CVE-2026-56862) * [CVE-2026-56864](https://nvd.nist.gov/vuln/detail/CVE-2026-56864) * [CVE-2026-56865](https://nvd.nist.gov/vuln/detail/CVE-2026-56865) * [CVE-2026-84303](https://nvd.nist.gov/vuln/detail/CVE-2026-84303) * [CVE-2026-84304](https://nvd.nist.gov/vuln/detail/CVE-2026-84304) * [CVE-2026-84445](https://nvd.nist.gov/vuln/detail/CVE-2026-84445) * [GHSA-hrxh-6v49-42gf](https://osv.dev/vulnerability/GHSA-hrxh-6v49-42gf) |
+
+### Change
+
+**Correction: API base path limit for Apigee hybrid organizations**
+
+The [December 16, 2024](https://docs.cloud.google.com/apigee/docs/hybrid/release-notes#December_16_2024) release note for enhanced per-environment proxy limits stated that the maximum number of API base paths per Apigee organization is 3000. That number is incorrect. The maximum number of API base paths per organization is 6,000 for both Apigee and Apigee hybrid.
+
+For optimal performance, Apigee recommends using no more than 3,000 API proxy basepaths per environment or environment group. This is a recommendation, not an enforced limit.
+
+For more information, see [Limits](https://docs.cloud.google.com/apigee/docs/api-platform/reference/limits#environment-and-organization) and [Enhanced per-environment proxy limits](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/enhanced-proxy-limits).
 
 ---
 ## 2026-09-17

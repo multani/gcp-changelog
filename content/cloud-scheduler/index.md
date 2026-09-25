@@ -1,5 +1,16 @@
 # Cloud Scheduler
 
+## 2026-09-24
+
+### Change
+
+Cloud Scheduler is available in the following [locations](https://docs.cloud.google.com/scheduler/docs/locations):
+
+* `asia-south2` (Delhi, India)
+* `europe-west12` (Turin, Italy)
+* `northamerica-northeast2` (Toronto, Ontario, Canada)
+
+---
 ## 2026-09-18
 
 ### Change

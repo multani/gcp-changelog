@@ -1,5 +1,16 @@
 # Cloud Asset Inventory
 
+## 2026-09-23
+
+### Feature
+
+The following resource types are publicly available through the [ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://docs.cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), [Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds), and Search ([SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources), [SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)) APIs.
+
+* Google Cloud Migration Center
+  + `migrationcenter.googleapis.com/Asset`
+  + `migrationcenter.googleapis.com/CostAssessmentJob`
+
+---
 ## 2026-09-17
 
 ### Feature

@@ -12,6 +12,39 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-09-24:announcement:0</id>
     <published>2026-09-24T00:00:00+00:00</published>
     <updated>2026-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Beginning September 21, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.16.</p>]]></content>
+    <summary>Starting September 21, 2026, new features will be automatically enabled for Looker (original) instances running Looker 26.16. This update aims to enhance user experience and introduce new functionalities seamlessly. All users on the specified version will benefit from these improvements without manual intervention.</summary>
+    <title>Announcement: Looker Features Auto-Enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-09-24:feature:1</id>
+    <published>2026-09-24T00:00:00+00:00</published>
+    <updated>2026-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker now displays an <strong>Authorize OAuth Connection</strong> dialog when users initiate an OAuth authorization flow for database connections. This dialog notifies users that authorizing the connection allows Looker to access data on their behalf, and that privileged Looker users—such as administrators and developers—may have visibility into their data (for example, when an administrator runs queries by using another user's active OAuth token during a sudo session).</p>]]></content>
+    <summary>Looker has introduced a new dialog box for OAuth connections. This dialog informs users that authorizing a connection grants Looker access to their data and that certain privileged users may be able to view it.</summary>
+    <title>Feature: New OAuth Connection Dialog</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-09-24:feature:2</id>
+    <published>2026-09-24T00:00:00+00:00</published>
+    <updated>2026-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker now includes a <a href="https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#filters-on-visualization-tiles"><strong>Filters on Visualization Tiles</strong> preview feature</a> that lets dashboard creators place filter controls directly on individual visualization tiles rather than only in the dashboard filter bar.</p>]]></content>
+    <summary>Looker has introduced a new preview feature allowing dashboard creators to place filter controls directly on individual visualization tiles. This offers more granular control over data exploration within dashboards, moving beyond the traditional dashboard filter bar.</summary>
+    <title>Feature: Filters on Visualization Tiles in Looker</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-09-24:announcement:3</id>
+    <published>2026-09-24T00:00:00+00:00</published>
+    <updated>2026-09-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The latest versions in the Looker (Google Cloud core) <a href="https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels">release channels</a> are beginning deployment as follows:</p>
 <ul>
 <li>Latest version in the Rapid channel: <strong>Looker 26.16</strong></li>
@@ -20,6 +53,17 @@
 </ul>]]></content>
     <summary>New versions of Looker are now deploying across release channels. Looker 26.16 is available in the Rapid and No Channel releases, while Looker 26.14 is deployed in the Regular channel.</summary>
     <title>Announcement: New Looker Versions Deployed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-09-24:feature:4</id>
+    <published>2026-09-24T00:00:00+00:00</published>
+    <updated>2026-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker now includes a long polling concurrency guard. This prevents issues where queries cause long poll requests that oversaturate Looker and cause Looker to freeze. If a query causes a long poll request, Looker will display the error message <code>Query polling capacity reached. Please try again later.</code></p>]]></content>
+    <summary>Looker has introduced a long polling concurrency guard to prevent performance issues. This feature stops oversaturation caused by long poll requests, ensuring Looker remains responsive. If the capacity is reached, users will see a 'Query polling capacity reached' message.</summary>
+    <title>Feature: New concurrency guard in Looker</title>
   </entry>
   <entry>
     <author>

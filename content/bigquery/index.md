@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-09-24
+
+### Feature
+
+In the BigQuery Studio query editor, the **Query results** table now keeps
+the row numbers visible on the left as you scroll horizontally. This helps you
+maintain context and track data across wide tables.
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-09-22
 
 ### Feature

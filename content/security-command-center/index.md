@@ -1,5 +1,17 @@
 # Security Command Center
 
+## 2026-09-24
+
+### Change
+
+The following Security Command Center finding category names from AI Protection have new names to clarify that AI Protection detects tuned models and to remove the legacy `VERTEX_1P_` prefix:
+
+* `VERTEX_1P_TUNED_MODEL_DETECTED` changes to `TUNED_MODEL_DETECTED`.
+* `VERTEX_1P_TUNED_MODEL_NOT_PROTECTED_BY_MODEL_ARMOR` changes to `TUNED_MODEL_NOT_PROTECTED_BY_MODEL_ARMOR`.
+
+For more information about AI Protection findings, see [AI Protection overview](https://docs.cloud.google.com/security-command-center/docs/ai-protection-overview) and [AI Discovery service findings](https://docs.cloud.google.com/security-command-center/docs/concepts-vulnerabilities-findings#aip-ds-findings).
+
+---
 ## 2026-09-16
 
 ### Feature

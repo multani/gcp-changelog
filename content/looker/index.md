@@ -4,11 +4,27 @@
 
 ### Announcement
 
+Beginning September 21, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.16.
+
+### Feature
+
+Looker now displays an **Authorize OAuth Connection** dialog when users initiate an OAuth authorization flow for database connections. This dialog notifies users that authorizing the connection allows Looker to access data on their behalf, and that privileged Looker users—such as administrators and developers—may have visibility into their data (for example, when an administrator runs queries by using another user's active OAuth token during a sudo session).
+
+### Feature
+
+Looker now includes a [**Filters on Visualization Tiles** preview feature](https://docs.cloud.google.com/looker/docs/filters-user-defined-dashboards#filters-on-visualization-tiles) that lets dashboard creators place filter controls directly on individual visualization tiles rather than only in the dashboard filter bar.
+
+### Announcement
+
 The latest versions in the Looker (Google Cloud core) [release channels](https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels) are beginning deployment as follows:
 
 * Latest version in the Rapid channel: **Looker 26.16**
 * Latest version in the Regular channel: **Looker 26.14**
 * Latest version in the No Channel channel: **Looker 26.16**
+
+### Feature
+
+Looker now includes a long polling concurrency guard. This prevents issues where queries cause long poll requests that oversaturate Looker and cause Looker to freeze. If a query causes a long poll request, Looker will display the error message `Query polling capacity reached. Please try again later.`
 
 ---
 ## 2026-09-17

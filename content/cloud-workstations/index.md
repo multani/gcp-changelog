@@ -1,5 +1,13 @@
 # Cloud Workstations
 
+## 2026-09-24
+
+### Feature
+
+Cloud Workstations is a covered [product](https://cloud.google.com/security/compliance/hipaa#covered-products)
+under [Google Cloud HIPAA BAA](https://cloud.google.com/terms/hipaa-baa).
+
+---
 ## 2026-09-23
 
 ### Feature

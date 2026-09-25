@@ -187,6 +187,23 @@ Claude](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/pa
 
 ### Feature
 
+**Standard PayGo adds Tier 4**
+
+Tier 4 is added to the Standard PayGo usage tiers, for spend above $50,000 per
+30-day period, and Tier 3 is bounded at $2,000 to $50,000 per 30-day period. For
+details, see [Standard PayGo usage tiers](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/standard-paygo#usage-tiers-and-throughput).
+
+### Change
+
+**Priority PayGo removes ramp limits**
+
+Priority PayGo throughput limits are available immediately, with no ramp-up
+period, and traffic above the limit is downgraded to Standard PayGo only when
+there isn't spare capacity to serve it at priority. For details, see [Priority
+PayGo throughput limits](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/priority-paygo#throughput-limits).
+
+### Feature
+
 **Provisioned Throughput: Support for multiple pending orders and change requests**
 
 Provisioned Throughput now directly supports from the self service console the

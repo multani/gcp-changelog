@@ -22,6 +22,7 @@
 - [AI Applications](ai-applications/index.md)
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)
+- [API Keys API](api-keys-api/index.md)
 - [Access Approval](access-approval/index.md)
 - [Access Context Manager](access-context-manager/index.md)
 - [Access Transparency](access-transparency/index.md)

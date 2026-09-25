@@ -1,5 +1,22 @@
 # Service Extensions
 
+## 2026-09-23
+
+### Feature
+
+Support for
+[route](https://docs.cloud.google.com/service-extensions/docs/configure-route-extensions#configure-route-plugins)
+and
+[traffic](https://docs.cloud.google.com/service-extensions/docs/configure-traffic-extensions#configure-traffic-plugins)
+extensions that use plugins is [generally available
+(GA)](https://cloud.google.com/products#product-launch-stages) for regional
+external Application Load Balancers and regional internal Application Load
+Balancers.
+
+For more information, see [Supported Application Load Balancers for user-managed
+extensions](https://docs.cloud.google.com/service-extensions/docs/lb-extensions-overview#supported-lbs).
+
+---
 ## 2026-08-31
 
 ### Feature

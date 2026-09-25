@@ -124,6 +124,22 @@
     "2026-09-10": [
       {
         "kind": "Feature",
+        "content": "**Standard PayGo adds Tier 4**\n\nTier 4 is added to the Standard PayGo usage tiers, for spend above $50,000 per\n30-day period, and Tier 3 is bounded at $2,000 to $50,000 per 30-day period. For\ndetails, see [Standard PayGo usage tiers](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/standard-paygo#usage-tiers-and-throughput).",
+        "summary": {
+          "title": "New usage tier for Standard PayGo",
+          "summary": "A new usage tier, Tier 4, has been added to Standard PayGo for spend exceeding $50,000 per 30-day period. This complements the existing tiers, with Tier 3 now covering spend between $2,000 and $50,000."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Priority PayGo removes ramp limits**\n\nPriority PayGo throughput limits are available immediately, with no ramp-up\nperiod, and traffic above the limit is downgraded to Standard PayGo only when\nthere isn't spare capacity to serve it at priority. For details, see [Priority\nPayGo throughput limits](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/priority-paygo#throughput-limits).",
+        "summary": {
+          "title": "Priority PayGo ramp limits removed",
+          "summary": "Priority PayGo now offers immediate throughput without a ramp-up period. Traffic exceeding the limit is downgraded to Standard PayGo only when spare capacity is unavailable. This change enhances flexibility for users."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "**Provisioned Throughput: Support for multiple pending orders and change requests**\n\nProvisioned Throughput now directly supports from the self service console the\nability to schedule multiple new orders at the same time and change requests\nacross multiple orders within the same project.\n\nFor more information, see [Purchase Provisioned Throughput](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput).",
         "summary": {
           "title": "Multiple Pending Orders for Provisioned Throughput",

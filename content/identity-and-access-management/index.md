@@ -15,7 +15,6 @@ For more information, see the following:
 * [SCIM provisioning for Workforce Identity Federation](https://docs.cloud.google.com/iam/docs/workforce-identity-federation-scim)
 * [Configure SCIM with Microsoft Entra ID](https://docs.cloud.google.com/iam/docs/configure-scim-ms-entra)
 * [Configure SCIM with Okta](https://docs.cloud.google.com/iam/docs/configure-scim-okta)
-* [Configure SCIM with OIDC or SAML](https://docs.cloud.google.com/iam/docs/configure-scim-oidc-saml)
 * [Troubleshoot SCIM provisioning and synchronization](https://docs.cloud.google.com/iam/docs/troubleshooting-workforce-identity-federation#scim-signin-users-groups-fail)
 
 ---

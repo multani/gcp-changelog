@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-09-25": [
+      {
+        "kind": "Feature",
+        "content": "GKE Standard clusters now support up to 512 maximum Pods per node, an increase\nfrom the previous limit of 256. Nodes configured for 257 to 512 Pods will now\nbe allocated a /22 Pod CIDR block (1,024 IP addresses).",
+        "summary": {
+          "title": "Increase maximum pods per node in GKE Standard",
+          "summary": "GKE Standard clusters now allow up to 512 pods per node, doubling the previous limit. This enhancement provides greater flexibility for deploying more workloads on each node. Nodes configured for higher pod counts will receive a larger IP address allocation for pods."
+        }
+      }
+    ],
     "2026-09-24": [
       {
         "kind": "Feature",

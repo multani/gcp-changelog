@@ -27,7 +27,31 @@ voice quality, model reliability, and agent orchestration.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-24:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-24:fixed:1</id>
+    <published>2026-09-24T00:00:00+00:00</published>
+    <updated>2026-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.10.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Impact-aware PR delta scanning</strong>: Added <code>--diff</code> and <code>--staged</code> flags to <code>cm find</code> to audit modified pull request hunks and 1-hop neighbor files while suppressing pre-existing vulnerabilities.</li>
+<li><strong>SARIF report export and CI gating</strong>: Added SARIF v2.1.0 export (<code>--format sarif</code>, <code>--output</code>) and severity-based CI gating (<code>--fail-on</code>) to <code>cm report</code> to integrate scan results into CI/CD pipelines and code scanning tools.</li>
+<li><strong>Adaptive hybrid deep scanning</strong>: Added <code>--deep</code> and <code>--deep-workers</code> flags to <code>cm find</code> to combine deterministic file pruning, parallel package-batched analysis, and post-triage verification for higher vulnerability recall and precision.</li>
+<li><strong>Custom workspace directory</strong>: Added support for the <code>CM_HOME</code> environment variable to override the default <code>~/.codemender</code> directory for configuration, local state (<code>state.db</code>), backups, and artifacts.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Required build and test validation (<code>build.command</code>) to succeed during <code>cm fix</code> before marking a patch as applied and a finding as fixed.</li>
+<li>Stabilized vulnerability fingerprints across multiple scans and bound <code>cm verify</code> directly to the target finding ID to prevent duplicate findings.</li>
+<li>Restored the configured session model automatically when reconnecting to an active session with <code>cm session resume</code>.</li>
+<li>Updated <code>cm verify</code> to add <code>.exploit</code> to <code>.gitignore</code> before execution so cancelled verification sessions do not leave untracked proof-of-concept scripts.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender v0.10.0 introduces impact-aware scanning for PRs, SARIF export for CI/CD integration, and adaptive deep scanning. This release also includes improved bug fixes for a more robust vulnerability management experience.</summary>
+    <title>Fixed: CodeMender v0.10.0: Enhanced Scanning and CI Integration</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-24:feature:2</id>
     <published>2026-09-24T00:00:00+00:00</published>
     <updated>2026-09-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Muse Spark 1.3 from Meta</strong></p>

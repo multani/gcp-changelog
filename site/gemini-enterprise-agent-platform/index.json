@@ -11,6 +11,14 @@
         }
       },
       {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.10.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Impact-aware PR delta scanning**: Added `--diff` and `--staged` flags to `cm find` to audit modified pull request hunks and 1-hop neighbor files while suppressing pre-existing vulnerabilities.\n* **SARIF report export and CI gating**: Added SARIF v2.1.0 export (`--format sarif`, `--output`) and severity-based CI gating (`--fail-on`) to `cm report` to integrate scan results into CI/CD pipelines and code scanning tools.\n* **Adaptive hybrid deep scanning**: Added `--deep` and `--deep-workers` flags to `cm find` to combine deterministic file pruning, parallel package-batched analysis, and post-triage verification for higher vulnerability recall and precision.\n* **Custom workspace directory**: Added support for the `CM_HOME` environment variable to override the default `~/.codemender` directory for configuration, local state (`state.db`), backups, and artifacts.\n* **Bug fixes**:\n  + Required build and test validation (`build.command`) to succeed during `cm fix` before marking a patch as applied and a finding as fixed.\n  + Stabilized vulnerability fingerprints across multiple scans and bound `cm verify` directly to the target finding ID to prevent duplicate findings.\n  + Restored the configured session model automatically when reconnecting to an active session with `cm session resume`.\n  + Updated `cm verify` to add `.exploit` to `.gitignore` before execution so cancelled verification sessions do not leave untracked proof-of-concept scripts.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "summary": {
+          "title": "CodeMender v0.10.0: Enhanced Scanning and CI Integration",
+          "summary": "CodeMender v0.10.0 introduces impact-aware scanning for PRs, SARIF export for CI/CD integration, and adaptive deep scanning. This release also includes improved bug fixes for a more robust vulnerability management experience."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Muse Spark 1.3 from Meta**\n\n[Muse Spark 1.3 from Meta](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3)\nis available in\n[Preview](https://cloud.google.com/products#product-launch-stages). Muse Spark\n1.3 from Meta is a reasoning model trained for agentic workflows and\ncompetitive coding. It delivers higher first-attempt accuracy, reliable built-in\ntool calling with MCP support, and 1M-token long context for multi-step tasks.",
         "summary": {

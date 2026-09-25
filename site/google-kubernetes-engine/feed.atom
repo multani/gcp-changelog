@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-09-24T00:00:00+00:00</updated>
+  <updated>2026-09-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-09-25:feature:0</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE Standard clusters now support up to 512 maximum Pods per node, an increase
+from the previous limit of 256. Nodes configured for 257 to 512 Pods will now
+be allocated a /22 Pod CIDR block (1,024 IP addresses).</p>]]></content>
+    <summary>GKE Standard clusters now allow up to 512 pods per node, doubling the previous limit. This enhancement provides greater flexibility for deploying more workloads on each node. Nodes configured for higher pod counts will receive a larger IP address allocation for pods.</summary>
+    <title>Feature: Increase maximum pods per node in GKE Standard</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

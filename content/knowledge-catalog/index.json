@@ -4,6 +4,14 @@
     "2026-09-24": [
       {
         "kind": "Feature",
+        "content": "Knowledge Catalog support for importing dbt metadata is now [generally available](https://cloud.google.com/products#product-launch-stages)\nand includes the following updates:\n\n* You can import metadata from dbt Cloud job runs using the dbt Cloud interface, the dbt platform CLI, or the dbt Administrative API and webhooks.\n* You can generate and import metadata artifacts from dbt Core 2.x and dbt Fusion in addition to dbt Core 1.x.\n* You can import entry links (`--include-entry-links` and `--skip-bigquery-link`) to capture dbt lineage and semantic relationships and link materialized dbt nodes to physical BigQuery tables, and search related BigQuery entries using the `lookupEntryLinks` method.\n* You can configure dbt metadata import jobs and search or view imported dbt entries using the Google Cloud console, the Google Cloud CLI, or the Dataplex REST API.\n\nFor more information, see [Import metadata from dbt Core](https://docs.cloud.google.com/knowledge-catalog/docs/dbt-transfer).",
+        "summary": {
+          "title": "Import dbt metadata into Knowledge Catalog",
+          "summary": "You can now import dbt metadata into Knowledge Catalog, supporting various dbt versions and integration methods. This feature allows for better capture of dbt lineage and semantic relationships, linking dbt nodes to BigQuery tables. The imported metadata can be managed through the Google Cloud console, CLI, or API."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "Data products now support configuring a default IAM role in an access group. The\ndefault role, once configured, is automatically granted on all packaged and\nsupported assets in the data product. Data product owners can override the\ndefault role for individual assets. In addition, the assets table in a data\nproduct now shows the permission state of each asset (`Applied`, `Failed`, or\n`Unsupported`).\n\nFor more information, see [Create data products](https://docs.cloud.google.com/knowledge-catalog/docs/create-data-products)\nand [Manage data products](https://docs.cloud.google.com/knowledge-catalog/docs/manage-data-products).",
         "summary": {
           "title": "Simplify Data Product Access with Default Roles",

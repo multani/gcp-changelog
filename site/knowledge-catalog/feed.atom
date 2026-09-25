@@ -12,6 +12,25 @@
     <id>urn:github:multani:gcp-changelog:knowledge-catalog:2026-09-24:feature:0</id>
     <published>2026-09-24T00:00:00+00:00</published>
     <updated>2026-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Knowledge Catalog support for importing dbt metadata is now <a href="https://cloud.google.com/products#product-launch-stages">generally available</a>
+and includes the following updates:</p>
+<ul>
+<li>You can import metadata from dbt Cloud job runs using the dbt Cloud interface, the dbt platform CLI, or the dbt Administrative API and webhooks.</li>
+<li>You can generate and import metadata artifacts from dbt Core 2.x and dbt Fusion in addition to dbt Core 1.x.</li>
+<li>You can import entry links (<code>--include-entry-links</code> and <code>--skip-bigquery-link</code>) to capture dbt lineage and semantic relationships and link materialized dbt nodes to physical BigQuery tables, and search related BigQuery entries using the <code>lookupEntryLinks</code> method.</li>
+<li>You can configure dbt metadata import jobs and search or view imported dbt entries using the Google Cloud console, the Google Cloud CLI, or the Dataplex REST API.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/knowledge-catalog/docs/dbt-transfer">Import metadata from dbt Core</a>.</p>]]></content>
+    <summary>You can now import dbt metadata into Knowledge Catalog, supporting various dbt versions and integration methods. This feature allows for better capture of dbt lineage and semantic relationships, linking dbt nodes to BigQuery tables. The imported metadata can be managed through the Google Cloud console, CLI, or API.</summary>
+    <title>Feature: Import dbt metadata into Knowledge Catalog</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:knowledge-catalog:2026-09-24:feature:1</id>
+    <published>2026-09-24T00:00:00+00:00</published>
+    <updated>2026-09-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Data products now support configuring a default IAM role in an access group. The
 default role, once configured, is automatically granted on all packaged and
 supported assets in the data product. Data product owners can override the

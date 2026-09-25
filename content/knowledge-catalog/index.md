@@ -4,6 +4,18 @@
 
 ### Feature
 
+Knowledge Catalog support for importing dbt metadata is now [generally available](https://cloud.google.com/products#product-launch-stages)
+and includes the following updates:
+
+* You can import metadata from dbt Cloud job runs using the dbt Cloud interface, the dbt platform CLI, or the dbt Administrative API and webhooks.
+* You can generate and import metadata artifacts from dbt Core 2.x and dbt Fusion in addition to dbt Core 1.x.
+* You can import entry links (`--include-entry-links` and `--skip-bigquery-link`) to capture dbt lineage and semantic relationships and link materialized dbt nodes to physical BigQuery tables, and search related BigQuery entries using the `lookupEntryLinks` method.
+* You can configure dbt metadata import jobs and search or view imported dbt entries using the Google Cloud console, the Google Cloud CLI, or the Dataplex REST API.
+
+For more information, see [Import metadata from dbt Core](https://docs.cloud.google.com/knowledge-catalog/docs/dbt-transfer).
+
+### Feature
+
 Data products now support configuring a default IAM role in an access group. The
 default role, once configured, is automatically granted on all packaged and
 supported assets in the data product. Data product owners can override the

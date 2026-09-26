@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-09-25
+
+### Feature
+
+**Generally available**: New X5 series with 50% larger memory instances:
+Breaking the previous 32TB memory limit of the X4
+[memory-optimized machine type](https://docs.cloud.google.com/compute/docs/memory-optimized-machines),
+a new X5 series introduces massive 48TB configurations. This empowers the
+largest SAP HANA and RISE with SAP customers to easily scale up their
+mission-critical databases on a single node.
+
+---
 ## 2026-09-24
 
 ### Feature

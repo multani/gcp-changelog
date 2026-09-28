@@ -1,5 +1,45 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-28
+
+### Feature
+
+**Anthropic's Claude Sonnet 5.5**
+
+[Claude Sonnet 5.5](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/sonnet-5-5)
+is available in Model Garden.
+
+### Feature
+
+**Gemini 3 models supported by the Interactions API in Preview**
+
+Gemini 3 models are supported by the Interactions API in
+[Preview](https://cloud.google.com/products#product-launch-stages) on
+Gemini Enterprise Agent Platform.
+
+For more information, see the
+[Interactions API overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/interactions).
+
+---
+## 2026-09-25
+
+### Feature
+
+**Semantic governance policies support VPC Service Controls (Preview)**
+
+Semantic governance policy and the Semantic governance policy engine support
+[VPC Service Controls](https://docs.cloud.google.com/vpc-service-controls/docs/overview) in
+[Preview](https://cloud.google.com/products#product-launch-stages). You can
+include Semantic governance policy and the policy engine in your service
+perimeter to help mitigate the risk of data exfiltration when governing agent
+tool calls.
+
+For more information, see [VPC Service Controls with Gemini Enterprise Agent
+Platform](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/vpc-service-controls#add-restricted-services)
+and [Semantic governance policies
+overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/semantic-governance-overview).
+
+---
 ## 2026-09-24
 
 ### Feature

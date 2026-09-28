@@ -1,5 +1,18 @@
 # Cloud Load Balancing
 
+## 2026-09-28
+
+### Feature
+
+Zonal network endpoint groups (NEGs) with `GCE_VM_IP` and `GCE_VM_IP_PORT`
+endpoints support IPv6-only endpoints that reference IPv6-only or dual-stack
+Compute Engine VM network interfaces.
+
+This feature is available in **Preview**.
+
+For more information, see [Zonal network endpoint groups overview](https://docs.cloud.google.com/load-balancing/docs/negs/zonal-neg-concepts).
+
+---
 ## 2026-09-18
 
 ### Feature

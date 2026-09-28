@@ -1,5 +1,14 @@
 # Security Command Center
 
+## 2026-09-28
+
+### Feature
+
+Risk Engine detects and reports reasoning engines that can modify IAM policies
+and perform lateral movement. These findings are generated as a
+[toxic combination](https://docs.cloud.google.com/security-command-center/docs/toxic-combinations-overview).
+
+---
 ## 2026-09-24
 
 ### Change
@@ -16,7 +25,8 @@ For more information about AI Protection findings, see [AI Protection overview](
 
 ### Feature
 
-You can use the following MCP server endpoints to enable LLM agents to perform investigative and management tasks in Security Command Center.
+You can use the following MCP server endpoints to enable LLM agents to perform
+investigative and management tasks in Security Command Center.
 
 * [Security Command Center](https://docs.cloud.google.com/security-command-center/docs/reference/mcp)
 * [Security Command Center Management](https://docs.cloud.google.com/security-command-center/docs/reference/security-center-management/mcp)

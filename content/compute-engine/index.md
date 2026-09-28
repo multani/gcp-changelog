@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-09-28
+
+### Feature
+
+**Allowlisted GA**: You can expose the host ID of a Compute Engine
+instance to verify its physical location in relation to other compute instances
+in your Google Cloud organization. Use compute instance proximity in a
+zone to optimize latency-sensitive workloads or improve the reliability of your
+applications. For more information, see
+[View the physical location of a Compute Engine instance](https://docs.cloud.google.com/compute/docs/instances/view-instance-topology).
+
+---
 ## 2026-09-25
 
 ### Feature

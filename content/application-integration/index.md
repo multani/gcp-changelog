@@ -1,5 +1,32 @@
 # Application Integration
 
+## 2026-09-28
+
+### Security
+
+A Confused Deputy vulnerability was discovered in the Email Task component in
+Application Integration versions prior to June 30, 2026.
+For more information, see the
+[GCP-2026-066](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-066)
+security bulletin.
+
+### Security
+
+A Deserialization of Untrusted Data vulnerability was discovered in
+the JavaScript Task in Application Integration versions prior
+to June 28, 2026. For more information, see the
+[GCP-2026-065](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-065)
+security bulletin.
+
+### Security
+
+An Incorrect Authorization vulnerability was discovered in the task
+configuration in Application Integration versions prior to June 17, 2026.
+For more information, see the
+[GCP-2026-064](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-064)
+security bulletin.
+
+---
 ## 2026-08-28
 
 ### Announcement

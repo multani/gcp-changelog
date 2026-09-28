@@ -1,13 +1,31 @@
 {
   "name": "Cloud Logging",
   "entries": {
+    "2026-09-28": [
+      {
+        "kind": "Deprecated",
+        "content": "The legacy Logging agent has officially reached its end of support. All standard\nmaintenance and regular bug fixes for the agent have ceased. We recommend\nmigrating to one of the [supported alternatives](https://docs.cloud.google.com/logging/docs/agent/index). For\nmore information about this deprecation, see [Legacy Monitoring and Logging\nagents end of support](https://docs.cloud.google.com/stackdriver/docs/deprecations/logging-agent).",
+        "summary": {
+          "title": "Logging Agent Deprecated",
+          "summary": "The legacy Logging agent is no longer supported. Please migrate to a supported alternative to ensure continued maintenance and bug fixes."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "Only platform services can write log entries to billing accounts.\nThese logs have names with the format\n`billingAccounts/[BILLING_ACCOUNT_ID]/logs/[LOG_ID]`.\nFor more information, see\n[`entries.write`](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/entries/write).",
+        "summary": {
+          "title": "Billing Account Logs Now Supported",
+          "summary": "Platform services can now write log entries to billing accounts. These logs follow a specific naming convention: billingAccounts/[BILLING_ACCOUNT_ID]/logs/[LOG_ID]. This update enhances logging capabilities for billing-related information."
+        }
+      }
+    ],
     "2026-09-14": [
       {
         "kind": "Feature",
-        "content": "Starting with version 2.71.0, you can use an Ops Agent configuration option\nto export your metrics, logs, and traces by using the OpenTelemetry-based\n[Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview) rather than\nby using the Cloud Monitoring API, Logging API, or Trace API\nFor more information, see\n[Use the Telemetry API](https://docs.cloud.google.com/monitoring/agent/ops-agent/use-telemetry-api).",
+        "content": "Starting with version 2.71.0, you can use an Ops Agent configuration option\nto export your metrics, logs, and traces by using the OpenTelemetry-based\n[Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview) rather than\nby using the Cloud Monitoring API, Logging API, or Trace API.\nFor more information, see\n[Use the Telemetry API](https://docs.cloud.google.com/monitoring/agent/ops-agent/use-telemetry-api).",
         "summary": {
-          "title": "Ops Agent now supports Telemetry API",
-          "summary": "The Ops Agent, starting with version 2.71.0, now offers a configuration option to export metrics, logs, and traces using the OpenTelemetry-based Telemetry API. This provides an alternative to using the Cloud Monitoring, Logging, or Trace APIs for data export."
+          "title": "Ops Agent supports Telemetry API",
+          "summary": "The Ops Agent now exports metrics, logs, and traces using the OpenTelemetry-based Telemetry API, offering an alternative to the Cloud Monitoring, Logging, and Trace APIs. This feature is available starting with version 2.71.0. For more details, refer to the documentation on using the Telemetry API."
         }
       }
     ],

@@ -1,5 +1,59 @@
 # Cloud Service Mesh
 
+## 2026-09-28
+
+### Deprecated
+
+Cloud Service Mesh support for the in-cluster `ISTIOD` control plane on Google
+Kubernetes Engine (GKE) on Google Cloud is deprecated as of September 28, 2026,
+and support will end on **March 1, 2028**. After March 1, 2028, in-cluster
+control plane components on GKE will not receive updates, security patches, or
+support from Google Cloud.
+
+Cloud Service Mesh with the in-cluster `ISTIOD` control plane on Google
+Distributed Cloud (software only) continues to be supported as described in
+[Supported platforms](https://docs.cloud.google.com/service-mesh/docs/supported-platforms#off-gcp).
+
+You must migrate your clusters to managed Cloud Service Mesh by March 1, 2028.
+review the [Supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-managed)
+to confirm feature compatibility, and follow the
+[migration guide](https://docs.cloud.google.com/service-mesh/docs/tutorials/migrate-in-cluster-to-managed-on-new-cluster)
+to transition to managed Cloud Service Mesh with the `TRAFFIC_DIRECTOR` control
+plane.
+
+For more details on the deprecation schedule, see
+[Deprecations](https://docs.cloud.google.com/service-mesh/deprecations/).
+
+### Deprecated
+
+Cloud Service Mesh support for the managed `ISTIOD` control plane on Google
+Kubernetes Engine (GKE) on Google Cloud is deprecated as of September 28, 2026,
+and support will end on **March 1, 2028**. After March 1, 2028, managed `ISTIOD`
+control plane components on GKE on Google Cloud will not receive updates,
+security patches, or support from Google Cloud, and workload sidecars on
+unmodernized clusters will fail and be unable to receive or send requests.
+
+Google Cloud is transitioning managed Cloud Service Mesh with Istio APIs to the
+`TRAFFIC_DIRECTOR` control plane implementation using Istio APIs. As part of
+this transition, support will also end for any features that are incompatible
+with the `TRAFFIC_DIRECTOR` control plane.
+
+To continue using managed Cloud Service Mesh on GKE, you must modernize your
+clusters by March 1, 2028:
+
+1. Confirm that you affected.
+2. Check your compatibility. Review the
+   [Supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-managed)
+   to confirm feature compatibility with the `TRAFFIC_DIRECTOR` control plane
+   and [evaluate a fleet's compatibility for control plane modernization](https://docs.cloud.google.com/service-mesh/docs/migrate/eligibility).
+3. Plan your modernization following the [modernization guide](https://docs.cloud.google.com/service-mesh/docs/modernization).
+
+For more details on the transition, see
+[Managed control plane](https://docs.cloud.google.com/service-mesh/docs/managed-control-plane-overview)
+documentation and monitor the
+[release notes](https://docs.cloud.google.com/service-mesh/docs/release-notes) for ongoing updates.
+
+---
 ## 2026-09-23
 
 ### Announcement

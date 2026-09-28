@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-09-28
+
+### Feature
+
+You can now write the output rows produced by
+[BigQuery continuous queries](https://docs.cloud.google.com/bigquery/docs/continuous-queries-introduction)
+directly into [Apache Iceberg managed
+tables](https://docs.cloud.google.com/bigquery/docs/biglake-iceberg-tables-in-bigquery). This lets you
+continuously process streaming data from BigQuery and write it into your
+open-format lakehouse by using an
+[`INSERT` DML statement](https://docs.cloud.google.com/bigquery/docs/continuous-queries#write-bigquery).
+
+---
 ## 2026-09-24
 
 ### Feature

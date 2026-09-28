@@ -1,5 +1,19 @@
 # Model Armor
 
+## 2026-09-28
+
+### Feature
+
+Template-specific exclusion rules are available in
+[Preview](https://cloud.google.com/products#product-launch-stages). This
+feature lets you configure dictionary (word and phrase lists) and regular
+expression rules to mitigate false-positive detections for prompt injection and
+jailbreak detection and responsible AI filters.
+
+For more information, see [Configure template-specific exclusion
+rules](https://docs.cloud.google.com/model-armor/configure-exclusion-rules).
+
+---
 ## 2026-09-24
 
 ### Feature

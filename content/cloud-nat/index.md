@@ -1,5 +1,13 @@
 # Cloud NAT
 
+## 2026-09-28
+
+### Feature
+
+**Preview**: Cloud NAT gateways for Private NAT support
+[source-based NAT rules](https://docs.cloud.google.com/nat/docs/nat-rules-overview) for IPv4 addresses.
+
+---
 ## 2026-06-30
 
 ### Feature

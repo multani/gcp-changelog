@@ -1,5 +1,24 @@
 # Cloud Logging
 
+## 2026-09-28
+
+### Deprecated
+
+The legacy Logging agent has officially reached its end of support. All standard
+maintenance and regular bug fixes for the agent have ceased. We recommend
+migrating to one of the [supported alternatives](https://docs.cloud.google.com/logging/docs/agent/index). For
+more information about this deprecation, see [Legacy Monitoring and Logging
+agents end of support](https://docs.cloud.google.com/stackdriver/docs/deprecations/logging-agent).
+
+### Breaking
+
+Only platform services can write log entries to billing accounts.
+These logs have names with the format
+`billingAccounts/[BILLING_ACCOUNT_ID]/logs/[LOG_ID]`.
+For more information, see
+[`entries.write`](https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/entries/write).
+
+---
 ## 2026-09-14
 
 ### Feature
@@ -7,7 +26,7 @@
 Starting with version 2.71.0, you can use an Ops Agent configuration option
 to export your metrics, logs, and traces by using the OpenTelemetry-based
 [Telemetry API](https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview) rather than
-by using the Cloud Monitoring API, Logging API, or Trace API
+by using the Cloud Monitoring API, Logging API, or Trace API.
 For more information, see
 [Use the Telemetry API](https://docs.cloud.google.com/monitoring/agent/ops-agent/use-telemetry-api).
 

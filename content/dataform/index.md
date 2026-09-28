@@ -1,5 +1,15 @@
 # Dataform
 
+## 2026-09-28
+
+### Feature
+
+[Extended access options and user credentials authentication](https://docs.cloud.google.com/dataform/docs/schedule-runs)
+for running and scheduling Dataform workflows are now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-09-21
 
 ### Feature

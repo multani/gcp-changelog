@@ -2916,6 +2916,50 @@
 
 
 <h1 id="cloud-service-mesh">Cloud Service Mesh</h1>
+<h2 id="2026-09-28">2026-09-28</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>Cloud Service Mesh support for the in-cluster <code>ISTIOD</code> control plane on Google
+Kubernetes Engine (GKE) on Google Cloud is deprecated as of September 28, 2026,
+and support will end on <strong>March 1, 2028</strong>. After March 1, 2028, in-cluster
+control plane components on GKE will not receive updates, security patches, or
+support from Google Cloud.</p>
+<p>Cloud Service Mesh with the in-cluster <code>ISTIOD</code> control plane on Google
+Distributed Cloud (software only) continues to be supported as described in
+<a href="https://docs.cloud.google.com/service-mesh/docs/supported-platforms#off-gcp">Supported platforms</a>.</p>
+<p>You must migrate your clusters to managed Cloud Service Mesh by March 1, 2028.
+review the <a href="https://docs.cloud.google.com/service-mesh/docs/supported-features-managed">Supported features</a>
+to confirm feature compatibility, and follow the
+<a href="https://docs.cloud.google.com/service-mesh/docs/tutorials/migrate-in-cluster-to-managed-on-new-cluster">migration guide</a>
+to transition to managed Cloud Service Mesh with the <code>TRAFFIC_DIRECTOR</code> control
+plane.</p>
+<p>For more details on the deprecation schedule, see
+<a href="https://docs.cloud.google.com/service-mesh/deprecations/">Deprecations</a>.</p>
+<h3 id="deprecated_1">Deprecated</h3>
+<p>Cloud Service Mesh support for the managed <code>ISTIOD</code> control plane on Google
+Kubernetes Engine (GKE) on Google Cloud is deprecated as of September 28, 2026,
+and support will end on <strong>March 1, 2028</strong>. After March 1, 2028, managed <code>ISTIOD</code>
+control plane components on GKE on Google Cloud will not receive updates,
+security patches, or support from Google Cloud, and workload sidecars on
+unmodernized clusters will fail and be unable to receive or send requests.</p>
+<p>Google Cloud is transitioning managed Cloud Service Mesh with Istio APIs to the
+<code>TRAFFIC_DIRECTOR</code> control plane implementation using Istio APIs. As part of
+this transition, support will also end for any features that are incompatible
+with the <code>TRAFFIC_DIRECTOR</code> control plane.</p>
+<p>To continue using managed Cloud Service Mesh on GKE, you must modernize your
+clusters by March 1, 2028:</p>
+<ol>
+<li>Confirm that you affected.</li>
+<li>Check your compatibility. Review the
+   <a href="https://docs.cloud.google.com/service-mesh/docs/supported-features-managed">Supported features</a>
+   to confirm feature compatibility with the <code>TRAFFIC_DIRECTOR</code> control plane
+   and <a href="https://docs.cloud.google.com/service-mesh/docs/migrate/eligibility">evaluate a fleet's compatibility for control plane modernization</a>.</li>
+<li>Plan your modernization following the <a href="https://docs.cloud.google.com/service-mesh/docs/modernization">modernization guide</a>.</li>
+</ol>
+<p>For more details on the transition, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/managed-control-plane-overview">Managed control plane</a>
+documentation and monitor the
+<a href="https://docs.cloud.google.com/service-mesh/docs/release-notes">release notes</a> for ongoing updates.</p>
+<hr />
 <h2 id="2026-09-23">2026-09-23</h2>
 <h3 id="announcement">Announcement</h3>
 <p><strong>1.30.4-asm.14 is now available for in-cluster Cloud Service Mesh.</strong></p>
@@ -9723,7 +9767,7 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
 </table>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
-<h3 id="deprecated">Deprecated</h3>
+<h3 id="deprecated_2">Deprecated</h3>
 <p>Support for the following features will end on <strong>March 17, 2027</strong>:</p>
 <ul>
 <li><a href="https://cloud.google.com/kubernetes-engine/multi-cloud/docs/aws/deprecations/deprecation-announcement">GKE on AWS</a></li>
@@ -10231,6 +10275,9 @@ workloads, you must manually restart any StatefulSets and Jobs.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-service-mesh">Cloud Service Mesh</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-28" class="nav-link">2026-09-28</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-23" class="nav-link">2026-09-23</a>
           </li>

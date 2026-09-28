@@ -1,5 +1,12 @@
 # Google Kubernetes Engine
 
+## 2026-09-28
+
+### Feature
+
+The storage-optimized [Z4D machine series](https://docs.cloud.google.com/compute/docs/storage-optimized-machines#z4d_series) is available with GKE clusters running 1.36.3-gke.1244000 or later. You can use Z4D machine types in Standard or Autopilot mode. For more information about limitations for this machine series in GKE, see [About machine support with GKE clusters](https://docs.cloud.google.com//kubernetes-engine/docs/concepts/machine-support#machine-support).
+
+---
 ## 2026-09-25
 
 ### Feature

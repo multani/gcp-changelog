@@ -2916,12 +2916,26 @@
 
 
 <h1 id="cloud-logging">Cloud Logging</h1>
+<h2 id="2026-09-28">2026-09-28</h2>
+<h3 id="deprecated">Deprecated</h3>
+<p>The legacy Logging agent has officially reached its end of support. All standard
+maintenance and regular bug fixes for the agent have ceased. We recommend
+migrating to one of the <a href="https://docs.cloud.google.com/logging/docs/agent/index">supported alternatives</a>. For
+more information about this deprecation, see <a href="https://docs.cloud.google.com/stackdriver/docs/deprecations/logging-agent">Legacy Monitoring and Logging
+agents end of support</a>.</p>
+<h3 id="breaking">Breaking</h3>
+<p>Only platform services can write log entries to billing accounts.
+These logs have names with the format
+<code>billingAccounts/[BILLING_ACCOUNT_ID]/logs/[LOG_ID]</code>.
+For more information, see
+<a href="https://docs.cloud.google.com/logging/docs/reference/v2/rest/v2/entries/write"><code>entries.write</code></a>.</p>
+<hr />
 <h2 id="2026-09-14">2026-09-14</h2>
 <h3 id="feature">Feature</h3>
 <p>Starting with version 2.71.0, you can use an Ops Agent configuration option
 to export your metrics, logs, and traces by using the OpenTelemetry-based
 <a href="https://docs.cloud.google.com/stackdriver/docs/reference/telemetry/overview">Telemetry API</a> rather than
-by using the Cloud Monitoring API, Logging API, or Trace API
+by using the Cloud Monitoring API, Logging API, or Trace API.
 For more information, see
 <a href="https://docs.cloud.google.com/monitoring/agent/ops-agent/use-telemetry-api">Use the Telemetry API</a>.</p>
 <hr />
@@ -3467,6 +3481,9 @@ information, see <a href="https://docs.cloud.google.com/logging/docs/analyze/que
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-logging">Cloud Logging</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-28" class="nav-link">2026-09-28</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-14" class="nav-link">2026-09-14</a>
           </li>

@@ -1,5 +1,17 @@
 # Cloud Monitoring
 
+## 2026-09-28
+
+### Deprecated
+
+The legacy Monitoring agent has officially reached its end of support. All
+standard maintenance and regular bug fixes for the agent have ceased. We
+recommend migrating to one of the [supported
+alternatives](https://docs.cloud.google.com/monitoring/agent/index). For more information about this
+deprecation, see [Legacy Monitoring and Logging agent end of
+support](https://docs.cloud.google.com/stackdriver/docs/deprecations/logging-agent).
+
+---
 ## 2026-09-14
 
 ### Feature

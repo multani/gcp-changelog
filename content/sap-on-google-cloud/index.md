@@ -1,5 +1,19 @@
 # SAP on Google Cloud
 
+## 2026-09-29
+
+### Announcement
+
+**Hyperdisk sizing widget for SAP HANA**
+
+To view Hyperdisk-based disk configurations that help you meet SAP HANA size and
+performance requirements, use the sizing widget that's available in the
+[Minimum sizes for SSD-based Persistent Disk or Hyperdisk volumes](https://docs.cloud.google.com/sap/docs/sap-hana-planning-guide#hana-minimum-pd-sizes-ssd-balanced)
+section of the SAP HANA planning guide. This widget lets you select an
+SAP-certified machine type and view up to three tailored disk configurations
+that Google Cloud recommends for it.
+
+---
 ## 2026-09-24
 
 ### Announcement

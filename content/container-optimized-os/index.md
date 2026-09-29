@@ -1,5 +1,344 @@
 # Container Optimized OS
 
+## 2026-09-28
+
+### Change
+
+
+
+### cos-133-19999-44-85
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.48](https://cos.googlesource.com/third_party/kernel/+/21a2b64279c09aacca101f3eeda3503a9fefeed0 ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/19999.44.85/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-129-19506-505-8
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.110](https://cos.googlesource.com/third_party/kernel/+/39c6d6f687e655460d68a8405647b6b44e6e688b ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.505.8/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-138-20162-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.51](https://cos.googlesource.com/third_party/kernel/+/e2eaa37d91b2b8020497e55ee941fa23bb334d64 ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/20162.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Change
+
+Enabled automatic loading of RDMA kernel modules when CX-9 devices are detected.
+
+### Change
+
+Ensure time sync prior to TLS handshake.
+
+### Change
+
+Enabled automatic loading of RDMA kernel modules when CX-9 devices are detected.
+
+### Change
+
+Ensure time sync prior to TLS handshake.
+
+### Fixed
+
+Added support for bare metal TPUs.
+
+### Change
+
+Ensure time sync prior to TLS handshake.
+
+### Security
+
+Fixed CVE-2026-0864 in dev-lang/python.
+
+### Change
+
+Updated cos-gpu-installer to v2.7.8.
+
+### Change
+
+Updated cos-gpu-installer to v2.7.8.
+
+### Change
+
+Updated google-guest-configs to v20260918.00.
+
+### Change
+
+Updated google-guest-configs to v20260918.00.
+
+### Security
+
+Upgraded net-misc/rsync to version 3.5.0. This fixes CVE-2026-53791, CVE-2026-53784, CVE-2026-53786, CVE-2026-53789, CVE-2026-53795, CVE-2026-53797, CVE-2026-53798, CVE-2026-53799, CVE-2026-53800, CVE-2026-53801, CVE-2026-53802, CVE-2026-53803, CVE-2026-70455, CVE-2026-70457, CVE-2026-70459, CVE-2026-70461, and CVE-2026-70463.
+
+### Change
+
+Updated the Linux kernel to v6.18.51.
+
+### Fixed
+
+Added support for NVIDIA driver v580.178.04.
+
+### Feature
+
+Added support for loading the CephFS kernel driver.
+
+### Fixed
+
+Added support for NVIDIA driver v595.91.07.
+
+### Fixed
+
+Added support for NVIDIA driver v580.178.04.
+
+### Fixed
+
+Added support for bare metal TPUs.
+
+### Fixed
+
+Added support for NVIDIA driver v595.91.07.
+
+### Fixed
+
+Fixed an issue where temporary efivarfs mounts under /tmp could persist after boot.
+
+### Fixed
+
+Added support for bare metal TPUs.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260902.00.
+
+### Fixed
+
+Fixed a bug which could cause DOCA workloads to fail to initialize.
+
+### Fixed
+
+Upgraded app-arch/zstd to v1.5.7-r1.
+
+### Fixed
+
+Fixed an issue where temporary efivarfs mounts under /tmp could persist after boot.
+
+### Fixed
+
+Upgraded containerd and containerd-test to v2.4.1.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260902.00.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.4.
+
+### Fixed
+
+Upgraded app-admin/sosreport to v4.12.0.
+
+### Fixed
+
+Upgraded dev-libs/libverto to v0.3.2-r1.
+
+### Fixed
+
+Upgraded app-arch/unzip to v6.0\_p31.
+
+### Fixed
+
+Upgraded dev-libs/libxml2 to v2.15.4.
+
+### Fixed
+
+Upgraded dev-libs/popt to v1.19-r1.
+
+### Fixed
+
+Upgraded app-arch/xz-utils to v5.8.4.
+
+### Security
+
+Fixed CVE-2026-15308 in dev-lang/python.
+
+### Fixed
+
+Upgraded app-misc/ca-certificates to v20260601.3.112.5.
+
+### Fixed
+
+Upgraded chromeos-base/chromeos-common-script to v0.0.1-r675.
+
+### Fixed
+
+Upgraded chromeos-base/debugd-client to v0.0.1-r2742.
+
+### Fixed
+
+Upgraded chromeos-base/google-breakpad to v2026.09.04.193747-r281.
+
+### Fixed
+
+Upgraded chromeos-base/power\_manager-client to v0.0.1-r2976.
+
+### Fixed
+
+Upgraded chromeos-base/session\_manager-client to v0.0.1-r2838.
+
+### Fixed
+
+Upgraded containerd and containerd-test to v2.4.1.
+
+### Fixed
+
+Upgraded dev-lang/luajit to v2.1.1787165859.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.4.
+
+### Fixed
+
+Upgraded dev-libs/json-c to v0.19-r2.
+
+### Fixed
+
+Upgraded dev-libs/libgcrypt to v1.12.3-r1.
+
+### Fixed
+
+Upgraded dev-libs/libpcre2 to v10.48.
+
+### Fixed
+
+Upgraded dev-libs/libxml2 to v2.15.4.
+
+### Fixed
+
+Upgraded dev-libs/xxhash to v0.8.3-r2.
+
+### Fixed
+
+Upgraded dev-python/pyjwt to v2.14.0.
+
+### Fixed
+
+Upgraded sys-devel/binutils-config to v5.6.
+
+### Security
+
+Fixed CVE-2026-0864 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2026-56391 in sys-apps/coreutils.
+
+### Security
+
+Fixed CVE-2026-90054 in the Linux kernel.
+
+### Security
+
+Upgraded net-misc/rsync to version 3.5.0. This fixes CVE-2026-53791, CVE-2026-53784, CVE-2026-53786, CVE-2026-53789, CVE-2026-53795, CVE-2026-53797, CVE-2026-53798, CVE-2026-53799, CVE-2026-53800, CVE-2026-53801, CVE-2026-53802, CVE-2026-53803, CVE-2026-70455, CVE-2026-70457, CVE-2026-70459, CVE-2026-70461, and CVE-2026-70463.
+
+### Change
+
+
+
+### cos-125-19216-700-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.110](https://cos.googlesource.com/third_party/kernel/+/393cf3f7db2dfb458f3f1513e7eb6ef3a81930ba ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.700.7/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Change
+
+Ensure time sync prior to TLS handshake.
+
+### Fixed
+
+Added support for bare metal TPUs.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188034 250714 376068
+
+### Change
+
+
+
+### cos-117-18613-767-2
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.157](https://cos.googlesource.com/third_party/kernel/+/04c29e4b70e72c933c0bf02443f8334f4bb78d32 ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.767.2/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Change
+
+Ensure time sync prior to TLS handshake.
+
+### Fixed
+
+Added support for bare metal TPUs.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260911.00.
+
+### Change
+
+
+
+### cos-121-18867-624-2
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.157](https://cos.googlesource.com/third_party/kernel/+/d3eba511730ad022ab42709e5700ada54b787344 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.624.2/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Fixed
+
+Added support for bare metal TPUs.
+
+### Fixed
+
+Upgraded app-arch/bzip2 to v1.0.8-r5.
+
+---
 ## 2026-09-17
 
 ### Change

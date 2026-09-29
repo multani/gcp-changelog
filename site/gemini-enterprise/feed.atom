@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-09-28T00:00:00+00:00</updated>
+  <updated>2026-09-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-09-29:feature:0</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Gemini 3.8 Flash is the default model for AlphaEvolve</strong></p>
+<p>AlphaEvolve experiments can now generate candidate programs with Gemini 3.7
+Flash and Gemini 3.8 Flash. Gemini 3.8 Flash is the default model AlphaEvolve
+uses when you do not explicitly specify a model, replacing Gemini 3.5 Flash.
+To use a different model, specify the one you want in the <code>models</code> field of
+<code>generationSettings</code>.</p>
+<p>Experiments created before this change keep the model recorded in their
+configuration.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/reference-guide/api-reference#supported-models">Supported
+models</a>.</p>]]></content>
+    <summary>AlphaEvolve now uses Gemini 3.8 Flash as the default model for generating candidate programs, replacing Gemini 3.5 Flash. You can still specify other models like Gemini 3.7 Flash or Gemini 3.8 Flash explicitly in your generation settings. Experiments created prior to this update will retain their previously configured model.</summary>
+    <title>Feature: Gemini 3.8 Flash is now default for AlphaEvolve</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -231,7 +251,7 @@ toggle in the Google Cloud console.</p>
     <content type="html"><![CDATA[<p><strong>Gemini Enterprise: New data stores and support for new actions (Preview)</strong></p>
 <p>The following data stores are available in Public Preview in Gemini Enterprise:</p>
 <ul>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d-and-b-risk-analytics">D&amp;B Risk Analytics</a> (actions supported)</li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d_b_risk_analytics">D&amp;B Risk Analytics</a> (actions supported)</li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/finnhub">Finnhub</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/grafana">Grafana</a></li>
 </ul>
@@ -241,8 +261,8 @@ natural language.</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/clay">Clay</a>: Find and enrich company, find and enrich contacts at company, and find and enrich list of contacts.</li>
 </ul>]]></content>
-    <summary>Gemini Enterprise now offers public preview access to new data stores including D&amp;B Risk Analytics, Finnhub, and Grafana, allowing users to search, read data, and perform actions with natural language. Additionally, the Clay data store has expanded its action capabilities for company and contact enrichment.</summary>
-    <title>Feature: Gemini Enterprise: New Data Stores and Actions Available</title>
+    <summary>Gemini Enterprise now offers public preview support for new data stores including D&amp;B Risk Analytics, Finnhub, and Grafana. These integrations allow users to search, read data, and perform actions using natural language. Additionally, Clay data store now supports new actions for company and contact enrichment.</summary>
+    <title>Feature: Gemini Enterprise: New Data Stores and Actions</title>
   </entry>
   <entry>
     <author>

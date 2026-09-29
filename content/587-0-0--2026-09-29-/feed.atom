@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 587.0.0 (2026-09-29)</title>
+  <subtitle>Changelog for Google Cloud product: 587.0.0 (2026-09-29)</subtitle>
+  <updated>2026-09-29T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/587-0-0--2026-09-29-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:breaking changes:0</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Cloud Storage)</strong> Removed <code>gcloud storage buckets anywhere-caches pause</code> command.</li>
+<li><strong>(Distributed Cloud Edge)</strong> Removed deprecated <code>gcloud edge-cloud container vpn-connections</code> command group.</li>
+</ul>]]></content>
+    <summary>The 'gcloud storage buckets anywhere-caches pause' command has been removed. Additionally, the deprecated 'gcloud edge-cloud container vpn-connections' command group is no longer available.</summary>
+    <title>Breaking Changes: Cloud Storage and Edge Cloud commands removed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:google cloud cli:1</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud</code> CLI to support Python v3.15.</li>
+<li>Updated Linux and Windows bundled Python to upgrade <code>grpcio</code> to 1.84.0 and remove <code>setuptools</code>.</li>
+</ul>]]></content>
+    <summary>The gcloud CLI has been updated to support Python v3.15. This update also includes an upgrade of grpcio to 1.84.0 and the removal of setuptools in the bundled Python for Linux and Windows.</summary>
+    <title>Google Cloud CLI: gcloud CLI updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:ai platform:2</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--agent-response-denial-message</code> flag to <code>gcloud ai
+  semantic-governance-policies create</code> and <code>gcloud ai
+  semantic-governance-policies update</code> (and their <code>beta</code> equivalents) to set a
+  custom message that is shown to end users when a policy denies a request.</li>
+</ul>]]></content>
+    <summary>You can now set a custom message for end users when an AI policy denies a request. This feature is available for creating and updating semantic governance policies using the `gcloud` command-line tool. The `--agent-response-denial-message` flag allows you to personalize the denial experience.</summary>
+    <title>AI Platform: Customizable denial messages for AI policies</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:agent registry:3</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud agent-registry bindings create</code> to make <code>--source-identifier</code> optional.</li>
+</ul>]]></content>
+    <summary>The `gcloud agent-registry bindings create` command now allows for an optional `--source-identifier`, providing more flexibility when creating agent bindings. This update simplifies the process for users who may not always have a specific source identifier readily available.</summary>
+    <title>Agent Registry: Agent Registry: Optional Source Identifier</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:alloydb:4</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted IAM Group user types to GA.</li>
+</ul>]]></content>
+    <summary>We are happy to announce that IAM group user types have been promoted to General Availability. This feature allows for more flexible and scalable management of user access within your organization.</summary>
+    <title>AlloyDB: IAM group user types now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:artifact registry:5</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated help text for <code>gcloud artifacts repositories create</code> to clarify that
+  custom remote repository URIs must use HTTPS.</li>
+</ul>]]></content>
+    <summary>The help text for `gcloud artifacts repositories create` has been updated. It now clarifies that custom remote repository URIs must use HTTPS for security and compatibility.</summary>
+    <title>Artifact Registry: Artifact Registry: Remote Repository URI Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:bigquery:6</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Modified <code>bq update --connection</code> to allow clearing
+  <code>serviceDirectoryService</code> on AWS and Azure cross-cloud connections by
+  passing <code>--service_directory_service=''</code> (when this flag value is empty,
+  BigQuery uses the public internet to query the data instead of Cross-Cloud
+  Interconnect).</li>
+<li>Updated <code>bq mk --migration_workflow</code>, <code>bq show --migration_workflow</code>, <code>bq rm
+  --migration_workflow</code>, and <code>bq ls --migration_workflow</code> to skip unnecessary
+  setup steps.</li>
+</ul>]]></content>
+    <summary>BigQuery has enhanced its connection management. The `bq update --connection` command now supports clearing the `serviceDirectoryService` for AWS and Azure cross-cloud connections, allowing BigQuery to use the public internet for data queries when needed. Additionally, commands related to migration workflows (`bq mk`, `bq show`, `bq rm`, `bq ls`) have been optimized to skip redundant setup steps.</summary>
+    <title>BigQuery: BigQuery connection updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud build:7</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--worker-release</code> flag to <code>gcloud builds submit</code>, <code>gcloud builds
+  worker-pools create</code>, and <code>gcloud builds worker-pools update</code> to
+  <a href="https://docs.cloud.google.com/build/docs/release-channels">specify the worker release channel or version</a>.</li>
+</ul>]]></content>
+    <summary>You can now specify the worker release channel or version using the `--worker-release` flag in Cloud Build. This flag is available for `gcloud builds submit`, `gcloud builds worker-pools create`, and `gcloud builds worker-pools update` commands. This feature allows for greater control over your build environment.</summary>
+    <title>Cloud Build: Control worker release versions</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud dataplex:8</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud dataplex dbt</code> to GA.</li>
+</ul>]]></content>
+    <summary>The integration between Cloud Dataplex and dbt (data build tool) has been promoted to General Availability. This allows users to leverage dbt's data transformation capabilities directly within Dataplex, streamlining data modeling and governance.</summary>
+    <title>Cloud Dataplex: Dataplex dbt integration now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud dataproc:9</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--multizone</code> flag to <code>gcloud dataproc clusters create</code> and <code>gcloud
+  dataproc workflow-templates set-managed-cluster</code> to allow creating a
+  multi-zonal cluster where instances can be created across multiple zones
+  within the region.</li>
+</ul>]]></content>
+    <summary>New flags allow you to create clusters across multiple zones within a region. This enables higher availability for your workloads.</summary>
+    <title>Cloud Dataproc: Create multi-zonal clusters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud filestore:10</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Made <code>--network</code> flag optional on <code>gcloud beta filestore instances create</code>
+  to support Private Service Connect (PSC) with user-created-endpoint.</li>
+</ul>]]></content>
+    <summary>The `--network` flag is now optional when creating Filestore instances. This change enhances support for Private Service Connect (PSC) configurations, allowing for user-created endpoints. This provides greater flexibility in how you connect to your Filestore instances.</summary>
+    <title>Cloud Filestore: Filestore instance creation is now more flexible</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud identity-aware proxy:11</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta iap tcp add-iam-policy-binding</code> which adds an IAM policy
+  binding to an Identity-Aware Proxy TCP IAM resource, including Cloud Run
+  tunnel resources.</li>
+<li>Added <code>gcloud beta iap tcp remove-iam-policy-binding</code> which removes an IAM
+  policy binding from an Identity-Aware Proxy TCP IAM resource, including
+  Cloud Run tunnel resources.</li>
+<li>Added <code>gcloud beta iap tcp get-iam-policy</code> which displays the IAM policy for
+  an Identity-Aware Proxy TCP IAM resource, including Cloud Run tunnel
+  resources.</li>
+<li>Added <code>gcloud beta iap tcp set-iam-policy</code> which replaces the IAM policy for
+  an Identity-Aware Proxy TCP IAM resource, including Cloud Run tunnel
+  resources.</li>
+</ul>]]></content>
+    <summary>New gcloud commands are available to manage IAM policies for Identity-Aware Proxy (IAP) TCP resources, including those for Cloud Run tunnels. These commands allow you to add, remove, get, and set IAM policy bindings, providing granular control over access to your proxied applications.</summary>
+    <title>Cloud Identity-Aware Proxy: Manage IAP TCP IAM Policies</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud managed lustre:12</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud lustre instances directory-policies</code> command group to GA.</li>
+<li>Added <code>--target-version</code> flag to GA <code>gcloud lustre instances create</code> and <code>gcloud lustre instances update</code>.</li>
+</ul>]]></content>
+    <summary>Cloud Managed Lustre has been updated with General Availability releases for key features, including directory policies and version targeting for instance creation and updates.</summary>
+    <title>Cloud Managed Lustre: Cloud Managed Lustre GA Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud run:13</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--[no-]use-http2</code> flag to <code>gcloud run instances deploy</code> to configure
+  whether to use HTTP/2 for connections to the instance.</li>
+<li>Added support for custom URLs with <code>--domain</code> flag in <code>gcloud beta run
+  deploy</code>.</li>
+<li>Added <code>gcloud beta run services ssh</code> which starts a secure, interactive
+  shell session with an instance of a Cloud Run service.</li>
+<li>Added <code>gcloud beta run instances ssh</code> which starts a secure, interactive
+  shell session with a Cloud Run instance.</li>
+<li>Promoted <code>type=ephemeral-disk</code> in <code>--add-volume</code> flag to GA for <code>gcloud run
+  deploy</code>, <code>gcloud run jobs deploy</code>, <code>gcloud run worker-pools deploy</code>,
+  '<code>gcloud run jobs create</code>, <code>gcloud run jobs update</code>, <code>gcloud run services
+  create</code>, <code>gcloud run worker-pools create</code>, and <code>gcloud run worker-pools
+  update</code>.</li>
+<li>Promoted <code>--scaling-cpu-target</code> and <code>--scaling-concurrency-target</code> flags to
+  the GA track for <code>gcloud run deploy</code> and <code>gcloud run services update</code>.</li>
+<li>Changed the maximum accepted value of the <code>--scaling-cpu-target</code> flag from
+  <code>0.95</code> to <code>0.90</code> to match the Cloud Run API.</li>
+</ul>]]></content>
+    <summary>The latest Cloud Run update brings enhanced control over instance connections with the --[no-]use-http2 flag, custom URL support via the --domain flag, and secure SSH access to service instances. Additionally, ephemeral disk support and scaling targets have been promoted to General Availability.</summary>
+    <title>Cloud Run: New features for Cloud Run services</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud tasks:14</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud alpha|beta tasks batch-create</code> command, which creates multiple
+  tasks from a JSON or YAML file in a single batch operation.</li>
+<li>Added <code>--from-file</code> and <code>--failed-tasks-file</code> to
+  <code>gcloud alpha|beta tasks delete</code>, which delete multiple tasks in a single
+  batch operation.</li>
+<li>Added the task-level retry flags <code>--max-attempts</code>, <code>--max-retry-duration</code>,
+  <code>--min-backoff</code>, <code>--max-backoff</code>, and <code>--max-doublings</code> to
+  <code>gcloud alpha|beta tasks create-http-task</code> and
+  <code>gcloud alpha|beta tasks create-app-engine-task</code>. These flags override the
+  queue-level retry configuration for an individual task.</li>
+</ul>]]></content>
+    <summary>Manage Cloud Tasks more efficiently with new batch operations for creating and deleting multiple tasks. You can now also configure task-level retries for individual tasks, overriding queue-level settings.</summary>
+    <title>Cloud Tasks: New batch operations for Cloud Tasks</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:cloud workstations:15</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added regional endpoint support for <code>gcloud workstations</code>.</li>
+</ul>]]></content>
+    <summary>Cloud Workstations now supports regional endpoints for `gcloud workstations`. This enhancement allows for more localized and efficient management of your workstations.</summary>
+    <title>Cloud Workstations: Cloud Workstations regional endpoints</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:compute engine:16</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>&lt;get|set&gt;-iam-policy</code> and <code>&lt;add|remove&gt;-iam-policy-binding</code> to
+  <code>gcloud beta compute ssl-policies</code>.</li>
+<li>Promote <code>--kms-key</code> flag for <code>gcloud compute snapshots create</code> to v1.</li>
+<li>Promoted <code>gcloud compute interconnects set-name</code> to GA.</li>
+<li>Added <code>--instance-flexibility-policy</code> flag for <code>gcloud compute instances
+  bulk create</code> command in beta.</li>
+<li>Added <code>min-cpu-platform</code> field in <code>--instance-selection</code> flag of <code>gcloud
+  compute instances bulk create</code> in beta.</li>
+<li>Updated <code>gcloud compute image-views list</code> to query public image projects by default and filter out deprecated images.</li>
+<li>Added <code>--standard-images</code>, <code>--preview-images</code>, and <code>--show-deprecated</code> flags to <code>gcloud compute image-views list</code>.</li>
+</ul>]]></content>
+    <summary>New features and GA promotions for Compute Engine commands in gcloud, including IAM policy management for SSL policies, snapshot KMS key promotion, interconnect name setting, and enhancements to instance bulk creation and image viewing.</summary>
+    <title>Compute Engine: Compute Engine gcloud Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:compute firewall policies:17</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--priority</code> and <code>--associated-policy-to-be-replaced</code> flags of
+  <code>gcloud compute network-firewall-policies associations create</code> to GA.</li>
+<li>Promoted <code>gcloud compute network-firewall-policies associations update</code>
+  command to GA.</li>
+</ul>]]></content>
+    <summary>We're happy to announce that the `--priority` and `--associated-policy-to-be-replaced` flags for creating firewall policy associations, as well as the `update` command for firewall policy associations, have now reached General Availability. This means these features are production-ready and available for use.</summary>
+    <title>Compute Firewall Policies: Firewall policy association updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:device run:18</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--locale</code> flag to <code>gcloud device-run sessions submit xctest</code> to switch the application locale before running tests.</li>
+<li>Promoted <code>gcloud device-run sessions submit android-executable</code> to beta.</li>
+</ul>]]></content>
+    <summary>You can now switch application locales with the --locale flag for xctest sessions. The android-executable command has also been promoted to beta.</summary>
+    <title>Device Run: New device run features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:network security:19</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud network-security rate-limit-policies</code> to beta.</li>
+</ul>]]></content>
+    <summary>We are excited to announce that network security rate limit policies have been promoted to beta. This new feature allows you to better protect your applications by controlling the rate of incoming traffic. With rate limiting, you can prevent abuse and ensure the availability of your services.</summary>
+    <title>Network Security: Network security rate limits reach beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:security command center:20</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--[no-]deletion-notifications-enabled</code> flag to <code>gcloud scc bqexports
+  create</code>, <code>gcloud scc bqexports update</code>, <code>gcloud scc notifications create</code>,
+  and <code>gcloud scc notifications update</code> to configure whether notifications are
+  sent for deleted findings.</li>
+</ul>]]></content>
+    <summary>You can now control whether notifications are sent when findings are deleted. Use the new --[no-]deletion-notifications-enabled flag in bqexports and notifications commands to manage this setting.</summary>
+    <title>Security Command Center: Configure Deletion Notifications for Findings</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:587-0-0--2026-09-29-:2026-09-29:vector search:21</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--dense-scann-target-recall</code> to <code>gcloud vector-search collections
+  data-objects search</code> to accept a query-time target recall (a value in <code>[0,
+  1]</code>) for dense index search.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>The `gcloud vector-search collections data-objects search` command now accepts `--dense-scann-target-recall` for query-time tuning of dense index search recall. This allows users to specify a target recall value between 0 and 1 to influence search results.</summary>
+    <title>Vector Search: Vector Search recall tuning</title>
+  </entry>
+</feed>

@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise",
   "entries": {
+    "2026-09-29": [
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: Gemini 3.8 Flash is the default model for AlphaEvolve**\n\nAlphaEvolve experiments can now generate candidate programs with Gemini 3.7\nFlash and Gemini 3.8 Flash. Gemini 3.8 Flash is the default model AlphaEvolve\nuses when you do not explicitly specify a model, replacing Gemini 3.5 Flash.\nTo use a different model, specify the one you want in the `models` field of\n`generationSettings`.\n\nExperiments created before this change keep the model recorded in their\nconfiguration.\n\nFor more information, see [Supported\nmodels](https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/reference-guide/api-reference#supported-models).",
+        "summary": {
+          "title": "Gemini 3.8 Flash is now default for AlphaEvolve",
+          "summary": "AlphaEvolve now uses Gemini 3.8 Flash as the default model for generating candidate programs, replacing Gemini 3.5 Flash. You can still specify other models like Gemini 3.7 Flash or Gemini 3.8 Flash explicitly in your generation settings. Experiments created prior to this update will retain their previously configured model."
+        }
+      }
+    ],
     "2026-09-28": [
       {
         "kind": "Feature",
@@ -88,10 +98,10 @@
     "2026-09-11": [
       {
         "kind": "Feature",
-        "content": "**Gemini Enterprise: New data stores and support for new actions (Preview)**\n\nThe following data stores are available in Public Preview in Gemini Enterprise:\n\n* [D&B Risk Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d-and-b-risk-analytics) (actions supported)\n* [Finnhub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/finnhub)\n* [Grafana](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/grafana)\n\nYou can search and read data from these data stores, and perform actions using\nnatural language.\n\nAdditionally, the following data store supports new actions in Public Preview:\n\n* [Clay](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/clay): Find and enrich company, find and enrich contacts at company, and find and enrich list of contacts.",
+        "content": "**Gemini Enterprise: New data stores and support for new actions (Preview)**\n\nThe following data stores are available in Public Preview in Gemini Enterprise:\n\n* [D&B Risk Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d_b_risk_analytics) (actions supported)\n* [Finnhub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/finnhub)\n* [Grafana](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/grafana)\n\nYou can search and read data from these data stores, and perform actions using\nnatural language.\n\nAdditionally, the following data store supports new actions in Public Preview:\n\n* [Clay](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/clay): Find and enrich company, find and enrich contacts at company, and find and enrich list of contacts.",
         "summary": {
-          "title": "Gemini Enterprise: New Data Stores and Actions Available",
-          "summary": "Gemini Enterprise now offers public preview access to new data stores including D&B Risk Analytics, Finnhub, and Grafana, allowing users to search, read data, and perform actions with natural language. Additionally, the Clay data store has expanded its action capabilities for company and contact enrichment."
+          "title": "Gemini Enterprise: New Data Stores and Actions",
+          "summary": "Gemini Enterprise now offers public preview support for new data stores including D&B Risk Analytics, Finnhub, and Grafana. These integrations allow users to search, read data, and perform actions using natural language. Additionally, Clay data store now supports new actions for company and contact enrichment."
         }
       }
     ],

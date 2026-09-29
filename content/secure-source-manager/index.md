@@ -1,5 +1,15 @@
 # Secure Source Manager
 
+## 2026-09-29
+
+### Feature
+
+Secure Source Manager webhooks now support service account authorization. For
+more information, see
+[Webhooks overview](https://docs.cloud.google.com/secure-source-manager/docs/webhooks-overview)
+and [Set up webhooks](https://docs.cloud.google.com/secure-source-manager/docs/set-up-webhooks).
+
+---
 ## 2026-09-16
 
 ### Feature

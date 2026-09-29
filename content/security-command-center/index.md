@@ -1,5 +1,15 @@
 # Security Command Center
 
+## 2026-09-29
+
+### Feature
+
+Event Threat Detection integrates with Sensitive Data Protection to enrich findings
+that affect sensitive resources.
+
+For more information, see [Sensitive data enrichment](https://docs.cloud.google.com/security-command-center/docs/concepts-event-threat-detection-overview#sdp-enrichment).
+
+---
 ## 2026-09-28
 
 ### Feature

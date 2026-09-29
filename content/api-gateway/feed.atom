@@ -2,9 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: API Gateway</title>
   <subtitle>Changelog for Google Cloud product: API Gateway</subtitle>
-  <updated>2026-09-11T00:00:00+00:00</updated>
+  <updated>2026-09-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:api-gateway</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/api-gateway/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:api-gateway:2026-09-29:feature:0</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Configure streaming for LLM responses and other traffic</strong></p>
+<p>You can now create API Gateway gateways that stream requests and responses instead of buffering them. This Public Preview feature supports incremental response delivery over HTTP/2 or HTTP/1.1 chunked transfer encoding, Server-Sent Events (SSE), WebSockets, and gRPC bidirectional streaming. A common use is streaming token-by-token responses from a large language model (LLM).</p>
+<p>To enable streaming, create a gateway with the <code>--enable-streaming</code> flag. The streaming mode is fixed when you create the gateway and can't be changed later.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/streaming-configure">Configure streaming for LLM responses and other traffic</a>.</p>]]></content>
+    <summary>You can now create API Gateway gateways that stream requests and responses instead of buffering them. This feature supports incremental response delivery over HTTP/2 or HTTP/1.1 chunked transfer encoding, Server-Sent Events (SSE), WebSockets, and gRPC bidirectional streaming. A common use is streaming token-by-token responses from a large language model (LLM).</summary>
+    <title>Feature: API Gateway now supports streaming</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

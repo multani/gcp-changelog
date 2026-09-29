@@ -1,5 +1,24 @@
 # Gemini Enterprise
 
+## 2026-09-29
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.8 Flash is the default model for AlphaEvolve**
+
+AlphaEvolve experiments can now generate candidate programs with Gemini 3.7
+Flash and Gemini 3.8 Flash. Gemini 3.8 Flash is the default model AlphaEvolve
+uses when you do not explicitly specify a model, replacing Gemini 3.5 Flash.
+To use a different model, specify the one you want in the `models` field of
+`generationSettings`.
+
+Experiments created before this change keep the model recorded in their
+configuration.
+
+For more information, see [Supported
+models](https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/reference-guide/api-reference#supported-models).
+
+---
 ## 2026-09-28
 
 ### Feature
@@ -193,7 +212,7 @@ For more information, see the following:
 
 The following data stores are available in Public Preview in Gemini Enterprise:
 
-* [D&B Risk Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d-and-b-risk-analytics) (actions supported)
+* [D&B Risk Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d_b_risk_analytics) (actions supported)
 * [Finnhub](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/finnhub)
 * [Grafana](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/grafana)
 

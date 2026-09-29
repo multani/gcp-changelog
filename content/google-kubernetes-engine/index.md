@@ -69,7 +69,7 @@ multiple days to complete across all Google Cloud zones.
   + [1.34.11-gke.1209000](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.34#1-34-11-gke-1209000)
   + [1.35.8-gke.1626000](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.35#1-35-8-gke-1626000)
   + [1.36.4-gke.1495000](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.36#1-36-4-gke-1495000)
-* [Alpha version](https://cloud.google.com/kubernetes-engine/versioning#alpha-versions) [1.38.0-gke.1002000+preview](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.38#1-38-0-gke-1002000-preview) is now available for GKE alpha clusters in the Rapid channel.
+* [Alpha version](https://cloud.google.com/kubernetes-engine/versioning#alpha-versions) 1.38.0-gke.1002000+preview is now available for GKE alpha clusters in the Rapid channel.
 * The following versions are no longer available in the Rapid channel:
   + 1.34.11-gke.1056000
   + 1.35.8-gke.1380000
@@ -257,7 +257,7 @@ multiple days to complete across all Google Cloud zones.
   + [1.34.11-gke.1209000](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.34#1-34-11-gke-1209000)
   + [1.35.8-gke.1626000](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.35#1-35-8-gke-1626000)
   + [1.36.4-gke.1495000](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.36#1-36-4-gke-1495000)
-* [Alpha version](https://cloud.google.com/kubernetes-engine/versioning#alpha-versions) [1.38.0-gke.1002000+preview](https://docs.cloud.google.com/kubernetes-engine/docs/changelogs/1.38#1-38-0-gke-1002000-preview) is now available for GKE alpha clusters in the Rapid channel.
+* [Alpha version](https://cloud.google.com/kubernetes-engine/versioning#alpha-versions) 1.38.0-gke.1002000+preview is now available for GKE alpha clusters in the Rapid channel.
 * The following versions are no longer available in the Rapid channel:
   + 1.34.11-gke.1056000
   + 1.35.8-gke.1380000

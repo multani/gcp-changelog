@@ -1,5 +1,13 @@
 # Access Transparency
 
+## 2026-09-24
+
+### Feature
+
+Fault Injection Testing is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-09-07
 
 ### Feature

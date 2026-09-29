@@ -1,5 +1,18 @@
 # API Gateway
 
+## 2026-09-29
+
+### Feature
+
+**Configure streaming for LLM responses and other traffic**
+
+You can now create API Gateway gateways that stream requests and responses instead of buffering them. This Public Preview feature supports incremental response delivery over HTTP/2 or HTTP/1.1 chunked transfer encoding, Server-Sent Events (SSE), WebSockets, and gRPC bidirectional streaming. A common use is streaming token-by-token responses from a large language model (LLM).
+
+To enable streaming, create a gateway with the `--enable-streaming` flag. The streaming mode is fixed when you create the gateway and can't be changed later.
+
+For more information, see [Configure streaming for LLM responses and other traffic](https://docs.cloud.google.com/api-gateway/docs/streaming-configure).
+
+---
 ## 2026-09-11
 
 ### Feature

@@ -1,0 +1,183 @@
+{
+  "name": "587.0.0 (2026-09-29)",
+  "entries": {
+    "2026-09-29": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Cloud Storage)** Removed `gcloud storage buckets anywhere-caches pause` command.\n* **(Distributed Cloud Edge)** Removed deprecated `gcloud edge-cloud container vpn-connections` command group.",
+        "summary": {
+          "title": "Cloud Storage and Edge Cloud commands removed",
+          "summary": "The 'gcloud storage buckets anywhere-caches pause' command has been removed. Additionally, the deprecated 'gcloud edge-cloud container vpn-connections' command group is no longer available."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Updated `gcloud` CLI to support Python v3.15.\n* Updated Linux and Windows bundled Python to upgrade `grpcio` to 1.84.0 and remove `setuptools`.",
+        "summary": {
+          "title": "gcloud CLI updated",
+          "summary": "The gcloud CLI has been updated to support Python v3.15. This update also includes an upgrade of grpcio to 1.84.0 and the removal of setuptools in the bundled Python for Linux and Windows."
+        }
+      },
+      {
+        "kind": "AI Platform",
+        "content": "* Added `--agent-response-denial-message` flag to `gcloud ai\n  semantic-governance-policies create` and `gcloud ai\n  semantic-governance-policies update` (and their `beta` equivalents) to set a\n  custom message that is shown to end users when a policy denies a request.",
+        "summary": {
+          "title": "Customizable denial messages for AI policies",
+          "summary": "You can now set a custom message for end users when an AI policy denies a request. This feature is available for creating and updating semantic governance policies using the `gcloud` command-line tool. The `--agent-response-denial-message` flag allows you to personalize the denial experience."
+        }
+      },
+      {
+        "kind": "Agent Registry",
+        "content": "* Updated `gcloud agent-registry bindings create` to make `--source-identifier` optional.",
+        "summary": {
+          "title": "Agent Registry: Optional Source Identifier",
+          "summary": "The `gcloud agent-registry bindings create` command now allows for an optional `--source-identifier`, providing more flexibility when creating agent bindings. This update simplifies the process for users who may not always have a specific source identifier readily available."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Promoted IAM Group user types to GA.",
+        "summary": {
+          "title": "IAM group user types now generally available",
+          "summary": "We are happy to announce that IAM group user types have been promoted to General Availability. This feature allows for more flexible and scalable management of user access within your organization."
+        }
+      },
+      {
+        "kind": "Artifact Registry",
+        "content": "* Updated help text for `gcloud artifacts repositories create` to clarify that\n  custom remote repository URIs must use HTTPS.",
+        "summary": {
+          "title": "Artifact Registry: Remote Repository URI Update",
+          "summary": "The help text for `gcloud artifacts repositories create` has been updated. It now clarifies that custom remote repository URIs must use HTTPS for security and compatibility."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Modified `bq update --connection` to allow clearing\n  `serviceDirectoryService` on AWS and Azure cross-cloud connections by\n  passing `--service_directory_service=''` (when this flag value is empty,\n  BigQuery uses the public internet to query the data instead of Cross-Cloud\n  Interconnect).\n* Updated `bq mk --migration_workflow`, `bq show --migration_workflow`, `bq rm\n  --migration_workflow`, and `bq ls --migration_workflow` to skip unnecessary\n  setup steps.",
+        "summary": {
+          "title": "BigQuery connection updates",
+          "summary": "BigQuery has enhanced its connection management. The `bq update --connection` command now supports clearing the `serviceDirectoryService` for AWS and Azure cross-cloud connections, allowing BigQuery to use the public internet for data queries when needed. Additionally, commands related to migration workflows (`bq mk`, `bq show`, `bq rm`, `bq ls`) have been optimized to skip redundant setup steps."
+        }
+      },
+      {
+        "kind": "Cloud Build",
+        "content": "* Added `--worker-release` flag to `gcloud builds submit`, `gcloud builds\n  worker-pools create`, and `gcloud builds worker-pools update` to\n  [specify the worker release channel or version](https://docs.cloud.google.com/build/docs/release-channels).",
+        "summary": {
+          "title": "Control worker release versions",
+          "summary": "You can now specify the worker release channel or version using the `--worker-release` flag in Cloud Build. This flag is available for `gcloud builds submit`, `gcloud builds worker-pools create`, and `gcloud builds worker-pools update` commands. This feature allows for greater control over your build environment."
+        }
+      },
+      {
+        "kind": "Cloud Dataplex",
+        "content": "* Promoted `gcloud dataplex dbt` to GA.",
+        "summary": {
+          "title": "Dataplex dbt integration now generally available",
+          "summary": "The integration between Cloud Dataplex and dbt (data build tool) has been promoted to General Availability. This allows users to leverage dbt's data transformation capabilities directly within Dataplex, streamlining data modeling and governance."
+        }
+      },
+      {
+        "kind": "Cloud Dataproc",
+        "content": "* Added `--multizone` flag to `gcloud dataproc clusters create` and `gcloud\n  dataproc workflow-templates set-managed-cluster` to allow creating a\n  multi-zonal cluster where instances can be created across multiple zones\n  within the region.",
+        "summary": {
+          "title": "Create multi-zonal clusters",
+          "summary": "New flags allow you to create clusters across multiple zones within a region. This enables higher availability for your workloads."
+        }
+      },
+      {
+        "kind": "Cloud Filestore",
+        "content": "* Made `--network` flag optional on `gcloud beta filestore instances create`\n  to support Private Service Connect (PSC) with user-created-endpoint.",
+        "summary": {
+          "title": "Filestore instance creation is now more flexible",
+          "summary": "The `--network` flag is now optional when creating Filestore instances. This change enhances support for Private Service Connect (PSC) configurations, allowing for user-created endpoints. This provides greater flexibility in how you connect to your Filestore instances."
+        }
+      },
+      {
+        "kind": "Cloud Identity-Aware Proxy",
+        "content": "* Added `gcloud beta iap tcp add-iam-policy-binding` which adds an IAM policy\n  binding to an Identity-Aware Proxy TCP IAM resource, including Cloud Run\n  tunnel resources.\n* Added `gcloud beta iap tcp remove-iam-policy-binding` which removes an IAM\n  policy binding from an Identity-Aware Proxy TCP IAM resource, including\n  Cloud Run tunnel resources.\n* Added `gcloud beta iap tcp get-iam-policy` which displays the IAM policy for\n  an Identity-Aware Proxy TCP IAM resource, including Cloud Run tunnel\n  resources.\n* Added `gcloud beta iap tcp set-iam-policy` which replaces the IAM policy for\n  an Identity-Aware Proxy TCP IAM resource, including Cloud Run tunnel\n  resources.",
+        "summary": {
+          "title": "Manage IAP TCP IAM Policies",
+          "summary": "New gcloud commands are available to manage IAM policies for Identity-Aware Proxy (IAP) TCP resources, including those for Cloud Run tunnels. These commands allow you to add, remove, get, and set IAM policy bindings, providing granular control over access to your proxied applications."
+        }
+      },
+      {
+        "kind": "Cloud Managed Lustre",
+        "content": "* Promoted `gcloud lustre instances directory-policies` command group to GA.\n* Added `--target-version` flag to GA `gcloud lustre instances create` and `gcloud lustre instances update`.",
+        "summary": {
+          "title": "Cloud Managed Lustre GA Updates",
+          "summary": "Cloud Managed Lustre has been updated with General Availability releases for key features, including directory policies and version targeting for instance creation and updates."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added `--[no-]use-http2` flag to `gcloud run instances deploy` to configure\n  whether to use HTTP/2 for connections to the instance.\n* Added support for custom URLs with `--domain` flag in `gcloud beta run\n  deploy`.\n* Added `gcloud beta run services ssh` which starts a secure, interactive\n  shell session with an instance of a Cloud Run service.\n* Added `gcloud beta run instances ssh` which starts a secure, interactive\n  shell session with a Cloud Run instance.\n* Promoted `type=ephemeral-disk` in `--add-volume` flag to GA for `gcloud run\n  deploy`, `gcloud run jobs deploy`, `gcloud run worker-pools deploy`,\n  '`gcloud run jobs create`, `gcloud run jobs update`, `gcloud run services\n  create`, `gcloud run worker-pools create`, and `gcloud run worker-pools\n  update`.\n* Promoted `--scaling-cpu-target` and `--scaling-concurrency-target` flags to\n  the GA track for `gcloud run deploy` and `gcloud run services update`.\n* Changed the maximum accepted value of the `--scaling-cpu-target` flag from\n  `0.95` to `0.90` to match the Cloud Run API.",
+        "summary": {
+          "title": "New features for Cloud Run services",
+          "summary": "The latest Cloud Run update brings enhanced control over instance connections with the --[no-]use-http2 flag, custom URL support via the --domain flag, and secure SSH access to service instances. Additionally, ephemeral disk support and scaling targets have been promoted to General Availability."
+        }
+      },
+      {
+        "kind": "Cloud Tasks",
+        "content": "* Added `gcloud alpha|beta tasks batch-create` command, which creates multiple\n  tasks from a JSON or YAML file in a single batch operation.\n* Added `--from-file` and `--failed-tasks-file` to\n  `gcloud alpha|beta tasks delete`, which delete multiple tasks in a single\n  batch operation.\n* Added the task-level retry flags `--max-attempts`, `--max-retry-duration`,\n  `--min-backoff`, `--max-backoff`, and `--max-doublings` to\n  `gcloud alpha|beta tasks create-http-task` and\n  `gcloud alpha|beta tasks create-app-engine-task`. These flags override the\n  queue-level retry configuration for an individual task.",
+        "summary": {
+          "title": "New batch operations for Cloud Tasks",
+          "summary": "Manage Cloud Tasks more efficiently with new batch operations for creating and deleting multiple tasks. You can now also configure task-level retries for individual tasks, overriding queue-level settings."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Added regional endpoint support for `gcloud workstations`.",
+        "summary": {
+          "title": "Cloud Workstations regional endpoints",
+          "summary": "Cloud Workstations now supports regional endpoints for `gcloud workstations`. This enhancement allows for more localized and efficient management of your workstations."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `<get|set>-iam-policy` and `<add|remove>-iam-policy-binding` to\n  `gcloud beta compute ssl-policies`.\n* Promote `--kms-key` flag for `gcloud compute snapshots create` to v1.\n* Promoted `gcloud compute interconnects set-name` to GA.\n* Added `--instance-flexibility-policy` flag for `gcloud compute instances\n  bulk create` command in beta.\n* Added `min-cpu-platform` field in `--instance-selection` flag of `gcloud\n  compute instances bulk create` in beta.\n* Updated `gcloud compute image-views list` to query public image projects by default and filter out deprecated images.\n* Added `--standard-images`, `--preview-images`, and `--show-deprecated` flags to `gcloud compute image-views list`.",
+        "summary": {
+          "title": "Compute Engine gcloud Updates",
+          "summary": "New features and GA promotions for Compute Engine commands in gcloud, including IAM policy management for SSL policies, snapshot KMS key promotion, interconnect name setting, and enhancements to instance bulk creation and image viewing."
+        }
+      },
+      {
+        "kind": "Compute Firewall Policies",
+        "content": "* Promoted `--priority` and `--associated-policy-to-be-replaced` flags of\n  `gcloud compute network-firewall-policies associations create` to GA.\n* Promoted `gcloud compute network-firewall-policies associations update`\n  command to GA.",
+        "summary": {
+          "title": "Firewall policy association updates",
+          "summary": "We're happy to announce that the `--priority` and `--associated-policy-to-be-replaced` flags for creating firewall policy associations, as well as the `update` command for firewall policy associations, have now reached General Availability. This means these features are production-ready and available for use."
+        }
+      },
+      {
+        "kind": "Device Run",
+        "content": "* Added `--locale` flag to `gcloud device-run sessions submit xctest` to switch the application locale before running tests.\n* Promoted `gcloud device-run sessions submit android-executable` to beta.",
+        "summary": {
+          "title": "New device run features",
+          "summary": "You can now switch application locales with the --locale flag for xctest sessions. The android-executable command has also been promoted to beta."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Promoted `gcloud network-security rate-limit-policies` to beta.",
+        "summary": {
+          "title": "Network security rate limits reach beta",
+          "summary": "We are excited to announce that network security rate limit policies have been promoted to beta. This new feature allows you to better protect your applications by controlling the rate of incoming traffic. With rate limiting, you can prevent abuse and ensure the availability of your services."
+        }
+      },
+      {
+        "kind": "Security Command Center",
+        "content": "* Added `--[no-]deletion-notifications-enabled` flag to `gcloud scc bqexports\n  create`, `gcloud scc bqexports update`, `gcloud scc notifications create`,\n  and `gcloud scc notifications update` to configure whether notifications are\n  sent for deleted findings.",
+        "summary": {
+          "title": "Configure Deletion Notifications for Findings",
+          "summary": "You can now control whether notifications are sent when findings are deleted. Use the new --[no-]deletion-notifications-enabled flag in bqexports and notifications commands to manage this setting."
+        }
+      },
+      {
+        "kind": "Vector Search",
+        "content": "* Added `--dense-scann-target-recall` to `gcloud vector-search collections\n  data-objects search` to accept a query-time target recall (a value in `[0,\n  1]`) for dense index search.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Vector Search recall tuning",
+          "summary": "The `gcloud vector-search collections data-objects search` command now accepts `--dense-scann-target-recall` for query-time tuning of dense index search recall. This allows users to specify a target recall value between 0 and 1 to influence search results."
+        }
+      }
+    ]
+  }
+}

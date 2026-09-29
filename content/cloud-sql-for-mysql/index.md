@@ -18,6 +18,18 @@ To retain export capabilities, assign the Cloud SQL Editor
 For more information, see
 [Cloud SQL roles](https://docs.cloud.google.com/sql/docs/mysql/iam-roles).
 
+### Change
+
+Cloud SQL for MySQL 9.7.1 is upgraded to MySQL 9.7.2. For more information, see
+the [MySQL 9.7.2 Release Notes](https://dev.mysql.com/doc/relnotes/mysql/9.7/en/news-9-7-2.html)
+and [Cloud SQL database versions](https://docs.cloud.google.com/sql/docs/mysql/db-versions).
+
+### Change
+
+Cloud SQL for MySQL 8.4.10 is upgraded to MySQL 8.4.11. For more information,
+see the [MySQL 8.4.11 Release Notes](https://dev.mysql.com/doc/relnotes/mysql/8.4/en/news-8-4-11.html)
+and [Cloud SQL database versions](https://docs.cloud.google.com/sql/docs/mysql/db-versions).
+
 ---
 ## 2026-09-21
 

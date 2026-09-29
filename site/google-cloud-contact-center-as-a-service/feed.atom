@@ -2,9 +2,118 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-09-23T00:00:00+00:00</updated>
+  <updated>2026-09-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-25:announcement:0</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards 6.14</strong></p>
+<p>We've released version 6.14 of the advanced reporting dashboards.</p>]]></content>
+    <summary>Version 6.14 of the advanced reporting dashboards has been released. This update provides enhanced features for your data analysis needs.</summary>
+    <title>Announcement: New reporting dashboards available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-25:feature:1</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Two new tables in the Real-time Queue Monitoring - Calls dashboard: Today's
+Scheduled Calls and Upcoming Scheduled Calls</strong></p>
+<p>We've added two new tables to the <strong>Real-time Queue Monitoring - Calls</strong>
+dashboard: <strong>Today's Scheduled Calls</strong> and <strong>Upcoming Scheduled Calls</strong>. These
+tables display pending scheduled calls across your allowed scheduling window,
+regardless of when they were initially created. The tables provide actionable
+details for each scheduled call, including the time until the call is due, an
+overdue flag, and a direct CRM link to the scheduled call. With these tables,
+you can view your full schedule of pending callbacks to help you plan staffing.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-queue-monitor">Queue monitoring
+dashboards</a>.</p>]]></content>
+    <summary>Two new tables, Today's Scheduled Calls and Upcoming Scheduled Calls, have been added to the Real-time Queue Monitoring - Calls dashboard. These tables display pending scheduled calls with actionable details, helping you plan staffing by visualizing your full schedule of pending callbacks.</summary>
+    <title>Feature: New Scheduled Calls Tables Added</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-25:fixed:2</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue that caused delays when loading and refreshing real-time
+  agent dashboards.</li>
+<li>Fixed an issue where the <strong>Queue Group</strong> and <strong>Queue Name</strong> filters inflated
+  agent counts by including historical, rather than just current, queue
+  assignments. If you have alerts or thresholds based on the previously
+  inflated counts, update them to reflect the new, accurate counts.</li>
+<li>Fixed an issue where certain queues were incorrectly mapped or dropped
+  entirely from <strong>Queue Group</strong> filter results.</li>
+<li>Fixed an issue where the <strong>Is Inbound Call</strong> and <strong>Is Inbound Chat</strong>
+  columns in the <strong>Live Agent Data</strong> table on the <strong>Real-time Agent
+  Monitoring</strong> dashboard displayed inverted values, incorrectly showing <code>No</code>
+  for inbound interactions and <code>Yes</code> for outbound. This update also
+  standardizes how interaction direction is defined across all reports,
+  ensuring accurate classification and filtering for API-dialed calls,
+  scheduled callbacks, and direct inbound calls. Additionally, it introduces
+  several enhancements to reporting dashboards to ensure accurate timezone
+  formatting, correct CSAT population by direction, and proper queue time
+  tracking for newer call types.</li>
+<li>Fixed an issue where the <strong>Queue Time</strong> column of the <strong>Queued Calls</strong> tile
+  in advanced reporting displayed inflated wait times for calls that
+  re-entered a queue after being answered or transferred.</li>
+<li>Fixed an issue where agents performing mandatory after-call work were
+  incorrectly classified as "In-Call" instead of "Wrap-up" on real-time
+  reporting dashboards. You can expect a decrease in active "In-Call" agent
+  counts and a corresponding increase in "Wrap-up" statuses across your live
+  monitoring views. This change only affects dashboard reporting and doesn't
+  affect agent routing or historical data. No action is required.</li>
+<li>Fixed an issue where the SLA Target on the <strong>Real-time Channel Performance</strong>
+  dashboards appeared blank for queues with no recent activity or when
+  filters matched no configured queues.</li>
+<li>Fixed an issue where the <strong>Missed Interactions</strong> dashboards double-counted
+  declined calls and inflated missed chat volumes by incorrectly including
+  agent response-time alerts. You can expect chat volumes to drop and average
+  missed chat time to rise.</li>
+<li>Fixed an issue where selecting the <strong>Subtotals</strong> option for call queue
+  metrics for a Look returned an error.</li>
+<li>Fixed an issue in downloadable call and chat history reports where
+  French-language calls incorrectly appeared under English queue names.</li>
+<li>
+<p>Fixed an issue where scheduled calls disappeared from real-time reporting
+  dashboards 12 hours after their creation, which caused the metric to
+  undercount the total number of upcoming scheduled calls.</p>
+</li>
+<li>
+<p>Fixed an issue where filter options for agent and team data in advanced
+  reporting dashboards weren't correctly scoped to the user's assigned
+  permissions.</p>
+</li>
+<li>Fixed an issue where the <strong>Agents</strong> monitoring page became unresponsive when
+  displaying large numbers of agents, causing significant latency when
+  navigating to other pages.</li>
+<li>
+<p>Fixed an issue that caused the following problems with raw data exports:</p>
+</li>
+<li>
+<p>Poor export performance due to inefficient database queries.</p>
+</li>
+<li>In the <code>call_recordings</code> export, the <code>url</code> field incorrectly contained a
+    timestamp instead of the actual recording URL.</li>
+</ul>
+<p>The <code>url</code> field now contains the correct recording URL, and the timestamp
+  has been moved to a newly added <code>updated_at</code> field. If you ingest
+  <code>call_recordings</code> data using a fixed schema, update your data mappings to
+  accommodate these changes.</p>]]></content>
+    <summary>This release resolves several issues impacting real-time dashboards and data exports. Key fixes include accurate agent status reporting, corrected queue metrics, and improved data export reliability, ensuring more precise monitoring and reporting.</summary>
+    <title>Fixed: Resolved reporting and data accuracy issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -99,117 +208,6 @@ teams</a>.</p>]]></content>
 </ul>]]></content>
     <summary>This release resolves numerous issues affecting chat sessions, agent status, call routing, and transcript generation. Key fixes include improved startup latency, correct agent status management, and accurate handling of dialed numbers and call recordings.</summary>
     <title>Fixed: Resolved Several Issues</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-23:announcement:3</id>
-    <published>2026-09-23T00:00:00+00:00</published>
-    <updated>2026-09-23T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards prerelease notes 6.14</strong></p>
-<p>Here are the prerelease notes for updates to the advanced reporting dashboards
-and other reporting in CCAI Platform. When we release these updates, we
-expect the new capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of the advanced reporting dashboards could be
-greater than 6.14.</p>]]></content>
-    <summary>Updates to advanced reporting dashboards and other reporting features in CCAI Platform are coming soon. These updates will introduce new capabilities, with the next version potentially exceeding 6.14.</summary>
-    <title>Announcement: New reporting features coming soon</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-23:feature:4</id>
-    <published>2026-09-23T00:00:00+00:00</published>
-    <updated>2026-09-23T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Two new tiles in the Real-time Queue Monitoring - Calls dashboard: Today's
-Scheduled Calls and Upcoming Scheduled Calls</strong></p>
-<p>We've added two new tiles to the <strong>Real-time Queue Monitoring - Calls</strong>
-dashboard: <strong>Today's Scheduled Calls</strong> and <strong>Upcoming Scheduled Calls</strong>. These
-tiles display pending scheduled calls across your allowed scheduling window,
-regardless of when they were initially created. The tiles provide actionable
-details for each scheduled call, including the time until the call is due, an
-overdue flag, and a direct CRM link to the scheduled call. With these tiles, you
-can view your full schedule of pending callbacks to help you plan staffing.</p>]]></content>
-    <summary>Two new tiles, 'Today's Scheduled Calls' and 'Upcoming Scheduled Calls', have been added to the Real-time Queue Monitoring - Calls dashboard. These tiles offer actionable details on pending scheduled calls, including due times and CRM links, to help with staffing and planning.</summary>
-    <title>Feature: New Scheduled Calls Dashboard Tiles</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-23:fixed:5</id>
-    <published>2026-09-23T00:00:00+00:00</published>
-    <updated>2026-09-23T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue that caused delays when loading and refreshing real-time
-  agent dashboards.</li>
-<li>Fixed an issue where the <strong>Queue Group</strong> and <strong>Queue Name</strong> filters inflated
-  agent counts by including historical, rather than just current, queue
-  assignments. If you have alerts or thresholds based on the previously
-  inflated counts, update them to reflect the new, accurate counts.</li>
-<li>Fixed an issue where certain queues were incorrectly mapped or dropped
-  entirely from <strong>Queue Group</strong> filter results.</li>
-<li>Fixed an issue where the <strong>Is Inbound Call</strong> and <strong>Is Inbound Chat</strong>
-  columns in the <strong>Live Agent Data</strong> table on the <strong>Real-time Agent
-  Monitoring</strong> dashboard displayed inverted values, incorrectly showing <code>No</code>
-  for inbound interactions and <code>Yes</code> for outbound. This update also
-  standardizes how interaction direction is defined across all reports,
-  ensuring accurate classification and filtering for API-dialed calls,
-  scheduled callbacks, and direct inbound calls. Additionally, it introduces
-  several enhancements to reporting dashboards to ensure accurate timezone
-  formatting, correct CSAT population by direction, and proper queue time
-  tracking for newer call types.</li>
-<li>Fixed an issue where the <strong>Queue Time</strong> column of the <strong>Queued Calls</strong> tile
-  in advanced reporting displayed inflated wait times for calls that
-  re-entered a queue after being answered or transferred.</li>
-<li>Fixed an issue where agents performing mandatory after-call work were
-  incorrectly classified as "In-Call" instead of "Wrap-up" on real-time
-  reporting dashboards. You can expect a decrease in active "In-Call" agent
-  counts and a corresponding increase in "Wrap-up" statuses across your live
-  monitoring views. This change only affects dashboard reporting and doesn't
-  affect agent routing or historical data. No action is required.</li>
-<li>Fixed an issue where the SLA Target on the <strong>Real-time Channel Performance</strong>
-  dashboards appeared blank for queues with no recent activity or when
-  filters matched no configured queues.</li>
-<li>Fixed an issue where the <strong>Missed Interactions</strong> dashboards double-counted
-  declined calls and inflated missed chat volumes by incorrectly including
-  agent response-time alerts. You can expect chat volumes to drop and average
-  missed chat time to rise.</li>
-<li>Fixed an issue where selecting the <strong>Subtotals</strong> option for call queue
-  metrics for a Look returned an error.</li>
-<li>Fixed an issue in downloadable call and chat history reports where
-  French-language calls incorrectly appeared under English queue names.</li>
-<li>
-<p>Fixed an issue where scheduled calls disappeared from real-time reporting
-  dashboards 12 hours after their creation, which caused the metric to
-  undercount the total number of upcoming scheduled calls.</p>
-</li>
-<li>
-<p>Fixed an issue where filter options for agent and team data in advanced
-  reporting dashboards weren't correctly scoped to the user's assigned
-  permissions.</p>
-</li>
-<li>Fixed an issue where the <strong>Agents</strong> monitoring page became unresponsive when
-  displaying large numbers of agents, causing significant latency when
-  navigating to other pages.</li>
-<li>
-<p>Fixed an issue that caused the following problems with raw data exports:</p>
-</li>
-<li>
-<p>Poor export performance due to inefficient database queries.</p>
-</li>
-<li>In the <code>call_recordings</code> export, the <code>url</code> field incorrectly contained a
-    timestamp instead of the actual recording URL.</li>
-</ul>
-<p>The <code>url</code> field now contains the correct recording URL, and the timestamp
-  has been moved to a newly added <code>updated_at</code> field. If you ingest
-  <code>call_recordings</code> data using a fixed schema, update your data mappings to
-  accommodate these changes.</p>]]></content>
-    <summary>This release fixes several issues impacting real-time dashboards, agent counts, queue filtering, and data export accuracy. Updates ensure more reliable reporting and correct display of various metrics.</summary>
-    <title>Fixed: Resolved reporting and data accuracy issues</title>
   </entry>
   <entry>
     <author>

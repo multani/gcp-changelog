@@ -1,5 +1,18 @@
 # Network Connectivity Center
 
+## 2026-09-29
+
+### Feature
+
+[Network Connectivity Center (NCC)](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/overview)
+support for [Partner Cross-Cloud Interconnect for Amazon Web Services (AWS)](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview) is [Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+Billing for [Partner Cross-Cloud Interconnect for Amazon Web Services (AWS)](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview)
+is going to commence over the next 30 days following General Availability. For the
+most current billing information, see
+[Network Connectivity Center pricing](https://cloud.google.com/network-connectivity/pricing).
+
+---
 ## 2026-09-10
 
 ### Feature

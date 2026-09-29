@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-09-28": [
+      {
+        "kind": "Breaking",
+        "content": "To improve security, removed the `cloudsql.instances.export` permission\nfrom the following roles:\n\n* Cloud SQL Viewer (`roles/cloudsql.viewer`)\n* Basic Reader (`roles/reader`)\n* Basic Viewer (Legacy) (`roles/viewer`)\n\nTo retain export capabilities, assign the Cloud SQL Editor\n(`roles/cloudsql.editor`) role or update custom roles to include the\n`cloudsql.instances.export` permission.\n\nFor more information, see [Cloud SQL roles](https://docs.cloud.google.com/sql/docs/postgres/iam-roles).",
+        "summary": {
+          "title": "Security update for Cloud SQL roles",
+          "summary": "The `cloudsql.instances.export` permission has been removed from Cloud SQL Viewer, Basic Reader, and Basic Viewer roles to enhance security. Users needing export capabilities should be granted the Cloud SQL Editor role or have custom roles updated accordingly."
+        }
+      }
+    ],
     "2026-09-21": [
       {
         "kind": "Feature",

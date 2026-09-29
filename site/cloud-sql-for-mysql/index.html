@@ -2916,6 +2916,21 @@
 
 
 <h1 id="cloud-sql-for-mysql">Cloud SQL for MySQL</h1>
+<h2 id="2026-09-28">2026-09-28</h2>
+<h3 id="breaking">Breaking</h3>
+<p>To improve security, removed the <code>cloudsql.instances.export</code> permission
+from the following roles:</p>
+<ul>
+<li>Cloud SQL Viewer (<code>roles/cloudsql.viewer</code>)</li>
+<li>Basic Reader (<code>roles/reader</code>)</li>
+<li>Basic Viewer (Legacy) (<code>roles/viewer</code>)</li>
+</ul>
+<p>To retain export capabilities, assign the Cloud SQL Editor
+(<code>roles/cloudsql.editor</code>) role or update custom roles to include the
+<code>cloudsql.instances.export</code> permission.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/mysql/iam-roles">Cloud SQL roles</a>.</p>
+<hr />
 <h2 id="2026-09-21">2026-09-21</h2>
 <h3 id="feature">Feature</h3>
 <p>The <a href="https://docs.cloud.google.com/sql/docs/mysql/machine-series-overview.md#c4">C4 machine series</a>
@@ -2948,7 +2963,7 @@ reduce your recovery time.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/use-advanced-disaster-recovery">Use advanced disaster recovery (DR)</a>.</p>
 <hr />
 <h2 id="2026-09-10">2026-09-10</h2>
-<h3 id="breaking">Breaking</h3>
+<h3 id="breaking_1">Breaking</h3>
 <p>Appending <code>sqlcommenter</code> tags using the <code>sql_commenter_enabled</code> parameter when
 executing SQL queries on a Cloud SQL remote MCP server is temporarily disabled.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/use-cloudsql-mcp#sqlcommenter">sqlcommenter tags</a>.</p>
@@ -3397,7 +3412,7 @@ endpoint DNS that automatically resolves to your current primary instance.</p>
 <p>This feature is in <a href="https://docs.cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-04-14">2026-04-14</h2>
-<h3 id="breaking_1">Breaking</h3>
+<h3 id="breaking_2">Breaking</h3>
 <p>As of April 10, 2026, you can create, run, and edit
 <a href="https://docs.cloud.google.com/cloud-assist/investigations">Gemini Cloud Assist investigations</a> only
 if you have a <a href="https://cloud.google.com/support/premium">Premium Support contract</a>.
@@ -3828,6 +3843,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/mysql/backu
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-mysql">Cloud SQL for MySQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-09-28" class="nav-link">2026-09-28</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-21" class="nav-link">2026-09-21</a>
           </li>

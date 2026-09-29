@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-09-21T00:00:00+00:00</updated>
+  <updated>2026-09-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-09-28:breaking:0</id>
+    <published>2026-09-28T00:00:00+00:00</published>
+    <updated>2026-09-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>To improve security, removed the <code>cloudsql.instances.export</code> permission
+from the following roles:</p>
+<ul>
+<li>Cloud SQL Viewer (<code>roles/cloudsql.viewer</code>)</li>
+<li>Basic Reader (<code>roles/reader</code>)</li>
+<li>Basic Viewer (Legacy) (<code>roles/viewer</code>)</li>
+</ul>
+<p>To retain export capabilities, assign the Cloud SQL Editor
+(<code>roles/cloudsql.editor</code>) role or update custom roles to include the
+<code>cloudsql.instances.export</code> permission.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/mysql/iam-roles">Cloud SQL roles</a>.</p>]]></content>
+    <summary>The `cloudsql.instances.export` permission has been removed from Cloud SQL Viewer, Basic Reader, and Basic Viewer roles to enhance security. Users needing export capabilities should be granted the Cloud SQL Editor role or have custom roles updated accordingly.</summary>
+    <title>Breaking: Security update for Cloud SQL roles</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

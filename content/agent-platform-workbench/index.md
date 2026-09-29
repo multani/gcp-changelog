@@ -1,5 +1,95 @@
 # Agent Platform Workbench
 
+## 2026-09-28
+
+### Change
+
+
+
+### 20260927.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Security
+
+Bulk security patch remediating Critical and High-severity CVEs in the Workbench custom container images.
+
+### Change
+
+
+
+### 20260927.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Security
+
+Bulk security patch remediating Critical and High-severity CVEs in the Workbench custom container images.
+
+---
+## 2026-09-27
+
+### Change
+
+
+
+### 20260927-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+
+
+### M151 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Feature
+
+JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.
+
+### Change
+
+
+
+### 20260927-1408-rc0 Release
+
+
+
+### Change
+
+
+
+### 20260927-1408-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+---
 ## 2026-09-21
 
 ### Change

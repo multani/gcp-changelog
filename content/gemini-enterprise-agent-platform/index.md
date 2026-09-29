@@ -11,6 +11,16 @@ is available in Model Garden.
 
 ### Feature
 
+**Provisioned Throughput: Support for changing order scope and increasing term**
+
+Provisioned Throughput now directly supports from the self service console the
+ability to change the scope or increase the term of an order through a supersede
+and replace operation.
+
+For more information, see [Restructure an order](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/purchase-provisioned-throughput#restructure-order).
+
+### Feature
+
 **Gemini 3 models supported by the Interactions API in Preview**
 
 Gemini 3 models are supported by the Interactions API in

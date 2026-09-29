@@ -4,6 +4,12 @@
 
 ### Feature
 
+The [BigQuery Data Transfer Service MCP server](https://docs.cloud.google.com/bigquery/docs/reference/datatransfer/mcp)
+is now [Generally Available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
 You can now write the output rows produced by
 [BigQuery continuous queries](https://docs.cloud.google.com/bigquery/docs/continuous-queries-introduction)
 directly into [Apache Iceberg managed

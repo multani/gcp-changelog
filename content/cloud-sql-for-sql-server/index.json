@@ -1,13 +1,23 @@
 {
   "name": "Cloud SQL for SQL Server",
   "entries": {
+    "2026-09-28": [
+      {
+        "kind": "Breaking",
+        "content": "To improve security, removed the `cloudsql.instances.export` permission\nfrom the following roles:\n\n* Cloud SQL Viewer (`roles/cloudsql.viewer`)\n* Basic Reader (`roles/reader`)\n* Basic Viewer (Legacy) (`roles/viewer`)\n\nTo retain export capabilities, assign the Cloud SQL Editor\n(`roles/cloudsql.editor`) role or update custom roles to include the\n`cloudsql.instances.export` permission.\n\nFor more information, see\n[Cloud SQL roles](https://docs.cloud.google.com/sql/docs/sqlserver/iam-roles).",
+        "summary": {
+          "title": "Security update for Cloud SQL roles",
+          "summary": "The `cloudsql.instances.export` permission has been removed from Cloud SQL Viewer, Basic Reader, and Basic Viewer (Legacy) roles to enhance security. Users needing export capabilities should be granted the Cloud SQL Editor role or have custom roles updated accordingly."
+        }
+      }
+    ],
     "2026-09-21": [
       {
         "kind": "Feature",
-        "content": "The [C4 machine series](https://docs.cloud.google.com/sql/docs/sqlserver/machine-series-overview.md#c4)\nis available for Cloud SQL for SQL Server Enterprise Plus instances in the  \nfollowing regions:\n\n* `asia-east2` — Hong Kong\n* `asia-southeast2` — Jakarta, Indonesia\n* `europe-west3` — Frankfurt, Germany\n* `europe-west4` — Eemshaven, Netherlands\n* `europe-west8` — Milan, Italy\n* `us-east5` — Columbus, Ohio, USA\n* `us-south1` — Dallas, Texas, USA\n* `us-west4` — Las Vegas, Nevada, USA\n\nThe C4 machine series provides the following benefits:\n\n* Supports fifth and sixth generation Intel Xeon Scalable processors.\n* Offers a price-performance balance that makes it suitable for\n  high-demand workloads.",
+        "content": "The [C4 machine series](https://docs.cloud.google.com/sql/docs/sqlserver/machine-series-overview.md#c4)\nis available for Cloud SQL for SQL Server Enterprise Plus instances in the\nfollowing regions:\n\n* `asia-east2` — Hong Kong\n* `asia-southeast2` — Jakarta, Indonesia\n* `europe-west3` — Frankfurt, Germany\n* `europe-west4` — Eemshaven, Netherlands\n* `europe-west8` — Milan, Italy\n* `us-east5` — Columbus, Ohio, USA\n* `us-south1` — Dallas, Texas, USA\n* `us-west4` — Las Vegas, Nevada, USA\n\nThe C4 machine series provides the following benefits:\n\n* Supports fifth and sixth generation Intel Xeon Scalable processors.\n* Offers a price-performance balance that makes it suitable for\n  high-demand workloads.",
         "summary": {
           "title": "New C4 machine series for Cloud SQL for SQL Server",
-          "summary": "The C4 machine series is now available for Cloud SQL for SQL Server Enterprise Plus instances in several new regions. This series offers enhanced performance with the latest Intel processors and provides a great price-performance balance for demanding workloads."
+          "summary": "The C4 machine series is now available for Cloud SQL for SQL Server Enterprise Plus instances in several new regions. This series offers improved price-performance for demanding workloads with support for the latest Intel processors."
         }
       }
     ],

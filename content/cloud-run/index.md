@@ -1,5 +1,15 @@
 # Cloud Run
 
+## 2026-09-28
+
+### Feature
+
+Create [custom URLs](https://docs.cloud.google.com/run/docs/custom-urls), like
+`example.cloud.run`, that are easy to remember and globally available
+for your Cloud Run services. No DNS configuration, load balancers, or extra
+costs required ([Preview](https://cloud.google.com/products)).
+
+---
 ## 2026-09-23
 
 ### Feature

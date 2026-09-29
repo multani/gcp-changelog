@@ -1,5 +1,24 @@
 # Cloud SQL for MySQL
 
+## 2026-09-28
+
+### Breaking
+
+To improve security, removed the `cloudsql.instances.export` permission
+from the following roles:
+
+* Cloud SQL Viewer (`roles/cloudsql.viewer`)
+* Basic Reader (`roles/reader`)
+* Basic Viewer (Legacy) (`roles/viewer`)
+
+To retain export capabilities, assign the Cloud SQL Editor
+(`roles/cloudsql.editor`) role or update custom roles to include the
+`cloudsql.instances.export` permission.
+
+For more information, see
+[Cloud SQL roles](https://docs.cloud.google.com/sql/docs/mysql/iam-roles).
+
+---
 ## 2026-09-21
 
 ### Feature

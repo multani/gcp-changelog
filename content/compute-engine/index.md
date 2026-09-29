@@ -11,6 +11,16 @@ zone to optimize latency-sensitive workloads or improve the reliability of your
 applications. For more information, see
 [View the physical location of a Compute Engine instance](https://docs.cloud.google.com/compute/docs/instances/view-instance-topology).
 
+### Feature
+
+**Generally available**:
+The [C4D](https://docs.cloud.google.com/compute/docs/general-purpose-machines#supported_disk_types_for_c4d)
+machine series supports Hyperdisk Throughput.
+
+For more information, see
+[About Hyperdisk Throughput](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-throughput)
+and [Hyperdisk Throughput performance limits](https://docs.cloud.google.com/compute/docs/disks/hyperdisk-perf-limits#hdt-perf).
+
 ---
 ## 2026-09-25
 

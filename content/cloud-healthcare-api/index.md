@@ -1,5 +1,19 @@
 # Cloud Healthcare API
 
+## 2026-09-18
+
+### Feature
+
+**General availability:** You can now bulk-delete specific FHIR resources by
+resource ID. In the
+[`projects.locations.datasets.fhirStores.bulkDelete`](https://cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.fhirStores/bulkDelete)
+method, set the new `gcsSource.uri` field to a Cloud Storage file or wildcard
+pattern that lists the resources to delete. Each line must use the format
+`{resourceType}/{resourceId}`, for example `Patient/123`. The `gcsSource` field
+can't be used with the `type` or `until` filters. For more information, see
+[Bulk-deleting FHIR resources by resource ID](https://cloud.google.com/healthcare-api/docs/how-tos/fhir-bulk-delete#bulk-delete-by-id).
+
+---
 ## 2026-09-03
 
 ### Feature

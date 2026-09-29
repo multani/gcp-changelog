@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Healthcare API</title>
   <subtitle>Changelog for Google Cloud product: Cloud Healthcare API</subtitle>
-  <updated>2026-09-03T00:00:00+00:00</updated>
+  <updated>2026-09-18T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-healthcare-api</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-healthcare-api/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-healthcare-api:2026-09-18:feature:0</id>
+    <published>2026-09-18T00:00:00+00:00</published>
+    <updated>2026-09-18T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General availability:</strong> You can now bulk-delete specific FHIR resources by
+resource ID. In the
+<a href="https://cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.fhirStores/bulkDelete"><code>projects.locations.datasets.fhirStores.bulkDelete</code></a>
+method, set the new <code>gcsSource.uri</code> field to a Cloud Storage file or wildcard
+pattern that lists the resources to delete. Each line must use the format
+<code>{resourceType}/{resourceId}</code>, for example <code>Patient/123</code>. The <code>gcsSource</code> field
+can't be used with the <code>type</code> or <code>until</code> filters. For more information, see
+<a href="https://cloud.google.com/healthcare-api/docs/how-tos/fhir-bulk-delete#bulk-delete-by-id">Bulk-deleting FHIR resources by resource ID</a>.</p>]]></content>
+    <summary>You can now bulk-delete specific FHIR resources by resource ID using a Cloud Storage file. This new feature allows for efficient removal of multiple resources at once.</summary>
+    <title>Feature: Bulk delete FHIR resources</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

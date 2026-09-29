@@ -38,6 +38,14 @@ following regions:
 For more information about available regions, see [Supported regions](https://docs.cloud.google.com/netapp/volumes/docs/discover/service-levels#supported_regions).
 
 ---
+## 2026-08-31
+
+### Feature
+
+The manual QoS feature is generally available for the Flex Unified service
+level. For more information, see [Manual QoS](https://docs.cloud.google.com/netapp/volumes/docs/performance/optimize-performance#manual_qos).
+
+---
 ## 2026-08-18
 
 ### Announcement

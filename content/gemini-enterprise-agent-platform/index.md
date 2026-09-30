@@ -1,5 +1,29 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-29
+
+### Feature
+
+**Custom denial messages for semantic governance policies**
+
+You can now configure a fixed **Denial message** on a semantic governance
+policy to show end users when the policy denies a request, in place of the
+policy denial rationale. The message can be up to 1,000 characters and is
+configurable in the Google Cloud console on the policy create or edit page,
+or by setting `agentResponseCustomization.denialMessage` on the policy
+resource using the REST API.
+
+When a single request triggers denials from more than one policy,
+the policy engine combines the configured Denial messages, deduplicates
+them, and falls back to a generic message for firing policies that don't
+have one configured.
+
+For more information, see
+[Configure a semantic governance policy](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/configure-semantic-governance)
+and
+[Information exposure risk](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/semantic-governance-overview#natural-language-constraints-nlc).
+
+---
 ## 2026-09-28
 
 ### Feature

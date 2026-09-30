@@ -2,9 +2,74 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-09-25T00:00:00+00:00</updated>
+  <updated>2026-09-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-29:fixed:0</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where the <strong>Call ended</strong> card in the session data feed
+  incorrectly displayed a call length of <code>00:00</code> despite the actual duration
+  being recorded correctly.</li>
+<li>Fixed an issue where calls remained stuck on the live dashboard after a
+  caller hung up during the transition from a virtual agent to a queue.</li>
+<li>Fixed an issue where the <strong>Virtual Agent Session Variables</strong> section was
+  missing from the call adapter after a successful credit card tokenization
+  handback.</li>
+<li>Fixed an issue where agents belonging to multiple teams were incorrectly
+  granted access to all communication channels regardless of their team's
+  specific availability settings.</li>
+<li>Fixed an issue where emails containing specific formatting displayed a
+  full-screen loading screen that prevented agents from viewing the message
+  or interacting with the agent desktop.</li>
+<li>Fixed an issue where the CCaaS portal displayed an incorrect <strong>Off</strong> or
+  <strong>Not Configured</strong> status for Agent Assist after navigating
+  between queues or refreshing the page.</li>
+<li>Added a checkbox for Salesforce CRM integrations that, when selected,
+  ignores ticket owner updates when an agent is assigned.</li>
+<li>Fixed an issue where the automatic wrap-up timer didn't release agents when
+  notes or disposition codes were configured as optional.</li>
+<li>Fixed an issue where agents remained stuck in a busy <strong>Wrap-up</strong> status
+  after the automatic wrap-up timer expired if they preselected <strong>Wrap-up</strong>
+  as their next status.</li>
+<li>Fixed an issue where calls escalated from a virtual agent to an available
+  human agent were incorrectly deflected to the original queue's voicemail
+  upon reaching a timeout.</li>
+<li>Fixed an issue where callers were left on hold indefinitely during cold
+  transfers to a direct agent extension when over-capacity deflection was
+  enabled.</li>
+<li>Fixed an issue where virtual agent interaction outcomes weren't fully
+  mapped, leading to sessions being incorrectly categorized as "Undefined" or
+  "Unknown".</li>
+<li>Fixed an issue where Agent Assist message analysis background jobs
+  failed and retried excessively for certain profiles.</li>
+<li>Fixed an issue where transcript message updates caused excessive background
+  processing load.</li>
+<li>Fixed an issue where the microphone permission error was mistranslated as
+  "Microphone désactivé!" instead of "Microphone turned off!" for agents using
+  French (Canada) localization in the agent adapter.</li>
+<li>Fixed an issue where calls meeting over-capacity deflection criteria didn't
+  reach their destination queue, leaving callers connected without a route.</li>
+<li>Fixed an issue where queue duration metrics weren't captured for scheduled
+  callbacks escalating from a virtual agent to a human agent.</li>
+<li>Fixed an issue where virtual agent conversations remained open after a call
+  ended due to missing wrap-up events.</li>
+<li>Fixed an issue where virtual agent voice sessions remained active after a
+  caller disconnected, resulting in delayed error logs appearing 10 to 15
+  minutes after the call ended.</li>
+<li>Fixed an issue where agents were incorrectly marked as <strong>Unresponsive</strong>
+  because call offers were sent before their browser finished transitioning
+  from a previous call.</li>
+</ul>]]></content>
+    <summary>This release resolves several issues impacting call handling, agent experience, and system stability. Key fixes include accurate call duration display, correct handling of calls transitioning to live agents, and improved agent status management. The update also addresses problems with email display, CRM integrations, and virtual agent session mapping.</summary>
+    <title>Fixed: Resolved system issues for improved performance</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

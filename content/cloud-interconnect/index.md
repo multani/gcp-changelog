@@ -1,5 +1,13 @@
 # Cloud Interconnect
 
+## 2026-09-29
+
+### Feature
+
+[Network Connectivity Center (NCC)](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/overview)
+support for [Partner Cross-Cloud Interconnect for Amazon Web Services (AWS)](https://docs.cloud.google.com/network-connectivity/docs/interconnect/concepts/partner-cci-for-aws-overview) is [Generally Available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-07-27
 
 ### Feature

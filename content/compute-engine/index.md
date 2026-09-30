@@ -1,5 +1,18 @@
 # Compute Engine
 
+## 2026-09-29
+
+### Feature
+
+**Generally available**: You can create a standard or archive snapshot of a
+disk and protect the snapshot with a customer-managed encryption key
+(CMEK), even if the source disk isn't protected with a CMEK. If the source disk
+is protected with a CMEK, then you can use a different CMEK to encrypt the new
+snapshot.
+
+For more information, see [Create a CMEK-encrypted snapshot](https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption#create_snapshot).
+
+---
 ## 2026-09-28
 
 ### Feature

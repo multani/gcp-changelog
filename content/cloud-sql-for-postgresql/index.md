@@ -1,5 +1,19 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-09-29
+
+### Change
+
+You can use the pgAudit extension to prevent string literals that might indicate
+sensitive information, such as passwords and secrets, from appearing in your log
+query results. This release provides minor bug fixes to the previous version.
+
+This pgAudit extension capability is supported on
+`[PostgreSQL version].R20260712.01_RC31` or later.
+
+For more information, see [Audit for PostgreSQL using pgAudit](https://docs.cloud.google.com/sql/docs/postgres/pg-audit).
+
+---
 ## 2026-09-28
 
 ### Breaking

@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-09-28T00:00:00+00:00</updated>
+  <updated>2026-09-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-29:feature:0</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Custom denial messages for semantic governance policies</strong></p>
+<p>You can now configure a fixed <strong>Denial message</strong> on a semantic governance
+policy to show end users when the policy denies a request, in place of the
+policy denial rationale. The message can be up to 1,000 characters and is
+configurable in the Google Cloud console on the policy create or edit page,
+or by setting <code>agentResponseCustomization.denialMessage</code> on the policy
+resource using the REST API.</p>
+<p>When a single request triggers denials from more than one policy,
+the policy engine combines the configured Denial messages, deduplicates
+them, and falls back to a generic message for firing policies that don't
+have one configured.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/configure-semantic-governance">Configure a semantic governance policy</a>
+and
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/semantic-governance-overview#natural-language-constraints-nlc">Information exposure risk</a>.</p>]]></content>
+    <summary>You can now configure custom denial messages for semantic governance policies, providing end users with specific information when a request is denied. These messages can be set in the Google Cloud console or via the REST API. If multiple policies deny a request, their messages are combined and deduplicated.</summary>
+    <title>Feature: Custom denial messages for governance policies</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,17 @@
 # Looker
 
+## 2026-09-29
+
+### Announcement
+
+The latest versions in the Looker (Google Cloud core) [release channels](https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels) are beginning deployment as follows:
+
+* Latest version in the Rapid channel: **Looker 26.18**
+* Latest version in the No Channel channel: **Looker 26.18**
+
+The Regular channel remains on **Looker 26.14**.
+
+---
 ## 2026-09-24
 
 ### Announcement
@@ -21,6 +33,8 @@ The latest versions in the Looker (Google Cloud core) [release channels](https:/
 * Latest version in the Rapid channel: **Looker 26.16**
 * Latest version in the Regular channel: **Looker 26.14**
 * Latest version in the No Channel channel: **Looker 26.16**
+
+**Update:** Looker 26.16 won't be deployed to Looker (Google Cloud core); instead, Looker 26.18 will begin rolling out to Looker (Google Cloud core) on September 29, 2026. This update was added on September 29, 2026.
 
 ### Feature
 

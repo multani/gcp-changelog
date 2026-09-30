@@ -4,7 +4,7 @@
 
 ### Feature
 
-Secure Web Proxy now supports [distributed
+Secure Web Proxy supports [distributed
 tracing](https://docs.cloud.google.com/secure-web-proxy/docs/distributed-tracing-overview) by integrating
 with [Cloud Trace](https://docs.cloud.google.com/trace/docs/overview). With distributed tracing, you can
 [track the lifecycle of outbound

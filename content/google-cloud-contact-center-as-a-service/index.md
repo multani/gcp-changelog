@@ -2,6 +2,32 @@
 
 ## 2026-09-29
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes 6.17**
+
+Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.
+
+**Important:** The next version of Google Cloud CCaaS could be greater than 6.17.
+
+### Feature
+
+**Warm transfers auto-resume**
+
+When an agent performs a warm transfer, the caller is now automatically taken
+off hold as soon as the transferring agent leaves the call, establishing
+two-way audio between the receiving agent and the caller without manual action.
+The caller stays on hold during the consultation between agents so that their
+conversation remains private. This applies to warm transfers routed through a
+queue and warm transfers sent directly to a specific agent. This change
+eliminates the silence that previously occurred when the caller remained on
+hold after the handoff.
+
+For more information, see [Warm
+transfers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#warm-transfer).
+
 ### Fixed
 
 This release addresses the following issues:

@@ -1,6 +1,16 @@
 {
   "name": "App Engine standard environment Node.js",
   "entries": {
+    "2026-09-29": [
+      {
+        "kind": "Feature",
+        "content": "App Engine permanently blocks insecure traffic with TLS version 1.1 and earlier.\nFor `appspot.com` domains, this block occurs at the connection level. For custom\ndomains, the connection might succeed, but the requests are blocked. For more\ninformation, see\n[Secure minimum TLS](https://docs.cloud.google.com/appengine/docs/standard/secure-minimum-tls).",
+        "summary": {
+          "title": "App Engine Blocks Insecure Traffic",
+          "summary": "App Engine now permanently blocks insecure traffic using TLS versions 1.1 and earlier. This change enhances security by ensuring all connections meet modern encryption standards."
+        }
+      }
+    ],
     "2026-08-14": [
       {
         "kind": "Feature",

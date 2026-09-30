@@ -1,5 +1,14 @@
 # VPC Service Controls
 
+## 2026-09-30
+
+### Feature
+
+[Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
+
+* [Universal Ledger](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_universal_ledger)
+
+---
 ## 2026-09-08
 
 ### Feature

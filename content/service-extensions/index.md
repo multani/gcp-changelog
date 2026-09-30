@@ -21,14 +21,15 @@ extensions](https://docs.cloud.google.com/service-extensions/docs/lb-extensions-
 
 ### Feature
 
-[Agent Gateway](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview)
-now supports Service Extensions to evaluate requests and delegate
+[Agent
+Gateway](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview)
+supports Service Extensions to evaluate requests and delegate
 authorization decisions for agent traffic to either Google services or custom
 authorization services. This feature is [generally available
 (GA)](https://cloud.google.com/products#product-launch-stages).
 
-For more information, see [Integration with
-Agent Gateway](https://docs.cloud.google.com/service-extensions/docs/integration-with-google-services#integration-with-agent-gateway).
+For more information, see [Integration with Agent
+Gateway](https://docs.cloud.google.com/service-extensions/docs/integration-with-google-services#integration-with-agent-gateway).
 
 ---
 ## 2026-08-20

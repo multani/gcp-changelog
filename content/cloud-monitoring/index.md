@@ -1,5 +1,16 @@
 # Cloud Monitoring
 
+## 2026-09-30
+
+### Announcement
+
+The [application topology graph](https://docs.cloud.google.com/stackdriver/docs/observability/application-topology)
+is now [generally available (GA)](https://docs.cloud.google.com/products#product-launch-stages). This graph
+helps you to understand relationships between applications, services, and
+workloads, and shows you traffic flow and incidents in the context of your
+applications.
+
+---
 ## 2026-09-28
 
 ### Deprecated

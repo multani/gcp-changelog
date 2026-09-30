@@ -1,5 +1,16 @@
 # Storage Transfer Service
 
+## 2026-09-28
+
+### Feature
+
+Storage Transfer Service now supports transferring data from multiple containers within
+a Microsoft Azure Storage account in a single transfer job.
+
+For more information, see
+[Transfer all containers in an Azure Storage account](https://docs.cloud.google.com/storage-transfer/docs/create-transfers/agentless/azure-all-containers).
+
+---
 ## 2026-09-21
 
 ### Feature

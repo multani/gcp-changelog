@@ -1,5 +1,13 @@
 # Memorystore for Valkey
 
+## 2026-09-30
+
+### Feature
+
+You can use [App Design Center](https://docs.cloud.google.com/application-design-center/docs/configure-memorystore-for-valkey)
+to create instances. This feature is [generally available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-24
 
 ### Feature

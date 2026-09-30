@@ -1,5 +1,19 @@
 # Compute Engine
 
+## 2026-09-30
+
+### Feature
+
+**Generally available**: You can specify a 120-second preemption notice duration
+while creating Spot VMs. Use this feature for workloads on
+Spot VMs where you want up to an additional 120 seconds for handling
+preemption. If you want to migrate existing Spot VMs workloads, make
+sure you update your workload to handle preemption outside of a shutdown script
+and test preemption. For more information, see
+[Spot VMs](https://docs.cloud.google.com/compute/docs/instances/spot#preemption-notice-duration)
+and [Create and use Spot VMs](https://docs.cloud.google.com/compute/docs/instances/create-use-spot).
+
+---
 ## 2026-09-29
 
 ### Feature

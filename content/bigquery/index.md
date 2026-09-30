@@ -1,5 +1,25 @@
 # BigQuery
 
+## 2026-09-30
+
+### Feature
+
+The BigQuery [Security center](https://docs.cloud.google.com/bigquery/docs/security-center-overview) is now
+available in the Google Cloud console. You can use the Security center to
+analyze your data security profile, create and manage row- and column-level
+security policies, and configure and manage data governance and policy tags.
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+You can now view the
+[`UPDATE`, `DELETE`, `MERGE`](https://docs.cloud.google.com/bigquery/docs/query-plan-explanation#dml_steps),
+and
+[`EXPORT`](https://docs.cloud.google.com/bigquery/docs/query-plan-explanation#export_step)
+execution steps in your query plans.
+
+---
 ## 2026-09-29
 
 ### Feature

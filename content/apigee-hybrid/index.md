@@ -1,5 +1,90 @@
 # Apigee hybrid
 
+## 2026-09-30
+
+### Announcement
+
+
+
+### v1.17.1
+
+On September 30, 2026 we released an updated version of the Apigee hybrid software, v1.17.1.
+
+* For information on upgrading, see [Upgrading Apigee hybrid to version v1.17.1](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/upgrade).
+* For information on new installations, see [The big picture](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/big-picture).
+
+**Note:** This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see [Apigee release process](https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images).
+
+### Feature
+
+**External Cassandra datastore support**
+
+Apigee hybrid v1.17.1 adds support for connecting an Apigee hybrid runtime to a Cassandra datastore that runs in a separate Kubernetes cluster (**external datastore** mode). In external datastore mode, the runtime cluster runs with `cassandra.replicaCount: 0` (no local Cassandra pods) and connects to the remote Cassandra ring using the [`cassandra.properties.externalHost`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/config-prop-ref#cassandra) property (a comma-separated list of remote Cassandra IP addresses) and the optional [`cassandra.properties.externalEndpointsSync`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/config-prop-ref#cassandra) property for dynamic endpoint synchronization.
+
+For more information, see [Use an external Cassandra datastore](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/cassandra-external) and [Configuration property reference](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/config-prop-ref#cassandra).
+
+### Change
+
+**The Apigee operator's Kubernetes manager role now includes the core `endpoints` permission.**
+
+In v1.17.1, the Apigee operator's manager role is granted the core (`""` API group) [`endpoints`](https://kubernetes.io/docs/concepts/services-networking/service/#endpoints) resource, with the verbs `get`, `list`, `watch`, `create`, `update`, `patch`, and `delete`. This role is the namespaced `apigee-manager-role` Kubernetes `Role` created by default in the `apigee` namespace. The operator needs this permission for the external (cross-cluster) Cassandra datastore feature: when a datastore uses an external host, the operator directly manages the `Endpoints` object of the selectorless Kubernetes `Service` that fronts it.
+
+This permission is granted to **all** v1.17.1 installations, whether or not you use an external datastore. It is added to the operator's manager role and is not gated on any configuration property, so security teams that audit operator permissions should expect it after upgrading. Because the grant is on a namespaced `Role`, the new access is limited to the Apigee namespace and does not extend cluster-wide.
+
+Most installations require no action. The `apigee-operator` Helm chart defines this role, so running `helm upgrade` on the `apigee-operator` chart grants the permission automatically.
+
+If you self-manage the Apigee operator's Kubernetes RBAC, meaning you prevent Helm from creating or updating the operator's `Role` objects, add the `endpoints` resource to the existing core (`""`) API group rule of the `apigee-manager-role` `Role` in the Apigee namespace, or append the following rule:
+
+```
+- apiGroups: [""]
+  resources: ["endpoints"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+```
+
+If you self-manage the operator's RBAC, add this permission before you upgrade to v1.17.1. If you have already upgraded without this permission, apply the update to your role configuration to ensure proper operator functionality. Without this permission, the operator cannot manage the `Endpoints` object of an external datastore, so the external datastore feature does not work. If you do not use an external datastore, the operator works without this permission.
+
+**Note:** The [`ao.args.disableManagedClusterRoles`](https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/config-prop-ref#ao-args-disablemanagedclusterroles) property does not apply to this change. That property governs only `ClusterRole` and `ClusterRoleBinding` objects, whereas this permission is added to a namespaced `Role`.
+
+### Fixed
+
+#### Fixed in this release
+
+| Bug ID | Description |
+| --- | --- |
+| **565753858** | **Fixed an issue where the `apigee-mcp-server` controller dropped pod-level volumes configured on the `mcpServer` component (such as `fwi-token` volumes when Federated Workload Identity is enabled), causing `ReplicaSet` creation to fail.** |
+| **565072374** | **Fixed an issue where `VerifyJWT` policies using a JWKS `uriRef` could return `steps.jwt.NoMatchingPublicKey` on the first request after the 5-minute JWKS cache TTL expired when the identity provider rotated keys. The cache now refreshes synchronously upon expiration.** |
+| **564969400** | **Fixed an issue where variables initialized from an empty `<Value/>` element in `AssignMessage` (`AssignVariable`) were not treated as empty strings when referenced in message template functions such as `replaceAll`.** |
+| **563557547** | **Fixed an issue where EventFlow (Server-Sent Events) could coalesce multiple events into a single policy invocation under burst traffic on the `http-adaptor` datapath, producing malformed SSE responses.** |
+| **560372165** | **Fixed a synchronizer readiness-gate deadlock that could leave a Message Processor on an older contract revision and return `404 ApplicationNotFound` for newly deployed standard proxies.** |
+| **560130499** | **Fixed a security issue by hardening the `JavaCallout` policy sandbox.** |
+| **558888960** | **Fixed an issue in distributed tracing where the target URL was omitted from outbound target request span attributes after a request-flow policy step executed.** |
+| **556750755** | **Fixed an issue where EventFlow (Server-Sent Events) dropped or truncated events following a large (>16 KB) event under load on the `http-adaptor` datapath.** |
+| **556680325** | **Fixed a server-side request forgery (SSRF) vulnerability in URL host validation for the `SemanticCacheLookup` policy.** |
+| **554114419** | **Apigee hybrid now allows policies to modify HTTP/2 request pseudo-headers (`:path` and `:authority`) when communicating over HTTP/2.** |
+| **548763108** | **Hardened Message Processor outbound HTTP validation to block requests to internal Kubernetes cluster hostnames (`*.svc.cluster.local`).** |
+| **547712217** | **Fixed an issue where EventFlow (Server-Sent Events) responses larger than 16 KB could be truncated or corrupted across socket reads.** |
+| **531783017** | **Fixed a security issue in the `MessageLogging` policy where syslog-over-TLS did not verify the server TLS certificate hostname when `<Enforce>true</Enforce>` was configured in `<SSLInfo>`.** |
+| **513032450** | **Fixed an issue where `apigee-connect-agent` control-plane connections could hang for up to 2 hours when silently dropped by a network intermediary by restoring a 15-second TCP keep-alive.** |
+| **432315283** | **Fixed an issue where only the first certificate in a multi-certificate PEM bundle uploaded to a single truststore alias was registered when the `features.truststore.multi_cert_bundle.enabled` environment property is set to `true`.** |
+| **357042873** | **Fixed an issue where `apigee-cassandra-schema-readiness` init container logs were redirected to `/dev/null`, improving troubleshooting visibility.** |
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Security fixes for `apigee-connect-agent`.**  This addresses the following vulnerability:  * [CVE-2026-84445](https://nvd.nist.gov/vuln/detail/CVE-2026-84445) |
+| **N/A** | **Security fixes for `apigee-hybrid-cassandra`.**  This addresses the following vulnerabilities:  * [CVE-2022-42003](https://nvd.nist.gov/vuln/detail/CVE-2022-42003) * [CVE-2022-42004](https://nvd.nist.gov/vuln/detail/CVE-2022-42004) * [CVE-2024-45336](https://nvd.nist.gov/vuln/detail/CVE-2024-45336) * [CVE-2024-45341](https://nvd.nist.gov/vuln/detail/CVE-2024-45341) * [CVE-2024-47554](https://nvd.nist.gov/vuln/detail/CVE-2024-47554) * [CVE-2025-0913](https://nvd.nist.gov/vuln/detail/CVE-2025-0913) * [CVE-2025-22866](https://nvd.nist.gov/vuln/detail/CVE-2025-22866) * [CVE-2025-22870](https://nvd.nist.gov/vuln/detail/CVE-2025-22870) * [CVE-2025-22871](https://nvd.nist.gov/vuln/detail/CVE-2025-22871) * [CVE-2025-22873](https://nvd.nist.gov/vuln/detail/CVE-2025-22873) * [CVE-2025-4673](https://nvd.nist.gov/vuln/detail/CVE-2025-4673) * [CVE-2025-4674](https://nvd.nist.gov/vuln/detail/CVE-2025-4674) * [CVE-2025-47906](https://nvd.nist.gov/vuln/detail/CVE-2025-47906) * [CVE-2025-47907](https://nvd.nist.gov/vuln/detail/CVE-2025-47907) * [CVE-2025-47912](https://nvd.nist.gov/vuln/detail/CVE-2025-47912) * [CVE-2025-48924](https://nvd.nist.gov/vuln/detail/CVE-2025-48924) * [CVE-2025-52999](https://nvd.nist.gov/vuln/detail/CVE-2025-52999) * [CVE-2025-58183](https://nvd.nist.gov/vuln/detail/CVE-2025-58183) * [CVE-2025-58185](https://nvd.nist.gov/vuln/detail/CVE-2025-58185) * [CVE-2025-58186](https://nvd.nist.gov/vuln/detail/CVE-2025-58186) * [CVE-2025-58187](https://nvd.nist.gov/vuln/detail/CVE-2025-58187) * [CVE-2025-58188](https://nvd.nist.gov/vuln/detail/CVE-2025-58188) * [CVE-2025-58189](https://nvd.nist.gov/vuln/detail/CVE-2025-58189) * [CVE-2025-61723](https://nvd.nist.gov/vuln/detail/CVE-2025-61723) * [CVE-2025-61724](https://nvd.nist.gov/vuln/detail/CVE-2025-61724) * [CVE-2025-61725](https://nvd.nist.gov/vuln/detail/CVE-2025-61725) * [CVE-2025-61726](https://nvd.nist.gov/vuln/detail/CVE-2025-61726) * [CVE-2025-61727](https://nvd.nist.gov/vuln/detail/CVE-2025-61727) * [CVE-2025-61728](https://nvd.nist.gov/vuln/detail/CVE-2025-61728) * [CVE-2025-61729](https://nvd.nist.gov/vuln/detail/CVE-2025-61729) * [CVE-2025-61730](https://nvd.nist.gov/vuln/detail/CVE-2025-61730) * [CVE-2025-61731](https://nvd.nist.gov/vuln/detail/CVE-2025-61731) * [CVE-2025-61732](https://nvd.nist.gov/vuln/detail/CVE-2025-61732) * [CVE-2025-68121](https://nvd.nist.gov/vuln/detail/CVE-2025-68121) * [CVE-2025-68161](https://nvd.nist.gov/vuln/detail/CVE-2025-68161) * [CVE-2026-25679](https://nvd.nist.gov/vuln/detail/CVE-2026-25679) * [CVE-2026-27139](https://nvd.nist.gov/vuln/detail/CVE-2026-27139) * [CVE-2026-27140](https://nvd.nist.gov/vuln/detail/CVE-2026-27140) * [CVE-2026-27142](https://nvd.nist.gov/vuln/detail/CVE-2026-27142) * [CVE-2026-27143](https://nvd.nist.gov/vuln/detail/CVE-2026-27143) * [CVE-2026-27144](https://nvd.nist.gov/vuln/detail/CVE-2026-27144) * [CVE-2026-27145](https://nvd.nist.gov/vuln/detail/CVE-2026-27145) * [CVE-2026-32280](https://nvd.nist.gov/vuln/detail/CVE-2026-32280) * [CVE-2026-32281](https://nvd.nist.gov/vuln/detail/CVE-2026-32281) * [CVE-2026-32282](https://nvd.nist.gov/vuln/detail/CVE-2026-32282) * [CVE-2026-32283](https://nvd.nist.gov/vuln/detail/CVE-2026-32283) * [CVE-2026-32288](https://nvd.nist.gov/vuln/detail/CVE-2026-32288) * [CVE-2026-32289](https://nvd.nist.gov/vuln/detail/CVE-2026-32289) * [CVE-2026-33811](https://nvd.nist.gov/vuln/detail/CVE-2026-33811) * [CVE-2026-33814](https://nvd.nist.gov/vuln/detail/CVE-2026-33814) * [CVE-2026-33818](https://nvd.nist.gov/vuln/detail/CVE-2026-33818) * [CVE-2026-34477](https://nvd.nist.gov/vuln/detail/CVE-2026-34477) * [CVE-2026-34480](https://nvd.nist.gov/vuln/detail/CVE-2026-34480) * [CVE-2026-39817](https://nvd.nist.gov/vuln/detail/CVE-2026-39817) * [CVE-2026-39819](https://nvd.nist.gov/vuln/detail/CVE-2026-39819) * [CVE-2026-39820](https://nvd.nist.gov/vuln/detail/CVE-2026-39820) * [CVE-2026-39821](https://nvd.nist.gov/vuln/detail/CVE-2026-39821) * [CVE-2026-39822](https://nvd.nist.gov/vuln/detail/CVE-2026-39822) * [CVE-2026-39823](https://nvd.nist.gov/vuln/detail/CVE-2026-39823) * [CVE-2026-39825](https://nvd.nist.gov/vuln/detail/CVE-2026-39825) * [CVE-2026-39826](https://nvd.nist.gov/vuln/detail/CVE-2026-39826) * [CVE-2026-39836](https://nvd.nist.gov/vuln/detail/CVE-2026-39836) * [CVE-2026-42499](https://nvd.nist.gov/vuln/detail/CVE-2026-42499) * [CVE-2026-42501](https://nvd.nist.gov/vuln/detail/CVE-2026-42501) * [CVE-2026-42504](https://nvd.nist.gov/vuln/detail/CVE-2026-42504) * [CVE-2026-42505](https://nvd.nist.gov/vuln/detail/CVE-2026-42505) * [CVE-2026-42507](https://nvd.nist.gov/vuln/detail/CVE-2026-42507) * [CVE-2026-50193](https://nvd.nist.gov/vuln/detail/CVE-2026-50193) * [CVE-2026-54512](https://nvd.nist.gov/vuln/detail/CVE-2026-54512) * [CVE-2026-54513](https://nvd.nist.gov/vuln/detail/CVE-2026-54513) * [CVE-2026-54514](https://nvd.nist.gov/vuln/detail/CVE-2026-54514) * [CVE-2026-54515](https://nvd.nist.gov/vuln/detail/CVE-2026-54515) * [CVE-2026-56853](https://nvd.nist.gov/vuln/detail/CVE-2026-56853) * [CVE-2026-56858](https://nvd.nist.gov/vuln/detail/CVE-2026-56858) * [CVE-2026-56859](https://nvd.nist.gov/vuln/detail/CVE-2026-56859) * [CVE-2026-56860](https://nvd.nist.gov/vuln/detail/CVE-2026-56860) * [CVE-2026-56862](https://nvd.nist.gov/vuln/detail/CVE-2026-56862) * [CVE-2026-56864](https://nvd.nist.gov/vuln/detail/CVE-2026-56864) * [CVE-2026-56865](https://nvd.nist.gov/vuln/detail/CVE-2026-56865) * [GHSA-r7wm-3cxj-wff9](https://osv.dev/vulnerability/GHSA-r7wm-3cxj-wff9) |
+| **N/A** | **Security fixes for `apigee-hybrid-cassandra-client`.**  This addresses the following vulnerabilities:  * [CVE-2026-81870](https://nvd.nist.gov/vuln/detail/CVE-2026-81870) * [CVE-2026-84445](https://nvd.nist.gov/vuln/detail/CVE-2026-84445) |
+| **N/A** | **Security fixes for `apigee-mart-server`.**  This addresses the following vulnerabilities:  * [CVE-2026-13506](https://nvd.nist.gov/vuln/detail/CVE-2026-13506) * [CVE-2026-49844](https://nvd.nist.gov/vuln/detail/CVE-2026-49844) * [CVE-2026-50645](https://nvd.nist.gov/vuln/detail/CVE-2026-50645) * [CVE-2026-8763](https://nvd.nist.gov/vuln/detail/CVE-2026-8763) |
+| **N/A** | **Security fixes for `apigee-mint-task-scheduler`.**  This addresses the following vulnerabilities:  * [CVE-2026-13506](https://nvd.nist.gov/vuln/detail/CVE-2026-13506) * [CVE-2026-49844](https://nvd.nist.gov/vuln/detail/CVE-2026-49844) * [CVE-2026-50645](https://nvd.nist.gov/vuln/detail/CVE-2026-50645) * [CVE-2026-8763](https://nvd.nist.gov/vuln/detail/CVE-2026-8763) |
+| **N/A** | **Security fixes for `apigee-operators`.**  This addresses the following vulnerability:  * [CVE-2026-84445](https://nvd.nist.gov/vuln/detail/CVE-2026-84445) |
+| **N/A** | **Security fixes for `apigee-prom-prometheus`.**  This addresses the following vulnerabilities:  * [CVE-2026-33818](https://nvd.nist.gov/vuln/detail/CVE-2026-33818) * [CVE-2026-39821](https://nvd.nist.gov/vuln/detail/CVE-2026-39821) * [CVE-2026-46600](https://nvd.nist.gov/vuln/detail/CVE-2026-46600) * [CVE-2026-56853](https://nvd.nist.gov/vuln/detail/CVE-2026-56853) * [CVE-2026-56858](https://nvd.nist.gov/vuln/detail/CVE-2026-56858) * [CVE-2026-56859](https://nvd.nist.gov/vuln/detail/CVE-2026-56859) * [CVE-2026-56860](https://nvd.nist.gov/vuln/detail/CVE-2026-56860) * [CVE-2026-56862](https://nvd.nist.gov/vuln/detail/CVE-2026-56862) * [CVE-2026-56864](https://nvd.nist.gov/vuln/detail/CVE-2026-56864) * [CVE-2026-56865](https://nvd.nist.gov/vuln/detail/CVE-2026-56865) |
+| **N/A** | **Security fixes for `apigee-prometheus-adapter`.**  This addresses the following vulnerability:  * [CVE-2026-81870](https://nvd.nist.gov/vuln/detail/CVE-2026-81870) |
+| **N/A** | **Security fixes for `apigee-runtime`.**  This addresses the following vulnerabilities:  * [CVE-2026-13506](https://nvd.nist.gov/vuln/detail/CVE-2026-13506) * [CVE-2026-49844](https://nvd.nist.gov/vuln/detail/CVE-2026-49844) * [CVE-2026-50645](https://nvd.nist.gov/vuln/detail/CVE-2026-50645) * [CVE-2026-8763](https://nvd.nist.gov/vuln/detail/CVE-2026-8763) |
+| **N/A** | **Security fixes for `apigee-synchronizer`.**  This addresses the following vulnerabilities:  * [CVE-2026-13506](https://nvd.nist.gov/vuln/detail/CVE-2026-13506) * [CVE-2026-49844](https://nvd.nist.gov/vuln/detail/CVE-2026-49844) * [CVE-2026-50645](https://nvd.nist.gov/vuln/detail/CVE-2026-50645) * [CVE-2026-8763](https://nvd.nist.gov/vuln/detail/CVE-2026-8763) |
+| **N/A** | **Security fixes for `apigee-watcher`.**  This addresses the following vulnerability:  * [CVE-2026-81870](https://nvd.nist.gov/vuln/detail/CVE-2026-81870) |
+
+---
 ## 2026-09-24
 
 ### v1.15.8

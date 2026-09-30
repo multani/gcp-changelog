@@ -1,5 +1,19 @@
 # Apigee API hub
 
+## 2026-09-30
+
+### Feature
+
+**AI performance and Tool performance dashboards in API insights**
+
+API insights in API hub now includes two dashboards for AI and agent traffic:
+
+* **AI performance** reports token usage and model latency for the large language models called through your gateways, with filters for model and provider.
+* **Tool performance** reports traffic, throughput, payload sizes, and latency for your Model Context Protocol (MCP) tools, with filters for MCP server, deployment, and tool name.
+
+For more information, see [API insights dashboards](https://docs.cloud.google.com/apigee/docs/apihub/api-insights-dashboard).
+
+---
 ## 2026-09-23
 
 ### Feature

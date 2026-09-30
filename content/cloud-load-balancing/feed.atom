@@ -2,9 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-09-28T00:00:00+00:00</updated>
+  <updated>2026-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-09-30:feature:0</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new quota system governing the configuration size of Application Load Balancers
+is now <strong>generally available</strong>. This update increases the individual URL map
+size limit from 64 KB and 128 KB to 1 MB. For more information,
+see <a href="https://docs.cloud.google.com/load-balancing/docs/url-map-size-quota">URL map size and quota units</a>.</p>
+<p>Key aspects of this feature include:</p>
+<ul>
+<li>Complexity-based quota: <em>Quota units</em> reflect URL map complexity (number of
+  rules, hostnames, and path matchers).</li>
+<li>Scoped measurement: Quota is measured and enforced on a per-project,
+  per-region, or per-VPC depending on Application Load Balancer type.</li>
+<li>Active consumption: Only URL maps currently referenced by forwarding rules
+  contribute to quota usage.</li>
+<li>New URL map size limit: Projects enabled for the new quota have a new URL map
+  size limit increased to 1 MB for global and regional external and internal
+  Application Load Balancers. Classic Application Load Balancers remain
+  restricted to 64 KB.</li>
+</ul>
+<p>For more information on increasing your limit, please contact <a href="https://cloud.google.com/support">Google Cloud Support</a>.</p>]]></content>
+    <summary>The new quota system for Application Load Balancers is now generally available, significantly increasing the URL map size limit to 1 MB. This change allows for more complex configurations and is measured based on complexity and scope. For more details on increasing your limit, please contact Google Cloud Support.</summary>
+    <title>Feature: New limits for Application Load Balancer configuration</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

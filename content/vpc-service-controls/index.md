@@ -4,6 +4,31 @@
 
 ### Feature
 
+**VPC Service Controls feature:** Support for using Google Cloud folders and
+organizations as resources in ingress and egress rules is [generally
+available](https://cloud.google.com/products#product-launch-stages).
+
+With this update, you can create rules that allow access to and from the
+resources protected by service perimeters and bypass common resource size
+limitations.
+
+For more information, see [Ingress and egress rules](https://docs.cloud.google.com/vpc-service-controls/docs/ingress-egress-rules).
+
+### Feature
+
+**VPC Service Controls feature**: Folder membership support in
+VPC Service Controls service perimeters is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+You can configure Google Cloud folders as members in service perimeters to
+automatically protect all projects and subfolders within that folder hierarchy.
+
+For more information, see
+[Folder support in service perimeters](https://docs.cloud.google.com/vpc-service-controls/docs/folder-membership)
+and
+[Configure folders in service perimeters](https://docs.cloud.google.com/vpc-service-controls/docs/configure-folder).
+
+### Feature
+
 [Preview stage](https://cloud.google.com/products#product-launch-stages) support for the following integration:
 
 * [Universal Ledger](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_universal_ledger)

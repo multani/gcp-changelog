@@ -1,5 +1,19 @@
 # Backup and DR
 
+## 2026-09-30
+
+### Deprecated
+
+Support for backing up and restoring workloads managed via the legacy appliance management console is deprecated.
+
+Key milestones for this deprecation include the following:
+
+* **End of Support for New Backups**: After September 30, 2027, you will no longer be able to run new backups using the legacy stack.
+* **End of Standard Restores**: Support for standard restores, exports, and migrations using the legacy appliance management console continues till March 31, 2028.
+
+For more information, see [Deprecations](https://docs.cloud.google.com/backup-disaster-recovery/docs/deprecations).
+
+---
 ## 2026-09-21
 
 ### Announcement

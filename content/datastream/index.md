@@ -1,5 +1,18 @@
 # Datastream
 
+## 2026-09-30
+
+### Feature
+
+Datastream now supports partial backfill for SQL Server,
+Spanner, Oracle, PostgreSQL, and MySQL sources. Partial backfill lets
+you load a specific subset of data from the source into the destination by
+providing a SQL `WHERE` clause as a custom filter.
+
+For more information, see [Initiate partial
+backfill](https://docs.cloud.google.com/datastream/docs/manage-backfill-for-the-objects-of-a-stream#initiatepartialbackfill).
+
+---
 ## 2026-09-16
 
 ### Feature

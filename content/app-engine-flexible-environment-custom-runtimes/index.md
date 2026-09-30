@@ -1,5 +1,16 @@
 # App Engine flexible environment custom runtimes
 
+## 2026-09-29
+
+### Feature
+
+App Engine permanently blocks insecure traffic with TLS version 1.1 and earlier.
+For `appspot.com` domains, this block occurs at the connection level. For custom
+domains, the connection might succeed, but the requests are blocked. For more
+information, see
+[Secure minimum TLS](https://docs.cloud.google.com/appengine/docs/flexible/secure-minimum-tls).
+
+---
 ## 2026-08-20
 
 ### Feature

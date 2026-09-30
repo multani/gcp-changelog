@@ -1,5 +1,26 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-09-30
+
+### Feature
+
+The App Topology API that provides agent topologies in
+Gemini Enterprise Agent Platform is now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+
+This launch introduces the following changes:
+
+* A new query builder for customizing suggested quick queries or creating your
+  own query on the **Topologies** page. Custom queries let you explore more
+  data related to your agents, such as identity, alerts, vulnerabilities,
+  and underlying infrastructure. For details, see
+  [View topologies for a project](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/topology/view-project-topology).
+* A streamlined experience for the
+  [single-agent topology](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/topology/view-agent-registry-topology)
+  in Agent Registry. A topology with single-hop traffic to and from the agent
+  automatically loads on the page.
+
+---
 ## 2026-09-29
 
 ### Feature

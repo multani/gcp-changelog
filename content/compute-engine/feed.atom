@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-09-29T00:00:00+00:00</updated>
+  <updated>2026-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-09-30:feature:0</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: You can specify a 120-second preemption notice duration
+while creating Spot VMs. Use this feature for workloads on
+Spot VMs where you want up to an additional 120 seconds for handling
+preemption. If you want to migrate existing Spot VMs workloads, make
+sure you update your workload to handle preemption outside of a shutdown script
+and test preemption. For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/instances/spot#preemption-notice-duration">Spot VMs</a>
+and <a href="https://docs.cloud.google.com/compute/docs/instances/create-use-spot">Create and use Spot VMs</a>.</p>]]></content>
+    <summary>You can now specify a 120-second preemption notice duration for Spot VMs, allowing more time to handle preemptions. Update your workloads to manage preemption outside of shutdown scripts and test this functionality for existing deployments.</summary>
+    <title>Feature: Extended preemption notice for Spot VMs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,15 @@
 # Eventarc
 
+## 2026-09-30
+
+### Feature
+
+Eventarc support for
+[creating triggers](https://docs.cloud.google.com/eventarc/standard/docs/event-providers-targets#triggers)
+for [direct events from Firebase Authentication](https://docs.cloud.google.com/eventarc/docs/reference/supported-events#firebase-auth)
+is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-10
 
 ### Change

@@ -1,5 +1,18 @@
 # Cloud Data Fusion
 
+## 2026-09-16
+
+### Change
+
+The BigQuery Source plugin version 0.24.7 is available in Cloud Data Fusion
+version 6.11.0 and later. This release includes the following change:
+
+* Fixed an issue that caused intermittent pipeline failures in the
+  BigQuery Source plugin when errors occurred during the creation of the
+  temporary staging bucket
+  ([PLUGIN-1787](https://cdap.atlassian.net/browse/PLUGIN-1787)).
+
+---
 ## 2026-08-07
 
 ### Change

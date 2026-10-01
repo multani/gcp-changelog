@@ -1,5 +1,40 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-09-30
+
+### Announcement
+
+**Headless mobile SDK**
+
+The headless mobile SDK, for Android and iOS, is now available. With this SDK,
+you can embed the capabilities of Google Cloud CCaaS into your mobile app
+while retaining full control over the UI. The headless mobile SDK supports calls
+(including scheduled calls), chats, and email.
+
+The following is a comparison of the headless mobile SDK and the mobile SDK v2.
+
+Headless mobile SDK:
+
+* Google Cloud CCaaS provides the core SDK engine: sessions, routing,
+  channel logic, and more.
+* You build the UI using your own design and components.
+* Best for organizations that need brand consistency and full control over the
+  look and feel of their mobile app.
+
+Mobile SDK v2:
+
+* Google Cloud CCaaS provides a pre-built UI with customization options.
+* Best for organizations that want faster product deployment with less design
+  and engineering effort.
+
+For more information, see the following:
+
+* [Headless Mobile SDK v3 for iOS: Get
+  started](https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-mobile-sdk-ios-getting-started)
+* [Headless Mobile SDK v3 for Android: Get
+  started](https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-mobile-sdk-android-getting-started)
+
+---
 ## 2026-09-29
 
 ### Announcement

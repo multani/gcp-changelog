@@ -1,6 +1,32 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-09-23": [
+      {
+        "kind": "Breaking",
+        "content": "**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):\n\n* **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.\n  + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.",
+        "summary": {
+          "title": "Apache Spark Managed Service Updates",
+          "summary": "Managed Service for Apache Spark has removed preconfigured conda channels from its configurations. This change affects runtime versions 1.2.89+, 2.2.89+, and 2.3.42+, which now point to the latest versions without conda channel setup."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): [Lightning Engine](https://docs.cloud.google.com/managed-spark/docs/guides/lightning-engine) is now supported in [`3.0` cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0) starting with subminor image version [`3.0.2`](https://docs.cloud.google.com/managed-spark/docs/release-notes#September_04_2026) (`3.0.2-debian13` and `3.0.2-ubuntu24`).",
+        "summary": {
+          "title": "New Spark Engine Available",
+          "summary": "Managed Service for Apache Spark now supports the Lightning Engine for cluster image versions 3.0.2 and later. This enhancement is available for both debian13 and ubuntu24 operating systems."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions#supported-dataproc-serverless-for-spark-runtime-versions):\n\n* 1.2.89\n* 2.2.89\n* 2.3.42\n\nKey updates in these runtime versions include:\n\n* **Feature updates:**\n  + **Apache Iceberg 1.10:** In the `2.3` runtime, Serverless `2.3` batches with Lightning Engine now use Apache Iceberg version `1.10` by default.\n  + **Parquet footer caching:** Enabled Parquet footer caching by default for Lightning Engine (Velox) in the `2.3` runtime. If executor out-of-memory (OOM) or task failure spikes on tiny files are observed, these can be mitigated by setting `spark.gluten.sql.columnar.backend.velox.cacheParquetFooters=false`.\n  + **Lakehouse catalog:** Enabled Lakehouse catalog auto-loading in the `2.3` runtime using the `spark.dataproc.lakehouse.project` property.",
+        "summary": {
+          "title": "New Apache Spark runtime versions available",
+          "summary": "New subminor runtime versions for Managed Service for Apache Spark are now available, including updates for Apache Iceberg, Parquet footer caching, and Lakehouse catalog auto-loading in the 2.3 runtime."
+        }
+      }
+    ],
     "2026-09-04": [
       {
         "kind": "Announcement",

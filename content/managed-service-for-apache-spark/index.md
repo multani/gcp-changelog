@@ -1,5 +1,34 @@
 # Managed Service for Apache Spark
 
+## 2026-09-23
+
+### Breaking
+
+**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):
+
+* **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.
+  + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.
+
+### Announcement
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): [Lightning Engine](https://docs.cloud.google.com/managed-spark/docs/guides/lightning-engine) is now supported in [`3.0` cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0) starting with subminor image version [`3.0.2`](https://docs.cloud.google.com/managed-spark/docs/release-notes#September_04_2026) (`3.0.2-debian13` and `3.0.2-ubuntu24`).
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions#supported-dataproc-serverless-for-spark-runtime-versions):
+
+* 1.2.89
+* 2.2.89
+* 2.3.42
+
+Key updates in these runtime versions include:
+
+* **Feature updates:**
+  + **Apache Iceberg 1.10:** In the `2.3` runtime, Serverless `2.3` batches with Lightning Engine now use Apache Iceberg version `1.10` by default.
+  + **Parquet footer caching:** Enabled Parquet footer caching by default for Lightning Engine (Velox) in the `2.3` runtime. If executor out-of-memory (OOM) or task failure spikes on tiny files are observed, these can be mitigated by setting `spark.gluten.sql.columnar.backend.velox.cacheParquetFooters=false`.
+  + **Lakehouse catalog:** Enabled Lakehouse catalog auto-loading in the `2.3` runtime using the `spark.dataproc.lakehouse.project` property.
+
+---
 ## 2026-09-04
 
 ### Announcement

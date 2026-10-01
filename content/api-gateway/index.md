@@ -1,5 +1,16 @@
 # API Gateway
 
+## 2026-09-30
+
+### Feature
+
+**Authenticate MCP tool discovery with an API key**
+
+API key authentication is now supported for the Model Context Protocol (MCP) `tools/list` method. You can name an API key security scheme in `tools-list.security`, in addition to a JWT security scheme.
+
+For more information, see [Configure Model Context Protocol](https://docs.cloud.google.com/api-gateway/docs/mcp-configure).
+
+---
 ## 2026-09-29
 
 ### Feature

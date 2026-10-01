@@ -4,6 +4,31 @@
 
 ### Feature
 
+**Gemini Enterprise: Support for new actions (Public Preview)**
+
+Support for new actions is available in Public Preview for the following data store:
+
+* [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-outlook): Add attachments,
+  Create message, Forward mail, Move mail, Reply to message, and Update
+  message.
+
+For more information, see [Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+### Feature
+
+**Gemini Enterprise: New data stores (Preview)**
+
+The following data stores are available in Gemini Enterprise:
+
+* [D&B Finance Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/d_b_finance_analytics)
+* [Omni Analytics](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/omni_analytics)
+* [Zapier](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/zapier)
+
+These data stores are in Public Preview. For more information, see
+[Connect a third-party data source](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-third-party-data-source).
+
+### Feature
+
 **Gemini Enterprise: Gemini 3.8 Flash is the default model for AlphaEvolve**
 
 AlphaEvolve experiments can now generate candidate programs with Gemini 3.7

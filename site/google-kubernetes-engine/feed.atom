@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-09-28T00:00:00+00:00</updated>
+  <updated>2026-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-09-30:feature:0</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE now automatically applies protection tier labels to TPU node pools created from Compute Engine reservations. Depending on your configuration, GKE adds:</p>
+<ul>
+<li>Node pool resource label: <code>goog-gke-node-pool-protection-tier</code> (<code>standard</code> or <code>capacity_optimized</code>)</li>
+<li>Kubernetes node label: <code>cloud.google.com/protection-tier</code> (<code>STANDARD</code> or <code>CAPACITY_OPTIMIZED</code>)</li>
+</ul>
+<p>To learn more, see <a href="https://cloud.google.com/kubernetes-engine/docs/how-to/creating-managing-labels#automatically-applied-labels">Automatically applied labels</a>.</p>]]></content>
+    <summary>GKE now automatically applies protection tier labels to TPU node pools created from Compute Engine reservations. This includes both node pool resource labels and Kubernetes node labels, simplifying management and visibility of your TPU resources.</summary>
+    <title>Feature: TPU node pools get automatic protection tier labels</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

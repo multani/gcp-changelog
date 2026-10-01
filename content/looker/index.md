@@ -1,5 +1,14 @@
 # Looker
 
+## 2026-09-30
+
+### Feature
+
+Enhanced observability metrics, including user engagement and estimated token usage data on the [**Token usage** tab](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage) of the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics), are now generally available ([GA](https://cloud.google.com/products#product-launch-stages)) for Looker (original) instances that are on Looker 26.16 or later. This launch also adds a **Daily Token Utilization** visualization and supports token usage observability for [Conversational Analytics data agents that are published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents).
+
+(For Looker (Google Cloud core) instances, token usage observability remains in [Preview](https://cloud.google.com/products#product-launch-stages) when the [**Conversational Analytics Agent Token usage**](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#ca-agent-token-usage) preview feature is enabled.)
+
+---
 ## 2026-09-29
 
 ### Announcement

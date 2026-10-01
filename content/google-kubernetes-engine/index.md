@@ -1,5 +1,17 @@
 # Google Kubernetes Engine
 
+## 2026-09-30
+
+### Feature
+
+GKE now automatically applies protection tier labels to TPU node pools created from Compute Engine reservations. Depending on your configuration, GKE adds:
+
+* Node pool resource label: `goog-gke-node-pool-protection-tier` (`standard` or `capacity_optimized`)
+* Kubernetes node label: `cloud.google.com/protection-tier` (`STANDARD` or `CAPACITY_OPTIMIZED`)
+
+To learn more, see [Automatically applied labels](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-managing-labels#automatically-applied-labels).
+
+---
 ## 2026-09-28
 
 ### Feature

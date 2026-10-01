@@ -2,9 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Spark</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Spark</subtitle>
-  <updated>2026-09-04T00:00:00+00:00</updated>
+  <updated>2026-09-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-spark/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-23:breaking:0</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark):</p>
+<ul>
+<li><strong>Preconfigured Conda channels removed:</strong> Preconfigured conda channels (such as <code>conda-forge</code>) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.</li>
+<li><strong>Affected runtime versions:</strong> <code>1.2.89+</code>, <code>2.2.89+</code>, and <code>2.3.42+</code>.</li>
+</ul>]]></content>
+    <summary>Managed Service for Apache Spark has removed preconfigured conda channels from its configurations. This change affects runtime versions 1.2.89+, 2.2.89+, and 2.3.42+, which now point to the latest versions without conda channel setup.</summary>
+    <title>Breaking: Apache Spark Managed Service Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-23:announcement:1</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine): <a href="https://docs.cloud.google.com/managed-spark/docs/guides/lightning-engine">Lightning Engine</a> is now supported in <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0"><code>3.0</code> cluster image versions</a> starting with subminor image version <a href="https://docs.cloud.google.com/managed-spark/docs/release-notes#September_04_2026"><code>3.0.2</code></a> (<code>3.0.2-debian13</code> and <code>3.0.2-ubuntu24</code>).</p>]]></content>
+    <summary>Managed Service for Apache Spark now supports the Lightning Engine for cluster image versions 3.0.2 and later. This enhancement is available for both debian13 and ubuntu24 operating systems.</summary>
+    <title>Announcement: New Spark Engine Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-23:announcement:2</id>
+    <published>2026-09-23T00:00:00+00:00</published>
+    <updated>2026-09-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versions/serverless-versions#supported-dataproc-serverless-for-spark-runtime-versions"><strong>Managed Service for Apache Spark</strong> (formerly Google Cloud Serverless for Apache Spark) subminor runtime versions</a>:</p>
+<ul>
+<li>1.2.89</li>
+<li>2.2.89</li>
+<li>2.3.42</li>
+</ul>
+<p>Key updates in these runtime versions include:</p>
+<ul>
+<li><strong>Feature updates:</strong></li>
+<li><strong>Apache Iceberg 1.10:</strong> In the <code>2.3</code> runtime, Serverless <code>2.3</code> batches with Lightning Engine now use Apache Iceberg version <code>1.10</code> by default.</li>
+<li><strong>Parquet footer caching:</strong> Enabled Parquet footer caching by default for Lightning Engine (Velox) in the <code>2.3</code> runtime. If executor out-of-memory (OOM) or task failure spikes on tiny files are observed, these can be mitigated by setting <code>spark.gluten.sql.columnar.backend.velox.cacheParquetFooters=false</code>.</li>
+<li><strong>Lakehouse catalog:</strong> Enabled Lakehouse catalog auto-loading in the <code>2.3</code> runtime using the <code>spark.dataproc.lakehouse.project</code> property.</li>
+</ul>]]></content>
+    <summary>New subminor runtime versions for Managed Service for Apache Spark are now available, including updates for Apache Iceberg, Parquet footer caching, and Lakehouse catalog auto-loading in the 2.3 runtime.</summary>
+    <title>Announcement: New Apache Spark runtime versions available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

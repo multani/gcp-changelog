@@ -13,6 +13,23 @@ This feature is [generally available](https://cloud.google.com/products#product-
 
 ### Feature
 
+BigQuery jobs explorer layout and filtering improvements, including status
+counts in the filter bar, [resource grouping](https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#group-jobs), and [timeline metric charts](https://docs.cloud.google.com/bigquery/docs/admin-jobs-explorer#view-metric-chart),
+are [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+You can now use the [`OBJ.LIST` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/objectref_functions#objlist)
+to perform spontaneous discovery and analysis of unstructured data. The
+`OBJ.LIST` function returns a table of metadata and `ObjectRef` values for
+files stored in Cloud Storage, and does not require you to create a persistent
+object table.
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
 You can now view the
 [`UPDATE`, `DELETE`, `MERGE`](https://docs.cloud.google.com/bigquery/docs/query-plan-explanation#dml_steps),
 and

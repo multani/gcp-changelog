@@ -1,5 +1,15 @@
 # Cloud Storage
 
+## 2026-09-30
+
+### Feature
+
+Cloud Storage client libraries now provide automated, end-to-end checksumming by
+default for object read and write operations to help maintain data integrity
+from client to storage. For more information, see
+[data validation](https://docs.cloud.google.com/storage/docs/data-validation#client-validation-writes).
+
+---
 ## 2026-09-10
 
 ### Feature

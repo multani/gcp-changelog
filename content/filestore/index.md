@@ -8,6 +8,17 @@ Small capacity Filestore instances for the Regional service tier are [generally 
 
 For more information, see [Small capacity instances](https://docs.cloud.google.com/filestore/docs/service-tiers#small-instances).
 
+### Feature
+
+Filestore agent volumes provide managed, high-density elastic NFS
+storage backed by regional volume pools for stateful AI agent sandboxes,
+autonomous agent fleets, and multi-agent developer environments.
+
+The Filestore agent volumes feature is available to all Google Cloud customers for evaluation and non-production use. To request access for your Google Cloud project, submit the Filestore agent volumes [access request form](https://forms.gle/vYPkcFiZVoTjf7Ah7). Production support is offered on an allow list basis under a limited [General Availability (GA)](https://cloud.google.com/products#product-launch-stages) program. To check your eligibility or to request production support, use the access form.
+
+For more information, see
+[About Filestore agent volumes](https://docs.cloud.google.com/filestore/docs/agent-volumes-overview).
+
 ---
 ## 2026-06-02
 

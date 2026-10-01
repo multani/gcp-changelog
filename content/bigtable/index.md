@@ -1,5 +1,17 @@
 # Bigtable
 
+## 2026-10-01
+
+### Feature
+
+You can use [Google Cloud Data Agent Kit](https://docs.cloud.google.com/data-agent-kit/overview) to browse
+Bigtable instances and tables, design schemas, and run GoogleSQL queries from
+your IDE or coding agent. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[Data Agent Kit is now GA: Bring Google Data Cloud to any coding agent](https://cloud.google.com/blog/topics/developers-practitioners/data-agent-kit-is-now-ga-bring-google-data-cloud-to-any-coding-agent).
+
+---
 ## 2026-09-22
 
 ### Feature

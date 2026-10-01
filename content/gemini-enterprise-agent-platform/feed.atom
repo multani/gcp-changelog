@@ -12,6 +12,61 @@
     <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-30:feature:0</id>
     <published>2026-09-30T00:00:00+00:00</published>
     <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Cloud Trace integration with Agent Gateway (Preview)</strong></p>
+<p>Agent Gateway integrates with Cloud Trace in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a> to provide
+end-to-end request observability for agent workloads. Enabling Cloud Trace
+gives you visibility into how requests travel from your agents through the
+gateway and across Google Cloud services, tools, agents, and MCP servers.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/monitor-agent-gateway#use-cloud-trace">Use Cloud Trace</a>.</p>]]></content>
+    <summary>Agent Gateway now integrates with Cloud Trace, offering enhanced request observability for agent workloads. This preview feature provides visibility into request journeys across your agents, the gateway, and Google Cloud services.</summary>
+    <title>Feature: Agent Gateway adds Cloud Trace integration</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-30:feature:1</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>xAI's Grok 4.7</strong></p>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/grok/grok-4-7">Grok 4.7</a>
+is available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a> in Model
+Garden.</p>]]></content>
+    <summary>xAI's Grok 4.7 is now accessible in Preview through Model Garden. This latest iteration offers advanced capabilities for users to explore and integrate into their applications.</summary>
+    <title>Feature: Grok 4.7 Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-30:fixed:2</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.11.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Tiered location configuration</strong>: Added support for configuring the service location using the <code>CM_LOCATION</code> environment variable or <code>location</code> in <code>config.yaml</code> (defaulting to <code>global</code>), replacing the <code>--location</code> command-line flag.</li>
+<li><strong>CI gate severity validation</strong>: Updated <code>cm find</code> to validate <code>--fail-on</code> severity values (<code>CRITICAL</code>, <code>HIGH</code>, <code>MEDIUM</code>, <code>LOW</code>, or <code>NONE</code>) up front instead of silently ignoring misspelled severities.</li>
+<li><strong>Sandboxed VCS branching and hardening</strong>: Enabled <code>vcs_branch</code> creation and candidate branch cleanup inside the default sandboxed worker for <code>--architecture</code> sessions, and hardened VCS template expansion against shell metacharacters and command injection.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Normalized vulnerability type casing and relative file paths during <code>cm find</code> and consensus runs to prevent duplicate findings.</li>
+<li>Extended HTTP 429 retry backoff (<code>Retry-After</code> support and up to 60-second quota refill windows) and automatic stream reconnection to improve scan resilience under rate limiting.</li>
+<li>Preserved standalone <code>cm find</code>, <code>cm verify</code>, and <code>cm fix</code> sessions on interrupt (<code>SIGINT</code>/<code>SIGTERM</code>) so interrupted runs can be resumed with <code>cm session resume</code>, while still canceling parallel consensus worker operations.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>Version 0.11.0 of CodeMender includes fixes for vulnerability reporting and scan resilience, alongside improvements to location configuration and CI gate validation. The release also enhances sandboxed operations and session management for a more robust user experience.</summary>
+    <title>Fixed: CodeMender fixes and improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-30:feature:3</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The App Topology API that provides agent topologies in
 Gemini Enterprise Agent Platform is now
 <a href="https://cloud.google.com/products#product-launch-stages">generally available</a></p>
@@ -103,6 +158,28 @@ Gemini Enterprise Agent Platform.</p>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-28:feature:3</id>
+    <published>2026-09-28T00:00:00+00:00</published>
+    <updated>2026-09-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS (Preview)</strong></p>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-tts">Gemini 3.8 Flash TTS</a>
+and <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-lite-tts">Gemini 3.8 Flash-Lite
+TTS</a> are
+available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>
+on the global endpoint. The models support structured speaker and style
+metadata, inline vocal tags, multi-speaker dialogue, streaming, <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-design">voice
+design</a>, and
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-replication">voice
+replication</a>.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/overview">Generate speech with Gemini
+TTS</a>.</p>]]></content>
+    <summary>Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS are now available in preview. These models offer advanced features like structured speaker and style metadata, inline vocal tags, multi-speaker dialogue, and streaming capabilities. They also support voice design and voice replication for enhanced audio generation.</summary>
+    <title>Feature: Gemini 3.8 Flash TTS Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-25:feature:0</id>
     <published>2026-09-25T00:00:00+00:00</published>
     <updated>2026-09-25T00:00:00+00:00</updated>
@@ -142,7 +219,24 @@ voice quality, model reliability, and agent orchestration.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-24:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-24:feature:1</id>
+    <published>2026-09-24T00:00:00+00:00</published>
+    <updated>2026-09-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Muse Spark 1.3 from Meta</strong></p>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3">Muse Spark 1.3 from Meta</a>
+is available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Muse Spark
+1.3 from Meta is a reasoning model trained for agentic workflows and
+competitive coding. It delivers higher first-attempt accuracy, reliable built-in
+tool calling with MCP support, and 1M-token long context for multi-step tasks.</p>]]></content>
+    <summary>Meta's Muse Spark 1.3, a powerful reasoning model for agentic workflows and competitive coding, is now available in preview. It offers enhanced first-attempt accuracy, robust tool calling capabilities, and supports a 1M-token context window for complex, multi-step tasks.</summary>
+    <title>Feature: Muse Spark 1.3 Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-24:fixed:2</id>
     <published>2026-09-24T00:00:00+00:00</published>
     <updated>2026-09-24T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.10.0)</strong></p>
@@ -158,26 +252,9 @@ voice quality, model reliability, and agent orchestration.</p>
 <li>Restored the configured session model automatically when reconnecting to an active session with <code>cm session resume</code>.</li>
 <li>Updated <code>cm verify</code> to add <code>.exploit</code> to <code>.gitignore</code> before execution so cancelled verification sessions do not leave untracked proof-of-concept scripts.</li>
 </ul>
-<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
-    <summary>CodeMender v0.10.0 introduces impact-aware scanning for PRs, SARIF export for CI/CD integration, and adaptive deep scanning. This release also includes improved bug fixes for a more robust vulnerability management experience.</summary>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender v0.10.0 introduces impact-aware PR scanning, SARIF export for CI/CD integration, and adaptive hybrid deep scanning. This release also includes a custom workspace directory option and several bug fixes to improve stability and user experience.</summary>
     <title>Fixed: CodeMender v0.10.0: Enhanced Scanning and CI Integration</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-24:feature:2</id>
-    <published>2026-09-24T00:00:00+00:00</published>
-    <updated>2026-09-24T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Muse Spark 1.3 from Meta</strong></p>
-<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3">Muse Spark 1.3 from Meta</a>
-is available in
-<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Muse Spark
-1.3 from Meta is a reasoning model trained for agentic workflows and
-competitive coding. It delivers higher first-attempt accuracy, reliable built-in
-tool calling with MCP support, and 1M-token long context for multi-step tasks.</p>]]></content>
-    <summary>Meta's Muse Spark 1.3, a powerful reasoning model for agentic workflows and competitive coding, is now available in preview. It offers enhanced first-attempt accuracy, robust tool calling capabilities, and supports a 1M-token context window for complex, multi-step tasks.</summary>
-    <title>Feature: Muse Spark 1.3 Now in Preview</title>
   </entry>
   <entry>
     <author>
@@ -209,9 +286,9 @@ is available in Model Garden.</p>]]></content>
 <li>Improved session reliability and error recovery during long-running repository scans.</li>
 <li>Fixed local workspace state compatibility issues when upgrading from earlier CLI versions.</li>
 </ul>
-<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
-    <summary>CodeMender v0.9.0 brings interactive HTML security reports, expanded language support for C#, Rust, Kotlin, Ruby, and PHP, and detailed per-turn latency metrics. This update also includes significant bug fixes for session reliability and workspace compatibility.</summary>
-    <title>Fixed: CodeMender improvements and bug fixes</title>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender version 0.9.0 brings interactive HTML security reports with enhanced features, expanded language support for C#, Rust, Kotlin, Ruby, and PHP, and per-turn latency metrics in `cm stats`. This release also includes several bug fixes for improved session reliability and compatibility.</summary>
+    <title>Fixed: CodeMender v0.9.0 Released</title>
   </entry>
   <entry>
     <author>
@@ -279,9 +356,9 @@ text</a>.</p>]]></content>
 <li>Fixed syntax errors in generated verification scripts caused by invalid regex escaping in grep assertions during <code>cm verify</code>.</li>
 <li>Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.</li>
 </ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
-    <summary>CodeMender version 0.8.0 is here, featuring Gemini 3.8 Flash as the new default for quicker and smarter code analysis. This update also enhances stability with payload limits for file reading and grep searches, and includes several important bug fixes for a smoother user experience.</summary>
-    <title>Feature: CodeMender v0.8.0: Faster, Safer, More Reliable</title>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender v0.8.0 is here with Gemini 3.8 Flash as the new default for faster, more capable code analysis. This update also enhances stability with payload guardrails for file reads and searches, and includes several bug fixes for a smoother user experience.</summary>
+    <title>Feature: CodeMender v0.8.0: Faster, Safer, More Stable</title>
   </entry>
   <entry>
     <author>
@@ -353,9 +430,9 @@ in Agent Studio.</p>
 <li>Resolved sandbox permission denial errors by preventing child worker processes from attempting to create internal session logs on disk.</li>
 <li>Hardened sandbox command policy to prevent directory traversal and file inspection outside the designated repository root into adjacent directories.</li>
 </ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
-    <summary>CodeMender version 0.7.0 brings significant improvements to network stream resilience and configuration uniformity. This release also addresses several critical bugs, including accurate reporting of dismissed findings and enhanced sandbox security to prevent unauthorized access.</summary>
-    <title>Fixed: CodeMender v0.7.0: Enhanced Stability and Security</title>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender v0.7.0 enhances network stream resilience for CLI sessions and standardizes configuration. This release also addresses several bugs, including incorrect finding categorization, sandbox permission errors, and directory traversal vulnerabilities.</summary>
+    <title>Fixed: CodeMender updates: improved stability and bug fixes</title>
   </entry>
   <entry>
     <author>
@@ -541,7 +618,29 @@ page</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:fixed:2</id>
+    <published>2026-09-02T00:00:00+00:00</published>
+    <updated>2026-09-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.6.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Machine-readable metrics</strong>: Added the <code>--json</code> flag to <code>cm stats</code> to export aggregate and per-session metrics (<code>CACHE_HIT%</code>, <code>THINK_RATIO%</code>, <code>TOOL_CALLS</code>, <code>DURATION</code>).</li>
+<li><strong>Session drill-down</strong>: Added <code>cm stats --session &lt;id&gt;</code> to inspect turn-by-turn token consumption for specific sessions.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Improved codebase search reliability by skipping binary archives and non-regular files during traversal.</li>
+<li>Fixed an issue where <code>cm report import</code> failed on native JSON reports or findings referencing new files.</li>
+<li>Fixed an issue where preview mode could create empty directories on disk before user confirmation.</li>
+<li>Prevented erroneous verification verdicts when workspace reset fails.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender v0.6.0 includes machine-readable metrics for statistics, session drill-down capabilities, and several bug fixes for improved reliability and user experience. These updates enhance how users can track and understand their usage, while also addressing issues related to file handling and verification processes.</summary>
+    <title>Fixed: CodeMender v0.6.0 fixes and improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:feature:3</id>
     <published>2026-09-02T00:00:00+00:00</published>
     <updated>2026-09-02T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Deferred tier for autonomous agent scheduling (Preview)</strong></p>
@@ -558,28 +657,6 @@ execute during off-peak hours.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling">Autonomous agent scheduling</a>.</p>]]></content>
     <summary>A new deferred tier for autonomous agents automatically queues non-latency-sensitive background workloads and schedules them for off-peak execution. This offers a 50% token discount and reduced rate limiting for supported agents like the Deep Research Agent. This feature is currently in Preview.</summary>
     <title>Feature: Deferred Tier for Agent Scheduling (Preview)</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-09-02:fixed:3</id>
-    <published>2026-09-02T00:00:00+00:00</published>
-    <updated>2026-09-02T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.6.0)</strong></p>
-<p>This release introduces updates to CodeMender:</p>
-<ul>
-<li><strong>Machine-readable metrics</strong>: Added the <code>--json</code> flag to <code>cm stats</code> to export aggregate and per-session metrics (<code>CACHE_HIT%</code>, <code>THINK_RATIO%</code>, <code>TOOL_CALLS</code>, <code>DURATION</code>).</li>
-<li><strong>Session drill-down</strong>: Added <code>cm stats --session &lt;id&gt;</code> to inspect turn-by-turn token consumption for specific sessions.</li>
-<li><strong>Bug fixes</strong>:</li>
-<li>Improved codebase search reliability by skipping binary archives and non-regular files during traversal.</li>
-<li>Fixed an issue where <code>cm report import</code> failed on native JSON reports or findings referencing new files.</li>
-<li>Fixed an issue where preview mode could create empty directories on disk before user confirmation.</li>
-<li>Prevented erroneous verification verdicts when workspace reset fails.</li>
-</ul>
-<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender">CodeMender documentation</a>.</p>]]></content>
-    <summary>CodeMender v0.6.0 introduces machine-readable metrics for `cm stats` and session drill-down capabilities. This release also includes several bug fixes to improve reliability and user experience.</summary>
-    <title>Fixed: CodeMender updates: metrics and bug fixes</title>
   </entry>
   <entry>
     <author>

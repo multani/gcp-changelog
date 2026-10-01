@@ -13,6 +13,30 @@
     ],
     "2026-09-29": [
       {
+        "kind": "Announcement",
+        "content": "Interface-based versioning (IBV) for the Compute Engine API is now\ngenerally available.\nIBV lets you call a specific, date-based API version so you can adopt\nAPI changes on your own schedule.\n\nFor more information, see [Compute Engine API\nversioning](https://docs.cloud.google.com/compute/docs/api/how-tos/api-versioning-guide).",
+        "summary": {
+          "title": "Compute Engine API versioning now available",
+          "summary": "Interface-based versioning (IBV) for the Compute Engine API is now generally available. This feature allows you to call specific, date-based API versions, enabling you to adopt API changes at your own pace. Learn more in the Compute Engine API versioning guide."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Generally available**: Compute Engine API version `2026-09-01` is now\ngenerally available. In this version, `aggregatedList` methods return partial\nresults by default when a scope is unreachable.\nThe `returnPartialSuccess` query parameter is no longer available in\n`aggregatedList` and `list` methods.\n\nFor more information, see the [`2026-09-01` REST\nreference](https://docs.cloud.google.com/compute/docs/reference/rest/2026-09-01).",
+        "summary": {
+          "title": "Compute Engine API v2026-09-01 Now Available",
+          "summary": "The Compute Engine API version 2026-09-01 is now generally available. This update introduces partial results for aggregatedList methods by default when scopes are unreachable, and removes the returnPartialSuccess parameter from aggregatedList and list methods."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Preview**: Compute Engine API version `2026-10-01-preview` is\nnow available in Preview. In this version, the `quotas` field is no longer\navailable in responses from the `projects.get`, `regions.get`, and\n`regions.list` methods. To view and manage quota information, use the\n[Cloud Quotas API](https://docs.cloud.google.com/docs/quotas/overview).\n\nFor more information, see the [`2026-10-01-preview` REST\nreference](https://docs.cloud.google.com/compute/docs/reference/rest/2026-10-01-preview).",
+        "summary": {
+          "title": "Compute Engine API preview updated",
+          "summary": "The Compute Engine API version 2026-10-01-preview is now available. The quotas field has been removed from several methods; use the Cloud Quotas API for quota information."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Generally available**: You can create a standard or archive snapshot of a\ndisk and protect the snapshot with a customer-managed encryption key\n(CMEK), even if the source disk isn't protected with a CMEK. If the source disk\nis protected with a CMEK, then you can use a different CMEK to encrypt the new\nsnapshot.\n\nFor more information, see [Create a CMEK-encrypted snapshot](https://docs.cloud.google.com/compute/docs/disks/customer-managed-encryption#create_snapshot).",
         "summary": {

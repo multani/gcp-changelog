@@ -4,6 +4,44 @@
 
 ### Feature
 
+**Cloud Trace integration with Agent Gateway (Preview)**
+
+Agent Gateway integrates with Cloud Trace in
+[Preview](https://cloud.google.com/products#product-launch-stages) to provide
+end-to-end request observability for agent workloads. Enabling Cloud Trace
+gives you visibility into how requests travel from your agents through the
+gateway and across Google Cloud services, tools, agents, and MCP servers.
+
+For more information, see
+[Use Cloud Trace](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/monitor-agent-gateway#use-cloud-trace).
+
+### Feature
+
+**xAI's Grok 4.7**
+
+[Grok 4.7](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/grok/grok-4-7)
+is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) in Model
+Garden.
+
+### Fixed
+
+**CodeMender updates (v0.11.0)**
+
+This release introduces updates to CodeMender:
+
+* **Tiered location configuration**: Added support for configuring the service location using the `CM_LOCATION` environment variable or `location` in `config.yaml` (defaulting to `global`), replacing the `--location` command-line flag.
+* **CI gate severity validation**: Updated `cm find` to validate `--fail-on` severity values (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`, or `NONE`) up front instead of silently ignoring misspelled severities.
+* **Sandboxed VCS branching and hardening**: Enabled `vcs_branch` creation and candidate branch cleanup inside the default sandboxed worker for `--architecture` sessions, and hardened VCS template expansion against shell metacharacters and command injection.
+* **Bug fixes**:
+  + Normalized vulnerability type casing and relative file paths during `cm find` and consensus runs to prevent duplicate findings.
+  + Extended HTTP 429 retry backoff (`Retry-After` support and up to 60-second quota refill windows) and automatic stream reconnection to improve scan resilience under rate limiting.
+  + Preserved standalone `cm find`, `cm verify`, and `cm fix` sessions on interrupt (`SIGINT`/`SIGTERM`) so interrupted runs can be resumed with `cm session resume`, while still canceling parallel consensus worker operations.
+
+For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
+### Feature
+
 The App Topology API that provides agent topologies in
 Gemini Enterprise Agent Platform is now
 [generally available](https://cloud.google.com/products#product-launch-stages)
@@ -75,6 +113,23 @@ Gemini Enterprise Agent Platform.
 For more information, see the
 [Interactions API overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/interactions).
 
+### Feature
+
+**Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS (Preview)**
+
+[Gemini 3.8 Flash TTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-tts)
+and [Gemini 3.8 Flash-Lite
+TTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-lite-tts) are
+available in [Preview](https://cloud.google.com/products#product-launch-stages)
+on the global endpoint. The models support structured speaker and style
+metadata, inline vocal tags, multi-speaker dialogue, streaming, [voice
+design](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-design), and
+[voice
+replication](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-replication).
+
+For more information, see [Generate speech with Gemini
+TTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/overview).
+
 ---
 ## 2026-09-25
 
@@ -109,6 +164,17 @@ For more information, see the following:
 * [Gemini 3.8 Live](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-live)
 * [Gemini Live API overview](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/live-api)
 
+### Feature
+
+**Muse Spark 1.3 from Meta**
+
+[Muse Spark 1.3 from Meta](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3)
+is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Muse Spark
+1.3 from Meta is a reasoning model trained for agentic workflows and
+competitive coding. It delivers higher first-attempt accuracy, reliable built-in
+tool calling with MCP support, and 1M-token long context for multi-step tasks.
+
 ### Fixed
 
 **CodeMender updates (v0.10.0)**
@@ -125,18 +191,7 @@ This release introduces updates to CodeMender:
   + Restored the configured session model automatically when reconnecting to an active session with `cm session resume`.
   + Updated `cm verify` to add `.exploit` to `.gitignore` before execution so cancelled verification sessions do not leave untracked proof-of-concept scripts.
 
-For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
-
-### Feature
-
-**Muse Spark 1.3 from Meta**
-
-[Muse Spark 1.3 from Meta](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3)
-is available in
-[Preview](https://cloud.google.com/products#product-launch-stages). Muse Spark
-1.3 from Meta is a reasoning model trained for agentic workflows and
-competitive coding. It delivers higher first-attempt accuracy, reliable built-in
-tool calling with MCP support, and 1M-token long context for multi-step tasks.
+For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
 
 ---
 ## 2026-09-22
@@ -164,7 +219,7 @@ This release introduces updates to CodeMender:
   + Improved session reliability and error recovery during long-running repository scans.
   + Fixed local workspace state compatibility issues when upgrading from earlier CLI versions.
 
-For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
 
 ---
 ## 2026-09-18
@@ -221,7 +276,7 @@ This release introduces updates to CodeMender:
   + Fixed syntax errors in generated verification scripts caused by invalid regex escaping in grep assertions during `cm verify`.
   + Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.
 
-For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
 
 ### Feature
 
@@ -279,7 +334,7 @@ This release introduces updates to CodeMender:
   + Resolved sandbox permission denial errors by preventing child worker processes from attempting to create internal session logs on disk.
   + Hardened sandbox command policy to prevent directory traversal and file inspection outside the designated repository root into adjacent directories.
 
-For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
 
 ### Feature
 
@@ -412,6 +467,22 @@ page](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemi
 Provisioned Throughput supports Gemini Omni. To learn more, see
 [supported models](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models).
 
+### Fixed
+
+**CodeMender updates (v0.6.0)**
+
+This release introduces updates to CodeMender:
+
+* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).
+* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.
+* **Bug fixes**:
+  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.
+  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.
+  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.
+  + Prevented erroneous verification verdicts when workspace reset fails.
+
+For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
+
 ### Feature
 
 **Deferred tier for autonomous agent scheduling (Preview)**
@@ -428,22 +499,6 @@ Key capabilities and benefits include:
   + **Deep Research Agent**: Pass `service_tier="deferred"` in the Python SDK or `"service_tier": "deferred"` in REST API interaction requests.
 
 For more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).
-
-### Fixed
-
-**CodeMender updates (v0.6.0)**
-
-This release introduces updates to CodeMender:
-
-* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).
-* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.
-* **Bug fixes**:
-  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.
-  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.
-  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.
-  + Prevented erroneous verification verdicts when workspace reset fails.
-
-For more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
 
 ---
 ## 2026-09-01

@@ -1,6 +1,16 @@
 {
   "name": "Cluster Toolkit",
   "entries": {
+    "2026-09-22": [
+      {
+        "kind": "Feature",
+        "content": "Cluster Toolkit v1.104.0 is available. This release adds agent skills\nto let you debug Kueue workloads on Google Kubernetes Engine (GKE) and migrate from\nthe Accelerated Processing Kit (XPK).\n\nIt also adds optional support for managed instance groups on\n[static compute nodes](https://docs.cloud.google.com/cluster-toolkit/docs/slurm/manage-static-nodes) and\n[Private Service Connect\ninterfaces](https://docs.cloud.google.com/vpc/docs/about-private-service-connect-interfaces) on\nSlurm nodesets and login nodes.\n\nAdditionally, `gcluster` now validates\n[placement policies](https://docs.cloud.google.com/compute/docs/instances/placement-policies-overview),\n[reservations](https://docs.cloud.google.com/compute/docs/instances/reservations-overview), and queues when\nyou submit GKE jobs.\n\nThis update also runs the Lustre Networking\n(LNet) setup script only when Lustre is enabled and prevents LNet errors from\ncausing deployments to fail. For more information, see the\n[release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6355).",
+        "summary": {
+          "title": "Cluster Toolkit v1.104.0 Released",
+          "summary": "Cluster Toolkit v1.104.0 is now available, introducing agent skills for debugging Kueue workloads and migrating from XPK. This release also enhances support for managed instance groups and Private Service Connect interfaces, along with improved job submission validation for GKE workloads."
+        }
+      }
+    ],
     "2026-09-11": [
       {
         "kind": "Security",

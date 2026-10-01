@@ -1,5 +1,30 @@
 # Cluster Toolkit
 
+## 2026-09-22
+
+### Feature
+
+Cluster Toolkit v1.104.0 is available. This release adds agent skills
+to let you debug Kueue workloads on Google Kubernetes Engine (GKE) and migrate from
+the Accelerated Processing Kit (XPK).
+
+It also adds optional support for managed instance groups on
+[static compute nodes](https://docs.cloud.google.com/cluster-toolkit/docs/slurm/manage-static-nodes) and
+[Private Service Connect
+interfaces](https://docs.cloud.google.com/vpc/docs/about-private-service-connect-interfaces) on
+Slurm nodesets and login nodes.
+
+Additionally, `gcluster` now validates
+[placement policies](https://docs.cloud.google.com/compute/docs/instances/placement-policies-overview),
+[reservations](https://docs.cloud.google.com/compute/docs/instances/reservations-overview), and queues when
+you submit GKE jobs.
+
+This update also runs the Lustre Networking
+(LNet) setup script only when Lustre is enabled and prevents LNet errors from
+causing deployments to fail. For more information, see the
+[release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6355).
+
+---
 ## 2026-09-11
 
 ### Security

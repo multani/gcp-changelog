@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cluster Toolkit</title>
   <subtitle>Changelog for Google Cloud product: Cluster Toolkit</subtitle>
-  <updated>2026-09-11T00:00:00+00:00</updated>
+  <updated>2026-09-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cluster-toolkit</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cluster-toolkit/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cluster-toolkit:2026-09-22:feature:0</id>
+    <published>2026-09-22T00:00:00+00:00</published>
+    <updated>2026-09-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cluster Toolkit v1.104.0 is available. This release adds agent skills
+to let you debug Kueue workloads on Google Kubernetes Engine (GKE) and migrate from
+the Accelerated Processing Kit (XPK).</p>
+<p>It also adds optional support for managed instance groups on
+<a href="https://docs.cloud.google.com/cluster-toolkit/docs/slurm/manage-static-nodes">static compute nodes</a> and
+<a href="https://docs.cloud.google.com/vpc/docs/about-private-service-connect-interfaces">Private Service Connect
+interfaces</a> on
+Slurm nodesets and login nodes.</p>
+<p>Additionally, <code>gcluster</code> now validates
+<a href="https://docs.cloud.google.com/compute/docs/instances/placement-policies-overview">placement policies</a>,
+<a href="https://docs.cloud.google.com/compute/docs/instances/reservations-overview">reservations</a>, and queues when
+you submit GKE jobs.</p>
+<p>This update also runs the Lustre Networking
+(LNet) setup script only when Lustre is enabled and prevents LNet errors from
+causing deployments to fail. For more information, see the
+<a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6355">release announcement on GitHub</a>.</p>]]></content>
+    <summary>Cluster Toolkit v1.104.0 is now available, introducing agent skills for debugging Kueue workloads and migrating from XPK. This release also enhances support for managed instance groups and Private Service Connect interfaces, along with improved job submission validation for GKE workloads.</summary>
+    <title>Feature: Cluster Toolkit v1.104.0 Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

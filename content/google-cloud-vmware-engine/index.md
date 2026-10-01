@@ -1,5 +1,18 @@
 # Google Cloud VMware Engine
 
+## 2026-10-01
+
+### Feature
+
+**Generally available**: Bring Your Own License (BYOL) license management for
+Google Cloud VMware Engine is generally available (GA). BYOL license management lets you
+register and manage portable VMware Cloud Foundation (VCF) license keys in the
+Google Cloud console across projects associated with your Cloud Billing account.
+
+For more information, see
+[License management](https://docs.cloud.google.com/vmware-engine/docs/license-management).
+
+---
 ## 2026-08-24
 
 ### Announcement

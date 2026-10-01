@@ -16,6 +16,38 @@ and [Create and use Spot VMs](https://docs.cloud.google.com/compute/docs/instanc
 ---
 ## 2026-09-29
 
+### Announcement
+
+Interface-based versioning (IBV) for the Compute Engine API is now
+generally available.
+IBV lets you call a specific, date-based API version so you can adopt
+API changes on your own schedule.
+
+For more information, see [Compute Engine API
+versioning](https://docs.cloud.google.com/compute/docs/api/how-tos/api-versioning-guide).
+
+### Feature
+
+**Generally available**: Compute Engine API version `2026-09-01` is now
+generally available. In this version, `aggregatedList` methods return partial
+results by default when a scope is unreachable.
+The `returnPartialSuccess` query parameter is no longer available in
+`aggregatedList` and `list` methods.
+
+For more information, see the [`2026-09-01` REST
+reference](https://docs.cloud.google.com/compute/docs/reference/rest/2026-09-01).
+
+### Feature
+
+**Preview**: Compute Engine API version `2026-10-01-preview` is
+now available in Preview. In this version, the `quotas` field is no longer
+available in responses from the `projects.get`, `regions.get`, and
+`regions.list` methods. To view and manage quota information, use the
+[Cloud Quotas API](https://docs.cloud.google.com/docs/quotas/overview).
+
+For more information, see the [`2026-10-01-preview` REST
+reference](https://docs.cloud.google.com/compute/docs/reference/rest/2026-10-01-preview).
+
 ### Feature
 
 **Generally available**: You can create a standard or archive snapshot of a

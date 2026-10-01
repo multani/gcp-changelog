@@ -1,5 +1,13 @@
 # Pub/Sub
 
+## 2026-10-01
+
+### Feature
+
+You can use Gemini Enterprise to generate code for user-defined function (UDF) single-message transforms (SMTs). For more information, see
+[Create a UDF SMT](https://docs.cloud.google.com/pubsub/docs/smts/udfs-overview#create-udf-smt).
+
+---
 ## 2026-04-17
 
 ### Feature

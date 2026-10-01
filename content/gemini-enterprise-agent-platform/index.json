@@ -4,6 +4,30 @@
     "2026-09-30": [
       {
         "kind": "Feature",
+        "content": "**Cloud Trace integration with Agent Gateway (Preview)**\n\nAgent Gateway integrates with Cloud Trace in\n[Preview](https://cloud.google.com/products#product-launch-stages) to provide\nend-to-end request observability for agent workloads. Enabling Cloud Trace\ngives you visibility into how requests travel from your agents through the\ngateway and across Google Cloud services, tools, agents, and MCP servers.\n\nFor more information, see\n[Use Cloud Trace](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/monitor-agent-gateway#use-cloud-trace).",
+        "summary": {
+          "title": "Agent Gateway adds Cloud Trace integration",
+          "summary": "Agent Gateway now integrates with Cloud Trace, offering enhanced request observability for agent workloads. This preview feature provides visibility into request journeys across your agents, the gateway, and Google Cloud services."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**xAI's Grok 4.7**\n\n[Grok 4.7](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/grok/grok-4-7)\nis available in\n[Preview](https://cloud.google.com/products#product-launch-stages) in Model\nGarden.",
+        "summary": {
+          "title": "Grok 4.7 Now in Preview",
+          "summary": "xAI's Grok 4.7 is now accessible in Preview through Model Garden. This latest iteration offers advanced capabilities for users to explore and integrate into their applications."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.11.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Tiered location configuration**: Added support for configuring the service location using the `CM_LOCATION` environment variable or `location` in `config.yaml` (defaulting to `global`), replacing the `--location` command-line flag.\n* **CI gate severity validation**: Updated `cm find` to validate `--fail-on` severity values (`CRITICAL`, `HIGH`, `MEDIUM`, `LOW`, or `NONE`) up front instead of silently ignoring misspelled severities.\n* **Sandboxed VCS branching and hardening**: Enabled `vcs_branch` creation and candidate branch cleanup inside the default sandboxed worker for `--architecture` sessions, and hardened VCS template expansion against shell metacharacters and command injection.\n* **Bug fixes**:\n  + Normalized vulnerability type casing and relative file paths during `cm find` and consensus runs to prevent duplicate findings.\n  + Extended HTTP 429 retry backoff (`Retry-After` support and up to 60-second quota refill windows) and automatic stream reconnection to improve scan resilience under rate limiting.\n  + Preserved standalone `cm find`, `cm verify`, and `cm fix` sessions on interrupt (`SIGINT`/`SIGTERM`) so interrupted runs can be resumed with `cm session resume`, while still canceling parallel consensus worker operations.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "summary": {
+          "title": "CodeMender fixes and improvements",
+          "summary": "Version 0.11.0 of CodeMender includes fixes for vulnerability reporting and scan resilience, alongside improvements to location configuration and CI gate validation. The release also enhances sandboxed operations and session management for a more robust user experience."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "The App Topology API that provides agent topologies in\nGemini Enterprise Agent Platform is now\n[generally available](https://cloud.google.com/products#product-launch-stages)\n\nThis launch introduces the following changes:\n\n* A new query builder for customizing suggested quick queries or creating your\n  own query on the **Topologies** page. Custom queries let you explore more\n  data related to your agents, such as identity, alerts, vulnerabilities,\n  and underlying infrastructure. For details, see\n  [View topologies for a project](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/topology/view-project-topology).\n* A streamlined experience for the\n  [single-agent topology](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/topology/view-agent-registry-topology)\n  in Agent Registry. A topology with single-hop traffic to and from the agent\n  automatically loads on the page.",
         "summary": {
           "title": "App Topology API Now Generally Available",
@@ -45,6 +69,14 @@
           "title": "Gemini 3 models now available via Interactions API",
           "summary": "Gemini 3 models are now supported by the Interactions API in Preview on the Gemini Enterprise Agent Platform. This new integration allows developers to leverage the advanced capabilities of Gemini 3 through the Interactions API. Further details can be found in the Interactions API overview documentation."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS (Preview)**\n\n[Gemini 3.8 Flash TTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-tts)\nand [Gemini 3.8 Flash-Lite\nTTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-lite-tts) are\navailable in [Preview](https://cloud.google.com/products#product-launch-stages)\non the global endpoint. The models support structured speaker and style\nmetadata, inline vocal tags, multi-speaker dialogue, streaming, [voice\ndesign](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-design), and\n[voice\nreplication](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-replication).\n\nFor more information, see [Generate speech with Gemini\nTTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/overview).",
+        "summary": {
+          "title": "Gemini 3.8 Flash TTS Now in Preview",
+          "summary": "Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS are now available in preview. These models offer advanced features like structured speaker and style metadata, inline vocal tags, multi-speaker dialogue, and streaming capabilities. They also support voice design and voice replication for enhanced audio generation."
+        }
       }
     ],
     "2026-09-25": [
@@ -67,19 +99,19 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "**CodeMender updates (v0.10.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Impact-aware PR delta scanning**: Added `--diff` and `--staged` flags to `cm find` to audit modified pull request hunks and 1-hop neighbor files while suppressing pre-existing vulnerabilities.\n* **SARIF report export and CI gating**: Added SARIF v2.1.0 export (`--format sarif`, `--output`) and severity-based CI gating (`--fail-on`) to `cm report` to integrate scan results into CI/CD pipelines and code scanning tools.\n* **Adaptive hybrid deep scanning**: Added `--deep` and `--deep-workers` flags to `cm find` to combine deterministic file pruning, parallel package-batched analysis, and post-triage verification for higher vulnerability recall and precision.\n* **Custom workspace directory**: Added support for the `CM_HOME` environment variable to override the default `~/.codemender` directory for configuration, local state (`state.db`), backups, and artifacts.\n* **Bug fixes**:\n  + Required build and test validation (`build.command`) to succeed during `cm fix` before marking a patch as applied and a finding as fixed.\n  + Stabilized vulnerability fingerprints across multiple scans and bound `cm verify` directly to the target finding ID to prevent duplicate findings.\n  + Restored the configured session model automatically when reconnecting to an active session with `cm session resume`.\n  + Updated `cm verify` to add `.exploit` to `.gitignore` before execution so cancelled verification sessions do not leave untracked proof-of-concept scripts.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
-        "summary": {
-          "title": "CodeMender v0.10.0: Enhanced Scanning and CI Integration",
-          "summary": "CodeMender v0.10.0 introduces impact-aware scanning for PRs, SARIF export for CI/CD integration, and adaptive deep scanning. This release also includes improved bug fixes for a more robust vulnerability management experience."
-        }
-      },
-      {
         "kind": "Feature",
         "content": "**Muse Spark 1.3 from Meta**\n\n[Muse Spark 1.3 from Meta](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3)\nis available in\n[Preview](https://cloud.google.com/products#product-launch-stages). Muse Spark\n1.3 from Meta is a reasoning model trained for agentic workflows and\ncompetitive coding. It delivers higher first-attempt accuracy, reliable built-in\ntool calling with MCP support, and 1M-token long context for multi-step tasks.",
         "summary": {
           "title": "Muse Spark 1.3 Now in Preview",
           "summary": "Meta's Muse Spark 1.3, a powerful reasoning model for agentic workflows and competitive coding, is now available in preview. It offers enhanced first-attempt accuracy, robust tool calling capabilities, and supports a 1M-token context window for complex, multi-step tasks."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.10.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Impact-aware PR delta scanning**: Added `--diff` and `--staged` flags to `cm find` to audit modified pull request hunks and 1-hop neighbor files while suppressing pre-existing vulnerabilities.\n* **SARIF report export and CI gating**: Added SARIF v2.1.0 export (`--format sarif`, `--output`) and severity-based CI gating (`--fail-on`) to `cm report` to integrate scan results into CI/CD pipelines and code scanning tools.\n* **Adaptive hybrid deep scanning**: Added `--deep` and `--deep-workers` flags to `cm find` to combine deterministic file pruning, parallel package-batched analysis, and post-triage verification for higher vulnerability recall and precision.\n* **Custom workspace directory**: Added support for the `CM_HOME` environment variable to override the default `~/.codemender` directory for configuration, local state (`state.db`), backups, and artifacts.\n* **Bug fixes**:\n  + Required build and test validation (`build.command`) to succeed during `cm fix` before marking a patch as applied and a finding as fixed.\n  + Stabilized vulnerability fingerprints across multiple scans and bound `cm verify` directly to the target finding ID to prevent duplicate findings.\n  + Restored the configured session model automatically when reconnecting to an active session with `cm session resume`.\n  + Updated `cm verify` to add `.exploit` to `.gitignore` before execution so cancelled verification sessions do not leave untracked proof-of-concept scripts.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
+        "summary": {
+          "title": "CodeMender v0.10.0: Enhanced Scanning and CI Integration",
+          "summary": "CodeMender v0.10.0 introduces impact-aware PR scanning, SARIF export for CI/CD integration, and adaptive hybrid deep scanning. This release also includes a custom workspace directory option and several bug fixes to improve stability and user experience."
         }
       }
     ],
@@ -96,10 +128,10 @@
     "2026-09-21": [
       {
         "kind": "Fixed",
-        "content": "**CodeMender updates (v0.9.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Interactive HTML security reports**: Overhauled `cm report --format html` to provide a modern, interactive dashboard featuring severity metric cards, syntax-highlighted code snippets with line numbers, and an inline patch diff viewer. Added the `--open` (`-o`) flag to automatically open the generated report in the default browser.\n* **Expanded language support**: Added out-of-the-box vulnerability scanning support for C# (`.cs`), Rust (`.rs`), Kotlin (`.kt`, `.kts`), Ruby (`.rb`), and PHP (`.php`) to the default discovery configuration and initialization templates.\n* **Per-turn latency metrics**: Enhanced `cm stats` and session exports to report per-turn latency breakdowns, distinguishing time spent waiting on model inference from local tool execution.\n* **Bug fixes**:\n  + Improved session reliability and error recovery during long-running repository scans.\n  + Fixed local workspace state compatibility issues when upgrading from earlier CLI versions.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "content": "**CodeMender updates (v0.9.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Interactive HTML security reports**: Overhauled `cm report --format html` to provide a modern, interactive dashboard featuring severity metric cards, syntax-highlighted code snippets with line numbers, and an inline patch diff viewer. Added the `--open` (`-o`) flag to automatically open the generated report in the default browser.\n* **Expanded language support**: Added out-of-the-box vulnerability scanning support for C# (`.cs`), Rust (`.rs`), Kotlin (`.kt`, `.kts`), Ruby (`.rb`), and PHP (`.php`) to the default discovery configuration and initialization templates.\n* **Per-turn latency metrics**: Enhanced `cm stats` and session exports to report per-turn latency breakdowns, distinguishing time spent waiting on model inference from local tool execution.\n* **Bug fixes**:\n  + Improved session reliability and error recovery during long-running repository scans.\n  + Fixed local workspace state compatibility issues when upgrading from earlier CLI versions.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
         "summary": {
-          "title": "CodeMender improvements and bug fixes",
-          "summary": "CodeMender v0.9.0 brings interactive HTML security reports, expanded language support for C#, Rust, Kotlin, Ruby, and PHP, and detailed per-turn latency metrics. This update also includes significant bug fixes for session reliability and workspace compatibility."
+          "title": "CodeMender v0.9.0 Released",
+          "summary": "CodeMender version 0.9.0 brings interactive HTML security reports with enhanced features, expanded language support for C#, Rust, Kotlin, Ruby, and PHP, and per-turn latency metrics in `cm stats`. This release also includes several bug fixes for improved session reliability and compatibility."
         }
       }
     ],
@@ -134,10 +166,10 @@
     "2026-09-16": [
       {
         "kind": "Feature",
-        "content": "**CodeMender updates (v0.8.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Gemini 3.8 Flash default**: Gemini 3.8 Flash (`gemini-3.8-flash`) is now supported and enabled as the default model for CodeMender CLI sessions, delivering faster inference and improved reasoning. A one-time notice in the CLI informs users when the new default is active.\n* **Tool payload guardrails**: Introduced safe output limits for file reading (2 MiB) and codebase grep search (512 KiB) with centered match context windows, eliminating payload overflow errors and improving stability during large repository scans.\n* **Bug fixes**:\n  + Fixed an issue where shell detection and command execution on Windows could fail during repository resets and exploit verification when Git Bash was installed in standard registry or non-PATH locations.\n  + Fixed an issue in `cm verify` where verified findings could report \"not found\" or fail to persist confidence and status upon session completion or resumption.\n  + Fixed syntax errors in generated verification scripts caused by invalid regex escaping in grep assertions during `cm verify`.\n  + Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "content": "**CodeMender updates (v0.8.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Gemini 3.8 Flash default**: Gemini 3.8 Flash (`gemini-3.8-flash`) is now supported and enabled as the default model for CodeMender CLI sessions, delivering faster inference and improved reasoning. A one-time notice in the CLI informs users when the new default is active.\n* **Tool payload guardrails**: Introduced safe output limits for file reading (2 MiB) and codebase grep search (512 KiB) with centered match context windows, eliminating payload overflow errors and improving stability during large repository scans.\n* **Bug fixes**:\n  + Fixed an issue where shell detection and command execution on Windows could fail during repository resets and exploit verification when Git Bash was installed in standard registry or non-PATH locations.\n  + Fixed an issue in `cm verify` where verified findings could report \"not found\" or fail to persist confidence and status upon session completion or resumption.\n  + Fixed syntax errors in generated verification scripts caused by invalid regex escaping in grep assertions during `cm verify`.\n  + Prevented HTTP 409 lease conflict errors during long-running sessions by ensuring streaming HTTP connections are promptly released.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
         "summary": {
-          "title": "CodeMender v0.8.0: Faster, Safer, More Reliable",
-          "summary": "CodeMender version 0.8.0 is here, featuring Gemini 3.8 Flash as the new default for quicker and smarter code analysis. This update also enhances stability with payload limits for file reading and grep searches, and includes several important bug fixes for a smoother user experience."
+          "title": "CodeMender v0.8.0: Faster, Safer, More Stable",
+          "summary": "CodeMender v0.8.0 is here with Gemini 3.8 Flash as the new default for faster, more capable code analysis. This update also enhances stability with payload guardrails for file reads and searches, and includes several bug fixes for a smoother user experience."
         }
       },
       {
@@ -170,10 +202,10 @@
       },
       {
         "kind": "Fixed",
-        "content": "**CodeMender updates (v0.7.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Network stream resilience**: Improved CLI session stability with automatic reconnection and transient error recovery during long-running scans and remediation workflows.\n* **Configuration uniformity**: Standardized directory exclusion rules across configuration files and CLI scanning flags under `scan_config.exclude_dirs`.\n* **Bug fixes**:\n  + Fixed an issue where `cm report` incorrectly categorized `DISMISSED` findings as `OPEN` in the summary table.\n  + Resolved sandbox permission denial errors by preventing child worker processes from attempting to create internal session logs on disk.\n  + Hardened sandbox command policy to prevent directory traversal and file inspection outside the designated repository root into adjacent directories.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
+        "content": "**CodeMender updates (v0.7.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Network stream resilience**: Improved CLI session stability with automatic reconnection and transient error recovery during long-running scans and remediation workflows.\n* **Configuration uniformity**: Standardized directory exclusion rules across configuration files and CLI scanning flags under `scan_config.exclude_dirs`.\n* **Bug fixes**:\n  + Fixed an issue where `cm report` incorrectly categorized `DISMISSED` findings as `OPEN` in the summary table.\n  + Resolved sandbox permission denial errors by preventing child worker processes from attempting to create internal session logs on disk.\n  + Hardened sandbox command policy to prevent directory traversal and file inspection outside the designated repository root into adjacent directories.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
         "summary": {
-          "title": "CodeMender v0.7.0: Enhanced Stability and Security",
-          "summary": "CodeMender version 0.7.0 brings significant improvements to network stream resilience and configuration uniformity. This release also addresses several critical bugs, including accurate reporting of dismissed findings and enhanced sandbox security to prevent unauthorized access."
+          "title": "CodeMender updates: improved stability and bug fixes",
+          "summary": "CodeMender v0.7.0 enhances network stream resilience for CLI sessions and standardizes configuration. This release also addresses several bugs, including incorrect finding categorization, sandbox permission errors, and directory traversal vulnerabilities."
         }
       },
       {
@@ -273,19 +305,19 @@
         }
       },
       {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.6.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).\n* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.\n* **Bug fixes**:\n  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.\n  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.\n  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.\n  + Prevented erroneous verification verdicts when workspace reset fails.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
+        "summary": {
+          "title": "CodeMender v0.6.0 fixes and improvements",
+          "summary": "CodeMender v0.6.0 includes machine-readable metrics for statistics, session drill-down capabilities, and several bug fixes for improved reliability and user experience. These updates enhance how users can track and understand their usage, while also addressing issues related to file handling and verification processes."
+        }
+      },
+      {
         "kind": "Feature",
         "content": "**Deferred tier for autonomous agent scheduling (Preview)**\n\nThe *deferred tier* is available in Preview. The deferred tier automatically\nqueues non-latency-sensitive background agent workloads and schedules them to\nexecute during off-peak hours.\n\nKey capabilities and benefits include:\n\n* **50% token discount**: Receive a 50% discount on consumed tokens for deferred workloads.\n* **Reduced rate limiting**: Mitigate resource exhaustion (429) errors and infrastructure pressure during long-running background tasks.\n* **Supported agents**:\n  + **Deep Research Agent**: Pass `service_tier=\"deferred\"` in the Python SDK or `\"service_tier\": \"deferred\"` in REST API interaction requests.\n\nFor more information, see [Autonomous agent scheduling](https://docs.cloud.google.com/gemini-enterprise-agent-platform/scale/efficiency/autonomous-scheduling).",
         "summary": {
           "title": "Deferred Tier for Agent Scheduling (Preview)",
           "summary": "A new deferred tier for autonomous agents automatically queues non-latency-sensitive background workloads and schedules them for off-peak execution. This offers a 50% token discount and reduced rate limiting for supported agents like the Deep Research Agent. This feature is currently in Preview."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "**CodeMender updates (v0.6.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Machine-readable metrics**: Added the `--json` flag to `cm stats` to export aggregate and per-session metrics (`CACHE_HIT%`, `THINK_RATIO%`, `TOOL_CALLS`, `DURATION`).\n* **Session drill-down**: Added `cm stats --session <id>` to inspect turn-by-turn token consumption for specific sessions.\n* **Bug fixes**:\n  + Improved codebase search reliability by skipping binary archives and non-regular files during traversal.\n  + Fixed an issue where `cm report import` failed on native JSON reports or findings referencing new files.\n  + Fixed an issue where preview mode could create empty directories on disk before user confirmation.\n  + Prevented erroneous verification verdicts when workspace reset fails.\n\nFor more information, see [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).",
-        "summary": {
-          "title": "CodeMender updates: metrics and bug fixes",
-          "summary": "CodeMender v0.6.0 introduces machine-readable metrics for `cm stats` and session drill-down capabilities. This release also includes several bug fixes to improve reliability and user experience."
         }
       }
     ],

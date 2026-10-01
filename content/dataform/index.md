@@ -1,5 +1,15 @@
 # Dataform
 
+## 2026-10-01
+
+### Feature
+
+Dataform provides support for automated metadata enrichment and Knowledge Catalog data quality scorecard integration for Dataform workflows and BigQuery pipelines. For more information, see
+[Add metadata for Knowledge Catalog](https://docs.cloud.google.com/dataform/docs/create-tables#add-metadata).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-28
 
 ### Feature

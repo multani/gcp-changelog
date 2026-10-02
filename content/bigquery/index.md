@@ -1,5 +1,21 @@
 # BigQuery
 
+## 2026-10-02
+
+### Feature
+
+The [Rust SDK for BigQuery](https://docs.cloud.google.com/bigquery/docs/reference/libraries) is now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+The [Data Engineering
+Agent](https://docs.cloud.google.com/gemini/data-agents/data-engineering-agent/agent-overview) now supports
+the `gemini-3.7-flash` model for the `us`, `eu`, and `global` multi-regional
+endpoints.
+
+---
 ## 2026-10-01
 
 ### Change

@@ -1,5 +1,32 @@
 # Google Kubernetes Engine
 
+## 2026-10-02
+
+### Issue
+
+In GKE control plane versions 1.36.3-gke.1244000 and later, Cloud Storage FUSE CSI driver (`gcsfusecsi-node`) DaemonSet Pods fail to start on specific node pools. The Pods crash and log the following error:
+
+```
+MountVolume.SetUp failed for volume "host-proc-sys-fs-fuse" : hostPath type check failed: /proc/sys/fs/fuse is not a directory.
+```
+
+This issue occurs during a version skew when node pools run an older kernel lacking the required host path (earlier than 6.12.67 for Container-Optimized OS, or earlier than 6.13 for Ubuntu). Affected node pool configurations include:
+
+* All Ubuntu with containerd (`ubuntu_containerd`) node pools.
+* Container-Optimized OS with containerd (`cos_containerd`) node pools on GKE versions 1.33 and earlier, 1.34 versions earlier than 1.34.6-gke.1154000, and 1.35 versions earlier than 1.35.3-gke.1389000.
+
+**Workaround**: For `cos_containerd` node pools, upgrade the node pool to a version with the required kernel support (for example, 1.34.6-gke.1154000 or later, 1.35.3-gke.1389000 or later, or match the control plane). For `ubuntu_containerd` node pools, a fix is in progress. Alternatively, downgrade the control plane to a version earlier than 1.36.3-gke.1244000.
+
+### Feature
+
+You can use Vertical Pod Autoscaler (VPA) with Horizontal Pod Autoscaler (HPA)
+to automatically optimize container CPU requests for workloads that scale
+replicas based on CPU utilization. This feature is available in Public Preview
+on clusters running GKE version 1.36.3-gke.1630000 or later. For more
+information, see
+[Rightsize HPA workloads with VPA](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/rightsize-hpa-workloads-with-vpa).
+
+---
 ## 2026-09-30
 
 ### Feature

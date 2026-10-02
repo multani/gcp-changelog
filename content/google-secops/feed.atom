@@ -2,9 +2,32 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps</subtitle>
-  <updated>2026-09-21T00:00:00+00:00</updated>
+  <updated>2026-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-09-30:feature:0</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Expanded read-only permissions for Chronicle API Restricted Data Access Viewer</strong></p>
+<p>Google SecOps has updated the predefined <strong>Chronicle API Restricted
+Data Access Viewer</strong> (<code>roles/chronicle.restrictedDataAccessViewer</code>) IAM
+role to include all read-only permissions available in the <strong>Chronicle API Viewer</strong>
+(<code>roles/chronicle.viewer</code>) role, excluding global data access
+(<code>chronicle.globalDataAccessScopes.permit</code>).</p>
+<p>With this update, users assigned to <code>roles/chronicle.restrictedDataAccessViewer</code>
+IAM role will have read-only access across Google SecOps
+features—including SOAR cases and playbooks, investigations, threat collections,
+findings, security validation, and ingestion resources within their assigned
+data access scopes.</p>
+<p>For more
+information, see <a href="https://docs.cloud.google.com/chronicle/docs/administration/configure-datarbac-users">Configure data RBAC for users</a>.</p>]]></content>
+    <summary>The Chronicle API Restricted Data Access Viewer role now includes all read-only permissions from the Chronicle API Viewer role, excluding global data access. This expansion grants users broader read-only access to various SecOps features within their defined data scopes.</summary>
+    <title>Feature: Expanded Read-Only Permissions for Chronicle API</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

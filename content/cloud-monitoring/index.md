@@ -20,7 +20,7 @@ standard maintenance and regular bug fixes for the agent have ceased. We
 recommend migrating to one of the [supported
 alternatives](https://docs.cloud.google.com/monitoring/agent/index). For more information about this
 deprecation, see [Legacy Monitoring and Logging agent end of
-support](https://docs.cloud.google.com/stackdriver/docs/deprecations/logging-agent).
+support](https://docs.cloud.google.com/stackdriver/docs/deprecations/legacy-agents).
 
 ---
 ## 2026-09-14

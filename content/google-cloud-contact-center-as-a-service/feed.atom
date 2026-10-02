@@ -46,107 +46,6 @@ while retaining full control over the UI. The headless mobile SDK supports calls
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-29:announcement:0</id>
-    <published>2026-09-29T00:00:00+00:00</published>
-    <updated>2026-09-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes 6.17</strong></p>
-<p>Here are the pre-release notes for what we expect to be the next version
-of Google Cloud CCaaS. When we release this version, we expect the new
-capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.17.</p>]]></content>
-    <summary>This document outlines the expected capabilities for the upcoming version 6.17 of CCaaS. Please note that the final release version may differ.</summary>
-    <title>Announcement: CCaaS pre-release notes 6.17</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-29:feature:1</id>
-    <published>2026-09-29T00:00:00+00:00</published>
-    <updated>2026-09-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Warm transfers auto-resume</strong></p>
-<p>When an agent performs a warm transfer, the caller is now automatically taken
-off hold as soon as the transferring agent leaves the call, establishing
-two-way audio between the receiving agent and the caller without manual action.
-The caller stays on hold during the consultation between agents so that their
-conversation remains private. This applies to warm transfers routed through a
-queue and warm transfers sent directly to a specific agent. This change
-eliminates the silence that previously occurred when the caller remained on
-hold after the handoff.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#warm-transfer">Warm
-transfers</a>.</p>]]></content>
-    <summary>Agents can now perform warm transfers with confidence. When an agent leaves a warm transfer call, the caller is automatically taken off hold, establishing two-way audio without manual intervention. This feature streamlines the transfer process and eliminates awkward silences.</summary>
-    <title>Feature: Warm transfers now resume automatically</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-29:fixed:2</id>
-    <published>2026-09-29T00:00:00+00:00</published>
-    <updated>2026-09-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue where the <strong>Call ended</strong> card in the session data feed
-  incorrectly displayed a call length of <code>00:00</code> despite the actual duration
-  being recorded correctly.</li>
-<li>Fixed an issue where calls remained stuck on the live dashboard after a
-  caller hung up during the transition from a virtual agent to a queue.</li>
-<li>Fixed an issue where the <strong>Virtual Agent Session Variables</strong> section was
-  missing from the call adapter after a successful credit card tokenization
-  handback.</li>
-<li>Fixed an issue where agents belonging to multiple teams were incorrectly
-  granted access to all communication channels regardless of their team's
-  specific availability settings.</li>
-<li>Fixed an issue where emails containing specific formatting displayed a
-  full-screen loading screen that prevented agents from viewing the message
-  or interacting with the agent desktop.</li>
-<li>Fixed an issue where the CCaaS portal displayed an incorrect <strong>Off</strong> or
-  <strong>Not Configured</strong> status for Agent Assist after navigating
-  between queues or refreshing the page.</li>
-<li>Added a checkbox for Salesforce CRM integrations that, when selected,
-  ignores ticket owner updates when an agent is assigned.</li>
-<li>Fixed an issue where the automatic wrap-up timer didn't release agents when
-  notes or disposition codes were configured as optional.</li>
-<li>Fixed an issue where agents remained stuck in a busy <strong>Wrap-up</strong> status
-  after the automatic wrap-up timer expired if they preselected <strong>Wrap-up</strong>
-  as their next status.</li>
-<li>Fixed an issue where calls escalated from a virtual agent to an available
-  human agent were incorrectly deflected to the original queue's voicemail
-  upon reaching a timeout.</li>
-<li>Fixed an issue where callers were left on hold indefinitely during cold
-  transfers to a direct agent extension when over-capacity deflection was
-  enabled.</li>
-<li>Fixed an issue where virtual agent interaction outcomes weren't fully
-  mapped, leading to sessions being incorrectly categorized as "Undefined" or
-  "Unknown".</li>
-<li>Fixed an issue where Agent Assist message analysis background jobs
-  failed and retried excessively for certain profiles.</li>
-<li>Fixed an issue where transcript message updates caused excessive background
-  processing load.</li>
-<li>Fixed an issue where the microphone permission error was mistranslated as
-  "Microphone désactivé!" instead of "Microphone turned off!" for agents using
-  French (Canada) localization in the agent adapter.</li>
-<li>Fixed an issue where calls meeting over-capacity deflection criteria didn't
-  reach their destination queue, leaving callers connected without a route.</li>
-<li>Fixed an issue where queue duration metrics weren't captured for scheduled
-  callbacks escalating from a virtual agent to a human agent.</li>
-<li>Fixed an issue where virtual agent conversations remained open after a call
-  ended due to missing wrap-up events.</li>
-<li>Fixed an issue where virtual agent voice sessions remained active after a
-  caller disconnected, resulting in delayed error logs appearing 10 to 15
-  minutes after the call ended.</li>
-<li>Fixed an issue where agents were incorrectly marked as <strong>Unresponsive</strong>
-  because call offers were sent before their browser finished transitioning
-  from a previous call.</li>
-</ul>]]></content>
-    <summary>This release resolves several issues impacting call handling, agent experience, and system stability. Key fixes include accurate call duration display, correct handling of calls transitioning to live agents, and improved agent status management. The update also addresses problems with email display, CRM integrations, and virtual agent session mapping.</summary>
-    <title>Fixed: Resolved system issues for improved performance</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
     <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-25:announcement:0</id>
     <published>2026-09-25T00:00:00+00:00</published>
     <updated>2026-09-25T00:00:00+00:00</updated>
@@ -994,6 +893,107 @@ email</a>.</p>]]></content>
 </ul>]]></content>
     <summary>This release resolves several critical issues, including problems with outbound emails, call adapter functionality, voicemail display, callback handling, click-to-dial behavior, call ending latency, hold music overlap, and integration syncs. These fixes ensure a more stable and reliable user experience.</summary>
     <title>Fixed: Resolved Issues in Recent Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-29:announcement:0</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes 6.17</strong></p>
+<p>Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>
+<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.17.</p>]]></content>
+    <summary>This document outlines the expected capabilities for the upcoming version 6.17 of CCaaS. Please note that the final release version may differ.</summary>
+    <title>Announcement: CCaaS pre-release notes 6.17</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-29:feature:1</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Warm transfers auto-resume</strong></p>
+<p>When an agent performs a warm transfer, the caller is now automatically taken
+off hold as soon as the transferring agent leaves the call, establishing
+two-way audio between the receiving agent and the caller without manual action.
+The caller stays on hold during the consultation between agents so that their
+conversation remains private. This applies to warm transfers routed through a
+queue and warm transfers sent directly to a specific agent. This change
+eliminates the silence that previously occurred when the caller remained on
+hold after the handoff.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#warm-transfer">Warm
+transfers</a>.</p>]]></content>
+    <summary>Agents can now perform warm transfers with confidence. When an agent leaves a warm transfer call, the caller is automatically taken off hold, establishing two-way audio without manual intervention. This feature streamlines the transfer process and eliminates awkward silences.</summary>
+    <title>Feature: Warm transfers now resume automatically</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-09-29:fixed:2</id>
+    <published>2026-09-29T00:00:00+00:00</published>
+    <updated>2026-09-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where the <strong>Call ended</strong> card in the session data feed
+  incorrectly displayed a call length of <code>00:00</code> despite the actual duration
+  being recorded correctly.</li>
+<li>Fixed an issue where calls remained stuck on the live dashboard after a
+  caller hung up during the transition from a virtual agent to a queue.</li>
+<li>Fixed an issue where the <strong>Virtual Agent Session Variables</strong> section was
+  missing from the call adapter after a successful credit card tokenization
+  handback.</li>
+<li>Fixed an issue where agents belonging to multiple teams were incorrectly
+  granted access to all communication channels regardless of their team's
+  specific availability settings.</li>
+<li>Fixed an issue where emails containing specific formatting displayed a
+  full-screen loading screen that prevented agents from viewing the message
+  or interacting with the agent desktop.</li>
+<li>Fixed an issue where the CCaaS portal displayed an incorrect <strong>Off</strong> or
+  <strong>Not Configured</strong> status for Agent Assist after navigating
+  between queues or refreshing the page.</li>
+<li>Added a checkbox for Salesforce CRM integrations that, when selected,
+  ignores ticket owner updates when an agent is assigned.</li>
+<li>Fixed an issue where the automatic wrap-up timer didn't release agents when
+  notes or disposition codes were configured as optional.</li>
+<li>Fixed an issue where agents remained stuck in a busy <strong>Wrap-up</strong> status
+  after the automatic wrap-up timer expired if they preselected <strong>Wrap-up</strong>
+  as their next status.</li>
+<li>Fixed an issue where calls escalated from a virtual agent to an available
+  human agent were incorrectly deflected to the original queue's voicemail
+  upon reaching a timeout.</li>
+<li>Fixed an issue where callers were left on hold indefinitely during cold
+  transfers to a direct agent extension when over-capacity deflection was
+  enabled.</li>
+<li>Fixed an issue where virtual agent interaction outcomes weren't fully
+  mapped, leading to sessions being incorrectly categorized as "Undefined" or
+  "Unknown".</li>
+<li>Fixed an issue where Agent Assist message analysis background jobs
+  failed and retried excessively for certain profiles.</li>
+<li>Fixed an issue where transcript message updates caused excessive background
+  processing load.</li>
+<li>Fixed an issue where the microphone permission error was mistranslated as
+  "Microphone désactivé!" instead of "Microphone turned off!" for agents using
+  French (Canada) localization in the agent adapter.</li>
+<li>Fixed an issue where calls meeting over-capacity deflection criteria didn't
+  reach their destination queue, leaving callers connected without a route.</li>
+<li>Fixed an issue where queue duration metrics weren't captured for scheduled
+  callbacks escalating from a virtual agent to a human agent.</li>
+<li>Fixed an issue where virtual agent conversations remained open after a call
+  ended due to missing wrap-up events.</li>
+<li>Fixed an issue where virtual agent voice sessions remained active after a
+  caller disconnected, resulting in delayed error logs appearing 10 to 15
+  minutes after the call ended.</li>
+<li>Fixed an issue where agents were incorrectly marked as <strong>Unresponsive</strong>
+  because call offers were sent before their browser finished transitioning
+  from a previous call.</li>
+</ul>]]></content>
+    <summary>This release resolves several issues impacting call handling, agent experience, and system stability. Key fixes include accurate call duration display, correct handling of calls transitioning to live agents, and improved agent status management. The update also addresses problems with email display, CRM integrations, and virtual agent session mapping.</summary>
+    <title>Fixed: Resolved system issues for improved performance</title>
   </entry>
   <entry>
     <author>

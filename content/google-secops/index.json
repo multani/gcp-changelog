@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps",
   "entries": {
+    "2026-09-30": [
+      {
+        "kind": "Feature",
+        "content": "**Expanded read-only permissions for Chronicle API Restricted Data Access Viewer**\n\nGoogle SecOps has updated the predefined **Chronicle API Restricted\nData Access Viewer** (`roles/chronicle.restrictedDataAccessViewer`) IAM\nrole to include all read-only permissions available in the **Chronicle API Viewer**\n(`roles/chronicle.viewer`) role, excluding global data access\n(`chronicle.globalDataAccessScopes.permit`).\n\nWith this update, users assigned to `roles/chronicle.restrictedDataAccessViewer`\nIAM role will have read-only access across Google SecOps\nfeatures—including SOAR cases and playbooks, investigations, threat collections,\nfindings, security validation, and ingestion resources within their assigned\ndata access scopes.\n\nFor more\ninformation, see [Configure data RBAC for users](https://docs.cloud.google.com/chronicle/docs/administration/configure-datarbac-users).",
+        "summary": {
+          "title": "Expanded Read-Only Permissions for Chronicle API",
+          "summary": "The Chronicle API Restricted Data Access Viewer role now includes all read-only permissions from the Chronicle API Viewer role, excluding global data access. This expansion grants users broader read-only access to various SecOps features within their defined data scopes."
+        }
+      }
+    ],
     "2026-09-21": [
       {
         "kind": "Feature",

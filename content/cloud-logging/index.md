@@ -8,7 +8,7 @@ The legacy Logging agent has officially reached its end of support. All standard
 maintenance and regular bug fixes for the agent have ceased. We recommend
 migrating to one of the [supported alternatives](https://docs.cloud.google.com/logging/docs/agent/index). For
 more information about this deprecation, see [Legacy Monitoring and Logging
-agents end of support](https://docs.cloud.google.com/stackdriver/docs/deprecations/logging-agent).
+agents end of support](https://docs.cloud.google.com/stackdriver/docs/deprecations/legacy-agents).
 
 ### Breaking
 

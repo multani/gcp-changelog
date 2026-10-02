@@ -1,5 +1,25 @@
 # Network Intelligence Center
 
+## 2026-10-01
+
+### Announcement
+
+[Network Services Monitoring](https://docs.cloud.google.com/network-intelligence-center/docs/network-services-monitoring/overview)
+is available in **Preview**.
+
+Network Services Monitoring visualizes communication paths and
+network metrics for Google Kubernetes Engine services
+and workloads with ambient networking enabled.
+
+### Feature
+
+[Cloud Network Insights](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/overview)
+supports using Google Cloud CLI commands to download
+[Microsoft Azure](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/deploy-azure-monitoring-points)
+and [Amazon Web Services (AWS)](https://docs.cloud.google.com/network-intelligence-center/docs/cloud-network-insights/deploy-aws-monitoring-points)
+Monitoring Point installation bundles.
+
+---
 ## 2026-09-22
 
 ### Feature

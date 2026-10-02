@@ -10,6 +10,19 @@ more information, see
 and [Set up webhooks](https://docs.cloud.google.com/secure-source-manager/docs/set-up-webhooks).
 
 ---
+## 2026-09-21
+
+### Feature
+
+Secure Source Manager now supports rendering Mermaid diagrams in Markdown files,
+pull requests, issues, and comments. You can use standard `mermaid` fenced
+code blocks to create flowcharts, sequence diagrams, class diagrams,
+entity-relationship diagrams, state diagrams, and XY charts.
+
+For more information, see
+[Add diagrams with Mermaid](https://docs.cloud.google.com/secure-source-manager/docs/work-with-issues-pull-requests#add-diagrams-with-mermaid).
+
+---
 ## 2026-09-16
 
 ### Feature

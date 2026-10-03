@@ -1,6 +1,32 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-10-02": [
+      {
+        "kind": "Announcement",
+        "content": "On October 2, 2026, we released an updated version of Apigee (1-18-0-apigee-6).\n\n**Note:** Rollouts of this release began today and can take four or more business\ndays to complete across all Google Cloud zones. Your instances might not have\nthe features and fixes available until the rollout is complete.",
+        "summary": {
+          "title": "Apigee Version 1-18-0-apigee-6 Released",
+          "summary": "A new version of Apigee, 1-18-0-apigee-6, was released on October 2, 2026. The rollout is in progress and may take several business days to complete across all zones. Your instances will have the new features and fixes available once the rollout is finished."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **564386425** | **Security fix for Apigee.** Upgraded the Apigee ingress gateway (ASM) to patch security vulnerabilities. |\n| **561666530** | **Security fix for Apigee.** Upgraded the Prometheus library to patch the following vulnerabilities:    * [CVE-2026-42151](https://nvd.nist.gov/vuln/detail/CVE-2026-42151) * [CVE-2026-42154](https://nvd.nist.gov/vuln/detail/CVE-2026-42154) * [CVE-2026-44903](https://nvd.nist.gov/vuln/detail/CVE-2026-44903) * [CVE-2026-40179](https://nvd.nist.gov/vuln/detail/CVE-2026-40179) |\n| **N/A** | **Security fix for Apigee infrastructure.** |",
+        "summary": {
+          "title": "Apigee Security Update",
+          "summary": "This update addresses several security vulnerabilities in Apigee, including upgrades to the Apigee ingress gateway and the Prometheus library. These fixes are crucial for maintaining the security posture of your Apigee environment."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **432315283** | Fixed a multi-certificate truststore so that its trust anchors take effect without a Message Processor restart when `features.truststore.multi_cert_bundle.enabled` is toggled at runtime; the outbound SSL context is now rebuilt automatically on any trust-anchor change. |\n| **565072374** | VerifyJWT policies that use a JWKS `uriRef` no longer return `steps.jwt.NoMatchingPublicKey` on the first request after the JWKS cache TTL expires when the identity provider has rotated to a new key ID. The cache now re-fetches synchronously when its entry expires. |\n| **535395491** | Extension Processor (ext\\_proc) denials now return the status and body that the policy or FaultRule produced, instead of always returning HTTP 500. |\n| **558421499** | Apigee runtime runs on JRE 21. |\n| **517953321** | The `lookupcache.<n>.isEncrypted` and `responsecache.<n>.isEncrypted` flow variables now report the per-entry on-disk encryption state of the L2 cache, rather than approximating whether the cache-encryption key is loaded. L1 cache hits report `false`. Review any policy conditions that rely on these flow variables. |\n| **563557547** | Fixed EventFlow (Server-Sent Events) coalescing multiple events into a single policy invocation under burst load on the http-adaptor data path, which produced malformed SSE output to the client. |\n| **562740573** | Apigee Analytics now populates the `processing_mode` dimension, distinguishing proxy traffic from extension-processor traffic. This dimension is not populated in billing-only analytics mode. |\n| **357042873** | Stopped redirecting `apigee-cassandra-schema-readiness` init container logs to `/dev/null`, improving troubleshooting. Workloads undergo a rolling restart upon upgrade. |\n| **N/A** | Updates to infrastructure and libraries. |",
+        "summary": {
+          "title": "Runtime fixes and improvements",
+          "summary": "Several issues have been resolved in the Apigee runtime, including improvements to JWT verification, certificate truststore handling, and EventFlow behavior. The runtime now also supports JRE 21 and provides enhanced logging for troubleshooting."
+        }
+      }
+    ],
     "2026-09-21": [
       {
         "kind": "Announcement",

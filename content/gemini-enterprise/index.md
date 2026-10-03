@@ -1,5 +1,29 @@
 # Gemini Enterprise
 
+## 2026-10-02
+
+### Feature
+
+**Gemini Enterprise: Federated query mode for Data Cloud connectors and Knowledge Catalog integration (Preview)**
+
+Federated query mode is available in [Preview](https://cloud.google.com/products#product-launch-stages) for the following connectors:
+
+* [AlloyDB for PostgreSQL](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-alloydb#federated-query)
+* [BigQuery](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-bigquery#federated-query)
+* [Cloud SQL](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-cloud-sql#federated-query)
+* [Spanner](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-spanner#federated-query)
+
+Federated query mode allows Gemini Enterprise to query your operational and analytical data in place using the Model Context Protocol (MCP) and each user's own credentials, without copying or ingesting data into a data store.
+
+In addition, the [Knowledge Catalog](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-knowledge-catalog) integration is available in Preview. When you attach a Data Cloud connector in federated query mode, Knowledge Catalog is automatically enabled on the **Assistant** tab of your app to give the assistant read-only tools to search for data that the user has access to and retrieve technical and business context.
+
+For more information, see the following resources:
+
+* [Connect to Data Cloud](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/connect-data-cloud)
+* [Best practices for Data Cloud connectors](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/data-cloud-best-practices)
+* [Secure Data Cloud connectors](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/data-cloud-security)
+
+---
 ## 2026-09-29
 
 ### Feature

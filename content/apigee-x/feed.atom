@@ -2,9 +2,59 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-09-21T00:00:00+00:00</updated>
+  <updated>2026-10-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-02:announcement:0</id>
+    <published>2026-10-02T00:00:00+00:00</published>
+    <updated>2026-10-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On October 2, 2026, we released an updated version of Apigee (1-18-0-apigee-6).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and can take four or more business
+days to complete across all Google Cloud zones. Your instances might not have
+the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>A new version of Apigee, 1-18-0-apigee-6, was released on October 2, 2026. The rollout is in progress and may take several business days to complete across all zones. Your instances will have the new features and fixes available once the rollout is finished.</summary>
+    <title>Announcement: Apigee Version 1-18-0-apigee-6 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-02:security:1</id>
+    <published>2026-10-02T00:00:00+00:00</published>
+    <updated>2026-10-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>564386425</strong> | <strong>Security fix for Apigee.</strong> Upgraded the Apigee ingress gateway (ASM) to patch security vulnerabilities. |
+| <strong>561666530</strong> | <strong>Security fix for Apigee.</strong> Upgraded the Prometheus library to patch the following vulnerabilities:    * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42151">CVE-2026-42151</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42154">CVE-2026-42154</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44903">CVE-2026-44903</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-40179">CVE-2026-40179</a> |
+| <strong>N/A</strong> | <strong>Security fix for Apigee infrastructure.</strong> |</p>]]></content>
+    <summary>This update addresses several security vulnerabilities in Apigee, including upgrades to the Apigee ingress gateway and the Prometheus library. These fixes are crucial for maintaining the security posture of your Apigee environment.</summary>
+    <title>Security: Apigee Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-02:fixed:2</id>
+    <published>2026-10-02T00:00:00+00:00</published>
+    <updated>2026-10-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>432315283</strong> | Fixed a multi-certificate truststore so that its trust anchors take effect without a Message Processor restart when <code>features.truststore.multi_cert_bundle.enabled</code> is toggled at runtime; the outbound SSL context is now rebuilt automatically on any trust-anchor change. |
+| <strong>565072374</strong> | VerifyJWT policies that use a JWKS <code>uriRef</code> no longer return <code>steps.jwt.NoMatchingPublicKey</code> on the first request after the JWKS cache TTL expires when the identity provider has rotated to a new key ID. The cache now re-fetches synchronously when its entry expires. |
+| <strong>535395491</strong> | Extension Processor (ext_proc) denials now return the status and body that the policy or FaultRule produced, instead of always returning HTTP 500. |
+| <strong>558421499</strong> | Apigee runtime runs on JRE 21. |
+| <strong>517953321</strong> | The <code>lookupcache.&lt;n&gt;.isEncrypted</code> and <code>responsecache.&lt;n&gt;.isEncrypted</code> flow variables now report the per-entry on-disk encryption state of the L2 cache, rather than approximating whether the cache-encryption key is loaded. L1 cache hits report <code>false</code>. Review any policy conditions that rely on these flow variables. |
+| <strong>563557547</strong> | Fixed EventFlow (Server-Sent Events) coalescing multiple events into a single policy invocation under burst load on the http-adaptor data path, which produced malformed SSE output to the client. |
+| <strong>562740573</strong> | Apigee Analytics now populates the <code>processing_mode</code> dimension, distinguishing proxy traffic from extension-processor traffic. This dimension is not populated in billing-only analytics mode. |
+| <strong>357042873</strong> | Stopped redirecting <code>apigee-cassandra-schema-readiness</code> init container logs to <code>/dev/null</code>, improving troubleshooting. Workloads undergo a rolling restart upon upgrade. |
+| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
+    <summary>Several issues have been resolved in the Apigee runtime, including improvements to JWT verification, certificate truststore handling, and EventFlow behavior. The runtime now also supports JRE 21 and provides enhanced logging for troubleshooting.</summary>
+    <title>Fixed: Runtime fixes and improvements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,38 @@
 # Apigee X
 
+## 2026-10-02
+
+### Announcement
+
+On October 2, 2026, we released an updated version of Apigee (1-18-0-apigee-6).
+
+**Note:** Rollouts of this release began today and can take four or more business
+days to complete across all Google Cloud zones. Your instances might not have
+the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **564386425** | **Security fix for Apigee.** Upgraded the Apigee ingress gateway (ASM) to patch security vulnerabilities. |
+| **561666530** | **Security fix for Apigee.** Upgraded the Prometheus library to patch the following vulnerabilities:    * [CVE-2026-42151](https://nvd.nist.gov/vuln/detail/CVE-2026-42151) * [CVE-2026-42154](https://nvd.nist.gov/vuln/detail/CVE-2026-42154) * [CVE-2026-44903](https://nvd.nist.gov/vuln/detail/CVE-2026-44903) * [CVE-2026-40179](https://nvd.nist.gov/vuln/detail/CVE-2026-40179) |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **432315283** | Fixed a multi-certificate truststore so that its trust anchors take effect without a Message Processor restart when `features.truststore.multi_cert_bundle.enabled` is toggled at runtime; the outbound SSL context is now rebuilt automatically on any trust-anchor change. |
+| **565072374** | VerifyJWT policies that use a JWKS `uriRef` no longer return `steps.jwt.NoMatchingPublicKey` on the first request after the JWKS cache TTL expires when the identity provider has rotated to a new key ID. The cache now re-fetches synchronously when its entry expires. |
+| **535395491** | Extension Processor (ext\_proc) denials now return the status and body that the policy or FaultRule produced, instead of always returning HTTP 500. |
+| **558421499** | Apigee runtime runs on JRE 21. |
+| **517953321** | The `lookupcache.<n>.isEncrypted` and `responsecache.<n>.isEncrypted` flow variables now report the per-entry on-disk encryption state of the L2 cache, rather than approximating whether the cache-encryption key is loaded. L1 cache hits report `false`. Review any policy conditions that rely on these flow variables. |
+| **563557547** | Fixed EventFlow (Server-Sent Events) coalescing multiple events into a single policy invocation under burst load on the http-adaptor data path, which produced malformed SSE output to the client. |
+| **562740573** | Apigee Analytics now populates the `processing_mode` dimension, distinguishing proxy traffic from extension-processor traffic. This dimension is not populated in billing-only analytics mode. |
+| **357042873** | Stopped redirecting `apigee-cassandra-schema-readiness` init container logs to `/dev/null`, improving troubleshooting. Workloads undergo a rolling restart upon upgrade. |
+| **N/A** | Updates to infrastructure and libraries. |
+
+---
 ## 2026-09-21
 
 ### Announcement

@@ -1,5 +1,91 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-10-02
+
+### Announcement
+
+**Google Cloud CCaaS 6.17**
+
+We've released version 6.17 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Warm transfers auto-resume**
+
+When an agent performs a warm transfer, the caller is now automatically taken
+off hold as soon as the transferring agent leaves the call, establishing
+two-way audio between the receiving agent and the caller without manual action.
+The caller stays on hold during the consultation between agents so that their
+conversation remains private. This applies to warm transfers routed through a
+queue and warm transfers sent directly to a specific agent. This change
+eliminates the silence that previously occurred when the caller remained on
+hold after the handoff.
+
+For more information, see [Warm
+transfers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#warm-transfer).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where the **Call ended** card in the session data feed
+  incorrectly displayed a call length of `00:00` despite the actual duration
+  being recorded correctly.
+* Fixed an issue where calls remained stuck on the live dashboard after a
+  caller hung up during the transition from a virtual agent to a queue.
+* Fixed an issue where the **Virtual Agent Session Variables** section was
+  missing from the call adapter after a successful credit card tokenization
+  handback.
+* Fixed an issue where agents belonging to multiple teams were incorrectly
+  granted access to all communication channels regardless of their team's
+  specific availability settings.
+* Fixed an issue where emails containing specific formatting displayed a
+  full-screen loading screen that prevented agents from viewing the message
+  or interacting with the agent desktop.
+* Fixed an issue where the CCaaS portal displayed an incorrect **Off** or
+  **Not Configured** status for Agent Assist after navigating
+  between queues or refreshing the page.
+* Added a checkbox for Salesforce CRM integrations that, when selected,
+  ignores ticket owner updates when an agent is assigned.
+* Fixed an issue where the automatic wrap-up timer didn't release agents when
+  notes or disposition codes were configured as optional.
+* Fixed an issue where agents remained stuck in a busy **Wrap-up** status
+  after the automatic wrap-up timer expired if they preselected **Wrap-up**
+  as their next status.
+* Fixed an issue where calls escalated from a virtual agent to an available
+  human agent were incorrectly deflected to the original queue's voicemail
+  upon reaching a timeout.
+* Fixed an issue where callers were left on hold indefinitely during cold
+  transfers to a direct agent extension when over-capacity deflection was
+  enabled.
+* Fixed an issue where virtual agent interaction outcomes weren't fully
+  mapped, leading to sessions being incorrectly categorized as "Undefined" or
+  "Unknown".
+* Fixed an issue where Agent Assist message analysis background jobs
+  failed and retried excessively for certain profiles.
+* Fixed an issue where transcript message updates caused excessive background
+  processing load.
+* Fixed an issue where the microphone permission error was mistranslated as
+  "Microphone désactivé!" instead of "Microphone turned off!" for agents using
+  French (Canada) localization in the agent adapter.
+* Fixed an issue where calls meeting over-capacity deflection criteria didn't
+  reach their destination queue, leaving callers connected without a route.
+* Fixed an issue where queue duration metrics weren't captured for scheduled
+  callbacks escalating from a virtual agent to a human agent.
+* Fixed an issue where virtual agent conversations remained open after a call
+  ended due to missing wrap-up events.
+* Fixed an issue where virtual agent voice sessions remained active after a
+  caller disconnected, resulting in delayed error logs appearing 10 to 15
+  minutes after the call ended.
+* Fixed an issue where agents were incorrectly marked as **Unresponsive**
+  because call offers were sent before their browser finished transitioning
+  from a previous call.
+
+---
 ## 2026-09-30
 
 ### Announcement

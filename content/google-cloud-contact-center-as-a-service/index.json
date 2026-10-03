@@ -1,6 +1,32 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-10-02": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 6.17**\n\nWe've released version 6.17 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "CCaaS 6.17 Release",
+          "summary": "Version 6.17 of Google Cloud CCaaS has been released. The specific update timing for your instance will depend on your chosen deployment schedule."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Warm transfers auto-resume**\n\nWhen an agent performs a warm transfer, the caller is now automatically taken\noff hold as soon as the transferring agent leaves the call, establishing\ntwo-way audio between the receiving agent and the caller without manual action.\nThe caller stays on hold during the consultation between agents so that their\nconversation remains private. This applies to warm transfers routed through a\nqueue and warm transfers sent directly to a specific agent. This change\neliminates the silence that previously occurred when the caller remained on\nhold after the handoff.\n\nFor more information, see [Warm\ntransfers](https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#warm-transfer).",
+        "summary": {
+          "title": "Warm transfers auto-resume",
+          "summary": "Warm transfers now automatically resume two-way audio as soon as the transferring agent leaves the call. This eliminates the previous silence and ensures a smoother experience for both agents and callers, whether transfers are routed through a queue or directly to an agent."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where the **Call ended** card in the session data feed\n  incorrectly displayed a call length of `00:00` despite the actual duration\n  being recorded correctly.\n* Fixed an issue where calls remained stuck on the live dashboard after a\n  caller hung up during the transition from a virtual agent to a queue.\n* Fixed an issue where the **Virtual Agent Session Variables** section was\n  missing from the call adapter after a successful credit card tokenization\n  handback.\n* Fixed an issue where agents belonging to multiple teams were incorrectly\n  granted access to all communication channels regardless of their team's\n  specific availability settings.\n* Fixed an issue where emails containing specific formatting displayed a\n  full-screen loading screen that prevented agents from viewing the message\n  or interacting with the agent desktop.\n* Fixed an issue where the CCaaS portal displayed an incorrect **Off** or\n  **Not Configured** status for Agent Assist after navigating\n  between queues or refreshing the page.\n* Added a checkbox for Salesforce CRM integrations that, when selected,\n  ignores ticket owner updates when an agent is assigned.\n* Fixed an issue where the automatic wrap-up timer didn't release agents when\n  notes or disposition codes were configured as optional.\n* Fixed an issue where agents remained stuck in a busy **Wrap-up** status\n  after the automatic wrap-up timer expired if they preselected **Wrap-up**\n  as their next status.\n* Fixed an issue where calls escalated from a virtual agent to an available\n  human agent were incorrectly deflected to the original queue's voicemail\n  upon reaching a timeout.\n* Fixed an issue where callers were left on hold indefinitely during cold\n  transfers to a direct agent extension when over-capacity deflection was\n  enabled.\n* Fixed an issue where virtual agent interaction outcomes weren't fully\n  mapped, leading to sessions being incorrectly categorized as \"Undefined\" or\n  \"Unknown\".\n* Fixed an issue where Agent Assist message analysis background jobs\n  failed and retried excessively for certain profiles.\n* Fixed an issue where transcript message updates caused excessive background\n  processing load.\n* Fixed an issue where the microphone permission error was mistranslated as\n  \"Microphone désactivé!\" instead of \"Microphone turned off!\" for agents using\n  French (Canada) localization in the agent adapter.\n* Fixed an issue where calls meeting over-capacity deflection criteria didn't\n  reach their destination queue, leaving callers connected without a route.\n* Fixed an issue where queue duration metrics weren't captured for scheduled\n  callbacks escalating from a virtual agent to a human agent.\n* Fixed an issue where virtual agent conversations remained open after a call\n  ended due to missing wrap-up events.\n* Fixed an issue where virtual agent voice sessions remained active after a\n  caller disconnected, resulting in delayed error logs appearing 10 to 15\n  minutes after the call ended.\n* Fixed an issue where agents were incorrectly marked as **Unresponsive**\n  because call offers were sent before their browser finished transitioning\n  from a previous call.",
+        "summary": {
+          "title": "Resolved Issues in Recent Update",
+          "summary": "This update resolves several critical issues, including incorrect call durations, stuck dashboard statuses, and problems with agent access and email display. Additionally, it addresses bugs related to virtual agent interactions, CRM integrations, and status management for agents."
+        }
+      }
+    ],
     "2026-09-30": [
       {
         "kind": "Announcement",

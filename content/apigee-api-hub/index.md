@@ -4,6 +4,16 @@
 
 ### Feature
 
+**Service type system attribute (GA)**
+
+API hub now includes **Service type**, a system attribute that classifies an API as `Code`, `Model`, `Agent`, or `Skill`. Service type describes what a service is. **API style** describes how you call it. Use Service type to find and govern your APIs, agents, models, and skills.
+
+Set Service type when you register or edit an API. To show only your agents, filter the API list by Service type, or select the new **Agent** chip. In the API, use the `service_type` field.
+
+This feature is [Generally Available (GA)](https://cloud.google.com/products#product-launch-stages). For more information, see [Supported system attributes](https://docs.cloud.google.com/apigee/docs/apihub/manage-attributes#supported-system-attributes).
+
+### Feature
+
 **AI performance and Tool performance dashboards in API insights**
 
 API insights in API hub now includes two dashboards for AI and agent traffic:

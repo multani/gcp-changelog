@@ -1,5 +1,94 @@
 # Google SecOps Marketplace
 
+## 2026-09-30
+
+### Feature
+
+**Akeyless Security**: Version 1.0
+
+* New **Akeyless Security** integration.
+
+### Change
+
+**Vertex AI**: Version 9.0
+
+* **Integration**: Improved API error message parsing.
+
+### Change
+
+**Microsoft Graph Mail**: Version 48.0
+
+* Added support for message timezone in the following action:
+
+  + **Send Thread Reply**
+
+### Change
+
+**Cyberint**: Version 8.0
+
+* Added the **Disable Overflow** parameter to the following connector:
+
+  + **Cyberint - Alerts Connector**
+
+### Change
+
+**Illusive Networks**: Version 11.0
+
+* Fixed the endpoint for retrieving forensic data in the following action:
+
+  + **Run Forensic Scan**
+
+### Change
+
+**Microsoft 365 Defender**: Version 33.0
+
+* Improved the case priority parsing mechanism to support protobuf format on
+  remote agents and updated comment syncing logic to support multi-line closure
+  comments in the following job:
+
+  + **Sync Alerts**
+
+### Change
+
+**CrowdStrike Falcon**: Version 83.0
+
+* Updated comment syncing logic to support multi-line closure comments and sync
+  comments from closed CrowdStrike alerts in the following action:
+
+  + **Sync Alerts**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 25.0
+
+* Added support for message timezone in the following action:
+
+  + **Send Thread Reply**
+
+### Change
+
+**Jira**: Version 62.0
+
+* Improved context properties processing logic in the following action:
+
+  + **Create Issue**
+
+### Change
+
+**Google Chronicle**: Version 96.0
+
+* **Integration**: Removed dummy network socket initialization during multipart
+  response parsing and updated the default API root to point to the Chronicle API.
+
+### Change
+
+**SentinelOne Singularity Operations Center**: Version 2.0
+
+* Updated event processing logic and ontology mapping in the following connector:
+
+  + **SentinelOne Singularity Operations Center - Unified Alerts Connector**
+
+---
 ## 2026-09-16
 
 ### Feature

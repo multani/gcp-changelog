@@ -8,6 +8,14 @@ Fault Injection Testing is generally available
 ([GA](https://cloud.google.com/products#product-launch-stages)).
 
 ---
+## 2026-09-22
+
+### Feature
+
+Developer Connect is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-09-13
 
 ### Feature

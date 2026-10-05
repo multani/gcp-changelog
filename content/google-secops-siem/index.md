@@ -1,5 +1,16 @@
 # Google SecOps SIEM
 
+## 2026-10-05
+
+### Feature
+
+**[Spotlight Feature] Terraform and client libraries for multiple features using Chronicle API**
+
+Terraform providers and Google Cloud client libraries are now available for several Google SecOps features using Chronicle API including **Feeds, Parsers, Rules, Findings Refinements, Retrohunts, Dashboards, Data Tables, Watchlists, Custom Lists, Environments, Environment Groups, Data Export, SOAR Domains, and SOAR Networks**. For more information, see [Terraform reference](https://docs.cloud.google.com/chronicle/docs/terraform) and [Client libraries](https://docs.cloud.google.com/chronicle/docs/libraries).
+
+Terraform providers enable programmatic provisioning and management of Google SecOps resources as code, while Client Libraries enable developers to build custom integrations and automate Google SecOps workflows in their preferred programming languages.
+
+---
 ## 2026-09-21
 
 ### Feature

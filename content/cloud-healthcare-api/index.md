@@ -1,5 +1,20 @@
 # Cloud Healthcare API
 
+## 2026-10-01
+
+### Feature
+
+**Preview:** The FHIR bulk export Group POST feature is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages) in Cloud Healthcare
+API `v1beta1`. You can invoke the `$export` operation on a FHIR `Group` by using the HTTP
+`POST` method (`projects.locations.datasets.fhirStores.bulk-export-group-post`) to supply
+export parameters in the request body rather than through URL query parameters.
+The request body allows filtering by a list of up to 1,000 patient references by using
+the `patient` parameter in addition to `_since` and `_type`. For more information about the
+specification, see the FHIR Bulk Data Access
+guide for [$export group of patients](https://build.fhir.org/ig/HL7/bulk-data/export.html#endpoint---group-of-patients).
+
+---
 ## 2026-09-18
 
 ### Feature

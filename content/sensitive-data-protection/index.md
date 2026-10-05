@@ -1,5 +1,14 @@
 # Sensitive Data Protection
 
+## 2026-10-03
+
+### Change
+
+A new version with an updated name dictionary is available for the `PERSON_NAME` [infoType](https://docs.cloud.google.com/sensitive-data-protection/docs/infotypes-reference) detector. You can try it out by setting `InfoType.version` to `latest` when including the `PERSON_NAME` infoType in your `InspectConfig`.
+
+You can still use the previous functionality by setting `InfoType.version` to `stable` or leaving it unset when using the `PERSON_NAME` infoType. In 30 days, the new version will be promoted to `stable`.
+
+---
 ## 2026-08-31
 
 ### Feature

@@ -2465,6 +2465,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Network service tiers <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../network-service-tiers/" class="dropdown-item">Network Service Tiers</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Oracle database google cloud <b class="caret"></b>
                         </a>
 
@@ -2934,6 +2946,21 @@
 <ul>
 <li><strong>Preconfigured Conda channels removed:</strong> Preconfigured conda channels (such as <code>conda-forge</code>) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.</li>
 <li><strong>Affected runtime versions:</strong> <code>1.2.89+</code>, <code>2.2.89+</code>, and <code>2.3.42+</code>.</li>
+</ul>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):</p>
+<ul>
+<li>
+<p><strong>Enforced SPNEGO Authentication on Web UIs:</strong> Disabled anonymous access to YARN (ResourceManager, NodeManager) and HiveServer2 web interfaces on Kerberos-enabled clusters to align with Zero-Trust architecture. End users and administrators must hold an active Kerberos ticket (kinit) and configure their browser/client for SPNEGO negotiation to access cluster consoles.</p>
+</li>
+<li>
+<p><strong>Affected runtime versions:</strong> <code>2.2.88+</code>, <code>2.3.37+</code>, <code>3.0.3+</code>.</p>
+</li>
+<li>
+<p><strong>End-to-End Encryption for Apache Ranger (HTTPS):</strong> Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target <code>https://&lt;master-host&gt;:6182</code> instead of legacy HTTP port 6080.</p>
+</li>
+<li>
+<p><strong>Affected runtime versions:</strong> <code>2.2.88+</code>, <code>2.3.37+</code>, <code>3.0.3+</code>.</p>
+</li>
 </ul>
 <h3 id="announcement">Announcement</h3>
 <p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine): <a href="https://docs.cloud.google.com/managed-spark/docs/guides/lightning-engine">Lightning Engine</a> is now supported in <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0"><code>3.0</code> cluster image versions</a> starting with subminor image version <a href="https://docs.cloud.google.com/managed-spark/docs/release-notes#September_04_2026"><code>3.0.2</code></a> (<code>3.0.2-debian13</code> and <code>3.0.2-ubuntu24</code>).</p>

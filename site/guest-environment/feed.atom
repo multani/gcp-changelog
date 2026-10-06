@@ -2,9 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Guest Environment</title>
   <subtitle>Changelog for Google Cloud product: Guest Environment</subtitle>
-  <updated>2026-08-03T00:00:00+00:00</updated>
+  <updated>2026-10-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:guest-environment</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/guest-environment/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-10-05:feature:0</id>
+    <published>2026-10-05T00:00:00+00:00</published>
+    <updated>2026-10-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260921.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This version introduces
+the following features:</p>
+<ul>
+<li>The managed workload identity certificate refresher is now a locally bundled
+  extension. For more information, see
+  <a href="https://docs.cloud.google.com/iam/docs/managed-workload-identity">Managed workload identities overview</a>.</li>
+<li>The guest telemetry extension is updated to version 1.1 and polls every 15
+  minutes instead of every 24 hours. However, it will only send data to the
+  API every 24 hours, unless it detects a change in the system since the
+  previous poll. The extension supports the following capabilities:</li>
+<li>Running a command as the user associated with a discovered process.</li>
+<li>Configuring regular expressions to match against the version command
+    output.</li>
+</ul>]]></content>
+    <summary>The latest version of the guest agent is now available, bringing updates to workload identity certificate management and enhanced guest telemetry. This release includes a bundled extension for certificate refresher and an updated telemetry extension that polls more frequently while optimizing data transmission.</summary>
+    <title>Feature: Guest Agent Update Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:guest-environment:2026-10-05:fixed:1</id>
+    <published>2026-10-05T00:00:00+00:00</published>
+    <updated>2026-10-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Version <code>20260921.00</code> of the <a href="https://docs.cloud.google.com/compute/docs/images/guest-agent">guest agent</a>
+is now available for all supported operating systems. This version introduces
+the following fixes:</p>
+<ul>
+<li>The <code>NetworkManager</code> setup now no longer reloads the primary NIC when it
+  applies changes to the network configuration of secondary NICs, unless
+  necessary.</li>
+<li>If the core plugin successfully rolls back any configurations, then it
+  force-reloads the configurations to make sure that the instance re-obtains
+  DHCP leases for secondary NICs.</li>
+<li>The core plugin now respects the <code>address-manager</code> configuration flag and
+  the corresponding metadata attribute.</li>
+<li>The extensions manager now ignores install and remove requests from ACS
+  for the core plugin and locally bundled extensions.</li>
+<li>The extensions manager no longer logs that there are no local plugins to
+  install when it's installing local plugins.</li>
+<li>The metadata script runner now respects the <code>sysprep_specialize</code>
+  configuration flag.</li>
+</ul>]]></content>
+    <summary>Version 20260921.00 of the guest agent is now available. This release includes several fixes related to network configuration, DHCP lease renewal, address management, and the metadata script runner. These updates ensure more robust and reliable operation of the agent.</summary>
+    <title>Fixed: Guest Agent Update Deployed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

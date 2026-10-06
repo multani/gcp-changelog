@@ -24,6 +24,34 @@ For more information, see the following resources:
 * [Secure Data Cloud connectors](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/data-cloud-security)
 
 ---
+## 2026-10-01
+
+### Announcement
+
+**Gemini Enterprise: Gemini 2.5 Pro removal in Canada and Japan on October 20,
+2026**
+
+On October 20, 2026, Gemini 2.5 Pro will be removed from the Gemini Enterprise
+app in the Canada and Japan in-country regions. After this date, users in these
+regions can't select Gemini 2.5 Pro in the Gemini Enterprise app.
+
+Gemini 2.5 Pro remains available in the `global`, `us`, and `eu` regions.
+
+For more information, see [Data residency for Gemini
+Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+
+### Feature
+
+**Gemini Enterprise: Turn Gemini 2.5 Pro on or off in the web app**
+
+Administrators can turn Gemini 2.5 Pro on or off for the Gemini Enterprise web
+app in the `global`, `us`, and `eu` regions. Gemini 2.5 Pro remains turned on
+by default, so existing configurations aren't affected.
+
+For more information, see [Manage web app
+features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-09-29
 
 ### Feature

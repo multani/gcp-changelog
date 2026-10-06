@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-10-05": [
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.12.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Hidden file scanning**: Added the `--include-hidden` flag to `cm find` (or `include_hidden` under `scan` in `config.yaml`) to include hidden directories and files, such as `.github/` and `.config/`, in vulnerability scans.\n* **Larger file support**: Raised the default file discovery size limit (`max_file_size_kb`) from 500 KB to 2 MiB so `cm find` no longer skips large source files. Existing configurations that use the previous 500 KB default are upgraded automatically, and `--deep` and `--diff` scans can now read beyond the inline preview of files larger than 64 KB.\n* **Report output for every scan mode**: `cm find --output` now writes the scan report for standard, `--deep`, `--parallel`, and `--diff` scans.\n* **Scoped fixes**: `cm fix` now prevents the agent from modifying CI/CD pipelines, static analysis configurations, build definitions, and repository configuration files that are outside the scope of the vulnerability being fixed.\n* **Accurate session token usage**: `cm` now reports the total token usage across all turns of a session, instead of only the final turn, so token counts in `cm stats` and session exports match billed usage.\n* **Bug fixes**:\n  + Fixed duplicate findings in `cm report` and `cm stats`, and stopped merging distinct vulnerability types reported on the same line.\n  + Fixed `database is locked` errors during `cm find --deep` scans with multiple workers.\n  + Reduced false positives by requiring a concrete, viable exploit before reporting a finding with high confidence.\n  + Included sessions from `cm find --deep` and `cm find --diff` workers in `cm stats`.\n  + Fixed `cm verify` resolving relative finding and exploit artifact paths against the current working directory instead of the project root.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
+        "summary": {
+          "title": "CodeMender v0.12.0: Enhanced Scanning and Fixes",
+          "summary": "CodeMender v0.12.0 enhances vulnerability scanning by including hidden files and supporting larger files. This release also refines the `cm fix` command to prevent out-of-scope modifications and improves reporting accuracy for token usage and scan results. Several bug fixes have been implemented to ensure more reliable and precise vulnerability detection and reporting."
+        }
+      }
+    ],
     "2026-09-30": [
       {
         "kind": "Feature",

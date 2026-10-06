@@ -1,5 +1,27 @@
 # BigQuery
 
+## 2026-10-05
+
+### Feature
+
+[Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables) and
+[Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) now support
+[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default. This
+feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
+The `gemini-embedding-2` model works well for embedding long strings, including
+multilingual and unstructured data. It supports a mix of text, images, audio,
+video, and PDF files. You can use this model in the
+[`AI.EMBED`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed),
+[`AI.SIMILARITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-similarity),
+and
+[`AI.GENERATE_EMBEDDING`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-embedding)
+functions. This model is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-02
 
 ### Feature

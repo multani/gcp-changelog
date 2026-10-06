@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dialogflow</title>
   <subtitle>Changelog for Google Cloud product: Dialogflow</subtitle>
-  <updated>2026-05-07T00:00:00+00:00</updated>
+  <updated>2026-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dialogflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dialogflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dialogflow:2026-09-30:fixed:0</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Dialogflow CX</strong>: An issue in Dialogflow CX was identified where sensitive authentication tokens stored in conversational session parameters could be returned in cleartext via <code>DetectIntent</code> API responses. A server-side fix has been applied to redact and sanitize authentication credentials from conversational API outputs. No customer configuration changes or updates are required.</p>]]></content>
+    <summary>A security vulnerability in Dialogflow CX has been fixed. Sensitive authentication tokens in session parameters are no longer exposed in API responses. No customer action is needed.</summary>
+    <title>Fixed: Security fix for session parameters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dialogflow:2026-09-30:deprecated:1</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>All generative features</strong>: <code>gemini-2.5-flash</code> and <code>gemini-2.5-flash-lite</code> models will be deprecated by Dec 23, 2026. Upgrade to newer Gemini models such as <code>gemini-3.1-flash-lite</code> before the deprecation date.</p>]]></content>
+    <summary>The `gemini-2.5-flash` and `gemini-2.5-flash-lite` models are scheduled for deprecation on December 23, 2026. Please migrate to newer Gemini models, like `gemini-3.1-flash-lite`, to ensure uninterrupted service.</summary>
+    <title>Deprecated: Generative models deprecation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dialogflow:2026-09-30:feature:2</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/dialogflow/es/docs/reference/rpc/google.cloud.dialogflow.v2#participants">BidiStreamingAnalyzeContent</a> API has become generally available (GA).</p>]]></content>
+    <summary>The BidiStreamingAnalyzeContent API is now generally available. This feature enables real-time analysis of conversations, enhancing the capabilities for interactive applications.</summary>
+    <title>Feature: New API for Real-time Conversations</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

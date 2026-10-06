@@ -203,6 +203,7 @@
 - [Network Connectivity Center](network-connectivity-center/index.md)
 - [Network Intelligence Center](network-intelligence-center/index.md)
 - [Network Security Integration](network-security-integration/index.md)
+- [Network Service Tiers](network-service-tiers/index.md)
 - [Oracle Database@Google Cloud](oracle-database-google-cloud/index.md)
 - [Oracle on Google Cloud Compute](oracle-on-google-cloud-compute/index.md)
 - [Organization Policy](organization-policy/index.md)

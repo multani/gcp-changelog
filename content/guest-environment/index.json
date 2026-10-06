@@ -1,6 +1,24 @@
 {
   "name": "Guest Environment",
   "entries": {
+    "2026-10-05": [
+      {
+        "kind": "Feature",
+        "content": "Version `20260921.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available for all supported operating systems. This version introduces\nthe following features:\n\n* The managed workload identity certificate refresher is now a locally bundled\n  extension. For more information, see\n  [Managed workload identities overview](https://docs.cloud.google.com/iam/docs/managed-workload-identity).\n* The guest telemetry extension is updated to version 1.1 and polls every 15\n  minutes instead of every 24 hours. However, it will only send data to the\n  API every 24 hours, unless it detects a change in the system since the\n  previous poll. The extension supports the following capabilities:\n  + Running a command as the user associated with a discovered process.\n  + Configuring regular expressions to match against the version command\n    output.",
+        "summary": {
+          "title": "Guest Agent Update Available",
+          "summary": "The latest version of the guest agent is now available, bringing updates to workload identity certificate management and enhanced guest telemetry. This release includes a bundled extension for certificate refresher and an updated telemetry extension that polls more frequently while optimizing data transmission."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Version `20260921.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)\nis now available for all supported operating systems. This version introduces\nthe following fixes:\n\n* The `NetworkManager` setup now no longer reloads the primary NIC when it\n  applies changes to the network configuration of secondary NICs, unless\n  necessary.\n* If the core plugin successfully rolls back any configurations, then it\n  force-reloads the configurations to make sure that the instance re-obtains\n  DHCP leases for secondary NICs.\n* The core plugin now respects the `address-manager` configuration flag and\n  the corresponding metadata attribute.\n* The extensions manager now ignores install and remove requests from ACS\n  for the core plugin and locally bundled extensions.\n* The extensions manager no longer logs that there are no local plugins to\n  install when it's installing local plugins.\n* The metadata script runner now respects the `sysprep_specialize`\n  configuration flag.",
+        "summary": {
+          "title": "Guest Agent Update Deployed",
+          "summary": "Version 20260921.00 of the guest agent is now available. This release includes several fixes related to network configuration, DHCP lease renewal, address management, and the metadata script runner. These updates ensure more robust and reliable operation of the agent."
+        }
+      }
+    ],
     "2026-08-03": [
       {
         "kind": "Fixed",

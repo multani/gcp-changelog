@@ -2465,6 +2465,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Network service tiers <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../network-service-tiers/" class="dropdown-item">Network Service Tiers</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Oracle database google cloud <b class="caret"></b>
                         </a>
 
@@ -2928,6 +2940,25 @@
 
 
 <h1 id="gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</h1>
+<h2 id="2026-10-05">2026-10-05</h2>
+<h3 id="fixed">Fixed</h3>
+<p><strong>CodeMender updates (v0.12.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Hidden file scanning</strong>: Added the <code>--include-hidden</code> flag to <code>cm find</code> (or <code>include_hidden</code> under <code>scan</code> in <code>config.yaml</code>) to include hidden directories and files, such as <code>.github/</code> and <code>.config/</code>, in vulnerability scans.</li>
+<li><strong>Larger file support</strong>: Raised the default file discovery size limit (<code>max_file_size_kb</code>) from 500 KB to 2 MiB so <code>cm find</code> no longer skips large source files. Existing configurations that use the previous 500 KB default are upgraded automatically, and <code>--deep</code> and <code>--diff</code> scans can now read beyond the inline preview of files larger than 64 KB.</li>
+<li><strong>Report output for every scan mode</strong>: <code>cm find --output</code> now writes the scan report for standard, <code>--deep</code>, <code>--parallel</code>, and <code>--diff</code> scans.</li>
+<li><strong>Scoped fixes</strong>: <code>cm fix</code> now prevents the agent from modifying CI/CD pipelines, static analysis configurations, build definitions, and repository configuration files that are outside the scope of the vulnerability being fixed.</li>
+<li><strong>Accurate session token usage</strong>: <code>cm</code> now reports the total token usage across all turns of a session, instead of only the final turn, so token counts in <code>cm stats</code> and session exports match billed usage.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Fixed duplicate findings in <code>cm report</code> and <code>cm stats</code>, and stopped merging distinct vulnerability types reported on the same line.</li>
+<li>Fixed <code>database is locked</code> errors during <code>cm find --deep</code> scans with multiple workers.</li>
+<li>Reduced false positives by requiring a concrete, viable exploit before reporting a finding with high confidence.</li>
+<li>Included sessions from <code>cm find --deep</code> and <code>cm find --diff</code> workers in <code>cm stats</code>.</li>
+<li>Fixed <code>cm verify</code> resolving relative finding and exploit artifact paths against the current working directory instead of the project root.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>
+<hr />
 <h2 id="2026-09-30">2026-09-30</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Cloud Trace integration with Agent Gateway (Preview)</strong></p>
@@ -2944,7 +2975,7 @@ gateway and across Google Cloud services, tools, agents, and MCP servers.</p>
 is available in
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> in Model
 Garden.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p><strong>CodeMender updates (v0.11.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3056,7 +3087,7 @@ is available in
 1.3 from Meta is a reasoning model trained for agentic workflows and
 competitive coding. It delivers higher first-attempt accuracy, reliable built-in
 tool calling with MCP support, and 1M-token long context for multi-step tasks.</p>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p><strong>CodeMender updates (v0.10.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3079,7 +3110,7 @@ tool calling with MCP support, and 1M-token long context for multi-step tasks.</
 is available in Model Garden.</p>
 <hr />
 <h2 id="2026-09-21">2026-09-21</h2>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p><strong>CodeMender updates (v0.9.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3161,7 +3192,7 @@ in Agent Studio.</p>
 <li><strong>Gemini 3.1 Flash-Lite Image (<code>gemini-3.1-flash-lite-image</code>)</strong>: Retirement date is scheduled for June 28, 2027 or later.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions">Gemini model versions and lifecycle</a>.</p>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p><strong>CodeMender updates (v0.7.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3262,7 +3293,7 @@ page</a>.</p>
 <p><strong>Provisioned Throughput support for Gemini Omni</strong></p>
 <p>Provisioned Throughput supports Gemini Omni. To learn more, see
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models">supported models</a>.</p>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p><strong>CodeMender updates (v0.6.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -4079,7 +4110,7 @@ more, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-pla
 overview</a>.</p>
 <hr />
 <h2 id="2026-05-06">2026-05-06</h2>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>Fixed an issue with <strong>Audio track extraction (Gemini Embedding 2 only)</strong> where the <code>audio_track_extraction</code> feature did not work. For more information, see <a href="https://issuetracker.google.com/504505771">Issue #504505771</a>.</p>
 <h3 id="change_12">Change</h3>
 <p><strong>Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image</strong></p>
@@ -4451,6 +4482,9 @@ changes:</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-05" class="nav-link">2026-10-05</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-30" class="nav-link">2026-09-30</a>
           </li>

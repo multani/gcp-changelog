@@ -9,6 +9,15 @@
 * **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.
   + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.
 
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+
+* **Enforced SPNEGO Authentication on Web UIs:** Disabled anonymous access to YARN (ResourceManager, NodeManager) and HiveServer2 web interfaces on Kerberos-enabled clusters to align with Zero-Trust architecture. End users and administrators must hold an active Kerberos ticket (kinit) and configure their browser/client for SPNEGO negotiation to access cluster consoles.
+
+  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.
+* **End-to-End Encryption for Apache Ranger (HTTPS):** Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target `https://<master-host>:6182` instead of legacy HTTP port 6080.
+
+  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.
+
 ### Announcement
 
 **Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): [Lightning Engine](https://docs.cloud.google.com/managed-spark/docs/guides/lightning-engine) is now supported in [`3.0` cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-release-3.0) starting with subminor image version [`3.0.2`](https://docs.cloud.google.com/managed-spark/docs/release-notes#September_04_2026) (`3.0.2-debian13` and `3.0.2-ubuntu24`).

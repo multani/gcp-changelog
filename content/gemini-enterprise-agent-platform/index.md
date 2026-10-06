@@ -1,5 +1,28 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-10-05
+
+### Fixed
+
+**CodeMender updates (v0.12.0)**
+
+This release introduces updates to CodeMender:
+
+* **Hidden file scanning**: Added the `--include-hidden` flag to `cm find` (or `include_hidden` under `scan` in `config.yaml`) to include hidden directories and files, such as `.github/` and `.config/`, in vulnerability scans.
+* **Larger file support**: Raised the default file discovery size limit (`max_file_size_kb`) from 500 KB to 2 MiB so `cm find` no longer skips large source files. Existing configurations that use the previous 500 KB default are upgraded automatically, and `--deep` and `--diff` scans can now read beyond the inline preview of files larger than 64 KB.
+* **Report output for every scan mode**: `cm find --output` now writes the scan report for standard, `--deep`, `--parallel`, and `--diff` scans.
+* **Scoped fixes**: `cm fix` now prevents the agent from modifying CI/CD pipelines, static analysis configurations, build definitions, and repository configuration files that are outside the scope of the vulnerability being fixed.
+* **Accurate session token usage**: `cm` now reports the total token usage across all turns of a session, instead of only the final turn, so token counts in `cm stats` and session exports match billed usage.
+* **Bug fixes**:
+  + Fixed duplicate findings in `cm report` and `cm stats`, and stopped merging distinct vulnerability types reported on the same line.
+  + Fixed `database is locked` errors during `cm find --deep` scans with multiple workers.
+  + Reduced false positives by requiring a concrete, viable exploit before reporting a finding with high confidence.
+  + Included sessions from `cm find --deep` and `cm find --diff` workers in `cm stats`.
+  + Fixed `cm verify` resolving relative finding and exploit artifact paths against the current working directory instead of the project root.
+
+For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
+
+---
 ## 2026-09-30
 
 ### Feature

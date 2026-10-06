@@ -1,5 +1,20 @@
 # Dialogflow
 
+## 2026-09-30
+
+### Fixed
+
+**Dialogflow CX**: An issue in Dialogflow CX was identified where sensitive authentication tokens stored in conversational session parameters could be returned in cleartext via `DetectIntent` API responses. A server-side fix has been applied to redact and sanitize authentication credentials from conversational API outputs. No customer configuration changes or updates are required.
+
+### Deprecated
+
+**All generative features**: `gemini-2.5-flash` and `gemini-2.5-flash-lite` models will be deprecated by Dec 23, 2026. Upgrade to newer Gemini models such as `gemini-3.1-flash-lite` before the deprecation date.
+
+### Feature
+
+[BidiStreamingAnalyzeContent](https://docs.cloud.google.com/dialogflow/es/docs/reference/rpc/google.cloud.dialogflow.v2#participants) API has become generally available (GA).
+
+---
 ## 2026-05-07
 
 ### Fixed

@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-09-30T00:00:00+00:00</updated>
+  <updated>2026-10-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-05:fixed:0</id>
+    <published>2026-10-05T00:00:00+00:00</published>
+    <updated>2026-10-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.12.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Hidden file scanning</strong>: Added the <code>--include-hidden</code> flag to <code>cm find</code> (or <code>include_hidden</code> under <code>scan</code> in <code>config.yaml</code>) to include hidden directories and files, such as <code>.github/</code> and <code>.config/</code>, in vulnerability scans.</li>
+<li><strong>Larger file support</strong>: Raised the default file discovery size limit (<code>max_file_size_kb</code>) from 500 KB to 2 MiB so <code>cm find</code> no longer skips large source files. Existing configurations that use the previous 500 KB default are upgraded automatically, and <code>--deep</code> and <code>--diff</code> scans can now read beyond the inline preview of files larger than 64 KB.</li>
+<li><strong>Report output for every scan mode</strong>: <code>cm find --output</code> now writes the scan report for standard, <code>--deep</code>, <code>--parallel</code>, and <code>--diff</code> scans.</li>
+<li><strong>Scoped fixes</strong>: <code>cm fix</code> now prevents the agent from modifying CI/CD pipelines, static analysis configurations, build definitions, and repository configuration files that are outside the scope of the vulnerability being fixed.</li>
+<li><strong>Accurate session token usage</strong>: <code>cm</code> now reports the total token usage across all turns of a session, instead of only the final turn, so token counts in <code>cm stats</code> and session exports match billed usage.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Fixed duplicate findings in <code>cm report</code> and <code>cm stats</code>, and stopped merging distinct vulnerability types reported on the same line.</li>
+<li>Fixed <code>database is locked</code> errors during <code>cm find --deep</code> scans with multiple workers.</li>
+<li>Reduced false positives by requiring a concrete, viable exploit before reporting a finding with high confidence.</li>
+<li>Included sessions from <code>cm find --deep</code> and <code>cm find --diff</code> workers in <code>cm stats</code>.</li>
+<li>Fixed <code>cm verify</code> resolving relative finding and exploit artifact paths against the current working directory instead of the project root.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender v0.12.0 enhances vulnerability scanning by including hidden files and supporting larger files. This release also refines the `cm fix` command to prevent out-of-scope modifications and improves reporting accuracy for token usage and scan results. Several bug fixes have been implemented to ensure more reliable and precise vulnerability detection and reporting.</summary>
+    <title>Fixed: CodeMender v0.12.0: Enhanced Scanning and Fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

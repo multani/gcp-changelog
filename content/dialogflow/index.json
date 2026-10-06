@@ -1,6 +1,32 @@
 {
   "name": "Dialogflow",
   "entries": {
+    "2026-09-30": [
+      {
+        "kind": "Fixed",
+        "content": "**Dialogflow CX**: An issue in Dialogflow CX was identified where sensitive authentication tokens stored in conversational session parameters could be returned in cleartext via `DetectIntent` API responses. A server-side fix has been applied to redact and sanitize authentication credentials from conversational API outputs. No customer configuration changes or updates are required.",
+        "summary": {
+          "title": "Security fix for session parameters",
+          "summary": "A security vulnerability in Dialogflow CX has been fixed. Sensitive authentication tokens in session parameters are no longer exposed in API responses. No customer action is needed."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "**All generative features**: `gemini-2.5-flash` and `gemini-2.5-flash-lite` models will be deprecated by Dec 23, 2026. Upgrade to newer Gemini models such as `gemini-3.1-flash-lite` before the deprecation date.",
+        "summary": {
+          "title": "Generative models deprecation",
+          "summary": "The `gemini-2.5-flash` and `gemini-2.5-flash-lite` models are scheduled for deprecation on December 23, 2026. Please migrate to newer Gemini models, like `gemini-3.1-flash-lite`, to ensure uninterrupted service."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "[BidiStreamingAnalyzeContent](https://docs.cloud.google.com/dialogflow/es/docs/reference/rpc/google.cloud.dialogflow.v2#participants) API has become generally available (GA).",
+        "summary": {
+          "title": "New API for Real-time Conversations",
+          "summary": "The BidiStreamingAnalyzeContent API is now generally available. This feature enables real-time analysis of conversations, enhancing the capabilities for interactive applications."
+        }
+      }
+    ],
     "2026-05-07": [
       {
         "kind": "Fixed",

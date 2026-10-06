@@ -1,5 +1,46 @@
 # Guest Environment
 
+## 2026-10-05
+
+### Feature
+
+Version `20260921.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available for all supported operating systems. This version introduces
+the following features:
+
+* The managed workload identity certificate refresher is now a locally bundled
+  extension. For more information, see
+  [Managed workload identities overview](https://docs.cloud.google.com/iam/docs/managed-workload-identity).
+* The guest telemetry extension is updated to version 1.1 and polls every 15
+  minutes instead of every 24 hours. However, it will only send data to the
+  API every 24 hours, unless it detects a change in the system since the
+  previous poll. The extension supports the following capabilities:
+  + Running a command as the user associated with a discovered process.
+  + Configuring regular expressions to match against the version command
+    output.
+
+### Fixed
+
+Version `20260921.00` of the [guest agent](https://docs.cloud.google.com/compute/docs/images/guest-agent)
+is now available for all supported operating systems. This version introduces
+the following fixes:
+
+* The `NetworkManager` setup now no longer reloads the primary NIC when it
+  applies changes to the network configuration of secondary NICs, unless
+  necessary.
+* If the core plugin successfully rolls back any configurations, then it
+  force-reloads the configurations to make sure that the instance re-obtains
+  DHCP leases for secondary NICs.
+* The core plugin now respects the `address-manager` configuration flag and
+  the corresponding metadata attribute.
+* The extensions manager now ignores install and remove requests from ACS
+  for the core plugin and locally bundled extensions.
+* The extensions manager no longer logs that there are no local plugins to
+  install when it's installing local plugins.
+* The metadata script runner now respects the `sysprep_specialize`
+  configuration flag.
+
+---
 ## 2026-08-03
 
 ### Fixed

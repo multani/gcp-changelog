@@ -1,5 +1,19 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-10-06
+
+### Feature
+
+**Gemini Nano Banana 2.1**
+
+[Gemini Nano Banana 2.1](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/nano-banana-2-1)
+(`gemini-nano-banana-2.1`) is available in
+[General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+Gemini Nano Banana 2.1 is optimized for high-speed multimodal image generation
+and editing, offering improved visual quality, prompt adherence, and text
+rendering across `1K`, `2K`, and `4K` output resolutions.
+
+---
 ## 2026-10-05
 
 ### Fixed

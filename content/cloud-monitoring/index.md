@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2026-10-06
+
+### Feature
+
+Bulk registration of discovered services and workloads to an App Hub
+application is [generally available (GA)](https://docs.cloud.google.com/products#product-launch-stages).
+For more information, see
+[Register one or more discovered services or workloads](https://docs.cloud.google.com/monitoring/docs/application-monitoring#register).
+
+---
 ## 2026-09-30
 
 ### Announcement

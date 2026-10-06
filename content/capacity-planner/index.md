@@ -1,5 +1,24 @@
 # Capacity Planner
 
+## 2026-09-30
+
+### Feature
+
+**Preview**: You can use Capacity Assist, which provides AI-powered
+assistance through Gemini in Capacity Planner, to help you
+understand and manage your resource usage and plan capacity
+([Preview](https://cloud.google.com/products#product-launch-stages)). You can
+use natural-language prompts in Capacity Assist to do the following:
+
+* Analyze historical usage patterns across regions and resources.
+* Forecast capacity needs and identify quota risks early.
+* Simulate growth events to plan future capacity.
+* Get answers to your Capacity Planner questions.
+
+For more information, see
+[Plan capacity with Capacity Assist](https://docs.cloud.google.com/capacity-planner/docs/capacity-assist).
+
+---
 ## 2026-02-06
 
 ### Feature

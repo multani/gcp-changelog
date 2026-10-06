@@ -1,5 +1,13 @@
 # Security Command Center
 
+## 2026-10-06
+
+### Deprecated
+
+Artifact guard with CI/CD integration is deprecated. It will be shut
+down on October 30, 2026.
+
+---
 ## 2026-09-29
 
 ### Feature

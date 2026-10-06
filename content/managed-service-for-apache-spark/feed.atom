@@ -16,24 +16,9 @@
 <ul>
 <li><strong>Preconfigured Conda channels removed:</strong> Preconfigured conda channels (such as <code>conda-forge</code>) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.</li>
 <li><strong>Affected runtime versions:</strong> <code>1.2.89+</code>, <code>2.2.89+</code>, and <code>2.3.42+</code>.</li>
-</ul>
-<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):</p>
-<ul>
-<li>
-<p><strong>Enforced SPNEGO Authentication on Web UIs:</strong> Disabled anonymous access to YARN (ResourceManager, NodeManager) and HiveServer2 web interfaces on Kerberos-enabled clusters to align with Zero-Trust architecture. End users and administrators must hold an active Kerberos ticket (kinit) and configure their browser/client for SPNEGO negotiation to access cluster consoles.</p>
-</li>
-<li>
-<p><strong>Affected runtime versions:</strong> <code>2.2.88+</code>, <code>2.3.37+</code>, <code>3.0.3+</code>.</p>
-</li>
-<li>
-<p><strong>End-to-End Encryption for Apache Ranger (HTTPS):</strong> Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target <code>https://&lt;master-host&gt;:6182</code> instead of legacy HTTP port 6080.</p>
-</li>
-<li>
-<p><strong>Affected runtime versions:</strong> <code>2.2.88+</code>, <code>2.3.37+</code>, <code>3.0.3+</code>.</p>
-</li>
 </ul>]]></content>
-    <summary>Managed Service for Apache Spark has been updated with key changes including the removal of preconfigured conda channels and enforced SPNEGO authentication on web UIs for enhanced security. Additionally, end-to-end encryption for Apache Ranger is now enforced via HTTPS.</summary>
-    <title>Breaking: Important Service Updates</title>
+    <summary>Managed Service for Apache Spark has removed preconfigured conda channels from its configurations. This change affects specific runtime versions, and all aliases now point to the latest runtime without conda channel setup.</summary>
+    <title>Breaking: Managed Service for Apache Spark configuration update</title>
   </entry>
   <entry>
     <author>

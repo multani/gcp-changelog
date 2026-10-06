@@ -1,0 +1,191 @@
+{
+  "name": "588.0.0 (2026-10-06)",
+  "entries": {
+    "2026-10-06": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Cloud Managed Flink)** Removed the Managed Flink Client component (`managed-flink-client`) from the Google Cloud CLI.",
+        "summary": {
+          "title": "Managed Flink Client Removed",
+          "summary": "The Managed Flink Client component has been removed from the Google Cloud CLI. This change impacts users who relied on this specific client for interacting with managed Flink services. Please update your workflows to use alternative methods for managing your Flink applications."
+        }
+      },
+      {
+        "kind": "Agent Identity",
+        "content": "* Added `gcloud alpha|beta agent-identity auth-providers authorizations get-iam-policy|set-iam-policy|add-iam-policy-binding|remove-iam-policy-binding|test-iam-permissions` commands.",
+        "summary": {
+          "title": "Agent Identity IAM Commands",
+          "summary": "New commands are available for managing IAM policies for agent identities. You can now get, set, add, remove, and test IAM permissions for agent identities using the gcloud alpha and beta commands."
+        }
+      },
+      {
+        "kind": "Anthos",
+        "content": "* Updated anthos-cli with newer go version and library dependencies.",
+        "summary": {
+          "title": "Anthos CLI Updated",
+          "summary": "The Anthos command-line interface has been updated with newer Go version and library dependencies. This ensures improved performance and security for your Anthos deployments."
+        }
+      },
+      {
+        "kind": "Apigee",
+        "content": "* Promoted `gcloud apigee apis import` to GA. The command imports an API proxy\n  from a YAML template (`--from-template`) or from a proxy bundle ZIP\n  (`--from-bundle`).\n* Fixed an issue where `gcloud apigee apis import --from-template` emitted an\n  `EventFlow` inside the generic `<Flows>` container, where Apigee treats it as\n  an ordinary conditional flow instead of running it on each streamed event.\n  `EventFlow` is now emitted as a top-level element carrying a `content-type`\n  attribute, which defaults to `text/event-stream`, and is preserved when\n  importing a bundle.\n* Fixed an issue where `gcloud apigee apis import --from-template` applied only\n  part of a feature's `defaultEndpoint`. Its `routes` and `faultRules` were\n  dropped, and a flow step contributed by two features was emitted twice, which\n  made Apigee run the policy twice. Contributions are now merged, so a repeated\n  step overrides instead of duplicating.\n* Fixed an issue where `gcloud apigee apis import --from-template` ignored a\n  feature's `defaultTarget`, so generated target endpoints were missing the\n  `PostFlow`, `EventFlow` and `DefaultFaultRule` it declared. Features that\n  attach to the outbound side of a proxy, such as analytics and failover, now\n  apply to every target. This can make the generated API proxy an Extensible\n  API proxy, which can't be deployed to a Base environment.\n* Fixed an issue where `gcloud apigee apis import --from-template` prefixed a\n  feature's policy and resource names even when the feature declared no `uid`.\n  A feature with no `name` produced an empty prefix and names that collided\n  with every other unnamed feature. Names are now prefixed only for features\n  that declare a `uid`, and policies or resources contributed by more than one\n  feature are merged instead of listed twice. This changes the policy names\n  generated for features without a `uid`.\n* Fixed an issue where `gcloud apigee apis import --from-template` combined a\n  template's own `endpoints` and `targets` with the ones its features supply,\n  which could leave some targets unreachable because no route referenced them.\n  A template's `endpoints` and `targets` are now used only when it supplies no\n  features, and a warning is logged when they are ignored.\n* Fixed an issue where `gcloud apigee apis import --from-template` did not\n  generate `apiproxy/resources/jsc/metadata.js`, so feature JavaScript that\n  read the proxy's name, description or parameter defaults failed at runtime.\n  The resource is now generated into the bundle and listed in `<Resources>`.\n* Fixed an issue where `gcloud apigee apis import --from-template` emitted the\n  children of a policy in alphabetical order rather than the order the template\n  declared them, which is not valid for policies whose schema is\n  sequence-typed. `<HTTPTargetConnection>` is now also emitted before the\n  flows, regardless of how the target was declared.\n* Fixed an issue where `gcloud apigee apis import --from-template` would\n  incorrectly reject templates that populate the `displayName` field.\n* Added `--service-account` flag to `gcloud beta apigee apis deploy` to give a\n  deployed proxy permission to act as a service account.",
+        "summary": {
+          "title": "Apigee API Import GA",
+          "summary": "The `gcloud apigee apis import` command is now generally available, offering improved API proxy creation from YAML templates or bundles. This release includes numerous fixes for template-based imports, ensuring accurate handling of event flows, default endpoints, targets, and resource naming, along with enhanced flexibility for service account permissions during deployment."
+        }
+      },
+      {
+        "kind": "Apihub",
+        "content": "* Added `--service-type-enum-values` and related flags to `gcloud apihub apis update`, allowing the service type of an API to be set. Valid values are `code`, `model`, `agent` and `skill`.",
+        "summary": {
+          "title": "Update API service type",
+          "summary": "You can now update the service type for your APIs using the `gcloud apihub apis update` command. This command supports setting the service type to `code`, `model`, `agent`, or `skill` using the new `--service-type-enum-values` flag."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Promoted `gcloud biglake hive catalogs` to GA.\n* Promoted `gcloud biglake hive databases` to GA.\n* Promoted `gcloud biglake hive tables` to GA.",
+        "summary": {
+          "title": "BigLake Hive commands are now GA",
+          "summary": "The BigLake Hive command-line interface (CLI) commands for catalogs, databases, and tables have been promoted to General Availability (GA). This means these features are now production-ready and available for use in your BigLake environments."
+        }
+      },
+      {
+        "kind": "Certificate Authority Service",
+        "content": "* Added `--key-algorithm` flag to `gcloud privateca certificates create` to\n  allow specifying a custom public key algorithm when creating certificates\n  with `--generate-key`.",
+        "summary": {
+          "title": "New flag for certificate creation",
+          "summary": "You can now specify a custom public key algorithm when creating certificates using the `--key-algorithm` flag with `gcloud privateca certificates create`. This flag works in conjunction with the `--generate-key` option."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable",
+        "content": "* Update go version and rebuild for CVE-2026-33818.",
+        "summary": {
+          "title": "Cloud Bigtable Go update",
+          "summary": "Cloud Bigtable has been updated to the latest Go version to address a security vulnerability (CVE-2026-33818). This update ensures continued security and stability for our users."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable Emulator",
+        "content": "* Update go version and rebuild for CVE-2026-33818.\n* Micro-precision timestamp support.",
+        "summary": {
+          "title": "Bigtable Emulator Update",
+          "summary": "The Cloud Bigtable emulator has been updated with improved security by rebuilding with a newer Go version to address CVE-2026-33818. This release also introduces support for micro-precision timestamps."
+        }
+      },
+      {
+        "kind": "Cloud Dataplex",
+        "content": "* Promoted `gcloud dataplex data-products` to GA.",
+        "summary": {
+          "title": "Dataplex data products now generally available",
+          "summary": "Cloud Dataplex's data products feature has been promoted to General Availability. This enhancement allows for better management and access to your data assets within Dataplex."
+        }
+      },
+      {
+        "kind": "Cloud IAM",
+        "content": "* Added `gcloud iam workforce-pools subjects revoke-sessions` command to\n  revoke all sessions for a workforce pool subject.",
+        "summary": {
+          "title": "Manage Workforce Pool Sessions",
+          "summary": "A new command, `gcloud iam workforce-pools subjects revoke-sessions`, has been added. This command allows administrators to revoke all active sessions for a specific workforce pool subject, enhancing security and control over user access."
+        }
+      },
+      {
+        "kind": "Cloud On Demand Scanning",
+        "content": "* Migrate extraction library to osv-scalibr and enable dynamic linking support\n  (2026-09).",
+        "summary": {
+          "title": "On-Demand Scanning Improvements",
+          "summary": "The extraction library has been migrated to osv-scalibr, enhancing dynamic linking support. This update, scheduled for September 2026, aims to improve the efficiency and flexibility of on-demand scanning capabilities."
+        }
+      },
+      {
+        "kind": "Cloud Resource Manager",
+        "content": "* The `--recommend` flag of `gcloud beta projects delete` and\n  `gcloud beta projects remove-iam-policy-binding` no longer has any effect; the\n  change-risk recommendations it showed have been retired.",
+        "summary": {
+          "title": "Project deletion and IAM policy binding changes",
+          "summary": "The `--recommend` flag for `gcloud beta projects delete` and `gcloud beta projects remove-iam-policy-binding` has been retired. The change-risk recommendations previously shown by this flag are no longer available."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Added routing parameters to instance creation requests in Cloud SQL.\n* Updated 'cloud-sql-proxy' packaged component to use 2.26.0 of the Cloud SQL Proxy.",
+        "summary": {
+          "title": "Cloud SQL updates",
+          "summary": "New routing parameters are available for instance creation. The Cloud SQL Proxy has also been updated to version 2.26.0."
+        }
+      },
+      {
+        "kind": "Cluster Director",
+        "content": "* Added `networkTags` property to `--slurm-login-node` flag in `gcloud beta cluster-director clusters create`.",
+        "summary": {
+          "title": "New network tag option for Slurm login nodes",
+          "summary": "The `gcloud beta cluster-director clusters create` command now supports the `networkTags` property for the `--slurm-login-node` flag. This allows for more granular control over network configurations for Slurm login nodes within your Cluster Director deployments."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added support for reading a metadata value from standard input by\n  specifying `-` as the file path in `--metadata-from-file` flag of\n  `gcloud compute instances create`, `gcloud compute instances\n  add-metadata`, `gcloud compute instance-templates create`, and `gcloud\n  compute project-info add-metadata`.\n* Froze development of the `alpha` and `beta` Compute Engine release tracks.\n  Existing commands in these release tracks remain supported and functional.\n  Most previous alpha and beta features have graduated to general availability\n  in `gcloud compute`, and new Compute Engine preview features will launch in\n  `gcloud preview compute` going forward.",
+        "summary": {
+          "title": "New Compute Engine Metadata Option",
+          "summary": "You can now read Compute Engine metadata from standard input using the gcloud CLI. Development has also shifted for alpha and beta release tracks, with new features launching in `gcloud preview compute`."
+        }
+      },
+      {
+        "kind": "Compute OS Config",
+        "content": "* Added `--description` flag to `gcloud compute os-config policy-orchestrators\n  create` and `gcloud compute os-config policy-orchestrators update`.",
+        "summary": {
+          "title": "New OS Config Flag",
+          "summary": "The OS Config service now supports a `--description` flag for creating and updating policy orchestrators. This allows for more detailed policy management."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added `--ssl-flags` flag to `gcloud database-migration connection-profiles\n  create postgresql` and `update` commands to configure SSL connection flags.\n* Added `--asm-host`, `--asm-port`, `--asm-user`, `--asm-password`, and\n  `--asm-service-name` flags to `gcloud database-migration connection-profiles\n  create oracle` command to configure Oracle Automatic Storage Management\n  (ASM).\n* Added `--machine-type` flag to\n  `gcloud database-migration connection-profiles create alloydb` command to\n  configure the primary instance machine type.",
+        "summary": {
+          "title": "Database Migration Enhancements",
+          "summary": "New flags have been added to the database migration command-line tool to enhance connection profile configuration for PostgreSQL, Oracle, and AlloyDB. These updates allow for more detailed SSL settings, Oracle ASM configuration, and primary instance machine type specification."
+        }
+      },
+      {
+        "kind": "Identity and Access Management",
+        "content": "* The `--recommend` flag of `gcloud beta iam service-accounts delete` no longer\n  has any effect; the change-risk recommendations it showed have been retired.",
+        "summary": {
+          "title": "IAM service account deletion changes",
+          "summary": "The `--recommend` flag for deleting IAM service accounts has been retired as its change-risk recommendations are no longer available. This change means the flag will now have no effect on the command's execution."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Updated default kubectl from 1.35.8 to 1.35.9.\n* Additional kubectl versions:\n  + 1.31.14\n  + 1.32.13\n  + 1.33.13\n  + 1.34.12\n  + 1.35.9\n  + 1.36.5\n  + 1.37.1",
+        "summary": {
+          "title": "Kubernetes Engine kubectl update",
+          "summary": "Kubernetes Engine now offers updated kubectl versions, including the latest 1.35.9. This update ensures you have access to the most recent features and bug fixes for managing your Kubernetes clusters."
+        }
+      },
+      {
+        "kind": "Looker",
+        "content": "* Added regional endpoint support for `gcloud looker`.",
+        "summary": {
+          "title": "Looker regional endpoints available",
+          "summary": "You can now use regional endpoints with `gcloud looker`. This enhances flexibility and performance for Looker deployments."
+        }
+      },
+      {
+        "kind": "Network Management",
+        "content": "* Updated examples of `gcloud network-management connectivity-tests`.",
+        "summary": {
+          "title": "Network Connectivity Testing Examples Updated",
+          "summary": "Examples for `gcloud network-management connectivity-tests` have been updated. This resource provides guidance on how to effectively use and test network connectivity within your environment."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Added command `gcloud beta network-security server-tls-policies create`.\n* Added command `gcloud beta network-security server-tls-policies update`.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "New server TLS policies for network security",
+          "summary": "You can now create and update server TLS policies using the gcloud beta network-security command. Subscribe to release notes for future updates."
+        }
+      }
+    ]
+  }
+}

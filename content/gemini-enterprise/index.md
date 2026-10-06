@@ -1,5 +1,28 @@
 # Gemini Enterprise
 
+## 2026-10-06
+
+### Feature
+
+**Gemini Enterprise: Control access to Antigravity features**
+
+Administrators can control whether users in their organization have access to
+the following Google Antigravity features:
+
+* **Boost**: Uses a tiered multi-agent hierarchy to solve complex algorithmic
+  challenges and deep debugging tasks with the `/boost` command. This feature
+  is generally available (GA) in Antigravity.
+* **Teamwork**: Deploys a coordinated framework of autonomous subagents to
+  execute large-scale, long-horizon projects using the `/teamwork-preview`
+  command. This feature is in Preview in Antigravity.
+
+These settings are generally available (GA) for administrators in
+Gemini Enterprise.
+
+For more information, see
+[Configure feature settings](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-settings#configure-feature-settings).
+
+---
 ## 2026-10-02
 
 ### Feature

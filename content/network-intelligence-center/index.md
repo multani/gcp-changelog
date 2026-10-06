@@ -1,5 +1,15 @@
 # Network Intelligence Center
 
+## 2026-10-05
+
+### Feature
+
+[Flow Analyzer](https://docs.cloud.google.com/network-intelligence-center/docs/flow-analyzer/overview)
+displays packet drops, allowing you to analyze packet loss in your traffic
+flows. For more information, see
+[Display flows in packet drop mode](https://docs.cloud.google.com/network-intelligence-center/docs/flow-analyzer/analyze-traffic-flows#display-packet-drops).
+
+---
 ## 2026-10-01
 
 ### Announcement

@@ -20,6 +20,7 @@
 - [585.0.0 (2026-09-15)](585-0-0--2026-09-15-/index.md)
 - [586.0.0 (2026-09-22)](586-0-0--2026-09-22-/index.md)
 - [587.0.0 (2026-09-29)](587-0-0--2026-09-29-/index.md)
+- [588.0.0 (2026-10-06)](588-0-0--2026-10-06-/index.md)
 - [AI Applications](ai-applications/index.md)
 - [AI Hypercomputer](ai-hypercomputer/index.md)
 - [API Gateway](api-gateway/index.md)

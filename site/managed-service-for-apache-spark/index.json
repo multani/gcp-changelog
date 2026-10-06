@@ -4,10 +4,10 @@
     "2026-09-23": [
       {
         "kind": "Breaking",
-        "content": "**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):\n\n* **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.\n  + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.\n\n**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):\n\n* **Enforced SPNEGO Authentication on Web UIs:** Disabled anonymous access to YARN (ResourceManager, NodeManager) and HiveServer2 web interfaces on Kerberos-enabled clusters to align with Zero-Trust architecture. End users and administrators must hold an active Kerberos ticket (kinit) and configure their browser/client for SPNEGO negotiation to access cluster consoles.\n\n  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.\n* **End-to-End Encryption for Apache Ranger (HTTPS):** Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target `https://<master-host>:6182` instead of legacy HTTP port 6080.\n\n  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.",
+        "content": "**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):\n\n* **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.\n  + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.",
         "summary": {
-          "title": "Important Service Updates",
-          "summary": "Managed Service for Apache Spark has been updated with key changes including the removal of preconfigured conda channels and enforced SPNEGO authentication on web UIs for enhanced security. Additionally, end-to-end encryption for Apache Ranger is now enforced via HTTPS."
+          "title": "Managed Service for Apache Spark configuration update",
+          "summary": "Managed Service for Apache Spark has removed preconfigured conda channels from its configurations. This change affects specific runtime versions, and all aliases now point to the latest runtime without conda channel setup."
         }
       },
       {

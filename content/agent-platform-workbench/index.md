@@ -1,5 +1,111 @@
 # Agent Platform Workbench
 
+## 2026-10-05
+
+### Change
+
+
+
+### 20261004.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+The BigQuery JupyterLab plugin is now enabled independently of the Dataproc plugin: it is enabled by default and can be turned off with the new disable-bigquery instance metadata key, while disable-mixer now controls only the Dataproc plugin.
+
+### Change
+
+
+
+### 20261004.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+---
+## 2026-10-04
+
+### Change
+
+
+
+### 20261004-2230-rc0 Release
+
+
+
+### Change
+
+
+
+### 20261004-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+The BigQuery JupyterLab plugin is now enabled independently of the Dataproc plugin: it is enabled by default and can be turned off with the new disable-bigquery instance metadata key, while disable-mixer now controls only the Dataproc plugin.
+
+### Security
+
+Bulk security patch remediating Critical and High-severity CVEs in the Agent Platform Workbench custom container images.
+
+### Security
+
+Bulk security patch remediating Critical and High-severity CVEs in the Agent Platform Workbench custom container images.
+
+### Change
+
+
+
+### 20261004-2157-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Preinstall CUDA drivers for Pre-Turing GPUs such as V100s.
+
+### Change
+
+The BigQuery JupyterLab plugin is now enabled independently of the Dataproc plugin: it is enabled by default and can be turned off with the new disable-bigquery instance metadata key, while disable-mixer now controls only the Dataproc plugin.
+
+### Change
+
+
+
+### M152 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+The BigQuery JupyterLab plugin is now enabled independently of the Dataproc plugin: it is enabled by default and can be turned off with the new disable-bigquery instance metadata key, while disable-mixer now controls only the Dataproc plugin.
+
+---
 ## 2026-09-28
 
 ### Change

@@ -1,5 +1,16 @@
 # Anthos Config Management
 
+## 2026-09-21
+
+### Change
+
+Addressed multiple Common Vulnerabilities and Exposures (CVEs) by updating dependencies.
+
+### Fixed
+
+Fixed an issue with duration histograms to ensure accurate latency reporting for sub-second operations.
+
+---
 ## 2026-08-24
 
 ### Change

@@ -2,9 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-10-02T00:00:00+00:00</updated>
+  <updated>2026-10-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-10-05:deprecated:0</id>
+    <published>2026-10-05T00:00:00+00:00</published>
+    <updated>2026-10-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting on July 1, 2026, Identity Service for GKE is deprecated in GKE version
+1.36 and earlier. This feature is also unavailable in organizations that were
+created on or after July 1, 2025. GKE version 1.37 and later don't support
+Identity Service for GKE. Before you upgrade clusters to 1.37 and later, disable
+this feature and migrate to Workforce Identity Federation.</p>
+<p>For more information,
+see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/deprecations/identity-service">Identity Service for GKE deprecation</a>.</p>]]></content>
+    <summary>Identity Service for GKE is deprecated starting July 1, 2026, for GKE versions 1.36 and earlier. Migrate to Workforce Identity Federation before upgrading to GKE version 1.37 and later, as this feature will no longer be supported.</summary>
+    <title>Deprecated: Identity Service for GKE Deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-10-05:feature:1</id>
+    <published>2026-10-05T00:00:00+00:00</published>
+    <updated>2026-10-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>GKE support for using the <code>c4-standard-*</code> machine types (up to 192 vCPUs) as
+Confidential GKE Nodes with Intel TDX is generally available. For more
+information, see the following pages:</p>
+<ul>
+<li>To use this feature with GKE , see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/confidential-gke-nodes">Encrypt workload data in-use with
+  Confidential GKE
+  Nodes</a>.</li>
+<li>To learn more about the feature from Compute Engine, see <a href="https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview">Confidential VM
+  overview</a>.</li>
+<li>To see supported configurations, including machine support, see <a href="https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/supported-configurations">Supported
+  configurations</a>
+  and its "Machine types, CPUs, and zones" section.</li>
+</ul>]]></content>
+    <summary>Confidential GKE Nodes with Intel TDX now support larger `c4-standard-*` machine types, offering enhanced data protection for your workloads. This general availability allows for greater scalability and security for sensitive applications running on GKE.</summary>
+    <title>Feature: Confidential GKE Nodes Now Support Larger Machine Types</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

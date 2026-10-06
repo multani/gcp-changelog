@@ -1,6 +1,24 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-10-05": [
+      {
+        "kind": "Deprecated",
+        "content": "Starting on July 1, 2026, Identity Service for GKE is deprecated in GKE version\n1.36 and earlier. This feature is also unavailable in organizations that were\ncreated on or after July 1, 2025. GKE version 1.37 and later don't support\nIdentity Service for GKE. Before you upgrade clusters to 1.37 and later, disable\nthis feature and migrate to Workforce Identity Federation.\n\nFor more information,\nsee\n[Identity Service for GKE deprecation](https://docs.cloud.google.com/kubernetes-engine/docs/deprecations/identity-service).",
+        "summary": {
+          "title": "Identity Service for GKE Deprecated",
+          "summary": "Identity Service for GKE is deprecated starting July 1, 2026, for GKE versions 1.36 and earlier. Migrate to Workforce Identity Federation before upgrading to GKE version 1.37 and later, as this feature will no longer be supported."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "GKE support for using the `c4-standard-*` machine types (up to 192 vCPUs) as\nConfidential GKE Nodes with Intel TDX is generally available. For more\ninformation, see the following pages:\n\n* To use this feature with GKE , see [Encrypt workload data in-use with\n  Confidential GKE\n  Nodes](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/confidential-gke-nodes).\n* To learn more about the feature from Compute Engine, see [Confidential VM\n  overview](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview).\n* To see supported configurations, including machine support, see [Supported\n  configurations](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/supported-configurations)\n  and its \"Machine types, CPUs, and zones\" section.",
+        "summary": {
+          "title": "Confidential GKE Nodes Now Support Larger Machine Types",
+          "summary": "Confidential GKE Nodes with Intel TDX now support larger `c4-standard-*` machine types, offering enhanced data protection for your workloads. This general availability allows for greater scalability and security for sensitive applications running on GKE."
+        }
+      }
+    ],
     "2026-10-02": [
       {
         "kind": "Change",

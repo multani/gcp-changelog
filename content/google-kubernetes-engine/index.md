@@ -1,5 +1,35 @@
 # Google Kubernetes Engine
 
+## 2026-10-05
+
+### Deprecated
+
+Starting on July 1, 2026, Identity Service for GKE is deprecated in GKE version
+1.36 and earlier. This feature is also unavailable in organizations that were
+created on or after July 1, 2025. GKE version 1.37 and later don't support
+Identity Service for GKE. Before you upgrade clusters to 1.37 and later, disable
+this feature and migrate to Workforce Identity Federation.
+
+For more information,
+see
+[Identity Service for GKE deprecation](https://docs.cloud.google.com/kubernetes-engine/docs/deprecations/identity-service).
+
+### Feature
+
+GKE support for using the `c4-standard-*` machine types (up to 192 vCPUs) as
+Confidential GKE Nodes with Intel TDX is generally available. For more
+information, see the following pages:
+
+* To use this feature with GKE , see [Encrypt workload data in-use with
+  Confidential GKE
+  Nodes](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/confidential-gke-nodes).
+* To learn more about the feature from Compute Engine, see [Confidential VM
+  overview](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview).
+* To see supported configurations, including machine support, see [Supported
+  configurations](https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/supported-configurations)
+  and its "Machine types, CPUs, and zones" section.
+
+---
 ## 2026-10-02
 
 ### Change

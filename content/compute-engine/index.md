@@ -4,6 +4,14 @@
 
 ### Feature
 
+**Generally available**: Z3 machine types that have 8 to 44 vCPUs can use
+Hyperdisk Balanced High Availability volumes to synchronously replicate data across two zones.
+
+For more information, see
+[About Hyperdisk Balanced High Availability](https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha).
+
+### Feature
+
 **Preview**: External IPv6 addresses are now supported for
 [Standard Tier](https://docs.cloud.google.com/network-tiers/docs/overview#standard_tier). For more
 information,

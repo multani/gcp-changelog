@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-10-06
+
+### Feature
+
+**Generally available**: When you reserve compute resources for H4D instances
+through your account team, you can include a Hyperdisk pool in
+the same request or in a subsequent request. This option helps ensure that your
+high performance computing (HPC) workloads have the storage resources that they
+require close to your compute instances. For more information, see
+[Reserve capacity through your account team](https://docs.cloud.google.com/compute/docs/hpc/reserve-capacity-account-team).
+
+---
 ## 2026-10-05
 
 ### Feature
@@ -16,6 +28,21 @@ For more information, see
 [Standard Tier](https://docs.cloud.google.com/network-tiers/docs/overview#standard_tier). For more
 information,
 see [IPv6 subnet ranges](https://docs.cloud.google.com/vpc/docs/subnets#ipv6-ranges).
+
+---
+## 2026-10-01
+
+### Feature
+
+**Generally available**: Expanded machine series support for sharing the same
+Hyperdisk volume between instances:
+
+* C3 bare metal instances support multi-writer mode for Hyperdisk Balanced volumes.
+* C4 instances created after May 1, 2026, support multi-writer mode for Hyperdisk Balanced,
+  Hyperdisk Extreme, and Hyperdisk Balanced High Availability volumes.
+
+For more information, see
+[Sharing a disk between instances](https://docs.cloud.google.com/compute/docs/disks/sharing-disks-between-vms).
 
 ---
 ## 2026-09-30

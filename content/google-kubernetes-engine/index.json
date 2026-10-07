@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-10-06": [
+      {
+        "kind": "Issue",
+        "content": "Starting with GKE version 1.36, the default engine for kube-dns is [CoreDNS](https://coredns.io/). For\nPod IP DNS queries in the `<a-b-c-d>.<namespace>.pod.cluster.local` format,\nCoreDNS returns NXDOMAIN if the specified `<namespace>` does not exist. The\nlegacy `kubernetes/dns` implementation skipped checking the existence of the\nnamespace provided in the `<namespace>` segment in these queries.\n\nQueries in the `<a-b-c-d>.<namespace>.pod.cluster.local` format are not part of\nthe\n[Kubernetes DNS specification](https://github.com/kubernetes/dns/blob/master/docs/specification.md).\nWe can't guarantee that uses outside of those specified in the DNS spec will\nremain consistent across releases.\n\nMitigation:\n\n* **Recommended**: Migrate to supported headless Service DNS records\n  (`<hostname>.<subdomain>.<namespace>.svc.cluster.local`).\n* **Workaround**: Ensure the `<namespace>` specified in the DNS query exists in\n  the cluster.",
+        "summary": {
+          "title": "CoreDNS behavior change for Pod IP DNS queries",
+          "summary": "GKE version 1.36 introduces CoreDNS as the default kube-dns engine. CoreDNS now returns NXDOMAIN for Pod IP DNS queries if the specified namespace does not exist, a change from the legacy implementation. This behavior aligns with the Kubernetes DNS specification, which does not guarantee consistency for non-specified query formats."
+        }
+      }
+    ],
     "2026-10-05": [
       {
         "kind": "Deprecated",

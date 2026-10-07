@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Compute Engine</title>
   <subtitle>Changelog for Google Cloud product: Compute Engine</subtitle>
-  <updated>2026-10-05T00:00:00+00:00</updated>
+  <updated>2026-10-06T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:compute-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/compute-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-10-06:feature:0</id>
+    <published>2026-10-06T00:00:00+00:00</published>
+    <updated>2026-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: When you reserve compute resources for H4D instances
+through your account team, you can include a Hyperdisk pool in
+the same request or in a subsequent request. This option helps ensure that your
+high performance computing (HPC) workloads have the storage resources that they
+require close to your compute instances. For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/hpc/reserve-capacity-account-team">Reserve capacity through your account team</a>.</p>]]></content>
+    <summary>You can now reserve Hyperdisk pools along with H4D instances when you request compute resources through your account team. This ensures your HPC workloads have the necessary storage resources close to your compute instances.</summary>
+    <title>Feature: Reserve H4D instances with Hyperdisk pools</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -32,6 +48,25 @@ information,
 see <a href="https://docs.cloud.google.com/vpc/docs/subnets#ipv6-ranges">IPv6 subnet ranges</a>.</p>]]></content>
     <summary>External IPv6 addresses are now supported for Standard Tier. This feature enhances network connectivity and flexibility for your applications. Learn more about configuring IPv6 subnet ranges.</summary>
     <title>Feature: External IPv6 Addresses Now Supported</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-10-01:feature:0</id>
+    <published>2026-10-01T00:00:00+00:00</published>
+    <updated>2026-10-01T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Generally available</strong>: Expanded machine series support for sharing the same
+Hyperdisk volume between instances:</p>
+<ul>
+<li>C3 bare metal instances support multi-writer mode for Hyperdisk Balanced volumes.</li>
+<li>C4 instances created after May 1, 2026, support multi-writer mode for Hyperdisk Balanced,
+  Hyperdisk Extreme, and Hyperdisk Balanced High Availability volumes.</li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/compute/docs/disks/sharing-disks-between-vms">Sharing a disk between instances</a>.</p>]]></content>
+    <summary>Hyperdisk volumes can now be shared between more machine series, including C3 bare metal and certain C4 instances. This enhancement supports multi-writer mode for various Hyperdisk volume types, improving flexibility for high-performance computing.</summary>
+    <title>Feature: Expanded Hyperdisk volume sharing</title>
   </entry>
   <entry>
     <author>

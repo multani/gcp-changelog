@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-10-06
+
+### Feature
+
+[Conversational analytics in BigQuery](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)
+now supports the
+[`AI.CAUSAL_EFFECT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-causal-effect)
+to quantify the impact of specific interventions on time series data.
+This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-05
 
 ### Feature

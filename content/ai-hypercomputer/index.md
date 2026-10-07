@@ -1,5 +1,18 @@
 # AI Hypercomputer
 
+## 2026-10-06
+
+### Feature
+
+**Generally available**: When you reserve compute resources for creating GPU
+instances through your account team, you can include a Hyperdisk
+pool in the same request or in a subsequent request. This option helps ensure
+that your artificial intelligence (AI) and machine learning (ML) workloads have
+the storage resources that they require close to your GPU instances. For more
+information, see
+[Reserve capacity through your account team](https://docs.cloud.google.com/ai-hypercomputer/docs/reserve-capacity).
+
+---
 ## 2026-09-07
 
 ### Security

@@ -1,5 +1,21 @@
 # Knowledge Catalog
 
+## 2026-10-05
+
+### Feature
+
+Data products in Knowledge Catalog now support
+[Looker (Google Cloud core)](https://docs.cloud.google.com/looker/docs/looker-core-overview) assets. You can
+package, govern, and share Looker (Google Cloud core) dashboards, dashboard
+elements, Looks, Explores, and LookML projects, models, and views in a data
+product using Google Group mirroring and IAM access controls. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see
+[About data products](https://docs.cloud.google.com/knowledge-catalog/docs/data-products-overview#assets-supported)
+and [Create data products](https://docs.cloud.google.com/knowledge-catalog/docs/create-data-products#configure-looker).
+
+---
 ## 2026-09-24
 
 ### Feature

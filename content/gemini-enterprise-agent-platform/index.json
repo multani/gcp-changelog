@@ -1,6 +1,24 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-10-07": [
+      {
+        "kind": "Feature",
+        "content": "**Anthropic's Claude Haiku 5.5**\n\n[Claude Haiku 5.5](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5)\nis available in Model Garden.",
+        "summary": {
+          "title": "Claude Haiku 5.5 Now Available",
+          "summary": "Anthropic's Claude Haiku 5.5 is now accessible through Model Garden. This advanced model offers enhanced capabilities for various applications. Explore the latest in AI with Claude Haiku 5.5."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.13.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Consistent finding deduplication**: Improved finding deduplication consistency across repeated `cm find`, `--deep`, `--diff`, and `--parallel` scans.\n* **Bug fixes**:\n  + Fixed an issue where deduplicated findings could appear in `cm report --status DISMISSED`.\n  + Improved local state reliability during concurrent `cm find --diff` and `cm find --deep` scans.\n  + Updated streaming error handling so non-retryable errors fail immediately instead of retrying.\n  + Ensured local session state and logs are saved cleanly when a session is interrupted (`Ctrl+C`).\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
+        "summary": {
+          "title": "CodeMender improvements",
+          "summary": "This release enhances CodeMender with consistent finding deduplication and several bug fixes, including improved handling of dismissed findings, local state reliability, error handling, and session interruption."
+        }
+      }
+    ],
     "2026-10-06": [
       {
         "kind": "Feature",

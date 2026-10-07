@@ -1,5 +1,30 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-10-07
+
+### Feature
+
+**Anthropic's Claude Haiku 5.5**
+
+[Claude Haiku 5.5](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5)
+is available in Model Garden.
+
+### Fixed
+
+**CodeMender updates (v0.13.0)**
+
+This release introduces updates to CodeMender:
+
+* **Consistent finding deduplication**: Improved finding deduplication consistency across repeated `cm find`, `--deep`, `--diff`, and `--parallel` scans.
+* **Bug fixes**:
+  + Fixed an issue where deduplicated findings could appear in `cm report --status DISMISSED`.
+  + Improved local state reliability during concurrent `cm find --diff` and `cm find --deep` scans.
+  + Updated streaming error handling so non-retryable errors fail immediately instead of retrying.
+  + Ensured local session state and logs are saved cleanly when a session is interrupted (`Ctrl+C`).
+
+For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
+
+---
 ## 2026-10-06
 
 ### Feature

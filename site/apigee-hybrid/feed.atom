@@ -2,9 +2,83 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee hybrid</title>
   <subtitle>Changelog for Google Cloud product: Apigee hybrid</subtitle>
-  <updated>2026-09-30T00:00:00+00:00</updated>
+  <updated>2026-10-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-hybrid</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-hybrid/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-10-07:announcement:0</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We are excited to announce the release of several new features designed to enhance your experience. These updates include improvements to performance and user interface. Explore the new capabilities today!</summary>
+    <title>Announcement: New Features Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-10-07:v1.14.9:1</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On October 7, 2026 we released an updated version of the Apigee hybrid software, v1.14.9.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/upgrade">Upgrading Apigee hybrid to version v1.14.9</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>]]></content>
+    <summary>A new version of Apigee hybrid, v1.14.9, was released on October 7, 2026. This patch release includes updated container images integrated with the Apigee hybrid Helm charts. For upgrade and installation details, please refer to the provided documentation.</summary>
+    <title>v1.14.9: Apigee hybrid v1.14.9 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-10-07:fixed:2</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<h4>Fixed in this release</h4>
+<p>| Bug ID | Description |
+| --- | --- |
+| <strong>565072374</strong> | <strong>Fixed an issue where <code>VerifyJWT</code> policies using a JWKS <code>uriRef</code> could return <code>steps.jwt.NoMatchingPublicKey</code> on the first request after the 5-minute JWKS cache TTL expired when the identity provider rotated keys. The cache now refreshes synchronously upon expiration.</strong> |
+| <strong>564969400</strong> | <strong>Fixed an issue where variables initialized from an empty <code>&lt;Value/&gt;</code> element in <code>AssignMessage</code> (<code>AssignVariable</code>) were not treated as empty strings when referenced in message template functions such as <code>replaceAll</code>.</strong> |
+| <strong>558888960</strong> | <strong>Fixed an issue in distributed tracing where the target URL was omitted from outbound target request span attributes after a request-flow policy step executed.</strong> |
+| <strong>554114419</strong> | <strong>Apigee hybrid now allows policies to modify HTTP/2 request pseudo-headers (<code>:path</code> and <code>:authority</code>) when communicating over HTTP/2.</strong> |
+| <strong>548763108</strong> | <strong>Hardened Message Processor outbound HTTP validation to block requests to internal Kubernetes cluster hostnames (<code>*.svc.cluster.local</code>).</strong> |
+| <strong>513032450</strong> | <strong>Fixed an issue where <code>apigee-connect-agent</code> control-plane connections could hang for up to 2 hours when silently dropped by a network intermediary by restoring a 15-second TCP keep-alive.</strong> |</p>]]></content>
+    <summary>This release addresses several issues including JWT verification with JWKS, variable handling in AssignMessage policies, distributed tracing accuracy, and network communication robustness. Updates ensure proper key refreshing, correct variable treatment, complete tracing data, and improved security for internal network access.</summary>
+    <title>Fixed: Key fixes released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-hybrid:2026-10-07:security:3</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-asm-ingress</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-asm-istiod</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-connect-agent</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-fluent-bit</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14456">CVE-2026-14456</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14457">CVE-2026-14457</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18798">CVE-2026-18798</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54874">CVE-2026-54874</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63072">CVE-2026-63072</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63073">CVE-2026-63073</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63074">CVE-2026-63074</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63075">CVE-2026-63075</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63076">CVE-2026-63076</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75803">CVE-2026-75803</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-hybrid-cassandra-client</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-kube-rbac-proxy</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46600">CVE-2026-46600</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-mart-server</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-46392">CVE-2025-46392</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-mint-task-scheduler</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-46392">CVE-2025-46392</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-open-telemetry-collector</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43871">CVE-2026-43871</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81871">CVE-2026-81871</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81872">CVE-2026-81872</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-operators</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-prom-prometheus</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46600">CVE-2026-46600</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-prometheus-adapter</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-runtime</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-46392">CVE-2025-46392</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-synchronizer</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-udca</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |
+| <strong>N/A</strong> | <strong>Security fixes for <code>apigee-watcher</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a> |</p>]]></content>
+    <summary>This announcement details critical security fixes for various Apigee components, addressing multiple documented vulnerabilities. Applying these updates is essential to maintain the security posture of your Apigee deployments.</summary>
+    <title>Security: Security Updates for Apigee Components</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

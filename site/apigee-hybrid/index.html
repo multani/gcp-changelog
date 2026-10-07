@@ -2952,6 +2952,127 @@
 
 
 <h1 id="apigee-hybrid">Apigee hybrid</h1>
+<h2 id="2026-10-07">2026-10-07</h2>
+<h3 id="announcement">Announcement</h3>
+<h3 id="v1149">v1.14.9</h3>
+<p>On October 7, 2026 we released an updated version of the Apigee hybrid software, v1.14.9.</p>
+<ul>
+<li>For information on upgrading, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/upgrade">Upgrading Apigee hybrid to version v1.14.9</a>.</li>
+<li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
+</ul>
+<p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
+<h3 id="fixed">Fixed</h3>
+<h4 id="fixed-in-this-release">Fixed in this release</h4>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>565072374</strong></td>
+<td><strong>Fixed an issue where <code>VerifyJWT</code> policies using a JWKS <code>uriRef</code> could return <code>steps.jwt.NoMatchingPublicKey</code> on the first request after the 5-minute JWKS cache TTL expired when the identity provider rotated keys. The cache now refreshes synchronously upon expiration.</strong></td>
+</tr>
+<tr>
+<td><strong>564969400</strong></td>
+<td><strong>Fixed an issue where variables initialized from an empty <code>&lt;Value/&gt;</code> element in <code>AssignMessage</code> (<code>AssignVariable</code>) were not treated as empty strings when referenced in message template functions such as <code>replaceAll</code>.</strong></td>
+</tr>
+<tr>
+<td><strong>558888960</strong></td>
+<td><strong>Fixed an issue in distributed tracing where the target URL was omitted from outbound target request span attributes after a request-flow policy step executed.</strong></td>
+</tr>
+<tr>
+<td><strong>554114419</strong></td>
+<td><strong>Apigee hybrid now allows policies to modify HTTP/2 request pseudo-headers (<code>:path</code> and <code>:authority</code>) when communicating over HTTP/2.</strong></td>
+</tr>
+<tr>
+<td><strong>548763108</strong></td>
+<td><strong>Hardened Message Processor outbound HTTP validation to block requests to internal Kubernetes cluster hostnames (<code>*.svc.cluster.local</code>).</strong></td>
+</tr>
+<tr>
+<td><strong>513032450</strong></td>
+<td><strong>Fixed an issue where <code>apigee-connect-agent</code> control-plane connections could hang for up to 2 hours when silently dropped by a network intermediary by restoring a 15-second TCP keep-alive.</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="security">Security</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-asm-ingress</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-asm-istiod</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-connect-agent</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-fluent-bit</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14456">CVE-2026-14456</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-14457">CVE-2026-14457</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18798">CVE-2026-18798</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54874">CVE-2026-54874</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63072">CVE-2026-63072</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63073">CVE-2026-63073</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63074">CVE-2026-63074</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63075">CVE-2026-63075</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-63076">CVE-2026-63076</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75803">CVE-2026-75803</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-hybrid-cassandra-client</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-kube-rbac-proxy</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46600">CVE-2026-46600</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-mart-server</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-46392">CVE-2025-46392</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-mint-task-scheduler</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-46392">CVE-2025-46392</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-open-telemetry-collector</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-43871">CVE-2026-43871</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81871">CVE-2026-81871</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81872">CVE-2026-81872</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-operators</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-prom-prometheus</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-46600">CVE-2026-46600</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-prometheus-adapter</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-runtime</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-46392">CVE-2025-46392</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-synchronizer</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-udca</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+<tr>
+<td><strong>N/A</strong></td>
+<td><strong>Security fixes for <code>apigee-watcher</code>.</strong>  This addresses the following vulnerabilities:  * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84303">CVE-2026-84303</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84304">CVE-2026-84304</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84445">CVE-2026-84445</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
 <h2 id="2026-09-30">2026-09-30</h2>
 <h3 id="v1171">v1.17.1</h3>
 <p>On September 30, 2026 we released an updated version of the Apigee hybrid software, v1.17.1.</p>
@@ -2976,8 +3097,8 @@
 </code></pre>
 <p>If you self-manage the operator's RBAC, add this permission before you upgrade to v1.17.1. If you have already upgraded without this permission, apply the update to your role configuration to ensure proper operator functionality. Without this permission, the operator cannot manage the <code>Endpoints</code> object of an external datastore, so the external datastore feature does not work. If you do not use an external datastore, the operator works without this permission.</p>
 <p><strong>Note:</strong> The <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/config-prop-ref#ao-args-disablemanagedclusterroles"><code>ao.args.disableManagedClusterRoles</code></a> property does not apply to this change. That property governs only <code>ClusterRole</code> and <code>ClusterRoleBinding</code> objects, whereas this permission is added to a namespaced <code>Role</code>.</p>
-<h3 id="fixed">Fixed</h3>
-<h4 id="fixed-in-this-release">Fixed in this release</h4>
+<h3 id="fixed_1">Fixed</h3>
+<h4 id="fixed-in-this-release_1">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3052,7 +3173,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3116,8 +3237,8 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_1">Fixed</h3>
-<h4 id="fixed-in-this-release_1">Fixed in this release</h4>
+<h3 id="fixed_2">Fixed</h3>
+<h4 id="fixed-in-this-release_2">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3156,7 +3277,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security_1">Security</h3>
+<h3 id="security_2">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3245,8 +3366,8 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_2">Fixed</h3>
-<h4 id="fixed-in-this-release_2">Fixed in this release</h4>
+<h3 id="fixed_3">Fixed</h3>
+<h4 id="fixed-in-this-release_3">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3317,7 +3438,7 @@
 <p><strong>Forward proxy support for AI policies</strong></p>
 <p>Apigee hybrid v1.16.10 adds forward proxy support for AI policies, such as the Model Armor and semantic caching policies. Outbound calls from these policies can now be routed through an HTTP forward proxy.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/forward-proxy">Configure a forward proxy</a>, <a href="https://docs.cloud.google.com/apigee/docs/api-platform/tutorials/using-model-armor-policies">Get started with the Model Armor policies</a>, and <a href="https://docs.cloud.google.com/apigee/docs/api-platform/tutorials/using-semantic-caching-policies">Get started with semantic caching policies</a>.</p>
-<h3 id="security_2">Security</h3>
+<h3 id="security_3">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3426,7 +3547,7 @@
 <p><strong>Reduced service account permissions</strong></p>
 <p>Apigee hybrid v1.17.0 reduces the Google Cloud IAM permissions that Apigee service accounts require. Service accounts that use Cloud Storage now require only the <code>storage.objects.get</code> and <code>storage.objects.create</code> permissions rather than the broader Storage Admin (<code>roles/storage.admin</code>) role. The Cassandra components also no longer run with the <code>privileged: true</code> security context.</p>
 <p>For more information about service accounts, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.17/create-service-account">Create service accounts</a>.</p>
-<h3 id="security_3">Security</h3>
+<h3 id="security_4">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-08-26">2026-08-26</h2>
@@ -3437,7 +3558,7 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_4">Security</h3>
+<h3 id="security_5">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3517,8 +3638,8 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_3">Fixed</h3>
-<h4 id="fixed-in-this-release_3">Fixed in this release</h4>
+<h3 id="fixed_4">Fixed</h3>
+<h4 id="fixed-in-this-release_4">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3537,7 +3658,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="security_5">Security</h3>
+<h3 id="security_6">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-07-31">2026-07-31</h2>
@@ -3551,7 +3672,7 @@
 <h3 id="feature_10">Feature</h3>
 <p><strong>Runtime rollout strategy configuration</strong></p>
 <p>In this release, you can configure the rollout strategy used when updating runtime (message processor) ReplicaSets by setting the <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/config-prop-ref#runtime-release-strategy"><code>runtime.release.strategy</code></a> property (with options <code>rolling</code>, <code>scale-down-first</code>, or <code>none</code>) or per-environment with <code>envs[].components.runtime.release.strategy</code> in your overrides configuration file. The property defaults to <code>rolling</code>.</p>
-<h3 id="security_6">Security</h3>
+<h3 id="security_7">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-07-24">2026-07-24</h2>
@@ -3562,8 +3683,8 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_4">Fixed</h3>
-<h4 id="fixed-in-this-release_4">Fixed in this release</h4>
+<h3 id="fixed_5">Fixed</h3>
+<h4 id="fixed-in-this-release_5">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3581,7 +3702,7 @@
 <h3 id="feature_11">Feature</h3>
 <p><strong>Runtime rollout strategy configuration</strong></p>
 <p>In this release, you can configure the rollout strategy used when updating runtime (message processor) ReplicaSets by setting the <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/config-prop-ref#runtime-release-strategy"><code>runtime.release.strategy</code></a> property (with options <code>rolling</code>, <code>scale-down-first</code>, or <code>none</code>) or per-environment with <code>envs[].components.runtime.release.strategy</code> in your overrides configuration file. The property defaults to <code>rolling</code>.</p>
-<h3 id="security_7">Security</h3>
+<h3 id="security_8">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-07-23">2026-07-23</h2>
@@ -3595,7 +3716,7 @@
 <h3 id="feature_12">Feature</h3>
 <p><strong>Runtime rollout strategy configuration</strong></p>
 <p>In this release, you can configure the rollout strategy used when updating runtime (message processor) ReplicaSets by setting the <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/config-prop-ref#runtime-release-strategy"><code>runtime.release.strategy</code></a> property (with options <code>rolling</code>, <code>scale-down-first</code>, or <code>none</code>) or per-environment with <code>envs[].components.runtime.release.strategy</code> in your overrides configuration file. The property defaults to <code>rolling</code>.</p>
-<h3 id="security_8">Security</h3>
+<h3 id="security_9">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-07-15">2026-07-15</h2>
@@ -3606,7 +3727,7 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_9">Security</h3>
+<h3 id="security_10">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-07-10">2026-07-10</h2>
@@ -3617,7 +3738,7 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_10">Security</h3>
+<h3 id="security_11">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-07-03">2026-07-03</h2>
@@ -3628,7 +3749,7 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_11">Security</h3>
+<h3 id="security_12">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-06-19">2026-06-19</h2>
@@ -3642,7 +3763,7 @@
 <h3 id="feature_13">Feature</h3>
 <p><strong>HAProxy PROXY-protocol support on Apigee ingress gateway</strong></p>
 <p>In this release, you can opt into HAProxy PROXY-protocol parsing by setting the <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/config-prop-ref#ingressgateways-proxyprotocol-mode"><code>ingressGateways[].proxyProtocol.mode</code></a> property (with options <code>strict</code>, <code>permissive</code>, or <code>disable</code>) in your overrides configuration file. The property defaults to <code>disable</code>.</p>
-<h3 id="security_12">Security</h3>
+<h3 id="security_13">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-06-16">2026-06-16</h2>
@@ -3653,7 +3774,7 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_13">Security</h3>
+<h3 id="security_14">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-06-08">2026-06-08</h2>
@@ -3664,7 +3785,7 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_14">Security</h3>
+<h3 id="security_15">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-05-30">2026-05-30</h2>
@@ -3675,7 +3796,7 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_15">Security</h3>
+<h3 id="security_16">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-05-22">2026-05-22</h2>
@@ -3686,9 +3807,9 @@
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_16">Security</h3>
+<h3 id="security_17">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>On May 22, 2026 we released an updated version of the Apigee UI.</p>
 <p>The <strong>Management &gt; Instances</strong> page now displays Apigee hybrid instances. The display includes the instance name, location, and runtime version.</p>
 <p>See <a href="https://docs.cloud.google.com/apigee/docs/api-platform/system-administration/instances">Managing instances</a>.</p>
@@ -3710,8 +3831,8 @@ is <strong>v2.0.0</strong>.</p>
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_5">Fixed</h3>
-<h4 id="fixed-in-this-release_5">Fixed in this release</h4>
+<h3 id="fixed_6">Fixed</h3>
+<h4 id="fixed-in-this-release_6">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3735,8 +3856,8 @@ is <strong>v2.0.0</strong>.</p>
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_6">Fixed</h3>
-<h4 id="fixed-in-this-release_6">Fixed in this release</h4>
+<h3 id="fixed_7">Fixed</h3>
+<h4 id="fixed-in-this-release_7">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3774,8 +3895,8 @@ is <strong>v2.0.0</strong>.</p>
 <h3 id="feature_16">Feature</h3>
 <p><strong>Sidecar authentication for Workload Identity Federation on AKS and EKS</strong></p>
 <p>Starting in version v1.16.2, you can now use a sidecar along with Workload Identity Federation on AKS and EKS to mount security tokens from your preferred identity provider (IDP) for service account authentication. This method is an alternative to using Kubernetes Projected Service Account Tokens, and is useful when you need to integrate with a custom Identity Provider. See <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/use-sidecar-for-wif">Use sidecar authentication for Workload Identity Federation on AKS and EKS</a>.</p>
-<h3 id="fixed_7">Fixed</h3>
-<h4 id="fixed-in-this-release_7">Fixed in this release</h4>
+<h3 id="fixed_8">Fixed</h3>
+<h4 id="fixed-in-this-release_8">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -3806,7 +3927,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_17">Security</h3>
+<h3 id="security_18">Security</h3>
 <p>Various security and CVE fixes are included in this release.</p>
 <hr />
 <h2 id="2026-05-04">2026-05-04</h2>
@@ -3817,7 +3938,7 @@ is <strong>v2.0.0</strong>.</p>
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_18">Security</h3>
+<h3 id="security_19">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3916,7 +4037,7 @@ is <strong>v2.0.0</strong>.</p>
 <h3 id="feature_17">Feature</h3>
 <p><strong>Sidecar authentication for Workload Identity Federation on non-GKE platforms</strong></p>
 <p>Starting in version v1.14.4, you can now use a sidecar along with Workload Identity Federation on non-GKE platforms to mount security tokens from your preferred identity provider (IDP) for service account authentication. See <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/use-sidecar-for-wif">Use sidecar authentication for Workload Identity Federation on non-GKE platforms</a>.</p>
-<h3 id="security_19">Security</h3>
+<h3 id="security_20">Security</h3>
 <table>
 <thead>
 <tr>
@@ -4016,8 +4137,8 @@ is <strong>v2.0.0</strong>.</p>
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_8">Fixed</h3>
-<h4 id="fixed-in-this-release_8">Fixed in this release</h4>
+<h3 id="fixed_9">Fixed</h3>
+<h4 id="fixed-in-this-release_9">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -4040,7 +4161,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_20">Security</h3>
+<h3 id="security_21">Security</h3>
 <table>
 <thead>
 <tr>
@@ -4109,8 +4230,8 @@ is <strong>v2.0.0</strong>.</p>
 </table>
 <hr />
 <h2 id="2026-03-12">2026-03-12</h2>
-<h3 id="fixed_9">Fixed</h3>
-<h4 id="fixed-in-this-release_9">Fixed in this release</h4>
+<h3 id="fixed_10">Fixed</h3>
+<h4 id="fixed-in-this-release_10">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -4230,8 +4351,8 @@ is <strong>v2.0.0</strong>.</p>
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.15/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_10">Fixed</h3>
-<h4 id="fixed-in-this-release_10">Fixed in this release</h4>
+<h3 id="fixed_11">Fixed</h3>
+<h4 id="fixed-in-this-release_11">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -4246,7 +4367,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_21">Security</h3>
+<h3 id="security_22">Security</h3>
 <table>
 <thead>
 <tr>
@@ -4394,8 +4515,8 @@ is <strong>v2.0.0</strong>.</p>
      -f overrides.yaml</code>
 9. Verify the environment chart by checking the state:</p>
 <p><code>kubectl -n APIGEE_NAMESPACE get apigeeenv</code></p>
-<h3 id="fixed_11">Fixed</h3>
-<h4 id="fixed-in-this-release_11">Fixed in this release</h4>
+<h3 id="fixed_12">Fixed</h3>
+<h4 id="fixed-in-this-release_12">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -4436,8 +4557,8 @@ is <strong>v2.0.0</strong>.</p>
 <p><strong>Support for cert-manager release 1.18 and 1.19</strong></p>
 <p>Apigee hybrid v1.16 supports cert-manager release 1.18 and 1.19.</p>
 <p><strong>Note:</strong> cert-manager release 1.18 introduces a change to the default certificate <code>Spec.PrivateKey.RotationPolicy</code> value that can impact traffic on upgraded Apigee hybrid installations. This does not affect new installations of Apigee Hybrid. See <a href="https://docs.cloud.google.com/apigee/docs/release/known-issues#465834046">Known issue 465834046</a>.</p>
-<h3 id="fixed_12">Fixed</h3>
-<h4 id="fixed-in-this-release_12">Fixed in this release</h4>
+<h3 id="fixed_13">Fixed</h3>
+<h4 id="fixed-in-this-release_13">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -4479,8 +4600,8 @@ is <strong>v2.0.0</strong>.</p>
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a minor release: The container images used in minor releases are integrated with the Apigee hybrid Helm charts. Upgrading to a minor via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="security_22">Security</h3>
-<h4 id="fixed-in-this-release_13">Fixed in this release</h4>
+<h3 id="security_23">Security</h3>
+<h4 id="fixed-in-this-release_14">Fixed in this release</h4>
 <table>
 <thead>
 <tr>
@@ -4585,7 +4706,7 @@ is <strong>v2.0.0</strong>.</p>
 <li>Meet Compliance: Provide a critical control for meeting stringent security compliance requirements.</li>
 </ul>
 <p>Seccomp profiles are not enabled by default. To enable the feature, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.16/configure-seccomp-profiles">Configure Seccomp profiles for pod security</a>.</p>
-<h3 id="security_23">Security</h3>
+<h3 id="security_24">Security</h3>
 <h4 id="fixed-since-last-minor-release">Fixed since last minor release</h4>
 <table>
 <thead>
@@ -4677,7 +4798,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="fixed_13">Fixed</h3>
+<h3 id="fixed_14">Fixed</h3>
 <h4 id="fixed-since-last-minor-release_1">Fixed since last minor release</h4>
 <table>
 <thead>
@@ -4802,7 +4923,7 @@ is <strong>v2.0.0</strong>.</p>
 <li><a href="https://cloud.google.com/apigee/docs/api-platform/tutorials/using-semantic-caching-policies">Get started with semantic caching policies</a></li>
 <li><a href="https://cloud.google.com/apigee/docs/api-platform/tutorials/using-model-armor-policies">Get started with Apigee Model Armor policies</a></li>
 </ul>
-<h3 id="fixed_14">Fixed</h3>
+<h3 id="fixed_15">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -4869,7 +4990,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_24">Security</h3>
+<h3 id="security_25">Security</h3>
 <table>
 <thead>
 <tr>
@@ -4930,7 +5051,7 @@ is <strong>v2.0.0</strong>.</p>
 <h3 id="feature_22">Feature</h3>
 <p><strong>Recurring, top-up, and setup fees for Apigee hybrid monetization</strong></p>
 <p>Apigee hybrid now supports recurring, top-up, and setup fees for monetization. For information see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/monetization-for-hybrid">Enabling monetization for Apigee hybrid</a>.</p>
-<h3 id="fixed_15">Fixed</h3>
+<h3 id="fixed_16">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -4954,7 +5075,7 @@ is <strong>v2.0.0</strong>.</p>
 <li>For information on new installations, see <a href="https://docs.cloud.google.com/apigee/docs/hybrid/v1.14/big-picture">The big picture</a>.</li>
 </ul>
 <p><strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://docs.cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_16">Fixed</h3>
+<h3 id="fixed_17">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -5001,7 +5122,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_25">Security</h3>
+<h3 id="security_26">Security</h3>
 <table>
 <thead>
 <tr>
@@ -5092,7 +5213,7 @@ is <strong>v2.0.0</strong>.</p>
 </ul>
 <p><strong>Note:</strong> if you are upgrading to Apigee hybrid version 1.13.4 from version 1.13.2 or earlier, see <a href="https://cloud.google.com/apigee/docs/hybrid/v1.13/upgrade#recommended-actions-upgrade-1133">APPENDIX: Validate policies after upgrade to 1.13.3 or later</a> for steps to address stricter class instantiation checks introduced in <a href="https://cloud.google.com/apigee/docs/hybrid/release-notes#hybrid_v1133">version 1.13.3</a>.
 <strong>Note:</strong> This is a patch release: The container images used in patch releases are integrated with the Apigee hybrid Helm charts. Upgrading to a patch via the Helm chart automatically updates the images. No manual image changes are typically needed. For information on container image support in Apigee hybrid releases, see <a href="https://cloud.google.com/apigee/docs/release/apigee-release-process#apigee-hybrid-container-images">Apigee release process</a>.</p>
-<h3 id="fixed_17">Fixed</h3>
+<h3 id="fixed_18">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -5119,7 +5240,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_26">Security</h3>
+<h3 id="security_27">Security</h3>
 <table>
 <thead>
 <tr>
@@ -5164,7 +5285,7 @@ is <strong>v2.0.0</strong>.</p>
 </table>
 <hr />
 <h2 id="2025-06-04">2025-06-04</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <h3 id="hybrid-v1150">hybrid v1.15.0</h3>
 <p>On June 4, 2025 we released an updated version of the Apigee hybrid software, 1.15.0.</p>
 <ul>
@@ -5175,7 +5296,7 @@ is <strong>v2.0.0</strong>.</p>
 <h3 id="feature_23">Feature</h3>
 <p><strong>Large message payload support in Apigee hybrid</strong></p>
 <p>Apigee now supports message payloads up to 30MB. You configure support for large message payloads in Apigee hybrid for individual environments or for your whole installation. See <a href="https://cloud.google.com/apigee/docs/hybrid/v1.15/configure-large-payload-support">Configure large message payload support in Apigee hybrid</a>.</p>
-<h3 id="fixed_18">Fixed</h3>
+<h3 id="fixed_19">Fixed</h3>
 <table>
 <thead>
 <tr>
@@ -5230,7 +5351,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_27">Security</h3>
+<h3 id="security_28">Security</h3>
 <p><strong>Fixed in this release</strong></p>
 <table>
 <thead>
@@ -5326,7 +5447,7 @@ is <strong>v2.0.0</strong>.</p>
 </tr>
 </tbody>
 </table>
-<h3 id="security_28">Security</h3>
+<h3 id="security_29">Security</h3>
 <p><strong>Fixed since last minor release</strong></p>
 <table>
 <thead>
@@ -5444,7 +5565,7 @@ is <strong>v2.0.0</strong>.</p>
 </table>
 <hr />
 <h2 id="2025-05-29">2025-05-29</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On May 29, 2025 we announced the shutdown schedule for the Apigee Classic UI.</p>
 <h3 id="deprecated">Deprecated</h3>
 <p>The Apigee Classic UI will be shutdown as of August 29, 2025.</p>
@@ -5462,6 +5583,9 @@ is <strong>v2.0.0</strong>.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-hybrid">Apigee hybrid</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-07" class="nav-link">2026-10-07</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-30" class="nav-link">2026-09-30</a>
           </li>

@@ -79,9 +79,9 @@ features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-fe
 
 ### Feature
 
-**Gemini Enterprise: Support for new actions (Public Preview)**
+**Gemini Enterprise: Support for new actions**
 
-Support for new actions is available in Public Preview for the following data store:
+Support for new actions is generally available (GA) for the following data store:
 
 * [Microsoft Outlook](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/ms-outlook): Add attachments,
   Create message, Forward mail, Move mail, Reply to message, and Update

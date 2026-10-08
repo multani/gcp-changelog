@@ -1,5 +1,12 @@
 # Memorystore for Redis
 
+## 2026-10-08
+
+### Feature
+
+To help protect your data and provide a baseline level of persistence, RDB snapshots are enabled by default when you [create an instance](https://docs.cloud.google.com/memorystore/docs/redis/manage-rdb-snapshots) using the Google Cloud console. This feature is [generally available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-03
 
 ### Feature

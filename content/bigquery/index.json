@@ -1,13 +1,23 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-10-08": [
+      {
+        "kind": "Feature",
+        "content": "You can use Gemini assistance in the BigQuery Studio SQL editor through an\ninline action button when you select text. For more information, see\n[Write SQL with Gemini assistance](https://docs.cloud.google.com/bigquery/docs/write-sql-gemini).\n\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Gemini assistance in BigQuery Studio",
+          "summary": "BigQuery Studio now offers Gemini assistance directly within the SQL editor. Use the inline action button after selecting text to get AI-powered SQL writing help. This feature is now generally available."
+        }
+      }
+    ],
     "2026-10-07": [
       {
         "kind": "Feature",
-        "content": "BigQuery offers [`TimesFM 3.0`](https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/),\na built-in time series forecasting model that implements Google Research's open\nsource TimesFM model. You can use `TimesFM 3.0` with the following functions:\n\n* Use\n  [`AI.FORECAST`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast)\n  to perform time series forecasting. In addition to univariate forecasting,\n  you can now perform multivariate forecasting that predicts values for\n  multiple time series based on historical values and additional covariates.\n* Use\n  [`AI.EVALUATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate)\n  to perform univariate time series evaluation.\n* Use\n  [`AI.DETECT_ANOMALIES`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)\n  to perform univariate time series anomaly detection.\n\nTo try using the `TimesFM 3.0` model for multivariate forecasting with the\n`AI.FORECAST` function, see\n[Forecast a single time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-single-time-series-forecasting-tutorial)\nand\n[Forecast multiple time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-multi-time-series-forecasting-tutorial).\n\nThe `TimesFM 3.0` model is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "content": "BigQuery offers [`TimesFM 3.0`](https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/),\na built-in time series forecasting model that implements Google Research's open\nsource TimesFM model. You can use `TimesFM 3.0` with the following functions:\n\n* Use\n  [`AI.FORECAST`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast)\n  to perform time series forecasting. In addition to univariate forecasting,\n  you can now perform multivariate forecasting that predicts values for\n  multiple time series based on historical values and additional covariates.\n* Use\n  [`AI.EVALUATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate)\n  to perform univariate time series evaluation.\n* Use\n  [`AI.DETECT_ANOMALIES`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)\n  to perform univariate time series anomaly detection.\n\n[Conversational analytics in BigQuery](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)\nalso supports using `TimesFM 3.0` with these functions.\n\nTo try using the `TimesFM 3.0` model for multivariate forecasting with the\n`AI.FORECAST` function, see\n[Forecast a single time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-single-time-series-forecasting-tutorial)\nand\n[Forecast multiple time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-multi-time-series-forecasting-tutorial).\n\nThe `TimesFM 3.0` model is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
         "summary": {
-          "title": "New Time Series Forecasting Model Available",
-          "summary": "BigQuery now includes TimesFM 3.0, a powerful zero-shot foundation model for multivariate time series forecasting. This feature enhances forecasting capabilities with new AI functions for prediction, evaluation, and anomaly detection."
+          "title": "Time Series Forecasting with TimesFM 3.0",
+          "summary": "BigQuery now offers TimesFM 3.0, a powerful time series forecasting model. This feature enables both univariate and multivariate forecasting, anomaly detection, and evaluation using new AI functions. Explore advanced forecasting capabilities with this cutting-edge model."
         }
       }
     ],
@@ -24,10 +34,10 @@
     "2026-10-05": [
       {
         "kind": "Feature",
-        "content": "[Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables) and\n[Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) now support\n[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default. This\nfeature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "content": "The following table types now support\n[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default:\n\n* [Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables)\n  and [Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) in\n  BigQuery\n* [Apache Iceberg tables managed by the Lakehouse runtime catalog](https://docs.cloud.google.com/lakehouse/docs/manage-tables)\n\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
         "summary": {
-          "title": "Iceberg tables now support flexible column names",
-          "summary": "Iceberg external and managed tables in BigQuery now support flexible column names by default. This feature is generally available, enhancing schema flexibility for your data."
+          "title": "Flexible Column Names Now Supported for Iceberg Tables",
+          "summary": "Iceberg tables, including external and managed tables in BigQuery and those managed by the Lakehouse runtime catalog, now support flexible column names by default. This enhancement simplifies schema management for your data lakehouse."
         }
       },
       {

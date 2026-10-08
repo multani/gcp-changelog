@@ -1,6 +1,24 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2026-10-08": [
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for MySQL now supports the\n`innodb_cloudsql_managed_buffer_pool_tuneup_pct` database flag.\n\nManaged buffer pool automatically adjusts the InnoDB buffer pool size to reduce\nout-of-memory events. When instance memory usage remains at or below 70% for 10\nminutes or longer after prior reductions, Cloud SQL increases the buffer pool\nsize. You can now use the `innodb_cloudsql_managed_buffer_pool_tuneup_pct` flag\nto change this 70% threshold to a different percentage. Increase the threshold\nto restore the InnoDB buffer pool size when baseline usage exceeds 70%, or\ndecrease it to preserve additional RAM allocation for memory spikes.\n\nThis flag requires the Cloud SQL maintenance version\n[*MYSQL\\_VERSION*.R20260726.00\\_05](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog)\nor later. For more information, see [Enable managed buffer\npool](https://docs.cloud.google.com/sql/docs/mysql/optimize-high-memory-usage#enable-managed-buffer-pool).",
+        "summary": {
+          "title": "Tune managed buffer pool in Cloud SQL for MySQL",
+          "summary": "Cloud SQL for MySQL now allows you to configure the managed buffer pool's automatic tuning threshold. Use the new `innodb_cloudsql_managed_buffer_pool_tuneup_pct` flag to adjust when the buffer pool size is increased, optimizing memory allocation for your database."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Cloud SQL for MySQL supports blue-green deployments\n([Preview](https://cloud.google.com/products#product-launch-stages)).\n\nBlue-green deployments let you update databases—such as performing major\nversion upgrades from MySQL 8.0 to 8.4 and staging hardware or configuration\nmodifications—while minimizing downtime. During a blue-green deployment,\nCloud SQL creates a separate staging environment (green) that mirrors your\nexisting production environment (blue) and maintains continuous logical\nreplication from blue to green. You can test application compatibility and\nperformance on the green environment without affecting production traffic, and\nthen trigger a switchover to the green environment with minimal application\ndowntime.\n\nFor more information, see [About blue-green deployments in\nCloud SQL](https://docs.cloud.google.com/sql/docs/mysql/about-blue-green-deployments).",
+        "summary": {
+          "title": "Cloud SQL for MySQL: Blue-Green Deployments Now in Preview",
+          "summary": "Cloud SQL for MySQL now offers blue-green deployments in preview, allowing for database updates and version upgrades with minimal downtime. This feature enables creating a staging environment to test changes before a seamless switchover, ensuring application compatibility and performance."
+        }
+      }
+    ],
     "2026-09-28": [
       {
         "kind": "Breaking",

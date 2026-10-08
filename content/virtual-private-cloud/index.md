@@ -4,6 +4,19 @@
 
 ### Feature
 
+**General Availability**: VPC Flow Logs supports
+[TCP connection logging](https://docs.cloud.google.com/vpc/docs/flow-logs#connection-logging) for
+VM instances and serverless endpoints. Connection logging captures
+outbound TCP connection attempts and acknowledged inbound TCP connections.
+
+You can enable this feature in a VPC Flow Logs configuration for a
+[subnet](https://docs.cloud.google.com/vpc/docs/using-flow-logs#network-management)
+(through the Network Management API), a
+[VPC network](https://docs.cloud.google.com/vpc/docs/using-flow-logs#enable-network), or an
+[organization](https://docs.cloud.google.com/vpc/docs/using-flow-logs#enable-organization).
+
+### Feature
+
 Service producers can let service consumers establish more connections to a
 Private Service Connect endpoint or backend by
 [configuring the target published service (service attachment) to use an additional NAT

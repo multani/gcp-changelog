@@ -1,5 +1,77 @@
 # Looker
 
+## 2026-10-08
+
+### Announcement
+
+**Looker 26.20** will roll out to Looker (original) and Looker (Google Cloud core) instances on the following schedule:
+
+* Expected deployment start: **Monday, October 12, 2026**
+* Expected final deployment and download available: **Sunday, October 25, 2026**
+
+Looker 26.20 is expected to include the following changes, features, and fixes.
+
+### Breaking
+
+Custom TopoJSON URL validation is updated to improve security. This change is isolated to Google Maps rendering in preview. Existing dashboards and Looks with the [Google Maps Enhancements preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#google-maps-enhancements) enabled that use custom TopoJSON files may be impacted.
+
+### Feature
+
+You can now apply [themes](https://docs.cloud.google.com/looker/docs/themes-for-internal-dashboards) to Looks in addition to internal dashboards.
+
+### Fixed
+
+An issue has been fixed where duplicating a scheduled plan could fail to retain the custom message value. This feature now performs as expected.
+
+### Fixed
+
+Table visualizations now proportionally scale left-pinned columns during automatic sizing, which prevents unnecessary horizontal scrollbars. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where enabling subtotals on table visualizations did not automatically disable the **Cell Visualizations** option. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where previews for Looker charts in Slack integrations could fail to be displayed. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where editing and saving a dashboard could cause the dashboard to reload indefinitely, forcing users to refresh the page. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where table cell visualizations that included both positive and negative values could display unwanted scrollbars and hide value labels. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the BigQuery JDBC driver could fail to properly parse certain data types, such as `BYTES`, `STRUCT/RECORD`, and nested `ARRAY` structures. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where linked filters on a dashboard could fail to display autocomplete suggestions even when a parent filter is selected. This feature now performs as expected.
+
+### Fixed
+
+The System Activity `query_metrics` Explore has been updated to ensure that phase timings (such as connection acquisitions, execution runtimes, and optimistic pivot fallback retry loops) are successfully captured for queries that fail or time out. This feature now performs as expected.
+
+### Fixed
+
+The System Activity **Dashboard Diagnostics** dashboard has been updated to fully support statistics, tile run counts, and performance recommendations for LookML dashboards. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the color palette popover in visualization settings failed to dynamically reposition when it expanded, causing controls to overlap or truncate. This feature now performs as expected.
+
+### Breaking
+
+When you set up a connection, self-service modeling will now be available only if a role that grants `create_self_service_from_table` also selects it through that role's model set.
+
+### Fixed
+
+The opacity for the comparison bar in short KPI visualizations has been reduced to increase legibility.
+
+---
 ## 2026-09-30
 
 ### Feature

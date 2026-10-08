@@ -6,10 +6,9 @@
 
 External IPv6 addresses are now supported for
 [Standard Tier](https://docs.cloud.google.com/network-tiers/docs/overview#standard_tier). For more
-information,
-see [IPv6 subnet ranges](https://docs.cloud.google.com/vpc/docs/subnets#ipv6-ranges).
+information, see [IPv6 subnet ranges](https://docs.cloud.google.com/vpc/docs/subnets#ipv6-ranges).
 
-This feature is in **Preview.**
+This feature is in **Preview**.
 
 ---
 ## 2026-09-30
@@ -29,7 +28,7 @@ Key aspects of this feature include:
   per-region, or per-VPC depending on Application Load Balancer type.
 * Active consumption: Only URL maps currently referenced by forwarding rules
   contribute to quota usage.
-* New URL map size limit: Projects enabled for the new quota have a new URL map
+* New URL map size limit: The new quota has a new URL map
   size limit increased to 1 MB for global and regional external and internal
   Application Load Balancers. Classic Application Load Balancers remain
   restricted to 64 KB.

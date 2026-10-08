@@ -1,5 +1,51 @@
 # Managed Service for Apache Airflow
 
+## 2026-09-25
+
+### Change
+
+*(Airflow 3.3.1, 3.2.2, and 2.11.1)*
+The `apache-airflow-providers-google` package was upgraded to version 22.4.0.
+For more information about changes, see the
+[apache-airflow-providers-google changelog](https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html).
+
+### Fixed
+
+Fixed an issue where OpenID Connect (OIDC) ID token audience strings were
+incorrectly converted to lowercase. The audience field now preserves
+case-sensitivity. This fixes integration failures with external services that
+require case-sensitive audience values.
+
+### Change
+
+Airflow 2.10.5 is no longer included in new Managed Airflow images and builds
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.3.1-build.3](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-3)
+* [composer-3-airflow-3.2.2-build.7](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-7)
+* [composer-3-airflow-2.11.1-build.20](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-20) (default)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.14-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-14-airflow-2-11-1) (default)
+
+### Deprecated
+
+The following Managed Airflow versions and builds have reached their
+[end of support period](https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support):
+composer-3-airflow-2.9.3-build.33, composer-3-airflow-2.10.5-build.13,
+composer-3-airflow-2.9.3-build.34, composer-3-airflow-2.10.5-build.14,
+composer-2.14.1-airflow-2.9.3, composer-2.14.1-airflow-2.10.5,
+composer-2.14.2-airflow-2.9.3, and composer-2.14.2-airflow-2.10.5.
+
+---
 ## 2026-09-02
 
 ### Announcement

@@ -2,9 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Airflow</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Airflow</subtitle>
-  <updated>2026-09-02T00:00:00+00:00</updated>
+  <updated>2026-09-25T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-airflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-09-25:change:0</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>(Airflow 3.3.1, 3.2.2, and 2.11.1)</em>
+The <code>apache-airflow-providers-google</code> package was upgraded to version 22.4.0.
+For more information about changes, see the
+<a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>]]></content>
+    <summary>The apache-airflow-providers-google package has been upgraded to version 22.4.0. This update includes various changes and improvements to the Google provider for Airflow. For a detailed list of modifications, please refer to the official changelog.</summary>
+    <title>Change: Airflow Google Provider Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-09-25:fixed:1</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue where OpenID Connect (OIDC) ID token audience strings were
+incorrectly converted to lowercase. The audience field now preserves
+case-sensitivity. This fixes integration failures with external services that
+require case-sensitive audience values.</p>]]></content>
+    <summary>An issue with OpenID Connect (OIDC) ID token audience strings being incorrectly converted to lowercase has been fixed. The audience field now preserves case-sensitivity, resolving integration failures with external services that require case-sensitive audience values.</summary>
+    <title>Fixed: OIDC ID Token Audience Case Preserved</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-09-25:change:2</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Airflow 2.10.5 is no longer included in new Managed Airflow images and builds</p>]]></content>
+    <summary>Airflow version 2.10.5 has been removed from new Managed Airflow images and builds. Please ensure your deployments are using a supported version.</summary>
+    <title>Change: Managed Airflow 2.10.5 Removal</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-09-25:change:3</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-3">composer-3-airflow-3.3.1-build.3</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-7">composer-3-airflow-3.2.2-build.7</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-20">composer-3-airflow-2.11.1-build.20</a> (default)</li>
+</ul>]]></content>
+    <summary>New Airflow builds are now available for Managed Airflow (Gen 3). These updates include composer-3-airflow-3.3.1-build.3, composer-3-airflow-3.2.2-build.7, and composer-3-airflow-2.11.1-build.20. The default build remains composer-3-airflow-2.11.1-build.20.</summary>
+    <title>Change: New Airflow builds available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-09-25:change:4</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-14-airflow-2-11-1">composer-2.17.14-airflow-2.11.1</a> (default)</li>
+</ul>]]></content>
+    <summary>New images for Managed Airflow (Gen 2) are now available, featuring composer-2.17.14 with Airflow 2.11.1. This update includes the latest enhancements and bug fixes for your Airflow environment.</summary>
+    <title>Change: New Managed Airflow Images Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-09-25:deprecated:5</id>
+    <published>2026-09-25T00:00:00+00:00</published>
+    <updated>2026-09-25T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following Managed Airflow versions and builds have reached their
+<a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
+composer-3-airflow-2.9.3-build.33, composer-3-airflow-2.10.5-build.13,
+composer-3-airflow-2.9.3-build.34, composer-3-airflow-2.10.5-build.14,
+composer-2.14.1-airflow-2.9.3, composer-2.14.1-airflow-2.10.5,
+composer-2.14.2-airflow-2.9.3, and composer-2.14.2-airflow-2.10.5.</p>]]></content>
+    <summary>Several Managed Airflow versions and builds are no longer supported. Please upgrade to a supported version to ensure continued service and security.</summary>
+    <title>Deprecated: Managed Airflow versions deprecated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

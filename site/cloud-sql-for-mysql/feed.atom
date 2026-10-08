@@ -2,9 +2,55 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-09-28T00:00:00+00:00</updated>
+  <updated>2026-10-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-10-08:feature:0</id>
+    <published>2026-10-08T00:00:00+00:00</published>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for MySQL now supports the
+<code>innodb_cloudsql_managed_buffer_pool_tuneup_pct</code> database flag.</p>
+<p>Managed buffer pool automatically adjusts the InnoDB buffer pool size to reduce
+out-of-memory events. When instance memory usage remains at or below 70% for 10
+minutes or longer after prior reductions, Cloud SQL increases the buffer pool
+size. You can now use the <code>innodb_cloudsql_managed_buffer_pool_tuneup_pct</code> flag
+to change this 70% threshold to a different percentage. Increase the threshold
+to restore the InnoDB buffer pool size when baseline usage exceeds 70%, or
+decrease it to preserve additional RAM allocation for memory spikes.</p>
+<p>This flag requires the Cloud SQL maintenance version
+<a href="https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog"><em>MYSQL_VERSION</em>.R20260726.00_05</a>
+or later. For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/optimize-high-memory-usage#enable-managed-buffer-pool">Enable managed buffer
+pool</a>.</p>]]></content>
+    <summary>Cloud SQL for MySQL now allows you to configure the managed buffer pool's automatic tuning threshold. Use the new `innodb_cloudsql_managed_buffer_pool_tuneup_pct` flag to adjust when the buffer pool size is increased, optimizing memory allocation for your database.</summary>
+    <title>Feature: Tune managed buffer pool in Cloud SQL for MySQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-10-08:feature:1</id>
+    <published>2026-10-08T00:00:00+00:00</published>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for MySQL supports blue-green deployments
+(<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>).</p>
+<p>Blue-green deployments let you update databases—such as performing major
+version upgrades from MySQL 8.0 to 8.4 and staging hardware or configuration
+modifications—while minimizing downtime. During a blue-green deployment,
+Cloud SQL creates a separate staging environment (green) that mirrors your
+existing production environment (blue) and maintains continuous logical
+replication from blue to green. You can test application compatibility and
+performance on the green environment without affecting production traffic, and
+then trigger a switchover to the green environment with minimal application
+downtime.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/about-blue-green-deployments">About blue-green deployments in
+Cloud SQL</a>.</p>]]></content>
+    <summary>Cloud SQL for MySQL now offers blue-green deployments in preview, allowing for database updates and version upgrades with minimal downtime. This feature enables creating a staging environment to test changes before a seamless switchover, ensuring application compatibility and performance.</summary>
+    <title>Feature: Cloud SQL for MySQL: Blue-Green Deployments Now in Preview</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,136 @@
 {
   "name": "Looker",
   "entries": {
+    "2026-10-08": [
+      {
+        "kind": "Announcement",
+        "content": "**Looker 26.20** will roll out to Looker (original) and Looker (Google Cloud core) instances on the following schedule:\n\n* Expected deployment start: **Monday, October 12, 2026**\n* Expected final deployment and download available: **Sunday, October 25, 2026**\n\nLooker 26.20 is expected to include the following changes, features, and fixes.",
+        "summary": {
+          "title": "Looker 26.20 Release Notes",
+          "summary": "The Looker 26.20 release is scheduled for deployment between October 12 and October 25, 2026. This update includes various changes, new features, and fixes for Looker instances. Full details of the enhancements will be available upon completion of the rollout."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "Custom TopoJSON URL validation is updated to improve security. This change is isolated to Google Maps rendering in preview. Existing dashboards and Looks with the [Google Maps Enhancements preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#google-maps-enhancements) enabled that use custom TopoJSON files may be impacted.",
+        "summary": {
+          "title": "TopoJSON validation updated",
+          "summary": "Custom TopoJSON URL validation has been updated to enhance security. This impacts Google Maps rendering in preview, and existing dashboards and Looks using custom TopoJSON files with the Google Maps Enhancements preview feature enabled might be affected."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can now apply [themes](https://docs.cloud.google.com/looker/docs/themes-for-internal-dashboards) to Looks in addition to internal dashboards.",
+        "summary": {
+          "title": "Apply themes to Looks",
+          "summary": "Themes can now be applied to Looks, expanding their use beyond internal dashboards. This feature allows for greater customization and consistent branding across your data visualizations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where duplicating a scheduled plan could fail to retain the custom message value. This feature now performs as expected.",
+        "summary": {
+          "title": "Scheduled plan duplication fixed",
+          "summary": "An issue where duplicating a scheduled plan failed to retain the custom message value has been resolved. The feature now functions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Table visualizations now proportionally scale left-pinned columns during automatic sizing, which prevents unnecessary horizontal scrollbars. This feature now performs as expected.",
+        "summary": {
+          "title": "Fixed table column scaling",
+          "summary": "Table visualizations now proportionally scale left-pinned columns during automatic sizing, preventing unnecessary horizontal scrollbars. This issue has now been resolved and the feature performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where enabling subtotals on table visualizations did not automatically disable the **Cell Visualizations** option. This feature now performs as expected.",
+        "summary": {
+          "title": "Subtotals and cell visualizations now work correctly",
+          "summary": "An issue where enabling subtotals on table visualizations did not automatically disable the Cell Visualizations option has been fixed. This functionality now operates as intended, ensuring a smoother user experience."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where previews for Looker charts in Slack integrations could fail to be displayed. This feature now performs as expected.",
+        "summary": {
+          "title": "Looker chart previews in Slack now working",
+          "summary": "An issue that prevented Looker chart previews from displaying in Slack integrations has been resolved. The feature is now functioning correctly."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where editing and saving a dashboard could cause the dashboard to reload indefinitely, forcing users to refresh the page. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard save issue resolved",
+          "summary": "An indefinite dashboard reload issue that occurred after editing and saving has been fixed. The feature now functions correctly, eliminating the need for manual page refreshes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where table cell visualizations that included both positive and negative values could display unwanted scrollbars and hide value labels. This feature now performs as expected.",
+        "summary": {
+          "title": "Visualization scrollbars fixed",
+          "summary": "An issue where table cell visualizations with mixed positive and negative values displayed unwanted scrollbars and hid labels has been resolved. The feature now functions correctly, showing all value labels as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the BigQuery JDBC driver could fail to properly parse certain data types, such as `BYTES`, `STRUCT/RECORD`, and nested `ARRAY` structures. This feature now performs as expected.",
+        "summary": {
+          "title": "BigQuery JDBC driver data type parsing fixed",
+          "summary": "An issue has been resolved where the BigQuery JDBC driver incorrectly parsed certain data types like BYTES, STRUCT/RECORD, and nested ARRAYs. The driver now handles these data types as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where linked filters on a dashboard could fail to display autocomplete suggestions even when a parent filter is selected. This feature now performs as expected.",
+        "summary": {
+          "title": "Autocomplete suggestions for linked filters now working",
+          "summary": "An issue that prevented autocomplete suggestions from appearing for linked filters when a parent filter was selected has been resolved. The feature now functions correctly, ensuring users can see and select suggestions as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The System Activity `query_metrics` Explore has been updated to ensure that phase timings (such as connection acquisitions, execution runtimes, and optimistic pivot fallback retry loops) are successfully captured for queries that fail or time out. This feature now performs as expected.",
+        "summary": {
+          "title": "Query metrics capture improved",
+          "summary": "The System Activity `query_metrics` Explore now correctly captures phase timings for failed or timed-out queries. This ensures more accurate metric collection for all query outcomes. The feature has been updated to perform as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The System Activity **Dashboard Diagnostics** dashboard has been updated to fully support statistics, tile run counts, and performance recommendations for LookML dashboards. This feature now performs as expected.",
+        "summary": {
+          "title": "Dashboard diagnostics improvements",
+          "summary": "The System Activity Dashboard Diagnostics dashboard now fully supports statistics, tile run counts, and performance recommendations for LookML dashboards. This update ensures the feature performs as expected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "An issue has been fixed where the color palette popover in visualization settings failed to dynamically reposition when it expanded, causing controls to overlap or truncate. This feature now performs as expected.",
+        "summary": {
+          "title": "Visualization settings popover fixed",
+          "summary": "An issue has been fixed where the color palette popover in visualization settings failed to dynamically reposition when it expanded. This fix ensures the popover now performs as expected, preventing overlap or truncation of controls."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "When you set up a connection, self-service modeling will now be available only if a role that grants `create_self_service_from_table` also selects it through that role's model set.",
+        "summary": {
+          "title": "Self-service modeling changes",
+          "summary": "Self-service modeling is now restricted to roles with the 'create_self_service_from_table' permission that are explicitly included in the role's model set. This ensures that only authorized roles can utilize this feature."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The opacity for the comparison bar in short KPI visualizations has been reduced to increase legibility.",
+        "summary": {
+          "title": "KPI visualization improved",
+          "summary": "The comparison bar opacity in short KPI visualizations has been reduced. This change enhances legibility for users."
+        }
+      }
+    ],
     "2026-09-30": [
       {
         "kind": "Feature",

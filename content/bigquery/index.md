@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-10-08
+
+### Feature
+
+You can use Gemini assistance in the BigQuery Studio SQL editor through an
+inline action button when you select text. For more information, see
+[Write SQL with Gemini assistance](https://docs.cloud.google.com/bigquery/docs/write-sql-gemini).
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2026-10-07
 
 ### Feature
@@ -19,6 +30,9 @@ source TimesFM model. You can use `TimesFM 3.0` with the following functions:
 * Use
   [`AI.DETECT_ANOMALIES`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)
   to perform univariate time series anomaly detection.
+
+[Conversational analytics in BigQuery](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)
+also supports using `TimesFM 3.0` with these functions.
 
 To try using the `TimesFM 3.0` model for multivariate forecasting with the
 `AI.FORECAST` function, see
@@ -45,10 +59,15 @@ This feature is in
 
 ### Feature
 
-[Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables) and
-[Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) now support
-[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default. This
-feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+The following table types now support
+[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default:
+
+* [Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables)
+  and [Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) in
+  BigQuery
+* [Apache Iceberg tables managed by the Lakehouse runtime catalog](https://docs.cloud.google.com/lakehouse/docs/manage-tables)
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 

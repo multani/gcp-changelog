@@ -1,5 +1,44 @@
 # Cloud SQL for MySQL
 
+## 2026-10-08
+
+### Feature
+
+Cloud SQL for MySQL now supports the
+`innodb_cloudsql_managed_buffer_pool_tuneup_pct` database flag.
+
+Managed buffer pool automatically adjusts the InnoDB buffer pool size to reduce
+out-of-memory events. When instance memory usage remains at or below 70% for 10
+minutes or longer after prior reductions, Cloud SQL increases the buffer pool
+size. You can now use the `innodb_cloudsql_managed_buffer_pool_tuneup_pct` flag
+to change this 70% threshold to a different percentage. Increase the threshold
+to restore the InnoDB buffer pool size when baseline usage exceeds 70%, or
+decrease it to preserve additional RAM allocation for memory spikes.
+
+This flag requires the Cloud SQL maintenance version
+[*MYSQL\_VERSION*.R20260726.00\_05](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog)
+or later. For more information, see [Enable managed buffer
+pool](https://docs.cloud.google.com/sql/docs/mysql/optimize-high-memory-usage#enable-managed-buffer-pool).
+
+### Feature
+
+Cloud SQL for MySQL supports blue-green deployments
+([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+Blue-green deployments let you update databases—such as performing major
+version upgrades from MySQL 8.0 to 8.4 and staging hardware or configuration
+modifications—while minimizing downtime. During a blue-green deployment,
+Cloud SQL creates a separate staging environment (green) that mirrors your
+existing production environment (blue) and maintains continuous logical
+replication from blue to green. You can test application compatibility and
+performance on the green environment without affecting production traffic, and
+then trigger a switchover to the green environment with minimal application
+downtime.
+
+For more information, see [About blue-green deployments in
+Cloud SQL](https://docs.cloud.google.com/sql/docs/mysql/about-blue-green-deployments).
+
+---
 ## 2026-09-28
 
 ### Breaking

@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Spark</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Spark</subtitle>
-  <updated>2026-09-23T00:00:00+00:00</updated>
+  <updated>2026-09-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-spark/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-30:announcement:0</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions"><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine) subminor cluster image versions</a>:</p>
+<ul>
+<li>2.2.88-debian12, 2.2.88-rocky9, 2.2.88-ubuntu22, 2.2.88-ubuntu22-arm</li>
+<li>2.3.37-debian12, 2.3.37-ml-ubuntu22, 2.3.37-rocky9, 2.3.37-ubuntu22, 2.3.37-ubuntu22-arm</li>
+<li>3.0.3-debian13, 3.0.3-ml-ubuntu24, 3.0.3-rocky9, 3.0.3-ubuntu24</li>
+<li><strong>Security Notification (SPNEGO for YARN UI):</strong> Please refer to the updated <a href="https://docs.cloud.google.com/managed-spark/docs/release-notes#June_22_2026">June 22, 2026 release notes</a> for important information regarding SPNEGO configuration for YARN UI on versions 2.1 and above.</li>
+</ul>]]></content>
+    <summary>New image versions for Managed Service for Apache Spark have been released, offering updated components and security fixes. These updates include support for Debian 12, Rocky 9, and Ubuntu 22/24, with specific versions for machine learning workloads. Users should review the release notes for details on SPNEGO configuration for YARN UI on supported versions.</summary>
+    <title>Announcement: New Managed Spark Image Versions Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-spark:2026-09-30:breaking:1</id>
+    <published>2026-09-30T00:00:00+00:00</published>
+    <updated>2026-09-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):</p>
+<ul>
+<li><strong>End-to-End Encryption for Apache Ranger (HTTPS):</strong> Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target <code>https://&lt;master-host&gt;:6182</code> instead of legacy HTTP port 6080.</li>
+<li><strong>Affected Image versions:</strong> 2.2.88+, 2.3.37+, 3.0.3+.</li>
+</ul>]]></content>
+    <summary>Managed Service for Apache Spark now enforces end-to-end encryption for Apache Ranger using HTTPS. This update affects specific image versions and enhances security for data access and management.</summary>
+    <title>Breaking: Apache Spark Security Enhanced</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -16,9 +48,24 @@
 <ul>
 <li><strong>Preconfigured Conda channels removed:</strong> Preconfigured conda channels (such as <code>conda-forge</code>) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.</li>
 <li><strong>Affected runtime versions:</strong> <code>1.2.89+</code>, <code>2.2.89+</code>, and <code>2.3.42+</code>.</li>
+</ul>
+<p><strong>Managed Service for Apache Spark</strong> (formerly Dataproc on Compute Engine):</p>
+<ul>
+<li>
+<p><strong>Enforced SPNEGO Authentication on Web UIs:</strong> Disabled anonymous access to YARN (ResourceManager, NodeManager) and HiveServer2 web interfaces on Kerberos-enabled clusters to align with Zero-Trust architecture. End users and administrators must hold an active Kerberos ticket (kinit) and configure their browser/client for SPNEGO negotiation to access cluster consoles.</p>
+</li>
+<li>
+<p><strong>Affected runtime versions:</strong> <code>2.2.88+</code>, <code>2.3.37+</code>, <code>3.0.3+</code>.</p>
+</li>
+<li>
+<p><strong>End-to-End Encryption for Apache Ranger (HTTPS):</strong> Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target <code>https://&lt;master-host&gt;:6182</code> instead of legacy HTTP port 6080.</p>
+</li>
+<li>
+<p><strong>Affected runtime versions:</strong> <code>2.2.88+</code>, <code>2.3.37+</code>, <code>3.0.3+</code>.</p>
+</li>
 </ul>]]></content>
-    <summary>Managed Service for Apache Spark has removed preconfigured conda channels from its configurations. This change affects specific runtime versions, and all aliases now point to the latest runtime without conda channel setup.</summary>
-    <title>Breaking: Managed Service for Apache Spark configuration update</title>
+    <summary>Managed Service for Apache Spark has introduced significant updates. Preconfigured conda channels are removed for certain runtime versions, and SPNEGO authentication is now enforced for web UIs on Kerberos-enabled clusters. Additionally, end-to-end encryption for Apache Ranger is enforced via HTTPS.</summary>
+    <title>Breaking: Spark Service Updates: Security and Configuration Changes</title>
   </entry>
   <entry>
     <author>

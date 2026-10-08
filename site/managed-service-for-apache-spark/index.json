@@ -1,13 +1,31 @@
 {
   "name": "Managed Service for Apache Spark",
   "entries": {
+    "2026-09-30": [
+      {
+        "kind": "Announcement",
+        "content": "New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):\n\n* 2.2.88-debian12, 2.2.88-rocky9, 2.2.88-ubuntu22, 2.2.88-ubuntu22-arm\n* 2.3.37-debian12, 2.3.37-ml-ubuntu22, 2.3.37-rocky9, 2.3.37-ubuntu22, 2.3.37-ubuntu22-arm\n* 3.0.3-debian13, 3.0.3-ml-ubuntu24, 3.0.3-rocky9, 3.0.3-ubuntu24\n* **Security Notification (SPNEGO for YARN UI):** Please refer to the updated [June 22, 2026 release notes](https://docs.cloud.google.com/managed-spark/docs/release-notes#June_22_2026) for important information regarding SPNEGO configuration for YARN UI on versions 2.1 and above.",
+        "summary": {
+          "title": "New Managed Spark Image Versions Available",
+          "summary": "New image versions for Managed Service for Apache Spark have been released, offering updated components and security fixes. These updates include support for Debian 12, Rocky 9, and Ubuntu 22/24, with specific versions for machine learning workloads. Users should review the release notes for details on SPNEGO configuration for YARN UI on supported versions."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):\n\n* **End-to-End Encryption for Apache Ranger (HTTPS):** Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target `https://<master-host>:6182` instead of legacy HTTP port 6080.\n* **Affected Image versions:** 2.2.88+, 2.3.37+, 3.0.3+.",
+        "summary": {
+          "title": "Apache Spark Security Enhanced",
+          "summary": "Managed Service for Apache Spark now enforces end-to-end encryption for Apache Ranger using HTTPS. This update affects specific image versions and enhances security for data access and management."
+        }
+      }
+    ],
     "2026-09-23": [
       {
         "kind": "Breaking",
-        "content": "**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):\n\n* **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.\n  + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.",
+        "content": "**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark):\n\n* **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.\n  + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.\n\n**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):\n\n* **Enforced SPNEGO Authentication on Web UIs:** Disabled anonymous access to YARN (ResourceManager, NodeManager) and HiveServer2 web interfaces on Kerberos-enabled clusters to align with Zero-Trust architecture. End users and administrators must hold an active Kerberos ticket (kinit) and configure their browser/client for SPNEGO negotiation to access cluster consoles.\n\n  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.\n* **End-to-End Encryption for Apache Ranger (HTTPS):** Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target `https://<master-host>:6182` instead of legacy HTTP port 6080.\n\n  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.",
         "summary": {
-          "title": "Managed Service for Apache Spark configuration update",
-          "summary": "Managed Service for Apache Spark has removed preconfigured conda channels from its configurations. This change affects specific runtime versions, and all aliases now point to the latest runtime without conda channel setup."
+          "title": "Spark Service Updates: Security and Configuration Changes",
+          "summary": "Managed Service for Apache Spark has introduced significant updates. Preconfigured conda channels are removed for certain runtime versions, and SPNEGO authentication is now enforced for web UIs on Kerberos-enabled clusters. Additionally, end-to-end encryption for Apache Ranger is enforced via HTTPS."
         }
       },
       {

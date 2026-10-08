@@ -1,5 +1,27 @@
 # Google SecOps Marketplace
 
+## 2026-10-07
+
+### Change
+
+**Google Chronicle**: Version 97.0
+
+* Updated the alert synchronization logic in the following job:
+
+  + **Google Chronicle Sync Job**
+
+### Change
+
+**Gitsync**: Version 53.0
+
+* (REGRESSIVE) Updated to support the latest Chronicle API.
+
+  **Important:** Existing users **must** migrate their repository branch and
+  re-export their content after updating.
+
+  For instructions, see [Chronicle API-enabled environment migration](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#chronicle-api-enabled-environment-migration).
+
+---
 ## 2026-09-30
 
 ### Feature

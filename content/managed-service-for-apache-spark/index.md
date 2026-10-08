@@ -1,5 +1,24 @@
 # Managed Service for Apache Spark
 
+## 2026-09-30
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 2.2.88-debian12, 2.2.88-rocky9, 2.2.88-ubuntu22, 2.2.88-ubuntu22-arm
+* 2.3.37-debian12, 2.3.37-ml-ubuntu22, 2.3.37-rocky9, 2.3.37-ubuntu22, 2.3.37-ubuntu22-arm
+* 3.0.3-debian13, 3.0.3-ml-ubuntu24, 3.0.3-rocky9, 3.0.3-ubuntu24
+* **Security Notification (SPNEGO for YARN UI):** Please refer to the updated [June 22, 2026 release notes](https://docs.cloud.google.com/managed-spark/docs/release-notes#June_22_2026) for important information regarding SPNEGO configuration for YARN UI on versions 2.1 and above.
+
+### Breaking
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+
+* **End-to-End Encryption for Apache Ranger (HTTPS):** Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target `https://<master-host>:6182` instead of legacy HTTP port 6080.
+* **Affected Image versions:** 2.2.88+, 2.3.37+, 3.0.3+.
+
+---
 ## 2026-09-23
 
 ### Breaking
@@ -8,6 +27,15 @@
 
 * **Preconfigured Conda channels removed:** Preconfigured conda channels (such as `conda-forge`) have been removed from configurations. All runtime version aliases now point to the latest runtime version without conda channel configuration.
   + **Affected runtime versions:** `1.2.89+`, `2.2.89+`, and `2.3.42+`.
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine):
+
+* **Enforced SPNEGO Authentication on Web UIs:** Disabled anonymous access to YARN (ResourceManager, NodeManager) and HiveServer2 web interfaces on Kerberos-enabled clusters to align with Zero-Trust architecture. End users and administrators must hold an active Kerberos ticket (kinit) and configure their browser/client for SPNEGO negotiation to access cluster consoles.
+
+  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.
+* **End-to-End Encryption for Apache Ranger (HTTPS):** Ranger Admin, UserSync, and client plugins now enforce HTTPS on port 6182 for SSL-enabled clusters. Traffic routed through Apache Knox Component Gateway is encrypted end-to-end with multizone support, and direct access should target `https://<master-host>:6182` instead of legacy HTTP port 6080.
+
+  + **Affected runtime versions:** `2.2.88+`, `2.3.37+`, `3.0.3+`.
 
 ### Announcement
 

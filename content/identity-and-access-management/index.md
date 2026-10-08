@@ -1,5 +1,18 @@
 # Identity and Access Management
 
+## 2026-10-06
+
+### Feature
+
+Revoking active sessions and short-lived credentials for Workforce Identity
+Federation users (principals) across all clients is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+You can revoke workforce user sessions by using the gcloud CLI or the REST API.
+
+For more information, see
+[Revoke Workforce Identity Federation user sessions](https://docs.cloud.google.com/iam/docs/workforce-revoke-sessions).
+
+---
 ## 2026-09-21
 
 ### Feature

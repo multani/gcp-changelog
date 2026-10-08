@@ -1,5 +1,14 @@
 # Cloud Run
 
+## 2026-10-07
+
+### Feature
+
+[SSH for Cloud Run services and instances](https://docs.cloud.google.com/run/docs/troubleshooting/ssh) is in [Preview](https://cloud.google.com/products#product-launch-stages). Use this
+feature to establish a secure, interactive shell connection to your running
+instances.
+
+---
 ## 2026-09-29
 
 ### Feature

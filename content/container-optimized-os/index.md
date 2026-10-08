@@ -1,5 +1,190 @@
 # Container Optimized OS
 
+## 2026-10-06
+
+### Change
+
+
+
+### cos-133-19999-44-106
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.53](https://cos.googlesource.com/third_party/kernel/+/b72635466157d63e31f9ccfb6ae86ca6683ba729 ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/19999.44.106/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-129-19506-505-25
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.110](https://cos.googlesource.com/third_party/kernel/+/e8aea8a5b77baffbe8202925d0d4857248041049 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.505.25/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated default cos-gpu-installer version to v2.7.9. It
+installs ucodes firmwares for VR200.
+
+### Change
+
+Updated dev-libs/openssl to v3.5.9.
+
+### Fixed
+
+Updated app-admin/google-guest-configs to v20260928.00.
+
+### Fixed
+
+Added support for NVIDIA driver v595.91.07.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260924.00.
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p262.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.11.
+
+### Fixed
+
+Added the "watchdog\_timeout" module parameter to the idpf driver.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.threads-max: 63443 -> 63444
+* Changed: net.ipv4.udp\_mem: 187941 250590 375882 -> 187941 250591 375882
+* Changed: user.max\_cgroup\_namespaces: 31721 -> 31722
+* Changed: user.max\_ipc\_namespaces: 31721 -> 31722
+* Changed: user.max\_mnt\_namespaces: 31721 -> 31722
+* Changed: user.max\_net\_namespaces: 31721 -> 31722
+* Changed: user.max\_pid\_namespaces: 31721 -> 31722
+* Changed: user.max\_time\_namespaces: 31721 -> 31722
+* Changed: user.max\_user\_namespaces: 31721 -> 31722
+* Changed: user.max\_uts\_namespaces: 31721 -> 31722
+
+### Fixed
+
+Rebuilt Go binaries with Go 1.25.14.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260928.00.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.5.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.11.
+
+### Fixed
+
+Upgraded sys-libs/timezone-data to v2026e.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.7.
+
+### Security
+
+Fixed CVE-2026-5928 in sys-libs/glibc.
+
+### Security
+
+Upgraded dev-libs/libxml2 to v2.15.4. This fixes CVE-2026-86140.
+
+### Change
+
+
+
+### cos-125-19216-700-23
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.110](https://cos.googlesource.com/third_party/kernel/+/016be3984fda059a05c980c7133651fec7536d1c ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.700.23/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated dev-libs/openssl to v3.5.9.
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p262.
+
+### Fixed
+
+Added the "watchdog\_timeout" module parameter to the idpf driver.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260928.00.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.5.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.11.
+
+### Fixed
+
+Upgraded sys-process/lsof to v4.99.7.
+
+### Security
+
+Fixed CVE-2026-5928 in sys-libs/glibc.
+
+### Security
+
+Upgraded dev-libs/libxml2 to v2.15.4. This fixes CVE-2026-86140.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: net.ipv4.udp\_mem: 188034 250714 376068 -> 188034 250715 376068
+
+### Change
+
+
+
+### cos-121-18867-624-8
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.157](https://cos.googlesource.com/third_party/kernel/+/d3eba511730ad022ab42709e5700ada54b787344 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.624.8/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Ensure time sync prior to TLS handshake.
+
+### Fixed
+
+Updated app-admin/google-guest-configs to v20260928.00.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.11.
+
+### Security
+
+Upgraded dev-libs/libxml2 to v2.15.4. This fixes CVE-2026-86140.
+
+---
 ## 2026-09-28
 
 ### Change

@@ -1,5 +1,40 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-10-07
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.36.100-gke.144 is now available
+for download. To upgrade, see [Upgrade a cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.36.100-gke.144 runs on Kubernetes v1.36.4-gke.100.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.36.100-gke.144:
+
+* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities)
+  for the list of security vulnerabilities addressed in this release.
+* Fixed an issue where user clusters repeatedly alternated between `reconciling`
+  and `running` states if the management cluster had a different pod
+  density configuration than the user cluster.
+* Updated `etcd` to `v3.5.33-0-gke.3` to address security vulnerabilities
+  CVE-2026-46595 and CVE-2026-39821.
+* Fixed an issue where cluster diagnostics (`gkectl diagnose`) and pre-upgrade
+  validations failed with false-positive `datastore '<name>' not found` errors.
+  After the fix, validation correctly resolves datastores across all
+  configured vSphere data centers in split-data center architectures where
+  control plane nodes reside in the admin datacenter.
+* Fixed an issue where deleting a cluster could stall indefinitely in the
+  `terminating` state due to orphaned machine resources.
+
+---
 ## 2026-09-23
 
 ### Announcement

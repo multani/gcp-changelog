@@ -1,5 +1,21 @@
 # Google Kubernetes Engine
 
+## 2026-10-07
+
+### Feature
+
+The microVM sandbox type is now Generally Available (GA) with GKE Sandbox in
+clusters that run version 1.37.0-gke.4713000 and later. MicroVM sandboxes
+provide hardware virtualization and isolation for untrusted workloads, AI agent
+runtimes, and multi-tenant environments. GKE microVM sandboxes use Kata
+Containers and Cloud Hypervisor to provide this isolation while maintaining a
+full Linux kernel that includes standard Linux features
+
+For more information, see the
+[GKE Sandbox](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/sandbox-pods)
+documentation.
+
+---
 ## 2026-10-06
 
 ### Issue

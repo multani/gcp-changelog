@@ -1,5 +1,17 @@
 # Virtual Private Cloud
 
+## 2026-10-07
+
+### Feature
+
+Service producers can let service consumers establish more connections to a
+Private Service Connect endpoint or backend by
+[configuring the target published service (service attachment) to use an additional NAT
+IP address](https://docs.cloud.google.com/vpc/docs/manage-private-service-connect-services#update-nat-ips-per-endpoint).
+For more information, see
+[Maximum connections](https://docs.cloud.google.com/vpc/docs/about-vpc-hosted-services#max-connections).
+
+---
 ## 2026-10-05
 
 ### Feature

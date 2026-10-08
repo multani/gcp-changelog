@@ -1,6 +1,32 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2026-10-07": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for bare metal 1.36.100-gke.144 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.36.100-gke.144 runs on Kubernetes v1.36.4-gke.100.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the listing of our\npreviously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).",
+        "summary": {
+          "title": "New version of Distributed Cloud for bare metal available",
+          "summary": "The latest version of Google Distributed Cloud for bare metal (1.36.100-gke.144) is now ready for download. This release runs on Kubernetes v1.36.4-gke.100. Please note that it may take 7-14 days for this version to be available through GKE On-Prem API clients."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following changes were added in 1.36.100-gke.144:\n\n* Extended the validity period for new certificates generated for\n  GKE Identity Service from 5 years to 10 years.\n* Fixed an issue in clusters using bundled BGP load balancing where control\n  plane upgrades or configuration updates could cause up to 20 seconds of API\n  server connection failures while a control plane node restarted. After the fix, failover to a\n  healthy control plane node completes in approximately 4 seconds.\n* Fixed an issue where node drain in maintenance mode did not wait for attached storage volumes to detach.\n* Added support in `bgpadvertiser` for advertising IPv6 addresses in addition\n  to IPv4 addresses for bundled BGP control plane load balancing.",
+        "summary": {
+          "title": "GKE Identity Service Certificate Validity Extended",
+          "summary": "The latest GKE update extends the validity period for new GKE Identity Service certificates to 10 years. It also includes fixes for control plane upgrade stability, node drain behavior, and adds IPv6 support for BGP load balancing."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.36.100-gke.144:\n\n* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities)\n  for the list of security vulnerabilities addressed in this release.\n* Fixed an issue where user clusters repeatedly alternated between `reconciling`\n  and `running` states if the management cluster had a different pod\n  density configuration than the user cluster.\n* Updated `etcd` to `v3.5.33-0-gke.3` to address security vulnerabilities\n  CVE-2026-46595 and CVE-2026-39821.\n* Fixed an issue where updating control plane configurations could cause\n  transient Kubernetes API server downtime. After the fix, the update process\n  strictly verifies that each API server is healthy before restarting subsequent\n  control plane nodes.\n* Fixed an issue where deleting a cluster could stall indefinitely in the\n  `terminating` state due to orphaned machine resources.\n* Fixed an issue where worker node pool creation could stall during\n  provisioning in environments with strict network firewall policies. The node\n  pool controller no longer waits for all inventory machines to be ready before\n  declaring the node pool, eliminating a provisioning deadlock.\n* Fixed an issue where `BareMetalMachine` status conditions prematurely\n  reported nodes as ready and available during maintenance mode transitions.",
+        "summary": {
+          "title": "Release 1.36.100-gke.144 - Fixes",
+          "summary": "This release addresses several critical issues, including cluster state inconsistencies, etcd vulnerabilities, control plane update stability, and resource deletion stalls. It also resolves problems with node pool creation under strict firewall policies and inaccurate node readiness reporting during maintenance."
+        }
+      }
+    ],
     "2026-09-23": [
       {
         "kind": "Announcement",

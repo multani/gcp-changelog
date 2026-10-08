@@ -2,9 +2,82 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-09-23T00:00:00+00:00</updated>
+  <updated>2026-10-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-10-07:announcement:0</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.36.100-gke.144 is now available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.36.100-gke.144 runs on Kubernetes v1.36.4-gke.100.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the listing of our
+previously-qualified <a href="https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">storage partners</a>.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for bare metal (1.36.100-gke.144) is now ready for download. This release runs on Kubernetes v1.36.4-gke.100. Please note that it may take 7-14 days for this version to be available through GKE On-Prem API clients.</summary>
+    <title>Announcement: New version of Distributed Cloud for bare metal available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-10-07:feature:1</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following changes were added in 1.36.100-gke.144:</p>
+<ul>
+<li>Extended the validity period for new certificates generated for
+  GKE Identity Service from 5 years to 10 years.</li>
+<li>Fixed an issue in clusters using bundled BGP load balancing where control
+  plane upgrades or configuration updates could cause up to 20 seconds of API
+  server connection failures while a control plane node restarted. After the fix, failover to a
+  healthy control plane node completes in approximately 4 seconds.</li>
+<li>Fixed an issue where node drain in maintenance mode did not wait for attached storage volumes to detach.</li>
+<li>Added support in <code>bgpadvertiser</code> for advertising IPv6 addresses in addition
+  to IPv4 addresses for bundled BGP control plane load balancing.</li>
+</ul>]]></content>
+    <summary>The latest GKE update extends the validity period for new GKE Identity Service certificates to 10 years. It also includes fixes for control plane upgrade stability, node drain behavior, and adds IPv6 support for BGP load balancing.</summary>
+    <title>Feature: GKE Identity Service Certificate Validity Extended</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-10-07:fixed:2</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.36.100-gke.144:</p>
+<ul>
+<li>Link to <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>
+  for the list of security vulnerabilities addressed in this release.</li>
+<li>Fixed an issue where user clusters repeatedly alternated between <code>reconciling</code>
+  and <code>running</code> states if the management cluster had a different pod
+  density configuration than the user cluster.</li>
+<li>Updated <code>etcd</code> to <code>v3.5.33-0-gke.3</code> to address security vulnerabilities
+  CVE-2026-46595 and CVE-2026-39821.</li>
+<li>Fixed an issue where updating control plane configurations could cause
+  transient Kubernetes API server downtime. After the fix, the update process
+  strictly verifies that each API server is healthy before restarting subsequent
+  control plane nodes.</li>
+<li>Fixed an issue where deleting a cluster could stall indefinitely in the
+  <code>terminating</code> state due to orphaned machine resources.</li>
+<li>Fixed an issue where worker node pool creation could stall during
+  provisioning in environments with strict network firewall policies. The node
+  pool controller no longer waits for all inventory machines to be ready before
+  declaring the node pool, eliminating a provisioning deadlock.</li>
+<li>Fixed an issue where <code>BareMetalMachine</code> status conditions prematurely
+  reported nodes as ready and available during maintenance mode transitions.</li>
+</ul>]]></content>
+    <summary>This release addresses several critical issues, including cluster state inconsistencies, etcd vulnerabilities, control plane update stability, and resource deletion stalls. It also resolves problems with node pool creation under strict firewall policies and inaccurate node readiness reporting during maintenance.</summary>
+    <title>Fixed: Release 1.36.100-gke.144 - Fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

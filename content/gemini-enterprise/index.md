@@ -1,5 +1,26 @@
 # Gemini Enterprise
 
+## 2026-10-07
+
+### Feature
+
+**Gemini Enterprise: Pay-as-you-go usage above quota enabled for Frontline, EDU, and Emerging Market editions**
+
+You can enable pay-as-you-go usage above quota for additional Gemini Enterprise license-based editions:
+
+* **Frontline editions**: Frontline Starter and Frontline Worker
+* **EDU editions**: EDU and EDU Pro
+* **Emerging Market editions**: Standard Emerging Market, EDU Emerging, EDU Pro Emerging, and EDU Gov Emerging
+
+When you enable Pay-as-you-go usage on an invoiced Cloud Billing account with an active subscription, users can continue using features at pay-as-you-go rates after reaching their pooled quota limits.
+
+For more information, see the following resources:
+
+* [Quotas and overages](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#overages)
+* [Configure overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages)
+* [Overview of overages and spend controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview)
+
+---
 ## 2026-10-06
 
 ### Feature

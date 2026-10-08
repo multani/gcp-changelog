@@ -1,5 +1,60 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-10-07
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.36.100-gke.144 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.36.100-gke.144 runs on Kubernetes v1.36.4-gke.100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+### Feature
+
+The following changes were added in 1.36.100-gke.144:
+
+* Extended the validity period for new certificates generated for
+  GKE Identity Service from 5 years to 10 years.
+* Fixed an issue in clusters using bundled BGP load balancing where control
+  plane upgrades or configuration updates could cause up to 20 seconds of API
+  server connection failures while a control plane node restarted. After the fix, failover to a
+  healthy control plane node completes in approximately 4 seconds.
+* Fixed an issue where node drain in maintenance mode did not wait for attached storage volumes to detach.
+* Added support in `bgpadvertiser` for advertising IPv6 addresses in addition
+  to IPv4 addresses for bundled BGP control plane load balancing.
+
+### Fixed
+
+The following issues were fixed in 1.36.100-gke.144:
+
+* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities)
+  for the list of security vulnerabilities addressed in this release.
+* Fixed an issue where user clusters repeatedly alternated between `reconciling`
+  and `running` states if the management cluster had a different pod
+  density configuration than the user cluster.
+* Updated `etcd` to `v3.5.33-0-gke.3` to address security vulnerabilities
+  CVE-2026-46595 and CVE-2026-39821.
+* Fixed an issue where updating control plane configurations could cause
+  transient Kubernetes API server downtime. After the fix, the update process
+  strictly verifies that each API server is healthy before restarting subsequent
+  control plane nodes.
+* Fixed an issue where deleting a cluster could stall indefinitely in the
+  `terminating` state due to orphaned machine resources.
+* Fixed an issue where worker node pool creation could stall during
+  provisioning in environments with strict network firewall policies. The node
+  pool controller no longer waits for all inventory machines to be ready before
+  declaring the node pool, eliminating a provisioning deadlock.
+* Fixed an issue where `BareMetalMachine` status conditions prematurely
+  reported nodes as ready and available during maintenance mode transitions.
+
+---
 ## 2026-09-23
 
 ### Announcement

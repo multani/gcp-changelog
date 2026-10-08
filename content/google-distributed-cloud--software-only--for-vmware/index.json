@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-10-07": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.36.100-gke.144 is now available\nfor download. To upgrade, see [Upgrade a cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.36.100-gke.144 runs on Kubernetes v1.36.4-gke.100.\n\nIf you use a third-party storage vendor, check the listing of our\npreviously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software release available",
+          "summary": "Google Distributed Cloud for VMware 1.36.100-gke.144 is now available for download. This release runs on Kubernetes v1.36.4-gke.100. Please consult the upgrade documentation for instructions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.36.100-gke.144:\n\n* Link to [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities)\n  for the list of security vulnerabilities addressed in this release.\n* Fixed an issue where user clusters repeatedly alternated between `reconciling`\n  and `running` states if the management cluster had a different pod\n  density configuration than the user cluster.\n* Updated `etcd` to `v3.5.33-0-gke.3` to address security vulnerabilities\n  CVE-2026-46595 and CVE-2026-39821.\n* Fixed an issue where cluster diagnostics (`gkectl diagnose`) and pre-upgrade\n  validations failed with false-positive `datastore '<name>' not found` errors.\n  After the fix, validation correctly resolves datastores across all\n  configured vSphere data centers in split-data center architectures where\n  control plane nodes reside in the admin datacenter.\n* Fixed an issue where deleting a cluster could stall indefinitely in the\n  `terminating` state due to orphaned machine resources.",
+        "summary": {
+          "title": "Bug Fixes in 1.36.100-gke.144",
+          "summary": "This release addresses several critical issues, including cluster state inconsistencies, etcd vulnerabilities, false-positive datastore errors during diagnostics, and indefinite stalling during cluster deletion. These fixes enhance the stability and security of your deployments."
+        }
+      }
+    ],
     "2026-09-23": [
       {
         "kind": "Announcement",

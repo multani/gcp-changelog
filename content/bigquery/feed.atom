@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: BigQuery</title>
   <subtitle>Changelog for Google Cloud product: BigQuery</subtitle>
-  <updated>2026-10-06T00:00:00+00:00</updated>
+  <updated>2026-10-07T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:bigquery</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/bigquery/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-10-07:feature:0</id>
+    <published>2026-10-07T00:00:00+00:00</published>
+    <updated>2026-10-07T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>BigQuery offers <a href="https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/"><code>TimesFM 3.0</code></a>,
+a built-in time series forecasting model that implements Google Research's open
+source TimesFM model. You can use <code>TimesFM 3.0</code> with the following functions:</p>
+<ul>
+<li>Use
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast"><code>AI.FORECAST</code></a>
+  to perform time series forecasting. In addition to univariate forecasting,
+  you can now perform multivariate forecasting that predicts values for
+  multiple time series based on historical values and additional covariates.</li>
+<li>Use
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate"><code>AI.EVALUATE</code></a>
+  to perform univariate time series evaluation.</li>
+<li>Use
+  <a href="https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies"><code>AI.DETECT_ANOMALIES</code></a>
+  to perform univariate time series anomaly detection.</li>
+</ul>
+<p>To try using the <code>TimesFM 3.0</code> model for multivariate forecasting with the
+<code>AI.FORECAST</code> function, see
+<a href="https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-single-time-series-forecasting-tutorial">Forecast a single time series with a TimesFM multivariate model</a>
+and
+<a href="https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-multi-time-series-forecasting-tutorial">Forecast multiple time series with a TimesFM multivariate model</a>.</p>
+<p>The <code>TimesFM 3.0</code> model is in <a href="https://cloud.google.com/products/#product-launch-stages">Preview</a>.</p>]]></content>
+    <summary>BigQuery now includes TimesFM 3.0, a powerful zero-shot foundation model for multivariate time series forecasting. This feature enhances forecasting capabilities with new AI functions for prediction, evaluation, and anomaly detection.</summary>
+    <title>Feature: New Time Series Forecasting Model Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

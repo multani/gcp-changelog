@@ -4,6 +4,14 @@
     "2026-10-08": [
       {
         "kind": "Feature",
+        "content": "The following table types now support\n[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default:\n\n* [Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables)\n  and [Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) in\n  BigQuery\n* [Apache Iceberg tables managed by the Lakehouse runtime catalog](https://docs.cloud.google.com/lakehouse/docs/manage-tables)\n\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
+        "summary": {
+          "title": "Flexible Column Names Now Supported for Iceberg Tables",
+          "summary": "Iceberg tables in BigQuery, including external and managed tables, now support flexible column names by default. This also applies to Apache Iceberg tables managed by the Lakehouse runtime catalog. This feature is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "You can use Gemini assistance in the BigQuery Studio SQL editor through an\ninline action button when you select text. For more information, see\n[Write SQL with Gemini assistance](https://docs.cloud.google.com/bigquery/docs/write-sql-gemini).\n\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
         "summary": {
           "title": "Gemini assistance in BigQuery Studio",
@@ -32,14 +40,6 @@
       }
     ],
     "2026-10-05": [
-      {
-        "kind": "Feature",
-        "content": "The following table types now support\n[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default:\n\n* [Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables)\n  and [Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) in\n  BigQuery\n* [Apache Iceberg tables managed by the Lakehouse runtime catalog](https://docs.cloud.google.com/lakehouse/docs/manage-tables)\n\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).",
-        "summary": {
-          "title": "Flexible Column Names Now Supported for Iceberg Tables",
-          "summary": "Iceberg tables, including external and managed tables in BigQuery and those managed by the Lakehouse runtime catalog, now support flexible column names by default. This enhancement simplifies schema management for your data lakehouse."
-        }
-      },
       {
         "kind": "Feature",
         "content": "The `gemini-embedding-2` model works well for embedding long strings, including\nmultilingual and unstructured data. It supports a mix of text, images, audio,\nvideo, and PDF files. You can use this model in the\n[`AI.EMBED`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-embed),\n[`AI.SIMILARITY`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-similarity),\nand\n[`AI.GENERATE_EMBEDDING`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-generate-embedding)\nfunctions. This model is\n[generally available](https://cloud.google.com/products#product-launch-stages).",
@@ -184,6 +184,14 @@
       }
     ],
     "2026-09-21": [
+      {
+        "kind": "Feature",
+        "content": "*Lakehouse* now supports Workday Data Lake as a remote catalog provider\nfor cross-cloud data access\n([Preview](https://cloud.google.com/products#product-launch-stages)). You can\nconfigure federated catalogs to query data stored in Workday Data Lake\ndirectly from Google Cloud using BigQuery or Apache Spark without\nmigrating data or building complex ETL pipelines.\n\nFor more information, see [Set up cross-cloud connection for Workday Data\nLake](https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-connection-workday).",
+        "summary": {
+          "title": "Lakehouse Connects to Workday Data Lake",
+          "summary": "Lakehouse now supports Workday Data Lake as a remote catalog provider, enabling cross-cloud data access. You can query data stored in Workday Data Lake directly from Google Cloud using BigQuery or Apache Spark without migrating data or building complex ETL pipelines."
+        }
+      },
       {
         "kind": "Feature",
         "content": "The **Query results** pane in the BigQuery Studio query editor lets you\n[view a short history of recent runs for a query](https://docs.cloud.google.com/bigquery/docs/managing-jobs#view-job),\nincluding [multi-statement queries](https://docs.cloud.google.com/bigquery/docs/multi-statement-queries#view_multi_statement_query_results),\nwithout having to navigate to the **Job history** tab.\nThis feature is [generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA).",

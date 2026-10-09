@@ -12,6 +12,25 @@
     <id>urn:github:multani:gcp-changelog:bigquery:2026-10-08:feature:0</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following table types now support
+<a href="https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names">flexible column names</a> by default:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables">Iceberg external tables</a>
+  and <a href="https://docs.cloud.google.com/bigquery/docs/iceberg-tables">Iceberg managed tables</a> in
+  BigQuery</li>
+<li><a href="https://docs.cloud.google.com/lakehouse/docs/manage-tables">Apache Iceberg tables managed by the Lakehouse runtime catalog</a></li>
+</ul>
+<p>This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
+    <summary>Iceberg tables in BigQuery, including external and managed tables, now support flexible column names by default. This also applies to Apache Iceberg tables managed by the Lakehouse runtime catalog. This feature is now generally available.</summary>
+    <title>Feature: Flexible Column Names Now Supported for Iceberg Tables</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-10-08:feature:1</id>
+    <published>2026-10-08T00:00:00+00:00</published>
+    <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can use Gemini assistance in the BigQuery Studio SQL editor through an
 inline action button when you select text. For more information, see
 <a href="https://docs.cloud.google.com/bigquery/docs/write-sql-gemini">Write SQL with Gemini assistance</a>.</p>
@@ -74,25 +93,6 @@ This feature is in
       <name>Google Cloud</name>
     </author>
     <id>urn:github:multani:gcp-changelog:bigquery:2026-10-05:feature:0</id>
-    <published>2026-10-05T00:00:00+00:00</published>
-    <updated>2026-10-05T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>The following table types now support
-<a href="https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names">flexible column names</a> by default:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables">Iceberg external tables</a>
-  and <a href="https://docs.cloud.google.com/bigquery/docs/iceberg-tables">Iceberg managed tables</a> in
-  BigQuery</li>
-<li><a href="https://docs.cloud.google.com/lakehouse/docs/manage-tables">Apache Iceberg tables managed by the Lakehouse runtime catalog</a></li>
-</ul>
-<p>This feature is <a href="https://cloud.google.com/products#product-launch-stages">generally available</a> (GA).</p>]]></content>
-    <summary>Iceberg tables, including external and managed tables in BigQuery and those managed by the Lakehouse runtime catalog, now support flexible column names by default. This enhancement simplifies schema management for your data lakehouse.</summary>
-    <title>Feature: Flexible Column Names Now Supported for Iceberg Tables</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2026-10-05:feature:1</id>
     <published>2026-10-05T00:00:00+00:00</published>
     <updated>2026-10-05T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <code>gemini-embedding-2</code> model works well for embedding long strings, including
@@ -347,6 +347,24 @@ configure OAuth client credentials.</p>
     <id>urn:github:multani:gcp-changelog:bigquery:2026-09-21:feature:0</id>
     <published>2026-09-21T00:00:00+00:00</published>
     <updated>2026-09-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><em>Lakehouse</em> now supports Workday Data Lake as a remote catalog provider
+for cross-cloud data access
+(<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>). You can
+configure federated catalogs to query data stored in Workday Data Lake
+directly from Google Cloud using BigQuery or Apache Spark without
+migrating data or building complex ETL pipelines.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-connection-workday">Set up cross-cloud connection for Workday Data
+Lake</a>.</p>]]></content>
+    <summary>Lakehouse now supports Workday Data Lake as a remote catalog provider, enabling cross-cloud data access. You can query data stored in Workday Data Lake directly from Google Cloud using BigQuery or Apache Spark without migrating data or building complex ETL pipelines.</summary>
+    <title>Feature: Lakehouse Connects to Workday Data Lake</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-09-21:feature:1</id>
+    <published>2026-09-21T00:00:00+00:00</published>
+    <updated>2026-09-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <strong>Query results</strong> pane in the BigQuery Studio query editor lets you
 <a href="https://docs.cloud.google.com/bigquery/docs/managing-jobs#view-job">view a short history of recent runs for a query</a>,
 including <a href="https://docs.cloud.google.com/bigquery/docs/multi-statement-queries#view_multi_statement_query_results">multi-statement queries</a>,
@@ -360,7 +378,7 @@ This feature is <a href="https://cloud.google.com/products/#product-launch-stage
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:bigquery:2026-09-21:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:bigquery:2026-09-21:feature:2</id>
     <published>2026-09-21T00:00:00+00:00</published>
     <updated>2026-09-21T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>BigQuery <a href="https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#locations">generative AI functions</a>

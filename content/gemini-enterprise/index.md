@@ -1,5 +1,39 @@
 # Gemini Enterprise
 
+## 2026-10-08
+
+### Feature
+
+**Gemini Enterprise: Anthropic Claude Opus 5.5 and Claude Sonnet 5.5 in AI
+developer tools**
+
+Administrators can enable Anthropic Claude Opus 5.5 (`claude-opus-5-5`) and
+Anthropic Claude Sonnet 5.5 (`claude-sonnet-5-5`) for AI developer tools
+(Antigravity 2.0, Antigravity CLI, and Antigravity for IDEs). Third-party
+models are turned off by default:
+
+* **In-console Terms of Service consent flow**: Administrators can opt in to
+  Claude Opus 5.5 and Claude Sonnet 5.5 directly in **Gemini Enterprise >
+  Settings > AI developer tools > Antigravity authorized models** in the
+  Google Cloud console without a separate Anthropic account or onboarding.
+  For more information, see [Configure AI developer tools
+  settings](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-settings#enable-third-party-models).
+* **Location availability**: Third-party model inference is available in the
+  `global`, `us`, and `eu` locations (in-country regions aren't supported).
+  For a list of countries and regions that can access the model, see
+  [Anthropic's Supported countries and
+  regions](https://www.anthropic.com/supported-countries).
+* **Consumption billing**: Third-party model usage is billed as consumption on
+  your Cloud Billing account and counts toward your project's spend cap,
+  which covers all models. Overages must be turned on before you can enable a
+  third-party model. For more information, see [Configure
+  overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages).
+* **Thinking levels**: Developers sign in with their existing Gemini
+  Enterprise license and select Claude Opus 5.5 or Claude Sonnet 5.5 in the
+  model picker at a thinking level of Low, Medium, High, or Max (for example,
+  Claude Opus 5.5 (High)). Medium is the default.
+
+---
 ## 2026-10-07
 
 ### Feature

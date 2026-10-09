@@ -4,6 +4,18 @@
 
 ### Feature
 
+The following table types now support
+[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default:
+
+* [Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables)
+  and [Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) in
+  BigQuery
+* [Apache Iceberg tables managed by the Lakehouse runtime catalog](https://docs.cloud.google.com/lakehouse/docs/manage-tables)
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+### Feature
+
 You can use Gemini assistance in the BigQuery Studio SQL editor through an
 inline action button when you select text. For more information, see
 [Write SQL with Gemini assistance](https://docs.cloud.google.com/bigquery/docs/write-sql-gemini).
@@ -56,18 +68,6 @@ This feature is in
 
 ---
 ## 2026-10-05
-
-### Feature
-
-The following table types now support
-[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default:
-
-* [Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables)
-  and [Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) in
-  BigQuery
-* [Apache Iceberg tables managed by the Lakehouse runtime catalog](https://docs.cloud.google.com/lakehouse/docs/manage-tables)
-
-This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 
@@ -235,6 +235,18 @@ These features are in
 
 ---
 ## 2026-09-21
+
+### Feature
+
+*Lakehouse* now supports Workday Data Lake as a remote catalog provider
+for cross-cloud data access
+([Preview](https://cloud.google.com/products#product-launch-stages)). You can
+configure federated catalogs to query data stored in Workday Data Lake
+directly from Google Cloud using BigQuery or Apache Spark without
+migrating data or building complex ETL pipelines.
+
+For more information, see [Set up cross-cloud connection for Workday Data
+Lake](https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-connection-workday).
 
 ### Feature
 

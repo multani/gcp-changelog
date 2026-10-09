@@ -2952,120 +2952,40 @@
 
 
 <h1 id="google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</h1>
-<h2 id="2026-10-02">2026-10-02</h2>
+<h2 id="2026-10-08">2026-10-08</h2>
 <h3 id="announcement">Announcement</h3>
+<p><strong>Google Cloud CCaaS 6.19</strong></p>
+<p>We've released version 6.19 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>
+<h3 id="fixed">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where agents could be assigned more concurrent chats than
+  their configured maximum limit when multiple chat offers arrived almost
+  simultaneously.</li>
+<li>Fixed an issue where calls were unevenly distributed among available agents
+  on skills-based queues.</li>
+<li>Fixed an issue where supervisor-initiated sign-outs silently discarded
+  mandatory interaction dispositions during an agent's wrap-up period.</li>
+<li>Fixed an issue where an agent's corporate email address and internal ID were
+  exposed in the browser's network metadata during a virtual agent to human
+  escalation.</li>
+<li>Fixed an issue where voice calls were incorrectly routed back to the virtual
+  agent queue instead of the intended destination.</li>
+<li>Fixed an issue where inbound callers experienced a 2-second delay when
+  connecting to an agent.</li>
+</ul>
+<hr />
+<h2 id="2026-10-02">2026-10-02</h2>
+<h3 id="announcement_1">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.17</strong></p>
 <p>We've released version 6.17 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
 <h3 id="feature">Feature</h3>
-<p><strong>Warm transfers auto-resume</strong></p>
-<p>When an agent performs a warm transfer, the caller is now automatically taken
-off hold as soon as the transferring agent leaves the call, establishing
-two-way audio between the receiving agent and the caller without manual action.
-The caller stays on hold during the consultation between agents so that their
-conversation remains private. This applies to warm transfers routed through a
-queue and warm transfers sent directly to a specific agent. This change
-eliminates the silence that previously occurred when the caller remained on
-hold after the handoff.</p>
-<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#warm-transfer">Warm
-transfers</a>.</p>
-<h3 id="fixed">Fixed</h3>
-<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue where the <strong>Call ended</strong> card in the session data feed
-  incorrectly displayed a call length of <code>00:00</code> despite the actual duration
-  being recorded correctly.</li>
-<li>Fixed an issue where calls remained stuck on the live dashboard after a
-  caller hung up during the transition from a virtual agent to a queue.</li>
-<li>Fixed an issue where the <strong>Virtual Agent Session Variables</strong> section was
-  missing from the call adapter after a successful credit card tokenization
-  handback.</li>
-<li>Fixed an issue where agents belonging to multiple teams were incorrectly
-  granted access to all communication channels regardless of their team's
-  specific availability settings.</li>
-<li>Fixed an issue where emails containing specific formatting displayed a
-  full-screen loading screen that prevented agents from viewing the message
-  or interacting with the agent desktop.</li>
-<li>Fixed an issue where the CCaaS portal displayed an incorrect <strong>Off</strong> or
-  <strong>Not Configured</strong> status for Agent Assist after navigating
-  between queues or refreshing the page.</li>
-<li>Added a checkbox for Salesforce CRM integrations that, when selected,
-  ignores ticket owner updates when an agent is assigned.</li>
-<li>Fixed an issue where the automatic wrap-up timer didn't release agents when
-  notes or disposition codes were configured as optional.</li>
-<li>Fixed an issue where agents remained stuck in a busy <strong>Wrap-up</strong> status
-  after the automatic wrap-up timer expired if they preselected <strong>Wrap-up</strong>
-  as their next status.</li>
-<li>Fixed an issue where calls escalated from a virtual agent to an available
-  human agent were incorrectly deflected to the original queue's voicemail
-  upon reaching a timeout.</li>
-<li>Fixed an issue where callers were left on hold indefinitely during cold
-  transfers to a direct agent extension when over-capacity deflection was
-  enabled.</li>
-<li>Fixed an issue where virtual agent interaction outcomes weren't fully
-  mapped, leading to sessions being incorrectly categorized as "Undefined" or
-  "Unknown".</li>
-<li>Fixed an issue where Agent Assist message analysis background jobs
-  failed and retried excessively for certain profiles.</li>
-<li>Fixed an issue where transcript message updates caused excessive background
-  processing load.</li>
-<li>Fixed an issue where the microphone permission error was mistranslated as
-  "Microphone désactivé!" instead of "Microphone turned off!" for agents using
-  French (Canada) localization in the agent adapter.</li>
-<li>Fixed an issue where calls meeting over-capacity deflection criteria didn't
-  reach their destination queue, leaving callers connected without a route.</li>
-<li>Fixed an issue where queue duration metrics weren't captured for scheduled
-  callbacks escalating from a virtual agent to a human agent.</li>
-<li>Fixed an issue where virtual agent conversations remained open after a call
-  ended due to missing wrap-up events.</li>
-<li>Fixed an issue where virtual agent voice sessions remained active after a
-  caller disconnected, resulting in delayed error logs appearing 10 to 15
-  minutes after the call ended.</li>
-<li>Fixed an issue where agents were incorrectly marked as <strong>Unresponsive</strong>
-  because call offers were sent before their browser finished transitioning
-  from a previous call.</li>
-</ul>
-<hr />
-<h2 id="2026-09-30">2026-09-30</h2>
-<h3 id="announcement_1">Announcement</h3>
-<p><strong>Headless mobile SDK</strong></p>
-<p>The headless mobile SDK, for Android and iOS, is now available. With this SDK,
-you can embed the capabilities of Google Cloud CCaaS into your mobile app
-while retaining full control over the UI. The headless mobile SDK supports calls
-(including scheduled calls), chats, and email.</p>
-<p>The following is a comparison of the headless mobile SDK and the mobile SDK v2.</p>
-<p>Headless mobile SDK:</p>
-<ul>
-<li>Google Cloud CCaaS provides the core SDK engine: sessions, routing,
-  channel logic, and more.</li>
-<li>You build the UI using your own design and components.</li>
-<li>Best for organizations that need brand consistency and full control over the
-  look and feel of their mobile app.</li>
-</ul>
-<p>Mobile SDK v2:</p>
-<ul>
-<li>Google Cloud CCaaS provides a pre-built UI with customization options.</li>
-<li>Best for organizations that want faster product deployment with less design
-  and engineering effort.</li>
-</ul>
-<p>For more information, see the following:</p>
-<ul>
-<li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-mobile-sdk-ios-getting-started">Headless Mobile SDK v3 for iOS: Get
-  started</a></li>
-<li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-mobile-sdk-android-getting-started">Headless Mobile SDK v3 for Android: Get
-  started</a></li>
-</ul>
-<hr />
-<h2 id="2026-09-29">2026-09-29</h2>
-<h3 id="announcement_2">Announcement</h3>
-<p><strong>Google Cloud CCaaS prerelease notes 6.17</strong></p>
-<p>Here are the pre-release notes for what we expect to be the next version
-of Google Cloud CCaaS. When we release this version, we expect the new
-capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.17.</p>
-<h3 id="feature_1">Feature</h3>
 <p><strong>Warm transfers auto-resume</strong></p>
 <p>When an agent performs a warm transfer, the caller is now automatically taken
 off hold as soon as the transferring agent leaves the call, establishing
@@ -3134,8 +3054,114 @@ transfers</a>.</p>
   from a previous call.</li>
 </ul>
 <hr />
-<h2 id="2026-09-25">2026-09-25</h2>
+<h2 id="2026-09-30">2026-09-30</h2>
+<h3 id="announcement_2">Announcement</h3>
+<p><strong>Headless mobile SDK</strong></p>
+<p>The headless mobile SDK, for Android and iOS, is now available. With this SDK,
+you can embed the capabilities of Google Cloud CCaaS into your mobile app
+while retaining full control over the UI. The headless mobile SDK supports calls
+(including scheduled calls), chats, and email.</p>
+<p>The following is a comparison of the headless mobile SDK and the mobile SDK v2.</p>
+<p>Headless mobile SDK:</p>
+<ul>
+<li>Google Cloud CCaaS provides the core SDK engine: sessions, routing,
+  channel logic, and more.</li>
+<li>You build the UI using your own design and components.</li>
+<li>Best for organizations that need brand consistency and full control over the
+  look and feel of their mobile app.</li>
+</ul>
+<p>Mobile SDK v2:</p>
+<ul>
+<li>Google Cloud CCaaS provides a pre-built UI with customization options.</li>
+<li>Best for organizations that want faster product deployment with less design
+  and engineering effort.</li>
+</ul>
+<p>For more information, see the following:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-mobile-sdk-ios-getting-started">Headless Mobile SDK v3 for iOS: Get
+  started</a></li>
+<li><a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/headless-mobile-sdk-android-getting-started">Headless Mobile SDK v3 for Android: Get
+  started</a></li>
+</ul>
+<hr />
+<h2 id="2026-09-29">2026-09-29</h2>
 <h3 id="announcement_3">Announcement</h3>
+<p><strong>Google Cloud CCaaS prerelease notes 6.17</strong></p>
+<p>Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>
+<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.17.</p>
+<h3 id="feature_1">Feature</h3>
+<p><strong>Warm transfers auto-resume</strong></p>
+<p>When an agent performs a warm transfer, the caller is now automatically taken
+off hold as soon as the transferring agent leaves the call, establishing
+two-way audio between the receiving agent and the caller without manual action.
+The caller stays on hold during the consultation between agents so that their
+conversation remains private. This applies to warm transfers routed through a
+queue and warm transfers sent directly to a specific agent. This change
+eliminates the silence that previously occurred when the caller remained on
+hold after the handoff.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-adapter-transfer#warm-transfer">Warm
+transfers</a>.</p>
+<h3 id="fixed_2">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where the <strong>Call ended</strong> card in the session data feed
+  incorrectly displayed a call length of <code>00:00</code> despite the actual duration
+  being recorded correctly.</li>
+<li>Fixed an issue where calls remained stuck on the live dashboard after a
+  caller hung up during the transition from a virtual agent to a queue.</li>
+<li>Fixed an issue where the <strong>Virtual Agent Session Variables</strong> section was
+  missing from the call adapter after a successful credit card tokenization
+  handback.</li>
+<li>Fixed an issue where agents belonging to multiple teams were incorrectly
+  granted access to all communication channels regardless of their team's
+  specific availability settings.</li>
+<li>Fixed an issue where emails containing specific formatting displayed a
+  full-screen loading screen that prevented agents from viewing the message
+  or interacting with the agent desktop.</li>
+<li>Fixed an issue where the CCaaS portal displayed an incorrect <strong>Off</strong> or
+  <strong>Not Configured</strong> status for Agent Assist after navigating
+  between queues or refreshing the page.</li>
+<li>Added a checkbox for Salesforce CRM integrations that, when selected,
+  ignores ticket owner updates when an agent is assigned.</li>
+<li>Fixed an issue where the automatic wrap-up timer didn't release agents when
+  notes or disposition codes were configured as optional.</li>
+<li>Fixed an issue where agents remained stuck in a busy <strong>Wrap-up</strong> status
+  after the automatic wrap-up timer expired if they preselected <strong>Wrap-up</strong>
+  as their next status.</li>
+<li>Fixed an issue where calls escalated from a virtual agent to an available
+  human agent were incorrectly deflected to the original queue's voicemail
+  upon reaching a timeout.</li>
+<li>Fixed an issue where callers were left on hold indefinitely during cold
+  transfers to a direct agent extension when over-capacity deflection was
+  enabled.</li>
+<li>Fixed an issue where virtual agent interaction outcomes weren't fully
+  mapped, leading to sessions being incorrectly categorized as "Undefined" or
+  "Unknown".</li>
+<li>Fixed an issue where Agent Assist message analysis background jobs
+  failed and retried excessively for certain profiles.</li>
+<li>Fixed an issue where transcript message updates caused excessive background
+  processing load.</li>
+<li>Fixed an issue where the microphone permission error was mistranslated as
+  "Microphone désactivé!" instead of "Microphone turned off!" for agents using
+  French (Canada) localization in the agent adapter.</li>
+<li>Fixed an issue where calls meeting over-capacity deflection criteria didn't
+  reach their destination queue, leaving callers connected without a route.</li>
+<li>Fixed an issue where queue duration metrics weren't captured for scheduled
+  callbacks escalating from a virtual agent to a human agent.</li>
+<li>Fixed an issue where virtual agent conversations remained open after a call
+  ended due to missing wrap-up events.</li>
+<li>Fixed an issue where virtual agent voice sessions remained active after a
+  caller disconnected, resulting in delayed error logs appearing 10 to 15
+  minutes after the call ended.</li>
+<li>Fixed an issue where agents were incorrectly marked as <strong>Unresponsive</strong>
+  because call offers were sent before their browser finished transitioning
+  from a previous call.</li>
+</ul>
+<hr />
+<h2 id="2026-09-25">2026-09-25</h2>
+<h3 id="announcement_4">Announcement</h3>
 <p><strong>Advanced reporting dashboards 6.14</strong></p>
 <p>We've released version 6.14 of the advanced reporting dashboards.</p>
 <h3 id="feature_2">Feature</h3>
@@ -3150,7 +3176,7 @@ overdue flag, and a direct CRM link to the scheduled call. With these tables,
 you can view your full schedule of pending callbacks to help you plan staffing.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-real-time-queue-monitor">Queue monitoring
 dashboards</a>.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue that caused delays when loading and refreshing real-time
@@ -3219,7 +3245,7 @@ dashboards</a>.</p>
   accommodate these changes.</p>
 <hr />
 <h2 id="2026-09-23">2026-09-23</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.15</strong></p>
 <p>We've released version 6.15 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -3233,74 +3259,6 @@ of the teams that they belong to.</p>
 section of the <strong>Edit User</strong> dialog.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/add-edit-user#remove-user-from-teams">Remove a user from
 teams</a>.</p>
-<h3 id="fixed_3">Fixed</h3>
-<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue that led to increased startup latency and errors for mobile
-  and web chat sessions.</li>
-<li>Fixed an issue where agents were incorrectly demoted to an <strong>Unresponsive</strong>
-  status and removed from the routing pool despite successfully receiving call
-  offers.</li>
-<li>Fixed an issue where dialed numbers on Twilio BYOC SIP inbound calls were
-  incorrectly formatted with extra digits from the SIP host and port.</li>
-<li>Fixed an issue that prevented chat transcripts from being generated and
-  delivered for sessions containing structured message content.</li>
-<li>Fixed an issue where the call adapter incorrectly showed a call as on hold
-  after a carrier failed to process the hold request, leaving the audio
-  channel open between the agent and the customer.</li>
-<li>Fixed an issue where a failed media download caused the service to restart
-  unexpectedly.</li>
-<li>Fixed an issue that caused queue-specific wrap-up and disposition settings
-  to reset to global defaults after changing unrelated fields on the <strong>Queue
-  Settings</strong> page.</li>
-<li>Fixed an issue where machine translation didn't activate for chats that were
-  transferred into a non-English language queue if the session originated with
-  a virtual agent.</li>
-<li>Fixed an issue where generative knowledge assist answers that contain long
-  URLs were cut off at the edge of the panel.</li>
-<li>Fixed an issue where queued calls were neither routed to available agents
-  nor offered a callback.</li>
-<li>Fixed an issue where voicemails were automatically dismissed and marked as
-  read if a playback error occurred.</li>
-<li>Fixed an issue where agent call recordings were missing or attached to the
-  wrong call record after a virtual agent deflection.</li>
-<li>Fixed an issue where unanswered DCR calls that were routed using Nexmo
-  disconnected the caller instead of requeuing the call.</li>
-<li>Fixed an issue that prevented virtual agents from transferring calls to a
-  human-agent queue.</li>
-<li>Fixed an issue where calls lacking a carrier hangup reason were incorrectly
-  categorized as "customer abandoned", even when the call center didn't answer
-  the call.</li>
-<li>Fixed an issue where the call event API payload for DCR calls contained
-  incorrect virtual agent parameters.</li>
-<li>Fixed an issue where custom data from chat interactions wasn't recorded in
-  Salesforce records.</li>
-<li>Fixed an issue where Mexico time zones were incorrectly applying daylight
-  saving time adjustments.</li>
-<li>Fixed an issue where agents and end-users were joined to separate
-  conferences, preventing audio communication between them.</li>
-<li>Fixed an issue where call recording deletion tasks entered an endless loop
-  if the provider didn't return a successful response.</li>
-<li>Fixed an issue where IVR voice calls didn't send custom wrap-up events to
-  Dialogflow CX under certain configurations.</li>
-<li>Fixed an issue where a trailing slash in the host URL caused the web SDK to
-  unexpectedly re-enable features that had been previously disabled for
-  specific deployments.</li>
-</ul>
-<hr />
-<h2 id="2026-09-21">2026-09-21</h2>
-<h3 id="announcement_5">Announcement</h3>
-<p><strong>Google Cloud CCaaS prerelease notes 6.15</strong></p>
-<p>Here are the pre-release notes for what we expect to be the next version
-of Google Cloud CCaaS. When we release this version, we expect the new
-capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.15.</p>
-<h3 id="feature_4">Feature</h3>
-<p><strong>Remove a user from all teams at once</strong></p>
-<p>Using the new <strong>Remove from all teams</strong> button, you can remove a user from all
-of the teams that they belong to.</p>
-<p>Administrators: There's a new <strong>Remove from all teams</strong> button in the <strong>Teams</strong>
-section of the <strong>Edit User</strong> dialog.</p>
 <h3 id="fixed_4">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
@@ -3356,14 +3314,82 @@ section of the <strong>Edit User</strong> dialog.</p>
   specific deployments.</li>
 </ul>
 <hr />
-<h2 id="2026-09-18">2026-09-18</h2>
+<h2 id="2026-09-21">2026-09-21</h2>
 <h3 id="announcement_6">Announcement</h3>
+<p><strong>Google Cloud CCaaS prerelease notes 6.15</strong></p>
+<p>Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>
+<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.15.</p>
+<h3 id="feature_4">Feature</h3>
+<p><strong>Remove a user from all teams at once</strong></p>
+<p>Using the new <strong>Remove from all teams</strong> button, you can remove a user from all
+of the teams that they belong to.</p>
+<p>Administrators: There's a new <strong>Remove from all teams</strong> button in the <strong>Teams</strong>
+section of the <strong>Edit User</strong> dialog.</p>
+<h3 id="fixed_5">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue that led to increased startup latency and errors for mobile
+  and web chat sessions.</li>
+<li>Fixed an issue where agents were incorrectly demoted to an <strong>Unresponsive</strong>
+  status and removed from the routing pool despite successfully receiving call
+  offers.</li>
+<li>Fixed an issue where dialed numbers on Twilio BYOC SIP inbound calls were
+  incorrectly formatted with extra digits from the SIP host and port.</li>
+<li>Fixed an issue that prevented chat transcripts from being generated and
+  delivered for sessions containing structured message content.</li>
+<li>Fixed an issue where the call adapter incorrectly showed a call as on hold
+  after a carrier failed to process the hold request, leaving the audio
+  channel open between the agent and the customer.</li>
+<li>Fixed an issue where a failed media download caused the service to restart
+  unexpectedly.</li>
+<li>Fixed an issue that caused queue-specific wrap-up and disposition settings
+  to reset to global defaults after changing unrelated fields on the <strong>Queue
+  Settings</strong> page.</li>
+<li>Fixed an issue where machine translation didn't activate for chats that were
+  transferred into a non-English language queue if the session originated with
+  a virtual agent.</li>
+<li>Fixed an issue where generative knowledge assist answers that contain long
+  URLs were cut off at the edge of the panel.</li>
+<li>Fixed an issue where queued calls were neither routed to available agents
+  nor offered a callback.</li>
+<li>Fixed an issue where voicemails were automatically dismissed and marked as
+  read if a playback error occurred.</li>
+<li>Fixed an issue where agent call recordings were missing or attached to the
+  wrong call record after a virtual agent deflection.</li>
+<li>Fixed an issue where unanswered DCR calls that were routed using Nexmo
+  disconnected the caller instead of requeuing the call.</li>
+<li>Fixed an issue that prevented virtual agents from transferring calls to a
+  human-agent queue.</li>
+<li>Fixed an issue where calls lacking a carrier hangup reason were incorrectly
+  categorized as "customer abandoned", even when the call center didn't answer
+  the call.</li>
+<li>Fixed an issue where the call event API payload for DCR calls contained
+  incorrect virtual agent parameters.</li>
+<li>Fixed an issue where custom data from chat interactions wasn't recorded in
+  Salesforce records.</li>
+<li>Fixed an issue where Mexico time zones were incorrectly applying daylight
+  saving time adjustments.</li>
+<li>Fixed an issue where agents and end-users were joined to separate
+  conferences, preventing audio communication between them.</li>
+<li>Fixed an issue where call recording deletion tasks entered an endless loop
+  if the provider didn't return a successful response.</li>
+<li>Fixed an issue where IVR voice calls didn't send custom wrap-up events to
+  Dialogflow CX under certain configurations.</li>
+<li>Fixed an issue where a trailing slash in the host URL caused the web SDK to
+  unexpectedly re-enable features that had been previously disabled for
+  specific deployments.</li>
+</ul>
+<hr />
+<h2 id="2026-09-18">2026-09-18</h2>
+<h3 id="announcement_7">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.13</strong></p>
 <p>We've released version 6.13 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where session metadata and data feed files were missing from
@@ -3454,7 +3480,7 @@ schedules</a>.</p>
 <li>Fixed a web SDK issue where screen readers couldn't identify the purpose of
   the <strong>Text size</strong> options for the chat screen.</li>
 </ul>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p><strong>Advanced reporting dashboards 6.4</strong></p>
 <p>We've released version 6.4 of the advanced reporting dashboards.</p>
 <h3 id="feature_5">Feature</h3>
@@ -3520,7 +3546,7 @@ CCAI Platform portal, these dashboards and Explores display in that language.</p
 <blockquote>
 <p>Change Language** in the CCAI Platform portal.</p>
 </blockquote>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where the formatting of numeric values was inconsistent
@@ -3576,13 +3602,13 @@ CCAI Platform portal, these dashboards and Explores display in that language.</p
 </ul>
 <hr />
 <h2 id="2026-09-16">2026-09-16</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes 6.13</strong></p>
 <p>Here are the pre-release notes for what we expect to be the next version
 of Google Cloud CCaaS. When we release this version, we expect the new
 capabilities to be as shown here.</p>
 <p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.13.</p>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where session metadata and data feed files were missing from
@@ -3675,7 +3701,7 @@ capabilities to be as shown here.</p>
 </ul>
 <hr />
 <h2 id="2026-09-15">2026-09-15</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p><strong>Mobile SDKs 2.16.2</strong></p>
 <p>We've released version 2.16.2 of the mobile SDKs.</p>
 <h3 id="feature_10">Feature</h3>
@@ -3698,7 +3724,7 @@ time lost when agents wait for end-users who have abandoned a chat.</p>
 <p><strong>New "is typing" indicator in the Mobile SDKs</strong></p>
 <p>The mobile SDKs now display an "is typing" indicator to the end-user when an
 agent is typing.</p>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>We've addressed the following issues.</p>
 <p>Android and iOS SDKs:</p>
 <ul>
@@ -3724,7 +3750,7 @@ agent is typing.</p>
 </ul>
 <hr />
 <h2 id="2026-09-11">2026-09-11</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.12</strong></p>
 <p>We've released version 6.12 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -3761,141 +3787,6 @@ portal, click <strong>Apps &gt; Agent Desktop</strong> to open the Agent Desktop
 a new browser tab. This lets you move between the portal and the Agent
 Desktop without ending your portal session.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-use-agent-desktop#open-agent-desktop">Open the agent desktop</a>.</p>
-<h3 id="fixed_9">Fixed</h3>
-<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue where SmartAction statuses were incorrectly marked as
-  "failed" when a call ended before a photo or video upload completed.</li>
-<li>Fixed an issue where loading the outbound numbers list timed out or caused
-  significant delays for organizations with large teams and custom roles.</li>
-<li>Fixed an issue where estimated wait times of less than one minute were
-  incorrectly rounded down to zero, preventing the system from accurately
-  triggering over-capacity actions.</li>
-<li>Fixed an issue where sudden spikes in call volume bypassed a team's capacity
-  protections and reduced the team's agent availability to below configured
-  minimums.</li>
-<li>Fixed an issue where nested object values in custom data were incorrectly
-  displayed as <code>[object Object]</code> in the agent desktop session data feed.</li>
-<li>Fixed an agent desktop issue where the navigation bar in the <strong>Previous
-  Interactions</strong> page of the call adapter was overlapped by summary text and
-  didn't stay fixed while scrolling.</li>
-<li>Fixed an issue where answered voice calls triggered a second, unrequested
-  callback after the end-user hung up.</li>
-<li>Fixed an issue where intermittent IMAP connection rejections caused email
-  fetch workers to enter an extended backoff loop, resulting in several hours
-  of mailbox downtime.</li>
-<li>Fixed an issue where inbound voice call recordings weren't exported to
-  external storage when a virtual agent escalation was deflected to voicemail
-  due to over-capacity.</li>
-<li>Fixed an issue where manual wrap-up sessions were incorrectly attributed to
-  the most recent call in the <strong>Agent Activity Timeline</strong> and in raw data
-  exports, even when the wrap-up was unrelated to that call.</li>
-<li>Fixed an issue where the "agent leg" of a call connection stalled in a
-  connecting state for the full timeout duration before failing silently and
-  moving the agent to an available status.</li>
-<li>Fixed an issue where custom form responses weren't exported to external
-  storage for instances without an external CRM integration.</li>
-<li>Fixed an issue where a queue name saved in the <strong>SLA thresholds for queues</strong>
-  dialog didn't persist after saving.</li>
-<li>Fixed an issue where virtual agent voice calls triggered a session error
-  during wrap-up.</li>
-<li>Fixed an issue during high-capacity redirections where voicemails weren't
-  saved.</li>
-<li>Fixed an issue where completed call transfers generated duplicate queue
-  duration records, leading to inflated reporting for queue volume and SLA
-  metrics.</li>
-<li>Fixed an agent desktop issue where the sentiment banner in the call adapter
-  didn't immediately appear at the start of a call.</li>
-<li>Fixed an issue where saving the <strong>Upload audio recording for Language
-  Selection</strong> option of the <strong>Languages</strong> dialog didn't persist and switched
-  to <strong>Text-to-speech</strong>.</li>
-<li>Fixed an issue where inefficient database queries caused high CPU
-  utilization and performance degradation across all communication channels.</li>
-<li>Fixed an issue where transient connection errors during Twilio ICE token
-  fetching caused agent call setup to fail or take longer to connect.</li>
-<li>Fixed an issue where temporary connection drops during chat webhook delivery
-  caused unnecessary delays.</li>
-<li>Fixed an issue where work time and wait time durations overlapped in
-  reporting metrics.</li>
-<li>Fixed an issue where the agent adapter call history incorrectly displayed
-  English queue names for French-Canadian calls.</li>
-<li>Fixed an issue where agents were assigned calls from secondary queues even
-  when their primary queue fell below the minimum availability threshold.</li>
-<li>Fixed an issue where canceled virtual-agent-to-human escalations
-  incorrectly reported negative queue durations and inaccurate SLA metrics in
-  chat session data and reports.</li>
-<li>Fixed an issue where creating or updating queues failed and returned a
-  timeout error.</li>
-<li>Fixed an agent desktop issue where an outbound call canceled by an agent
-  while connecting was recorded as an unknown failure instead of an agent
-  cancellation.</li>
-<li>Fixed an issue where clicking the rewind and forward buttons on the
-  voicemail page of the call adapter restarted the voicemail from the
-  beginning.</li>
-<li>Fixed an agent desktop issue where the chat adapter displayed a loading
-  progress indicator instead of the chat transcript when a chat session was
-  assigned.</li>
-<li>Fixed an issue where a disposition prompt didn't appear in the call
-  adapter after a disconnected call, even when mandatory disposition was
-  configured.</li>
-<li>Fixed an issue where Agent Assist real-time transcription didn't
-  start on Vonage BYOC calls.</li>
-<li>Fixed an issue where changes made outside of browser-originated HTTP
-  requests (such as from API clients or background jobs) failed to generate
-  audit log records.</li>
-<li>Fixed an issue where over-capacity phone deflection didn't activate for
-  direct agent calls, resulting in an error message or callers waiting
-  indefinitely.</li>
-<li>Fixed an issue where transient network connection failures during call and
-  chat DAP lookups caused inbound calls to route to default queues or
-  prevented chat sessions from starting.</li>
-<li>Fixed a web SDK issue where static, non-interactive text within the chat
-  widget incorrectly received keyboard focus, disrupting the navigation flow
-  for keyboard and screen reader users.</li>
-<li>Fixed an issue where temporary asset errors during deployments were
-  cached by the CDN, leading to web SDK initialization failures.</li>
-<li>Fixed an agent desktop issue where incomplete configuration settings
-  prevented call control buttons from updating or rendering properly.</li>
-<li>Fixed an issue where the audio for an over-capacity deflection played in the
-  source queue's language instead of the destination queue's language
-  following a cross-language transfer.</li>
-<li>Fixed an issue where waiting chats weren't immediately offered to available
-  agents who became eligible for a queue through a team membership update or
-  direct queue assignment.</li>
-</ul>
-<hr />
-<h2 id="2026-09-09">2026-09-09</h2>
-<h3 id="announcement_11">Announcement</h3>
-<p><strong>Google Cloud CCaaS prerelease notes 6.12</strong></p>
-<p>Here are the pre-release notes for what we expect to be the next version
-of Google Cloud CCaaS. When we release this version, we expect the new
-capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.12.</p>
-<h3 id="feature_16">Feature</h3>
-<p><strong>Cold transfers auto-resume</strong></p>
-<p>When an agent performs a cold transfer, the call now resumes at the moment the
-receiving agent answers the call. The receiving agent no longer needs to
-manually take the caller off hold. This eliminates the silence that previously
-occurred between an agent answering a call and taking the caller off hold.</p>
-<h3 id="feature_17">Feature</h3>
-<p><strong>Hubspot: Configure Do Not Call by phone number</strong></p>
-<p>In HubSpot integrations, you can now configure Do Not Call for specific phone
-numbers instead of for an entire contact or company record. Opt-out matching is
-no longer case-sensitive.</p>
-<p>Administrators: There's a new <strong>Do Not Call Configuration</strong> section in the
-<strong>CRM</strong> pane, located at <strong>Settings &gt; Developer Settings</strong> (with
-<strong>HubSpot</strong> selected).</p>
-<h3 id="feature_18">Feature</h3>
-<p><strong>Agent desktop: New network diagnostics tool</strong></p>
-<p>The agent desktop has a new network diagnostics tool in the navigation menu that
-displays network strength and diagnostics information. This tool can help you
-quickly assess your network's health and troubleshoot connection issues.</p>
-<h3 id="feature_19">Feature</h3>
-<p><strong>Agent desktop: Open from the CCaaS portal</strong></p>
-<p>You can now access the Agent Desktop using the new <strong>Apps</strong> menu. In the CCaaS
-portal, click <strong>Apps &gt; Agent Desktop</strong> to open the Agent Desktop in
-a new browser tab. This lets you move between the portal and the Agent
-Desktop without ending your portal session.</p>
 <h3 id="fixed_10">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
@@ -3999,8 +3890,143 @@ Desktop without ending your portal session.</p>
   direct queue assignment.</li>
 </ul>
 <hr />
-<h2 id="2026-09-08">2026-09-08</h2>
+<h2 id="2026-09-09">2026-09-09</h2>
 <h3 id="announcement_12">Announcement</h3>
+<p><strong>Google Cloud CCaaS prerelease notes 6.12</strong></p>
+<p>Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>
+<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.12.</p>
+<h3 id="feature_16">Feature</h3>
+<p><strong>Cold transfers auto-resume</strong></p>
+<p>When an agent performs a cold transfer, the call now resumes at the moment the
+receiving agent answers the call. The receiving agent no longer needs to
+manually take the caller off hold. This eliminates the silence that previously
+occurred between an agent answering a call and taking the caller off hold.</p>
+<h3 id="feature_17">Feature</h3>
+<p><strong>Hubspot: Configure Do Not Call by phone number</strong></p>
+<p>In HubSpot integrations, you can now configure Do Not Call for specific phone
+numbers instead of for an entire contact or company record. Opt-out matching is
+no longer case-sensitive.</p>
+<p>Administrators: There's a new <strong>Do Not Call Configuration</strong> section in the
+<strong>CRM</strong> pane, located at <strong>Settings &gt; Developer Settings</strong> (with
+<strong>HubSpot</strong> selected).</p>
+<h3 id="feature_18">Feature</h3>
+<p><strong>Agent desktop: New network diagnostics tool</strong></p>
+<p>The agent desktop has a new network diagnostics tool in the navigation menu that
+displays network strength and diagnostics information. This tool can help you
+quickly assess your network's health and troubleshoot connection issues.</p>
+<h3 id="feature_19">Feature</h3>
+<p><strong>Agent desktop: Open from the CCaaS portal</strong></p>
+<p>You can now access the Agent Desktop using the new <strong>Apps</strong> menu. In the CCaaS
+portal, click <strong>Apps &gt; Agent Desktop</strong> to open the Agent Desktop in
+a new browser tab. This lets you move between the portal and the Agent
+Desktop without ending your portal session.</p>
+<h3 id="fixed_11">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where SmartAction statuses were incorrectly marked as
+  "failed" when a call ended before a photo or video upload completed.</li>
+<li>Fixed an issue where loading the outbound numbers list timed out or caused
+  significant delays for organizations with large teams and custom roles.</li>
+<li>Fixed an issue where estimated wait times of less than one minute were
+  incorrectly rounded down to zero, preventing the system from accurately
+  triggering over-capacity actions.</li>
+<li>Fixed an issue where sudden spikes in call volume bypassed a team's capacity
+  protections and reduced the team's agent availability to below configured
+  minimums.</li>
+<li>Fixed an issue where nested object values in custom data were incorrectly
+  displayed as <code>[object Object]</code> in the agent desktop session data feed.</li>
+<li>Fixed an agent desktop issue where the navigation bar in the <strong>Previous
+  Interactions</strong> page of the call adapter was overlapped by summary text and
+  didn't stay fixed while scrolling.</li>
+<li>Fixed an issue where answered voice calls triggered a second, unrequested
+  callback after the end-user hung up.</li>
+<li>Fixed an issue where intermittent IMAP connection rejections caused email
+  fetch workers to enter an extended backoff loop, resulting in several hours
+  of mailbox downtime.</li>
+<li>Fixed an issue where inbound voice call recordings weren't exported to
+  external storage when a virtual agent escalation was deflected to voicemail
+  due to over-capacity.</li>
+<li>Fixed an issue where manual wrap-up sessions were incorrectly attributed to
+  the most recent call in the <strong>Agent Activity Timeline</strong> and in raw data
+  exports, even when the wrap-up was unrelated to that call.</li>
+<li>Fixed an issue where the "agent leg" of a call connection stalled in a
+  connecting state for the full timeout duration before failing silently and
+  moving the agent to an available status.</li>
+<li>Fixed an issue where custom form responses weren't exported to external
+  storage for instances without an external CRM integration.</li>
+<li>Fixed an issue where a queue name saved in the <strong>SLA thresholds for queues</strong>
+  dialog didn't persist after saving.</li>
+<li>Fixed an issue where virtual agent voice calls triggered a session error
+  during wrap-up.</li>
+<li>Fixed an issue during high-capacity redirections where voicemails weren't
+  saved.</li>
+<li>Fixed an issue where completed call transfers generated duplicate queue
+  duration records, leading to inflated reporting for queue volume and SLA
+  metrics.</li>
+<li>Fixed an agent desktop issue where the sentiment banner in the call adapter
+  didn't immediately appear at the start of a call.</li>
+<li>Fixed an issue where saving the <strong>Upload audio recording for Language
+  Selection</strong> option of the <strong>Languages</strong> dialog didn't persist and switched
+  to <strong>Text-to-speech</strong>.</li>
+<li>Fixed an issue where inefficient database queries caused high CPU
+  utilization and performance degradation across all communication channels.</li>
+<li>Fixed an issue where transient connection errors during Twilio ICE token
+  fetching caused agent call setup to fail or take longer to connect.</li>
+<li>Fixed an issue where temporary connection drops during chat webhook delivery
+  caused unnecessary delays.</li>
+<li>Fixed an issue where work time and wait time durations overlapped in
+  reporting metrics.</li>
+<li>Fixed an issue where the agent adapter call history incorrectly displayed
+  English queue names for French-Canadian calls.</li>
+<li>Fixed an issue where agents were assigned calls from secondary queues even
+  when their primary queue fell below the minimum availability threshold.</li>
+<li>Fixed an issue where canceled virtual-agent-to-human escalations
+  incorrectly reported negative queue durations and inaccurate SLA metrics in
+  chat session data and reports.</li>
+<li>Fixed an issue where creating or updating queues failed and returned a
+  timeout error.</li>
+<li>Fixed an agent desktop issue where an outbound call canceled by an agent
+  while connecting was recorded as an unknown failure instead of an agent
+  cancellation.</li>
+<li>Fixed an issue where clicking the rewind and forward buttons on the
+  voicemail page of the call adapter restarted the voicemail from the
+  beginning.</li>
+<li>Fixed an agent desktop issue where the chat adapter displayed a loading
+  progress indicator instead of the chat transcript when a chat session was
+  assigned.</li>
+<li>Fixed an issue where a disposition prompt didn't appear in the call
+  adapter after a disconnected call, even when mandatory disposition was
+  configured.</li>
+<li>Fixed an issue where Agent Assist real-time transcription didn't
+  start on Vonage BYOC calls.</li>
+<li>Fixed an issue where changes made outside of browser-originated HTTP
+  requests (such as from API clients or background jobs) failed to generate
+  audit log records.</li>
+<li>Fixed an issue where over-capacity phone deflection didn't activate for
+  direct agent calls, resulting in an error message or callers waiting
+  indefinitely.</li>
+<li>Fixed an issue where transient network connection failures during call and
+  chat DAP lookups caused inbound calls to route to default queues or
+  prevented chat sessions from starting.</li>
+<li>Fixed a web SDK issue where static, non-interactive text within the chat
+  widget incorrectly received keyboard focus, disrupting the navigation flow
+  for keyboard and screen reader users.</li>
+<li>Fixed an issue where temporary asset errors during deployments were
+  cached by the CDN, leading to web SDK initialization failures.</li>
+<li>Fixed an agent desktop issue where incomplete configuration settings
+  prevented call control buttons from updating or rendering properly.</li>
+<li>Fixed an issue where the audio for an over-capacity deflection played in the
+  source queue's language instead of the destination queue's language
+  following a cross-language transfer.</li>
+<li>Fixed an issue where waiting chats weren't immediately offered to available
+  agents who became eligible for a queue through a team membership update or
+  direct queue assignment.</li>
+</ul>
+<hr />
+<h2 id="2026-09-08">2026-09-08</h2>
+<h3 id="announcement_13">Announcement</h3>
 <p><strong>Advanced reporting dashboards prerelease notes 6.4</strong></p>
 <p>Here are the pre-release notes for updates to the advanced reporting dashboards
 and other reporting in CCAI Platform. When we release these updates, we
@@ -4056,7 +4082,7 @@ steps required for supervisors to identify active calls during live monitoring.<
 <p>The <strong>Real-time Calls - Calls Queued</strong> dashboard has a new <strong>Projecting</strong> column
 in the <strong>Call Queued</strong> table. Indicates whether the routing engine (deltacast)
 is currently projecting this queued call to an available agent.</p>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where the formatting of numeric values was inconsistent
@@ -4110,7 +4136,7 @@ is currently projecting this queued call to an available agent.</p>
 </ul>
 <hr />
 <h2 id="2026-09-03">2026-09-03</h2>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.9</strong></p>
 <p>We've released version 6.9 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -4135,42 +4161,6 @@ agent desktop.</p>
 layout</a>
 and <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-use-agent-desktop#handle-an-email">Handle an
 email</a>.</p>
-<h3 id="fixed_12">Fixed</h3>
-<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue where agents couldn't send new outbound emails.</li>
-<li>Fixed an issue where the disposition panel in the call adapter was
-  incorrectly hidden or visible due to inconsistent state updates.</li>
-<li>Fixed an issue where direct inbound voicemails appeared multiple times in
-  the <strong>History</strong> tab of the call adapter.</li>
-<li>Fixed an issue where voice callbacks were canceled at the end of operating
-  hours instead of rolling over to the next day.</li>
-<li>Fixed an issue where using click-to-dial from a Salesforce case incorrectly
-  overwrote the parent account's mobile phone number with the dialed number.</li>
-<li>Fixed an issue where ending a call resulted in significant latency or
-  connection errors in the instance.</li>
-<li>Fixed an issue where hold music in call recordings overlapped live
-  conversation.</li>
-<li>Fixed an issue where the deletion of a custom hours of operation group
-  didn't appear in the <strong>Audit Dashboard</strong>.</li>
-<li>Fixed an issue in Zendesk integrations where the system mistakenly navigated
-  from the active ticket tab to the customer profile page when a voice call
-  ended.</li>
-</ul>
-<hr />
-<h2 id="2026-08-31">2026-08-31</h2>
-<h3 id="announcement_14">Announcement</h3>
-<p><strong>Google Cloud CCaaS prerelease notes 6.9</strong></p>
-<p>Here are the pre-release notes for what we expect to be the next version
-of Google Cloud CCaaS. When we release this version, we expect the new
-capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.9.</p>
-<h3 id="feature_25">Feature</h3>
-<p><strong>Agent desktop supports email</strong></p>
-<p>The agent desktop now supports email. Agents can handle email interactions
-using the email adapter in a desktop layout.</p>
-<p>Administrators: In the <strong>Desktop Layout Builder</strong> view, there's a new <strong>Email
-Adapter</strong> widget that you can drag and drop into a desktop layout.</p>
 <h3 id="fixed_13">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
@@ -4194,8 +4184,44 @@ Adapter</strong> widget that you can drag and drop into a desktop layout.</p>
   ended.</li>
 </ul>
 <hr />
-<h2 id="2026-08-27">2026-08-27</h2>
+<h2 id="2026-08-31">2026-08-31</h2>
 <h3 id="announcement_15">Announcement</h3>
+<p><strong>Google Cloud CCaaS prerelease notes 6.9</strong></p>
+<p>Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>
+<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.9.</p>
+<h3 id="feature_25">Feature</h3>
+<p><strong>Agent desktop supports email</strong></p>
+<p>The agent desktop now supports email. Agents can handle email interactions
+using the email adapter in a desktop layout.</p>
+<p>Administrators: In the <strong>Desktop Layout Builder</strong> view, there's a new <strong>Email
+Adapter</strong> widget that you can drag and drop into a desktop layout.</p>
+<h3 id="fixed_14">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where agents couldn't send new outbound emails.</li>
+<li>Fixed an issue where the disposition panel in the call adapter was
+  incorrectly hidden or visible due to inconsistent state updates.</li>
+<li>Fixed an issue where direct inbound voicemails appeared multiple times in
+  the <strong>History</strong> tab of the call adapter.</li>
+<li>Fixed an issue where voice callbacks were canceled at the end of operating
+  hours instead of rolling over to the next day.</li>
+<li>Fixed an issue where using click-to-dial from a Salesforce case incorrectly
+  overwrote the parent account's mobile phone number with the dialed number.</li>
+<li>Fixed an issue where ending a call resulted in significant latency or
+  connection errors in the instance.</li>
+<li>Fixed an issue where hold music in call recordings overlapped live
+  conversation.</li>
+<li>Fixed an issue where the deletion of a custom hours of operation group
+  didn't appear in the <strong>Audit Dashboard</strong>.</li>
+<li>Fixed an issue in Zendesk integrations where the system mistakenly navigated
+  from the active ticket tab to the customer profile page when a voice call
+  ended.</li>
+</ul>
+<hr />
+<h2 id="2026-08-27">2026-08-27</h2>
+<h3 id="announcement_16">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.7</strong></p>
 <p>We've released version 6.7 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -4215,83 +4241,6 @@ status of multiple email sessions to the status that you specify.</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/bulk-email-status-endpoint">Bulk email status
 endpoint</a>.</p>
-<h3 id="fixed_14">Fixed</h3>
-<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue where blended SMS transcripts were incorrectly identified as
-  call audio recordings when uploaded to Customer Experience Insights, causing them to appear
-  as missing or unanalyzable data.</li>
-<li>Fixed an issue where the chat text-input field was unresponsive after an
-  agent accepted a new chat.</li>
-<li>Fixed an issue where call-cascade agent availability safeguards weren't
-  enforced for terminal queue paths, which resulted in agents being assigned
-  calls from secondary queues even when their primary queue fell below the
-  minimum availability threshold.</li>
-<li>Fixed an issue where chats that were connected to an agent continued to
-  appear on the <strong>Queued Chats</strong> dashboard with a status of <strong>Ongoing</strong>.</li>
-<li>Fixed an issue where direct inbound and dial-by-extension calls didn't reach
-  an agent when multiple calls were waiting in the agent's queue.</li>
-<li>Fixed an issue where chat messages from supervisors were incorrectly
-  attributed to the end-user in Customer Experience Insights transcripts.</li>
-<li>Fixed an issue where changes to hours of operation didn't appear in the
-  <strong>Audit Dashboard</strong>.</li>
-<li>Fixed an issue with Salesforce integrations where outbound calls were
-  incorrectly labeled as <strong>Inbound</strong> and didn't pass the
-  CCAI Platform call ID into Salesforce case activity comments.</li>
-<li>Fixed an issue where requests for agent activity logs resulted in high
-  database latency and gateway timeouts.</li>
-<li>Fixed an agent desktop issue where an agent sent a chat form to an end-user
-  but the end-user didn't receive it.</li>
-<li>Fixed an issue where a chat that was escalated from a virtual agent to a
-  human agent was stuck in the queue and couldn't be successfully offered to
-  available agents.</li>
-<li>Fixed an issue where the <strong>Queue</strong> dashboard displayed
-  <code>{{Count}}</code> and
-  <code>{{Level}}</code> variables instead of numerals.</li>
-<li>Fixed an issue where the wait times API incorrectly reported zero available
-  agents for chat queues that had agent availability.</li>
-<li>Fixed an issue where the <strong>Queues &gt; Calls</strong> dashboard didn't load
-  and timed out for instances with a large number of queues.</li>
-<li>Fixed an agent desktop issue where the sentiment score didn't appear in the
-  call adapter in the agent desktop or in Salesforce for calls that were
-  escalated from a virtual agent to a human agent.</li>
-<li>Fixed an issue where newly created voice queues didn't correctly inherit the
-  global whisper and countdown settings.</li>
-<li>Fixed an issue where queue duration metrics incorrectly included IVR
-  timeout time for calls that were cold transferred into a closed queue.</li>
-<li>Fixed an issue where an agent who reopened a previously read voicemail was
-  stuck in <strong>In-call</strong> status, preventing them from accepting new contacts or
-  changing their status.</li>
-<li>Fixed an issue where an agent's assigned call ID was cleared during
-  wrap-up, which prevented them from submitting their wrap-up disposition
-  after refreshing the page.</li>
-</ul>
-<hr />
-<h2 id="2026-08-25">2026-08-25</h2>
-<h3 id="announcement_16">Announcement</h3>
-<p><strong>Google Cloud CCaaS prerelease notes 6.7</strong></p>
-<p>Here are the pre-release notes for what we expect to be the next version
-of Google Cloud CCaaS. When we release this version, we expect the new
-capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.7.</p>
-<h3 id="feature_27">Feature</h3>
-<p><strong>Agent desktop supports email</strong></p>
-<p>The agent desktop now supports email. Agents can handle email interactions
-using the email adapter in a desktop layout.</p>
-<p>Administrators: In the <strong>Desktop Layout Builder</strong> view, there's a new <strong>Email
-Adapter</strong> widget that you can drag and drop into a desktop layout.</p>
-<h3 id="feature_28">Feature</h3>
-<p><strong>Bulk email status updates</strong></p>
-<p>You can use the new <code>apps/api/v1/email/update_status</code> endpoint to change the
-status of multiple email sessions to the status that you specify.</p>
-<p>The new endpoint includes the following capabilities:</p>
-<ul>
-<li>You can optionally specify the status that you expect email sessions to be
-  in. Email sessions that aren't in that status aren't updated.</li>
-<li>For each session, the response reports whether it was updated, required no
-  change, or couldn't be updated (and why). This means that integrations can
-  handle partial success and identify which sessions still need attention.</li>
-</ul>
 <h3 id="fixed_15">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
@@ -4344,8 +4293,85 @@ status of multiple email sessions to the status that you specify.</p>
   after refreshing the page.</li>
 </ul>
 <hr />
-<h2 id="2026-08-21">2026-08-21</h2>
+<h2 id="2026-08-25">2026-08-25</h2>
 <h3 id="announcement_17">Announcement</h3>
+<p><strong>Google Cloud CCaaS prerelease notes 6.7</strong></p>
+<p>Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>
+<p><strong>Important:</strong> The next version of Google Cloud CCaaS could be greater than 6.7.</p>
+<h3 id="feature_27">Feature</h3>
+<p><strong>Agent desktop supports email</strong></p>
+<p>The agent desktop now supports email. Agents can handle email interactions
+using the email adapter in a desktop layout.</p>
+<p>Administrators: In the <strong>Desktop Layout Builder</strong> view, there's a new <strong>Email
+Adapter</strong> widget that you can drag and drop into a desktop layout.</p>
+<h3 id="feature_28">Feature</h3>
+<p><strong>Bulk email status updates</strong></p>
+<p>You can use the new <code>apps/api/v1/email/update_status</code> endpoint to change the
+status of multiple email sessions to the status that you specify.</p>
+<p>The new endpoint includes the following capabilities:</p>
+<ul>
+<li>You can optionally specify the status that you expect email sessions to be
+  in. Email sessions that aren't in that status aren't updated.</li>
+<li>For each session, the response reports whether it was updated, required no
+  change, or couldn't be updated (and why). This means that integrations can
+  handle partial success and identify which sessions still need attention.</li>
+</ul>
+<h3 id="fixed_16">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where blended SMS transcripts were incorrectly identified as
+  call audio recordings when uploaded to Customer Experience Insights, causing them to appear
+  as missing or unanalyzable data.</li>
+<li>Fixed an issue where the chat text-input field was unresponsive after an
+  agent accepted a new chat.</li>
+<li>Fixed an issue where call-cascade agent availability safeguards weren't
+  enforced for terminal queue paths, which resulted in agents being assigned
+  calls from secondary queues even when their primary queue fell below the
+  minimum availability threshold.</li>
+<li>Fixed an issue where chats that were connected to an agent continued to
+  appear on the <strong>Queued Chats</strong> dashboard with a status of <strong>Ongoing</strong>.</li>
+<li>Fixed an issue where direct inbound and dial-by-extension calls didn't reach
+  an agent when multiple calls were waiting in the agent's queue.</li>
+<li>Fixed an issue where chat messages from supervisors were incorrectly
+  attributed to the end-user in Customer Experience Insights transcripts.</li>
+<li>Fixed an issue where changes to hours of operation didn't appear in the
+  <strong>Audit Dashboard</strong>.</li>
+<li>Fixed an issue with Salesforce integrations where outbound calls were
+  incorrectly labeled as <strong>Inbound</strong> and didn't pass the
+  CCAI Platform call ID into Salesforce case activity comments.</li>
+<li>Fixed an issue where requests for agent activity logs resulted in high
+  database latency and gateway timeouts.</li>
+<li>Fixed an agent desktop issue where an agent sent a chat form to an end-user
+  but the end-user didn't receive it.</li>
+<li>Fixed an issue where a chat that was escalated from a virtual agent to a
+  human agent was stuck in the queue and couldn't be successfully offered to
+  available agents.</li>
+<li>Fixed an issue where the <strong>Queue</strong> dashboard displayed
+  <code>{{Count}}</code> and
+  <code>{{Level}}</code> variables instead of numerals.</li>
+<li>Fixed an issue where the wait times API incorrectly reported zero available
+  agents for chat queues that had agent availability.</li>
+<li>Fixed an issue where the <strong>Queues &gt; Calls</strong> dashboard didn't load
+  and timed out for instances with a large number of queues.</li>
+<li>Fixed an agent desktop issue where the sentiment score didn't appear in the
+  call adapter in the agent desktop or in Salesforce for calls that were
+  escalated from a virtual agent to a human agent.</li>
+<li>Fixed an issue where newly created voice queues didn't correctly inherit the
+  global whisper and countdown settings.</li>
+<li>Fixed an issue where queue duration metrics incorrectly included IVR
+  timeout time for calls that were cold transferred into a closed queue.</li>
+<li>Fixed an issue where an agent who reopened a previously read voicemail was
+  stuck in <strong>In-call</strong> status, preventing them from accepting new contacts or
+  changing their status.</li>
+<li>Fixed an issue where an agent's assigned call ID was cleared during
+  wrap-up, which prevented them from submitting their wrap-up disposition
+  after refreshing the page.</li>
+</ul>
+<hr />
+<h2 id="2026-08-21">2026-08-21</h2>
+<h3 id="announcement_18">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.4</strong></p>
 <p>We've released version 6.4 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -4376,7 +4402,7 @@ credentials</a>.</p>
 <p><strong>Improved connection times for predictive dialing</strong></p>
 <p>We reduced the connection time for predictive dialing to under two seconds to
 comply with CRTC and FTC regulations.</p>
-<h3 id="fixed_16">Fixed</h3>
+<h3 id="fixed_17">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where a long delay occurred when an agent clicked <strong>Chat
@@ -4415,7 +4441,7 @@ comply with CRTC and FTC regulations.</p>
 </ul>
 <hr />
 <h2 id="2026-08-19">2026-08-19</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.3</strong></p>
 <p>We've released version 6.3 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -4458,7 +4484,7 @@ the following:</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#callback-fulfillment-hours">Manage
 callbacks</a>.</p>
-<h3 id="fixed_17">Fixed</h3>
+<h3 id="fixed_18">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where chat transcripts incorrectly displayed <strong>undefined
@@ -4651,7 +4677,7 @@ callbacks</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-08-12">2026-08-12</h2>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -4688,7 +4714,7 @@ the following:</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="fixed_18">Fixed</h3>
+<h3 id="fixed_19">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where chat transcripts incorrectly displayed <strong>undefined
@@ -4881,7 +4907,7 @@ the following:</p>
 </ul>
 <hr />
 <h2 id="2026-08-10">2026-08-10</h2>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p><strong>Google Cloud CCaaS 6.0</strong></p>
 <p>We've released version 6.0 of Google Cloud CCaaS.</p>
 <p>Version 6.0 updates internal Google Cloud CCaaS infrastructure. It contains no
@@ -4891,7 +4917,7 @@ that you have chosen. For more information, see <a href="https://cloud.google.co
 schedules</a>.</p>
 <hr />
 <h2 id="2026-08-07">2026-08-07</h2>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -4923,7 +4949,7 @@ day or when your queues are shut down.</p>
 </blockquote>
 </li>
 </ul>
-<h3 id="fixed_19">Fixed</h3>
+<h3 id="fixed_20">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where custom SIP headers were dropped. This occurred when a
@@ -5005,7 +5031,7 @@ day or when your queues are shut down.</p>
 </ul>
 <hr />
 <h2 id="2026-08-06">2026-08-06</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p><strong>Advanced reporting dashboards 5.1</strong></p>
 <p>We've released version 5.1 of the advanced reporting dashboards.</p>
 <h3 id="feature_38">Feature</h3>
@@ -5028,7 +5054,7 @@ following metrics in the <strong>Call Transfers</strong> and <strong>Chat Transf
 <li><strong>Agent Consult Time (H:M:S)</strong>. Reports the time spent consulting with
   another agent before returning to the call.</li>
 </ul>
-<h3 id="fixed_20">Fixed</h3>
+<h3 id="fixed_21">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where the <strong>This Week</strong> and <strong>This Month</strong> per-hour figures
@@ -5073,7 +5099,7 @@ following metrics in the <strong>Call Transfers</strong> and <strong>Chat Transf
 </ul>
 <hr />
 <h2 id="2026-08-03">2026-08-03</h2>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p><strong>Advanced reporting dashboards prerelease notes</strong></p>
 <p>Here are the pre-release notes for updates to the advanced reporting dashboards.
 When we release these updates, we expect the new capabilities to be as shown
@@ -5096,7 +5122,7 @@ following metrics in the <strong>Call Transfers</strong> and <strong>Chat Transf
 <li><strong>Agent Consult Time (H:M:S)</strong>. Reports the time spent consulting with
   another agent before returning to the call.</li>
 </ul>
-<h3 id="fixed_21">Fixed</h3>
+<h3 id="fixed_22">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where the <strong>This Week</strong> and <strong>This Month</strong> per-hour figures
@@ -5140,7 +5166,7 @@ following metrics in the <strong>Call Transfers</strong> and <strong>Chat Transf
 </ul>
 <hr />
 <h2 id="2026-07-30">2026-07-30</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p><strong>Google Cloud CCaaS 5.2</strong></p>
 <p>We've released version 5.2 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -5211,7 +5237,7 @@ disposition displays in the <strong>Disposition</strong> field of the <strong>Wr
 the agent adapter.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/smart-disposition">Smart
 disposition</a>.</p>
-<h3 id="fixed_22">Fixed</h3>
+<h3 id="fixed_23">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where voice calls became stuck in a virtual agent state after
@@ -5358,7 +5384,7 @@ disposition</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-07-28">2026-07-28</h2>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -5420,7 +5446,7 @@ locations:</p>
 <p>User experience change: When smart disposition is turned on, a suggested
 disposition displays in the <strong>Disposition</strong> field of the <strong>Wrap-up</strong> screen in
 the agent adapter.</p>
-<h3 id="fixed_23">Fixed</h3>
+<h3 id="fixed_24">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where voice calls became stuck in a virtual agent state after
@@ -5569,7 +5595,7 @@ the agent adapter.</p>
 </ul>
 <hr />
 <h2 id="2026-07-27">2026-07-27</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -5631,7 +5657,7 @@ locations:</p>
 <p>User experience change: When smart disposition is turned on, a suggested
 disposition displays in the <strong>Disposition</strong> field of the <strong>Wrap-up</strong> screen in
 the agent adapter.</p>
-<h3 id="fixed_24">Fixed</h3>
+<h3 id="fixed_25">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where the <strong>AgentSystemData</strong> historical report incorrectly
@@ -5725,7 +5751,7 @@ the agent adapter.</p>
 </ul>
 <hr />
 <h2 id="2026-07-24">2026-07-24</h2>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p><strong>Google Cloud CCaaS 5.0</strong></p>
 <p>We've released version 5.0 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -5751,7 +5777,7 @@ menu.</p>
 <p>By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/api-dap-for-chat">API direct access point for
 chat</a>.</p>
-<h3 id="fixed_25">Fixed</h3>
+<h3 id="fixed_26">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where emails were stuck in a <strong>Transferring</strong> state when
@@ -5827,7 +5853,7 @@ chat</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-07-14">2026-07-14</h2>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS.
 When we release this version, we expect the new capabilities to be as shown
@@ -5886,7 +5912,7 @@ in the agent adapter.</p>
 chat sessions to a queue based on a response from an external API endpoint that
 you configure. This eliminates the need for end-users to select from a queue
 menu.</p>
-<h3 id="fixed_26">Fixed</h3>
+<h3 id="fixed_27">Fixed</h3>
 <ul>
 <li>Fixed an issue where emails were stuck in a <strong>Transferring</strong> state when
   moved between queues.</li>
@@ -5962,7 +5988,7 @@ menu.</p>
 </ul>
 <hr />
 <h2 id="2026-07-07">2026-07-07</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS.
 When we release this version, we expect the new capabilities to be as shown
@@ -5973,7 +5999,7 @@ here.</p>
 a queue, based on the response from an API that you configure. This lets
 API-initiated chats bypass default routing and enter the intended queue
 immediately.</p>
-<h3 id="fixed_27">Fixed</h3>
+<h3 id="fixed_28">Fixed</h3>
 <ul>
 <li>Fixed an issue where the inactive chat dismissal timer didn't reset after
   a chat was transferred from a virtual agent to a human agent.</li>
@@ -6031,7 +6057,7 @@ immediately.</p>
 </ul>
 <hr />
 <h2 id="2026-07-01">2026-07-01</h2>
-<h3 id="announcement_30">Announcement</h3>
+<h3 id="announcement_31">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.45</strong></p>
 <p>We've released version 4.45 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -6092,7 +6118,7 @@ calls only.</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/return-to-queue">Return to
 queue</a>.</p>
-<h3 id="fixed_28">Fixed</h3>
+<h3 id="fixed_29">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where campaigns that didn't complete prevented subsequent
@@ -6129,7 +6155,7 @@ queue</a>.</p>
   hold while the agent was in a "wrap-up exceeded" state.</p>
 <hr />
 <h2 id="2026-06-30">2026-06-30</h2>
-<h3 id="announcement_31">Announcement</h3>
+<h3 id="announcement_32">Announcement</h3>
 <p><strong>In the Agent Desktop, the Knowledge Assist panel is being replaced with a new
 Agent Assist Hub panel</strong></p>
 <p><strong>Who's affected?</strong></p>
@@ -6160,7 +6186,7 @@ We'll publish prerelease notes and release notes to keep you informed of this
 change.</p>
 <hr />
 <h2 id="2026-06-25">2026-06-25</h2>
-<h3 id="announcement_32">Announcement</h3>
+<h3 id="announcement_33">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version
 3</a>. Starting on
@@ -6170,7 +6196,7 @@ use the web SDK v3 to avoid disrupting your integration with the web SDK. We are
 no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2026-06-24">2026-06-24</h2>
-<h3 id="announcement_33">Announcement</h3>
+<h3 id="announcement_34">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS.
 When we release this version, we expect the new capabilities to be as shown
@@ -6223,7 +6249,7 @@ calls only.</p>
   Messages</strong> pane, there's a new <strong>Return to Queue After Disconnection
   Messages</strong> section.</li>
 </ul>
-<h3 id="fixed_29">Fixed</h3>
+<h3 id="fixed_30">Fixed</h3>
 <ul>
 <li>Fixed an issue where campaigns that didn't complete prevented subsequent
   campaigns from starting.</li>
@@ -6256,7 +6282,7 @@ calls only.</p>
 </ul>
 <hr />
 <h2 id="2026-06-22">2026-06-22</h2>
-<h3 id="announcement_34">Announcement</h3>
+<h3 id="announcement_35">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.43</strong></p>
 <p>We've released version 4.43 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -6289,7 +6315,7 @@ can configure CSAT surveys at the global level and at the queue level.</p>
 API</strong> section.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/csat-chat-api#adding_translations_for_multiple_languages">CSAT in the chat
 API</a>.</p>
-<h3 id="fixed_30">Fixed</h3>
+<h3 id="fixed_31">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where uploading a PDF document to a chat made the
@@ -6352,7 +6378,7 @@ API</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-06-17">2026-06-17</h2>
-<h3 id="announcement_35">Announcement</h3>
+<h3 id="announcement_36">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -6373,7 +6399,7 @@ a new <strong>CRM Record Display Fields</strong> section.</p>
 can configure CSAT surveys at the global level and at the queue level.</p>
 <p>Administrators: On the <strong>Settings &gt; Chat</strong> page, there's a new <strong>Chat
 API</strong> section.</p>
-<h3 id="fixed_31">Fixed</h3>
+<h3 id="fixed_32">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed a Kustomer issue where Agent Assist transcripts were
@@ -6421,7 +6447,7 @@ API</strong> section.</p>
 </ul>
 <hr />
 <h2 id="2026-06-15">2026-06-15</h2>
-<h3 id="announcement_36">Announcement</h3>
+<h3 id="announcement_37">Announcement</h3>
 <p><strong>Advanced reporting dashboards 4.36</strong></p>
 <p>We've released version 4.36 of the advanced reporting dashboards.</p>
 <h3 id="feature_73">Feature</h3>
@@ -6485,7 +6511,7 @@ Performance - Chats</strong> dashboards now includes the following columns:</p>
 <li><strong>Repeat Contact %</strong></li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-queue-performance">Queue Performance dashboards</a>.</p>
-<h3 id="fixed_32">Fixed</h3>
+<h3 id="fixed_33">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where <strong>Repeat Contact %</strong> values in the <strong>Queue Summary
@@ -6504,13 +6530,13 @@ Performance - Chats</strong> dashboards now includes the following columns:</p>
 </ul>
 <hr />
 <h2 id="2026-06-12">2026-06-12</h2>
-<h3 id="announcement_37">Announcement</h3>
+<h3 id="announcement_38">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.40</strong></p>
 <p>We've released version 4.40 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="fixed_33">Fixed</h3>
+<h3 id="fixed_34">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue with Salesforce where virtual agent responses appeared out of
@@ -6530,7 +6556,7 @@ schedules</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-06-11">2026-06-11</h2>
-<h3 id="announcement_38">Announcement</h3>
+<h3 id="announcement_39">Announcement</h3>
 <p><strong>Advanced reporting dashboards prerelease notes</strong></p>
 <p>Here are the prerelease notes for the next version of the advanced reporting
 dashboards.</p>
@@ -6592,7 +6618,7 @@ Performance - Chats</strong> dashboards now includes the following columns:</p>
 <li><strong>Total Repeat Contacts</strong></li>
 <li><strong>Repeat Contact %</strong></li>
 </ul>
-<h3 id="fixed_34">Fixed</h3>
+<h3 id="fixed_35">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where <strong>Repeat Contact %</strong> values in the <strong>Queue Summary
@@ -6611,10 +6637,10 @@ Performance - Chats</strong> dashboards now includes the following columns:</p>
 </ul>
 <hr />
 <h2 id="2026-06-09">2026-06-09</h2>
-<h3 id="announcement_39">Announcement</h3>
+<h3 id="announcement_40">Announcement</h3>
 <p><strong>Mobile SDK for Android version 2.15.3 patch</strong></p>
 <p>We've released version 2.15.3 of the Mobile SDK for Android.</p>
-<h3 id="fixed_35">Fixed</h3>
+<h3 id="fixed_36">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where <code>UjetWebFormCallback</code> in the Android SDK lacked the
@@ -6628,13 +6654,13 @@ Performance - Chats</strong> dashboards now includes the following columns:</p>
 </ul>
 <hr />
 <h2 id="2026-06-08">2026-06-08</h2>
-<h3 id="announcement_40">Announcement</h3>
+<h3 id="announcement_41">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.39</strong></p>
 <p>We've released version 4.39 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="fixed_36">Fixed</h3>
+<h3 id="fixed_37">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue with Salesforce where cases weren't created when a virtual
@@ -6659,11 +6685,11 @@ schedules</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-06-05">2026-06-05</h2>
-<h3 id="announcement_41">Announcement</h3>
+<h3 id="announcement_42">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
-<h3 id="fixed_37">Fixed</h3>
+<h3 id="fixed_38">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue with Salesforce where virtual agent responses appeared out of
@@ -6683,7 +6709,7 @@ we release this version, we expect the new capabilities to be as shown here.</p>
 </ul>
 <hr />
 <h2 id="2026-06-03">2026-06-03</h2>
-<h3 id="announcement_42">Announcement</h3>
+<h3 id="announcement_43">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.38</strong></p>
 <p>We've released version 4.38 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -6701,7 +6727,7 @@ schedules</a>.</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-adapter#email-lists">Email
 lists</a>.</p>
-<h3 id="fixed_38">Fixed</h3>
+<h3 id="fixed_39">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where Canadian French translations for notifications and
@@ -6734,7 +6760,7 @@ lists</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-06-01">2026-06-01</h2>
-<h3 id="announcement_43">Announcement</h3>
+<h3 id="announcement_44">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -6748,7 +6774,7 @@ we release this version, we expect the new capabilities to be as shown here.</p>
 <li>A <strong>Filter by Date</strong> list to filter by preset filters or by a configurable
   date range.</li>
 </ul>
-<h3 id="fixed_39">Fixed</h3>
+<h3 id="fixed_40">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where Canadian French translations for notifications and
@@ -6775,7 +6801,7 @@ we release this version, we expect the new capabilities to be as shown here.</p>
 </ul>
 <hr />
 <h2 id="2026-05-27">2026-05-27</h2>
-<h3 id="announcement_44">Announcement</h3>
+<h3 id="announcement_45">Announcement</h3>
 <p><strong>Advanced reporting dashboards 4.22</strong></p>
 <p>We've released version 4.22 of the advanced reporting dashboards.</p>
 <h3 id="feature_87">Feature</h3>
@@ -6833,7 +6859,7 @@ dashboards</a>.</p>
   All</a>
   dashboard, we renamed the <strong>Lang</strong> filter to <strong>Language</strong>.</li>
 </ul>
-<h3 id="fixed_40">Fixed</h3>
+<h3 id="fixed_41">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where the CSAT scores in the <strong>Performance Overview</strong> and
@@ -6862,72 +6888,12 @@ dashboards</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-05-26">2026-05-26</h2>
-<h3 id="announcement_45">Announcement</h3>
+<h3 id="announcement_46">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.35</strong></p>
 <p>We've released version 4.35 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="fixed_41">Fixed</h3>
-<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue where URLs copied from Microsoft Word into SMS chat sessions
-  were incorrectly formatted, causing links to merge with adjacent text.</li>
-<li>Fixed an issue with Alvaria campaigns where the dialer didn't correctly use
-  the country code from the <strong>@COUNTRYCODE</strong> field when selecting the contact
-  number to dial.</li>
-<li>Fixed an issue where live transcription didn't resume after an agent enabled
-  and then disabled redaction during IVR payment card collection.</li>
-<li>Fixed an issue where agents couldn't upload PDF files in chat sessions.</li>
-<li>Fixed an issue where end-users encountered errors or empty details when
-  accessing call history immediately after a call ended.</li>
-<li>Fixed an issue where agents became stuck in the <code>In-call</code> status and
-  couldn't end calls or change their status, preventing them from handling new
-  interactions.</li>
-<li>Fixed an issue where the deletion of the default greeting message for a
-  language didn't persist.</li>
-<li>Fixed a web SDK issue where scheduling a call in one queue incorrectly
-  showed the <strong>Reschedule Call</strong> screen from a different queue.</li>
-<li>Fixed an issue that occurred when a human agent invoked the payment virtual
-  task assistant to collect card details. When the call was transferred back
-  to the human agent, live transcription and sentiment analysis didn't resume.</li>
-<li>Fixed an issue where HubSpot ticket creation failed when <strong>Skip CRM Account
-  Creation</strong> and <strong>Skip Account Lookup</strong> were enabled. This resulted in
-  tickets being created without an associated phone number.</li>
-<li>Fixed an issue where, after transferring a call from one queue to another,
-  the receiving agent's desktop temporarily showed the source queue's agent
-  desktop layout instead of the destination queue's layout.</li>
-<li>Fixed an issue where outbound Telnyx calls got stuck on the agent adapter
-  <strong>Connecting</strong> screen when <strong>Agent Voice Detection</strong> was enabled globally.</li>
-<li>Fixed an issue where Alvaria Advanced Outreach outbound campaign batch files
-  weren't ingested by Contact Center AI Platform, preventing campaigns from loading
-  contacts.</li>
-<li>Fixed an issue where a single inbound call in Salesforce created two cases.</li>
-<li>Fixed an issue where the <strong>Agents</strong> dashboard showed an invalid <code>-10</code> agent
-  status during wrap-up and after calls.</li>
-<li>Fixed an issue where Alvaria WFM Agent Performance reports displayed no
-  agent activity.</li>
-<li>Fixed an issue where the NICE WFM exporter reported higher abandoned call
-  counts than Contact Center AI Platform reporting.</li>
-<li>Fixed an issue where chats escalated from a virtual agent to a human agent
-  were dismissed shortly after assignment.</li>
-<li>Fixed an issue where the <strong>Ticket URL</strong> column in the <strong>Individual Call
-  History CSV report</strong> was blank for newly recorded calls, preventing
-  customers from accessing and downloading call recordings from the report.</li>
-<li>Fixed an issue where newly created teams couldn't be reordered in the
-  CCAI Platform portal.</li>
-<li>Fixed an issue where the agent desktop <strong>Previous Interactions</strong> panel
-  didn't show Agent Assist summaries from past calls.</li>
-<li>Fixed an issue where conversation history didn't display correctly in the
-  agent adapter when a chat was escalated from a virtual agent to a human
-  agent and then a large number of messages were sent by the end-user.</li>
-</ul>
-<hr />
-<h2 id="2026-05-21">2026-05-21</h2>
-<h3 id="announcement_46">Announcement</h3>
-<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
-<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
-we release this version, we expect the new capabilities to be as shown here.</p>
 <h3 id="fixed_42">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
@@ -6983,8 +6949,68 @@ we release this version, we expect the new capabilities to be as shown here.</p>
   agent and then a large number of messages were sent by the end-user.</li>
 </ul>
 <hr />
-<h2 id="2026-05-19">2026-05-19</h2>
+<h2 id="2026-05-21">2026-05-21</h2>
 <h3 id="announcement_47">Announcement</h3>
+<p><strong>Google Cloud CCaaS prerelease notes</strong></p>
+<p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
+we release this version, we expect the new capabilities to be as shown here.</p>
+<h3 id="fixed_43">Fixed</h3>
+<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where URLs copied from Microsoft Word into SMS chat sessions
+  were incorrectly formatted, causing links to merge with adjacent text.</li>
+<li>Fixed an issue with Alvaria campaigns where the dialer didn't correctly use
+  the country code from the <strong>@COUNTRYCODE</strong> field when selecting the contact
+  number to dial.</li>
+<li>Fixed an issue where live transcription didn't resume after an agent enabled
+  and then disabled redaction during IVR payment card collection.</li>
+<li>Fixed an issue where agents couldn't upload PDF files in chat sessions.</li>
+<li>Fixed an issue where end-users encountered errors or empty details when
+  accessing call history immediately after a call ended.</li>
+<li>Fixed an issue where agents became stuck in the <code>In-call</code> status and
+  couldn't end calls or change their status, preventing them from handling new
+  interactions.</li>
+<li>Fixed an issue where the deletion of the default greeting message for a
+  language didn't persist.</li>
+<li>Fixed a web SDK issue where scheduling a call in one queue incorrectly
+  showed the <strong>Reschedule Call</strong> screen from a different queue.</li>
+<li>Fixed an issue that occurred when a human agent invoked the payment virtual
+  task assistant to collect card details. When the call was transferred back
+  to the human agent, live transcription and sentiment analysis didn't resume.</li>
+<li>Fixed an issue where HubSpot ticket creation failed when <strong>Skip CRM Account
+  Creation</strong> and <strong>Skip Account Lookup</strong> were enabled. This resulted in
+  tickets being created without an associated phone number.</li>
+<li>Fixed an issue where, after transferring a call from one queue to another,
+  the receiving agent's desktop temporarily showed the source queue's agent
+  desktop layout instead of the destination queue's layout.</li>
+<li>Fixed an issue where outbound Telnyx calls got stuck on the agent adapter
+  <strong>Connecting</strong> screen when <strong>Agent Voice Detection</strong> was enabled globally.</li>
+<li>Fixed an issue where Alvaria Advanced Outreach outbound campaign batch files
+  weren't ingested by Contact Center AI Platform, preventing campaigns from loading
+  contacts.</li>
+<li>Fixed an issue where a single inbound call in Salesforce created two cases.</li>
+<li>Fixed an issue where the <strong>Agents</strong> dashboard showed an invalid <code>-10</code> agent
+  status during wrap-up and after calls.</li>
+<li>Fixed an issue where Alvaria WFM Agent Performance reports displayed no
+  agent activity.</li>
+<li>Fixed an issue where the NICE WFM exporter reported higher abandoned call
+  counts than Contact Center AI Platform reporting.</li>
+<li>Fixed an issue where chats escalated from a virtual agent to a human agent
+  were dismissed shortly after assignment.</li>
+<li>Fixed an issue where the <strong>Ticket URL</strong> column in the <strong>Individual Call
+  History CSV report</strong> was blank for newly recorded calls, preventing
+  customers from accessing and downloading call recordings from the report.</li>
+<li>Fixed an issue where newly created teams couldn't be reordered in the
+  CCAI Platform portal.</li>
+<li>Fixed an issue where the agent desktop <strong>Previous Interactions</strong> panel
+  didn't show Agent Assist summaries from past calls.</li>
+<li>Fixed an issue where conversation history didn't display correctly in the
+  agent adapter when a chat was escalated from a virtual agent to a human
+  agent and then a large number of messages were sent by the end-user.</li>
+</ul>
+<hr />
+<h2 id="2026-05-19">2026-05-19</h2>
+<h3 id="announcement_48">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.30</strong></p>
 <p>We've released version 4.30 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -7018,7 +7044,7 @@ endpoint</a>.</p>
 HubSpot tickets now automatically update to reflect the new ticket owner. This
 provides an accurate record of ownership throughout the interaction lifecycle.
 No configuration is required.</p>
-<h3 id="fixed_43">Fixed</h3>
+<h3 id="fixed_44">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where email messages in some queues displayed a blank white
@@ -7092,7 +7118,7 @@ were escalated from a virtual agent, even though the data was generated.</p>
 </ul>
 <hr />
 <h2 id="2026-05-13">2026-05-13</h2>
-<h3 id="announcement_48">Announcement</h3>
+<h3 id="announcement_49">Announcement</h3>
 <p><strong>Mobile SDK for iOS version 2.15.4 patch</strong></p>
 <p>This patch includes the following updates for the mobile SDK for iOS:</p>
 <ul>
@@ -7101,7 +7127,7 @@ were escalated from a virtual agent, even though the data was generated.</p>
 </ul>
 <hr />
 <h2 id="2026-05-12">2026-05-12</h2>
-<h3 id="announcement_49">Announcement</h3>
+<h3 id="announcement_50">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the prerelease notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -7134,7 +7160,7 @@ records, even when a matching HubSpot profile can't be found for an agent.</p>
 </blockquote>
 <p>User experience change: When agent synchronization is configured, a new
 <strong>Authorize</strong> button appears on the agent adapter.</p>
-<h3 id="fixed_44">Fixed</h3>
+<h3 id="fixed_45">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where launching a task virtual assistant during a chat caused
@@ -7187,7 +7213,7 @@ were escalated from a virtual agent, even though the data was generated.</p>
 </ul>
 <hr />
 <h2 id="2026-05-06">2026-05-06</h2>
-<h3 id="announcement_50">Announcement</h3>
+<h3 id="announcement_51">Announcement</h3>
 <p><strong>Mobile SDK for iOS version 2.15.3 patch</strong></p>
 <p>This patch updates the following for the mobile SDK for iOS:</p>
 <ul>
@@ -7196,7 +7222,7 @@ were escalated from a virtual agent, even though the data was generated.</p>
 </ul>
 <hr />
 <h2 id="2026-05-04">2026-05-04</h2>
-<h3 id="announcement_51">Announcement</h3>
+<h3 id="announcement_52">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.26</strong></p>
 <p>We've released version 4.26 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -7377,7 +7403,7 @@ and the headless web SDK:</p>
 <li><strong>Improved spacing</strong>. Uses 4px-based spacing to improve the look and feel of
   page displays.</li>
 </ul>
-<h3 id="fixed_45">Fixed</h3>
+<h3 id="fixed_46">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where the Telnyx integration attempted to reconnect
@@ -7489,7 +7515,7 @@ and the headless web SDK:</p>
 </ul>
 <hr />
 <h2 id="2026-04-27">2026-04-27</h2>
-<h3 id="announcement_52">Announcement</h3>
+<h3 id="announcement_53">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -7601,7 +7627,7 @@ and the headless web SDK:</p>
 <li><strong>Improved spacing</strong>. Uses 4px-based spacing to improve the look and feel of
   page displays.</li>
 </ul>
-<h3 id="fixed_46">Fixed</h3>
+<h3 id="fixed_47">Fixed</h3>
 <p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue that occurred when an agent with Agent Assist
@@ -7659,7 +7685,7 @@ and the headless web SDK:</p>
 </ul>
 <hr />
 <h2 id="2026-04-24">2026-04-24</h2>
-<h3 id="announcement_53">Announcement</h3>
+<h3 id="announcement_54">Announcement</h3>
 <p><strong>Mobile SDK for iOS version 2.15.2 patch</strong></p>
 <p>This patch updates the following for the mobile SDK for iOS:</p>
 <ul>
@@ -7668,7 +7694,7 @@ and the headless web SDK:</p>
 </ul>
 <hr />
 <h2 id="2026-04-20">2026-04-20</h2>
-<h3 id="announcement_54">Announcement</h3>
+<h3 id="announcement_55">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -7728,7 +7754,7 @@ and the headless web SDK:</p>
 <li><strong>Improved spacing</strong>. Uses 4px-based spacing to improve the look and feel of
   page displays.</li>
 </ul>
-<h3 id="fixed_47">Fixed</h3>
+<h3 id="fixed_48">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where chats escalated by a virtual agent disconnected seconds
@@ -7755,7 +7781,7 @@ and the headless web SDK:</p>
 </ul>
 <hr />
 <h2 id="2026-04-15">2026-04-15</h2>
-<h3 id="announcement_55">Announcement</h3>
+<h3 id="announcement_56">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.21</strong></p>
 <p>We've released version 4.21 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -7791,7 +7817,7 @@ of transferring to a queue before transferring to the agent. This can improve
 wait times and customer satisfaction. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/virtual-agent-to-human-agent-transfers">Virtual agent
 to human agent
 transfers</a>.</p>
-<h3 id="fixed_48">Fixed</h3>
+<h3 id="fixed_49">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where backslash characters in chat shortcuts and chat
@@ -7841,7 +7867,7 @@ transfers</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-04-14">2026-04-14</h2>
-<h3 id="announcement_56">Announcement</h3>
+<h3 id="announcement_57">Announcement</h3>
 <p><strong>Advance reporting dashboards prerelease notes</strong></p>
 <p>Here are the pre-release notes for updates to the advanced reporting dashboards.
 When we release these updates, we expect the new capabilities to be as shown
@@ -7891,7 +7917,7 @@ here.</p>
 <li>In the <strong>Queue Group Performance - All</strong> dashboard, we renamed the <strong>Lang</strong>
   filter to <strong>Language</strong>.</li>
 </ul>
-<h3 id="fixed_49">Fixed</h3>
+<h3 id="fixed_50">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where the CSAT scores in the <strong>Performance Overview</strong> and
@@ -7917,7 +7943,7 @@ here.</p>
 </ul>
 <hr />
 <h2 id="2026-04-10">2026-04-10</h2>
-<h3 id="announcement_57">Announcement</h3>
+<h3 id="announcement_58">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the prerelease notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -7944,7 +7970,7 @@ campaigns</a>.</p>
 <p>Virtual agents can transfer calls directly to a specific human agent using the
 agent ID or agent extension number. Include the <code>agent_extension</code> or <code>agent_id</code>
 field in the transfer payload to direct the call to the correct agent.</p>
-<h3 id="fixed_50">Fixed</h3>
+<h3 id="fixed_51">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where backslash characters in chat shortcuts and chat
@@ -7994,7 +8020,7 @@ field in the transfer payload to direct the call to the correct agent.</p>
 </ul>
 <hr />
 <h2 id="2026-04-07">2026-04-07</h2>
-<h3 id="announcement_58">Announcement</h3>
+<h3 id="announcement_59">Announcement</h3>
 <p><strong>Advance reporting dashboards 4.12</strong></p>
 <p>We've released version 4.12 of the advanced reporting dashboards.</p>
 <h3 id="feature_123">Feature</h3>
@@ -8020,7 +8046,7 @@ metric. This metric provides a precise count of chats answered from the queue,
 providing accurate Service Level Agreement (SLA) and answer rate calculations
 where the standard "handled" metric might not apply—for example, if a
 chat is answered and then immediately disconnected.</p>
-<h3 id="fixed_51">Fixed</h3>
+<h3 id="fixed_52">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -8076,7 +8102,7 @@ dashboards:</p>
   Connected</strong>: new <strong>Repeat Contact</strong> column in the <strong>Connected Calls</strong> and
   <strong>Connected Chats</strong> tables.</li>
 </ul>
-<h3 id="fixed_52">Fixed</h3>
+<h3 id="fixed_53">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -8109,14 +8135,14 @@ dashboards:</p>
   highlighting wasn't applied to populated fields in the <strong>Queue Group
   Performance Calls</strong> and <strong>Queue Group Performance Chats</strong> tables.</li>
 </ul>
-<h3 id="announcement_59">Announcement</h3>
+<h3 id="announcement_60">Announcement</h3>
 <p><strong>Advance reporting dashboards prerelease notes</strong></p>
 <p>Here are the pre-release notes for updates to the advanced reporting dashboards.
 When we release these updates, we expect the new capabilities to be as shown
 here.</p>
 <hr />
 <h2 id="2026-04-02">2026-04-02</h2>
-<h3 id="announcement_60">Announcement</h3>
+<h3 id="announcement_61">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.16</strong></p>
 <p>We've released version 4.16 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -8159,7 +8185,7 @@ This allows calls to internal extensions or Unified Communications (UC)
 destinations sufficient time to be answered before disconnection. For more
 information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/va-custom-payload#transfer-to-SIP-endpoint">Transfer a call to a SIP
 endpoint</a>.</p>
-<h3 id="fixed_53">Fixed</h3>
+<h3 id="fixed_54">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue with React Native integrations where the email adapter
@@ -8191,7 +8217,7 @@ endpoint</a>.</p>
   response fields. This caused data type mismatches in the reports that the
   API returned.</li>
 </ul>
-<h3 id="announcement_61">Announcement</h3>
+<h3 id="announcement_62">Announcement</h3>
 <p><strong>Mobile SDK for Android version 2.15.2 patch</strong></p>
 <p>This patch updates the following for the mobile SDK for Android:</p>
 <ul>
@@ -8213,7 +8239,7 @@ lets you use high-quality audio files instead of standard text-to-speech. This
 capability is available for all voice channels, including inbound and outbound
 calls. It's available for support virtual agents, task virtual agents, and
 post-session virtual agents.</p>
-<h3 id="announcement_62">Announcement</h3>
+<h3 id="announcement_63">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -8240,7 +8266,7 @@ destinations sufficient time to be answered before disconnection.</p>
 <strong>Standard view</strong>, or the new real-time <strong>Help desk view</strong>.</p>
 <p>Administrators: In the <strong>Settings &gt; Developer Settings &gt;</strong>
 select <strong>HubSpot</strong> pane, there's a new <strong>CRM Ticket View</strong> section.</p>
-<h3 id="fixed_54">Fixed</h3>
+<h3 id="fixed_55">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue with React Native integrations where the email adapter
@@ -8274,7 +8300,7 @@ select <strong>HubSpot</strong> pane, there's a new <strong>CRM Ticket View</str
 </ul>
 <hr />
 <h2 id="2026-03-30">2026-03-30</h2>
-<h3 id="announcement_63">Announcement</h3>
+<h3 id="announcement_64">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release this version, we expect the new capabilities to be as shown here.</p>
@@ -8292,7 +8318,7 @@ agents transfer to SIP endpoints. Add the <code>sip_ring_timeout</code> field to
 virtual agent's custom payload to set the ringing period for up to 600 seconds.
 This allows calls to internal extensions or Unified Communications (UC)
 destinations sufficient time to be answered before disconnection.</p>
-<h3 id="fixed_55">Fixed</h3>
+<h3 id="fixed_56">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls continued to be recorded after being transferred
@@ -8321,7 +8347,7 @@ destinations sufficient time to be answered before disconnection.</p>
 </ul>
 <hr />
 <h2 id="2026-03-25">2026-03-25</h2>
-<h3 id="announcement_64">Announcement</h3>
+<h3 id="announcement_65">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version
 3</a>. Starting on
@@ -8331,7 +8357,7 @@ web SDK v3 before that date to avoid breaking your integration with the web SDK.
 We are no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2026-03-24">2026-03-24</h2>
-<h3 id="announcement_65">Announcement</h3>
+<h3 id="announcement_66">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.12</strong></p>
 <p>We've released version 4.12 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -8412,7 +8438,7 @@ are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat 
 chat history to both the end-user and the agent.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/resume-a-chat">Resume a chat</a>.</p>
-<h3 id="fixed_56">Fixed</h3>
+<h3 id="fixed_57">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue for Zendesk users where using click-to-dial from a private
@@ -8673,7 +8699,7 @@ chat history to both the end-user and the agent.</p>
 Administrators can configure primary and secondary lookup objects, allowing the
 system to search for end-users across both Contacts and Companies to ensure
 accurate identification during active sessions.</p>
-<h3 id="announcement_66">Announcement</h3>
+<h3 id="announcement_67">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the prerelease notes for the next version of CCAI Platform.
 When we release the next version, we expect the new capabilities to be as shown
@@ -8684,7 +8710,7 @@ here.</p>
 <a href="https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps">Customer Experience Agent Studio</a>
 (CX Agent Studio). This expands on its existing support for creating voice virtual
 agents with CX Agent Studio.</p>
-<h3 id="fixed_57">Fixed</h3>
+<h3 id="fixed_58">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue for Zendesk users where using click-to-dial from a private
@@ -8931,7 +8957,7 @@ by default. To use this capability, ask your Google contact to turn it on for
 your instance.</p>
 <hr />
 <h2 id="2026-03-14">2026-03-14</h2>
-<h3 id="announcement_67">Announcement</h3>
+<h3 id="announcement_68">Announcement</h3>
 <p><strong>Advanced reporting dashboards 4.0</strong></p>
 <p>We've released version 4.0 of the advanced reporting dashboards.</p>
 <h3 id="feature_151">Feature</h3>
@@ -8981,7 +9007,7 @@ language</a>.</p>
   Trend</strong>, or <strong>Transfer Trend</strong> tile to get historical call or chat queue
   metrics for that interval.</li>
 </ul>
-<h3 id="fixed_58">Fixed</h3>
+<h3 id="fixed_59">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where the <strong>Start Time</strong> and <strong>End Time</strong> filters weren't
@@ -9035,7 +9061,7 @@ language</a>.</p>
 </ul>
 <hr />
 <h2 id="2026-03-10">2026-03-10</h2>
-<h3 id="announcement_68">Announcement</h3>
+<h3 id="announcement_69">Announcement</h3>
 <p><strong>Mobile SDK patch</strong></p>
 <p>This patch fixes an iOS SDK issue where end-users were directed to an
 unresponsive support page after closing a chat session and completing the
@@ -9072,7 +9098,7 @@ your instance.</p>
 <p>You can use the new <code>chats/CHAT_ID/resume</code> endpoint to resume chat sessions that
 are in <code>dismissed</code> or <code>va_dismissed</code> status. Resumed chat sessions display the
 chat history to both the end-user and the agent.</p>
-<h3 id="fixed_59">Fixed</h3>
+<h3 id="fixed_60">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where outbound calls were incorrectly prompting for customer
@@ -9290,7 +9316,7 @@ correct agent:</p>
 <li>Search results next page</li>
 <li>End of search results</li>
 </ul>
-<h3 id="announcement_69">Announcement</h3>
+<h3 id="announcement_70">Announcement</h3>
 <p><strong>Google Cloud CCaaS prerelease notes</strong></p>
 <p>Here are the pre-release notes for the next version of Google Cloud CCaaS. When
 we release the next version, we expect the new capabilities to be as shown here.</p>
@@ -9302,7 +9328,7 @@ system to search for end-users across both Contacts and Companies to ensure
 accurate identification during active sessions.</p>
 <hr />
 <h2 id="2026-02-25">2026-02-25</h2>
-<h3 id="announcement_70">Announcement</h3>
+<h3 id="announcement_71">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.0 patch</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -9314,7 +9340,7 @@ accurate identification during active sessions.</p>
 </ul>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="fixed_60">Fixed</h3>
+<h3 id="fixed_61">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -9386,7 +9412,7 @@ helps you track the following escalation details for wait-time virtual agents:</
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/raw-data-export-dictionary">Raw data export
 dictionary</a>.</p>
-<h3 id="announcement_71">Announcement</h3>
+<h3 id="announcement_72">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.0</strong></p>
 <p>We've released version 4.0 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -9394,7 +9420,7 @@ that you have chosen. For more information, see <a href="https://cloud.google.co
 schedules</a>.</p>
 <hr />
 <h2 id="2026-02-03">2026-02-03</h2>
-<h3 id="fixed_61">Fixed</h3>
+<h3 id="fixed_62">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue on the Agent Performance dashboard where the <strong>Disconnect
@@ -9448,7 +9474,7 @@ schedules</a>.</p>
 </ul>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-email-performance">Email</a>.</p>
-<h3 id="announcement_72">Announcement</h3>
+<h3 id="announcement_73">Announcement</h3>
 <p><strong>Advanced reporting dashboards 3.43</strong></p>
 <p>We've released version 3.43 of the advanced reporting dashboards.</p>
 <h3 id="feature_165">Feature</h3>
@@ -9466,7 +9492,7 @@ schedules</a>.</p>
 dashboard</a>.</p>
 <hr />
 <h2 id="2026-02-02">2026-02-02</h2>
-<h3 id="fixed_62">Fixed</h3>
+<h3 id="fixed_63">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls were incorrectly deflected to voicemail during
@@ -9582,7 +9608,7 @@ emails</a>.</p>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/call-settings#end-user-to-agent-calling">End-user to agent
 calling</a>.</p>
-<h3 id="announcement_73">Announcement</h3>
+<h3 id="announcement_74">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.44</strong></p>
 <p>We've released version 3.44 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
@@ -9728,7 +9754,7 @@ global or queue level.</p>
 message</a>.</p>
 <hr />
 <h2 id="2026-01-30">2026-01-30</h2>
-<h3 id="fixed_63">Fixed</h3>
+<h3 id="fixed_64">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue with NICE WFM export where queue abandoned calls were
@@ -9769,7 +9795,7 @@ This helps prevent the creation of duplicate records.</p>
 Service Cloud<strong>, a new </strong>Secondary Lookup Object<strong> checkbox appears
 in the </strong>Account Lookup** section.</p>
 </blockquote>
-<h3 id="announcement_74">Announcement</h3>
+<h3 id="announcement_75">Announcement</h3>
 <p><strong>Google Cloud CCaaS 4.0 prerelease notes</strong></p>
 <p>These are the prerelease notes for Google Cloud CCaaS version 4.0. When version
 4.0 is released, we expect the new capabilities to be as described here.</p>
@@ -9841,7 +9867,7 @@ to an email.</p>
 <p>Email Management<strong> section, there's a new </strong>Enable Assigned Agent
 Initials on Email List View** checkbox.</p>
 </blockquote>
-<h3 id="fixed_64">Fixed</h3>
+<h3 id="fixed_65">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls were incorrectly deflected to voicemail during
@@ -9950,7 +9976,7 @@ agent's <strong>Edit User</strong> page. To access the agent's <strong>Edit User
 to end-users using the web SDK.</p>
 <p>Administrators: The <strong>Web chat</strong> checkbox appears at <strong>Settings &gt;
 Forms &gt; Add template &gt; Custom form</strong>.</p>
-<h3 id="announcement_75">Announcement</h3>
+<h3 id="announcement_76">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.44 prerelease notes</strong></p>
 <p>These are the prerelease notes for Google Cloud CCaaS version 3.44. When version
 3.44 is released, the new capabilities are expected to be as described here.</p>
@@ -10034,14 +10060,14 @@ accessibility.</p>
 <strong>Keypad</strong>.</p>
 <hr />
 <h2 id="2025-12-26">2025-12-26</h2>
-<h3 id="announcement_76">Announcement</h3>
+<h3 id="announcement_77">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42.121 and 3.43.153 patches</strong></p>
 <p>These patches fix a security vulnerability that could expose customers'
 Personally Identifiable Information (PII). There is no change to the agent
 experience.</p>
 <hr />
 <h2 id="2025-12-23">2025-12-23</h2>
-<h3 id="announcement_77">Announcement</h3>
+<h3 id="announcement_78">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version
 3</a>. Starting on
@@ -10051,7 +10077,7 @@ web SDK v3 before that date to avoid breaking your integration with the web SDK.
 We are no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2025-12-16">2025-12-16</h2>
-<h3 id="announcement_78">Announcement</h3>
+<h3 id="announcement_79">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.43.144 patch</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -10067,7 +10093,7 @@ We are no longer adding new features to the web SDK v2.</p>
 </ul>
 <hr />
 <h2 id="2025-12-09">2025-12-09</h2>
-<h3 id="announcement_79">Announcement</h3>
+<h3 id="announcement_80">Announcement</h3>
 <p><strong>Mobile SDK version 2.15.1 patch</strong></p>
 <p>This patch adds the following updates to the Android SDK:</p>
 <ul>
@@ -10088,13 +10114,13 @@ use the <code>contactcenteraiplatform.googleapis.com/ContactCenter</code> resour
 filter your results to view only the log entries for Google Cloud CCaaS. For
 more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/view-log-entries">View log
 entries</a>.</p>
-<h3 id="announcement_80">Announcement</h3>
+<h3 id="announcement_81">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.43</strong></p>
 <p>We've released version 3.43 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule
 that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
 schedules</a>.</p>
-<h3 id="fixed_65">Fixed</h3>
+<h3 id="fixed_66">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue that occurred when a call was connected directly to an agent
@@ -10168,7 +10194,7 @@ see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/wai
 calls</a>.</p>
 <hr />
 <h2 id="2025-12-03">2025-12-03</h2>
-<h3 id="announcement_81">Announcement</h3>
+<h3 id="announcement_82">Announcement</h3>
 <p><strong>Google Cloud CCaaS patch 3.42.113</strong></p>
 <p>We've released patch 3.42.113 for Google Cloud CCaaS. This patch does the
 following:</p>
@@ -10179,7 +10205,7 @@ following:</p>
 </ul>
 <hr />
 <h2 id="2025-12-02">2025-12-02</h2>
-<h3 id="fixed_66">Fixed</h3>
+<h3 id="fixed_67">Fixed</h3>
 <p>We addressed the following iOS SDK issues in this release:</p>
 <ul>
 <li>Fixed an issue where the <strong>RATE YOUR EXPERIENCE</strong> dialog contained text that
@@ -10204,7 +10230,7 @@ following:</p>
 <li><strong>iOS SDK</strong>: <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#turn-off-push-notifications-at-global-level">Turn off push notifications at the global
   level</a></li>
 </ul>
-<h3 id="announcement_82">Announcement</h3>
+<h3 id="announcement_83">Announcement</h3>
 <p><strong>Mobile SDKs version 2.15.0</strong></p>
 <p>We've released version 2.15.0 of the mobile SDKs.</p>
 <hr />
@@ -10325,7 +10351,7 @@ at **Settings &gt; Queue &gt; Email &gt; Edit / View</p>
 <p>YOUR_QUEUE**.</p>
 </blockquote>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#email-signatures">Email signatures</a>.</p>
-<h3 id="fixed_67">Fixed</h3>
+<h3 id="fixed_68">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where Agent Assist generated incomplete or
@@ -10414,16 +10440,16 @@ can then make the media file available to the end-user during the session.</p>
 <p>New endpoint: <code>/apps/api/v1/chats/CHAT_ID/media/MEDIA_ID</code></p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/agent-attachments-chat-api">Agent file attachments with the chat platform
 API</a>.</p>
-<h3 id="announcement_83">Announcement</h3>
+<h3 id="announcement_84">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42</strong></p>
 <p>We've released version 3.42 of Google Cloud CCaaS.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
 <hr />
 <h2 id="2025-11-17">2025-11-17</h2>
-<h3 id="announcement_84">Announcement</h3>
+<h3 id="announcement_85">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.41</strong></p>
 <p>We've released version 3.41 of the advanced reporting dashboards.</p>
-<h3 id="fixed_68">Fixed</h3>
+<h3 id="fixed_69">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where the <strong>Chat Agent Metrics (Historical)</strong> explore and the <strong>Agent Metrics (Historical)</strong> explore returned different data for chats handled. This resulted in inconsistent chat handling metrics in dashboards.</li>
@@ -10459,7 +10485,7 @@ API</a>.</p>
 <p>We've optimized real-time dashboards to provide faster loading and refresh times.</p>
 <hr />
 <h2 id="2025-11-14">2025-11-14</h2>
-<h3 id="fixed_69">Fixed</h3>
+<h3 id="fixed_70">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where Agent Assist generated incomplete or
@@ -10608,7 +10634,7 @@ transfers.</p>
 <p>Administrators: A new <strong>Allow incoming Email Transfers</strong> toggle appears in the
 settings pane at <strong>Settings &gt; Queue &gt; Email &gt;
 Edit / View &gt; YOUR_QUEUE</strong>.</p>
-<h3 id="announcement_85">Announcement</h3>
+<h3 id="announcement_86">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.42 pre-release notes</strong></p>
 <p>Here are the pre-release notes for Google Cloud CCaaS version 3.42. When we
 release version 3.42, we expect the new capabilities to be as shown here.</p>
@@ -10697,7 +10723,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>Administrators: The <strong>General</strong> pane on the <strong>Email</strong> page at <strong>Settings &gt; Email</strong> contains a new <strong>Enable Email Transfer Between Queues</strong> checkbox.</p>
 <p>User experience change: In the email adapter, a new <strong>Transfer</strong> button appears when an agent views an assigned email.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/let-agents-transfer-email-sessions-to-a-queue">Let agents transfer email sessions to a queue</a>.</p>
-<h3 id="fixed_70">Fixed</h3>
+<h3 id="fixed_71">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where hyperlinks in the after-hours message of the web SDK were broken.</li>
@@ -10726,7 +10752,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-31">2025-10-31</h2>
-<h3 id="announcement_86">Announcement</h3>
+<h3 id="announcement_87">Announcement</h3>
 <p><strong>Google Cloud CCaaS 3.40</strong></p>
 <p>We've released version 3.40 of Google Cloud CCaaS, including the web SDK.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -10765,7 +10791,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <h3 id="feature_233">Feature</h3>
 <p><strong>Agent desktop maintains state after refresh</strong></p>
 <p>While you're using the agent desktop, if you refresh your browser, the agent desktop now maintains its state. This means that active conversations, finished tabs, and recently closed sessions remain as they were before the refresh.</p>
-<h3 id="fixed_71">Fixed</h3>
+<h3 id="fixed_72">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue that prevented administrators from configuring virtual agents on the top level for IVR queues.</li>
@@ -10798,7 +10824,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.</p>
 <hr />
 <h2 id="2025-10-30">2025-10-30</h2>
-<h3 id="announcement_87">Announcement</h3>
+<h3 id="announcement_88">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.40</strong></p>
 <p>We've released version 3.40 of the advanced reporting dashboards.</p>
 <h3 id="feature_234">Feature</h3>
@@ -10807,7 +10833,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <h3 id="feature_235">Feature</h3>
 <p><strong>New Agent Preference table in the Agent Availability dashboard</strong></p>
 <p>We've added a new <strong>Agent Preference</strong> table to the <strong>Agent Availability</strong> dashboard. This table can help you ensure that queues have properly skilled agents assigned to them. It can also help identify agents who improperly change their availability filters. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-agent-availability">Agent availability dashboard</a>.</p>
-<h3 id="fixed_72">Fixed</h3>
+<h3 id="fixed_73">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue where the queue groups dashboard failed to display data for users with a custom role assigned to a queue or queue group.</li>
@@ -10821,7 +10847,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-21">2025-10-21</h2>
-<h3 id="announcement_88">Announcement</h3>
+<h3 id="announcement_89">Announcement</h3>
 <p><strong>Advanced reporting dashboards version 3.40</strong></p>
 <p>We've released version 3.40 of the advanced reporting dashboards.</p>
 <h3 id="feature_236">Feature</h3>
@@ -10830,7 +10856,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <h3 id="feature_237">Feature</h3>
 <p><strong>New Audit Log dashboard</strong></p>
 <p>We've added a new <strong>Audit log</strong> dashboard to help you track changes to the configuration of your instance. The dashboard tracks changes to the settings on the <strong>Developer Settings</strong> page, and displays information such as the type of change, who made the change, and when. This dashboard is similar in format to the advanced reporting dashboards, but you can't save it as a new dashboard. You access the <strong>Audit Log</strong> dashboard from the <strong>Settings</strong> menu. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-audit-log">Audit log dashboard</a>.</p>
-<h3 id="fixed_73">Fixed</h3>
+<h3 id="fixed_74">Fixed</h3>
 <p>We addressed the following issues in this release:</p>
 <ul>
 <li>Fixed an issue that caused the <strong>Agent Activity Timeline</strong> dashboard to display inaccurate or incomplete data.</li>
@@ -10843,7 +10869,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-10-15">2025-10-15</h2>
-<h3 id="announcement_89">Announcement</h3>
+<h3 id="announcement_90">Announcement</h3>
 <p><strong>Mobile SDK patch 2.14.1 is released</strong></p>
 <p>This patch adds the <code>didHandleUjetError</code> function to the iOS SDK. The <code>didHandleUjetError</code> function can listen for and handle the following errors:</p>
 <ul>
@@ -10857,7 +10883,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/ios-sdk-guide#fallback">Fallback</a>.</p>
 <hr />
 <h2 id="2025-10-14">2025-10-14</h2>
-<h3 id="announcement_90">Announcement</h3>
+<h3 id="announcement_91">Announcement</h3>
 <p><strong>Portal version 3.40 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.40. When we release version 3.40, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_238">Feature</h3>
@@ -10895,7 +10921,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <h3 id="feature_244">Feature</h3>
 <p><strong>Web SDK: Support for hiding the Start a new conversation button</strong></p>
 <p>You can now configure the web SDK to hide the <strong>Start a new conversation</strong> button on the end-user's chat screen after the session ends.</p>
-<h3 id="fixed_74">Fixed</h3>
+<h3 id="fixed_75">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue that prevented administrators from configuring virtual agents on the top level for IVR queues.</li>
@@ -10928,7 +10954,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an issue where chat metadata wasn't saved to external storage. This occurred when an end-user ended a chat after escalating from a virtual agent but before being connected to a human agent.</p>
 <hr />
 <h2 id="2025-10-09">2025-10-09</h2>
-<h3 id="announcement_91">Announcement</h3>
+<h3 id="announcement_92">Announcement</h3>
 <p><strong>Version 3.39 is released</strong></p>
 <p>All release notes published on this date are part of version 3.39.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -11021,7 +11047,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>Chats Queued</strong></li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities">Advanced capabilities</a>.</p>
-<h3 id="fixed_75">Fixed</h3>
+<h3 id="fixed_76">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where incoming chats took precedence over the in-progress chat.</li>
@@ -11089,12 +11115,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: <strong>Queue Groups Dashboard Calls</strong> and <strong>Queued Calls Status Dashboard</strong>.</p>
 <hr />
 <h2 id="2025-09-25">2025-09-25</h2>
-<h3 id="announcement_92">Announcement</h3>
+<h3 id="announcement_93">Announcement</h3>
 <p><strong>Web SDK version 2 will be shut down on June 26, 2026</strong></p>
 <p>On June 26, 2025, we announced the launch of <a href="https://cloud.google.com/contact-center/ccai-platform/docs/release-notes#June_26_2025">Web SDK version 3</a>. Starting on <strong>June 26, 2026</strong>, the web SDK v2 will no longer function. Be sure to <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">update your website</a> to use the web SDK v3 before that date to avoid breaking your integration with the web SDK. We are no longer adding new features to the web SDK v2.</p>
 <hr />
 <h2 id="2025-09-04">2025-09-04</h2>
-<h3 id="announcement_93">Announcement</h3>
+<h3 id="announcement_94">Announcement</h3>
 <p><strong>Agent desktop is GA</strong></p>
 <p>Agent desktop is now <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available (GA)</a>. Agent desktop is a customizable interface that provides agents quick access to the information and tools they need to handle customer sessions. The desktop layout includes the agent adapter as well as configurable panels that display information or tools. You can configure a distinct desktop layout for each session type: inbound calls, outbound calls, or chats. You can then configure which desktop layout that an agent sees when they answer an inbound call, place an outbound call, or handle a chat. You can also configure announcements to communicate updates, alerts, and other important information directly to agents. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/agent-desktop-overview">Agent desktop</a>.</p>
 <p>The agent desktop provides the following capabilities:</p>
@@ -11107,7 +11133,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-09-02">2025-09-02</h2>
-<h3 id="announcement_94">Announcement</h3>
+<h3 id="announcement_95">Announcement</h3>
 <p><strong>Mobile SDK 2.14 is released</strong></p>
 <p>Mobile SDK 2.14 includes the following updates:</p>
 <ul>
@@ -11132,11 +11158,11 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/va-to-va-transfers#hide-transfer-messages-in-chat-sessions">Hide transfer messages in chat sessions</a>.</p>
 <hr />
 <h2 id="2025-08-29">2025-08-29</h2>
-<h3 id="fixed_76">Fixed</h3>
+<h3 id="fixed_77">Fixed</h3>
 <p>Fixed an issue where the Android SDK wouldn't minimize when an end-user clicked a deep link.</p>
 <hr />
 <h2 id="2025-08-27">2025-08-27</h2>
-<h3 id="announcement_95">Announcement</h3>
+<h3 id="announcement_96">Announcement</h3>
 <p><strong>Portal version 3.39 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.39. When we release version 3.39, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_253">Feature</h3>
@@ -11216,7 +11242,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>Chats Queued</strong></li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-advanced-capabilities">Advanced capabilities</a>.</p>
-<h3 id="fixed_77">Fixed</h3>
+<h3 id="fixed_78">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where incoming chats took precedence over the in-progress chat.</li>
@@ -11283,7 +11309,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 * Fixed an advanced reporting issue where callbacks waiting metrics didn't match in the following dashboards: <strong>Queue Groups Dashboard Calls</strong> and <strong>Queued Calls Status Dashboard</strong>.</p>
 <hr />
 <h2 id="2025-08-20">2025-08-20</h2>
-<h3 id="announcement_96">Announcement</h3>
+<h3 id="announcement_97">Announcement</h3>
 <p><strong>Version 3.37 is released</strong></p>
 <p>All release notes published on this date are part of version 3.37.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -11321,7 +11347,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>CSAT</strong>. Get insights into the customer satisfaction (CSAT) ratings that end-users give to their sessions with agents. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-csat">CSAT dashboards</a>.</li>
 <li><strong>Dispositions</strong>. Get disposition information to gain insights into common end-user issues and concerns. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/dashboards-dispositions">Dispositions dashboards</a>.</li>
 </ul>
-<h3 id="fixed_78">Fixed</h3>
+<h3 id="fixed_79">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.</li>
@@ -11351,12 +11377,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-08-13">2025-08-13</h2>
-<h3 id="announcement_97">Announcement</h3>
+<h3 id="announcement_98">Announcement</h3>
 <p><strong>Check the version number of your instance</strong></p>
 <p>You can now check the version number of your instance and compare it with the version numbers of the updates and patches that Google announces in these release notes. In this way you can know which capabilities are available in your instance. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/get-started#check_the_version_number_of_your_instance">Check the version number of your instance</a>.</p>
 <hr />
 <h2 id="2025-08-11">2025-08-11</h2>
-<h3 id="announcement_98">Announcement</h3>
+<h3 id="announcement_99">Announcement</h3>
 <p><strong>Availability in three additional regions</strong></p>
 <p>Google Cloud CCaaS is now available in the following three additional regions:</p>
 <ul>
@@ -11367,12 +11393,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>In each of these regions, Workforce Management is available and advanced reporting isn't available. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/localities#regions">Google Cloud regions</a>.</p>
 <hr />
 <h2 id="2025-07-24">2025-07-24</h2>
-<h3 id="announcement_99">Announcement</h3>
+<h3 id="announcement_100">Announcement</h3>
 <p><strong>Mobile SDK patch 2.13.1 is released</strong></p>
 <p>This patch fixes an issue where the Android SDK didn't support deep linking in the customizable link format.</p>
 <hr />
 <h2 id="2025-07-10">2025-07-10</h2>
-<h3 id="announcement_100">Announcement</h3>
+<h3 id="announcement_101">Announcement</h3>
 <p><strong>Portal version 3.37 pre-release notes</strong></p>
 <p>Here are the pre-release notes for portal version 3.37. When we release version 3.37, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_268">Feature</h3>
@@ -11397,7 +11423,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p><strong>Web SDK version 3.37</strong></p>
 <p>Starting with version 3.37, web SDK releases align with portal releases and share the same version number.</p>
 <p>Web SDK version 3.37 includes the following update: we've improved the accessibily of the web SDK to be in compliance with the European Accessibility Act.</p>
-<h3 id="fixed_79">Fixed</h3>
+<h3 id="fixed_80">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where a blank error message box appeared in the agent adapter when a call connected.</li>
@@ -11426,7 +11452,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-07-08">2025-07-08</h2>
-<h3 id="announcement_101">Announcement</h3>
+<h3 id="announcement_102">Announcement</h3>
 <p><strong>Mobile SDK 2.13 is released</strong></p>
 <p>Mobile SDK 2.13 includes the following updates:</p>
 <ul>
@@ -11441,7 +11467,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>End-users can navigate the user interface using keyboard shortcuts in conformance with the W3C Web Content Accessibility Guidelines.</li>
 <li>You can configure your instance to let end-users skip customer satisfaction surveys.</li>
 </ul>
-<h3 id="fixed_80">Fixed</h3>
+<h3 id="fixed_81">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>
@@ -11460,12 +11486,12 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-07-07">2025-07-07</h2>
-<h3 id="announcement_102">Announcement</h3>
+<h3 id="announcement_103">Announcement</h3>
 <p><strong>Session metadata in Conversational Insights conversations is GA</strong></p>
 <p>The Google Cloud CCaaS capability of including session metadata when creating conversations in Conversational Insights is now <a href="https://cloud.google.com/products?e=48754805&amp;hl=en#product-launch-stages">generally available (GA)</a>. Metadata values are available for each conversation. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/conversational-insights">Conversational Insights and Quality AI</a>.</p>
 <hr />
 <h2 id="2025-07-02">2025-07-02</h2>
-<h3 id="announcement_103">Announcement</h3>
+<h3 id="announcement_104">Announcement</h3>
 <p><strong>Version 3.36 is released</strong></p>
 <p>All release notes published on this date are part of version 3.36.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -11489,7 +11515,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <p>Administrators: The <strong>CRM Record Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new settings at <strong>Closed record options when initiating an API-scheduled call</strong>.</p>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/schedule-calls-salesforce">Schedule calls with Salesforce</a>.</p>
-<h3 id="fixed_81">Fixed</h3>
+<h3 id="fixed_82">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls weren't being assigned to the correct agent in Google Cloud CCaaS reporting.</li>
@@ -11518,7 +11544,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-06-26">2025-06-26</h2>
-<h3 id="announcement_104">Announcement</h3>
+<h3 id="announcement_105">Announcement</h3>
 <p><strong>Web SDK version 3</strong></p>
 <p>We're pleased to announce that the web SDK v3 is now <a href="https://cloud.google.com/products#product-launch-stages">generally available (GA)</a>. The web SDK v3 is built on the <a href="https://cloud.google.com/contact-center/ccai-platform/docs/headless-web-guide">headless web SDK</a>, so all of the methods that are available on a headless SDK client are also available with the web SDK v3 widget.</p>
 <p><strong>Deprecation notice</strong></p>
@@ -11545,7 +11571,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p>For help upgrading to web SDK v3, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/web-sdk-v3-upgrade">Upgrade from web SDK version 2 to web SDK version 3</a>. If you've been using the Private Preview version of web SDK v3, be sure to update your implementations to access <code>widget.js</code> from your Google Cloud CCaaS instance.</p>
 <hr />
 <h2 id="2025-06-23">2025-06-23</h2>
-<h3 id="announcement_105">Announcement</h3>
+<h3 id="announcement_106">Announcement</h3>
 <p><strong>Version 3.36 pre-release notes</strong></p>
 <p>Here are the pre-release notes for version 3.36. When we release version 3.36, we expect the new capabilities to be as shown here.</p>
 <h3 id="feature_277">Feature</h3>
@@ -11565,7 +11591,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li><strong>Look up record status and cancel scheduled calls for closed records</strong>. Your instance looks up record status before making a scheduled call and cancels scheduled calls for records that are closed.</li>
 </ul>
 <p>Administrators: The <strong>CRM Record Creation Details</strong> pane at <strong>Settings &gt; Operation Management</strong> has new settings at <strong>Closed record options when initiating an API-scheduled call</strong>.</p>
-<h3 id="fixed_82">Fixed</h3>
+<h3 id="fixed_83">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls weren't being assigned to the correct agent in Google Cloud CCaaS reporting.</li>
@@ -11592,7 +11618,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_106">Announcement</h3>
+<h3 id="announcement_107">Announcement</h3>
 <p><strong>Salesforce ICU Update</strong></p>
 <p>This is for Google Contact Center as a Service (CCaaS) customers that use Salesforce integration with CCaaS.</p>
 <p>On <strong>June 15th, 2025</strong>, Salesforce is rolling out an automatic upgrade to its International Components for Unicode (ICU) locale data. This affects how date, time, number, and currency formatting are handled across Apex, Visualforce, and Lightning components.</p>
@@ -11656,7 +11682,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <p><strong>Important</strong>: This will only be effective if completed before <strong>June 15th 2025</strong>.</p>
 <hr />
 <h2 id="2025-06-05">2025-06-05</h2>
-<h3 id="announcement_107">Announcement</h3>
+<h3 id="announcement_108">Announcement</h3>
 <p><strong>Patch 3.35.15 is released</strong></p>
 <p>This patch does the following:</p>
 <ul>
@@ -11666,7 +11692,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-05-28">2025-05-28</h2>
-<h3 id="announcement_108">Announcement</h3>
+<h3 id="announcement_109">Announcement</h3>
 <p><strong>Headless web SDK 3.6.5 is released</strong></p>
 <p>This release does the following:</p>
 <ul>
@@ -11676,7 +11702,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 </ul>
 <hr />
 <h2 id="2025-05-27">2025-05-27</h2>
-<h3 id="announcement_109">Announcement</h3>
+<h3 id="announcement_110">Announcement</h3>
 <p><strong>Version 3.35 is released</strong></p>
 <p>All release notes published on this date are part of version 3.35.</p>
 <p>The timing of the update to your instance depends on the deployment schedule that you have chosen. For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment schedules</a>.</p>
@@ -11710,7 +11736,7 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
 <li>The email adapter has a new <strong>Insert Image</strong> button.</li>
 </ul>
 <p>For more information, see <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-adapter">Agent email adapter</a> and <a href="https://cloud.google.com/contact-center/ccai-platform/docs/email-channel-config#configure-auto-response-email">Configure an auto-response email</a>.</p>
-<h3 id="fixed_83">Fixed</h3>
+<h3 id="fixed_84">Fixed</h3>
 <p>The following issues were addressed in this release:</p>
 <ul>
 <li>Fixed an issue where calls were were being logged as <strong>Call with unknown contact</strong> in HubSpot instead of under the correct contact name.</li>
@@ -11748,6 +11774,9 @@ exchanges contact and result files through a shared Cloud Storage bucket.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#google-cloud-contact-center-as-a-service">Google Cloud Contact Center as a Service</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-08" class="nav-link">2026-10-08</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-02" class="nav-link">2026-10-02</a>
           </li>

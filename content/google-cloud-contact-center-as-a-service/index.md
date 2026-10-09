@@ -1,5 +1,37 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-10-08
+
+### Announcement
+
+**Google Cloud CCaaS 6.19**
+
+We've released version 6.19 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where agents could be assigned more concurrent chats than
+  their configured maximum limit when multiple chat offers arrived almost
+  simultaneously.
+* Fixed an issue where calls were unevenly distributed among available agents
+  on skills-based queues.
+* Fixed an issue where supervisor-initiated sign-outs silently discarded
+  mandatory interaction dispositions during an agent's wrap-up period.
+* Fixed an issue where an agent's corporate email address and internal ID were
+  exposed in the browser's network metadata during a virtual agent to human
+  escalation.
+* Fixed an issue where voice calls were incorrectly routed back to the virtual
+  agent queue instead of the intended destination.
+* Fixed an issue where inbound callers experienced a 2-second delay when
+  connecting to an agent.
+
+---
 ## 2026-10-02
 
 ### Announcement

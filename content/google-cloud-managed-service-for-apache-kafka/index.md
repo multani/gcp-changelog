@@ -1,5 +1,15 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-10-09
+
+### Change
+
+The format for bootstrap addresses and broker URLs has changed for new
+Managed Service for Apache Kafka clusters. To learn how to get a cluster's
+bootstrap address, see
+[View a Managed Service for Apache Kafka cluster](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/view-cluster#view-bootstrap-address).
+
+---
 ## 2026-09-10
 
 ### Feature

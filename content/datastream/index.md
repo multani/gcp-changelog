@@ -1,5 +1,19 @@
 # Datastream
 
+## 2026-10-09
+
+### Feature
+
+Datastream now supports replicating SQL Server `GEOMETRY` and
+`GEOGRAPHY` spatial data types.
+
+For more information, see the following:
+
+* [Map SQL Server data types to Datastream unified
+  types](https://docs.cloud.google.com/datastream/docs/unified-types#map-sqlserver)
+* [Data type mappings in BigQuery](https://docs.cloud.google.com/datastream/docs/bq-map-data-types)
+
+---
 ## 2026-09-30
 
 ### Feature

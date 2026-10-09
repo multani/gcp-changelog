@@ -2,9 +2,51 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-10-02T00:00:00+00:00</updated>
+  <updated>2026-10-08T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-08:announcement:0</id>
+    <published>2026-10-08T00:00:00+00:00</published>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 6.19</strong></p>
+<p>We've released version 6.19 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>Version 6.19 of our CCaaS platform has been released. The update schedule for your instance will vary based on your chosen deployment plan. Please refer to the deployment schedules documentation for more details.</summary>
+    <title>Announcement: New CCaaS Version Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-08:fixed:1</id>
+    <published>2026-10-08T00:00:00+00:00</published>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where agents could be assigned more concurrent chats than
+  their configured maximum limit when multiple chat offers arrived almost
+  simultaneously.</li>
+<li>Fixed an issue where calls were unevenly distributed among available agents
+  on skills-based queues.</li>
+<li>Fixed an issue where supervisor-initiated sign-outs silently discarded
+  mandatory interaction dispositions during an agent's wrap-up period.</li>
+<li>Fixed an issue where an agent's corporate email address and internal ID were
+  exposed in the browser's network metadata during a virtual agent to human
+  escalation.</li>
+<li>Fixed an issue where voice calls were incorrectly routed back to the virtual
+  agent queue instead of the intended destination.</li>
+<li>Fixed an issue where inbound callers experienced a 2-second delay when
+  connecting to an agent.</li>
+</ul>]]></content>
+    <summary>This release resolves several critical issues, including incorrect agent assignment limits, uneven call distribution, data exposure during escalations, and delays in call connections. These fixes ensure a more stable and efficient experience for both agents and callers.</summary>
+    <title>Fixed: Resolved Agent and Call Routing Issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -4,6 +4,17 @@
 
 ### Feature
 
+**Gemini Enterprise: Gemini 3.8 Flash regional availability in Singapore**
+
+Gemini 3.8 Flash is generally available (GA) in Singapore (`sg`) with
+in-region at-rest data residency (DRZ) and machine learning processing (MLP).
+
+For more information, see [Data residency for Gemini Enterprise
+Standard and Plus Editions and Gemini Notebook
+Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+
+### Feature
+
 **Gemini Enterprise: Anthropic Claude Opus 5.5 and Claude Sonnet 5.5 in AI
 developer tools**
 

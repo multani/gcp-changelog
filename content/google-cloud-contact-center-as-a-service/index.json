@@ -1,6 +1,24 @@
 {
   "name": "Google Cloud Contact Center as a Service",
   "entries": {
+    "2026-10-08": [
+      {
+        "kind": "Announcement",
+        "content": "**Google Cloud CCaaS 6.19**\n\nWe've released version 6.19 of Google Cloud CCaaS.\n\nThe timing of the update to your instance depends on the deployment schedule\nthat you have chosen. For more information, see [Deployment\nschedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).",
+        "summary": {
+          "title": "New CCaaS Version Released",
+          "summary": "Version 6.19 of our CCaaS platform has been released. The update schedule for your instance will vary based on your chosen deployment plan. Please refer to the deployment schedules documentation for more details."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "This release addresses the following issues:\n\n* Fixed an issue where agents could be assigned more concurrent chats than\n  their configured maximum limit when multiple chat offers arrived almost\n  simultaneously.\n* Fixed an issue where calls were unevenly distributed among available agents\n  on skills-based queues.\n* Fixed an issue where supervisor-initiated sign-outs silently discarded\n  mandatory interaction dispositions during an agent's wrap-up period.\n* Fixed an issue where an agent's corporate email address and internal ID were\n  exposed in the browser's network metadata during a virtual agent to human\n  escalation.\n* Fixed an issue where voice calls were incorrectly routed back to the virtual\n  agent queue instead of the intended destination.\n* Fixed an issue where inbound callers experienced a 2-second delay when\n  connecting to an agent.",
+        "summary": {
+          "title": "Resolved Agent and Call Routing Issues",
+          "summary": "This release resolves several critical issues, including incorrect agent assignment limits, uneven call distribution, data exposure during escalations, and delays in call connections. These fixes ensure a more stable and efficient experience for both agents and callers."
+        }
+      }
+    ],
     "2026-10-02": [
       {
         "kind": "Announcement",

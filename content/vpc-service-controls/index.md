@@ -1,5 +1,23 @@
 # VPC Service Controls
 
+## 2026-10-08
+
+### Feature
+
+**VPC Service Controls feature (Status: [Preview](https://cloud.google.com/products#product-launch-stages))**:
+Support for automated remediation suggestions is available in the
+VPC Service Controls violation analyzer.
+
+Remediation suggestions analyze access denial events and generate actionable,
+narrowly scoped configuration changes to resolve perimeter denials and adhere to
+the principle of least privilege. The remediation engine can automatically
+propose ingress rules, egress rules, VPC accessible services updates, and
+existing or new context-aware access levels.
+
+For more information, see
+[Resolve access denials with remediation suggestions](https://docs.cloud.google.com/vpc-service-controls/docs/remediation-suggestions).
+
+---
 ## 2026-09-30
 
 ### Feature

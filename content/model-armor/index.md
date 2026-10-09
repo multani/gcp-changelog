@@ -1,5 +1,20 @@
 # Model Armor
 
+## 2026-10-09
+
+### Feature
+
+Model Armor includes enhanced prompt injection and jailbreak
+protection for Workspace data. This capability improves detection accuracy and
+minimizes false positives when screening Workspace content, such
+as emails, documents, and files.
+
+This capability is available on multi-region endpoints in the US (`us`) and EU
+(`eu`) for templates and floor setting configured with
+[filter version](https://docs.cloud.google.com/model-armor/set-filter-version) `v3` or later, including the
+`Stable` and `Latest` aliases.
+
+---
 ## 2026-09-28
 
 ### Feature

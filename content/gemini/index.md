@@ -1,5 +1,34 @@
 # Gemini
 
+## 2026-10-09
+
+### Announcement
+
+Sale of Gemini Code Assist subscriptions is ending. Starting October 9, 2026,
+new Gemini Code Assist Standard and Enterprise subscriptions can no longer be
+purchased. Existing subscriptions will continue to auto-renew through the rest
+of 2026, but auto-renewal will end in 2027. For more information, see
+[Gemini Code Assist
+Standard and Enterprise subscriptions](https://docs.cloud.google.com/gemini/docs/codeassist/sunset).
+
+For alternative AI developer tools, use Antigravity, which is available through
+eligible [Gemini Enterprise subscriptions](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
+and through [Gemini Enterprise Agent Platform](https://antigravity.google/docs/enterprise/#gemini-enterprise-agent-platform-api-setup).
+
+### Announcement
+
+Sale of Gemini Code Assist subscriptions is ending. Starting October 9, 2026,
+new Gemini Code Assist Standard and Enterprise subscriptions can no longer be
+purchased. Existing subscriptions will continue to auto-renew through the rest
+of 2026, but auto-renewal will end in 2027. For more information, see
+[Gemini Code Assist
+Standard and Enterprise subscriptions](https://docs.cloud.google.com/gemini/docs/codeassist/sunset).
+
+For alternative AI developer tools, use Antigravity, which is available through
+eligible [Gemini Enterprise subscriptions](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-overview)
+and through [Gemini Enterprise Agent Platform](https://antigravity.google/docs/enterprise/#gemini-enterprise-agent-platform-api-setup).
+
+---
 ## 2026-09-15
 
 ### Other

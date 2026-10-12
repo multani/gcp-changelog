@@ -1,5 +1,12 @@
 # Managed Service for Apache Spark
 
+## 2026-10-05
+
+### Change
+
+**Managed Service for Apache Spark** (formerly Google Cloud Serverless for Apache Spark): Users may now specify short template names when creating a serverless session.
+
+---
 ## 2026-09-30
 
 ### Announcement

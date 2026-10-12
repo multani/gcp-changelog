@@ -11,6 +11,40 @@
         }
       }
     ],
+    "2026-09-26": [
+      {
+        "kind": "Security",
+        "content": "**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.\n\n**Security Bulletin – Appliance:**\n\n* Addressed multiple input sanitization vulnerabilities, including SQL injection and cross-site scripting (XSS), across appliance platform server utilities.\n* Remediated an authorization and validation vulnerability in user management workflows.\n\n**Security Bulletin – Host Agent:**\n\n* Strengthened local RPC interface access controls and improved credential isolation between concurrent backup jobs on the Host Agent.\n* Hardened database layer against command injection, path traversal, and unauthorized directory permission modifications.\n* Remediated local privilege escalation vulnerabilities in Oracle and SAP HANA host agent environment and profile handling.\n* Improved temporary file creation and link handling across Windows and Linux Host Agents to mitigate symlink race conditions.\n* Addressed buffer overflow vulnerabilities in Linux Host Agent components.\n\n**Libraries Bugs (Appliance):**\n\n* Upgraded third-party runtime and application libraries (including Go and Java packages such as Netty and Jackson Databind) on the appliance management server.\n* Updated the Linux kernel and base operating system packages across Backup and DR appliance virtual machine images to mitigate reported vulnerabilities.",
+        "summary": {
+          "title": "Security Updates for Backup and DR",
+          "summary": "This release addresses critical security vulnerabilities in the Backup and DR appliance and host agent, including SQL injection, XSS, and privilege escalation. We recommend upgrading to version 11.0.17.496 to ensure your environment is protected."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.\n\nThese issues have been resolved for the Host Agent:\n\n* Resolved an issue where Oracle ASM backups failed with the error \"Failed to create ASM staging disk group\".\n* Resolved an issue causing Oracle RAC database restores to fail with error 6407 due to invalid node names in the nodelist.\n* Fixed a PostgreSQL backup failure during snapshot preparation where the database user lacked execute permissions on `pg_backup_start`.\n* Corrected an issue where the Oracle mount process was unable to locate the undo catalog configuration file.\n* Improved Oracle backup metadata processing to support databases containing a large volume of datafiles.\n* Resolved an issue where discovery of SAP Sybase instances failed when multiple instances were configured under different user accounts.\n* Fixed an issue causing PostgreSQL database discovery to fail during host agent discovery workflows.\n* Resolved an issue that prevented successful discovery of MySQL database applications.",
+        "summary": {
+          "title": "Backup and DR Host Agent Fixes",
+          "summary": "Version 11.0.17.496 of Backup and DR includes several fixes for the Host Agent, addressing issues with Oracle ASM and RAC backups/restores, PostgreSQL and MySQL discovery, and SAP Sybase instance discovery. It also improves Oracle backup metadata processing."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.\n\n**Non-Breaking Changes (Host Agent):**\n\n* Modernized host agent database integration scripts for IBM Db2, MySQL, MariaDB, SAP Sybase IQ, and MaxDB to standard Bash execution for improved stability and security hardening.",
+        "summary": {
+          "title": "Backup and DR Updates Available",
+          "summary": "Backup and DR release 11.0.17.496 includes modernized host agent database integration scripts for Db2, MySQL, MariaDB, SAP Sybase IQ, and MaxDB. Upgrading to this version is recommended for improved stability and security."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.\n\nThese features are now available for the Host Agent:\n\n* Added Linux Changed Block Tracking (CBT) support for Red Hat Enterprise Linux (RHEL) 10 OS family kernels.\n* Expanded Linux Changed Block Tracking (CBT) support across the latest kernel updates for RHEL 8, RHEL 9, and RHEL 10 distributions.",
+        "summary": {
+          "title": "Backup and DR Host Agent Updates",
+          "summary": "Backup and DR release 11.0.17.496 introduces new Host Agent features, including expanded Linux Changed Block Tracking (CBT) support for RHEL 8, 9, and 10, and initial support for RHEL 10 kernels. Upgrading to this version is recommended to receive these updates."
+        }
+      }
+    ],
     "2026-09-16": [
       {
         "kind": "Feature",

@@ -1,5 +1,56 @@
 # Looker
 
+## 2026-10-09
+
+### Announcement
+
+Beginning October 5, 2026, the following features will be automatically enabled for Looker (original) instances running Looker 26.18. Feature enablement for Looker (Google Cloud core) will be announced separately.
+
+### Feature
+
+Looker now includes built-in support for the **Dremio 26.0+ (Arrow Flight SQL)** dialect. The **Dremio 26.0+ (Arrow Flight SQL)** uses the bundled Apache Arrow Flight SQL JDBC driver, so that you don't have to install unpackaged custom JDBC driver JAR files. See the [Dremio](https://docs.cloud.google.com/looker/docs/db-config-dremio) documentation page for more information.
+
+### Feature
+
+The **AI-Assisted Quick Starts** feature, called [**Starter questions**](https://docs.cloud.google.com/looker/docs/gemini-quick-starts) in the new Explore experience, is now generally available.
+
+### Feature
+
+The new [**Diagnose & Repair** tool](https://docs.cloud.google.com/looker/docs/diagnosing-and-repairing-git-projects) evaluates your LookML project repository across eight diagnostic test checks in either your personal development environment or the shared production environment. When issues are found, Looker can automatically perform repairs (such as removing stale lock files, fixing file permissions, or repairing corrupted object indexes) or rebuild damaged repositories while safeguarding uncommitted changes on a dedicated recovery branch.
+
+### Feature
+
+[Looker Continuous Integration (CI)](https://docs.cloud.google.com/looker/docs/continuous-integration) now includes the [Style Validator](https://docs.cloud.google.com/looker/docs/ci-style-validator), which enforces LookML coding standards, naming conventions, and structural best practices across your LookML project. You can run the Style Validator with the default built-in ruleset or customize rule severities, file exclusions, path overrides, and custom rules by adding an `lkmlstyle.yaml` configuration file to your project repository.
+
+### Feature
+
+Now available in [preview](https://cloud.google.com/products#product-launch-stages), [Conversational Analytics agentic workflows](https://docs.cloud.google.com/looker/docs/conversational-analytics-agentic-workflows-overview) support [scheduled agentic workflows](https://docs.cloud.google.com/looker/docs/conversational-analytics-scheduled-agentic-workflows) in addition to [triggered agentic workflows](https://docs.cloud.google.com/looker/docs/conversational-analytics-triggered-agentic-workflows). You can use scheduled agentic workflows to schedule recurring deliveries of AI-generated insights summaries, data tables, visualizations, and PDF reports to email or Slack by using natural language. Recipients can select **Investigate** in a workflow notification to open a private, persistent conversation with the data agent.
+
+Users and admins can manage workflows on the updated [**Manage Workflows** user page](https://docs.cloud.google.com/looker/docs/user-workflows) and [**Manage Workflows** admin page](https://docs.cloud.google.com/looker/docs/admin-panel-alerts-and-schedules-workflows), respectively, and Looker admins can monitor scheduled workflow runs and troubleshoot errors on the new [**Workflow Executions** admin page](https://docs.cloud.google.com/looker/docs/admin-panel-alerts-and-schedules-workflow-executions).
+
+Workflows that were created in versions earlier than Looker 26.14 appear on the **Legacy Workflows** tab and must be recreated.
+
+### Feature
+
+Now available in preview, [Looker **Data Apps**](https://docs.cloud.google.com/looker/docs/data-apps) are freeform canvas dashboards that are built by local AI coding agents, such as Gemini CLI, Claude Code, or Cursor, from natural-language prompts. **Data Apps** give you complete visual layout control (including absolute positioning, overlapping elements, and custom web components) while remaining bound to Looker's governed LookML semantic layer and user permissions.
+
+### Change
+
+In Conversational Analytics, the default [question mode](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode) is now **Fast** rather than **Thinking**. **Fast** mode is intended for answering quickly, and it directly maps your query to underlying LookML definitions without generating reasoning steps. You can still select **Thinking** mode from the question mode drop-down menu when asking complex, multi-step analytical questions about [Explores](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data#ca-question-mode) or [dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards#ca-question-mode).
+
+### Change
+
+The [**Modern User Interface** preview feature](https://docs.cloud.google.com/looker/docs/admin-panel-general-preview-features#modern_user_interface) toggle now defaults to **ON**.
+
+### Change
+
+The [Modern visualization theme](https://docs.cloud.google.com/looker/docs/modern-ui#modern_visualizations) now supports map charts (static map points and regions), word cloud charts, and donut multiples. While support for donut multiples was previously documented, it is now officially available with this release. These additions expand the range of visualization options that are available with the modern theme.
+
+### Feature
+
+Looker now supports connections to the ClickHouse 26+ dialect. ClickHouse 26+ uses modernized JDBC drivers and introduces support for [symmetric aggregates](https://docs.cloud.google.com/looker/docs/reference/param-explore-symmetric-aggregates). See the [ClickHouse](https://docs.cloud.google.com/looker/docs/db-config-clickhouse) documentation page for more information.
+
+---
 ## 2026-10-08
 
 ### Announcement

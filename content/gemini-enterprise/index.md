@@ -38,7 +38,11 @@ models are turned off by default:
   your Cloud Billing account and counts toward your project's spend cap,
   which covers all models. Overages must be turned on before you can enable a
   third-party model. For more information, see [Configure
-  overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages).
+  overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages)
+  and the Cloud Billing SKUs for
+  [Anthropic Claude Opus 5.5](https://cloud.google.com/skus?filter=opus&currency=USD&e=48754805)
+  and
+  [Anthropic Claude Sonnet 5.5](https://cloud.google.com/skus?filter=sonnet&currency=USD&e=48754805).
 * **Thinking levels**: Developers sign in with their existing Gemini
   Enterprise license and select Claude Opus 5.5 or Claude Sonnet 5.5 in the
   model picker at a thinking level of Low, Medium, High, or Max (for example,

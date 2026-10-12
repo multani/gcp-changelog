@@ -1,5 +1,37 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-10-09
+
+### Feature
+
+When you enable [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)
+integration on an eligible Cloud SQL for PostgreSQL instance created before
+April 18, 2026 where the integration is currently turned off, the instance now
+syncs schema and metadata updates to Knowledge Catalog in near real-time instead
+of once a day (instances created on or after April 18, 2026 have near real-time
+sync enabled by default).
+
+This feature is available for instances running PostgreSQL version 14.0 or later
+on the [new network architecture](https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture#overview).
+If Knowledge Catalog integration is already enabled on the instance with
+once-a-day updates, you can [deactivate](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#deactivate-dataplex-catalog)
+and re-enable the integration to switch to near real-time updates.
+
+For more information, see
+[Enable the integration of Knowledge Catalog on an existing Cloud SQL instance](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#enable-dataplex-catalog).
+
+---
+## 2026-10-06
+
+### Change
+
+Cloud SQL for PostgreSQL now supports up to 129,024 concurrent connections for
+Private Service Connect enabled instances created on or after September 30, 2026
+with 16 or more vCPUs.
+
+For more information, see [Configure Private Service Connect](https://docs.cloud.google.com/sql/docs/postgres/configure-private-service-connect#limitations).
+
+---
 ## 2026-09-29
 
 ### Change

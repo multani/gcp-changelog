@@ -1,5 +1,38 @@
 # Cloud SQL for MySQL
 
+## 2026-10-10
+
+### Change
+
+MySQL 8.0.46 is now the
+[default minor version](https://docs.cloud.google.com/sql/docs/mysql/db-versions#database-version-support)
+for Cloud SQL for MySQL 8.0.
+
+For more information about minor version support in Cloud SQL for MySQL,
+see [MySQL 8.0](https://docs.cloud.google.com/sql/docs/mysql/db-versions#mysql-8.0).
+
+---
+## 2026-10-09
+
+### Feature
+
+When you enable [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration)
+integration on an eligible Cloud SQL for MySQL instance created before April 18,
+2026 where the integration is currently turned off, the instance now syncs schema
+and metadata updates to Knowledge Catalog in near real-time instead of once a day
+(instances created on or after April 18, 2026 have near real-time sync enabled by
+default).
+
+This feature is available for instances running MySQL version 8.0 or later on the
+[new network architecture](https://docs.cloud.google.com/sql/docs/mysql/upgrade-cloud-sql-instance-new-network-architecture#overview).
+If Knowledge Catalog integration is already enabled on the instance with
+once-a-day updates, you can [deactivate](https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration#deactivate-dataplex-catalog)
+and re-enable the integration to switch to near real-time updates.
+
+For more information, see
+[Enable the integration of Knowledge Catalog on an existing Cloud SQL instance](https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration#enable-dataplex-catalog).
+
+---
 ## 2026-10-08
 
 ### Feature
@@ -37,6 +70,17 @@ downtime.
 
 For more information, see [About blue-green deployments in
 Cloud SQL](https://docs.cloud.google.com/sql/docs/mysql/about-blue-green-deployments).
+
+---
+## 2026-10-06
+
+### Change
+
+Cloud SQL for MySQL now supports up to 100,000 concurrent connections for
+Private Service Connect enabled instances created on or after September 30, 2026
+with 16 or more vCPUs.
+
+For more information, see [Configure Private Service Connect](https://docs.cloud.google.com/sql/docs/mysql/configure-private-service-connect#limitations).
 
 ---
 ## 2026-09-28

@@ -1,6 +1,26 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2026-10-10": [
+      {
+        "kind": "Change",
+        "content": "MySQL 8.0.46 is now the\n[default minor version](https://docs.cloud.google.com/sql/docs/mysql/db-versions#database-version-support)\nfor Cloud SQL for MySQL 8.0.\n\nFor more information about minor version support in Cloud SQL for MySQL,\nsee [MySQL 8.0](https://docs.cloud.google.com/sql/docs/mysql/db-versions#mysql-8.0).",
+        "summary": {
+          "title": "MySQL 8.0.46 is the new default",
+          "summary": "MySQL 8.0.46 is now the default minor version for Cloud SQL for MySQL 8.0. This update brings the latest improvements and features to your database instances. For more details on version support, please refer to the official documentation."
+        }
+      }
+    ],
+    "2026-10-09": [
+      {
+        "kind": "Feature",
+        "content": "When you enable [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration)\nintegration on an eligible Cloud SQL for MySQL instance created before April 18,\n2026 where the integration is currently turned off, the instance now syncs schema\nand metadata updates to Knowledge Catalog in near real-time instead of once a day\n(instances created on or after April 18, 2026 have near real-time sync enabled by\ndefault).\n\nThis feature is available for instances running MySQL version 8.0 or later on the\n[new network architecture](https://docs.cloud.google.com/sql/docs/mysql/upgrade-cloud-sql-instance-new-network-architecture#overview).\nIf Knowledge Catalog integration is already enabled on the instance with\nonce-a-day updates, you can [deactivate](https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration#deactivate-dataplex-catalog)\nand re-enable the integration to switch to near real-time updates.\n\nFor more information, see\n[Enable the integration of Knowledge Catalog on an existing Cloud SQL instance](https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration#enable-dataplex-catalog).",
+        "summary": {
+          "title": "Faster metadata sync with Knowledge Catalog",
+          "summary": "Cloud SQL for MySQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This improvement applies to existing instances with the integration turned off, and can be enabled by deactivating and re-enabling the integration. The feature requires MySQL version 8.0 or later on the new network architecture."
+        }
+      }
+    ],
     "2026-10-08": [
       {
         "kind": "Feature",
@@ -16,6 +36,16 @@
         "summary": {
           "title": "Cloud SQL for MySQL: Blue-Green Deployments Now in Preview",
           "summary": "Cloud SQL for MySQL now offers blue-green deployments in preview, allowing for database updates and version upgrades with minimal downtime. This feature enables creating a staging environment to test changes before a seamless switchover, ensuring application compatibility and performance."
+        }
+      }
+    ],
+    "2026-10-06": [
+      {
+        "kind": "Change",
+        "content": "Cloud SQL for MySQL now supports up to 100,000 concurrent connections for\nPrivate Service Connect enabled instances created on or after September 30, 2026\nwith 16 or more vCPUs.\n\nFor more information, see [Configure Private Service Connect](https://docs.cloud.google.com/sql/docs/mysql/configure-private-service-connect#limitations).",
+        "summary": {
+          "title": "Increased Cloud SQL MySQL Connection Limit",
+          "summary": "Cloud SQL for MySQL instances using Private Service Connect and 16+ vCPUs can now handle up to 100,000 concurrent connections. This enhancement applies to instances created on or after September 30, 2026. For details, refer to the Private Service Connect configuration documentation."
         }
       }
     ],

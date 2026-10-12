@@ -2,9 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-09-29T00:00:00+00:00</updated>
+  <updated>2026-10-09T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-10-09:feature:0</id>
+    <published>2026-10-09T00:00:00+00:00</published>
+    <updated>2026-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you enable <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
+integration on an eligible Cloud SQL for PostgreSQL instance created before
+April 18, 2026 where the integration is currently turned off, the instance now
+syncs schema and metadata updates to Knowledge Catalog in near real-time instead
+of once a day (instances created on or after April 18, 2026 have near real-time
+sync enabled by default).</p>
+<p>This feature is available for instances running PostgreSQL version 14.0 or later
+on the <a href="https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture#overview">new network architecture</a>.
+If Knowledge Catalog integration is already enabled on the instance with
+once-a-day updates, you can <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#deactivate-dataplex-catalog">deactivate</a>
+and re-enable the integration to switch to near real-time updates.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#enable-dataplex-catalog">Enable the integration of Knowledge Catalog on an existing Cloud SQL instance</a>.</p>]]></content>
+    <summary>Existing Cloud SQL for PostgreSQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This enhancement improves data discoverability and management by providing up-to-date information. The feature is available for instances on PostgreSQL 14.0+ running the new network architecture.</summary>
+    <title>Feature: Real-time metadata sync for Cloud SQL PostgreSQL</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-10-06:change:0</id>
+    <published>2026-10-06T00:00:00+00:00</published>
+    <updated>2026-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for PostgreSQL now supports up to 129,024 concurrent connections for
+Private Service Connect enabled instances created on or after September 30, 2026
+with 16 or more vCPUs.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/configure-private-service-connect#limitations">Configure Private Service Connect</a>.</p>]]></content>
+    <summary>Cloud SQL for PostgreSQL now supports up to 129,024 concurrent connections for Private Service Connect enabled instances with 16 or more vCPUs. This enhancement is available for instances created on or after September 30, 2026.</summary>
+    <title>Change: Increased PostgreSQL Connection Limit</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

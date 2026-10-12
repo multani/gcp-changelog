@@ -14,6 +14,63 @@ Key milestones for this deprecation include the following:
 For more information, see [Deprecations](https://docs.cloud.google.com/backup-disaster-recovery/docs/deprecations).
 
 ---
+## 2026-09-26
+
+### Security
+
+**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.
+
+**Security Bulletin – Appliance:**
+
+* Addressed multiple input sanitization vulnerabilities, including SQL injection and cross-site scripting (XSS), across appliance platform server utilities.
+* Remediated an authorization and validation vulnerability in user management workflows.
+
+**Security Bulletin – Host Agent:**
+
+* Strengthened local RPC interface access controls and improved credential isolation between concurrent backup jobs on the Host Agent.
+* Hardened database layer against command injection, path traversal, and unauthorized directory permission modifications.
+* Remediated local privilege escalation vulnerabilities in Oracle and SAP HANA host agent environment and profile handling.
+* Improved temporary file creation and link handling across Windows and Linux Host Agents to mitigate symlink race conditions.
+* Addressed buffer overflow vulnerabilities in Linux Host Agent components.
+
+**Libraries Bugs (Appliance):**
+
+* Upgraded third-party runtime and application libraries (including Go and Java packages such as Netty and Jackson Databind) on the appliance management server.
+* Updated the Linux kernel and base operating system packages across Backup and DR appliance virtual machine images to mitigate reported vulnerabilities.
+
+### Fixed
+
+**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.
+
+These issues have been resolved for the Host Agent:
+
+* Resolved an issue where Oracle ASM backups failed with the error "Failed to create ASM staging disk group".
+* Resolved an issue causing Oracle RAC database restores to fail with error 6407 due to invalid node names in the nodelist.
+* Fixed a PostgreSQL backup failure during snapshot preparation where the database user lacked execute permissions on `pg_backup_start`.
+* Corrected an issue where the Oracle mount process was unable to locate the undo catalog configuration file.
+* Improved Oracle backup metadata processing to support databases containing a large volume of datafiles.
+* Resolved an issue where discovery of SAP Sybase instances failed when multiple instances were configured under different user accounts.
+* Fixed an issue causing PostgreSQL database discovery to fail during host agent discovery workflows.
+* Resolved an issue that prevented successful discovery of MySQL database applications.
+
+### Change
+
+**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.
+
+**Non-Breaking Changes (Host Agent):**
+
+* Modernized host agent database integration scripts for IBM Db2, MySQL, MariaDB, SAP Sybase IQ, and MaxDB to standard Bash execution for improved stability and security hardening.
+
+### Feature
+
+**Note:** These fixes and updates are available starting with Backup and DR release 11.0.17.496. These fixes are not rolled out to the 11.0.16 release; we recommend upgrading the backup/recovery appliance to version 11.0.17 to receive these updates.
+
+These features are now available for the Host Agent:
+
+* Added Linux Changed Block Tracking (CBT) support for Red Hat Enterprise Linux (RHEL) 10 OS family kernels.
+* Expanded Linux Changed Block Tracking (CBT) support across the latest kernel updates for RHEL 8, RHEL 9, and RHEL 10 distributions.
+
+---
 ## 2026-09-21
 
 ### Announcement

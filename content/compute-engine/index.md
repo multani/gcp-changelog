@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-10-08
+
+### Feature
+
+**Generally available**: You can sync a Compute Engine VM's clock with its
+host server's clock by using `chrony` and `ptp_kvm` to achieve accuracy designed
+to be within 1 ms. Accurate time synchronization is supported in all standard
+public Google Cloud [regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones). For more
+information, see
+[Configure accurate time for Compute Engine VMs](https://docs.cloud.google.com/compute/docs/instances/time-synchronization/configure-time-sync).
+
+---
 ## 2026-10-06
 
 ### Feature

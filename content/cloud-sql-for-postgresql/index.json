@@ -1,6 +1,26 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-10-09": [
+      {
+        "kind": "Feature",
+        "content": "When you enable [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)\nintegration on an eligible Cloud SQL for PostgreSQL instance created before\nApril 18, 2026 where the integration is currently turned off, the instance now\nsyncs schema and metadata updates to Knowledge Catalog in near real-time instead\nof once a day (instances created on or after April 18, 2026 have near real-time\nsync enabled by default).\n\nThis feature is available for instances running PostgreSQL version 14.0 or later\non the [new network architecture](https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture#overview).\nIf Knowledge Catalog integration is already enabled on the instance with\nonce-a-day updates, you can [deactivate](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#deactivate-dataplex-catalog)\nand re-enable the integration to switch to near real-time updates.\n\nFor more information, see\n[Enable the integration of Knowledge Catalog on an existing Cloud SQL instance](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#enable-dataplex-catalog).",
+        "summary": {
+          "title": "Real-time metadata sync for Cloud SQL PostgreSQL",
+          "summary": "Existing Cloud SQL for PostgreSQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This enhancement improves data discoverability and management by providing up-to-date information. The feature is available for instances on PostgreSQL 14.0+ running the new network architecture."
+        }
+      }
+    ],
+    "2026-10-06": [
+      {
+        "kind": "Change",
+        "content": "Cloud SQL for PostgreSQL now supports up to 129,024 concurrent connections for\nPrivate Service Connect enabled instances created on or after September 30, 2026\nwith 16 or more vCPUs.\n\nFor more information, see [Configure Private Service Connect](https://docs.cloud.google.com/sql/docs/postgres/configure-private-service-connect#limitations).",
+        "summary": {
+          "title": "Increased PostgreSQL Connection Limit",
+          "summary": "Cloud SQL for PostgreSQL now supports up to 129,024 concurrent connections for Private Service Connect enabled instances with 16 or more vCPUs. This enhancement is available for instances created on or after September 30, 2026."
+        }
+      }
+    ],
     "2026-09-29": [
       {
         "kind": "Change",

@@ -1,5 +1,22 @@
 # Security Command Center
 
+## 2026-10-09
+
+### Feature
+
+Using gcloud CLI, the `securitycenter` REST API, or client libraries,
+you can configure Pub/Sub and BigQuery continuous export to
+receive notifications when findings are deleted from Security Command Center due to
+data retention policies.
+
+For more information, see the following:
+
+* [Enable finding notifications for Pub/Sub](https://docs.cloud.google.com/security-command-center/docs/how-to-notifications)
+* [Stream findings to BigQuery for analysis](https://docs.cloud.google.com/security-command-center/docs/how-to-analyze-findings-in-big-query)
+* [Enable real-time notifications](https://docs.cloud.google.com/security-command-center/docs/how-to-enable-real-time-notifications)
+* [Creating and managing Notification Configs](https://docs.cloud.google.com/security-command-center/docs/how-to-api-manage-notifications)
+
+---
 ## 2026-10-06
 
 ### Deprecated

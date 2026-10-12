@@ -1,5 +1,19 @@
 # BigQuery
 
+## 2026-10-09
+
+### Feature
+
+The [BigQuery Data Engineering Agent](https://docs.cloud.google.com/gemini/data-agents/data-engineering-agent/agent-overview)
+is now available in the `asia-northeast1` (Tokyo) regional endpoint and supports
+the gemini-3.5-flash model. For more information, see
+[Where Gemini in BigQuery processes your data](https://docs.cloud.google.com/bigquery/docs/gemini-locations#bigquery-data-engineering-agent).
+
+This feature is
+[Generally Available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-08
 
 ### Feature
@@ -68,6 +82,13 @@ This feature is in
 
 ---
 ## 2026-10-05
+
+### Feature
+
+[Iceberg external tables](https://docs.cloud.google.com/bigquery/docs/iceberg-external-tables) and
+[Iceberg managed tables](https://docs.cloud.google.com/bigquery/docs/iceberg-tables) now support
+[flexible column names](https://docs.cloud.google.com/bigquery/docs/schemas#flexible-column-names) by default. This
+feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
 
 ### Feature
 
@@ -235,18 +256,6 @@ These features are in
 
 ---
 ## 2026-09-21
-
-### Feature
-
-*Lakehouse* now supports Workday Data Lake as a remote catalog provider
-for cross-cloud data access
-([Preview](https://cloud.google.com/products#product-launch-stages)). You can
-configure federated catalogs to query data stored in Workday Data Lake
-directly from Google Cloud using BigQuery or Apache Spark without
-migrating data or building complex ETL pipelines.
-
-For more information, see [Set up cross-cloud connection for Workday Data
-Lake](https://docs.cloud.google.com/lakehouse/docs/set-up-cross-cloud-connection-workday).
 
 ### Feature
 

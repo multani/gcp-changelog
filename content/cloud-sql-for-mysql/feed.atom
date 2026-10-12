@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-10-08T00:00:00+00:00</updated>
+  <updated>2026-10-10T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-10-10:change:0</id>
+    <published>2026-10-10T00:00:00+00:00</published>
+    <updated>2026-10-10T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>MySQL 8.0.46 is now the
+<a href="https://docs.cloud.google.com/sql/docs/mysql/db-versions#database-version-support">default minor version</a>
+for Cloud SQL for MySQL 8.0.</p>
+<p>For more information about minor version support in Cloud SQL for MySQL,
+see <a href="https://docs.cloud.google.com/sql/docs/mysql/db-versions#mysql-8.0">MySQL 8.0</a>.</p>]]></content>
+    <summary>MySQL 8.0.46 is now the default minor version for Cloud SQL for MySQL 8.0. This update brings the latest improvements and features to your database instances. For more details on version support, please refer to the official documentation.</summary>
+    <title>Change: MySQL 8.0.46 is the new default</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-10-09:feature:0</id>
+    <published>2026-10-09T00:00:00+00:00</published>
+    <updated>2026-10-09T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you enable <a href="https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
+integration on an eligible Cloud SQL for MySQL instance created before April 18,
+2026 where the integration is currently turned off, the instance now syncs schema
+and metadata updates to Knowledge Catalog in near real-time instead of once a day
+(instances created on or after April 18, 2026 have near real-time sync enabled by
+default).</p>
+<p>This feature is available for instances running MySQL version 8.0 or later on the
+<a href="https://docs.cloud.google.com/sql/docs/mysql/upgrade-cloud-sql-instance-new-network-architecture#overview">new network architecture</a>.
+If Knowledge Catalog integration is already enabled on the instance with
+once-a-day updates, you can <a href="https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration#deactivate-dataplex-catalog">deactivate</a>
+and re-enable the integration to switch to near real-time updates.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration#enable-dataplex-catalog">Enable the integration of Knowledge Catalog on an existing Cloud SQL instance</a>.</p>]]></content>
+    <summary>Cloud SQL for MySQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This improvement applies to existing instances with the integration turned off, and can be enabled by deactivating and re-enabling the integration. The feature requires MySQL version 8.0 or later on the new network architecture.</summary>
+    <title>Feature: Faster metadata sync with Knowledge Catalog</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -50,6 +88,20 @@ downtime.</p>
 Cloud SQL</a>.</p>]]></content>
     <summary>Cloud SQL for MySQL now offers blue-green deployments in preview, allowing for database updates and version upgrades with minimal downtime. This feature enables creating a staging environment to test changes before a seamless switchover, ensuring application compatibility and performance.</summary>
     <title>Feature: Cloud SQL for MySQL: Blue-Green Deployments Now in Preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-10-06:change:0</id>
+    <published>2026-10-06T00:00:00+00:00</published>
+    <updated>2026-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud SQL for MySQL now supports up to 100,000 concurrent connections for
+Private Service Connect enabled instances created on or after September 30, 2026
+with 16 or more vCPUs.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/mysql/configure-private-service-connect#limitations">Configure Private Service Connect</a>.</p>]]></content>
+    <summary>Cloud SQL for MySQL instances using Private Service Connect and 16+ vCPUs can now handle up to 100,000 concurrent connections. This enhancement applies to instances created on or after September 30, 2026. For details, refer to the Private Service Connect configuration documentation.</summary>
+    <title>Change: Increased Cloud SQL MySQL Connection Limit</title>
   </entry>
   <entry>
     <author>

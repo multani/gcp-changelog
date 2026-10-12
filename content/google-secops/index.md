@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-10-12
+
+### Announcement
+
+The deadline for the migration of SOAR APIs to the Chronicle API has been extended from November 30, 2026
+until March 31, 2027.
+For more information, refer to [SOAR Migration overview](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp)
+
+---
 ## 2026-10-05
 
 ### Feature

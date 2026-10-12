@@ -1,5 +1,23 @@
 # Secure Web Proxy
 
+## 2026-10-09
+
+### Feature
+
+Secure Web Proxy supports [global
+access](https://docs.cloud.google.com/secure-web-proxy/docs/configure-global-access). You can enable this
+feature when creating a Secure Web Proxy instance to make sure that clients from
+any Google Cloud region can connect to your proxy.
+
+With global access, you can route your outbound traffic through specific regions
+to meet regulatory compliance or cost requirements. You can also use this option
+to simplify your network administration by managing outbound traffic from a
+centralized location.
+
+This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-09-17
 
 ### Feature

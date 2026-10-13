@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 589.0.0 (2026-10-13)</title>
+  <subtitle>Changelog for Google Cloud product: 589.0.0 (2026-10-13)</subtitle>
+  <updated>2026-10-13T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/589-0-0--2026-10-13-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:breaking changes:0</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Google Cloud CLI)</strong> Deprecated the <code>skaffold</code> component in Google Cloud CLI. The component will be removed from Google Cloud CLI releases after January 15, 2027. A portion of <code>gcloud components install skaffold</code> attempts now return an error. Please install Skaffold following the instructions at <a href="https://skaffold.dev/docs/install/">https://skaffold.dev/docs/install/</a>.</li>
+</ul>]]></content>
+    <summary>The Skaffold component is deprecated in the Google Cloud CLI and will be removed after January 15, 2027. Attempts to install it via `gcloud components install skaffold` may now return an error. Please follow the official Skaffold installation instructions at https://skaffold.dev/docs/install/ to install Skaffold.</summary>
+    <title>Breaking Changes: Skaffold component deprecated in gcloud CLI</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:google cloud cli:1</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated Linux and Windows bundled Python to install <code>cryptography</code> 46.0.7 from the official PyPI wheels instead of custom builds.</li>
+<li>Updated the Alpine-based Docker images (<code>:alpine</code>, <code>:VERSION-alpine</code>) to use a bundled Python and no longer include a system <code>python3</code>.</li>
+<li>Updated bundled Python to 3.14.8 on Linux and Windows, and in the Alpine-based Docker images. This updates the OpenSSL that Python uses for TLS to 3.5.9.</li>
+</ul>]]></content>
+    <summary>The Google Cloud CLI has updated its bundled Python to version 3.14.8 across Linux, Windows, and Alpine Docker images. This update includes the `cryptography` 46.0.7 package and OpenSSL 3.5.9 for enhanced security and compatibility. Alpine images will no longer include a system Python 3.</summary>
+    <title>Google Cloud CLI: CLI Python Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:alloydb:2</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--enable-express</code> flag to <code>gcloud beta alloydb clusters create|update</code>.</li>
+</ul>]]></content>
+    <summary>A new flag, `--enable-express`, has been added to `gcloud beta alloydb clusters create` and `gcloud beta alloydb clusters update` commands. This flag allows for the creation and updating of AlloyDB clusters with express capabilities.</summary>
+    <title>AlloyDB: AlloyDB Express Flag Enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:apigee:3</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud apigee apis delete</code> to GA. The command deletes an API proxy
+  and all of its revisions. Every command in <code>gcloud apigee apis</code> now serves
+  GA.</li>
+<li>Fixed an issue where <code>gcloud apigee apis import --from-template</code> discarded a
+  template's <code>endpoints</code> and <code>targets</code> whenever the template referenced a
+  feature. A template that declared its own topology and used features only for
+  policies compiled to a proxy with no <code>ProxyEndpoint</code>, and the import failed.
+  A template's <code>endpoints</code> and <code>targets</code> now seed the proxy, and features are
+  applied on top of them.</li>
+</ul>]]></content>
+    <summary>The `gcloud apigee apis delete` command for removing API proxies and all their revisions has reached General Availability. This means all commands within the `gcloud apigee apis` group are now GA. Additionally, an issue has been resolved where importing API proxy templates could incorrectly discard endpoint and target configurations when features were referenced.</summary>
+    <title>Apigee: Apigee API Proxy Deletion Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:app engine:4</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where <code>gcloud beta app migrate-to-run</code> dropped the Serverless
+  VPC Access connector for deployed versions.</li>
+<li>Fixed an issue where <code>gcloud beta app migrate-to-run</code> mapped App Engine
+  Flexible <code>instance_ip_mode</code> to Cloud Run ingress.</li>
+<li>Fixed an issue where <code>gcloud beta app migrate-to-run</code> did not route all
+  egress through Direct VPC for internal-only App Engine Flexible apps.</li>
+</ul>]]></content>
+    <summary>We've resolved several issues with the `gcloud beta app migrate-to-run` command. These fixes ensure that Serverless VPC Access connectors are retained, instance IP modes are correctly mapped to Cloud Run ingress, and all egress traffic is properly routed through Direct VPC for internal-only apps.</summary>
+    <title>App Engine: App Engine migration improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:app lifecycle manager:5</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Hid the deprecated <code>gcloud beta saas-runtime</code> command group. Existing
+  commands continue to work and print a deprecation warning. Use <code>gcloud beta
+  app-lifecycle-manager</code> instead.</li>
+</ul>]]></content>
+    <summary>The deprecated `gcloud beta saas-runtime` command group has been hidden. Users should now use `gcloud beta app-lifecycle-manager` for App Lifecycle Manager commands. Existing commands will continue to function but will display a deprecation warning.</summary>
+    <title>App Lifecycle Manager: App Lifecycle Manager available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:beyondcorp:6</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Deprecated <code>gcloud beta beyondcorp app</code> command group.</li>
+</ul>]]></content>
+    <summary>The `gcloud beta beyondcorp app` command group has been deprecated. Users are encouraged to migrate to newer solutions for managing Beyondcorp resources.</summary>
+    <title>Beyondcorp: Beyondcorp App Command Deprecated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:biglake:7</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--service-directory-name</code> flag to <code>gcloud biglake delta-sharing catalogs update</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud biglake delta-sharing catalogs update` command now supports the `--service-directory-name` flag. This allows for easier management and configuration of Delta Sharing catalogs within BigLake.</summary>
+    <title>BigLake: BigLake Delta Sharing Catalog Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:bigquery:8</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for Azure Data Lake Storage URIs (<code>abfs://</code> and <code>abfss://</code>) in
+  inline external table definitions (<code>--external_table_definition</code>).</li>
+<li>Added <code>--dataplex_entry_group</code> flag to <code>bq mk --transfer_config</code> and
+  <code>bq update --transfer_config</code> to allow integration with Dataplex Entry
+  Groups.</li>
+<li>Added support to filter Transfer Configs by Dataplex Entry Group using
+  <code>--filter="metadata_destination.dataplex_configuration:*"</code> for
+  <code>bq ls --transfer_config</code>.</li>
+</ul>]]></content>
+    <summary>BigQuery now supports Azure Data Lake Storage URIs for inline external tables. New flags and filters improve integration with Dataplex Entry Groups for transfer configurations. These updates streamline data access and management within BigQuery.</summary>
+    <title>BigQuery: BigQuery Enhancements for External Data and Dataplex</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:cloud alerting:9</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud monitoring alerts</code> command group to GA.</li>
+</ul>]]></content>
+    <summary>The `gcloud monitoring alerts` command group is now generally available. This release signifies a stable and production-ready offering for managing your cloud monitoring alerts via the command line.</summary>
+    <title>Cloud Alerting: Cloud Monitoring Alerts GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:cloud composer:10</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud composer environments storage dags export</code>,
+  <code>gcloud composer environments storage data export</code>,
+  <code>gcloud composer environments storage plugins export</code>,
+  <code>gcloud beta composer environments storage dags export</code>,
+  <code>gcloud beta composer environments storage data export</code>, and
+  <code>gcloud beta composer environments storage plugins export</code> to skip, with a
+  warning, objects that would be written outside of the local <code>--destination</code>
+  directory.</li>
+</ul>]]></content>
+    <summary>We updated the Composer storage export commands to skip objects outside the destination directory, issuing a warning. This ensures a safer and more predictable export process for your DAGs, data, and plugins.</summary>
+    <title>Cloud Composer: Composer storage export updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:cloud dns:11</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta dns outbound-endpoints</code> command group.</li>
+<li>Added <code>--outbound-endpoints</code> flag to <code>gcloud beta dns managed-zones</code> and <code>gcloud beta dns policies</code>.</li>
+</ul>]]></content>
+    <summary>Manage outbound endpoints for Cloud DNS with the new `gcloud beta dns outbound-endpoints` command group. You can now also specify these endpoints when creating or updating managed zones and DNS policies using the `--outbound-endpoints` flag.</summary>
+    <title>Cloud DNS: New Cloud DNS Outbound Endpoints</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:cloud firestore:12</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud firestore change-streams</code> commands to GA.</li>
+</ul>]]></content>
+    <summary>Cloud Firestore change streams are now generally available. This feature allows you to reliably capture real-time changes to your Firestore data. You can now easily integrate these real-time updates into your applications.</summary>
+    <title>Cloud Firestore: Firestore change streams are now GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:cloud storage:13</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added server-side hash validation by default for resumable uploads in
+  <code>gcloud storage cp</code>, <code>gcloud storage mv</code>, and <code>gcloud storage rsync</code>. To
+  disable this behavior, run <code>gcloud config set
+  storage/enable_server_side_hash_validation False</code>.</li>
+</ul>]]></content>
+    <summary>Resumable uploads via the storage CLI now include server-side hash validation by default. This enhances data integrity during transfers. You can disable this feature by setting `storage/enable_server_side_hash_validation` to `False` in your gcloud configuration.</summary>
+    <title>Cloud Storage: Resumable Uploads Now Validate Hashes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:compute engine:14</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Optimized <code>gcloud compute instance-groups managed list-instances</code> by
+  passing <code>--limit</code> and <code>--page-size</code> to the backend API and terminating page
+  fetching early when the limit is reached.</li>
+<li>Added <code>CMEK_ENCRYPTION</code> option to <code>--local-ssd-encryption-mode</code> flag of
+  <code>gcloud beta compute instances create</code> to encrypt Local SSDs with
+  customer-managed encryption keys.</li>
+<li>Fixed <code>gcloud beta compute disk-types list</code> returning no results when
+  <code>--zones</code> or <code>--regions</code> is specified. Deprecated <code>NAME</code> positional
+  argument and <code>--regexp</code> flag of this command. Use <code>--filter</code> instead.</li>
+<li>Promoted <code>loadBalancingScheme</code> value <code>EXTERNAL_PASSTHROUGH</code> to GA in import
+  and export schemas for <code>gcloud compute backend-services</code>.</li>
+<li>Promoted <code>IPAddresses</code> and <code>loadBalancingScheme</code> value
+  <code>EXTERNAL_PASSTHROUGH</code> to GA in import and export schemas for <code>gcloud
+  compute forwarding-rules</code>.</li>
+<li>Promoted <code>gcloud compute advice capacity</code> to GA.</li>
+<li>Promoted <code>gcloud compute advice capacity-history</code> to GA.</li>
+</ul>]]></content>
+    <summary>New features and improvements for Compute Engine, including enhanced instance group listing, Local SSD encryption with CMEK, and GA promotions for load balancing and advice commands.</summary>
+    <title>Compute Engine: Compute Engine Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:database migration:15</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>--ssl-flags</code> flag documentation and parsing for <code>gcloud
+  database-migration connection-profiles</code> commands to support custom
+  delimiter syntax (<code>^DELIM^</code>) for values containing commas (e.g.
+  <code>server_certificate_dn</code>).</li>
+<li>Added <code>--dbm-port</code> flag to
+  <code>gcloud database-migration connection-profiles create sqlserver</code> and
+  <code>gcloud database-migration connection-profiles update</code> commands to specify
+  the Database Mirroring (DBM) port for SQL Server Distributed Availability
+  Group (DAG) migrations.</li>
+<li>Added <code>--sqlserver-dag-source-ag</code> and <code>--sqlserver-dag-linked-server</code> flags
+  to <code>gcloud database-migration migration-jobs create</code> and
+  <code>gcloud database-migration migration-jobs update</code> commands to configure SQL
+  Server Distributed Availability Group (DAG) migrations.</li>
+</ul>]]></content>
+    <summary>New flags have been added to gcloud database-migration commands to support custom delimiters for SSL flags, specify the Database Mirroring port for SQL Server DAG migrations, and configure SQL Server Distributed Availability Group migrations.</summary>
+    <title>Database Migration: Database migration enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:device run:16</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Removed <code>gcloud beta device-run sessions submit xctest</code>. The command remains available in the alpha release track.</li>
+</ul>]]></content>
+    <summary>The `gcloud beta device-run sessions submit xctest` command has been removed from the beta release track. Users can still access this functionality through the alpha release track.</summary>
+    <title>Device Run: Device Run Sessions Command Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:gke hub:17</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--prioritized</code> flag to <code>gcloud beta container fleet rolloutsequences
+  upgrade</code> and <code>gcloud beta container hub rolloutsequences upgrade</code>.</li>
+</ul>]]></content>
+    <summary>A new --prioritized flag has been added to the gcloud container fleet and hub rollout sequences upgrade commands. This flag allows users to specify prioritized upgrades for their services.</summary>
+    <title>GKE Hub: GKE Hub Upgrade Flag</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:kubernetes engine:18</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--wiz-sensor-api-key-secret-uri</code>, <code>--wiz-sensor-proxy-secret-uri</code>,
+  and <code>--wiz-sensor-registry-secret-uri</code> flags to <code>gcloud container clusters
+  create</code>, <code>create-auto</code>, and <code>update</code> commands to configure Wiz Sensor.</li>
+</ul>]]></content>
+    <summary>New flags are available for `gcloud container clusters create`, `create-auto`, and `update` commands. These flags allow you to easily configure Wiz Sensor by specifying secret URIs for the API key, proxy, and registry.</summary>
+    <title>Kubernetes Engine: Configure Wiz Sensor in Kubernetes Engine</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:looker:19</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed <code>gcloud looker instances update --linked-lsp-project-number</code> sending
+  an empty update mask and failing.</li>
+</ul>]]></content>
+    <summary>The issue where updating Looker instances with the --linked-lsp-project-number flag failed due to an empty update mask has been resolved. This fix ensures that the update mask is correctly populated, allowing for successful instance updates.</summary>
+    <title>Looker: Looker instance update fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:oracle database:20</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>update</code> command to the following <code>gcloud oracle-database</code> command
+  groups to support adding, updating, removing, and clearing labels using
+  <code>--update-labels</code>, <code>--remove-labels</code>, and <code>--clear-labels</code> flags:</li>
+<li><code>gcloud oracle-database cloud-exadata-infrastructures update</code></li>
+<li><code>gcloud oracle-database cloud-vm-clusters update</code></li>
+<li><code>gcloud oracle-database db-systems update</code></li>
+<li><code>gcloud oracle-database exascale-db-storage-vaults update</code></li>
+<li><code>gcloud oracle-database goldengate-connections update</code></li>
+<li><code>gcloud oracle-database goldengate-connection-assignments update</code></li>
+<li><code>gcloud oracle-database goldengate-deployments update</code></li>
+<li><code>gcloud oracle-database odb-networks odb-subnets update</code></li>
+</ul>]]></content>
+    <summary>New update commands for Oracle Database resources allow for adding, updating, removing, and clearing labels. These enhancements provide more flexible management of database resources through labels.</summary>
+    <title>Oracle Database: Oracle Database label management enhanced</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:589-0-0--2026-10-13-:2026-10-13:workbench:21</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed <code>--nic-type</code> flag choices in <code>gcloud workbench instances create</code> to
+  use <code>VIRTIO_NET</code> instead of <code>VIRTIGO_NET</code>.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>The `--nic-type` flag in the `gcloud workbench instances create` command has been corrected to use `VIRTIO_NET` instead of the previously incorrect `VIRTIGO_NET`. This ensures proper network interface configuration for newly created Workbench instances.</summary>
+    <title>Workbench: Workbench instance creation fix</title>
+  </entry>
+</feed>

@@ -1,5 +1,19 @@
 # Managed Service for Apache Airflow
 
+## 2026-10-13
+
+### Feature
+
+[Development mode environments](https://docs.cloud.google.com/composer/docs/composer-3/create-environments#development-mode)
+and
+[Environment hibernation](https://docs.cloud.google.com/composer/docs/composer-3/hibernate-environments) are now generally available (GA).
+
+You can now create Managed Airflow (Gen 3) environments with Airflow 3 in
+development mode to test and develop DAGs before publishing them to production.
+You can hibernate development mode environments when you no longer need them.
+Hibernation reduces most environment costs to zero.
+
+---
 ## 2026-09-25
 
 ### Change

@@ -1,5 +1,13 @@
 # Dataform
 
+## 2026-10-13
+
+### Feature
+
+You can use Developer Connect to [connect Dataform repositories to Secure Source Manager repositories](https://docs.cloud.google.com/dataform/docs/connect-repository#dev-connect). This feature is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-01
 
 ### Feature

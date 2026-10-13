@@ -1,0 +1,183 @@
+{
+  "name": "589.0.0 (2026-10-13)",
+  "entries": {
+    "2026-10-13": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Google Cloud CLI)** Deprecated the `skaffold` component in Google Cloud CLI. The component will be removed from Google Cloud CLI releases after January 15, 2027. A portion of `gcloud components install skaffold` attempts now return an error. Please install Skaffold following the instructions at <https://skaffold.dev/docs/install/>.",
+        "summary": {
+          "title": "Skaffold component deprecated in gcloud CLI",
+          "summary": "The Skaffold component is deprecated in the Google Cloud CLI and will be removed after January 15, 2027. Attempts to install it via `gcloud components install skaffold` may now return an error. Please follow the official Skaffold installation instructions at https://skaffold.dev/docs/install/ to install Skaffold."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Updated Linux and Windows bundled Python to install `cryptography` 46.0.7 from the official PyPI wheels instead of custom builds.\n* Updated the Alpine-based Docker images (`:alpine`, `:VERSION-alpine`) to use a bundled Python and no longer include a system `python3`.\n* Updated bundled Python to 3.14.8 on Linux and Windows, and in the Alpine-based Docker images. This updates the OpenSSL that Python uses for TLS to 3.5.9.",
+        "summary": {
+          "title": "CLI Python Update",
+          "summary": "The Google Cloud CLI has updated its bundled Python to version 3.14.8 across Linux, Windows, and Alpine Docker images. This update includes the `cryptography` 46.0.7 package and OpenSSL 3.5.9 for enhanced security and compatibility. Alpine images will no longer include a system Python 3."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Added `--enable-express` flag to `gcloud beta alloydb clusters create|update`.",
+        "summary": {
+          "title": "AlloyDB Express Flag Enabled",
+          "summary": "A new flag, `--enable-express`, has been added to `gcloud beta alloydb clusters create` and `gcloud beta alloydb clusters update` commands. This flag allows for the creation and updating of AlloyDB clusters with express capabilities."
+        }
+      },
+      {
+        "kind": "Apigee",
+        "content": "* Promoted `gcloud apigee apis delete` to GA. The command deletes an API proxy\n  and all of its revisions. Every command in `gcloud apigee apis` now serves\n  GA.\n* Fixed an issue where `gcloud apigee apis import --from-template` discarded a\n  template's `endpoints` and `targets` whenever the template referenced a\n  feature. A template that declared its own topology and used features only for\n  policies compiled to a proxy with no `ProxyEndpoint`, and the import failed.\n  A template's `endpoints` and `targets` now seed the proxy, and features are\n  applied on top of them.",
+        "summary": {
+          "title": "Apigee API Proxy Deletion Now Generally Available",
+          "summary": "The `gcloud apigee apis delete` command for removing API proxies and all their revisions has reached General Availability. This means all commands within the `gcloud apigee apis` group are now GA. Additionally, an issue has been resolved where importing API proxy templates could incorrectly discard endpoint and target configurations when features were referenced."
+        }
+      },
+      {
+        "kind": "App Engine",
+        "content": "* Fixed an issue where `gcloud beta app migrate-to-run` dropped the Serverless\n  VPC Access connector for deployed versions.\n* Fixed an issue where `gcloud beta app migrate-to-run` mapped App Engine\n  Flexible `instance_ip_mode` to Cloud Run ingress.\n* Fixed an issue where `gcloud beta app migrate-to-run` did not route all\n  egress through Direct VPC for internal-only App Engine Flexible apps.",
+        "summary": {
+          "title": "App Engine migration improvements",
+          "summary": "We've resolved several issues with the `gcloud beta app migrate-to-run` command. These fixes ensure that Serverless VPC Access connectors are retained, instance IP modes are correctly mapped to Cloud Run ingress, and all egress traffic is properly routed through Direct VPC for internal-only apps."
+        }
+      },
+      {
+        "kind": "App Lifecycle Manager",
+        "content": "* Hid the deprecated `gcloud beta saas-runtime` command group. Existing\n  commands continue to work and print a deprecation warning. Use `gcloud beta\n  app-lifecycle-manager` instead.",
+        "summary": {
+          "title": "App Lifecycle Manager available",
+          "summary": "The deprecated `gcloud beta saas-runtime` command group has been hidden. Users should now use `gcloud beta app-lifecycle-manager` for App Lifecycle Manager commands. Existing commands will continue to function but will display a deprecation warning."
+        }
+      },
+      {
+        "kind": "Beyondcorp",
+        "content": "* Deprecated `gcloud beta beyondcorp app` command group.",
+        "summary": {
+          "title": "Beyondcorp App Command Deprecated",
+          "summary": "The `gcloud beta beyondcorp app` command group has been deprecated. Users are encouraged to migrate to newer solutions for managing Beyondcorp resources."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Added `--service-directory-name` flag to `gcloud biglake delta-sharing catalogs update`.",
+        "summary": {
+          "title": "BigLake Delta Sharing Catalog Update",
+          "summary": "The `gcloud biglake delta-sharing catalogs update` command now supports the `--service-directory-name` flag. This allows for easier management and configuration of Delta Sharing catalogs within BigLake."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Added support for Azure Data Lake Storage URIs (`abfs://` and `abfss://`) in\n  inline external table definitions (`--external_table_definition`).\n* Added `--dataplex_entry_group` flag to `bq mk --transfer_config` and\n  `bq update --transfer_config` to allow integration with Dataplex Entry\n  Groups.\n* Added support to filter Transfer Configs by Dataplex Entry Group using\n  `--filter=\"metadata_destination.dataplex_configuration:*\"` for\n  `bq ls --transfer_config`.",
+        "summary": {
+          "title": "BigQuery Enhancements for External Data and Dataplex",
+          "summary": "BigQuery now supports Azure Data Lake Storage URIs for inline external tables. New flags and filters improve integration with Dataplex Entry Groups for transfer configurations. These updates streamline data access and management within BigQuery."
+        }
+      },
+      {
+        "kind": "Cloud Alerting",
+        "content": "* Promoted `gcloud monitoring alerts` command group to GA.",
+        "summary": {
+          "title": "Cloud Monitoring Alerts GA",
+          "summary": "The `gcloud monitoring alerts` command group is now generally available. This release signifies a stable and production-ready offering for managing your cloud monitoring alerts via the command line."
+        }
+      },
+      {
+        "kind": "Cloud Composer",
+        "content": "* Updated `gcloud composer environments storage dags export`,\n  `gcloud composer environments storage data export`,\n  `gcloud composer environments storage plugins export`,\n  `gcloud beta composer environments storage dags export`,\n  `gcloud beta composer environments storage data export`, and\n  `gcloud beta composer environments storage plugins export` to skip, with a\n  warning, objects that would be written outside of the local `--destination`\n  directory.",
+        "summary": {
+          "title": "Composer storage export updates",
+          "summary": "We updated the Composer storage export commands to skip objects outside the destination directory, issuing a warning. This ensures a safer and more predictable export process for your DAGs, data, and plugins."
+        }
+      },
+      {
+        "kind": "Cloud DNS",
+        "content": "* Added `gcloud beta dns outbound-endpoints` command group.\n* Added `--outbound-endpoints` flag to `gcloud beta dns managed-zones` and `gcloud beta dns policies`.",
+        "summary": {
+          "title": "New Cloud DNS Outbound Endpoints",
+          "summary": "Manage outbound endpoints for Cloud DNS with the new `gcloud beta dns outbound-endpoints` command group. You can now also specify these endpoints when creating or updating managed zones and DNS policies using the `--outbound-endpoints` flag."
+        }
+      },
+      {
+        "kind": "Cloud Firestore",
+        "content": "* Promoted `gcloud firestore change-streams` commands to GA.",
+        "summary": {
+          "title": "Firestore change streams are now GA",
+          "summary": "Cloud Firestore change streams are now generally available. This feature allows you to reliably capture real-time changes to your Firestore data. You can now easily integrate these real-time updates into your applications."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* Added server-side hash validation by default for resumable uploads in\n  `gcloud storage cp`, `gcloud storage mv`, and `gcloud storage rsync`. To\n  disable this behavior, run `gcloud config set\n  storage/enable_server_side_hash_validation False`.",
+        "summary": {
+          "title": "Resumable Uploads Now Validate Hashes",
+          "summary": "Resumable uploads via the storage CLI now include server-side hash validation by default. This enhances data integrity during transfers. You can disable this feature by setting `storage/enable_server_side_hash_validation` to `False` in your gcloud configuration."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Optimized `gcloud compute instance-groups managed list-instances` by\n  passing `--limit` and `--page-size` to the backend API and terminating page\n  fetching early when the limit is reached.\n* Added `CMEK_ENCRYPTION` option to `--local-ssd-encryption-mode` flag of\n  `gcloud beta compute instances create` to encrypt Local SSDs with\n  customer-managed encryption keys.\n* Fixed `gcloud beta compute disk-types list` returning no results when\n  `--zones` or `--regions` is specified. Deprecated `NAME` positional\n  argument and `--regexp` flag of this command. Use `--filter` instead.\n* Promoted `loadBalancingScheme` value `EXTERNAL_PASSTHROUGH` to GA in import\n  and export schemas for `gcloud compute backend-services`.\n* Promoted `IPAddresses` and `loadBalancingScheme` value\n  `EXTERNAL_PASSTHROUGH` to GA in import and export schemas for `gcloud\n  compute forwarding-rules`.\n* Promoted `gcloud compute advice capacity` to GA.\n* Promoted `gcloud compute advice capacity-history` to GA.",
+        "summary": {
+          "title": "Compute Engine Updates",
+          "summary": "New features and improvements for Compute Engine, including enhanced instance group listing, Local SSD encryption with CMEK, and GA promotions for load balancing and advice commands."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Updated `--ssl-flags` flag documentation and parsing for `gcloud\n  database-migration connection-profiles` commands to support custom\n  delimiter syntax (`^DELIM^`) for values containing commas (e.g.\n  `server_certificate_dn`).\n* Added `--dbm-port` flag to\n  `gcloud database-migration connection-profiles create sqlserver` and\n  `gcloud database-migration connection-profiles update` commands to specify\n  the Database Mirroring (DBM) port for SQL Server Distributed Availability\n  Group (DAG) migrations.\n* Added `--sqlserver-dag-source-ag` and `--sqlserver-dag-linked-server` flags\n  to `gcloud database-migration migration-jobs create` and\n  `gcloud database-migration migration-jobs update` commands to configure SQL\n  Server Distributed Availability Group (DAG) migrations.",
+        "summary": {
+          "title": "Database migration enhancements",
+          "summary": "New flags have been added to gcloud database-migration commands to support custom delimiters for SSL flags, specify the Database Mirroring port for SQL Server DAG migrations, and configure SQL Server Distributed Availability Group migrations."
+        }
+      },
+      {
+        "kind": "Device Run",
+        "content": "* Removed `gcloud beta device-run sessions submit xctest`. The command remains available in the alpha release track.",
+        "summary": {
+          "title": "Device Run Sessions Command Updated",
+          "summary": "The `gcloud beta device-run sessions submit xctest` command has been removed from the beta release track. Users can still access this functionality through the alpha release track."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Added `--prioritized` flag to `gcloud beta container fleet rolloutsequences\n  upgrade` and `gcloud beta container hub rolloutsequences upgrade`.",
+        "summary": {
+          "title": "GKE Hub Upgrade Flag",
+          "summary": "A new --prioritized flag has been added to the gcloud container fleet and hub rollout sequences upgrade commands. This flag allows users to specify prioritized upgrades for their services."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Added `--wiz-sensor-api-key-secret-uri`, `--wiz-sensor-proxy-secret-uri`,\n  and `--wiz-sensor-registry-secret-uri` flags to `gcloud container clusters\n  create`, `create-auto`, and `update` commands to configure Wiz Sensor.",
+        "summary": {
+          "title": "Configure Wiz Sensor in Kubernetes Engine",
+          "summary": "New flags are available for `gcloud container clusters create`, `create-auto`, and `update` commands. These flags allow you to easily configure Wiz Sensor by specifying secret URIs for the API key, proxy, and registry."
+        }
+      },
+      {
+        "kind": "Looker",
+        "content": "* Fixed `gcloud looker instances update --linked-lsp-project-number` sending\n  an empty update mask and failing.",
+        "summary": {
+          "title": "Looker instance update fixed",
+          "summary": "The issue where updating Looker instances with the --linked-lsp-project-number flag failed due to an empty update mask has been resolved. This fix ensures that the update mask is correctly populated, allowing for successful instance updates."
+        }
+      },
+      {
+        "kind": "Oracle Database",
+        "content": "* Added `update` command to the following `gcloud oracle-database` command\n  groups to support adding, updating, removing, and clearing labels using\n  `--update-labels`, `--remove-labels`, and `--clear-labels` flags:\n  + `gcloud oracle-database cloud-exadata-infrastructures update`\n  + `gcloud oracle-database cloud-vm-clusters update`\n  + `gcloud oracle-database db-systems update`\n  + `gcloud oracle-database exascale-db-storage-vaults update`\n  + `gcloud oracle-database goldengate-connections update`\n  + `gcloud oracle-database goldengate-connection-assignments update`\n  + `gcloud oracle-database goldengate-deployments update`\n  + `gcloud oracle-database odb-networks odb-subnets update`",
+        "summary": {
+          "title": "Oracle Database label management enhanced",
+          "summary": "New update commands for Oracle Database resources allow for adding, updating, removing, and clearing labels. These enhancements provide more flexible management of database resources through labels."
+        }
+      },
+      {
+        "kind": "Workbench",
+        "content": "* Fixed `--nic-type` flag choices in `gcloud workbench instances create` to\n  use `VIRTIO_NET` instead of `VIRTIGO_NET`.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Workbench instance creation fix",
+          "summary": "The `--nic-type` flag in the `gcloud workbench instances create` command has been corrected to use `VIRTIO_NET` instead of the previously incorrect `VIRTIGO_NET`. This ensures proper network interface configuration for newly created Workbench instances."
+        }
+      }
+    ]
+  }
+}

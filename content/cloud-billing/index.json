@@ -1,6 +1,16 @@
 {
   "name": "Cloud Billing",
   "entries": {
+    "2026-10-13": [
+      {
+        "kind": "Feature",
+        "content": "**Spend cap budgets are now generally available for a limited set of services**\n\nFor\n[eligible services](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#eligible-services),\nyou can configure a **spend cap budget** to automatically pause usage when your\nestimated spend exceeds the budget amount you set. You can manage spend cap\nbudgets in the\n[Budgets page in the Google Cloud console](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps)\nand using the\n[Cloud Billing Budget API](https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap).\n\nSpend caps are a cost control mechanism. A spend cap is enforced when usage\ncosts exceed your budget target amount. When enforced, any new request to the\neligible services, within the specified project, are paused and no further\nusage costs are accrued until the spend cap is lifted. You can manually lift an\nenforced spend cap, or wait until the start of the next month when the\nspend cap is automatically lifted.\n\nSpend caps use *gross, estimated costs* to trigger the alerts and caps,\nenforcing a cap much faster than the *actual costs* are processed and appear\non billing reports. Even though faster than reports, the enforcement of spend\ncaps isn't instant and any cost overages are billed as normal.\n\n**More information about spend cap budgets**\n\nFor managing spend cap budgets in the Google Cloud console, see:\n\n* [How spend cap budgets work to help you control spend](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#how-spend-cap-budgets-work)\n* [Limitations of spend cap budgets](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#limitations)\n* [Configure a spend cap budget](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#configure-spend-cap)\n* [Lift an enforced spend cap](https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#lift-spend-cap)\n\nFor managing spend cap budgets using the Cloud Billing Budget API, see:\n\n* [Using the Cloud Billing Budget API for spend cap budgets](https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap)\n* [Spend cap budget concepts and limitations](https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap#concepts-limitations)\n* [Create a spend cap budget](https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap#create)\n* [Lift an enforced spend cap](https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap#lift)\n* [Cloud Billing Budget API REST reference](https://docs.cloud.google.com/billing/docs/reference/budget/rest/v1/billingAccounts.budgets)",
+        "summary": {
+          "title": "New spend cap budgets available",
+          "summary": "You can now set spend cap budgets for eligible services to automatically pause usage when your estimated spend reaches a defined limit. This feature helps control costs by stopping new requests once your budget is met. Spend caps are managed through the console or the Cloud Billing Budget API."
+        }
+      }
+    ],
     "2026-09-04": [
       {
         "kind": "Change",

@@ -1,5 +1,22 @@
 # Gemini Enterprise
 
+## 2026-10-13
+
+### Feature
+
+**Gemini Enterprise: Gemini 4 Argon is available in AlphaEvolve**
+
+AlphaEvolve experiments can generate candidate programs with Gemini 4 Argon
+in the `global`, `us`, and `eu` regions. To use it, specify
+`gemini-4-argon` in the `models` field of `generationSettings`. Gemini 3.8
+Flash remains the default model.
+
+For more information, see [Supported
+models](https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/reference-guide/api-reference#supported-models)
+and [AlphaEvolve
+limitations](https://docs.cloud.google.com/gemini/enterprise/docs/locations#alphaevolve-limitations).
+
+---
 ## 2026-10-08
 
 ### Feature

@@ -1,5 +1,90 @@
 # Config Connector
 
+## 2026-10-06
+
+### Announcement
+
+Config Connector version 1.158.0 is now available.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `AgentRegistryBinding`
+
+  + Manage [Agent Registry bindings](https://docs.cloud.google.com/agent-registry/reference/rest/v1/projects.locations.bindings) to connect agent tools and authentication configurations.
+* `AIPlatformPersistentResource`
+
+  + Manage [Vertex AI Persistent Resources](https://cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources) for cluster computing and training jobs.
+* `AssuredWorkloadsWorkload`
+
+  + Manage [Assured Workloads](https://cloud.google.com/assured-workloads/docs/reference/rest/v1/organizations.locations.workloads) to enforce security and compliance controls for regulated workloads.
+* `BigtableSchemaBundle`
+
+  + Manage [Bigtable schema bundles](https://cloud.google.com/bigtable/docs/reference/admin/rest/v2/projects.instances.tables.schemaBundles) for storing protocol buffer (protobuf) schemas in Bigtable.
+* `CloudNumberRegistryRegistryBook`
+
+  + Manage [Cloud Number Registry registry books](https://docs.cloud.google.com/number-registry/reference/rest/v1alpha/projects.locations.registryBooks) to organize IP address management (IPAM) information and discovered IP address ranges.
+* `EventarcMessageBus`
+
+  + Manage [Eventarc message buses](https://cloud.google.com/eventarc/docs/reference/rest/v1/projects.locations.messageBuses) to route events from publishers to subscribers.
+* `ModelArmorFloorSetting`
+
+  + Manage [Model Armor floor settings](https://docs.cloud.google.com/model-armor/reference/rest/v1/FloorSetting) at project, folder, or organization scope to enforce baseline safety and security filters for LLMs.
+
+### Feature
+
+New Fields:
+
+* [`BackupDRBackupPlanAssociation`](https://cloud.google.com/config-connector/docs/reference/resource-docs/backupdr/backupdrbackupplanassociation)
+
+  + Added `spec.resource.sqlInstanceRef` field to support backing up Cloud SQL instances.
+* `ComputeNetworkFirewallPolicyRule`
+
+  + Added `spec.match.srcNetworkContext` and `spec.match.destNetworkContext` fields.
+* [`ComputeRegionNetworkEndpointGroup`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computeregionnetworkendpointgroup)
+
+  + Added `INTERNET_IP_PORT`, `INTERNET_FQDN_PORT`, and `GCE_VM_IP_PORTMAP` values for `spec.networkEndpointType`.
+* [`RedisCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/redis/rediscluster)
+
+  + Added `spec.clusterEndpoints` and `status.clusterEndpoints` fields.
+  + Added `spec.gcsSource` field.
+  + Added `spec.managedBackupSource` field.
+* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)
+
+  + Added `spec.settings.databaseReplicationEnabled` field.
+
+### Feature
+
+New Features:
+
+* Added support for pausing and unpausing actuation at the individual resource level by using the `cnrm.cloud.google.com/actuation-mode` annotation.
+
+### Change
+
+Reconciliation Improvements:
+
+Added support for direct reconciliation to more resources, with opt-in behavior. The API is unchanged. To use the direct reconciler, add the `alpha.cnrm.cloud.google.com/reconciler: direct` annotation to the corresponding Config Connector object. The following resources now have direct reconciliation support:
+
+* [`FilestoreInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/filestore/filestoreinstance)
+  + Added support for direct reconciliation (opt-in).
+
+### Fixed
+
+Bug Fixes:
+
+* [`BigQueryDataset`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydataset) ([#12383](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12383))
+
+  + Fixed a reconciliation failure in projects with a project ID that contains a colon (such as domain-scoped projects `example.com:my-project`), where creation previously failed with an invalid ID format error and `resourceID` and `selfLink` were not populated.
+* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment) ([#12795](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12795))
+
+  + Fixed infinite reconciliation loops, false drift, and HTTP 400 errors when using empty map fields (`envVariables: {}`, `labels: {}`), partial `workloadsConfig` blocks, or disabling `scheduledSnapshotsConfig`.
+* [`ComputeRouterNAT`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouternat) ([#12813](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12813))
+
+  + Fixed reference validation and resolution in the direct controller so that `spec.routerRef` accepts both short router names and canonical long paths.
+* Removed empty `status.observedState` fields from `v1alpha1` CRDs to align with Kubernetes structural schema requirements ([#12627](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12627)).
+
+---
 ## 2026-09-23
 
 ### Announcement

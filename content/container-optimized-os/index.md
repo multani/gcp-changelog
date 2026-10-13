@@ -1,5 +1,20 @@
 # Container Optimized OS
 
+## 2026-10-12
+
+### Fixed
+
+Added support for lustre v2.14.0\_p262-r1
+
+### Security
+
+Fixed CVE-2026-18220 in sys-libs/binutils-libs.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.12.0.
+
+---
 ## 2026-10-06
 
 ### Change

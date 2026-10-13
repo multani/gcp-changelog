@@ -1,5 +1,12 @@
 # Backup for GKE
 
+## 2026-10-12
+
+### Change
+
+Backup for GKE is now available in the following region: `asia-southeast3` (Bangkok, Thailand). For more information, see [Backup for GKE locations](https://docs.cloud.google.com/kubernetes-engine/docs/add-on/backup-for-gke/concepts/about-locations).
+
+---
 ## 2025-09-16
 
 ### Feature

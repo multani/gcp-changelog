@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-10-13
+
+### Feature
+
+The
+[`AI.AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-agg)
+is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA). You can use this function to semantically aggregate unstructured input
+data based on natural language instructions.
+
+---
 ## 2026-10-12
 
 ### Feature

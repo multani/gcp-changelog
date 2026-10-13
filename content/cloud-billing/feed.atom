@@ -2,9 +2,54 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Billing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Billing</subtitle>
-  <updated>2026-09-04T00:00:00+00:00</updated>
+  <updated>2026-10-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-billing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-billing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-billing:2026-10-13:feature:0</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Spend cap budgets are now generally available for a limited set of services</strong></p>
+<p>For
+<a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#eligible-services">eligible services</a>,
+you can configure a <strong>spend cap budget</strong> to automatically pause usage when your
+estimated spend exceeds the budget amount you set. You can manage spend cap
+budgets in the
+<a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps">Budgets page in the Google Cloud console</a>
+and using the
+<a href="https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap">Cloud Billing Budget API</a>.</p>
+<p>Spend caps are a cost control mechanism. A spend cap is enforced when usage
+costs exceed your budget target amount. When enforced, any new request to the
+eligible services, within the specified project, are paused and no further
+usage costs are accrued until the spend cap is lifted. You can manually lift an
+enforced spend cap, or wait until the start of the next month when the
+spend cap is automatically lifted.</p>
+<p>Spend caps use <em>gross, estimated costs</em> to trigger the alerts and caps,
+enforcing a cap much faster than the <em>actual costs</em> are processed and appear
+on billing reports. Even though faster than reports, the enforcement of spend
+caps isn't instant and any cost overages are billed as normal.</p>
+<p><strong>More information about spend cap budgets</strong></p>
+<p>For managing spend cap budgets in the Google Cloud console, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#how-spend-cap-budgets-work">How spend cap budgets work to help you control spend</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#limitations">Limitations of spend cap budgets</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#configure-spend-cap">Configure a spend cap budget</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets-spend-caps#lift-spend-cap">Lift an enforced spend cap</a></li>
+</ul>
+<p>For managing spend cap budgets using the Cloud Billing Budget API, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap">Using the Cloud Billing Budget API for spend cap budgets</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap#concepts-limitations">Spend cap budget concepts and limitations</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap#create">Create a spend cap budget</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/how-to/budget-api-spend-cap#lift">Lift an enforced spend cap</a></li>
+<li><a href="https://docs.cloud.google.com/billing/docs/reference/budget/rest/v1/billingAccounts.budgets">Cloud Billing Budget API REST reference</a></li>
+</ul>]]></content>
+    <summary>You can now set spend cap budgets for eligible services to automatically pause usage when your estimated spend reaches a defined limit. This feature helps control costs by stopping new requests once your budget is met. Spend caps are managed through the console or the Cloud Billing Budget API.</summary>
+    <title>Feature: New spend cap budgets available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

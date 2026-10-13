@@ -1,5 +1,14 @@
 # Cloud Build
 
+## 2026-10-12
+
+### Announcement
+
+You can now choose the [release channel](https://docs.cloud.google.com/build/docs/release-channels) for your
+build config or private pool. The release channel determines how frequently the
+underlying versions of Debian and Docker are updated.
+
+---
 ## 2026-08-28
 
 ### Feature

@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-10-12
+
+### Feature
+
+Incremental data transfers for the BigQuery Data Transfer Service for
+[PostgreSQL](https://docs.cloud.google.com/bigquery/docs/postgresql-transfer-intro#full-incremental-transfers)
+and
+[ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer#full_or_incremental_transfers)
+are now
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-09
 
 ### Feature
@@ -263,7 +276,7 @@ The **Query results** pane in the BigQuery Studio query editor lets you
 [view a short history of recent runs for a query](https://docs.cloud.google.com/bigquery/docs/managing-jobs#view-job),
 including [multi-statement queries](https://docs.cloud.google.com/bigquery/docs/multi-statement-queries#view_multi_statement_query_results),
 without having to navigate to the **Job history** tab.
-This feature is [generally available](https://cloud.google.com/products/#product-launch-stages)
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
 
 ### Feature
@@ -288,7 +301,7 @@ pipelines are [generally available](https://cloud.google.com/products#product-la
 You can use the [migration lineage service](https://docs.cloud.google.com/bigquery/docs/migration/migration-lineage) to
 visualize the data flow and connections in your source database and
 help you plan a BigQuery data warehouse migration. This feature is in
-[Preview](https://cloud.google.com/products/#product-launch-stages).
+[Preview](https://cloud.google.com/products#product-launch-stages).
 
 ---
 ## 2026-09-14

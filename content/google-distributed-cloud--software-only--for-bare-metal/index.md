@@ -1,5 +1,59 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-10-12
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.35.600-gke.140 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.35.600-gke.140 runs on Kubernetes v1.35.8-gke.100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+### Fixed
+
+The following issues were fixed in 1.35.600-gke.140:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Improved `containerd` resilience against state corruption if a node reboots
+  while unpacking container images.
+* Fixed an issue where the periodic configuration drift health check failed with
+  a `version not supported` error while a cluster upgrade or rollback was in
+  progress.
+* Fixed an issue where `audit-proxy` retried audit log exports indefinitely on
+  permanent errors, generating excessive audit logging traffic.
+* Fixed an issue where the Kubernetes preflight health check scanned all
+  namespaces in the admin cluster instead of the target cluster's namespace,
+  causing cluster upgrades to fail if an unrelated cluster had stale
+  reconciling resources.
+* Fixed an issue where upgrading or recreating a node during maintenance mode
+  could proceed before storage volumes finished detaching, resulting in orphaned
+  CSI `VolumeAttachment` resources or I/O errors. After the fix, node drain
+  verifies that `kubelet` unmounts all host volumes and that CSI
+  `VolumeAttachment` resources detach before completing the drain.
+* Fixed an issue where Certificate Authority (CA) rotation failed for
+  self-managing clusters (admin, hybrid, and standalone). The failure occurs
+  during the final phase of the rotation when attempting to move management
+  resources back from the temporary bootstrap cluster to the self-managing
+  cluster, which can leave the cluster in an unmanageable state. You must
+  upgrade your clusters to version 1.35.600-gke.140 before you rotate your CAs.
+* Fixed an issue where `BareMetalMachine` status conditions prematurely
+  reported nodes as ready and available during maintenance mode transitions.
+* Fixed an issue in clusters using bundled BGP load balancing where control
+  plane upgrades or configuration updates could cause up to 20 seconds of API
+  server connection failures while a control plane node restarted. After the fix, failover to a
+  healthy control plane node completes in approximately 4 seconds.
+* Fixed an issue where user clusters repeatedly alternated between `reconciling`
+  and `running` states if the management cluster configured a different pod
+  density configuration than the user cluster.
+
+---
 ## 2026-10-07
 
 ### Announcement

@@ -4,6 +4,13 @@
 
 ### Feature
 
+[General availability](https://cloud.google.com/products#product-launch-stages)
+support for the following integration:
+
+* [Cloud Storage for Firebase](https://docs.cloud.google.com/vpc-service-controls/docs/supported-products#table_firebase_cloud_storage)
+
+### Feature
+
 **VPC Service Controls feature (Status: [Preview](https://cloud.google.com/products#product-launch-stages))**:
 Support for automated remediation suggestions is available in the
 VPC Service Controls violation analyzer.

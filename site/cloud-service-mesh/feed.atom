@@ -2,9 +2,140 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Service Mesh</title>
   <subtitle>Changelog for Google Cloud product: Cloud Service Mesh</subtitle>
-  <updated>2026-09-28T00:00:00+00:00</updated>
+  <updated>2026-10-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-service-mesh</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-service-mesh/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:0</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.30.5-asm.8 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.30.5-asm.8 uses Envoy v1.38.7-dev.</p>
+<p>This release resolves the security vulnerability listed in Security Bulletin
+<a href="https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-067">GCP-2026-067</a>.</p>]]></content>
+    <summary>A new version of the in-cluster service mesh is now available. This update addresses a security vulnerability and includes Envoy v1.38.7-dev. Refer to the documentation for upgrade instructions.</summary>
+    <title>Announcement: Service Mesh Update Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:1</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.30.5-asm.8 contains the fix for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18924">CVE-2026-18924</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82474">CVE-2026-82474</a> | Yes | Yes | No | Yes | Medium (8.5) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82209">CVE-2026-82209</a> | Yes | Yes | No | Yes | Medium (8.2) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84782">CVE-2026-84782</a> | Yes | Yes | No | Yes | High (8.2) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96512">CVE-2026-96512</a> | Yes | Yes | No | Yes | Medium (7.8) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-80230">CVE-2026-80230</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13608">CVE-2026-13608</a> | Yes | Yes | No | Yes | Medium (7.4) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15534">CVE-2026-15534</a> | Yes | Yes | No | Yes | Medium (5.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19487">CVE-2026-19487</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35189">CVE-2026-35189</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75805">CVE-2026-75805</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75806">CVE-2026-75806</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54872">CVE-2026-54872</a> | Yes | Yes | No | Yes | Low (3.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77696">CVE-2026-77696</a> | Yes | Yes | No | Yes | Low (3.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0799">CVE-2026-0799</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>Patch 1.30.5-asm.8 has been released, addressing multiple platform CVEs across proxy, control plane, and CNI components. This update includes fixes for vulnerabilities ranging in severity from low to high, ensuring enhanced security for the platform.</summary>
+    <title>Fixed: Security Fixes Applied</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:2</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.29.8-asm.8 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/v1.29/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.29.8-asm.8 uses Envoy v1.37.9-dev.</p>
+<p>This release resolves the security vulnerability listed in Security Bulletin
+<a href="https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-067">GCP-2026-067</a>.</p>]]></content>
+    <summary>The latest version of Cloud Service Mesh, 1.29.8-asm.8, is now available. This release includes a fix for security vulnerability GCP-2026-067 and upgrades to Envoy v1.37.9-dev. For upgrade instructions, please refer to the official documentation.</summary>
+    <title>Announcement: Cloud Service Mesh 1.29.8-asm.8 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:3</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.29.8-asm.8 contains the fix for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18924">CVE-2026-18924</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82474">CVE-2026-82474</a> | Yes | Yes | No | Yes | Medium (8.5) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82209">CVE-2026-82209</a> | Yes | Yes | No | Yes | Medium (8.2) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84782">CVE-2026-84782</a> | Yes | Yes | No | Yes | High (8.2) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96512">CVE-2026-96512</a> | Yes | Yes | No | Yes | Medium (7.8) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-80230">CVE-2026-80230</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13608">CVE-2026-13608</a> | Yes | Yes | No | Yes | Medium (7.4) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15534">CVE-2026-15534</a> | Yes | Yes | No | Yes | Medium (5.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19487">CVE-2026-19487</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35189">CVE-2026-35189</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75805">CVE-2026-75805</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75806">CVE-2026-75806</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54872">CVE-2026-54872</a> | Yes | Yes | No | Yes | Low (3.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77696">CVE-2026-77696</a> | Yes | Yes | No | Yes | Low (3.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0799">CVE-2026-0799</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>The latest patch (1.29.8-asm.8) addresses multiple platform CVEs across various components including proxy, control plane, and CNI. This update is crucial for maintaining the security posture of your services.</summary>
+    <title>Fixed: Security fixes applied</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:4</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.28.10-asm.49 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/v1.28/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh 1.28.10-asm.49 uses Envoy v1.36.10-dev.</p>]]></content>
+    <summary>A new version of Cloud Service Mesh, 1.28.10-asm.49, is now available. This update includes Envoy v1.36.10. For instructions on upgrading, please refer to the official documentation.</summary>
+    <title>Announcement: Cloud Service Mesh Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:5</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Patch 1.28.10-asm.49 contains the fix for the following platform CVEs:</p>
+<p>| CVE | Proxy | Control Plane | Distroless | CNI | Severity |
+| --- | --- | --- | --- | --- | --- |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18924">CVE-2026-18924</a> | Yes | Yes | No | Yes | Medium (9.1) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82474">CVE-2026-82474</a> | Yes | Yes | No | Yes | Medium (8.5) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-82209">CVE-2026-82209</a> | Yes | Yes | No | Yes | Medium (8.2) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-84782">CVE-2026-84782</a> | Yes | Yes | No | Yes | High (8.2) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-96512">CVE-2026-96512</a> | Yes | Yes | No | Yes | Medium (7.8) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-80230">CVE-2026-80230</a> | Yes | Yes | No | Yes | Medium (7.5) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13608">CVE-2026-13608</a> | Yes | Yes | No | Yes | Medium (7.4) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-15534">CVE-2026-15534</a> | Yes | Yes | No | Yes | Medium (5.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19487">CVE-2026-19487</a> | Yes | Yes | No | Yes | Medium (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-35189">CVE-2026-35189</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75805">CVE-2026-75805</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75806">CVE-2026-75806</a> | Yes | Yes | No | Yes | Low (5.3) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54872">CVE-2026-54872</a> | Yes | Yes | No | Yes | Low (3.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77696">CVE-2026-77696</a> | Yes | Yes | No | Yes | Low (3.7) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-81870">CVE-2026-81870</a> | Yes | Yes | Yes | Yes | Low (2.0) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-0799">CVE-2026-0799</a> | Yes | Yes | No | Yes | Medium (0.0) |</p>]]></content>
+    <summary>Patch 1.28.10-asm.49 has been released, addressing multiple platform security vulnerabilities. This update includes fixes for several CVEs affecting the proxy, control plane, and CNI components.</summary>
+    <title>Fixed: Security Updates Applied</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

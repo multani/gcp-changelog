@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-10-12": [
+      {
+        "kind": "Feature",
+        "content": "Regular expression matchers in host and route rules in URL maps are now **generally available** (GA).\n\nYou can now use regular expressions (regex) matchers to configure more flexible and precise traffic routing rules within URL maps for Application Load Balancers. This feature allows you to leverage the power of RE2 syntax for matching on:\n\n* **URL Paths:** Using the `regexMatch` field within `routeRules`.\n* **HTTP Headers:** Using the `regexMatch` field within `headerMatches` in `routeRules`.\n* **HTTP Query Parameters:** Using the `regexMatch` field within `queryParameterMatches` in `routeRules`.\n\nThis feature is available in:\n\n* Global external Application Load Balancers\n* Regional internal Application Load Balancers\n* Cross-region internal Application Load Balancers\n* Regional external Application Load Balancers\n\nFor more information, see [URL map concepts: Regular expressions matchers in host and route rules](https://docs.cloud.google.com/load-balancing/docs/url-map-concepts#regex-support).",
+        "summary": {
+          "title": "Regex Matchers for URL Maps Now Generally Available",
+          "summary": "Regular expression matchers for host and route rules in URL maps are now generally available. This feature allows for more flexible traffic routing based on URL paths, HTTP headers, and query parameters using RE2 syntax across various Application Load Balancer types."
+        }
+      }
+    ],
     "2026-10-05": [
       {
         "kind": "Feature",

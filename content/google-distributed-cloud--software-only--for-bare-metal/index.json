@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for bare metal",
   "entries": {
+    "2026-10-12": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for bare metal 1.35.600-gke.140 is now available for\ndownload. To upgrade, see [Upgrade clusters](how-to/upgrade).\nGoogle Distributed Cloud for bare metal\n1.35.600-gke.140 runs on Kubernetes v1.35.8-gke.100.\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for installations or upgrades with the GKE On-Prem API clients: the\nGoogle Cloud console, the gcloud CLI, and Terraform.\n\nIf you use a third-party storage vendor, check the listing of our\npreviously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).",
+        "summary": {
+          "title": "New release of distributed cloud software",
+          "summary": "The latest version of Google Distributed Cloud for bare metal, 1.35.600-gke.140, is now available for download. This release runs on Kubernetes v1.35.8-gke.100. Please note that it may take 7-14 days for the new version to be accessible through GKE On-Prem API clients."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.35.600-gke.140:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).\n* Improved `containerd` resilience against state corruption if a node reboots\n  while unpacking container images.\n* Fixed an issue where the periodic configuration drift health check failed with\n  a `version not supported` error while a cluster upgrade or rollback was in\n  progress.\n* Fixed an issue where `audit-proxy` retried audit log exports indefinitely on\n  permanent errors, generating excessive audit logging traffic.\n* Fixed an issue where the Kubernetes preflight health check scanned all\n  namespaces in the admin cluster instead of the target cluster's namespace,\n  causing cluster upgrades to fail if an unrelated cluster had stale\n  reconciling resources.\n* Fixed an issue where upgrading or recreating a node during maintenance mode\n  could proceed before storage volumes finished detaching, resulting in orphaned\n  CSI `VolumeAttachment` resources or I/O errors. After the fix, node drain\n  verifies that `kubelet` unmounts all host volumes and that CSI\n  `VolumeAttachment` resources detach before completing the drain.\n* Fixed an issue where Certificate Authority (CA) rotation failed for\n  self-managing clusters (admin, hybrid, and standalone). The failure occurs\n  during the final phase of the rotation when attempting to move management\n  resources back from the temporary bootstrap cluster to the self-managing\n  cluster, which can leave the cluster in an unmanageable state. You must\n  upgrade your clusters to version 1.35.600-gke.140 before you rotate your CAs.\n* Fixed an issue where `BareMetalMachine` status conditions prematurely\n  reported nodes as ready and available during maintenance mode transitions.\n* Fixed an issue in clusters using bundled BGP load balancing where control\n  plane upgrades or configuration updates could cause up to 20 seconds of API\n  server connection failures while a control plane node restarted. After the fix, failover to a\n  healthy control plane node completes in approximately 4 seconds.\n* Fixed an issue where user clusters repeatedly alternated between `reconciling`\n  and `running` states if the management cluster configured a different pod\n  density configuration than the user cluster.",
+        "summary": {
+          "title": "Fixes for version 1.35.600-gke.140",
+          "summary": "This release addresses several critical issues including security vulnerabilities, improved containerd resilience, and fixes for cluster upgrades, CA rotation, and load balancing. It ensures more stable and secure cluster operations."
+        }
+      }
+    ],
     "2026-10-07": [
       {
         "kind": "Announcement",

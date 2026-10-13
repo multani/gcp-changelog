@@ -2,9 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for bare metal</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for bare metal</subtitle>
-  <updated>2026-10-07T00:00:00+00:00</updated>
+  <updated>2026-10-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-bare-metal/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-10-12:announcement:0</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for bare metal 1.35.600-gke.140 is now available for
+download. To upgrade, see <a href="how-to/upgrade">Upgrade clusters</a>.
+Google Distributed Cloud for bare metal
+1.35.600-gke.140 runs on Kubernetes v1.35.8-gke.100.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.</p>
+<p>If you use a third-party storage vendor, check the listing of our
+previously-qualified <a href="https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">storage partners</a>.</p>]]></content>
+    <summary>The latest version of Google Distributed Cloud for bare metal, 1.35.600-gke.140, is now available for download. This release runs on Kubernetes v1.35.8-gke.100. Please note that it may take 7-14 days for the new version to be accessible through GKE On-Prem API clients.</summary>
+    <title>Announcement: New release of distributed cloud software</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-bare-metal:2026-10-12:fixed:1</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.600-gke.140:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Improved <code>containerd</code> resilience against state corruption if a node reboots
+  while unpacking container images.</li>
+<li>Fixed an issue where the periodic configuration drift health check failed with
+  a <code>version not supported</code> error while a cluster upgrade or rollback was in
+  progress.</li>
+<li>Fixed an issue where <code>audit-proxy</code> retried audit log exports indefinitely on
+  permanent errors, generating excessive audit logging traffic.</li>
+<li>Fixed an issue where the Kubernetes preflight health check scanned all
+  namespaces in the admin cluster instead of the target cluster's namespace,
+  causing cluster upgrades to fail if an unrelated cluster had stale
+  reconciling resources.</li>
+<li>Fixed an issue where upgrading or recreating a node during maintenance mode
+  could proceed before storage volumes finished detaching, resulting in orphaned
+  CSI <code>VolumeAttachment</code> resources or I/O errors. After the fix, node drain
+  verifies that <code>kubelet</code> unmounts all host volumes and that CSI
+  <code>VolumeAttachment</code> resources detach before completing the drain.</li>
+<li>Fixed an issue where Certificate Authority (CA) rotation failed for
+  self-managing clusters (admin, hybrid, and standalone). The failure occurs
+  during the final phase of the rotation when attempting to move management
+  resources back from the temporary bootstrap cluster to the self-managing
+  cluster, which can leave the cluster in an unmanageable state. You must
+  upgrade your clusters to version 1.35.600-gke.140 before you rotate your CAs.</li>
+<li>Fixed an issue where <code>BareMetalMachine</code> status conditions prematurely
+  reported nodes as ready and available during maintenance mode transitions.</li>
+<li>Fixed an issue in clusters using bundled BGP load balancing where control
+  plane upgrades or configuration updates could cause up to 20 seconds of API
+  server connection failures while a control plane node restarted. After the fix, failover to a
+  healthy control plane node completes in approximately 4 seconds.</li>
+<li>Fixed an issue where user clusters repeatedly alternated between <code>reconciling</code>
+  and <code>running</code> states if the management cluster configured a different pod
+  density configuration than the user cluster.</li>
+</ul>]]></content>
+    <summary>This release addresses several critical issues including security vulnerabilities, improved containerd resilience, and fixes for cluster upgrades, CA rotation, and load balancing. It ensures more stable and secure cluster operations.</summary>
+    <title>Fixed: Fixes for version 1.35.600-gke.140</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,6 +1,24 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-10-12": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.35.600-gke.140 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.35.600-gke.140 runs on Kubernetes v1.35.8-gke.100.\n\nIf you use a third-party storage vendor, check the listing of our\npreviously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software release available",
+          "summary": "The latest version of Google Distributed Cloud for VMware, 1.35.600-gke.140, is now ready for download. This release runs on Kubernetes v1.35.8-gke.100. Please refer to the documentation for upgrade instructions and check our storage partner list if you use third-party storage solutions."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.35.600-gke.140:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Fixed an issue where `audit-proxy` retried audit log exports indefinitely on\n  permanent errors, generating excessive audit logging traffic.\n* Fixed an issue where the Kubernetes preflight health check scanned all\n  namespaces in the admin cluster instead of the target cluster's namespace,\n  causing cluster upgrades to fail if an unrelated cluster had stale\n  reconciling resources.\n* Fixed an issue where user clusters repeatedly alternated between `reconciling`\n  and `running` states if the management cluster configured a different pod\n  density configuration than the user cluster.",
+        "summary": {
+          "title": "Version 1.35.600-gke.140 Release Notes",
+          "summary": "This release addresses critical security vulnerabilities and resolves several issues affecting audit log exports, cluster health checks, and user cluster state management. Updates ensure more stable and secure operations."
+        }
+      }
+    ],
     "2026-10-07": [
       {
         "kind": "Announcement",

@@ -2,6 +2,22 @@
 
 ## 2026-10-12
 
+### Feature
+
+**[Spotlight Feature] Monitor response and playbook health with the Response Health Hub**
+
+Google SecOps now includes the **Response Health Hub** curated dashboard, a central location for monitoring playbook performance, execution latency, automation effectiveness, and integration health across environments.
+
+Key capabilities include:
+
+* **Volume and adoption tracking**: Monitor total playbook execution volume, daily trends, completion success rates, and queued playbook backlogs.
+* **Attachment and rerun insights**: Track average and maximum playbooks attached per case or alert, and identify playbooks with high rerun counts.
+* **Execution latency diagnostics**: Compare end-to-end playbook execution time against active action execution time, and drill down into the 30 slowest playbook and action runs.
+* **Playbook and integration health monitoring**: Investigate the latest failed playbook runs, highest failure-rate and terminated playbooks, and integration action error reasons.
+* **Automation effectiveness metrics**: Compare automated versus manual case closure rates and Mean Time to Resolve (MTTR).
+
+For more information, see [Monitor response and playbook health](https://docs.cloud.google.com/chronicle/docs/reports/response-health-monitoring-and-troubleshooting-dashboard).
+
 ### Announcement
 
 The deadline for the migration of SOAR APIs to the Chronicle API has been extended from November 30, 2026

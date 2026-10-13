@@ -1,5 +1,14 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-10-12
+
+### Announcement
+
+The Service Level Agreement (SLA) for Managed Service for Apache Kafka now
+covers the Produce API. For more information, see
+[Managed Service for Apache Kafka Service Level Agreement](https://cloud.google.com/terms/managed-service-for-apache-kafka/sla).
+
+---
 ## 2026-10-09
 
 ### Change

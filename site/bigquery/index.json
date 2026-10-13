@@ -1,6 +1,16 @@
 {
   "name": "BigQuery",
   "entries": {
+    "2026-10-12": [
+      {
+        "kind": "Feature",
+        "content": "Incremental data transfers for the BigQuery Data Transfer Service for\n[PostgreSQL](https://docs.cloud.google.com/bigquery/docs/postgresql-transfer-intro#full-incremental-transfers)\nand\n[ServiceNow](https://docs.cloud.google.com/bigquery/docs/servicenow-transfer#full_or_incremental_transfers)\nare now\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "BigQuery Data Transfer Service: Incremental Transfers GA",
+          "summary": "The BigQuery Data Transfer Service now supports generally available incremental data transfers for PostgreSQL and ServiceNow. This feature allows for more efficient data synchronization by only transferring changes since the last transfer, reducing processing time and costs."
+        }
+      }
+    ],
     "2026-10-09": [
       {
         "kind": "Feature",
@@ -8,6 +18,16 @@
         "summary": {
           "title": "BigQuery Data Engineering Agent GA in Tokyo",
           "summary": "The BigQuery Data Engineering Agent is now Generally Available in the asia-northeast1 (Tokyo) region, supporting the gemini-3.5-flash model. This expansion allows users in the Tokyo region to leverage advanced data engineering capabilities directly within BigQuery."
+        }
+      }
+    ],
+    "2026-10-07": [
+      {
+        "kind": "Feature",
+        "content": "BigQuery offers [`TimesFM 3.0`](https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/),\na built-in time series forecasting model that implements Google Research's open\nsource TimesFM model. You can use `TimesFM 3.0` with the following functions:\n\n* Use\n  [`AI.FORECAST`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast)\n  to perform time series forecasting. In addition to univariate forecasting,\n  you can now perform multivariate forecasting that predicts values for\n  multiple time series based on historical values and additional covariates.\n* Use\n  [`AI.EVALUATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate)\n  to perform univariate time series evaluation.\n* Use\n  [`AI.DETECT_ANOMALIES`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)\n  to perform univariate time series anomaly detection.\n\n[Conversational analytics in BigQuery](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)\nalso supports using `TimesFM 3.0` with these functions.\n\nTo try using the `TimesFM 3.0` model for multivariate forecasting with the\n`AI.FORECAST` function, see\n[Forecast a single time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-single-time-series-forecasting-tutorial)\nand\n[Forecast multiple time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-multi-time-series-forecasting-tutorial).\n\nThe `TimesFM 3.0` model is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "summary": {
+          "title": "Time Series Forecasting with TimesFM 3.0",
+          "summary": "BigQuery now offers TimesFM 3.0, a powerful time series forecasting model. This feature enables both univariate and multivariate forecasting, anomaly detection, and evaluation using new AI functions. Explore advanced forecasting capabilities with this cutting-edge model."
         }
       }
     ],
@@ -176,10 +196,10 @@
     "2026-09-21": [
       {
         "kind": "Feature",
-        "content": "The **Query results** pane in the BigQuery Studio query editor lets you\n[view a short history of recent runs for a query](https://docs.cloud.google.com/bigquery/docs/managing-jobs#view-job),\nincluding [multi-statement queries](https://docs.cloud.google.com/bigquery/docs/multi-statement-queries#view_multi_statement_query_results),\nwithout having to navigate to the **Job history** tab.\nThis feature is [generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA).",
+        "content": "The **Query results** pane in the BigQuery Studio query editor lets you\n[view a short history of recent runs for a query](https://docs.cloud.google.com/bigquery/docs/managing-jobs#view-job),\nincluding [multi-statement queries](https://docs.cloud.google.com/bigquery/docs/multi-statement-queries#view_multi_statement_query_results),\nwithout having to navigate to the **Job history** tab.\nThis feature is [generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
         "summary": {
-          "title": "Query results pane now shows recent runs",
-          "summary": "The Query results pane in the BigQuery Studio query editor now allows you to view a short history of recent query runs directly. This includes multi-statement queries, eliminating the need to navigate to the Job history tab for this information. This feature is now generally available."
+          "title": "Query Results Pane Enhancements",
+          "summary": "BigQuery Studio's query editor now shows recent query run history directly in the Query Results pane. This allows for quick access to previous query outputs and multi-statement query results without leaving the editor, and is now generally available."
         }
       },
       {
@@ -204,10 +224,10 @@
     "2026-09-16": [
       {
         "kind": "Feature",
-        "content": "You can use the [migration lineage service](https://docs.cloud.google.com/bigquery/docs/migration/migration-lineage) to\nvisualize the data flow and connections in your source database and\nhelp you plan a BigQuery data warehouse migration. This feature is in\n[Preview](https://cloud.google.com/products/#product-launch-stages).",
+        "content": "You can use the [migration lineage service](https://docs.cloud.google.com/bigquery/docs/migration/migration-lineage) to\nvisualize the data flow and connections in your source database and\nhelp you plan a BigQuery data warehouse migration. This feature is in\n[Preview](https://cloud.google.com/products#product-launch-stages).",
         "summary": {
-          "title": "Visualize data flow for BigQuery migrations",
-          "summary": "The migration lineage service is now available in Preview. This feature helps you visualize data flow and connections in your source database to plan your BigQuery data warehouse migration."
+          "title": "Visualize Data Flow for BigQuery Migration",
+          "summary": "A new migration lineage service is now available to help you visualize data flow and connections in your source database. This preview feature assists in planning your BigQuery data warehouse migration by providing clear insights into data lineage."
         }
       }
     ],
@@ -306,16 +326,6 @@
         "summary": {
           "title": "Gemini assistance in BigQuery Studio",
           "summary": "BigQuery Studio now offers Gemini assistance directly within the SQL editor. Use the inline action button after selecting text to get AI-powered SQL writing help. This feature is now generally available."
-        }
-      }
-    ],
-    "2026-10-07": [
-      {
-        "kind": "Feature",
-        "content": "BigQuery offers [`TimesFM 3.0`](https://research.google/blog/timesfm-3-a-zero-shot-foundation-model-for-multivariate-forecasting/),\na built-in time series forecasting model that implements Google Research's open\nsource TimesFM model. You can use `TimesFM 3.0` with the following functions:\n\n* Use\n  [`AI.FORECAST`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-forecast)\n  to perform time series forecasting. In addition to univariate forecasting,\n  you can now perform multivariate forecasting that predicts values for\n  multiple time series based on historical values and additional covariates.\n* Use\n  [`AI.EVALUATE`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-evaluate)\n  to perform univariate time series evaluation.\n* Use\n  [`AI.DETECT_ANOMALIES`](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-detect-anomalies)\n  to perform univariate time series anomaly detection.\n\n[Conversational analytics in BigQuery](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#bigquery-ml-support)\nalso supports using `TimesFM 3.0` with these functions.\n\nTo try using the `TimesFM 3.0` model for multivariate forecasting with the\n`AI.FORECAST` function, see\n[Forecast a single time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-single-time-series-forecasting-tutorial)\nand\n[Forecast multiple time series with a TimesFM multivariate model](https://docs.cloud.google.com/bigquery/docs/timesfm-multivariate-multi-time-series-forecasting-tutorial).\n\nThe `TimesFM 3.0` model is in [Preview](https://cloud.google.com/products/#product-launch-stages).",
-        "summary": {
-          "title": "Time Series Forecasting with TimesFM 3.0",
-          "summary": "BigQuery now offers TimesFM 3.0, a powerful time series forecasting model. This feature enables both univariate and multivariate forecasting, anomaly detection, and evaluation using new AI functions. Explore advanced forecasting capabilities with this cutting-edge model."
         }
       }
     ],

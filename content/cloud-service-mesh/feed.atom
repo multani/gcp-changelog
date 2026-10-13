@@ -12,6 +12,40 @@
     <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:0</id>
     <published>2026-10-12T00:00:00+00:00</published>
     <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>1.31.1-asm.16 is now available for in-cluster Cloud Service Mesh.</strong></p>
+<p>You can now download 1.31.1-asm.16 for in-cluster Cloud Service Mesh. It includes
+the features of <a href="https://istio.io/latest/news/releases/1.31.x/announcing-1.31/">Istio 1.31.1</a> subject to the list of
+<a href="https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster">supported features</a>.</p>
+<p>The following are not supported:</p>
+<ul>
+<li><code>PILOT_NODE_UNTAINT_CONTROLLERS_TAINT_NAME</code></li>
+<li><code>prefix_rewrite</code> field in <code>HTTPRedirect</code></li>
+<li><code>ALLOW_ANY_DYNAMIC_DNS</code> in <code>outboundTrafficPolicy</code></li>
+<li><code>connectionSettings</code> in <code>ProxyConfig</code></li>
+<li><code>defaultTrafficPolicy</code> in <code>MeshConfig</code></li>
+<li><code>zoneAwareLbSetting</code> in <code>DestinationRule</code> and <code>MeshConfig</code></li>
+<li><code>trustDomains</code> and <code>notTrustDomains</code> fields in <code>source</code> field of <code>AuthorizationPolicy</code></li>
+<li><code>fips-140-3</code> for the <code>COMPLIANCE_POLICY</code></li>
+<li><code>PILOT_ENABLE_REMOTE_CREDENTIALS_CONTROLLER</code></li>
+<li>External SDS provider for gateways</li>
+<li><code>PILOT_AGENT_MERGE_ENVOY_STATS</code></li>
+<li><code>prometheus.istio.io/scrape-targets</code></li>
+<li><code>ENVOY_SECURE_METRICS_PORT</code> and <code>ENVOY_SECURE_MERGED_METRICS_PORT</code></li>
+<li><code>istioctl manifest generate</code> with <code>-o/--output</code></li>
+</ul>
+<p>For details on upgrading Cloud Service Mesh, see
+<a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
+Mesh version 1.31.1-asm.16 uses Envoy v1.39.3.</p>]]></content>
+    <summary>The latest version of in-cluster Cloud Service Mesh, 1.31.1-asm.16, is now available. This release includes features from Istio 1.31.1, with specific support details outlined in the documentation. For upgrade instructions, refer to the provided link.</summary>
+    <title>Announcement: Cloud Service Mesh 1.31.1-asm.16 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:1</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>1.30.5-asm.8 is now available for in-cluster Cloud Service Mesh.</strong></p>
 <p>For details on upgrading Cloud Service Mesh, see
 <a href="https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade">Upgrade Cloud Service Mesh</a>. Cloud Service
@@ -25,7 +59,7 @@ Mesh 1.30.5-asm.8 uses Envoy v1.38.7-dev.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:1</id>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:2</id>
     <published>2026-10-12T00:00:00+00:00</published>
     <updated>2026-10-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Patch 1.30.5-asm.8 contains the fix for the following platform CVEs:</p>
@@ -53,7 +87,7 @@ Mesh 1.30.5-asm.8 uses Envoy v1.38.7-dev.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:2</id>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:3</id>
     <published>2026-10-12T00:00:00+00:00</published>
     <updated>2026-10-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>1.29.8-asm.8 is now available for in-cluster Cloud Service Mesh.</strong></p>
@@ -69,7 +103,7 @@ Mesh 1.29.8-asm.8 uses Envoy v1.37.9-dev.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:3</id>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:4</id>
     <published>2026-10-12T00:00:00+00:00</published>
     <updated>2026-10-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Patch 1.29.8-asm.8 contains the fix for the following platform CVEs:</p>
@@ -97,7 +131,7 @@ Mesh 1.29.8-asm.8 uses Envoy v1.37.9-dev.</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:4</id>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:announcement:5</id>
     <published>2026-10-12T00:00:00+00:00</published>
     <updated>2026-10-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>1.28.10-asm.49 is now available for in-cluster Cloud Service Mesh.</strong></p>
@@ -111,7 +145,7 @@ Mesh 1.28.10-asm.49 uses Envoy v1.36.10-dev.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:5</id>
+    <id>urn:github:multani:gcp-changelog:cloud-service-mesh:2026-10-12:fixed:6</id>
     <published>2026-10-12T00:00:00+00:00</published>
     <updated>2026-10-12T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Patch 1.28.10-asm.49 contains the fix for the following platform CVEs:</p>

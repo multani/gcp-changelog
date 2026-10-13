@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-10-12
+
+### Feature
+
+Support for [Budget spend caps](https://docs.cloud.google.com/run/docs/configuring/billing-settings#spend-caps) to pause your Cloud Run workloads is in [General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-07
 
 ### Feature
@@ -25,7 +32,8 @@ Support for specifying custom target CPU or concurrency utilization using
 Create [custom URLs](https://docs.cloud.google.com/run/docs/custom-urls), like
 `example.cloud.run`, that are easy to remember and globally available
 for your Cloud Run services. No DNS configuration, load balancers, or extra
-costs required ([Preview](https://cloud.google.com/products)).
+costs required
+([Preview](https://cloud.google.com/products#product-launch-stages)).
 
 ---
 ## 2026-09-23

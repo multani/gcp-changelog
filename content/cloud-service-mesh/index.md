@@ -4,6 +4,35 @@
 
 ### Announcement
 
+**1.31.1-asm.16 is now available for in-cluster Cloud Service Mesh.**
+
+You can now download 1.31.1-asm.16 for in-cluster Cloud Service Mesh. It includes
+the features of [Istio 1.31.1](https://istio.io/latest/news/releases/1.31.x/announcing-1.31/) subject to the list of
+[supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).
+
+The following are not supported:
+
+* `PILOT_NODE_UNTAINT_CONTROLLERS_TAINT_NAME`
+* `prefix_rewrite` field in `HTTPRedirect`
+* `ALLOW_ANY_DYNAMIC_DNS` in `outboundTrafficPolicy`
+* `connectionSettings` in `ProxyConfig`
+* `defaultTrafficPolicy` in `MeshConfig`
+* `zoneAwareLbSetting` in `DestinationRule` and `MeshConfig`
+* `trustDomains` and `notTrustDomains` fields in `source` field of `AuthorizationPolicy`
+* `fips-140-3` for the `COMPLIANCE_POLICY`
+* `PILOT_ENABLE_REMOTE_CREDENTIALS_CONTROLLER`
+* External SDS provider for gateways
+* `PILOT_AGENT_MERGE_ENVOY_STATS`
+* `prometheus.istio.io/scrape-targets`
+* `ENVOY_SECURE_METRICS_PORT` and `ENVOY_SECURE_MERGED_METRICS_PORT`
+* `istioctl manifest generate` with `-o/--output`
+
+For details on upgrading Cloud Service Mesh, see
+[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service
+Mesh version 1.31.1-asm.16 uses Envoy v1.39.3.
+
+### Announcement
+
 **1.30.5-asm.8 is now available for in-cluster Cloud Service Mesh.**
 
 For details on upgrading Cloud Service Mesh, see

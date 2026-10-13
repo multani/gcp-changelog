@@ -1,5 +1,12 @@
 # Network Connectivity Center
 
+## 2026-10-12
+
+### Fixed
+
+The technical issue causing incorrect billing for [producer VPC spokes](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/concepts/producer-vpc-spokes-overview) has been fixed. Starting today, projects with producer VPC spokes linked to Network Connectivity Center hubs will reflect hourly usage fees. Charges on your future billing invoices are based on [Network Connectivity Center pricing](https://docs.cloud.google.com/network-connectivity/docs/network-connectivity-center/pricing#ncc-pricing).
+
+---
 ## 2026-10-02
 
 ### Feature

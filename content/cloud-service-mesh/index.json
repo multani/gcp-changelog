@@ -4,6 +4,14 @@
     "2026-10-12": [
       {
         "kind": "Announcement",
+        "content": "**1.31.1-asm.16 is now available for in-cluster Cloud Service Mesh.**\n\nYou can now download 1.31.1-asm.16 for in-cluster Cloud Service Mesh. It includes\nthe features of [Istio 1.31.1](https://istio.io/latest/news/releases/1.31.x/announcing-1.31/) subject to the list of\n[supported features](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster).\n\nThe following are not supported:\n\n* `PILOT_NODE_UNTAINT_CONTROLLERS_TAINT_NAME`\n* `prefix_rewrite` field in `HTTPRedirect`\n* `ALLOW_ANY_DYNAMIC_DNS` in `outboundTrafficPolicy`\n* `connectionSettings` in `ProxyConfig`\n* `defaultTrafficPolicy` in `MeshConfig`\n* `zoneAwareLbSetting` in `DestinationRule` and `MeshConfig`\n* `trustDomains` and `notTrustDomains` fields in `source` field of `AuthorizationPolicy`\n* `fips-140-3` for the `COMPLIANCE_POLICY`\n* `PILOT_ENABLE_REMOTE_CREDENTIALS_CONTROLLER`\n* External SDS provider for gateways\n* `PILOT_AGENT_MERGE_ENVOY_STATS`\n* `prometheus.istio.io/scrape-targets`\n* `ENVOY_SECURE_METRICS_PORT` and `ENVOY_SECURE_MERGED_METRICS_PORT`\n* `istioctl manifest generate` with `-o/--output`\n\nFor details on upgrading Cloud Service Mesh, see\n[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service\nMesh version 1.31.1-asm.16 uses Envoy v1.39.3.",
+        "summary": {
+          "title": "Cloud Service Mesh 1.31.1-asm.16 Released",
+          "summary": "The latest version of in-cluster Cloud Service Mesh, 1.31.1-asm.16, is now available. This release includes features from Istio 1.31.1, with specific support details outlined in the documentation. For upgrade instructions, refer to the provided link."
+        }
+      },
+      {
+        "kind": "Announcement",
         "content": "**1.30.5-asm.8 is now available for in-cluster Cloud Service Mesh.**\n\nFor details on upgrading Cloud Service Mesh, see\n[Upgrade Cloud Service Mesh](https://docs.cloud.google.com/service-mesh/docs/upgrade/upgrade). Cloud Service\nMesh 1.30.5-asm.8 uses Envoy v1.38.7-dev.\n\nThis release resolves the security vulnerability listed in Security Bulletin\n[GCP-2026-067](https://cloud.google.com/service-mesh/docs/security-bulletins#gcp-2026-067).",
         "summary": {
           "title": "Service Mesh Update Released",

@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-10-12": [
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.14.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Better pull request scans**: `cm find --diff` now catches removed\n  security controls and gives large files more time (configurable with\n  `--diff-job-timeout`).\n* **Unified sessions**: `--deep` and `--diff` scans now appear as a single\n  session in `cm session list`, `cm report`, and `cm stats`.\n* **Moved code in `cm verify`**: `cm verify` now finds code that moved since\n  `cm find` and updates the finding's location.\n* **Guided activation**: `cm` now opens the activation page and waits for\n  activation instead of exiting.\n* **New `cm find` flags**: `--deep-max-turns` limits exploratory steps per\n  file in `--deep` scans, and `--enable-bash` allows shell commands during\n  scans.\n* **Improved detection**: More distinct findings per file and more precise\n  CWE classification for weak hashing and randomness.\n* **Bug fixes**:\n  + Fixed scans of repositories reached through nested symbolic links.\n  + Fixed findings for nonexistent files and over-merged findings.\n  + Shell scripts created by `cm verify` are now executable.\n\nFor more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
+        "summary": {
+          "title": "CodeMender v0.14.0: Enhanced Security Scans and Usability",
+          "summary": "The latest CodeMender release (v0.14.0) brings significant improvements to security scanning, including better pull request analysis and unified session tracking. This update also enhances the `cm verify` command for moved code, streamlines activation, and introduces new flags for more controlled scans, alongside various bug fixes for a more robust experience."
+        }
+      }
+    ],
     "2026-10-07": [
       {
         "kind": "Feature",

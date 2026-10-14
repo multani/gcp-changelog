@@ -1,5 +1,15 @@
 # Google Cloud Armor
 
+## 2026-10-14
+
+### Feature
+
+Cloud Armor supports service rate limiting. For more information, see [Cloud
+Armor and service rate
+limiting](https://docs.cloud.google.com/armor/docs/integrating-cloud-armor#service-rate-limiting). This
+feature is available in Preview.
+
+---
 ## 2026-09-17
 
 ### Feature

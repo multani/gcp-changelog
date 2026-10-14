@@ -1,5 +1,15 @@
 # Google Cloud Managed Service for Apache Kafka
 
+## 2026-10-14
+
+### Feature
+
+Performance of the
+[Cloud Storage Sink connector](https://docs.cloud.google.com/managed-service-for-apache-kafka/docs/connect-cluster/create-cloud-storage-connector)
+has been improved. The improvements include reduced out-of-memory errors, higher
+maximum throughput, and avoiding creating a large number of small files.
+
+---
 ## 2026-10-12
 
 ### Announcement

@@ -75,6 +75,26 @@ Custom TopoJSON URL validation is updated to improve security. This change is is
 
 ### Feature
 
+The **Gemini in Looker** admin page has been restructured to allow Looker admins to selectively enable Conversational Analytics features and capabilities. Enablement for generally available Conversational Analytics features is now organized under the follow settings:
+
+* **Conversational Analytics (Conversations page)**: Enables access to the [**Conversations** page](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data) for data agents with Explores and direct chats with an Explore.
+* **Dashboard agents**: Enables [default data agents](https://docs.cloud.google.com/looker/docs/glossary#default-agent) on [user-defined and LookML dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards).
+* **Additional options**: Allows Conversational Analytics data agent creators to enable the [**Advanced Analytics** feature](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-advanced-analytics) for all conversations with their data agent. To use Advanced Analytics, you must also enable whichever Conversational Analytics toggle corresponds to the content that you are querying (**Conversational Analytics (Conversations page)** or **Dashboard agents**). If both the **Conversational Analytics (Conversations page)** and **Dashboard agents** toggles are turned off, then **Advanced Analytics** cannot be enabled. If either **Conversational Analytics (Conversations page)** or **Dashboard agents** is enabled, **Advanced Analytics** can be enabled, but it is turned off by default.
+
+The **Conversational Analytics (Conversations page)** and **Dashboard agents** settings inherit the enablement state of the **Conversational Analytics** setting in previous versions of Looker.
+
+Conversational Analytics preview features can still be enabled selectively under the **Enable Trusted Tester Features** setting.
+
+(**Note**: This item was added on October 14, 2026.)
+
+### Feature
+
+Conversational Analytics data agents for both [user-defined dashboards](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards) and [LookML dashboards](looker/docs/conversational-analytics-looker-data-agents-lookml-dashboards) are now generally available.
+
+(**Note**: This item was added on October 14, 2026.)
+
+### Feature
+
 You can now apply [themes](https://docs.cloud.google.com/looker/docs/themes-for-internal-dashboards) to Looks in addition to internal dashboards.
 
 ### Fixed

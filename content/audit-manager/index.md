@@ -1,5 +1,24 @@
 # Audit Manager
 
+## 2026-09-25
+
+### Feature
+
+Audit Manager includes [Gemini-generated
+summaries](https://docs.cloud.google.com/audit-manager/docs/view-audit#compliance-score) that provide
+high-level information about the audit results for cloud controls, controls, or
+resources in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
+## 2026-09-18
+
+### Feature
+
+You can [download FedRAMP 20x Class B (Low) compliance
+documents](https://docs.cloud.google.com/audit-manager/docs/download_compliance_documents) from Audit
+Manager.
+
+---
 ## 2026-09-04
 
 ### Feature

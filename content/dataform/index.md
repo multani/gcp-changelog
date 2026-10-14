@@ -1,5 +1,19 @@
 # Dataform
 
+## 2026-10-14
+
+### Feature
+
+You can automatically preserve BigQuery data policies and data governance tags
+(Preview) applied to tables across Dataform executions by enabling the
+`preserveGovernanceControls` option in your table or workflow configuration.
+For more information, see
+[Preserve access controls metadata](https://docs.cloud.google.com/dataform/docs/create-tables#preserve-access-controls).
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-13
 
 ### Feature

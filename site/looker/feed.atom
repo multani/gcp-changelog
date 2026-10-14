@@ -173,6 +173,37 @@
     <id>urn:github:multani:gcp-changelog:looker:2026-10-08:feature:2</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <strong>Gemini in Looker</strong> admin page has been restructured to allow Looker admins to selectively enable Conversational Analytics features and capabilities. Enablement for generally available Conversational Analytics features is now organized under the follow settings:</p>
+<ul>
+<li><strong>Conversational Analytics (Conversations page)</strong>: Enables access to the <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data"><strong>Conversations</strong> page</a> for data agents with Explores and direct chats with an Explore.</li>
+<li><strong>Dashboard agents</strong>: Enables <a href="https://docs.cloud.google.com/looker/docs/glossary#default-agent">default data agents</a> on <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards">user-defined and LookML dashboards</a>.</li>
+<li><strong>Additional options</strong>: Allows Conversational Analytics data agent creators to enable the <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-advanced-analytics"><strong>Advanced Analytics</strong> feature</a> for all conversations with their data agent. To use Advanced Analytics, you must also enable whichever Conversational Analytics toggle corresponds to the content that you are querying (<strong>Conversational Analytics (Conversations page)</strong> or <strong>Dashboard agents</strong>). If both the <strong>Conversational Analytics (Conversations page)</strong> and <strong>Dashboard agents</strong> toggles are turned off, then <strong>Advanced Analytics</strong> cannot be enabled. If either <strong>Conversational Analytics (Conversations page)</strong> or <strong>Dashboard agents</strong> is enabled, <strong>Advanced Analytics</strong> can be enabled, but it is turned off by default.</li>
+</ul>
+<p>The <strong>Conversational Analytics (Conversations page)</strong> and <strong>Dashboard agents</strong> settings inherit the enablement state of the <strong>Conversational Analytics</strong> setting in previous versions of Looker.</p>
+<p>Conversational Analytics preview features can still be enabled selectively under the <strong>Enable Trusted Tester Features</strong> setting.</p>
+<p>(<strong>Note</strong>: This item was added on October 14, 2026.)</p>]]></content>
+    <summary>The Gemini in Looker admin page has been updated to give Looker admins more control over enabling Conversational Analytics features. Admins can now selectively enable features like the Conversations page and dashboard agents, with new options for advanced analytics. Preview features can still be accessed via the Trusted Tester setting.</summary>
+    <title>Feature: Gemini in Looker Admin Page Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:feature:3</id>
+    <published>2026-10-08T00:00:00+00:00</published>
+    <updated>2026-10-08T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Conversational Analytics data agents for both <a href="https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents-dashboards">user-defined dashboards</a> and <a href="looker/docs/conversational-analytics-looker-data-agents-lookml-dashboards">LookML dashboards</a> are now generally available.</p>
+<p>(<strong>Note</strong>: This item was added on October 14, 2026.)</p>]]></content>
+    <summary>Conversational Analytics data agents for user-defined and LookML dashboards are now generally available. This feature enhances data exploration by allowing natural language queries for dashboard insights.</summary>
+    <title>Feature: Conversational Analytics Data Agents GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:feature:4</id>
+    <published>2026-10-08T00:00:00+00:00</published>
+    <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now apply <a href="https://docs.cloud.google.com/looker/docs/themes-for-internal-dashboards">themes</a> to Looks in addition to internal dashboards.</p>]]></content>
     <summary>Themes can now be applied to Looks, expanding their use beyond internal dashboards. This feature allows for greater customization and consistent branding across your data visualizations.</summary>
     <title>Feature: Apply themes to Looks</title>
@@ -181,7 +212,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:3</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:5</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where duplicating a scheduled plan could fail to retain the custom message value. This feature now performs as expected.</p>]]></content>
@@ -192,7 +223,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:4</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:6</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Table visualizations now proportionally scale left-pinned columns during automatic sizing, which prevents unnecessary horizontal scrollbars. This feature now performs as expected.</p>]]></content>
@@ -203,7 +234,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:5</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:7</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where enabling subtotals on table visualizations did not automatically disable the <strong>Cell Visualizations</strong> option. This feature now performs as expected.</p>]]></content>
@@ -214,7 +245,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:6</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:8</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where previews for Looker charts in Slack integrations could fail to be displayed. This feature now performs as expected.</p>]]></content>
@@ -225,7 +256,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:9</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where editing and saving a dashboard could cause the dashboard to reload indefinitely, forcing users to refresh the page. This feature now performs as expected.</p>]]></content>
@@ -236,7 +267,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:8</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:10</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where table cell visualizations that included both positive and negative values could display unwanted scrollbars and hide value labels. This feature now performs as expected.</p>]]></content>
@@ -247,7 +278,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:9</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:11</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where the BigQuery JDBC driver could fail to properly parse certain data types, such as <code>BYTES</code>, <code>STRUCT/RECORD</code>, and nested <code>ARRAY</code> structures. This feature now performs as expected.</p>]]></content>
@@ -258,7 +289,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:12</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where linked filters on a dashboard could fail to display autocomplete suggestions even when a parent filter is selected. This feature now performs as expected.</p>]]></content>
@@ -269,7 +300,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:13</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The System Activity <code>query_metrics</code> Explore has been updated to ensure that phase timings (such as connection acquisitions, execution runtimes, and optimistic pivot fallback retry loops) are successfully captured for queries that fail or time out. This feature now performs as expected.</p>]]></content>
@@ -280,7 +311,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:14</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The System Activity <strong>Dashboard Diagnostics</strong> dashboard has been updated to fully support statistics, tile run counts, and performance recommendations for LookML dashboards. This feature now performs as expected.</p>]]></content>
@@ -291,7 +322,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:15</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>An issue has been fixed where the color palette popover in visualization settings failed to dynamically reposition when it expanded, causing controls to overlap or truncate. This feature now performs as expected.</p>]]></content>
@@ -302,7 +333,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:breaking:14</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:breaking:16</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When you set up a connection, self-service modeling will now be available only if a role that grants <code>create_self_service_from_table</code> also selects it through that role's model set.</p>]]></content>
@@ -313,7 +344,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:15</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-08:fixed:17</id>
     <published>2026-10-08T00:00:00+00:00</published>
     <updated>2026-10-08T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The opacity for the comparison bar in short KPI visualizations has been reduced to increase legibility.</p>]]></content>

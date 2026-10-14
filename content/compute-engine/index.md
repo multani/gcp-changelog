@@ -1,5 +1,17 @@
 # Compute Engine
 
+## 2026-10-14
+
+### Feature
+
+**Generally available**: When you reserve capacity by using future reservation
+requests, you can specify that Compute Engine delivers your reserved
+capacity as specifically targeted reservations. Specifically targeted
+reservations help you track and control which Compute Engine instances
+consume your reserved capacity. For more information, see
+[About future reservation requests](https://docs.cloud.google.com/compute/docs/instances/future-reservations-overview).
+
+---
 ## 2026-10-13
 
 ### Feature

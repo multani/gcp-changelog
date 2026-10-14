@@ -19,6 +19,17 @@ Certificate Manager and Compute Engine SSL certificates.
 For more information, see
 [Renew a Google-managed SSL certificate](https://docs.cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs#renewal).
 
+### Feature
+
+Service rate limiting policies are now available in **Preview** for
+regional internal Application Load Balancers and Secure Web Proxies.
+
+Service rate limiting policies let you maintain service availability among
+trusted clients that might consume an inordinate amount of resources.
+
+For more information, see the
+[Service rate limiting overview](https://docs.cloud.google.com/load-balancing/docs/srl-policy/service-rate-limiting-overview).
+
 ---
 ## 2026-10-12
 

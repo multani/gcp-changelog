@@ -1,5 +1,31 @@
 # Compute Engine
 
+## 2026-10-13
+
+### Feature
+
+**Generally available**: You can query regional views of global Compute Engine
+project and OS image resources by using the regional read-only `projectViews`
+and `imageViews` endpoints. Querying regional views isolates your control-plane
+read requests to a specific region, helping your workloads stay available during
+global API disruptions. For more information, see
+[Use regional views for resilient control-plane reads](https://docs.cloud.google.com/compute/docs/architecture/regional-views-global-resources)
+and
+[Access global resources regionally for high availability](https://docs.cloud.google.com/compute/docs/architecture/access-global-resources-regionally).
+
+---
+## 2026-10-12
+
+### Feature
+
+**Generally available**: The network-optimized C4N machine types with
+375 GiB to 12,000 GiB of attached Titanium SSD are now generally
+available.
+
+For more information, see [C4N machine series](https://docs.cloud.google.com/compute/docs/network-optimized-machines#c4n_series)
+and [About Local SSD disks](https://docs.cloud.google.com/compute/docs/disks/local-ssd).
+
+---
 ## 2026-10-08
 
 ### Feature

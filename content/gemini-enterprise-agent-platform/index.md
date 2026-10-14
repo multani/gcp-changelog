@@ -4,6 +4,17 @@
 
 ### Feature
 
+**Gemini 4 Argon in CodeMender (Preview)**
+
+CodeMender now supports Gemini 4 Argon. To use it, pass `--model gemini-4-argon`
+to `cm find`, `cm verify`, or `cm fix`. Gemini 3.8 Flash remains the default
+model.
+
+For more information, see
+[Specifying the model](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender#specifying-the-model).
+
+### Feature
+
 **Gemini 4 Argon and Gemini 4 Argon Cyber Permissive**
 
 [Gemini 4 Argon](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon)
@@ -11,8 +22,8 @@
 [General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
 Gemini 4 Argon is Google's frontier model that excels at deep work in complex,
 real-world tasks across domains including coding, finance, legal, cybersecurity,
-and science. It supports a 1,048,576-token context window (shared across input, thinking,
-and output tokens), configurable thinking levels (`LOW`, `MEDIUM`, `HIGH`),
+and science. It supports a unified 1,048,576-token input and output limit,
+configurable thinking levels (`LOW`, `MEDIUM`, `HIGH`),
 [long decodes](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-4-argon#long-decodes)
 up to 1,048,576 tokens using continuation tokens on the `GenerateContent` API,
 and [agentic video understanding](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/video-understanding#agentic-video-processing)
@@ -31,17 +42,6 @@ cybersecurity use cases, is also available in GA behind the
 
 For more information, see [Get started with Gemini 4](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/start/get-started-with-gemini-4)
 and the [developer's guide to Gemini 4 Argon](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-4-argon).
-
-### Feature
-
-**Gemini 4 Argon in CodeMender (Preview)**
-
-CodeMender now supports Gemini 4 Argon. To use it, pass `--model gemini-4-argon`
-to `cm find`, `cm verify`, or `cm fix`. Gemini 3.8 Flash remains the default
-model.
-
-For more information, see
-[Specifying the model](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender#specifying-the-model).
 
 ---
 ## 2026-10-12

@@ -2966,14 +2966,21 @@
 <h1 id="gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</h1>
 <h2 id="2026-10-13">2026-10-13</h2>
 <h3 id="feature">Feature</h3>
+<p><strong>Gemini 4 Argon in CodeMender (Preview)</strong></p>
+<p>CodeMender now supports Gemini 4 Argon. To use it, pass <code>--model gemini-4-argon</code>
+to <code>cm find</code>, <code>cm verify</code>, or <code>cm fix</code>. Gemini 3.8 Flash remains the default
+model.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender#specifying-the-model">Specifying the model</a>.</p>
+<h3 id="feature_1">Feature</h3>
 <p><strong>Gemini 4 Argon and Gemini 4 Argon Cyber Permissive</strong></p>
 <p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon">Gemini 4 Argon</a>
 (<code>gemini-4-argon</code>) is available in
 <a href="https://cloud.google.com/products#product-launch-stages">General Availability (GA)</a>.
 Gemini 4 Argon is Google's frontier model that excels at deep work in complex,
 real-world tasks across domains including coding, finance, legal, cybersecurity,
-and science. It supports a 1,048,576-token context window (shared across input, thinking,
-and output tokens), configurable thinking levels (<code>LOW</code>, <code>MEDIUM</code>, <code>HIGH</code>),
+and science. It supports a unified 1,048,576-token input and output limit,
+configurable thinking levels (<code>LOW</code>, <code>MEDIUM</code>, <code>HIGH</code>),
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-4-argon#long-decodes">long decodes</a>
 up to 1,048,576 tokens using continuation tokens on the <code>GenerateContent</code> API,
 and <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/video-understanding#agentic-video-processing">agentic video understanding</a>
@@ -2991,13 +2998,6 @@ cybersecurity use cases, is also available in GA behind the
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/start/get-started-with-gemini-4">Get started with Gemini 4</a>
 and the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-4-argon">developer's guide to Gemini 4 Argon</a>.</p>
-<h3 id="feature_1">Feature</h3>
-<p><strong>Gemini 4 Argon in CodeMender (Preview)</strong></p>
-<p>CodeMender now supports Gemini 4 Argon. To use it, pass <code>--model gemini-4-argon</code>
-to <code>cm find</code>, <code>cm verify</code>, or <code>cm fix</code>. Gemini 3.8 Flash remains the default
-model.</p>
-<p>For more information, see
-<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender#specifying-the-model">Specifying the model</a>.</p>
 <hr />
 <h2 id="2026-10-12">2026-10-12</h2>
 <h3 id="fixed">Fixed</h3>

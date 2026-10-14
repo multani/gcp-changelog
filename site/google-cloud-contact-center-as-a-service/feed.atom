@@ -2,9 +2,129 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-10-08T00:00:00+00:00</updated>
+  <updated>2026-10-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:fixed:0</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where direct access point (DAP) greeting messages played
+  twice when a call was deflected to an internal phone number due to queue
+  overcapacity.</li>
+<li>Fixed an issue where session metadata for top-level menu paths and selected
+  menus was incorrectly displayed in English instead of the user's configured
+  language.</li>
+<li>Fixed an issue where a failed Salesforce lookup was incorrectly treated as
+  having no matches, which resulted in the creation of duplicate records.</li>
+<li>Fixed an issue where inbound transfer restrictions remained in force even
+  after being hidden in the administrator interface, causing queues to become
+  silently unreachable for transfers.</li>
+<li>Fixed an issue where hold music continued to play throughout a call
+  recording after a warm transfer was completed.</li>
+<li>Fixed an issue where outbound virtual agent audio was prematurely truncated
+  during multi-message turns.</li>
+<li>Fixed an issue where the <strong>Real-time Monitoring Queues</strong> report didn't
+  accurately count skill-matched agents for skills-based queues, often
+  displaying zero available agents despite their availability.</li>
+<li>Fixed an issue where calls deflected to an external phone number after
+  entering a queue were incorrectly recorded as abandoned by the customer.</li>
+<li>Fixed an issue where the credit card tokenizer was missing from the
+  <strong>SmartActions</strong> menu during outbound callback calls.</li>
+<li>Fixed an issue where mandatory call dispositions were discarded if an
+  agent's voice connection dropped but their session remained active.</li>
+<li>Fixed an issue where the text resize menu in the chat widget wasn't
+  scrollable at 400% browser zoom, which prevented users from accessing all
+  available text size options.</li>
+<li>Fixed an issue where the system incorrectly prevented saving automatic call
+  redirection settings when the target was a virtual agent-operated queue.</li>
+<li>Fixed an issue where duplicate call records were created for a single
+  inbound call, causing incorrect wait times to appear in the real-time queue
+  view.</li>
+<li>Fixed an issue where empty data attributes caused an error in the agent
+  interface during call connections.</li>
+<li>Fixed an issue where the <strong>Transfer Restrictions</strong> destination picker
+  provided no feedback when a queue was ineligible, making it
+  indistinguishable from a typo or search error.</li>
+<li>Fixed an issue where incoming calls were rejected with a SIP 603 error due
+  to high database latency and connection timeouts.</li>
+<li>Fixed an issue where the documentation for the Apps API and call session
+  metadata schema didn't define the top-level <code>parentId</code> and <code>finishReason</code>
+  fields.</li>
+<li>Fixed an issue where certain inbound call failures were incorrectly reported
+  as a busy signal.</li>
+<li>Fixed an issue where the event processor service crashed during scaling or
+  rebalancing of the system.</li>
+<li>Fixed an issue where the conversation ID was missing from chat events during
+  active sessions.</li>
+<li>Fixed an issue where report exports didn't download or remained stuck in a
+  processing state indefinitely.</li>
+<li>Fixed an issue where agents could transfer calls to queues that were already
+  closed if their transfer list was loaded while the queue was still open.</li>
+<li>Fixed an issue where queued chats were assigned to agents after the end-user
+  had become unresponsive without being prompted to check in.</li>
+<li>Fixed an issue where voice calls cold-transferred to an over-capacity queue
+  generated duplicate reporting records and incorrect queue wait times if the
+  callback leg failed.</li>
+<li>Fixed an issue where direct inbound calls deflected to voicemail during
+  after-hours played three separate audio prompts sequentially.</li>
+<li>Fixed an issue where a single call was simultaneously assigned to two
+  different agents if the pickup coincided with the cascade timer expiry.</li>
+<li>Fixed an issue where direct inbound calls weren't projected to agents in a
+  breakthrough-enabled status if another call was already waiting in their
+  queue.</li>
+<li>Fixed an issue where a gray empty area appeared below the chat container in
+  the agent adapter when the iframe width was narrower than 449px.</li>
+<li>Fixed an issue where several Kubernetes and Google Cloud service accounts
+  were granted overly broad permissions, which could have allowed for
+  unauthorized privilege escalation.</li>
+<li>Fixed an issue where an agent's status sequence was recorded in the
+  incorrect order following a brief connection loss during an active chat.</li>
+<li>Fixed an issue where selecting a contact during a native campaign call
+  didn't automatically open the corresponding record in the CRM.</li>
+<li>Fixed an issue where AI-generated Smart Disposition suggestions were
+  inconsistently displayed for outbound calls during the wrap-up period.</li>
+<li>Fixed an issue where call recordings became distorted or garbled when
+  multiple holds were placed during a call.</li>
+<li>Fixed an issue where audio uploads were accepted based on the file extension
+  rather than the actual file content, which caused call disconnections when
+  incompatible formats were played.</li>
+<li>Fixed an issue where the call duration timer in the external call adapter
+  didn't match the <strong>In-call</strong> status timer in the agent desktop for inbound
+  calls.</li>
+<li>Fixed an issue where the sentiment score was incorrectly displayed in the
+  call adapter for calls escalated from a virtual agent, even when the
+  <strong>Sentiment Analysis</strong> setting was disabled.</li>
+<li>Fixed an issue where duplicate reporting rows were generated for call and
+  wrap-up durations due to concurrent system events.</li>
+<li>Fixed an issue where agents couldn't sign in or refresh their status if
+  their account was linked to a deleted or unknown status.</li>
+<li>Fixed an issue where the Manager API documentation for agent activity logs
+  omitted 17 chat routing and activity values, leading to incomplete reporting
+  data for customers.</li>
+<li>Fixed an issue where IVR custom callback numbers for certain international
+  regions, including Norway and Denmark, were incorrectly dialed with a +1
+  prefix.</li>
+<li>Fixed an issue where metadata for calls deflected between virtual agent
+  assignment and connection wasn't exported to the Cloud Storage bucket.</li>
+<li>Fixed an issue where virtual agent to human chat escalations experienced
+  delays of up to 300 seconds during agent assignment.</li>
+<li>Fixed an issue where the <strong>Answer</strong> button didn't appear for
+  dial-by-extension calls when other calls were already waiting in an
+  agent's queue.</li>
+<li>Fixed an issue where a supervisor's name didn't appear in the chat widget
+  when joining a conversation using the monitor then barge workflow.</li>
+<li>Fixed an issue where ending a chat session in one browser tab didn't
+  automatically close the chat widget in other open tabs.</li>
+</ul>]]></content>
+    <summary>This release includes numerous fixes for call handling, reporting accuracy, agent interface functionality, and system stability. Issues related to message playback, data display, record creation, and call routing have been addressed to improve overall system performance and user experience.</summary>
+    <title>Fixed: Resolved various system issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

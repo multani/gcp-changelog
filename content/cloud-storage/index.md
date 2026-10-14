@@ -1,5 +1,41 @@
 # Cloud Storage
 
+## 2026-10-13
+
+### Feature
+
+Object enrichments is now available in
+[Preview](https://cloud.google.com/products#product-launch-stages). When you
+configure object enrichments, Cloud Storage applies
+Google's pre-trained machine learning models to eligible images and PDF
+documents in your buckets and attaches the resulting metadata to your objects as
+[object contexts](https://docs.cloud.google.com/storage/docs/object-contexts). You can inspect enrichments on
+individual objects or query them at scale in BigQuery by using
+[Storage Insights datasets](https://docs.cloud.google.com/storage/docs/insights/dataset-tables-and-schemas#object-contexts-catalog-schema).
+For more information, see
+[About object enrichments](https://docs.cloud.google.com/storage/docs/object-enrichments/overview)
+and [Configure object enrichments](https://docs.cloud.google.com/storage/docs/object-enrichments/configure-object-enrichments).
+
+### Feature
+
+Object contexts with
+[extended data](https://docs.cloud.google.com/storage/docs/object-contexts#extended-data) are available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Google
+services attach these contexts to your objects during automated analysis, such
+as machine learning labeling. To retrieve a context and its extended data, use
+the [`viewFullContext`](https://docs.cloud.google.com/storage/docs/json_api/v1/objects/viewFullContext) JSON
+API method.
+
+### Feature
+
+Storage Insights datasets include the Object Contexts Catalog view
+(`object_contexts_catalog_view`), which you can use to analyze object contexts
+in BigQuery. For more information, see
+[Object contexts catalog](https://docs.cloud.google.com/storage/docs/insights/dataset-tables-and-schemas#object-contexts-catalog-schema)
+and
+[Analyze object contexts](https://docs.cloud.google.com/storage/docs/insights/configure-datasets#analyze-object-contexts).
+
+---
 ## 2026-09-30
 
 ### Feature

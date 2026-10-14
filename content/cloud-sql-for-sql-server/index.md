@@ -1,5 +1,22 @@
 # Cloud SQL for SQL Server
 
+## 2026-10-13
+
+### Feature
+
+[Private Service Connect](https://docs.cloud.google.com/sql/docs/sqlserver/about-private-service-connect) is
+now the default private IP connectivity option when you create a Cloud SQL for
+SQL Server instance in a new Google Cloud project. Private Service Connect lets
+you connect to your instance from multiple Virtual Private Cloud (VPC) networks
+across different groups, projects, or organizations, and supports automatic
+endpoint and DNS record provisioning. When you configure private IP for an
+instance, you can still choose to use private services access or both
+connectivity options.
+
+For more information, see [Private IP configuration options](https://docs.cloud.google.com/sql/docs/sqlserver/private-ip) and
+[Configure Private Service Connect](https://docs.cloud.google.com/sql/docs/sqlserver/configure-private-service-connect).
+
+---
 ## 2026-09-28
 
 ### Breaking

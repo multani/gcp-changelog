@@ -2,6 +2,246 @@
 
 ## 2026-10-12
 
+### Change
+
+
+
+### cos-133-19999-44-126
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.55](https://cos.googlesource.com/third_party/kernel/+/e4cb133e82a5c21d80531e07527d018402f04630 ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/19999.44.126/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-129-19506-549-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.112](https://cos.googlesource.com/third_party/kernel/+/e0eda3654b9ec529967ef7a996ea61b8f133bb95 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.549.7/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+
+
+### cos-dev-138-20198-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.55](https://cos.googlesource.com/third_party/kernel/+/bdbde7078cc46500653d60b76e7490df2fdbbee5 ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/20198.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Change
+
+Fixed an issue where openssl 3.2 was being incorrectly
+installed. Openssl is now on version 3.5.7.
+
+### Fixed
+
+Added support for lustre v2.14.0\_p262-r1
+
+### Change
+
+Updated default cos-gpu-installer version to v2.7.9. It
+installs ucodes firmwares for VR200.
+
+### Change
+
+Updated dev-libs/openssl to v3.5.9.
+
+### Security
+
+Fixed CVE-2026-18220 in sys-libs/binutils-libs.
+
+### Change
+
+Updated the Linux kernel to v6.18.55.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20261006.00.
+
+### Security
+
+Fixed CVE-2026-5450 in sys-libs/glibc.
+
+### Feature
+
+Enabled CONFIG\_ARM\_CCA\_GUEST in the Linux kernel for ARM64 to support guest attestation on Arm CCA Confidential VMs.
+
+### Fixed
+
+Upgraded app-arch/gzip to v1.15.
+
+### Security
+
+Patch CVE-2026-49264, CVE-2026-49265 on dev-python/oauthlib.
+
+### Feature
+
+Security: Disable Magic SysRq for gmec-tdx-kernel-host
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.9.0.
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p262-r1
+
+### Fixed
+
+Upgraded dev-libs/xxhash to v0.8.3-r2.
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p262.
+
+### Fixed
+
+Upgraded net-misc/openssh to v10.4\_p1-r1.
+
+### Fixed
+
+Added the "watchdog\_timeout" module parameter to the idpf driver.
+
+### Fixed
+
+Upgraded sys-apps/less to v710.
+
+### Fixed
+
+Updated app-admin/google-guest-configs to v20260928.00.
+
+### Security
+
+Fixed CVE-2026-18220 in sys-libs/binutils-libs.
+
+### Fixed
+
+Upgraded app-admin/google-guest-configs to v20260928.00.
+
+### Security
+
+Fixed CVE-2026-5450 in sys-libs/glibc.
+
+### Fixed
+
+Upgraded app-admin/oslogin to v20260924.00.
+
+### Security
+
+Patch CVE-2026-49264, CVE-2026-49265 on dev-python/oauthlib.
+
+### Fixed
+
+Upgraded app-containers/runc to v1.5.2, Upgraded app-containers/runc-test to v1.5.2.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: kernel.threads-max: 63444 -> 63443
+* Changed: net.ipv4.udp\_mem: 187941 250591 375882 -> 187941 250590 375882
+* Changed: user.max\_cgroup\_namespaces: 31722 -> 31721
+* Changed: user.max\_ipc\_namespaces: 31722 -> 31721
+* Changed: user.max\_mnt\_namespaces: 31722 -> 31721
+* Changed: user.max\_net\_namespaces: 31722 -> 31721
+* Changed: user.max\_pid\_namespaces: 31722 -> 31721
+* Changed: user.max\_time\_namespaces: 31722 -> 31721
+* Changed: user.max\_user\_namespaces: 31722 -> 31721
+* Changed: user.max\_uts\_namespaces: 31722 -> 31721
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.5.
+
+### Fixed
+
+Upgraded dev-libs/libgcrypt to v1.12.4.
+
+### Fixed
+
+Upgraded dev-libs/libpcre2 to v10.49.
+
+### Fixed
+
+Upgraded dev-python/oauthlib to v4.0.0.
+
+### Fixed
+
+Upgraded sys-apps/pv to v1.12.0.
+
+### Fixed
+
+Upgraded sys-apps/xemu to v0.0.11.
+
+### Security
+
+Fixed CVE-2026-18220 in sys-libs/binutils-libs.
+
+### Security
+
+Fixed CVE-2026-5450 in sys-libs/glibc.
+
+### Change
+
+
+
+### cos-121-18867-638-5
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.158](https://cos.googlesource.com/third_party/kernel/+/ed1f77ef4535cd613776d78cf046773a9d90789b ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.638.5/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p262-r1
+
+### Fixed
+
+Added support for net-fs/lustre-client-drivers v2.14.0\_p262.
+
+### Security
+
+Fixed CVE-2026-18220 in sys-libs/binutils-libs.
+
+### Security
+
+Fixed CVE-2026-5450 in sys-libs/glibc.
+
+### Security
+
+Patch CVE-2026-49264, CVE-2026-49265 on dev-python/oauthlib.
+
+### Change
+
+
+
+### cos-125-19216-739-5
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.112](https://cos.googlesource.com/third_party/kernel/+/91e56902b9c6999dabbff541fd5baf20aee3108b ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.739.5/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
 ### Fixed
 
 Added support for lustre v2.14.0\_p262-r1
@@ -10,9 +250,13 @@ Added support for lustre v2.14.0\_p262-r1
 
 Fixed CVE-2026-18220 in sys-libs/binutils-libs.
 
-### Fixed
+### Security
 
-Upgraded sys-apps/pv to v1.12.0.
+Fixed CVE-2026-5450 in sys-libs/glibc.
+
+### Security
+
+Patch CVE-2026-49264, CVE-2026-49265 on dev-python/oauthlib.
 
 ---
 ## 2026-10-06

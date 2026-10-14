@@ -2,9 +2,63 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Storage</title>
   <subtitle>Changelog for Google Cloud product: Cloud Storage</subtitle>
-  <updated>2026-09-30T00:00:00+00:00</updated>
+  <updated>2026-10-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-storage</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-storage/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-10-13:feature:0</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Object enrichments is now available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. When you
+configure object enrichments, Cloud Storage applies
+Google's pre-trained machine learning models to eligible images and PDF
+documents in your buckets and attaches the resulting metadata to your objects as
+<a href="https://docs.cloud.google.com/storage/docs/object-contexts">object contexts</a>. You can inspect enrichments on
+individual objects or query them at scale in BigQuery by using
+<a href="https://docs.cloud.google.com/storage/docs/insights/dataset-tables-and-schemas#object-contexts-catalog-schema">Storage Insights datasets</a>.
+For more information, see
+<a href="https://docs.cloud.google.com/storage/docs/object-enrichments/overview">About object enrichments</a>
+and <a href="https://docs.cloud.google.com/storage/docs/object-enrichments/configure-object-enrichments">Configure object enrichments</a>.</p>]]></content>
+    <summary>Object enrichments are now available in preview. This feature automatically applies Google's ML models to images and PDFs in your buckets, adding metadata to your objects. You can inspect this metadata on individual objects or query it at scale using Storage Insights.</summary>
+    <title>Feature: Object enrichments now in preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-10-13:feature:1</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Object contexts with
+<a href="https://docs.cloud.google.com/storage/docs/object-contexts#extended-data">extended data</a> are available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Google
+services attach these contexts to your objects during automated analysis, such
+as machine learning labeling. To retrieve a context and its extended data, use
+the <a href="https://docs.cloud.google.com/storage/docs/json_api/v1/objects/viewFullContext"><code>viewFullContext</code></a> JSON
+API method.</p>]]></content>
+    <summary>Object contexts with extended data are now available in Preview. Google services attach these contexts to your objects during automated analysis. You can retrieve a context and its extended data using the viewFullContext JSON API method.</summary>
+    <title>Feature: Object contexts available in preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-storage:2026-10-13:feature:2</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Storage Insights datasets include the Object Contexts Catalog view
+(<code>object_contexts_catalog_view</code>), which you can use to analyze object contexts
+in BigQuery. For more information, see
+<a href="https://docs.cloud.google.com/storage/docs/insights/dataset-tables-and-schemas#object-contexts-catalog-schema">Object contexts catalog</a>
+and
+<a href="https://docs.cloud.google.com/storage/docs/insights/configure-datasets#analyze-object-contexts">Analyze object contexts</a>.</p>]]></content>
+    <summary>Storage Insights now includes the Object Contexts Catalog view, enabling you to analyze object contexts directly within BigQuery. This new feature provides deeper insights into your storage data. Explore your object contexts with ease using this powerful addition.</summary>
+    <title>Feature: Analyze object contexts in BigQuery</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -11,6 +11,12 @@ is
 (GA). You can use this function to semantically aggregate unstructured input
 data based on natural language instructions.
 
+### Feature
+
+BigQuery [generative AI functions](https://docs.cloud.google.com/bigquery/docs/generative-ai-overview#locations)
+now support the `gemini-4-argon` model. This model is
+[generally available](https://cloud.google.com/products#product-launch-stages).
+
 ---
 ## 2026-10-12
 

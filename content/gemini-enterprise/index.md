@@ -4,6 +4,41 @@
 
 ### Feature
 
+**Gemini Enterprise: Gemini 4 Argon available in web app, mobile app, and AI
+developer tools**
+
+Gemini 4 Argon is generally available (GA) for the Gemini Enterprise web app,
+mobile app, and AI developer tools.
+
+* **Location availability**: Supported in `global`, `us`, and `eu`
+  multi-regions, with data residency and ML processing support in `us` and
+  `eu`. For more information, see [Data residency for Gemini
+  Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+* **App availability**: Turned off by default. The toggle defaults to on
+  beginning October 27, 2026. Gemini 4 Argon is supported in the web app and
+  mobile app, but isn't available in Workflow Builder. For instructions to
+  turn on the model, see [Manage features on the web
+  app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+* **AI developer tools**: Enabled by default for licensed users when
+  **Antigravity authorized models** uses the default selection. If
+  your organization specifies a custom model list, an administrator must
+  manually select Gemini 4 Argon. For instructions, see [Configure AI
+  developer tools
+  settings](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-settings).
+
+### Feature
+
+**Gemini Enterprise: Connect workflows in Workflow Builder to
+Microsoft Teams, Notion, and Salesforce**
+
+You can connect workflows in Workflow Builder to Microsoft Teams, Notion, and
+Salesforce to search data and automate actions across these third-party apps.
+
+For more information, see [Workflows
+overview](https://docs.cloud.google.com/gemini/enterprise/docs/workflow-builder/workflows).
+
+### Feature
+
 **Gemini Enterprise: Gemini 4 Argon is available in AlphaEvolve**
 
 AlphaEvolve experiments can generate candidate programs with Gemini 4 Argon

@@ -1,6 +1,16 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-10-14": [
+      {
+        "kind": "Change",
+        "content": "Google-managed public SSL certificates signed by [Public Certificate Authority](https://docs.cloud.google.com/certificate-manager/docs/public-ca) (`pki.goog`) are gradually transitioning from a 90-day\nvalidity period to a 45-day validity period to improve security.\n\nTo align with modern industry-wide security standards and promote shorter\ncertificate lifespans, Google-managed public certificates signed by\nPublic Certificate Authority now rotate more frequently.\n\nThis proactive rotation enhances the overall security posture of load balancers.\nTransition requires no manual intervention or configuration changes as\nGoogle Cloud automatically manages issuance and renewal for both\nCertificate Manager and Compute Engine SSL certificates.\n\nFor more information, see\n[Renew a Google-managed SSL certificate](https://docs.cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs#renewal).",
+        "summary": {
+          "title": "SSL certificate validity period reduced",
+          "summary": "Google-managed public SSL certificates will now have a 45-day validity period, down from 90 days. This change enhances security by aligning with industry standards for shorter certificate lifespans. The transition is automatic and requires no manual intervention."
+        }
+      }
+    ],
     "2026-10-12": [
       {
         "kind": "Feature",

@@ -2,6 +2,39 @@
 
 ## 2026-10-13
 
+### Announcement
+
+**Google Cloud CCaaS prerelease notes 6.22**
+
+Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.
+
+### Feature
+
+**Campaign-based scheduled callbacks**
+
+Agents can now schedule a callback during an outbound campaign call. The
+callback belongs to the campaign, not to an individual agent, and the dialer
+calls the consumer back in the time slot they chose. Administrators set slot
+length, capacity, booking window, and expiry for each campaign, and supervisors
+can track upcoming, completed, and expired callbacks from the campaign list.
+
+### Feature
+
+**Transcript separation for chat**
+
+You can now configure Google Cloud CCaaS to deliver a separate transcript file
+for each participant segment in a chat, instead of one combined transcript per
+session. Under **Settings > Chat > Chat Transcript**,
+select **Per Segment** in **Transcript Separation** to generate individual
+transcript files for each agent, virtual agent, or supervisor who joins the
+chat—helpful for identifying which participant handled each part of a
+transferred or escalated conversation. Your consumers still receive a single,
+full-chat transcript regardless of this setting.
+
+By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.
+
 ### Fixed
 
 This release addresses the following issues:

@@ -2,9 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Certificate Manager</title>
   <subtitle>Changelog for Google Cloud product: Certificate Manager</subtitle>
-  <updated>2026-09-24T00:00:00+00:00</updated>
+  <updated>2026-10-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:certificate-manager</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/certificate-manager/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:certificate-manager:2026-10-14:change:0</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google-managed public SSL certificates signed by <a href="https://docs.cloud.google.com/certificate-manager/docs/public-ca">Google Public
+CA</a> (pki.goog) are gradually transitioning from a
+90-day validity period to a 45-day validity period to improve security.</p>
+<p>To align with modern industry-wide security standards and promote shorter
+certificate lifespans, Google-managed public certificates now rotate more
+frequently. This proactive rotation enhances the overall security posture of
+load balancers. The transition requires no manual intervention or configuration
+changes as Certificate Manager automatically manages both issuance and renewal.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/certificate-manager/docs/core-components#google-managed-certificates">Google-managed
+certificates</a>
+and <a href="https://docs.cloud.google.com/certificate-manager/docs/certificate-manager-best-practices#use_google_managed_certificates">Use Google-managed
+certificates</a>.</p>]]></content>
+    <summary>Google-managed public SSL certificates are transitioning from a 90-day to a 45-day validity period. This change, driven by security enhancements and industry standards, ensures more frequent certificate rotation for improved load balancer security. The update is automatic and requires no user intervention.</summary>
+    <title>Change: SSL certificate validity period reduced</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

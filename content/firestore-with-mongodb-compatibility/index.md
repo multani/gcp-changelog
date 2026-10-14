@@ -1,5 +1,16 @@
 # Firestore with MongoDB compatibility
 
+## 2026-10-12
+
+### Feature
+
+Firestore with MongoDB compatibility now supports QueryData, which you can use to build
+data agents that interact with the data in your database using conversational
+language. For more information, see [QueryData overview](https://docs.cloud.google.com/gemini/data-agents/querydata/firestore-mongodb-compatibility/data-agent-overview).
+
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-06-01
 
 ### Feature

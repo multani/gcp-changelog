@@ -1,5 +1,17 @@
 # Application Integration
 
+## 2026-10-14
+
+### Security
+
+An Incorrect Authorization vulnerability in the `AuthConfig`
+validation and integration execution runtime in Application Integration
+versions prior to August 27, 2026.
+For more information, see the
+[GCP-2026-068](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-068)
+security bulletin.
+
+---
 ## 2026-09-28
 
 ### Security

@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-10-12T00:00:00+00:00</updated>
+  <updated>2026-10-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-10-14:change:0</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google-managed public SSL certificates signed by <a href="https://docs.cloud.google.com/certificate-manager/docs/public-ca">Public Certificate Authority</a> (<code>pki.goog</code>) are gradually transitioning from a 90-day
+validity period to a 45-day validity period to improve security.</p>
+<p>To align with modern industry-wide security standards and promote shorter
+certificate lifespans, Google-managed public certificates signed by
+Public Certificate Authority now rotate more frequently.</p>
+<p>This proactive rotation enhances the overall security posture of load balancers.
+Transition requires no manual intervention or configuration changes as
+Google Cloud automatically manages issuance and renewal for both
+Certificate Manager and Compute Engine SSL certificates.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs#renewal">Renew a Google-managed SSL certificate</a>.</p>]]></content>
+    <summary>Google-managed public SSL certificates will now have a 45-day validity period, down from 90 days. This change enhances security by aligning with industry standards for shorter certificate lifespans. The transition is automatic and requires no manual intervention.</summary>
+    <title>Change: SSL certificate validity period reduced</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

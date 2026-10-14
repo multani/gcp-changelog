@@ -1,5 +1,13 @@
 # Access Approval
 
+## 2026-09-29
+
+### Feature
+
+Google Cloud Observability is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-09-24
 
 ### Feature

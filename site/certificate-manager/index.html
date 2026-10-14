@@ -2964,6 +2964,21 @@
 
 
 <h1 id="certificate-manager">Certificate Manager</h1>
+<h2 id="2026-10-14">2026-10-14</h2>
+<h3 id="change">Change</h3>
+<p>Google-managed public SSL certificates signed by <a href="https://docs.cloud.google.com/certificate-manager/docs/public-ca">Google Public
+CA</a> (pki.goog) are gradually transitioning from a
+90-day validity period to a 45-day validity period to improve security.</p>
+<p>To align with modern industry-wide security standards and promote shorter
+certificate lifespans, Google-managed public certificates now rotate more
+frequently. This proactive rotation enhances the overall security posture of
+load balancers. The transition requires no manual intervention or configuration
+changes as Certificate Manager automatically manages both issuance and renewal.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/certificate-manager/docs/core-components#google-managed-certificates">Google-managed
+certificates</a>
+and <a href="https://docs.cloud.google.com/certificate-manager/docs/certificate-manager-best-practices#use_google_managed_certificates">Use Google-managed
+certificates</a>.</p>
+<hr />
 <h2 id="2026-09-24">2026-09-24</h2>
 <h3 id="feature">Feature</h3>
 <p>You can now attach tags to Certificate Manager resources during creation. This feature is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
@@ -2984,6 +2999,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#certificate-manager">Certificate Manager</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-14" class="nav-link">2026-10-14</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-09-24" class="nav-link">2026-09-24</a>
           </li>

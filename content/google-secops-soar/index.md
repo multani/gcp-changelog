@@ -9,7 +9,7 @@ until March 31, 2027.
 For more information, refer to [SOAR Migration overview](https://docs.cloud.google.com/chronicle/docs/soar/admin-tasks/advanced/migrate-to-gcp)
 
 ---
-## 2026-10-04
+## 2026-10-11
 
 ### Announcement
 
@@ -19,12 +19,29 @@ Release 6.3.102 is being rolled out to the first phase of regions as listed
 This release contains internal and customer bug fixes.
 
 ---
-## 2026-10-03
+## 2026-10-10
 
 ### Announcement
 
 [Release 6.3.101](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#September_27_2026) is now
 available for all regions.
+
+---
+## 2026-10-04
+
+### Announcement
+
+Release 6.3.101.2 is being rolled out to the first phase of regions as listed
+[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+This release contains internal and customer bug fixes.
+
+---
+## 2026-10-03
+
+### Announcement
+
+Release 6.3.100.3 is now available for all regions.
 
 ---
 ## 2026-09-27

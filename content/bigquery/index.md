@@ -1,5 +1,37 @@
 # BigQuery
 
+## 2026-10-15
+
+### Feature
+
+You can [copy tables across
+regions](https://docs.cloud.google.com/bigquery/docs/managing-tables#copy_tables_across_regions). This
+feature is now [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+You can now use [column aliases](https://docs.cloud.google.com/bigquery/docs/column-aliases) in
+GoogleSQL. This feature lets you define an alias for an expression in
+the `SELECT` clause of a SQL query and immediately reference that alias within
+the same `SELECT` list or in the `WHERE` clause of the same query block.
+
+Column aliases also streamline the migration of workloads from other data
+warehouses such as Snowflake and Teradata, by supporting
+their syntax.
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages),
+and is opt-in only. To use column aliases, you must first [enable the feature](https://docs.cloud.google.com/bigquery/docs/column-aliases#enabling_column_aliases).
+
+### Feature
+
+You can [export a conversational analytics agent's answer](https://docs.cloud.google.com/bigquery/docs/create-conversations/#export-answer),
+including text, visualizations, tables, and citations, to a PDF or CSV file.
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-14
 
 ### Feature

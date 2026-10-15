@@ -1,5 +1,26 @@
 # Security Command Center
 
+## 2026-10-15
+
+### Feature
+
+To increase the precision of attack path analysis and provide attack exposure
+scores that help you prioritize confirmed internet exposures,
+Risk Engine attack path simulations support the
+`EXTERNALLY_EXPOSED_VM_INSTANCE`
+[External Exposure finding category](https://docs.cloud.google.com/security-command-center/docs/concepts-vulnerabilities-findings#external-exposure-findings)
+([Preview](https://cloud.google.com/products/#product-launch-stages)). This
+finding category identifies Compute Engine or Google Kubernetes Engine (GKE)
+resources with a direct public IP address that allows host OS access.
+
+For more information, see [Detect exposed
+resources](https://docs.cloud.google.com/security-command-center/docs/detect-external-exposure),
+[Risk Engine feature
+support](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-supported-features#external-exposure-aes-support),
+and [Overview of attack exposure scores and attack
+paths](https://docs.cloud.google.com/security-command-center/docs/attack-exposure-learn).
+
+---
 ## 2026-10-09
 
 ### Feature

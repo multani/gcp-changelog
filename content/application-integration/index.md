@@ -12,6 +12,19 @@ For more information, see the
 security bulletin.
 
 ---
+## 2026-10-12
+
+### Security
+
+Starting October 15, 2026, Application Integration enforces security fixes for
+IAM, run-as service accounts, and `iam.serviceAccounts.actAs` checks, requiring
+the correct permissions for the test feature and any new integrations. For more
+information, see the
+[GCP-2026-067](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-067)
+security bulletin and
+[Prepare for upcoming authorization changes](https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes).
+
+---
 ## 2026-09-28
 
 ### Security

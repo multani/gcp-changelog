@@ -465,6 +465,35 @@ For more information, see the following:
 * [Chat with the assistant](https://docs.cloud.google.com/gemini/enterprise/docs/assistant-chat)
 
 ---
+## 2026-09-14
+
+### Feature
+
+**Gemini Notebook Enterprise: Rotate CMEK keys (GA)**
+
+Rotating customer-managed encryption keys (CMEK) that protect your Gemini
+Notebook Enterprise instances is generally available (GA). When you make a
+new version of a registered key the primary version in Cloud Key Management
+Service (Cloud KMS), Gemini Notebook Enterprise detects the change and
+re-encrypts your data with the new key version automatically.
+
+For more information, see [Rotate Cloud KMS
+keys](https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/cmek#rotate-keys).
+
+### Feature
+
+**Gemini Enterprise: Rotate CMEK keys (GA)**
+
+Rotating customer-managed encryption keys (CMEK) that protect your Gemini
+Enterprise apps and data connectors is generally available (GA). When you
+make a new version of a registered key the primary version in Cloud Key
+Management Service (Cloud KMS), Gemini Enterprise detects the change and
+re-encrypts your data with the new key version automatically.
+
+For more information, see [Rotate Cloud KMS
+keys](https://docs.cloud.google.com/gemini/enterprise/docs/cmek#rotate-keys).
+
+---
 ## 2026-09-11
 
 ### Feature

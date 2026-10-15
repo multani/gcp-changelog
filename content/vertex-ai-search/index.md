@@ -4,6 +4,19 @@
 
 ### Feature
 
+**Agent Search: Rotate CMEK keys (GA)**
+
+Rotating customer-managed encryption keys (CMEK) that protect your Agent
+Search apps and data connectors is generally available (GA). When you make
+a new version of a registered key the primary version in Cloud Key
+Management Service (Cloud KMS), Agent Search detects the change and
+re-encrypts your data with the new key version automatically.
+
+For more information, see [Rotate Cloud KMS
+keys](https://docs.cloud.google.com/generative-ai-app-builder/docs/cmek#rotate-keys).
+
+### Feature
+
 **Agent Search: Search query add-ons for configurable pricing (GA)**
 
 Search query add-on specifications (`searchAddonSpec`) for configurable

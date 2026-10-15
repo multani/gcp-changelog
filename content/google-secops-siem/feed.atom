@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps SIEM</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps SIEM</subtitle>
-  <updated>2026-10-08T00:00:00+00:00</updated>
+  <updated>2026-10-12T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-siem</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-siem/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-siem:2026-10-12:feature:0</id>
+    <published>2026-10-12T00:00:00+00:00</published>
+    <updated>2026-10-12T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Applied Threat Intelligence curated rules now use the GTI_IOC feed</strong></p>
+<p>As a follow-up to the release of the <code>GTI_IOC</code> feed and the deprecation of the legacy <code>MANDIANT_ACTIVE_BREACH_IOC</code>, <code>MANDIANT_FUSION_IOC</code>, and <code>OPEN_SOURCE_INTEL_IOC</code> feeds, the Applied Threat Intelligence (ATI) curated detection rules are being updated to match against the <code>GTI_IOC</code> feed. You don't need to take any action for curated rules. Updated rules continue to match only on reviewed, stable indicators. If you have custom rules that still reference the legacy feeds, update them to use the <code>GTI_IOC</code> feed. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI">Migrate to GTI_IOC</a>.</p>
+<p>The update follows the standard Google SecOps rollout schedule. It starts on Monday, October 12, 2026 and rolls out to all regions during the week.</p>]]></content>
+    <summary>Applied Threat Intelligence curated rules now use the GTI_IOC feed, replacing older feeds. No action is needed for curated rules, but custom rules referencing legacy feeds should be updated. This update ensures continued matching against reviewed, stable indicators.</summary>
+    <title>Feature: Applied Threat Intelligence rules updated</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

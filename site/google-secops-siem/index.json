@@ -1,6 +1,16 @@
 {
   "name": "Google SecOps SIEM",
   "entries": {
+    "2026-10-12": [
+      {
+        "kind": "Feature",
+        "content": "**Applied Threat Intelligence curated rules now use the GTI\\_IOC feed**\n\nAs a follow-up to the release of the `GTI_IOC` feed and the deprecation of the legacy `MANDIANT_ACTIVE_BREACH_IOC`, `MANDIANT_FUSION_IOC`, and `OPEN_SOURCE_INTEL_IOC` feeds, the Applied Threat Intelligence (ATI) curated detection rules are being updated to match against the `GTI_IOC` feed. You don't need to take any action for curated rules. Updated rules continue to match only on reviewed, stable indicators. If you have custom rules that still reference the legacy feeds, update them to use the `GTI_IOC` feed. For more information, see [Migrate to GTI\\_IOC](https://docs.cloud.google.com/chronicle/docs/detection/ati-fusion-feed#migrateToGTI).\n\nThe update follows the standard Google SecOps rollout schedule. It starts on Monday, October 12, 2026 and rolls out to all regions during the week.",
+        "summary": {
+          "title": "Applied Threat Intelligence rules updated",
+          "summary": "Applied Threat Intelligence curated rules now use the GTI_IOC feed, replacing older feeds. No action is needed for curated rules, but custom rules referencing legacy feeds should be updated. This update ensures continued matching against reviewed, stable indicators."
+        }
+      }
+    ],
     "2026-10-08": [
       {
         "kind": "Change",

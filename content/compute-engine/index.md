@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-10-15
+
+### Feature
+
+**Preview**: You can create regional disks, including Hyperdisk Balanced High Availability volumes, by
+cloning a zonal boot disk.
+
+For more information, see
+[Duplicate a disk with clones](https://docs.cloud.google.com/compute/docs/disks/clone-duplicate-disks).
+
+---
 ## 2026-10-14
 
 ### Feature

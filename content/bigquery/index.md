@@ -17,6 +17,18 @@ catalog](https://docs.cloud.google.com/lakehouse/docs/use-spark-hive-metastore).
 
 ### Feature
 
+Metadata migration from Dataproc Metastore to Lakehouse is now [generally
+available](https://cloud.google.com/products#product-launch-stages) (GA). You
+can perform a one-time backfill migration or dry run to migrate metadata from a
+Dataproc Metastore service to an Apache Iceberg REST catalog endpoint or a Hive
+catalog endpoint using the Google Cloud console, the gcloud CLI, or the REST
+API.
+
+For more information, see [Migrate metadata from Dataproc Metastore to
+Lakehouse](https://docs.cloud.google.com/lakehouse/docs/migrate-dataproc-metastore).
+
+### Feature
+
 Conversational analytics now lets you
 [create a conversation](https://docs.cloud.google.com/bigquery/docs/create-conversations#converse_with_a_data_source_using_the_agents_page)
 with all of the data sources in multiple projects, or create a conversation

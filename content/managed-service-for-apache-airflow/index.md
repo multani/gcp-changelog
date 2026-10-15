@@ -1,5 +1,15 @@
 # Managed Service for Apache Airflow
 
+## 2026-10-14
+
+### Announcement
+
+All Managed Airflow environment's GKE clusters will be set up with maintenance
+exclusions from November 16, 2026 to December 2, 2026. For more information,
+see
+[Maintenance exclusions](https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions).
+
+---
 ## 2026-10-13
 
 ### Feature

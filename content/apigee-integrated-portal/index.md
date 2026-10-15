@@ -1,5 +1,18 @@
 # Apigee Integrated Portal
 
+## 2026-10-15
+
+### Announcement
+
+On October 15, 2026, we released a new version of the Apigee integrated portal.
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **560310696** | Fixed an issue where the Portal SSO endpoint inadvertently accepted deprecated TLS 1.1 connections. The endpoint now strictly enforces TLS 1.2+. |
+
+---
 ## 2026-03-05
 
 ### Announcement

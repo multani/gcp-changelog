@@ -1,5 +1,16 @@
 # NetApp Volumes
 
+## 2026-10-14
+
+### Feature
+
+Google Cloud NetApp Volumes now lets you test Active Directory policy
+connections for the Flex Unified service level in [Preview](https://cloud.google.com/products#product-launch-stages).
+You can use the Google Cloud console to verify that a policy is properly
+connected to the Active Directory service and troubleshoot configuration errors.
+For more information, see [Test the Active Directory policy connection](https://docs.cloud.google.com/netapp/volumes/docs/configure-and-use/active-directory/test-ad-policy-connection).
+
+---
 ## 2026-09-17
 
 ### Feature

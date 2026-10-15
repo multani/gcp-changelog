@@ -1,5 +1,30 @@
 # VPC Service Controls
 
+## 2026-10-14
+
+### Feature
+
+**VPC Service Controls feature (Status:
+[Preview](https://cloud.google.com/products#product-launch-stages))**: Support
+for using Workload Identity Federation for GKE in ingress and egress rules to
+allow access to resources protected by a service perimeter is available in
+Preview.
+
+You can specify the following Workload Identity Federation for GKE principals in
+ingress and egress rules:
+
+* All GKE Pods that use a Kubernetes service account (by service account name or
+  ID)
+* All GKE Pods in a Kubernetes namespace
+* All GKE Pods in a cluster
+
+For more information, see [Configure identity groups and third-party identities
+in ingress and egress
+rules](https://docs.cloud.google.com/vpc-service-controls/docs/configure-identity-groups) and
+[Supported identities for ingress and egress
+rules](https://docs.cloud.google.com/vpc-service-controls/docs/supported-identities).
+
+---
 ## 2026-10-08
 
 ### Feature

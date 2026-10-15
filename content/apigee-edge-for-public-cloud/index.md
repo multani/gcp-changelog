@@ -1,5 +1,19 @@
 # Apigee Edge for Public Cloud
 
+## 2026-10-15
+
+### Announcement
+
+On October 15, 2026, we began releasing Single Sign-On (SSO) updates for Apigee
+Edge for Public Cloud.
+
+### Fixed
+
+| Bug ID | Component | Description |
+| --- | --- | --- |
+| **560310696** | SSO | Fixed an issue where the Portal SSO endpoint inadvertently accepted deprecated TLS 1.1 connections. The endpoint now strictly enforces TLS 1.2+. |
+
+---
 ## 2026-10-05
 
 ### Security

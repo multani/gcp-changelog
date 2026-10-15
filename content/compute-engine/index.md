@@ -11,6 +11,18 @@ reservations help you track and control which Compute Engine instances
 consume your reserved capacity. For more information, see
 [About future reservation requests](https://docs.cloud.google.com/compute/docs/instances/future-reservations-overview).
 
+### Feature
+
+**Generally available**: You can increase the size of a Google Cloud Hyperdisk
+volume that's in multi-writer mode while the volume is attached to multiple
+instances. Previously, you had to detach the volume from all instances before
+you could resize it.
+
+For more information, see
+[Share disks between instances](https://docs.cloud.google.com/compute/docs/disks/sharing-disks-between-vms)
+and
+[Change the size or provisioned performance of a Hyperdisk volume](https://docs.cloud.google.com/compute/docs/disks/modify-hyperdisks).
+
 ---
 ## 2026-10-13
 

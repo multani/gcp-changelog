@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-10-14": [
+      {
+        "kind": "Issue",
+        "content": "When you enable the [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)\nintegration on a Cloud SQL for PostgreSQL instance created before April 18, 2026,\nthe integration defaults to once a day instead of near real-time.\n\nNear real-time updates upon Knowledge Catalog enablement aren't yet available for\nall existing instances. A new announcement will be published when this feature\nbecomes available.",
+        "summary": {
+          "title": "Knowledge Catalog integration update for older Cloud SQL instances",
+          "summary": "Enabling Knowledge Catalog integration on Cloud SQL for PostgreSQL instances created before April 18, 2026, defaults to daily updates instead of near real-time. Near real-time updates for all existing instances are not yet available, and a new announcement will be made when this feature is enabled."
+        }
+      }
+    ],
     "2026-10-13": [
       {
         "kind": "Feature",
@@ -14,10 +24,10 @@
     "2026-10-09": [
       {
         "kind": "Feature",
-        "content": "When you enable [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)\nintegration on an eligible Cloud SQL for PostgreSQL instance created before\nApril 18, 2026 where the integration is currently turned off, the instance now\nsyncs schema and metadata updates to Knowledge Catalog in near real-time instead\nof once a day (instances created on or after April 18, 2026 have near real-time\nsync enabled by default).\n\nThis feature is available for instances running PostgreSQL version 14.0 or later\non the [new network architecture](https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture#overview).\nIf Knowledge Catalog integration is already enabled on the instance with\nonce-a-day updates, you can [deactivate](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#deactivate-dataplex-catalog)\nand re-enable the integration to switch to near real-time updates.\n\nFor more information, see\n[Enable the integration of Knowledge Catalog on an existing Cloud SQL instance](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#enable-dataplex-catalog).",
+        "content": "**Note:** Near real-time sync upon Knowledge Catalog (KC) enablement isn't available for existing instances created before April 18, 2026. For more information, see the [release note from October 14, 2026](#October_14_2026).\n\nWhen you enable [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)\nintegration on an eligible Cloud SQL for PostgreSQL instance created before\nApril 18, 2026 where the integration is currently turned off, the instance now\nsyncs schema and metadata updates to Knowledge Catalog in near real-time instead\nof once a day (instances created on or after April 18, 2026 have near real-time\nsync enabled by default).\n\nThis feature is available for instances running PostgreSQL version 14.0 or later\non the [new network architecture](https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture#overview).\nIf Knowledge Catalog integration is already enabled on the instance with\nonce-a-day updates, you can [deactivate](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#deactivate-dataplex-catalog)\nand re-enable the integration to switch to near real-time updates.\n\nFor more information, see\n[Enable the integration of Knowledge Catalog on an existing Cloud SQL instance](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#enable-dataplex-catalog).",
         "summary": {
-          "title": "Real-time metadata sync for Cloud SQL PostgreSQL",
-          "summary": "Existing Cloud SQL for PostgreSQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This enhancement improves data discoverability and management by providing up-to-date information. The feature is available for instances on PostgreSQL 14.0+ running the new network architecture."
+          "title": "Near real-time sync for existing instances",
+          "summary": "Existing Cloud SQL for PostgreSQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This improvement is available for instances running PostgreSQL 14.0 or later on the new network architecture. To enable this, you may need to deactivate and re-enable the integration."
         }
       }
     ],

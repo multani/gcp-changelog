@@ -1,5 +1,45 @@
 # Gemini Enterprise
 
+## 2026-10-14
+
+### Feature
+
+**Gemini Enterprise: Gemini 3.8 Flash regional availability in the United
+Kingdom**
+
+Gemini 3.8 Flash is generally available (GA) in the United Kingdom.
+
+* **Location availability**: Supported in the UK (`europe-west2`) in-country
+  region with in-region at-rest data residency (DRZ) and machine learning
+  processing (MLP).
+* **App availability**: Turned on by default in the web app for the UK
+  region. Administrators can manage access with the **Gemini 3.8 Flash**
+  toggle under **Model availability**.
+
+For more information, see [Data residency for Gemini
+Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+
+### Feature
+
+**Gemini Enterprise: Gemini 4 Argon available in Workflow Builder**
+
+Gemini 4 Argon is generally available (GA) for Workflow Builder. Gemini 4 Argon
+is also available in Workflow Builder workflow agents. Updates take up to a day
+to appear in workflow agents.
+
+* **Location availability**: Supported in `global`, `us`, and `eu`
+  multi-regions, with data residency and ML processing support in `us` and
+  `eu`. For more information, see [Data residency for Gemini
+  Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
+* **App availability**: Turned off by default. The toggle defaults to on
+  beginning October 27, 2026. For instructions to turn on the model, see
+  [Manage features on the web
+  app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+For more information, see [Workflow
+Builder](https://docs.cloud.google.com/gemini/enterprise/docs/workflow-builder).
+
+---
 ## 2026-10-13
 
 ### Feature
@@ -16,13 +56,12 @@ mobile app, and AI developer tools.
   Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations).
 * **App availability**: Turned off by default. The toggle defaults to on
   beginning October 27, 2026. Gemini 4 Argon is supported in the web app and
-  mobile app, but isn't available in Workflow Builder. For instructions to
-  turn on the model, see [Manage features on the web
-  app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+  mobile app. For more information about turning on the model, see [Manage
+  features on the web app](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
 * **AI developer tools**: Enabled by default for licensed users when
   **Antigravity authorized models** uses the default selection. If
   your organization specifies a custom model list, an administrator must
-  manually select Gemini 4 Argon. For instructions, see [Configure AI
+  manually select Gemini 4 Argon. For more information, see [Configure AI
   developer tools
   settings](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools-settings).
 

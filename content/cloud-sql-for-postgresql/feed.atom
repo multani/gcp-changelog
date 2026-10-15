@@ -2,9 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-10-13T00:00:00+00:00</updated>
+  <updated>2026-10-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-10-14:issue:0</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>When you enable the <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
+integration on a Cloud SQL for PostgreSQL instance created before April 18, 2026,
+the integration defaults to once a day instead of near real-time.</p>
+<p>Near real-time updates upon Knowledge Catalog enablement aren't yet available for
+all existing instances. A new announcement will be published when this feature
+becomes available.</p>]]></content>
+    <summary>Enabling Knowledge Catalog integration on Cloud SQL for PostgreSQL instances created before April 18, 2026, defaults to daily updates instead of near real-time. Near real-time updates for all existing instances are not yet available, and a new announcement will be made when this feature is enabled.</summary>
+    <title>Issue: Knowledge Catalog integration update for older Cloud SQL instances</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -32,7 +48,8 @@ connectivity options.</p>
     <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-10-09:feature:0</id>
     <published>2026-10-09T00:00:00+00:00</published>
     <updated>2026-10-09T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>When you enable <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
+    <content type="html"><![CDATA[<p><strong>Note:</strong> Near real-time sync upon Knowledge Catalog (KC) enablement isn't available for existing instances created before April 18, 2026. For more information, see the <a href="#October_14_2026">release note from October 14, 2026</a>.</p>
+<p>When you enable <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
 integration on an eligible Cloud SQL for PostgreSQL instance created before
 April 18, 2026 where the integration is currently turned off, the instance now
 syncs schema and metadata updates to Knowledge Catalog in near real-time instead
@@ -45,8 +62,8 @@ once-a-day updates, you can <a href="https://docs.cloud.google.com/sql/docs/post
 and re-enable the integration to switch to near real-time updates.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#enable-dataplex-catalog">Enable the integration of Knowledge Catalog on an existing Cloud SQL instance</a>.</p>]]></content>
-    <summary>Existing Cloud SQL for PostgreSQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This enhancement improves data discoverability and management by providing up-to-date information. The feature is available for instances on PostgreSQL 14.0+ running the new network architecture.</summary>
-    <title>Feature: Real-time metadata sync for Cloud SQL PostgreSQL</title>
+    <summary>Existing Cloud SQL for PostgreSQL instances can now sync schema and metadata updates to Knowledge Catalog in near real-time. This improvement is available for instances running PostgreSQL 14.0 or later on the new network architecture. To enable this, you may need to deactivate and re-enable the integration.</summary>
+    <title>Feature: Near real-time sync for existing instances</title>
   </entry>
   <entry>
     <author>

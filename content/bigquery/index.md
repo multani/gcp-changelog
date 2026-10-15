@@ -1,5 +1,47 @@
 # BigQuery
 
+## 2026-10-14
+
+### Feature
+
+The Apache Hive catalog endpoint in the Lakehouse runtime catalog is now
+[generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+This integration lets you use the metastore as a serverless, central metadata
+layer, enabling seamless data sharing and unified querying across Apache Spark,
+Apache Hive, and BigQuery.
+
+For more information, see [About the Hive catalog
+endpoint](https://docs.cloud.google.com/lakehouse/docs/about-spark-hive-metastore) and [Set up Spark and Hive
+with the Lakehouse runtime
+catalog](https://docs.cloud.google.com/lakehouse/docs/use-spark-hive-metastore).
+
+### Feature
+
+Conversational analytics now lets you
+[create a conversation](https://docs.cloud.google.com/bigquery/docs/create-conversations#converse_with_a_data_source_using_the_agents_page)
+with all of the data sources in multiple projects, or create a conversation
+with a [dataset](https://docs.cloud.google.com/bigquery/docs/create-conversations#datasets). These features
+are
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+You can publish a [BigQuery Conversational Analytics agent in Gemini
+Enterprise](https://docs.cloud.google.com/bigquery/docs/create-data-agents#publish-agent-gemini-enterprise).
+This feature is now [generally
+available](https://cloud.google.com/products/#product-launch-stages) (GA).
+
+### Feature
+
+The
+[`AI.AGG` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-agg)
+now supports the `output_schema` argument, which lets you specify the schema
+of the function output as a comma-separated list of fields. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-13
 
 ### Feature

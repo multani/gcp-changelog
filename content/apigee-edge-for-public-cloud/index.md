@@ -1,5 +1,17 @@
 # Apigee Edge for Public Cloud
 
+## 2026-10-05
+
+### Security
+
+**Security fixes for the integrated portal and API specs in the Apigee Edge
+management UIs.**
+
+The Apigee Edge UIs for managing integrated portals and API specs were updated
+to patch vulnerabilities in underlying libraries and serving components.
+Functionality is unchanged, but some pages might show minor styling differences.
+
+---
 ## 2026-09-02
 
 ### Announcement

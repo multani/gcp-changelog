@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-10-14": [
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue in GKE Sandbox where Pods using the Cloud Storage FUSE CSI driver\ncould become indefinitely stuck in a `Terminating` state.\n\nTo resolve this issue, upgrade your node pools to GKE version 1.37.1-gke.1552000\nor later and add the `dev.gvisor.fuse.abort-on-teardown: \"true\"` annotation to\nyour Pod or Deployment metadata.\n\nFor more information, see\n[About Cloud Storage FUSE CSI driver for GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/cloud-storage-fuse-csi-driver)\nand [GKE Known Issues](https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/known-issues).",
+        "summary": {
+          "title": "GKE Sandbox Pod Termination Issue Resolved",
+          "summary": "An issue causing Pods using the Cloud Storage FUSE CSI driver to get stuck in a Terminating state within GKE Sandbox has been fixed. To resolve this, upgrade your node pools and add a specific annotation to your Pods or Deployments. This ensures proper termination of these Pods."
+        }
+      }
+    ],
     "2026-10-08": [
       {
         "kind": "Change",

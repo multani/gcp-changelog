@@ -1,5 +1,26 @@
 # Secure Web Proxy
 
+## 2026-10-14
+
+### Feature
+
+Secure Web Proxy supports [service rate limiting
+policies](https://docs.cloud.google.com/secure-web-proxy/docs/policies-and-rules-overview#rate-limiting-policies).
+Use these policies to protect external destinations from traffic overloads and
+manage the costs of your outbound web traffic.
+
+You can attach a service rate limiting policy to your Secure Web Proxy gateways,
+whether they use an [authorization
+policy](https://docs.cloud.google.com/secure-web-proxy/docs/policies-and-rules-overview#authorization-policies)
+or a [gateway security
+policy](https://docs.cloud.google.com/secure-web-proxy/docs/create-a-policy#gateway-security-policies).
+For more information, see [Configure service rate limiting
+policies](https://docs.cloud.google.com/secure-web-proxy/docs/configure-service-rate-limiting-policies).
+
+This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-09
 
 ### Feature

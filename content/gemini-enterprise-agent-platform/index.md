@@ -1,5 +1,32 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-10-14
+
+### Fixed
+
+**CodeMender updates (v0.15.0)**
+
+This release introduces updates to CodeMender:
+
+* **Enhanced SARIF 2.1.0 reporting**: Updated `cm report` SARIF output with standardized rule descriptors, severity properties, and repository-relative artifact locations for improved GitHub Code Scanning compatibility.
+* **Model invocation metrics**: Added model invocation tracking to `cm stats --json`, providing total, per-session, and per-turn invocation counts.
+* **Bug fixes**:
+  + Fixed an issue where token usage from completed turns was omitted from session logs during error or cancellation exit paths.
+
+For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/codemender).
+
+### Feature
+
+**DeepSeek-V4.1-Flash is available in Public Preview**
+
+DeepSeek-V4.1-Flash from DeepSeek is available as a fully managed model (MaaS)
+in Model Garden. The model accepts text and image input, targets agentic and
+coding tasks, and supports a context window of up to 1M tokens.
+
+For more information, see
+[DeepSeek-V4.1-Flash](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-v41-flash).
+
+---
 ## 2026-10-13
 
 ### Feature

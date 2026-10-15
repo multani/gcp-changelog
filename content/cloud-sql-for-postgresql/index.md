@@ -1,5 +1,18 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-10-14
+
+### Issue
+
+When you enable the [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)
+integration on a Cloud SQL for PostgreSQL instance created before April 18, 2026,
+the integration defaults to once a day instead of near real-time.
+
+Near real-time updates upon Knowledge Catalog enablement aren't yet available for
+all existing instances. A new announcement will be published when this feature
+becomes available.
+
+---
 ## 2026-10-13
 
 ### Feature
@@ -20,6 +33,8 @@ For more information, see [Private IP configuration options](https://docs.cloud.
 ## 2026-10-09
 
 ### Feature
+
+**Note:** Near real-time sync upon Knowledge Catalog (KC) enablement isn't available for existing instances created before April 18, 2026. For more information, see the [release note from October 14, 2026](#October_14_2026).
 
 When you enable [Knowledge Catalog (formerly Dataplex Universal Catalog)](https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration)
 integration on an eligible Cloud SQL for PostgreSQL instance created before

@@ -2,9 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-10-08T00:00:00+00:00</updated>
+  <updated>2026-10-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-10-14:fixed:0</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed an issue in GKE Sandbox where Pods using the Cloud Storage FUSE CSI driver
+could become indefinitely stuck in a <code>Terminating</code> state.</p>
+<p>To resolve this issue, upgrade your node pools to GKE version 1.37.1-gke.1552000
+or later and add the <code>dev.gvisor.fuse.abort-on-teardown: "true"</code> annotation to
+your Pod or Deployment metadata.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/cloud-storage-fuse-csi-driver">About Cloud Storage FUSE CSI driver for GKE</a>
+and <a href="https://docs.cloud.google.com/kubernetes-engine/docs/troubleshooting/known-issues">GKE Known Issues</a>.</p>]]></content>
+    <summary>An issue causing Pods using the Cloud Storage FUSE CSI driver to get stuck in a Terminating state within GKE Sandbox has been fixed. To resolve this, upgrade your node pools and add a specific annotation to your Pods or Deployments. This ensures proper termination of these Pods.</summary>
+    <title>Fixed: GKE Sandbox Pod Termination Issue Resolved</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

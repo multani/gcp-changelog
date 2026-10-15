@@ -2964,6 +2964,15 @@
 
 
 <h1 id="cloud-sql-for-mysql">Cloud SQL for MySQL</h1>
+<h2 id="2026-10-14">2026-10-14</h2>
+<h3 id="issue">Issue</h3>
+<p>When you enable the <a href="https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
+integration on a Cloud SQL for MySQL instance created before April 18, 2026,
+the integration defaults to once a day instead of near real-time.</p>
+<p>Near real-time updates upon Knowledge Catalog enablement aren't yet available for
+all existing instances. A new announcement will be published when this feature
+becomes available.</p>
+<hr />
 <h2 id="2026-10-13">2026-10-13</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://docs.cloud.google.com/sql/docs/mysql/about-private-service-connect">Private Service Connect</a> is now
@@ -2986,6 +2995,7 @@ see <a href="https://docs.cloud.google.com/sql/docs/mysql/db-versions#mysql-8.0"
 <hr />
 <h2 id="2026-10-09">2026-10-09</h2>
 <h3 id="feature_1">Feature</h3>
+<p><strong>Note:</strong> Near real-time sync upon Knowledge Catalog (KC) enablement isn't available for existing instances created before April 18, 2026. For more information, see the <a href="#October_14_2026">release note from October 14, 2026</a>.</p>
 <p>When you enable <a href="https://docs.cloud.google.com/sql/docs/mysql/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
 integration on an eligible Cloud SQL for MySQL instance created before April 18,
 2026 where the integration is currently turned off, the instance now syncs schema
@@ -3972,6 +3982,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/mysql/backu
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-mysql">Cloud SQL for MySQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-14" class="nav-link">2026-10-14</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-13" class="nav-link">2026-10-13</a>
           </li>

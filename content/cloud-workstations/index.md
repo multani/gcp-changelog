@@ -1,5 +1,31 @@
 # Cloud Workstations
 
+## 2026-10-05
+
+### Feature
+
+Cloud Workstations supports
+[Assured Workloads](https://docs.cloud.google.com/assured-workloads/docs/overview) control packages to help
+you meet regulatory, data residency, and data sovereignty requirements.
+
+Specifically, the Cloud Workstations API (`v1`, `v1beta`, and `v1alpha`)
+supports the following
+[Assured Workloads control packages](https://docs.cloud.google.com/assured-workloads/docs/control-packages):
+
+* [Data Boundary for FedRAMP High](https://docs.cloud.google.com/assured-workloads/docs/control-packages#fedramp-high)
+* [Data Boundary for FedRAMP Moderate](https://docs.cloud.google.com/assured-workloads/docs/control-packages#fedramp-moderate)
+* [Data Boundary for Impact Level 2 (IL2)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il2)
+* [Data Boundary for Impact Level 4 (IL4)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il4)
+* [Data Boundary for Impact Level 5 (IL5)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il5)
+* [US Data Boundary and Support](https://docs.cloud.google.com/assured-workloads/docs/control-packages/us-data-boundary-support)
+  (AW Regional Controls - Premium)
+* [EU Data Boundary with Access Justifications](https://docs.cloud.google.com/assured-workloads/docs/control-packages/eu-data-boundary-access-justifications)
+
+For more information about compliance-supported regions for each control package
+and API fields that aren't intended for sensitive data, see
+[Regulatory support in Cloud Workstations](https://docs.cloud.google.com/workstations/docs/workstations-regulatory-compliance).
+
+---
 ## 2026-09-24
 
 ### Feature

@@ -1,5 +1,18 @@
 # Vertex AI Search
 
+## 2026-10-16
+
+### Change
+
+**Agent Search: Update to the stable model**
+
+The `stable` model for answer generation is updated to
+`gemini-3.5-flash/answer_gen/v1` from `gemini-2.5-flash/answer_gen/v1`.
+
+For more information, see [Answer generation model versions and
+lifecycle](https://docs.cloud.google.com/generative-ai-app-builder/docs/answer-generation-models).
+
+---
 ## 2026-09-14
 
 ### Feature

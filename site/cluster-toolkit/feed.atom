@@ -2,9 +2,62 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cluster Toolkit</title>
   <subtitle>Changelog for Google Cloud product: Cluster Toolkit</subtitle>
-  <updated>2026-09-22T00:00:00+00:00</updated>
+  <updated>2026-10-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cluster-toolkit</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cluster-toolkit/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cluster-toolkit:2026-10-13:feature:0</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cluster Toolkit v1.106.0 is available. This release adds support for
+flexible managed instance groups on <a href="https://docs.cloud.google.com/cluster-toolkit/docs/slurm/manage-static-nodes">static compute
+nodes</a>, multiple network
+interfaces (multi-NIC) for Google Cloud Managed Lustre instances, and parallelism
+controls for Terraform to accelerate cluster deployment and teardown.</p>
+<p>This release also introduces the <code>cloud-build</code> community module to build container images
+with Cloud Build.</p>
+<p>Additionally, this release adds preflight checks for storage profiles when you
+<a href="https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-submit">submit jobs</a> and cleans up
+gateways when you
+<a href="https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-cancel">cancel jobs</a>.</p>
+<p>This update also scopes the <code>--main-only</code> flag in the
+<a href="https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-logs"><code>gcluster job logs</code> command</a>
+to the main Pod and its default container.</p>
+<p>For more information, see the
+<a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6467">release announcement on GitHub</a>.</p>]]></content>
+    <summary>The latest Cluster Toolkit release introduces support for flexible managed instance groups, multi-NIC for Managed Lustre, and faster cluster operations with Terraform parallelism. It also includes a new Cloud Build module, enhanced job submission checks, and improved log command functionality.</summary>
+    <title>Feature: Cluster Toolkit v1.106.0 Release</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cluster-toolkit:2026-10-02:feature:0</id>
+    <published>2026-10-02T00:00:00+00:00</published>
+    <updated>2026-10-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cluster Toolkit v1.105.0 is available. This release adds support for
+Slurm on Cloud TPU 7x and
+optional support for managed instance groups (MIGs) on
+static compute nodes that use
+A4X machine types.</p>
+<p>This release also adds storage profiles and volume attributes for
+<a href="https://docs.cloud.google.com/storage/docs/cloud-storage-fuse/overview">Cloud Storage FUSE</a> in job submissions,
+and unifies Google Kubernetes Engine (GKE) blueprints for GPU and
+Cloud TPU workloads to support dynamic consumption options.</p>
+<p>Additionally, this release adds the <code>repository_name</code> variable to override
+repository names and fixes the output for the registry URL in the Artifact Registry
+module.</p>
+<p>This update also introduces the <code>pre-existing-project</code> community module and
+resolves an HTTP 400 error when Slurm checks the deletion status of virtual
+machines (VMs).</p>
+<p>For more information, see the
+<a href="https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6407">release announcement on GitHub</a>.</p>]]></content>
+    <summary>Cluster Toolkit v1.105.0 is now available, introducing support for Slurm on Cloud TPU 7x and optional managed instance groups for static compute nodes with A4X machine types. This version also enhances job submissions with storage profiles and volume attributes for Cloud Storage FUSE, and unifies GKE blueprints for GPU and Cloud TPU workloads. Additional improvements include a new `repository_name` variable, a community module for pre-existing projects, and bug fixes.</summary>
+    <title>Feature: Cluster Toolkit v1.105.0 Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

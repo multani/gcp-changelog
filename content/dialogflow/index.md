@@ -1,5 +1,14 @@
 # Dialogflow
 
+## 2026-10-16
+
+### Feature
+
+`gemini-3.5-flash-lite` has become generally available (GA). See
+[Generative quotas](https://docs.cloud.google.com/dialogflow/quotas#generative)
+for how to request quota for Gemini 3 and later models.
+
+---
 ## 2026-09-30
 
 ### Fixed

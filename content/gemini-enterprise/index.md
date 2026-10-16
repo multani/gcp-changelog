@@ -1,5 +1,20 @@
 # Gemini Enterprise
 
+## 2026-10-16
+
+### Feature
+
+**Gemini Enterprise: Connect workflows in Workflow Builder to
+Confluence Data Center and Jira Data Center**
+
+You can connect workflows in Workflow Builder to Confluence Data Center and
+Jira Data Center to search data and automate actions across these third-party
+apps.
+
+For more information, see [Workflows
+overview](https://docs.cloud.google.com/gemini/enterprise/docs/workflow-builder/workflows).
+
+---
 ## 2026-10-15
 
 ### Feature

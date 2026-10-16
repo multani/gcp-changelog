@@ -29,6 +29,17 @@ eligible [Gemini Enterprise subscriptions](https://docs.cloud.google.com/gemini/
 and through [Gemini Enterprise Agent Platform](https://antigravity.google/docs/enterprise/#gemini-enterprise-agent-platform-api-setup).
 
 ---
+## 2026-10-08
+
+### Other
+
+
+
+### Bug fixes in VS Code
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-09-15
 
 ### Other

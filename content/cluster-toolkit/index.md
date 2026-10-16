@@ -1,5 +1,58 @@
 # Cluster Toolkit
 
+## 2026-10-13
+
+### Feature
+
+Cluster Toolkit v1.106.0 is available. This release adds support for
+flexible managed instance groups on [static compute
+nodes](https://docs.cloud.google.com/cluster-toolkit/docs/slurm/manage-static-nodes), multiple network
+interfaces (multi-NIC) for Google Cloud Managed Lustre instances, and parallelism
+controls for Terraform to accelerate cluster deployment and teardown.
+
+This release also introduces the `cloud-build` community module to build container images
+with Cloud Build.
+
+Additionally, this release adds preflight checks for storage profiles when you
+[submit jobs](https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-submit) and cleans up
+gateways when you
+[cancel jobs](https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-cancel).
+
+This update also scopes the `--main-only` flag in the
+[`gcluster job logs` command](https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-logs)
+to the main Pod and its default container.
+
+For more information, see the
+[release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6467).
+
+---
+## 2026-10-02
+
+### Feature
+
+Cluster Toolkit v1.105.0 is available. This release adds support for
+Slurm on Cloud TPU 7x and
+optional support for managed instance groups (MIGs) on
+static compute nodes that use
+A4X machine types.
+
+This release also adds storage profiles and volume attributes for
+[Cloud Storage FUSE](https://docs.cloud.google.com/storage/docs/cloud-storage-fuse/overview) in job submissions,
+and unifies Google Kubernetes Engine (GKE) blueprints for GPU and
+Cloud TPU workloads to support dynamic consumption options.
+
+Additionally, this release adds the `repository_name` variable to override
+repository names and fixes the output for the registry URL in the Artifact Registry
+module.
+
+This update also introduces the `pre-existing-project` community module and
+resolves an HTTP 400 error when Slurm checks the deletion status of virtual
+machines (VMs).
+
+For more information, see the
+[release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6407).
+
+---
 ## 2026-09-22
 
 ### Feature

@@ -1,6 +1,26 @@
 {
   "name": "Cluster Toolkit",
   "entries": {
+    "2026-10-13": [
+      {
+        "kind": "Feature",
+        "content": "Cluster Toolkit v1.106.0 is available. This release adds support for\nflexible managed instance groups on [static compute\nnodes](https://docs.cloud.google.com/cluster-toolkit/docs/slurm/manage-static-nodes), multiple network\ninterfaces (multi-NIC) for Google Cloud Managed Lustre instances, and parallelism\ncontrols for Terraform to accelerate cluster deployment and teardown.\n\nThis release also introduces the `cloud-build` community module to build container images\nwith Cloud Build.\n\nAdditionally, this release adds preflight checks for storage profiles when you\n[submit jobs](https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-submit) and cleans up\ngateways when you\n[cancel jobs](https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-cancel).\n\nThis update also scopes the `--main-only` flag in the\n[`gcluster job logs` command](https://docs.cloud.google.com/cluster-toolkit/docs/reference/gcluster-job-logs)\nto the main Pod and its default container.\n\nFor more information, see the\n[release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6467).",
+        "summary": {
+          "title": "Cluster Toolkit v1.106.0 Release",
+          "summary": "The latest Cluster Toolkit release introduces support for flexible managed instance groups, multi-NIC for Managed Lustre, and faster cluster operations with Terraform parallelism. It also includes a new Cloud Build module, enhanced job submission checks, and improved log command functionality."
+        }
+      }
+    ],
+    "2026-10-02": [
+      {
+        "kind": "Feature",
+        "content": "Cluster Toolkit v1.105.0 is available. This release adds support for\nSlurm on Cloud TPU 7x and\noptional support for managed instance groups (MIGs) on\nstatic compute nodes that use\nA4X machine types.\n\nThis release also adds storage profiles and volume attributes for\n[Cloud Storage FUSE](https://docs.cloud.google.com/storage/docs/cloud-storage-fuse/overview) in job submissions,\nand unifies Google Kubernetes Engine (GKE) blueprints for GPU and\nCloud TPU workloads to support dynamic consumption options.\n\nAdditionally, this release adds the `repository_name` variable to override\nrepository names and fixes the output for the registry URL in the Artifact Registry\nmodule.\n\nThis update also introduces the `pre-existing-project` community module and\nresolves an HTTP 400 error when Slurm checks the deletion status of virtual\nmachines (VMs).\n\nFor more information, see the\n[release announcement on GitHub](https://github.com/GoogleCloudPlatform/cluster-toolkit/discussions/6407).",
+        "summary": {
+          "title": "Cluster Toolkit v1.105.0 Released",
+          "summary": "Cluster Toolkit v1.105.0 is now available, introducing support for Slurm on Cloud TPU 7x and optional managed instance groups for static compute nodes with A4X machine types. This version also enhances job submissions with storage profiles and volume attributes for Cloud Storage FUSE, and unifies GKE blueprints for GPU and Cloud TPU workloads. Additional improvements include a new `repository_name` variable, a community module for pre-existing projects, and bug fixes."
+        }
+      }
+    ],
     "2026-09-22": [
       {
         "kind": "Feature",

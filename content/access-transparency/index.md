@@ -1,5 +1,13 @@
 # Access Transparency
 
+## 2026-10-09
+
+### Feature
+
+Database Migration Service is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-09-29
 
 ### Feature

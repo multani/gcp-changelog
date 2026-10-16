@@ -2970,6 +2970,13 @@
 cloning a zonal boot disk.</p>
 <p>For more information, see
 <a href="https://docs.cloud.google.com/compute/docs/disks/clone-duplicate-disks">Duplicate a disk with clones</a>.</p>
+<h3 id="change">Change</h3>
+<p>If you try to create an on-demand reservation or increase the number of
+reserved Compute Engine instances in a reservation when the zone has
+reached its reservation capacity limit for your requested machine family, then
+the request fails with a <code>RESERVATION_CAPACITY_LIMIT_EXCEEDED</code> error. For more
+information, see
+<a href="https://docs.cloud.google.com/compute/docs/troubleshooting/troubleshooting-reservation-creation#reservation-capacity-limit-exceeded">Reservation capacity limit exceeded</a>.</p>
 <hr />
 <h2 id="2026-10-14">2026-10-14</h2>
 <h3 id="feature_1">Feature</h3>
@@ -3379,7 +3386,7 @@ limits for several machine types. For example, an instance that uses the
 up from 600 MiB/s.</p>
 <p>For detailed performance limits, see
 <a href="https://docs.cloud.google.com/compute/docs/disks/hd-types/hyperdisk-balanced-ha#perf-limits">Hyperdisk Balanced High Availability performance limits when attached to an instance</a>.</p>
-<h3 id="change">Change</h3>
+<h3 id="change_1">Change</h3>
 <p><strong>Changed</strong>: The following operations on the boot disk of a Compute Engine instance
 that has a service account attached no longer require the <code>iam.serviceAccounts.actAs</code>
 permission. In the following list, the boot disk of such an instance is
@@ -3478,7 +3485,7 @@ types are supported, and how to use recommendations to purchase commitments, see
 <a href="https://docs.cloud.google.com/docs/cuds-recommender">Get recommendations for committed use discounts (CUDs)</a>.</p>
 <hr />
 <h2 id="2026-06-16">2026-06-16</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>For resource-based committed use discounts (CUDs), the default value of CUD
 scope for most Cloud Billing accounts has changed from <strong>Project</strong> to
 <strong>Billing account</strong>. If the CUD scope is set to <strong>Billing account</strong>, then
@@ -3865,7 +3872,7 @@ to get access.</p>
 organization policies that use the <code>gcp.managed.allowedMCPServices</code> constraint
 won't work, and you can control MCP use with IAM deny policies.
 For more information about controlling MCP use, see <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>After March 17, 2026, when you enable Compute Engine,
 the Compute Engine MCP server is automatically enabled.</p>
 <hr />
@@ -3905,7 +3912,7 @@ more information, see
 <a href="https://docs.cloud.google.com/compute/docs/instance-groups/about-instance-flexibility#instance_flexibility_and_autoscaling">About instance flexibility</a>.</p>
 <hr />
 <h2 id="2026-02-06">2026-02-06</h2>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>Expanded coverage for compute flexible committed use discounts (CUDs) is
 available to all Cloud Billing accounts. All Cloud Billing accounts have
 been automatically migrated to the

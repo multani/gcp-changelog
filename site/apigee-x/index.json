@@ -1,6 +1,16 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-10-15": [
+      {
+        "kind": "Fixed",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **466116259** | Updated the startup script for the managed instance group (MIG) that routes external traffic to Apigee. `net.ipv4.ip_forward` is now written to `/etc/sysctl.d/`, so an instance no longer stops forwarding traffic when a reboot or an OS update resets it. The script does not change unrelated `iptables` NAT rules. Instances pick up the change the next time they are restarted or recreated. |",
+        "summary": {
+          "title": "Instance startup script updated",
+          "summary": "The startup script for the managed instance group has been updated to ensure traffic forwarding persists across reboots and OS updates. This fix prevents instances from stopping traffic forwarding by correctly configuring net.ipv4.ip_forward."
+        }
+      }
+    ],
     "2026-10-02": [
       {
         "kind": "Announcement",

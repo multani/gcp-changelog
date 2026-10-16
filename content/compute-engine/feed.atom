@@ -23,6 +23,22 @@ cloning a zonal boot disk.</p>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:compute-engine:2026-10-15:change:1</id>
+    <published>2026-10-15T00:00:00+00:00</published>
+    <updated>2026-10-15T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>If you try to create an on-demand reservation or increase the number of
+reserved Compute Engine instances in a reservation when the zone has
+reached its reservation capacity limit for your requested machine family, then
+the request fails with a <code>RESERVATION_CAPACITY_LIMIT_EXCEEDED</code> error. For more
+information, see
+<a href="https://docs.cloud.google.com/compute/docs/troubleshooting/troubleshooting-reservation-creation#reservation-capacity-limit-exceeded">Reservation capacity limit exceeded</a>.</p>]]></content>
+    <summary>Requests to create or increase Compute Engine reservations may now fail if the zone has reached its reservation capacity limit for your machine family. This change ensures fair resource allocation across all users.</summary>
+    <title>Change: Reservation capacity limit reached</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:compute-engine:2026-10-14:feature:0</id>
     <published>2026-10-14T00:00:00+00:00</published>
     <updated>2026-10-14T00:00:00+00:00</updated>

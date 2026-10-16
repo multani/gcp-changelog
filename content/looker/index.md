@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-10-15
+
+### Feature
+
+The [Looker 26.18 features](#October_09_2026) have begun to be enabled for Looker (Google Cloud core) instances.
+
+---
 ## 2026-10-12
 
 ### Feature

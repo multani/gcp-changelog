@@ -1,5 +1,19 @@
 # Dataflow
 
+## 2026-10-15
+
+### Feature
+
+Dataflow Auto VM Selection now supports 4th generation Compute Engine
+machine series. When Auto VM Selection is enabled, the service prioritizes
+these newer generation VMs for improved performance. If 4th generation VMs
+are unavailable at startup, the service automatically falls back to widely available 2nd
+generation machine families to ensure that your jobs can
+start without unnecessary delays.
+
+For more information, see [Auto VM Selection](https://docs.cloud.google.com/dataflow/docs/guides/auto-vm-selection).
+
+---
 ## 2026-07-31
 
 ### Feature

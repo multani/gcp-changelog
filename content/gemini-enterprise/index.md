@@ -1,5 +1,23 @@
 # Gemini Enterprise
 
+## 2026-10-15
+
+### Feature
+
+**Gemini Enterprise: Anthropic models are available in the Gemini Enterprise
+app**
+
+Administrators can make Anthropic models—Claude Opus 5.5 and
+Claude Sonnet 5.5—available to users in the Gemini Enterprise app. After an
+administrator turns on a model in the **Enable third-party models** section of
+the **Feature Management** tab, users can select the model in the model
+selector. Claude models are available in the `global` location and the `us` and
+`eu` multi-regions, and are charged on a pay-as-you-go basis.
+
+This feature is generally available. For more information, see [Enable third-party
+models](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features#enable-third-party-models).
+
+---
 ## 2026-10-14
 
 ### Feature

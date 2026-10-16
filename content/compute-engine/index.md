@@ -10,6 +10,15 @@ cloning a zonal boot disk.
 For more information, see
 [Duplicate a disk with clones](https://docs.cloud.google.com/compute/docs/disks/clone-duplicate-disks).
 
+### Change
+
+If you try to create an on-demand reservation or increase the number of
+reserved Compute Engine instances in a reservation when the zone has
+reached its reservation capacity limit for your requested machine family, then
+the request fails with a `RESERVATION_CAPACITY_LIMIT_EXCEEDED` error. For more
+information, see
+[Reservation capacity limit exceeded](https://docs.cloud.google.com/compute/docs/troubleshooting/troubleshooting-reservation-creation#reservation-capacity-limit-exceeded).
+
 ---
 ## 2026-10-14
 

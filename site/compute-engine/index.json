@@ -9,6 +9,14 @@
           "title": "Create regional disks from zonal boot disks",
           "summary": "You can now create regional disks, including Hyperdisk Balanced High Availability volumes, by cloning a zonal boot disk. This feature allows for easier creation of regional storage from existing zonal boot disks."
         }
+      },
+      {
+        "kind": "Change",
+        "content": "If you try to create an on-demand reservation or increase the number of\nreserved Compute Engine instances in a reservation when the zone has\nreached its reservation capacity limit for your requested machine family, then\nthe request fails with a `RESERVATION_CAPACITY_LIMIT_EXCEEDED` error. For more\ninformation, see\n[Reservation capacity limit exceeded](https://docs.cloud.google.com/compute/docs/troubleshooting/troubleshooting-reservation-creation#reservation-capacity-limit-exceeded).",
+        "summary": {
+          "title": "Reservation capacity limit reached",
+          "summary": "Requests to create or increase Compute Engine reservations may now fail if the zone has reached its reservation capacity limit for your machine family. This change ensures fair resource allocation across all users."
+        }
       }
     ],
     "2026-10-14": [

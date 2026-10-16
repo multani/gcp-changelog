@@ -1,5 +1,12 @@
 # Sensitive Data Protection
 
+## 2026-10-09
+
+### Change
+
+If you set `InfoType.version` to `legacy` when including the `MEDICAL_ID` infoType in your `InspectConfig`, Sensitive Data Protection now includes `MEDICAL_RECORD_NUMBER` findings as type `MEDICAL_ID` in the scan results.
+
+---
 ## 2026-10-03
 
 ### Change

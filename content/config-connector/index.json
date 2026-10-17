@@ -1,6 +1,48 @@
 {
   "name": "Config Connector",
   "entries": {
+    "2026-10-13": [
+      {
+        "kind": "Announcement",
+        "content": "Config Connector version 1.159.0 is now available.",
+        "summary": {
+          "title": "Config Connector 1.159.0 Released",
+          "summary": "Config Connector version 1.159.0 has been released. This update brings new features and improvements to the tool. Users are encouraged to upgrade to the latest version."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `AIPlatformReasoningEngine`\n\n  + Manage [Gemini Enterprise Agent Platform reasoning engines](https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.reasoningEngines) to deploy and run customized reasoning applications.\n* `CloudDeployCustomTargetType`\n\n  + Manage [Cloud Deploy custom target types](https://docs.cloud.google.com/deploy/docs/api/reference/rest/v1/projects.locations.customTargetTypes) to define custom deployment targets and rendering actions.\n* `EventarcPipeline`\n\n  + Manage [Eventarc pipelines](https://docs.cloud.google.com/eventarc/docs/reference/rest/v1/projects.locations.pipelines) to transform and route events across Google Cloud services.\n* `LiveStreamChannel`\n\n  + Manage [Live Stream channels](https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.channels) to ingest, encode, and distribute live video streams.\n* `LiveStreamInput`\n\n  + Manage [Live Stream inputs](https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.inputs) to configure video ingestion endpoints.\n* `MapManagementStyleConfig`\n\n  + Manage [Map Management API style configurations](https://developers.google.com/maps/documentation/mapmanagement/reference/rest/v2/projects.styleConfigs) to define custom map styles.\n* `NetworkSecurityDNSThreatDetector`\n\n  + Manage [Network Security DNS threat detectors](https://docs.cloud.google.com/dns/docs/reference/dns-armor/rest/v1/projects.locations.dnsThreatDetectors) to monitor and mitigate DNS-based threats.",
+        "summary": {
+          "title": "New Alpha Resources Available",
+          "summary": "We are excited to announce the release of several new alpha resources, including AIPlatformReasoningEngine, CloudDeployCustomTargetType, EventarcPipeline, LiveStreamChannel, LiveStreamInput, MapManagementStyleConfig, and NetworkSecurityDNSThreatDetector. These resources provide enhanced capabilities for managing reasoning engines, custom deployment targets, event routing, live video streaming, map styling, and DNS threat detection."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Fields:\n\n* [`ArtifactRegistryRepository`](https://cloud.google.com/config-connector/docs/reference/resource-docs/artifactregistry/artifactregistryrepository)\n\n  + Added support for `spec.remoteRepositoryConfig.commonRepository`.\n* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)\n\n  + Added support for updating `spec.config.workloadsConfig.dagProcessor` in Cloud Composer 3 environments.\n* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)\n\n  + Added support for `spec.privilegedAdmissionConfig` to configure privileged admission in Autopilot clusters.\n* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)\n\n  + Added support for disaster recovery observed state fields under `status.observedState.replicationCluster` (`failoverDRReplicaName`, `drReplica`, `psaWriteEndpoint`) and `status.observedState.masterInstanceName`.",
+        "summary": {
+          "title": "New Features for Cloud Management",
+          "summary": "This update introduces new fields for Artifact Registry, Composer, Container Clusters, and SQL Instances. Key additions include support for remote repository configurations, enhanced workload management in Cloud Composer 3, privileged admission control for Autopilot clusters, and detailed disaster recovery status for SQL instances."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "New Features:\n\n* Added support for Cloud SQL Enterprise Plus edition disaster recovery (DR) pair setup and drift suppression for `SQLInstance` by using the `cnrm.cloud.google.com/sqlinstance-advanced-dr: \"enabled\"` annotation.\n* Manager Pods now restart automatically when `resourceSettings` changes in the operator configuration.\n* Added [a guide for managing Config Connector by using GitOps tools](https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/guides/gitops-argocd.md) (such as Argo CD).",
+        "summary": {
+          "title": "Enhanced Disaster Recovery and GitOps Support",
+          "summary": "This update introduces enhanced disaster recovery capabilities for Cloud SQL Enterprise Plus edition, ensuring greater resilience. Additionally, a new guide is available for managing Config Connector with GitOps tools, streamlining your deployment workflows."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Bug Fixes:\n\n* [`BigQueryDataset`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydataset) ([#13352](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13352))\n\n  + Fixed false-positive diffs for access entries and avoided redundant `PATCH` requests when the resource is already up to date.\n* [`ComputeRouterNAT`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouternat) ([#13472](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13472))\n\n  + Fixed false drift and steady-state reconciliation issues during direct controller takeover.\n* [`MonitoringDashboard`](https://cloud.google.com/config-connector/docs/reference/resource-docs/monitoring/monitoringdashboard) ([#13574](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13574))\n\n  + Fixed reconciliation errors caused by unrecognized enum values by migrating the direct controller to the Google REST client.",
+        "summary": {
+          "title": "Resolved reconciliation issues",
+          "summary": "Several bugs have been fixed, including issues with BigQueryDataset access entries, ComputeRouterNAT drift, and MonitoringDashboard reconciliation errors. These fixes ensure more reliable resource management."
+        }
+      }
+    ],
     "2026-10-06": [
       {
         "kind": "Announcement",
@@ -12,10 +54,10 @@
       },
       {
         "kind": "Feature",
-        "content": "New Alpha Resources (Direct Reconciler):\n\n* `AgentRegistryBinding`\n\n  + Manage [Agent Registry bindings](https://docs.cloud.google.com/agent-registry/reference/rest/v1/projects.locations.bindings) to connect agent tools and authentication configurations.\n* `AIPlatformPersistentResource`\n\n  + Manage [Vertex AI Persistent Resources](https://cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources) for cluster computing and training jobs.\n* `AssuredWorkloadsWorkload`\n\n  + Manage [Assured Workloads](https://cloud.google.com/assured-workloads/docs/reference/rest/v1/organizations.locations.workloads) to enforce security and compliance controls for regulated workloads.\n* `BigtableSchemaBundle`\n\n  + Manage [Bigtable schema bundles](https://cloud.google.com/bigtable/docs/reference/admin/rest/v2/projects.instances.tables.schemaBundles) for storing protocol buffer (protobuf) schemas in Bigtable.\n* `CloudNumberRegistryRegistryBook`\n\n  + Manage [Cloud Number Registry registry books](https://docs.cloud.google.com/number-registry/reference/rest/v1alpha/projects.locations.registryBooks) to organize IP address management (IPAM) information and discovered IP address ranges.\n* `EventarcMessageBus`\n\n  + Manage [Eventarc message buses](https://cloud.google.com/eventarc/docs/reference/rest/v1/projects.locations.messageBuses) to route events from publishers to subscribers.\n* `ModelArmorFloorSetting`\n\n  + Manage [Model Armor floor settings](https://docs.cloud.google.com/model-armor/reference/rest/v1/FloorSetting) at project, folder, or organization scope to enforce baseline safety and security filters for LLMs.",
+        "content": "New Alpha Resources (Direct Reconciler):\n\n* `AgentRegistryBinding`\n\n  + Manage [Agent Registry bindings](https://docs.cloud.google.com/agent-registry/reference/rest/v1/projects.locations.bindings) to connect agent tools and authentication configurations.\n* `AIPlatformPersistentResource`\n\n  + Manage [Gemini Enterprise Agent Platform persistent resources](https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources) for cluster computing and training jobs.\n* `AssuredWorkloadsWorkload`\n\n  + Manage [Assured Workloads](https://cloud.google.com/assured-workloads/docs/reference/rest/v1/organizations.locations.workloads) to enforce security and compliance controls for regulated workloads.\n* `BigtableSchemaBundle`\n\n  + Manage [Bigtable schema bundles](https://cloud.google.com/bigtable/docs/reference/admin/rest/v2/projects.instances.tables.schemaBundles) for storing protocol buffer (protobuf) schemas in Bigtable.\n* `CloudNumberRegistryRegistryBook`\n\n  + Manage [Cloud Number Registry registry books](https://docs.cloud.google.com/number-registry/reference/rest/v1alpha/projects.locations.registryBooks) to organize IP address management (IPAM) information and discovered IP address ranges.\n* `EventarcMessageBus`\n\n  + Manage [Eventarc message buses](https://cloud.google.com/eventarc/docs/reference/rest/v1/projects.locations.messageBuses) to route events from publishers to subscribers.\n* `ModelArmorFloorSetting`\n\n  + Manage [Model Armor floor settings](https://docs.cloud.google.com/model-armor/reference/rest/v1/FloorSetting) at project, folder, or organization scope to enforce baseline safety and security filters for LLMs.",
         "summary": {
           "title": "New Alpha Resources Available",
-          "summary": "We've added several new Alpha resources to help you manage agent bindings, persistent resources for AI Platform, Assured Workloads, Bigtable schemas, and more. These new resources provide enhanced control over your cloud environment and data."
+          "summary": "We've added several new alpha resources to help manage your cloud infrastructure. These include tools for agent registry bindings, AI platform resources, Assured Workloads, Bigtable schemas, IP address management, event routing, and LLM safety settings."
         }
       },
       {

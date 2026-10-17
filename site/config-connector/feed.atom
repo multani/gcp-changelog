@@ -2,9 +2,159 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Config Connector</title>
   <subtitle>Changelog for Google Cloud product: Config Connector</subtitle>
-  <updated>2026-10-06T00:00:00+00:00</updated>
+  <updated>2026-10-13T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:config-connector</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/config-connector/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-10-13:announcement:0</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Config Connector version 1.159.0 is now available.</p>]]></content>
+    <summary>Config Connector version 1.159.0 has been released. This update brings new features and improvements to the tool. Users are encouraged to upgrade to the latest version.</summary>
+    <title>Announcement: Config Connector 1.159.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-10-13:feature:1</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li>
+<p><code>AIPlatformReasoningEngine</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.reasoningEngines">Gemini Enterprise Agent Platform reasoning engines</a> to deploy and run customized reasoning applications.</p>
+</li>
+<li>
+<p><code>CloudDeployCustomTargetType</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/deploy/docs/api/reference/rest/v1/projects.locations.customTargetTypes">Cloud Deploy custom target types</a> to define custom deployment targets and rendering actions.</p>
+</li>
+<li>
+<p><code>EventarcPipeline</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/eventarc/docs/reference/rest/v1/projects.locations.pipelines">Eventarc pipelines</a> to transform and route events across Google Cloud services.</p>
+</li>
+<li>
+<p><code>LiveStreamChannel</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.channels">Live Stream channels</a> to ingest, encode, and distribute live video streams.</p>
+</li>
+<li>
+<p><code>LiveStreamInput</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.inputs">Live Stream inputs</a> to configure video ingestion endpoints.</p>
+</li>
+<li>
+<p><code>MapManagementStyleConfig</code></p>
+</li>
+<li>
+<p>Manage <a href="https://developers.google.com/maps/documentation/mapmanagement/reference/rest/v2/projects.styleConfigs">Map Management API style configurations</a> to define custom map styles.</p>
+</li>
+<li>
+<p><code>NetworkSecurityDNSThreatDetector</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/dns/docs/reference/dns-armor/rest/v1/projects.locations.dnsThreatDetectors">Network Security DNS threat detectors</a> to monitor and mitigate DNS-based threats.</p>
+</li>
+</ul>]]></content>
+    <summary>We are excited to announce the release of several new alpha resources, including AIPlatformReasoningEngine, CloudDeployCustomTargetType, EventarcPipeline, LiveStreamChannel, LiveStreamInput, MapManagementStyleConfig, and NetworkSecurityDNSThreatDetector. These resources provide enhanced capabilities for managing reasoning engines, custom deployment targets, event routing, live video streaming, map styling, and DNS threat detection.</summary>
+    <title>Feature: New Alpha Resources Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-10-13:feature:2</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Fields:</p>
+<ul>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/artifactregistry/artifactregistryrepository"><code>ArtifactRegistryRepository</code></a></p>
+</li>
+<li>
+<p>Added support for <code>spec.remoteRepositoryConfig.commonRepository</code>.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></p>
+</li>
+<li>
+<p>Added support for updating <code>spec.config.workloadsConfig.dagProcessor</code> in Cloud Composer 3 environments.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></p>
+</li>
+<li>
+<p>Added support for <code>spec.privilegedAdmissionConfig</code> to configure privileged admission in Autopilot clusters.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></p>
+</li>
+<li>
+<p>Added support for disaster recovery observed state fields under <code>status.observedState.replicationCluster</code> (<code>failoverDRReplicaName</code>, <code>drReplica</code>, <code>psaWriteEndpoint</code>) and <code>status.observedState.masterInstanceName</code>.</p>
+</li>
+</ul>]]></content>
+    <summary>This update introduces new fields for Artifact Registry, Composer, Container Clusters, and SQL Instances. Key additions include support for remote repository configurations, enhanced workload management in Cloud Composer 3, privileged admission control for Autopilot clusters, and detailed disaster recovery status for SQL instances.</summary>
+    <title>Feature: New Features for Cloud Management</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-10-13:feature:3</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New Features:</p>
+<ul>
+<li>Added support for Cloud SQL Enterprise Plus edition disaster recovery (DR) pair setup and drift suppression for <code>SQLInstance</code> by using the <code>cnrm.cloud.google.com/sqlinstance-advanced-dr: "enabled"</code> annotation.</li>
+<li>Manager Pods now restart automatically when <code>resourceSettings</code> changes in the operator configuration.</li>
+<li>Added <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/guides/gitops-argocd.md">a guide for managing Config Connector by using GitOps tools</a> (such as Argo CD).</li>
+</ul>]]></content>
+    <summary>This update introduces enhanced disaster recovery capabilities for Cloud SQL Enterprise Plus edition, ensuring greater resilience. Additionally, a new guide is available for managing Config Connector with GitOps tools, streamlining your deployment workflows.</summary>
+    <title>Feature: Enhanced Disaster Recovery and GitOps Support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:config-connector:2026-10-13:fixed:4</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Bug Fixes:</p>
+<ul>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydataset"><code>BigQueryDataset</code></a> (<a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13352">#13352</a>)</p>
+</li>
+<li>
+<p>Fixed false-positive diffs for access entries and avoided redundant <code>PATCH</code> requests when the resource is already up to date.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouternat"><code>ComputeRouterNAT</code></a> (<a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13472">#13472</a>)</p>
+</li>
+<li>
+<p>Fixed false drift and steady-state reconciliation issues during direct controller takeover.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/monitoring/monitoringdashboard"><code>MonitoringDashboard</code></a> (<a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13574">#13574</a>)</p>
+</li>
+<li>
+<p>Fixed reconciliation errors caused by unrecognized enum values by migrating the direct controller to the Google REST client.</p>
+</li>
+</ul>]]></content>
+    <summary>Several bugs have been fixed, including issues with BigQueryDataset access entries, ComputeRouterNAT drift, and MonitoringDashboard reconciliation errors. These fixes ensure more reliable resource management.</summary>
+    <title>Fixed: Resolved reconciliation issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -35,7 +185,7 @@
 <p><code>AIPlatformPersistentResource</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources">Vertex AI Persistent Resources</a> for cluster computing and training jobs.</p>
+<p>Manage <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources">Gemini Enterprise Agent Platform persistent resources</a> for cluster computing and training jobs.</p>
 </li>
 <li>
 <p><code>AssuredWorkloadsWorkload</code></p>
@@ -68,7 +218,7 @@
 <p>Manage <a href="https://docs.cloud.google.com/model-armor/reference/rest/v1/FloorSetting">Model Armor floor settings</a> at project, folder, or organization scope to enforce baseline safety and security filters for LLMs.</p>
 </li>
 </ul>]]></content>
-    <summary>We've added several new Alpha resources to help you manage agent bindings, persistent resources for AI Platform, Assured Workloads, Bigtable schemas, and more. These new resources provide enhanced control over your cloud environment and data.</summary>
+    <summary>We've added several new alpha resources to help manage your cloud infrastructure. These include tools for agent registry bindings, AI platform resources, Assured Workloads, Bigtable schemas, IP address management, event routing, and LLM safety settings.</summary>
     <title>Feature: New Alpha Resources Available</title>
   </entry>
   <entry>

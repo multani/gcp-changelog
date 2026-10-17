@@ -1,5 +1,77 @@
 # Config Connector
 
+## 2026-10-13
+
+### Announcement
+
+Config Connector version 1.159.0 is now available.
+
+### Feature
+
+New Alpha Resources (Direct Reconciler):
+
+* `AIPlatformReasoningEngine`
+
+  + Manage [Gemini Enterprise Agent Platform reasoning engines](https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.reasoningEngines) to deploy and run customized reasoning applications.
+* `CloudDeployCustomTargetType`
+
+  + Manage [Cloud Deploy custom target types](https://docs.cloud.google.com/deploy/docs/api/reference/rest/v1/projects.locations.customTargetTypes) to define custom deployment targets and rendering actions.
+* `EventarcPipeline`
+
+  + Manage [Eventarc pipelines](https://docs.cloud.google.com/eventarc/docs/reference/rest/v1/projects.locations.pipelines) to transform and route events across Google Cloud services.
+* `LiveStreamChannel`
+
+  + Manage [Live Stream channels](https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.channels) to ingest, encode, and distribute live video streams.
+* `LiveStreamInput`
+
+  + Manage [Live Stream inputs](https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.inputs) to configure video ingestion endpoints.
+* `MapManagementStyleConfig`
+
+  + Manage [Map Management API style configurations](https://developers.google.com/maps/documentation/mapmanagement/reference/rest/v2/projects.styleConfigs) to define custom map styles.
+* `NetworkSecurityDNSThreatDetector`
+
+  + Manage [Network Security DNS threat detectors](https://docs.cloud.google.com/dns/docs/reference/dns-armor/rest/v1/projects.locations.dnsThreatDetectors) to monitor and mitigate DNS-based threats.
+
+### Feature
+
+New Fields:
+
+* [`ArtifactRegistryRepository`](https://cloud.google.com/config-connector/docs/reference/resource-docs/artifactregistry/artifactregistryrepository)
+
+  + Added support for `spec.remoteRepositoryConfig.commonRepository`.
+* [`ComposerEnvironment`](https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment)
+
+  + Added support for updating `spec.config.workloadsConfig.dagProcessor` in Cloud Composer 3 environments.
+* [`ContainerCluster`](https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster)
+
+  + Added support for `spec.privilegedAdmissionConfig` to configure privileged admission in Autopilot clusters.
+* [`SQLInstance`](https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance)
+
+  + Added support for disaster recovery observed state fields under `status.observedState.replicationCluster` (`failoverDRReplicaName`, `drReplica`, `psaWriteEndpoint`) and `status.observedState.masterInstanceName`.
+
+### Feature
+
+New Features:
+
+* Added support for Cloud SQL Enterprise Plus edition disaster recovery (DR) pair setup and drift suppression for `SQLInstance` by using the `cnrm.cloud.google.com/sqlinstance-advanced-dr: "enabled"` annotation.
+* Manager Pods now restart automatically when `resourceSettings` changes in the operator configuration.
+* Added [a guide for managing Config Connector by using GitOps tools](https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/guides/gitops-argocd.md) (such as Argo CD).
+
+### Fixed
+
+Bug Fixes:
+
+* [`BigQueryDataset`](https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydataset) ([#13352](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13352))
+
+  + Fixed false-positive diffs for access entries and avoided redundant `PATCH` requests when the resource is already up to date.
+* [`ComputeRouterNAT`](https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouternat) ([#13472](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13472))
+
+  + Fixed false drift and steady-state reconciliation issues during direct controller takeover.
+* [`MonitoringDashboard`](https://cloud.google.com/config-connector/docs/reference/resource-docs/monitoring/monitoringdashboard) ([#13574](https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13574))
+
+  + Fixed reconciliation errors caused by unrecognized enum values by migrating the direct controller to the Google REST client.
+
+---
 ## 2026-10-06
 
 ### Announcement
@@ -15,7 +87,7 @@ New Alpha Resources (Direct Reconciler):
   + Manage [Agent Registry bindings](https://docs.cloud.google.com/agent-registry/reference/rest/v1/projects.locations.bindings) to connect agent tools and authentication configurations.
 * `AIPlatformPersistentResource`
 
-  + Manage [Vertex AI Persistent Resources](https://cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources) for cluster computing and training jobs.
+  + Manage [Gemini Enterprise Agent Platform persistent resources](https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources) for cluster computing and training jobs.
 * `AssuredWorkloadsWorkload`
 
   + Manage [Assured Workloads](https://cloud.google.com/assured-workloads/docs/reference/rest/v1/organizations.locations.workloads) to enforce security and compliance controls for regulated workloads.

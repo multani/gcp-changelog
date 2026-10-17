@@ -2988,10 +2988,117 @@
 
 
 <h1 id="config-connector">Config Connector</h1>
-<h2 id="2026-10-06">2026-10-06</h2>
+<h2 id="2026-10-13">2026-10-13</h2>
 <h3 id="announcement">Announcement</h3>
-<p>Config Connector version 1.158.0 is now available.</p>
+<p>Config Connector version 1.159.0 is now available.</p>
 <h3 id="feature">Feature</h3>
+<p>New Alpha Resources (Direct Reconciler):</p>
+<ul>
+<li>
+<p><code>AIPlatformReasoningEngine</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.reasoningEngines">Gemini Enterprise Agent Platform reasoning engines</a> to deploy and run customized reasoning applications.</p>
+</li>
+<li>
+<p><code>CloudDeployCustomTargetType</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/deploy/docs/api/reference/rest/v1/projects.locations.customTargetTypes">Cloud Deploy custom target types</a> to define custom deployment targets and rendering actions.</p>
+</li>
+<li>
+<p><code>EventarcPipeline</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/eventarc/docs/reference/rest/v1/projects.locations.pipelines">Eventarc pipelines</a> to transform and route events across Google Cloud services.</p>
+</li>
+<li>
+<p><code>LiveStreamChannel</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.channels">Live Stream channels</a> to ingest, encode, and distribute live video streams.</p>
+</li>
+<li>
+<p><code>LiveStreamInput</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/livestream/docs/reference/rest/v1/projects.locations.inputs">Live Stream inputs</a> to configure video ingestion endpoints.</p>
+</li>
+<li>
+<p><code>MapManagementStyleConfig</code></p>
+</li>
+<li>
+<p>Manage <a href="https://developers.google.com/maps/documentation/mapmanagement/reference/rest/v2/projects.styleConfigs">Map Management API style configurations</a> to define custom map styles.</p>
+</li>
+<li>
+<p><code>NetworkSecurityDNSThreatDetector</code></p>
+</li>
+<li>
+<p>Manage <a href="https://docs.cloud.google.com/dns/docs/reference/dns-armor/rest/v1/projects.locations.dnsThreatDetectors">Network Security DNS threat detectors</a> to monitor and mitigate DNS-based threats.</p>
+</li>
+</ul>
+<h3 id="feature_1">Feature</h3>
+<p>New Fields:</p>
+<ul>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/artifactregistry/artifactregistryrepository"><code>ArtifactRegistryRepository</code></a></p>
+</li>
+<li>
+<p>Added support for <code>spec.remoteRepositoryConfig.commonRepository</code>.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></p>
+</li>
+<li>
+<p>Added support for updating <code>spec.config.workloadsConfig.dagProcessor</code> in Cloud Composer 3 environments.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></p>
+</li>
+<li>
+<p>Added support for <code>spec.privilegedAdmissionConfig</code> to configure privileged admission in Autopilot clusters.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></p>
+</li>
+<li>
+<p>Added support for disaster recovery observed state fields under <code>status.observedState.replicationCluster</code> (<code>failoverDRReplicaName</code>, <code>drReplica</code>, <code>psaWriteEndpoint</code>) and <code>status.observedState.masterInstanceName</code>.</p>
+</li>
+</ul>
+<h3 id="feature_2">Feature</h3>
+<p>New Features:</p>
+<ul>
+<li>Added support for Cloud SQL Enterprise Plus edition disaster recovery (DR) pair setup and drift suppression for <code>SQLInstance</code> by using the <code>cnrm.cloud.google.com/sqlinstance-advanced-dr: "enabled"</code> annotation.</li>
+<li>Manager Pods now restart automatically when <code>resourceSettings</code> changes in the operator configuration.</li>
+<li>Added <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/guides/gitops-argocd.md">a guide for managing Config Connector by using GitOps tools</a> (such as Argo CD).</li>
+</ul>
+<h3 id="fixed">Fixed</h3>
+<p>Bug Fixes:</p>
+<ul>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydataset"><code>BigQueryDataset</code></a> (<a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13352">#13352</a>)</p>
+</li>
+<li>
+<p>Fixed false-positive diffs for access entries and avoided redundant <code>PATCH</code> requests when the resource is already up to date.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computerouternat"><code>ComputeRouterNAT</code></a> (<a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13472">#13472</a>)</p>
+</li>
+<li>
+<p>Fixed false drift and steady-state reconciliation issues during direct controller takeover.</p>
+</li>
+<li>
+<p><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/monitoring/monitoringdashboard"><code>MonitoringDashboard</code></a> (<a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/13574">#13574</a>)</p>
+</li>
+<li>
+<p>Fixed reconciliation errors caused by unrecognized enum values by migrating the direct controller to the Google REST client.</p>
+</li>
+</ul>
+<hr />
+<h2 id="2026-10-06">2026-10-06</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>Config Connector version 1.158.0 is now available.</p>
+<h3 id="feature_3">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li>
@@ -3004,7 +3111,7 @@
 <p><code>AIPlatformPersistentResource</code></p>
 </li>
 <li>
-<p>Manage <a href="https://cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources">Vertex AI Persistent Resources</a> for cluster computing and training jobs.</p>
+<p>Manage <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/reference/rest/v1/projects.locations.persistentResources">Gemini Enterprise Agent Platform persistent resources</a> for cluster computing and training jobs.</p>
 </li>
 <li>
 <p><code>AssuredWorkloadsWorkload</code></p>
@@ -3037,7 +3144,7 @@
 <p>Manage <a href="https://docs.cloud.google.com/model-armor/reference/rest/v1/FloorSetting">Model Armor floor settings</a> at project, folder, or organization scope to enforce baseline safety and security filters for LLMs.</p>
 </li>
 </ul>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li>
@@ -3073,7 +3180,7 @@
 <p>Added <code>spec.settings.databaseReplicationEnabled</code> field.</p>
 </li>
 </ul>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li>Added support for pausing and unpausing actuation at the individual resource level by using the <code>cnrm.cloud.google.com/actuation-mode</code> annotation.</li>
@@ -3085,7 +3192,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/filestore/filestoreinstance"><code>FilestoreInstance</code></a></li>
 <li>Added support for direct reconciliation (opt-in).</li>
 </ul>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>
@@ -3110,9 +3217,9 @@
 </ul>
 <hr />
 <h2 id="2026-09-23">2026-09-23</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>Config Connector version 1.157.0 is now available.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li>
@@ -3140,13 +3247,13 @@
 <p>Manage <a href="https://cloud.google.com/memorystore/docs/cluster/reference/rest/v1/projects.locations.clusters#ClusterEndpoint">Memorystore for Redis Cluster endpoints</a>.</p>
 </li>
 </ul>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>NetworkServicesEdgeCacheService</code></li>
 <li>Added <code>routeMethods</code> and <code>compressionMode</code> support.</li>
 </ul>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/12615"><code>NetworkConnectivityInternalRange</code></a></li>
@@ -3159,9 +3266,9 @@
 </ul>
 <hr />
 <h2 id="2026-09-08">2026-09-08</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>Config Connector version 1.156.0 is now available.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li>
@@ -3237,7 +3344,7 @@
 <p>Manage <a href="https://docs.cloud.google.com/vertex-ai/docs/vector-search/overview">Vertex AI Vector Search collections</a> to manage similarity search indexes.</p>
 </li>
 </ul>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li>
@@ -3271,7 +3378,7 @@
 <p>Added <code>spec.organizationRef</code> field to support organizing resources at the organization level, and made <code>spec.projectRef</code> optional.</p>
 </li>
 </ul>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li><strong>Optional NAT IP Allocate Option</strong>: Made <code>natIpAllocateOption</code> an optional field in <code>ComputeRouterNat</code> to support dynamic allocation.</li>
@@ -3286,9 +3393,9 @@
 </ul>
 <hr />
 <h2 id="2026-08-20">2026-08-20</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Config Connector version 1.155.1 is now available.</p>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_11">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li>
@@ -3310,7 +3417,7 @@
 <p>Manage <a href="https://cloud.google.com/vertex-ai/docs/tensorboard">Vertex AI Tensorboard experiments</a> to organize and track runs.</p>
 </li>
 </ul>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li>
@@ -3371,7 +3478,7 @@
 </li>
 <li>Added <code>status.observedState.storageClass</code> field.</li>
 </ul>
-<h3 id="feature_10">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li><strong>Configurable metrics server address</strong>: Made the manager's built-in metrics server bind address configurable.</li>
@@ -3385,7 +3492,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/networkservices/networkserviceshttproute"><code>NetworkServicesHTTPRoute</code></a></li>
 <li>Support direct reconciliation (opt-in).</li>
 </ul>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>
@@ -3422,9 +3529,9 @@
 </ul>
 <hr />
 <h2 id="2026-07-30">2026-07-30</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_5">Announcement</h3>
 <p>Config Connector version 1.154.1 is now available.</p>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>ApigeeApiProduct</code></li>
@@ -3574,7 +3681,7 @@
 <li><code>VMwareEnginePrivateConnection</code></li>
 <li>Manage <a href="https://cloud.google.com/vmware-engine/docs">VMware Engine private connections</a> to connect private clouds to other services.</li>
 </ul>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesubnetwork"><code>ComputeSubnetwork</code></a></li>
@@ -3655,7 +3762,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/serviceusage/service"><code>Service</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/serviceusage/serviceidentity"><code>ServiceIdentity</code></a></li>
 </ul>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/11001"><code>ComposerEnvironment</code></a>: Fix storageConfig.bucketRef mapping.</li>
@@ -3668,9 +3775,9 @@
 </ul>
 <hr />
 <h2 id="2026-07-01">2026-07-01</h2>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_6">Announcement</h3>
 <p>Config Connector version 1.153.0 is now available.</p>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/orgpolicy/orgpolicypolicy"><code>OrgPolicyPolicy</code></a></li>
@@ -3713,7 +3820,7 @@
 <li><code>VertexAIExampleStore</code></li>
 <li>Manage <a href="https://cloud.google.com/vertex-ai/docs">Vertex AI example stores</a> for managing example data.</li>
 </ul>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
@@ -3747,7 +3854,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/pubsub/pubsubtopic"><code>PubSubTopic</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/servicedirectory/servicedirectoryservice"><code>ServiceDirectoryService</code></a></li>
 </ul>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/9114">#9114</a>: <code>ComposerEnvironment</code>: Support resource reference resolution and fix drift on private environment config.</li>
@@ -3761,9 +3868,9 @@
 </ul>
 <hr />
 <h2 id="2026-06-23">2026-06-23</h2>
-<h3 id="announcement_6">Announcement</h3>
+<h3 id="announcement_7">Announcement</h3>
 <p>Config Connector version 1.152.0 is now available.</p>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation"><code>ComputeReservation</code></a></li>
@@ -3778,7 +3885,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computereservation"><code>ComputeReservation</code></a></li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/firestore/firestoreindex"><code>FirestoreIndex</code></a></li>
 </ul>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/8025">#8025</a>: <code>SQLInstance</code>: Fixed case sensitivity in <code>availabilityType</code>.</li>
@@ -3788,7 +3895,7 @@
 </ul>
 <hr />
 <h2 id="2026-05-19">2026-05-19</h2>
-<h3 id="announcement_7">Announcement</h3>
+<h3 id="announcement_8">Announcement</h3>
 <p>Config Connector version 1.151.0 is now available.</p>
 <h3 id="change_7">Change</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
@@ -3801,7 +3908,7 @@
 <li>NetworkServicesWasmPlugin</li>
 <li>VertexAIDataLabelingJob</li>
 </ul>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_19">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/memorystore/memorystoreinstance"><code>MemorystoreInstance</code></a></li>
@@ -3813,7 +3920,7 @@
 <li>Added <code>status.observedState.effectiveMaintenanceVersion</code> field.</li>
 <li>Added <code>status.observedState.pscAttachmentDetails</code> field.</li>
 </ul>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <ul>
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/bigquerydatatransfer/bigquerydatatransferconfig"><code>BigQueryDataTransferConfig</code></a></li>
 <li>Fix resource duplication loop.</li>
@@ -3822,9 +3929,9 @@
 </ul>
 <hr />
 <h2 id="2026-05-12">2026-05-12</h2>
-<h3 id="announcement_8">Announcement</h3>
+<h3 id="announcement_9">Announcement</h3>
 <p>Config Connector version 1.150.0 is now available.</p>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_20">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>GKEHubScope</code></li>
@@ -3832,7 +3939,7 @@
 <li><code>CloudDeployTarget</code></li>
 <li>Manage <a href="https://cloud.google.com/deploy/docs/targets">Cloud Deploy targets</a> which define where your application is deployed.</li>
 </ul>
-<h3 id="feature_18">Feature</h3>
+<h3 id="feature_21">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/certificatemanager/certificatemanagercertificate"><code>CertificateManagerCertificate</code></a></li>
@@ -3842,7 +3949,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool"><code>ContainerNodePool</code></a></li>
 <li>Added <code>spec.networkConfig.subnetworkRef</code> field.</li>
 </ul>
-<h3 id="feature_19">Feature</h3>
+<h3 id="feature_22">Feature</h3>
 <p>Improved resource creation logging for both Direct and DCL-based controllers by including structured diffs.</p>
 <h3 id="change_8">Change</h3>
 <p>Reconciliation Improvements:</p>
@@ -3855,7 +3962,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataplex/dataplexlake"><code>DataplexLake</code></a></li>
 <li>Added structured diff reporting to improve visibility into resource changes.</li>
 </ul>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
@@ -3865,9 +3972,9 @@
 </ul>
 <hr />
 <h2 id="2026-05-05">2026-05-05</h2>
-<h3 id="announcement_9">Announcement</h3>
+<h3 id="announcement_10">Announcement</h3>
 <p>Config Connector version 1.149.1 is now available.</p>
-<h3 id="feature_20">Feature</h3>
+<h3 id="feature_23">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/networkservices/networkserviceslbrouteextension"><code>NetworkServicesLBRouteExtension</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6957">#6957</a></li>
@@ -3875,7 +3982,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion"><code>ParameterManagerParameterVersion</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7140">#7140</a></li>
 <li>Manage <a href="https://cloud.google.com/secret-manager/docs/parameter-manager">Parameter Manager parameter versions</a> which lets you to manage regional parameters.</li>
 </ul>
-<h3 id="feature_21">Feature</h3>
+<h3 id="feature_24">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336">#7336</a></li>
@@ -3883,7 +3990,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containernodepool"><code>ContainerNodePool</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7336">#7336</a></li>
 <li>Added <code>spec.nodeConfig.ephemeralStorageLocalSsdConfig.dataCacheCount</code> field to support GKE Data Cache.</li>
 </ul>
-<h3 id="feature_22">Feature</h3>
+<h3 id="feature_25">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6243">Controlled CR reconciliation</a> Added support for unmanaging specific resources through <code>resourceSettings</code> in <code>ConfigConnector</code> (global) and <code>ConfigConnectorContext</code> (per-namespace). This lets you to selectively disable reconciliation for specific Group/Kinds to save memory or manage resources differently.</li>
@@ -3894,29 +4001,29 @@
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/bigquery/bigquerydatasetaccess"><code>BigQueryDatasetAccess</code></a> <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7000">#7000</a></li>
 </ul>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7642">Preview Tool</a> Fixed a connection error in the Config Connector preview tool and enforced read-only access to the cluster for improved security.</li>
 </ul>
 <hr />
 <h2 id="2026-04-22">2026-04-22</h2>
-<h3 id="announcement_10">Announcement</h3>
+<h3 id="announcement_11">Announcement</h3>
 <p>Config Connector version 1.148.0 is now available.</p>
-<h3 id="feature_23">Feature</h3>
+<h3 id="feature_26">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/parametermanager/parametermanagerparameterversion"><code>ParameterManagerParameterVersion</code></a></li>
 <li>Configure <a href="https://cloud.google.com/secret-manager/docs/parameter-manager">Parameter Manager parameter versions</a> which lets you manage regional parameters.</li>
 </ul>
-<h3 id="feature_24">Feature</h3>
+<h3 id="feature_27">Feature</h3>
 <p>New features:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6919">#6919</a>: <code>MultiClusterLeaseSpec</code> now supports integration with a syncer for KRM objects. This helps Config Connector take ownership of resources with service generated IDs.</li>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7202">#7202</a>: <code>kompanion</code>: Added a Model Context Protocol (MCP) server to the <code>kompanion</code> tool to enable AI IDEs and assistants to interact with Config Connector resources.</li>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7075">#7075</a>: <code>Config Connector controllers</code>: Added a <code>--skip-name-validation</code> flag to bypass duplicate controller name checks during registration, facilitating integration tests and multi-manager scenarios.</li>
 </ul>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7145">#7145</a>: <code>SQLInstance</code>: Fixed an issue where <code>settings.dataCacheConfig</code> was incorrectly detected as different when <code>dataCacheEnabled</code> was <code>false</code>.</li>
@@ -3926,7 +4033,7 @@
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/7115">#7115</a>: <code>CloudBuildTrigger</code>: Restored missing descriptions in the CRD.</li>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6693">#6693</a>: <code>RunService</code>: Fixed a typo in environment variable values in samples and test fixtures.</li>
 </ul>
-<h3 id="feature_25">Feature</h3>
+<h3 id="feature_28">Feature</h3>
 <p>Documentation:</p>
 <ul>
 <li>Added <a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/blob/master/docs/features/controller-configuration.md">a guide for controller configuration</a>, detailing Direct, Terraform, and DCL controllers, including precedence rules and overrides.</li>
@@ -3935,9 +4042,9 @@
 </ul>
 <hr />
 <h2 id="2026-03-25">2026-03-25</h2>
-<h3 id="announcement_11">Announcement</h3>
+<h3 id="announcement_12">Announcement</h3>
 <p>Config Connector version 1.147.1 is now available.</p>
-<h3 id="feature_26">Feature</h3>
+<h3 id="feature_29">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>CloudDeployCustomTargetType</code></li>
@@ -3957,13 +4064,13 @@
 <li><code>PrivilegedAccessManagerEntitlement</code></li>
 <li><code>WorkflowsWorkflow</code></li>
 </ul>
-<h3 id="feature_27">Feature</h3>
+<h3 id="feature_30">Feature</h3>
 <p>New features:</p>
 <ul>
 <li>Enhanced <code>config-connector preview</code> to support side-by-side comparison between default and alternative controllers.</li>
 <li>Added a <code>--skip-name-validation</code> flag to Config Connector controllers to bypass duplicate controller name checks during registration.</li>
 </ul>
-<h3 id="fixed_10">Fixed</h3>
+<h3 id="fixed_11">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Added CRD filtering for the preview recorder to skip non-CNRM objects.</li>
@@ -3972,15 +4079,15 @@
 <h2 id="2026-03-10">2026-03-10</h2>
 <h3 id="breaking">Breaking</h3>
 <p>Config Connector version 1.144.0 was identified as a bad release. Do not use this version - upgrade directly to 1.145.0 or later.</p>
-<h3 id="announcement_12">Announcement</h3>
+<h3 id="announcement_13">Announcement</h3>
 <p>Config Connector version 1.146.0 is now available.</p>
-<h3 id="feature_28">Feature</h3>
+<h3 id="feature_31">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>ParameterManagerParameter</code></li>
 <li>Manage <a href="https://cloud.google.com/secret-manager/parameter-manager/docs/overview">Parameter Manager Parameters</a>.</li>
 </ul>
-<h3 id="feature_29">Feature</h3>
+<h3 id="feature_32">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
@@ -3995,7 +4102,7 @@
 <li>Introduced identity and reference.</li>
 <li>Added structured reporting diff to numerous direct controllers to enhance diff visibility.</li>
 </ul>
-<h3 id="fixed_11">Fixed</h3>
+<h3 id="fixed_12">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
@@ -4030,7 +4137,7 @@
 <li>TaskQueue</li>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/workstations/workstationconfig"><code>WorkstationConfig</code></a></li>
 </ul>
-<h3 id="feature_30">Feature</h3>
+<h3 id="feature_33">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/container/containercluster"><code>ContainerCluster</code></a></li>
@@ -4041,7 +4148,7 @@
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/sql/sqlinstance"><code>SQLInstance</code></a></li>
 <li>Added <code>spec.settings.failoverDrReplicaRef</code> field to support designating CloudSQL Enterprise Plus DR Replicas.</li>
 </ul>
-<h3 id="feature_31">Feature</h3>
+<h3 id="feature_34">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/compute/computesecuritypolicy"><code>ComputeSecurityPolicy</code></a></li>
@@ -4049,14 +4156,14 @@
 <li><code>MemorystoreInstance</code></li>
 <li>Manage <a href="https://cloud.google.com//memorystore/docs/valkey/reference/rest/v1/projects.locations.instances">Memorystore for Valkey Instances</a>.</li>
 </ul>
-<h3 id="announcement_13">Announcement</h3>
+<h3 id="announcement_14">Announcement</h3>
 <p>Config Connector version 1.145.0 is now available.</p>
-<h3 id="feature_32">Feature</h3>
+<h3 id="feature_35">Feature</h3>
 <p>New features:</p>
 <ul>
 <li>Added the <code>preview</code> command to the <code>config-connector</code> CLI. The <code>preview</code> command has been removed from the experimental <code>kompanion</code> tool.</li>
 </ul>
-<h3 id="fixed_12">Fixed</h3>
+<h3 id="fixed_13">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/dataform/dataformrepository"><code>DataformRepository</code></a></li>
@@ -4066,27 +4173,27 @@
 </ul>
 <hr />
 <h2 id="2026-01-27">2026-01-27</h2>
-<h3 id="feature_33">Feature</h3>
+<h3 id="feature_36">Feature</h3>
 <p><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6065">#6065</a>: Enabled Vertical Pod Autoscaler (VPA) support. You can enable VPA for Config Connector components via <code>ControllerResource</code> and <code>NamespacedControllerResource</code> to automatically adjust resource requests.</p>
-<h3 id="announcement_14">Announcement</h3>
+<h3 id="announcement_15">Announcement</h3>
 <p>Config Connector version 1.134.4 is now available.</p>
-<h3 id="fixed_13">Fixed</h3>
+<h3 id="fixed_14">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/6035">#6035</a>: Fixed an issue where <code>managedFields</code> metadata could be incorrectly attributed to the <code>status</code> subresource during spec updates, causing "Location must be set" errors.</li>
 </ul>
 <hr />
 <h2 id="2026-01-23">2026-01-23</h2>
-<h3 id="feature_34">Feature</h3>
+<h3 id="feature_37">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>AlloyDBInstance</code></li>
 <li>Added <code>spec.connectionPoolConfig</code> field.</li>
 <li>Added <code>status.connectionPoolConfig</code> field.</li>
 </ul>
-<h3 id="announcement_15">Announcement</h3>
+<h3 id="announcement_16">Announcement</h3>
 <p>Config Connector version 1.143.0 is now available.</p>
-<h3 id="feature_35">Feature</h3>
+<h3 id="feature_38">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>ArtifactRegistryRepository</code></li>
@@ -4094,12 +4201,12 @@
 <li><code>MemorystoreInstance</code></li>
 <li><code>PrivateCACAPool</code></li>
 </ul>
-<h3 id="feature_36">Feature</h3>
+<h3 id="feature_39">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>ParameterManagerParameter</code></li>
 </ul>
-<h3 id="feature_37">Feature</h3>
+<h3 id="feature_40">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li>Set <code>GOMEMLIMIT</code> for KCC workloads to improve memory management and stability.</li>
@@ -4126,7 +4233,7 @@
 <li><code>ArtifactRegistryRepository</code></li>
 <li><code>StorageBucket</code></li>
 </ul>
-<h3 id="fixed_14">Fixed</h3>
+<h3 id="fixed_15">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/issues/6221">Issue 6221</a>: <code>ComputeBackendService</code> can now correctly refer to <code>clientTLSPolicy</code>.</li>
@@ -4145,13 +4252,13 @@ support:</p>
 <ul>
 <li><code>TagsLocationTagBinding</code>: Now supports direct reconciliation.</li>
 </ul>
-<h3 id="feature_38">Feature</h3>
+<h3 id="feature_41">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li>IAM: Added support for <code>iam.cnrm.cloud.google.com/disable-dependent-services</code> annotation.</li>
 <li>Added support for Cilium cluster-wide network policy.</li>
 </ul>
-<h3 id="feature_39">Feature</h3>
+<h3 id="feature_42">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>AlloyDBInstance</code></li>
@@ -4161,7 +4268,7 @@ support:</p>
 <li><code>MonitoringDashboard</code></li>
 <li>Added support for <code>spec.charts[].dataSets[].timeSeriesQuery.opsAnalyticsQuery.sqlQueryRef</code></li>
 </ul>
-<h3 id="fixed_15">Fixed</h3>
+<h3 id="fixed_16">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><code>BatchJob</code>: Fixed a bug where the resource could not be created.</li>
@@ -4172,9 +4279,9 @@ support:</p>
 <li>Fixed a bug in the GitHub MCP server.</li>
 <li>Fixed a bug in the private cluster endpoint for <code>mockgcp</code>.</li>
 </ul>
-<h3 id="announcement_16">Announcement</h3>
+<h3 id="announcement_17">Announcement</h3>
 <p>Config Connector version 1.142.0 is now available.</p>
-<h3 id="feature_40">Feature</h3>
+<h3 id="feature_43">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>AlloyDBBackup</code></li>
@@ -4182,21 +4289,21 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-12-19">2025-12-19</h2>
-<h3 id="announcement_17">Announcement</h3>
+<h3 id="announcement_18">Announcement</h3>
 <p>Config Connector version 1.141.0 is now available.</p>
-<h3 id="feature_41">Feature</h3>
+<h3 id="feature_44">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li>Enabled Vertical Pod Autoscaler (VPA) support for Config Connector controllers.</li>
 <li>Added <code>verticalPodAutoscalerMode</code> field to <code>ConfigConnector</code> and <code>ConfigConnectorContext</code> resources.</li>
 </ul>
-<h3 id="fixed_16">Fixed</h3>
+<h3 id="fixed_17">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Fixed various issues in <code>observedState</code> handling for resources with reference fields.</li>
 <li>Fixed an issue where IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas.</li>
 </ul>
-<h3 id="feature_42">Feature</h3>
+<h3 id="feature_45">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li>
@@ -4216,15 +4323,15 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-12-15">2025-12-15</h2>
-<h3 id="announcement_18">Announcement</h3>
+<h3 id="announcement_19">Announcement</h3>
 <p>Config Connector version 1.140.2 is now available.</p>
-<h3 id="fixed_17">Fixed</h3>
+<h3 id="fixed_18">Fixed</h3>
 <ul>
 <li>Fixed a bug where the IAMPolicy and IAMPartialPolicy controllers would alphabetize the members field within the resource spec and write it back. This behavior can conflict with intent-based reconciliation from GitOps systems such as Config Sync, causing a loop of updates and potentially exhausting IAM read quotas. This issue affected versions 1.140.0 and has now been patched in version 1.140.2.</li>
 </ul>
 <hr />
 <h2 id="2025-12-04">2025-12-04</h2>
-<h3 id="announcement_19">Announcement</h3>
+<h3 id="announcement_20">Announcement</h3>
 <p>Config Connector version 1.140.0 is now available.</p>
 <h3 id="change_15">Change</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
@@ -4239,13 +4346,13 @@ support:</p>
 <ul>
 <li>Integrated Multi-Cluster Leader Election for improved reliability in multi-cluster setups.</li>
 </ul>
-<h3 id="feature_43">Feature</h3>
+<h3 id="feature_46">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>CertificateManagerCertificateIssuanceConfig</code></li>
 <li>Manage Certificate Manager certificate issuance configurations for automating certificate issuance.</li>
 </ul>
-<h3 id="feature_44">Feature</h3>
+<h3 id="feature_47">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>AlloyDBCluster</code></li>
@@ -4259,7 +4366,7 @@ support:</p>
 <li><code>RunJob</code></li>
 <li>Added <code>spec.template.template.containers.dependsOn</code> field.</li>
 </ul>
-<h3 id="fixed_18">Fixed</h3>
+<h3 id="fixed_19">Fixed</h3>
 <ul>
 <li>Fixed an issue where <code>BigQueryReservationAssignment</code> was not exposing <code>externalRef</code>.</li>
 <li>Fixed an issue with <code>CertificateManagerDNSAuthorization</code> API, Fuzzer and Mapper.</li>
@@ -4267,20 +4374,20 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-11-20">2025-11-20</h2>
-<h3 id="announcement_20">Announcement</h3>
+<h3 id="announcement_21">Announcement</h3>
 <p>Config Connector version 1.139.0 is now available.</p>
 <h3 id="change_17">Change</h3>
 <p>Reconciliation Improvements:</p>
 <ul>
 <li><code>IAM partial policy management</code></li>
 </ul>
-<h3 id="feature_45">Feature</h3>
+<h3 id="feature_48">Feature</h3>
 <p>New Features:</p>
 <ul>
 <li>The controller type is now reported at the start and end of reconciliation.</li>
 <li>Mockgcp now supports <code>iap oauth brands</code> and <code>bigtable materializedview</code>.</li>
 </ul>
-<h3 id="fixed_19">Fixed</h3>
+<h3 id="fixed_20">Fixed</h3>
 <ul>
 <li>Reduced the memory footprint of the recorder.</li>
 <li><code>SQLInstance</code>: Fixed an issue where empty <code>maintenanceVersion</code> patches were sent. The <code>settings</code> and <code>maintenanceVersion</code> fields are now unmanaged.</li>
@@ -4293,22 +4400,22 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-11-14">2025-11-14</h2>
-<h3 id="announcement_21">Announcement</h3>
+<h3 id="announcement_22">Announcement</h3>
 <p>Config Connector version 1.138.0 is now available.</p>
-<h3 id="feature_46">Feature</h3>
+<h3 id="feature_49">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><code>BackupDRBackupVault</code></li>
 <li><code>OrgPolicyCustomConstraint</code></li>
 </ul>
-<h3 id="fixed_20">Fixed</h3>
+<h3 id="fixed_21">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Fixed format validation issue in the <code>DataflowFlexTemplateJob</code> direct controller when the
   <code>spec.subnetworkRef.external</code> field contains full URL.</li>
 <li>Updated <code>status.observedGeneration</code> in <code>ConfigConnector</code> object.</li>
 </ul>
-<h3 id="feature_47">Feature</h3>
+<h3 id="feature_50">Feature</h3>
 <p>New Alpha Resources (Direct Reconciler):</p>
 <ul>
 <li><code>FirestoreBackupSchedule</code></li>
@@ -4321,9 +4428,9 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-10-16">2025-10-16</h2>
-<h3 id="announcement_22">Announcement</h3>
+<h3 id="announcement_23">Announcement</h3>
 <p>Config Connector version 1.137.0 is now available.</p>
-<h3 id="feature_48">Feature</h3>
+<h3 id="feature_51">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>BigtableMaterializedView</code>: Added <code>spec.sourceTableRef</code> and <code>spec.definition</code>.</li>
@@ -4340,7 +4447,7 @@ support:</p>
 <li>Improved reconciliation for <code>RunJob</code> with export support.</li>
 <li>Unified <code>ComputeTargetTCPProxy</code> direct API and controller.</li>
 </ul>
-<h3 id="fixed_21">Fixed</h3>
+<h3 id="fixed_22">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Fixed an issue where <code>ComputeBackendService</code> backends were not sorted.</li>
@@ -4369,7 +4476,7 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-10-07">2025-10-07</h2>
-<h3 id="fixed_22">Fixed</h3>
+<h3 id="fixed_23">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li>Added support for checking <code>etag</code> in spec for alpha resources.</li>
@@ -4382,7 +4489,7 @@ support:</p>
 <li>Fixed a bug in the mapper generator for OneOf if the input is not proto.Message.</li>
 <li>Fixed an import for refs in the same package in <code>controllerbuilder</code>.</li>
 </ul>
-<h3 id="announcement_23">Announcement</h3>
+<h3 id="announcement_24">Announcement</h3>
 <p>Config Connector version 1.136.1 is now available.</p>
 <h3 id="changed_4">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
@@ -4392,7 +4499,7 @@ support:</p>
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/clouddeploy/clouddeploydeliverypipeline"><code>CloudDeployDeliveryPipeline</code></a></li>
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
 </ul>
-<h3 id="feature_49">Feature</h3>
+<h3 id="feature_52">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/config-connector/docs/reference/resource-docs/composer/composerenvironment"><code>ComposerEnvironment</code></a></li>
@@ -4409,9 +4516,9 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-09-24">2025-09-24</h2>
-<h3 id="announcement_24">Announcement</h3>
+<h3 id="announcement_25">Announcement</h3>
 <p>Config Connector version 1.134.1 is now available.</p>
-<h3 id="fixed_23">Fixed</h3>
+<h3 id="fixed_24">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5230">#5230</a>: Fixed an issue that could lead to premature certificate rotation by ensuring errors are not swallowed when reading a Secret.</li>
@@ -4419,7 +4526,7 @@ support:</p>
 </ul>
 <hr />
 <h2 id="2025-09-22">2025-09-22</h2>
-<h3 id="announcement_25">Announcement</h3>
+<h3 id="announcement_26">Announcement</h3>
 <p>Config Connector version 1.135.0 is now available.</p>
 <h3 id="changed_6">Changed</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
@@ -4433,13 +4540,13 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <ul>
 <li><code>VMWareEngineExternalAddress</code></li>
 </ul>
-<h3 id="feature_50">Feature</h3>
+<h3 id="feature_53">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><code>AlloyDBCluster</code></li>
 <li>Added <code>spec.databaseVersion</code> field</li>
 </ul>
-<h3 id="fixed_24">Fixed</h3>
+<h3 id="fixed_25">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/5009">PR#5009</a>
@@ -4447,7 +4554,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-09-03">2025-09-03</h2>
-<h3 id="announcement_26">Announcement</h3>
+<h3 id="announcement_27">Announcement</h3>
 <p>Config Connector version 1.134.0 is now available.</p>
 <h3 id="changed_8">Changed</h3>
 <p>Improved reconciliation by migrating the following resources from the Terraform-based or DCL-based controller to the new direct controller. These resources are migrated automatically and you no longer need to apply the <code>opt-in</code> annotation to enable the direct controller:</p>
@@ -4460,7 +4567,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <ul>
 <li><code>ContainerCluster</code>: DNS endpoint is supported in ContainerCluster.</li>
 </ul>
-<h3 id="fixed_25">Fixed</h3>
+<h3 id="fixed_26">Fixed</h3>
 <p>Bug Fixes:</p>
 <ul>
 <li><code>ConfigConnectorContext</code>:</li>
@@ -4473,9 +4580,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-07-30">2025-07-30</h2>
-<h3 id="announcement_27">Announcement</h3>
+<h3 id="announcement_28">Announcement</h3>
 <p>Config Connector version 1.133.0 is now available.</p>
-<h3 id="feature_51">Feature</h3>
+<h3 id="feature_54">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/docs/reference/resource-docs/apigateway/apigatewayapi.md"><code>APIGatewayAPI</code></a></li>
@@ -4495,7 +4602,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li>Use the <code>alpha.cnrm.cloud.google.com/reconciler: direct</code> annotation on the <code>BigQueryTable</code> CR object to opt-in the direct controller.</li>
 <li>The direct controller also supports adding BigQueryDataPolicies directly to BigQueryTable columns within <code>spec.schema</code>.</li>
 </ul>
-<h3 id="fixed_26">Fixed</h3>
+<h3 id="fixed_27">Fixed</h3>
 <ul>
 <li><a href="https://github.com/GoogleCloudPlatform/k8s-config-connector/pull/4808">PR#4808</a>
   filtered out Kubernetes labels that are invalid for Google Cloud in the
@@ -4504,7 +4611,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-07-14">2025-07-14</h2>
-<h3 id="announcement_28">Announcement</h3>
+<h3 id="announcement_29">Announcement</h3>
 <p>Config Connector version 1.132.1 is now available.</p>
 <h3 id="changed_12">Changed</h3>
 <p>Reconciliation Improvements:</p>
@@ -4523,9 +4630,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 </ul>
 <hr />
 <h2 id="2025-06-10">2025-06-10</h2>
-<h3 id="announcement_29">Announcement</h3>
+<h3 id="announcement_30">Announcement</h3>
 <p>Config Connector version 1.132.0 is now available.</p>
-<h3 id="feature_52">Feature</h3>
+<h3 id="feature_55">Feature</h3>
 <p>New Beta Resources (Direct Reconciler):</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/speech/speechcustomclass"><code>SpeechCustomClass</code></a></li>
@@ -4542,7 +4649,7 @@ We migrated the following resources from the Terraform-based or DCL-based contro
 <li><code>SpeechRecognizer</code></li>
 <li><code>StorageAnywhereCache</code></li>
 </ul>
-<h3 id="feature_53">Feature</h3>
+<h3 id="feature_56">Feature</h3>
 <p>New Fields:</p>
 <ul>
 <li><a href="https://cloud.google.com/config-connector/docs/reference/resource-docs/spanner/spannerinstance">SpannerInstance</a>
@@ -4564,6 +4671,9 @@ We migrated the following resources from the Terraform-based or DCL-based contro
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#config-connector">Config Connector</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-13" class="nav-link">2026-10-13</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-06" class="nav-link">2026-10-06</a>
           </li>

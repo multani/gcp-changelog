@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-10-14T00:00:00+00:00</updated>
+  <updated>2026-10-16T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-10-16:change:0</id>
+    <published>2026-10-16T00:00:00+00:00</published>
+    <updated>2026-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For GKE Standard CPU node pools, GKE can now upgrade nodes by updating the existing
+Compute Engine VM in place, instead of deleting the VM and creating a new one.
+Because the node keeps its underlying VM, it also keeps its compute capacity
+during the upgrade. This lowers the risk that a node upgrade fails or stalls
+because resources aren't available.</p>
+<p>To enable this type of upgrade, use
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#max-unavailable">surge upgrades with the <code>maxUnavailable</code> field</a>
+set to a value greater than 0. For more details about when GKE reuses the same
+Compute Engine instance, including exceptions, see
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#max-unavailable">maxUnavailable: GKE makes an existing node unavailable to recreate it</a>.</p>
+<p>This change applies to all GKE versions. To opt out, contact <a href="https://docs.cloud.google.com/kubernetes-engine/docs/getting-support">Cloud Customer Care</a>.</p>]]></content>
+    <summary>GKE now offers in-place upgrades for CPU node pools in GKE Standard. This means nodes are updated by modifying the existing Compute Engine VM instead of replacing it. This reduces the risk of upgrade failures and ensures compute capacity is maintained during the process.</summary>
+    <title>Change: In-place GKE node upgrades</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

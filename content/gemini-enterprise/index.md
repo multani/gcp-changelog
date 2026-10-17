@@ -4,6 +4,18 @@
 
 ### Feature
 
+**Gemini Enterprise: Configure citations for custom MCP data stores**
+
+You can configure the `citation_mappings` parameter for custom Model Context
+Protocol (MCP) data stores using the REST API to display source citation chips
+when Gemini Enterprise answers questions using tools on your custom MCP server.
+This feature is generally available (GA).
+
+For more information, see [Configure citations for custom MCP data
+stores](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/configure-citations-for-custom-mcp-data-stores).
+
+### Feature
+
 **Gemini Enterprise: Connect workflows in Workflow Builder to
 Confluence Data Center and Jira Data Center**
 

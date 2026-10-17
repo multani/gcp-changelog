@@ -19,6 +19,27 @@ the request fails with a `RESERVATION_CAPACITY_LIMIT_EXCEEDED` error. For more
 information, see
 [Reservation capacity limit exceeded](https://docs.cloud.google.com/compute/docs/troubleshooting/troubleshooting-reservation-creation#reservation-capacity-limit-exceeded).
 
+### Feature
+
+**Generally available**: The storage-optimized Z4M machine series is generally
+available for Compute Engine. Powered by fifth generation Intel Emerald Rapids
+Xeon Scalable processors and Titanium offload processors, Z4M instances
+are purpose-built for workloads that require larger storage capacity, such as:
+
+* Parallel file systems to support AI/ML workloads
+* I/O intensive workloads such as SQL, NoSQL, and vector databases
+* AI/ML training and inference workloads such as checkpointing and distributed
+  Key-Value (KV) cache
+
+The Z4M machine series delivers up to 1,536 GB of memory and
+168,000 GiB of local Titanium SSD capacity. Z4M also supports up to
+400 Gbps of network bandwidth using two physical NICs. Z4M instances use
+Titanium and Cloud RDMA to help enable higher levels of
+networking performance, isolation, and security.
+
+For more information, see
+[Storage-optimized machine family](https://docs.cloud.google.com/compute/docs/storage-optimized-machines#z4m_series).
+
 ---
 ## 2026-10-14
 

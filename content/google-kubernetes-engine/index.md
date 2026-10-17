@@ -1,5 +1,24 @@
 # Google Kubernetes Engine
 
+## 2026-10-16
+
+### Change
+
+For GKE Standard CPU node pools, GKE can now upgrade nodes by updating the existing
+Compute Engine VM in place, instead of deleting the VM and creating a new one.
+Because the node keeps its underlying VM, it also keeps its compute capacity
+during the upgrade. This lowers the risk that a node upgrade fails or stalls
+because resources aren't available.
+
+To enable this type of upgrade, use
+[surge upgrades with the `maxUnavailable` field](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#max-unavailable)
+set to a value greater than 0. For more details about when GKE reuses the same
+Compute Engine instance, including exceptions, see
+[maxUnavailable: GKE makes an existing node unavailable to recreate it](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/node-pool-upgrade-strategies#max-unavailable).
+
+This change applies to all GKE versions. To opt out, contact [Cloud Customer Care](https://docs.cloud.google.com/kubernetes-engine/docs/getting-support).
+
+---
 ## 2026-10-14
 
 ### Change

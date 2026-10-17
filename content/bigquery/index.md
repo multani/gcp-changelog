@@ -1,5 +1,19 @@
 # BigQuery
 
+## 2026-10-16
+
+### Feature
+
+[Conversational analytics in BigQuery](https://docs.cloud.google.com/bigquery/docs/conversational-analytics)
+is now available in the following locations:
+
+* `northamerica-northeast1` (Montréal)
+* `northamerica-northeast2` (Toronto)
+
+For more information, see
+[Locations](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#locations).
+
+---
 ## 2026-10-15
 
 ### Feature

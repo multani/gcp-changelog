@@ -1,5 +1,104 @@
 # Google SecOps Marketplace
 
+## 2026-10-14
+
+### Change
+
+**SentinelOneV2**: Version 52.0
+
+* Fixed an issue to properly handle merged cases during threat synchronization
+  in the following job:
+
+  + **SentinelOne V2 - Sync Threats Job**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 26.0
+
+* Updated the **Folder Name** parameter to be optional, allowing searches across
+  the entire mailbox when no folder is specified in the following action:
+
+  + **Search Emails**
+* Improved S/MIME processing to support multi-layered encrypted, clear-signed,
+  and opaque-signed messages, and resolved an issue where the
+  **Bypass Signature Verification** parameter didn't bypass verification for
+  malformed or unsupported S/MIME signatures in the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**Okta**: Version 18.0
+
+* Fixed a pagination issue to retrieve all available roles and user groups in
+  the following actions:
+
+  + **List Roles**
+  + **List User Groups**
+
+### Change
+
+**Google Threat Intelligence**: Version 21.0
+
+* Improved issue ingestion to adaptively scan the configured
+  `Max Hours Backwards` time range and skip periods without new issues in the following
+  connector:
+
+  + **Google Threat Intelligence - ASM Issues Connector**
+* Added the **Anonymize Credential** parameter to optionally mask compromised
+  passwords with asterisks in ingested alerts and events in the following
+  connector:
+
+  + **Google Threat Intelligence - DTM Alerts Connector**
+
+### Change
+
+**Email Utilities**: Version 17.0
+
+* Resolved an issue causing entities to not be created when `Create Observed Entities`
+  was configured for specific entity types in the following action:
+
+  + **Parse Case Wall Email**
+
+### Change
+
+**Microsoft Graph Mail**: Version 49.0
+
+* Updated the **Folder Name** parameter to be optional, allowing searches across
+  the entire mailbox when no folder is specified in the following action:
+
+  + **Search Emails**
+* Improved S/MIME processing to support multi-layered encrypted, clear-signed,
+  and opaque-signed messages, and resolved an issue where the
+  **Bypass Signature Verification** parameter didn't bypass verification for
+  malformed or unsupported S/MIME signatures in the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Splunk**: Version 68.0
+
+* Added the **Alert Start Time Field** parameter to specify a custom field for
+  determining the alert start time in the following connector:
+
+  + **Splunk Query Connector**
+
+### Change
+
+**Google Chronicle**: Version 98.0
+
+* Added the **Use Cache** and **Cache TTL** parameters to enable caching of data table responses in the following actions:
+
+  + **Get Data Tables**
+  + **Is Value In Data Table**
+  + **Is Value In Data Table Async**
+* Fixed an issue where environment extraction only checked the first event in
+  multi-event alerts in the following connector:
+
+  + **Chronicle Alerts Connector**
+
+---
 ## 2026-10-07
 
 ### Change
@@ -14,7 +113,7 @@
 
 **Gitsync**: Version 53.0
 
-* (REGRESSIVE) Updated to support the latest Chronicle API.
+* (REGRESSIVE) **Integration**: Updated to support the latest Chronicle API.
 
   **Important:** Existing users **must** migrate their repository branch and
   re-export their content after updating.

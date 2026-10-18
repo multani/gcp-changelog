@@ -2,9 +2,205 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps Marketplace</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps Marketplace</subtitle>
-  <updated>2026-10-07T00:00:00+00:00</updated>
+  <updated>2026-10-14T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-marketplace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-marketplace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:0</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>SentinelOneV2</strong>: Version 52.0</p>
+<ul>
+<li>
+<p>Fixed an issue to properly handle merged cases during threat synchronization
+  in the following job:</p>
+</li>
+<li>
+<p><strong>SentinelOne V2 - Sync Threats Job</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 52.0 of SentinelOne V2 has been released. This update includes a fix for handling merged cases during threat synchronization, specifically addressing an issue in the SentinelOne V2 - Sync Threats Job.</summary>
+    <title>Change: SentinelOne V2 Update 52.0</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:1</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Microsoft Graph Mail Delegated</strong>: Version 26.0</p>
+<ul>
+<li>
+<p>Updated the <strong>Folder Name</strong> parameter to be optional, allowing searches across
+  the entire mailbox when no folder is specified in the following action:</p>
+</li>
+<li>
+<p><strong>Search Emails</strong></p>
+</li>
+<li>
+<p>Improved S/MIME processing to support multi-layered encrypted, clear-signed,
+  and opaque-signed messages, and resolved an issue where the
+  <strong>Bypass Signature Verification</strong> parameter didn't bypass verification for
+  malformed or unsupported S/MIME signatures in the following connector:</p>
+</li>
+<li>
+<p><strong>Microsoft Graph Mail Delegated Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 26.0 of Microsoft Graph Mail Delegated introduces flexibility by making the Folder Name parameter optional for the Search Emails action, enabling broader mailbox searches. Additionally, S/MIME processing has been enhanced to handle various encrypted message types and ensure the Bypass Signature Verification parameter functions correctly.</summary>
+    <title>Change: Microsoft Graph Mail Delegated v26.0 Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:2</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Okta</strong>: Version 18.0</p>
+<ul>
+<li>
+<p>Fixed a pagination issue to retrieve all available roles and user groups in
+  the following actions:</p>
+</li>
+<li>
+<p><strong>List Roles</strong></p>
+</li>
+<li><strong>List User Groups</strong></li>
+</ul>]]></content>
+    <summary>Okta version 18.0 has been released, addressing a pagination issue in the List Roles and List User Groups actions. This fix ensures that all available roles and user groups can be retrieved correctly.</summary>
+    <title>Change: Okta version 18.0 released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:3</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Threat Intelligence</strong>: Version 21.0</p>
+<ul>
+<li>
+<p>Improved issue ingestion to adaptively scan the configured
+  <code>Max Hours Backwards</code> time range and skip periods without new issues in the following
+  connector:</p>
+</li>
+<li>
+<p><strong>Google Threat Intelligence - ASM Issues Connector</strong></p>
+</li>
+<li>
+<p>Added the <strong>Anonymize Credential</strong> parameter to optionally mask compromised
+  passwords with asterisks in ingested alerts and events in the following
+  connector:</p>
+</li>
+<li>
+<p><strong>Google Threat Intelligence - DTM Alerts Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 21.0 of Google Threat Intelligence introduces enhancements to issue ingestion for the ASM Issues Connector, improving efficiency by adapting to the specified time range. Additionally, the DTM Alerts Connector now supports an 'Anonymize Credential' parameter to mask compromised passwords in alerts and events.</summary>
+    <title>Change: New Security Intelligence Features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:4</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email Utilities</strong>: Version 17.0</p>
+<ul>
+<li>
+<p>Resolved an issue causing entities to not be created when <code>Create Observed Entities</code>
+  was configured for specific entity types in the following action:</p>
+</li>
+<li>
+<p><strong>Parse Case Wall Email</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 17.0 of Email Utilities has been released, resolving an issue with entity creation in the Parse Case Wall Email action. This update ensures entities are now correctly created when configured for specific types.</summary>
+    <title>Change: Email Utilities Update Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:5</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Microsoft Graph Mail</strong>: Version 49.0</p>
+<ul>
+<li>
+<p>Updated the <strong>Folder Name</strong> parameter to be optional, allowing searches across
+  the entire mailbox when no folder is specified in the following action:</p>
+</li>
+<li>
+<p><strong>Search Emails</strong></p>
+</li>
+<li>
+<p>Improved S/MIME processing to support multi-layered encrypted, clear-signed,
+  and opaque-signed messages, and resolved an issue where the
+  <strong>Bypass Signature Verification</strong> parameter didn't bypass verification for
+  malformed or unsupported S/MIME signatures in the following connector:</p>
+</li>
+<li>
+<p><strong>Microsoft Graph Mail Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 49.0 of Microsoft Graph Mail introduces an optional 'Folder Name' parameter for the 'Search Emails' action, enabling broader mailbox searches. It also enhances S/MIME processing for greater compatibility with various encrypted and signed messages.</summary>
+    <title>Change: Microsoft Graph Mail Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:6</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Splunk</strong>: Version 68.0</p>
+<ul>
+<li>
+<p>Added the <strong>Alert Start Time Field</strong> parameter to specify a custom field for
+  determining the alert start time in the following connector:</p>
+</li>
+<li>
+<p><strong>Splunk Query Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 68.0 of the Splunk connector has been released. This update introduces a new parameter, 'Alert Start Time Field', allowing users to specify a custom field for determining alert start times within the Splunk Query Connector.</summary>
+    <title>Change: Splunk Connector Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:7</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Chronicle</strong>: Version 98.0</p>
+<ul>
+<li>
+<p>Added the <strong>Use Cache</strong> and <strong>Cache TTL</strong> parameters to enable caching of data table responses in the following actions:</p>
+</li>
+<li>
+<p><strong>Get Data Tables</strong></p>
+</li>
+<li><strong>Is Value In Data Table</strong></li>
+<li><strong>Is Value In Data Table Async</strong></li>
+<li>
+<p>Fixed an issue where environment extraction only checked the first event in
+  multi-event alerts in the following connector:</p>
+</li>
+<li>
+<p><strong>Chronicle Alerts Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 98.0 of Chronicle introduces caching for data table responses in several actions to improve performance. This update also resolves an issue with environment extraction in the Chronicle Alerts Connector, ensuring it correctly processes multi-event alerts.</summary>
+    <title>Change: Chronicle Version 98.0 Enhancements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -33,13 +229,13 @@
     <updated>2026-10-07T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Gitsync</strong>: Version 53.0</p>
 <ul>
-<li>(REGRESSIVE) Updated to support the latest Chronicle API.</li>
+<li>(REGRESSIVE) <strong>Integration</strong>: Updated to support the latest Chronicle API.</li>
 </ul>
 <p><strong>Important:</strong> Existing users <strong>must</strong> migrate their repository branch and
   re-export their content after updating.</p>
 <p>For instructions, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#chronicle-api-enabled-environment-migration">Chronicle API-enabled environment migration</a>.</p>]]></content>
-    <summary>Gitsync version 53.0 is now available, featuring support for the latest Chronicle API. Users are required to migrate their repository branch and re-export content after updating.</summary>
-    <title>Change: Gitsync version 53.0 released</title>
+    <summary>Gitsync version 53.0 is now available, with updated integration to support the latest Chronicle API. Existing users are required to migrate their repository branch and re-export their content after updating to ensure compatibility. Detailed migration instructions are provided in the documentation.</summary>
+    <title>Change: Gitsync v53.0 Update</title>
   </entry>
   <entry>
     <author>

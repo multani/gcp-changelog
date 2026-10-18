@@ -1,6 +1,72 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-10-14": [
+      {
+        "kind": "Change",
+        "content": "**SentinelOneV2**: Version 52.0\n\n* Fixed an issue to properly handle merged cases during threat synchronization\n  in the following job:\n\n  + **SentinelOne V2 - Sync Threats Job**",
+        "summary": {
+          "title": "SentinelOne V2 Update 52.0",
+          "summary": "Version 52.0 of SentinelOne V2 has been released. This update includes a fix for handling merged cases during threat synchronization, specifically addressing an issue in the SentinelOne V2 - Sync Threats Job."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail Delegated**: Version 26.0\n\n* Updated the **Folder Name** parameter to be optional, allowing searches across\n  the entire mailbox when no folder is specified in the following action:\n\n  + **Search Emails**\n* Improved S/MIME processing to support multi-layered encrypted, clear-signed,\n  and opaque-signed messages, and resolved an issue where the\n  **Bypass Signature Verification** parameter didn't bypass verification for\n  malformed or unsupported S/MIME signatures in the following connector:\n\n  + **Microsoft Graph Mail Delegated Connector**",
+        "summary": {
+          "title": "Microsoft Graph Mail Delegated v26.0 Update",
+          "summary": "Version 26.0 of Microsoft Graph Mail Delegated introduces flexibility by making the Folder Name parameter optional for the Search Emails action, enabling broader mailbox searches. Additionally, S/MIME processing has been enhanced to handle various encrypted message types and ensure the Bypass Signature Verification parameter functions correctly."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Okta**: Version 18.0\n\n* Fixed a pagination issue to retrieve all available roles and user groups in\n  the following actions:\n\n  + **List Roles**\n  + **List User Groups**",
+        "summary": {
+          "title": "Okta version 18.0 released",
+          "summary": "Okta version 18.0 has been released, addressing a pagination issue in the List Roles and List User Groups actions. This fix ensures that all available roles and user groups can be retrieved correctly."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Threat Intelligence**: Version 21.0\n\n* Improved issue ingestion to adaptively scan the configured\n  `Max Hours Backwards` time range and skip periods without new issues in the following\n  connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added the **Anonymize Credential** parameter to optionally mask compromised\n  passwords with asterisks in ingested alerts and events in the following\n  connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
+        "summary": {
+          "title": "New Security Intelligence Features",
+          "summary": "Version 21.0 of Google Threat Intelligence introduces enhancements to issue ingestion for the ASM Issues Connector, improving efficiency by adapting to the specified time range. Additionally, the DTM Alerts Connector now supports an 'Anonymize Credential' parameter to mask compromised passwords in alerts and events."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Email Utilities**: Version 17.0\n\n* Resolved an issue causing entities to not be created when `Create Observed Entities`\n  was configured for specific entity types in the following action:\n\n  + **Parse Case Wall Email**",
+        "summary": {
+          "title": "Email Utilities Update Released",
+          "summary": "Version 17.0 of Email Utilities has been released, resolving an issue with entity creation in the Parse Case Wall Email action. This update ensures entities are now correctly created when configured for specific types."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail**: Version 49.0\n\n* Updated the **Folder Name** parameter to be optional, allowing searches across\n  the entire mailbox when no folder is specified in the following action:\n\n  + **Search Emails**\n* Improved S/MIME processing to support multi-layered encrypted, clear-signed,\n  and opaque-signed messages, and resolved an issue where the\n  **Bypass Signature Verification** parameter didn't bypass verification for\n  malformed or unsupported S/MIME signatures in the following connector:\n\n  + **Microsoft Graph Mail Connector**",
+        "summary": {
+          "title": "Microsoft Graph Mail Update",
+          "summary": "Version 49.0 of Microsoft Graph Mail introduces an optional 'Folder Name' parameter for the 'Search Emails' action, enabling broader mailbox searches. It also enhances S/MIME processing for greater compatibility with various encrypted and signed messages."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Splunk**: Version 68.0\n\n* Added the **Alert Start Time Field** parameter to specify a custom field for\n  determining the alert start time in the following connector:\n\n  + **Splunk Query Connector**",
+        "summary": {
+          "title": "Splunk Connector Update",
+          "summary": "Version 68.0 of the Splunk connector has been released. This update introduces a new parameter, 'Alert Start Time Field', allowing users to specify a custom field for determining alert start times within the Splunk Query Connector."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Chronicle**: Version 98.0\n\n* Added the **Use Cache** and **Cache TTL** parameters to enable caching of data table responses in the following actions:\n\n  + **Get Data Tables**\n  + **Is Value In Data Table**\n  + **Is Value In Data Table Async**\n* Fixed an issue where environment extraction only checked the first event in\n  multi-event alerts in the following connector:\n\n  + **Chronicle Alerts Connector**",
+        "summary": {
+          "title": "Chronicle Version 98.0 Enhancements",
+          "summary": "Version 98.0 of Chronicle introduces caching for data table responses in several actions to improve performance. This update also resolves an issue with environment extraction in the Chronicle Alerts Connector, ensuring it correctly processes multi-event alerts."
+        }
+      }
+    ],
     "2026-10-07": [
       {
         "kind": "Change",
@@ -12,10 +78,10 @@
       },
       {
         "kind": "Change",
-        "content": "**Gitsync**: Version 53.0\n\n* (REGRESSIVE) Updated to support the latest Chronicle API.\n\n  **Important:** Existing users **must** migrate their repository branch and\n  re-export their content after updating.\n\n  For instructions, see [Chronicle API-enabled environment migration](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#chronicle-api-enabled-environment-migration).",
+        "content": "**Gitsync**: Version 53.0\n\n* (REGRESSIVE) **Integration**: Updated to support the latest Chronicle API.\n\n  **Important:** Existing users **must** migrate their repository branch and\n  re-export their content after updating.\n\n  For instructions, see [Chronicle API-enabled environment migration](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#chronicle-api-enabled-environment-migration).",
         "summary": {
-          "title": "Gitsync version 53.0 released",
-          "summary": "Gitsync version 53.0 is now available, featuring support for the latest Chronicle API. Users are required to migrate their repository branch and re-export content after updating."
+          "title": "Gitsync v53.0 Update",
+          "summary": "Gitsync version 53.0 is now available, with updated integration to support the latest Chronicle API. Existing users are required to migrate their repository branch and re-export their content after updating to ensure compatibility. Detailed migration instructions are provided in the documentation."
         }
       }
     ],

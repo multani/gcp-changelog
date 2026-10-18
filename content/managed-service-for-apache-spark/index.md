@@ -1,5 +1,18 @@
 # Managed Service for Apache Spark
 
+## 2026-10-12
+
+### Announcement
+
+New [**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine) subminor cluster image versions](https://docs.cloud.google.com/managed-spark/docs/concepts/versioning/image-version-lists#supported-dataproc-image-versions):
+
+* 2.1.120-debian11, 2.1.120-rocky8, 2.1.120-ubuntu20, 2.1.120-ubuntu20-arm
+
+### Fixed
+
+**Managed Service for Apache Spark** (formerly Dataproc on Compute Engine): A bug has been fixed to add-back py4j library in image version 2.1.120.
+
+---
 ## 2026-10-05
 
 ### Change

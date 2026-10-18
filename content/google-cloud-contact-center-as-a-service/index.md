@@ -1,5 +1,66 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-10-16
+
+### Announcement
+
+**Advanced reporting dashboards prerelease notes 6.16**
+
+Here are the pre-release notes for updates to the advanced reporting dashboards
+and other reporting in CCAI Platform. When we release these updates, we
+expect the new capabilities to be as shown here.
+
+**Important:** The next version of the advanced reporting dashboards could be
+greater than 6.16.
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where the **Agent Performance** tile on the **Real-time Agent
+  Monitoring** dashboard executed redundant database queries during
+  auto-refreshes.
+* Updated advanced reporting filter prompts so they behave consistently across
+  all dashboards and display the complete list of configured values:
+
+  + List-backed filters now open directly into a searchable list on the
+    first click.
+  + Dropdowns that previously returned empty or partial lists now display
+    the full configured list, including **Agent Name**, **Agent Email**,
+    **Agent Custom ID**, **Agent Teams**, **Location**, **Language**,
+    **Answered By**, and **Projection Result**.
+  + **Disposition Codes** and **Disposition List** filters now display the
+    codes configured for your instance.
+  + **Agent Teams** and **Team Name** filters now match agents in any of
+    their assigned teams.
+  + Configuration renames (**Queue Group**, **Queue**, **Agent Team**,
+    **Disposition Code**, **Location**, **Role**, and **Skill**) now appear
+    in filter dropdowns within 30 minutes instead of up to six hours.
+  + The **Projecting** filter on the live **Queued** dashboards is now
+    clearable, so you can reset it to show all queued interactions, and
+    offers only **Yes**.
+  + Fields without a predefined list of values (such as consumer phone
+    numbers and ID fields) now display a plain text box with an operator so
+    you can type a value directly.
+  + **Call Status** and **Deflection Type** filters now display values that
+    existed in the data but were previously missing from the list.
+  + **Channel** now reports a value on the live **Voice** and **Chat**
+    dashboards, and on historical **Chat** dashboards, for interaction
+    types that previously appeared blank (including internal,
+    API-initiated, campaign, UCaaS, callback, and extension calls).
+  + On the **Agent Audit** dashboard, the **Change Details** table now
+    displays its timestamp column and sorts it correctly.
+  + Consumer phone number filters now accept a single value instead of
+    multiple values. Saved filters or links that pass multiple numbers
+    apply only one.
+  + On the **Missed Interactions** dashboards, the **Activity Status**
+    column and filter are renamed to **Projection Result**.
+  + Actor values describing who answered, ended, or disconnected an
+    interaction are now standardized as **Human Agent**, **Virtual Agent**,
+    **End User**, and **System**. Saved filters, Looks, and schedules that
+    used the previous wording must be reselected.
+
+---
 ## 2026-10-13
 
 ### Announcement

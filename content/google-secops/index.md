@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-10-18
+
+### Feature
+
+**Specify whether to reopen closed cases when the grouping is by Source Grouping Identifier**
+
+You can now specify whether Google SecOps reopens closed cases when grouping SOAR alerts by **Source Grouping Identifier**. When the option is enabled and a new alert is received with a source grouping identifier of a case that was previously closed in Google SecOps, then Google SecOps reopens the case. For more information, see [Configure alert grouping](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-alerts/alert-grouping-mechanism-admin).
+
+---
 ## 2026-10-12
 
 ### Feature

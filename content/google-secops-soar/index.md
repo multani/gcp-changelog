@@ -1,5 +1,33 @@
 # Google SecOps SOAR
 
+## 2026-10-18
+
+### Announcement
+
+Release 6.3.103 is being rolled out to the first phase of regions as listed
+[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).
+
+### Feature
+
+**Specify whether to reopen closed cases when the grouping is by Source Grouping Identifier**
+
+You can now specify whether Google SecOps reopens closed cases when grouping alerts by **Source Grouping Identifier**. When the option is enabled and a new alert is received with a source grouping identifier of a case that was previously closed in Google SecOps, then Google SecOps reopens the case. For more information, see [Configure alert grouping](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-alerts/alert-grouping-mechanism-admin).
+
+### Deprecated
+
+**Deprecation of the ListCaseEvents API endpoint**
+
+Effective October 12, 2026, the ListCaseEvents API endpoint is deprecated. You should use the [ListCaseEvidenceData](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.cases.caseEvidenceDatas/list) API endpoint instead.
+
+---
+## 2026-10-17
+
+### Announcement
+
+[Release 6.3.102](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_11_2026) is now
+available for all regions.
+
+---
 ## 2026-10-12
 
 ### Announcement

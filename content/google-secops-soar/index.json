@@ -1,6 +1,42 @@
 {
   "name": "Google SecOps SOAR",
   "entries": {
+    "2026-10-18": [
+      {
+        "kind": "Announcement",
+        "content": "Release 6.3.103 is being rolled out to the first phase of regions as listed\n[here](https://docs.cloud.google.com/chronicle/docs/soar/overview-and-introduction/soar-gradual-release).",
+        "summary": {
+          "title": "New Chronicle Release Available",
+          "summary": "Release 6.3.103 is now rolling out to the initial set of regions. This update brings new features and improvements to the platform. More information about the gradual rollout and specific regions can be found in the documentation."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Specify whether to reopen closed cases when the grouping is by Source Grouping Identifier**\n\nYou can now specify whether Google SecOps reopens closed cases when grouping alerts by **Source Grouping Identifier**. When the option is enabled and a new alert is received with a source grouping identifier of a case that was previously closed in Google SecOps, then Google SecOps reopens the case. For more information, see [Configure alert grouping](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-alerts/alert-grouping-mechanism-admin).",
+        "summary": {
+          "title": "Reopen closed cases by source group",
+          "summary": "You can now control whether Google SecOps reopens closed cases when alerts are grouped by Source Grouping Identifier. If enabled, new alerts with a previously closed identifier will reopen the case."
+        }
+      },
+      {
+        "kind": "Deprecated",
+        "content": "**Deprecation of the ListCaseEvents API endpoint**\n\nEffective October 12, 2026, the ListCaseEvents API endpoint is deprecated. You should use the [ListCaseEvidenceData](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.cases.caseEvidenceDatas/list) API endpoint instead.",
+        "summary": {
+          "title": "ListCaseEvents API Deprecated",
+          "summary": "The ListCaseEvents API endpoint will be deprecated on October 12, 2026. Please transition to using the ListCaseEvidenceData API endpoint for your needs."
+        }
+      }
+    ],
+    "2026-10-17": [
+      {
+        "kind": "Announcement",
+        "content": "[Release 6.3.102](https://docs.cloud.google.com/chronicle/docs/soar/release-notes#October_11_2026) is now\navailable for all regions.",
+        "summary": {
+          "title": "New Release Available",
+          "summary": "Version 6.3.102 has been released and is now available in all regions. This update brings improvements and new features to the platform."
+        }
+      }
+    ],
     "2026-10-12": [
       {
         "kind": "Announcement",

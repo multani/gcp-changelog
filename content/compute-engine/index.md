@@ -1,5 +1,16 @@
 # Compute Engine
 
+## 2026-10-19
+
+### Feature
+
+**Generally available**: To prevent data loss or corruption when you stop or
+delete a Compute Engine instance, you can enable graceful shutdown. This
+setting gives the guest OS up to six hours to finish running tasks. For more
+information, see
+[About graceful shutdown](https://docs.cloud.google.com/compute/docs/instances/graceful-shutdown-overview).
+
+---
 ## 2026-10-15
 
 ### Feature

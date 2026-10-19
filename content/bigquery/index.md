@@ -25,17 +25,18 @@ available](https://cloud.google.com/products/#product-launch-stages) (GA).
 
 ### Feature
 
-You can now use [column aliases](https://docs.cloud.google.com/bigquery/docs/column-aliases) in
+You can now use [reusable column aliases](https://docs.cloud.google.com/bigquery/docs/column-aliases) in
 GoogleSQL. This feature lets you define an alias for an expression in
 the `SELECT` clause of a SQL query and immediately reference that alias within
 the same `SELECT` list or in the `WHERE` clause of the same query block.
 
-Column aliases also streamline the migration of workloads from other data
-warehouses such as Snowflake and Teradata, by supporting
+Reusable column aliases also streamline the migration of workloads from other
+data warehouses such as Snowflake and Teradata, by supporting
 their syntax.
 
 This feature is [generally available](https://cloud.google.com/products#product-launch-stages),
-and is opt-in only. To use column aliases, you must first [enable the feature](https://docs.cloud.google.com/bigquery/docs/column-aliases#enabling_column_aliases).
+and is opt-in only. To use reusable column aliases, you must first [enable the
+feature](https://docs.cloud.google.com/bigquery/docs/column-aliases#enabling_column_aliases).
 
 ### Feature
 

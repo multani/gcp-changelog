@@ -1,5 +1,67 @@
 # Agent Platform Workbench
 
+## 2026-10-19
+
+### Change
+
+
+
+### 20261018.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed an issue where Jupyter Server terminal configuration could overwrite the Dataproc plugin server extension setting or fail to apply the terminal disable setting on container startup.
+
+### Change
+
+
+
+### 20261018.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed an issue where Jupyter Server terminal configuration could overwrite the Dataproc plugin server extension setting or fail to apply the terminal disable setting on container startup.
+
+---
+## 2026-10-13
+
+### Change
+
+
+
+### 20261013-2230-rc0 Release
+
+
+
+### Change
+
+
+
+### 20261013-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+---
 ## 2026-10-12
 
 ### Change

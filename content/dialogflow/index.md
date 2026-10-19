@@ -1,5 +1,12 @@
 # Dialogflow
 
+## 2026-10-19
+
+### Feature
+
+**Dialogflow CX**: You can set the `telephony_disable_voice_processing` session parameter to `true` to turn off speech recognition and accept only DTMF input for the rest of the session. This helps in noisy environments, where speech recognition can transcribe background noise as end-user input. See [Turn off speech recognition for telephony](https://docs.cloud.google.com/dialogflow/cx/docs/concept/parameter#session-disable-voice).
+
+---
 ## 2026-10-16
 
 ### Feature

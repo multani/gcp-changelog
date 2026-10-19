@@ -1,5 +1,22 @@
 # API Gateway
 
+## 2026-10-07
+
+### Deprecated
+
+**Negative backend deadlines are deprecated**
+
+A negative backend `deadline` in an OpenAPI 2.0
+`x-google-backend` extension or a gRPC `BackendRule` uses
+the default deadline, the same as `0`. Negative values there are
+deprecated and will be rejected in a future release; until then, creating an API
+config with one returns a warning in the operation metadata. OpenAPI 3.x backends
+already reject a negative deadline. To use the default, omit the field or set it
+to `0`.
+
+For more information, see [OpenAPI 2.0 extensions](https://docs.cloud.google.com/api-gateway/docs/oasv2-extensions#deadline) and [OpenAPI 3.x extensions](https://docs.cloud.google.com/api-gateway/docs/oasv3-extensions).
+
+---
 ## 2026-09-30
 
 ### Feature

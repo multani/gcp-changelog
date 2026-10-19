@@ -1,5 +1,15 @@
 # Cloud Tasks
 
+## 2026-10-19
+
+### Change
+
+Cloud Tasks is available in the following [locations](https://docs.cloud.google.com/tasks/docs/locations):
+
+* `asia-south2` (Delhi, India)
+* `northamerica-northeast2` (Toronto, Canada)
+
+---
 ## 2026-09-30
 
 ### Feature

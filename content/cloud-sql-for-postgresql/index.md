@@ -1,5 +1,18 @@
 # Cloud SQL for PostgreSQL
 
+## 2026-10-16
+
+### Change
+
+Cloud SQL for PostgreSQL now supports enabling [Managed Connection Pooling](https://docs.cloud.google.com/sql/docs/postgres/managed-connection-pooling)
+on existing [Private Service Connect](https://docs.cloud.google.com/sql/docs/postgres/about-private-service-connect)
+instances. Previously, Cloud SQL supported enabling Managed Connection Pooling only
+on new instances using Private Service Connect.
+
+For more information, see [Managed Connection Pooling overview](https://docs.cloud.google.com/sql/docs/postgres/managed-connection-pooling)
+and [Configure Managed Connection Pooling](https://docs.cloud.google.com/sql/docs/postgres/configure-mcp).
+
+---
 ## 2026-10-14
 
 ### Issue

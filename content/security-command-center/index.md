@@ -1,5 +1,17 @@
 # Security Command Center
 
+## 2026-10-19
+
+### Feature
+
+You can view issues created by Correlated Threats and security
+graph rules at the folder or project level. On the **Issues** page, you can
+filter all issues by service type, project number, and folder ID.
+For more information, see [Issues overview](https://docs.cloud.google.com/security-command-center/docs/issues-overview).
+
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-15
 
 ### Feature

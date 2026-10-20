@@ -1,5 +1,15 @@
 # Firestore
 
+## 2026-10-19
+
+### Feature
+
+[Text search](https://docs.cloud.google.com/firestore/native/docs/text-search)
+and
+[Geospatial search](https://docs.cloud.google.com/firestore/native/docs/geospatial-search)
+are generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-09-04
 
 ### Feature

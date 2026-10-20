@@ -1,5 +1,159 @@
 # Container Optimized OS
 
+## 2026-10-19
+
+### Change
+
+
+
+### cos-129-19506-549-22
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.112](https://cos.googlesource.com/third_party/kernel/+/f4481ae514bfb44391addf1ce0dc85a372e5023f ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.549.22/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for loading the pci-pf-stub module.
+
+### Fixed
+
+Fix docker cp failure when copying to/from containers with nested bind mounts.
+
+### Fixed
+
+Upgraded app-editors/vim to v9.2.1152, Upgraded app-editors/vim-core to v9.2.1152.
+
+### Security
+
+Fix CVE-2026-19445 by upgrading to python 3.11.17.
+
+### Security
+
+Fix CVE-2026-82474 on app-admin/sudo
+
+### Security
+
+Fixed CVE-2026-5435 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-99999 in the Linux kernel.
+
+### Security
+
+Upgraded dev-lang/python to v3.11.16. This fixes CVE-2026-6100.
+
+### Change
+
+
+
+### cos-125-19216-739-16
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.112](https://cos.googlesource.com/third_party/kernel/+/d70e5f8042c76c3a2b0c640806692e13ddae3ecf ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.739.16/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Added support for loading the pci-pf-stub module.
+
+### Fixed
+
+Fix docker cp failure when copying to/from containers with nested bind mounts.
+
+### Fixed
+
+Upgraded app-editors/vim to v9.2.1125, Upgraded app-editors/vim-core to v9.2.1125.
+
+### Security
+
+Fix CVE-2026-19445 by upgrading to python 3.11.17.
+
+### Security
+
+Fixed CVE-2026-5435 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-99999 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.epoll.max\_user\_watches: 1808517 -> 1808562
+* Changed: fs.fanotify.max\_user\_marks: 68412 -> 68416
+* Changed: fs.inotify.max\_user\_watches: 64189 -> 64192
+* Changed: kernel.threads-max: 63178 -> 63183
+* Changed: net.ipv4.tcp\_mem: 94017 125357 188034 -> 94020 125361 188040
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188040 250722 376080
+* Changed: user.max\_cgroup\_namespaces: 31589 -> 31591
+* Changed: user.max\_fanotify\_marks: 68412 -> 68416
+* Changed: user.max\_inotify\_watches: 64189 -> 64192
+* Changed: user.max\_ipc\_namespaces: 31589 -> 31591
+* Changed: user.max\_mnt\_namespaces: 31589 -> 31591
+* Changed: user.max\_net\_namespaces: 31589 -> 31591
+* Changed: user.max\_pid\_namespaces: 31589 -> 31591
+* Changed: user.max\_time\_namespaces: 31589 -> 31591
+* Changed: user.max\_user\_namespaces: 31589 -> 31591
+* Changed: user.max\_uts\_namespaces: 31589 -> 31591
+
+### Change
+
+
+
+### cos-121-18867-638-13
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.158](https://cos.googlesource.com/third_party/kernel/+/3220615da162e0194ca698feb342f7985fdc2709 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.638.13/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fix docker cp failure when copying to/from containers with nested bind mounts.
+
+### Fixed
+
+Upgraded app-editors/vim to v9.2.1152, Upgraded app-editors/vim-core to v9.2.1152.
+
+### Security
+
+Fixed CVE-2026-5435 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-82474 in app-admin/sudo.
+
+### Security
+
+Fixed CVE-2026-99999 in the Linux kernel.
+
+### Security
+
+Upgraded dev-lang/python to v3.11.17. This fixes CVE-2026-19445.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.epoll.max\_user\_watches: 1809007 -> 1809051
+* Changed: kernel.threads-max: 63199 -> 63204
+* Changed: net.ipv4.tcp\_mem: 94041 125391 188082 -> 94044 125395 188088
+* Changed: net.ipv4.udp\_mem: 188085 250783 376170 -> 188091 250790 376182
+* Changed: user.max\_cgroup\_namespaces: 31599 -> 31602
+* Changed: user.max\_ipc\_namespaces: 31599 -> 31602
+* Changed: user.max\_mnt\_namespaces: 31599 -> 31602
+* Changed: user.max\_net\_namespaces: 31599 -> 31602
+* Changed: user.max\_pid\_namespaces: 31599 -> 31602
+* Changed: user.max\_time\_namespaces: 31599 -> 31602
+* Changed: user.max\_user\_namespaces: 31599 -> 31602
+* Changed: user.max\_uts\_namespaces: 31599 -> 31602
+
+---
 ## 2026-10-12
 
 ### Change

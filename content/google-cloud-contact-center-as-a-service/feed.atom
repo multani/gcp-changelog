@@ -2,120 +2,31 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-10-16T00:00:00+00:00</updated>
+  <updated>2026-10-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-16:announcement:0</id>
-    <published>2026-10-16T00:00:00+00:00</published>
-    <updated>2026-10-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards prerelease notes 6.16</strong></p>
-<p>Here are the pre-release notes for updates to the advanced reporting dashboards
-and other reporting in CCAI Platform. When we release these updates, we
-expect the new capabilities to be as shown here.</p>
-<p><strong>Important:</strong> The next version of the advanced reporting dashboards could be
-greater than 6.16.</p>]]></content>
-    <summary>Pre-release notes for updates to advanced reporting dashboards and other reporting features in CCAI Platform are now available. These updates are expected to introduce new capabilities. Note that the version number for these advanced reporting dashboards might exceed 6.16.</summary>
-    <title>Announcement: New Reporting Features Available</title>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-19:announcement:0</id>
+    <published>2026-10-19T00:00:00+00:00</published>
+    <updated>2026-10-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS 6.22</strong></p>
+<p>We've released version 6.22 of Google Cloud CCaaS.</p>
+<p>The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules">Deployment
+schedules</a>.</p>]]></content>
+    <summary>Version 6.22 of our CCaaS solution has been released. The specific update timing for your instance will vary based on your chosen deployment schedule.</summary>
+    <title>Announcement: CCaaS 6.22 Update Released</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-16:fixed:1</id>
-    <published>2026-10-16T00:00:00+00:00</published>
-    <updated>2026-10-16T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
-<ul>
-<li>Fixed an issue where the <strong>Agent Performance</strong> tile on the <strong>Real-time Agent
-  Monitoring</strong> dashboard executed redundant database queries during
-  auto-refreshes.</li>
-<li>
-<p>Updated advanced reporting filter prompts so they behave consistently across
-  all dashboards and display the complete list of configured values:</p>
-</li>
-<li>
-<p>List-backed filters now open directly into a searchable list on the
-    first click.</p>
-</li>
-<li>Dropdowns that previously returned empty or partial lists now display
-    the full configured list, including <strong>Agent Name</strong>, <strong>Agent Email</strong>,
-    <strong>Agent Custom ID</strong>, <strong>Agent Teams</strong>, <strong>Location</strong>, <strong>Language</strong>,
-    <strong>Answered By</strong>, and <strong>Projection Result</strong>.</li>
-<li><strong>Disposition Codes</strong> and <strong>Disposition List</strong> filters now display the
-    codes configured for your instance.</li>
-<li><strong>Agent Teams</strong> and <strong>Team Name</strong> filters now match agents in any of
-    their assigned teams.</li>
-<li>Configuration renames (<strong>Queue Group</strong>, <strong>Queue</strong>, <strong>Agent Team</strong>,
-    <strong>Disposition Code</strong>, <strong>Location</strong>, <strong>Role</strong>, and <strong>Skill</strong>) now appear
-    in filter dropdowns within 30 minutes instead of up to six hours.</li>
-<li>The <strong>Projecting</strong> filter on the live <strong>Queued</strong> dashboards is now
-    clearable, so you can reset it to show all queued interactions, and
-    offers only <strong>Yes</strong>.</li>
-<li>Fields without a predefined list of values (such as consumer phone
-    numbers and ID fields) now display a plain text box with an operator so
-    you can type a value directly.</li>
-<li><strong>Call Status</strong> and <strong>Deflection Type</strong> filters now display values that
-    existed in the data but were previously missing from the list.</li>
-<li><strong>Channel</strong> now reports a value on the live <strong>Voice</strong> and <strong>Chat</strong>
-    dashboards, and on historical <strong>Chat</strong> dashboards, for interaction
-    types that previously appeared blank (including internal,
-    API-initiated, campaign, UCaaS, callback, and extension calls).</li>
-<li>On the <strong>Agent Audit</strong> dashboard, the <strong>Change Details</strong> table now
-    displays its timestamp column and sorts it correctly.</li>
-<li>Consumer phone number filters now accept a single value instead of
-    multiple values. Saved filters or links that pass multiple numbers
-    apply only one.</li>
-<li>On the <strong>Missed Interactions</strong> dashboards, the <strong>Activity Status</strong>
-    column and filter are renamed to <strong>Projection Result</strong>.</li>
-<li>Actor values describing who answered, ended, or disconnected an
-    interaction are now standardized as <strong>Human Agent</strong>, <strong>Virtual Agent</strong>,
-    <strong>End User</strong>, and <strong>System</strong>. Saved filters, Looks, and schedules that
-    used the previous wording must be reselected.</li>
-</ul>]]></content>
-    <summary>This release resolves issues with redundant database queries in agent performance monitoring and enhances the consistency and functionality of advanced reporting filters across all dashboards. Filter prompts are now more accurate, searchable, and display complete configured values, improving the user experience for data analysis.</summary>
-    <title>Fixed: Improvements to Agent Monitoring and Reporting</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:announcement:0</id>
-    <published>2026-10-13T00:00:00+00:00</published>
-    <updated>2026-10-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes 6.22</strong></p>
-<p>Here are the pre-release notes for what we expect to be the next version
-of Google Cloud CCaaS. When we release this version, we expect the new
-capabilities to be as shown here.</p>]]></content>
-    <summary>This document outlines the upcoming capabilities in the next version of Google Cloud CCaaS, version 6.22. These notes provide a preview of new features and enhancements expected upon release.</summary>
-    <title>Announcement: Cloud CCaaS Pre-release Notes 6.22</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:feature:1</id>
-    <published>2026-10-13T00:00:00+00:00</published>
-    <updated>2026-10-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Campaign-based scheduled callbacks</strong></p>
-<p>Agents can now schedule a callback during an outbound campaign call. The
-callback belongs to the campaign, not to an individual agent, and the dialer
-calls the consumer back in the time slot they chose. Administrators set slot
-length, capacity, booking window, and expiry for each campaign, and supervisors
-can track upcoming, completed, and expired callbacks from the campaign list.</p>]]></content>
-    <summary>Agents can now schedule callbacks directly within outbound campaign calls. These callbacks are campaign-owned, allowing the dialer to reach consumers at their chosen time. Administrators can configure callback slot settings, and supervisors can monitor callback status.</summary>
-    <title>Feature: Schedule callbacks during outbound campaigns</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:feature:2</id>
-    <published>2026-10-13T00:00:00+00:00</published>
-    <updated>2026-10-13T00:00:00+00:00</updated>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-19:feature:1</id>
+    <published>2026-10-19T00:00:00+00:00</published>
+    <updated>2026-10-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Transcript separation for chat</strong></p>
 <p>You can now configure Google Cloud CCaaS to deliver a separate transcript file
 for each participant segment in a chat, instead of one combined transcript per
@@ -125,17 +36,37 @@ transcript files for each agent, virtual agent, or supervisor who joins the
 chat—helpful for identifying which participant handled each part of a
 transferred or escalated conversation. Your consumers still receive a single,
 full-chat transcript regardless of this setting.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/chat-transcripts-and-chat-history">Chat transcripts and chat
+history</a>.</p>
 <p>By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.</p>]]></content>
-    <summary>New feature allows separate transcript files for each participant segment in a chat, aiding in tracking contributions during transfers or escalations. Contact support to enable this functionality.</summary>
+    <summary>You can now choose to receive separate transcript files for each participant in a chat session, making it easier to track individual contributions in complex conversations. This setting is available under Settings &gt; Chat &gt; Chat Transcript. Contact support to enable this feature.</summary>
     <title>Feature: Chat Transcript Separation</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:fixed:3</id>
-    <published>2026-10-13T00:00:00+00:00</published>
-    <updated>2026-10-13T00:00:00+00:00</updated>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-19:feature:2</id>
+    <published>2026-10-19T00:00:00+00:00</published>
+    <updated>2026-10-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Campaign-based scheduled callbacks</strong></p>
+<p>Agents can now schedule a callback during an outbound campaign call. The
+callback belongs to the campaign, not to an individual agent, and the dialer
+calls the consumer back in the time slot they chose. Administrators set slot
+length, capacity, booking window, and expiry for each campaign, and supervisors
+can track upcoming, completed, and expired callbacks from the campaign list.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-management">Campaign
+management</a>.</p>]]></content>
+    <summary>Agents can now schedule callbacks for consumers during outbound campaign calls. These callbacks are campaign-specific and are automatically dialed back to the consumer within their chosen time slot. Administrators can configure various parameters for these callbacks, and supervisors can monitor their status.</summary>
+    <title>Feature: Scheduled Callbacks for Campaigns</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-19:fixed:3</id>
+    <published>2026-10-19T00:00:00+00:00</published>
+    <updated>2026-10-19T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
 <ul>
 <li>Fixed an issue where direct access point (DAP) greeting messages played
@@ -246,8 +177,82 @@ full-chat transcript regardless of this setting.</p>
 <li>Fixed an issue where ending a chat session in one browser tab didn't
   automatically close the chat widget in other open tabs.</li>
 </ul>]]></content>
-    <summary>This release includes numerous fixes for call handling, reporting accuracy, agent interface functionality, and system stability. Issues related to message playback, data display, record creation, and call routing have been addressed to improve overall system performance and user experience.</summary>
-    <title>Fixed: Resolved various system issues</title>
+    <summary>This release includes numerous fixes for call handling, reporting accuracy, agent interface behavior, and system stability. Issues with audio playback, data display, call routing, and API integrations have been resolved to improve overall system performance and user experience.</summary>
+    <title>Fixed: Various issues fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-16:announcement:0</id>
+    <published>2026-10-16T00:00:00+00:00</published>
+    <updated>2026-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Advanced reporting dashboards prerelease notes 6.16</strong></p>
+<p>Here are the pre-release notes for updates to the advanced reporting dashboards
+and other reporting in CCAI Platform. When we release these updates, we
+expect the new capabilities to be as shown here.</p>
+<p><strong>Important:</strong> The next version of the advanced reporting dashboards could be
+greater than 6.16.</p>]]></content>
+    <summary>Pre-release notes for updates to advanced reporting dashboards and other reporting features in CCAI Platform are now available. These updates are expected to introduce new capabilities. Note that the version number for these advanced reporting dashboards might exceed 6.16.</summary>
+    <title>Announcement: New Reporting Features Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-16:fixed:1</id>
+    <published>2026-10-16T00:00:00+00:00</published>
+    <updated>2026-10-16T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where the <strong>Agent Performance</strong> tile on the <strong>Real-time Agent
+  Monitoring</strong> dashboard executed redundant database queries during
+  auto-refreshes.</li>
+<li>
+<p>Updated advanced reporting filter prompts so they behave consistently across
+  all dashboards and display the complete list of configured values:</p>
+</li>
+<li>
+<p>List-backed filters now open directly into a searchable list on the
+    first click.</p>
+</li>
+<li>Dropdowns that previously returned empty or partial lists now display
+    the full configured list, including <strong>Agent Name</strong>, <strong>Agent Email</strong>,
+    <strong>Agent Custom ID</strong>, <strong>Agent Teams</strong>, <strong>Location</strong>, <strong>Language</strong>,
+    <strong>Answered By</strong>, and <strong>Projection Result</strong>.</li>
+<li><strong>Disposition Codes</strong> and <strong>Disposition List</strong> filters now display the
+    codes configured for your instance.</li>
+<li><strong>Agent Teams</strong> and <strong>Team Name</strong> filters now match agents in any of
+    their assigned teams.</li>
+<li>Configuration renames (<strong>Queue Group</strong>, <strong>Queue</strong>, <strong>Agent Team</strong>,
+    <strong>Disposition Code</strong>, <strong>Location</strong>, <strong>Role</strong>, and <strong>Skill</strong>) now appear
+    in filter dropdowns within 30 minutes instead of up to six hours.</li>
+<li>The <strong>Projecting</strong> filter on the live <strong>Queued</strong> dashboards is now
+    clearable, so you can reset it to show all queued interactions, and
+    offers only <strong>Yes</strong>.</li>
+<li>Fields without a predefined list of values (such as consumer phone
+    numbers and ID fields) now display a plain text box with an operator so
+    you can type a value directly.</li>
+<li><strong>Call Status</strong> and <strong>Deflection Type</strong> filters now display values that
+    existed in the data but were previously missing from the list.</li>
+<li><strong>Channel</strong> now reports a value on the live <strong>Voice</strong> and <strong>Chat</strong>
+    dashboards, and on historical <strong>Chat</strong> dashboards, for interaction
+    types that previously appeared blank (including internal,
+    API-initiated, campaign, UCaaS, callback, and extension calls).</li>
+<li>On the <strong>Agent Audit</strong> dashboard, the <strong>Change Details</strong> table now
+    displays its timestamp column and sorts it correctly.</li>
+<li>Consumer phone number filters now accept a single value instead of
+    multiple values. Saved filters or links that pass multiple numbers
+    apply only one.</li>
+<li>On the <strong>Missed Interactions</strong> dashboards, the <strong>Activity Status</strong>
+    column and filter are renamed to <strong>Projection Result</strong>.</li>
+<li>Actor values describing who answered, ended, or disconnected an
+    interaction are now standardized as <strong>Human Agent</strong>, <strong>Virtual Agent</strong>,
+    <strong>End User</strong>, and <strong>System</strong>. Saved filters, Looks, and schedules that
+    used the previous wording must be reselected.</li>
+</ul>]]></content>
+    <summary>This release resolves issues with redundant database queries in agent performance monitoring and enhances the consistency and functionality of advanced reporting filters across all dashboards. Filter prompts are now more accurate, searchable, and display complete configured values, improving the user experience for data analysis.</summary>
+    <title>Fixed: Improvements to Agent Monitoring and Reporting</title>
   </entry>
   <entry>
     <author>
@@ -930,6 +935,176 @@ CCAI Platform portal, these dashboards and Explores display in that language.</p
 </ul>]]></content>
     <summary>Several issues have been resolved, including inconsistent numeric formatting, delayed language switching, and inaccurate data display in various reports and dashboards. These fixes ensure more reliable and accurate reporting across different metrics and filters.</summary>
     <title>Fixed: Resolved Reporting and Formatting Issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:announcement:0</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes 6.22</strong></p>
+<p>Here are the pre-release notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>]]></content>
+    <summary>This document outlines the upcoming capabilities in the next version of Google Cloud CCaaS, version 6.22. These notes provide a preview of new features and enhancements expected upon release.</summary>
+    <title>Announcement: Cloud CCaaS Pre-release Notes 6.22</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:feature:1</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Campaign-based scheduled callbacks</strong></p>
+<p>Agents can now schedule a callback during an outbound campaign call. The
+callback belongs to the campaign, not to an individual agent, and the dialer
+calls the consumer back in the time slot they chose. Administrators set slot
+length, capacity, booking window, and expiry for each campaign, and supervisors
+can track upcoming, completed, and expired callbacks from the campaign list.</p>]]></content>
+    <summary>Agents can now schedule callbacks directly within outbound campaign calls. These callbacks are campaign-owned, allowing the dialer to reach consumers at their chosen time. Administrators can configure callback slot settings, and supervisors can monitor callback status.</summary>
+    <title>Feature: Schedule callbacks during outbound campaigns</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:feature:2</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Transcript separation for chat</strong></p>
+<p>You can now configure Google Cloud CCaaS to deliver a separate transcript file
+for each participant segment in a chat, instead of one combined transcript per
+session. Under <strong>Settings &gt; Chat &gt; Chat Transcript</strong>,
+select <strong>Per Segment</strong> in <strong>Transcript Separation</strong> to generate individual
+transcript files for each agent, virtual agent, or supervisor who joins the
+chat—helpful for identifying which participant handled each part of a
+transferred or escalated conversation. Your consumers still receive a single,
+full-chat transcript regardless of this setting.</p>
+<p>By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.</p>]]></content>
+    <summary>New feature allows separate transcript files for each participant segment in a chat, aiding in tracking contributions during transfers or escalations. Contact support to enable this functionality.</summary>
+    <title>Feature: Chat Transcript Separation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-13:fixed:3</id>
+    <published>2026-10-13T00:00:00+00:00</published>
+    <updated>2026-10-13T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where direct access point (DAP) greeting messages played
+  twice when a call was deflected to an internal phone number due to queue
+  overcapacity.</li>
+<li>Fixed an issue where session metadata for top-level menu paths and selected
+  menus was incorrectly displayed in English instead of the user's configured
+  language.</li>
+<li>Fixed an issue where a failed Salesforce lookup was incorrectly treated as
+  having no matches, which resulted in the creation of duplicate records.</li>
+<li>Fixed an issue where inbound transfer restrictions remained in force even
+  after being hidden in the administrator interface, causing queues to become
+  silently unreachable for transfers.</li>
+<li>Fixed an issue where hold music continued to play throughout a call
+  recording after a warm transfer was completed.</li>
+<li>Fixed an issue where outbound virtual agent audio was prematurely truncated
+  during multi-message turns.</li>
+<li>Fixed an issue where the <strong>Real-time Monitoring Queues</strong> report didn't
+  accurately count skill-matched agents for skills-based queues, often
+  displaying zero available agents despite their availability.</li>
+<li>Fixed an issue where calls deflected to an external phone number after
+  entering a queue were incorrectly recorded as abandoned by the customer.</li>
+<li>Fixed an issue where the credit card tokenizer was missing from the
+  <strong>SmartActions</strong> menu during outbound callback calls.</li>
+<li>Fixed an issue where mandatory call dispositions were discarded if an
+  agent's voice connection dropped but their session remained active.</li>
+<li>Fixed an issue where the text resize menu in the chat widget wasn't
+  scrollable at 400% browser zoom, which prevented users from accessing all
+  available text size options.</li>
+<li>Fixed an issue where the system incorrectly prevented saving automatic call
+  redirection settings when the target was a virtual agent-operated queue.</li>
+<li>Fixed an issue where duplicate call records were created for a single
+  inbound call, causing incorrect wait times to appear in the real-time queue
+  view.</li>
+<li>Fixed an issue where empty data attributes caused an error in the agent
+  interface during call connections.</li>
+<li>Fixed an issue where the <strong>Transfer Restrictions</strong> destination picker
+  provided no feedback when a queue was ineligible, making it
+  indistinguishable from a typo or search error.</li>
+<li>Fixed an issue where incoming calls were rejected with a SIP 603 error due
+  to high database latency and connection timeouts.</li>
+<li>Fixed an issue where the documentation for the Apps API and call session
+  metadata schema didn't define the top-level <code>parentId</code> and <code>finishReason</code>
+  fields.</li>
+<li>Fixed an issue where certain inbound call failures were incorrectly reported
+  as a busy signal.</li>
+<li>Fixed an issue where the event processor service crashed during scaling or
+  rebalancing of the system.</li>
+<li>Fixed an issue where the conversation ID was missing from chat events during
+  active sessions.</li>
+<li>Fixed an issue where report exports didn't download or remained stuck in a
+  processing state indefinitely.</li>
+<li>Fixed an issue where agents could transfer calls to queues that were already
+  closed if their transfer list was loaded while the queue was still open.</li>
+<li>Fixed an issue where queued chats were assigned to agents after the end-user
+  had become unresponsive without being prompted to check in.</li>
+<li>Fixed an issue where voice calls cold-transferred to an over-capacity queue
+  generated duplicate reporting records and incorrect queue wait times if the
+  callback leg failed.</li>
+<li>Fixed an issue where direct inbound calls deflected to voicemail during
+  after-hours played three separate audio prompts sequentially.</li>
+<li>Fixed an issue where a single call was simultaneously assigned to two
+  different agents if the pickup coincided with the cascade timer expiry.</li>
+<li>Fixed an issue where direct inbound calls weren't projected to agents in a
+  breakthrough-enabled status if another call was already waiting in their
+  queue.</li>
+<li>Fixed an issue where a gray empty area appeared below the chat container in
+  the agent adapter when the iframe width was narrower than 449px.</li>
+<li>Fixed an issue where several Kubernetes and Google Cloud service accounts
+  were granted overly broad permissions, which could have allowed for
+  unauthorized privilege escalation.</li>
+<li>Fixed an issue where an agent's status sequence was recorded in the
+  incorrect order following a brief connection loss during an active chat.</li>
+<li>Fixed an issue where selecting a contact during a native campaign call
+  didn't automatically open the corresponding record in the CRM.</li>
+<li>Fixed an issue where AI-generated Smart Disposition suggestions were
+  inconsistently displayed for outbound calls during the wrap-up period.</li>
+<li>Fixed an issue where call recordings became distorted or garbled when
+  multiple holds were placed during a call.</li>
+<li>Fixed an issue where audio uploads were accepted based on the file extension
+  rather than the actual file content, which caused call disconnections when
+  incompatible formats were played.</li>
+<li>Fixed an issue where the call duration timer in the external call adapter
+  didn't match the <strong>In-call</strong> status timer in the agent desktop for inbound
+  calls.</li>
+<li>Fixed an issue where the sentiment score was incorrectly displayed in the
+  call adapter for calls escalated from a virtual agent, even when the
+  <strong>Sentiment Analysis</strong> setting was disabled.</li>
+<li>Fixed an issue where duplicate reporting rows were generated for call and
+  wrap-up durations due to concurrent system events.</li>
+<li>Fixed an issue where agents couldn't sign in or refresh their status if
+  their account was linked to a deleted or unknown status.</li>
+<li>Fixed an issue where the Manager API documentation for agent activity logs
+  omitted 17 chat routing and activity values, leading to incomplete reporting
+  data for customers.</li>
+<li>Fixed an issue where IVR custom callback numbers for certain international
+  regions, including Norway and Denmark, were incorrectly dialed with a +1
+  prefix.</li>
+<li>Fixed an issue where metadata for calls deflected between virtual agent
+  assignment and connection wasn't exported to the Cloud Storage bucket.</li>
+<li>Fixed an issue where virtual agent to human chat escalations experienced
+  delays of up to 300 seconds during agent assignment.</li>
+<li>Fixed an issue where the <strong>Answer</strong> button didn't appear for
+  dial-by-extension calls when other calls were already waiting in an
+  agent's queue.</li>
+<li>Fixed an issue where a supervisor's name didn't appear in the chat widget
+  when joining a conversation using the monitor then barge workflow.</li>
+<li>Fixed an issue where ending a chat session in one browser tab didn't
+  automatically close the chat widget in other open tabs.</li>
+</ul>]]></content>
+    <summary>This release includes numerous fixes for call handling, reporting accuracy, agent interface functionality, and system stability. Issues related to message playback, data display, record creation, and call routing have been addressed to improve overall system performance and user experience.</summary>
+    <title>Fixed: Resolved various system issues</title>
   </entry>
   <entry>
     <author>

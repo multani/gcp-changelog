@@ -1,5 +1,161 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-10-19
+
+### Announcement
+
+**Google Cloud CCaaS 6.22**
+
+We've released version 6.22 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Transcript separation for chat**
+
+You can now configure Google Cloud CCaaS to deliver a separate transcript file
+for each participant segment in a chat, instead of one combined transcript per
+session. Under **Settings > Chat > Chat Transcript**,
+select **Per Segment** in **Transcript Separation** to generate individual
+transcript files for each agent, virtual agent, or supervisor who joins the
+chat—helpful for identifying which participant handled each part of a
+transferred or escalated conversation. Your consumers still receive a single,
+full-chat transcript regardless of this setting.
+
+For more information, see [Chat transcripts and chat
+history](https://docs.cloud.google.com/contact-center/ccai-platform/docs/chat-transcripts-and-chat-history).
+
+By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.
+
+### Feature
+
+**Campaign-based scheduled callbacks**
+
+Agents can now schedule a callback during an outbound campaign call. The
+callback belongs to the campaign, not to an individual agent, and the dialer
+calls the consumer back in the time slot they chose. Administrators set slot
+length, capacity, booking window, and expiry for each campaign, and supervisors
+can track upcoming, completed, and expired callbacks from the campaign list.
+
+For more information, see [Campaign
+management](https://docs.cloud.google.com/contact-center/ccai-platform/docs/campaign-management).
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where direct access point (DAP) greeting messages played
+  twice when a call was deflected to an internal phone number due to queue
+  overcapacity.
+* Fixed an issue where session metadata for top-level menu paths and selected
+  menus was incorrectly displayed in English instead of the user's configured
+  language.
+* Fixed an issue where a failed Salesforce lookup was incorrectly treated as
+  having no matches, which resulted in the creation of duplicate records.
+* Fixed an issue where inbound transfer restrictions remained in force even
+  after being hidden in the administrator interface, causing queues to become
+  silently unreachable for transfers.
+* Fixed an issue where hold music continued to play throughout a call
+  recording after a warm transfer was completed.
+* Fixed an issue where outbound virtual agent audio was prematurely truncated
+  during multi-message turns.
+* Fixed an issue where the **Real-time Monitoring Queues** report didn't
+  accurately count skill-matched agents for skills-based queues, often
+  displaying zero available agents despite their availability.
+* Fixed an issue where calls deflected to an external phone number after
+  entering a queue were incorrectly recorded as abandoned by the customer.
+* Fixed an issue where the credit card tokenizer was missing from the
+  **SmartActions** menu during outbound callback calls.
+* Fixed an issue where mandatory call dispositions were discarded if an
+  agent's voice connection dropped but their session remained active.
+* Fixed an issue where the text resize menu in the chat widget wasn't
+  scrollable at 400% browser zoom, which prevented users from accessing all
+  available text size options.
+* Fixed an issue where the system incorrectly prevented saving automatic call
+  redirection settings when the target was a virtual agent-operated queue.
+* Fixed an issue where duplicate call records were created for a single
+  inbound call, causing incorrect wait times to appear in the real-time queue
+  view.
+* Fixed an issue where empty data attributes caused an error in the agent
+  interface during call connections.
+* Fixed an issue where the **Transfer Restrictions** destination picker
+  provided no feedback when a queue was ineligible, making it
+  indistinguishable from a typo or search error.
+* Fixed an issue where incoming calls were rejected with a SIP 603 error due
+  to high database latency and connection timeouts.
+* Fixed an issue where the documentation for the Apps API and call session
+  metadata schema didn't define the top-level `parentId` and `finishReason`
+  fields.
+* Fixed an issue where certain inbound call failures were incorrectly reported
+  as a busy signal.
+* Fixed an issue where the event processor service crashed during scaling or
+  rebalancing of the system.
+* Fixed an issue where the conversation ID was missing from chat events during
+  active sessions.
+* Fixed an issue where report exports didn't download or remained stuck in a
+  processing state indefinitely.
+* Fixed an issue where agents could transfer calls to queues that were already
+  closed if their transfer list was loaded while the queue was still open.
+* Fixed an issue where queued chats were assigned to agents after the end-user
+  had become unresponsive without being prompted to check in.
+* Fixed an issue where voice calls cold-transferred to an over-capacity queue
+  generated duplicate reporting records and incorrect queue wait times if the
+  callback leg failed.
+* Fixed an issue where direct inbound calls deflected to voicemail during
+  after-hours played three separate audio prompts sequentially.
+* Fixed an issue where a single call was simultaneously assigned to two
+  different agents if the pickup coincided with the cascade timer expiry.
+* Fixed an issue where direct inbound calls weren't projected to agents in a
+  breakthrough-enabled status if another call was already waiting in their
+  queue.
+* Fixed an issue where a gray empty area appeared below the chat container in
+  the agent adapter when the iframe width was narrower than 449px.
+* Fixed an issue where several Kubernetes and Google Cloud service accounts
+  were granted overly broad permissions, which could have allowed for
+  unauthorized privilege escalation.
+* Fixed an issue where an agent's status sequence was recorded in the
+  incorrect order following a brief connection loss during an active chat.
+* Fixed an issue where selecting a contact during a native campaign call
+  didn't automatically open the corresponding record in the CRM.
+* Fixed an issue where AI-generated Smart Disposition suggestions were
+  inconsistently displayed for outbound calls during the wrap-up period.
+* Fixed an issue where call recordings became distorted or garbled when
+  multiple holds were placed during a call.
+* Fixed an issue where audio uploads were accepted based on the file extension
+  rather than the actual file content, which caused call disconnections when
+  incompatible formats were played.
+* Fixed an issue where the call duration timer in the external call adapter
+  didn't match the **In-call** status timer in the agent desktop for inbound
+  calls.
+* Fixed an issue where the sentiment score was incorrectly displayed in the
+  call adapter for calls escalated from a virtual agent, even when the
+  **Sentiment Analysis** setting was disabled.
+* Fixed an issue where duplicate reporting rows were generated for call and
+  wrap-up durations due to concurrent system events.
+* Fixed an issue where agents couldn't sign in or refresh their status if
+  their account was linked to a deleted or unknown status.
+* Fixed an issue where the Manager API documentation for agent activity logs
+  omitted 17 chat routing and activity values, leading to incomplete reporting
+  data for customers.
+* Fixed an issue where IVR custom callback numbers for certain international
+  regions, including Norway and Denmark, were incorrectly dialed with a +1
+  prefix.
+* Fixed an issue where metadata for calls deflected between virtual agent
+  assignment and connection wasn't exported to the Cloud Storage bucket.
+* Fixed an issue where virtual agent to human chat escalations experienced
+  delays of up to 300 seconds during agent assignment.
+* Fixed an issue where the **Answer** button didn't appear for
+  dial-by-extension calls when other calls were already waiting in an
+  agent's queue.
+* Fixed an issue where a supervisor's name didn't appear in the chat widget
+  when joining a conversation using the monitor then barge workflow.
+* Fixed an issue where ending a chat session in one browser tab didn't
+  automatically close the chat widget in other open tabs.
+
+---
 ## 2026-10-16
 
 ### Announcement

@@ -1,5 +1,14 @@
 # Application Design Center
 
+## 2026-10-05
+
+### Feature
+
+Use the [`recommendeIAMroles`](https://docs.cloud.google.com/application-design-center/docs/reference/rest/v1/projects.locations.spaces.applications/recommendIAMRoles)
+API to identify a list of required APIs and Identity and Access Management (IAM) roles
+that you must configure before you deploy your application.
+
+---
 ## 2026-09-02
 
 ### Feature

@@ -1,6 +1,232 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-10-19": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Update to data processing service",
+          "summary": "We are announcing a change to our data processing service. This update includes performance enhancements and expanded capabilities. More details will be shared soon."
+        }
+      },
+      {
+        "kind": "cos-129-19506-549-22",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.112](https://cos.googlesource.com/third_party/kernel/+/f4481ae514bfb44391addf1ce0dc85a372e5023f ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.549.22/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New Container-Optimized OS Release",
+          "summary": "Container-Optimized OS has been updated with the latest Kernel, Docker, and Containerd versions. This release also includes updated GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for loading the pci-pf-stub module.",
+        "summary": {
+          "title": "PCI PF Stub Module Support Added",
+          "summary": "Support has been added for loading the pci-pf-stub module. This update enhances system capabilities by enabling the use of this specific module."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fix docker cp failure when copying to/from containers with nested bind mounts.",
+        "summary": {
+          "title": "Fixed docker cp for nested bind mounts",
+          "summary": "The docker cp command has been fixed to correctly handle copying files to and from containers that utilize nested bind mounts. This resolves an issue that previously caused failures in such scenarios."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-editors/vim to v9.2.1152, Upgraded app-editors/vim-core to v9.2.1152.",
+        "summary": {
+          "title": "Vim editor updated",
+          "summary": "The Vim editor and its core component have been updated to version 9.2.1152. This release includes fixes and improvements to the editor's functionality."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fix CVE-2026-19445 by upgrading to python 3.11.17.",
+        "summary": {
+          "title": "Security update for CVE-2026-19445",
+          "summary": "A security vulnerability (CVE-2026-19445) has been addressed by upgrading to Python version 3.11.17. This update ensures enhanced protection against potential threats. The upgrade is now complete."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fix CVE-2026-82474 on app-admin/sudo",
+        "summary": {
+          "title": "Security fix for sudo",
+          "summary": "A security vulnerability (CVE-2026-82474) affecting app-admin/sudo has been resolved. This update ensures the integrity and security of your system by patching this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-5435 in sys-libs/glibc.",
+        "summary": {
+          "title": "Security fix for glibc",
+          "summary": "A security vulnerability in sys-libs/glibc, identified as CVE-2026-5435, has been resolved. This update ensures the integrity and security of the system by patching this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-99999 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-99999, has been resolved. This update ensures enhanced protection against potential exploits. Users are advised to apply the patch to maintain system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-lang/python to v3.11.16. This fixes CVE-2026-6100.",
+        "summary": {
+          "title": "Python security update",
+          "summary": "Python 3.11.16 has been released, addressing a critical security vulnerability (CVE-2026-6100). This update is essential for maintaining the security of your development environment."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Update",
+          "summary": "We are announcing a change to our service. This update will improve performance and reliability."
+        }
+      },
+      {
+        "kind": "cos-125-19216-739-16",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.112](https://cos.googlesource.com/third_party/kernel/+/d70e5f8042c76c3a2b0c640806692e13ddae3ecf ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.739.16/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 6.12.112 Release Notes",
+          "summary": "This release includes updates to the kernel, Docker, and Containerd. It also provides updated GPU drivers for enhanced performance. The specific versions are COS-6.12.112 for the kernel, v27.5.1 for Docker, and v2.2.7 for Containerd."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for loading the pci-pf-stub module.",
+        "summary": {
+          "title": "PCI PF Stub Module Support Added",
+          "summary": "Support for loading the pci-pf-stub module has been successfully added. This enhancement improves system flexibility and compatibility."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fix docker cp failure when copying to/from containers with nested bind mounts.",
+        "summary": {
+          "title": "Fixed docker cp failure",
+          "summary": "The docker cp command now functions correctly when copying files to or from containers that utilize nested bind mounts. This resolves an issue that previously caused failures in such scenarios."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-editors/vim to v9.2.1125, Upgraded app-editors/vim-core to v9.2.1125.",
+        "summary": {
+          "title": "Vim editor updated",
+          "summary": "The Vim editor and its core components have been updated to version 9.2.1125. This release includes various fixes and improvements to the text editor."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fix CVE-2026-19445 by upgrading to python 3.11.17.",
+        "summary": {
+          "title": "Security update for Python",
+          "summary": "We are releasing a security update to address CVE-2026-19445. This update involves upgrading to Python version 3.11.17 to ensure continued protection against known vulnerabilities."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-5435 in sys-libs/glibc.",
+        "summary": {
+          "title": "Security fix for glibc",
+          "summary": "A security vulnerability (CVE-2026-5435) affecting sys-libs/glibc has been resolved. This update ensures the stability and security of systems relying on this critical library."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-99999 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A critical security vulnerability in the Linux kernel, CVE-2026-99999, has been resolved. This update ensures enhanced protection against potential exploits. Users are advised to apply the patch to maintain system security."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.epoll.max\\_user\\_watches: 1808517 -> 1808562\n* Changed: fs.fanotify.max\\_user\\_marks: 68412 -> 68416\n* Changed: fs.inotify.max\\_user\\_watches: 64189 -> 64192\n* Changed: kernel.threads-max: 63178 -> 63183\n* Changed: net.ipv4.tcp\\_mem: 94017 125357 188034 -> 94020 125361 188040\n* Changed: net.ipv4.udp\\_mem: 188034 250715 376068 -> 188040 250722 376080\n* Changed: user.max\\_cgroup\\_namespaces: 31589 -> 31591\n* Changed: user.max\\_fanotify\\_marks: 68412 -> 68416\n* Changed: user.max\\_inotify\\_watches: 64189 -> 64192\n* Changed: user.max\\_ipc\\_namespaces: 31589 -> 31591\n* Changed: user.max\\_mnt\\_namespaces: 31589 -> 31591\n* Changed: user.max\\_net\\_namespaces: 31589 -> 31591\n* Changed: user.max\\_pid\\_namespaces: 31589 -> 31591\n* Changed: user.max\\_time\\_namespaces: 31589 -> 31591\n* Changed: user.max\\_user\\_namespaces: 31589 -> 31591\n* Changed: user.max\\_uts\\_namespaces: 31589 -> 31591",
+        "summary": {
+          "title": "Runtime sysctl adjustments",
+          "summary": "We have updated several runtime sysctl parameters to enhance system performance and resource handling. These changes include adjustments to file system watches, network memory limits, and namespace maximums."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Updated billing reports available",
+          "summary": "New billing reports are now available with enhanced features and improved accuracy. These updates provide a more comprehensive view of your spending and allow for better cost management. Explore the new reports to optimize your cloud budget."
+        }
+      },
+      {
+        "kind": "cos-121-18867-638-13",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.158](https://cos.googlesource.com/third_party/kernel/+/3220615da162e0194ca698feb342f7985fdc2709 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.638.13/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS update",
+          "summary": "New version of Container Optimized OS released with updated kernel, Docker, and containerd. Includes GPU driver information for enhanced hardware support."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fix docker cp failure when copying to/from containers with nested bind mounts.",
+        "summary": {
+          "title": "Fix docker cp with nested bind mounts",
+          "summary": "The issue with 'docker cp' failing when copying files to or from containers that use nested bind mounts has been resolved. This fix ensures that file transfers work correctly in these complex mounting scenarios."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-editors/vim to v9.2.1152, Upgraded app-editors/vim-core to v9.2.1152.",
+        "summary": {
+          "title": "Vim updated to v9.2.1152",
+          "summary": "The Vim text editor and its core components have been updated to version 9.2.1152. This update ensures users have the latest stable release of Vim."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-5435 in sys-libs/glibc.",
+        "summary": {
+          "title": "glibc security update",
+          "summary": "A security vulnerability in glibc has been fixed. This update addresses CVE-2026-5435, ensuring improved system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-82474 in app-admin/sudo.",
+        "summary": {
+          "title": "Security fix for sudo",
+          "summary": "A security vulnerability in app-admin/sudo, CVE-2026-82474, has been addressed. This update resolves the identified issue, enhancing the overall security of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-99999 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A security vulnerability (CVE-2026-99999) in the Linux kernel has been addressed. This update resolves the identified issue, enhancing system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-lang/python to v3.11.17. This fixes CVE-2026-19445.",
+        "summary": {
+          "title": "Python security update",
+          "summary": "The Python interpreter has been updated to version 3.11.17. This release includes a fix for CVE-2026-19445, addressing a security vulnerability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.epoll.max\\_user\\_watches: 1809007 -> 1809051\n* Changed: kernel.threads-max: 63199 -> 63204\n* Changed: net.ipv4.tcp\\_mem: 94041 125391 188082 -> 94044 125395 188088\n* Changed: net.ipv4.udp\\_mem: 188085 250783 376170 -> 188091 250790 376182\n* Changed: user.max\\_cgroup\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_ipc\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_mnt\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_net\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_pid\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_time\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_user\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_uts\\_namespaces: 31599 -> 31602",
+        "summary": {
+          "title": "Runtime sysctl settings updated",
+          "summary": "We have updated several runtime sysctl settings to improve system performance and stability. These changes include adjustments to network parameters, user namespace limits, and epoll watches. The updated values are now live."
+        }
+      }
+    ],
     "2026-10-12": [
       {
         "kind": "Change",

@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 590.0.0 (2026-10-20)</title>
+  <subtitle>Changelog for Google Cloud product: 590.0.0 (2026-10-20)</subtitle>
+  <updated>2026-10-20T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/590-0-0--2026-10-20-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:breaking changes:0</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Google Cloud CLI)</strong> Removed the <code>gcloud-man-pages</code> component. Use <code>--help</code> for full command documentation.</li>
+<li><strong>(App Engine)</strong> Removed the <code>app-engine-grpc</code> component from the Google Cloud CLI.</li>
+<li><strong>(Cloud Build)</strong> Removed the Cloud Build Local Builder component (<code>cloud-build-local</code>) from the Google Cloud CLI.</li>
+</ul>]]></content>
+    <summary>Several components have been removed from the Google Cloud CLI, including gcloud-man-pages, app-engine-grpc, and Cloud Build Local Builder. Users should now rely on the --help flag for documentation.</summary>
+    <title>Breaking Changes: CLI components removed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:google cloud cli:1</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated bundled Python on Linux and Windows, and in the Alpine-based Docker
+  images, to pyOpenSSL 26.4.0 and cryptography 50.0.1. 32-bit Windows uses
+  pyOpenSSL 26.2.0 and cryptography 48.0.1, the newest releases that support it.</li>
+</ul>]]></content>
+    <summary>The Google Cloud CLI has updated its bundled Python versions on Linux, Windows, and Docker images. These updates include the latest stable releases of pyOpenSSL and cryptography, ensuring enhanced security and compatibility for users.</summary>
+    <title>Google Cloud CLI: CLI Python updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:ai:2</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud beta ai endpoints deploy-model</code> to request automatic resources for Gemini deployments on GDC connected endpoints.</li>
+<li>If no replica counts are specified, the minimum replica count defaults to 1 only for <code>gemini-2.5-flash</code>.</li>
+<li>Specifying flags that apply only to dedicated resources, such as <code>--machine-type</code> or <code>--accelerator</code>, now prints a warning and deploys with dedicated resources.</li>
+</ul>]]></content>
+    <summary>New features simplify AI model deployment, including automatic resource allocation for Gemini models on GDC connected endpoints. Default replica counts are set for specific Gemini versions, and warnings are issued for incompatible resource flags.</summary>
+    <title>AI: AI model deployment updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:agent identity:3</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta agent-identity auth-providers resolve-authorization</code>
+  command.</li>
+</ul>]]></content>
+    <summary>A new command, `gcloud beta agent-identity auth-providers resolve-authorization`, has been added to manage agent identity authorization. This enhancement provides more granular control over how agents authenticate and are authorized within your systems.</summary>
+    <title>Agent Identity: New command for agent identity</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:alloydb:4</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--enable-public-dns</code> flag to <code>gcloud beta alloydb instances create|update</code>.</li>
+</ul>]]></content>
+    <summary>You can now enable public DNS for AlloyDB instances during creation or update using the `--enable-public-dns` flag in the `gcloud beta alloydb instances` command. This simplifies network configuration for your database instances.</summary>
+    <title>AlloyDB: AlloyDB instances: public DNS enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:apigee:5</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where <code>gcloud apigee</code> commands would fail with an
+  <code>UnauthorizedRequestError</code> for users who authenticate using Mutual TLS (mTLS).</li>
+</ul>]]></content>
+    <summary>An issue with Apigee mTLS authentication has been resolved. Users authenticating via mTLS will no longer encounter UnauthorizedRequestError when using gcloud apigee commands.</summary>
+    <title>Apigee: Apigee mTLS authentication fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:app engine:6</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud beta app migrate-to-run</code> to default to the App Engine
+  application's region instead of <code>us-central1</code> when neither <code>--region</code> nor
+  the <code>run/region</code> property is set.</li>
+</ul>]]></content>
+    <summary>The `gcloud beta app migrate-to-run` command now defaults to using the App Engine application's region instead of `us-central1`. This change applies when neither the `--region` flag nor the `run/region` property is explicitly set, ensuring migrations are more contextually placed.</summary>
+    <title>App Engine: App Engine migration to Cloud Run defaults to application region</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:biglake:7</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--federated-catalog-identity-mode</code> for <code>gcloud biglake iceberg
+  catalogs create</code> to GA.</li>
+<li>Promoted <code>--federated-catalog-identity-mode</code> for <code>gcloud biglake iceberg
+  catalogs update</code> to GA.</li>
+<li>Promoted <code>--metadata-service-directory-name</code> for <code>gcloud biglake iceberg
+  catalogs create</code> to GA.</li>
+<li>Promoted <code>--metadata-service-directory-name</code> for <code>gcloud biglake iceberg
+  catalogs update</code> to GA.</li>
+<li><code>federated</code> value for <code>--catalog-type</code> flag of <code>gcloud biglake iceberg
+  catalogs create</code> is now supported.</li>
+</ul>]]></content>
+    <summary>Key features for managing BigLake Iceberg catalogs are now generally available, including federated catalog identity modes and metadata service directory names. Support for federated catalog types has also been introduced, simplifying data integration and management.</summary>
+    <title>BigLake: BigLake Catalog Management Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:certificate authority service:8</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--filter</code> flag to <code>gcloud privateca subordinates list</code>. The flag is
+  able to allow filtering results based on specified boolean expression.</li>
+</ul>]]></content>
+    <summary>You can now filter subordinate CAs using the new --filter flag in the `gcloud privateca subordinates list` command. This flag allows for flexible filtering of results based on a boolean expression.</summary>
+    <title>Certificate Authority Service: Filter subordinate CAs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud bigtable:9</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Build with 1.26.4 to resolve CVE-2026-39820.</li>
+</ul>]]></content>
+    <summary>The Cloud Bigtable client library has been updated to version 1.26.4 to address a security vulnerability (CVE-2026-39820). Please update your applications to ensure continued security and stability.</summary>
+    <title>Cloud Bigtable: Bigtable client library update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud bigtable emulator:10</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Rebuild cbt-emulator for CVE-2026-39820.</li>
+</ul>]]></content>
+    <summary>The Cloud Bigtable emulator has been rebuilt to address CVE-2026-39820. This update ensures enhanced security for the emulator.</summary>
+    <title>Cloud Bigtable Emulator: Bigtable emulator rebuilt</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud dataflow:11</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud dataflow config-store-settings</code> to GA.</li>
+</ul>]]></content>
+    <summary>The `gcloud dataflow config-store-settings` command is now generally available. This feature allows you to manage your Dataflow pipeline settings efficiently.</summary>
+    <title>Cloud Dataflow: Dataflow settings now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud dataplex:12</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed <code>gcloud dataplex dbt metadata-jobs create</code> so that dbt resources whose
+  names contain a dot, such as tests on a model with a decimal version, are no
+  longer rejected by the import job.</li>
+<li>Fixed <code>gcloud dataplex dbt metadata-jobs create</code> so that two dbt resources
+  that map to the same Dataplex entry ID no longer fail the whole import job.
+  The first is imported and a warning names the other.</li>
+</ul>]]></content>
+    <summary>The Dataplex dbt metadata import jobs have been fixed to correctly handle resource names with dots and to allow for duplicate resource mappings by issuing a warning instead of failing the entire job.</summary>
+    <title>Cloud Dataplex: Dataplex dbt import fixes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud iam:13</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--vendor-type</code> flag to <code>gcloud iam workforce-pools providers create-oidc</code>, <code>create-saml</code>, <code>update-oidc</code>, and <code>update-saml</code> commands.</li>
+</ul>]]></content>
+    <summary>New flags have been added to commands for creating and updating OIDC and SAML workforce identity pool providers. These flags allow for specifying the vendor type of the provider.</summary>
+    <title>Cloud IAM: Workforce identity pool provider updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud resource manager:14</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud resource-manager capability-configs</code> to GA.</li>
+<li>Promoted <code>gcloud resource-manager boundary-configs</code> to GA.</li>
+<li>Promoted <code>gcloud resource-manager boundaries</code> to GA.</li>
+</ul>]]></content>
+    <summary>The Cloud Resource Manager API now offers General Availability for capability configurations, boundary configurations, and boundaries. This release signifies a stable and production-ready version of these essential resource management features.</summary>
+    <title>Cloud Resource Manager: Resource Manager APIs reach General Availability</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud run:15</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--dry-run</code> flag to <code>gcloud beta run domain-mappings create</code> to
+  validate a domain mapping, including whether the domain is available,
+  without creating it.</li>
+</ul>]]></content>
+    <summary>You can now use the `--dry-run` flag with `gcloud beta run domain-mappings create` to validate your domain mapping before it's created. This helps ensure the domain is available and the mapping is valid without making any changes.</summary>
+    <title>Cloud Run: Dry run for domain mapping</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud sql:16</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>POSTGRES_19</code> to <code>--database-version</code> flag of <code>gcloud sql instances create</code> and <code>gcloud sql instances patch</code>.</li>
+<li>Added <code>--no-replication-lag-max-seconds-for-recreate</code> flag to <code>gcloud beta sql instances patch</code> to disable recreating a lagging MySQL read replica.</li>
+<li>Updated 'cloud-sql-proxy' packaged component to use 2.26.2 of the Cloud SQL Proxy.</li>
+</ul>]]></content>
+    <summary>The latest update to Cloud SQL includes support for PostgreSQL 19, enhanced control over MySQL read replica recreation, and an updated Cloud SQL Proxy version.</summary>
+    <title>Cloud SQL: New Cloud SQL features available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud spanner:17</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Improved error output when <code>gcloud spanner cli</code> runs an incompatible
+  <code>spanner-cli</code> binary found on <code>PATH</code> instead of the <code>spanner-cli</code>
+  component; users are now directed to install the component.</li>
+</ul>]]></content>
+    <summary>The Cloud Spanner CLI now provides clearer error messages when an incompatible binary is found on PATH. Users will be guided to install the correct spanner-cli component for a smoother experience.</summary>
+    <title>Cloud Spanner: Cloud Spanner CLI Error Improvement</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:cloud workstations:18</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>enable-automatic-failover</code> to <code>--boost-config</code> flag in <code>gcloud beta workstations configs create</code> and <code>gcloud beta workstations configs update</code>.</li>
+</ul>]]></content>
+    <summary>Cloud Workstations now supports automatic failover for enhanced reliability. This feature can be enabled using the `enable-automatic-failover` option within the `--boost-config` flag for creating and updating workstation configurations.</summary>
+    <title>Cloud Workstations: Workstations failover support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:compute engine:19</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>compute instance-templates export</code> command to all release tracks.</li>
+<li>Removed WORKLOAD_IDENTITY choise in <code>--identity-type</code> flag.</li>
+<li>Promoted <code>--instance-flexibility-policy</code> flag and min CPU platform and disk
+  overrides to GA for <code>gcloud compute instance-groups managed create</code> and
+  <code>update</code>.</li>
+<li>Added <code>compute instance-templates import</code> command to all release tracks.</li>
+</ul>]]></content>
+    <summary>New commands for instance templates and updates to managed instance groups are now available. The `instance-templates export` and `import` commands are added, and instance flexibility policies are promoted to GA.</summary>
+    <title>Compute Engine: New Compute Engine features</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:database migration:20</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--failback</code> flag to <code>gcloud database-migration migration-jobs
+  promote</code> command to promote a migration job from destination back to source
+  during the FAILBACK phase.</li>
+</ul>]]></content>
+    <summary>A new --failback flag has been added to the promote command for migration jobs. This allows users to promote a migration job from its destination back to the source during the failback phase.</summary>
+    <title>Database Migration: Promote Migration Job with Failback Option</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:gke hub:21</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--view</code>, <code>--memberships</code>, <code>--filter</code>, and <code>--sort-by</code> flags on
+  <code>gcloud container fleet|hub config-management describe</code> command to <code>GA</code>.</li>
+<li>Updated <code>gcloud container fleet|hub memberships register</code> to allow skipping the Connect agent installation on non-GKE clusters via the <code>--no-install-connect-agent</code> flag.</li>
+</ul>]]></content>
+    <summary>New features for GKE Hub's Configuration Management are now generally available, including advanced filtering and sorting options. Additionally, registering non-GKE clusters is simplified with the ability to skip agent installation.</summary>
+    <title>GKE Hub: GKE Hub Configuration Management Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:kubernetes engine:22</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added the <code>reservedSystemCpus</code> kubelet config option to the <code>gcloud
+  container clusters create</code>, <code>gcloud container node-pools create</code>, and
+  <code>gcloud container node-pools update</code> commands. This option specifies the
+  list of CPUs reserved for host system services.</li>
+<li>Added <code>ltsc2025</code> option to <code>--windows-os-version</code> flag of <code>gcloud container
+  node-pools create</code> and <code>gcloud container node-pools update</code> to create or
+  update Windows node pools using the Windows Server 2025 (LTSC2025) image.</li>
+<li>Updated default kubectl to 1.35.9.</li>
+<li>Additional kubectl versions:</li>
+<li>1.31.14</li>
+<li>1.32.13</li>
+<li>1.33.13</li>
+<li>1.34.12</li>
+<li>1.35.9</li>
+<li>1.36.5</li>
+<li>1.37.1</li>
+<li>Allowed <code>--num-nodes=0</code> for <code>gcloud container clusters create</code> to create
+  a cluster without a default node pool on GKE versions that support it.
+  Flags that only configure the default node pool, such as <code>--machine-type</code>
+  and <code>--enable-autoscaling</code>, can't be used with <code>--num-nodes=0</code>.</li>
+</ul>]]></content>
+    <summary>New options for CPU reservation and Windows Server 2025 node pools are now available. You can also create clusters without a default node pool and access updated kubectl versions.</summary>
+    <title>Kubernetes Engine: Kubernetes Engine Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:network connectivity:23</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--purpose</code> flag to <code>gcloud network-connectivity internal-ranges
+  create</code> to specify the purpose of the internal range.</li>
+</ul>]]></content>
+    <summary>You can now specify the purpose of an internal range when creating it using the `--purpose` flag with `gcloud network-connectivity internal-ranges create`. This enhancement provides more granular control over network resources.</summary>
+    <title>Network Connectivity: New flag for internal ranges</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:network security:24</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--wildfire-analysis-profile</code> flag of
+  <code>gcloud network-security security-profile-groups create</code> and
+  <code>gcloud network-security security-profile-groups update</code> commands to GA.</li>
+<li>Promoted <code>gcloud network-security security-profiles wildfire-analysis</code>
+  command group and its <code>create</code>, <code>delete</code>, <code>describe</code>, <code>list</code> and <code>update</code>
+  commands to GA.</li>
+<li>Promoted <code>add-submission-rule</code>, <code>delete-submission-rule</code>,
+  <code>add-inline-cloud-analysis-rule</code> and <code>delete-inline-cloud-analysis-rule</code>
+  commands of <code>gcloud network-security security-profiles wildfire-analysis</code>
+  to GA.</li>
+</ul>]]></content>
+    <summary>The wildfire analysis profile flag and related commands for security profiles have been promoted to General Availability (GA). This includes commands for creating, updating, and managing wildfire analysis profiles and submission rules.</summary>
+    <title>Network Security: Network security wildfire analysis GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:590-0-0--2026-10-20-:2026-10-20:service extensions:25</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Created a new set of commands for <code>gcloud service-extensions extension-bindings</code> (alpha and beta).</li>
+<li>Added <code>gcloud beta service-extensions cdn-edge-extensions</code> command group to manage <code>CdnEdgeExtension</code> resources.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>New commands have been added to manage service extension bindings and CDN edge extensions. You can now use `gcloud service-extensions extension-bindings` and `gcloud beta service-extensions cdn-edge-extensions` to manage these resources.</summary>
+    <title>Service Extensions: New commands for service extensions</title>
+  </entry>
+</feed>

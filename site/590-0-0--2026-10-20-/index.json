@@ -1,0 +1,215 @@
+{
+  "name": "590.0.0 (2026-10-20)",
+  "entries": {
+    "2026-10-20": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Google Cloud CLI)** Removed the `gcloud-man-pages` component. Use `--help` for full command documentation.\n* **(App Engine)** Removed the `app-engine-grpc` component from the Google Cloud CLI.\n* **(Cloud Build)** Removed the Cloud Build Local Builder component (`cloud-build-local`) from the Google Cloud CLI.",
+        "summary": {
+          "title": "CLI components removed",
+          "summary": "Several components have been removed from the Google Cloud CLI, including gcloud-man-pages, app-engine-grpc, and Cloud Build Local Builder. Users should now rely on the --help flag for documentation."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Updated bundled Python on Linux and Windows, and in the Alpine-based Docker\n  images, to pyOpenSSL 26.4.0 and cryptography 50.0.1. 32-bit Windows uses\n  pyOpenSSL 26.2.0 and cryptography 48.0.1, the newest releases that support it.",
+        "summary": {
+          "title": "CLI Python updates",
+          "summary": "The Google Cloud CLI has updated its bundled Python versions on Linux, Windows, and Docker images. These updates include the latest stable releases of pyOpenSSL and cryptography, ensuring enhanced security and compatibility for users."
+        }
+      },
+      {
+        "kind": "AI",
+        "content": "* Updated `gcloud beta ai endpoints deploy-model` to request automatic resources for Gemini deployments on GDC connected endpoints.\n  + If no replica counts are specified, the minimum replica count defaults to 1 only for `gemini-2.5-flash`.\n  + Specifying flags that apply only to dedicated resources, such as `--machine-type` or `--accelerator`, now prints a warning and deploys with dedicated resources.",
+        "summary": {
+          "title": "AI model deployment updates",
+          "summary": "New features simplify AI model deployment, including automatic resource allocation for Gemini models on GDC connected endpoints. Default replica counts are set for specific Gemini versions, and warnings are issued for incompatible resource flags."
+        }
+      },
+      {
+        "kind": "Agent Identity",
+        "content": "* Added `gcloud beta agent-identity auth-providers resolve-authorization`\n  command.",
+        "summary": {
+          "title": "New command for agent identity",
+          "summary": "A new command, `gcloud beta agent-identity auth-providers resolve-authorization`, has been added to manage agent identity authorization. This enhancement provides more granular control over how agents authenticate and are authorized within your systems."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Added `--enable-public-dns` flag to `gcloud beta alloydb instances create|update`.",
+        "summary": {
+          "title": "AlloyDB instances: public DNS enabled",
+          "summary": "You can now enable public DNS for AlloyDB instances during creation or update using the `--enable-public-dns` flag in the `gcloud beta alloydb instances` command. This simplifies network configuration for your database instances."
+        }
+      },
+      {
+        "kind": "Apigee",
+        "content": "* Fixed an issue where `gcloud apigee` commands would fail with an\n  `UnauthorizedRequestError` for users who authenticate using Mutual TLS (mTLS).",
+        "summary": {
+          "title": "Apigee mTLS authentication fix",
+          "summary": "An issue with Apigee mTLS authentication has been resolved. Users authenticating via mTLS will no longer encounter UnauthorizedRequestError when using gcloud apigee commands."
+        }
+      },
+      {
+        "kind": "App Engine",
+        "content": "* Updated `gcloud beta app migrate-to-run` to default to the App Engine\n  application's region instead of `us-central1` when neither `--region` nor\n  the `run/region` property is set.",
+        "summary": {
+          "title": "App Engine migration to Cloud Run defaults to application region",
+          "summary": "The `gcloud beta app migrate-to-run` command now defaults to using the App Engine application's region instead of `us-central1`. This change applies when neither the `--region` flag nor the `run/region` property is explicitly set, ensuring migrations are more contextually placed."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Promoted `--federated-catalog-identity-mode` for `gcloud biglake iceberg\n  catalogs create` to GA.\n* Promoted `--federated-catalog-identity-mode` for `gcloud biglake iceberg\n  catalogs update` to GA.\n* Promoted `--metadata-service-directory-name` for `gcloud biglake iceberg\n  catalogs create` to GA.\n* Promoted `--metadata-service-directory-name` for `gcloud biglake iceberg\n  catalogs update` to GA.\n* `federated` value for `--catalog-type` flag of `gcloud biglake iceberg\n  catalogs create` is now supported.",
+        "summary": {
+          "title": "BigLake Catalog Management Enhancements",
+          "summary": "Key features for managing BigLake Iceberg catalogs are now generally available, including federated catalog identity modes and metadata service directory names. Support for federated catalog types has also been introduced, simplifying data integration and management."
+        }
+      },
+      {
+        "kind": "Certificate Authority Service",
+        "content": "* Added `--filter` flag to `gcloud privateca subordinates list`. The flag is\n  able to allow filtering results based on specified boolean expression.",
+        "summary": {
+          "title": "Filter subordinate CAs",
+          "summary": "You can now filter subordinate CAs using the new --filter flag in the `gcloud privateca subordinates list` command. This flag allows for flexible filtering of results based on a boolean expression."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable",
+        "content": "* Build with 1.26.4 to resolve CVE-2026-39820.",
+        "summary": {
+          "title": "Bigtable client library update",
+          "summary": "The Cloud Bigtable client library has been updated to version 1.26.4 to address a security vulnerability (CVE-2026-39820). Please update your applications to ensure continued security and stability."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable Emulator",
+        "content": "* Rebuild cbt-emulator for CVE-2026-39820.",
+        "summary": {
+          "title": "Bigtable emulator rebuilt",
+          "summary": "The Cloud Bigtable emulator has been rebuilt to address CVE-2026-39820. This update ensures enhanced security for the emulator."
+        }
+      },
+      {
+        "kind": "Cloud Dataflow",
+        "content": "* Promoted `gcloud dataflow config-store-settings` to GA.",
+        "summary": {
+          "title": "Dataflow settings now generally available",
+          "summary": "The `gcloud dataflow config-store-settings` command is now generally available. This feature allows you to manage your Dataflow pipeline settings efficiently."
+        }
+      },
+      {
+        "kind": "Cloud Dataplex",
+        "content": "* Fixed `gcloud dataplex dbt metadata-jobs create` so that dbt resources whose\n  names contain a dot, such as tests on a model with a decimal version, are no\n  longer rejected by the import job.\n* Fixed `gcloud dataplex dbt metadata-jobs create` so that two dbt resources\n  that map to the same Dataplex entry ID no longer fail the whole import job.\n  The first is imported and a warning names the other.",
+        "summary": {
+          "title": "Dataplex dbt import fixes",
+          "summary": "The Dataplex dbt metadata import jobs have been fixed to correctly handle resource names with dots and to allow for duplicate resource mappings by issuing a warning instead of failing the entire job."
+        }
+      },
+      {
+        "kind": "Cloud IAM",
+        "content": "* Added `--vendor-type` flag to `gcloud iam workforce-pools providers create-oidc`, `create-saml`, `update-oidc`, and `update-saml` commands.",
+        "summary": {
+          "title": "Workforce identity pool provider updates",
+          "summary": "New flags have been added to commands for creating and updating OIDC and SAML workforce identity pool providers. These flags allow for specifying the vendor type of the provider."
+        }
+      },
+      {
+        "kind": "Cloud Resource Manager",
+        "content": "* Promoted `gcloud resource-manager capability-configs` to GA.\n* Promoted `gcloud resource-manager boundary-configs` to GA.\n* Promoted `gcloud resource-manager boundaries` to GA.",
+        "summary": {
+          "title": "Resource Manager APIs reach General Availability",
+          "summary": "The Cloud Resource Manager API now offers General Availability for capability configurations, boundary configurations, and boundaries. This release signifies a stable and production-ready version of these essential resource management features."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added `--dry-run` flag to `gcloud beta run domain-mappings create` to\n  validate a domain mapping, including whether the domain is available,\n  without creating it.",
+        "summary": {
+          "title": "Dry run for domain mapping",
+          "summary": "You can now use the `--dry-run` flag with `gcloud beta run domain-mappings create` to validate your domain mapping before it's created. This helps ensure the domain is available and the mapping is valid without making any changes."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Added `POSTGRES_19` to `--database-version` flag of `gcloud sql instances create` and `gcloud sql instances patch`.\n* Added `--no-replication-lag-max-seconds-for-recreate` flag to `gcloud beta sql instances patch` to disable recreating a lagging MySQL read replica.\n* Updated 'cloud-sql-proxy' packaged component to use 2.26.2 of the Cloud SQL Proxy.",
+        "summary": {
+          "title": "New Cloud SQL features available",
+          "summary": "The latest update to Cloud SQL includes support for PostgreSQL 19, enhanced control over MySQL read replica recreation, and an updated Cloud SQL Proxy version."
+        }
+      },
+      {
+        "kind": "Cloud Spanner",
+        "content": "* Improved error output when `gcloud spanner cli` runs an incompatible\n  `spanner-cli` binary found on `PATH` instead of the `spanner-cli`\n  component; users are now directed to install the component.",
+        "summary": {
+          "title": "Cloud Spanner CLI Error Improvement",
+          "summary": "The Cloud Spanner CLI now provides clearer error messages when an incompatible binary is found on PATH. Users will be guided to install the correct spanner-cli component for a smoother experience."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Added `enable-automatic-failover` to `--boost-config` flag in `gcloud beta workstations configs create` and `gcloud beta workstations configs update`.",
+        "summary": {
+          "title": "Workstations failover support",
+          "summary": "Cloud Workstations now supports automatic failover for enhanced reliability. This feature can be enabled using the `enable-automatic-failover` option within the `--boost-config` flag for creating and updating workstation configurations."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Added `compute instance-templates export` command to all release tracks.\n* Removed WORKLOAD\\_IDENTITY choise in `--identity-type` flag.\n* Promoted `--instance-flexibility-policy` flag and min CPU platform and disk\n  overrides to GA for `gcloud compute instance-groups managed create` and\n  `update`.\n* Added `compute instance-templates import` command to all release tracks.",
+        "summary": {
+          "title": "New Compute Engine features",
+          "summary": "New commands for instance templates and updates to managed instance groups are now available. The `instance-templates export` and `import` commands are added, and instance flexibility policies are promoted to GA."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added `--failback` flag to `gcloud database-migration migration-jobs\n  promote` command to promote a migration job from destination back to source\n  during the FAILBACK phase.",
+        "summary": {
+          "title": "Promote Migration Job with Failback Option",
+          "summary": "A new --failback flag has been added to the promote command for migration jobs. This allows users to promote a migration job from its destination back to the source during the failback phase."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Promoted `--view`, `--memberships`, `--filter`, and `--sort-by` flags on\n  `gcloud container fleet|hub config-management describe` command to `GA`.\n* Updated `gcloud container fleet|hub memberships register` to allow skipping the Connect agent installation on non-GKE clusters via the `--no-install-connect-agent` flag.",
+        "summary": {
+          "title": "GKE Hub Configuration Management Enhancements",
+          "summary": "New features for GKE Hub's Configuration Management are now generally available, including advanced filtering and sorting options. Additionally, registering non-GKE clusters is simplified with the ability to skip agent installation."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Added the `reservedSystemCpus` kubelet config option to the `gcloud\n  container clusters create`, `gcloud container node-pools create`, and\n  `gcloud container node-pools update` commands. This option specifies the\n  list of CPUs reserved for host system services.\n* Added `ltsc2025` option to `--windows-os-version` flag of `gcloud container\n  node-pools create` and `gcloud container node-pools update` to create or\n  update Windows node pools using the Windows Server 2025 (LTSC2025) image.\n* Updated default kubectl to 1.35.9.\n* Additional kubectl versions:\n  + 1.31.14\n  + 1.32.13\n  + 1.33.13\n  + 1.34.12\n  + 1.35.9\n  + 1.36.5\n  + 1.37.1\n* Allowed `--num-nodes=0` for `gcloud container clusters create` to create\n  a cluster without a default node pool on GKE versions that support it.\n  Flags that only configure the default node pool, such as `--machine-type`\n  and `--enable-autoscaling`, can't be used with `--num-nodes=0`.",
+        "summary": {
+          "title": "Kubernetes Engine Updates",
+          "summary": "New options for CPU reservation and Windows Server 2025 node pools are now available. You can also create clusters without a default node pool and access updated kubectl versions."
+        }
+      },
+      {
+        "kind": "Network Connectivity",
+        "content": "* Added `--purpose` flag to `gcloud network-connectivity internal-ranges\n  create` to specify the purpose of the internal range.",
+        "summary": {
+          "title": "New flag for internal ranges",
+          "summary": "You can now specify the purpose of an internal range when creating it using the `--purpose` flag with `gcloud network-connectivity internal-ranges create`. This enhancement provides more granular control over network resources."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Promoted `--wildfire-analysis-profile` flag of\n  `gcloud network-security security-profile-groups create` and\n  `gcloud network-security security-profile-groups update` commands to GA.\n* Promoted `gcloud network-security security-profiles wildfire-analysis`\n  command group and its `create`, `delete`, `describe`, `list` and `update`\n  commands to GA.\n* Promoted `add-submission-rule`, `delete-submission-rule`,\n  `add-inline-cloud-analysis-rule` and `delete-inline-cloud-analysis-rule`\n  commands of `gcloud network-security security-profiles wildfire-analysis`\n  to GA.",
+        "summary": {
+          "title": "Network security wildfire analysis GA",
+          "summary": "The wildfire analysis profile flag and related commands for security profiles have been promoted to General Availability (GA). This includes commands for creating, updating, and managing wildfire analysis profiles and submission rules."
+        }
+      },
+      {
+        "kind": "Service Extensions",
+        "content": "* Created a new set of commands for `gcloud service-extensions extension-bindings` (alpha and beta).\n* Added `gcloud beta service-extensions cdn-edge-extensions` command group to manage `CdnEdgeExtension` resources.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "New commands for service extensions",
+          "summary": "New commands have been added to manage service extension bindings and CDN edge extensions. You can now use `gcloud service-extensions extension-bindings` and `gcloud beta service-extensions cdn-edge-extensions` to manage these resources."
+        }
+      }
+    ]
+  }
+}

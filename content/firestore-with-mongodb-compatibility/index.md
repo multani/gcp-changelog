@@ -1,5 +1,14 @@
 # Firestore with MongoDB compatibility
 
+## 2026-10-19
+
+### Feature
+
+[Text search](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/text-query)
+and [Geospatial search](https://docs.cloud.google.com/firestore/mongodb-compatibility/docs/geo-query)
+are generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-10-12
 
 ### Feature

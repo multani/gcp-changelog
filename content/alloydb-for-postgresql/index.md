@@ -1,5 +1,20 @@
 # AlloyDB for PostgreSQL
 
+## 2026-10-19
+
+### Feature
+
+Lakehouse federation in AlloyDB is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). This feature
+lets you query live data in BigQuery directly from AlloyDB using the
+`bigquery_fdw` extension without moving or duplicating the data.
+
+For more information, see
+[Access to real-time data in BigQuery overview](https://docs.cloud.google.com/alloydb/docs/access-real-time-data-overview)
+and
+[Configure access to real-time data in BigQuery](https://docs.cloud.google.com/alloydb/docs/configure-access-real-time-data).
+
+---
 ## 2026-09-21
 
 ### Feature

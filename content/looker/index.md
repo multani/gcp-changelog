@@ -64,6 +64,10 @@ The [Modern visualization theme](https://docs.cloud.google.com/looker/docs/moder
 
 Looker now supports connections to the ClickHouse 26+ dialect. ClickHouse 26+ uses modernized JDBC drivers and introduces support for [symmetric aggregates](https://docs.cloud.google.com/looker/docs/reference/param-explore-symmetric-aggregates). See the [ClickHouse](https://docs.cloud.google.com/looker/docs/db-config-clickhouse) documentation page for more information.
 
+### Feature
+
+Enhanced observability metrics, including user engagement and estimated token usage data on the [**Token usage** tab](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#ca-sa-token-usage) of the [Conversational Analytics System Activity dashboard](https://docs.cloud.google.com/looker/docs/system-activity-dashboards#conversational-analytics), are now generally available ([GA](https://cloud.google.com/products#product-launch-stages)). This launch also adds a **Daily Token Utilization** visualization and supports token usage observability for [Conversational Analytics data agents that are published to Gemini Enterprise](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents#publish-data-agents). (**Note**: This item was added on October 20, 2026.)
+
 ---
 ## 2026-10-08
 

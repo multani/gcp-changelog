@@ -1,5 +1,24 @@
 # Google Kubernetes Engine
 
+## 2026-10-20
+
+### Fixed
+
+This is an update to the release note regarding the Cloud Storage FUSE CSI
+driver issue published on
+[October 2, 2026](https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#October_02_2026).
+
+This issue has been resolved. You can upgrade your cluster control plane to the
+following versions to fix the issue for `ubuntu_containerd` and older
+`cos_containerd` node pools:
+
+* 1.36.5-gke.1032000 or later
+* 1.37.1-gke.1552000 or later
+* Specific 1.36.4 mitigation patches: 1.36.4-gke.1247001, 1.36.4-gke.1247002,
+  1.36.4-gke.1391001, 1.36.4-gke.1391003, 1.36.4-gke.1495001,
+  1.36.4-gke.1495003, 1.36.4-gke.2046001, 1.36.4-gke.2202002
+
+---
 ## 2026-10-19
 
 ### Feature

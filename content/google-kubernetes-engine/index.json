@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-10-20": [
+      {
+        "kind": "Fixed",
+        "content": "This is an update to the release note regarding the Cloud Storage FUSE CSI\ndriver issue published on\n[October 2, 2026](https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#October_02_2026).\n\nThis issue has been resolved. You can upgrade your cluster control plane to the\nfollowing versions to fix the issue for `ubuntu_containerd` and older\n`cos_containerd` node pools:\n\n* 1.36.5-gke.1032000 or later\n* 1.37.1-gke.1552000 or later\n* Specific 1.36.4 mitigation patches: 1.36.4-gke.1247001, 1.36.4-gke.1247002,\n  1.36.4-gke.1391001, 1.36.4-gke.1391003, 1.36.4-gke.1495001,\n  1.36.4-gke.1495003, 1.36.4-gke.2046001, 1.36.4-gke.2202002",
+        "summary": {
+          "title": "Cloud Storage FUSE CSI Driver Issue Resolved",
+          "summary": "The previously announced issue concerning the Cloud Storage FUSE CSI driver has been fixed. You can resolve this by upgrading your cluster control plane to the specified versions. This update ensures the proper functioning of your storage integration."
+        }
+      }
+    ],
     "2026-10-19": [
       {
         "kind": "Feature",

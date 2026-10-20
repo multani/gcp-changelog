@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-10-16T00:00:00+00:00</updated>
+  <updated>2026-10-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-10-19:feature:0</id>
+    <published>2026-10-19T00:00:00+00:00</published>
+    <updated>2026-10-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can now provision GKE nodes from storage-optimized <a href="https://docs.cloud.google.com/compute/docs/storage-optimized-machines#z4m_series">Z4M machine series</a>:</p>
+<ul>
+<li>Manually: starting from GKE version 1.36.3-gke.1767000 and later.</li>
+<li>Using compute classes, cluster autoscaler, node pool auto-creation and in
+  Autopilot clusters: starting from GKE version 1.37.0-gke.4713000 and later.</li>
+</ul>
+<p>Z4M machine series are suited for large parallel file systems to support AI/ML
+workloads and for I/O intensive workloads such as databases. GKE does not
+support Z4M bare metal instances at this time. See
+<a href="https://docs.cloud.google.com/kubernetes-engine/docs/concepts/machine-support#machine-support">Machine support with GKE</a>.</p>]]></content>
+    <summary>You can now provision GKE nodes using the new storage-optimized Z4M machine series. These machines are ideal for AI/ML and I/O intensive workloads. Support is available starting from GKE version 1.36.3-gke.1767000 for manual provisioning and 1.37.0-gke.4713000 for automated provisioning.</summary>
+    <title>Feature: New Storage Optimized Machines for GKE Nodes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

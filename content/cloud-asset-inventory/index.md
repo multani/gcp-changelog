@@ -1,5 +1,22 @@
 # Cloud Asset Inventory
 
+## 2026-10-19
+
+### Feature
+
+The following resource types are publicly available through the [ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://docs.cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), [Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds), and Search ([SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources), [SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)) APIs.
+
+* Fault Injection Testing
+  + `faulttesting.googleapis.com/Experiment`
+  + `faulttesting.googleapis.com/ExperimentTemplate`
+  + `faulttesting.googleapis.com/Validation`
+* Firebase Storage
+  + `firebasestorage.googleapis.com/Bucket`
+  + `firebasestorage.googleapis.com/DefaultBucket`
+* Privileged Access Manager
+  + `privilegedaccessmanager.googleapis.com/Entitlement`
+
+---
 ## 2026-10-13
 
 ### Feature

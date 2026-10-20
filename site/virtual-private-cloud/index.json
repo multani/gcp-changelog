@@ -1,6 +1,16 @@
 {
   "name": "Virtual Private Cloud",
   "entries": {
+    "2026-10-19": [
+      {
+        "kind": "Feature",
+        "content": "**General Availability**: VPC Flow Logs adds the following metadata annotations\nand packet drop reasons for Cloud NAT:\n\n* Metadata annotations: `connection.nat_ip`, `connection.nat_port`, and\n  `nat_gateway_details`\n* Drop reasons: `NAT_ENDPOINT_INDEPENDENT_CONFLICT`, `NAT_OUT_OF_CONNECTIONS`,\n  and `NAT_OUT_OF_PORTS`\n\nFor more information, see\n[Record format](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#record_format) and\n[Packet drop reasons](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#drop-reason).",
+        "summary": {
+          "title": "VPC Flow Logs now supports Cloud NAT metadata",
+          "summary": "VPC Flow Logs now includes metadata annotations and packet drop reasons for Cloud NAT. This enhancement allows for more detailed insights into network traffic and potential issues related to NAT operations."
+        }
+      }
+    ],
     "2026-10-07": [
       {
         "kind": "Feature",

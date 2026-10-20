@@ -783,6 +783,145 @@ Added support for bare metal TPUs.
 Upgraded app-arch/bzip2 to v1.0.8-r5.
 
 ---
+## 2026-09-21
+
+### Change
+
+
+
+### cos-125-19216-655-40
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.105](https://cos.googlesource.com/third_party/kernel/+/1133af89a76cd21b91110351a353e7300d39c96b ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.655.40/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for loading the CephFS kernel driver.
+
+### Fixed
+
+Fixed an issue where temporary efivarfs mounts under /tmp could persist after boot.
+
+### Fixed
+
+Upgraded app-arch/bzip2 to v1.0.8-r5.
+
+### Fixed
+
+Upgraded app-shells/dash to v0.5.13.5.
+
+### Security
+
+Fixed CVE-2026-0864 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2026-15308 in dev-lang/python.
+
+### Security
+
+Upgraded net-misc/rsync to version 3.5.0. This fixes CVE-2026-53791, CVE-2026-53784, CVE-2026-53786, CVE-2026-53789, CVE-2026-53795, CVE-2026-53797, CVE-2026-53798, CVE-2026-53799, CVE-2026-53800, CVE-2026-53801, CVE-2026-53802, CVE-2026-53803, CVE-2026-70455, CVE-2026-70457, CVE-2026-70459, CVE-2026-70461, and CVE-2026-70463.
+
+### Change
+
+
+
+### cos-129-19506-448-53
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.105](https://cos.googlesource.com/third_party/kernel/+/59eca8c9ae14588103453a37c861e6ab42230de4 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.448.53/lakitu/gpu_driver_versions.textproto) |
+
+### Feature
+
+Added support for loading the CephFS kernel driver.
+
+### Feature
+
+Fixed a performance issue in the GVE driver on multi-NUMA systems.
+
+### Fixed
+
+Fixed an issue where temporary efivarfs mounts under /tmp could persist after boot.
+
+### Security
+
+Fixed CVE-2026-0864 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2026-15308 in dev-lang/python.
+
+### Security
+
+Upgraded net-misc/rsync to version 3.5.0. This fixes CVE-2026-53791, CVE-2026-53784, CVE-2026-53786, CVE-2026-53789, CVE-2026-53795, CVE-2026-53797, CVE-2026-53798, CVE-2026-53799, CVE-2026-53800, CVE-2026-53801, CVE-2026-53802, CVE-2026-53803, CVE-2026-70455, CVE-2026-70457, CVE-2026-70459, CVE-2026-70461, and CVE-2026-70463.
+
+### Change
+
+
+
+### cos-121-18867-584-32
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.153](https://cos.googlesource.com/third_party/kernel/+/6e1e80a35e6e73b5aa0e3d6e0c87668f627b06f1 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.584.32/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed an issue where temporary efivarfs mounts under /tmp could persist after boot.
+
+### Fixed
+
+Upgraded app-misc/jq to v1.8.2.
+
+### Security
+
+Fixed CVE-2026-0864 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2026-15308 in dev-lang/python.
+
+### Security
+
+Fixed CVE-2026-80916 in the Linux kernel.
+
+### Security
+
+Upgraded net-misc/rsync to version 3.5.0. This fixes CVE-2026-53791, CVE-2026-53784, CVE-2026-53786, CVE-2026-53789, CVE-2026-53795, CVE-2026-53797, CVE-2026-53798, CVE-2026-53799, CVE-2026-53800, CVE-2026-53801, CVE-2026-53802, CVE-2026-53803, CVE-2026-70455, CVE-2026-70457, CVE-2026-70459, CVE-2026-70461, and CVE-2026-70463.
+
+### Change
+
+
+
+### cos-117-18613-731-29
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.153](https://cos.googlesource.com/third_party/kernel/+/6ee831c40108c3b447bc8edad4c4ebd45b746574 ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.731.29/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed an issue where temporary efivarfs mounts under /tmp could persist after boot.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.8.4.
+
+### Security
+
+Fixed CVE-2026-0864 in dev-lang/python.
+
+### Security
+
+Upgraded net-misc/rsync to version 3.5.0. This fixes CVE-2026-53791, CVE-2026-53784, CVE-2026-53786, CVE-2026-53789, CVE-2026-53795, CVE-2026-53797, CVE-2026-53798, CVE-2026-53799, CVE-2026-53800, CVE-2026-53801, CVE-2026-53802, CVE-2026-53803, CVE-2026-70455, CVE-2026-70457, CVE-2026-70459, CVE-2026-70461, and CVE-2026-70463.
+
+---
 ## 2026-09-17
 
 ### Change

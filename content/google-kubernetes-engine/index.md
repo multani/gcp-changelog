@@ -1,5 +1,21 @@
 # Google Kubernetes Engine
 
+## 2026-10-19
+
+### Feature
+
+You can now provision GKE nodes from storage-optimized [Z4M machine series](https://docs.cloud.google.com/compute/docs/storage-optimized-machines#z4m_series):
+
+* Manually: starting from GKE version 1.36.3-gke.1767000 and later.
+* Using compute classes, cluster autoscaler, node pool auto-creation and in
+  Autopilot clusters: starting from GKE version 1.37.0-gke.4713000 and later.
+
+Z4M machine series are suited for large parallel file systems to support AI/ML
+workloads and for I/O intensive workloads such as databases. GKE does not
+support Z4M bare metal instances at this time. See
+[Machine support with GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/machine-support#machine-support).
+
+---
 ## 2026-10-16
 
 ### Change

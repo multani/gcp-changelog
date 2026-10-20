@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Virtual Private Cloud</title>
   <subtitle>Changelog for Google Cloud product: Virtual Private Cloud</subtitle>
-  <updated>2026-10-07T00:00:00+00:00</updated>
+  <updated>2026-10-19T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:virtual-private-cloud</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/virtual-private-cloud/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:virtual-private-cloud:2026-10-19:feature:0</id>
+    <published>2026-10-19T00:00:00+00:00</published>
+    <updated>2026-10-19T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>General Availability</strong>: VPC Flow Logs adds the following metadata annotations
+and packet drop reasons for Cloud NAT:</p>
+<ul>
+<li>Metadata annotations: <code>connection.nat_ip</code>, <code>connection.nat_port</code>, and
+  <code>nat_gateway_details</code></li>
+<li>Drop reasons: <code>NAT_ENDPOINT_INDEPENDENT_CONFLICT</code>, <code>NAT_OUT_OF_CONNECTIONS</code>,
+  and <code>NAT_OUT_OF_PORTS</code></li>
+</ul>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#record_format">Record format</a> and
+<a href="https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#drop-reason">Packet drop reasons</a>.</p>]]></content>
+    <summary>VPC Flow Logs now includes metadata annotations and packet drop reasons for Cloud NAT. This enhancement allows for more detailed insights into network traffic and potential issues related to NAT operations.</summary>
+    <title>Feature: VPC Flow Logs now supports Cloud NAT metadata</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

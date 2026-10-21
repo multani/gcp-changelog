@@ -1,5 +1,21 @@
 # Spanner
 
+## 2026-10-20
+
+### Feature
+
+Spanner supports approximate aggregate functions for both GoogleSQL and
+PostgreSQL dialects. These functions produce
+statistical estimates of distinct counts, allowing you to compute results faster
+and save resources on large datasets compared to exact aggregation.
+
+For more information, see approximate aggregate functions
+([GoogleSQL](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/approximate_aggregate_functions) and
+[PostgreSQL](https://docs.cloud.google.com/spanner/docs/reference/postgresql/functions#approximate-aggregate)),
+[HyperLogLog++ functions](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/hll_functions), and
+[Sketches](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/sketches).
+
+---
 ## 2026-09-18
 
 ### Feature

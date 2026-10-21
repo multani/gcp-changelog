@@ -4,6 +4,12 @@
 
 ### Fixed
 
+A security issue in GKE fleet management that could have allowed
+unauthorized configuration changes to clusters registered to a fleet has been
+resolved. The fixes are rolled out to all regions, and no action is required.
+
+### Fixed
+
 This is an update to the release note regarding the Cloud Storage FUSE CSI
 driver issue published on
 [October 2, 2026](https://docs.cloud.google.com/kubernetes-engine/docs/release-notes#October_02_2026).

@@ -1,5 +1,52 @@
 # Gemini Enterprise
 
+## 2026-10-20
+
+### Feature
+
+**Gemini Enterprise: Antigravity Enterprise Gateway support**
+
+Antigravity Enterprise Gateway lets organizations route model inference requests
+from the Antigravity app, Antigravity CLI, and Antigravity for IDEs through a
+centralized enterprise gateway before forwarding them to Google Cloud. This
+deployment enables organizations to inspect and audit model traffic, enforce
+custom security and network egress policies, and authenticate developers
+through a gateway API key without requiring individual Google Account sign-in.
+
+Requests routed through Antigravity Enterprise Gateway use a centralized
+Google Cloud service account and are billed on a pay-as-you-go (PAYG)
+consumption basis through the Gemini Enterprise Agent Platform. This
+deployment model doesn't use your Gemini Enterprise seat-based subscription
+quotas (such as included Standard or Plus monthly allowances). You can't use
+a gateway and sign in with a Google Account at the same time. If you want to
+use your included subscription quota instead, disable the enterprise gateway
+and sign in with your Google Account.
+
+This feature is generally available (GA).
+
+For more information, see:
+
+* [Deploy Antigravity Enterprise
+  Gateway](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools/deploy-enterprise-gateway)
+* [Connect Antigravity to an Enterprise
+  Gateway](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools/connect-enterprise-gateway).
+
+### Breaking
+
+**Gemini Enterprise: Gemini 2.5 Pro discontinued in Canada and Japan**
+
+Gemini 2.5 Pro has been discontinued for in-country Gemini Enterprise app
+deployments in Canada and Japan. Agents and chat sessions in these regions
+that previously used Gemini 2.5 Pro automatically switch to in-country
+Gemini 3.5 Flash.
+
+Gemini 2.5 Pro remains available in the `global`, `us`, and `eu` regions.
+
+For more information, see [Data residency for Gemini
+Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations) and [Manage web app
+features](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).
+
+---
 ## 2026-10-16
 
 ### Feature

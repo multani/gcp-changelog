@@ -2,9 +2,61 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-10-16T00:00:00+00:00</updated>
+  <updated>2026-10-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-10-20:feature:0</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Antigravity Enterprise Gateway support</strong></p>
+<p>Antigravity Enterprise Gateway lets organizations route model inference requests
+from the Antigravity app, Antigravity CLI, and Antigravity for IDEs through a
+centralized enterprise gateway before forwarding them to Google Cloud. This
+deployment enables organizations to inspect and audit model traffic, enforce
+custom security and network egress policies, and authenticate developers
+through a gateway API key without requiring individual Google Account sign-in.</p>
+<p>Requests routed through Antigravity Enterprise Gateway use a centralized
+Google Cloud service account and are billed on a pay-as-you-go (PAYG)
+consumption basis through the Gemini Enterprise Agent Platform. This
+deployment model doesn't use your Gemini Enterprise seat-based subscription
+quotas (such as included Standard or Plus monthly allowances). You can't use
+a gateway and sign in with a Google Account at the same time. If you want to
+use your included subscription quota instead, disable the enterprise gateway
+and sign in with your Google Account.</p>
+<p>This feature is generally available (GA).</p>
+<p>For more information, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools/deploy-enterprise-gateway">Deploy Antigravity Enterprise
+  Gateway</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools/connect-enterprise-gateway">Connect Antigravity to an Enterprise
+  Gateway</a>.</li>
+</ul>]]></content>
+    <summary>Antigravity Enterprise Gateway provides a centralized way for organizations to manage and secure model inference requests. This feature allows for traffic inspection, policy enforcement, and simplified authentication without individual Google Account sign-ins, offering a separate billing model based on usage.</summary>
+    <title>Feature: New Gateway for Antigravity Enterprise</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-10-20:breaking:1</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Gemini 2.5 Pro discontinued in Canada and Japan</strong></p>
+<p>Gemini 2.5 Pro has been discontinued for in-country Gemini Enterprise app
+deployments in Canada and Japan. Agents and chat sessions in these regions
+that previously used Gemini 2.5 Pro automatically switch to in-country
+Gemini 3.5 Flash.</p>
+<p>Gemini 2.5 Pro remains available in the <code>global</code>, <code>us</code>, and <code>eu</code> regions.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/locations">Data residency for Gemini
+Enterprise</a> and <a href="https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features">Manage web app
+features</a>.</p>]]></content>
+    <summary>Gemini 2.5 Pro is no longer available for in-country Gemini Enterprise deployments in Canada and Japan. Agents and chat sessions in these regions will now use Gemini 3.5 Flash. Gemini 2.5 Pro continues to be supported in global, US, and EU regions.</summary>
+    <title>Breaking: Gemini Enterprise: Gemini 2.5 Pro Discontinued in Canada and Japan</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

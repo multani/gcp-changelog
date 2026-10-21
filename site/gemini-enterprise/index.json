@@ -1,6 +1,24 @@
 {
   "name": "Gemini Enterprise",
   "entries": {
+    "2026-10-20": [
+      {
+        "kind": "Feature",
+        "content": "**Gemini Enterprise: Antigravity Enterprise Gateway support**\n\nAntigravity Enterprise Gateway lets organizations route model inference requests\nfrom the Antigravity app, Antigravity CLI, and Antigravity for IDEs through a\ncentralized enterprise gateway before forwarding them to Google Cloud. This\ndeployment enables organizations to inspect and audit model traffic, enforce\ncustom security and network egress policies, and authenticate developers\nthrough a gateway API key without requiring individual Google Account sign-in.\n\nRequests routed through Antigravity Enterprise Gateway use a centralized\nGoogle Cloud service account and are billed on a pay-as-you-go (PAYG)\nconsumption basis through the Gemini Enterprise Agent Platform. This\ndeployment model doesn't use your Gemini Enterprise seat-based subscription\nquotas (such as included Standard or Plus monthly allowances). You can't use\na gateway and sign in with a Google Account at the same time. If you want to\nuse your included subscription quota instead, disable the enterprise gateway\nand sign in with your Google Account.\n\nThis feature is generally available (GA).\n\nFor more information, see:\n\n* [Deploy Antigravity Enterprise\n  Gateway](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools/deploy-enterprise-gateway)\n* [Connect Antigravity to an Enterprise\n  Gateway](https://docs.cloud.google.com/gemini/enterprise/docs/ai-developer-tools/connect-enterprise-gateway).",
+        "summary": {
+          "title": "New Gateway for Antigravity Enterprise",
+          "summary": "Antigravity Enterprise Gateway provides a centralized way for organizations to manage and secure model inference requests. This feature allows for traffic inspection, policy enforcement, and simplified authentication without individual Google Account sign-ins, offering a separate billing model based on usage."
+        }
+      },
+      {
+        "kind": "Breaking",
+        "content": "**Gemini Enterprise: Gemini 2.5 Pro discontinued in Canada and Japan**\n\nGemini 2.5 Pro has been discontinued for in-country Gemini Enterprise app\ndeployments in Canada and Japan. Agents and chat sessions in these regions\nthat previously used Gemini 2.5 Pro automatically switch to in-country\nGemini 3.5 Flash.\n\nGemini 2.5 Pro remains available in the `global`, `us`, and `eu` regions.\n\nFor more information, see [Data residency for Gemini\nEnterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations) and [Manage web app\nfeatures](https://docs.cloud.google.com/gemini/enterprise/docs/manage-web-app-features).",
+        "summary": {
+          "title": "Gemini Enterprise: Gemini 2.5 Pro Discontinued in Canada and Japan",
+          "summary": "Gemini 2.5 Pro is no longer available for in-country Gemini Enterprise deployments in Canada and Japan. Agents and chat sessions in these regions will now use Gemini 3.5 Flash. Gemini 2.5 Pro continues to be supported in global, US, and EU regions."
+        }
+      }
+    ],
     "2026-10-16": [
       {
         "kind": "Feature",

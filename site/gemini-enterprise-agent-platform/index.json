@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-10-21": [
+      {
+        "kind": "Fixed",
+        "content": "**CodeMender updates (v0.16.0)**\n\nThis release introduces updates to CodeMender:\n\n* **Deep scan by default (`cm find`)**: `cm find` now runs a concurrent\n  file-by-file deep scan (`--deep`) by default for higher vulnerability recall\n  across repositories. To run a single-session quick scan instead, pass the\n  `--quick` flag (`cm find --quick`). `cm stats` now breaks down scan usage by\n  mode (`--deep`, `--quick`, and `--diff`).\n* **Pre-flight health checks (`cm health`)**: Added the `cm health` command\n  (with `--json`, `--strict`, and `--timeout` flags) to verify credentials,\n  configuration, endpoint reachability, and project authorization before\n  running scans.\n* **Expanded file discovery**: `cm find` now scans `.hh`, `.hxx`, `.inl`, and\n  `.ipp` C++ headers, extensionless scripts with supported language shebangs\n  (`python`, `node`, `ruby`, and `php`), nested `build/`, `target/`, `obj/`,\n  and `bin/` source directories, and production code under `spec/`, `locale/`,\n  and `i18n/`.\n* **Bug fixes**:\n  + Restricted `cm verify` file writes to `.exploit/` inside the project\n    root and skipped missing or out-of-scope session artifacts during\n    workspace restore.\n  + Capped single-turn file reads at 256 KiB with pagination hints, bounded\n    unified diff generation on large files, and raised `run_command` default\n    and maximum timeouts to 120 seconds and 300 seconds.\n  + Fixed an issue where sandboxed sessions could not write tool call\n    entries to `~/.codemender/audit.log`.\n  + Updated multi-file `--deep` and `--diff` scans to report `INCOMPLETE`\n    status when one or more file scans fail.\n\nFor more information, see the\n[CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).",
+        "summary": {
+          "title": "CodeMender v0.16.0: Enhanced Scanning and Health Checks",
+          "summary": "CodeMender v0.16.0 improves vulnerability detection with a new default deep scan for `cm find` and introduces `cm health` for pre-scan verification. This release also expands file discovery and includes several important bug fixes for a more robust experience."
+        }
+      }
+    ],
     "2026-10-14": [
       {
         "kind": "Feature",

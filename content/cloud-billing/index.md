@@ -1,5 +1,27 @@
 # Cloud Billing
 
+## 2026-10-21
+
+### Feature
+
+**SKU attributes and granular usage units in pricing data export (Preview)**
+
+SKU attributes and granular usage units are now available in
+[Preview](https://cloud.google.com/products#product-launch-stages)
+in the Cloud Billing
+[pricing data export to BigQuery](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/pricing-data).
+
+* **SKU attributes**: SKU attributes are key-value pairs that describe the SKU.
+  For example, *Key*: `model_name`, *Value*: `gemini_2_5_flash`.
+* **Granular usage units**: Granular usage units are the usage unit of the SKU,
+  such as `tokens`.
+
+For more information about these dimensions, see the following:
+
+* [SKU attributes](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/pricing-data#sku_attributes)
+* [Granular usage units](https://docs.cloud.google.com/billing/docs/how-to/export-data-bigquery-tables/pricing-data#sku_granular_usage_units)
+
+---
 ## 2026-10-13
 
 ### Feature

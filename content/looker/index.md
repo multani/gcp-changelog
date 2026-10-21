@@ -1,5 +1,14 @@
 # Looker
 
+## 2026-10-21
+
+### Feature
+
+[Automated cataloging and ingestion of Looker (Google Cloud core) metadata with Knowledge Catalog](https://docs.cloud.google.com/looker/docs/looker-core-dataplex) is now generally available (GA). This includes support for additional granular metadata (including dimension/measure definitions, default queries, and relationships) and new asset types: LookML dashboards, LookML dashboard elements, and agents.
+
+The [data lineage integration](https://docs.cloud.google.com/looker/docs/looker-core-lineage) remains in Preview.
+
+---
 ## 2026-10-15
 
 ### Feature

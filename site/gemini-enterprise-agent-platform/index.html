@@ -3000,6 +3000,40 @@
 
 
 <h1 id="gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</h1>
+<h2 id="2026-10-21">2026-10-21</h2>
+<h3 id="fixed">Fixed</h3>
+<p><strong>CodeMender updates (v0.16.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Deep scan by default (<code>cm find</code>)</strong>: <code>cm find</code> now runs a concurrent
+  file-by-file deep scan (<code>--deep</code>) by default for higher vulnerability recall
+  across repositories. To run a single-session quick scan instead, pass the
+  <code>--quick</code> flag (<code>cm find --quick</code>). <code>cm stats</code> now breaks down scan usage by
+  mode (<code>--deep</code>, <code>--quick</code>, and <code>--diff</code>).</li>
+<li><strong>Pre-flight health checks (<code>cm health</code>)</strong>: Added the <code>cm health</code> command
+  (with <code>--json</code>, <code>--strict</code>, and <code>--timeout</code> flags) to verify credentials,
+  configuration, endpoint reachability, and project authorization before
+  running scans.</li>
+<li><strong>Expanded file discovery</strong>: <code>cm find</code> now scans <code>.hh</code>, <code>.hxx</code>, <code>.inl</code>, and
+  <code>.ipp</code> C++ headers, extensionless scripts with supported language shebangs
+  (<code>python</code>, <code>node</code>, <code>ruby</code>, and <code>php</code>), nested <code>build/</code>, <code>target/</code>, <code>obj/</code>,
+  and <code>bin/</code> source directories, and production code under <code>spec/</code>, <code>locale/</code>,
+  and <code>i18n/</code>.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Restricted <code>cm verify</code> file writes to <code>.exploit/</code> inside the project
+    root and skipped missing or out-of-scope session artifacts during
+    workspace restore.</li>
+<li>Capped single-turn file reads at 256 KiB with pagination hints, bounded
+    unified diff generation on large files, and raised <code>run_command</code> default
+    and maximum timeouts to 120 seconds and 300 seconds.</li>
+<li>Fixed an issue where sandboxed sessions could not write tool call
+    entries to <code>~/.codemender/audit.log</code>.</li>
+<li>Updated multi-file <code>--deep</code> and <code>--diff</code> scans to report <code>INCOMPLETE</code>
+    status when one or more file scans fail.</li>
+</ul>
+<p>For more information, see the
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>
+<hr />
 <h2 id="2026-10-14">2026-10-14</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Priority PayGo support for Gemini Nano Banana 2.1</strong></p>
@@ -3008,7 +3042,7 @@ is available in
 <a href="https://cloud.google.com/products#product-launch-stages">General Availability (GA)</a>
 for <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/nano-banana-2-1">Gemini Nano Banana 2.1</a>
 (<code>gemini-nano-banana-2.1</code>) on the <code>global</code> endpoint.</p>
-<h3 id="fixed">Fixed</h3>
+<h3 id="fixed_1">Fixed</h3>
 <p><strong>CodeMender updates (v0.15.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3062,7 +3096,7 @@ cybersecurity use cases, is also available in GA behind the
 and the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/guides/gemini-4-argon">developer's guide to Gemini 4 Argon</a>.</p>
 <hr />
 <h2 id="2026-10-12">2026-10-12</h2>
-<h3 id="fixed_1">Fixed</h3>
+<h3 id="fixed_2">Fixed</h3>
 <p><strong>CodeMender updates (v0.14.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3092,7 +3126,7 @@ and the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/
 <p><strong>Anthropic's Claude Haiku 5.5</strong></p>
 <p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5">Claude Haiku 5.5</a>
 is available in Model Garden.</p>
-<h3 id="fixed_2">Fixed</h3>
+<h3 id="fixed_3">Fixed</h3>
 <p><strong>CodeMender updates (v0.13.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3116,7 +3150,7 @@ and editing, offering improved visual quality, prompt adherence, and text
 rendering across <code>1K</code>, <code>2K</code>, and <code>4K</code> output resolutions.</p>
 <hr />
 <h2 id="2026-10-05">2026-10-05</h2>
-<h3 id="fixed_3">Fixed</h3>
+<h3 id="fixed_4">Fixed</h3>
 <p><strong>CodeMender updates (v0.12.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3150,7 +3184,7 @@ gateway and across Google Cloud services, tools, agents, and MCP servers.</p>
 is available in
 <a href="https://cloud.google.com/products#product-launch-stages">Preview</a> in Model
 Garden.</p>
-<h3 id="fixed_4">Fixed</h3>
+<h3 id="fixed_5">Fixed</h3>
 <p><strong>CodeMender updates (v0.11.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3262,7 +3296,7 @@ is available in
 1.3 from Meta is a reasoning model trained for agentic workflows and
 competitive coding. It delivers higher first-attempt accuracy, reliable built-in
 tool calling with MCP support, and 1M-token long context for multi-step tasks.</p>
-<h3 id="fixed_5">Fixed</h3>
+<h3 id="fixed_6">Fixed</h3>
 <p><strong>CodeMender updates (v0.10.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3285,7 +3319,7 @@ tool calling with MCP support, and 1M-token long context for multi-step tasks.</
 is available in Model Garden.</p>
 <hr />
 <h2 id="2026-09-21">2026-09-21</h2>
-<h3 id="fixed_6">Fixed</h3>
+<h3 id="fixed_7">Fixed</h3>
 <p><strong>CodeMender updates (v0.9.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3367,7 +3401,7 @@ in Agent Studio.</p>
 <li><strong>Gemini 3.1 Flash-Lite Image (<code>gemini-3.1-flash-lite-image</code>)</strong>: Retirement date is scheduled for June 28, 2027 or later.</li>
 </ul>
 <p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions">Gemini model versions and lifecycle</a>.</p>
-<h3 id="fixed_7">Fixed</h3>
+<h3 id="fixed_8">Fixed</h3>
 <p><strong>CodeMender updates (v0.7.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -3468,7 +3502,7 @@ page</a>.</p>
 <p><strong>Provisioned Throughput support for Gemini Omni</strong></p>
 <p>Provisioned Throughput supports Gemini Omni. To learn more, see
 <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/supported-models">supported models</a>.</p>
-<h3 id="fixed_8">Fixed</h3>
+<h3 id="fixed_9">Fixed</h3>
 <p><strong>CodeMender updates (v0.6.0)</strong></p>
 <p>This release introduces updates to CodeMender:</p>
 <ul>
@@ -4285,7 +4319,7 @@ more, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-pla
 overview</a>.</p>
 <hr />
 <h2 id="2026-05-06">2026-05-06</h2>
-<h3 id="fixed_9">Fixed</h3>
+<h3 id="fixed_10">Fixed</h3>
 <p>Fixed an issue with <strong>Audio track extraction (Gemini Embedding 2 only)</strong> where the <code>audio_track_extraction</code> feature did not work. For more information, see <a href="https://issuetracker.google.com/504505771">Issue #504505771</a>.</p>
 <h3 id="change_12">Change</h3>
 <p><strong>Agent Platform Gemini 3.1 Flash Image and Gemini 3 Pro Image</strong></p>
@@ -4657,6 +4691,9 @@ changes:</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#gemini-enterprise-agent-platform">Gemini Enterprise Agent Platform</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-21" class="nav-link">2026-10-21</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-14" class="nav-link">2026-10-14</a>
           </li>

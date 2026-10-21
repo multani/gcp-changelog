@@ -1,5 +1,21 @@
 # BigQuery
 
+## 2026-10-21
+
+### Feature
+
+The
+[`AI.CHUNK_DOCUMENT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-chunk-document)
+is a table-valued function that splits
+unstructured documents into semantically coherent text chunks
+optimized for vector embeddings and Retrieval-Augmented Generation (RAG)
+workflows.
+
+This function is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-16
 
 ### Feature

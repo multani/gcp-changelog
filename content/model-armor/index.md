@@ -1,5 +1,16 @@
 # Model Armor
 
+## 2026-10-21
+
+### Feature
+
+You can use custom organization policies to ensure that all new or updated
+Model Armor `Template` resources enforce required filters, like
+responsible AI or prompt injection and jailbreak detection. This feature is
+generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
+For more information, see [Use custom organization policies](https://docs.cloud.google.com/model-armor/access-control/custom-constraints).
+
+---
 ## 2026-10-09
 
 ### Feature

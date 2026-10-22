@@ -2,9 +2,89 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google SecOps Marketplace</title>
   <subtitle>Changelog for Google Cloud product: Google SecOps Marketplace</subtitle>
-  <updated>2026-10-14T00:00:00+00:00</updated>
+  <updated>2026-10-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-secops-marketplace</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-secops-marketplace/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-21:feature:0</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Threat Intelligence</strong>: Version 22.0</p>
+<ul>
+<li>
+<p>The following new connector has been added:</p>
+</li>
+<li>
+<p><strong>Google Threat Intelligence - GTI Alerts Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 22.0 of Google Threat Intelligence introduces the new GTI Alerts Connector. This addition enhances our threat intelligence capabilities by integrating GTI alerts directly into your workflow.</summary>
+    <title>Feature: New GTI Alerts Connector Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-21:change:1</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Siemplify</strong>: Version 114.0</p>
+<ul>
+<li>
+<p>Added support for lazy case loading so that case data is no longer attached to
+  the remote agent task when enabled by the platform in the following action:</p>
+</li>
+<li>
+<p><strong>Run Remote</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Siemplify version 114.0 introduces support for lazy case loading, optimizing performance by decoupling case data from remote agent tasks. This enhancement applies to the 'Run Remote' action, ensuring more efficient data handling within the platform.</summary>
+    <title>Change: Siemplify v114.0: Lazy Case Loading</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-21:change:2</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Palo Alto Cortex XDR</strong>: Version 34.0</p>
+<ul>
+<li>
+<p>Added the <strong>Entities To Ignore</strong> parameter to exclude alerts containing
+  specified IP addresses, CIDR ranges, domains, file hashes, hostnames, or
+  usernames in the following connector:</p>
+</li>
+<li>
+<p><strong>Palo Alto Cortex XDR - Incidents Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 34.0 of Palo Alto Cortex XDR introduces the Entities To Ignore parameter. This enhancement allows users to exclude specific IP addresses, domains, hostnames, and other entities from alerts within the Incidents Connector, reducing alert noise.</summary>
+    <title>Change: New Exclusion Options in Cortex XDR</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-21:change:3</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Threat Intelligence</strong>: Version 22.0</p>
+<ul>
+<li>
+<p>Improved private submission handling when retrieving comments in the following
+  action:</p>
+</li>
+<li>
+<p><strong>Submit File</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 22.0 of Google Threat Intelligence introduces improvements to private submission handling. This change enhances the process of retrieving comments during the 'Submit File' action.</summary>
+    <title>Change: Updated file submission handling</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -82,55 +162,6 @@
     <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:3</id>
     <published>2026-10-14T00:00:00+00:00</published>
     <updated>2026-10-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Google Threat Intelligence</strong>: Version 21.0</p>
-<ul>
-<li>
-<p>Improved issue ingestion to adaptively scan the configured
-  <code>Max Hours Backwards</code> time range and skip periods without new issues in the following
-  connector:</p>
-</li>
-<li>
-<p><strong>Google Threat Intelligence - ASM Issues Connector</strong></p>
-</li>
-<li>
-<p>Added the <strong>Anonymize Credential</strong> parameter to optionally mask compromised
-  passwords with asterisks in ingested alerts and events in the following
-  connector:</p>
-</li>
-<li>
-<p><strong>Google Threat Intelligence - DTM Alerts Connector</strong></p>
-</li>
-</ul>]]></content>
-    <summary>Version 21.0 of Google Threat Intelligence introduces enhancements to issue ingestion for the ASM Issues Connector, improving efficiency by adapting to the specified time range. Additionally, the DTM Alerts Connector now supports an 'Anonymize Credential' parameter to mask compromised passwords in alerts and events.</summary>
-    <title>Change: New Security Intelligence Features</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:4</id>
-    <published>2026-10-14T00:00:00+00:00</published>
-    <updated>2026-10-14T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p><strong>Email Utilities</strong>: Version 17.0</p>
-<ul>
-<li>
-<p>Resolved an issue causing entities to not be created when <code>Create Observed Entities</code>
-  was configured for specific entity types in the following action:</p>
-</li>
-<li>
-<p><strong>Parse Case Wall Email</strong></p>
-</li>
-</ul>]]></content>
-    <summary>Version 17.0 of Email Utilities has been released, resolving an issue with entity creation in the Parse Case Wall Email action. This update ensures entities are now correctly created when configured for specific types.</summary>
-    <title>Change: Email Utilities Update Released</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:5</id>
-    <published>2026-10-14T00:00:00+00:00</published>
-    <updated>2026-10-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Microsoft Graph Mail</strong>: Version 49.0</p>
 <ul>
 <li>
@@ -157,7 +188,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:6</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:4</id>
     <published>2026-10-14T00:00:00+00:00</published>
     <updated>2026-10-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Splunk</strong>: Version 68.0</p>
@@ -177,7 +208,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:7</id>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:5</id>
     <published>2026-10-14T00:00:00+00:00</published>
     <updated>2026-10-14T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Google Chronicle</strong>: Version 98.0</p>
@@ -200,6 +231,55 @@
 </ul>]]></content>
     <summary>Version 98.0 of Chronicle introduces caching for data table responses in several actions to improve performance. This update also resolves an issue with environment extraction in the Chronicle Alerts Connector, ensuring it correctly processes multi-event alerts.</summary>
     <title>Change: Chronicle Version 98.0 Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:6</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email Utilities</strong>: Version 17.0</p>
+<ul>
+<li>
+<p>Resolved an issue causing entities to not be created when <strong>Create Observed Entities</strong>
+  was configured for specific entity types in the following action:</p>
+</li>
+<li>
+<p><strong>Parse Case Wall Email</strong></p>
+</li>
+</ul>]]></content>
+    <summary>Version 17.0 of Email Utilities resolves an issue with entity creation in the Parse Case Wall Email action. This fix ensures entities are properly created when configured for specific types.</summary>
+    <title>Change: Email Utilities Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops-marketplace:2026-10-14:change:7</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Threat Intelligence</strong>: Version 21.0</p>
+<ul>
+<li>
+<p>Improved issue ingestion to adaptively scan the configured
+  <strong>Max Hours Backwards</strong> time range and skip periods without new issues in the following
+  connector:</p>
+</li>
+<li>
+<p><strong>Google Threat Intelligence - ASM Issues Connector</strong></p>
+</li>
+<li>
+<p>Added the <strong>Anonymize Credential</strong> parameter to optionally mask compromised
+  passwords with asterisks in ingested alerts and events in the following
+  connector:</p>
+</li>
+<li>
+<p><strong>Google Threat Intelligence - DTM Alerts Connector</strong></p>
+</li>
+</ul>]]></content>
+    <summary>This update enhances issue ingestion for better efficiency and introduces an option to anonymize credentials in ingested alerts and events, improving data security.</summary>
+    <title>Change: Security Intelligence Update</title>
   </entry>
   <entry>
     <author>

@@ -1,5 +1,44 @@
 # Google SecOps Marketplace
 
+## 2026-10-21
+
+### Feature
+
+**Google Threat Intelligence**: Version 22.0
+
+* The following new connector has been added:
+
+  + **Google Threat Intelligence - GTI Alerts Connector**
+
+### Change
+
+**Siemplify**: Version 114.0
+
+* Added support for lazy case loading so that case data is no longer attached to
+  the remote agent task when enabled by the platform in the following action:
+
+  + **Run Remote**
+
+### Change
+
+**Palo Alto Cortex XDR**: Version 34.0
+
+* Added the **Entities To Ignore** parameter to exclude alerts containing
+  specified IP addresses, CIDR ranges, domains, file hashes, hostnames, or
+  usernames in the following connector:
+
+  + **Palo Alto Cortex XDR - Incidents Connector**
+
+### Change
+
+**Google Threat Intelligence**: Version 22.0
+
+* Improved private submission handling when retrieving comments in the following
+  action:
+
+  + **Submit File**
+
+---
 ## 2026-10-14
 
 ### Change
@@ -38,30 +77,6 @@
 
 ### Change
 
-**Google Threat Intelligence**: Version 21.0
-
-* Improved issue ingestion to adaptively scan the configured
-  `Max Hours Backwards` time range and skip periods without new issues in the following
-  connector:
-
-  + **Google Threat Intelligence - ASM Issues Connector**
-* Added the **Anonymize Credential** parameter to optionally mask compromised
-  passwords with asterisks in ingested alerts and events in the following
-  connector:
-
-  + **Google Threat Intelligence - DTM Alerts Connector**
-
-### Change
-
-**Email Utilities**: Version 17.0
-
-* Resolved an issue causing entities to not be created when `Create Observed Entities`
-  was configured for specific entity types in the following action:
-
-  + **Parse Case Wall Email**
-
-### Change
-
 **Microsoft Graph Mail**: Version 49.0
 
 * Updated the **Folder Name** parameter to be optional, allowing searches across
@@ -97,6 +112,30 @@
   multi-event alerts in the following connector:
 
   + **Chronicle Alerts Connector**
+
+### Change
+
+**Email Utilities**: Version 17.0
+
+* Resolved an issue causing entities to not be created when **Create Observed Entities**
+  was configured for specific entity types in the following action:
+
+  + **Parse Case Wall Email**
+
+### Change
+
+**Google Threat Intelligence**: Version 21.0
+
+* Improved issue ingestion to adaptively scan the configured
+  **Max Hours Backwards** time range and skip periods without new issues in the following
+  connector:
+
+  + **Google Threat Intelligence - ASM Issues Connector**
+* Added the **Anonymize Credential** parameter to optionally mask compromised
+  passwords with asterisks in ingested alerts and events in the following
+  connector:
+
+  + **Google Threat Intelligence - DTM Alerts Connector**
 
 ---
 ## 2026-10-07

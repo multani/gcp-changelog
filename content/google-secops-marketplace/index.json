@@ -1,6 +1,40 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-10-21": [
+      {
+        "kind": "Feature",
+        "content": "**Google Threat Intelligence**: Version 22.0\n\n* The following new connector has been added:\n\n  + **Google Threat Intelligence - GTI Alerts Connector**",
+        "summary": {
+          "title": "New GTI Alerts Connector Available",
+          "summary": "Version 22.0 of Google Threat Intelligence introduces the new GTI Alerts Connector. This addition enhances our threat intelligence capabilities by integrating GTI alerts directly into your workflow."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Siemplify**: Version 114.0\n\n* Added support for lazy case loading so that case data is no longer attached to\n  the remote agent task when enabled by the platform in the following action:\n\n  + **Run Remote**",
+        "summary": {
+          "title": "Siemplify v114.0: Lazy Case Loading",
+          "summary": "Siemplify version 114.0 introduces support for lazy case loading, optimizing performance by decoupling case data from remote agent tasks. This enhancement applies to the 'Run Remote' action, ensuring more efficient data handling within the platform."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Palo Alto Cortex XDR**: Version 34.0\n\n* Added the **Entities To Ignore** parameter to exclude alerts containing\n  specified IP addresses, CIDR ranges, domains, file hashes, hostnames, or\n  usernames in the following connector:\n\n  + **Palo Alto Cortex XDR - Incidents Connector**",
+        "summary": {
+          "title": "New Exclusion Options in Cortex XDR",
+          "summary": "Version 34.0 of Palo Alto Cortex XDR introduces the Entities To Ignore parameter. This enhancement allows users to exclude specific IP addresses, domains, hostnames, and other entities from alerts within the Incidents Connector, reducing alert noise."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Threat Intelligence**: Version 22.0\n\n* Improved private submission handling when retrieving comments in the following\n  action:\n\n  + **Submit File**",
+        "summary": {
+          "title": "Updated file submission handling",
+          "summary": "Version 22.0 of Google Threat Intelligence introduces improvements to private submission handling. This change enhances the process of retrieving comments during the 'Submit File' action."
+        }
+      }
+    ],
     "2026-10-14": [
       {
         "kind": "Change",
@@ -28,22 +62,6 @@
       },
       {
         "kind": "Change",
-        "content": "**Google Threat Intelligence**: Version 21.0\n\n* Improved issue ingestion to adaptively scan the configured\n  `Max Hours Backwards` time range and skip periods without new issues in the following\n  connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added the **Anonymize Credential** parameter to optionally mask compromised\n  passwords with asterisks in ingested alerts and events in the following\n  connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
-        "summary": {
-          "title": "New Security Intelligence Features",
-          "summary": "Version 21.0 of Google Threat Intelligence introduces enhancements to issue ingestion for the ASM Issues Connector, improving efficiency by adapting to the specified time range. Additionally, the DTM Alerts Connector now supports an 'Anonymize Credential' parameter to mask compromised passwords in alerts and events."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "**Email Utilities**: Version 17.0\n\n* Resolved an issue causing entities to not be created when `Create Observed Entities`\n  was configured for specific entity types in the following action:\n\n  + **Parse Case Wall Email**",
-        "summary": {
-          "title": "Email Utilities Update Released",
-          "summary": "Version 17.0 of Email Utilities has been released, resolving an issue with entity creation in the Parse Case Wall Email action. This update ensures entities are now correctly created when configured for specific types."
-        }
-      },
-      {
-        "kind": "Change",
         "content": "**Microsoft Graph Mail**: Version 49.0\n\n* Updated the **Folder Name** parameter to be optional, allowing searches across\n  the entire mailbox when no folder is specified in the following action:\n\n  + **Search Emails**\n* Improved S/MIME processing to support multi-layered encrypted, clear-signed,\n  and opaque-signed messages, and resolved an issue where the\n  **Bypass Signature Verification** parameter didn't bypass verification for\n  malformed or unsupported S/MIME signatures in the following connector:\n\n  + **Microsoft Graph Mail Connector**",
         "summary": {
           "title": "Microsoft Graph Mail Update",
@@ -64,6 +82,22 @@
         "summary": {
           "title": "Chronicle Version 98.0 Enhancements",
           "summary": "Version 98.0 of Chronicle introduces caching for data table responses in several actions to improve performance. This update also resolves an issue with environment extraction in the Chronicle Alerts Connector, ensuring it correctly processes multi-event alerts."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Email Utilities**: Version 17.0\n\n* Resolved an issue causing entities to not be created when **Create Observed Entities**\n  was configured for specific entity types in the following action:\n\n  + **Parse Case Wall Email**",
+        "summary": {
+          "title": "Email Utilities Update",
+          "summary": "Version 17.0 of Email Utilities resolves an issue with entity creation in the Parse Case Wall Email action. This fix ensures entities are properly created when configured for specific types."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Threat Intelligence**: Version 21.0\n\n* Improved issue ingestion to adaptively scan the configured\n  **Max Hours Backwards** time range and skip periods without new issues in the following\n  connector:\n\n  + **Google Threat Intelligence - ASM Issues Connector**\n* Added the **Anonymize Credential** parameter to optionally mask compromised\n  passwords with asterisks in ingested alerts and events in the following\n  connector:\n\n  + **Google Threat Intelligence - DTM Alerts Connector**",
+        "summary": {
+          "title": "Security Intelligence Update",
+          "summary": "This update enhances issue ingestion for better efficiency and introduces an option to anonymize credentials in ingested alerts and events, improving data security."
         }
       }
     ],

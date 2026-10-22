@@ -1,5 +1,17 @@
 # Cloud Workstations
 
+## 2026-10-20
+
+### Feature
+
+Cloud Workstations supports automatic failover for
+[boost configurations](https://docs.cloud.google.com/workstations/docs/boost-workstation#automatic-failover)
+in [Preview](https://cloud.google.com/products#product-launch-stages). When you
+enable automatic failover, Cloud Workstations automatically provisions a
+workstation VM using the boost configuration if Compute Engine lacks capacity
+for the default machine type during startup.
+
+---
 ## 2026-10-05
 
 ### Feature

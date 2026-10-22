@@ -1,5 +1,12 @@
 # App Engine standard environment PHP
 
+## 2026-10-21
+
+### Feature
+
+Patch updates to [supported PHP runtimes](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/support-schedule#php) are available with deployments from source: `8.5.12`, `8.4.27`, `8.3.36`, and `8.2.35`. PHP workloads have automatically been patched. See [Responding to core PHP vulnerabilities](https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619) for more information.
+
+---
 ## 2026-09-29
 
 ### Feature

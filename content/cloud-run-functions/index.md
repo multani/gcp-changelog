@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2026-10-21
+
+### Feature
+
+Patch updates to [supported PHP runtimes](https://docs.cloud.google.com/functions/docs/runtime-support#php) are available with deployments from source: `8.5.12`, `8.4.27`, `8.3.36`, and `8.2.35`. Functions with automatic base image updates enabled have already been patched. If you have disabled automatic base image updates, take immediate action to protect your workloads by redeploying your workloads with updated dependencies and redeploying. See [Responding to core PHP vulnerabilities](https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619) for more information.
+
+---
 ## 2026-09-01
 
 ### Feature

@@ -1,5 +1,39 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-10-21
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.36.200-gke.118 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.36.200-gke.118 runs on Kubernetes v1.36.4-gke.100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+### Feature
+
+The following changes were added in 1.36.200-gke.118:
+
+* Fixed an issue in clusters using bundled BGP load balancing where control
+  plane upgrades or configuration updates could cause up to 20 seconds of API
+  server connection failures while a control plane node restarted. After the fix, failover to a
+  healthy control plane node completes in approximately 4 seconds.
+* Fixed an issue where node drain in maintenance mode did not wait for attached storage volumes to detach.
+
+### Fixed
+
+The following issues were fixed in 1.36.200-gke.118:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed `BareMetalMachine` conditions during maintenance mode transitions.
+
+---
 ## 2026-10-13
 
 ### Announcement

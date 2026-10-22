@@ -1,5 +1,18 @@
 # Dataflow
 
+## 2026-10-21
+
+### Feature
+
+Dataflow now supports streaming high availability for
+[Streaming Engine](https://docs.cloud.google.com/dataflow/docs/streaming-engine) jobs
+([Preview](https://cloud.google.com/products#product-launch-stages)). When you
+enable the `requires_high_availability` service option, Dataflow
+replicates backend state across multiple zones in a region to protect your job
+from single-zone failures. For more information, see
+[Streaming high availability](https://docs.cloud.google.com/dataflow/docs/guides/streaming-high-availability).
+
+---
 ## 2026-10-15
 
 ### Feature

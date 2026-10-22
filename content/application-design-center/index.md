@@ -1,5 +1,19 @@
 # Application Design Center
 
+## 2026-10-13
+
+### Feature
+
+You can import existing multi-product Google Cloud Terraform configurations into
+an Application Design Center application template as is, without splitting them
+into components or publishing them to a catalog first. From a template revision,
+you can create, assess, and deploy applications directly, or publish the
+revision to your catalog to reuse it in other templates
+([Preview](https://cloud.google.com/products#product-launch-stages)). For more
+information, see
+[Import existing Terraform](https://docs.cloud.google.com/application-design-center/docs/import-terraform).
+
+---
 ## 2026-10-05
 
 ### Feature

@@ -1,5 +1,25 @@
 # Gemini Enterprise
 
+## 2026-10-22
+
+### Feature
+
+**Gemini Enterprise: Single-user quota limits**
+
+Gemini Enterprise administrators can configure single-user quota limits on
+the **Usage & Spending > Usage** page in the Google Cloud console to prevent an
+individual user from using all of an edition's shared subscription quota pool. You
+can enable a single-user quota limit and set a quota multiplier for each edition
+and location across the Gemini Enterprise Standard, Gemini Enterprise Plus, and
+Gemini Enterprise Standard Emerging Market editions.
+
+This feature is generally available (GA). For more information, see:
+
+* [Single-user quota limits](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#single-user-quota-limits)
+* [Configure a single-user quota limit](https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage#configure-single-user-quota-limit)
+* [Configure overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages#configure-single-user-quota-limit)
+
+---
 ## 2026-10-20
 
 ### Feature

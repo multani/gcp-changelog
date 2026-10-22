@@ -1,5 +1,71 @@
 # Looker
 
+## 2026-10-22
+
+### Announcement
+
+**Looker 26.22** will roll out to Looker (original) instances on the following schedule:
+
+* Expected Looker (original) deployment start: **Monday, October 26, 2026**
+* Expected Looker (original) final deployment and download available: **Monday, November 9, 2026**
+
+The Looker 26.22 rollout for Looker (Google Cloud core) will be announced separately.
+
+Looker 26.22 is expected to include the following changes, features, and fixes.
+
+### Fixed
+
+An issue has been fixed where table column options menus and search boxes appeared behind drill dialogs, which prevented users from interacting with them. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where configuring a LookML model could trigger unnecessary derived table rebuilds. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **Show filters** option was displayed on dashboard tiles that failed to load data in view mode. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where drilling into results that were filtered by string dimensions that contained backslashes returned zero rows. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where pivoted queries in SQL Runner could fail to render or re-pivot unexpectedly. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where the **View (Expanded / Full Screen)** option appeared in the tile action menu on embedded dashboards in view mode. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed where custom visualization tiles were truncated in dashboard PDF exports when the **Expand tables to show all rows** option was enabled. This feature now performs as expected.
+
+### Fixed
+
+Table row group subtotals are now displayed only for sum and count measures. For other measure types (such as `averages` and `count distinct`) and table calculations, subtotals are now left blank rather than displaying an inaccurate summed value.
+
+### Fixed
+
+The System Activity `query_metrics` Explore now records connection acquisition time (`acquire_connection`) for queries that are canceled while waiting in the connection pool.
+
+### Fixed
+
+Conversational Analytics `DELETE` endpoints now return `HTTP 404 Not Found` instead of `HTTP 204 No Content` when you attempt to delete nonexistent resources.
+
+### Fixed
+
+The System Activity `query_metrics` Explore has been updated to accurately record model initialization time for models that are loaded from cache.
+
+### Fixed
+
+An issue has been fixed where adding a new series to a categorical chart, such as adding a new pivot value, could cause category bars to appear ungrouped. This feature now performs as expected.
+
+### Fixed
+
+An issue has been fixed in the TypeScript and JavaScript SDKs where calling methods that have only optional parameters without passing an empty object could result in compilation or runtime errors. This feature now performs as expected.
+
+---
 ## 2026-10-21
 
 ### Feature

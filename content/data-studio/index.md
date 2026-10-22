@@ -1,5 +1,16 @@
 # Data Studio
 
+## 2026-10-22
+
+### Feature
+
+You can connect Data Studio to a BigQuery Graph or query a
+graph by using a custom SQL query in the BigQuery connector, which
+imports graph measures as metrics that you can use in your reports. For more
+information, see [Connect to Google
+BigQuery](https://docs.cloud.google.com/data-studio/connect-to-google-bigquery#connect-to-a-bigquery-table-or-view).
+
+---
 ## 2026-09-24
 
 ### Feature

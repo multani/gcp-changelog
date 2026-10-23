@@ -1,5 +1,13 @@
 # Firestore
 
+## 2026-10-22
+
+### Feature
+
+[Data modification language (DML) operations](https://docs.cloud.google.com/firestore/native/docs/pipeline/dml)
+are generally available ([GA](https://cloud.google.com/products#product-launch-stages)). Added support for [`insert`](https://docs.cloud.google.com/firestore/native/docs/pipeline/stages/output/insert) and [`upsert`](https://docs.cloud.google.com/firestore/native/docs/pipeline/stages/output/upsert).
+
+---
 ## 2026-10-19
 
 ### Feature

@@ -1,5 +1,19 @@
 # BigQuery
 
+## 2026-10-22
+
+### Feature
+
+The [`AI.TRANSLATE` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-translate)
+lets you translate text strings between languages. `AI.TRANSLATE` supports
+standard Neural Machine Translation (NMT) workloads and Translation LLM (TLLM)
+capabilities.
+
+This function is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-21
 
 ### Feature

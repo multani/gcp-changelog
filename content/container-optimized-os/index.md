@@ -1,5 +1,202 @@
 # Container Optimized OS
 
+## 2026-10-22
+
+### Change
+
+
+
+### cos-125-19216-760-8
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/bac32aa947d1d7d52552c51d3bd2f355ecc21464 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.760.8/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Fixed
+
+Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.
+
+### Fixed
+
+Upgraded app-misc/ca-certificates to v20260816.3.125. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Fixed
+
+Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Security
+
+Fixed CVE-2026-111943 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2026-39831 in guest-agent.
+
+### Security
+
+Fixed CVE-2026-39831 in node-problem-detector.
+
+### Security
+
+Fixed CVE-2026-39832, CVE-2026-39831 in cos-extensions.
+
+### Security
+
+Fixed CVE-2026-39833 in nvidia-container-toolkit.
+
+### Security
+
+Fixed CVE-2026-39833, CVE-2024-28180, CVE-2025-11065, CVE-2026-25680, CVE-2025-47914, GHSA-w67g-5rqw-f597, CVE-2026-84304, GHSA-fv92-fjc5-jj9h, CVE-2023-47108, CVE-2024-51744, CVE-2026-35469, CVE-2025-65637, CVE-2025-30204, CVE-2024-45337, CVE-2025-52565, CVE-2026-42508, CVE-2026-46598, CVE-2023-45142, CVE-2024-45310, CVE-2026-39830, CVE-2026-41579, CVE-2026-46595, CVE-2024-24786, CVE-2026-39832, CVE-2026-10722, CVE-2026-39831, CVE-2025-22869 in kubernetes.
+
+### Security
+
+Fixed CVE-2026-42508, CVE-2026-46595 in cri-tools.
+
+### Security
+
+Fixed CVE-2026-46595 in google-guest-agent.
+
+### Security
+
+Fixed CVE-2026-46595, CVE-2026-42508 in google-osconfig-agent.
+
+### Change
+
+
+
+### cos-121-18867-652-7
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.159](https://cos.googlesource.com/third_party/kernel/+/f32de83646bdc7b4c004477f6c4977ebd5b03cd7 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.652.7/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Fixed
+
+Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.
+
+### Fixed
+
+Upgraded app-misc/ca-certificates to v20260816.3.125. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Fixed
+
+Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Security
+
+Fixed CVE-2026-111943 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2026-39830 in google-osconfig-agent.
+
+### Security
+
+Fixed CVE-2026-39831 in node-problem-detector.
+
+### Security
+
+Fixed CVE-2026-39832 in cos-extensions.
+
+### Security
+
+Fixed CVE-2026-39833 in nvidia-container-toolkit.
+
+### Security
+
+Fixed CVE-2026-39833, CVE-2024-28180, CVE-2025-11065, CVE-2026-25680, CVE-2025-47914, GHSA-w67g-5rqw-f597, CVE-2026-84304, GHSA-fv92-fjc5-jj9h, CVE-2023-47108, CVE-2024-51744, CVE-2026-35469, CVE-2025-65637, CVE-2025-30204, CVE-2024-45337, CVE-2025-52565, CVE-2026-42508, CVE-2026-46598, CVE-2023-45142, CVE-2024-45310, CVE-2026-39830, CVE-2026-41579, CVE-2026-46595, CVE-2024-24786, CVE-2026-39832, CVE-2026-10722, CVE-2026-39831, CVE-2025-22869 in kubernetes.
+
+### Security
+
+Fixed CVE-2026-42508, CVE-2026-46595 in cri-tools.
+
+### Security
+
+Fixed CVE-2026-42508, CVE-2026-46595, CVE-2026-39831, CVE-2026-39830 in containerd.
+
+### Security
+
+Fixed CVE-2026-46595 in guest-agent.
+
+### Change
+
+
+
+### cos-129-19506-578-9
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/38d8fc183d307b8c9fd3db3d33f44d32f55ae31e ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.578.9/lakitu/gpu_driver_versions.textproto) |
+
+### Announcement
+
+This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)
+
+### Fixed
+
+Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.
+
+### Fixed
+
+Upgraded app-misc/ca-certificates to v20260816.3.125. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Fixed
+
+Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Security
+
+Fixed CVE-2026-111943 in dev-lang/go.
+
+### Security
+
+Fixed CVE-2026-33186 in cri-tools.
+
+### Security
+
+Fixed CVE-2026-39831 in node-problem-detector.
+
+### Security
+
+Fixed CVE-2026-39833 in nvidia-container-toolkit.
+
+### Security
+
+Fixed CVE-2026-46595, CVE-2026-39832 in cri-tools.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.epoll.max\_user\_watches: 1808517 -> 1808562
+* Changed: fs.fanotify.max\_user\_marks: 68412 -> 68416
+* Changed: fs.inotify.max\_user\_watches: 64189 -> 64192
+* Changed: kernel.threads-max: 63178 -> 63183
+* Changed: net.ipv4.tcp\_mem: 94017 125357 188034 -> 94020 125361 188040
+* Changed: net.ipv4.udp\_mem: 188034 250715 376068 -> 188040 250722 376080
+* Changed: user.max\_cgroup\_namespaces: 31589 -> 31591
+* Changed: user.max\_fanotify\_marks: 68412 -> 68416
+* Changed: user.max\_inotify\_watches: 64189 -> 64192
+* Changed: user.max\_ipc\_namespaces: 31589 -> 31591
+* Changed: user.max\_mnt\_namespaces: 31589 -> 31591
+* Changed: user.max\_net\_namespaces: 31589 -> 31591
+* Changed: user.max\_pid\_namespaces: 31589 -> 31591
+* Changed: user.max\_time\_namespaces: 31589 -> 31591
+* Changed: user.max\_user\_namespaces: 31589 -> 31591
+* Changed: user.max\_uts\_namespaces: 31589 -> 31591
+
+---
 ## 2026-10-19
 
 ### Change

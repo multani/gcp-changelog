@@ -3000,8 +3000,20 @@
 
 
 <h1 id="cloud-run">Cloud Run</h1>
-<h2 id="2026-10-21">2026-10-21</h2>
+<h2 id="2026-10-22">2026-10-22</h2>
 <h3 id="feature">Feature</h3>
+<p>You can configure <a href="https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc#direct-vpc-instance">Direct VPC ingress for Cloud Run instances</a>
+(<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>). Direct VPC
+ingress lets Cloud Run instances on a VPC network use their own ephemeral
+private IP address to communicate with each other and with other resources on
+the VPC network.</p>
+<h3 id="security">Security</h3>
+<p>All supported versions of <a href="https://docs.cloud.google.com/run/docs/runtime-support#php">PHP 8.2</a> and later are patched. Take immediate protective action by redeploying your resources with updated dependencies.</p>
+<p>See <a href="https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619">Responding to core PHP vulnerabilities</a> for more information.</p>
+<hr />
+<h2 id="2026-10-21">2026-10-21</h2>
+<h3 id="security_1">Security</h3>
+<p>This note is incorrect; follow guidance in the entry for <a href="#October_22_2026">October 22, 2026</a>.</p>
 <p>Patch updates to <a href="https://docs.cloud.google.com/run/docs/runtime-support#php">supported PHP runtimes</a> are available for Cloud Run resources <a href="https://docs.cloud.google.com/run/docs/deploying-source-code">deployed from source code</a>: <code>8.5.12</code>, <code>8.4.27</code>, <code>8.3.36</code>, and <code>8.2.35</code>. Take immediate action to protect your workloads by redeploying your Cloud Run resources with updated dependencies. Cloud Run resources with <a href="https://docs.cloud.google.com/run/docs/configuring/services/automatic-base-image-updates">automatic base image updates</a> enabled have already been patched. See <a href="https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619">Responding to core PHP vulnerabilities</a> for more information.</p>
 <hr />
 <h2 id="2026-10-12">2026-10-12</h2>
@@ -3444,6 +3456,9 @@ ID</a> to log outputs.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-run">Cloud Run</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-22" class="nav-link">2026-10-22</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-21" class="nav-link">2026-10-21</a>
           </li>

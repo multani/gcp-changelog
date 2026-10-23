@@ -1,8 +1,27 @@
 # Cloud Run
 
-## 2026-10-21
+## 2026-10-22
 
 ### Feature
+
+You can configure [Direct VPC ingress for Cloud Run instances](https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc#direct-vpc-instance)
+([Preview](https://cloud.google.com/products#product-launch-stages)). Direct VPC
+ingress lets Cloud Run instances on a VPC network use their own ephemeral
+private IP address to communicate with each other and with other resources on
+the VPC network.
+
+### Security
+
+All supported versions of [PHP 8.2](https://docs.cloud.google.com/run/docs/runtime-support#php) and later are patched. Take immediate protective action by redeploying your resources with updated dependencies.
+
+See [Responding to core PHP vulnerabilities](https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619) for more information.
+
+---
+## 2026-10-21
+
+### Security
+
+This note is incorrect; follow guidance in the entry for [October 22, 2026](#October_22_2026).
 
 Patch updates to [supported PHP runtimes](https://docs.cloud.google.com/run/docs/runtime-support#php) are available for Cloud Run resources [deployed from source code](https://docs.cloud.google.com/run/docs/deploying-source-code): `8.5.12`, `8.4.27`, `8.3.36`, and `8.2.35`. Take immediate action to protect your workloads by redeploying your Cloud Run resources with updated dependencies. Cloud Run resources with [automatic base image updates](https://docs.cloud.google.com/run/docs/configuring/services/automatic-base-image-updates) enabled have already been patched. See [Responding to core PHP vulnerabilities](https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619) for more information.
 

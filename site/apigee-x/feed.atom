@@ -2,9 +2,145 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-10-20T00:00:00+00:00</updated>
+  <updated>2026-10-21T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-21:announcement:0</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>]]></content>
+    <summary>The Apigee Emulator is now available, offering a local environment for developing and testing API proxies. This tool simplifies the API development lifecycle by allowing developers to work offline and iterate faster.</summary>
+    <title>Announcement: Apigee Emulator Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-21:apigee emulator v2.0.2:1</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On October 21, 2026, we released Apigee Emulator version 2.0.2.</p>
+<p>This release upgrades the Apigee Emulator runtime to Java 21 (Eclipse Temurin
+JRE 21) to align local proxy development and policy execution with the
+production Apigee runtime, while keeping the embedded Apache Cassandra
+datastore pinned to Java 8. It also addresses 46 security vulnerabilities across
+Netty, Jackson, Apache Log4j, BouncyCastle, Apache CXF, Eclipse Jetty, and the
+embedded Cassandra Go standard library health-check binary.</p>
+<p>The emulator image is available at
+<a href="https://console.cloud.google.com/artifacts/docker/apigee-release/us/gcr.io/hybrid%2Fapigee-emulator">Artifact Registry</a>.</p>
+<p>To upgrade, update the emulator version in your Cloud Code for VS Code settings
+to <code>2.0.2</code>. See
+<a href="https://docs.cloud.google.com/apigee/docs/api-platform/local-development/vscode/manage-apigee-emulator#choose_the_emulator_version">Manage the Apigee Emulator</a>
+for details.</p>]]></content>
+    <summary>The Apigee Emulator has been updated to version 2.0.2, upgrading its runtime to Java 21 and addressing numerous security vulnerabilities. This update ensures better alignment with the production Apigee runtime for local proxy development and policy execution.</summary>
+    <title>Apigee Emulator v2.0.2: Apigee Emulator v2.0.2 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-21:feature:2</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>
+<h4>Changed in this release</h4>
+<ul>
+<li>Upgraded the Apigee Emulator runtime JVM to Eclipse Temurin JRE 21
+  (<code>21.0.12.1.0+1-0</code>, from JRE 11 <code>11.0.31+11</code>), adding JVM 21 compatibility
+  flags (<code>-Djava.security.manager=allow</code> and <code>--add-opens</code> module flags) for
+  <code>JavaCallout</code>, JavaScript (Rhino), and Python (Jython) policies while keeping
+  the embedded Apache Cassandra <code>4.0.19</code> datastore pinned to Eclipse Temurin
+  JRE 8.</li>
+<li>Upgraded Netty to <code>4.1.137.Final</code> (from <code>4.1.135.Final</code>) and updated
+  <code>netty-tcnative-boringssl-static</code> and <code>netty-tcnative-classes</code> to
+  <code>2.0.81.Final</code> (from <code>2.0.77.Final</code>).</li>
+<li>Upgraded Jackson (<code>jackson-core</code>, <code>jackson-databind</code>, and
+  <code>jackson-dataformat-yaml</code>) to <code>2.21.7</code> (from <code>2.18.6</code> and <code>2.19.2</code>) and
+  <code>jackson-annotations</code> to <code>2.21</code>.</li>
+<li>Upgraded shaded Apache Log4j (<code>log4j-api</code> and <code>log4j-core</code>) in
+  <code>ConfigUtil.jar</code> to <code>2.25.5</code> (from <code>2.17.1</code> and <code>2.25.4</code>).</li>
+<li>Upgraded BouncyCastle (<code>bcprov-jdk18on</code>, <code>bcpkix-jdk18on</code>, and
+  <code>bcutil-jdk18on</code>) to <code>1.85</code> (from <code>1.84</code>).</li>
+<li>Upgraded Apache CXF (<code>cxf-*</code>) to <code>3.6.12</code> (from <code>3.5.11</code>).</li>
+<li>Upgraded gRPC to <code>1.82.3</code> (from <code>1.62.2</code>), Protobuf (<code>protobuf-java</code> and
+  <code>protobuf-java-util</code>) to <code>4.33.6</code> (from <code>3.25.5</code>), and Guava to <code>33.5.0-jre</code>
+  (from <code>33.4.8-jre</code>).</li>
+<li>Removed unused <code>org.eclipse.jetty:jetty-*</code> (<code>9.4.58.v20250814</code>) and
+  <code>commons-collections:commons-collections</code> (<code>3.2.2</code>) JARs from the emulator
+  distribution.</li>
+<li>Refreshed the Cassandra base image to pick up Go standard library <code>1.27.0</code>
+  (from <code>1.25.11</code>) in the embedded <code>/opt/apigee/ready</code> health-check binary.</li>
+</ul>]]></content>
+    <summary>The Apigee Emulator has been updated with a new runtime JVM (Eclipse Temurin JRE 21), along with numerous dependency upgrades including Netty, Jackson, Log4j, BouncyCastle, Apache CXF, gRPC, Protobuf, and Guava. Several unused JARs have also been removed from the distribution.</summary>
+    <title>Feature: Apigee Emulator Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-21:security:3</id>
+    <published>2026-10-21T00:00:00+00:00</published>
+    <updated>2026-10-21T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Apigee Emulator</strong></p>
+<h4>Security</h4>
+<p>This release addresses 46 security vulnerabilities across Netty, the embedded
+Go standard library, Jackson, Apache Log4j, Eclipse Jetty, BouncyCastle, and
+Apache CXF:</p>
+<p>| CVE / Advisory | Component |
+| --- | --- |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75595">CVE-2026-75595</a> | Netty (<code>netty-handler</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75596">CVE-2026-75596</a> | Netty (<code>netty-handler</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59901">CVE-2026-59901</a> | Netty (<code>netty-codec</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-55831">CVE-2026-55831</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-55833">CVE-2026-55833</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56745">CVE-2026-56745</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56746">CVE-2026-56746</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59898">CVE-2026-59898</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59899">CVE-2026-59899</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59903">CVE-2026-59903</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59921">CVE-2026-59921</a> | Netty (<code>netty-codec-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56819">CVE-2026-56819</a> | Netty (<code>netty-codec-http2</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59900">CVE-2026-59900</a> | Netty (<code>netty-codec-http2</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-73508">CVE-2026-73508</a> | Netty (<code>netty-codec-dns</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39821">CVE-2026-39821</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33818">CVE-2026-33818</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-39822">CVE-2026-39822</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42505">CVE-2026-42505</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56853">CVE-2026-56853</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56858">CVE-2026-56858</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56859">CVE-2026-56859</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56860">CVE-2026-56860</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56862">CVE-2026-56862</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56864">CVE-2026-56864</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56865">CVE-2026-56865</a> | Go standard library |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68494">CVE-2026-68494</a> | Jackson (<code>jackson-core</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18401">CVE-2026-18401</a> | Jackson (<code>jackson-core</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54512">CVE-2026-54512</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54513">CVE-2026-54513</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54514">CVE-2026-54514</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54515">CVE-2026-54515</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59888">CVE-2026-59888</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59889">CVE-2026-59889</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77310">CVE-2026-77310</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://github.com/advisories/GHSA-mhm7-754m-9p8w">GHSA-mhm7-754m-9p8w</a> | Jackson (<code>jackson-databind</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-68161">CVE-2025-68161</a> | Apache Log4j (<code>log4j-core</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34477">CVE-2026-34477</a> | Apache Log4j (<code>log4j-core</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-34480">CVE-2026-34480</a> | Apache Log4j (<code>log4j-core</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-49844">CVE-2026-49844</a> | Apache Log4j (<code>log4j-api</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10050">CVE-2026-10050</a> | Eclipse Jetty (<code>jetty-security</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2332">CVE-2026-2332</a> | Eclipse Jetty (<code>jetty-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-6763">CVE-2024-6763</a> | Eclipse Jetty (<code>jetty-http</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6790">CVE-2026-6790</a> | Eclipse Jetty (<code>jetty-server</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8763">CVE-2026-8763</a> | BouncyCastle (<code>bcprov-jdk18on</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-13506">CVE-2026-13506</a> | BouncyCastle (<code>bcprov-jdk18on</code>) |
+| <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50645">CVE-2026-50645</a> | Apache CXF (<code>cxf-core</code>) |</p>]]></content>
+    <summary>This release addresses 46 security vulnerabilities across multiple components including Netty, Go standard library, Jackson, Log4j, Jetty, BouncyCastle, and CXF. Applying this update is crucial for maintaining the security posture of your API management environment.</summary>
+    <title>Security: Security Update for Apigee Emulator</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

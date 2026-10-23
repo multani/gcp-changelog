@@ -1,5 +1,44 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-10-22
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.34.1000-gke.111 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.34.1000-gke.111 runs on Kubernetes v1.34.7-gke.200.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+### Feature
+
+The following features were introduced in 1.34.1000-gke.111:
+
+* Fixed an issue in clusters using bundled BGP load balancing where control
+  plane upgrades or configuration updates could cause up to 20 seconds of API
+  server connection failures while a control plane node restarted. After the fix, failover to a
+  healthy control plane node completes in approximately 4 seconds.
+* Fixed an issue where the `NodePool` controller prematurely updated `Status.ManagedFields`
+  on partial reconciliation failures, causing removed taints and labels to remain
+  stranded on affected nodes.
+
+### Fixed
+
+The following issues were fixed in 1.34.1000-gke.111:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed `BareMetalMachine` conditions during maintenance mode transitions.
+* Fixed an issue where updating control plane configurations caused multiple API
+  servers to restart simultaneously, leading to transient control plane
+  unavailability.
+
+---
 ## 2026-10-21
 
 ### Announcement

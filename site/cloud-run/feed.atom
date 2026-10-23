@@ -2,19 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Run</title>
   <subtitle>Changelog for Google Cloud product: Cloud Run</subtitle>
-  <updated>2026-10-21T00:00:00+00:00</updated>
+  <updated>2026-10-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-run</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-run/"/>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:cloud-run:2026-10-21:feature:0</id>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2026-10-22:feature:0</id>
+    <published>2026-10-22T00:00:00+00:00</published>
+    <updated>2026-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>You can configure <a href="https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc#direct-vpc-instance">Direct VPC ingress for Cloud Run instances</a>
+(<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>). Direct VPC
+ingress lets Cloud Run instances on a VPC network use their own ephemeral
+private IP address to communicate with each other and with other resources on
+the VPC network.</p>]]></content>
+    <summary>Cloud Run instances on a VPC network can now use their own ephemeral private IP address for communication. This feature enables direct interaction between instances and other resources within your VPC network.</summary>
+    <title>Feature: Direct VPC ingress for Cloud Run</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2026-10-22:security:1</id>
+    <published>2026-10-22T00:00:00+00:00</published>
+    <updated>2026-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>All supported versions of <a href="https://docs.cloud.google.com/run/docs/runtime-support#php">PHP 8.2</a> and later are patched. Take immediate protective action by redeploying your resources with updated dependencies.</p>
+<p>See <a href="https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619">Responding to core PHP vulnerabilities</a> for more information.</p>]]></content>
+    <summary>A critical security vulnerability has been discovered in PHP. All supported versions of PHP 8.2 and later are affected. We urge you to redeploy your resources with updated dependencies immediately to ensure your applications are protected.</summary>
+    <title>Security: PHP Security Update Recommended</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-run:2026-10-21:security:0</id>
     <published>2026-10-21T00:00:00+00:00</published>
     <updated>2026-10-21T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Patch updates to <a href="https://docs.cloud.google.com/run/docs/runtime-support#php">supported PHP runtimes</a> are available for Cloud Run resources <a href="https://docs.cloud.google.com/run/docs/deploying-source-code">deployed from source code</a>: <code>8.5.12</code>, <code>8.4.27</code>, <code>8.3.36</code>, and <code>8.2.35</code>. Take immediate action to protect your workloads by redeploying your Cloud Run resources with updated dependencies. Cloud Run resources with <a href="https://docs.cloud.google.com/run/docs/configuring/services/automatic-base-image-updates">automatic base image updates</a> enabled have already been patched. See <a href="https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619">Responding to core PHP vulnerabilities</a> for more information.</p>]]></content>
-    <summary>New patch updates for supported PHP runtimes on Cloud Run are now available. Redeploy your Cloud Run resources with updated dependencies to ensure your workloads are protected. Resources with automatic base image updates enabled have already been patched.</summary>
-    <title>Feature: PHP Runtime Patch Updates Available</title>
+    <content type="html"><![CDATA[<p>This note is incorrect; follow guidance in the entry for <a href="#October_22_2026">October 22, 2026</a>.</p>
+<p>Patch updates to <a href="https://docs.cloud.google.com/run/docs/runtime-support#php">supported PHP runtimes</a> are available for Cloud Run resources <a href="https://docs.cloud.google.com/run/docs/deploying-source-code">deployed from source code</a>: <code>8.5.12</code>, <code>8.4.27</code>, <code>8.3.36</code>, and <code>8.2.35</code>. Take immediate action to protect your workloads by redeploying your Cloud Run resources with updated dependencies. Cloud Run resources with <a href="https://docs.cloud.google.com/run/docs/configuring/services/automatic-base-image-updates">automatic base image updates</a> enabled have already been patched. See <a href="https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619">Responding to core PHP vulnerabilities</a> for more information.</p>]]></content>
+    <summary>Urgent security updates for supported PHP runtimes on Cloud Run are now available. Redeploy your Cloud Run resources with updated dependencies to protect your workloads. Resources with automatic base image updates enabled have already been patched.</summary>
+    <title>Security: PHP Runtime Security Update</title>
   </entry>
   <entry>
     <author>

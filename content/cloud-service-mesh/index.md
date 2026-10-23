@@ -4,6 +4,12 @@
 
 ### Announcement
 
+In-cluster Cloud Service Mesh 1.28 is no longer supported. For more information
+and to view the earliest end-of-life dates for other versions, see
+[Supported versions](https://docs.cloud.google.com/service-mesh/docs/supported-features-in-cluster#supported_versions).
+
+### Announcement
+
 **1.31.1-asm.19 is now available for in-cluster Cloud Service Mesh.**
 
 For details on upgrading Cloud Service Mesh, see

@@ -1,5 +1,15 @@
 # Cloud Monitoring
 
+## 2026-10-23
+
+### Fixed
+
+Ops Agent version 2.73.0 includes patches for a Go vulnerability involving
+system root certificates,
+[CVE-2026-111943](https://www.cve.org/CVERecord?id=CVE-2026-111943). For more
+information, see [Ops Agent 2.73.0 notes](https://github.com/GoogleCloudPlatform/ops-agent/releases/tag/2.73.0).
+
+---
 ## 2026-10-06
 
 ### Feature

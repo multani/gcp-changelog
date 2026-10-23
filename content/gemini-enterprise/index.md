@@ -19,6 +19,26 @@ This feature is generally available (GA). For more information, see:
 * [Configure a single-user quota limit](https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage#configure-single-user-quota-limit)
 * [Configure overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages#configure-single-user-quota-limit)
 
+### Announcement
+
+**Gemini Enterprise: Gemini 4 Argon becomes the default model for AlphaEvolve on
+October 26, 2026**
+
+On October 26, 2026, Gemini 4 Argon will replace Gemini 3.8 Flash as the
+default model for new AlphaEvolve experiments. AlphaEvolve uses the default
+model when you don't specify a model in the `models` field of
+`generationSettings`.
+
+From that date, new experiments that use the default model are billed at
+Gemini 4 Argon token prices instead of Gemini 3.8 Flash token prices. To keep
+using Gemini 3.8 Flash, specify `gemini-3.8-flash` in the `models` field.
+
+Experiments created before October 26, 2026 keep the model recorded in their
+configuration.
+
+For more information, see [Default
+model](https://docs.cloud.google.com/gemini/enterprise/docs/alphaevolve/reference-guide/api-reference#default-model).
+
 ---
 ## 2026-10-20
 

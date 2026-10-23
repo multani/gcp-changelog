@@ -1,5 +1,30 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-10-22
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.34.1000-gke.111 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.34.1000-gke.111 runs on Kubernetes v1.34.7-gke.200.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Fixed
+
+The following issues were fixed in 1.34.1000-gke.111:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where updating or upgrading a cluster to an [advanced cluster](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/concepts/advanced-clusters)
+  failed to join control plane nodes if the cluster's certificate authorities
+  (CAs) were previously rotated. For more information, see [Control plane nodes fail to join during an update or upgrade to an advanced cluster after CA rotation](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/troubleshooting/known-issues#advanced-cluster-upgrade-fails-after-ca-rotation).
+
+---
 ## 2026-10-21
 
 ### Announcement

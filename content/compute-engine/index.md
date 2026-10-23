@@ -10,6 +10,20 @@ Google Cloud console.
 
 For more information, see [Monitor instance distribution in MIGs](https://docs.cloud.google.com/compute/docs/instance-groups/monitor-instance-distribution).
 
+### Feature
+
+**Generally available**:
+Resource-based committed use discounts (CUDs) are available for block storage
+resources like Google Cloud Hyperdisk Balanced and Google Cloud Hyperdisk Throughput
+Exapool capacity. You can purchase 1-year and 3-year block storage commitments
+for Hyperdisk Balanced and Hyperdisk Throughput
+Exapool capacity and receive discounted rates for the capacity units that you
+consume as part of applicable Google Cloud Hyperdisk Exapools. For more
+information, see
+[Block storage commitments](https://docs.cloud.google.com/compute/docs/instances/signing-up-committed-use-discounts#block_storage_commitments)
+and
+[Purchase block storage commitments for Exapools](https://docs.cloud.google.com/compute/docs/committed-use-discounts/purchase-block-storage-commitments).
+
 ---
 ## 2026-10-19
 

@@ -1,5 +1,33 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-10-22
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where call and chat type names were cut off in the
+  **Dashboard Reports** selector on wide-screen displays.
+* Fixed an issue where the **Individual Call History** and **Individual Chat
+  History** reports, run for all agents, left out calls and chats that were
+  never assigned to an agent (for example, abandoned, deflected, or expired
+  calls) when only one agent or no agents had activity in the selected period.
+  The **All Call History** and **All Chat History** files are now always
+  included.
+* Fixed an issue where the **Interactions Detail by Agent** report omitted
+  outbound calls placed without a queue when generated for all agents.
+* Fixed an issue where the **Real-time Queue Monitoring** and **Campaign**
+  dashboards incorrectly displayed English queue names for French and Spanish
+  interactions.
+* Fixed an issue where "wrap-up" and "hold" metrics in advanced reporting were
+  displayed with inconsistent and inaccurate French Canadian (`fr_CA`)
+  translations.
+* Fixed an issue where Spanish chat queues incorrectly displayed English names
+  in **Real-time Queue Monitoring** and advanced reporting dashboards.
+* Fixed an issue where call disposition fields appeared blank on dashboards
+  when viewing date ranges between 46 and 365 days.
+
+---
 ## 2026-10-19
 
 ### Announcement

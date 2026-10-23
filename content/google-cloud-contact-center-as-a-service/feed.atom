@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-10-19T00:00:00+00:00</updated>
+  <updated>2026-10-22T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-10-22:fixed:0</id>
+    <published>2026-10-22T00:00:00+00:00</published>
+    <updated>2026-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where call and chat type names were cut off in the
+  <strong>Dashboard Reports</strong> selector on wide-screen displays.</li>
+<li>Fixed an issue where the <strong>Individual Call History</strong> and <strong>Individual Chat
+  History</strong> reports, run for all agents, left out calls and chats that were
+  never assigned to an agent (for example, abandoned, deflected, or expired
+  calls) when only one agent or no agents had activity in the selected period.
+  The <strong>All Call History</strong> and <strong>All Chat History</strong> files are now always
+  included.</li>
+<li>Fixed an issue where the <strong>Interactions Detail by Agent</strong> report omitted
+  outbound calls placed without a queue when generated for all agents.</li>
+<li>Fixed an issue where the <strong>Real-time Queue Monitoring</strong> and <strong>Campaign</strong>
+  dashboards incorrectly displayed English queue names for French and Spanish
+  interactions.</li>
+<li>Fixed an issue where "wrap-up" and "hold" metrics in advanced reporting were
+  displayed with inconsistent and inaccurate French Canadian (<code>fr_CA</code>)
+  translations.</li>
+<li>Fixed an issue where Spanish chat queues incorrectly displayed English names
+  in <strong>Real-time Queue Monitoring</strong> and advanced reporting dashboards.</li>
+<li>Fixed an issue where call disposition fields appeared blank on dashboards
+  when viewing date ranges between 46 and 365 days.</li>
+</ul>]]></content>
+    <summary>This release resolves several issues affecting reporting and dashboard accuracy. Key fixes include improved display of call and chat types, correct inclusion of all interactions in history reports, and accurate translation of queue names and metrics across different languages. These updates ensure more reliable data visualization for agents and interactions.</summary>
+    <title>Fixed: Resolved reporting and dashboard issues</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

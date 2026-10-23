@@ -315,6 +315,126 @@
         }
       },
       {
+        "kind": "cos-121-18867-652-7",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.159](https://cos.googlesource.com/third_party/kernel/+/f32de83646bdc7b4c004477f6c4977ebd5b03cd7 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.652.7/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update",
+          "summary": "Container Optimized OS has been updated with new versions of the kernel, Docker, and Containerd. This release includes support for GPU drivers."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)",
+        "summary": {
+          "title": "Container-Optimized OS LTS Refresh Release",
+          "summary": "A new Long-Term Support (LTS) Refresh release for Container-Optimized OS is now available. This update includes the latest security patches and bug fixes, ensuring a more stable and secure environment for your containerized workloads."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.",
+        "summary": {
+          "title": "Updated cos-gpu-installer and toolbox",
+          "summary": "The cos-gpu-installer has been updated to version 2.7.11, and the toolbox has been updated to version 20261020. These updates include bug fixes and performance improvements."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-misc/ca-certificates to v20260816.3.125. This removes the certificates affected by the eMudhra intermediate certificate compromise.",
+        "summary": {
+          "title": "Security update for CA certificates",
+          "summary": "The CA certificates package has been updated to version 20260816.3.125. This update addresses a security vulnerability by removing compromised eMudhra intermediate certificates."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.",
+        "summary": {
+          "title": "nss library upgraded",
+          "summary": "The nss library has been upgraded to version 3.131.1. This update addresses security concerns by removing certificates impacted by the eMudhra intermediate certificate compromise."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-111943 in dev-lang/go.",
+        "summary": {
+          "title": "Security fix for Go",
+          "summary": "A critical security vulnerability (CVE-2026-111943) affecting the Go development language has been resolved. This update ensures the integrity and safety of systems relying on Go. Users are advised to update their Go installations promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-39830 in google-osconfig-agent.",
+        "summary": {
+          "title": "Security fix for OS Config agent",
+          "summary": "A security vulnerability (CVE-2026-39830) in the OS Config agent has been fixed. This update addresses the issue, enhancing the security of your systems. We recommend applying this fix promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-39831 in node-problem-detector.",
+        "summary": {
+          "title": "Security fix for node-problem-detector",
+          "summary": "A security vulnerability (CVE-2026-39831) in node-problem-detector has been resolved. This update ensures the continued security and stability of your systems by addressing this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-39832 in cos-extensions.",
+        "summary": {
+          "title": "Security fix for cos-extensions",
+          "summary": "A security vulnerability in cos-extensions, CVE-2026-39832, has been addressed. This update ensures the continued security and integrity of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-39833 in nvidia-container-toolkit.",
+        "summary": {
+          "title": "Security update for nvidia-container-toolkit",
+          "summary": "A security vulnerability (CVE-2026-39833) in the nvidia-container-toolkit has been fixed. This update ensures the security and stability of your system by addressing this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-39833, CVE-2024-28180, CVE-2025-11065, CVE-2026-25680, CVE-2025-47914, GHSA-w67g-5rqw-f597, CVE-2026-84304, GHSA-fv92-fjc5-jj9h, CVE-2023-47108, CVE-2024-51744, CVE-2026-35469, CVE-2025-65637, CVE-2025-30204, CVE-2024-45337, CVE-2025-52565, CVE-2026-42508, CVE-2026-46598, CVE-2023-45142, CVE-2024-45310, CVE-2026-39830, CVE-2026-41579, CVE-2026-46595, CVE-2024-24786, CVE-2026-39832, CVE-2026-10722, CVE-2026-39831, CVE-2025-22869 in kubernetes.",
+        "summary": {
+          "title": "Security updates for Kubernetes",
+          "summary": "Several security vulnerabilities have been fixed in Kubernetes. This update addresses multiple CVEs and GHSA advisories to enhance the security posture of your clusters. Please apply these patches to protect your environment."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-42508, CVE-2026-46595 in cri-tools.",
+        "summary": {
+          "title": "Security updates for cri-tools",
+          "summary": "Critical security vulnerabilities in cri-tools have been addressed. The latest release includes fixes for CVE-2026-42508 and CVE-2026-46595, ensuring a more secure environment."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-42508, CVE-2026-46595, CVE-2026-39831, CVE-2026-39830 in containerd.",
+        "summary": {
+          "title": "Security fixes for containerd",
+          "summary": "Critical security vulnerabilities in containerd have been addressed. This update resolves CVE-2026-42508, CVE-2026-46595, CVE-2026-39831, and CVE-2026-39830, enhancing the security of your containerized environments."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-46595 in guest-agent.",
+        "summary": {
+          "title": "Guest-agent security fix",
+          "summary": "A security vulnerability in the guest-agent has been resolved. This update addresses CVE-2026-46595, ensuring improved security for your systems."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Network Updates",
+          "summary": "We are implementing important updates to our service network. These changes aim to improve performance and reliability. Further details will be shared soon."
+        }
+      },
+      {
         "kind": "cos-129-19506-578-9",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/38d8fc183d307b8c9fd3db3d33f44d32f55ae31e ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.578.9/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -400,86 +520,6 @@
         "summary": {
           "title": "Runtime sysctl adjustments",
           "summary": "Adjustments have been made to several runtime sysctl parameters to enhance system performance and stability. These changes include increases to limits for file system events, network memory, and namespace configurations."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "",
-        "summary": {
-          "title": "Service Network Updates",
-          "summary": "We are implementing important updates to our service network. These changes aim to improve performance and reliability. Further details will be shared soon."
-        }
-      },
-      {
-        "kind": "cos-121-18867-652-7",
-        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.159](https://cos.googlesource.com/third_party/kernel/+/f32de83646bdc7b4c004477f6c4977ebd5b03cd7 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.652.7/lakitu/gpu_driver_versions.textproto) |",
-        "summary": {
-          "title": "Container Optimized OS Update",
-          "summary": "Container Optimized OS has been updated with new versions of the kernel, Docker, and Containerd. This release includes support for GPU drivers."
-        }
-      },
-      {
-        "kind": "Announcement",
-        "content": "This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)",
-        "summary": {
-          "title": "Container-Optimized OS LTS Refresh Release",
-          "summary": "A new Long-Term Support (LTS) Refresh release for Container-Optimized OS is now available. This update includes the latest security patches and bug fixes, ensuring a more stable and secure environment for your containerized workloads."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.",
-        "summary": {
-          "title": "Updated cos-gpu-installer and toolbox",
-          "summary": "The cos-gpu-installer has been updated to version 2.7.11, and the toolbox has been updated to version 20261020. These updates include bug fixes and performance improvements."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.",
-        "summary": {
-          "title": "nss library upgraded",
-          "summary": "The nss library has been upgraded to version 3.131.1. This update addresses security concerns by removing certificates impacted by the eMudhra intermediate certificate compromise."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed CVE-2026-111943 in dev-lang/go.",
-        "summary": {
-          "title": "Security fix for Go",
-          "summary": "A critical security vulnerability (CVE-2026-111943) affecting the Go development language has been resolved. This update ensures the integrity and safety of systems relying on Go. Users are advised to update their Go installations promptly."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed CVE-2026-39830 in google-osconfig-agent.",
-        "summary": {
-          "title": "Security fix for OS Config agent",
-          "summary": "A security vulnerability (CVE-2026-39830) in the OS Config agent has been fixed. This update addresses the issue, enhancing the security of your systems. We recommend applying this fix promptly."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed CVE-2026-39831 in node-problem-detector.",
-        "summary": {
-          "title": "Security fix for node-problem-detector",
-          "summary": "A security vulnerability (CVE-2026-39831) in node-problem-detector has been resolved. This update ensures the continued security and stability of your systems by addressing this critical issue."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed CVE-2026-42508, CVE-2026-46595, CVE-2026-39831, CVE-2026-39830 in containerd.",
-        "summary": {
-          "title": "Security fixes for containerd",
-          "summary": "Critical security vulnerabilities in containerd have been addressed. This update resolves CVE-2026-42508, CVE-2026-46595, CVE-2026-39831, and CVE-2026-39830, enhancing the security of your containerized environments."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed CVE-2026-46595 in guest-agent.",
-        "summary": {
-          "title": "Guest-agent security fix",
-          "summary": "A security vulnerability in the guest-agent has been resolved. This update addresses CVE-2026-46595, ensuring improved security for your systems."
         }
       }
     ],
@@ -654,10 +694,34 @@
       },
       {
         "kind": "Fixed",
+        "content": "Fix docker cp failure when copying to/from containers with nested bind mounts.",
+        "summary": {
+          "title": "Fixed docker cp for nested bind mounts",
+          "summary": "The docker cp command has been fixed to correctly handle copying files to and from containers that utilize nested bind mounts. This resolves an issue that previously caused failures in such scenarios."
+        }
+      },
+      {
+        "kind": "Fixed",
         "content": "Upgraded app-editors/vim to v9.2.1152, Upgraded app-editors/vim-core to v9.2.1152.",
         "summary": {
           "title": "Vim editor updated",
           "summary": "The Vim editor and its core component have been updated to version 9.2.1152. This release includes fixes and improvements to the editor's functionality."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-5435 in sys-libs/glibc.",
+        "summary": {
+          "title": "Security fix for glibc",
+          "summary": "A security vulnerability in sys-libs/glibc, identified as CVE-2026-5435, has been resolved. This update ensures the integrity and security of the system by patching this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-82474 in app-admin/sudo.",
+        "summary": {
+          "title": "Sudo vulnerability fixed",
+          "summary": "A security vulnerability, CVE-2026-82474, affecting app-admin/sudo has been resolved. This fix enhances the security of the system by addressing the identified issue."
         }
       },
       {
@@ -675,9 +739,185 @@
           "title": "Python security update",
           "summary": "The Python interpreter has been updated to version 3.11.17. This release includes a fix for CVE-2026-19445, addressing a security vulnerability."
         }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.epoll.max\\_user\\_watches: 1809007 -> 1809051\n* Changed: kernel.threads-max: 63199 -> 63204\n* Changed: net.ipv4.tcp\\_mem: 94041 125391 188082 -> 94044 125395 188088\n* Changed: net.ipv4.udp\\_mem: 188085 250783 376170 -> 188091 250790 376182\n* Changed: user.max\\_cgroup\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_ipc\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_mnt\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_net\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_pid\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_time\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_user\\_namespaces: 31599 -> 31602\n* Changed: user.max\\_uts\\_namespaces: 31599 -> 31602",
+        "summary": {
+          "title": "Runtime sysctl values updated",
+          "summary": "We've updated several runtime sysctl values to enhance system performance and stability. These changes include adjustments to network buffer sizes, maximum user watches, and namespace limits. The updated values aim to provide a more robust operating environment."
+        }
       }
     ],
     "2026-10-12": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Important Update for Your Services",
+          "summary": "We are implementing a significant change to enhance our service offerings. This update is designed to improve performance and user experience. More details will follow soon."
+        }
+      },
+      {
+        "kind": "cos-dev-138-20198-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.18.55](https://cos.googlesource.com/third_party/kernel/+/bdbde7078cc46500653d60b76e7490df2fdbbee5 ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/20198.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS 20198.0.0",
+          "summary": "Container-Optimized OS 20198.0.0 is now available, featuring updated Kernel, Docker, and Containerd versions. This release includes support for GPU drivers, with detailed information available via the provided links."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated default cos-gpu-installer version to v2.7.9. It\ninstalls ucodes firmwares for VR200.",
+        "summary": {
+          "title": "GPU installer updated",
+          "summary": "The default cos-gpu-installer version has been updated to v2.7.9. This update includes the installation of ucodes firmwares for VR200."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated the Linux kernel to v6.18.55.",
+        "summary": {
+          "title": "Linux kernel updated",
+          "summary": "The Linux kernel has been updated to version 6.18.55. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled CONFIG\\_ARM\\_CCA\\_GUEST in the Linux kernel for ARM64 to support guest attestation on Arm CCA Confidential VMs.",
+        "summary": {
+          "title": "Guest attestation for Arm CCA VMs",
+          "summary": "Support for guest attestation on Arm CCA Confidential VMs is now available. This is enabled by the CONFIG_ARM_CCA_GUEST setting in the Linux kernel for ARM64. This feature enhances security for confidential computing environments on Arm architectures."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Security: Disable Magic SysRq for gmec-tdx-kernel-host",
+        "summary": {
+          "title": "Disable Magic SysRq for Kernel Host",
+          "summary": "The Magic SysRq key functionality has been disabled for the gmec-tdx-kernel-host to enhance security. This change prevents unauthorized access to kernel debugging functions, ensuring a more secure operating environment."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for net-fs/lustre-client-drivers v2.14.0\\_p262-r1",
+        "summary": {
+          "title": "Lustre client drivers updated",
+          "summary": "Support for Lustre client drivers version v2.14.0_p262-r1 has been added. This update ensures compatibility with the latest Lustre client driver release. The fix is now deployed and available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for net-fs/lustre-client-drivers v2.14.0\\_p262.",
+        "summary": {
+          "title": "Lustre client drivers updated",
+          "summary": "Added support for Lustre client drivers version v2.14.0_p262. This update ensures compatibility with the latest Lustre client driver release."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added the \"watchdog\\_timeout\" module parameter to the idpf driver.",
+        "summary": {
+          "title": "Watchdog timeout added to idpf driver",
+          "summary": "The watchdog_timeout module parameter has been added to the idpf driver. This enhancement allows for better management of driver timeouts."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Updated app-admin/google-guest-configs to v20260928.00.",
+        "summary": {
+          "title": "Guest configurations updated",
+          "summary": "The app-admin/google-guest-configs package has been updated to version v20260928.00. This update includes necessary fixes and improvements."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20260928.00.",
+        "summary": {
+          "title": "Guest configurations updated",
+          "summary": "The guest configurations package has been upgraded to version v20260928.00. This update includes necessary fixes and improvements."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/oslogin to v20260924.00.",
+        "summary": {
+          "title": "OS Login component updated",
+          "summary": "The OS Login component has been upgraded to version v20260924.00. This update addresses underlying issues and improves the component's stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/runc to v1.5.2, Upgraded app-containers/runc-test to v1.5.2.",
+        "summary": {
+          "title": "runc upgrade",
+          "summary": "The app-containers/runc and app-containers/runc-test components have been upgraded to version 1.5.2. This update ensures improved stability and performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.8.5.",
+        "summary": {
+          "title": "expat library updated",
+          "summary": "The dev-libs/expat library has been updated to version 2.8.5. This update addresses recent changes and improvements to the library."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libgcrypt to v1.12.4.",
+        "summary": {
+          "title": "libgcrypt upgraded",
+          "summary": "The libgcrypt library has been updated to version 1.12.4. This update addresses various issues and improves overall stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libpcre2 to v10.49.",
+        "summary": {
+          "title": "libpcre2 upgraded",
+          "summary": "The libpcre2 library has been upgraded to version 10.49. This update addresses potential issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-python/oauthlib to v4.0.0.",
+        "summary": {
+          "title": "oauthlib upgraded",
+          "summary": "The oauthlib library has been upgraded to version 4.0.0. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/pv to v1.12.0.",
+        "summary": {
+          "title": "pv upgraded to v1.12.0",
+          "summary": "The sys-apps/pv package has been successfully upgraded to version 1.12.0. This update ensures the software is current. The upgrade process was completed without issues."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-apps/xemu to v0.0.11.",
+        "summary": {
+          "title": "Xemu updated to v0.0.11",
+          "summary": "The Xemu application has been updated to version 0.0.11. This release addresses various issues and improves overall stability. Users are encouraged to update to benefit from the latest fixes."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-18220 in sys-libs/binutils-libs.",
+        "summary": {
+          "title": "Binutils-libs Security Update",
+          "summary": "A security vulnerability (CVE-2026-18220) affecting binutils-libs has been resolved. This update ensures improved security for the system's binary utilities library. Users are advised to apply the patch to maintain system integrity."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-5450 in sys-libs/glibc.",
+        "summary": {
+          "title": "glibc security update",
+          "summary": "A security vulnerability in glibc (CVE-2026-5450) has been fixed. This update ensures the security and stability of your system."
+        }
+      },
       {
         "kind": "Change",
         "content": "",
@@ -799,6 +1039,70 @@
         }
       },
       {
+        "kind": "cos-121-18867-638-5",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.158](https://cos.googlesource.com/third_party/kernel/+/ed1f77ef4535cd613776d78cf046773a9d90789b ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.638.5/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS update",
+          "summary": "Container-Optimized OS has been updated with new kernel, Docker, and containerd versions. This release also includes updated GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)",
+        "summary": {
+          "title": "New release available",
+          "summary": "A new LTS Refresh release is now available for Container-Optimized OS. This update includes the latest security patches and bug fixes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for net-fs/lustre-client-drivers v2.14.0\\_p262-r1",
+        "summary": {
+          "title": "Fixed Lustre client driver support",
+          "summary": "Support for net-fs/lustre-client-drivers v2.14.0_p262-r1 has been added. This fix ensures compatibility with the latest version of the Lustre client drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for net-fs/lustre-client-drivers v2.14.0\\_p262.",
+        "summary": {
+          "title": "Lustre client drivers updated",
+          "summary": "Added support for Lustre client drivers version v2.14.0_p262. This update ensures compatibility with the latest Lustre client driver release."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-18220 in sys-libs/binutils-libs.",
+        "summary": {
+          "title": "Binutils-libs Security Update",
+          "summary": "A security vulnerability (CVE-2026-18220) affecting binutils-libs has been resolved. This update ensures improved security for the system's binary utilities library. Users are advised to apply the patch to maintain system integrity."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-5450 in sys-libs/glibc.",
+        "summary": {
+          "title": "glibc security update",
+          "summary": "A security vulnerability in glibc (CVE-2026-5450) has been fixed. This update ensures the security and stability of your system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Patch CVE-2026-49264, CVE-2026-49265 on dev-python/oauthlib.",
+        "summary": {
+          "title": "Security Update for OAuthlib",
+          "summary": "This announcement details critical security patches for CVE-2026-49264 and CVE-2026-49265 affecting the dev-python/oauthlib library. Applying these updates is essential to protect against potential vulnerabilities."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Important Update for Your Services",
+          "summary": "We are implementing a significant change to enhance our service offerings. This update is designed to improve performance and user experience. More details will follow soon."
+        }
+      },
+      {
         "kind": "cos-129-19506-549-7",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.112](https://cos.googlesource.com/third_party/kernel/+/e0eda3654b9ec529967ef7a996ea61b8f133bb95 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.549.7/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -876,54 +1180,6 @@
         "summary": {
           "title": "Lustre support updated",
           "summary": "Support for Lustre v2.14.0_p262-r1 has been added. This update ensures compatibility with the latest Lustre version."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed CVE-2026-18220 in sys-libs/binutils-libs.",
-        "summary": {
-          "title": "Binutils-libs Security Update",
-          "summary": "A security vulnerability (CVE-2026-18220) affecting binutils-libs has been resolved. This update ensures improved security for the system's binary utilities library. Users are advised to apply the patch to maintain system integrity."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Fixed CVE-2026-5450 in sys-libs/glibc.",
-        "summary": {
-          "title": "glibc security update",
-          "summary": "A security vulnerability in glibc (CVE-2026-5450) has been fixed. This update ensures the security and stability of your system."
-        }
-      },
-      {
-        "kind": "Security",
-        "content": "Patch CVE-2026-49264, CVE-2026-49265 on dev-python/oauthlib.",
-        "summary": {
-          "title": "Security Update for OAuthlib",
-          "summary": "This announcement details critical security patches for CVE-2026-49264 and CVE-2026-49265 affecting the dev-python/oauthlib library. Applying these updates is essential to protect against potential vulnerabilities."
-        }
-      },
-      {
-        "kind": "Change",
-        "content": "",
-        "summary": {
-          "title": "Important Update for Your Services",
-          "summary": "We are implementing a significant change to enhance our service offerings. This update is designed to improve performance and user experience. More details will follow soon."
-        }
-      },
-      {
-        "kind": "cos-121-18867-638-5",
-        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.158](https://cos.googlesource.com/third_party/kernel/+/ed1f77ef4535cd613776d78cf046773a9d90789b ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.638.5/lakitu/gpu_driver_versions.textproto) |",
-        "summary": {
-          "title": "Container-Optimized OS update",
-          "summary": "Container-Optimized OS has been updated with new kernel, Docker, and containerd versions. This release also includes updated GPU drivers for enhanced performance."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Added support for net-fs/lustre-client-drivers v2.14.0\\_p262.",
-        "summary": {
-          "title": "Lustre client drivers updated",
-          "summary": "Added support for Lustre client drivers version v2.14.0_p262. This update ensures compatibility with the latest Lustre client driver release."
         }
       },
       {
@@ -1217,6 +1473,30 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Platform Update",
+          "summary": "We are rolling out a new platform update that includes performance enhancements and security improvements. This change aims to provide a more stable and secure environment for all users. We encourage you to review the release notes for more details."
+        }
+      },
+      {
+        "kind": "cos-121-18867-624-8",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.157](https://cos.googlesource.com/third_party/kernel/+/d3eba511730ad022ab42709e5700ada54b787344 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.624.8/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update",
+          "summary": "This update for Container Optimized OS includes new versions of the kernel, Docker, and containerd. It also provides updated GPU drivers for enhanced performance."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Ensure time sync prior to TLS handshake.",
+        "summary": {
+          "title": "Time synchronization for secure connections",
+          "summary": "To ensure secure communication, it's crucial to synchronize time before initiating the TLS handshake. This step is vital for the integrity and security of your connections."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "Updated app-admin/google-guest-configs to v20260928.00.",
         "summary": {
@@ -1231,9 +1511,313 @@
           "title": "Xemu updated to v0.0.11",
           "summary": "The xemu package has been successfully upgraded to version 0.0.11. This update addresses various issues and improves overall stability. Users are encouraged to update to benefit from the latest enhancements."
         }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded dev-libs/libxml2 to v2.15.4. This fixes CVE-2026-86140.",
+        "summary": {
+          "title": "libxml2 security update",
+          "summary": "The libxml2 library has been updated to version 2.15.4, addressing CVE-2026-86140. This update is crucial for maintaining the security of systems relying on this library."
+        }
       }
     ],
     "2026-09-28": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Usage Changes",
+          "summary": "We are implementing changes to how certain services are accessed and managed. These updates aim to streamline operations and improve overall efficiency. Further details regarding the specific services affected and the timeline for these changes will be communicated shortly."
+        }
+      },
+      {
+        "kind": "cos-dev-138-20162-0-0",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.18.51](https://cos.googlesource.com/third_party/kernel/+/e2eaa37d91b2b8020497e55ee941fa23bb334d64 ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/20162.0.0/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container-Optimized OS update",
+          "summary": "This release includes updates to the kernel, Docker, and Containerd. It also provides updated GPU driver information for enhanced hardware support."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Enabled automatic loading of RDMA kernel modules when CX-9 devices are detected.",
+        "summary": {
+          "title": "RDMA kernel modules now load automatically",
+          "summary": "Automatic loading of RDMA kernel modules is now enabled when CX-9 devices are detected. This change ensures that RDMA functionality is readily available for these devices, improving performance and simplifying setup."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Ensure time sync prior to TLS handshake.",
+        "summary": {
+          "title": "Time synchronization for secure connections",
+          "summary": "Ensure accurate time synchronization before establishing TLS handshakes. This is crucial for maintaining the security and integrity of your connections."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated cos-gpu-installer to v2.7.8.",
+        "summary": {
+          "title": "cos-gpu-installer updated to v2.7.8",
+          "summary": "The cos-gpu-installer has been updated to version 2.7.8. This update brings improvements and bug fixes to the GPU driver installation process."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated google-guest-configs to v20260918.00.",
+        "summary": {
+          "title": "Guest configuration updated",
+          "summary": "The google-guest-configs package has been updated to version v20260918.00. This update includes the latest changes and improvements to the guest configuration system."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Updated the Linux kernel to v6.18.51.",
+        "summary": {
+          "title": "Linux kernel updated",
+          "summary": "The Linux kernel has been updated to version 6.18.51. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Added support for loading the CephFS kernel driver.",
+        "summary": {
+          "title": "CephFS kernel driver support added",
+          "summary": "We've added support for loading the CephFS kernel driver. This enhancement improves performance and simplifies the integration of CephFS into your systems."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.178.04.",
+        "summary": {
+          "title": "NVIDIA Driver Support Updated",
+          "summary": "Support for NVIDIA driver version 580.178.04 has been added. This update ensures compatibility with the latest NVIDIA hardware and software."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v595.91.07.",
+        "summary": {
+          "title": "NVIDIA driver support updated",
+          "summary": "We have added support for NVIDIA driver version 595.91.07. This update ensures compatibility with the latest NVIDIA hardware and software configurations."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for bare metal TPUs.",
+        "summary": {
+          "title": "Bare Metal TPU Support Added",
+          "summary": "Support for bare metal TPUs has been successfully integrated. This enhancement allows for direct access to TPU hardware, providing improved performance and flexibility for machine learning workloads."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed a bug which could cause DOCA workloads to fail to initialize.",
+        "summary": {
+          "title": "DOCA workload initialization fixed",
+          "summary": "Fixed a bug that prevented DOCA workloads from initializing correctly. This resolves the issue causing workloads to fail during the initialization phase."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an issue where temporary efivarfs mounts under /tmp could persist after boot.",
+        "summary": {
+          "title": "Fixed persistent efivarfs mounts",
+          "summary": "Resolved an issue where temporary efivarfs mounts under /tmp were incorrectly persisting after system reboots. This ensures a cleaner boot process by removing these temporary mounts."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/oslogin to v20260902.00.",
+        "summary": {
+          "title": "OS Login Component Updated",
+          "summary": "The OS Login component has been upgraded to version v20260902.00. This update addresses issues and improves functionality."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/sosreport to v4.12.0.",
+        "summary": {
+          "title": "sosreport upgraded to v4.12.0",
+          "summary": "The sosreport package has been upgraded to version 4.12.0. This update addresses various issues and improves the functionality of the sosreport tool."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/unzip to v6.0\\_p31.",
+        "summary": {
+          "title": "Unzip package updated",
+          "summary": "The app-arch/unzip package has been updated to version 6.0_p31. This update addresses recent issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/xz-utils to v5.8.4.",
+        "summary": {
+          "title": "xz-utils upgraded to v5.8.4",
+          "summary": "The xz-utils package has been updated to version 5.8.4. This update addresses known issues and improves stability. The new version is now available for all users."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-misc/ca-certificates to v20260601.3.112.5.",
+        "summary": {
+          "title": "Updated CA Certificates",
+          "summary": "The CA certificates package has been updated to version 20260601.3.112.5. This update ensures improved security and compatibility with the latest cryptographic standards."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/chromeos-common-script to v0.0.1-r675.",
+        "summary": {
+          "title": "ChromeOS common script updated",
+          "summary": "The chromeos-base/chromeos-common-script package has been updated to version 0.0.1-r675. This release includes necessary fixes and improvements to the common scripting functionalities within ChromeOS."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/debugd-client to v0.0.1-r2742.",
+        "summary": {
+          "title": "debugd-client updated",
+          "summary": "The debugd-client has been updated to version v0.0.1-r2742. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/google-breakpad to v2026.09.04.193747-r281.",
+        "summary": {
+          "title": "Breakpad updated",
+          "summary": "The google-breakpad component has been updated to version v2026.09.04.193747-r281. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/power\\_manager-client to v0.0.1-r2976.",
+        "summary": {
+          "title": "Power manager client updated",
+          "summary": "The power manager client has been updated to version v0.0.1-r2976. This release includes important fixes and improvements."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded chromeos-base/session\\_manager-client to v0.0.1-r2838.",
+        "summary": {
+          "title": "Session manager client updated",
+          "summary": "The session manager client has been updated to version v0.0.1-r2838. This fix addresses issues related to session management."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded containerd and containerd-test to v2.4.1.",
+        "summary": {
+          "title": "containerd upgraded to v2.4.1",
+          "summary": "containerd and containerd-test have been upgraded to version 2.4.1. This update includes improvements and bug fixes for the container runtime."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-lang/luajit to v2.1.1787165859.",
+        "summary": {
+          "title": "LuaJIT updated",
+          "summary": "The LuaJIT interpreter has been updated to version 2.1.1787165859. This update includes various improvements and bug fixes."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.8.4.",
+        "summary": {
+          "title": "Expat library updated",
+          "summary": "The dev-libs/expat library has been updated to version 2.8.4. This update addresses security vulnerabilities and improves stability. Users are recommended to update to the latest version."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/json-c to v0.19-r2.",
+        "summary": {
+          "title": "json-c library updated",
+          "summary": "The dev-libs/json-c library has been upgraded to version 0.19-r2. This update resolves known issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libgcrypt to v1.12.3-r1.",
+        "summary": {
+          "title": "libgcrypt updated",
+          "summary": "The libgcrypt library has been updated to version 1.12.3-r1. This addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libpcre2 to v10.48.",
+        "summary": {
+          "title": "Updated libpcre2 library",
+          "summary": "The dev-libs/libpcre2 library has been updated to version 10.48. This update addresses known issues and improves performance. The new version is now available for use."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/libxml2 to v2.15.4.",
+        "summary": {
+          "title": "libxml2 upgraded to v2.15.4",
+          "summary": "The libxml2 library has been updated to version 2.15.4. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/xxhash to v0.8.3-r2.",
+        "summary": {
+          "title": "xxhash library updated",
+          "summary": "The xxhash library has been updated to version 0.8.3-r2. This update addresses known issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-python/pyjwt to v2.14.0.",
+        "summary": {
+          "title": "Python JWT library updated",
+          "summary": "The Python JWT library (pyjwt) has been upgraded to version 2.14.0. This update addresses recent issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-devel/binutils-config to v5.6.",
+        "summary": {
+          "title": "Binutils-config updated to v5.6",
+          "summary": "The binutils-config package has been successfully upgraded to version 5.6. This update addresses underlying system components and ensures improved stability. The fix is now live."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-0864 in dev-lang/python.",
+        "summary": {
+          "title": "Security Fix for Python",
+          "summary": "A critical security vulnerability, CVE-2026-0864, affecting Python has been resolved. This update ensures the security and integrity of systems relying on Python. Users are advised to update their Python installations promptly."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-56391 in sys-apps/coreutils.",
+        "summary": {
+          "title": "Security Update for Coreutils",
+          "summary": "A security vulnerability (CVE-2026-56391) affecting sys-apps/coreutils has been resolved. This update ensures the security and stability of your system by patching this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-90054 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-90054, has been resolved. This update ensures the security and stability of systems running the Linux kernel. Users are advised to apply the patch to protect against potential exploits."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Upgraded net-misc/rsync to version 3.5.0. This fixes CVE-2026-53791, CVE-2026-53784, CVE-2026-53786, CVE-2026-53789, CVE-2026-53795, CVE-2026-53797, CVE-2026-53798, CVE-2026-53799, CVE-2026-53800, CVE-2026-53801, CVE-2026-53802, CVE-2026-53803, CVE-2026-70455, CVE-2026-70457, CVE-2026-70459, CVE-2026-70461, and CVE-2026-70463.",
+        "summary": {
+          "title": "Security Update for rsync",
+          "summary": "The net-misc/rsync package has been updated to version 3.5.0. This update addresses multiple security vulnerabilities, including CVE-2026-53791 and others. Users are advised to update their systems to ensure security."
+        }
+      },
       {
         "kind": "Change",
         "content": "",
@@ -1451,6 +2035,54 @@
         }
       },
       {
+        "kind": "cos-117-18613-767-2",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.157](https://cos.googlesource.com/third_party/kernel/+/04c29e4b70e72c933c0bf02443f8334f4bb78d32 ) | v24.0.9 | v1.7.34 | [See List](https://storage.googleapis.com/cos-tools/18613.767.2/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 6.6.157 Available",
+          "summary": "Container-Optimized OS version 6.6.157 is now available, featuring updates to the kernel, Docker, and container runtime. This release also includes support for GPU drivers."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)",
+        "summary": {
+          "title": "New OS Release Available",
+          "summary": "A new long-term support refresh release of the operating system is now available. This update includes the latest security patches and improvements. Users are encouraged to update to ensure they have the most stable and secure environment."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Ensure time sync prior to TLS handshake.",
+        "summary": {
+          "title": "Time synchronization for secure connections",
+          "summary": "Ensure accurate time synchronization before establishing TLS handshakes. This is crucial for maintaining the security and integrity of your connections."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for bare metal TPUs.",
+        "summary": {
+          "title": "Bare Metal TPU Support Added",
+          "summary": "Support for bare metal TPUs has been successfully integrated. This enhancement allows for direct access to TPU hardware, providing improved performance and flexibility for machine learning workloads."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-admin/google-guest-configs to v20260911.00.",
+        "summary": {
+          "title": "Guest configs updated",
+          "summary": "The app-admin/google-guest-configs package has been upgraded to version v20260911.00. This update addresses recent issues and improves system stability."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Usage Changes",
+          "summary": "We are implementing changes to how certain services are accessed and managed. These updates aim to streamline operations and improve overall efficiency. Further details regarding the specific services affected and the timeline for these changes will be communicated shortly."
+        }
+      },
+      {
         "kind": "cos-129-19506-505-8",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.110](https://cos.googlesource.com/third_party/kernel/+/39c6d6f687e655460d68a8405647b6b44e6e688b ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.505.8/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -1483,11 +2115,43 @@
         }
       },
       {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "Service Usage Changes",
+          "summary": "We are implementing changes to how certain services are accessed and managed. These updates aim to streamline operations and improve overall efficiency. Further details regarding the specific services affected and the timeline for these changes will be communicated shortly."
+        }
+      },
+      {
+        "kind": "cos-121-18867-624-2",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.6.157](https://cos.googlesource.com/third_party/kernel/+/d3eba511730ad022ab42709e5700ada54b787344 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.624.2/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS update 18867.624.2 released",
+          "summary": "This release includes updates to the kernel, Docker, and containerd. GPU driver information is also updated. \n\n The updated components are Kernel to 6.6.157, Docker to v27.5.1, and Containerd to v2.0.10."
+        }
+      },
+      {
+        "kind": "Announcement",
+        "content": "This is an [LTS Refresh release.](https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases)",
+        "summary": {
+          "title": "New OS Release Available",
+          "summary": "A new long-term support refresh release of the operating system is now available. This update includes the latest security patches and improvements. Users are encouraged to update to ensure they have the most stable and secure environment."
+        }
+      },
+      {
         "kind": "Fixed",
         "content": "Added support for bare metal TPUs.",
         "summary": {
           "title": "Bare Metal TPU Support Added",
           "summary": "Support for bare metal TPUs has been successfully integrated. This enhancement allows for direct access to TPU hardware, providing improved performance and flexibility for machine learning workloads."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/bzip2 to v1.0.8-r5.",
+        "summary": {
+          "title": "bzip2 upgraded",
+          "summary": "The bzip2 package has been updated to version 1.0.8-r5. This update addresses known issues and improves stability. The new version is now available for use."
         }
       }
     ],

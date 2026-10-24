@@ -1,5 +1,19 @@
 # Google SecOps
 
+## 2026-10-22
+
+### Feature
+
+**Bulk case selection**
+
+In the enhanced Investigation Management experience, you can select up to 50
+cases at a time in the case queue to perform bulk operations:
+
+* **Range selection:** Hold `Shift` while clicking to select a range of cases.
+* **Select all:** Click the header checkbox to select up to 50 loaded cases;
+  this action automatically scrolls your view back to the top of the list.
+
+---
 ## 2026-10-18
 
 ### Feature

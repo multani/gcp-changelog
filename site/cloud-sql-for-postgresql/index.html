@@ -3000,6 +3000,32 @@
 
 
 <h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
+<h2 id="2026-10-23">2026-10-23</h2>
+<h3 id="security">Security</h3>
+<p>In response to <a href="https://docs.cloud.google.com/support/bulletins#gcp-2026-071">GCP-2026-071</a>, Google is
+updating Cloud SQL's managed components. No manual updates to the certificate
+store are required for Cloud SQL-managed instances. The fix is shipping in a
+new maintenance version that will be applied during
+<a href="https://docs.cloud.google.com/sql/docs/postgres/maintenance">scheduled maintenance</a>. You can also apply
+the fix by <a href="https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance">performing self-service
+maintenance</a>. An announcement
+will be published when the self-service maintenance fix is available.</p>
+<p><strong>What should I do?</strong></p>
+<ul>
+<li>If you use the Cloud SQL Auth Proxy, then upgrade the Cloud SQL Auth Proxy to
+  <a href="https://docs.cloud.google.com/sql/docs/postgres/sql-proxy#install">2.26.3 or later</a> and the Cloud SQL
+  Proxy Operator to
+  <a href="https://docs.cloud.google.com/sql/docs/postgres/connect-proxy-operator">1.8.4 or later</a>. If you run the
+  standalone proxy binary, then also update the host's certificate authority
+  (CA) certificates.</li>
+<li>If you use a Cloud SQL Language Connector, then update the language runtime
+  and operating system CA certificates used with the
+  <a href="https://docs.cloud.google.com/sql/docs/postgres/connect-connectors">Cloud SQL Language Connector</a> (for
+  example, Go 1.26.10 or 1.27.3 or later, certifi 2026.10.19 or later).</li>
+<li>If you're using the gcloud CLI to install the Cloud SQL Auth Proxy, then
+  update the gcloud CLI to <a href="https://docs.cloud.google.com/sdk/gcloud#download_and_install_the">590.0.1</a>.</li>
+</ul>
+<hr />
 <h2 id="2026-10-16">2026-10-16</h2>
 <h3 id="change">Change</h3>
 <p>Cloud SQL for PostgreSQL now supports enabling <a href="https://docs.cloud.google.com/sql/docs/postgres/managed-connection-pooling">Managed Connection Pooling</a>
@@ -3970,6 +3996,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-23" class="nav-link">2026-10-23</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-16" class="nav-link">2026-10-16</a>
           </li>

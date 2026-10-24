@@ -2,9 +2,42 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for PostgreSQL</subtitle>
-  <updated>2026-10-16T00:00:00+00:00</updated>
+  <updated>2026-10-23T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-postgresql:2026-10-23:security:0</id>
+    <published>2026-10-23T00:00:00+00:00</published>
+    <updated>2026-10-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In response to <a href="https://docs.cloud.google.com/support/bulletins#gcp-2026-071">GCP-2026-071</a>, Google is
+updating Cloud SQL's managed components. No manual updates to the certificate
+store are required for Cloud SQL-managed instances. The fix is shipping in a
+new maintenance version that will be applied during
+<a href="https://docs.cloud.google.com/sql/docs/postgres/maintenance">scheduled maintenance</a>. You can also apply
+the fix by <a href="https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance">performing self-service
+maintenance</a>. An announcement
+will be published when the self-service maintenance fix is available.</p>
+<p><strong>What should I do?</strong></p>
+<ul>
+<li>If you use the Cloud SQL Auth Proxy, then upgrade the Cloud SQL Auth Proxy to
+  <a href="https://docs.cloud.google.com/sql/docs/postgres/sql-proxy#install">2.26.3 or later</a> and the Cloud SQL
+  Proxy Operator to
+  <a href="https://docs.cloud.google.com/sql/docs/postgres/connect-proxy-operator">1.8.4 or later</a>. If you run the
+  standalone proxy binary, then also update the host's certificate authority
+  (CA) certificates.</li>
+<li>If you use a Cloud SQL Language Connector, then update the language runtime
+  and operating system CA certificates used with the
+  <a href="https://docs.cloud.google.com/sql/docs/postgres/connect-connectors">Cloud SQL Language Connector</a> (for
+  example, Go 1.26.10 or 1.27.3 or later, certifi 2026.10.19 or later).</li>
+<li>If you're using the gcloud CLI to install the Cloud SQL Auth Proxy, then
+  update the gcloud CLI to <a href="https://docs.cloud.google.com/sdk/gcloud#download_and_install_the">590.0.1</a>.</li>
+</ul>]]></content>
+    <summary>Google is updating Cloud SQL's managed components to address a security issue. While no manual updates are needed for most users, specific actions are recommended for those using the Cloud SQL Auth Proxy, Language Connectors, or the gcloud CLI to ensure continued security and functionality. Please refer to the detailed instructions for your specific setup.</summary>
+    <title>Security: Security Update for Cloud SQL</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

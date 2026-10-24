@@ -1,5 +1,34 @@
 # Cloud SQL for SQL Server
 
+## 2026-10-23
+
+### Security
+
+In response to [GCP-2026-071](https://docs.cloud.google.com/support/bulletins#gcp-2026-071), Google is
+updating Cloud SQL's managed components. No manual updates to the certificate
+store are required for Cloud SQL-managed instances. The fix is shipping in a
+new maintenance version that will be applied during
+[scheduled maintenance](https://docs.cloud.google.com/sql/docs/sqlserver/maintenance). You can also apply
+the fix by [performing self-service
+maintenance](https://docs.cloud.google.com/sql/docs/sqlserver/self-service-maintenance). An announcement
+will be published when the self-service maintenance fix is available.
+
+**What should I do?**
+
+* If you use the Cloud SQL Auth Proxy, then upgrade the Cloud SQL Auth Proxy to
+  [2.26.3 or later](https://docs.cloud.google.com/sql/docs/sqlserver/sql-proxy#install) and the Cloud SQL
+  Proxy Operator to
+  [1.8.4 or later](https://docs.cloud.google.com/sql/docs/sqlserver/connect-proxy-operator). If you run the
+  standalone proxy binary, then also update the host's certificate authority
+  (CA) certificates.
+* If you use a Cloud SQL Language Connector, then update the language runtime
+  and operating system CA certificates used with the
+  [Cloud SQL Language Connector](https://docs.cloud.google.com/sql/docs/sqlserver/connect-connectors) (for
+  example, Go 1.26.10 or 1.27.3 or later, certifi 2026.10.19 or later).
+* If you're using the gcloud CLI to install the Cloud SQL Auth Proxy, then
+  update the gcloud CLI to [590.0.1](https://docs.cloud.google.com/sdk/gcloud#download_and_install_the).
+
+---
 ## 2026-10-13
 
 ### Feature

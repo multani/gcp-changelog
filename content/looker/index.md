@@ -75,7 +75,31 @@ An issue has been fixed in the TypeScript and JavaScript SDKs where calling meth
 The [data lineage integration](https://docs.cloud.google.com/looker/docs/looker-core-lineage) remains in Preview.
 
 ---
+## 2026-10-20
+
+### Announcement
+
+The latest versions in the Looker (Google Cloud core) [release channels](https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels) are beginning deployment as follows:
+
+* Latest version in the Regular channel: **Looker 26.20**
+
+The latest version in the Rapid and No Channel channels remains **Looker 26.20**.
+
+**Note:** This item was added on October 23, 2026.
+
+---
 ## 2026-10-15
+
+### Announcement
+
+The latest versions in the Looker (Google Cloud core) [release channels](https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels) are beginning deployment as follows:
+
+* Latest version in the Rapid channel: **Looker 26.20**
+* Latest version in the No Channel channel: **Looker 26.20**
+
+The latest version in the Regular channel remains **Looker 26.18**.
+
+**Note:** This item was added on October 23, 2026.
 
 ### Feature
 

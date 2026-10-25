@@ -1,5 +1,23 @@
 # App Engine flexible environment .NET
 
+## 2026-10-24
+
+### Security
+
+The following runtime language contains important security updates:
+
+* [.NET 6 and later](https://docs.cloud.google.com/appengine/docs/flexible/lifecycle/support-schedule#net): `6.0.428`, `8.0.415`, `10.0.100`
+
+The following stacks and their underlying operating system packages have also been updated:
+
+* `google-22`, `google-22-full`
+* `google-24`, `google-24-full`
+
+Take immediate protective action by rebuilding and redeploying your resources with updated dependencies.
+
+See [Security bulletins for Google Cloud](https://docs.cloud.google.com/support/bulletins) for more information.
+
+---
 ## 2026-09-29
 
 ### Feature

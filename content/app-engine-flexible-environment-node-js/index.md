@@ -1,5 +1,23 @@
 # App Engine flexible environment Node.js
 
+## 2026-10-24
+
+### Security
+
+The following runtime language contains important security updates:
+
+* [Node.js 22 and later](https://docs.cloud.google.com/appengine/docs/flexible/lifecycle/support-schedule#nodejs): `22.23.4`, `24.22.1`, `26.12.1`
+
+The following stacks and their underlying operating system packages have also been updated:
+
+* `google-22`, `google-22-full`
+* `google-24`, `google-24-full`
+
+Take immediate protective action by rebuilding and redeploying your resources with updated dependencies.
+
+See [Security bulletins for Google Cloud](https://docs.cloud.google.com/support/bulletins) for more information.
+
+---
 ## 2026-09-29
 
 ### Feature

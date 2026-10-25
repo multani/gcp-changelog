@@ -1,5 +1,23 @@
 # App Engine flexible environment Python
 
+## 2026-10-24
+
+### Security
+
+The following runtime language contains important security updates:
+
+* [Python 3.10 and later](https://docs.cloud.google.com/appengine/docs/flexible/lifecycle/support-schedule#python): `3.10.22`, `3.11.17`, `3.12.15`, `3.13.15`, `3.14.6`
+
+The following stacks and their underlying operating system packages have also been updated:
+
+* `google-22`, `google-22-full`
+* `google-24`, `google-24-full`
+
+Take immediate protective action by rebuilding and redeploying your resources with updated dependencies.
+
+See [Security bulletins for Google Cloud](https://docs.cloud.google.com/support/bulletins) for more information.
+
+---
 ## 2026-09-29
 
 ### Feature

@@ -3000,6 +3000,26 @@
 
 
 <h1 id="cloud-run">Cloud Run</h1>
+<h2 id="2026-10-24">2026-10-24</h2>
+<h3 id="security">Security</h3>
+<p>The following runtime languages contain important security updates:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/run/docs/runtime-support#go">Go 1.24 and later</a>: <code>1.24.13</code>, <code>1.25.14</code>, <code>1.26.10</code>, <code>1.27.3</code></li>
+<li><a href="https://docs.cloud.google.com/run/docs/runtime-support#node.js">Node.js 22 and later</a>: <code>22.23.4</code>, <code>24.22.1</code>, <code>26.12.1</code></li>
+<li><a href="https://docs.cloud.google.com/run/docs/runtime-support#java">Java 17 and later</a>: <code>17.0.20_101</code>, <code>21.0.12_101.0.LTS</code>, <code>25.0.5_8.0.LTS</code></li>
+<li><a href="https://docs.cloud.google.com/run/docs/runtime-support#php">PHP 8.2 and later</a>: <code>8.2.35</code>, <code>8.3.36</code>, <code>8.4.27</code>, <code>8.5.12</code></li>
+<li><a href="https://docs.cloud.google.com/run/docs/runtime-support#python">Python 3.10 and later</a>: <code>3.10.22</code>, <code>3.11.17</code>, <code>3.12.15</code>, <code>3.13.15</code>, <code>3.14.6</code></li>
+<li><a href="https://docs.cloud.google.com/run/docs/runtime-support#ruby">Ruby 3.3 and later</a>: <code>3.3.12</code>, <code>3.4.11</code>, <code>4.0.7</code></li>
+<li><a href="https://docs.cloud.google.com/run/docs/runtime-support#.net">.NET 6 and later</a>: <code>6.0.428</code>, <code>8.0.415</code>, <code>10.0.100</code></li>
+</ul>
+<p>The following stacks and their underlying operating system packages have also been updated:</p>
+<ul>
+<li><code>google-22</code>, <code>google-22-full</code></li>
+<li><code>google-24</code>, <code>google-24-full</code></li>
+</ul>
+<p>Take immediate protective action by rebuilding and redeploying your resources with updated dependencies.</p>
+<p>See <a href="https://docs.cloud.google.com/support/bulletins">Security bulletins for Google Cloud</a> for more information.</p>
+<hr />
 <h2 id="2026-10-22">2026-10-22</h2>
 <h3 id="feature">Feature</h3>
 <p>You can configure <a href="https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc#direct-vpc-instance">Direct VPC ingress for Cloud Run instances</a>
@@ -3007,12 +3027,12 @@
 ingress lets Cloud Run instances on a VPC network use their own ephemeral
 private IP address to communicate with each other and with other resources on
 the VPC network.</p>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <p>All supported versions of <a href="https://docs.cloud.google.com/run/docs/runtime-support#php">PHP 8.2</a> and later are patched. Take immediate protective action by redeploying your resources with updated dependencies.</p>
 <p>See <a href="https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619">Responding to core PHP vulnerabilities</a> for more information.</p>
 <hr />
 <h2 id="2026-10-21">2026-10-21</h2>
-<h3 id="security_1">Security</h3>
+<h3 id="security_2">Security</h3>
 <p>This note is incorrect; follow guidance in the entry for <a href="#October_22_2026">October 22, 2026</a>.</p>
 <p>Patch updates to <a href="https://docs.cloud.google.com/run/docs/runtime-support#php">supported PHP runtimes</a> are available for Cloud Run resources <a href="https://docs.cloud.google.com/run/docs/deploying-source-code">deployed from source code</a>: <code>8.5.12</code>, <code>8.4.27</code>, <code>8.3.36</code>, and <code>8.2.35</code>. Take immediate action to protect your workloads by redeploying your Cloud Run resources with updated dependencies. Cloud Run resources with <a href="https://docs.cloud.google.com/run/docs/configuring/services/automatic-base-image-updates">automatic base image updates</a> enabled have already been patched. See <a href="https://cloud.google.com/blog/products/identity-security/responding-to-core-php-vulnerabilities-cve-2026-109618-cve-2026-109619">Responding to core PHP vulnerabilities</a> for more information.</p>
 <hr />
@@ -3456,6 +3476,9 @@ ID</a> to log outputs.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-run">Cloud Run</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-24" class="nav-link">2026-10-24</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-22" class="nav-link">2026-10-22</a>
           </li>

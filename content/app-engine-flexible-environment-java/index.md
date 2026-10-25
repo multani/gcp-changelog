@@ -1,5 +1,23 @@
 # App Engine flexible environment Java
 
+## 2026-10-24
+
+### Security
+
+The following runtime language contains important security updates:
+
+* [Java 17 and later](https://docs.cloud.google.com/appengine/docs/flexible/lifecycle/support-schedule#java): `17.0.20_101`, `21.0.12_101.0.LTS`, `25.0.5_8.0.LTS`
+
+The following stacks and their underlying operating system packages have also been updated:
+
+* `google-22`, `google-22-full`
+* `google-24`, `google-24-full`
+
+Take immediate protective action by rebuilding and redeploying your resources with updated dependencies.
+
+See [Security bulletins for Google Cloud](https://docs.cloud.google.com/support/bulletins) for more information.
+
+---
 ## 2026-09-29
 
 ### Feature

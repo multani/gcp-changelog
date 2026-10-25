@@ -1,5 +1,23 @@
 # App Engine standard environment PHP
 
+## 2026-10-24
+
+### Security
+
+The following runtime language contains important security updates:
+
+* [PHP 8.2 and later](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/support-schedule#php): `8.2.35`, `8.3.36`, `8.4.27`, `8.5.12`
+
+The following stacks and their underlying operating system packages have also been updated:
+
+* `google-22`, `google-22-full`
+* `google-24`, `google-24-full`
+
+Take immediate protective action by rebuilding and redeploying your resources with updated dependencies.
+
+See [Security bulletins for Google Cloud](https://docs.cloud.google.com/support/bulletins) for more information.
+
+---
 ## 2026-10-22
 
 ### Security

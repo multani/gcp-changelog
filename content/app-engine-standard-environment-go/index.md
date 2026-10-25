@@ -1,5 +1,23 @@
 # App Engine standard environment Go
 
+## 2026-10-24
+
+### Security
+
+The following runtime language contains important security updates:
+
+* [Go 1.24 and later](https://docs.cloud.google.com/appengine/docs/standard/lifecycle/support-schedule#go): `1.24.13`, `1.25.14`, `1.26.10`, `1.27.3`
+
+The following stacks and their underlying operating system packages have also been updated:
+
+* `google-22`, `google-22-full`
+* `google-24`, `google-24-full`
+
+Take immediate protective action by rebuilding and redeploying your resources with updated dependencies.
+
+See [Security bulletins for Google Cloud](https://docs.cloud.google.com/support/bulletins) for more information.
+
+---
 ## 2026-09-29
 
 ### Feature

@@ -1,6 +1,24 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-10-26": [
+      {
+        "kind": "Feature",
+        "content": "**Model Context Protocol (MCP) tool arguments are sent to the location their OpenAPI\nparameter declares**\n\nThis change applies to Apigee X in all supported regions.\n\nAn MCP tool argument whose OpenAPI parameter declares `in: header` is now sent to\nyour backend as a request header, and one that declares `in: cookie` is sent in the\n`Cookie` header. Previously both were appended to the query string.\n`in: query` and `in: path` parameters are unchanged, and every parameter\nstill appears in the tool's `inputSchema`, so MCP clients supply arguments exactly as\nbefore. If a backend reads one of these values from the query string, declare the parameter\n`in: query` or read it from its declared location.\n\nOn a tool call that supplies at least one cookie argument, the `Cookie` header is\nreplaced with only the declared cookie parameters, omitting any others. Any cookie your backend\nrelies on must be declared as an `in: cookie` parameter.\n\nAn MCP proxy that was already deployed continues to use the previous query-string behavior\nuntil its configuration is next regenerated. To adopt the new routing on an existing MCP proxy,\ndeploy a new revision of it.\n\nFor the full mapping, see\n[Tool\nargument placement on the backend request](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview#tool-argument-placement).",
+        "summary": {
+          "title": "MCP tool arguments now routed to declared locations",
+          "summary": "The Model Context Protocol (MCP) tool now sends arguments to their declared locations, such as headers or cookies, instead of always appending them to the query string. This change ensures better adherence to OpenAPI specifications for parameter placement. Existing MCP proxies will retain the old behavior until reconfigured."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "**On October 24, 2026, we published a security bulletin for Apigee.**\n\nTwo vulnerabilities in PHP core\n([CVE-2026-109618](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109618)\nand\n[CVE-2026-109619](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109619),\n\"PHP2Shell\") allow an unauthenticated attacker to execute code remotely on a\nserver running a vulnerable PHP version. The impact is limited to Drupal-based\nApigee developer portals, which customers deploy and operate. Apigee, Apigee\nHybrid, and the Apigee integrated portal don't use PHP and aren't affected.\n\n**Security bulletin published: [GCP-2026-072](https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-072)**",
+        "summary": {
+          "title": "Security Update for Apigee Developer Portals",
+          "summary": "A security bulletin has been issued for Apigee, addressing two critical vulnerabilities (CVE-2026-109618 and CVE-2026-109619) in PHP core. These vulnerabilities could allow remote code execution on Drupal-based Apigee developer portals. Customers using these specific configurations should review the bulletin for details and necessary actions, as core Apigee products are not affected."
+        }
+      }
+    ],
     "2026-10-22": [
       {
         "kind": "Announcement",

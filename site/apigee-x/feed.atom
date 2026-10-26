@@ -2,9 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-10-22T00:00:00+00:00</updated>
+  <updated>2026-10-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-26:feature:0</id>
+    <published>2026-10-26T00:00:00+00:00</published>
+    <updated>2026-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Model Context Protocol (MCP) tool arguments are sent to the location their OpenAPI
+parameter declares</strong></p>
+<p>This change applies to Apigee X in all supported regions.</p>
+<p>An MCP tool argument whose OpenAPI parameter declares <code>in: header</code> is now sent to
+your backend as a request header, and one that declares <code>in: cookie</code> is sent in the
+<code>Cookie</code> header. Previously both were appended to the query string.
+<code>in: query</code> and <code>in: path</code> parameters are unchanged, and every parameter
+still appears in the tool's <code>inputSchema</code>, so MCP clients supply arguments exactly as
+before. If a backend reads one of these values from the query string, declare the parameter
+<code>in: query</code> or read it from its declared location.</p>
+<p>On a tool call that supplies at least one cookie argument, the <code>Cookie</code> header is
+replaced with only the declared cookie parameters, omitting any others. Any cookie your backend
+relies on must be declared as an <code>in: cookie</code> parameter.</p>
+<p>An MCP proxy that was already deployed continues to use the previous query-string behavior
+until its configuration is next regenerated. To adopt the new routing on an existing MCP proxy,
+deploy a new revision of it.</p>
+<p>For the full mapping, see
+<a href="https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview#tool-argument-placement">Tool
+argument placement on the backend request</a>.</p>]]></content>
+    <summary>The Model Context Protocol (MCP) tool now sends arguments to their declared locations, such as headers or cookies, instead of always appending them to the query string. This change ensures better adherence to OpenAPI specifications for parameter placement. Existing MCP proxies will retain the old behavior until reconfigured.</summary>
+    <title>Feature: MCP tool arguments now routed to declared locations</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-26:security:1</id>
+    <published>2026-10-26T00:00:00+00:00</published>
+    <updated>2026-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>On October 24, 2026, we published a security bulletin for Apigee.</strong></p>
+<p>Two vulnerabilities in PHP core
+(<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109618">CVE-2026-109618</a>
+and
+<a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109619">CVE-2026-109619</a>,
+"PHP2Shell") allow an unauthenticated attacker to execute code remotely on a
+server running a vulnerable PHP version. The impact is limited to Drupal-based
+Apigee developer portals, which customers deploy and operate. Apigee, Apigee
+Hybrid, and the Apigee integrated portal don't use PHP and aren't affected.</p>
+<p><strong>Security bulletin published: <a href="https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-072">GCP-2026-072</a></strong></p>]]></content>
+    <summary>A security bulletin has been issued for Apigee, addressing two critical vulnerabilities (CVE-2026-109618 and CVE-2026-109619) in PHP core. These vulnerabilities could allow remote code execution on Drupal-based Apigee developer portals. Customers using these specific configurations should review the bulletin for details and necessary actions, as core Apigee products are not affected.</summary>
+    <title>Security: Security Update for Apigee Developer Portals</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

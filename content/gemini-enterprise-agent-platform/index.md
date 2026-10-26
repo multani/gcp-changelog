@@ -38,6 +38,32 @@ For more information, see the
 [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
 
 ---
+## 2026-10-19
+
+### Feature
+
+**Supervised fine-tuning for Gemini 3 models is available in General Availability**
+
+[Supervised fine-tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/supervised-tuning)
+for Gemini 3 models is available in
+[General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+
+Key updates include the following:
+
+* **Gemini 3.5 Flash Lite support**: Supervised fine-tuning is now supported
+  for [Gemini 3.5 Flash Lite](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite)
+  (`gemini-3.5-flash-lite`), in addition to Gemini 3.5 Flash
+  (`gemini-3.5-flash`) and Gemini 3.1 Flash Lite (`gemini-3.1-flash-lite`).
+* **Supported regions**: Model tuning jobs and tuned model serving for Gemini
+  3 models are supported on the `us` and `eu` multi-region endpoints.
+* **Customer-managed encryption keys (CMEK)**:
+  [Customer-managed encryption keys (CMEK)](https://docs.cloud.google.com/gemini-enterprise-agent-platform/machine-learning/general/cmek)
+  are supported for protecting tuning job resources and tuned models.
+
+For more information, see [About supervised fine-tuning for Gemini models](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/supervised-tuning)
+and [Tune Gemini models by using supervised fine-tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/supervised-tuning/use).
+
+---
 ## 2026-10-14
 
 ### Feature

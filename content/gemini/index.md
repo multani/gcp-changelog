@@ -1,5 +1,16 @@
 # Gemini
 
+## 2026-10-13
+
+### Other
+
+
+
+### Bug fixes in IntelliJ
+
+Various bug fixes and minor product enhancements.
+
+---
 ## 2026-10-09
 
 ### Announcement

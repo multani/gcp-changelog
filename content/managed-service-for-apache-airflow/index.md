@@ -1,5 +1,45 @@
 # Managed Service for Apache Airflow
 
+## 2026-10-20
+
+### Feature
+
+[Upgrade rollbacks](https://docs.cloud.google.com/composer/docs/composer-3/upgrade-environments#rollback)
+are available in Managed Airflow (Gen 3). You can roll back an environment
+upgrade if you encounter degraded performance, Airflow bugs, or compatibility
+issues with your DAGs, plugins, or dependencies.
+
+This feature is gradually rolling out over several releases. In this release,
+it's available in the following regions: africa-south1, asia-northeast2,
+asia-south2, australia-southeast2, europe-north2, europe-southwest1,
+europe-west10, europe-west12, europe-west8, me-central1, me-central2, me-west1,
+northamerica-northeast2, northamerica-south1, southamerica-west1, us-south1,
+asia-east1, asia-northeast3, asia-southeast2, europe-central2, europe-west4,
+europe-west6, europe-west9, northamerica-northeast1, southamerica-east1,
+us-east5, us-west3, us-west4, asia-east2, asia-southeast3.
+
+### Change
+
+Improved Airflow worker health checks to detect task queue connection issues
+more quickly.
+
+### Change
+
+New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)
+are available in Managed Airflow (Gen 3):
+
+* [composer-3-airflow-3.3.1-build.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-5)
+* [composer-3-airflow-3.2.2-build.9](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-9)
+* [composer-3-airflow-2.11.1-build.22](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-22) (default)
+
+### Change
+
+New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)
+are available in Managed Airflow (Gen 2):
+
+* [composer-2.17.16-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-16-airflow-2-11-1) (default)
+
+---
 ## 2026-10-14
 
 ### Announcement
@@ -11,13 +51,6 @@ see
 
 ---
 ## 2026-10-13
-
-### Announcement
-
-A new Managed Service for Apache Airflow release has started on
-**October 13, 2026**. Get ready for upcoming changes and features as we roll
-out the new release to all regions. This release is in progress at the moment.
-Listed changes and features might not be available in some regions yet.
 
 ### Feature
 

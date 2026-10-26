@@ -15,6 +15,38 @@ the schema conversion phase. For more information, see the following pages:
 * [Createa a conversion workspace for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/create-conversion-workspace#use-cloud-storage)
 
 ---
+## 2026-10-23
+
+### Security
+
+On Saturday, October 17, 2026, Google received a report from a security
+researcher regarding the compromise of private keys associated with eight
+eMudhra subordinate Certification Authority (CA) certificates, including those
+cross-signed by AAA Certificate Services. Consequently, these CA certificates
+are no longer trusted and are being revoked.
+
+To continue connecting to a source database after its CA certificate is
+updated, upload the new CA certificate to the Database Migration Service source connection
+profile:
+
+* Update the connection profile using
+  [`gcloud database-migration connection-profiles update`](https://docs.cloud.google.com/sdk/gcloud/reference/database-migration/connection-profiles/update)
+  or the
+  [`connectionProfiles.patch`](https://docs.cloud.google.com/database-migration/docs/reference/rest/v1/projects.locations.connectionProfiles/patch)
+  API method.
+* Modify the connection profile in the Google Cloud console:
+  + [MySQL connection profiles](https://docs.cloud.google.com/database-migration/docs/mysql/manage-connection-profiles#update_a_connection_profile)
+  + [PostgreSQL to Cloud SQL connection profiles](https://docs.cloud.google.com/database-migration/docs/postgres/manage-connection-profiles#update_a_connection_profile)
+  + [PostgreSQL to AlloyDB for PostgreSQL connection profiles](https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/manage_connection-profiles#modify_a_connection_profile)
+  + [Oracle to Cloud SQL connection profiles](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/manage-connection-profiles#update_a_connection_profile)
+  + [Oracle to AlloyDB for PostgreSQL connection profiles](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/manage-connection-profiles#update_a_connection_profile)
+  + [SQL Server to Cloud SQL connection profiles](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/manage-connection-profiles#update_a_connection_profile)
+  + [SQL Server to AlloyDB for PostgreSQL connection profiles](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/manage-connection-profiles#update_a_connection_profile)
+
+For more information, see security bulletin
+[GCP-2026-071](https://docs.cloud.google.com/support/bulletins#gcp-2026-071).
+
+---
 ## 2026-08-17
 
 ### Announcement

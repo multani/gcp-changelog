@@ -3000,6 +3000,38 @@
 
 
 <h1 id="managed-service-for-apache-airflow">Managed Service for Apache Airflow</h1>
+<h2 id="2026-10-20">2026-10-20</h2>
+<h3 id="feature">Feature</h3>
+<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/upgrade-environments#rollback">Upgrade rollbacks</a>
+are available in Managed Airflow (Gen 3). You can roll back an environment
+upgrade if you encounter degraded performance, Airflow bugs, or compatibility
+issues with your DAGs, plugins, or dependencies.</p>
+<p>This feature is gradually rolling out over several releases. In this release,
+it's available in the following regions: africa-south1, asia-northeast2,
+asia-south2, australia-southeast2, europe-north2, europe-southwest1,
+europe-west10, europe-west12, europe-west8, me-central1, me-central2, me-west1,
+northamerica-northeast2, northamerica-south1, southamerica-west1, us-south1,
+asia-east1, asia-northeast3, asia-southeast2, europe-central2, europe-west4,
+europe-west6, europe-west9, northamerica-northeast1, southamerica-east1,
+us-east5, us-west3, us-west4, asia-east2, asia-southeast3.</p>
+<h3 id="change">Change</h3>
+<p>Improved Airflow worker health checks to detect task queue connection issues
+more quickly.</p>
+<h3 id="change_1">Change</h3>
+<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-5">composer-3-airflow-3.3.1-build.5</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-9">composer-3-airflow-3.2.2-build.9</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-22">composer-3-airflow-2.11.1-build.22</a> (default)</li>
+</ul>
+<h3 id="change_2">Change</h3>
+<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-16-airflow-2-11-1">composer-2.17.16-airflow-2.11.1</a> (default)</li>
+</ul>
+<hr />
 <h2 id="2026-10-14">2026-10-14</h2>
 <h3 id="announcement">Announcement</h3>
 <p>All Managed Airflow environment's GKE clusters will be set up with maintenance
@@ -3008,12 +3040,7 @@ see
 <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/maintenance-windows-and-exclusions#exclusions">Maintenance exclusions</a>.</p>
 <hr />
 <h2 id="2026-10-13">2026-10-13</h2>
-<h3 id="announcement_1">Announcement</h3>
-<p>A new Managed Service for Apache Airflow release has started on
-<strong>October 13, 2026</strong>. Get ready for upcoming changes and features as we roll
-out the new release to all regions. This release is in progress at the moment.
-Listed changes and features might not be available in some regions yet.</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/create-environments#development-mode">Development mode environments</a>
 and
 <a href="https://docs.cloud.google.com/composer/docs/composer-3/hibernate-environments">Environment hibernation</a> are now generally available (GA).</p>
@@ -3021,7 +3048,7 @@ and
 development mode to test and develop DAGs before publishing them to production.
 You can hibernate development mode environments when you no longer need them.
 Hibernation reduces most environment costs to zero.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/upgrade-environments#rollback">Upgrade rollbacks</a>
 are available in Managed Airflow (Gen 3). You can roll back an environment
 upgrade if you encounter degraded performance, Airflow bugs, or compatibility
@@ -3029,18 +3056,18 @@ issues with your DAGs, plugins, or dependencies.</p>
 <p>This feature is gradually rolling out over several releases. In this release,
 it's available in the following regions: europe-north1, europe-west3, us-east1,
 and us-west2.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>New Managed Airflow (Gen 3) environments created while the
 Restrict Endpoint Usage (<code>constraints/gcp.restrictEndpointUsage</code>) organization
 policy is active now use regional endpoints for services like Cloud Storage,
 Cloud Logging, Pub/Sub, and Data Lineage.</p>
-<h3 id="feature_3">Feature</h3>
+<h3 id="feature_4">Feature</h3>
 <p><em>(Managed Airflow Gen 3)</em> Added the scheduler loop duration metric:</p>
 <ul>
 <li><code>composer.googleapis.com/workload/scheduler/loop_duration</code>: time spent
   running one Scheduler loop.</li>
 </ul>
-<h3 id="feature_4">Feature</h3>
+<h3 id="feature_5">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/configure-db-retention">Database retention</a>
 in Managed Airflow (Gen 3) now includes new Airflow 3
 metadata tables, and updated retention logs to report the exact number of
@@ -3064,7 +3091,7 @@ body could sometimes cause a long-running operation to fail.</p>
 could run out of memory (<code>OOMKilled</code>) when calculating scheduled snapshot
 metrics in environments with a large number of files in their environment's
 bucket.</p>
-<h3 id="change">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>The <code>apache-airflow-providers-google</code> package was upgraded to version 22.6.0.
 For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
@@ -3075,18 +3102,18 @@ composer-3-airflow-2.9.3-build.35, composer-3-airflow-2.10.5-build.15,
 composer-3-airflow-2.9.3-build.36, composer-3-airflow-2.10.5-build.16,
 composer-2.14.3-airflow-2.9.3, composer-2.14.3-airflow-2.10.5,
 composer-2.14.4-airflow-2.9.3, and composer-2.14.4-airflow-2.10.5.</p>
-<h3 id="change_1">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>The <code>apache-airflow-providers-cncf-kubernetes</code> package was
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/changelog.html">upgraded to version 10.23.0</a>.
 For changes in other packages, see the
 <a href="https://cloud.google.com/composer/docs/versions-packages">preinstalled packages changelog</a>.</p>
-<h3 id="change_2">Change</h3>
+<h3 id="change_5">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-15-airflow-2-11-1">composer-2.17.15-airflow-2.11.1</a> (default)</li>
 </ul>
-<h3 id="change_3">Change</h3>
+<h3 id="change_6">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3096,7 +3123,7 @@ are available in Managed Airflow (Gen 3):</p>
 </ul>
 <hr />
 <h2 id="2026-09-25">2026-09-25</h2>
-<h3 id="change_4">Change</h3>
+<h3 id="change_7">Change</h3>
 <p><em>(Airflow 3.3.1, 3.2.2, and 2.11.1)</em>
 The <code>apache-airflow-providers-google</code> package was upgraded to version 22.4.0.
 For more information about changes, see the
@@ -3106,9 +3133,9 @@ For more information about changes, see the
 incorrectly converted to lowercase. The audience field now preserves
 case-sensitivity. This fixes integration failures with external services that
 require case-sensitive audience values.</p>
-<h3 id="change_5">Change</h3>
+<h3 id="change_8">Change</h3>
 <p>Airflow 2.10.5 is no longer included in new Managed Airflow images and builds</p>
-<h3 id="change_6">Change</h3>
+<h3 id="change_9">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3116,7 +3143,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-7">composer-3-airflow-3.2.2-build.7</a></li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-20">composer-3-airflow-2.11.1-build.20</a> (default)</li>
 </ul>
-<h3 id="change_7">Change</h3>
+<h3 id="change_10">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3131,21 +3158,21 @@ composer-2.14.1-airflow-2.9.3, composer-2.14.1-airflow-2.10.5,
 composer-2.14.2-airflow-2.9.3, and composer-2.14.2-airflow-2.10.5.</p>
 <hr />
 <h2 id="2026-09-02">2026-09-02</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>A new Managed Service for Apache Airflow release has started on <strong>September 02, 2026</strong>. Get ready
 for upcoming changes and features as we roll out the new release to all regions.
 This release is in progress at the moment. Listed changes and features might
 not be available in some regions yet.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>Managed Airflow (Gen 3) environments now provide Out-of-Memory (OOM) event logs
 to help troubleshoot and diagnose memory exhaustion.</p>
-<h3 id="change_8">Change</h3>
+<h3 id="change_11">Change</h3>
 <p>Improved Airflow task resilience against transient Kubernetes pod connection
 issues.</p>
-<h3 id="change_9">Change</h3>
+<h3 id="change_12">Change</h3>
 <p>Improved Airflow web server update process during environment upgrade
 operations.</p>
-<h3 id="change_10">Change</h3>
+<h3 id="change_13">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3154,7 +3181,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-19">composer-3-airflow-2.11.1-build.19</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-52">composer-3-airflow-2.10.5-build.52</a></li>
 </ul>
-<h3 id="change_11">Change</h3>
+<h3 id="change_14">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3163,12 +3190,12 @@ are available in Managed Airflow (Gen 2):</p>
 </ul>
 <hr />
 <h2 id="2026-08-28">2026-08-28</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/run-orchestration-pipelines">Orchestration Pipelines</a>
 are now <strong>generally available (GA)</strong>.</p>
 <hr />
 <h2 id="2026-08-26">2026-08-26</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><em>(Airflow 3.3.1 and 3.2.2)</em> Environments with Airflow 3.3.1 and 3.2.2 now
 support loading snapshots from environments with Airflow 2.11.1. This feature
 lets you migrate from Airflow 2.11.1 environments to Airflow 3 using snapshots,
@@ -3181,7 +3208,7 @@ and us-west2.</p>
 <a href="https://github.com/apache/airflow/pull/71091">#71091</a> to fix a warning about
 invalid characters for stats reporting generated by the DAG processor for every
 file.</p>
-<h3 id="change_12">Change</h3>
+<h3 id="change_15">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3190,7 +3217,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-18">composer-3-airflow-2.11.1-build.18</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-51">composer-3-airflow-2.10.5-build.51</a></li>
 </ul>
-<h3 id="change_13">Change</h3>
+<h3 id="change_16">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3204,10 +3231,10 @@ composer-3-airflow-2.9.3-build.32, composer-3-airflow-2.10.5-build.12,
 composer-2.14.0-airflow-2.10.5, composer-2.14.0-airflow-2.9.3.</p>
 <hr />
 <h2 id="2026-08-25">2026-08-25</h2>
-<h3 id="feature_8">Feature</h3>
+<h3 id="feature_9">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/use-composer-mcp">Managed Airflow remote Model Context Protocol (MCP) server</a>
 is now generally available (GA).</p>
-<h3 id="feature_9">Feature</h3>
+<h3 id="feature_10">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/troubleshoot-tasks-and-dag-runs-with-agent">Managed Airflow Agent</a>
 is now available in Google Cloud Console. The agent can help you understand,
 diagnose, and resolve issues with failed Airflow tasks and DAG runs, optimize
@@ -3215,24 +3242,24 @@ your environment's performance, identify existing or potential issues,
 bottlenecks, and areas for optimization.</p>
 <hr />
 <h2 id="2026-08-20">2026-08-20</h2>
-<h3 id="announcement_3">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>A new Managed Service for Apache Airflow release has started on
 <strong>August 20, 2026</strong>. Get ready for upcoming changes and features as we roll out
 the new release to all regions. This release is in progress at the moment.
 Listed changes and features might not be available in some regions yet.</p>
-<h3 id="feature_10">Feature</h3>
-<p><strong>Airflow 3.3.1</strong> is available in Managed Airflow (Gen 3).</p>
-<h3 id="change_14">Change</h3>
-<p>Airflow 3.1.8 is no longer included in Managed Airflow images and builds.</p>
 <h3 id="feature_11">Feature</h3>
+<p><strong>Airflow 3.3.1</strong> is available in Managed Airflow (Gen 3).</p>
+<h3 id="change_17">Change</h3>
+<p>Airflow 3.1.8 is no longer included in Managed Airflow images and builds.</p>
+<h3 id="feature_12">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/run-local-airflow-environments">Composer Local Development CLI tool</a>
 now supports deployment with Podman in Linux and Windows.</p>
-<h3 id="change_15">Change</h3>
+<h3 id="change_18">Change</h3>
 <p><em>(Airflow 3.2.2, 3.1.8, and 2.11.1)</em>
 The <code>apache-airflow-providers-google</code> package was upgraded to version 22.3.0.
 For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
-<h3 id="change_16">Change</h3>
+<h3 id="change_19">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3241,7 +3268,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-17">composer-3-airflow-2.11.1-build.17</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-50">composer-3-airflow-2.10.5-build.50</a></li>
 </ul>
-<h3 id="change_17">Change</h3>
+<h3 id="change_20">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3250,15 +3277,15 @@ are available in Managed Airflow (Gen 2):</p>
 </ul>
 <hr />
 <h2 id="2026-08-10">2026-08-10</h2>
-<h3 id="change_18">Change</h3>
+<h3 id="change_21">Change</h3>
 <p><em>(Managed Airflow Gen 3)</em> Adjusted the formula used to calculate the number
 of Airflow web server workers based on allocated CPU and memory resources. This
 update aligns with resource consumption changes in recent Airflow versions,
 improving web server stability.</p>
-<h3 id="change_19">Change</h3>
+<h3 id="change_22">Change</h3>
 <p><em>(Airflow 3.2.2 and 2.11.1)</em> The <code>[api]rbac_bindings</code> Airflow configuration
 option is blocked and it isn't possible to override its value.</p>
-<h3 id="change_20">Change</h3>
+<h3 id="change_23">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3267,7 +3294,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-15">composer-3-airflow-2.11.1-build.15</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-48">composer-3-airflow-2.10.5-build.48</a></li>
 </ul>
-<h3 id="change_21">Change</h3>
+<h3 id="change_24">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3276,7 +3303,7 @@ are available in Managed Airflow (Gen 2):</p>
 </ul>
 <hr />
 <h2 id="2026-08-05">2026-08-05</h2>
-<h3 id="change_22">Change</h3>
+<h3 id="change_25">Change</h3>
 <p><em>(Airflow 3.2.2, 3.1.8, and 2.11.1)</em>
 The <code>google-cloud-dataproc</code> package was upgraded to version 5.30.0, which
 includes support for Managed Service for Apache Spark
@@ -3284,12 +3311,12 @@ includes support for Managed Service for Apache Spark
 (flexible VMs).</p>
 <p>This package was upgraded in Airflow 2.10.5 in a
 <a href="https://docs.cloud.google.com/composer/docs/release-notes#July_16_2026">previous release</a>.</p>
-<h3 id="change_23">Change</h3>
+<h3 id="change_26">Change</h3>
 <p><em>(Airflow 3.2.2, 3.1.8, and 2.11.1)</em>
 The <code>apache-airflow-providers-google</code> package was upgraded to version 22.2.2.
 For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
-<h3 id="change_24">Change</h3>
+<h3 id="change_27">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3299,7 +3326,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-47">composer-3-airflow-2.10.5-build.47</a></li>
 </ul>
 <p>These builds are versions with an extended upgrade timeline.</p>
-<h3 id="change_25">Change</h3>
+<h3 id="change_28">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3313,9 +3340,9 @@ are available in Managed Airflow (Gen 2):</p>
 composer-3-airflow-2.10.5-build.11, composer-3-airflow-2.9.3-build.31, composer-2.13.9-airflow-2.9.3, and composer-2.13.9-airflow-2.10.5.</p>
 <hr />
 <h2 id="2026-07-29">2026-07-29</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Airflow 3.2.2</strong> is available in Managed Airflow (Gen 3).</p>
-<h3 id="change_26">Change</h3>
+<h3 id="change_29">Change</h3>
 <p><em>(Airflow 3.2.2)</em> The
 <a href="https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/multi-team.html">Multi-Team</a>
 Airflow feature isn't available. The <code>[core]multi_team</code> Airflow configuration
@@ -3325,7 +3352,7 @@ option is set to <code>False</code> and it isn't possible to override it.</p>
 <a href="https://github.com/apache/airflow/pull/69877">#69877</a> to restore the ability
 to deliver failure and retry alerts through a pluggable email backend
 (configured through the <code>[email]email_backend</code> Airflow configuration option).</p>
-<h3 id="change_27">Change</h3>
+<h3 id="change_30">Change</h3>
 <p><em>(Managed Airflow Gen 3 with Airflow 2)</em> Default triggerer resources are
 changing to 1 vCPU and 2 GB memory to match Airflow 3 defaults. This change is
 available in the Google Cloud CLI, Terraform, and Cloud Composer API and is
@@ -3336,7 +3363,7 @@ fails because of malformed network and subnetwork identifiers.</p>
 <h3 id="fixed_7">Fixed</h3>
 <p><em>(Available without upgrading)</em> The correct default task priority weight of <code>1</code>
 is now shown for tasks in the Google Cloud console.</p>
-<h3 id="change_28">Change</h3>
+<h3 id="change_31">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3345,7 +3372,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-13">composer-3-airflow-2.11.1-build.13</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-46">composer-3-airflow-2.10.5-build.46</a></li>
 </ul>
-<h3 id="change_29">Change</h3>
+<h3 id="change_32">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3359,11 +3386,11 @@ composer-3-airflow-2.10.5-build.10, composer-3-airflow-2.9.3-build.30,
 composer-2.13.8-airflow-2.9.3, and composer-2.13.8-airflow-2.10.5.</p>
 <hr />
 <h2 id="2026-07-24">2026-07-24</h2>
-<h3 id="announcement_4">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>Starting in September, 2026, <strong>Airflow 2.10.5 will no longer be included</strong> in
 new Managed Airflow images and builds. This change will not affect existing
 images and builds.</p>
-<h3 id="announcement_5">Announcement</h3>
+<h3 id="announcement_4">Announcement</h3>
 <p>Starting in September 2026, we are changing the version support policy for
 Managed Airflow (Gen 2) to align it with the Managed Airflow (Gen 3) policy.
 The changes will <strong>affect Airflow 2 versions that we release</strong>:</p>
@@ -3377,24 +3404,24 @@ The changes will <strong>affect Airflow 2 versions that we release</strong>:</p>
 </ul>
 <hr />
 <h2 id="2026-07-16">2026-07-16</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Airflow 3.1.8</strong> is available in Managed Airflow (Gen 3).</p>
-<h3 id="change_30">Change</h3>
+<h3 id="change_33">Change</h3>
 <p>Airflow 3.1.7 is no longer included in Managed Airflow images and builds.</p>
 <h3 id="fixed_8">Fixed</h3>
 <p><em>(Airflow 3.1.8)</em> Backported
 <a href="https://github.com/apache/airflow/pull/64031">#64031</a> to fix an issue in
 the Airflow UI when viewing tasks in non-terminal states (scheduled, running)
 with "Show Gantt" enabled.</p>
-<h3 id="change_31">Change</h3>
+<h3 id="change_34">Change</h3>
 <p><em>(Airflow 3.1.8)</em> The <code>apache-airflow-providers-google</code> package was upgraded to version 22.2.0.
 For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
-<h3 id="change_32">Change</h3>
+<h3 id="change_35">Change</h3>
 <p><em>(Airflow 2.11.1)</em> The <code>apache-airflow-providers-google</code> package was upgraded to version 22.2.1.
 For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
-<h3 id="change_33">Change</h3>
+<h3 id="change_36">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3402,7 +3429,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-11">composer-3-airflow-2.11.1-build.11</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-44">composer-3-airflow-2.10.5-build.44</a></li>
 </ul>
-<h3 id="change_34">Change</h3>
+<h3 id="change_37">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3427,7 +3454,7 @@ intermittent out-of-memory (OOM) issues. To resolve these issues,
 to at least 3 GB.</p>
 <hr />
 <h2 id="2026-07-07">2026-07-07</h2>
-<h3 id="change_35">Change</h3>
+<h3 id="change_38">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3435,7 +3462,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-9">composer-3-airflow-2.11.1-build.9</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-42">composer-3-airflow-2.10.5-build.42</a></li>
 </ul>
-<h3 id="change_36">Change</h3>
+<h3 id="change_39">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3453,7 +3480,7 @@ composer-3-airflow-2.10.5-build.8, composer-2.13.6-airflow-2.9.3,
 and composer-2.13.6-airflow-2.10.5.</p>
 <hr />
 <h2 id="2026-06-29">2026-06-29</h2>
-<h3 id="change_37">Change</h3>
+<h3 id="change_40">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3461,7 +3488,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-8">composer-3-airflow-2.11.1-build.8</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-41">composer-3-airflow-2.10.5-build.41</a></li>
 </ul>
-<h3 id="change_38">Change</h3>
+<h3 id="change_41">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3470,11 +3497,11 @@ are available in Managed Airflow (Gen 2):</p>
 </ul>
 <hr />
 <h2 id="2026-06-26">2026-06-26</h2>
-<h3 id="change_39">Change</h3>
+<h3 id="change_42">Change</h3>
 <p>The <code>apache-airflow-providers-google</code> package was upgraded to version 22.1.0.
 For more information about changes, see the
 <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html">apache-airflow-providers-google changelog</a>.</p>
-<h3 id="change_40">Change</h3>
+<h3 id="change_43">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3482,7 +3509,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-7">composer-3-airflow-2.11.1-build.7</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-40">composer-3-airflow-2.10.5-build.40</a></li>
 </ul>
-<h3 id="change_41">Change</h3>
+<h3 id="change_44">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3499,7 +3526,7 @@ composer-2.13.3-airflow-2.10.5, composer-2.13.4-airflow-2.10.5,
 composer-2.13.5-airflow-2.10.5.</p>
 <hr />
 <h2 id="2026-06-12">2026-06-12</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p>New Managed Airflow (Gen 2) environments created while the Restrict Endpoint
 Usage organization policy is active now use regional endpoints for services
 like Cloud Storage, Cloud Logging, Pub/Sub, and Data Lineage. For more
@@ -3507,7 +3534,7 @@ information, see
 <a href="https://docs.cloud.google.com/composer/docs/composer-2/configure-restrict-endpoint-usage-environments">Configure environments with Restrict Endpoint Usage policy</a>.</p>
 <hr />
 <h2 id="2026-06-08">2026-06-08</h2>
-<h3 id="change_42">Change</h3>
+<h3 id="change_45">Change</h3>
 <p>Several API dependencies that aren't required by Managed Airflow (Gen 3) are
 now phased out and must be enabled separately if you want to create
 Managed Airflow (Gen 2) environments in a new project. This change was
@@ -3542,7 +3569,7 @@ projects where the Cloud Composer API is already enabled aren't impacted.</p>
 </ul>
 <hr />
 <h2 id="2026-06-02">2026-06-02</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><em>(Managed Airflow Gen 3)</em> You can now
 <a href="https://docs.cloud.google.com/composer/docs/composer-3/connect-vpc-network#cloud-run-traffic">access Cloud Run endpoints restricted to internal ingress traffic</a>
 through your environment's network attachment. This feature is available
@@ -3550,14 +3577,14 @@ through gcloud CLI beta commands and beta Cloud Composer API in all Managed
 Airflow (Gen 3) versions.</p>
 <hr />
 <h2 id="2026-05-27">2026-05-27</h2>
-<h3 id="feature_16">Feature</h3>
+<h3 id="feature_17">Feature</h3>
 <p>Managed Service for Apache Airflow now
 <a href="https://docs.cloud.google.com/composer/docs/composer-3/create-and-manage-tags">supports Google Cloud tags</a>
 for environments.</p>
 <p><a href="https://docs.cloud.google.com/resource-manager/docs/tags/tags-overview">Tags</a>
 provide a way to create annotations for resources, and conditionally allow or
 deny policies based on whether a resource has a specific tag.</p>
-<h3 id="feature_17">Feature</h3>
+<h3 id="feature_18">Feature</h3>
 <p>In Managed Airflow (Gen 3), it is now possible to
 create Kubernetes Secrets with the <code>kubernetes.io/dockerconfigjson</code>
 <a href="https://kubernetes.io/docs/concepts/configuration/secret/#secret-types">secret type</a>
@@ -3566,7 +3593,7 @@ through the beta Cloud Composer API, in addition to the default
 <h3 id="fixed_9">Fixed</h3>
 <p>(Airflow 3) The INFO log level filter in Airflow UI now correctly displays log
 messages with this logging level.</p>
-<h3 id="change_43">Change</h3>
+<h3 id="change_46">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3574,7 +3601,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-6">composer-3-airflow-2.11.1-build.6</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-39">composer-3-airflow-2.10.5-build.39</a></li>
 </ul>
-<h3 id="change_44">Change</h3>
+<h3 id="change_47">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3588,11 +3615,11 @@ composer-3-airflow-2.9.3-build.24, composer-2.13.2-airflow-2.9.3,
 composer-2.13.2-airflow-2.10.5.</p>
 <hr />
 <h2 id="2026-05-14">2026-05-14</h2>
-<h3 id="change_45">Change</h3>
+<h3 id="change_48">Change</h3>
 <p>The <code>[scheduler]print_stats_interval</code> Airflow configuration option can now be
 overridden in environments with Airflow 2.10.5 and later. This option
 previously was blocked.</p>
-<h3 id="change_46">Change</h3>
+<h3 id="change_49">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3600,7 +3627,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-5">composer-3-airflow-2.11.1-build.5</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-38">composer-3-airflow-2.10.5-build.38</a></li>
 </ul>
-<h3 id="change_47">Change</h3>
+<h3 id="change_50">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3648,7 +3675,7 @@ contain a version of the package where the problem is fixed or isn't present:</p
 as the required version.</p>
 <hr />
 <h2 id="2026-05-11">2026-05-11</h2>
-<h3 id="change_48">Change</h3>
+<h3 id="change_51">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
 are available in Managed Airflow (Gen 3):</p>
 <ul>
@@ -3656,7 +3683,7 @@ are available in Managed Airflow (Gen 3):</p>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-4">composer-3-airflow-2.11.1-build.4</a> (default)</li>
 <li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-10-5-build-37">composer-3-airflow-2.10.5-build.37</a></li>
 </ul>
-<h3 id="change_49">Change</h3>
+<h3 id="change_52">Change</h3>
 <p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
 are available in Managed Airflow (Gen 2):</p>
 <ul>
@@ -3678,6 +3705,9 @@ composer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-*.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#managed-service-for-apache-airflow">Managed Service for Apache Airflow</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-20" class="nav-link">2026-10-20</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-14" class="nav-link">2026-10-14</a>
           </li>

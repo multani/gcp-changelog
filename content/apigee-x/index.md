@@ -1,5 +1,50 @@
 # Apigee X
 
+## 2026-10-26
+
+### Feature
+
+**Model Context Protocol (MCP) tool arguments are sent to the location their OpenAPI
+parameter declares**
+
+This change applies to Apigee X in all supported regions.
+
+An MCP tool argument whose OpenAPI parameter declares `in: header` is now sent to
+your backend as a request header, and one that declares `in: cookie` is sent in the
+`Cookie` header. Previously both were appended to the query string.
+`in: query` and `in: path` parameters are unchanged, and every parameter
+still appears in the tool's `inputSchema`, so MCP clients supply arguments exactly as
+before. If a backend reads one of these values from the query string, declare the parameter
+`in: query` or read it from its declared location.
+
+On a tool call that supplies at least one cookie argument, the `Cookie` header is
+replaced with only the declared cookie parameters, omitting any others. Any cookie your backend
+relies on must be declared as an `in: cookie` parameter.
+
+An MCP proxy that was already deployed continues to use the previous query-string behavior
+until its configuration is next regenerated. To adopt the new routing on an existing MCP proxy,
+deploy a new revision of it.
+
+For the full mapping, see
+[Tool
+argument placement on the backend request](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview#tool-argument-placement).
+
+### Security
+
+**On October 24, 2026, we published a security bulletin for Apigee.**
+
+Two vulnerabilities in PHP core
+([CVE-2026-109618](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109618)
+and
+[CVE-2026-109619](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-109619),
+"PHP2Shell") allow an unauthenticated attacker to execute code remotely on a
+server running a vulnerable PHP version. The impact is limited to Drupal-based
+Apigee developer portals, which customers deploy and operate. Apigee, Apigee
+Hybrid, and the Apigee integrated portal don't use PHP and aren't affected.
+
+**Security bulletin published: [GCP-2026-072](https://docs.cloud.google.com/apigee/docs/security-bulletins/security-bulletins#gcp-2026-072)**
+
+---
 ## 2026-10-22
 
 ### Announcement

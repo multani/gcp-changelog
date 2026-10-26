@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-10-26
+
+### Feature
+
+The Oracle Database@Google Cloud remote MCP server is [generally available (GA)](https://cloud.google.com/products#product-launch-stages) and adds tools to create and manage Database Connections and run SQL statements with `database_connection_executesql`. It lets you interact easily with Oracle Database@Google Cloud resources from LLMs, AI applications, and AI-enabled development platforms.
+
+For more information, see [Use the Oracle Database@Google Cloud remote MCP server](https://docs.cloud.google.com/oracle/database/docs/use-oracledatabase-mcp).
+
+---
 ## 2026-09-17
 
 ### Feature

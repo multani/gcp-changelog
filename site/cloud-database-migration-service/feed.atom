@@ -29,6 +29,41 @@ the schema conversion phase. For more information, see the following pages:</p>
     <author>
       <name>Google Cloud</name>
     </author>
+    <id>urn:github:multani:gcp-changelog:cloud-database-migration-service:2026-10-23:security:0</id>
+    <published>2026-10-23T00:00:00+00:00</published>
+    <updated>2026-10-23T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On Saturday, October 17, 2026, Google received a report from a security
+researcher regarding the compromise of private keys associated with eight
+eMudhra subordinate Certification Authority (CA) certificates, including those
+cross-signed by AAA Certificate Services. Consequently, these CA certificates
+are no longer trusted and are being revoked.</p>
+<p>To continue connecting to a source database after its CA certificate is
+updated, upload the new CA certificate to the Database Migration Service source connection
+profile:</p>
+<ul>
+<li>Update the connection profile using
+  <a href="https://docs.cloud.google.com/sdk/gcloud/reference/database-migration/connection-profiles/update"><code>gcloud database-migration connection-profiles update</code></a>
+  or the
+  <a href="https://docs.cloud.google.com/database-migration/docs/reference/rest/v1/projects.locations.connectionProfiles/patch"><code>connectionProfiles.patch</code></a>
+  API method.</li>
+<li>Modify the connection profile in the Google Cloud console:</li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/mysql/manage-connection-profiles#update_a_connection_profile">MySQL connection profiles</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/postgres/manage-connection-profiles#update_a_connection_profile">PostgreSQL to Cloud SQL connection profiles</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/manage_connection-profiles#modify_a_connection_profile">PostgreSQL to AlloyDB for PostgreSQL connection profiles</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/manage-connection-profiles#update_a_connection_profile">Oracle to Cloud SQL connection profiles</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/manage-connection-profiles#update_a_connection_profile">Oracle to AlloyDB for PostgreSQL connection profiles</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/manage-connection-profiles#update_a_connection_profile">SQL Server to Cloud SQL connection profiles</a></li>
+<li><a href="https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/manage-connection-profiles#update_a_connection_profile">SQL Server to AlloyDB for PostgreSQL connection profiles</a></li>
+</ul>
+<p>For more information, see security bulletin
+<a href="https://docs.cloud.google.com/support/bulletins#gcp-2026-071">GCP-2026-071</a>.</p>]]></content>
+    <summary>A security researcher reported a compromise of private keys for several subordinate CA certificates. These certificates are no longer trusted and are being revoked. To maintain connectivity to your source database, please update your connection profile with the new CA certificate.</summary>
+    <title>Security: Security Alert: CA Certificates Revoked</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
     <id>urn:github:multani:gcp-changelog:cloud-database-migration-service:2026-08-17:announcement:0</id>
     <published>2026-08-17T00:00:00+00:00</published>
     <updated>2026-08-17T00:00:00+00:00</updated>

@@ -2,9 +2,75 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Airflow</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Airflow</subtitle>
-  <updated>2026-10-14T00:00:00+00:00</updated>
+  <updated>2026-10-20T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-airflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-20:feature:0</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/upgrade-environments#rollback">Upgrade rollbacks</a>
+are available in Managed Airflow (Gen 3). You can roll back an environment
+upgrade if you encounter degraded performance, Airflow bugs, or compatibility
+issues with your DAGs, plugins, or dependencies.</p>
+<p>This feature is gradually rolling out over several releases. In this release,
+it's available in the following regions: africa-south1, asia-northeast2,
+asia-south2, australia-southeast2, europe-north2, europe-southwest1,
+europe-west10, europe-west12, europe-west8, me-central1, me-central2, me-west1,
+northamerica-northeast2, northamerica-south1, southamerica-west1, us-south1,
+asia-east1, asia-northeast3, asia-southeast2, europe-central2, europe-west4,
+europe-west6, europe-west9, northamerica-northeast1, southamerica-east1,
+us-east5, us-west3, us-west4, asia-east2, asia-southeast3.</p>]]></content>
+    <summary>You can now roll back environment upgrades in Managed Airflow (Gen 3) if you encounter issues. This feature allows you to revert to a previous version of your environment to maintain stability and compatibility.</summary>
+    <title>Feature: Environment upgrade rollbacks now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-20:change:1</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Improved Airflow worker health checks to detect task queue connection issues
+more quickly.</p>]]></content>
+    <summary>Airflow worker health checks have been enhanced to identify task queue connection problems more rapidly. This improvement ensures quicker detection and resolution of potential disruptions to your data pipelines.</summary>
+    <title>Change: Faster detection of Airflow queue issues</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-20:change:2</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>
+are available in Managed Airflow (Gen 3):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-5">composer-3-airflow-3.3.1-build.5</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-9">composer-3-airflow-3.2.2-build.9</a></li>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-22">composer-3-airflow-2.11.1-build.22</a> (default)</li>
+</ul>]]></content>
+    <summary>New Airflow builds for Managed Airflow (Gen 3) are now available. These updates include versions 3.3.1, 3.2.2, and 2.11.1 (the default). We recommend reviewing the release notes for details on these updates.</summary>
+    <title>Change: New Airflow Builds Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-20:change:3</id>
+    <published>2026-10-20T00:00:00+00:00</published>
+    <updated>2026-10-20T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
+are available in Managed Airflow (Gen 2):</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-16-airflow-2-11-1">composer-2.17.16-airflow-2.11.1</a> (default)</li>
+</ul>]]></content>
+    <summary>New images for Managed Airflow (Gen 2) are now available, including the default composer-2.17.16-airflow-2.11.1. This update ensures you have access to the latest features and improvements for your Airflow environments.</summary>
+    <title>Change: New Managed Airflow Images Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -23,21 +89,7 @@ see
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:announcement:0</id>
-    <published>2026-10-13T00:00:00+00:00</published>
-    <updated>2026-10-13T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>A new Managed Service for Apache Airflow release has started on
-<strong>October 13, 2026</strong>. Get ready for upcoming changes and features as we roll
-out the new release to all regions. This release is in progress at the moment.
-Listed changes and features might not be available in some regions yet.</p>]]></content>
-    <summary>A new release of Managed Service for Apache Airflow began on October 13, 2026. This release introduces upcoming changes and new features that will be rolled out to all regions. Please note that availability may vary by region as the rollout progresses.</summary>
-    <title>Announcement: New Managed Airflow Service Release</title>
-  </entry>
-  <entry>
-    <author>
-      <name>Google Cloud</name>
-    </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:1</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:0</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/create-environments#development-mode">Development mode environments</a>
@@ -54,7 +106,7 @@ Hibernation reduces most environment costs to zero.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:2</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:1</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/upgrade-environments#rollback">Upgrade rollbacks</a>
@@ -71,7 +123,7 @@ and us-west2.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:3</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:2</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New Managed Airflow (Gen 3) environments created while the
@@ -85,7 +137,7 @@ Cloud Logging, Pub/Sub, and Data Lineage.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:4</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:3</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><em>(Managed Airflow Gen 3)</em> Added the scheduler loop duration metric:</p>
@@ -100,7 +152,7 @@ Cloud Logging, Pub/Sub, and Data Lineage.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:5</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:feature:4</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/composer/docs/composer-3/configure-db-retention">Database retention</a>
@@ -117,7 +169,7 @@ and us-west2.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:fixed:6</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:fixed:5</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Managed Airflow (Gen 3) environments now report Airflow workloads startup
@@ -134,7 +186,7 @@ this update immediately.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:fixed:7</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:fixed:6</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed an issue where a redundant <code>image-version</code> property set in the API request
@@ -146,7 +198,7 @@ body could sometimes cause a long-running operation to fail.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:fixed:8</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:fixed:7</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><em>(Managed Airflow Gen 2)</em> Fixed an issue where the <code>airflow-monitoring</code> pod
@@ -160,7 +212,7 @@ bucket.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:9</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:8</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <code>apache-airflow-providers-google</code> package was upgraded to version 22.6.0.
@@ -173,7 +225,7 @@ For more information about changes, see the
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:deprecated:10</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:deprecated:9</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The following Managed Airflow versions and builds have reached their
@@ -189,7 +241,7 @@ composer-2.14.4-airflow-2.9.3, and composer-2.14.4-airflow-2.10.5.</p>]]></conte
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:11</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:10</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <code>apache-airflow-providers-cncf-kubernetes</code> package was
@@ -203,7 +255,7 @@ For changes in other packages, see the
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:12</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:11</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2">images</a>
@@ -218,7 +270,7 @@ are available in Managed Airflow (Gen 2):</p>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:13</id>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-13:change:12</id>
     <published>2026-10-13T00:00:00+00:00</published>
     <updated>2026-10-13T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>New <a href="https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3">Airflow builds</a>

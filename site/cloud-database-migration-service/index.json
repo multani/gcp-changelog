@@ -11,6 +11,16 @@
         }
       }
     ],
+    "2026-10-23": [
+      {
+        "kind": "Security",
+        "content": "On Saturday, October 17, 2026, Google received a report from a security\nresearcher regarding the compromise of private keys associated with eight\neMudhra subordinate Certification Authority (CA) certificates, including those\ncross-signed by AAA Certificate Services. Consequently, these CA certificates\nare no longer trusted and are being revoked.\n\nTo continue connecting to a source database after its CA certificate is\nupdated, upload the new CA certificate to the Database Migration Service source connection\nprofile:\n\n* Update the connection profile using\n  [`gcloud database-migration connection-profiles update`](https://docs.cloud.google.com/sdk/gcloud/reference/database-migration/connection-profiles/update)\n  or the\n  [`connectionProfiles.patch`](https://docs.cloud.google.com/database-migration/docs/reference/rest/v1/projects.locations.connectionProfiles/patch)\n  API method.\n* Modify the connection profile in the Google Cloud console:\n  + [MySQL connection profiles](https://docs.cloud.google.com/database-migration/docs/mysql/manage-connection-profiles#update_a_connection_profile)\n  + [PostgreSQL to Cloud SQL connection profiles](https://docs.cloud.google.com/database-migration/docs/postgres/manage-connection-profiles#update_a_connection_profile)\n  + [PostgreSQL to AlloyDB for PostgreSQL connection profiles](https://docs.cloud.google.com/database-migration/docs/postgresql-to-alloydb/manage_connection-profiles#modify_a_connection_profile)\n  + [Oracle to Cloud SQL connection profiles](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/manage-connection-profiles#update_a_connection_profile)\n  + [Oracle to AlloyDB for PostgreSQL connection profiles](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/manage-connection-profiles#update_a_connection_profile)\n  + [SQL Server to Cloud SQL connection profiles](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/manage-connection-profiles#update_a_connection_profile)\n  + [SQL Server to AlloyDB for PostgreSQL connection profiles](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/manage-connection-profiles#update_a_connection_profile)\n\nFor more information, see security bulletin\n[GCP-2026-071](https://docs.cloud.google.com/support/bulletins#gcp-2026-071).",
+        "summary": {
+          "title": "Security Alert: CA Certificates Revoked",
+          "summary": "A security researcher reported a compromise of private keys for several subordinate CA certificates. These certificates are no longer trusted and are being revoked. To maintain connectivity to your source database, please update your connection profile with the new CA certificate."
+        }
+      }
+    ],
     "2026-08-17": [
       {
         "kind": "Announcement",

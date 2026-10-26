@@ -1,6 +1,40 @@
 {
   "name": "Managed Service for Apache Airflow",
   "entries": {
+    "2026-10-20": [
+      {
+        "kind": "Feature",
+        "content": "[Upgrade rollbacks](https://docs.cloud.google.com/composer/docs/composer-3/upgrade-environments#rollback)\nare available in Managed Airflow (Gen 3). You can roll back an environment\nupgrade if you encounter degraded performance, Airflow bugs, or compatibility\nissues with your DAGs, plugins, or dependencies.\n\nThis feature is gradually rolling out over several releases. In this release,\nit's available in the following regions: africa-south1, asia-northeast2,\nasia-south2, australia-southeast2, europe-north2, europe-southwest1,\neurope-west10, europe-west12, europe-west8, me-central1, me-central2, me-west1,\nnorthamerica-northeast2, northamerica-south1, southamerica-west1, us-south1,\nasia-east1, asia-northeast3, asia-southeast2, europe-central2, europe-west4,\neurope-west6, europe-west9, northamerica-northeast1, southamerica-east1,\nus-east5, us-west3, us-west4, asia-east2, asia-southeast3.",
+        "summary": {
+          "title": "Environment upgrade rollbacks now available",
+          "summary": "You can now roll back environment upgrades in Managed Airflow (Gen 3) if you encounter issues. This feature allows you to revert to a previous version of your environment to maintain stability and compatibility."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Improved Airflow worker health checks to detect task queue connection issues\nmore quickly.",
+        "summary": {
+          "title": "Faster detection of Airflow queue issues",
+          "summary": "Airflow worker health checks have been enhanced to identify task queue connection problems more rapidly. This improvement ensures quicker detection and resolution of potential disruptions to your data pipelines."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [Airflow builds](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-3)\nare available in Managed Airflow (Gen 3):\n\n* [composer-3-airflow-3.3.1-build.5](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-3-1-build-5)\n* [composer-3-airflow-3.2.2-build.9](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-3-2-2-build-9)\n* [composer-3-airflow-2.11.1-build.22](https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-22) (default)",
+        "summary": {
+          "title": "New Airflow Builds Available",
+          "summary": "New Airflow builds for Managed Airflow (Gen 3) are now available. These updates include versions 3.3.1, 3.2.2, and 2.11.1 (the default). We recommend reviewing the release notes for details on these updates."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "New [images](https://docs.cloud.google.com/composer/docs/composer-versions#images-composer-2)\nare available in Managed Airflow (Gen 2):\n\n* [composer-2.17.16-airflow-2.11.1](https://docs.cloud.google.com/composer/docs/versions-packages#composer-2-17-16-airflow-2-11-1) (default)",
+        "summary": {
+          "title": "New Managed Airflow Images Available",
+          "summary": "New images for Managed Airflow (Gen 2) are now available, including the default composer-2.17.16-airflow-2.11.1. This update ensures you have access to the latest features and improvements for your Airflow environments."
+        }
+      }
+    ],
     "2026-10-14": [
       {
         "kind": "Announcement",
@@ -12,14 +46,6 @@
       }
     ],
     "2026-10-13": [
-      {
-        "kind": "Announcement",
-        "content": "A new Managed Service for Apache Airflow release has started on\n**October 13, 2026**. Get ready for upcoming changes and features as we roll\nout the new release to all regions. This release is in progress at the moment.\nListed changes and features might not be available in some regions yet.",
-        "summary": {
-          "title": "New Managed Airflow Service Release",
-          "summary": "A new release of Managed Service for Apache Airflow began on October 13, 2026. This release introduces upcoming changes and new features that will be rolled out to all regions. Please note that availability may vary by region as the rollout progresses."
-        }
-      },
       {
         "kind": "Feature",
         "content": "[Development mode environments](https://docs.cloud.google.com/composer/docs/composer-3/create-environments#development-mode)\nand\n[Environment hibernation](https://docs.cloud.google.com/composer/docs/composer-3/hibernate-environments) are now generally available (GA).\n\nYou can now create Managed Airflow (Gen 3) environments with Airflow 3 in\ndevelopment mode to test and develop DAGs before publishing them to production.\nYou can hibernate development mode environments when you no longer need them.\nHibernation reduces most environment costs to zero.",

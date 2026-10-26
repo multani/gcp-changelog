@@ -1,5 +1,21 @@
 # Model Armor
 
+## 2026-10-26
+
+### Feature
+
+Model Armor enforces the
+`constraints/modelarmor.managed.requireTemplateDataResidencyCompliance` managed
+Organization Policy Service constraint by default. When you create or update a template,
+this constraint prevents you from setting `data_residency_compliant` to `false`
+or clearing the **Enforce data residency** option unless an Organization Policy
+Administrator disables the constraint. This feature is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). For more
+information, see
+[Disable the organization policy constraint for data
+residency](https://docs.cloud.google.com/model-armor/manage-templates#disable-data-residency-constraint).
+
+---
 ## 2026-10-21
 
 ### Feature
@@ -8,7 +24,8 @@ You can use custom organization policies to ensure that all new or updated
 Model Armor `Template` resources enforce required filters, like
 responsible AI or prompt injection and jailbreak detection. This feature is
 generally available ([GA](https://cloud.google.com/products#product-launch-stages)).
-For more information, see [Use custom organization policies](https://docs.cloud.google.com/model-armor/access-control/custom-constraints).
+For more information, see [Use custom organization
+policies](https://docs.cloud.google.com/model-armor/access-control/custom-constraints).
 
 ---
 ## 2026-10-09

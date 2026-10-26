@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Model Armor</title>
   <subtitle>Changelog for Google Cloud product: Model Armor</subtitle>
-  <updated>2026-10-21T00:00:00+00:00</updated>
+  <updated>2026-10-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:model-armor</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/model-armor/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:model-armor:2026-10-26:feature:0</id>
+    <published>2026-10-26T00:00:00+00:00</published>
+    <updated>2026-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Model Armor enforces the
+<code>constraints/modelarmor.managed.requireTemplateDataResidencyCompliance</code> managed
+Organization Policy Service constraint by default. When you create or update a template,
+this constraint prevents you from setting <code>data_residency_compliant</code> to <code>false</code>
+or clearing the <strong>Enforce data residency</strong> option unless an Organization Policy
+Administrator disables the constraint. This feature is generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). For more
+information, see
+<a href="https://docs.cloud.google.com/model-armor/manage-templates#disable-data-residency-constraint">Disable the organization policy constraint for data
+residency</a>.</p>]]></content>
+    <summary>Model Armor now enforces data residency compliance by default for templates. This prevents setting data residency to non-compliant unless an Organization Policy Administrator disables the constraint. This feature is now generally available.</summary>
+    <title>Feature: Model Armor Enforces Data Residency</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -16,9 +36,10 @@
 Model Armor <code>Template</code> resources enforce required filters, like
 responsible AI or prompt injection and jailbreak detection. This feature is
 generally available (<a href="https://cloud.google.com/products#product-launch-stages">GA</a>).
-For more information, see <a href="https://docs.cloud.google.com/model-armor/access-control/custom-constraints">Use custom organization policies</a>.</p>]]></content>
-    <summary>You can now use custom organization policies to enforce required filters for Model Armor Template resources, ensuring compliance with responsible AI and security best practices. This feature is now generally available, allowing for greater control over your AI model deployments.</summary>
-    <title>Feature: Enforce Model Armor policies with custom organization policies</title>
+For more information, see <a href="https://docs.cloud.google.com/model-armor/access-control/custom-constraints">Use custom organization
+policies</a>.</p>]]></content>
+    <summary>Model Armor now supports custom organization policies to enforce required filters on Template resources, including responsible AI and prompt injection detection. This feature is now generally available, providing enhanced control over your AI model deployments. You can find more details in the documentation on custom organization policies.</summary>
+    <title>Feature: Enforce Model Armor filters with custom organization policies</title>
   </entry>
   <entry>
     <author>

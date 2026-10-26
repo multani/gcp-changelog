@@ -1,5 +1,20 @@
 # Cloud Database Migration Service
 
+## 2026-10-26
+
+### Feature
+
+You can now create heterogeneous conversion workspaces by importing database
+schema metadata files from a Cloud Storage bucket without requiring direct
+network connectivity between Database Migration Service and your source database during
+the schema conversion phase. For more information, see the following pages:
+
+* [Create a conversion workspace for Oracle to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/create-conversion-workspace#use-cloud-storage)
+* [Createa a conversion workspace for Oracle to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/create-conversion-workspace#use-cloud-storage)
+* [Createa a conversion workspace for SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/create-conversion-workspace#use-cloud-storage)
+* [Createa a conversion workspace for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/create-conversion-workspace#use-cloud-storage)
+
+---
 ## 2026-08-17
 
 ### Announcement

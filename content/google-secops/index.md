@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-10-25
+
+### Feature
+
+**Resize inline images in Case Wall comments**
+
+You can now resize inline images directly in rich-text comments on the Case Wall. To resize an image, switch the comment box to rich-text mode and insert an image either by using the toolbar's image menu or by pasting it into the comment. Click the image to display the resizing overlay, then drag the bottom-right handle to adjust its dimensions.
+
+---
 ## 2026-10-22
 
 ### Feature

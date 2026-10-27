@@ -1,5 +1,18 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-10-26
+
+### Fixed
+
+The [1.34.1000-gke.111 release notes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes#October_22_2026)
+incorrectly omitted the following fix, which is fixed in 1.34.1000-gke.111:
+
+* Fixed an issue where the Whereabouts IPAM garbage collector
+  (`whereabouts-gc`) prematurely deleted active IP address reservations on
+  secondary networks, causing
+  [duplicate IP addresses to be assigned to running Pods](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#whereabouts-gc-duplicate-ip).
+
+---
 ## 2026-10-22
 
 ### Announcement
@@ -37,6 +50,8 @@ The following issues were fixed in 1.34.1000-gke.111:
 * Fixed an issue where updating control plane configurations caused multiple API
   servers to restart simultaneously, leading to transient control plane
   unavailability.
+
+This note is missing a fix included in 1.34.1000-gke.111. See entry for [October 26, 2026](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes#October_26_2026).
 
 ---
 ## 2026-10-21

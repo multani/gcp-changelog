@@ -1,6 +1,16 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-10-27": [
+      {
+        "kind": "Announcement",
+        "content": "The following AlloyDB AI functions and improvements are available in\n[Preview](https://cloud.google.com/products#product-launch-stages):\n\n* The `ai.extract` function lets you extract structured data from\n  unstructured text directly within your database queries without needing\n  external extraction pipelines. For more information, see\n  [Extract structured data](https://docs.cloud.google.com/alloydb/docs/ai/extract-structured-data).\n* The `ai.classify` function lets you categorize unstructured text into\n  predefined labels directly within your database queries. For more\n  information, see [Classify text](https://docs.cloud.google.com/alloydb/docs/ai/classify-text).\n* Parameter names and signatures for AI query engine functions\n  (`ai.analyze_sentiment`, `ai.summarize`, and `ai.agg_summarize`) are\n  updated. For more information, see\n  [Model endpoint reference](https://docs.cloud.google.com/alloydb/docs/reference/model-endpoint).\n\n  + The `prompt` and `prompts` parameters are renamed to `input` and\n    `inputs` in scalar and batch functions respectively.\n  + An optional `additional_instructions` parameter is added to\n    `ai.summarize` and `ai.agg_summarize` to provide custom instructions to\n    guide summary formatting, length, and tone.\n  + In cursor-based versions of `ai.analyze_sentiment` and `ai.summarize`,\n    the `prompt` parameter is removed.\n  + `ai.agg_summarize` supports multiple positional signatures, including\n    passing optional additional instructions and specifying model IDs.",
+        "summary": {
+          "title": "New AI features in AlloyDB",
+          "summary": "AlloyDB now offers new AI functions for extracting and classifying data directly within database queries. Enhancements have also been made to existing AI query engine functions, including parameter updates and the addition of an optional parameter for custom instructions."
+        }
+      }
+    ],
     "2026-10-19": [
       {
         "kind": "Feature",

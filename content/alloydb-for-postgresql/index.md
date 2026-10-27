@@ -1,5 +1,35 @@
 # AlloyDB for PostgreSQL
 
+## 2026-10-27
+
+### Announcement
+
+The following AlloyDB AI functions and improvements are available in
+[Preview](https://cloud.google.com/products#product-launch-stages):
+
+* The `ai.extract` function lets you extract structured data from
+  unstructured text directly within your database queries without needing
+  external extraction pipelines. For more information, see
+  [Extract structured data](https://docs.cloud.google.com/alloydb/docs/ai/extract-structured-data).
+* The `ai.classify` function lets you categorize unstructured text into
+  predefined labels directly within your database queries. For more
+  information, see [Classify text](https://docs.cloud.google.com/alloydb/docs/ai/classify-text).
+* Parameter names and signatures for AI query engine functions
+  (`ai.analyze_sentiment`, `ai.summarize`, and `ai.agg_summarize`) are
+  updated. For more information, see
+  [Model endpoint reference](https://docs.cloud.google.com/alloydb/docs/reference/model-endpoint).
+
+  + The `prompt` and `prompts` parameters are renamed to `input` and
+    `inputs` in scalar and batch functions respectively.
+  + An optional `additional_instructions` parameter is added to
+    `ai.summarize` and `ai.agg_summarize` to provide custom instructions to
+    guide summary formatting, length, and tone.
+  + In cursor-based versions of `ai.analyze_sentiment` and `ai.summarize`,
+    the `prompt` parameter is removed.
+  + `ai.agg_summarize` supports multiple positional signatures, including
+    passing optional additional instructions and specifying model IDs.
+
+---
 ## 2026-10-19
 
 ### Feature

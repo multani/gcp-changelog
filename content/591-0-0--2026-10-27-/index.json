@@ -1,0 +1,183 @@
+{
+  "name": "591.0.0 (2026-10-27)",
+  "entries": {
+    "2026-10-27": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Google Cloud CLI)** Fixed issue where `gcloud components update` on macOS was stuck and would exit\n  immediately after printing \"WARNING: Known issue encountered updating Python\n  modules\", preventing updates to the latest release.\n  + However, because this issue is present in the 590.0.0 and 590.0.1 releases,\n    existing installations currently at those versions still contain the bug,\n    and affected users will need to perform a one-time workaround to become\n    unstuck.\n  + This can be achieved by running:\n    `gcloud components --flags-file=<(echo 'update:')`\n  + Users updating from version <=589.0.0 or >=591.0.0 are unaffected and can\n    run `gcloud components update` as normal; the workaround is only needed for\n    installations currently stuck at version 590.0.0 or 590.0.1.\n  + This issue can be tracked at\n    <https://issuetracker.google.com/issues/578071727>.",
+        "summary": {
+          "title": "gcloud components update fix",
+          "summary": "A fix has been released for the `gcloud components update` command on macOS, which was previously stuck. Users on versions 590.0.0 or 590.0.1 may need to apply a one-time workaround to update successfully."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Updated bundled Python to 3.14.9.",
+        "summary": {
+          "title": "CLI: Python updated",
+          "summary": "The Google Cloud CLI has been updated with bundled Python version 3.14.9. This update ensures users have access to the latest Python features and security patches within the CLI environment."
+        }
+      },
+      {
+        "kind": "Agent Registry",
+        "content": "* Promoted `gcloud agent-registry skills`, `gcloud agent-registry skills revisions`, `gcloud agent-registry publishers`, and `gcloud agent-registry findings` command groups to GA.",
+        "summary": {
+          "title": "Agent Registry GA",
+          "summary": "The Agent Registry CLI commands for skills, skills revisions, publishers, and findings have been promoted to General Availability. This release signifies a stable and production-ready experience for managing your agent registry resources."
+        }
+      },
+      {
+        "kind": "App Engine",
+        "content": "* Updated `gcloud beta app migrate-to-run` to mask environment variable\n  values in the printed `service.yaml`. The saved `service.yaml` file keeps\n  the original values.",
+        "summary": {
+          "title": "App Engine environment variable update",
+          "summary": "The `gcloud beta app migrate-to-run` command has been updated to mask environment variable values in the printed `service.yaml`. This change enhances security by preventing sensitive information from being exposed in the output, while the saved `service.yaml` file retains the original, unmasked values."
+        }
+      },
+      {
+        "kind": "Audit Manager",
+        "content": "* Added `gcloud audit-manager audit-schedules describe` command to describe an audit schedule.",
+        "summary": {
+          "title": "Audit Manager: Describe Audit Schedules",
+          "summary": "You can now describe specific audit schedules using the `gcloud audit-manager audit-schedules describe` command. This enhancement allows for detailed inspection of individual audit schedule configurations."
+        }
+      },
+      {
+        "kind": "Beyondcorp",
+        "content": "* Added `--dispatch-info-output-type` flag to\n  `gcloud beyondcorp security-gateways create` and\n  `gcloud beyondcorp security-gateways update`, and upstream\n  `dispatchInfo` configuration to\n  `gcloud beyondcorp security-gateways applications create` and\n  `gcloud beyondcorp security-gateways applications update`\n  to configure delegated dispatch info headers.",
+        "summary": {
+          "title": "Configure delegated dispatch info",
+          "summary": "You can now configure delegated dispatch info headers using the new `--dispatch-info-output-type` flag in security gateways and applications. This allows for enhanced control over how dispatch information is handled."
+        }
+      },
+      {
+        "kind": "BigQuery",
+        "content": "* Updated the bundled `certifi` package to version `2026.10.19` and removed\n  the distrusted `AAA Certificate Services` root certificate from bundled\n  `httplib2`.",
+        "summary": {
+          "title": "BigQuery package updates",
+          "summary": "The bundled `certifi` package has been updated to version `2026.10.19`. Additionally, the distrusted `AAA Certificate Services` root certificate has been removed from the bundled `httplib2`."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable",
+        "content": "* Added `--timestamp-granularity` flag to `gcloud bigtable instances tables\n  create` and `gcloud bigtable tables create` to configure table timestamp\n  granularity (`millis` or `micros`). Microsecond granularity is supported\n  only on Enterprise Plus instances.\n* Rebuild with 1.26.9 for CVE-2026-94439.",
+        "summary": {
+          "title": "Bigtable timestamp granularity option",
+          "summary": "You can now configure table timestamp granularity to millis or micros when creating Bigtable tables. Microsecond granularity is available for Enterprise Plus instances. This release also includes security updates."
+        }
+      },
+      {
+        "kind": "Cloud DNS",
+        "content": "* Updated `gcloud beta dns outbound-endpoints create` to make `--endpoint-ip` flag optional.",
+        "summary": {
+          "title": "Cloud DNS Outbound Endpoints Simplified",
+          "summary": "The `gcloud beta dns outbound-endpoints create` command now supports optional `--endpoint-ip` flags, simplifying the creation of outbound DNS endpoints. This update allows for more flexible configuration of your DNS routing."
+        }
+      },
+      {
+        "kind": "Cloud Dataproc",
+        "content": "* Promoted `--master-flexible-config`, `--worker-flexible-config`, and\n  `--secondary-worker-flexible-config` flags to GA for `gcloud dataproc\n  clusters create` and `gcloud dataproc workflow-templates\n  set-managed-cluster`.\n* Promoted `--worker-flexible-config` and `--secondary-worker-flexible-config`\n  flags to GA for `gcloud dataproc clusters update`.",
+        "summary": {
+          "title": "Dataproc flexible configurations now generally available",
+          "summary": "Flexible configurations for Dataproc clusters are now generally available. This update promotes flags like --master-flexible-config, --worker-flexible-config, and --secondary-worker-flexible-config to General Availability for cluster creation and updates. This change simplifies cluster management and enhances flexibility in defining node configurations."
+        }
+      },
+      {
+        "kind": "Cloud IAM",
+        "content": "* Added `--discovery-uri` flag to `gcloud iam workload-identity-pools\n  providers create-oidc` and `gcloud iam workload-identity-pools providers\n  update-oidc` to specify a custom OIDC discovery URI when the identity\n  provider does not use the default well-known path.\n* Added `--actor-providers` flag to `gcloud iam workload-identity-pools\n  providers create-oidc` and `gcloud iam workload-identity-pools providers\n  update-oidc` to authorize providers in the same pool to issue actor tokens\n  for identity delegation.",
+        "summary": {
+          "title": "Cloud IAM Updates for Workload Identity Pools",
+          "summary": "New flags `--discovery-uri` and `--actor-providers` have been added to `gcloud iam workload-identity-pools` commands. These enhancements allow for custom OIDC discovery URIs and enable actor token issuance for identity delegation within the same pool."
+        }
+      },
+      {
+        "kind": "Cloud Memorystore",
+        "content": "* Promote `gcloud redis clusters` basic auth feature related commands to GA track.",
+        "summary": {
+          "title": "Memorystore for Redis basic auth GA",
+          "summary": "Basic authentication commands for Memorystore for Redis clusters are now generally available. This feature enhances security by allowing you to manage authentication directly through gcloud commands."
+        }
+      },
+      {
+        "kind": "Cloud Spanner Emulator",
+        "content": "* Updated cloud spanner emulator to v1.5.59.",
+        "summary": {
+          "title": "Spanner Emulator Updated",
+          "summary": "The Cloud Spanner Emulator has been updated to version 1.5.59. This update brings the latest improvements and fixes to the local development experience for Spanner users."
+        }
+      },
+      {
+        "kind": "Cloud Storage",
+        "content": "* Added `--labels` and `--labels-file` flags to `gcloud storage buckets\n  create`.",
+        "summary": {
+          "title": "Cloud Storage Bucket Labeling",
+          "summary": "You can now add labels to your Cloud Storage buckets during creation using the new `--labels` and `--labels-file` flags in the `gcloud storage buckets create` command. This feature simplifies bucket organization and management."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Promoted `--identity-type` flag to the beta and GA tracks for `gcloud compute instances create`, `gcloud compute instances update`, and `gcloud compute instance-templates create`.\n* Added circuit breakers flags (`--circuit-breakers-max-connections`,\n  `--circuit-breakers-max-pending-requests`,\n  `--circuit-breakers-max-requests`,\n  `--circuit-breakers-max-requests-per-connection`,\n  `--circuit-breakers-max-retries`) to `gcloud compute backend-services\n  create` and `update` commands, and `--no-circuit-breakers` to the `update`\n  command.\n* Added colorization for `ACTION`, `HEALTH_STATE`, and `STATUS` columns to\n  `gcloud compute instance-groups managed list-instances` in beta and GA.\n* Added `--circuit-breakers-connect-timeout` flag to `gcloud compute\n  backend-services create` and `update` commands in beta.\n* Added `--allowed-actions` flag to `gcloud beta compute instance-groups\n  managed update-instances` to specify allowed actions (including\n  `restart-in-place`) when updating instances in a managed instance group.\n* Added `--update-policy-allowed-actions` flag to `gcloud beta compute\n  instance-groups managed create` and `gcloud beta compute instance-groups\n  managed update` to specify allowed actions (including `restart-in-place`) in\n  a managed instance group's update policy.",
+        "summary": {
+          "title": "Compute Engine CLI updates",
+          "summary": "New flags for instance identity and backend service circuit breakers are now available. Enhancements include improved instance group management and command output colorization."
+        }
+      },
+      {
+        "kind": "Database Migration",
+        "content": "* Added `--ai-processing-location` flag to\n  `gcloud database-migration conversion-workspaces create|update` to set\n  the location where Gemini features process conversion workspace data. Pass an\n  empty value to remove a previously set location.",
+        "summary": {
+          "title": "Set Gemini Processing Location for Conversion Workspaces",
+          "summary": "You can now specify the processing location for Gemini features within conversion workspaces using the new --ai-processing-location flag. This flag can be used during creation or update of conversion workspaces. An empty value will remove any previously set location."
+        }
+      },
+      {
+        "kind": "GKE Hub",
+        "content": "* Promoted `--prioritized` flag on\n  `gcloud container fleet|hub rolloutsequences upgrade` command to `GA`.\n* Promoted `gcloud container fleet|hub config-management update` command to\n  `GA`.",
+        "summary": {
+          "title": "New GKE Hub features GA",
+          "summary": "The `--prioritized` flag for rollout sequences and the `config-management update` command are now generally available. These updates enhance your ability to manage GKE deployments."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Added flag `--node-config-update-mode` to\n  `gcloud container node-pools update` to trigger live update on nodes.\n  Supported values are `LIVE_UPDATE_WITHOUT_DRAIN`.",
+        "summary": {
+          "title": "Update Kubernetes nodes live",
+          "summary": "You can now update your Kubernetes nodes without draining them using the new `--node-config-update-mode` flag in `gcloud container node-pools update`. This allows for live updates, minimizing disruption to your workloads."
+        }
+      },
+      {
+        "kind": "Network Connectivity",
+        "content": "* Added `--group` flag to `gcloud beta network-connectivity transports create`\n  to specify the group of the Network Connectivity Center hub that the spokes\n  created for this transport should be attached to.",
+        "summary": {
+          "title": "New flag for network transport creation",
+          "summary": "A new flag, `--group`, has been added to the `gcloud beta network-connectivity transports create` command. This flag allows users to specify the group of the Network Connectivity Center hub to which new spokes for this transport should be attached."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Promoted `add-override`, `update-override`, `delete-override`,\n  `add-inline-ml-exception` and `delete-inline-ml-exception` commands of\n  `gcloud network-security security-profiles wildfire-analysis` to GA.\n* Promoted WildFire-related flags in\n  `gcloud network-security firewall-endpoints create` and\n  `gcloud network-security firewall-endpoints update` commands to GA.\n* Promoted `gcloud network-security server-tls-policies create` to GA.\n* Promoted `gcloud network-security server-tls-policies update` to GA.\n* Added `--wildfire-analysis-profile-project` flag to\n  `gcloud network-security security-profile-groups update` to support\n  project-scoped WildFire Analysis profiles.\n* Fixed an issue where\n  `gcloud network-security security-profiles wildfire-analysis` modification\n  commands failed when specifying a full resource URI without\n  `--location=global`.\n* Removed `--async` flag from `gcloud beta network-security firewall-endpoints\n  wildfire-verdict-change-requests create`. The command now returns the created\n  verdict change request directly because the API does not return a\n  long-running operation.\n* Promoted\n  `gcloud network-security firewall-endpoints wildfire-verdict-change-requests`\n  command group and its `create`, `get` and `list` commands to GA.",
+        "summary": {
+          "title": "Enhanced Network Security Features Now Generally Available",
+          "summary": "Key network security commands and features, including WildFire analysis and server TLS policies, have been promoted to General Availability. Updates also include enhanced WildFire profile project scoping and fixes for existing commands."
+        }
+      },
+      {
+        "kind": "Secure Source Manager",
+        "content": "* Promoted the following command groups to beta:\n  + `gcloud beta source-manager branch-rules`\n  + `gcloud beta source-manager hooks`\n  + `gcloud beta source-manager issues`\n  + `gcloud beta source-manager issues comments`\n  + `gcloud beta source-manager pull-requests`\n  + `gcloud beta source-manager pull-requests comments`",
+        "summary": {
+          "title": "Source Manager commands reach beta",
+          "summary": "Several command groups for Source Manager are now available in beta. This includes functionality for branch rules, hooks, issues, and pull requests. These updates offer enhanced control and management capabilities for your source code repositories."
+        }
+      },
+      {
+        "kind": "Workspace Key Access",
+        "content": "* Added `gcloud beta workspace-key-access` command group to manage Workspace\n  Key Access endpoints, configs, and operations.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "Workspace Key Access Management",
+          "summary": "A new command group, `gcloud beta workspace-key-access`, has been added to manage Workspace Key Access endpoints, configurations, and operations. You can subscribe to release notes for updates."
+        }
+      }
+    ]
+  }
+}

@@ -1,5 +1,21 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-10-27
+
+### Feature
+
+**Gemini Robotics ER 2 (Preview)**
+
+[Gemini Robotics ER 2](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/gemini-robotics-er)
+([`gemini-robotics-er-2-preview`](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/robotics-er-2)) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Gemini
+Robotics ER 2 is an embodied reasoning vision-language model built on Gemini 3.5
+Flash for robotics applications, including [spatial reasoning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/gemini-robotics-er/spatial),
+[agentic code execution](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/gemini-robotics-er/agentic),
+[task orchestration](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/gemini-robotics-er/orchestration),
+and [video understanding](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/gemini-robotics-er/video-understanding).
+
+---
 ## 2026-10-26
 
 ### Feature
@@ -15,6 +31,26 @@ each evaluation used in the `sgpUserIntentMatchingMode` field.
 
 For more information, see
 [Control user intent matching](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/configure-semantic-governance#control-intent-matching).
+
+### Feature
+
+**Cloud Storage output support for Gemini image generation models**
+
+Direct Cloud Storage output persistence is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages)
+for [Gemini Nano Banana 2.1](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/nano-banana-2-1)
+(`gemini-nano-banana-2.1`),
+[Gemini 3.1 Flash Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image)
+(`gemini-3.1-flash-image`),
+[Gemini 3.1 Flash-Lite Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite-image)
+(`gemini-3.1-flash-lite-image`), and
+[Gemini 3 Pro Image](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image)
+(`gemini-3-pro-image`). You can set `outputConfig.outputUriPrefix` and
+`generationConfig.responseFormat[].image.delivery` to `"URI"` in
+`generateContent` and `streamGenerateContent` requests to write generated and
+edited images directly to a Cloud Storage bucket and receive the object URI in
+`fileData.fileUri` instead of inline bytes. For more information, see
+[Save generated images to Cloud Storage](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/image-generation#save-generated-images-cloud-storage).
 
 ---
 ## 2026-10-21

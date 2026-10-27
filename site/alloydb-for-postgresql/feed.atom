@@ -2,9 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2026-10-19T00:00:00+00:00</updated>
+  <updated>2026-10-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-10-27:announcement:0</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following AlloyDB AI functions and improvements are available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>:</p>
+<ul>
+<li>The <code>ai.extract</code> function lets you extract structured data from
+  unstructured text directly within your database queries without needing
+  external extraction pipelines. For more information, see
+  <a href="https://docs.cloud.google.com/alloydb/docs/ai/extract-structured-data">Extract structured data</a>.</li>
+<li>The <code>ai.classify</code> function lets you categorize unstructured text into
+  predefined labels directly within your database queries. For more
+  information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/classify-text">Classify text</a>.</li>
+<li>
+<p>Parameter names and signatures for AI query engine functions
+  (<code>ai.analyze_sentiment</code>, <code>ai.summarize</code>, and <code>ai.agg_summarize</code>) are
+  updated. For more information, see
+  <a href="https://docs.cloud.google.com/alloydb/docs/reference/model-endpoint">Model endpoint reference</a>.</p>
+</li>
+<li>
+<p>The <code>prompt</code> and <code>prompts</code> parameters are renamed to <code>input</code> and
+    <code>inputs</code> in scalar and batch functions respectively.</p>
+</li>
+<li>An optional <code>additional_instructions</code> parameter is added to
+    <code>ai.summarize</code> and <code>ai.agg_summarize</code> to provide custom instructions to
+    guide summary formatting, length, and tone.</li>
+<li>In cursor-based versions of <code>ai.analyze_sentiment</code> and <code>ai.summarize</code>,
+    the <code>prompt</code> parameter is removed.</li>
+<li><code>ai.agg_summarize</code> supports multiple positional signatures, including
+    passing optional additional instructions and specifying model IDs.</li>
+</ul>]]></content>
+    <summary>AlloyDB now offers new AI functions for extracting and classifying data directly within database queries. Enhancements have also been made to existing AI query engine functions, including parameter updates and the addition of an optional parameter for custom instructions.</summary>
+    <title>Announcement: New AI features in AlloyDB</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

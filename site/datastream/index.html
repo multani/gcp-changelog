@@ -305,6 +305,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          591 0 0  2026 10 27  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../591-0-0--2026-10-27-/" class="dropdown-item">591.0.0 (2026-10-27)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -3000,6 +3012,28 @@
 
 
 <h1 id="datastream">Datastream</h1>
+<h2 id="2026-10-23">2026-10-23</h2>
+<h3 id="security">Security</h3>
+<p>On Saturday, October 17, 2026, Google received a report from a security
+researcher regarding the compromise of private keys associated with eight
+eMudhra subordinate Certification Authority (CA) certificates, including those
+cross-signed by AAA Certificate Services. Consequently, these CA certificates
+are no longer trusted and are being revoked.</p>
+<p>To continue connecting to a source database after its CA certificate is
+updated, upload the new CA certificate to the Datastream source
+connection profile:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/datastream/docs/modify-connection-profiles">Modify connection profiles</a> in
+  the Google Cloud console.</li>
+<li>Update the connection profile using
+  <a href="https://docs.cloud.google.com/sdk/gcloud/reference/datastream/connection-profiles/update"><code>gcloud datastream connection-profiles update</code></a>
+  or the
+  <a href="https://docs.cloud.google.com/datastream/docs/reference/rest/v1/projects.locations.connectionProfiles/patch"><code>connectionProfiles.patch</code></a>
+  API method.</li>
+</ul>
+<p>For more information, see security bulletin
+<a href="https://docs.cloud.google.com/support/bulletins#gcp-2026-071">GCP-2026-071</a>.</p>
+<hr />
 <h2 id="2026-10-09">2026-10-09</h2>
 <h3 id="feature">Feature</h3>
 <p>Datastream now supports replicating SQL Server <code>GEOMETRY</code> and
@@ -3141,6 +3175,9 @@ Google Cloud console and the Datastream API.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#datastream">Datastream</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-23" class="nav-link">2026-10-23</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-09" class="nav-link">2026-10-09</a>
           </li>

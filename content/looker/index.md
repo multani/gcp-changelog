@@ -1,5 +1,12 @@
 # Looker
 
+## 2026-10-27
+
+### Feature
+
+The latest version of the Looker-Excel Connector ODBC driver, version 1.0.7, is now available to download. See the [Looker-Excel Connector](https://docs.cloud.google.com/looker/docs/excel-connector#install-driver) documentation page for information.
+
+---
 ## 2026-10-26
 
 ### Feature

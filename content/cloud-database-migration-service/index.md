@@ -10,9 +10,9 @@ network connectivity between Database Migration Service and your source database
 the schema conversion phase. For more information, see the following pages:
 
 * [Create a conversion workspace for Oracle to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-postgresql/create-conversion-workspace#use-cloud-storage)
-* [Createa a conversion workspace for Oracle to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/create-conversion-workspace#use-cloud-storage)
-* [Createa a conversion workspace for SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/create-conversion-workspace#use-cloud-storage)
-* [Createa a conversion workspace for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/create-conversion-workspace#use-cloud-storage)
+* [Create a conversion workspace for Oracle to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/oracle-to-alloydb/create-conversion-workspace#use-cloud-storage)
+* [Create a conversion workspace for SQL Server to Cloud SQL for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-csql-pgsql/create-conversion-workspace#use-cloud-storage)
+* [Create a conversion workspace for SQL Server to AlloyDB for PostgreSQL](https://docs.cloud.google.com/database-migration/docs/sqlserver-to-alloydb/create-conversion-workspace#use-cloud-storage)
 
 ---
 ## 2026-10-23

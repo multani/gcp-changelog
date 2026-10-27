@@ -1,5 +1,31 @@
 # Datastream
 
+## 2026-10-23
+
+### Security
+
+On Saturday, October 17, 2026, Google received a report from a security
+researcher regarding the compromise of private keys associated with eight
+eMudhra subordinate Certification Authority (CA) certificates, including those
+cross-signed by AAA Certificate Services. Consequently, these CA certificates
+are no longer trusted and are being revoked.
+
+To continue connecting to a source database after its CA certificate is
+updated, upload the new CA certificate to the Datastream source
+connection profile:
+
+* [Modify connection profiles](https://docs.cloud.google.com/datastream/docs/modify-connection-profiles) in
+  the Google Cloud console.
+* Update the connection profile using
+  [`gcloud datastream connection-profiles update`](https://docs.cloud.google.com/sdk/gcloud/reference/datastream/connection-profiles/update)
+  or the
+  [`connectionProfiles.patch`](https://docs.cloud.google.com/datastream/docs/reference/rest/v1/projects.locations.connectionProfiles/patch)
+  API method.
+
+For more information, see security bulletin
+[GCP-2026-071](https://docs.cloud.google.com/support/bulletins#gcp-2026-071).
+
+---
 ## 2026-10-09
 
 ### Feature

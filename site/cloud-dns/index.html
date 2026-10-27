@@ -305,6 +305,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          591 0 0  2026 10 27  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../591-0-0--2026-10-27-/" class="dropdown-item">591.0.0 (2026-10-27)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -3000,6 +3012,94 @@
 
 
 <h1 id="cloud-dns">Cloud DNS</h1>
+<h2 id="2026-10-27">2026-10-27</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Starting January 5, 2027, CNAME chasing behavior will change so that Cloud DNS
+follows CNAME chains between public and private zones. If your private zones or
+response policies have overlapping domain names with public CNAME targets,
+queries might resolve to unintended internal IP addresses or return resolution
+errors.</p>
+<p>The following table outlines the current and updated behaviors.</p>
+<table>
+<thead>
+<tr>
+<th>Source of CNAME answer</th>
+<th>Current behavior (until January 5, 2027)</th>
+<th>New behavior (starting January 5, 2027)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cloud DNS public zone</td>
+<td>Subsequent queries search only public DNS zones and internal DNS. Private zones, forwarding zones, and response policies are ignored.</td>
+<td>Subsequent queries follow the complete VPC name resolution order: response policies, private zones, forwarding or peering zones, internal DNS, and public zones.</td>
+</tr>
+<tr>
+<td>Cloud DNS private zone</td>
+<td>Subsequent queries search only authorized private zones. Public DNS zones are ignored.</td>
+<td>Subsequent queries follow the complete VPC name resolution order. If the target isn't found in authorized private zones, Cloud DNS queries public DNS zones.</td>
+</tr>
+<tr>
+<td>Cloud DNS response policy zone</td>
+<td>Cloud DNS systems don't perform queries for CNAME answers received from response policy local data rules.</td>
+<td>Subsequent queries follow the complete VPC name resolution order. If the target isn't found in response policies or private zones, Cloud DNS queries public DNS zones.</td>
+</tr>
+</tbody>
+</table>
+<p>Review your CNAME chasing needs before January 5, 2027. Test your DNS query paths
+using <code>dig</code> or <code>nslookup</code> to identify CNAME chasing scenarios.</p>
+<ul>
+<li><strong>Look for private-to-public CNAME chasing scenarios</strong>: Look for CNAME answers
+  from response policies or private zones that don't match any response policy
+  or record in a private zone. Previously, these queries resulted in a <code>NXDOMAIN</code>
+  answer but after January 5, 2027, these scenarios might match a record in a
+  public zone or continue to be <code>NXDOMAIN</code> responses.</li>
+<li><strong>Look for public-to-private CNAME chasing scenarios</strong>: Look for CNAME answers
+  from public zones that don't match any record in a public zone. Previously,
+  these CNAME chasing scenarios would have resulted in a <code>NXDOMAIN</code> response.
+  After January 5, 2027, these scenarios might match a response policy or record
+  in a private zone or continue to be <code>NXDOMAIN</code> responses if the private zone
+  doesn't have the record.</li>
+<li><strong>For CNAME chasing scenarios under your control</strong>: As best practice, configure
+  matching time-to-live (TTL) values for all records in the CNAME chain.</li>
+</ul>
+<h3 id="announcement_1">Announcement</h3>
+<p>Starting January 5, 2027, Cloud DNS will disable full responses to DNS queries of
+type <code>ANY</code> (<code>QTYPE=ANY</code>) in <a href="https://docs.cloud.google.com/dns/docs/zones/zones-overview">public authoritative zones</a>.
+Instead, a single resource record will return for <code>ANY</code> queries, chosen from the
+existing resource record sets that match the query.</p>
+<p>Standard traffic from web browsers, applications, and API traffic query specific
+record types directly and are therefore unaffected with no action required.</p>
+<p>However, certain legacy scripts, automated health checkers, debugging commands
+(for example, <code>dig example.com ANY</code>), or custom third-party monitoring systems
+that explicitly query <code>ANY</code> records will receive the first available record
+instead of a full zone inventory. You must complete the following configuration
+updates before January 5, 2027:</p>
+<ul>
+<li><strong>Identify legacy queries</strong>: Review internal tools, deployment scripts, or
+  third-party DNS monitoring configurations for commands or API calls that
+  request the <code>ANY</code> record type. Cloud DNS logs in Cloud Logging can be helpful
+  with this.</li>
+<li><strong>Transition to specific queries</strong>: Update the tools to query the specific,
+  individual record types they require (for example, querying for <code>A</code>,
+  <code>AAAA</code>, <code>MX</code>, or <code>TXT</code> records separately).</li>
+<li><strong>Retrieve full zone records</strong>: If you use <code>ANY</code> queries to retrieve all records
+  in a zone, use the Cloud DNS REST API (<code>resourceRecordSets.list</code>), the gcloud
+  CLI (<code>gcloud dns record-sets list</code>), or the Google Cloud Console instead.</li>
+</ul>
+<p>Risks associated with not making these changes include the following:</p>
+<ul>
+<li><strong>False monitoring alarms</strong>: Automated uptime or DNS monitoring tools checking
+  <code>ANY</code> responses may misinterpret the new response as a system failure and
+  trigger false alerts.</li>
+<li><strong>Broken automation pipelines</strong>: Internal deployment or CI/CD scripts that
+  rely on parsing a full zone dump with an <code>ANY</code> query will fail to retrieve the
+  expected data payload and may crash.</li>
+<li><strong>Disrupted IT diagnostics</strong>: Network administrators running manual legacy
+  troubleshooting commands will no longer see a quick summary of all domain
+  records, which could delay active network incident diagnostics.</li>
+</ul>
+<hr />
 <h2 id="2026-10-12">2026-10-12</h2>
 <h3 id="feature">Feature</h3>
 <p>Outbound Endpoints for Cloud DNS is available in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
@@ -3051,6 +3151,9 @@ see <a href="https://docs.cloud.google.com/dns/docs/outbound-endpoints-overview"
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-dns">Cloud DNS</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-27" class="nav-link">2026-10-27</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-12" class="nav-link">2026-10-12</a>
           </li>

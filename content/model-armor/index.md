@@ -1,5 +1,20 @@
 # Model Armor
 
+## 2026-10-27
+
+### Feature
+
+You can test Model Armor templates in the Google Cloud console by using
+custom sample prompts to verify which safety and security filters the prompts
+trigger and how Sensitive Data Protection redacts sensitive data. Testing
+templates helps you evaluate template behavior and fine-tune filter
+configurations. This feature is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+For more information, see [Test a Model Armor
+template](https://docs.cloud.google.com/model-armor/manage-templates#test-ma-template).
+
+---
 ## 2026-10-26
 
 ### Feature

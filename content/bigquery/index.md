@@ -1,5 +1,17 @@
 # BigQuery
 
+## 2026-10-27
+
+### Feature
+
+The [Data Engineering Agent now integrates with Google
+Drive](https://docs.cloud.google.com/gemini/data-agents/data-engineering-agent/agent-overview#google-drive-integration),
+letting you provide Google Sheets files, CSV, or JSONL files as input for
+your data engineering pipelines.
+
+This feature is [generally available](https://cloud.google.com/products#product-launch-stages) (GA).
+
+---
 ## 2026-10-26
 
 ### Feature

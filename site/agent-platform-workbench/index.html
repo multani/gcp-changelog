@@ -305,6 +305,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          591 0 0  2026 10 27  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../591-0-0--2026-10-27-/" class="dropdown-item">591.0.0 (2026-10-27)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -3015,6 +3027,16 @@
 <p>Addressed multiple reported security vulnerabilities in bundled packages.</p>
 <h3 id="security_2">Security</h3>
 <p>Updated certifi, pip, and conda ca-certificates to the latest versions.</p>
+<h3 id="feature">Feature</h3>
+<p><strong>Custom organization policies for Agent Platform Workbench instances</strong></p>
+<p>You can now use custom organization policies to allow or deny the creation and
+update of Agent Platform Workbench instances based on their configuration. Custom
+constraints for the <code>notebooks.googleapis.com/Instance</code> resource are enforced
+when you create or update an instance, and support dry-run mode. This feature is
+now generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). For more
+information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/custom-constraints">Create custom organization policy
+constraints</a>.</p>
 <hr />
 <h2 id="2026-10-25">2026-10-25</h2>
 <h3 id="change_4">Change</h3>
@@ -3179,7 +3201,7 @@
 <h3 id="m151-release">M151 Release</h3>
 <h3 id="change_55">Change</h3>
 <p>Installed latest packages from upstream dependencies.</p>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p>JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.</p>
 <h3 id="change_56">Change</h3>
 <h3 id="20260927-1408-rc0-release">20260927-1408-rc0 Release</h3>
@@ -3195,13 +3217,13 @@
 <h3 id="2026092000_p0-release">20260920.00_p0 Release</h3>
 <h3 id="change_61">Change</h3>
 <p>Installed latest packages from upstream dependencies.</p>
-<h3 id="feature_1">Feature</h3>
+<h3 id="feature_2">Feature</h3>
 <p>JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.</p>
 <h3 id="change_62">Change</h3>
 <h3 id="2026092000_p0-release_1">20260920.00_p0 Release</h3>
 <h3 id="change_63">Change</h3>
 <p>Installed latest packages from upstream dependencies.</p>
-<h3 id="feature_2">Feature</h3>
+<h3 id="feature_3">Feature</h3>
 <p>JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.</p>
 <hr />
 <h2 id="2026-09-18">2026-09-18</h2>
@@ -3213,15 +3235,15 @@
 <p>Installed latest packages from upstream dependencies.</p>
 <h3 id="change_67">Change</h3>
 <p>Installed latest packages from upstream dependencies.</p>
-<h3 id="feature_3">Feature</h3>
-<p>JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.</p>
 <h3 id="feature_4">Feature</h3>
+<p>JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.</p>
+<h3 id="feature_5">Feature</h3>
 <p>JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.</p>
 <h3 id="change_68">Change</h3>
 <h3 id="20260918-2130-rc0-release">20260918-2130-rc0 Release</h3>
 <h3 id="change_69">Change</h3>
 <p>Installed latest packages from upstream dependencies.</p>
-<h3 id="feature_5">Feature</h3>
+<h3 id="feature_6">Feature</h3>
 <p>JupyterLab now forwards client-side logs (console errors, uncaught exceptions, unhandled promise rejections, and failed network requests) to the instance backend, where they surface in Cloud Logging for easier debugging.</p>
 <hr />
 <h2 id="2026-09-14">2026-09-14</h2>
@@ -3278,7 +3300,7 @@ package.</p>
 <p>Fixed the %%bigquery notebook cell magic, which returned an error instead of query results in JupyterLab 4.</p>
 <hr />
 <h2 id="2026-09-09">2026-09-09</h2>
-<h3 id="feature_6">Feature</h3>
+<h3 id="feature_7">Feature</h3>
 <p><strong>New configuration options for scheduled notebook runs</strong></p>
 <p>When you schedule a notebook run from an Agent Platform Workbench instance, you
 can now configure the following:</p>
@@ -3541,7 +3563,7 @@ package.</p>
 <p>The JupyterLab last-active and auto-reload extensions are now enabled only when Gemini CLI is configured, preventing them from affecting the native JupyterLab UI otherwise.</p>
 <hr />
 <h2 id="2026-07-13">2026-07-13</h2>
-<h3 id="feature_7">Feature</h3>
+<h3 id="feature_8">Feature</h3>
 <p><strong>Agent Platform Workbench image release</strong></p>
 <p>The following Agent Platform Workbench instances image releases are available:</p>
 <ul>
@@ -3564,14 +3586,6 @@ package.</p>
 <p>Fixed a race condition that could cause JupyterLab to be unreachable (HTTP 524) on GPU instances.</p>
 <h3 id="fixed_53">Fixed</h3>
 <p>Fixed broken cupy installation.</p>
-<h3 id="feature_8">Feature</h3>
-<p><strong>Secure Boot is compatible with GPUs</strong></p>
-<p>You can now enable Secure Boot on Agent Platform Workbench instances that have a
-GPU attached. Secure Boot with GPUs is supported on the <code>workbench-instances-2603</code>
-VM image and the <code>workbench-container-2606</code> custom container, which include a
-Secure Boot-signed NVIDIA GPU driver so the driver loads under Secure Boot. For
-more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/create">Create an
-instance</a>.</p>
 <h3 id="feature_9">Feature</h3>
 <p><strong>Secure Boot is compatible with GPUs</strong></p>
 <p>You can now enable Secure Boot on Agent Platform Workbench instances that have a
@@ -3588,9 +3602,17 @@ VM image and the <code>workbench-container-2606</code> custom container, which i
 Secure Boot-signed NVIDIA GPU driver so the driver loads under Secure Boot. For
 more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/create">Create an
 instance</a>.</p>
+<h3 id="feature_11">Feature</h3>
+<p><strong>Secure Boot is compatible with GPUs</strong></p>
+<p>You can now enable Secure Boot on Agent Platform Workbench instances that have a
+GPU attached. Secure Boot with GPUs is supported on the <code>workbench-instances-2603</code>
+VM image and the <code>workbench-container-2606</code> custom container, which include a
+Secure Boot-signed NVIDIA GPU driver so the driver loads under Secure Boot. For
+more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/create">Create an
+instance</a>.</p>
 <hr />
 <h2 id="2026-07-06">2026-07-06</h2>
-<h3 id="feature_11">Feature</h3>
+<h3 id="feature_12">Feature</h3>
 <p><strong>Agent Platform Workbench image release</strong></p>
 <p>The following Agent Platform Workbench instances image release is available:</p>
 <ul>
@@ -3609,7 +3631,7 @@ instance</a>.</p>
 <p>Fixed an issue where long-running requests (for example, streaming or long-poll connections) could be terminated after about 60 seconds.</p>
 <hr />
 <h2 id="2026-06-30">2026-06-30</h2>
-<h3 id="feature_12">Feature</h3>
+<h3 id="feature_13">Feature</h3>
 <p><strong>Python 3.12 base containers for Agent Platform Workbench custom containers</strong></p>
 <p>You can build <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/notebooks/workbench/instances/create-custom-container">custom containers</a>
 for Agent Platform Workbench instances using Python 3.12 base containers, in addition
@@ -3621,7 +3643,7 @@ base containers are available at the following URIs:</p>
 </ul>
 <hr />
 <h2 id="2026-06-29">2026-06-29</h2>
-<h3 id="feature_13">Feature</h3>
+<h3 id="feature_14">Feature</h3>
 <p><strong>Agent Platform Workbench image release</strong></p>
 <p>The following Agent Platform Workbench instances image release is available:</p>
 <ul>
@@ -3631,7 +3653,7 @@ base containers are available at the following URIs:</p>
 </ul>
 <hr />
 <h2 id="2026-06-24">2026-06-24</h2>
-<h3 id="feature_14">Feature</h3>
+<h3 id="feature_15">Feature</h3>
 <p><strong>Agent Platform Workbench image release</strong></p>
 <p>The following Agent Platform Workbench instances image release is available:</p>
 <ul>
@@ -3641,7 +3663,7 @@ base containers are available at the following URIs:</p>
 </ul>
 <hr />
 <h2 id="2026-06-23">2026-06-23</h2>
-<h3 id="feature_15">Feature</h3>
+<h3 id="feature_16">Feature</h3>
 <p><strong>Agent Platform Workbench image release</strong></p>
 <p>The following Agent Platform Workbench instances image releases are available:</p>
 <ul>

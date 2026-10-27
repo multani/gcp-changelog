@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 591.0.0 (2026-10-27)</title>
+  <subtitle>Changelog for Google Cloud product: 591.0.0 (2026-10-27)</subtitle>
+  <updated>2026-10-27T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/591-0-0--2026-10-27-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:breaking changes:0</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Google Cloud CLI)</strong> Fixed issue where <code>gcloud components update</code> on macOS was stuck and would exit
+  immediately after printing "WARNING: Known issue encountered updating Python
+  modules", preventing updates to the latest release.</li>
+<li>However, because this issue is present in the 590.0.0 and 590.0.1 releases,
+    existing installations currently at those versions still contain the bug,
+    and affected users will need to perform a one-time workaround to become
+    unstuck.</li>
+<li>This can be achieved by running:
+    <code>gcloud components --flags-file=&lt;(echo 'update:')</code></li>
+<li>Users updating from version &lt;=589.0.0 or &gt;=591.0.0 are unaffected and can
+    run <code>gcloud components update</code> as normal; the workaround is only needed for
+    installations currently stuck at version 590.0.0 or 590.0.1.</li>
+<li>This issue can be tracked at
+    <a href="https://issuetracker.google.com/issues/578071727">https://issuetracker.google.com/issues/578071727</a>.</li>
+</ul>]]></content>
+    <summary>A fix has been released for the `gcloud components update` command on macOS, which was previously stuck. Users on versions 590.0.0 or 590.0.1 may need to apply a one-time workaround to update successfully.</summary>
+    <title>Breaking Changes: gcloud components update fix</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:google cloud cli:1</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated bundled Python to 3.14.9.</li>
+</ul>]]></content>
+    <summary>The Google Cloud CLI has been updated with bundled Python version 3.14.9. This update ensures users have access to the latest Python features and security patches within the CLI environment.</summary>
+    <title>Google Cloud CLI: CLI: Python updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:agent registry:2</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>gcloud agent-registry skills</code>, <code>gcloud agent-registry skills revisions</code>, <code>gcloud agent-registry publishers</code>, and <code>gcloud agent-registry findings</code> command groups to GA.</li>
+</ul>]]></content>
+    <summary>The Agent Registry CLI commands for skills, skills revisions, publishers, and findings have been promoted to General Availability. This release signifies a stable and production-ready experience for managing your agent registry resources.</summary>
+    <title>Agent Registry: Agent Registry GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:app engine:3</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud beta app migrate-to-run</code> to mask environment variable
+  values in the printed <code>service.yaml</code>. The saved <code>service.yaml</code> file keeps
+  the original values.</li>
+</ul>]]></content>
+    <summary>The `gcloud beta app migrate-to-run` command has been updated to mask environment variable values in the printed `service.yaml`. This change enhances security by preventing sensitive information from being exposed in the output, while the saved `service.yaml` file retains the original, unmasked values.</summary>
+    <title>App Engine: App Engine environment variable update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:audit manager:4</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud audit-manager audit-schedules describe</code> command to describe an audit schedule.</li>
+</ul>]]></content>
+    <summary>You can now describe specific audit schedules using the `gcloud audit-manager audit-schedules describe` command. This enhancement allows for detailed inspection of individual audit schedule configurations.</summary>
+    <title>Audit Manager: Audit Manager: Describe Audit Schedules</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:beyondcorp:5</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--dispatch-info-output-type</code> flag to
+  <code>gcloud beyondcorp security-gateways create</code> and
+  <code>gcloud beyondcorp security-gateways update</code>, and upstream
+  <code>dispatchInfo</code> configuration to
+  <code>gcloud beyondcorp security-gateways applications create</code> and
+  <code>gcloud beyondcorp security-gateways applications update</code>
+  to configure delegated dispatch info headers.</li>
+</ul>]]></content>
+    <summary>You can now configure delegated dispatch info headers using the new `--dispatch-info-output-type` flag in security gateways and applications. This allows for enhanced control over how dispatch information is handled.</summary>
+    <title>Beyondcorp: Configure delegated dispatch info</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:bigquery:6</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated the bundled <code>certifi</code> package to version <code>2026.10.19</code> and removed
+  the distrusted <code>AAA Certificate Services</code> root certificate from bundled
+  <code>httplib2</code>.</li>
+</ul>]]></content>
+    <summary>The bundled `certifi` package has been updated to version `2026.10.19`. Additionally, the distrusted `AAA Certificate Services` root certificate has been removed from the bundled `httplib2`.</summary>
+    <title>BigQuery: BigQuery package updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:cloud bigtable:7</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--timestamp-granularity</code> flag to <code>gcloud bigtable instances tables
+  create</code> and <code>gcloud bigtable tables create</code> to configure table timestamp
+  granularity (<code>millis</code> or <code>micros</code>). Microsecond granularity is supported
+  only on Enterprise Plus instances.</li>
+<li>Rebuild with 1.26.9 for CVE-2026-94439.</li>
+</ul>]]></content>
+    <summary>You can now configure table timestamp granularity to millis or micros when creating Bigtable tables. Microsecond granularity is available for Enterprise Plus instances. This release also includes security updates.</summary>
+    <title>Cloud Bigtable: Bigtable timestamp granularity option</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:cloud dns:8</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud beta dns outbound-endpoints create</code> to make <code>--endpoint-ip</code> flag optional.</li>
+</ul>]]></content>
+    <summary>The `gcloud beta dns outbound-endpoints create` command now supports optional `--endpoint-ip` flags, simplifying the creation of outbound DNS endpoints. This update allows for more flexible configuration of your DNS routing.</summary>
+    <title>Cloud DNS: Cloud DNS Outbound Endpoints Simplified</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:cloud dataproc:9</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--master-flexible-config</code>, <code>--worker-flexible-config</code>, and
+  <code>--secondary-worker-flexible-config</code> flags to GA for <code>gcloud dataproc
+  clusters create</code> and <code>gcloud dataproc workflow-templates
+  set-managed-cluster</code>.</li>
+<li>Promoted <code>--worker-flexible-config</code> and <code>--secondary-worker-flexible-config</code>
+  flags to GA for <code>gcloud dataproc clusters update</code>.</li>
+</ul>]]></content>
+    <summary>Flexible configurations for Dataproc clusters are now generally available. This update promotes flags like --master-flexible-config, --worker-flexible-config, and --secondary-worker-flexible-config to General Availability for cluster creation and updates. This change simplifies cluster management and enhances flexibility in defining node configurations.</summary>
+    <title>Cloud Dataproc: Dataproc flexible configurations now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:cloud iam:10</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--discovery-uri</code> flag to <code>gcloud iam workload-identity-pools
+  providers create-oidc</code> and <code>gcloud iam workload-identity-pools providers
+  update-oidc</code> to specify a custom OIDC discovery URI when the identity
+  provider does not use the default well-known path.</li>
+<li>Added <code>--actor-providers</code> flag to <code>gcloud iam workload-identity-pools
+  providers create-oidc</code> and <code>gcloud iam workload-identity-pools providers
+  update-oidc</code> to authorize providers in the same pool to issue actor tokens
+  for identity delegation.</li>
+</ul>]]></content>
+    <summary>New flags `--discovery-uri` and `--actor-providers` have been added to `gcloud iam workload-identity-pools` commands. These enhancements allow for custom OIDC discovery URIs and enable actor token issuance for identity delegation within the same pool.</summary>
+    <title>Cloud IAM: Cloud IAM Updates for Workload Identity Pools</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:cloud memorystore:11</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promote <code>gcloud redis clusters</code> basic auth feature related commands to GA track.</li>
+</ul>]]></content>
+    <summary>Basic authentication commands for Memorystore for Redis clusters are now generally available. This feature enhances security by allowing you to manage authentication directly through gcloud commands.</summary>
+    <title>Cloud Memorystore: Memorystore for Redis basic auth GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:cloud spanner emulator:12</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated cloud spanner emulator to v1.5.59.</li>
+</ul>]]></content>
+    <summary>The Cloud Spanner Emulator has been updated to version 1.5.59. This update brings the latest improvements and fixes to the local development experience for Spanner users.</summary>
+    <title>Cloud Spanner Emulator: Spanner Emulator Updated</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:cloud storage:13</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--labels</code> and <code>--labels-file</code> flags to <code>gcloud storage buckets
+  create</code>.</li>
+</ul>]]></content>
+    <summary>You can now add labels to your Cloud Storage buckets during creation using the new `--labels` and `--labels-file` flags in the `gcloud storage buckets create` command. This feature simplifies bucket organization and management.</summary>
+    <title>Cloud Storage: Cloud Storage Bucket Labeling</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:compute engine:14</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--identity-type</code> flag to the beta and GA tracks for <code>gcloud compute instances create</code>, <code>gcloud compute instances update</code>, and <code>gcloud compute instance-templates create</code>.</li>
+<li>Added circuit breakers flags (<code>--circuit-breakers-max-connections</code>,
+  <code>--circuit-breakers-max-pending-requests</code>,
+  <code>--circuit-breakers-max-requests</code>,
+  <code>--circuit-breakers-max-requests-per-connection</code>,
+  <code>--circuit-breakers-max-retries</code>) to <code>gcloud compute backend-services
+  create</code> and <code>update</code> commands, and <code>--no-circuit-breakers</code> to the <code>update</code>
+  command.</li>
+<li>Added colorization for <code>ACTION</code>, <code>HEALTH_STATE</code>, and <code>STATUS</code> columns to
+  <code>gcloud compute instance-groups managed list-instances</code> in beta and GA.</li>
+<li>Added <code>--circuit-breakers-connect-timeout</code> flag to <code>gcloud compute
+  backend-services create</code> and <code>update</code> commands in beta.</li>
+<li>Added <code>--allowed-actions</code> flag to <code>gcloud beta compute instance-groups
+  managed update-instances</code> to specify allowed actions (including
+  <code>restart-in-place</code>) when updating instances in a managed instance group.</li>
+<li>Added <code>--update-policy-allowed-actions</code> flag to <code>gcloud beta compute
+  instance-groups managed create</code> and <code>gcloud beta compute instance-groups
+  managed update</code> to specify allowed actions (including <code>restart-in-place</code>) in
+  a managed instance group's update policy.</li>
+</ul>]]></content>
+    <summary>New flags for instance identity and backend service circuit breakers are now available. Enhancements include improved instance group management and command output colorization.</summary>
+    <title>Compute Engine: Compute Engine CLI updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:database migration:15</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--ai-processing-location</code> flag to
+  <code>gcloud database-migration conversion-workspaces create|update</code> to set
+  the location where Gemini features process conversion workspace data. Pass an
+  empty value to remove a previously set location.</li>
+</ul>]]></content>
+    <summary>You can now specify the processing location for Gemini features within conversion workspaces using the new --ai-processing-location flag. This flag can be used during creation or update of conversion workspaces. An empty value will remove any previously set location.</summary>
+    <title>Database Migration: Set Gemini Processing Location for Conversion Workspaces</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:gke hub:16</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>--prioritized</code> flag on
+  <code>gcloud container fleet|hub rolloutsequences upgrade</code> command to <code>GA</code>.</li>
+<li>Promoted <code>gcloud container fleet|hub config-management update</code> command to
+  <code>GA</code>.</li>
+</ul>]]></content>
+    <summary>The `--prioritized` flag for rollout sequences and the `config-management update` command are now generally available. These updates enhance your ability to manage GKE deployments.</summary>
+    <title>GKE Hub: New GKE Hub features GA</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:kubernetes engine:17</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added flag <code>--node-config-update-mode</code> to
+  <code>gcloud container node-pools update</code> to trigger live update on nodes.
+  Supported values are <code>LIVE_UPDATE_WITHOUT_DRAIN</code>.</li>
+</ul>]]></content>
+    <summary>You can now update your Kubernetes nodes without draining them using the new `--node-config-update-mode` flag in `gcloud container node-pools update`. This allows for live updates, minimizing disruption to your workloads.</summary>
+    <title>Kubernetes Engine: Update Kubernetes nodes live</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:network connectivity:18</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--group</code> flag to <code>gcloud beta network-connectivity transports create</code>
+  to specify the group of the Network Connectivity Center hub that the spokes
+  created for this transport should be attached to.</li>
+</ul>]]></content>
+    <summary>A new flag, `--group`, has been added to the `gcloud beta network-connectivity transports create` command. This flag allows users to specify the group of the Network Connectivity Center hub to which new spokes for this transport should be attached.</summary>
+    <title>Network Connectivity: New flag for network transport creation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:network security:19</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted <code>add-override</code>, <code>update-override</code>, <code>delete-override</code>,
+  <code>add-inline-ml-exception</code> and <code>delete-inline-ml-exception</code> commands of
+  <code>gcloud network-security security-profiles wildfire-analysis</code> to GA.</li>
+<li>Promoted WildFire-related flags in
+  <code>gcloud network-security firewall-endpoints create</code> and
+  <code>gcloud network-security firewall-endpoints update</code> commands to GA.</li>
+<li>Promoted <code>gcloud network-security server-tls-policies create</code> to GA.</li>
+<li>Promoted <code>gcloud network-security server-tls-policies update</code> to GA.</li>
+<li>Added <code>--wildfire-analysis-profile-project</code> flag to
+  <code>gcloud network-security security-profile-groups update</code> to support
+  project-scoped WildFire Analysis profiles.</li>
+<li>Fixed an issue where
+  <code>gcloud network-security security-profiles wildfire-analysis</code> modification
+  commands failed when specifying a full resource URI without
+  <code>--location=global</code>.</li>
+<li>Removed <code>--async</code> flag from <code>gcloud beta network-security firewall-endpoints
+  wildfire-verdict-change-requests create</code>. The command now returns the created
+  verdict change request directly because the API does not return a
+  long-running operation.</li>
+<li>Promoted
+  <code>gcloud network-security firewall-endpoints wildfire-verdict-change-requests</code>
+  command group and its <code>create</code>, <code>get</code> and <code>list</code> commands to GA.</li>
+</ul>]]></content>
+    <summary>Key network security commands and features, including WildFire analysis and server TLS policies, have been promoted to General Availability. Updates also include enhanced WildFire profile project scoping and fixes for existing commands.</summary>
+    <title>Network Security: Enhanced Network Security Features Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:secure source manager:20</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Promoted the following command groups to beta:</li>
+<li><code>gcloud beta source-manager branch-rules</code></li>
+<li><code>gcloud beta source-manager hooks</code></li>
+<li><code>gcloud beta source-manager issues</code></li>
+<li><code>gcloud beta source-manager issues comments</code></li>
+<li><code>gcloud beta source-manager pull-requests</code></li>
+<li><code>gcloud beta source-manager pull-requests comments</code></li>
+</ul>]]></content>
+    <summary>Several command groups for Source Manager are now available in beta. This includes functionality for branch rules, hooks, issues, and pull requests. These updates offer enhanced control and management capabilities for your source code repositories.</summary>
+    <title>Secure Source Manager: Source Manager commands reach beta</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:591-0-0--2026-10-27-:2026-10-27:workspace key access:21</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud beta workspace-key-access</code> command group to manage Workspace
+  Key Access endpoints, configs, and operations.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>A new command group, `gcloud beta workspace-key-access`, has been added to manage Workspace Key Access endpoints, configurations, and operations. You can subscribe to release notes for updates.</summary>
+    <title>Workspace Key Access: Workspace Key Access Management</title>
+  </entry>
+</feed>

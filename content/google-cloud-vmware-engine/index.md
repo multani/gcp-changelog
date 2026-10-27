@@ -1,5 +1,63 @@
 # Google Cloud VMware Engine
 
+## 2026-10-27
+
+### Feature
+
+VMware solution on Google Cloud is [generally available](https://cloud.google.com/products#section-22)
+(GA). VMware solution lets you deploy, configure, and manage VMware Cloud
+Foundation (VCF) on dedicated bare-metal Compute Engine instances within your
+Virtual Private Cloud (VPC) network under a Bring Your Own License (BYOL) model.
+
+Key features include the following:
+
+* Provision dedicated bare-metal ESXi nodes (`z3-highmem-192-highlssd-metal`)
+  directly in your project with deletion protection and Local SSD storage for
+  vSAN.
+* Automate node preparation, Secret Manager credential storage,
+  vSwitch and Dynamic NIC networking, Cloud DNS zone and
+  record synchronization, vSAN storage initialization, and VCF installer
+  appliance deployment by using Terraform and the VMware solution
+  toolkit.
+* Distribute nodes across isolated availability domains by using spread
+  placement policies to align with vSAN fault domains for high availability.
+* Connect ESXi nodes and VLAN-tagged Dynamic NICs directly to
+  your VPC subnets without requiring private services access peering.
+
+For more information, see
+[VMware solution on Google Cloud overview](https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/overview) and
+[Compare VMware Engine models](https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/compare-models).
+
+### Feature
+
+VMware solution on Google Cloud is [generally available](https://cloud.google.com/products#section-22)
+(GA). VMware solution lets you deploy, configure, and manage VMware Cloud
+Foundation (VCF) on dedicated bare-metal Compute Engine instances within your
+Virtual Private Cloud (VPC) network under a Bring Your Own License (BYOL) model.
+
+Key features include the following:
+
+* Provision dedicated bare-metal ESXi nodes (`z3-highmem-192-highlssd-metal`)
+  directly in your project with deletion protection and Local SSD storage for
+  vSAN.
+* Automate node preparation, Secret Manager credential storage,
+  vSwitch and Dynamic NIC networking, Cloud DNS zone and
+  record synchronization, vSAN storage initialization, and VCF installer
+  appliance deployment by using Terraform and the VMware solution
+  toolkit.
+* Distribute nodes across isolated availability domains by using spread
+  placement policies to align with vSAN fault domains for high availability.
+* Connect ESXi nodes and VLAN-tagged Dynamic NICs directly to
+  your VPC subnets without requiring private services access peering.
+
+For more information, see
+[VMware solution on Google Cloud overview](https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/overview) and
+[Compare VMware Engine models](https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/compare-models).
+All future VMware solution release notes can be found on the
+[VMware solution on Google Cloud release notes](https://docs.cloud.google.com/vmware-engine/docs/vmware-solution/release-notes)
+page.
+
+---
 ## 2026-10-01
 
 ### Feature

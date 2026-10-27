@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-10-26": [
+      {
+        "kind": "Feature",
+        "content": "**Control user intent matching for semantic governance policies**\n\nYou can now turn user intent matching on or off for semantic governance\npolicies by setting the `sgpUserIntentMatching` key on the authorization\nextension metadata. User intent matching is on by default; set the key to\n`DISABLED` to turn it off. Turning it off reduces protection against indirect\nprompt injection. When the key is set, policy evaluation logs report the mode\neach evaluation used in the `sgpUserIntentMatchingMode` field.\n\nFor more information, see\n[Control user intent matching](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/configure-semantic-governance#control-intent-matching).",
+        "summary": {
+          "title": "Control user intent matching for semantic governance",
+          "summary": "You can now enable or disable user intent matching for semantic governance policies by setting the `sgpUserIntentMatching` key. This feature, which is on by default, helps protect against prompt injection. Logs will now report the matching mode used during policy evaluation."
+        }
+      }
+    ],
     "2026-10-21": [
       {
         "kind": "Fixed",

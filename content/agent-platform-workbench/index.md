@@ -1,5 +1,130 @@
 # Agent Platform Workbench
 
+## 2026-10-26
+
+### Change
+
+
+
+### 20261025.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Security
+
+Updated certifi, pip, and conda ca-certificates to the latest versions.
+
+### Change
+
+
+
+### 20261025.00_p0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Security
+
+Addressed multiple reported security vulnerabilities in bundled packages.
+
+### Security
+
+Updated certifi, pip, and conda ca-certificates to the latest versions.
+
+---
+## 2026-10-25
+
+### Change
+
+
+
+### 20261025-2230-rc0 Release
+
+
+
+### Change
+
+
+
+### 20261025-2230-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Security
+
+Updated certifi, pip, and conda ca-certificates to the latest versions.
+
+### Fixed
+
+Fixed dataset and table search in the BigQuery panel, which sometimes failed to return results. Root cause is due to Datacatalog API being sunsetted in favor of Dataplex API.
+
+### Fixed
+
+Fixed an issue where Jupyter Server terminal configuration could overwrite the Dataproc plugin server extension setting or fail to apply the terminal disable setting on container startup.
+
+### Security
+
+Addressed multiple reported security vulnerabilities in bundled packages.
+
+### Security
+
+Updated certifi, pip, and conda ca-certificates to the latest versions.
+
+### Fixed
+
+Fixed an issue where Jupyter Server terminal configuration could overwrite the Dataproc plugin server extension setting or fail to apply the terminal disable setting on container startup.
+
+### Security
+
+Addressed multiple reported security vulnerabilities in bundled packages.
+
+### Change
+
+
+
+### 20261025-2130-rc0 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+---
+## 2026-10-20
+
+### Change
+
+
+
+### M154 Release
+
+
+
+### Change
+
+Installed latest packages from upstream dependencies.
+
+### Fixed
+
+Fixed dataset and table search in the BigQuery panel, which sometimes failed to return results. Root cause is due to Datacatalog API being sunsetted in favor of Dataplex API.
+
+---
 ## 2026-10-19
 
 ### Change

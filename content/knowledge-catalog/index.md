@@ -1,5 +1,24 @@
 # Knowledge Catalog
 
+## 2026-10-26
+
+### Feature
+
+Support for Looker (Google Cloud core) in Data lineage is now
+[generally available](https://cloud.google.com/products#product-launch-stages).
+This support includes lineage views for LookML views and Explores, Looker
+dashboards, dashboard elements, Looks, LookML dashboards, and Conversational
+Analytics agents. You can control data lineage ingestion at the organization,
+folder, and project levels. You can also visualize the end-to-end flow of your
+data from BigQuery sources through the Looker semantic layer to downstream
+assets.
+
+For more information, see
+[Track data lineage with Knowledge Catalog](https://docs.cloud.google.com/looker/docs/looker-core-lineage),
+[About data lineage](https://docs.cloud.google.com/knowledge-catalog/docs/about-data-lineage#other), and
+[About data lineage ingestion control](https://docs.cloud.google.com/knowledge-catalog/docs/control-lineage-ingestion#supported-service-integrations).
+
+---
 ## 2026-10-05
 
 ### Feature

@@ -1,5 +1,16 @@
 # Looker
 
+## 2026-10-26
+
+### Feature
+
+[Looker (Google Cloud core) data lineage](https://docs.cloud.google.com/looker/docs/looker-core-lineage) is now generally available (GA). The GA launch adds end-to-end visibility for [LookML dashboards](https://docs.cloud.google.com/looker/docs/building-lookml-dashboards) and [Conversational Analytics agents](https://docs.cloud.google.com/looker/docs/conversational-analytics-looker-data-agents). Lineage enablement is now managed independently through the Data Lineage API and service-level ingestion controls, which decouples it from Looker's internal Knowledge Catalog metadata settings. For more information, see [About data lineage](https://docs.cloud.google.com/knowledge-catalog/docs/about-data-lineage).
+
+### Feature
+
+The [Looker-managed Model Context Protocol (MCP) server](https://docs.cloud.google.com/looker/docs/mcp) is now generally available (GA), allowing AI agents to securely interact with business data and LookML models without the need for additional middleware. This launch is supported by a new [**Manage OAuth Clients** admin page](https://docs.cloud.google.com/looker/docs/admin-panel-authentication-oauth-clients), which provides a centralized interface for governing identity-based access for AI agents and other external applications. Administrators can now quickly enable pre-configured integrations from the Application Library or register custom OAuth clients with specific redirect URIs and group-based access controls.
+
+---
 ## 2026-10-22
 
 ### Announcement

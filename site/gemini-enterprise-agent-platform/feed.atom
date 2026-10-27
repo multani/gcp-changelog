@@ -2,9 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-10-21T00:00:00+00:00</updated>
+  <updated>2026-10-26T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-26:feature:0</id>
+    <published>2026-10-26T00:00:00+00:00</published>
+    <updated>2026-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Control user intent matching for semantic governance policies</strong></p>
+<p>You can now turn user intent matching on or off for semantic governance
+policies by setting the <code>sgpUserIntentMatching</code> key on the authorization
+extension metadata. User intent matching is on by default; set the key to
+<code>DISABLED</code> to turn it off. Turning it off reduces protection against indirect
+prompt injection. When the key is set, policy evaluation logs report the mode
+each evaluation used in the <code>sgpUserIntentMatchingMode</code> field.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/configure-semantic-governance#control-intent-matching">Control user intent matching</a>.</p>]]></content>
+    <summary>You can now enable or disable user intent matching for semantic governance policies by setting the `sgpUserIntentMatching` key. This feature, which is on by default, helps protect against prompt injection. Logs will now report the matching mode used during policy evaluation.</summary>
+    <title>Feature: Control user intent matching for semantic governance</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

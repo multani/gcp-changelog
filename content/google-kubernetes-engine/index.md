@@ -1,5 +1,22 @@
 # Google Kubernetes Engine
 
+## 2026-10-26
+
+### Feature
+
+The [C4D bare metal machine types](https://docs.cloud.google.com/compute/docs/general-purpose-machines#c4d_series)
+(`c4d-standard-384-metal`, `c4d-highcpu-384-metal`, and `c4d-highmem-384-metal`)
+are generally available on GKE. You can create C4D bare metal node pools in
+Standard clusters that run version 1.36 or later.
+
+In version 1.37.0-gke.4713000 or later, you can also use C4D bare metal nodes
+with cluster autoscaler, node auto-provisioning, and custom ComputeClasses,
+including in Autopilot clusters that use a custom ComputeClass. In earlier
+versions, you must scale C4D bare metal node pools manually.
+
+For more information, see [Machine support with GKE](https://docs.cloud.google.com/kubernetes-engine/docs/concepts/machine-support#machine-support).
+
+---
 ## 2026-10-20
 
 ### Fixed

@@ -1,5 +1,15 @@
 # Compute Engine
 
+## 2026-10-26
+
+### Security
+
+A vulnerability (CVE-2026-85299) about incorrect authorization in
+Compute Engine was discovered and has been addressed. For more information,
+see the
+[GCP-2026-073 security bulletin](https://docs.cloud.google.com/compute/docs/security-bulletins#gcp-2026-073).
+
+---
 ## 2026-10-22
 
 ### Feature

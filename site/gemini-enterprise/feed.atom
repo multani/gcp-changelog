@@ -2,9 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise</subtitle>
-  <updated>2026-10-22T00:00:00+00:00</updated>
+  <updated>2026-10-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-10-27:feature:0</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: VPC connectivity and static IP egress for custom MCP
+servers</strong></p>
+<p>You can configure Virtual Private Cloud (VPC) connectivity for custom Model
+Context Protocol (MCP) server data stores by routing outbound tool traffic
+through Agent Gateway (supported in <code>us-central1</code> and <code>europe-west1</code>). You
+can host private MCP servers inside your VPC network by using Private Service
+Connect (PSC) network attachments and agent connectivity templates. You can
+also route traffic to public MCP servers through Cloud NAT with static external
+IP addresses for strict IP allowlists.</p>
+<p>This feature is generally available (GA). For more information, see:</p>
+<ul>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-vpc-custom-mcp-server">Prerequisites to set up a custom MCP server data store with VPC connectivity</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server">Set up your custom MCP server data store</a></li>
+</ul>]]></content>
+    <summary>Enhance your custom MCP server deployments with new VPC connectivity options. You can now route outbound tool traffic through Agent Gateway or use Cloud NAT with static IP addresses for secure and controlled access. This feature is now generally available.</summary>
+    <title>Feature: VPC Connectivity for Custom MCP Servers</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -21,12 +45,12 @@ and location across the Gemini Enterprise Standard, Gemini Enterprise Plus, and
 Gemini Enterprise Standard Emerging Market editions.</p>
 <p>This feature is generally available (GA). For more information, see:</p>
 <ul>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#single-user-quota-limits">Single-user quota limits</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-pay-as-you-go-usage#single-user-quota-limits">Single-user quota limits</a></li>
 <li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage#configure-single-user-quota-limit">Configure a single-user quota limit</a></li>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages#configure-single-user-quota-limit">Configure overages</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota#configure-single-user-quota-limit">Configure pay-as-you-go usage above quota</a></li>
 </ul>]]></content>
-    <summary>Gemini Enterprise administrators can now set individual user quota limits to better manage shared subscription usage. This feature, now generally available, allows configuration of limits per edition and location to prevent overuse by any single user.</summary>
-    <title>Feature: Gemini Enterprise: Set user limits</title>
+    <summary>Gemini Enterprise administrators can now set single-user quota limits to manage subscription usage. This feature helps prevent individual users from consuming the entire shared quota pool across different editions and locations. Configure these limits through the Usage &amp; Spending page in the Google Cloud console.</summary>
+    <title>Feature: New quota controls for Gemini Enterprise</title>
   </entry>
   <entry>
     <author>
@@ -314,9 +338,10 @@ models are turned off by default:</p>
   regions</a>.</li>
 <li><strong>Consumption billing</strong>: Third-party model usage is billed as consumption on
   your Cloud Billing account and counts toward your project's spend cap,
-  which covers all models. Overages must be turned on before you can enable a
-  third-party model. For more information, see <a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages">Configure
-  overages</a>
+  which covers all models. Pay-as-you-go usage above quota must be turned on
+  before you can enable a third-party model. For more information, see
+  <a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota">Configure pay-as-you-go usage above
+  quota</a>
   and the Cloud Billing SKUs for
   <a href="https://cloud.google.com/skus?filter=opus&amp;currency=USD&amp;e=48754805">Anthropic Claude Opus 5.5</a>
   and
@@ -326,8 +351,8 @@ models are turned off by default:</p>
   model picker at a thinking level of Low, Medium, High, or Max (for example,
   Claude Opus 5.5 (High)). Medium is the default.</li>
 </ul>]]></content>
-    <summary>Gemini Enterprise now supports Anthropic Claude Opus 5.5 and Claude Sonnet 5.5 for AI developer tools. Administrators can easily enable these models through the console without needing a separate Anthropic account. This feature allows developers to leverage advanced AI capabilities within their existing Gemini Enterprise setup.</summary>
-    <title>Feature: New Claude Models Available</title>
+    <summary>Gemini Enterprise now supports Anthropic's Claude Opus 5.5 and Claude Sonnet 5.5 for AI developer tools. Administrators can easily enable these advanced models through the Gemini Enterprise console without needing a separate Anthropic account. This integration allows developers to leverage cutting-edge AI capabilities directly within their preferred development environments.</summary>
+    <title>Feature: New Claude Models Available for AI Developers</title>
   </entry>
   <entry>
     <author>
@@ -346,18 +371,37 @@ models are turned off by default:</p>
 <p>When you enable Pay-as-you-go usage on an invoiced Cloud Billing account with an active subscription, users can continue using features at pay-as-you-go rates after reaching their pooled quota limits.</p>
 <p>For more information, see the following resources:</p>
 <ul>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#overages">Quotas and overages</a></li>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages">Configure overages</a></li>
-<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview">Overview of overages and spend controls</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-pay-as-you-go-usage#pay-as-you-go-usage-above-quota">Quotas and pay-as-you-go usage</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota">Configure pay-as-you-go usage above quota</a></li>
+<li><a href="https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview">Overview of pay-as-you-go usage above quota and spend controls</a></li>
 </ul>]]></content>
-    <summary>Pay-as-you-go usage above quota is now enabled for Frontline, EDU, and Emerging Market editions of Gemini Enterprise. This allows users to continue using features at pay-as-you-go rates after reaching their pooled quota limits, providing greater flexibility.</summary>
-    <title>Feature: Gemini Enterprise: Pay-as-you-go available for more editions</title>
+    <summary>You can now enable pay-as-you-go usage above quota for additional Gemini Enterprise editions, including Frontline, EDU, and Emerging Market licenses. This allows users to continue using features at pay-as-you-go rates after reaching their pooled quota limits. This feature is available for invoiced Cloud Billing accounts with an active subscription.</summary>
+    <title>Feature: Gemini Enterprise: Pay-as-you-go for more editions</title>
   </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
     </author>
     <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-10-06:feature:0</id>
+    <published>2026-10-06T00:00:00+00:00</published>
+    <updated>2026-10-06T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Updates to pay-as-you-go usage above quota controls</strong></p>
+<p>In the Google Cloud console, the <strong>Overages</strong> setting has been updated to
+<strong>Pay-as-you-go usage above quota</strong>. The <strong>Usage &amp; Spending</strong> page provides
+per-tier controls, allowing administrators to configure pay-as-you-go usage
+above quota individually for each subscription tier.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota">Configure pay-as-you-go usage above quota</a>
+and
+<a href="https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-pay-as-you-go-usage#pay-as-you-go-usage-above-quota">Quotas and pay-as-you-go usage</a>.</p>]]></content>
+    <summary>Administrators can now fine-tune pay-as-you-go settings for Gemini Enterprise subscriptions. The Google Cloud console's 'Overages' setting is now 'Pay-as-you-go usage above quota', offering per-tier controls on the 'Usage &amp; Spending' page.</summary>
+    <title>Feature: New controls for Gemini Enterprise usage</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise:2026-10-06:feature:1</id>
     <published>2026-10-06T00:00:00+00:00</published>
     <updated>2026-10-06T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Gemini Enterprise: Control access to Antigravity features</strong></p>

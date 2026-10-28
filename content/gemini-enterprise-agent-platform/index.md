@@ -15,6 +15,15 @@ Flash for robotics applications, including [spatial reasoning](https://docs.clou
 [task orchestration](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/gemini-robotics-er/orchestration),
 and [video understanding](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/gemini-robotics-er/video-understanding).
 
+### Feature
+
+**xAI's Grok 4.7 is generally available**
+
+[Grok 4.7](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/grok/grok-4-7)
+is now [generally available
+(GA)](https://cloud.google.com/products#product-launch-stages) for production
+use on the global endpoint and the US multi-region endpoint.
+
 ---
 ## 2026-10-26
 
@@ -51,6 +60,29 @@ for [Gemini Nano Banana 2.1](https://docs.cloud.google.com/gemini-enterprise-age
 edited images directly to a Cloud Storage bucket and receive the object URI in
 `fileData.fileUri` instead of inline bytes. For more information, see
 [Save generated images to Cloud Storage](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/image-generation#save-generated-images-cloud-storage).
+
+### Feature
+
+**Semantic governance policies support more model providers**
+
+Semantic governance policies now evaluate tool calls from agents that use
+models from providers other than Gemini. The policy engine reads each
+provider's request and response format, so the same policies apply whichever
+model your agent uses. Supported APIs include the Gemini Developer API and
+Gemini models on Gemini Enterprise Agent Platform, the Anthropic Messages API,
+Claude models on Gemini Enterprise Agent Platform, the OpenAI Chat Completions
+API, the Mistral AI API, the OpenAI-compatible endpoint on Gemini Enterprise
+Agent Platform (including Llama models), and self-hosted OpenAI-compatible
+servers such as vLLM. Streamed model responses aren't supported.
+
+To govern these providers, update the `when` condition of your authorization
+policy to match each provider's request path. The updated condition also
+matches requests that include a query string.
+
+For more information, see
+[Supported model providers](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/semantic-governance-overview#supported-providers)
+and
+[Connect the policy engine to Agent Gateway](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/configure-semantic-governance#connect-policy-engine).
 
 ---
 ## 2026-10-21

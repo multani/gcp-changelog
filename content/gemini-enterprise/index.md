@@ -1,5 +1,26 @@
 # Gemini Enterprise
 
+## 2026-10-27
+
+### Feature
+
+**Gemini Enterprise: VPC connectivity and static IP egress for custom MCP
+servers**
+
+You can configure Virtual Private Cloud (VPC) connectivity for custom Model
+Context Protocol (MCP) server data stores by routing outbound tool traffic
+through Agent Gateway (supported in `us-central1` and `europe-west1`). You
+can host private MCP servers inside your VPC network by using Private Service
+Connect (PSC) network attachments and agent connectivity templates. You can
+also route traffic to public MCP servers through Cloud NAT with static external
+IP addresses for strict IP allowlists.
+
+This feature is generally available (GA). For more information, see:
+
+* [Prerequisites to set up a custom MCP server data store with VPC connectivity](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-vpc-custom-mcp-server)
+* [Set up your custom MCP server data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server)
+
+---
 ## 2026-10-22
 
 ### Feature
@@ -15,9 +36,9 @@ Gemini Enterprise Standard Emerging Market editions.
 
 This feature is generally available (GA). For more information, see:
 
-* [Single-user quota limits](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#single-user-quota-limits)
+* [Single-user quota limits](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-pay-as-you-go-usage#single-user-quota-limits)
 * [Configure a single-user quota limit](https://docs.cloud.google.com/gemini/enterprise/docs/feature-usage#configure-single-user-quota-limit)
-* [Configure overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages#configure-single-user-quota-limit)
+* [Configure pay-as-you-go usage above quota](https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota#configure-single-user-quota-limit)
 
 ### Announcement
 
@@ -259,9 +280,10 @@ models are turned off by default:
   regions](https://www.anthropic.com/supported-countries).
 * **Consumption billing**: Third-party model usage is billed as consumption on
   your Cloud Billing account and counts toward your project's spend cap,
-  which covers all models. Overages must be turned on before you can enable a
-  third-party model. For more information, see [Configure
-  overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages)
+  which covers all models. Pay-as-you-go usage above quota must be turned on
+  before you can enable a third-party model. For more information, see
+  [Configure pay-as-you-go usage above
+  quota](https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota)
   and the Cloud Billing SKUs for
   [Anthropic Claude Opus 5.5](https://cloud.google.com/skus?filter=opus&currency=USD&e=48754805)
   and
@@ -288,12 +310,26 @@ When you enable Pay-as-you-go usage on an invoiced Cloud Billing account with an
 
 For more information, see the following resources:
 
-* [Quotas and overages](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages#overages)
-* [Configure overages](https://docs.cloud.google.com/gemini/enterprise/docs/configure-overages)
-* [Overview of overages and spend controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview)
+* [Quotas and pay-as-you-go usage](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-pay-as-you-go-usage#pay-as-you-go-usage-above-quota)
+* [Configure pay-as-you-go usage above quota](https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota)
+* [Overview of pay-as-you-go usage above quota and spend controls](https://docs.cloud.google.com/gemini/enterprise/docs/manage-costs-overview)
 
 ---
 ## 2026-10-06
+
+### Feature
+
+**Gemini Enterprise: Updates to pay-as-you-go usage above quota controls**
+
+In the Google Cloud console, the **Overages** setting has been updated to
+**Pay-as-you-go usage above quota**. The **Usage & Spending** page provides
+per-tier controls, allowing administrators to configure pay-as-you-go usage
+above quota individually for each subscription tier.
+
+For more information, see
+[Configure pay-as-you-go usage above quota](https://docs.cloud.google.com/gemini/enterprise/docs/configure-pay-as-you-go-usage-above-quota)
+and
+[Quotas and pay-as-you-go usage](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-pay-as-you-go-usage#pay-as-you-go-usage-above-quota).
 
 ### Feature
 

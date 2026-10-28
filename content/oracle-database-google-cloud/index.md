@@ -1,5 +1,14 @@
 # Oracle Database@Google Cloud
 
+## 2026-10-27
+
+### Feature
+
+For Exadata Database Service, Oracle Database@Google Cloud is available in `northamerica-south1` (Querétaro, Mexico) region.
+
+For a list of supported locations, see [Supported regions and zones](https://docs.cloud.google.com/oracle/database/docs/regions-and-zones).
+
+---
 ## 2026-10-26
 
 ### Feature

@@ -547,10 +547,6 @@ Upgraded sys-apps/xemu to v0.0.11.
 
 ### Security
 
-Fixed CVE-2026-18220 in sys-libs/binutils-libs.
-
-### Security
-
 Fixed CVE-2026-5450 in sys-libs/glibc.
 
 ### Change

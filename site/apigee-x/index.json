@@ -1,6 +1,16 @@
 {
   "name": "Apigee X",
   "entries": {
+    "2026-10-27": [
+      {
+        "kind": "Feature",
+        "content": "The **Apigee API Health & Availability** dashboard is now generally available in [Cloud Monitoring](https://console.cloud.google.com/monitoring/dashboards) to help you monitor the health, performance, and availability of your Apigee API proxies in real time:\n\n* **Golden signal scorecards**: track aggregate **Traffic** (requests per\n  second), **Error Rate (5xx)**, and **Latency (p95)** scorecards.\n* **Status code and error trends**: visualize the **Request Rate by Status\n  Code** chart over time and identify problematic APIs using the dedicated\n  **5xx Error Rate by Proxy** and **4xx Error Rate by Proxy** charts.\n* **Granular filtering**: filter telemetry by `project_id`, `location`, and\n  `proxy_name` to troubleshoot specific regions or proxies.\n\nFor more information, see [API Monitoring](https://docs.cloud.google.com/apigee/docs/api-monitoring).",
+        "summary": {
+          "title": "New API Health Dashboard",
+          "summary": "Monitor your Apigee API health and availability in real time with the new dashboard in Cloud Monitoring. It offers golden signal scorecards, status code trends, and granular filtering for effective troubleshooting."
+        }
+      }
+    ],
     "2026-10-26": [
       {
         "kind": "Feature",
@@ -118,10 +128,10 @@
       },
       {
         "kind": "Fixed",
-        "content": "| Bug ID | Description |\n| --- | --- |\n| **432315283** | Fixed a multi-certificate truststore so that its trust anchors take effect without a Message Processor restart when `features.truststore.multi_cert_bundle.enabled` is toggled at runtime; the outbound SSL context is now rebuilt automatically on any trust-anchor change. |\n| **565072374** | VerifyJWT policies that use a JWKS `uriRef` no longer return `steps.jwt.NoMatchingPublicKey` on the first request after the JWKS cache TTL expires when the identity provider has rotated to a new key ID. The cache now re-fetches synchronously when its entry expires. |\n| **535395491** | Extension Processor (ext\\_proc) denials now return the status and body that the policy or FaultRule produced, instead of always returning HTTP 500. |\n| **558421499** | Apigee runtime runs on JRE 21. |\n| **517953321** | The `lookupcache.<n>.isEncrypted` and `responsecache.<n>.isEncrypted` flow variables now report the per-entry on-disk encryption state of the L2 cache, rather than approximating whether the cache-encryption key is loaded. L1 cache hits report `false`. Review any policy conditions that rely on these flow variables. |\n| **563557547** | Fixed EventFlow (Server-Sent Events) coalescing multiple events into a single policy invocation under burst load on the http-adaptor data path, which produced malformed SSE output to the client. |\n| **562740573** | Apigee Analytics now populates the `processing_mode` dimension, distinguishing proxy traffic from extension-processor traffic. This dimension is not populated in billing-only analytics mode. |\n| **357042873** | Stopped redirecting `apigee-cassandra-schema-readiness` init container logs to `/dev/null`, improving troubleshooting. Workloads undergo a rolling restart upon upgrade. |\n| **N/A** | Updates to infrastructure and libraries. |",
+        "content": "| Bug ID | Description |\n| --- | --- |\n| **432315283** | Fixed a multi-certificate truststore so that its trust anchors take effect without a Message Processor restart when `features.truststore.multi_cert_bundle.enabled` is toggled at runtime; the outbound SSL context is now rebuilt automatically on any trust-anchor change. |\n| **565072374** | VerifyJWT policies that use a JWKS `uriRef` no longer return `steps.jwt.NoMatchingPublicKey` on the first request after the JWKS cache TTL expires when the identity provider has rotated to a new key ID. The cache now re-fetches synchronously when its entry expires. |\n| **535395491** | Extension Processor (ext\\_proc) denials now return the status and body that the policy or FaultRule produced, instead of always returning HTTP 500. |\n| **558421499** | Apigee runtime runs on JRE 21. |\n| **517953321** | The `lookupcache.<n>.isEncrypted` and `responsecache.<n>.isEncrypted` flow variables now report the per-entry on-disk encryption state of the L2 cache, rather than approximating whether the cache-encryption key is loaded. L1 cache hits report `false`. Review any policy conditions that rely on these flow variables. |\n| **563557547** | Fixed EventFlow (Server-Sent Events) coalescing multiple events into a single policy invocation under burst load on the http-adaptor data path, which produced malformed SSE output to the client. |\n| **562740573** | Apigee Analytics now populates the `processing_mode` dimension, distinguishing proxy traffic from extension-processor traffic. This dimension is not populated in billing-only analytics mode. |\n| **357042873** | Stopped redirecting `apigee-cassandra-schema-readiness` init container logs to `/dev/null`, improving troubleshooting. Workloads undergo a rolling restart upon upgrade. |\n| **564969400** | Fixed an issue where variables initialized from an empty `<Value/>` element in `AssignMessage` (`AssignVariable`) were not treated as empty strings when referenced in message template functions such as `replaceAll`. |\n| **N/A** | Updates to infrastructure and libraries. |",
         "summary": {
-          "title": "Runtime fixes and improvements",
-          "summary": "Several issues have been resolved in the Apigee runtime, including improvements to JWT verification, certificate truststore handling, and EventFlow behavior. The runtime now also supports JRE 21 and provides enhanced logging for troubleshooting."
+          "title": "Apigee Runtime Fixes",
+          "summary": "This release includes fixes for truststore updates, JWT validation, extension processor error handling, and Apigee Analytics data population. It also addresses issues with SSE output, variable handling in AssignMessage, and improves log visibility for Cassandra schema readiness."
         }
       }
     ],

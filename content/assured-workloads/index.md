@@ -1,5 +1,46 @@
 # Assured Workloads
 
+## 2026-10-12
+
+### Feature
+
+The [Data Boundary for ITAR](https://docs.cloud.google.com/assured-workloads/docs/control-packages/itar)
+supports the following products:
+
+* Looker (Google Cloud core)
+
+---
+## 2026-10-02
+
+### Feature
+
+The [Data Boundary for Impact Level 5 (IL5)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il5)
+supports the following products:
+
+* Google Security Operations SIEM
+
+### Feature
+
+The [Data Boundary for Impact Level 4 (IL4)](https://docs.cloud.google.com/assured-workloads/docs/control-packages/il4)
+supports the following products:
+
+* Google Security Operations SIEM
+
+---
+## 2026-09-30
+
+### Feature
+
+You can now acknowledge multiple compliance violations at once in the
+Google Cloud console to add violation exceptions in bulk, up to 100
+organization policy violations and up to 400 resource violations in a single
+operation.
+
+For more information, see how to add violation exceptions when
+[monitoring a folder](https://docs.cloud.google.com/assured-workloads/docs/monitor-folder#exception) or
+[monitoring frameworks](https://docs.cloud.google.com/assured-workloads/docs/monitor-frameworks#exception).
+
+---
 ## 2026-09-08
 
 ### Feature

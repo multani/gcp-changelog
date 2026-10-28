@@ -1,5 +1,22 @@
 # Apigee X
 
+## 2026-10-27
+
+### Feature
+
+The **Apigee API Health & Availability** dashboard is now generally available in [Cloud Monitoring](https://console.cloud.google.com/monitoring/dashboards) to help you monitor the health, performance, and availability of your Apigee API proxies in real time:
+
+* **Golden signal scorecards**: track aggregate **Traffic** (requests per
+  second), **Error Rate (5xx)**, and **Latency (p95)** scorecards.
+* **Status code and error trends**: visualize the **Request Rate by Status
+  Code** chart over time and identify problematic APIs using the dedicated
+  **5xx Error Rate by Proxy** and **4xx Error Rate by Proxy** charts.
+* **Granular filtering**: filter telemetry by `project_id`, `location`, and
+  `proxy_name` to troubleshoot specific regions or proxies.
+
+For more information, see [API Monitoring](https://docs.cloud.google.com/apigee/docs/api-monitoring).
+
+---
 ## 2026-10-26
 
 ### Feature
@@ -274,6 +291,7 @@ the features and fixes available until the rollout is complete.
 | **563557547** | Fixed EventFlow (Server-Sent Events) coalescing multiple events into a single policy invocation under burst load on the http-adaptor data path, which produced malformed SSE output to the client. |
 | **562740573** | Apigee Analytics now populates the `processing_mode` dimension, distinguishing proxy traffic from extension-processor traffic. This dimension is not populated in billing-only analytics mode. |
 | **357042873** | Stopped redirecting `apigee-cassandra-schema-readiness` init container logs to `/dev/null`, improving troubleshooting. Workloads undergo a rolling restart upon upgrade. |
+| **564969400** | Fixed an issue where variables initialized from an empty `<Value/>` element in `AssignMessage` (`AssignVariable`) were not treated as empty strings when referenced in message template functions such as `replaceAll`. |
 | **N/A** | Updates to infrastructure and libraries. |
 
 ---

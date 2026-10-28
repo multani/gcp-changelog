@@ -1,5 +1,21 @@
 # Service Extensions
 
+## 2026-10-23
+
+### Feature
+
+You can use edge extensions (`CdnEdgeExtension`) to attach plugins directly to
+Media CDN Edge Cache services (`EdgeCacheService`). These extensions let you
+inspect and modify HTTP request and response headers in the Media CDN
+processing path. This feature is available in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+For more information, see [Media CDN extensions
+overview](https://docs.cloud.google.com/service-extensions/docs/media-cdn-extensions-overview) and
+[Configure a Media CDN edge
+extension](https://docs.cloud.google.com/service-extensions/docs/configure-media-cdn-edge-extensions).
+
+---
 ## 2026-09-23
 
 ### Feature

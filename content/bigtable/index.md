@@ -1,5 +1,29 @@
 # Bigtable
 
+## 2026-10-28
+
+### Feature
+
+You can configure Bigtable tables with microsecond timestamp granularity to
+capture and store high-frequency data. By supporting microsecond precision for
+cell timestamps, Bigtable helps you prevent data loss from write collisions in
+workloads with high event rates. This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages)
+for instances in the Enterprise Plus edition. For more information, see
+[Data type enforcement in Bigtable](https://docs.cloud.google.com/bigtable/docs/data-types).
+
+---
+## 2026-10-27
+
+### Feature
+
+You can [use Apache Avro schema bundles](https://docs.cloud.google.com/bigtable/docs/create-manage-avro-schemas)
+to query individual fields within Avro records stored as serialized bytes in
+Bigtable. You can [query your Avro data](https://docs.cloud.google.com/bigtable/docs/query-avro-data) using
+GoogleSQL for Bigtable, continuous materialized views, and logical views. This
+feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-01
 
 ### Feature

@@ -1,5 +1,22 @@
 # Application Integration
 
+## 2026-10-28
+
+### Feature
+
+**Application Integration agent skills**
+
+Application Integration agent skills are available in the public
+[`google/skills`](https://github.com/google/skills) repository:
+`application-integration-basics`, `application-integration-authoring`, and
+`application-integration-troubleshooting`. AI coding agents that use these
+skills can help you set up Application Integration; build, publish, and run
+integrations through the REST API; and troubleshoot failed runs. For more
+information, see
+[Application Integration agent skills](https://docs.cloud.google.com/application-integration/docs/agent-skills-overview)
+and [Build an integration with an AI agent](https://docs.cloud.google.com/application-integration/docs/build-integration-ai-agent).
+
+---
 ## 2026-10-14
 
 ### Security

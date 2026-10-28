@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-10-26T00:00:00+00:00</updated>
+  <updated>2026-10-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-10-27:feature:0</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The <strong>Apigee API Health &amp; Availability</strong> dashboard is now generally available in <a href="https://console.cloud.google.com/monitoring/dashboards">Cloud Monitoring</a> to help you monitor the health, performance, and availability of your Apigee API proxies in real time:</p>
+<ul>
+<li><strong>Golden signal scorecards</strong>: track aggregate <strong>Traffic</strong> (requests per
+  second), <strong>Error Rate (5xx)</strong>, and <strong>Latency (p95)</strong> scorecards.</li>
+<li><strong>Status code and error trends</strong>: visualize the <strong>Request Rate by Status
+  Code</strong> chart over time and identify problematic APIs using the dedicated
+  <strong>5xx Error Rate by Proxy</strong> and <strong>4xx Error Rate by Proxy</strong> charts.</li>
+<li><strong>Granular filtering</strong>: filter telemetry by <code>project_id</code>, <code>location</code>, and
+  <code>proxy_name</code> to troubleshoot specific regions or proxies.</li>
+</ul>
+<p>For more information, see <a href="https://docs.cloud.google.com/apigee/docs/api-monitoring">API Monitoring</a>.</p>]]></content>
+    <summary>Monitor your Apigee API health and availability in real time with the new dashboard in Cloud Monitoring. It offers golden signal scorecards, status code trends, and granular filtering for effective troubleshooting.</summary>
+    <title>Feature: New API Health Dashboard</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -341,9 +362,10 @@ the features and fixes available until the rollout is complete.</p>]]></content>
 | <strong>563557547</strong> | Fixed EventFlow (Server-Sent Events) coalescing multiple events into a single policy invocation under burst load on the http-adaptor data path, which produced malformed SSE output to the client. |
 | <strong>562740573</strong> | Apigee Analytics now populates the <code>processing_mode</code> dimension, distinguishing proxy traffic from extension-processor traffic. This dimension is not populated in billing-only analytics mode. |
 | <strong>357042873</strong> | Stopped redirecting <code>apigee-cassandra-schema-readiness</code> init container logs to <code>/dev/null</code>, improving troubleshooting. Workloads undergo a rolling restart upon upgrade. |
+| <strong>564969400</strong> | Fixed an issue where variables initialized from an empty <code>&lt;Value/&gt;</code> element in <code>AssignMessage</code> (<code>AssignVariable</code>) were not treated as empty strings when referenced in message template functions such as <code>replaceAll</code>. |
 | <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
-    <summary>Several issues have been resolved in the Apigee runtime, including improvements to JWT verification, certificate truststore handling, and EventFlow behavior. The runtime now also supports JRE 21 and provides enhanced logging for troubleshooting.</summary>
-    <title>Fixed: Runtime fixes and improvements</title>
+    <summary>This release includes fixes for truststore updates, JWT validation, extension processor error handling, and Apigee Analytics data population. It also addresses issues with SSE output, variable handling in AssignMessage, and improves log visibility for Cassandra schema readiness.</summary>
+    <title>Fixed: Apigee Runtime Fixes</title>
   </entry>
   <entry>
     <author>

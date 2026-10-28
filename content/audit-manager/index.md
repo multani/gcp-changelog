@@ -1,5 +1,15 @@
 # Audit Manager
 
+## 2026-10-22
+
+### Feature
+
+Support for organization-level audits, [audit
+scheduling](https://docs.cloud.google.com/audit-manager/docs/run-audit), and a [new UI experience with
+updated reports](https://docs.cloud.google.com/audit-manager/docs/view-audit) are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-09-25
 
 ### Feature

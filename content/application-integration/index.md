@@ -2,6 +2,15 @@
 
 ## 2026-10-28
 
+### Security
+
+A Deserialization of Untrusted Data vulnerability was discovered
+in the `SubWorkflow` task in Application Integration
+versions prior to September 11, 2026.
+For more information, see the
+[GCP-2026-074](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-074)
+security bulletin.
+
 ### Feature
 
 **Application Integration agent skills**
@@ -31,13 +40,13 @@ security bulletin.
 ---
 ## 2026-10-12
 
-### Security
+### Announcement
 
 Starting October 15, 2026, Application Integration enforces security fixes for
 IAM, run-as service accounts, and `iam.serviceAccounts.actAs` checks, requiring
 the correct permissions for the test feature and any new integrations. For more
 information, see the
-[GCP-2026-067](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-067)
+[GCP-2026-068](https://docs.cloud.google.com/application-integration/docs/security-bulletins#gcp-2026-068)
 security bulletin and
 [Prepare for upcoming authorization changes](https://docs.cloud.google.com/application-integration/docs/prepare-for-authorization-changes).
 

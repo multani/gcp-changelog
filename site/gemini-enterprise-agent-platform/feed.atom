@@ -2,9 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-10-27T00:00:00+00:00</updated>
+  <updated>2026-10-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-28:change:0</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Use a single regional Agent Registry instance for Gemini Enterprise apps</strong></p>
+<p>For Gemini Enterprise apps, we recommend associating each Agent Gateway with a
+single regional Agent Registry instance in the same project and region as the
+gateway. Use the <code>us-central1</code> registry for <code>global</code> and <code>us</code> apps, and the
+<code>europe-west1</code> registry for <code>eu</code> apps.</p>
+<p>This note updates the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#September_09_2026">September 9,
+2026</a> entry.
+For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-agent-gateway#agent-registry">Register your agents and destination
+resources</a>.</p>]]></content>
+    <summary>For Gemini Enterprise apps, associate each Agent Gateway with a single regional Agent Registry instance. Use specific registries based on your app's region (e.g., us-central1 for US apps, europe-west1 for EU apps) to optimize performance and management.</summary>
+    <title>Change: Agent Registry Update for Gemini Enterprise</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-28:fixed:1</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.17.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Support bundle diagnostics</strong>: Introduce <code>cm support-bundle</code> to collect environment metadata, configuration policies, health reports, and session logs into a compressed archive for streamlined troubleshooting.</li>
+<li><strong>Plain output mode</strong>: Add the persistent <code>--plain</code> flag (configurable via the <code>CM_PLAIN</code> environment variable or <code>output.plain</code> in <code>config.yaml</code>) to suppress decorative emojis, ANSI escape sequences, and Unicode borders for compatibility with screen readers and CI/CD log pipelines.</li>
+<li><strong>Dedicated exit codes for setup failures</strong>: Assign distinct exit codes (such as code 10 for credential issues) to configuration and authentication failures, preventing CI/CD pipelines from confusing environment setup issues with security findings.</li>
+<li><strong>Tailored CI/CD credential guidance</strong>: Provide environment-specific authentication guidance when running inside automated CI/CD systems such as GitHub Actions, GitLab CI, Buildkite, and Jenkins instead of interactive login prompts.</li>
+<li><strong>Single-line JSONL statistics</strong>: Add the <code>--jsonl</code> flag to <code>cm stats</code> to output single-line JSON records with model and team attribution for seamless integration with Cloud Logging and log aggregation pipelines.</li>
+<li><strong>Granular sandbox and policy flags</strong>: Replace the overloaded <code>--unrestricted</code> flag with orthogonal flags (<code>--sandbox=false</code>) and configurable command policies to decouple container sandboxing from execution safety controls.</li>
+<li><strong>Sandbox configuration protections</strong>: Mount <code>.git/hooks</code>, <code>.git/config</code>, and <code>.codemender</code> read-only within writable execution sandboxes during <code>cm fix</code> and <code>cm verify</code> to prevent modifications to repository security policies.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Added a security warning when commands are executed with both sandbox isolation disabled and interactive approval skipped.</li>
+<li>Enforced <code>allowedRoots</code> path boundaries across host discovery and remediation file operations to prevent traversal via dangling symlinks.</li>
+<li>Supplied exact finding line ranges to remediation agents during <code>cm fix</code> to eliminate manual file scanning overhead.</li>
+<li>Updated <code>cm report import</code> to properly treat findings without location data as file-level findings rather than defaulting to the first line.</li>
+<li>Ensured <code>cm session cancel</code> routes requests to the session's original region regardless of local environment overrides.</li>
+<li>Fixed finding status tracking in <code>cm verify</code> so unexploitable verdicts update the local state database rather than leaving findings open.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender v0.17.0 introduces enhanced support bundle diagnostics, plain output mode for better CI/CD compatibility, and dedicated exit codes for setup failures. This release also refines CI/CD credential guidance, adds granular sandbox controls, and includes several bug fixes for improved reliability and security.</summary>
+    <title>Fixed: CodeMender updates: improved diagnostics, CI/CD integration, and bug fixes</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -89,6 +137,30 @@ edited images directly to a Cloud Storage bucket and receive the object URI in
       <name>Google Cloud</name>
     </author>
     <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-26:feature:2</id>
+    <published>2026-10-26T00:00:00+00:00</published>
+    <updated>2026-10-26T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS are Generally Available (GA)</strong></p>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-tts">Gemini 3.8 Flash TTS</a>
+and <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-lite-tts">Gemini 3.8 Flash-Lite
+TTS</a> are
+available in <a href="https://cloud.google.com/products#product-launch-stages">General Availability (GA)</a>
+in the <code>global</code> location and the <code>us</code> and <code>eu</code> multi-regions. The models support
+structured speaker and style metadata, inline vocal tags, multi-speaker
+dialogue, and streaming. <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-design">Voice
+design</a> and
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-replication">voice
+replication</a>
+capabilities remain available in Preview.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/overview">Generate speech with Gemini
+TTS</a>.</p>]]></content>
+    <summary>Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS have reached General Availability. These models offer advanced features like structured speaker and style metadata, inline vocal tags, multi-speaker dialogue, and streaming capabilities.</summary>
+    <title>Feature: Gemini 3.8 TTS models now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-26:feature:3</id>
     <published>2026-10-26T00:00:00+00:00</published>
     <updated>2026-10-26T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Semantic governance policies support more model providers</strong></p>

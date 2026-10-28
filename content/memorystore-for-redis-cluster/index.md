@@ -1,5 +1,12 @@
 # Memorystore for Redis Cluster
 
+## 2026-10-28
+
+### Feature
+
+The [basic token-based authentication](https://docs.cloud.google.com/memorystore/docs/cluster/manage-basic-auth) feature is [Generally Available](https://docs.cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-08-31
 
 ### Feature

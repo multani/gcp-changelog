@@ -1,6 +1,16 @@
 {
   "name": "Cloud Database Migration Service",
   "entries": {
+    "2026-10-28": [
+      {
+        "kind": "Feature",
+        "content": "Database Migration Service for homogeneous SQL Server migrations now supports\nDistributed Availability Group (DAG) migrations in general availability\n([GA](https://cloud.google.com/products#product-launch-stages)).\n\nWith DAG migrations, you can use gcloud CLI and Database Migration Service API\nto migrate databases from self-managed SQL Server\nEnterprise Edition instances directly to Cloud SQL for SQL Server over a private\nnetwork connection. DAG migrations don't require exporting backup or transaction\nlog files to Cloud Storage, and support post-promotion reverse replication for\nzero-data-loss failback.\n\nFor more information, see\n[About Distributed Availability Group (DAG) migrations](https://docs.cloud.google.com/database-migration/docs/sqlserver/dag-migration-overview) and\n[Migrate from self-managed SQL Server using Distributed Availability Groups](https://docs.cloud.google.com/database-migration/docs/sqlserver/dag-migration-guide).",
+        "summary": {
+          "title": "SQL Server DAG migrations now generally available",
+          "summary": "Database Migration Service now supports Distributed Availability Group (DAG) migrations for SQL Server in general availability. This allows for direct migration of databases from self-managed SQL Server Enterprise Edition to Cloud SQL for SQL Server over a private network, without needing Cloud Storage exports. DAG migrations also support zero-data-loss failback with post-promotion reverse replication."
+        }
+      }
+    ],
     "2026-10-26": [
       {
         "kind": "Feature",

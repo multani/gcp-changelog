@@ -1,5 +1,274 @@
 # Container Optimized OS
 
+## 2026-10-27
+
+### Change
+
+
+
+### cos-dev-138-20248-0-0
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.57](https://cos.googlesource.com/third_party/kernel/+/8d63d0a98e25398e4dda752bc9b925ab47532d8d ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/20248.0.0/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated the Linux kernel to v6.18.57.
+
+### Change
+
+Upgraded sys-apps/casfs to v0.1.24.
+
+### Feature
+
+Added KVM virtualization support for AMD CPUID faulting.
+
+### Feature
+
+Added nvidia-container-toolkit to ARM images.
+
+### Fixed
+
+Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.
+
+### Fixed
+
+Upgraded app-editors/vim to v9.2.1152, Upgraded app-editors/vim-core to v9.2.1152.
+
+### Fixed
+
+Upgraded app-misc/ca-certificates to v20260816.3.125. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Fixed
+
+Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.
+
+### Fixed
+
+Upgraded sys-libs/glibc to v2.41-r5.
+
+### Security
+
+Fixed CVE-2024-4741 in dev-libs/openssl.
+
+### Security
+
+Fixed CVE-2026-33186 in cri-tools.
+
+### Security
+
+Fixed CVE-2026-39830 in guest-agent.
+
+### Security
+
+Fixed CVE-2026-39831 in node-problem-detector.
+
+### Security
+
+Fixed CVE-2026-39831, CVE-2026-46595 in docker.
+
+### Security
+
+Fixed CVE-2026-39832, CVE-2026-46595 in kubernetes.
+
+### Security
+
+Fixed CVE-2026-39833 in nvidia-container-toolkit.
+
+### Security
+
+Fixed CVE-2026-42508, CVE-2026-39830, CVE-2026-39834 in google-guest-agent.
+
+### Security
+
+Fixed CVE-2026-46595, CVE-2026-39831 in google-osconfig-agent.
+
+### Security
+
+Fixed CVE-2026-46595, CVE-2026-39832 in cri-tools.
+
+### Security
+
+Fixed CVE-2026-5435 in sys-libs/glibc.
+
+### Security
+
+Fixed CVE-2026-82474 in app-admin/sudo.
+
+### Security
+
+Fixed CVE-2026-84445, CVE-2026-24051, CVE-2026-84304, CVE-2026-39831, CVE-2026-39829, CVE-2026-39834, CVE-2026-34986, CVE-2026-39835, CVE-2026-39832, CVE-2026-39827, CVE-2026-81870, CVE-2026-46598, CVE-2026-29181, CVE-2026-39830, CVE-2026-46595, CVE-2026-39828, CVE-2026-25680, CVE-2026-39833, CVE-2026-39883, CVE-2026-84303, CVE-2026-46597, CVE-2026-42508 in cos-extensions.
+
+### Security
+
+Fixed CVE-2026-99999 in the Linux kernel.
+
+### Security
+
+Upgraded dev-lang/go to v1.26.10. This fixes CVE-2026-111943.
+
+### Security
+
+Upgraded dev-lang/go to v1.26.5. This fixes CVE-2026-39822.
+
+### Security
+
+Upgraded dev-lang/go to v1.26.9. This fixes CVE-2026-94447.
+
+### Security
+
+Upgraded dev-lang/python to v3.13.15. This fixes CVE-2026-15308.
+
+### Security
+
+Upgraded dev-lang/python to v3.13.16. This fixes CVE-2026-19445.
+
+### Change
+
+
+
+### cos-125-19216-760-20
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/c0c0e54972faeecef0eb8728e9c1d6291f4f7dee ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.760.20/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated app-admin/google-guest-configs to v20261025.00.
+
+### Fixed
+
+Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN\_RSTAT.
+
+### Security
+
+Fixed CVE-2026-33186 in google-osconfig-agent.
+
+### Security
+
+Fixed CVE-2026-82474 in app-admin/sudo.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.epoll.max\_user\_watches: 1808562 -> 1808517
+* Changed: fs.fanotify.max\_user\_marks: 68416 -> 68412
+* Changed: fs.inotify.max\_user\_watches: 64192 -> 64189
+* Changed: kernel.threads-max: 63183 -> 63178
+* Changed: net.ipv4.tcp\_mem: 94020 125361 188040 -> 94017 125357 188034
+* Changed: net.ipv4.udp\_mem: 188040 250722 376080 -> 188034 250715 376068
+* Changed: user.max\_cgroup\_namespaces: 31591 -> 31589
+* Changed: user.max\_fanotify\_marks: 68416 -> 68412
+* Changed: user.max\_inotify\_watches: 64192 -> 64189
+* Changed: user.max\_ipc\_namespaces: 31591 -> 31589
+* Changed: user.max\_mnt\_namespaces: 31591 -> 31589
+* Changed: user.max\_net\_namespaces: 31591 -> 31589
+* Changed: user.max\_pid\_namespaces: 31591 -> 31589
+* Changed: user.max\_time\_namespaces: 31591 -> 31589
+* Changed: user.max\_user\_namespaces: 31591 -> 31589
+* Changed: user.max\_uts\_namespaces: 31591 -> 31589
+
+### Change
+
+
+
+### cos-129-19506-578-21
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/120d67cd4f74b312486d3b1efa79fde8fa440eaa ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.578.21/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated app-admin/google-guest-configs to v20261025.00.
+
+### Fixed
+
+Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN\_RSTAT.
+
+### Security
+
+Fixed CVE-2026-77214 in dev-libs/expat.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.epoll.max\_user\_watches: 1808562 -> 1808517
+* Changed: fs.fanotify.max\_user\_marks: 68416 -> 68412
+* Changed: fs.inotify.max\_user\_watches: 64192 -> 64189
+* Changed: kernel.threads-max: 63183 -> 63178
+* Changed: net.ipv4.tcp\_mem: 94020 125361 188040 -> 94017 125357 188034
+* Changed: net.ipv4.udp\_mem: 188040 250722 376080 -> 188034 250715 376068
+* Changed: user.max\_cgroup\_namespaces: 31591 -> 31589
+* Changed: user.max\_fanotify\_marks: 68416 -> 68412
+* Changed: user.max\_inotify\_watches: 64192 -> 64189
+* Changed: user.max\_ipc\_namespaces: 31591 -> 31589
+* Changed: user.max\_mnt\_namespaces: 31591 -> 31589
+* Changed: user.max\_net\_namespaces: 31591 -> 31589
+* Changed: user.max\_pid\_namespaces: 31591 -> 31589
+* Changed: user.max\_time\_namespaces: 31591 -> 31589
+* Changed: user.max\_user\_namespaces: 31591 -> 31589
+* Changed: user.max\_uts\_namespaces: 31591 -> 31589
+
+### Change
+
+
+
+### cos-121-18867-652-12
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.6.159](https://cos.googlesource.com/third_party/kernel/+/f32de83646bdc7b4c004477f6c4977ebd5b03cd7 ) | v27.5.1 | v2.0.10 | [See List](https://storage.googleapis.com/cos-tools/18867.652.12/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated app-admin/google-guest-configs to v20261025.00.
+
+### Security
+
+Fixed CVE-2026-33186 in google-osconfig-agent.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.epoll.max\_user\_watches: 1809051 -> 1809007
+* Changed: kernel.threads-max: 63204 -> 63199
+* Changed: net.ipv4.tcp\_mem: 94044 125395 188088 -> 94041 125391 188082
+* Changed: net.ipv4.udp\_mem: 188091 250790 376182 -> 188085 250783 376170
+* Changed: user.max\_cgroup\_namespaces: 31602 -> 31599
+* Changed: user.max\_ipc\_namespaces: 31602 -> 31599
+* Changed: user.max\_mnt\_namespaces: 31602 -> 31599
+* Changed: user.max\_net\_namespaces: 31602 -> 31599
+* Changed: user.max\_pid\_namespaces: 31602 -> 31599
+* Changed: user.max\_time\_namespaces: 31602 -> 31599
+* Changed: user.max\_user\_namespaces: 31602 -> 31599
+* Changed: user.max\_uts\_namespaces: 31602 -> 31599
+
+### Change
+
+
+
+### cos-beta-133-19999-44-170
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.55](https://cos.googlesource.com/third_party/kernel/+/90c4c51012dc5bb5d116a470e49476dd9dd3998c ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/19999.44.170/lakitu/gpu_driver_versions.textproto) |
+
+### Change
+
+Updated app-admin/google-guest-configs to v20261025.00.
+
+---
 ## 2026-10-22
 
 ### Change
@@ -544,6 +813,10 @@ Upgraded sys-apps/pv to v1.12.0.
 ### Fixed
 
 Upgraded sys-apps/xemu to v0.0.11.
+
+### Security
+
+Fixed CVE-2026-18220 in sys-libs/binutils-libs.
 
 ### Security
 

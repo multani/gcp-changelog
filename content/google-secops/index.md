@@ -1,5 +1,19 @@
 # Google SecOps
 
+## 2026-10-28
+
+### Announcement
+
+**Final shutdown of legacy managed BigQuery export datasets (chronicle-tla) for non-Enterprise+ customers**
+
+Following the [March 26, 2025 deprecation announcement](https://docs.cloud.google.com/chronicle/docs/release-notes#March_26_2025), Google SecOps is completing the final shutdown of legacy Google-managed BigQuery datasets and API keys associated with the `chronicle-tla` Google Cloud project:
+
+* **What is changing:** Data exports to legacy Google-managed BigQuery datasets under the `chronicle-tla` project are being permanently turned off, and the associated managed datasets and API keys are being decommissioned.
+* **Who is impacted:** This shutdown applies only to non-Enterprise+ customers still provisioned on legacy `chronicle-tla` Google-managed BigQuery datasets (including tenants whose temporary transition exceptions expired in September 2025). Enterprise+ customers and customers using Bring Your Own BigQuery (BYOBQ) exports to customer-managed Google Cloud projects are not impacted.
+* **When:** Decommissioning begins on October 28, 2026.
+* **Action required:** To retain BigQuery access to Google SecOps data, configure [export to a customer-managed BigQuery project (BYOBQ)](https://docs.cloud.google.com/chronicle/docs/reports/export-to-customer-managed-project) or contact your account team to upgrade to Enterprise+.
+
+---
 ## 2026-10-25
 
 ### Feature

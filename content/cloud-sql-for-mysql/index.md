@@ -1,5 +1,32 @@
 # Cloud SQL for MySQL
 
+## 2026-10-28
+
+### Feature
+
+[Managed replica indexes](https://docs.cloud.google.com/sql/docs/mysql/replication/read-replica-indexes#managed-replica-indexes)
+for Cloud SQL for MySQL are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). This feature
+lets you automatically retain and restore secondary indexes on read replica
+instances when Cloud SQL re-creates a replica.
+
+Previously, re-creating a read replica deleted custom secondary indexes because
+primary backups don't have replica-only index definitions. With managed replica
+indexes, Cloud SQL tracks secondary index metadata on the primary instance,
+replicates this metadata to read replicas, and automatically rebuilds secondary
+indexes after replica re-creation.
+
+Managed replica indexes are supported on instances that are
+running Cloud SQL for MySQL 8.0 or later,
+Cloud SQL Enterprise edition or Cloud SQL Enterprise Plus edition,
+and maintenance version `R20260726.00_05` or later.
+
+For more information, see
+[Read replica indexes overview](https://docs.cloud.google.com/sql/docs/mysql/replication/read-replica-indexes)
+and
+[Create and manage read replica indexes](https://docs.cloud.google.com/sql/docs/mysql/replication/create-manage-read-replica-indexes).
+
+---
 ## 2026-10-23
 
 ### Security

@@ -1,5 +1,45 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-10-28
+
+### Change
+
+**Use a single regional Agent Registry instance for Gemini Enterprise apps**
+
+For Gemini Enterprise apps, we recommend associating each Agent Gateway with a
+single regional Agent Registry instance in the same project and region as the
+gateway. Use the `us-central1` registry for `global` and `us` apps, and the
+`europe-west1` registry for `eu` apps.
+
+This note updates the [September 9,
+2026](https://docs.cloud.google.com/gemini-enterprise-agent-platform/release-notes#September_09_2026) entry.
+For more information, see [Register your agents and destination
+resources](https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/set-up-agent-gateway#agent-registry).
+
+### Fixed
+
+**CodeMender updates (v0.17.0)**
+
+This release introduces updates to CodeMender:
+
+* **Support bundle diagnostics**: Introduce `cm support-bundle` to collect environment metadata, configuration policies, health reports, and session logs into a compressed archive for streamlined troubleshooting.
+* **Plain output mode**: Add the persistent `--plain` flag (configurable via the `CM_PLAIN` environment variable or `output.plain` in `config.yaml`) to suppress decorative emojis, ANSI escape sequences, and Unicode borders for compatibility with screen readers and CI/CD log pipelines.
+* **Dedicated exit codes for setup failures**: Assign distinct exit codes (such as code 10 for credential issues) to configuration and authentication failures, preventing CI/CD pipelines from confusing environment setup issues with security findings.
+* **Tailored CI/CD credential guidance**: Provide environment-specific authentication guidance when running inside automated CI/CD systems such as GitHub Actions, GitLab CI, Buildkite, and Jenkins instead of interactive login prompts.
+* **Single-line JSONL statistics**: Add the `--jsonl` flag to `cm stats` to output single-line JSON records with model and team attribution for seamless integration with Cloud Logging and log aggregation pipelines.
+* **Granular sandbox and policy flags**: Replace the overloaded `--unrestricted` flag with orthogonal flags (`--sandbox=false`) and configurable command policies to decouple container sandboxing from execution safety controls.
+* **Sandbox configuration protections**: Mount `.git/hooks`, `.git/config`, and `.codemender` read-only within writable execution sandboxes during `cm fix` and `cm verify` to prevent modifications to repository security policies.
+* **Bug fixes**:
+  + Added a security warning when commands are executed with both sandbox isolation disabled and interactive approval skipped.
+  + Enforced `allowedRoots` path boundaries across host discovery and remediation file operations to prevent traversal via dangling symlinks.
+  + Supplied exact finding line ranges to remediation agents during `cm fix` to eliminate manual file scanning overhead.
+  + Updated `cm report import` to properly treat findings without location data as file-level findings rather than defaulting to the first line.
+  + Ensured `cm session cancel` routes requests to the session's original region regardless of local environment overrides.
+  + Fixed finding status tracking in `cm verify` so unexploitable verdicts update the local state database rather than leaving findings open.
+
+For more information, see the [CodeMender documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender).
+
+---
 ## 2026-10-27
 
 ### Feature
@@ -60,6 +100,25 @@ for [Gemini Nano Banana 2.1](https://docs.cloud.google.com/gemini-enterprise-age
 edited images directly to a Cloud Storage bucket and receive the object URI in
 `fileData.fileUri` instead of inline bytes. For more information, see
 [Save generated images to Cloud Storage](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/image-generation#save-generated-images-cloud-storage).
+
+### Feature
+
+**Gemini 3.8 Flash TTS and Gemini 3.8 Flash-Lite TTS are Generally Available (GA)**
+
+[Gemini 3.8 Flash TTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-tts)
+and [Gemini 3.8 Flash-Lite
+TTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash-lite-tts) are
+available in [General Availability (GA)](https://cloud.google.com/products#product-launch-stages)
+in the `global` location and the `us` and `eu` multi-regions. The models support
+structured speaker and style metadata, inline vocal tags, multi-speaker
+dialogue, and streaming. [Voice
+design](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-design) and
+[voice
+replication](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/voice-replication)
+capabilities remain available in Preview.
+
+For more information, see [Generate speech with Gemini
+TTS](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/text-to-speech/overview).
 
 ### Feature
 

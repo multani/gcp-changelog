@@ -1,5 +1,13 @@
 # Access Approval
 
+## 2026-10-16
+
+### Feature
+
+Service connectivity automation is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)).
+
+---
 ## 2026-10-09
 
 ### Feature

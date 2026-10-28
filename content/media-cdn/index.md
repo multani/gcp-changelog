@@ -1,5 +1,21 @@
 # Media CDN
 
+## 2026-10-28
+
+### Feature
+
+Media CDN supports EU data residency (Private GA), along with a new Europe
+flexible origin shielding region.
+
+Media CDN supports EU Data Residency in Private GA. This feature ensures that
+customer content and end-user data are processed within the EU. This feature
+is available via support allowlist.
+
+Media CDN supports flexible origin shielding in Frankfurt (`europe-west3`).
+This feature is **Generally Available**. For more information,
+see [Flexible shielding](https://docs.cloud.google.com/media-cdn/docs/origins#flex-shielding).
+
+---
 ## 2026-06-12
 
 ### Feature

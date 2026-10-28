@@ -2,9 +2,137 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: AlloyDB for PostgreSQL</title>
   <subtitle>Changelog for Google Cloud product: AlloyDB for PostgreSQL</subtitle>
-  <updated>2026-10-27T00:00:00+00:00</updated>
+  <updated>2026-10-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/alloydb-for-postgresql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-10-28:announcement:0</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following AlloyDB AI and vector search features and improvements are
+generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>):</p>
+<ul>
+<li>The <code>alloydb_scann</code> extension supports four-level tree (4LT) ScaNN vector
+  indexes on PostgreSQL 17 and later, providing support for tables with up to
+  10 billion vector rows. For more information, see
+  <a href="https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index#create-scann-index-manual">Four-level ScaNN tree indexes</a>.</li>
+<li>4LT ScaNN vector indexes support automatic index maintenance. For more
+  information, see <a href="https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index">Create a ScaNN index</a>
+  and
+  <a href="https://docs.cloud.google.com/alloydb/docs/ai/maintain-vector-indexes#maintain-index-automatically">Maintain vector indexes automatically</a>.</li>
+<li>You can enable streaming functionality for ScaNN vector indexes by setting
+  the <code>scann.satisfy_limit</code> parameter to <code>relaxed_order</code>. When enabled, the
+  vector scan continues searching through additional leaf partitions until it
+  finds enough results to satisfy the <code>LIMIT</code> clause of your query, improving
+  recall on filtered searches. Additionally, you can enable this feature for
+  parallel process scans by setting the <code>scann.enable_parallel_satisfy_limit</code>
+  database flag to <code>on</code>. For more information, see
+  <a href="https://docs.cloud.google.com/alloydb/docs/reference/ai/scann-index-reference#scann-satisfy-limit">ScaNN index reference</a>
+  and
+  <a href="https://docs.cloud.google.com/alloydb/docs/ai/best-practices-tuning-scann#improve-recall-for-filtered-searches">Best practices for tuning ScaNN indexes</a>.</li>
+<li>Vector assist simplifies the deployment and management of your AlloyDB
+  vector workloads by helping you set up production-ready vector search
+  capabilities, including embedding generation, query optimization, and index
+  creation for vector types such as Hierarchical Navigable Small World (HNSW).
+  For more information, see
+  <a href="https://docs.cloud.google.com/alloydb/docs/ai/vector-assist-overview">Vector assist overview</a>.</li>
+<li>For AlloyDB for PostgreSQL instances running PostgreSQL 17 and later, the
+  maximum supported value for <code>num_leaves</code> when building ScaNN vector indexes
+  is increased from 30,000,000 to 104,857,600. For more information, see
+  <a href="https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index">Create a ScaNN index</a> and
+  <a href="https://docs.cloud.google.com/alloydb/docs/reference/ai/scann-index-reference">ScaNN index reference</a>.</li>
+<li>
+<p>You can use the
+  <a href="https://docs.cloud.google.com/alloydb/docs/reference/extensions#external_search_fdw"><code>external_search_fdw</code></a>
+  extension to connect to external search clusters and query their data
+  directly from your database using the following search sources:</p>
+</li>
+<li>
+<p><a href="https://docs.cloud.google.com/alloydb/docs/elastic-search">Elasticsearch</a></p>
+</li>
+<li><a href="https://docs.cloud.google.com/alloydb/docs/solr-search">Solr</a></li>
+<li><a href="https://docs.cloud.google.com/alloydb/docs/opensearch">OpenSearch</a></li>
+<li>AlloyDB supports the <code>rum</code> extension for high-performance full-text search
+  operations on PostgreSQL 17 and earlier. The <code>rum</code> extension extends
+  standard GIN indexes by storing positional information directly in the
+  index, letting you perform faster phrase searches and relevance ranking
+  without accessing the table data. For more information, see
+  <a href="https://docs.cloud.google.com/alloydb/docs/ai/create-rum-index">Create and manage a RUM index</a>.</li>
+</ul>]]></content>
+    <summary>New features for AlloyDB AI and vector search are now generally available, including enhanced ScaNN vector indexes supporting up to 10 billion rows and improved index maintenance. Vector assist simplifies workload management, and new extensions enable integration with external search clusters and high-performance full-text search.</summary>
+    <title>Announcement: AlloyDB AI and Vector Search Enhancements Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-10-28:fixed:1</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>AlloyDB provides more accurate memory usage estimation and prevents
+out-of-memory (OOM) errors when you build a ScaNN
+<a href="https://docs.cloud.google.com/alloydb/docs/ai/create-scann-index#create-scann-index-manual">four-level tree index</a>.
+This feature is in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. This update
+improves the stability of index builds by enforcing memory limits and
+improving memory estimation under constrained conditions.</p>]]></content>
+    <summary>AlloyDB now offers more accurate memory usage estimation for ScaNN indexes, preventing out-of-memory errors. This update enhances the stability of index builds by enforcing memory limits and improving estimation under constrained conditions, with the feature currently in Preview.</summary>
+    <title>Fixed: Improved memory management for ScaNN indexes</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-10-28:feature:2</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Identity and Access Management (IAM) group authentication is generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>) for new and
+existing AlloyDB clusters running PostgreSQL 15 and later. With
+IAM group authentication, you can manage database roles and
+privileges at the group level across primary instances and read pool instances,
+including first-time sign-ins directly to read pool instances. You can also
+preserve individual and IAM group user configurations when you
+migrate from a Cloud SQL for PostgreSQL backup.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/alloydb/docs/database-users/iam-authentication">IAM database authentication
+overview</a> and
+<a href="https://docs.cloud.google.com/alloydb/docs/database-users/manage-iam-auth">Manage IAM
+authentication</a>.</p>]]></content>
+    <summary>IAM group authentication is now generally available for AlloyDB clusters with PostgreSQL 15+. This feature simplifies managing database roles and privileges at the group level across primary and read pool instances, enabling direct sign-ins to read pools and easier migration from Cloud SQL for PostgreSQL backups. You can now manage user access more efficiently across your AlloyDB deployments.</summary>
+    <title>Feature: IAM Group Authentication Now Available for AlloyDB</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:alloydb-for-postgresql:2026-10-28:security:3</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In response to <a href="https://docs.cloud.google.com/support/bulletins#gcp-2026-071">GCP-2026-071</a>, Google is
+updating AlloyDB managed components. The fix to the certificate store is shipped
+in a new maintenance version that AlloyDB applies during
+<a href="https://docs.cloud.google.com/alloydb/docs/maintenance#timing">scheduled maintenance</a>, so you don't need to
+manually update AlloyDB managed instances. You can also apply the fix by
+<a href="https://docs.cloud.google.com/alloydb/docs/self-service-maintenance">performing self-service maintenance</a>.</p>
+<p>Depending on how you connect to AlloyDB, take the following actions:</p>
+<ul>
+<li>If you use the AlloyDB Auth Proxy, then upgrade it to
+  <a href="https://docs.cloud.google.com/alloydb/docs/auth-proxy/connect#install">v1.17.2 or later</a>. If you run the
+  standalone proxy binary, then also update the host's certificate authority
+  (CA) certificates.</li>
+<li>If you use the
+  <a href="https://docs.cloud.google.com/alloydb/docs/connect-language-connectors">AlloyDB Language Connectors</a>, then
+  update the language runtime and operating system CA certificates (for example,
+  Go 1.26.10 or 1.27.3 or later).</li>
+</ul>]]></content>
+    <summary>A security update is being applied to AlloyDB managed components to address a certificate store issue. This update will be applied during scheduled maintenance, or can be initiated through self-service maintenance. Users connecting via the AlloyDB Auth Proxy or Language Connectors should ensure their client components and CA certificates are updated accordingly.</summary>
+    <title>Security: AlloyDB Security Update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

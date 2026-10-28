@@ -2,9 +2,37 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-10-23T00:00:00+00:00</updated>
+  <updated>2026-10-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-10-28:feature:0</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><a href="https://docs.cloud.google.com/sql/docs/mysql/replication/read-replica-indexes#managed-replica-indexes">Managed replica indexes</a>
+for Cloud SQL for MySQL are generally available
+(<a href="https://cloud.google.com/products#product-launch-stages">GA</a>). This feature
+lets you automatically retain and restore secondary indexes on read replica
+instances when Cloud SQL re-creates a replica.</p>
+<p>Previously, re-creating a read replica deleted custom secondary indexes because
+primary backups don't have replica-only index definitions. With managed replica
+indexes, Cloud SQL tracks secondary index metadata on the primary instance,
+replicates this metadata to read replicas, and automatically rebuilds secondary
+indexes after replica re-creation.</p>
+<p>Managed replica indexes are supported on instances that are
+running Cloud SQL for MySQL 8.0 or later,
+Cloud SQL Enterprise edition or Cloud SQL Enterprise Plus edition,
+and maintenance version <code>R20260726.00_05</code> or later.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/sql/docs/mysql/replication/read-replica-indexes">Read replica indexes overview</a>
+and
+<a href="https://docs.cloud.google.com/sql/docs/mysql/replication/create-manage-read-replica-indexes">Create and manage read replica indexes</a>.</p>]]></content>
+    <summary>Managed replica indexes for Cloud SQL for MySQL are now generally available. This feature ensures that secondary indexes are automatically retained and restored on read replica instances after re-creation, simplifying index management and improving data consistency.</summary>
+    <title>Feature: Replica Indexes Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

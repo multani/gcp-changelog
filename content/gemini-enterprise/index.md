@@ -1,5 +1,22 @@
 # Gemini Enterprise
 
+## 2026-10-28
+
+### Feature
+
+**Gemini Enterprise: Support for Brazil (`br`) region (GA with allowlist)**
+
+You can use the Gemini Enterprise app in the Brazil (`br`) in-country region
+with at-rest data residency (DRZ) and machine learning processing (MLP) in
+region.
+
+This location is available in GA with allowlist. To get access to this location
+for use with Gemini Enterprise, contact your Google account team.
+
+For more information, see [Data residency for Gemini
+Enterprise](https://docs.cloud.google.com/gemini/enterprise/docs/locations#in-country_regions).
+
+---
 ## 2026-10-27
 
 ### Feature

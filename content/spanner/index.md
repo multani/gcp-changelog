@@ -1,5 +1,17 @@
 # Spanner
 
+## 2026-10-27
+
+### Feature
+
+Spanner supports the `ON DELETE SET NULL` foreign key action for GoogleSQL and
+PostgreSQL dialects. Use `ON DELETE SET NULL` when you delete a referenced row
+to set the referencing columns to `NULL`.
+
+For more information, see [Foreign key actions](https://docs.cloud.google.com/spanner/docs/foreign-keys/overview#how-to-define-foreign-key-action)
+and [Create and manage foreign key relationships](https://docs.cloud.google.com/spanner/docs/foreign-keys/how-to).
+
+---
 ## 2026-10-20
 
 ### Feature

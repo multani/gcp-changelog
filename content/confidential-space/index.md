@@ -1,5 +1,22 @@
 # Confidential Space
 
+## 2026-10-28
+
+### Announcement
+
+A new Confidential Space image (261001) is available. This image removes
+compromised CA certificates from the OS trust store. See the
+[security bulletin](https://docs.cloud.google.com/confidential-computing/confidential-space/docs/security-bulletins#gcp-2026-071)
+for more details.
+
+This image also adds support for running workload containers as a non-root user.
+Workload authors can require non-root execution with the
+`tee.launch_policy.nonroot_container` launch policy, and workload operators can
+enable it with the `tee-nonroot-container` metadata variable. For more
+information, see
+[Non-root container execution](https://docs.cloud.google.com/confidential-computing/confidential-space/docs/create-customize-workloads#non-root-container-execution).
+
+---
 ## 2026-10-19
 
 ### Announcement

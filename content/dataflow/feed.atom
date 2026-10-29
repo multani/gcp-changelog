@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dataflow</title>
   <subtitle>Changelog for Google Cloud product: Dataflow</subtitle>
-  <updated>2026-10-21T00:00:00+00:00</updated>
+  <updated>2026-10-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dataflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dataflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dataflow:2026-10-29:feature:0</id>
+    <published>2026-10-29T00:00:00+00:00</published>
+    <updated>2026-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Dataflow has added the following features to tune horizontal
+autoscaling for Streaming Engine jobs:</p>
+<ul>
+<li>Latency tiers: You can configure the backlog threshold by choosing a latency
+  tier (<code>low_latency</code>, <code>medium_latency</code>, or <code>high_latency</code>), allowing you to
+  configure the autoscaler's sensitivity to backlog duration and balance latency
+  requirements with resource costs. For more information, see
+  <a href="https://docs.cloud.google.com/dataflow/docs/guides/tune-horizontal-autoscaling#latency-tier">Set the latency tier</a>.</li>
+<li>Autoscaling schedules: You can configure recurring autoscaling schedules
+  to automatically apply parameter overrides—such as minimum and maximum
+  workers, worker utilization hints, or latency tiers—during specific time
+  windows. For more information, see
+  <a href="https://docs.cloud.google.com/dataflow/docs/guides/tune-horizontal-autoscaling#scheduled-autoscaling">Schedule autoscaling changes</a>.</li>
+</ul>
+<p>You can configure these features when you create a job or update them while the
+job is running.</p>]]></content>
+    <summary>Dataflow now offers enhanced controls for horizontal autoscaling in Streaming Engine jobs. You can now set latency tiers to manage backlog thresholds and configure autoscaling schedules for specific time windows, providing more flexibility in balancing performance and cost.</summary>
+    <title>Feature: New Dataflow Autoscaling Controls</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,12 @@
 # Anti Money Laundering AI
 
+## 2026-10-29
+
+### Announcement
+
+New minor engine version released for the retail line of business within the `v004.011` version line (`aml-retail.default.v004.011.202610-000`). This version extends support for the major engine version and includes no significant changes compared to the previous minor version.
+
+---
 ## 2026-10-14
 
 ### Announcement

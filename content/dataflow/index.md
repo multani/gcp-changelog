@@ -1,5 +1,27 @@
 # Dataflow
 
+## 2026-10-29
+
+### Feature
+
+Dataflow has added the following features to tune horizontal
+autoscaling for Streaming Engine jobs:
+
+* Latency tiers: You can configure the backlog threshold by choosing a latency
+  tier (`low_latency`, `medium_latency`, or `high_latency`), allowing you to
+  configure the autoscaler's sensitivity to backlog duration and balance latency
+  requirements with resource costs. For more information, see
+  [Set the latency tier](https://docs.cloud.google.com/dataflow/docs/guides/tune-horizontal-autoscaling#latency-tier).
+* Autoscaling schedules: You can configure recurring autoscaling schedules
+  to automatically apply parameter overrides—such as minimum and maximum
+  workers, worker utilization hints, or latency tiers—during specific time
+  windows. For more information, see
+  [Schedule autoscaling changes](https://docs.cloud.google.com/dataflow/docs/guides/tune-horizontal-autoscaling#scheduled-autoscaling).
+
+You can configure these features when you create a job or update them while the
+job is running.
+
+---
 ## 2026-10-21
 
 ### Feature

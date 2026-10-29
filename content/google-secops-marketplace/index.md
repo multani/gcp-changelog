@@ -1,5 +1,114 @@
 # Google SecOps Marketplace
 
+## 2026-10-28
+
+### Feature
+
+**SAP ERP**: Version 1.0
+
+* New **SAP ERP** integration.
+
+### Feature
+
+**Google Threat Intelligence**: Version 23.0
+
+* The following new action has been added:
+
+  + **Ask Threat Intelligence Agent**
+
+### Change
+
+**Microsoft Graph Mail Delegated**: Version 27.0
+
+* Fixed an issue where overflowed alerts were skipped without saving their IDs
+  or marking the emails as read, preventing infinite reprocessing loops and state
+  loss in the following connector:
+
+  + **Microsoft Graph Mail Delegated Connector**
+
+### Change
+
+**Tools**: Version 85.0
+
+* Fixed an issue where environment names containing ampersands (`&`) weren't
+  properly filtered in the following action:
+
+  + **Get Integration Instances**
+
+### Change
+
+**Wiz**: Version 11.0
+
+* Fixed inbound and outbound closure reason mappings between Wiz and Google
+  SecOps in the following job:
+
+  + **Wiz and Google SecOps Bi-directional Sync Job**
+* Updated predefined widgets in the following actions:
+
+  + **Add Comment To Issue**
+  + **Get Blue Agent Analysis**
+  + **Get Issue Details**
+  + **Ignore Issue**
+  + **List Resource Vulnerability Findings**
+  + **Reopen Issue**
+  + **Resolve Issue**
+
+### Change
+
+**Microsoft Graph Mail**: Version 50.0
+
+* Fixed an issue where overflowed alerts were skipped without saving their IDs
+  or marking the emails as read, preventing infinite reprocessing loops and state
+  loss in the following connector:
+
+  + **Microsoft Graph Mail Connector**
+
+### Change
+
+**Google Chronicle**: Version 99.0
+
+* Fixed an issue where the connector could stop ingesting alerts when composite
+  detections failed to load or pagination did not progress in the following
+  connector:
+
+  + **Google Chronicle - Chronicle Alerts Connector**
+
+### Change
+
+**Okta**: Version 19.0
+
+* **Integration**: Updated OAuth authentication scopes to support user
+  management actions.
+
+### Change
+
+**Microsoft 365 Defender**: Version 34.0
+
+* Added the **Time Frame**, **Start Time**, and **End Time** parameters to
+  support time-based query filtering in the following action:
+
+  + **Execute Custom Query**
+
+---
+## 2026-10-24
+
+### Change
+
+**GitSync**: Version 54.0
+
+* (REGRESSIVE) **Integration**: Reverted the Chronicle API refactoring
+  introduced in version 53.0. The integration code is restored to version 52.0.
+
+  **Caution:** All deployments must run on version 54.0 or version 52.0.
+
+  If
+  you're currently on version 53.0, roll back to version 52.0 or update
+  to version 54.0, and point the **Branch** parameter back to the previous
+  repository branch.
+
+  For instructions, see [Version 53.0 rollback](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#version-54-rollback-guidance).
+
+---
 ## 2026-10-21
 
 ### Feature
@@ -150,14 +259,15 @@
 
 ### Change
 
-**Gitsync**: Version 53.0
+**GitSync**: Version 53.0
 
 * (REGRESSIVE) **Integration**: Updated to support the latest Chronicle API.
 
-  **Important:** Existing users **must** migrate their repository branch and
-  re-export their content after updating.
+  **Important:** **Rolled back in version 54.0.** Due to known synchronization issues
+  in version 53.0, do not use version 53.0. Roll back to **version 52.0** or
+  update to **version 54.0**, which restores the stable version 52.0 baseline.
 
-  For instructions, see [Chronicle API-enabled environment migration](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#chronicle-api-enabled-environment-migration).
+  For instructions, see [Version 53.0 rollback and version 52.0 / 54.0 compatibility](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#version-54-rollback-guidance).
 
 ---
 ## 2026-09-30

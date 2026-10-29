@@ -1,5 +1,20 @@
 # SAP on Google Cloud
 
+## 2026-10-29
+
+### Announcement
+
+**ABAP SDK for Google Cloud version 1.15 (On-premises or any cloud edition)**
+
+Version 1.15 of the on-premises or any cloud edition of the ABAP SDK for Google
+Cloud is generally available (GA). This version enhances binary data handling to
+let you download archived `.msg` files and other binary formats without applying
+character decoding when you use Cloud Storage as a content repository for SAP.
+
+For more information, see
+[What's new with the on-premises or any cloud edition of the ABAP SDK for Google Cloud](https://docs.cloud.google.com/sap/docs/abap-sdk/on-premises-or-any-cloud/whats-new#version-1-15).
+
+---
 ## 2026-09-29
 
 ### Announcement

@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Confidential Space</title>
   <subtitle>Changelog for Google Cloud product: Confidential Space</subtitle>
-  <updated>2026-10-19T00:00:00+00:00</updated>
+  <updated>2026-10-28T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:confidential-space</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/confidential-space/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:confidential-space:2026-10-28:announcement:0</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>A new Confidential Space image (261001) is available. This image removes
+compromised CA certificates from the OS trust store. See the
+<a href="https://docs.cloud.google.com/confidential-computing/confidential-space/docs/security-bulletins#gcp-2026-071">security bulletin</a>
+for more details.</p>
+<p>This image also adds support for running workload containers as a non-root user.
+Workload authors can require non-root execution with the
+<code>tee.launch_policy.nonroot_container</code> launch policy, and workload operators can
+enable it with the <code>tee-nonroot-container</code> metadata variable. For more
+information, see
+<a href="https://docs.cloud.google.com/confidential-computing/confidential-space/docs/create-customize-workloads#non-root-container-execution">Non-root container execution</a>.</p>]]></content>
+    <summary>A new Confidential Space image (261001) is now available. This update removes compromised CA certificates and adds support for running workload containers as a non-root user, enhancing security and flexibility. Refer to the security bulletin for more details on these changes.</summary>
+    <title>Announcement: New Confidential Space image released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

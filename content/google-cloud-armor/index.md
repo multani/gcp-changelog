@@ -1,5 +1,18 @@
 # Google Cloud Armor
 
+## 2026-10-27
+
+### Feature
+
+Cloud Armor supports advanced match conditions to include attributes for
+inspecting request body content and parameters. This lets you write
+custom CEL rules to filter traffic based on raw body content, structured data
+(JSON, Form Data, GraphQL), and query parameters. For more information, see
+[Configure custom rules language
+attributes](https://docs.cloud.google.com/armor/docs/rules-language-reference). This feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-19
 
 ### Security

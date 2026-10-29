@@ -1,6 +1,90 @@
 {
   "name": "Google SecOps Marketplace",
   "entries": {
+    "2026-10-28": [
+      {
+        "kind": "Feature",
+        "content": "**SAP ERP**: Version 1.0\n\n* New **SAP ERP** integration.",
+        "summary": {
+          "title": "New SAP ERP integration",
+          "summary": "We are excited to announce the release of our new SAP ERP integration, version 1.0. This new feature allows for seamless connectivity with your SAP ERP system."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Google Threat Intelligence**: Version 23.0\n\n* The following new action has been added:\n\n  + **Ask Threat Intelligence Agent**",
+        "summary": {
+          "title": "New Threat Intelligence Agent Action",
+          "summary": "Version 23.0 of Google Threat Intelligence introduces a new 'Ask Threat Intelligence Agent' action. This enhancement allows users to interact directly with the intelligence agent for more dynamic threat analysis."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail Delegated**: Version 27.0\n\n* Fixed an issue where overflowed alerts were skipped without saving their IDs\n  or marking the emails as read, preventing infinite reprocessing loops and state\n  loss in the following connector:\n\n  + **Microsoft Graph Mail Delegated Connector**",
+        "summary": {
+          "title": "Mail Delegated Connector Update",
+          "summary": "Version 27.0 of the Mail Delegated Connector has been released. This update resolves an issue where overflowed alerts were skipped, ensuring proper saving of IDs and marking emails as read to prevent reprocessing loops and state loss."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Tools**: Version 85.0\n\n* Fixed an issue where environment names containing ampersands (`&`) weren't\n  properly filtered in the following action:\n\n  + **Get Integration Instances**",
+        "summary": {
+          "title": "Environment name filter fix",
+          "summary": "Version 85.0 of the tools has been released. This update resolves an issue where environment names with ampersands were not correctly filtered in the Get Integration Instances action."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Wiz**: Version 11.0\n\n* Fixed inbound and outbound closure reason mappings between Wiz and Google\n  SecOps in the following job:\n\n  + **Wiz and Google SecOps Bi-directional Sync Job**\n* Updated predefined widgets in the following actions:\n\n  + **Add Comment To Issue**\n  + **Get Blue Agent Analysis**\n  + **Get Issue Details**\n  + **Ignore Issue**\n  + **List Resource Vulnerability Findings**\n  + **Reopen Issue**\n  + **Resolve Issue**",
+        "summary": {
+          "title": "Wiz Integration Update",
+          "summary": "Version 11.0 of Wiz includes fixes for closure reason mappings in the Wiz and Google SecOps Bi-directional Sync Job. Additionally, predefined widgets have been updated across several actions to enhance issue management and analysis."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft Graph Mail**: Version 50.0\n\n* Fixed an issue where overflowed alerts were skipped without saving their IDs\n  or marking the emails as read, preventing infinite reprocessing loops and state\n  loss in the following connector:\n\n  + **Microsoft Graph Mail Connector**",
+        "summary": {
+          "title": "Mail Connector Update",
+          "summary": "An update to the Microsoft Graph Mail Connector (v50.0) resolves an issue with overflowed alerts being skipped. This fix prevents infinite reprocessing loops and state loss by ensuring alerts are saved and emails are marked as read."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Google Chronicle**: Version 99.0\n\n* Fixed an issue where the connector could stop ingesting alerts when composite\n  detections failed to load or pagination did not progress in the following\n  connector:\n\n  + **Google Chronicle - Chronicle Alerts Connector**",
+        "summary": {
+          "title": "Chronicle Version 99.0 Update",
+          "summary": "Version 99.0 of Chronicle includes a fix for an issue that could cause alert ingestion to stop. This resolves a problem related to composite detections failing to load or pagination not progressing in the Chronicle Alerts Connector."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Okta**: Version 19.0\n\n* **Integration**: Updated OAuth authentication scopes to support user\n  management actions.",
+        "summary": {
+          "title": "Okta Version 19.0 Released",
+          "summary": "Okta version 19.0 is now available, featuring updated OAuth authentication scopes. These updates enhance support for user management actions within the Okta integration."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "**Microsoft 365 Defender**: Version 34.0\n\n* Added the **Time Frame**, **Start Time**, and **End Time** parameters to\n  support time-based query filtering in the following action:\n\n  + **Execute Custom Query**",
+        "summary": {
+          "title": "New time-based filtering for custom queries",
+          "summary": "Version 34.0 of Microsoft 365 Defender introduces new parameters for time-based filtering in custom queries. You can now specify Start Time and End Time to refine your searches."
+        }
+      }
+    ],
+    "2026-10-24": [
+      {
+        "kind": "Change",
+        "content": "**GitSync**: Version 54.0\n\n* (REGRESSIVE) **Integration**: Reverted the Chronicle API refactoring\n  introduced in version 53.0. The integration code is restored to version 52.0.\n\n  **Caution:** All deployments must run on version 54.0 or version 52.0.\n\n  If\n  you're currently on version 53.0, roll back to version 52.0 or update\n  to version 54.0, and point the **Branch** parameter back to the previous\n  repository branch.\n\n  For instructions, see [Version 53.0 rollback](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#version-54-rollback-guidance).",
+        "summary": {
+          "title": "GitSync Version 54.0",
+          "summary": "GitSync version 54.0 reverts the Chronicle API refactoring from version 53.0, restoring integration code to version 52.0. Deployments must use either version 54.0 or 52.0. Users on version 53.0 should roll back to 52.0 or update to 54.0 and reconfigure the Branch parameter."
+        }
+      }
+    ],
     "2026-10-21": [
       {
         "kind": "Feature",
@@ -112,10 +196,10 @@
       },
       {
         "kind": "Change",
-        "content": "**Gitsync**: Version 53.0\n\n* (REGRESSIVE) **Integration**: Updated to support the latest Chronicle API.\n\n  **Important:** Existing users **must** migrate their repository branch and\n  re-export their content after updating.\n\n  For instructions, see [Chronicle API-enabled environment migration](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#chronicle-api-enabled-environment-migration).",
+        "content": "**GitSync**: Version 53.0\n\n* (REGRESSIVE) **Integration**: Updated to support the latest Chronicle API.\n\n  **Important:** **Rolled back in version 54.0.** Due to known synchronization issues\n  in version 53.0, do not use version 53.0. Roll back to **version 52.0** or\n  update to **version 54.0**, which restores the stable version 52.0 baseline.\n\n  For instructions, see [Version 53.0 rollback and version 52.0 / 54.0 compatibility](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#version-54-rollback-guidance).",
         "summary": {
-          "title": "Gitsync v53.0 Update",
-          "summary": "Gitsync version 53.0 is now available, with updated integration to support the latest Chronicle API. Existing users are required to migrate their repository branch and re-export their content after updating to ensure compatibility. Detailed migration instructions are provided in the documentation."
+          "title": "GitSync version 53.0 update",
+          "summary": "Version 53.0 of GitSync, intended to support the latest Chronicle API, has been rolled back due to synchronization issues. Users are advised to use version 52.0 or update to version 54.0 for a stable experience."
         }
       }
     ],

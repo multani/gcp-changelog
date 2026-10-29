@@ -1,5 +1,24 @@
 # Model Armor
 
+## 2026-10-29
+
+### Feature
+
+Model Armor is available in Brazil (`southamerica-east1`). This region
+provides data residency compliance for at-rest, in-use, and in-transit data with
+[limited feature support](https://docs.cloud.google.com/model-armor/feature-availability-by-region#limited-support).
+
+The `southamerica-east1` region supports the following filters:
+
+* Prompt injection and jailbreak detection
+* Responsible AI
+* Sensitive Data Protection
+
+For more information, see [Locations](https://docs.cloud.google.com/model-armor/locations),
+[Data residency and endpoints](https://docs.cloud.google.com/model-armor/data-residency), and
+[Supported features by region](https://docs.cloud.google.com/model-armor/feature-availability-by-region#supported-by-region).
+
+---
 ## 2026-10-27
 
 ### Feature

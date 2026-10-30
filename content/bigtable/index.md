@@ -1,5 +1,18 @@
 # Bigtable
 
+## 2026-10-30
+
+### Feature
+
+You can use Knowledge Catalog to discover authorized views, logical views, and
+continuous materialized views. This integration lets you search for these
+granular data assets alongside your Bigtable instances and tables. This
+feature is
+[generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+For more information, see
+[Manage data assets using Knowledge Catalog](https://docs.cloud.google.com/bigtable/docs/manage-data-assets-using-knowledge-catalog).
+
+---
 ## 2026-10-28
 
 ### Feature

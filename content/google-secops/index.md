@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-10-29
+
+### Feature
+
+**Operations in Emerging Threats Center General Availability**
+
+The **Operations** feature in the **Emerging Threats Center** feed is now in General Availability (GA). For more information see, [Operations in Emerging Threats Center](https://docs.cloud.google.com/chronicle/docs/secops/release-notes#operations-emerging-threats).
+
+---
 ## 2026-10-28
 
 ### Announcement

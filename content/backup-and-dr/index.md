@@ -1,5 +1,15 @@
 # Backup and DR
 
+## 2026-10-30
+
+### Feature
+
+You can now edit existing backup plans for Cloud SQL instances to update
+settings such as backup rules and maximum custom on-demand retention periods.
+To learn more, see
+[Back up Cloud SQL instances to a backup vault](https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup).
+
+---
 ## 2026-09-30
 
 ### Deprecated

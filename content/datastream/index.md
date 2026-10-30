@@ -1,5 +1,16 @@
 # Datastream
 
+## 2026-10-30
+
+### Feature
+
+Datastream integration with Knowledge Catalog is now
+[generally available
+(GA)](https://cloud.google.com/products#product-launch-stages). For more
+information, see
+[the documentation](https://docs.cloud.google.com/datastream/docs/knowledge-catalog-integration).
+
+---
 ## 2026-10-23
 
 ### Security

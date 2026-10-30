@@ -1,5 +1,30 @@
 # SAP on Google Cloud
 
+## 2026-10-30
+
+### Announcement
+
+**Google SecOps for SAP is generally available (GA)**
+
+Google SecOps for SAP is generally available (GA). This solution
+helps you protect your enterprise SAP applications by integrating
+business-critical telemetry into Google SecOps to provide
+unified visibility, threat detection, and security response capabilities.
+
+This release includes:
+
+* Log ingestion from SAP RISE and self-managed SAP environments that run on
+  Google Cloud, on-premises, or other clouds.
+* SAP-specific YARA-L threat detection rules available in the Google SecOps
+  Detection Rules GitHub repository.
+* Automated threat response and containment capabilities by using the SAP RFC
+  Gateway and SOAR playbooks
+  ([Preview](https://cloud.google.com/products#product-launch-stages)).
+
+For more information, see
+[Secure SAP applications with Google SecOps](https://docs.cloud.google.com/sap/docs/secops/overview).
+
+---
 ## 2026-10-29
 
 ### Announcement

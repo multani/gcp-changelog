@@ -1,5 +1,22 @@
 # Identity and Access Management
 
+## 2026-10-29
+
+### Feature
+
+The Admin (`roles/admin`), Writer (`roles/writer`), and Reader (`roles/reader`)
+basic roles are generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). For more
+information, see [Basic roles](https://docs.cloud.google.com/iam/docs/roles-overview#basic).
+
+The legacy basic roles—Owner (`roles/owner`), Editor (`roles/editor`), and
+Viewer (`roles/viewer`)—are still available for use and are being
+actively maintained. However, if you need to grant a basic role, we recommend
+granting the Admin, Writer, or Reader role instead of a legacy basic role.
+This is because the newer roles support additional features, such as the use of
+[IAM Conditions](https://docs.cloud.google.com/iam/docs/conditions-overview).
+
+---
 ## 2026-10-06
 
 ### Feature

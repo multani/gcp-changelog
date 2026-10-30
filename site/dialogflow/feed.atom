@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Dialogflow</title>
   <subtitle>Changelog for Google Cloud product: Dialogflow</subtitle>
-  <updated>2026-10-19T00:00:00+00:00</updated>
+  <updated>2026-10-29T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:dialogflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/dialogflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:dialogflow:2026-10-29:security:0</id>
+    <published>2026-10-29T00:00:00+00:00</published>
+    <updated>2026-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Dialogflow ES</strong>: The Dialogflow ES <a href="https://docs.cloud.google.com/dialogflow/es/docs/integrations/line#signature-verification">LINE integration</a> validates the <code>X-Line-Signature</code> HTTP header on incoming webhook requests using your LINE channel secret and rejects requests with missing, duplicate, or invalid signatures with an HTTP <code>400 Bad Request</code> error. Make sure your configured channel secret matches your LINE Messaging API channel and that any intermediate proxy forwards the <code>X-Line-Signature</code> header and raw request body unmodified.</p>]]></content>
+    <summary>Dialogflow ES secures your LINE integration by validating the `X-Line-Signature` header. Ensure your channel secret is correctly configured and that the signature header and raw request body are forwarded without modification to prevent `400 Bad Request` errors.</summary>
+    <title>Security: Secure your LINE integration with Dialogflow ES</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

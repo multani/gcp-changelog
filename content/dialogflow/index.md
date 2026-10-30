@@ -1,5 +1,12 @@
 # Dialogflow
 
+## 2026-10-29
+
+### Security
+
+**Dialogflow ES**: The Dialogflow ES [LINE integration](https://docs.cloud.google.com/dialogflow/es/docs/integrations/line#signature-verification) validates the `X-Line-Signature` HTTP header on incoming webhook requests using your LINE channel secret and rejects requests with missing, duplicate, or invalid signatures with an HTTP `400 Bad Request` error. Make sure your configured channel secret matches your LINE Messaging API channel and that any intermediate proxy forwards the `X-Line-Signature` header and raw request body unmodified.
+
+---
 ## 2026-10-19
 
 ### Feature

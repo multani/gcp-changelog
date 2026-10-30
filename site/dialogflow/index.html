@@ -3012,6 +3012,10 @@
 
 
 <h1 id="dialogflow">Dialogflow</h1>
+<h2 id="2026-10-29">2026-10-29</h2>
+<h3 id="security">Security</h3>
+<p><strong>Dialogflow ES</strong>: The Dialogflow ES <a href="https://docs.cloud.google.com/dialogflow/es/docs/integrations/line#signature-verification">LINE integration</a> validates the <code>X-Line-Signature</code> HTTP header on incoming webhook requests using your LINE channel secret and rejects requests with missing, duplicate, or invalid signatures with an HTTP <code>400 Bad Request</code> error. Make sure your configured channel secret matches your LINE Messaging API channel and that any intermediate proxy forwards the <code>X-Line-Signature</code> header and raw request body unmodified.</p>
+<hr />
 <h2 id="2026-10-19">2026-10-19</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Dialogflow CX</strong>: You can set the <code>telephony_disable_voice_processing</code> session parameter to <code>true</code> to turn off speech recognition and accept only DTMF input for the rest of the session. This helps in noisy environments, where speech recognition can transcribe background noise as end-user input. See <a href="https://docs.cloud.google.com/dialogflow/cx/docs/concept/parameter#session-disable-voice">Turn off speech recognition for telephony</a>.</p>
@@ -3038,7 +3042,7 @@ This vulnerability was patched on 15 March 2026, and no customer action is neede
 <h2 id="2025-12-11">2025-12-11</h2>
 <h3 id="feature_3">Feature</h3>
 <p><strong>Conversational Agents (Dialogflow CX)</strong>: Conversational Agents now supports log splitting for <a href="https://docs.cloud.google.com/dialogflow/cx/docs/concept/agent-settings#logging-settings">large Cloud Logging log entries</a>.</p>
-<h3 id="security">Security</h3>
+<h3 id="security_1">Security</h3>
 <p><strong>Conversational Agents (Dialogflow CX)</strong>: Dialogflow CX Messenger <a href="https://docs.cloud.google.com/dialogflow/cx/docs/concept/integration/dialogflow-messenger">integration</a> contained a vulnerability that allowed for authentication bypass when an agent was configured to use an authenticated API with a 3rd party identity. <strong>All versions released after August 20th, 2025 have been updated to protect from this vulnerability. No user action is required.</strong></p>
 <h3 id="feature_4">Feature</h3>
 <p><strong>Conversational Agents (Dialogflow CX)</strong>: New <em>Responsible AI</em> fields are now available for the <a href="https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3#raisettings"><code>v3</code></a> and <a href="https://docs.cloud.google.com/dialogflow/cx/docs/reference/rpc/google.cloud.dialogflow.cx.v3beta1#raisettings"><code>v3beta1</code></a> API endpoints. Responsible AI allows you to flag, filter or block harmful content.</p>
@@ -3161,6 +3165,9 @@ This vulnerability was patched on 15 March 2026, and no customer action is neede
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#dialogflow">Dialogflow</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-29" class="nav-link">2026-10-29</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-19" class="nav-link">2026-10-19</a>
           </li>

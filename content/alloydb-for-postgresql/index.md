@@ -1,5 +1,28 @@
 # AlloyDB for PostgreSQL
 
+## 2026-10-29
+
+### Feature
+
+AlloyDB AI adds pre-registered support for the following Gemini models in version
+1.6.5 and later of the `google_ml_integration` extension:
+
+* `gemini-3.1-flash-lite`
+* `gemini-3.5-flash`
+* `gemini-3.5-flash-lite`
+* `gemini-3.6-flash`
+* `gemini-3.7-flash`
+* `gemini-3.8-flash`
+* `gemini-4-argon`
+
+Version 1.6.5 of the `google_ml_integration` extension sets `gemini-3.5-flash-lite` as the default Gemini model and removes the `gemini-2.0-flash`, `gemini-2.0-flash-lite`, `gemini-2.5-flash`, `gemini-2.5-flash-lite`, and `gemini-2.5-pro` models from the list of pre-registered models.
+
+Additionally, AlloyDB AI adds pre-registered support for the `semantic-ranker-512` reranking model.
+
+For more information, see
+[Pre-registered Agent Platform models](https://docs.cloud.google.com/alloydb/docs/reference/supported-ai-models#pre-registered-models).
+
+---
 ## 2026-10-28
 
 ### Announcement

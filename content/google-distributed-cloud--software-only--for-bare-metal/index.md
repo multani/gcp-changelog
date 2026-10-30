@@ -1,5 +1,32 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-10-27
+
+### Announcement
+
+The release notes for the following versions incorrectly stated that a fix for
+an issue where Metrics API operation, like `kubectl top`, Horizontal Pod
+Autoscaling, and Vertical Pod Autoscaling, could fail with TLS verification
+errors during certificate authority (CA) rotation:
+
+* [1.33.700-gke.71](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes#April_22_2026)
+* [1.34.300-gke.59](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes#April_15_2026)
+* [1.35.0-gke.525](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/release-notes#May_6_2026)
+
+This issue is fixed in the following versions:
+
+* 1.34.700-gke.93 and later 1.34 patch versions
+* 1.35.300-gke.87 and later 1.35 patch versions
+* All 1.36 and later versions
+
+This issue is not fixed in any 1.33 release as of this writing.
+
+To get the fix, upgrade your clusters to one of these versions.
+
+If you can't upgrade or you use a 1.33 version, see the workaround in
+[Metrics API becomes unavailable after CA rotation](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/troubleshooting/known-issues#metrics-api-cert-mismatch).
+
+---
 ## 2026-10-26
 
 ### Fixed

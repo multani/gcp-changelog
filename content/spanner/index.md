@@ -1,5 +1,30 @@
 # Spanner
 
+## 2026-10-30
+
+### Feature
+
+Spanner supports equality and ordering comparisons on JSONB and JSON values.
+You can use these values in `GROUP_BY` and `ORDER BY` clauses without first
+converting them to another data type.
+
+In GoogleSQL, you can also convert other data types to
+`JSON` using `CAST(expression AS JSON)` and compare JSON values
+directly with non-JSON values. Spanner can implicitly coerces the non-JSON
+value to `JSON` for comparison.
+
+Additionally, you can use
+search indexes to accelerate equality comparisons such as `=` or `IN` on JSONB
+and JSON columns and subpaths.
+
+For more information, see
+[JSON comparison and sorting](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/data-types#comparison_and_sorting)
+, [JSON comparison coercion](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/conversion_rules#json_comparison_coercion)
+, [CAST AS JSON](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/conversion_functions#cast_as_json)
+, [JSON search indexes](https://docs.cloud.google.com/spanner/docs/full-text-search/json-indexes)
+, and [Working with JSONB](https://docs.cloud.google.com/spanner/docs/working-with-jsonb).
+
+---
 ## 2026-10-27
 
 ### Feature

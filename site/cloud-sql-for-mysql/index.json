@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for MySQL",
   "entries": {
+    "2026-10-30": [
+      {
+        "kind": "Announcement",
+        "content": "Starting November 1, 2026, at 02:00 a.m. local time, unpatched Cloud SQL for MySQL\ninstances that evaluate certain local Canadian time zones (across Alberta,\nBritish Columbia, Manitoba, and Northwest Territories) will lag by one hour\nbecause the instances still follow the autumn fall back schedule.\nStored timestamp data isn't modified.\n\n**What should I do?**\n\nBefore November 1, 2026, do one of the following fixes:\n\n* **Apply self-service maintenance (Recommended):** If your applications rely\n  on database functions to calculate, schedule, or display times in these\n  Canadian time zones (such as Calgary, Edmonton, Vancouver, or Winnipeg),\n  then update your instances to the latest maintenance release using the\n  Google Cloud console or the gcloud CLI.\n\n  Updated time zone rules that reflect permanent standard daylight offsets across\n  Alberta, British Columbia, Manitoba, and Northwest Territories are supported\n  in Cloud SQL for MySQL [maintenance release `*.R20260726.00_36` or later](https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog).\n\n  For more information, see\n  [Perform self-service maintenance](https://docs.cloud.google.com/sql/docs/mysql/self-service-maintenance).\n* **Database configuration stopgap:** If your organization can't\n  restart instances before November 1, 2026, then you can set the time zone\n  for your database session without causing downtime for your instance. Set\n  the `default_time_zone` flag for the database session to your target fixed\n  numeric offset (for example, `'-06:00'` for Alberta, `'-07:00'` for British\n  Columbia, or `'-05:00'` for Manitoba).\n\n  For more information about configuring database flags, see\n  [Configure database flags](https://docs.cloud.google.com/sql/docs/mysql/flags).",
+        "summary": {
+          "title": "Cloud SQL for MySQL time zone update",
+          "summary": "Instances in certain Canadian time zones may lag by one hour starting November 1, 2026, due to outdated daylight saving rules. Apply maintenance or configure session time zones before this date to ensure accurate timekeeping."
+        }
+      }
+    ],
     "2026-10-28": [
       {
         "kind": "Feature",

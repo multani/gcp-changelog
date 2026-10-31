@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for SQL Server",
   "entries": {
+    "2026-10-30": [
+      {
+        "kind": "Announcement",
+        "content": "Starting November 1, 2026, at 02:00 a.m. local time, Cloud SQL for SQL Server\ninstances that evaluate certain local Canadian time zones (across Alberta,\nBritish Columbia, Manitoba, and Northwest Territories) will lag by one hour\nbecause the instances still follow the autumn fall back schedule.\nStored timestamp data isn't modified.\n\n**What should I do?**\n\nFor SQL Server, Microsoft has\n[published guidance](https://devblogs.microsoft.com/azure-sql/canadas-2026-time-zone-updates-guidance-for-microsoft-sql/),\nrecommending updating each applicable instance's time zone to the Windows time\nzone with the matching fixed offset.\n\nUpdate each instance's time zone to the Windows time zone with the matching\nfixed offset:\n\n| Jurisdiction | Current time zone | Recommended time zone | Fixed offset |\n| --- | --- | --- | --- |\n| British Columbia | Pacific Standard Time | Yukon Standard Time | UTC-07:00 |\n| Alberta / Inuvik, NWT | Mountain Standard Time | Canada Central Standard Time | UTC-06:00 |\n| Manitoba | Central Standard Time | Eastern Standard Time (Mexico) | UTC-05:00 |\n\nYou can make the change in the Google Cloud console (**Edit instance** > **Flags and parameters** > **Time zone**) or with gcloud:\n\n```\ngcloud sql instances patch INSTANCE_NAME \\\n  --project=PROJECT_ID \\\n  --time-zone=\"Yukon Standard Time\"\n```",
+        "summary": {
+          "title": "Cloud SQL time zone update required for Canadian instances",
+          "summary": "Instances in certain Canadian time zones will experience a one-hour lag starting November 1, 2026, due to daylight saving time changes. To ensure accuracy, update your SQL Server instances to the recommended Windows time zone with a fixed offset. Microsoft provides guidance, and the change can be made via the Google Cloud console or gcloud."
+        }
+      }
+    ],
     "2026-10-23": [
       {
         "kind": "Security",

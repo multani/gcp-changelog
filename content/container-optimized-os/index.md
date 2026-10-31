@@ -1,5 +1,56 @@
 # Container Optimized OS
 
+## 2026-10-30
+
+### Change
+
+
+
+### cos-133-19999-44-174
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.18.55](https://cos.googlesource.com/third_party/kernel/+/ebad2aad500721882e43d07ea6b43fef5882463d ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/19999.44.174/lakitu/gpu_driver_versions.textproto) |
+
+### Security
+
+Fixed CVE-2026-42508, CVE-2026-39830, CVE-2026-39833 in google-osconfig-agent.
+
+### Security
+
+Fixed CVE-2026-82474 in app-admin/sudo.
+
+### Security
+
+Updated app-arch/brotli to 1.0.10. This resolves CVE-2026-111497.
+
+### Security
+
+Fixed CVE-2026-98432 in the Linux kernel.
+
+### Change
+
+Runtime sysctl changes:
+
+* Changed: fs.epoll.max\_user\_watches: 1807671 -> 1807627
+* Changed: fs.fanotify.max\_user\_marks: 68382 -> 68378
+* Changed: fs.inotify.max\_user\_watches: 64161 -> 64158
+* Changed: kernel.threads-max: 63445 -> 63443
+* Changed: net.ipv4.tcp\_mem: 93972 125298 187944 -> 93969 125295 187938
+* Changed: net.ipv4.udp\_mem: 187947 250597 375894 -> 187941 250590 375882
+* Changed: user.max\_cgroup\_namespaces: 31722 -> 31721
+* Changed: user.max\_fanotify\_marks: 68382 -> 68378
+* Changed: user.max\_inotify\_watches: 64161 -> 64158
+* Changed: user.max\_ipc\_namespaces: 31722 -> 31721
+* Changed: user.max\_mnt\_namespaces: 31722 -> 31721
+* Changed: user.max\_net\_namespaces: 31722 -> 31721
+* Changed: user.max\_pid\_namespaces: 31722 -> 31721
+* Changed: user.max\_time\_namespaces: 31722 -> 31721
+* Changed: user.max\_user\_namespaces: 31722 -> 31721
+* Changed: user.max\_uts\_namespaces: 31722 -> 31721
+
+---
 ## 2026-10-27
 
 ### Change
@@ -100,6 +151,10 @@ Fixed CVE-2026-82474 in app-admin/sudo.
 ### Security
 
 Fixed CVE-2026-84445, CVE-2026-24051, CVE-2026-84304, CVE-2026-39831, CVE-2026-39829, CVE-2026-39834, CVE-2026-34986, CVE-2026-39835, CVE-2026-39832, CVE-2026-39827, CVE-2026-81870, CVE-2026-46598, CVE-2026-29181, CVE-2026-39830, CVE-2026-46595, CVE-2026-39828, CVE-2026-25680, CVE-2026-39833, CVE-2026-39883, CVE-2026-84303, CVE-2026-46597, CVE-2026-42508 in cos-extensions.
+
+### Security
+
+Fixed CVE-2026-98432 in the Linux kernel.
 
 ### Security
 
@@ -446,6 +501,10 @@ Fixed CVE-2026-46595 in google-guest-agent.
 
 Fixed CVE-2026-46595, CVE-2026-42508 in google-osconfig-agent.
 
+### Security
+
+Fixed CVE-2026-98432 in the Linux kernel.
+
 ### Change
 
 
@@ -509,6 +568,10 @@ Fixed CVE-2026-42508, CVE-2026-46595, CVE-2026-39831, CVE-2026-39830 in containe
 
 Fixed CVE-2026-46595 in guest-agent.
 
+### Security
+
+Fixed CVE-2026-98432 in the Linux kernel.
+
 ### Change
 
 
@@ -555,6 +618,10 @@ Fixed CVE-2026-39833 in nvidia-container-toolkit.
 ### Security
 
 Fixed CVE-2026-46595, CVE-2026-39832 in cri-tools.
+
+### Security
+
+Fixed CVE-2026-98432 in the Linux kernel.
 
 ### Change
 

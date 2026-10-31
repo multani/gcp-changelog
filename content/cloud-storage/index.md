@@ -1,5 +1,21 @@
 # Cloud Storage
 
+## 2026-10-30
+
+### Feature
+
+Security and compliance findings in Storage Intelligence advisor are
+available in [Preview](https://cloud.google.com/products#product-launch-stages).
+You can use these findings to identify buckets with objects that violate default
+customer-managed encryption key (CMEK) policies or enforced encryption rules, and
+re-encrypt the affected objects. For more information, see the following
+resources:
+
+* [About Storage Intelligence advisor](https://docs.cloud.google.com/storage/docs/storage-intelligence/advisor-overview#monitor-security-compliance)
+* [Re-encrypt objects that violate default CMEK bucket policies](https://docs.cloud.google.com/storage/docs/storage-intelligence/findings/re-encrypt-objects-default-cmek-policies)
+* [Re-encrypt objects that violate enforced encryption rules](https://docs.cloud.google.com/storage/docs/storage-intelligence/findings/re-encrypt-objects-enforced-encryption-rules)
+
+---
 ## 2026-10-13
 
 ### Feature

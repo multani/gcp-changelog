@@ -2,9 +2,107 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Container Optimized OS</title>
   <subtitle>Changelog for Google Cloud product: Container Optimized OS</subtitle>
-  <updated>2026-10-27T00:00:00+00:00</updated>
+  <updated>2026-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:container-optimized-os</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/container-optimized-os/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-30:change:0</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary>We've released exciting new features designed to enhance your project management experience. Explore the latest updates to streamline your workflows and boost productivity. These improvements are now available for you to integrate into your daily operations.</summary>
+    <title>Change: New Features for Your Projects</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-30:cos-133-19999-44-174:1</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | <a href="https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus">GPU Drivers</a> |
+| <a href="https://cos.googlesource.com/third_party/kernel/+/ebad2aad500721882e43d07ea6b43fef5882463d">COS-6.18.55</a> | v29.4.3 | v2.4.1 | <a href="https://storage.googleapis.com/cos-tools/19999.44.174/lakitu/gpu_driver_versions.textproto">See List</a> |</p>]]></content>
+    <summary>Container Optimized OS version 19999.44.174 is now available, featuring updates to the kernel, Docker, and containerd. This release also includes support for GPU drivers.</summary>
+    <title>cos-133-19999-44-174: Container Optimized OS Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-30:security:2</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-42508, CVE-2026-39830, CVE-2026-39833 in google-osconfig-agent.</p>]]></content>
+    <summary>Critical security vulnerabilities in the OS Config agent have been addressed. These updates resolve CVE-2026-42508, CVE-2026-39830, and CVE-2026-39833, ensuring the continued security of your systems.</summary>
+    <title>Security: Security updates for OS Config agent</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-30:security:3</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-82474 in app-admin/sudo.</p>]]></content>
+    <summary>A security vulnerability (CVE-2026-82474) affecting the sudo application has been resolved. This update ensures the continued security of your systems.</summary>
+    <title>Security: Security Update for sudo</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-30:security:4</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Updated app-arch/brotli to 1.0.10. This resolves CVE-2026-111497.</p>]]></content>
+    <summary>The brotli package has been updated to version 1.0.10, addressing CVE-2026-111497. This update is important for maintaining the security of systems that use brotli compression.</summary>
+    <title>Security: Security update for brotli</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-30:security:5</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-98432 in the Linux kernel.</p>]]></content>
+    <summary>A critical security vulnerability, CVE-2026-98432, affecting the Linux kernel has been successfully patched. This update is essential for maintaining system integrity and protecting against potential exploits. Applying this fix will bolster your system's defenses against known threats.</summary>
+    <title>Security: Linux Kernel Security Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-30:change:6</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
+<ul>
+<li>Changed: fs.epoll.max_user_watches: 1807671 -&gt; 1807627</li>
+<li>Changed: fs.fanotify.max_user_marks: 68382 -&gt; 68378</li>
+<li>Changed: fs.inotify.max_user_watches: 64161 -&gt; 64158</li>
+<li>Changed: kernel.threads-max: 63445 -&gt; 63443</li>
+<li>Changed: net.ipv4.tcp_mem: 93972 125298 187944 -&gt; 93969 125295 187938</li>
+<li>Changed: net.ipv4.udp_mem: 187947 250597 375894 -&gt; 187941 250590 375882</li>
+<li>Changed: user.max_cgroup_namespaces: 31722 -&gt; 31721</li>
+<li>Changed: user.max_fanotify_marks: 68382 -&gt; 68378</li>
+<li>Changed: user.max_inotify_watches: 64161 -&gt; 64158</li>
+<li>Changed: user.max_ipc_namespaces: 31722 -&gt; 31721</li>
+<li>Changed: user.max_mnt_namespaces: 31722 -&gt; 31721</li>
+<li>Changed: user.max_net_namespaces: 31722 -&gt; 31721</li>
+<li>Changed: user.max_pid_namespaces: 31722 -&gt; 31721</li>
+<li>Changed: user.max_time_namespaces: 31722 -&gt; 31721</li>
+<li>Changed: user.max_user_namespaces: 31722 -&gt; 31721</li>
+<li>Changed: user.max_uts_namespaces: 31722 -&gt; 31721</li>
+</ul>]]></content>
+    <summary>Several runtime sysctl parameters have been slightly adjusted. These changes include modifications to file system event limits, kernel thread maximums, and network memory settings. The adjustments are minor and aim to optimize system resource allocation.</summary>
+    <title>Change: Runtime sysctl adjustments</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -279,6 +377,17 @@
     <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:24</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-98432 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability in the Linux kernel, CVE-2026-98432, has been fixed. This update addresses the issue to enhance system security.</summary>
+    <title>Security: Linux kernel security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:25</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-99999 in the Linux kernel.</p>]]></content>
     <summary>A critical security vulnerability in the Linux kernel, CVE-2026-99999, has been addressed. This update ensures the stability and security of systems running the Linux kernel.</summary>
     <title>Security: Linux kernel security update</title>
@@ -287,7 +396,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:25</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:26</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-lang/go to v1.26.10. This fixes CVE-2026-111943.</p>]]></content>
@@ -298,7 +407,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:26</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:27</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-lang/go to v1.26.5. This fixes CVE-2026-39822.</p>]]></content>
@@ -309,7 +418,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:27</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:28</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-lang/go to v1.26.9. This fixes CVE-2026-94447.</p>]]></content>
@@ -320,7 +429,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:28</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:29</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-lang/python to v3.13.15. This fixes CVE-2026-15308.</p>]]></content>
@@ -331,7 +440,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:29</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:30</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-lang/python to v3.13.16. This fixes CVE-2026-19445.</p>]]></content>
@@ -342,7 +451,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:30</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:31</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[]]></content>
@@ -353,7 +462,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-125-19216-760-20:31</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-125-19216-760-20:32</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -367,7 +476,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:32</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:33</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated app-admin/google-guest-configs to v20261025.00.</p>]]></content>
@@ -378,7 +487,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:fixed:33</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:fixed:34</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN_RSTAT.</p>]]></content>
@@ -389,7 +498,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:34</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:35</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-33186 in google-osconfig-agent.</p>]]></content>
@@ -400,7 +509,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:35</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:36</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-82474 in app-admin/sudo.</p>]]></content>
@@ -411,7 +520,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:36</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:37</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
@@ -440,7 +549,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:37</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:38</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[]]></content>
@@ -451,7 +560,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-129-19506-578-21:38</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-129-19506-578-21:39</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -465,7 +574,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:39</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:40</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated app-admin/google-guest-configs to v20261025.00.</p>]]></content>
@@ -476,7 +585,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:fixed:40</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:fixed:41</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN_RSTAT.</p>]]></content>
@@ -487,7 +596,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:41</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:42</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-77214 in dev-libs/expat.</p>]]></content>
@@ -498,7 +607,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:42</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:43</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
@@ -527,7 +636,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:43</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:44</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[]]></content>
@@ -538,7 +647,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-121-18867-652-12:44</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-121-18867-652-12:45</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -552,7 +661,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:45</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:46</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated app-admin/google-guest-configs to v20261025.00.</p>]]></content>
@@ -563,7 +672,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:46</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:security:47</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-33186 in google-osconfig-agent.</p>]]></content>
@@ -574,7 +683,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:47</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:48</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>
@@ -599,7 +708,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:48</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:49</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[]]></content>
@@ -610,7 +719,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-beta-133-19999-44-170:49</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:cos-beta-133-19999-44-170:50</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -624,7 +733,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:50</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-27:change:51</id>
     <published>2026-10-27T00:00:00+00:00</published>
     <updated>2026-10-27T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated app-admin/google-guest-configs to v20261025.00.</p>]]></content>
@@ -1077,7 +1186,18 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:change:38</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:38</id>
+    <published>2026-10-22T00:00:00+00:00</published>
+    <updated>2026-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-98432 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability in the Linux kernel, CVE-2026-98432, has been resolved. This update ensures improved security for systems running the Linux kernel.</summary>
+    <title>Security: Linux kernel security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:change:39</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[]]></content>
@@ -1088,7 +1208,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:cos-121-18867-652-7:39</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:cos-121-18867-652-7:40</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -1102,7 +1222,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:announcement:40</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:announcement:41</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This is an <a href="https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release.</a></p>]]></content>
@@ -1113,7 +1233,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:41</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:42</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.</p>]]></content>
@@ -1124,7 +1244,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:42</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:43</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded app-misc/ca-certificates to v20260816.3.125. This removes the certificates affected by the eMudhra intermediate certificate compromise.</p>]]></content>
@@ -1135,7 +1255,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:43</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:44</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.</p>]]></content>
@@ -1146,7 +1266,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:44</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:45</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-111943 in dev-lang/go.</p>]]></content>
@@ -1157,7 +1277,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:45</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:46</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-39830 in google-osconfig-agent.</p>]]></content>
@@ -1168,7 +1288,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:46</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:47</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-39831 in node-problem-detector.</p>]]></content>
@@ -1179,7 +1299,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:47</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:48</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-39832 in cos-extensions.</p>]]></content>
@@ -1190,7 +1310,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:48</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:49</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-39833 in nvidia-container-toolkit.</p>]]></content>
@@ -1201,7 +1321,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:49</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:50</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-39833, CVE-2024-28180, CVE-2025-11065, CVE-2026-25680, CVE-2025-47914, GHSA-w67g-5rqw-f597, CVE-2026-84304, GHSA-fv92-fjc5-jj9h, CVE-2023-47108, CVE-2024-51744, CVE-2026-35469, CVE-2025-65637, CVE-2025-30204, CVE-2024-45337, CVE-2025-52565, CVE-2026-42508, CVE-2026-46598, CVE-2023-45142, CVE-2024-45310, CVE-2026-39830, CVE-2026-41579, CVE-2026-46595, CVE-2024-24786, CVE-2026-39832, CVE-2026-10722, CVE-2026-39831, CVE-2025-22869 in kubernetes.</p>]]></content>
@@ -1212,7 +1332,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:50</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:51</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-42508, CVE-2026-46595 in cri-tools.</p>]]></content>
@@ -1223,7 +1343,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:51</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:52</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-42508, CVE-2026-46595, CVE-2026-39831, CVE-2026-39830 in containerd.</p>]]></content>
@@ -1234,7 +1354,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:52</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:53</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-46595 in guest-agent.</p>]]></content>
@@ -1245,7 +1365,18 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:change:53</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:54</id>
+    <published>2026-10-22T00:00:00+00:00</published>
+    <updated>2026-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-98432 in the Linux kernel.</p>]]></content>
+    <summary>A security vulnerability in the Linux kernel, CVE-2026-98432, has been fixed. This update addresses a critical security issue to enhance system protection.</summary>
+    <title>Security: Linux kernel security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:change:55</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[]]></content>
@@ -1256,7 +1387,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:cos-129-19506-578-9:54</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:cos-129-19506-578-9:56</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>|  |  |  |  |
@@ -1270,7 +1401,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:announcement:55</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:announcement:57</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>This is an <a href="https://docs.cloud.google.com/container-optimized-os/docs/concepts/versioning#lts_refresh_releases">LTS Refresh release.</a></p>]]></content>
@@ -1281,7 +1412,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:56</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:58</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Updated cos-gpu-installer to v2.7.11 and toolbox to v20261020.</p>]]></content>
@@ -1292,7 +1423,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:57</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:59</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded app-misc/ca-certificates to v20260816.3.125. This removes the certificates affected by the eMudhra intermediate certificate compromise.</p>]]></content>
@@ -1303,7 +1434,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:58</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:fixed:60</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Upgraded dev-libs/nss to v3.131.1. This removes the certificates affected by the eMudhra intermediate certificate compromise.</p>]]></content>
@@ -1314,7 +1445,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:59</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:61</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-111943 in dev-lang/go.</p>]]></content>
@@ -1325,7 +1456,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:60</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:62</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-33186 in cri-tools.</p>]]></content>
@@ -1336,7 +1467,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:61</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:63</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-39831 in node-problem-detector.</p>]]></content>
@@ -1347,7 +1478,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:62</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:64</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-39833 in nvidia-container-toolkit.</p>]]></content>
@@ -1358,7 +1489,7 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:63</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:65</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Fixed CVE-2026-46595, CVE-2026-39832 in cri-tools.</p>]]></content>
@@ -1369,7 +1500,18 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:change:64</id>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:security:66</id>
+    <published>2026-10-22T00:00:00+00:00</published>
+    <updated>2026-10-22T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Fixed CVE-2026-98432 in the Linux kernel.</p>]]></content>
+    <summary>A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-98432, enhancing the overall security of systems running the Linux kernel.</summary>
+    <title>Security: Linux kernel security update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:container-optimized-os:2026-10-22:change:67</id>
     <published>2026-10-22T00:00:00+00:00</published>
     <updated>2026-10-22T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Runtime sysctl changes:</p>

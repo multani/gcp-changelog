@@ -1,6 +1,16 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-10-30": [
+      {
+        "kind": "Fixed",
+        "content": "For AlloyDB clusters compatible with PostgreSQL 18 or later,\nan instance restart is no longer required when you enable or edit\n[Advanced Query Insights](https://docs.cloud.google.com/alloydb/docs/using-advanced-query-insights) settings,\nincluding changing the query length or enabling active query analysis. For\nclusters compatible with PostgreSQL 17 or earlier, saving changes still requires\nan instance restart.\n\nFor more information, see\n[Use Advanced Query Insights](https://docs.cloud.google.com/alloydb/docs/using-advanced-query-insights) and\n[Monitor active queries](https://docs.cloud.google.com/alloydb/docs/monitor-active-queries).",
+        "summary": {
+          "title": "No instance restart needed for Advanced Query Insights",
+          "summary": "For AlloyDB clusters compatible with PostgreSQL 18 or later, you no longer need to restart instances when enabling or editing Advanced Query Insights settings. This change simplifies the management of query performance monitoring. Clusters compatible with PostgreSQL 17 or earlier still require an instance restart."
+        }
+      }
+    ],
     "2026-10-29": [
       {
         "kind": "Feature",

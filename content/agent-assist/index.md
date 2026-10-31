@@ -1,5 +1,14 @@
 # Agent Assist
 
+## 2026-10-12
+
+### Feature
+
+[Gemini transcribe live](https://docs.cloud.google.com/gemini-enterprise-cx/agent-assist/gemini-transcribe-live) is generally available. Live transcription converts streaming audio to text in real time to deliver quick, reliable intermediate transcriptions for live conversations.
+
+The `model_id` field in `GeminiAsrConfig` remains in preview. Leave `model_id` unset to use the default Gemini transcribe live model.
+
+---
 ## 2026-06-17
 
 ### Feature

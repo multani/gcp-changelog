@@ -1,5 +1,46 @@
 # Cloud Asset Inventory
 
+## 2026-10-28
+
+### Feature
+
+The following resource types are publicly available through the [ExportAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/exportAssets), [ListAssets](https://docs.cloud.google.com/asset-inventory/docs/listing-assets), [BatchGetAssetsHistory](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/batchGetAssetsHistory), [QueryAssets](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/queryAssets), [Feed](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/feeds), and Search ([SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources), [SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)) APIs.
+
+* Google Cloud Migration Center
+  + `migrationcenter.googleapis.com/DiscoveryClient`
+  + `migrationcenter.googleapis.com/Group`
+  + `migrationcenter.googleapis.com/ImportJob`
+  + `migrationcenter.googleapis.com/PreferenceSet`
+  + `migrationcenter.googleapis.com/ReportConfig`
+  + `migrationcenter.googleapis.com/Settings`
+  + `migrationcenter.googleapis.com/Source`
+
+---
+## 2026-10-21
+
+### Feature
+
+The following resource type is publicly available through the
+[SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources)
+and
+[SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)
+APIs.
+
+* Cloud TPU API
+  + `tpu.googleapis.com/QueuedResource`
+
+### Feature
+
+The following resource type is publicly available through the
+[SearchAllResources](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllResources)
+and
+[SearchAllIamPolicies](https://docs.cloud.google.com/asset-inventory/docs/reference/rest/v1/TopLevel/searchAllIamPolicies)
+APIs.
+
+* Network Management API
+  + `networkmanagement.googleapis.com/VpcFlowLogsConfig`
+
+---
 ## 2026-10-19
 
 ### Feature

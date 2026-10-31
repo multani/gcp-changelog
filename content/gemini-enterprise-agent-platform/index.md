@@ -1,5 +1,47 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-10-30
+
+### Feature
+
+**Inference request metadata logging (GA)**
+
+Inference request metadata logging is generally available. Gemini Enterprise
+Agent Platform can write one Cloud Logging entry for every inference request
+your project serves. Each entry records the model, region, consumption option,
+token counts, Provisioned Throughput usage, latency and error code. Entries
+record metadata only and never contain prompts or responses. Logging is
+supported for Gemini models that use `generateContent` and
+`streamGenerateContent`, and for Claude models that use `rawPredict` and
+`streamRawPredict`.
+
+You can turn on logging in the Google Cloud console, from the Provisioned
+Throughput page, or with the REST API. Turning on logging in the console also
+turns on detailed metrics, which chart Provisioned Throughput traffic at
+one-second resolution. With logging on, the model observability dashboard adds
+1-second resolution options to its charts for pay-as-you-go traffic. To
+attribute usage to a team, application or tenant, add request headers with the
+`x-goog-agent-platform-observability-label-` prefix, and query the entries with
+SQL in Observability Analytics.
+
+For more information, see [Log inference request
+metadata](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/inference-metadata-logging).
+
+### Feature
+
+**Computer use tool is available in General Availability**
+
+The [Computer use
+tool](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/tools/computer-use) is available
+in [General Availability
+(GA)](https://cloud.google.com/products#product-launch-stages). This release
+introduces comprehensive Human-in-the-Loop (HITL) safety governance, enabling
+developers to selectively configure or override specific confirmation policies
+(such as financial transactions or data modification) while allowing
+administrators to mandate organization-wide guardrails using the
+`configurableComputerUseToolSafetyPolicies` constraint.
+
+---
 ## 2026-10-28
 
 ### Change

@@ -2,9 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Looker</title>
   <subtitle>Changelog for Google Cloud product: Looker</subtitle>
-  <updated>2026-10-29T00:00:00+00:00</updated>
+  <updated>2026-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:looker</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/looker/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-30:announcement:0</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On November 1, 2026, several Canadian provinces and territories—Manitoba,
+Alberta, British Columbia, and parts of the Northwest Territories—transition to
+permanent daylight saving time (DST) or remain on their summer UTC offsets
+year-round. On unpatched Looker instances, these changes affect
+scheduled content delivery fire times and <a href="https://docs.cloud.google.com/looker/docs/table-calculations">table
+calculations</a> that use <code>now()</code> with the
+affected Canadian time zones (<code>America/Winnipeg</code>, <code>Canada/Central</code>,
+<code>America/Rainy_River</code>, <code>America/Edmonton</code>, <code>Canada/Mountain</code>,
+<code>America/Vancouver</code>, <code>Canada/Pacific</code>, and <code>America/Inuvik</code>). Patched
+Looker builds update the scheduler (Ruby) and browser
+(JavaScript) time zone data, while server-evaluated <code>now()</code> table calculations
+on the JVM still use the bundled JDK time zone database (<code>tzdb 2026b</code>). To learn
+how to upgrade to a patched Looker build or configure an
+alternative schedule delivery time zone, see <a href="https://docs.cloud.google.com/looker/docs/canada-permanent-dst-2026">2026 Canadian time zone
+changes</a>.</p>]]></content>
+    <summary>Starting November 1, 2026, several Canadian provinces and territories will permanently adopt daylight saving time. This change may impact scheduled content delivery and table calculations in unpatched Looker instances that use affected Canadian time zones. Upgrading to a patched Looker build or adjusting delivery time zones is recommended.</summary>
+    <title>Announcement: Canadian Time Zone Changes Affect Looker</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>
@@ -52,17 +77,10 @@ see <a href="https://docs.cloud.google.com/looker/docs/bullet-options">Bullet ch
     <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:3</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
-    <content type="html"><![CDATA[<p>Looker Continuous Integration (CI) now supports hub-and-spoke projects. If your
-Looker project uses
-<a href="https://docs.cloud.google.com/looker/docs/importing-projects#importing_local_projects">local project imports</a>
-to import files from an upstream <em>hub</em> project on the same Looker instance,
-then you can use CI to automatically test downstream <em>spoke</em> projects. Testing
-runs whenever a pull request is opened or updated on the hub project. This
-capability lets you catch breaking changes in downstream Explores, content, or
-data tests before upstream LookML changes are merged. For more information, see
-<a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#imported-project-trigger">Creating a Continuous Integration suite</a>.</p>]]></content>
-    <summary>Looker Continuous Integration (CI) now supports hub-and-spoke projects, allowing automatic testing of downstream spoke projects when pull requests are opened or updated on the upstream hub project. This feature helps catch breaking changes in Explores, content, or data tests before upstream LookML changes are merged.</summary>
-    <title>Feature: Looker CI now supports hub-and-spoke projects</title>
+    <content type="html"><![CDATA[<p>Looker now includes <a href="https://docs.cloud.google.com/looker/docs/admin-panel-database-connections#network-diagnostics">network diagnostics</a> to help you troubleshoot database connectivity issues. When a <a href="https://docs.cloud.google.com/looker/docs/connecting-to-your-db#troubleshooting">database connection test</a> fails, Looker automatically tests DNS resolution and TCP connectivity for the connection's endpoints and appends the results to the error message. To <a href="https://docs.cloud.google.com/looker/docs/admin-panel-database-connections#test-network-reachability">test network reachability</a> to any hostname and port without creating a connection, Looker administrators can click <strong>Test Reachability</strong> on the <strong>Connections</strong> page.</p>
+<p><strong>Note:</strong> This item was added on October 30, 2026.</p>]]></content>
+    <summary>Looker has introduced network diagnostics to help troubleshoot database connectivity issues. When a connection test fails, Looker automatically checks DNS resolution and TCP connectivity, providing results with the error message. Administrators can also manually test network reachability to any hostname and port.</summary>
+    <title>Feature: Network diagnostics for database connections</title>
   </entry>
   <entry>
     <author>
@@ -98,6 +116,24 @@ is now generally available.</p>]]></content>
     <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:6</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Looker Continuous Integration (CI) now supports hub-and-spoke projects. If your Looker project uses
+<a href="https://docs.cloud.google.com/looker/docs/importing-projects#importing_local_projects">local project imports</a>
+to import files from an upstream <em>hub</em> project on the same Looker instance,
+then you can use CI to automatically test downstream <em>spoke</em> projects. Testing
+runs whenever a pull request is opened or updated on the hub project. This
+capability lets you catch breaking changes in downstream Explores, content, or
+data tests before upstream LookML changes are merged. For more information, see
+<a href="https://docs.cloud.google.com/looker/docs/ci-create-suite#imported-project-trigger">Creating a Continuous Integration suite</a>.</p>]]></content>
+    <summary>Looker Continuous Integration now supports hub-and-spoke project structures. This feature allows automatic testing of downstream spoke projects whenever a pull request is opened or updated on the upstream hub project. It helps catch breaking changes in Explores, content, or data tests before upstream LookML changes are merged.</summary>
+    <title>Feature: CI Support for Hub-and-Spoke Projects</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:7</id>
+    <published>2026-10-29T00:00:00+00:00</published>
+    <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Two new legacy features,
 <a href="https://docs.cloud.google.com/looker/docs/legacy-feature-schedule#use_legacy_explore_and_merge_query_experience"><strong>Use Legacy Explore and Merge Query Experience</strong></a>
 and
@@ -114,7 +150,7 @@ embedded contexts. For more information, see
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:7</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:8</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Looker now includes a new <a href="https://docs.cloud.google.com/looker/docs/histogram-options">histogram chart</a>
@@ -128,7 +164,7 @@ counts how many values fall into each bin.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:8</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:9</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/kpi-single-value-options">KPI (Single Value)</a> chart type is
@@ -141,7 +177,7 @@ Value chart type.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:9</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:10</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The new Looker Explore and merge query experience is now generally available and
@@ -155,7 +191,7 @@ is the default interface for
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:10</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:11</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>When you enter values in a string filter on dashboards, Looks, or Explores,
@@ -169,7 +205,7 @@ chip from uncommitted text. To create a filter chip, press Enter, enter a comma
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:11</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:12</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The new
@@ -186,7 +222,7 @@ also adds LookML support for programmatically managing tile groups.</p>]]></cont
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:12</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:13</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Now available in
@@ -201,7 +237,7 @@ bug fixes that are available for their instance.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:13</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:feature:14</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <a href="https://docs.cloud.google.com/looker/docs/legacy-feature-schedule"><strong>Legacy features</strong> page</a> is now
@@ -217,7 +253,7 @@ settings</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:announcement:14</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:announcement:15</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The latest versions in the Looker (Google Cloud core) <a href="https://docs.cloud.google.com/looker/docs/looker-core-release-process#release_channels">release channels</a> are beginning deployment as follows:</p>
@@ -233,7 +269,7 @@ settings</a>.</p>]]></content>
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:breaking:15</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:breaking:16</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>Some elements of the
@@ -252,7 +288,7 @@ reference the former <strong>Feature</strong> column or <strong>Feature Name</st
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:change:16</id>
+    <id>urn:github:multani:gcp-changelog:looker:2026-10-29:change:17</id>
     <published>2026-10-29T00:00:00+00:00</published>
     <updated>2026-10-29T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>The <strong>Use Legacy Connections Page</strong>

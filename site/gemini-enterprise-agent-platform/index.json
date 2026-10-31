@@ -1,6 +1,24 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-10-30": [
+      {
+        "kind": "Feature",
+        "content": "**Inference request metadata logging (GA)**\n\nInference request metadata logging is generally available. Gemini Enterprise\nAgent Platform can write one Cloud Logging entry for every inference request\nyour project serves. Each entry records the model, region, consumption option,\ntoken counts, Provisioned Throughput usage, latency and error code. Entries\nrecord metadata only and never contain prompts or responses. Logging is\nsupported for Gemini models that use `generateContent` and\n`streamGenerateContent`, and for Claude models that use `rawPredict` and\n`streamRawPredict`.\n\nYou can turn on logging in the Google Cloud console, from the Provisioned\nThroughput page, or with the REST API. Turning on logging in the console also\nturns on detailed metrics, which chart Provisioned Throughput traffic at\none-second resolution. With logging on, the model observability dashboard adds\n1-second resolution options to its charts for pay-as-you-go traffic. To\nattribute usage to a team, application or tenant, add request headers with the\n`x-goog-agent-platform-observability-label-` prefix, and query the entries with\nSQL in Observability Analytics.\n\nFor more information, see [Log inference request\nmetadata](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/inference-metadata-logging).",
+        "summary": {
+          "title": "Inference request metadata logging now available",
+          "summary": "Log every inference request with detailed metadata, including model, region, token counts, and latency. This feature helps you monitor and analyze your model usage without exposing sensitive prompts or responses. Enable it easily through the console or API."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "**Computer use tool is available in General Availability**\n\nThe [Computer use\ntool](https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/tools/computer-use) is available\nin [General Availability\n(GA)](https://cloud.google.com/products#product-launch-stages). This release\nintroduces comprehensive Human-in-the-Loop (HITL) safety governance, enabling\ndevelopers to selectively configure or override specific confirmation policies\n(such as financial transactions or data modification) while allowing\nadministrators to mandate organization-wide guardrails using the\n`configurableComputerUseToolSafetyPolicies` constraint.",
+        "summary": {
+          "title": "Computer Use Tool Now Generally Available",
+          "summary": "The Computer Use tool is now in General Availability (GA). This release enhances safety with comprehensive Human-in-the-Loop governance, allowing developers to customize confirmation policies and administrators to set organization-wide guardrails."
+        }
+      }
+    ],
     "2026-10-28": [
       {
         "kind": "Change",

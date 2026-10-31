@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Spanner</title>
   <subtitle>Changelog for Google Cloud product: Spanner</subtitle>
-  <updated>2026-10-27T00:00:00+00:00</updated>
+  <updated>2026-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:spanner</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/spanner/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:spanner:2026-10-30:feature:0</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Spanner supports equality and ordering comparisons on JSONB and JSON values.
+You can use these values in <code>GROUP_BY</code> and <code>ORDER BY</code> clauses without first
+converting them to another data type.</p>
+<p>In GoogleSQL, you can also convert other data types to
+<code>JSON</code> using <code>CAST(expression AS JSON)</code> and compare JSON values
+directly with non-JSON values. Spanner can implicitly coerces the non-JSON
+value to <code>JSON</code> for comparison.</p>
+<p>Additionally, you can use
+search indexes to accelerate equality comparisons such as <code>=</code> or <code>IN</code> on JSONB
+and JSON columns and subpaths.</p>
+<p>For more information, see
+<a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/data-types#comparison_and_sorting">JSON comparison and sorting</a>
+, <a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/conversion_rules#json_comparison_coercion">JSON comparison coercion</a>
+, <a href="https://docs.cloud.google.com/spanner/docs/reference/standard-sql/conversion_functions#cast_as_json">CAST AS JSON</a>
+, <a href="https://docs.cloud.google.com/spanner/docs/full-text-search/json-indexes">JSON search indexes</a>
+, and <a href="https://docs.cloud.google.com/spanner/docs/working-with-jsonb">Working with JSONB</a>.</p>]]></content>
+    <summary>Spanner now supports equality and ordering comparisons on JSONB and JSON values directly in GROUP BY and ORDER BY clauses. You can also leverage search indexes to accelerate equality comparisons on JSON columns and subpaths.</summary>
+    <title>Feature: JSON and JSONB comparisons and ordering</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

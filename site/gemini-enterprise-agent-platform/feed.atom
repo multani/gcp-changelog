@@ -2,9 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-10-28T00:00:00+00:00</updated>
+  <updated>2026-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-30:feature:0</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Inference request metadata logging (GA)</strong></p>
+<p>Inference request metadata logging is generally available. Gemini Enterprise
+Agent Platform can write one Cloud Logging entry for every inference request
+your project serves. Each entry records the model, region, consumption option,
+token counts, Provisioned Throughput usage, latency and error code. Entries
+record metadata only and never contain prompts or responses. Logging is
+supported for Gemini models that use <code>generateContent</code> and
+<code>streamGenerateContent</code>, and for Claude models that use <code>rawPredict</code> and
+<code>streamRawPredict</code>.</p>
+<p>You can turn on logging in the Google Cloud console, from the Provisioned
+Throughput page, or with the REST API. Turning on logging in the console also
+turns on detailed metrics, which chart Provisioned Throughput traffic at
+one-second resolution. With logging on, the model observability dashboard adds
+1-second resolution options to its charts for pay-as-you-go traffic. To
+attribute usage to a team, application or tenant, add request headers with the
+<code>x-goog-agent-platform-observability-label-</code> prefix, and query the entries with
+SQL in Observability Analytics.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/inference-metadata-logging">Log inference request
+metadata</a>.</p>]]></content>
+    <summary>Log every inference request with detailed metadata, including model, region, token counts, and latency. This feature helps you monitor and analyze your model usage without exposing sensitive prompts or responses. Enable it easily through the console or API.</summary>
+    <title>Feature: Inference request metadata logging now available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-10-30:feature:1</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Computer use tool is available in General Availability</strong></p>
+<p>The <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/tools/computer-use">Computer use
+tool</a> is available
+in <a href="https://cloud.google.com/products#product-launch-stages">General Availability
+(GA)</a>. This release
+introduces comprehensive Human-in-the-Loop (HITL) safety governance, enabling
+developers to selectively configure or override specific confirmation policies
+(such as financial transactions or data modification) while allowing
+administrators to mandate organization-wide guardrails using the
+<code>configurableComputerUseToolSafetyPolicies</code> constraint.</p>]]></content>
+    <summary>The Computer Use tool is now in General Availability (GA). This release enhances safety with comprehensive Human-in-the-Loop governance, allowing developers to customize confirmation policies and administrators to set organization-wide guardrails.</summary>
+    <title>Feature: Computer Use Tool Now Generally Available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

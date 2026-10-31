@@ -3012,6 +3012,44 @@
 
 
 <h1 id="cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</h1>
+<h2 id="2026-10-30">2026-10-30</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Starting November 1, 2026, at 02:00 a.m. local time, unpatched Cloud SQL for PostgreSQL
+instances that evaluate certain local Canadian time zones (across Alberta,
+British Columbia, Manitoba, and Northwest Territories) will lag by one hour
+because the instances still follow the autumn fall back schedule.
+Stored timestamp data isn't modified.</p>
+<p><strong>What should I do?</strong></p>
+<p>Before November 1, 2026, do one of the following fixes:</p>
+<ul>
+<li><strong>Apply self-service maintenance (Recommended):</strong> If your applications rely
+  on database functions to calculate, schedule, or display times in these
+  Canadian time zones (such as Calgary, Edmonton, Vancouver, or Winnipeg),
+  then update your instances to the latest maintenance release using the
+  Google Cloud console or the gcloud CLI.</li>
+</ul>
+<p>Updated time zone rules that reflect permanent standard daylight offsets across
+  Alberta, British Columbia, Manitoba, and Northwest Territories are supported
+  in Cloud SQL for PostgreSQL <a href="https://docs.cloud.google.com/sql/docs/postgres/maintenance-changelog">maintenance release <code>*.R20260712.01_44</code> or later</a>.</p>
+<p>For more information, see
+  <a href="https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance">Perform self-service maintenance</a>.
+* <strong>Database configuration stopgap:</strong> If your organization can't
+  restart instances before November 1, 2026, then you can set your database
+  session time zone without downtime to an anchor zone.</p>
+<p><code>ALTER DATABASE database_name SET timezone TO 'anchor_zone';</code></p>
+<p>Replace the following:</p>
+<ul>
+<li><code>database_name</code>: the name of your database.</li>
+<li>
+<p><code>anchor_zone</code>: the anchor zone to use as the time zone
+    for your database. Specify an anchor zone that operates on a permanent
+    offset.</p>
+<p>For example, <code>'America/Regina'</code> for Alberta and Northwest Territories
+(UTC-6), <code>'America/Whitehorse'</code> for British Columbia (UTC-7), or
+<code>'America/Coral_Harbour'</code> for Manitoba (UTC-5).</p>
+</li>
+</ul>
+<hr />
 <h2 id="2026-10-23">2026-10-23</h2>
 <h3 id="security">Security</h3>
 <p>In response to <a href="https://docs.cloud.google.com/support/bulletins#gcp-2026-071">GCP-2026-071</a>, Google is
@@ -3040,6 +3078,46 @@ will be published when the self-service maintenance fix is available.</p>
 <hr />
 <h2 id="2026-10-16">2026-10-16</h2>
 <h3 id="change">Change</h3>
+<p>The rollout of the following Cloud SQL for PostgreSQL minor version and
+extension upgrades is complete:</p>
+<p><strong>Minor versions</strong></p>
+<ul>
+<li>14.23 is upgraded to 14.24.</li>
+<li>15.18 is upgraded to 15.19.</li>
+<li>16.14 is upgraded to 16.15.</li>
+<li>17.10 is upgraded to 17.11.</li>
+<li>18.4 is upgraded to 18.6. This version includes a backported fix for
+  <a href="https://git.postgresql.org/gitweb/?p=postgresql.git;h=caa463e3f8d2b9c1441e6a59c50f90b8598439f3">PostgreSQL bug #19616</a>
+  that prevents logical decoding from emitting <code>STREAM_ABORT</code> messages for
+  unstreamed transactions when an aborted transaction with a subtransaction is
+  truncated during memory eviction.</li>
+</ul>
+<p><strong>Extensions</strong></p>
+<ul>
+<li><code>hll</code> (<code>postgresql-hll</code>) is upgraded from 2.18 to 2.20.</li>
+<li><code>pg_qualstats</code> is upgraded from 2.1.2 to 2.1.4.</li>
+<li><code>pglogical</code> is upgraded from 2.4.5 (for PostgreSQL 17 and earlier) and 2.4.6
+  (for PostgreSQL 18) to 2.4.8.</li>
+<li><code>pgTAP</code> is upgraded from 1.3.0 to 1.3.4.</li>
+<li><code>pgtt</code> is upgraded from 4.0 to 4.6.0 for PostgreSQL 12 and later.</li>
+<li><code>PL/Proxy</code> is upgraded from 2.11.0 to 2.12.0.</li>
+<li><code>PostGIS</code> is upgraded from 3.5.2 (for PostgreSQL 13 through 17) and 3.6.0
+  (for PostgreSQL 18) to 3.6.4 for PostgreSQL 13 and later.</li>
+<li><code>roaringbitmap</code> (<code>pg_roaringbitmap</code>) is upgraded from 0.5 to 1.2 for
+  PostgreSQL 12 and later.</li>
+</ul>
+<p>The new maintenance version is
+<a href="https://docs.cloud.google.com/sql/docs/postgres/maintenance-changelog"><code>[PostgreSQL version].R20261013.02_04</code></a>.
+If you use a maintenance window, then the updates to the minor and extension
+versions happen according to the timeframe that you set in the window.
+Otherwise, the updates occur within the next few weeks.</p>
+<p>For more information about checking your maintenance version, see
+<a href="https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance">Perform self-service maintenance</a>.
+To find your maintenance window or to manage maintenance updates, see
+<a href="https://docs.cloud.google.com/sql/docs/postgres/set-maintenance-window">Find and set maintenance windows</a>.
+For more information about supported extensions, see
+<a href="https://docs.cloud.google.com/sql/docs/postgres/extensions">Configure PostgreSQL extensions</a>.</p>
+<h3 id="change_1">Change</h3>
 <p>Cloud SQL for PostgreSQL now supports enabling <a href="https://docs.cloud.google.com/sql/docs/postgres/managed-connection-pooling">Managed Connection Pooling</a>
 on existing <a href="https://docs.cloud.google.com/sql/docs/postgres/about-private-service-connect">Private Service Connect</a>
 instances. Previously, Cloud SQL supported enabling Managed Connection Pooling only
@@ -3087,14 +3165,14 @@ and re-enable the integration to switch to near real-time updates.</p>
 <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration#enable-dataplex-catalog">Enable the integration of Knowledge Catalog on an existing Cloud SQL instance</a>.</p>
 <hr />
 <h2 id="2026-10-06">2026-10-06</h2>
-<h3 id="change_1">Change</h3>
+<h3 id="change_2">Change</h3>
 <p>Cloud SQL for PostgreSQL now supports up to 129,024 concurrent connections for
 Private Service Connect enabled instances created on or after September 30, 2026
 with 16 or more vCPUs.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/configure-private-service-connect#limitations">Configure Private Service Connect</a>.</p>
 <hr />
 <h2 id="2026-09-29">2026-09-29</h2>
-<h3 id="change_2">Change</h3>
+<h3 id="change_3">Change</h3>
 <p>You can use the pgAudit extension to prevent string literals that might indicate
 sensitive information, such as passwords and secrets, from appearing in your log
 query results. This release provides minor bug fixes to the previous version.</p>
@@ -3139,7 +3217,7 @@ following regions:</p>
 </ul>
 <hr />
 <h2 id="2026-09-17">2026-09-17</h2>
-<h3 id="change_3">Change</h3>
+<h3 id="change_4">Change</h3>
 <p>Cloud SQL for PostgreSQL now automatically enables point-in-time recovery
 (PITR) in a separate, asynchronous operation after disaster recovery (DR)
 switchover and replica failover operations complete. Because PITR enablement no
@@ -3241,7 +3319,7 @@ query results.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/pg-audit">Audit for PostgreSQL using pgAudit</a>.</p>
 <hr />
 <h2 id="2026-08-27">2026-08-27</h2>
-<h3 id="change_4">Change</h3>
+<h3 id="change_5">Change</h3>
 <p>The rollout of the following extension upgrades is complete:</p>
 <ul>
 <li><code>pg_partman</code> is upgraded from 5.2.4 to 5.4.3.</li>
@@ -3285,7 +3363,7 @@ production database fleet.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/use-cloudsql-mcp#sqlcommenter">sqlcommenter tags</a>.</p>
 <hr />
 <h2 id="2026-08-07">2026-08-07</h2>
-<h3 id="change_5">Change</h3>
+<h3 id="change_6">Change</h3>
 <p>Newly created instances configured with <a href="https://docs.cloud.google.com/sql/docs/postgres/high-availability">high availability (HA)</a>
 now have <a href="https://docs.cloud.google.com/sql/docs/postgres/dataplex-catalog-integration">Knowledge Catalog (formerly Dataplex Universal Catalog)</a>
 enabled by default.</p>
@@ -3317,7 +3395,7 @@ enabled, you can also enable a global write endpoint DNS that automatically
 resolves to your current primary instance.</p>
 <hr />
 <h2 id="2026-08-03">2026-08-03</h2>
-<h3 id="change_6">Change</h3>
+<h3 id="change_7">Change</h3>
 <p>You can change the backup plan for your
 <a href="https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/manage-enhanced-backups">Cloud SQL enhanced backups</a>
 without first removing the existing plan.
@@ -3325,7 +3403,7 @@ For more information, see
 <a href="https://docs.cloud.google.com/sql/docs/postgres/backup-recovery/manage-enhanced-backups#change-plan">Change your instance's associated backup plan</a>.</p>
 <hr />
 <h2 id="2026-07-31">2026-07-31</h2>
-<h3 id="change_7">Change</h3>
+<h3 id="change_8">Change</h3>
 <p>Starting on August 1, 2026, when you create or clone a Cloud SQL instance
 enabled with Private Service Connect, or when you enable Private Service Connect
 for an existing instance, then <a href="https://docs.cloud.google.com/vpc/docs/about-controlling-access-published-services#connection-reconciliation">connection reconciliation</a>
@@ -3358,7 +3436,7 @@ replica</a>.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/executesql-instance#configure-db-user">Execute SQL statements on a Cloud SQL instance</a>.</p>
 <hr />
 <h2 id="2026-06-24">2026-06-24</h2>
-<h3 id="change_8">Change</h3>
+<h3 id="change_9">Change</h3>
 <p>Cloud SQL now supports Private Service Connect outbound connectivity on the
 following additional types of instances:</p>
 <ul>
@@ -3428,7 +3506,7 @@ with the data that is relevant and authorized to them.</p>
 <p>This feature is in <a href="https://cloud.google.com/products#product-launch-stages">Preview</a>.</p>
 <hr />
 <h2 id="2026-05-12">2026-05-12</h2>
-<h3 id="change_9">Change</h3>
+<h3 id="change_10">Change</h3>
 <p>The command for upgrading Cloud SQL instances to the new network architecture
 has been re-enabled.</p>
 <p>For more information, see <a href="https://docs.cloud.google.com/sql/docs/postgres/upgrade-cloud-sql-instance-new-network-architecture">Upgrade an instance to the new network architecture</a>.</p>
@@ -3617,7 +3695,7 @@ For more information, see
 <a href="https://docs.cloud.google.com/sql/docs/postgres/use-brute-force-protection">Use brute-force protection</a>.</p>
 <hr />
 <h2 id="2026-02-18">2026-02-18</h2>
-<h3 id="change_10">Change</h3>
+<h3 id="change_11">Change</h3>
 <p>After March 17, 2026, when you enable the Cloud SQL Admin API
 (<code>sqladmin.googleapis.com</code>)`, the Cloud SQL remote MCP server is
 enabled automatically.</p>
@@ -3631,7 +3709,7 @@ For more information about controlling MCP use, see
 <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>New best practices are available for securing generative AI agents using
 Model Context Protocol (MCP) with Google Cloud databases. This guide covers
 key security measures like least privilege, native database controls, and
@@ -4008,6 +4086,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/postgres/ba
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-postgresql">Cloud SQL for PostgreSQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-30" class="nav-link">2026-10-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-23" class="nav-link">2026-10-23</a>
           </li>

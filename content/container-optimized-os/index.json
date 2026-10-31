@@ -1,6 +1,64 @@
 {
   "name": "Container Optimized OS",
   "entries": {
+    "2026-10-30": [
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features for Your Projects",
+          "summary": "We've released exciting new features designed to enhance your project management experience. Explore the latest updates to streamline your workflows and boost productivity. These improvements are now available for you to integrate into your daily operations."
+        }
+      },
+      {
+        "kind": "cos-133-19999-44-174",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.18.55](https://cos.googlesource.com/third_party/kernel/+/ebad2aad500721882e43d07ea6b43fef5882463d ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/19999.44.174/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "Container Optimized OS Update",
+          "summary": "Container Optimized OS version 19999.44.174 is now available, featuring updates to the kernel, Docker, and containerd. This release also includes support for GPU drivers."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-42508, CVE-2026-39830, CVE-2026-39833 in google-osconfig-agent.",
+        "summary": {
+          "title": "Security updates for OS Config agent",
+          "summary": "Critical security vulnerabilities in the OS Config agent have been addressed. These updates resolve CVE-2026-42508, CVE-2026-39830, and CVE-2026-39833, ensuring the continued security of your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-82474 in app-admin/sudo.",
+        "summary": {
+          "title": "Security Update for sudo",
+          "summary": "A security vulnerability (CVE-2026-82474) affecting the sudo application has been resolved. This update ensures the continued security of your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated app-arch/brotli to 1.0.10. This resolves CVE-2026-111497.",
+        "summary": {
+          "title": "Security update for brotli",
+          "summary": "The brotli package has been updated to version 1.0.10, addressing CVE-2026-111497. This update is important for maintaining the security of systems that use brotli compression."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-98432 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Update",
+          "summary": "A critical security vulnerability, CVE-2026-98432, affecting the Linux kernel has been successfully patched. This update is essential for maintaining system integrity and protecting against potential exploits. Applying this fix will bolster your system's defenses against known threats."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "Runtime sysctl changes:\n\n* Changed: fs.epoll.max\\_user\\_watches: 1807671 -> 1807627\n* Changed: fs.fanotify.max\\_user\\_marks: 68382 -> 68378\n* Changed: fs.inotify.max\\_user\\_watches: 64161 -> 64158\n* Changed: kernel.threads-max: 63445 -> 63443\n* Changed: net.ipv4.tcp\\_mem: 93972 125298 187944 -> 93969 125295 187938\n* Changed: net.ipv4.udp\\_mem: 187947 250597 375894 -> 187941 250590 375882\n* Changed: user.max\\_cgroup\\_namespaces: 31722 -> 31721\n* Changed: user.max\\_fanotify\\_marks: 68382 -> 68378\n* Changed: user.max\\_inotify\\_watches: 64161 -> 64158\n* Changed: user.max\\_ipc\\_namespaces: 31722 -> 31721\n* Changed: user.max\\_mnt\\_namespaces: 31722 -> 31721\n* Changed: user.max\\_net\\_namespaces: 31722 -> 31721\n* Changed: user.max\\_pid\\_namespaces: 31722 -> 31721\n* Changed: user.max\\_time\\_namespaces: 31722 -> 31721\n* Changed: user.max\\_user\\_namespaces: 31722 -> 31721\n* Changed: user.max\\_uts\\_namespaces: 31722 -> 31721",
+        "summary": {
+          "title": "Runtime sysctl adjustments",
+          "summary": "Several runtime sysctl parameters have been slightly adjusted. These changes include modifications to file system event limits, kernel thread maximums, and network memory settings. The adjustments are minor and aim to optimize system resource allocation."
+        }
+      }
+    ],
     "2026-10-27": [
       {
         "kind": "Change",
@@ -192,6 +250,14 @@
         "summary": {
           "title": "Security Updates for Cos-Extensions",
           "summary": "Multiple security vulnerabilities in cos-extensions have been addressed. This update includes fixes for numerous CVEs, enhancing the overall security posture. We recommend applying these updates promptly to protect your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-98432 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-98432, has been fixed. This update addresses the issue to enhance system security."
         }
       },
       {
@@ -717,6 +783,14 @@
         }
       },
       {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-98432 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-98432, has been resolved. This update ensures improved security for systems running the Linux kernel."
+        }
+      },
+      {
         "kind": "Change",
         "content": "",
         "summary": {
@@ -837,6 +911,14 @@
         }
       },
       {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-98432 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A security vulnerability in the Linux kernel, CVE-2026-98432, has been fixed. This update addresses a critical security issue to enhance system protection."
+        }
+      },
+      {
         "kind": "Change",
         "content": "",
         "summary": {
@@ -922,6 +1004,14 @@
         "summary": {
           "title": "Security updates for cri-tools",
           "summary": "Critical vulnerabilities CVE-2026-46595 and CVE-2026-39832 have been fixed in cri-tools. This update ensures the security and stability of your container runtime interface tools."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-98432 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security update",
+          "summary": "A critical security vulnerability in the Linux kernel has been addressed. This update resolves CVE-2026-98432, enhancing the overall security of systems running the Linux kernel."
         }
       },
       {

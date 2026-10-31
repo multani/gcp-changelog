@@ -1,5 +1,12 @@
 # Agent Registry
 
+## 2026-10-30
+
+### Feature
+
+Agent Registry supports cross-project [management boundaries](https://docs.cloud.google.com/agent-registry/boundaries-and-topology) ([Preview](https://cloud.google.com/products#product-launch-stages)), letting you centrally discover, search, and govern AI agents, Model Context Protocol (MCP) servers, and tools across multiple Google Cloud projects from a central [management project](https://docs.cloud.google.com/agent-registry/boundaries-and-topology#management-project). For more information, see [Cross-project boundaries](https://docs.cloud.google.com/agent-registry/boundaries-and-topology) and [Configure a management boundary for multiple projects](https://docs.cloud.google.com/agent-registry/setup#configure-boundary).
+
+---
 ## 2026-07-23
 
 ### Feature

@@ -1,5 +1,13 @@
 # Cloud Run
 
+## 2026-10-30
+
+### Feature
+
+You can run Cloud Run jobs with [GPUs enabled](https://docs.cloud.google.com/run/docs/configuring/jobs/gpu) for [up to 12 hours](https://docs.cloud.google.com/run/docs/tutorials/long-running-gpu-jobs)
+([Preview](https://cloud.google.com/products)).
+
+---
 ## 2026-10-24
 
 ### Security

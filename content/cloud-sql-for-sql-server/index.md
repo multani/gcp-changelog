@@ -1,5 +1,40 @@
 # Cloud SQL for SQL Server
 
+## 2026-10-30
+
+### Announcement
+
+Starting November 1, 2026, at 02:00 a.m. local time, Cloud SQL for SQL Server
+instances that evaluate certain local Canadian time zones (across Alberta,
+British Columbia, Manitoba, and Northwest Territories) will lag by one hour
+because the instances still follow the autumn fall back schedule.
+Stored timestamp data isn't modified.
+
+**What should I do?**
+
+For SQL Server, Microsoft has
+[published guidance](https://devblogs.microsoft.com/azure-sql/canadas-2026-time-zone-updates-guidance-for-microsoft-sql/),
+recommending updating each applicable instance's time zone to the Windows time
+zone with the matching fixed offset.
+
+Update each instance's time zone to the Windows time zone with the matching
+fixed offset:
+
+| Jurisdiction | Current time zone | Recommended time zone | Fixed offset |
+| --- | --- | --- | --- |
+| British Columbia | Pacific Standard Time | Yukon Standard Time | UTC-07:00 |
+| Alberta / Inuvik, NWT | Mountain Standard Time | Canada Central Standard Time | UTC-06:00 |
+| Manitoba | Central Standard Time | Eastern Standard Time (Mexico) | UTC-05:00 |
+
+You can make the change in the Google Cloud console (**Edit instance** > **Flags and parameters** > **Time zone**) or with gcloud:
+
+```
+gcloud sql instances patch INSTANCE_NAME \
+  --project=PROJECT_ID \
+  --time-zone="Yukon Standard Time"
+```
+
+---
 ## 2026-10-23
 
 ### Security

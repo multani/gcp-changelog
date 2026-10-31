@@ -1,5 +1,12 @@
 # Secure Source Manager
 
+## 2026-10-30
+
+### Feature
+
+You can now enable [vulnerability scanning](https://docs.cloud.google.com/secure-source-manager/docs/enable-vulnerability-scanning) to detect known vulnerabilities in your dependencies.
+
+---
 ## 2026-09-29
 
 ### Feature

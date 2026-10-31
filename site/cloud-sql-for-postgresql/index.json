@@ -1,6 +1,16 @@
 {
   "name": "Cloud SQL for PostgreSQL",
   "entries": {
+    "2026-10-30": [
+      {
+        "kind": "Announcement",
+        "content": "Starting November 1, 2026, at 02:00 a.m. local time, unpatched Cloud SQL for PostgreSQL\ninstances that evaluate certain local Canadian time zones (across Alberta,\nBritish Columbia, Manitoba, and Northwest Territories) will lag by one hour\nbecause the instances still follow the autumn fall back schedule.\nStored timestamp data isn't modified.\n\n**What should I do?**\n\nBefore November 1, 2026, do one of the following fixes:\n\n* **Apply self-service maintenance (Recommended):** If your applications rely\n  on database functions to calculate, schedule, or display times in these\n  Canadian time zones (such as Calgary, Edmonton, Vancouver, or Winnipeg),\n  then update your instances to the latest maintenance release using the\n  Google Cloud console or the gcloud CLI.\n\n  Updated time zone rules that reflect permanent standard daylight offsets across\n  Alberta, British Columbia, Manitoba, and Northwest Territories are supported\n  in Cloud SQL for PostgreSQL [maintenance release `*.R20260712.01_44` or later](https://docs.cloud.google.com/sql/docs/postgres/maintenance-changelog).\n\n  For more information, see\n  [Perform self-service maintenance](https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance).\n* **Database configuration stopgap:** If your organization can't\n  restart instances before November 1, 2026, then you can set your database\n  session time zone without downtime to an anchor zone.\n\n  ```\n  ALTER DATABASE database_name SET timezone TO 'anchor_zone';\n  ```\n\n  Replace the following:\n\n  + `database_name`: the name of your database.\n  + `anchor_zone`: the anchor zone to use as the time zone\n    for your database. Specify an anchor zone that operates on a permanent\n    offset.\n\n    For example, `'America/Regina'` for Alberta and Northwest Territories\n    (UTC-6), `'America/Whitehorse'` for British Columbia (UTC-7), or\n    `'America/Coral_Harbour'` for Manitoba (UTC-5).",
+        "summary": {
+          "title": "Cloud SQL for PostgreSQL time zone update",
+          "summary": "Instances running Cloud SQL for PostgreSQL in certain Canadian time zones may experience a one-hour lag starting November 1, 2026, due to outdated daylight saving rules. Apply maintenance or adjust database session time zones before this date to ensure accurate timekeeping. Stored data will not be affected."
+        }
+      }
+    ],
     "2026-10-23": [
       {
         "kind": "Security",
@@ -12,6 +22,14 @@
       }
     ],
     "2026-10-16": [
+      {
+        "kind": "Change",
+        "content": "The rollout of the following Cloud SQL for PostgreSQL minor version and\nextension upgrades is complete:\n\n**Minor versions**\n\n* 14.23 is upgraded to 14.24.\n* 15.18 is upgraded to 15.19.\n* 16.14 is upgraded to 16.15.\n* 17.10 is upgraded to 17.11.\n* 18.4 is upgraded to 18.6. This version includes a backported fix for\n  [PostgreSQL bug #19616](https://git.postgresql.org/gitweb/?p=postgresql.git;h=caa463e3f8d2b9c1441e6a59c50f90b8598439f3)\n  that prevents logical decoding from emitting `STREAM_ABORT` messages for\n  unstreamed transactions when an aborted transaction with a subtransaction is\n  truncated during memory eviction.\n\n**Extensions**\n\n* `hll` (`postgresql-hll`) is upgraded from 2.18 to 2.20.\n* `pg_qualstats` is upgraded from 2.1.2 to 2.1.4.\n* `pglogical` is upgraded from 2.4.5 (for PostgreSQL 17 and earlier) and 2.4.6\n  (for PostgreSQL 18) to 2.4.8.\n* `pgTAP` is upgraded from 1.3.0 to 1.3.4.\n* `pgtt` is upgraded from 4.0 to 4.6.0 for PostgreSQL 12 and later.\n* `PL/Proxy` is upgraded from 2.11.0 to 2.12.0.\n* `PostGIS` is upgraded from 3.5.2 (for PostgreSQL 13 through 17) and 3.6.0\n  (for PostgreSQL 18) to 3.6.4 for PostgreSQL 13 and later.\n* `roaringbitmap` (`pg_roaringbitmap`) is upgraded from 0.5 to 1.2 for\n  PostgreSQL 12 and later.\n\nThe new maintenance version is\n[`[PostgreSQL version].R20261013.02_04`](https://docs.cloud.google.com/sql/docs/postgres/maintenance-changelog).\nIf you use a maintenance window, then the updates to the minor and extension\nversions happen according to the timeframe that you set in the window.\nOtherwise, the updates occur within the next few weeks.\n\nFor more information about checking your maintenance version, see\n[Perform self-service maintenance](https://docs.cloud.google.com/sql/docs/postgres/self-service-maintenance).\nTo find your maintenance window or to manage maintenance updates, see\n[Find and set maintenance windows](https://docs.cloud.google.com/sql/docs/postgres/set-maintenance-window).\nFor more information about supported extensions, see\n[Configure PostgreSQL extensions](https://docs.cloud.google.com/sql/docs/postgres/extensions).",
+        "summary": {
+          "title": "PostgreSQL Minor Version and Extension Upgrades Complete",
+          "summary": "The latest minor versions for PostgreSQL and several key extensions have been successfully upgraded. These updates include performance improvements and bug fixes, ensuring a more robust database environment. Customers using maintenance windows will see these changes applied according to their schedule."
+        }
+      },
       {
         "kind": "Change",
         "content": "Cloud SQL for PostgreSQL now supports enabling [Managed Connection Pooling](https://docs.cloud.google.com/sql/docs/postgres/managed-connection-pooling)\non existing [Private Service Connect](https://docs.cloud.google.com/sql/docs/postgres/about-private-service-connect)\ninstances. Previously, Cloud SQL supported enabling Managed Connection Pooling only\non new instances using Private Service Connect.\n\nFor more information, see [Managed Connection Pooling overview](https://docs.cloud.google.com/sql/docs/postgres/managed-connection-pooling)\nand [Configure Managed Connection Pooling](https://docs.cloud.google.com/sql/docs/postgres/configure-mcp).",

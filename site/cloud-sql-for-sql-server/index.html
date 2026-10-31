@@ -3012,6 +3012,56 @@
 
 
 <h1 id="cloud-sql-for-sql-server">Cloud SQL for SQL Server</h1>
+<h2 id="2026-10-30">2026-10-30</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Starting November 1, 2026, at 02:00 a.m. local time, Cloud SQL for SQL Server
+instances that evaluate certain local Canadian time zones (across Alberta,
+British Columbia, Manitoba, and Northwest Territories) will lag by one hour
+because the instances still follow the autumn fall back schedule.
+Stored timestamp data isn't modified.</p>
+<p><strong>What should I do?</strong></p>
+<p>For SQL Server, Microsoft has
+<a href="https://devblogs.microsoft.com/azure-sql/canadas-2026-time-zone-updates-guidance-for-microsoft-sql/">published guidance</a>,
+recommending updating each applicable instance's time zone to the Windows time
+zone with the matching fixed offset.</p>
+<p>Update each instance's time zone to the Windows time zone with the matching
+fixed offset:</p>
+<table>
+<thead>
+<tr>
+<th>Jurisdiction</th>
+<th>Current time zone</th>
+<th>Recommended time zone</th>
+<th>Fixed offset</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>British Columbia</td>
+<td>Pacific Standard Time</td>
+<td>Yukon Standard Time</td>
+<td>UTC-07:00</td>
+</tr>
+<tr>
+<td>Alberta / Inuvik, NWT</td>
+<td>Mountain Standard Time</td>
+<td>Canada Central Standard Time</td>
+<td>UTC-06:00</td>
+</tr>
+<tr>
+<td>Manitoba</td>
+<td>Central Standard Time</td>
+<td>Eastern Standard Time (Mexico)</td>
+<td>UTC-05:00</td>
+</tr>
+</tbody>
+</table>
+<p>You can make the change in the Google Cloud console (<strong>Edit instance</strong> &gt; <strong>Flags and parameters</strong> &gt; <strong>Time zone</strong>) or with gcloud:</p>
+<pre><code>gcloud sql instances patch INSTANCE_NAME \
+  --project=PROJECT_ID \
+  --time-zone=&quot;Yukon Standard Time&quot;
+</code></pre>
+<hr />
 <h2 id="2026-10-23">2026-10-23</h2>
 <h3 id="security">Security</h3>
 <p>In response to <a href="https://docs.cloud.google.com/support/bulletins#gcp-2026-071">GCP-2026-071</a>, Google is
@@ -3459,7 +3509,7 @@ For more information about controlling MCP use, see
 <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>New best practices are available for securing generative AI agents using
 Model Context Protocol (MCP) with Google Cloud databases. This guide covers
 key security measures like least privilege, native database controls, and
@@ -3609,6 +3659,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/sqlserver/b
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-sql-server">Cloud SQL for SQL Server</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-30" class="nav-link">2026-10-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-23" class="nav-link">2026-10-23</a>
           </li>

@@ -3012,6 +3012,36 @@
 
 
 <h1 id="cloud-sql-for-mysql">Cloud SQL for MySQL</h1>
+<h2 id="2026-10-30">2026-10-30</h2>
+<h3 id="announcement">Announcement</h3>
+<p>Starting November 1, 2026, at 02:00 a.m. local time, unpatched Cloud SQL for MySQL
+instances that evaluate certain local Canadian time zones (across Alberta,
+British Columbia, Manitoba, and Northwest Territories) will lag by one hour
+because the instances still follow the autumn fall back schedule.
+Stored timestamp data isn't modified.</p>
+<p><strong>What should I do?</strong></p>
+<p>Before November 1, 2026, do one of the following fixes:</p>
+<ul>
+<li><strong>Apply self-service maintenance (Recommended):</strong> If your applications rely
+  on database functions to calculate, schedule, or display times in these
+  Canadian time zones (such as Calgary, Edmonton, Vancouver, or Winnipeg),
+  then update your instances to the latest maintenance release using the
+  Google Cloud console or the gcloud CLI.</li>
+</ul>
+<p>Updated time zone rules that reflect permanent standard daylight offsets across
+  Alberta, British Columbia, Manitoba, and Northwest Territories are supported
+  in Cloud SQL for MySQL <a href="https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog">maintenance release <code>*.R20260726.00_36</code> or later</a>.</p>
+<p>For more information, see
+  <a href="https://docs.cloud.google.com/sql/docs/mysql/self-service-maintenance">Perform self-service maintenance</a>.
+* <strong>Database configuration stopgap:</strong> If your organization can't
+  restart instances before November 1, 2026, then you can set the time zone
+  for your database session without causing downtime for your instance. Set
+  the <code>default_time_zone</code> flag for the database session to your target fixed
+  numeric offset (for example, <code>'-06:00'</code> for Alberta, <code>'-07:00'</code> for British
+  Columbia, or <code>'-05:00'</code> for Manitoba).</p>
+<p>For more information about configuring database flags, see
+  <a href="https://docs.cloud.google.com/sql/docs/mysql/flags">Configure database flags</a>.</p>
+<hr />
 <h2 id="2026-10-28">2026-10-28</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://docs.cloud.google.com/sql/docs/mysql/replication/read-replica-indexes#managed-replica-indexes">Managed replica indexes</a>
@@ -3767,7 +3797,7 @@ For more information about controlling MCP use, see
 <a href="https://docs.cloud.google.com/mcp/control-mcp-use-iam">Control MCP use with IAM</a>.</p>
 <hr />
 <h2 id="2026-02-17">2026-02-17</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>New best practices are available for securing generative AI agents using
 Model Context Protocol (MCP) with Google Cloud databases. This guide covers
 key security measures like least privilege, native database controls, and
@@ -4076,6 +4106,9 @@ For more information, see <a href="https://cloud.google.com/sql/docs/mysql/backu
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#cloud-sql-for-mysql">Cloud SQL for MySQL</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-30" class="nav-link">2026-10-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-28" class="nav-link">2026-10-28</a>
           </li>

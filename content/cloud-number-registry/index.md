@@ -1,5 +1,16 @@
 # Cloud Number Registry
 
+## 2026-10-30
+
+### Breaking
+
+Starting November 25, 2026, if your configuration doesn't have a designated
+project, Cloud Number Registry will stop discovering resources.
+
+For more information, see [Project designation
+enforcement](https://docs.cloud.google.com/number-registry/overview#project-designation-enforcement).
+
+---
 ## 2026-09-16
 
 ### Breaking

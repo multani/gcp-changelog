@@ -1,5 +1,16 @@
 # BigQuery
 
+## 2026-10-30
+
+### Feature
+
+You can now retrieve query results
+[directly in the Apache Arrow format](https://docs.cloud.google.com/bigquery/docs/running-queries#arrow-format)
+for faster retrieval speed and improved serialization efficiency. This feature
+is in
+[Preview](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-27
 
 ### Feature

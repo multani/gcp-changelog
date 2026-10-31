@@ -2,9 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud SQL for MySQL</title>
   <subtitle>Changelog for Google Cloud product: Cloud SQL for MySQL</subtitle>
-  <updated>2026-10-28T00:00:00+00:00</updated>
+  <updated>2026-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-sql-for-mysql/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-sql-for-mysql:2026-10-30:announcement:0</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting November 1, 2026, at 02:00 a.m. local time, unpatched Cloud SQL for MySQL
+instances that evaluate certain local Canadian time zones (across Alberta,
+British Columbia, Manitoba, and Northwest Territories) will lag by one hour
+because the instances still follow the autumn fall back schedule.
+Stored timestamp data isn't modified.</p>
+<p><strong>What should I do?</strong></p>
+<p>Before November 1, 2026, do one of the following fixes:</p>
+<ul>
+<li><strong>Apply self-service maintenance (Recommended):</strong> If your applications rely
+  on database functions to calculate, schedule, or display times in these
+  Canadian time zones (such as Calgary, Edmonton, Vancouver, or Winnipeg),
+  then update your instances to the latest maintenance release using the
+  Google Cloud console or the gcloud CLI.</li>
+</ul>
+<p>Updated time zone rules that reflect permanent standard daylight offsets across
+  Alberta, British Columbia, Manitoba, and Northwest Territories are supported
+  in Cloud SQL for MySQL <a href="https://docs.cloud.google.com/sql/docs/mysql/maintenance-changelog">maintenance release <code>*.R20260726.00_36</code> or later</a>.</p>
+<p>For more information, see
+  <a href="https://docs.cloud.google.com/sql/docs/mysql/self-service-maintenance">Perform self-service maintenance</a>.
+* <strong>Database configuration stopgap:</strong> If your organization can't
+  restart instances before November 1, 2026, then you can set the time zone
+  for your database session without causing downtime for your instance. Set
+  the <code>default_time_zone</code> flag for the database session to your target fixed
+  numeric offset (for example, <code>'-06:00'</code> for Alberta, <code>'-07:00'</code> for British
+  Columbia, or <code>'-05:00'</code> for Manitoba).</p>
+<p>For more information about configuring database flags, see
+  <a href="https://docs.cloud.google.com/sql/docs/mysql/flags">Configure database flags</a>.</p>]]></content>
+    <summary>Instances in certain Canadian time zones may lag by one hour starting November 1, 2026, due to outdated daylight saving rules. Apply maintenance or configure session time zones before this date to ensure accurate timekeeping.</summary>
+    <title>Announcement: Cloud SQL for MySQL time zone update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

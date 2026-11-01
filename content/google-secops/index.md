@@ -1,5 +1,16 @@
 # Google SecOps
 
+## 2026-10-31
+
+### Feature
+
+**Basic Mode search**
+
+This feature is in public preview. The **SIEM Search** page now provides two search-execution modes: **Basic Mode** and **Advanced Mode**. **Basic Mode** (the default option) uses a streamlined, fast-path execution pipeline that bypasses secondary enrichment steps during search execution. This approach reduces end-to-end search wait times while preserving full data fidelity and query syntax parity. **Advanced Mode** is equivalent to the previous search experience.
+
+For more information, see [Choose the search-execution mode](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search.md#choose-search-execution-mode) and [Understand the search-execution modes](https://docs.cloud.google.com/chronicle/docs/investigation/udm-search#search-execution-modes).
+
+---
 ## 2026-10-29
 
 ### Feature

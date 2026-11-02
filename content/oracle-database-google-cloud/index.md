@@ -1,5 +1,16 @@
 # Oracle Database@Google Cloud
 
+## 2026-11-02
+
+### Feature
+
+Oracle Database@Google Cloud supports creating custom DNS domains for your ODB Networks. You can use custom Domain Name Systems (DNS) to control the names of your resources and delegate DNS resolution within your organization. For more information, see [Create and manage custom DNS domains](https://docs.cloud.google.com/oracle/database/docs/create-manage-custom-dns).
+
+You can use custom DNS domains only for [Exadata VM clusters](https://docs.cloud.google.com/oracle/database/docs/create-clusters).
+
+This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-10-27
 
 ### Feature

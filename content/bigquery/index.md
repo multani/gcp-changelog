@@ -1,5 +1,28 @@
 # BigQuery
 
+## 2026-11-02
+
+### Feature
+
+You can now
+[monitor](https://docs.cloud.google.com/bigquery/docs/create-data-agents#monitor_agents_and_conversations)
+the performance, adoption, latency, and costs of your data agents and their
+conversations by using Google Cloud Observability in BigQuery. This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+The Data Engineering Agent now
+supports [BigQuery AI, ML, and object functions and
+statements in generated Dataform SQLX
+pipelines and agent instruction files](https://docs.cloud.google.com/bigquery/docs/data-engineering-agent-pipelines#bigquery-ai-ml-support).
+
+This feature is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-10-30
 
 ### Feature

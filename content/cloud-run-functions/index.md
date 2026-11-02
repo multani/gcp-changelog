@@ -1,5 +1,12 @@
 # Cloud Run functions
 
+## 2026-11-02
+
+### Feature
+
+Support for the [Python 3.15 runtime](https://docs.cloud.google.com/functions/docs/concepts/execution-environment#python) is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-10-24
 
 ### Security

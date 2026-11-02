@@ -1,5 +1,46 @@
 # Cloud Load Balancing
 
+## 2026-11-02
+
+### Feature
+
+Distributed tracing with Cloud Trace is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) for
+Global external Application Load Balancers, Regional external Application Load Balancers,
+Regional internal Application Load Balancers, and Cross-region internal Application Load Balancers. Attach a
+telemetry policy to a load balancer's forwarding rule to generate trace spans
+that conform to W3C Trace Context and OpenTelemetry, and get end-to-end
+visibility into requests from clients through the load balancer to your
+backends. For more information, see
+[Distributed tracing overview](https://docs.cloud.google.com/load-balancing/docs/distributed-tracing-overview).
+
+### Feature
+
+For mutual TLS (mTLS) on Application Load Balancers,
+frontend mTLS validation relaxations are **generally available**.
+
+The `ALLOW_VALIDATION_RELAXATIONS` client validation mode on the
+Client Authentication (`ServerTlsPolicy`) resource allows you to
+configure specific X.509 certificate validation exceptions to
+standard client certificate validation rules.
+This simplifies migrations of legacy workloads while
+maintaining an active security posture.
+
+This mode supports the following client certificate validation relaxation
+parameters:
+
+* `ALLOW_MISSING_EKU`: Bypasses Extended Key Usage validation if the EKU
+  extension is absent in the client certificate.
+* `ALLOW_SHA1_HASHING`: Permits client certificates signed with the legacy
+  SHA-1 algorithm.
+* `ALLOW_EXPIRED_LEAF_CERTIFICATE`: Evaluates expired leaf certificates by
+  validating them as of 1 second prior to their actual expiration time.
+
+This feature is available for all Application Load Balancer types.
+
+For more information, see [Client validation modes](https://docs.cloud.google.com/load-balancing/docs/mtls#client-validation-mode).
+
+---
 ## 2026-10-27
 
 ### Feature

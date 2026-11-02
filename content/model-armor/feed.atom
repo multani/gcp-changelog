@@ -2,9 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Model Armor</title>
   <subtitle>Changelog for Google Cloud product: Model Armor</subtitle>
-  <updated>2026-10-29T00:00:00+00:00</updated>
+  <updated>2026-11-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:model-armor</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/model-armor/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:model-armor:2026-11-02:feature:0</id>
+    <published>2026-11-02T00:00:00+00:00</published>
+    <updated>2026-11-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Support for template-specific exclusion rules in streaming sanitization
+(<code>StreamSanitizeUserPrompt</code> and <code>StreamSanitizeModelResponse</code>) is available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. You can use
+dictionary and regular expression exclusion rules in buffered mode
+(<code>STREAMING_MODE_BUFFERED</code>) with partial or full matching, and in real-time mode
+(<code>STREAMING_MODE_REALTIME</code>) with partial matching, to mitigate false-positive
+detections for prompt injection and jailbreak detection and responsible AI
+filters.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/model-armor/configure-exclusion-rules#exclusion-rules-streaming">Exclusion rules in streaming
+sanitization</a>.</p>]]></content>
+    <summary>Template-specific exclusion rules are now available in preview for streaming sanitization. This feature allows you to use dictionary and regex exclusion rules in buffered and real-time modes to reduce false positives from prompt injection, jailbreak detection, and responsible AI filters.</summary>
+    <title>Feature: Template-specific exclusion rules for streaming sanitization</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

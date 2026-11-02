@@ -1,5 +1,12 @@
 # Cloud Run
 
+## 2026-11-02
+
+### Feature
+
+Support for the [Python 3.15 runtime](https://docs.cloud.google.com/run/docs/runtime-support#python) is in [Preview](https://cloud.google.com/products/#product-launch-stages).
+
+---
 ## 2026-10-30
 
 ### Feature

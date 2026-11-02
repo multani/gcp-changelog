@@ -1,5 +1,20 @@
 # Datastream
 
+## 2026-11-02
+
+### Feature
+
+Datastream is now available in the `africa-south1` (Johannesburg)
+region. For the list of all available regions, see
+[IP allowlists and regions](https://docs.cloud.google.com/datastream/docs/ip-allowlists-and-regions).
+
+### Feature
+
+Datastream is now available in the `asia-southeast3` (Bangkok)
+region. For the list of all available regions, see
+[IP allowlists and regions](https://docs.cloud.google.com/datastream/docs/ip-allowlists-and-regions).
+
+---
 ## 2026-10-30
 
 ### Feature

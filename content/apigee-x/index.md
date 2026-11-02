@@ -1,5 +1,20 @@
 # Apigee X
 
+## 2026-11-02
+
+### Announcement
+
+On November 2, 2026, we released an updated version of Apigee.
+
+**Note:** Rollouts of this release began today and may take four or more business days to be completed across all Google Cloud zones. Your instances may not have the features and fixes available until the rollout is complete.
+
+### Feature
+
+**EKM health monitoring**
+
+You can now monitor EKM health and configure alerts for EKM-related issues using Cloud Logging. For more information, see [EKM health monitoring](https://docs.cloud.google.com/apigee/docs/api-platform/security/ekm-monitoring).
+
+---
 ## 2026-10-27
 
 ### Feature

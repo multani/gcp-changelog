@@ -1,5 +1,26 @@
 # Resource Manager
 
+## 2026-10-30
+
+### Feature
+
+**Preview**: Management boundaries and capability configurations in
+Resource Manager are available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Management
+boundaries establish dynamic, tag-based or hierarchy-wide administrative
+perimeters across multiple Google Cloud projects. This feature lets you
+centralize resource discovery and governance from a designated management
+project. You can configure `BoundaryConfig`, `Boundary`, and `CapabilityConfig`
+resources using Google Cloud CLI to partition projects by Tags values
+and enable management capabilities for
+[Agent Registry](https://docs.cloud.google.com/agent-registry/overview).
+
+For more information, see [Management boundaries
+overview](https://docs.cloud.google.com/resource-manager/docs/boundaries-and-capabilities-overview) and
+[Configure management
+boundaries](https://docs.cloud.google.com/resource-manager/docs/manage-capability-configs).
+
+---
 ## 2026-08-04
 
 ### Feature

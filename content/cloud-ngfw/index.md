@@ -1,5 +1,20 @@
 # Cloud NGFW
 
+## 2026-11-02
+
+### Feature
+
+Advanced malware sandbox (WildFire) integrates dynamic machine learning (ML) and
+cloud-based behavioral sandboxing to perform deep inspection of network-routed
+file transfers and block zero-day malware before it reaches your workloads.
+Advanced malware sandbox is available in the Cloud Next Generation Firewall
+Enterprise tier. For more information, see
+[Advanced malware sandbox overview](https://docs.cloud.google.com/firewall/docs/about-wildfire) and
+[Configure Advanced malware sandbox in your network](https://docs.cloud.google.com/firewall/docs/configure-wildfire).
+
+This feature is available in **General Availability**.
+
+---
 ## 2026-09-22
 
 ### Feature

@@ -1,5 +1,17 @@
 # Backup and DR
 
+## 2026-11-02
+
+### Feature
+
+Support for automating resource protection for Compute Engine instances and
+disks at scale in Backup and DR is generally available (GA). By using
+auto-protection policies and resource labels, you can automatically assign a
+backup plan to qualifying resources across projects based on user-defined
+labels. For more information, see
+[Automate resource protection](https://docs.cloud.google.com/backup-disaster-recovery/docs/protect/automate-protection).
+
+---
 ## 2026-10-30
 
 ### Feature

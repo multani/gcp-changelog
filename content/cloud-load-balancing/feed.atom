@@ -2,9 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Load Balancing</title>
   <subtitle>Changelog for Google Cloud product: Cloud Load Balancing</subtitle>
-  <updated>2026-10-27T00:00:00+00:00</updated>
+  <updated>2026-11-02T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-load-balancing</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-load-balancing/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-11-02:feature:0</id>
+    <published>2026-11-02T00:00:00+00:00</published>
+    <updated>2026-11-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Distributed tracing with Cloud Trace is available in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a> for
+Global external Application Load Balancers, Regional external Application Load Balancers,
+Regional internal Application Load Balancers, and Cross-region internal Application Load Balancers. Attach a
+telemetry policy to a load balancer's forwarding rule to generate trace spans
+that conform to W3C Trace Context and OpenTelemetry, and get end-to-end
+visibility into requests from clients through the load balancer to your
+backends. For more information, see
+<a href="https://docs.cloud.google.com/load-balancing/docs/distributed-tracing-overview">Distributed tracing overview</a>.</p>]]></content>
+    <summary>Distributed tracing with Cloud Trace is now available in preview for various external and internal Application Load Balancers. You can attach a telemetry policy to a forwarding rule to generate trace spans and gain end-to-end visibility into requests.</summary>
+    <title>Feature: Cloud Trace distributed tracing now in preview</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-load-balancing:2026-11-02:feature:1</id>
+    <published>2026-11-02T00:00:00+00:00</published>
+    <updated>2026-11-02T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>For mutual TLS (mTLS) on Application Load Balancers,
+frontend mTLS validation relaxations are <strong>generally available</strong>.</p>
+<p>The <code>ALLOW_VALIDATION_RELAXATIONS</code> client validation mode on the
+Client Authentication (<code>ServerTlsPolicy</code>) resource allows you to
+configure specific X.509 certificate validation exceptions to
+standard client certificate validation rules.
+This simplifies migrations of legacy workloads while
+maintaining an active security posture.</p>
+<p>This mode supports the following client certificate validation relaxation
+parameters:</p>
+<ul>
+<li><code>ALLOW_MISSING_EKU</code>: Bypasses Extended Key Usage validation if the EKU
+  extension is absent in the client certificate.</li>
+<li><code>ALLOW_SHA1_HASHING</code>: Permits client certificates signed with the legacy
+  SHA-1 algorithm.</li>
+<li><code>ALLOW_EXPIRED_LEAF_CERTIFICATE</code>: Evaluates expired leaf certificates by
+  validating them as of 1 second prior to their actual expiration time.</li>
+</ul>
+<p>This feature is available for all Application Load Balancer types.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/load-balancing/docs/mtls#client-validation-mode">Client validation modes</a>.</p>]]></content>
+    <summary>Frontend mTLS validation relaxations for Application Load Balancers are now generally available. This feature allows for specific X.509 certificate validation exceptions, simplifying legacy workload migrations while maintaining security. It supports parameters like allowing missing EKU, SHA1 hashing, and expired leaf certificates.</summary>
+    <title>Feature: mTLS validation relaxations now available</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

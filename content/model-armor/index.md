@@ -1,5 +1,22 @@
 # Model Armor
 
+## 2026-11-02
+
+### Feature
+
+Support for template-specific exclusion rules in streaming sanitization
+(`StreamSanitizeUserPrompt` and `StreamSanitizeModelResponse`) is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). You can use
+dictionary and regular expression exclusion rules in buffered mode
+(`STREAMING_MODE_BUFFERED`) with partial or full matching, and in real-time mode
+(`STREAMING_MODE_REALTIME`) with partial matching, to mitigate false-positive
+detections for prompt injection and jailbreak detection and responsible AI
+filters.
+
+For more information, see [Exclusion rules in streaming
+sanitization](https://docs.cloud.google.com/model-armor/configure-exclusion-rules#exclusion-rules-streaming).
+
+---
 ## 2026-10-29
 
 ### Feature

@@ -1,5 +1,23 @@
 # Knowledge Catalog
 
+## 2026-11-02
+
+### Feature
+
+Knowledge Studio in Knowledge Catalog is available in
+[Preview](https://cloud.google.com/products#product-launch-stages). Knowledge
+Studio lets you explore data assets and semantic relationships using natural
+language and an interactive context graph, run automated enrichment tasks to
+generate and curate metadata from schemas, query logs, and enterprise knowledge
+signals, and package curated domain knowledge into context sets to ground AI
+agents through the Model Context Protocol (MCP) or Knowledge Catalog APIs.
+
+For more information, see
+[Knowledge Studio overview](https://docs.cloud.google.com/knowledge-catalog/docs/knowledge-studio),
+[Context sets overview](https://docs.cloud.google.com/knowledge-catalog/docs/context-sets), and
+[About enrichment tasks](https://docs.cloud.google.com/knowledge-catalog/docs/about-enrichment-tasks).
+
+---
 ## 2026-10-26
 
 ### Feature

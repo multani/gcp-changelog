@@ -1,6 +1,24 @@
 {
   "name": "Cloud Load Balancing",
   "entries": {
+    "2026-11-02": [
+      {
+        "kind": "Feature",
+        "content": "Distributed tracing with Cloud Trace is available in\n[Preview](https://cloud.google.com/products#product-launch-stages) for\nGlobal external Application Load Balancers, Regional external Application Load Balancers,\nRegional internal Application Load Balancers, and Cross-region internal Application Load Balancers. Attach a\ntelemetry policy to a load balancer's forwarding rule to generate trace spans\nthat conform to W3C Trace Context and OpenTelemetry, and get end-to-end\nvisibility into requests from clients through the load balancer to your\nbackends. For more information, see\n[Distributed tracing overview](https://docs.cloud.google.com/load-balancing/docs/distributed-tracing-overview).",
+        "summary": {
+          "title": "Cloud Trace distributed tracing now in preview",
+          "summary": "Distributed tracing with Cloud Trace is now available in preview for various external and internal Application Load Balancers. You can attach a telemetry policy to a forwarding rule to generate trace spans and gain end-to-end visibility into requests."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "For mutual TLS (mTLS) on Application Load Balancers,\nfrontend mTLS validation relaxations are **generally available**.\n\nThe `ALLOW_VALIDATION_RELAXATIONS` client validation mode on the\nClient Authentication (`ServerTlsPolicy`) resource allows you to\nconfigure specific X.509 certificate validation exceptions to\nstandard client certificate validation rules.\nThis simplifies migrations of legacy workloads while\nmaintaining an active security posture.\n\nThis mode supports the following client certificate validation relaxation\nparameters:\n\n* `ALLOW_MISSING_EKU`: Bypasses Extended Key Usage validation if the EKU\n  extension is absent in the client certificate.\n* `ALLOW_SHA1_HASHING`: Permits client certificates signed with the legacy\n  SHA-1 algorithm.\n* `ALLOW_EXPIRED_LEAF_CERTIFICATE`: Evaluates expired leaf certificates by\n  validating them as of 1 second prior to their actual expiration time.\n\nThis feature is available for all Application Load Balancer types.\n\nFor more information, see [Client validation modes](https://docs.cloud.google.com/load-balancing/docs/mtls#client-validation-mode).",
+        "summary": {
+          "title": "mTLS validation relaxations now available",
+          "summary": "Frontend mTLS validation relaxations for Application Load Balancers are now generally available. This feature allows for specific X.509 certificate validation exceptions, simplifying legacy workload migrations while maintaining security. It supports parameters like allowing missing EKU, SHA1 hashing, and expired leaf certificates."
+        }
+      }
+    ],
     "2026-10-27": [
       {
         "kind": "Feature",

@@ -1,5 +1,22 @@
 # Capacity Planner
 
+## 2026-10-26
+
+### Feature
+
+**Preview**: You can use the Capacity Planner remote Model Context Protocol
+(MCP) server (`capacityplanner.googleapis.com`) to connect AI applications and
+agents to your Capacity Planner data
+([Preview](https://cloud.google.com/products#product-launch-stages)). You can
+use the Capacity Planner MCP tools to query historical resource usage,
+usage forecasts, and reservation data across your projects, folders, and
+organizations.
+
+For more information, see the
+[Capacity Planner MCP reference](https://docs.cloud.google.com/capacity-planner/docs/reference/mcp) and
+[Google Cloud MCP servers overview](https://docs.cloud.google.com/mcp/overview).
+
+---
 ## 2026-09-30
 
 ### Feature

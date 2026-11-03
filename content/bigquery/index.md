@@ -4,12 +4,47 @@
 
 ### Feature
 
+*Lakehouse* [caching](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access#intelligent-caching)
+for cross-cloud data access is
+[generally available](https://cloud.google.com/products/#product-launch-stages)
+(GA). Cross-cloud caching is disabled by default. You can opt in to caching on
+a Lakehouse federated catalog or a BigQuery cross-cloud connection to
+cache remote files in your Google Cloud region. This helps reduce
+cross-cloud egress costs and accelerate subsequent queries.
+
+For more information, see [About cross-cloud data
+access](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access#intelligent-caching) and
+[Query remote data](https://docs.cloud.google.com/lakehouse/docs/query-remote-data).
+
+### Feature
+
 You can now
 [monitor](https://docs.cloud.google.com/bigquery/docs/create-data-agents#monitor_agents_and_conversations)
 the performance, adoption, latency, and costs of your data agents and their
 conversations by using Google Cloud Observability in BigQuery. This feature is
 [generally available](https://cloud.google.com/products#product-launch-stages)
 (GA).
+
+### Feature
+
+You can use the
+[`AI.PARSE_DOCUMENT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-parse-document)
+to extract layout elements such as titles, headings, paragraphs, lists, tables,
+and images by using the Document AI layout parser to convert unstructured
+documents into structured `JSON` data.
+
+This function is
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+### Feature
+
+The [`SECURE_CONTEXT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/security_functions#secure_context)
+is now available in [Preview](https://cloud.google.com/products#product-launch-stages).
+`SECURE_CONTEXT` returns the value of a request-scoped secure context parameter
+provided at query runtime, allowing logical views to dynamically filter and
+evaluate data based on context variables such as user attributes, department
+IDs, or tenant identifiers.
 
 ### Feature
 

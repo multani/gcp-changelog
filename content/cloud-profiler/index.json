@@ -1,0 +1,15 @@
+{
+  "name": "Cloud Profiler",
+  "entries": {
+    "2026-10-29": [
+      {
+        "kind": "Security",
+        "content": "The Cloud Profiler Java agent is updated with a new Certification Authority (CA)\ncertificate bundle, in response to security bulletin\n[GCP-2026-071](https://docs.cloud.google.com/support/bulletins#gcp-2026-071). Google Cloud infrastructure and\nthe Cloud Profiler backend service are not affected.\n\nIf you use the Cloud Profiler Java agent, take one of the following\nactions:\n\n* Upgrade the Java agent to `cloud-profiler-java-agent_20261026_RC00`\n  ([GitHub release v0.5.0](https://github.com/GoogleCloudPlatform/cloud-profiler-java/releases/tag/v0.5.0))\n  or later, and then rebuild and redeploy your applications. Download the\n  updated archive,\n  <https://storage.googleapis.com/cloud-profiler/java/cloud-profiler-java-agent_20261026_RC00.tar.gz>,\n  or, for `musl`-based Alpine Linux containers,\n  <https://storage.googleapis.com/cloud-profiler/java/cloud-profiler-java-agent_20261026_RC00_alpine.tar.gz>.\n* If you can't immediately upgrade or rebuild, update your host or container\n  operating system's CA certificate store as described in\n  [GCP-2026-071](https://docs.cloud.google.com/support/bulletins#gcp-2026-071), and then set the\n  `GRPC_DEFAULT_SSL_ROOTS_FILE_PATH` environment variable to point to the\n  updated PEM bundle.\n\nFor more information about installing the agent, see\n[Profiling Java applications](https://docs.cloud.google.com/profiler/docs/profiling-java#installing-profiler).",
+        "summary": {
+          "title": "Java agent security update",
+          "summary": "The Cloud Profiler Java agent has been updated with a new security certificate bundle. To maintain security, please upgrade the agent or update your system's CA certificate store as described in the security bulletin."
+        }
+      }
+    ]
+  }
+}

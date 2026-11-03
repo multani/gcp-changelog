@@ -1,5 +1,60 @@
 # Google Cloud Contact Center as a Service
 
+## 2026-11-02
+
+### Fixed
+
+This release addresses the following issues:
+
+* Fixed an issue where cross-language agent-to-queue voice transfers played
+  whisper audio and displayed **Selected Language** in the source language
+  instead of the transfer target language.
+* Fixed an issue where the unread chat badge in the agent adapter displayed an
+  inflated count on chats escalated from a virtual agent when real-time
+  redaction was enabled.
+* Fixed an issue where inbound calls with invalid or unformattable caller IDs
+  didn't load for agents, causing calls to loop between agents until the
+  caller hung up.
+* Fixed an issue where the **Deflections - Calls** dashboard double-counted
+  calls redirected to a phone number.
+* Fixed an issue where call transcripts and **SmartActions** panels didn't
+  load for blended SMS calls.
+* Fixed an issue where the Salesforce adapter failed to connect without
+  logging an error when loaded in the agent desktop without a required
+  security key.
+* Fixed an issue where warm transfers to a supervisor queue failed silently
+  and looped repeatedly when the receiving agent had microphone permissions
+  disabled.
+* Fixed an issue where the Microsoft 365 mailbox selection dropdown appeared
+  empty during OAuth setup using client credentials when permissions were
+  missing.
+* Fixed an issue where supervisor-initiated sign-outs for in-call agents
+  discarded mandatory call dispositions and didn't record the interaction
+  outcome in reporting.
+* Fixed an issue where the queue list in the CCaaS portal remained in a
+  loading state for an extended period after signing in.
+* Fixed an issue where calls using Nexmo numbers disconnected when attempting
+  pre-session deflection during virtual agent escalation.
+* Fixed an issue where unanswered extension and inbound calls that were
+  abandoned by the caller were missing from the **Missed** list in the call
+  adapter and were incorrectly classified as unknown errors.
+* Fixed an issue where call transfers didn't requeue immediately when the
+  receiving agent had a microphone or device error.
+* Fixed an issue where after-hours and overcapacity announcement and options
+  messages couldn't be customized at the individual user and team levels.
+* Fixed an issue where certain failed calls appeared as `"Failed: ()"` in
+  session data exports and were missing from advanced reporting filters.
+* Fixed an issue where virtual agent call recordings weren't exported if a
+  caller hung up immediately after being transferred to a post-session survey.
+* Fixed an issue where custom SIP headers weren't passed on direct inbound
+  calls deflected to a contact list or queue.
+* Fixed an issue where inbound calls experienced delays and periods of silence
+  before the virtual agent welcome prompt.
+* Fixed an issue where call recordings didn't consistently pause and resume
+  when an agent clicked the redaction button multiple times during a single
+  call.
+
+---
 ## 2026-10-29
 
 ### Announcement

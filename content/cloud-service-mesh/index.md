@@ -1,5 +1,19 @@
 # Cloud Service Mesh
 
+## 2026-11-02
+
+### Feature
+
+Configuring authorization policies (`GCPAuthzPolicy`) on Cloud Service Mesh
+sidecars on Google Kubernetes Engine (GKE) is now available
+([Preview](https://cloud.google.com/products#product-launch-stages)). This
+feature is supported only for Cloud Service Mesh with the Gateway API. You can
+allow or deny inbound HTTP requests at the namespace or workload level, or
+delegate decisions to an external authorization engine (`GCPAuthzExtension`).
+For more information, see
+[Setup authorization policies on sidecars on GKE](https://docs.cloud.google.com/service-mesh/docs/gateway/authorization-policy-sidecar).
+
+---
 ## 2026-10-19
 
 ### Announcement

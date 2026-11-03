@@ -113,6 +113,7 @@
 - [Cloud NGFW](cloud-ngfw/index.md)
 - [Cloud Number Registry](cloud-number-registry/index.md)
 - [Cloud Product Registry API](cloud-product-registry-api/index.md)
+- [Cloud Profiler](cloud-profiler/index.md)
 - [Cloud Quotas](cloud-quotas/index.md)
 - [Cloud Router](cloud-router/index.md)
 - [Cloud Run](cloud-run/index.md)

@@ -1,6 +1,16 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-11-02": [
+      {
+        "kind": "Feature",
+        "content": "You can now tune SQL queries using AI. Available starting with version 1.6.2 of\nthe `google_ml_integration` extension, the `ai.tune_sql` function uses an LLM\nalong with query execution plans, schemas, and runtime stats to recommend query\noptimizations. The function identifies performance bottlenecks and provides\nrecommendations for query rewrites, indexes, statistics collection, Grand\nUnified Configuration (GUC) flags, and table analyze and vacuum operations.\nThis feature is in\n[Preview](https://cloud.google.com/products#product-launch-stages).\n\nFor more information, see\n[Tune SQL queries using AI](https://docs.cloud.google.com/alloydb/docs/tune-sql-queries-ai) and\n[Database advisor flags](https://docs.cloud.google.com/alloydb/docs/reference/database-advisor-flags).",
+        "summary": {
+          "title": "AI-powered SQL query tuning",
+          "summary": "Version 1.6.2 of the `google_ml_integration` extension introduces the `ai.tune_sql` function. This feature uses AI to analyze query execution plans, schemas, and runtime statistics to recommend query optimizations, helping to identify performance bottlenecks and suggest improvements like query rewrites, index creation, and configuration adjustments. This is a preview feature."
+        }
+      }
+    ],
     "2026-10-30": [
       {
         "kind": "Fixed",

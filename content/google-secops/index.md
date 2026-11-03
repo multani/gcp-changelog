@@ -1,5 +1,14 @@
 # Google SecOps
 
+## 2026-11-02
+
+### Deprecated
+
+**Deprecation of the ListCaseEvents API endpoint**
+
+Effective November 2, 2026, the `ListCaseEvents` API endpoint is deprecated. You should use the [`ListCaseEvidenceData`](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.cases.caseEvidenceDatas/list) API endpoint instead.
+
+---
 ## 2026-10-31
 
 ### Feature

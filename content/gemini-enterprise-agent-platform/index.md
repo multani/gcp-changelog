@@ -1,5 +1,23 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-11-02
+
+### Feature
+
+**Serving tuned Gemini 3.x models on global endpoints**
+
+Serving tuned Gemini 3.x models on `global` endpoints is available in
+[General Availability (GA)](https://cloud.google.com/products#product-launch-stages).
+You can copy fine-tuned Gemini 3.x models to the `global` region using the Model
+Registry `models:copy` API, deploy them to global serving endpoints, and send
+inference requests directly to `aiplatform.googleapis.com`.
+
+For more information, see
+[About supervised fine-tuning for Gemini models](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/supervised-tuning)
+and
+[Tune Gemini models with supervised fine-tuning](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/supervised-tuning/use#copy-tuned-model).
+
+---
 ## 2026-10-30
 
 ### Feature

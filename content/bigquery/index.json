@@ -4,10 +4,34 @@
     "2026-11-02": [
       {
         "kind": "Feature",
+        "content": "*Lakehouse* [caching](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access#intelligent-caching)\nfor cross-cloud data access is\n[generally available](https://cloud.google.com/products/#product-launch-stages)\n(GA). Cross-cloud caching is disabled by default. You can opt in to caching on\na Lakehouse federated catalog or a BigQuery cross-cloud connection to\ncache remote files in your Google Cloud region. This helps reduce\ncross-cloud egress costs and accelerate subsequent queries.\n\nFor more information, see [About cross-cloud data\naccess](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-data-access#intelligent-caching) and\n[Query remote data](https://docs.cloud.google.com/lakehouse/docs/query-remote-data).",
+        "summary": {
+          "title": "Lakehouse Caching Now Generally Available",
+          "summary": "Intelligent caching for cross-cloud data access in Lakehouse is now generally available. This feature helps reduce egress costs and speed up queries by caching remote files in your Google Cloud region. You can enable caching on a federated catalog or a BigQuery cross-cloud connection."
+        }
+      },
+      {
+        "kind": "Feature",
         "content": "You can now\n[monitor](https://docs.cloud.google.com/bigquery/docs/create-data-agents#monitor_agents_and_conversations)\nthe performance, adoption, latency, and costs of your data agents and their\nconversations by using Google Cloud Observability in BigQuery. This feature is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
         "summary": {
           "title": "Monitor your data agents",
           "summary": "You can now monitor the performance, adoption, latency, and costs of your data agents and their conversations in BigQuery. This feature is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "You can use the\n[`AI.PARSE_DOCUMENT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-ai-parse-document)\nto extract layout elements such as titles, headings, paragraphs, lists, tables,\nand images by using the Document AI layout parser to convert unstructured\ndocuments into structured `JSON` data.\n\nThis function is\n[generally available](https://cloud.google.com/products#product-launch-stages)\n(GA).",
+        "summary": {
+          "title": "Extract document layout with AI.PARSE_DOCUMENT",
+          "summary": "Use the new AI.PARSE_DOCUMENT function to extract structured layout elements like titles, headings, and paragraphs from unstructured documents. This feature converts documents into JSON data using the Document AI layout parser and is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The [`SECURE_CONTEXT` function](https://docs.cloud.google.com/bigquery/docs/reference/standard-sql/security_functions#secure_context)\nis now available in [Preview](https://cloud.google.com/products#product-launch-stages).\n`SECURE_CONTEXT` returns the value of a request-scoped secure context parameter\nprovided at query runtime, allowing logical views to dynamically filter and\nevaluate data based on context variables such as user attributes, department\nIDs, or tenant identifiers.",
+        "summary": {
+          "title": "New Security Function for Data Filtering",
+          "summary": "A new function, SECURE_CONTEXT, is now available in Preview. It allows logical views to dynamically filter and evaluate data based on context variables like user attributes or department IDs, enhancing data security and access control."
         }
       },
       {

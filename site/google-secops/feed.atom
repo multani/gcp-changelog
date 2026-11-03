@@ -34,7 +34,20 @@
     <author>
       <name>Google Cloud</name>
     </author>
-    <id>urn:github:multani:gcp-changelog:google-secops:2026-10-28:announcement:0</id>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-10-28:fixed:0</id>
+    <published>2026-10-28T00:00:00+00:00</published>
+    <updated>2026-10-28T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Tools power-up: Environment filtering in Get Integration Instances</strong></p>
+<p>There was an issue where the <strong>Get Integration Instances</strong> action in the Tools power-up didn't correctly filter environments with names that contain an ampersand (<code>&amp;</code>). This issue has been fixed in version 85.0 of the Tools power-up.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/tools#get-integration-instances">Get Integration Instances</a>.</p>]]></content>
+    <summary>The Get Integration Instances action in the Tools power-up now correctly filters environments with names containing an ampersand. This resolves a previous issue where such environments were not accurately filtered. The fix is available in version 85.0.</summary>
+    <title>Fixed: Environment filtering fixed in Get Integration Instances</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-10-28:announcement:1</id>
     <published>2026-10-28T00:00:00+00:00</published>
     <updated>2026-10-28T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p><strong>Final shutdown of legacy managed BigQuery export datasets (chronicle-tla) for non-Enterprise+ customers</strong></p>
@@ -59,6 +72,20 @@
 <p>You can now resize inline images directly in rich-text comments on the Case Wall. To resize an image, switch the comment box to rich-text mode and insert an image either by using the toolbar's image menu or by pasting it into the comment. Click the image to display the resizing overlay, then drag the bottom-right handle to adjust its dimensions.</p>]]></content>
     <summary>You can now resize inline images directly in rich-text comments on the Case Wall. After inserting an image, click it to display the resizing overlay and drag the bottom-right handle to adjust its dimensions.</summary>
     <title>Feature: Resize images in Case Wall comments</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-10-24:breaking:0</id>
+    <published>2026-10-24T00:00:00+00:00</published>
+    <updated>2026-10-24T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>GitSync power-up: Version 53.0 rolled back</strong></p>
+<p>Version 54.0 of the GitSync power-up reverts the Chronicle API refactoring that was <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/release-notes#October_07_2026">introduced in version 53.0</a> and restores the version 52.0 code. All deployments must run on version 52.0 or version 54.0.</p>
+<p>If you're using version 53.0, roll back to version 52.0 or update to version 54.0. Then, point the <strong>Branch</strong> parameter back to your previous repository branch.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#version-54-rollback-guidance">Version 53.0 rollback</a>.</p>]]></content>
+    <summary>Version 54.0 of the GitSync power-up reverts the Chronicle API refactoring from version 53.0, restoring the version 52.0 code. Users on version 53.0 must roll back to 52.0 or update to 54.0.</summary>
+    <title>Breaking: GitSync power-up rolled back</title>
   </entry>
   <entry>
     <author>
@@ -89,6 +116,19 @@ cases at a time in the case queue to perform bulk operations:</p>
 <p>You can now specify whether Google SecOps reopens closed cases when grouping SOAR alerts by <strong>Source Grouping Identifier</strong>. When the option is enabled and a new alert is received with a source grouping identifier of a case that was previously closed in Google SecOps, then Google SecOps reopens the case. For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-alerts/alert-grouping-mechanism-admin">Configure alert grouping</a>.</p>]]></content>
     <summary>You can now control whether closed cases are reopened when grouping alerts by Source Grouping Identifier. This feature allows for automatic reopening of previously closed cases if new alerts arrive with a matching identifier.</summary>
     <title>Feature: Reopen Closed Cases Option</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-secops:2026-10-14:fixed:0</id>
+    <published>2026-10-14T00:00:00+00:00</published>
+    <updated>2026-10-14T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Email Utilities power-up: Entity creation in Parse Case Wall Email</strong></p>
+<p>There was an issue where the <strong>Parse Case Wall Email</strong> action in the Email Utilities power-up didn't create entities when the <strong>Create Observed Entities</strong> parameter was configured for specific entity types. This issue has been fixed in version 54.0 of the Email Utilities power-up.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/email-utilities">Email Utilities</a>.</p>]]></content>
+    <summary>An issue preventing entity creation in Parse Case Wall Email within the Email Utilities power-up has been resolved. This fix ensures that entities are now correctly created when the 'Create Observed Entities' parameter is configured. The resolution is available in version 54.0.</summary>
+    <title>Fixed: Email Utilities: Entity Creation Fixed</title>
   </entry>
   <entry>
     <author>

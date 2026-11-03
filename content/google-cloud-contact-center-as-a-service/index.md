@@ -2,6 +2,29 @@
 
 ## 2026-11-02
 
+### Announcement
+
+**Google Cloud CCaaS 6.29**
+
+We've released version 6.29 of Google Cloud CCaaS.
+
+The timing of the update to your instance depends on the deployment schedule
+that you have chosen. For more information, see [Deployment
+schedules](https://docs.cloud.google.com/contact-center/ccai-platform/docs/deployment-schedules).
+
+### Feature
+
+**Email session hiding (Apps API)**
+
+You can now hide email sessions from the agent adapter using two new Apps API
+endpoints. Hiding a session removes it from agent lists, counts, search, and the
+supervisor dashboard's live counters without deleting the session or changing
+its status. If an end-user replies to a hidden session, the session
+automatically unhides and follows your existing reply-handling rules. This
+capability is available through the Apps API only.
+
+By default, this capability is inactive. Contact Google Cloud Support to turn it on for your instance.
+
 ### Fixed
 
 This release addresses the following issues:

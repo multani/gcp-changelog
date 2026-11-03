@@ -1,5 +1,15 @@
 # Oracle Database@Google Cloud
 
+## 2026-11-03
+
+### Feature
+
+Oracle Database@Google Cloud introduces Database Connections using which you can connect to your Oracle databases and execute SQL statements.
+For more information, see [Create Database Connections](https://docs.cloud.google.com/oracle/database/docs/create-database-connection) and [Execute SQL statements](https://docs.cloud.google.com/oracle/database/docs/execute-sql).
+
+This feature is [generally available (GA)](https://cloud.google.com/products#product-launch-stages).
+
+---
 ## 2026-11-02
 
 ### Feature

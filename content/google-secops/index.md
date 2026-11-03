@@ -31,6 +31,14 @@ The **Operations** feature in the **Emerging Threats Center** feed is now in Gen
 ---
 ## 2026-10-28
 
+### Fixed
+
+**Tools power-up: Environment filtering in Get Integration Instances**
+
+There was an issue where the **Get Integration Instances** action in the Tools power-up didn't correctly filter environments with names that contain an ampersand (`&`). This issue has been fixed in version 85.0 of the Tools power-up.
+
+For more information, see [Get Integration Instances](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/tools#get-integration-instances).
+
 ### Announcement
 
 **Final shutdown of legacy managed BigQuery export datasets (chronicle-tla) for non-Enterprise+ customers**
@@ -50,6 +58,19 @@ Following the [March 26, 2025 deprecation announcement](https://docs.cloud.googl
 **Resize inline images in Case Wall comments**
 
 You can now resize inline images directly in rich-text comments on the Case Wall. To resize an image, switch the comment box to rich-text mode and insert an image either by using the toolbar's image menu or by pasting it into the comment. Click the image to display the resizing overlay, then drag the bottom-right handle to adjust its dimensions.
+
+---
+## 2026-10-24
+
+### Breaking
+
+**GitSync power-up: Version 53.0 rolled back**
+
+Version 54.0 of the GitSync power-up reverts the Chronicle API refactoring that was [introduced in version 53.0](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/release-notes#October_07_2026) and restores the version 52.0 code. All deployments must run on version 52.0 or version 54.0.
+
+If you're using version 53.0, roll back to version 52.0 or update to version 54.0. Then, point the **Branch** parameter back to your previous repository branch.
+
+For more information, see [Version 53.0 rollback](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#version-54-rollback-guidance).
 
 ---
 ## 2026-10-22
@@ -73,6 +94,17 @@ cases at a time in the case queue to perform bulk operations:
 **Specify whether to reopen closed cases when the grouping is by Source Grouping Identifier**
 
 You can now specify whether Google SecOps reopens closed cases when grouping SOAR alerts by **Source Grouping Identifier**. When the option is enabled and a new alert is received with a source grouping identifier of a case that was previously closed in Google SecOps, then Google SecOps reopens the case. For more information, see [Configure alert grouping](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-alerts/alert-grouping-mechanism-admin).
+
+---
+## 2026-10-14
+
+### Fixed
+
+**Email Utilities power-up: Entity creation in Parse Case Wall Email**
+
+There was an issue where the **Parse Case Wall Email** action in the Email Utilities power-up didn't create entities when the **Create Observed Entities** parameter was configured for specific entity types. This issue has been fixed in version 54.0 of the Email Utilities power-up.
+
+For more information, see [Email Utilities](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/email-utilities).
 
 ---
 ## 2026-10-12

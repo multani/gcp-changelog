@@ -23,6 +23,14 @@
     ],
     "2026-10-28": [
       {
+        "kind": "Fixed",
+        "content": "**Tools power-up: Environment filtering in Get Integration Instances**\n\nThere was an issue where the **Get Integration Instances** action in the Tools power-up didn't correctly filter environments with names that contain an ampersand (`&`). This issue has been fixed in version 85.0 of the Tools power-up.\n\nFor more information, see [Get Integration Instances](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/tools#get-integration-instances).",
+        "summary": {
+          "title": "Environment filtering fixed in Get Integration Instances",
+          "summary": "The Get Integration Instances action in the Tools power-up now correctly filters environments with names containing an ampersand. This resolves a previous issue where such environments were not accurately filtered. The fix is available in version 85.0."
+        }
+      },
+      {
         "kind": "Announcement",
         "content": "**Final shutdown of legacy managed BigQuery export datasets (chronicle-tla) for non-Enterprise+ customers**\n\nFollowing the [March 26, 2025 deprecation announcement](https://docs.cloud.google.com/chronicle/docs/release-notes#March_26_2025), Google SecOps is completing the final shutdown of legacy Google-managed BigQuery datasets and API keys associated with the `chronicle-tla` Google Cloud project:\n\n* **What is changing:** Data exports to legacy Google-managed BigQuery datasets under the `chronicle-tla` project are being permanently turned off, and the associated managed datasets and API keys are being decommissioned.\n* **Who is impacted:** This shutdown applies only to non-Enterprise+ customers still provisioned on legacy `chronicle-tla` Google-managed BigQuery datasets (including tenants whose temporary transition exceptions expired in September 2025). Enterprise+ customers and customers using Bring Your Own BigQuery (BYOBQ) exports to customer-managed Google Cloud projects are not impacted.\n* **When:** Decommissioning begins on October 28, 2026.\n* **Action required:** To retain BigQuery access to Google SecOps data, configure [export to a customer-managed BigQuery project (BYOBQ)](https://docs.cloud.google.com/chronicle/docs/reports/export-to-customer-managed-project) or contact your account team to upgrade to Enterprise+.",
         "summary": {
@@ -38,6 +46,16 @@
         "summary": {
           "title": "Resize images in Case Wall comments",
           "summary": "You can now resize inline images directly in rich-text comments on the Case Wall. After inserting an image, click it to display the resizing overlay and drag the bottom-right handle to adjust its dimensions."
+        }
+      }
+    ],
+    "2026-10-24": [
+      {
+        "kind": "Breaking",
+        "content": "**GitSync power-up: Version 53.0 rolled back**\n\nVersion 54.0 of the GitSync power-up reverts the Chronicle API refactoring that was [introduced in version 53.0](https://docs.cloud.google.com/chronicle/docs/soar/marketplace-integrations/release-notes#October_07_2026) and restores the version 52.0 code. All deployments must run on version 52.0 or version 54.0.\n\nIf you're using version 53.0, roll back to version 52.0 or update to version 54.0. Then, point the **Branch** parameter back to your previous repository branch.\n\nFor more information, see [Version 53.0 rollback](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/gitsync#version-54-rollback-guidance).",
+        "summary": {
+          "title": "GitSync power-up rolled back",
+          "summary": "Version 54.0 of the GitSync power-up reverts the Chronicle API refactoring from version 53.0, restoring the version 52.0 code. Users on version 53.0 must roll back to 52.0 or update to 54.0."
         }
       }
     ],
@@ -58,6 +76,16 @@
         "summary": {
           "title": "Reopen Closed Cases Option",
           "summary": "You can now control whether closed cases are reopened when grouping alerts by Source Grouping Identifier. This feature allows for automatic reopening of previously closed cases if new alerts arrive with a matching identifier."
+        }
+      }
+    ],
+    "2026-10-14": [
+      {
+        "kind": "Fixed",
+        "content": "**Email Utilities power-up: Entity creation in Parse Case Wall Email**\n\nThere was an issue where the **Parse Case Wall Email** action in the Email Utilities power-up didn't create entities when the **Create Observed Entities** parameter was configured for specific entity types. This issue has been fixed in version 54.0 of the Email Utilities power-up.\n\nFor more information, see [Email Utilities](https://docs.cloud.google.com/chronicle/docs/soar/marketplace/power-ups/email-utilities).",
+        "summary": {
+          "title": "Email Utilities: Entity Creation Fixed",
+          "summary": "An issue preventing entity creation in Parse Case Wall Email within the Email Utilities power-up has been resolved. This fix ensures that entities are now correctly created when the 'Create Observed Entities' parameter is configured. The resolution is available in version 54.0."
         }
       }
     ],

@@ -1,5 +1,23 @@
 # Application Design Center
 
+## 2026-11-03
+
+### Feature
+
+Application Design Center is available in the following regions:
+
+* Osaka, Japan (`asia-northeast2`)
+* Mumbai, India (`asia-south1`)
+* Bangkok, Thailand (`asia-southeast3`)
+* Sydney, Australia (`australia-southeast1`)
+* Berlin, Germany (`europe-west10`)
+* Moncks Corner, South Carolina (`us-east1`)
+* Dammam, Saudi Arabia (`me-central2`)
+
+For more information, see
+[App Design Center locations](https://docs.cloud.google.com/application-design-center/docs/locations).
+
+---
 ## 2026-10-13
 
 ### Feature

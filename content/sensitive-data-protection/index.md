@@ -1,5 +1,20 @@
 # Sensitive Data Protection
 
+## 2026-11-02
+
+### Feature
+
+Sensitive Data Protection can inspect TIFF images for sensitive data,
+including multi-page TIFF images with up to 50 pages. TIFF images are supported
+in [content
+inspection](https://docs.cloud.google.com/sensitive-data-protection/docs/inspecting-images), [inspection jobs for
+Cloud Storage](https://docs.cloud.google.com/sensitive-data-protection/docs/inspecting-storage#inspecting-gcs), and
+[discovery](https://docs.cloud.google.com/sensitive-data-protection/docs/supported-file-types#file_clusters).
+
+For more information, see [Supported file types and scanning
+modes](https://docs.cloud.google.com/sensitive-data-protection/docs/supported-file-types).
+
+---
 ## 2026-10-09
 
 ### Change

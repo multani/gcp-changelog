@@ -317,6 +317,18 @@
                       </li>
                       <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          592 0 0  2026 11 03  <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            
+  <li>
+    <a href="../592-0-0--2026-11-03-/" class="dropdown-item">592.0.0 (2026-11-03)</a>
+  </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Access approval <b class="caret"></b>
                         </a>
 
@@ -3024,6 +3036,25 @@
 
 
 <h1 id="managed-service-for-apache-airflow">Managed Service for Apache Airflow</h1>
+<h2 id="2026-10-30">2026-10-30</h2>
+<h3 id="issue">Issue</h3>
+<p>Starting October 24, 2026, Managed Airflow (Gen 3) and Managed Airflow (Gen 2)
+environments running Python 3.11 with <code>google-api-core</code> package versions 2.28.0
+to 2.43.0 (including versions 2.30.3 to 2.43.0, which weren't previously
+affected) might experience degraded performance because of a Python 3.11
+deprecation check that scans installed package metadata on every new Python
+subprocess import. You might observe increased DAG parsing times, longer task
+execution times, higher CPU usage on Airflow DAG processors and workers, and
+frequent <code>FutureWarning</code> log entries from
+<code>google/api_core/_python_version_support.py</code> about Python 3.11 support ending on
+<code>2027-10-24</code>.</p>
+<p>For the list of affected builds and available workarounds (installing
+<code>google-api-core&gt;=2.43.1</code> on compatible Airflow 3 builds or applying a
+<code>sitecustomize.py</code> runtime patch), see the known issue for
+<a href="https://docs.cloud.google.com/composer/docs/composer-3/known-issues#google-api-core-2-30-3-to-2-43-0">Managed Airflow (Gen 3)</a>
+or
+<a href="https://docs.cloud.google.com/composer/docs/composer-2/known-issues#google-api-core-2-30-3-to-2-43-0">Managed Airflow (Gen 2)</a>.</p>
+<hr />
 <h2 id="2026-10-20">2026-10-20</h2>
 <h3 id="feature">Feature</h3>
 <p><a href="https://docs.cloud.google.com/composer/docs/composer-3/upgrade-environments#rollback">Upgrade rollbacks</a>
@@ -3467,7 +3498,7 @@ composer-3-airflow-2.10.5-build.9, composer-3-airflow-2.9.3-build.29,
 composer-2.13.7-airflow-2.9.3, composer-2.13.7-airflow-2.10.5.</p>
 <hr />
 <h2 id="2026-07-13">2026-07-13</h2>
-<h3 id="issue">Issue</h3>
+<h3 id="issue_1">Issue</h3>
 <p>In Managed Airflow (Gen 3) builds with Airflow 2.11.1 starting from
 <a href="https://docs.cloud.google.com/composer/docs/versions-packages#composer-3-airflow-2-11-1-build-7">composer-3-airflow-2.11.1-build.7</a>,
 the Airflow web server requires at least 3 GB of memory (the default amount of
@@ -3662,7 +3693,7 @@ are available in Managed Airflow (Gen 2):</p>
 <p>The following Managed Airflow versions and builds have reached their
 <a href="https://docs.cloud.google.com/composer/docs/composer-versioning-overview#version-deprecation-and-support">end of support period</a>:
 composer-3-airflow-2.9.3-build.23, composer-3-airflow-2.10.5-build.3, and composer-2.13.1-airflow-*.</p>
-<h3 id="issue_1">Issue</h3>
+<h3 id="issue_2">Issue</h3>
 <p>The <code>google-api-core</code> preinstalled package versions from 2.28.0 to 2.30.2 might
 cause degraded environment performance, which can result in longer times to
 execute a task and longer times to move a task from the queued to the executing
@@ -3729,6 +3760,9 @@ composer-3-airflow-2.9.3-build.22 and composer-2.13.0-airflow-*.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#managed-service-for-apache-airflow">Managed Service for Apache Airflow</a></li>
+          <li class="nav-item">
+            <a href="#2026-10-30" class="nav-link">2026-10-30</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-10-20" class="nav-link">2026-10-20</a>
           </li>

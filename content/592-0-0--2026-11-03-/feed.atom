@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Google Cloud: 592.0.0 (2026-11-03)</title>
+  <subtitle>Changelog for Google Cloud product: 592.0.0 (2026-11-03)</subtitle>
+  <updated>2026-11-03T00:00:00+00:00</updated>
+  <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-</id>
+  <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/592-0-0--2026-11-03-/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:breaking changes:0</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li><strong>(Cloud Datastore Emulator)</strong> Removed support for running the Datastore emulator
+  (<code>gcloud beta emulators datastore start</code>) in environment with Java versions
+  prior to 25. Users can upgrade to Java 25 or above to continue using the
+  latest Datastore emulator. Alternatively, users can use previous <code>gcloud</code> CLI
+  versions to continue using the Datastore emulator with Java 21 support.</li>
+<li><strong>(Cloud Firestore Emulator)</strong> Removed support for running the Firestore emulator
+  (<code>gcloud emulators firestore start</code>) in environment with Java versions prior
+  to 25. Users can upgrade to Java 25 or above to continue using the latest
+  Firestore emulator. Alternatively, users can use previous <code>gcloud</code> CLI
+  versions to continue using the previous Firestore emulator with Java 21
+  support.</li>
+<li><strong>(Docker)</strong> Removed the system Python and C compiler from the Debian-based Docker images.
+  gcloud, gsutil and bq now always run on the bundled Python, on both
+  <code>linux/amd64</code> and <code>linux/arm64</code>. The removed packages differ by image:</li>
+<li><code>:latest</code>, <code>:slim</code>, <code>:debian_component_based</code>: <code>python3</code>, <code>python3-dev</code>,
+    <code>python3-pip</code>, <code>python3-crcmod</code> and <code>gcc</code>.</li>
+<li><code>:emulators</code>: <code>python3</code> and <code>python3-crcmod</code>.</li>
+<li><code>:stable</code>: <code>python3-dev</code> and <code>python3-crcmod</code>, on <code>linux/arm64</code> only.</li>
+<li><strong>(Docker)</strong> Setting <code>CLOUDSDK_PYTHON=python3</code> (or <code>CLOUDSDK_GSUTIL_PYTHON</code> /
+  <code>CLOUDSDK_BQ_PYTHON</code>) in these images now makes every gcloud, gsutil or bq
+  call fail, because there is no <code>python3</code> on <code>PATH</code>. Unset it to use the
+  bundled Python.</li>
+<li><strong>(Docker)</strong> If your workflow requires a system Python, install it on top of the image,
+  for example with <code>apt-get install python3</code>. This does not change which
+  Python gcloud uses. If you need to compile C extensions, also install
+  <code>build-essential python3-dev</code>.</li>
+</ul>]]></content>
+    <summary>Recent updates remove support for older Java versions in Datastore and Firestore emulators, requiring Java 25+. Docker images have also been updated, removing system Python and C compilers. Users should ensure their environments are compatible or adjust their workflows accordingly.</summary>
+    <title>Breaking Changes: Emulator and Docker Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:google cloud cli:1</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Changed the Java dependency of the <code>google-cloud-cli-datastore-emulator</code>,
+  <code>google-cloud-cli-firestore-emulator</code>, <code>google-cloud-cli-pubsub-emulator</code>,
+  <code>google-cloud-cli-app-engine-java</code>, and <code>google-cloud-cli-bqms</code> deb and rpm
+  packages from a full JDK to a headless JRE, preferring Java 25. The Datastore
+  and Firestore emulator packages now require Java 25 or later.</li>
+</ul>]]></content>
+    <summary>The Google Cloud CLI has updated Java dependencies for several emulator packages, including Datastore and Firestore, to use a headless JRE and prefer Java 25. The Datastore and Firestore emulators now require Java 25 or later.</summary>
+    <title>Google Cloud CLI: CLI Emulators Update</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:agent registry:2</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Removed <code>--scanning-state</code> flag from <code>gcloud agent-registry skills create</code>
+  and <code>gcloud agent-registry skills update</code>. Use <code>--scanning-policy</code> instead.</li>
+</ul>]]></content>
+    <summary>The `--scanning-state` flag has been removed from `gcloud agent-registry skills create` and `update` commands. Users should now utilize the `--scanning-policy` flag for managing skill scanning configurations.</summary>
+    <title>Agent Registry: Agent Registry: Simplified Skill Creation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:alloydb:3</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated AlloyDB Auth Proxy installation instructions in <code>gcloud alloydb connect</code> to v1.17.2.</li>
+<li>Added <code>--connection-pooling-authproxy-pooler-scaling-type</code> flag to
+  <code>gcloud beta alloydb instances create</code>,
+  <code>gcloud beta alloydb instances create-secondary</code>, and
+  <code>gcloud beta alloydb instances update</code>.</li>
+<li>Promoted the following flags to GA on <code>gcloud alloydb instances create</code> and
+  <code>gcloud alloydb instances update</code>:</li>
+<li><code>--enable-autoscaler</code></li>
+<li><code>--autoscaler-max-node-count</code></li>
+<li><code>--autoscaler-cool-down-period-seconds</code></li>
+<li><code>--autoscaler-target-cpu-usage</code></li>
+<li><code>--autoscaler-set-schedule</code></li>
+<li><code>--autoscaler-schedule-cron-exp</code></li>
+<li><code>--autoscaler-schedule-duration-seconds</code></li>
+<li><code>--autoscaler-schedule-time-zone</code></li>
+<li><code>--autoscaler-schedule-min-node-count</code></li>
+<li><code>--autoscaler-schedule-description</code></li>
+<li>Promoted the following flags to GA on <code>gcloud alloydb instances update</code>:</li>
+<li><code>--autoscaler-delete-schedule</code></li>
+<li><code>--autoscaler-disable-schedule</code></li>
+<li><code>--autoscaler-enable-schedule</code></li>
+<li>Added <code>--autoscaler-target-connections-count</code> flag to
+  <code>gcloud alloydb instances create</code> and <code>gcloud alloydb instances update</code>.</li>
+</ul>]]></content>
+    <summary>New features and improvements for AlloyDB are now available. This update includes enhanced installation instructions for the Auth Proxy, new flags for connection pooling and autoscaling configuration, and promotion of several autoscaling flags to General Availability.</summary>
+    <title>AlloyDB: AlloyDB Enhancements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:app engine:4</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated the Java SDK to version 5.2.0 build from the open source project
+  <a href="https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.2.0">https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.2.0</a>.</li>
+<li>Added <code>--from-image</code> and <code>--destination-repository</code> flags to
+  <code>gcloud beta app migrate-to-run</code> for App Engine Standard environment.</li>
+<li>Updated <code>gcloud beta app migrate-to-run --from-image</code> to show the reason
+  returned by the App Engine Admin API when exporting the image fails.</li>
+<li>Added support for the <code>vpc_access</code> configuration in <code>app.yaml</code> to
+  <code>gcloud app deploy</code>, enabling Direct VPC egress for App Engine standard
+  environment.</li>
+</ul>]]></content>
+    <summary>App Engine for Java Standard gets an SDK update to 5.2.0. New flags and features for `gcloud beta app migrate-to-run` improve migration and error reporting. Direct VPC egress is now supported via `vpc_access` configuration in `app.yaml`.</summary>
+    <title>App Engine: App Engine Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:app hub:5</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>MULTI_REGIONAL</code> choice to <code>--scope-type</code> flag of
+  <code>gcloud apphub applications create</code>.</li>
+</ul>]]></content>
+    <summary>The `gcloud apphub applications create` command now includes a `MULTI_REGIONAL` option for the `--scope-type` flag, allowing for broader application scope management.</summary>
+    <title>App Hub: App Hub supports multi-regional scope</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:artifact registry:6</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue in <code>gcloud artifacts attachments download</code> where attachment
+  file names were not validated before writing to <code>--destination</code>.</li>
+</ul>]]></content>
+    <summary>An issue in `gcloud artifacts attachments download` has been resolved. Attachment file names are now validated before being written to the destination, improving security and reliability.</summary>
+    <title>Artifact Registry: Artifact Registry attachment download fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:beyondcorp:7</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--dispatch-info-output-type</code> flag to
+  <code>gcloud beyondcorp security-gateways create</code> and
+  <code>gcloud beyondcorp security-gateways update</code>, and upstream
+  <code>dispatchInfo</code> configuration to
+  <code>gcloud beyondcorp security-gateways applications create</code> and
+  <code>gcloud beyondcorp security-gateways applications update</code>
+  to configure delegated dispatch info headers.</li>
+<li>Removed <code>gcloud beta beyondcorp app</code> and <code>gcloud beta beyondcorp
+  client-connector</code> command groups.</li>
+</ul>]]></content>
+    <summary>New flags have been added to BeyondCorp security gateway commands to configure delegated dispatch info headers. Additionally, deprecated beta command groups for app and client-connector have been removed.</summary>
+    <title>Beyondcorp: New BeyondCorp Features for Security Gateways</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:biglake:8</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--kms-key</code> flag to <code>gcloud beta biglake hive catalogs create</code>, and
+  <code>--kms-key</code> and <code>--clear-kms-key</code> flags to
+  <code>gcloud beta biglake hive catalogs update</code> to support customer-managed
+  encryption keys (CMEK).</li>
+<li>Added <code>--workday-api-client-client-id</code> flag to
+  <code>gcloud beta biglake iceberg catalogs create</code> and
+  <code>gcloud beta biglake iceberg catalogs update</code> to support Workday OIDC
+  authentication.</li>
+</ul>]]></content>
+    <summary>BigLake now supports customer-managed encryption keys (CMEK) for Hive catalogs via the `--kms-key` flag. Additionally, Workday OIDC authentication is now supported for Iceberg catalogs using the `--workday-api-client-client-id` flag.</summary>
+    <title>BigLake: BigLake Enhancements for Encryption and Authentication</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud backup dr:9</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Removed default value (<code>-</code>) for <code>--location</code> flag in
+  <code>gcloud beta backup-dr applied-auto-protection-policies list</code>. <code>--location</code>
+  flag is now required.</li>
+<li>Promoted <code>gcloud backup-dr applied-auto-protection-policies</code> to GA.</li>
+<li>Fixed an issue where
+  <code>gcloud backup-dr backup-plans update --backup-rules-from-file</code> failed with
+  <code>update mask is required</code> when the file contained an empty <code>backup-rules</code>
+  list.</li>
+<li>Fixed an issue where
+  <code>gcloud backup-dr backup-plans update --backup-rules-from-file</code> cleared
+  <code>--compute-instance-properties</code> and <code>--disk-properties</code> when they were
+  specified in the same command.</li>
+<li>Promoted <code>gcloud backup-dr applied-auto-protection-policies</code> to GA.</li>
+<li>Promoted <code>gcloud backup-dr auto-protection-bindings</code> to GA.</li>
+<li>Promoted <code>gcloud backup-dr auto-protection-policies</code> commands to GA.</li>
+<li>Promoted <code>gcloud backup-dr binding-matching-resources</code> to GA.</li>
+</ul>]]></content>
+    <summary>Several Backup and DR gcloud commands, including those for applied auto-protection policies and auto-protection bindings, are now generally available. Updates have also been made to the `--location` flag requirement for listing applied auto-protection policies and fixes have been implemented for backup plan updates.</summary>
+    <title>Cloud Backup DR: Backup and DR commands now generally available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud bigtable:10</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--automated-backup-keep-hot-duration</code> flag to
+  <code>gcloud bigtable instances tables create</code>,
+  <code>gcloud bigtable instances tables update</code>, <code>gcloud bigtable tables create</code>,
+  and <code>gcloud bigtable tables update</code> to create hot automated backups that
+  remain hot for the specified duration before transitioning to standard
+  backups.</li>
+<li>Added <code>--clear-automated-backup-keep-hot-duration</code> flag to
+  <code>gcloud bigtable instances tables update</code> and
+  <code>gcloud bigtable tables update</code> to stop creating hot automated backups.</li>
+<li>Added <code>--avro-schema-path</code> flag to <code>gcloud bigtable schema-bundles create</code>
+  and <code>gcloud bigtable schema-bundles update</code>.</li>
+</ul>]]></content>
+    <summary>New flags allow you to create automated backups for Cloud Bigtable that remain hot for a specified duration. You can now control the hot backup duration and stop creating hot backups altogether with the new flags added to the gcloud command-line tool.</summary>
+    <title>Cloud Bigtable: Automated backups for Cloud Bigtable</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud dataplex:11</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--custom-instructions</code> flag to
+  <code>gcloud dataplex datascans create data-documentation</code> and
+  <code>--custom-instructions</code> and <code>--clear-custom-instructions</code> flags to
+  <code>gcloud dataplex datascans update data-documentation</code> to support specifying
+  or clearing custom instructions that guide data documentation generation.</li>
+<li>Added <code>--sql-dialect</code> flag to
+  <code>gcloud dataplex datascans create data-documentation</code> and
+  <code>gcloud dataplex datascans update data-documentation</code> commands to specify
+  the SQL dialect to use in generated SQL queries.</li>
+</ul>]]></content>
+    <summary>New flags for data documentation generation in Dataplex allow users to specify custom instructions and SQL dialects. These enhancements provide greater control over how data documentation is created, ensuring more tailored and accurate results.</summary>
+    <title>Cloud Dataplex: Dataplex data documentation improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud dataproc:12</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--scheduling-timeout</code> and <code>--requested-run-duration</code> flags to <code>gcloud
+  dataproc clusters create</code> for creating Dynamic Workload Scheduler (DWS)
+  scheduled clusters.</li>
+</ul>]]></content>
+    <summary>Create Dataproc clusters for Dynamic Workload Scheduler (DWS) with new flags for scheduling timeouts and requested run durations. These flags allow for more precise control over DWS scheduled cluster lifecycles.</summary>
+    <title>Cloud Dataproc: Dataproc DWS Scheduled Clusters</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud datastream:13</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where <code>gcloud datastream private-connections create</code> silently
+  dropped user-supplied <code>--labels</code>.</li>
+</ul>]]></content>
+    <summary>An issue with the `gcloud datastream private-connections create` command has been resolved. Previously, user-supplied labels were silently dropped, but this is now fixed. This ensures that labels provided during private connection creation are correctly applied.</summary>
+    <title>Cloud Datastream: Datastream private connections labels fixed</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud firestore emulator:14</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Release Cloud Firestore emulator v1.23.0</li>
+<li>Added support for Datastore merge join and multiple inequality index
+    selection with <code>--require-indexes</code> in Datastore mode</li>
+<li>Added support for the <code>add_window_fields</code> stage in the Firestore
+    Pipelines API with the <code>sum</code>, <code>average</code>, <code>count</code>, <code>minimum</code>, <code>maximum</code>,
+    <code>first</code>, <code>last</code>, <code>array_agg</code>, <code>array_agg_distinct</code>, and <code>rank</code> window
+    functions</li>
+<li>Allowed Enterprise data types for all database editions</li>
+<li>Fixed transaction conflict detection for concurrent writes against
+    transactional queries</li>
+<li>Fixed <code>ArrayIndexOutOfBoundsException</code> on incomplete Firestore Rules
+    permission traces</li>
+<li>Populated accurate <code>MoreResultsType</code> for Datastore mode queries and
+    fixed Pipeline DML edge cases</li>
+<li>Updated minimum required Java JRE version to 25</li>
+</ul>]]></content>
+    <summary>The latest version of the Firestore emulator, v1.23.0, brings enhanced support for Datastore operations including merge join and multiple inequality index selection. It also introduces new capabilities for the Firestore Pipelines API with various window functions and enables Enterprise data types across all database editions. Several bug fixes have also been implemented, including improvements to transaction conflict detection and pipeline DML edge cases.</summary>
+    <title>Cloud Firestore Emulator: Firestore Emulator v1.23.0 Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud infrastructure manager:15</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud infra-manager deployments apply</code> to display a warning when
+  <code>--tf-version-constraint</code> or the deployment configuration specifies a paid
+  Terraform version (1.6.0 or later).</li>
+</ul>]]></content>
+    <summary>The `gcloud infra-manager deployments apply` command now warns users if a paid Terraform version (1.6.0+) is specified in the deployment configuration or via the `--tf-version-constraint` flag. This ensures users are aware of potential costs associated with newer Terraform features.</summary>
+    <title>Cloud Infrastructure Manager: Terraform Paid Version Warning</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud key management service:16</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added support for ECDH key encapsulation mechanism algorithms:
+  <code>kem-ecdh-p256</code> and <code>kem-ecdh-p384</code>.</li>
+</ul>]]></content>
+    <summary>Cloud Key Management Service now supports ECDH key encapsulation mechanisms, including `kem-ecdh-p256` and `kem-ecdh-p384`. This enhancement provides more options for securing your data with advanced cryptographic algorithms.</summary>
+    <title>Cloud Key Management Service: New Key Encapsulation Algorithms Supported</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud run:17</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--public</code> flag for Cloud Run services, allowing users to make a
+  service public by disabling invoker IAM checks and Identity-Aware Proxy
+  (IAP). This flag is available in <code>gcloud beta run deploy</code>,
+  <code>gcloud beta run services update</code>, and
+  <code>gcloud beta run multi-region-services update</code>.</li>
+</ul>]]></content>
+    <summary>You can now easily make Cloud Run services public with the new --public flag. This flag disables invoker IAM checks and Identity-Aware Proxy (IAP), simplifying access for public-facing applications. The feature is available in the gcloud beta command-line interface.</summary>
+    <title>Cloud Run: Cloud Run: Make Services Public</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud sql:18</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>gcloud sql instances reconcile-networking</code> to reconcile Private Service Connect (PSC) DNS networking configuration for a Cloud SQL instance.</li>
+</ul>]]></content>
+    <summary>A new command, `gcloud sql instances reconcile-networking`, is now available to help manage Private Service Connect (PSC) DNS networking configurations for your Cloud SQL instances. This simplifies the process of ensuring your instance's networking is correctly set up.</summary>
+    <title>Cloud SQL: Simplify Cloud SQL networking</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud shell:19</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>gcloud cloud-shell scp</code> to support passwordless authentication over
+  the Cloud Shell TCP tunnel.</li>
+<li>Updated <code>gcloud cloud-shell ssh</code> to skip uploading an SSH public key when
+  connecting with passwordless authentication.</li>
+</ul>]]></content>
+    <summary>Cloud Shell now supports passwordless authentication for secure file transfers using `gcloud cloud-shell scp` over TCP tunnels. It also streamlines SSH connections by skipping public key uploads when using passwordless authentication.</summary>
+    <title>Cloud Shell: Cloud Shell improves secure file transfers</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:cloud workstations:20</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--direct-access-ports</code> flag to <code>gcloud beta workstations clusters create</code> command.</li>
+<li>Added <code>--direct-access-ports</code> flag to <code>gcloud beta workstations clusters update</code> command.</li>
+</ul>]]></content>
+    <summary>New flags `--direct-access-ports` have been added to `gcloud beta workstations clusters create` and `update` commands. This allows for direct access to specific ports for Cloud Workstations clusters, enhancing connectivity options.</summary>
+    <title>Cloud Workstations: Cloud Workstations: Direct Access Ports Enabled</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:compute engine:21</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Fixed an issue where <code>gcloud compute</code> commands omitted troubleshooting
+  documentation links from operation error messages.</li>
+<li>Promoted <code>--reservation-subblock</code> flag of <code>gcloud compute hosts describe</code>,
+  <code>gcloud compute hosts list</code>, <code>gcloud compute reservations hosts describe</code>,
+  and <code>gcloud compute reservations hosts list</code> to GA and beta.</li>
+</ul>]]></content>
+    <summary>Resolved an issue with gcloud compute commands not showing troubleshooting links in error messages. Additionally, the `--reservation-subblock` flag for hosts has been promoted to General Availability and Beta.</summary>
+    <title>Compute Engine: Compute Engine improvements</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:firebase test lab:22</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Deprecated <code>gcloud firebase test</code> command group. Firebase Test Lab is
+  deprecated and will be fully shut down on September 30, 2027. To maintain
+  your testing workflows, you can migrate to the Developer Device Platform on
+  Google Cloud. See the Developer Device Platform Migration Guide
+  (<a href="https://docs.cloud.google.com/developer-device-platform/device-run/migrate">https://docs.cloud.google.com/developer-device-platform/device-run/migrate</a>)
+  and FAQ
+  (<a href="https://docs.cloud.google.com/developer-device-platform/troubleshooting">https://docs.cloud.google.com/developer-device-platform/troubleshooting</a>)
+  for more details.</li>
+</ul>]]></content>
+    <summary>Firebase Test Lab is being deprecated and will shut down on September 30, 2027. Migrate your testing workflows to the Developer Device Platform on Google Cloud to ensure continuity. Detailed migration guides and FAQs are available.</summary>
+    <title>Firebase Test Lab: Firebase Test Lab Deprecation</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:kubernetes engine:23</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Added <code>--enable-dataplane-v2</code> flag to <code>gcloud container clusters update</code> to
+  initiate GKE Dataplane V2 migration for clusters.</li>
+<li>Added <code>--datapath-provider</code> flag to <code>gcloud container node-pools update</code> to
+  update the datapath provider for a node pool.</li>
+<li>Promoted <code>--enable-ambient-networking</code> flag to GA for <code>gcloud container
+  clusters create</code>, <code>gcloud container clusters create-auto</code>, and <code>gcloud
+  container clusters update</code>.</li>
+</ul>]]></content>
+    <summary>GKE now supports migrating to Dataplane V2 using the `gcloud container clusters update --enable-dataplane-v2` flag. Additionally, ambient networking, a feature for enhanced network management, has been promoted to General Availability.</summary>
+    <title>Kubernetes Engine: GKE Dataplane V2 and Ambient Networking Updates</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:592-0-0--2026-11-03-:2026-11-03:network security:24</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<ul>
+<li>Updated <code>SecurityProfile</code> and <code>SecurityProfileGroup</code> YAML schemas to
+  support WildFire Analysis in beta and GA.</li>
+</ul>
+<p>Subscribe to these release notes at <a href="https://groups.google.com/forum/#!forum/google-cloud-sdk-announce">https://groups.google.com/forum/#!forum/google-cloud-sdk-announce</a>.</p>]]></content>
+    <summary>New versions of SecurityProfile and SecurityProfileGroup YAML schemas now support WildFire Analysis, with beta and general availability features. This update enhances network security capabilities by integrating advanced threat analysis.</summary>
+    <title>Network Security: WildFire Analysis Support for Security Profiles</title>
+  </entry>
+</feed>

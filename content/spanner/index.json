@@ -9,6 +9,14 @@
           "title": "JSON and JSONB comparisons and ordering",
           "summary": "Spanner now supports equality and ordering comparisons on JSONB and JSON values directly in GROUP BY and ORDER BY clauses. You can also leverage search indexes to accelerate equality comparisons on JSON columns and subpaths."
         }
+      },
+      {
+        "kind": "Feature",
+        "content": "Spanner Graph supports the following enhancements:\n\n* You can create property graphs from SQL views that call\n  [remote functions](https://docs.cloud.google.com/spanner/docs/cloud-run-remote-function)\n  ([Preview](https://cloud.google.com/products#product-launch-stages)) to\n  compute node and edge properties. For more information, see\n  [Compute properties with remote functions](https://docs.cloud.google.com/spanner/docs/graph/graph-with-views-how-to#remote-functions-views).\n* You can write simplified queries on schemaless dynamic properties without\n  explicit conversions to SQL data types. This lets you group and sort\n  dynamic properties, and compare them directly with literal values or other\n  dynamic properties. For more information, see\n  [Filter, compare, and sort by dynamic properties](https://docs.cloud.google.com/spanner/docs/graph/manage-schemaless-data#filter-property-values)\n  and\n  [JSON comparison and sorting](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/data-types#comparison_and_sorting).",
+        "summary": {
+          "title": "Spanner Graph Enhancements",
+          "summary": "Spanner Graph now supports creating property graphs from SQL views that call remote functions for property computation. Additionally, you can write simplified queries on schemaless dynamic properties without explicit SQL data type conversions, allowing for easier grouping, sorting, and comparison."
+        }
       }
     ],
     "2026-10-27": [

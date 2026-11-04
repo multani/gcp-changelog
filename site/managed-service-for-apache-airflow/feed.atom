@@ -2,9 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Managed Service for Apache Airflow</title>
   <subtitle>Changelog for Google Cloud product: Managed Service for Apache Airflow</subtitle>
-  <updated>2026-10-20T00:00:00+00:00</updated>
+  <updated>2026-10-30T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/managed-service-for-apache-airflow/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:managed-service-for-apache-airflow:2026-10-30:issue:0</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Starting October 24, 2026, Managed Airflow (Gen 3) and Managed Airflow (Gen 2)
+environments running Python 3.11 with <code>google-api-core</code> package versions 2.28.0
+to 2.43.0 (including versions 2.30.3 to 2.43.0, which weren't previously
+affected) might experience degraded performance because of a Python 3.11
+deprecation check that scans installed package metadata on every new Python
+subprocess import. You might observe increased DAG parsing times, longer task
+execution times, higher CPU usage on Airflow DAG processors and workers, and
+frequent <code>FutureWarning</code> log entries from
+<code>google/api_core/_python_version_support.py</code> about Python 3.11 support ending on
+<code>2027-10-24</code>.</p>
+<p>For the list of affected builds and available workarounds (installing
+<code>google-api-core&gt;=2.43.1</code> on compatible Airflow 3 builds or applying a
+<code>sitecustomize.py</code> runtime patch), see the known issue for
+<a href="https://docs.cloud.google.com/composer/docs/composer-3/known-issues#google-api-core-2-30-3-to-2-43-0">Managed Airflow (Gen 3)</a>
+or
+<a href="https://docs.cloud.google.com/composer/docs/composer-2/known-issues#google-api-core-2-30-3-to-2-43-0">Managed Airflow (Gen 2)</a>.</p>]]></content>
+    <summary>Starting October 24, 2026, certain Managed Airflow environments may experience performance issues due to a package incompatibility. This could lead to slower DAG parsing, longer task execution, and increased CPU usage. The issue affects environments running Python 3.11 with specific versions of the `google-api-core` package.</summary>
+    <title>Issue: Airflow Performance Degradation Advisory</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -6,6 +6,144 @@
 
 
 
+### cos-129-19506-578-33
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/d85203a42d8b86ef624aecfdbd44361fa8a62c51 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.578.33/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed an IDPF bug that could cause indefinite IPv4 route loss after a hard NIC reset.
+
+### Feature
+
+Enabled EROFS support.
+
+### Fixed
+
+Added support for NVIDIA driver v580.196.07.
+
+### Fixed
+
+Added support for NVIDIA driver v595.112.07.
+
+### Fixed
+
+Upgraded app-arch/zstd to v1.5.7-r1.
+
+### Fixed
+
+Upgraded app-containers/docker-credential-helpers to v0.9.12.
+
+### Fixed
+
+Upgraded app-editors/vim to v9.2.1229, Upgraded app-editors/vim-core to v9.2.1229.
+
+### Fixed
+
+Upgraded app-misc/ca-certificates to v20260816.3.131.1.
+
+### Fixed
+
+Upgraded dev-db/sqlite to v3.54.1.
+
+### Fixed
+
+Upgraded dev-libs/expat to v2.9.0.
+
+### Fixed
+
+Upgraded dev-libs/nss to v3.132.
+
+### Fixed
+
+Upgraded net-fs/nfs-utils to v2.6.4.
+
+### Fixed
+
+Upgraded sys-libs/libxcrypt to v4.4.38-r1.
+
+### Security
+
+Fixed CVE-2026-33186 in cni-plugins.
+
+### Security
+
+Fixed CVE-2026-33186 in containerd.
+
+### Security
+
+Fixed CVE-2026-33186 in google-osconfig-agent.
+
+### Security
+
+Fixed CVE-2026-42508, CVE-2026-39834, CVE-2026-39832, CVE-2026-39831, CVE-2026-46595 in google-osconfig-agent.
+
+### Security
+
+Fixed KCTF-d095321 in the Linux kernel.
+
+### Security
+
+Updated app-arch/brotli to 1.0.10. This resolves CVE-2026-111497.
+
+### Change
+
+
+
+### cos-125-19216-760-32
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |
+| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/44bf8b7767ac63010cad3d8a3afa241b262193de ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.760.32/lakitu/gpu_driver_versions.textproto) |
+
+### Fixed
+
+Fixed an IDPF bug that could cause indefinite IPv4 route loss after a hard NIC reset.
+
+### Security
+
+Fixed CVE-2024-41110, CVE-2026-33186 in cri-tools.
+
+### Security
+
+Fixed CVE-2026-33186 in cni-plugins.
+
+### Security
+
+Fixed CVE-2026-33186 in containerd.
+
+### Security
+
+Fixed CVE-2026-33186 in guest-agent.
+
+### Security
+
+Fixed CVE-2026-39832, CVE-2026-33186, CVE-2026-46595, CVE-2026-39831 in docker.
+
+### Security
+
+Fixed CVE-2026-39834, CVE-2026-39831 in google-osconfig-agent.
+
+### Security
+
+Fixed CVE-2026-77214 in dev-libs/expat.
+
+### Security
+
+Fixed KCTF-d095321 in the Linux kernel.
+
+### Security
+
+Updated app-arch/brotli to 1.0.10. This resolves CVE-2026-111497.
+
+### Change
+
+
+
 ### cos-133-19999-44-174
 
 |  |  |  |  |
@@ -195,10 +333,6 @@ Upgraded dev-lang/python to v3.13.16. This fixes CVE-2026-19445.
 
 Updated app-admin/google-guest-configs to v20261025.00.
 
-### Fixed
-
-Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN\_RSTAT.
-
 ### Security
 
 Fixed CVE-2026-33186 in google-osconfig-agent.
@@ -242,10 +376,6 @@ Runtime sysctl changes:
 ### Change
 
 Updated app-admin/google-guest-configs to v20261025.00.
-
-### Fixed
-
-Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN\_RSTAT.
 
 ### Security
 

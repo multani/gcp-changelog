@@ -1,5 +1,18 @@
 # BigQuery
 
+## 2026-11-03
+
+### Change
+
+In [BigQuery Studio](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#studio-overview),
+the left pane has been updated with new tab names. The **Classic Explorer** tab
+has been renamed to the **Data** tab, and the **Repository** tab has been
+renamed to the **Source control** tab. The **Data** tab now includes the
+**Add data** button and focuses on data hierarchies. These changes are
+[generally available](https://cloud.google.com/products#product-launch-stages)
+(GA).
+
+---
 ## 2026-11-02
 
 ### Feature
@@ -70,15 +83,6 @@ is in
 
 ---
 ## 2026-10-27
-
-### Feature
-
-You can manage and version control SQL scripts and notebooks with
-[BigQuery Studio Git repositories](https://docs.cloud.google.com/bigquery/docs/git-repositories),
-which provide a streamlined, folder-based integration with remote Git
-repositories. This feature is
-[generally available](https://cloud.google.com/products#product-launch-stages)
-(GA).
 
 ### Feature
 

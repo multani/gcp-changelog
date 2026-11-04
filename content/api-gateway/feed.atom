@@ -2,9 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: API Gateway</title>
   <subtitle>Changelog for Google Cloud product: API Gateway</subtitle>
-  <updated>2026-10-07T00:00:00+00:00</updated>
+  <updated>2026-11-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:api-gateway</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/api-gateway/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:api-gateway:2026-11-03:feature:0</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Call Google Cloud APIs from streaming gateways</strong></p>
+<p>Streaming gateways can now call Google Cloud APIs such as <code>aiplatform.googleapis.com</code>. A gateway with an <code>effectiveStreamingMode</code> of <code>EFFECTIVE_STREAMING_MODE_ENABLED</code> authenticates to backends whose host ends in <code>.googleapis.com</code> or <code>.vertexai.goog</code> with an access token for the gateway's service account. Other backends still receive an ID token. An existing streaming gateway switches when API Gateway next rolls out a gateway update, or immediately when you update it to a new API config.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/securing-backend-services#other-gcp-apis">Securing backend services</a>.</p>]]></content>
+    <summary>Streaming gateways can now directly call Google Cloud APIs like aiplatform.googleapis.com. This feature uses access tokens for service accounts when connecting to specific Google Cloud domains. Existing gateways will update automatically or upon manual reconfiguration.</summary>
+    <title>Feature: Call Google Cloud APIs from Streaming Gateways</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

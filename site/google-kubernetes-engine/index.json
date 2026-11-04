@@ -1,6 +1,16 @@
 {
   "name": "Google Kubernetes Engine",
   "entries": {
+    "2026-11-03": [
+      {
+        "kind": "Feature",
+        "content": "In GKE version 1.37.0-gke.3570000 and later, you can split each Local SSD on a node between ephemeral storage and raw block storage. When you create a cluster or node pool, use the `capacity` property of the `--ephemeral-storage-local-ssd` flag to set how much Local SSD capacity GKE formats for ephemeral storage. GKE leaves the rest of each Local SSD unformatted, so that workloads like databases and caches can use it as raw block storage. This feature is available in GKE Standard clusters. For more information, see [Provision and use mixed Local SSDs for raw block and ephemeral storage](https://docs.cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/mixed-local-ssd).",
+        "summary": {
+          "title": "Split Local SSDs for Flexible Storage",
+          "summary": "GKE version 1.37.0-gke.3570000 and later allows you to partition Local SSDs on nodes. You can now allocate a portion for ephemeral storage and use the remainder as raw block storage for demanding workloads like databases and caches. This feature is available in GKE Standard clusters."
+        }
+      }
+    ],
     "2026-10-29": [
       {
         "kind": "Feature",

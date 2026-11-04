@@ -1,5 +1,21 @@
 # Gemini Enterprise
 
+## 2026-11-03
+
+### Feature
+
+**Gemini Enterprise: Salesforce federated data store**
+
+Connecting a Salesforce data source with Gemini Enterprise using data federation
+is generally available (GA). You can use the Gemini Enterprise app assistant to
+search across your Salesforce accounts, contacts, opportunities, cases, leads,
+and custom objects, get answers grounded in that content, and create, update,
+and delete records without needing to ingest the data.
+
+For more information, see
+[Set up a Salesforce data store](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/salesforce/set-up-data-store).
+
+---
 ## 2026-10-30
 
 ### Feature

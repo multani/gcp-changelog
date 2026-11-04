@@ -1,0 +1,207 @@
+{
+  "name": "592.0.0 (2026-11-03)",
+  "entries": {
+    "2026-11-03": [
+      {
+        "kind": "Breaking Changes",
+        "content": "* **(Cloud Datastore Emulator)** Removed support for running the Datastore emulator\n  (`gcloud beta emulators datastore start`) in environment with Java versions\n  prior to 25. Users can upgrade to Java 25 or above to continue using the\n  latest Datastore emulator. Alternatively, users can use previous `gcloud` CLI\n  versions to continue using the Datastore emulator with Java 21 support.\n* **(Cloud Firestore Emulator)** Removed support for running the Firestore emulator\n  (`gcloud emulators firestore start`) in environment with Java versions prior\n  to 25. Users can upgrade to Java 25 or above to continue using the latest\n  Firestore emulator. Alternatively, users can use previous `gcloud` CLI\n  versions to continue using the previous Firestore emulator with Java 21\n  support.\n* **(Docker)** Removed the system Python and C compiler from the Debian-based Docker images.\n  gcloud, gsutil and bq now always run on the bundled Python, on both\n  `linux/amd64` and `linux/arm64`. The removed packages differ by image:\n  + `:latest`, `:slim`, `:debian_component_based`: `python3`, `python3-dev`,\n    `python3-pip`, `python3-crcmod` and `gcc`.\n  + `:emulators`: `python3` and `python3-crcmod`.\n  + `:stable`: `python3-dev` and `python3-crcmod`, on `linux/arm64` only.\n* **(Docker)** Setting `CLOUDSDK_PYTHON=python3` (or `CLOUDSDK_GSUTIL_PYTHON` /\n  `CLOUDSDK_BQ_PYTHON`) in these images now makes every gcloud, gsutil or bq\n  call fail, because there is no `python3` on `PATH`. Unset it to use the\n  bundled Python.\n* **(Docker)** If your workflow requires a system Python, install it on top of the image,\n  for example with `apt-get install python3`. This does not change which\n  Python gcloud uses. If you need to compile C extensions, also install\n  `build-essential python3-dev`.",
+        "summary": {
+          "title": "Emulator and Docker Updates",
+          "summary": "Recent updates remove support for older Java versions in Datastore and Firestore emulators, requiring Java 25+. Docker images have also been updated, removing system Python and C compilers. Users should ensure their environments are compatible or adjust their workflows accordingly."
+        }
+      },
+      {
+        "kind": "Google Cloud CLI",
+        "content": "* Changed the Java dependency of the `google-cloud-cli-datastore-emulator`,\n  `google-cloud-cli-firestore-emulator`, `google-cloud-cli-pubsub-emulator`,\n  `google-cloud-cli-app-engine-java`, and `google-cloud-cli-bqms` deb and rpm\n  packages from a full JDK to a headless JRE, preferring Java 25. The Datastore\n  and Firestore emulator packages now require Java 25 or later.",
+        "summary": {
+          "title": "CLI Emulators Update",
+          "summary": "The Google Cloud CLI has updated Java dependencies for several emulator packages, including Datastore and Firestore, to use a headless JRE and prefer Java 25. The Datastore and Firestore emulators now require Java 25 or later."
+        }
+      },
+      {
+        "kind": "Agent Registry",
+        "content": "* Removed `--scanning-state` flag from `gcloud agent-registry skills create`\n  and `gcloud agent-registry skills update`. Use `--scanning-policy` instead.",
+        "summary": {
+          "title": "Agent Registry: Simplified Skill Creation",
+          "summary": "The `--scanning-state` flag has been removed from `gcloud agent-registry skills create` and `update` commands. Users should now utilize the `--scanning-policy` flag for managing skill scanning configurations."
+        }
+      },
+      {
+        "kind": "AlloyDB",
+        "content": "* Updated AlloyDB Auth Proxy installation instructions in `gcloud alloydb connect` to v1.17.2.\n* Added `--connection-pooling-authproxy-pooler-scaling-type` flag to\n  `gcloud beta alloydb instances create`,\n  `gcloud beta alloydb instances create-secondary`, and\n  `gcloud beta alloydb instances update`.\n* Promoted the following flags to GA on `gcloud alloydb instances create` and\n  `gcloud alloydb instances update`:\n  + `--enable-autoscaler`\n  + `--autoscaler-max-node-count`\n  + `--autoscaler-cool-down-period-seconds`\n  + `--autoscaler-target-cpu-usage`\n  + `--autoscaler-set-schedule`\n  + `--autoscaler-schedule-cron-exp`\n  + `--autoscaler-schedule-duration-seconds`\n  + `--autoscaler-schedule-time-zone`\n  + `--autoscaler-schedule-min-node-count`\n  + `--autoscaler-schedule-description`\n* Promoted the following flags to GA on `gcloud alloydb instances update`:\n  + `--autoscaler-delete-schedule`\n  + `--autoscaler-disable-schedule`\n  + `--autoscaler-enable-schedule`\n* Added `--autoscaler-target-connections-count` flag to\n  `gcloud alloydb instances create` and `gcloud alloydb instances update`.",
+        "summary": {
+          "title": "AlloyDB Enhancements",
+          "summary": "New features and improvements for AlloyDB are now available. This update includes enhanced installation instructions for the Auth Proxy, new flags for connection pooling and autoscaling configuration, and promotion of several autoscaling flags to General Availability."
+        }
+      },
+      {
+        "kind": "App Engine",
+        "content": "* Updated the Java SDK to version 5.2.0 build from the open source project\n  <https://github.com/GoogleCloudPlatform/appengine-java-standard/releases/tag/v5.2.0>.\n* Added `--from-image` and `--destination-repository` flags to\n  `gcloud beta app migrate-to-run` for App Engine Standard environment.\n* Updated `gcloud beta app migrate-to-run --from-image` to show the reason\n  returned by the App Engine Admin API when exporting the image fails.\n* Added support for the `vpc_access` configuration in `app.yaml` to\n  `gcloud app deploy`, enabling Direct VPC egress for App Engine standard\n  environment.",
+        "summary": {
+          "title": "App Engine Updates",
+          "summary": "App Engine for Java Standard gets an SDK update to 5.2.0. New flags and features for `gcloud beta app migrate-to-run` improve migration and error reporting. Direct VPC egress is now supported via `vpc_access` configuration in `app.yaml`."
+        }
+      },
+      {
+        "kind": "App Hub",
+        "content": "* Added `MULTI_REGIONAL` choice to `--scope-type` flag of\n  `gcloud apphub applications create`.",
+        "summary": {
+          "title": "App Hub supports multi-regional scope",
+          "summary": "The `gcloud apphub applications create` command now includes a `MULTI_REGIONAL` option for the `--scope-type` flag, allowing for broader application scope management."
+        }
+      },
+      {
+        "kind": "Artifact Registry",
+        "content": "* Fixed an issue in `gcloud artifacts attachments download` where attachment\n  file names were not validated before writing to `--destination`.",
+        "summary": {
+          "title": "Artifact Registry attachment download fixed",
+          "summary": "An issue in `gcloud artifacts attachments download` has been resolved. Attachment file names are now validated before being written to the destination, improving security and reliability."
+        }
+      },
+      {
+        "kind": "Beyondcorp",
+        "content": "* Added `--dispatch-info-output-type` flag to\n  `gcloud beyondcorp security-gateways create` and\n  `gcloud beyondcorp security-gateways update`, and upstream\n  `dispatchInfo` configuration to\n  `gcloud beyondcorp security-gateways applications create` and\n  `gcloud beyondcorp security-gateways applications update`\n  to configure delegated dispatch info headers.\n* Removed `gcloud beta beyondcorp app` and `gcloud beta beyondcorp\n  client-connector` command groups.",
+        "summary": {
+          "title": "New BeyondCorp Features for Security Gateways",
+          "summary": "New flags have been added to BeyondCorp security gateway commands to configure delegated dispatch info headers. Additionally, deprecated beta command groups for app and client-connector have been removed."
+        }
+      },
+      {
+        "kind": "BigLake",
+        "content": "* Added `--kms-key` flag to `gcloud beta biglake hive catalogs create`, and\n  `--kms-key` and `--clear-kms-key` flags to\n  `gcloud beta biglake hive catalogs update` to support customer-managed\n  encryption keys (CMEK).\n* Added `--workday-api-client-client-id` flag to\n  `gcloud beta biglake iceberg catalogs create` and\n  `gcloud beta biglake iceberg catalogs update` to support Workday OIDC\n  authentication.",
+        "summary": {
+          "title": "BigLake Enhancements for Encryption and Authentication",
+          "summary": "BigLake now supports customer-managed encryption keys (CMEK) for Hive catalogs via the `--kms-key` flag. Additionally, Workday OIDC authentication is now supported for Iceberg catalogs using the `--workday-api-client-client-id` flag."
+        }
+      },
+      {
+        "kind": "Cloud Backup DR",
+        "content": "* Removed default value (`-`) for `--location` flag in\n  `gcloud beta backup-dr applied-auto-protection-policies list`. `--location`\n  flag is now required.\n* Promoted `gcloud backup-dr applied-auto-protection-policies` to GA.\n* Fixed an issue where\n  `gcloud backup-dr backup-plans update --backup-rules-from-file` failed with\n  `update mask is required` when the file contained an empty `backup-rules`\n  list.\n* Fixed an issue where\n  `gcloud backup-dr backup-plans update --backup-rules-from-file` cleared\n  `--compute-instance-properties` and `--disk-properties` when they were\n  specified in the same command.\n* Promoted `gcloud backup-dr applied-auto-protection-policies` to GA.\n* Promoted `gcloud backup-dr auto-protection-bindings` to GA.\n* Promoted `gcloud backup-dr auto-protection-policies` commands to GA.\n* Promoted `gcloud backup-dr binding-matching-resources` to GA.",
+        "summary": {
+          "title": "Backup and DR commands now generally available",
+          "summary": "Several Backup and DR gcloud commands, including those for applied auto-protection policies and auto-protection bindings, are now generally available. Updates have also been made to the `--location` flag requirement for listing applied auto-protection policies and fixes have been implemented for backup plan updates."
+        }
+      },
+      {
+        "kind": "Cloud Bigtable",
+        "content": "* Added `--automated-backup-keep-hot-duration` flag to\n  `gcloud bigtable instances tables create`,\n  `gcloud bigtable instances tables update`, `gcloud bigtable tables create`,\n  and `gcloud bigtable tables update` to create hot automated backups that\n  remain hot for the specified duration before transitioning to standard\n  backups.\n* Added `--clear-automated-backup-keep-hot-duration` flag to\n  `gcloud bigtable instances tables update` and\n  `gcloud bigtable tables update` to stop creating hot automated backups.\n* Added `--avro-schema-path` flag to `gcloud bigtable schema-bundles create`\n  and `gcloud bigtable schema-bundles update`.",
+        "summary": {
+          "title": "Automated backups for Cloud Bigtable",
+          "summary": "New flags allow you to create automated backups for Cloud Bigtable that remain hot for a specified duration. You can now control the hot backup duration and stop creating hot backups altogether with the new flags added to the gcloud command-line tool."
+        }
+      },
+      {
+        "kind": "Cloud Dataplex",
+        "content": "* Added `--custom-instructions` flag to\n  `gcloud dataplex datascans create data-documentation` and\n  `--custom-instructions` and `--clear-custom-instructions` flags to\n  `gcloud dataplex datascans update data-documentation` to support specifying\n  or clearing custom instructions that guide data documentation generation.\n* Added `--sql-dialect` flag to\n  `gcloud dataplex datascans create data-documentation` and\n  `gcloud dataplex datascans update data-documentation` commands to specify\n  the SQL dialect to use in generated SQL queries.",
+        "summary": {
+          "title": "Dataplex data documentation improvements",
+          "summary": "New flags for data documentation generation in Dataplex allow users to specify custom instructions and SQL dialects. These enhancements provide greater control over how data documentation is created, ensuring more tailored and accurate results."
+        }
+      },
+      {
+        "kind": "Cloud Dataproc",
+        "content": "* Added `--scheduling-timeout` and `--requested-run-duration` flags to `gcloud\n  dataproc clusters create` for creating Dynamic Workload Scheduler (DWS)\n  scheduled clusters.",
+        "summary": {
+          "title": "Dataproc DWS Scheduled Clusters",
+          "summary": "Create Dataproc clusters for Dynamic Workload Scheduler (DWS) with new flags for scheduling timeouts and requested run durations. These flags allow for more precise control over DWS scheduled cluster lifecycles."
+        }
+      },
+      {
+        "kind": "Cloud Datastream",
+        "content": "* Fixed an issue where `gcloud datastream private-connections create` silently\n  dropped user-supplied `--labels`.",
+        "summary": {
+          "title": "Datastream private connections labels fixed",
+          "summary": "An issue with the `gcloud datastream private-connections create` command has been resolved. Previously, user-supplied labels were silently dropped, but this is now fixed. This ensures that labels provided during private connection creation are correctly applied."
+        }
+      },
+      {
+        "kind": "Cloud Firestore Emulator",
+        "content": "* Release Cloud Firestore emulator v1.23.0\n  + Added support for Datastore merge join and multiple inequality index\n    selection with `--require-indexes` in Datastore mode\n  + Added support for the `add_window_fields` stage in the Firestore\n    Pipelines API with the `sum`, `average`, `count`, `minimum`, `maximum`,\n    `first`, `last`, `array_agg`, `array_agg_distinct`, and `rank` window\n    functions\n  + Allowed Enterprise data types for all database editions\n  + Fixed transaction conflict detection for concurrent writes against\n    transactional queries\n  + Fixed `ArrayIndexOutOfBoundsException` on incomplete Firestore Rules\n    permission traces\n  + Populated accurate `MoreResultsType` for Datastore mode queries and\n    fixed Pipeline DML edge cases\n  + Updated minimum required Java JRE version to 25",
+        "summary": {
+          "title": "Firestore Emulator v1.23.0 Released",
+          "summary": "The latest version of the Firestore emulator, v1.23.0, brings enhanced support for Datastore operations including merge join and multiple inequality index selection. It also introduces new capabilities for the Firestore Pipelines API with various window functions and enables Enterprise data types across all database editions. Several bug fixes have also been implemented, including improvements to transaction conflict detection and pipeline DML edge cases."
+        }
+      },
+      {
+        "kind": "Cloud Infrastructure Manager",
+        "content": "* Updated `gcloud infra-manager deployments apply` to display a warning when\n  `--tf-version-constraint` or the deployment configuration specifies a paid\n  Terraform version (1.6.0 or later).",
+        "summary": {
+          "title": "Terraform Paid Version Warning",
+          "summary": "The `gcloud infra-manager deployments apply` command now warns users if a paid Terraform version (1.6.0+) is specified in the deployment configuration or via the `--tf-version-constraint` flag. This ensures users are aware of potential costs associated with newer Terraform features."
+        }
+      },
+      {
+        "kind": "Cloud Key Management Service",
+        "content": "* Added support for ECDH key encapsulation mechanism algorithms:\n  `kem-ecdh-p256` and `kem-ecdh-p384`.",
+        "summary": {
+          "title": "New Key Encapsulation Algorithms Supported",
+          "summary": "Cloud Key Management Service now supports ECDH key encapsulation mechanisms, including `kem-ecdh-p256` and `kem-ecdh-p384`. This enhancement provides more options for securing your data with advanced cryptographic algorithms."
+        }
+      },
+      {
+        "kind": "Cloud Run",
+        "content": "* Added `--public` flag for Cloud Run services, allowing users to make a\n  service public by disabling invoker IAM checks and Identity-Aware Proxy\n  (IAP). This flag is available in `gcloud beta run deploy`,\n  `gcloud beta run services update`, and\n  `gcloud beta run multi-region-services update`.",
+        "summary": {
+          "title": "Cloud Run: Make Services Public",
+          "summary": "You can now easily make Cloud Run services public with the new --public flag. This flag disables invoker IAM checks and Identity-Aware Proxy (IAP), simplifying access for public-facing applications. The feature is available in the gcloud beta command-line interface."
+        }
+      },
+      {
+        "kind": "Cloud SQL",
+        "content": "* Added `gcloud sql instances reconcile-networking` to reconcile Private Service Connect (PSC) DNS networking configuration for a Cloud SQL instance.",
+        "summary": {
+          "title": "Simplify Cloud SQL networking",
+          "summary": "A new command, `gcloud sql instances reconcile-networking`, is now available to help manage Private Service Connect (PSC) DNS networking configurations for your Cloud SQL instances. This simplifies the process of ensuring your instance's networking is correctly set up."
+        }
+      },
+      {
+        "kind": "Cloud Shell",
+        "content": "* Updated `gcloud cloud-shell scp` to support passwordless authentication over\n  the Cloud Shell TCP tunnel.\n* Updated `gcloud cloud-shell ssh` to skip uploading an SSH public key when\n  connecting with passwordless authentication.",
+        "summary": {
+          "title": "Cloud Shell improves secure file transfers",
+          "summary": "Cloud Shell now supports passwordless authentication for secure file transfers using `gcloud cloud-shell scp` over TCP tunnels. It also streamlines SSH connections by skipping public key uploads when using passwordless authentication."
+        }
+      },
+      {
+        "kind": "Cloud Workstations",
+        "content": "* Added `--direct-access-ports` flag to `gcloud beta workstations clusters create` command.\n* Added `--direct-access-ports` flag to `gcloud beta workstations clusters update` command.",
+        "summary": {
+          "title": "Cloud Workstations: Direct Access Ports Enabled",
+          "summary": "New flags `--direct-access-ports` have been added to `gcloud beta workstations clusters create` and `update` commands. This allows for direct access to specific ports for Cloud Workstations clusters, enhancing connectivity options."
+        }
+      },
+      {
+        "kind": "Compute Engine",
+        "content": "* Fixed an issue where `gcloud compute` commands omitted troubleshooting\n  documentation links from operation error messages.\n* Promoted `--reservation-subblock` flag of `gcloud compute hosts describe`,\n  `gcloud compute hosts list`, `gcloud compute reservations hosts describe`,\n  and `gcloud compute reservations hosts list` to GA and beta.",
+        "summary": {
+          "title": "Compute Engine improvements",
+          "summary": "Resolved an issue with gcloud compute commands not showing troubleshooting links in error messages. Additionally, the `--reservation-subblock` flag for hosts has been promoted to General Availability and Beta."
+        }
+      },
+      {
+        "kind": "Firebase Test Lab",
+        "content": "* Deprecated `gcloud firebase test` command group. Firebase Test Lab is\n  deprecated and will be fully shut down on September 30, 2027. To maintain\n  your testing workflows, you can migrate to the Developer Device Platform on\n  Google Cloud. See the Developer Device Platform Migration Guide\n  (<https://docs.cloud.google.com/developer-device-platform/device-run/migrate>)\n  and FAQ\n  (<https://docs.cloud.google.com/developer-device-platform/troubleshooting>)\n  for more details.",
+        "summary": {
+          "title": "Firebase Test Lab Deprecation",
+          "summary": "Firebase Test Lab is being deprecated and will shut down on September 30, 2027. Migrate your testing workflows to the Developer Device Platform on Google Cloud to ensure continuity. Detailed migration guides and FAQs are available."
+        }
+      },
+      {
+        "kind": "Kubernetes Engine",
+        "content": "* Added `--enable-dataplane-v2` flag to `gcloud container clusters update` to\n  initiate GKE Dataplane V2 migration for clusters.\n* Added `--datapath-provider` flag to `gcloud container node-pools update` to\n  update the datapath provider for a node pool.\n* Promoted `--enable-ambient-networking` flag to GA for `gcloud container\n  clusters create`, `gcloud container clusters create-auto`, and `gcloud\n  container clusters update`.",
+        "summary": {
+          "title": "GKE Dataplane V2 and Ambient Networking Updates",
+          "summary": "GKE now supports migrating to Dataplane V2 using the `gcloud container clusters update --enable-dataplane-v2` flag. Additionally, ambient networking, a feature for enhanced network management, has been promoted to General Availability."
+        }
+      },
+      {
+        "kind": "Network Security",
+        "content": "* Updated `SecurityProfile` and `SecurityProfileGroup` YAML schemas to\n  support WildFire Analysis in beta and GA.\n\nSubscribe to these release notes at <https://groups.google.com/forum/#!forum/google-cloud-sdk-announce>.",
+        "summary": {
+          "title": "WildFire Analysis Support for Security Profiles",
+          "summary": "New versions of SecurityProfile and SecurityProfileGroup YAML schemas now support WildFire Analysis, with beta and general availability features. This update enhances network security capabilities by integrating advanced threat analysis."
+        }
+      }
+    ]
+  }
+}

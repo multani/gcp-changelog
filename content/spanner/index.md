@@ -24,6 +24,23 @@ For more information, see
 , [JSON search indexes](https://docs.cloud.google.com/spanner/docs/full-text-search/json-indexes)
 , and [Working with JSONB](https://docs.cloud.google.com/spanner/docs/working-with-jsonb).
 
+### Feature
+
+Spanner Graph supports the following enhancements:
+
+* You can create property graphs from SQL views that call
+  [remote functions](https://docs.cloud.google.com/spanner/docs/cloud-run-remote-function)
+  ([Preview](https://cloud.google.com/products#product-launch-stages)) to
+  compute node and edge properties. For more information, see
+  [Compute properties with remote functions](https://docs.cloud.google.com/spanner/docs/graph/graph-with-views-how-to#remote-functions-views).
+* You can write simplified queries on schemaless dynamic properties without
+  explicit conversions to SQL data types. This lets you group and sort
+  dynamic properties, and compare them directly with literal values or other
+  dynamic properties. For more information, see
+  [Filter, compare, and sort by dynamic properties](https://docs.cloud.google.com/spanner/docs/graph/manage-schemaless-data#filter-property-values)
+  and
+  [JSON comparison and sorting](https://docs.cloud.google.com/spanner/docs/reference/standard-sql/data-types#comparison_and_sorting).
+
 ---
 ## 2026-10-27
 

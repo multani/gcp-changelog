@@ -1,5 +1,15 @@
 # Sensitive Data Protection
 
+## 2026-11-03
+
+### Change
+
+Sensitive Data Protection now records the [last generated
+timestamp](https://docs.cloud.google.com/sensitive-data-protection/docs/metrics-reference) for [data
+profiles](https://docs.cloud.google.com/sensitive-data-protection/docs/data-profiles) with improved precision, close to
+the time when the resource data is read.
+
+---
 ## 2026-11-02
 
 ### Feature

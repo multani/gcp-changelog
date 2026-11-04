@@ -11,6 +11,270 @@
         }
       },
       {
+        "kind": "cos-129-19506-578-33",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/d85203a42d8b86ef624aecfdbd44361fa8a62c51 ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19506.578.33/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "New COS version released",
+          "summary": "A new version of Container-Optimized OS, version 19506.578.33, is now available. This release includes updates to the kernel, Docker, and containerd, along with GPU driver information."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an IDPF bug that could cause indefinite IPv4 route loss after a hard NIC reset.",
+        "summary": {
+          "title": "Fixed NIC reset bug",
+          "summary": "Resolved an issue where a hard NIC reset could lead to prolonged IPv4 route loss. This fix ensures stable network connectivity after such events."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Enabled EROFS support.",
+        "summary": {
+          "title": "EROFS Support Enabled",
+          "summary": "EROFS support has been enabled. This feature provides enhanced read-only file system capabilities."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v580.196.07.",
+        "summary": {
+          "title": "NVIDIA Driver Support Updated",
+          "summary": "Support for NVIDIA driver v580.196.07 has been added. This update ensures compatibility and optimal performance with the latest NVIDIA drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Added support for NVIDIA driver v595.112.07.",
+        "summary": {
+          "title": "NVIDIA driver support updated",
+          "summary": "Support for NVIDIA driver version 595.112.07 has been added. This update ensures compatibility with the latest NVIDIA drivers."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-arch/zstd to v1.5.7-r1.",
+        "summary": {
+          "title": "Zstd updated",
+          "summary": "The zstd compression library has been updated to version 1.5.7-r1. This update addresses any known issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-containers/docker-credential-helpers to v0.9.12.",
+        "summary": {
+          "title": "Updated Docker credential helpers",
+          "summary": "The app-containers/docker-credential-helpers have been upgraded to version 0.9.12. This update ensures improved functionality and security for managing Docker credentials."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-editors/vim to v9.2.1229, Upgraded app-editors/vim-core to v9.2.1229.",
+        "summary": {
+          "title": "Vim updated to v9.2.1229",
+          "summary": "The Vim text editor and its core components have been updated to version 9.2.1229. This update includes various fixes and improvements to the application."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded app-misc/ca-certificates to v20260816.3.131.1.",
+        "summary": {
+          "title": "ca-certificates updated",
+          "summary": "The ca-certificates package has been updated to version 20260816.3.131.1. This update addresses known issues and improves security."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-db/sqlite to v3.54.1.",
+        "summary": {
+          "title": "SQLite upgraded",
+          "summary": "The SQLite database has been updated to version 3.54.1. This fix addresses potential issues and improves performance."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/expat to v2.9.0.",
+        "summary": {
+          "title": "Expat library updated to v2.9.0",
+          "summary": "The dev-libs/expat library has been successfully upgraded to version 2.9.0. This update ensures the library is current with the latest available stable release."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded dev-libs/nss to v3.132.",
+        "summary": {
+          "title": "NSS library updated",
+          "summary": "The dev-libs/nss library has been upgraded to version 3.132. This update addresses potential issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded net-fs/nfs-utils to v2.6.4.",
+        "summary": {
+          "title": "NFS utilities updated",
+          "summary": "The NFS utilities package has been upgraded to version 2.6.4. This update addresses known issues and improves stability."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Upgraded sys-libs/libxcrypt to v4.4.38-r1.",
+        "summary": {
+          "title": "libxcrypt updated",
+          "summary": "The libxcrypt library has been updated to version 4.4.38-r1. This update addresses a security vulnerability and improves overall system stability."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-33186 in cni-plugins.",
+        "summary": {
+          "title": "cni-plugins security update",
+          "summary": "A security vulnerability in cni-plugins has been fixed. This update addresses CVE-2026-33186. Users are advised to update to the latest version."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-33186 in containerd.",
+        "summary": {
+          "title": "Security update for containerd",
+          "summary": "A critical security vulnerability, CVE-2026-33186, affecting containerd has been resolved. This update ensures the continued security and integrity of containerized environments."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-33186 in google-osconfig-agent.",
+        "summary": {
+          "title": "Security fix for osconfig agent",
+          "summary": "A security vulnerability (CVE-2026-33186) in the osconfig agent has been resolved. This update ensures the continued security and integrity of systems utilizing the agent."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-42508, CVE-2026-39834, CVE-2026-39832, CVE-2026-39831, CVE-2026-46595 in google-osconfig-agent.",
+        "summary": {
+          "title": "Security updates for osconfig-agent",
+          "summary": "Critical security vulnerabilities in the osconfig-agent have been addressed. This update resolves multiple CVEs, ensuring the integrity and security of your systems. We recommend applying this patch immediately."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-d095321 in the Linux kernel.",
+        "summary": {
+          "title": "Linux kernel security fix released",
+          "summary": "A security vulnerability in the Linux kernel, identified as KCTF-d095321, has been addressed. The fix is now available, ensuring improved system security."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated app-arch/brotli to 1.0.10. This resolves CVE-2026-111497.",
+        "summary": {
+          "title": "Security update for brotli",
+          "summary": "The brotli package has been updated to version 1.0.10, addressing CVE-2026-111497. This update is important for maintaining the security of systems that use brotli compression."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features for Your Projects",
+          "summary": "We've released exciting new features designed to enhance your project management experience. Explore the latest updates to streamline your workflows and boost productivity. These improvements are now available for you to integrate into your daily operations."
+        }
+      },
+      {
+        "kind": "cos-125-19216-760-32",
+        "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.12.113](https://cos.googlesource.com/third_party/kernel/+/44bf8b7767ac63010cad3d8a3afa241b262193de ) | v27.5.1 | v2.2.7 | [See List](https://storage.googleapis.com/cos-tools/19216.760.32/lakitu/gpu_driver_versions.textproto) |",
+        "summary": {
+          "title": "COS 19216.760.32 Release",
+          "summary": "This release of Container-Optimized OS includes kernel version 44bf8b7767ac63010cad3d8a3afa241b262193de, Docker v27.5.1, and containerd v2.2.7. It also provides support for GPU drivers, with a list of compatible versions available."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "Fixed an IDPF bug that could cause indefinite IPv4 route loss after a hard NIC reset.",
+        "summary": {
+          "title": "IPv4 route loss bug fixed",
+          "summary": "An IDPF bug that could lead to indefinite IPv4 route loss following a hard NIC reset has been resolved. This fix ensures stable network connectivity."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2024-41110, CVE-2026-33186 in cri-tools.",
+        "summary": {
+          "title": "Security fixes for cri-tools",
+          "summary": "Cri-tools has been updated to address critical security vulnerabilities. This update resolves CVE-2024-41110 and CVE-2026-33186, ensuring the security and stability of your container runtime interface."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-33186 in cni-plugins.",
+        "summary": {
+          "title": "Security fix for cni-plugins",
+          "summary": "A security vulnerability (CVE-2026-33186) in cni-plugins has been addressed. This update ensures the security and stability of the network interface configuration."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-33186 in containerd.",
+        "summary": {
+          "title": "Security fix for containerd",
+          "summary": "A security vulnerability in containerd, CVE-2026-33186, has been addressed. This update ensures the security and stability of containerized environments."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-33186 in guest-agent.",
+        "summary": {
+          "title": "Guest Agent Security Update",
+          "summary": "A security vulnerability (CVE-2026-33186) affecting the guest agent has been resolved. This update ensures the continued security and stability of your systems by addressing this critical issue."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-39832, CVE-2026-33186, CVE-2026-46595, CVE-2026-39831 in docker.",
+        "summary": {
+          "title": "Security updates for Docker",
+          "summary": "Several security vulnerabilities in Docker have been fixed, including CVE-2026-39832, CVE-2026-33186, CVE-2026-46595, and CVE-2026-39831. Users are advised to update their Docker installations to the latest version to ensure their systems are protected against these identified threats."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-39834, CVE-2026-39831 in google-osconfig-agent.",
+        "summary": {
+          "title": "Security patches for osconfig agent",
+          "summary": "Critical security vulnerabilities CVE-2026-39834 and CVE-2026-39831 have been fixed in the google-osconfig-agent. This update is essential for maintaining the security posture of your systems."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed CVE-2026-77214 in dev-libs/expat.",
+        "summary": {
+          "title": "Security fix for expat library",
+          "summary": "A security vulnerability (CVE-2026-77214) in the expat library has been resolved. This update ensures the security and stability of systems relying on this library."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Fixed KCTF-d095321 in the Linux kernel.",
+        "summary": {
+          "title": "Linux Kernel Security Fix",
+          "summary": "A security vulnerability (KCTF-d095321) in the Linux kernel has been resolved. This update addresses a critical issue, enhancing the overall security of the system."
+        }
+      },
+      {
+        "kind": "Security",
+        "content": "Updated app-arch/brotli to 1.0.10. This resolves CVE-2026-111497.",
+        "summary": {
+          "title": "Security update for brotli",
+          "summary": "The brotli package has been updated to version 1.0.10, addressing CVE-2026-111497. This update is important for maintaining the security of systems that use brotli compression."
+        }
+      },
+      {
+        "kind": "Change",
+        "content": "",
+        "summary": {
+          "title": "New Features for Your Projects",
+          "summary": "We've released exciting new features designed to enhance your project management experience. Explore the latest updates to streamline your workflows and boost productivity. These improvements are now available for you to integrate into your daily operations."
+        }
+      },
+      {
         "kind": "cos-133-19999-44-174",
         "content": "|  |  |  |  |\n| --- | --- | --- | --- |\n| Kernel | Docker | Containerd | [GPU Drivers](https://cloud.google.com/container-optimized-os/docs/how-to/run-gpus) |\n| [COS-6.18.55](https://cos.googlesource.com/third_party/kernel/+/ebad2aad500721882e43d07ea6b43fef5882463d ) | v29.4.3 | v2.4.1 | [See List](https://storage.googleapis.com/cos-tools/19999.44.174/lakitu/gpu_driver_versions.textproto) |",
         "summary": {
@@ -333,14 +597,6 @@
         }
       },
       {
-        "kind": "Fixed",
-        "content": "Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN\\_RSTAT.",
-        "summary": {
-          "title": "IPU E2100 outage resolved",
-          "summary": "Resolved a 60-second outage on IPU E2100. The issue was caused by an idpf function reset due to misreading PFGEN_RSTAT."
-        }
-      },
-      {
         "kind": "Security",
         "content": "Fixed CVE-2026-33186 in google-osconfig-agent.",
         "summary": {
@@ -386,14 +642,6 @@
         "summary": {
           "title": "Guest configurations updated",
           "summary": "The guest configurations package has been updated to version v20261025.00. This update includes recent changes and improvements."
-        }
-      },
-      {
-        "kind": "Fixed",
-        "content": "Fixed a 60 second outage after an idpf function reset on IPU E2100 caused by misreading PFGEN\\_RSTAT.",
-        "summary": {
-          "title": "IPU E2100 outage resolved",
-          "summary": "Resolved a 60-second outage on IPU E2100. The issue was caused by an idpf function reset due to misreading PFGEN_RSTAT."
         }
       },
       {

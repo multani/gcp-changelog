@@ -1,5 +1,18 @@
 # reCAPTCHA
 
+## 2026-10-30
+
+### Change
+
+Fraud Defense Mobile SDK v18.9.4 is available for Android. This
+version includes the following:
+
+* Fixes a memory leak where destroyed activities were retained by lifecycle
+  callbacks ([Issue #194](https://github.com/GoogleCloudPlatform/recaptcha-enterprise-mobile-sdk/issues/194)).
+* Fixes a dependency compatibility issue with Kotlin Coroutines and POM API
+  dependencies.
+
+---
 ## 2026-09-01
 
 ### Change

@@ -1,5 +1,16 @@
 # API Gateway
 
+## 2026-11-03
+
+### Feature
+
+**Call Google Cloud APIs from streaming gateways**
+
+Streaming gateways can now call Google Cloud APIs such as `aiplatform.googleapis.com`. A gateway with an `effectiveStreamingMode` of `EFFECTIVE_STREAMING_MODE_ENABLED` authenticates to backends whose host ends in `.googleapis.com` or `.vertexai.goog` with an access token for the gateway's service account. Other backends still receive an ID token. An existing streaming gateway switches when API Gateway next rolls out a gateway update, or immediately when you update it to a new API config.
+
+For more information, see [Securing backend services](https://docs.cloud.google.com/api-gateway/docs/securing-backend-services#other-gcp-apis).
+
+---
 ## 2026-10-07
 
 ### Deprecated

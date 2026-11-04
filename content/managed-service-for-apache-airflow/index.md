@@ -1,5 +1,28 @@
 # Managed Service for Apache Airflow
 
+## 2026-10-30
+
+### Issue
+
+Starting October 24, 2026, Managed Airflow (Gen 3) and Managed Airflow (Gen 2)
+environments running Python 3.11 with `google-api-core` package versions 2.28.0
+to 2.43.0 (including versions 2.30.3 to 2.43.0, which weren't previously
+affected) might experience degraded performance because of a Python 3.11
+deprecation check that scans installed package metadata on every new Python
+subprocess import. You might observe increased DAG parsing times, longer task
+execution times, higher CPU usage on Airflow DAG processors and workers, and
+frequent `FutureWarning` log entries from
+`google/api_core/_python_version_support.py` about Python 3.11 support ending on
+`2027-10-24`.
+
+For the list of affected builds and available workarounds (installing
+`google-api-core>=2.43.1` on compatible Airflow 3 builds or applying a
+`sitecustomize.py` runtime patch), see the known issue for
+[Managed Airflow (Gen 3)](https://docs.cloud.google.com/composer/docs/composer-3/known-issues#google-api-core-2-30-3-to-2-43-0)
+or
+[Managed Airflow (Gen 2)](https://docs.cloud.google.com/composer/docs/composer-2/known-issues#google-api-core-2-30-3-to-2-43-0).
+
+---
 ## 2026-10-20
 
 ### Feature

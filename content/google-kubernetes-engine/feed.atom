@@ -2,9 +2,20 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Kubernetes Engine</title>
   <subtitle>Changelog for Google Cloud product: Google Kubernetes Engine</subtitle>
-  <updated>2026-10-29T00:00:00+00:00</updated>
+  <updated>2026-11-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-kubernetes-engine</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-kubernetes-engine/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-kubernetes-engine:2026-11-03:feature:0</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>In GKE version 1.37.0-gke.3570000 and later, you can split each Local SSD on a node between ephemeral storage and raw block storage. When you create a cluster or node pool, use the <code>capacity</code> property of the <code>--ephemeral-storage-local-ssd</code> flag to set how much Local SSD capacity GKE formats for ephemeral storage. GKE leaves the rest of each Local SSD unformatted, so that workloads like databases and caches can use it as raw block storage. This feature is available in GKE Standard clusters. For more information, see <a href="https://docs.cloud.google.com/kubernetes-engine/docs/how-to/persistent-volumes/mixed-local-ssd">Provision and use mixed Local SSDs for raw block and ephemeral storage</a>.</p>]]></content>
+    <summary>GKE version 1.37.0-gke.3570000 and later allows you to partition Local SSDs on nodes. You can now allocate a portion for ephemeral storage and use the remainder as raw block storage for demanding workloads like databases and caches. This feature is available in GKE Standard clusters.</summary>
+    <title>Feature: Split Local SSDs for Flexible Storage</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

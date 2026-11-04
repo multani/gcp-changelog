@@ -85,6 +85,10 @@ cases at a time in the case queue to perform bulk operations:
 * **Range selection:** Hold `Shift` while clicking to select a range of cases.
 * **Select all:** Click the header checkbox to select up to 50 loaded cases;
   this action automatically scrolls your view back to the top of the list.
+  **Consolidated Settings and Navigation**
+
+The **Consolidated Settings and Navigation** feature is now in public preview. It replaces the separate SIEM Settings and SOAR Settings menus with a single Settings menu, grouped into Administration, Access Management, Investigation, Detection and Data Management, and updates the navigation menu. Each settings page is shown only to users with the correct permissions. Cloud IAM, Viewer and Editor users can now view certain SOAR settings pages in read-only mode. Note that the Google SecOps documentation has been updated to reflect the new navigational changes imposed by the unified Settings menu.
+For more information, see [Navigate the Google SecOps platform](https://docs.cloud.google.com/chronicle/docs/secops/navigate-the-secops-platform).
 
 ---
 ## 2026-10-18

@@ -1,5 +1,56 @@
 # Google Distributed Cloud (software only) for bare metal
 
+## 2026-11-04
+
+### Announcement
+
+Google Distributed Cloud (software only) for bare metal 1.35.700-gke.124 is now available for
+download. To upgrade, see [Upgrade clusters](how-to/upgrade).
+Google Distributed Cloud for bare metal
+1.35.700-gke.124 runs on Kubernetes v1.35.8-gke.100.
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for installations or upgrades with the GKE On-Prem API clients: the
+Google Cloud console, the gcloud CLI, and Terraform.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+### Feature
+
+The following changes were added in 1.35.700-gke.124:
+
+* Updated system components and container base images to remove the distrusted
+  eMudhra (emSign) and AAA Certificate Services root CAs and reject compromised
+  eMudhra intermediate CAs.
+
+### Fixed
+
+The following issues were fixed in 1.35.700-gke.124:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/bare-metal/docs/vulnerabilities).
+* Fixed an issue where removing a node from a cluster left behind its local
+  `PersistentVolume` resources instead of garbage collecting them. This fix
+  applies to Google Distributed Cloud for bare metal local `PersistentVolume` resources
+  created after upgrading to 1.35.700-gke.124; existing orphaned
+  `PersistentVolume` resources must be deleted manually.
+* Fixed an issue where resetting or removing a control plane node could remove
+  the wrong `etcd` or `etcd-events` member if another control plane node's IP
+  address shared the same prefix (for example, `10.201.0.2` and `10.201.0.26`),
+  causing the affected node to become `NotReady` and stalling cluster upgrades.
+* Improved `containerd` resilience against state corruption if a node reboots
+  while unpacking container images.
+* Fixed an issue where the periodic configuration drift health check failed with
+  a `version not supported` error while a cluster upgrade or rollback was in
+  progress.
+* Fixed an issue where `audit-proxy` retried audit log exports indefinitely on
+  permanent errors, generating excessive audit logging traffic.
+* Fixed an issue where the Kubernetes preflight health check scanned all
+  namespaces in the admin cluster instead of the target cluster's namespace,
+  causing cluster upgrades to fail if an unrelated cluster had stale
+  reconciling resources.
+
+---
 ## 2026-10-27
 
 ### Announcement

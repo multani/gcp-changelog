@@ -2,9 +2,53 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Apigee X</title>
   <subtitle>Changelog for Google Cloud product: Apigee X</subtitle>
-  <updated>2026-11-02T00:00:00+00:00</updated>
+  <updated>2026-11-03T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:apigee-x</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/apigee-x/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-11-03:announcement:0</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>On November 3, 2026, we released an updated version of Apigee (1-18-0-apigee-8).</p>
+<p><strong>Note:</strong> Rollouts of this release began today and can take four or more business
+days to complete across all Google Cloud zones. Your instances might not have
+the features and fixes available until the rollout is complete.</p>]]></content>
+    <summary>An updated version of Apigee (1-18-0-apigee-8) was released on November 3, 2026. Rollouts have started and may take several business days to complete across all zones. Your instances will have the new features and fixes once the rollout is finished.</summary>
+    <title>Announcement: New Apigee Version Released</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-11-03:security:1</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>N/A</strong> | <strong>Security fix for Apigee infrastructure.</strong> |</p>]]></content>
+    <summary>A critical security fix has been implemented for the Apigee infrastructure. This update addresses potential vulnerabilities to ensure the continued security and integrity of the platform.</summary>
+    <title>Security: Security Update for Apigee Infrastructure</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:apigee-x:2026-11-03:fixed:2</id>
+    <published>2026-11-03T00:00:00+00:00</published>
+    <updated>2026-11-03T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>| Bug ID | Description |
+| --- | --- |
+| <strong>574037227</strong> | Added config override token <code>oauth_default_access_token_expiry_time_in_millis</code> (per-org via the deployment contract) that overrides the default OAuthV2 access token lifetime (ms) applied when a policy omits <code>&lt;ExpiresIn&gt;</code>. When unset, behavior is unchanged (installation default, typically 30 days). |
+| <strong>573326336</strong> | Proxies that declare <code>&lt;ProxyOperationMode&gt;MCP</code> are now recognized as <a href="https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview">MCP proxies</a> regardless of their basepath. |
+| <strong>576697209</strong> | LLMTokenQuota no longer counts tokens for responses that SemanticCacheLookup serves from the cache, and records no ai_llm_response_token_count for them. |
+| <strong>578314600</strong> | The Apigee Connect agent now uses HTTP/2 keepalive pings on the control-plane connection, detecting a silently dropped connection in ~80s (vs ~2h) while honoring HTTPS_PROXY (including proxy credentials), so proxy-only clusters re-establish connectivity. |
+| <strong>N/A</strong> | Updates to infrastructure and libraries. |</p>]]></content>
+    <summary>Several critical bugs have been fixed, including improvements to configuration overrides, proxy recognition, token counting, and connection stability. These updates enhance the reliability and efficiency of the platform.</summary>
+    <title>Fixed: Fixed important bugs</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

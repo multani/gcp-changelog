@@ -1,6 +1,32 @@
 {
   "name": "Google Distributed Cloud (software only) for VMware",
   "entries": {
+    "2026-11-04": [
+      {
+        "kind": "Announcement",
+        "content": "Google Distributed Cloud (software only) for VMware 1.35.700-gke.124 is now available\nfor download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).\nGoogle Distributed Cloud 1.35.700-gke.124 runs on Kubernetes v1.35.8-gke.100.\n\nIf you use a third-party storage vendor, check the listing of our\npreviously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).\n\nAfter a release, it takes approximately 7 to 14 days for the version to become\navailable for use with GKE On-Prem API clients: the Google Cloud console, the\ngcloud CLI, and Terraform.",
+        "summary": {
+          "title": "New software release available",
+          "summary": "Google Distributed Cloud for VMware version 1.35.700-gke.124 is now available. This release runs on Kubernetes v1.35.8-gke.100. Please refer to the documentation for upgrade instructions and check our storage partner list if you use third-party storage."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "The following changes were added in 1.35.700-gke.124:\n\n* Updated system components and container base images to remove the distrusted\n  eMudhra (emSign) and AAA Certificate Services root CAs and reject compromised\n  eMudhra intermediate CAs.\n* Upgraded Container-Optimized OS (COS) to milestone 121\n  (`cos-121-18867-652-7`), which removes the distrusted eMudhra (emSign) and\n  AAA Certificate Services root CAs.\n* Updated the Ubuntu 24.04 node and admin workstation base image to\n  `ubuntu-gke-op-2404-1-34-v20261024` to remove the distrusted eMudhra\n  (emSign) root CAs (USN-8944-1).",
+        "summary": {
+          "title": "Security update for certificate authorities",
+          "summary": "This update removes distrusted certificate authorities and rejects compromised intermediate CAs. It includes updates to system components, container base images, and the Container-Optimized OS. The Ubuntu node and admin workstation base image is also updated to enhance security."
+        }
+      },
+      {
+        "kind": "Fixed",
+        "content": "The following issues were fixed in 1.35.700-gke.124:\n\n* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).\n* Fixed an issue where `audit-proxy` retried audit log exports indefinitely on\n  permanent errors, generating excessive audit logging traffic.\n* Fixed an issue where the Kubernetes preflight health check scanned all\n  namespaces in the admin cluster instead of the target cluster's namespace,\n  causing cluster upgrades to fail if an unrelated cluster had stale\n  reconciling resources.",
+        "summary": {
+          "title": "Security and Stability Improvements",
+          "summary": "This release addresses critical security vulnerabilities and resolves issues with audit log exports and cluster upgrade health checks. These fixes enhance the stability and security of your environment."
+        }
+      }
+    ],
     "2026-10-22": [
       {
         "kind": "Announcement",

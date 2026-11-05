@@ -1,5 +1,32 @@
 # Apigee X
 
+## 2026-11-03
+
+### Announcement
+
+On November 3, 2026, we released an updated version of Apigee (1-18-0-apigee-8).
+
+**Note:** Rollouts of this release began today and can take four or more business
+days to complete across all Google Cloud zones. Your instances might not have
+the features and fixes available until the rollout is complete.
+
+### Security
+
+| Bug ID | Description |
+| --- | --- |
+| **N/A** | **Security fix for Apigee infrastructure.** |
+
+### Fixed
+
+| Bug ID | Description |
+| --- | --- |
+| **574037227** | Added config override token `oauth_default_access_token_expiry_time_in_millis` (per-org via the deployment contract) that overrides the default OAuthV2 access token lifetime (ms) applied when a policy omits `<ExpiresIn>`. When unset, behavior is unchanged (installation default, typically 30 days). |
+| **573326336** | Proxies that declare `<ProxyOperationMode>MCP` are now recognized as [MCP proxies](https://docs.cloud.google.com/apigee/docs/api-platform/apigee-mcp/apigee-mcp-overview) regardless of their basepath. |
+| **576697209** | LLMTokenQuota no longer counts tokens for responses that SemanticCacheLookup serves from the cache, and records no ai\_llm\_response\_token\_count for them. |
+| **578314600** | The Apigee Connect agent now uses HTTP/2 keepalive pings on the control-plane connection, detecting a silently dropped connection in ~80s (vs ~2h) while honoring HTTPS\_PROXY (including proxy credentials), so proxy-only clusters re-establish connectivity. |
+| **N/A** | Updates to infrastructure and libraries. |
+
+---
 ## 2026-11-02
 
 ### Announcement

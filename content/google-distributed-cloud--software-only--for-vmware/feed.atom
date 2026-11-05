@@ -2,9 +2,69 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Distributed Cloud (software only) for VMware</title>
   <subtitle>Changelog for Google Cloud product: Google Distributed Cloud (software only) for VMware</subtitle>
-  <updated>2026-10-22T00:00:00+00:00</updated>
+  <updated>2026-11-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-distributed-cloud--software-only--for-vmware/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-11-04:announcement:0</id>
+    <published>2026-11-04T00:00:00+00:00</published>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Google Distributed Cloud (software only) for VMware 1.35.700-gke.124 is now available
+for download. To upgrade, see <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md">Upgrade clusters</a>.
+Google Distributed Cloud 1.35.700-gke.124 runs on Kubernetes v1.35.8-gke.100.</p>
+<p>If you use a third-party storage vendor, check the listing of our
+previously-qualified <a href="https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage">storage partners</a>.</p>
+<p>After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.</p>]]></content>
+    <summary>Google Distributed Cloud for VMware version 1.35.700-gke.124 is now available. This release runs on Kubernetes v1.35.8-gke.100. Please refer to the documentation for upgrade instructions and check our storage partner list if you use third-party storage.</summary>
+    <title>Announcement: New software release available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-11-04:feature:1</id>
+    <published>2026-11-04T00:00:00+00:00</published>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following changes were added in 1.35.700-gke.124:</p>
+<ul>
+<li>Updated system components and container base images to remove the distrusted
+  eMudhra (emSign) and AAA Certificate Services root CAs and reject compromised
+  eMudhra intermediate CAs.</li>
+<li>Upgraded Container-Optimized OS (COS) to milestone 121
+  (<code>cos-121-18867-652-7</code>), which removes the distrusted eMudhra (emSign) and
+  AAA Certificate Services root CAs.</li>
+<li>Updated the Ubuntu 24.04 node and admin workstation base image to
+  <code>ubuntu-gke-op-2404-1-34-v20261024</code> to remove the distrusted eMudhra
+  (emSign) root CAs (USN-8944-1).</li>
+</ul>]]></content>
+    <summary>This update removes distrusted certificate authorities and rejects compromised intermediate CAs. It includes updates to system components, container base images, and the Container-Optimized OS. The Ubuntu node and admin workstation base image is also updated to enhance security.</summary>
+    <title>Feature: Security update for certificate authorities</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-distributed-cloud--software-only--for-vmware:2026-11-04:fixed:2</id>
+    <published>2026-11-04T00:00:00+00:00</published>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>The following issues were fixed in 1.35.700-gke.124:</p>
+<ul>
+<li>Fixed vulnerabilities listed in <a href="https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities">Vulnerability fixes</a>.</li>
+<li>Fixed an issue where <code>audit-proxy</code> retried audit log exports indefinitely on
+  permanent errors, generating excessive audit logging traffic.</li>
+<li>Fixed an issue where the Kubernetes preflight health check scanned all
+  namespaces in the admin cluster instead of the target cluster's namespace,
+  causing cluster upgrades to fail if an unrelated cluster had stale
+  reconciling resources.</li>
+</ul>]]></content>
+    <summary>This release addresses critical security vulnerabilities and resolves issues with audit log exports and cluster upgrade health checks. These fixes enhance the stability and security of your environment.</summary>
+    <title>Fixed: Security and Stability Improvements</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -12,12 +12,129 @@
     <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-10-30:feature:0</id>
     <published>2026-10-30T00:00:00+00:00</published>
     <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Note:</strong> These fixes and updates are available starting with Backup and DR
+release 11.0.17.508. These fixes aren't rolled out to the 11.0.16 release. To
+receive these updates, upgrade the backup/recovery appliance to version 11.0.17.</p>
+<p>The following feature is available for the Backup and DR agent:</p>
+<ul>
+<li>Expanded Linux Changed Block Tracking (CBT) support across kernel updates for
+  Red Hat Enterprise Linux (RHEL) 8, RHEL 9, and RHEL 10 distributions. For more
+  information, see
+  <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/reference/backupdr-supported-os-kernels">Backup and DR supported operating systems and kernels</a>.</li>
+</ul>]]></content>
+    <summary>Backup and DR now offers expanded Linux Changed Block Tracking (CBT) support for RHEL 8, 9, and 10. This update is available starting with release 11.0.17.508 and requires an upgrade to this version.</summary>
+    <title>Feature: Expanded Linux CBT Support</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-10-30:security:1</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Note:</strong> These fixes and updates are available starting with Backup and DR
+release 11.0.17.508. These fixes aren't rolled out to the 11.0.16 release. To
+receive these updates, upgrade the backup/recovery appliance to version 11.0.17.</p>
+<p>The following security updates are available for the backup/recovery appliance:</p>
+<ul>
+<li>Addressed multiple input sanitization vulnerabilities, including SQL injection
+  and OS command injection, across appliance backend services and management
+  workflows.</li>
+<li>Strengthened TLS, certificate truststore, and SSH host key validation across
+  appliance and cluster communications.</li>
+<li>Remediated authorization and validation vulnerabilities in policy option
+  management and host lookup workflows.</li>
+<li>Addressed memory safety and access control vulnerabilities in appliance
+  storage management services.</li>
+</ul>
+<p>The following security updates are available for the Backup and DR agent:</p>
+<ul>
+<li>Strengthened local device access controls for Linux Changed Block Tracking
+  (CBT) components to prevent unprivileged local access.</li>
+<li>Improved temporary file creation, path verification, and file permission
+  handling across Linux and Windows Backup and DR agents to mitigate symlink race
+  conditions and local privilege escalation vulnerabilities.</li>
+<li>Hardened Oracle and IBM Db2 database integration scripts on protected hosts to
+  improve credential and directory permission handling during recovery and
+  migration workflows.</li>
+<li>Addressed memory handling vulnerabilities and refined system logging rules in
+  Linux Backup and DR agent components.</li>
+</ul>
+<p>The following library updates are available for the backup/recovery appliance:</p>
+<ul>
+<li>Upgraded the Java runtime environment and third-party application libraries on
+  the appliance to remediate reported security vulnerabilities.</li>
+<li>Updated base operating system and database packages across
+  backup/recovery appliance and management server images to mitigate reported
+  vulnerabilities.</li>
+</ul>]]></content>
+    <summary>Recent security updates have been released for the Backup and DR appliance and agent, addressing vulnerabilities in input sanitization, TLS validation, authorization, and memory safety. These updates also include improved access controls and secure handling of temporary files and database integrations. To benefit from these enhancements, please upgrade to version 11.0.17.508.</summary>
+    <title>Security: Security Updates for Backup and DR</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-10-30:feature:2</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
     <content type="html"><![CDATA[<p>You can now edit existing backup plans for Cloud SQL instances to update
 settings such as backup rules and maximum custom on-demand retention periods.
 To learn more, see
 <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/cloud-console/sql/csql-backup">Back up Cloud SQL instances to a backup vault</a>.</p>]]></content>
     <summary>You can now edit existing backup plans for Cloud SQL instances. Update settings like backup rules and retention periods to better manage your data protection.</summary>
     <title>Feature: Update Cloud SQL backup plans</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-10-30:fixed:3</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Note:</strong> The following fixes and updates are available starting with Backup and DR
+release 11.0.17.507. These fixes aren't rolled out to the 11.0.16 release. To
+receive the following updates, upgrade your backup/recovery appliance to version 11.0.17.</p>
+<p>The following issues are resolved for the backup/recovery appliance:</p>
+<ul>
+<li>Application discovery and management API requests can
+  time out when multiple discovery operations run concurrently.</li>
+<li>Hostnames containing special characters prevented active
+  jobs from being accurately detected during Backup and DR agent upgrade
+  pre-checks.</li>
+<li>Excessive informational log messages in
+  appliance service logs when replication optimization was turned off.</li>
+<li>Appliance image packaging issue by including required system
+  libraries for fresh appliance deployments.</li>
+</ul>
+<p>The following issue is resolved for the Backup and DR agent:</p>
+<ul>
+<li>Scheduling conflict where concurrent database log backups and full
+  database backups, such as SAP Sybase IQ and SAP MaxDB backups, can interrupt
+  an in-progress backup job.</li>
+</ul>]]></content>
+    <summary>Backup and DR release 11.0.17.507 includes fixes for appliance API timeouts, agent upgrade pre-checks, log messages, and deployment issues. It also resolves a scheduling conflict for database log and full backups in the Backup and DR agent.</summary>
+    <title>Fixed: Backup and DR fixes available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:backup-and-dr:2026-10-30:deprecated:4</id>
+    <published>2026-10-30T00:00:00+00:00</published>
+    <updated>2026-10-30T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Note:</strong> These fixes and updates are available starting with Backup and DR
+release 11.0.17.508. These fixes aren't rolled out to the 11.0.16 release. To
+receive these updates, upgrade the backup/recovery appliance to version 11.0.17.</p>
+<p>The following deprecation applies to the Backup and DR agent:</p>
+<ul>
+<li>Deprecated support for end-of-life and non-Extended Update Support (non-EUS)
+  Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES)
+  releases. For more information, see
+  <a href="https://docs.cloud.google.com/backup-disaster-recovery/docs/reference/backupdr-supported-os-kernels">Backup and DR supported operating systems and kernels</a>.</li>
+</ul>]]></content>
+    <summary>Support for certain end-of-life and non-Extended Update Support (non-EUS) RHEL and SLES releases is deprecated for the Backup and DR agent. This change is effective with Backup and DR release 11.0.17.508. To continue receiving updates, please upgrade your backup/recovery appliance to version 11.0.17.</summary>
+    <title>Deprecated: Backup and DR agent support update</title>
   </entry>
   <entry>
     <author>

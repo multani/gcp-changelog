@@ -2,10 +2,6 @@
 
 ## 2026-11-03
 
-### Announcement
-
-
-
 ### v1.15.10
 
 On November 3, 2026 we released an updated version of the Apigee hybrid

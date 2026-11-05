@@ -1,5 +1,24 @@
 # Gemini Enterprise
 
+## 2026-11-04
+
+### Feature
+
+**Gemini Enterprise: Switch between teams in the mobile app**
+
+You can switch between multiple teams in the Gemini Enterprise mobile app
+without logging out and rescanning the QR code. (Teams were previously called
+instances.)
+
+When you open a team for the first time, the mobile app saves it to your teams
+list. Additionally, you can rename teams in the list and you can remove teams
+from your list.
+
+This feature is generally available (GA). For more information, see
+[Teams](https://docs.cloud.google.com/gemini/enterprise/docs/use-the-mobile-app#teams) in *Use the mobile
+app*.
+
+---
 ## 2026-11-03
 
 ### Feature

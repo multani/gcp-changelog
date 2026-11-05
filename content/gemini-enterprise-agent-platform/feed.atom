@@ -2,9 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-11-02T00:00:00+00:00</updated>
+  <updated>2026-11-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-11-04:feature:0</id>
+    <published>2026-11-04T00:00:00+00:00</published>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>AlphaGenome gRPC and unified HTTP serving support</strong></p>
+<p>AlphaGenome (<code>alphagenome-004</code>) now supports unified HTTP/2 gRPC streaming and
+chunked binary protobuf HTTP streaming on Gemini Enterprise Agent Platform:</p>
+<ul>
+<li>Streams compressed binary tensor chunks directly over gRPC on shared
+  endpoints (<code>PredictionService.StreamDirectRawPredict</code> on port <code>8081</code>) and
+  chunked binary protobuf payloads (<code>proto_b64</code>) over HTTP on dedicated
+  endpoints (<code>streamRawPredict</code> on port <code>8080</code>) across all seven
+  <code>DnaModelService</code> methods (<code>predict_sequence</code>, <code>predict_interval</code>,
+  <code>predict_variant</code>, <code>score_variant</code>, <code>score_interval</code>, <code>score_ism_variants</code>,
+  and <code>output_metadata</code>) and 11 genomic modalities, reducing latency for 1 MB
+  track predictions.</li>
+<li>Supports concurrent multi-variant evaluation for in silico saturation
+  mutagenesis (<code>score_ism_variants</code>) without HTTP gateway timeouts.</li>
+<li>Supports model fold selection (<code>ALL_FOLDS</code>, <code>FOLD_0</code>, <code>FOLD_1</code>, <code>FOLD_2</code>,
+  and <code>FOLD_3</code>) across both gRPC and HTTP clients through the unified
+  <code>alphagenome_cloud_sdk</code> Python SDK.</li>
+<li>Retains <code>alphagenome-003</code> in Model Garden for backward compatibility with
+  existing legacy HTTP deployments.</li>
+</ul>
+<p>For more information, see the
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/alphagenome">AlphaGenome documentation</a>.</p>]]></content>
+    <summary>AlphaGenome now offers unified HTTP/2 gRPC streaming and chunked binary protobuf HTTP streaming. This feature reduces latency for track predictions and supports concurrent multi-variant evaluation. It is available across all AlphaGenome methods and genomic modalities, with backward compatibility maintained for legacy deployments.</summary>
+    <title>Feature: AlphaGenome now supports gRPC and HTTP/2 streaming</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -1,5 +1,14 @@
 # Virtual Private Cloud
 
+## 2026-11-03
+
+### Feature
+
+**General Availability**: VPC Flow Logs supports logging for IPv6 encapsulation
+flows. For more information, see
+[IpConnection field format](https://docs.cloud.google.com/vpc/docs/about-flow-logs-records#IpConnection).
+
+---
 ## 2026-10-19
 
 ### Feature

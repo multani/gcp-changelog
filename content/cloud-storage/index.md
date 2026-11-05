@@ -1,5 +1,15 @@
 # Cloud Storage
 
+## 2026-11-04
+
+### Feature
+
+You can pause hard deletions for a bucket when you need more time to restore
+soft-deleted objects before they're permanently deleted. For more information,
+see
+[Pause permanent (hard) deletions of soft-deleted objects](https://docs.cloud.google.com/storage/docs/pause-hard-deletions).
+
+---
 ## 2026-10-30
 
 ### Feature

@@ -1,5 +1,15 @@
 # Google SecOps
 
+## 2026-11-04
+
+### Announcement
+
+**Consolidated Settings and Navigation**
+
+The **Consolidated Settings and Navigation** feature is now in public preview. It replaces the separate SIEM Settings and SOAR Settings menus with a single Settings menu, grouped into Administration, Access Management, Investigation, Detection and Data Management, and also updates the left navigation menu. Each settings page is shown only to users with the correct permissions. Cloud IAM, Viewer and Editor users can now view certain SOAR settings pages in read-only mode. Note that the Google SecOps documentation has been updated to reflect the new navigational changes.
+For more information, see [Navigate the Google SecOps platform](https://docs.cloud.google.com/chronicle/docs/secops/navigate-the-secops-platform).
+
+---
 ## 2026-11-02
 
 ### Deprecated

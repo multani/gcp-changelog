@@ -1,5 +1,53 @@
 # AlloyDB for PostgreSQL
 
+## 2026-11-04
+
+### Feature
+
+Direct Iceberg access in AlloyDB for PostgreSQL is available for PostgreSQL 18
+and later ([in Preview](https://cloud.google.com/products#product-launch-stages)).
+This feature lets you query Apache Iceberg tables in Cloud Storage or Lakehouse
+runtime catalog and accelerate analytical queries using the AlloyDB columnar
+engine.
+
+For more information, see
+[Access Iceberg data from
+AlloyDB](https://docs.cloud.google.com/alloydb/docs/access-iceberg-data-from-alloydb).
+
+### Feature
+
+Syncing data from BigQuery into AlloyDB is generally available
+([GA](https://cloud.google.com/products#product-launch-stages)). This feature
+lets you copy or mirror analytical tables from BigQuery into AlloyDB for
+low-latency operational access using the `alloydb_sync` extension.
+
+For more information, see
+[Sync BigQuery data to AlloyDB](https://docs.cloud.google.com/alloydb/docs/sync-bigquery-data-to-alloydb).
+
+### Feature
+
+AlloyDB Express is available in
+[Preview](https://cloud.google.com/products#product-launch-stages) for
+PostgreSQL 18. Optimized for rapid prototyping and for workflows that use AI
+coding agents, this configuration provides the following features:
+
+* Fast provisioning
+* Scale-to-zero compute when idle
+* A monthly free tier for the first 12 months of usage
+* One-click upgrades to AlloyDB for PostgreSQL
+
+For more information, see
+[AlloyDB Express overview](https://docs.cloud.google.com/alloydb/docs/express-overview).
+
+---
+## 2026-11-03
+
+### Change
+
+AlloyDB for PostgreSQL now defaults to [PostgreSQL major version 18](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)
+for new clusters.
+
+---
 ## 2026-11-02
 
 ### Feature

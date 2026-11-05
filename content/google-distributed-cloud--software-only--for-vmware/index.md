@@ -1,5 +1,47 @@
 # Google Distributed Cloud (software only) for VMware
 
+## 2026-11-04
+
+### Announcement
+
+Google Distributed Cloud (software only) for VMware 1.35.700-gke.124 is now available
+for download. To upgrade, see [Upgrade clusters](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/how-to/upgrading.md).
+Google Distributed Cloud 1.35.700-gke.124 runs on Kubernetes v1.35.8-gke.100.
+
+If you use a third-party storage vendor, check the listing of our
+previously-qualified [storage partners](https://docs.cloud.google.com/kubernetes-engine/enterprise/docs/resources/partner-storage).
+
+After a release, it takes approximately 7 to 14 days for the version to become
+available for use with GKE On-Prem API clients: the Google Cloud console, the
+gcloud CLI, and Terraform.
+
+### Feature
+
+The following changes were added in 1.35.700-gke.124:
+
+* Updated system components and container base images to remove the distrusted
+  eMudhra (emSign) and AAA Certificate Services root CAs and reject compromised
+  eMudhra intermediate CAs.
+* Upgraded Container-Optimized OS (COS) to milestone 121
+  (`cos-121-18867-652-7`), which removes the distrusted eMudhra (emSign) and
+  AAA Certificate Services root CAs.
+* Updated the Ubuntu 24.04 node and admin workstation base image to
+  `ubuntu-gke-op-2404-1-34-v20261024` to remove the distrusted eMudhra
+  (emSign) root CAs (USN-8944-1).
+
+### Fixed
+
+The following issues were fixed in 1.35.700-gke.124:
+
+* Fixed vulnerabilities listed in [Vulnerability fixes](https://docs.cloud.google.com/kubernetes-engine/distributed-cloud/vmware/docs/vulnerabilities).
+* Fixed an issue where `audit-proxy` retried audit log exports indefinitely on
+  permanent errors, generating excessive audit logging traffic.
+* Fixed an issue where the Kubernetes preflight health check scanned all
+  namespaces in the admin cluster instead of the target cluster's namespace,
+  causing cluster upgrades to fail if an unrelated cluster had stale
+  reconciling resources.
+
+---
 ## 2026-10-22
 
 ### Announcement

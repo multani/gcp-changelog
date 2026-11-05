@@ -2,6 +2,14 @@
 
 ## 2026-11-03
 
+### Feature
+
+You can now use persistent and temporary
+[SQL user-defined functions (UDFs)](https://docs.cloud.google.com/bigquery/docs/user-defined-functions#continuous-queries)
+in [BigQuery continuous queries](https://docs.cloud.google.com/bigquery/docs/continuous-queries#use-sql-udfs)
+to encapsulate and reuse custom real-time transformation logic. Only SQL UDFs
+are supported in continuous queries.
+
 ### Change
 
 In [BigQuery Studio](https://docs.cloud.google.com/bigquery/docs/bigquery-web-ui#studio-overview),

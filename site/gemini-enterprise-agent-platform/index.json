@@ -1,6 +1,16 @@
 {
   "name": "Gemini Enterprise Agent Platform",
   "entries": {
+    "2026-11-04": [
+      {
+        "kind": "Feature",
+        "content": "**AlphaGenome gRPC and unified HTTP serving support**\n\nAlphaGenome (`alphagenome-004`) now supports unified HTTP/2 gRPC streaming and\nchunked binary protobuf HTTP streaming on Gemini Enterprise Agent Platform:\n\n* Streams compressed binary tensor chunks directly over gRPC on shared\n  endpoints (`PredictionService.StreamDirectRawPredict` on port `8081`) and\n  chunked binary protobuf payloads (`proto_b64`) over HTTP on dedicated\n  endpoints (`streamRawPredict` on port `8080`) across all seven\n  `DnaModelService` methods (`predict_sequence`, `predict_interval`,\n  `predict_variant`, `score_variant`, `score_interval`, `score_ism_variants`,\n  and `output_metadata`) and 11 genomic modalities, reducing latency for 1 MB\n  track predictions.\n* Supports concurrent multi-variant evaluation for in silico saturation\n  mutagenesis (`score_ism_variants`) without HTTP gateway timeouts.\n* Supports model fold selection (`ALL_FOLDS`, `FOLD_0`, `FOLD_1`, `FOLD_2`,\n  and `FOLD_3`) across both gRPC and HTTP clients through the unified\n  `alphagenome_cloud_sdk` Python SDK.\n* Retains `alphagenome-003` in Model Garden for backward compatibility with\n  existing legacy HTTP deployments.\n\nFor more information, see the\n[AlphaGenome documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/alphagenome).",
+        "summary": {
+          "title": "AlphaGenome now supports gRPC and HTTP/2 streaming",
+          "summary": "AlphaGenome now offers unified HTTP/2 gRPC streaming and chunked binary protobuf HTTP streaming. This feature reduces latency for track predictions and supports concurrent multi-variant evaluation. It is available across all AlphaGenome methods and genomic modalities, with backward compatibility maintained for legacy deployments."
+        }
+      }
+    ],
     "2026-11-02": [
       {
         "kind": "Feature",

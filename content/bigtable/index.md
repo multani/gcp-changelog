@@ -1,5 +1,23 @@
 # Bigtable
 
+## 2026-11-04
+
+### Feature
+
+Bigtable offers conversational analytics, which lets you query you
+operational data using natural language. This feature is powered by the
+[Conversational Analytics API](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/overview).
+This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see [Conversational analytics for Bigtable overview](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/bigtable).
+
+### Feature
+
+The QueryData tool lets you query the data in your database using
+conversational language and build data agents.
+This feature is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+For more information, see [QueryData tool overview](https://docs.cloud.google.com/gemini/data-agents/querydata/bigtable/data-agent-overview).
+
+---
 ## 2026-10-30
 
 ### Feature

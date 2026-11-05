@@ -1,5 +1,34 @@
 # Gemini Enterprise Agent Platform
 
+## 2026-11-04
+
+### Feature
+
+**AlphaGenome gRPC and unified HTTP serving support**
+
+AlphaGenome (`alphagenome-004`) now supports unified HTTP/2 gRPC streaming and
+chunked binary protobuf HTTP streaming on Gemini Enterprise Agent Platform:
+
+* Streams compressed binary tensor chunks directly over gRPC on shared
+  endpoints (`PredictionService.StreamDirectRawPredict` on port `8081`) and
+  chunked binary protobuf payloads (`proto_b64`) over HTTP on dedicated
+  endpoints (`streamRawPredict` on port `8080`) across all seven
+  `DnaModelService` methods (`predict_sequence`, `predict_interval`,
+  `predict_variant`, `score_variant`, `score_interval`, `score_ism_variants`,
+  and `output_metadata`) and 11 genomic modalities, reducing latency for 1 MB
+  track predictions.
+* Supports concurrent multi-variant evaluation for in silico saturation
+  mutagenesis (`score_ism_variants`) without HTTP gateway timeouts.
+* Supports model fold selection (`ALL_FOLDS`, `FOLD_0`, `FOLD_1`, `FOLD_2`,
+  and `FOLD_3`) across both gRPC and HTTP clients through the unified
+  `alphagenome_cloud_sdk` Python SDK.
+* Retains `alphagenome-003` in Model Garden for backward compatibility with
+  existing legacy HTTP deployments.
+
+For more information, see the
+[AlphaGenome documentation](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/alphagenome).
+
+---
 ## 2026-11-02
 
 ### Feature

@@ -1,5 +1,20 @@
 # Cloud SQL for SQL Server
 
+## 2026-11-04
+
+### Feature
+
+Cloud SQL for SQL Server now supports [read pool autoscaling](https://docs.cloud.google.com/sql/docs/sqlserver/read-pool-autoscaling)
+([GA](https://cloud.google.com/products#product-launch-stages)),
+which helps you more easily manage your application's workload needs.
+
+This feature automates read pool scale in and scale out operations based on one
+or both of the following conditions:
+
+* Allowed CPU usage of the read pool
+* Allowed number of client connections to the read pool
+
+---
 ## 2026-10-30
 
 ### Announcement

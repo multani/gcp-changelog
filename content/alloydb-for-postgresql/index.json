@@ -1,6 +1,42 @@
 {
   "name": "AlloyDB for PostgreSQL",
   "entries": {
+    "2026-11-04": [
+      {
+        "kind": "Feature",
+        "content": "Direct Iceberg access in AlloyDB for PostgreSQL is available for PostgreSQL 18\nand later ([in Preview](https://cloud.google.com/products#product-launch-stages)).\nThis feature lets you query Apache Iceberg tables in Cloud Storage or Lakehouse\nruntime catalog and accelerate analytical queries using the AlloyDB columnar\nengine.\n\nFor more information, see\n[Access Iceberg data from\nAlloyDB](https://docs.cloud.google.com/alloydb/docs/access-iceberg-data-from-alloydb).",
+        "summary": {
+          "title": "Direct Iceberg Access in AlloyDB",
+          "summary": "AlloyDB for PostgreSQL now offers direct access to Apache Iceberg tables, enabling you to query data in Cloud Storage or Lakehouse runtime catalogs. This feature, available for PostgreSQL 18 and later, leverages AlloyDB's columnar engine to accelerate analytical queries."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "Syncing data from BigQuery into AlloyDB is generally available\n([GA](https://cloud.google.com/products#product-launch-stages)). This feature\nlets you copy or mirror analytical tables from BigQuery into AlloyDB for\nlow-latency operational access using the `alloydb_sync` extension.\n\nFor more information, see\n[Sync BigQuery data to AlloyDB](https://docs.cloud.google.com/alloydb/docs/sync-bigquery-data-to-alloydb).",
+        "summary": {
+          "title": "BigQuery to AlloyDB data sync is now generally available",
+          "summary": "Copy or mirror analytical tables from BigQuery into AlloyDB for low-latency operational access. This new feature, powered by the alloydb_sync extension, is now generally available."
+        }
+      },
+      {
+        "kind": "Feature",
+        "content": "AlloyDB Express is available in\n[Preview](https://cloud.google.com/products#product-launch-stages) for\nPostgreSQL 18. Optimized for rapid prototyping and for workflows that use AI\ncoding agents, this configuration provides the following features:\n\n* Fast provisioning\n* Scale-to-zero compute when idle\n* A monthly free tier for the first 12 months of usage\n* One-click upgrades to AlloyDB for PostgreSQL\n\nFor more information, see\n[AlloyDB Express overview](https://docs.cloud.google.com/alloydb/docs/express-overview).",
+        "summary": {
+          "title": "AlloyDB Express Now in Preview",
+          "summary": "AlloyDB Express is now available in preview, offering optimized performance for rapid prototyping and AI coding workflows. It features fast provisioning, scale-to-zero compute, a free tier for the first year, and easy upgrades to AlloyDB for PostgreSQL."
+        }
+      }
+    ],
+    "2026-11-03": [
+      {
+        "kind": "Change",
+        "content": "AlloyDB for PostgreSQL now defaults to [PostgreSQL major version 18](https://docs.cloud.google.com/alloydb/docs/db-version-policies#support-table)\nfor new clusters.",
+        "summary": {
+          "title": "AlloyDB for PostgreSQL upgrades to version 18",
+          "summary": "New AlloyDB for PostgreSQL clusters will now default to PostgreSQL major version 18. This upgrade ensures users benefit from the latest features and performance improvements. Existing clusters will not be affected by this change."
+        }
+      }
+    ],
     "2026-11-02": [
       {
         "kind": "Feature",

@@ -3036,10 +3036,47 @@
 
 
 <h1 id="apigee-operator-for-kubernetes">Apigee Operator for kubernetes</h1>
-<h2 id="2026-01-07">2026-01-07</h2>
+<h2 id="2026-11-04">2026-11-04</h2>
 <h3 id="announcement">Announcement</h3>
-<p>On January 7, 2026, we released an updated version of Apigee.</p>
+<p>On November 4, 2026, we released an updated version of Apigee.</p>
+<h3 id="feature">Feature</h3>
+<p><strong>The Apigee Operator for Kubernetes version 1.1.2 is now available.</strong></p>
 <h3 id="security">Security</h3>
+<table>
+<thead>
+<tr>
+<th>Bug ID</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>521387476, 521388685, 521389473, 521389648, 521390401, 521390431, 521418315, 521467563, 521470029, 521523106, 521532318, 522502328, 522502515, 522502723, 522508097, 522515015, 522515987, 523406508, 524990439, 525000385, 525013469, 545525835, 545535262, 545546643, 545547894, 545594793, 545595426, 545604082, 545605504, 545613200, 545619209, 546865118, 549708263, 572097689, 572100132</strong></td>
+<td><strong>Security fixes for Netty in the Apigee Operator for Kubernetes.</strong> Upgraded Netty to 4.1.137.Final. This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33870">CVE-2026-33870</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-33871">CVE-2026-33871</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-41417">CVE-2026-41417</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42578">CVE-2026-42578</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42579">CVE-2026-42579</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42580">CVE-2026-42580</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42581">CVE-2026-42581</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42583">CVE-2026-42583</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42584">CVE-2026-42584</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42585">CVE-2026-42585</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-42587">CVE-2026-42587</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-44249">CVE-2026-44249</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45416">CVE-2026-45416</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45673">CVE-2026-45673</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-45674">CVE-2026-45674</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47244">CVE-2026-47244</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-47691">CVE-2026-47691</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-48043">CVE-2026-48043</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50010">CVE-2026-50010</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50020">CVE-2026-50020</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-50560">CVE-2026-50560</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-55831">CVE-2026-55831</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-55833">CVE-2026-55833</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56745">CVE-2026-56745</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56746">CVE-2026-56746</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-56819">CVE-2026-56819</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59898">CVE-2026-59898</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59899">CVE-2026-59899</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59900">CVE-2026-59900</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59901">CVE-2026-59901</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59903">CVE-2026-59903</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59921">CVE-2026-59921</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-73508">CVE-2026-73508</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75595">CVE-2026-75595</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-75596">CVE-2026-75596</a></td>
+</tr>
+<tr>
+<td><strong>527492626, 527495614, 527497578, 527498733, 545553137, 572096453, 572096754, 572096884, 572097054, 572097090, 572097183, 572098198, 572098299, 572099894, 572100881, 578504005</strong></td>
+<td><strong>Security fixes for Jackson in the Apigee Operator for Kubernetes.</strong> Upgraded Jackson to 2.21.7. This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-18401">CVE-2026-18401</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-19032">CVE-2026-19032</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54512">CVE-2026-54512</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54513">CVE-2026-54513</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54514">CVE-2026-54514</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-54515">CVE-2026-54515</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59888">CVE-2026-59888</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-59889">CVE-2026-59889</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68494">CVE-2026-68494</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-68497">CVE-2026-68497</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-77310">CVE-2026-77310</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-83557">CVE-2026-83557</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-89407">CVE-2026-89407</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-89425">CVE-2026-89425</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-91776">CVE-2026-91776</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-91777">CVE-2026-91777</a></td>
+</tr>
+<tr>
+<td><strong>521477919, 545546100, 545555197, 545603496, 545608493</strong></td>
+<td><strong>Security fixes for Jetty in the Apigee Operator for Kubernetes.</strong> Upgraded Jetty to 12.0.36. This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2025-11143">CVE-2025-11143</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1605">CVE-2026-1605</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-2332">CVE-2026-2332</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6790">CVE-2026-6790</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-8384">CVE-2026-8384</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10050">CVE-2026-10050</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-10051">CVE-2026-10051</a></td>
+</tr>
+<tr>
+<td><strong>522503039</strong></td>
+<td><strong>Security fixes for Vert.x in the Apigee Operator for Kubernetes.</strong> Upgraded Vert.x to 4.5.35. This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-1002">CVE-2026-1002</a> * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-6860">CVE-2026-6860</a></td>
+</tr>
+<tr>
+<td><strong>579151884</strong></td>
+<td><strong>Security fixes for Guava in the Apigee Operator for Kubernetes.</strong> Upgraded Guava to 33.7.2-jre. This addresses the following vulnerabilities:   * <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-102554">CVE-2026-102554</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2026-01-07">2026-01-07</h2>
+<h3 id="announcement_1">Announcement</h3>
+<p>On January 7, 2026, we released an updated version of Apigee.</p>
+<h3 id="security_1">Security</h3>
 <table>
 <thead>
 <tr>
@@ -3054,7 +3091,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="feature">Feature</h3>
+<h3 id="feature_1">Feature</h3>
 <p><strong>The Apigee Operator for Kubernetes version 1.1.1 is now available.</strong></p>
 <hr /></div>
         <div class="col-md-3"><div class="navbar-light navbar-expand-md hidden-print sticky-top sticky-offset" role="complementary">
@@ -3067,6 +3104,9 @@
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#apigee-operator-for-kubernetes">Apigee Operator for kubernetes</a></li>
+          <li class="nav-item">
+            <a href="#2026-11-04" class="nav-link">2026-11-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-01-07" class="nav-link">2026-01-07</a>
           </li>

@@ -3036,6 +3036,16 @@
 
 
 <h1 id="api-gateway">API Gateway</h1>
+<h2 id="2026-11-04">2026-11-04</h2>
+<h3 id="announcement">Announcement</h3>
+<p><strong>Negative backend deadlines are no longer deprecated</strong></p>
+<p>The deprecation of negative backend <code>deadline</code> values announced on
+October 23, 2026 is withdrawn. In an OpenAPI 2.0 <code>x-google-backend</code>
+extension or a gRPC <code>BackendRule</code>, a negative deadline continues to
+use the default deadline, the same as <code>0</code>, and won't be rejected.
+OpenAPI 3.x backends still reject a negative deadline.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/oasv2-extensions#deadline">OpenAPI 2.0 extensions</a> and <a href="https://docs.cloud.google.com/api-gateway/docs/oasv3-extensions#backends_object">OpenAPI 3.x extensions</a>.</p>
+<hr />
 <h2 id="2026-11-03">2026-11-03</h2>
 <h3 id="feature">Feature</h3>
 <p><strong>Call Google Cloud APIs from streaming gateways</strong></p>
@@ -3182,7 +3192,7 @@ across all Google Cloud zones. Your instances might not have the feature
 available until the rollout is complete.</p>
 <hr />
 <h2 id="2025-11-12">2025-11-12</h2>
-<h3 id="announcement">Announcement</h3>
+<h3 id="announcement_1">Announcement</h3>
 <p>On November 12, 2025, we released a new version of API Gateway.</p>
 <h3 id="feature_6">Feature</h3>
 <p><strong>API Gateway now supports OpenAPI version 3.0.</strong></p>
@@ -3195,14 +3205,14 @@ available until the rollout is complete.</p>
 <p>For more detail, see <a href="https://docs.cloud.google.com/api-gateway/docs/openapi-overview">OpenAPI overview</a>.</p>
 <hr />
 <h2 id="2025-07-23">2025-07-23</h2>
-<h3 id="announcement_1">Announcement</h3>
+<h3 id="announcement_2">Announcement</h3>
 <p>On July 23, 2025, we released an updated version of API Gateway.</p>
 <h3 id="deprecated_2">Deprecated</h3>
 <p><strong>Deprecation of Transport Layer Security (TLS) v1.0 and v1.1 protocols</strong></p>
 <p>API Gateway now enforces TLS v1.2+. You can opt out of enforcing TLS v1.2+ for your API Gateway's new security settings by reaching out to <a href="https://cloud.google.com/support">Google Cloud Support</a> to continue using your current protocol.</p>
 <hr />
 <h2 id="2025-06-09">2025-06-09</h2>
-<h3 id="announcement_2">Announcement</h3>
+<h3 id="announcement_3">Announcement</h3>
 <p>On June 9, 2025, we released an updated version of API Gateway.</p>
 <h3 id="feature_7">Feature</h3>
 <p>With this release, the limit on the number of API gateways that can be created per region is increased to <strong>50</strong>.</p>
@@ -3218,6 +3228,9 @@ available until the rollout is complete.</p>
   <div id="toc-collapse" class="navbar-collapse collapse card">
     <ul class="nav flex-column bs-sidenav">
         <li class="nav-item main"><a class="nav-link" href="#api-gateway">API Gateway</a></li>
+          <li class="nav-item">
+            <a href="#2026-11-04" class="nav-link">2026-11-04</a>
+          </li>
           <li class="nav-item">
             <a href="#2026-11-03" class="nav-link">2026-11-03</a>
           </li>

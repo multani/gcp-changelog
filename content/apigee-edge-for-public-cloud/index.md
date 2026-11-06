@@ -1,5 +1,34 @@
 # Apigee Edge for Public Cloud
 
+## 2026-11-05
+
+### Announcement
+
+**Scheduled maintenance of Management/Control Plane for the Apigee Edge for Public Cloud on November 6, 2026.**
+
+Scheduled maintenance of Management/Control Plane for the Apigee Edge for Public Cloud production will take place on Friday, November 6, 2026, from 9:00 PM PT to
+10:00 PM PT (Saturday, November 7, 2026, from 5:00 AM UTC to 6:00 AM UTC). This
+maintenance follows the monthly maintenance window schedule documented in the
+[Apigee Edge release notes archive](https://docs.apigee.com/release/notes/apigee-release-notes).
+
+During the scheduled maintenance window, the following services will be
+temporarily unavailable, and attempts to access them will return a `4xx` status
+code:
+
+* Management Services UI
+* Management Services APIs
+* Monetization Management APIs
+* New proxy deployments
+* DevPortal Service
+* Microgateway Services
+* Edge Query (Analytics Stats APIs)
+
+Runtime API calls to deployed API proxies are unaffected. While access to
+analytics queries may be temporarily unavailable during the maintenance window, all
+analytics and metrics data from this period will be available once maintenance
+ends.
+
+---
 ## 2026-10-15
 
 ### Announcement

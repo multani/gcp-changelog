@@ -2,9 +2,30 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Cloud Workstations</title>
   <subtitle>Changelog for Google Cloud product: Cloud Workstations</subtitle>
-  <updated>2026-10-20T00:00:00+00:00</updated>
+  <updated>2026-10-27T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:cloud-workstations</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/cloud-workstations/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:cloud-workstations:2026-10-27:feature:0</id>
+    <published>2026-10-27T00:00:00+00:00</published>
+    <updated>2026-10-27T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>Cloud Workstations supports <a href="https://docs.cloud.google.com/workstations/docs/access-http-servers-running-on-workstations#configure-direct-access-ports">configuring direct access ports</a>
+on workstation clusters in
+<a href="https://cloud.google.com/products#product-launch-stages">Preview</a>. Direct
+access ports let you connect directly to a workstation port using the standard
+<code>https://WORKSTATION_NAME.CLUSTER_ID.cloudworkstations.dev:PORT</code>
+URL format instead of encoding the port as a prefix in the URL.</p>
+<p>To set direct access ports, use the <code>--direct-access-ports</code> flag with the
+<a href="https://docs.cloud.google.com/sdk/gcloud/reference/beta/workstations/clusters/create"><code>gcloud beta workstations clusters create</code></a>
+and
+<a href="https://docs.cloud.google.com/sdk/gcloud/reference/beta/workstations/clusters/update"><code>gcloud beta workstations clusters update</code></a>
+commands—for example, <code>--direct-access-ports=80,8080</code>.</p>]]></content>
+    <summary>Cloud Workstations now supports direct access ports, allowing you to connect to workstation ports using a standard URL format. This simplifies access to applications running on your workstations. Configure these ports using the `--direct-access-ports` flag in gcloud commands.</summary>
+    <title>Feature: Direct access ports for Cloud Workstations</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

@@ -4,10 +4,10 @@
 
 ### Feature
 
-Bigtable offers conversational analytics, which lets you query you
-operational data using natural language. This feature is powered by the
-[Conversational Analytics API](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/overview).
-This feature is in [Preview](https://cloud.google.com/products#product-launch-stages).
+Bigtable offers conversational analytics, which lets you query your
+operational data using natural language. This feature uses the
+[Conversational Analytics API](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics-api/overview)
+and is in [Preview](https://cloud.google.com/products#product-launch-stages).
 For more information, see [Conversational analytics for Bigtable overview](https://docs.cloud.google.com/gemini/data-agents/conversational-analytics/bigtable).
 
 ### Feature

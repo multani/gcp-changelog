@@ -1,5 +1,19 @@
 # Cloud Healthcare API
 
+## 2026-10-19
+
+### Feature
+
+**General availability:** Redacting burnt-in text in DICOM images using custom
+regular expressions (`customRegexes` in [`ImageConfig`](https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.fhirStores#ImageConfig))
+is now generally available (GA) in Cloud Healthcare API `v1`. You can specify
+custom regular expression patterns (`pattern`) and optional capturing group
+indexes (`groupIndexes`, a maximum of three for each pattern) in [`projects.locations.datasets.deidentify`](https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets/deidentify)
+and [`projects.locations.datasets.dicomStores.deidentify`](https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.dicomStores/deidentify)
+when `textRedactionMode` is set to `REDACT_SENSITIVE_TEXT`. For more
+information, see [Redacting burnt-in text using custom regular expressions](https://docs.cloud.google.com/healthcare-api/docs/how-tos/dicom-deidentify#redacting-burnt-in-text-using-custom-regular-expressions).
+
+---
 ## 2026-10-01
 
 ### Feature

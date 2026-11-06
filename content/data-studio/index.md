@@ -1,5 +1,18 @@
 # Data Studio
 
+## 2026-11-05
+
+### Feature
+
+You can now combine tables vertically in Data Studio blends by using the
+**Union** merge operator, which appends rows across up to five tables and
+removes duplicate rows. In addition, blend UI labels now use *merge* (such as
+**Merge another table**, **Merge conditions**, and **Hide repeated merge
+fields**) to encompass both join and union operations. For more information, see
+[How blends work in Data Studio](https://docs.cloud.google.com/data-studio/how-blends-work) and
+[Create, edit, and manage blends](https://docs.cloud.google.com/data-studio/create-edit-and-manage-blends).
+
+---
 ## 2026-10-22
 
 ### Feature

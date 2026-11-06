@@ -1,5 +1,22 @@
 # BigQuery
 
+## 2026-11-05
+
+### Change
+
+The BigQuery **Metadata curation** console page has been removed. You can now
+use Knowledge Catalog to schedule [Cloud Storage discovery scans](https://docs.cloud.google.com/knowledge-catalog/docs/cloud-storage-discovery),
+manage [data profiling](https://docs.cloud.google.com/knowledge-catalog/docs/data-profiling-overview)
+and [data quality](https://docs.cloud.google.com/knowledge-catalog/docs/use-auto-data-quality#console),
+and perform related data governance tasks.
+
+### Feature
+
+[Conversational analytics in BigQuery](https://docs.cloud.google.com/bigquery/docs/conversational-analytics)
+is now available in the `asia-northeast1` (Tokyo) location. For more
+information, see [Locations](https://docs.cloud.google.com/bigquery/docs/conversational-analytics#locations).
+
+---
 ## 2026-11-03
 
 ### Feature

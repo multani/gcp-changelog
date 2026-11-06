@@ -1,6 +1,16 @@
 {
   "name": "Cloud Healthcare API",
   "entries": {
+    "2026-10-19": [
+      {
+        "kind": "Feature",
+        "content": "**General availability:** Redacting burnt-in text in DICOM images using custom\nregular expressions (`customRegexes` in [`ImageConfig`](https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.fhirStores#ImageConfig))\nis now generally available (GA) in Cloud Healthcare API `v1`. You can specify\ncustom regular expression patterns (`pattern`) and optional capturing group\nindexes (`groupIndexes`, a maximum of three for each pattern) in [`projects.locations.datasets.deidentify`](https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets/deidentify)\nand [`projects.locations.datasets.dicomStores.deidentify`](https://docs.cloud.google.com/healthcare-api/docs/reference/rest/v1/projects.locations.datasets.dicomStores/deidentify)\nwhen `textRedactionMode` is set to `REDACT_SENSITIVE_TEXT`. For more\ninformation, see [Redacting burnt-in text using custom regular expressions](https://docs.cloud.google.com/healthcare-api/docs/how-tos/dicom-deidentify#redacting-burnt-in-text-using-custom-regular-expressions).",
+        "summary": {
+          "title": "Redact burnt-in text in DICOM images",
+          "summary": "The Cloud Healthcare API now supports redacting burnt-in text in DICOM images using custom regular expressions. This feature, now generally available, allows for more precise control over sensitive information within medical images. You can specify custom patterns and capturing groups to define what text gets redacted."
+        }
+      }
+    ],
     "2026-10-01": [
       {
         "kind": "Feature",

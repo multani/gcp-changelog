@@ -2,9 +2,108 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Google Cloud Contact Center as a Service</title>
   <subtitle>Changelog for Google Cloud product: Google Cloud Contact Center as a Service</subtitle>
-  <updated>2026-11-02T00:00:00+00:00</updated>
+  <updated>2026-11-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/google-cloud-contact-center-as-a-service/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-11-04:announcement:0</id>
+    <published>2026-11-04T00:00:00+00:00</published>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Google Cloud CCaaS prerelease notes 6.32</strong></p>
+<p>Here are the prerelease notes for what we expect to be the next version
+of Google Cloud CCaaS. When we release this version, we expect the new
+capabilities to be as shown here.</p>]]></content>
+    <summary>This document outlines the upcoming features and capabilities expected in version 6.32 of Cloud CCaaS. These notes provide a preview of the enhancements that will be available upon the release of this new version.</summary>
+    <title>Announcement: Cloud CCaaS Update 6.32</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:google-cloud-contact-center-as-a-service:2026-11-04:fixed:1</id>
+    <published>2026-11-04T00:00:00+00:00</published>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p>This release addresses the following issues:</p>
+<ul>
+<li>Fixed an issue where abandoned queue records incorrectly calculated wait
+  times from the call's initial queue entry rather than the time the caller
+  entered the specific queue they abandoned from.</li>
+<li>Fixed an issue where the call adapter header title on <strong>SmartActions</strong> and
+  virtual task assistant screens was truncated with an ellipsis, preventing
+  users from viewing the full text.</li>
+<li>Fixed an issue where the agent adapter froze on <strong>Calling</strong> and didn't dial
+  the customer during recovery calls following an unanswered in-app call.</li>
+<li>Fixed an issue where inbound calls became unroutable and remained stuck in
+  the queue until abandoned if an agent's browser delivered a delayed
+  connection request after a timeout.</li>
+<li>Fixed an issue in the CCaaS portal where active Spanish IVR queues were
+  incorrectly displayed as <strong>Setup is required</strong> and grayed out when switching
+  languages from English to Spanish.</li>
+<li>Fixed an issue where transient network errors during platform validation
+  incorrectly marked virtual agent credentials as invalid.</li>
+<li>Fixed an issue where SMS and WhatsApp virtual agent chats became
+  unresponsive and didn't escalate to a human agent when encountering a custom
+  payload validation error.</li>
+<li>Fixed an issue where campaigns didn't resume after being paused, resulting
+  in repeated call session failures and missing participant information.</li>
+<li>Fixed an issue where call-related actions such as disconnecting or updating
+  status took up to 72 seconds to complete.</li>
+<li>Fixed an issue where a <strong>Not Found</strong> banner incorrectly appeared in the call
+  adapter when a phone number couldn't be matched in the CRM.</li>
+<li>Fixed an issue where the <strong>In-email</strong> status bar in the agent desktop
+  appeared white.</li>
+<li>Fixed an issue where agents in the <strong>In-email</strong> status couldn't change their
+  status directly from the status bar.</li>
+<li>Fixed an issue where the first letter of uppercase acronym field names was
+  incorrectly lowercased in virtual task assistant input placeholders.</li>
+<li>Fixed an issue where agents were incorrectly set to an <strong>Unresponsive</strong>
+  status instead of receiving a missed call when a new deltacast offer arrived
+  while the call adapter was already ringing.</li>
+<li>Fixed an issue where agents became stuck in a projected state and stopped
+  receiving calls after a caller abandoned the call at the moment of routing.</li>
+<li>Fixed an issue where transient carrier timeouts during outbound callbacks
+  were incorrectly classified as invalid numbers.</li>
+<li>Fixed an issue where forced virtual agent callbacks booked through the Apps
+  API were incorrectly routed to the original call's queue instead of the
+  requested destination.</li>
+<li>Fixed an issue where scheduled callback capacity was under-calculated due to
+  a mathematical rounding error.</li>
+<li>Fixed an issue where inbound calls were prematurely disconnected if the
+  initial connection request timed out and was retried.</li>
+<li>Fixed an issue where valid Canadian phone numbers using newer area codes
+  were rejected by the Callback call API.</li>
+<li>Fixed an issue where certain agents were missing from the directory during
+  outbound calls, preventing other agents from transferring calls or adding
+  them to a call.</li>
+<li>Fixed an issue where dynamic queues incorrectly offered a minimum of one
+  slot even when WFM staffing was zero or resulted in less than one available
+  slot.</li>
+<li>Fixed an issue where Dynamic Agent Availability queues were saved without a
+  required custom queue identifier, causing workforce management
+  synchronization to fail silently.</li>
+<li>Fixed an issue where Salesforce cases and contacts were incorrectly created
+  for voice calls handled entirely by a virtual agent, even when the <strong>Create
+  CRM records for calls attended by Virtual Agents</strong> setting was disabled.</li>
+<li>Fixed an issue where voice transfers addressed to a specific agent were
+  never offered to the target and didn't expire, leaving callers on hold
+  indefinitely.</li>
+<li>Fixed an issue where NICE WFM session data exports didn't generate for
+  instances with subdomains exceeding 20 characters.</li>
+<li>Fixed an issue where virtual callbacks routed through external Dynamic
+  Contact Routing (DCR) were missing captured virtual agent custom parameters,
+  causing routing engines to lose the caller's intent.</li>
+<li>Fixed an issue where Agent Assist transcriptions permanently
+  stopped following transient network or quota errors.</li>
+<li>Fixed an issue where outbound phone number restriction rules weren't applied
+  to agents with the <strong>Allow unrestricted international calling</strong> setting
+  enabled.</li>
+</ul>]]></content>
+    <summary>This release resolves multiple issues including inaccurate wait time calculations, display problems with call adapter titles, and agent adapter freezing during recovery calls. It also addresses call routing failures, IVR queue display errors, and issues with virtual agent responsiveness and campaign resumption. Additionally, fixes include improvements to call action completion times, CRM number matching, status bar visibility, and agent status management.</summary>
+    <title>Fixed: Various issues fixed</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

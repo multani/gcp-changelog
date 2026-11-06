@@ -1,5 +1,22 @@
 # Compute Engine
 
+## 2026-11-02
+
+### Feature
+
+**Generally available**: You can now create C4 sole-tenant nodes on Intel
+Granite Rapids with the following node types:
+
+* `c4-node-288-576`
+* `c4-node-288-1080`
+* `c4-node-288-1080-lssd`
+* `c4-node-288-2232`
+* `c4-node-288-2232-lssd`
+
+For more information, see
+[Sole-tenancy overview](https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes).
+
+---
 ## 2026-10-26
 
 ### Security

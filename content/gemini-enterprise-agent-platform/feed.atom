@@ -2,9 +2,73 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: Gemini Enterprise Agent Platform</title>
   <subtitle>Changelog for Google Cloud product: Gemini Enterprise Agent Platform</subtitle>
-  <updated>2026-11-04T00:00:00+00:00</updated>
+  <updated>2026-11-05T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/gemini-enterprise-agent-platform/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-11-05:feature:0</id>
+    <published>2026-11-05T00:00:00+00:00</published>
+    <updated>2026-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Gemini Omni 1.2 Flash</strong></p>
+<p><a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-2-flash">Gemini Omni 1.2 Flash</a>
+(<code>gemini-omni-1.2-flash</code>) is available in
+<a href="https://cloud.google.com/products#product-launch-stages">General Availability (GA)</a>.
+Gemini Omni 1.2 Flash is an omni-modal foundation model that processes text,
+image, and video inputs to generate text and high-definition video with
+synchronized audio through the
+<a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/capabilities/interactions">Interactions API</a>.</p>
+<p>Gemini Omni 1.2 Flash introduces the following capabilities:</p>
+<ul>
+<li><strong>Standalone video upscaling</strong>: Upscale previously generated videos from
+  360p to 720p or 1080p, and from 720p to 1080p or 4K using <code>task: "upscale"</code>.
+  See <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/upscale-videos">Upscale videos</a>.</li>
+<li><strong>Extended video generation and editing duration</strong>: Generate or edit videos
+  up to 15 seconds in length across text-to-video, image-to-video,
+  reference-to-video, and video editing tasks (up to 10 seconds for
+  first-and-last-frame interpolation and video extension).</li>
+<li><strong>Reference-guided video editing and extension</strong>: Supply up to 2 reference
+  images along with an input video when editing or extending videos. See
+  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/edit-videos">Edit videos</a> and
+  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/extend-videos">Extend videos</a>.</li>
+<li><strong>Deterministic generation and billing labels</strong>: Specify <code>seed</code> for
+  reproducible video outputs and attach custom <code>labels</code> to Interactions API
+  requests.</li>
+<li><strong>Standard PayGo and Provisioned Throughput</strong>: Available with
+  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/standard-paygo">Standard Pay-as-you-go (PayGo)</a>
+  and
+  <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/provisioned-throughput/gemini-omni-models">Provisioned Throughput</a>
+  (685 tokens per second per GSU).</li>
+</ul>]]></content>
+    <summary>Gemini Omni 1.2 Flash, an omni-modal foundation model, is now in General Availability. It processes text, image, and video inputs to generate text and HD video with synchronized audio. Key new features include standalone video upscaling, extended video generation duration up to 15 seconds, and reference-guided video editing.</summary>
+    <title>Feature: Gemini Omni 1.2 Flash Now Generally Available</title>
+  </entry>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:gemini-enterprise-agent-platform:2026-11-05:fixed:1</id>
+    <published>2026-11-05T00:00:00+00:00</published>
+    <updated>2026-11-05T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>CodeMender updates (v0.18.0)</strong></p>
+<p>This release introduces updates to CodeMender:</p>
+<ul>
+<li><strong>Verification tool-turn guardrails</strong>: Added exploratory tool-turn limits to <code>cm verify</code> sessions to prevent unbounded command execution loops.</li>
+<li><strong>Release notes link in update prompts</strong>: Added a direct link to DevSite release notes when CodeMender prompts to update to a newer CLI version.</li>
+<li><strong>Agent IAM diagnostic guidance</strong>: Added actionable <code>roles/aiplatform.agentsUser</code> IAM binding commands to CLI setup and error messages for service account and CI/CD environments.</li>
+<li><strong>Bug fixes</strong>:</li>
+<li>Improved the reliability of agent sessions, including verification and resumed sessions.</li>
+<li>Improved compatibility across shell environments.</li>
+<li>Improved the sign-in flow during interactive activation.</li>
+<li>Improved error reporting when the service is temporarily unavailable.</li>
+<li>Includes security and stability improvements.</li>
+</ul>
+<p>For more information, see the <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/agents/codemender">CodeMender documentation</a>.</p>]]></content>
+    <summary>CodeMender version 0.18.0 is now available, featuring enhanced verification safeguards, improved update prompts with release notes, and clearer IAM guidance for agent setup. This release also includes several bug fixes for increased reliability and compatibility across different environments.</summary>
+    <title>Fixed: CodeMender v0.18.0 Released</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

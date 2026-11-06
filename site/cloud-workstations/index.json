@@ -1,6 +1,16 @@
 {
   "name": "Cloud Workstations",
   "entries": {
+    "2026-10-27": [
+      {
+        "kind": "Feature",
+        "content": "Cloud Workstations supports [configuring direct access ports](https://docs.cloud.google.com/workstations/docs/access-http-servers-running-on-workstations#configure-direct-access-ports)\non workstation clusters in\n[Preview](https://cloud.google.com/products#product-launch-stages). Direct\naccess ports let you connect directly to a workstation port using the standard\n`https://WORKSTATION_NAME.CLUSTER_ID.cloudworkstations.dev:PORT`\nURL format instead of encoding the port as a prefix in the URL.\n\nTo set direct access ports, use the `--direct-access-ports` flag with the\n[`gcloud beta workstations clusters create`](https://docs.cloud.google.com/sdk/gcloud/reference/beta/workstations/clusters/create)\nand\n[`gcloud beta workstations clusters update`](https://docs.cloud.google.com/sdk/gcloud/reference/beta/workstations/clusters/update)\ncommands—for example, `--direct-access-ports=80,8080`.",
+        "summary": {
+          "title": "Direct access ports for Cloud Workstations",
+          "summary": "Cloud Workstations now supports direct access ports, allowing you to connect to workstation ports using a standard URL format. This simplifies access to applications running on your workstations. Configure these ports using the `--direct-access-ports` flag in gcloud commands."
+        }
+      }
+    ],
     "2026-10-20": [
       {
         "kind": "Feature",

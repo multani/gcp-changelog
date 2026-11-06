@@ -1,5 +1,16 @@
 # Security Command Center
 
+## 2026-11-05
+
+### Deprecated
+
+Data Security Posture Management (DSPM) is no longer available to new organizations. If
+DSPM is already enabled for your organization, you retain full
+access until its scheduled shutdown on February 1, 2027. For more information,
+see [Deprecations and shut down features](https://docs.cloud.google.com/security-command-center/docs/deprecations) and
+[alternative detection capabilities](https://docs.cloud.google.com/security-command-center/docs/dspm-data-security#data-security-framework).
+
+---
 ## 2026-10-19
 
 ### Feature

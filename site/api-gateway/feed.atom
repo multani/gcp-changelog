@@ -2,9 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Google Cloud: API Gateway</title>
   <subtitle>Changelog for Google Cloud product: API Gateway</subtitle>
-  <updated>2026-11-03T00:00:00+00:00</updated>
+  <updated>2026-11-04T00:00:00+00:00</updated>
   <id>urn:github:multani:gcp-changelog:api-gateway</id>
   <link rel="self" href="https://raw.githubusercontent.com/multani/gcp-changelog/refs/heads/main/content/api-gateway/"/>
+  <entry>
+    <author>
+      <name>Google Cloud</name>
+    </author>
+    <id>urn:github:multani:gcp-changelog:api-gateway:2026-11-04:announcement:0</id>
+    <published>2026-11-04T00:00:00+00:00</published>
+    <updated>2026-11-04T00:00:00+00:00</updated>
+    <content type="html"><![CDATA[<p><strong>Negative backend deadlines are no longer deprecated</strong></p>
+<p>The deprecation of negative backend <code>deadline</code> values announced on
+October 23, 2026 is withdrawn. In an OpenAPI 2.0 <code>x-google-backend</code>
+extension or a gRPC <code>BackendRule</code>, a negative deadline continues to
+use the default deadline, the same as <code>0</code>, and won't be rejected.
+OpenAPI 3.x backends still reject a negative deadline.</p>
+<p>For more information, see <a href="https://docs.cloud.google.com/api-gateway/docs/oasv2-extensions#deadline">OpenAPI 2.0 extensions</a> and <a href="https://docs.cloud.google.com/api-gateway/docs/oasv3-extensions#backends_object">OpenAPI 3.x extensions</a>.</p>]]></content>
+    <summary>The deprecation of negative backend deadline values has been withdrawn. Negative deadlines in OpenAPI 2.0 and gRPC will now use the default value instead of being rejected. OpenAPI 3.x backends will continue to reject negative deadlines.</summary>
+    <title>Announcement: Backend deadlines update</title>
+  </entry>
   <entry>
     <author>
       <name>Google Cloud</name>

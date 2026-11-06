@@ -1,5 +1,18 @@
 # Model Armor
 
+## 2026-11-05
+
+### Feature
+
+You can enable or disable the child sexual abuse material (CSAM) filter in
+Model Armor templates and floor settings, and configure granular
+confidence levels (`High`, `Medium and above`, and `Low and above`).
+
+For more information, see [Model Armor
+filters](https://docs.cloud.google.com/model-armor/overview#ma-csam-detection) and [Create and manage
+templates](https://docs.cloud.google.com/model-armor/manage-templates#configure-detections).
+
+---
 ## 2026-11-02
 
 ### Feature

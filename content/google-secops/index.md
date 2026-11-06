@@ -1,5 +1,19 @@
 # Google SecOps
 
+## 2026-11-05
+
+### Feature
+
+**[Spotlight Feature] Case activity tagging**
+
+You can now use custom tags for individual activities, comments, tasks, and
+actions on the Case Wall, and filter the wall view by those tags. This allows
+you to categorize specific observations and filter the timeline to view only the
+entries relevant to your investigation or team.
+
+For more information, see [Add a tag to a Case Wall activity](https://docs.cloud.google.com/chronicle/docs/soar/investigate/working-with-cases/define-tags-in-cases-admin#add-activity-tag).
+
+---
 ## 2026-11-04
 
 ### Announcement
@@ -17,6 +31,17 @@ For more information, see [Navigate the Google SecOps platform](https://docs.clo
 **Deprecation of the ListCaseEvents API endpoint**
 
 Effective November 2, 2026, the `ListCaseEvents` API endpoint is deprecated. You should use the [`ListCaseEvidenceData`](https://docs.cloud.google.com/chronicle/docs/reference/rest/v1alpha/projects.locations.instances.cases.caseEvidenceDatas/list) API endpoint instead.
+
+---
+## 2026-11-01
+
+### Feature
+
+**Unified Case and Alert Playbooks view**
+
+The **Playbooks** tab in Cases now provides a consolidated view of all automated workflows associated with an investigation, displaying both case-level and alert-level playbooks in a single tab.
+
+For more information, see [View case and alert playbooks](https://docs.cloud.google.com/chronicle/docs/soar/respond/working-with-playbooks/attach-playbooks-to-alerts-cases#view_case_and_alert_playbooks).
 
 ---
 ## 2026-10-31

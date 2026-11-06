@@ -79,12 +79,12 @@ Risks associated with not making these changes include the following:
 
 ### Feature
 
-Outbound Endpoints for Cloud DNS is available in [Preview](https://cloud.google.com/products#product-launch-stages).
+Outbound endpoints for Cloud DNS are available in [Preview](https://cloud.google.com/products#product-launch-stages).
 
-Attach Outbound Endpoints to forwarding zones or server policies to
+Attach outbound endpoints to forwarding zones or server policies to
 enable direct DNS query forwarding from VPC networks to external
 and on-premises DNS resolvers using private IP addresses. For more information,
-see [Outbound Endpoints overview](https://docs.cloud.google.com/dns/docs/outbound-endpoints-overview).
+see [Outbound endpoints overview](https://docs.cloud.google.com/dns/docs/outbound-endpoints-overview).
 
 ---
 ## 2026-03-15
